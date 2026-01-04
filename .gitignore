@@ -1,0 +1,19 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node (나중에 React 쓸 경우 대비)
+node_modules/
+dist/
+build/
+
+# Env
+.env
