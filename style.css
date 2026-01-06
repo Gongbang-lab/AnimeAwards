@@ -25,6 +25,44 @@ button {
   text-align: center;
 }
 
+.award-btn {
+  position: relative;
+  display: inline-flex;      /* 🔥 중요 */
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 18px;
+  margin: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  background: #f5f5f5;       /* 🔥 hover 영역 시각화 */
+}
+
+
+/* 삭제 버튼 */
+.delete-btn {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+
+  background: #ff4d4f;
+  color: white;
+  font-size: 12px;
+  display: none;        /* 기본 숨김 */
+
+  align-items: center;
+  justify-content: center;
+}
+
+.award-btn:hover .delete-btn{
+  display: flex; /*hover시 표시*/
+}
+
 #add-award-btn {
   position: fixed;
   bottom: 30px;
