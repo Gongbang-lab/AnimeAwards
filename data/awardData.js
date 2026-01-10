@@ -1,0 +1,31 @@
+//'대상','최우수상','우수상','밈','오프닝', '엔딩', 'OST', 
+//'신인 성우상', '남자 성우상', '여자 성우상',
+//'남우 주연상(캐릭터)', '여우 주연상(캐릭터)', '베스트 커플상',
+//'각본상', '각색상', '감독상', '동화상', '작화상', 
+//'올해의 똥','다크호스 상', '베스트 에피소드상', '올해의 시네마상', '올해의 스튜디오 상'
+//'이카루스'
+const Awards = [
+  { id: 1, name: '대상', thumb: '', theme :'default'},
+  { id: 2, name: '최우수상', thumb: '', theme: 'default'},
+  { id: 3, name: '우수상', thumb: '', theme: 'default'},
+  { id: 4, name: '밈', thumb: '', theme: 'meme'},
+  { id: 5, name: '오프닝', thumb: '', theme: 'opening'},
+  { id: 6, name: '엔딩', thumb: '', theme: 'ending'},
+  { id: 7, name: 'OST', thumb: '', theme: 'ost'},
+  { id: 8, name: '신인 성우상', thumb: '', theme: 'voice_female'},
+  { id: 9, name: '남자 성우상', thumb: '', theme: 'voice_male'},
+  { id: 10, name: '남우 주연상', thumb: '', theme: 'character_male'},
+  { id: 11, name: '여우 주연상', thumb: '', theme: 'character_female'},
+  { id: 12, name: '베스트 커플상', thumb: '', theme: 'best_couple'},
+  { id: 13, name: '각본상', thumb: '', theme: 'original'},
+  { id: 14, name: '각색상', thumb: '', theme: 'dramatization'},
+  { id: 15, name: '감독상', thumb: '', theme: 'director'},
+  { id: 16, name: '동화상', thumb: '', theme: 'in_between'}, // 원화사이 더 부드럽게나 빨라보이게 만드는 역할
+  { id: 17, name: '원화상', thumb: '', theme: 'key_animation'}, // 
+  { id: 18, name: '인류 퇴보 상', thumb: '', theme: 'default'},
+  { id: 19, name: '이카루스', thumb: '', theme: 'default'},
+  { id: 20, name: '다크호스', thumb: '', theme: 'default'},
+  { id: 21, name: '베스트 에피소드', thumb: '', theme: 'best_episode'},
+  { id: 22, name: '올해의 시네마', thumb: '', theme: 'cinema'},
+  { id: 23, name: '올해의 스튜디오', thumb: '', theme: 'studio'},
+];

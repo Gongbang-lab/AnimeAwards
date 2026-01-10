@@ -1,0 +1,22 @@
+#nominee-area {
+  display: flex;
+  gap: 10px;
+}
+
+.nominee-card {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.nominee-card:hover {
+  background: #eee;
+}
+
+li {
+  cursor: pointer;
+}
+
+button {
+  margin-top: 8px;
+}
