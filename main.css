@@ -57,3 +57,47 @@
   text-align: center;
   font-weight: bold;
 }
+.award-card.has-winner {
+  border: 2px solid gold;
+}
+
+.award-card .winner-title {
+  font-size: 14px;
+  margin-top: 6px;
+  color: #ffd700;
+  text-align: center;
+}
+.award-card.has-winner {
+  border: 2px solid gold;
+  box-shadow: 0 0 14px rgba(255, 215, 0, 0.5);
+}
+
+.winner-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 6px;
+}
+
+#reset-btn {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 999;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  border: none;
+  background: #b91c1c; /* 빨간색 = 리셋 의미 */
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+#reset-btn:hover {
+  background: #dc2626;
+}
+
