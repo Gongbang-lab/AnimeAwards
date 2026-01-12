@@ -211,3 +211,29 @@
   z-index: 1000;
 }
 
+.music-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.music-item:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+.type {
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.type.OP { background: #ff7675; }
+.type.ED { background: #74b9ff; }
+.type.OST { background: #55efc4; }
+
+.youtube-btn {
+  margin-left: auto;
+}
+

@@ -31,7 +31,6 @@ const DAY_LABELS = {
   Ano: '변칙편성',
   Web: '웹편성'
 };
-
 //기본 테마 랜더링
 function renderDefaultTheme() {
   const bottomArea = document.getElementById("bottom-area");
@@ -106,7 +105,6 @@ function renderDefaultTheme() {
     bottomArea.appendChild(quarterSection);
   });
 }
-
 function addNominee(anime) {
   // 중복 방지
   if ([...nomineeArea.children].some(c => c.dataset.id == anime.id)) return;
@@ -134,14 +132,12 @@ function addNominee(anime) {
    // ✅ localStorage 저장
   saveNominees();
 }
-
 function saveNominees() {
   localStorage.setItem(
     `nominees_${awardId}`,
     JSON.stringify([...selectedSet])
   );
 }
-
 function toggleSelectAnime(anime, element) {
   if (selectedSet.has(anime.id)) {
     // 선택 해제
@@ -166,8 +162,6 @@ function toggleSelectAnime(anime, element) {
     });
   }
 }
-
-
 function selectWinner(anime) {
   // 상위 영역 카드 표시
   winnerArea.innerHTML = "";
@@ -195,12 +189,11 @@ function selectWinner(anime) {
     })
   );
 }
-
 document.getElementById("back-btn").onclick = () => {
   location.href = "../main.html"; // main.html 경로에 맞게 조정
 };
-
 function restoreState() {
+  if (award.theme !== "default") return;
   // 1️⃣ 노미네이트 복원
   const nomineeData = localStorage.getItem(`nominees_${awardId}`);
   if (nomineeData) {
@@ -219,7 +212,6 @@ function restoreState() {
     selectWinner(anime);
   }
 }
-
 function findAnimeById(id) {
   for (const list of Object.values(AnimeByQuarter)) {
     const found = list.find(a => a.id === id);
@@ -227,6 +219,185 @@ function findAnimeById(id) {
   }
   return null;
 }
+//병합 유틸 함수
+function findAnimeInfo(animeId) {
+  for (const list of Object.values(AnimeByQuarter)) {
+    const found = list.find(anime => anime.id === animeId);
+    if (found) return found;
+  }
+  return null;
+}
+function mergeMusicSource(source, type) {
+  const result = [];
 
-renderDefaultTheme();
+  Object.entries(source).forEach(([quarter, songs]) => {
+    songs.forEach(song => {
+      const anime = findAnimeInfo(song.animeId);
+
+      result.push({
+        ...song,
+        type,
+        quarter,
+        animeTitle: anime?.title || "Unknown",
+        day: anime?.day || "Unknown"
+      });
+    });
+  });
+
+  return result;
+}
+function getMusicByTheme(theme) {
+  switch (theme) {
+    case "opening":
+      return mergeMusicSource(AnimeOpeningSongs, "OP");
+    case "ending":
+      return mergeMusicSource(AnimeEndingSongs, "ED");
+    case "ost":
+      return mergeMusicSource(AnimeOSTSongs, "OST");
+    default:
+      return [];
+  }
+}
+
+//음악 그룹화 유틸
+function groupMusicByQuarterAndDay(musicList) {
+  const result = {};
+
+  musicList.forEach(item => {
+    if (!result[item.quarter]) result[item.quarter] = {};
+    if (!result[item.quarter][item.day]) result[item.quarter][item.day] = [];
+
+    result[item.quarter][item.day].push(item);
+  });
+
+  return result;
+}
+function renderMusicAccordion() {
+  const bottomArea = document.getElementById("bottom-area");
+  bottomArea.innerHTML = "";
+
+  const musicList = getMusicByTheme(theme);
+  const grouped = groupMusicByQuarterAndDay(musicList);
+
+  Object.entries(grouped).forEach(([quarter, days]) => {
+
+    /* ===== 분기 ===== */
+    const quarterSection = document.createElement("div");
+    quarterSection.className = "quarter-section";
+
+    const quarterBtn = document.createElement("button");
+    quarterBtn.className = "quarter-btn";
+    quarterBtn.textContent = quarter;
+
+    const quarterContent = document.createElement("div");
+    quarterContent.className = "quarter-content";
+    quarterContent.style.display = "none";
+
+    quarterBtn.onclick = () => {
+      const open = quarterContent.style.display === "block";
+      quarterContent.style.display = open ? "none" : "block";
+      quarterBtn.classList.toggle("active", !open);
+    };
+
+    /* ===== 요일 ===== */
+    DAY_KEYS.forEach(dayKey => {
+      const songs = days[dayKey];
+      if (!songs) return;
+
+      const daySection = document.createElement("div");
+      daySection.className = "day-section";
+
+      const dayBtn = document.createElement("button");
+      dayBtn.className = "day-btn";
+      dayBtn.textContent = DAY_LABELS[dayKey];
+
+      const songList = document.createElement("ul");
+      songList.className = "music-list";
+      songList.style.display = "none";
+
+      dayBtn.onclick = () => {
+        const open = songList.style.display === "block";
+        songList.style.display = open ? "none" : "block";
+        dayBtn.classList.toggle("active", !open);
+      };
+
+      /* ===== 음악 아이템 ===== */
+      songs.forEach(song => {
+        const li = document.createElement("li");
+        li.className = "music-item";
+
+        li.innerHTML = `
+          <span class="type ${song.type}">${song.type}</span>
+          <div class="music-text">
+            <div class="anime-title">${song.animeTitle}</div>
+            <div class="song-title">${song.title} – ${song.singer}</div>
+          </div>
+          <button class="youtube-btn">▶</button>
+        `;
+
+        /* 노미네이트 추가 */
+        li.addEventListener("click", () => addMusicNominee(song));
+
+        /* 유튜브 버튼 */
+        li.querySelector(".youtube-btn").onclick = (e) => {
+          e.stopPropagation();
+          window.open(song.youtube, "_blank");
+        };
+
+        songList.appendChild(li);
+      });
+
+      daySection.append(dayBtn, songList);
+      quarterContent.appendChild(daySection);
+    });
+
+    quarterSection.append(quarterBtn, quarterContent);
+    bottomArea.appendChild(quarterSection);
+  });
+}
+function addMusicNominee(song) {
+  const nomineeArea = document.getElementById("nominee-area");
+
+  if ([...nomineeArea.children].some(c => c.dataset.id == song.id)) return;
+
+  const card = document.createElement("div");
+  card.className = "nominee-card music";
+
+  card.dataset.id = song.id;
+
+  card.innerHTML = `
+    <img src="${song.thumbnail}" />
+    <div class="info">
+      <div class="anime-title">${song.animeTitle}</div>
+      <div class="song-title">${song.title}</div>
+      <div class="singer">${song.singer}</div>
+    </div>
+  `;
+
+  nomineeArea.appendChild(card);
+}
+
+const theme = award.theme;
+
+switch (theme) {
+  case "default":
+    renderDefaultTheme();
+    break;
+
+  case "opening":
+  case "ending":
+  case "ost":
+    renderMusicTheme(theme);
+    break;
+
+  default:
+    renderDefaultTheme();
+}
+
+function routeByTheme(theme) {
+  if (theme === "default") return renderDefaultTheme();
+  if (["opening","ending","ost"].includes(theme))
+    return renderMusicTheme(theme);
+}
+
 restoreState();
