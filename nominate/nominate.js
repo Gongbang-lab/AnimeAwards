@@ -364,11 +364,20 @@ function addMusicNominee(song) {
 
   const card = document.createElement("div");
   card.className = "nominee-card music";
-
   card.dataset.id = song.id;
 
+  const thumb = getYoutubeThumb(song.youtube);
+
   card.innerHTML = `
-    <img src="${song.thumbnail}" />
+    <div class="thumb">
+      <img 
+        src="${thumb.max}" 
+        onerror="this.onerror=null; this.src='${thumb.hq}'"
+      />
+      <div class="overlay">
+        <button class="youtube-btn">▶</button>
+      </div>
+    </div>
     <div class="info">
       <div class="anime-title">${song.animeTitle}</div>
       <div class="song-title">${song.title}</div>
@@ -376,8 +385,76 @@ function addMusicNominee(song) {
     </div>
   `;
 
+
+  /* 🔥 카드 클릭 → 상위로 */
+  card.onclick = () => selectMusicWinner(song);
+
+  /* 🔥 유튜브 버튼 클릭 */
+  card.querySelector(".youtube-btn").onclick = (e) => {
+    e.stopPropagation(); // 상위 클릭 방지
+    window.open(song.youtube, "_blank");
+  };
+
   nomineeArea.appendChild(card);
 }
+function getYoutubeThumb(url) {
+  const id = getYoutubeId(url);
+  if (!id) return null;
+
+  return {
+    max: `https://img.youtube.com/vi/${id}/maxresdefault.jpg`,
+    hq:  `https://img.youtube.com/vi/${id}/hqdefault.jpg`
+  };
+}
+function selectMusicWinner(song) {
+  winnerArea.innerHTML = "";
+
+  const card = document.createElement("div");
+  card.className = "winner-card music";
+
+const thumb = getYoutubeThumb(song.youtube);
+
+card.innerHTML = `
+  <div class="thumb">
+    <img 
+      src="${thumb.max}" 
+      onerror="this.onerror=null; this.src='${thumb.hq}'"
+    />
+    <div class="overlay">
+      <button class="youtube-btn">▶</button>
+    </div>
+  </div>
+  <div class="info">
+    <div class="anime-title">${song.animeTitle}</div>
+    <div class="song-title">${song.title}</div>
+    <div class="singer">${song.singer}</div>
+  </div>
+`;
+
+
+  winnerArea.appendChild(card);
+
+  localStorage.setItem(
+    `winner_${awardId}`,
+    JSON.stringify(song)
+  );
+}
+function getYoutubeId(url) {
+  if (!url) return null;
+
+  // youtu.be/VIDEO_ID
+  if (url.includes("youtu.be/")) {
+    return url.split("youtu.be/")[1].split("?")[0];
+  }
+
+  // youtube.com/watch?v=VIDEO_ID
+  if (url.includes("watch?v=")) {
+    return url.split("v=")[1].split("&")[0];
+  }
+
+  return null;
+}
+
 
 const theme = award.theme;
 

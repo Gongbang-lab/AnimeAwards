@@ -237,3 +237,42 @@
   margin-left: auto;
 }
 
+.nominee-card.music {
+  position: relative;
+  cursor: pointer;
+}
+
+.nominee-card .thumb {
+  position: relative;
+}
+
+.nominee-card img {
+  width: 100%;
+  display: block;
+}
+
+.nominee-card .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.nominee-card:hover .overlay {
+  opacity: 1;
+}
+
+.youtube-btn {
+  font-size: 32px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+}
