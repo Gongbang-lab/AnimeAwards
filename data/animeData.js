@@ -18,7 +18,7 @@ const AnimeByQuarter = {
     { id: 114, title: '마왕의 딸은 너무 친절해', thumbnail:'', day: 'Wed'},
     { id: 115, title: '【최애의 아이】 3기', thumbnail:'', day: 'Wed'},
     { id: 116, title: '사망 유희로 밥을 먹는다.', thumbnail:'', day: 'Wed'},
-    { id: 117, title: '사망 유희로 밥을 먹는다.', thumbnail:'', day: 'Wed'},
+    { id: 117, title: '지옥선생 누베', thumbnail:'', day: 'Wed'},
     { id: 118, title: '귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~', thumbnail:'', day: 'Thu'},
     { id: 119, title: '온화한 귀족의 휴가의 권장', thumbnail:'', day: 'Thu'},
     { id: 120, title: '시광대리인 -Link Click- 영도편', thumbnail:'', day: 'Thu'},

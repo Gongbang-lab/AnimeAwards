@@ -272,16 +272,24 @@ function groupMusicByQuarterAndDay(musicList) {
 
   return result;
 }
-function renderMusicAccordion() {
+function renderMusicTheme(theme) {
   const bottomArea = document.getElementById("bottom-area");
   bottomArea.innerHTML = "";
 
-  const musicList = getMusicByTheme(theme);
+  let musicList = [];
+
+  if (theme === "opening") {
+    musicList = mergeMusicSource(AnimeOpeningSongs, "OP");
+  } else if (theme === "ending") {
+    musicList = mergeMusicSource(AnimeEndingSongs, "ED");
+  } else if (theme === "ost") {
+    musicList = mergeMusicSource(AnimeOSTSongs, "OST");
+  }
+
   const grouped = groupMusicByQuarterAndDay(musicList);
 
   Object.entries(grouped).forEach(([quarter, days]) => {
 
-    /* ===== 분기 ===== */
     const quarterSection = document.createElement("div");
     quarterSection.className = "quarter-section";
 
@@ -296,10 +304,8 @@ function renderMusicAccordion() {
     quarterBtn.onclick = () => {
       const open = quarterContent.style.display === "block";
       quarterContent.style.display = open ? "none" : "block";
-      quarterBtn.classList.toggle("active", !open);
     };
 
-    /* ===== 요일 ===== */
     DAY_KEYS.forEach(dayKey => {
       const songs = days[dayKey];
       if (!songs) return;
@@ -318,10 +324,8 @@ function renderMusicAccordion() {
       dayBtn.onclick = () => {
         const open = songList.style.display === "block";
         songList.style.display = open ? "none" : "block";
-        dayBtn.classList.toggle("active", !open);
       };
 
-      /* ===== 음악 아이템 ===== */
       songs.forEach(song => {
         const li = document.createElement("li");
         li.className = "music-item";
@@ -335,10 +339,8 @@ function renderMusicAccordion() {
           <button class="youtube-btn">▶</button>
         `;
 
-        /* 노미네이트 추가 */
-        li.addEventListener("click", () => addMusicNominee(song));
+        li.onclick = () => addMusicNominee(song);
 
-        /* 유튜브 버튼 */
         li.querySelector(".youtube-btn").onclick = (e) => {
           e.stopPropagation();
           window.open(song.youtube, "_blank");
