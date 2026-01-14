@@ -302,3 +302,56 @@
   color: #fff;
   border-color: #222;
 }
+#add-custom-couple-btn {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  font-size: 32px;
+  background: #ff5a8a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,.25);
+}
+.nominate-couple-card {
+  position: relative;
+}
+
+.nominate-couple-card .remove-btn {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  display: none;
+  cursor: pointer;
+  background: rgba(0,0,0,.6);
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.nominate-couple-card:hover .remove-btn {
+  display: block;
+}
+.couple-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.couple-thumb img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.couple-thumb .heart {
+  font-size: 20px;
+}

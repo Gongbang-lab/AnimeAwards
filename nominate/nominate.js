@@ -590,9 +590,6 @@ function mergeCharactersWithAnime() {
 
   return result;
 }
-
-
-
 //공통 아코디언 생성기
 function createAccordionSection(title) {
   const section = document.createElement("div");
@@ -682,6 +679,224 @@ function selectCharacterWinner(character) {
   );
 }
 
+//캐릭터 병합 후 커플 데이터 생성 유틸
+function getCharacterById(id) {
+  for (const list of Object.values(AnimeCharacters)) {
+    const found = list.find(c => c.id === id);
+    if (found) return found;
+  }
+  return null;
+}
+function mergeCouples() {
+  const result = {};
+
+  Object.entries(AnimeCouples).forEach(([quarter, couples]) => {
+    result[quarter] = [];
+
+    couples.forEach(couple => {
+      const c1 = getCharacterById(couple.characterIds[0]);
+      const c2 = getCharacterById(couple.characterIds[1]);
+      if (!c1 || !c2) return;
+
+      const anime = findAnimeById(couple.animeId);
+
+      result[quarter].push({
+        id: couple.id,
+        animeId: couple.animeId,
+        animeTitle: anime?.title ?? "Unknown",
+        characters: [c1, c2],
+        isCustom: couple.isCustom
+      });
+    });
+  });
+
+  return result;
+}
+//커플 하위 어코디언 랜더링
+function renderBestCoupleTheme() {
+  const bottomArea = document.getElementById("bottom-area");
+  bottomArea.innerHTML = "";
+
+  const merged = mergeCouples();
+
+  Object.entries(merged).forEach(([quarter, couples]) => {
+
+    const quarterSection = document.createElement("div");
+    quarterSection.className = "quarter-section";
+
+    const quarterBtn = document.createElement("button");
+    quarterBtn.className = "quarter-btn";
+    quarterBtn.textContent = quarter;
+
+    const quarterContent = document.createElement("div");
+    quarterContent.className = "quarter-content";
+    quarterContent.style.display = "none";
+
+    quarterBtn.onclick = () => {
+      const open = quarterContent.style.display === "block";
+      quarterContent.style.display = open ? "none" : "block";
+      quarterBtn.classList.toggle("active", !open);
+    };
+
+    /* 애니메이션별 그룹 */
+    const animeGroup = {};
+
+    couples.forEach(c => {
+      if (!animeGroup[c.animeId]) {
+        animeGroup[c.animeId] = {
+          animeTitle: c.animeTitle,
+          couples: []
+        };
+      }
+      animeGroup[c.animeId].couples.push(c);
+    });
+
+    Object.values(animeGroup).forEach(group => {
+      const animeSection = document.createElement("div");
+      animeSection.className = "day-section";
+
+      const animeBtn = document.createElement("button");
+      animeBtn.className = "day-btn";
+      animeBtn.textContent = group.animeTitle;
+
+      const coupleWrap = document.createElement("div");
+      coupleWrap.style.display = "none";
+      coupleWrap.className = "couple-list";
+
+      animeBtn.onclick = () => {
+        const open = coupleWrap.style.display === "block";
+        coupleWrap.style.display = open ? "none" : "block";
+        animeBtn.classList.toggle("active", !open);
+      };
+
+      group.couples.forEach(couple => {
+        const coupleCard = document.createElement("div");
+        coupleCard.className = "couple-card";
+
+        coupleCard.innerHTML = `
+          <span>${couple.characters[0].name}</span>
+          <span class="heart">❤️</span>
+          <span>${couple.characters[1].name}</span>
+        `;
+
+        coupleCard.onclick = () =>
+          toggleSelectCouple(couple, coupleCard);
+
+        coupleWrap.appendChild(coupleCard);
+      });
+
+      /* + 버튼 */
+      const addBtn = document.createElement("button");
+      addBtn.className = "add-couple-btn";
+      addBtn.textContent = "+ 커플 추가";
+      addBtn.onclick = () =>
+        openCouplePopup(group);
+
+      coupleWrap.appendChild(addBtn);
+
+      animeSection.append(animeBtn, coupleWrap);
+      quarterContent.appendChild(animeSection);
+    });
+
+    quarterSection.append(quarterBtn, quarterContent);
+    bottomArea.appendChild(quarterSection);
+  });
+}
+let tempCouple = [];
+//커플 생성 조건 로직
+function selectCoupleCharacter(character) {
+  // 1️⃣ 첫 선택
+  if (tempCouple.length === 0) {
+    tempCouple.push(character);
+    return;
+  }
+
+  // 2️⃣ 같은 캐릭터 방지
+  if (tempCouple[0].id === character.id) {
+    alert("같은 캐릭터는 선택할 수 없습니다.");
+    return;
+  }
+
+  // 3️⃣ 같은 애니메이션 제한
+  if (tempCouple[0].animeId !== character.animeId) {
+    alert("같은 애니메이션의 캐릭터만 선택할 수 있습니다.");
+    return;
+  }
+
+  tempCouple.push(character);
+  createCustomCouple();
+}
+//커스텀 커플 저장
+function createCustomCouple() {
+  const couple = {
+    id: Date.now(),
+    animeId: tempCouple[0].animeId,
+    characterIds: [tempCouple[0].id, tempCouple[1].id],
+    isCustom: true
+  };
+
+  const data = JSON.parse(
+    localStorage.getItem("custom_couples") || "[]"
+  );
+
+  data.push(couple);
+  localStorage.setItem("custom_couples", JSON.stringify(data));
+
+  tempCouple = [];
+  renderBestCoupleTheme();
+}
+document.getElementById("add-custom-couple-btn").onclick =
+  openCustomCouplePopup;
+//커스텀 커플 생성 즉시 중위로 올리기
+function createCustomCouple() {
+  const couple = {
+    id: Date.now(),
+    animeId: tempCouple[0].animeId,
+    characterIds: [tempCouple[0].id, tempCouple[1].id],
+    isCustom: true,
+    autoNominated: true
+  };
+
+  saveCustomCouple(couple);
+
+  /* 🔥 바로 중위로 */
+  addNominateCouple(couple);
+
+  tempCouple = [];
+  closePopup();
+}
+//커스텀 커플 삭제 버튼
+function renderNominateCoupleCard(couple) {
+  const card = document.createElement("div");
+  card.className = "nominate-couple-card";
+
+  card.innerHTML = `
+    <div class="remove-btn">×</div>
+    ${renderCoupleThumbnail(couple)}
+  `;
+
+  card.querySelector(".remove-btn").onclick = e => {
+    e.stopPropagation();
+    removeCustomCouple(couple.id);
+    card.remove();
+  };
+
+  return card;
+}
+//중위 couple 카드 전용 썸네일
+function renderCoupleThumbnail(couple) {
+  const [c1, c2] = couple.characters;
+
+  return `
+    <div class="couple-thumb">
+      <img src="${c1.thumb}">
+      <span class="heart">❤️</span>
+      <img src="${c2.thumb}">
+    </div>
+  `;
+}
+
+
 
 
 
@@ -703,7 +918,10 @@ switch (theme) {
   case "character_female":
     renderCharacterTheme("female");
     break;
+  case "best_couple":
+    renderBestCoupleTheme(theme);
     break;
+
   default:
     renderDefaultTheme();
 }
