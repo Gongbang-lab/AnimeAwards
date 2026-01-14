@@ -455,6 +455,235 @@ function getYoutubeId(url) {
   return null;
 }
 
+//애니메이션 캐릭터
+function getAnimeById(id) {
+  for (const list of Object.values(AnimeByQuarter)) {
+    const found = list.find(a => a.id === id);
+    if (found) return found;
+  }
+  return null;
+}
+//캐릭터 병함 유틸
+function findAnimeInfo(animeId) {
+  for (const list of Object.values(AnimeByQuarter)) {
+    const found = list.find(a => a.id === animeId);
+    if (found) return found;
+  }
+  return null;
+}
+function mergeCharacters(genderFilter = null) {
+  return AnimeCharacters
+    .filter(c => !genderFilter || c.gender === genderFilter)
+    .map(c => {
+      const anime = findAnimeInfo(c.animeId);
+
+      return {
+        ...c,
+        animeTitle: anime?.title || "Unknown",
+        quarter: anime?.quarter,
+        day: anime?.day
+      };
+    });
+}
+//그룹화 유틸
+function groupCharactersByQuarterAndDay(list) {
+  const result = {};
+
+  list.forEach(item => {
+    if (!result[item.quarter]) result[item.quarter] = {};
+    if (!result[item.quarter][item.day]) result[item.quarter][item.day] = [];
+
+    result[item.quarter][item.day].push(item);
+  });
+
+  return result;
+}
+//캐릭터 아코디언 랜더링
+function renderCharacterTheme() {
+  const bottomArea = document.getElementById("bottom-area");
+  bottomArea.innerHTML = "";
+
+  const merged = mergeCharactersWithAnime();
+
+  Object.entries(merged).forEach(([quarter, animeMap]) => {
+
+    /* 분기 */
+    const quarterSection = document.createElement("div");
+    quarterSection.className = "quarter-section";
+
+    const quarterBtn = document.createElement("button");
+    quarterBtn.className = "quarter-btn";
+    quarterBtn.textContent = quarter;
+
+    const quarterContent = document.createElement("div");
+    quarterContent.className = "quarter-content";
+    quarterContent.style.display = "none";
+
+    quarterBtn.onclick = () => {
+      const open = quarterContent.style.display === "block";
+      quarterContent.style.display = open ? "none" : "block";
+      quarterBtn.classList.toggle("active", !open);
+    };
+
+    /* 애니메이션 */
+    Object.values(animeMap).forEach(anime => {
+      const animeSection = document.createElement("div");
+      animeSection.className = "day-section";
+
+      const animeBtn = document.createElement("button");
+      animeBtn.className = "day-btn";
+      animeBtn.textContent = anime.animeTitle;
+
+      const charWrap = document.createElement("div");
+      charWrap.className = "character-row";
+      charWrap.style.display = "none";
+
+      animeBtn.onclick = () => {
+        const open = charWrap.style.display === "block";
+        charWrap.style.display = open ? "none" : "flex";
+        animeBtn.classList.toggle("active", !open);
+      };
+
+      /* 캐릭터 한 줄 */
+      anime.characters.forEach(character => {
+        const charBtn = document.createElement("div");
+        charBtn.className = "character-chip";
+        charBtn.textContent = character.name;
+
+        charBtn.onclick = () =>
+          toggleSelectCharacter(character, charBtn);
+
+        charWrap.appendChild(charBtn);
+      });
+
+      animeSection.append(animeBtn, charWrap);
+      quarterContent.appendChild(animeSection);
+    });
+
+    quarterSection.append(quarterBtn, quarterContent);
+    bottomArea.appendChild(quarterSection);
+  });
+}
+//캐릭터+애니메이션 병합유틸
+function mergeCharactersWithAnime() {
+  const result = {};
+
+  Object.entries(AnimeCharacters).forEach(([quarter, chars]) => {
+    result[quarter] = {};
+
+    chars.forEach(char => {
+      const anime = findAnimeById(char.animeId);
+      if (!anime) return;
+
+      if (!result[quarter][anime.id]) {
+        result[quarter][anime.id] = {
+          animeId: anime.id,
+          animeTitle: anime.title,
+          day: anime.day,
+          characters: []
+        };
+      }
+
+      result[quarter][anime.id].characters.push(char);
+    });
+  });
+
+  return result;
+}
+
+
+
+//공통 아코디언 생성기
+function createAccordionSection(title) {
+  const section = document.createElement("div");
+  section.className = "accordion-section";
+
+  const btn = document.createElement("button");
+  btn.className = "accordion-btn";
+  btn.textContent = title;
+
+  const content = document.createElement("div");
+  content.className = "accordion-content";
+  content.style.display = "none";
+
+  btn.onclick = () => {
+    const open = content.style.display === "block";
+    content.style.display = open ? "none" : "block";
+    btn.classList.toggle("active", !open);
+  };
+
+  section.append(btn, content);
+  return { section, content };
+}
+function toggleSelectCharacter(char, element) {
+  if (selectedSet.has(char.id)) {
+    selectedSet.delete(char.id);
+    element.classList.remove("selected");
+    removeCharacterNominee(character.id);
+  } else {
+    selectedSet.add(char.id);
+    element.classList.add("selected");
+    addCharacterNominee(char);
+  }
+}
+//중위 캐릭터 카드 생성
+function addCharacterNominee(character) {
+  const nomineeArea = document.getElementById("nominee-area");
+
+  // 중복 방지
+  if (nomineeArea.querySelector(`[data-id="${character.id}"]`)) return;
+
+  const card = document.createElement("div");
+  card.className = "nominee-card";
+  card.dataset.id = character.id;
+
+  card.innerHTML = `
+    <div class="thumb">
+      <img src="${character.thumbnail || 'images/no-image.png'}" />
+    </div>
+    <div class="title">${character.name}</div>
+  `;
+
+  // 🔥 중위 클릭 → 수상자 선정
+  card.onclick = () => selectCharacterWinner(character);
+
+  nomineeArea.appendChild(card);
+}
+function removeCharacterNominee(characterId) {
+  const nomineeArea = document.getElementById("nominee-area");
+  const card = nomineeArea.querySelector(`[data-id="${characterId}"]`);
+  if (card) card.remove();
+}
+function selectCharacterWinner(character) {
+  const winnerArea = document.getElementById("winner-area");
+  winnerArea.innerHTML = "";
+
+  const card = document.createElement("div");
+  card.className = "winner-card";
+
+  card.innerHTML = `
+    <div class="thumb">
+      <img src="${character.thumbnail}" />
+    </div>
+    <div class="title">${character.name}</div>
+  `;
+
+  winnerArea.appendChild(card);
+
+  // ✅ localStorage 저장
+  localStorage.setItem(
+    `winner_${awardId}`,
+    JSON.stringify({
+      characterId: character.id,
+      name: character.name,
+      animeId: character.animeId,
+      thumbnail: character.thumbnail
+    })
+  );
+}
+
+
+
 
 const theme = award.theme;
 
@@ -468,7 +697,13 @@ switch (theme) {
   case "ost":
     renderMusicTheme(theme);
     break;
-
+  case "character_male":
+    renderCharacterTheme("male");
+    break;
+  case "character_female":
+    renderCharacterTheme("female");
+    break;
+    break;
   default:
     renderDefaultTheme();
 }

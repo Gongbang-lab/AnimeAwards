@@ -276,3 +276,29 @@
   height: 56px;
   cursor: pointer;
 }
+.character-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 8px 6px;
+}
+
+.character-chip {
+  padding: 6px 10px;
+  background: #fff;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.character-chip:hover {
+  background: #f0f0f0;
+}
+
+.character-chip.selected {
+  background: #222;
+  color: #fff;
+  border-color: #222;
+}
