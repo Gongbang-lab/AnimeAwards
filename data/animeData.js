@@ -1,5 +1,8 @@
 //분기별 모든 애니메이션
 //이어서 방영된 작품은 제외(나무위키 첫방영 기준), 나무위키에 없는 작품은 제외
+const DAY_KEYS = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun','Ano','Web'];
+const DAY_LABELS = { Mon:'월요일', Tue:'화요일', Wed: '수요일', Thu: '목요일', Fri: '금요일', Sat: '토요일', Sun: '일요일', Ano: '변칙편성', Web: '웹'};
+
 const AnimeByQuarter = {
   Q1: [
     { id: 101, title: '고문 아르바이트의 일상', thumbnail: '', day: 'Mon'},

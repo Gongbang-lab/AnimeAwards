@@ -9,7 +9,6 @@ function renderAwards() {
     awardGrid.appendChild(card);
   });
 }
-
 function createAwardCard(award) {
   const card = document.createElement("div");
   card.className = "award-card";
@@ -69,13 +68,10 @@ function createAwardCard(award) {
 
   return card;
 }
-
-
 function deleteAward(id){
   Awards = Awards.filter((award) => award.id !== id);
   renderAwards();
 }
-
 Awards.forEach((award) => {
   const card = document.createElement("div");
   card.className = "award-card";
@@ -88,7 +84,6 @@ Awards.forEach((award) => {
 
   awardGrid.appendChild(card);
 });
-
 document
   .getElementById("add-award-btn")
   .addEventListener("click", () =>{
@@ -118,11 +113,9 @@ function resetAllAwards() {
   });
   renderAwards();
 }
-
 function isAwardCompleted(awardId) {
   return localStorage.getItem(`winner_${awardId}`) !== null;
 }
-
 resetBtn.onclick = () => {
   if (!confirm("모든 수상 결과를 초기화할까요?")) return;
 
@@ -134,11 +127,7 @@ resetBtn.onclick = () => {
 
   renderAwards();
 };
-
-
 renderAwards();
-
-
 
 // 버튼 형식이 아닌 Thmbnail Card UI
 // 더보기 버튼 = Accordion UI

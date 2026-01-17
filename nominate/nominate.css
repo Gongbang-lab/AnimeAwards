@@ -1,357 +1,314 @@
-/* ─────────────────────
-   공통 레이아웃
-───────────────────── */
-#bottom-area {
-  padding: 12px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.nominate-page {
+  display: flex;
+  gap: 24px;
+  height: calc(100vh - 72px); /* 헤더 높이 */
 }
 
-/* ─────────────────────
-   분기 아코디언
-───────────────────── */
-.quarter-section {
-  margin-bottom: 12px;
+/* 좌 / 우 70 : 30 */
+.nominate-left {
+  flex: 7;
+  overflow-y: auto;
+}
+
+.nominate-right {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  min-height: 0;
+}
+
+.step1-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.step1-item {
+  padding: 14px 16px;
   border-radius: 10px;
+  cursor: pointer;
+  background: #111;
+  border: 1px solid #222;
+  transition: all 0.2s ease;
+}
+
+.step1-item:hover {
+  background: #1a1a1a;
+  border-color: #444;
+}
+
+.step1-item.selected {
+  background: #222;
+  border-color: gold;
+  color: gold;
+}
+/* STEP1 PREVIEW 박스 */
+.step1-preview {
+  height: 320px;
+  position: sticky;
+  top: 20px;  
+  /* 스크롤해도 고정 */
+  background-color: #111;
+  color: #f1f1f1;
+  border-radius: 14px;
+  margin-top: 16px;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
   overflow: hidden;
-  border: 1px solid #ddd;
+}
+.preview-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.step1-preview .thumb {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.step1-preview .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.step1-preview .title {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.step1-buttons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.step-btn {
+  flex: 1;
+  padding: 12px 0;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.step-btn.next {
+  background: gold;
+  color: #000;
+}
+
+.step-btn.next:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.step-btn.back {
+  background: #222;
+  color: #fff;
+}
+
+.step2-card {
+  display: flex;
+  gap: 18px;
+  padding: 18px;
+  border-radius: 16px;
+  background: #111;
+  border: 2px solid #333;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.step2-card:hover {
+  border-color: #666;
+}
+
+.step2-card.selected {
+  border-color: gold;
+  box-shadow: 0 0 14px rgba(255, 215, 0, 0.5);
+}
+
+.step2-card .thumb {
+  width: 130px;
+  height: 180px;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.step2-card .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.step2-card .info {
+  display: flex;
+  align-items: center;
+}
+
+.step2-card .title {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.step2-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.step2-btn {
+  padding: 14px 0;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.step2-btn.back {
+  background: #222;
+  color: #fff;
+}
+
+.step2-btn.award {
+  background: linear-gradient(135deg, gold, orange);
+  color: #000;
+}
+
+.step2-btn.award:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.quarter-section {
+  margin-bottom: 14px;
 }
 
 .quarter-btn {
   width: 100%;
   padding: 14px 16px;
-  background: #222;
+  border-radius: 12px;
+  background: #111;
+  border: 1px solid #222;
   color: #fff;
-  font-size: 16px;
-  font-weight: 700;
-  border: none;
+  font-weight: 800;
   cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: left;
 }
 
-.quarter-btn::after {
-  content: "▾";
-  transition: transform 0.2s ease;
-}
-
-.quarter-btn.active::after {
-  transform: rotate(180deg);
+.quarter-btn.active {
+  border-color: gold;
+  color: gold;
 }
 
 .quarter-content {
-  background: #f8f8f8;
-  padding: 8px;
-}
-
-/* ─────────────────────
-   요일 아코디언
-───────────────────── */
-.day-section {
-  margin-top: 6px;
-  border-radius: 8px;
-  overflow: hidden;
+  padding: 10px 0 0 10px;
 }
 
 .day-btn {
   width: 100%;
-  padding: 12px 14px;
-  background: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 600;
+  padding: 10px 14px;
+  margin-top: 8px;
+  border-radius: 10px;
+  background: #1a1a1a;
+  border: 1px solid #222;
+  color: #ccc;
   cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: left;
 }
 
-.day-btn::after {
-  content: "＋";
-  font-weight: bold;
-  transition: transform 0.2s ease;
+.day-btn.active {
+  color: gold;
+  border-color: gold;
 }
 
-.day-btn.active::after {
-  content: "－";
-}
-
-.day-btn:hover {
-  background: #f0f0f0;
-}
-
-/* ─────────────────────
-   애니메이션 리스트
-───────────────────── */
 .anime-list {
-  margin: 6px 0 0 0;
-  padding-left: 12px;
   list-style: none;
+  padding-left: 14px;
+  margin-top: 6px;
 }
 
 .anime-item {
   padding: 8px 10px;
-  margin-bottom: 4px;
-  background: #ffffff;
-  border-radius: 6px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background 0.15s ease, transform 0.1s ease;
-}
-
-.anime-item:hover {
-  background: #ececec;
-  transform: translateX(2px);
-}
-
-.anime-item.selected {
-  background: #222;
-  color: #fff;
-  font-weight: bold;
-}
-
-.anime-item.selected::after {
-  content: " ✓";
-  font-size: 12px;
-  opacity: 0.7;
-}
-
-/* ─────────────────────
-   선택 피드백 (중위로 이동 느낌)
-───────────────────── */
-.anime-item:active {
-  background: #dcdcdc;
-}
-
-#nominee-area {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 16px;
-}
-
-.nominee-card {
-  cursor: pointer;
-  border-radius: 10px;
-  overflow: hidden;
-  background: #111;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.nominee-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-}
-
-.nominee-card .thumb {
-  aspect-ratio: 16 / 9;
-  background: #222;
-  overflow: hidden;
-}
-
-.nominee-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.nominee-card .title {
-  padding: 8px;
-  font-size: 14px;
-  text-align: center;
-  color: #fff;
-}
-
-.winner-card {
-  max-width: 360px;
-  margin: 0 auto;
-  border-radius: 14px;
-  overflow: hidden;
-  background: #1a1a1a;
-  box-shadow: 0 12px 30px rgba(255, 215, 0, 0.4);
-}
-.winner-card .thumb {
-  aspect-ratio: 16 / 9;
-  background: #000;
-}
-
-.winner-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.winner-card .title {
-  padding: 12px;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-  color: #ffd700; /* 금색 */
-}
-.winner-badge {
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  background: gold;
-  color: black;
-  font-weight: bold;
-  padding: 4px 8px;
-  border-radius: 6px;
-  font-size: 12px;
-}
-
-#back-btn {
-  position: fixed;
-  top: 16px;
-  right: 16px;
-  background: #111;
-  color: white;
-  border: none;
-  padding: 8px 14px;
+  margin-bottom: 6px;
   border-radius: 8px;
-  cursor: pointer;
-  z-index: 1000;
-}
-
-.music-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 8px;
-  cursor: pointer;
-}
-
-.music-item:hover {
-  background: rgba(255,255,255,0.05);
-}
-
-.type {
-  font-size: 12px;
-  padding: 2px 6px;
-  border-radius: 4px;
-}
-
-.type.OP { background: #ff7675; }
-.type.ED { background: #74b9ff; }
-.type.OST { background: #55efc4; }
-
-.youtube-btn {
-  margin-left: auto;
-}
-
-.nominee-card.music {
-  position: relative;
-  cursor: pointer;
-}
-
-.nominee-card .thumb {
-  position: relative;
-}
-
-.nominee-card img {
-  width: 100%;
-  display: block;
-}
-
-.nominee-card .overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.55);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.2s ease;
-}
-
-.nominee-card:hover .overlay {
-  opacity: 1;
-}
-
-.youtube-btn {
-  font-size: 32px;
-  background: red;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 56px;
-  height: 56px;
-  cursor: pointer;
-}
-.character-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  padding: 8px 6px;
-}
-
-.character-chip {
-  padding: 6px 10px;
-  background: #fff;
-  border-radius: 14px;
-  border: 1px solid #ddd;
-  font-size: 13px;
   cursor: pointer;
   transition: all 0.15s ease;
 }
 
-.character-chip:hover {
-  background: #f0f0f0;
+.anime-item:hover {
+  background: #1e1e1e;
 }
 
-.character-chip.selected {
+.anime-item.selected {
   background: #222;
+  color: gold;
+}
+/* 제목 */
+.preview-title {
+  flex-shrink: 0;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  opacity: 0.85;
+}
+/* 리스트는 그냥 내용만 */
+.preview-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* 아이템 */
+.preview-list li {
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.preview-list li:hover {
+  background-color: rgba(255,255,255,0.08);
+}
+
+.preview-list li.selected {
+  background-color: #3b82f6;
   color: #fff;
-  border-color: #222;
-}
-#add-custom-couple-btn {
-  position: fixed;
-  right: 24px;
-  bottom: 24px;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  font-size: 32px;
-  background: #ff5a8a;
-  color: white;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0 8px 20px rgba(0,0,0,.25);
-}
-.nominate-couple-card {
-  position: relative;
 }
 
-.nominate-couple-card .remove-btn {
+.preview-item {
+  padding: 6px 8px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 14px;
+}
+
+.preview-item:last-child {
+  border-bottom: none;
+}
+.step1-preview::after {
+  content: '';
   position: absolute;
-  top: 6px;
-  right: 6px;
-  display: none;
-  cursor: pointer;
-  background: rgba(0,0,0,.6);
-  color: white;
-  border-radius: 50%;
-  width: 20px;
+  bottom: 0;
+  left: 0;
+  right: 0;
   height: 20px;
-  text-align: center;
-  line-height: 20px;
-}
-
-.nominate-couple-card:hover .remove-btn {
-  display: block;
-}
-.couple-thumb {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-
-.couple-thumb img {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.couple-thumb .heart {
-  font-size: 20px;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(17,17,17,0),
+    rgba(17,17,17,1)
+  );
 }

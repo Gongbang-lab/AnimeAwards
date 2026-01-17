@@ -1,41 +1,105 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>Anime Awards</title>
-  <link rel="stylesheet" href="nominate.css">
+  <meta charset="UTF-8" />
+  <title>노미네이트</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- 공통 CSS -->
+  <link rel="stylesheet" href="../nominate/nominate.css" />
+
+  <!-- 데이터 -->
+  <script src="../data/animeData.js"></script>
+  <script src="../data/animeCharacter.js"></script>
 </head>
 <body>
 
-<h1 id="award-title"></h1>
+  <!-- 상단 -->
+  <header class="nominate-header">
+    <h1 id="award-title">올해의 애니메이션 노미네이트</h1>
+  </header>
 
-<button id="back-btn">← 메인으로</button>
+  <!-- ========================= -->
+  <!-- STEP CONTAINER -->
+  <!-- ========================= -->
+  <main class="nominate-page">
 
-<!-- 상위 -->
-<section id="winner-area">
-  <h2>수상작</h2>
-</section>
+    <!-- ========================= -->
+    <!-- LEFT AREA -->
+    <!-- ========================= -->
+    <section class="nominate-left" id="left-area">
+      <!--
+        STEP 1 : 리스트 (텍스트)
+        STEP 2 : 카드 (썸네일 포함)
+        JS가 이 영역을 교체 렌더링
+      -->
+    </section>
 
-<hr>
+    <!-- ========================= -->
+    <!-- RIGHT AREA -->
+    <!-- ========================= -->
+    <aside class="nominate-right" id="right-area">
 
-<!-- 중위 -->
-<section id="nominee-area">
-  <h2>노미네이트</h2>
-</section>
-<button id="add-custom-couple-btn">+</button>
+      <!-- STEP 1 BUTTONS -->
+      <div class="step1-buttons" id="step1-buttons">
+        <button class="step-btn back" id="step1-back-btn">
+          메인으로
+        </button>
+        <button class="step-btn next" id="step1-next-btn" disabled>
+          다음 단계
+        </button>
+      </div>
+      
+      <!-- STEP 2 BUTTONS -->
+      <div class="step2-buttons" id="step2-buttons" style="display:none;">
+        <button class="step2-btn back" id="step2-back-btn">
+          뒤로가기
+        </button>
+        <button class="step2-btn award" id="step2-award-btn" disabled>
+          수상
+        </button>
+      </div>
 
-<hr>
+      <!-- ========================= -->
+      <!-- PREVIEW AREA -->
+      <!-- ========================= -->
+      <div id="step1-preview" class="step1-preview">
+        <div class="preview-scroll">
+          <ul id="preview-list">
+            <div class="preview-title">선택된 작품</div>
+          </ul>
+        </div>
+      </div>
+        <!-- STEP1 선택 미리보기 -->
 
-<!-- 하위 -->
-<section id="bottom-area"></section>
+      <!-- 빈 공간 (40%) -->
+      <div style="flex:1;"></div>
 
+    </aside>
 
-<!--  데이터  -->
-<script src="../data/awardData.js"></script>
-<script src="../data/animeData.js"></script>
-<script src="../data/animeSong.js"></script>
-<script src="../data/animeCharacter.js"></script>
-<script src="../data/animeCouples.js"></script>
-<script src="nominate.js"></script>
+  </main>
+
+  <!-- ========================= -->
+  <!-- WINNER POPUP -->
+  <!-- ========================= -->
+  <div class="winner-popup" id="winner-popup" style="display:none;">
+    <div class="popup-card">
+      <h2>🏆 수상작</h2>
+
+      <div class="popup-thumb">
+        <img id="winner-thumb" />
+      </div>
+
+      <div class="popup-title" id="winner-title"></div>
+
+      <button class="popup-btn" id="go-main-btn">
+        메인 페이지로
+      </button>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="../nominate/nominate.js"></script>
+
 </body>
 </html>
