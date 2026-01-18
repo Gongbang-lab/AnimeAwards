@@ -53,7 +53,7 @@ html, body {
   height: 320px;
   position: sticky;
   top: 20px;  
-  /* 스크롤해도 고정 */
+
   background-color: #111;
   color: #f1f1f1;
   border-radius: 14px;
@@ -63,11 +63,15 @@ html, body {
   flex-direction: column;
   min-height: 0;
   overflow: hidden;
+
+  text-align: center;
+  color: gold;
 }
 .preview-scroll {
   flex: 1;
   min-height: 0;
   overflow-y: auto;
+  padding-left: 0;
 }
 
 .step1-preview .thumb {
@@ -88,6 +92,12 @@ html, body {
   font-size: 18px;
   font-weight: 700;
   text-align: center;
+}
+
+.step1-preview ul {
+  list-style: none;
+  padding: 6px;
+  margin: 0;
 }
 
 .step1-buttons {
@@ -120,51 +130,21 @@ html, body {
   background: #222;
   color: #fff;
 }
-
-.step2-card {
-  display: flex;
-  gap: 18px;
-  padding: 18px;
-  border-radius: 16px;
-  background: #111;
-  border: 2px solid #333;
-  cursor: pointer;
-  transition: all 0.25s ease;
-}
-
-.step2-card:hover {
-  border-color: #666;
-}
-
-.step2-card.selected {
-  border-color: gold;
-  box-shadow: 0 0 14px rgba(255, 215, 0, 0.5);
-}
-
-.step2-card .thumb {
-  width: 130px;
-  height: 180px;
-  border-radius: 12px;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-
-.step2-card .thumb img {
+.card-thumb {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  overflow: hidden;
+}
+
+.card-thumb img {
+  width: 100%;
+  height: auto;          /* 🔥 이미지 원본 비율 유지 */
+  display: block;
 }
 
 .step2-card .info {
   display: flex;
   align-items: center;
 }
-
-.step2-card .title {
-  font-size: 22px;
-  font-weight: 800;
-}
-
 .step2-buttons {
   display: flex;
   flex-direction: column;
@@ -245,14 +225,20 @@ html, body {
 
 .anime-item {
   padding: 8px 10px;
+  cursor: pointer;
+  user-select: none;
   margin-bottom: 6px;
   border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.15s ease;
+  font-size: 400;
+  transition:
+    background-color 0.15s ease, 
+    font-weight 0.15s ease;
 }
 
 .anime-item:hover {
   background: #1e1e1e;
+  text-shadow: 0 0 0 currentColor;
+  font-weight: 700;
 }
 
 .anime-item.selected {
@@ -262,11 +248,12 @@ html, body {
 /* 제목 */
 .preview-title {
   flex-shrink: 0;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
   margin-bottom: 10px;
   opacity: 0.85;
 }
+
 /* 리스트는 그냥 내용만 */
 .preview-list {
   list-style: none;
@@ -274,10 +261,26 @@ html, body {
   padding: 0;
 }
 
+/* 스크롤바 커스텀 (선택) */
+.preview-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.preview-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
+}
+
+.preview-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 /* 아이템 */
 .preview-list li {
+  position: relative;
   cursor: pointer;
-  font-size: 13px;
+  transition: background 0.15s ease;
+  font-size: 15px;
 }
 
 .preview-list li:hover {
@@ -292,7 +295,9 @@ html, body {
 .preview-item {
   padding: 6px 8px;
   border-bottom: 1px solid #e0e0e0;
-  font-size: 14px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .preview-item:last-child {
@@ -312,3 +317,111 @@ html, body {
     rgba(17,17,17,1)
   );
 }
+
+/* Step2 카드 그리드 */
+.step2-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+/* 카드 */
+.step2-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 8px;
+  border-radius: 16px;
+
+  background: transparent;
+  border: 2px solid #333;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.25s ease;
+}
+
+.step2-card:hover {
+  border-color: #555;
+  transform: translateY(-2px);
+}
+
+/* 선택 상태 */
+.step2-card.selected {
+  border-color: gold;
+  box-shadow: 0 0 16px rgba(255, 215, 0, 0.5);
+}
+.step2-card.selected .card-title {
+  background: linear-gradient(135deg, gold, orange);
+  color: #000;
+}
+
+/* 썸네일 (16:9) */
+.step2-card .thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.step2-card .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 타이틀 */
+.card-title {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  border-radius: 20px;
+}
+
+.winner-popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: none;              /* 기본 숨김 */
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.winner-popup.active {
+  display: flex;
+}
+
+.popup-card {
+  background: #111;
+  border-radius: 20px;
+  padding: 24px;
+  width: 320px;
+  text-align: center;
+}
+
+.popup-thumb img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin: 12px 0;
+}
+
+.popup-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.popup-btn {
+  background: gold;
+  color: #000;
+  font-weight: 800;
+  padding: 12px 0;
+  width: 100%;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+

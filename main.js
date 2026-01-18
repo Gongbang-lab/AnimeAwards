@@ -3,70 +3,45 @@ const resetBtn = document.getElementById("reset-btn");
 
 function renderAwards() {
   awardGrid.innerHTML = "";
+  
+  const results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
 
   Awards.forEach((award) => {
-    const card = createAwardCard(award);
-    awardGrid.appendChild(card);
-  });
-}
-function createAwardCard(award) {
-  const card = document.createElement("div");
-  card.className = "award-card";
+    const card = document.createElement("div");
+    card.className = "award-card";
+    //winnerData
 
-  const winnerData = localStorage.getItem(`winner_${award.id}`);
-  const winner = winnerData ? JSON.parse(winnerData) : null;
+    const winner = results[award.name] || null;
 
-  if (winner) {
-    card.classList.add("has-winner");
+    // 썸네일
+    const thumb = document.createElement("img");
+    thumb.className = "award-thumb";
+    thumb.src = winner?.thumbnail || award.thumb || "images/default.png";
 
-    const awardTitle = document.createElement("div");
-    awardTitle.className = "award-title";
-    awardTitle.textContent = award.name;
+    // 상 이름
+    const awardName = document.createElement("div");
+    awardName.className = "award-name";
+    awardName.textContent = award.name;
 
-    const thumbnail = document.createElement("div");
-    thumbnail.className = "thumbnail";
+    card.append(thumb, awardName);
 
-    const img = document.createElement("img");
-    img.src = winner.thumbnail;
+    // 🏆 수상된 경우만 작품명 추가
+    if (winner) {
+      const winnerTitle = document.createElement("div");
+      winnerTitle.className = "award-winner";
+      winnerTitle.textContent = winner.title;
+      card.appendChild(winnerTitle);
 
-    thumbnail.appendChild(img);
+      card.classList.add("has-winner");
+    }
 
-    const animeTitle = document.createElement("div");
-    animeTitle.className = "winner-title";
-    animeTitle.textContent = winner.title;
-
-    card.append(awardTitle, thumbnail, animeTitle);
-
-  } else {
-    const thumbnail = document.createElement("div");
-    thumbnail.className = "thumbnail";
-
-    const img = document.createElement("img");
-    img.src = award.thumb || "default.png";
-
-    const deleteBtn = document.createElement("button");
-    deleteBtn.className = "delete-btn";
-    deleteBtn.textContent = "×";
-
-    deleteBtn.onclick = (e) => {
-      e.stopPropagation();
-      deleteAward(award.id);
+    card.onclick = () => {
+      location.href =
+        `nominate/nominate.html?awardName=${encodeURIComponent(award.name)}`;
     };
 
-    thumbnail.append(img, deleteBtn);
-
-    const titleDiv = document.createElement("div");
-    titleDiv.className = "award-title";
-    titleDiv.textContent = award.name;
-
-    card.append(thumbnail, titleDiv);
-  }
-
-  card.onclick = () => {
-    location.href = `nominate/nominate.html?awardId=${award.id}`;
-  };
-
-  return card;
+    awardGrid.appendChild(card);
+  });
 }
 function deleteAward(id){
   Awards = Awards.filter((award) => award.id !== id);
@@ -84,9 +59,7 @@ Awards.forEach((award) => {
 
   awardGrid.appendChild(card);
 });
-document
-  .getElementById("add-award-btn")
-  .addEventListener("click", () =>{
+document.getElementById("add-award-btn").addEventListener("click", () =>{
     const input = document.getElementById("award-input");
     const name = input.value.trim();
 
@@ -104,13 +77,11 @@ document
     input.value = "";
     renderAwards(); // 화면 갱신
   });
-
+document.addEventListener("DOMContentLoaded", () => {
+  renderAwards();
+});
 function resetAllAwards() {
-  Object.keys(localStorage).forEach(key => {
-    if (key.startsWith("nominees_") || key.startsWith("winner_")) {
-      localStorage.removeItem(key);
-    }
-  });
+  localStorage.removeItem("anime_awards_result");
   renderAwards();
 }
 function isAwardCompleted(awardId) {
@@ -119,12 +90,7 @@ function isAwardCompleted(awardId) {
 resetBtn.onclick = () => {
   if (!confirm("모든 수상 결과를 초기화할까요?")) return;
 
-  Object.keys(localStorage).forEach(key => {
-    if (key.startsWith("nominees_") || key.startsWith("winner_")) {
-      localStorage.removeItem(key);
-    }
-  });
-
+  localStorage.removeItem("anime_awards_result");
   renderAwards();
 };
 renderAwards();

@@ -1,27 +1,52 @@
 //상태 관리
 const nominateState = {
   step: 1,
+  currentAward: null,
   selectedItems: [],
   finalWinner: null
 };
 //html 버튼 바인딩
 function bindStaticButtons() {
   document.getElementById("step1-back-btn").onclick = () => {
-    location.href = "index.html";
+    location.href = "../main.html";
   };
 
   document.getElementById("step1-next-btn").onclick = () => {
-    if (nominateState.selectedItem) goStep2();
+    if (nominateState.selectedItems) goStep2();
   };
 
   document.getElementById("step2-back-btn").onclick = () => {
     nominateState.step = 1;
+
+    toggleStepUI();
     renderStep1();
+
+      // Step1 preview 다시 보이게
+    const preview = document.getElementById("step1-preview");
+    if (preview) preview.style.display = "block";
   };
 
   document.getElementById("step2-award-btn").onclick = () => {
-    if (nominateState.finalWinner) openAwardPopup();
+    if (!nominateState.finalWinner) return;
+
+    saveAwardResult();
+    openAwardPopup();
   };
+}
+//현재 상 결정
+function getCurrentAward() {
+  const params = new URLSearchParams(location.search);
+  const awardName = params.get("awardName");
+
+  const award = Awards.find(a => a.name === awardName);
+
+  if (!award) {
+    alert("존재하지 않는 상입니다");
+    location.href = "../main.html";
+    return;
+  }
+
+  nominateState.currentAward = award;
 }
 //진입 함수
 function renderStep1() {
@@ -86,7 +111,7 @@ function renderAnimeList(parent) {
         li.className = "anime-item";
         li.textContent = anime.title;
 
-        if (nominateState.selectedItem?.title === anime.title) {
+        if (nominateState.selectedItems?.title === anime.title) {
           li.classList.add("selected");
         }
 
@@ -105,8 +130,8 @@ function renderAnimeList(parent) {
             li.classList.add("selected");
           }
 
-  updateStep1Preview();
-};
+          updateStep1Preview();
+        };
 
 
         dayList.appendChild(li);
@@ -130,7 +155,6 @@ function updateStep1Preview() {
   preview.innerHTML = "";
 
   if (nominateState.selectedItems.length === 0) {
-    preview.textContent = "선택된 작품이 없습니다.";
     nextBtn.disabled = true;
     return;
   }
@@ -184,36 +208,50 @@ function goStep2() {
 
   toggleStepUI();
 
+  const preview = document.getElementById("step1-preview");
+  if (preview) preview.style.display = "none";
+
   const left = document.getElementById("left-area");
   left.innerHTML = "";
 
-  renderStep2Card(left);
+  renderStep2Cards(left);
 }
 //step 2 카드
-function renderStep2Card(parent) {
+function renderStep2Cards(parent) {
   const title = document.createElement("h2");
   title.textContent = "노미네이트 작품";
-
-  const card = document.createElement("div");
-  card.className = "step2-card";
-
-  card.innerHTML = `
-    <div class="thumb">
-      <img src="${nominateState.selectedItem.thumbnail || 'images/no-image.png'}">
-    </div>
-    <div class="info">
-      <div class="title">${nominateState.selectedItem.title}</div>
-    </div>
-  `;
-
-  card.onclick = () => {
-    const selected = card.classList.toggle("selected");
-    nominateState.finalWinner = selected ? nominateState.selectedItem : null;
-    document.getElementById("step2-award-btn").disabled = !selected;
-  };
-
   parent.appendChild(title);
-  parent.appendChild(card);
+
+  const grid = document.createElement("div");
+  grid.className = "step2-grid";
+
+  nominateState.selectedItems.forEach(anime => {
+    const card = document.createElement("div");
+    card.className = "step2-card";
+
+    card.innerHTML = `
+      <div class="card-thumb">
+        <img src="${anime.thumbnail || 'images/no-image.png'}" />
+      </div>
+      <div class="card-title">${anime.title}</div>
+    `;
+
+    card.onclick = () => {
+      // 단일 선택
+      document
+        .querySelectorAll(".step2-card")
+        .forEach(c => c.classList.remove("selected"));
+
+      card.classList.add("selected");
+      nominateState.finalWinner = anime;
+
+      document.getElementById("step2-award-btn").disabled = false;
+    };
+
+    grid.appendChild(card);
+  });
+
+  parent.appendChild(grid);
 }
 //step ui 전환
 function toggleStepUI() {
@@ -230,20 +268,53 @@ function toggleStepUI() {
 }
 //수상 팝업
 function openAwardPopup() {
-  document.getElementById("winner-thumb").src =
+  const popup = document.getElementById("winner-popup");
+  const thumb = document.getElementById("winner-thumb");
+  const title = document.getElementById("winner-title");
+  const goMainBtn = document.getElementById("go-main-btn");
+
+  if (!popup || !thumb || !title || !goMainBtn) {
+    console.error("❌ 팝업 DOM 요소 누락", {
+      popup, thumb, title, goMainBtn
+    });
+    return;
+  }
+
+  thumb.src =
     nominateState.finalWinner.thumbnail || "images/no-image.png";
 
-  document.getElementById("winner-title").textContent =
+  title.textContent =
     nominateState.finalWinner.title;
 
-  document.getElementById("winner-popup").style.display = "flex";
+  popup.style.display = "flex"; // ← classList.add 말고 이게 안전
 
-  document.getElementById("go-main-btn").onclick = () => {
-    location.href = "index.html";
+  goMainBtn.onclick = () => {
+    location.href = "../main.html";
   };
+}
+//localstorage에 저장
+function saveAwardResult() {
+  const award = nominateState.currentAward;
+  const winner = nominateState.finalWinner;
+
+  if (!award || !winner) return;
+
+  const stored =
+    JSON.parse(localStorage.getItem("anime_awards_result")) || {};
+
+  stored[award.name] = {
+    title: winner.title,
+    thumbnail: winner.thumbnail
+  };
+
+  localStorage.setItem(
+    "anime_awards_result",
+    JSON.stringify(stored)
+  );
 }
 //초기 실행
 document.addEventListener("DOMContentLoaded", () => {
+  getCurrentAward();
   bindStaticButtons();
   renderStep1();
 });
