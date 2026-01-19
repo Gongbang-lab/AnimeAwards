@@ -859,7 +859,6 @@ const AnimeOST = {
     animeId: 101,
     title: "勇者",
     singer: "YOASOBI",
-    thumbnail: 'https://youtube.com/.../maxresdefault.jpg',
     youtube: "https://youtube.com/..."
   },
   {
@@ -867,7 +866,6 @@ const AnimeOST = {
     animeId: 102,
     title: "勇者",
     singer: "YOASOBI",
-    thumbnail: '',
     youtube: "https://youtube.com/..."
   }
 ],

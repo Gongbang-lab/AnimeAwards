@@ -36,47 +36,25 @@ function renderAwards() {
     }
 
     card.onclick = () => {
-      location.href =
-        `nominate/nominate.html?awardName=${encodeURIComponent(award.name)}`;
-    };
+      switch (award.theme) {
+      case "opening":
+      case "ending":
+      case "ost":
+        location.href = `../songNominate/songNominate.html?awardName=${encodeURIComponent(award.name)}&theme=${encodeURIComponent(award.theme)}`;
+        break;
 
-    awardGrid.appendChild(card);
-  });
-}
+      default:
+        location.href = `../nominate/nominate.html?awardName=${encodeURIComponent(award.name)}&theme=${encodeURIComponent(award.theme)}`;
+      }
+
+      awardGrid.appendChild(card);
+    };
+  })}
+
 function deleteAward(id){
   Awards = Awards.filter((award) => award.id !== id);
   renderAwards();
 }
-Awards.forEach((award) => {
-  const card = document.createElement("div");
-  card.className = "award-card";
-  card.textContent = award.name;
-
-  card.addEventListener("click", () => {
-    console.log("상 카드 클릭됨", award.id);
-    location.href = `nominate/nominate.html?awardId=${award.id}`;
-  });
-
-  awardGrid.appendChild(card);
-});
-document.getElementById("add-award-btn").addEventListener("click", () =>{
-    const input = document.getElementById("award-input");
-    const name = input.value.trim();
-
-    if(!name){
-      alert("상 이름을 입력하세요.");
-      return;
-    }
-
-    Awards.push({
-      id: Date.now(), // 고유 ID
-      name: name,
-      thumb : ''
-    });
-
-    input.value = "";
-    renderAwards(); // 화면 갱신
-  });
 document.addEventListener("DOMContentLoaded", () => {
   renderAwards();
 });

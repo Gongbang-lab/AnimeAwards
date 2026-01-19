@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>노래 수상 – Step 1</title>
+
+  <!-- 공통 스타일 -->
+  <link rel="stylesheet" href="./songNominate.css" />
+
+</head>
+<body>
+
+  <!-- 상단 헤더 -->
+  <header class="nominate-header">
+    <h1 id="award-title">노래 부문 수상</h1>
+  </header>
+
+  <!-- 전체 레이아웃 -->
+  <main class="nominate-page">
+
+    <!-- 좌측 영역 : Step1 리스트 -->
+    <section id="left-area" class="nominate-left">
+      <!-- JS에서 Step1 아코디언 렌더링 -->
+    </section>
+
+    <!-- 우측 영역 : Preview -->
+    <aside class="nominate-right">
+
+      <!-- Step1 Preview -->
+      <div id="step1-preview" class="step1-preview">
+        <h3 class="preview-title">선택된 곡</h3>
+
+        <div id="preview-list" class="preview-list">
+          <!-- 선택된 곡 리스트 -->
+        </div>
+      </div>
+
+    </aside>
+
+  </main>
+
+  <!-- 하단 버튼 영역 -->
+  <footer class="nominate-footer">
+
+    <!-- Step1 버튼 -->
+    <div id="step1-buttons" class="step-buttons">
+      <button id="step1-back-btn" class="btn secondary">
+        메인으로
+      </button>
+
+      <button id="step1-next-btn" class="btn primary" disabled>
+        다음 단계
+      </button>
+    </div>
+
+    <!-- Step2 버튼 (Step2에서만 표시) -->
+    <div id="step2-buttons" class="step-buttons" style="display:none;">
+      <button id="step2-back-btn" class="btn secondary">
+        뒤로가기
+      </button>
+
+      <button id="step2-award-btn" class="btn gold" disabled>
+        수상
+      </button>
+    </div>
+
+  </footer>
+
+  <!-- 수상 팝업 -->
+  <div id="winner-popup" class="winner-popup" style="display:none;">
+    <div class="popup-content">
+      <h2 class="popup-award-name">수상</h2>
+
+      <img id="winner-thumb" src="" alt="winner thumbnail" />
+
+      <div id="winner-title" class="winner-title"></div>
+
+      <button id="go-main-btn" class="btn primary">
+        메인으로
+      </button>
+    </div>
+  </div>
+
+  <!-- 데이터 -->
+  <script src="../data/animeData.js"></script>
+  <script src="../data/animeSongs.js"></script>
+  <script src="../data/awardData.js"></script>
+
+  <!-- 메인 로직 -->
+  <script src="./songNominate.js" defer></script>
+
+</body>
+</html>

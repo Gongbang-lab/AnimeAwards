@@ -1,0 +1,38 @@
+.accordion-header {
+  width: 100%;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.accordion-content {
+  padding-left: 12px;
+}
+
+.song-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.song-item.selected {
+  background: rgba(255,215,0,0.15);
+}
+
+.song-thumb {
+  width: 120px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.song-text {
+  flex: 1;
+}
+
+.youtube-btn {
+  font-size: 18px;
+  text-decoration: none;
+}

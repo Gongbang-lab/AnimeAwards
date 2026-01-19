@@ -1,14 +1,14 @@
 //상태 관리
 const nominateState = {
   step: 1,
-  currentAward: null,
+  theme: null,
   selectedItems: [],
   finalWinner: null
 };
 //html 버튼 바인딩
 function bindStaticButtons() {
   document.getElementById("step1-back-btn").onclick = () => {
-    location.href = "../main.html";
+    location.href = "../main/main.html";
   };
 
   document.getElementById("step1-next-btn").onclick = () => {
@@ -33,24 +33,10 @@ function bindStaticButtons() {
     openAwardPopup();
   };
 }
-//현재 상 결정
-function getCurrentAward() {
-  const params = new URLSearchParams(location.search);
-  const awardName = params.get("awardName");
-
-  const award = Awards.find(a => a.name === awardName);
-
-  if (!award) {
-    alert("존재하지 않는 상입니다");
-    location.href = "../main.html";
-    return;
-  }
-
-  nominateState.currentAward = award;
-}
 //진입 함수
 function renderStep1() {
   const left = document.getElementById("left-area");
+
 
   if (!left) {
     console.error("❌ left-area 없음");
@@ -289,7 +275,7 @@ function openAwardPopup() {
   popup.style.display = "flex"; // ← classList.add 말고 이게 안전
 
   goMainBtn.onclick = () => {
-    location.href = "../main.html";
+    location.href = "../main/main.html";
   };
 }
 //localstorage에 저장
@@ -314,7 +300,10 @@ function saveAwardResult() {
 }
 //초기 실행
 document.addEventListener("DOMContentLoaded", () => {
-  getCurrentAward();
-  bindStaticButtons();
+  const params = new URLSearchParams(location.search);
+  const theme = params.get("theme");
+  nominateState.theme = theme
+
   renderStep1();
+  bindStaticButtons();
 });
