@@ -1,194 +1,72 @@
+/* ──────────────────────────────────────────────────────────
+   기본 레이아웃 및 배경
+   ────────────────────────────────────────────────────────── */
 html, body {
   height: 100%;
   margin: 0;
+  background-color: #000; /* 전체 배경 검정 */
+  color: #fff;
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
 }
+
 .nominate-page {
   display: flex;
   gap: 24px;
-  height: calc(100vh - 72px); /* 헤더 높이 */
+  height: calc(100vh - 80px); /* 헤더 제외 높이 */
+  padding: 0 24px;
+  box-sizing: border-box;
 }
 
-/* 좌 / 우 70 : 30 */
+/* 좌측 리스트 영역 (70%) */
 .nominate-left {
   flex: 7;
   overflow-y: auto;
+  padding-right: 12px;
 }
 
+/* 우측 사이드바 영역 (30%) */
 .nominate-right {
   flex: 3;
   display: flex;
   flex-direction: column;
   height: 100%;
-
   min-height: 0;
 }
 
-.step1-list {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+/* 스크롤바 커스텀 */
+.nominate-left::-webkit-scrollbar,
+.preview-scroll::-webkit-scrollbar {
+  width: 6px;
 }
-
-.step1-item {
-  padding: 14px 16px;
+.nominate-left::-webkit-scrollbar-thumb,
+.preview-scroll::-webkit-scrollbar-thumb {
+  background: #333;
   border-radius: 10px;
-  cursor: pointer;
-  background: #111;
-  border: 1px solid #222;
-  transition: all 0.2s ease;
 }
 
-.step1-item:hover {
-  background: #1a1a1a;
-  border-color: #444;
-}
+/* ──────────────────────────────────────────────────────────
+   STEP 1: 아코디언 스타일 (분기 > 요일 > 아이템)
+   ────────────────────────────────────────────────────────── */
 
-.step1-item.selected {
-  background: #222;
-  border-color: gold;
-  color: gold;
-}
-/* STEP1 PREVIEW 박스 */
-.step1-preview {
-  height: 320px;
-  position: sticky;
-  top: 20px;  
-
-  background-color: #111;
-  color: #f1f1f1;
-  border-radius: 14px;
-  margin-top: 16px;
-
-  display: flex;
-  flex-direction: column;
-  min-height: 0;
-  overflow: hidden;
-
-  text-align: center;
-  color: gold;
-}
-.preview-scroll {
-  flex: 1;
-  min-height: 0;
-  overflow-y: auto;
-  padding-left: 0;
-}
-
-.step1-preview .thumb {
-  width: 100%;
-  aspect-ratio: 3 / 4;
-  border-radius: 12px;
-  overflow: hidden;
-  margin-bottom: 12px;
-}
-
-.step1-preview .thumb img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.step1-preview .title {
-  font-size: 18px;
-  font-weight: 700;
-  text-align: center;
-}
-
-.step1-preview ul {
-  list-style: none;
-  padding: 6px;
-  margin: 0;
-}
-
-.step1-buttons {
-  display: flex;
-  gap: 12px;
-  margin-bottom: 16px;
-}
-
-.step-btn {
-  flex: 1;
-  padding: 12px 0;
-  border-radius: 10px;
-  font-weight: 700;
-  cursor: pointer;
-  border: none;
-  transition: all 0.2s ease;
-}
-
-.step-btn.next {
-  background: gold;
-  color: #000;
-}
-
-.step-btn.next:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
-}
-
-.step-btn.back {
-  background: #222;
-  color: #fff;
-}
-.card-thumb {
-  width: 100%;
-  overflow: hidden;
-}
-
-.card-thumb img {
-  width: 100%;
-  height: auto;          /* 🔥 이미지 원본 비율 유지 */
-  display: block;
-}
-
-.step2-card .info {
-  display: flex;
-  align-items: center;
-}
-.step2-buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.step2-btn {
-  padding: 14px 0;
-  border-radius: 12px;
-  font-size: 16px;
-  font-weight: 800;
-  cursor: pointer;
-  border: none;
-  transition: all 0.2s ease;
-}
-
-.step2-btn.back {
-  background: #222;
-  color: #fff;
-}
-
-.step2-btn.award {
-  background: linear-gradient(135deg, gold, orange);
-  color: #000;
-}
-
-.step2-btn.award:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
-}
+/* 분기 버튼 (가장 바깥쪽) */
 .quarter-section {
   margin-bottom: 14px;
 }
 
 .quarter-btn {
   width: 100%;
-  padding: 14px 16px;
+  padding: 16px;
   border-radius: 12px;
-  background: #111;
+  background: #111; /* 깊은 회색 */
   border: 1px solid #222;
   color: #fff;
+  font-size: 16px;
   font-weight: 800;
   cursor: pointer;
   text-align: left;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.2s ease;
 }
 
 .quarter-btn.active {
@@ -197,19 +75,22 @@ html, body {
 }
 
 .quarter-content {
-  padding: 10px 0 0 10px;
+  padding: 10px 0 0 14px;
 }
 
+/* 요일 버튼 (중간 계층) */
 .day-btn {
   width: 100%;
-  padding: 10px 14px;
+  padding: 12px 14px;
   margin-top: 8px;
   border-radius: 10px;
-  background: #1a1a1a;
+  background: #1a1a1a; /* 약간 더 밝은 회색 */
   border: 1px solid #222;
   color: #ccc;
+  font-weight: 600;
   cursor: pointer;
   text-align: left;
+  transition: all 0.2s ease;
 }
 
 .day-btn.active {
@@ -217,149 +98,137 @@ html, body {
   border-color: gold;
 }
 
+/* 애니메이션 아이템 (최하단 계층) */
 .anime-list {
   list-style: none;
-  padding-left: 14px;
-  margin-top: 6px;
+  padding: 8px 0 8px 14px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .anime-item {
-  padding: 8px 10px;
-  cursor: pointer;
-  user-select: none;
-  margin-bottom: 6px;
+  padding: 12px 16px;
   border-radius: 8px;
-  font-size: 400;
-  transition:
-    background-color 0.15s ease, 
-    font-weight 0.15s ease;
+  background: #111;
+  border: 1px solid #222;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 .anime-item:hover {
   background: #1e1e1e;
-  text-shadow: 0 0 0 currentColor;
-  font-weight: 700;
+  border-color: #444;
+  transform: translateX(4px);
 }
 
 .anime-item.selected {
   background: #222;
+  border-color: gold;
+  color: gold;
+  font-weight: 700;
+}
+
+/* ──────────────────────────────────────────────────────────
+   우측 프리뷰 & 버튼 (songNominate 구조 반영)
+   ────────────────────────────────────────────────────────── */
+
+.step1-preview {
+  height: 400px; /* 고정 높이 */
+  background-color: #111;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #222;
   color: gold;
 }
-/* 제목 */
+
 .preview-title {
-  flex-shrink: 0;
+  padding: 16px;
   font-size: 15px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  opacity: 0.85;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 1px solid #222;
 }
 
-/* 리스트는 그냥 내용만 */
-.preview-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* 스크롤바 커스텀 (선택) */
-.preview-scroll::-webkit-scrollbar {
-  width: 6px;
-}
-
-.preview-scroll::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.25);
-  border-radius: 4px;
-}
-
-.preview-scroll::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-/* 아이템 */
-.preview-list li {
-  position: relative;
-  cursor: pointer;
-  transition: background 0.15s ease;
-  font-size: 15px;
-}
-
-.preview-list li:hover {
-  background-color: rgba(255,255,255,0.08);
-}
-
-.preview-list li.selected {
-  background-color: #3b82f6;
-  color: #fff;
+.preview-scroll {
+  flex: 1;
+  overflow-y: auto;
 }
 
 .preview-item {
-  padding: 6px 8px;
-  border-bottom: 1px solid #e0e0e0;
-  font-size: 16px;
+  padding: 12px;
+  border-bottom: 1px solid #1a1a1a;
+  font-size: 14px;
+  color: #f1f1f1;
   text-align: center;
   cursor: pointer;
+  transition: background 0.2s;
 }
 
-.preview-item:last-child {
-  border-bottom: none;
-}
-.step1-preview::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 20px;
-  pointer-events: none;
-  background: linear-gradient(
-    to bottom,
-    rgba(17,17,17,0),
-    rgba(17,17,17,1)
-  );
+.preview-item:hover {
+  background: rgba(255, 215, 0, 0.1);
 }
 
-/* Step2 카드 그리드 */
+/* 상단 버튼들 */
+.step1-buttons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.step-btn {
+  flex: 1;
+  padding: 14px 0;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.step-btn.primary { background: gold; color: #000; }
+.step-btn.secondary { background: #222; color: #fff; }
+.step-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+
+/* ──────────────────────────────────────────────────────────
+   STEP 2: 카드 그리드
+   ────────────────────────────────────────────────────────── */
 .step2-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
 }
 
-/* 카드 */
 .step2-card {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  padding: 8px;
+  padding: 10px;
   border-radius: 16px;
-
-  background: transparent;
-  border: 2px solid #333;
+  background: #111;
+  border: 2px solid #222;
   cursor: pointer;
-  overflow: hidden;
-  transition: transform 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 .step2-card:hover {
-  border-color: #555;
-  transform: translateY(-2px);
+  transform: translateY(-5px);
+  border-color: #444;
 }
 
-/* 선택 상태 */
 .step2-card.selected {
   border-color: gold;
-  box-shadow: 0 0 16px rgba(255, 215, 0, 0.5);
-}
-.step2-card.selected .card-title {
-  background: linear-gradient(135deg, gold, orange);
-  color: #000;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
 }
 
-/* 썸네일 (16:9) */
 .step2-card .thumb {
   width: 100%;
   aspect-ratio: 16 / 9;
+  border-radius: 10px;
   overflow: hidden;
+  margin-bottom: 12px;
 }
 
 .step2-card .thumb img {
@@ -368,60 +237,102 @@ html, body {
   object-fit: cover;
 }
 
-/* 타이틀 */
 .card-title {
-  padding: 10px;
+  padding: 8px;
   font-size: 14px;
   font-weight: 700;
   text-align: center;
-  color: black;
-  border-radius: 20px;
+  color: #fff;
+}
+
+.step2-card.selected .card-title {
+  color: gold;
 }
 
 .winner-popup {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.7);
-  display: none;              /* 기본 숨김 */
+  background: rgba(0, 0, 0, 0.95); /* 배경을 아주 어둡게 */
+  display: none; /* 기본 숨김 */
   align-items: center;
   justify-content: center;
-  z-index: 9999;
+  z-index: 10000;
+  backdrop-filter: blur(8px); /* 배경 블러 효과 */
 }
 
 .winner-popup.active {
-  display: flex;
+  display: flex; /* 활성화 시 표시 */
 }
 
 .popup-card {
   background: #111;
-  border-radius: 20px;
-  padding: 24px;
-  width: 320px;
+  border: 2px solid gold;
+  border-radius: 24px;
+  padding: 30px;
+  width: 90%;          /* 모바일 대응 */
+  max-width: 700px;    /* 데스크톱 최대 너비 (기존의 약 2배) */
   text-align: center;
+  box-shadow: 0 0 50px rgba(255, 215, 0, 0.2);
+  transform: scale(0.8);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+.winner-popup.active .popup-card {
+  transform: scale(1); /* 팝업 뜰 때 커지는 애니메이션 */
+}
+
+/* 팝업 내 이미지 크기 */
 .popup-thumb img {
   width: 100%;
-  height: auto;
-  border-radius: 12px;
-  margin: 12px 0;
+  max-height: 400px;   /* 이미지 너무 커서 화면 넘어가는 것 방지 */
+  object-fit: cover;
+  border-radius: 16px;
+  margin: 25px 0;
+  border: 1px solid #333;
+}
+
+/* 팝업 내 텍스트 크기 */
+.popup-card h2 {
+  font-size: 28px;     /* "FINAL WINNER" 텍스트 키움 */
+  letter-spacing: 2px;
 }
 
 .popup-title {
   color: #fff;
-  font-size: 18px;
-  font-weight: 800;
-  margin-bottom: 16px;
+  font-size: 26px;     /* 작품/노래 제목 크기 대폭 키움 */
+  font-weight: 900;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
+/* 확인 버튼 크기 */
 .popup-btn {
-  background: gold;
+  background: linear-gradient(135deg, gold, orange);
   color: #000;
   font-weight: 800;
-  padding: 12px 0;
+  padding: 18px 0;    /* 버튼 두께감 추가 */
   width: 100%;
-  border-radius: 12px;
+  border-radius: 15px;
   border: none;
   cursor: pointer;
+  font-size: 18px;    /* 버튼 글자 크기 키움 */
+  transition: transform 0.2s;
 }
 
+.popup-btn:hover {
+  transform: scale(1.02);
+  filter: brightness(1.1);
+}
+
+/* 소제목 스타일 통일 */
+.step-title, 
+.step2-title,
+#left-area h2 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 24px;
+  padding-left: 4px;
+  border-left: 4px solid gold; /* 포인트 바 추가 */
+  line-height: 1.2;
+}

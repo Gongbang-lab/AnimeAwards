@@ -26,17 +26,24 @@
     <!-- 우측 영역 : Preview -->
     <aside class="nominate-right">
 
-      <!-- Step1 Preview -->
+      <div id="step1-buttons" class="step-buttons" style="margin-bottom: 16px;">
+        <button id="step1-back-btn" class="btn secondary">메인으로</button>
+        <button id="step1-next-btn" class="btn primary" disabled>다음 단계</button>
+      </div>
+
+      <div id="step2-buttons" class="step-buttons" style="display: none;">
+        <button id="step2-back-btn" class="btn secondary">뒤로가기</button>
+        <button id="step2-award-btn" class="btn gold" disabled>수상</button>
+      </div>
+    
       <div id="step1-preview" class="step1-preview">
         <h3 class="preview-title">선택된 곡</h3>
-
-        <div id="preview-list" class="preview-list">
-          <!-- 선택된 곡 리스트 -->
+        <div class="preview-scroll">
+          <div id="preview-list" class="preview-list"></div>
         </div>
       </div>
 
     </aside>
-
   </main>
 
   <!-- 하단 버튼 영역 -->
@@ -67,16 +74,18 @@
   </footer>
 
   <!-- 수상 팝업 -->
-  <div id="winner-popup" class="winner-popup" style="display:none;">
-    <div class="popup-content">
-      <h2 class="popup-award-name">수상</h2>
+  <div class="winner-popup" id="winner-popup">
+    <div class="popup-card">
+      <h2 style="color: gold; margin-top: 0;">🏆 FINAL WINNER</h2>
 
-      <img id="winner-thumb" src="" alt="winner thumbnail" />
+      <div class="popup-thumb">
+        <img id="winner-thumb" src="" alt="winner thumbnail" />
+      </div>
 
-      <div id="winner-title" class="winner-title"></div>
+      <div class="popup-title" id="winner-title">작품 제목이 표시됩니다</div>
 
-      <button id="go-main-btn" class="btn primary">
-        메인으로
+      <button class="popup-btn" id="go-main-btn">
+        확인 및 메인으로
       </button>
     </div>
   </div>

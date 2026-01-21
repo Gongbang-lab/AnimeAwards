@@ -7,7 +7,13 @@ const songNominateState = {
 };
 //유틸
 function ytThumb(url) {
-  return url.replace("watch?v=", "embed/") + "/maxresdefault.jpg";
+    let videoId = "";
+    if (url.includes("youtu.be/")) {
+        videoId = url.split("youtu.be/")[1].split("?")[0];
+    } else if (url.includes("v=")) {
+        videoId = url.split("v=")[1].split("&")[0];
+    }
+    return videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : "../images/default.png";
 }
 //데이터 선택
 function getSongSourceByTheme(theme) {
@@ -17,17 +23,23 @@ function getSongSourceByTheme(theme) {
   if (theme === "ost") return AnimeOSTSongs;
   return null;
 }
- //animeId → animeData 병합
+// animeId → animeData 병합
 function mergeSongs(songData) {
   const result = {};
 
+  // 1. 모든 분기에 흩어져 있는 애니메이션을 하나의 평면 배열로 합침
+  const allAnime = Object.values(AnimeByQuarter).flat();
+
   Object.entries(songData).forEach(([quarter, songs]) => {
     result[quarter] = songs.map(song => {
-      const anime = AnimeData.find(a => a.id === song.animeId);
+      // 2. 합쳐진 애니메이션 목록에서 animeId가 일치하는 것 찾기
+      const anime = allAnime.find(a => a.id === song.animeId);
+      
       return {
         ...song,
-        animeTitle: anime?.title || "Unknown",
-        day: anime?.day || "기타",
+        animeTitle: anime ? anime.title : "Unknown",
+        day: anime ? anime.day : "기타",
+        // 기존 썸네일 함수 호출
         thumbnail: ytThumb(song.youtube),
       };
     });
@@ -42,14 +54,20 @@ function renderSongStep1(theme) {
   const container = document.getElementById("left-area");
   container.innerHTML = "";
 
+  // 타이틀 추가 (선택사항)
+  const title = document.createElement("h2");
+  title.textContent = `${theme.toUpperCase()} 리스트`;
+  title.style.marginBottom = "20px";
+  container.appendChild(title);
+
   const songSource = getSongSourceByTheme(theme);
   const mergedData = mergeSongs(songSource);
 
   Object.entries(mergedData).forEach(([quarter, songs]) => {
+    // ─── 분기 섹션 (Quarter) ─────────────────────
     const quarterSection = document.createElement("div");
     quarterSection.className = "quarter-section";
 
-    /* 분기 버튼 */
     const quarterBtn = document.createElement("button");
     quarterBtn.className = "quarter-btn";
     quarterBtn.textContent = quarter;
@@ -64,13 +82,14 @@ function renderSongStep1(theme) {
       quarterBtn.classList.toggle("active", !open);
     };
 
-    /* 요일 그룹 */
+    // 요일별 그룹화
     const groupedByDay = {};
     songs.forEach(song => {
       if (!groupedByDay[song.day]) groupedByDay[song.day] = [];
       groupedByDay[song.day].push(song);
     });
 
+    // ─── 요일 섹션 (Day) ─────────────────────
     Object.entries(groupedByDay).forEach(([day, daySongs]) => {
       const daySection = document.createElement("div");
       daySection.className = "day-section";
@@ -89,10 +108,15 @@ function renderSongStep1(theme) {
         dayBtn.classList.toggle("active", !open);
       };
 
-      /* 곡 카드 */
+      // ─── 노래 카드 (Item) ─────────────────────
       daySongs.forEach(song => {
         const item = document.createElement("div");
         item.className = "song-item";
+        
+        // 이미 선택된 상태인지 확인
+        if (songNominateState.selectedItems.some(s => s.id === song.id)) {
+          item.classList.add("selected");
+        }
 
         item.innerHTML = `
           <div class="song-thumb">
@@ -103,38 +127,34 @@ function renderSongStep1(theme) {
             <div class="song-title">${song.title}</div>
             <div class="song-singer">${song.singer}</div>
           </div>
-          <a class="youtube-link" href="${song.youtube}" target="_blank">
+          <a class="youtube-link" href="${song.youtube}" target="_blank" onclick="event.stopPropagation();">
             ▶
           </a>
         `;
 
-        item.onclick = (e) => {
-          if (e.target.closest(".youtube-link")) return;
-
-          const exists = songNominateState.selectedItems.some(
-            s => s.id === song.id
-          );
+        item.onclick = () => {
+          const exists = songNominateState.selectedItems.some(s => s.id === song.id);
 
           if (exists) {
-            songNominateState.selectedItems =
-              songNominateState.selectedItems.filter(s => s.id !== song.id);
+            songNominateState.selectedItems = songNominateState.selectedItems.filter(s => s.id !== song.id);
             item.classList.remove("selected");
           } else {
             songNominateState.selectedItems.push(song);
             item.classList.add("selected");
           }
-
           updatePreview();
         };
 
         dayList.appendChild(item);
       });
 
-      daySection.append(dayBtn, dayList);
+      daySection.appendChild(dayBtn);
+      daySection.appendChild(dayList);
       quarterContent.appendChild(daySection);
     });
 
-    quarterSection.append(quarterBtn, quarterContent);
+    quarterSection.appendChild(quarterBtn);
+    quarterSection.appendChild(quarterContent);
     container.appendChild(quarterSection);
   });
 }
@@ -180,9 +200,14 @@ function bindButtons() {
 document.addEventListener("DOMContentLoaded", () => {
   const params = new URLSearchParams(location.search);
   const theme = params.get("theme");
+  const awardName = params.get("awardName");
+
+  songNominateState.theme = theme;
+  songNominateState.currentAward = { name: awardName }; // 추가
 
   renderSongStep1(theme);
   bindButtons();
+  bindSongButtons();
 });
 //step 2 진입함수
 function goSongStep2() {
@@ -242,13 +267,19 @@ function toggleSongStepUI() {
   const step2Buttons = document.getElementById("step2-buttons");
   const preview = document.getElementById("step1-preview");
 
+  // 요소가 존재하는지 먼저 확인 (에러 방지)
+  if (!step1Buttons || !step2Buttons) {
+    console.error("버튼 컨테이너(step1-buttons 또는 step2-buttons)를 찾을 수 없습니다.");
+    return;
+  }
+
   if (songNominateState.step === 1) {
     step1Buttons.style.display = "flex";
     step2Buttons.style.display = "none";
-    if (preview) preview.style.display = "block";
+    if (preview) preview.style.display = "flex"; // 디자인에 맞춰 flex로 변경
   } else {
     step1Buttons.style.display = "none";
-    step2Buttons.style.display = "flex";
+    step2Buttons.style.display = "flex"; // Step 2 버튼 보이기
     if (preview) preview.style.display = "none";
   }
 }
@@ -289,24 +320,34 @@ function openSongAwardPopup() {
   popup.style.display = "flex";
 
   document.getElementById("go-main-btn").onclick = () => {
-    location.href = "../main.html";
+    location.href = "../main/main.html";
   };
 }
 function bindSongButtons() {
-  document.getElementById("step1-next-btn").onclick = () => {
-    if (songNominateState.selectedItems.length === 0) return;
-    goSongStep2();
-  };
+  const nextBtn = document.getElementById("step1-next-btn");
+  const backBtn2 = document.getElementById("step2-back-btn");
+  const awardBtn = document.getElementById("step2-award-btn");
 
-  document.getElementById("step2-back-btn").onclick = () => {
-    songNominateState.step = 1;
-    toggleSongStepUI();
-    renderSongStep1(songNominateState.theme);
-  };
+  if (nextBtn) {
+    nextBtn.onclick = () => {
+      if (songNominateState.selectedItems.length === 0) return;
+      goSongStep2();
+    };
+  }
 
-  document.getElementById("step2-award-btn").onclick = () => {
-    if (!songNominateState.finalWinner) return;
-    saveSongAwardResult();
-    openSongAwardPopup();
-  };
+  if (backBtn2) {
+    backBtn2.onclick = () => {
+      songNominateState.step = 1;
+      toggleSongStepUI();
+      renderSongStep1(songNominateState.theme);
+    };
+  }
+
+  if (awardBtn) {
+    awardBtn.onclick = () => {
+      if (!songNominateState.finalWinner) return;
+      saveSongAwardResult();
+      openSongAwardPopup();
+    };
+  }
 }

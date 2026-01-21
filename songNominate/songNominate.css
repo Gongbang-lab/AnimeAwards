@@ -1,38 +1,362 @@
-.accordion-header {
-  width: 100%;
-  padding: 10px;
-  font-weight: bold;
-  cursor: pointer;
+/* 기본 레이아웃 및 배경 */
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #000; /* 다크 테마 배경 */
+  color: #fff;
+  font-family: 'Pretendard', sans-serif;
 }
 
-.accordion-content {
-  padding-left: 12px;
+.nominate-page {
+  display: flex;
+  gap: 24px;
+  height: calc(100vh - 72px);
+  padding: 0 20px;
+}
+
+/* 좌측 리스트 영역 */
+.nominate-left {
+  flex: 7;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+/* 우측 프리뷰 영역 */
+.nominate-right {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+}
+
+/* ───────────────────── 분기 아코디언 ───────────────────── */
+.quarter-section {
+  margin-bottom: 14px;
+}
+
+.quarter-btn {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: #111;
+  border: 1px solid #222;
+  color: #fff;
+  font-weight: 800;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.quarter-btn.active {
+  border-color: gold;
+  color: gold;
+}
+
+.quarter-content {
+  padding: 10px 0 0 10px;
+}
+
+/* ───────────────────── 요일 아코디언 ───────────────────── */
+.day-btn {
+  width: 100%;
+  padding: 10px 14px;
+  margin-top: 8px;
+  border-radius: 10px;
+  background: #1a1a1a;
+  border: 1px solid #222;
+  color: #ccc;
+  cursor: pointer;
+  text-align: left;
+}
+
+.day-btn.active {
+  color: gold;
+  border-color: gold;
+}
+
+/* ───────────────────── 노래 리스트 및 아이템 ───────────────────── */
+.song-list {
+  list-style: none;
+  padding-left: 14px;
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .song-item {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 8px;
+  padding: 10px;
+  border-radius: 10px;
   cursor: pointer;
+  background: #111;
+  border: 1px solid #222;
+  transition: all 0.2s ease;
+}
+
+.song-item:hover {
+  background: #1a1a1a;
+  border-color: #444;
 }
 
 .song-item.selected {
-  background: rgba(255,215,0,0.15);
+  background: #222;
+  border-color: gold;
 }
 
+.song-item.selected .song-title {
+  color: gold;
+}
+
+/* 노래 썸네일 & 정보 */
 .song-thumb {
-  width: 120px;
-  aspect-ratio: 16/9;
-  object-fit: cover;
+  width: 80px;
+  aspect-ratio: 16 / 9;
   border-radius: 6px;
+  overflow: hidden;
+  margin-right: 12px;
+  flex-shrink: 0;
 }
 
-.song-text {
+.song-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.song-info {
   flex: 1;
+  overflow: hidden;
 }
 
-.youtube-btn {
-  font-size: 18px;
+.song-info .anime-title {
+  font-size: 11px;
+  opacity: 0.6;
+  margin-bottom: 2px;
+}
+
+.song-info .song-title {
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.youtube-link {
+  color: #ff4444;
   text-decoration: none;
+  font-size: 18px;
+  padding: 8px;
+}
+
+/* ───────────────────── 우측 프리뷰 및 버튼 ───────────────────── */
+.step1-preview {
+  height: 320px;
+  background-color: #111;
+  border-radius: 14px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: gold;
+  position: relative;
+}
+
+.preview-title {
+  padding-top: 16px;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.preview-scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+/* 스크롤바 커스텀 (디자인 통일) */
+.preview-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.preview-scroll::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+.preview-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.preview-item {
+  padding: 10px;
+  border-bottom: 1px solid #222;
+  font-size: 14px;
+  color: #f1f1f1;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* 하단 버튼 영역 */
+.nominate-footer {
+  padding: 20px;
+  background: #000;
+}
+
+.step-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  flex: 1;
+  padding: 12px 0;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.btn.primary { background: gold; color: #000; }
+.btn.secondary { background: #222; color: #fff; }
+.btn.gold { background: linear-gradient(135deg, gold, orange); color: #000; }
+.btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* ───────────────────── Step2 그리드 카드 ───────────────────── */
+.step2-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+  padding: 20px 0;
+}
+
+.song-card {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  border-radius: 16px;
+  background: transparent;
+  border: 2px solid #333;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.25s ease;
+}
+
+.song-card.selected {
+  border-color: gold;
+  box-shadow: 0 0 16px rgba(255, 215, 0, 0.4);
+}
+
+.song-card .card-thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.song-card .card-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.song-card .card-info {
+  padding: 12px;
+  text-align: center;
+}
+
+.song-card .anime-title { font-size: 11px; opacity: 0.6; }
+.song-card .song-title { font-size: 15px; font-weight: 800; margin: 4px 0; color: #fff; }
+
+.song-card.selected .song-title { color: gold; }
+
+.winner-popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9); /* 배경을 아주 어둡게 */
+  display: none; /* 기본 숨김 */
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  backdrop-filter: blur(8px); /* 배경 블러 효과 */
+}
+
+.winner-popup.active {
+  display: flex; /* 활성화 시 표시 */
+}
+
+.popup-card {
+  background: #111;
+  border: 2px solid gold;
+  border-radius: 24px;
+  padding: 30px;
+  width: 90%;          /* 모바일 대응 */
+  max-width: 700px;    /* 데스크톱 최대 너비 (기존의 약 2배) */
+  text-align: center;
+  box-shadow: 0 0 50px rgba(255, 215, 0, 0.2);
+  transform: scale(0.8);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.winner-popup.active .popup-card {
+  transform: scale(1); /* 팝업 뜰 때 커지는 애니메이션 */
+}
+
+/* 팝업 내 이미지 크기 */
+.popup-thumb img {
+  width: 100%;
+  max-height: 400px;   /* 이미지 너무 커서 화면 넘어가는 것 방지 */
+  object-fit: cover;
+  border-radius: 16px;
+  margin: 25px 0;
+  border: 1px solid #333;
+}
+
+/* 팝업 내 텍스트 크기 */
+.popup-card h2 {
+  font-size: 28px;     /* "FINAL WINNER" 텍스트 키움 */
+  letter-spacing: 2px;
+}
+
+.popup-title {
+  color: #fff;
+  font-size: 26px;     /* 작품/노래 제목 크기 대폭 키움 */
+  font-weight: 900;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* 확인 버튼 크기 */
+.popup-btn {
+  background: linear-gradient(135deg, gold, orange);
+  color: #000;
+  font-weight: 800;
+  padding: 18px 0;    /* 버튼 두께감 추가 */
+  width: 100%;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;    /* 버튼 글자 크기 키움 */
+  transition: transform 0.2s;
+}
+
+.popup-btn:hover {
+  transform: scale(1.02);
+  filter: brightness(1.1);
+}
+
+/* 소제목 스타일 통일 */
+.step-title, 
+.step2-title,
+#left-area h2 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 24px;
+  padding-left: 4px;
+  border-left: 4px solid gold; /* 포인트 바 추가 */
+  line-height: 1.2;
 }

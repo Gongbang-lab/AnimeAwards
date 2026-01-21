@@ -1,90 +1,163 @@
 /* ===============================
-   카드 그리드
+    기본 배경 및 레이아웃
 ================================ */
-#award-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 20px;
+body {
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 40px 24px;
+  font-family: 'Pretendard', -apple-system, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: #fff;
+  letter-spacing: -0.5px;
 }
 
 /* ===============================
-   카드 기본
+    카드 그리드
+================================ */
+#award-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===============================
+    카드 기본 (Dark Theme)
 ================================ */
 .award-card {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  padding: 12px;
+  background: #111; /* 깊은 회색 배경 */
+  border: 1px solid #222;
+  border-radius: 16px;
   cursor: pointer;
-  font-family: sans-serif;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
 }
 
 .award-card:hover {
-  transform: translateY(-2px);
+  transform: translateY(-8px);
+  border-color: #444;
+  background: #161616;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 /* ===============================
-   썸네일
+    썸네일 (16:9 비율)
 ================================ */
 .award-thumb {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
-  border-radius: 12px;
-  background: #ddd;
+  border-radius: 10px;
+  background: #222;
+  margin-bottom: 12px;
+  transition: transform 0.3s ease;
+}
+
+.award-card:hover .award-thumb {
+  transform: scale(1.02);
 }
 
 /* ===============================
-   텍스트 영역
+    텍스트 영역
 ================================ */
 .award-name {
+  font-size: 16px;
   font-weight: 700;
   text-align: center;
+  margin-bottom: 4px;
+  color: #eee;
 }
 
 .award-winner {
-  font-size: 13px;
+  font-size: 14px;
   text-align: center;
-  opacity: 0.85;
+  color: #888;
+  margin-top: 4px;
 }
 
 /* ===============================
-   수상된 카드 강조
+    🏆 수상된 카드 강조 (Gold Theme)
 ================================ */
 .award-card.has-winner {
-  border: 2px solid gold;
-  border-radius: 14px;
-  padding: 6px;
-  box-shadow: 0 0 14px rgba(255, 215, 0, 0.5);
+  border: 1px solid gold;
+  background: linear-gradient(145deg, #1a1a1a, #0a0a0a);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.15);
+}
+
+.award-card.has-winner .award-name {
+  color: gold;
 }
 
 .award-card.has-winner .award-winner {
-  color: #d4af37;
+  color: #fff;
   font-weight: 600;
+  padding: 4px 8px;
+  background: rgba(255, 215, 0, 0.1);
+  border-radius: 6px;
+  display: inline-block;
+  margin: 8px auto 0;
+}
+
+.award-card.has-winner::after {
+  content: "🏆";
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 18px;
+  filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.5));
 }
 
 /* ===============================
-   리셋 버튼
+    리셋 버튼 (Floating 스타일)
 ================================ */
 #reset-btn {
   position: fixed;
-  top: 16px;
-  right: 16px;
+  bottom: 24px; /* 아래쪽으로 변경하여 모바일 접근성 향상 */
+  right: 24px;
   z-index: 999;
-
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-
-  border: none;
-  background: #b91c1c;
-  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #222;
+  color: #888;
   font-size: 20px;
   cursor: pointer;
-
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #reset-btn:hover {
-  background: #dc2626;
+  background: #b91c1c; /* 호버시에만 빨간색으로 변경하여 평소엔 차분하게 유지 */
+  color: white;
+  transform: rotate(-180deg);
+  box-shadow: 0 0 20px rgba(185, 28, 28, 0.4);
+}
+
+/* 반응형 모바일 대응 */
+@media (max-width: 600px) {
+  #award-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .award-card {
+    padding: 8px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
 }

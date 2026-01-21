@@ -3,7 +3,7 @@ const nominateState = {
   step: 1,
   theme: null,
   selectedItems: [],
-  finalWinner: null
+  selectedWinner: null
 };
 //html 버튼 바인딩
 function bindStaticButtons() {
@@ -21,29 +21,25 @@ function bindStaticButtons() {
     toggleStepUI();
     renderStep1();
 
-      // Step1 preview 다시 보이게
+    // Step1 preview 다시 보이게
     const preview = document.getElementById("step1-preview");
     if (preview) preview.style.display = "block";
-  };
-
-  document.getElementById("step2-award-btn").onclick = () => {
-    if (!nominateState.finalWinner) return;
-
-    saveAwardResult();
-    openAwardPopup();
   };
 }
 //진입 함수
 function renderStep1() {
   const left = document.getElementById("left-area");
-
-
   if (!left) {
     console.error("❌ left-area 없음");
     return;
   }
-
   left.innerHTML = "";
+  // 1. songNominate와 동일하게 소제목 추가
+  const title = document.createElement("h2");
+  title.className = "step-title"; // 공통 클래스 사용
+  title.textContent = "작품 리스트"; // 또는 nominateState.currentAward.name
+  title.style.marginBottom = "20px";
+  left.appendChild(title);
   renderAnimeList(left);
 
   updateStep1Preview(); // 🔥 preview는 HTML에 이미 존재
@@ -190,7 +186,7 @@ function renderPreview() {
 //Step 2 진입 함수
 function goStep2() {
   nominateState.step = 2;
-  nominateState.finalWinner = null;
+  nominateState.selectedWinner = null;
 
   toggleStepUI();
 
@@ -205,7 +201,7 @@ function goStep2() {
 //step 2 카드
 function renderStep2Cards(parent) {
   const title = document.createElement("h2");
-  title.textContent = "노미네이트 작품";
+  title.textContent = "최종 후보";
   parent.appendChild(title);
 
   const grid = document.createElement("div");
@@ -229,7 +225,7 @@ function renderStep2Cards(parent) {
         .forEach(c => c.classList.remove("selected"));
 
       card.classList.add("selected");
-      nominateState.finalWinner = anime;
+      nominateState.selectedWinner = anime;
 
       document.getElementById("step2-award-btn").disabled = false;
     };
@@ -267,10 +263,10 @@ function openAwardPopup() {
   }
 
   thumb.src =
-    nominateState.finalWinner.thumbnail || "images/no-image.png";
+    nominateState.selectedWinner.thumbnail || "images/no-image.png";
 
   title.textContent =
-    nominateState.finalWinner.title;
+    nominateState.selectedWinner.title;
 
   popup.style.display = "flex"; // ← classList.add 말고 이게 안전
 
@@ -279,30 +275,83 @@ function openAwardPopup() {
   };
 }
 //localstorage에 저장
-function saveAwardResult() {
-  const award = nominateState.currentAward;
-  const winner = nominateState.finalWinner;
-
-  if (!award || !winner) return;
-
-  const stored =
-    JSON.parse(localStorage.getItem("anime_awards_result")) || {};
-
-  stored[award.name] = {
+function saveAwardResult(winner) {
+  const currentResults = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
+  
+  // URL 파라미터에서 가져온 상 이름을 키로 사용
+  const awardName = nominateState.currentAward.name; 
+  
+  currentResults[awardName] = {
     title: winner.title,
     thumbnail: winner.thumbnail
   };
 
-  localStorage.setItem(
-    "anime_awards_result",
-    JSON.stringify(stored)
-  );
+  localStorage.setItem("anime_awards_result", JSON.stringify(currentResults));
+}
+
+// 1. 수상 버튼 클릭 이벤트 연결 (bindStaticButtons 함수 내부 등에 위치)
+const awardBtn = document.getElementById("step2-award-btn");
+if (awardBtn) {
+  awardBtn.onclick = () => {
+    showWinnerPopup();
+    
+  };
+}
+
+// 2. 팝업 표시 함수
+function showWinnerPopup() {
+  // 1. 데이터 확인 (선택된 승자가 있는지)
+  const winner = nominateState.selectedWinner; 
+  if (!winner) {
+    alert("수상작을 선택해주세요!");
+    return;
+  }
+
+  // 2. 요소 가져오기 (초기화 위치 확인)
+  const popupElement = document.getElementById("winner-popup");
+  const thumbElement = document.getElementById("winner-thumb");
+  const titleElement = document.getElementById("winner-title");
+
+  // 3. 요소가 존재하는지 확인 후 데이터 삽입
+  if (popupElement && thumbElement && titleElement) {
+    thumbElement.src = winner.thumbnail;
+    titleElement.textContent = winner.title;
+
+    // 4. 스타일 변경 (인라인 스타일 무효화 및 클래스 추가)
+    popupElement.style.display = "flex"; 
+    popupElement.classList.add("active");
+  } else {
+    console.error("팝업 요소를 찾을 수 없습니다. HTML ID를 확인하세요.");
+  }
+
+  // 5. 결과 저장 함수 호출
+  saveAwardResult(winner);
+}
+
+// 3. 메인으로 가기 버튼 이벤트
+document.getElementById("go-main-btn").onclick = () => {
+  location.href = "../main/main.html";
+};
+
+// 4. 로컬스토리지 저장 함수 예시
+function saveWinnerData(winner) {
+  const currentResults = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
+  
+  // 현재 상 이름(예: '올해의 애니메이션')을 키로 저장
+  const awardName = nominateState.currentAward.name; 
+  currentResults[awardName] = {
+    title: winner.title,
+    thumbnail: winner.thumbnail
+  };
+
+  localStorage.setItem("anime_awards_result", JSON.stringify(currentResults));
 }
 //초기 실행
 document.addEventListener("DOMContentLoaded", () => {
   const params = new URLSearchParams(location.search);
   const theme = params.get("theme");
   nominateState.theme = theme
+  nominateState.currentAward = { name: params.get("awardName") };
 
   renderStep1();
   bindStaticButtons();

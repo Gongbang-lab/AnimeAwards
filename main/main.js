@@ -16,7 +16,7 @@ function renderAwards() {
     // 썸네일
     const thumb = document.createElement("img");
     thumb.className = "award-thumb";
-    thumb.src = winner?.thumbnail || award.thumb || "images/default.png";
+    thumb.src = winner?.thumbnail || award.thumb;
 
     // 상 이름
     const awardName = document.createElement("div");
@@ -46,9 +46,8 @@ function renderAwards() {
       default:
         location.href = `../nominate/nominate.html?awardName=${encodeURIComponent(award.name)}&theme=${encodeURIComponent(award.theme)}`;
       }
-
-      awardGrid.appendChild(card);
     };
+    awardGrid.appendChild(card);
   })}
 
 function deleteAward(id){

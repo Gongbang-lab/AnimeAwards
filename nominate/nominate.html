@@ -9,88 +9,47 @@
 
   <!-- 상단 -->
   <header class="nominate-header">
-    <h1 id="award-title">올해의 애니메이션 노미네이트</h1>
+    <h1 id="award-title">노미네이트</h1>
   </header>
-
-  <!-- ========================= -->
-  <!-- STEP CONTAINER -->
-  <!-- ========================= -->
+  <!-- 전체 레이아웃 -->
   <main class="nominate-page">
-
-    <!-- ========================= -->
-    <!-- LEFT AREA -->
-    <!-- ========================= -->
     <section class="nominate-left" id="left-area">
-      <!--
-        STEP 1 : 리스트 (텍스트)
-        STEP 2 : 카드 (썸네일 포함)
-        JS가 이 영역을 교체 렌더링
-      -->
-    </section>
+      </section>
 
-    <!-- ========================= -->
-    <!-- RIGHT AREA -->
-    <!-- ========================= -->
-    <aside class="nominate-right" id="right-area">
-
-      <!-- STEP 1 BUTTONS -->
+    <aside class="nominate-right">
       <div class="step1-buttons" id="step1-buttons">
-        <button class="step-btn back" id="step1-back-btn">
-          메인으로
-        </button>
-        <button class="step-btn next" id="step1-next-btn" disabled>
-          다음 단계
-        </button>
+        <button class="step-btn secondary" id="step1-back-btn">메인으로</button>
+        <button class="step-btn primary" id="step1-next-btn" disabled>다음 단계</button>
       </div>
-      
-      <!-- STEP 2 BUTTONS -->
       <div class="step2-buttons" id="step2-buttons" style="display:none;">
-        <button class="step2-btn back" id="step2-back-btn">
-          뒤로가기
-        </button>
-        <button class="step2-btn award" id="step2-award-btn" disabled>
-          수상
-        </button>
+        <button class="step-btn secondary" id="step2-back-btn">뒤로가기</button>
+        <button class="step-btn primary gold" id="step2-award-btn" disabled>수상</button>
       </div>
 
-      <!-- ========================= -->
-      <!-- PREVIEW AREA -->
-      <!-- ========================= -->
-      <div id="step1-preview" class="step1-preview"> 선택된 작품
+      <div id="step1-preview" class="step1-preview">
+        <div class="preview-title">선택된 작품</div>
         <div class="preview-scroll">
-          <ul id="preview-list">
-            <div class="preview-title">선택된 작품</div>
-          </ul>
+          <div id="preview-list" class="preview-list"></div>
         </div>
       </div>
-        <!-- STEP1 선택 미리보기 -->
-
-        
-      <!-- 빈 공간 (40%) -->
-      <div style="flex:1;"></div>
-
     </aside>
-
   </main>
 
-  <!-- ========================= -->
-  <!-- WINNER POPUP -->
-  <!-- ========================= -->
-  <div class="winner-popup" id="winner-popup" style="display:none;">
-    <div class="popup-card">
-      <h2>🏆 수상작</h2>
-
-      <div class="popup-thumb">
-        <img id="winner-thumb" />
-      </div>
-
-      <div class="popup-title" id="winner-title"></div>
-
-      <button class="popup-btn" id="go-main-btn">
-        메인으로
-      </button>
+<div class="winner-popup" id="winner-popup">
+  <div class="popup-card">
+    <h2 style="color: gold; margin-top: 0;">🏆 FINAL WINNER</h2>
+    
+    <div class="popup-thumb">
+      <img id="winner-thumb" src="" alt="winner thumbnail" />
     </div>
+
+    <div class="popup-title" id="winner-title">작품 제목이 표시됩니다</div>
+
+    <button class="popup-btn" id="go-main-btn">
+      확인 및 메인으로
+    </button>
   </div>
+</div>
 
 
   <!-- 공통 CSS -->
