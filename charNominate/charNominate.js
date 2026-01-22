@@ -24,27 +24,40 @@ document.addEventListener("DOMContentLoaded", () => {
 /**
  * 2. Step 1: 3단 아코디언 렌더링 (분기 -> 요일 -> 애니메이션)
  */
+/**
+ * 2. Step 1: 3단 아코디언 렌더링
+ */
 function renderStep1() {
   const left = document.getElementById("left-area");
   if (!left) return;
 
   left.innerHTML = `<h2 class="step-title">${charState.currentAward.name} 후보 선택</h2>`;
 
-  const data = CharacterData[charState.theme];
+  // 1. 성별 키 결정
+  const genderKey = charState.theme.includes("male") ? "male" : "female";
   
-  // 데이터 그룹화: 분기 -> 요일 -> 애니메이션
-  const grouped = groupByHierarchy(data);
+  // 2. 축약 데이터를 평면 배열로 정규화
+  const flatData = getNormalizedCharData(genderKey); 
+  if (!flatData || flatData.length === 0) return;
 
-  Object.entries(grouped).forEach(([quarter, days]) => {
+  // 3. 평면 배열을 다시 계층형(분기 > 요일 > 작품)으로 그룹화
+  const groupedData = groupByHierarchy(flatData);
+
+  // 4. 렌더링 시작 (분기 루프)
+  Object.entries(groupedData).forEach(([quarter, days]) => {
     const qSection = createAccordion(quarter, "quarter-btn");
     const qContent = qSection.querySelector(".accordion-content");
 
+    // 요일 루프
     Object.entries(days).forEach(([day, animes]) => {
-      const dSection = createAccordion(DAY_LABELS[day] || day, "day-btn");
+      // DAY_LABELS가 정의되어 있지 않을 경우를 대비해 day 그대로 사용 가능
+      const dayName = (typeof DAY_LABELS !== 'undefined' && DAY_LABELS[day]) ? DAY_LABELS[day] : day;
+      const dSection = createAccordion(dayName, "day-btn");
       const dContent = dSection.querySelector(".accordion-content");
 
-      Object.entries(animes).forEach(([animeTitle, characters]) => {
-        const aSection = createAnimeAccordion(animeTitle, characters);
+      // 애니메이션 루프
+      Object.entries(animes).forEach(([animeTitle, charList]) => {
+        const aSection = createAnimeAccordion(animeTitle, charList);
         dContent.appendChild(aSection);
       });
 
@@ -53,6 +66,22 @@ function renderStep1() {
 
     left.appendChild(qSection);
   });
+}
+
+/**
+ * 평면 데이터를 계층형으로 묶어주는 유틸리티 (이미 작성하신 함수를 그대로 활용)
+ */
+function groupByHierarchy(data) {
+  const grouped = {};
+  data.forEach(item => {
+    if (!grouped[item.quarter]) grouped[item.quarter] = {};
+    if (!grouped[item.quarter][item.day]) grouped[item.quarter][item.day] = {};
+    if (!grouped[item.quarter][item.day][item.animeTitle]) {
+      grouped[item.quarter][item.day][item.animeTitle] = [];
+    }
+    grouped[item.quarter][item.day][item.animeTitle].push(item);
+  });
+  return grouped;
 }
 
 /**
@@ -231,4 +260,34 @@ function openAwardPopup() {
   const res = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
   res[charState.currentAward.name] = { title: winner.name, thumbnail: winner.thumbnail };
   localStorage.setItem("anime_awards_result", JSON.stringify(res));
+}
+
+/**
+ * 축약된 데이터를 화면 렌더링용 데이터로 변환
+ */
+function getNormalizedCharData(genderKey) {
+  const result = [];
+  const genderData = CharacterData[genderKey]; // 'male' 또는 'female'
+
+  // 모든 애니메이션 데이터를 하나로 합친 배열 (검색용)
+  const allAnime = Object.values(AnimeByQuarter).flat();
+
+  Object.entries(genderData).forEach(([quarter, animeGroups]) => {
+    Object.entries(animeGroups).forEach(([animeId, characters]) => {
+      // animedata.js에서 원본 애니메이션 정보 찾기
+      const animeInfo = allAnime.find(a => a.id === animeId);
+
+      characters.forEach(char => {
+        result.push({
+          ...char,
+          quarter: quarter,
+          animeId: animeId,
+          animeTitle: animeInfo ? animeInfo.title : "알 수 없는 작품",
+          day: animeInfo ? animeInfo.day : "etc",
+          thumbnail: `../images/char/${genderKey[0]}/${char.img}` // 경로 자동 완성
+        });
+      });
+    });
+  });
+  return result;
 }
