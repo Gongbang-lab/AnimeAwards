@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Awards - Nominate</title>
+  
+  <link rel="stylesheet" href="../main/main.css">
+  <link rel="stylesheet" href="../nominate/nominate.css">
+  <link rel="stylesheet" href="../charNominate/charNominate.css">
+</head>
+<body class="dark-theme">
+
+  <main class="nominate-page">
+    <section class="nominate-left" id="left-area">
+      </section>
+
+    <aside class="nominate-right">
+      
+      <div id="step1-buttons" class="step-buttons">
+        <button id="step1-back-btn" class="step-btn secondary">메인으로</button>
+        <button id="step1-next-btn" class="step-btn primary" disabled>다음 단계</button>
+      </div>
+
+      <div id="step2-buttons" class="step-buttons" style="display: none;">
+        <button id="step2-back-btn" class="step-btn secondary">뒤로가기</button>
+        <button id="step2-award-btn" class="step-btn primary gold" disabled>수상 결정</button>
+      </div>
+
+      <div id="step1-preview" class="step1-preview">
+        <h3 class="preview-title">선택된 후보</h3>
+        <div class="preview-scroll">
+          <div id="preview-list" class="preview-list">
+            </div>
+        </div>
+      </div>
+
+    </aside>
+  </main>
+
+  <div id="winner-popup" class="winner-popup">
+    <div class="popup-card">
+      <h2 class="popup-emblem">🏆 FINAL WINNER</h2>
+      <div class="popup-thumb">
+        <img id="winner-thumb" src="" alt="Winner Character">
+      </div>
+      <div id="winner-title" class="popup-title">캐릭터 이름</div>
+      <button id="go-main-btn" class="popup-btn">확인 및 메인으로</button>
+    </div>
+  </div>
+
+  <script src="../data/animedata.js"></script>
+  <script src="../data/CharacterData.js"></script>
+  <script src="../charNominate/charNominate.js"></script>
+</body>
+</html>

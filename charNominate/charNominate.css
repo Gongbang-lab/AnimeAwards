@@ -1,0 +1,145 @@
+/* Step 1: 캐릭터 선택 그리드 (아코디언 내부) */
+.char-pick-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 12px;
+  padding: 15px;
+  background: #111;
+}
+
+.char-pick-item {
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.char-pick-item img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* 정사각형 썸네일 */
+  border-radius: 50%; /* 캐릭터는 원형으로 선택하면 예쁩니다 */
+  border: 2px solid #222;
+  object-fit: cover;
+}
+
+.char-pick-item.selected img { border-color: gold; }
+.char-pick-item span { font-size: 11px; color: #ccc; display: block; margin-top: 4px; }
+
+/* Step 1: 프리뷰 칩 (한 줄에 여러 개) */
+.preview-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 10px;
+}
+
+.preview-chip {
+  background: #222;
+  border: 1px solid gold;
+  color: gold;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* Step 2: 세로형 카드 */
+.char-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.char-card-vertical {
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.char-card-vertical.selected { border-color: gold; transform: translateY(-5px); }
+
+.char-card-vertical .card-thumb {
+  width: 100%;
+  aspect-ratio: 2 / 3; /* 세로형 비율 */
+}
+
+.char-card-vertical .card-thumb img { width: 100%; height: 100%; object-fit: cover; }
+
+.char-card-vertical .card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.anime-label { font-size: 11px; color: #888; margin-bottom: 5px; }
+.char-name { font-size: 18px; font-weight: 800; color: #fff; }
+.char-cv { font-size: 13px; color: gold; margin-top: 5px; }
+
+/* 캐릭터 전용 팝업 이미지 최적화 */
+.popup-card .popup-thumb {
+  width: 100%;
+  max-width: 400px; /* 세로형 캐릭터 사진이 너무 거대해지지 않게 제한 */
+  margin: 0 auto;
+}
+
+.popup-card .popup-thumb img {
+  aspect-ratio: 2 / 3; /* 세로형 황금비율 */
+  object-fit: cover;
+  border: 2px solid gold;
+}
+
+/* 버튼들을 감싸는 컨테이너 */
+.step-buttons {
+  display: flex;
+  gap: 10px;           /* 버튼 사이 간격 */
+  margin-bottom: 20px;
+  width: 100%;         /* 부모 너비에 맞춤 */
+}
+
+/* 모든 단계의 버튼 공통 스타일 */
+.step-btn {
+  flex: 1;             /* ⭐ 핵심: 두 버튼이 동일한 비율(1:1)을 갖게 함 */
+  height: 50px;        /* 높이 고정 */
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+  
+  /* 텍스트가 길어져도 버튼 크기가 변하지 않도록 설정 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+}
+
+/* '메인으로', '뒤로가기' (보조 버튼) */
+.step-btn.secondary {
+  background-color: #333;
+  color: #ccc;
+}
+
+.step-btn.secondary:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+/* '다음 단계', '수상 결정' (주요 버튼) */
+.step-btn.primary {
+  background: linear-gradient(135deg, #f5d020, #f5a623); /* 금색 그라데이션 */
+  color: #000;
+}
+
+.step-btn.primary:disabled {
+  background: #222;    /* 비활성화 시 어둡게 */
+  color: #555;
+  cursor: not-allowed;
+  filter: grayscale(1);
+}
+
+.step-btn.primary:not(:disabled):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(245, 208, 32, 0.4);
+}

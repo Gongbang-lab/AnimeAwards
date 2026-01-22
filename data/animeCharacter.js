@@ -1,25 +1,30 @@
-const AnimeCharacters = {
-  Q1: [
+const CharacterData = {
+  // 1. 남자/여자 캐릭터 (동일 구조)
+  "character_male": [
     {
-      id: 1,
-      animeId: 101,
-      name: "고죠 사토루",
+      id: "char_m_01",
+      quarter: "2024년 1분기",
+      day: "mon",
+      animeId: "a_2024_1q_01",
+      animeTitle: "나 혼자만 레벨업",
+      name: "성진우",
       gender: "male",
-      thumbnail: "images/characters/gojo.png"
-    },
+      thumbnail: "../images/char/sung_jinwoo.jpg"
+    }
+  ],
+  
+  // 2. 베스트 커플 (전용 구조)
+  "best_couple": [
     {
-      id: 2,
-      animeId: 101,
-      name: "이타도리 유지",
-      gender: "male",
-      thumbnail: "images/characters/yuji.png"
-    },
-    {
-      id: 3,
-      animeId: 102,
-      name: "아냐 포저",
-      gender: "female",
-      thumbnail: "images/characters/anya.png"
+      id: "couple_01",
+      quarter: "2024년 2분기",
+      animeId: "a_2024_2q_10",
+      animeTitle: "내 마음의 위험한 녀석",
+      names: { male: "이치카와 쿄타로", female: "야마다 안나" },
+      thumbnails: { 
+        male: "../images/char/ichikawa.jpg", 
+        female: "../images/char/yamada.jpg" 
+      }
     }
   ]
 };

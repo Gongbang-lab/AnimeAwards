@@ -42,6 +42,12 @@ function renderAwards() {
       case "ost":
         location.href = `../songNominate/songNominate.html?awardName=${encodeURIComponent(award.name)}&theme=${encodeURIComponent(award.theme)}`;
         break;
+      case "character_male":
+        location.href = `../charNominate/charNominate.html?awardName=${encodeURIComponent(award.name)}&theme=${encodeURIComponent(award.theme)}`;
+        break;
+      case "character_female":
+        location.href = `../charNominate/charNominate.html?awardName=${encodeURIComponent(award.name)}&theme=${encodeURIComponent(award.theme)}`;
+        break;
 
       default:
         location.href = `../nominate/nominate.html?awardName=${encodeURIComponent(award.name)}&theme=${encodeURIComponent(award.theme)}`;
