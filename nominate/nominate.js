@@ -231,8 +231,7 @@ function renderStep2Cards(parent) {
     // 🔥 데이터에 있는 thumbnail 경로를 그대로 사용하되, 
     // 현재 HTML 위치에 따라 상위 폴더(..)를 붙여야 할 수 있습니다.
     // 만약 nominate.html이 'nominate' 폴더 안에 있다면 "../"를 추가하세요.
-    let normalizedPath = anime.thumbnail.replace(/\\/g, '/');
-    const imgPath = `../${normalizedPath}`;
+    const imgPath = `../${anime.thumbnail}`;
 
     card.innerHTML = `
       <div class="card-thumb">
