@@ -363,3 +363,21 @@ html, body {
   border-left: 4px solid gold; /* 포인트 바 추가 */
   line-height: 1.2;
 }
+
+#winner-popup.active #winner-thumb {
+  animation: zoomIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes zoomIn {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+#winner-title {
+  animation: fadeInUp 1s ease 0.3s both;
+}
+
+@keyframes fadeInUp {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}

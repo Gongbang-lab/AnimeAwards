@@ -352,6 +352,8 @@ function showWinnerPopup() {
     titleElement.textContent = winner.title;
     popupElement.style.display = "flex"; 
     popupElement.classList.add("active");
+
+    fireConfetti();
   }
 
   // 5. 결과 저장 함수 호출
@@ -386,3 +388,31 @@ document.addEventListener("DOMContentLoaded", () => {
   renderStep1();
   bindStaticButtons();
 });
+
+// 🎉 화려한 폭죽 연출 함수
+function fireConfetti() {
+  const duration = 3 * 1000; // 3초 동안 발사
+  const animationEnd = Date.now() + duration;
+  const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 10001 }; // 팝업보다 위에 보이게 zIndex 조절
+
+  const interval = setInterval(function() {
+    const timeLeft = animationEnd - Date.now();
+
+    if (timeLeft <= 0) {
+      return clearInterval(interval);
+    }
+
+    const particleCount = 50 * (timeLeft / duration);
+    
+    // 왼쪽에서 쏘기
+    confetti(Object.assign({}, defaults, { 
+      particleCount, 
+      origin: { x: 0.2, y: 0.7 } 
+    }));
+    // 오른쪽에서 쏘기
+    confetti(Object.assign({}, defaults, { 
+      particleCount, 
+      origin: { x: 0.8, y: 0.7 } 
+    }));
+  }, 250);
+}

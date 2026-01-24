@@ -152,6 +152,10 @@ html, body {
   font-size: 18px;
   padding: 8px;
 }
+.youtube-link:hover {
+  transform: scale(1.2);
+  color: #ff0000;
+}
 
 /* ───────────────────── 우측 프리뷰 및 버튼 ───────────────────── */
 .step1-preview {
@@ -359,4 +363,80 @@ html, body {
   padding-left: 4px;
   border-left: 4px solid gold; /* 포인트 바 추가 */
   line-height: 1.2;
+}
+
+/* Step 2 카드 이미지 영역 */
+.card-thumb {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+/* 재생 버튼 오버레이 */
+.play-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 0, 0, 0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.3s;
+    opacity: 0.8;
+}
+
+.play-overlay:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    background: rgba(255, 0, 0, 1);
+    opacity: 1;
+}
+
+.play-icon {
+    color: white;
+    font-size: 20px;
+    margin-left: 3px; /* 삼각형 중앙 정렬 보정 */
+}
+
+/* 팝업 썸네일 컨테이너 */
+.popup-thumb {
+    position: relative; /* 버튼 배치를 위해 추가 */
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    margin: 25px 0;
+}
+
+/* 팝업 전용 대형 재생 버튼 */
+.popup-play-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;  /* Step 2보다 크게 설정 */
+    height: 80px;
+    background: rgba(255, 0, 0, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+.popup-play-overlay:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    background: #ff0000;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.8);
+}
+
+.popup-play-icon {
+    color: white;
+    font-size: 32px;
+    margin-left: 5px;
 }

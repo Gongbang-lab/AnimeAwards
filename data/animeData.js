@@ -68,7 +68,7 @@ const AnimeByQuarter = {
 },
 {
   "id": 61211,
-  "title": "Mayonaka Heart Tune",
+  "title": "한밤중 하트튠",
   "thumbnail": "image/animeimg/Q1/한밤중 하트튠.webp",
   "day": "Tuesdays",
   "episodes": 12,
@@ -84,7 +84,7 @@ const AnimeByQuarter = {
 },
 {
   "id": 58886,
-  "title": "Darwin Jihen",
+  "title": "다윈 사변",
   "thumbnail": "image/animeimg/Q1/다윈 사변.webp",
   "day": "Wednesdays",
   "episodes": 0,
@@ -97,6 +97,14 @@ const AnimeByQuarter = {
   "day": "Wednesdays",
   "episodes": 12,
   "studio": "HORNETS"
+},
+{
+  "id": 60255,
+  "title": "아르네의 사건부",
+  "thumbnail": "image/animeimg/Q1/아르네의 사건부.webp",
+  "day": "Wednesdays",
+  "episodes": 12,
+  "studio": "SILVER LINK."
 },
 {
   "id": 61884,
@@ -180,11 +188,11 @@ const AnimeByQuarter = {
   "studio": "아시 프로덕션"
 },
 {
-  "id": 62392,
+  "id": 57658,
   "title": "주술회전 3기",
   "thumbnail": "image/animeimg/Q1/주술회전 3기.webp",
-  "day": "Thursdays",
-  "episodes": 1,
+  "day": "Fridays",
+  "episodes": 12,
   "studio": "MAPPA"
 },
 {
@@ -220,11 +228,11 @@ const AnimeByQuarter = {
   "studio": "매드하우스"
 },
 {
-  "id": 714,
+  "id": 62804,
   "title": "하이스쿨! 기면조",
   "thumbnail": "image/animeimg/Q1/하이스쿨!_기면조.webp",
-  "day": "Saturdays",
-  "episodes": 86,
+  "day": "Fridays",
+  "episodes": 12,
   "studio": "주식회사 세븐"
 },
 {
