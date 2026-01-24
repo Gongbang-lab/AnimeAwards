@@ -5,6 +5,28 @@ const nominateState = {
   selectedItems: [],
   selectedWinner: null
 };
+// 요일 데이터 매칭
+const DAY_LABELS = {
+  "Mondays": "월요일",
+  "Tuesdays": "화요일",
+  "Wednesdays": "수요일",
+  "Thursdays": "목요일",
+  "Fridays": "금요일",
+  "Saturdays": "토요일",
+  "Sundays": "일요일",
+  "Anomaly": "변칙편성",
+  "Web": "웹"
+};
+// 데이터의 요일 키
+const DAY_KEYS = ["Mondays", "Tuesdays", "Wednesdays", "Thursdays", "Fridays", "Saturdays", "Sundays"];
+
+// Q1 -> 1분기 변환 함수
+const QUARTER_MAP = {
+  "Q1": "1분기",
+  "Q2": "2분기",
+  "Q3": "3분기",
+  "Q4": "4분기"
+};
 //html 버튼 바인딩
 function bindStaticButtons() {
   document.getElementById("step1-back-btn").onclick = () => {
@@ -46,26 +68,29 @@ function renderStep1() {
 }
 //step 1 anime list
 function renderAnimeList(parent) {
-  Object.entries(AnimeByQuarter).forEach(([quarter, animeList]) => {
+  // 분기 키(Q1, Q2...) 순서대로 정렬하여 출력
+  Object.keys(AnimeByQuarter).sort().forEach((quarterKey) => {
+    const animeList = AnimeByQuarter[quarterKey];
     const quarterSection = document.createElement("div");
     quarterSection.className = "quarter-section";
 
-    /* 분기 버튼 */
     const quarterBtn = document.createElement("button");
     quarterBtn.className = "quarter-btn";
-    quarterBtn.textContent = quarter;
+    
+    // 🔥 QUARTER_MAP을 사용하여 Q1 -> 1분기 변환, 없으면 원문 출력
+    quarterBtn.textContent = QUARTER_MAP[quarterKey] || quarterKey;
 
     const quarterContent = document.createElement("div");
     quarterContent.className = "quarter-content";
     quarterContent.style.display = "none";
 
     quarterBtn.onclick = () => {
-      const open = quarterContent.style.display === "block";
-      quarterContent.style.display = open ? "none" : "block";
-      quarterBtn.classList.toggle("active", !open);
+      const isVisible = quarterContent.style.display === "block";
+      quarterContent.style.display = isVisible ? "none" : "block";
+      quarterBtn.classList.toggle("active", !isVisible);
     };
 
-    /* 요일별 */
+    // 요일별 분류 출력
     DAY_KEYS.forEach(dayKey => {
       const dayAnimes = animeList.filter(a => a.day === dayKey);
       if (dayAnimes.length === 0) return;
@@ -82,40 +107,31 @@ function renderAnimeList(parent) {
       dayList.style.display = "none";
 
       dayBtn.onclick = () => {
-        const open = dayList.style.display === "block";
-        dayList.style.display = open ? "none" : "block";
-        dayBtn.classList.toggle("active", !open);
+        const isVisible = dayList.style.display === "block";
+        dayList.style.display = isVisible ? "none" : "block";
+        dayBtn.classList.toggle("active", !isVisible);
       };
 
-      /* 애니 목록 */
       dayAnimes.forEach(anime => {
         const li = document.createElement("li");
         li.className = "anime-item";
         li.textContent = anime.title;
-
-        if (nominateState.selectedItems?.title === anime.title) {
+        
+        if (nominateState.selectedItems.some(a => a.id === anime.id)) {
           li.classList.add("selected");
         }
 
-          li.onclick = () => {
-          // 이미 선택된 애니면 해제 (UX 보너스)
-            const exists = nominateState.selectedItems.some(
-              a => a.title === anime.title
-            );
-
+        li.onclick = () => {
+          const exists = nominateState.selectedItems.some(a => a.id === anime.id);
           if (exists) {
-            nominateState.selectedItems =
-            nominateState.selectedItems.filter(a => a.title !== anime.title);
+            nominateState.selectedItems = nominateState.selectedItems.filter(a => a.id !== anime.id);
             li.classList.remove("selected");
           } else {
             nominateState.selectedItems.push(anime);
             li.classList.add("selected");
           }
-
           updateStep1Preview();
         };
-
-
         dayList.appendChild(li);
       });
 
@@ -201,7 +217,8 @@ function goStep2() {
 //step 2 카드
 function renderStep2Cards(parent) {
   const title = document.createElement("h2");
-  title.textContent = "최종 후보";
+  title.className = "step-title";
+  title.textContent = "최종 후보 선택";
   parent.appendChild(title);
 
   const grid = document.createElement("div");
@@ -211,21 +228,33 @@ function renderStep2Cards(parent) {
     const card = document.createElement("div");
     card.className = "step2-card";
 
+    // 🔥 데이터에 있는 thumbnail 경로를 그대로 사용하되, 
+    // 현재 HTML 위치에 따라 상위 폴더(..)를 붙여야 할 수 있습니다.
+    // 만약 nominate.html이 'nominate' 폴더 안에 있다면 "../"를 추가하세요.
+    let normalizedPath = anime.thumbnail.replace(/\\/g, '/');
+    const imgPath = `../${normalizedPath}`;
+
     card.innerHTML = `
       <div class="card-thumb">
-        <img src="${anime.thumbnail || 'images/no-image.png'}" />
+        <img src="${imgPath}" 
+             onerror="this.onerror=null; this.src='https://placehold.co/400x600/2f3542/ffffff?text=No+WebP+Image'" 
+             alt="${anime.title}" />
+        <div class="card-day-badge">${DAY_LABELS[anime.day] || '기타'}</div>
       </div>
-      <div class="card-title">${anime.title}</div>
+      <div class="card-info">
+        <div class="card-title">${anime.title}</div>
+        <div class="card-studio">${anime.studio || ''}</div>
+      </div>
     `;
 
     card.onclick = () => {
-      // 단일 선택
-      document
-        .querySelectorAll(".step2-card")
-        .forEach(c => c.classList.remove("selected"));
-
+      document.querySelectorAll(".step2-card").forEach(c => c.classList.remove("selected"));
       card.classList.add("selected");
-      nominateState.selectedWinner = anime;
+      
+      nominateState.selectedWinner = {
+        ...anime,
+        thumbnail: imgPath // 팝업에서 쓸 경로 저장
+      };
 
       document.getElementById("step2-award-btn").disabled = false;
     };
@@ -306,7 +335,6 @@ function showWinnerPopup() {
     alert("수상작을 선택해주세요!");
     return;
   }
-
   // 2. 요소 가져오기 (초기화 위치 확인)
   const popupElement = document.getElementById("winner-popup");
   const thumbElement = document.getElementById("winner-thumb");
@@ -314,14 +342,17 @@ function showWinnerPopup() {
 
   // 3. 요소가 존재하는지 확인 후 데이터 삽입
   if (popupElement && thumbElement && titleElement) {
+    // 이미 Step 2에서 변환된 imgPath를 사용하므로 그대로 대입
     thumbElement.src = winner.thumbnail;
-    titleElement.textContent = winner.title;
+    
+    // 팝업 이미지 로딩 실패 대비
+    thumbElement.onerror = function() {
+      this.src = 'https://placehold.co/400x600/2f3542/ffffff?text=Image+Not+Found';
+    };
 
-    // 4. 스타일 변경 (인라인 스타일 무효화 및 클래스 추가)
+    titleElement.textContent = winner.title;
     popupElement.style.display = "flex"; 
     popupElement.classList.add("active");
-  } else {
-    console.error("팝업 요소를 찾을 수 없습니다. HTML ID를 확인하세요.");
   }
 
   // 5. 결과 저장 함수 호출

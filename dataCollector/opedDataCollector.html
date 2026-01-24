@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>애니 음악 & 유튜브 수집기</title>
+  <style>
+    body { font-family: 'Pretendard', sans-serif; padding: 20px; background: #f8fafc; color: #333; }
+    .container { max-width: 1000px; margin: 0 auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+    .search-box { display: flex; gap: 10px; margin-bottom: 30px; }
+    input { flex: 1; padding: 12px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 16px; }
+    button { padding: 12px 25px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; transition: 0.2s; }
+    .btn-fetch { background: #4a5568; color: white; }
+    
+    .music-card { display: flex; align-items: center; gap: 20px; padding: 15px; border: 1px solid #edf2f7; border-radius: 12px; margin-bottom: 15px; background: #fff; }
+    .yt-thumb { width: 160px; height: 90px; background: #000; border-radius: 8px; object-fit: cover; cursor: pointer; }
+    .music-info { flex: 1; }
+    .music-info .type { font-size: 11px; font-weight: bold; color: #3182ce; text-transform: uppercase; }
+    .music-info .title { font-size: 16px; font-weight: bold; margin: 4px 0; }
+    .music-info .artist { font-size: 14px; color: #718096; }
+    
+    .btn-yt { background: #ff0000; color: white; font-size: 12px; padding: 6px 12px; }
+    #resultArea { width: 100%; height: 250px; font-family: monospace; margin-top: 20px; padding: 15px; background: #1a202c; color: #a0aec0; border-radius: 8px; border: none; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>🎵 주제가 데이터 & 유튜브 추출기</h2>
+  <p style="color: #666; font-size: 14px;">애니메이션 ID를 입력하면 OP/ED 정보와 유튜브 검색 링크를 생성합니다.</p>
+
+  <div class="search-box">
+    <input type="number" id="malId" placeholder="MAL ID 입력 (예: 52991)">
+    <button class="btn-fetch" onclick="fetchMusicData()">데이터 추출</button>
+  </div>
+
+  <div id="status" style="margin-bottom: 15px; font-weight: bold; color: #3182ce;"></div>
+  
+  <div id="musicList"></div>
+
+  <h3>📋 생성된 JSON 코드</h3>
+  <textarea id="resultArea" readonly></textarea>
+</div>
+
+<script>
+  let musicResults = [];
+
+  async function fetchMusicData() {
+    const id = document.getElementById('malId').value;
+    const listDiv = document.getElementById('musicList');
+    const status = document.getElementById('status');
+    
+    if(!id) return alert("ID를 입력하세요.");
+    status.innerText = "⏳ 음악 정보를 분석하는 중...";
+    listDiv.innerHTML = "";
+    musicResults = [];
+
+    try {
+      // 1. 애니메이션 기본 정보 및 테마곡 가져오기
+      const response = await fetch(`https://api.jikan.moe/v4/anime/${id}/themes`);
+      const animeResp = await fetch(`https://api.jikan.moe/v4/anime/${id}`);
+      
+      const themeData = await response.json();
+      const animeData = await animeResp.json();
+      const animeTitle = animeData.data.title;
+
+      const allThemes = [
+        ...themeData.data.openings.map(t => parseTheme(t, 'OP', animeTitle)),
+        ...themeData.data.endings.map(t => parseTheme(t, 'ED', animeTitle))
+      ];
+
+      // 2. UI 렌더링
+      listDiv.innerHTML = allThemes.map((song, idx) => {
+        // 유튜브 검색 URL 생성
+        const searchQuery = encodeURIComponent(`${animeTitle} ${song.title} ${song.artist}`);
+        const ytSearchUrl = `https://www.youtube.com/results?search_query=${searchQuery}`;
+        
+        return `
+          <div class="music-card">
+            <a href="${ytSearchUrl}" target="_blank">
+              <img class="yt-thumb" src="https://img.youtube.com/vi/search/mqdefault.jpg" alt="검색하기">
+            </a>
+            <div class="music-info">
+              <div class="type">${song.type}</div>
+              <div class="title">${song.title}</div>
+              <div class="artist">${song.artist}</div>
+              <div style="font-size:12px; color:#a0aec0; margin-top:5px;">${song.episodes}</div>
+            </div>
+            <button class="btn-yt" onclick="window.open('${ytSearchUrl}')">YouTube 검색</button>
+          </div>
+        `;
+      }).join('');
+
+      // 3. JSON 코드 생성
+      document.getElementById('resultArea').value = JSON.stringify({
+        animeId: id,
+        themes: allThemes
+      }, null, 2);
+
+      status.innerText = `✅ 총 ${allThemes.length}개의 곡 정보를 찾았습니다.`;
+
+    } catch (e) {
+      status.innerText = "❌ 에러: " + e.message;
+    }
+  }
+
+  // Jikan의 문자열에서 제목, 아티스트 추출
+  function parseTheme(themeStr, type, animeTitle) {
+    const titleMatch = themeStr.match(/"([^"]+)"/);
+    const artistMatch = themeStr.match(/by\s+([^(\n\r]+)/);
+    const epsMatch = themeStr.match(/\(eps\s+([^)]+)\)/);
+
+    const title = titleMatch ? titleMatch[1] : "Unknown Title";
+    const artist = artistMatch ? artistMatch[1].trim() : "Unknown Artist";
+    
+    return {
+      type: type,
+      title: title,
+      artist: artist,
+      episodes: epsMatch ? epsMatch[1] : "All",
+      // 유튜브 검색을 위한 조합 키
+      youtube_search: `https://www.youtube.com/results?search_query=${encodeURIComponent(animeTitle + " " + title)}`
+    };
+  }
+</script>
+
+</body>
+</html>
