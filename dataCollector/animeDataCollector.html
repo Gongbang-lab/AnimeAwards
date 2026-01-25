@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>애니메이션 수집기 (심플 버전)</title>
+  <title>애니메이션 수집기 (조건부 추출 버전)</title>
   <style>
     body { font-family: 'Pretendard', sans-serif; padding: 20px; background: #f5f7fa; color: #333; }
     .container { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.5fr; gap: 20px; }
@@ -11,12 +11,12 @@
     .search-input { width: calc(100% - 24px); padding: 12px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 16px; margin-bottom: 10px; }
     .btn-search { width: 100%; background: #4a5568; color: white; padding: 12px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; margin-bottom: 20px; }
     .search-item { display: flex; gap: 12px; padding: 10px; border-bottom: 1px solid #edf2f7; cursor: pointer; align-items: center; }
-    .search-item:hover { background: #f7fafc; }
     .search-item img { width: 45px; height: 63px; border-radius: 4px; object-fit: cover; }
     .preview-header { display: flex; gap: 20px; margin-bottom: 20px; }
     .preview-header img { width: 140px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-    #codeOutput { width: 100%; height: 250px; font-family: 'Fira Code', monospace; background: #1a202c; color: #e2e8f0; padding: 15px; border-radius: 8px; border: none; box-sizing: border-box; }
+    #codeOutput { width: 100%; height: 320px; font-family: 'Fira Code', monospace; background: #1a202c; color: #e2e8f0; padding: 15px; border-radius: 8px; border: none; box-sizing: border-box; line-height: 1.5; overflow-y: auto; }
     .btn-copy { width: 100%; background: #38a169; color: white; padding: 12px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; margin-top: 10px; }
+    .staff-preview { font-size: 12px; color: #4a5568; margin-top: 10px; background: #f8fafc; padding: 10px; border-radius: 6px; }
   </style>
 </head>
 <body>
@@ -24,14 +24,14 @@
 <div class="container">
   <div class="section">
     <h3>🔎 애니메이션 검색</h3>
-    <input type="text" id="query" class="search-input" placeholder="일본어 또는 영어 제목 입력" onkeypress="if(event.keyCode==13) searchAnime()">
-    <button class="btn-search" onclick="searchAnime()">검색</button>
+    <input type="text" id="query" class="search-input" placeholder="제목 또는 MAL ID 입력" onkeypress="if(event.keyCode==13) searchAnime()">
+    <button class="btn-search" onclick="searchAnime()">조사하기</button>
     <div id="status" style="font-size: 13px; color: #3182ce; margin-bottom: 10px;"></div>
     <div id="searchResult"></div>
   </div>
 
   <div class="section">
-    <h3>📄 추출 데이터 (장르 제외)</h3>
+    <h3>📄 추출 데이터 (조건부 스태프)</h3>
     <div id="preview" style="display:none;">
       <div class="preview-header">
         <img id="p-img" src="">
@@ -42,6 +42,7 @@
             <b>ID:</b> <span id="p-id"></span> | <b>요일:</b> <span id="p-day"></span><br>
             <b>화수:</b> <span id="p-eps"></span>화 | <b>제작사:</b> <span id="p-studio"></span>
           </div>
+          <div id="p-staff" class="staff-preview"></div>
         </div>
       </div>
       <textarea id="codeOutput" readonly></textarea>
@@ -52,15 +53,16 @@
 
 <script>
   async function searchAnime() {
-    const query = document.getElementById('query').value;
-    const resultDiv = document.getElementById('searchResult');
-    const status = document.getElementById('status');
+    const query = document.getElementById('query').value.trim();
     if(!query) return;
-    status.innerText = "🔍 검색 중...";
+    if (/^\d+$/.test(query)) { getAnimeDetail(query); return; }
+    
+    const status = document.getElementById('status');
+    status.innerText = "🔍 제목 검색 중...";
     try {
       const resp = await fetch(`https://api.jikan.moe/v4/anime?q=${encodeURIComponent(query)}&limit=8`);
       const json = await resp.json();
-      resultDiv.innerHTML = json.data.map(anime => `
+      document.getElementById('searchResult').innerHTML = json.data.map(anime => `
         <div class="search-item" onclick="getAnimeDetail(${anime.mal_id})">
           <img src="${anime.images.jpg.image_url}">
           <div>
@@ -74,19 +76,64 @@
   }
 
   async function getAnimeDetail(id) {
+    const status = document.getElementById('status');
+    status.innerText = `⏳ ID ${id} 정보 추출 중...`;
+    
     try {
-      const resp = await fetch(`https://api.jikan.moe/v4/anime/${id}`);
-      const json = await resp.json();
-      const data = json.data;
+      const [animeResp, staffResp] = await Promise.all([
+        fetch(`https://api.jikan.moe/v4/anime/${id}`),
+        fetch(`https://api.jikan.moe/v4/anime/${id}/staff`)
+      ]);
 
-      // 장르(genres) 필드를 제외한 객체 생성
+      const animeJson = await animeResp.json();
+      const staffJson = await staffResp.json();
+      const data = animeJson.data;
+      const staffData = staffJson.data;
+
+      // 원작 소스 확인 (Manga, Light Novel 등 vs Original)
+      const isOriginal = data.source === "Original";
+
+      const staffObj = {
+        director: [],
+        character_design: []
+      };
+
+      // 조건에 따라 필드 이름 결정
+      const writerField = isOriginal ? "scriptwriter" : "adaptor";
+      staffObj[writerField] = [];
+
+      staffData.forEach(person => {
+        const positions = person.positions.map(p => p.toLowerCase());
+        const name = person.person.name;
+
+        // 메인 감독
+        if (positions.some(p => (p === 'director' || p === 'series director') && !p.includes('animation') && !p.includes('sound') && !p.includes('episode'))) {
+          staffObj.director.push(name);
+        }
+
+        // 캐릭터 디자인
+        if (positions.some(p => p.includes('character design'))) {
+          staffObj.character_design.push(name);
+        }
+
+        // 각본/각색 필터링
+        if (isOriginal) {
+          // 오리지널일 때: Script 담당자만 추출
+          if (positions.some(p => p === 'script')) staffObj[writerField].push(name);
+        } else {
+          // 원작이 있을 때: Series Composition(각색가) 담당자만 추출
+          if (positions.some(p => p.includes('series composition'))) staffObj[writerField].push(name);
+        }
+      });
+
       const animeObj = {
         id: data.mal_id,
         title: data.title, 
         thumbnail: data.images.jpg.large_image_url,
         day: data.broadcast.day || "Unknown",
         episodes: data.episodes || 0,
-        studio: data.studios.length > 0 ? data.studios[0].name : "Unknown"
+        studio: data.studios.length > 0 ? data.studios[0].name : "Unknown",
+        staff: staffObj
       };
 
       document.getElementById('preview').style.display = "block";
@@ -97,9 +144,16 @@
       document.getElementById('p-day').innerText = animeObj.day;
       document.getElementById('p-eps').innerText = animeObj.episodes;
       document.getElementById('p-studio').innerText = animeObj.studio;
+      
+      document.getElementById('p-staff').innerHTML = `
+        <b>메인 감독:</b> ${staffObj.director.join(', ') || 'N/A'}<br>
+        <b>${isOriginal ? '각본가(오리지널)' : '각색가(시리즈 구성)'}:</b> ${staffObj[writerField].join(', ') || 'N/A'}<br>
+        <b>캐릭터 디자인:</b> ${staffObj.character_design.join(', ') || 'N/A'}
+      `;
 
       document.getElementById('codeOutput').value = JSON.stringify(animeObj, null, 2) + ",";
-    } catch (e) { alert("상세 정보 에러"); }
+      status.innerText = `✅ "${animeObj.title}" 추출 완료 (${isOriginal ? '오리지널' : '원작기반'})`;
+    } catch (e) { status.innerText = "❌ 상세 정보 에러"; }
   }
 
   function copyCode() {

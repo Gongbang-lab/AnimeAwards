@@ -7,7 +7,15 @@ const AnimeByQuarter = {
   "thumbnail": "image/animeimg/Q1/고문_아르바이트의_일상.webp",
   "day": "Mondays",
   "episodes": 12,
-  "studio": "디오미디어"
+  "studio": "디오미디어",
+  "staff": {
+    "director": [
+      "오이자키 후미토시"
+    ],
+    "character_design": [
+      "시부야 사카에"
+    ]
+  }
 },
 {
   "id": 61942,
@@ -15,16 +23,33 @@ const AnimeByQuarter = {
   "thumbnail": "image/animeimg/Q1/비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기.webp",
   "day": "Mondays",
   "episodes": 13,
-  "studio": "본즈 필름"
+  "studio": "본즈 필름",
+    "staff": {
+    "director": [
+      "스즈키 켄이치"
+    ],
+    "character_design": [
+      "요시다 타카히코"
+    ]
+  }
 },
 {
   "id": 61782,
   "title": "깨끗하게 해주시겠어요?",
-  "title_jp": "綺麗にしてもらえますか。",
   "thumbnail": "image/animeimg/Q1/깨끗하게 해주시겠어요.webp",
   "day": "Mondays",
   "episodes": 0,
-  "studio": "오쿠루토 노보루"
+  "studio": "오쿠루토 노보루",
+    "staff": {
+    "director": [
+      "오오니시 켄타"
+    ],
+    "character_design": [
+      "토자와 아즈마",
+      "야마우치 다이스케(서브)",
+      "미야자키 사토미(서브)"
+    ]
+  }
 },
 {
   "id": 55772,
@@ -32,7 +57,15 @@ const AnimeByQuarter = {
   "thumbnail": "image/animeimg/Q1/골든 카무이 최종장.webp",
   "day": "Mondays",
   "episodes": 13,
-  "studio": "브레인즈 베이스"
+  "studio": "브레인즈 베이스",
+  "staff": {
+    "director": [
+      "스가하라 시즈타카"
+    ],
+    "character_design": [
+      "야마카와 타쿠미"
+    ]
+  }
 },
 {
   "id": 58524,
@@ -40,7 +73,17 @@ const AnimeByQuarter = {
   "thumbnail": "image/animeimg/Q1/공주님 고문의 시간입니다 2기.webp",
   "day": "Mondays",
   "episodes": 0,
-  "studio": "PINE JAM"
+  "studio": "PINE JAM",
+  "staff": {
+    "director": [
+      "카나모리 요코"
+    ],
+    "character_design": [
+      "코노 토시야",
+      "타키야마 마사아키(서브)",
+      "나츠키 히로시(서브)"
+    ]
+  }
 },
 {
   "id": 61359,
@@ -48,7 +91,15 @@ const AnimeByQuarter = {
   "thumbnail": "image/animeimg/Q1/소꿉친구와는 러브 코미디를 할 수 없어.webp",
   "day": "Tuesdays",
   "episodes": 12,
-  "studio": "데즈카 프로덕션"
+  "studio": "데즈카 프로덕션",
+  "staff": {
+    "director": [
+      "쿠와바라 사토시"
+    ],
+    "character_design": [
+      "이와사키 레이나",
+    ]
+  }
 },
 {
   "id": 61983,
@@ -56,7 +107,18 @@ const AnimeByQuarter = {
   "thumbnail": "image/animeimg/Q1/용사 파티에 귀여운 애가 있어서, 고백해봤다..webp",
   "day": "Tuesdays",
   "episodes": 13,
-  "studio": "겟코"
+  "studio": "겟코",
+  "staff": {
+    "director": [
+      "미네 토모노리",
+      "야마모토 야스타카(총)"
+    ],
+    "character_design": [
+      "오오사와 미나",
+      "사토 코노미(서브)",
+      "이와사키 카나(서브)"
+    ]
+  }
 },
 {
   "id": 60226,
@@ -64,7 +126,17 @@ const AnimeByQuarter = {
   "thumbnail": "image/animeimg/Q1/이세계 사정은 사축 하기 나름.webp",
   "day": "Tuesdays",
   "episodes": 12,
-  "studio": "스튜디오 딘"
+  "studio": "스튜디오 딘",
+  "staff": {
+    "director": [
+      "이시히라 신지"
+    ],
+    "character_design": [
+      "후지이 마키",
+      "쿠보 미츠키(서브)",
+      "마츠이 세이카(서브)"
+    ]
+  }
 },
 {
   "id": 61211,
@@ -72,7 +144,19 @@ const AnimeByQuarter = {
   "thumbnail": "image/animeimg/Q1/한밤중 하트튠.webp",
   "day": "Tuesdays",
   "episodes": 12,
-  "studio": "겟코"
+  "studio": "겟코",
+  "staff": {
+    "director": [
+      "타카하시 마사유키"
+    ],
+    "character_design": [
+      "시타야 토모유키",
+      "소메야 유리카(서브)",
+      "키쿠치 아키히로(서브)",
+      "미키오(서브)",
+      "호무라 미노리(서브)"
+    ]
+  }
 },
 {
   "id": 61830,
@@ -80,7 +164,16 @@ const AnimeByQuarter = {
   "thumbnail": "image/animeimg/Q1/개진전 사무라이 트루퍼.webp",
   "day": "Tuesdays",
   "episodes": 12,
-  "studio": "선라이즈"
+  "studio": "선라이즈",
+  "staff": {
+    "director": [
+      "후지타 요이치"
+    ],
+    "character_design": [
+      "코토부키 츠카사",
+      "무로타 유헤이"
+    ]
+  }
 },
 {
   "id": 58886,
@@ -88,7 +181,15 @@ const AnimeByQuarter = {
   "thumbnail": "image/animeimg/Q1/다윈 사변.webp",
   "day": "Wednesdays",
   "episodes": 0,
-  "studio": "벨녹스 필름스"
+  "studio": "벨녹스 필름스",
+  "staff": {
+    "director": [
+      "츠다 나오카츠"
+    ],
+    "character_design": [
+      "토모오카 신페이"
+    ]
+  }
 },
 {
   "id": 61637,
@@ -96,7 +197,16 @@ const AnimeByQuarter = {
   "thumbnail": "image/animeimg/Q1/독신 중견 모험가의 일상.webp",
   "day": "Wednesdays",
   "episodes": 12,
-  "studio": "HORNETS"
+  "studio": "HORNETS",
+  "staff": {
+    "director": [
+      "후쿠시마 토시노리"
+    ],
+    "character_design": [
+      "나가모리 요시히로",
+      "타나카 미노루(서브)",
+    ]
+  }
 },
 {
   "id": 60255,
@@ -104,7 +214,16 @@ const AnimeByQuarter = {
   "thumbnail": "image/animeimg/Q1/아르네의 사건부.webp",
   "day": "Wednesdays",
   "episodes": 12,
-  "studio": "SILVER LINK."
+  "studio": "SILVER LINK.",
+  "staff": {
+    "director": [
+      "이노우에 케이스케"
+    ],
+    "character_design": [
+      "사토 아키코",
+      "미요시 유리(서브)"
+    ]
+  }
 },
 {
   "id": 61884,
@@ -112,7 +231,16 @@ const AnimeByQuarter = {
   "thumbnail": "image/animeimg/Q1/마왕의 딸은 너무 친절해.webp",
   "day": "Wednesdays",
   "episodes": 12,
-  "studio": "EMT 스퀘어드"
+  "studio": "EMT 스퀘어드",
+  "staff": {
+    "director": [
+      "오오타 마사히코"
+    ],
+    "character_design": [
+      "나카노 유키",
+      "우에다 에리(서브)",
+    ]
+  }
 },
 {
   "id": 60058,
@@ -120,7 +248,18 @@ const AnimeByQuarter = {
   "thumbnail": "image/animeimg/Q1/【최애의 아이】 3기.webp",
   "day": "Wednesdays",
   "episodes": 11,
-  "studio": "동화공방"
+  "studio": "동화공방",
+  "staff": {
+    "director": [
+      "히라마키 다이스케"
+    ],
+    "character_design": [
+      "히라야마 칸나",
+      "와타나베 사토미(서브)",
+      "요코야마 호노카(서브)",
+      "사와이 슌(서브)"
+    ]
+  }
 },
 {
   "id": 59711,
@@ -128,7 +267,17 @@ const AnimeByQuarter = {
   "thumbnail": "image/animeimg/Q1/사망 유희로 밥을 먹는다..webp",
   "day": "Wednesdays",
   "episodes": 11,
-  "studio": "스튜디오 딘"
+  "studio": "스튜디오 딘",
+  "staff": {
+    "director": [
+      "우에노 소타"
+    ],
+    "character_design": [
+      "오사다 에리",
+      "오오츠카 케이카(서브)",
+      "코마츠 쇼타(서브)"
+    ]
+  }
 },
 {
   "id": 60692,
