@@ -2,185 +2,169 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>캐릭터 데이터 & 이미지 수집기</title>
+  <title>전체 캐릭터 추출기 (Main & Supporting)</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
-  
   <style>
-    body { font-family: 'Pretendard', sans-serif; padding: 20px; background: #f8f9fa; color: #333; }
-    .container { max-width: 900px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-    .header-box { border-bottom: 2px solid #eee; margin-bottom: 20px; padding-bottom: 10px; }
-    .char-item { display: flex; align-items: center; padding: 12px; border-bottom: 1px solid #f1f1f1; gap: 15px; }
-    .char-item:hover { background: #fafafa; }
-    .char-item img { width: 50px; height: 70px; object-fit: cover; border-radius: 4px; border: 1px solid #ddd; }
-    
-    .info-box { flex: 1; display: flex; flex-direction: column; gap: 3px; }
-    .name-jp { font-size: 14px; font-weight: bold; color: #2d3748; }
-    .name-en-sub { font-size: 11px; color: #94a3b8; }
-    .va-info { font-size: 11px; color: #64748b; }
-    
-    .role-badge { width: 80px; text-align: center; font-size: 11px; font-weight: bold; padding: 3px 0; border-radius: 20px; text-transform: uppercase; }
-    .Main { background: #fed7d7; color: #9b2c2c; }
-    .Supporting { background: #edf2f7; color: #4a5568; }
+    /* 기존 스타일 유지 및 가독성 개선 */
+    body { font-family: 'Pretendard', sans-serif; padding: 20px; background: #f8f9fa; }
+    .header { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 20px; border-top: 5px solid #2563eb; }
+    .search-area { position: relative; max-width: 600px; display: flex; gap: 10px; }
+    #searchInput { flex: 1; padding: 12px; border: 2px solid #e2e8f0; border-radius: 8px; outline: none; }
+    .results-dropdown { position: absolute; top: 55px; width: 100%; background: white; border: 1px solid #ddd; border-radius: 8px; z-index: 100; display: none; max-height: 250px; overflow-y: auto; }
+    .res-item { display: flex; gap: 12px; padding: 10px; cursor: pointer; border-bottom: 1px solid #f1f5f9; align-items: center; }
+    .res-item:hover { background: #f0f7ff; }
+    .res-item img { width: 40px; height: 55px; object-fit: cover; border-radius: 4px; }
 
-    #resultArea { width: 100%; height: 250px; font-family: 'Consolas', monospace; background: #2d3748; color: #edf2f7; padding: 15px; border-radius: 8px; margin-top: 10px; box-sizing: border-box; }
-    .controls { display: flex; gap: 10px; margin-bottom: 20px; }
-    input[type="text"], select { padding: 10px; border: 1px solid #ddd; border-radius: 6px; }
+    .main { display: grid; grid-template-columns: 1.2fr 1fr; gap: 20px; }
+    .char-list { background: white; padding: 20px; border-radius: 12px; height: 750px; overflow-y: auto; border: 1px solid #e2e8f0; }
+    .char-card { display: flex; gap: 15px; background: #fff; border: 1px solid #f1f5f9; padding: 15px; border-radius: 10px; margin-bottom: 12px; }
+    .char-card img { width: 80px; height: 110px; object-fit: cover; border-radius: 6px; background: #f8f9fa; }
+    .role-badge { display: inline-block; padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: bold; margin-bottom: 5px; }
+    .role-main { background: #fee2e2; color: #ef4444; }
+    .role-supporting { background: #dcfce7; color: #22c55e; }
+
+    .edit-fields { flex: 1; display: flex; flex-direction: column; gap: 5px; }
+    .edit-fields input { padding: 8px; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 13px; }
     
-    .btn-group { display: flex; gap: 10px; margin-top: 20px; }
-    button { padding: 12px 20px; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; transition: 0.2s; flex: 1; }
-    
-    .btn-fetch { background: #4a5568; color: white; flex: none; width: 150px; }
-    .btn-gen { background: #38a169; color: white; }
-    .btn-download { background: #e53e3e; color: white; }
-    button:hover { opacity: 0.8; }
-    button:disabled { background: #ccc; cursor: not-allowed; }
-    
-    .char-check { width: 20px; height: 20px; cursor: pointer; }
+    #jsonPreview { width: 100%; height: 600px; background: #0f172a; color: #f1f5f9; padding: 15px; border-radius: 12px; font-family: 'Fira Code', monospace; font-size: 12px; box-sizing: border-box; }
+    .btn { padding: 12px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; width: 100%; margin-top: 10px; }
+    .btn-zip { background: #ea580c; color: white; }
+    .btn-copy { background: #16a34a; color: white; }
   </style>
 </head>
 <body>
 
-<div class="container">
-  <div class="header-box">
-    <h2>👥 캐릭터 수집기 (성별 필드 추가)</h2>
-    <p style="font-size: 0.9em; color: #666;">
-        <b>JSON:</b> 일본어 이름 및 성별 필드 생성 | <b>이미지:</b> 영어 이름으로 저장
-    </p>
+<div class="header">
+  <h2>👥 캐릭터 추출기 (Main + Supporting)</h2>
+  <div class="search-area">
+    <input type="text" id="searchInput" placeholder="애니메이션 검색..." oninput="searchAnime(this.value)">
+    <div id="resultsDropdown" class="results-dropdown"></div>
   </div>
-  
-  <div class="controls">
-    <input type="text" id="animeId" placeholder="MAL ID (예: 52991)">
-    <select id="quarter">
-        <option value="Q1">1분기 (Q1)</option>
-        <option value="Q2">2분기 (Q2)</option>
-        <option value="Q3">3분기 (Q3)</option>
-        <option value="Q4">4분기 (Q4)</option>
-    </select>
-    <button class="btn-fetch" onclick="fetchCharacters()">불러오기</button>
+  <div style="margin-top: 10px; font-size: 13px; color: #64748b;">
+    MAL ID: <input type="number" id="manualId" style="width: 80px;" oninput="updateManualId(this.value)">
+    <span id="status" style="margin-left: 15px; font-weight: bold; color: #2563eb;"></span>
   </div>
-  
-  <div id="status" style="margin-bottom: 10px; font-weight: bold; color: #3182ce;"></div>
+</div>
 
-  <div id="charListContainer" style="max-height: 450px; overflow-y: auto; border: 1px solid #eee; border-radius: 8px;"></div>
-
-  <div class="btn-group">
-    <button class="btn-gen" onclick="generateCode()">JSON 생성</button>
-    <button class="btn-download" id="downloadBtn" onclick="downloadImages()" disabled>📁 이미지 ZIP 다운로드</button>
+<div class="main">
+  <div class="char-list" id="charList"></div>
+  <div class="side-panel">
+    <textarea id="jsonPreview" readonly placeholder="JSON 결과..."></textarea>
+    <button class="btn btn-copy" onclick="copyJSON()">JSON 복사</button>
+    <button id="zipBtn" class="btn btn-zip" onclick="downloadImagesZip()" disabled>📦 전체 이미지 다운로드 (.ZIP)</button>
   </div>
-  
-  <textarea id="resultArea" readonly placeholder="결과 JSON 코드가 여기에 표시됩니다."></textarea>
 </div>
 
 <script>
-  let characterList = [];
+  const API_URL = 'https://graphql.anilist.co';
+  let animeData = null;
+  let characterItems = [];
+  let currentMalId = null;
 
-  async function fetchCharacters() {
-    const id = document.getElementById('animeId').value;
-    const container = document.getElementById('charListContainer');
-    const status = document.getElementById('status');
-    const downloadBtn = document.getElementById('downloadBtn');
+  async function searchAnime(query) {
+    if (query.length < 2) { document.getElementById('resultsDropdown').style.display = 'none'; return; }
+    const q = `query($s:String){Page(perPage:5){media(search:$s,type:ANIME){id idMal title{romaji native}coverImage{medium}}}}`;
+    const res = await fetch(API_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ query: q, variables: { s: query } }) });
+    const json = await res.json();
+    renderSearch(json.data.Page.media);
+  }
+
+  function renderSearch(list) {
+    const d = document.getElementById('resultsDropdown');
+    d.innerHTML = list.map(a => `<div class="res-item" onclick="selectAnime(${a.id})"><img src="${a.coverImage.medium}"><div><b>${a.title.romaji}</b></div></div>`).join('');
+    d.style.display = 'block';
+  }
+
+  async function selectAnime(id) {
+    document.getElementById('resultsDropdown').style.display = 'none';
+    document.getElementById('status').innerText = "⏳ 전체 캐릭터 데이터 로드 중...";
     
-    if(!id) return alert("ID를 입력해주세요.");
-    status.innerText = "⏳ 데이터를 가져오는 중...";
-    container.innerHTML = "";
-    downloadBtn.disabled = true;
+    // perPage를 50으로 늘려 대다수의 주/조연을 한 번에 가져옴
+    const q = `query($id:Int){Media(id:$id){id idMal title{romaji}characters(sort:[ROLE,RELEVANCE],perPage:50){edges{role node{id name{full native}gender image{large}}voiceActors(language:JAPANESE){name{full}}}}}}`;
+    const res = await fetch(API_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ query: q, variables: { id } }) });
+    const json = await res.json();
+    animeData = json.data.Media;
+    currentMalId = animeData.idMal || "";
+    document.getElementById('manualId').value = currentMalId;
 
-    try {
-      const response = await fetch(`https://api.jikan.moe/v4/anime/${id}/characters`);
-      const resJson = await response.json();
-      
-      characterList = resJson.data.filter(c => c.role === "Main" || c.role === "Supporting");
+    // BACKGROUND 제외 필터링
+    characterItems = animeData.characters.edges
+      .filter(edge => edge.role !== "BACKGROUND") 
+      .map(edge => ({
+        role: edge.role,
+        engName: edge.node.name.full,
+        korName: edge.node.name.native || edge.node.name.full,
+        gender: edge.node.gender ? edge.node.gender.toLowerCase() : "unknown",
+        vc: edge.voiceActors[0]?.name.full || "Unknown",
+        imgUrl: edge.node.image.large
+      }));
 
-      container.innerHTML = characterList.map((item, index) => {
-        const nameEN = item.character.name;
-        const nameJP = item.character.name_kanji || nameEN;
-        const vaJP = item.voice_actors.find(va => va.language === 'Japanese')?.person.name || 'N/A';
-        
-        return `
-          <div class="char-item">
-            <input type="checkbox" class="char-check" data-index="${index}" ${item.role === 'Main' ? 'checked' : ''}>
-            <img src="${item.character.images.jpg.image_url}" crossorigin="anonymous">
-            <div class="role-badge ${item.role}">${item.role}</div>
-            <div class="info-box">
-                <div class="name-jp">${nameJP}</div>
-                <div class="name-en-sub">파일명 예정: ${nameEN}.jpg</div>
-                <div class="va-info">CV: ${vaJP}</div>
-            </div>
-          </div>
-        `;
-      }).join('');
-
-      status.innerText = `✅ ${characterList.length}명의 데이터를 불러왔습니다.`;
-      downloadBtn.disabled = false;
-    } catch (e) {
-      status.innerText = "❌ 에러: " + e.message;
-    }
+    renderChars();
+    updateJSON();
+    document.getElementById('zipBtn').disabled = false;
+    document.getElementById('status').innerText = `✅ ${characterItems.length}명 로드됨 (Background 제외)`;
   }
 
-  function generateCode() {
-    const animeId = document.getElementById('animeId').value;
-    const quarter = document.getElementById('quarter').value;
-    const checks = document.querySelectorAll('.char-check:checked');
-    const finalData = [];
-
-    checks.forEach(check => {
-      const index = check.getAttribute('data-index');
-      const originalData = characterList[index];
-
-      const nameEN = originalData.character.name;
-      const nameJP = originalData.character.name_kanji || nameEN;
-      const vaJP = originalData.voice_actors.find(va => va.language === "Japanese")?.person.name || "Unknown";
-
-      const safeFileName = nameEN.replace(/[<>:"/\\|?*]/g, "").trim();
-
-      finalData.push({
-        id: originalData.character.mal_id,
-        name: nameJP,
-        gender: "", // 성별 필드 빈값 추가
-        vc: vaJP,
-        img: `../image/charimg/${quarter}/${safeFileName}.jpg`
-      });
-    });
-
-    const resultArea = document.getElementById('resultArea');
-    const output = { [animeId]: finalData };
-    resultArea.value = JSON.stringify(output, null, 2) + ",";
-    resultArea.select();
+  function renderChars() {
+    document.getElementById('charList').innerHTML = characterItems.map((c, i) => `
+      <div class="char-card">
+        <img src="${c.imgUrl}" alt="${c.engName}">
+        <div class="edit-fields">
+          <span class="role-badge ${c.role === 'MAIN' ? 'role-main' : 'role-supporting'}">${c.role}</span>
+          <input type="text" value="${c.korName}" oninput="updateChar(${i}, 'korName', this.value)" placeholder="한글 이름">
+          <input type="text" value="${c.vc}" oninput="updateChar(${i}, 'vc', this.value)" placeholder="성우 이름">
+          <select onchange="updateChar(${i}, 'gender', this.value)" style="padding:6px; border-radius:4px; border:1px solid #e2e8f0;">
+            <option value="male" ${c.gender==='male'?'selected':''}>Male</option>
+            <option value="female" ${c.gender==='female'?'selected':''}>Female</option>
+            <option value="unknown" ${c.gender==='unknown'?'selected':''}>Unknown</option>
+          </select>
+        </div>
+      </div>`).join('');
   }
 
-  async function downloadImages() {
-    const checks = document.querySelectorAll('.char-check:checked');
-    const status = document.getElementById('status');
+  function updateChar(i, key, val) { characterItems[i][key] = val; updateJSON(); }
+  function updateManualId(val) { currentMalId = val; updateJSON(); }
+
+  function updateJSON() {
+    const out = {
+      id: parseInt(currentMalId) || currentMalId,
+      title: animeData.title.romaji,
+      characters: characterItems.map(c => ({
+        name: c.korName,
+        role: c.role,
+        gender: c.gender,
+        vc: c.vc,
+        img: `../image/charimg/${animeData.title.romaji.replace(/\s+/g, '_')}/${c.engName.replace(/\s+/g, '_')}.jpg`
+      }))
+    };
+    document.getElementById('jsonPreview').value = JSON.stringify(out, null, 2);
+  }
+
+  async function downloadImagesZip() {
     const zip = new JSZip();
-    const folder = zip.folder("characters");
-    let count = 0;
+    const folder = animeData.title.romaji.replace(/\s+/g, '_');
+    document.getElementById('status').innerText = "🚀 이미지 직접 다운로드 중...";
+    
+    // 병렬 다운로드
+    await Promise.all(characterItems.map(async (c) => {
+      try {
+        const imgRes = await fetch(c.imgUrl);
+        const blob = await imgRes.blob();
+        zip.file(`${folder}/${c.engName.replace(/\s+/g, '_')}.jpg`, blob);
+      } catch (err) { console.error(err); }
+    }));
 
-    if (checks.length === 0) return alert("선택된 캐릭터가 없습니다.");
-    status.innerText = "⏳ 이미지 수집 및 압축 중...";
+    const content = await zip.generateAsync({type:"blob"});
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(content);
+    link.download = `${folder}_images.zip`;
+    link.click();
+    document.getElementById('status').innerText = "✅ 다운로드 완료!";
+  }
 
-    for (const check of checks) {
-        const index = check.getAttribute('data-index');
-        const nameEN = characterList[index].character.name;
-        const safeFileName = nameEN.replace(/[<>:"/\\|?*]/g, "").trim();
-        const imgUrl = characterList[index].character.images.jpg.image_url;
-
-        try {
-            const imgRes = await fetch(imgUrl);
-            const blob = await imgRes.blob();
-            folder.file(`${safeFileName}.jpg`, blob);
-            count++;
-        } catch (err) {
-            console.error("다운로드 실패:", nameEN, err);
-        }
-    }
-
-    zip.generateAsync({type:"blob"}).then(function(content) {
-        saveAs(content, `anime_${document.getElementById('animeId').value}_images.zip`);
-        status.innerText = `✅ ${count}개의 이미지 다운로드 완료!`;
-    });
+  function copyJSON() {
+    const t = document.getElementById('jsonPreview'); t.select(); document.execCommand('copy'); alert("JSON 복사됨!");
   }
 </script>
-
 </body>
 </html>
