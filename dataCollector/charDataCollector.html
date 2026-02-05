@@ -2,10 +2,10 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>전체 캐릭터 추출기 (Main & Supporting)</title>
+  <title>캐릭터 추출기 (경로 최적화 버전)</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
   <style>
-    /* 기존 스타일 유지 및 가독성 개선 */
+    /* 기존 스타일 유지 */
     body { font-family: 'Pretendard', sans-serif; padding: 20px; background: #f8f9fa; }
     .header { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 20px; border-top: 5px solid #2563eb; }
     .search-area { position: relative; max-width: 600px; display: flex; gap: 10px; }
@@ -19,26 +19,30 @@
     .char-list { background: white; padding: 20px; border-radius: 12px; height: 750px; overflow-y: auto; border: 1px solid #e2e8f0; }
     .char-card { display: flex; gap: 15px; background: #fff; border: 1px solid #f1f5f9; padding: 15px; border-radius: 10px; margin-bottom: 12px; }
     .char-card img { width: 80px; height: 110px; object-fit: cover; border-radius: 6px; background: #f8f9fa; }
-    .role-badge { display: inline-block; padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: bold; margin-bottom: 5px; }
-    .role-main { background: #fee2e2; color: #ef4444; }
-    .role-supporting { background: #dcfce7; color: #22c55e; }
-
+    
     .edit-fields { flex: 1; display: flex; flex-direction: column; gap: 5px; }
     .edit-fields input { padding: 8px; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 13px; }
     
-    #jsonPreview { width: 100%; height: 600px; background: #0f172a; color: #f1f5f9; padding: 15px; border-radius: 12px; font-family: 'Fira Code', monospace; font-size: 12px; box-sizing: border-box; }
+    #jsonPreview { width: 100%; height: 600px; background: #0f172a; color: #f1f5f9; padding: 15px; border-radius: 12px; font-family: 'Fira Code', monospace; font-size: 12px; box-sizing: border-box; overflow-x: auto; }
     .btn { padding: 12px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; width: 100%; margin-top: 10px; }
     .btn-zip { background: #ea580c; color: white; }
     .btn-copy { background: #16a34a; color: white; }
+    .quarter-select { padding: 8px; border-radius: 6px; border: 2px solid #2563eb; font-weight: bold; }
   </style>
 </head>
 <body>
 
 <div class="header">
-  <h2>👥 캐릭터 추출기 (Main + Supporting)</h2>
+  <h2>👥 캐릭터 추출기 (JSON & 이미지 경로 동기화)</h2>
   <div class="search-area">
     <input type="text" id="searchInput" placeholder="애니메이션 검색..." oninput="searchAnime(this.value)">
     <div id="resultsDropdown" class="results-dropdown"></div>
+    <select id="quarterSelect" class="quarter-select" onchange="updateJSON()">
+      <option value="Q1">Q1</option>
+      <option value="Q2">Q2</option>
+      <option value="Q3">Q3</option>
+      <option value="Q4">Q4</option>
+    </select>
   </div>
   <div style="margin-top: 10px; font-size: 13px; color: #64748b;">
     MAL ID: <input type="number" id="manualId" style="width: 80px;" oninput="updateManualId(this.value)">
@@ -51,7 +55,7 @@
   <div class="side-panel">
     <textarea id="jsonPreview" readonly placeholder="JSON 결과..."></textarea>
     <button class="btn btn-copy" onclick="copyJSON()">JSON 복사</button>
-    <button id="zipBtn" class="btn btn-zip" onclick="downloadImagesZip()" disabled>📦 전체 이미지 다운로드 (.ZIP)</button>
+    <button id="zipBtn" class="btn btn-zip" onclick="downloadImagesZip()" disabled>📦 이미지 다운로드 (.ZIP)</button>
   </div>
 </div>
 
@@ -60,6 +64,13 @@
   let animeData = null;
   let characterItems = [];
   let currentMalId = null;
+
+  // 특수문자 제거 및 공백을 언더바(_)로 치환
+  function sanitize(str) {
+    return str
+      .replace(/[\\/:*?"<>|]/g, '') 
+      .replace(/\s+/g, '_');         
+  }
 
   async function searchAnime(query) {
     if (query.length < 2) { document.getElementById('resultsDropdown').style.display = 'none'; return; }
@@ -77,9 +88,8 @@
 
   async function selectAnime(id) {
     document.getElementById('resultsDropdown').style.display = 'none';
-    document.getElementById('status').innerText = "⏳ 전체 캐릭터 데이터 로드 중...";
+    document.getElementById('status').innerText = "⏳ 데이터 로드 중...";
     
-    // perPage를 50으로 늘려 대다수의 주/조연을 한 번에 가져옴
     const q = `query($id:Int){Media(id:$id){id idMal title{romaji}characters(sort:[ROLE,RELEVANCE],perPage:50){edges{role node{id name{full native}gender image{large}}voiceActors(language:JAPANESE){name{full}}}}}}`;
     const res = await fetch(API_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ query: q, variables: { id } }) });
     const json = await res.json();
@@ -87,22 +97,20 @@
     currentMalId = animeData.idMal || "";
     document.getElementById('manualId').value = currentMalId;
 
-    // BACKGROUND 제외 필터링
     characterItems = animeData.characters.edges
       .filter(edge => edge.role !== "BACKGROUND") 
       .map(edge => ({
-        role: edge.role,
         engName: edge.node.name.full,
         korName: edge.node.name.native || edge.node.name.full,
         gender: edge.node.gender ? edge.node.gender.toLowerCase() : "unknown",
-        vc: edge.voiceActors[0]?.name.full || "Unknown",
+        cv: edge.voiceActors[0]?.name.full || "Unknown",
         imgUrl: edge.node.image.large
       }));
 
     renderChars();
     updateJSON();
     document.getElementById('zipBtn').disabled = false;
-    document.getElementById('status').innerText = `✅ ${characterItems.length}명 로드됨 (Background 제외)`;
+    document.getElementById('status').innerText = `✅ ${characterItems.length}명 로드됨`;
   }
 
   function renderChars() {
@@ -110,14 +118,8 @@
       <div class="char-card">
         <img src="${c.imgUrl}" alt="${c.engName}">
         <div class="edit-fields">
-          <span class="role-badge ${c.role === 'MAIN' ? 'role-main' : 'role-supporting'}">${c.role}</span>
           <input type="text" value="${c.korName}" oninput="updateChar(${i}, 'korName', this.value)" placeholder="한글 이름">
-          <input type="text" value="${c.vc}" oninput="updateChar(${i}, 'vc', this.value)" placeholder="성우 이름">
-          <select onchange="updateChar(${i}, 'gender', this.value)" style="padding:6px; border-radius:4px; border:1px solid #e2e8f0;">
-            <option value="male" ${c.gender==='male'?'selected':''}>Male</option>
-            <option value="female" ${c.gender==='female'?'selected':''}>Female</option>
-            <option value="unknown" ${c.gender==='unknown'?'selected':''}>Unknown</option>
-          </select>
+          <input type="text" value="${c.cv}" oninput="updateChar(${i}, 'cv', this.value)" placeholder="성우 이름">
         </div>
       </div>`).join('');
   }
@@ -126,15 +128,19 @@
   function updateManualId(val) { currentMalId = val; updateJSON(); }
 
   function updateJSON() {
+    if (!animeData) return;
+    const quarter = document.getElementById('quarterSelect').value;
+    const animeFolder = sanitize(animeData.title.romaji);
+
     const out = {
       id: parseInt(currentMalId) || currentMalId,
       title: animeData.title.romaji,
       characters: characterItems.map(c => ({
         name: c.korName,
-        role: c.role,
         gender: c.gender,
-        vc: c.vc,
-        img: `../image/charimg/${animeData.title.romaji.replace(/\s+/g, '_')}/${c.engName.replace(/\s+/g, '_')}.jpg`
+        cv: c.cv,
+        // JSON 경로에는 사용자 요구사항대로 ../image/charimg/분기/제목/이름.jpg 유지
+        img: `../image/charimg/${quarter}/${animeFolder}/${sanitize(c.engName)}.jpg`
       }))
     };
     document.getElementById('jsonPreview').value = JSON.stringify(out, null, 2);
@@ -142,22 +148,22 @@
 
   async function downloadImagesZip() {
     const zip = new JSZip();
-    const folder = animeData.title.romaji.replace(/\s+/g, '_');
-    document.getElementById('status').innerText = "🚀 이미지 직접 다운로드 중...";
+    const animeFolder = sanitize(animeData.title.romaji);
+    document.getElementById('status').innerText = "🚀 이미지 압축 중...";
     
-    // 병렬 다운로드
     await Promise.all(characterItems.map(async (c) => {
       try {
         const imgRes = await fetch(c.imgUrl);
         const blob = await imgRes.blob();
-        zip.file(`${folder}/${c.engName.replace(/\s+/g, '_')}.jpg`, blob);
+        // ZIP 내부 구조: "애니메이션제목_폴더/캐릭터이름.jpg" (상위 분기 폴더 미포함)
+        zip.file(`${animeFolder}/${sanitize(c.engName)}.jpg`, blob);
       } catch (err) { console.error(err); }
     }));
 
     const content = await zip.generateAsync({type:"blob"});
     const link = document.createElement('a');
     link.href = URL.createObjectURL(content);
-    link.download = `${folder}_images.zip`;
+    link.download = `${animeFolder}_images.zip`;
     link.click();
     document.getElementById('status').innerText = "✅ 다운로드 완료!";
   }

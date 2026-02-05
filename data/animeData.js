@@ -1300,6 +1300,25 @@ const AnimeByQuarter = {
   }
 },
 {
+  "id": 58573,
+  "title": "Baki-dou",
+  "thumbnail": "image/animeimg/Q1/바키도.webp",
+  "day": "Web",
+  "episodes": 13,
+  "studio": "TMS Entertainment",
+  "staff": {
+    "director": [
+      "Hirano, Toshiki"
+    ],
+    "character_design": [
+      "Ishikawa, Shingo"
+    ],
+    "adaptor": [
+      "Urahata, Tatsuhiko"
+    ]
+  }
+},
+{
   "id": 61469,
   "title": "스틸 볼 런: 죠죠의 기묘한 모험",
   "thumbnail": "image/animeimg/Q1/스틸 볼 런.webp",

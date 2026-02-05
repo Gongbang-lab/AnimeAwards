@@ -1,145 +1,166 @@
-/* Step 1: 캐릭터 선택 그리드 (아코디언 내부) */
-.char-pick-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-  gap: 12px;
-  padding: 15px;
-  background: #111;
-}
-
-.char-pick-item {
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-
-.char-pick-item img {
-  width: 100%;
-  aspect-ratio: 1 / 1; /* 정사각형 썸네일 */
-  border-radius: 50%; /* 캐릭터는 원형으로 선택하면 예쁩니다 */
-  border: 2px solid #222;
-  object-fit: cover;
-}
-
-.char-pick-item.selected img { border-color: gold; }
-.char-pick-item span { font-size: 11px; color: #ccc; display: block; margin-top: 4px; }
-
-/* Step 1: 프리뷰 칩 (한 줄에 여러 개) */
-.preview-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  padding: 10px;
-}
-
-.preview-chip {
-  background: #222;
-  border: 1px solid gold;
-  color: gold;
-  padding: 5px 12px;
-  border-radius: 20px;
-  font-size: 12px;
-  cursor: pointer;
-}
-
-/* Step 2: 세로형 카드 */
-.char-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 20px;
-}
-
-.char-card-vertical {
-  background: #111;
-  border: 1px solid #222;
-  border-radius: 12px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.char-card-vertical.selected { border-color: gold; transform: translateY(-5px); }
-
-.char-card-vertical .card-thumb {
-  width: 100%;
-  aspect-ratio: 2 / 3; /* 세로형 비율 */
-}
-
-.char-card-vertical .card-thumb img { width: 100%; height: 100%; object-fit: cover; }
-
-.char-card-vertical .card-body {
-  padding: 15px;
-  text-align: center;
-}
-
-.anime-label { font-size: 11px; color: #888; margin-bottom: 5px; }
-.char-name { font-size: 18px; font-weight: 800; color: #fff; }
-.char-cv { font-size: 13px; color: gold; margin-top: 5px; }
-
-/* 캐릭터 전용 팝업 이미지 최적화 */
-.popup-card .popup-thumb {
-  width: 100%;
-  max-width: 400px; /* 세로형 캐릭터 사진이 너무 거대해지지 않게 제한 */
-  margin: 0 auto;
-}
-
-.popup-card .popup-thumb img {
-  aspect-ratio: 2 / 3; /* 세로형 황금비율 */
-  object-fit: cover;
-  border: 2px solid gold;
-}
-
-/* 버튼들을 감싸는 컨테이너 */
-.step-buttons {
-  display: flex;
-  gap: 10px;           /* 버튼 사이 간격 */
-  margin-bottom: 20px;
-  width: 100%;         /* 부모 너비에 맞춤 */
-}
-
-/* 모든 단계의 버튼 공통 스타일 */
-.step-btn {
-  flex: 1;             /* ⭐ 핵심: 두 버튼이 동일한 비율(1:1)을 갖게 함 */
-  height: 50px;        /* 높이 고정 */
-  border-radius: 12px;
-  font-size: 15px;
-  font-weight: 700;
-  cursor: pointer;
-  border: none;
-  transition: all 0.2s ease;
-  
-  /* 텍스트가 길어져도 버튼 크기가 변하지 않도록 설정 */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap; /* 텍스트 줄바꿈 방지 */
-}
-
-/* '메인으로', '뒤로가기' (보조 버튼) */
-.step-btn.secondary {
-  background-color: #333;
-  color: #ccc;
-}
-
-.step-btn.secondary:hover {
-  background-color: #444;
+/* ──────────────────────────────────────────────────────────
+   기본 레이아웃 및 배경 (기존 유지)
+   ────────────────────────────────────────────────────────── */
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #000;
   color: #fff;
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
 }
 
-/* '다음 단계', '수상 결정' (주요 버튼) */
-.step-btn.primary {
-  background: linear-gradient(135deg, #f5d020, #f5a623); /* 금색 그라데이션 */
-  color: #000;
+.nominate-page {
+  display: flex;
+  gap: 24px;
+  height: calc(100vh - 80px);
+  padding: 0 24px;
+  box-sizing: border-box;
 }
 
-.step-btn.primary:disabled {
-  background: #222;    /* 비활성화 시 어둡게 */
-  color: #555;
-  cursor: not-allowed;
-  filter: grayscale(1);
+.nominate-left { flex: 7; overflow-y: auto; padding-right: 12px; }
+.nominate-right { flex: 3; display: flex; flex-direction: column; height: 100%; min-height: 0; }
+
+/* ──────────────────────────────────────────────────────────
+   STEP 1: 4단계 아코디언 (기준 코드 기반 확장)
+   ────────────────────────────────────────────────────────── */
+
+/* 1단계: 분기 */
+.quarter-section { margin-bottom: 14px; }
+.quarter-btn {
+  width: 100%; padding: 16px; border-radius: 12px; background: #111;
+  border: 1px solid #222; color: #fff; font-size: 16px; font-weight: 800;
+  cursor: pointer; text-align: left; display: flex; justify-content: space-between;
+  transition: all 0.2s ease;
+}
+.quarter-btn.active { border-color: gold; color: gold; }
+.quarter-content { padding: 10px 0 0 14px; display: none; }
+.quarter-content.active { display: block; }
+
+/* 2단계: 요일 */
+.day-btn {
+  width: 100%; padding: 12px 14px; margin-top: 8px; border-radius: 10px;
+  background: #1a1a1a; border: 1px solid #222; color: #ccc; font-weight: 600;
+  cursor: pointer; text-align: left; transition: all 0.2s ease;
+}
+.day-btn.active { color: gold; border-color: gold; }
+
+/* 3단계: 애니메이션 제목 (추가된 계층) */
+.anime-btn {
+  width: calc(100% - 14px); margin-left: 14px; padding: 10px 14px; margin-top: 6px;
+  border-radius: 8px; background: #0a0a0a; border: 1px solid #222; color: #eee;
+  font-size: 14px; font-weight: 500; cursor: pointer; text-align: left;
+}
+.anime-btn.active { border-color: gold; color: gold; }
+
+/* 4단계: 캐릭터 그리드 */
+.char-button-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 12px;
+  padding: 16px 16px 16px 28px; /* 위계에 따른 들여쓰기 */
+  background: #050505;
 }
 
-.step-btn.primary:not(:disabled):hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(245, 208, 32, 0.4);
+/* 캐릭터 개별 버튼 */
+.char-button {
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  padding: 10px; background: #111; border: 1px solid #222; border-radius: 12px; cursor: pointer;
 }
+.char-button img { width: 60px; height: 60px; object-fit: cover; border-radius: 50%; border: 2px solid #333; }
+.char-button.selected { border-color: gold; background: #1a1a1a; }
+.char-button.selected img { border-color: gold; }
+.char-name { font-size: 12px; color: #fff; text-align: center; }
+
+/* ──────────────────────────────────────────────────────────
+   우측 프리뷰 & 버튼 (요청 사항 반영 수정)
+   ────────────────────────────────────────────────────────── */
+
+/* 버튼 컨테이너 (너비 문제 해결) */
+.step-buttons {
+  display: flex; gap: 12px; margin-bottom: 16px; width: 100%;
+}
+
+.step-btn {
+  flex: 1; padding: 14px 0; border-radius: 12px; font-weight: 700;
+  cursor: pointer; border: none; transition: all 0.2s ease;
+}
+.step-btn.primary { background: gold; color: #000; }
+.step-btn.secondary { background: #222; color: #fff; }
+
+/* 프리뷰 박스 (X표시 제거 및 텍스트 클릭 삭제) */
+.step1-preview {
+  height: 400px; background-color: #111; border-radius: 16px;
+  display: flex; flex-direction: column; overflow: hidden; border: 1px solid #222;
+}
+
+.preview-title {
+  padding: 16px; font-size: 15px; font-weight: 700; text-align: center;
+  border-bottom: 1px solid #222; color: gold;
+}
+.preview-list {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* 애니메이션별 그룹 박스 */
+.preview-group {
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid #333;
+}
+
+/* 그룹 내 애니메이션 제목 */
+.preview-group-title {
+  font-size: 12px;
+  color: gold;
+  font-weight: 800;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #222;
+  padding-bottom: 4px;
+}
+
+/* 캐릭터들이 가로로 나열되는 영역 */
+.preview-char-wrapper {
+  display: flex;
+  flex-wrap: wrap; /* 영역 넘치면 다음 줄로 */
+  gap: 8px;
+}
+
+/* 개별 캐릭터 이름 칩(Chip) 스타일 */
+.preview-item {
+  background: #222;
+  color: #eee;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+  border: 1px solid #444;
+  transition: all 0.2s ease;
+  white-space: nowrap; /* 이름 줄바꿈 방지 */
+}
+
+.preview-item:hover {
+  background: rgba(255, 71, 87, 0.2);
+  border-color: #ff4757;
+  color: #ff4757;
+  text-decoration: line-through;
+}
+/* ──────────────────────────────────────────────────────────
+   STEP 2: 카드 그리드 & 팝업 (기존 유지)
+   ────────────────────────────────────────────────────────── */
+.step2-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 20px; padding: 20px 0; }
+.step2-card { background: #111; border-radius: 12px; overflow: hidden; border: 2px solid #222; cursor: pointer; }
+.step2-card.selected { border-color: gold; }
+.card-thumb { width: 100%; aspect-ratio: 1/1; }
+.card-thumb img { width: 100%; height: 100%; object-fit: cover; }
+.card-info { padding: 12px; text-align: center; }
+.card-title { font-weight: bold; font-size: 14px; color: #fff; }
+
+/* 팝업 관련 (기존 주신 애니메이션 및 스타일 유지) */
+.winner-popup { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.95); display: none; align-items: center; justify-content: center; z-index: 10000; backdrop-filter: blur(8px); }
+.winner-popup.active { display: flex; }
+.popup-card { background: #111; border: 2px solid gold; border-radius: 24px; padding: 30px; width: 90%; max-width: 700px; text-align: center; }
+.step-title, .step2-title, #left-area h2 { font-size: 22px; font-weight: 800; color: #fff; margin-bottom: 24px; padding-left: 12px; border-left: 4px solid gold; line-height: 1.2; }
