@@ -6,22 +6,22 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "세로",
-        "animeTitle": "Goumon Baito-kun no Nichijou",
+        "animeTitle": "고문 아르바이트의 일상",
         "img": "../image/charimg/Q1/Goumon_Baito-kun_no_Nichijou/Cero.jpg"
       },
       {
         "charName": "베네팀 레오풀",
-        "animeTitle": "Yuusha Kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku",
+        "animeTitle": "용사형에 처함",
         "img": "../image/charimg/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Venetim_Leopool.jpg"
       },
       {
         "charName": "시온",
-        "animeTitle": "DARK MOON: Kuro no Tsuki - Tsuki no Saidan",
+        "animeTitle": "DARK MOON: 달의 제단",
         "img": "../image/charimg/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Shion.jpg"
       },
       {
         "charName": "이르시아",
-        "animeTitle": "Tensei Shitara Dragon no Tamago Datta",
+        "animeTitle": "전생했더니 드래곤의 알이었다 ~최강이 아니면 목표로 하지 않아~",
         "img": "../image/charimg/Q1/Tensei_Shitara_Dragon_no_Tamago_Datta/Irushia.jpg"
       }
     ]
@@ -33,7 +33,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "시우",
-        "animeTitle": "Goumon Baito-kun no Nichijou",
+        "animeTitle": "고문 아르바이트의 일상",
         "img": "../image/charimg/Q1/Goumon_Baito-kun_no_Nichijou/Shiu.jpg"
       }
     ]
@@ -45,7 +45,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "미케",
-        "animeTitle": "Goumon Baito-kun no Nichijou",
+        "animeTitle": "고문 아르바이트의 일상",
         "img": "../image/charimg/Q1/Goumon_Baito-kun_no_Nichijou/Mikke.jpg"
       }
     ]
@@ -57,32 +57,32 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "휴",
-        "animeTitle": "Goumon Baito-kun no Nichijou",
+        "animeTitle": "고문 아르바이트의 일상",
         "img": "../image/charimg/Q1/Goumon_Baito-kun_no_Nichijou/Hugh.jpg"
       },
       {
         "charName": "자이로 폴바츠",
-        "animeTitle": "Yuusha Kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku",
+        "animeTitle": "용사형에 처함",
         "img": "../image/charimg/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Xylo_Forbartz.jpg"
       },
       {
         "charName": "토노메 아키라",
-        "animeTitle": "Toumei Otoko to Ningen Onna: Sonouchi Fuufu ni Naru Futari",
+        "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
         "img": "../image/charimg/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Akira_Tounome.jpg"
       },
       {
         "charName": "랜돌프 얼스터",
-        "animeTitle": "Eris no Seihai",
+        "animeTitle": "에리스의 성배",
         "img": "../image/charimg/Q1/Eris_no_Seihai/Randolph_Ulster.jpg"
       },
       {
         "charName": "조프리 오브라이언",
-        "animeTitle": "Prism Rondo",
+        "animeTitle": "프리즘 윤무곡",
         "img": "../image/charimg/Q1/Prism_Rondo/Joffrey_O'Brien.jpg"
       },
       {
         "charName": "자이로 체펠리",
-        "animeTitle": "JoJo no Kimyou na Bouken Steel Ball Run",
+        "animeTitle": "스틸 볼 런: 죠죠의 기묘한 모험",
         "img": "../image/charimg/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Gyro_Zeppeli.jpg"
       }
     ]
@@ -94,17 +94,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "폰",
-        "animeTitle": "Goumon Baito-kun no Nichijou",
+        "animeTitle": "고문 아르바이트의 일상",
         "img": "../image/charimg/Q1/Goumon_Baito-kun_no_Nichijou/Fon.jpg"
       },
       {
         "charName": "리샤트",
-        "animeTitle": "29-sai Dokushin Chuuken Boukensha no Nichijou",
+        "animeTitle": "29세 독신 중견 모험가의 일상",
         "img": "../image/charimg/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Richat.jpg"
       },
       {
         "charName": "카르마",
-        "animeTitle": "Toumei Otoko to Ningen Onna: Sonouchi Fuufu ni Naru Futari",
+        "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
         "img": "../image/charimg/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Karma.jpg"
       }
     ]
@@ -116,7 +116,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "네로",
-        "animeTitle": "Goumon Baito-kun no Nichijou",
+        "animeTitle": "고문 아르바이트의 일상",
         "img": "../image/charimg/Q1/Goumon_Baito-kun_no_Nichijou/Nero.jpg"
       }
     ]
@@ -128,12 +128,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "헤라",
-        "animeTitle": "Goumon Baito-kun no Nichijou",
+        "animeTitle": "고문 아르바이트의 일상",
         "img": "../image/charimg/Q1/Goumon_Baito-kun_no_Nichijou/Hela.jpg"
       },
       {
         "charName": "비어벨",
-        "animeTitle": "Sousou no Frieren 2nd Season",
+        "animeTitle": "장송의 프리렌 2기",
         "img": "../image/charimg/Q1/Sousou_no_Frieren_2nd_Season/Wirbel.jpg"
       }
     ]
@@ -145,22 +145,22 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "노에",
-        "animeTitle": "Goumon Baito-kun no Nichijou",
+        "animeTitle": "고문 아르바이트의 일상",
         "img": "../image/charimg/Q1/Goumon_Baito-kun_no_Nichijou/Noe.jpg"
       },
       {
         "charName": "야마부키 아리스",
-        "animeTitle": "Mayonaka Heart Tune",
+        "animeTitle": "한밤중 하트튠",
         "img": "../image/charimg/Q1/Mayonaka_Heart_Tune/Arisu_Yamabuki.jpg"
       },
       {
         "charName": "베룬트",
-        "animeTitle": "Arne no Jikenbo",
+        "animeTitle": "아르네의 사건부",
         "img": "../image/charimg/Q1/Arne_no_Jikenbo/Bernd.jpg"
       },
       {
         "charName": "사쿠라이",
-        "animeTitle": "Ikoku Nikki",
+        "animeTitle": "위국일기",
         "img": "../image/charimg/Q1/Ikoku_Nikki/Sakurai.jpg"
       }
     ]
@@ -172,7 +172,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "레우",
-        "animeTitle": "Goumon Baito-kun no Nichijou",
+        "animeTitle": "고문 아르바이트의 일상",
         "img": "../image/charimg/Q1/Goumon_Baito-kun_no_Nichijou/Reu.jpg"
       }
     ]
@@ -184,7 +184,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "벨타",
-        "animeTitle": "Goumon Baito-kun no Nichijou",
+        "animeTitle": "고문 아르바이트의 일상",
         "img": "../image/charimg/Q1/Goumon_Baito-kun_no_Nichijou/Berta.jpg"
       }
     ]
@@ -196,17 +196,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "하이마와리 코이치",
-        "animeTitle": "Vigilante: Boku no Hero Academia ILLEGALS 2nd Season",
+        "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
         "img": "../image/charimg/Q1/Vigilante__Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Kouichi_Haimawari.jpg"
       },
       {
         "charName": "이시모치 큐쇼",
-        "animeTitle": "Kirei ni Shitemoraemasu ka",
+        "animeTitle": "깨끗하게 해주시겠어요?",
         "img": "../image/charimg/Q1/Kirei_ni_Shitemoraemasu_ka/Kyuushou_Ishimochi.jpg"
       },
       {
         "charName": "토리고에 신노스케",
-        "animeTitle": "Hikuidori",
+        "animeTitle": "화식조 우슈보로토비구미",
         "img": "../image/charimg/Q1/Hikuidori/Shinnosuke_Torigoe.jpg"
       }
     ]
@@ -218,12 +218,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "하네야마 카즈호",
-        "animeTitle": "Vigilante: Boku no Hero Academia ILLEGALS 2nd Season",
+        "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
         "img": "../image/charimg/Q1/Vigilante__Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Kazuho_Haneyama.jpg"
       },
       {
         "charName": "우루 치에",
-        "animeTitle": "High School! Kimengumi (2026)",
+        "animeTitle": "하이스쿨! 기면조",
         "img": "../image/charimg/Q1/High_School!_Kimengumi_(2026)/Chie_Uru.jpg"
       }
     ]
@@ -235,7 +235,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "너클 더스터",
-        "animeTitle": "Vigilante: Boku no Hero Academia ILLEGALS 2nd Season",
+        "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
         "img": "../image/charimg/Q1/Vigilante__Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Oguro_Iwao.jpg"
       }
     ]
@@ -247,47 +247,47 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "이레이저 헤드",
-        "animeTitle": "Vigilante: Boku no Hero Academia ILLEGALS 2nd Season",
+        "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
         "img": "../image/charimg/Q1/Vigilante__Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Shouta_Aizawa.jpg"
       },
       {
         "charName": "료멘스쿠나",
-        "animeTitle": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "animeTitle": "주술회전 3기",
         "img": "../image/charimg/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Sukuna.jpg"
       },
       {
         "charName": "키스",
-        "animeTitle": "Akuyaku Reijou wa Ringoku no Outaishi ni Dekiai Sareru",
+        "animeTitle": "악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다",
         "img": "../image/charimg/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Keith.jpg"
       },
       {
         "charName": "카사마치 신고",
-        "animeTitle": "Ikoku Nikki",
+        "animeTitle": "위국일기",
         "img": "../image/charimg/Q1/Ikoku_Nikki/Shingo_Kasamachi.jpg"
       },
       {
         "charName": "아카바 카이토",
-        "animeTitle": "MF Ghost 3rd Season",
+        "animeTitle": "MF고스트 3rd Season",
         "img": "../image/charimg/Q1/MF_Ghost_3rd_Season/Kaito_Akabane.jpg"
       },
       {
         "charName": "주화",
-        "animeTitle": "Jigokuraku 2nd Season",
+        "animeTitle": "지옥락 2기",
         "img": "../image/charimg/Q1/Jigokuraku_2nd_Season/Ju_Fa.jpg"
       },
       {
         "charName": "주진",
-        "animeTitle": "Jigokuraku 2nd Season",
+        "animeTitle": "지옥락 2기",
         "img": "../image/charimg/Q1/Jigokuraku_2nd_Season/Zhu_Jin.jpg"
       },
       {
         "charName": "구이화",
-        "animeTitle": "Jigokuraku 2nd Season",
+        "animeTitle": "지옥락 2기",
         "img": "../image/charimg/Q1/Jigokuraku_2nd_Season/Gui_Fa.jpg"
       },
       {
         "charName": "리처드 처치",
-        "animeTitle": "Prism Rondo",
+        "animeTitle": "프리즘 윤무곡",
         "img": "../image/charimg/Q1/Prism_Rondo/Richard_Church.jpg"
       }
     ]
@@ -299,7 +299,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "프레젠트 마이크",
-        "animeTitle": "Vigilante: Boku no Hero Academia ILLEGALS 2nd Season",
+        "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
         "img": "../image/charimg/Q1/Vigilante__Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Hizashi_Yamada.jpg"
       }
     ]
@@ -311,7 +311,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "미드나이트",
-        "animeTitle": "Vigilante: Boku no Hero Academia ILLEGALS 2nd Season",
+        "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
         "img": "../image/charimg/Q1/Vigilante__Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Nemuri_Kayama.jpg"
       }
     ]
@@ -323,17 +323,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "시라쿠모 오보로",
-        "animeTitle": "Vigilante: Boku no Hero Academia ILLEGALS 2nd Season",
+        "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
         "img": "../image/charimg/Q1/Vigilante__Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Oboro_Shirakumo.jpg"
       },
       {
         "charName": "카지 세이쥬로",
-        "animeTitle": "Hikuidori",
+        "animeTitle": "화식조 우슈보로토비구미",
         "img": "../image/charimg/Q1/Hikuidori/Seijurou_Kaji.jpg"
       },
       {
         "charName": "토우마",
-        "animeTitle": "Jigokuraku 2nd Season",
+        "animeTitle": "지옥락 2기",
         "img": "../image/charimg/Q1/Jigokuraku_2nd_Season/Touma.jpg"
       }
     ]
@@ -345,17 +345,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "캡틴 셀러브리티",
-        "animeTitle": "Vigilante: Boku no Hero Academia ILLEGALS 2nd Season",
+        "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
         "img": "../image/charimg/Q1/Vigilante__Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Christopher_Skyline.jpg"
       },
       {
         "charName": "길버트 슈타인",
-        "animeTitle": "Darwin Jihen",
+        "animeTitle": "다윈 사변",
         "img": "../image/charimg/Q1/Darwin_Jihen/Gilbert_Stein.jpg"
       },
       {
         "charName": "사토 시즈오",
-        "animeTitle": "Kaya-chan wa Kowakunai",
+        "animeTitle": "카야는 무섭지 않아",
         "img": "../image/charimg/Q1/Kaya-chan_wa_Kowakunai/Shizuo_Satou.jpg"
       }
     ]
@@ -367,12 +367,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "츠카우치 나오마사",
-        "animeTitle": "Vigilante: Boku no Hero Academia ILLEGALS 2nd Season",
+        "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
         "img": "../image/charimg/Q1/Vigilante__Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Naomasa_Tsukauchi.jpg"
       },
       {
         "charName": "라지트",
-        "animeTitle": "Yuusha Kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku",
+        "animeTitle": "용사형에 처함",
         "img": "../image/charimg/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Rajit_Heathrow.jpg"
       }
     ]
@@ -384,12 +384,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "츠카우치 마코토",
-        "animeTitle": "Vigilante: Boku no Hero Academia ILLEGALS 2nd Season",
+        "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
         "img": "../image/charimg/Q1/Vigilante__Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Makoto_Tsukauchi.jpg"
       },
       {
         "charName": "시라누이 프릴",
-        "animeTitle": "[Oshi no Ko] 3rd Season",
+        "animeTitle": "【최애의 아이】 3기",
         "img": "../image/charimg/Q1/[Oshi_no_Ko]_3rd_Season/Frill_Shiranui.jpg"
       }
     ]
@@ -401,17 +401,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "팻껌",
-        "animeTitle": "Vigilante: Boku no Hero Academia ILLEGALS 2nd Season",
+        "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
         "img": "../image/charimg/Q1/Vigilante__Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Taishirou_Toyomitsu.jpg"
       },
       {
         "charName": "오르지프 로다",
-        "animeTitle": "Isekai no Sata wa Shachiku Shidai",
+        "animeTitle": "이세계 사정은 사축 하기 나름",
         "img": "../image/charimg/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Orjef_Rhoda.jpg"
       },
       {
         "charName": "카림 플램",
-        "animeTitle": "Enen no Shouboutai San no Shou Part 2",
+        "animeTitle": "불꽃 소방대 3장",
         "img": "../image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Karim_Flam.jpg"
       }
     ]
@@ -423,7 +423,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "엣지 쇼트",
-        "animeTitle": "Vigilante: Boku no Hero Academia ILLEGALS 2nd Season",
+        "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
         "img": "../image/charimg/Q1/Vigilante__Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Shinya_Kamihara.jpg"
       }
     ]
@@ -435,12 +435,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "베스트 지니스트",
-        "animeTitle": "Vigilante: Boku no Hero Academia ILLEGALS 2nd Season",
+        "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
         "img": "../image/charimg/Q1/Vigilante__Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Tsunagu_Hakamada.jpg"
       },
       {
         "charName": "크레일",
-        "animeTitle": "Akuyaku Reijou wa Ringoku no Outaishi ni Dekiai Sareru",
+        "animeTitle": "악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다",
         "img": "../image/charimg/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Crail.jpg"
       }
     ]
@@ -452,7 +452,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "카니야시키 모니카",
-        "animeTitle": "Vigilante: Boku no Hero Academia ILLEGALS 2nd Season",
+        "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
         "img": "../image/charimg/Q1/Vigilante__Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Monika_Kaniyashiki.jpg"
       }
     ]
@@ -464,22 +464,22 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "Number 6",
-        "animeTitle": "Vigilante: Boku no Hero Academia ILLEGALS 2nd Season",
+        "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
         "img": "../image/charimg/Q1/Vigilante__Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Number_6.jpg"
       },
       {
         "charName": "발칸 조제프",
-        "animeTitle": "Enen no Shouboutai San no Shou Part 2",
+        "animeTitle": "불꽃 소방대 3장",
         "img": "../image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Vulcan_Joseph.jpg"
       },
       {
         "charName": "사노 이즈미",
-        "animeTitle": "Hanazakari no Kimitachi e",
+        "animeTitle": "아름다운 그대에게",
         "img": "../image/charimg/Q1/Hanazakari_no_Kimitachi_e/Izumi_Sano.jpg"
       },
       {
         "charName": "모로보시 세나",
-        "animeTitle": "MF Ghost 3rd Season",
+        "animeTitle": "MF고스트 3rd Season",
         "img": "../image/charimg/Q1/MF_Ghost_3rd_Season/Sena_Moroboshi.jpg"
       }
     ]
@@ -491,17 +491,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "올마이트",
-        "animeTitle": "Vigilante: Boku no Hero Academia ILLEGALS 2nd Season",
+        "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
         "img": "../image/charimg/Q1/Vigilante__Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Toshinori_Yagi.jpg"
       },
       {
         "charName": "에밀 한니넨",
-        "animeTitle": "MF Ghost 3rd Season",
+        "animeTitle": "MF고스트 3rd Season",
         "img": "../image/charimg/Q1/MF_Ghost_3rd_Season/Emile_Hänninen.jpg"
       },
       {
         "charName": "스티븐 스틸",
-        "animeTitle": "JoJo no Kimyou na Bouken Steel Ball Run",
+        "animeTitle": "스틸 볼 런: 죠죠의 기묘한 모험",
         "img": "../image/charimg/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Steven_Steel.jpg"
       }
     ]
@@ -513,7 +513,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "홋타 이치로",
-        "animeTitle": "Vigilante: Boku no Hero Academia ILLEGALS 2nd Season",
+        "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
         "img": "../image/charimg/Q1/Vigilante__Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Ichiro_Hotta.jpg"
       }
     ]
@@ -525,12 +525,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "타누마 에이조",
-        "animeTitle": "Vigilante: Boku no Hero Academia ILLEGALS 2nd Season",
+        "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
         "img": "../image/charimg/Q1/Vigilante__Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Eizou_Tanuma.jpg"
       },
       {
         "charName": "사이토 이치고",
-        "animeTitle": "[Oshi no Ko] 3rd Season",
+        "animeTitle": "【최애의 아이】 3기",
         "img": "../image/charimg/Q1/[Oshi_no_Ko]_3rd_Season/Ichigo_Saitou.jpg"
       }
     ]
@@ -542,7 +542,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "타카가와 산사",
-        "animeTitle": "Vigilante: Boku no Hero Academia ILLEGALS 2nd Season",
+        "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
         "img": "../image/charimg/Q1/Vigilante__Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Sansa_Tamakawa.jpg"
       }
     ]
@@ -554,7 +554,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "홋타 지로",
-        "animeTitle": "Vigilante: Boku no Hero Academia ILLEGALS 2nd Season",
+        "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
         "img": "../image/charimg/Q1/Vigilante__Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Jiro_Hotta.jpg"
       }
     ]
@@ -566,7 +566,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "하이마와리 쇼코",
-        "animeTitle": "Vigilante: Boku no Hero Academia ILLEGALS 2nd Season",
+        "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
         "img": "../image/charimg/Q1/Vigilante__Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Shouko_Haimawari.jpg"
       }
     ]
@@ -578,7 +578,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "미우",
-        "animeTitle": "Vigilante: Boku no Hero Academia ILLEGALS 2nd Season",
+        "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
         "img": "../image/charimg/Q1/Vigilante__Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Miu.jpg"
       }
     ]
@@ -590,7 +590,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "카마치 키리히토",
-        "animeTitle": "Vigilante: Boku no Hero Academia ILLEGALS 2nd Season",
+        "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
         "img": "../image/charimg/Q1/Vigilante__Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Kirihito_Kamachi.jpg"
       }
     ]
@@ -602,27 +602,27 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "유우",
-        "animeTitle": "Vigilante: Boku no Hero Academia ILLEGALS 2nd Season",
+        "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
         "img": "../image/charimg/Q1/Vigilante__Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Yuu.jpg"
       },
       {
         "charName": "킨메 와카나",
-        "animeTitle": "Kirei ni Shitemoraemasu ka",
+        "animeTitle": "깨끗하게 해주시겠어요?",
         "img": "../image/charimg/Q1/Kirei_ni_Shitemoraemasu_ka/Wakana_Kinme.jpg"
       },
       {
         "charName": "키리노 이코",
-        "animeTitle": "Mayonaka Heart Tune",
+        "animeTitle": "한밤중 하트튠",
         "img": "../image/charimg/Q1/Mayonaka_Heart_Tune/Iko_Kirino.jpg"
       },
       {
         "charName": "리루이",
-        "animeTitle": "29-sai Dokushin Chuuken Boukensha no Nichijou",
+        "animeTitle": "29세 독신 중견 모험가의 일상",
         "img": "../image/charimg/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Rirui.jpg"
       },
       {
         "charName": "스칼렛 카스티엘",
-        "animeTitle": "Eris no Seihai",
+        "animeTitle": "에리스의 성배",
         "img": "../image/charimg/Q1/Eris_no_Seihai/Scarlet_Castiel.jpg"
       }
     ]
@@ -634,42 +634,42 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "とっとこシスターズ",
-        "animeTitle": "Vigilante: Boku no Hero Academia ILLEGALS 2nd Season",
+        "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
         "img": "../image/charimg/Q1/Vigilante__Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Tottoko_Sisters.jpg"
       },
       {
         "charName": "아리코 리키마츠 일등병",
-        "animeTitle": "Golden Kamuy: Saishuushou",
+        "animeTitle": "골든 카무이 최종장",
         "img": "../image/charimg/Q1/Golden_Kamuy_Saishuushou/Rikimatsu_Ariko.jpg"
       },
       {
         "charName": "다타마",
-        "animeTitle": "Hime-sama, Goumon no Jikan desu 2nd Season",
+        "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
         "img": "../image/charimg/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Datarma.jpg"
       },
       {
         "charName": "메이야",
-        "animeTitle": "[Oshi no Ko] 3rd Season",
+        "animeTitle": "【최애의 아이】 3기",
         "img": "../image/charimg/Q1/[Oshi_no_Ko]_3rd_Season/Meiya.jpg"
       },
       {
         "charName": "바르바라 필리펜코",
-        "animeTitle": "Mato Seihei no Slave 2",
+        "animeTitle": "마도정병의 슬레이브 2기",
         "img": "../image/charimg/Q1/Mato_Seihei_no_Slave_2/Varvara_Pilipenko.jpg"
       },
       {
         "charName": "쿠루스 하나",
-        "animeTitle": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "animeTitle": "주술회전 3기",
         "img": "../image/charimg/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Hana_Kurusu.jpg"
       },
       {
         "charName": "시스터 스미레",
-        "animeTitle": "Enen no Shouboutai San no Shou Part 2",
+        "animeTitle": "불꽃 소방대 3장",
         "img": "../image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Sumire_.jpg"
       },
       {
         "charName": "전도자",
-        "animeTitle": "Enen no Shouboutai San no Shou Part 2",
+        "animeTitle": "불꽃 소방대 3장",
         "img": "../image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Dendou-sha.jpg"
       },
       {
@@ -689,22 +689,22 @@ const CharacterVoiceData = {
       },
       {
         "charName": "칸노 코나미",
-        "animeTitle": "Dead Account",
+        "animeTitle": "데드 어카운트",
         "img": "../image/charimg/Q1/Dead_Account/Konami_Kanno.jpg"
       },
       {
         "charName": "핫 팬츠",
-        "animeTitle": "JoJo no Kimyou na Bouken Steel Ball Run",
+        "animeTitle": "스틸 볼 런: 죠죠의 기묘한 모험",
         "img": "../image/charimg/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Hot_Pants.jpg"
       },
       {
         "charName": "마운틴 팀",
-        "animeTitle": "JoJo no Kimyou na Bouken Steel Ball Run",
+        "animeTitle": "스틸 볼 런: 죠죠의 기묘한 모험",
         "img": "../image/charimg/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Mountain_Tim.jpg"
       },
       {
         "charName": "ドット・ハーン",
-        "animeTitle": "JoJo no Kimyou na Bouken Steel Ball Run",
+        "animeTitle": "스틸 볼 런: 죠죠의 기묘한 모험",
         "img": "../image/charimg/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Dot_Han.jpg"
       }
     ]
@@ -716,12 +716,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "와카스기 쿠리루",
-        "animeTitle": "Kirei ni Shitemoraemasu ka",
+        "animeTitle": "깨끗하게 해주시겠어요?",
         "img": "../image/charimg/Q1/Kirei_ni_Shitemoraemasu_ka/Kuriru_Wakasagi.jpg"
       },
       {
         "charName": "아야츠무기 로카",
-        "animeTitle": "Chou Kaguya-hime!",
+        "animeTitle": "초(超) 가구야 공주!",
         "img": "../image/charimg/Q1/Chou_Kaguya-hime!/Roka_Ayatsumugi.jpg"
       }
     ]
@@ -733,7 +733,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "카타구치 나이로",
-        "animeTitle": "Kirei ni Shitemoraemasu ka",
+        "animeTitle": "깨끗하게 해주시겠어요?",
         "img": "../image/charimg/Q1/Kirei_ni_Shitemoraemasu_ka/Nairo_Katakuchi.jpg"
       }
     ]
@@ -745,12 +745,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "야가라 아사미",
-        "animeTitle": "Kirei ni Shitemoraemasu ka",
+        "animeTitle": "깨끗하게 해주시겠어요?",
         "img": "../image/charimg/Q1/Kirei_ni_Shitemoraemasu_ka/Asami_Yagara.jpg"
       },
       {
         "charName": "유이츠카 노조미",
-        "animeTitle": "Medalist 2nd Season",
+        "animeTitle": "메달리스트 2기",
         "img": "../image/charimg/Q1/Medalist_2nd_Season/Nozomi_Yuitsuka.jpg"
       }
     ]
@@ -762,7 +762,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "와카스기 모루다",
-        "animeTitle": "Kirei ni Shitemoraemasu ka",
+        "animeTitle": "깨끗하게 해주시겠어요?",
         "img": "../image/charimg/Q1/Kirei_ni_Shitemoraemasu_ka/Moruda_Wakasagi.jpg"
       }
     ]
@@ -774,7 +774,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "아지",
-        "animeTitle": "Kirei ni Shitemoraemasu ka",
+        "animeTitle": "깨끗하게 해주시겠어요?",
         "img": "../image/charimg/Q1/Kirei_ni_Shitemoraemasu_ka/Aji.jpg"
       }
     ]
@@ -786,32 +786,32 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "스기모토 사이치",
-        "animeTitle": "Golden Kamuy: Saishuushou",
+        "animeTitle": "골든 카무이 최종장",
         "img": "../image/charimg/Q1/Golden_Kamuy_Saishuushou/Saichi_Sugimoto.jpg"
       },
       {
         "charName": "엑스",
-        "animeTitle": "Hime-sama, Goumon no Jikan desu 2nd Season",
+        "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
         "img": "../image/charimg/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Ex.jpg"
       },
       {
         "charName": "디",
-        "animeTitle": "Okiraku Ryoushu no Tanoshii Ryouchi Bouei",
+        "animeTitle": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
         "img": "../image/charimg/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Dee.jpg"
       },
       {
         "charName": "지엔 오토야",
-        "animeTitle": "Dead Account",
+        "animeTitle": "데드 어카운트",
         "img": "../image/charimg/Q1/Dead_Account/Jien_Otoya.jpg"
       },
       {
         "charName": "시온",
-        "animeTitle": "Jigokuraku 2nd Season",
+        "animeTitle": "지옥락 2기",
         "img": "../image/charimg/Q1/Jigokuraku_2nd_Season/Shion.jpg"
       },
       {
         "charName": "담임선생님",
-        "animeTitle": "Chou Kaguya-hime!",
+        "animeTitle": "초(超) 가구야 공주!",
         "img": "../image/charimg/Q1/Chou_Kaguya-hime!/Tannin_no_Sensei.jpg"
       },
       {
@@ -828,27 +828,27 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "아시리파",
-        "animeTitle": "Golden Kamuy: Saishuushou",
+        "animeTitle": "골든 카무이 최종장",
         "img": "../image/charimg/Q1/Golden_Kamuy_Saishuushou/Asirpa.jpg"
       },
       {
         "charName": "공주",
-        "animeTitle": "Hime-sama, Goumon no Jikan desu 2nd Season",
+        "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
         "img": "../image/charimg/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Hime.jpg"
       },
       {
         "charName": "콧코",
-        "animeTitle": "29-sai Dokushin Chuuken Boukensha no Nichijou",
+        "animeTitle": "29세 독신 중견 모험가의 일상",
         "img": "../image/charimg/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Cocko.jpg"
       },
       {
         "charName": "루나",
-        "animeTitle": "Champignon no Majo",
+        "animeTitle": "샹피뇽의 마녀",
         "img": "../image/charimg/Q1/Champignon_no_Majo/Luna.jpg"
       },
       {
         "charName": "카와 유이",
-        "animeTitle": "High School! Kimengumi (2026)",
+        "animeTitle": "하이스쿨! 기면조",
         "img": "../image/charimg/Q1/High_School!_Kimengumi_(2026)/Yui_Kawa.jpg"
       }
     ]
@@ -860,7 +860,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "시라이시 요시타케",
-        "animeTitle": "Golden Kamuy: Saishuushou",
+        "animeTitle": "골든 카무이 최종장",
         "img": "../image/charimg/Q1/Golden_Kamuy_Saishuushou/Yoshitake_Shiraishi.jpg"
       }
     ]
@@ -872,12 +872,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "나가쿠라 신파치",
-        "animeTitle": "Golden Kamuy: Saishuushou",
+        "animeTitle": "골든 카무이 최종장",
         "img": "../image/charimg/Q1/Golden_Kamuy_Saishuushou/Shinpachi_Nagakura.jpg"
       },
       {
         "charName": "오로치 돗포",
-        "animeTitle": "BAKI-DOU",
+        "animeTitle": "Baki-dou",
         "img": "../image/charimg/Q1/BAKI-DOU/Doppo_Orochi.jpg"
       }
     ]
@@ -889,17 +889,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "니카이도 코헤이",
-        "animeTitle": "Golden Kamuy: Saishuushou",
+        "animeTitle": "골든 카무이 최종장",
         "img": "../image/charimg/Q1/Golden_Kamuy_Saishuushou/Kouhei_Nikaidou.jpg"
       },
       {
         "charName": "펭타",
-        "animeTitle": "Hime-sama, Goumon no Jikan desu 2nd Season",
+        "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
         "img": "../image/charimg/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Penta.jpg"
       },
       {
         "charName": "버틀러 폰 그란벨",
-        "animeTitle": "Hell Mode: Yarikomi Suki no Gamer wa Haisettei no Isekai de Musou Suru",
+        "animeTitle": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~",
         "img": "../image/charimg/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Butler_von_Granvelle.jpg"
       }
     ]
@@ -911,7 +911,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "히지카타 토시조",
-        "animeTitle": "Golden Kamuy: Saishuushou",
+        "animeTitle": "골든 카무이 최종장",
         "img": "../image/charimg/Q1/Golden_Kamuy_Saishuushou/Toshizou_Hijikata.jpg"
       }
     ]
@@ -923,22 +923,22 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "우사미 토키시게",
-        "animeTitle": "Golden Kamuy: Saishuushou",
+        "animeTitle": "골든 카무이 최종장",
         "img": "../image/charimg/Q1/Golden_Kamuy_Saishuushou/Tokishige_Usami.jpg"
       },
       {
         "charName": "타츠야",
-        "animeTitle": "Yuusha Kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku",
+        "animeTitle": "용사형에 처함",
         "img": "../image/charimg/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Tatsuya.jpg"
       },
       {
         "charName": "슛세 키요시",
-        "animeTitle": "High School! Kimengumi (2026)",
+        "animeTitle": "하이스쿨! 기면조",
         "img": "../image/charimg/Q1/High_School!_Kimengumi_(2026)/Kiyoshi_Shusse.jpg"
       },
       {
         "charName": "밧슈 더 스탬피드",
-        "animeTitle": "TRIGUN STARGAZE",
+        "animeTitle": "트라이건 스타게이즈",
         "img": "../image/charimg/Q1/TRIGUN_STARGAZE/Vash_the_Stampede.jpg"
       },
       {
@@ -948,12 +948,12 @@ const CharacterVoiceData = {
       },
       {
         "charName": "텐조 유야",
-        "animeTitle": "Isekai de Cheat Skill wo Te ni Shita Ore wa, Genjitsu Sekai wo mo Musou Suru: Level Up wa Jinsei wo Kaeta",
+        "animeTitle": "이세계에서 치트 스킬을 얻은 나는 현실 세계에서도 무쌍한다 ~레벨업이 인생을 바꿨다~ TVSP",
         "img": "../image/charimg/Q1/Isekai_de_Cheat_Skill_wo_Te_ni_Shita_Ore_wa,_Genjitsu_Sekai_wo_mo_Musou_Suru__Level_Up_wa_Jinsei_wo_Kaeta/Yuuya_Tenjou.jpg"
       },
       {
         "charName": "고마자와 노이",
-        "animeTitle": "Chou Kaguya-hime!",
+        "animeTitle": "초(超) 가구야 공주!",
         "img": "../image/charimg/Q1/Chou_Kaguya-hime!/Noi_Komazawa.jpg"
       }
     ]
@@ -965,32 +965,32 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "바실리 파블리첸코",
-        "animeTitle": "Golden Kamuy: Saishuushou",
+        "animeTitle": "골든 카무이 최종장",
         "img": "../image/charimg/Q1/Golden_Kamuy_Saishuushou/Vasily.jpg"
       },
       {
         "charName": "질",
-        "animeTitle": "Odayaka Kizoku no Kyuuka no Susume",
+        "animeTitle": "온화한 귀족의 휴가의 권장",
         "img": "../image/charimg/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Gil.jpg"
       },
       {
         "charName": "호시카와 토고",
-        "animeTitle": "Douse, Koishite Shimaunda. Season 2",
+        "animeTitle": "어차피, 사랑하고 만다. 2기",
         "img": "../image/charimg/Q1/Douse,_Koishite_Shimaunda._Season_2/Tougo_Hoshikawa.jpg"
       },
       {
         "charName": "난바 미나미",
-        "animeTitle": "Hanazakari no Kimitachi e",
+        "animeTitle": "아름다운 그대에게",
         "img": "../image/charimg/Q1/Hanazakari_no_Kimitachi_e/Minami_Nanba.jpg"
       },
       {
         "charName": "아쿠아스티드 마린포레스트",
-        "animeTitle": "Akuyaku Reijou wa Ringoku no Outaishi ni Dekiai Sareru",
+        "animeTitle": "악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다",
         "img": "../image/charimg/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Aquasteed.jpg"
       },
       {
         "charName": "마츠나가 켄고",
-        "animeTitle": "Hikuidori",
+        "animeTitle": "화식조 우슈보로토비구미",
         "img": "../image/charimg/Q1/Hikuidori/Gengo_Matsunaga.jpg"
       }
     ]
@@ -1002,7 +1002,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "츠루미 토쿠시로",
-        "animeTitle": "Golden Kamuy: Saishuushou",
+        "animeTitle": "골든 카무이 최종장",
         "img": "../image/charimg/Q1/Golden_Kamuy_Saishuushou/Tokushirou_Tsurumi.jpg"
       }
     ]
@@ -1014,7 +1014,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "토니 안지",
-        "animeTitle": "Golden Kamuy: Saishuushou",
+        "animeTitle": "골든 카무이 최종장",
         "img": "../image/charimg/Q1/Golden_Kamuy_Saishuushou/Toni_Anji.jpg"
       }
     ]
@@ -1026,17 +1026,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "오오사와 후사타로",
-        "animeTitle": "Golden Kamuy: Saishuushou",
+        "animeTitle": "골든 카무이 최종장",
         "img": "../image/charimg/Q1/Golden_Kamuy_Saishuushou/Fusatarou_Oosawa.jpg"
       },
       {
         "charName": "판다",
-        "animeTitle": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "animeTitle": "주술회전 3기",
         "img": "../image/charimg/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Panda.jpg"
       },
       {
         "charName": "이치도 레이",
-        "animeTitle": "High School! Kimengumi (2026)",
+        "animeTitle": "하이스쿨! 기면조",
         "img": "../image/charimg/Q1/High_School!_Kimengumi_(2026)/Rei_Ichidou.jpg"
       },
       {
@@ -1046,7 +1046,7 @@ const CharacterVoiceData = {
       },
       {
         "charName": "타카하시 케이스케",
-        "animeTitle": "MF Ghost 3rd Season",
+        "animeTitle": "MF고스트 3rd Season",
         "img": "../image/charimg/Q1/MF_Ghost_3rd_Season/Keisuke_Takahashi.jpg"
       }
     ]
@@ -1058,12 +1058,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "오가타 햐쿠노스케",
-        "animeTitle": "Golden Kamuy: Saishuushou",
+        "animeTitle": "골든 카무이 최종장",
         "img": "../image/charimg/Q1/Golden_Kamuy_Saishuushou/Hyakunosuke_Ogata.jpg"
       },
       {
         "charName": "조커",
-        "animeTitle": "Enen no Shouboutai San no Shou Part 2",
+        "animeTitle": "불꽃 소방대 3장",
         "img": "../image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Joker.jpg"
       }
     ]
@@ -1075,7 +1075,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "우시야마 타츠우마",
-        "animeTitle": "Golden Kamuy: Saishuushou",
+        "animeTitle": "골든 카무이 최종장",
         "img": "../image/charimg/Q1/Golden_Kamuy_Saishuushou/Tatsuma_Ushiyama.jpg"
       }
     ]
@@ -1087,22 +1087,22 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "키라우시",
-        "animeTitle": "Golden Kamuy: Saishuushou",
+        "animeTitle": "골든 카무이 최종장",
         "img": "../image/charimg/Q1/Golden_Kamuy_Saishuushou/Kirawus.jpg"
       },
       {
         "charName": "알레시 인드라크",
-        "animeTitle": "Isekai no Sata wa Shachiku Shidai",
+        "animeTitle": "이세계 사정은 사축 하기 나름",
         "img": "../image/charimg/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Aresh_Indolark.jpg"
       },
       {
         "charName": "사가미야 콘로",
-        "animeTitle": "Enen no Shouboutai San no Shou Part 2",
+        "animeTitle": "불꽃 소방대 3장",
         "img": "../image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Konro_Sagamiya.jpg"
       },
       {
         "charName": "난조 코레키요",
-        "animeTitle": "Dead Account",
+        "animeTitle": "데드 어카운트",
         "img": "../image/charimg/Q1/Dead_Account/Korekiyo_Nanzou.jpg"
       }
     ]
@@ -1114,12 +1114,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "이시카와 다쿠보쿠",
-        "animeTitle": "Golden Kamuy: Saishuushou",
+        "animeTitle": "골든 카무이 최종장",
         "img": "../image/charimg/Q1/Golden_Kamuy_Saishuushou/Takuboku_Ishikawa.jpg"
       },
       {
         "charName": "레이",
-        "animeTitle": "Odayaka Kizoku no Kyuuka no Susume",
+        "animeTitle": "온화한 귀족의 휴가의 권장",
         "img": "../image/charimg/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Ray.jpg"
       }
     ]
@@ -1131,7 +1131,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "츠키시마 하지메",
-        "animeTitle": "Golden Kamuy: Saishuushou",
+        "animeTitle": "골든 카무이 최종장",
         "img": "../image/charimg/Q1/Golden_Kamuy_Saishuushou/Hajime_Tsukishima.jpg"
       }
     ]
@@ -1143,7 +1143,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "우에지 케이지",
-        "animeTitle": "Golden Kamuy: Saishuushou",
+        "animeTitle": "골든 카무이 최종장",
         "img": "../image/charimg/Q1/Golden_Kamuy_Saishuushou/Keiji_Ueji.jpg"
       }
     ]
@@ -1155,7 +1155,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "코이토 오토노신",
-        "animeTitle": "Golden Kamuy: Saishuushou",
+        "animeTitle": "골든 카무이 최종장",
         "img": "../image/charimg/Q1/Golden_Kamuy_Saishuushou/Otonoshin_Koito.jpg"
       },
       {
@@ -1172,7 +1172,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "카도쿠라 토시유키",
-        "animeTitle": "Golden Kamuy: Saishuushou",
+        "animeTitle": "골든 카무이 최종장",
         "img": "../image/charimg/Q1/Golden_Kamuy_Saishuushou/Toshiyuki_Kadokura.jpg"
       }
     ]
@@ -1184,17 +1184,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "토처 토르튜어",
-        "animeTitle": "Hime-sama, Goumon no Jikan desu 2nd Season",
+        "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
         "img": "../image/charimg/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Tortura_Torture.jpg"
       },
       {
         "charName": "베로니카 발리",
-        "animeTitle": "29-sai Dokushin Chuuken Boukensha no Nichijou",
+        "animeTitle": "29세 독신 중견 모험가의 일상",
         "img": "../image/charimg/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Veronica_Valli.jpg"
       },
       {
         "charName": "하쿠시",
-        "animeTitle": "Shibou Yuugi de Meshi wo Kuu",
+        "animeTitle": "사망 유희로 밥을 먹는다.",
         "img": "../image/charimg/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Hakushi.jpg"
       }
     ]
@@ -1206,12 +1206,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "요우키",
-        "animeTitle": "Hime-sama, Goumon no Jikan desu 2nd Season",
+        "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
         "img": "../image/charimg/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Youki.jpg"
       },
       {
         "charName": "사카요리 이로하",
-        "animeTitle": "Chou Kaguya-hime!",
+        "animeTitle": "초(超) 가구야 공주!",
         "img": "../image/charimg/Q1/Chou_Kaguya-hime!/Iroha_Sakayori.jpg"
       }
     ]
@@ -1223,22 +1223,22 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "인키",
-        "animeTitle": "Hime-sama, Goumon no Jikan desu 2nd Season",
+        "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
         "img": "../image/charimg/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Inki.jpg"
       },
       {
         "charName": "이라 제리신",
-        "animeTitle": "Omae Gotoki ga Maou ni Kateru to Omou na to Yuusha Party wo Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
+        "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
         "img": "../image/charimg/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Y'lla_Jelicin.jpg"
       },
       {
         "charName": "하루나 미라이",
-        "animeTitle": "Jingai Kyoushitsu no Ningengirai Kyoushi",
+        "animeTitle": "인외 교실의 인간 혐오 교사",
         "img": "../image/charimg/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Mirai_Haruna.jpg"
       },
       {
         "charName": "카고 요우",
-        "animeTitle": "Medalist 2nd Season",
+        "animeTitle": "메달리스트 2기",
         "img": "../image/charimg/Q1/Medalist_2nd_Season/You_Kago.jpg"
       }
     ]
@@ -1250,17 +1250,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "크롤",
-        "animeTitle": "Hime-sama, Goumon no Jikan desu 2nd Season",
+        "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
         "img": "../image/charimg/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Krall.jpg"
       },
       {
         "charName": "토네 노바라",
-        "animeTitle": "Uruwashi no Yoi no Tsuki",
+        "animeTitle": "아름다운 초저녁달",
         "img": "../image/charimg/Q1/Uruwashi_no_Yoi_no_Tsuki/Nobara_Tone.jpg"
       },
       {
         "charName": "아시야 미즈키",
-        "animeTitle": "Hanazakari no Kimitachi e",
+        "animeTitle": "아름다운 그대에게",
         "img": "../image/charimg/Q1/Hanazakari_no_Kimitachi_e/Mizuki_Ashiya.jpg"
       }
     ]
@@ -1272,17 +1272,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "자이언트",
-        "animeTitle": "Hime-sama, Goumon no Jikan desu 2nd Season",
+        "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
         "img": "../image/charimg/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Giant.jpg"
       },
       {
         "charName": "사오토메 유키",
-        "animeTitle": "Jingai Kyoushitsu no Ningengirai Kyoushi",
+        "animeTitle": "인외 교실의 인간 혐오 교사",
         "img": "../image/charimg/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Yuki_Saotome.jpg"
       },
       {
         "charName": "쿠리오네 마리카",
-        "animeTitle": "Medalist 2nd Season",
+        "animeTitle": "메달리스트 2기",
         "img": "../image/charimg/Q1/Medalist_2nd_Season/Marika_Kurione.jpg"
       }
     ]
@@ -1294,12 +1294,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "마오마오",
-        "animeTitle": "Hime-sama, Goumon no Jikan desu 2nd Season",
+        "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
         "img": "../image/charimg/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Maomao.jpg"
       },
       {
         "charName": "유노 나온",
-        "animeTitle": "Mato Seihei no Slave 2",
+        "animeTitle": "마도정병의 슬레이브 2기",
         "img": "../image/charimg/Q1/Mato_Seihei_no_Slave_2/Naon_Yuno.jpg"
       }
     ]
@@ -1311,7 +1311,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "바닐라 페슈츠",
-        "animeTitle": "Hime-sama, Goumon no Jikan desu 2nd Season",
+        "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
         "img": "../image/charimg/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Vanilla_Peschutz.jpg"
       }
     ]
@@ -1323,12 +1323,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "길가",
-        "animeTitle": "Hime-sama, Goumon no Jikan desu 2nd Season",
+        "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
         "img": "../image/charimg/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Gilga.jpg"
       },
       {
         "charName": "세실 그란벨",
-        "animeTitle": "Hell Mode: Yarikomi Suki no Gamer wa Haisettei no Isekai de Musou Suru",
+        "animeTitle": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~",
         "img": "../image/charimg/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Cecil_Granvelle.jpg"
       },
       {
@@ -1345,22 +1345,22 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "사쿠라 하트록",
-        "animeTitle": "Hime-sama, Goumon no Jikan desu 2nd Season",
+        "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
         "img": "../image/charimg/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Sakura_Heartrock.jpg"
       },
       {
         "charName": "베니야",
-        "animeTitle": "Shibou Yuugi de Meshi wo Kuu",
+        "animeTitle": "사망 유희로 밥을 먹는다.",
         "img": "../image/charimg/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Beniya.jpg"
       },
       {
         "charName": "알렌",
-        "animeTitle": "Hell Mode: Yarikomi Suki no Gamer wa Haisettei no Isekai de Musou Suru",
+        "animeTitle": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~",
         "img": "../image/charimg/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Allen.jpg"
       },
       {
         "charName": "이세 켄타로",
-        "animeTitle": "Kaya-chan wa Kowakunai",
+        "animeTitle": "카야는 무섭지 않아",
         "img": "../image/charimg/Q1/Kaya-chan_wa_Kowakunai/Kenken.jpg"
       }
     ]
@@ -1372,7 +1372,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "마왕",
-        "animeTitle": "Hime-sama, Goumon no Jikan desu 2nd Season",
+        "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
         "img": "../image/charimg/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Maou.jpg"
       }
     ]
@@ -1384,22 +1384,22 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "카나지",
-        "animeTitle": "Hime-sama, Goumon no Jikan desu 2nd Season",
+        "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
         "img": "../image/charimg/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Kanadge.jpg"
       },
       {
         "charName": "차브",
-        "animeTitle": "Yuusha Kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku",
+        "animeTitle": "용사형에 처함",
         "img": "../image/charimg/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Tsav.jpg"
       },
       {
         "charName": "클로드",
-        "animeTitle": "Champignon no Majo",
+        "animeTitle": "샹피뇽의 마녀",
         "img": "../image/charimg/Q1/Champignon_no_Majo/Claude.jpg"
       },
       {
         "charName": "쿠타니 소고",
-        "animeTitle": "Dead Account",
+        "animeTitle": "데드 어카운트",
         "img": "../image/charimg/Q1/Dead_Account/Sougo_Kutani.jpg"
       }
     ]
@@ -1411,17 +1411,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "지모치",
-        "animeTitle": "Hime-sama, Goumon no Jikan desu 2nd Season",
+        "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
         "img": "../image/charimg/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Jimochi.jpg"
       },
       {
         "charName": "신몬 히바치",
-        "animeTitle": "Enen no Shouboutai San no Shou Part 2",
+        "animeTitle": "불꽃 소방대 3장",
         "img": "../image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Hibachi_Shinmon.jpg"
       },
       {
         "charName": "찰스 브랜트",
-        "animeTitle": "Prism Rondo",
+        "animeTitle": "프리즘 윤무곡",
         "img": "../image/charimg/Q1/Prism_Rondo/Charles_Brant.jpg"
       }
     ]
@@ -1433,7 +1433,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "루룬",
-        "animeTitle": "Hime-sama, Goumon no Jikan desu 2nd Season",
+        "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
         "img": "../image/charimg/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Lulune.jpg"
       }
     ]
@@ -1445,7 +1445,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "キュイ",
-        "animeTitle": "Hime-sama, Goumon no Jikan desu 2nd Season",
+        "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
         "img": "../image/charimg/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Kyui.jpg"
       }
     ]
@@ -1457,7 +1457,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "브루제",
-        "animeTitle": "Hime-sama, Goumon no Jikan desu 2nd Season",
+        "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
         "img": "../image/charimg/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Buruse.jpg"
       }
     ]
@@ -1469,7 +1469,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "햄짱",
-        "animeTitle": "Hime-sama, Goumon no Jikan desu 2nd Season",
+        "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
         "img": "../image/charimg/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Ham-chan.jpg"
       }
     ]
@@ -1481,7 +1481,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "사카이 요노스케",
-        "animeTitle": "Osananajimi to wa Love Comedy ni Naranai",
+        "animeTitle": "소꿉친구와는 러브 코미디를 할 수 없어",
         "img": "../image/charimg/Q1/Osananajimi_to_wa_Love_Comedy_ni_Naranai/Yonosuke_Sakai.jpg"
       }
     ]
@@ -1493,7 +1493,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "미나모 시오",
-        "animeTitle": "Osananajimi to wa Love Comedy ni Naranai",
+        "animeTitle": "소꿉친구와는 러브 코미디를 할 수 없어",
         "img": "../image/charimg/Q1/Osananajimi_to_wa_Love_Comedy_ni_Naranai/Shio_Minamo.jpg"
       }
     ]
@@ -1505,7 +1505,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "히나타 하루",
-        "animeTitle": "Osananajimi to wa Love Comedy ni Naranai",
+        "animeTitle": "소꿉친구와는 러브 코미디를 할 수 없어",
         "img": "../image/charimg/Q1/Osananajimi_to_wa_Love_Comedy_ni_Naranai/Haru_Hinata.jpg"
       }
     ]
@@ -1517,7 +1517,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "히오도시 아카리",
-        "animeTitle": "Osananajimi to wa Love Comedy ni Naranai",
+        "animeTitle": "소꿉친구와는 러브 코미디를 할 수 없어",
         "img": "../image/charimg/Q1/Osananajimi_to_wa_Love_Comedy_ni_Naranai/Akari_Hiodoshi.jpg"
       }
     ]
@@ -1529,12 +1529,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "츠키미 루나",
-        "animeTitle": "Osananajimi to wa Love Comedy ni Naranai",
+        "animeTitle": "소꿉친구와는 러브 코미디를 할 수 없어",
         "img": "../image/charimg/Q1/Osananajimi_to_wa_Love_Comedy_ni_Naranai/Runa_Tsukimi.jpg"
       },
       {
         "charName": "요시즈미 미미",
-        "animeTitle": "[Oshi no Ko] 3rd Season",
+        "animeTitle": "【최애의 아이】 3기",
         "img": "../image/charimg/Q1/[Oshi_no_Ko]_3rd_Season/Mimi_Yoshizumi.jpg"
       }
     ]
@@ -1546,22 +1546,22 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "세실리아 아쿠아레인",
-        "animeTitle": "Yuusha Party ni Kawaii Ko ga Ita no de, Kokuhaku Shitemita",
+        "animeTitle": "용사 파티에 귀여운 애가 있어서, 고백해봤다.",
         "img": "../image/charimg/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Cecilia.jpg"
       },
       {
         "charName": "안도 레몬",
-        "animeTitle": "Mayonaka Heart Tune",
+        "animeTitle": "한밤중 하트튠",
         "img": "../image/charimg/Q1/Mayonaka_Heart_Tune/Lemon_Andou.jpg"
       },
       {
         "charName": "야마시로 렌",
-        "animeTitle": "Mato Seihei no Slave 2",
+        "animeTitle": "마도정병의 슬레이브 2기",
         "img": "../image/charimg/Q1/Mato_Seihei_no_Slave_2/Ren_Yamashiro.jpg"
       },
       {
         "charName": "오리모토 리카",
-        "animeTitle": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "animeTitle": "주술회전 3기",
         "img": "../image/charimg/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Rika_Orimoto.jpg"
       },
       {
@@ -1578,12 +1578,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "요우키",
-        "animeTitle": "Yuusha Party ni Kawaii Ko ga Ita no de, Kokuhaku Shitemita",
+        "animeTitle": "용사 파티에 귀여운 애가 있어서, 고백해봤다.",
         "img": "../image/charimg/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Youki.jpg"
       },
       {
         "charName": "이시바시 나츠키",
-        "animeTitle": "Tamon-kun Ima Docchi!?",
+        "animeTitle": "타몬 군 지금 어느 쪽!?",
         "img": "../image/charimg/Q1/Tamon-kun_Ima_Docchi!/Natsuki_Ishibashi.jpg"
       }
     ]
@@ -1595,7 +1595,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "미사키",
-        "animeTitle": "Yuusha Party ni Kawaii Ko ga Ita no de, Kokuhaku Shitemita",
+        "animeTitle": "용사 파티에 귀여운 애가 있어서, 고백해봤다.",
         "img": "../image/charimg/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Misaki.jpg"
       }
     ]
@@ -1607,7 +1607,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "시케",
-        "animeTitle": "Yuusha Party ni Kawaii Ko ga Ita no de, Kokuhaku Shitemita",
+        "animeTitle": "용사 파티에 귀여운 애가 있어서, 고백해봤다.",
         "img": "../image/charimg/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Shike.jpg"
       }
     ]
@@ -1619,12 +1619,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "유우가",
-        "animeTitle": "Yuusha Party ni Kawaii Ko ga Ita no de, Kokuhaku Shitemita",
+        "animeTitle": "용사 파티에 귀여운 애가 있어서, 고백해봤다.",
         "img": "../image/charimg/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Yuuga.jpg"
       },
       {
         "charName": "아자 초베",
-        "animeTitle": "Jigokuraku 2nd Season",
+        "animeTitle": "지옥락 2기",
         "img": "../image/charimg/Q1/Jigokuraku_2nd_Season/Choubei_Aza.jpg"
       }
     ]
@@ -1636,22 +1636,22 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "미카나",
-        "animeTitle": "Yuusha Party ni Kawaii Ko ga Ita no de, Kokuhaku Shitemita",
+        "animeTitle": "용사 파티에 귀여운 애가 있어서, 고백해봤다.",
         "img": "../image/charimg/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Mikana.jpg"
       },
       {
         "charName": "니와토리 사나",
-        "animeTitle": "Medalist 2nd Season",
+        "animeTitle": "메달리스트 2기",
         "img": "../image/charimg/Q1/Medalist_2nd_Season/Sana_Niwatori.jpg"
       },
       {
         "charName": "줄리아 맥스웰",
-        "animeTitle": "Hanazakari no Kimitachi e",
+        "animeTitle": "아름다운 그대에게",
         "img": "../image/charimg/Q1/Hanazakari_no_Kimitachi_e/Julia_Maxwell.jpg"
       },
       {
         "charName": "카구야",
-        "animeTitle": "Chou Kaguya-hime!",
+        "animeTitle": "초(超) 가구야 공주!",
         "img": "../image/charimg/Q1/Chou_Kaguya-hime!/Kaguya.jpg"
       }
     ]
@@ -1663,12 +1663,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "듀크",
-        "animeTitle": "Yuusha Party ni Kawaii Ko ga Ita no de, Kokuhaku Shitemita",
+        "animeTitle": "용사 파티에 귀여운 애가 있어서, 고백해봤다.",
         "img": "../image/charimg/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Duke.jpg"
       },
       {
         "charName": "히토마 레이",
-        "animeTitle": "Jingai Kyoushitsu no Ningengirai Kyoushi",
+        "animeTitle": "인외 교실의 인간 혐오 교사",
         "img": "../image/charimg/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Rei_Hitoma.jpg"
       }
     ]
@@ -1680,7 +1680,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "해피니스",
-        "animeTitle": "Yuusha Party ni Kawaii Ko ga Ita no de, Kokuhaku Shitemita",
+        "animeTitle": "용사 파티에 귀여운 애가 있어서, 고백해봤다.",
         "img": "../image/charimg/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Happiness.jpg"
       }
     ]
@@ -1692,22 +1692,22 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "레이븐",
-        "animeTitle": "Yuusha Party ni Kawaii Ko ga Ita no de, Kokuhaku Shitemita",
+        "animeTitle": "용사 파티에 귀여운 애가 있어서, 고백해봤다.",
         "img": "../image/charimg/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Raven.jpg"
       },
       {
         "charName": "에렌딜라 더 크림슨네일",
-        "animeTitle": "TRIGUN STARGAZE",
+        "animeTitle": "트라이건 스타게이즈",
         "img": "../image/charimg/Q1/TRIGUN_STARGAZE/Elendira_the_Crimsonnail.jpg"
       },
       {
         "charName": "시쟈",
-        "animeTitle": "Jigokuraku 2nd Season",
+        "animeTitle": "지옥락 2기",
         "img": "../image/charimg/Q1/Jigokuraku_2nd_Season/Shija.jpg"
       },
       {
         "charName": "아르바",
-        "animeTitle": "Saioshi no Gikei Mederu Tame, Nagaikishimasu!",
+        "animeTitle": "최애 의붓형을 사랑하기 위해, 오래 살겠습니다!",
         "img": "../image/charimg/Q1/Saioshi_no_Gikei_Mederu_Tame,_Nagaikishimasu!/Alba.jpg"
       }
     ]
@@ -1719,12 +1719,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "시크",
-        "animeTitle": "Yuusha Party ni Kawaii Ko ga Ita no de, Kokuhaku Shitemita",
+        "animeTitle": "용사 파티에 귀여운 애가 있어서, 고백해봤다.",
         "img": "../image/charimg/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Seek.jpg"
       },
       {
         "charName": "우시카와 요츠하",
-        "animeTitle": "Medalist 2nd Season",
+        "animeTitle": "메달리스트 2기",
         "img": "../image/charimg/Q1/Medalist_2nd_Season/Yotsuha_Ushikawa.jpg"
       }
     ]
@@ -1736,12 +1736,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "콘도 세이이치로",
-        "animeTitle": "Isekai no Sata wa Shachiku Shidai",
+        "animeTitle": "이세계 사정은 사축 하기 나름",
         "img": "../image/charimg/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Seiichirou_Kondou.jpg"
       },
       {
         "charName": "진스케",
-        "animeTitle": "Hikuidori",
+        "animeTitle": "화식조 우슈보로토비구미",
         "img": "../image/charimg/Q1/Hikuidori/Jinsuke.jpg"
       }
     ]
@@ -1753,7 +1753,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "시그볼드",
-        "animeTitle": "Isekai no Sata wa Shachiku Shidai",
+        "animeTitle": "이세계 사정은 사축 하기 나름",
         "img": "../image/charimg/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Siegvold.jpg"
       },
       {
@@ -1775,7 +1775,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "놀베르트",
-        "animeTitle": "Isekai no Sata wa Shachiku Shidai",
+        "animeTitle": "이세계 사정은 사축 하기 나름",
         "img": "../image/charimg/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Norbert_Blanc.jpg"
       }
     ]
@@ -1787,17 +1787,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "セリオ",
-        "animeTitle": "Isekai no Sata wa Shachiku Shidai",
+        "animeTitle": "이세계 사정은 사축 하기 나름",
         "img": "../image/charimg/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Selio.jpg"
       },
       {
         "charName": "아즈마 토베라",
-        "animeTitle": "Mato Seihei no Slave 2",
+        "animeTitle": "마도정병의 슬레이브 2기",
         "img": "../image/charimg/Q1/Mato_Seihei_no_Slave_2/Tobera_Azuma.jpg"
       },
       {
         "charName": "치히로",
-        "animeTitle": "Kaya-chan wa Kowakunai",
+        "animeTitle": "카야는 무섭지 않아",
         "img": "../image/charimg/Q1/Kaya-chan_wa_Kowakunai/Chihiro.jpg"
       }
     ]
@@ -1809,12 +1809,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "카밀",
-        "animeTitle": "Isekai no Sata wa Shachiku Shidai",
+        "animeTitle": "이세계 사정은 사축 하기 나름",
         "img": "../image/charimg/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Camile_Karvada.jpg"
       },
       {
         "charName": "하이터",
-        "animeTitle": "Sousou no Frieren 2nd Season",
+        "animeTitle": "장송의 프리렌 2기",
         "img": "../image/charimg/Q1/Sousou_no_Frieren_2nd_Season/Heiter.jpg"
       }
     ]
@@ -1826,7 +1826,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "헤르무트",
-        "animeTitle": "Isekai no Sata wa Shachiku Shidai",
+        "animeTitle": "이세계 사정은 사축 하기 나름",
         "img": "../image/charimg/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Helmut_Somaria.jpg"
       }
     ]
@@ -1838,7 +1838,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "유리우스",
-        "animeTitle": "Isekai no Sata wa Shachiku Shidai",
+        "animeTitle": "이세계 사정은 사축 하기 나름",
         "img": "../image/charimg/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Yurius.jpg"
       }
     ]
@@ -1850,7 +1850,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "シグマ",
-        "animeTitle": "Isekai no Sata wa Shachiku Shidai",
+        "animeTitle": "이세계 사정은 사축 하기 나름",
         "img": "../image/charimg/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Sigma.jpg"
       }
     ]
@@ -1862,7 +1862,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "시라이시 유아",
-        "animeTitle": "Isekai no Sata wa Shachiku Shidai",
+        "animeTitle": "이세계 사정은 사축 하기 나름",
         "img": "../image/charimg/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Yua_Shiraishi.jpg"
       }
     ]
@@ -1874,7 +1874,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "ハーヴィ・モラレス",
-        "animeTitle": "Isekai no Sata wa Shachiku Shidai",
+        "animeTitle": "이세계 사정은 사축 하기 나름",
         "img": "../image/charimg/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Harvey_Morales.jpg"
       }
     ]
@@ -1886,7 +1886,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "이스트",
-        "animeTitle": "Isekai no Sata wa Shachiku Shidai",
+        "animeTitle": "이세계 사정은 사축 하기 나름",
         "img": "../image/charimg/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Ist.jpg"
       }
     ]
@@ -1898,7 +1898,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "マッシュ・ニエベス",
-        "animeTitle": "Isekai no Sata wa Shachiku Shidai",
+        "animeTitle": "이세계 사정은 사축 하기 나름",
         "img": "../image/charimg/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Matthew_Nieves.jpg"
       }
     ]
@@ -1910,7 +1910,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "シーロ・ クエルバス",
-        "animeTitle": "Isekai no Sata wa Shachiku Shidai",
+        "animeTitle": "이세계 사정은 사축 하기 나름",
         "img": "../image/charimg/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Ciro_Quellbas.jpg"
       }
     ]
@@ -1922,17 +1922,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "우즈키 시노부",
-        "animeTitle": "Mayonaka Heart Tune",
+        "animeTitle": "한밤중 하트튠",
         "img": "../image/charimg/Q1/Mayonaka_Heart_Tune/Shinobu_Uzuki.jpg"
       },
       {
         "charName": "밀키트",
-        "animeTitle": "Omae Gotoki ga Maou ni Kateru to Omou na to Yuusha Party wo Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
+        "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
         "img": "../image/charimg/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Milkit.jpg"
       },
       {
         "charName": "밀리아 밀레아니아",
-        "animeTitle": "Tensei Shitara Dragon no Tamago Datta",
+        "animeTitle": "전생했더니 드래곤의 알이었다 ~최강이 아니면 목표로 하지 않아~",
         "img": "../image/charimg/Q1/Tensei_Shitara_Dragon_no_Tamago_Datta/Myria_Milleania.jpg"
       }
     ]
@@ -1944,12 +1944,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "이노하나 릿카",
-        "animeTitle": "Mayonaka Heart Tune",
+        "animeTitle": "한밤중 하트튠",
         "img": "../image/charimg/Q1/Mayonaka_Heart_Tune/Rikka_Inohana.jpg"
       },
       {
         "charName": "히비야 고토부키",
-        "animeTitle": "Uruwashi no Yoi no Tsuki",
+        "animeTitle": "아름다운 초저녁달",
         "img": "../image/charimg/Q1/Uruwashi_no_Yoi_no_Tsuki/Kotobuki_Hibiya.jpg"
       }
     ]
@@ -1961,22 +1961,22 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "히메카와 네네",
-        "animeTitle": "Mayonaka Heart Tune",
+        "animeTitle": "한밤중 하트튠",
         "img": "../image/charimg/Q1/Mayonaka_Heart_Tune/Nene_Himekawa.jpg"
       },
       {
         "charName": "MEM쵸",
-        "animeTitle": "[Oshi no Ko] 3rd Season",
+        "animeTitle": "【최애의 아이】 3기",
         "img": "../image/charimg/Q1/[Oshi_no_Ko]_3rd_Season/MEM-cho.jpg"
       },
       {
         "charName": "리츠",
-        "animeTitle": "Enen no Shouboutai San no Shou Part 2",
+        "animeTitle": "불꽃 소방대 3장",
         "img": "../image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Ritsu.jpg"
       },
       {
         "charName": "필리 카펜터",
-        "animeTitle": "Yuusha Party wo Oidasareta Kiyou Binbou",
+        "animeTitle": "용사 파티에서 쫓겨난 다재무능",
         "img": "../image/charimg/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Filly_Carpenter.jpg"
       }
     ]
@@ -1988,7 +1988,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "아이코",
-        "animeTitle": "Mayonaka Heart Tune",
+        "animeTitle": "한밤중 하트튠",
         "img": "../image/charimg/Q1/Mayonaka_Heart_Tune/Aiko.jpg"
       }
     ]
@@ -2000,7 +2000,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "모모토세 아오",
-        "animeTitle": "Mayonaka Heart Tune",
+        "animeTitle": "한밤중 하트튠",
         "img": "../image/charimg/Q1/Mayonaka_Heart_Tune/Ao_Momotose.jpg"
       }
     ]
@@ -2012,17 +2012,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "찰리 슈타인",
-        "animeTitle": "Darwin Jihen",
+        "animeTitle": "다윈 사변",
         "img": "../image/charimg/Q1/Darwin_Jihen/Charlie.jpg"
       },
       {
         "charName": "프리렌",
-        "animeTitle": "Sousou no Frieren 2nd Season",
+        "animeTitle": "장송의 프리렌 2기",
         "img": "../image/charimg/Q1/Sousou_no_Frieren_2nd_Season/Frieren.jpg"
       },
       {
         "charName": "이치조인 릴리",
-        "animeTitle": "Prism Rondo",
+        "animeTitle": "프리즘 윤무곡",
         "img": "../image/charimg/Q1/Prism_Rondo/Lili_Ichijoin.jpg"
       },
       {
@@ -2039,7 +2039,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "루시 엘드레드",
-        "animeTitle": "Darwin Jihen",
+        "animeTitle": "다윈 사변",
         "img": "../image/charimg/Q1/Darwin_Jihen/Lucy_Eldred.jpg"
       }
     ]
@@ -2051,22 +2051,22 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "리베라 파이어어벤트",
-        "animeTitle": "Darwin Jihen",
+        "animeTitle": "다윈 사변",
         "img": "../image/charimg/Q1/Darwin_Jihen/Rivera_Feyerabend.jpg"
       },
       {
         "charName": "아리만",
-        "animeTitle": "Maou no Musume wa Yasashi Sugiru!!",
+        "animeTitle": "마왕의 딸은 너무 친절해!!",
         "img": "../image/charimg/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Ahriman.jpg"
       },
       {
         "charName": "제노프",
-        "animeTitle": "Hell Mode: Yarikomi Suki no Gamer wa Haisettei no Isekai de Musou Suru",
+        "animeTitle": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~",
         "img": "../image/charimg/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Zenoff.jpg"
       },
       {
         "charName": "한마 유지로",
-        "animeTitle": "BAKI-DOU",
+        "animeTitle": "Baki-dou",
         "img": "../image/charimg/Q1/BAKI-DOU/Yujiro_Hanma.jpg"
       }
     ]
@@ -2078,17 +2078,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "게일",
-        "animeTitle": "Darwin Jihen",
+        "animeTitle": "다윈 사변",
         "img": "../image/charimg/Q1/Darwin_Jihen/Gale.jpg"
       },
       {
         "charName": "오오타니 요스케",
-        "animeTitle": "MF Ghost 3rd Season",
+        "animeTitle": "MF고스트 3rd Season",
         "img": "../image/charimg/Q1/MF_Ghost_3rd_Season/Yousuke_Ootani.jpg"
       },
       {
         "charName": "디에고 브란도",
-        "animeTitle": "JoJo no Kimyou na Bouken Steel Ball Run",
+        "animeTitle": "스틸 볼 런: 죠죠의 기묘한 모험",
         "img": "../image/charimg/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Diego_Brando.jpg"
       }
     ]
@@ -2100,7 +2100,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "한나 슈타인",
-        "animeTitle": "Darwin Jihen",
+        "animeTitle": "다윈 사변",
         "img": "../image/charimg/Q1/Darwin_Jihen/Hannah_Stein.jpg"
       }
     ]
@@ -2112,12 +2112,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "필립 그라함",
-        "animeTitle": "Darwin Jihen",
+        "animeTitle": "다윈 사변",
         "img": "../image/charimg/Q1/Darwin_Jihen/Philip_Graham.jpg"
       },
       {
         "charName": "우루시바라 테츠",
-        "animeTitle": "[Oshi no Ko] 3rd Season",
+        "animeTitle": "【최애의 아이】 3기",
         "img": "../image/charimg/Q1/[Oshi_no_Ko]_3rd_Season/Tetsu_Urushibara.jpg"
       }
     ]
@@ -2129,7 +2129,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "레슬리 K. 리프만",
-        "animeTitle": "Darwin Jihen",
+        "animeTitle": "다윈 사변",
         "img": "../image/charimg/Q1/Darwin_Jihen/Leslie_Lippman.jpg"
       }
     ]
@@ -2141,12 +2141,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "루이스 하트만",
-        "animeTitle": "Arne no Jikenbo",
+        "animeTitle": "아르네의 사건부",
         "img": "../image/charimg/Q1/Arne_no_Jikenbo/Louis_Hartmann.jpg"
       },
       {
         "charName": "카무신",
-        "animeTitle": "Okiraku Ryoushu no Tanoshii Ryouchi Bouei",
+        "animeTitle": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
         "img": "../image/charimg/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Khamsin.jpg"
       }
     ]
@@ -2158,27 +2158,27 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "아르네 노인투터",
-        "animeTitle": "Arne no Jikenbo",
+        "animeTitle": "아르네의 사건부",
         "img": "../image/charimg/Q1/Arne_no_Jikenbo/Arne_Neuntöte.jpg"
       },
       {
         "charName": "레가트 블루서머즈",
-        "animeTitle": "TRIGUN STARGAZE",
+        "animeTitle": "트라이건 스타게이즈",
         "img": "../image/charimg/Q1/TRIGUN_STARGAZE/Legato_Bluesummers.jpg"
       },
       {
         "charName": "카스바타 쿠쿠루",
-        "animeTitle": "Dead Account",
+        "animeTitle": "데드 어카운트",
         "img": "../image/charimg/Q1/Dead_Account/Kukuru_Kasubata.jpg"
       },
       {
         "charName": "카야시마 타이키",
-        "animeTitle": "Hanazakari no Kimitachi e",
+        "animeTitle": "아름다운 그대에게",
         "img": "../image/charimg/Q1/Hanazakari_no_Kimitachi_e/Taiki_Kayashima.jpg"
       },
       {
         "charName": "키트 처치",
-        "animeTitle": "Prism Rondo",
+        "animeTitle": "프리즘 윤무곡",
         "img": "../image/charimg/Q1/Prism_Rondo/Kit_Church.jpg"
       }
     ]
@@ -2190,12 +2190,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "린 라인바이스",
-        "animeTitle": "Arne no Jikenbo",
+        "animeTitle": "아르네의 사건부",
         "img": "../image/charimg/Q1/Arne_no_Jikenbo/Lynn_Reinweiß.jpg"
       },
       {
         "charName": "야코 시즈카",
-        "animeTitle": "Toumei Otoko to Ningen Onna: Sonouchi Fuufu ni Naru Futari",
+        "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
         "img": "../image/charimg/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Shizuka_Yakou.jpg"
       }
     ]
@@ -2207,7 +2207,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "엘리제",
-        "animeTitle": "Arne no Jikenbo",
+        "animeTitle": "아르네의 사건부",
         "img": "../image/charimg/Q1/Arne_no_Jikenbo/Eliza.jpg"
       }
     ]
@@ -2219,17 +2219,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "하인츠",
-        "animeTitle": "Arne no Jikenbo",
+        "animeTitle": "아르네의 사건부",
         "img": "../image/charimg/Q1/Arne_no_Jikenbo/Heinz.jpg"
       },
       {
         "charName": "사이토 료스케",
-        "animeTitle": "Douse, Koishite Shimaunda. Season 2",
+        "animeTitle": "어차피, 사랑하고 만다. 2기",
         "img": "../image/charimg/Q1/Douse,_Koishite_Shimaunda._Season_2/Ryousuke_Saitou.jpg"
       },
       {
         "charName": "자카",
-        "animeTitle": "DARK MOON: Kuro no Tsuki - Tsuki no Saidan",
+        "animeTitle": "DARK MOON: 달의 제단",
         "img": "../image/charimg/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Jakah.jpg"
       }
     ]
@@ -2241,12 +2241,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "지셰",
-        "animeTitle": "Arne no Jikenbo",
+        "animeTitle": "아르네의 사건부",
         "img": "../image/charimg/Q1/Arne_no_Jikenbo/Zishe.jpg"
       },
       {
         "charName": "리제",
-        "animeTitle": "Champignon no Majo",
+        "animeTitle": "샹피뇽의 마녀",
         "img": "../image/charimg/Q1/Champignon_no_Majo/Lisl.jpg"
       }
     ]
@@ -2258,12 +2258,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "카이",
-        "animeTitle": "Arne no Jikenbo",
+        "animeTitle": "아르네의 사건부",
         "img": "../image/charimg/Q1/Arne_no_Jikenbo/Kai.jpg"
       },
       {
         "charName": "후쿠하라 타몬",
-        "animeTitle": "Tamon-kun Ima Docchi!?",
+        "animeTitle": "타몬 군 지금 어느 쪽!?",
         "img": "../image/charimg/Q1/Tamon-kun_Ima_Docchi!/Tamon_Fukuhara.jpg"
       }
     ]
@@ -2275,7 +2275,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "나흐체러르",
-        "animeTitle": "Arne no Jikenbo",
+        "animeTitle": "아르네의 사건부",
         "img": "../image/charimg/Q1/Arne_no_Jikenbo/Nachzehrer.jpg"
       }
     ]
@@ -2287,17 +2287,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "에이미",
-        "animeTitle": "Arne no Jikenbo",
+        "animeTitle": "아르네의 사건부",
         "img": "../image/charimg/Q1/Arne_no_Jikenbo/Amy.jpg"
       },
       {
         "charName": "닐리",
-        "animeTitle": "Yuusha Kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku",
+        "animeTitle": "용사형에 처함",
         "img": "../image/charimg/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Neely.jpg"
       },
       {
         "charName": "파나메라 카레라 카이엔",
-        "animeTitle": "Okiraku Ryoushu no Tanoshii Ryouchi Bouei",
+        "animeTitle": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
         "img": "../image/charimg/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Panamera_Kaien.jpg"
       }
     ]
@@ -2309,17 +2309,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "고든",
-        "animeTitle": "Arne no Jikenbo",
+        "animeTitle": "아르네의 사건부",
         "img": "../image/charimg/Q1/Arne_no_Jikenbo/Gordon.jpg"
       },
       {
         "charName": "심리드 콜마디노",
-        "animeTitle": "Yuusha Kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku",
+        "animeTitle": "용사형에 처함",
         "img": "../image/charimg/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Simreed_Colmadino.jpg"
       },
       {
         "charName": "학장",
-        "animeTitle": "Prism Rondo",
+        "animeTitle": "프리즘 윤무곡",
         "img": "../image/charimg/Q1/Prism_Rondo/Gakuinchou.jpg"
       }
     ]
@@ -2331,7 +2331,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "다이애나",
-        "animeTitle": "Arne no Jikenbo",
+        "animeTitle": "아르네의 사건부",
         "img": "../image/charimg/Q1/Arne_no_Jikenbo/Diana.jpg"
       }
     ]
@@ -2343,22 +2343,22 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "시노노메 하지메",
-        "animeTitle": "29-sai Dokushin Chuuken Boukensha no Nichijou",
+        "animeTitle": "29세 독신 중견 모험가의 일상",
         "img": "../image/charimg/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Hajime_Shinonome.jpg"
       },
       {
         "charName": "アコーマン",
-        "animeTitle": "Maou no Musume wa Yasashi Sugiru!!",
+        "animeTitle": "마왕의 딸은 너무 친절해!!",
         "img": "../image/charimg/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Akoman.jpg"
       },
       {
         "charName": "오르토 시트",
-        "animeTitle": "Okiraku Ryoushu no Tanoshii Ryouchi Bouei",
+        "animeTitle": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
         "img": "../image/charimg/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Ortho_Sheet.jpg"
       },
       {
         "charName": "에이젠",
-        "animeTitle": "Jigokuraku 2nd Season",
+        "animeTitle": "지옥락 2기",
         "img": "../image/charimg/Q1/Jigokuraku_2nd_Season/Eizen.jpg"
       }
     ]
@@ -2370,7 +2370,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "아냥고",
-        "animeTitle": "29-sai Dokushin Chuuken Boukensha no Nichijou",
+        "animeTitle": "29세 독신 중견 모험가의 일상",
         "img": "../image/charimg/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Anyango.jpg"
       }
     ]
@@ -2382,7 +2382,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "올리브 카르멘",
-        "animeTitle": "29-sai Dokushin Chuuken Boukensha no Nichijou",
+        "animeTitle": "29세 독신 중견 모험가의 일상",
         "img": "../image/charimg/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Olive_Carmen.jpg"
       }
     ]
@@ -2394,17 +2394,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "나탈리",
-        "animeTitle": "29-sai Dokushin Chuuken Boukensha no Nichijou",
+        "animeTitle": "29세 독신 중견 모험가의 일상",
         "img": "../image/charimg/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Natalie.jpg"
       },
       {
         "charName": "아즈마 마이아",
-        "animeTitle": "Mato Seihei no Slave 2",
+        "animeTitle": "마도정병의 슬레이브 2기",
         "img": "../image/charimg/Q1/Mato_Seihei_no_Slave_2/Maia_Azuma.jpg"
       },
       {
         "charName": "렉시아 폰 아르세리아",
-        "animeTitle": "Isekai de Cheat Skill wo Te ni Shita Ore wa, Genjitsu Sekai wo mo Musou Suru: Level Up wa Jinsei wo Kaeta",
+        "animeTitle": "이세계에서 치트 스킬을 얻은 나는 현실 세계에서도 무쌍한다 ~레벨업이 인생을 바꿨다~ TVSP",
         "img": "../image/charimg/Q1/Isekai_de_Cheat_Skill_wo_Te_ni_Shita_Ore_wa,_Genjitsu_Sekai_wo_mo_Musou_Suru__Level_Up_wa_Jinsei_wo_Kaeta/Lexia_Von_Alceria.jpg"
       }
     ]
@@ -2416,12 +2416,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "두 쿠쿠두르",
-        "animeTitle": "29-sai Dokushin Chuuken Boukensha no Nichijou",
+        "animeTitle": "29세 독신 중견 모험가의 일상",
         "img": "../image/charimg/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Cockdole.jpg"
       },
       {
         "charName": "이치조인 료타로",
-        "animeTitle": "Prism Rondo",
+        "animeTitle": "프리즘 윤무곡",
         "img": "../image/charimg/Q1/Prism_Rondo/Ryoutarou_Ichijoin.jpg"
       }
     ]
@@ -2433,7 +2433,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "쟈히",
-        "animeTitle": "Maou no Musume wa Yasashi Sugiru!!",
+        "animeTitle": "마왕의 딸은 너무 친절해!!",
         "img": "../image/charimg/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Jahi.jpg"
       }
     ]
@@ -2445,17 +2445,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "두",
-        "animeTitle": "Maou no Musume wa Yasashi Sugiru!!",
+        "animeTitle": "마왕의 딸은 너무 친절해!!",
         "img": "../image/charimg/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Doux.jpg"
       },
       {
         "charName": "에타나 린바우",
-        "animeTitle": "Omae Gotoki ga Maou ni Kateru to Omou na to Yuusha Party wo Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
+        "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
         "img": "../image/charimg/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Eterna_Rinebow.jpg"
       },
       {
         "charName": "마에누마 사쿠야",
-        "animeTitle": "Kaya-chan wa Kowakunai",
+        "animeTitle": "카야는 무섭지 않아",
         "img": "../image/charimg/Q1/Kaya-chan_wa_Kowakunai/Saku-chan.jpg"
       }
     ]
@@ -2467,7 +2467,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "ヤールヤ",
-        "animeTitle": "Maou no Musume wa Yasashi Sugiru!!",
+        "animeTitle": "마왕의 딸은 너무 친절해!!",
         "img": "../image/charimg/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Yarlia.jpg"
       }
     ]
@@ -2479,7 +2479,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "톤토",
-        "animeTitle": "Maou no Musume wa Yasashi Sugiru!!",
+        "animeTitle": "마왕의 딸은 너무 친절해!!",
         "img": "../image/charimg/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Tontt.jpg"
       }
     ]
@@ -2491,7 +2491,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "おばあさん",
-        "animeTitle": "Maou no Musume wa Yasashi Sugiru!!",
+        "animeTitle": "마왕의 딸은 너무 친절해!!",
         "img": "../image/charimg/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Obaasan.jpg"
       }
     ]
@@ -2503,7 +2503,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "アッシム",
-        "animeTitle": "Maou no Musume wa Yasashi Sugiru!!",
+        "animeTitle": "마왕의 딸은 너무 친절해!!",
         "img": "../image/charimg/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Asshim.jpg"
       }
     ]
@@ -2515,7 +2515,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "サラマンドラ",
-        "animeTitle": "Maou no Musume wa Yasashi Sugiru!!",
+        "animeTitle": "마왕의 딸은 너무 친절해!!",
         "img": "../image/charimg/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Salamandra.jpg"
       }
     ]
@@ -2527,7 +2527,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "사티",
-        "animeTitle": "Maou no Musume wa Yasashi Sugiru!!",
+        "animeTitle": "마왕의 딸은 너무 친절해!!",
         "img": "../image/charimg/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Thaiti.jpg"
       }
     ]
@@ -2539,12 +2539,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "메리나",
-        "animeTitle": "Maou no Musume wa Yasashi Sugiru!!",
+        "animeTitle": "마왕의 딸은 너무 친절해!!",
         "img": "../image/charimg/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Merryna.jpg"
       },
       {
         "charName": "라이트",
-        "animeTitle": "Toumei Otoko to Ningen Onna: Sonouchi Fuufu ni Naru Futari",
+        "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
         "img": "../image/charimg/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Light.jpg"
       }
     ]
@@ -2556,7 +2556,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "마유",
-        "animeTitle": "Maou no Musume wa Yasashi Sugiru!!",
+        "animeTitle": "마왕의 딸은 너무 친절해!!",
         "img": "../image/charimg/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Mayu.jpg"
       }
     ]
@@ -2568,17 +2568,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "호시노 아쿠아마린",
-        "animeTitle": "[Oshi no Ko] 3rd Season",
+        "animeTitle": "【최애의 아이】 3기",
         "img": "../image/charimg/Q1/[Oshi_no_Ko]_3rd_Season/Aquamarine_Hoshino.jpg"
       },
       {
         "charName": "아케우라지 츠카사",
-        "animeTitle": "Medalist 2nd Season",
+        "animeTitle": "메달리스트 2기",
         "img": "../image/charimg/Q1/Medalist_2nd_Season/Tsukasa_Akeuraji.jpg"
       },
       {
         "charName": "오른 두라",
-        "animeTitle": "Yuusha Party wo Oidasareta Kiyou Binbou",
+        "animeTitle": "용사 파티에서 쫓겨난 다재무능",
         "img": "../image/charimg/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Orhun_Dura.jpg"
       }
     ]
@@ -2590,7 +2590,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "호시노 루비",
-        "animeTitle": "[Oshi no Ko] 3rd Season",
+        "animeTitle": "【최애의 아이】 3기",
         "img": "../image/charimg/Q1/[Oshi_no_Ko]_3rd_Season/Ruby_Hoshino.jpg"
       }
     ]
@@ -2602,12 +2602,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "아리마 카나",
-        "animeTitle": "[Oshi no Ko] 3rd Season",
+        "animeTitle": "【최애의 아이】 3기",
         "img": "../image/charimg/Q1/[Oshi_no_Ko]_3rd_Season/Kana_Arima.jpg"
       },
       {
         "charName": "도로시 브라운",
-        "animeTitle": "Prism Rondo",
+        "animeTitle": "프리즘 윤무곡",
         "img": "../image/charimg/Q1/Prism_Rondo/Dorothy_Brown.jpg"
       }
     ]
@@ -2619,17 +2619,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "쿠로카와 아카네",
-        "animeTitle": "[Oshi no Ko] 3rd Season",
+        "animeTitle": "【최애의 아이】 3기",
         "img": "../image/charimg/Q1/[Oshi_no_Ko]_3rd_Season/Akane_Kurokawa.jpg"
       },
       {
         "charName": "츠키요노 벨",
-        "animeTitle": "Mato Seihei no Slave 2",
+        "animeTitle": "마도정병의 슬레이브 2기",
         "img": "../image/charimg/Q1/Mato_Seihei_no_Slave_2/Bell_Tsukiyono.jpg"
       },
       {
         "charName": "캐롤라인 잉그롯",
-        "animeTitle": "Yuusha Party wo Oidasareta Kiyou Binbou",
+        "animeTitle": "용사 파티에서 쫓겨난 다재무능",
         "img": "../image/charimg/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Caroline_Inglaud.jpg"
       }
     ]
@@ -2641,12 +2641,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "사이토 미야코",
-        "animeTitle": "[Oshi no Ko] 3rd Season",
+        "animeTitle": "【최애의 아이】 3기",
         "img": "../image/charimg/Q1/[Oshi_no_Ko]_3rd_Season/Miyako_Saitou.jpg"
       },
       {
         "charName": "프린세스 히바나",
-        "animeTitle": "Enen no Shouboutai San no Shou Part 2",
+        "animeTitle": "불꽃 소방대 3장",
         "img": "../image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Princess_Hibana.jpg"
       },
       {
@@ -2663,7 +2663,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "카부라기 마사야",
-        "animeTitle": "[Oshi no Ko] 3rd Season",
+        "animeTitle": "【최애의 아이】 3기",
         "img": "../image/charimg/Q1/[Oshi_no_Ko]_3rd_Season/Masaya_Kaburagi.jpg"
       }
     ]
@@ -2675,7 +2675,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "고토부키 미나미",
-        "animeTitle": "[Oshi no Ko] 3rd Season",
+        "animeTitle": "【최애의 아이】 3기",
         "img": "../image/charimg/Q1/[Oshi_no_Ko]_3rd_Season/Minami_Kotobuki.jpg"
       }
     ]
@@ -2687,7 +2687,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "요시즈미 슌",
-        "animeTitle": "[Oshi no Ko] 3rd Season",
+        "animeTitle": "【최애의 아이】 3기",
         "img": "../image/charimg/Q1/[Oshi_no_Ko]_3rd_Season/Shun_Yoshizumi.jpg"
       }
     ]
@@ -2699,12 +2699,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "카미키 히카루",
-        "animeTitle": "[Oshi no Ko] 3rd Season",
+        "animeTitle": "【최애의 아이】 3기",
         "img": "../image/charimg/Q1/[Oshi_no_Ko]_3rd_Season/Hikaru_Kamiki.jpg"
       },
       {
         "charName": "신몬 베니마루",
-        "animeTitle": "Enen no Shouboutai San no Shou Part 2",
+        "animeTitle": "불꽃 소방대 3장",
         "img": "../image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Benimaru_Shinmon.jpg"
       }
     ]
@@ -2716,12 +2716,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "츠쿠요미",
-        "animeTitle": "[Oshi no Ko] 3rd Season",
+        "animeTitle": "【최애의 아이】 3기",
         "img": "../image/charimg/Q1/[Oshi_no_Ko]_3rd_Season/Karasu_Shoujo.jpg"
       },
       {
         "charName": "토코로야마 사키",
-        "animeTitle": "Mato Seihei no Slave 2",
+        "animeTitle": "마도정병의 슬레이브 2기",
         "img": "../image/charimg/Q1/Mato_Seihei_no_Slave_2/Saki_Tokoyama.jpg"
       }
     ]
@@ -2733,7 +2733,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "유우키",
-        "animeTitle": "Shibou Yuugi de Meshi wo Kuu",
+        "animeTitle": "사망 유희로 밥을 먹는다.",
         "img": "../image/charimg/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Yuki_Sorimachi.jpg"
       }
     ]
@@ -2745,7 +2745,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "킨코",
-        "animeTitle": "Shibou Yuugi de Meshi wo Kuu",
+        "animeTitle": "사망 유희로 밥을 먹는다.",
         "img": "../image/charimg/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Kinko.jpg"
       }
     ]
@@ -2757,7 +2757,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "모모노",
-        "animeTitle": "Shibou Yuugi de Meshi wo Kuu",
+        "animeTitle": "사망 유희로 밥을 먹는다.",
         "img": "../image/charimg/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Momono.jpg"
       }
     ]
@@ -2769,7 +2769,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "코쿠토",
-        "animeTitle": "Shibou Yuugi de Meshi wo Kuu",
+        "animeTitle": "사망 유희로 밥을 먹는다.",
         "img": "../image/charimg/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Kokuto.jpg"
       }
     ]
@@ -2781,7 +2781,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "아오이",
-        "animeTitle": "Shibou Yuugi de Meshi wo Kuu",
+        "animeTitle": "사망 유희로 밥을 먹는다.",
         "img": "../image/charimg/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Aoi.jpg"
       }
     ]
@@ -2793,12 +2793,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "모에기",
-        "animeTitle": "Shibou Yuugi de Meshi wo Kuu",
+        "animeTitle": "사망 유희로 밥을 먹는다.",
         "img": "../image/charimg/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Moegi.jpg"
       },
       {
         "charName": "야기 유우나",
-        "animeTitle": "Medalist 2nd Season",
+        "animeTitle": "메달리스트 2기",
         "img": "../image/charimg/Q1/Medalist_2nd_Season/Yuuna_Yagi.jpg"
       }
     ]
@@ -2810,12 +2810,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "아이리",
-        "animeTitle": "Shibou Yuugi de Meshi wo Kuu",
+        "animeTitle": "사망 유희로 밥을 먹는다.",
         "img": "../image/charimg/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Airi.jpg"
       },
       {
         "charName": "아즈마 히마리",
-        "animeTitle": "Mato Seihei no Slave 2",
+        "animeTitle": "마도정병의 슬레이브 2기",
         "img": "../image/charimg/Q1/Mato_Seihei_no_Slave_2/Himari_Azuma.jpg"
       }
     ]
@@ -2827,7 +2827,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "미시로",
-        "animeTitle": "Shibou Yuugi de Meshi wo Kuu",
+        "animeTitle": "사망 유희로 밥을 먹는다.",
         "img": "../image/charimg/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Mishiro.jpg"
       }
     ]
@@ -2839,7 +2839,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "아즈마",
-        "animeTitle": "Shibou Yuugi de Meshi wo Kuu",
+        "animeTitle": "사망 유희로 밥을 먹는다.",
         "img": "../image/charimg/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Azuma.jpg"
       }
     ]
@@ -2851,7 +2851,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "케이토",
-        "animeTitle": "Shibou Yuugi de Meshi wo Kuu",
+        "animeTitle": "사망 유희로 밥을 먹는다.",
         "img": "../image/charimg/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Keito.jpg"
       }
     ]
@@ -2863,12 +2863,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "치에",
-        "animeTitle": "Shibou Yuugi de Meshi wo Kuu",
+        "animeTitle": "사망 유희로 밥을 먹는다.",
         "img": "../image/charimg/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Chie.jpg"
       },
       {
         "charName": "하네다 토바리",
-        "animeTitle": "Jingai Kyoushitsu no Ningengirai Kyoushi",
+        "animeTitle": "인외 교실의 인간 혐오 교사",
         "img": "../image/charimg/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Tobari_Haneda.jpg"
       }
     ]
@@ -2880,12 +2880,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "코토하",
-        "animeTitle": "Shibou Yuugi de Meshi wo Kuu",
+        "animeTitle": "사망 유희로 밥을 먹는다.",
         "img": "../image/charimg/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Kotoha.jpg"
       },
       {
         "charName": "아르테 온 페르디낫트",
-        "animeTitle": "Okiraku Ryoushu no Tanoshii Ryouchi Bouei",
+        "animeTitle": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
         "img": "../image/charimg/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Arte_Ferdinand.jpg"
       }
     ]
@@ -2897,7 +2897,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "노아 아라라트",
-        "animeTitle": "Kizoku Tensei: Megumareta Umare kara Saikyou no Chikara wo Eru",
+        "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
         "img": "../image/charimg/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Noah_Ararat.jpg"
       }
     ]
@@ -2909,7 +2909,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "조이",
-        "animeTitle": "Kizoku Tensei: Megumareta Umare kara Saikyou no Chikara wo Eru",
+        "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
         "img": "../image/charimg/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Zoey.jpg"
       }
     ]
@@ -2921,12 +2921,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "셜리 그랜즈",
-        "animeTitle": "Kizoku Tensei: Megumareta Umare kara Saikyou no Chikara wo Eru",
+        "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
         "img": "../image/charimg/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Shirley_Grantz.jpg"
       },
       {
         "charName": "못치",
-        "animeTitle": "Ikoku Nikki",
+        "animeTitle": "위국일기",
         "img": "../image/charimg/Q1/Ikoku_Nikki/Mocchi.jpg"
       }
     ]
@@ -2938,17 +2938,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "헨리 아라라트",
-        "animeTitle": "Kizoku Tensei: Megumareta Umare kara Saikyou no Chikara wo Eru",
+        "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
         "img": "../image/charimg/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Henry_Ararat.jpg"
       },
       {
         "charName": "파트 코 판",
-        "animeTitle": "Enen no Shouboutai San no Shou Part 2",
+        "animeTitle": "불꽃 소방대 3장",
         "img": "../image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Pan_Ko_Paat.jpg"
       },
       {
         "charName": "아이바 슌",
-        "animeTitle": "MF Ghost 3rd Season",
+        "animeTitle": "MF고스트 3rd Season",
         "img": "../image/charimg/Q1/MF_Ghost_3rd_Season/Shun_Aiba.jpg"
       }
     ]
@@ -2960,7 +2960,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "오스카 아라라트",
-        "animeTitle": "Kizoku Tensei: Megumareta Umare kara Saikyou no Chikara wo Eru",
+        "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
         "img": "../image/charimg/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Oscar_Ararat.jpg"
       }
     ]
@@ -2972,12 +2972,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "에블린",
-        "animeTitle": "Kizoku Tensei: Megumareta Umare kara Saikyou no Chikara wo Eru",
+        "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
         "img": "../image/charimg/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Evelyn.jpg"
       },
       {
         "charName": "와카바 아오이",
-        "animeTitle": "Jingai Kyoushitsu no Ningengirai Kyoushi",
+        "animeTitle": "인외 교실의 인간 혐오 교사",
         "img": "../image/charimg/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Aoi_Wakaba.jpg"
       }
     ]
@@ -2989,7 +2989,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "왕비",
-        "animeTitle": "Kizoku Tensei: Megumareta Umare kara Saikyou no Chikara wo Eru",
+        "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
         "img": "../image/charimg/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Ouhi.jpg"
       }
     ]
@@ -3001,12 +3001,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "인드라 아라라트",
-        "animeTitle": "Kizoku Tensei: Megumareta Umare kara Saikyou no Chikara wo Eru",
+        "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
         "img": "../image/charimg/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Indra_Ararat.jpg"
       },
       {
         "charName": "하세가와 헤이조 노부오",
-        "animeTitle": "Hikuidori",
+        "animeTitle": "화식조 우슈보로토비구미",
         "img": "../image/charimg/Q1/Hikuidori/Heizou_Hasegawa.jpg"
       }
     ]
@@ -3018,7 +3018,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "지지",
-        "animeTitle": "Kizoku Tensei: Megumareta Umare kara Saikyou no Chikara wo Eru",
+        "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
         "img": "../image/charimg/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Gigi.jpg"
       }
     ]
@@ -3030,17 +3030,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "황제",
-        "animeTitle": "Kizoku Tensei: Megumareta Umare kara Saikyou no Chikara wo Eru",
+        "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
         "img": "../image/charimg/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Koutei.jpg"
       },
       {
         "charName": "남부의 용사",
-        "animeTitle": "Sousou no Frieren 2nd Season",
+        "animeTitle": "장송의 프리렌 2기",
         "img": "../image/charimg/Q1/Sousou_no_Frieren_2nd_Season/Minami_no_Yuusha.jpg"
       },
       {
         "charName": "카라스마 시로",
-        "animeTitle": "Jingai Kyoushitsu no Ningengirai Kyoushi",
+        "animeTitle": "인외 교실의 인간 혐오 교사",
         "img": "../image/charimg/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Shirou_Karasuma.jpg"
       }
     ]
@@ -3052,12 +3052,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "알리체",
-        "animeTitle": "Kizoku Tensei: Megumareta Umare kara Saikyou no Chikara wo Eru",
+        "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
         "img": "../image/charimg/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Alichey.jpg"
       },
       {
         "charName": "사토 카야",
-        "animeTitle": "Kaya-chan wa Kowakunai",
+        "animeTitle": "카야는 무섭지 않아",
         "img": "../image/charimg/Q1/Kaya-chan_wa_Kowakunai/Kaya_Satou.jpg"
       }
     ]
@@ -3069,17 +3069,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "길버트 아라라트",
-        "animeTitle": "Kizoku Tensei: Megumareta Umare kara Saikyou no Chikara wo Eru",
+        "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
         "img": "../image/charimg/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Gilbert_Ararat.jpg"
       },
       {
         "charName": "미드버레이 더 홈프릭",
-        "animeTitle": "TRIGUN STARGAZE",
+        "animeTitle": "트라이건 스타게이즈",
         "img": "../image/charimg/Q1/TRIGUN_STARGAZE/Midvalley_the_Hornfreak.jpg"
       },
       {
         "charName": "토고로",
-        "animeTitle": "Hikuidori",
+        "animeTitle": "화식조 우슈보로토비구미",
         "img": "../image/charimg/Q1/Hikuidori/Tougorou.jpg"
       },
       {
@@ -3096,22 +3096,22 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "앨버트 아라라트",
-        "animeTitle": "Kizoku Tensei: Megumareta Umare kara Saikyou no Chikara wo Eru",
+        "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
         "img": "../image/charimg/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Albert_Ararat.jpg"
       },
       {
         "charName": "젠인 나오야",
-        "animeTitle": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "animeTitle": "주술회전 3기",
         "img": "../image/charimg/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Naoya_Zenin.jpg"
       },
       {
         "charName": "오리시모 사몬",
-        "animeTitle": "Hikuidori",
+        "animeTitle": "화식조 우슈보로토비구미",
         "img": "../image/charimg/Q1/Hikuidori/Samon_Orishimo.jpg"
       },
       {
         "charName": "짓카",
-        "animeTitle": "Jigokuraku 2nd Season",
+        "animeTitle": "지옥락 2기",
         "img": "../image/charimg/Q1/Jigokuraku_2nd_Season/Jikka.jpg"
       }
     ]
@@ -3123,7 +3123,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "리젤",
-        "animeTitle": "Odayaka Kizoku no Kyuuka no Susume",
+        "animeTitle": "온화한 귀족의 휴가의 권장",
         "img": "../image/charimg/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Lizel.jpg"
       }
     ]
@@ -3135,7 +3135,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "일레븐",
-        "animeTitle": "Odayaka Kizoku no Kyuuka no Susume",
+        "animeTitle": "온화한 귀족의 휴가의 권장",
         "img": "../image/charimg/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Eleven.jpg"
       }
     ]
@@ -3147,22 +3147,22 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "스터드",
-        "animeTitle": "Odayaka Kizoku no Kyuuka no Susume",
+        "animeTitle": "온화한 귀족의 휴가의 권장",
         "img": "../image/charimg/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Stud.jpg"
       },
       {
         "charName": "도미닉 함즈워스",
-        "animeTitle": "Eris no Seihai",
+        "animeTitle": "에리스의 성배",
         "img": "../image/charimg/Q1/Eris_no_Seihai/Dominic_Harmsworth.jpg"
       },
       {
         "charName": "아시나 반",
-        "animeTitle": "Dead Account",
+        "animeTitle": "데드 어카운트",
         "img": "../image/charimg/Q1/Dead_Account/Ban_Ashina.jpg"
       },
       {
         "charName": "우메다 호쿠토",
-        "animeTitle": "Hanazakari no Kimitachi e",
+        "animeTitle": "아름다운 그대에게",
         "img": "../image/charimg/Q1/Hanazakari_no_Kimitachi_e/Hokuto_Umeda.jpg"
       }
     ]
@@ -3174,12 +3174,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "저지",
-        "animeTitle": "Odayaka Kizoku no Kyuuka no Susume",
+        "animeTitle": "온화한 귀족의 휴가의 권장",
         "img": "../image/charimg/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Judge.jpg"
       },
       {
         "charName": "센타",
-        "animeTitle": "Jigokuraku 2nd Season",
+        "animeTitle": "지옥락 2기",
         "img": "../image/charimg/Q1/Jigokuraku_2nd_Season/Senta.jpg"
       }
     ]
@@ -3191,12 +3191,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "섀도",
-        "animeTitle": "Odayaka Kizoku no Kyuuka no Susume",
+        "animeTitle": "온화한 귀족의 휴가의 권장",
         "img": "../image/charimg/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Shadow.jpg"
       },
       {
         "charName": "이시가미 후진",
-        "animeTitle": "MF Ghost 3rd Season",
+        "animeTitle": "MF고스트 3rd Season",
         "img": "../image/charimg/Q1/MF_Ghost_3rd_Season/Fuujin_Ishigami.jpg"
       }
     ]
@@ -3208,12 +3208,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "인사이",
-        "animeTitle": "Odayaka Kizoku no Kyuuka no Susume",
+        "animeTitle": "온화한 귀족의 휴가의 권장",
         "img": "../image/charimg/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Insigh.jpg"
       },
       {
         "charName": "조프레크 오스트비슈",
-        "animeTitle": "Yuusha Kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku",
+        "animeTitle": "용사형에 처함",
         "img": "../image/charimg/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Zofflec_Ostbiche.jpg"
       }
     ]
@@ -3225,12 +3225,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "루광",
-        "animeTitle": "Shiguang Dailiren: Yingdu Pian",
+        "animeTitle": "시광대리인 -Link Click- 영도편",
         "img": "../image/charimg/Q1/Shiguang_Dailiren_Yingdu_Pian/Guang_Lu.jpg"
       },
       {
         "charName": "켄자쿠",
-        "animeTitle": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "animeTitle": "주술회전 3기",
         "img": "../image/charimg/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Kenjaku.jpg"
       }
     ]
@@ -3242,7 +3242,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "청샤오시",
-        "animeTitle": "Shiguang Dailiren: Yingdu Pian",
+        "animeTitle": "시광대리인 -Link Click- 영도편",
         "img": "../image/charimg/Q1/Shiguang_Dailiren_Yingdu_Pian/Xiaoshi_Cheng.jpg"
       }
     ]
@@ -3254,17 +3254,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "샤페이",
-        "animeTitle": "Shiguang Dailiren: Yingdu Pian",
+        "animeTitle": "시광대리인 -Link Click- 영도편",
         "img": "../image/charimg/Q1/Shiguang_Dailiren_Yingdu_Pian/Fei_Xia.jpg"
       },
       {
         "charName": "마다라이토 코스케",
-        "animeTitle": "Toumei Otoko to Ningen Onna: Sonouchi Fuufu ni Naru Futari",
+        "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
         "img": "../image/charimg/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Kousuke_Madaraito.jpg"
       },
       {
         "charName": "이타도리 유지",
-        "animeTitle": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "animeTitle": "주술회전 3기",
         "img": "../image/charimg/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Yuuji_Itadori.jpg"
       },
       {
@@ -3281,7 +3281,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "챠오링",
-        "animeTitle": "Shiguang Dailiren: Yingdu Pian",
+        "animeTitle": "시광대리인 -Link Click- 영도편",
         "img": "../image/charimg/Q1/Shiguang_Dailiren_Yingdu_Pian/Ling_Qiao.jpg"
       },
       {
@@ -3298,22 +3298,22 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "리우샤오",
-        "animeTitle": "Shiguang Dailiren: Yingdu Pian",
+        "animeTitle": "시광대리인 -Link Click- 영도편",
         "img": "../image/charimg/Q1/Shiguang_Dailiren_Yingdu_Pian/Xiao_Liu.jpg"
       },
       {
         "charName": "엔리케 아델바이드",
-        "animeTitle": "Eris no Seihai",
+        "animeTitle": "에리스의 성배",
         "img": "../image/charimg/Q1/Eris_no_Seihai/Enrique_Adelbide.jpg"
       },
       {
         "charName": "하스미 렌리",
-        "animeTitle": "Dead Account",
+        "animeTitle": "데드 어카운트",
         "img": "../image/charimg/Q1/Dead_Account/Renri_Hasumi.jpg"
       },
       {
         "charName": "오코테루 고토",
-        "animeTitle": "Chou Kaguya-hime!",
+        "animeTitle": "초(超) 가구야 공주!",
         "img": "../image/charimg/Q1/Chou_Kaguya-hime!/Koto_Okkoteru.jpg"
       }
     ]
@@ -3325,27 +3325,27 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "베인",
-        "animeTitle": "Shiguang Dailiren: Yingdu Pian",
+        "animeTitle": "시광대리인 -Link Click- 영도편",
         "img": "../image/charimg/Q1/Shiguang_Dailiren_Yingdu_Pian/Vein.jpg"
       },
       {
         "charName": "후시구로 메구미",
-        "animeTitle": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "animeTitle": "주술회전 3기",
         "img": "../image/charimg/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Megumi_Fushiguro.jpg"
       },
       {
         "charName": "요다카 쥰",
-        "animeTitle": "Medalist 2nd Season",
+        "animeTitle": "메달리스트 2기",
         "img": "../image/charimg/Q1/Medalist_2nd_Season/Jun_Yodaka.jpg"
       },
       {
         "charName": "카나타 리빙턴",
-        "animeTitle": "MF Ghost 3rd Season",
+        "animeTitle": "MF고스트 3rd Season",
         "img": "../image/charimg/Q1/MF_Ghost_3rd_Season/Kanata_Rivington.jpg"
       },
       {
         "charName": "고마자와 라이",
-        "animeTitle": "Chou Kaguya-hime!",
+        "animeTitle": "초(超) 가구야 공주!",
         "img": "../image/charimg/Q1/Chou_Kaguya-hime!/Rai_Komazawa.jpg"
       }
     ]
@@ -3357,12 +3357,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "왕칭",
-        "animeTitle": "Shiguang Dailiren: Yingdu Pian",
+        "animeTitle": "시광대리인 -Link Click- 영도편",
         "img": "../image/charimg/Q1/Shiguang_Dailiren_Yingdu_Pian/Qing_Wang.jpg"
       },
       {
         "charName": "코다이 마키오",
-        "animeTitle": "Ikoku Nikki",
+        "animeTitle": "위국일기",
         "img": "../image/charimg/Q1/Ikoku_Nikki/Makio_Koudai.jpg"
       }
     ]
@@ -3374,12 +3374,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "테오리타",
-        "animeTitle": "Yuusha Kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku",
+        "animeTitle": "용사형에 처함",
         "img": "../image/charimg/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Teoritta.jpg"
       },
       {
         "charName": "클레나",
-        "animeTitle": "Hell Mode: Yarikomi Suki no Gamer wa Haisettei no Isekai de Musou Suru",
+        "animeTitle": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~",
         "img": "../image/charimg/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Krena.jpg"
       }
     ]
@@ -3391,7 +3391,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "파트셰 키비아",
-        "animeTitle": "Yuusha Kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku",
+        "animeTitle": "용사형에 처함",
         "img": "../image/charimg/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Patausche_Kivia.jpg"
       }
     ]
@@ -3403,7 +3403,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "도터 루즈러스",
-        "animeTitle": "Yuusha Kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku",
+        "animeTitle": "용사형에 처함",
         "img": "../image/charimg/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Dotta_Luzulas.jpg"
       }
     ]
@@ -3415,12 +3415,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "노르가유 센리지",
-        "animeTitle": "Yuusha Kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku",
+        "animeTitle": "용사형에 처함",
         "img": "../image/charimg/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Norgalle_Senridge.jpg"
       },
       {
         "charName": "아이젠",
-        "animeTitle": "Sousou no Frieren 2nd Season",
+        "animeTitle": "장송의 프리렌 2기",
         "img": "../image/charimg/Q1/Sousou_no_Frieren_2nd_Season/Eisen.jpg"
       }
     ]
@@ -3432,7 +3432,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "셰나",
-        "animeTitle": "Yuusha Kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku",
+        "animeTitle": "용사형에 처함",
         "img": "../image/charimg/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Siena.jpg"
       }
     ]
@@ -3444,32 +3444,32 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "제이스 파치락트",
-        "animeTitle": "Yuusha Kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku",
+        "animeTitle": "용사형에 처함",
         "img": "../image/charimg/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Jayce_Patiract.jpg"
       },
       {
         "charName": "젠인 란타",
-        "animeTitle": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "animeTitle": "주술회전 3기",
         "img": "../image/charimg/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Ranta_Zenin.jpg"
       },
       {
         "charName": "이즈미 아이루",
-        "animeTitle": "Douse, Koishite Shimaunda. Season 2",
+        "animeTitle": "어차피, 사랑하고 만다. 2기",
         "img": "../image/charimg/Q1/Douse,_Koishite_Shimaunda._Season_2/Airu_Izumi.jpg"
       },
       {
         "charName": "앙리",
-        "animeTitle": "Champignon no Majo",
+        "animeTitle": "샹피뇽의 마녀",
         "img": "../image/charimg/Q1/Champignon_no_Majo/Henri.jpg"
       },
       {
         "charName": "미하이 그란벨",
-        "animeTitle": "Hell Mode: Yarikomi Suki no Gamer wa Haisettei no Isekai de Musou Suru",
+        "animeTitle": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~",
         "img": "../image/charimg/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Mikhail_Granvelle.jpg"
       },
       {
         "charName": "사카구치 오우리",
-        "animeTitle": "Tamon-kun Ima Docchi!?",
+        "animeTitle": "타몬 군 지금 어느 쪽!?",
         "img": "../image/charimg/Q1/Tamon-kun_Ima_Docchi!/Ouri_Sakaguchi.jpg"
       }
     ]
@@ -3481,17 +3481,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "라이노",
-        "animeTitle": "Yuusha Kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku",
+        "animeTitle": "용사형에 처함",
         "img": "../image/charimg/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Rhyno.jpg"
       },
       {
         "charName": "고죠 사토루",
-        "animeTitle": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "animeTitle": "주술회전 3기",
         "img": "../image/charimg/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Satoru_Gojou.jpg"
       },
       {
         "charName": "잭슨 테일러",
-        "animeTitle": "MF Ghost 3rd Season",
+        "animeTitle": "MF고스트 3rd Season",
         "img": "../image/charimg/Q1/MF_Ghost_3rd_Season/Jackson_Taylor.jpg"
       }
     ]
@@ -3503,22 +3503,22 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "프렌시 마스티볼트",
-        "animeTitle": "Yuusha Kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku",
+        "animeTitle": "용사형에 처함",
         "img": "../image/charimg/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Frenci_Mastibolt.jpg"
       },
       {
         "charName": "오오가미 이사키",
-        "animeTitle": "Jingai Kyoushitsu no Ningengirai Kyoushi",
+        "animeTitle": "인외 교실의 인간 혐오 교사",
         "img": "../image/charimg/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Isaki_Oogami.jpg"
       },
       {
         "charName": "셀마 클로델",
-        "animeTitle": "Yuusha Party wo Oidasareta Kiyou Binbou",
+        "animeTitle": "용사 파티에서 쫓겨난 다재무능",
         "img": "../image/charimg/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Selma_Clodel.jpg"
       },
       {
         "charName": "오우즈카 마이",
-        "animeTitle": "Watashi ga Koibito ni Nareru Wake Naijan, Murimuri! (※Muri ja Nakatta!?): Next Shine!",
+        "animeTitle": "내가 연인이 될 수 있을 리 없잖아, 무리무리! (※무리가 아니었다?!) ~넥스트 샤인!~",
         "img": "../image/charimg/Q1/Watashi_ga_Koibito_ni_Nareru_Wake_Naijan,_Murimuri!_(※Muri_ja_Nakatta!_)__Next_Shine!/Mai_Ouzuka.jpg"
       }
     ]
@@ -3530,12 +3530,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "와쿠라 유우키",
-        "animeTitle": "Mato Seihei no Slave 2",
+        "animeTitle": "마도정병의 슬레이브 2기",
         "img": "../image/charimg/Q1/Mato_Seihei_no_Slave_2/Yuuki_Wakura.jpg"
       },
       {
         "charName": "브루노",
-        "animeTitle": "Saioshi no Gikei Mederu Tame, Nagaikishimasu!",
+        "animeTitle": "최애 의붓형을 사랑하기 위해, 오래 살겠습니다!",
         "img": "../image/charimg/Q1/Saioshi_no_Gikei_Mederu_Tame,_Nagaikishimasu!/Bruno.jpg"
       }
     ]
@@ -3547,7 +3547,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "시코쿠",
-        "animeTitle": "Mato Seihei no Slave 2",
+        "animeTitle": "마도정병의 슬레이브 2기",
         "img": "../image/charimg/Q1/Mato_Seihei_no_Slave_2/Shikoku.jpg"
       }
     ]
@@ -3559,12 +3559,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "에조 야쿠모",
-        "animeTitle": "Mato Seihei no Slave 2",
+        "animeTitle": "마도정병의 슬레이브 2기",
         "img": "../image/charimg/Q1/Mato_Seihei_no_Slave_2/Yakumo_Ezo.jpg"
       },
       {
         "charName": "수하",
-        "animeTitle": "DARK MOON: Kuro no Tsuki - Tsuki no Saidan",
+        "animeTitle": "DARK MOON: 달의 제단",
         "img": "../image/charimg/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Su-Ha.jpg"
       }
     ]
@@ -3576,7 +3576,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "아즈마 야치호",
-        "animeTitle": "Mato Seihei no Slave 2",
+        "animeTitle": "마도정병의 슬레이브 2기",
         "img": "../image/charimg/Q1/Mato_Seihei_no_Slave_2/Yachiho_Azuma.jpg"
       }
     ]
@@ -3588,7 +3588,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "스루가 슈슈",
-        "animeTitle": "Mato Seihei no Slave 2",
+        "animeTitle": "마도정병의 슬레이브 2기",
         "img": "../image/charimg/Q1/Mato_Seihei_no_Slave_2/Shushu_Suruga.jpg"
       }
     ]
@@ -3600,17 +3600,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "와쿠라 아오바",
-        "animeTitle": "Mato Seihei no Slave 2",
+        "animeTitle": "마도정병의 슬레이브 2기",
         "img": "../image/charimg/Q1/Mato_Seihei_no_Slave_2/Aoba_Wakura.jpg"
       },
       {
         "charName": "검은 도마뱀",
-        "animeTitle": "Tensei Shitara Dragon no Tamago Datta",
+        "animeTitle": "전생했더니 드래곤의 알이었다 ~최강이 아니면 목표로 하지 않아~",
         "img": "../image/charimg/Q1/Tensei_Shitara_Dragon_no_Tamago_Datta/Kuro_Tokage.jpg"
       },
       {
         "charName": "혼다 리카코",
-        "animeTitle": "Seihantai na Kimi to Boku",
+        "animeTitle": "정반대의 너와 나",
         "img": "../image/charimg/Q1/Seihantai_na_Kimi_to_Boku/Rikako_Honda.jpg"
       }
     ]
@@ -3622,7 +3622,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "아즈마 호마레",
-        "animeTitle": "Mato Seihei no Slave 2",
+        "animeTitle": "마도정병의 슬레이브 2기",
         "img": "../image/charimg/Q1/Mato_Seihei_no_Slave_2/Homare_Azuma.jpg"
       }
     ]
@@ -3634,12 +3634,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "오오카와무라 네이",
-        "animeTitle": "Mato Seihei no Slave 2",
+        "animeTitle": "마도정병의 슬레이브 2기",
         "img": "../image/charimg/Q1/Mato_Seihei_no_Slave_2/Nei_Ookawamura.jpg"
       },
       {
         "charName": "소피아 클로델",
-        "animeTitle": "Yuusha Party wo Oidasareta Kiyou Binbou",
+        "animeTitle": "용사 파티에서 쫓겨난 다재무능",
         "img": "../image/charimg/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Sophia_Clodel.jpg"
       }
     ]
@@ -3651,17 +3651,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "카미운텐 미라",
-        "animeTitle": "Mato Seihei no Slave 2",
+        "animeTitle": "마도정병의 슬레이브 2기",
         "img": "../image/charimg/Q1/Mato_Seihei_no_Slave_2/Mira_Kamiunten.jpg"
       },
       {
         "charName": "우루스가와 키요미",
-        "animeTitle": "Dead Account",
+        "animeTitle": "데드 어카운트",
         "img": "../image/charimg/Q1/Dead_Account/Kiyomi_Urusugawa.jpg"
       },
       {
         "charName": "충견 오타코",
-        "animeTitle": "Chou Kaguya-hime!",
+        "animeTitle": "초(超) 가구야 공주!",
         "img": "../image/charimg/Q1/Chou_Kaguya-hime!/Otakou_Chuuken.jpg"
       }
     ]
@@ -3673,27 +3673,27 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "우젠 쿄카",
-        "animeTitle": "Mato Seihei no Slave 2",
+        "animeTitle": "마도정병의 슬레이브 2기",
         "img": "../image/charimg/Q1/Mato_Seihei_no_Slave_2/Kyouka_Uzen.jpg"
       },
       {
         "charName": "죠가미네 아키",
-        "animeTitle": "Yuusha no Kuzu",
+        "animeTitle": "쓰레기 용사",
         "img": "../image/charimg/Q1/Yuusha_no_Kuzu/Aki_Jougamine.jpg"
       },
       {
         "charName": "미리카 휴그리아",
-        "animeTitle": "Majutsushi Kunon wa Mieteiru",
+        "animeTitle": "마술사 쿠논은 보인다",
         "img": "../image/charimg/Q1/Majutsushi_Kunon_wa_Mieteiru/Mirika_Huglia.jpg"
       },
       {
         "charName": "호죠 카오리",
-        "animeTitle": "Isekai de Cheat Skill wo Te ni Shita Ore wa, Genjitsu Sekai wo mo Musou Suru: Level Up wa Jinsei wo Kaeta",
+        "animeTitle": "이세계에서 치트 스킬을 얻은 나는 현실 세계에서도 무쌍한다 ~레벨업이 인생을 바꿨다~ TVSP",
         "img": "../image/charimg/Q1/Isekai_de_Cheat_Skill_wo_Te_ni_Shita_Ore_wa,_Genjitsu_Sekai_wo_mo_Musou_Suru__Level_Up_wa_Jinsei_wo_Kaeta/Kaori_Houjou.jpg"
       },
       {
         "charName": "코바야카와 사쿠라",
-        "animeTitle": "Prism Rondo",
+        "animeTitle": "프리즘 윤무곡",
         "img": "../image/charimg/Q1/Prism_Rondo/Sakura_Kobayakawa.jpg"
       }
     ]
@@ -3705,32 +3705,32 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "타타라 코노미",
-        "animeTitle": "Mato Seihei no Slave 2",
+        "animeTitle": "마도정병의 슬레이브 2기",
         "img": "../image/charimg/Q1/Mato_Seihei_no_Slave_2/Konomi_Tatara.jpg"
       },
       {
         "charName": "콘스탄스 그레일",
-        "animeTitle": "Eris no Seihai",
+        "animeTitle": "에리스의 성배",
         "img": "../image/charimg/Q1/Eris_no_Seihai/Constance_Grail.jpg"
       },
       {
         "charName": "페른",
-        "animeTitle": "Sousou no Frieren 2nd Season",
+        "animeTitle": "장송의 프리렌 2기",
         "img": "../image/charimg/Q1/Sousou_no_Frieren_2nd_Season/Fern.jpg"
       },
       {
         "charName": "카미사키 히카루",
-        "animeTitle": "Medalist 2nd Season",
+        "animeTitle": "메달리스트 2기",
         "img": "../image/charimg/Q1/Medalist_2nd_Season/Hikaru_Kamisaki_.jpg"
       },
       {
         "charName": "오스즈",
-        "animeTitle": "Hikuidori",
+        "animeTitle": "화식조 우슈보로토비구미",
         "img": "../image/charimg/Q1/Hikuidori/Osuzu.jpg"
       },
       {
         "charName": "코토 사츠키",
-        "animeTitle": "Watashi ga Koibito ni Nareru Wake Naijan, Murimuri! (※Muri ja Nakatta!?): Next Shine!",
+        "animeTitle": "내가 연인이 될 수 있을 리 없잖아, 무리무리! (※무리가 아니었다?!) ~넥스트 샤인!~",
         "img": "../image/charimg/Q1/Watashi_ga_Koibito_ni_Nareru_Wake_Naijan,_Murimuri!_(※Muri_ja_Nakatta!_)__Next_Shine!/Satsuki_Koto.jpg"
       }
     ]
@@ -3742,12 +3742,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "와카사 사하라",
-        "animeTitle": "Mato Seihei no Slave 2",
+        "animeTitle": "마도정병의 슬레이브 2기",
         "img": "../image/charimg/Q1/Mato_Seihei_no_Slave_2/Sahara_Wakasa.jpg"
       },
       {
         "charName": "쿠로사와 네네코",
-        "animeTitle": "Jingai Kyoushitsu no Ningengirai Kyoushi",
+        "animeTitle": "인외 교실의 인간 혐오 교사",
         "img": "../image/charimg/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Neneko_Kurosawa.jpg"
       }
     ]
@@ -3759,12 +3759,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "이즈모 텐카",
-        "animeTitle": "Mato Seihei no Slave 2",
+        "animeTitle": "마도정병의 슬레이브 2기",
         "img": "../image/charimg/Q1/Mato_Seihei_no_Slave_2/Tenka_Izumo.jpg"
       },
       {
         "charName": "세실리아 아델바이드",
-        "animeTitle": "Eris no Seihai",
+        "animeTitle": "에리스의 성배",
         "img": "../image/charimg/Q1/Eris_no_Seihai/Cecilia_Adelbide.jpg"
       },
       {
@@ -3774,22 +3774,22 @@ const CharacterVoiceData = {
       },
       {
         "charName": "쿠사바 에루",
-        "animeTitle": "Dead Account",
+        "animeTitle": "데드 어카운트",
         "img": "../image/charimg/Q1/Dead_Account/Eru_Kusaba.jpg"
       },
       {
         "charName": "하스미 치에",
-        "animeTitle": "Kaya-chan wa Kowakunai",
+        "animeTitle": "카야는 무섭지 않아",
         "img": "../image/charimg/Q1/Kaya-chan_wa_Kowakunai/Chie_Hasumi.jpg"
       },
       {
         "charName": "이코 라운드",
-        "animeTitle": "Majutsushi Kunon wa Mieteiru",
+        "animeTitle": "마술사 쿠논은 보인다",
         "img": "../image/charimg/Q1/Majutsushi_Kunon_wa_Mieteiru/Iko_Round.jpg"
       },
       {
         "charName": "키요마루",
-        "animeTitle": "Jigokuraku 2nd Season",
+        "animeTitle": "지옥락 2기",
         "img": "../image/charimg/Q1/Jigokuraku_2nd_Season/Kiyomaru.jpg"
       }
     ]
@@ -3801,7 +3801,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "아즈마 후부키",
-        "animeTitle": "Mato Seihei no Slave 2",
+        "animeTitle": "마도정병의 슬레이브 2기",
         "img": "../image/charimg/Q1/Mato_Seihei_no_Slave_2/Fubuki_Azuma.jpg"
       }
     ]
@@ -3813,7 +3813,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "쟈라시 루나",
-        "animeTitle": "Toumei Otoko to Ningen Onna: Sonouchi Fuufu ni Naru Futari",
+        "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
         "img": "../image/charimg/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Luna_Jarashi.jpg"
       }
     ]
@@ -3825,7 +3825,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "키키라 다이치",
-        "animeTitle": "Toumei Otoko to Ningen Onna: Sonouchi Fuufu ni Naru Futari",
+        "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
         "img": "../image/charimg/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Daichi_Kikira.jpg"
       }
     ]
@@ -3837,7 +3837,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "투인",
-        "animeTitle": "Toumei Otoko to Ningen Onna: Sonouchi Fuufu ni Naru Futari",
+        "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
         "img": "../image/charimg/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Twin.jpg"
       }
     ]
@@ -3849,7 +3849,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "릴리 오를라뮌데",
-        "animeTitle": "Eris no Seihai",
+        "animeTitle": "에리스의 성배",
         "img": "../image/charimg/Q1/Eris_no_Seihai/Lily_Orlamunde.jpg"
       }
     ]
@@ -3861,7 +3861,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "옷코츠 유타",
-        "animeTitle": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "animeTitle": "주술회전 3기",
         "img": "../image/charimg/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Yuuta_Okkotsu.jpg"
       }
     ]
@@ -3873,7 +3873,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "쵸소우",
-        "animeTitle": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "animeTitle": "주술회전 3기",
         "img": "../image/charimg/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Chousou.jpg"
       },
       {
@@ -3883,7 +3883,7 @@ const CharacterVoiceData = {
       },
       {
         "charName": "오오이시 다이고",
-        "animeTitle": "MF Ghost 3rd Season",
+        "animeTitle": "MF고스트 3rd Season",
         "img": "../image/charimg/Q1/MF_Ghost_3rd_Season/Daigo_Ooishi.jpg"
       }
     ]
@@ -3895,7 +3895,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "츠쿠모 유키",
-        "animeTitle": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "animeTitle": "주술회전 3기",
         "img": "../image/charimg/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Yuki_Tsukumo.jpg"
       }
     ]
@@ -3907,7 +3907,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "젠인 마키",
-        "animeTitle": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "animeTitle": "주술회전 3기",
         "img": "../image/charimg/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Maki_Zenin.jpg"
       }
     ]
@@ -3919,7 +3919,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "젠인 오우기",
-        "animeTitle": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "animeTitle": "주술회전 3기",
         "img": "../image/charimg/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Ogi_Zenin.jpg"
       }
     ]
@@ -3931,7 +3931,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "젠인 진이치",
-        "animeTitle": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "animeTitle": "주술회전 3기",
         "img": "../image/charimg/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Jinichi_Zenin.jpg"
       }
     ]
@@ -3943,7 +3943,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "젠인 마이",
-        "animeTitle": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "animeTitle": "주술회전 3기",
         "img": "../image/charimg/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Mai_Zenin.jpg"
       }
     ]
@@ -3955,12 +3955,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "텐겐",
-        "animeTitle": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "animeTitle": "주술회전 3기",
         "img": "../image/charimg/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Tengen.jpg"
       },
       {
         "charName": "에비스모리 무츠",
-        "animeTitle": "Kaya-chan wa Kowakunai",
+        "animeTitle": "카야는 무섭지 않아",
         "img": "../image/charimg/Q1/Kaya-chan_wa_Kowakunai/Mutsu_Ebisumori.jpg"
       }
     ]
@@ -3972,7 +3972,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "젠인 초쥬로",
-        "animeTitle": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "animeTitle": "주술회전 3기",
         "img": "../image/charimg/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Choujurou_Zenin.jpg"
       }
     ]
@@ -3984,12 +3984,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "이에이리 쇼코",
-        "animeTitle": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "animeTitle": "주술회전 3기",
         "img": "../image/charimg/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Shouko_Ieiri.jpg"
       },
       {
         "charName": "마리아 아펜젠스",
-        "animeTitle": "Omae Gotoki ga Maou ni Kateru to Omou na to Yuusha Party wo Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
+        "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
         "img": "../image/charimg/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Maria_Afenjuns.jpg"
       }
     ]
@@ -4001,7 +4001,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "후루다테",
-        "animeTitle": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "animeTitle": "주술회전 3기",
         "img": "../image/charimg/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Furudate.jpg"
       }
     ]
@@ -4013,7 +4013,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "미겔",
-        "animeTitle": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "animeTitle": "주술회전 3기",
         "img": "../image/charimg/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Miguel.jpg"
       }
     ]
@@ -4025,12 +4025,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "젠인 노부아키",
-        "animeTitle": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "animeTitle": "주술회전 3기",
         "img": "../image/charimg/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Nobuaki_Zenin.jpg"
       },
       {
         "charName": "죠",
-        "animeTitle": "Yuusha no Kuzu",
+        "animeTitle": "쓰레기 용사",
         "img": "../image/charimg/Q1/Yuusha_no_Kuzu/Joe.jpg"
       }
     ]
@@ -4042,12 +4042,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "하카리 킨지",
-        "animeTitle": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "animeTitle": "주술회전 3기",
         "img": "../image/charimg/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Kinji_Hakari.jpg"
       },
       {
         "charName": "아키타루 오비",
-        "animeTitle": "Enen no Shouboutai San no Shou Part 2",
+        "animeTitle": "불꽃 소방대 3장",
         "img": "../image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Akitaru_Oubi.jpg"
       }
     ]
@@ -4059,7 +4059,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "켄 씨",
-        "animeTitle": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "animeTitle": "주술회전 3기",
         "img": "../image/charimg/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Ken-san.jpg"
       }
     ]
@@ -4071,12 +4071,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "플럼 애프리코트",
-        "animeTitle": "Omae Gotoki ga Maou ni Kateru to Omou na to Yuusha Party wo Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
+        "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
         "img": "../image/charimg/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Flum_Apricot.jpg"
       },
       {
         "charName": "키노시타 야마토",
-        "animeTitle": "Tamon-kun Ima Docchi!?",
+        "animeTitle": "타몬 군 지금 어느 쪽!?",
         "img": "../image/charimg/Q1/Tamon-kun_Ima_Docchi!/Yamato_Kinoshita.jpg"
       }
     ]
@@ -4088,12 +4088,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "세라 앙빌렌",
-        "animeTitle": "Omae Gotoki ga Maou ni Kateru to Omou na to Yuusha Party wo Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
+        "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
         "img": "../image/charimg/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Sara_Anvillen.jpg"
       },
       {
         "charName": "하이지마 히요리",
-        "animeTitle": "Dead Account",
+        "animeTitle": "데드 어카운트",
         "img": "../image/charimg/Q1/Dead_Account/Hiyori_Haijima.jpg"
       }
     ]
@@ -4105,7 +4105,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "가디오 라스컷",
-        "animeTitle": "Omae Gotoki ga Maou ni Kateru to Omou na to Yuusha Party wo Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
+        "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
         "img": "../image/charimg/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Gadhio_Lathcutt.jpg"
       }
     ]
@@ -4117,7 +4117,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "키릴 스위치카",
-        "animeTitle": "Omae Gotoki ga Maou ni Kateru to Omou na to Yuusha Party wo Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
+        "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
         "img": "../image/charimg/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Cyrill_Sweechka.jpg"
       }
     ]
@@ -4129,7 +4129,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "진 인테이지",
-        "animeTitle": "Omae Gotoki ga Maou ni Kateru to Omou na to Yuusha Party wo Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
+        "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
         "img": "../image/charimg/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Jean_Inteige.jpg"
       }
     ]
@@ -4141,12 +4141,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "라이너스 레디안츠",
-        "animeTitle": "Omae Gotoki ga Maou ni Kateru to Omou na to Yuusha Party wo Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
+        "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
         "img": "../image/charimg/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Linus_Radiants.jpg"
       },
       {
         "charName": "솔론",
-        "animeTitle": "DARK MOON: Kuro no Tsuki - Tsuki no Saidan",
+        "animeTitle": "DARK MOON: 달의 제단",
         "img": "../image/charimg/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Solon.jpg"
       }
     ]
@@ -4158,7 +4158,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "애니메이션 내레이션",
-        "animeTitle": "Omae Gotoki ga Maou ni Kateru to Omou na to Yuusha Party wo Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
+        "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
         "img": "../image/charimg/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Narrator.jpg"
       }
     ]
@@ -4170,7 +4170,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "데인 피니어스",
-        "animeTitle": "Omae Gotoki ga Maou ni Kateru to Omou na to Yuusha Party wo Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
+        "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
         "img": "../image/charimg/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Dein_Phineas.jpg"
       }
     ]
@@ -4182,7 +4182,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "니시노 미즈호",
-        "animeTitle": "Douse, Koishite Shimaunda. Season 2",
+        "animeTitle": "어차피, 사랑하고 만다. 2기",
         "img": "../image/charimg/Q1/Douse,_Koishite_Shimaunda._Season_2/Mizuho_Nishino.jpg"
       }
     ]
@@ -4194,12 +4194,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "하자와 키즈키",
-        "animeTitle": "Douse, Koishite Shimaunda. Season 2",
+        "animeTitle": "어차피, 사랑하고 만다. 2기",
         "img": "../image/charimg/Q1/Douse,_Koishite_Shimaunda._Season_2/Kizuki_Hazawa.jpg"
       },
       {
         "charName": "바람의 마법사",
-        "animeTitle": "Champignon no Majo",
+        "animeTitle": "샹피뇽의 마녀",
         "img": "../image/charimg/Q1/Champignon_no_Majo/Kaze_no_Mahoutsukai.jpg"
       }
     ]
@@ -4211,7 +4211,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "카시와기 신",
-        "animeTitle": "Douse, Koishite Shimaunda. Season 2",
+        "animeTitle": "어차피, 사랑하고 만다. 2기",
         "img": "../image/charimg/Q1/Douse,_Koishite_Shimaunda._Season_2/Shin_Kashiwagi.jpg"
       }
     ]
@@ -4223,7 +4223,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "호시카와 슈고",
-        "animeTitle": "Douse, Koishite Shimaunda. Season 2",
+        "animeTitle": "어차피, 사랑하고 만다. 2기",
         "img": "../image/charimg/Q1/Douse,_Koishite_Shimaunda._Season_2/Shuugo_Hoshikawa.jpg"
       }
     ]
@@ -4235,7 +4235,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "쿠로다",
-        "animeTitle": "Douse, Koishite Shimaunda. Season 2",
+        "animeTitle": "어차피, 사랑하고 만다. 2기",
         "img": "../image/charimg/Q1/Douse,_Koishite_Shimaunda._Season_2/Kuroda.jpg"
       }
     ]
@@ -4247,12 +4247,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "쿠라시키 치카",
-        "animeTitle": "Douse, Koishite Shimaunda. Season 2",
+        "animeTitle": "어차피, 사랑하고 만다. 2기",
         "img": "../image/charimg/Q1/Douse,_Koishite_Shimaunda._Season_2/Chika_Kurashiki.jpg"
       },
       {
         "charName": "아키라",
-        "animeTitle": "Kaya-chan wa Kowakunai",
+        "animeTitle": "카야는 무섭지 않아",
         "img": "../image/charimg/Q1/Kaya-chan_wa_Kowakunai/Akira.jpg"
       }
     ]
@@ -4264,7 +4264,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "시라이시 마나미",
-        "animeTitle": "Douse, Koishite Shimaunda. Season 2",
+        "animeTitle": "어차피, 사랑하고 만다. 2기",
         "img": "../image/charimg/Q1/Douse,_Koishite_Shimaunda._Season_2/Manami_Shiraishi.jpg"
       }
     ]
@@ -4276,12 +4276,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "고양이의 마녀",
-        "animeTitle": "Champignon no Majo",
+        "animeTitle": "샹피뇽의 마녀",
         "img": "../image/charimg/Q1/Champignon_no_Majo/Neko_no_Majo.jpg"
       },
       {
         "charName": "시온 나스타튬",
-        "animeTitle": "Yuusha Party wo Oidasareta Kiyou Binbou",
+        "animeTitle": "용사 파티에서 쫓겨난 다재무능",
         "img": "../image/charimg/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Shion_Nasturtium.jpg"
       }
     ]
@@ -4293,12 +4293,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "미노스",
-        "animeTitle": "Champignon no Majo",
+        "animeTitle": "샹피뇽의 마녀",
         "img": "../image/charimg/Q1/Champignon_no_Majo/Minos.jpg"
       },
       {
         "charName": "타카미네 히토미",
-        "animeTitle": "Medalist 2nd Season",
+        "animeTitle": "메달리스트 2기",
         "img": "../image/charimg/Q1/Medalist_2nd_Season/Hitomi_Takamine.jpg"
       }
     ]
@@ -4310,7 +4310,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "메리노",
-        "animeTitle": "Champignon no Majo",
+        "animeTitle": "샹피뇽의 마녀",
         "img": "../image/charimg/Q1/Champignon_no_Majo/Merino.jpg"
       }
     ]
@@ -4322,12 +4322,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "시시",
-        "animeTitle": "Champignon no Majo",
+        "animeTitle": "샹피뇽의 마녀",
         "img": "../image/charimg/Q1/Champignon_no_Majo/Sisi.jpg"
       },
       {
         "charName": "네즈 마치",
-        "animeTitle": "Jingai Kyoushitsu no Ningengirai Kyoushi",
+        "animeTitle": "인외 교실의 인간 혐오 교사",
         "img": "../image/charimg/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Machi_Nezu.jpg"
       }
     ]
@@ -4339,22 +4339,22 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "슈타르크",
-        "animeTitle": "Sousou no Frieren 2nd Season",
+        "animeTitle": "장송의 프리렌 2기",
         "img": "../image/charimg/Q1/Sousou_no_Frieren_2nd_Season/Stark.jpg"
       },
       {
         "charName": "다이마 진",
-        "animeTitle": "High School! Kimengumi (2026)",
+        "animeTitle": "하이스쿨! 기면조",
         "img": "../image/charimg/Q1/High_School!_Kimengumi_(2026)/Jin_Daima.jpg"
       },
       {
         "charName": "노아",
-        "animeTitle": "DARK MOON: Kuro no Tsuki - Tsuki no Saidan",
+        "animeTitle": "DARK MOON: 달의 제단",
         "img": "../image/charimg/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Noa.jpg"
       },
       {
         "charName": "가비마루",
-        "animeTitle": "Jigokuraku 2nd Season",
+        "animeTitle": "지옥락 2기",
         "img": "../image/charimg/Q1/Jigokuraku_2nd_Season/Gabimaru.jpg"
       }
     ]
@@ -4366,17 +4366,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "힘멜",
-        "animeTitle": "Sousou no Frieren 2nd Season",
+        "animeTitle": "장송의 프리렌 2기",
         "img": "../image/charimg/Q1/Sousou_no_Frieren_2nd_Season/Himmel.jpg"
       },
       {
         "charName": "니히루다 요우",
-        "animeTitle": "High School! Kimengumi (2026)",
+        "animeTitle": "하이스쿨! 기면조",
         "img": "../image/charimg/Q1/High_School!_Kimengumi_(2026)/You_Nihiruda.jpg"
       },
       {
         "charName": "에니시로 소지",
-        "animeTitle": "Dead Account",
+        "animeTitle": "데드 어카운트",
         "img": "../image/charimg/Q1/Dead_Account/Souji_Enishiro.jpg"
       }
     ]
@@ -4388,7 +4388,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "에레",
-        "animeTitle": "Sousou no Frieren 2nd Season",
+        "animeTitle": "장송의 프리렌 2기",
         "img": "../image/charimg/Q1/Sousou_no_Frieren_2nd_Season/Ehre.jpg"
       }
     ]
@@ -4400,7 +4400,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "샤르프",
-        "animeTitle": "Sousou no Frieren 2nd Season",
+        "animeTitle": "장송의 프리렌 2기",
         "img": "../image/charimg/Q1/Sousou_no_Frieren_2nd_Season/Scharf.jpg"
       }
     ]
@@ -4412,7 +4412,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "다흐 백작",
-        "animeTitle": "Sousou no Frieren 2nd Season",
+        "animeTitle": "장송의 프리렌 2기",
         "img": "../image/charimg/Q1/Sousou_no_Frieren_2nd_Season/Dach_Hakushaku.jpg"
       }
     ]
@@ -4424,7 +4424,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "레이에츠 고",
-        "animeTitle": "High School! Kimengumi (2026)",
+        "animeTitle": "하이스쿨! 기면조",
         "img": "../image/charimg/Q1/High_School!_Kimengumi_(2026)/Gou_Reietsu.jpg"
       }
     ]
@@ -4436,17 +4436,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "모노호시 다이",
-        "animeTitle": "High School! Kimengumi (2026)",
+        "animeTitle": "하이스쿨! 기면조",
         "img": "../image/charimg/Q1/High_School!_Kimengumi_(2026)/Dai_Monohoshi.jpg"
       },
       {
         "charName": "헬리",
-        "animeTitle": "DARK MOON: Kuro no Tsuki - Tsuki no Saidan",
+        "animeTitle": "DARK MOON: 달의 제단",
         "img": "../image/charimg/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Heli.jpg"
       },
       {
         "charName": "나카츠 슈이치",
-        "animeTitle": "Hanazakari no Kimitachi e",
+        "animeTitle": "아름다운 그대에게",
         "img": "../image/charimg/Q1/Hanazakari_no_Kimitachi_e/Shuichi_Nakatsu.jpg"
       }
     ]
@@ -4458,7 +4458,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "나카스도 오미야",
-        "animeTitle": "High School! Kimengumi (2026)",
+        "animeTitle": "하이스쿨! 기면조",
         "img": "../image/charimg/Q1/High_School!_Kimengumi_(2026)/Omiya_Nakasudou.jpg"
       }
     ]
@@ -4470,7 +4470,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "메리 켄사쿠",
-        "animeTitle": "High School! Kimengumi (2026)",
+        "animeTitle": "하이스쿨! 기면조",
         "img": "../image/charimg/Q1/High_School!_Kimengumi_(2026)/Kensaku_Meri.jpg"
       }
     ]
@@ -4482,7 +4482,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "죠가이 란토",
-        "animeTitle": "High School! Kimengumi (2026)",
+        "animeTitle": "하이스쿨! 기면조",
         "img": "../image/charimg/Q1/High_School!_Kimengumi_(2026)/Ranto_Jougai.jpg"
       }
     ]
@@ -4494,7 +4494,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "타부치 코에루",
-        "animeTitle": "High School! Kimengumi (2026)",
+        "animeTitle": "하이스쿨! 기면조",
         "img": "../image/charimg/Q1/High_School!_Kimengumi_(2026)/Koeru_Tabuchi.jpg"
       }
     ]
@@ -4506,17 +4506,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "운도 카이",
-        "animeTitle": "High School! Kimengumi (2026)",
+        "animeTitle": "하이스쿨! 기면조",
         "img": "../image/charimg/Q1/High_School!_Kimengumi_(2026)/Kai_Undo.jpg"
       },
       {
         "charName": "아서 보일",
-        "animeTitle": "Enen no Shouboutai San no Shou Part 2",
+        "animeTitle": "불꽃 소방대 3장",
         "img": "../image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Arthur_Boyle.jpg"
       },
       {
         "charName": "텐자",
-        "animeTitle": "Jigokuraku 2nd Season",
+        "animeTitle": "지옥락 2기",
         "img": "../image/charimg/Q1/Jigokuraku_2nd_Season/Tenza.jpg"
       }
     ]
@@ -4528,7 +4528,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "아키레스 켄",
-        "animeTitle": "High School! Kimengumi (2026)",
+        "animeTitle": "하이스쿨! 기면조",
         "img": "../image/charimg/Q1/High_School!_Kimengumi_(2026)/Ken_Akiresu.jpg"
       }
     ]
@@ -4540,7 +4540,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "인타하이 스스무",
-        "animeTitle": "High School! Kimengumi (2026)",
+        "animeTitle": "하이스쿨! 기면조",
         "img": "../image/charimg/Q1/High_School!_Kimengumi_(2026)/Susumu_Intahai.jpg"
       }
     ]
@@ -4552,7 +4552,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "콘죠 유타카",
-        "animeTitle": "High School! Kimengumi (2026)",
+        "animeTitle": "하이스쿨! 기면조",
         "img": "../image/charimg/Q1/High_School!_Kimengumi_(2026)/Yutaka_Konjou.jpg"
       }
     ]
@@ -4564,7 +4564,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "스지 치카라",
-        "animeTitle": "High School! Kimengumi (2026)",
+        "animeTitle": "하이스쿨! 기면조",
         "img": "../image/charimg/Q1/High_School!_Kimengumi_(2026)/Chikara_Suji.jpg"
       }
     ]
@@ -4576,7 +4576,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "아마노 쟈코",
-        "animeTitle": "High School! Kimengumi (2026)",
+        "animeTitle": "하이스쿨! 기면조",
         "img": "../image/charimg/Q1/High_School!_Kimengumi_(2026)/Jako_Amano.jpg"
       }
     ]
@@ -4588,7 +4588,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "히다리 마키",
-        "animeTitle": "High School! Kimengumi (2026)",
+        "animeTitle": "하이스쿨! 기면조",
         "img": "../image/charimg/Q1/High_School!_Kimengumi_(2026)/Maki_Hidari.jpg"
       }
     ]
@@ -4600,7 +4600,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "산단바라 이쿠에",
-        "animeTitle": "High School! Kimengumi (2026)",
+        "animeTitle": "하이스쿨! 기면조",
         "img": "../image/charimg/Q1/High_School!_Kimengumi_(2026)/Ikue_Sandanhara.jpg"
       }
     ]
@@ -4612,7 +4612,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "혼바 데스코",
-        "animeTitle": "High School! Kimengumi (2026)",
+        "animeTitle": "하이스쿨! 기면조",
         "img": "../image/charimg/Q1/High_School!_Kimengumi_(2026)/Desuko_Honba.jpg"
       }
     ]
@@ -4624,7 +4624,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "오오바 카요",
-        "animeTitle": "High School! Kimengumi (2026)",
+        "animeTitle": "하이스쿨! 기면조",
         "img": "../image/charimg/Q1/High_School!_Kimengumi_(2026)/Kayo_Ouba.jpg"
       }
     ]
@@ -4636,7 +4636,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "키레이데 쇼",
-        "animeTitle": "High School! Kimengumi (2026)",
+        "animeTitle": "하이스쿨! 기면조",
         "img": "../image/charimg/Q1/High_School!_Kimengumi_(2026)/Shou_Kireide.jpg"
       }
     ]
@@ -4648,7 +4648,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "셋토 키메루",
-        "animeTitle": "High School! Kimengumi (2026)",
+        "animeTitle": "하이스쿨! 기면조",
         "img": "../image/charimg/Q1/High_School!_Kimengumi_(2026)/Kimeru_Setto.jpg"
       }
     ]
@@ -4660,7 +4660,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "타노킨 토리오",
-        "animeTitle": "High School! Kimengumi (2026)",
+        "animeTitle": "하이스쿨! 기면조",
         "img": "../image/charimg/Q1/High_School!_Kimengumi_(2026)/Torio_Tanokin.jpg"
       }
     ]
@@ -4672,7 +4672,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "지노",
-        "animeTitle": "DARK MOON: Kuro no Tsuki - Tsuki no Saidan",
+        "animeTitle": "DARK MOON: 달의 제단",
         "img": "../image/charimg/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Jino.jpg"
       }
     ]
@@ -4684,7 +4684,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "이안",
-        "animeTitle": "DARK MOON: Kuro no Tsuki - Tsuki no Saidan",
+        "animeTitle": "DARK MOON: 달의 제단",
         "img": "../image/charimg/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Jaan.jpg"
       }
     ]
@@ -4696,17 +4696,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "드골라",
-        "animeTitle": "Hell Mode: Yarikomi Suki no Gamer wa Haisettei no Isekai de Musou Suru",
+        "animeTitle": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~",
         "img": "../image/charimg/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Dogora.jpg"
       },
       {
         "charName": "타치바나 케이토",
-        "animeTitle": "Tamon-kun Ima Docchi!?",
+        "animeTitle": "타몬 군 지금 어느 쪽!?",
         "img": "../image/charimg/Q1/Tamon-kun_Ima_Docchi!/Keito_Tachibana.jpg"
       },
       {
         "charName": "오가타",
-        "animeTitle": "MF Ghost 3rd Season",
+        "animeTitle": "MF고스트 3rd Season",
         "img": "../image/charimg/Q1/MF_Ghost_3rd_Season/Ogata.jpg"
       }
     ]
@@ -4718,12 +4718,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "마쉬",
-        "animeTitle": "Hell Mode: Yarikomi Suki no Gamer wa Haisettei no Isekai de Musou Suru",
+        "animeTitle": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~",
         "img": "../image/charimg/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Mash.jpg"
       },
       {
         "charName": "소니도리 리오우",
-        "animeTitle": "Medalist 2nd Season",
+        "animeTitle": "메달리스트 2기",
         "img": "../image/charimg/Q1/Medalist_2nd_Season/Riou_Sonidori.jpg"
       }
     ]
@@ -4735,17 +4735,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "테레시아",
-        "animeTitle": "Hell Mode: Yarikomi Suki no Gamer wa Haisettei no Isekai de Musou Suru",
+        "animeTitle": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~",
         "img": "../image/charimg/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Theresia.jpg"
       },
       {
         "charName": "코다이 미노리",
-        "animeTitle": "Ikoku Nikki",
+        "animeTitle": "위국일기",
         "img": "../image/charimg/Q1/Ikoku_Nikki/Minori_Koudai.jpg"
       },
       {
         "charName": "이스즈",
-        "animeTitle": "Jigokuraku 2nd Season",
+        "animeTitle": "지옥락 2기",
         "img": "../image/charimg/Q1/Jigokuraku_2nd_Season/Isuzu.jpg"
       }
     ]
@@ -4757,7 +4757,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "로단",
-        "animeTitle": "Hell Mode: Yarikomi Suki no Gamer wa Haisettei no Isekai de Musou Suru",
+        "animeTitle": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~",
         "img": "../image/charimg/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Rodan.jpg"
       }
     ]
@@ -4769,12 +4769,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "토머스 그란벨",
-        "animeTitle": "Hell Mode: Yarikomi Suki no Gamer wa Haisettei no Isekai de Musou Suru",
+        "animeTitle": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~",
         "img": "../image/charimg/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Thomas_Granvelle.jpg"
       },
       {
         "charName": "타카무라 미사키",
-        "animeTitle": "Ichigo Aika Zatsu de Namaiki na Imouto to Warikirenai Ani",
+        "animeTitle": "이치고 아이카 ~잡하고 생기발랄한 동생과 못말리는 오빠~",
         "img": "../image/charimg/Q1/Ichigo_Aika_Zatsu_de_Namaiki_na_Imouto_to_Warikirenai_Ani/Misaki_Takamura.jpg"
       }
     ]
@@ -4786,7 +4786,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "킬 폰 카르넬",
-        "animeTitle": "Hell Mode: Yarikomi Suki no Gamer wa Haisettei no Isekai de Musou Suru",
+        "animeTitle": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~",
         "img": "../image/charimg/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Carnell.jpg"
       }
     ]
@@ -4798,12 +4798,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "타마키 코타츠",
-        "animeTitle": "Enen no Shouboutai San no Shou Part 2",
+        "animeTitle": "불꽃 소방대 3장",
         "img": "../image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Tamaki_Kotatsu.jpg"
       },
       {
         "charName": "마모루군",
-        "animeTitle": "Enen no Shouboutai San no Shou Part 2",
+        "animeTitle": "불꽃 소방대 3장",
         "img": "../image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Mamoru-kun.jpg"
       }
     ]
@@ -4815,7 +4815,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "신라 쿠사카베",
-        "animeTitle": "Enen no Shouboutai San no Shou Part 2",
+        "animeTitle": "불꽃 소방대 3장",
         "img": "../image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Shinra_Kusakabe.jpg"
       },
       {
@@ -4832,7 +4832,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "마키 오제",
-        "animeTitle": "Enen no Shouboutai San no Shou Part 2",
+        "animeTitle": "불꽃 소방대 3장",
         "img": "../image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Maki_Oze.jpg"
       }
     ]
@@ -4844,12 +4844,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "아이리스",
-        "animeTitle": "Enen no Shouboutai San no Shou Part 2",
+        "animeTitle": "불꽃 소방대 3장",
         "img": "../image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Iris.jpg"
       },
       {
         "charName": "티르",
-        "animeTitle": "Okiraku Ryoushu no Tanoshii Ryouchi Bouei",
+        "animeTitle": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
         "img": "../image/charimg/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Till.jpg"
       }
     ]
@@ -4861,12 +4861,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "타케히사 히나와",
-        "animeTitle": "Enen no Shouboutai San no Shou Part 2",
+        "animeTitle": "불꽃 소방대 3장",
         "img": "../image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Takehisa_Hinawa.jpg"
       },
       {
         "charName": "사카요리 토모히사",
-        "animeTitle": "Chou Kaguya-hime!",
+        "animeTitle": "초(超) 가구야 공주!",
         "img": "../image/charimg/Q1/Chou_Kaguya-hime!/Tomohito_Sakayori.jpg"
       }
     ]
@@ -4878,12 +4878,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "쇼우 쿠사카베",
-        "animeTitle": "Enen no Shouboutai San no Shou Part 2",
+        "animeTitle": "불꽃 소방대 3장",
         "img": "../image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Shou_Kusakabe.jpg"
       },
       {
         "charName": "사카요리 모미지",
-        "animeTitle": "Chou Kaguya-hime!",
+        "animeTitle": "초(超) 가구야 공주!",
         "img": "../image/charimg/Q1/Chou_Kaguya-hime!/Momiji_Sakayori.jpg"
       }
     ]
@@ -4895,7 +4895,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "페어리",
-        "animeTitle": "Enen no Shouboutai San no Shou Part 2",
+        "animeTitle": "불꽃 소방대 3장",
         "img": "../image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Faerie.jpg"
       }
     ]
@@ -4907,7 +4907,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "마리 쿠사카베",
-        "animeTitle": "Enen no Shouboutai San no Shou Part 2",
+        "animeTitle": "불꽃 소방대 3장",
         "img": "../image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Mari_Kusakabe.jpg"
       }
     ]
@@ -4919,7 +4919,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "Dr. 조반니",
-        "animeTitle": "Enen no Shouboutai San no Shou Part 2",
+        "animeTitle": "불꽃 소방대 3장",
         "img": "../image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Dr._Giovanni.jpg"
       }
     ]
@@ -4931,7 +4931,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "오오구로",
-        "animeTitle": "Enen no Shouboutai San no Shou Part 2",
+        "animeTitle": "불꽃 소방대 3장",
         "img": "../image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Ooguro.jpg"
       }
     ]
@@ -4943,27 +4943,27 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "카린 사사키",
-        "animeTitle": "Enen no Shouboutai San no Shou Part 2",
+        "animeTitle": "불꽃 소방대 3장",
         "img": "../image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Sasaki_Karin.jpg"
       },
       {
         "charName": "타니 유스케",
-        "animeTitle": "Seihantai na Kimi to Boku",
+        "animeTitle": "정반대의 너와 나",
         "img": "../image/charimg/Q1/Seihantai_na_Kimi_to_Boku/Yuusuke_Tani.jpg"
       },
       {
         "charName": "야나기다 타쿠야",
-        "animeTitle": "MF Ghost 3rd Season",
+        "animeTitle": "MF고스트 3rd Season",
         "img": "../image/charimg/Q1/MF_Ghost_3rd_Season/Takuya_Yanagida.jpg"
       },
       {
         "charName": "피터 앤서니",
-        "animeTitle": "Prism Rondo",
+        "animeTitle": "프리즘 윤무곡",
         "img": "../image/charimg/Q1/Prism_Rondo/Peter_Anthony.jpg"
       },
       {
         "charName": "죠니 죠스타",
-        "animeTitle": "JoJo no Kimyou na Bouken Steel Ball Run",
+        "animeTitle": "스틸 볼 런: 죠죠의 기묘한 모험",
         "img": "../image/charimg/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Johnny_Joestar.jpg"
       }
     ]
@@ -4975,12 +4975,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "마리엘",
-        "animeTitle": "Tensei Shitara Dragon no Tamago Datta",
+        "animeTitle": "전생했더니 드래곤의 알이었다 ~최강이 아니면 목표로 하지 않아~",
         "img": "../image/charimg/Q1/Tensei_Shitara_Dragon_no_Tamago_Datta/Marielle.jpg"
       },
       {
         "charName": "FUSHI",
-        "animeTitle": "Chou Kaguya-hime!",
+        "animeTitle": "초(超) 가구야 공주!",
         "img": "../image/charimg/Q1/Chou_Kaguya-hime!/FUSHI.jpg"
       }
     ]
@@ -4992,7 +4992,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "반 네이 페르티오",
-        "animeTitle": "Okiraku Ryoushu no Tanoshii Ryouchi Bouei",
+        "animeTitle": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
         "img": "../image/charimg/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Van_Fertio.jpg"
       }
     ]
@@ -5004,7 +5004,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "푸르리엘",
-        "animeTitle": "Okiraku Ryoushu no Tanoshii Ryouchi Bouei",
+        "animeTitle": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
         "img": "../image/charimg/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Purriel.jpg"
       }
     ]
@@ -5016,12 +5016,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "쿠사라",
-        "animeTitle": "Okiraku Ryoushu no Tanoshii Ryouchi Bouei",
+        "animeTitle": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
         "img": "../image/charimg/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Xara.jpg"
       },
       {
         "charName": "와가리 미노루",
-        "animeTitle": "Dead Account",
+        "animeTitle": "데드 어카운트",
         "img": "../image/charimg/Q1/Dead_Account/Minoru_Wagari.jpg"
       }
     ]
@@ -5033,7 +5033,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "라다 프리오라",
-        "animeTitle": "Okiraku Ryoushu no Tanoshii Ryouchi Bouei",
+        "animeTitle": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
         "img": "../image/charimg/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Lada_Priora.jpg"
       }
     ]
@@ -5045,7 +5045,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "에스파다",
-        "animeTitle": "Okiraku Ryoushu no Tanoshii Ryouchi Bouei",
+        "animeTitle": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
         "img": "../image/charimg/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Esparda.jpg"
       },
       {
@@ -5062,7 +5062,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "메릴 스트라이프",
-        "animeTitle": "TRIGUN STARGAZE",
+        "animeTitle": "트라이건 스타게이즈",
         "img": "../image/charimg/Q1/TRIGUN_STARGAZE/Meryl_Stryfe.jpg"
       }
     ]
@@ -5074,7 +5074,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "밀리 톰슨",
-        "animeTitle": "TRIGUN STARGAZE",
+        "animeTitle": "트라이건 스타게이즈",
         "img": "../image/charimg/Q1/TRIGUN_STARGAZE/Milly_Thompson.jpg"
       }
     ]
@@ -5086,7 +5086,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "니콜라스 D. 울프우드",
-        "animeTitle": "TRIGUN STARGAZE",
+        "animeTitle": "트라이건 스타게이즈",
         "img": "../image/charimg/Q1/TRIGUN_STARGAZE/Nicholas_D._Wolfwood.jpg"
       }
     ]
@@ -5098,7 +5098,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "밀리온즈 나이브스",
-        "animeTitle": "TRIGUN STARGAZE",
+        "animeTitle": "트라이건 스타게이즈",
         "img": "../image/charimg/Q1/TRIGUN_STARGAZE/Knives_Millions.jpg"
       }
     ]
@@ -5110,7 +5110,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "저지 더 비스트",
-        "animeTitle": "TRIGUN STARGAZE",
+        "animeTitle": "트라이건 스타게이즈",
         "img": "../image/charimg/Q1/TRIGUN_STARGAZE/Zazie_the_Beast.jpg"
       }
     ]
@@ -5122,7 +5122,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "레오노프 더 퍼펫마스터",
-        "animeTitle": "TRIGUN STARGAZE",
+        "animeTitle": "트라이건 스타게이즈",
         "img": "../image/charimg/Q1/TRIGUN_STARGAZE/Leonof_the_Puppet-Master.jpg"
       }
     ]
@@ -5134,7 +5134,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "호퍼드 더 건틀렛",
-        "animeTitle": "TRIGUN STARGAZE",
+        "animeTitle": "트라이건 스타게이즈",
         "img": "../image/charimg/Q1/TRIGUN_STARGAZE/Hoppered_the_Gauntlet.jpg"
       }
     ]
@@ -5146,7 +5146,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "윌리엄 콘래드",
-        "animeTitle": "TRIGUN STARGAZE",
+        "animeTitle": "트라이건 스타게이즈",
         "img": "../image/charimg/Q1/TRIGUN_STARGAZE/William_Conrad.jpg"
       }
     ]
@@ -5175,7 +5175,7 @@ const CharacterVoiceData = {
       },
       {
         "charName": "나라 에미리",
-        "animeTitle": "Ikoku Nikki",
+        "animeTitle": "위국일기",
         "img": "../image/charimg/Q1/Ikoku_Nikki/Emiri_Nara.jpg"
       }
     ]
@@ -5192,7 +5192,7 @@ const CharacterVoiceData = {
       },
       {
         "charName": "쟈신",
-        "animeTitle": "Duel Masters LOST: Boukyaku no Taiyou",
+        "animeTitle": "듀얼마스터즈 LOST ~망각의 태양~",
         "img": "../image/charimg/Q1/Duel_Masters_LOST_Boukyaku_no_Taiyou/Jashin-kun.jpg"
       }
     ]
@@ -5288,22 +5288,22 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "에모토 나루히코",
-        "animeTitle": "Dead Account",
+        "animeTitle": "데드 어카운트",
         "img": "../image/charimg/Q1/Dead_Account/Naruhiko_Emoto.jpg"
       },
       {
         "charName": "야시로",
-        "animeTitle": "Yuusha no Kuzu",
+        "animeTitle": "쓰레기 용사",
         "img": "../image/charimg/Q1/Yuusha_no_Kuzu/Yashiro.jpg"
       },
       {
         "charName": "이치무라 코하쿠",
-        "animeTitle": "Uruwashi no Yoi no Tsuki",
+        "animeTitle": "아름다운 초저녁달",
         "img": "../image/charimg/Q1/Uruwashi_no_Yoi_no_Tsuki/Kohaku_Ichimura.jpg"
       },
       {
         "charName": "슈겐",
-        "animeTitle": "Jigokuraku 2nd Season",
+        "animeTitle": "지옥락 2기",
         "img": "../image/charimg/Q1/Jigokuraku_2nd_Season/Shugen.jpg"
       }
     ]
@@ -5315,12 +5315,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "아자키 요이마루",
-        "animeTitle": "Dead Account",
+        "animeTitle": "데드 어카운트",
         "img": "../image/charimg/Q1/Dead_Account/Yoimaru_Azaki.jpg"
       },
       {
         "charName": "하르트나이츠",
-        "animeTitle": "Akuyaku Reijou wa Ringoku no Outaishi ni Dekiai Sareru",
+        "animeTitle": "악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다",
         "img": "../image/charimg/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Hartknights.jpg"
       }
     ]
@@ -5332,7 +5332,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "스루기 데이",
-        "animeTitle": "Dead Account",
+        "animeTitle": "데드 어카운트",
         "img": "../image/charimg/Q1/Dead_Account/Dei_Surugi.jpg"
       }
     ]
@@ -5344,12 +5344,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "오오와다 잇코",
-        "animeTitle": "Dead Account",
+        "animeTitle": "데드 어카운트",
         "img": "../image/charimg/Q1/Dead_Account/Ikko_Oowada.jpg"
       },
       {
         "charName": "쿠와바타케 슌",
-        "animeTitle": "Uruwashi no Yoi no Tsuki",
+        "animeTitle": "아름다운 초저녁달",
         "img": "../image/charimg/Q1/Uruwashi_no_Yoi_no_Tsuki/Shun_Kuwabatake.jpg"
       }
     ]
@@ -5361,7 +5361,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "나메카와 키리",
-        "animeTitle": "Dead Account",
+        "animeTitle": "데드 어카운트",
         "img": "../image/charimg/Q1/Dead_Account/Kiri_Namekawa.jpg"
       }
     ]
@@ -5373,7 +5373,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "이타바시 카키코",
-        "animeTitle": "Dead Account",
+        "animeTitle": "데드 어카운트",
         "img": "../image/charimg/Q1/Dead_Account/Kakiko_Itabashi.jpg"
       }
     ]
@@ -5385,12 +5385,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "야바미 큐코",
-        "animeTitle": "Dead Account",
+        "animeTitle": "데드 어카운트",
         "img": "../image/charimg/Q1/Dead_Account/Kyuuko_Yabami.jpg"
       },
       {
         "charName": "다이애나",
-        "animeTitle": "Prism Rondo",
+        "animeTitle": "프리즘 윤무곡",
         "img": "../image/charimg/Q1/Prism_Rondo/Diana.jpg"
       }
     ]
@@ -5402,7 +5402,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "에니시로 아카리",
-        "animeTitle": "Dead Account",
+        "animeTitle": "데드 어카운트",
         "img": "../image/charimg/Q1/Dead_Account/Akari_Enishiro.jpg"
       }
     ]
@@ -5414,7 +5414,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "미나즈키 쿄카",
-        "animeTitle": "Jingai Kyoushitsu no Ningengirai Kyoushi",
+        "animeTitle": "인외 교실의 인간 혐오 교사",
         "img": "../image/charimg/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Kyouka_Minazuki.jpg"
       }
     ]
@@ -5426,12 +5426,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "우사미 스이",
-        "animeTitle": "Jingai Kyoushitsu no Ningengirai Kyoushi",
+        "animeTitle": "인외 교실의 인간 혐오 교사",
         "img": "../image/charimg/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Sui_Usami.jpg"
       },
       {
         "charName": "로바 마나카",
-        "animeTitle": "Medalist 2nd Season",
+        "animeTitle": "메달리스트 2기",
         "img": "../image/charimg/Q1/Medalist_2nd_Season/Manaka_Roba.jpg"
       }
     ]
@@ -5443,7 +5443,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "류자키 카린",
-        "animeTitle": "Jingai Kyoushitsu no Ningengirai Kyoushi",
+        "animeTitle": "인외 교실의 인간 혐오 교사",
         "img": "../image/charimg/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Karin_Ryuuzaki.jpg"
       }
     ]
@@ -5455,7 +5455,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "호시노 사토루",
-        "animeTitle": "Jingai Kyoushitsu no Ningengirai Kyoushi",
+        "animeTitle": "인외 교실의 인간 혐오 교사",
         "img": "../image/charimg/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Satoru_Hoshino.jpg"
       }
     ]
@@ -5467,7 +5467,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "오코노기 마키",
-        "animeTitle": "Jingai Kyoushitsu no Ningengirai Kyoushi",
+        "animeTitle": "인외 교실의 인간 혐오 교사",
         "img": "../image/charimg/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Maki_Okonogi.jpg"
       }
     ]
@@ -5479,7 +5479,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "인도 유키네",
-        "animeTitle": "Yuusha no Kuzu",
+        "animeTitle": "쓰레기 용사",
         "img": "../image/charimg/Q1/Yuusha_no_Kuzu/Yukine_Indou.jpg"
       }
     ]
@@ -5491,17 +5491,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "세라 카시와기 펜드레건",
-        "animeTitle": "Yuusha no Kuzu",
+        "animeTitle": "쓰레기 용사",
         "img": "../image/charimg/Q1/Yuusha_no_Kuzu/Sara_Pendragon.jpg"
       },
       {
         "charName": "아카리",
-        "animeTitle": "Akuyaku Reijou wa Ringoku no Outaishi ni Dekiai Sareru",
+        "animeTitle": "악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다",
         "img": "../image/charimg/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Akari.jpg"
       },
       {
         "charName": "야마다 아사에몬 사기리",
-        "animeTitle": "Jigokuraku 2nd Season",
+        "animeTitle": "지옥락 2기",
         "img": "../image/charimg/Q1/Jigokuraku_2nd_Season/Sagiri.jpg"
       }
     ]
@@ -5513,7 +5513,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "마루타",
-        "animeTitle": "Yuusha no Kuzu",
+        "animeTitle": "쓰레기 용사",
         "img": "../image/charimg/Q1/Yuusha_no_Kuzu/Maruta.jpg"
       }
     ]
@@ -5525,7 +5525,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "이시노오",
-        "animeTitle": "Yuusha no Kuzu",
+        "animeTitle": "쓰레기 용사",
         "img": "../image/charimg/Q1/Yuusha_no_Kuzu/Ishinoo.jpg"
       }
     ]
@@ -5537,17 +5537,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "키노시타 우타게",
-        "animeTitle": "Tamon-kun Ima Docchi!?",
+        "animeTitle": "타몬 군 지금 어느 쪽!?",
         "img": "../image/charimg/Q1/Tamon-kun_Ima_Docchi!/Utage_Kinoshita.jpg"
       },
       {
         "charName": "쿠논 그리온",
-        "animeTitle": "Majutsushi Kunon wa Mieteiru",
+        "animeTitle": "마술사 쿠논은 보인다",
         "img": "../image/charimg/Q1/Majutsushi_Kunon_wa_Mieteiru/Kunon_Glion.jpg"
       },
       {
         "charName": "루나미 야치요",
-        "animeTitle": "Chou Kaguya-hime!",
+        "animeTitle": "초(超) 가구야 공주!",
         "img": "../image/charimg/Q1/Chou_Kaguya-hime!/Yachiyo_Runami.jpg"
       }
     ]
@@ -5559,7 +5559,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "카이 린타로",
-        "animeTitle": "Tamon-kun Ima Docchi!?",
+        "animeTitle": "타몬 군 지금 어느 쪽!?",
         "img": "../image/charimg/Q1/Tamon-kun_Ima_Docchi!/Rintarou_Kai.jpg"
       }
     ]
@@ -5571,7 +5571,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "시라이시 이즈미",
-        "animeTitle": "Tamon-kun Ima Docchi!?",
+        "animeTitle": "타몬 군 지금 어느 쪽!?",
         "img": "../image/charimg/Q1/Tamon-kun_Ima_Docchi!/Izumi_Shiraishi.jpg"
       }
     ]
@@ -5583,7 +5583,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "리코",
-        "animeTitle": "Tamon-kun Ima Docchi!?",
+        "animeTitle": "타몬 군 지금 어느 쪽!?",
         "img": "../image/charimg/Q1/Tamon-kun_Ima_Docchi!/Riko.jpg"
       }
     ]
@@ -5595,7 +5595,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "키노시타 호마레",
-        "animeTitle": "Tamon-kun Ima Docchi!?",
+        "animeTitle": "타몬 군 지금 어느 쪽!?",
         "img": "../image/charimg/Q1/Tamon-kun_Ima_Docchi!/Homare_Kinoshita.jpg"
       }
     ]
@@ -5607,7 +5607,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "유이나",
-        "animeTitle": "Tamon-kun Ima Docchi!?",
+        "animeTitle": "타몬 군 지금 어느 쪽!?",
         "img": "../image/charimg/Q1/Tamon-kun_Ima_Docchi!/Yuina.jpg"
       }
     ]
@@ -5619,12 +5619,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "후지타 와타루",
-        "animeTitle": "Tamon-kun Ima Docchi!?",
+        "animeTitle": "타몬 군 지금 어느 쪽!?",
         "img": "../image/charimg/Q1/Tamon-kun_Ima_Docchi!/Wataru_Fujita.jpg"
       },
       {
         "charName": "샌드맨",
-        "animeTitle": "JoJo no Kimyou na Bouken Steel Ball Run",
+        "animeTitle": "스틸 볼 런: 죠죠의 기묘한 모험",
         "img": "../image/charimg/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Sandman.jpg"
       }
     ]
@@ -5636,7 +5636,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "유이츠카 이노리",
-        "animeTitle": "Medalist 2nd Season",
+        "animeTitle": "메달리스트 2기",
         "img": "../image/charimg/Q1/Medalist_2nd_Season/Inori_Yuitsuka.jpg"
       }
     ]
@@ -5648,7 +5648,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "소니도리 신이치로",
-        "animeTitle": "Medalist 2nd Season",
+        "animeTitle": "메달리스트 2기",
         "img": "../image/charimg/Q1/Medalist_2nd_Season/Shinichirou_Sonidori.jpg"
       }
     ]
@@ -5660,7 +5660,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "세코마 마모루",
-        "animeTitle": "Medalist 2nd Season",
+        "animeTitle": "메달리스트 2기",
         "img": "../image/charimg/Q1/Medalist_2nd_Season/Mamoru_Sekoma.jpg"
       }
     ]
@@ -5672,7 +5672,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "카고 코이치",
-        "animeTitle": "Medalist 2nd Season",
+        "animeTitle": "메달리스트 2기",
         "img": "../image/charimg/Q1/Medalist_2nd_Season/Kouichi_Kago.jpg"
       }
     ]
@@ -5684,7 +5684,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "오카자키 이루카",
-        "animeTitle": "Medalist 2nd Season",
+        "animeTitle": "메달리스트 2기",
         "img": "../image/charimg/Q1/Medalist_2nd_Season/Iruka_Okazaki.jpg"
       }
     ]
@@ -5696,7 +5696,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "유이츠카 히로노부",
-        "animeTitle": "Medalist 2nd Season",
+        "animeTitle": "메달리스트 2기",
         "img": "../image/charimg/Q1/Medalist_2nd_Season/Hironobu_Yuitsuka.jpg"
       }
     ]
@@ -5708,7 +5708,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "사루카와 린나",
-        "animeTitle": "Medalist 2nd Season",
+        "animeTitle": "메달리스트 2기",
         "img": "../image/charimg/Q1/Medalist_2nd_Season/Rinna_Sarukawa.jpg"
       }
     ]
@@ -5720,12 +5720,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "아나구마 사키나",
-        "animeTitle": "Medalist 2nd Season",
+        "animeTitle": "메달리스트 2기",
         "img": "../image/charimg/Q1/Medalist_2nd_Season/Sakina_Anaguma.jpg"
       },
       {
         "charName": "코야나기 카호",
-        "animeTitle": "Watashi ga Koibito ni Nareru Wake Naijan, Murimuri! (※Muri ja Nakatta!?): Next Shine!",
+        "animeTitle": "내가 연인이 될 수 있을 리 없잖아, 무리무리! (※무리가 아니었다?!) ~넥스트 샤인!~",
         "img": "../image/charimg/Q1/Watashi_ga_Koibito_ni_Nareru_Wake_Naijan,_Murimuri!_(※Muri_ja_Nakatta!_)__Next_Shine!/Kaho_Koyanagi.jpg"
       }
     ]
@@ -5737,7 +5737,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "리스 쿠루미",
-        "animeTitle": "Medalist 2nd Season",
+        "animeTitle": "메달리스트 2기",
         "img": "../image/charimg/Q1/Medalist_2nd_Season/Kurumi_Risu.jpg"
       }
     ]
@@ -5749,7 +5749,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "코죠 리이나",
-        "animeTitle": "Medalist 2nd Season",
+        "animeTitle": "메달리스트 2기",
         "img": "../image/charimg/Q1/Medalist_2nd_Season/Riina_Kojou.jpg"
       }
     ]
@@ -5761,7 +5761,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "타키구치 요이",
-        "animeTitle": "Uruwashi no Yoi no Tsuki",
+        "animeTitle": "아름다운 초저녁달",
         "img": "../image/charimg/Q1/Uruwashi_no_Yoi_no_Tsuki/Yoi_Takiguchi.jpg"
       }
     ]
@@ -5773,7 +5773,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "아카네 센타로",
-        "animeTitle": "Uruwashi no Yoi no Tsuki",
+        "animeTitle": "아름다운 초저녁달",
         "img": "../image/charimg/Q1/Uruwashi_no_Yoi_no_Tsuki/Sentarou_Akane.jpg"
       }
     ]
@@ -5785,7 +5785,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "스즈키 미유",
-        "animeTitle": "Seihantai na Kimi to Boku",
+        "animeTitle": "정반대의 너와 나",
         "img": "../image/charimg/Q1/Seihantai_na_Kimi_to_Boku/Miyu_Suzuki.jpg"
       }
     ]
@@ -5797,7 +5797,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "타이라 슈지",
-        "animeTitle": "Seihantai na Kimi to Boku",
+        "animeTitle": "정반대의 너와 나",
         "img": "../image/charimg/Q1/Seihantai_na_Kimi_to_Boku/Shuuji_Taira.jpg"
       }
     ]
@@ -5809,7 +5809,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "아즈마 시노",
-        "animeTitle": "Seihantai na Kimi to Boku",
+        "animeTitle": "정반대의 너와 나",
         "img": "../image/charimg/Q1/Seihantai_na_Kimi_to_Boku/Shino_Azuma.jpg"
       }
     ]
@@ -5821,7 +5821,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "야마다 켄타로",
-        "animeTitle": "Seihantai na Kimi to Boku",
+        "animeTitle": "정반대의 너와 나",
         "img": "../image/charimg/Q1/Seihantai_na_Kimi_to_Boku/Kentarou_Yamada.jpg"
       }
     ]
@@ -5833,7 +5833,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "와타나베 마나미",
-        "animeTitle": "Seihantai na Kimi to Boku",
+        "animeTitle": "정반대의 너와 나",
         "img": "../image/charimg/Q1/Seihantai_na_Kimi_to_Boku/Manami_Watanabe.jpg"
       }
     ]
@@ -5845,7 +5845,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "사토 아오이",
-        "animeTitle": "Seihantai na Kimi to Boku",
+        "animeTitle": "정반대의 너와 나",
         "img": "../image/charimg/Q1/Seihantai_na_Kimi_to_Boku/Aoi_Satou.jpg"
       }
     ]
@@ -5857,7 +5857,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "니시 나츠미",
-        "animeTitle": "Seihantai na Kimi to Boku",
+        "animeTitle": "정반대의 너와 나",
         "img": "../image/charimg/Q1/Seihantai_na_Kimi_to_Boku/Natsumi_Nishi.jpg"
       }
     ]
@@ -5869,7 +5869,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "타니의 할머니",
-        "animeTitle": "Seihantai na Kimi to Boku",
+        "animeTitle": "정반대의 너와 나",
         "img": "../image/charimg/Q1/Seihantai_na_Kimi_to_Boku/Tani_no_Sobo.jpg"
       }
     ]
@@ -5881,7 +5881,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "스즈키의 엄마",
-        "animeTitle": "Seihantai na Kimi to Boku",
+        "animeTitle": "정반대의 너와 나",
         "img": "../image/charimg/Q1/Seihantai_na_Kimi_to_Boku/Suzuki_no_Haha.jpg"
       }
     ]
@@ -5893,7 +5893,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "스즈키의 오빠",
-        "animeTitle": "Seihantai na Kimi to Boku",
+        "animeTitle": "정반대의 너와 나",
         "img": "../image/charimg/Q1/Seihantai_na_Kimi_to_Boku/Suzuki_no_Ani.jpg"
       }
     ]
@@ -5905,7 +5905,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "타니의 엄마",
-        "animeTitle": "Seihantai na Kimi to Boku",
+        "animeTitle": "정반대의 너와 나",
         "img": "../image/charimg/Q1/Seihantai_na_Kimi_to_Boku/Tani_no_Haha.jpg"
       }
     ]
@@ -5917,7 +5917,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "고마퐁",
-        "animeTitle": "Seihantai na Kimi to Boku",
+        "animeTitle": "정반대의 너와 나",
         "img": "../image/charimg/Q1/Seihantai_na_Kimi_to_Boku/Gomapon.jpg"
       }
     ]
@@ -5929,12 +5929,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "카지 유우키",
-        "animeTitle": "Kaya-chan wa Kowakunai",
+        "animeTitle": "카야는 무섭지 않아",
         "img": "../image/charimg/Q1/Kaya-chan_wa_Kowakunai/Namu_Ebisumori.jpg"
       },
       {
         "charName": "코바야카와 신노스케",
-        "animeTitle": "Prism Rondo",
+        "animeTitle": "프리즘 윤무곡",
         "img": "../image/charimg/Q1/Prism_Rondo/Shinnosuke_Kobayakawa.jpg"
       }
     ]
@@ -5946,7 +5946,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "모부 오사무",
-        "animeTitle": "Kaya-chan wa Kowakunai",
+        "animeTitle": "카야는 무섭지 않아",
         "img": "../image/charimg/Q1/Kaya-chan_wa_Kowakunai/Osamu_Mobu.jpg"
       }
     ]
@@ -5958,12 +5958,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "사토 미라이",
-        "animeTitle": "Kaya-chan wa Kowakunai",
+        "animeTitle": "카야는 무섭지 않아",
         "img": "../image/charimg/Q1/Kaya-chan_wa_Kowakunai/Mirai_Satou.jpg"
       },
       {
         "charName": "結",
-        "animeTitle": "Jigokuraku 2nd Season",
+        "animeTitle": "지옥락 2기",
         "img": "../image/charimg/Q1/Jigokuraku_2nd_Season/Yui.jpg"
       }
     ]
@@ -5975,7 +5975,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "에비스모리 나나",
-        "animeTitle": "Kaya-chan wa Kowakunai",
+        "animeTitle": "카야는 무섭지 않아",
         "img": "../image/charimg/Q1/Kaya-chan_wa_Kowakunai/Nana_Ebisumori.jpg"
       }
     ]
@@ -5987,7 +5987,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "원장",
-        "animeTitle": "Kaya-chan wa Kowakunai",
+        "animeTitle": "카야는 무섭지 않아",
         "img": "../image/charimg/Q1/Kaya-chan_wa_Kowakunai/Enchou.jpg"
       }
     ]
@@ -5999,7 +5999,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "타치바나 유즈",
-        "animeTitle": "Kaya-chan wa Kowakunai",
+        "animeTitle": "카야는 무섭지 않아",
         "img": "../image/charimg/Q1/Kaya-chan_wa_Kowakunai/Yuzu_Tachibana.jpg"
       }
     ]
@@ -6011,7 +6011,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "칸노 마이",
-        "animeTitle": "Kaya-chan wa Kowakunai",
+        "animeTitle": "카야는 무섭지 않아",
         "img": "../image/charimg/Q1/Kaya-chan_wa_Kowakunai/Mai_Sugano.jpg"
       }
     ]
@@ -6023,7 +6023,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "유미",
-        "animeTitle": "Kaya-chan wa Kowakunai",
+        "animeTitle": "카야는 무섭지 않아",
         "img": "../image/charimg/Q1/Kaya-chan_wa_Kowakunai/Yumi-chan.jpg"
       }
     ]
@@ -6035,12 +6035,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "아이코",
-        "animeTitle": "Kaya-chan wa Kowakunai",
+        "animeTitle": "카야는 무섭지 않아",
         "img": "../image/charimg/Q1/Kaya-chan_wa_Kowakunai/Aiko-chan.jpg"
       },
       {
         "charName": "펄",
-        "animeTitle": "Akuyaku Reijou wa Ringoku no Outaishi ni Dekiai Sareru",
+        "animeTitle": "악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다",
         "img": "../image/charimg/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Pearl.jpg"
       }
     ]
@@ -6052,12 +6052,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "야노미치루",
-        "animeTitle": "Kaya-chan wa Kowakunai",
+        "animeTitle": "카야는 무섭지 않아",
         "img": "../image/charimg/Q1/Kaya-chan_wa_Kowakunai/Michiru_Yano.jpg"
       },
       {
         "charName": "아마오리 하루나",
-        "animeTitle": "Watashi ga Koibito ni Nareru Wake Naijan, Murimuri! (※Muri ja Nakatta!?): Next Shine!",
+        "animeTitle": "내가 연인이 될 수 있을 리 없잖아, 무리무리! (※무리가 아니었다?!) ~넥스트 샤인!~",
         "img": "../image/charimg/Q1/Watashi_ga_Koibito_ni_Nareru_Wake_Naijan,_Murimuri!_(※Muri_ja_Nakatta!_)__Next_Shine!/Haruna_Amaori.jpg"
       }
     ]
@@ -6069,7 +6069,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "メロ先生",
-        "animeTitle": "Kaya-chan wa Kowakunai",
+        "animeTitle": "카야는 무섭지 않아",
         "img": "../image/charimg/Q1/Kaya-chan_wa_Kowakunai/Melo-sensei.jpg"
       }
     ]
@@ -6081,7 +6081,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "たちばなカン",
-        "animeTitle": "Kaya-chan wa Kowakunai",
+        "animeTitle": "카야는 무섭지 않아",
         "img": "../image/charimg/Q1/Kaya-chan_wa_Kowakunai/Kan_Tachibana.jpg"
       }
     ]
@@ -6093,7 +6093,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "노에 신지",
-        "animeTitle": "Hanazakari no Kimitachi e",
+        "animeTitle": "아름다운 그대에게",
         "img": "../image/charimg/Q1/Hanazakari_no_Kimitachi_e/Shinji_Noe.jpg"
       }
     ]
@@ -6105,7 +6105,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "카구라자카 마코토",
-        "animeTitle": "Hanazakari no Kimitachi e",
+        "animeTitle": "아름다운 그대에게",
         "img": "../image/charimg/Q1/Hanazakari_no_Kimitachi_e/Makoto_Kagurazaka.jpg"
       }
     ]
@@ -6117,7 +6117,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "니혼바시 와타루",
-        "animeTitle": "Hanazakari no Kimitachi e",
+        "animeTitle": "아름다운 그대에게",
         "img": "../image/charimg/Q1/Hanazakari_no_Kimitachi_e/Wataru_Nihonbashi.jpg"
       }
     ]
@@ -6129,7 +6129,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "세키메 쿄고",
-        "animeTitle": "Hanazakari no Kimitachi e",
+        "animeTitle": "아름다운 그대에게",
         "img": "../image/charimg/Q1/Hanazakari_no_Kimitachi_e/Kyogo_Sekime.jpg"
       }
     ]
@@ -6141,7 +6141,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "나카오 센리",
-        "animeTitle": "Hanazakari no Kimitachi e",
+        "animeTitle": "아름다운 그대에게",
         "img": "../image/charimg/Q1/Hanazakari_no_Kimitachi_e/Senri_Nakao.jpg"
       }
     ]
@@ -6153,7 +6153,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "제니에 코스",
-        "animeTitle": "Majutsushi Kunon wa Mieteiru",
+        "animeTitle": "마술사 쿠논은 보인다",
         "img": "../image/charimg/Q1/Majutsushi_Kunon_wa_Mieteiru/Jenie_Kors.jpg"
       }
     ]
@@ -6165,17 +6165,17 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "제온리 핀롤",
-        "animeTitle": "Majutsushi Kunon wa Mieteiru",
+        "animeTitle": "마술사 쿠논은 보인다",
         "img": "../image/charimg/Q1/Majutsushi_Kunon_wa_Mieteiru/Zeonly_Finroll.jpg"
       },
       {
         "charName": "히코야",
-        "animeTitle": "Hikuidori",
+        "animeTitle": "화식조 우슈보로토비구미",
         "img": "../image/charimg/Q1/Hikuidori/Hikoya.jpg"
       },
       {
         "charName": "한마 바키",
-        "animeTitle": "BAKI-DOU",
+        "animeTitle": "Baki-dou",
         "img": "../image/charimg/Q1/BAKI-DOU/Baki_Hanma.jpg"
       }
     ]
@@ -6187,7 +6187,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "로간 헤이워드",
-        "animeTitle": "Yuusha Party wo Oidasareta Kiyou Binbou",
+        "animeTitle": "용사 파티에서 쫓겨난 다재무능",
         "img": "../image/charimg/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Logan_Hayward.jpg"
       }
     ]
@@ -6199,7 +6199,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "올리버 카디프",
-        "animeTitle": "Yuusha Party wo Oidasareta Kiyou Binbou",
+        "animeTitle": "용사 파티에서 쫓겨난 다재무능",
         "img": "../image/charimg/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Oliver_Cardiff.jpg"
       }
     ]
@@ -6211,7 +6211,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "루나 프록하트",
-        "animeTitle": "Yuusha Party wo Oidasareta Kiyou Binbou",
+        "animeTitle": "용사 파티에서 쫓겨난 다재무능",
         "img": "../image/charimg/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Luna_Flockhart.jpg"
       }
     ]
@@ -6223,7 +6223,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "아네리 와일즈",
-        "animeTitle": "Yuusha Party wo Oidasareta Kiyou Binbou",
+        "animeTitle": "용사 파티에서 쫓겨난 다재무능",
         "img": "../image/charimg/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Annery_Wiles.jpg"
       }
     ]
@@ -6235,7 +6235,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "데릭 모즈레이",
-        "animeTitle": "Yuusha Party wo Oidasareta Kiyou Binbou",
+        "animeTitle": "용사 파티에서 쫓겨난 다재무능",
         "img": "../image/charimg/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Derrick_Mosely.jpg"
       }
     ]
@@ -6247,7 +6247,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "레인 허그웰",
-        "animeTitle": "Yuusha Party wo Oidasareta Kiyou Binbou",
+        "animeTitle": "용사 파티에서 쫓겨난 다재무능",
         "img": "../image/charimg/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Rain_Hagwell.jpg"
       }
     ]
@@ -6259,7 +6259,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "루클레샤 오티스",
-        "animeTitle": "Yuusha Party wo Oidasareta Kiyou Binbou",
+        "animeTitle": "용사 파티에서 쫓겨난 다재무능",
         "img": "../image/charimg/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Lucrecia_Otis.jpg"
       }
     ]
@@ -6271,7 +6271,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "윌크스 세버리",
-        "animeTitle": "Yuusha Party wo Oidasareta Kiyou Binbou",
+        "animeTitle": "용사 파티에서 쫓겨난 다재무능",
         "img": "../image/charimg/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Wilkes_Severley.jpg"
       }
     ]
@@ -6283,7 +6283,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "티아라로즈 라피스 클라멘티르",
-        "animeTitle": "Akuyaku Reijou wa Ringoku no Outaishi ni Dekiai Sareru",
+        "animeTitle": "악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다",
         "img": "../image/charimg/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Tiararose.jpg"
       }
     ]
@@ -6295,7 +6295,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "아이실라 펄랜드",
-        "animeTitle": "Akuyaku Reijou wa Ringoku no Outaishi ni Dekiai Sareru",
+        "animeTitle": "악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다",
         "img": "../image/charimg/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Aishira.jpg"
       }
     ]
@@ -6307,7 +6307,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "타쿠미 아사",
-        "animeTitle": "Ikoku Nikki",
+        "animeTitle": "위국일기",
         "img": "../image/charimg/Q1/Ikoku_Nikki/Asa_Takumi.jpg"
       }
     ]
@@ -6319,7 +6319,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "다이고 나나",
-        "animeTitle": "Ikoku Nikki",
+        "animeTitle": "위국일기",
         "img": "../image/charimg/Q1/Ikoku_Nikki/Nana_Daigo.jpg"
       }
     ]
@@ -6331,7 +6331,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "토노 카즈나리",
-        "animeTitle": "Ikoku Nikki",
+        "animeTitle": "위국일기",
         "img": "../image/charimg/Q1/Ikoku_Nikki/Kazunari_Touno.jpg"
       }
     ]
@@ -6343,7 +6343,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "코다이 쿄코",
-        "animeTitle": "Ikoku Nikki",
+        "animeTitle": "위국일기",
         "img": "../image/charimg/Q1/Ikoku_Nikki/Kyouko_Koudai.jpg"
       }
     ]
@@ -6355,7 +6355,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "코토코",
-        "animeTitle": "Ikoku Nikki",
+        "animeTitle": "위국일기",
         "img": "../image/charimg/Q1/Ikoku_Nikki/Kotoko.jpg"
       }
     ]
@@ -6367,7 +6367,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "모츠",
-        "animeTitle": "Ikoku Nikki",
+        "animeTitle": "위국일기",
         "img": "../image/charimg/Q1/Ikoku_Nikki/Motsu.jpg"
       }
     ]
@@ -6379,7 +6379,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "나라 미치코",
-        "animeTitle": "Ikoku Nikki",
+        "animeTitle": "위국일기",
         "img": "../image/charimg/Q1/Ikoku_Nikki/Michiko_Nara.jpg"
       }
     ]
@@ -6391,7 +6391,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "핫토리",
-        "animeTitle": "Ikoku Nikki",
+        "animeTitle": "위국일기",
         "img": "../image/charimg/Q1/Ikoku_Nikki/Hattori.jpg"
       }
     ]
@@ -6403,7 +6403,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "모리모토 치요",
-        "animeTitle": "Ikoku Nikki",
+        "animeTitle": "위국일기",
         "img": "../image/charimg/Q1/Ikoku_Nikki/Chiyo_Morimoto.jpg"
       }
     ]
@@ -6415,7 +6415,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "모리",
-        "animeTitle": "Ikoku Nikki",
+        "animeTitle": "위국일기",
         "img": "../image/charimg/Q1/Ikoku_Nikki/Mori.jpg"
       }
     ]
@@ -6427,7 +6427,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "토고 유토",
-        "animeTitle": "Ikoku Nikki",
+        "animeTitle": "위국일기",
         "img": "../image/charimg/Q1/Ikoku_Nikki/Yuuto_Tougou.jpg"
       }
     ]
@@ -6439,7 +6439,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "아야카",
-        "animeTitle": "Ikoku Nikki",
+        "animeTitle": "위국일기",
         "img": "../image/charimg/Q1/Ikoku_Nikki/Ayaka.jpg"
       }
     ]
@@ -6451,7 +6451,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "칸다 유우미",
-        "animeTitle": "Ikoku Nikki",
+        "animeTitle": "위국일기",
         "img": "../image/charimg/Q1/Ikoku_Nikki/Yumi_Kanda.jpg"
       }
     ]
@@ -6463,7 +6463,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "소네 아스카",
-        "animeTitle": "Ikoku Nikki",
+        "animeTitle": "위국일기",
         "img": "../image/charimg/Q1/Ikoku_Nikki/Asuka_Sone.jpg"
       }
     ]
@@ -6475,7 +6475,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "야하라",
-        "animeTitle": "Ikoku Nikki",
+        "animeTitle": "위국일기",
         "img": "../image/charimg/Q1/Ikoku_Nikki/Yahara.jpg"
       }
     ]
@@ -6487,7 +6487,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "요시무라",
-        "animeTitle": "Ikoku Nikki",
+        "animeTitle": "위국일기",
         "img": "../image/charimg/Q1/Ikoku_Nikki/Yoshimura.jpg"
       }
     ]
@@ -6499,7 +6499,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "토쿠히코",
-        "animeTitle": "Ikoku Nikki",
+        "animeTitle": "위국일기",
         "img": "../image/charimg/Q1/Ikoku_Nikki/Tokuhiko.jpg"
       }
     ]
@@ -6511,7 +6511,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "토라지로",
-        "animeTitle": "Hikuidori",
+        "animeTitle": "화식조 우슈보로토비구미",
         "img": "../image/charimg/Q1/Hikuidori/Torajirou.jpg"
       }
     ]
@@ -6523,7 +6523,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "렌지",
-        "animeTitle": "Hikuidori",
+        "animeTitle": "화식조 우슈보로토비구미",
         "img": "../image/charimg/Q1/Hikuidori/Renji.jpg"
       }
     ]
@@ -6535,7 +6535,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "오오토 칸쿠로",
-        "animeTitle": "Hikuidori",
+        "animeTitle": "화식조 우슈보로토비구미",
         "img": "../image/charimg/Q1/Hikuidori/Kankurou_Ooto.jpg"
       }
     ]
@@ -6547,7 +6547,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "킨고로",
-        "animeTitle": "Hikuidori",
+        "animeTitle": "화식조 우슈보로토비구미",
         "img": "../image/charimg/Q1/Hikuidori/Kingorou.jpg"
       }
     ]
@@ -6559,7 +6559,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "토리고에 아키요",
-        "animeTitle": "Hikuidori",
+        "animeTitle": "화식조 우슈보로토비구미",
         "img": "../image/charimg/Q1/Hikuidori/Akiyo.jpg"
       }
     ]
@@ -6571,7 +6571,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "다테가세키 모리에몬",
-        "animeTitle": "Hikuidori",
+        "animeTitle": "화식조 우슈보로토비구미",
         "img": "../image/charimg/Q1/Hikuidori/Moriemon_Dategasaki.jpg"
       }
     ]
@@ -6583,12 +6583,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "신죠 로쿠에몬",
-        "animeTitle": "Hikuidori",
+        "animeTitle": "화식조 우슈보로토비구미",
         "img": "../image/charimg/Q1/Hikuidori/Rokuemon_Houjou.jpg"
       },
       {
         "charName": "미야모토 무사시",
-        "animeTitle": "BAKI-DOU",
+        "animeTitle": "Baki-dou",
         "img": "../image/charimg/Q1/BAKI-DOU/Musashi_Miyamoto.jpg"
       }
     ]
@@ -6600,7 +6600,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "마츠나가 미유키",
-        "animeTitle": "Hikuidori",
+        "animeTitle": "화식조 우슈보로토비구미",
         "img": "../image/charimg/Q1/Hikuidori/Miyuki.jpg"
       }
     ]
@@ -6612,7 +6612,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "사이온지 렌",
-        "animeTitle": "MF Ghost 3rd Season",
+        "animeTitle": "MF고스트 3rd Season",
         "img": "../image/charimg/Q1/MF_Ghost_3rd_Season/Ren_Saionji.jpg"
       }
     ]
@@ -6624,7 +6624,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "미하엘 베켄바우어",
-        "animeTitle": "MF Ghost 3rd Season",
+        "animeTitle": "MF고스트 3rd Season",
         "img": "../image/charimg/Q1/MF_Ghost_3rd_Season/Michael_Beckenbauer.jpg"
       }
     ]
@@ -6636,7 +6636,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "사와타리 코우키",
-        "animeTitle": "MF Ghost 3rd Season",
+        "animeTitle": "MF고스트 3rd Season",
         "img": "../image/charimg/Q1/MF_Ghost_3rd_Season/Kouki_Sawatari.jpg"
       }
     ]
@@ -6648,7 +6648,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "타나카 요우지",
-        "animeTitle": "MF Ghost 3rd Season",
+        "animeTitle": "MF고스트 3rd Season",
         "img": "../image/charimg/Q1/MF_Ghost_3rd_Season/Youji_Tanaka.jpg"
       }
     ]
@@ -6660,7 +6660,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "죠유 후미히로",
-        "animeTitle": "MF Ghost 3rd Season",
+        "animeTitle": "MF고스트 3rd Season",
         "img": "../image/charimg/Q1/MF_Ghost_3rd_Season/Hiroshi_Fumihiro.jpg"
       }
     ]
@@ -6672,7 +6672,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "오쿠야마 히로야",
-        "animeTitle": "MF Ghost 3rd Season",
+        "animeTitle": "MF고스트 3rd Season",
         "img": "../image/charimg/Q1/MF_Ghost_3rd_Season/Hiroya_Okuyama.jpg"
       }
     ]
@@ -6684,7 +6684,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "코가시와 카이",
-        "animeTitle": "MF Ghost 3rd Season",
+        "animeTitle": "MF고스트 3rd Season",
         "img": "../image/charimg/Q1/MF_Ghost_3rd_Season/Kai_Kogashiwa.jpg"
       }
     ]
@@ -6696,7 +6696,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "켄지",
-        "animeTitle": "MF Ghost 3rd Season",
+        "animeTitle": "MF고스트 3rd Season",
         "img": "../image/charimg/Q1/MF_Ghost_3rd_Season/Kenji.jpg"
       }
     ]
@@ -6708,7 +6708,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "마에조노 카즈히로",
-        "animeTitle": "MF Ghost 3rd Season",
+        "animeTitle": "MF고스트 3rd Season",
         "img": "../image/charimg/Q1/MF_Ghost_3rd_Season/Kazuhiro_Maezono.jpg"
       }
     ]
@@ -6720,7 +6720,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "사토 마미",
-        "animeTitle": "MF Ghost 3rd Season",
+        "animeTitle": "MF고스트 3rd Season",
         "img": "../image/charimg/Q1/MF_Ghost_3rd_Season/Mami_Satou.jpg"
       }
     ]
@@ -6732,7 +6732,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "야시오 카케루",
-        "animeTitle": "MF Ghost 3rd Season",
+        "animeTitle": "MF고스트 3rd Season",
         "img": "../image/charimg/Q1/MF_Ghost_3rd_Season/Kakeru_Yashio.jpg"
       }
     ]
@@ -6744,7 +6744,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "사카모토 유다이",
-        "animeTitle": "MF Ghost 3rd Season",
+        "animeTitle": "MF고스트 3rd Season",
         "img": "../image/charimg/Q1/MF_Ghost_3rd_Season/Yuudai_Sakamoto.jpg"
       }
     ]
@@ -6756,7 +6756,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "쿠리하라 쿄코",
-        "animeTitle": "MF Ghost 3rd Season",
+        "animeTitle": "MF고스트 3rd Season",
         "img": "../image/charimg/Q1/MF_Ghost_3rd_Season/Kyouko_Kurihara.jpg"
       }
     ]
@@ -6768,12 +6768,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "유즈리하",
-        "animeTitle": "Jigokuraku 2nd Season",
+        "animeTitle": "지옥락 2기",
         "img": "../image/charimg/Q1/Jigokuraku_2nd_Season/Yuzuriha.jpg"
       },
       {
         "charName": "루시 스틸",
-        "animeTitle": "JoJo no Kimyou na Bouken Steel Ball Run",
+        "animeTitle": "스틸 볼 런: 죠죠의 기묘한 모험",
         "img": "../image/charimg/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Lucy_Steel.jpg"
       }
     ]
@@ -6785,7 +6785,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "누루가이",
-        "animeTitle": "Jigokuraku 2nd Season",
+        "animeTitle": "지옥락 2기",
         "img": "../image/charimg/Q1/Jigokuraku_2nd_Season/Nurugai.jpg"
       }
     ]
@@ -6797,7 +6797,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "타미야 간테츠사이",
-        "animeTitle": "Jigokuraku 2nd Season",
+        "animeTitle": "지옥락 2기",
         "img": "../image/charimg/Q1/Jigokuraku_2nd_Season/Gantetsusai_Tamiya.jpg"
       }
     ]
@@ -6809,7 +6809,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "후치",
-        "animeTitle": "Jigokuraku 2nd Season",
+        "animeTitle": "지옥락 2기",
         "img": "../image/charimg/Q1/Jigokuraku_2nd_Season/Fuchi.jpg"
       }
     ]
@@ -6821,12 +6821,12 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "메이",
-        "animeTitle": "Jigokuraku 2nd Season",
+        "animeTitle": "지옥락 2기",
         "img": "../image/charimg/Q1/Jigokuraku_2nd_Season/Mei.jpg"
       },
       {
         "charName": "이사야마 마미",
-        "animeTitle": "Chou Kaguya-hime!",
+        "animeTitle": "초(超) 가구야 공주!",
         "img": "../image/charimg/Q1/Chou_Kaguya-hime!/Mami_Isayama.jpg"
       }
     ]
@@ -6838,22 +6838,22 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "리엔",
-        "animeTitle": "Jigokuraku 2nd Season",
+        "animeTitle": "지옥락 2기",
         "img": "../image/charimg/Q1/Jigokuraku_2nd_Season/Rien.jpg"
       },
       {
         "charName": "란",
-        "animeTitle": "Jigokuraku 2nd Season",
+        "animeTitle": "지옥락 2기",
         "img": "../image/charimg/Q1/Jigokuraku_2nd_Season/Ran.jpg"
       },
       {
         "charName": "타오화",
-        "animeTitle": "Jigokuraku 2nd Season",
+        "animeTitle": "지옥락 2기",
         "img": "../image/charimg/Q1/Jigokuraku_2nd_Season/Tao_Fa.jpg"
       },
       {
         "charName": "이치조인 타케",
-        "animeTitle": "Prism Rondo",
+        "animeTitle": "프리즘 윤무곡",
         "img": "../image/charimg/Q1/Prism_Rondo/Take_Ichijoin.jpg"
       }
     ]
@@ -6865,7 +6865,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "아마오리 레나코",
-        "animeTitle": "Watashi ga Koibito ni Nareru Wake Naijan, Murimuri! (※Muri ja Nakatta!?): Next Shine!",
+        "animeTitle": "내가 연인이 될 수 있을 리 없잖아, 무리무리! (※무리가 아니었다?!) ~넥스트 샤인!~",
         "img": "../image/charimg/Q1/Watashi_ga_Koibito_ni_Nareru_Wake_Naijan,_Murimuri!_(※Muri_ja_Nakatta!_)__Next_Shine!/Renako_Amaori.jpg"
       }
     ]
@@ -6877,7 +6877,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "세나 아지사이",
-        "animeTitle": "Watashi ga Koibito ni Nareru Wake Naijan, Murimuri! (※Muri ja Nakatta!?): Next Shine!",
+        "animeTitle": "내가 연인이 될 수 있을 리 없잖아, 무리무리! (※무리가 아니었다?!) ~넥스트 샤인!~",
         "img": "../image/charimg/Q1/Watashi_ga_Koibito_ni_Nareru_Wake_Naijan,_Murimuri!_(※Muri_ja_Nakatta!_)__Next_Shine!/Ajisai_Sena.jpg"
       }
     ]
@@ -6889,7 +6889,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "아리스가와 쿄헤이",
-        "animeTitle": "Arisugawa Ren tte Honto wa Onna Nanda yo ne.",
+        "animeTitle": "아리스가와 렌은 사실 여자라구!!",
         "img": "../image/charimg/Q1/Arisugawa_Ren_tte_Honto_wa_Onna_Nanda_yo_ne/Kyouhei_Arisugawa.jpg"
       }
     ]
@@ -6901,7 +6901,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "아리스가와 렌",
-        "animeTitle": "Arisugawa Ren tte Honto wa Onna Nanda yo ne.",
+        "animeTitle": "아리스가와 렌은 사실 여자라구!!",
         "img": "../image/charimg/Q1/Arisugawa_Ren_tte_Honto_wa_Onna_Nanda_yo_ne/Ren_Arisugawa.jpg"
       }
     ]
@@ -6913,7 +6913,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "요시오카 사츠키",
-        "animeTitle": "Arisugawa Ren tte Honto wa Onna Nanda yo ne.",
+        "animeTitle": "아리스가와 렌은 사실 여자라구!!",
         "img": "../image/charimg/Q1/Arisugawa_Ren_tte_Honto_wa_Onna_Nanda_yo_ne/Satsuki_Yoshioka.jpg"
       }
     ]
@@ -6925,7 +6925,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "히이라기 모모카",
-        "animeTitle": "Arisugawa Ren tte Honto wa Onna Nanda yo ne.",
+        "animeTitle": "아리스가와 렌은 사실 여자라구!!",
         "img": "../image/charimg/Q1/Arisugawa_Ren_tte_Honto_wa_Onna_Nanda_yo_ne/Momoka_Hiiragi.jpg"
       }
     ]
@@ -6937,7 +6937,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "미야시타 하루나",
-        "animeTitle": "Arisugawa Ren tte Honto wa Onna Nanda yo ne.",
+        "animeTitle": "아리스가와 렌은 사실 여자라구!!",
         "img": "../image/charimg/Q1/Arisugawa_Ren_tte_Honto_wa_Onna_Nanda_yo_ne/Haruna_Miyashita.jpg"
       }
     ]
@@ -6949,7 +6949,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "스키사키 히나",
-        "animeTitle": "Arisugawa Ren tte Honto wa Onna Nanda yo ne.",
+        "animeTitle": "아리스가와 렌은 사실 여자라구!!",
         "img": "../image/charimg/Q1/Arisugawa_Ren_tte_Honto_wa_Onna_Nanda_yo_ne/Hina_Sugisaki.jpg"
       }
     ]
@@ -6961,7 +6961,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "타카무라 아이카",
-        "animeTitle": "Ichigo Aika Zatsu de Namaiki na Imouto to Warikirenai Ani",
+        "animeTitle": "이치고 아이카 ~잡하고 생기발랄한 동생과 못말리는 오빠~",
         "img": "../image/charimg/Q1/Ichigo_Aika_Zatsu_de_Namaiki_na_Imouto_to_Warikirenai_Ani/Aika_Takamura.jpg"
       }
     ]
@@ -6973,7 +6973,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "타카무라 코타",
-        "animeTitle": "Ichigo Aika Zatsu de Namaiki na Imouto to Warikirenai Ani",
+        "animeTitle": "이치고 아이카 ~잡하고 생기발랄한 동생과 못말리는 오빠~",
         "img": "../image/charimg/Q1/Ichigo_Aika_Zatsu_de_Namaiki_na_Imouto_to_Warikirenai_Ani/Kouta_Takamura.jpg"
       }
     ]
@@ -6985,7 +6985,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "타카무라 요시유키",
-        "animeTitle": "Ichigo Aika Zatsu de Namaiki na Imouto to Warikirenai Ani",
+        "animeTitle": "이치고 아이카 ~잡하고 생기발랄한 동생과 못말리는 오빠~",
         "img": "../image/charimg/Q1/Ichigo_Aika_Zatsu_de_Namaiki_na_Imouto_to_Warikirenai_Ani/Yoshiyuki_Takamura.jpg"
       }
     ]
@@ -6997,7 +6997,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "오르시스",
-        "animeTitle": "Saioshi no Gikei Mederu Tame, Nagaikishimasu!",
+        "animeTitle": "최애 의붓형을 사랑하기 위해, 오래 살겠습니다!",
         "img": "../image/charimg/Q1/Saioshi_no_Gikei_Mederu_Tame,_Nagaikishimasu!/Orsis.jpg"
       }
     ]
@@ -7009,7 +7009,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "하르스",
-        "animeTitle": "Saioshi no Gikei Mederu Tame, Nagaikishimasu!",
+        "animeTitle": "최애 의붓형을 사랑하기 위해, 오래 살겠습니다!",
         "img": "../image/charimg/Q1/Saioshi_no_Gikei_Mederu_Tame,_Nagaikishimasu!/Hals.jpg"
       }
     ]
@@ -7021,7 +7021,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "플로로",
-        "animeTitle": "Saioshi no Gikei Mederu Tame, Nagaikishimasu!",
+        "animeTitle": "최애 의붓형을 사랑하기 위해, 오래 살겠습니다!",
         "img": "../image/charimg/Q1/Saioshi_no_Gikei_Mederu_Tame,_Nagaikishimasu!/Floro.jpg"
       }
     ]
@@ -7033,7 +7033,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "나데시코",
-        "animeTitle": "Android wa Keiken Ninzuu ni Hairimasu ka??",
+        "animeTitle": "안드로이드는 경험인 수에 들어가나요??",
         "img": "../image/charimg/Q1/Android_wa_Keiken_Ninzuu_ni_Hairimasu_ka/Nadeshiko.jpg"
       }
     ]
@@ -7045,7 +7045,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "츠다 아카네",
-        "animeTitle": "Android wa Keiken Ninzuu ni Hairimasu ka??",
+        "animeTitle": "안드로이드는 경험인 수에 들어가나요??",
         "img": "../image/charimg/Q1/Android_wa_Keiken_Ninzuu_ni_Hairimasu_ka/Akane_Tsuda.jpg"
       }
     ]
@@ -7057,7 +7057,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "이토 씨",
-        "animeTitle": "Android wa Keiken Ninzuu ni Hairimasu ka??",
+        "animeTitle": "안드로이드는 경험인 수에 들어가나요??",
         "img": "../image/charimg/Q1/Android_wa_Keiken_Ninzuu_ni_Hairimasu_ka/Itou-san.jpg"
       }
     ]
@@ -7069,7 +7069,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "사쿠나히메",
-        "animeTitle": "Tensui no Sakuna-hime: Kokorowa Inasaku Nisshi",
+        "animeTitle": "천수의 사쿠나히메 코코로와 농사 일지",
         "img": "../image/charimg/Q1/Tensui_no_Sakuna-hime_Kokorowa_Inasaku_Nisshi/Sakuna-hime.jpg"
       }
     ]
@@ -7081,7 +7081,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "코코로와히메",
-        "animeTitle": "Tensui no Sakuna-hime: Kokorowa Inasaku Nisshi",
+        "animeTitle": "천수의 사쿠나히메 코코로와 농사 일지",
         "img": "../image/charimg/Q1/Tensui_no_Sakuna-hime_Kokorowa_Inasaku_Nisshi/Kokorowa-hime.jpg"
       }
     ]
@@ -7093,7 +7093,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "캐서린 애스터",
-        "animeTitle": "Prism Rondo",
+        "animeTitle": "프리즘 윤무곡",
         "img": "../image/charimg/Q1/Prism_Rondo/Catherine_Astor.jpg"
       }
     ]
@@ -7105,7 +7105,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "그레이스 클라크",
-        "animeTitle": "Prism Rondo",
+        "animeTitle": "프리즘 윤무곡",
         "img": "../image/charimg/Q1/Prism_Rondo/Grace.jpg"
       }
     ]
@@ -7117,7 +7117,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "호리애나 하비",
-        "animeTitle": "Prism Rondo",
+        "animeTitle": "프리즘 윤무곡",
         "img": "../image/charimg/Q1/Prism_Rondo/Orianna.jpg"
       }
     ]
@@ -7129,7 +7129,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "샘",
-        "animeTitle": "Prism Rondo",
+        "animeTitle": "프리즘 윤무곡",
         "img": "../image/charimg/Q1/Prism_Rondo/Sam.jpg"
       }
     ]
@@ -7141,7 +7141,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "스테이시 라이트",
-        "animeTitle": "Prism Rondo",
+        "animeTitle": "프리즘 윤무곡",
         "img": "../image/charimg/Q1/Prism_Rondo/Stacy.jpg"
       }
     ]
@@ -7153,7 +7153,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "셜리 테일러",
-        "animeTitle": "Prism Rondo",
+        "animeTitle": "프리즘 윤무곡",
         "img": "../image/charimg/Q1/Prism_Rondo/Shirley.jpg"
       }
     ]
@@ -7165,7 +7165,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "사라 스미스",
-        "animeTitle": "Prism Rondo",
+        "animeTitle": "프리즘 윤무곡",
         "img": "../image/charimg/Q1/Prism_Rondo/Sara.jpg"
       }
     ]
@@ -7177,7 +7177,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "아서 카터렛",
-        "animeTitle": "Prism Rondo",
+        "animeTitle": "프리즘 윤무곡",
         "img": "../image/charimg/Q1/Prism_Rondo/Arthur.jpg"
       }
     ]
@@ -7189,7 +7189,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "보비 로버츠",
-        "animeTitle": "Prism Rondo",
+        "animeTitle": "프리즘 윤무곡",
         "img": "../image/charimg/Q1/Prism_Rondo/Bobby.jpg"
       }
     ]
@@ -7201,7 +7201,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "데이비드",
-        "animeTitle": "Prism Rondo",
+        "animeTitle": "프리즘 윤무곡",
         "img": "../image/charimg/Q1/Prism_Rondo/David.jpg"
       }
     ]
@@ -7213,7 +7213,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "에디",
-        "animeTitle": "Prism Rondo",
+        "animeTitle": "프리즘 윤무곡",
         "img": "../image/charimg/Q1/Prism_Rondo/Eddie.jpg"
       }
     ]
@@ -7225,7 +7225,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "프레이야",
-        "animeTitle": "Prism Rondo",
+        "animeTitle": "프리즘 윤무곡",
         "img": "../image/charimg/Q1/Prism_Rondo/Freya.jpg"
       }
     ]
@@ -7237,7 +7237,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "이누DOGE",
-        "animeTitle": "Chou Kaguya-hime!",
+        "animeTitle": "초(超) 가구야 공주!",
         "img": "../image/charimg/Q1/Chou_Kaguya-hime!/Inudoge.jpg"
       }
     ]
@@ -7249,7 +7249,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "미카도 아키라",
-        "animeTitle": "Chou Kaguya-hime!",
+        "animeTitle": "초(超) 가구야 공주!",
         "img": "../image/charimg/Q1/Chou_Kaguya-hime!/Akira_Mikado.jpg"
       }
     ]
@@ -7261,7 +7261,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "키리후다 윈",
-        "animeTitle": "Duel Masters LOST: Boukyaku no Taiyou",
+        "animeTitle": "듀얼마스터즈 LOST ~망각의 태양~",
         "img": "../image/charimg/Q1/Duel_Masters_LOST_Boukyaku_no_Taiyou/Win_Kirifuda.jpg"
       }
     ]
@@ -7273,7 +7273,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "니이카",
-        "animeTitle": "Duel Masters LOST: Boukyaku no Taiyou",
+        "animeTitle": "듀얼마스터즈 LOST ~망각의 태양~",
         "img": "../image/charimg/Q1/Duel_Masters_LOST_Boukyaku_no_Taiyou/Niika_Katori.jpg"
       }
     ]
@@ -7285,7 +7285,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "코쿠죠 쿄시로",
-        "animeTitle": "Duel Masters LOST: Boukyaku no Taiyou",
+        "animeTitle": "듀얼마스터즈 LOST ~망각의 태양~",
         "img": "../image/charimg/Q1/Duel_Masters_LOST_Boukyaku_no_Taiyou/Kyoushirou_Kokujou.jpg"
       }
     ]
@@ -7297,7 +7297,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "레츠 카이오",
-        "animeTitle": "BAKI-DOU",
+        "animeTitle": "Baki-dou",
         "img": "../image/charimg/Q1/BAKI-DOU/Kaiou_Retsu.jpg"
       }
     ]
@@ -7309,7 +7309,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "시부카와 고키",
-        "animeTitle": "BAKI-DOU",
+        "animeTitle": "Baki-dou",
         "img": "../image/charimg/Q1/BAKI-DOU/Gouki_Shibukawa.jpg"
       }
     ]
@@ -7321,7 +7321,7 @@ const CharacterVoiceData = {
     "characters": [
       {
         "charName": "포코로코",
-        "animeTitle": "JoJo no Kimyou na Bouken Steel Ball Run",
+        "animeTitle": "스틸 볼 런: 죠죠의 기묘한 모험",
         "img": "../image/charimg/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Pocoloco.jpg"
       }
     ]

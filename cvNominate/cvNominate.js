@@ -20,85 +20,133 @@ document.addEventListener("DOMContentLoaded", () => {
 /**
  * 3. Step 1: 초성 아코디언 및 성우 리스트 렌더링
  */
-function renderCVStep1() {
+function renderCVStep1(searchTerm = "") {
     const leftArea = document.getElementById("left-area");
     if (!leftArea) return;
 
     const genderKey = cvState.theme.includes("female") ? "female" : "male";
     
-    // 성별 필터링 및 가나다순 정렬
-    const filteredCVs = Object.values(CharacterVoiceData)
-        .filter(cv => String(cv.gender).toLowerCase() === genderKey)
-        .sort((a, b) => a.name.localeCompare(b.name, 'ko'));
+    // 검색창이 이미 있는지 확인 (없을 때만 생성하여 한글 입력 끊김 방지)
+    if (!document.getElementById("cv-search")) {
+        leftArea.innerHTML = `
+            <div class="search-container">
+                <input type="text" id="cv-search" placeholder="성우 이름을 검색하세요..." oninput="handleSearch(this.value)">
+            </div>
+            <h2 class="step-title">${cvState.currentAward} 후보 선택</h2>
+            <div id="cv-list-container"></div>
+        `;
+    }
 
-    // 초성별 그룹화
+    const listContainer = document.getElementById("cv-list-container");
+    
+    // 데이터 필터링
+    let filteredList = Object.values(CharacterVoiceData)
+        .filter(cv => String(cv.gender).toLowerCase() === genderKey);
+
+    if (searchTerm.trim() !== "") {
+        filteredList = filteredList.filter(cv => 
+            cv.name.toLowerCase().includes(searchTerm.toLowerCase().trim())
+        );
+    }
+
+    filteredList.sort((a, b) => a.name.localeCompare(b.name, 'ko'));
+
+    // 초성 그룹화 및 리스트 생성
     const groups = {};
-    filteredCVs.forEach(cv => {
+    filteredList.forEach(cv => {
         const cho = getChosung(cv.name);
         if (!groups[cho]) groups[cho] = [];
         groups[cho].push(cv);
     });
 
-    leftArea.innerHTML = `<h2 class="step-title">${cvState.currentAward} 후보 선택</h2>`;
-
+    listContainer.innerHTML = ""; // 리스트 부분만 초기화
     const choList = ["ㄱ", "ㄴ", "ㄷ", "ㄹ", "ㅁ", "ㅂ", "ㅅ", "ㅇ", "ㅈ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ"];
+    
     choList.forEach(cho => {
         if (!groups[cho]) return;
 
-        // 아코디언 생성
         const accordion = createAccordion(cho, "cho-btn");
         const content = accordion.querySelector(".accordion-content");
         
+        // 검색 중이면 아코디언 열기
+        if (searchTerm) content.style.display = "block";
+
         const cvGrid = document.createElement("div");
         cvGrid.className = "cv-card-grid";
 
         groups[cho].forEach(cv => {
-            cvGrid.appendChild(createCVCard(cv));
+            cvGrid.appendChild(createCVCard(cv, "step1"));
         });
 
         content.appendChild(cvGrid);
-        leftArea.appendChild(accordion);
+        listContainer.appendChild(accordion);
     });
+}
+
+// 한글 포커스 유지를 위한 검색 핸들러
+function handleSearch(val) {
+    renderCVStep1(val);
 }
 
 /**
  * 4. 성우 카드 생성 (Step 1 & 2 공통)
  */
-function createCVCard(cv) {
+function createCVCard(cv, step) {
     const card = document.createElement("div");
-    card.className = "cv-card";
-    if (cvState.selectedCVs.some(v => v.name === cv.name)) {
-        card.classList.add("selected");
+    const isSelected = cvState.selectedCVs.some(v => v.name === cv.name);
+    
+    if (step === "step1") {
+        card.className = "cv-card";
+        if (isSelected) card.classList.add("selected");
+        
+        // 체크 버튼 삭제 후 UI 재구성
+        card.innerHTML = `
+            <div class="cv-img-circle-wrapper">
+                <img src="${cv.vc_img}" class="cv-card-img-circle">
+            </div>
+            <div class="cv-card-name">${cv.name}</div>
+            <div class="cv-card-btns">
+                <button class="icon-btn info" title="정보 보기">
+                    <img src="https://img.icons8.com/material-rounded/24/ffffff/info.png"/>
+                </button>
+            </div>
+        `;
+
+        // [핵심] 카드 자체를 클릭하면 선택/해제
+        card.onclick = () => {
+            toggleCVSelection(cv, card);
+        };
+
+        // 정보 버튼 클릭 시에는 카드 선택 이벤트가 발생하지 않도록 차단
+        card.querySelector(".info").onclick = (e) => {
+            e.stopPropagation(); 
+            openCVDetailPopup(cv.name);
+        };
+
+    } else {
+        // Step 2 (단일 선택 방식)
+        card.className = "cv-vote-card";
+        card.innerHTML = `
+            <div class="card-img-wrapper">
+                <img src="${cv.vc_img}" class="full-img-rect">
+            </div>
+            <div class="card-info">
+                <div class="info-name">${cv.name}</div>
+                <button class="icon-btn info-bottom" onclick="event.stopPropagation(); openCVDetailPopup('${cv.name}')">
+                    <img src="https://img.icons8.com/material-rounded/24/ffffff/info.png"/>
+                </button>
+            </div>
+        `;
+
+        card.onclick = () => {
+            document.querySelectorAll(".cv-vote-card").forEach(c => c.classList.remove("active"));
+            card.classList.add("active");
+            cvState.finalWinner = cv;
+            document.getElementById("step2-award-btn").disabled = false;
+        };
     }
-
-    card.innerHTML = `
-        <img src="${cv.vc_img || 'https://via.placeholder.com/150?text=No+Image'}" class="cv-card-img" onerror="this.src='https://via.placeholder.com/150?text=No+Image'">
-        <div class="cv-card-name">${cv.name}</div>
-        <div class="cv-card-btns">
-            <button class="icon-btn info" title="정보 보기">
-                <img src="https://img.icons8.com/material-rounded/24/ffffff/info.png"/>
-            </button>
-            <button class="icon-btn check" title="후보 추가">
-                <img src="https://img.icons8.com/material-rounded/24/ffffff/checkmark.png"/>
-            </button>
-        </div>
-    `;
-
-    // 정보 버튼 클릭
-    card.querySelector(".info").onclick = (e) => {
-        e.stopPropagation();
-        openCVDetailPopup(cv.name);
-    };
-
-    // 체크 버튼 클릭 (선택 토글)
-    card.querySelector(".check").onclick = (e) => {
-        e.stopPropagation();
-        toggleCVSelection(cv, card);
-    };
-
     return card;
 }
-
 /**
  * 5. 성우 선택 토글 로직
  */
@@ -143,28 +191,27 @@ function removeCVFromPreview(name) {
 function openCVDetailPopup(cvName) {
     const cv = CharacterVoiceData[cvName];
     const popup = document.getElementById("cv-detail-popup");
-    if (!cv || !popup) return;
-
+    
     popup.innerHTML = `
-        <div class="popup-content cv-detail-layout">
-            <div class="popup-left characters-side">
+        <div class="popup-content cv-detail-layout inverted">
+            <div class="popup-left cv-side">
+                <img src="${cv.vc_img}" class="cv-big-img-rect">
+                <h2>${cv.name}</h2>
+                <button onclick="closeCVPopup()" class="btn-close-simple">닫기</button>
+            </div>
+            <div class="popup-right characters-side">
                 <h3>담당 배역</h3>
-                <div class="mini-char-list">
+                <div class="popup-char-grid">
                     ${cv.characters.map(c => `
-                        <div class="mini-char-item">
-                            <img src="${c.img}" onerror="this.src='https://via.placeholder.com/50'">
-                            <div class="mini-info">
+                        <div class="mini-char-card">
+                            <img src="${c.img}" class="full-img">
+                            <div class="m-info">
                                 <p class="m-anime">${c.animeTitle}</p>
                                 <p class="m-char">${c.charName}</p>
                             </div>
                         </div>
                     `).join('')}
                 </div>
-            </div>
-            <div class="popup-right cv-side">
-                <img src="${cv.vc_img || 'https://via.placeholder.com/180'}" class="cv-big-img">
-                <h2>${cv.name}</h2>
-                <button onclick="closeCVPopup()" class="btn-close-simple">닫기</button>
             </div>
         </div>
     `;
@@ -185,22 +232,18 @@ function goStep2() {
     document.getElementById("step2-buttons").style.display = "flex";
 
     const leftArea = document.getElementById("left-area");
-    leftArea.innerHTML = `<h2 class="step-title">최종 성우 투표</h2>`;
+    // [오류 2 해결] 중앙 정렬을 위한 컨테이너 구조
+    leftArea.innerHTML = `
+        <h2 class="step-title center">최종 성우 투표</h2>
+        <div class="cv-vote-container">
+            <div class="cv-vote-grid" id="vote-grid"></div>
+        </div>
+    `;
     
-    const grid = document.createElement("div");
-    grid.className = "cv-card-grid";
-
+    const grid = document.getElementById("vote-grid");
     cvState.selectedCVs.forEach(cv => {
-        const card = createCVCard(cv);
-        card.onclick = () => {
-            document.querySelectorAll(".cv-card").forEach(c => c.classList.remove("active"));
-            card.classList.add("active");
-            cvState.finalWinner = cv;
-            document.getElementById("step2-award-btn").disabled = false;
-        };
-        grid.appendChild(card);
+        grid.appendChild(createCVCard(cv, "step2"));
     });
-    leftArea.appendChild(grid);
 }
 
 /**

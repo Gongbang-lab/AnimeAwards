@@ -324,3 +324,237 @@ body {
     font-weight: bold;
     cursor: pointer;
 }
+
+/* 1. 검색창 스타일 */
+.search-container {
+    margin-bottom: 20px;
+    text-align: right;
+}
+#cv-search {
+    width: 300px;
+    padding: 12px 20px;
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 25px;
+    color: #fff;
+    outline: none;
+}
+#cv-search:focus { border-color: gold; }
+
+/* 2. 사각형 꽉 찬 이미지 카드 (Step 1) */
+.cv-card .card-img-wrapper {
+    width: 100%;
+    height: 180px; /* 세로 비율 */
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.full-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 3. Step 2 전용 세로형 카드 (charNominate.js 스타일) */
+.cv-vote-card {
+    background: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+.cv-vote-card .card-info { padding: 15px; text-align: center; }
+.cv-vote-card.active { border-color: gold; transform: scale(1.05); }
+
+/* 4. 팝업창 좌우 반전 및 디자인 */
+.cv-detail-layout.inverted {
+    flex-direction: row; /* 왼쪽 성우, 오른쪽 캐릭터 */
+}
+.cv-big-img-rect {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* 팝업 내 배역 카드 (성우 카드 스타일) */
+.popup-char-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+}
+.mini-char-card {
+    background: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+.mini-char-card img { height: 140px; }
+.mini-char-card .m-info { padding: 8px; }
+.m-anime { font-size: 10px; color: #888; margin: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.m-char { font-size: 12px; font-weight: bold; color: gold; margin: 2px 0 0 0; }
+
+/* [오류 2 해결] Step 1 원형 이미지 스타일 */
+.cv-img-circle-wrapper {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #333;
+    transition: 0.3s;
+}
+
+.cv-card.selected .cv-img-circle-wrapper {
+    border-color: #007bff;
+}
+
+.cv-card-img-circle {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Step 2 세로형 사각형 카드 스타일 */
+.cv-vote-card {
+    background: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.cv-vote-card .card-img-wrapper {
+    width: 100%;
+    height: 300px; /* 세로로 긴 모양 */
+}
+
+.full-img-rect {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 팝업 내부 캐릭터 카드 (사각형) */
+.mini-char-card {
+    background: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.mini-char-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Step 2 세로형 카드 내 정보 버튼 스타일 */
+.card-img-wrapper {
+    position: relative; /* 버튼 배치를 위해 */
+}
+
+.cv-vote-info-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+    z-index: 10;
+}
+
+.cv-vote-info-btn:hover {
+    background: gold;
+}
+
+.cv-vote-info-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+/* [오류 2 해결] Step 2 중앙 정렬 컨테이너 */
+.cv-vote-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    width: 100%;
+}
+
+.cv-vote-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* 카드 중앙 정렬 */
+    gap: 30px;
+    max-width: 1200px;
+}
+
+/* Step 2 카드 디자인 수정 */
+.cv-vote-card {
+    width: 220px; /* 고정폭으로 짤림 방지 */
+    background: #1a1a1a;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 3px solid transparent;
+    transition: transform 0.3s ease, border-color 0.3s;
+    cursor: pointer;
+}
+
+/* 확대 시 이미지 짤림 방지: 부모의 overflow와 맞물려 조절 */
+.cv-vote-card:hover {
+    transform: translateY(-10px);
+}
+
+.cv-vote-card.active {
+    border-color: gold;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+}
+
+.cv-vote-card .card-img-wrapper {
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+}
+
+.full-img-rect {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지가 비율에 맞게 꽉 참 */
+}
+
+/* [오류 1 해결] 하단 정보 버튼 스타일 */
+.card-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.icon-btn.info-bottom {
+    background: #333;
+    width: 40px;
+    height: 40px;
+}
+
+.icon-btn.info-bottom:hover {
+    background: gold;
+}
+
+.step-title.center {
+    text-align: center;
+}
