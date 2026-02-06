@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Voice Actor Data Extractor</title>
+    <style>
+        body { background: #111; color: #fff; font-family: 'Pretendard', sans-serif; text-align: center; padding-top: 50px; }
+        .box { background: #222; display: inline-block; padding: 40px; border-radius: 20px; border: 1px solid #333; }
+        button { padding: 18px 36px; font-size: 16px; cursor: pointer; background: gold; border: none; border-radius: 8px; font-weight: bold; color: #000; }
+        button:hover { background: #ffd700; transform: scale(1.02); }
+        #status { margin-top: 20px; color: gold; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>성우 데이터 추출기</h1>
+        <p style="color: #aaa;">animeCharacter.js 데이터를 기반으로 성우별 그룹화를 진행합니다.</p>
+        
+        <button id="extract-btn">animeCharacterVoice.js 생성 및 다운로드</button>
+        <div id="status"></div>
+    </div>
+
+    <script src="../data/animeData.js"></script>
+    <script src="../data/animeCharacter.js"></script>
+
+    <script>
+        document.getElementById('extract-btn').onclick = function() {
+            try {
+                const actorMap = {};
+
+                // CharacterData 순회 (animeCharacter.js의 구조)
+                Object.values(CharacterData).forEach(animeList => {
+                    animeList.forEach(animeEntry => {
+                        const animeTitle = animeEntry.title;
+                        const characters = animeEntry.characters || [];
+
+                        characters.forEach(char => {
+                            // 성우 이름 추출 (cv 또는 vc 필드 확인)
+                            const actorName = (char.cv || char.vc || "정보 없음").trim();
+                            
+                            // 정보가 없는 경우 건너뜀
+                            if (actorName === "정보 없음" || actorName === "") return;
+
+                            // 성우명이 처음 등장하면 객체 생성
+                            if (!actorMap[actorName]) {
+                                actorMap[actorName] = {
+                                    name: actorName,
+                                    vc_img: "", // 요청하신 필드명 (사용자 직접 입력용)
+                                    gender: char.gender,
+                                    characters: []
+                                };
+                            }
+
+                            // 중복 캐릭터 방지 로직 (동일 애니메이션의 동일 캐릭터면 추가 안 함)
+                            const isDuplicate = actorMap[actorName].characters.some(
+                                c => c.charName === char.name && c.animeTitle === animeTitle
+                            );
+
+                            if (!isDuplicate) {
+                                actorMap[actorName].characters.push({
+                                    charName: char.name,
+                                    animeTitle: animeTitle,
+                                    img: char.img
+                                });
+                            }
+                        });
+                    });
+                });
+
+                // 파일 내용 작성 (변수명: CharacterVoiceData)
+                const finalContent = "const CharacterVoiceData = " + JSON.stringify(actorMap, null, 2) + ";";
+                
+                // 다운로드 실행
+                const blob = new Blob([finalContent], { type: 'text/javascript' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'animeCharacterVoice.js'; // 요청하신 파일명
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+
+                document.getElementById('status').innerText = "성공! animeCharacterVoice.js 파일이 다운로드되었습니다.";
+            } catch (e) {
+                console.error(e);
+                document.getElementById('status').innerText = "오류 발생: " + e.message;
+            }
+        };
+    </script>
+</body>
+</html>

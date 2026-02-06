@@ -1960,7 +1960,7 @@ const CharacterData = {
       "name": "키릴 스위치카",
       "gender": "female",
       "cv": "카리야 미키",
-      "img": "../image/charimg/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Cyrill_Sweechkajpg"
+      "img": "../image/charimg/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Cyrill_Sweechka.jpg"
     },
     {
       "name": "진 인테이지",
@@ -2866,7 +2866,7 @@ const CharacterData = {
       "name": "쿠루오카 츠바키",
       "gender": "female",
       "cv": "코가 아오이",
-      "img": "../image/charimg/Q1/Fate/strange_Fake/Tsubaki_Kuruokajpg"
+      "img": "../image/charimg/Q1/Fate/strange_Fake/Tsubaki_Kuruoka.jpg"
     },
     {
       "name": "팔데우스 디오란도",
@@ -4078,7 +4078,7 @@ const CharacterData = {
       "name": "아야카",
       "gender": "female",
       "cv": "아시다 마나",
-      "img": "../image/charimg/Q1/Ikoku_Nikki/Ayakajpg"
+      "img": "../image/charimg/Q1/Ikoku_Nikki/Ayaka.jpg"
     },
     {
       "name": "칸다 유우미",
@@ -4600,7 +4600,7 @@ const CharacterData = {
       "name": "요시오카 사츠키",
       "gender": "female",
       "cv": "나츠키 칸나",
-      "img": "../image/charimg/Q1/Arisugawa_Ren_tte_Honto_wa_Onna_Nanda_yo_ne/Satsuki_Yoshiokajpg"
+      "img": "../image/charimg/Q1/Arisugawa_Ren_tte_Honto_wa_Onna_Nanda_yo_ne/Satsuki_Yoshioka.jpg"
     },
     {
       "name": "히이라기 모모카",
@@ -4696,19 +4696,19 @@ const CharacterData = {
       "name": "나데시코",
       "gender": "female",
       "cv": "하야세 마리카",
-      "img": "../image/charimg/Q1/Android_wa_Keiken_Ninzuu_ni_Hairimasu_ka?/Nadeshiko.jpg"
+      "img": "../image/charimg/Q1/Android_wa_Keiken_Ninzuu_ni_Hairimasu_ka/Nadeshiko.jpg"
     },
     {
       "name": "츠다 아카네",
       "gender": "female",
       "cv": "시미즈 아야카",
-      "img": "../image/charimg/Q1/Android_wa_Keiken_Ninzuu_ni_Hairimasu_ka?/Akane_Tsuda.jpg"
+      "img": "../image/charimg/Q1/Android_wa_Keiken_Ninzuu_ni_Hairimasu_ka/Akane_Tsuda.jpg"
     },
     {
       "name": "이토 씨",
       "gender": "female",
       "cv": "쿠리코마 코마루",
-      "img": "../image/charimg/Q1/Android_wa_Keiken_Ninzuu_ni_Hairimasu_ka?/Itou-san.jpg"
+      "img": "../image/charimg/Q1/Android_wa_Keiken_Ninzuu_ni_Hairimasu_ka/Itou-san.jpg"
     }
   ]
 },
@@ -4720,13 +4720,13 @@ const CharacterData = {
       "name": "사쿠나히메",
       "gender": "female",
       "cv": "오오조라 나오미",
-      "img": "../image/charimg/Q1/Tensui_no_Sakuna-hime:_Kokorowa_Inasaku_Nisshi/Sakuna-hime.jpg"
+      "img": "../image/charimg/Q1/Tensui_no_Sakuna-hime_Kokorowa_Inasaku_Nisshi/Sakuna-hime.jpg"
     },
     {
       "name": "코코로와히메",
       "gender": "female",
       "cv": "키누가와 리카",
-      "img": "../image/charimg/Q1/Tensui_no_Sakuna-hime:_Kokorowa_Inasaku_Nisshi/Kokorowa-hime.jpg"
+      "img": "../image/charimg/Q1/Tensui_no_Sakuna-hime_Kokorowa_Inasaku_Nisshi/Kokorowa-hime.jpg"
     }
   ]
 },

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>올해의 성우상 - 시상식</title>
+    <link rel="stylesheet" href="cvNominate.css">
+</head>
+<body>
+    <div class="nominate-page">
+        <div id="left-area" class="nominate-left">
+            </div>
+
+        <div class="nominate-right">
+            <div id="step1-buttons" class="step-buttons">
+                <button id="step1-back-btn" class="step-btn secondary">메인으로</button>
+                <button id="step1-next-btn" class="step-btn primary" disabled>다음 단계</button>
+            </div>
+
+            <div id="step2-buttons" class="step-buttons" style="display: none;">
+                <button id="step2-back-btn" class="step-btn secondary">이전으로</button>
+                <button id="step2-award-btn" class="step-btn primary" disabled>시상하기</button>
+            </div>
+
+            <div id="step1-preview" class="step1-preview">
+                <div class="preview-title">선택된 성우 후보</div>
+                <div id="preview-list" class="preview-list">
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cv-detail-popup" class="popup-overlay" style="display: none;">
+        </div>
+
+    <div id="winner-popup" class="popup-overlay" style="display: none;">
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    
+    <script src="../data/animeCharacterVoice.js"></script>
+    <script src="cvNominate.js"></script>
+</body>
+</html>

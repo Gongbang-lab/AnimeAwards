@@ -1,0 +1,326 @@
+/* =========================================
+   1. 기본 레이아웃 및 초기화
+   ========================================= */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+    overflow: hidden; /* 전체 페이지 스크롤 방지 (영역별 스크롤 사용) */
+}
+
+.nominate-page {
+    display: flex;
+    gap: 30px;
+    height: 100vh;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* 왼쪽 콘텐츠 영역 */
+.nominate-left {
+    flex: 7.5;
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+/* 오른쪽 프리뷰 영역 */
+.nominate-right {
+    flex: 2.5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #0a0a0a;
+    border-radius: 20px;
+    padding: 25px;
+    border: 1px solid #222;
+}
+
+/* =========================================
+   2. 초성 아코디언 스타일
+   ========================================= */
+.step-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: gold;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.accordion-wrapper {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cho-btn {
+    width: 100%;
+    padding: 18px 25px;
+    background: #111;
+    border: 1px solid #222;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cho-btn:hover { background: #1a1a1a; border-color: gold; }
+.cho-btn.active { background: #222; color: gold; border-color: gold; }
+
+.cho-btn::after {
+    content: '▼';
+    font-size: 12px;
+    transition: 0.3s;
+}
+.cho-btn.active::after { transform: rotate(180deg); }
+
+.accordion-content {
+    display: none;
+    padding: 20px;
+    background: #050505;
+    border: 1px solid #111;
+    border-top: none;
+}
+
+/* =========================================
+   3. 성우 카드 UI (Step 1 & 2 공통)
+   ========================================= */
+.cv-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 20px;
+}
+
+.cv-card {
+    background: #151515;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    position: relative;
+}
+
+.cv-card:hover { transform: translateY(-5px); background: #1a1a1a; }
+.cv-card.selected { border-color: #007bff; background: rgba(0, 123, 255, 0.05); }
+.cv-card.active { border-color: gold; background: rgba(255, 215, 0, 0.05); }
+
+.cv-card-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #333;
+}
+
+.cv-card.selected .cv-card-img { border-color: #007bff; }
+.cv-card.active .cv-card-img { border-color: gold; }
+
+.cv-card-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #eee;
+}
+
+.cv-card-btns {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.icon-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.icon-btn.info { background: #444; }
+.icon-btn.check { background: #333; }
+.cv-card.selected .icon-btn.check { background: #007bff; }
+
+.icon-btn:hover { transform: scale(1.1); filter: brightness(1.2); }
+.icon-btn img { width: 18px; height: 18px; }
+
+/* =========================================
+   4. 오른쪽 프리뷰 및 버튼 영역
+   ========================================= */
+.step-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.step-btn {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.step-btn.primary { background: gold; color: #000; }
+.step-btn.primary:disabled { background: #333; color: #777; cursor: not-allowed; }
+.step-btn.secondary { background: #222; color: #fff; }
+
+.preview-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #888;
+    border-bottom: 1px solid #222;
+    padding-bottom: 10px;
+}
+
+.preview-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    overflow-y: auto;
+}
+
+.preview-item.cv-text-only {
+    padding: 8px 16px;
+    background: rgba(255, 215, 0, 0.1);
+    border: 1px solid gold;
+    color: gold;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.preview-item.cv-text-only:hover { background: rgba(255, 215, 0, 0.2); transform: scale(1.05); }
+
+/* =========================================
+   5. 팝업창 공통 및 상세 레이아웃
+   ========================================= */
+.popup-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+/* 정보 상세 팝업 (배역 리스트 - 성우 정보) */
+.cv-detail-layout {
+    display: flex;
+    width: 850px;
+    height: 550px;
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.characters-side {
+    flex: 1.5;
+    padding: 30px;
+    background: #0a0a0a;
+    overflow-y: auto;
+}
+
+.characters-side h3 { color: gold; margin-top: 0; margin-bottom: 20px; }
+
+.cv-side {
+    flex: 1;
+    padding: 40px;
+    background: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-left: 1px solid #222;
+}
+
+.cv-big-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid gold;
+    margin-bottom: 20px;
+}
+
+.mini-char-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #1a1a1a;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.mini-char-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.mini-info .m-char { font-weight: bold; font-size: 15px; margin-bottom: 4px; }
+.mini-info .m-anime { color: #888; font-size: 12px; }
+
+/* =========================================
+   6. 최종 수상 팝업 (이미지 - 텍스트)
+   ========================================= */
+.award-layout {
+    display: flex;
+    width: 800px;
+    padding: 40px;
+    background: #000;
+    border: 2px solid gold;
+    border-radius: 30px;
+    align-items: center;
+    gap: 40px;
+}
+
+.award-left .winner-img {
+    width: 280px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
+}
+
+.award-right { flex: 1; }
+.congrats-label { color: gold; letter-spacing: 3px; font-weight: bold; margin-bottom: 10px; }
+.winner-name { font-size: 50px; margin: 0 0 20px 0; }
+.winner-works-text {
+    font-size: 16px;
+    color: #ccc;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.btn-close-simple, .btn-primary {
+    padding: 12px 30px;
+    background: gold;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}

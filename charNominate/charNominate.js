@@ -449,17 +449,6 @@ function bindButtons() {
     location.href = "../main/main.html";
   };
   
-  // 팝업: 확인 및 메인으로 버튼
-  document.getElementById("go-main-btn").onclick = () => {
-    confetti({
-      particleCount: 100,
-      spread: 70,
-      origin: { y: 0.6 }
-    });
-    setTimeout(() => {
-      location.href = "../main/main.html";
-    }, 1500);
-  };
 }
 
 /**
@@ -503,10 +492,54 @@ function openAwardPopup() {
 
   popup.style.display = "flex";
 
-  // 버튼 이벤트 재바인딩 (innerHTML로 새로 생겼으므로)
-  document.getElementById("go-main-btn").onclick = () => {
-    location.href = "../main/main.html";
-  };
+  fireConfetti();
 
-  confetti({ particleCount: 150, spread: 80, origin: { y: 0.6 } });
+  // 버튼 이벤트 재바인딩 (innerHTML 실행 직후에 수행)
+    document.getElementById("go-main-btn").onclick = () => {
+      // 이동 전 마지막으로 한 번 더 터뜨리기 (선택 사항)
+      confetti({
+        particleCount: 150,
+        spread: 100,
+        origin: { y: 0.6 },
+        zIndex: 99999
+      });
+
+      setTimeout(() => {
+        location.href = "../main/main.html";
+      }, 1200); // 폭죽을 조금 보고 넘어갈 수 있게 지연시간 부여
+    };
+}
+
+function fireConfetti() {
+  const duration = 3 * 1000;
+  const animationEnd = Date.now() + duration;
+  
+  // zIndex를 99999로 설정하여 그 어떤 요소보다 위에 오도록 합니다.
+  const defaults = { 
+    startVelocity: 30, 
+    spread: 360, 
+    ticks: 60, 
+    zIndex: 99999, // 팝업(10000)보다 훨씬 높게 설정
+    useWorker: true // 별도 스레드 사용으로 성능 최적화
+  }; 
+
+  const interval = setInterval(function() {
+    const timeLeft = animationEnd - Date.now();
+
+    if (timeLeft <= 0) {
+      return clearInterval(interval);
+    }
+
+    const particleCount = 50 * (timeLeft / duration);
+    
+    // origin y값을 0.5~0.6 정도로 높여서 화면 중앙 근처에서 터지게 조절
+    confetti(Object.assign({}, defaults, { 
+      particleCount, 
+      origin: { x: 0.2, y: 0.5 } 
+    }));
+    confetti(Object.assign({}, defaults, { 
+      particleCount, 
+      origin: { x: 0.8, y: 0.5 } 
+    }));
+  }, 250);
 }
