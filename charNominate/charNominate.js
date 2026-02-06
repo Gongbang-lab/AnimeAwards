@@ -161,7 +161,7 @@ function getNormalizedCharData(genderKey) {
             id: `${animeId}_${char.name}_${idx}`,
             name: char.name,
             gender: char.gender,
-            cv: char.vc || "정보 없음",
+            cv: char.cv || "정보 없음",
             thumbnail: char.img,
             animeId: animeId,
             animeTitle: anime.title, // animeData.js의 한국어 제목 사용
@@ -172,8 +172,6 @@ function getNormalizedCharData(genderKey) {
       }
     });
   });
-
-  console.log(`✅ 드디어 매칭 성공! ${genderKey} 캐릭터 총 ${result.length}명 추출`);
   return result;
 }
 
@@ -361,51 +359,48 @@ function removeCandidate(charId) {
   updatePreview();
 }
 /**
- * 8. Step 2: 최종 투표 카드 렌더링
+ * 8. Step 2: 최종 투표 카드 렌더링 (카드 UI 개선 버전)
  */
 function goStep2() {
   charState.step = 2;
   toggleUI();
 
   const left = document.getElementById("left-area");
+  // 그리드 컨테이너와 타이틀 생성
   left.innerHTML = `
     <h2 class="step-title">최종 투표</h2>
-    <p style="text-align: center; color: #888; margin-bottom: 20px;">
-      수상할 캐릭터를 선택하세요
-    </p>
-    <div class="char-card-grid"></div>
+    <p style="text-align: center; color: #888; margin-bottom: 25px;">수상할 캐릭터를 선택하세요</p>
+    <div class="final-vote-grid"></div> 
   `;
   
-  const grid = left.querySelector(".char-card-grid");
+  const grid = left.querySelector(".final-vote-grid");
 
   charState.selectedItems.forEach(char => {
     const card = document.createElement("div");
-    card.className = "char-card-vertical";
+    card.className = "char-vote-card"; // 전용 클래스 사용
     
     card.innerHTML = `
-      <div class="card-thumb">
+      <div class="card-img-wrapper">
         <img src="${char.thumbnail}" alt="${char.name}"
-             onerror="this.src='https://via.placeholder.com/200?text=No+Image'">
+             onerror="this.src='https://via.placeholder.com/200x280?text=No+Image'">
       </div>
-      <div class="card-body">
-        <div class="anime-label">${char.animeTitle}</div>
-        <div class="char-name">${char.name}</div>
-        <div class="char-cv">CV. ${char.cv}</div>
+      <div class="card-info">
+        <div class="info-name">${char.name}</div>
+        <div class="info-anime">${char.animeTitle}</div>
+        <div class="info-cv">CV. ${char.cv}</div>
       </div>
     `;
 
     card.onclick = () => {
-      // 모든 카드의 선택 상태 해제
-      document.querySelectorAll(".char-card-vertical").forEach(c => 
-        c.classList.remove("selected")
-      );
-      
-      // 현재 카드 선택
+      // 선택 시각 효과: 기존 선택 해제 후 현재 것 강조
+      document.querySelectorAll(".char-vote-card").forEach(c => c.classList.remove("selected"));
       card.classList.add("selected");
+      
       charState.finalWinner = char;
       
       // 수상 버튼 활성화
-      document.getElementById("step2-award-btn").disabled = false;
+      const awardBtn = document.getElementById("step2-award-btn");
+      if(awardBtn) awardBtn.disabled = false;
     };
     
     grid.appendChild(card);
@@ -473,27 +468,45 @@ function bindButtons() {
 function openAwardPopup() {
   const winner = charState.finalWinner;
   const popup = document.getElementById("winner-popup");
-  
-  // 팝업 내용 업데이트
-  document.getElementById("winner-thumb").src = winner.thumbnail;
-  document.getElementById("winner-title").textContent = 
-    `${winner.name} (${winner.animeTitle})`;
-  
-  // 팝업 표시
-  popup.style.display = "flex";
-  
-  // Confetti 효과
-  confetti({
-    particleCount: 150,
-    spread: 80,
-    origin: { y: 0.6 }
-  });
-  
-  // 로컬스토리지에 결과 저장
+  if (!winner || !popup) return;
+
   const results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
+
   results[charState.currentAward.name] = { 
-    title: `${winner.name} (${winner.animeTitle})`, 
-    thumbnail: winner.thumbnail 
+    name: winner.name,
+    anime: winner.animeTitle,
+    thumbnail: winner.thumbnail,
+    cv: winner.cv,
+    theme: charState.theme // male 또는 female 구분
   };
+
   localStorage.setItem("anime_awards_result", JSON.stringify(results));
+
+  // 팝업 내부 구조를 동적으로 생성 (기존 내용을 지우고 새로 작성)
+  popup.innerHTML = `
+    <div class="popup-content split-layout">
+      <div class="popup-left">
+        <img id="winner-thumb" src="${winner.thumbnail}" alt="${winner.name}"
+             onerror="this.src='https://via.placeholder.com/300x400?text=No+Image'">
+      </div>
+      <div class="popup-right">
+        <div class="award-label">CONGRATULATIONS!</div>
+        <h1 id="winner-name">${winner.name}</h1>
+        <p id="winner-anime">${winner.animeTitle}</p>
+        <div class="winner-details">
+          <span>Voice Actor:</span> <strong id="winner-cv">${winner.cv}</strong>
+        </div>
+        <button id="go-main-btn" class="btn-primary">확인 및 메인으로</button>
+      </div>
+    </div>
+  `;
+
+  popup.style.display = "flex";
+
+  // 버튼 이벤트 재바인딩 (innerHTML로 새로 생겼으므로)
+  document.getElementById("go-main-btn").onclick = () => {
+    location.href = "../main/main.html";
+  };
+
+  confetti({ particleCount: 150, spread: 80, origin: { y: 0.6 } });
 }

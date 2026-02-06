@@ -160,7 +160,186 @@ html, body {
 .card-title { font-weight: bold; font-size: 14px; color: #fff; }
 
 /* 팝업 관련 (기존 주신 애니메이션 및 스타일 유지) */
-.winner-popup { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.95); display: none; align-items: center; justify-content: center; z-index: 10000; backdrop-filter: blur(8px); }
+/* 팝업 배경 */
+#winner-popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* 팝업 본체: 좌우 분할 */
+.popup-content.split-layout {
+  background: #111;
+  border: 2px solid gold;
+  border-radius: 20px;
+  display: flex; /* 가로 나열 */
+  max-width: 800px;
+  width: 90%;
+  overflow: hidden;
+  box-shadow: 0 0 50px rgba(255, 215, 0, 0.2);
+}
+
+/* 왼쪽: 이미지 영역 */
+.popup-left {
+  flex: 1;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-left img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+/* 오른쪽: 정보 영역 */
+.popup-right {
+  flex: 1.2;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.award-label {
+  color: gold;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+#winner-name {
+  font-size: 36px;
+  color: #fff;
+  margin: 0 0 10px 0;
+}
+
+#winner-anime {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 15px;
+}
+
+.winner-details {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 40px;
+}
+
+.winner-details strong {
+  color: #fff;
+  margin-left: 10px;
+}
+
+.btn-primary {
+  background: gold;
+  color: #000;
+  border: none;
+  padding: 15px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+}
 .winner-popup.active { display: flex; }
 .popup-card { background: #111; border: 2px solid gold; border-radius: 24px; padding: 30px; width: 90%; max-width: 700px; text-align: center; }
 .step-title, .step2-title, #left-area h2 { font-size: 22px; font-weight: 800; color: #fff; margin-bottom: 24px; padding-left: 12px; border-left: 4px solid gold; line-height: 1.2; }
+
+/* Step 2 전용 그리드 설정 */
+.final-vote-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* 꽉 차지 않게 자동 나열 */
+  gap: 20px;
+  padding: 10px;
+  justify-content: center; /* 중앙 정렬 */
+}
+
+/* 개별 캐릭터 카드 스타일 */
+.char-vote-card {
+  background: #1a1a1a;
+  border: 2px solid #333;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+/* 이미지 영역 */
+.card-img-wrapper {
+  width: 100%;
+  aspect-ratio: 3 / 4; /* 세로형 이미지 비율 유지 */
+  overflow: hidden;
+  border-bottom: 1px solid #333;
+}
+
+.card-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* 정보 영역 (이름, 애니메이션) */
+.card-info {
+  padding: 12px;
+  text-align: center;
+}
+
+.info-name {
+  font-size: 16px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.info-anime {
+  font-size: 12px;
+  color: #aaa; /* 애니메이션 이름은 조금 연하게 */
+  margin-bottom: 6px;
+  line-height: 1.2;
+}
+
+.info-cv {
+  font-size: 11px;
+  color: gold;
+  opacity: 0.8;
+}
+
+/* 마우스 호버 효과 */
+.char-vote-card:hover {
+  border-color: #555;
+  transform: translateY(-5px);
+}
+
+.char-vote-card:hover .card-img-wrapper img {
+  transform: scale(1.05);
+}
+
+/* 선택되었을 때 (Gold 테두리) */
+.char-vote-card.selected {
+  border-color: gold;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+  background: #252525;
+}
+
+.char-vote-card.selected .info-name {
+  color: gold;
+}
