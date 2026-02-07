@@ -3,32 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rookie Awards - Nominate</title>
-  
-  <link rel="stylesheet" href="../main/main.css">
-  <link rel="stylesheet" href="../nominate/nominate.css">
-  <link rel="stylesheet" href="../charNominate/charNominate.css">
+  <title>2026 Rookie Awards - Nominate</title>
+  <link rel="stylesheet" href="./rookieNominate.css">
 </head>
 <body class="dark-theme">
 
   <main class="nominate-page">
-    <section class="nominate-left" id="left-area">
+    <section class="nominate-left">
         <h2 class="step-title">2026 신인 성우상 후보</h2>
         <div id="rookie-grid" class="final-vote-grid">
             </div>
     </section>
 
-    <aside class="nominate-right" style="justify-content: center;">
-      <div id="step2-buttons" class="step-buttons" style="display: flex; flex-direction: column; gap: 20px;">
-        <button id="btn-home" class="step-btn secondary" style="width: 100%; height: 60px; font-size: 18px;">메인으로</button>
-        <button id="btn-award" class="step-btn primary gold" disabled style="width: 100%; height: 80px; font-size: 22px;">수상 결정</button>
+    <aside class="nominate-right">
+      <div id="step2-buttons" class="step-buttons">
+        <button id="btn-home" class="step-btn secondary">메인으로</button>
+        <button id="btn-award" class="step-btn primary gold" disabled>수상 결정</button>
       </div>
     </aside>
   </main>
 
-  <div id="winner-popup" class="winner-popup"></div>
+  <div id="winner-popup" class="winner-popup-overlay"></div>
 
-  <script src="../confetti.js"></script>
   <script src="../data/animerookieCVData.js"></script>
   <script src="./rookieNominate.js"></script>
 </body>

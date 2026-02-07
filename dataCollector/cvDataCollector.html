@@ -58,7 +58,7 @@ document.getElementById('extract-btn').onclick = function() {
                     if (!actorMap[actorName]) {
                         actorMap[actorName] = {
                             name: actorName,
-                            vc_img: "", 
+                            cvimg: `../image/cvimg/${actorName}.webp`,
                             gender: char.gender || "male",
                             characters: []
                         };

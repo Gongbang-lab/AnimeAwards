@@ -102,7 +102,7 @@ function createCVCard(cv, step) {
         // 체크 버튼 삭제 후 UI 재구성
         card.innerHTML = `
             <div class="cv-img-circle-wrapper">
-                <img src="${cv.vc_img}" class="cv-card-img-circle">
+                <img src="${cv.cvimg}" class="cv-card-img-circle">
             </div>
             <div class="cv-card-name">${cv.name}</div>
             <div class="cv-card-btns">
@@ -128,7 +128,7 @@ function createCVCard(cv, step) {
         card.className = "cv-vote-card";
         card.innerHTML = `
             <div class="card-img-wrapper">
-                <img src="${cv.vc_img}" class="full-img-rect">
+                <img src="${cv.cvimg}" class="full-img-rect">
             </div>
             <div class="card-info">
                 <div class="info-name">${cv.name}</div>
@@ -195,7 +195,7 @@ function openCVDetailPopup(cvName) {
     popup.innerHTML = `
         <div class="popup-content cv-detail-layout inverted">
             <div class="popup-left cv-side">
-                <img src="${cv.vc_img}" class="cv-big-img-rect">
+                <img src="${cv.cvimg}" class="cv-big-img-rect">
                 <h2>${cv.name}</h2>
                 <button onclick="closeCVPopup()" class="btn-close-simple">닫기</button>
             </div>
@@ -258,7 +258,7 @@ function openWinnerPopup() {
     const results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
     results[cvState.currentAward] = {
         name: winner.name,
-        thumbnail: winner.vc_img,
+        thumbnail: winner.cvimg,
         works: winner.characters.map(c => c.charName).join(', ')
     };
     localStorage.setItem("anime_awards_result", JSON.stringify(results));
@@ -266,7 +266,7 @@ function openWinnerPopup() {
     popup.innerHTML = `
         <div class="popup-content award-layout">
             <div class="award-left">
-                <img src="${winner.vc_img}" class="winner-img">
+                <img src="${winner.cvimg}" class="winner-img">
             </div>
             <div class="award-right">
                 <div class="congrats-label">BEST VOICE ACTOR</div>
