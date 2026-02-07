@@ -12,7 +12,7 @@ const Awards = [
   { id: 5, name: '오프닝', thumb: '', theme: 'opening'},
   { id: 6, name: '엔딩', thumb: '', theme: 'ending'},
   { id: 7, name: 'OST', thumb: '', theme: 'ost'},
-  { id: 8, name: '신인 성우상', thumb: '', theme: 'Rookie_voice'},
+  { id: 8, name: '신인 성우상', thumb: '', theme: 'rookie_voice'},
   { id: 9, name: '여자 성우상', thumb: '', theme: 'voice_female'},
   { id: 10, name: '남자 성우상', thumb: '', theme: 'voice_male'},
   { id: 11, name: '남우 주연상', thumb: '', theme: 'character_male'},
@@ -31,5 +31,3 @@ const Awards = [
   { id: 24, name: '올해의 스튜디오', thumb: '', theme: 'studio'},
   { id: 25, name: '올해의 빌런', thumb: '', theme: ''},
 ];
-
-//신인 성우 상

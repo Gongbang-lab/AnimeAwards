@@ -331,7 +331,7 @@ const CharacterData = {
     {
       "name": "츠루미 토쿠시로",
       "gender": "male",
-      "cv": "오오츠카 호우츄",
+      "cv": "오오츠카 호츄",
       "img": "../image/charimg/Q1/Golden_Kamuy_Saishuushou/Tokushirou_Tsurumi.jpg"
     },
     {
@@ -493,7 +493,7 @@ const CharacterData = {
     {
       "name": "キュイ",
       "gender": "unknown",
-      "cv": "Hina Kino",
+      "cv": "키노 히나",
       "img": "../image/charimg/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Kyui.jpg"
     },
     {

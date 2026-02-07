@@ -174,7 +174,7 @@
                     }
 
                     fullHistory.push({
-                        animeid: work.anime.mal_id,
+                        animeName: work.anime.mal_id,
                         year: y, // 연도 필드 추가
                         charName: charName,
                         charimg: `../image/rookiecv/${fileName}`
@@ -183,6 +183,7 @@
 
                 rookieStore[va.name] = {
                     name: va.name,
+                    debutYear: debutYear,
                     cvimg: "", // 수동 입력용 빈 값
                     characters: fullHistory
                 };

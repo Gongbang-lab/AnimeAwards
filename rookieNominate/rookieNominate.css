@@ -1,0 +1,310 @@
+/* 그리드 뷰 강제 설정 */
+.final-vote-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* 우측 사이드바 버튼 크기 보정 */
+.nominate-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 세로 중앙 배치 */
+    padding: 0 20px;
+}
+
+.step-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* 버튼 스타일 오류 수정: flex-basis나 fixed height 부여 */
+.step-btn {
+    width: 100% !important;
+    min-height: 60px; /* 최소 높이 확보 */
+    border-radius: 12px;
+    font-size: 1.2rem !important;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.step-btn.primary.gold {
+    background: linear-gradient(135deg, #f1c40f, #d4af37) !important;
+    color: #000 !important;
+    height: 80px; /* 수상 결정 버튼은 더 크게 */
+}
+
+/* 카드 내 이미지 비율 고정 */
+.card-img-wrapper {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+}
+
+/* 팝업 전체 배경 */
+#winner-popup {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0, 0, 0, 0.95); /* 더 어둡게 */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    backdrop-filter: blur(10px); /* 배경 흐림 효과 추가 */
+}
+
+/* 팝업 본체 크기 대폭 확대 */
+.popup-content.split-layout {
+    background: #0d0d0d;
+    border: 3px solid gold; /* 테두리 강조 */
+    border-radius: 30px;
+    display: flex;
+    width: 85%; /* 화면 너비의 85% */
+    max-width: 1100px; /* 최대 너비 증가 */
+    height: 70vh; /* 높이 고정으로 웅장함 부여 */
+    min-height: 600px;
+    overflow: hidden;
+    box-shadow: 0 0 70px rgba(255, 215, 0, 0.4);
+    animation: popupScale 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes popupScale {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* 왼쪽 이미지 영역 */
+.popup-left {
+    flex: 1.2; /* 이미지 비중 확대 */
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #222;
+}
+
+.popup-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지가 꽉 차도록 */
+}
+
+/* 오른쪽 정보 영역 */
+.popup-right {
+    flex: 1;
+    padding: 60px; /* 패딩 증가 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    background: linear-gradient(135deg, #111 0%, #050505 100%);
+}
+
+.award-label {
+    color: gold;
+    font-size: 1.2rem;
+    font-weight: 900;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#winner-name {
+    font-size: 4rem; /* 이름 크기 대폭 확대 */
+    color: #fff;
+    margin: 0 0 15px 0;
+    font-weight: 900;
+    line-height: 1.1;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+#winner-anime {
+    font-size: 1.5rem;
+    color: #aaa;
+    margin-bottom: 40px;
+    border-bottom: 2px solid gold;
+    padding-bottom: 20px;
+    display: inline-block;
+}
+
+/* 팝업 확인 버튼 크게 */
+.popup-right .btn-primary {
+    background: gold;
+    color: #000;
+    border: none;
+    padding: 25px; /* 버튼 크기 확대 */
+    font-size: 1.5rem;
+    font-weight: 900;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: auto; /* 하단 배치 */
+}
+
+.popup-right .btn-primary:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 215, 0, 0.3);
+    background: #fff;
+}
+
+/* 정보 버튼 스타일 */
+.info-icon-btn {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    width: 28px;
+    height: 28px;
+    background: #222;
+    border: 1px solid gold;
+    color: gold;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: serif;
+    transition: 0.3s;
+}
+.info-icon-btn:hover { background: gold; color: #000; transform: scale(1.1); }
+
+/* 필모그래피 팝업 레이아웃 */
+.filmo-layout {
+    flex-direction: column !important;
+    width: 70% !important;
+    max-width: 800px !important;
+    height: 80vh !important;
+    padding: 40px;
+    background: #0a0a0a;
+}
+
+.filmo-header h2 { color: #fff; font-size: 2rem; margin-bottom: 30px; border-bottom: 2px solid #222; padding-bottom: 10px; }
+.filmo-header span { color: gold; font-size: 1.2rem; margin-left: 10px; text-transform: uppercase; }
+
+.filmo-scroll-area { overflow-y: auto; padding-right: 15px; }
+
+/* 연도 구분선 */
+.year-divider {
+    display: flex;
+    align-items: center;
+    margin: 30px 0 15px;
+}
+.year-divider::after { content: ""; flex: 1; height: 1px; background: #333; margin-left: 15px; }
+.year-divider span { color: gold; font-weight: bold; font-size: 1.4rem; }
+
+/* 캐릭터 그리드뷰 */
+.filmo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+}
+
+.filmo-item { text-align: center; background: #151515; padding: 10px; border-radius: 8px; }
+.filmo-item img { width: 100%; aspect-ratio: 1/1.2; object-fit: cover; border-radius: 5px; margin-bottom: 8px; }
+.filmo-char-name { font-size: 0.9rem; color: #eee; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* 닫기 버튼 */
+.close-filmo {
+    position: absolute; top: 20px; right: 20px;
+    background: none; border: none; color: #fff; font-size: 24px; cursor: pointer;
+}
+
+.filmo-split-layout {
+    display: flex !important;
+    width: 90% !important;
+    max-width: 1200px !important;
+    height: 80vh !important;
+    background: #0a0a0a;
+    border: 2px solid #333;
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* 좌측 성우 프로필 (고정) */
+.filmo-left {
+    flex: 0 0 350px;
+    background: linear-gradient(180deg, #111 0%, #000 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    border-right: 1px solid #222;
+}
+
+.cv-main-img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid gold;
+    margin-bottom: 25px;
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.2);
+}
+
+.cv-name-ko { font-size: 2.2rem; color: #fff; margin-bottom: 10px; font-weight: 800; }
+.cv-debut { font-size: 1.1rem; color: #888; letter-spacing: 2px; }
+.cv-debut span { color: gold; font-weight: bold; }
+
+/* 우측 그리드 영역 (스크롤) */
+.filmo-right {
+    flex: 1;
+    padding: 40px;
+    background: #0d0d0d;
+    overflow: hidden; /* 컨테이너는 고정 */
+}
+
+.filmo-scroll-container {
+    height: 100%;
+    overflow-y: auto; /* 내부 스크롤 */
+    padding-right: 20px;
+}
+
+/* 연도별 그룹 및 구분선 */
+.year-group { margin-bottom: 40px; }
+.year-label {
+    font-size: 1.5rem;
+    color: gold;
+    font-weight: 900;
+    border-bottom: 2px solid #222;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    position: sticky; /* 스크롤 시 연도 상단 고정 */
+    top: 0;
+    background: #0d0d0d;
+    z-index: 5;
+}
+
+/* 캐릭터 그리드뷰 */
+.char-grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 20px;
+}
+
+.char-unit {
+    background: #151515;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+    border: 1px solid #222;
+}
+
+.char-unit:hover { transform: translateY(-5px); border-color: gold; }
+
+.char-img-wrap { width: 100%; aspect-ratio: 1/1; overflow: hidden; }
+.char-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
+
+.char-info-text { padding: 10px; text-align: center; }
+.c-name { font-size: 0.85rem; color: #fff; font-weight: 600; display: block; }
+
+/* 닫기 버튼 */
+.close-filmo {
+    position: absolute; top: 25px; right: 25px;
+    background: #222; border: none; color: #fff;
+    width: 40px; height: 40px; border-radius: 50%;
+    cursor: pointer; z-index: 100; font-size: 20px;
+}
