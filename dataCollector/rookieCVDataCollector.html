@@ -2,13 +2,13 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Jikan Smart Hybrid Extractor v17</title>
+    <title>Jikan Full History Extractor v19</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
     <style>
         body { background: #0b0e14; color: #ecf0f1; font-family: 'Pretendard', sans-serif; padding: 20px; }
-        .container { max-width: 900px; margin: 0 auto; background: #151f28; padding: 30px; border-radius: 15px; border: 1px solid #2e3c4a; }
-        #log { background: #000; color: #00ffcc; height: 350px; overflow-y: auto; padding: 15px; font-family: monospace; font-size: 12px; border: 1px solid #2e3c4a; margin-bottom: 10px; }
+        .container { max-width: 1000px; margin: 0 auto; background: #151f28; padding: 30px; border-radius: 15px; border: 1px solid #2e3c4a; }
+        #log { background: #000; color: #00ffcc; height: 400px; overflow-y: auto; padding: 15px; font-family: monospace; font-size: 12px; border: 1px solid #2e3c4a; margin-bottom: 10px; }
         button { padding: 12px 20px; cursor: pointer; border: none; border-radius: 5px; font-weight: bold; background: #00d1b2; color: #000; transition: 0.2s; }
         button:hover { opacity: 0.8; }
         .progress-bar { height: 8px; background: #2e3c4a; width: 100%; border-radius: 4px; margin: 10px 0; }
@@ -18,179 +18,173 @@
 </head>
 <body>
     <div class="container">
-        <h1>Smart Hybrid Extractor v17</h1>
-        <p style="color:#8ba3ad; font-size: 14px;">서버 부하 방지: 로컬 선별 후 최소 요청 (500 에러 회피)</p>
+        <h1>Full History Extractor v19</h1>
+        <p style="color:#8ba3ad;">루키 전체 필모그래피 & 연도(Year) 정밀 조회 시스템</p>
         <div class="controls">
-            <button onclick="startExtraction()">스마트 추출 시작</button>
+            <button onclick="startExtraction()">전체 이력 추출 시작</button>
             <button style="background:#f1c40f;" onclick="downloadJS()">JS 저장</button>
             <button id="img-btn" style="background:#e74c3c; color:#fff;" onclick="downloadAllImages()" disabled>이미지 ZIP</button>
         </div>
         <div class="progress-bar"><div id="bar-fill"></div></div>
-        <div id="log">준비 완료. [스마트 추출 시작]을 눌러주세요.</div>
+        <div id="log">준비 완료. [전체 이력 추출 시작]을 눌러주세요.</div>
         <textarea id="output" readonly placeholder="결과 JSON이 여기에 생성됩니다."></textarea>
     </div>
 
     <script>
         let rookieStore = {};
         let imageFiles = [];
-        const THIS_YEAR = 2026; // 필요시 2025로 변경 가능
+        const THIS_YEAR = 2026;
+        
+        // [캐싱 시스템] 이미 조회한 애니메이션의 연도를 저장해 API 호출을 아낌
+        const animeYearCache = new Map(); 
 
         function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
         function clean(str) { return str.replace(/[^가-힣a-zA-Z0-9]/g, ''); }
 
-        // 재시도 로직이 포함된 Fetch 함수
         async function fetchSmart(url, retries = 3) {
             try {
                 const res = await fetch(url);
-                if (res.status === 429) { // 너무 빠름
-                    await sleep(3000);
-                    return fetchSmart(url, retries);
-                }
-                if (res.status === 500) { // 서버 에러
-                    if (retries > 0) {
-                        await sleep(5000); // 5초 대기 후 재시도
-                        console.warn(`Retry ${url} (${retries} left)`);
-                        return fetchSmart(url, retries - 1);
-                    } else {
-                        throw new Error("Server Dead");
-                    }
+                if (res.status === 429) { await sleep(2000); return fetchSmart(url, retries); }
+                if (res.status >= 500) {
+                    if (retries > 0) { await sleep(3000); return fetchSmart(url, retries - 1); }
+                    else return null;
                 }
                 return await res.json();
             } catch (e) { return null; }
+        }
+
+        // 애니메이션 연도 조회 함수 (캐시 사용)
+        async function getAnimeYear(animeId) {
+            if (animeYearCache.has(animeId)) return animeYearCache.get(animeId);
+            
+            await sleep(600); // 상세 조회 속도 제한
+            const data = await fetchSmart(`https://api.jikan.moe/v4/anime/${animeId}`);
+            const year = data?.data?.aired?.prop?.from?.year || 0; // 0은 연도 미상
+            
+            animeYearCache.set(animeId, year); // 캐시에 저장
+            return year;
         }
 
         async function startExtraction() {
             const log = document.getElementById('log');
             const fill = document.getElementById('bar-fill');
             rookieStore = {}; imageFiles = [];
-            
-            // 데이터 임시 저장소 (ID -> { info, works[] })
             let candidateMap = new Map();
 
-            log.innerHTML = `📡 [1단계] ${THIS_YEAR}년 데이터 수집 및 로컬 필터링...<br>`;
+            log.innerHTML = `📡 [1단계] ${THIS_YEAR}년 활동 성우 스캔 중...<br>`;
             const seasons = ['winter', 'spring', 'summer', 'fall'];
 
+            // 1. 올해 활동 성우 1차 필터링
             for (let s of seasons) {
                 const seasonData = await fetchSmart(`https://api.jikan.moe/v4/seasons/${THIS_YEAR}/${s}`);
                 if (seasonData?.data) {
                     for (let anime of seasonData.data) {
-                        // 캐릭터 정보 가져오기
                         const charData = await fetchSmart(`https://api.jikan.moe/v4/anime/${anime.mal_id}/characters`);
-                        await sleep(800); // 기본 딜레이
-
+                        await sleep(800);
+                        
                         if (charData?.data) {
                             charData.data.forEach(c => {
                                 c.voice_actors?.forEach(va => {
                                     if (va.language === 'Japanese') {
                                         const vaId = va.person.mal_id;
-                                        
-                                        // 성우 정보가 없으면 초기화
                                         if (!candidateMap.has(vaId)) {
-                                            candidateMap.set(vaId, {
-                                                id: vaId,
-                                                name: va.person.name,
-                                                roles: []
-                                            });
+                                            candidateMap.set(vaId, { id: vaId, name: va.person.name, thisYearRoles: [] });
                                         }
-
-                                        // 배역 정보 로컬 저장
-                                        candidateMap.get(vaId).roles.push({
-                                            animeTitle: anime.title,
-                                            animeId: anime.mal_id,
-                                            charName: c.character.name,
-                                            charRole: c.role, // Main, Supporting, Background
-                                            charImg: c.character.images?.jpg?.image_url
-                                        });
+                                        candidateMap.get(vaId).thisYearRoles.push(c.role); // Main, Supporting 체크용
                                     }
                                 });
                             });
                         }
                     }
                 }
-                log.innerHTML += `✅ ${s} 시즌 데이터 메모리 적재 완료<br>`;
+                log.innerHTML += `✅ ${s} 시즌 스캔 완료<br>`;
                 log.scrollTop = log.scrollHeight;
             }
 
-            // [2단계: 로컬 필터링] - API 요청 없이 메모리에서 탈락시키기
+            // 2. 로컬 필터링 (올해 2작품 이상 & 주/조연 포함)
             const allCandidates = Array.from(candidateMap.values());
-            log.innerHTML += `🔍 전체 ${allCandidates.length}명 중 자격 미달자 제거 중...<br>`;
-
             const survivors = allCandidates.filter(va => {
-                // 조건 1: 올해 2작품 이상
-                // 중복 애니메이션 제거 (1작품 2배역은 1작품으로 칠 것인가? -> 보통 작품수 기준)
-                const uniqueWorks = new Set(va.roles.map(r => r.animeId));
-                if (uniqueWorks.size < 2) return false;
-
-                // 조건 2: 주연(Main) 또는 조연(Supporting)이 하나라도 있는가?
-                const hasImportantRole = va.roles.some(r => r.charRole === 'Main' || r.charRole === 'Supporting');
-                if (!hasImportantRole) return false;
-
-                return true;
+                const workCount = va.thisYearRoles.length;
+                if (workCount < 2) return false;
+                const hasMainSupport = va.thisYearRoles.some(r => r === 'Main' || r === 'Supporting');
+                return hasMainSupport;
             });
 
-            log.innerHTML += `📉 필터링 결과: ${allCandidates.length}명 ➔ <span style="color:#f1c40f; font-weight:bold;">${survivors.length}명</span>으로 압축됨.<br>`;
-            log.innerHTML += `🚀 [3단계] 최종 생존자 ${survivors.length}명 데뷔 연도 검증 시작...<br>`;
+            log.innerHTML += `🔍 후보 압축: ${allCandidates.length}명 -> ${survivors.length}명<br>`;
+            log.innerHTML += `🚀 [2단계] 후보 성우 전체 필모그래피 정밀 조회 시작 (시간이 걸립니다)...<br>`;
 
-            // [3단계: 생존자만 정밀 검사]
+            // 3. 루키 검증 및 전체 이력 조회
             for (let i = 0; i < survivors.length; i++) {
                 fill.style.width = `${((i + 1) / survivors.length) * 100}%`;
-                await verifyRookie(survivors[i], log);
-                await sleep(1500); // 500 에러 방지를 위한 충분한 휴식
+                await analyzeFullHistory(survivors[i], log);
+                await sleep(1000);
             }
 
-            log.innerHTML += "✨ 모든 작업 완료!";
+            log.innerHTML += "✨ 모든 추출 작업이 완료되었습니다!";
             document.getElementById('img-btn').disabled = false;
             updateOutput();
         }
 
-        async function verifyRookie(va, log) {
-            // voices API 호출 (데뷔일 확인용)
-            // 여기가 500 에러가 나는 곳이므로, 실패 시에도 로컬 데이터로 살릴지 결정해야 함
+        async function analyzeFullHistory(va, log) {
+            // 전체 출연작 가져오기
             const voiceData = await fetchSmart(`https://api.jikan.moe/v4/people/${va.id}/voices`);
+            if (!voiceData || !voiceData.data) return;
+
+            // 배경(Background) 역할 제외, 주/조연만 남기기 (데이터 품질 위해)
+            const allRoles = voiceData.data.filter(v => v.role !== 'Background');
             
-            let debutYear = THIS_YEAR;
-            let totalWorks = 0;
+            // 중복 작품 제거
+            const uniqueWorks = new Map();
+            allRoles.forEach(v => {
+                if (!uniqueWorks.has(v.anime.mal_id)) uniqueWorks.set(v.anime.mal_id, v);
+            });
+            const workList = Array.from(uniqueWorks.values());
 
-            if (voiceData && voiceData.data) {
-                const uniqueAllWorks = new Set(voiceData.data.map(v => v.anime.mal_id));
-                totalWorks = uniqueAllWorks.size;
-                
-                // 가장 오래된 ID 찾기 (ID가 작을수록 오래된 작품)
-                // 정확한 연도 조회를 위해 최소값 ID 작품 하나만 조회
-                const minId = Math.min(...uniqueAllWorks);
-                const firstAnime = await fetchSmart(`https://api.jikan.moe/v4/anime/${minId}`);
-                debutYear = firstAnime?.data?.aired?.prop?.from?.year || THIS_YEAR;
-                await sleep(500);
-            } else {
-                log.innerHTML += `<span style="color:orange;">⚠️ ${va.name}: 이력 조회 실패(500). 2026년 데이터로만 판단합니다.</span><br>`;
-                // API 실패 시, 올해 데이터가 확실하므로 일단 루키 후보로 둡니다 (수동 검증 필요 표시)
-                debutYear = THIS_YEAR; 
-                totalWorks = 20; // 가상의 안전값
-            }
-
+            // 데뷔 연도 확인 (가장 ID가 낮은 작품의 연도 조회)
+            if (workList.length === 0) return;
+            const firstWork = workList.reduce((p, c) => p.anime.mal_id < c.anime.mal_id ? p : c);
+            const debutYear = await getAnimeYear(firstWork.anime.mal_id);
+            
+            const totalWorks = workList.length;
             const yearsActive = THIS_YEAR - debutYear;
-            let isRookie = false;
+            const thisYearCount = workList.filter(w => w.anime.mal_id > 55000).length; // 대략적 체크
 
-            // 조건 판단
+            let isRookie = false;
+            // 루키 기준 검사
             if (yearsActive <= 5 && totalWorks <= 30) isRookie = true;
-            else if (yearsActive > 5 && va.roles.length <= 5 && totalWorks <= 20) isRookie = true;
+            else if (yearsActive > 5 && va.thisYearRoles.length <= 5 && totalWorks <= 20) isRookie = true;
 
             if (isRookie) {
-                log.innerHTML += `<span style="color:#00d1b2;">[RISING]</span> ${va.name} (데뷔:${debutYear}/올해:${va.roles.length}작)<br>`;
+                log.innerHTML += `<span style="color:#00d1b2;">[RISING]</span> ${va.name} (데뷔:${debutYear} / 전체:${totalWorks}작) - 상세 연도 조회 중...<br>`;
                 log.scrollTop = log.scrollHeight;
+
+                // [중요] 루키로 확정된 경우에만 모든 작품의 연도를 조회 (API 절약)
+                const fullHistory = [];
+                
+                // 최신순 정렬을 위해 역순 혹은 정렬 처리
+                workList.sort((a, b) => b.anime.mal_id - a.anime.mal_id); 
+
+                for (let work of workList) {
+                    const y = await getAnimeYear(work.anime.mal_id);
+                    const charName = work.character.name;
+                    const fileName = `${clean(va.name)}${clean(charName)}.jpg`;
+
+                    if (work.character.images?.jpg?.image_url) {
+                        imageFiles.push({ url: work.character.images.jpg.image_url, name: fileName });
+                    }
+
+                    fullHistory.push({
+                        animeid: work.anime.mal_id,
+                        year: y, // 연도 필드 추가
+                        charName: charName,
+                        charimg: `../image/rookiecv/${fileName}`
+                    });
+                }
 
                 rookieStore[va.name] = {
                     name: va.name,
-                    characters: va.roles.map(r => {
-                        const fileName = `${clean(va.name)}${clean(r.charName)}.jpg`;
-                        if(r.charImg) imageFiles.push({ url: r.charImg, name: fileName });
-                        return {
-                            animetitle: r.animeTitle,
-                            charName: r.charName,
-                            charRole: r.charRole,
-                            charimg: `../image/rookiecv/${fileName}`
-                        };
-                    })
+                    cvimg: "", // 수동 입력용 빈 값
+                    characters: fullHistory
                 };
             }
         }
@@ -199,14 +193,24 @@
         function downloadJS() { saveAs(new Blob([document.getElementById('output').value], {type:'text/javascript'}), 'RookieCV.js'); }
         async function downloadAllImages() {
             const zip = new JSZip();
-            for (let img of imageFiles) {
+            // 중복 이미지 제거 후 다운로드
+            const uniqueImgs = new Map();
+            imageFiles.forEach(i => uniqueImgs.set(i.name, i.url));
+            
+            const btn = document.getElementById('img-btn');
+            btn.innerText = "압축 중...";
+            
+            for (let [name, url] of uniqueImgs) {
                 try {
-                    const res = await fetch(img.url);
+                    const res = await fetch(url);
                     const blob = await res.blob();
-                    zip.file(img.name, blob);
+                    zip.file(name, blob);
                 } catch (e) {}
             }
-            zip.generateAsync({type:"blob"}).then(c => saveAs(c, "smart_rookie_images.zip"));
+            zip.generateAsync({type:"blob"}).then(c => {
+                saveAs(c, "full_history_images.zip");
+                btn.innerText = "이미지 ZIP 완료";
+            });
         }
     </script>
 </body>
