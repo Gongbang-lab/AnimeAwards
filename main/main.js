@@ -53,7 +53,10 @@ function renderAwards() {
       case "rookie_voice":
         location.href = `../rookieNominate/rookieNominate.html?awardName=${encodeURIComponent(award.name)}&theme=${encodeURIComponent(award.theme)}`;
         break;
-        
+      case "meme":
+        location.href = `../memeNominate/memeNominate.html?awardName=${encodeURIComponent(award.name)}&theme=${encodeURIComponent(award.theme)}`;
+        break;
+
       default:
         location.href = `../nominate/nominate.html?awardName=${encodeURIComponent(award.name)}&theme=${encodeURIComponent(award.theme)}`;
       }

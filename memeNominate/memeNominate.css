@@ -1,0 +1,246 @@
+/* 밈 전용 그리드 레이아웃 */
+.meme-vote-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
+    gap: 25px;
+    padding: 20px;
+}
+
+.meme-card {
+    position: relative;
+    background: #151515;
+    border-radius: 20px;
+    border: 2px solid #222;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.meme-card.selected {
+    border-color: gold;
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
+    transform: translateY(-8px);
+}
+
+/* 카드 내 미디어 영역 */
+.media-box {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000;
+    overflow: hidden;
+}
+
+.media-box img, .media-box video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.meme-info {
+    padding: 15px;
+    text-align: center;
+    background: #1a1a1a;
+}
+
+.meme-info .name {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/* 확대 버튼 (zoom-btn) */
+.zoom-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 42px;
+    height: 42px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid gold;
+    color: gold;
+    border-radius: 12px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.zoom-btn:hover {
+    background: gold;
+    color: #000;
+    transform: scale(1.1);
+}
+
+/* ============================================================
+   팝업 레이아웃
+============================================================ */
+
+/* 팝업 배경 */
+.winner-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    backdrop-filter: blur(10px);
+}
+
+/* 팝업 컨테이너 */
+.winner-popup .popup-container {
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    max-height: 90vh;
+    background: #000;
+    border: 3px solid gold;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 미디어 영역 */
+.winner-popup .media-section {
+    width: 100%;
+    height: 70vh;
+    max-height: 600px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.winner-popup .media-section img,
+.winner-popup .media-section video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* 정보 영역 */
+.winner-popup .info-section {
+    padding: 25px 30px;
+    background: #0a0a0a;
+    text-align: center;
+    border-top: 2px solid #222;
+}
+
+.winner-popup .info-section .origin-text {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.winner-popup .info-section .title-text {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.winner-popup .info-section .desc-text {
+    color: #aaa;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 12px;
+}
+
+/* 닫기 버튼 */
+.winner-popup .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.winner-popup .close-btn:hover {
+    background: #ff4d4d;
+    border-color: #ff4d4d;
+    transform: scale(1.1);
+}
+
+/* 수상 팝업 전용 스타일 */
+.winner-popup.victory-mode .info-section .award-label {
+    color: gold;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.winner-popup.victory-mode .info-section .title-text {
+    color: gold;
+}
+
+.winner-popup.victory-mode .info-section .celebration-text {
+    color: #aaa;
+    font-size: 1.1rem;
+    margin: 15px 0 20px 0;
+}
+
+/* 버튼 */
+.winner-popup .action-btn {
+    background: gold;
+    color: #000;
+    border: none;
+    padding: 14px 35px;
+    font-size: 1rem;
+    font-weight: 800;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.winner-popup .action-btn:hover {
+    background: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+    .winner-popup .popup-container {
+        width: 95%;
+        max-height: 95vh;
+    }
+    
+    .winner-popup .media-section {
+        height: 50vh;
+        max-height: 400px;
+    }
+    
+    .winner-popup .info-section {
+        padding: 20px;
+    }
+    
+    .winner-popup .info-section .title-text {
+        font-size: 1.4rem;
+    }
+}
