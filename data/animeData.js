@@ -374,7 +374,7 @@ const AnimeByQuarter = {
 {
   "id": 56752,
   "title": "시광대리인 -Link Click- 영도편",
-  "thumbnail": "image/animeimg/Q1/시간대인련 영도편.webp",
+  "thumbnail": "image/animeimg/Q1/시광대리인 -Link Click- 영도편.webp",
   "day": "Thursdays",
   "episodes": 6,
   "studio": "Studio LAN",

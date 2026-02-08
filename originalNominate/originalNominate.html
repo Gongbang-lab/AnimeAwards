@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>각본상 노미네이트 - Step 1</title>
+    <link rel="stylesheet" href="./originalNominate.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <main class="nominee-section">
+            <h2 id="step-title">각본상 후보 선정 (Step 1)</h2>
+            <div id="card-grid" class="card-grid">
+                </div>
+        </main>
+
+<aside class="side-panel">
+    <div class="sticky-content">
+        <button id="nav-btn" class="btn-main" onclick="location.href='../main/main.html'">메인으로</button>
+        
+        <div class="preview-container">
+            <h3>Selection Preview</h3>
+            <div id="preview-list" class="preview-list"></div>
+        </div>
+
+        <div class="action-buttons">
+            <button id="next-btn" class="btn-gold" onclick="proceedToStep2()">다 음</button>
+            <button id="final-btn" class="btn-gold hidden" onclick="confirmFinalWinner()">최종 결정</button>
+        </div>
+    </div>
+</aside>
+    </div>
+
+<div id="winner-modal" class="modal hidden">
+    <div class="modal-content">
+        <h2>🏆 각본상 최종 수상 🏆</h2>
+        <div id="winner-info" class="winner-info"></div>
+        <button class="btn-gold" style="margin-top:20px;" onclick="goToMain()">확인 및 메인으로</button>
+    </div>
+</div>
+
+    <script src="../data/scriptwriterData.js"></script>
+    <script src="./originalNominate.js"></script>
+</body>
+</html>
