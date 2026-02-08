@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>각색상 노미네이트</title>
+    <link rel="stylesheet" href="./adaptorNominate.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <main class="content-area">
+            <h1 id="step-title">각색상 후보 선정 (Step 1)</h1>
+            <div id="anime-grid" class="grid-view"></div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sticky-nav">
+                <button id="nav-home" onclick="location.href='../main/main.html'">메인으로</button>
+                
+                <div class="preview-container" id="preview-section">
+                    <h3>선택 목록 (<span id="count">0</span>)</h3>
+                    <div id="preview-box" class="preview-box">
+                        </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button id="next-btn" class="gold-btn">다음 단계로</button>
+                    <button id="decide-btn" class="gold-btn hidden">최종 결정</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <div id="winner-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>🏆 BEST ADAPTATION 🏆</h2>
+            <div id="winner-info"></div>
+            <button onclick="location.href='../main/main.html'" class="gold-btn">확인 및 메인으로</button>
+        </div>
+    </div>
+
+    <script src="../data/adaptorData.js"></script>
+    <script src="./adaptorNominate.js"></script>
+</body>
+</html>

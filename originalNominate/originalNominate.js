@@ -62,7 +62,7 @@ function proceedToStep2() {
     selectedItems = []; 
     currentStep = 2;
 
-    document.getElementById('step-title').textContent = "최종 수상작 결정 (Step 2)";
+    document.getElementById('step-title').textContent = "최종 수상작 결정";
     document.getElementById('next-btn').classList.add('hidden');
     document.getElementById('final-btn').classList.remove('hidden');
     

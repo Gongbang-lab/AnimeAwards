@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>각색상 데이터 추출기</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; border: 1px solid #ddd; white-space: pre-wrap; word-break: break-all; }
+        .stats { margin-bottom: 10px; font-weight: bold; color: #2c3e50; }
+        button { padding: 10px 20px; cursor: pointer; background: #3498db; color: white; border: none; border-radius: 4px; font-weight: bold; }
+        button:hover { background: #2980b9; }
+    </style>
+</head>
+<body>
+    <h2>각색상(Best Adaptation) 후보 데이터 추출</h2>
+    <div class="stats" id="stats">데이터를 분석 중...</div>
+    <button onclick="copyToClipboard()">JS 형식으로 복사하기</button>
+    <pre id="result"></pre>
+
+    <script src="../data/animeData.js"></script>
+    
+    <script>
+        function extractAdaptorData() {
+            const nominatedList = [];
+
+            // AnimeByQuarter 객체의 모든 분기(Q1, Q2...)를 순회
+            if (typeof AnimeByQuarter !== 'undefined') {
+                for (const quarter in AnimeByQuarter) {
+                    AnimeByQuarter[quarter].forEach(anime => {
+                        // staff 필드가 있고, 그 안에 adaptor 필드가 있는지 확인
+                        if (anime.staff && anime.staff.adaptor && anime.staff.adaptor.length > 0) {
+                            nominatedList.push({
+                                id: anime.id,
+                                title: anime.title,
+                                thumbnail: `../${anime.thumbnail}`, // 경로 수정 포함
+                                studio: anime.studio,
+                                adaptor: anime.staff.adaptor
+                            });
+                        }
+                    });
+                }
+            }
+
+            // 변수 선언문을 포함한 텍스트 생성
+            const finalString = `const AnimeAdaptorData = ${JSON.stringify(nominatedList, null, 2)};`;
+            
+            // 화면에 출력
+            document.getElementById('result').textContent = finalString;
+            document.getElementById('stats').textContent = `총 ${nominatedList.length}개의 작품이 각색상 후보로 추출되었습니다.`;
+            
+            // 복사용 글로벌 변수에 저장
+            window.extractedData = finalString;
+        }
+
+        function copyToClipboard() {
+            if (!window.extractedData) return;
+            navigator.clipboard.writeText(window.extractedData).then(() => {
+                alert('JS 변수 형식이 클립보드에 복사되었습니다!\nanimeAdaptorData.js 파일에 붙여넣으세요.');
+            });
+        }
+
+        // 페이지 로드 시 즉시 실행
+        window.onload = extractAdaptorData;
+    </script>
+</body>
+</html>
