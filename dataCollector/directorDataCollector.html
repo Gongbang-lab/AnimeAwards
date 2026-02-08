@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Director Data Extractor</title>
+    <style>
+        body { font-family: 'Pretendard', sans-serif; padding: 30px; background-color: #f0f2f5; }
+        .container { max-width: 1000px; margin: 0 auto; background: white; padding: 25px; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.1); }
+        h2 { color: #1a73e8; border-bottom: 2px solid #1a73e8; padding-bottom: 10px; }
+        #output { 
+            background: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; 
+            white-space: pre-wrap; font-family: 'Consolas', monospace; font-size: 14px;
+            max-height: 600px; overflow-y: auto; border: 1px solid #333;
+        }
+        .btn-group { margin-bottom: 15px; }
+        .btn { 
+            padding: 12px 20px; background: #1a73e8; color: white; border: none; 
+            cursor: pointer; border-radius: 6px; font-weight: bold; transition: 0.3s;
+        }
+        .btn:hover { background: #1557b0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🚀 감독 데이터 변환 도구 (JS 파일용)</h2>
+        <p>아래 텍스트를 복사해서 <code>../data/animeDirectorData.js</code> 파일에 저장하세요.</p>
+        <div class="btn-group">
+            <button class="btn" onclick="copyToClipboard()">전체 코드 복사하기</button>
+        </div>
+        <div id="output">데이터를 분석 중입니다...</div>
+    </div>
+
+    <script src="../data/animeData.js"></script>
+
+    <script>
+        function generateJSFileContent() {
+            if (typeof AnimeByQuarter === 'undefined') {
+                return "에러: animeData.js를 찾을 수 없거나 데이터 구조가 다릅니다.";
+            }
+
+            const allAnimes = Object.values(AnimeByQuarter).flat();
+            const directorMap = {};
+
+            allAnimes.forEach(anime => {
+                // staff 및 director 존재 여부 안전하게 확인
+                const directors = anime.staff?.director;
+                
+                if (directors && Array.isArray(directors)) {
+                    directors.forEach(dirName => {
+                        if (!dirName) return;
+
+                        if (!directorMap[dirName]) {
+                            directorMap[dirName] = {
+                                director: dirName,
+                                director_img: "", 
+                                works: []
+                            };
+                        }
+
+                        // studio 제외, title/thumbnail만 추출
+                        directorMap[dirName].works.push({
+                            title: anime.title,
+                            thumbnail: `../${anime.thumbnail}`
+                        });
+                    });
+                }
+            });
+
+            const finalArray = Object.values(directorMap);
+            // JS 변수 선언문을 포함한 문자열 생성
+            return `const animeDirectorData = ${JSON.stringify(finalArray, null, 2)};`;
+        }
+
+        // 결과 출력
+        const finalCode = generateJSFileContent();
+        document.getElementById('output').textContent = finalCode;
+
+        function copyToClipboard() {
+            const text = document.getElementById('output').textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                alert("코드 전체가 클립보드에 복사되었습니다! animeDirectorData.js 파일에 붙여넣으세요.");
+            });
+        }
+    </script>
+</body>
+</html>

@@ -237,7 +237,7 @@ const AnimeAdaptorData = [
   {
     "id": 62804,
     "title": "하이스쿨! 기면조",
-    "thumbnail": "../image/animeimg/Q1/하이스쿨!_기면조.webp",
+    "thumbnail": "../image/animeimg/Q1/하이스쿨! 기면조.webp",
     "studio": "주식회사 세븐",
     "adaptor": [
       "무라코시 시게루"

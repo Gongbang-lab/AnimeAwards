@@ -1,0 +1,157 @@
+:root {
+    --gold: #d4af37;
+    --black: #121212;
+    --dark-grey: #1e1e1e;
+    --white: #ffffff;
+}
+
+body {
+    margin: 0; padding: 0;
+    background-color: var(--black);
+    color: var(--white);
+    font-family: 'Pretendard', sans-serif;
+}
+
+.container { display: flex; height: 100vh; }
+
+/* 레이아웃 분할 7:3 */
+.content-area { flex: 7; padding: 40px; overflow-y: auto; }
+.sidebar { 
+    flex: 3; 
+    background-color: var(--dark-grey); 
+    padding: 30px; 
+    border-left: 2px solid var(--gold);
+    display: flex; flex-direction: column; gap: 20px;
+}
+
+/* 그리드 뷰 */
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 25px;
+}
+
+/* 카드 UI */
+.card {
+    background: #2a2a2a;
+    border: 1px solid #444;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.card:hover { border-color: var(--gold); transform: translateY(-5px); }
+.card.selected { border: 2px solid var(--gold); background: #3a331a; }
+
+.dir-thumb {
+    width: 100%; aspect-ratio: 1/1;
+    background: #444; border-radius: 50%;
+    margin-bottom: 15px; background-size: cover;
+}
+
+.info-icon {
+    position: absolute; top: 10px; right: 10px;
+    background: var(--gold); color: black;
+    width: 22px; height: 22px; border-radius: 50%;
+    font-size: 14px; font-weight: bold; line-height: 22px;
+}
+
+/* 프리뷰 박스 */
+.preview-box {
+    background: #000;
+    border: 1px dashed var(--gold);
+    border-radius: 8px;
+    padding: 15px;
+    min-height: 200px;
+    max-height: 300px; /* 크기 제한 */
+    overflow-y: auto;
+}
+.preview-item {
+    padding: 5px 10px; margin: 5px 0;
+    background: #333; border-radius: 4px;
+    cursor: pointer; font-size: 0.9rem;
+}
+.preview-item:hover { text-decoration: line-through; color: #ff6b6b; }
+
+/* 버튼 */
+.btn {
+    padding: 12px; border-radius: 6px; cursor: pointer; border: none; font-weight: bold;
+}
+.btn.primary { background: var(--gold); color: black; }
+.btn.secondary { background: #444; color: white; }
+.btn.gold { background: linear-gradient(45deg, #d4af37, #f9e29c); color: black; }
+.full-width { width: 100%; margin-top: 20px; }
+.hidden { display: none !important; }
+
+/* 모달/팝업 (분할 뷰) */
+/* 모달 배경 흐림 효과 */
+.modal {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.7); 
+    backdrop-filter: blur(8px); /* 이 줄을 추가하면 배경이 흐려집니다 */
+    display: flex; align-items: center; justify-content: center; z-index: 100;
+}
+
+/* 수상 모달 강조 애니메이션 */
+@keyframes winner-glow {
+    0% { box-shadow: 0 0 10px var(--gold); }
+    50% { box-shadow: 0 0 40px var(--gold); }
+    100% { box-shadow: 0 0 10px var(--gold); }
+}
+
+.winner-border { 
+    border: 4px solid var(--gold); 
+    animation: winner-glow 2s infinite ease-in-out;
+}
+
+.modal-content {
+    background: var(--dark-grey); 
+    width: 90%;            /* 폭을 90%로 확장 */
+    max-width: 1200px;     /* 최대 너비 제한 확장 */
+    border-radius: 15px;
+    padding: 40px; 
+    position: relative;
+    box-sizing: border-box;
+}
+.split-view { display: flex; gap: 40px; }
+.modal-left { flex: 1; text-align: center; }
+.modal-right { flex: 2; }
+
+.modal-dir-img { 
+    width: 100%; 
+    height: auto;            /* 고정 높이 대신 auto 사용 */
+    max-height: 500px;       /* 너무 길어지는 것 방지 */
+    aspect-ratio: auto; 
+    background-size: contain; /* 꽉 채우지 않고 전체가 보이게 함 */
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid var(--gold);
+}
+.works-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* 이미지 크기 확보 */
+    gap: 15px; 
+    max-height: 60vh;      /* 높이 확장 */
+    overflow-y: auto; 
+    padding-right: 10px;
+}
+.work-item img {
+    width: 100%;
+    aspect-ratio: auto;
+    object-fit: contain;
+    border-radius: 4px;
+    border: 1px solid #444;
+    background-color: #000;
+}
+
+.work-item p {
+    font-size: 0.9rem;
+    margin-top: 8px;
+    text-align: center;
+    color: #ccc;
+}
+
+.gold-text { color: var(--gold); font-size: 2rem; }
+.close-btn { position: absolute; right: 20px; top: 10px; font-size: 30px; cursor: pointer; }

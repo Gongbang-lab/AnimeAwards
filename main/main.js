@@ -56,6 +56,24 @@ function renderAwards() {
       case "meme":
         location.href = `../memeNominate/memeNominate.html?awardName=${encodeURIComponent(award.name)}&theme=${encodeURIComponent(award.theme)}`;
         break;
+      case "original":
+        location.href = `../originalNominate/originalNominate.html?awardName=${encodeURIComponent(award.name)}&theme=${encodeURIComponent(award.theme)}`;
+        break;
+      case "director":
+        location.href = `../directorNominate/directorNominate.html?awardName=${encodeURIComponent(award.name)}&theme=${encodeURIComponent(award.theme)}`;
+        break;
+      case "dramatization":
+        location.href = `../adaptorNominate/adaptorNominate.html?awardName=${encodeURIComponent(award.name)}&theme=${encodeURIComponent(award.theme)}`;
+        break;
+      case "best_episode":
+        location.href = `../episodeNominate/episodeNominate.html?awardName=${encodeURIComponent(award.name)}&theme=${encodeURIComponent(award.theme)}`;
+        break;
+      case "cinema":
+        location.href = `../cinemaNominate/cinemaNominate.html?awardName=${encodeURIComponent(award.name)}&theme=${encodeURIComponent(award.theme)}`;
+        break;
+      case "studio":
+        location.href = `../studioNominate/studioNominate.html?awardName=${encodeURIComponent(award.name)}&theme=${encodeURIComponent(award.theme)}`;
+        break;
 
       default:
         location.href = `../nominate/nominate.html?awardName=${encodeURIComponent(award.name)}&theme=${encodeURIComponent(award.theme)}`;

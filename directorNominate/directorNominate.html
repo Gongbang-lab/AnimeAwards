@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Director Awards - Nomination</title>
+    <link rel="stylesheet" href="./directorNominate.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <main class="content-area">
+            <h1 id="step-title">Step 1: 후보 선택</h1>
+            <div id="director-grid" class="grid-view"></div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="menu-buttons">
+                <button id="nav-btn" class="btn secondary" onclick="handleNav()">메인으로</button>
+            </div>
+            
+            <div id="preview-section">
+                <h3>선택된 후보 (Preview)</h3>
+                <div id="preview-box" class="preview-box">
+                    </div>
+            </div>
+
+            <div class="action-buttons">
+                <button id="next-btn" class="btn primary" onclick="goToStep2()">다 음</button>
+                <button id="final-btn" class="btn gold hidden" onclick="confirmWinner()">최종 결정</button>
+            </div>
+        </aside>
+    </div>
+
+    <div id="info-modal" class="modal hidden">
+        <div class="modal-content split-view">
+            <span class="close-btn" onclick="closeModal('info-modal')">&times;</span>
+            <div class="modal-left">
+                <div class="modal-dir-img" id="modal-img"></div>
+                <h2 id="modal-name">감독명</h2>
+            </div>
+            <div class="modal-right">
+                <h3>주요 작품</h3>
+                <div id="modal-works-grid" class="works-grid"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="winner-modal" class="modal hidden">
+        <div class="modal-content split-view winner-border">
+            <div class="modal-left">
+                <div class="modal-dir-img" id="winner-img"></div>
+                <h2 id="winner-name" class="gold-text">감독명</h2>
+                <p class="award-label">🏆 올해의 감독상 🏆</p>
+            </div>
+            <div class="modal-right">
+                <h3>작품 리스트</h3>
+                <div id="winner-works-grid" class="works-grid"></div>
+                <button class="btn gold full-width" onclick="location.href='../main/main.html'">확인 및 메인으로</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../data/animeDirectorData.js"></script>
+    <script src="./directorNominate.js"></script>
+</body>
+</html>

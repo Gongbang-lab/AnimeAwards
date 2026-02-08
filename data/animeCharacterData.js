@@ -1346,7 +1346,7 @@ const CharacterData = {
     {
       "name": "스터드",
       "gender": "male",
-      "cv": "후쿠야마 쥰",
+      "cv": "후쿠야마 준",
       "img": "../image/charimg/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Stud.jpg"
     },
     {
@@ -1749,7 +1749,7 @@ const CharacterData = {
     {
       "name": "릴리 오를라뮌데",
       "gender": "female",
-      "cv": "M・A・O",
+      "cv": "M·A·O",
       "img": "../image/charimg/Q1/Eris_no_Seihai/Lily_Orlamunde.jpg"
     },
     {
@@ -1761,7 +1761,7 @@ const CharacterData = {
     {
       "name": "도미닉 함즈워스",
       "gender": "male",
-      "cv": "후쿠야마 쥰",
+      "cv": "후쿠야마 준",
       "img": "../image/charimg/Q1/Eris_no_Seihai/Dominic_Harmsworth.jpg"
     }
   ]
@@ -2517,7 +2517,7 @@ const CharacterData = {
     {
       "name": "아이리스",
       "gender": "female",
-      "cv": "M.A.O",
+      "cv": "M·A·O",
       "img": "../image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Iris.jpg"
     },
     {
@@ -2583,7 +2583,7 @@ const CharacterData = {
     {
       "name": "페어리",
       "gender": "male",
-      "cv": "산페이 유우코",
+      "cv": "산페이 유코",
       "img": "../image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Faerie.jpg"
     },
     {
@@ -2685,7 +2685,7 @@ const CharacterData = {
     {
       "name": "티르",
       "gender": "female",
-      "cv": "M.A.O",
+      "cv": "M·A·O",
       "img": "../image/charimg/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Till.jpg"
     },
     {
@@ -3057,7 +3057,7 @@ const CharacterData = {
     {
       "name": "아시나 반",
       "gender": "male",
-      "cv": "후쿠야마 쥰",
+      "cv": "후쿠야마 준",
       "img": "../image/charimg/Q1/Dead_Account/Ban_Ashina.jpg"
     },
     {
@@ -3327,7 +3327,7 @@ const CharacterData = {
     {
       "name": "유이츠카 이노리",
       "gender": "female",
-      "cv": "Natsumi Haruse",
+      "cv": "하루세 나츠미",
       "img": "../image/charimg/Q1/Medalist_2nd_Season/Inori_Yuitsuka.jpg"
     },
     {
@@ -3705,7 +3705,7 @@ const CharacterData = {
     {
       "name": "メロ先生",
       "gender": "female",
-      "cv": "Mariko Honda",
+      "cv": "혼다 마리코",
       "img": "../image/charimg/Q1/Kaya-chan_wa_Kowakunai/Melo-sensei.jpg"
     },
     {
@@ -3741,7 +3741,7 @@ const CharacterData = {
     {
       "name": "우메다 호쿠토",
       "gender": "male",
-      "cv": "후쿠야마 쥰",
+      "cv": "후쿠야마 준",
       "img": "../image/charimg/Q1/Hanazakari_no_Kimitachi_e/Hokuto_Umeda.jpg"
     },
     {
@@ -4161,7 +4161,7 @@ const CharacterData = {
     {
       "name": "오오토 칸쿠로",
       "gender": "male",
-      "cv": "스와베 쥰이치",
+      "cv": "스와베 준이치",
       "img": "../image/charimg/Q1/Hikuidori/Kankurou_Ooto.jpg"
     },
     {
@@ -4425,7 +4425,7 @@ const CharacterData = {
     {
       "name": "누루가이",
       "gender": "female",
-      "cv": "Makoto Koichi",
+      "cv": "코이치 마코토",
       "img": "../image/charimg/Q1/Jigokuraku_2nd_Season/Nurugai.jpg"
     },
     {
