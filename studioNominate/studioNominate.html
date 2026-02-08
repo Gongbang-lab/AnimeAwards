@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>올해의 스튜디오상 노미네이트</title>
+    <link rel="stylesheet" href="./studioNominate.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <main class="content-area">
+            <h1 class="title">올해의 스튜디오상 후보</h1>
+            <div id="studioGrid" class="grid-view"></div>
+        </main>
+
+        <aside class="control-panel">
+            <div class="button-group">
+                <button id="navBtn" class="btn-secondary" onclick="location.href='../main/main.html'">메인으로</button>
+            </div>
+            
+            <div id="previewContainer" class="preview-box">
+                <h3>선택된 후보 (Preview)</h3>
+                <div id="previewList" class="preview-list"></div>
+            </div>
+
+            <div class="action-group">
+                <button id="nextBtn" class="btn-primary">다음 단계로</button>
+            </div>
+        </aside>
+    </div>
+
+    <div id="modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-left">
+                    <img id="modalStudioImg" src="" alt="Studio">
+                    <h2 id="modalStudioName"></h2>
+                </div>
+                <div class="modal-right">
+                    <h3>제작 애니메이션</h3>
+                    <div id="modalAnimeGrid" class="anime-mini-grid"></div>
+                    <div id="finalActionArea" class="hidden">
+                        <button onclick="location.href='../main/main.html'" class="btn-primary">확인 및 메인으로</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../data/animeStudioData.js"></script>
+    <script src="./studioNominate.js"></script>
+</body>
+</html>

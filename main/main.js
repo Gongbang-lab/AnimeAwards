@@ -74,7 +74,9 @@ function renderAwards() {
       case "studio":
         location.href = `../studioNominate/studioNominate.html?awardName=${encodeURIComponent(award.name)}&theme=${encodeURIComponent(award.theme)}`;
         break;
-
+      case "villian":
+        location.href = `../charNominate/charNominate.html?awardName=${encodeURIComponent(award.name)}&theme=${encodeURIComponent(award.theme)}`;
+        break;
       default:
         location.href = `../nominate/nominate.html?awardName=${encodeURIComponent(award.name)}&theme=${encodeURIComponent(award.theme)}`;
       }

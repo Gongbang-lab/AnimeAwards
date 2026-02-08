@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Studio Data Extractor</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; }
+        #log { background: #f4f4f4; padding: 15px; border-radius: 5px; white-space: pre-wrap; }
+        button { padding: 10px 20px; cursor: pointer; background: #007bff; color: white; border: none; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <h2>스튜디오 데이터 추출 도구</h2>
+    <p>1. <code>../data/animeData.js</code> 파일을 읽어 스튜디오별로 그룹화합니다.</p>
+    <button id="extractBtn">데이터 추출 및 JS 파일 다운로드</button>
+    
+    <h3>추출 로그:</h3>
+    <div id="log">준비 완료...</div>
+
+    <script src="../data/animeData.js"></script>
+
+    <script>
+        document.getElementById('extractBtn').addEventListener('click', () => {
+            try {
+                const studioMap = {};
+
+                // 1. 모든 분기(Q1, Q2...) 순회
+                for (const quarter in AnimeByQuarter) {
+                    AnimeByQuarter[quarter].forEach(anime => {
+                        const studioName = anime.studio;
+
+                        // 스튜디오 키가 없으면 초기화
+                        if (!studioMap[studioName]) {
+                            studioMap[studioName] = {
+                                studio: studioName,
+                                studio_img: `../image/studio/${studioName}.webp`, // 기본 경로 설정
+                                works: []
+                            };
+                        }
+
+                        // 해당 스튜디오의 작품 목록에 추가
+                        studioMap[studioName].works.push({
+                            title: anime.title,
+                            thumbnail: `../${anime.thumbnail}`
+                        });
+                    });
+                }
+
+                // 2. 객체를 배열 형태로 변환
+                const finalData = Object.values(studioMap);
+
+                // 3. JS 파일 내용 구성
+                const fileContent = `const AnimeStudioData = ${JSON.stringify(finalData, null, 2)};`;
+
+                // 4. 파일 다운로드 트리거
+                const blob = new Blob([fileContent], { type: 'text/javascript' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'animeStudioData.js';
+                a.click();
+                URL.revokeObjectURL(url);
+
+                document.getElementById('log').innerText = "추출 성공! 'animeStudioData.js' 파일을 저장했습니다.\n총 " + finalData.length + "개의 스튜디오가 추출되었습니다.";
+                console.log("Extracted Data:", finalData);
+
+            } catch (error) {
+                document.getElementById('log').innerText = "에러 발생: " + error.message;
+            }
+        });
+    </script>
+</body>
+</html>

@@ -29,5 +29,5 @@ const Awards = [
   { id: 22, name: '베스트 에피소드', thumb: '', theme: 'best_episode'},
   { id: 23, name: '올해의 시네마', thumb: '', theme: 'cinema'},
   { id: 24, name: '올해의 스튜디오', thumb: '', theme: 'studio'},
-  { id: 25, name: '올해의 빌런', thumb: '', theme: ''},
+  { id: 25, name: '올해의 빌런', thumb: '', theme: 'villian'},
 ];
