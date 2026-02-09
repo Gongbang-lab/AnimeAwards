@@ -1,7 +1,7 @@
 const animeDirectorData = [
   {
     "director": "오이자키 후미토시",
-    "director_img": "",
+    "director_img": "../image/staff/director/오이자키 후미토시.webp",
     "works": [
       {
         "title": "고문 아르바이트의 일상",
