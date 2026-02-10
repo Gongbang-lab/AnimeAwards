@@ -11,7 +11,7 @@ const animeDirectorData = [
   },
   {
     "director": "스즈키 켄이치",
-    "director_img": "",
+    "director_img": "../image/staff/director/스즈키 켄이치.webp",
     "works": [
       {
         "title": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
@@ -21,7 +21,7 @@ const animeDirectorData = [
   },
   {
     "director": "오오니시 켄타",
-    "director_img": "",
+    "director_img": "../image/staff/director/default.webp",
     "works": [
       {
         "title": "깨끗하게 해주시겠어요?",
@@ -31,7 +31,7 @@ const animeDirectorData = [
   },
   {
     "director": "스가하라 시즈타카",
-    "director_img": "",
+    "director_img": "../image/staff/director/스가하라 시즈타카.webp",
     "works": [
       {
         "title": "골든 카무이 최종장",
@@ -41,7 +41,7 @@ const animeDirectorData = [
   },
   {
     "director": "카나모리 요코",
-    "director_img": "",
+    "director_img": "../image/staff/director/default.webp",
     "works": [
       {
         "title": "공주님 \"고문\"의 시간입니다 2기",
@@ -51,7 +51,7 @@ const animeDirectorData = [
   },
   {
     "director": "쿠와바라 사토시",
-    "director_img": "",
+    "director_img": "../image/staff/director/쿠와바라 사토시.webp",
     "works": [
       {
         "title": "소꿉친구와는 러브 코미디를 할 수 없어",
@@ -61,7 +61,7 @@ const animeDirectorData = [
   },
   {
     "director": "미네 토모노리",
-    "director_img": "",
+    "director_img": "../image/staff/director/default.webp",
     "works": [
       {
         "title": "용사 파티에 귀여운 애가 있어서, 고백해봤다.",
@@ -70,8 +70,8 @@ const animeDirectorData = [
     ]
   },
   {
-    "director": "야마모토 야스타카(총)",
-    "director_img": "",
+    "director": "야마모토 야스타카",
+    "director_img": "../image/staff/director/야마모토 야스타카.webp",
     "works": [
       {
         "title": "용사 파티에 귀여운 애가 있어서, 고백해봤다.",
@@ -81,7 +81,7 @@ const animeDirectorData = [
   },
   {
     "director": "이시히라 신지",
-    "director_img": "",
+    "director_img": "../image/staff/director/이시히라 신지.webp",
     "works": [
       {
         "title": "이세계 사정은 사축 하기 나름",
@@ -91,7 +91,7 @@ const animeDirectorData = [
   },
   {
     "director": "타카하시 마사유키",
-    "director_img": "",
+    "director_img": "../image/staff/director/default.webp",
     "works": [
       {
         "title": "한밤중 하트튠",
@@ -101,7 +101,7 @@ const animeDirectorData = [
   },
   {
     "director": "후지타 요이치",
-    "director_img": "",
+    "director_img": "../image/staff/director/후지타 요이치.webp",
     "works": [
       {
         "title": "개진전 사무라이 트루퍼",
@@ -111,7 +111,7 @@ const animeDirectorData = [
   },
   {
     "director": "츠다 나오카츠",
-    "director_img": "",
+    "director_img": "../image/staff/director/츠다 나오카츠.webp",
     "works": [
       {
         "title": "다윈 사변",
@@ -121,7 +121,7 @@ const animeDirectorData = [
   },
   {
     "director": "후쿠시마 토시노리",
-    "director_img": "",
+    "director_img": "../image/staff/director/후쿠시마 토시노리.webp",
     "works": [
       {
         "title": "29세 독신 중견 모험가의 일상",
@@ -135,7 +135,7 @@ const animeDirectorData = [
   },
   {
     "director": "이노우에 케이스케",
-    "director_img": "",
+    "director_img": "../image/staff/director/이노우에 케이스케.webp",
     "works": [
       {
         "title": "아르네의 사건부",
@@ -145,7 +145,7 @@ const animeDirectorData = [
   },
   {
     "director": "오오타 마사히코",
-    "director_img": "",
+    "director_img": "../image/staff/director/오오타 마사히코.webp",
     "works": [
       {
         "title": "마왕의 딸은 너무 친절해!!",
@@ -155,7 +155,7 @@ const animeDirectorData = [
   },
   {
     "director": "히라마키 다이스케",
-    "director_img": "",
+    "director_img": "../image/staff/director/히라마키 다이스케.webp",
     "works": [
       {
         "title": "【최애의 아이】 3기",
@@ -165,7 +165,7 @@ const animeDirectorData = [
   },
   {
     "director": "우에노 소타",
-    "director_img": "",
+    "director_img": "../image/staff/director/우에노 소타.webp",
     "works": [
       {
         "title": "사망 유희로 밥을 먹는다.",
@@ -175,7 +175,7 @@ const animeDirectorData = [
   },
   {
     "director": "후쿠다 미치오",
-    "director_img": "",
+    "director_img": "../image/staff/director/후쿠다 미치오.webp",
     "works": [
       {
         "title": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
@@ -185,7 +185,7 @@ const animeDirectorData = [
   },
   {
     "director": "노다 켄타",
-    "director_img": "",
+    "director_img": "../image/staff/director/default.webp",
     "works": [
       {
         "title": "온화한 귀족의 휴가의 권장",
@@ -195,7 +195,7 @@ const animeDirectorData = [
   },
   {
     "director": "리하오링",
-    "director_img": "",
+    "director_img": "../image/staff/director/리하오링.webp",
     "works": [
       {
         "title": "시광대리인 -Link Click- 영도편",
@@ -205,7 +205,7 @@ const animeDirectorData = [
   },
   {
     "director": "타카시마 히로유키",
-    "director_img": "",
+    "director_img": "../image/staff/director/default.webp",
     "works": [
       {
         "title": "용사형에 처함",
@@ -215,7 +215,7 @@ const animeDirectorData = [
   },
   {
     "director": "타무라 마사후미",
-    "director_img": "",
+    "director_img": "../image/staff/director/default.webp",
     "works": [
       {
         "title": "마도정병의 슬레이브 2기",
@@ -225,7 +225,7 @@ const animeDirectorData = [
   },
   {
     "director": "세타 미츠호",
-    "director_img": "",
+    "director_img": "../image/staff/director/default.webp",
     "works": [
       {
         "title": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
@@ -234,8 +234,8 @@ const animeDirectorData = [
     ]
   },
   {
-    "director": "모리타 와 준페이",
-    "director_img": "",
+    "director": "모리타와 준페이",
+    "director_img": "../image/staff/director/모리타와 준페이.webp",
     "works": [
       {
         "title": "에리스의 성배",
@@ -245,7 +245,7 @@ const animeDirectorData = [
   },
   {
     "director": "고쇼조노 쇼타",
-    "director_img": "",
+    "director_img": "../image/staff/director/고쇼조노 쇼타.webp",
     "works": [
       {
         "title": "주술회전 3기",
@@ -255,7 +255,7 @@ const animeDirectorData = [
   },
   {
     "director": "카마나카 노부하루",
-    "director_img": "",
+    "director_img": "../image/staff/director/카마나카 노부하루.webp",
     "works": [
       {
         "title": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
@@ -265,7 +265,7 @@ const animeDirectorData = [
   },
   {
     "director": "야마모토 준이치",
-    "director_img": "",
+    "director_img": "../image/staff/director/야마모토 준이치.webp",
     "works": [
       {
         "title": "어차피, 사랑하고 만다. 2기",
@@ -275,7 +275,7 @@ const animeDirectorData = [
   },
   {
     "director": "쿠보 요스케",
-    "director_img": "",
+    "director_img": "../image/staff/director/default.webp",
     "works": [
       {
         "title": "샹피뇽의 마녀",
@@ -285,7 +285,7 @@ const animeDirectorData = [
   },
   {
     "director": "키타가와 토모야",
-    "director_img": "",
+    "director_img": "../image/staff/director/default.webp",
     "works": [
       {
         "title": "장송의 프리렌 2기",
@@ -295,7 +295,7 @@ const animeDirectorData = [
   },
   {
     "director": "세키 카즈아키",
-    "director_img": "",
+    "director_img": "../image/staff/director/세키 카즈아키.webp",
     "works": [
       {
         "title": "하이스쿨! 기면조",
@@ -305,7 +305,7 @@ const animeDirectorData = [
   },
   {
     "director": "시가 쇼코",
-    "director_img": "",
+    "director_img": "../image/staff/director/default.webp",
     "works": [
       {
         "title": "DARK MOON: 달의 제단",
@@ -315,7 +315,7 @@ const animeDirectorData = [
   },
   {
     "director": "타마가와 마코토",
-    "director_img": "",
+    "director_img": "../image/staff/director/default.webp",
     "works": [
       {
         "title": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~",
@@ -325,7 +325,7 @@ const animeDirectorData = [
   },
   {
     "director": "미나미카와 타츠마",
-    "director_img": "",
+    "director_img": "../image/staff/director/미나미카와 타츠마.webp",
     "works": [
       {
         "title": "불꽃 소방대 3장",
@@ -335,7 +335,7 @@ const animeDirectorData = [
   },
   {
     "director": "타카무라 유타",
-    "director_img": "",
+    "director_img": "../image/staff/director/default.webp",
     "works": [
       {
         "title": "전생했더니 드래곤의 알이었다 ~최강이 아니면 목표로 하지 않아~",
@@ -345,7 +345,7 @@ const animeDirectorData = [
   },
   {
     "director": "타타미타니 테츠야",
-    "director_img": "",
+    "director_img": "../image/staff/director/타타미타니 테츠야.webp",
     "works": [
       {
         "title": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
@@ -359,7 +359,7 @@ const animeDirectorData = [
   },
   {
     "director": "쿠리야마 타카유키",
-    "director_img": "",
+    "director_img": "../image/staff/director/default.webp",
     "works": [
       {
         "title": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
@@ -369,7 +369,7 @@ const animeDirectorData = [
   },
   {
     "director": "사토 마사코",
-    "director_img": "",
+    "director_img": "../image/staff/director/사토 마사코.webp",
     "works": [
       {
         "title": "트라이건 스타게이즈",
@@ -379,7 +379,7 @@ const animeDirectorData = [
   },
   {
     "director": "에노키도 슌",
-    "director_img": "",
+    "director_img": "../image/staff/director/에노키도 슌.webp",
     "works": [
       {
         "title": "Fate/strange Fake",
@@ -389,7 +389,7 @@ const animeDirectorData = [
   },
   {
     "director": "사카즈메 타카히토",
-    "director_img": "",
+    "director_img": "../image/staff/director/사카즈메 타카히토.webp",
     "works": [
       {
         "title": "Fate/strange Fake",
@@ -399,7 +399,7 @@ const animeDirectorData = [
   },
   {
     "director": "사이토 케이야",
-    "director_img": "",
+    "director_img": "../image/staff/director/default.webp",
     "works": [
       {
         "title": "데드 어카운트",
@@ -409,7 +409,7 @@ const animeDirectorData = [
   },
   {
     "director": "이와나가 아키라",
-    "director_img": "",
+    "director_img": "../image/staff/director/default.webp",
     "works": [
       {
         "title": "인외 교실의 인간 혐오 교사",
@@ -419,7 +419,7 @@ const animeDirectorData = [
   },
   {
     "director": "우시로 신지",
-    "director_img": "",
+    "director_img": "../image/staff/director/우시로 신지.webp",
     "works": [
       {
         "title": "쓰레기 용사",
@@ -429,7 +429,7 @@ const animeDirectorData = [
   },
   {
     "director": "나가오카 치카",
-    "director_img": "",
+    "director_img": "../image/staff/director/나가오카 치카.webp",
     "works": [
       {
         "title": "타몬 군 지금 어느 쪽!?",
@@ -439,7 +439,7 @@ const animeDirectorData = [
   },
   {
     "director": "야마모토 야스타카",
-    "director_img": "",
+    "director_img": "../image/staff/director/야마모토 야스타카.webp",
     "works": [
       {
         "title": "메달리스트 2기",
@@ -449,7 +449,7 @@ const animeDirectorData = [
   },
   {
     "director": "마루야마 유스케",
-    "director_img": "",
+    "director_img": "../image/staff/director/default.webp",
     "works": [
       {
         "title": "아름다운 초저녁달",
@@ -458,8 +458,8 @@ const animeDirectorData = [
     ]
   },
   {
-    "director": "나가토모 타카카즈",
-    "director_img": "",
+    "director": "나가토모 타카요시",
+    "director_img": "../image/staff/director/default.webp",
     "works": [
       {
         "title": "정반대의 너와 나",
@@ -469,7 +469,7 @@ const animeDirectorData = [
   },
   {
     "director": "히로시 이케하타",
-    "director_img": "",
+    "director_img": "../image/staff/director/히로시 이케하타.webp",
     "works": [
       {
         "title": "카야는 무섭지 않아",
@@ -479,7 +479,7 @@ const animeDirectorData = [
   },
   {
     "director": "타케무라 나츠키",
-    "director_img": "",
+    "director_img": "../image/staff/director/default.webp",
     "works": [
       {
         "title": "아름다운 그대에게",
@@ -489,7 +489,7 @@ const animeDirectorData = [
   },
   {
     "director": "오오바 히데아키",
-    "director_img": "",
+    "director_img": "../image/staff/director/오오바 히데아키.webp",
     "works": [
       {
         "title": "마술사 쿠논은 보인다",
@@ -499,7 +499,7 @@ const animeDirectorData = [
   },
   {
     "director": "칸베 히로유키",
-    "director_img": "",
+    "director_img": "../image/staff/director/칸베 히로유키.webp",
     "works": [
       {
         "title": "용사 파티에서 쫓겨난 다재무능",
@@ -509,7 +509,7 @@ const animeDirectorData = [
   },
   {
     "director": "하마나 타카유키",
-    "director_img": "",
+    "director_img": "../image/staff/director/하마나 타카유키.webp",
     "works": [
       {
         "title": "악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다",
@@ -519,7 +519,7 @@ const animeDirectorData = [
   },
   {
     "director": "오오시로 미유키",
-    "director_img": "",
+    "director_img": "../image/staff/director/default.webp",
     "works": [
       {
         "title": "위국일기",
@@ -528,8 +528,8 @@ const animeDirectorData = [
     ]
   },
   {
-    "director": "카메가키 하지메(총)",
-    "director_img": "",
+    "director": "카메가키 하지메",
+    "director_img": "../image/staff/director/카메가키 하지메.webp",
     "works": [
       {
         "title": "화식조 우슈보로토비구미",
@@ -539,7 +539,7 @@ const animeDirectorData = [
   },
   {
     "director": "야스미 히로시",
-    "director_img": "",
+    "director_img": "../image/staff/director/default.webp",
     "works": [
       {
         "title": "화식조 우슈보로토비구미",
@@ -549,7 +549,7 @@ const animeDirectorData = [
   },
   {
     "director": "나카 토모히토",
-    "director_img": "",
+    "director_img": "../image/staff/director/default.webp",
     "works": [
       {
         "title": "MF고스트 3rd Season",
@@ -559,7 +559,7 @@ const animeDirectorData = [
   },
   {
     "director": "마키타 카오리",
-    "director_img": "",
+    "director_img": "../image/staff/director/마키타 카오리.webp",
     "works": [
       {
         "title": "지옥락 2기",
@@ -569,7 +569,7 @@ const animeDirectorData = [
   },
   {
     "director": "우치누마 나츠미",
-    "director_img": "",
+    "director_img": "../image/staff/director/default.webp",
     "works": [
       {
         "title": "내가 연인이 될 수 있을 리 없잖아, 무리무리! (※무리가 아니었다?!) ~넥스트 샤인!~",
@@ -579,7 +579,7 @@ const animeDirectorData = [
   },
   {
     "director": "사사키 스미토",
-    "director_img": "",
+    "director_img": "../image/staff/director/default.webp",
     "works": [
       {
         "title": "아리스가와 렌은 사실 여자라구!!",
@@ -589,7 +589,7 @@ const animeDirectorData = [
   },
   {
     "director": "콘노 히유타",
-    "director_img": "",
+    "director_img": "../image/staff/director/default.webp",
     "works": [
       {
         "title": "이치고 아이카 ~잡하고 생기발랄한 동생과 못말리는 오빠~",
@@ -599,7 +599,7 @@ const animeDirectorData = [
   },
   {
     "director": "모리시타 유스케",
-    "director_img": "",
+    "director_img": "../image/staff/director/default.webp",
     "works": [
       {
         "title": "최애 의붓형을 사랑하기 위해, 오래 살겠습니다!",
@@ -609,7 +609,7 @@ const animeDirectorData = [
   },
   {
     "director": "네코B",
-    "director_img": "",
+    "director_img": "../image/staff/director/default.webp",
     "works": [
       {
         "title": "안드로이드는 경험인 수에 들어가나요??",
@@ -619,7 +619,7 @@ const animeDirectorData = [
   },
   {
     "director": "요시하라 마사유키",
-    "director_img": "",
+    "director_img": "../image/staff/director/요시하라 마사유키.webp",
     "works": [
       {
         "title": "천수의 사쿠나히메 코코로와 농사 일지",
@@ -629,7 +629,7 @@ const animeDirectorData = [
   },
   {
     "director": "이타가키 신",
-    "director_img": "",
+    "director_img": "../image/staff/director/이타가키 신.webp",
     "works": [
       {
         "title": "이세계에서 치트 스킬을 얻은 나는 현실 세계에서도 무쌍한다 ~레벨업이 인생을 바꿨다~ TVSP",
@@ -639,7 +639,7 @@ const animeDirectorData = [
   },
   {
     "director": "나카자와 카즈토",
-    "director_img": "",
+    "director_img": "../image/staff/director/나카자와 카즈토.webp",
     "works": [
       {
         "title": "프리즘 윤무곡",
@@ -649,7 +649,7 @@ const animeDirectorData = [
   },
   {
     "director": "타카하시 테츠야",
-    "director_img": "",
+    "director_img": "../image/staff/director/default.webp",
     "works": [
       {
         "title": "프리즘 윤무곡",
@@ -659,7 +659,7 @@ const animeDirectorData = [
   },
   {
     "director": "후지이 사키",
-    "director_img": "",
+    "director_img": "../image/staff/director/default.webp",
     "works": [
       {
         "title": "프리즘 윤무곡",
@@ -669,7 +669,7 @@ const animeDirectorData = [
   },
   {
     "director": "야마시타 신고",
-    "director_img": "",
+    "director_img": "../image/staff/director/야마시타 신고.webp",
     "works": [
       {
         "title": "초(超) 가구야 공주!",
@@ -678,18 +678,18 @@ const animeDirectorData = [
     ]
   },
   {
-    "director": "Hirano, Toshiki",
-    "director_img": "",
+    "director": "히라노 토시키",
+    "director_img": "../image/staff/director/히라노 토시키.webp",
     "works": [
       {
-        "title": "Baki-dou",
+        "title": "바키도: 무적의 검사 편",
         "thumbnail": "../image/animeimg/Q1/바키도.webp"
       }
     ]
   },
   {
     "director": "타카하시 히데야",
-    "director_img": "",
+    "director_img": "../image/staff/director/default.webp",
     "works": [
       {
         "title": "스틸 볼 런: 죠죠의 기묘한 모험",
@@ -699,7 +699,7 @@ const animeDirectorData = [
   },
   {
     "director": "키무라 야스히로",
-    "director_img": "",
+    "director_img": "../image/staff/director/default.webp",
     "works": [
       {
         "title": "스틸 볼 런: 죠죠의 기묘한 모험",
@@ -709,7 +709,7 @@ const animeDirectorData = [
   },
   {
     "director": "마츠미 신이치",
-    "director_img": "",
+    "director_img": "../image/staff/director/마츠미 신이치.webp",
     "works": [
       {
         "title": "비스타즈 파이널 시즌",

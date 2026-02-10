@@ -457,7 +457,7 @@ const AnimeByQuarter = {
   "studio": "아시 프로덕션",
   "staff": {
     "director": [
-      "모리타 와 준페이"
+      "모리타와 준페이"
     ],
     "character_design": [
       "카와구치 치에",
@@ -865,7 +865,7 @@ const AnimeByQuarter = {
   "studio": "라판트랙",
   "staff": {
     "director": [
-      "나가토모 타카카즈"
+      "나가토모 타카요시"
     ],
     "character_design": [
       "미야코 마코",
@@ -1301,20 +1301,20 @@ const AnimeByQuarter = {
 },
 {
   "id": 58573,
-  "title": "Baki-dou",
+  "title": "바키도: 무적의 검사 편",
   "thumbnail": "image/animeimg/Q1/바키도.webp",
   "day": "Web",
   "episodes": 13,
   "studio": "TMS Entertainment",
   "staff": {
     "director": [
-      "Hirano, Toshiki"
+      "히라노 토시키"
     ],
     "character_design": [
-      "Ishikawa, Shingo"
+      "신고 이시카와"
     ],
     "adaptor": [
-      "Urahata, Tatsuhiko"
+      "타츠히코 우라하타"
     ]
   }
 },

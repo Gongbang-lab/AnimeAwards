@@ -1,68 +1,68 @@
 const RookieCVData = {
-  "Kaneta, Ai": {
-    "name": "Kaneta, Ai",
+  "카네타 아이": {
+    "name": "카네타 아이",
     "debutYear": 2021,
     "cvimg": "",
     "characters": [
       {
-        "animeTitle": "Kidou Senshi Gundam: GQuuuuuuX",
+        "animeTitle": "기동전사 건담 지쿠악스",
         "year": 2025,
-        "charName": "Bocata",
+        "charName": "보카타",
         "charimg": "../image/rookiecv/KanetaAiBocata.jpg"
       },
       {
-        "animeTitle": "Nazotoki wa Dinner no Ato de",
+        "animeTitle": "수수께끼 풀이는 저녁식사 후에",
         "year": 2025,
-        "charName": "Kodama, Akiko",
+        "charName": "코다마 아키코",
         "charimg": "../image/rookiecv/KanetaAiKodamaAkiko.jpg"
       },
       {
-        "animeTitle": "Saikyou no Ousama, Nidome no Jinsei wa Nani wo Suru?",
+        "animeTitle": "최강의 왕, 두 번째 인생에는 무엇을 하는가?",
         "year": 2025,
-        "charName": "Emily",
+        "charName": "에밀리 왓츠캔",
         "charimg": "../image/rookiecv/KanetaAiEmily.jpg"
       },
       {
-        "animeTitle": "Mato Seihei no Slave 2",
+        "animeTitle": "마도정병의 슬레이브 2",
         "year": 2026,
-        "charName": "Azuma, Sorako",
+        "charName": "아즈마 소라코",
         "charimg": "../image/rookiecv/KanetaAiAzumaSorako.jpg"
       },
       {
-        "animeTitle": "Suki demo Kirai na Amanojaku",
+        "animeTitle": "좋아해도 싫어하는",
         "year": 2024,
-        "charName": "Touko",
+        "charName": "토우코",
         "charimg": "../image/rookiecv/KanetaAiTouko.jpg"
       },
       {
         "animeTitle": "Fate/strange Fake",
         "year": 2026,
-        "charName": "Aldora",
+        "charName": "알드라",
         "charimg": "../image/rookiecv/KanetaAiAldora.jpg"
       },
       {
         "animeTitle": "Yuusha ga Shinda!",
         "year": 2023,
-        "charName": "Carmen, Ciruela",
+        "charName": "시르엘라 카르멘",
         "charimg": "../image/rookiecv/KanetaAiCarmenCiruela.jpg"
       },
       {
-        "animeTitle": "Kaizoku Oujo",
+        "animeTitle": "해적왕녀",
         "year": 2021,
-        "charName": "Shih, Ching",
+        "charName": "친 시",
         "charimg": "../image/rookiecv/KanetaAiShihChing.jpg"
       }
     ]
   },
-  "Izumi, Fuuka": {
-    "name": "Izumi, Fuuka",
+  "이즈미 후카": {
+    "name": "이즈미 후카",
     "debutYear": 2023,
     "cvimg": "",
     "characters": [
       {
         "animeTitle": "Kill Ao",
         "year": 2026,
-        "charName": "Mitsuoka, Noren",
+        "charName": "미츠오카 노렌",
         "charimg": "../image/rookiecv/IzumiFuukaMitsuokaNoren.jpg"
       },
       {
