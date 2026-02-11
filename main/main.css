@@ -1,163 +1,292 @@
 /* ===============================
-    기본 배경 및 레이아웃
+    기본 레이아웃 & 중앙 정렬
 ================================ */
 body {
-  background-color: #000;
+  background-color: #050505;
   color: #fff;
   margin: 0;
-  padding: 40px 24px;
+  padding: 60px 24px;
   font-family: 'Pretendard', -apple-system, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 가로 중앙 정렬 */
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.subtitle {
+  color: gold;
+  letter-spacing: 4px;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
 }
 
 h1 {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 800;
-  margin-bottom: 40px;
-  color: #fff;
-  letter-spacing: -0.5px;
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0;
+  background: linear-gradient(to bottom, #fff, #888);
+  -webkit-background-clip: text;
+  background-clip: text; /* 표준 속성 추가 (오류 해결) */
+  -webkit-text-fill-color: transparent;
+}
+
+.header-line {
+  width: 60px;
+  height: 3px;
+  background: gold;
+  margin: 20px auto;
 }
 
 /* ===============================
-    카드 그리드
+    섹션 및 그리드 설정
 ================================ */
-#award-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 24px;
+#top3-area {
+  display: flex;
+  flex-direction: row;    /* 확실하게 가로 나열 */
+  justify-content: center; 
+  align-items: flex-end;
+  gap: 25px;
+  width: 100%;
   max-width: 1200px;
+  margin: 40px auto 80px;
+  padding: 20px;
+  flex-wrap: wrap;         /* 화면이 좁아지면 다음 줄로 */
+  border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+}
+
+.award-section {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column; /* 제목-선 세로 배치 */
+  align-items: center;    /* 중앙 정렬 */
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0;
+  color: #fff;
+  letter-spacing: -1px;
+}
+
+.section-divider {
+  width: 40px;
+  height: 3px;
+  background: gold;
+  margin-top: 15px; /* 제목 바로 아래에 위치 */
+}
+
+.award-grid-inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 60px;
+  width: 100%;
+  max-width: 1300px;
+  align-items: start;
+  justify-content: center; /* 카드들을 가로축 중앙으로 */
   margin: 0 auto;
 }
 
 /* ===============================
-    카드 기본 (Dark Theme)
+    카드 디자인 & 비율 (Core)
 ================================ */
 .award-card {
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 12px;
+  padding: 15px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  /* width: 100%로 두어야 grid의 minmax 설정에 따라 유동적으로 변합니다 */
+  width: 100%; 
+  max-width: 280px; /* 카드가 너무 뚱뚱해지지 않게 제한 */
   display: flex;
   flex-direction: column;
-  padding: 12px;
-  background: #111; /* 깊은 회색 배경 */
-  border: 1px solid #222;
-  border-radius: 16px;
-  cursor: pointer;
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto; /* 그리드 내부에서 중앙 배치 */
 }
 
 .award-card:hover {
   transform: translateY(-8px);
   border-color: #444;
-  background: #161616;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* ===============================
-    썸네일 (16:9 비율)
-================================ */
+.thumb-wrapper {
+  width: 100%;
+  background: #222;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
 .award-thumb {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: 100%;
   object-fit: cover;
-  border-radius: 10px;
-  background: #222;
-  margin-bottom: 12px;
-  transition: transform 0.3s ease;
+  display: block;
 }
 
-.award-card:hover .award-thumb {
-  transform: scale(1.02);
-}
+/* 요청하신 비율 설정 */
+.ratio-16-9 .thumb-wrapper { aspect-ratio: 16 / 9; }
+.ratio-11-16 .thumb-wrapper { aspect-ratio: 11 / 16; }
+.ratio-poster .thumb-wrapper { aspect-ratio: 199 / 280; }
 
-/* ===============================
-    텍스트 영역
-================================ */
 .award-name {
-  font-size: 16px;
+  font-size: 1.1rem;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
   color: #eee;
 }
 
 .award-winner {
-  font-size: 14px;
+  font-size: 0.95rem;
   text-align: center;
-  color: #888;
-  margin-top: 4px;
+  color: #666;
 }
 
-/* ===============================
-    🏆 수상된 카드 강조 (Gold Theme)
-================================ */
+/* 수상 시 스타일 */
 .award-card.has-winner {
-  border: 1px solid gold;
-  background: linear-gradient(145deg, #1a1a1a, #0a0a0a);
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.15);
-}
-
-.award-card.has-winner .award-name {
-  color: gold;
+  border-color: gold;
+  background: linear-gradient(145deg, #1a1a1a, #050505);
 }
 
 .award-card.has-winner .award-winner {
-  color: #fff;
-  font-weight: 600;
-  padding: 4px 8px;
-  background: rgba(255, 215, 0, 0.1);
-  border-radius: 6px;
-  display: inline-block;
-  margin: 8px auto 0;
+  color: gold;
+  font-weight: 700;
 }
 
-.award-card.has-winner::after {
-  content: "🏆";
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  font-size: 18px;
-  filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.5));
-}
-
-/* ===============================
-    리셋 버튼 (Floating 스타일)
-================================ */
+/* 리셋 버튼 */
 #reset-btn {
   position: fixed;
-  bottom: 24px; /* 아래쪽으로 변경하여 모바일 접근성 향상 */
-  right: 24px;
-  z-index: 999;
-  width: 48px;
-  height: 48px;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.1);
   background: #222;
-  color: #888;
-  font-size: 20px;
+  color: #fff;
+  border: none;
   cursor: pointer;
-  transition: all 0.3s ease;
+  font-size: 20px;
+  z-index: 100;
+  transition: 0.3s;
+}
+#reset-btn:hover { background: #e11d48; transform: rotate(-180deg); }
+
+/* 1. 스튜디오 카드 전용 스타일 */
+.award-card.ratio-16-9 {
+  max-width: 380px; /* 가로형이므로 일반 카드보다 조금 더 넓게 설정 가능 */
+  flex: 1 1 320px;
+}
+
+/* 1등 (대상): 정중앙 */
+.award-card.rank-1 {
+  order: 2; /* 두 번째 위치 (중앙) */
+  border: 2px solid gold;
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
+  z-index: 10;
+}
+
+/* 2등 (최우수상): 오른쪽 */
+.award-card.rank-2 {
+  order: 3; /* 세 번째 위치 (오른쪽) */
+  border-color: silver;
+  z-index: 5;
+}
+
+/* 3등 (우수상): 왼쪽 */
+.award-card.rank-3 {
+  order: 1; /* 첫 번째 위치 (왼쪽) */
+  border-color: #cd7f32;
+  z-index: 1;
+}
+
+/* 시상대 아래 빈 공간 방지 및 애니메이션 */
+.award-card.rank-1, .award-card.rank-2, .award-card.rank-3 {
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.award-card.ratio-16-9 .thumb-wrapper {
+  aspect-ratio: 16 / 9; /* 가로 비율 고정 */
+  background: #1a1a1a;  /* 로고가 돋보이도록 배경색 조정 */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#reset-btn:hover {
-  background: #b91c1c; /* 호버시에만 빨간색으로 변경하여 평소엔 차분하게 유지 */
-  color: white;
-  transform: rotate(-180deg);
-  box-shadow: 0 0 20px rgba(185, 28, 28, 0.4);
+.award-card.ratio-16-9 .award-thumb {
+  width: 90%;          /* 이미지(로고)가 꽉 차지 않게 여백 부여 */
+  height: 90%;
+  object-fit: contain; /* 로고가 잘리지 않고 전체가 다 보이게 함 */
 }
 
-/* 반응형 모바일 대응 */
-@media (max-width: 600px) {
-  #award-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+/* 솟아오르는 애니메이션 정의 */
+@keyframes slideUpFade {
+  0% {
+    opacity: 0;
+    transform: translateY(100px); /* 100px 아래에서 시작 */
   }
-  .award-card {
-    padding: 8px;
-  }
-  h1 {
-    font-size: 1.5rem;
+  100% {
+    opacity: 1;
+    /* 최종 위치는 아래 개별 설정(rank-1, 2, 3)에서 덮어씌워집니다 */
   }
 }
+
+/* TOP 3 카드 공통 애니메이션 설정 */
+.award-card.rank-1, 
+.award-card.rank-2, 
+.award-card.rank-3 {
+  animation: slideUpFade 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  opacity: 0; /* 애니메이션 시작 전에는 숨김 */
+}
+
+/* 등장 순서 차이 (Delay) */
+.award-card.rank-2 { 
+  animation-delay: 0.2s; /* 2등 먼저 */
+}
+.award-card.rank-3 { 
+  animation-delay: 0.4s; /* 그 다음 3등 */
+}
+.award-card.rank-1 { 
+  animation-delay: 0.7s; /* 주인공인 1등이 마지막에 등장! */
+}
+
+/* 최종 위치 고정 (중요: translateY를 유지해야 함) */
+.award-card.rank-1 { transform: translateY(-40px); }
+.award-card.rank-2 { transform: translateY(0); }
+.award-card.rank-3 { transform: translateY(20px); }
+
+/* 애니메이션이 끝난 후에도 transform 상태를 유지하기 위해 @keyframes 수정이 필요할 수 있습니다 */
+@keyframes slideUpRank1 {
+  0% { opacity: 0; transform: translateY(100px); }
+  100% { opacity: 1; transform: translateY(-80px); }
+}
+@keyframes slideUpRank2 {
+  0% { opacity: 0; transform: translateY(100px); }
+  100% { opacity: 1; transform: translateY(-20px); }
+}
+@keyframes slideUpRank3 {
+  0% { opacity: 0; transform: translateY(100px); }
+  100% { opacity: 1; transform: translateY(40px); }
+}
+
+/* 각 카드에 개별 애니메이션 적용 */
+.award-card.rank-1 { animation: slideUpRank1 1s cubic-bezier(0.17, 0.67, 0.83, 1) forwards; animation-delay: 0.8s; }
+.award-card.rank-2 { animation: slideUpRank2 0.8s ease-out forwards; animation-delay: 0.2s; }
+.award-card.rank-3 { animation: slideUpRank3 0.8s ease-out forwards; animation-delay: 0.5s; }
