@@ -5,9 +5,9 @@
 //'올해의 똥','다크호스 상', '베스트 에피소드상', '올해의 시네마상', '올해의 스튜디오 상'
 //'이카루스'
 const Awards = [
-  { id: 1, name: '대상', thumb: '', theme :'default'},
-  { id: 2, name: '최우수상', thumb: '', theme: 'default'},
-  { id: 3, name: '우수상', thumb: '', theme: 'default'},
+  { id: 1, name: '대상', thumb: '', theme :'top3'},
+  { id: 2, name: '최우수상', thumb: '', theme: 'top3'},
+  { id: 3, name: '우수상', thumb: '', theme: 'top3'},
   { id: 4, name: '밈', thumb: '', theme: 'meme'},
   { id: 5, name: '오프닝', thumb: '', theme: 'opening'},
   { id: 6, name: '엔딩', thumb: '', theme: 'ending'},

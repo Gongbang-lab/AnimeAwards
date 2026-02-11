@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>TOP 3 노미네이트</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <link rel="stylesheet" href="./top3Nominate.css" />
+</head>
+<body>
+
+  <header class="nominate-header">
+    <h1 id="award-title">🏆 TOP 3 선정</h1>
+  </header>
+
+  <main class="nominate-page">
+    <section class="nominate-left" id="left-area">
+      </section>
+
+    <aside class="nominate-right">
+      
+      <div class="step1-buttons" id="step1-buttons">
+        <button class="step-btn secondary" id="step1-back-btn">메인으로</button>
+        <button class="step-btn primary" id="step1-next-btn" disabled>후보 확정 (Step 2)</button>
+      </div>
+
+      <div class="step2-buttons" id="step2-buttons" style="display:none;">
+        <button class="step-btn secondary" id="step2-back-btn">뒤로가기</button>
+        <button class="step-btn primary gold" id="step2-award-btn" disabled>TOP 3 결정 완료</button>
+      </div>
+
+      <div id="step1-preview" class="step1-preview">
+        <div class="preview-title">1차 후보 리스트</div>
+        <div class="preview-scroll">
+          <div id="preview-list" class="preview-list"></div>
+        </div>
+      </div>
+
+      <div id="step2-status" class="step2-status" style="display: none;">
+        <div class="status-title">선정 현황 (순서대로)</div>
+        <ul class="rank-list">
+          <li id="rank-1" class="rank-item empty"><span class="badge">우수상</span> <span class="text">선택 대기...</span></li>
+          <li id="rank-2" class="rank-item empty"><span class="badge">최우수상</span> <span class="text">선택 대기...</span></li>
+          <li id="rank-3" class="rank-item empty"><span class="badge">대상</span> <span class="text">선택 대기...</span></li>
+        </ul>
+      </div>
+    </aside>
+  </main>
+
+  <div class="winner-popup" id="winner-popup">
+    <div class="popup-card">
+      <h2 style="color: gold; margin-top: 0;">🏆 FINAL TOP 3</h2>
+      
+      <div class="winners-container" id="winners-container">
+        </div>
+
+      <button class="popup-btn" id="go-main-btn">
+        확인 및 저장
+      </button>
+    </div>
+  </div>
+
+  <script src="../data/animeData.js"></script>
+  <script src="../data/animeCharacter.js"></script>
+  <script src="../data/awardData.js"></script>
+  <script src="../data/animeSongs.js"></script>
+
+  <script src="./top3Nominate.js"></script>
+</body>
+</html>
