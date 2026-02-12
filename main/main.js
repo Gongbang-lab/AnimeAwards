@@ -1,6 +1,31 @@
 const mainContainer = document.getElementById("main-container");
 const top3Area = document.getElementById("top3-area");
 const resetBtn = document.getElementById("reset-btn");
+document.getElementById("save-img-btn").onclick = function() {
+    // 1. 캡처할 대상 요소 선택 (전체 컨테이너 혹은 특정 영역)
+    const target = document.getElementById("main-container"); 
+    
+    // 버튼 등을 캡처에서 제외하고 싶다면 클래스로 조절하거나 미리 숨깁니다.
+    // 예: save-img-btn.style.display = 'none';
+
+    html2canvas(target, {
+        useCORS: true, // 외부 서버(데이터)의 이미지 허용
+        allowTaint: true,
+        backgroundColor: "#121212", // 캡처 시 배경색 지정 (CSS와 맞출 것)
+        scale: 2 // 해상도를 2배로 높여서 선명하게 저장
+    }).then(canvas => {
+        // 2. 캔버스를 이미지 데이터로 변환
+        const link = document.createElement("a");
+        link.download = `나의_애니메이션_어워즈_${new Date().toLocaleDateString()}.png`;
+        link.href = canvas.toDataURL("image/png");
+        
+        // 3. 가상 링크 클릭으로 다운로드 실행
+        link.click();
+        
+        // 버튼 다시 보이기 (숨겼을 경우)
+        // save-img-btn.style.display = 'block';
+    });
+};
 
 // 1. 카테고리 정의 및 비율 설정
 const categories = [
@@ -196,4 +221,27 @@ resetBtn.onclick = () => {
     }
 };
 
-document.addEventListener("DOMContentLoaded", renderAwards);
+document.addEventListener("DOMContentLoaded", () => {
+    const infoBtn = document.getElementById("info-btn");
+    const infoModal = document.getElementById("info-modal");
+    const closeModal = document.querySelector(".close-modal");
+
+    // 모달 열기
+    infoBtn.onclick = () => {
+        infoModal.style.display = "flex";
+    };
+
+    // 모달 닫기 (X 버튼)
+    closeModal.onclick = () => {
+        infoModal.style.display = "none";
+    };
+
+    // 모달 닫기 (배경 클릭 시)
+    window.onclick = (event) => {
+        if (event.target === infoModal) {
+            infoModal.style.display = "none";
+        }
+    };
+
+    renderAwards();
+});

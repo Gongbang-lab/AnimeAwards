@@ -28,7 +28,7 @@ function renderMemeGrid() {
 
     grid.innerHTML = Object.values(AnimeMemeData).map(meme => `
         <div class="meme-card" id="card-${meme.id}" onclick="selectMeme('${meme.id}')">
-            <button class="zoom-btn" onclick="openMemeZoom('${meme.id}', event)" title="확대 보기">🔍</button>
+            <button class="zoom-btn" onclick="openMemeZoom('${meme.id}', event)" title="확대 보기">+</button>
             
             <div class="media-box">
                 ${meme.type === 'video' 
