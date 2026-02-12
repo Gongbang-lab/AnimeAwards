@@ -48,25 +48,70 @@
     font-size: 1.1rem;
 }
 
+/* 버튼 컨테이너: 가로 정렬 및 간격 조절 */
+.step-buttons {
+    display: flex;          /* 가로로 나열 */
+    gap: 12px;              /* 버튼 사이의 간격 */
+    width: 100%;            /* 사이드바 너비에 맞춤 */
+    padding: 10px;          /* 주변 여백 */
+}
+
+/* 개별 버튼 공통 스타일 */
+.step-btn {
+    flex: 1;                /* 중요: 두 버튼이 동일하게 공간을 나눠 가짐 */
+    padding: 18px 0;        /* 위아래 높이를 키워 시인성 확보 */
+    font-size: 1.1rem;      /* 글자 크기 확대 */
+    font-weight: 800;       /* 글자 두껍게 */
+    border-radius: 12px;    /* 모서리 둥글게 */
+    cursor: pointer;
+    transition: all 0.3s;
+    border: none;           /* 기본 테두리 제거 */
+    white-space: nowrap;    /* 텍스트 줄바꿈 방지 */
+}
+
+/* 수상 결정 버튼 (골드) */
+.step-btn.primary.gold {
+    background: gold;
+    color: #000;
+}
+
+.step-btn.primary.gold:disabled {
+    background: #333;       /* 비활성화 시 어두운 회색 */
+    color: #777;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* 메인으로 버튼 (보조 버튼) */
+.step-btn.secondary {
+    background: #222;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+/* 호버 효과 */
+.step-btn:not(:disabled):hover {
+    transform: translateY(-3px); /* 위로 살짝 들리는 효과 */
+    filter: brightness(1.1);      /* 살짝 밝아짐 */
+}
+
 /* 확대 버튼 (zoom-btn) */
 .zoom-btn {
     position: absolute;
     top: 15px;
     right: 15px;
-    width: 42px;
-    height: 42px;
+    width: 30px;
+    height: 30px;
     background: rgba(0, 0, 0, 0.7);
-    border: 2px solid gold;
     color: gold;
     border-radius: 12px;
     cursor: pointer;
     z-index: 10;
-    font-size: 20px;
+    font-size: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: 0.2s;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
 .zoom-btn:hover {

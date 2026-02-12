@@ -3,7 +3,7 @@
  */
 const memeState = {
     selectedMeme: null,
-    awardName: "올해의 애니 밈 상"
+    awardName: "밈"
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -46,11 +46,23 @@ function renderMemeGrid() {
  * 카드 선택 로직
  */
 function selectMeme(id) {
+    const prevSelectedId = memeState.selectedMeme?.id;
     memeState.selectedMeme = AnimeMemeData[id];
     
+    // 이전 선택된 비디오 정지 (옵션)
+    if (prevSelectedId) {
+        const prevVideo = document.querySelector(`#card-${prevSelectedId} video`);
+        if (prevVideo) prevVideo.pause();
+    }
+
     document.querySelectorAll('.meme-card').forEach(c => c.classList.remove('selected'));
-    const selectedAcross = document.getElementById(`card-${id}`);
-    if (selectedAcross) selectedAcross.classList.add('selected');
+    const currentCard = document.getElementById(`card-${id}`);
+    if (currentCard) {
+        currentCard.classList.add('selected');
+        // 선택되면 바로 재생되게 할 수도 있음
+        const curVideo = currentCard.querySelector('video');
+        if (curVideo) curVideo.play();
+    }
     
     const awardBtn = document.getElementById('btn-award');
     if (awardBtn) awardBtn.disabled = false;

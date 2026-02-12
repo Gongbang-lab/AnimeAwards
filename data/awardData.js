@@ -23,7 +23,7 @@ const Awards = [
   { id: 16, name: '감독상', thumb: '', theme: 'director'},
   { id: 17, name: '동화상', thumb: '', theme: 'in_between'}, // 원화사이 더 부드럽게나 빨라보이게 만드는 역할
   { id: 18, name: '원화(작화)상', thumb: '', theme: 'key_animation'},
-  { id: 19, name: '변기탑', thumb: '', theme: 'default'},
+  { id: 19, name: '연출상', thumb: '', theme: 'directing'},
   { id: 20, name: '이카루스', thumb: '', theme: 'default'},
   { id: 21, name: '다크호스', thumb: '', theme: 'default'},
   { id: 22, name: '베스트 에피소드', thumb: '', theme: 'best_episode'},

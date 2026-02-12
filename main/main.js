@@ -9,7 +9,7 @@ const categories = [
     { title: "성우 부문", themes: ['rookie_voice', 'voice_male', 'voice_female'], ratio: 'ratio-11-16' },
     { title: "캐릭터 부문", themes: ['character_male', 'character_female', 'best_couple'], ratio: 'ratio-11-16' },
     { title: "스태프 부문", themes: ['original', 'dramatization', 'director'], ratio: 'ratio-poster' }, // 동화, 원화 제외
-    { title: "아트 부문", themes: ['in_between', 'key_animation'], ratio: 'ratio-poster' }, // 새롭게 추가
+    { title: "아트 부문", themes: ['directing','in_between', 'key_animation'], ratio: 'ratio-poster' }, // 새롭게 추가
     { title: "애니메이션 시리즈", themes: ['default', 'best_episode'], ratio: 'ratio-poster' },
     { title: "올해의 시리즈", themes: ['cinema', 'studio', 'series', 'top3'], ratio: 'ratio-poster' }
 ];
@@ -108,36 +108,62 @@ function createAwardCard(award, results, ratioClass) {
     card.className = `award-card ${ratioClass}`;
 
     let winner = null;
+
+    // [핵심 수정: 매칭 우선순위] 
+    // 1. 먼저 TOP3 배열 내부에서 이 카드의 이름(대상/최우수/우수)이 있는지 "가장 먼저" 확인
     for (const val of Object.values(results)) {
         if (Array.isArray(val)) {
-            winner = val.find(item => String(item.rank).trim() === String(award.name).trim());
-            if (winner) break;
+            // 배열 속 객체들 중 rank가 내 카드 이름과 일치하는 것을 탐색
+            const found = val.find(item => String(item.rank).trim() === String(award.name).trim());
+            if (found) {
+                winner = found;
+                break;
+            }
         }
     }
 
+    // 2. 배열에서 못 찾았고, results[award.name]이 단일 객체일 때만 직접 매칭
+    if (!winner && results[award.name] && !Array.isArray(results[award.name])) {
+        winner = results[award.name];
+    }
+
+    // 기본값 설정
     let displayTitle = "준비중";
     let displayThumb = award.thumb || "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
 
     if (winner) {
+        // [끝판왕 로직 적용: 어떤 키 이름으로 저장되어 있든 강제 추출]
         Object.keys(winner).forEach(key => {
             const value = winner[key];
-            if (typeof value === 'string') {
-                if (value.includes('../image/')) displayThumb = value;
-                else if (key !== 'rank' && value.length > 1) displayTitle = value;
+            if (typeof value === 'string' && value.length > 0) {
+                // 이미지/비디오 경로 추출
+                if (value.includes('../image/') || value.endsWith('.webp') || value.endsWith('.mp4')) {
+                    displayThumb = value;
+                } 
+                // 제목 추출 (rank 제외, title이나 name 등 문자열 추출)
+                else if (key !== 'rank' && value.length > 1 && displayTitle === "준비중") {
+                    displayTitle = value;
+                }
             }
         });
         card.classList.add("has-winner");
     }
 
+    // 3. 비디오 태그 대응 렌더링
+    const isVideo = displayThumb.endsWith('.mp4') || (winner && winner.type === 'video');
+    const mediaTag = isVideo 
+        ? `<video src="${displayThumb}" class="award-thumb" autoplay muted loop playsinline></video>`
+        : `<img src="${displayThumb}" class="award-thumb" onerror="this.src='${award.thumb}'">`;
+
     card.innerHTML = `
         <div class="thumb-wrapper">
-            <img src="${displayThumb}" class="award-thumb" onerror="this.src='${award.thumb}'">
+            ${mediaTag}
         </div>
         <div class="award-name">${award.name}</div>
         <div class="award-winner">${displayTitle}</div>
     `;
 
-    // 클릭 시 이동 (상세 페이지 분기 로직)
+    // 클릭 시 이동 (기존 로직 유지)
     card.onclick = () => {
         const query = `awardName=${encodeURIComponent(award.name)}&theme=${encodeURIComponent(award.theme)}`;
         let path = "../nominate/nominate.html";

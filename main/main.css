@@ -60,7 +60,7 @@ h1 {
 
 .award-section {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1600px;
   margin-bottom: 100px;
   display: flex;
   flex-direction: column;
@@ -92,10 +92,10 @@ h1 {
 
 .award-grid-inner {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 60px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 80px;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1500px;
   align-items: start;
   justify-content: center; /* 카드들을 가로축 중앙으로 */
   margin: 0 auto;
@@ -113,7 +113,7 @@ h1 {
   cursor: pointer;
   /* width: 100%로 두어야 grid의 minmax 설정에 따라 유동적으로 변합니다 */
   width: 100%; 
-  max-width: 280px; /* 카드가 너무 뚱뚱해지지 않게 제한 */
+  max-width: 260px; /* 카드가 너무 뚱뚱해지지 않게 제한 */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -145,6 +145,15 @@ h1 {
 .ratio-16-9 .thumb-wrapper { aspect-ratio: 16 / 9; }
 .ratio-11-16 .thumb-wrapper { aspect-ratio: 11 / 16; }
 .ratio-poster .thumb-wrapper { aspect-ratio: 199 / 280; }
+/* 올해의 시리즈 섹션만 별도 지정하고 싶을 때 */
+.award-section:last-child .award-grid-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start; /* 높이가 달라도 윗줄을 맞춤 */
+  gap: 60px; /* 고정된 간격 */
+  flex-wrap: wrap;
+}
 
 .award-name {
   font-size: 1.1rem;
