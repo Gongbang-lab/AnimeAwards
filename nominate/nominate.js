@@ -303,17 +303,58 @@ function openAwardPopup() {
   };
 }
 //localstorage에 저장
+// 기존 saveAwardResult 함수 대체
 function saveAwardResult(winner) {
   const currentResults = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
-  
-  // URL 파라미터에서 가져온 상 이름을 키로 사용
-  const awardName = nominateState.currentAward.name; 
-  
-  currentResults[awardName] = {
-    title: winner.title,
-    thumbnail: winner.thumbnail
-  };
+  const awardName = nominateState.currentAward.name; // 현재 상 이름 (예: 대상)
 
+  // 1. TOP 3 상인지 확인
+  const top3Ranks = ["대상", "최우수상", "우수상"];
+  const isTop3 = top3Ranks.includes(awardName);
+
+  if (isTop3) {
+    // 2. '올해의 애니메이션' 배열 데이터 가져오기
+    // (주의: 메인 페이지 로직에 따라 키값이 '올해의 애니메이션' 혹은 'top3'일 수 있습니다. 확인 필요)
+    const top3Key = "올해의 애니메이션"; 
+    let top3List = currentResults[top3Key];
+
+    // 배열이 이미 존재한다면 수정, 없으면 새로 생성
+    if (Array.isArray(top3List)) {
+      // 배열 안에서 현재 상 이름(rank)과 일치하는 항목 찾기
+      const targetIndex = top3List.findIndex(item => item.rank === awardName);
+
+      if (targetIndex !== -1) {
+        // [수정 모드] 기존 순위 유지, 작품 정보만 변경
+        top3List[targetIndex].title = winner.title;
+        top3List[targetIndex].thumbnail = winner.thumbnail;
+        // console.log(`${awardName} 정보가 배열 내에서 업데이트되었습니다.`);
+      } else {
+        // [추가 모드] 배열은 있는데 이 상은 아직 없을 때 (드문 경우)
+        top3List.push({
+          rank: awardName,
+          title: winner.title,
+          thumbnail: winner.thumbnail
+        });
+      }
+    } else {
+      // [신규 생성] 아예 데이터가 없을 경우 (nominate.js로 처음부터 선정할 때)
+      // 이 경우 배열이 아니라 단일 객체로 저장하는 것을 방지하기 위해 배열로 초기화
+      // 하지만 보통 top3Nominate를 먼저 거치므로 이 로직은 안전장치입니다.
+      currentResults[top3Key] = [{
+        rank: awardName,
+        title: winner.title,
+        thumbnail: winner.thumbnail
+      }];
+    }
+  } else {
+    // 3. 일반 부문 (OST, 성우 등) - 기존 방식대로 저장
+    currentResults[awardName] = {
+      title: winner.title,
+      thumbnail: winner.thumbnail
+    };
+  }
+
+  // 4. 로컬 스토리지에 최종 저장
   localStorage.setItem("anime_awards_result", JSON.stringify(currentResults));
 }
 
@@ -365,19 +406,6 @@ document.getElementById("go-main-btn").onclick = () => {
   location.href = "../main/main.html";
 };
 
-// 4. 로컬스토리지 저장 함수 예시
-function saveWinnerData(winner) {
-  const currentResults = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
-  
-  // 현재 상 이름(예: '올해의 애니메이션')을 키로 저장
-  const awardName = nominateState.currentAward.name; 
-  currentResults[awardName] = {
-    title: winner.title,
-    thumbnail: winner.thumbnail
-  };
-
-  localStorage.setItem("anime_awards_result", JSON.stringify(currentResults));
-}
 //초기 실행
 document.addEventListener("DOMContentLoaded", () => {
   const params = new URLSearchParams(location.search);
