@@ -41,7 +41,7 @@ const RookieCVData = {
         "charimg": "../image/rookiecv/KanetaAiAldora.jpg"
       },
       {
-        "animeTitle": "Yuusha ga Shinda!",
+        "animeTitle": "용사가 죽었다!",
         "year": 2023,
         "charName": "시르엘라 카르멘",
         "charimg": "../image/rookiecv/KanetaAiCarmenCiruela.jpg"
@@ -303,967 +303,859 @@ const RookieCVData = {
       }
     ]
   },
-  "Maruoka, Wakana": {
-    "name": "Maruoka, Wakana",
+  "마루오카 와카나": {
+    "name": "마루오카 와카나",
     "debutYear": 2022,
-    "cvimg": "../image/rookiecv/.webp",
+    "cvimg": "../image/rookiecv/마루오카 와카나.webp",
     "characters": [
       {
-        "animeTitle": "Sozai Saishuka no Isekai Ryokouki",
+        "animeTitle": "소재 채취가의 이세계 여행기",
         "year": 2025,
-        "charName": "Arianna",
+        "charName": "아리안나",
         "charimg": "../image/rookiecv/MaruokaWakanaArianna.jpg"
       },
       {
-        "animeTitle": "The iDOLM@STER Shiny Colors 2nd Season: SHHis",
-        "year": 2025,
-        "charName": "Morino, Rinze",
-        "charimg": "../image/rookiecv/MaruokaWakanaMorinoRinze.jpg"
-      },
-      {
-        "animeTitle": "Tokidoki Bosotto Russia-go de Dereru Tonari no Alya-san Season 2",
+        "animeTitle": "사망 유희로 밥을 먹는다.",
         "year": 2026,
-        "charName": "Suou, Yuki",
-        "charimg": "../image/rookiecv/MaruokaWakanaSuouYuki.jpg"
-      },
-      {
-        "animeTitle": "Shibou Yuugi de Meshi wo Kuu.",
-        "year": 2026,
-        "charName": "Keito",
+        "charName": "케이토",
         "charimg": "../image/rookiecv/MaruokaWakanaKeito.jpg"
       },
       {
-        "animeTitle": "Reincarnation no Kaben",
+        "animeTitle": "리인카네이션의 꽃잎",
         "year": 2026,
-        "charName": "Luo Buffett, Haito",
+        "charName": "하이토 루오 브웨트",
         "charimg": "../image/rookiecv/MaruokaWakanaLuoBuffettHaito.jpg"
       },
       {
-        "animeTitle": "Tensei shitara Dainana Ouji Datta node, Kimama ni Majutsu wo Kiwamemasu 2nd Season",
+        "animeTitle": "환생했는데 제7왕자라 내맘대로 마술을 연마합니다 2기",
         "year": 2025,
-        "charName": "Eris",
+        "charName": "에리스",
         "charimg": "../image/rookiecv/MaruokaWakanaEris.jpg"
       },
       {
-        "animeTitle": "The iDOLM@STER Shiny Colors 2nd Season",
+        "animeTitle": "아이돌 마스터 샤이니 컬러즈",
         "year": 2024,
-        "charName": "Morino, Rinze",
+        "charName": "모리노 린제",
         "charimg": "../image/rookiecv/MaruokaWakanaMorinoRinze.jpg"
       },
       {
-        "animeTitle": "Nukitashi the Animation",
+        "animeTitle": "누키타시 THE ANIMATION",
         "year": 2025,
-        "charName": "Miyachiyo, Shain",
+        "charName": "미야치요 샤인",
         "charimg": "../image/rookiecv/MaruokaWakanaMiyachiyoShain.jpg"
       },
       {
-        "animeTitle": "The iDOLM@STER Shiny Colors",
+        "animeTitle": "가끔씩 툭하고 러시아어로 부끄러워하는 옆자리의 아랴 양",
         "year": 2024,
-        "charName": "Morino, Rinze",
-        "charimg": "../image/rookiecv/MaruokaWakanaMorinoRinze.jpg"
-      },
-      {
-        "animeTitle": "Tokidoki Bosotto Russia-go de Dereru Tonari no Alya-san",
-        "year": 2024,
-        "charName": "Suou, Yuki",
+        "charName": "스오우 유키",
         "charimg": "../image/rookiecv/MaruokaWakanaSuouYuki.jpg"
       },
       {
-        "animeTitle": "Jijou wo Shiranai Tenkousei ga Guigui Kuru.",
+        "animeTitle": "사정을 모르는 전학생이 거침없이 다가온다.",
         "year": 2023,
-        "charName": "Kasahara, Sumire",
+        "charName": "카사하라 스미레",
         "charimg": "../image/rookiecv/MaruokaWakanaKasaharaSumire.jpg"
       },
       {
-        "animeTitle": "Tensei shitara Dainana Ouji Datta node, Kimama ni Majutsu wo Kiwamemasu",
+        "animeTitle": "환생했는데 제7왕자라 내맘대로 마술을 연마합니다",
         "year": 2024,
-        "charName": "Eris",
+        "charName": "에리스",
         "charimg": "../image/rookiecv/MaruokaWakanaEris.jpg"
       },
       {
-        "animeTitle": "Rougo ni Sonaete Isekai de 8-manmai no Kinka wo Tamemasu",
+        "animeTitle": "노후를 대비해 이세계에서 금화 8만 개를 모읍니다",
         "year": 2023,
-        "charName": "Britta",
+        "charName": "브리타",
         "charimg": "../image/rookiecv/MaruokaWakanaBritta.jpg"
       },
       {
-        "animeTitle": "Maou Gakuin no Futekigousha II: Shijou Saikyou no Maou no Shiso, Tensei shite Shison-tachi no Gakkou e Kayou Part 2",
+        "animeTitle": "마왕학원의 부적합자 Ⅱ ~사상 최강의 마왕인 시조, 전생해서 자손들의 학교에 다니다~ ",
         "year": 2024,
-        "charName": "De linama, Elnora",
+        "charName": "엘노라 데 리나마",
         "charimg": "../image/rookiecv/MaruokaWakanaDelinamaElnora.jpg"
       },
       {
-        "animeTitle": "Shijou Saikyou no Daimaou, Murabito A ni Tensei suru",
+        "animeTitle": "사상 최강의 대마왕, 마을 사람 A로 전생하다.",
         "year": 2022,
-        "charName": "Litz de Olhyde, Ireena",
+        "charName": "이리나 리츠 드 오르하이트",
         "charimg": "../image/rookiecv/MaruokaWakanaLitzdeOlhydeIreena.jpg"
       }
     ]
   },
-  "Tsuchiya, Rio": {
-    "name": "Tsuchiya, Rio",
+  "츠치야 리오": {
+    "name": "츠치야 리오",
     "debutYear": 2021,
-    "cvimg": "../image/rookiecv/.webp",
+    "cvimg": "../image/rookiecv/츠치야 리오.webp",
     "characters": [
       {
-        "animeTitle": "Himitsu no AiPri Movie: Mankai Buzzlume Live!",
+        "animeTitle": "비밀의 아이프리 2기",
         "year": 2026,
-        "charName": "Igarashi, Juria",
+        "charName": "이가라시 쥬리아",
         "charimg": "../image/rookiecv/TsuchiyaRioIgarashiJuria.jpg"
       },
       {
-        "animeTitle": "Yuusha Party ni Kawaii Ko ga Ita node, Kokuhaku shitemita.",
+        "animeTitle": "용사 파티에 귀여운 애가 있어서, 고백해봤다.",
         "year": 2026,
-        "charName": "Irene",
+        "charName": "일레네",
         "charimg": "../image/rookiecv/TsuchiyaRioIrene.jpg"
       },
       {
-        "animeTitle": "Himitsu no AiPri: Ring-hen",
-        "year": 2025,
-        "charName": "Igarashi, Juria",
-        "charimg": "../image/rookiecv/TsuchiyaRioIgarashiJuria.jpg"
-      },
-      {
-        "animeTitle": "Kizoku Tensei: Megumareta Umare kara Saikyou no Chikara wo Eru",
+        "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
         "year": 2026,
-        "charName": "Alan, Cindy",
+        "charName": "신디 앨런",
         "charimg": "../image/rookiecv/TsuchiyaRioAlanCindy.jpg"
       },
       {
-        "animeTitle": "The iDOLM@STER Shiny Colors 2nd Season: SHHis",
+        "animeTitle": "아이돌 마스터 샤이니 컬러즈",
         "year": 2025,
-        "charName": "Higuchi, Madoka",
+        "charName": "히구치 마도카",
         "charimg": "../image/rookiecv/TsuchiyaRioHiguchiMadoka.jpg"
       },
       {
-        "animeTitle": "Kaoru Hana wa Rin to Saku",
+        "animeTitle": "향기로운 꽃은 늠름하게 핀다",
         "year": 2025,
-        "charName": "Yuzuhara, Madoka",
+        "charName": "유즈하라 마도카",
         "charimg": "../image/rookiecv/TsuchiyaRioYuzuharaMadoka.jpg"
       },
       {
-        "animeTitle": "Shibou Yuugi de Meshi wo Kuu.",
+        "animeTitle": "사망 유희로 밥을 먹는다.",
         "year": 2026,
-        "charName": "Mishiro",
+        "charName": "미시로",
         "charimg": "../image/rookiecv/TsuchiyaRioMishiro.jpg"
       },
       {
-        "animeTitle": "Silent Witch: Chinmoku no Majo no Kakushigoto",
+        "animeTitle": "사일런트 위치 침묵의 마녀의 비밀",
         "year": 2025,
-        "charName": "Annie",
+        "charName": "애니",
         "charimg": "../image/rookiecv/TsuchiyaRioAnnie.jpg"
       },
       {
-        "animeTitle": "NegaPosi Angler",
+        "animeTitle": "네거포지 앵글러",
         "year": 2024,
-        "charName": "Nishimori, Kozue",
+        "charName": "니시모리 코즈에",
         "charimg": "../image/rookiecv/TsuchiyaRioNishimoriKozue.jpg"
       },
       {
-        "animeTitle": "Shikanoko Nokonoko Koshitantan",
+        "animeTitle": "사슴 아이 어슬렁어슬렁 호시탐탐",
         "year": 2024,
-        "charName": "Tanukikouji, Kinu",
+        "charName": "타누키코지 키누",
         "charimg": "../image/rookiecv/TsuchiyaRioTanukikoujiKinu.jpg"
       },
       {
-        "animeTitle": "The iDOLM@STER Shiny Colors 2nd Season",
+        "animeTitle": "마왕님, 리트라이! R",
         "year": 2024,
-        "charName": "Higuchi, Madoka",
-        "charimg": "../image/rookiecv/TsuchiyaRioHiguchiMadoka.jpg"
-      },
-      {
-        "animeTitle": "Maou-sama, Retry! R",
-        "year": 2024,
-        "charName": "Yukikaze",
+        "charName": "유키카제",
         "charimg": "../image/rookiecv/TsuchiyaRioYukikaze.jpg"
       },
       {
-        "animeTitle": "Boku no Kokoro no Yabai Yatsu 2nd Season",
+        "animeTitle": "내 마음의 위험한 녀석 2기",
         "year": 2024,
-        "charName": "Kouda, Nico",
+        "charName": "코다 니코",
         "charimg": "../image/rookiecv/TsuchiyaRioKoudaNico.jpg"
       },
       {
-        "animeTitle": "Pole Princess!! Movie",
+        "animeTitle": "폴 프린세스!!",
         "year": 2023,
-        "charName": "Hoshikita, Hinano",
+        "charName": "호시키타 히나노",
         "charimg": "../image/rookiecv/TsuchiyaRioHoshikitaHinano.jpg"
       },
       {
-        "animeTitle": "Gundam Build Metaverse",
+        "animeTitle": "건담 빌드 메타버스",
         "year": 2023,
-        "charName": "Urutsuki, Seria",
+        "charName": "우르츠키 세리아",
         "charimg": "../image/rookiecv/TsuchiyaRioUrutsukiSeria.jpg"
       },
       {
-        "animeTitle": "Pole Princess!! Prologue",
-        "year": 2022,
-        "charName": "Hoshikita, Hinano",
-        "charimg": "../image/rookiecv/TsuchiyaRioHoshikitaHinano.jpg"
-      },
-      {
-        "animeTitle": "SSSS.Dynazenon Movie",
+        "animeTitle": "SSSS.DYNAZENON",
         "year": 2023,
-        "charName": "Ranka",
+        "charName": "란카",
         "charimg": "../image/rookiecv/TsuchiyaRioRanka.jpg"
       },
       {
-        "animeTitle": "Pole Princess!!",
-        "year": 2022,
-        "charName": "Hoshikita, Hinano",
-        "charimg": "../image/rookiecv/TsuchiyaRioHoshikitaHinano.jpg"
-      },
-      {
-        "animeTitle": "Yamada-kun to Lv999 no Koi wo Suru",
+        "animeTitle": "야마다 군과 Lv999의 사랑을 하다.",
         "year": 2023,
-        "charName": "Tsubaki, Yukari",
+        "charName": "츠바키 유카리",
         "charimg": "../image/rookiecv/TsuchiyaRioTsubakiYukari.jpg"
       },
       {
-        "animeTitle": "Ragna Crimson",
+        "animeTitle": "라그나 크림슨",
         "year": 2023,
-        "charName": "Hazella",
+        "charName": "헤제라",
         "charimg": "../image/rookiecv/TsuchiyaRioHazella.jpg"
       },
       {
-        "animeTitle": "Isekai One Turn Kill Neesan: Ane Douhan no Isekai Seikatsu Hajimemashita",
+        "animeTitle": "이세계 원턴킬 누나 ~누나 동반 이세계 생활 시작했습니다~",
         "year": 2023,
-        "charName": "Tanya",
+        "charName": "타냐",
         "charimg": "../image/rookiecv/TsuchiyaRioTanya.jpg"
       },
       {
-        "animeTitle": "Kunoichi Tsubaki no Mune no Uchi",
+        "animeTitle": "쿠노이치 츠바키의 속마음",
         "year": 2022,
-        "charName": "Shakuyaku",
+        "charName": "샤쿠야쿠",
         "charimg": "../image/rookiecv/TsuchiyaRioShakuyaku.jpg"
       },
       {
         "animeTitle": "Cue!",
         "year": 2022,
-        "charName": "Toomi, Mei",
+        "charName": "토오미 메이",
         "charimg": "../image/rookiecv/TsuchiyaRioToomiMei.jpg"
-      },
-      {
-        "animeTitle": "SSSS.Dynazenon",
-        "year": 2021,
-        "charName": "Ranka",
-        "charimg": "../image/rookiecv/TsuchiyaRioRanka.jpg"
       }
     ]
   },
-  "Abe, Natsuko": {
-    "name": "Abe, Natsuko",
+  "아베 나츠코": {
+    "name": "아베 나츠코",
     "debutYear": 2022,
-    "cvimg": "../image/rookiecv/.webp",
+    "cvimg": "../image/rookiecv/아베 나츠코.webp",
     "characters": [
       {
-        "animeTitle": "Watashi ga Koibito ni Nareru Wake Nai jan, Muri Muri! (※Muri ja Nakatta!?) (TV Special)",
+        "animeTitle": "내가 연인이 될 수 있을 리 없잖아, 무리무리! (※무리가 아니었다?!) ~넥스트 샤인!~ ",
         "year": 2026,
-        "charName": "Hirano",
+        "charName": "히라노",
         "charimg": "../image/rookiecv/AbeNatsukoHirano.jpg"
       },
       {
-        "animeTitle": "Isekai Nonbiri Nouka 2",
+        "animeTitle": "이세계 유유자적 농가 2",
         "year": 2026,
-        "charName": "Lita",
+        "charName": "리타",
         "charimg": "../image/rookiecv/AbeNatsukoLita.jpg"
       },
       {
-        "animeTitle": "Medalist 2nd Season",
+        "animeTitle": "메달리스트 2기",
         "year": 2026,
-        "charName": "Yagi, Yuuna",
+        "charName": "야기 유우나",
         "charimg": "../image/rookiecv/AbeNatsukoYagiYuuna.jpg"
       },
       {
-        "animeTitle": "Momentary Lily: Tsuzuiteiku Kappou, Kappou!",
+        "animeTitle": "모멘터리 릴리",
         "year": 2025,
-        "charName": "Kawazu, Yuri",
+        "charName": "카와즈 유리",
         "charimg": "../image/rookiecv/AbeNatsukoKawazuYuri.jpg"
       },
       {
-        "animeTitle": "Watashi ga Koibito ni Nareru Wake Nai jan, Muri Muri! (※Muri ja Nakatta!?)",
+        "animeTitle": "내가 연인이 될 수 있을 리 없잖아, 무리무리! (※무리가 아니었다?!)",
         "year": 2025,
-        "charName": "Hirano",
+        "charName": "히라노",
         "charimg": "../image/rookiecv/AbeNatsukoHirano.jpg"
       },
       {
-        "animeTitle": "Tsuihou sareta Tensei Juukishi wa Game Chishiki de Musou suru",
+        "animeTitle": "추방 당한 전생 중기사는 게임 지식으로 무쌍한다.",
         "year": 2026,
-        "charName": "Edvan, Maris",
+        "charName": "마리스 에드반",
         "charimg": "../image/rookiecv/AbeNatsukoEdvanMaris.jpg"
       },
       {
-        "animeTitle": "Shibou Yuugi de Meshi wo Kuu.",
+        "animeTitle": "사망 유희로 밥을 먹는다.",
         "year": 2026,
-        "charName": "Moegi",
+        "charName": "모에기",
         "charimg": "../image/rookiecv/AbeNatsukoMoegi.jpg"
       },
       {
-        "animeTitle": "Momentary Lily",
+        "animeTitle": "너를 너무너무너무너무 좋아하는 100명의 그녀",
         "year": 2025,
-        "charName": "Kawazu, Yuri",
-        "charimg": "../image/rookiecv/AbeNatsukoKawazuYuri.jpg"
-      },
-      {
-        "animeTitle": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo 2nd Season",
-        "year": 2025,
-        "charName": "Pute, Ranoko",
+        "charName": "푸테 라노코",
         "charimg": "../image/rookiecv/AbeNatsukoPuteRanoko.jpg"
       },
       {
-        "animeTitle": "Kamierabi 2nd Season",
+        "animeTitle": "카미에라비",
         "year": 2024,
-        "charName": "Nojima, Chika",
+        "charName": "노지마 치카",
         "charimg": "../image/rookiecv/AbeNatsukoNojimaChika.jpg"
       },
       {
-        "animeTitle": "Beyblade X",
+        "animeTitle": "베이블레이드X",
         "year": 2023,
-        "charName": "Rikorun",
+        "charName": "리코룬",
         "charimg": "../image/rookiecv/AbeNatsukoRikorun.jpg"
       },
       {
-        "animeTitle": "Amagami-san Chi no Enmusubi",
+        "animeTitle": "아마가미 씨네 인연 맺기",
         "year": 2024,
-        "charName": "Matsugazaki, Karen",
+        "charName": "마츠가자키 카렌",
         "charimg": "../image/rookiecv/AbeNatsukoMatsugazakiKaren.jpg"
       },
       {
-        "animeTitle": "Kamierabi",
-        "year": 2023,
-        "charName": "Nojima, Chika",
-        "charimg": "../image/rookiecv/AbeNatsukoNojimaChika.jpg"
-      },
-      {
-        "animeTitle": "Kami no Tou: Ouji no Kikan",
+        "animeTitle": "신의 탑",
         "year": 2024,
-        "charName": "Nya, Nia",
+        "charName": "냐 니아",
         "charimg": "../image/rookiecv/AbeNatsukoNyaNia.jpg"
       },
       {
-        "animeTitle": "Isekai Nonbiri Nouka",
+        "animeTitle": "이세계 유유자적 농가",
         "year": 2023,
-        "charName": "Lasa",
+        "charName": "라사",
         "charimg": "../image/rookiecv/AbeNatsukoLasa.jpg"
       },
       {
-        "animeTitle": "Akuyaku Reijou nanode Last Boss wo Kattemimashita",
+        "animeTitle": "악역 영애이기 때문에 최종 보스를 길러보았습니다",
         "year": 2022,
-        "charName": "Elmir, Claude Jeanne",
+        "charName": "클로드 잔느 엘메이아",
         "charimg": "../image/rookiecv/AbeNatsukoElmirClaudeJeanne.jpg"
       },
       {
-        "animeTitle": "Shijou Saikyou no Daimaou, Murabito A ni Tensei suru",
+        "animeTitle": "사상 최강의 대마왕, 마을 사람 A로 전생하다.",
         "year": 2022,
-        "charName": "Latima",
+        "charName": "라티마",
         "charimg": "../image/rookiecv/AbeNatsukoLatima.jpg"
       },
       {
-        "animeTitle": "Leadale no Daichi nite",
+        "animeTitle": "리아데일의 대지에서",
         "year": 2022,
-        "charName": "Arbalest, Lonti",
+        "charName": "론티 아르파레스트",
         "charimg": "../image/rookiecv/AbeNatsukoArbalestLonti.jpg"
       }
     ]
   },
-  "Nagaoka, Ryuuho": {
-    "name": "Nagaoka, Ryuuho",
+  "나가오카 류호": {
+    "name": "나가오카 류호",
     "debutYear": 2024,
-    "cvimg": "../image/rookiecv/.webp",
+    "cvimg": "../image/rookiecv/나가오카 류호.webp",
     "characters": [
       {
-        "animeTitle": "Okiraku Ryoushu no Tanoshii Ryouchi Bouei: Seisankei Majutsu de Na mo Naki Mura wo Saikyou no Jousai Toshi ni",
+        "animeTitle": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~ ",
         "year": 2026,
-        "charName": "Bell",
+        "charName": "벨",
         "charimg": "../image/rookiecv/NagaokaRyuuhoBell.jpg"
       },
       {
-        "animeTitle": "Binan Koukou Chikyuu Bouei-bu Haikara!",
+        "animeTitle": "미남고교 지구방위부 하이칼라!",
         "year": 2025,
-        "charName": "Sukayu, Narushi",
+        "charName": "스카유 나루시",
         "charimg": "../image/rookiecv/NagaokaRyuuhoSukayuNarushi.jpg"
       },
       {
-        "animeTitle": "Karaoke Iko!",
+        "animeTitle": "가라오케 가자!",
         "year": 2025,
-        "charName": "Oka, Masami",
+        "charName": "미사미 오카",
         "charimg": "../image/rookiecv/NagaokaRyuuhoOkaMasami.jpg"
       },
       {
-        "animeTitle": "Saigo ni Hitotsu dake Onegai shitemo Yoroshii deshou ka",
+        "animeTitle": "마지막으로 하나만 부탁드려도 될까요",
         "year": 2025,
-        "charName": "Lassen",
+        "charName": "라센",
         "charimg": "../image/rookiecv/NagaokaRyuuhoLassen.jpg"
       },
       {
-        "animeTitle": "Shoushimin Series 2nd Season",
+        "animeTitle": "소시민 시리즈 2기",
         "year": 2025,
-        "charName": "Etou",
+        "charName": "에투",
         "charimg": "../image/rookiecv/NagaokaRyuuhoEtou.jpg"
       },
       {
-        "animeTitle": "Chitose-kun wa Ramune Bin no Naka",
+        "animeTitle": "치토세 군은 라무네 병 속에",
         "year": 2025,
-        "charName": "Cock-a-doodle-doo",
+        "charName": "코켓코",
         "charimg": "../image/rookiecv/NagaokaRyuuhoCockadoodledoo.jpg"
       },
       {
-        "animeTitle": "Rock wa Lady no Tashinami deshite",
+        "animeTitle": "록은 숙녀의 소양이기에",
         "year": 2025,
-        "charName": "Itsuki",
+        "charName": "이츠키",
         "charimg": "../image/rookiecv/NagaokaRyuuhoItsuki.jpg"
       },
       {
-        "animeTitle": "Magic Maker: Isekai Mahou no Tsukurikata",
+        "animeTitle": "매직ㆍ메이커 -이세계 마법을 만드는 법-",
         "year": 2025,
-        "charName": "Huey",
+        "charName": "휴이",
         "charimg": "../image/rookiecv/NagaokaRyuuhoHuey.jpg"
       },
       {
-        "animeTitle": "Tamon-kun Ima Docchi!?",
+        "animeTitle": "타몬 군 지금 어느 쪽?!",
         "year": 2026,
-        "charName": "Kai, Rintarou",
+        "charName": "카이 린타로",
         "charimg": "../image/rookiecv/NagaokaRyuuhoKaiRintarou.jpg"
       },
       {
-        "animeTitle": "Shinmai Ossan Boukensha, Saikyou Party ni Shinu hodo Kitaerarete Muteki ni Naru.",
+        "animeTitle": "신참 아재 모험가, 최강 파티에서 죽을 정도로 단련해서 무적이 된다",
         "year": 2024,
-        "charName": "Laurot, Linx",
+        "charName": "링크스 로롯트",
         "charimg": "../image/rookiecv/NagaokaRyuuhoLaurotLinx.jpg"
       },
       {
-        "animeTitle": "Tensei shitara Slime Datta Ken 3rd Season",
+        "animeTitle": "전생했더니 슬라임이었던 건에 대하여 제3기",
         "year": 2024,
-        "charName": "Daggra",
+        "charName": "다구라",
         "charimg": "../image/rookiecv/NagaokaRyuuhoDaggra.jpg"
       }
     ]
   },
-  "Seto, Momoko": {
-    "name": "Seto, Momoko",
+  "세토 모모코": {
+    "name": "세토 모모코",
     "debutYear": 2023,
-    "cvimg": "../image/rookiecv/.webp",
+    "cvimg": "../image/rookiecv/세토 모모코.webp",
     "characters": [
       {
-        "animeTitle": "Uma Musume: Cinderella Gray Part 2",
+        "animeTitle": "우마무스메 신데렐라 그레이",
         "year": 2025,
-        "charName": "Belno Light",
+        "charName": "벨노 라이트",
         "charimg": "../image/rookiecv/SetoMomokoBelnoLight.jpg"
       },
       {
-        "animeTitle": "Uruwashi no Yoi no Tsuki",
+        "animeTitle": "아름다운 초저녁달",
         "year": 2026,
-        "charName": "Hibiya, Kotobuki",
+        "charName": "히비야 고토부키",
         "charimg": "../image/rookiecv/SetoMomokoHibiyaKotobuki.jpg"
       },
       {
-        "animeTitle": "Mayonaka Heart Tune",
+        "animeTitle": "한밤중 하트튠",
         "year": 2026,
-        "charName": "Inohana, Rikka",
+        "charName": "이노하나 릿카",
         "charimg": "../image/rookiecv/SetoMomokoInohanaRikka.jpg"
       },
       {
-        "animeTitle": "Alma-chan wa Kazoku ni Naritai",
+        "animeTitle": "아르마는 가족이 되고 싶어",
         "year": 2025,
-        "charName": "Miyoshi",
+        "charName": "미요시",
         "charimg": "../image/rookiecv/SetoMomokoMiyoshi.jpg"
       },
       {
-        "animeTitle": "Ballpark de Tsukamaete!",
+        "animeTitle": "볼파크에서 붙잡아줘!",
         "year": 2025,
-        "charName": "Kokoro",
+        "charName": "코코로",
         "charimg": "../image/rookiecv/SetoMomokoKokoro.jpg"
       },
       {
-        "animeTitle": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 4th Season: 2-nensei-hen 1 Gakki",
+        "animeTitle": "어서 오세요 실력지상주의 교실에 4th Season",
         "year": 2026,
-        "charName": "Amasawa, Ichika",
+        "charName": "아마사와 이치카",
         "charimg": "../image/rookiecv/SetoMomokoAmasawaIchika.jpg"
       },
       {
-        "animeTitle": "Uma Musume: Cinderella Gray",
-        "year": 2025,
-        "charName": "Belno Light",
-        "charimg": "../image/rookiecv/SetoMomokoBelnoLight.jpg"
-      },
-      {
-        "animeTitle": "Liar Liar",
+        "animeTitle": "라이어 · 라이어",
         "year": 2023,
-        "charName": "Tatara, Fuuka",
+        "charName": "타타라 후우카",
         "charimg": "../image/rookiecv/SetoMomokoTataraFuuka.jpg"
       }
     ]
   },
-  "Tachibana, Azusa": {
-    "name": "Tachibana, Azusa",
+  "타치바나 아즈사": {
+    "name": "타치바나 아즈사",
     "debutYear": 2024,
-    "cvimg": "../image/rookiecv/.webp",
+    "cvimg": "../image/rookiecv/타치바나 아즈사.webp",
     "characters": [
       {
-        "animeTitle": "Kuroneko to Majo no Kyoushitsu",
+        "animeTitle": "검은 고양이와 마녀의 교실",
         "year": 2026,
-        "charName": "Aries, Ewe",
+        "charName": "유우 아리에스",
         "charimg": "../image/rookiecv/TachibanaAzusaAriesEwe.jpg"
       },
       {
-        "animeTitle": "Kizoku Tensei: Megumareta Umare kara Saikyou no Chikara wo Eru",
+        "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
         "year": 2026,
-        "charName": "Alichey",
+        "charName": "알리체",
         "charimg": "../image/rookiecv/TachibanaAzusaAlichey.jpg"
       },
       {
-        "animeTitle": "Mahou Shoujo Lyrical Nanoha EXCEEDS: Gun Blaze Vengeance",
+        "animeTitle": "마법소녀 리리컬 나노하 EXCEEDS Gun Blaze Vengeance",
         "year": 2026,
-        "charName": "Kuze, Shiina",
+        "charName": "쿠제 시이나",
         "charimg": "../image/rookiecv/TachibanaAzusaKuzeShiina.jpg"
       },
       {
-        "animeTitle": "Anne Shirley",
+        "animeTitle": "앤 셜리",
         "year": 2025,
-        "charName": "MacPherson, Ella May",
+        "charName": "엘라 메이 맥퍼슨",
         "charimg": "../image/rookiecv/TachibanaAzusaMacPhersonEllaMay.jpg"
       },
       {
-        "animeTitle": "Kaya-chan wa Kowakunai",
+        "animeTitle": "카야는 무섭지 않아",
         "year": 2026,
-        "charName": "Satou, Kaya",
+        "charName": "사토 카야",
         "charimg": "../image/rookiecv/TachibanaAzusaSatouKaya.jpg"
       },
       {
-        "animeTitle": "Love Live! Nijigasaki Gakuen School Idol Doukoukai: Kanketsu-hen Part 2",
+        "animeTitle": "영화 러브 라이브! 니지가사키 학원 스쿨 아이돌 동호회 완결편 제2장",
         "year": 2025,
-        "charName": "Shirase, Koyuki",
+        "charName": "시라세 코유키",
         "charimg": "../image/rookiecv/TachibanaAzusaShiraseKoyuki.jpg"
       },
       {
-        "animeTitle": "Bad Girl",
+        "animeTitle": "배드 걸",
         "year": 2025,
-        "charName": "Yuutani, Yuu",
+        "charName": "유우타니 유우",
         "charimg": "../image/rookiecv/TachibanaAzusaYuutaniYuu.jpg"
       },
       {
-        "animeTitle": "Princession Orchestra",
+        "animeTitle": "프린세션 오케스트라",
         "year": 2025,
-        "charName": "Ichijou, Nagase",
+        "charName": "이치죠 나가세",
         "charimg": "../image/rookiecv/TachibanaAzusaIchijouNagase.jpg"
       },
       {
-        "animeTitle": "5-toubun no Hanayome*",
+        "animeTitle": "5등분의 신부 ＊",
         "year": 2024,
-        "charName": "Lily",
+        "charName": "릴리",
         "charimg": "../image/rookiecv/TachibanaAzusaLily.jpg"
       }
     ]
   },
-  "Miyashita, Saki": {
-    "name": "Miyashita, Saki",
+  "미야시타 사키": {
+    "name": "미야시타 사키",
     "debutYear": 2018,
-    "cvimg": "../image/rookiecv/.webp",
+    "cvimg": "../image/rookiecv/미야시타 사키.webp",
     "characters": [
       {
-        "animeTitle": "Kizoku Tensei: Megumareta Umare kara Saikyou no Chikara wo Eru",
+        "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
         "year": 2026,
-        "charName": "Zoey",
+        "charName": "조이",
         "charimg": "../image/rookiecv/MiyashitaSakiZoey.jpg"
       },
       {
-        "animeTitle": "Kami no Tou: Koubou-sen",
+        "animeTitle": "신의 탑 2기",
         "year": 2024,
-        "charName": "Yeo, Miseng",
+        "charName": "여 미생",
         "charimg": "../image/rookiecv/MiyashitaSakiYeoMiseng.jpg"
       },
       {
-        "animeTitle": "Virgin Punk: Clockwork Girl",
+        "animeTitle": "클락워크 걸",
         "year": 2025,
-        "charName": "Kamigoori, Ubu",
+        "charName": "카미고리 우부",
         "charimg": "../image/rookiecv/MiyashitaSakiKamigooriUbu.jpg"
       },
       {
-        "animeTitle": "Hazurewaku no \"Joutai Ijou Skill\" de Saikyou ni Natta Ore ga Subete wo Juurin suru made",
+        "animeTitle": "폐급 【상태 이상 스킬】로 최강이 된 내가 모든 것을 유린하기까지",
         "year": 2024,
-        "charName": "Ashrain, Seras",
+        "charName": "세라스 애슐린",
         "charimg": "../image/rookiecv/MiyashitaSakiAshrainSeras.jpg"
       },
       {
-        "animeTitle": "Suki na Ko ga Megane wo Wasureta",
+        "animeTitle": "좋아하는 애가 안경을 깜박했다",
         "year": 2023,
-        "charName": "Hibuchi, Yuika",
+        "charName": "히부치 유이카",
         "charimg": "../image/rookiecv/MiyashitaSakiHibuchiYuika.jpg"
       },
       {
-        "animeTitle": "Kami no Tou: Ouji no Kikan",
-        "year": 2024,
-        "charName": "Yeo, Miseng",
-        "charimg": "../image/rookiecv/MiyashitaSakiYeoMiseng.jpg"
-      },
-      {
-        "animeTitle": "Tantei wa Mou, Shindeiru. Season 2",
+        "animeTitle": "탐정은 이미 죽었다 Season 2",
         "year": 2026,
-        "charName": "Siesta",
+        "charName": "시에스타",
         "charimg": "../image/rookiecv/MiyashitaSakiSiesta.jpg"
       },
       {
-        "animeTitle": "Fuufu Ijou, Koibito Miman.",
+        "animeTitle": "부부 이상, 연인 미만.",
         "year": 2022,
-        "charName": "Sakurazaka, Shiori",
+        "charName": "사쿠라자카 시오리",
         "charimg": "../image/rookiecv/MiyashitaSakiSakurazakaShiori.jpg"
       },
       {
-        "animeTitle": "Tantei wa Mou, Shindeiru.",
+        "animeTitle": "탐정은 이미 죽었다.",
         "year": 2021,
-        "charName": "Siesta",
+        "charName": "시에스타",
         "charimg": "../image/rookiecv/MiyashitaSakiSiesta.jpg"
       },
       {
-        "animeTitle": "Wonder Egg Priority",
+        "animeTitle": "원더 에그 프라이어리티",
         "year": 2021,
-        "charName": "Yoshida, Yae",
+        "charName": "요시다 야에",
         "charimg": "../image/rookiecv/MiyashitaSakiYoshidaYae.jpg"
       },
       {
-        "animeTitle": "Houkago Saikoro Club",
+        "animeTitle": "방과 후 주사위 클럽",
         "year": 2019,
-        "charName": "Takekasa, Miki",
+        "charName": "타케카사 미키",
         "charimg": "../image/rookiecv/MiyashitaSakiTakekasaMiki.jpg"
       },
       {
-        "animeTitle": "Harukana Receive: Yokoku",
+        "animeTitle": "하루카나 리시브",
         "year": 2018,
-        "charName": "Higa, Kanata",
+        "charName": "히가 카나타",
         "charimg": "../image/rookiecv/MiyashitaSakiHigaKanata.jpg"
       },
       {
-        "animeTitle": "Hitoribocchi no Marumaru Seikatsu",
+        "animeTitle": "히토리 봇치의 ○○생활",
         "year": 2019,
-        "charName": "Ojousa, Mayo",
+        "charName": "오죠우사 마요",
         "charimg": "../image/rookiecv/MiyashitaSakiOjousaMayo.jpg"
       },
       {
-        "animeTitle": "Soukou Musume Senki",
+        "animeTitle": "장갑 소녀 전기",
         "year": 2021,
-        "charName": "Suzuno",
+        "charName": "스즈노",
         "charimg": "../image/rookiecv/MiyashitaSakiSuzuno.jpg"
-      },
-      {
-        "animeTitle": "Harukana Receive",
-        "year": 2018,
-        "charName": "Higa, Kanata",
-        "charimg": "../image/rookiecv/MiyashitaSakiHigaKanata.jpg"
       }
     ]
   },
-  "Okamura, Haruka": {
-    "name": "Okamura, Haruka",
+  "오카무라 하루카": {
+    "name": "오카무라 하루카",
     "debutYear": 1996,
-    "cvimg": "../image/rookiecv/.webp",
+    "cvimg": "../image/rookiecv/오카무라 하루카.webp",
     "characters": [
       {
-        "animeTitle": "Majutsushi Kunon wa Mieteiru",
+        "animeTitle": "마술사 쿠논은 보인다",
         "year": 2026,
-        "charName": "Garden, Flora",
+        "charName": "플라라 가든 남작부인",
         "charimg": "../image/rookiecv/OkamuraHarukaGardenFlora.jpg"
       },
       {
-        "animeTitle": "Cat's♥Eye",
+        "animeTitle": "캣츠 아이",
         "year": 2025,
-        "charName": "Racing Girl A",
+        "charName": "레이싱 걸 A",
         "charimg": "../image/rookiecv/OkamuraHarukaRacingGirlA.jpg"
       },
       {
-        "animeTitle": "Spy x Family Season 3",
+        "animeTitle": "스파이 패밀리 3기",
         "year": 2025,
-        "charName": "Egeburg, Ewen",
+        "charName": "유인 에지버그",
         "charimg": "../image/rookiecv/OkamuraHarukaEgeburgEwen.jpg"
       },
       {
-        "animeTitle": "Kusuriya no Hitorigoto 2nd Season",
+        "animeTitle": "약사의 혼잣말 시즌 2",
         "year": 2025,
-        "charName": "Empress Dowager's Sister",
+        "charName": "황태후의 여동생",
         "charimg": "../image/rookiecv/OkamuraHarukaEmpressDowagersSister.jpg"
       },
       {
-        "animeTitle": "Hametsu no Oukoku",
+        "animeTitle": "파멸의 왕국",
         "year": 2023,
-        "charName": "Kunoichi Crew #6",
+        "charName": "쿠노이치 6",
         "charimg": "../image/rookiecv/OkamuraHarukaKunoichiCrew6.jpg"
       },
       {
-        "animeTitle": "Spy x Family Movie: Code: White",
+        "animeTitle": "스파이 패밀리 2기",
         "year": 2023,
-        "charName": "Egeburg, Ewen",
+        "charName": "유인 에지버그",
         "charimg": "../image/rookiecv/OkamuraHarukaEgeburgEwen.jpg"
       },
       {
-        "animeTitle": "Spy x Family Season 2",
+        "animeTitle": "꿈꾸는 남자는 현실주의자",
         "year": 2023,
-        "charName": "Egeburg, Ewen",
-        "charimg": "../image/rookiecv/OkamuraHarukaEgeburgEwen.jpg"
-      },
-      {
-        "animeTitle": "Yumemiru Danshi wa Genjitsushugisha",
-        "year": 2023,
-        "charName": "Okamoto, Aoi",
+        "charName": "아오이 오카모토",
         "charimg": "../image/rookiecv/OkamuraHarukaOkamotoAoi.jpg"
       },
       {
-        "animeTitle": "Tu Bian Yingxiong X",
+        "animeTitle": "TO BE HERO X",
         "year": 2025,
-        "charName": "Ah Qiu",
+        "charName": "안 퀴",
         "charimg": "../image/rookiecv/OkamuraHarukaAhQiu.jpg"
       },
       {
-        "animeTitle": "Spy x Family Part 2",
+        "animeTitle": "스파이 패밀리",
         "year": 2022,
-        "charName": "Egeburg, Ewen",
+        "charName": "유인 에지버그",
         "charimg": "../image/rookiecv/OkamuraHarukaEgeburgEwen.jpg"
       },
       {
-        "animeTitle": "Spy x Family",
-        "year": 2022,
-        "charName": "Egeburg, Ewen",
-        "charimg": "../image/rookiecv/OkamuraHarukaEgeburgEwen.jpg"
-      },
-      {
-        "animeTitle": "Meitantei Conan",
+        "animeTitle": "명탐정 코난",
         "year": 1996,
-        "charName": "Amari, Satomi",
+        "charName": "아마리 사토미",
         "charimg": "../image/rookiecv/OkamuraHarukaAmariSatomi.jpg"
       }
     ]
   },
-  "Yuikawa, Asaki": {
-    "name": "Yuikawa, Asaki",
+  "유이카와 아사키": {
+    "name": "유이카와 아사키",
     "debutYear": 2024,
-    "cvimg": "../image/rookiecv/.webp",
+    "cvimg": "../image/rookiecv/유이카와 아사키.webp",
     "characters": [
       {
-        "animeTitle": "Marriagetoxin",
+        "animeTitle": "매리지 톡신",
         "year": 2026,
-        "charName": "Ureshino, Shiori",
+        "charName": "우레시노 시오리",
         "charimg": "../image/rookiecv/YuikawaAsakiUreshinoShiori.jpg"
       },
       {
-        "animeTitle": "Okiraku Ryoushu no Tanoshii Ryouchi Bouei: Seisankei Majutsu de Na mo Naki Mura wo Saikyou no Jousai Toshi ni",
+        "animeTitle": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~ ",
         "year": 2026,
-        "charName": "Fertio, Sesto Ele",
+        "charName": "세스트 엘 페리티오",
         "charimg": "../image/rookiecv/YuikawaAsakiFertioSestoEle.jpg"
       },
       {
-        "animeTitle": "Mahou Shoujo Lyrical Nanoha EXCEEDS: Gun Blaze Vengeance",
+        "animeTitle": "마법소녀 리리컬 나노하 EXCEEDS Gun Blaze Vengeance",
         "year": 2026,
-        "charName": "Yorumi, Towa",
+        "charName": "요루미 토와",
         "charimg": "../image/rookiecv/YuikawaAsakiYorumiTowa.jpg"
       },
       {
-        "animeTitle": "Eris no Seihai",
+        "animeTitle": "에리스의 성배",
         "year": 2026,
-        "charName": "George",
+        "charName": "조지",
         "charimg": "../image/rookiecv/YuikawaAsakiGeorge.jpg"
       },
       {
-        "animeTitle": "Nige Jouzu no Wakagimi 2nd Season",
+        "animeTitle": "도망을 잘 치는 도련님 2기",
         "year": 2026,
-        "charName": "Houjou, Tokiyuki",
+        "charName": "호죠 토키유키",
         "charimg": "../image/rookiecv/YuikawaAsakiHoujouTokiyuki.jpg"
       },
       {
-        "animeTitle": "Nige Jouzu no Wakagimi: Makuai (1333-nen - 1334-nen) \"Rekishi\"",
+        "animeTitle": "도망을 잘 치는 도련님",
         "year": 2024,
-        "charName": "Houjou, Tokiyuki",
+        "charName": "호죠 토키유키",
         "charimg": "../image/rookiecv/YuikawaAsakiHoujouTokiyuki.jpg"
       },
       {
-        "animeTitle": "Game Center Shoujo to Ibunka Kouryuu",
+        "animeTitle": "게임 센터 소녀와 이문화 교류",
         "year": 2025,
-        "charName": "Kaga, Karin",
+        "charName": "카가 카린",
         "charimg": "../image/rookiecv/YuikawaAsakiKagaKarin.jpg"
       },
       {
-        "animeTitle": "Wind Breaker Season 2",
+        "animeTitle": "윈브레 -WINBRE- 2기",
         "year": 2025,
-        "charName": "Tsuchiya, Mio",
+        "charName": "츠치야 미오",
         "charimg": "../image/rookiecv/YuikawaAsakiTsuchiyaMio.jpg"
       },
       {
-        "animeTitle": "Class no Daikirai na Joshi to Kekkon suru Koto ni Natta.",
+        "animeTitle": "반에서 가장 싫어하는 여자애와 결혼하게 되었다.",
         "year": 2025,
-        "charName": "Houjou, Rui",
+        "charName": "호조 루이",
         "charimg": "../image/rookiecv/YuikawaAsakiHoujouRui.jpg"
       },
       {
-        "animeTitle": "Kakuriyo no Yadomeshi Ni",
+        "animeTitle": "카쿠리요의 여관밥 2",
         "year": 2025,
-        "charName": "Takechiyo",
+        "charName": "타케치요",
         "charimg": "../image/rookiecv/YuikawaAsakiTakechiyo.jpg"
       },
       {
-        "animeTitle": "Shangri-La Frontier: Kusoge Hunter, Kamige ni Idoman to su 2nd Season",
+        "animeTitle": "샹그릴라 프론티어 ~망겜 헌터, 갓겜에 도전하다~ 2nd Season",
         "year": 2024,
-        "charName": "Hizutome, Rumi",
+        "charName": "히즈토메 루미",
         "charimg": "../image/rookiecv/YuikawaAsakiHizutomeRumi.jpg"
       },
       {
-        "animeTitle": "Himesama \"Goumon\" no Jikan desu 2nd Season",
+        "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
         "year": 2026,
-        "charName": "Kon, Konko",
+        "charName": "콩코 콩",
         "charimg": "../image/rookiecv/YuikawaAsakiKonKonko.jpg"
       },
       {
-        "animeTitle": "Shiunji-ke no Kodomotachi",
+        "animeTitle": "시운지 가의 아이들",
         "year": 2025,
-        "charName": "Yokoyama, Rara",
+        "charName": "요코야마 라라",
         "charimg": "../image/rookiecv/YuikawaAsakiYokoyamaRara.jpg"
       },
       {
-        "animeTitle": "Trapezium",
+        "animeTitle": "트라페지움",
         "year": 2024,
-        "charName": "Azuma, Yuu",
+        "charName": "아즈마 유우",
         "charimg": "../image/rookiecv/YuikawaAsakiAzumaYuu.jpg"
       },
       {
-        "animeTitle": "Ao no Hako",
+        "animeTitle": "푸른 상자",
         "year": 2024,
-        "charName": "Shimazaki, Niina",
+        "charName": "시마자키 니이나",
         "charimg": "../image/rookiecv/YuikawaAsakiShimazakiNiina.jpg"
       },
       {
-        "animeTitle": "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V: Houjou no Megami-hen",
+        "animeTitle": "던전에서 만남을 추구하면 안 되는 걸까 Ⅴ",
         "year": 2024,
-        "charName": "Remilia",
+        "charName": "레밀리아",
         "charimg": "../image/rookiecv/YuikawaAsakiRemilia.jpg"
       },
       {
-        "animeTitle": "One Room, Hiatari Futsuu, Tenshi-tsuki.",
+        "animeTitle": "하나노이군과 상사병",
         "year": 2024,
-        "charName": "Store Clerk",
-        "charimg": "../image/rookiecv/YuikawaAsakiStoreClerk.jpg"
-      },
-      {
-        "animeTitle": "Hananoi-kun to Koi no Yamai",
-        "year": 2024,
-        "charName": "Marika",
+        "charName": "마리카",
         "charimg": "../image/rookiecv/YuikawaAsakiMarika.jpg"
       },
       {
-        "animeTitle": "Wind Breaker",
+        "animeTitle": "윈브레 -WINBRE-",
         "year": 2024,
-        "charName": "Tsuchiya, Mio",
+        "charName": "츠치야 미오",
         "charimg": "../image/rookiecv/YuikawaAsakiTsuchiyaMio.jpg"
       },
       {
-        "animeTitle": "Yoru no Kurage wa Oyogenai",
+        "animeTitle": "밤의 해파리는 헤엄칠 수 없어",
         "year": 2024,
-        "charName": "Mayumi",
+        "charName": "마유미",
         "charimg": "../image/rookiecv/YuikawaAsakiMayumi.jpg"
       },
       {
-        "animeTitle": "Nige Jouzu no Wakagimi",
+        "animeTitle": "도망을 잘 치는 도련님",
         "year": 2024,
-        "charName": "Houjou, Tokiyuki",
+        "charName": "호죠 토키유키",
         "charimg": "../image/rookiecv/YuikawaAsakiHoujouTokiyuki.jpg"
       },
       {
-        "animeTitle": "Atri: My Dear Moments",
+        "animeTitle": "ATRI -My Dear Moments-",
         "year": 2024,
-        "charName": "Miyo",
+        "charName": "미요",
         "charimg": "../image/rookiecv/YuikawaAsakiMiyo.jpg"
       },
       {
-        "animeTitle": "Shangri-La Frontier: Kusoge Hunter, Kamige ni Idoman to su",
+        "animeTitle": "샹그릴라 프론티어 ~망겜 헌터, 갓겜에 도전하다~",
         "year": 2023,
-        "charName": "Hizutome, Rumi",
+        "charName": "히즈토메 루미",
         "charimg": "../image/rookiecv/YuikawaAsakiHizutomeRumi.jpg"
       },
       {
-        "animeTitle": "Yuusha ga Shinda!",
+        "animeTitle": "용사가 죽었다!",
         "year": 2023,
-        "charName": "Petrarca, Shannon",
+        "charName": "샤논 페트랄카",
         "charimg": "../image/rookiecv/YuikawaAsakiPetrarcaShannon.jpg"
       },
       {
-        "animeTitle": "Tonari no Youkai-san",
+        "animeTitle": "이웃집 요괴씨",
         "year": 2024,
-        "charName": "Sugimoto, Mutsumi",
+        "charName": "스기모토 무츠미",
         "charimg": "../image/rookiecv/YuikawaAsakiSugimotoMutsumi.jpg"
       }
     ]
   },
-  "Shimano, Hana": {
-    "name": "Shimano, Hana",
+  "시마노 하나": {
+    "name": "시마노 하나",
     "debutYear": 2023,
-    "cvimg": "../image/rookiecv/.webp",
+    "cvimg": "../image/rookiecv/시마노 하나.webp",
     "characters": [
       {
-        "animeTitle": "Isekai Nonbiri Nouka 2",
+        "animeTitle": "이세계 유유자적 농가 2",
         "year": 2026,
-        "charName": "Leaf",
+        "charName": "리프",
         "charimg": "../image/rookiecv/ShimanoHanaLeaf.jpg"
       },
       {
-        "animeTitle": "Hibi wa Sugiredo Meshi Umashi",
+        "animeTitle": "흘러가는 나날, 밥은 맛있어",
         "year": 2025,
-        "charName": "Kawai, Mako",
+        "charName": "카와이 마코",
         "charimg": "../image/rookiecv/ShimanoHanaKawaiMako.jpg"
       },
       {
-        "animeTitle": "Hotel Inhumans",
+        "animeTitle": "호텔 인휴먼즈",
         "year": 2025,
-        "charName": "Miku",
+        "charName": "미쿠",
         "charimg": "../image/rookiecv/ShimanoHanaMiku.jpg"
       },
       {
-        "animeTitle": "Wonderful Precure!",
+        "animeTitle": "원더풀 프리큐어!",
         "year": 2024,
-        "charName": "Kanie",
+        "charName": "카니에 나나미",
         "charimg": "../image/rookiecv/ShimanoHanaKanie.jpg"
       },
       {
-        "animeTitle": "Sasayaku You ni Koi wo Utau",
+        "animeTitle": "속삭이듯 사랑을 노래하다",
         "year": 2024,
-        "charName": "Kino, Himari",
+        "charName": "키노 히마리",
         "charimg": "../image/rookiecv/ShimanoHanaKinoHimari.jpg"
       },
       {
-        "animeTitle": "Isekai Nonbiri Nouka",
+        "animeTitle": "이세계 유유자적 농가",
         "year": 2023,
-        "charName": "Leaf",
+        "charName": "리프",
         "charimg": "../image/rookiecv/ShimanoHanaLeaf.jpg"
       }
     ]
   },
-  "Hiiragi, Yuuka": {
-    "name": "Hiiragi, Yuuka",
+  "히이라기 유카": {
+    "name": "히이라기 유카",
     "debutYear": 2019,
-    "cvimg": "../image/rookiecv/.webp",
+    "cvimg": "../image/rookiecv/히이라기 유카.webp",
     "characters": [
       {
-        "animeTitle": "Isekai Nonbiri Nouka 2",
+        "animeTitle": "이세계 유유자적 농가 2",
         "year": 2026,
-        "charName": "Liese",
+        "charName": "리스",
         "charimg": "../image/rookiecv/HiiragiYuukaLiese.jpg"
       },
       {
-        "animeTitle": "Isekai Nonbiri Nouka",
+        "animeTitle": "이세계 유유자적 농가",
         "year": 2023,
-        "charName": "Liese",
+        "charName": "리스",
         "charimg": "../image/rookiecv/HiiragiYuukaLiese.jpg"
       },
       {
-        "animeTitle": "Xian Wang de Richang Shenghuo 2",
-        "year": 2021,
-        "charName": "Sun, Rong",
-        "charimg": "../image/rookiecv/HiiragiYuukaSunRong.jpg"
-      },
-      {
-        "animeTitle": "Xian Wang de Richang Shenghuo",
-        "year": 2020,
-        "charName": "Sun, Rong",
-        "charimg": "../image/rookiecv/HiiragiYuukaSunRong.jpg"
-      },
-      {
-        "animeTitle": "Kouya no Kotobuki Hikoutai",
+        "animeTitle": "황야의 코토부키 비행대",
         "year": 2019,
-        "charName": "Anna",
+        "charName": "안나",
         "charimg": "../image/rookiecv/HiiragiYuukaAnna.jpg"
       }
     ]
