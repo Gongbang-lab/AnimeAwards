@@ -48,38 +48,22 @@ function renderStep1() {
 
   const genderKey = charState.theme.includes("female") ? "female" : "male";
   const flatData = getNormalizedCharData(genderKey);
-
-  // 계층 구조 생성: 분기(Q1) -> 요일(Mondays) -> 제목(고문 아르바이트...)
-  const hierarchy = {};
-  flatData.forEach(item => {
-    if (!hierarchy[item.quarter]) hierarchy[item.quarter] = {};
-    if (!hierarchy[item.quarter][item.day]) hierarchy[item.quarter][item.day] = {};
-    if (!hierarchy[item.quarter][item.day][item.animeTitle]) {
-      hierarchy[item.quarter][item.day][item.animeTitle] = [];
-    }
-    hierarchy[item.quarter][item.day][item.animeTitle].push(item);
-  });
+  const hierarchy = groupByHierarchy(flatData); // 계층화 로직 분리
 
   left.innerHTML = `<h2 class="step-title">${charState.currentAward.name} 후보 선택</h2>`;
 
-  // 1단: 분기 아코디언
   Object.entries(hierarchy).forEach(([qName, days]) => {
-    const displayQuarter = QUARTER_MAP[qName] || qName;
-    const qSection = createAccordion(displayQuarter, "quarter-btn");
+    const qSection = createAccordion(QUARTER_MAP[qName] || qName, "quarter-btn");
     const qContent = qSection.querySelector(".accordion-content");
 
-    // 2단: 요일 아코디언
     Object.entries(days).forEach(([dName, animes]) => {
-      const displayDay = DAY_LABELS[dName] || dName;
-      const dSection = createAccordion(displayDay, "day-btn");
+      const dSection = createAccordion(DAY_LABELS[dName] || dName, "day-btn");
       const dContent = dSection.querySelector(".accordion-content");
 
-      // 3단: 애니메이션 제목 아코디언
       Object.entries(animes).forEach(([aTitle, charList]) => {
         const aSection = createAccordion(aTitle, "anime-btn");
         const aContent = aSection.querySelector(".accordion-content");
 
-        // 4단: 캐릭터 그리드
         const charGrid = document.createElement("div");
         charGrid.className = "char-button-grid";
         
@@ -100,14 +84,14 @@ function renderStep1() {
 function createCharacterButton(char) {
   const charBtn = document.createElement("button");
   charBtn.className = "char-button";
+  charBtn.dataset.charId = char.id; // ID 저장
   
   if (charState.selectedItems.some(s => s.id === char.id)) {
     charBtn.classList.add("selected");
   }
 
   charBtn.innerHTML = `
-    <img src="${char.thumbnail}" alt="${char.name}" 
-         onerror="this.src='https://via.placeholder.com/80?text=No+Image'">
+    <img src="${char.thumbnail}" alt="${char.name}" onerror="this.src='https://via.placeholder.com/80?text=No+Image'">
     <span class="char-name">${char.name}</span>
   `;
 
@@ -122,7 +106,6 @@ function createCharacterButton(char) {
     }
     updatePreview();
   };
-
   return charBtn;
 }
 
@@ -354,7 +337,16 @@ function removeCandidate(charId) {
   // 상태 업데이트
   charState.selectedItems = charState.selectedItems.filter(s => s.id !== charId);
   
-  // UI 동기화 (왼쪽 리스트의 체크 상태 해제를 위해 renderStep1 호출)
+  // 왼쪽 리스트의 버튼 active 상태 해제 (전체 리렌더링보다 성능상 유리)
+  const allCharButtons = document.querySelectorAll(".char-button");
+  allCharButtons.forEach(btn => {
+    // 버튼 클릭 시 저장했던 데이터나 ID를 비교 (여기서는 간단히 처리)
+    if (btn.dataset.charId === charId) {
+      btn.classList.remove("selected");
+    }
+  });
+
+  // 만약 dataset을 안 썼다면 그냥 renderStep1()을 호출해도 무방합니다.
   renderStep1(); 
   updatePreview();
 }

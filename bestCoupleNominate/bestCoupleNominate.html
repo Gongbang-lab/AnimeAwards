@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>베스트 커플 노미네이트</title>
+    <link rel="stylesheet" href="bestCoupleNominate.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="left-panel" id="mainArea">
+            <div class="search-container" id="searchContainer">
+                <h1 class="logo">Anime Couple Awards</h1>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="애니메이션 제목을 검색하세요 (예: 고문 아르바이트의 일상)">
+                    <button id="searchBtn">검색</button>
+                </div>
+            </div>
+            
+            <div class="nominee-list" id="nomineeList"></div>
+        </div>
+
+        <div class="right-panel">
+            <div class="control-box">
+                <button class="info-btn" id="infoBtn">ℹ️ 정보</button>
+                <div class="spacer"></div>
+                <button class="action-btn secondary" id="goMainBtn">메인으로</button>
+                <button class="action-btn primary" id="confirmAwardBtn">수상 결정</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="charModal" class="modal hidden">
+        <div class="modal-content large-modal">
+            <span class="close-btn" id="closeCharModal">&times;</span>
+            <h2 id="modalAnimeTitle">캐릭터 선택</h2>
+            <p class="modal-desc">커플로 등록할 두 명의 캐릭터를 선택해주세요.</p>
+            <div class="character-grid" id="characterGrid">
+                </div>
+            <button id="addCoupleBtn" class="modal-action-btn" disabled>후보 등록 (0/2)</button>
+        </div>
+    </div>
+
+    <div id="infoModal" class="modal hidden">
+        <div class="modal-content small-modal">
+            <span class="close-btn" id="closeInfoModal">&times;</span>
+            <h2>도움말</h2>
+            <p>1. 애니메이션 제목을 검색하세요.</p>
+            <p>2. 등장인물 중 2명을 선택하여 커플을 만드세요.</p>
+            <p>3. 등록된 후보 중 하나를 선택하고 '수상 결정'을 누르면 저장됩니다.</p>
+        </div>
+    </div>
+
+    <script src="../data/animeData.js"></script>
+    <script src="../data/animeCharacterData.js"></script>
+    <script src="bestCoupleNominate.js"></script>
+</body>
+</html>

@@ -12,14 +12,27 @@ html, body {
 .nominate-page {
   display: flex;
   gap: 24px;
+  width: 100%; /* 전체 너비 확보 */
+  max-width: 1400px; /* 너무 퍼지지 않게 한계선 설정 (선택 사항) */
+  margin: 0 auto; /* 중앙 정렬 */
   height: calc(100vh - 80px);
-  padding: 0 24px;
+  padding: 20px 40px; /* 좌우 패딩이 너무 크지 않은지 확인 */
   box-sizing: border-box;
 }
 
-.nominate-left { flex: 7; overflow-y: auto; padding-right: 12px; }
-.nominate-right { flex: 3; display: flex; flex-direction: column; height: 100%; min-height: 0; }
-
+.nominate-left {
+  flex: 7; /* 공간의 70% 점유 */
+  min-width: 600px; /* 최소 너비를 지정하여 너무 좁아지는 것 방지 */
+  overflow-y: auto;
+  padding-right: 12px;
+}
+.nominate-right {
+  flex: 3; /* 공간의 30% 점유 */
+  min-width: 320px; /* 우측 프리뷰가 찌그러지지 않도록 설정 */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 /* ──────────────────────────────────────────────────────────
    STEP 1: 4단계 아코디언 (기준 코드 기반 확장)
    ────────────────────────────────────────────────────────── */
@@ -89,9 +102,18 @@ html, body {
 
 /* 프리뷰 박스 (X표시 제거 및 텍스트 클릭 삭제) */
 .step1-preview {
-  height: 400px; background-color: #111; border-radius: 16px;
-  display: flex; flex-direction: column; overflow: hidden; border: 1px solid #222;
+  display: flex;
+  flex-direction: column;
+  max-height: 500px; /* 고정 높이 */
 }
+.preview-scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+.preview-scroll::-webkit-scrollbar { width: 6px; }
+.preview-scroll::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+.preview-scroll::-webkit-scrollbar-thumb:hover { background: gold; }
 
 .preview-title {
   padding: 16px; font-size: 15px; font-weight: 700; text-align: center;
@@ -143,11 +165,12 @@ html, body {
 }
 
 .preview-item:hover {
-  background: rgba(255, 71, 87, 0.2);
+  background: rgba(255, 71, 87, 0.15);
   border-color: #ff4757;
   color: #ff4757;
-  text-decoration: line-through;
+  transform: scale(0.98);
 }
+
 /* ──────────────────────────────────────────────────────────
    STEP 2: 카드 그리드 & 팝업 (기존 유지)
    ────────────────────────────────────────────────────────── */
