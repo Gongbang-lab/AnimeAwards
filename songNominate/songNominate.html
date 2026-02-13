@@ -3,10 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <title>노래 수상 – Step 1</title>
-
   <!-- 공통 스타일 -->
   <link rel="stylesheet" href="./songNominate.css" />
-
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
@@ -21,7 +19,11 @@
 
     <!-- 좌측 영역 : Step1 리스트 -->
     <section id="left-area" class="nominate-left">
-      <!-- JS에서 Step1 아코디언 렌더링 -->
+      <div class="search-container">
+        <input type="text" id="song-search" placeholder="애니 제목 또는 곡명 검색..." />
+        <span class="search-icon">🔍</span>
+      </div>
+      <div id="nominate-list-container"></div>
     </section>
 
     <!-- 우측 영역 : Preview -->
@@ -49,17 +51,6 @@
 
   <!-- 하단 버튼 영역 -->
   <footer class="nominate-footer">
-
-    <!-- Step1 버튼 -->
-    <div id="step1-buttons" class="step-buttons">
-      <button id="step1-back-btn" class="btn secondary">
-        메인으로
-      </button>
-
-      <button id="step1-next-btn" class="btn primary" disabled>
-        다음 단계
-      </button>
-    </div>
 
     <!-- Step2 버튼 (Step2에서만 표시) -->
     <div id="step2-buttons" class="step-buttons" style="display:none;">

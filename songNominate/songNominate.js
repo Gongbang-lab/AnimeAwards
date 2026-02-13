@@ -18,6 +18,8 @@ const dayMap = {
     "web" : "웹"
 };
 
+let searchQuery = "";
+
 // 유틸: 유튜브 썸네일 추출
 function ytThumb(url) {
     if (!url) return "../images/default.png";
@@ -27,7 +29,7 @@ function ytThumb(url) {
     } else if (url.includes("v=")) {
         videoId = url.split("v=")[1].split("&")[0];
     }
-    return videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : "../images/default.png";
+    return videoId ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` : "../images/default.png";
 }
 
 /**
@@ -77,95 +79,135 @@ function getMergedSongData(themeType) {
     return result;
 }
 
-// Step 1 렌더링
+// Step 1 렌더링\
 function renderSongStep1(theme) {
     songNominateState.theme = theme;
     const container = document.getElementById("left-area");
-    container.innerHTML = "";
+    
+    // 구조 재설정: 제목 + 검색창 + 리스트 컨테이너
+    container.innerHTML = `
+        <h2 class="step-title">${theme === "opening" ? "오프닝" : "엔딩"} 후보 선택</h2>
+        <div class="search-container">
+            <input type="text" id="song-search" placeholder="애니 제목 또는 곡명 검색..." autocomplete="off" />
+            <span class="search-icon">🔍</span>
+        </div>
+        <div id="nominate-list-container"></div>
+    `;
 
-    const title = document.createElement("h2");
-    title.textContent = `${theme === "opening" ? "오프닝" : "엔딩"} 후보 선택`;
-    container.appendChild(title);
+    const searchInput = document.getElementById("song-search");
+    
+    // 검색 이벤트 연결
+    searchInput.addEventListener("input", (e) => {
+        const query = e.target.value.toLowerCase();
+        renderFilteredList(query); 
+    });
 
-    const mergedData = getMergedSongData(theme);
+    // 초기 리스트 호출 (검색어 없음)
+    renderFilteredList("");
+}
+
+function renderFilteredList(query) {
+    const listContainer = document.getElementById("nominate-list-container");
+    if (!listContainer) return;
+
+    listContainer.innerHTML = ""; 
+    const mergedData = getMergedSongData(songNominateState.theme);
 
     Object.entries(mergedData).forEach(([quarter, songs]) => {
-        const quarterSection = document.createElement("div");
-        quarterSection.className = "quarter-section";
+        const filteredSongs = songs.filter(song => 
+            song.animeTitle.toLowerCase().includes(query) || 
+            song.title.toLowerCase().includes(query) ||
+            (song.artist && song.artist.toLowerCase().includes(query))
+        );
 
-        const quarterDisplay = quarter.replace("Q", "") + "분기"; 
-        const quarterBtn = document.createElement("button");
-        quarterBtn.className = "quarter-btn";
-        quarterBtn.innerHTML = `<span>${quarterDisplay}</span><span class="arrow">▼</span>`;
+        if (filteredSongs.length > 0) {
+            const isSearching = query.length > 0;
+            const quarterSection = document.createElement("div");
+            quarterSection.className = "quarter-section";
 
-        const quarterContent = document.createElement("div");
-        quarterContent.className = "quarter-content";
-        quarterContent.style.display = "none";
+            const quarterBtn = document.createElement("button");
+            quarterBtn.className = `quarter-btn ${isSearching ? "active" : ""}`;
+            quarterBtn.innerHTML = `<span>${quarter.replace("Q", "")}분기</span><span class="arrow">▼</span>`;
 
-        quarterBtn.onclick = () => {
-            const isOpen = quarterContent.style.display === "block";
-            quarterContent.style.display = isOpen ? "none" : "block";
-            quarterBtn.classList.toggle("active", !isOpen);
-        };
+            const quarterContent = document.createElement("div");
+            quarterContent.className = "quarter-content";
+            quarterContent.style.display = isSearching ? "block" : "none";
 
-        const groupedByDay = {};
-        songs.forEach(song => {
-            if (!groupedByDay[song.day]) groupedByDay[song.day] = [];
-            groupedByDay[song.day].push(song);
-        });
-
-        Object.entries(groupedByDay).forEach(([day, daySongs]) => {
-            const daySection = document.createElement("div");
-            daySection.className = "day-section";
-            
-            const dayBtn = document.createElement("button");
-            dayBtn.className = "day-btn";
-            dayBtn.textContent = dayMap[day.toLowerCase()] || day;
-
-            const dayList = document.createElement("div");
-            dayList.className = "song-list";
-            dayList.style.display = "none";
-
-            dayBtn.onclick = () => {
-                const isOpen = dayList.style.display === "block";
-                dayList.style.display = isOpen ? "none" : "block";
-                dayBtn.classList.toggle("active", !isOpen);
+            quarterBtn.onclick = () => {
+                const isOpen = quarterContent.style.display === "block";
+                quarterContent.style.display = isOpen ? "none" : "block";
+                quarterBtn.classList.toggle("active", !isOpen);
             };
 
-            daySongs.forEach(song => {
-                const item = document.createElement("div");
-                item.className = "song-item";
-                if (songNominateState.selectedItems.some(s => s.uniqueId === song.uniqueId)) {
-                    item.classList.add("selected");
+            const groupedByDay = {};
+            filteredSongs.forEach(song => {
+                if (!groupedByDay[song.day]) groupedByDay[song.day] = [];
+                groupedByDay[song.day].push(song);
+            });
+
+            Object.entries(groupedByDay).forEach(([day, daySongs]) => {
+                const dayBtn = document.createElement("button");
+                dayBtn.className = `day-btn ${isSearching ? "active" : ""}`;
+                dayBtn.textContent = dayMap[day.toLowerCase()] || day;
+
+                // ⚠️ 해결: 여기서 dayList를 먼저 생성합니다.
+                const dayList = document.createElement("div");
+                dayList.className = "song-list"; 
+                
+                // 그리드 적용을 위해 display 설정
+                if (isSearching) {
+                    dayList.style.display = "grid";
+                } else {
+                    dayList.style.display = "none";
                 }
 
-                item.innerHTML = `
-                    <div class="song-thumb"><img src="${song.thumbnail}"></div>
-                    <div class="song-info">
-                        <div class="anime-title">${song.animeTitle}</div>
-                        <div class="song-title">${song.title}</div>
-                        <div class="song-singer">${song.artist}</div>
-                    </div>
-                    <a class="youtube-link" href="${song.youtube}" target="_blank" onclick="event.stopPropagation();">▶</a>
-                `;
+                dayBtn.onclick = () => {
+                    const isOpen = dayList.style.display === "grid";
+                    dayList.style.display = isOpen ? "none" : "grid";
+                    dayBtn.classList.toggle("active", !isOpen);
+                };
 
-                item.onclick = () => {
-                    const idx = songNominateState.selectedItems.findIndex(s => s.uniqueId === song.uniqueId);
-                    if (idx > -1) {
-                        songNominateState.selectedItems.splice(idx, 1);
-                        item.classList.remove("selected");
-                    } else {
-                        songNominateState.selectedItems.push(song);
+                daySongs.forEach(song => {
+                    const item = document.createElement("div");
+                    item.className = "song-item";
+                    if (songNominateState.selectedItems.some(s => s.uniqueId === song.uniqueId)) {
                         item.classList.add("selected");
                     }
-                    updatePreview();
-                };
-                dayList.appendChild(item);
+
+                    item.innerHTML = `
+                        <div class="song-thumb">
+                            <img src="${song.thumbnail}" alt="thumbnail">
+                            <a class="youtube-link" href="${song.youtube}" target="_blank" onclick="event.stopPropagation();">
+                                <span class="play-icon">▶</span>
+                            </a>
+                        </div>
+                        <div class="song-info">
+                            <div class="anime-title">${song.animeTitle}</div>
+                            <div class="song-title">${song.title}</div>
+                            <div class="song-singer">${song.artist || ""}</div>
+                        </div>
+                    `;
+
+                    item.onclick = () => {
+                        const idx = songNominateState.selectedItems.findIndex(s => s.uniqueId === song.uniqueId);
+                        if (idx > -1) {
+                            songNominateState.selectedItems.splice(idx, 1);
+                            item.classList.remove("selected");
+                        } else {
+                            songNominateState.selectedItems.push(song);
+                            item.classList.add("selected");
+                        }
+                        updatePreview();
+                    };
+                    dayList.appendChild(item);
+                });
+
+                quarterContent.append(dayBtn, dayList);
             });
-            quarterContent.append(dayBtn, dayList);
-        });
-        quarterSection.append(quarterBtn, quarterContent);
-        container.appendChild(quarterSection);
+
+            quarterSection.append(quarterBtn, quarterContent);
+            listContainer.appendChild(quarterSection);
+        }
     });
 }
 

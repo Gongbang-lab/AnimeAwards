@@ -78,33 +78,45 @@ html, body {
 
 /* ───────────────────── 노래 리스트 및 아이템 ───────────────────── */
 .song-list {
-  list-style: none;
-  padding-left: 14px;
+  display: grid; /* flex에서 grid로 변경 */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 최소 280px 너비로 자동 채움 */
+  gap: 12px;
+  padding: 15px 0;
   margin-top: 6px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
 }
 
 .song-item {
   display: flex;
-  align-items: center;
-  padding: 10px;
-  border-radius: 10px;
+  flex-direction: column;
+  padding: 8px;
+  border-radius: 16px;
+  background: transparent;
+  border: 2px solid #333;
   cursor: pointer;
-  background: #111;
-  border: 1px solid #222;
-  transition: all 0.2s ease;
+  overflow: hidden;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+/* 검색 시 펼쳐지는 스타일 대응 */
+.song-list[style*="display: none"] {
+  display: none !important;
+}
+
+.song-list[style*="display: flex"],
+.song-list[style*="display: block"] {
+  display: grid !important; /* JS에서 강제로 넣는 display 속성 덮어쓰기 */
 }
 
 .song-item:hover {
-  background: #1a1a1a;
-  border-color: #444;
+  transform: translateY(-5px);
+  border-color: #555;
 }
 
 .song-item.selected {
-  background: #222;
   border-color: gold;
+  box-shadow: 0 0 16px rgba(255, 215, 0, 0.4);
+  background: rgba(255, 215, 0, 0.05);
 }
 
 .song-item.selected .song-title {
@@ -113,12 +125,11 @@ html, body {
 
 /* 노래 썸네일 & 정보 */
 .song-thumb {
-  width: 80px;
+  width: 100%;
   aspect-ratio: 16 / 9;
-  border-radius: 6px;
+  border-radius: 10px;
   overflow: hidden;
-  margin-right: 12px;
-  flex-shrink: 0;
+  position: relative; /* 버튼 배치를 위한 기준점 */
 }
 
 .song-thumb img {
@@ -128,33 +139,61 @@ html, body {
 }
 
 .song-info {
-  flex: 1;
-  overflow: hidden;
+  width: 100%;
+  margin-left: 0;
+  text-align: center;
 }
 
 .song-info .anime-title {
   font-size: 11px;
-  opacity: 0.6;
-  margin-bottom: 2px;
+  columns: #888;
+  margin-bottom: 4px;
 }
 
 .song-info .song-title {
   font-size: 14px;
   font-weight: 700;
+  color: #fff;
+  margin-bottom: 2px;
+  display: block; /* 줄바꿈 허용 또는 생략 */
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.youtube-link {
-  color: #ff4444;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 8px;
+.song-info .song-singer {
+  font-size: 12px;
+  color: gold;
+  opacity: 0.9;
 }
+
+.youtube-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45px;
+  height: 45px;
+  background: rgba(255, 0, 0, 0.85);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  z-index: 2;
+}
+
 .youtube-link:hover {
-  transform: scale(1.2);
-  color: #ff0000;
+  transform: translate(-50%, -50%) scale(1.15); 
+  background: #ff0000;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+}
+
+.play-icon {
+  color: white;
+  font-size: 18px;
+  margin-left: 3px; /* 삼각형 중앙 보정 */
 }
 
 /* ───────────────────── 우측 프리뷰 및 버튼 ───────────────────── */
@@ -232,7 +271,7 @@ html, body {
 /* ───────────────────── Step2 그리드 카드 ───────────────────── */
 .step2-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 18px;
   padding: 20px 0;
 }
@@ -439,4 +478,38 @@ html, body {
     color: white;
     font-size: 32px;
     margin-left: 5px;
+}
+
+/* 검색창 스타일 */
+.search-container {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #000;
+  padding: 10px 0 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+#song-search {
+  width: 100%;
+  padding: 12px 40px 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #111;
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+#song-search:focus {
+  border-color: gold;
+}
+
+.search-icon {
+  position: absolute;
+  right: 15px;
+  color: #888;
+  pointer-events: none;
 }
