@@ -105,6 +105,12 @@ h1 {
   border-radius: 20px;
   width: 90%;
   max-width: 500px;
+
+  max-height: 70vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  
   position: relative;
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
@@ -116,6 +122,26 @@ h1 {
   border-bottom: 1px solid #3d444b;
   margin-bottom: 20px;
   padding-bottom: 10px;
+  flex-shrink: 0;
+}
+.modal-body {
+  padding: 20px 30px;
+  overflow-y: auto; /* 내용이 많으면 세로 스크롤 생성 */
+  flex-grow: 1; /* 남은 공간 차지 */
+}
+
+/* 스크롤바 디자인 (선택 사항 - 더 깔끔하게) */
+.modal-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background: #3d444b;
+  border-radius: 10px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+  background: transparent;
 }
 
 .close-modal {
@@ -126,10 +152,6 @@ h1 {
   cursor: pointer;
 }
 
-.modal-body h3 {
-  color: #ff4757;
-  margin-top: 15px;
-}
 
 /* ===============================
     섹션 및 그리드 설정

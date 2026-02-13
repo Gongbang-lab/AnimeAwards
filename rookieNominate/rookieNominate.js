@@ -1,8 +1,17 @@
-const state = {
-    selectedCV: null
+const rookiestate = {
+    selectedCV: null,
+    currentAward: null,
+    theme: null
 };
 
 document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(location.search);
+    const theme = params.get("theme"); // "opening" or "ending"
+    const awardName = params.get("awardName");
+    
+    rookiestate.theme = theme;
+    rookiestate.currentAward = { name : awardName };
+
     renderRookieGrid();
 
     const btnHome = document.getElementById("btn-home");
@@ -13,17 +22,20 @@ document.addEventListener("DOMContentLoaded", () => {
     // 수상 결정 버튼 클릭 이벤트 연결
     if (btnAward) {
         btnAward.onclick = () => {
-            if (state.selectedCV) {
-                openAwardPopup(state.selectedCV);
+            if (rookiestate.selectedCV) {
+                saveWinnerToLocal(rookiestate.selectedCV);
+                openAwardPopup(rookiestate.selectedCV);
             }
         };
     }
+
 });
 
 function renderRookieGrid() {
     const grid = document.getElementById("rookie-grid");
     if (!grid || typeof RookieCVData === 'undefined') return;
 
+    console.log(rookiestate.currentAward);
     grid.innerHTML = "";
     // 가나다/ABC 순 정렬
     const list = Object.values(RookieCVData).sort((a, b) => a.name.localeCompare(b.name));
@@ -48,7 +60,7 @@ function renderRookieGrid() {
         card.onclick = () => {
             document.querySelectorAll(".char-vote-card").forEach(c => c.classList.remove("selected"));
             card.classList.add("selected");
-            state.selectedCV = cv;
+            rookiestate.selectedCV = cv;
             document.getElementById("btn-award").disabled = false;
         };
 
@@ -106,14 +118,23 @@ function renderFilmoHTML(cv, titleLabel) {
     const sortedYears = Object.keys(groups).sort((a, b) => b - a);
     const mainImg = cv.cvimg || (cv.characters[0] ? cv.characters[0].charimg : "");
 
+    // '🏆'가 포함된 타이틀일 경우 수상 모드로 판단
+    const isAward = titleLabel.includes("수상");
+
     return `
-        <div class="filmo-split-layout">
+        <div class="filmo-split-layout ${isAward ? 'award-mode' : ''}">
             <button class="close-filmo" onclick="closePopup()">✕</button>
             <div class="filmo-left">
                 <div class="award-title-label">${titleLabel}</div>
                 <img src="${mainImg}" class="cv-main-img" onerror="this.src='https://via.placeholder.com/240x320'">
                 <h2 class="cv-name-ko" style="font-size: 2rem; margin: 10px 0;">${cv.name}</h2>
                 <div class="cv-debut">DEBUT: <span style="color:gold">${cv.debutYear || '2026'}</span></div>
+                
+                ${isAward ? `
+                    <button class="confirm-home-btn" onclick="location.href='../main/main.html'">
+                        확인 및 메인으로
+                    </button>
+                ` : ''}
             </div>
             <div class="filmo-right">
                 <div class="filmo-scroll-container">
@@ -138,7 +159,32 @@ function renderFilmoHTML(cv, titleLabel) {
         </div>
     `;
 }
-
 function closePopup() {
     document.getElementById("winner-popup").style.display = "none";
+}
+
+function saveWinnerToLocal(cv) {
+    // 1. 기존 데이터를 가져오되, 없으면 빈 객체({})를 기본값으로 설정 (중요!)
+    let results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
+
+    // 2. results가 배열이라면 객체로 강제 변환 (데이터 무결성 방어)
+    if (Array.isArray(results)) results = {};
+
+    // 3. 현재 어워드 이름을 문자열로 가져오기
+    const awardKey = rookiestate.currentAward ? rookiestate.currentAward.name : null;
+
+    if (!awardKey) {
+        console.error("수상 부문(awardName)을 찾을 수 없습니다.");
+        return;
+    }
+
+    // 4. 새로운 수상자 데이터 객체 생성 및 할당
+    results[awardKey] = {
+        name: cv.name,
+        thumbnail: cv.cvimg || (cv.characters && cv.characters[0] ? cv.characters[0].charimg : ''),
+        debutYear: cv.debutYear || '2026'
+    };
+
+    // 5. 로컬스토리지에 다시 저장
+    localStorage.setItem("anime_awards_result", JSON.stringify(results));
 }
