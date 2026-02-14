@@ -2,9 +2,11 @@ const mainContainer = document.getElementById("main-container");
 const top3Area = document.getElementById("top3-area");
 const resetBtn = document.getElementById("reset-btn");
 document.getElementById("save-img-btn").onclick = function() {
-    const target = document.getElementById("main-container"); 
+    const target = document.body;
     const btn = this;
     
+    window.scrollTo(0, 0);
+
     // 캡처 전 처리: 버튼 숨기기 & AOS 애니메이션 강제 완료
     btn.style.opacity = "0";
     const aosElements = document.querySelectorAll('.aos-init');
@@ -36,7 +38,7 @@ const categories = [
     { title: "성우 부문", themes: ['rookie_voice', 'voice_male', 'voice_female'], ratio: 'ratio-11-16' },
     { title: "캐릭터 부문", themes: ['character_male', 'character_female', 'best_couple'], ratio: 'ratio-11-16' },
     { title: "스태프 부문", themes: ['original', 'dramatization', 'director'], ratio: 'ratio-poster' }, // 동화, 원화 제외
-    { title: "아트 부문", themes: ['directing','in_between', 'key_animation'], ratio: 'ratio-poster' }, // 새롭게 추가
+    { title: "아트 부문", themes: ['in_between', 'key_animation'], ratio: 'ratio-poster' }, // 새롭게 추가
     { title: "애니메이션 시리즈", themes: ['default', 'best_episode'], ratio: 'ratio-poster' },
     { title: "올해의 시리즈", themes: ['cinema', 'studio', 'series', 'top3'], ratio: 'ratio-poster' }
 ];
@@ -175,13 +177,21 @@ function createAwardCard(award, results, ratioClass) {
         else {
             const foundPath = Object.values(winner).find(v => 
                 typeof v === 'string' && 
-                (v.includes('../image/') || v.startsWith('http') || v.endsWith('.webp') || v.endsWith('.mp4'))
+                (v.includes('../image/') || 
+                v.startsWith('http') || 
+                v.startsWith('data:image') ||
+                v.endsWith('.webp') || 
+                v.endsWith('.mp4'))
             );
             if (foundPath) displayThumb = foundPath;
         }
 
         // 제목 설정 (오프닝의 경우 노래 제목인 winner.title 사용)
+        if (winner.bestcouple) {
+        displayTitle = `${winner.bestcouple.name1} ♥ ${winner.bestcouple.name2}`;
+        } else {
         displayTitle = winner.title || winner.name || winner.animeTitle || "수상작";
+        }
         card.classList.add("has-winner");
     }
 

@@ -3,18 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>베스트 커플 노미네이트</title>
     <link rel="stylesheet" href="bestCoupleNominate.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
 <body>
+
+    <canvas id="confettiCanvas"></canvas>
 
     <div class="container">
         <div class="left-panel" id="mainArea">
             <div class="search-container" id="searchContainer">
                 <h1 class="logo">Anime Couple Awards</h1>
-                <div class="search-box">
-                    <input type="text" id="searchInput" placeholder="애니메이션 제목을 검색하세요 (예: 고문 아르바이트의 일상)">
-                    <button id="searchBtn">검색</button>
+                <div class="search-wrapper">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="애니메이션 제목 검색 (예: Frieren, 고문...)">
+                        <button id="searchBtn">검색</button>
+                    </div>
+                    <ul id="suggestionList" class="suggestions-box hidden"></ul>
                 </div>
             </div>
             
@@ -23,7 +33,8 @@
 
         <div class="right-panel">
             <div class="control-box">
-                <button class="info-btn" id="infoBtn">ℹ️ 정보</button>
+                <button class="info-icon-btn" id="info-btn">
+                    <i class="fas fa-info-circle"></i></button>
                 <div class="spacer"></div>
                 <button class="action-btn secondary" id="goMainBtn">메인으로</button>
                 <button class="action-btn primary" id="confirmAwardBtn">수상 결정</button>
@@ -42,13 +53,32 @@
         </div>
     </div>
 
+    <div id="awardModal" class="modal hidden">
+        <div class="modal-content award-modal-content">
+            <h2 class="award-title">🏆 BEST COUPLE AWARD 🏆</h2>
+            <h3 id="awardAnimeTitle" class="award-anime-title">애니메이션 제목</h3>
+            
+            <div class="award-couple-display">
+                <div class="award-char">
+                    <img id="awardImg1" src="" alt="">
+                    <span id="awardName1">이름1</span>
+                </div>
+                <div class="heart-icon">♥</div>
+                <div class="award-char">
+                    <img id="awardImg2" src="" alt="">
+                    <span id="awardName2">이름2</span>
+                </div>
+            </div>
+
+            <button id="finalConfirmBtn" class="modal-action-btn primary">확인 및 메인으로</button>
+        </div>
+    </div>
+
     <div id="infoModal" class="modal hidden">
         <div class="modal-content small-modal">
             <span class="close-btn" id="closeInfoModal">&times;</span>
             <h2>도움말</h2>
-            <p>1. 애니메이션 제목을 검색하세요.</p>
-            <p>2. 등장인물 중 2명을 선택하여 커플을 만드세요.</p>
-            <p>3. 등록된 후보 중 하나를 선택하고 '수상 결정'을 누르면 저장됩니다.</p>
+            <p>애니메이션 제목을 검색하고 캐릭터 2명을 선택하세요.</p>
         </div>
     </div>
 

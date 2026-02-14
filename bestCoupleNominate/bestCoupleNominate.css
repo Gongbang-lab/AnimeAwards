@@ -1,18 +1,17 @@
 :root {
-    /* Black & Gold 테마 변수 */
-    --bg-color: #121212;            /* 아주 어두운 회색 (메인 배경) */
-    --panel-left-bg: #1e1e1e;       /* 카드 영역 배경 */
-    --panel-right-bg: #000000;      /* 우측 컨트롤 패널 배경 */
+    --bg-color: #000000;            /* 전체 배경 완전 블랙 */
+    --panel-left-bg: #000000;       /* 왼쪽 패널 블랙 */
+    --panel-right-bg: #000000;      /* 오른쪽 패널 블랙 */
     
-    --primary-color: #d4af37;       /* 메탈릭 골드 */
-    --primary-hover: #b5952f;       /* 골드 호버 */
-    --accent-color: #ffd700;        /* 밝은 골드 (강조) */
+    --primary-color: #d4af37;       /* Gold */
+    --primary-hover: #b5952f;
+    --accent-color: #ffd700;
     
-    --text-color: #ffffff;          /* 메인 텍스트 */
-    --text-sub: #b0b0b0;            /* 서브 텍스트 */
+    --text-color: #ffffff;
+    --text-sub: #b0b0b0;
     
-    --card-bg: #2c2c2c;             /* 카드 배경 */
-    --card-border: #444;            /* 카드 테두리 */
+    --card-bg: #1a1a1a;             /* 카드 배경은 구분을 위해 약간 밝은 블랙 */
+    --card-border: #333;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif; }
@@ -21,238 +20,437 @@ body, html { height: 100%; width: 100%; overflow: hidden; background-color: var(
 
 .container { display: flex; height: 100vh; width: 100%; }
 
-/* --- 왼쪽 패널 (70%) --- */
+/* 폭죽 캔버스 (전체 화면 덮기, 클릭 통과) */
+#confettiCanvas {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    pointer-events: none; z-index: 9999;
+}
+
+.container { display: flex; height: 100vh; width: 100%; }
+
+/* --- 왼쪽 패널 --- */
 .left-panel {
-    flex: 7;
+    flex: 7; /* 7:3 비율 */
     background-color: var(--panel-left-bg);
     display: flex;
     flex-direction: column;
     padding: 20px;
     overflow-y: auto;
-    position: relative;
-    transition: all 0.3s ease;
-    border-right: 1px solid #333;
+    border-right: 1px solid #333; /* 패널 구분선 */
 }
 
-/* 검색창 컨테이너 */
+/* 검색창 영역 */
 .search-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    transition: height 0.5s ease;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    width: 100%; height: 100%; transition: height 0.5s ease;
 }
 
 .left-panel.has-candidates .search-container {
-    height: 100px;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 20px;
-    border-bottom: 1px solid var(--primary-color); /* 골드 라인 */
+    height: 100px; flex-direction: row; justify-content: space-between;
+    padding-bottom: 20px; border-bottom: 1px solid var(--primary-color);
 }
+
 .left-panel.has-candidates .logo { display: none; }
-.left-panel.has-candidates .search-box { width: 100%; }
+.left-panel.has-candidates .search-wrapper { width: 100%; }
 
 .logo {
-    font-size: 3rem;
-    color: var(--primary-color);
-    margin-bottom: 30px;
-    font-weight: bold;
-    text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+    font-size: 3rem; color: var(--primary-color); margin-bottom: 30px;
+    font-weight: bold; text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
 }
 
-.search-box {
-    display: flex;
-    width: 60%;
-    max-width: 600px;
-    gap: 10px;
+/* 검색창 래퍼 (relative 설정하여 연관 검색어 위치 기준점 잡기) */
+.search-wrapper {
+    width: 60%; max-width: 600px; position: relative;
 }
+
+.search-box { display: flex; width: 100%; gap: 10px; }
 
 input#searchInput {
-    flex: 1;
-    padding: 15px;
-    background-color: #333;
-    border: 1px solid var(--primary-color);
-    color: white;
-    border-radius: 5px; /* 둥근 모서리 조금 줄임 */
-    font-size: 1.1rem;
-    outline: none;
+    flex: 1; padding: 15px; background-color: #333;
+    border: 1px solid var(--primary-color); color: white;
+    border-radius: 5px; font-size: 1.1rem; outline: none;
 }
-input#searchInput::placeholder { color: #888; }
 
 button#searchBtn {
-    padding: 0 25px;
-    background-color: var(--primary-color);
-    color: #000; /* 골드 배경엔 검은 글씨 */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
-    transition: background 0.3s;
+    padding: 0 25px; background-color: var(--primary-color);
+    color: #000; border: none; border-radius: 5px; cursor: pointer;
+    font-weight: bold; font-size: 1rem;
 }
 button#searchBtn:hover { background-color: var(--primary-hover); }
 
-/* 후보 리스트 */
+/* 연관 검색어 (자동완성) 리스트 */
+.suggestions-box {
+    position: absolute; top: 100%; left: 0; width: 100%;
+    background-color: #252525; border: 1px solid var(--primary-color);
+    border-top: none; max-height: 200px; overflow-y: auto;
+    z-index: 1000; list-style: none; border-radius: 0 0 5px 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+.suggestions-box.hidden { display: none; }
+
+.suggestions-box li {
+    padding: 12px; cursor: pointer; border-bottom: 1px solid #333;
+    color: #ddd; transition: background 0.2s;
+}
+.suggestions-box li:hover { background-color: #3a3a3a; color: var(--primary-color); }
+.suggestions-box li:last-child { border-bottom: none; }
+
+
+/* 후보 리스트 (그리드) */
 .nominee-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding-top: 20px;
-    width: 100%;
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px; padding-top: 20px; width: 100%;
 }
 
-/* 커플 카드 */
+/* 커플 카드 스타일 */
 .couple-card {
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    background: var(--card-bg); 
+    border-radius: 10px; 
+    padding: 15px; 
     cursor: pointer;
-    transition: transform 0.2s, border 0.2s;
+    transition: transform 0.2s; 
     color: var(--text-color);
-}
 
+    width: 100%;
+    max-width: 320px; /* 전체 카드 너비를 조금 더 키움 */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
 .couple-card:hover { transform: translateY(-5px); border-color: var(--primary-color); }
 .couple-card.selected {
-    border: 2px solid var(--accent-color);
-    background-color: #2a2510; /* 아주 어두운 골드 틴트 */
+    border: 2px solid var(--accent-color); background-color: #2a2510;
     box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
 }
 
-.couple-imgs { display: flex; gap: 10px; justify-content: center; }
-.couple-img-wrap { text-align: center; }
-.couple-img-wrap img {
-    width: 80px; height: 80px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid var(--primary-color);
-}
-.couple-img-wrap span { display: block; font-size: 0.8rem; margin-top: 5px; font-weight: bold; color: var(--text-sub); }
+.couple-imgs { 
+    display: flex; 
+    gap: 0; 
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    /* 이미지 한 장당 2:3 비율이므로, 두 장 합치면 4:3 비율 */
+    aspect-ratio: 4 / 3;
+    background-color: #000;
+    overflow: hidden;
+    border-radius: 15px;
 
-/* --- 오른쪽 패널 (30%) --- */
+}
+.couple-img-wrap { 
+    width: 50%; 
+    height: 100%; 
+    position: relative; /* 이름 텍스트를 이미지 위에 올릴 경우 대비 */
+}
+
+.couple-img-wrap span { display: block; font-size: 0.8rem; margin-top: 5px; color: var(--text-sub); }
+
+.couple-imgs img {
+    width: 100%;      /* 정확히 절반 차지 */
+    height: 100%;    /* 부모의 높이 가득 채움 */
+    object-fit: cover; /* 2:3 비율로 중앙 크롭 */
+    display: block;
+    border-right: 1px solid #333; /* 이미지 사이 구분선 */
+}
+.couple-imgs img:last-child {
+    border-right: none;
+}
+.couple-info {
+    padding: 12px;
+    text-align: center;
+    background: #1a1a1a; /* 카드 배경보다 살짝 어둡거나 같게 */
+    border-top: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.couple-names {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--accent-color); /* 골드 색상 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.anime-title {
+    font-size: 0.85rem;
+    color: var(--text-sub); /* 회색 텍스트 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* --- 오른쪽 패널 --- */
 .right-panel {
-    flex: 3;
+    flex: 3; /* 7:3 비율 */
     background-color: var(--panel-right-bg);
-    padding: 40px 20px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start; /* 내용물을 위쪽으로 정렬 */
     border-left: 1px solid #333;
 }
 
 .control-box {
-    width: 100%; height: 100%;
-    display: flex; flex-direction: column; gap: 20px;
+    width: 100%;
+    height: auto; /* 높이 자동 */
+    display: flex;
+    flex-direction: row; /* 가로(한 줄) 배치 */
+    gap: 10px;           /* 버튼 사이 간격 */
+    align-items: center;
+    justify-content: flex-end; /* 오른쪽 정렬 (또는 center) */
+    margin-bottom: 20px; /* 아래 여백 */
 }
 
-.spacer { flex: 1; }
+.spacer { display: none; }
 
 .action-btn {
-    width: 100%; padding: 20px;
-    font-size: 1.2rem; border: none; border-radius: 5px;
-    cursor: pointer; font-weight: bold;
-    transition: all 0.2s;
+    width: auto;      /* 내용물에 맞게 너비 조절 */
+    min-width: 100px; /* 최소 너비 설정 */
+    padding: 10px 15px; /* 패딩 축소 */
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
 }
 
-.action-btn.secondary { 
-    background-color: #333; color: white; border: 1px solid #555; 
-}
+.action-btn.secondary { background-color: #333; color: white; border: 1px solid #555; }
 .action-btn.secondary:hover { background-color: #444; }
 
-.action-btn.primary { 
-    background-color: var(--primary-color); color: #000; 
-    box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
-}
+.action-btn.primary { background-color: var(--primary-color); color: #000; }
 .action-btn.primary:hover { background-color: var(--primary-hover); }
 
-.info-btn {
-    background: none; border: none; font-size: 1.5rem; cursor: pointer; align-self: flex-end; color: var(--primary-color);
+.info-icon-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #222; /* 메인 포인트 컬러 */
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: transform 0.2s;
 }
 
-/* --- 모달 (Popup) --- */
+.info-icon-btn:hover {
+  transform: scale(1.1);
+}
+
+/* --- 모달 공통 --- */
 .modal {
-    display: flex; position: fixed; z-index: 100; left: 0; top: 0;
-    width: 100%; height: 100%;
-    background-color: rgba(0,0,0,0.85); /* 배경 더 어둡게 */
+    display: flex; position: fixed; z-index: 200; left: 0; top: 0;
+    width: 100%; height: 100%; background-color: rgba(0,0,0,0.85);
     justify-content: center; align-items: center;
 }
 .modal.hidden { display: none; }
 
-.modal-content {
-    background-color: #1f1f1f;
-    padding: 20px; border-radius: 10px;
-    position: relative; max-height: 90vh;
-    display: flex; flex-direction: column;
-    border: 1px solid var(--primary-color);
-    color: var(--text-color);
+.modal-content.large-modal {
+    width: 90%; 
+    max-width: 1000px;  /* 너무 넓어지지 않게 제한 */
+    height: 85vh;       /* 화면 높이의 85%만 차지 (중요: 스크롤 생성을 위해 높이 제한) */
+    background-color: #1a1a1a;
+    border: 2px solid var(--primary-color); /* 골드 테두리 */
+    border-radius: 20px; /* 둥근 모서리 */
+    padding: 20px 30px;  /* 내부 여백 */
+    display: flex;
+    flex-direction: column; /* 상단 제목, 중간 그리드, 하단 버튼 세로 배치 */
+    position: relative;     /* 닫기 버튼 위치 기준 */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
 }
 
-.large-modal { width: 80%; max-width: 1000px; height: 85%; }
+.modal-content h2 {
+    color: var(--primary-color);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    flex-shrink: 0; /* 스크롤 시 줄어들지 않음 */
+}
+
+.modal-desc {
+    color: var(--text-sub);
+    text-align: center;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+}
+
 .small-modal { width: 400px; text-align: center; }
 
 .close-btn {
-    position: absolute; top: 10px; right: 20px;
-    font-size: 2rem; cursor: pointer; color: var(--text-sub);
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2.5rem;
+    line-height: 1;
+    color: var(--text-sub);
+    cursor: pointer;
+    transition: color 0.2s;
+    z-index: 10; /* 다른 요소보다 위에 */
 }
-.close-btn:hover { color: white; }
+.close-btn:hover { color: var(--accent-color); }
 
-/* 팝업 내 텍스트 색상 */
-.modal-content h2 { color: var(--primary-color); margin-bottom: 10px; }
-.modal-desc { color: var(--text-sub); margin-bottom: 15px; }
-
+/* 캐릭터 선택 그리드 */
 .character-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    /* 카드의 너비: 최소 140px, 공간 남으면 늘어남 */
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); 
     gap: 15px;
-    overflow-y: auto;
-    padding: 10px;
-    flex: 1;
+    
+    /* [중요] 내용물이 넘치면 무조건 스크롤 생성 */
+    overflow-y: auto; 
+    
+    /* [중요] 그리드 높이 문제 해결 */
+    align-content: start; /* 행들을 위쪽부터 차곡차곡 쌓음 (늘리지 않음) */
+    grid-auto-rows: max-content; /* 행의 높이는 내용물(카드) 크기에 맞춤 */
+    
+    padding: 15px;
+    background-color: #111;
+    border-radius: 10px;
+    flex: 1; /* 남은 공간 차지 */
+    min-height: 0; /* Flexbox 버그 방지 */
 }
 
-/* 스크롤바 커스텀 (Chrome/Safari) */
-.character-grid::-webkit-scrollbar { width: 8px; }
-.character-grid::-webkit-scrollbar-track { background: #111; }
-.character-grid::-webkit-scrollbar-thumb { background: #444; border-radius: 4px; }
+.character-grid::-webkit-scrollbar { width: 10px; }
+.character-grid::-webkit-scrollbar-track { background: #111; border-radius: 5px; }
+.character-grid::-webkit-scrollbar-thumb { 
+    background: #444; 
+    border-radius: 5px; 
+    border: 2px solid #111; 
+}
 .character-grid::-webkit-scrollbar-thumb:hover { background: var(--primary-color); }
 
-/* 캐릭터 카드 */
+/* --- 캐릭터 카드 (수정됨: 세로 스택, 원본 비율) --- */
 .char-card {
-    display: flex; flex-direction: column; align-items: center;
-    cursor: pointer; border-radius: 5px; overflow: hidden;
-    border: 1px solid #333;
-    transition: all 0.2s;
+    display: flex;
+    flex-direction: column; /* 세로 스택 */
     background: #252525;
+    border: 1px solid #444;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative; /* 배치 기준점 */
+    
+    /* [핵심] 높이를 auto로 설정하여 내용물(이미지+이름)만큼만 커지게 함 */
+    height: auto !important; 
+    min-height: 250px; /* 최소 높이 보장 (찌그러짐 방지 안전장치) */
+    
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.char-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    z-index: 10;
 }
 
 .char-card.selected {
-    border: 2px solid var(--accent-color);
-    background-color: rgba(212, 175, 55, 0.1);
-    transform: scale(0.98);
+    border: 3px solid var(--accent-color);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
 }
 
+/* 이미지 컨테이너: 원본 비율 유지 */
 .char-card img {
     width: 100%;
-    aspect-ratio: 230 / 345;
-    object-fit: cover;
-    filter: brightness(0.9);
+    
+    /* [해결책] 비율(aspect-ratio)에 의존하지 않고 PX로 높이를 박아버립니다. */
+    height: 210px !important; 
+    
+    object-fit: cover; /* 이미지가 잘리더라도 꽉 채움 */
+    display: block;
+    margin: 0; padding: 0; /* 불필요한 여백 제거 */
+    
+    /* 절대 줄어들지 않도록 설정 */
+    flex-shrink: 0; 
+    flex-grow: 0;
 }
-.char-card.selected img { filter: brightness(1.1); }
 
 .char-card .char-name {
-    padding: 10px; font-weight: bold; text-align: center; width: 100%;
-    color: var(--text-color);
-    background-color: #1a1a1a;
+    width: 100%;
+    padding: 10px 5px;
+    
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background-color: #1f1f1f;
+    border-top: 1px solid #333;
+    
+    /* 줄어들지 않도록 설정 */
+    flex-shrink: 0;
+    
+    /* 텍스트 말줄임 처리 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
-.char-card.selected .char-name { color: var(--accent-color); }
+
+.char-card.selected .char-name {
+    color: var(--accent-color);
+    background-color: #332b00;
+}
 
 .modal-action-btn {
-    margin-top: 15px; padding: 15px;
-    background-color: var(--primary-color); color: #000;
-    border: none; border-radius: 5px; font-size: 1.1rem;
-    cursor: pointer; font-weight: bold;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 1.1rem;
+    flex-shrink: 0; /* 스크롤 시 줄어들지 않음 */
 }
-.modal-action-btn:disabled { background-color: #444; color: #888; cursor: not-allowed; }
+
+/* --- 수상 결과 모달 (NEW) --- */
+.award-modal-content {
+    width: 700px; max-width: 90%; text-align: center;
+    background: linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%);
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
+    padding: 40px;
+}
+
+.award-title {
+    font-size: 2rem; color: var(--accent-color); margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.award-anime-title {
+    color: var(--text-sub); margin-bottom: 30px; font-weight: normal;
+}
+
+.award-couple-display {
+    display: flex; justify-content: center; align-items: center; gap: 20px; margin-bottom: 30px;
+}
+
+.award-char {
+    display: flex; flex-direction: column; align-items: center; width: 45%;
+}
+
+.award-char img {
+    width: 100%; height: auto; max-height: 300px;
+    object-fit: cover; border-radius: 10px;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    background-color: #000;
+}
+
+.award-char span {
+    margin-top: 15px; font-size: 1.2rem; font-weight: bold; color: white;
+}
+
+.heart-icon {
+    font-size: 3rem; color: var(--accent-color);
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
