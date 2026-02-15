@@ -1,7 +1,7 @@
 const AnimeStudioData = [
   {
     "studio": "디오미디어",
-    "studio_img": "../image/studio/디오미디어.webp",
+    "studio_img": "../image/studio/디오미디어.avif",
     "works": [
       {
         "title": "고문 아르바이트의 일상",
@@ -11,7 +11,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "본즈 필름",
-    "studio_img": "../image/studio/본즈 필름.webp",
+    "studio_img": "../image/studio/본즈 필름.avif",
     "works": [
       {
         "title": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
@@ -21,7 +21,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "오쿠루토 노보루",
-    "studio_img": "../image/studio/오쿠루토 노보루.webp",
+    "studio_img": "../image/studio/오쿠루토 노보루.avif",
     "works": [
       {
         "title": "깨끗하게 해주시겠어요?",
@@ -31,7 +31,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "브레인즈 베이스",
-    "studio_img": "../image/studio/브레인즈 베이스.webp",
+    "studio_img": "../image/studio/브레인즈 베이스.avif",
     "works": [
       {
         "title": "골든 카무이 최종장",
@@ -41,7 +41,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "PINE JAM",
-    "studio_img": "../image/studio/PINE JAM.webp",
+    "studio_img": "../image/studio/PINE JAM.avif",
     "works": [
       {
         "title": "공주님 \"고문\"의 시간입니다 2기",
@@ -51,7 +51,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "데즈카 프로덕션",
-    "studio_img": "../image/studio/데즈카 프로덕션.webp",
+    "studio_img": "../image/studio/데즈카 프로덕션.avif",
     "works": [
       {
         "title": "소꿉친구와는 러브 코미디를 할 수 없어",
@@ -61,11 +61,11 @@ const AnimeStudioData = [
   },
   {
     "studio": "겟코",
-    "studio_img": "../image/studio/겟코.webp",
+    "studio_img": "../image/studio/겟코.avif",
     "works": [
       {
         "title": "용사 파티에 귀여운 애가 있어서, 고백해봤다.",
-        "thumbnail": "../image/animeimg/Q1/용사 파티에 귀여운 애가 있어서, 고백해봤다..webp"
+        "thumbnail": "../image/animeimg/Q1/용사 파티에 귀여운 애가 있어서, 고백해봤다.webp"
       },
       {
         "title": "한밤중 하트튠",
@@ -75,7 +75,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "스튜디오 딘",
-    "studio_img": "../image/studio/스튜디오 딘.webp",
+    "studio_img": "../image/studio/스튜디오 딘.avif",
     "works": [
       {
         "title": "이세계 사정은 사축 하기 나름",
@@ -83,7 +83,7 @@ const AnimeStudioData = [
       },
       {
         "title": "사망 유희로 밥을 먹는다.",
-        "thumbnail": "../image/animeimg/Q1/사망 유희로 밥을 먹는다..webp"
+        "thumbnail": "../image/animeimg/Q1/사망 유희로 밥을 먹는다.webp"
       },
       {
         "title": "악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다",
@@ -93,7 +93,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "선라이즈",
-    "studio_img": "../image/studio/선라이즈.webp",
+    "studio_img": "../image/studio/선라이즈.avif",
     "works": [
       {
         "title": "개진전 사무라이 트루퍼",
@@ -103,7 +103,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "벨녹스 필름스",
-    "studio_img": "../image/studio/벨녹스 필름스.webp",
+    "studio_img": "../image/studio/벨녹스 필름스.avif",
     "works": [
       {
         "title": "다윈 사변",
@@ -113,7 +113,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "HORNETS",
-    "studio_img": "../image/studio/HORNETS.webp",
+    "studio_img": "../image/studio/HORNETS.avif",
     "works": [
       {
         "title": "29세 독신 중견 모험가의 일상",
@@ -123,7 +123,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "SILVER LINK.",
-    "studio_img": "../image/studio/SILVER LINK..webp",
+    "studio_img": "../image/studio/SILVER LINK..avif",
     "works": [
       {
         "title": "아르네의 사건부",
@@ -133,7 +133,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "EMT 스퀘어드",
-    "studio_img": "../image/studio/EMT 스퀘어드.webp",
+    "studio_img": "../image/studio/EMT 스퀘어드.avif",
     "works": [
       {
         "title": "마왕의 딸은 너무 친절해!!",
@@ -143,7 +143,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "동화공방",
-    "studio_img": "../image/studio/동화공방.webp",
+    "studio_img": "../image/studio/동화공방.avif",
     "works": [
       {
         "title": "【최애의 아이】 3기",
@@ -153,7 +153,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "CompTown",
-    "studio_img": "../image/studio/CompTown.webp",
+    "studio_img": "../image/studio/CompTown.avif",
     "works": [
       {
         "title": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
@@ -163,7 +163,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "SynergySP",
-    "studio_img": "../image/studio/SynergySP.webp",
+    "studio_img": "../image/studio/SynergySP.avif",
     "works": [
       {
         "title": "온화한 귀족의 휴가의 권장",
@@ -181,7 +181,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "Studio LAN",
-    "studio_img": "../image/studio/Studio LAN.webp",
+    "studio_img": "../image/studio/Studio LAN.avif",
     "works": [
       {
         "title": "시광대리인 -Link Click- 영도편",
@@ -191,7 +191,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "스튜디오 KAI",
-    "studio_img": "../image/studio/스튜디오 KAI.webp",
+    "studio_img": "../image/studio/스튜디오 KAI.avif",
     "works": [
       {
         "title": "용사형에 처함",
@@ -201,7 +201,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "팟쇼네",
-    "studio_img": "../image/studio/팟쇼네.webp",
+    "studio_img": "../image/studio/팟쇼네.avif",
     "works": [
       {
         "title": "마도정병의 슬레이브 2기",
@@ -211,17 +211,17 @@ const AnimeStudioData = [
   },
   {
     "studio": "Project No.9",
-    "studio_img": "../image/studio/Project No.9.webp",
+    "studio_img": "../image/studio/Project No.9.avif",
     "works": [
       {
         "title": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
-        "thumbnail": "../image/animeimg/Q1/투명남과 인간녀 ~곧 부부가 될 두 사람~.webp"
+        "thumbnail": "../image/animeimg/Q1/투명남과 인간녀 ~곧 부부가 될 두 사람.webp"
       }
     ]
   },
   {
     "studio": "아시 프로덕션",
-    "studio_img": "../image/studio/아시 프로덕션.webp",
+    "studio_img": "../image/studio/아시 프로덕션.avif",
     "works": [
       {
         "title": "에리스의 성배",
@@ -231,7 +231,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "MAPPA",
-    "studio_img": "../image/studio/MAPPA.webp",
+    "studio_img": "../image/studio/MAPPA.avif",
     "works": [
       {
         "title": "주술회전 3기",
@@ -244,8 +244,8 @@ const AnimeStudioData = [
     ]
   },
   {
-    "studio": "A.C.G.T.",
-    "studio_img": "../image/studio/A.C.G.T..webp",
+    "studio": "A.C.G.T",
+    "studio_img": "../image/studio/에이시지티.avif",
     "works": [
       {
         "title": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
@@ -255,7 +255,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "타이푼 그래픽스",
-    "studio_img": "../image/studio/타이푼 그래픽스.webp",
+    "studio_img": "../image/studio/타이푼 그래픽스.avif",
     "works": [
       {
         "title": "어차피, 사랑하고 만다. 2기",
@@ -269,7 +269,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "매드하우스",
-    "studio_img": "../image/studio/매드하우스.webp",
+    "studio_img": "../image/studio/매드하우스.avif",
     "works": [
       {
         "title": "장송의 프리렌 2기",
@@ -279,7 +279,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "주식회사 세븐",
-    "studio_img": "../image/studio/주식회사 세븐.webp",
+    "studio_img": "../image/studio/주식회사 세븐.avif",
     "works": [
       {
         "title": "하이스쿨! 기면조",
@@ -289,7 +289,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "TROYCA",
-    "studio_img": "../image/studio/TROYCA.webp",
+    "studio_img": "../image/studio/TROYCA.avif",
     "works": [
       {
         "title": "DARK MOON: 달의 제단",
@@ -299,7 +299,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "요코하마 애니메이션 랩",
-    "studio_img": "../image/studio/요코하마 애니메이션 랩.webp",
+    "studio_img": "../image/studio/요코하마 애니메이션 랩.avif",
     "works": [
       {
         "title": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~",
@@ -309,7 +309,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "David Production",
-    "studio_img": "../image/studio/David Production.webp",
+    "studio_img": "../image/studio/David Production.avif",
     "works": [
       {
         "title": "불꽃 소방대 3장",
@@ -323,7 +323,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "Felix Film",
-    "studio_img": "../image/studio/Felix Film.webp",
+    "studio_img": "../image/studio/Felix Film.avif",
     "works": [
       {
         "title": "전생했더니 드래곤의 알이었다 ~최강이 아니면 목표로 하지 않아~",
@@ -337,7 +337,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "NAZ",
-    "studio_img": "../image/studio/NAZ.webp",
+    "studio_img": "../image/studio/NAZ.avif",
     "works": [
       {
         "title": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
@@ -347,7 +347,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "오렌지",
-    "studio_img": "../image/studio/오렌지.webp",
+    "studio_img": "../image/studio/오렌지.avif",
     "works": [
       {
         "title": "트라이건 스타게이즈",
@@ -361,7 +361,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "A-1 Pictures",
-    "studio_img": "../image/studio/A-1 Pictures.webp",
+    "studio_img": "../image/studio/A-1 Pictures.avif",
     "works": [
       {
         "title": "Fate/strange Fake",
@@ -371,7 +371,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "아스리드",
-    "studio_img": "../image/studio/아스리드.webp",
+    "studio_img": "../image/studio/아스리드.avif",
     "works": [
       {
         "title": "인외 교실의 인간 혐오 교사",
@@ -381,7 +381,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "OLM",
-    "studio_img": "../image/studio/OLM.webp",
+    "studio_img": "../image/studio/OLM.avif",
     "works": [
       {
         "title": "쓰레기 용사",
@@ -391,7 +391,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "J.C.Staff",
-    "studio_img": "../image/studio/J.C.Staff.webp",
+    "studio_img": "../image/studio/J.C.Staff.avif",
     "works": [
       {
         "title": "타몬 군 지금 어느 쪽!?",
@@ -399,13 +399,13 @@ const AnimeStudioData = [
       },
       {
         "title": "듀얼마스터즈 LOST ~망각의 태양~",
-        "thumbnail": "../image/animeimg/Q1/듀얼마스터즈 LOST ~망각의 태양~.webp"
+        "thumbnail": "../image/animeimg/Q1/듀얼마스터즈 LOST ~망각의 태양.webp"
       }
     ]
   },
   {
     "studio": "ENGI",
-    "studio_img": "../image/studio/ENGI.webp",
+    "studio_img": "../image/studio/ENGI.avif",
     "works": [
       {
         "title": "메달리스트 2기",
@@ -414,8 +414,8 @@ const AnimeStudioData = [
     ]
   },
   {
-    "studio": "East Fish Studio",
-    "studio_img": "../image/studio/East Fish Studio.webp",
+    "studio": "이스트 피쉬 스튜디오",
+    "studio_img": "../image/studio/이스트 피쉬 스튜디오.avif",
     "works": [
       {
         "title": "아름다운 초저녁달",
@@ -429,7 +429,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "라판트랙",
-    "studio_img": "../image/studio/라판트랙.webp",
+    "studio_img": "../image/studio/라판트랙.avif",
     "works": [
       {
         "title": "정반대의 너와 나",
@@ -439,7 +439,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "Signal.MD",
-    "studio_img": "../image/studio/Signal.MD.webp",
+    "studio_img": "../image/studio/SignalMD.avif",
     "works": [
       {
         "title": "아름다운 그대에게",
@@ -449,7 +449,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "플래티넘 비전",
-    "studio_img": "../image/studio/플래티넘 비전.webp",
+    "studio_img": "../image/studio/플래티넘 비전.avif",
     "works": [
       {
         "title": "마술사 쿠논은 보인다",
@@ -459,7 +459,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "animation studio42",
-    "studio_img": "../image/studio/animation studio42.webp",
+    "studio_img": "../image/studio/animation studio42.avif",
     "works": [
       {
         "title": "용사 파티에서 쫓겨난 다재무능",
@@ -469,7 +469,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "슈카",
-    "studio_img": "../image/studio/슈카.webp",
+    "studio_img": "../image/studio/슈카.avif",
     "works": [
       {
         "title": "위국일기",
@@ -479,17 +479,17 @@ const AnimeStudioData = [
   },
   {
     "studio": "studio MOTHER",
-    "studio_img": "../image/studio/studio MOTHER.webp",
+    "studio_img": "../image/studio/studio MOTHER.avif",
     "works": [
       {
         "title": "내가 연인이 될 수 있을 리 없잖아, 무리무리! (※무리가 아니었다?!) ~넥스트 샤인!~",
-        "thumbnail": "../image/animeimg/Q1/내가 연인이 될 수 있을 리 없잖아, 무리무리!.webp"
+        "thumbnail": "../image/animeimg/Q1/내가 연인이 될 수 있을 리 없잖아, 무리무리.webp"
       }
     ]
   },
   {
     "studio": "스튜디오 레오",
-    "studio_img": "../image/studio/스튜디오 레오.webp",
+    "studio_img": "../image/studio/스튜디오 레오.avif",
     "works": [
       {
         "title": "아리스가와 렌은 사실 여자라구!!",
@@ -499,7 +499,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "Studio Hokiboshi",
-    "studio_img": "../image/studio/Studio Hokiboshi.webp",
+    "studio_img": "../image/studio/Studio Hokiboshi.avif",
     "works": [
       {
         "title": "이치고 아이카 ~잡하고 생기발랄한 동생과 못말리는 오빠~",
@@ -509,7 +509,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "Doraku",
-    "studio_img": "../image/studio/Doraku.webp",
+    "studio_img": "../image/studio/Doraku.avif",
     "works": [
       {
         "title": "북두의 권: 권왕군 자코들의 만가",
@@ -519,7 +519,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "Imagica Infos",
-    "studio_img": "../image/studio/Imagica Infos.webp",
+    "studio_img": "../image/studio/Imagica Infos.avif",
     "works": [
       {
         "title": "최애 의붓형을 사랑하기 위해, 오래 살겠습니다!",
@@ -533,7 +533,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "주식회사 웨이브",
-    "studio_img": "../image/studio/주식회사 웨이브.webp",
+    "studio_img": "../image/studio/주식회사 웨이브.avif",
     "works": [
       {
         "title": "안드로이드는 경험인 수에 들어가나요??",
@@ -543,7 +543,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "ILCA",
-    "studio_img": "../image/studio/ILCA.webp",
+    "studio_img": "../image/studio/ILCA.avif",
     "works": [
       {
         "title": "야미시바이 16기",
@@ -553,7 +553,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "P.A. Works",
-    "studio_img": "../image/studio/P.A. Works.webp",
+    "studio_img": "../image/studio/P.A. Works.avif",
     "works": [
       {
         "title": "천수의 사쿠나히메 코코로와 농사 일지",
@@ -563,7 +563,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "밀팡세",
-    "studio_img": "../image/studio/밀팡세.webp",
+    "studio_img": "../image/studio/밀팡세.avif",
     "works": [
       {
         "title": "이세계에서 치트 스킬을 얻은 나는 현실 세계에서도 무쌍한다 ~레벨업이 인생을 바꿨다~ TVSP",
@@ -573,7 +573,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "Wit Studio",
-    "studio_img": "../image/studio/Wit Studio.webp",
+    "studio_img": "../image/studio/Wit Studio.avif",
     "works": [
       {
         "title": "프리즘 윤무곡",
@@ -583,7 +583,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "콜로리도",
-    "studio_img": "../image/studio/콜로리도.webp",
+    "studio_img": "../image/studio/콜로리도.avif",
     "works": [
       {
         "title": "초(超) 가구야 공주!",
@@ -593,7 +593,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "TMS Entertainment",
-    "studio_img": "../image/studio/TMS Entertainment.webp",
+    "studio_img": "../image/studio/TMS Entertainment.avif",
     "works": [
       {
         "title": "Baki-dou",

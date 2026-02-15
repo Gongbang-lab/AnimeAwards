@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Best Episode Awards</title>
+    <link rel="stylesheet" href="./episodeNominate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <main class="main-content">
+            <header>
+                <h1>BEST EPISODE AWARDS</h1>
+                <p class="subtitle">최고의 에피소드를 선정해주세요</p>
+            </header>
+
+            <div id="search-container">
+                <input type="text" id="anime-search" placeholder="애니메이션 제목 검색...">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+
+            <div id="step1-section" class="step-section active">
+                <div id="accordion-container">
+                    </div>
+            </div>
+
+            <div id="step2-section" class="step-section">
+                <h2 class="section-title">FINAL CANDIDATES</h2>
+                <div id="cards-container">
+                    </div>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="nav-buttons">
+                <button id="btn-main" class="nav-btn outline">메인으로</button>
+                <button id="btn-next" class="nav-btn solid">다음으로</button>
+                
+                <button id="btn-prev" class="nav-btn outline hidden">이전으로</button>
+                <button id="btn-award" class="nav-btn solid hidden">수상 결정</button>
+            </div>
+
+            <div class="preview-box">
+                <h3>SELECTION LIST <small>(클릭하여 삭제)</small></h3>
+                <div id="preview-list">
+                    <p class="empty-msg">선택된 에피소드가 없습니다.</p>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <div id="award-popup" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>🏆 GRAND WINNER 🏆</h2>
+            <div class="winner-display">
+                <img id="winner-img" src="" alt="Winner Thumbnail">
+                <h3 id="winner-title"></h3>
+                <p id="winner-episode"></p>
+            </div>
+            <div class="modal-actions">
+                <button id="btn-confirm-main" class="nav-btn solid">확인 및 메인으로</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="confetti-container"></div>
+
+    <script src="../data/animeData.js"></script>
+    <script src="./episodeNominate.js"></script>
+</body>
+</html>

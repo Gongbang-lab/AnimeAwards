@@ -1,0 +1,162 @@
+:root {
+    --bg-color: #000000;
+    --panel-color: #111111;
+    --gold: #FFD700;
+    --gold-dim: #b89b00;
+    --text-main: #ffffff;
+    --text-sub: #888888;
+    --border-color: #222;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: 'Noto Sans KR', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* === [중요] 화면 전환 로직 === */
+.step-section {
+    display: none; /* 기본적으로 숨김 */
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.step-section.active {
+    display: block; /* active 클래스가 있을 때만 보임 */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 유틸리티 클래스 */
+.hidden { display: none !important; }
+
+/* 레이아웃 */
+.container { display: flex; height: 100%; }
+.main-content {
+    flex: 7;
+    padding: 40px;
+    overflow-y: auto;
+    border-right: 1px solid var(--border-color);
+}
+.sidebar {
+    flex: 3;
+    padding: 40px;
+    background-color: var(--panel-color);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-left: 1px solid #222;
+}
+
+/* 헤더 & 검색 */
+header { margin-bottom: 30px; text-align: center; }
+header h1 { color: var(--gold); letter-spacing: 2px; text-shadow: 0 0 10px rgba(255, 215, 0, 0.3); }
+.subtitle { color: var(--text-sub); font-size: 0.9rem; margin-top: 5px; }
+
+#search-container { position: relative; margin-bottom: 20px; transition: all 0.3s; }
+#anime-search {
+    width: 100%;
+    padding: 12px 40px 12px 15px;
+    background: #0a0a0a;
+    border: 1px solid #333;
+    color: var(--gold);
+    border-radius: 4px;
+}
+.search-icon { position: absolute; right: 15px; top: 50%; transform: translateY(-50%); color: var(--gold); }
+
+/* 버튼 스타일 */
+.nav-buttons { display: flex; gap: 10px; justify-content: space-between; }
+.nav-btn {
+    flex: 1; padding: 12px; cursor: pointer; font-weight: bold; border-radius: 4px; transition: all 0.3s;
+}
+.nav-btn.outline { background: transparent; border: 1px solid var(--gold); color: var(--gold); }
+.nav-btn.solid { background: linear-gradient(45deg, var(--gold-dim), var(--gold)); border: none; color: #000; }
+.nav-btn:hover { transform: translateY(-2px); box-shadow: 0 0 10px rgba(255, 215, 0, 0.3); }
+
+/* 아코디언 스타일 */
+.acc-level-1, .acc-level-2 { background: #0a0a0a; border-bottom: 1px solid #222; }
+.acc-header {
+    padding: 15px; cursor: pointer; display: flex; justify-content: space-between; align-items: center;
+}
+.acc-header:hover { background: #1a1a1a; }
+.acc-level-1 > .acc-header { color: var(--gold); font-weight: bold; font-size: 1.1rem; }
+.acc-level-2 > .acc-header { padding-left: 30px; font-size: 0.95rem; color: #ddd; }
+.acc-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+
+/* 애니메이션 아이템 (포스터 비율) */
+.anime-item {
+    display: flex; align-items: center; padding: 10px 10px 10px 45px;
+    background: #000; border-bottom: 1px solid #222; gap: 15px;
+}
+.anime-thumb-small {
+    width: 50px; height: 75px; object-fit: cover; /* 포스터 비율 유지 */
+    border-radius: 3px; border: 1px solid #333;
+}
+.anime-info { flex: 1; color: #eee; font-size: 0.9rem; }
+.episode-select { background: #111; color: #fff; border: 1px solid #444; padding: 5px; border-radius: 3px; }
+
+/* Preview Box */
+.preview-box {
+    background: #050505; border: 1px solid #333; flex: 1;
+    padding: 15px; border-radius: 5px; overflow-y: auto;
+}
+.preview-box h3 {
+    color: var(--gold); border-bottom: 1px solid #333; padding-bottom: 10px;
+    margin-bottom: 10px; text-align: center; font-size: 1rem;
+}
+.preview-item {
+    display: flex; justify-content: space-between; padding: 10px;
+    border-bottom: 1px solid #222; cursor: pointer; font-size: 0.9rem;
+}
+.preview-item:hover { background: #330000; color: #ff6b6b; }
+.preview-ep { color: var(--gold); font-weight: bold; }
+
+/* Step 2 Cards (포스터 비율) */
+#cards-container {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 20px; margin-top: 20px;
+}
+.anime-card {
+    background: #0a0a0a; border: 1px solid #333; border-radius: 6px;
+    padding: 10px; cursor: pointer; transition: all 0.3s;
+    display: flex; flex-direction: column; align-items: center;
+}
+.anime-card:hover { transform: translateY(-5px); border-color: var(--gold); }
+.anime-card.selected { border: 2px solid var(--gold); background: #111; box-shadow: 0 0 15px rgba(255, 215, 0, 0.2); }
+.card-thumb {
+    width: 100%; aspect-ratio: 2/3; /* 포스터 비율 */
+    object-fit: cover; border-radius: 4px; margin-bottom: 10px;
+}
+.card-title {
+    font-size: 0.9rem; margin-bottom: 5px; text-align: center; color: #fff;
+    display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.card-ep { color: var(--gold); font-weight: bold; }
+
+/* Modal */
+.modal {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.9); display: flex; justify-content: center; align-items: center; z-index: 1000;
+}
+.modal-content {
+    background: #000; border: 2px solid var(--gold); padding: 40px; text-align: center;
+    border-radius: 10px; width: 400px; position: relative;
+}
+.winner-display img {
+    width: 200px; aspect-ratio: 2/3; object-fit: cover;
+    border: 3px solid var(--gold); margin: 20px auto; display: block;
+}
+.winner-display h3 { color: #fff; margin-bottom: 5px; }
+.winner-display p { color: var(--gold); font-weight: bold; font-size: 1.2rem; }
+.close-modal { position: absolute; top: 15px; right: 20px; color: #fff; font-size: 24px; cursor: pointer; }
+.modal-actions { margin-top: 20px; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #000; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }

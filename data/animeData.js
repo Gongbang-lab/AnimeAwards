@@ -842,7 +842,7 @@ const AnimeByQuarter = {
   "thumbnail": "image/animeimg/Q1/아름다운 초저녁달.webp",
   "day": "Sundays",
   "episodes": 0,
-  "studio": "East Fish Studio",
+  "studio": "이스트 피쉬 스튜디오",
   "staff": {
     "director": [
       "마루야마 유스케"
@@ -882,7 +882,7 @@ const AnimeByQuarter = {
   "thumbnail": "image/animeimg/Q1/카야는 무섭지 않아.webp",
   "day": "Sundays",
   "episodes": 12,
-  "studio": "East Fish Studio",
+  "studio": "이스트 피쉬 스튜디오",
   "staff": {
     "director": [
       "히로시 이케하타"

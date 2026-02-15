@@ -1,9 +1,3 @@
-//'대상','최우수상','우수상','밈','오프닝', '엔딩', 'OST', 
-//'신인 성우상', '남자 성우상', '여자 성우상',
-//'남우 주연상(캐릭터)', '여우 주연상(캐릭터)', '베스트 커플상',
-//'각본상', '각색상', '감독상', '동화상', '작화상', 
-//'올해의 똥','다크호스 상', '베스트 에피소드상', '올해의 시네마상', '올해의 스튜디오 상'
-//'이카루스'
 const Awards = [
   { id: 1, name: '대상', thumb: '../image/trophy 1.png', theme :'default'},
   { id: 2, name: '최우수상', thumb: '../image/trophy 1.png', theme: 'default'},
@@ -20,12 +14,13 @@ const Awards = [
   { id: 13, name: '베스트 커플상', thumb: '../image/trophy 1.png', theme: 'best_couple'},
   { id: 14, name: '각본상', thumb: '../image/trophy 1.png', theme: 'original'},
   { id: 15, name: '각색상', thumb: '../image/trophy 1.png', theme: 'dramatization'},
+  { id: 26, name: '연출상', thumb: '../image/trophy 1.png', theme: 'directing'},
   { id: 16, name: '감독상', thumb: '../image/trophy 1.png', theme: 'director'},
   { id: 17, name: '동화상', thumb: '../image/trophy 1.png', theme: 'in_between'}, // 원화사이 더 부드럽게나 빨라보이게 만드는 역할
   { id: 18, name: '원화(작화)상', thumb: '../image/trophy 1.png', theme: 'key_animation'},
   { id: 20, name: '이카루스', thumb: '../image/trophy 1.png', theme: 'default'},
   { id: 21, name: '다크호스', thumb: '../image/trophy 1.png', theme: 'default'},
-  { id: 22, name: '베스트 에피소드', thumb: '../image/trophy 1.png', theme: 'best_episode'},
+  { id: 22, name: '베스트 에피소드상', thumb: '../image/trophy 1.png', theme: 'best_episode'},
   { id: 23, name: '올해의 시네마', thumb: '../image/trophy 1.png', theme: 'cinema'},
   { id: 24, name: '올해의 스튜디오', thumb: '../image/trophy 1.png', theme: 'studio'},
   { id: 25, name: '올해의 애니메이션', thumb: '../image/trophy 1.png', theme: 'top3'},

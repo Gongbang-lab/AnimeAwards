@@ -61,7 +61,7 @@ function renderGrid(data) {
         card.className = `studio-card ${isSelected ? 'selected' : ''}`;
         card.innerHTML = `
             <span class="info-icon">ⓘ</span>
-            <img src="${item.studio_img}" onerror="this.src='https://via.placeholder.com/150'">
+            <img src="../${item.studio_img}" onerror="this.src='https://via.placeholder.com/150'">
             <div class="name"><strong>${item.studio}</strong></div>
         `;
         
@@ -173,7 +173,7 @@ function showWinner(studio) {
 // 모달 표시 공통 함수
 function showModal(studio, isWinner) {
     const modal = document.getElementById('modal');
-    document.getElementById('modalStudioImg').src = studio.studio_img;
+    document.getElementById('modalStudioImg').src = `../${studio.studio_img}`;
     document.getElementById('modalStudioName').innerText = studio.studio + (isWinner ? " (WINNER)" : "");
     
     const animeGrid = document.getElementById('modalAnimeGrid');
