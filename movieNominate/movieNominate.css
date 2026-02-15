@@ -1,0 +1,284 @@
+:root {
+    --bg-color: #000000;
+    --text-white: #ffffff;
+    --gold-color: #D4AF37; /* 메인 골드 컬러 */
+    --gold-hover: #F9D668;
+    --card-bg: #111111;
+    --border-color: #333333;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Pretendard', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-white);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+/* --- 왼쪽 패널 (70%) --- */
+.left-panel {
+    flex: 7;
+    padding: 40px;
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+}
+
+/* 검색창 스타일 */
+.search-header {
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 10;
+}
+.search-wrapper { position: relative; max-width: 600px; }
+
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    background: transparent;
+    border: 2px solid var(--gold-color);
+    color: var(--gold-color);
+    font-size: 1.1rem;
+    outline: none;
+    border-radius: 4px;
+}
+input::placeholder { color: rgba(212, 175, 55, 0.5); }
+
+/* 연관 검색어 (자동완성) */
+.autocomplete-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #1a1a1a;
+    border: 1px solid var(--gold-color);
+    border-top: none;
+    list-style: none;
+    display: none;
+    max-height: 200px;
+    overflow-y: auto;
+}
+.autocomplete-list li {
+    padding: 10px 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #333;
+    color: #ccc;
+}
+.autocomplete-list li:hover {
+    background: #333;
+    color: var(--gold-color);
+}
+
+/* 카드 그리드 */
+.card-grid {
+    flex: 1;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px;
+    padding-right: 10px;
+}
+
+/* 스크롤바 커스텀 */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+::-webkit-scrollbar-track { background: #000; }
+
+/* --- 카드 UI --- */
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+.card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(212, 175, 55, 0.2); }
+
+/* 선택된 카드 스타일 */
+.card.selected {
+    border: 2px solid var(--gold-color);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+}
+.card.selected::before {
+    content: "✔";
+    position: absolute;
+    top: 10px; left: 10px;
+    background: var(--gold-color);
+    color: #000;
+    width: 25px; height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    font-weight: bold;
+    z-index: 5;
+}
+
+.card img {
+    width: 100%;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+}
+
+.card-info { padding: 15px; }
+.card-title { font-size: 1rem; font-weight: bold; margin-bottom: 5px; color: #fff; }
+.card-studio { font-size: 0.85rem; color: #888; }
+
+/* + 버튼 */
+.info-btn {
+    position: absolute;
+    top: 10px; right: 10px;
+    width: 28px; height: 28px;
+    background: rgba(0,0,0,0.6);
+    border: 1px solid var(--gold-color);
+    color: var(--gold-color);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem;
+    z-index: 5;
+    transition: 0.2s;
+}
+.info-btn:hover { background: var(--gold-color); color: #000; }
+
+/* --- 오른쪽 패널 (30%) --- */
+.right-panel {
+    flex: 3;
+    padding: 40px;
+    background: linear-gradient(135deg, #050505, #111);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* 오른쪽 정렬 */
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 250px;
+}
+
+.btn {
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+    text-align: center;
+}
+.btn-outline {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+.btn-outline:hover { background: #fff; color: #000; }
+
+.btn-gold {
+    background: var(--gold-color);
+    color: #000;
+}
+.btn-gold:hover { background: var(--gold-hover); transform: scale(1.02); }
+
+/* --- 팝업 (Modal) --- */
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    backdrop-filter: blur(5px);
+}
+.modal-overlay.active { display: flex; }
+
+.modal-content {
+    background: #111;
+    width: 800px;
+    height: 500px;
+    border: 2px solid var(--gold-color);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.2);
+}
+
+.modal-header-text {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.modal-body {
+    display: flex;
+    flex: 1;
+    padding: 30px;
+}
+
+/* 팝업 내부 분할 (1:1) */
+.modal-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #333;
+    padding-right: 20px;
+}
+.modal-left img {
+    width: 250px;
+    box-shadow: 0 5px 15px #000;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+}
+.modal-left h2 {
+    color: var(--gold-color);
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.modal-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+.info-row { margin-bottom: 20px; }
+.info-row .label {
+    display: block;
+    color: var(--gold-color);
+    font-size: 0.8rem;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+.info-row .value {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px; right: 20px;
+    font-size: 2rem;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.full-width { margin-top: auto; width: 100%; }

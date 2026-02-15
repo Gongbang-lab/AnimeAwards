@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>올해의 시네마 - 노미네이트</title>
+    <link rel="stylesheet" href="./movieNominate.css">
+    
+    <script src="../data/animeMovieData.js"></script> 
+</head>
+<body>
+
+    <div class="container">
+        <div class="left-panel">
+            <header class="search-header">
+                <div class="search-wrapper">
+                    <input type="text" id="searchInput" placeholder="작품 제목을 검색하세요...">
+                    <ul id="autocompleteList" class="autocomplete-list"></ul>
+                </div>
+            </header>
+
+            <div id="cardGrid" class="card-grid">
+                </div>
+        </div>
+
+        <div class="right-panel">
+            <div class="button-group">
+                <button class="btn btn-outline" onclick="goToMain()">메인으로</button>
+                <button class="btn btn-gold" onclick="openAwardPopup()">수상 결정</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="infoModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('infoModal')">&times;</button>
+            <div class="modal-body">
+                <div class="modal-left">
+                    <img id="infoThumb" src="" alt="thumbnail">
+                    <h2 id="infoTitle"></h2>
+                </div>
+                <div class="modal-right">
+                    <div class="info-row">
+                        <span class="label">Studio</span>
+                        <span class="value" id="infoStudio"></span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Director</span>
+                        <span class="value" id="infoDirector"></span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Screenplay</span>
+                        <span class="value" id="infoWriter"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="awardModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('awardModal')">&times;</button>
+            <div class="modal-header-text">이 작품으로 결정하시겠습니까?</div>
+            <div class="modal-body">
+                <div class="modal-left">
+                    <img id="awardThumb" src="" alt="thumbnail">
+                    <h2 id="awardTitle" class="gold-text"></h2>
+                </div>
+                <div class="modal-right">
+                    <div class="info-row">
+                        <span class="label">Studio</span>
+                        <span class="value" id="awardStudio"></span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Director</span>
+                        <span class="value" id="awardDirector"></span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Screenplay</span>
+                        <span class="value" id="awardWriter"></span>
+                    </div>
+                    <button class="btn btn-gold full-width" onclick="confirmAward()">확인 및 메인으로</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./movieNominate.js"></script>
+</body>
+</html>

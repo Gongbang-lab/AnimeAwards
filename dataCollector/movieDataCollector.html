@@ -2,74 +2,70 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>시네마 데이터 수집기 v5 (자동 저장)</title>
+    <title>시네마 데이터 수집기 (객체 모드)</title>
     <style>
-        body { font-family: 'Pretendard', sans-serif; padding: 40px; background-color: #f0f2f5; color: #333; }
-        .container { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        .section { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        h2 { margin-top: 0; font-size: 1.2rem; border-bottom: 2px solid #eee; padding-bottom: 10px; display: flex; justify-content: space-between; align-items: center; }
+        body { font-family: 'Pretendard', sans-serif; padding: 40px; background-color: #f8f9fa; color: #333; }
+        .container { max-width: 600px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        h2 { text-align: center; color: #222; margin-bottom: 25px; }
+        .input-group { margin-bottom: 18px; }
+        label { display: block; font-weight: 600; margin-bottom: 6px; font-size: 0.85rem; color: #666; }
+        input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; font-size: 1rem; }
+        input:focus { border-color: #007bff; outline: none; box-shadow: 0 0 0 3px rgba(0,123,255,0.1); }
         
-        .input-group { margin-bottom: 15px; }
-        label { display: block; font-weight: 600; margin-bottom: 5px; font-size: 0.8rem; color: #666; }
-        input { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; }
+        button { width: 100%; padding: 13px; border: none; border-radius: 8px; font-size: 1rem; font-weight: bold; cursor: pointer; transition: 0.2s; }
+        .search-btn { background: #333; color: white; margin-bottom: 10px; }
+        .search-btn:hover { background: #000; }
         
-        button { width: 100%; padding: 12px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; transition: 0.2s; margin-top: 5px; }
-        .search-btn { background: #333; color: white; }
-        .add-btn { background: #007bff; color: white; margin-top: 20px; }
-        .copy-btn { background: #28a745; color: white; margin-top: 10px; }
-        .clear-btn { background: #dc3545; color: white; margin-top: 10px; font-size: 0.8rem; padding: 8px; }
+        .result-area { margin-top: 30px; border-top: 2px solid #f0f0f0; padding-top: 25px; display: none; }
+        
+        .copy-btn { background: #007bff; color: white; margin-top: 20px; }
+        .copy-btn:hover { background: #0056b3; }
+        .copy-btn.success { background: #28a745; }
 
         #jsonPreview { 
-            background: #1e1e1e; color: #aeafad; padding: 15px; border-radius: 8px; 
-            font-family: 'Cascadia Code', monospace; font-size: 0.85rem; 
-            height: 450px; overflow-y: auto; white-space: pre-wrap; margin-top: 10px;
-            border: 1px solid #333;
+            background: #222; color: #64ffda; padding: 15px; border-radius: 8px; 
+            font-family: monospace; font-size: 0.9rem; overflow-x: auto; 
+            white-space: pre-wrap; margin-top: 10px; border: 1px solid #444;
         }
-        .count-badge { background: #007bff; color: white; padding: 2px 8px; border-radius: 10px; font-size: 0.8rem; }
-        .save-status { font-size: 0.7rem; color: #28a745; font-weight: normal; }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <div class="section">
-        <h2>🔍 검색 및 추가</h2>
-        <div class="input-group">
-            <input type="text" id="jpTitle" placeholder="일본어 제목 입력...">
-            <button class="search-btn" onclick="searchAnime()">데이터 불러오기</button>
-        </div>
-
-        <div id="editArea" style="display:none; margin-top:20px; border-top: 1px solid #eee; padding-top: 15px;">
-            <div class="input-group"><label>한글 제목</label><input type="text" id="editTitle"></div>
-            <div class="input-group"><label>제작사</label><input type="text" id="editStudio"></div>
-            <div class="input-group"><label>감독</label><input type="text" id="editDirector"></div>
-            <div class="input-group"><label>각본가</label><input type="text" id="editWriter"></div>
-            <button class="add-btn" onclick="addToList()">➕ 목록에 추가</button>
-        </div>
+    <h2>🎬 Cinema Data Object</h2>
+    <div class="input-group">
+        <label>일본어 제목 입력</label>
+        <input type="text" id="jpTitle" placeholder="예: 君の名は。">
+        <button class="search-btn" onclick="searchAnime()">데이터 불러오기</button>
     </div>
 
-    <div class="section">
-        <h2>
-            📋 결과 리스트 <span class="count-badge" id="listCount">0</span>
-            <span id="saveStatus" class="save-status">자동 저장됨</span>
-        </h2>
-        <div id="jsonPreview">[]</div>
-        <button class="copy-btn" id="copyBtn" onclick="copyList()">전체 JSON 복사</button>
-        <button class="clear-btn" onclick="clearList()">목록 전체 삭제</button>
+    <div id="resultArea" class="result-area">
+        <div class="input-group">
+            <label>한글 제목 (수정 시 썸네일 경로 반영)</label>
+            <input type="text" id="editTitle" oninput="updateUI()">
+        </div>
+        <div class="input-group">
+            <label>제작사</label>
+            <input type="text" id="editStudio" oninput="updateUI()">
+        </div>
+        <div class="input-group">
+            <label>감독</label>
+            <input type="text" id="editDirector" oninput="updateUI()">
+        </div>
+        <div class="input-group">
+            <label>각본가</label>
+            <input type="text" id="editWriter" oninput="updateUI()">
+        </div>
+
+        <label>JSON 객체 {} 미리보기</label>
+        <div id="jsonPreview">{}</div>
+
+        <button class="copy-btn" id="copyBtn" onclick="copyToClipboard()">JSON 객체 복사하기</button>
     </div>
 </div>
 
 <script>
-    let movieList = [];
-
-    // 페이지가 로드될 때 로컬 스토리지에서 데이터 불러오기
-    window.onload = function() {
-        const savedData = localStorage.getItem('myCinemaList');
-        if (savedData) {
-            movieList = JSON.parse(savedData);
-            updateUI();
-        }
-    };
+    let currentData = {};
 
     async function searchAnime() {
         const query = document.getElementById('jpTitle').value;
@@ -88,69 +84,48 @@
                 const writer = staffData.data.find(s => s.positions.some(p => p.includes('Script')))?.person.name || '';
                 const studios = anime.studios.map(s => s.name).join(', ');
 
+                // 폼 초기값 설정
                 document.getElementById('editTitle').value = anime.title;
                 document.getElementById('editStudio').value = studios;
                 document.getElementById('editDirector').value = director;
                 document.getElementById('editWriter').value = writer;
                 
-                document.getElementById('editArea').style.display = 'block';
+                document.getElementById('resultArea').style.display = 'block';
+                updateUI();
             } else {
                 alert('검색 결과가 없습니다.');
             }
         } catch (error) {
-            alert('데이터 로드 실패');
+            alert('API 호출 오류!');
         }
     }
 
-    function addToList() {
+    // 입력 필드가 바뀔 때마다 JSON 객체를 업데이트 (배열 제외)
+    function updateUI() {
         const title = document.getElementById('editTitle').value;
-        const newItem = {
+        currentData = {
             title: title,
             studio: document.getElementById('editStudio').value,
             director: document.getElementById('editDirector').value,
             writer: document.getElementById('editWriter').value,
-            thumbnail: `../image/moive/${title}.webp`
+            thumbnail: `../image/movie/${title}.webp`
         };
 
-        movieList.push(newItem);
-        saveData(); // 저장소에 저장
-        updateUI();
+        // 대괄호[] 없이 중괄호{}만 표시
+        document.getElementById('jsonPreview').innerText = JSON.stringify(currentData, null, 4);
         
-        document.getElementById('jpTitle').value = "";
-        document.getElementById('editArea').style.display = 'none';
-        document.getElementById('jpTitle').focus();
-    }
-
-    function saveData() {
-        localStorage.setItem('myCinemaList', JSON.stringify(movieList));
-        const status = document.getElementById('saveStatus');
-        status.innerText = "저장 완료!";
-        setTimeout(() => status.innerText = "자동 저장됨", 2000);
-    }
-
-    function updateUI() {
-        document.getElementById('jsonPreview').innerText = JSON.stringify(movieList, null, 4);
-        document.getElementById('listCount').innerText = movieList.length;
         const btn = document.getElementById('copyBtn');
-        btn.innerText = "전체 JSON 복사";
-        btn.style.background = "#28a745";
+        btn.innerText = "JSON 객체 복사하기";
+        btn.classList.remove('success');
     }
 
-    function copyList() {
-        if (movieList.length === 0) return alert('데이터가 없습니다.');
-        const jsonText = JSON.stringify(movieList, null, 4);
+    function copyToClipboard() {
+        const jsonText = JSON.stringify(currentData, null, 4);
         navigator.clipboard.writeText(jsonText).then(() => {
-            document.getElementById('copyBtn').innerText = "복사 완료! ✔";
-            document.getElementById('copyBtn').style.background = "#155724";
+            const btn = document.getElementById('copyBtn');
+            btn.innerText = "복사 완료! {}";
+            btn.classList.add('success');
         });
-    }
-
-    function clearList() {
-        if (confirm('모든 데이터를 삭제할까요? 이 작업은 되돌릴 수 없습니다.')) {
-            movieList = [];
-            localStorage.removeItem('myCinemaList');
-            updateUI();
-        }
     }
 </script>
 
