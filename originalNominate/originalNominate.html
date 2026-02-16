@@ -34,9 +34,22 @@
 
 <div id="winner-modal" class="modal hidden">
     <div class="modal-content">
-        <h2>🏆 각본상 최종 수상 🏆</h2>
-        <div id="winner-info" class="winner-info"></div>
-        <button class="btn-gold" style="margin-top:20px;" onclick="goToMain()">확인 및 메인으로</button>
+        <h2 class="modal-category">각본상</h2>
+        
+        <div class="modal-body">
+            <div class="modal-left">
+                <img id="modal-img" src="" alt="Winner Thumbnail">
+            </div>
+            
+            <div class="modal-right">
+                <div class="info-group">
+                    <h3 id="modal-title">애니메이션 제목</h3>
+                    <p><strong>Studio:</strong> <span id="modal-studio">스튜디오</span></p>
+                    <p><strong>Scriptwriter:</strong> <span id="modal-writer">각본가</span></p>
+                </div>
+                <button class="btn-gold" onclick="goToMain()">확인 및 메인으로</button>
+            </div>
+        </div>
     </div>
 </div>
 

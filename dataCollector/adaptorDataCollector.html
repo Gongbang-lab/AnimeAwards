@@ -23,7 +23,7 @@
         function extractAdaptorData() {
             const nominatedList = [];
 
-            // AnimeByQuarter 객체의 모든 분기(Q1, Q2...)를 순회
+            // AnimeByQuarter 객체의 모든 분기(Q1, Q2 등)를 순회
             if (typeof AnimeByQuarter !== 'undefined') {
                 for (const quarter in AnimeByQuarter) {
                     AnimeByQuarter[quarter].forEach(anime => {
@@ -32,7 +32,9 @@
                             nominatedList.push({
                                 id: anime.id,
                                 title: anime.title,
-                                thumbnail: `../${anime.thumbnail}`, // 경로 수정 포함
+                                quarter: quarter,      // 분기 정보 추가 (Q1, Q2 등)
+                                day: anime.day || "",  // 요일 정보 추가 (Mondays 등)
+                                thumbnail: `../${anime.thumbnail}`, 
                                 studio: anime.studio,
                                 adaptor: anime.staff.adaptor
                             });

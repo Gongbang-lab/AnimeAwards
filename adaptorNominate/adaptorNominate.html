@@ -8,37 +8,75 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
-    <div class="container">
-        <main class="content-area">
-            <h1 id="step-title">각색상 후보 선정 (Step 1)</h1>
-            <div id="anime-grid" class="grid-view"></div>
-        </main>
 
-        <aside class="sidebar">
-            <div class="sticky-nav">
-                <button id="nav-home" onclick="location.href='../main/main.html'">메인으로</button>
-                
-                <div class="preview-container" id="preview-section">
-                    <h3>선택 목록 (<span id="count">0</span>)</h3>
-                    <div id="preview-box" class="preview-box">
-                        </div>
-                </div>
-
-                <div class="action-buttons">
-                    <button id="next-btn" class="gold-btn">다음 단계로</button>
-                    <button id="decide-btn" class="gold-btn hidden">최종 결정</button>
-                </div>
+    <nav class="top-nav">
+        <div class="nav-content-area">
+            <span class="brand">각본상</span>
+            <span id="step-title">각색상 후보 선정</span>
+        </div>
+        <div class="nav-sidebar-area">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="애니메이션 제목 검색..." autocomplete="off">
+                <div id="autocomplete-list" class="autocomplete-items"></div>
             </div>
-        </aside>
-    </div>
+        </div>
+    </nav>
+
+    <main class="content-wrapper">
+        <div class="container">
+            <section class="content-area">
+                <div id="anime-grid"></div>
+            </section>
+
+            <aside class="sidebar">
+                <div class="fixed-sidebar-content">
+                    <div id="preview-section" class="preview-container">
+                        <div id="preview-box" class="preview-box"></div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button id="nav-home" class="btn-outline">메인으로</button>
+                        <button id="next-btn" class="gold-btn">다음 단계</button>
+                        <button id="decide-btn" class="gold-btn hidden">수상 결정</button>
+                    </div>
+
+                </div>
+            </aside>
+        </div>
+    </main>
 
     <div id="winner-modal" class="modal hidden">
-        <div class="modal-content">
-            <h2>🏆 BEST ADAPTATION 🏆</h2>
-            <div id="winner-info"></div>
-            <button onclick="location.href='../main/main.html'" class="gold-btn">확인 및 메인으로</button>
+    <div class="modal-content">
+        <h2 class="modal-header">각본상</h2>
+        <hr class="modal-divider">
+
+        <div class="winner-layout">
+            <div class="winner-left">
+                <img id="modal-img" src="" alt="수상작 이미지">
+            </div>
+
+            <div class="winner-right">
+                <div id="winner-info-text">
+                    <h3 id="modal-title">애니메이션 제목</h3>
+                    
+                    <div class="info-row">
+                        <span class="info-label">Studio:</span>
+                        <span id="modal-studio" class="info-value">스튜디오 이름</span>
+                    </div>
+                    
+                    <div class="info-row">
+                        <span class="info-label">Scriptwriter:</span>
+                        <span id="modal-adaptor" class="info-value">각본가 이름</span>
+                    </div>
+                </div>
+
+                <button class="gold-btn full-width" onclick="location.href='../main/main.html'">
+                    확인 및 메인으로
+                </button>
+            </div>
         </div>
     </div>
+</div>
 
     <script src="../data/adaptorData.js"></script>
     <script src="./adaptorNominate.js"></script>

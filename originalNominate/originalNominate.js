@@ -106,13 +106,18 @@ function confirmFinalWinner() {
     }
 
     const winner = selectedItems[0];
-    const winnerInfo = document.getElementById('winner-info');
-    winnerInfo.innerHTML = `
-        <img src="${winner.thumbnail}">
-        <h3>${winner.title}</h3>
-        <p><strong>Studio:</strong> ${winner.studio}</p>
-        <p><strong>Scriptwriter:</strong> ${winner.scriptwriter.join(', ')}</p>
-    `;
+    let result = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
+    result["각본상"] = {
+        title: winner.title,
+        thumbnail: winner.thumbnail,
+        scriptwriter: winner.scriptwriter // 데이터의 필드명(scriptwriter)에 맞춰 저장
+    };
+    localStorage.setItem("anime_awards_result", JSON.stringify(result));
+
+    document.getElementById('modal-img').src = winner.thumbnail;
+    document.getElementById('modal-title').textContent = winner.title;
+    document.getElementById('modal-studio').textContent = winner.studio;
+    document.getElementById('modal-writer').textContent = winner.scriptwriter.join(', ');
 
     document.getElementById('winner-modal').classList.remove('hidden');
 
