@@ -233,14 +233,42 @@ function openAwardPopup() {
     localStorage.setItem("anime_awards_result", JSON.stringify(results));
 }
 
+// 기존 fireConfetti 함수를 아래 내용으로 교체하세요.
 function fireConfetti() {
+    const canvas = document.getElementById('confettiCanvas');
+    if (!canvas) return;
+
+    // 전용 캔버스를 사용하는 폭죽 인스턴스 생성
+    const myConfetti = confetti.create(canvas, {
+        resize: true,
+        useWorker: true
+    });
+
     const duration = 3000;
     const animationEnd = Date.now() + duration;
+
     (function frame() {
         const timeLeft = animationEnd - Date.now();
         if (timeLeft <= 0) return;
-        confetti({ particleCount: 3, angle: 60, spread: 55, origin: { x: 0, y: 0.8 }, colors: ['#d4af37', '#ffffff'] });
-        confetti({ particleCount: 3, angle: 120, spread: 55, origin: { x: 1, y: 0.8 }, colors: ['#d4af37', '#ffffff'] });
+
+        // 왼쪽 아래에서 쏘아 올림
+        myConfetti({
+            particleCount: 3,
+            angle: 60,
+            spread: 55,
+            origin: { x: 0, y: 0.8 },
+            colors: ['#d4af37', '#ffffff', '#aa8a2e']
+        });
+
+        // 오른쪽 아래에서 쏘아 올림
+        myConfetti({
+            particleCount: 3,
+            angle: 120,
+            spread: 55,
+            origin: { x: 1, y: 0.8 },
+            colors: ['#d4af37', '#ffffff', '#aa8a2e']
+        });
+
         requestAnimationFrame(frame);
     }());
 }

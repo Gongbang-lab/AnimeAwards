@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Character Data Converter</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; background: #f0f2f5; }
+        .container { max-width: 900px; margin: 0 auto; background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h2 { color: #333; border-bottom: 2px solid #4a90e2; padding-bottom: 10px; }
+        textarea { width: 100%; height: 300px; margin-top: 10px; padding: 15px; border: 1px solid #ccc; border-radius: 5px; font-family: monospace; box-sizing: border-box; }
+        .btn-group { margin: 20px 0; text-align: center; }
+        button { background: #4a90e2; color: white; border: none; padding: 12px 30px; border-radius: 5px; cursor: pointer; font-size: 16px; font-weight: bold; }
+        button:hover { background: #357abd; }
+        .label { font-weight: bold; display: block; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>캐릭터 데이터 구조 일괄 수정 도구</h2>
+    
+    <label class="label">1. 원본 JS 코드를 붙여넣으세요 (const CharacterData = { ... };)</label>
+    <textarea id="inputArea" placeholder="여기에 원본 코드를 복사해서 붙여넣으세요..."></textarea>
+
+    <div class="btn-group">
+        <button onclick="convertData()">데이터 변환 및 정리하기 ✨</button>
+    </div>
+
+    <label class="label">2. 수정된 결과물 (자동 복사 준비)</label>
+    <textarea id="outputArea" readonly placeholder="결과가 여기에 나타납니다..."></textarea>
+</div>
+
+<script>
+function convertData() {
+    const input = document.getElementById('inputArea').value;
+    const output = document.getElementById('outputArea');
+
+    try {
+        // 1. 텍스트에서 실제 객체 데이터 부분만 추출
+        // 변수 선언문(const ... =)과 마지막 세미콜론(;)을 제거하여 순수 JSON/객체 형태만 남김
+        const jsonString = input.replace(/const\s+\w+\s*=\s*/, '').replace(/;\s*$/, '');
+        
+        // 2. 객체로 변환 (Eval 대용으로 Function 사용 - 유연한 파싱을 위함)
+        const rawData = new Function('return ' + jsonString)();
+
+        // 3. 데이터 가공 로직
+        let finalArray = [];
+
+        // Q1, Q2 등 어떤 키값이 와도 배열을 추출하도록 처리
+        for (let key in rawData) {
+            if (Array.isArray(rawData[key])) {
+                const processed = rawData[key].map(item => {
+                    // 새 객체 생성 (순서 보장 및 필드 제어)
+                    const newItem = { id: item.id };
+                    
+                    // "quarter": "1분기" 추가
+                    newItem.quarter = "1분기";
+                    
+                    // "characters" 복사 (title은 제외됨)
+                    newItem.characters = item.characters;
+                    
+                    return newItem;
+                });
+                finalArray = finalArray.concat(processed);
+            }
+        }
+
+        // 4. 다시 JS 변수 형태로 문자열화
+        const resultString = "const CharacterData = " + JSON.stringify(finalArray, null, 2) + ";";
+        
+        output.value = resultString;
+        alert("변환이 완료되었습니다!");
+
+    } catch (e) {
+        alert("에러가 발생했습니다. 코드 형식을 확인해 주세요.\n에러 내용: " + e.message);
+    }
+}
+</script>
+
+</body>
+</html>

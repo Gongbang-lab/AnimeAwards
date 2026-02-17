@@ -84,7 +84,7 @@ function getAllAnimeList() {
 
 // 검색어 입력 시 호출
 function handleSearchInput() {
-    const query = searchInput.value.trim().toLowerCase(); // 소문자로 변환
+    const query = searchInput.value.trim().toLowerCase();
     suggestionList.innerHTML = '';
 
     if (query.length === 0) {
@@ -92,9 +92,8 @@ function handleSearchInput() {
         return;
     }
 
-    const allAnime = getAllAnimeList();
-    // 대소문자 구분 없이 필터링
-    const matches = allAnime.filter(anime => 
+    // AnimeList에서 제목 포함 여부 확인
+    const matches = AnimeList.filter(anime => 
         anime.title.toLowerCase().includes(query)
     );
 
@@ -106,7 +105,8 @@ function handleSearchInput() {
             li.onclick = () => {
                 searchInput.value = anime.title;
                 closeSuggestions();
-                performSearch(anime.title); // 선택 시 바로 검색 실행
+                // 클릭 시 해당 애니메이션의 id로 바로 팝업 오픈
+                openCharacterPopup(anime.id, anime.title);
             };
             suggestionList.appendChild(li);
         });
@@ -121,20 +121,13 @@ function closeSuggestions() {
 }
 
 function performSearch(queryText) {
-    const query = queryText.trim().toLowerCase(); // 대소문자 무시
+    const query = queryText.trim().toLowerCase();
     if (!query) return;
 
-    let foundAnimeId = null;
-    let foundAnimeTitle = "";
-
-    const allAnime = getAllAnimeList();
-    // 정확도 높이기 위해 검색어 포함 여부 확인
-    const anime = allAnime.find(a => a.title.toLowerCase().includes(query));
+    const anime = AnimeList.find(a => a.title.toLowerCase().includes(query));
 
     if (anime) {
-        foundAnimeId = anime.id;
-        foundAnimeTitle = anime.title;
-        openCharacterPopup(foundAnimeId, foundAnimeTitle);
+        openCharacterPopup(anime.id, anime.title);
     } else {
         alert("검색 결과가 없습니다.");
     }
@@ -143,29 +136,27 @@ function performSearch(queryText) {
 // --- 2. 캐릭터 팝업 로직 ---
 
 function openCharacterPopup(animeId, animeTitle) {
-    let targetCharacters = [];
+    // 1. CharacterData 배열에서 AnimeList의 id와 일치하는 객체를 찾습니다.
+    // id가 숫자이므로 일치 연산자(===)가 정확히 작동합니다.
+    const animeEntry = CharacterData.find(entry => entry.id === animeId);
 
-    // CharacterData 탐색
-    if (typeof CharacterData !== 'undefined') {
-        for (const quarter in CharacterData) {
-            if (!Array.isArray(CharacterData[quarter])) continue;
-            const charEntry = CharacterData[quarter].find(entry => entry && entry.id === animeId);
-            if (charEntry) {
-                targetCharacters = charEntry.characters;
-                break;
-            }
-        }
-    }
-
-    if (!targetCharacters || targetCharacters.length === 0) {
-        alert("캐릭터 데이터가 없습니다.");
+    if (!animeEntry || !animeEntry.characters || animeEntry.characters.length === 0) {
+        console.warn(`캐릭터 데이터를 찾을 수 없음: ID ${animeId}`);
+        alert("해당 애니메이션의 캐릭터 정보가 등록되지 않았습니다.");
         return;
     }
 
+    const targetCharacters = animeEntry.characters;
+
+    // 2. 모달 인터페이스 업데이트
     modalAnimeTitle.textContent = animeTitle;
     currentPopupCharacters = targetCharacters;
     resetPopupSelection();
+    
+    // 3. 캐릭터 카드 렌더링
     renderCharacterCards(targetCharacters);
+    
+    // 4. 모달 표시
     charModal.classList.remove('hidden');
 }
 
@@ -248,31 +239,29 @@ function renderNominees() {
         card.className = 'couple-card';
         if (index === selectedCoupleIndex) card.classList.add('selected');
 
+        // 이전 요청에서 수정된 4:3 비율 및 하단 정보 레이아웃 적용
         card.innerHTML = `
             <div class="couple-imgs">
                 <div class="couple-img-wrap">
-                    <img src="${couple.char1.img}">
-                    <span>${couple.char1.name}</span>
+                    <img src="${couple.char1.img}" alt="${couple.char1.name}">
                 </div>
-                <div style="font-weight:bold; color:var(--primary-color);">♥</div>
                 <div class="couple-img-wrap">
-                    <img src="${couple.char2.img}">
-                    <span>${couple.char2.name}</span>
+                    <img src="${couple.char2.img}" alt="${couple.char2.name}">
                 </div>
             </div>
             <div class="couple-info">
                 <div class="couple-names">${couple.char1.name} ♥ ${couple.char2.name}</div>
+                <div class="anime-title">${couple.animeTitle}</div>
             </div>
-            <div style="margin-top:10px; text-align:center; font-size:0.9rem; color:#888;">${couple.animeTitle}</div>
         `;
 
         card.addEventListener('click', () => {
+            const prev = document.querySelector('.couple-card.selected');
+            if (prev) prev.classList.remove('selected');
+            
             if (selectedCoupleIndex === index) {
                 selectedCoupleIndex = null;
-                card.classList.remove('selected');
             } else {
-                const prev = document.querySelector('.couple-card.selected');
-                if (prev) prev.classList.remove('selected');
                 selectedCoupleIndex = index;
                 card.classList.add('selected');
             }
@@ -280,7 +269,6 @@ function renderNominees() {
         nomineeList.appendChild(card);
     });
 }
-
 // --- 3. 수상 및 폭죽 로직 ---
 
 function showAwardModal() {
@@ -307,48 +295,42 @@ function showAwardModal() {
 
 async function saveAndGoMain() {
     if (selectedCoupleIndex === null) {
-        alert("저장할 데이터가 없습니다.");
+        alert("수상할 커플을 선택해주세요!");
         return;
     }
 
-    // 로딩 표시 (이미지 처리 시간이 조금 걸릴 수 있음)
     const confirmBtn = document.getElementById('finalConfirmBtn');
-    const originalText = confirmBtn.innerText;
     confirmBtn.innerText = "이미지 처리 중...";
     confirmBtn.disabled = true;
 
     try {
         const winner = nominees[selectedCoupleIndex];
-        const imgPath1 = winner.char1.img;
-        const imgPath2 = winner.char2.img;
-
+        
+        // [핵심] 기존 로컬스토리지 데이터 불러오기 (없으면 빈 객체)
         const existingDataRaw = localStorage.getItem("anime_awards_result");
         let finalData = existingDataRaw ? JSON.parse(existingDataRaw) : {};
 
-        // 1. 두 이미지를 합쳐서 Base64 문자열로 변환 (260x378 크기)
-        const combinedImageBase64 = await createCombinedImage(imgPath1, imgPath2);
+        // 이미지 병합 (260x378)
+        const combinedImageBase64 = await createCombinedImage(winner.char1.img, winner.char2.img);
 
-        // 2. 저장할 데이터 구조 생성
-        finalData.bestcouple = {
-            "베스트 커플상": {
-                name1: winner.char1.name,
-                name2: winner.char2.name,
-                animeTitle: winner.animeTitle, // 필요시 사용
-                img: combinedImageBase64 // 합쳐진 이미지 데이터
-            }
+        // [구조 수정] 메인 페이지 로직과 일치하도록 키값 설정
+        // 기존 데이터를 덮어쓰지 않고 bestcouple 필드만 업데이트
+        finalData["베스트 커플상"] = {
+            name1: winner.char1.name,
+            name2: winner.char2.name,
+            animeTitle: winner.animeTitle,
+            img: combinedImageBase64
         };
 
-        // 3. 로컬 스토리지 저장
-        // 주의: Base64 이미지는 용량이 큽니다. 너무 많이 저장하면 용량 제한에 걸릴 수 있습니다.
+        // 전체 데이터 저장
         localStorage.setItem("anime_awards_result", JSON.stringify(finalData));
 
-        // 4. 메인으로 이동
         window.location.href = '../main/main.html';
 
     } catch (error) {
-        console.error("이미지 병합 실패:", error);
-        alert("이미지 처리 중 오류가 발생했습니다.");
-        confirmBtn.innerText = originalText;
+        console.error("저장 실패:", error);
+        alert("데이터 저장 중 오류가 발생했습니다.");
+        confirmBtn.innerText = "확인 및 메인으로";
         confirmBtn.disabled = false;
     }
 }

@@ -127,3 +127,13 @@ body {
 .info-row { display: flex; justify-content: space-between; border-bottom: 1px solid #333; padding: 12px 0; font-size: 1.1rem; }
 .info-label { color: var(--gold); font-weight: bold; }
 .info-value { color: #eee; text-align: right; }
+
+#confettiCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* 중요: 폭죽 아래의 버튼 클릭이 가능하게 함 */
+    z-index: 9999;        /* 모달(2000)보다 훨씬 높은 값으로 설정 */
+}
