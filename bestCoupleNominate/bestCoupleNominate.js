@@ -53,18 +53,27 @@ window.onload = function() {
     });
 
     // 팝업 닫기
+    if (closeCharModal) {
+        closeCharModal.onclick = () => {
+            charModal.classList.add('hidden');
+            resetPopupSelection();
+        };
+    }
     closeCharModal.onclick = () => {
         charModal.classList.add('hidden');
         resetPopupSelection();
     };
-    closeInfoModal.onclick = () => infoModal.classList.add('hidden');
-    infoBtn.onclick = () => infoModal.classList.remove('hidden');
+    const closeInfoModal = document.getElementById('closeInfoModal');
+    const infoBtn = document.getElementById("info-btn");
+    const infoModal = document.getElementById('infoModal');
 
+    if (closeInfoModal) closeInfoModal.onclick = () => infoModal.classList.add('hidden');
+    if (infoBtn) infoBtn.onclick = () => infoModal.classList.remove('hidden');
     // 기능 버튼
     addCoupleBtn.onclick = registerCouple;
     goMainBtn.onclick = () => { window.location.href = '../main/main.html'; };
-    confirmAwardBtn.onclick = showAwardModal; // 수상 팝업 띄우기
-    finalConfirmBtn.onclick = saveAndGoMain;  // 최종 확인 및 이동
+    confirmAwardBtn.onclick = showAwardModal;
+    finalConfirmBtn.onclick = saveAndGoMain;
 };
 
 // --- 1. 검색 및 연관 검색어 로직 ---
@@ -226,6 +235,9 @@ function registerCouple() {
 
     nominees.push(newCouple);
     charModal.classList.add('hidden');
+
+    const mainArea = document.getElementById('mainArea');
+    mainArea.classList.add('has-candidates');
     renderNominees();
     
     mainArea.classList.add('has-candidates');
@@ -234,50 +246,42 @@ function registerCouple() {
 
 function renderNominees() {
     nomineeList.innerHTML = '';
+    const confirmBtn = document.getElementById('confirmAwardBtn');
+    
     nominees.forEach((couple, index) => {
         const card = document.createElement('div');
-        card.className = 'couple-card';
-        if (index === selectedCoupleIndex) card.classList.add('selected');
-
-        // 이전 요청에서 수정된 4:3 비율 및 하단 정보 레이아웃 적용
+        card.className = `couple-card ${index === selectedCoupleIndex ? 'selected' : ''}`;
         card.innerHTML = `
             <div class="couple-imgs">
-                <div class="couple-img-wrap">
-                    <img src="${couple.char1.img}" alt="${couple.char1.name}">
-                </div>
-                <div class="couple-img-wrap">
-                    <img src="${couple.char2.img}" alt="${couple.char2.name}">
-                </div>
+                <div class="couple-img-wrap"><img src="${couple.char1.img}"></div>
+                <div class="couple-img-wrap"><img src="${couple.char2.img}"></div>
             </div>
             <div class="couple-info">
                 <div class="couple-names">${couple.char1.name} ♥ ${couple.char2.name}</div>
                 <div class="anime-title">${couple.animeTitle}</div>
             </div>
         `;
-
-        card.addEventListener('click', () => {
-            const prev = document.querySelector('.couple-card.selected');
-            if (prev) prev.classList.remove('selected');
-            
-            if (selectedCoupleIndex === index) {
-                selectedCoupleIndex = null;
-            } else {
-                selectedCoupleIndex = index;
-                card.classList.add('selected');
-            }
-        });
+        card.onclick = () => {
+            selectedCoupleIndex = (selectedCoupleIndex === index) ? null : index;
+            confirmBtn.disabled = (selectedCoupleIndex === null);
+            renderNominees();
+        };
         nomineeList.appendChild(card);
     });
 }
 // --- 3. 수상 및 폭죽 로직 ---
 
 function showAwardModal() {
-    if (selectedCoupleIndex === null) {
-        alert("수상할 커플을 선택해주세요!");
-        return;
-    }
-
+    if (selectedCoupleIndex === null) return;
     const winner = nominees[selectedCoupleIndex];
+    
+    document.getElementById("awardAnimeTitle").textContent = winner.animeTitle;
+    document.getElementById("awardImg1").src = winner.char1.img;
+    document.getElementById("awardName1").textContent = winner.char1.name;
+    document.getElementById("awardImg2").src = winner.char2.img;
+    document.getElementById("awardName2").textContent = winner.char2.name;
+
+    document.getElementById('awardModal').classList.remove('hidden');
     
     // 모달 내용 채우기
     awardAnimeTitle.textContent = winner.animeTitle;
@@ -290,7 +294,7 @@ function showAwardModal() {
     awardModal.classList.remove('hidden');
 
     // 폭죽 시작
-    startConfetti();
+    fireConfetti();
 }
 
 async function saveAndGoMain() {
@@ -425,46 +429,35 @@ function drawImageCenterCover(ctx, img, x, y, w, h) {
 }
 
 // --- 폭죽 효과 (Canvas) ---
-function startConfetti() {
-    const ctx = confettiCanvas.getContext('2d');
-    confettiCanvas.width = window.innerWidth;
-    confettiCanvas.height = window.innerHeight;
-    
-    const pieces = [];
-    const colors = ['#d4af37', '#ffd700', '#ffffff', '#b5952f']; // Gold Theme Colors
+function fireConfetti() {
+    // 특정 canvas를 지정하지 않고 호출하면 브라우저 전체 화면을 사용합니다.
+    // 기존에 id="confettiCanvas"와 연결된 로직이 있다면 삭제하거나 아래 코드로 대체하세요.
 
-    for (let i = 0; i < 200; i++) {
-        pieces.push({
-            x: Math.random() * confettiCanvas.width,
-            y: Math.random() * confettiCanvas.height - confettiCanvas.height,
-            w: Math.random() * 10 + 5,
-            h: Math.random() * 10 + 5,
-            color: colors[Math.floor(Math.random() * colors.length)],
-            speed: Math.random() * 3 + 2,
-            angle: Math.random() * 360
+    const duration = 3 * 1000;
+    const end = Date.now() + duration;
+
+    (function frame() {
+        // 왼쪽에서 발사
+        confetti({
+            particleCount: 3,
+            angle: 60,
+            spread: 55,
+            origin: { x: 0, y: 0.6 },
+            zIndex: 9999,
+            colors: ['#d4af37', '#ffffff']
         });
-    }
-
-    function draw() {
-        ctx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
-        
-        pieces.forEach(p => {
-            ctx.fillStyle = p.color;
-            ctx.save();
-            ctx.translate(p.x, p.y);
-            ctx.rotate(p.angle * Math.PI / 180);
-            ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
-            ctx.restore();
-
-            p.y += p.speed;
-            p.angle += 2;
-
-            if (p.y > confettiCanvas.height) {
-                p.y = -10;
-                p.x = Math.random() * confettiCanvas.width;
-            }
+        // 오른쪽에서 발사
+        confetti({
+            particleCount: 3,
+            angle: 120,
+            spread: 55,
+            origin: { x: 1, y: 0.6 }, 
+            zIndex: 9999,
+            colors: ['#d4af37', '#ffffff']
         });
-        requestAnimationFrame(draw);
-    }
-    draw();
+
+        if (Date.now() < end) {
+            requestAnimationFrame(frame);
+        }
+    }());
 }
