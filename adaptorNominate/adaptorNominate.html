@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>각색상 노미네이트</title>
+    <title>각색상 후보 선정</title>
     <link rel="stylesheet" href="./adaptorNominate.css">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
@@ -11,12 +11,12 @@
 
     <nav class="top-nav">
         <div class="nav-content-area">
-            <span class="brand">각본상</span>
-            <span id="step-title">각색상 후보 선정</span>
+            <span class="brand">AWARDS</span>
+            <span id="step-title">각색상 후보 선정 (Step 1)</span>
         </div>
         <div class="nav-sidebar-area">
             <div class="search-container">
-                <input type="text" id="search-input" placeholder="애니메이션 제목 검색..." autocomplete="off">
+                <input type="text" id="search-input" placeholder="작품 검색..." autocomplete="off">
                 <div id="autocomplete-list" class="autocomplete-items"></div>
             </div>
         </div>
@@ -24,9 +24,8 @@
 
     <main class="content-wrapper">
         <div class="container">
-            <section class="content-area">
-                <div id="anime-grid"></div>
-            </section>
+            <section class="content-area" id="left-area">
+                </section>
 
             <aside class="sidebar">
                 <div class="fixed-sidebar-content">
@@ -35,48 +34,55 @@
                     </div>
 
                     <div class="action-buttons">
-                        <button id="nav-home" class="btn-outline">메인으로</button>
-                        <button id="next-btn" class="gold-btn">다음 단계</button>
-                        <button id="decide-btn" class="gold-btn hidden">수상 결정</button>
+                        <button id="nav-home-btn" class="btn-outline">메인으로</button>
+                        <button id="step1-next-btn" class="gold-btn" disabled>다음 단계</button>
+                        
+                        <button id="step2-back-btn" class="btn-outline hidden">뒤로가기</button>
+                        <button id="step2-award-btn" class="gold-btn hidden" disabled>수상 결정</button>
                     </div>
-
                 </div>
             </aside>
         </div>
     </main>
 
     <div id="winner-modal" class="modal hidden">
-    <div class="modal-content">
-        <h2 class="modal-header">각본상</h2>
-        <hr class="modal-divider">
+        <div class="modal-content">
+            <h2 class="modal-header">🏆 BEST SCREENPLAY</h2>
+            <hr class="modal-divider">
 
-        <div class="winner-layout">
-            <div class="winner-left">
-                <img id="modal-img" src="" alt="수상작 이미지">
-            </div>
-
-            <div class="winner-right">
-                <div id="winner-info-text">
-                    <h3 id="modal-title">애니메이션 제목</h3>
-                    
-                    <div class="info-row">
-                        <span class="info-label">Studio:</span>
-                        <span id="modal-studio" class="info-value">스튜디오 이름</span>
-                    </div>
-                    
-                    <div class="info-row">
-                        <span class="info-label">Scriptwriter:</span>
-                        <span id="modal-adaptor" class="info-value">각본가 이름</span>
-                    </div>
+            <div class="winner-layout">
+                <div class="winner-left">
+                    <img id="modal-img" src="" alt="수상작 이미지" onerror="this.src='https://placehold.co/400x600/2f3542/ffffff?text=No+Image'"/>
                 </div>
-
-                <button class="gold-btn full-width" onclick="location.href='../main/main.html'">
-                    확인 및 메인으로
-                </button>
+                <div class="winner-right">
+                    <div id="winner-info-text">
+                        <h3 id="modal-title">작품 제목</h3>
+                        
+                        <div class="info-row">
+                            <span class="info-label">Quarter:</span>
+                            <span id="modal-quarter" class="info-value">-</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Script:</span>
+                            <span id="modal-adaptor" class="info-value">-</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Studio:</span>
+                            <span id="modal-studio" class="info-value">-</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Award:</span>
+                            <span id="modal-award-name" class="info-value">각색상</span>
+                        </div>
+                    </div>
+                    
+                    <button class="gold-btn full-width" id="go-main-btn">
+                        확인 및 메인으로
+                    </button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
     <script src="../data/adaptorData.js"></script>
     <script src="./adaptorNominate.js"></script>

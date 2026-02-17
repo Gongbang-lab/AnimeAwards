@@ -1,446 +1,377 @@
-//상태 관리
+// ──────────────────────────────────────────────────────────
+// 1. 초기 설정 및 데이터 가공
+// ──────────────────────────────────────────────────────────
 const nominateState = {
-  step: 1,
-  theme: null,
-  selectedItems: [],
-  selectedWinner: null
+    step: 1,
+    selectedItems: [],
+    selectedWinner: null,
+    awardName: "Award"
 };
-// 요일 데이터 매칭
+
+// URL 파라미터 처리
+const params = new URLSearchParams(location.search);
+nominateState.awardName = params.get("awardName") || "노미네이트";
+const brandTitle = document.querySelector('.brand');
+if(brandTitle) brandTitle.textContent = nominateState.awardName;
+const modalAwardName = document.getElementById('modal-award-name');
+if(modalAwardName) modalAwardName.textContent = nominateState.awardName;
+
+// 요일 매핑 (데이터의 day는 영어 그대로 유지됨)
 const DAY_LABELS = {
-  "Mondays": "월요일",
-  "Tuesdays": "화요일",
-  "Wednesdays": "수요일",
-  "Thursdays": "목요일",
-  "Fridays": "금요일",
-  "Saturdays": "토요일",
-  "Sundays": "일요일",
-  "Anomaly": "변칙편성",
-  "Web": "웹"
+    "Mondays": "월요일", "Tuesdays": "화요일", "Wednesdays": "수요일", "Thursdays": "목요일",
+    "Fridays": "금요일", "Saturdays": "토요일", "Sundays": "일요일",
+    "Anomaly": "변칙 편성", "Web": "웹", "Unknown": "기타"
 };
-// 데이터의 요일 키
-const DAY_KEYS = ["Mondays", "Tuesdays", "Wednesdays", "Thursdays", "Fridays", "Saturdays", "Sundays"];
+const DAY_KEYS = ["Mondays", "Tuesdays", "Wednesdays", "Thursdays", "Fridays", "Saturdays", "Sundays", "Anomaly", "Web", "Unknown"];
 
-// Q1 -> 1분기 변환 함수
-const QUARTER_MAP = {
-  "Q1": "1분기",
-  "Q2": "2분기",
-  "Q3": "3분기",
-  "Q4": "4분기"
-};
-//html 버튼 바인딩
-function bindStaticButtons() {
-  document.getElementById("step1-back-btn").onclick = () => {
-    location.href = "../main/main.html";
-  };
+// 분기 정렬 순서 (데이터의 quarter가 이미 "1분기" 한글임)
+const QUARTER_ORDER = ["1분기", "2분기", "3분기", "4분기", "변칙 편성", "기타"];
 
-  document.getElementById("step1-next-btn").onclick = () => {
-    if (nominateState.selectedItems) goStep2();
-  };
+// [중요] 평탄화된 AnimeList를 분기별로 그룹화 (Grouping)
+const AnimeByQuarter = AnimeList.reduce((acc, anime) => {
+    // quarter 값이 없으면 '기타'로 분류
+    const q = anime.quarter || "기타";
+    if (!acc[q]) acc[q] = [];
+    acc[q].push(anime);
+    return acc;
+}, {});
 
-  document.getElementById("step2-back-btn").onclick = () => {
-    nominateState.step = 1;
-
-    toggleStepUI();
-    renderStep1();
-
-    // Step1 preview 다시 보이게
-    const preview = document.getElementById("step1-preview");
-    if (preview) preview.style.display = "block";
-  };
-}
-//진입 함수
-function renderStep1() {
-  const left = document.getElementById("left-area");
-  if (!left) {
-    console.error("❌ left-area 없음");
-    return;
-  }
-  left.innerHTML = "";
-  // 1. songNominate와 동일하게 소제목 추가
-  const title = document.createElement("h2");
-  title.className = "step-title"; // 공통 클래스 사용
-  title.textContent = "작품 리스트"; // 또는 nominateState.currentAward.name
-  title.style.marginBottom = "20px";
-  left.appendChild(title);
-  renderAnimeList(left);
-
-  updateStep1Preview(); // 🔥 preview는 HTML에 이미 존재
-}
-//step 1 anime list
-function renderAnimeList(parent) {
-  // 분기 키(Q1, Q2...) 순서대로 정렬하여 출력
-  Object.keys(AnimeByQuarter).sort().forEach((quarterKey) => {
-    const animeList = AnimeByQuarter[quarterKey];
-    const quarterSection = document.createElement("div");
-    quarterSection.className = "quarter-section";
-
-    const quarterBtn = document.createElement("button");
-    quarterBtn.className = "quarter-btn";
+// ──────────────────────────────────────────────────────────
+// 2. Step 1 렌더링 (아코디언 + 그리드)
+// ──────────────────────────────────────────────────────────
+function renderStep1(filterText = "") {
+    const leftArea = document.getElementById("left-area");
+    if (!leftArea) return;
+    leftArea.innerHTML = "";
     
-    // 🔥 QUARTER_MAP을 사용하여 Q1 -> 1분기 변환, 없으면 원문 출력
-    quarterBtn.textContent = QUARTER_MAP[quarterKey] || quarterKey;
+    const isSearching = filterText.length > 0;
 
-    const quarterContent = document.createElement("div");
-    quarterContent.className = "quarter-content";
-    quarterContent.style.display = "none";
+    // 정의된 분기 순서대로 출력 (데이터에 없는 분기는 건너뜀)
+    QUARTER_ORDER.forEach(qKey => {
+        const animeList = AnimeByQuarter[qKey];
+        if (!animeList) return; // 해당 분기 데이터 없으면 패스
 
-    quarterBtn.onclick = () => {
-      const isVisible = quarterContent.style.display === "block";
-      quarterContent.style.display = isVisible ? "none" : "block";
-      quarterBtn.classList.toggle("active", !isVisible);
-    };
-
-    // 요일별 분류 출력
-    DAY_KEYS.forEach(dayKey => {
-      const dayAnimes = animeList.filter(a => a.day === dayKey);
-      if (dayAnimes.length === 0) return;
-
-      const daySection = document.createElement("div");
-      daySection.className = "day-section";
-
-      const dayBtn = document.createElement("button");
-      dayBtn.className = "day-btn";
-      dayBtn.textContent = DAY_LABELS[dayKey];
-
-      const dayList = document.createElement("ul");
-      dayList.className = "anime-list";
-      dayList.style.display = "none";
-
-      dayBtn.onclick = () => {
-        const isVisible = dayList.style.display === "block";
-        dayList.style.display = isVisible ? "none" : "block";
-        dayBtn.classList.toggle("active", !isVisible);
-      };
-
-      dayAnimes.forEach(anime => {
-        const li = document.createElement("li");
-        li.className = "anime-item";
-        li.textContent = anime.title;
+        // 검색 필터 적용
+        const filteredList = animeList.filter(a => a.title.toLowerCase().includes(filterText.toLowerCase()));
+        if (filteredList.length === 0 && isSearching) return;
         
-        if (nominateState.selectedItems.some(a => a.id === anime.id)) {
-          li.classList.add("selected");
-        }
+        const targetList = isSearching ? filteredList : animeList;
 
-        li.onclick = () => {
-          const exists = nominateState.selectedItems.some(a => a.id === anime.id);
-          if (exists) {
-            nominateState.selectedItems = nominateState.selectedItems.filter(a => a.id !== anime.id);
-            li.classList.remove("selected");
-          } else {
-            nominateState.selectedItems.push(anime);
-            li.classList.add("selected");
-          }
-          updateStep1Preview();
+        // 분기 섹션 생성
+        const qSection = document.createElement("div");
+        qSection.className = "quarter-section";
+
+        // 분기 버튼
+        const qBtn = document.createElement("button");
+        qBtn.className = `quarter-btn ${isSearching ? 'active' : ''}`;
+        qBtn.innerHTML = `<span>${qKey}</span> <span>▼</span>`;
+
+        // 분기 내용 컨테이너
+        const qContent = document.createElement("div");
+        qContent.className = "quarter-content";
+        qContent.style.display = isSearching ? "block" : "none";
+
+        qBtn.onclick = () => {
+            const isVisible = qContent.style.display === "block";
+            qContent.style.display = isVisible ? "none" : "block";
+            qBtn.classList.toggle("active", !isVisible);
         };
-        dayList.appendChild(li);
-      });
 
-      daySection.appendChild(dayBtn);
-      daySection.appendChild(dayList);
-      quarterContent.appendChild(daySection);
-    });
+        // 요일별 루프
+        DAY_KEYS.forEach(dKey => {
+            const dayAnimes = targetList.filter(a => a.day === dKey);
+            if (dayAnimes.length === 0) return;
 
-    quarterSection.appendChild(quarterBtn);
-    quarterSection.appendChild(quarterContent);
-    parent.appendChild(quarterSection);
-  });
-}
-//step 1 preview
-function updateStep1Preview() {
-  const preview = document.getElementById("preview-list");
-  const nextBtn = document.getElementById("step1-next-btn");
+            const dayDiv = document.createElement("div");
+            
+            const dBtn = document.createElement("button");
+            dBtn.className = `day-btn ${isSearching ? 'active' : ''}`;
+            dBtn.innerHTML = `${DAY_LABELS[dKey]} <span>▼</span>`;
 
-  preview.innerHTML = "";
+            const dContent = document.createElement("div");
+            dContent.className = "day-content";
+            dContent.style.display = isSearching ? "grid" : "none";
 
-  if (nominateState.selectedItems.length === 0) {
-    nextBtn.disabled = true;
-    return;
-  }
+            dBtn.onclick = () => {
+                const isGrid = dContent.style.display === "grid";
+                dContent.style.display = isGrid ? "none" : "grid";
+                dBtn.classList.toggle("active", !isGrid);
+            };
 
-  nominateState.selectedItems.forEach(anime => {
-    const div = document.createElement("div");
-    div.className = "preview-item";
-    div.textContent = anime.title;
+            dayAnimes.forEach(anime => {
+                dContent.appendChild(createCard(anime));
+            });
 
-    div.onclick = () => {
-      nominateState.selectedItems =
-        nominateState.selectedItems.filter(a => a.title !== anime.title);
-
-      // 좌측 선택 상태도 해제
-      document
-        .querySelectorAll(".anime-item")
-        .forEach(li => {
-          if (li.textContent === anime.title) {
-            li.classList.remove("selected");
-          }
+            dayDiv.appendChild(dBtn);
+            dayDiv.appendChild(dContent);
+            qContent.appendChild(dayDiv);
         });
 
-      updateStep1Preview();
-    };
-    preview.appendChild(div);
-  });
-
-  nextBtn.disabled = false;
+        qSection.appendChild(qBtn);
+        qSection.appendChild(qContent);
+        leftArea.appendChild(qSection);
+    });
 }
-//preview 선택 해재 UX
-function renderPreview() {
-  previewList.innerHTML = '';
 
-  selectedAnime.forEach((anime, index) => {
-    const li = document.createElement('li');
-    li.textContent = anime.title;
-
-    li.onclick = () => {
-      selectedAnime.splice(index, 1); // 선택 해제
-      renderPreview();
-      renderStep1(); // 왼쪽 리스트 갱신
-    };
-
-    previewList.appendChild(li);
-  });
-}
-//Step 2 진입 함수
-function goStep2() {
-  nominateState.step = 2;
-  nominateState.selectedWinner = null;
-
-  toggleStepUI();
-
-  const preview = document.getElementById("step1-preview");
-  if (preview) preview.style.display = "none";
-
-  const left = document.getElementById("left-area");
-  left.innerHTML = "";
-
-  renderStep2Cards(left);
-}
-//step 2 카드
-function renderStep2Cards(parent) {
-  const title = document.createElement("h2");
-  title.className = "step-title";
-  title.textContent = "최종 후보 선택";
-  parent.appendChild(title);
-
-  const grid = document.createElement("div");
-  grid.className = "step2-grid";
-
-  nominateState.selectedItems.forEach(anime => {
+// 카드 생성 함수
+function createCard(anime) {
     const card = document.createElement("div");
-    card.className = "step2-card";
+    
+    const isSelected = nominateState.step === 1 
+        ? nominateState.selectedItems.some(a => a.id === anime.id)
+        : (nominateState.selectedWinner && nominateState.selectedWinner.id === anime.id);
 
-    // 🔥 데이터에 있는 thumbnail 경로를 그대로 사용하되, 
-    // 현재 HTML 위치에 따라 상위 폴더(..)를 붙여야 할 수 있습니다.
-    // 만약 nominate.html이 'nominate' 폴더 안에 있다면 "../"를 추가하세요.
+    card.className = `card ${isSelected ? 'selected' : ''}`;
+    
+    // 데이터 경로: image/animeimg/... -> HTML 위치 기준 ../ 추가
     const imgPath = `../${anime.thumbnail}`;
 
+    // 배지는 데이터의 quarter("1분기")를 그대로 사용
     card.innerHTML = `
-      <div class="card-thumb">
-        <img src="${imgPath}" 
-             onerror="this.onerror=null; this.src='https://placehold.co/400x600/2f3542/ffffff?text=No+WebP+Image'" 
-             alt="${anime.title}" />
-        <div class="card-day-badge">${DAY_LABELS[anime.day] || '기타'}</div>
-      </div>
-      <div class="card-info">
-        <div class="card-title">${anime.title}</div>
-        <div class="card-studio">${anime.studio || ''}</div>
-      </div>
+        <div class="card-badge">${anime.quarter}</div>
+        <img src="${imgPath}" onerror="this.src='https://placehold.co/400x600/2f3542/ffffff?text=No+Image'" loading="lazy">
+        <div class="card-info">
+            <div class="card-title">${anime.title}</div>
+            <div class="card-studio">${anime.studio || ''}</div>
+        </div>
     `;
 
-    card.onclick = () => {
-      document.querySelectorAll(".step2-card").forEach(c => c.classList.remove("selected"));
-      card.classList.add("selected");
-      
-      nominateState.selectedWinner = {
-        ...anime,
-        thumbnail: imgPath // 팝업에서 쓸 경로 저장
-      };
-
-      document.getElementById("step2-award-btn").disabled = false;
-    };
-
-    grid.appendChild(card);
-  });
-
-  parent.appendChild(grid);
+    card.onclick = () => handleCardClick(anime, card);
+    return card;
 }
-//step ui 전환
-function toggleStepUI() {
-  const step1Buttons = document.getElementById("step1-buttons");
-  const step2Buttons = document.getElementById("step2-buttons");
 
-  if (nominateState.step === 1) {
-    step1Buttons.style.display = "flex";
-    step2Buttons.style.display = "none";
-  } else {
-    step1Buttons.style.display = "none";
-    step2Buttons.style.display = "flex";
-  }
-}
-//수상 팝업
-function openAwardPopup() {
-  const popup = document.getElementById("winner-popup");
-  const thumb = document.getElementById("winner-thumb");
-  const title = document.getElementById("winner-title");
-  const goMainBtn = document.getElementById("go-main-btn");
-
-  if (!popup || !thumb || !title || !goMainBtn) {
-    console.error("❌ 팝업 DOM 요소 누락", {
-      popup, thumb, title, goMainBtn
-    });
-    return;
-  }
-
-  thumb.src =
-    nominateState.selectedWinner.thumbnail || "images/no-image.png";
-
-  title.textContent =
-    nominateState.selectedWinner.title;
-
-  popup.style.display = "flex"; // ← classList.add 말고 이게 안전
-
-  goMainBtn.onclick = () => {
-    location.href = "../main/main.html";
-  };
-}
-//localstorage에 저장
-// 기존 saveAwardResult 함수 대체
-function saveAwardResult(winner) {
-  const currentResults = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
-  const awardName = nominateState.currentAward.name; // 현재 상 이름 (예: 대상)
-
-  // 1. TOP 3 상인지 확인
-  const top3Ranks = ["대상", "최우수상", "우수상"];
-  const isTop3 = top3Ranks.includes(awardName);
-
-  if (isTop3) {
-    // 2. '올해의 애니메이션' 배열 데이터 가져오기
-    // (주의: 메인 페이지 로직에 따라 키값이 '올해의 애니메이션' 혹은 'top3'일 수 있습니다. 확인 필요)
-    const top3Key = "올해의 애니메이션"; 
-    let top3List = currentResults[top3Key];
-
-    // 배열이 이미 존재한다면 수정, 없으면 새로 생성
-    if (Array.isArray(top3List)) {
-      // 배열 안에서 현재 상 이름(rank)과 일치하는 항목 찾기
-      const targetIndex = top3List.findIndex(item => item.rank === awardName);
-
-      if (targetIndex !== -1) {
-        // [수정 모드] 기존 순위 유지, 작품 정보만 변경
-        top3List[targetIndex].title = winner.title;
-        top3List[targetIndex].thumbnail = winner.thumbnail;
-        // console.log(`${awardName} 정보가 배열 내에서 업데이트되었습니다.`);
-      } else {
-        // [추가 모드] 배열은 있는데 이 상은 아직 없을 때 (드문 경우)
-        top3List.push({
-          rank: awardName,
-          title: winner.title,
-          thumbnail: winner.thumbnail
-        });
-      }
+// 카드 클릭 핸들러
+function handleCardClick(anime, cardElement) {
+    if (nominateState.step === 1) {
+        const idx = nominateState.selectedItems.findIndex(a => a.id === anime.id);
+        if (idx > -1) {
+            nominateState.selectedItems.splice(idx, 1);
+            cardElement.classList.remove('selected');
+        } else {
+            nominateState.selectedItems.push(anime);
+            cardElement.classList.add('selected');
+        }
+        updatePreview();
     } else {
-      // [신규 생성] 아예 데이터가 없을 경우 (nominate.js로 처음부터 선정할 때)
-      // 이 경우 배열이 아니라 단일 객체로 저장하는 것을 방지하기 위해 배열로 초기화
-      // 하지만 보통 top3Nominate를 먼저 거치므로 이 로직은 안전장치입니다.
-      currentResults[top3Key] = [{
-        rank: awardName,
-        title: winner.title,
-        thumbnail: winner.thumbnail
-      }];
+        document.querySelectorAll('.card').forEach(c => c.classList.remove('selected'));
+        cardElement.classList.add('selected');
+        nominateState.selectedWinner = anime;
+        
+        const awardBtn = document.getElementById("step2-award-btn");
+        if(awardBtn) awardBtn.disabled = false;
     }
-  } else {
-    // 3. 일반 부문 (OST, 성우 등) - 기존 방식대로 저장
-    currentResults[awardName] = {
-      title: winner.title,
-      thumbnail: winner.thumbnail
-    };
-  }
-
-  // 4. 로컬 스토리지에 최종 저장
-  localStorage.setItem("anime_awards_result", JSON.stringify(currentResults));
 }
 
-// 1. 수상 버튼 클릭 이벤트 연결 (bindStaticButtons 함수 내부 등에 위치)
-const awardBtn = document.getElementById("step2-award-btn");
-if (awardBtn) {
-  awardBtn.onclick = () => {
-    showWinnerPopup();
+// ──────────────────────────────────────────────────────────
+// 3. UI 업데이트 및 프리뷰
+// ──────────────────────────────────────────────────────────
+function updatePreview() {
+    const pBox = document.getElementById("preview-box");
+    const nextBtn = document.getElementById("step1-next-btn");
     
-  };
+    if(!pBox) return;
+    pBox.innerHTML = "";
+    
+    nominateState.selectedItems.forEach(anime => {
+        const item = document.createElement("span");
+        item.className = "preview-item";
+        item.textContent = anime.title;
+        item.onclick = () => {
+            nominateState.selectedItems = nominateState.selectedItems.filter(a => a.id !== anime.id);
+            updatePreview();
+            const searchVal = document.getElementById('search-input') ? document.getElementById('search-input').value : "";
+            renderStep1(searchVal);
+        };
+        pBox.appendChild(item);
+    });
+
+    if(nextBtn) nextBtn.disabled = nominateState.selectedItems.length === 0;
 }
 
-// 2. 팝업 표시 함수
-function showWinnerPopup() {
-  // 1. 데이터 확인 (선택된 승자가 있는지)
-  const winner = nominateState.selectedWinner; 
-  if (!winner) {
-    alert("수상작을 선택해주세요!");
-    return;
-  }
-  // 2. 요소 가져오기 (초기화 위치 확인)
-  const popupElement = document.getElementById("winner-popup");
-  const thumbElement = document.getElementById("winner-thumb");
-  const titleElement = document.getElementById("winner-title");
-
-  // 3. 요소가 존재하는지 확인 후 데이터 삽입
-  if (popupElement && thumbElement && titleElement) {
-    // 이미 Step 2에서 변환된 imgPath를 사용하므로 그대로 대입
-    thumbElement.src = winner.thumbnail;
+// ──────────────────────────────────────────────────────────
+// 4. Step 전환 및 검색
+// ──────────────────────────────────────────────────────────
+function goStep2() {
+    nominateState.step = 2;
+    const stepTitle = document.getElementById("step-title");
+    if(stepTitle) stepTitle.textContent = "최종 수상작 결정 (Step 2)";
     
-    // 팝업 이미지 로딩 실패 대비
-    thumbElement.onerror = function() {
-      this.src = 'https://placehold.co/400x600/2f3542/ffffff?text=Image+Not+Found';
+    // 버튼 교체
+    toggleElement("nav-home-btn", false);
+    toggleElement("step1-next-btn", false);
+    toggleElement("step2-back-btn", true);
+    toggleElement("step2-award-btn", true);
+    
+    const leftArea = document.getElementById("left-area");
+    leftArea.innerHTML = "";
+    
+    const h2 = document.createElement("h2");
+    h2.style.color = "var(--gold)";
+    h2.textContent = "최종 후보를 선택하세요";
+    leftArea.appendChild(h2);
+
+    const gridDiv = document.createElement("div");
+    gridDiv.id = "step2-grid";
+    
+    nominateState.selectedItems.forEach(anime => {
+        gridDiv.appendChild(createCard(anime));
+    });
+    leftArea.appendChild(gridDiv);
+}
+
+function goStep1() {
+    nominateState.step = 1;
+    nominateState.selectedWinner = null;
+    const stepTitle = document.getElementById("step-title");
+    if(stepTitle) stepTitle.textContent = "후보 선정 (Step 1)";
+
+    toggleElement("nav-home-btn", true);
+    toggleElement("step1-next-btn", true);
+    toggleElement("step2-back-btn", false);
+    toggleElement("step2-award-btn", false);
+    
+    const awardBtn = document.getElementById("step2-award-btn");
+    if(awardBtn) awardBtn.disabled = true;
+
+    renderStep1();
+}
+
+function toggleElement(id, show) {
+    const el = document.getElementById(id);
+    if(el) {
+        if(show) el.classList.remove("hidden");
+        else el.classList.add("hidden");
+    }
+}
+
+// 검색 기능
+const searchInput = document.getElementById('search-input');
+const autocompleteList = document.getElementById('autocomplete-list');
+
+if(searchInput) {
+    searchInput.oninput = function() {
+        const val = this.value;
+        renderStep1(val);
+        
+        if(autocompleteList) {
+            autocompleteList.innerHTML = '';
+            if (!val) return;
+            
+            AnimeList.filter(a => a.title.toLowerCase().includes(val.toLowerCase())).slice(0, 5).forEach(match => {
+                const div = document.createElement("div");
+                div.textContent = match.title;
+                div.onclick = () => {
+                    searchInput.value = match.title;
+                    autocompleteList.innerHTML = '';
+                    renderStep1(match.title);
+                };
+                autocompleteList.appendChild(div);
+            });
+        }
     };
+}
 
-    titleElement.textContent = winner.title;
-    popupElement.style.display = "flex"; 
-    popupElement.classList.add("active");
+// ──────────────────────────────────────────────────────────
+// 5. 수상 결정 및 저장
+// ──────────────────────────────────────────────────────────
+function openAwardPopup() {
+    const winner = nominateState.selectedWinner;
+    if (!winner) return;
 
+    // 이미지 및 기본 정보
+    const modalImg = document.getElementById("modal-img");
+    if(modalImg) modalImg.src = `../${winner.thumbnail}`;
+    
+    const modalTitle = document.getElementById("modal-title");
+    if(modalTitle) modalTitle.textContent = winner.title;
+    
+    // [중요] 변경된 데이터 구조 매핑 (staff 객체 접근)
+    // 1. 분기: 데이터에 "1분기"라고 되어 있으므로 그대로 사용
+    setText("modal-quarter", winner.quarter);
+    
+    // 2. 감독: staff.director 배열을 문자열로 결합 (데이터가 없을 경우 방어 코드 작성)
+    const directorText = (winner.staff && winner.staff.director) 
+        ? winner.staff.director.join(", ") 
+        : "정보 없음";
+    setText("modal-director", directorText);
+
+    // 3. 제작사
+    setText("modal-studio", winner.studio || "-");
+    
+    const modal = document.getElementById("winner-modal");
+    if(modal) modal.classList.remove("hidden");
+    
     fireConfetti();
-  }
-
-  // 5. 결과 저장 함수 호출
-  saveAwardResult(winner);
+    saveAwardResult(winner);
 }
 
-// 3. 메인으로 가기 버튼 이벤트
-document.getElementById("go-main-btn").onclick = () => {
-  location.href = "../main/main.html";
-};
+function setText(id, text) {
+    const el = document.getElementById(id);
+    if(el) el.textContent = text;
+}
 
-//초기 실행
-document.addEventListener("DOMContentLoaded", () => {
-  const params = new URLSearchParams(location.search);
-  const theme = params.get("theme");
-  nominateState.theme = theme
-  nominateState.currentAward = { name: params.get("awardName") };
+function saveAwardResult(winner) {
+    const currentResults = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
+    const awardName = nominateState.awardName; 
 
-  renderStep1();
-  bindStaticButtons();
-});
+    const top3Ranks = ["대상", "최우수상", "우수상"];
+    const isTop3 = top3Ranks.includes(awardName);
+    const finalThumb = `../${winner.thumbnail}`;
 
-// 🎉 화려한 폭죽 연출 함수
-function fireConfetti() {
-  const duration = 3 * 1000; // 3초 동안 발사
-  const animationEnd = Date.now() + duration;
-  const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 10001 }; // 팝업보다 위에 보이게 zIndex 조절
+    if (isTop3) {
+        const top3Key = "올해의 애니메이션";
+        let top3List = currentResults[top3Key];
 
-  const interval = setInterval(function() {
-    const timeLeft = animationEnd - Date.now();
-
-    if (timeLeft <= 0) {
-      return clearInterval(interval);
+        if (Array.isArray(top3List)) {
+            const targetIndex = top3List.findIndex(item => item.rank === awardName);
+            if (targetIndex !== -1) {
+                top3List[targetIndex].title = winner.title;
+                top3List[targetIndex].thumbnail = finalThumb;
+            } else {
+                top3List.push({ rank: awardName, title: winner.title, thumbnail: finalThumb });
+            }
+        } else {
+            currentResults[top3Key] = [{ rank: awardName, title: winner.title, thumbnail: finalThumb }];
+        }
+    } else {
+        currentResults[awardName] = { title: winner.title, thumbnail: finalThumb };
     }
 
-    const particleCount = 50 * (timeLeft / duration);
-    
-    // 왼쪽에서 쏘기
-    confetti(Object.assign({}, defaults, { 
-      particleCount, 
-      origin: { x: 0.2, y: 0.7 } 
-    }));
-    // 오른쪽에서 쏘기
-    confetti(Object.assign({}, defaults, { 
-      particleCount, 
-      origin: { x: 0.8, y: 0.7 } 
-    }));
-  }, 250);
+    localStorage.setItem("anime_awards_result", JSON.stringify(currentResults));
+    console.log("Saved:", awardName, winner.title);
 }
+
+function fireConfetti() {
+    const duration = 3 * 1000;
+    const animationEnd = Date.now() + duration;
+    const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 10001 };
+
+    const interval = setInterval(function() {
+        const timeLeft = animationEnd - Date.now();
+        if (timeLeft <= 0) return clearInterval(interval);
+        const particleCount = 50 * (timeLeft / duration);
+        confetti(Object.assign({}, defaults, { particleCount, origin: { x: 0.2, y: 0.7 } }));
+        confetti(Object.assign({}, defaults, { particleCount, origin: { x: 0.8, y: 0.7 } }));
+    }, 250);
+}
+
+// ──────────────────────────────────────────────────────────
+// 6. 이벤트 바인딩 및 초기화
+// ──────────────────────────────────────────────────────────
+const btnNext = document.getElementById("step1-next-btn");
+if(btnNext) btnNext.onclick = goStep2;
+
+const btnBack = document.getElementById("step2-back-btn");
+if(btnBack) btnBack.onclick = goStep1;
+
+const btnAward = document.getElementById("step2-award-btn");
+if(btnAward) btnAward.onclick = openAwardPopup;
+
+const btnHome = document.getElementById("nav-home-btn");
+if(btnHome) btnHome.onclick = () => location.href = "../main/main.html";
+
+const btnGoMain = document.getElementById("go-main-btn");
+if(btnGoMain) btnGoMain.onclick = () => location.href = "../main/main.html";
+
+// 초기 실행
+renderStep1();

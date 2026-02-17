@@ -1,336 +1,254 @@
-let currentStep = 1;
-let selectedAnimes = []; // step1에서 선택된 객체들
-let finalist = null;    // step2에서 최종 선택된 객체
+// 1. 초기 상태 설정
+const nominateState = {
+    step: 1,
+    selectedItems: [],
+    selectedWinner: null,
+    awardName: "각색상"
+};
 
-const grid = document.getElementById('anime-grid');
-const previewBox = document.getElementById('preview-box');
-const nextBtn = document.getElementById('next-btn');
-const decideBtn = document.getElementById('decide-btn');
-const navHome = document.getElementById('nav-home');
-const stepTitle = document.getElementById('step-title');
-const searchInput = document.getElementById('search-input');
-const autocompleteList = document.getElementById('autocomplete-list');
+// [중요] 데이터 맵핑 수정 (Q1 -> 1분기 등)
+const QUARTER_MAP = {
+    "Q1": "1분기",
+    "Q2": "2분기",
+    "Q3": "3분기",
+    "Q4": "4분기",
+    "Anomaly": "변칙 편성",
+    "Web": "웹"
+};
 
-const AnimeByQuarter = AnimeAdaptorData.reduce((acc, anime) => {
-    const q = anime.quarter || "Unknown"; // 데이터에 quarter 속성이 있어야 합니다.
+const DAY_LABELS = {
+    "Mondays": "월요일", "Tuesdays": "화요일", "Wednesdays": "수요일", "Thursdays": "목요일",
+    "Fridays": "금요일", "Saturdays": "토요일", "Sundays": "일요일",
+    "Anomaly": "변칙 편성", "Web": "웹"
+};
+
+const DAY_KEYS = ["Mondays", "Tuesdays", "Wednesdays", "Thursdays", "Fridays", "Saturdays", "Sundays", "Anomaly", "Web"];
+
+// [수정] 데이터 변수명을 AnimeAdaptorData로 일치시킴
+const sourceData = (typeof AnimeAdaptorData !== 'undefined') ? AnimeAdaptorData : [];
+
+// [수정] 분기별 그룹화 로직 (Q1, Q2 기준)
+const AnimeByQuarter = sourceData.reduce((acc, anime) => {
+    const q = anime.quarter || "Q1"; 
     if (!acc[q]) acc[q] = [];
     acc[q].push(anime);
     return acc;
 }, {});
 
-const QUARTER_MAP = {
-    "Q1": "1분기", "Q2": "2분기", "Q3": "3분기", "Q4": "4분기", "Anomaly": "변칙 편성", "Web": "웹"
-};
-const DAY_KEYS = ["Mondays", "Tuesdays", "Wednesdays", "Thursdays", "Fridays", "Saturdays", "Sundays", "Anomaly", "Web"];
-
-const DAY_LABELS = {
-    "Mondays": "월요일", 
-    "Tuesdays": "화요일", 
-    "Wednesdays": "수요일", 
-    "Thursdays": "목요일", 
-    "Fridays": "금요일", 
-    "Saturdays": "토요일", 
-    "Sundays": "일요일", 
-    "Anomaly": "변칙 편성", 
-    "Web": "웹"
-};
-
-searchInput.oninput = function() {
-    const val = this.value.toLowerCase();
-    closeAllLists();
-    if (!val) return false;
-
-    // 대소문자 구분 없이 제목 검색 (연관 검색어 추출)
-    const matches = AnimeAdaptorData.filter(anime => 
-        anime.title.toLowerCase().includes(val)
-    );
-
-    matches.forEach(match => {
-        const b = document.createElement("div");
-        // 일치하는 부분을 강조(bold) 처리
-        const idx = match.title.toLowerCase().indexOf(val);
-        b.innerHTML = match.title.substr(0, idx);
-        b.innerHTML += "<strong>" + match.title.substr(idx, val.length) + "</strong>";
-        b.innerHTML += match.title.substr(idx + val.length);
-        
-        b.onclick = () => {
-            searchInput.value = match.title;
-            closeAllLists();
-            renderStep1(match.title); // 선택한 제목으로 그리드 필터링
-        };
-        autocompleteList.appendChild(b);
-    });
-}
-
-function closeAllLists() {
-    autocompleteList.innerHTML = '';
-}
-
-// 초기 렌더링 (Step 1)
+// ──────────────────────────────────────────────────────────
+// 2. Step 1: 렌더링 (아코디언 생성)
+// ──────────────────────────────────────────────────────────
 function renderStep1(filterText = "") {
-    const parent = document.getElementById("anime-grid");
-    parent.innerHTML = ""; // 기존 그리드 초기화
+    const leftArea = document.getElementById("left-area");
+    if (!leftArea) return;
+    leftArea.innerHTML = "";
+    
+    const isSearching = filterText.length > 0;
 
-    // 분기 키(Q1, Q2...) 순서대로 정렬하여 출력
-    Object.keys(AnimeByQuarter).sort().forEach((quarterKey) => {
-        const animeList = AnimeByQuarter[quarterKey];
+    // 데이터에 존재하는 분기들만 루프 (Q1, Q2...)
+    Object.keys(AnimeByQuarter).sort().forEach(qKey => {
+        const animeList = AnimeByQuarter[qKey];
         
-        // 검색어(filterText)가 있다면 해당 분기에 검색 결과가 있는지 먼저 필터링
-        const filteredAnimesInQuarter = animeList.filter(anime => 
-            anime.title.toLowerCase().includes(filterText.toLowerCase())
-        );
-
-        // 검색 중인데 해당 분기에 결과가 없으면 이 분기는 통째로 패스
-        if (filterText && filteredAnimesInQuarter.length === 0) return;
-
-        const quarterSection = document.createElement("div");
-        quarterSection.className = "quarter-section";
-
-        // 1. 분기 버튼
-        const quarterBtn = document.createElement("button");
-        quarterBtn.className = "quarter-btn";
-        quarterBtn.textContent = QUARTER_MAP[quarterKey] || quarterKey;
-
-        const quarterContent = document.createElement("div");
-        quarterContent.className = "quarter-content";
+        const filteredList = animeList.filter(a => a.title.toLowerCase().includes(filterText.toLowerCase()));
+        if (filteredList.length === 0 && isSearching) return;
         
-        // 검색 중이면 자동으로 펼쳐두고, 아니면 닫아둠
-        const isSearchActive = filterText.length > 0;
-        quarterContent.style.display = isSearchActive ? "block" : "none";
-        if (isSearchActive) quarterBtn.classList.add("active");
+        const targetList = isSearching ? filteredList : animeList;
 
-        quarterBtn.onclick = () => {
-            const isVisible = quarterContent.style.display === "block";
-            quarterContent.style.display = isVisible ? "none" : "block";
-            quarterBtn.classList.toggle("active", !isVisible);
+        const qSection = document.createElement("div");
+        qSection.className = "quarter-section";
+
+        const qBtn = document.createElement("button");
+        qBtn.className = `quarter-btn ${isSearching ? 'active' : ''}`;
+        // QUARTER_MAP을 이용해 Q1을 '1분기'로 표시
+        qBtn.innerHTML = `<span>${QUARTER_MAP[qKey] || qKey}</span> <span>▼</span>`;
+
+        const qContent = document.createElement("div");
+        qContent.className = "quarter-content";
+        qContent.style.display = isSearching ? "block" : "none";
+
+        qBtn.onclick = () => {
+            const isVisible = qContent.style.display === "block";
+            qContent.style.display = isVisible ? "none" : "block";
+            qBtn.classList.toggle("active", !isVisible);
         };
 
-        // 2. 요일별 분류
-        DAY_KEYS.forEach(dayKey => {
-            const dayAnimes = (isSearchActive ? filteredAnimesInQuarter : animeList)
-                                .filter(a => a.day === dayKey);
-            
+        DAY_KEYS.forEach(dKey => {
+            const dayAnimes = targetList.filter(a => a.day === dKey);
             if (dayAnimes.length === 0) return;
 
-            const daySection = document.createElement("div");
-            daySection.className = "day-section";
+            const dayDiv = document.createElement("div");
+            
+            const dBtn = document.createElement("button");
+            dBtn.className = `day-btn ${isSearching ? 'active' : ''}`;
+            dBtn.innerHTML = `${DAY_LABELS[dKey]} <span>▼</span>`;
 
-            const dayBtn = document.createElement("button");
-            dayBtn.className = "day-btn";
-            dayBtn.textContent = DAY_LABELS[dayKey];
+            const dContent = document.createElement("div");
+            dContent.className = "day-content";
+            // 중요: CSS 그리드 유지를 위해 display: grid 사용
+            dContent.style.display = isSearching ? "grid" : "none";
 
-            const dayContent = document.createElement("div");
-            dayContent.className = "day-content grid-view"; // 그리드 스타일 적용
-            dayContent.style.display = isSearchActive ? "block" : "none";
-            if (isSearchActive) dayBtn.classList.add("active");
-
-            dayBtn.onclick = () => {
-                // block이 아닌 grid로 체크하고 변경해야 함
-                const isVisible = dayContent.style.display === "grid";
-    
-                if (isVisible) {
-                    dayContent.style.display = "none";
-                    dayBtn.classList.remove("active");
-                } else {
-                    dayContent.style.display = "grid"; // 여기서 grid를 명시!
-                    dayBtn.classList.add("active");
-                }
+            dBtn.onclick = () => {
+                const isGrid = dContent.style.display === "grid";
+                dContent.style.display = isGrid ? "none" : "grid";
+                dBtn.classList.toggle("active", !isGrid);
             };
 
-            // 3. 카드 생성 (기존 카드 UI 사용)
             dayAnimes.forEach(anime => {
-                const card = createCard(anime);
-                const originalClick = card.onclick;
-                card.onclick = () => {
-                    if (originalClick) originalClick();
-                    if (typeof updatePreview === 'function') updatePreview();
-                };
-
-                dayContent.appendChild(card);
+                dContent.appendChild(createCard(anime));
             });
 
-            daySection.appendChild(dayBtn);
-            daySection.appendChild(dayContent);
-            quarterContent.appendChild(daySection);
+            dayDiv.appendChild(dBtn);
+            dayDiv.appendChild(dContent);
+            qContent.appendChild(dayDiv);
         });
 
-        quarterSection.appendChild(quarterBtn);
-        quarterSection.appendChild(quarterContent);
-        parent.appendChild(quarterSection);
+        qSection.appendChild(qBtn);
+        qSection.appendChild(qContent);
+        leftArea.appendChild(qSection);
     });
 }
 
 function createCard(anime) {
-    const div = document.createElement('div');
-    
-    // Step 1이면 selectedAnimes 확인, Step 2이면 finalist 확인
-    let isSelected = false;
-    if (currentStep === 1) {
-        isSelected = selectedAnimes.some(a => a.id === anime.id);
-    } else {
-        isSelected = finalist && finalist.id === anime.id;
-    }
+    const card = document.createElement("div");
+    const isSelected = nominateState.step === 1 
+        ? nominateState.selectedItems.some(a => a.id === anime.id)
+        : (nominateState.selectedWinner && nominateState.selectedWinner.id === anime.id);
 
-    div.className = `card ${isSelected ? 'selected' : ''}`;
-    div.innerHTML = `
-        <img src="${anime.thumbnail}" alt="${anime.title}">
+    card.className = `card ${isSelected ? 'selected' : ''}`;
+
+    // [수정] 데이터의 thumbnail 경로를 그대로 사용
+    card.innerHTML = `
+        <div class="card-badge">${QUARTER_MAP[anime.quarter] || anime.quarter}</div>
+        <img src="${anime.thumbnail}" onerror="this.src='https://placehold.co/400x600/2f3542/ffffff?text=No+Image'">
         <div class="card-info">
             <div class="card-title">${anime.title}</div>
-            <div class="card-adaptor">각색: ${anime.adaptor.join(', ')}</div>
+            <div class="card-studio">${anime.studio || ''}</div>
         </div>
     `;
-    div.onclick = () => toggleSelection(anime, div);
-    return div;
+
+    card.onclick = () => handleCardClick(anime, card);
+    return card;
 }
 
-function toggleSelection(anime, element) {
-    if (currentStep === 1) {
-        const index = selectedAnimes.findIndex(a => a.id === anime.id);
-        if (index > -1) {
-            selectedAnimes.splice(index, 1);
-            element.classList.remove('selected');
+// ... (이후 handleCardClick, updatePreview, goStep2 등의 함수는 이전과 동일) ...
+
+// [중요] 기존 코드의 나머지 부분(handleCardClick ~ fireConfetti)을 아래에 그대로 붙여넣으세요.
+
+function handleCardClick(anime, cardElement) {
+    if (nominateState.step === 1) {
+        const idx = nominateState.selectedItems.findIndex(a => a.id === anime.id);
+        if (idx > -1) {
+            nominateState.selectedItems.splice(idx, 1);
+            cardElement.classList.remove('selected');
         } else {
-            selectedAnimes.push(anime);
-            element.classList.add('selected');
+            nominateState.selectedItems.push(anime);
+            cardElement.classList.add('selected');
         }
         updatePreview();
     } else {
-        // Step 2: 단일 선택
         document.querySelectorAll('.card').forEach(c => c.classList.remove('selected'));
-        element.classList.add('selected');
-        finalist = anime;
+        cardElement.classList.add('selected');
+        nominateState.selectedWinner = anime;
+        document.getElementById("step2-award-btn").disabled = false;
     }
 }
 
 function updatePreview() {
-    previewBox.innerHTML = '';
-    selectedAnimes.forEach(anime => {
-        const span = document.createElement('span');
-        span.className = 'preview-item';
-        span.textContent = anime.title;
-        span.onclick = () => {
-            selectedAnimes = selectedAnimes.filter(a => a.id !== anime.id);
+    const pBox = document.getElementById("preview-box");
+    const nextBtn = document.getElementById("step1-next-btn");
+    pBox.innerHTML = "";
+    nominateState.selectedItems.forEach(anime => {
+        const item = document.createElement("span");
+        item.className = "preview-item";
+        item.textContent = anime.title;
+        item.onclick = () => {
+            nominateState.selectedItems = nominateState.selectedItems.filter(a => a.id !== anime.id);
             updatePreview();
-            renderStep1();
+            renderStep1(document.getElementById('search-input').value);
         };
-        previewBox.appendChild(span);
+        pBox.appendChild(item);
     });
-    document.getElementById('count').textContent = selectedAnimes.length;
+    nextBtn.disabled = nominateState.selectedItems.length === 0;
 }
 
-// Step 1 -> Step 2 전환
-nextBtn.onclick = () => {
-    if (selectedAnimes.length === 0) return alert('최소 한 개 이상의 작품을 선택해주세요!');
-    
-    currentStep = 2;
-    stepTitle.textContent = "최종 각색상 선정 (Step 2)";
-    
-    // 검색창 및 프리뷰 숨김
-    document.querySelector('.search-container').classList.add('hidden');
-    document.getElementById('preview-section').classList.add('hidden');
-    
-    nextBtn.classList.add('hidden');
-    decideBtn.classList.remove('hidden');
-    navHome.textContent = "뒤로가기";
-    navHome.onclick = goBackToStep1;
-
-    renderStep2();
-};
-
-function renderStep2() {
-    const parent = document.getElementById("anime-grid");
-    if (!parent) return;
-
-    parent.innerHTML = ""; // 기존 내용 비우기
-    
-    // 1. 부모 컨테이너를 그리드 레이아웃으로 설정
-    parent.className = "grid-view"; 
-    parent.style.display = "grid"; 
-
-    // 2. Step 1에서 선택된 리스트(selectedAnimes)를 순회하며 카드 생성
-    selectedAnimes.forEach(anime => {
-        // 이미 만들어둔 createCard 함수 재사용
-        // (이 함수 내부에서 currentStep을 체크하여 finalist 선택 로직으로 작동함)
-        const card = createCard(anime); 
-        parent.appendChild(card);
-    });
-
-    // 3. 상단 타이틀 변경 (필요 시)
-    const stepTitle = document.getElementById("step-title");
-    if (stepTitle) stepTitle.textContent = "최종 수상작 결정";
+function goStep2() {
+    nominateState.step = 2;
+    document.getElementById("step-title").textContent = "최종 수상작 결정 (Step 2)";
+    toggleElement("nav-home-btn", false);
+    toggleElement("step1-next-btn", false);
+    toggleElement("step2-back-btn", true);
+    toggleElement("step2-award-btn", true);
+    const leftArea = document.getElementById("left-area");
+    leftArea.innerHTML = `<h2 style="color:var(--gold); margin-bottom:20px;">최종 수상작을 선택하세요</h2><div id="step2-grid"></div>`;
+    const gridDiv = document.getElementById("step2-grid");
+    nominateState.selectedItems.forEach(anime => gridDiv.appendChild(createCard(anime)));
 }
 
-function goBackToStep1() {
-    currentStep = 1;
-    stepTitle.textContent = "각색상 후보 선정 (Step 1)";
-    
-    document.querySelector('.search-container').classList.remove('hidden');
-    document.getElementById('preview-section').classList.remove('hidden');
-    
-    nextBtn.classList.remove('hidden');
-    decideBtn.classList.add('hidden');
-    navHome.textContent = "메인으로";
-    navHome.onclick = () => location.href='../main/main.html';
-    
-    renderStep1(searchInput.value); // 검색어가 있었다면 유지하며 렌더링
+function goStep1() {
+    nominateState.step = 1;
+    nominateState.selectedWinner = null;
+    document.getElementById("step-title").textContent = "각색상 후보 선정 (Step 1)";
+    toggleElement("nav-home-btn", true);
+    toggleElement("step1-next-btn", true);
+    toggleElement("step2-back-btn", false);
+    toggleElement("step2-award-btn", false);
+    renderStep1();
 }
 
-// 최종 결정 및 팝업
-decideBtn.onclick = () => {
-    if (!finalist) return alert('최종 수상작을 선택해주세요!');
+function toggleElement(id, show) {
+    const el = document.getElementById(id);
+    if(el) el.classList.toggle("hidden", !show);
+}
 
-    // 1. 데이터 저장
-    const result = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
-    result["각색상"] = { 
-        title: finalist.title, 
-        thumbnail: finalist.thumbnail, 
-        adaptor: finalist.adaptor 
+const searchInput = document.getElementById('search-input');
+const autocompleteList = document.getElementById('autocomplete-list');
+if(searchInput) {
+    searchInput.oninput = function() {
+        const val = this.value;
+        renderStep1(val);
+        autocompleteList.innerHTML = '';
+        if (!val) return;
+        sourceData.filter(a => a.title.toLowerCase().includes(val.toLowerCase())).slice(0, 5).forEach(match => {
+            const div = document.createElement("div");
+            div.textContent = match.title;
+            div.onclick = () => { searchInput.value = match.title; autocompleteList.innerHTML = ''; renderStep1(match.title); };
+            autocompleteList.appendChild(div);
+        });
     };
-    localStorage.setItem("anime_awards_result", JSON.stringify(result));
+}
 
-    const modalImg = document.getElementById('modal-img');
-    const modalTitle = document.getElementById('modal-title');
-    const modalAdaptor = document.getElementById('modal-adaptor');
-
-    if(modalImg) modalImg.src = finalist.thumbnail;
-    if(modalTitle) modalTitle.textContent = finalist.title;
-    if(modalAdaptor) modalAdaptor.textContent = `각색: ${finalist.adaptor.join(', ')}`;
+function openAwardPopup() {
+    const winner = nominateState.selectedWinner;
+    if (!winner) return;
+    document.getElementById("modal-img").src = winner.thumbnail;
+    document.getElementById("modal-title").textContent = winner.title;
+    document.getElementById("modal-quarter").textContent = QUARTER_MAP[winner.quarter] || winner.quarter;
+    document.getElementById("modal-studio").textContent = winner.studio || "-";
+    document.getElementById("modal-adaptor").textContent = winner.adaptor ? winner.adaptor.join(", ") : "-";
+    document.getElementById("winner-modal").classList.remove("hidden");
+    fireConfetti();
     
-    // 3. 모달 표시 및 폭죽
-    document.getElementById('winner-modal').classList.remove('hidden');
-    fireworks();
-};
+    const results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
+    results["각색상"] = { title: winner.title, thumbnail: winner.thumbnail };
+    localStorage.setItem("anime_awards_result", JSON.stringify(results));
+}
 
-function fireworks() {
-    const duration = 3 * 1000; // 3초 동안 지속
-    const end = Date.now() + duration;
-
+function fireConfetti() {
+    const duration = 3000;
+    const animationEnd = Date.now() + duration;
     (function frame() {
-        // 왼쪽 하단에서 쏘아 올림
-        confetti({
-            particleCount: 5,
-            angle: 60,
-            spread: 55,
-            origin: { x: 0, y: 0.8 }, // y값을 조절해 위치 최적화 가능
-            colors: ['#d4af37', '#ffffff'],
-            zIndex: 9999
-        });
-        // 오른쪽 하단에서 쏘아 올림
-        confetti({
-            particleCount: 5,
-            angle: 120,
-            spread: 55,
-            origin: { x: 1, y: 0.8 },
-            colors: ['#d4af37', '#ffffff'],
-            zIndex: 9999
-        });
-
-        // 3초가 지날 때까지 프레임 반복 호출
-        if (Date.now() < end) {
-            requestAnimationFrame(frame);
-        }
+        const timeLeft = animationEnd - Date.now();
+        if (timeLeft <= 0) return;
+        confetti({ particleCount: 3, angle: 60, spread: 55, origin: { x: 0, y: 0.8 }, colors: ['#d4af37', '#ffffff'] });
+        confetti({ particleCount: 3, angle: 120, spread: 55, origin: { x: 1, y: 0.8 }, colors: ['#d4af37', '#ffffff'] });
+        requestAnimationFrame(frame);
     }());
 }
 
-// 시작
+document.getElementById("step1-next-btn").onclick = goStep2;
+document.getElementById("step2-back-btn").onclick = goStep1;
+document.getElementById("step2-award-btn").onclick = openAwardPopup;
+document.getElementById("nav-home-btn").onclick = () => location.href = "../main/main.html";
+document.getElementById("go-main-btn").onclick = () => location.href = "../main/main.html";
+
 renderStep1();

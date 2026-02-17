@@ -2,67 +2,90 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>노미네이트</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>노미네이트 - 기준 테마</title>
+  <link rel="stylesheet" href="./nominate.css" />
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
 
-  <!-- 상단 -->
-  <header class="nominate-header">
-    <h1 id="award-title">노미네이트</h1>
-  </header>
-  <!-- 전체 레이아웃 -->
-  <main class="nominate-page">
-    <section class="nominate-left" id="left-area">
-      </section>
-
-    <aside class="nominate-right">
-      <div class="step1-buttons" id="step1-buttons">
-        <button class="step-btn secondary" id="step1-back-btn">메인으로</button>
-        <button class="step-btn primary" id="step1-next-btn" disabled>다음 단계</button>
+  <nav class="top-nav">
+    <div class="nav-content-area">
+      <span class="brand">AWARDS</span>
+      <span id="step-title">후보 선정 (Step 1)</span>
+    </div>
+    <div class="nav-sidebar-area">
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="작품 검색..." autocomplete="off">
+        <div id="autocomplete-list" class="autocomplete-items"></div>
       </div>
-      <div class="step2-buttons" id="step2-buttons" style="display:none;">
-        <button class="step-btn secondary" id="step2-back-btn">뒤로가기</button>
-        <button class="step-btn primary gold" id="step2-award-btn" disabled>수상</button>
-      </div>
+    </div>
+  </nav>
 
-      <div id="step1-preview" class="step1-preview">
-        <div class="preview-title">선택된 작품</div>
-        <div class="preview-scroll">
-          <div id="preview-list" class="preview-list"></div>
+  <main class="content-wrapper">
+    <div class="container">
+      <section class="content-area" id="left-area">
+        </section>
+
+      <aside class="sidebar">
+        <div class="fixed-sidebar-content">
+          <div id="preview-section" class="preview-container">
+            <div id="preview-box" class="preview-box"></div>
+          </div>
+
+          <div class="action-buttons">
+            <button id="nav-home-btn" class="btn-outline">메인으로</button>
+            <button id="step1-next-btn" class="gold-btn" disabled>다음 단계</button>
+            
+            <button id="step2-back-btn" class="btn-outline hidden">뒤로가기</button>
+            <button id="step2-award-btn" class="gold-btn hidden" disabled>수상 결정</button>
+          </div>
         </div>
-      </div>
-    </aside>
+      </aside>
+    </div>
   </main>
 
-<div class="winner-popup" id="winner-popup">
-  <div class="popup-card">
-    <h2 style="color: gold; margin-top: 0;">🏆 FINAL WINNER</h2>
-    
-    <div class="popup-thumb">
-      <img id="winner-thumb" src="" alt="winner thumbnail" />
+  <div id="winner-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2 class="modal-header">🏆 FINAL WINNER</h2>
+      <hr class="modal-divider">
+
+      <div class="winner-layout">
+        <div class="winner-left">
+          <img id="modal-img" src="" alt="수상작 이미지" onerror="this.src='https://placehold.co/400x600/2f3542/ffffff?text=No+Image'"/>
+        </div>
+        <div class="winner-right">
+          <div id="winner-info-text">
+            <h3 id="modal-title">작품 제목</h3>
+
+            <div class="info-row">
+              <span class="info-label">Quarter:</span>
+              <span id="modal-quarter" class="info-value">-</span>
+            </div>
+
+            <div class="info-row">
+              <span class="info-label">Director:</span>
+              <span id="modal-director" class="info-value">-</span>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">Studio:</span>
+                <span id="modal-studio" class="info-value">-</span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">Award:</span>
+                <span id="modal-award-name" class="info-value">대상</span>
+            </div>
+          </div>
+          <button class="gold-btn full-width" id="go-main-btn">
+            확인 및 메인으로
+          </button>
+        </div>
+      </div>
     </div>
-
-    <div class="popup-title" id="winner-title">작품 제목이 표시됩니다</div>
-
-    <button class="popup-btn" id="go-main-btn">
-      확인 및 메인으로
-    </button>
   </div>
-</div>
 
-
-  <!-- 공통 CSS -->
-  <link rel="stylesheet" href="./nominate.css" />
-
-  <!-- 데이터 -->
   <script src="../data/animeData.js"></script>
-  <script src="../data/animeCharacter.js"></script>
-  <script src="../data/awardData.js"></script>
-  <script src="../data/animeSongs.js"></script>
-
-  <!-- JS -->
   <script src="./nominate.js"></script>
 </body>
 </html>
