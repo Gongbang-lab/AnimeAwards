@@ -1,54 +1,86 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>올해의 스튜디오상 노미네이트</title>
-    <link rel="stylesheet" href="./studioNominate.css">
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026 Studio Awards - Nominate</title>
+  <link rel="stylesheet" href="./studioNominate.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
-<body>
-    <div class="container">
-        <main class="content-area">
-            <h1 class="title">올해의 스튜디오상 후보</h1>
-            <div id="studioGrid" class="grid-view"></div>
-        </main>
+<body class="dark-theme">
 
-        <aside class="control-panel">
-            <div class="button-group">
-                <button id="navBtn" class="btn-secondary" onclick="location.href='../main/main.html'">메인으로</button>
-            </div>
-            
-            <div id="previewContainer" class="preview-box">
-                <h3>선택된 후보 (Preview)</h3>
-                <div id="previewList" class="preview-list"></div>
-            </div>
-
-            <div class="action-group">
-                <button id="nextBtn" class="btn-primary">다음 단계로</button>
-            </div>
-        </aside>
+  <nav class="top-nav">
+    <div class="nav-content-area">
+      <div class="brand">2026 STUDIO AWARDS</div>
+      <div id="step-title">올해의 스튜디오상 후보 선정</div>
     </div>
+    <div class="nav-sidebar-area">
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="스튜디오 검색..." autocomplete="off">
+      </div>
+    </div>
+  </nav>
 
-    <div id="modal" class="modal-overlay hidden">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <div class="modal-body">
-                <div class="modal-left">
-                    <img id="modalStudioImg" src="" alt="Studio">
-                    <h2 id="modalStudioName"></h2>
+  <main class="content-wrapper">
+    <div class="container">
+        <section class="content-area">
+            <div id="accordion-group-container" class="accordion-group-container"></div>
+        </section>
+
+      <aside class="sidebar">
+        <div class="action-buttons-vertical">
+          <div class="status-indicator">
+            <span id="selected-name-display">후보를 선택해주세요</span>
+          </div>
+          <div class="control-row">
+            <button id="btn-award" class="gold-btn" disabled>수상 결정</button>
+            <button id="btn-home" class="btn-outline">메인으로</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <div id="works-modal" class="modal hidden">
+    <div class="modal-content works-modal-content">
+      <div class="works-modal-left" id="works-studio-info"></div>
+      
+      <div class="works-modal-right">
+        <h2 class="modal-header" style="font-size: 1.4rem; margin-top: 0;">제작 애니메이션</h2>
+        <hr class="modal-divider">
+        <div id="works-grid-body" class="works-grid"></div>
+        <button class="gold-btn" style="width: 100%; margin-top: 20px;" onclick="closeWorksModal()">닫기</button>
+      </div>
+    </div>
+  </div>
+
+<div id="winner-modal" class="modal hidden">
+    <div class="modal-content winner-modal-content">
+        <div class="winner-top-section">
+            <div class="winner-badge">🏆 2026 WINNER</div>
+        </div>
+
+        <div class="winner-body-section">
+            <div class="winner-modal-left" id="winner-studio-info">
                 </div>
-                <div class="modal-right">
-                    <h3>제작 애니메이션</h3>
-                    <div id="modalAnimeGrid" class="anime-mini-grid"></div>
-                    <div id="finalActionArea" class="hidden">
-                        <button onclick="location.href='../main/main.html'" class="btn-primary">확인 및 메인으로</button>
+            
+            <div class="winner-modal-right">
+                <h2 class="modal-header">제작 애니메이션 목록</h2>
+                <hr class="modal-divider">
+                <div id="winner-anime-grid" class="works-grid">
                     </div>
-                </div>
             </div>
         </div>
-    </div>
 
-    <script src="../data/animeStudioData.js"></script>
-    <script src="./studioNominate.js"></script>
+        <div class="winner-bottom-section">
+            <button class="gold-btn final-btn" onclick="location.href='../main/main.html'">확인 및 메인으로</button>
+        </div>
+    </div>
+</div>
+
+  <canvas id="confettiCanvas"></canvas>
+
+  <script src="../data/animeStudioData.js"></script>
+  <script src="./studioNominate.js"></script>
 </body>
 </html>
