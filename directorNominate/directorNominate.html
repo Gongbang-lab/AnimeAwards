@@ -3,65 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Director Awards - Nomination</title>
-    <link rel="stylesheet" href="./directorNominate.css">
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <title>올해의 감독상 - 후보 선정</title>
+    <link rel="stylesheet" href="directorNominate.css">
 </head>
 <body>
-    <div class="container">
-        <main class="content-area">
-            <h1 id="step-title">Step 1: 후보 선택</h1>
-            <div id="director-grid" class="grid-view"></div>
-        </main>
+    <nav class="top-nav">
+        <div class="nav-content-area">
+            <div class="brand">DIRECTOR AWARDS</div>
+            <div id="step-title">올해의 감독상 후보 선발</div>
+        </div>
+        <div class="nav-sidebar-area">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="감독 이름 검색..." autocomplete="off">
+            </div>
+        </div>
+    </nav>
 
-        <aside class="sidebar">
-            <div class="menu-buttons">
-                <button id="nav-btn" class="btn secondary" onclick="handleNav()">메인으로</button>
-            </div>
-            
-            <div id="preview-section">
-                <h3>선택된 후보 (Preview)</h3>
-                <div id="preview-box" class="preview-box">
-                    </div>
+    <div class="content-wrapper">
+        <div class="container">
+            <div id="main-content" class="content-area">
+                <div id="dir-accordion-container" class="accordion-container"></div>
             </div>
 
-            <div class="action-buttons">
-                <button id="next-btn" class="btn primary" onclick="goToStep2()">다 음</button>
-                <button id="final-btn" class="btn gold hidden" onclick="confirmWinner()">최종 결정</button>
-            </div>
-        </aside>
+            <aside class="sidebar">
+                <div class="preview-box">
+                    <div id="preview-list">
+                        </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button id="btn-back" class="btn-outline">메인으로</button>
+                    <button id="btn-next" class="gold-btn" disabled>다음 단계</button>
+                </div>
+            </aside>
+        </div>
     </div>
 
-    <div id="info-modal" class="modal hidden">
-        <div class="modal-content split-view">
-            <span class="close-btn" onclick="closeModal('info-modal')">&times;</span>
-            <div class="modal-left">
-                <div class="modal-dir-img" id="modal-img"></div>
-                <h2 id="modal-name">감독명</h2>
+    <div id="detail-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2 class="modal-header">감독 상세 정보</h2>
+            <hr class="modal-divider">
+            <div class="winner-layout">
+                <div class="winner-left">
+                    <img id="detail-img" src="" alt="감독 이미지">
+                </div>
+                <div class="winner-right">
+                    <h2 id="detail-name" style="color:white; margin-top:0;"></h2>
+                    <div id="detail-works" class="winner-works-scroll">
+                        </div>
+                </div>
             </div>
-            <div class="modal-right">
-                <h3>주요 작품</h3>
-                <div id="modal-works-grid" class="works-grid"></div>
-            </div>
+            <button onclick="closeModal('detail-modal')" class="btn-outline" style="width:100%; margin-top:20px;">닫기</button>
         </div>
     </div>
 
     <div id="winner-modal" class="modal hidden">
-        <div class="modal-content split-view winner-border">
-            <div class="modal-left">
-                <div class="modal-dir-img" id="winner-img"></div>
-                <h2 id="winner-name" class="gold-text">감독명</h2>
-                <p class="award-label">🏆 올해의 감독상 🏆</p>
+        <div class="modal-content">
+            <h2 class="modal-header">🏆 WINNER 🏆</h2>
+            <hr class="modal-divider">
+            <div class="winner-layout">
+                <div class="winner-left">
+                    <img id="winner-img" src="" alt="수상자">
+                </div>
+                <div class="winner-right">
+                    <div id="modal-title">BEST DIRECTOR</div>
+                    <div id="winner-info-content">
+                        </div>
+                </div>
             </div>
-            <div class="modal-right">
-                <h3>작품 리스트</h3>
-                <div id="winner-works-grid" class="works-grid"></div>
-                <button class="btn gold full-width" onclick="location.href='../main/main.html'">확인 및 메인으로</button>
-            </div>
+            <button id="final-confirm-btn" class="gold-btn" style="width:100%; margin-top:30px;">확인 및 종료</button>
         </div>
     </div>
 
+    <canvas id="confettiCanvas"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <script src="../data/animeDirectorData.js"></script>
-    <script src="./directorNominate.js"></script>
+    <script src="directorNominate.js"></script>
 </body>
 </html>
