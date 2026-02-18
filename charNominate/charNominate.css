@@ -1,368 +1,194 @@
-/* ──────────────────────────────────────────────────────────
-   기본 레이아웃 및 배경 (기존 유지)
-   ────────────────────────────────────────────────────────── */
-html, body {
-  height: 100%;
-  margin: 0;
-  background-color: #000;
-  color: #fff;
-  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+/* 기본 변수 및 리셋 */
+:root {
+    --gold: #d4af37;
+    --dark-gold: #aa8a2e;
+    --black: #1a1a1a;
+    --gray: #2c2c2c;
+    --white: #ffffff;
+    --nav-height: 70px;
 }
 
-.nominate-page {
-  display: flex;
-  gap: 24px;
-  width: 100%; /* 전체 너비 확보 */
-  max-width: 1400px; /* 너무 퍼지지 않게 한계선 설정 (선택 사항) */
-  margin: 0 auto; /* 중앙 정렬 */
-  height: calc(100vh - 80px);
-  padding: 20px 40px; /* 좌우 패딩이 너무 크지 않은지 확인 */
-  box-sizing: border-box;
+body {
+    background-color: var(--black);
+    color: var(--white);
+    margin: 0;
+    font-family: 'Pretendard', sans-serif;
+    overflow-x: hidden;
 }
 
-.nominate-left {
-  flex: 7; /* 공간의 70% 점유 */
-  min-width: 600px; /* 최소 너비를 지정하여 너무 좁아지는 것 방지 */
-  overflow-y: auto;
-  padding-right: 12px;
-}
-.nominate-right {
-  flex: 3; /* 공간의 30% 점유 */
-  min-width: 320px; /* 우측 프리뷰가 찌그러지지 않도록 설정 */
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-/* ──────────────────────────────────────────────────────────
-   STEP 1: 4단계 아코디언 (기준 코드 기반 확장)
-   ────────────────────────────────────────────────────────── */
+/* 커스텀 스크롤바 */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: #1a1a1a; border-radius: 4px; }
+::-webkit-scrollbar-thumb { background: #444; border-radius: 4px; border: 1px solid #1a1a1a; }
+::-webkit-scrollbar-thumb:hover { background: var(--dark-gold); }
 
-/* 1단계: 분기 */
-.quarter-section { margin-bottom: 14px; }
-.quarter-btn {
-  width: 100%; padding: 16px; border-radius: 12px; background: #111;
-  border: 1px solid #222; color: #fff; font-size: 16px; font-weight: 800;
-  cursor: pointer; text-align: left; display: flex; justify-content: space-between;
-  transition: all 0.2s ease;
+/* 1. 상단 네비게이션 */
+.top-nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    height: var(--nav-height); background: rgba(20, 20, 20, 0.95);
+    display: flex; border-bottom: 2px solid var(--gold);
+    z-index: 1000; backdrop-filter: blur(10px); justify-content: space-between;
 }
-.quarter-btn.active { border-color: gold; color: gold; }
-.quarter-content { padding: 10px 0 0 14px; display: none; }
-.quarter-content.active { display: block; }
+.nav-content-area { flex: 7; display: flex; align-items: center; padding-left: 40px; }
+.brand { color: var(--gold); font-weight: 800; font-size: 1.4rem; margin-right: 25px; }
+#step-title { font-size: 1.1rem; color: #ccc; border-left: 3px solid var(--gray); padding-left: 15px; }
 
-/* 2단계: 요일 */
-.day-btn {
-  width: 100%; padding: 12px 14px; margin-top: 8px; border-radius: 10px;
-  background: #1a1a1a; border: 1px solid #222; color: #ccc; font-weight: 600;
-  cursor: pointer; text-align: left; transition: all 0.2s ease;
+.nav-sidebar-area { flex: 3; min-width: 300px; display: flex; align-items: center; padding-right: 20px; }
+.search-container { position: relative; width: 100%; max-width: 400px; margin-left: auto; }
+#search-input {
+    width: 100%; padding: 10px 15px; background: #000; border: 1px solid #444;
+    border-radius: 4px; color: white; outline: none; transition: 0.3s;
 }
-.day-btn.active { color: gold; border-color: gold; }
+#search-input:focus { border-color: var(--gold); }
+.autocomplete-items {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #111; /* 배경을 조금 더 진하게 */
+    border: 1px solid var(--gold);
+    max-height: 400px;
+    overflow-y: auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    border-radius: 0 0 8px 8px;
+}
+.autocomplete-items div { padding: 10px; cursor: pointer; border-bottom: 1px solid #333; }
+.autocomplete-items div:hover { background: var(--gray); color: var(--gold); }
+.autocomplete-items div strong {
+    color: var(--gold);
+}
+.autocomplete-items::-webkit-scrollbar { width: 5px; }
+.autocomplete-items::-webkit-scrollbar-thumb { background: var(--gold); }
 
-/* 3단계: 애니메이션 제목 (추가된 계층) */
-.anime-btn {
-  width: calc(100% - 14px); margin-left: 14px; padding: 10px 14px; margin-top: 6px;
-  border-radius: 8px; background: #0a0a0a; border: 1px solid #222; color: #eee;
-  font-size: 14px; font-weight: 500; cursor: pointer; text-align: left;
-}
-.anime-btn.active { border-color: gold; color: gold; }
+/* 2. 메인 레이아웃 */
+.content-wrapper { padding-top: var(--nav-height); }
+.container { display: flex; min-height: calc(100vh - var(--nav-height)); }
 
-/* 4단계: 캐릭터 그리드 */
-.char-button-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  gap: 12px;
-  padding: 16px 16px 16px 28px; /* 위계에 따른 들여쓰기 */
-  background: #050505;
-}
+.content-area { flex: 7.5; padding: 40px; border-right: 1px solid rgba(212, 175, 55, 0.3); }
+.sidebar { flex: 2.5; background-color: #111; position: sticky; top: var(--nav-height); height: calc(100vh - var(--nav-height)); padding: 25px; box-sizing: border-box; }
 
-/* 캐릭터 개별 버튼 */
-.char-button {
-  display: flex; flex-direction: column; align-items: center; gap: 8px;
-  padding: 10px; background: #111; border: 1px solid #222; border-radius: 12px; cursor: pointer;
+.preview-box {
+    background: #000; border: 1px solid #444; height: 400px;
+    overflow-y: auto; padding: 10px; border-radius: 8px; margin-bottom: 20px;
 }
-.char-button img { width: 60px; height: 60px; object-fit: cover; border-radius: 50%; border: 2px solid #333; }
-.char-button.selected { border-color: gold; background: #1a1a1a; }
-.char-button.selected img { border-color: gold; }
-.char-name { font-size: 12px; color: #fff; text-align: center; }
-
-/* ──────────────────────────────────────────────────────────
-   우측 프리뷰 & 버튼 (요청 사항 반영 수정)
-   ────────────────────────────────────────────────────────── */
-
-/* 버튼 컨테이너 (너비 문제 해결) */
-.step-buttons {
-  display: flex; gap: 12px; margin-bottom: 16px; width: 100%;
-}
-
-.step-btn {
-  flex: 1; padding: 14px 0; border-radius: 12px; font-weight: 700;
-  cursor: pointer; border: none; transition: all 0.2s ease;
-}
-.step-btn.primary { background: gold; color: #000; }
-.step-btn.secondary { background: #222; color: #fff; }
-
-/* 프리뷰 박스 (X표시 제거 및 텍스트 클릭 삭제) */
-.step1-preview {
-  display: flex;
-  flex-direction: column;
-  max-height: 500px; /* 고정 높이 */
-}
-.preview-scroll {
-  flex: 1;
-  overflow-y: auto;
-  padding-right: 4px;
-}
-.preview-scroll::-webkit-scrollbar { width: 6px; }
-.preview-scroll::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
-.preview-scroll::-webkit-scrollbar-thumb:hover { background: gold; }
-
-.preview-title {
-  padding: 16px; font-size: 15px; font-weight: 700; text-align: center;
-  border-bottom: 1px solid #222; color: gold;
-}
-.preview-list {
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-/* 애니메이션별 그룹 박스 */
-.preview-group {
-  background: #1a1a1a;
-  border-radius: 10px;
-  padding: 12px;
-  border: 1px solid #333;
-}
-
-/* 그룹 내 애니메이션 제목 */
-.preview-group-title {
-  font-size: 12px;
-  color: gold;
-  font-weight: 800;
-  margin-bottom: 8px;
-  border-bottom: 1px solid #222;
-  padding-bottom: 4px;
-}
-
-/* 캐릭터들이 가로로 나열되는 영역 */
-.preview-char-wrapper {
-  display: flex;
-  flex-wrap: wrap; /* 영역 넘치면 다음 줄로 */
-  gap: 8px;
-}
-
-/* 개별 캐릭터 이름 칩(Chip) 스타일 */
 .preview-item {
-  background: #222;
-  color: #eee;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 13px;
-  cursor: pointer;
-  border: 1px solid #444;
-  transition: all 0.2s ease;
-  white-space: nowrap; /* 이름 줄바꿈 방지 */
+    padding: 8px 12px; margin: 5px; background: var(--gray);
+    display: inline-block; cursor: pointer; font-size: 0.85rem; border-radius: 4px;
+    transition: 0.2s; border: 1px solid transparent;
+}
+.preview-item:hover { border-color: var(--gold); color: var(--gold); }
+
+.action-buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.gold-btn { background: var(--gold); color: black; font-weight: 800; padding: 15px; border: none; cursor: pointer; border-radius: 6px; }
+.gold-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.gold-btn:hover:not(:disabled) { background: #eac14d; }
+.btn-outline { background: transparent; border: 1px solid var(--gold); color: var(--gold); padding: 15px; font-weight: bold; cursor: pointer; border-radius: 6px; }
+.btn-outline:hover { background: rgba(212, 175, 55, 0.1); }
+.hidden { display: none !important; }
+
+/* 3. 리스트 및 카드 */
+.quarter-section { margin-bottom: 15px; border: 1px solid #333; border-radius: 8px; overflow: hidden; }
+.quarter-btn, .day-btn {
+    width: 100%; padding: 16px 20px; background: #1f1f1f; border: none; font-size: 1rem; 
+    color: #eee; font-weight: bold; display: flex; justify-content: space-between; cursor: pointer;
+}
+.quarter-btn:hover, .day-btn:hover { background: #2a2a2a; color: var(--gold); }
+.quarter-btn.active { border-bottom: 1px solid #333; color: var(--gold); }
+.day-btn { background: #151515; color: #aaa; padding-left: 30px; border-top: 1px solid #222; }
+.day-btn.active { color: var(--gold); background: #1a1a1a; }
+
+.day-content, #step2-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px; padding: 20px; box-sizing: border-box; background: #0a0a0a;
+    /* 추가: 기본적으로 숨김 처리 */
+    display: none; 
+}
+/* JS에서 active 클래스를 붙여서 보여주기 위해 오버라이드 */
+.day-content.active, #step2-grid {
+    display: grid;
 }
 
-.preview-item:hover {
-  background: rgba(255, 71, 87, 0.15);
-  border-color: #ff4757;
-  color: #ff4757;
-  transform: scale(0.98);
+.card {
+    background: var(--gray); border: 2px solid transparent; border-radius: 8px;
+    overflow: hidden; cursor: pointer; transition: 0.3s; position: relative;
+    display: flex; flex-direction: column;
+}
+.card:hover { transform: translateY(-5px); border-color: rgba(212, 175, 55, 0.5); }
+.card.selected { border-color: var(--gold); box-shadow: 0 0 15px rgba(212, 175, 55, 0.3); }
+
+.card-badge {
+  position: absolute; top: 6px; right: 6px;
+  background: rgba(0,0,0,0.7); color: var(--gold);
+  font-size: 0.7rem; padding: 2px 6px; border-radius: 4px;
 }
 
-/* ──────────────────────────────────────────────────────────
-   STEP 2: 카드 그리드 & 팝업 (기존 유지)
-   ────────────────────────────────────────────────────────── */
-.step2-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 20px; padding: 20px 0; }
-.step2-card { background: #111; border-radius: 12px; overflow: hidden; border: 2px solid #222; cursor: pointer; }
-.step2-card.selected { border-color: gold; }
-.card-thumb { width: 100%; aspect-ratio: 1/1; }
-.card-thumb img { width: 100%; height: 100%; object-fit: cover; }
-.card-info { padding: 12px; text-align: center; }
-.card-title { font-weight: bold; font-size: 14px; color: #fff; }
+.card img { width: 100%; aspect-ratio: 3/4; object-fit: cover; display: block; }
+.card-info { padding: 12px; }
+.card-title { font-weight: bold; color: var(--gold); margin-bottom: 5px; font-size: 0.95rem; }
+.card-studio { font-size: 0.8rem; color: #bbb; }
 
-/* 팝업 관련 (기존 주신 애니메이션 및 스타일 유지) */
-/* 팝업 배경 */
-#winner-popup {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.9);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 10000;
+/* 4. 모달 */
+.modal {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.9); display: flex; align-items: center; justify-content: center; z-index: 2000;
+}
+.modal-content {
+    background: #1a1a1a; width: 90%; max-width: 800px;
+    border: 2px solid var(--gold); border-radius: 15px; padding: 30px;
+}
+.modal-header { text-align: center; color: var(--gold); font-size: 1.8rem; margin: 0; }
+.modal-divider { border: 0; height: 1px; background: #444; margin: 15px 0 30px 0; }
+.winner-layout { display: flex; gap: 40px; }
+.winner-left img { width: 280px; height: auto; border-radius: 5px; border: 1px solid var(--gold); }
+.winner-right { flex: 1; display: flex; flex-direction: column; text-align: left; }
+#modal-title { font-size: 2rem; color: #fff; margin: 0 0 30px 0; border-bottom: 2px solid rgba(212, 175, 55, 0.2); padding-bottom: 10px; }
+.info-row { display: flex; justify-content: space-between; border-bottom: 1px solid #333; padding: 12px 0; font-size: 1.1rem; }
+.info-label { color: var(--gold); font-weight: bold; }
+.info-value { color: #eee; text-align: right; }
+
+#confettiCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 9999;
 }
 
-/* 팝업 본체: 좌우 분할 */
-.popup-content.split-layout {
-  background: #111;
-  border: 2px solid gold;
-  border-radius: 20px;
-  display: flex; /* 가로 나열 */
-  max-width: 800px;
-  width: 90%;
-  overflow: hidden;
-  box-shadow: 0 0 50px rgba(255, 215, 0, 0.2);
+.preview-box.hidden {
+    display: none !important;
 }
 
-/* 왼쪽: 이미지 영역 */
-.popup-left {
-  flex: 1;
-  background: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.anime-btn {
+    width: 100%; padding: 12px 20px; background: #0d0d0d; border: none; font-size: 0.9rem; 
+    color: #999; display: flex; justify-content: space-between; cursor: pointer;
+    padding-left: 45px; border-top: 1px solid #1a1a1a; transition: 0.2s;
+}
+.anime-btn:hover { color: var(--gold); background: #151515; }
+.anime-btn.active { color: var(--gold); background: #111; }
+
+/* 애니메이션별 카드 그리드 컨테이너 */
+.anime-content {
+    display: none; /* 기본 숨김 */
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 15px; padding: 20px; box-sizing: border-box; background: #050505;
+    padding-left: 50px;
+}
+.anime-content.active {
+    display: grid;
 }
 
-.popup-left img {
-  width: 100%;
-  height: auto;
-  max-height: 500px;
-  object-fit: cover;
-  display: block;
+.search-subtext {
+    font-size: 0.75rem;
+    color: #888;
+    display: block;
+    margin-top: 2px;
 }
 
-/* 오른쪽: 정보 영역 */
-.popup-right {
-  flex: 1.2;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-}
-
-.award-label {
-  color: gold;
-  font-weight: bold;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
-}
-
-#winner-name {
-  font-size: 36px;
-  color: #fff;
-  margin: 0 0 10px 0;
-}
-
-#winner-anime {
-  font-size: 18px;
-  color: #ccc;
-  margin-bottom: 30px;
-  border-bottom: 1px solid #333;
-  padding-bottom: 15px;
-}
-
-.winner-details {
-  font-size: 16px;
-  color: #888;
-  margin-bottom: 40px;
-}
-
-.winner-details strong {
-  color: #fff;
-  margin-left: 10px;
-}
-
-.btn-primary {
-  background: gold;
-  color: #000;
-  border: none;
-  padding: 15px;
-  font-weight: bold;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-
-.btn-primary:hover {
-  transform: scale(1.05);
-}
-.winner-popup.active { display: flex; }
-.popup-card { background: #111; border: 2px solid gold; border-radius: 24px; padding: 30px; width: 90%; max-width: 700px; text-align: center; }
-.step-title, .step2-title, #left-area h2 { font-size: 22px; font-weight: 800; color: #fff; margin-bottom: 24px; padding-left: 12px; border-left: 4px solid gold; line-height: 1.2; }
-
-/* Step 2 전용 그리드 설정 */
-.final-vote-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* 꽉 차지 않게 자동 나열 */
-  gap: 20px;
-  padding: 10px;
-  justify-content: center; /* 중앙 정렬 */
-}
-
-/* 개별 캐릭터 카드 스타일 */
-.char-vote-card {
-  background: #1a1a1a;
-  border: 2px solid #333;
-  border-radius: 12px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  display: flex;
-  flex-direction: column;
-}
-
-/* 이미지 영역 */
-.card-img-wrapper {
-  width: 100%;
-  aspect-ratio: 3 / 4; /* 세로형 이미지 비율 유지 */
-  overflow: hidden;
-  border-bottom: 1px solid #333;
-}
-
-.card-img-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-/* 정보 영역 (이름, 애니메이션) */
-.card-info {
-  padding: 12px;
-  text-align: center;
-}
-
-.info-name {
-  font-size: 16px;
-  font-weight: 800;
-  color: #fff;
-  margin-bottom: 4px;
-}
-
-.info-anime {
-  font-size: 12px;
-  color: #aaa; /* 애니메이션 이름은 조금 연하게 */
-  margin-bottom: 6px;
-  line-height: 1.2;
-}
-
-.info-cv {
-  font-size: 11px;
-  color: gold;
-  opacity: 0.8;
-}
-
-/* 마우스 호버 효과 */
-.char-vote-card:hover {
-  border-color: #555;
-  transform: translateY(-5px);
-}
-
-.char-vote-card:hover .card-img-wrapper img {
-  transform: scale(1.05);
-}
-
-/* 선택되었을 때 (Gold 테두리) */
-.char-vote-card.selected {
-  border-color: gold;
-  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
-  background: #252525;
-}
-
-.char-vote-card.selected .info-name {
-  color: gold;
+/* 검색창 활성화 상태 */
+#search-input:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
