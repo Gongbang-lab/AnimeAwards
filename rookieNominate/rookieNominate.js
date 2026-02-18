@@ -1,190 +1,196 @@
 const rookiestate = {
     selectedCV: null,
-    currentAward: null,
-    theme: null
+    awardName: null
 };
 
 document.addEventListener("DOMContentLoaded", () => {
     const params = new URLSearchParams(location.search);
-    const theme = params.get("theme"); // "opening" or "ending"
-    const awardName = params.get("awardName");
-    
-    rookiestate.theme = theme;
-    rookiestate.currentAward = { name : awardName };
+    rookiestate.awardName = params.get("awardName") || "올해의 신인 성우상";
 
     renderRookieGrid();
+    initSearch();
 
-    const btnHome = document.getElementById("btn-home");
-    const btnAward = document.getElementById("btn-award");
-
-    if (btnHome) btnHome.onclick = () => location.href = "../main/main.html";
-    
-    // 수상 결정 버튼 클릭 이벤트 연결
-    if (btnAward) {
-        btnAward.onclick = () => {
-            if (rookiestate.selectedCV) {
-                saveWinnerToLocal(rookiestate.selectedCV);
-                openAwardPopup(rookiestate.selectedCV);
-            }
-        };
-    }
-
+    document.getElementById("btn-home").onclick = () => location.href = "../main/main.html";
+    document.getElementById("btn-award").onclick = () => handleAwardDecision();
 });
 
+/**
+ * 그리드 렌더링 및 선택 이벤트 통합
+ */
 function renderRookieGrid() {
     const grid = document.getElementById("rookie-grid");
     if (!grid || typeof RookieCVData === 'undefined') return;
 
-    console.log(rookiestate.currentAward);
     grid.innerHTML = "";
-    // 가나다/ABC 순 정렬
     const list = Object.values(RookieCVData).sort((a, b) => a.name.localeCompare(b.name));
 
     list.forEach(cv => {
         const card = document.createElement("div");
-        card.className = "char-vote-card";
+        card.className = "card";
         
-        const displayImg = cv.cvimg || (cv.characters && cv.characters[0] ? cv.characters[0].charimg : '');
+        const displayImg = cv.cvimg || (cv.characters?.[0]?.charimg) || '';
+        const worksCount = cv.characters ? cv.characters.length : 0;
 
+        // card-badge를 항상 나타난 상태로 유지하며 "작품수"로 텍스트 변경
         card.innerHTML = `
-            <div class="card-img-wrapper">
-                <img src="${displayImg}" alt="${cv.name}" onerror="this.src='https://via.placeholder.com/200x280?text=No+Image'">
-            </div>
+            <div class="card-badge">작품수 ${worksCount}</div>
+            <img src="${displayImg}" alt="${cv.name}" loading="lazy" onerror="this.src='https://via.placeholder.com/200x280'">
             <div class="card-info">
-                <div class="info-name">${cv.name}</div>
-                <button class="info-icon-btn" title="필모그래피">i</button>
+                <div class="card-title">${cv.name}</div>
+                <div class="card-studio">데뷔: ${cv.debutYear || '2026'}</div>
             </div>
         `;
 
-        // 카드 선택 이벤트
-        card.onclick = () => {
-            document.querySelectorAll(".char-vote-card").forEach(c => c.classList.remove("selected"));
-            card.classList.add("selected");
-            rookiestate.selectedCV = cv;
-            document.getElementById("btn-award").disabled = false;
+        // 카드 클릭 시 성우 선택
+        card.onclick = (e) => {
+            if (e.target.classList.contains('card-badge')) return;
+            selectCandidate(cv, card);
         };
 
-        // i 버튼 클릭 시 팝업만 오픈 (이벤트 전파 방지)
-        card.querySelector(".info-icon-btn").onclick = (e) => {
+        // 배지 클릭 시 작품 목록 팝업 호출
+        const badge = card.querySelector('.card-badge');
+        badge.onclick = (e) => {
             e.stopPropagation();
-            openFilmoPopup(cv);
+            showWorksModal(cv);
         };
 
         grid.appendChild(card);
     });
 }
 
-function openAwardPopup(cv) {
-    const popup = document.getElementById("winner-popup");
-    if (!popup) return;
+function showWorksModal(cv) {
+    const modal = document.getElementById("works-modal");
+    const gridBody = document.getElementById("works-grid-body");
+    const leftArea = document.getElementById("works-cv-info");
 
-    // 꽃가루 효과 (confetti.js가 로드되어 있어야 함)
+    // 왼쪽 성우 프로필
+    const cvImg = cv.cvimg || (cv.characters?.[0]?.charimg);
+    leftArea.innerHTML = `
+        <img src="${cvImg}" alt="${cv.name}">
+        <h2 style="color:var(--gold); margin: 15px 0 5px 0;">${cv.name}</h2>
+        <p style="color:#888; margin-bottom: 20px;">데뷔: ${cv.debutYear}년</p>
+    `;
+
+    // 오른쪽 작품 그리드
+    if (!cv.characters || cv.characters.length === 0) {
+        gridBody.innerHTML = "<p style='color:#666; padding: 20px;'>참여 작품 정보가 없습니다.</p>";
+    } else {
+        // map으로 생성할 때 각 이미지에 에러 핸들링과 기본 높이 유도
+        gridBody.innerHTML = cv.characters.map(char => `
+            <div class="work-card">
+                <div style="background:#000; width:100%;">
+                    <img src="${char.charimg}" alt="${char.charName}" 
+                         loading="lazy"
+                         onerror="this.src='https://via.placeholder.com/150x200?text=No+Image'">
+                </div>
+                <div class="work-card-info">
+                    <div class="work-card-title" style="color:#fff; font-weight:bold; font-size:0.9rem; margin-bottom:4px;">${char.animeTitle}</div>
+                    <div class="work-card-sub" style="color:var(--gold); font-size:0.8rem;">${char.charName} 역</div>
+                    <div class="work-card-year" style="color:#666; font-size:0.7rem; margin-top:2px;">${char.year}년</div>
+                </div>
+            </div>
+        `).join('');
+    }
+
+    modal.classList.remove("hidden");
+}
+
+function closeWorksModal() {
+    document.getElementById("works-modal").classList.add("hidden");
+}
+/**
+ * 후보 선택 로직 (통합본)
+ */
+function selectCandidate(cv, cardElement) {
+    // 1. 모든 카드 선택 해제 및 현재 카드 강조
+    document.querySelectorAll(".card").forEach(c => c.classList.remove("selected"));
+    cardElement.classList.add("selected");
+
+    // 2. 상태 저장
+    rookiestate.selectedCV = cv;
+
+    // 3. 사이드바 상태 텍스트 업데이트
+    const display = document.getElementById("selected-name-display");
+    display.innerText = `선택됨: ${cv.name}`;
+    display.style.color = "var(--gold)";
+
+    // 4. 수상 결정 버튼 활성화
+    document.getElementById("btn-award").disabled = false;
+}
+
+/**
+ * 수상 결정 처리
+ */
+function handleAwardDecision() {
+    const cv = rookiestate.selectedCV;
+    if (!cv) return;
+
+    saveWinnerToLocal(cv);
+
+    // 폭죽 효과 (z-index 9999 반영)
     if (typeof confetti === 'function') {
         confetti({
             particleCount: 150,
             spread: 70,
             origin: { y: 0.6 },
-            colors: ['#ffd700', '#ffffff']
+            colors: ['#d4af37', '#ffffff']
         });
     }
 
-    // 내부 HTML 구조 생성 (필모그래피 정보 포함)
-    const content = renderFilmoHTML(cv, "🏆 올해의 신인상 수상");
-    popup.innerHTML = content;
-    
-    // 수상 팝업일 경우 특별 클래스 추가 (선택사항)
-    popup.querySelector('.filmo-split-layout').classList.add('award-mode');
-    
-    popup.style.display = "flex";
-}
-
-function openFilmoPopup(cv) {
-    const popup = document.getElementById("winner-popup");
-    popup.innerHTML = renderFilmoHTML(cv, "성우 필모그래피");
-    popup.style.display = "flex";
+    openAwardModal(cv);
 }
 
 /**
- * 공통 레이아웃 생성 함수
+ * 모달 오픈 및 내용 주입
  */
-function renderFilmoHTML(cv, titleLabel) {
-    const groups = {};
-    (cv.characters || []).forEach(char => {
-        const y = char.year || "기타";
-        if (!groups[y]) groups[y] = [];
-        groups[y].push(char);
-    });
+function openAwardModal(cv) {
+    const modal = document.getElementById("winner-modal");
+    const modalBody = document.getElementById("modal-body");
+    const displayImg = cv.cvimg || (cv.characters?.[0]?.charimg);
 
-    const sortedYears = Object.keys(groups).sort((a, b) => b - a);
-    const mainImg = cv.cvimg || (cv.characters[0] ? cv.characters[0].charimg : "");
-
-    // '🏆'가 포함된 타이틀일 경우 수상 모드로 판단
-    const isAward = titleLabel.includes("수상");
-
-    return `
-        <div class="filmo-split-layout ${isAward ? 'award-mode' : ''}">
-            <button class="close-filmo" onclick="closePopup()">✕</button>
-            <div class="filmo-left">
-                <div class="award-title-label">${titleLabel}</div>
-                <img src="${mainImg}" class="cv-main-img" onerror="this.src='https://via.placeholder.com/240x320'">
-                <h2 class="cv-name-ko" style="font-size: 2rem; margin: 10px 0;">${cv.name}</h2>
-                <div class="cv-debut">DEBUT: <span style="color:gold">${cv.debutYear || '2026'}</span></div>
-                
-                ${isAward ? `
-                    <button class="confirm-home-btn" onclick="location.href='../main/main.html'">
-                        확인 및 메인으로
-                    </button>
-                ` : ''}
+    modalBody.innerHTML = `
+        <div class="winner-layout">
+            <div class="winner-left">
+                <img src="${displayImg}" alt="${cv.name}">
             </div>
-            <div class="filmo-right">
-                <div class="filmo-scroll-container">
-                    ${sortedYears.map(year => `
-                        <div class="year-group">
-                            <div class="year-label">${year}</div>
-                            <div class="char-grid-view">
-                                ${groups[year].map(c => `
-                                    <div class="char-unit">
-                                        <div class="char-img-wrap"><img src="${c.charimg}"></div>
-                                        <div class="char-info-text">
-                                            <div class="c-anime-title">${c.animeTitle}</div>
-                                            <div class="c-name">${c.charName}</div>
-                                        </div>
-                                    </div>
-                                `).join('')}
-                            </div>
-                        </div>
-                    `).join('')}
+            <div class="winner-right">
+                <h2 id="modal-title">${cv.name}</h2>
+                <div class="info-row">
+                    <span class="info-label">수상 부문</span>
+                    <span class="info-value">${rookiestate.awardName}</span>
                 </div>
+                <div class="info-row">
+                    <span class="info-label">데뷔 연도</span>
+                    <span class="info-value">${cv.debutYear || '2026'}</span>
+                </div>
+                <button class="gold-btn" style="margin-top:auto; width:100%;" onclick="location.href='../main/main.html'">
+                    확인 및 메인으로
+                </button>
             </div>
         </div>
     `;
-}
-function closePopup() {
-    document.getElementById("winner-popup").style.display = "none";
+    modal.classList.remove("hidden");
 }
 
 function saveWinnerToLocal(cv) {
-    // 1. 기존 데이터를 가져오되, 없으면 빈 객체({})를 기본값으로 설정 (중요!)
     let results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
-
-    // 2. results가 배열이라면 객체로 강제 변환 (데이터 무결성 방어)
-    if (Array.isArray(results)) results = {};
-
-    // 3. 현재 어워드 이름을 문자열로 가져오기
-    const awardKey = rookiestate.currentAward ? rookiestate.currentAward.name : null;
-
-    if (!awardKey) {
-        console.error("수상 부문(awardName)을 찾을 수 없습니다.");
-        return;
-    }
-
-    // 4. 새로운 수상자 데이터 객체 생성 및 할당
-    results[awardKey] = {
+    results[rookiestate.awardName] = {
         name: cv.name,
-        thumbnail: cv.cvimg || (cv.characters && cv.characters[0] ? cv.characters[0].charimg : ''),
+        thumbnail: cv.cvimg || cv.characters?.[0]?.charimg,
         debutYear: cv.debutYear || '2026'
     };
-
-    // 5. 로컬스토리지에 다시 저장
     localStorage.setItem("anime_awards_result", JSON.stringify(results));
+}
+
+function initSearch() {
+    const input = document.getElementById("search-input");
+    input.addEventListener("input", (e) => {
+        const keyword = e.target.value.toLowerCase();
+        const cards = document.querySelectorAll(".card");
+        
+        cards.forEach(card => {
+            const name = card.querySelector(".card-title").textContent.toLowerCase();
+            card.style.display = name.includes(keyword) ? "block" : "none";
+        });
+    });
 }

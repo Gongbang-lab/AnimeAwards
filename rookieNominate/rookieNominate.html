@@ -5,25 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>2026 Rookie Awards - Nominate</title>
   <link rel="stylesheet" href="./rookieNominate.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body class="dark-theme">
 
-  <main class="nominate-page">
-    <section class="nominate-left">
-        <h2 class="step-title">2026 신인 성우상 후보</h2>
-        <div id="rookie-grid" class="final-vote-grid">
-            </div>
-    </section>
-
-    <aside class="nominate-right">
-      <div id="step2-buttons" class="step-buttons">
-        <button id="btn-home" class="step-btn secondary">메인으로</button>
-        <button id="btn-award" class="step-btn primary gold" disabled>수상 결정</button>
+  <nav class="top-nav">
+    <div class="nav-content-area">
+      <div class="brand">2026 ROOKIE AWARDS</div>
+      <div id="step-title">올해의 신인 성우상 후보 선정</div>
+    </div>
+    <div class="nav-sidebar-area">
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="성우 이름 검색..." autocomplete="off">
       </div>
-    </aside>
+    </div>
+  </nav>
+
+  <main class="content-wrapper">
+    <div class="container">
+      <section class="content-area">
+        <div id="rookie-grid" class="day-content"></div>
+      </section>
+
+      <aside class="sidebar">
+        <div class="action-buttons-vertical">
+          <div class="status-indicator">
+            <span id="selected-name-display">후보를 선택해주세요</span>
+          </div>
+          <div class="control-row">
+            <button id="btn-award" class="gold-btn" disabled>수상 결정</button>
+            <button id="btn-home" class="btn-outline">메인으로</button>
+          </div>
+        </div>
+      </aside>
+    </div>
   </main>
 
-  <div id="winner-popup" class="winner-popup-overlay"></div>
+  <div id="works-modal" class="modal hidden">
+    <div class="modal-content works-modal-content">
+      <div class="works-modal-left" id="works-cv-info"></div>
+
+      <div class="works-modal-right">
+        <h2 class="modal-header" style="font-size: 1.4rem; margin-top: 0;">참여 작품 목록</h2>
+        <hr class="modal-divider">
+        <div id="works-grid-body" class="works-grid"></div>
+        <button class="gold-btn" style="width: 100%; margin-top: 20px;" onclick="closeWorksModal()">닫기</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="winner-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2 class="modal-header">🏆 WINNER ANNOUNCEMENT</h2>
+      <hr class="modal-divider">
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <canvas id="confettiCanvas"></canvas>
 
   <script src="../data/animeRookieCVData.js"></script>
   <script src="./rookieNominate.js"></script>
