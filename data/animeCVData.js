@@ -289,6 +289,11 @@ const CharacterVoiceData = {
         "charName": "리처드 처치",
         "animeTitle": "프리즘 윤무곡",
         "img": "../image/charimg/Q1/Prism_Rondo/Richard_Church.jpg"
+      },
+      {
+        "charName": "오오토 칸쿠로",
+        "animeTitle": "화식조 우슈보로토비구미",
+        "img": "../image/charimg/Q1/Hikuidori/Kankurou_Ooto.jpg"
       }
     ]
   },
@@ -691,21 +696,6 @@ const CharacterVoiceData = {
         "charName": "칸노 코나미",
         "animeTitle": "데드 어카운트",
         "img": "../image/charimg/Q1/Dead_Account/Konami_Kanno.jpg"
-      },
-      {
-        "charName": "핫 팬츠",
-        "animeTitle": "스틸 볼 런: 죠죠의 기묘한 모험",
-        "img": "../image/charimg/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Hot_Pants.jpg"
-      },
-      {
-        "charName": "마운틴 팀",
-        "animeTitle": "스틸 볼 런: 죠죠의 기묘한 모험",
-        "img": "../image/charimg/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Mountain_Tim.jpg"
-      },
-      {
-        "charName": "ドット・ハーン",
-        "animeTitle": "스틸 볼 런: 죠죠의 기묘한 모험",
-        "img": "../image/charimg/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Dot_Han.jpg"
       }
     ]
   },
@@ -1783,7 +1773,7 @@ const CharacterVoiceData = {
   "이자와 시오리": {
     "name": "이자와 시오리",
     "cvimg": "../image/cvimg/이자와 시오리.webp",
-    "gender": "male",
+    "gender": "female",
     "characters": [
       {
         "charName": "セリオ",
@@ -1846,7 +1836,7 @@ const CharacterVoiceData = {
   "코자카이 유리에": {
     "name": "코자카이 유리에",
     "cvimg": "../image/cvimg/코자카이 유리에.webp",
-    "gender": "male",
+    "gender": "female",
     "characters": [
       {
         "charName": "シグマ",
@@ -2008,7 +1998,7 @@ const CharacterVoiceData = {
   "타네자키 아츠미": {
     "name": "타네자키 아츠미",
     "cvimg": "../image/cvimg/타네자키 아츠미.webp",
-    "gender": "male",
+    "gender": "female",
     "characters": [
       {
         "charName": "찰리 슈타인",
@@ -2552,12 +2542,17 @@ const CharacterVoiceData = {
   "산페이 유코": {
     "name": "산페이 유코",
     "cvimg": "../image/cvimg/산페이 유코.webp",
-    "gender": "male",
+    "gender": "female",
     "characters": [
       {
         "charName": "마유",
         "animeTitle": "마왕의 딸은 너무 친절해!!",
         "img": "../image/charimg/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Mayu.jpg"
+      },
+      {
+        "charName": "페어리",
+        "animeTitle": "불꽃 소방대 3장",
+        "img": "../image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Faerie.jpg"
       }
     ]
   },
@@ -2893,7 +2888,7 @@ const CharacterVoiceData = {
   "나나미 카린": {
     "name": "나나미 카린",
     "cvimg": "../image/cvimg/나나미 카린.webp",
-    "gender": "male",
+    "gender": "female",
     "characters": [
       {
         "charName": "노아 아라라트",
@@ -3842,18 +3837,6 @@ const CharacterVoiceData = {
       }
     ]
   },
-  "M・A・O": {
-    "name": "M・A・O",
-    "cvimg": "../image/cvimg/M・A・O.webp",
-    "gender": "female",
-    "characters": [
-      {
-        "charName": "릴리 오를라뮌데",
-        "animeTitle": "에리스의 성배",
-        "img": "../image/charimg/Q1/Eris_no_Seihai/Lily_Orlamunde.jpg"
-      }
-    ]
-  },
   "오가타 메구미": {
     "name": "오가타 메구미",
     "cvimg": "../image/cvimg/오가타 메구미.webp",
@@ -4569,18 +4552,6 @@ const CharacterVoiceData = {
       }
     ]
   },
-  "M·A·O": {
-    "name": "M·A·O",
-    "cvimg": "../image/cvimg/M·A·O.webp",
-    "gender": "female",
-    "characters": [
-      {
-        "charName": "아마노 쟈코",
-        "animeTitle": "하이스쿨! 기면조",
-        "img": "../image/charimg/Q1/High_School!_Kimengumi_(2026)/Jako_Amano.jpg"
-      }
-    ]
-  },
   "사쿠라 카오루": {
     "name": "사쿠라 카오루",
     "cvimg": "../image/cvimg/사쿠라 카오루.webp",
@@ -4765,7 +4736,7 @@ const CharacterVoiceData = {
   "미야케 마리에": {
     "name": "미야케 마리에",
     "cvimg": "../image/cvimg/미야케 마리에.webp",
-    "gender": "male",
+    "gender": "female",
     "characters": [
       {
         "charName": "토머스 그란벨",
@@ -4837,9 +4808,9 @@ const CharacterVoiceData = {
       }
     ]
   },
-  "M.A.O": {
-    "name": "M.A.O",
-    "cvimg": "../image/cvimg/M.A.O.webp",
+  "M·A·O": {
+    "name": "M·A·O",
+    "cvimg": "../image/cvimg/M·A·O.webp",
     "gender": "female",
     "characters": [
       {
@@ -4851,6 +4822,26 @@ const CharacterVoiceData = {
         "charName": "티르",
         "animeTitle": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
         "img": "../image/charimg/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Till.jpg"
+      },
+      {
+        "charName": "아이리스",
+        "animeTitle": "불꽃 소방대 3장",
+        "img": "../image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Iris.jpg"
+      },
+      {
+        "charName": "티르",
+        "animeTitle": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
+        "img": "../image/charimg/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Till.jpg"
+      },
+	    {
+        "charName": "릴리 오를라뮌데",
+        "animeTitle": "에리스의 성배",
+        "img": "../image/charimg/Q1/Eris_no_Seihai/Lily_Orlamunde.jpg"
+      },
+	    {
+        "charName": "아마노 쟈코",
+        "animeTitle": "하이스쿨! 기면조",
+        "img": "../image/charimg/Q1/High_School!_Kimengumi_(2026)/Jako_Amano.jpg"
       }
     ]
   },
@@ -4874,7 +4865,7 @@ const CharacterVoiceData = {
   "사카모토 마아야": {
     "name": "사카모토 마아야",
     "cvimg": "../image/cvimg/하토리 사츠키.webp",
-    "gender": "male",
+    "gender": "female",
     "characters": [
       {
         "charName": "쇼우 쿠사카베",
@@ -4885,18 +4876,6 @@ const CharacterVoiceData = {
         "charName": "사카요리 모미지",
         "animeTitle": "초(超) 가구야 공주!",
         "img": "../image/charimg/Q1/Chou_Kaguya-hime!/Momiji_Sakayori.jpg"
-      }
-    ]
-  },
-  "산페이 유코": {
-    "name": "산페이 유코",
-    "cvimg": "../image/cvimg/산페이 유코.webp",
-    "gender": "male",
-    "characters": [
-      {
-        "charName": "페어리",
-        "animeTitle": "불꽃 소방대 3장",
-        "img": "../image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Faerie.jpg"
       }
     ]
   },
@@ -4988,7 +4967,7 @@ const CharacterVoiceData = {
   "우치야마 유미": {
     "name": "우치야마 유미",
     "cvimg": "../image/cvimg/우치야마 유미.webp",
-    "gender": "male",
+    "gender": "female",
     "characters": [
       {
         "charName": "반 네이 페르티오",
@@ -5106,7 +5085,7 @@ const CharacterVoiceData = {
   "타라코": {
     "name": "타라코",
     "cvimg": "../image/cvimg/타라코.webp",
-    "gender": "male",
+    "gender": "female",
     "characters": [
       {
         "charName": "저지 더 비스트",
@@ -6077,7 +6056,7 @@ const CharacterVoiceData = {
   "히나 마도카": {
     "name": "히나 마도카",
     "cvimg": "../image/cvimg/히나 마도카.webp",
-    "gender": "male",
+    "gender": "female",
     "characters": [
       {
         "charName": "たちばなカン",
@@ -6183,7 +6162,7 @@ const CharacterVoiceData = {
   "타이치 요우": {
     "name": "타이치 요우",
     "cvimg": "../image/cvimg/타이치 요우.webp",
-    "gender": "male",
+    "gender": "female",
     "characters": [
       {
         "charName": "로간 헤이워드",
@@ -6525,18 +6504,6 @@ const CharacterVoiceData = {
         "charName": "렌지",
         "animeTitle": "화식조 우슈보로토비구미",
         "img": "../image/charimg/Q1/Hikuidori/Renji.jpg"
-      }
-    ]
-  },
-  "스와베 쥰이치": {
-    "name": "스와베 쥰이치",
-    "cvimg": "../image/cvimg/스와베 준이치.webp",
-    "gender": "male",
-    "characters": [
-      {
-        "charName": "오오토 칸쿠로",
-        "animeTitle": "화식조 우슈보로토비구미",
-        "img": "../image/charimg/Q1/Hikuidori/Kankurou_Ooto.jpg"
       }
     ]
   },
@@ -7017,7 +6984,7 @@ const CharacterVoiceData = {
   "토리고에 마아야": {
     "name": "토리고에 마아야",
     "cvimg": "../image/cvimg/토리고에 마아야.webp",
-    "gender": "male",
+    "gender": "female",
     "characters": [
       {
         "charName": "플로로",

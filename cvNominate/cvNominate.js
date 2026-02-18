@@ -1,260 +1,325 @@
 /**
- * 1. 상태 관리 객체
+ * 상태 관리
  */
 const cvState = {
     step: 1,
     theme: new URLSearchParams(location.search).get("theme") || "character_male",
     currentAward: new URLSearchParams(location.search).get("awardName") || "올해의 성우상",
-    selectedCVs: [], // 선택된 성우 객체 리스트
+    selectedCVs: [], 
     finalWinner: null
 };
 
-/**
- * 2. 초기 로드
- */
 document.addEventListener("DOMContentLoaded", () => {
+    // Top Nav 설정
+    document.querySelector(".brand").textContent = cvState.currentAward;
+    
+    // 검색 이벤트 바인딩
+    document.getElementById("search-input").addEventListener("input", (e) => {
+        renderCVStep1(e.target.value);
+    });
+
+    // 버튼 이벤트 바인딩
+    document.getElementById("btn-next").onclick = goStep2;
+    document.getElementById("btn-back").onclick = handleBack;
+    document.getElementById("final-confirm-btn").onclick = () => location.href = "../main/main.html";
+
     renderCVStep1();
-    bindButtons();
 });
 
 /**
- * 3. Step 1: 초성 아코디언 및 성우 리스트 렌더링
+ * Step 1: 성우 리스트 렌더링 (아코디언 스타일 적용)
  */
 function renderCVStep1(searchTerm = "") {
-    const leftArea = document.getElementById("left-area");
-    if (!leftArea) return;
-
-    const genderKey = cvState.theme.includes("female") ? "female" : "male";
+    const mainContent = document.getElementById("main-content");
+    const stepTitle = document.getElementById("step-title");
     
-    // 검색창이 이미 있는지 확인 (없을 때만 생성하여 한글 입력 끊김 방지)
-    if (!document.getElementById("cv-search")) {
-        leftArea.innerHTML = `
-            <div class="search-container">
-                <input type="text" id="cv-search" placeholder="성우 이름을 검색하세요..." oninput="handleSearch(this.value)">
-            </div>
-            <h2 class="step-title">${cvState.currentAward} 후보 선택</h2>
-            <div id="cv-list-container"></div>
-        `;
-    }
-
-    const listContainer = document.getElementById("cv-list-container");
-    
-    // 데이터 필터링
-    let filteredList = Object.values(CharacterVoiceData)
-        .filter(cv => String(cv.gender).toLowerCase() === genderKey);
-
-    if (searchTerm.trim() !== "") {
-        filteredList = filteredList.filter(cv => 
-            cv.name.toLowerCase().includes(searchTerm.toLowerCase().trim())
-        );
-    }
-
-    filteredList.sort((a, b) => a.name.localeCompare(b.name, 'ko'));
-
-    // 초성 그룹화 및 리스트 생성
-    const groups = {};
-    filteredList.forEach(cv => {
-        const cho = getChosung(cv.name);
-        if (!groups[cho]) groups[cho] = [];
-        groups[cho].push(cv);
-    });
-
-    listContainer.innerHTML = ""; // 리스트 부분만 초기화
-    const choList = ["ㄱ", "ㄴ", "ㄷ", "ㄹ", "ㅁ", "ㅂ", "ㅅ", "ㅇ", "ㅈ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ"];
-    
-    choList.forEach(cho => {
-        if (!groups[cho]) return;
-
-        const accordion = createAccordion(cho, "cho-btn");
-        const content = accordion.querySelector(".accordion-content");
+    if (cvState.step === 1) {
+        stepTitle.textContent = "후보를 선택하세요 (복수 선택 가능)";
+        mainContent.innerHTML = ""; // 초기화
         
-        // 검색 중이면 아코디언 열기
-        if (searchTerm) content.style.display = "block";
+        const genderKey = cvState.theme.includes("female") ? "female" : "male";
+        
+        // 1. 데이터 필터링
+        let filteredList = Object.values(CharacterVoiceData)
+            .filter(cv => String(cv.gender).toLowerCase() === genderKey);
 
-        const cvGrid = document.createElement("div");
-        cvGrid.className = "cv-card-grid";
+        if (searchTerm.trim() !== "") {
+            filteredList = filteredList.filter(cv => 
+                cv.name.toLowerCase().includes(searchTerm.toLowerCase().trim())
+            );
+        }
 
-        groups[cho].forEach(cv => {
-            cvGrid.appendChild(createCVCard(cv, "step1"));
+        // 2. 그룹화 (작품 수 기준)
+        const groups = {};
+        filteredList.forEach(cv => {
+            const count = cv.characters ? cv.characters.length : 0;
+            const groupKey = `${count}개 작품 참여`;
+            if (!groups[groupKey]) groups[groupKey] = { count: count, list: [] };
+            groups[groupKey].list.push(cv);
         });
 
-        content.appendChild(cvGrid);
-        listContainer.appendChild(accordion);
-    });
-}
+        const sortedGroupKeys = Object.keys(groups).sort((a, b) => groups[b].count - groups[a].count);
 
-// 한글 포커스 유지를 위한 검색 핸들러
-function handleSearch(val) {
-    renderCVStep1(val);
+        // 3. 렌더링 (CSS 클래스 .quarter-section 활용)
+        sortedGroupKeys.forEach(groupKey => {
+            const groupData = groups[groupKey];
+            groupData.list.sort((a, b) => a.name.localeCompare(b.name, 'ko'));
+
+            // 섹션 컨테이너
+            const section = document.createElement("div");
+            section.className = "quarter-section";
+
+            // 헤더 버튼
+            const btn = document.createElement("button");
+            btn.className = "quarter-btn";
+            btn.innerHTML = `<span>${groupKey}</span> <span>▼</span>`;
+            
+            // 콘텐츠 그리드
+            const content = document.createElement("div");
+            content.className = "day-content";
+            content.style.display = "none"; // 기본 숨김
+
+            // 검색 중이면 자동 펼침
+            if (searchTerm) {
+                content.style.display = "grid";
+                btn.classList.add("active");
+            }
+
+            // 토글 이벤트
+            btn.onclick = () => {
+                const isOpen = content.style.display === "grid";
+                content.style.display = isOpen ? "none" : "grid";
+                btn.classList.toggle("active", !isOpen);
+            };
+
+            // 카드 생성
+            groupData.list.forEach(cv => {
+                content.appendChild(createCVCard(cv, "step1"));
+            });
+
+            section.appendChild(btn);
+            section.appendChild(content);
+            mainContent.appendChild(section);
+        });
+    }
 }
 
 /**
- * 4. 성우 카드 생성 (Step 1 & 2 공통)
+ * 카드 생성 함수 (CSS .card 클래스 사용)
  */
 function createCVCard(cv, step) {
     const card = document.createElement("div");
-    const isSelected = cvState.selectedCVs.some(v => v.name === cv.name);
+    card.className = "card";
     
-    if (step === "step1") {
-        card.className = "cv-card";
-        if (isSelected) card.classList.add("selected");
-        
-        // 체크 버튼 삭제 후 UI 재구성
-        card.innerHTML = `
-            <div class="cv-img-circle-wrapper">
-                <img src="${cv.cvimg}" class="cv-card-img-circle">
-            </div>
-            <div class="cv-card-name">${cv.name}</div>
-            <div class="cv-card-btns">
-                <button class="icon-btn info" title="정보 보기">
-                    <img src="https://img.icons8.com/material-rounded/24/ffffff/info.png"/>
-                </button>
-            </div>
-        `;
+    // 1. 배지 생성 (클릭 시 상세 정보 팝업)
+    const badge = document.createElement("div");
+    badge.className = "card-badge";
+    badge.textContent = `${cv.characters.length}작품`;
+    
+    badge.onclick = (e) => {
+        e.stopPropagation(); // 카드 전체 클릭 이벤트(선택) 방지
+        openDetailModal(cv);
+    };
+    
+    // 2. 카드 상태 설정 (이미 선택된 경우)
+    const isSelected = cvState.selectedCVs.some(v => v.name === cv.name);
+    if (step === "step1" && isSelected) card.classList.add("selected");
 
-        // [핵심] 카드 자체를 클릭하면 선택/해제
-        card.onclick = () => {
+    // 3. 카드 내부 레이아웃
+    card.innerHTML = `
+        <img src="${cv.cvimg}" loading="lazy" onerror="this.src='https://via.placeholder.com/200x300'">
+        <div class="card-info">
+            <div class="card-title">${cv.name}</div>
+        </div>
+    `;
+    
+    card.prepend(badge); // 배지를 카드 맨 위에 배치
+
+    // 4. 카드 본체 클릭 이벤트
+    card.onclick = () => {
+        if (step === "step1") {
+            // Step 1: 다중 선택 및 프리뷰 업데이트
             toggleCVSelection(cv, card);
-        };
-
-        // 정보 버튼 클릭 시에는 카드 선택 이벤트가 발생하지 않도록 차단
-        card.querySelector(".info").onclick = (e) => {
-            e.stopPropagation(); 
-            openCVDetailPopup(cv.name);
-        };
-
-    } else {
-        // Step 2 (단일 선택 방식)
-        card.className = "cv-vote-card";
-        card.innerHTML = `
-            <div class="card-img-wrapper">
-                <img src="${cv.cvimg}" class="full-img-rect">
-            </div>
-            <div class="card-info">
-                <div class="info-name">${cv.name}</div>
-                <button class="icon-btn info-bottom" onclick="event.stopPropagation(); openCVDetailPopup('${cv.name}')">
-                    <img src="https://img.icons8.com/material-rounded/24/ffffff/info.png"/>
-                </button>
-            </div>
-        `;
-
-        card.onclick = () => {
-            document.querySelectorAll(".cv-vote-card").forEach(c => c.classList.remove("active"));
-            card.classList.add("active");
+        } else {
+            // Step 2: 단일 선택 (최종 투표)
+            document.querySelectorAll("#step2-grid .card").forEach(c => c.classList.remove("selected"));
+            card.classList.add("selected");
             cvState.finalWinner = cv;
-            document.getElementById("step2-award-btn").disabled = false;
-        };
-    }
+            document.getElementById("btn-next").disabled = false;
+        }
+    };
+
     return card;
 }
+
 /**
- * 5. 성우 선택 토글 로직
+ * 선택 및 프리뷰 로직
  */
 function toggleCVSelection(cv, cardElement) {
     const index = cvState.selectedCVs.findIndex(v => v.name === cv.name);
+    
     if (index > -1) {
+        // 이미 선택된 경우 제거
         cvState.selectedCVs.splice(index, 1);
         cardElement.classList.remove("selected");
     } else {
+        // 새로 선택하는 경우 추가
         cvState.selectedCVs.push(cv);
         cardElement.classList.add("selected");
     }
-    updateCVPreview();
+    
+    // 오른쪽 사이드바 프리뷰 박스 새로고침
+    updatePreview();
+}
+
+function updatePreview() {
+    const list = document.getElementById("preview-list");
+    const count = document.getElementById("selected-count");
+    const nextBtn = document.getElementById("btn-next");
+
+    // 요소가 존재할 때만 실행 (에러 방지)
+    if (count) {
+        count.textContent = cvState.selectedCVs.length;
+    }
+    
+    if (list) {
+        list.innerHTML = cvState.selectedCVs.map(cv => `
+            <div class="preview-item" onclick="removeCV('${cv.name}')">
+                ${cv.name} ✕
+            </div>
+        `).join('');
+    }
+
+    if (nextBtn) {
+        nextBtn.disabled = cvState.selectedCVs.length === 0;
+    }
+}
+
+function removeCV(name) {
+    const target = cvState.selectedCVs.find(v => v.name === name);
+    if (target) {
+        // 카드 UI 선택 해제 (현재 화면에 있다면)
+        const cards = document.querySelectorAll(".card");
+        cards.forEach(c => {
+            if (c.querySelector(".card-title").textContent === name) {
+                c.classList.remove("selected");
+            }
+        });
+        toggleCVSelection(target, { classList: { remove: ()=>{} } }); // 가상 객체로 로직 재활용
+    }
 }
 
 /**
- * 6. 프리뷰 업데이트 (텍스트 기반)
+ * Step 이동 로직
  */
-function updateCVPreview() {
-    const previewList = document.getElementById("preview-list");
-    const nextBtn = document.getElementById("step1-next-btn");
-    if (!previewList) return;
+function goStep2() {
+    if (cvState.step === 1) {
+        cvState.step = 2;
+        document.getElementById("step-title").textContent = "최종 수상자를 투표해주세요";
+        
+        // 사이드바 버튼 변경
+        document.getElementById("btn-back").textContent = "이전으로";
+        const nextBtn = document.getElementById("btn-next");
+        nextBtn.textContent = "투표 완료";
+        nextBtn.disabled = true;
 
-    previewList.innerHTML = cvState.selectedCVs.map(cv => `
-        <div class="preview-item cv-text-only" onclick="removeCVFromPreview('${cv.name}')">
-            ${cv.name}
+        // 메인 콘텐츠 교체 (그리드 뷰)
+        const mainContent = document.getElementById("main-content");
+        mainContent.innerHTML = `<div id="step2-grid"></div>`;
+        const grid = document.getElementById("step2-grid");
+
+        cvState.selectedCVs.forEach(cv => {
+            grid.appendChild(createCVCard(cv, "step2"));
+        });
+    } else {
+        // 최종 투표 완료
+        openWinnerModal();
+    }
+}
+
+function handleBack() {
+    if (cvState.step === 2) {
+        cvState.step = 1;
+        document.getElementById("btn-back").textContent = "메인으로";
+        document.getElementById("btn-next").textContent = "다음 단계";
+        document.getElementById("btn-next").disabled = false;
+        renderCVStep1(); // Step 1 다시 렌더링 (선택 상태 유지됨)
+        // 선택된 카드들 다시 표시
+        setTimeout(() => {
+             cvState.selectedCVs.forEach(cv => {
+                 // 화면에 있는 카드 찾아서 selected 클래스 추가하는 로직 필요하나
+                 // renderCVStep1 내부에서 이미 처리함
+             });
+        }, 50);
+    } else {
+        location.href = "../main/main.html";
+    }
+}
+
+/**
+ * 모달 관련 함수
+ */
+function openDetailModal(cv) {
+    const modal = document.getElementById("cv-detail-modal");
+    const nameEl = document.getElementById("detail-name");
+    const imgEl = document.getElementById("detail-img");
+    const worksContainer = document.getElementById("detail-works");
+
+    nameEl.textContent = `${cv.name} 참여 작품`;
+    imgEl.src = cv.cvimg;
+    
+    // 캐릭터 이미지와 애니 제목을 함께 보여주는 리스트 형식으로 생성
+    worksContainer.innerHTML = cv.characters.map(char => `
+        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px; background: #222; padding: 10px; border-radius: 8px;">
+            <img src="${char.img}" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 1px solid var(--gold);">
+            <div>
+                <div style="color: var(--gold); font-weight: bold; font-size: 0.9rem;">${char.animeTitle}</div>
+                <div style="color: #fff; font-size: 1rem;">${char.charName} 역</div>
+            </div>
+        </div>
+    `).join('');
+    
+    modal.classList.remove("hidden");
+}
+
+function openWinnerModal() {
+    const winner = cvState.finalWinner;
+    if (!winner) return;
+
+    // 1. 이미지 설정
+    document.getElementById("winner-img").src = winner.cvimg;
+
+    // 2. 우측 콘텐츠 생성 (이름 + 모든 작품 리스트)
+    const infoContent = document.getElementById("winner-info-content");
+    
+    // 작품 리스트 HTML 생성
+    const worksListHTML = winner.characters.map(char => `
+        <div class="info-row">
+            <span class="info-label">${char.animeTitle}</span>
+            <span class="info-value">${char.charName} 역</span>
         </div>
     `).join('');
 
-    if (nextBtn) nextBtn.disabled = cvState.selectedCVs.length === 0;
-}
-
-function removeCVFromPreview(name) {
-    cvState.selectedCVs = cvState.selectedCVs.filter(v => v.name !== name);
-    renderCVStep1(); // 왼쪽 카드 상태 동기화
-    updateCVPreview();
-}
-
-/**
- * 7. 상세 정보 팝업 (좌: 배역 / 우: 성우)
- */
-function openCVDetailPopup(cvName) {
-    const cv = CharacterVoiceData[cvName];
-    const popup = document.getElementById("cv-detail-popup");
-    
-    popup.innerHTML = `
-        <div class="popup-content cv-detail-layout inverted">
-            <div class="popup-left cv-side">
-                <img src="${cv.cvimg}" class="cv-big-img-rect">
-                <h2>${cv.name}</h2>
-                <button onclick="closeCVPopup()" class="btn-close-simple">닫기</button>
-            </div>
-            <div class="popup-right characters-side">
-                <h3>담당 배역</h3>
-                <div class="popup-char-grid">
-                    ${cv.characters.map(c => `
-                        <div class="mini-char-card">
-                            <img src="${c.img}" class="full-img">
-                            <div class="m-info">
-                                <p class="m-anime">${c.animeTitle}</p>
-                                <p class="m-char">${c.charName}</p>
-                            </div>
-                        </div>
-                    `).join('')}
-                </div>
-            </div>
+    // 전체 구조 주입
+    infoContent.innerHTML = `
+        <div class="info-row" style="border-bottom: 2px solid var(--gold); margin-bottom: 15px; padding-bottom: 15px;">
+            <span class="info-label" style="font-size: 1.4rem;">수상자</span>
+            <span class="info-value" style="font-size: 1.4rem; color: #fff; font-weight: bold;">${winner.name}</span>
+        </div>
+        <div class="winner-works-scroll" style="max-height: 300px; overflow-y: auto; padding-right: 10px;">
+            ${worksListHTML}
         </div>
     `;
-    popup.style.display = "flex";
+
+    // 3. 모달 표시 및 폭죽
+    document.getElementById("winner-modal").classList.remove("hidden");
+    fireConfetti();
+
+    // 4. 로컬스토리지 저장 (결과창 연동용)
+    saveResult(winner);
 }
 
-function closeCVPopup() {
-    document.getElementById("cv-detail-popup").style.display = "none";
-}
-
-/**
- * 8. Step 전환 및 최종 투표
- */
-function goStep2() {
-    cvState.step = 2;
-    document.getElementById("step1-buttons").style.display = "none";
-    document.getElementById("step1-preview").style.display = "none";
-    document.getElementById("step2-buttons").style.display = "flex";
-
-    const leftArea = document.getElementById("left-area");
-    // [오류 2 해결] 중앙 정렬을 위한 컨테이너 구조
-    leftArea.innerHTML = `
-        <h2 class="step-title center">최종 성우 투표</h2>
-        <div class="cv-vote-container">
-            <div class="cv-vote-grid" id="vote-grid"></div>
-        </div>
-    `;
-    
-    const grid = document.getElementById("vote-grid");
-    cvState.selectedCVs.forEach(cv => {
-        grid.appendChild(createCVCard(cv, "step2"));
-    });
-}
-
-/**
- * 9. 최종 수상 팝업 연출
- */
-function openWinnerPopup() {
-    const winner = cvState.finalWinner;
-    const popup = document.getElementById("winner-popup");
-    if (!winner || !popup) return;
-
-    // 데이터 저장
+function saveResult(winner) {
     const results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
     results[cvState.currentAward] = {
         name: winner.name,
@@ -262,82 +327,22 @@ function openWinnerPopup() {
         works: winner.characters.map(c => c.charName).join(', ')
     };
     localStorage.setItem("anime_awards_result", JSON.stringify(results));
-
-    popup.innerHTML = `
-        <div class="popup-content award-layout">
-            <div class="award-left">
-                <img src="${winner.cvimg}" class="winner-img">
-            </div>
-            <div class="award-right">
-                <div class="congrats-label">BEST VOICE ACTOR</div>
-                <h1 class="winner-name">${winner.name}</h1>
-                <div class="winner-works-text">
-                    주요 출연작: ${winner.characters.map(c => c.charName).slice(0, 10).join(', ')}...
-                </div>
-                <button id="final-home-btn" class="btn-primary">확인 및 메인으로</button>
-            </div>
-        </div>
-    `;
-    popup.style.display = "flex";
-    fireConfetti();
-
-    document.getElementById("final-home-btn").onclick = () => {
-        location.href = "../main/main.html";
-    };
 }
 
-/**
- * 유틸리티: 초성 추출
- */
-function getChosung(str) {
-    const cho = ["ㄱ","ㄲ","ㄴ","ㄷ","ㄸ","ㄹ","ㅁ","ㅂ","ㅃ","ㅅ","ㅆ","ㅇ","ㅈ","ㅉ","ㅊ","ㅋ","ㅌ","ㅍ","ㅎ"];
-    const code = str.charCodeAt(0) - 44032;
-    if (code < 0 || code > 11171) return str[0];
-    return cho[Math.floor(code / 588)];
+function closeModal(id) {
+    document.getElementById(id).classList.add("hidden");
 }
 
-/**
- * 유틸리티: 아코디언 생성
- */
-function createAccordion(title, btnClass) {
-    const container = document.createElement("div");
-    container.className = "accordion-wrapper";
-    const btn = document.createElement("button");
-    btn.className = btnClass;
-    btn.textContent = title;
-    const content = document.createElement("div");
-    content.className = "accordion-content";
-    btn.onclick = () => {
-        const isOpen = content.style.display === "block";
-        content.style.display = isOpen ? "none" : "block";
-        btn.classList.toggle("active", !isOpen);
-    };
-    container.append(btn, content);
-    return container;
-}
-
-/**
- * 버튼 이벤트 바인딩
- */
-function bindButtons() {
-    document.getElementById("step1-next-btn").onclick = goStep2;
-    document.getElementById("step2-back-btn").onclick = () => location.reload();
-    document.getElementById("step2-award-btn").onclick = openWinnerPopup;
-    document.getElementById("step1-back-btn").onclick = () => location.href = "../main/main.html";
-}
-
-/**
- * 폭죽 함수 (기존 로직 유지)
- */
 function fireConfetti() {
-    const duration = 3 * 1000;
-    const animationEnd = Date.now() + duration;
-    const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 20000 };
-    const interval = setInterval(function() {
-        const timeLeft = animationEnd - Date.now();
+    var duration = 3 * 1000;
+    var animationEnd = Date.now() + duration;
+    var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 9999 };
+
+    var interval = setInterval(function() {
+        var timeLeft = animationEnd - Date.now();
         if (timeLeft <= 0) return clearInterval(interval);
-        const particleCount = 50 * (timeLeft / duration);
-        confetti({ ...defaults, particleCount, origin: { x: 0.2, y: 0.5 } });
-        confetti({ ...defaults, particleCount, origin: { x: 0.8, y: 0.5 } });
+        var particleCount = 50 * (timeLeft / duration);
+        confetti({ ...defaults, particleCount, origin: { x: 0.1, y: 0.6 } });
+        confetti({ ...defaults, particleCount, origin: { x: 0.9, y: 0.6 } });
     }, 250);
 }

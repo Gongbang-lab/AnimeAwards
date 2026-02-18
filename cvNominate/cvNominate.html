@@ -3,41 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>올해의 성우상 - 시상식</title>
+    <title>올해의 성우상 - 후보 선정</title>
     <link rel="stylesheet" href="cvNominate.css">
 </head>
 <body>
-    <div class="nominate-page">
-        <div id="left-area" class="nominate-left">
+    <nav class="top-nav">
+        <div class="nav-content-area">
+            <div class="brand">ANIME AWARDS</div>
+            <div id="step-title">올해의 성우상 후보 선발</div>
+        </div>
+        <div class="nav-sidebar-area">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="성우 이름 검색..." autocomplete="off">
+                <div id="autocomplete-list" class="autocomplete-items"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <div id="main-content" class="content-area">
+                </div>
+
+            <aside class="sidebar">
+                <div class="preview-box">
+                    <div id="preview-list">
+                </div>
             </div>
 
-        <div class="nominate-right">
-            <div id="step1-buttons" class="step-buttons">
-                <button id="step1-back-btn" class="step-btn secondary">메인으로</button>
-                <button id="step1-next-btn" class="step-btn primary" disabled>다음 단계</button>
-            </div>
-
-            <div id="step2-buttons" class="step-buttons" style="display: none;">
-                <button id="step2-back-btn" class="step-btn secondary">이전으로</button>
-                <button id="step2-award-btn" class="step-btn primary" disabled>시상하기</button>
-            </div>
-
-            <div id="step1-preview" class="step1-preview">
-                <div class="preview-title">선택된 성우 후보</div>
-                <div id="preview-list" class="preview-list">
-                    </div>
-            </div>
+                <div class="action-buttons">
+                    <button id="btn-back" class="btn-outline">메인으로</button>
+                    <button id="btn-next" class="gold-btn" disabled>다음 단계</button>
+                </div>
+            </aside>
         </div>
     </div>
 
-    <div id="cv-detail-popup" class="popup-overlay" style="display: none;">
+    <div id="cv-detail-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2 class="modal-header">성우 상세 정보</h2>
+            <hr class="modal-divider">
+            <div class="winner-layout">
+                <div class="winner-left">
+                    <img id="detail-img" src="" alt="성우 이미지">
+                </div>
+                <div class="winner-right">
+                    <h2 id="detail-name" style="color:white; margin-top:0;"></h2>
+                    <div id="detail-works" style="margin-top:20px; color:#ccc; max-height: 300px; overflow-y:auto;">
+                        </div>
+                </div>
+            </div>
+            <button onclick="closeModal('cv-detail-modal')" class="btn-outline" style="width:100%; margin-top:20px;">닫기</button>
         </div>
+    </div>
 
-    <div id="winner-popup" class="popup-overlay" style="display: none;">
+    <div id="winner-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2 class="modal-header">🏆 WINNER 🏆</h2>
+            <hr class="modal-divider">
+            <div class="winner-layout">
+                <div class="winner-left">
+                    <img id="winner-img" src="" alt="수상자">
+                </div>
+                <div class="winner-right">
+                    <div id="modal-title">BEST VOICE ACTOR</div>
+                    <div id="winner-info-content"></div>
+                </div>
+            </div>
+            <button id="final-confirm-btn" class="gold-btn" style="width:100%; margin-top:30px;">확인 및 종료</button>
         </div>
+    </div>
+
+    <canvas id="confettiCanvas"></canvas>
 
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-    
     <script src="../data/animeCVData.js"></script>
     <script src="cvNominate.js"></script>
 </body>

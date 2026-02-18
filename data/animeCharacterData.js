@@ -5120,24 +5120,6 @@ const CharacterData = [
         "gender": "male",
         "cv": "마츠다 켄이치로",
         "img": "../image/charimg/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Pocoloco.jpg"
-      },
-      {
-        "name": "핫 팬츠",
-        "gender": "female",
-        "cv": "Unknown",
-        "img": "../image/charimg/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Hot_Pants.jpg"
-      },
-      {
-        "name": "마운틴 팀",
-        "gender": "male",
-        "cv": "Unknown",
-        "img": "../image/charimg/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Mountain_Tim.jpg"
-      },
-      {
-        "name": "ドット・ハーン",
-        "gender": "unknown",
-        "cv": "Unknown",
-        "img": "../image/charimg/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Dot_Han.jpg"
       }
     ]
   },
