@@ -1,201 +1,178 @@
 :root {
     --gold: #d4af37;
-    --dark-bg: #121212;
-    --card-bg: #1e1e1e;
-    --text-white: #ffffff;
+    --dark-gold: #aa8a2e;
+    --black: #1a1a1a;
+    --gray: #2c2c2c;
+    --white: #ffffff;
+    --nav-height: 70px;
 }
 
 body {
-    background-color: var(--dark-bg);
-    color: var(--text-white);
+    background-color: var(--black);
+    color: var(--white);
     margin: 0;
     font-family: 'Pretendard', sans-serif;
+    overflow-x: hidden;
 }
 
-.container {
+/* 네비게이션 */
+.top-nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    height: var(--nav-height); background: rgba(20, 20, 20, 0.95);
+    display: flex; border-bottom: 2px solid var(--gold);
+    z-index: 1000; backdrop-filter: blur(10px);
+}
+.nav-content-area { flex: 7.5; display: flex; align-items: center; padding-left: 40px; }
+.brand { color: var(--gold); font-weight: 800; font-size: 1.4rem; margin-right: 25px; }
+#step-title-display { font-size: 1.1rem; color: #ccc; border-left: 3px solid var(--gray); padding-left: 15px; }
+
+.nav-sidebar-area {
+    flex: 2.5;
+    min-width: 300px;
     display: flex;
-    min-height: 100vh;
+    align-items: center;
+    justify-content: flex-end; /* 오른쪽 정렬 */
+    padding-right: 25px;       /* 벽면에서 살짝 띄움 */
+}
+.search-container {
+    width: 100%;
+    max-width: 500px; /* 원하는 길이(px)로 여기서 조절하세요 */
+    position: relative;
+}
+#search-input {
+    width: 100%; padding: 10px 15px; background: #000; border: 1px solid #444;
+    border-radius: 4px; color: white; outline: none; box-sizing: border-box;
 }
 
-/* 왼쪽 그리드 (7:3 비율) */
-.nominee-section {
-    flex: 7;
-    padding: 40px;
-    border-right: 1px solid #333;
+/* 레이아웃 */
+.content-wrapper { padding-top: var(--nav-height); }
+.container { display: flex; min-height: calc(100vh - var(--nav-height)); }
+.content-area { flex: 7.5; padding: 40px; border-right: 1px solid rgba(212, 175, 55, 0.3); }
+.sidebar {
+    flex: 2.5; background-color: #111; position: sticky;
+    top: var(--nav-height); height: calc(100vh - var(--nav-height));
+    padding: 25px; box-sizing: border-box;
 }
 
+/* 카드 스타일 */
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+    gap: 25px;
 }
-
 .card {
-    background: var(--card-bg);
-    border: 1px solid #333;
-    border-radius: 10px;
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.2s, border-color 0.2s;
+    background: var(--gray); border: 2px solid transparent;
+    border-radius: 10px; overflow: hidden; cursor: pointer; transition: 0.3s;
 }
-
-.card:hover {
-    transform: translateY(-5px);
-    border-color: var(--gold);
-}
-
-.card.selected {
-    border: 2px solid var(--gold);
-    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
-}
-
-.card img { width: 100%; height: 280px; object-fit: cover; }
-.card-info { padding: 12px; }
-.card-title { font-size: 1rem; font-weight: bold; margin-bottom: 5px; color: var(--gold); }
+.card:hover { transform: translateY(-8px); border-color: rgba(212, 175, 55, 0.5); }
+.card.selected { border-color: var(--gold); box-shadow: 0 0 20px rgba(212, 175, 55, 0.3); }
+.card img { width: 100%; aspect-ratio: 2/3; object-fit: cover; }
+.card-info { padding: 15px; text-align: center; }
+.card-title { font-weight: bold; color: var(--gold); margin-bottom: 5px; }
 .card-writer { font-size: 0.85rem; color: #bbb; }
 
-/* 오른쪽 사이드 패널 (3:3 비율) */
-.side-panel {
-    flex: 3;
-    padding: 30px;
-    background: #0a0a0a;
-}
-
-.sticky-content { position: sticky; top: 30px; }
-
-.btn-main, .btn-gold {
-    width: 100%; padding: 15px; margin-bottom: 20px;
-    border: 1px solid var(--gold); background: transparent;
-    color: var(--gold); font-weight: bold; cursor: pointer;
-    text-transform: uppercase;
-}
-
-.btn-main:hover {
-    background: rgba(212, 175, 55, 0.1);
-    color: #fff;
-    border-color: #fff;
-}
-
-.btn-gold { background: var(--gold); color: black; font-size: 1.1rem; }
-.btn-gold:hover { background: #b8860b; }
-
-.preview-container {
-    background: #1a1a1a;
-    border: 1px solid var(--gold);
+/* 사이드바 프리뷰 */
+.status-indicator {
+    padding: 20px;
+    background: #000;
+    border: 1px solid #333;
     border-radius: 8px;
-    padding: 15px;
     margin-bottom: 20px;
-    /* 크기 제한 추가 */
-    max-height: 400px; 
-    overflow-y: auto;
+    min-height: 200px;
+    transition: opacity 0.3s ease;
+}
+.preview-list { display: flex; flex-direction: column; gap: 10px; }
+.preview-item { font-size: 0.9rem; border-bottom: 1px solid #222; padding-bottom: 5px; }
+
+/* 버튼 */
+.gold-btn {
+    background: linear-gradient(135deg, var(--gold), var(--dark-gold));
+    color: black; font-weight: 800; padding: 16px; border: none;
+    cursor: pointer; border-radius: 6px; width: 100%; margin-bottom: 10px;
+}
+.btn-outline {
+    background: transparent; border: 1px solid var(--gold); color: var(--gold);
+    padding: 16px; font-weight: bold; cursor: pointer; border-radius: 6px; width: 100%;
 }
 
-.preview-container::-webkit-scrollbar {
-    width: 6px;
-}
-.preview-container::-webkit-scrollbar-thumb {
-    background: var(--gold);
-    border-radius: 10px;
-}
-
-.preview-item {
-    padding: 8px 0;
-    border-bottom: 1px solid #333;
-    font-size: 0.9rem;
-    color: #eee;
-    display: block; /* 텍스트 전용이므로 블록 처리 */
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; /* 글자가 길면 ... 처리 */
-}
-
-.preview-item:last-child {
-    border-bottom: none;
-}
-
-.preview-item img { width: 40px; height: 50px; object-fit: cover; }
-
-/* 팝업 모달 */
-.modal {
-    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(0,0,0,0.9); display: flex; align-items: center; justify-content: center; z-index: 100;
-}
-
-.modal-content {
-    background: var(--card-bg);
-    border: 2px solid var(--gold);
-    padding: 30px;
-    border-radius: 15px;
-    max-width: 700px; /* 가로로 넓게 설정 */
-    width: 90%;
-    position: relative;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-}
-.modal-category {
-    color: var(--gold);
-    font-size: 1.5rem;
-    margin-bottom: 25px;
-    letter-spacing: 2px;
-    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
-    padding-bottom: 15px;
-    text-align: center;
-}
-.modal-body {
+.control-row {
     display: flex;
-    gap: 30px;
-    text-align: left; /* 정보 정렬을 왼쪽으로 */
-}
-.modal-left {
-    flex: 4;
-}
-
-.modal-left img {
+    flex-direction: row; /* 가로 방향 정렬 */
+    gap: 10px;           /* 버튼 사이 간격 */
     width: 100%;
-    height: 350px;
-    object-fit: cover;
-    border: 2px solid var(--gold);
-    border-radius: 8px;
 }
-
-/* 오른쪽 정보 구역 */
-.modal-right {
-    flex: 6;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* 정보와 버튼 사이 간격 확보 */
+.control-row .gold-btn, 
+.control-row .btn-outline {
+    flex: 1;             /* 버튼이 공간을 똑같이 나눠 가짐 */
+    margin-bottom: 0;    /* 기존 하단 마진 제거 */
+    padding: 15px 5px;   /* 가로 폭이 좁아지므로 패딩 조정 */
+    font-size: 0.9rem;   /* 글자가 넘치지 않도록 폰트 소폭 조정 */
+    white-space: nowrap; /* 글자 줄바꿈 방지 */
 }
-.info-group h3 {
-    color: var(--gold);
-    font-size: 2rem;
-    margin: 0 0 15px 0;
+.hidden {
+    display: none !important;
+}
+/* 모달 (2분할) */
+.modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); display: flex; align-items: center; justify-content: center; z-index: 2000; }
+.winner-modal-content { display: flex; flex-direction: column; max-width: 1000px; width: 90%; height: 85vh; background: #1a1a1a; border: 3px solid var(--gold); border-radius: 15px; overflow: hidden; }
+.winner-top-section { padding: 25px; text-align: center; background: #111; }
+.winner-badge { color: var(--gold); font-weight: 800; font-size: 1.5rem; letter-spacing: 5px; }
+.winner-body-section { display: flex; flex: 1; }
+.winner-modal-left { flex: 4; padding: 30px; display: flex; align-items: center; justify-content: center; border-right: 1px solid #333; }
+.winner-modal-left img { width: 100%; max-height: 100%; object-fit: contain; border: 2px solid var(--gold); border-radius: 10px; }
+.winner-modal-right { flex: 6; padding: 50px; display: flex; flex-direction: column; justify-content: center; }
+.modal-label { color: var(--gold); font-size: 0.8rem; margin-bottom: 5px; text-transform: uppercase; }
+.winner-title { font-size: 2rem; margin: 0 0 25px 0; }
+.winner-name {
+    margin: 0;
+    font-weight: 900;
+    color: #fff;
     line-height: 1.2;
+    word-break: keep-all; /* 단어 단위로 줄바꿈 */
+    transition: font-size 0.2s ease-in-out; /* 크기 변경 시 부드럽게 */
 }
-
-.info-group p {
-    margin: 8px 0;
-    color: #eee;
-    font-size: 1rem;
-}
-
-.info-group strong {
-    color: var(--gold);
-    margin-right: 10px;
-}
-
-.winner-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-.winner-info img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border: 3px solid var(--gold);
-    box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
-}
-.winner-info h3 { color: var(--gold); font-size: 1.8rem; margin: 10px 0; }
-.winner-info p { margin: 5px 0; color: #ccc; }
+.winner-bottom-section { padding: 20px; background: #111; text-align: center; }
 
 .hidden { display: none !important; }
+
+#search-input {
+    width: 100%;
+    padding: 10px 15px;
+    background: #000;
+    border: 1px solid #444;
+    border-radius: 4px;
+    color: white;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#search-input:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.3);
+}
+
+/* 검색창 플레이스홀더 색상 */
+#search-input::placeholder {
+    color: #555;
+}
+
+.winner-studio {
+    font-size: 1.6rem;           /* 기존보다 눈에 띄게 크기 상향 */
+    color: #ddd;                /* 가독성을 위해 밝은 회색으로 변경 */
+    margin: 5px 0 0 0;
+    font-weight: 500;
+    letter-spacing: 1px;        /* 글자 사이 간격을 주어 세련된 느낌 추가 */
+    border-left: 4px solid var(--gold); /* 왼쪽에 골드 라인을 추가해 강조 (선택 사항) */
+    padding-left: 12px;
+}
+
+/* 상단 라벨(Studio) 스타일도 함께 조정하면 균형이 맞습니다 */
+.modal-label {
+    color: var(--gold);
+    font-size: 0.9rem;          /* 라벨 크기 소폭 상향 */
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;             /* 확실한 줄바꿈 */
+}

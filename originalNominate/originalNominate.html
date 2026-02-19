@@ -2,56 +2,84 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>각본상 노미네이트 - Step 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 Scriptwriter Awards - Nominate</title>
     <link rel="stylesheet" href="./originalNominate.css">
-
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
-<body>
-    <div class="container">
-        <main class="nominee-section">
-            <h2 id="step-title">각본상 후보 선정</h2>
-            <div id="card-grid" class="card-grid">
-                </div>
-        </main>
+<body class="dark-theme">
 
-<aside class="side-panel">
-    <div class="sticky-content">
-        <button id="nav-btn" class="btn-main" onclick="location.href='../main/main.html'">메인으로</button>
-        
-        <div class="preview-container">
-            <h3>Selection Preview</h3>
-            <div id="preview-list" class="preview-list"></div>
+    <nav class="top-nav">
+        <div class="nav-content-area">
+            <div class="brand">2026 AWARDS</div>
+            <div id="step-title-display">각본상 후보 선정</div>
         </div>
-
-        <div class="action-buttons">
-            <button id="next-btn" class="btn-gold" onclick="proceedToStep2()">다 음</button>
-            <button id="final-btn" class="btn-gold hidden" onclick="confirmFinalWinner()">최종 결정</button>
-        </div>
-    </div>
-</aside>
-    </div>
-
-<div id="winner-modal" class="modal hidden">
-    <div class="modal-content">
-        <h2 class="modal-category">각본상</h2>
-        
-        <div class="modal-body">
-            <div class="modal-left">
-                <img id="modal-img" src="" alt="Winner Thumbnail">
-            </div>
-            
-            <div class="modal-right">
-                <div class="info-group">
-                    <h3 id="modal-title">애니메이션 제목</h3>
-                    <p><strong>Studio:</strong> <span id="modal-studio">스튜디오</span></p>
-                    <p><strong>Scriptwriter:</strong> <span id="modal-writer">각본가</span></p>
-                </div>
-                <button class="btn-gold" onclick="goToMain()">확인 및 메인으로</button>
+        <div class="nav-sidebar-area">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="작품 또는 각본가 검색..." autocomplete="off">
             </div>
         </div>
+    </nav>
+
+    <main class="content-wrapper">
+        <div class="container">
+            <section class="content-area">
+                <div id="card-grid" class="card-grid">
+                    </div>
+            </section>
+
+            <aside class="sidebar">
+                <div class="sticky-content">
+                    <div class="action-buttons-vertical">
+                        <div class="status-indicator">
+                            <div id="preview-list" class="preview-list">
+                                <span style="font-size: 0.85rem; color:#555;">후보를 선택해주세요 (최소 2개)</span>
+                            </div>
+                        </div>
+
+                        <div class="control-row">
+                            <button id="nav-btn" class="btn-outline" onclick="location.href='../main/main.html'">메인으로</button>
+                            <button id="next-btn" class="gold-btn" onclick="proceedToStep2()">다음 단계</button>
+                            <button id="final-btn" class="gold-btn hidden" onclick="confirmFinalWinner()">수상 확정</button>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <div id="winner-modal" class="modal hidden">
+        <div class="modal-content winner-modal-content">
+            <div class="winner-top-section">
+                <div class="winner-badge">🏆 2026 BEST SCRIPT</div>
+            </div>
+
+            <div class="winner-body-section">
+                <div class="winner-modal-left">
+                    <img id="modal-img" src="" alt="Winner Thumbnail">
+                </div>
+                
+                <div class="winner-modal-right">
+                    <div class="info-stack">
+                        <h2 class="modal-label">Animation Title</h2>
+                        <h1 id="modal-title" class="winner-title">제목</h1>
+                        
+                        <hr class="modal-divider">
+                        
+                        <h2 class="modal-label">Scriptwriter</h2>
+                        <h1 id="modal-writer" class="winner-name">각본가</h1>
+                        
+                        <h2 class="modal-label">Studio</h2>
+                        <p id="modal-studio" class="winner-studio">제작사</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="winner-bottom-section">
+                <button class="gold-btn final-btn" onclick="goToMain()">확인 및 메인으로</button>
+            </div>
+        </div>
     </div>
-</div>
 
     <script src="../data/scriptwriterData.js"></script>
     <script src="./originalNominate.js"></script>

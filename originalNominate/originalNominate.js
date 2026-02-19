@@ -2,18 +2,47 @@ let currentStep = 1;
 let selectedItems = []; 
 let step1Selected = []; 
 
-// 초기 렌더링
 document.addEventListener('DOMContentLoaded', () => {
-    renderCards(scriptwriterData);
+    if(typeof scriptwriterData !== 'undefined') {
+        renderCards(scriptwriterData);
+    }
+});
+
+document.getElementById('search-input').addEventListener('input', function(e) {
+    const searchTerm = e.target.value.toLowerCase().trim();
+    
+    // 현재 단계에 따라 필터링 대상 데이터 결정
+    // Step 1이면 전체 데이터(scriptwriterData), Step 2이면 선택된 후보(step1Selected)
+    const targetData = (currentStep === 1) ? scriptwriterData : step1Selected;
+
+    const filteredData = targetData.filter(anime => {
+        const titleMatch = anime.title.toLowerCase().includes(searchTerm);
+        const writerMatch = anime.scriptwriter.some(writer => 
+            writer.toLowerCase().includes(searchTerm)
+        );
+        return titleMatch || writerMatch;
+    });
+
+    // 필터링된 결과로 카드 다시 그리기
+    renderCards(filteredData);
 });
 
 function renderCards(dataList) {
     const grid = document.getElementById('card-grid');
     grid.innerHTML = '';
+
+    if (dataList.length === 0) {
+        grid.innerHTML = `
+            <div style="grid-column: 1/-1; text-align: center; padding: 50px; color: #666;">
+                <p style="font-size: 1.2rem;">검색 결과가 없습니다.</p>
+            </div>
+        `;
+        return;
+    }
+
     dataList.forEach(anime => {
         const card = document.createElement('div');
         card.className = 'card';
-        // 이전에 선택했던 카드는 표시 유지 (Step 2에서 다시 돌아올 때 대비)
         if(selectedItems.find(i => i.id === anime.id)) card.classList.add('selected');
         
         card.innerHTML = `
@@ -42,17 +71,18 @@ function toggleSelect(anime, cardElement) {
             selectedItems.push(anime);
             cardElement.classList.add('selected');
         }
-        updatePreview();
     }
+    updatePreview();
 }
 
 function updatePreview() {
     const previewList = document.getElementById('preview-list');
     if (!previewList) return;
-    previewList.innerHTML = selectedItems.map(item => `<div class="preview-item">• ${item.title}</div>`).join('');
+    previewList.innerHTML = selectedItems.length === 0 
+        ? `<span style="color:#555;">후보를 선택해주세요</span>`
+        : selectedItems.map(item => `<div class="preview-item">• ${item.title}</div>`).join('');
 }
 
-// Step 2로 이동
 function proceedToStep2() {
     if (selectedItems.length < 2) {
         alert("최소 2개 이상의 작품을 선택해주세요!");
@@ -62,43 +92,40 @@ function proceedToStep2() {
     selectedItems = []; 
     currentStep = 2;
 
-    document.getElementById('step-title').textContent = "최종 수상작 결정";
+    document.getElementById('step-title-display').textContent = "최종 수상작 결정 (Step 2)";
     document.getElementById('next-btn').classList.add('hidden');
     document.getElementById('final-btn').classList.remove('hidden');
-    
-    // Preview 박스 숨기기 (삭제 대신 display none 처리하여 복구 가능하게 함)
-    document.querySelector('.preview-container').style.display = 'none';
 
-    // 메인으로 버튼 -> 뒤로가기 버튼으로 변경
+    const previewBox = document.querySelector('.status-indicator');
+    if (previewBox) previewBox.style.display = 'none';
+
     const navBtn = document.getElementById('nav-btn');
-    navBtn.textContent = "뒤로가기";
+    navBtn.textContent = "이전 단계";
     navBtn.onclick = backToStep1;
 
     renderCards(step1Selected);
+    updatePreview();
 }
 
-// Step 1로 복구
 function backToStep1() {
     currentStep = 1;
-    selectedItems = [...step1Selected]; // 이전 선택 복구
+    selectedItems = [...step1Selected];
 
-    document.getElementById('step-title').textContent = "각본상 후보 선정 (Step 1)";
+    document.getElementById('step-title-display').textContent = "각본상 후보 선정";
     document.getElementById('next-btn').classList.remove('hidden');
     document.getElementById('final-btn').classList.add('hidden');
-    
-    // Preview 박스 다시 보이기
-    document.querySelector('.preview-container').style.display = 'block';
 
-    // 뒤로가기 -> 메인으로 버튼으로 복구
+    const previewBox = document.querySelector('.status-indicator');
+    if (previewBox) previewBox.style.display = 'block'
+
     const navBtn = document.getElementById('nav-btn');
     navBtn.textContent = "메인으로";
-    navBtn.onclick = () => { location.href = 'index.html'; };
+    navBtn.onclick = () => { location.href = '../main/main.html'; };
 
     renderCards(scriptwriterData);
     updatePreview();
 }
 
-// 최종 결정 및 폭죽 효과
 function confirmFinalWinner() {
     if (selectedItems.length !== 1) {
         alert("최종 수상작을 하나 선택해주세요!");
@@ -106,51 +133,38 @@ function confirmFinalWinner() {
     }
 
     const winner = selectedItems[0];
-    let result = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
-    result["각본상"] = {
-        title: winner.title,
-        thumbnail: winner.thumbnail,
-        scriptwriter: winner.scriptwriter // 데이터의 필드명(scriptwriter)에 맞춰 저장
-    };
-    localStorage.setItem("anime_awards_result", JSON.stringify(result));
-
+    const writerName = winner.scriptwriter ? winner.scriptwriter.join(', ') : "정보 없음";
+    const studioDisplay = document.getElementById('modal-studio');
+    studioDisplay.textContent = winner.studio;
+    
+    // 모달 데이터 주입
     document.getElementById('modal-img').src = winner.thumbnail;
     document.getElementById('modal-title').textContent = winner.title;
     document.getElementById('modal-studio').textContent = winner.studio;
-    document.getElementById('modal-writer').textContent = winner.scriptwriter.join(', ');
+
+    const writerDisplay = document.getElementById('modal-writer');
+    writerDisplay.textContent = writerName;
+
+    if (writerName.length > 15) {
+        writerDisplay.style.fontSize = '1.8rem'; // 이름이 매우 길 때
+    } else if (writerName.length > 8) {
+        writerDisplay.style.fontSize = '2.2rem'; // 이름이 조금 길 때
+    } else {
+        writerDisplay.style.fontSize = '3rem';   // 기본 크기
+    }
 
     document.getElementById('winner-modal').classList.remove('hidden');
-
-    // 폭죽 애니메이션 실행
     fireworks();
 }
 
 function fireworks() {
     const duration = 3 * 1000;
     const end = Date.now() + duration;
-
     (function frame() {
-        confetti({
-            particleCount: 5,
-            angle: 60,
-            spread: 55,
-            origin: { x: 0 },
-            colors: ['#d4af37', '#ffffff']
-        });
-        confetti({
-            particleCount: 5,
-            angle: 120,
-            spread: 55,
-            origin: { x: 1 },
-            colors: ['#d4af37', '#ffffff']
-        });
-
-        if (Date.now() < end) {
-            requestAnimationFrame(frame);
-        }
+        confetti({ particleCount: 5, angle: 60, spread: 55, origin: { x: 0 }, colors: ['#d4af37', '#ffffff'] });
+        confetti({ particleCount: 5, angle: 120, spread: 55, origin: { x: 1 }, colors: ['#d4af37', '#ffffff'] });
+        if (Date.now() < end) requestAnimationFrame(frame);
     }());
 }
 
-function goToMain() {
-    location.href = '../main/main.html';
-}
+function goToMain() { location.href = '../main/main.html'; }
