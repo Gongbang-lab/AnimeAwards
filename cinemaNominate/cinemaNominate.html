@@ -4,36 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>올해의 시네마 - 노미네이트</title>
-    <link rel="stylesheet" href="./movieNominate.css">
-    
-    <script src="../data/animeMovieData.js"></script> 
+    <link rel="stylesheet" href="./cinemaNominate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="../data/animeCinemaData.js"></script> 
 </head>
 <body>
-
-    <div class="container">
-        <div class="left-panel">
-            <header class="search-header">
-                <div class="search-wrapper">
-                    <input type="text" id="searchInput" placeholder="작품 제목을 검색하세요...">
-                    <ul id="autocompleteList" class="autocomplete-list"></ul>
-                </div>
-            </header>
-
-            <div id="cardGrid" class="card-grid">
-                </div>
+    <nav class="top-nav">
+        <div class="nav-content-area">
+            <span class="brand">2026 ANIME AWARDS</span>
+            <span id="step-title">올해의 시네마 부문</span>
         </div>
-
-        <div class="right-panel">
-            <div class="button-group">
-                <button class="btn btn-outline" onclick="goToMain()">메인으로</button>
-                <button class="btn btn-gold" onclick="openAwardPopup()">수상 결정</button>
+        <div class="nav-sidebar-area">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="작품 제목 검색...">
+                <div id="autocompleteList" class="autocomplete-list"></div>
             </div>
+        </div>
+    </nav>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <main class="content-area">
+                <div id="cardGrid" class="card-grid">
+                    </div>
+            </main>
+
+            <aside class="sidebar">
+                <div class="button-group">
+                    <button class="btn btn-outline" onclick="goToMain()">메인으로</button>
+                    <button class="btn btn-gold" onclick="openAwardPopup()">수상 결정</button>
+                </div>
+            </aside>
         </div>
     </div>
 
     <div id="infoModal" class="modal-overlay">
         <div class="modal-content">
             <button class="close-btn" onclick="closeModal('infoModal')">&times;</button>
+            <div class="modal-header-text">작품 상세 정보</div>
             <div class="modal-body">
                 <div class="modal-left">
                     <img id="infoThumb" src="" alt="thumbnail">
@@ -85,6 +93,6 @@
         </div>
     </div>
 
-    <script src="./movieNominate.js"></script>
+    <script src="./cinemaNominate.js"></script>
 </body>
 </html>

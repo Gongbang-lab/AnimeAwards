@@ -1,9 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 변수명 불일치 해결: movieData와 MoiveData 모두 체크
-    const movies = (typeof movieData !== 'undefined') ? movieData : 
-                   (typeof MoiveData !== 'undefined') ? MoiveData : [];
+    // 1. 데이터 할당 (cinemaData 변수 우선 참조)
+    const movies = (typeof cinemaData !== 'undefined') ? cinemaData : [];
     
-    console.log("로드된 데이터:", movies); // 데이터 로드 확인용
+    console.log("로드된 시네마 데이터:", movies);
 
     let selectedMovie = null;
 
@@ -11,13 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('searchInput');
     const autocompleteList = document.getElementById('autocompleteList');
 
-    // 1. 초기 카드 렌더링
+    // 2. 카드 렌더링 함수
     function renderCards(data) {
         if (!cardGrid) return;
         cardGrid.innerHTML = ''; 
 
         if (data.length === 0) {
-            cardGrid.innerHTML = '<p style="color:#D4AF37; padding:20px; grid-column: 1/-1; text-align:center;">표시할 영화 데이터가 없습니다.</p>';
+            cardGrid.innerHTML = '<p style="color:var(--gold); padding:20px; grid-column: 1/-1; text-align:center;">표시할 영화 데이터가 없습니다.</p>';
             return;
         }
 
@@ -28,22 +27,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
             card.innerHTML = `
                 <div class="info-btn" title="정보 보기">+</div>
-                <div class="img-container">
-                    <img src="${movie.thumbnail}" alt="${movie.title}" onerror="this.src='https://dummyimage.com/200x300/333/d4af37&text=No+Image'">
-                </div>
+                <img src="${movie.thumbnail}" alt="${movie.title}" onerror="this.src='https://dummyimage.com/200x300/333/d4af37&text=No+Image'">
                 <div class="card-info">
                     <div class="card-title">${movie.title}</div>
                     <div class="card-studio">${movie.studio}</div>
                 </div>
             `;
 
-            // + 버튼 (정보 팝업)
+            // + 버튼 (상세 정보 팝업)
             card.querySelector('.info-btn').addEventListener('click', (e) => {
                 e.stopPropagation();
                 window.openInfoPopup(movie);
             });
 
-            // 카드 클릭 (선택)
+            // 카드 선택
             card.addEventListener('click', () => {
                 selectedMovie = movie;
                 document.querySelectorAll('.card').forEach(c => c.classList.remove('selected'));
@@ -56,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     renderCards(movies);
 
-    // 2. 검색 및 연관 검색어 로직
+    // 3. 검색 및 자동완성 로직
     searchInput.addEventListener('input', (e) => {
         const query = e.target.value.toLowerCase().trim();
         const filtered = movies.filter(m => m.title.toLowerCase().includes(query));
@@ -66,21 +63,21 @@ document.addEventListener('DOMContentLoaded', () => {
         if (query && filtered.length > 0) {
             autocompleteList.style.display = 'block';
             filtered.slice(0, 5).forEach(m => {
-                const li = document.createElement('li');
-                li.innerText = m.title;
-                li.onclick = () => {
+                const item = document.createElement('div');
+                item.innerText = m.title;
+                item.onclick = () => {
                     searchInput.value = m.title;
                     renderCards([m]);
                     autocompleteList.style.display = 'none';
                 };
-                autocompleteList.appendChild(li);
+                autocompleteList.appendChild(item);
             });
         } else {
             autocompleteList.style.display = 'none';
         }
     });
 
-    // 3. 팝업 함수들 (Global 등록)
+    // 4. 모달 관련 함수 (Global)
     window.openInfoPopup = function(movie) {
         document.getElementById('infoThumb').src = movie.thumbnail;
         document.getElementById('infoTitle').innerText = movie.title;
@@ -108,7 +105,6 @@ document.addEventListener('DOMContentLoaded', () => {
             thumbnail: selectedMovie.thumbnail 
         };
         localStorage.setItem("anime_awards_result", JSON.stringify(result));
-        alert(`${selectedMovie.title} 작품이 수상작으로 결정되었습니다!`);
         window.location.href = '../main/main.html';
     };
 });
