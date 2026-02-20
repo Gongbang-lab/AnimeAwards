@@ -50,37 +50,34 @@
     </div>
 
     <div class="modal-overlay" id="winner-popup">
-    <div class="modal-content winner-theme">
-        <button class="close-btn" id="close-modal-btn">&times;</button>
-        <div class="modal-header-text">🏆 FINAL WINNER 🏆</div>
-        
-        <div class="modal-main-content">
-            <div class="winner-thumb-container">
-                <img id="winner-thumb" src="" alt="winner thumbnail" />
-                <a id="popup-youtube-link" class="popup-play-overlay" target="_blank">
-                    <span class="popup-play-icon">▶</span>
-                </a>
+        <div class="modal-content">
+            <button class="close-btn" id="close-modal-btn">&times;</button>
+            <div class="modal-header-text">🏆 FINAL WINNER 🏆</div>
+            <div class="modal-body">
+                <div class="modal-left popup-thumb">
+                    <img id="winner-thumb" src="" alt="winner thumbnail" />
+                    <a id="popup-youtube-link" class="popup-play-overlay" target="_blank">
+                        <span class="popup-play-icon">▶</span>
+                    </a>
+                </div>
+                <div class="modal-right">
+                    <div class="info-row">
+                        <span class="label">Anime</span>
+                        <span class="value" id="winner-anime"></span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Song Title</span>
+                        <span class="value gold-text" id="winner-title" style="font-size: 1.5rem;"></span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Artist</span>
+                        <span class="value" id="winner-artist"></span>
+                    </div>
+                    <button class="btn-gold full-width" id="go-main-btn" style="margin-top: 30px;">확인 및 메인으로</button>
+                </div>
             </div>
-
-            <div class="winner-info-list">
-                <div class="info-row">
-                    <span class="label">Anime</span>
-                    <span class="value" id="winner-anime"></span>
-                </div>
-                <div class="info-row main-title">
-                    <span class="label">Song Title</span>
-                    <span class="value gold-text" id="winner-title"></span>
-                </div>
-                <div class="info-row">
-                    <span class="label">Artist</span>
-                    <span class="value" id="winner-artist"></span>
-                </div>
-            </div>
-
-            <button class="btn-gold full-width" id="go-main-btn">확인 및 메인으로</button>
         </div>
     </div>
-</div>
 
     <script src="../data/animeData.js"></script>
     <script src="../data/animeSongsData.js"></script>

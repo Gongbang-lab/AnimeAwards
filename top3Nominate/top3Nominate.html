@@ -1,70 +1,64 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <title>TOP 3 노미네이트</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-  <link rel="stylesheet" href="./top3Nominate.css" />
+    <meta charset="UTF-8">
+    <title>TOP 3 노미네이트</title>
+    <link rel="stylesheet" href="./top3Nominate.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
-
-  <header class="nominate-header">
-    <h1 id="award-title">🏆 TOP 3 선정</h1>
-  </header>
-
-  <main class="nominate-page">
-    <section class="nominate-left" id="left-area">
-      </section>
-
-    <aside class="nominate-right">
-      
-      <div class="step1-buttons" id="step1-buttons">
-        <button class="step-btn secondary" id="step1-back-btn">메인으로</button>
-        <button class="step-btn primary" id="step1-next-btn" disabled>후보 확정 (Step 2)</button>
-      </div>
-
-      <div class="step2-buttons" id="step2-buttons" style="display:none;">
-        <button class="step-btn secondary" id="step2-back-btn">뒤로가기</button>
-        <button class="step-btn primary gold" id="step2-award-btn" disabled>TOP 3 결정 완료</button>
-      </div>
-
-      <div id="step1-preview" class="step1-preview">
-        <div class="preview-title">1차 후보 리스트</div>
-        <div class="preview-scroll">
-          <div id="preview-list" class="preview-list"></div>
+    <nav class="top-nav">
+        <div class="nav-content-area">
+            <span class="brand">🏆 ANIME AWARDS</span>
+            <span id="step-title">1단계: 후보 리스트 선택</span>
         </div>
-      </div>
-
-      <div id="step2-status" class="step2-status" style="display: none;">
-        <div class="status-title">선정 현황 (순서대로)</div>
-        <ul class="rank-list">
-          <li id="rank-1" class="rank-item empty"><span class="badge">우수상</span> <span class="text">선택 대기...</span></li>
-          <li id="rank-2" class="rank-item empty"><span class="badge">최우수상</span> <span class="text">선택 대기...</span></li>
-          <li id="rank-3" class="rank-item empty"><span class="badge">대상</span> <span class="text">선택 대기...</span></li>
-        </ul>
-      </div>
-    </aside>
-  </main>
-
-  <div class="winner-popup" id="winner-popup">
-    <div class="popup-card">
-      <h2 style="color: gold; margin-top: 0;">🏆 FINAL TOP 3</h2>
-      
-      <div class="winners-container" id="winners-container">
+        <div class="nav-sidebar-area">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="작품명 검색 (예: 귀멸의 칼날)">
+                <div id="autocomplete-list" class="autocomplete-items"></div>
+            </div>
         </div>
+    </nav>
 
-      <button class="popup-btn" id="go-main-btn">
-        확인 및 저장
-      </button>
+    <div class="content-wrapper">
+        <div class="container">
+            <main class="content-area" id="main-display">
+                </main>
+
+            <aside class="sidebar">
+                <div class="preview-box" id="preview-box">
+                    </div>
+                
+                <div class="action-buttons">
+                    <button class="btn-outline" id="prev-btn">이전으로</button>
+                    <button class="gold-btn" id="next-btn" disabled>후보 확정</button>
+                </div>
+
+                <div id="rank-status" class="hidden" style="margin-top:20px; font-size: 0.9rem; color:#aaa; line-height: 1.5;">
+                    <p style="color:var(--gold); font-weight:bold; font-size: 1.1rem; margin-bottom: 10px;">선정 순서</p>
+                    <p>1. <span style="color:#fff;">우수상</span> 선택</p>
+                    <p>2. <span style="color:#fff;">최우수상</span> 선택</p>
+                    <p>3. <span style="color:var(--gold); font-weight:bold;">대상</span> 선택</p>
+                </div>
+            </aside>
+        </div>
     </div>
-  </div>
 
-  <script src="../data/animeData.js"></script>
-  <script src="../data/animeCharacter.js"></script>
-  <script src="../data/awardData.js"></script>
-  <script src="../data/animeSongs.js"></script>
+    <div id="result-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2 class="modal-header">🏆 FINAL TOP 3</h2>
+            <hr class="modal-divider">
+            <div id="modal-body">
+                </div>
+            <div style="text-align: center; margin-top: 30px;">
+                <button class="gold-btn" id="save-main-btn">결과 저장 및 메인으로</button>
+            </div>
+        </div>
+    </div>
 
-  <script src="./top3Nominate.js"></script>
+    <canvas id="confettiCanvas"></canvas>
+
+    <script type="text/javascript" src="../data/animeData.js"></script>
+    <script type="text/javascript" src="./top3Nominate.js"></script>
 </body>
 </html>

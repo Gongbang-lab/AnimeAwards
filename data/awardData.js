@@ -20,7 +20,7 @@ const Awards = [
   { id: 18, name: '원화(작화)상', thumb: '../image/trophy 1.png', theme: 'key_animation'},
   { id: 20, name: '이카루스', thumb: '../image/trophy 1.png', theme: 'default'},
   { id: 21, name: '다크호스', thumb: '../image/trophy 1.png', theme: 'default'},
-  { id: 22, name: '베스트 에피소드상', thumb: '../image/trophy 1.png', theme: 'best_episode'},
+  { id: 22, name: '베스트 에피소드', thumb: '../image/trophy 1.png', theme: 'best_episode'},
   { id: 23, name: '올해의 시네마', thumb: '../image/trophy 1.png', theme: 'cinema'},
   { id: 24, name: '올해의 스튜디오', thumb: '../image/trophy 1.png', theme: 'studio'},
   { id: 25, name: '올해의 애니메이션', thumb: '../image/trophy 1.png', theme: 'top3'},
