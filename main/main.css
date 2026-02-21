@@ -205,12 +205,41 @@ h1 {
 .award-grid-inner {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 80px;
+  gap: 40px;
   width: 100%;
   max-width: 1500px;
   align-items: start;
   justify-content: center; /* 카드들을 가로축 중앙으로 */
   margin: 0 auto;
+}
+
+/* [2] 오프닝 & 음악 부문만 적용되는 특별 그리드 */
+.award-section.special-layout .award-grid-inner {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 카드의 최소 너비를 확 키움 */
+    gap: 60px; /* 간격도 더 넓게 */
+    max-width: 1200px; /* 너무 넓게 퍼지지 않도록 제한 */
+}
+
+/* [3] 해당 섹션 내의 카드 크기만 조절 */
+.award-section.special-layout .award-card.ratio-16-9 {
+    max-width: 500px; /* 기존 260px 제한 해제 및 확장 */
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* [4] 이미지 꽉 채우기 (여백 제거) */
+.award-section.special-layout .award-thumb {
+    object-fit: cover;
+}
+
+/* [5] 모바일 대응 */
+@media (max-width: 768px) {
+    .award-section.special-layout .award-grid-inner {
+        grid-template-columns: 1fr; /* 모바일은 한 줄로 */
+    }
+    .award-section.special-layout .award-card.ratio-16-9 {
+        max-width: 100%;
+    }
 }
 
 /* ===============================
@@ -224,8 +253,8 @@ h1 {
   transition: all 0.3s ease;
   cursor: pointer;
   /* width: 100%로 두어야 grid의 minmax 설정에 따라 유동적으로 변합니다 */
+  max-width: 260px;
   width: 100%; 
-  max-width: 260px; /* 카드가 너무 뚱뚱해지지 않게 제한 */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -311,9 +340,16 @@ h1 {
 #reset-btn:hover { background: #e11d48; transform: rotate(-180deg); }
 
 /* 1. 스튜디오 카드 전용 스타일 */
-.award-card.ratio-16-9 {
-  max-width: 380px; /* 가로형이므로 일반 카드보다 조금 더 넓게 설정 가능 */
-  flex: 1 1 320px;
+.award-card.ratio-1-1 .thumb-wrapper {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* 정사각형 비율 고정 */
+    overflow: hidden;
+    border-radius: 12px; /* 디자인에 맞춰 조절 */
+}
+.award-card.ratio-1-1 .award-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 /* 1등 (대상): 정중앙 */
@@ -346,6 +382,7 @@ h1 {
 .award-card.ratio-16-9 .thumb-wrapper {
   aspect-ratio: 16 / 9; /* 가로 비율 고정 */
   background: #1a1a1a;  /* 로고가 돋보이도록 배경색 조정 */
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;

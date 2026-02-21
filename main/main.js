@@ -81,12 +81,11 @@ function renderAwards() {
     }
 
     // --- 2. 카테고리별 렌더링 (하단 목록) ---
-    // --- 2. 카테고리별 렌더링 (하단 목록) ---
 categories.forEach(cat => {
     const filteredAwards = Awards.filter(a => {
         if (!cat.themes.includes(a.theme)) return false;
         if (top3Names.includes(a.name)) return false;
-        if ((a.theme === 'series' || a.name === '올해의 애니메이션') && wonTop3.length > 0) {
+        if ((a.theme === 'series' || a.name === '올해의 시리즈') && wonTop3.length > 0) {
             return false;
         }
         return true;
@@ -96,7 +95,11 @@ categories.forEach(cat => {
 
     const section = document.createElement("section");
     section.className = "award-section";
-    // 섹션 전체가 나타나는 애니메이션
+    
+    if (cat.title === "시상식 오프닝" || cat.title === "음악 부문") {
+        section.classList.add("special-layout"); 
+    }
+
     section.setAttribute("data-aos", "fade-up");
 
     section.innerHTML = `
@@ -110,21 +113,21 @@ categories.forEach(cat => {
     const grid = section.querySelector(".award-grid-inner");
     
     // filteredAwards를 돌면서 실제 카드 생성 및 AOS 시차 부여
-    filteredAwards.forEach((award, index) => {
-        let finalRatio = (award.theme === 'studio') ? 'ratio-16-9' : cat.ratio;
-        const card = createAwardCard(award, results, finalRatio);
+filteredAwards.forEach((award, index) => {
+    let finalRatio = (award.theme === 'studio') ? 'ratio-1-1' : cat.ratio;
+    
+    const card = createAwardCard(award, results, finalRatio);
 
-        if (award.theme === 'studio') {
-            card.classList.add('studio-card');
-        }
+    if (award.theme === 'studio') {
+        card.classList.add('studio-card');
+    }
 
-        // [AOS 설정] 카드마다 0.1초씩 시차를 두고 나타남
-        const delay = (index % 4) * 100; 
-        card.setAttribute("data-aos", "fade-up");
-        card.setAttribute("data-aos-delay", delay);
+    const delay = (index % 4) * 100; 
+    card.setAttribute("data-aos", "fade-up");
+    card.setAttribute("data-aos-delay", delay);
 
-        grid.appendChild(card);
-    });
+    grid.appendChild(card);
+});
 
     mainContainer.appendChild(section);
 });

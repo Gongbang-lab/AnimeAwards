@@ -109,11 +109,6 @@ function selectCandidate(cv, cardElement) {
     // 2. 상태 저장
     rookiestate.selectedCV = cv;
 
-    // 3. 사이드바 상태 텍스트 업데이트
-    const display = document.getElementById("selected-name-display");
-    display.innerText = `선택됨: ${cv.name}`;
-    display.style.color = "var(--gold)";
-
     // 4. 수상 결정 버튼 활성화
     document.getElementById("btn-award").disabled = false;
 }

@@ -62,21 +62,6 @@ body {
     margin-bottom: 30px;
 }
 
-.status-indicator {
-    padding: 12px;
-    background: #000;
-    border: 1px solid #333;
-    border-radius: 6px;
-    text-align: center;
-    margin-bottom: 12px;
-}
-
-#selected-name-display {
-    color: var(--gold);
-    font-weight: bold;
-    font-size: 0.9rem;
-}
-
 .control-row {
     display: grid;
     grid-template-columns: 1.5fr 1fr;

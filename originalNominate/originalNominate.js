@@ -155,6 +155,9 @@ function confirmFinalWinner() {
 
     document.getElementById('winner-modal').classList.remove('hidden');
     fireworks();
+    const results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
+    results["각본상"] = { title: winner.title, thumbnail: winner.thumbnail };
+    localStorage.setItem("anime_awards_result", JSON.stringify(results));
 }
 
 function fireworks() {

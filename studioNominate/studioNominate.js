@@ -168,7 +168,7 @@ function openAwardModal(item) {
 
 function saveWinnerToLocal(item) {
     let results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
-    results[studioState.awardName] = {
+    results["올해의 스튜디오 상"] = {
         name: item.studio,
         thumbnail: item.studio_img ? `../${item.studio_img}` : '',
         year: '2026'

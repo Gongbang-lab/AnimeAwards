@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.confirmAward = function() {
         if (!selectedMovie) return;
         const result = JSON.parse(localStorage.getItem("anime_awards_result") || "{}");
-        result["올해의 시네마"] = { 
+        result["올해의 시네마 상"] = { 
             title: selectedMovie.title, 
             thumbnail: selectedMovie.thumbnail 
         };

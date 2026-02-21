@@ -1,6 +1,6 @@
 const memeState = {
     selectedMeme: null,
-    awardName: "2026 올해의 밈"
+    awardName: "올해의 밈"
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -99,13 +99,12 @@ function saveMemeWinner() {
     if (!winner) return;
 
     const results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
-    results[memeState.awardName] = [{
-        rank: "대상",
+    results[memeState.awardName] = {
         title: winner.name,
         thumbnail: winner.src,
         type: winner.type,
         origin: winner.origin
-    }];
+    };
     localStorage.setItem("anime_awards_result", JSON.stringify(results));
 
     showWinnerCelebration(winner);

@@ -247,7 +247,7 @@ function saveData(winner) {
     const KEY = 'anime_awards_result';
     let data = JSON.parse(localStorage.getItem(KEY) || '{}');
     if (Array.isArray(data)) data = {}; 
-    data["베스트 에피소드상"] = { title: winner.title, thumbnail: winner.thumbnail, episode: winner.episode, date: new Date().toISOString() };
+    data["베스트 에피소드 상"] = { title: winner.title, thumbnail: winner.thumbnail, episode: winner.episode, date: new Date().toISOString() };
     localStorage.setItem(KEY, JSON.stringify(data));
 }
 
