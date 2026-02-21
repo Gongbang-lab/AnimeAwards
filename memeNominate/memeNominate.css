@@ -1,291 +1,107 @@
-/* 밈 전용 그리드 레이아웃 */
-.meme-vote-grid {
-    display: grid !important;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
-    gap: 25px;
-    padding: 20px;
+/* 기본 변수 및 리셋 (TOP 3 디자인과 동일) */
+:root {
+    --gold: #d4af37;
+    --dark-gold: #aa8a2e;
+    --black: #1a1a1a;
+    --gray: #2c2c2c;
+    --white: #ffffff;
+    --nav-height: 70px;
 }
 
-.meme-card {
-    position: relative;
-    background: #151515;
-    border-radius: 20px;
-    border: 2px solid #222;
-    overflow: hidden;
-    cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.meme-card.selected {
-    border-color: gold;
-    box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
-    transform: translateY(-8px);
-}
-
-/* 카드 내 미디어 영역 */
-.media-box {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    background: #000;
-    overflow: hidden;
-}
-
-.media-box img, .media-box video {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.meme-info {
-    padding: 15px;
-    text-align: center;
-    background: #1a1a1a;
-}
-
-.meme-info .name {
-    color: #fff;
-    font-weight: 700;
-    font-size: 1.1rem;
-}
-
-/* 버튼 컨테이너: 가로 정렬 및 간격 조절 */
-.step-buttons {
-    display: flex;          /* 가로로 나열 */
-    gap: 12px;              /* 버튼 사이의 간격 */
-    width: 100%;            /* 사이드바 너비에 맞춤 */
-    padding: 10px;          /* 주변 여백 */
-}
-
-/* 개별 버튼 공통 스타일 */
-.step-btn {
-    flex: 1;                /* 중요: 두 버튼이 동일하게 공간을 나눠 가짐 */
-    padding: 18px 0;        /* 위아래 높이를 키워 시인성 확보 */
-    font-size: 1.1rem;      /* 글자 크기 확대 */
-    font-weight: 800;       /* 글자 두껍게 */
-    border-radius: 12px;    /* 모서리 둥글게 */
-    cursor: pointer;
-    transition: all 0.3s;
-    border: none;           /* 기본 테두리 제거 */
-    white-space: nowrap;    /* 텍스트 줄바꿈 방지 */
-}
-
-/* 수상 결정 버튼 (골드) */
-.step-btn.primary.gold {
-    background: gold;
-    color: #000;
-}
-
-.step-btn.primary.gold:disabled {
-    background: #333;       /* 비활성화 시 어두운 회색 */
-    color: #777;
-    cursor: not-allowed;
-    box-shadow: none;
-}
-
-/* 메인으로 버튼 (보조 버튼) */
-.step-btn.secondary {
-    background: #222;
-    color: #fff;
-    border: 1px solid #444;
-}
-
-/* 호버 효과 */
-.step-btn:not(:disabled):hover {
-    transform: translateY(-3px); /* 위로 살짝 들리는 효과 */
-    filter: brightness(1.1);      /* 살짝 밝아짐 */
-}
-
-/* 확대 버튼 (zoom-btn) */
-.zoom-btn {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 30px;
-    height: 30px;
-    background: rgba(0, 0, 0, 0.7);
-    color: gold;
-    border-radius: 12px;
-    cursor: pointer;
-    z-index: 10;
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.2s;
-}
-
-.zoom-btn:hover {
-    background: gold;
-    color: #000;
-    transform: scale(1.1);
-}
-
-/* ============================================================
-   팝업 레이아웃
-============================================================ */
-
-/* 팝업 배경 */
-.winner-popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.95);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 10000;
-    backdrop-filter: blur(10px);
-}
-
-/* 팝업 컨테이너 */
-.winner-popup .popup-container {
-    position: relative;
-    width: 90%;
-    max-width: 900px;
-    max-height: 90vh;
-    background: #000;
-    border: 3px solid gold;
-    border-radius: 20px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
-
-/* 미디어 영역 */
-.winner-popup .media-section {
-    width: 100%;
-    height: 70vh;
-    max-height: 600px;
-    background: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.winner-popup .media-section img,
-.winner-popup .media-section video {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-/* 정보 영역 */
-.winner-popup .info-section {
-    padding: 25px 30px;
-    background: #0a0a0a;
-    text-align: center;
-    border-top: 2px solid #222;
-}
-
-.winner-popup .info-section .origin-text {
-    color: #888;
-    font-size: 0.9rem;
-    margin-bottom: 8px;
-    letter-spacing: 0.5px;
-}
-
-.winner-popup .info-section .title-text {
-    color: #fff;
-    font-size: 1.8rem;
-    font-weight: 900;
+body {
+    background-color: var(--black);
+    color: var(--white);
     margin: 0;
-    line-height: 1.2;
+    font-family: 'Pretendard', sans-serif;
+    overflow-x: hidden;
 }
 
-.winner-popup .info-section .desc-text {
-    color: #aaa;
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-top: 12px;
+/* 1. 상단 네비게이션 */
+.top-nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    height: var(--nav-height); background: rgba(20, 20, 20, 0.95);
+    display: flex; border-bottom: 2px solid var(--gold);
+    z-index: 1000; backdrop-filter: blur(10px); align-items: center;
+}
+.nav-content-area { padding-left: 40px; display: flex; align-items: center; }
+.brand { color: var(--gold); font-weight: 800; font-size: 1.4rem; margin-right: 25px; }
+#step-title { font-size: 1.1rem; color: #ccc; border-left: 3px solid var(--gray); padding-left: 15px; }
+
+/* 2. 메인 레이아웃 */
+.content-wrapper { padding-top: var(--nav-height); }
+.container { display: flex; min-height: calc(100vh - var(--nav-height)); }
+
+.content-area { flex: 7.5; padding: 40px; border-right: 1px solid rgba(212, 175, 55, 0.3); }
+.sidebar { 
+    flex: 2.5; 
+    background-color: #111; 
+    position: sticky; 
+    top: var(--nav-height); 
+    height: calc(100vh - var(--nav-height)); 
+    padding: 40px 25px; /* 위쪽 패딩을 살짝 늘려줌 */
+    box-sizing: border-box; 
 }
 
-/* 닫기 버튼 */
-.winner-popup .close-btn {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 40px;
-    height: 40px;
-    background: rgba(0, 0, 0, 0.8);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 50%;
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
-    z-index: 10001;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s;
+.action-buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.gold-btn { background: var(--gold); color: black; font-weight: 800; padding: 15px; border: none; cursor: pointer; border-radius: 6px; transition: 0.2s; }
+.gold-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.gold-btn:hover:not(:disabled) { background: #eac14d; transform: translateY(-2px); }
+.btn-outline { background: transparent; border: 1px solid var(--gold); color: var(--gold); padding: 15px; font-weight: bold; cursor: pointer; border-radius: 6px; transition: 0.2s; }
+.btn-outline:hover { background: rgba(212, 175, 55, 0.1); }
+
+/* 3. 밈 전용 그리드 및 카드 */
+.meme-vote-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
 }
 
-.winner-popup .close-btn:hover {
-    background: #ff4d4d;
-    border-color: #ff4d4d;
-    transform: scale(1.1);
+.card {
+    background: var(--gray); border: 2px solid transparent; border-radius: 8px;
+    overflow: hidden; cursor: pointer; transition: 0.3s; position: relative;
+    display: flex; flex-direction: column;
+}
+.card:hover { transform: translateY(-5px); border-color: rgba(212, 175, 55, 0.5); }
+
+/* 선택 시 어두워지지 않고 골든 보더만 적용 */
+.card.selected {
+    border-color: var(--gold) !important;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+}
+.card.selected img, .card.selected video {
+    filter: none; opacity: 1;
 }
 
-/* 수상 팝업 전용 스타일 */
-.winner-popup.victory-mode .info-section .award-label {
-    color: gold;
-    font-size: 0.85rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-}
+.media-box { width: 100%; aspect-ratio: 16 / 9; background: #000; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.media-box img, .media-box video { width: 100%; height: 100%; object-fit: contain; }
 
-.winner-popup.victory-mode .info-section .title-text {
-    color: gold;
-}
+.card-info { padding: 15px; text-align: center; }
+.card-title { font-weight: bold; color: var(--gold); margin-bottom: 5px; font-size: 1.1rem; }
+.card-studio { font-size: 0.85rem; color: #bbb; }
 
-.winner-popup.victory-mode .info-section .celebration-text {
-    color: #aaa;
-    font-size: 1.1rem;
-    margin: 15px 0 20px 0;
+/* 돋보기 버튼 */
+.zoom-btn {
+    position: absolute; top: 10px; right: 10px; width: 35px; height: 35px;
+    background: rgba(0, 0, 0, 0.7); color: var(--white); border: 1px solid #444;
+    border-radius: 8px; cursor: pointer; z-index: 10; font-size: 16px;
+    transition: 0.2s; display: flex; align-items: center; justify-content: center;
 }
+.zoom-btn:hover { background: var(--gold); color: #000; border-color: var(--gold); }
 
-/* 버튼 */
-.winner-popup .action-btn {
-    background: gold;
-    color: #000;
-    border: none;
-    padding: 14px 35px;
-    font-size: 1rem;
-    font-weight: 800;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 15px;
-    transition: all 0.3s;
-    display: inline-block;
+/* 4. 모달 (확대 보기 & 결과 발표) */
+.hidden { display: none !important; }
+.modal {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.9); display: flex; align-items: center; justify-content: center; z-index: 2000;
 }
-
-.winner-popup .action-btn:hover {
-    background: #fff;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
+.modal-content {
+    background: #1a1a1a; width: 90%; max-width: 600px; position: relative;
+    border: 2px solid var(--gold); border-radius: 15px; padding: 30px;
 }
-
-/* 반응형 */
-@media (max-width: 768px) {
-    .winner-popup .popup-container {
-        width: 95%;
-        max-height: 95vh;
-    }
-    
-    .winner-popup .media-section {
-        height: 50vh;
-        max-height: 400px;
-    }
-    
-    .winner-popup .info-section {
-        padding: 20px;
-    }
-    
-    .winner-popup .info-section .title-text {
-        font-size: 1.4rem;
-    }
+.modal-header { text-align: center; color: var(--gold); font-size: 1.8rem; margin: 0; }
+.modal-divider { border: 0; height: 1px; background: #444; margin: 15px 0 25px 0; }
+.zoom-close-btn {
+    position: absolute; top: 20px; right: 20px; background: transparent;
+    border: none; color: #888; font-size: 1.5rem; cursor: pointer; transition: 0.2s;
 }
+.zoom-close-btn:hover { color: #fff; }

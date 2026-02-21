@@ -1,16 +1,11 @@
-/**
- * 애니 밈 노미네이트 및 수상 로직
- */
 const memeState = {
     selectedMeme: null,
-    awardName: "밈"
+    awardName: "2026 올해의 밈"
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. 그리드 렌더링
     renderMemeGrid();
 
-    // 2. 팝업 외부 클릭 시 닫기
     const popup = document.getElementById("winner-popup");
     if (popup) {
         popup.addEventListener("click", (e) => {
@@ -19,37 +14,30 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-/**
- * [메인] 밈 그리드 렌더링
- */
 function renderMemeGrid() {
     const grid = document.getElementById("meme-grid");
     if (!grid || typeof AnimeMemeData === 'undefined') return;
 
     grid.innerHTML = Object.values(AnimeMemeData).map(meme => `
-        <div class="meme-card" id="card-${meme.id}" onclick="selectMeme('${meme.id}')">
-            <button class="zoom-btn" onclick="openMemeZoom('${meme.id}', event)" title="확대 보기">+</button>
-            
+        <div class="card meme-card" id="card-${meme.id}" onclick="selectMeme('${meme.id}')">
+            <button class="zoom-btn" onclick="openMemeZoom('${meme.id}', event)" title="확대 보기">🔍</button>
             <div class="media-box">
                 ${meme.type === 'video' 
                     ? `<video src="${meme.src}" muted loop onmouseover="this.play()" onmouseout="this.pause()"></video>` 
                     : `<img src="${meme.src}" alt="${meme.name}">`}
             </div>
-            <div class="meme-info">
-                <div class="name">${meme.name}</div>
+            <div class="card-info">
+                <div class="card-title">${meme.name}</div>
+                <div class="card-studio">${meme.origin || '출처 불명'}</div>
             </div>
         </div>
     `).join('');
 }
 
-/**
- * 카드 선택 로직
- */
 function selectMeme(id) {
     const prevSelectedId = memeState.selectedMeme?.id;
     memeState.selectedMeme = AnimeMemeData[id];
     
-    // 이전 선택된 비디오 정지 (옵션)
     if (prevSelectedId) {
         const prevVideo = document.querySelector(`#card-${prevSelectedId} video`);
         if (prevVideo) prevVideo.pause();
@@ -59,113 +47,111 @@ function selectMeme(id) {
     const currentCard = document.getElementById(`card-${id}`);
     if (currentCard) {
         currentCard.classList.add('selected');
-        // 선택되면 바로 재생되게 할 수도 있음
-        const curVideo = currentCard.querySelector('video');
-        if (curVideo) curVideo.play();
     }
-    
+
     const awardBtn = document.getElementById('btn-award');
     if (awardBtn) awardBtn.disabled = false;
 }
 
-/**
- * [팝업] 밈 확대 보기
- */
+function updatePreviewBox() {
+    const box = document.getElementById('preview-box');
+    const meme = memeState.selectedMeme;
+    
+    if (!meme) return;
+
+    box.innerHTML = `
+        <div style="text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: center;">
+            <div class="media-box" style="border-radius: 8px; margin-bottom: 15px;">
+                ${meme.type === 'video' 
+                    ? `<video src="${meme.src}" autoplay loop muted style="width:100%; border-radius:8px;"></video>` 
+                    : `<img src="${meme.src}" style="width:100%; border-radius:8px;">`}
+            </div>
+            <h3 style="color: var(--gold); margin: 0 0 10px 0;">${meme.name}</h3>
+            <p style="color: #aaa; font-size: 0.9rem; margin: 0;">${meme.origin}</p>
+        </div>
+    `;
+}
+
 function openMemeZoom(id, e) {
     if (e) e.stopPropagation();
     const meme = AnimeMemeData[id];
     const popup = document.getElementById("winner-popup");
     if (!meme || !popup) return;
 
-    popup.className = "winner-popup";
     popup.innerHTML = `
-        <div class="popup-container">
-            <button class="close-btn" onclick="closePopup()">✕</button>
-            
-            <div class="media-section">
+        <div class="modal-content" style="max-width: 800px;">
+            <button class="zoom-close-btn" onclick="closePopup()">✕</button>
+            <h2 class="modal-header">${meme.name}</h2>
+            <hr class="modal-divider">
+            <div style="text-align:center; background:#000; padding:10px; border-radius:10px;">
                 ${meme.type === 'video' 
-                    ? `<video src="${meme.src}" controls autoplay loop></video>` 
-                    : `<img src="${meme.src}" alt="${meme.name}">`}
+                    ? `<video src="${meme.src}" controls autoplay loop style="max-height:500px; width:100%;"></video>` 
+                    : `<img src="${meme.src}" style="max-height:500px; max-width:100%;">`}
             </div>
-            
-            <div class="info-section">
-                <div class="origin-text">${meme.origin}</div>
-                <h2 class="title-text">${meme.name}</h2>
-                ${meme.description ? `<p class="desc-text">${meme.description}</p>` : ''}
-            </div>
+            <p style="color:#aaa; text-align:center; margin-top:20px;">출처: ${meme.origin}</p>
         </div>
     `;
-    popup.style.display = "flex";
+    popup.classList.remove('hidden');
 }
 
-/**
- * 수상 결정 및 결과 저장
- */
 function saveMemeWinner() {
     const winner = memeState.selectedMeme;
     if (!winner) return;
 
-    // LocalStorage 저장
     const results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
-    results[memeState.awardName] = {
-        name: winner.name,
+    results[memeState.awardName] = [{
+        rank: "대상",
+        title: winner.name,
         thumbnail: winner.src,
         type: winner.type,
-        origin: winner.origin,
-        date: new Date().toLocaleDateString()
-    };
+        origin: winner.origin
+    }];
     localStorage.setItem("anime_awards_result", JSON.stringify(results));
 
     showWinnerCelebration(winner);
 }
 
-/**
- * [팝업] 수상 축하 연출
- */
 function showWinnerCelebration(winner) {
     const popup = document.getElementById("winner-popup");
     if (!popup) return;
 
-    popup.className = "winner-popup victory-mode";
     popup.innerHTML = `
-        <div class="popup-container">
-            <div class="media-section">
+        <div class="modal-content" style="text-align: center;">
+            <h2 class="modal-header">🏆 ${memeState.awardName} 수상 🏆</h2>
+            <hr class="modal-divider">
+            
+            <div class="media-box" style="margin: 0 auto 20px auto; max-width: 500px; border-radius: 10px; overflow: hidden; background: transparent;">
                 ${winner.type === 'video' 
-                    ? `<video src="${winner.src}" autoplay loop muted></video>` 
-                    : `<img src="${winner.src}" alt="${winner.name}">`}
+                    ? `<video src="${winner.src}" autoplay loop muted style="width:100%; border-radius:10px;"></video>` 
+                    : `<img src="${winner.src}" style="width:100%; border-radius:10px;">`}
             </div>
             
-            <div class="info-section">
-                <div class="award-label">${memeState.awardName}</div>
-                <h1 class="title-text">${winner.name}</h1>
-                <div class="celebration-text">🎉 2026 어워드 수상을 진심으로 축하합니다! 🎉</div>
-                <button class="action-btn" onclick="location.href='../main/main.html'">메인으로 돌아가기</button>
+            <h1 style="color: #fff; margin: 0 0 10px 0;">${winner.name}</h1>
+            <p style="color: #888; margin: 0;">${winner.origin}</p>
+            
+            <div style="margin-top: 30px;">
+                <button class="gold-btn" onclick="location.href='../main/main.html'">결과 저장 및 메인으로</button>
             </div>
         </div>
     `;
-    popup.style.display = "flex";
+    popup.classList.remove('hidden');
     
     if (typeof confetti === 'function') {
-        confetti({ particleCount: 150, spread: 70, origin: { y: 0.6 }, zIndex: 10001 });
+        confetti({ particleCount: 150, spread: 70, origin: { y: 0.6 }, zIndex: 3000 });
     }
 }
 
-/**
- * 팝업 닫기
- */
 function closePopup() {
     const popup = document.getElementById("winner-popup");
     if (!popup) return;
 
-    // 비디오 완전 정리
     const videos = popup.querySelectorAll('video');
     videos.forEach(v => {
         v.pause();
-        v.src = "";
+        v.removeAttribute('src');
         v.load();
     });
 
     popup.innerHTML = "";
-    popup.style.display = "none";
-    popup.className = "winner-popup";
+    popup.classList.add('hidden');
 }

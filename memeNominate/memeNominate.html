@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meme Awards - Nominate</title>
-  
-  <link rel="stylesheet" href="../main/main.css">
-  <link rel="stylesheet" href="../nominate/nominate.css">
-  <link rel="stylesheet" href="./memeNominate.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Awards - Nominate</title>
+    <link rel="stylesheet" href="./memeNominate.css">
 </head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-content-area">
+            <span class="brand">🏆 ANIME AWARDS</span>
+            <span id="step-title">올해의 애니 밈 부문</span>
+        </div>
+    </nav>
 
-<body class="dark-theme">
+    <div class="content-wrapper">
+        <div class="container">
+            <main class="content-area">
+                <h2 style="color:var(--gold); margin-top:0; margin-bottom: 20px;">2026 올해의 애니 밈 후보</h2>
+                <div id="meme-grid" class="meme-vote-grid">
+                    </div>
+            </main>
 
-  <main class="nominate-page">
-    <section class="nominate-left">
-        <h2 class="step-title">2026 올해의 애니 밈 후보</h2>
-        <div id="meme-grid" class="meme-vote-grid">
-            </div>
-    </section>
+            <aside class="sidebar">
+              <div class="preview-box" id="preview-box">
+                    <p style="color: #888; text-align: center; margin-top: 50%;">후보를 선택해주세요</p>
+                </div>
+                <div class="action-buttons">
+        <button id="btn-home" class="btn-outline" onclick="location.href='../main/main.html'">메인으로</button>
+        <button id="btn-award" class="gold-btn" disabled onclick="saveMemeWinner()">수상 결정</button>
+    </div>
+</aside>
+        </div>
+    </div>
 
-    <aside class="nominate-right">
-      <div class="step-buttons">
-        <button id="btn-home" class="step-btn secondary" onclick="location.href='../main/main.html'">메인으로</button>
-        <button id="btn-award" class="step-btn primary gold" disabled onclick="saveMemeWinner()">수상 결정</button>
-      </div>
-    </aside>
-  </main>
+    <div id="winner-popup" class="modal hidden"></div>
 
-  <div id="winner-popup" class="winner-popup"></div>
-
-  <script src="../confetti.js"></script>
-  <script src="../data/animeMemeData.js"></script>
-  <script src="./memeNominate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="../data/animeMemeData.js"></script>
+    <script src="./memeNominate.js"></script>
 </body>
 </html>
