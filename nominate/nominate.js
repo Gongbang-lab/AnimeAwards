@@ -5,14 +5,12 @@ const nominateState = {
     step: 1,
     selectedItems: [],
     selectedWinner: null,
-    awardName: "Award"
+    awardName: ""
 };
 
 // URL 파라미터 처리
 const params = new URLSearchParams(location.search);
-nominateState.awardName = params.get("awardName") || "노미네이트";
-const brandTitle = document.querySelector('.brand');
-if(brandTitle) brandTitle.textContent = nominateState.awardName;
+nominateState.awardName = params.get("awardName");
 const modalAwardName = document.getElementById('modal-award-name');
 if(modalAwardName) modalAwardName.textContent = nominateState.awardName;
 
@@ -166,23 +164,42 @@ function handleCardClick(anime, cardElement) {
 // 3. UI 업데이트 및 프리뷰
 // ──────────────────────────────────────────────────────────
 function updatePreview() {
-    const pBox = document.getElementById("preview-box");
+    const previewBox = document.getElementById("preview-box");
     const nextBtn = document.getElementById("step1-next-btn");
     
-    if(!pBox) return;
-    pBox.innerHTML = "";
+    if(!previewBox) return;
+    previewBox.innerHTML = ""; // 기존 내용 비우기
     
+    // 선택된 항목이 없을 때 가이드 문구 (성우 페이지 스타일)
+    if (nominateState.selectedItems.length === 0) {
+        previewBox.innerHTML = `<div style="color:#666; text-align:center; padding-top:20px; font-size:0.85rem;">후보를 선택해주세요</div>`;
+        if(nextBtn) nextBtn.disabled = true;
+        return;
+    }
+
+    // 성우 페이지 방식: div 생성 후 appendChild
     nominateState.selectedItems.forEach(anime => {
-        const item = document.createElement("span");
-        item.className = "preview-item";
-        item.textContent = anime.title;
-        item.onclick = () => {
-            nominateState.selectedItems = nominateState.selectedItems.filter(a => a.id !== anime.id);
-            updatePreview();
-            const searchVal = document.getElementById('search-input') ? document.getElementById('search-input').value : "";
-            renderStep1(searchVal);
+        const div = document.createElement("div");
+        div.className = "preview-item";
+        
+        // 성우 페이지와 동일하게 제목을 배치 (감독/성우 대신 애니메이션 제목만)
+        div.innerHTML = `
+            <div class="preview-title">${anime.title}</div>
+            <div class="preview-subtitle">${anime.quarter}</div>
+        `;
+        
+        div.onclick = () => {
+            // Step 1에서만 삭제 가능
+            if (nominateState.step === 1) {
+                nominateState.selectedItems = nominateState.selectedItems.filter(a => a.id !== anime.id);
+                updatePreview();
+                
+                // 메인 그리드 카드 상태 동기화
+                const searchVal = document.getElementById('search-input')?.value || "";
+                renderStep1(searchVal);
+            }
         };
-        pBox.appendChild(item);
+        previewBox.appendChild(div);
     });
 
     if(nextBtn) nextBtn.disabled = nominateState.selectedItems.length === 0;
@@ -194,7 +211,7 @@ function updatePreview() {
 function goStep2() {
     nominateState.step = 2;
     const stepTitle = document.getElementById("step-title");
-    if(stepTitle) stepTitle.textContent = "최종 수상작 결정 (Step 2)";
+    if(stepTitle) stepTitle.textContent = "";
     
     // 버튼 교체
     toggleElement("nav-home-btn", false);
@@ -222,8 +239,19 @@ function goStep2() {
 function goStep1() {
     nominateState.step = 1;
     nominateState.selectedWinner = null;
+    const title = document.getElementById("award-title");
     const stepTitle = document.getElementById("step-title");
-    if(stepTitle) stepTitle.textContent = "후보 선정 (Step 1)";
+    if(title === "베스트 연출상"){
+        stepTitle.textContent = "올해의 연출상 부문";
+    }else if(title === "베스트 동화상"){
+        stepTitle.textContent = "올해의 동화상 부문";
+    }else if(title === "베스트 원화(작화)상"){
+        stepTitle.textContent = "올해의 원화(작화)상 부문";
+    }else if(title === "올해의 이카루스상"){
+        stepTitle.textContent = "올해의 이카루스상 부문";
+    }else if(title === "올해의 다크호스상"){
+        stepTitle.textContent = "올해의 다크호스상 부문";
+    }
 
     toggleElement("nav-home-btn", true);
     toggleElement("step1-next-btn", true);

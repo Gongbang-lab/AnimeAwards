@@ -4,6 +4,14 @@ const memeState = {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    memeState.theme = params.get("theme");
+    memeState.awardName = params.get("awardName");
+
+    memeState.awardName = memeState.awardName;
+    const stepTitle = document.getElementById("step-title");
+    if(stepTitle) stepTitle.textContent = `${memeState.awardName} 부문`;
+
     renderMemeGrid();
 
     const popup = document.getElementById("winner-popup");
@@ -20,7 +28,7 @@ function renderMemeGrid() {
 
     grid.innerHTML = Object.values(AnimeMemeData).map(meme => `
         <div class="card meme-card" id="card-${meme.id}" onclick="selectMeme('${meme.id}')">
-            <button class="zoom-btn" onclick="openMemeZoom('${meme.id}', event)" title="확대 보기">🔍</button>
+            <button class="zoom-btn" onclick="openMemeZoom('${meme.id}', event)" title="확대 보기">+</button>
             <div class="media-box">
                 ${meme.type === 'video' 
                     ? `<video src="${meme.src}" muted loop onmouseover="this.play()" onmouseout="this.pause()"></video>` 
@@ -83,7 +91,7 @@ function openMemeZoom(id, e) {
             <button class="zoom-close-btn" onclick="closePopup()">✕</button>
             <h2 class="modal-header">${meme.name}</h2>
             <hr class="modal-divider">
-            <div style="text-align:center; background:#000; padding:10px; border-radius:10px;">
+            <div style="text-align:center; padding:10px; border-radius:10px;">
                 ${meme.type === 'video' 
                     ? `<video src="${meme.src}" controls autoplay loop style="max-height:500px; width:100%;"></video>` 
                     : `<img src="${meme.src}" style="max-height:500px; max-width:100%;">`}

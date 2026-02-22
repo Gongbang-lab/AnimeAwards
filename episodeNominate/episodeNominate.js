@@ -143,19 +143,49 @@ function createAnimeItem(anime) {
     return div;
 }
 
+/**
+ * 프리뷰 리스트 업데이트 (성우 노미네이트 페이지와 100% 동일한 구조)
+ */
 function updatePreview() {
-    els.previewList.innerHTML = '';
+    // 성우 페이지는 id가 preview-box인 경우와 preview-list인 경우가 혼용되나, 
+    // 제공된 HTML의 id인 preview-list를 기준으로 성우 페이지 스타일을 주입합니다.
+    const pBox = document.getElementById("preview-list");
+    const nextBtn = document.getElementById("next-btn");
+    
+    if(!pBox) return;
+    pBox.innerHTML = ""; // 기존 내용 비우기
+    
     const list = Object.values(state.selectedList);
-    if (list.length === 0) { els.previewList.innerHTML = '<span style="color:#555;">선택된 에피소드가 없습니다.</span>'; return; }
 
+    // 선택된 항목이 없을 때 (성우 페이지 규격 문구)
+    if (list.length === 0) {
+        pBox.innerHTML = `<div style="color:#666; text-align:center; padding-top:20px; font-size:0.85rem;">후보를 선택해주세요</div>`;
+        if(nextBtn) nextBtn.disabled = true;
+        return;
+    }
+
+    // 성우 페이지 방식: div.preview-item 생성 후 내부 구조 삽입
     list.forEach(item => {
-        const div = document.createElement('div'); div.className = 'preview-item';
-        div.innerHTML = `<span>${item.title}</span> <span class="preview-ep">${item.episode}화</span>`;
-        div.addEventListener('click', () => { delete state.selectedList[item.uniqueKey]; updatePreview(); });
-        els.previewList.appendChild(div);
+        const div = document.createElement("div");
+        div.className = "preview-item";
+        
+        // 성우 페이지 구조: 상단 제목(애니제목), 하단 소제목(에피소드 정보)
+        div.innerHTML = `
+            <div class="preview-title">${item.title}</div>
+            <div class="preview-subtitle">${item.episode}화</div>
+        `;
+        
+        // 클릭 시 삭제 로직 (성우 페이지와 동일)
+        div.onclick = () => {
+            delete state.selectedList[item.uniqueKey];
+            updatePreview();
+        };
+        pBox.appendChild(div);
     });
-}
 
+    // 버튼 활성화 상태 업데이트
+    if(nextBtn) nextBtn.disabled = list.length === 0;
+}
 // --- [ 검색 기능 연동 ] ---
 function setupSearch() {
     document.getElementById('search-input').addEventListener('input', (e) => {

@@ -75,12 +75,40 @@ function toggleSelect(anime, cardElement) {
     updatePreview();
 }
 
+// [기존 updatePreview 함수를 아래 내용으로 교체]
 function updatePreview() {
     const previewList = document.getElementById('preview-list');
     if (!previewList) return;
-    previewList.innerHTML = selectedItems.length === 0 
-        ? `<span style="color:#555;">후보를 선택해주세요</span>`
-        : selectedItems.map(item => `<div class="preview-item">• ${item.title}</div>`).join('');
+    
+    if (selectedItems.length === 0) {
+        previewList.innerHTML = `<span style="font-size: 0.85rem; color:#555;">후보를 선택해주세요 (최소 2개)</span>`;
+        return;
+    }
+
+    previewList.innerHTML = '';
+    selectedItems.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'preview-item';
+        // 성우/각색상 페이지와 일관된 구조 (제목 + 각본가)
+        div.innerHTML = `
+            ${item.title}
+            <br><small style="color:#888; font-size:0.75rem;">${item.scriptwriter.join(', ')}</small>
+        `;
+        
+        // 클릭 시 삭제 기능 추가 (Step 1에서만 작동)
+        div.onclick = () => {
+            if (currentStep === 1) {
+                const index = selectedItems.findIndex(i => i.id === item.id);
+                if (index > -1) {
+                    selectedItems.splice(index, 1);
+                    // 메인 그리드의 카드 선택 해제 상태 반영을 위해 재렌더링
+                    renderCards(scriptwriterData); 
+                    updatePreview();
+                }
+            }
+        };
+        previewList.appendChild(div);
+    });
 }
 
 function proceedToStep2() {

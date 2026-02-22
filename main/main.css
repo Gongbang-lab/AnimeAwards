@@ -207,7 +207,7 @@ h1 {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
   width: 100%;
-  max-width: 1500px;
+  max-width: 1000px;
   align-items: start;
   justify-content: center; /* 카드들을 가로축 중앙으로 */
   margin: 0 auto;
@@ -215,14 +215,14 @@ h1 {
 
 /* [2] 오프닝 & 음악 부문만 적용되는 특별 그리드 */
 .award-section.special-layout .award-grid-inner {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 카드의 최소 너비를 확 키움 */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* 카드의 최소 너비를 확 키움 */
     gap: 60px; /* 간격도 더 넓게 */
-    max-width: 1200px; /* 너무 넓게 퍼지지 않도록 제한 */
+    max-width: 1600px; /* 너무 넓게 퍼지지 않도록 제한 */
 }
 
 /* [3] 해당 섹션 내의 카드 크기만 조절 */
 .award-section.special-layout .award-card.ratio-16-9 {
-    max-width: 500px; /* 기존 260px 제한 해제 및 확장 */
+    max-width: 400px; /* 기존 260px 제한 해제 및 확장 */
     width: 100%;
     margin: 0 auto;
 }

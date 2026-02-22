@@ -11,7 +11,7 @@
 
   <nav class="top-nav">
     <div class="nav-content-area">
-      <div class="brand">2026 STUDIO AWARDS</div>
+      <div class="brand">2026 ANIME AWARDS</div>
       <div id="step-title">올해의 스튜디오상 후보 선정</div>
     </div>
     <div class="nav-sidebar-area">
@@ -24,17 +24,30 @@
   <main class="content-wrapper">
     <div class="container">
         <section class="content-area">
-            <div id="accordion-group-container" class="accordion-group-container"></div>
+            <div id="step1-container">
+                <div id="accordion-group-container" class="accordion-group-container"></div>
+            </div>
+
+            <div id="step2-container" class="hidden">
+                <h2 style="color:var(--gold); margin-bottom: 20px; border-bottom: 1px solid #333; padding-bottom: 10px;">🏆 최종 수상 후보 결정</h2>
+                <div id="final-nominees-grid" class="accordion-inner-grid"></div>
+            </div>
         </section>
 
       <aside class="sidebar">
-        <div class="action-buttons-vertical">
-          <div class="status-indicator">
-            <span id="selected-name-display">후보를 선택해주세요</span>
-          </div>
-          <div class="control-row">
-            <button id="btn-award" class="gold-btn" disabled>수상 결정</button>
-            <button id="btn-home" class="btn-outline">메인으로</button>
+        <div class="fixed-sidebar-content">
+          <div id="preview-box" class="preview-container status-indicator"></div>
+
+          <div class="action-buttons">
+            <div id="step1-buttons" class="button-row">
+              <button id="nav-home-btn" class="btn-outline">메인으로</button>
+              <button id="step1-next-btn" class="gold-btn" disabled>다음 단계</button>
+            </div>
+      
+          <div id="step2-buttons" class="button-row hidden">
+            <button id="step2-back-btn" class="btn-outline">뒤로가기</button>
+            <button id="step2-award-btn" class="gold-btn" disabled>수상 결정</button>
+            </div>
           </div>
         </div>
       </aside>
@@ -44,7 +57,6 @@
   <div id="works-modal" class="modal hidden">
     <div class="modal-content works-modal-content">
       <div class="works-modal-left" id="works-studio-info"></div>
-      
       <div class="works-modal-right">
         <h2 class="modal-header" style="font-size: 1.4rem; margin-top: 0;">제작 애니메이션</h2>
         <hr class="modal-divider">
@@ -54,29 +66,24 @@
     </div>
   </div>
 
-<div id="winner-modal" class="modal hidden">
+  <div id="winner-modal" class="modal hidden">
     <div class="modal-content winner-modal-content">
         <div class="winner-top-section">
             <div class="winner-badge">🏆 2026 WINNER</div>
         </div>
-
         <div class="winner-body-section">
-            <div class="winner-modal-left" id="winner-studio-info">
-                </div>
-            
+            <div class="winner-modal-left" id="winner-studio-info"></div>
             <div class="winner-modal-right">
                 <h2 class="modal-header">제작 애니메이션 목록</h2>
                 <hr class="modal-divider">
-                <div id="winner-anime-grid" class="works-grid">
-                    </div>
+                <div id="winner-anime-grid" class="works-grid"></div>
             </div>
         </div>
-
         <div class="winner-bottom-section">
             <button class="gold-btn final-btn" onclick="location.href='../main/main.html'">확인 및 메인으로</button>
         </div>
     </div>
-</div>
+  </div>
 
   <canvas id="confettiCanvas"></canvas>
 

@@ -166,37 +166,55 @@ function toggleSelect(data, cardElement) {
  * 프리뷰 박스 업데이트
  */
 function updatePreview() {
-    const list = document.getElementById("preview-list");
-    const count = document.getElementById("selected-count");
-    const nextBtn = document.getElementById("btn-next");
-
-    if (count) count.textContent = dirState.selectedDirectors.length;
-
-    if (list) {
-        list.innerHTML = dirState.selectedDirectors.map(d => `
-            <div class="preview-item" onclick="removeDirector('${d.director}')">
-                ${d.director} ✕
-            </div>
-        `).join('');
+    const previewList = document.getElementById('preview-list');
+    if (!previewList) return;
+    
+    // 선택된 항목이 없을 때
+    if (dirState.selectedDirectors.length === 0) {
+        previewList.innerHTML = `<span style="font-size: 0.85rem; color:#555;">후보를 선택해주세요</span>`;
+        if (document.getElementById("btn-next")) document.getElementById("btn-next").disabled = true;
+        return;
     }
 
-    if (nextBtn) {
-        nextBtn.disabled = dirState.selectedDirectors.length === 0;
+    previewList.innerHTML = '';
+    dirState.selectedDirectors.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'preview-item';
+        
+        // 성우 페이지와 동일하게 이름과 참여 작품 수를 표시 (클릭 시 삭제)
+        div.innerHTML = `
+            ${item.director}
+            <br><small style="color:#888; font-size:0.75rem;">${item.works ? item.works.length : 0}개의 작품</small>
+        `;
+        
+        div.onclick = () => {
+            if (dirState.step === 1) {
+                removeDirector(item.director);
+            }
+        };
+        previewList.appendChild(div);
+    });
+
+    if (document.getElementById("btn-next")) {
+        document.getElementById("btn-next").disabled = dirState.selectedDirectors.length === 0;
     }
 }
-
 /**
  * 프리뷰에서 제거
  */
 function removeDirector(name) {
+    // Step 2(최종 투표 단계)에서는 사이드바에서 삭제 불가하도록 설정
+    if (dirState.step === 2) return;
+
     const index = dirState.selectedDirectors.findIndex(d => d.director === name);
     if (index > -1) {
         dirState.selectedDirectors.splice(index, 1);
         
-        // 카드 UI 업데이트
+        // 메인 그리드의 카드 'selected' 클래스 제거
         const cards = document.querySelectorAll(".card");
         cards.forEach(c => {
-            if (c.querySelector(".card-title").textContent === name) {
+            const titleElement = c.querySelector(".card-title");
+            if (titleElement && titleElement.textContent === name) {
                 c.classList.remove("selected");
             }
         });

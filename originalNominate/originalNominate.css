@@ -71,19 +71,52 @@ body {
 .card-title { font-weight: bold; color: var(--gold); margin-bottom: 5px; }
 .card-writer { font-size: 0.85rem; color: #bbb; }
 
-/* 사이드바 프리뷰 */
+/* [기존 .status-indicator 및 .preview-item 스타일 수정/추가] */
+
 .status-indicator {
-    padding: 20px;
+    padding: 15px; /* 내부 여백 최적화 */
     background: #000;
     border: 1px solid #333;
     border-radius: 8px;
     margin-bottom: 20px;
-    min-height: 200px;
+    height: 350px; /* 성우 페이지와 높이 통일 */
+    overflow-y: auto;
     transition: opacity 0.3s ease;
 }
-.preview-list { display: flex; flex-direction: column; gap: 10px; }
-.preview-item { font-size: 0.9rem; border-bottom: 1px solid #222; padding-bottom: 5px; }
 
+/* 프리뷰 리스트 내 개별 아이템 */
+.preview-item {
+    padding: 12px !important;
+    margin: 0 0 8px 0 !important;
+    background: var(--gray) !important;
+    border-radius: 6px !important;
+    cursor: pointer;
+    font-size: 0.85rem;
+    border: 1px solid transparent;
+    text-align: center;
+    transition: all 0.2s ease;
+    display: block !important;
+    color: #fff;
+    line-height: 1.4;
+}
+
+/* 삭제 유도 호버 효과 (성우/각색상 페이지와 동일) */
+.preview-item:hover {
+    border-color: #ff6b6b !important;
+    color: #ff6b6b !important;
+    background: rgba(255, 107, 107, 0.1) !important;
+    transform: translateY(-2px);
+}
+
+.preview-item small {
+    display: block;
+    margin-top: 3px;
+    pointer-events: none; /* 텍스트 선택 방지 */
+}
+
+/* 스크롤바 디자인 통일 */
+.status-indicator::-webkit-scrollbar { width: 6px; }
+.status-indicator::-webkit-scrollbar-thumb { background: #444; border-radius: 3px; }
 /* 버튼 */
 .gold-btn {
     background: linear-gradient(135deg, var(--gold), var(--dark-gold));

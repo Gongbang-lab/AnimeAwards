@@ -223,30 +223,63 @@ body {
 }
 
 /* 6. 사이드바 프리뷰 및 버튼 */
+/* 사이드바 프리뷰 컨테이너 (성우 노미네이트 규격) */
 .status-indicator {
-    padding: 20px;
-    background: #000;
-    border: 1px solid #333;
+    background: #000 !important; /* 성우 페이지 특유의 완전 검은색 배경 */
+    border: 1px solid #333 !important;
+    height: 450px; /* 고정 높이 */
+    overflow-y: auto;
+    padding: 15px !important;
     border-radius: 8px;
     margin-bottom: 20px;
-    min-height: 200px;
-    max-height: 50vh;
-    overflow-y: auto;
 }
 
+/* 성우 페이지와 동일한 세로 스택형 아이템 스타일 */
 .preview-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    border-bottom: 1px solid #222;
-    cursor: pointer;
-    font-size: 0.9rem;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 12px !important;
+    margin-bottom: 10px !important;
+    background: var(--gray) !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+    border: 1px solid transparent !important;
+    transition: all 0.2s ease !important;
+    width: 100% !important;
 }
 
+/* 성우 페이지 시그니처: 삭제/취소를 의미하는 Red Hover 효과 */
 .preview-item:hover {
-    background: rgba(255, 50, 50, 0.1);
-    color: #ff6b6b;
+    border-color: #ff6b6b !important;
+    background: rgba(255, 107, 107, 0.1) !important;
+    transform: translateY(-2px) !important;
 }
+
+/* 텍스트 스타일 (성우 페이지 규격) */
+.preview-title {
+    color: #fff !important;
+    font-size: 0.85rem !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    word-break: keep-all !important;
+}
+
+.preview-subtitle {
+    color: #888 !important;
+    font-size: 0.75rem !important;
+    margin-top: 4px !important;
+}
+
+/* 호버 시 텍스트 색상 변화 */
+.preview-item:hover .preview-title {
+    color: #ff6b6b !important;
+}
+
+/* 스크롤바 디자인 */
+.status-indicator::-webkit-scrollbar { width: 6px; }
+.status-indicator::-webkit-scrollbar-thumb { background: #444; border-radius: 3px; }
 
 .control-row {
     display: flex;
@@ -277,18 +310,43 @@ body {
 /* 7. Step 2 카드 그리드 (후보 확정 화면) */
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* 카드 최소 너비 제한 */
+    gap: 25px;
+    width: 100%;
+    padding: 20px 0;
 }
 
 .anime-card {
     background: var(--gray);
-    border: 2px solid transparent;
-    border-radius: 8px;
-    padding-bottom: 15px;
+    border: 2px solid #333; /* 기본 테두리를 약간 밝게 설정 */
+    border-radius: 10px;
+    overflow: hidden;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); /* 부드러운 애니메이션 */
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    position: relative;
+}
+
+.anime-card:hover {
+    border-color: var(--gold); /* 골드 테두리 */
+    transform: translateY(-8px); /* 위로 슥 올라가는 효과 */
+    background: #222; /* 배경 약간 밝게 */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* 그림자 추가로 입체감 부여 */
+    z-index: 1;
+}
+
+.anime-card:hover .card-title {
+    color: var(--gold);
+}
+
+.card-thumb {
+    width: 100%;
+    aspect-ratio: 2 / 3; /* 성우/에피소드 공통 세로 비율 */
+    object-fit: cover;   /* 이미지가 찌그러지지 않고 꽉 차게 */
+    border-bottom: 1px solid #333;
+    display: block;
 }
 
 .anime-card.selected {

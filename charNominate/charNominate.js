@@ -6,7 +6,7 @@ const charState = {
   theme: null,        // character_male | character_female
   selectedItems: [],  // 선택된 캐릭터 목록 (Step 1)
   finalWinner: null,  // 최종 수상자 (Step 2)
-  awardName: "올해의 캐릭터상"
+  awardName: ""
 };
 
 // 매핑 데이터
@@ -22,14 +22,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   charState.theme = params.get("theme")
   charState.awardName = params.get("awardName")
-
-  const genderTitle = charState.theme.includes("female") ? "여성" : "남성";
-  document.getElementById("step-title").textContent = `${charState.awardName} (${genderTitle})`;
+  
   document.getElementById("modal-award-name").textContent = charState.awardName;
 
   // 데이터 준비
   const genderKey = charState.theme.includes("female") ? "female" : "male";
   const flatData = getNormalizedCharData(genderKey); // 전체 캐릭터 데이터
+  if (genderKey === "female") {
+    document.getElementById("step-title").textContent = "여우 주연상 부문";
+  } else {
+    document.getElementById("step-title").textContent = "남우 주연상 부문";
+  }
 
   const modalAwardEl = document.getElementById("modal-award-name");
   if (modalAwardEl) {
@@ -166,7 +169,9 @@ function updatePreview() {
   const box = document.getElementById("preview-box");
   const nextBtn = document.getElementById("step1-next-btn");
   
+  if (!box) return;
   box.innerHTML = "";
+
   if (charState.selectedItems.length === 0) {
     box.innerHTML = `<div style="color:#666; text-align:center; margin-top:20px;">선택된 후보가 없습니다.</div>`;
     nextBtn.disabled = true;
@@ -175,14 +180,18 @@ function updatePreview() {
 
   nextBtn.disabled = false;
   charState.selectedItems.forEach(char => {
-    const item = document.createElement("span");
+    const item = document.createElement("div"); // span에서 div로 변경하여 block 처리
     item.className = "preview-item";
-    item.textContent = char.name;
+    item.innerHTML = `
+        ${char.name}
+        <br><small style="color:#888; font-size:0.75rem;">${char.animeTitle}</small>
+    `;
+    
     item.onclick = () => {
-      // 프리뷰 클릭 시 삭제
+      // 삭제 로직
       charState.selectedItems = charState.selectedItems.filter(s => s.id !== char.id);
       
-      // Step 1 UI 동기화
+      // 메인 화면 카드 UI 체크 해제
       const targetCard = document.querySelector(`.card[data-char-id="${char.id}"]`);
       if (targetCard) targetCard.classList.remove("selected");
       

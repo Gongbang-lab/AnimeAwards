@@ -10,9 +10,6 @@ const cvState = {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Top Nav 설정
-    document.querySelector(".brand").textContent = cvState.currentAward;
-    
     // 검색 이벤트 바인딩
     document.getElementById("search-input").addEventListener("input", (e) => {
         renderCVStep1(e.target.value);
@@ -34,11 +31,14 @@ function renderCVStep1(searchTerm = "") {
     const stepTitle = document.getElementById("step-title");
     
     if (cvState.step === 1) {
-        stepTitle.textContent = "후보를 선택하세요 (복수 선택 가능)";
         mainContent.innerHTML = ""; // 초기화
         
         const genderKey = cvState.theme.includes("female") ? "female" : "male";
-        
+        if (genderKey === "female") {
+            stepTitle.textContent = "올해의 여자 성우상 부문";
+        } else {
+            stepTitle.textContent = "올해의 남자 성우상 부문";
+        }
         // 1. 데이터 필터링
         let filteredList = Object.values(CharacterVoiceData)
             .filter(cv => String(cv.gender).toLowerCase() === genderKey);
@@ -174,21 +174,28 @@ function toggleCVSelection(cv, cardElement) {
 
 function updatePreview() {
     const list = document.getElementById("preview-list");
-    const count = document.getElementById("selected-count");
     const nextBtn = document.getElementById("btn-next");
 
-    // 요소가 존재할 때만 실행 (에러 방지)
-    if (count) {
-        count.textContent = cvState.selectedCVs.length;
-    }
+    if (!list) return;
     
-    if (list) {
-        list.innerHTML = cvState.selectedCVs.map(cv => `
-            <div class="preview-item" onclick="removeCV('${cv.name}')">
-                ${cv.name} ✕
-            </div>
-        `).join('');
-    }
+    list.innerHTML = ""; // 초기화
+
+    cvState.selectedCVs.forEach(cv => {
+        // 애니송 페이지와 동일한 preview-item 구조
+        const div = document.createElement("div");
+        div.className = "preview-item";
+        div.innerHTML = `
+            ${cv.name}
+            <br><small style="color:#888;">${cv.characters.length}개 작품 참여</small>
+        `;
+        
+        // 클릭 시 삭제 실행
+        div.onclick = () => {
+            removeCV(cv.name);
+        };
+        
+        list.appendChild(div);
+    });
 
     if (nextBtn) {
         nextBtn.disabled = cvState.selectedCVs.length === 0;
@@ -196,17 +203,23 @@ function updatePreview() {
 }
 
 function removeCV(name) {
-    const target = cvState.selectedCVs.find(v => v.name === name);
-    if (target) {
-        // 카드 UI 선택 해제 (현재 화면에 있다면)
-        const cards = document.querySelectorAll(".card");
-        cards.forEach(c => {
-            if (c.querySelector(".card-title").textContent === name) {
-                c.classList.remove("selected");
-            }
-        });
-        toggleCVSelection(target, { classList: { remove: ()=>{} } }); // 가상 객체로 로직 재활용
+    // 1. 데이터에서 삭제
+    const index = cvState.selectedCVs.findIndex(v => v.name === name);
+    if (index > -1) {
+        cvState.selectedCVs.splice(index, 1);
     }
+
+    // 2. 메인 화면 카드 UI 체크 해제
+    const cards = document.querySelectorAll(".card");
+    cards.forEach(c => {
+        const title = c.querySelector(".card-title");
+        if (title && title.textContent === name) {
+            c.classList.remove("selected");
+        }
+    });
+
+    // 3. 프리뷰 재갱신
+    updatePreview();
 }
 
 /**

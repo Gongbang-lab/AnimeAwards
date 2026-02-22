@@ -1,76 +1,217 @@
 const studioState = {
-    selectedStudio: null,
-    awardName: "올해의 스튜디오상"
+    nominees: [],       // Step 1에서 선택된 후보들 (다중)
+    finalWinner: null,  // Step 2에서 선택된 최종 1인
+    currentStep: 1,
+    awardName: ""
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-    // 초기화 및 렌더링
     renderStudioAccordionGroups();
     initSearch();
 
-    // 버튼 이벤트
-    document.getElementById("btn-home").onclick = () => location.href = "../main/main.html";
-    document.getElementById("btn-award").onclick = handleAwardDecision;
+    const params = new URLSearchParams(window.location.search);
+    studioState.theme = params.get("theme");
+    studioState.awardName = params.get("awardName");
+    
+    const modalAwardNameEl = document.getElementById("modal-award-name");
+    if (modalAwardNameEl) modalAwardNameEl.textContent = studioState.awardName;
+
+    // 변경된 버튼 ID로 이벤트 연결
+    document.getElementById("nav-home-btn").onclick = () => location.href = "../main/main.html";
+    document.getElementById("step1-next-btn").onclick = goToStep2;
+    document.getElementById("step2-back-btn").onclick = goToStep1;
+    document.getElementById("step2-award-btn").onclick = handleAwardDecision;
+    
+    updatePreview(); // 초기 로드 시 미리보기 영역 초기화
 });
 
-/** 메인 그리드 렌더링 */
-function renderStudioGrid() {
-    const grid = document.getElementById("studio-grid");
-    if (!grid || typeof AnimeStudioData === 'undefined') return;
+/** 후보 선택 (Step 1과 2 로직 분리) */
+function selectStudioCard(event, studioName) {
+    const item = AnimeStudioData.find(s => s.studio === studioName);
+    if (!item) return;
 
-    grid.innerHTML = "";
-    // 데이터가 배열인지 객체인지 확인 후 처리 (배열이라고 가정)
-    const list = Array.isArray(AnimeStudioData) ? AnimeStudioData : Object.values(AnimeStudioData);
-    
-    // 이름순 정렬
-    list.sort((a, b) => a.studio.localeCompare(b.studio));
-
-    list.forEach(item => {
-        const card = document.createElement("div");
-        card.className = "card";
+    if (studioState.currentStep === 1) {
+        // Step 1: 다중 선택 (토글) - 최대 제한 없음
+        const index = studioState.nominees.findIndex(n => n.studio === studioName);
+        if (index > -1) {
+            studioState.nominees.splice(index, 1);
+            event.currentTarget.classList.remove('selected');
+        } else {
+            studioState.nominees.push(item);
+            event.currentTarget.classList.add('selected');
+        }
+        updatePreview(); // 함수명 변경 적용
+    } else {
+        // Step 2: 단일 선택 (최종 우승)
+        document.querySelectorAll('#final-nominees-grid .card').forEach(c => c.classList.remove('selected'));
+        event.currentTarget.classList.add('selected');
+        studioState.finalWinner = item;
         
-        // 데이터 필드 매핑
-        const studioName = item.studio;
-        const studioImg = item.studio_img ? `../${item.studio_img}` : 'https://via.placeholder.com/300x169';
+        document.getElementById("step2-award-btn").disabled = false;
+    }
+}
+
+/** 사이드바 Preview Box 업데이트 */
+function updatePreview() {
+    const pBox = document.getElementById("preview-box");
+    const nextBtn = document.getElementById("step1-next-btn");
+    
+    if (!pBox) return;
+    pBox.innerHTML = "";
+
+    // 후보가 없을 때
+    if (studioState.nominees.length === 0) {
+        pBox.innerHTML = `<div style="color:#666; text-align:center; margin-top:20px;">선택된 후보가 없습니다.</div>`;
+        nextBtn.disabled = true;
+        return;
+    }
+
+    // 후보가 있을 때
+    nextBtn.disabled = false;
+    studioState.nominees.forEach(item => {
+        const previewEl = document.createElement("div");
+        previewEl.className = "preview-item";
+        
+        // 스튜디오 데이터에 맞게 제목 및 작품 수 렌더링
         const worksCount = item.works ? item.works.length : 0;
-
-        card.innerHTML = `
-            <div class="card-badge">작품수 ${worksCount}</div>
-            <img src="${studioImg}" alt="${studioName}" loading="lazy">
-            <div class="card-info">
-                <div class="card-title">${studioName}</div>
-            </div>
+        previewEl.innerHTML = `
+            ${item.studio}
+            <br><small style="color:#888; font-size:0.75rem;">작품수 ${worksCount}개</small>
         `;
-
-        // 카드 클릭 (선택)
-        card.onclick = (e) => {
-            if (e.target.classList.contains('card-badge')) return;
-            selectCandidate(item, card);
+        
+        previewEl.onclick = () => {
+            // 선택 해제 로직
+            studioState.nominees = studioState.nominees.filter(s => s.studio !== item.studio);
+            
+            // 메인 화면 렌더링 갱신 (선택된 카드 클래스 재계산)
+            renderStudioAccordionGroups();
+            updatePreview();
         };
-
-        // 배지 클릭 (작품 팝업)
-        const badge = card.querySelector('.card-badge');
-        badge.onclick = (e) => {
-            e.stopPropagation();
-            showWorksModal(item);
-        };
-
-        grid.appendChild(card);
+        pBox.appendChild(previewEl);
     });
 }
 
-/** 후보 선택 */
-function selectCandidate(item, cardElement) {
-    document.querySelectorAll(".card").forEach(c => c.classList.remove("selected"));
-    cardElement.classList.add("selected");
-    studioState.selectedStudio = item;
+/** Step 2 (최종 선택) 으로 이동 */
+function goToStep2() {
+    if (studioState.nominees.length === 0) return;
+    
+    studioState.currentStep = 2;
+    studioState.finalWinner = null; 
 
-    const display = document.getElementById("selected-name-display");
-    display.innerText = `선택됨: ${item.studio}`;
-    document.getElementById("btn-award").disabled = false;
+    // 화면 전환
+    document.getElementById("step1-container").classList.add("hidden");
+    document.getElementById("step2-container").classList.remove("hidden");
+    
+    // 사이드바 요소 전환
+    document.getElementById("preview-box").classList.add("hidden");
+    document.getElementById("step1-buttons").classList.add("hidden");
+    document.getElementById("step2-buttons").classList.remove("hidden");
+
+    document.getElementById("step-title").innerText = "올해의 스튜디오상 - 최종 선택 (Step 2)";
+    document.getElementById("search-input").disabled = true;
+
+    renderFinalNominees();
 }
 
-/** 작품 목록 모달 (좌우 분할) */
+/** Step 1 (후보 선정) 으로 돌아가기 */
+function goToStep1() {
+    studioState.currentStep = 1;
+    studioState.finalWinner = null;
+
+    // 화면 전환
+    document.getElementById("step2-container").classList.add("hidden");
+    document.getElementById("step1-container").classList.remove("hidden");
+    
+    // 사이드바 요소 전환
+    document.getElementById("preview-box").classList.remove("hidden");
+    document.getElementById("step2-buttons").classList.add("hidden");
+    document.getElementById("step1-buttons").classList.remove("hidden");
+
+    document.getElementById("step-title").innerText = "올해의 스튜디오상 후보 선정 (Step 1)";
+    document.getElementById("search-input").disabled = false;
+
+    renderStudioAccordionGroups();
+    updatePreview();
+}
+
+/** Step 2의 선택된 후보 그리드 렌더링 */
+function renderFinalNominees() {
+    const grid = document.getElementById("final-nominees-grid");
+    // Step 1에서 선택한 후보들을 기반으로 카드를 생성
+    grid.innerHTML = studioState.nominees.map(item => createStudioCardHTML(item)).join('');
+}
+
+/** 아코디언 그룹 렌더링 (Step 1) */
+function renderStudioAccordionGroups() {
+    const container = document.getElementById("accordion-group-container");
+    if (!container) return;
+    container.innerHTML = "";
+
+    const groups = new Map();
+    AnimeStudioData.forEach(item => {
+        const count = item.works ? item.works.length : 0;
+        if (!groups.has(count)) groups.set(count, []);
+        groups.get(count).push(item);
+    });
+
+    const sortedCounts = Array.from(groups.keys()).sort((a, b) => b - a);
+
+    sortedCounts.forEach(count => {
+        const studios = groups.get(count);
+        const groupDiv = document.createElement("div");
+        groupDiv.className = "group-item";
+        
+        groupDiv.innerHTML = `
+            <div class="group-header" role="button" aria-expanded="false">
+                <span>작품 수 ${count}개 스튜디오 <small style="color:#888; margin-left:10px;">(${studios.length})</small></span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="group-content">
+                <div class="accordion-inner-grid">
+                    ${studios.map(studio => createStudioCardHTML(studio)).join('')}
+                </div>
+            </div>
+        `;
+
+        const header = groupDiv.querySelector('.group-header');
+        header.onclick = () => {
+            const isActive = groupDiv.classList.contains('active');
+            groupDiv.classList.toggle('active', !isActive);
+            header.setAttribute('aria-expanded', !isActive);
+        };
+        container.appendChild(groupDiv);
+    });
+}
+
+/** 스튜디오 카드 HTML 공통 생성 함수 */
+function createStudioCardHTML(item) {
+    const studioImg = item.studio_img ? `../${item.studio_img}` : 'https://via.placeholder.com/200x120';
+    let isSelected = false;
+
+    // 현재 스텝에 따라 선택된 상태 표시 다르게 처리
+    if (studioState.currentStep === 1) {
+        isSelected = studioState.nominees.some(n => n.studio === item.studio);
+    } else {
+        isSelected = studioState.finalWinner && studioState.finalWinner.studio === item.studio;
+    }
+
+    return `
+        <div class="card ${isSelected ? 'selected' : ''}" onclick="selectStudioCard(event, '${item.studio}')">
+            <div class="card-badge" onclick="event.stopPropagation(); showWorksModalByName('${item.studio}')">작품보기</div>
+            <img src="${studioImg}" alt="${item.studio}">
+            <div class="card-info">
+                <div class="card-title">${item.studio}</div>
+            </div>
+        </div>
+    `;
+}
+
+// === 모달 및 수상 관련 로직 (기존과 동일) ===
+function showWorksModalByName(studioName) {
+    const item = AnimeStudioData.find(s => s.studio === studioName);
+    if (item) showWorksModal(item);
+}
+
 function showWorksModal(item) {
     const modal = document.getElementById("works-modal");
     const leftArea = document.getElementById("works-studio-info");
@@ -78,23 +219,19 @@ function showWorksModal(item) {
     
     const studioImg = item.studio_img ? `../${item.studio_img}` : 'https://via.placeholder.com/300x169';
 
-    // 1. 왼쪽: 스튜디오 로고 및 정보
     leftArea.innerHTML = `
         <img src="${studioImg}" alt="${item.studio}" style="width:100%; max-width:250px; border:2px solid var(--gold); border-radius:10px;">
         <h2 style="color:var(--gold); margin: 20px 0 10px 0;">${item.studio}</h2>
         <p style="color:#888;">총 ${item.works ? item.works.length : 0}개 작품</p>
     `;
 
-    // 2. 오른쪽: 작품 그리드 (works 배열 사용)
     if (!item.works || item.works.length === 0) {
         gridBody.innerHTML = "<p style='color:#666; padding:20px;'>등록된 작품이 없습니다.</p>";
     } else {
         gridBody.innerHTML = item.works.map(work => `
             <div class="work-card">
                 <div style="background:#000; width:100%;">
-                    <img src="${work.thumbnail}" alt="${work.title}" 
-                         loading="lazy"
-                         onerror="this.src='https://via.placeholder.com/150x200?text=No+Image'">
+                    <img src="${work.thumbnail}" alt="${work.title}" loading="lazy" onerror="this.src='https://via.placeholder.com/150x200?text=No+Image'">
                 </div>
                 <div class="work-card-info">
                     <div class="work-card-title">${work.title}</div>
@@ -102,7 +239,6 @@ function showWorksModal(item) {
             </div>
         `).join('');
     }
-
     modal.classList.remove("hidden");
 }
 
@@ -110,23 +246,21 @@ function closeWorksModal() {
     document.getElementById("works-modal").classList.add("hidden");
 }
 
-/** 수상 결정 및 결과 저장 */
 function handleAwardDecision() {
-    if (!studioState.selectedStudio) return;
-    saveWinnerToLocal(studioState.selectedStudio);
+    if (!studioState.finalWinner) return; // Step 2에서 고른 최종 우승자
+    saveWinnerToLocal(studioState.finalWinner);
     
     if (typeof confetti === 'function') {
         confetti({ particleCount: 200, spread: 80, origin: { y: 0.6 }, colors: ['#d4af37', '#ffffff'] });
     }
-    openAwardModal(studioState.selectedStudio);
+    openAwardModal(studioState.finalWinner);
 }
 
 function openAwardModal(item) {
     const modal = document.getElementById("winner-modal");
     const leftArea = document.getElementById("winner-studio-info");
     const rightGrid = document.getElementById("winner-anime-grid");
-    if (!modal || !leftArea || !rightGrid) return;
-
+    
     const studioImg = item.studio_img ? `../${item.studio_img}` : 'https://via.placeholder.com/200';
     const worksCount = item.works ? item.works.length : 0;
 
@@ -138,7 +272,6 @@ function openAwardModal(item) {
         </div>
     `;
 
-    // 2. 오른쪽: 이번 연도 제작 작품 그리드
     if (!item.works || item.works.length === 0) {
         rightGrid.innerHTML = "<p style='color:#666; text-align:center; padding: 20px;'>제작 정보가 없습니다.</p>";
     } else {
@@ -162,13 +295,12 @@ function openAwardModal(item) {
         `;
         rightGrid.innerHTML = tableHTML;
     }
-
     modal.classList.remove("hidden");
 }
 
 function saveWinnerToLocal(item) {
     let results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
-    results["올해의 스튜디오 상"] = {
+    results["올해의 스튜디오상"] = {
         name: item.studio,
         thumbnail: item.studio_img ? `../${item.studio_img}` : '',
         year: '2026'
@@ -185,92 +317,4 @@ function initSearch() {
             card.style.display = name.includes(keyword) ? "block" : "none";
         });
     });
-}
-
-/** 아코디언 그룹 렌더링 */
-function renderStudioAccordionGroups() {
-    const container = document.getElementById("accordion-group-container");
-    if (!container) return;
-
-    container.innerHTML = "";
-
-    // 작품 수별 그룹화
-    const groups = new Map();
-    AnimeStudioData.forEach(item => {
-        const count = item.works ? item.works.length : 0;
-        if (!groups.has(count)) groups.set(count, []);
-        groups.get(count).push(item);
-    });
-
-    // 정렬 (작품 많은 순)
-    const sortedCounts = Array.from(groups.keys()).sort((a, b) => b - a);
-
-    sortedCounts.forEach(count => {
-        const studios = groups.get(count);
-        const groupDiv = document.createElement("div");
-        groupDiv.className = "group-item";
-        
-        groupDiv.innerHTML = `
-            <div class="group-header" role="button" aria-expanded="false">
-                <span>작품 수 ${count}개 스튜디오 <small style="color:#888; margin-left:10px;">(${studios.length})</small></span>
-                <span class="arrow">▼</span>
-            </div>
-            <div class="group-content">
-                <div class="accordion-inner-grid">
-                    ${studios.map(studio => createStudioCardHTML(studio)).join('')}
-                </div>
-            </div>
-        `;
-
-        // 클릭 이벤트: 애니메이션 버벅임을 방지하기 위해 단순 클래스 토글 사용
-        const header = groupDiv.querySelector('.group-header');
-        header.onclick = () => {
-            const isActive = groupDiv.classList.contains('active');
-            
-            // 다른 그룹을 닫고 싶다면 아래 한 줄 추가 (선택사항)
-            // document.querySelectorAll('.group-item').forEach(el => el.classList.remove('active'));
-
-            groupDiv.classList.toggle('active', !isActive);
-            header.setAttribute('aria-expanded', !isActive);
-        };
-
-        container.appendChild(groupDiv);
-    });
-}
-
-/** 스튜디오 카드 HTML 생성 (rookieNominate와 동일한 구조) */
-function createStudioCardHTML(item) {
-    const studioImg = item.studio_img ? `../${item.studio_img}` : 'https://via.placeholder.com/200x120';
-    const isSelected = studioState.selectedStudio && studioState.selectedStudio.studio === item.studio;
-
-    return `
-        <div class="card ${isSelected ? 'selected' : ''}" onclick="selectStudioCard(event, '${item.studio}')">
-            <div class="card-badge" onclick="event.stopPropagation(); showWorksModalByName('${item.studio}')">작품보기</div>
-            <img src="${studioImg}" alt="${item.studio}">
-            <div class="card-info">
-                <div class="card-title">${item.studio}</div>
-            </div>
-        </div>
-    `;
-}
-
-/** 카드 선택 로직 */
-function selectStudioCard(event, studioName) {
-    const item = AnimeStudioData.find(s => s.studio === studioName);
-    if (!item) return;
-
-    // UI 선택 효과 처리
-    document.querySelectorAll('.card').forEach(c => c.classList.remove('selected'));
-    event.currentTarget.classList.add('selected');
-
-    // 상태 업데이트
-    studioState.selectedStudio = item;
-    document.getElementById("selected-name-display").innerText = `선택됨: ${item.studio}`;
-    document.getElementById("btn-award").disabled = false;
-}
-
-/** 모달용 데이터 찾기 헬퍼 */
-function showWorksModalByName(studioName) {
-    const item = AnimeStudioData.find(s => s.studio === studioName);
-    if (item) showWorksModal(item);
 }

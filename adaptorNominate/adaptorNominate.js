@@ -3,7 +3,7 @@ const nominateState = {
     step: 1,
     selectedItems: [],
     selectedWinner: null,
-    awardName: "각색상"
+    awardName: "베스트 각색상"
 };
 
 // [중요] 데이터 맵핑 수정 (Q1 -> 1분기 등)
@@ -34,6 +34,37 @@ const AnimeByQuarter = sourceData.reduce((acc, anime) => {
     acc[q].push(anime);
     return acc;
 }, {});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    nominateState.theme = params.get("theme");
+    nominateState.awardName = params.get("awardName");
+    
+    const modalAwardNameEl = document.getElementById("modal-award-name");
+    if (modalAwardNameEl) modalAwardNameEl.textContent = nominateState.awardName;
+    
+    const stepTitleEl = document.getElementById("step-title");
+    if (stepTitleEl) stepTitleEl.textContent = `${nominateState.awardName} 부문`;
+
+    // 검색 입력 이벤트
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) {
+        searchInput.oninput = function() {
+            const val = this.value;
+            renderStep1(val);
+            updateAutocomplete(val);
+        };
+    }
+
+    // 버튼 클릭 이벤트
+    document.getElementById("step1-next-btn").onclick = goStep2;
+    document.getElementById("step2-back-btn").onclick = goStep1;
+    document.getElementById("step2-award-btn").onclick = openAwardPopup;
+    document.getElementById("nav-home-btn").onclick = () => location.href = "../main/main.html";
+    document.getElementById("go-main-btn").onclick = () => location.href = "../main/main.html";
+
+    renderStep1();
+});
 
 // ──────────────────────────────────────────────────────────
 // 2. Step 1: 렌더링 (아코디언 생성)
@@ -130,10 +161,6 @@ function createCard(anime) {
     return card;
 }
 
-// ... (이후 handleCardClick, updatePreview, goStep2 등의 함수는 이전과 동일) ...
-
-// [중요] 기존 코드의 나머지 부분(handleCardClick ~ fireConfetti)을 아래에 그대로 붙여넣으세요.
-
 function handleCardClick(anime, cardElement) {
     if (nominateState.step === 1) {
         const idx = nominateState.selectedItems.findIndex(a => a.id === anime.id);
@@ -156,19 +183,36 @@ function handleCardClick(anime, cardElement) {
 function updatePreview() {
     const pBox = document.getElementById("preview-box");
     const nextBtn = document.getElementById("step1-next-btn");
+    
+    if (!pBox) return;
     pBox.innerHTML = "";
+
+    if (nominateState.selectedItems.length === 0) {
+        pBox.innerHTML = `<div style="color:#666; text-align:center; margin-top:20px;">선택된 후보가 없습니다.</div>`;
+        nextBtn.disabled = true;
+        return;
+    }
+
+    nextBtn.disabled = false;
     nominateState.selectedItems.forEach(anime => {
-        const item = document.createElement("span");
+        const item = document.createElement("div");
         item.className = "preview-item";
-        item.textContent = anime.title;
+        // 성우 페이지와 일관된 레이아웃 (제목 + 제작사)
+        item.innerHTML = `
+            ${anime.title}
+            <br><small style="color:#888; font-size:0.75rem;">${anime.studio || ''}</small>
+        `;
+        
         item.onclick = () => {
+            // 선택 해제 로직
             nominateState.selectedItems = nominateState.selectedItems.filter(a => a.id !== anime.id);
-            updatePreview();
+            
+            // 메인 화면의 카드 클래스 제거 (ID 기반 매칭)
             renderStep1(document.getElementById('search-input').value);
+            updatePreview();
         };
         pBox.appendChild(item);
     });
-    nextBtn.disabled = nominateState.selectedItems.length === 0;
 }
 
 function goStep2() {
@@ -228,8 +272,8 @@ function openAwardPopup() {
     document.getElementById("winner-modal").classList.remove("hidden");
     fireConfetti();
     
-    const results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
-    results["각색상"] = { title: winner.title, thumbnail: winner.thumbnail };
+    const results = JSON.parse(localStorage.getItem("anime_awards_result"));
+    results[nominateState.awardName] = { title: winner.title, thumbnail: winner.thumbnail };
     localStorage.setItem("anime_awards_result", JSON.stringify(results));
 }
 
@@ -272,11 +316,5 @@ function fireConfetti() {
         requestAnimationFrame(frame);
     }());
 }
-
-document.getElementById("step1-next-btn").onclick = goStep2;
-document.getElementById("step2-back-btn").onclick = goStep1;
-document.getElementById("step2-award-btn").onclick = openAwardPopup;
-document.getElementById("nav-home-btn").onclick = () => location.href = "../main/main.html";
-document.getElementById("go-main-btn").onclick = () => location.href = "../main/main.html";
 
 renderStep1();

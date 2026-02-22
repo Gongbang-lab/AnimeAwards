@@ -76,12 +76,12 @@ function getMergedSongData(themeType) {
 
 document.addEventListener("DOMContentLoaded", () => {
     const params = new URLSearchParams(location.search);
-    const theme = params.get("theme") || "opening";
-    const awardName = params.get("awardName") || "베스트 오프닝";
+    const theme = params.get("theme");
+    const awardName = params.get("awardName");
 
     songNominateState.theme = theme;
-    songNominateState.currentAward = { name: awardName };
-    document.getElementById("step-title-display").textContent = awardName + " 부문";
+    songNominateState.currentAward = awardName;
+    document.getElementById("step-title-display").textContent = `${songNominateState.currentAward}` + " 부문";
 
     renderSongStep1();
 
@@ -249,7 +249,7 @@ function updatePreview() {
 // Step 2 (최종 선택) 렌더링
 function renderSongStep2() {
     const container = document.getElementById("left-area");
-    container.innerHTML = `<h2 class="step-title">최종 후보 결정 (STEP 2)</h2>`;
+    container.innerHTML = `<h2 class="step-title">최종 후보 결정</h2>`;
     
     const grid = document.createElement("div");
     grid.className = "step2-grid";

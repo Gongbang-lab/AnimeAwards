@@ -34,7 +34,7 @@ body {
 #step-title-display { font-size: 1.1rem; color: #ccc; border-left: 3px solid var(--gray); padding-left: 15px; }
 
 .nav-sidebar-area { flex: 2.5; min-width: 300px; display: flex; align-items: center; justify-content: flex-end; padding-right: 25px; }
-.search-container { position: relative; width: 100%; max-width: 250px; margin-left: auto;}
+.search-container { position: relative; width: 100%; max-width: 400px; margin-left: auto;}
 
 #song-search {
     width: 100%; padding: 8px 15px; background: #000; border: 1px solid #444;

@@ -155,29 +155,37 @@ function createCard(anime, isStep2) {
 
 // 사이드바 미리보기 업데이트
 function updatePreview() {
-    const box = document.getElementById('preview-box');
-    box.innerHTML = "";
-    state.selectedCandidates.forEach(anime => {
-        const span = document.createElement('span');
-        span.className = 'preview-item';
-        span.textContent = anime.title;
-        span.onclick = () => {
-            // 미리보기 아이템 클릭 시 삭제
-            state.selectedCandidates = state.selectedCandidates.filter(c => c.id !== anime.id);
-            state.step === 1 ? initStep1() : goStep2();
-        };
-        box.appendChild(span);
-    });
+    const pBox = document.getElementById("preview-box");
+    const nextBtn = document.getElementById("next-btn");
     
-    const nextBtn = document.getElementById('next-btn');
-    // 최소 3개 이상 골라야 넘어갈 수 있음
-    if (state.selectedCandidates.length >= 3) {
-        nextBtn.disabled = false;
-        nextBtn.textContent = `후보 확정 (${state.selectedCandidates.length}개 선택됨)`;
-    } else {
-        nextBtn.disabled = true;
-        nextBtn.textContent = "최소 3개 선택 필요";
+    if (!pBox) return;
+    pBox.innerHTML = "";
+
+    if (state.selectedCandidates.length === 0) {
+        pBox.innerHTML = `<div style="color:#666; text-align:center; margin-top:20px;">선택된 후보가 없습니다.</div>`;
+        if (nextBtn) nextBtn.disabled = true;
+        return;
     }
+
+    if (nextBtn) nextBtn.disabled = state.selectedCandidates.length < 3;
+
+    state.selectedCandidates.forEach(anime => {
+        const item = document.createElement("div");
+        item.className = "preview-item";
+        
+        // 사진처럼 중앙 정렬된 제목과 그 아래 제작사 정보
+        item.innerHTML = `
+            ${anime.title}
+            <small>${anime.studio || ''}</small>
+        `;
+        
+        item.onclick = () => {
+            state.selectedCandidates = state.selectedCandidates.filter(a => a.id !== anime.id);
+            initStep1(); // 메인 화면 카드 선택 해제 동기화
+            updatePreview();
+        };
+        pBox.appendChild(item);
+    });
 }
 
 // ==========================================
