@@ -7,127 +7,108 @@
     --nav-height: 70px;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
 body {
     background-color: var(--black);
     color: var(--white);
+    margin: 0;
     font-family: 'Pretendard', sans-serif;
     overflow-x: hidden;
 }
 
-/* 스크롤바 커스텀 */
-::-webkit-scrollbar { width: 8px; }
-::-webkit-scrollbar-thumb { background: #444; border-radius: 4px; border: 1px solid var(--black); }
-::-webkit-scrollbar-track { background: var(--black); }
-::-webkit-scrollbar-thumb:hover { background: var(--dark-gold); }
-
-/* --- 상단 네비게이션 --- */
+/* 1. 상단 네비게이션 */
 .top-nav {
     position: fixed; top: 0; left: 0; right: 0;
     height: var(--nav-height); background: rgba(20, 20, 20, 0.95);
     display: flex; border-bottom: 2px solid var(--gold);
-    z-index: 1000; backdrop-filter: blur(10px); justify-content: space-between;
+    z-index: 1000; backdrop-filter: blur(10px); justify-content: space-between; align-items: center;
 }
-.nav-content-area { flex: 7.5; display: flex; align-items: center; padding-left: 40px; }
-.brand { color: var(--gold); font-weight: 800; font-size: 1.4rem; margin-right: 25px; letter-spacing: 1px; }
+.nav-content-area { padding-left: 40px; display: flex; align-items: center; }
+.brand { color: var(--gold); font-weight: 800; font-size: 1.4rem; margin-right: 25px; }
 #step-title { font-size: 1.1rem; color: #ccc; border-left: 3px solid var(--gray); padding-left: 15px; }
 
-.nav-sidebar-area { flex: 2.5; min-width: 300px; display: flex; align-items: center; justify-content: flex-end; padding-right: 25px; }
-.search-container { position: relative; width: 100%; max-width: 400px; }
-
+.nav-search-area { padding-right: 40px; width: 300px; }
+.search-container { position: relative; width: 100%; }
 #searchInput {
     width: 100%; padding: 8px 15px; background: #000; border: 1px solid #444;
-    border-radius: 20px; color: white; outline: none; transition: 0.3s;
+    border-radius: 20px; color: white; outline: none; box-sizing: border-box;
 }
-#searchInput:focus { border-color: var(--gold); box-shadow: 0 0 10px rgba(212, 175, 55, 0.2); }
+#searchInput:focus { border-color: var(--gold); }
 
 .autocomplete-list {
     position: absolute; top: calc(100% + 5px); left: 0; width: 100%;
     background: #000; border: 1px solid var(--gold); border-radius: 8px;
     display: none; max-height: 200px; overflow-y: auto; z-index: 2000;
 }
-.autocomplete-list div { padding: 10px 15px; cursor: pointer; border-bottom: 1px solid #333; color: #ccc; font-size: 0.9rem;}
-.autocomplete-list div:last-child { border-bottom: none; }
+.autocomplete-list div { padding: 10px 15px; cursor: pointer; color: #ccc; font-size: 0.9rem; border-bottom: 1px solid #222;}
 .autocomplete-list div:hover { background: var(--gray); color: var(--gold); }
 
-/* --- 레이아웃 --- */
+/* 2. 레이아웃 */
 .content-wrapper { padding-top: var(--nav-height); }
 .container { display: flex; min-height: calc(100vh - var(--nav-height)); }
 
 .content-area { flex: 7.5; padding: 40px; border-right: 1px solid rgba(212, 175, 55, 0.3); }
-.sidebar { flex: 2.5; background-color: #111; position: sticky; top: var(--nav-height); height: calc(100vh - var(--nav-height)); padding: 25px; display: flex; flex-direction: column; }
+.sidebar { 
+    flex: 2.5; background-color: #111; position: sticky; 
+    top: var(--nav-height); height: calc(100vh - var(--nav-height)); 
+    padding: 30px 20px; box-sizing: border-box;
+    display: flex; flex-direction: column; gap: 30px; /* 요소 간 간격 */
+}
 
-/* --- 카드 그리드 --- */
-.card-grid {
+/* 사이드바 UI 요소 */
+.action-buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.gold-btn { background: var(--gold); color: black; font-weight: 800; padding: 15px; border: none; cursor: pointer; border-radius: 6px; transition: 0.2s; }
+.gold-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.btn-outline { background: transparent; border: 1px solid var(--gold); color: var(--gold); padding: 15px; font-weight: bold; cursor: pointer; border-radius: 6px; }
+
+.preview-box { flex-grow: 1; border-top: 1px solid #333; padding-top: 20px; }
+.preview-content { display: flex; flex-direction: column; align-items: center; }
+.preview-img { width: 85%; border-radius: 8px; border: 1px solid var(--gold); margin-bottom: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
+.preview-title { color: var(--gold); font-size: 1.4rem; margin-bottom: 20px; text-align: center; }
+.preview-details { width: 100%; display: flex; flex-direction: column; gap: 12px; }
+.detail-row { display: flex; justify-content: space-between; border-bottom: 1px solid #222; padding-bottom: 8px; font-size: 0.95rem; }
+.detail-row span { color: #888; }
+.empty-preview { text-align: center; color: #444; padding-top: 50px; font-weight: bold; }
+
+/* 3. 그리드 & 카드 */
+.cinema-vote-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 25px;
 }
-
 .card {
-    background: var(--gray);
-    border: 2px solid transparent; /* 기본 상태는 투명 테두리 */
-    border-radius: 8px;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    transition: all 0.3s ease; /* 부드러운 전환 효과 */
-    display: flex;
-    flex-direction: column;
+    background: var(--gray); border: 2px solid transparent; border-radius: 8px;
+    overflow: hidden; cursor: pointer; transition: 0.3s;
 }
-.card:hover { transform: translateY(-5px); border-color: #555; }
-.card.selected {
-    border: 2px solid var(--gold) !important; /* 골드 테두리 강제 적용 */
-    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4); /* 테두리 주변에 은은한 골드 광택 추가 */
-    transform: translateY(-5px); /* 선택된 상태 유지 느낌 부여 */
-}
+.card:hover { transform: translateY(-5px); border-color: rgba(212, 175, 55, 0.4); }
+.card.selected { border-color: var(--gold) !important; box-shadow: 0 0 15px rgba(212, 175, 55, 0.4); }
 
-.card img { width: 100%; aspect-ratio: 2/3; object-fit: cover; }
+.media-box { width: 100%; aspect-ratio: 2/3; background: #000; overflow: hidden; }
+.media-box img { width: 100%; height: 100%; object-fit: cover; }
+
 .card-info { padding: 15px; text-align: center; }
-.card-title { font-size: 1rem; font-weight: bold; margin-bottom: 5px; color: #fff; }
-.card-studio { font-size: 0.85rem; color: #888; }
+.card-title { font-weight: bold; color: var(--gold); font-size: 1rem; margin-bottom: 5px; }
+.card-studio { font-size: 0.8rem; color: #888; }
 
-.info-btn {
-    position: absolute; top: 10px; right: 10px; width: 28px; height: 28px;
-    background: rgba(0,0,0,0.6); border: 1px solid var(--gold); color: var(--gold);
-    border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center;
-    font-size: 1.2rem; z-index: 5; transition: 0.2s;
+/* 4. 모달 (수상 발표용 전용) */
+.hidden { display: none !important; }
+.modal {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.9); display: flex; align-items: center; justify-content: center; z-index: 2000;
 }
-.info-btn:hover { background: var(--gold); color: #000; }
-
-/* --- 버튼 (사이드바) --- */
-.button-group { display: flex; flex-direction: column; gap: 15px; width: 100%; }
-.btn { padding: 15px; font-size: 1rem; font-weight: bold; cursor: pointer; border-radius: 6px; transition: 0.3s; text-align: center; }
-.btn-outline { background: transparent; border: 1px solid var(--gold); color: var(--gold); }
-.btn-outline:hover { background: rgba(212,175,55,0.1); }
-.btn-gold { background: var(--gold); color: #000; border: none; }
-.btn-gold:hover { background: var(--dark-gold); transform: translateY(-2px); }
-
-/* --- 모달 (팝업) --- */
-.modal-overlay {
-    position: fixed; inset: 0; background: rgba(0, 0, 0, 0.9); display: none;
-    justify-content: center; align-items: center; z-index: 9999; backdrop-filter: blur(5px);
-}
-.modal-overlay.active { display: flex; }
-
 .modal-content {
-    background: #1a1a1a; width: 90%; max-width: 800px;
-    border: 2px solid var(--gold); border-radius: 16px; padding: 30px;
-    position: relative; box-shadow: 0 0 50px rgba(212, 175, 55, 0.2);
+    background: #1a1a1a; width: 90%; max-width: 500px;
+    border: 2px solid var(--gold); border-radius: 15px; padding: 30px; text-align: center;
 }
-.modal-header-text { text-align: center; color: var(--gold); font-size: 1.5rem; letter-spacing: 2px; margin-bottom: 20px; font-weight: bold;}
-.modal-body { display: flex; gap: 30px; align-items: center; }
+.modal-header { color: var(--gold); font-size: 1.6rem; margin: 0; }
+.modal-divider { border: 0; height: 1px; background: #333; margin: 20px 0; }
+.winner-poster { width: 60%; margin: 0 auto 20px; border-radius: 10px; overflow: hidden; border: 2px solid var(--gold); }
+.winner-poster img { width: 100%; display: block; }
+.winner-title { color: #fff; margin-bottom: 10px; }
+.winner-info { color: #888; margin-bottom: 30px; }
+.full-width { width: 100%; }
 
-.modal-left { flex: 1; text-align: center; }
-.modal-left img { width: 100%; max-width: 250px; border-radius: 8px; border: 1px solid var(--gold); margin-bottom: 15px; }
-.modal-left h2 { color: var(--gold); font-size: 1.4rem; }
-
-.modal-right { flex: 1.2; display: flex; flex-direction: column; gap: 20px; }
-.info-row { display: flex; justify-content: space-between; border-bottom: 1px solid #333; padding-bottom: 10px; }
-.info-row .label { color: #888; font-weight: bold; font-size: 0.8rem; text-transform: uppercase;}
-.info-row .value { color: var(--white); font-weight: bold; font-size: 1.1rem; text-align: right;}
-
-.close-btn { position: absolute; top: 15px; right: 20px; font-size: 2rem; color: #fff; background: none; border: none; cursor: pointer; }
-.full-width { margin-top: auto; width: 100%; }
-.gold-text { color: var(--gold) !important; }
+.animate-fade { animation: fadeIn 0.4s ease-out; }
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

@@ -341,10 +341,31 @@ function setupSearch() {
 }
 
 function fireConfetti() {
-    const end = Date.now() + 3000;
+    const duration = 3 * 1000;
+    const end = Date.now() + duration;
+
     (function frame() {
-        confetti({ particleCount: 5, angle: 60, spread: 55, origin: { x: 0 }, colors: ['#d4af37', '#ffffff'] });
-        confetti({ particleCount: 5, angle: 120, spread: 55, origin: { x: 1 }, colors: ['#d4af37', '#ffffff'] });
-        if (Date.now() < end) requestAnimationFrame(frame);
+        // 왼쪽에서 발사
+        confetti({
+            particleCount: 3,
+            angle: 60,
+            spread: 55,
+            origin: { x: 0, y: 0.6 },
+            zIndex: 9999,
+            colors: ['#d4af37', '#ffffff']
+        });
+        // 오른쪽에서 발사
+        confetti({
+            particleCount: 3,
+            angle: 120,
+            spread: 55,
+            origin: { x: 1, y: 0.6 }, 
+            zIndex: 9999,
+            colors: ['#d4af37', '#ffffff']
+        });
+
+        if (Date.now() < end) {
+            requestAnimationFrame(frame);
+        }
     }());
 }

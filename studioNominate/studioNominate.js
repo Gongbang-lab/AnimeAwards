@@ -250,9 +250,6 @@ function handleAwardDecision() {
     if (!studioState.finalWinner) return; // Step 2에서 고른 최종 우승자
     saveWinnerToLocal(studioState.finalWinner);
     
-    if (typeof confetti === 'function') {
-        confetti({ particleCount: 200, spread: 80, origin: { y: 0.6 }, colors: ['#d4af37', '#ffffff'] });
-    }
     openAwardModal(studioState.finalWinner);
 }
 
@@ -306,6 +303,7 @@ function saveWinnerToLocal(item) {
         year: '2026'
     };
     localStorage.setItem("anime_awards_result", JSON.stringify(results));
+    fireConfetti();
 }
 
 function initSearch() {
@@ -317,4 +315,34 @@ function initSearch() {
             card.style.display = name.includes(keyword) ? "block" : "none";
         });
     });
+}
+
+function fireConfetti() {
+    const duration = 3 * 1000;
+    const end = Date.now() + duration;
+
+    (function frame() {
+        // 왼쪽에서 발사
+        confetti({
+            particleCount: 3,
+            angle: 60,
+            spread: 55,
+            origin: { x: 0, y: 0.6 },
+            zIndex: 9999,
+            colors: ['#d4af37', '#ffffff']
+        });
+        // 오른쪽에서 발사
+        confetti({
+            particleCount: 3,
+            angle: 120,
+            spread: 55,
+            origin: { x: 1, y: 0.6 }, 
+            zIndex: 9999,
+            colors: ['#d4af37', '#ffffff']
+        });
+
+        if (Date.now() < end) {
+            requestAnimationFrame(frame);
+        }
+    }());
 }
