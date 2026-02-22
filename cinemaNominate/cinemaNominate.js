@@ -106,8 +106,39 @@ document.addEventListener('DOMContentLoaded', () => {
         };
         localStorage.setItem("anime_awards_result", JSON.stringify(result));
         window.location.href = '../main/main.html';
+        fireConfetti();
     };
 });
+
+function fireConfetti() {
+    const duration = 3 * 1000;
+    const end = Date.now() + duration;
+
+    (function frame() {
+        // 왼쪽에서 발사
+        confetti({
+            particleCount: 3,
+            angle: 60,
+            spread: 55,
+            origin: { x: 0, y: 0.6 },
+            zIndex: 9999,
+            colors: ['#d4af37', '#ffffff']
+        });
+        // 오른쪽에서 발사
+        confetti({
+            particleCount: 3,
+            angle: 120,
+            spread: 55,
+            origin: { x: 1, y: 0.6 }, 
+            zIndex: 9999,
+            colors: ['#d4af37', '#ffffff']
+        });
+
+        if (Date.now() < end) {
+            requestAnimationFrame(frame);
+        }
+    }());
+}
 
 function closeModal(id) { document.getElementById(id).classList.remove('active'); }
 function goToMain() { window.location.href = '../main/main.html'; }

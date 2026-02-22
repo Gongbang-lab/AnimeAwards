@@ -371,16 +371,32 @@ function saveAwardResult(winner) {
 
 function fireConfetti() {
     const duration = 3 * 1000;
-    const animationEnd = Date.now() + duration;
-    const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 10001 };
+    const end = Date.now() + duration;
 
-    const interval = setInterval(function() {
-        const timeLeft = animationEnd - Date.now();
-        if (timeLeft <= 0) return clearInterval(interval);
-        const particleCount = 50 * (timeLeft / duration);
-        confetti(Object.assign({}, defaults, { particleCount, origin: { x: 0.2, y: 0.7 } }));
-        confetti(Object.assign({}, defaults, { particleCount, origin: { x: 0.8, y: 0.7 } }));
-    }, 250);
+    (function frame() {
+        // 왼쪽에서 발사
+        confetti({
+            particleCount: 3,
+            angle: 60,
+            spread: 55,
+            origin: { x: 0, y: 0.6 },
+            zIndex: 9999,
+            colors: ['#d4af37', '#ffffff']
+        });
+        // 오른쪽에서 발사
+        confetti({
+            particleCount: 3,
+            angle: 120,
+            spread: 55,
+            origin: { x: 1, y: 0.6 }, 
+            zIndex: 9999,
+            colors: ['#d4af37', '#ffffff']
+        });
+
+        if (Date.now() < end) {
+            requestAnimationFrame(frame);
+        }
+    }());
 }
 
 // ──────────────────────────────────────────────────────────

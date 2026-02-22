@@ -430,9 +430,6 @@ function drawImageCenterCover(ctx, img, x, y, w, h) {
 
 // --- 폭죽 효과 (Canvas) ---
 function fireConfetti() {
-    // 특정 canvas를 지정하지 않고 호출하면 브라우저 전체 화면을 사용합니다.
-    // 기존에 id="confettiCanvas"와 연결된 로직이 있다면 삭제하거나 아래 코드로 대체하세요.
-
     const duration = 3 * 1000;
     const end = Date.now() + duration;
 
