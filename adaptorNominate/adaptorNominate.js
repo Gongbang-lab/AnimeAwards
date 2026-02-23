@@ -217,13 +217,13 @@ function updatePreview() {
 
 function goStep2() {
     nominateState.step = 2;
-    document.getElementById("step-title").textContent = "최종 수상작 결정 (Step 2)";
+    document.getElementById("step-title").textContent = "";
     toggleElement("nav-home-btn", false);
     toggleElement("step1-next-btn", false);
     toggleElement("step2-back-btn", true);
     toggleElement("step2-award-btn", true);
     const leftArea = document.getElementById("left-area");
-    leftArea.innerHTML = `<h2 style="color:var(--gold); margin-bottom:20px;">최종 수상작을 선택하세요</h2><div id="step2-grid"></div>`;
+    leftArea.innerHTML = `<h2 style="color:var(--gold); margin-bottom:20px;"></h2><div id="step2-grid"></div>`;
     const gridDiv = document.getElementById("step2-grid");
     nominateState.selectedItems.forEach(anime => gridDiv.appendChild(createCard(anime)));
 }
@@ -231,7 +231,7 @@ function goStep2() {
 function goStep1() {
     nominateState.step = 1;
     nominateState.selectedWinner = null;
-    document.getElementById("step-title").textContent = "각색상 후보 선정 (Step 1)";
+    document.getElementById("step-title").textContent = "";
     toggleElement("nav-home-btn", true);
     toggleElement("step1-next-btn", true);
     toggleElement("step2-back-btn", false);

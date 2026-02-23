@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // ==========================================
 function initStep1() {
     state.step = 1;
-    document.getElementById('step-title').textContent = "1단계: 후보 리스트 선택";
+    document.getElementById('step-title').textContent = "올해의 시리즈 부문";
     document.getElementById('next-btn').textContent = "후보 확정";
     document.getElementById('rank-status').classList.add('hidden');
     
@@ -194,7 +194,7 @@ function updatePreview() {
 function goStep2() {
     state.step = 2;
     state.finalTop3 = [];
-    document.getElementById('step-title').textContent = "2단계: 순위 결정";
+    document.getElementById('step-title').textContent = "최종 후보 순위 결정";
     document.getElementById('next-btn').textContent = "최종 결과 발표";
     document.getElementById('next-btn').disabled = true;
     document.getElementById('rank-status').classList.remove('hidden');

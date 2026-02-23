@@ -36,8 +36,8 @@ body {
 .nav-sidebar-area { flex: 2.5; min-width: 300px; display: flex; align-items: center; padding-right: 20px; }
 .search-container { position: relative; width: 100%; }
 #search-input {
-    width: 100%; padding: 10px 15px; background: #000; border: 1px solid #444;
-    border-radius: 4px; color: white; outline: none; box-sizing: border-box;
+    width: 100%; padding: 10px; background: #000; border: 1px solid #444;
+    border-radius: 10px; color: white; outline: none; box-sizing: border-box;
 }
 
 /* 메인 레이아웃 */

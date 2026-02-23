@@ -233,7 +233,7 @@ function goStep2() {
         // 사이드바 버튼 변경
         document.getElementById("btn-back").textContent = "이전으로";
         const nextBtn = document.getElementById("btn-next");
-        nextBtn.textContent = "투표 완료";
+        nextBtn.textContent = "수상 결정";
         nextBtn.disabled = true;
 
         // 메인 콘텐츠 교체 (그리드 뷰)

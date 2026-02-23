@@ -250,7 +250,7 @@ function updatePreview() {
 // Step 2 (최종 선택) 렌더링
 function renderSongStep2() {
     const container = document.getElementById("left-area");
-    container.innerHTML = `<h2 class="step-title">최종 후보 결정</h2>`;
+    container.innerHTML = "";
     
     const grid = document.createElement("div");
     grid.className = "step2-grid";

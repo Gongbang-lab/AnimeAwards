@@ -73,14 +73,16 @@ body {
     width: 100%;
     max-width: 400px; /* 요청하신 검색창 길이 조절 */
     position: relative;
+    margin-left: auto;
+    margin-right: 20px;
 }
 
 #search-input {
     width: 100%;
-    padding: 8px 15px;
+    padding: 10px;
     background: #000;
     border: 1px solid #444;
-    border-radius: 4px;
+    border-radius: 10px;
     color: white;
     outline: none;
     transition: all 0.3s ease;
