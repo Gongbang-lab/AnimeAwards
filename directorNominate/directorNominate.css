@@ -63,7 +63,7 @@ body {
     border: 1px solid #333;
     border-radius: 8px;
     margin-bottom: 20px;
-    height: 350px; /* 성우 페이지 높이 기준 */
+    height: 320px; /* 성우 페이지 높이 기준 */
     overflow-y: auto;
     transition: opacity 0.3s ease;
 }
