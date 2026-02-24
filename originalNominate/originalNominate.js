@@ -81,7 +81,7 @@ function updatePreview() {
     if (!previewList) return;
     
     if (selectedItems.length === 0) {
-        previewList.innerHTML = `<span style="font-size: 0.85rem; color:#555;">후보를 선택해주세요 (최소 2개)</span>`;
+        previewList.innerHTML = `<span style="font-size: 0.85rem; color:#555;"></span>`;
         return;
     }
 

@@ -1,6 +1,8 @@
 // 상수 및 데이터
 const QUARTER_MAP = { "1분기": "1분기", "2분기": "2분기", "3분기": "3분기", "4분기": "4분기" };
-const DAY_MAP = { Mondays: "월요일", Tuesdays: "화요일", Wednesdays: "수요일", Thursdays: "목요일", Fridays: "금요일", Saturdays: "토요일", Sundays: "일요일" };
+const DAY_MAP = { Mondays: "월요일", Tuesdays: "화요일", Wednesdays: "수요일",
+    Thursdays: "목요일", Fridays: "금요일", Saturdays: "토요일", Sundays: "일요일", 
+    Anomaly: "변칙 편성", Web: "웹 애니메이션" };
 
 const state = {
     selectedList: {}, 
@@ -31,11 +33,10 @@ function init() {
 function groupData(list) {
     const grouped = {};
     list.forEach(item => {
-        const q = item.quarter;
-        const d = item.day;
-        if (!grouped[q]) grouped[q] = {};
-        if (!grouped[q][d]) grouped[q][d] = [];
-        grouped[q][d].push(item);
+        // 요일(day) 구분 없이 오직 분기(quarter) 기준으로만 배열에 푸시
+        const q = QUARTER_MAP[item.quarter] || item.quarter;
+        if (!grouped[q]) grouped[q] = [];
+        grouped[q].push(item);
     });
     return grouped;
 }
@@ -43,39 +44,41 @@ function groupData(list) {
 // --- [ Step 1: 아코디언 렌더링 (기존 로직 유지) ] ---
 function renderAccordion(data) {
     els.accordion.innerHTML = '';
-
+    
     // 분기별 정렬 (1분기, 2분기...)
     const sortedQuarters = Object.keys(data).sort();
 
     sortedQuarters.forEach(qKey => {
-        const qDiv = document.createElement('div');
-        qDiv.className = 'acc-level-1';
-        const qHeader = createAccHeader(qKey);
-        const qContent = document.createElement('div');
-        qContent.className = 'acc-content';
+        const animeList = data[qKey];
+        if (!animeList || animeList.length === 0) return;
 
-        // 요일별 정렬 (Mondays, Tuesdays...)
-        const daysInOrder = ["Mondays", "Tuesdays", "Wednesdays", "Thursdays", "Fridays", "Saturdays", "Sundays"];
-        
-        daysInOrder.forEach(dayKey => {
-            if (data[qKey][dayKey]) {
-                const dDiv = document.createElement('div');
-                dDiv.className = 'acc-level-2';
-                const dHeader = createAccHeader(DAY_MAP[dayKey] || dayKey);
-                const dContent = document.createElement('div');
-                dContent.className = 'acc-content';
+        const qSection = document.createElement('div');
+        qSection.className = 'quarter-section';
 
-                data[qKey][dayKey].forEach(anime => {
-                    dContent.appendChild(createAnimeItem(anime));
-                });
+        const qBtn = document.createElement('button');
+        qBtn.className = 'quarter-btn';
+        // 요일 없이 "1분기" 등 분기 이름만 직관적으로 표시
+        qBtn.innerHTML = `<span>${qKey}</span> <span>▼</span>`;
 
-                dDiv.append(dHeader, dContent);
-                qContent.appendChild(dDiv);
-            }
+        const dContent = document.createElement('div');
+        // CSS 스타일을 그대로 적용받기 위해 기존 클래스명 유지
+        dContent.className = 'day-content'; 
+        dContent.style.display = 'none';
+
+        qBtn.onclick = () => {
+            const isGrid = dContent.style.display === "grid";
+            dContent.style.display = isGrid ? "none" : "grid";
+            qBtn.classList.toggle("active", !isGrid);
+        };
+
+        // 해당 분기에 속한 모든 애니메이션(Web, Anomaly 포함)을 한 번에 출력
+        animeList.forEach(anime => {
+            dContent.appendChild(createAnimeItem(anime));
         });
 
-        qDiv.append(qHeader, qContent);
-        els.accordion.appendChild(qDiv);
+        qSection.appendChild(qBtn);
+        qSection.appendChild(dContent);
+        els.accordion.appendChild(qSection);
     });
 }
 
@@ -190,16 +193,25 @@ function updatePreview() {
 function setupSearch() {
     document.getElementById('search-input').addEventListener('input', (e) => {
         const keyword = e.target.value.toLowerCase().trim();
+        const isSearching = keyword.length > 0;
+
         document.querySelectorAll('.anime-item').forEach(item => {
             const match = item.dataset.title.includes(keyword);
             item.style.display = match ? 'flex' : 'none';
-            if(match) {
-                let p = item.closest('.acc-content');
-                while(p) { p.classList.add('open'); p.style.maxHeight = 'none'; p = p.parentElement.closest('.acc-content'); }
+            
+            // 검색어 입력 시 일치하는 아이템이 있는 아코디언을 자동으로 엽니다
+            if (match && isSearching) {
+                let content = item.closest('.day-content');
+                if (content) {
+                    content.style.display = 'grid';
+                    if (content.previousElementSibling) {
+                        content.previousElementSibling.classList.add('active');
+                    }
+                }
             }
         });
     });
-}
+}groupData
 
 // --- [ Step 이동 (originalNominate 스타일) ] ---
 function proceedToStep2() {

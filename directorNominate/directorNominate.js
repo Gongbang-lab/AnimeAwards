@@ -34,23 +34,25 @@ function renderDirectorGrid(searchTerm = "") {
         ? animeDirectorData.filter(d => d.director.toLowerCase().includes(searchTerm.toLowerCase().trim()))
         : dirState.selectedDirectors;
 
+    const isSearching = searchTerm.length > 0;
+
     if (filteredData.length === 0) {
         container.innerHTML = `<div style="text-align:center; padding:50px; color:#666;">데이터가 없습니다.</div>`;
         return;
     }
 
-    // --- Step 2: 아코디언 없이 일반 그리드로 표시 ---
+    // --- Step 2: 기억해둔 일반 그리드 뷰 (#step2-grid) 적용 ---
     if (dirState.step === 2) {
         const finalGrid = document.createElement("div");
-        finalGrid.className = "final-grid-view";
+        finalGrid.id = "step2-grid"; // 추출한 Step 2 CSS 아이디 적용
         filteredData.forEach(director => {
             finalGrid.appendChild(createDirectorCard(director, "step2"));
         });
         container.appendChild(finalGrid);
-        return; // Step 2 로직 종료
+        return; 
     }
 
-    // --- Step 1: 작품 수별 아코디언 표시 ---
+    // --- Step 1: 작품 수별 아코디언 표시 (기억해둔 디자인 적용) ---
     const groups = {};
     filteredData.forEach(d => {
         const count = d.works ? d.works.length : 0;
@@ -61,38 +63,31 @@ function renderDirectorGrid(searchTerm = "") {
     const sortedKeys = Object.keys(groups).sort((a, b) => b - a);
 
     sortedKeys.forEach(count => {
-        const groupWrapper = document.createElement("div");
-        groupWrapper.className = "accordion-group";
+        const qSection = document.createElement("div");
+        qSection.className = "quarter-section";
 
-        const header = document.createElement("div");
-        header.className = "accordion-header"; 
-        header.innerHTML = `
-            <span class="header-title">${count}개 작품 참여 감독 (${groups[count].length}명)</span>
-            <span class="header-icon">▼</span>
-        `;
+        const qBtn = document.createElement("button");
+        qBtn.className = `quarter-btn ${isSearching ? 'active' : ''}`;
+        qBtn.innerHTML = `<span>${count}개 작품 참여 감독 (${groups[count].length}명)</span> <span>▼</span>`;
 
-        const content = document.createElement("div");
-        content.className = "accordion-content";
-        
-        const grid = document.createElement("div");
-        grid.className = "director-grid-view";
+        const dContent = document.createElement("div");
+        dContent.className = "day-content";
+        // 검색 중일 때는 그리드를 열어두고, 평소엔 닫아둠
+        dContent.style.display = isSearching ? "grid" : "none";
 
-        groups[count].forEach(director => {
-            grid.appendChild(createDirectorCard(director, "step1"));
-        });
-
-        content.appendChild(grid);
-        
-        // 클릭 시 즉각적인 토글 (애니메이션 없음)
-        header.onclick = () => {
-            const isOpening = content.style.display !== "block";
-            content.style.display = isOpening ? "block" : "none";
-            header.classList.toggle("active", isOpening);
+        qBtn.onclick = () => {
+            const isGrid = dContent.style.display === "grid";
+            dContent.style.display = isGrid ? "none" : "grid";
+            qBtn.classList.toggle("active", !isGrid);
         };
 
-        groupWrapper.appendChild(header);
-        groupWrapper.appendChild(content);
-        container.appendChild(groupWrapper);
+        groups[count].forEach(director => {
+            dContent.appendChild(createDirectorCard(director, "step1"));
+        });
+
+        qSection.appendChild(qBtn);
+        qSection.appendChild(dContent);
+        container.appendChild(qSection);
     });
 }
 
@@ -229,10 +224,10 @@ function goStep2() {
     if (dirState.step === 1) {
         dirState.step = 2;
         document.getElementById("step-title").textContent = "최종 수상자를 투표해주세요";
-        document.getElementById("btn-back").textContent = "이전으로";
+        document.getElementById("btn-back").textContent = "이전 단계";
         
         const nextBtn = document.getElementById("btn-next");
-        nextBtn.textContent = "투표 완료";
+        nextBtn.textContent = "수상 결정";
         nextBtn.disabled = true;
 
         renderDirectorGrid(); // 선택된 후보만 다시 렌더링

@@ -160,68 +160,44 @@ body {
 
 #confettiCanvas { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 9999; }
 
-/* 아코디언 레이아웃 */
-.accordion-group { 
-    margin-bottom: 10px; 
+/* Step 1 아코디언 컨테이너 */
+.quarter-section { 
+    margin-bottom: 15px; 
     border: 1px solid #333; 
     border-radius: 8px; 
     overflow: hidden; 
 }
 
-.accordion-header { 
-    background: #222; 
-    padding: 12px 20px; 
+/* 아코디언 버튼 */
+.quarter-btn {
+    width: 100%; 
+    padding: 16px 20px; 
+    background: #1f1f1f; 
+    border: none; 
+    font-size: 1rem; 
+    color: #eee; 
+    font-weight: bold; 
     display: flex; 
     justify-content: space-between; 
-    align-items: center; 
     cursor: pointer;
 }
+.quarter-btn:hover { background: #2a2a2a; color: var(--gold); }
+.quarter-btn.active { border-bottom: 1px solid #333; color: var(--gold); }
 
-.accordion-header:hover { background: #2a2a2a; }
-
-.accordion-header.active { 
-    background: #2a2a2a;
-    border-bottom: 1px solid var(--gold); 
+/* 아코디언 내부 그리드 (Step 1) */
+.day-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    background: #0a0a0a;
 }
 
-.header-title { 
-    color: var(--gold); 
-    font-weight: bold; 
-    font-size: 1.1rem; 
-}
-
-.header-icon { 
-    color: var(--gold); 
-    transition: 0.3s; 
-    font-size: 0.8rem;
-}
-
-.accordion-header.active .header-icon { transform: rotate(180deg); }
-
-/* 아코디언 내용 영역 */
-.accordion-content { 
-    display: none; /* 기본 숨김 */
-    background: #111; 
+/* Step 2 최종 후보 그리드 */
+#step2-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px; 
     padding: 20px;
-}
-
-.final-grid-view {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 20px;
-    padding: 20px 0;
-}
-
-.accordion-content.show { 
-    display: block; 
-}
-
-.accordion-inner {
-    overflow: hidden;
-}
-.director-grid-view {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 20px;
-    padding-bottom: 10px; /* 하단 여백 추가 */
 }

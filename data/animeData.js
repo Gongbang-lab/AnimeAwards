@@ -951,11 +951,5 @@ const AnimeList = [
       "character_design": ["오오츠 나오", "노리타 타쿠모"],
       "adaptor": ["히구치 나나미"]
     }
-  },
-  // Q2 데이터 예시
-  { "id": 201, "quarter": "2분기", "title": "", "thumbnail": "" },
-  // Q3 데이터 예시
-  { "id": 301, "quarter": "3분기", "title": "", "thumbnail": "" },
-  // Q4 데이터 예시
-  { "id": 401, "quarter": "4분기", "title": "", "thumbnail": "" }
+  }
 ];

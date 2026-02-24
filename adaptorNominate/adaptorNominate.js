@@ -223,7 +223,7 @@ function goStep2() {
     toggleElement("step2-back-btn", true);
     toggleElement("step2-award-btn", true);
     const leftArea = document.getElementById("left-area");
-    leftArea.innerHTML = `<h2 style="color:var(--gold); margin-bottom:20px;"></h2><div id="step2-grid"></div>`;
+    leftArea.innerHTML = `<h2 style="color:var(--gold); margin-bottom:20px;">최종 수상작을 선택하세요</h2><div id="step2-grid"></div>`;
     const gridDiv = document.getElementById("step2-grid");
     nominateState.selectedItems.forEach(anime => gridDiv.appendChild(createCard(anime)));
 }

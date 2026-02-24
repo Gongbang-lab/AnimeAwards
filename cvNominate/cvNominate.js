@@ -231,7 +231,7 @@ function goStep2() {
         document.getElementById("step-title").textContent = "최종 수상자를 투표해주세요";
         
         // 사이드바 버튼 변경
-        document.getElementById("btn-back").textContent = "이전으로";
+        document.getElementById("btn-back").textContent = "이전 단계";
         const nextBtn = document.getElementById("btn-next");
         nextBtn.textContent = "수상 결정";
         nextBtn.disabled = true;

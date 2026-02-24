@@ -61,7 +61,7 @@ function updatePreview() {
 
     // 후보가 없을 때
     if (studioState.nominees.length === 0) {
-        pBox.innerHTML = `<div style="color:#666; text-align:center; margin-top:20px;">선택된 후보가 없습니다.</div>`;
+        pBox.innerHTML = `<div style="color:#666; text-align:center; margin-top:20px;"></div>`;
         nextBtn.disabled = true;
         return;
     }

@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function initStep1() {
     state.step = 1;
     document.getElementById('step-title').textContent = "올해의 시리즈 부문";
-    document.getElementById('next-btn').textContent = "후보 확정";
+    document.getElementById('next-btn').textContent = "다음 단계";
     document.getElementById('rank-status').classList.add('hidden');
     
     const display = document.getElementById('main-display');
@@ -162,7 +162,7 @@ function updatePreview() {
     pBox.innerHTML = "";
 
     if (state.selectedCandidates.length === 0) {
-        pBox.innerHTML = `<div style="color:#666; text-align:center; margin-top:20px;">선택된 후보가 없습니다.</div>`;
+        pBox.innerHTML = `<div style="color:#666; text-align:center; margin-top:20px;"></div>`;
         if (nextBtn) nextBtn.disabled = true;
         return;
     }
@@ -195,7 +195,7 @@ function goStep2() {
     state.step = 2;
     state.finalTop3 = [];
     document.getElementById('step-title').textContent = "최종 후보 순위 결정";
-    document.getElementById('next-btn').textContent = "최종 결과 발표";
+    document.getElementById('next-btn').textContent = "수상 결정";
     document.getElementById('next-btn').disabled = true;
     document.getElementById('rank-status').classList.remove('hidden');
 
