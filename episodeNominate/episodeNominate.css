@@ -121,47 +121,75 @@ body {
     flex-direction: column;
 }
 
-/* 4. 아코디언 스타일 (기억해둔 content-area 레이아웃 적용) */
-.quarter-section { 
-    margin-bottom: 15px; 
-    border: 1px solid #333; 
-    border-radius: 8px; 
-    overflow: hidden; 
+/* 4. 아코디언 스타일 (3단 구조: 분기 -> 요일 -> 그리드 뷰) */
+.acc-level-1 {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
 }
 
-.quarter-btn {
-    width: 100%; 
-    padding: 16px 20px; 
-    background: #1f1f1f; 
-    border: none; 
-    font-size: 1rem; 
-    color: #eee; 
-    font-weight: bold; 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center;
+.acc-level-2 {
+    background: #111;
+    border-top: 1px solid #222;
+}
+
+.acc-header {
+    padding: 16px 20px;
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     transition: background 0.2s, color 0.2s;
 }
 
-.quarter-btn:hover { 
-    background: #2a2a2a; 
-    color: var(--gold); 
+/* 1단계 (분기) 디자인 */
+.level-1-header {
+    color: #eee;
+    font-size: 1.1rem;
+    font-weight: 800;
 }
 
-.quarter-btn.active { 
-    border-bottom: 1px solid #333; 
-    color: var(--gold); 
+.level-1-header:hover {
+    background: #2a2a2a;
+    color: var(--gold);
 }
 
-.day-content {
+/* 2단계 (요일/특수편성) 디자인 */
+.level-2-header {
+    padding-left: 30px;
+    font-size: 0.95rem;
+    color: #ccc;
+    background: #141414;
+}
+
+.level-2-header:hover {
+    color: var(--gold);
+    background: #1c1c1c;
+}
+
+/* 아코디언 열림/닫힘 로직 */
+.acc-content {
+    max-height: 0;
+    overflow: hidden;
+}
+
+/* 3단계 (그리드 뷰) 디자인 */
+.level-2-content.open {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 15px; 
-    padding: 20px; 
-    box-sizing: border-box; 
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
     background: #0a0a0a;
+    max-height: none !important; /* 내부 그리드 높이에 맞춰 자동 확장 */
 }
+
+/* 활성화 시 아이콘 회전 효과 */
+.acc-header i { transition: transform 0.3s; }
+.acc-content.open > .acc-header i { transform: rotate(180deg); }
+
 /* 5. 개별 애니메이션 카드 UI */
 .anime-item {
     display: flex;

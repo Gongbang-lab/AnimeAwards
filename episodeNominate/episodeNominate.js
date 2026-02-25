@@ -1,9 +1,10 @@
 // 상수 및 데이터
 const QUARTER_MAP = { "1분기": "1분기", "2분기": "2분기", "3분기": "3분기", "4분기": "4분기" };
-const DAY_MAP = { Mondays: "월요일", Tuesdays: "화요일", Wednesdays: "수요일",
-    Thursdays: "목요일", Fridays: "금요일", Saturdays: "토요일", Sundays: "일요일", 
-    Anomaly: "변칙 편성", Web: "웹 애니메이션" };
-
+const DAY_MAP = { 
+    Mondays: "월요일", Tuesdays: "화요일", Wednesdays: "수요일", 
+    Thursdays: "목요일", Fridays: "금요일", Saturdays: "토요일", Sundays: "일요일",
+    Anomaly: "변칙 편성", Web: "웹" // 추가된 키
+};
 const state = {
     selectedList: {}, 
     winnerKey: null
@@ -33,10 +34,11 @@ function init() {
 function groupData(list) {
     const grouped = {};
     list.forEach(item => {
-        // 요일(day) 구분 없이 오직 분기(quarter) 기준으로만 배열에 푸시
-        const q = QUARTER_MAP[item.quarter] || item.quarter;
-        if (!grouped[q]) grouped[q] = [];
-        grouped[q].push(item);
+        const q = item.quarter;
+        const d = item.day;
+        if (!grouped[q]) grouped[q] = {};
+        if (!grouped[q][d]) grouped[q][d] = [];
+        grouped[q][d].push(item);
     });
     return grouped;
 }
@@ -44,50 +46,49 @@ function groupData(list) {
 // --- [ Step 1: 아코디언 렌더링 (기존 로직 유지) ] ---
 function renderAccordion(data) {
     els.accordion.innerHTML = '';
-    
-    // 분기별 정렬 (1분기, 2분기...)
     const sortedQuarters = Object.keys(data).sort();
+    
+    // 요일 및 특수편성 출력 순서
+    const daysInOrder = ["Mondays", "Tuesdays", "Wednesdays", "Thursdays", "Fridays", "Saturdays", "Sundays", "Anomaly", "Web"];
 
     sortedQuarters.forEach(qKey => {
-        const animeList = data[qKey];
-        if (!animeList || animeList.length === 0) return;
+        const qDiv = document.createElement('div');
+        qDiv.className = 'acc-level-1'; // 1단계 (분기)
+        
+        const qHeader = createAccHeader(qKey, 'level-1-header');
+        const qContent = document.createElement('div');
+        qContent.className = 'acc-content level-1-content';
 
-        const qSection = document.createElement('div');
-        qSection.className = 'quarter-section';
+        daysInOrder.forEach(dayKey => {
+            if (data[qKey][dayKey]) {
+                const dDiv = document.createElement('div');
+                dDiv.className = 'acc-level-2'; // 2단계 (요일/특수)
+                
+                const dHeader = createAccHeader(DAY_MAP[dayKey] || dayKey, 'level-2-header');
+                const dContent = document.createElement('div');
+                dContent.className = 'acc-content level-2-content'; // 3단계 (그리드)
 
-        const qBtn = document.createElement('button');
-        qBtn.className = 'quarter-btn';
-        // 요일 없이 "1분기" 등 분기 이름만 직관적으로 표시
-        qBtn.innerHTML = `<span>${qKey}</span> <span>▼</span>`;
+                data[qKey][dayKey].forEach(anime => {
+                    dContent.appendChild(createAnimeItem(anime));
+                });
 
-        const dContent = document.createElement('div');
-        // CSS 스타일을 그대로 적용받기 위해 기존 클래스명 유지
-        dContent.className = 'day-content'; 
-        dContent.style.display = 'none';
-
-        qBtn.onclick = () => {
-            const isGrid = dContent.style.display === "grid";
-            dContent.style.display = isGrid ? "none" : "grid";
-            qBtn.classList.toggle("active", !isGrid);
-        };
-
-        // 해당 분기에 속한 모든 애니메이션(Web, Anomaly 포함)을 한 번에 출력
-        animeList.forEach(anime => {
-            dContent.appendChild(createAnimeItem(anime));
+                dDiv.append(dHeader, dContent);
+                qContent.appendChild(dDiv);
+            }
         });
 
-        qSection.appendChild(qBtn);
-        qSection.appendChild(dContent);
-        els.accordion.appendChild(qSection);
+        qDiv.append(qHeader, qContent);
+        els.accordion.appendChild(qDiv);
     });
 }
 
-function createAccHeader(text) {
+function createAccHeader(text, headerClass) {
     const header = document.createElement('div');
-    header.className = 'acc-header';
+    header.className = `acc-header ${headerClass}`;
     header.innerHTML = `<span>${text}</span><i class="fas fa-chevron-down"></i>`;
     
-    header.addEventListener('click', function() {
+    header.addEventListener('click', function(e) {
+        e.stopPropagation();
         const content = this.nextElementSibling;
         const isOpen = content.classList.contains('open');
 
@@ -96,13 +97,17 @@ function createAccHeader(text) {
             content.style.maxHeight = null;
         } else {
             content.classList.add('open');
-            // 그리드 뷰의 경우 scrollHeight를 더 정확히 가져오기 위해 일시적 처리
-            content.style.maxHeight = content.scrollHeight + 40 + "px"; // 패딩값 여유 추가
+            // 3단계 그리드가 열릴 때는 자식 높이에 맞춰 제한 해제
+            if (content.classList.contains('level-2-content')) {
+                content.style.maxHeight = 'none'; 
+            } else {
+                content.style.maxHeight = content.scrollHeight + 100 + "px"; 
+            }
         }
         
-        // 상위 분기 아코디언 높이 재조정
-        let parentContent = this.closest('.acc-level-1')?.querySelector('.acc-content');
-        if (parentContent && parentContent !== content) {
+        // 하위 요일 아코디언을 열 때, 상위 분기 아코디언이 잘리지 않도록 높이 제한 해제
+        let parentContent = this.closest('.level-1-content');
+        if (parentContent && !isOpen) {
             parentContent.style.maxHeight = 'none';
         }
     });
@@ -114,19 +119,18 @@ function createAnimeItem(anime) {
     div.className = 'anime-item';
     div.dataset.title = anime.title.toLowerCase();
 
+    // 💡 주의: 여기서 404가 발생한다면 "../" 를 지우고 "${anime.thumbnail}" 만 남겨보세요.
     div.innerHTML = `
-        <img src="../${anime.thumbnail}" class="anime-thumb-small">
+        <img src="../${anime.thumbnail}" class="anime-thumb-small" onerror="this.src='../image/placeholder.png'">
         <div class="anime-info">
             <span class="anime-title">${anime.title}</span>
         </div>
         <select class="episode-select">
             <option value="" disabled selected>에피소드 선택</option>
-            ${Array.from({length: anime.episodes}, (_, i) => 
-                `<option value="${i+1}">${i+1}화</option>`).join('')}
+            ${Array.from({length: anime.episodes}, (_, i) => `<option value="${i+1}">${i+1}화</option>`).join('')}
         </select>
     `;
 
-    // 이벤트 리스너는 직접 할당
     const select = div.querySelector('.episode-select');
     select.addEventListener('change', (e) => {
         const ep = e.target.value;
@@ -136,10 +140,10 @@ function createAnimeItem(anime) {
             id: anime.id,
             uniqueKey: key,
             title: anime.title,
-            thumbnail: `../${anime.thumbnail}`,
+            thumbnail: `../${anime.thumbnail}`, // 여기 경로도 위 img 태그와 동일하게 맞춰주세요.
             episode: ep
         };
-        updatePreview();
+        updatePreview(); // 이 함수는 기존 파일 하단에 있는 함수를 그대로 사용합니다.
         e.target.selectedIndex = 0; 
     });
 
@@ -199,19 +203,17 @@ function setupSearch() {
             const match = item.dataset.title.includes(keyword);
             item.style.display = match ? 'flex' : 'none';
             
-            // 검색어 입력 시 일치하는 아이템이 있는 아코디언을 자동으로 엽니다
-            if (match && isSearching) {
-                let content = item.closest('.day-content');
-                if (content) {
-                    content.style.display = 'grid';
-                    if (content.previousElementSibling) {
-                        content.previousElementSibling.classList.add('active');
-                    }
-                }
+            if(match && isSearching) {
+                // 검색된 아이템의 요일(Level 2)과 분기(Level 1)를 모두 엽니다.
+                let level2 = item.closest('.level-2-content');
+                if (level2) { level2.classList.add('open'); level2.style.maxHeight = 'none'; }
+                
+                let level1 = item.closest('.level-1-content');
+                if (level1) { level1.classList.add('open'); level1.style.maxHeight = 'none'; }
             }
         });
     });
-}groupData
+}
 
 // --- [ Step 이동 (originalNominate 스타일) ] ---
 function proceedToStep2() {
