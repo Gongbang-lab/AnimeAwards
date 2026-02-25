@@ -29,9 +29,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const genderKey = charState.theme.includes("female") ? "female" : "male";
   const flatData = getNormalizedCharData(genderKey); // 전체 캐릭터 데이터
   if (genderKey === "female") {
-    document.getElementById("step-title").textContent = "여우 주연상 부문";
+    document.getElementById("step-title").textContent = "올해의 여우 주연상 부문";
   } else {
-    document.getElementById("step-title").textContent = "남우 주연상 부문";
+    document.getElementById("step-title").textContent = "올해의 남우 주연상 부문";
   }
 
   const modalAwardEl = document.getElementById("modal-award-name");

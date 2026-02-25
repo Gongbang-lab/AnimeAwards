@@ -2,6 +2,11 @@ let currentStep = 1;
 let selectedItems = []; 
 let step1Selected = []; 
 
+const originalState = {
+    step: 1,
+    awardName: ""
+};
+
 document.addEventListener('DOMContentLoaded', () => {
     if(typeof scriptwriterData !== 'undefined') {
         renderCards(scriptwriterData);
@@ -10,6 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.getElementById('search-input').addEventListener('input', function(e) {
     const searchTerm = e.target.value.toLowerCase().trim();
+
+    const params = new URLSearchParams(window.location.search);
+    originalState.awardName = params.get("awardName");
     
     // 현재 단계에 따라 필터링 대상 데이터 결정
     // Step 1이면 전체 데이터(scriptwriterData), Step 2이면 선택된 후보(step1Selected)
@@ -120,7 +128,7 @@ function proceedToStep2() {
     selectedItems = []; 
     currentStep = 2;
 
-    document.getElementById('step-title-display').textContent = "최종 수상작 결정 (Step 2)";
+    document.getElementById('step-title-display').textContent = "베스트 각본상 부문";
     document.getElementById('next-btn').classList.add('hidden');
     document.getElementById('final-btn').classList.remove('hidden');
 
@@ -182,19 +190,48 @@ function confirmFinalWinner() {
     }
 
     document.getElementById('winner-modal').classList.remove('hidden');
-    fireworks();
+    fireConfetti();
     const results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
-    results["각본상"] = { title: winner.title, thumbnail: winner.thumbnail };
+    results["베스트 각본상"] = { title: winner.title, thumbnail: winner.thumbnail };
     localStorage.setItem("anime_awards_result", JSON.stringify(results));
 }
 
-function fireworks() {
-    const duration = 3 * 1000;
-    const end = Date.now() + duration;
+function fireConfetti() {
+    const canvas = document.getElementById('confettiCanvas');
+    if (!canvas) return;
+
+    // 전용 캔버스를 사용하는 폭죽 인스턴스 생성
+    const myConfetti = confetti.create(canvas, {
+        resize: true,
+        useWorker: true
+    });
+
+    const duration = 3000;
+    const animationEnd = Date.now() + duration;
+
     (function frame() {
-        confetti({ particleCount: 5, angle: 60, spread: 55, origin: { x: 0 }, colors: ['#d4af37', '#ffffff'] });
-        confetti({ particleCount: 5, angle: 120, spread: 55, origin: { x: 1 }, colors: ['#d4af37', '#ffffff'] });
-        if (Date.now() < end) requestAnimationFrame(frame);
+        const timeLeft = animationEnd - Date.now();
+        if (timeLeft <= 0) return;
+
+        // 왼쪽 아래에서 쏘아 올림
+        myConfetti({
+            particleCount: 3,
+            angle: 60,
+            spread: 55,
+            origin: { x: 0, y: 0.8 },
+            colors: ['#d4af37', '#ffffff', '#aa8a2e']
+        });
+
+        // 오른쪽 아래에서 쏘아 올림
+        myConfetti({
+            particleCount: 3,
+            angle: 120,
+            spread: 55,
+            origin: { x: 1, y: 0.8 },
+            colors: ['#d4af37', '#ffffff', '#aa8a2e']
+        });
+
+        requestAnimationFrame(frame);
     }());
 }
 

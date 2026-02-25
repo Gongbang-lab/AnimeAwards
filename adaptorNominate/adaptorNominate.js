@@ -217,7 +217,7 @@ function updatePreview() {
 
 function goStep2() {
     nominateState.step = 2;
-    document.getElementById("step-title").textContent = "";
+    document.getElementById("step-title").textContent = "베스트 각색상 부문";
     toggleElement("nav-home-btn", false);
     toggleElement("step1-next-btn", false);
     toggleElement("step2-back-btn", true);

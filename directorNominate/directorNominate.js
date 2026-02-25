@@ -4,7 +4,8 @@
 const dirState = {
     step: 1,
     selectedDirectors: [],
-    finalWinner: null
+    finalWinner: null,
+    awardName: ""
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -20,6 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("btn-next").onclick = goStep2;
     document.getElementById("btn-back").onclick = handleBack;
     document.getElementById("final-confirm-btn").onclick = () => location.href = "../main/main.html";
+
+    const params = new URLSearchParams(window.location.search);
+    dirState.awardName = params.get("awardName");
 });
 /**
  * 감독 그리드 렌더링 (Step 1: 아코디언 / Step 2: 일반 그리드)
@@ -223,7 +227,7 @@ function removeDirector(name) {
 function goStep2() {
     if (dirState.step === 1) {
         dirState.step = 2;
-        document.getElementById("step-title").textContent = "최종 수상자를 투표해주세요";
+        document.getElementById("step-title").textContent = "올해의 감독상 부문";
         document.getElementById("btn-back").textContent = "이전 단계";
         
         const nextBtn = document.getElementById("btn-next");
@@ -305,7 +309,7 @@ function openWinnerModal() {
     
     // 로컬스토리지 저장 (감독상)
     const results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
-    results["감독상"] = {
+    results[dirState.awardName] = {
         name: winner.director,
         thumbnail: winner.director_img,
         works: winner.works.map(w => w.title).join(', ')

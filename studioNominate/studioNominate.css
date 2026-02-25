@@ -214,56 +214,60 @@ body {
     box-sizing: border-box; /* 패딩이 너비에 포함되도록 설정 */
 }
 
-/* 작품 수 헤더 (아코디언 트리거) */
-.group-header {
+/* =========================================
+   공통 아코디언 스타일 (통일된 디자인)
+========================================= */
+.accordion-group-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0; /* acc-level-1에서 margin을 주므로 gap 제거 */
     width: 100%;
-    box-sizing: border-box; /* 중요: 너비 계산 오류 방지 */
-    background: #252525;
-    border: 1px solid var(--gold);
-    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+.acc-level-1 {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.acc-header {
+    padding: 16px 20px;
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    cursor: pointer;
-    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.level-1-header {
+    color: #eee;
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.level-1-header:hover {
+    background: #2a2a2a;
     color: var(--gold);
-    font-weight: bold;
-    transition: background 0.2s;
-}
-.group-header:hover {
-    background: #333;
 }
 
-.group-header .arrow {
-    transition: transform 0.3s;
-}
-.group-item.active .group-header {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    background: #333;
+/* 열림/닫힘 로직 (애니메이션 없이 즉각 반응) */
+.acc-content {
+    display: none; 
 }
 
-.group-item.active .group-header .arrow {
-    transform: rotate(180deg);
-}
-
-/* 아코디언 내용 (내부에 카드 그리드가 들어감) */
-.group-content {
-    display: none;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-in-out;
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 0 0 8px 8px;
-}
-
-.group-item.active .group-content {
+.acc-content.open {
     display: block;
-    max-height: 2000px; /* 충분히 넉넉하게 설정 */
-    padding: 20px 10px;
-    border: 1px solid #333;
-    border-top: none;
+    background: #0a0a0a;
+    border-top: 1px solid #333;
+    padding: 20px;
 }
+
+/* 활성화 시 아이콘 회전 효과 */
+.acc-header i { transition: transform 0.3s; }
+.acc-header.active i { transform: rotate(180deg); }
 
 /* 내부 카드 그리드 (rookieNominate 스타일 유지) */
 .accordion-inner-grid {

@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initSearch();
 
     const params = new URLSearchParams(window.location.search);
-    studioState.theme = params.get("theme");
+
     studioState.awardName = params.get("awardName");
     
     const modalAwardNameEl = document.getElementById("modal-award-name");
@@ -107,7 +107,7 @@ function goToStep2() {
     document.getElementById("step1-buttons").classList.add("hidden");
     document.getElementById("step2-buttons").classList.remove("hidden");
 
-    document.getElementById("step-title").innerText = "올해의 스튜디오상 - 최종 선택 (Step 2)";
+    document.getElementById("step-title").innerText = "올해의 스튜디오 상 부문";
     document.getElementById("search-input").disabled = true;
 
     renderFinalNominees();
@@ -127,7 +127,7 @@ function goToStep1() {
     document.getElementById("step2-buttons").classList.add("hidden");
     document.getElementById("step1-buttons").classList.remove("hidden");
 
-    document.getElementById("step-title").innerText = "올해의 스튜디오상 후보 선정 (Step 1)";
+    document.getElementById("step-title").innerText = "올해의 스튜디오 상 부문"
     document.getElementById("search-input").disabled = false;
 
     renderStudioAccordionGroups();
@@ -159,25 +159,33 @@ function renderStudioAccordionGroups() {
     sortedCounts.forEach(count => {
         const studios = groups.get(count);
         const groupDiv = document.createElement("div");
-        groupDiv.className = "group-item";
+        groupDiv.className = "acc-level-1"; // 통일된 클래스 적용
         
         groupDiv.innerHTML = `
-            <div class="group-header" role="button" aria-expanded="false">
-                <span>작품 수 ${count}개 스튜디오 <small style="color:#888; margin-left:10px;">(${studios.length})</small></span>
+            <div class="acc-header level-1-header">
+                <span>작품 수 ${count}개 스튜디오 <small style="color:#888; font-size:0.9rem; margin-left:10px;">(${studios.length})</small></span>
                 <span class="arrow">▼</span>
             </div>
-            <div class="group-content">
+            <div class="acc-content level-1-content">
                 <div class="accordion-inner-grid">
                     ${studios.map(studio => createStudioCardHTML(studio)).join('')}
                 </div>
             </div>
         `;
 
-        const header = groupDiv.querySelector('.group-header');
+        const header = groupDiv.querySelector('.acc-header');
+        const content = groupDiv.querySelector('.acc-content');
+        
+        // 클릭 시 즉각적인 열림/닫힘 (애니메이션 X)
         header.onclick = () => {
-            const isActive = groupDiv.classList.contains('active');
-            groupDiv.classList.toggle('active', !isActive);
-            header.setAttribute('aria-expanded', !isActive);
+            const isOpen = content.classList.contains('open');
+            if (isOpen) {
+                content.classList.remove('open');
+                header.classList.remove('active');
+            } else {
+                content.classList.add('open');
+                header.classList.add('active');
+            }
         };
         container.appendChild(groupDiv);
     });
@@ -297,7 +305,7 @@ function openAwardModal(item) {
 
 function saveWinnerToLocal(item) {
     let results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
-    results["올해의 스튜디오상"] = {
+    results[studioState.awardName] = {
         name: item.studio,
         thumbnail: item.studio_img ? `../${item.studio_img}` : '',
         year: '2026'

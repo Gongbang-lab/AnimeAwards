@@ -239,18 +239,21 @@ function goStep2() {
 function goStep1() {
     nominateState.step = 1;
     nominateState.selectedWinner = null;
-    const title = document.getElementById("award-title");
+
     const stepTitle = document.getElementById("step-title");
-    if(title === "베스트 연출상"){
+    if(nominateState.awardName === "베스트 연출상"){
         stepTitle.textContent = "올해의 연출상 부문";
-    }else if(title === "베스트 동화상"){
+    }else if(nominateState.awardName === "베스트 동화상"){
         stepTitle.textContent = "올해의 동화상 부문";
-    }else if(title === "베스트 원화(작화)상"){
+    }else if(nominateState.awardName === "베스트 원화(작화)상"){
         stepTitle.textContent = "올해의 원화(작화)상 부문";
-    }else if(title === "올해의 이카루스상"){
-        stepTitle.textContent = "올해의 이카루스상 부문";
-    }else if(title === "올해의 다크호스상"){
-        stepTitle.textContent = "올해의 다크호스상 부문";
+    }else if(nominateState.awardName === "올해의 이카루스 상"){
+        stepTitle.textContent = "올해의 이카루스 상 부문";
+    }else if(nominateState.awardName === "올해의 다크호스 상"){
+        stepTitle.textContent = "올해의 다크호스 상 부문";
+    }
+    else {
+        stepTitle.textContent = "";
     }
 
     toggleElement("nav-home-btn", true);

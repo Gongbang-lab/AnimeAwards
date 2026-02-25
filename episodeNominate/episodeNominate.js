@@ -222,7 +222,7 @@ function proceedToStep2() {
     els.step1.classList.add('hidden');
     els.step2.classList.remove('hidden');
 
-    document.getElementById('step-title-display').textContent = "최종 수상작 결정 (Step 2)";
+    document.getElementById('step-title-display').textContent = "베스트 에피소드 상 부문";
     document.getElementById('next-btn').classList.add('hidden');
     document.getElementById('final-btn').classList.remove('hidden');
 
