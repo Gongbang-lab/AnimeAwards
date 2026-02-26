@@ -36,14 +36,74 @@ document.getElementById('search-input').addEventListener('input', function(e) {
 });
 
 function renderCards(dataList) {
-    const grid = document.getElementById('card-grid');
+    // ==========================================
+    // Step 2 (최종 선택) 렌더링 로직
+    // ==========================================
+    if (currentStep === 2) {
+        let grid = document.getElementById('step2-grid');
+        
+        // Step 2 전용 컨테이너가 없으면 생성 (타이틀 포함)
+        if (!grid) {
+            const contentArea = document.querySelector('.content-area');
+            contentArea.innerHTML = `
+                <h2 style="color:var(--gold); margin-bottom:20px; font-size: 1.5rem; text-align: left;">최종 수상작을 선택하세요</h2>
+                <div id="step2-grid"></div>
+            `;
+            grid = document.getElementById('step2-grid');
+        }
+        grid.innerHTML = '';
+
+        if (dataList.length === 0) {
+            grid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 50px; color: #666;"><p style="font-size: 1.2rem;">검색 결과가 없습니다.</p></div>`;
+            return;
+        }
+
+        dataList.forEach(anime => {
+            const card = document.createElement('div');
+            card.className = 'step2-original-card'; // Step 2 전용 클래스
+            if (selectedItems.find(i => i.id === anime.id)) card.classList.add('selected');
+
+            card.innerHTML = `
+                <div class="card-badge">${anime.studio || '제작사'}</div>
+                <div class="card-thumb">
+                    <img src="${anime.thumbnail}" alt="${anime.title}" onerror="this.src='https://via.placeholder.com/200x300'">
+                </div>
+                <div class="step2-card-info">
+                    <div class="card-title">${anime.title}</div>
+                    <div class="card-studio">${anime.scriptwriter.join(', ')}</div>
+                </div>
+            `;
+            
+            // 단일 선택 처리
+            card.onclick = () => {
+                selectedItems = [anime];
+                document.querySelectorAll('.step2-original-card').forEach(c => c.classList.remove('selected'));
+                card.classList.add('selected');
+            };
+            grid.appendChild(card);
+        });
+        return; // Step 2 렌더링 끝
+    }
+
+    // ==========================================
+    // Step 1 (후보 선정) 렌더링 로직 (기존 유지)
+    // ==========================================
+    let grid = document.getElementById('card-grid');
+    
+    // Step 2에서 '이전 단계'로 돌아왔을 때 card-grid 컨테이너 복구
+    if (!grid) {
+        const contentArea = document.querySelector('.content-area');
+        contentArea.innerHTML = `<div id="card-grid" class="card-grid"></div>`;
+        grid = document.getElementById('card-grid');
+    }
+
     grid.innerHTML = '';
 
     if (dataList.length === 0) {
         grid.innerHTML = `
-            <div style="grid-column: 1/-1; text-align: center; padding: 50px; color: #666;">
-                <p style="font-size: 1.2rem;">검색 결과가 없습니다.</p>
-            </div>
+        <div style="grid-column: 1/-1; text-align: center; padding: 50px; color: #666;">
+        <p style="font-size: 1.2rem;">검색 결과가 없습니다.</p>
+        </div>
         `;
         return;
     }
@@ -52,7 +112,7 @@ function renderCards(dataList) {
         const card = document.createElement('div');
         card.className = 'card';
         if(selectedItems.find(i => i.id === anime.id)) card.classList.add('selected');
-        
+
         card.innerHTML = `
             <img src="${anime.thumbnail}" alt="${anime.title}">
             <div class="card-info">

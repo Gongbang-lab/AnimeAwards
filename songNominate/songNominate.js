@@ -250,17 +250,36 @@ function updatePreview() {
 // Step 2 (최종 선택) 렌더링
 function renderSongStep2() {
     const container = document.getElementById("left-area");
-    container.innerHTML = "";
-    
+    // Step 2 전용 타이틀 추가
+    container.innerHTML = `<h2 style="color:var(--gold); margin-bottom:20px; font-size: 1.5rem;">최종 수상작을 선택하세요</h2>`;
+
     const grid = document.createElement("div");
-    grid.className = "step2-grid";
+    grid.id = "step2-grid"; 
 
     songNominateState.selectedItems.forEach(song => {
-        const card = createSongCard(song);
-        // Step 2에서는 다중선택이 아닌 단일 선택 모드로 변경
-        card.className = "song-card"; // selected 초기화
+        // Step 2 전용 카드 생성
+        const card = document.createElement("div");
+        card.className = "step2-song-card";
+
+        // 분기 텍스트 추출 (Q 제거)
+        const displayQuarter = song.displayQuarter ? song.displayQuarter.replace("Q", "") + "분기" : "";
+
+        card.innerHTML = `
+            <div class="card-badge">${displayQuarter}</div>
+            <div class="card-thumb">
+                <img src="${song.thumbnail}" alt="thumbnail" onerror="this.src='../images/default.png'">
+                <a class="play-overlay" href="${song.youtube}" target="_blank" onclick="event.stopPropagation();">
+                    <span class="play-icon">▶</span>
+                </a>
+            </div>
+            <div class="step2-card-info">
+                <div class="card-title">${song.title}</div>
+                <div class="card-studio">${song.artist ? song.artist + ' · ' : ''}${song.animeTitle}</div>
+            </div>
+        `;
+
         card.onclick = () => {
-            document.querySelectorAll(".song-card").forEach(c => c.classList.remove("selected"));
+            document.querySelectorAll(".step2-song-card").forEach(c => c.classList.remove("selected"));
             card.classList.add("selected");
             songNominateState.finalWinner = song;
             document.getElementById("step2-award-btn").disabled = false;

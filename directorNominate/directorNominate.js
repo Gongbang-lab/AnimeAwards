@@ -34,7 +34,7 @@ function renderDirectorGrid(searchTerm = "") {
     container.innerHTML = "";
 
     // 1. 데이터 필터링
-    let filteredData = (dirState.step === 1) 
+    let filteredData = (dirState.step === 1)
         ? animeDirectorData.filter(d => d.director.toLowerCase().includes(searchTerm.toLowerCase().trim()))
         : dirState.selectedDirectors;
 
@@ -45,18 +45,28 @@ function renderDirectorGrid(searchTerm = "") {
         return;
     }
 
-    // --- Step 2: 기억해둔 일반 그리드 뷰 (#step2-grid) 적용 ---
+    // ==========================================
+    // Step 2: 최종 수상자 선택 렌더링
+    // ==========================================
     if (dirState.step === 2) {
+        // Step 2 전용 타이틀 추가
+        const titleH2 = document.createElement("h2");
+        titleH2.style.cssText = "color:var(--gold); margin-bottom:20px; font-size: 1.5rem; text-align: left;";
+        titleH2.textContent = "최종 수상자를 선택하세요";
+        container.appendChild(titleH2);
+
         const finalGrid = document.createElement("div");
-        finalGrid.id = "step2-grid"; // 추출한 Step 2 CSS 아이디 적용
+        finalGrid.id = "step2-grid"; 
         filteredData.forEach(director => {
             finalGrid.appendChild(createDirectorCard(director, "step2"));
         });
         container.appendChild(finalGrid);
-        return; 
+        return;
     }
 
-    // --- Step 1: 작품 수별 아코디언 표시 (기억해둔 디자인 적용) ---
+    // ==========================================
+    // Step 1: 작품 수별 아코디언 표시 (기존 로직 유지)
+    // ==========================================
     const groups = {};
     filteredData.forEach(d => {
         const count = d.works ? d.works.length : 0;
@@ -76,7 +86,6 @@ function renderDirectorGrid(searchTerm = "") {
 
         const dContent = document.createElement("div");
         dContent.className = "day-content";
-        // 검색 중일 때는 그리드를 열어두고, 평소엔 닫아둠
         dContent.style.display = isSearching ? "grid" : "none";
 
         qBtn.onclick = () => {
@@ -100,25 +109,64 @@ function renderDirectorGrid(searchTerm = "") {
  */
 function createDirectorCard(data, step) {
     const card = document.createElement("div");
+
+    const worksCount = data.works ? data.works.length : 0;
+    const worksTitles = data.works ? data.works.map(w => w.title).join(', ') : '대표작 없음';
+
+    // ==========================================
+    // Step 2: 최종 선택용 카드
+    // ==========================================
+    if (step === "step2") {
+        card.className = "step2-director-card";
+        if (dirState.finalWinner && dirState.finalWinner.director === data.director) {
+            card.classList.add("selected");
+        }
+
+        card.innerHTML = `
+            <div class="card-badge">${worksCount}작품</div>
+            <div class="card-thumb">
+                <img src="${data.director_img}" alt="${data.director}" onerror="this.src='../image/placeholder.webp'">
+            </div>
+            <div class="step2-card-info">
+                <div class="card-title">${data.director}</div>
+            </div>
+        `;
+
+        // 배지 클릭 시 상세 정보 모달 열기
+        const badge = card.querySelector('.card-badge');
+        badge.onclick = (e) => {
+            e.stopPropagation();
+            openDetailModal(data);
+        };
+
+        // 카드 클릭 시 단일 선택 로직
+        card.onclick = () => {
+            document.querySelectorAll(".step2-director-card").forEach(c => c.classList.remove("selected"));
+            card.classList.add("selected");
+            dirState.finalWinner = data;
+            document.getElementById("btn-next").disabled = false;
+        };
+
+        return card;
+    }
+
+    // ==========================================
+    // Step 1: 후보 선정용 카드 (기존 디자인)
+    // ==========================================
     card.className = "card";
 
-    // 1. 배지 생성 (작품 수) - 클릭 시 팝업
     const badge = document.createElement("div");
     badge.className = "card-badge";
-    badge.textContent = `${data.works ? data.works.length : 0}작품`;
-    
+    badge.textContent = `${worksCount}작품`;
+
     badge.onclick = (e) => {
-        e.stopPropagation(); // 카드 선택 방지
+        e.stopPropagation(); 
         openDetailModal(data);
     };
 
-    // 2. 선택 상태 반영 (Step 1)
-    if (step === "step1") {
-        const isSelected = dirState.selectedDirectors.some(sel => sel.director === data.director);
-        if (isSelected) card.classList.add("selected");
-    }
+    const isSelected = dirState.selectedDirectors.some(sel => sel.director === data.director);
+    if (isSelected) card.classList.add("selected");
 
-    // 3. 카드 내부 HTML
     card.innerHTML = `
         <img src="${data.director_img}" loading="lazy" onerror="this.src='../image/placeholder.webp'">
         <div class="card-info">
@@ -127,17 +175,8 @@ function createDirectorCard(data, step) {
     `;
     card.prepend(badge);
 
-    // 4. 클릭 이벤트 (선택 / 투표)
     card.onclick = () => {
-        if (step === "step1") {
-            toggleSelect(data, card);
-        } else {
-            // Step 2: 단일 선택
-            document.querySelectorAll(".card").forEach(c => c.classList.remove("selected"));
-            card.classList.add("selected");
-            dirState.finalWinner = data;
-            document.getElementById("btn-next").disabled = false;
-        }
+        toggleSelect(data, card);
     };
 
     return card;

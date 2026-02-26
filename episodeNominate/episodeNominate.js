@@ -258,14 +258,46 @@ function renderStep2Cards() {
     els.cardsContainer.innerHTML = '';
     const list = Object.values(state.selectedList);
 
+    // 1. 기존에 생성된 제목이 있다면 중복 방지를 위해 제거
+    const existingTitle = els.step2.querySelector('.step2-title');
+    if (existingTitle) existingTitle.remove();
+
+    // 2. Step 2 전용 안내 문구 생성
+    const titleH2 = document.createElement("h2");
+    titleH2.className = "step2-title"; // 중복 제거 관리를 위한 클래스 추가
+    titleH2.style.cssText = "color:var(--gold); margin-bottom:20px; font-size: 1.5rem; width: 100%; text-align: left;";
+    titleH2.textContent = "최종 수상 에피소드를 선택하세요";
+
+    // 3. 제목을 cardsContainer(그리드) 안이 아니라, 그 '앞'에 배치 (그리드뷰 위쪽에 나타남)
+    els.step2.insertBefore(titleH2, els.cardsContainer);
+
+    // 4. 카드 생성 및 그리드에 추가
     list.forEach(item => {
-        const card = document.createElement('div'); card.className = 'anime-card';
-        card.innerHTML = `<img src="../${item.thumbnail}" class="card-thumb"><div class="card-title">${item.title}</div><div class="card-ep">EP.${item.episode}</div>`;
+        const card = document.createElement('div'); 
+        card.className = 'anime-card';
+        
+        // 데이터 구조에 따라 thumbnail 경로 처리
+        const thumbPath = item.thumbnail.startsWith('../') ? item.thumbnail : `../${item.thumbnail}`;
+
+        card.innerHTML = `
+            <div class="card-badge">EP.${item.episode}</div>
+            <div class="card-thumb-wrapper">
+                <img src="${thumbPath}" class="card-thumb" onerror="this.src='../image/placeholder.png'">
+            </div>
+            <div class="card-info-area">
+                <div class="card-title">${item.title}</div>
+                <div class="card-ep-label">제 ${item.episode}화</div>
+            </div>
+        `;
+
         card.addEventListener('click', () => {
             document.querySelectorAll('.anime-card').forEach(c => c.classList.remove('selected'));
             card.classList.add('selected');
             state.winnerKey = item.uniqueKey;
+            // 수상 결정 버튼 활성화
+            document.getElementById('final-btn').disabled = false;
         });
+
         els.cardsContainer.appendChild(card);
     });
 }

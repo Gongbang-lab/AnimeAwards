@@ -331,51 +331,113 @@ body {
 
 /* 7. Step 2 카드 그리드 (후보 확정 화면) */
 .card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* 카드 최소 너비 제한 */
-    gap: 25px;
-    width: 100%;
-    padding: 20px 0;
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important;
+    gap: 25px !important;
+    padding: 10px 0 40px 0 !important;
 }
 
 .anime-card {
     background: var(--gray);
-    border: 2px solid #333; /* 기본 테두리를 약간 밝게 설정 */
-    border-radius: 10px;
+    border: 2px solid transparent;
+    border-radius: 12px;
     overflow: hidden;
     cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); /* 부드러운 애니메이션 */
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    position: relative;
 }
 
 .anime-card:hover {
-    border-color: var(--gold); /* 골드 테두리 */
-    transform: translateY(-8px); /* 위로 슥 올라가는 효과 */
-    background: #222; /* 배경 약간 밝게 */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* 그림자 추가로 입체감 부여 */
-    z-index: 1;
-}
-
-.anime-card:hover .card-title {
-    color: var(--gold);
-}
-
-.card-thumb {
-    width: 100%;
-    aspect-ratio: 2 / 3; /* 성우/에피소드 공통 세로 비율 */
-    object-fit: cover;   /* 이미지가 찌그러지지 않고 꽉 차게 */
-    border-bottom: 1px solid #333;
-    display: block;
+    transform: translateY(-8px);
+    border-color: rgba(212, 175, 55, 0.5);
+    background: #333;
 }
 
 .anime-card.selected {
     border-color: var(--gold);
-    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+    background: #3a3a3a;
 }
 
+/* 카드 상단 에피소드 배지 */
+.anime-card .card-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.85);
+    color: var(--gold);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: 1px solid var(--gold);
+    z-index: 10;
+}
+
+/* 썸네일 영역 (비율 고정) */
+.card-thumb-wrapper {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    overflow: hidden;
+    background: #000;
+}
+
+.card-thumb-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.anime-card:hover .card-thumb-wrapper img {
+    transform: scale(1.05);
+}
+
+/* 텍스트 정보 영역 */
+.card-info-area {
+    padding: 15px;
+    text-align: left;
+}
+
+.anime-card .card-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.3;
+    margin-bottom: 6px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 2.6em;
+}
+
+.card-ep-label {
+    font-size: 0.85rem;
+    color: var(--gold);
+    font-weight: 500;
+}
+
+/* 선택되었을 때 아이콘 추가 (옵션) */
+.anime-card.selected::after {
+    content: '✓';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    background: var(--gold);
+    color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    z-index: 11;
+}
 /* 8. 모달 (2분할 레이아웃) */
 .modal {
     position: fixed;

@@ -228,21 +228,58 @@ function removeCV(name) {
 function goStep2() {
     if (cvState.step === 1) {
         cvState.step = 2;
-        document.getElementById("step-title").textContent = "최종 수상자를 투표해주세요";
-        
+        const stepTitle = document.getElementById("step-title");
+        const genderKey = cvState.theme.includes("female") ? "female" : "male";
+
+        if (genderKey === "female") {
+            stepTitle.textContent = "올해의 여자 성우상 부문";
+        } else {
+            stepTitle.textContent = "올해의 남자 성우상 부문";
+        }
+
         // 사이드바 버튼 변경
         document.getElementById("btn-back").textContent = "이전 단계";
         const nextBtn = document.getElementById("btn-next");
         nextBtn.textContent = "수상 결정";
         nextBtn.disabled = true;
 
-        // 메인 콘텐츠 교체 (그리드 뷰)
+        // 메인 콘텐츠 교체 (타이틀 + 그리드 뷰)
         const mainContent = document.getElementById("main-content");
-        mainContent.innerHTML = `<div id="step2-grid"></div>`;
+        mainContent.innerHTML = `
+            <h2 style="color:var(--gold); margin-bottom:20px; font-size: 1.5rem; text-align: left;">최종 수상작을 선택하세요</h2>
+            <div id="step2-grid"></div>
+        `;
+        
         const grid = document.getElementById("step2-grid");
 
         cvState.selectedCVs.forEach(cv => {
-            grid.appendChild(createCVCard(cv, "step2"));
+            // Step 2 전용 카드 생성
+            const card = document.createElement("div");
+            card.className = "step2-cv-card";
+
+            // 대표 작품 1개 추출 (서브 텍스트용)
+            const repWork = cv.characters && cv.characters.length > 0 ? cv.characters[0].animeTitle : "";
+            const subText = repWork ? `${repWork} 등` : "정보 없음";
+
+            card.innerHTML = `
+                <div class="card-badge">${cv.characters.length}작품</div>
+                <div class="card-thumb">
+                    <img src="${cv.cvimg}" alt="thumbnail" onerror="this.src='https://via.placeholder.com/200x300'">
+                </div>
+                <div class="step2-card-info">
+                    <div class="card-title">${cv.name}</div>
+                    <div class="card-studio">${subText}</div>
+                </div>
+            `;
+
+            card.onclick = () => {
+                document.querySelectorAll(".step2-cv-card").forEach(c => c.classList.remove("selected"));
+                card.classList.add("selected");
+                cvState.finalWinner = cv;
+                document.getElementById("btn-next").disabled = false;
+            };
+            
+            grid.appendChild(card);
         });
     } else {
         // 최종 투표 완료

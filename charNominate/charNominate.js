@@ -205,42 +205,48 @@ function updatePreview() {
  * 3. Step 2 (최종 선택)
  */
 function goStep2() {
-  charState.step = 2;
-  toggleUI(2);
+    charState.step = 2;
+    toggleUI(2);
 
-  const previewBox = document.getElementById("preview-box");
-  if (previewBox) previewBox.classList.add("hidden");
+    const previewBox = document.getElementById("preview-box");
+    if (previewBox) previewBox.classList.add("hidden");
 
-  const left = document.getElementById("left-area");
-  
-  // Step 2 컨테이너 생성
-  left.innerHTML = `
-    <div id="step2-grid"></div>
-  `;
+    const left = document.getElementById("left-area");
 
-  const grid = document.getElementById("step2-grid");
-  
-  charState.selectedItems.forEach(char => {
-    const card = document.createElement("div");
-    card.className = "card"; // 동일한 .card 스타일 사용
-    card.innerHTML = `
-      <div class="card-badge">CV. ${char.cv}</div>
-      <img src="${char.thumbnail}" onerror="this.src='https://via.placeholder.com/200x280?text=No+Img'">
-      <div class="card-info">
-        <div class="card-title">${char.name}</div>
-        <div class="card-studio">${char.animeTitle}</div>
-      </div>
+    // Step 2 컨테이너 생성 (타이틀 추가)
+    left.innerHTML = `
+        <h2 style="color:var(--gold); margin-bottom:20px; font-size: 1.5rem; text-align: left;">최종 수상작을 선택하세요</h2>
+        <div id="step2-grid"></div>
     `;
-    card.onclick = () => selectFinalWinner(char, card);
-    grid.appendChild(card);
-  });
+
+    const grid = document.getElementById("step2-grid");
+
+    charState.selectedItems.forEach(char => {
+        const card = document.createElement("div");
+        card.className = "step2-char-card"; // 전용 디자인 클래스 적용
+
+        card.innerHTML = `
+            <div class="card-badge">CV. ${char.cv}</div>
+            <div class="card-thumb">
+                <img src="${char.thumbnail}" alt="${char.name}" onerror="this.src='https://via.placeholder.com/200x280?text=No+Img'">
+            </div>
+            <div class="step2-card-info">
+                <div class="card-title">${char.name}</div>
+                <div class="card-studio">${char.animeTitle}</div>
+            </div>
+        `;
+        
+        card.onclick = () => selectFinalWinner(char, card);
+        grid.appendChild(card);
+    });
 }
 
 function selectFinalWinner(char, cardElement) {
-  document.querySelectorAll("#step2-grid .card").forEach(c => c.classList.remove("selected"));
-  cardElement.classList.add("selected");
-  charState.finalWinner = char;
-  document.getElementById("step2-award-btn").disabled = false;
+    // 기존 .card 대신 .step2-char-card를 타겟팅
+    document.querySelectorAll("#step2-grid .step2-char-card").forEach(c => c.classList.remove("selected"));
+    cardElement.classList.add("selected");
+    charState.finalWinner = char;
+    document.getElementById("step2-award-btn").disabled = false;
 }
 
 function toggleUI(step) {
