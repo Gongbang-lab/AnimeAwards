@@ -211,28 +211,28 @@ function createAwardCard(award, results, ratioClass) {
         <div class="award-name">${award.name}</div>
         <div class="award-winner" title="${displayTitle}">${displayTitle}</div>
     `;
-
+    const BASE_PATH = "/AnimeAwards/";
     // 4. 클릭 이벤트 (기존 유지)
     card.onclick = () => {
         const query = `awardName=${encodeURIComponent(award.name)}&theme=${encodeURIComponent(award.theme)}`;
         let path = "./nominate/nominate.html";
         const theme = award.theme;
 
-        if (theme === "top3" || theme === 'series') path = "./top3Nominate/top3Nominate.html";
-        else if (['opening', 'ending', 'ost'].includes(theme)) path = "./songNominate/songNominate.html";
-        else if (theme === 'rookie_voice') path = "./rookieNominate/rookieNominate.html";
-        else if (theme === 'meme') path = "./memeNominate/memeNominate.html";
-        else if (theme === 'original') path = "./originalNominate/originalNominate.html";
-        else if (theme === 'director') path = "./directorNominate/directorNominate.html";
-        else if (theme === 'dramatization') path = "./adaptorNominate/adaptorNominate.html";
-        else if (theme === 'best_episode') path = "./episodeNominate/episodeNominate.html";
-        else if (theme === 'cinema') path = "./cinemaNominate/cinemaNominate.html";
-        else if (theme === 'studio') path = "./studioNominate/studioNominate.html";
-        else if (theme === 'character_male') path = "./charNominate/charNominate.html";
-        else if (theme === 'character_female') path = "./charNominate/charNominate.html";
-        else if (theme === 'voice_male') path = "./cvNominate/cvNominate.html";
-        else if (theme === 'voice_female') path = "./cvNominate/cvNominate.html";
-        else if (theme === 'best_couple') path = "./bestCoupleNominate/bestCoupleNominate.html";
+        if (theme === "top3" || theme === 'series') path = `${BASE_PATH}top3Nominate/top3Nominate.html`;
+        else if (['opening', 'ending', 'ost'].includes(theme)) path = `${BASE_PATH}songNominate/songNominate.html`;
+        else if (theme === 'rookie_voice') path = `${BASE_PATH}rookieNominate/rookieNominate.html`;
+        else if (theme === 'meme') path = `${BASE_PATH}memeNominate/memeNominate.html`;
+        else if (theme === 'original') path = `${BASE_PATH}originalNominate/originalNominate.html`;
+        else if (theme === 'director') path = `${BASE_PATH}directorNominate/directorNominate.html`;
+        else if (theme === 'dramatization') path = `${BASE_PATH}adaptorNominate/adaptorNominate.html`;
+        else if (theme === 'best_episode') path = `${BASE_PATH}episodeNominate/episodeNominate.html`;
+        else if (theme === 'cinema') path = `${BASE_PATH}cinemaNominate/cinemaNominate.html`;
+        else if (theme === 'studio') path = `${BASE_PATH}studioNominate/studioNominate.html`;
+        else if (theme === 'character_male') path = `${BASE_PATH}charNominate/charNominate.html`;
+        else if (theme === 'character_female') path = `${BASE_PATH}charNominate/charNominate.html`;
+        else if (theme === 'voice_male') path = `${BASE_PATH}cvNominate/cvNominate.html`;
+        else if (theme === 'voice_female') path = `${BASE_PATH}cvNominate/cvNominate.html`;
+        else if (theme === 'best_couple') path = `${BASE_PATH}bestCoupleNominate/bestCoupleNominate.html`;
 
         location.href = `${path}?${query}`;
     };
