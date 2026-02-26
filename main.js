@@ -168,7 +168,7 @@ function createAwardCard(award, results, ratioClass) {
     }
 
     let displayTitle = "준비중";
-    let displayThumb = award.thumb || "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
+    let displayThumb = award.thumb || `image/trophy 1.png`;
 
     if (winner) {
         // [수정된 썸네일 추출 로직]
