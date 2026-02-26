@@ -137,7 +137,7 @@ function showWinnerCelebration(winner) {
             <p style="color: #888; margin: 0;">${winner.origin}</p>
             
             <div style="margin-top: 30px;">
-                <button class="gold-btn" onclick="location.href='../main/main.html'">결과 저장 및 메인으로</button>
+                <button class="gold-btn" onclick="location.href='../index.html'">결과 저장 및 메인으로</button>
             </div>
         </div>
     `;

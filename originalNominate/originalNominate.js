@@ -216,7 +216,7 @@ function backToStep1() {
 
     const navBtn = document.getElementById('nav-btn');
     navBtn.textContent = "메인으로";
-    navBtn.onclick = () => { location.href = '../main/main.html'; };
+    navBtn.onclick = () => { location.href = '../index.html'; };
 
     renderCards(scriptwriterData);
     updatePreview();
@@ -295,4 +295,4 @@ function fireConfetti() {
     }());
 }
 
-function goToMain() { location.href = '../main/main.html'; }
+function goToMain() { location.href = '../index.html'; }

@@ -127,7 +127,7 @@ function showWinnerCelebration(winner) {
             </div>
             <h1 class="winner-title">${winner.title}</h1>
             <p class="winner-info">${winner.studio} · 감독: ${winner.director}</p>
-            <button class="gold-btn full-width" onclick="location.href='../main/main.html'">결과 저장 및 메인으로</button>
+            <button class="gold-btn full-width" onclick="location.href='../index.html'">결과 저장 및 메인으로</button>
         </div>
     `;
     popup.classList.remove('hidden');

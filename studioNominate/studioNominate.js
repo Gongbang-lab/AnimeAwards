@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (modalAwardNameEl) modalAwardNameEl.textContent = studioState.awardName;
 
     // 변경된 버튼 ID로 이벤트 연결
-    document.getElementById("nav-home-btn").onclick = () => location.href = "../main/main.html";
+    document.getElementById("nav-home-btn").onclick = () => location.href = "../index.html";
     document.getElementById("step1-next-btn").onclick = goToStep2;
     document.getElementById("step2-back-btn").onclick = goToStep1;
     document.getElementById("step2-award-btn").onclick = handleAwardDecision;

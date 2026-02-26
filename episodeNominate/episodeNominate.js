@@ -245,7 +245,7 @@ function backToStep1() {
     document.getElementById('final-btn').classList.add('hidden');
 
     const navBtn = document.getElementById('nav-btn');
-    navBtn.textContent = "메인으로"; navBtn.onclick = () => { location.href = '../main/main.html'; };
+    navBtn.textContent = "메인으로"; navBtn.onclick = () => { location.href = '../index.html'; };
 
     // Step 1 프리뷰 노출
     const previewBox = document.querySelector('.status-indicator');

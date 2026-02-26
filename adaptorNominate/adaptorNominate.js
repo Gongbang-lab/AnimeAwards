@@ -60,8 +60,8 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("step1-next-btn").onclick = goStep2;
     document.getElementById("step2-back-btn").onclick = goStep1;
     document.getElementById("step2-award-btn").onclick = openAwardPopup;
-    document.getElementById("nav-home-btn").onclick = () => location.href = "../main/main.html";
-    document.getElementById("go-main-btn").onclick = () => location.href = "../main/main.html";
+    document.getElementById("nav-home-btn").onclick = () => location.href = "../index.html";
+    document.getElementById("go-main-btn").onclick = () => location.href = "../index.html";
 
     renderStep1();
 });

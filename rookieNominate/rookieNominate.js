@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     renderRookieGrid();
     initSearch();
 
-    document.getElementById("btn-home").onclick = () => location.href = "../main/main.html";
+    document.getElementById("btn-home").onclick = () => location.href = "../index.html";
     document.getElementById("btn-award").onclick = () => handleAwardDecision();
 });
 
@@ -148,7 +148,7 @@ function openAwardModal(cv) {
                     <span class="info-label">데뷔 연도</span>
                     <span class="info-value">${cv.debutYear || '2026'}</span>
                 </div>
-                <button class="gold-btn" style="margin-top:auto; width:100%;" onclick="location.href='../main/main.html'">
+                <button class="gold-btn" style="margin-top:auto; width:100%;" onclick="location.href='../index.html'">
                     확인 및 메인으로
                 </button>
             </div>

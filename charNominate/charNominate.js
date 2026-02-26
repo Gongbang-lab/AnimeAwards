@@ -339,7 +339,7 @@ function bindEvents() {
   };
   document.getElementById("step2-award-btn").onclick = openAwardPopup;
   
-  const goMain = () => location.href = "../main/main.html";
+  const goMain = () => location.href = "../index.html";
   document.getElementById("step1-back-btn").onclick = goMain;
   document.getElementById("go-main-btn").onclick = goMain;
 }

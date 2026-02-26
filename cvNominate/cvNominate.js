@@ -302,7 +302,7 @@ function handleBack() {
              });
         }, 50);
     } else {
-        location.href = "../main/main.html";
+        location.href = "../index.html";
     }
 }
 

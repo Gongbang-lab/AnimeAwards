@@ -330,7 +330,7 @@ function openSongAwardPopup() {
     fireConfetti();
 
     document.getElementById("go-main-btn").onclick = () => {
-        location.href = "../main/main.html";
+        location.href = "../index.html";
     };
 }
 

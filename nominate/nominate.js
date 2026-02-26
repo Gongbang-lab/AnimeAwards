@@ -399,10 +399,10 @@ const btnAward = document.getElementById("step2-award-btn");
 if(btnAward) btnAward.onclick = openAwardPopup;
 
 const btnHome = document.getElementById("nav-home-btn");
-if(btnHome) btnHome.onclick = () => location.href = "../main/main.html";
+if(btnHome) btnHome.onclick = () => location.href = "../index.html";
 
 const btnGoMain = document.getElementById("go-main-btn");
-if(btnGoMain) btnGoMain.onclick = () => location.href = "../main/main.html";
+if(btnGoMain) btnGoMain.onclick = () => location.href = "../index.html";
 
 // 초기 실행
 renderStep1();

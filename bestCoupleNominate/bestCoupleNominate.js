@@ -71,7 +71,7 @@ window.onload = function() {
     if (infoBtn) infoBtn.onclick = () => infoModal.classList.remove('hidden');
     // 기능 버튼
     addCoupleBtn.onclick = registerCouple;
-    goMainBtn.onclick = () => { window.location.href = '../main/main.html'; };
+    goMainBtn.onclick = () => { window.location.href = '../index.html'; };
     confirmAwardBtn.onclick = showAwardModal;
     finalConfirmBtn.onclick = saveAndGoMain;
 };
@@ -329,7 +329,7 @@ async function saveAndGoMain() {
         // 전체 데이터 저장
         localStorage.setItem("anime_awards_result", JSON.stringify(finalData));
 
-        window.location.href = '../main/main.html';
+        window.location.href = '../index.html';
 
     } catch (error) {
         console.error("저장 실패:", error);

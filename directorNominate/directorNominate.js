@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // 3. 버튼 이벤트 바인딩
     document.getElementById("btn-next").onclick = goStep2;
     document.getElementById("btn-back").onclick = handleBack;
-    document.getElementById("final-confirm-btn").onclick = () => location.href = "../main/main.html";
+    document.getElementById("final-confirm-btn").onclick = () => location.href = "../index.html";
 
     const params = new URLSearchParams(window.location.search);
     dirState.awardName = params.get("awardName");
@@ -291,7 +291,7 @@ function handleBack() {
 
         renderDirectorGrid();
     } else {
-        location.href = "../main/main.html";
+        location.href = "../index.html";
     }
 }
 

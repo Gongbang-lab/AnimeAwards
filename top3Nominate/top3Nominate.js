@@ -28,13 +28,13 @@ document.addEventListener("DOMContentLoaded", () => {
             state.finalTop3 = []; // 순위 초기화
             initStep1();
         } else {
-            location.href = "../main/main.html"; // 실제 메인 경로에 맞게 수정
+            location.href = "../index.html"; // 실제 메인 경로에 맞게 수정
         }
     });
 
     document.getElementById('save-main-btn').addEventListener('click', () => {
         // 여기에 localStorage 저장 로직 추가 가능
-        location.href = "../main/main.html";
+        location.href = "../index.html";
     });
 });
 
