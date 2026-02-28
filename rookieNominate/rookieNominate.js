@@ -161,7 +161,7 @@ function saveWinnerToLocal(cv) {
     let results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
     results[rookiestate.awardName] = {
         name: cv.name,
-        thumbnail: `../${cv.cvimg}`,
+        thumbnail: cv.cvimg,
         debutYear: cv.debutYear || '2026'
     };
     localStorage.setItem("anime_awards_result", JSON.stringify(results));
