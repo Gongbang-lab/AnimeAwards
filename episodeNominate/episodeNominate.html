@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body class="dark-theme">
+    <canvas id="confettiCanvas"></canvas>
 
     <nav class="top-nav">
         <div class="nav-content-area">
@@ -45,7 +46,7 @@
                         </div>
 
                         <div class="control-row">
-                            <button id="nav-btn" class="btn-outline" onclick="location.href='../main/main.html'">메인으로</button>
+                            <button id="nav-btn" class="btn-outline" onclick="location.href='../index.html'">메인으로</button>
                             <button id="next-btn" class="gold-btn" onclick="proceedToStep2()">다음 단계</button>
                             <button id="final-btn" class="gold-btn hidden" onclick="confirmFinalWinner()">수상 결정</button>
                         </div>
@@ -56,34 +57,43 @@
     </main>
 
     <div id="winner-modal" class="modal hidden">
-        <div class="modal-content winner-modal-content">
-            <div class="winner-top-section">
-                <div class="winner-badge">🏆 BEST EPISODE 🏆</div>
-            </div>
+    <div class="modal-content">
+        <h2 class="modal-header">Best Episode</h2>
+        <hr class="modal-divider">
 
-            <div class="winner-body-section">
-                <div class="winner-modal-left">
-                    <img id="modal-img" src="" alt="Winner Thumbnail">
-                </div>
-                
-                <div class="winner-modal-right">
-                    <div class="info-stack">
-                        <h2 class="modal-label">Animation Title</h2>
-                        <h1 id="modal-title" class="winner-title">제목</h1>
-                        
-                        <hr class="modal-divider">
-                        
-                        <h2 class="modal-label">Selected Episode</h2>
-                        <h1 id="modal-episode" class="winner-name">0화</h1>
+        <div class="winner-layout">
+            <div class="winner-left">
+                <img id="modal-img" src="" alt="수상작 이미지" onerror="this.src='https://placehold.co/400x600/2f3542/ffffff?text=No+Image'"/>
+            </div>
+            <div class="winner-right">
+                <div id="winner-info-text">
+                    <h3 id="modal-title">작품 제목</h3>
+                    
+                    <div class="info-row">
+                        <span class="info-label">Quarter:</span>
+                        <span id="modal-quarter" class="info-value">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Studio:</span>
+                        <span id="modal-studio" class="info-value">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Episode:</span>
+                        <span id="modal-episode" class="info-value">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Award:</span>
+                        <span id="modal-award-name" class="info-value">베스트 에피소드상</span>
                     </div>
                 </div>
-            </div>
-
-            <div class="winner-bottom-section">
-                <button class="gold-btn final-btn" onclick="goToMain()">확인 및 메인으로</button>
+                
+                <button class="gold-btn full-width" id="go-main-btn" onclick="goToMain()">
+                    확인 및 메인으로
+                </button>
             </div>
         </div>
     </div>
+</div>
 
     <script src="../data/animeData.js"></script>
     <script src="./episodeNominate.js"></script>

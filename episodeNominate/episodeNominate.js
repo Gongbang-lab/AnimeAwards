@@ -6,7 +6,8 @@ const DAY_MAP = {
     Anomaly: "변칙 편성", Web: "웹" // 추가된 키
 };
 const state = {
-    selectedList: {}, 
+    selectedList: {},
+    AwardName: "",
     winnerKey: null
 };
 
@@ -24,6 +25,8 @@ function init() {
         alert("AnimeList 데이터를 로드할 수 없습니다.");
         return;
     }
+    const params = new URLSearchParams(window.location.search);
+    state.AwardName = params.get("awardName");
     
     // 데이터를 분기별 > 요일별로 변환
     const groupedData = groupData(AnimeList);
@@ -121,7 +124,7 @@ function createAnimeItem(anime) {
 
     // 💡 주의: 여기서 404가 발생한다면 "../" 를 지우고 "${anime.thumbnail}" 만 남겨보세요.
     div.innerHTML = `
-        <img src="../${anime.thumbnail}" class="anime-thumb-small" onerror="this.src='../image/placeholder.png'">
+        <img src="../${anime.thumbnail}" class="anime-thumb-small">
         <div class="anime-info">
             <span class="anime-title">${anime.title}</span>
         </div>
@@ -277,12 +280,12 @@ function renderStep2Cards() {
         card.className = 'anime-card';
         
         // 데이터 구조에 따라 thumbnail 경로 처리
-        const thumbPath = item.thumbnail.startsWith('../') ? item.thumbnail : `../${item.thumbnail}`;
+        const thumbPath = `../${item.thumbnail}`;
 
         card.innerHTML = `
             <div class="card-badge">EP.${item.episode}</div>
             <div class="card-thumb-wrapper">
-                <img src="../${thumbPath}" class="card-thumb">
+                <img src="${thumbPath}" class="card-thumb">
             </div>
             <div class="card-info-area">
                 <div class="card-title">${item.title}</div>
@@ -304,41 +307,80 @@ function renderStep2Cards() {
 
 // --- [ 모달 표시 및 데이터 저장 (originalNominate 스타일) ] ---
 function confirmFinalWinner() {
-    if(!state.winnerKey) { alert("최종 수상 에피소드를 선택해주세요!"); return; }
+    if(!state.winnerKey) { 
+        alert("최종 수상 에피소드를 선택해주세요!"); 
+        return; 
+    }
     
     const winner = state.selectedList[state.winnerKey];
     
+    // 1. 이미지 및 제목 텍스트 매핑
     document.getElementById('modal-img').src = `../${winner.thumbnail}`;
     document.getElementById('modal-title').textContent = winner.title;
     
-    const episodeDisplay = document.getElementById('modal-episode');
-    episodeDisplay.textContent = `EPISODE ${winner.episode}`;
+    // 2. 세부 정보 매핑 (분기, 제작사, 에피소드)
+    document.getElementById('modal-quarter').textContent = winner.quarter || "-";
+    document.getElementById('modal-studio').textContent = winner.studio || "-";
+    document.getElementById('modal-episode').textContent = `EPISODE ${winner.episode}`;
 
+    // 3. 모달 띄우기 및 축하 효과
     document.getElementById('winner-modal').classList.remove('hidden');
-    fireworks();
-    saveData(winner); // 로컬 스토리지 저장
+    fireConfetti(); 
+    
+    // 4. 로컬 스토리지 저장 (기존 로직 유지)
+    saveData(winner); 
 }
 
 function saveData(winner) {
     const KEY = 'anime_awards_result';
     let data = JSON.parse(localStorage.getItem(KEY) || '{}');
     if (Array.isArray(data)) data = {}; 
-    data["베스트 에피소드 상"] = { title: winner.title, thumbnail: winner.thumbnail, episode: winner.episode, date: new Date().toISOString() };
+    data[state.AwardName] = { title: winner.title, thumbnail: winner.thumbnail, episode: winner.episode, date: new Date().toISOString() };
     localStorage.setItem(KEY, JSON.stringify(data));
 }
 
 function groupBy(arr, key) { return arr.reduce((acc, obj) => { (acc[obj[key]] = acc[obj[key]] || []).push(obj); return acc; }, {}); }
 
-function fireworks() {
-    const duration = 3 * 1000; const end = Date.now() + duration;
+function fireConfetti() {
+    const canvas = document.getElementById('confettiCanvas');
+    if (!canvas) return;
+
+    // 전용 캔버스를 사용하는 폭죽 인스턴스 생성
+    const myConfetti = confetti.create(canvas, {
+        resize: true,
+        useWorker: true
+    });
+
+    const duration = 3000;
+    const animationEnd = Date.now() + duration;
+
     (function frame() {
-        confetti({ particleCount: 5, angle: 60, spread: 55, origin: { x: 0 }, colors: ['#d4af37', '#ffffff'] });
-        confetti({ particleCount: 5, angle: 120, spread: 55, origin: { x: 1 }, colors: ['#d4af37', '#ffffff'] });
-        if (Date.now() < end) requestAnimationFrame(frame);
+        const timeLeft = animationEnd - Date.now();
+        if (timeLeft <= 0) return;
+
+        // 왼쪽 아래에서 쏘아 올림
+        myConfetti({
+            particleCount: 3,
+            angle: 60,
+            spread: 55,
+            origin: { x: 0, y: 0.8 },
+            colors: ['#d4af37', '#ffffff', '#aa8a2e']
+        });
+
+        // 오른쪽 아래에서 쏘아 올림
+        myConfetti({
+            particleCount: 3,
+            angle: 120,
+            spread: 55,
+            origin: { x: 1, y: 0.8 },
+            colors: ['#d4af37', '#ffffff', '#aa8a2e']
+        });
+
+        requestAnimationFrame(frame);
     }());
 }
 
-function goToMain() { location.href = '../main/main.html'; }
+function goToMain() { location.href = '../index.html'; }
 
 // 앱 초기화
 init();

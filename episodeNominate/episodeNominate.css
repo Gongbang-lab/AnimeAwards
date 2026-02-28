@@ -420,85 +420,45 @@ body {
     color: var(--gold);
     font-weight: 500;
 }
-
-/* 선택되었을 때 아이콘 추가 (옵션) */
-.anime-card.selected::after {
-    content: '✓';
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 25px;
-    height: 25px;
-    background: var(--gold);
-    color: #000;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    z-index: 11;
+.card-studio {
+    font-size: 0.8rem;
+    color: #bbb;
 }
-/* 8. 모달 (2분할 레이아웃) */
+
+/* ===============================
+    모달 (winner-modal) 스타일
+================================ */
 .modal {
-    position: fixed;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(0,0,0,0.9);
-    display: flex; align-items: center; justify-content: center;
-    z-index: 2000;
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.9); display: flex; align-items: center; justify-content: center; z-index: 2000;
 }
+.modal-content {
+    background: #1a1a1a; width: 90%; max-width: 800px;
+    border: 2px solid var(--gold); border-radius: 15px; padding: 30px;
+}
+.modal-header { text-align: center; color: var(--gold); font-size: 1.8rem; margin: 0; }
+.modal-divider { border: 0; height: 1px; background: #444; margin: 15px 0 30px 0; }
+.winner-layout { display: flex; gap: 40px; }
+.winner-left img { width: 280px; height: auto; border-radius: 5px; border: 1px solid var(--gold); }
+.winner-right { flex: 1; display: flex; flex-direction: column; text-align: left; }
+#modal-title { font-size: 2rem; color: #fff; margin: 0 0 30px 0; border-bottom: 2px solid rgba(212, 175, 55, 0.2); padding-bottom: 10px; }
 
-.winner-modal-content {
-    display: flex;
-    flex-direction: column;
-    max-width: 900px;
-    width: 90%;
-    height: 80vh;
-    background: #1a1a1a;
-    border: 3px solid var(--gold);
-    border-radius: 15px;
-    overflow: hidden;
-}
+.info-row { display: flex; justify-content: space-between; border-bottom: 1px solid #333; padding: 12px 0; font-size: 1.1rem; }
+.info-label { color: var(--gold); font-weight: bold; }
+.info-value { color: #eee; text-align: right; }
 
-.winner-body-section {
-    display: flex;
-    flex: 1;
-}
-
-.winner-modal-left {
-    flex: 4;
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-right: 1px solid #333;
-}
-
-.winner-modal-left img {
-    width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    border: 2px solid var(--gold);
-    border-radius: 10px;
-}
-
-.winner-modal-right {
-    flex: 6;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.winner-title {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-}
-
-.winner-name {
-    font-size: 3rem;
-    font-weight: 900;
-    color: var(--gold);
-}
+/* 버튼을 컨테이너 하단에 맞추기 위한 여백 추가 */
+#go-main-btn { margin-top: auto; }
 
 /* 유틸리티 */
 .hidden { display: none !important; }
+
+#confettiCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* 중요: 폭죽 아래의 버튼 클릭이 가능하게 함 */
+    z-index: 9999;        /* 모달(2000)보다 훨씬 높은 값으로 설정 */
+}
