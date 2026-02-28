@@ -160,7 +160,7 @@ function createAwardCard(award, results, ratioClass) {
     }
 
     let displayTitle = "준비중";
-    let displayThumb = award.thumb || `image/trophy.png`;
+    let displayThumb = award.thumb || `./image/trophy.png`;
 
     if (winner) {
         if (winner.thumbnail) {
@@ -181,7 +181,7 @@ function createAwardCard(award, results, ratioClass) {
     const isVideo = String(displayThumb).endsWith('.mp4');
     const mediaTag = isVideo 
         ? `<video src="${displayThumb}" class="award-thumb" autoplay muted loop playsinline></video>`
-        : `<img src="${displayThumb}" class="award-thumb" onerror="this.src='${award.thumb}'">`;
+        : `<img src="${displayThumb}" class="award-thumb" onerror="this.src='./image/trophy.png'">`;
 
     card.innerHTML = `
         <div class="thumb-wrapper">
@@ -284,7 +284,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }
 
-            Awards.push({ name: title, theme: theme, thumb: 'image/trophy.png' });
+            Awards.push({ name: title, theme: theme, thumb: './image/trophy.png' });
             
             // 🟢 [핵심 추가] 추가된 상태를 브라우저에 저장
             localStorage.setItem("custom_awards_list", JSON.stringify(Awards));
