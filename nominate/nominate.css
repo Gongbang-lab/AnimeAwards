@@ -163,7 +163,7 @@ body {
 .day-content, #step2-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 15px; padding: 20px; box-sizing: border-box; background: #0a0a0a;
+  gap: 15px; padding: 20px; box-sizing: border-box;
 }
 /* 초기 숨김 처리는 JS 또는 인라인 스타일로 제어 */
 

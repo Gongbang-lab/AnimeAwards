@@ -11,14 +11,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if(typeof scriptwriterData !== 'undefined') {
         renderCards(scriptwriterData);
     }
+    const params = new URLSearchParams(window.location.search);
+    originalState.awardName = params.get("awardName");
 });
 
 document.getElementById('search-input').addEventListener('input', function(e) {
     const searchTerm = e.target.value.toLowerCase().trim();
 
-    const params = new URLSearchParams(window.location.search);
-    originalState.awardName = params.get("awardName");
-    
     // 현재 단계에 따라 필터링 대상 데이터 결정
     // Step 1이면 전체 데이터(scriptwriterData), Step 2이면 선택된 후보(step1Selected)
     const targetData = (currentStep === 1) ? scriptwriterData : step1Selected;

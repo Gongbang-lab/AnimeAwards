@@ -127,7 +127,7 @@ body {
 .day-content, #step2-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 15px; padding: 20px; box-sizing: border-box; background: #0a0a0a;
+    gap: 15px; padding: 20px; box-sizing: border-box;
 }
 
 .card {
