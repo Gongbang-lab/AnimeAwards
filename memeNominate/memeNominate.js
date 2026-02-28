@@ -31,8 +31,8 @@ function renderMemeGrid() {
             <button class="zoom-btn" onclick="openMemeZoom('${meme.id}', event)" title="확대 보기">+</button>
             <div class="media-box">
                 ${meme.type === 'video' 
-                    ? `<video src="${meme.src}" muted loop onmouseover="this.play()" onmouseout="this.pause()"></video>` 
-                    : `<img src="${meme.src}" alt="${meme.name}">`}
+                    ? `<video src="../${meme.src}" muted loop onmouseover="this.play()" onmouseout="this.pause()"></video>` 
+                    : `<img src="../${meme.src}" alt="${meme.name}">`}
             </div>
             <div class="card-info">
                 <div class="card-title">${meme.name}</div>
@@ -71,8 +71,8 @@ function updatePreviewBox() {
         <div style="text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: center;">
             <div class="media-box" style="border-radius: 8px; margin-bottom: 15px;">
                 ${meme.type === 'video' 
-                    ? `<video src="${meme.src}" autoplay loop muted style="width:100%; border-radius:8px;"></video>` 
-                    : `<img src="${meme.src}" style="width:100%; border-radius:8px;">`}
+                    ? `<video src="../${meme.src}" autoplay loop muted style="width:100%; border-radius:8px;"></video>` 
+                    : `<img src="../${meme.src}" style="width:100%; border-radius:8px;">`}
             </div>
             <h3 style="color: var(--gold); margin: 0 0 10px 0;">${meme.name}</h3>
             <p style="color: #aaa; font-size: 0.9rem; margin: 0;">${meme.origin}</p>
@@ -93,8 +93,8 @@ function openMemeZoom(id, e) {
             <hr class="modal-divider">
             <div style="text-align:center; padding:10px; border-radius:10px;">
                 ${meme.type === 'video' 
-                    ? `<video src="${meme.src}" controls autoplay loop style="max-height:500px; width:100%;"></video>` 
-                    : `<img src="${meme.src}" style="max-height:500px; max-width:100%;">`}
+                    ? `<video src="../${meme.src}" controls autoplay loop style="max-height:500px; width:100%;"></video>` 
+                    : `<img src="../${meme.src}" style="max-height:500px; max-width:100%;">`}
             </div>
             <p style="color:#aaa; text-align:center; margin-top:20px;">출처: ${meme.origin}</p>
         </div>
