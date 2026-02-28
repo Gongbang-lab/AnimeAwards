@@ -30,63 +30,60 @@
   <h1>2026 애니메이션 연말 결산</h1>
   <div class="header-line"></div>
 
-<div id="info-modal" class="modal-overlay">
-  <div class="modal-content">
+<div id="info-modal" class="modal-overlay hidden">
+  <div class="modal-content info-modal-content">
     <div class="modal-header">
-      <h2>시상식 이용 가이드</h2>
-      <button class="close-modal">&times;</button>
+      <h2>🏆 시상식 이용 가이드</h2>
+      <button class="close-modal" id="close-info-btn">&times;</button>
     </div>
+    
     <div class="modal-body">
-      <section>
-        <h3>부문별 선정</h3>
-        <p>각 카테고리 카드를 클릭하면 해당 부문의 수상작을 선정할 수 있습니다.
-           상단의 '수상 결과 초기화(↺)'를 누르면 수상 내역만 삭제되며, '전체 초기화'를 누르면 추가/삭제한 카드까지 맨 처음 상태로 복구됩니다.
-        </p>
+      <section class="guide-box">
+        <h3>📌 기본 조작 방법</h3>
+        <ul>
+          <li><strong>선정:</strong> 각 카테고리 카드를 클릭하면 해당 부문의 수상작을 픽할 수 있습니다.</li>
+          <li><strong>추가/삭제:</strong> 하단의 메뉴를 통해 나만의 커스텀 상을 만들거나 뺄 수 있습니다.</li>
+          <li><strong>초기화:</strong> 상단의 '수상 결과 초기화(↺)'는 <strong>수상 내역만</strong> 지우며, '전체 초기화'는 <strong>추가/삭제한 카드까지</strong> 전부 맨 처음 상태로 되돌립니다.</li>
+          <li><strong>저장:</strong> 모든 시상이 끝나면 '이미지 저장' 버튼을 눌러 내 결과를 간직해 보세요!</li>
+        </ul>
       </section>
-      <section>
-        <h3>1. 시상식 오프닝 </h3>
-        <p><strong>밈</strong></p>
-      </section>
-      <section>
-        <h3>2. 음악 부문 </h3>
-        <p><strong>오프닝, 엔딩, OST</strong></p>
-      </section>
-      <section>
-        <h3>3. 성우 부문 </h3>
-        <p>신인 성우상, 남자 성우상, 여자 성우상</p>
-        <h4><p>신인 성우상 선정 기준</p>
-          <p>1단계 : 현역 필터</p>
-          <p>2026년에 방영된 애니메이션 성우들</p>
-          <p> - 올해 최소 2개 이상의 작품 출연</p>
-          <p> - 역할 비중 : 주연 및 조연</p>
-          <p>2단계 : 루키 경력 필터</p>
-          <p> - 표준 루키 : 데뷔 5년 이내 및 전체 출역작 30개 이하</p> 
-          <p> - 저평가 루키 : 데뷔 5년 초과, 올해 활동 5개 이하, 전체 20개 작품 이하</p>
-        </h4>
-      </section>
-      <section>
-        <h3>4. 캐릭터 부문 </h3>
-        <p><strong>남우 주연상, 여우 주연상, 베스트 커플상</strong></p>
-      </section>
-      <section>
-        <h3>5. 스태프 부문 </h3>
-        <p><strong>각본상, 각색상, 감독상</strong></p>
-      </section>
-      <section>
-        <h3>6. 아트 부문 </h3>
-        <p><strong>동화상, 원화(작화)상, 연출상</strong></p>
-      </section>
-      <section>
-        <h3>7. 애니메이션 시리즈 </h3>
-        <p><strong>이카루스, 다크호스, 베스트 에피소드</strong></p>
-      </section>
-      <section>
-        <h3>8. 올해의 시리즈</h3>
-        <p><strong>올해의 시네마, 올해의 스튜디오, 올해의 애니메이션</strong></p>
-      </section>
-      <section>
-        <h3>버그 발견, 사진 및 정보 수정, 아이디어 추천</h3>
-        <p><strong>gongbang0312@gmail.com로 보내주시면 감사하겠습니다.</strong></p>
+
+      <hr class="guide-divider">
+
+      <div class="category-grid">
+        <section>
+          <h3 class="gold-text">신인 성우상</h3>
+          
+          <div class="criteria-box">
+            <h4>[ 신인 성우상 선정 기준 ]</h4>
+            <div class="criteria-step">
+              <strong>1단계 : 현역 필터 (2026년 방영작 기준)</strong>
+              <ul>
+                <li>올해 최소 2개 이상의 작품 출연</li>
+                <li>역할 비중 : 주연 및 조연</li>
+              </ul>
+            </div>
+            <div class="criteria-step">
+              <strong>2단계 : 루키 경력 필터</strong>
+              <ul>
+                <li><strong>표준 루키 :</strong> 데뷔 5년 이내 & 전체 출연작 30개 이하</li>
+                <li><strong>저평가 루키 :</strong> 데뷔 5년 초과 & 올해 활동 5개 이하 & 전체 20개 작품 이하</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h3 class="gold-text">올해의 이카루스 상</h3>
+          <p>PV나 원작에 대한 기대감이 높아서 태양에 다가갔는데</p>
+          <p>망했다.</p>
+        </section>
+      </div>
+
+      <hr class="guide-divider">
+
+      <section class="contact-section">
+        <p>버그 제보, 정보 수정, 아이디어 추천은 언제나 환영입니다!</p>
+        <a href="mailto:gongbang0312@gmail.com" class="email-link">✉️ gongbang0312@gmail.com</a>
       </section>
     </div>
   </div>

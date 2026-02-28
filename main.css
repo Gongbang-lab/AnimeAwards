@@ -101,44 +101,85 @@ h1 {
   position: relative;
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
-
+.info-modal-content {
+    max-width: 700px; /* 기존 모달들보다 약간 좁게 해서 글을 읽기 편하게 */
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
 .modal-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #3d444b;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--gold);
+    margin-bottom: 20px;
 }
+.modal-header h2 { margin: 0; color: #fff; font-size: 1.6rem; }
+
 .modal-body {
-  padding: 20px 30px;
-  overflow-y: auto; /* 내용이 많으면 세로 스크롤 생성 */
-  flex-grow: 1; /* 남은 공간 차지 */
+    flex: 1;
+    overflow-y: auto; /* 내용이 길면 스크롤 생성 */
+    padding-right: 15px;
+    color: #ddd;
+    line-height: 1.6;
 }
 
-/* 스크롤바 디자인 (선택 사항 - 더 깔끔하게) */
-.modal-body::-webkit-scrollbar {
-  width: 8px;
-}
-
-.modal-body::-webkit-scrollbar-thumb {
-  background: #3d444b;
-  border-radius: 10px;
-}
-
-.modal-body::-webkit-scrollbar-track {
-  background: transparent;
-}
+/* 스크롤바 디자인 (크롬, 엣지 등) */
+.modal-body::-webkit-scrollbar { width: 8px; }
+.modal-body::-webkit-scrollbar-track { background: #222; border-radius: 4px; }
+.modal-body::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 4px; }
 
 .close-modal {
-  background: none;
-  border: none;
-  color: #aaa;
-  font-size: 30px;
-  cursor: pointer;
+    background: none; border: none;
+    color: var(--gold); font-size: 2.5rem;
+    cursor: pointer; transition: color 0.2s;
 }
+.close-modal:hover { color: #fff; }
+.guide-box {
+    background: rgba(212, 175, 55, 0.1); /* 골드 투명 배경 */
+    border: 1px solid var(--gold);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+.guide-box h3 { margin-top: 0; color: var(--gold); }
+.guide-box ul { padding-left: 20px; margin-bottom: 0; }
+.guide-box li { margin-bottom: 8px; }
 
+/* 구분선 */
+.guide-divider { border: 0; height: 1px; background: #444; margin: 30px 0; }
+
+/* 부문별 안내 텍스트 */
+.gold-text { color: var(--gold); font-size: 1.2rem; margin: 25px 0 10px 0; border-left: 3px solid var(--gold); padding-left: 10px; }
+.sub-desc { font-size: 0.85rem; color: #888; font-weight: normal; }
+
+/* 신인상 기준 강조 박스 */
+.criteria-box {
+    background: #111;
+    border-radius: 6px;
+    padding: 15px 20px;
+    margin-top: 15px;
+    font-size: 0.95rem;
+}
+.criteria-box h4 { color: #fff; margin-top: 0; margin-bottom: 15px; text-align: center; }
+.criteria-step { margin-bottom: 15px; }
+.criteria-step strong { color: #aaa; }
+.criteria-step ul { padding-left: 20px; margin-top: 5px; color: #bbb; }
+
+/* 피드백 섹션 */
+.contact-section { text-align: center; padding-bottom: 20px; }
+.email-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--gold);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 2px;
+}
+.email-link:hover { color: #fff; border-color: #fff; }
 
 /* ===============================
     섹션 및 그리드 설정
