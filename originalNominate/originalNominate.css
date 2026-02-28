@@ -146,26 +146,27 @@ body {
     display: none !important;
 }
 /* 모달 (2분할) */
-.modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); display: flex; align-items: center; justify-content: center; z-index: 2000; }
-.winner-modal-content { display: flex; flex-direction: column; max-width: 1000px; width: 90%; height: 85vh; background: #1a1a1a; border: 3px solid var(--gold); border-radius: 15px; overflow: hidden; }
-.winner-top-section { padding: 25px; text-align: center; background: #111; }
-.winner-badge { color: var(--gold); font-weight: 800; font-size: 1.5rem; letter-spacing: 5px; }
-.winner-body-section { display: flex; flex: 1; }
-.winner-modal-left { flex: 4; padding: 30px; display: flex; align-items: center; justify-content: center; border-right: 1px solid #333; }
-.winner-modal-left img { width: 100%; max-height: 100%; object-fit: contain; border: 2px solid var(--gold); border-radius: 10px; }
-.winner-modal-right { flex: 6; padding: 50px; display: flex; flex-direction: column; justify-content: center; }
-.modal-label { color: var(--gold); font-size: 0.8rem; margin-bottom: 5px; text-transform: uppercase; }
-.winner-title { font-size: 2rem; margin: 0 0 25px 0; }
-.winner-name {
-    margin: 0;
-    font-weight: 900;
-    color: #fff;
-    line-height: 1.2;
-    word-break: keep-all; /* 단어 단위로 줄바꿈 */
-    transition: font-size 0.2s ease-in-out; /* 크기 변경 시 부드럽게 */
+.modal {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.9); display: flex; align-items: center; justify-content: center; z-index: 2000;
 }
-.winner-bottom-section { padding: 20px; background: #111; text-align: center; }
+.modal-content {
+    background: #1a1a1a; width: 90%; max-width: 800px;
+    border: 2px solid var(--gold); border-radius: 15px; padding: 30px;
+}
+.modal-header { text-align: center; color: var(--gold); font-size: 1.8rem; margin: 0; }
+.modal-divider { border: 0; height: 1px; background: #444; margin: 15px 0 30px 0; }
+.winner-layout { display: flex; gap: 40px; }
+.winner-left img { width: 280px; height: auto; border-radius: 5px; border: 1px solid var(--gold); }
+.winner-right { flex: 1; display: flex; flex-direction: column; text-align: left; }
+#modal-title { font-size: 2rem; color: #fff; margin: 0 0 30px 0; border-bottom: 2px solid rgba(212, 175, 55, 0.2); padding-bottom: 10px; }
 
+.info-row { display: flex; justify-content: space-between; border-bottom: 1px solid #333; padding: 12px 0; font-size: 1.1rem; }
+.info-label { color: var(--gold); font-weight: bold; }
+.info-value { color: #eee; text-align: right; word-break: keep-all; transition: font-size 0.2s; }
+
+/* 버튼을 하단에 붙이기 위한 마진 */
+#go-main-btn { margin-top: auto; }
 .hidden { display: none !important; }
 
 #search-input {
@@ -290,4 +291,13 @@ body {
     line-clamp: 1; 
     -webkit-box-orient: vertical; 
     overflow: hidden; 
+}
+#confettiCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* 중요: 폭죽 아래의 버튼 클릭이 가능하게 함 */
+    z-index: 9999;        /* 모달(2000)보다 훨씬 높은 값으로 설정 */
 }

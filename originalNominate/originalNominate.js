@@ -252,7 +252,7 @@ function confirmFinalWinner() {
     document.getElementById('winner-modal').classList.remove('hidden');
     fireConfetti();
     const results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
-    results["베스트 각본상"] = { title: winner.title, thumbnail: winner.thumbnail };
+    results[originalState.awardName] = { title: winner.title, thumbnail: winner.thumbnail };
     localStorage.setItem("anime_awards_result", JSON.stringify(results));
 }
 

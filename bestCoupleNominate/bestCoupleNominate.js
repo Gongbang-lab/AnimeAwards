@@ -10,6 +10,8 @@ const searchBtn = document.getElementById('searchBtn');
 const suggestionList = document.getElementById('suggestionList'); // 연관검색어 리스트
 const mainArea = document.getElementById('mainArea');
 const nomineeList = document.getElementById('nomineeList');
+const params = new URLSearchParams(window.location.search);
+const awardName = params.get("awardName");
 
 const charModal = document.getElementById('charModal');
 const closeCharModal = document.getElementById('closeCharModal');
@@ -319,10 +321,7 @@ async function saveAndGoMain() {
 
         // 이미지 병합 (260x378)
         const combinedImageBase64 = await createCombinedImage(path1, path2);
-
-        // [구조 수정] 메인 페이지 로직과 일치하도록 키값 설정
-        // 기존 데이터를 덮어쓰지 않고 bestcouple 필드만 업데이트
-        finalData["베스트 커플상"] = {
+        finalData[awardName] = {
             name1: winner.char1.name,
             name2: winner.char2.name,
             animeTitle: winner.animeTitle,
