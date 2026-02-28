@@ -309,13 +309,16 @@ async function saveAndGoMain() {
 
     try {
         const winner = nominees[selectedCoupleIndex];
+        const path1 = winner.char1.img.startsWith('../') ? winner.char1.img : `../${winner.char1.img}`;
+        const path2 = winner.char2.img.startsWith('../') ? winner.char2.img : `../${winner.char2.img}`;
+
         
         // [핵심] 기존 로컬스토리지 데이터 불러오기 (없으면 빈 객체)
         const existingDataRaw = localStorage.getItem("anime_awards_result");
         let finalData = existingDataRaw ? JSON.parse(existingDataRaw) : {};
 
         // 이미지 병합 (260x378)
-        const combinedImageBase64 = await createCombinedImage(winner.char1.img, winner.char2.img);
+        const combinedImageBase64 = await createCombinedImage(path1, path2);
 
         // [구조 수정] 메인 페이지 로직과 일치하도록 키값 설정
         // 기존 데이터를 덮어쓰지 않고 bestcouple 필드만 업데이트
@@ -357,6 +360,9 @@ function createCombinedImage(src1, src2) {
         const img1 = new Image();
         const img2 = new Image();
 
+        console.log("Loading Image 1:", src1);
+        console.log("Loading Image 2:", src2);
+
         // CORS 문제 방지 (외부 이미지일 경우)
         img1.crossOrigin = "Anonymous";
         img2.crossOrigin = "Anonymous";
@@ -397,8 +403,8 @@ function createCombinedImage(src1, src2) {
 
         img1.onload = checkLoad;
         img2.onload = checkLoad;
-        img1.onerror = () => reject(new Error("Image 1 load failed"));
-        img2.onerror = () => reject(new Error("Image 2 load failed"));
+        img1.onerror = () => reject(new Error(`Image 1 로드 실패: ${src1}`));
+        img2.onerror = () => reject(new Error(`Image 2 로드 실패: ${src2}`));
 
         img1.src = src1;
         img2.src = src2;

@@ -262,7 +262,7 @@ function renderSongStep2() {
         card.className = "step2-song-card";
 
         // 분기 텍스트 추출 (Q 제거)
-        const displayQuarter = song.displayQuarter ? song.displayQuarter.replace("Q", "") + "분기" : "";
+        const displayQuarter = song.displayQuarter ? song.displayQuarter.replace("Q", "") : "";
 
         card.innerHTML = `
             <div class="card-badge">${displayQuarter}</div>
