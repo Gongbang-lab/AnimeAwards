@@ -8,7 +8,9 @@ let isDeleteMode = false;
 // 브라우저에 저장된 사용자의 카드 편집 내역(추가/삭제)이 있다면 불러와서 전역 변수 Awards를 덮어씌움
 const savedAwards = localStorage.getItem("custom_awards_list");
 if (savedAwards) {
-    Awards = JSON.parse(savedAwards);
+    const parsedAwards = JSON.parse(savedAwards);
+    Awards.length = 0;             // 원본 배열 데이터 싹 비우기
+    Awards.push(...parsedAwards);  // 로컬스토리지에 저장된(추가/삭제된) 데이터로 채워넣기
 }
 
 document.getElementById("save-img-btn").onclick = function() {

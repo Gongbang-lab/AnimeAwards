@@ -129,8 +129,8 @@ function showWinnerCelebration(winner) {
             
             <div class="media-box" style="margin: 0 auto 20px auto; max-width: 500px; border-radius: 10px; overflow: hidden; background: transparent;">
                 ${winner.type === 'video' 
-                    ? `<video src="${winner.src}" autoplay loop muted style="width:100%; border-radius:10px;"></video>` 
-                    : `<img src="${winner.src}" style="width:100%; border-radius:10px;">`}
+                    ? `<video src="../${winner.src}" autoplay loop muted style="width:100%; border-radius:10px;"></video>` 
+                    : `<img src="../${winner.src}" style="width:100%; border-radius:10px;">`}
             </div>
             
             <h1 style="color: #fff; margin: 0 0 10px 0;">${winner.name}</h1>
