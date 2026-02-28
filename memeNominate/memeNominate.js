@@ -31,8 +31,8 @@ function renderMemeGrid() {
             <button class="zoom-btn" onclick="openMemeZoom('${meme.id}', event)" title="확대 보기">+</button>
             <div class="media-box">
                 ${meme.type === 'video' 
-                    ? `<video src="../${meme.src}" muted loop onmouseover="this.play()" onmouseout="this.pause()"></video>` 
-                    : `<img src="../${meme.src}" alt="${meme.name}">`}
+                    ? `<video src="..${meme.src}" muted loop onmouseover="this.play()" onmouseout="this.pause()"></video>` 
+                    : `<img src="..${meme.src}" alt="${meme.name}">`}
             </div>
             <div class="card-info">
                 <div class="card-title">${meme.name}</div>
@@ -71,8 +71,8 @@ function updatePreviewBox() {
         <div style="text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: center;">
             <div class="media-box" style="border-radius: 8px; margin-bottom: 15px;">
                 ${meme.type === 'video' 
-                    ? `<video src="../${meme.src}" autoplay loop muted style="width:100%; border-radius:8px;"></video>` 
-                    : `<img src="../${meme.src}" style="width:100%; border-radius:8px;">`}
+                    ? `<video src="..${meme.src}" autoplay loop muted style="width:100%; border-radius:8px;"></video>` 
+                    : `<img src="..${meme.src}" style="width:100%; border-radius:8px;">`}
             </div>
             <h3 style="color: var(--gold); margin: 0 0 10px 0;">${meme.name}</h3>
             <p style="color: #aaa; font-size: 0.9rem; margin: 0;">${meme.origin}</p>
@@ -129,8 +129,8 @@ function showWinnerCelebration(winner) {
             
             <div class="media-box" style="margin: 0 auto 20px auto; max-width: 500px; border-radius: 10px; overflow: hidden; background: transparent;">
                 ${winner.type === 'video' 
-                    ? `<video src="../${winner.src}" autoplay loop muted style="width:100%; border-radius:10px;"></video>` 
-                    : `<img src="../${winner.src}" style="width:100%; border-radius:10px;">`}
+                    ? `<video src="..${winner.src}" autoplay loop muted style="width:100%; border-radius:10px;"></video>` 
+                    : `<img src="..${winner.src}" style="width:100%; border-radius:10px;">`}
             </div>
             
             <h1 style="color: #fff; margin: 0 0 10px 0;">${winner.name}</h1>
