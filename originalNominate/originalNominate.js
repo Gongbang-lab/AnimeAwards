@@ -234,7 +234,7 @@ function confirmFinalWinner() {
     studioDisplay.textContent = winner.studio;
     
     // 모달 데이터 주입
-    document.getElementById('modal-img').src = winner.thumbnail;
+    document.getElementById('modal-img').src = `../${winner.thumbnail}`;
     document.getElementById('modal-title').textContent = winner.title;
     document.getElementById('modal-studio').textContent = winner.studio;
 

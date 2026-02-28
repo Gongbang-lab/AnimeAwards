@@ -253,8 +253,8 @@ function renderNominees() {
         card.className = `couple-card ${index === selectedCoupleIndex ? 'selected' : ''}`;
         card.innerHTML = `
             <div class="couple-imgs">
-                <div class="couple-img-wrap"><img src="${couple.char1.img}"></div>
-                <div class="couple-img-wrap"><img src="${couple.char2.img}"></div>
+                <div class="couple-img-wrap"><img src="../${couple.char1.img}"></div>
+                <div class="couple-img-wrap"><img src="../${couple.char2.img}"></div>
             </div>
             <div class="couple-info">
                 <div class="couple-names">${couple.char1.name} ♥ ${couple.char2.name}</div>
@@ -285,9 +285,9 @@ function showAwardModal() {
     
     // 모달 내용 채우기
     awardAnimeTitle.textContent = winner.animeTitle;
-    awardImg1.src = winner.char1.img;
+    awardImg1.src = `../${winner.char1.img}`;
     awardName1.textContent = winner.char1.name;
-    awardImg2.src = winner.char2.img;
+    awardImg2.src = `../${winner.char2.img}`;
     awardName2.textContent = winner.char2.name;
 
     // 모달 띄우기

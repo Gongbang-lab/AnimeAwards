@@ -299,14 +299,14 @@ function handleBack() {
  * 상세 정보 모달 (배지 클릭 시)
  */
 function openDetailModal(data) {
-    document.getElementById("detail-img").src = data.director_img;
+    document.getElementById("detail-img").src = `../${data.director_img}`;
     document.getElementById("detail-name").textContent = data.director;
     
     const worksContainer = document.getElementById("detail-works");
     worksContainer.innerHTML = data.works.map(w => `
         <div class="info-row">
             <div style="display:flex; align-items:center; gap:10px;">
-                <img src="${w.thumbnail}" style="width:40px; height:40px; border-radius:4px; object-fit:cover;">
+                <img src="../${w.thumbnail}" style="width:40px; height:40px; border-radius:4px; object-fit:cover;">
                 <span class="info-label" style="text-align:left;">${w.title}</span>
             </div>
         </div>
@@ -322,7 +322,7 @@ function openWinnerModal() {
     const winner = dirState.finalWinner;
     if (!winner) return;
 
-    document.getElementById("winner-img").src = winner.director_img;
+    document.getElementById("winner-img").src = `../${winner.director_img}`;
     
     // 우측 콘텐츠 생성
     const infoContent = document.getElementById("winner-info-content");

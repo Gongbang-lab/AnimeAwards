@@ -293,7 +293,7 @@ function saveToLocalStorage() {
         const resultData = state.finalTop3.map((anime, idx) => ({
             rank: RANK_NAMES[idx],
             title: anime.title,
-            thumbnail: `../${anime.thumbnail}`
+            thumbnail: anime.thumbnail
         }));
 
         currentResults[awardName] = resultData;

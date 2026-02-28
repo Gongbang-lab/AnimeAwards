@@ -337,7 +337,7 @@ function openWinnerModal() {
     if (!winner) return;
 
     // 1. 이미지 설정
-    document.getElementById("winner-img").src = winner.cvimg;
+    document.getElementById("winner-img").src = `../${winner.cvimg}`;
 
     // 2. 우측 콘텐츠 생성 (이름 + 모든 작품 리스트)
     const infoContent = document.getElementById("winner-info-content");

@@ -282,7 +282,7 @@ function renderStep2Cards() {
         card.innerHTML = `
             <div class="card-badge">EP.${item.episode}</div>
             <div class="card-thumb-wrapper">
-                <img src="../${thumbPath}" class="card-thumb" onerror="this.src='../image/placeholder.png'">
+                <img src="../${thumbPath}" class="card-thumb">
             </div>
             <div class="card-info-area">
                 <div class="card-title">${item.title}</div>

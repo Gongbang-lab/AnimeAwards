@@ -331,7 +331,7 @@ function saveAwardResult(winner) {
 
     const top3Ranks = ["대상", "최우수상", "우수상"];
     const isTop3 = top3Ranks.includes(awardName);
-    const finalThumb = `../${winner.thumbnail}`;
+    const finalThumb = winner.thumbnail;
 
     if (isTop3) {
         const top3Key = "올해의 애니메이션";

@@ -264,7 +264,7 @@ if(searchInput) {
 function openAwardPopup() {
     const winner = nominateState.selectedWinner;
     if (!winner) return;
-    document.getElementById("modal-img").src = winner.thumbnail;
+    document.getElementById("modal-img").src = `../${winner.thumbnail}`;
     document.getElementById("modal-title").textContent = winner.title;
     document.getElementById("modal-quarter").textContent = QUARTER_MAP[winner.quarter] || winner.quarter;
     document.getElementById("modal-studio").textContent = winner.studio || "-";

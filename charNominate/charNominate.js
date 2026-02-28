@@ -289,7 +289,7 @@ function openAwardPopup() {
   localStorage.setItem("anime_awards_result", JSON.stringify(results));
 
   // 모달 내용 업데이트
-  document.getElementById("modal-img").src = winner.thumbnail;
+  document.getElementById("modal-img").src = `../${winner.thumbnail}`;
   document.getElementById("modal-title").textContent = winner.name;
   document.getElementById("modal-anime").textContent = winner.animeTitle;
   document.getElementById("modal-cv").textContent = winner.cv;
