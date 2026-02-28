@@ -150,7 +150,7 @@ function createCard(anime) {
     // [수정] 데이터의 thumbnail 경로를 그대로 사용
     card.innerHTML = `
         <div class="card-badge">${QUARTER_MAP[anime.quarter] || anime.quarter}</div>
-        <img src="${anime.thumbnail}" onerror="this.src='https://placehold.co/400x600/2f3542/ffffff?text=No+Image'">
+        <img src="../${anime.thumbnail}" onerror="this.src='https://placehold.co/400x600/2f3542/ffffff?text=No+Image'">
         <div class="card-info">
             <div class="card-title">${anime.title}</div>
             <div class="card-studio">${anime.studio || ''}</div>

@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // 버튼 이벤트 바인딩
     document.getElementById("btn-next").onclick = goStep2;
     document.getElementById("btn-back").onclick = handleBack;
-    document.getElementById("final-confirm-btn").onclick = () => location.href = "../main/main.html";
+    document.getElementById("final-confirm-btn").onclick = () => location.href = "../index.html";
 
     renderCVStep1();
 });
@@ -127,7 +127,7 @@ function createCVCard(cv, step) {
 
     // 3. 카드 내부 레이아웃
     card.innerHTML = `
-        <img src="${cv.cvimg}" loading="lazy" onerror="this.src='https://via.placeholder.com/200x300'">
+        <img src="../${cv.cvimg}" loading="lazy" onerror="this.src='https://via.placeholder.com/200x300'">
         <div class="card-info">
             <div class="card-title">${cv.name}</div>
         </div>
@@ -264,7 +264,7 @@ function goStep2() {
             card.innerHTML = `
                 <div class="card-badge">${cv.characters.length}작품</div>
                 <div class="card-thumb">
-                    <img src="${cv.cvimg}" alt="thumbnail" onerror="this.src='https://via.placeholder.com/200x300'">
+                    <img src="../${cv.cvimg}" alt="thumbnail" onerror="this.src='https://via.placeholder.com/200x300'">
                 </div>
                 <div class="step2-card-info">
                     <div class="card-title">${cv.name}</div>
@@ -316,12 +316,12 @@ function openDetailModal(cv) {
     const worksContainer = document.getElementById("detail-works");
 
     nameEl.textContent = `${cv.name} 참여 작품`;
-    imgEl.src = cv.cvimg;
+    imgEl.src = `../${cv.cvimg}`;
     
     // 캐릭터 이미지와 애니 제목을 함께 보여주는 리스트 형식으로 생성
     worksContainer.innerHTML = cv.characters.map(char => `
         <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px; background: #222; padding: 10px; border-radius: 8px;">
-            <img src="${char.img}" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 1px solid var(--gold);">
+            <img src="../${char.img}" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 1px solid var(--gold);">
             <div>
                 <div style="color: var(--gold); font-weight: bold; font-size: 0.9rem;">${char.animeTitle}</div>
                 <div style="color: #fff; font-size: 1rem;">${char.charName} 역</div>

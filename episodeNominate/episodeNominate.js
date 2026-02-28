@@ -140,7 +140,7 @@ function createAnimeItem(anime) {
             id: anime.id,
             uniqueKey: key,
             title: anime.title,
-            thumbnail: `../${anime.thumbnail}`, // 여기 경로도 위 img 태그와 동일하게 맞춰주세요.
+            thumbnail: anime.thumbnail,
             episode: ep
         };
         updatePreview(); // 이 함수는 기존 파일 하단에 있는 함수를 그대로 사용합니다.
@@ -282,7 +282,7 @@ function renderStep2Cards() {
         card.innerHTML = `
             <div class="card-badge">EP.${item.episode}</div>
             <div class="card-thumb-wrapper">
-                <img src="${thumbPath}" class="card-thumb" onerror="this.src='../image/placeholder.png'">
+                <img src="../${thumbPath}" class="card-thumb" onerror="this.src='../image/placeholder.png'">
             </div>
             <div class="card-info-area">
                 <div class="card-title">${item.title}</div>

@@ -53,7 +53,7 @@ function renderCards(data) {
         return `
             <div class="card ${isSelected ? 'selected' : ''}" id="card-${movie.title.replace(/\s/g, '')}" onclick="selectMovie('${movie.title}')">
                 <div class="media-box">
-                    <img src="${movie.thumbnail}" alt="${movie.title}" onerror="this.src='https://dummyimage.com/200x300/333/d4af37&text=No+Image'">
+                    <img src="../${movie.thumbnail}" alt="${movie.title}" onerror="this.src='https://dummyimage.com/200x300/333/d4af37&text=No+Image'">
                 </div>
                 <div class="card-info">
                     <div class="card-title">${movie.title}</div>
@@ -88,7 +88,7 @@ function updatePreviewBox() {
 
     box.innerHTML = `
         <div class="preview-content animate-fade">
-            <img src="${movie.thumbnail}" class="preview-img">
+            <img src="../${movie.thumbnail}" class="preview-img">
             <h3 class="preview-title">${movie.title}</h3>
             <div class="preview-details">
                 <div class="detail-row"><span>Studio</span><strong>${movie.studio}</strong></div>
@@ -123,7 +123,7 @@ function showWinnerCelebration(winner) {
             <h2 class="modal-header">🏆 ${cinemaState.awardName} 수상 🏆</h2>
             <hr class="modal-divider">
             <div class="winner-poster">
-                <img src="${winner.thumbnail}">
+                <img src="../${winner.thumbnail}">
             </div>
             <h1 class="winner-title">${winner.title}</h1>
             <p class="winner-info">${winner.studio} · 감독: ${winner.director}</p>

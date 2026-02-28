@@ -121,7 +121,7 @@ function renderStep1() {
 
           card.innerHTML = `
             <div class="card-badge">CV. ${char.cv}</div>
-            <img src="${char.thumbnail}" alt="${char.name}" onerror="this.src='https://via.placeholder.com/200x280?text=No+Img'">
+            <img src="../${char.thumbnail}" alt="${char.name}" onerror="this.src='https://via.placeholder.com/200x280?text=No+Img'">
             <div class="card-info">
                 <div class="card-title">${char.name}</div>
                 <div class="card-studio">${char.animeTitle}</div>
@@ -228,7 +228,7 @@ function goStep2() {
         card.innerHTML = `
             <div class="card-badge">CV. ${char.cv}</div>
             <div class="card-thumb">
-                <img src="${char.thumbnail}" alt="${char.name}" onerror="this.src='https://via.placeholder.com/200x280?text=No+Img'">
+                <img src="../${char.thumbnail}" alt="${char.name}" onerror="this.src='https://via.placeholder.com/200x280?text=No+Img'">
             </div>
             <div class="step2-card-info">
                 <div class="card-title">${char.name}</div>

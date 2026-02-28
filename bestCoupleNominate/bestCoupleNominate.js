@@ -179,7 +179,7 @@ function renderCharacterCards(characters) {
         card.className = 'char-card'; // CSS에서 세로 스택 & width:100% 처리됨
         
         const img = document.createElement('img');
-        img.src = char.img ? char.img : '../image/no-image.png';
+        img.src = `../${char.img}`;
         img.alt = char.name;
 
         const name = document.createElement('div');

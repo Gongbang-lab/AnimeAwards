@@ -125,7 +125,7 @@ function createDirectorCard(data, step) {
         card.innerHTML = `
             <div class="card-badge">${worksCount}작품</div>
             <div class="card-thumb">
-                <img src="${data.director_img}" alt="${data.director}" onerror="this.src='../image/placeholder.webp'">
+                <img src="../${data.director_img}" alt="${data.director}" onerror="this.src='../image/placeholder.webp'">
             </div>
             <div class="step2-card-info">
                 <div class="card-title">${data.director}</div>
@@ -168,7 +168,7 @@ function createDirectorCard(data, step) {
     if (isSelected) card.classList.add("selected");
 
     card.innerHTML = `
-        <img src="${data.director_img}" loading="lazy" onerror="this.src='../image/placeholder.webp'">
+        <img src="../${data.director_img}" loading="lazy" onerror="this.src='../image/placeholder.webp'">
         <div class="card-info">
             <div class="card-title">${data.director}</div>
         </div>

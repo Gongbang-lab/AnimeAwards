@@ -193,7 +193,7 @@ function renderStudioAccordionGroups() {
 
 /** 스튜디오 카드 HTML 공통 생성 함수 */
 function createStudioCardHTML(item) {
-    const studioImg = item.studio_img ? `../${item.studio_img}` : 'https://via.placeholder.com/200x120';
+    const studioImg =`../${item.studio_img}`;
     let isSelected = false;
 
     // 현재 스텝에 따라 선택된 상태 표시 다르게 처리
@@ -225,7 +225,7 @@ function showWorksModal(item) {
     const leftArea = document.getElementById("works-studio-info");
     const gridBody = document.getElementById("works-grid-body");
     
-    const studioImg = item.studio_img ? `../${item.studio_img}` : 'https://via.placeholder.com/300x169';
+    const studioImg =  `../${item.studio_img}`;
 
     leftArea.innerHTML = `
         <img src="${studioImg}" alt="${item.studio}" style="width:100%; max-width:250px; border:2px solid var(--gold); border-radius:10px;">
@@ -239,7 +239,7 @@ function showWorksModal(item) {
         gridBody.innerHTML = item.works.map(work => `
             <div class="work-card">
                 <div style="background:#000; width:100%;">
-                    <img src="${work.thumbnail}" alt="${work.title}" loading="lazy" onerror="this.src='https://via.placeholder.com/150x200?text=No+Image'">
+                    <img src="../${work.thumbnail}" alt="${work.title}" loading="lazy" onerror="this.src='https://via.placeholder.com/150x200?text=No+Image'">
                 </div>
                 <div class="work-card-info">
                     <div class="work-card-title">${work.title}</div>
@@ -266,7 +266,7 @@ function openAwardModal(item) {
     const leftArea = document.getElementById("winner-studio-info");
     const rightGrid = document.getElementById("winner-anime-grid");
     
-    const studioImg = item.studio_img ? `../${item.studio_img}` : 'https://via.placeholder.com/200';
+    const studioImg =`../${item.studio_img}`;
     const worksCount = item.works ? item.works.length : 0;
 
     leftArea.innerHTML = `
@@ -307,7 +307,7 @@ function saveWinnerToLocal(item) {
     let results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
     results[studioState.awardName] = {
         name: item.studio,
-        thumbnail: item.studio_img ? `../${item.studio_img}` : '',
+        thumbnail: `../${item.studio_img}`,
         year: '2026'
     };
     localStorage.setItem("anime_awards_result", JSON.stringify(results));

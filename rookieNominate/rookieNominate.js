@@ -28,7 +28,7 @@ function renderRookieGrid() {
         const card = document.createElement("div");
         card.className = "card";
         
-        const displayImg = cv.cvimg || (cv.characters?.[0]?.charimg) || '';
+        const displayImg = `../${cv.cvimg}`;
         const worksCount = cv.characters ? cv.characters.length : 0;
 
         // card-badge를 항상 나타난 상태로 유지하며 "작품수"로 텍스트 변경
@@ -64,7 +64,7 @@ function showWorksModal(cv) {
     const leftArea = document.getElementById("works-cv-info");
 
     // 왼쪽 성우 프로필
-    const cvImg = cv.cvimg || (cv.characters?.[0]?.charimg);
+    const cvImg = `../${cv.cvimg}`;
     leftArea.innerHTML = `
         <img src="${cvImg}" alt="${cv.name}">
         <h2 style="color:var(--gold); margin: 15px 0 5px 0;">${cv.name}</h2>
@@ -79,7 +79,7 @@ function showWorksModal(cv) {
         gridBody.innerHTML = cv.characters.map(char => `
             <div class="work-card">
                 <div style="background:#000; width:100%;">
-                    <img src="${char.charimg}" alt="${char.charName}" 
+                    <img src="../${char.charimg}" alt="${char.charName}" 
                          loading="lazy"
                          onerror="this.src='https://via.placeholder.com/150x200?text=No+Image'">
                 </div>
@@ -131,7 +131,7 @@ function handleAwardDecision() {
 function openAwardModal(cv) {
     const modal = document.getElementById("winner-modal");
     const modalBody = document.getElementById("modal-body");
-    const displayImg = cv.cvimg || (cv.characters?.[0]?.charimg);
+    const displayImg = `../${cv.cvimg}`;
 
     modalBody.innerHTML = `
         <div class="winner-layout">
@@ -161,7 +161,7 @@ function saveWinnerToLocal(cv) {
     let results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
     results[rookiestate.awardName] = {
         name: cv.name,
-        thumbnail: cv.cvimg || cv.characters?.[0]?.charimg,
+        thumbnail: `../${cv.cvimg}`,
         debutYear: cv.debutYear || '2026'
     };
     localStorage.setItem("anime_awards_result", JSON.stringify(results));

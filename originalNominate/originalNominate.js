@@ -66,7 +66,7 @@ function renderCards(dataList) {
             card.innerHTML = `
                 <div class="card-badge">${anime.studio || '제작사'}</div>
                 <div class="card-thumb">
-                    <img src="${anime.thumbnail}" alt="${anime.title}" onerror="this.src='https://via.placeholder.com/200x300'">
+                    <img src="../${anime.thumbnail}" alt="${anime.title}" onerror="this.src='https://via.placeholder.com/200x300'">
                 </div>
                 <div class="step2-card-info">
                     <div class="card-title">${anime.title}</div>
@@ -114,7 +114,7 @@ function renderCards(dataList) {
         if(selectedItems.find(i => i.id === anime.id)) card.classList.add('selected');
 
         card.innerHTML = `
-            <img src="${anime.thumbnail}" alt="${anime.title}">
+            <img src="../${anime.thumbnail}" alt="${anime.title}">
             <div class="card-info">
                 <div class="card-title">${anime.title}</div>
                 <div class="card-writer">각본: ${anime.scriptwriter.join(', ')}</div>
