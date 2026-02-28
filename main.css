@@ -41,47 +41,34 @@ h1 {
   margin: 20px auto;
 }
 
-/* 정보 버튼 스타일 */
-.info-icon-btn {
+.top-icon-btn {
   position: fixed;
   top: 30px;
-  right: 30px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #222; /* 메인 포인트 컬러 */
+  background-color: #222;
   color: white;
   border: none;
-  font-size: 24px;
+  font-size: 20px;
   cursor: pointer;
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
   z-index: 1000;
-  transition: transform 0.2s;
+  transition: transform 0.2s, background-color 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.info-icon-btn:hover {
+.top-icon-btn:hover {
   transform: scale(1.1);
+  background-color: #444;
 }
 
-#save-img-btn{
-  position: fixed;
-  top: 30px;
-  right: 160px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #222; /* 메인 포인트 컬러 */
-  color: white;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-  z-index: 1000;
-  transition: transform 0.2s;
-}
-
-#save-img-btn:hover {
-  transform: scale(1.1);
+/* 전체 초기화 버튼 전용 호버 효과 (위험/강조 의미) */
+.top-icon-btn.alert-btn:hover {
+  background-color: #e11d48;
+  transform: scale(1.1) rotate(-180deg);
 }
 
 /* 모달 배경 */
@@ -260,6 +247,7 @@ h1 {
   align-items: center;
   text-align: center;
   margin: 0 auto; /* 그리드 내부에서 중앙 배치 */
+  position: relative; /* 삭제 아이콘 배치를 위한 상대 위치 */
 }
 
 .award-card:hover {
@@ -321,23 +309,6 @@ h1 {
   font-weight: 700;
 }
 
-/* 리셋 버튼 */
-#reset-btn {
-  position: fixed;
-  top: 30px;
-  right: 100px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: #222;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  font-size: 20px;
-  z-index: 100;
-  transition: 0.3s;
-}
-#reset-btn:hover { background: #e11d48; transform: rotate(-180deg); }
 
 /* 1. 스튜디오 카드 전용 스타일 */
 .award-card.ratio-1-1 .thumb-wrapper {
@@ -448,3 +419,98 @@ h1 {
 .award-card.rank-1 { animation: slideUpRank1 1s cubic-bezier(0.17, 0.67, 0.83, 1) forwards; animation-delay: 0.8s; }
 .award-card.rank-2 { animation: slideUpRank2 0.8s ease-out forwards; animation-delay: 0.2s; }
 .award-card.rank-3 { animation: slideUpRank3 0.8s ease-out forwards; animation-delay: 0.5s; }
+
+/* ===============================
+    새로 추가된 기능 (추가/삭제)
+================================ */
+
+/* 우측 하단 플로팅 버튼 공통 */
+.floating-btn.bottom-right-btn {
+  position: fixed;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #222;
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: all 0.2s;
+}
+
+.floating-btn.bottom-right-btn:hover {
+  transform: scale(1.1);
+}
+
+/* 삭제 모드 활성화 시 버튼 색상 변경 */
+.floating-btn.bottom-right-btn.active {
+  background-color: #e11d48;
+}
+
+/* 카드 추가 모달 폼 요소 */
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.form-group label {
+  margin-bottom: 8px;
+  color: gold;
+  font-weight: bold;
+}
+.form-group input, .form-group select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #111;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.gold-btn {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, gold, #aa8a2e);
+  color: #000;
+  font-weight: 900;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+/* ===============================
+   카드 삭제 모드 시각 효과
+================================ */
+body.delete-mode .award-card {
+  border-color: #e11d48 !important;
+  animation: shake 0.4s infinite;
+}
+
+body.delete-mode .award-card::after {
+  content: '🗑️';
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background: #e11d48;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  z-index: 20;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-1deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(1deg); }
+  100% { transform: rotate(0deg); }
+}

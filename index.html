@@ -3,45 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <title>2026 ANIME AWARDS</title>
-  <link rel="stylesheet" href="./main.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="./main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
 <body>
-<button id="reset-btn" title="초기화">↻</button>
+
+<button id="info-btn" class="top-icon-btn" style="right: 30px;" title="도움말">
+  <i class="fas fa-info-circle"></i>
+</button>
+<button id="save-img-btn" class="top-icon-btn" style="right: 90px;" title="이미지 저장">
+  <i class="fas fa-download"></i>
+</button>
+<button id="reset-result-btn" class="top-icon-btn" style="right: 150px;" title="수상 결과만 초기화">
+  <i class="fas fa-undo"></i>
+</button>
+<button id="reset-all-btn" class="top-icon-btn alert-btn" style="right: 210px;" title="전체 초기화 (추가/삭제 카드 포함)">
+  <i class="fas fa-trash-restore"></i>
+</button>
 
 <header>
   <p class="subtitle">ANNUAL ANIMATION FESTIVAL</p>
   <h1>2026 애니메이션 연말 결산</h1>
   <div class="header-line"></div>
 
-  <button id="info-btn" class="info-icon-btn" title="도움말">
-  <i class="fas fa-info-circle"></i></button>
-
-  <button id="save-img-btn" class="save-btn">
-  <i class="fas fa-download"></i></button>
-
 <div id="info-modal" class="modal-overlay">
   <div class="modal-content">
     <div class="modal-header">
-      <h2>🏆 시상식 이용 가이드</h2>
+      <h2>시상식 이용 가이드</h2>
       <button class="close-modal">&times;</button>
     </div>
     <div class="modal-body">
       <section>
         <h3>부문별 선정</h3>
         <p>각 카테고리 카드를 클릭하면 해당 부문의 수상작을 선정할 수 있습니다.
-           하단의 '초기화' 버튼을 누르면 모든 수상 내역이 삭제됩니다.
-           📋를 누르면 시상식 결과를 저장합니다.
+           상단의 '수상 결과 초기화(↺)'를 누르면 수상 내역만 삭제되며, '전체 초기화'를 누르면 추가/삭제한 카드까지 맨 처음 상태로 복구됩니다.
         </p>
       </section>
       <section>
         <h3>1. 시상식 오프닝 </h3>
         <p><strong>밈</strong></p>
       </section>
-            <section>
+      <section>
         <h3>2. 음악 부문 </h3>
         <p><strong>오프닝, 엔딩, OST</strong></p>
       </section>
@@ -53,29 +59,28 @@
           <p>2026년에 방영된 애니메이션 성우들</p>
           <p> - 올해 최소 2개 이상의 작품 출연</p>
           <p> - 역할 비중 : 주연 및 조연</p>
-
           <p>2단계 : 루키 경력 필터</p>
           <p> - 표준 루키 : 데뷔 5년 이내 및 전체 출역작 30개 이하</p> 
           <p> - 저평가 루키 : 데뷔 5년 초과, 올해 활동 5개 이하, 전체 20개 작품 이하</p>
         </h4>
       </section>
-            <section>
+      <section>
         <h3>4. 캐릭터 부문 </h3>
         <p><strong>남우 주연상, 여우 주연상, 베스트 커플상</strong></p>
       </section>
-            <section>
+      <section>
         <h3>5. 스태프 부문 </h3>
         <p><strong>각본상, 각색상, 감독상</strong></p>
       </section>
-            <section>
+      <section>
         <h3>6. 아트 부문 </h3>
         <p><strong>동화상, 원화(작화)상, 연출상</strong></p>
       </section>
-            <section>
+      <section>
         <h3>7. 애니메이션 시리즈 </h3>
         <p><strong>이카루스, 다크호스, 베스트 에피소드</strong></p>
       </section>
-            <section>
+      <section>
         <h3>8. 올해의 시리즈</h3>
         <p><strong>올해의 시네마, 올해의 스튜디오, 올해의 애니메이션</strong></p>
       </section>
@@ -91,6 +96,49 @@
 <div id="top3-area"></div>
 
 <main id="main-container"></main>
+
+<button id="add-btn" class="floating-btn bottom-right-btn" title="카드 추가" style="bottom: 90px;">
+  <i class="fas fa-plus"></i>
+</button>
+<button id="rm-btn" class="floating-btn bottom-right-btn" title="카드 삭제" style="bottom: 30px;">
+  <i class="fas fa-minus"></i>
+</button>
+
+<div id="add-modal" class="modal-overlay">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>새 애니메이션 상 추가</h2>
+      <button class="close-add-modal close-modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label>상 제목</label>
+        <input type="text" id="new-award-title" placeholder="예: 최고의 액션 씬" autocomplete="off">
+      </div>
+      <div class="form-group">
+        <label>테마 선택</label>
+        <select id="new-award-theme">
+          <option value="opening">opening</option>
+          <option value="ending">ending</option>
+          <option value="ost">ost</option>
+          <option value="rookie_voice">rookie_voice</option>
+          <option value="meme">meme</option>
+          <option value="original">original</option>
+          <option value="director">director</option>
+          <option value="dramatization">dramatization</option>
+          <option value="best_episode">best_episode</option>
+          <option value="cinema">cinema</option>
+          <option value="studio">studio</option>
+          <option value="character_male">character_male</option>
+          <option value="character_female">character_female</option>
+          <option value="voice_male">voice_male</option>
+          <option value="best_couple">best_couple</option>
+        </select>
+      </div>
+      <button id="submit-new-award" class="gold-btn" style="margin-top: 20px;">카드 추가하기</button>
+    </div>
+  </div>
+</div>
 
 <script src="./data/awardData.js"></script>
 <script src="./data/animeData.js"></script>
