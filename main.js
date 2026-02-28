@@ -227,7 +227,7 @@ function createAwardCard(award, results, ratioClass) {
         else if (theme === 'voice_male') path = "cvNominate/cvNominate.html";
         else if (theme === 'voice_female') path = "cvNominate/cvNominate.html";
         else if (theme === 'best_couple') path = "bestCoupleNominate/bestCoupleNominate.html";
-
+        else if (theme === 'default') path = "nominate/nominate.html";  
         location.href = `${path}?${query}`;
     };
 
