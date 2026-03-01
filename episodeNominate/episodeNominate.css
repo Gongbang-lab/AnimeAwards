@@ -309,7 +309,6 @@ body {
 }
 
 .gold-btn, .btn-outline {
-    flex: 1;
     padding: 15px 5px;
     font-size: 0.9rem;
     border-radius: 6px;
