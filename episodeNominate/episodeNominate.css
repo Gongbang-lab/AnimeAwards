@@ -304,7 +304,8 @@ body {
 .status-indicator::-webkit-scrollbar-thumb { background: #444; border-radius: 3px; }
 
 .control-row {
-    display: flex;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
     gap: 10px;
 }
 

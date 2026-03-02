@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Anime Episode Data Builder (Multi-Staff)</title>
+    <style>
+        :root { --primary: #4f46e5; --secondary: #10b981; --bg: #f8fafc; }
+        body { font-family: 'Pretendard', sans-serif; background: var(--bg); padding: 40px; color: #334155; }
+        .container { max-width: 1300px; margin: 0 auto; display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 30px; }
+        .card { background: white; padding: 25px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        h2 { font-size: 1.25rem; margin-top: 0; color: var(--primary); border-left: 5px solid var(--primary); padding-left: 15px; margin-bottom: 25px; }
+        
+        .info-text { font-size: 0.85rem; color: #64748b; margin-bottom: 15px; }
+        .ep-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        .ep-table th { text-align: left; font-size: 0.85rem; color: #64748b; padding: 10px; border-bottom: 2px solid #f1f5f9; }
+        .ep-table td { padding: 8px; }
+        input { width: 100%; padding: 10px; border: 1px solid #e2e8f0; border-radius: 6px; box-sizing: border-box; font-size: 14px; }
+        input:focus { border-color: var(--primary); outline: none; box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.1); }
+
+        .btn-add { background: #f1f5f9; color: var(--primary); width: 100%; border: 2px dashed #cbd5e1; padding: 12px; border-radius: 8px; font-weight: bold; cursor: pointer; margin-bottom: 20px; }
+        .btn-gen { background: var(--primary); color: white; width: 100%; padding: 15px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; }
+        .btn-copy { background: var(--secondary); color: white; width: 100%; padding: 15px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; margin-top: 15px; }
+        .btn-remove { background: #fee2e2; color: #ef4444; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; }
+        
+        pre { background: #1e293b; color: #e2e8f0; padding: 20px; border-radius: 12px; height: 650px; overflow: auto; font-size: 13px; line-height: 1.6; margin: 0; }
+        .anime-id-section { margin-bottom: 25px; background: #f1f5f9; padding: 15px; border-radius: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h2>🛠️ 에피소드 데이터 입력</h2>
+        <p class="info-text">💡 스태프가 여러 명일 경우 <strong>콤마(,)</strong>로 구분해서 입력하세요. (예: 홍길동, 김철수)</p>
+        
+        <div class="anime-id-section">
+            <label style="font-weight: bold; display: block; margin-bottom: 8px;">애니메이션 ID</label>
+            <input type="text" id="animeId" placeholder="예: 61886">
+        </div>
+
+        <table class="ep-table">
+            <thead>
+                <tr>
+                    <th style="width: 12%;">회차</th>
+                    <th style="width: 28%;">제목</th>
+                    <th style="width: 25%;">콘티 (쉼표 구분)</th>
+                    <th style="width: 25%;">연출 (쉼표 구분)</th>
+                    <th style="width: 10%;">관리</th>
+                </tr>
+            </thead>
+            <tbody id="epList">
+                <tr>
+                    <td><input type="text" class="ep-no" placeholder="1화"></td>
+                    <td><input type="text" class="ep-title" placeholder="제목"></td>
+                    <td><input type="text" class="ep-story" placeholder="이름1, 이름2"></td>
+                    <td><input type="text" class="ep-dir" placeholder="이름1, 이름2"></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button class="btn-add" onclick="addRow()">+ 다음 화 추가</button>
+        <button class="btn-gen" onclick="generateJSON()">JSON 생성하기</button>
+    </div>
+
+    <div class="card">
+        <h2>📄 결과 (animeEPData.js용)</h2>
+        <pre id="output">// 결과가 여기에 출력됩니다.</pre>
+        <button class="btn-copy" onclick="copyCode()">코드 복사하기</button>
+    </div>
+</div>
+
+<script>
+    function addRow() {
+        const tbody = document.getElementById('epList');
+        const newRow = document.createElement('tr');
+        newRow.innerHTML = `
+            <td><input type="text" class="ep-no"></td>
+            <td><input type="text" class="ep-title"></td>
+            <td><input type="text" class="ep-story"></td>
+            <td><input type="text" class="ep-dir"></td>
+            <td><button class="btn-remove" onclick="removeRow(this)">삭제</button></td>
+        `;
+        tbody.appendChild(newRow);
+    }
+
+    function removeRow(btn) {
+        btn.parentElement.parentElement.remove();
+    }
+
+    // 쉼표로 구분된 문자열을 배열로 만드는 헬퍼 함수
+    function splitStaff(str) {
+        if (!str) return [];
+        return str.split(',').map(name => name.trim()).filter(name => name !== "");
+    }
+
+    function generateJSON() {
+        const id = document.getElementById('animeId').value.trim();
+        if (!id) { alert("애니메이션 ID를 입력해주세요."); return; }
+
+        const rows = document.querySelectorAll('#epList tr');
+        const episodes = [];
+
+        rows.forEach(row => {
+            const no = row.querySelector('.ep-no').value.trim();
+            const title = row.querySelector('.ep-title').value.trim();
+            const storyRaw = row.querySelector('.ep-story').value.trim();
+            const dirRaw = row.querySelector('.ep-dir').value.trim();
+
+            if (no || title) {
+                episodes.push({
+                    "episode no": no,
+                    "episode title": title,
+                    "storyboard": { "staff": splitStaff(storyRaw) },
+                    "episode director": { "staff": splitStaff(dirRaw) }
+                });
+            }
+        });
+
+        const result = `"${id}": ${JSON.stringify(episodes, null, 4)},`;
+        document.getElementById('output').textContent = result;
+    }
+
+    function copyCode() {
+        const text = document.getElementById('output').textContent;
+        if (text.startsWith('//')) return;
+        navigator.clipboard.writeText(text).then(() => {
+            alert("복사되었습니다!");
+        });
+    }
+</script>
+
+</body>
+</html>
