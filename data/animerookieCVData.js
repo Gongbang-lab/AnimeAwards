@@ -1,5 +1,5 @@
 const RookieCVData = {
-  "카네타 아이": {
+  "카네타 아이": { 
     "name": "카네타 아이",
     "debutYear": 2021,
     "cvimg": "image/rookiecv/카네타 아이.webp",
@@ -199,7 +199,7 @@ const RookieCVData = {
         "charimg": "image/rookiecv/YamakiAnnaShiraseSakuya.jpg"
       },
       {
-        "animeTitle": "마도정병의 슬레이브 2기",
+        "animeTitle": "마도정병의 슬레이브 2",
         "year": 2026,
         "charName": "이츠키 카이코",
         "charimg": "image/rookiecv/YamakiAnnaItsukiKaiko.jpg"

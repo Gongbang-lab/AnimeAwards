@@ -52,7 +52,7 @@
                         if (!directorMap[dirName]) {
                             directorMap[dirName] = {
                                 director: dirName,
-                                director_img: `../image/staff/director/${dirName}.webp`, 
+                                director_img: `image/staff/director/${dirName}.webp`, 
                                 works: []
                             };
                         }
@@ -60,7 +60,7 @@
                         // studio 제외, title/thumbnail만 추출
                         directorMap[dirName].works.push({
                             title: anime.title,
-                            thumbnail: `../${anime.thumbnail}`
+                            thumbnail: anime.thumbnail
                         });
                     });
                 }

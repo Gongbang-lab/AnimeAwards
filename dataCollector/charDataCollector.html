@@ -140,7 +140,7 @@
         gender: c.gender,
         cv: c.cv,
         // JSON 경로에는 사용자 요구사항대로 ../image/charimg/분기/제목/이름.jpg 유지
-        img: `../image/charimg/${quarter}/${animeFolder}/${sanitize(c.engName)}.jpg`
+        img: `image/charimg/${quarter}/${animeFolder}/${sanitize(c.engName)}.jpg`
       }))
     };
     document.getElementById('jsonPreview').value = JSON.stringify(out, null, 2);

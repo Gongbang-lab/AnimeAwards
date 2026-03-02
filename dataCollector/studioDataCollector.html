@@ -33,7 +33,7 @@
                         if (!studioMap[studioName]) {
                             studioMap[studioName] = {
                                 studio: studioName,
-                                studio_img: `../image/studio/${studioName}.webp`, // 기본 경로 설정
+                                studio_img: `image/studio/${studioName}.webp`, // 기본 경로 설정
                                 works: []
                             };
                         }
@@ -41,7 +41,7 @@
                         // 해당 스튜디오의 작품 목록에 추가
                         studioMap[studioName].works.push({
                             title: anime.title,
-                            thumbnail: `../${anime.thumbnail}`
+                            thumbnail: `${anime.thumbnail}`
                         });
                     });
                 }
