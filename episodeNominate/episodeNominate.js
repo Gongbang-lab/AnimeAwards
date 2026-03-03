@@ -288,6 +288,13 @@ function renderStep2Cards() {
             </div>
         `;
 
+            // card-badge 클릭 → 에피소드 정보 팝업 (카드 선택과 분리)
+        const badge = card.querySelector('.card-badge');
+        badge.addEventListener('click', (e) => {
+            e.stopPropagation(); // 카드 선택 이벤트 차단
+            showEpisodePreview(item);
+        });
+
         card.addEventListener('click', () => {
             document.querySelectorAll('.anime-card').forEach(c => c.classList.remove('selected'));
             card.classList.add('selected');
@@ -297,6 +304,19 @@ function renderStep2Cards() {
 
         els.cardsContainer.appendChild(card);
     });
+}
+function showEpisodePreview(item) {
+    document.getElementById('ep-preview-img').src = `../${item.thumbnail}`;
+    document.getElementById('ep-preview-title').textContent = item.title;
+    document.getElementById('ep-preview-no').textContent = item.episodeNo || "-";
+    document.getElementById('ep-preview-ep-title').textContent = item.episodeTitle || "-";
+    document.getElementById('ep-preview-storyboard').textContent = item.storyboard || "-";
+    document.getElementById('ep-preview-director').textContent = item.episodeDirector || "-";
+    document.getElementById('ep-preview-modal').classList.remove('hidden');
+}
+
+function closeEpisodePreview() {
+    document.getElementById('ep-preview-modal').classList.add('hidden');
 }
 // --- [ 모달 표시 및 데이터 저장 (originalNominate 스타일) ] ---
 // confirmFinalWinner 수정 - 모달 info-row 변경

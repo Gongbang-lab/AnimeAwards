@@ -79,21 +79,63 @@
                     </div>
                     <div class="info-row">
                         <span class="info-label">Storyboard:</span>
-                        <span id="modal-storyboard" class="info-value">-</span>
+                            <span id="modal-storyboard" class="info-value">-</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Episode Director:</span>
+                            <span id="modal-episode-director" class="info-value">-</span>
+                        </div>
+                    </div>
+                
+                    <button class="gold-btn full-width" id="go-main-btn" onclick="goToMain()">
+                        확인 및 메인으로
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="ep-preview-modal" class="modal hidden" onclick="closeEpisodePreview()">
+    <div class="modal-content ep-preview-content" onclick="event.stopPropagation()">
+        <h2 class="modal-header">Episode Info</h2>
+        <hr class="modal-divider">
+
+        <div class="winner-layout">
+            <div class="winner-left">
+                <img id="ep-preview-img" src="" alt="썸네일"
+                    onerror="this.src='https://placehold.co/400x600/2f3542/ffffff?text=No+Image'"/>
+            </div>
+            <div class="winner-right">
+                <div id="ep-preview-info">
+                    <h3 id="ep-preview-title" style="font-size:1.6rem; color:#fff; margin:0 0 20px 0; border-bottom:2px solid rgba(212,175,55,0.2); padding-bottom:10px;"></h3>
+
+                    <div class="info-row">
+                        <span class="info-label">Episode No:</span>
+                        <span id="ep-preview-no" class="info-value">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Episode Title:</span>
+                        <span id="ep-preview-ep-title" class="info-value">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Storyboard:</span>
+                        <span id="ep-preview-storyboard" class="info-value">-</span>
                     </div>
                     <div class="info-row">
                         <span class="info-label">Episode Director:</span>
-                        <span id="modal-episode-director" class="info-value">-</span>
+                        <span id="ep-preview-director" class="info-value">-</span>
                     </div>
                 </div>
-                
-                <button class="gold-btn full-width" id="go-main-btn" onclick="goToMain()">
-                    확인 및 메인으로
+
+                <button class="gold-btn full-width" style="margin-top:auto;" onclick="closeEpisodePreview()">
+                    닫기
                 </button>
             </div>
         </div>
     </div>
 </div>
+
+
     <script src="../data/animeEPData.js"></script>
     <script src="../data/animeData.js"></script>
     <script src="./episodeNominate.js"></script>

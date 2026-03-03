@@ -375,6 +375,15 @@ body {
     border: 1px solid var(--gold);
     z-index: 10;
 }
+.card-badge {
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.card-badge:hover {
+    background: var(--gold);
+    color: #000;
+}
 
 /* 썸네일 영역 (비율 고정) */
 .card-thumb-wrapper {
