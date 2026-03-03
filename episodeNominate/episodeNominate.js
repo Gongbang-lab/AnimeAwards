@@ -122,7 +122,15 @@ function createAnimeItem(anime) {
     div.className = 'anime-item';
     div.dataset.title = anime.title.toLowerCase();
 
-    // 💡 주의: 여기서 404가 발생한다면 "../" 를 지우고 "${anime.thumbnail}" 만 남겨보세요.
+    // animeEPData에서 해당 ID의 에피소드 목록 가져오기
+    const epList = (typeof animeEPData !== 'undefined' && animeEPData[String(anime.id)]) 
+        ? animeEPData[String(anime.id)] 
+        : [];
+
+    const options = epList.length > 0
+        ? epList.map((ep, i) => `<option value="${i}">${ep["episode no"]}</option>`).join('')
+        : `<option value="" disabled>에피소드 없음</option>`;
+
     div.innerHTML = `
         <img src="../${anime.thumbnail}" class="anime-thumb-small">
         <div class="anime-info">
@@ -130,62 +138,56 @@ function createAnimeItem(anime) {
         </div>
         <select class="episode-select">
             <option value="" disabled selected>에피소드 선택</option>
-            ${Array.from({length: anime.episodes}, (_, i) => `<option value="${i+1}">${i+1}화</option>`).join('')}
+            ${options}
         </select>
     `;
 
     const select = div.querySelector('.episode-select');
     select.addEventListener('change', (e) => {
-        const ep = e.target.value;
-        if(!ep) return;
-        const key = `${anime.id}_${ep}`;
+        const idx = e.target.value;
+        if (idx === '') return;
+        const epObj = epList[idx];
+        const key = `${anime.id}_${idx}`;
         state.selectedList[key] = {
             id: anime.id,
             uniqueKey: key,
             title: anime.title,
             thumbnail: anime.thumbnail,
-            episode: ep
+            quarter: anime.quarter,
+            studio: anime.studio,
+            episodeNo: epObj["episode no"],
+            episodeTitle: epObj["episode title"],
+            storyboard: (epObj.storyboard?.staff || []).join(', '),
+            episodeDirector: (epObj["episode director"]?.staff || []).join(', ')
         };
-        updatePreview(); // 이 함수는 기존 파일 하단에 있는 함수를 그대로 사용합니다.
-        e.target.selectedIndex = 0; 
+        updatePreview();
+        e.target.selectedIndex = 0;
     });
 
     return div;
 }
 
-/**
- * 프리뷰 리스트 업데이트 (성우 노미네이트 페이지와 100% 동일한 구조)
- */
+// updatePreview 수정 - subtitle을 "episode no - episode title"로
 function updatePreview() {
-    // 성우 페이지는 id가 preview-box인 경우와 preview-list인 경우가 혼용되나, 
-    // 제공된 HTML의 id인 preview-list를 기준으로 성우 페이지 스타일을 주입합니다.
     const pBox = document.getElementById("preview-list");
     const nextBtn = document.getElementById("next-btn");
-    
-    if(!pBox) return;
-    pBox.innerHTML = ""; // 기존 내용 비우기
-    
-    const list = Object.values(state.selectedList);
+    if (!pBox) return;
+    pBox.innerHTML = "";
 
-    // 선택된 항목이 없을 때 (성우 페이지 규격 문구)
+    const list = Object.values(state.selectedList);
     if (list.length === 0) {
         pBox.innerHTML = `<div style="color:#666; text-align:center; padding-top:20px; font-size:0.85rem;">후보를 선택해주세요</div>`;
-        if(nextBtn) nextBtn.disabled = true;
+        if (nextBtn) nextBtn.disabled = true;
         return;
     }
 
-    // 성우 페이지 방식: div.preview-item 생성 후 내부 구조 삽입
     list.forEach(item => {
         const div = document.createElement("div");
         div.className = "preview-item";
-        
-        // 성우 페이지 구조: 상단 제목(애니제목), 하단 소제목(에피소드 정보)
         div.innerHTML = `
             <div class="preview-title">${item.title}</div>
-            <div class="preview-subtitle">${item.episode}화</div>
+            <div class="preview-subtitle">${item.episodeNo} - ${item.episodeTitle}</div>
         `;
-        
-        // 클릭 시 삭제 로직 (성우 페이지와 동일)
         div.onclick = () => {
             delete state.selectedList[item.uniqueKey];
             updatePreview();
@@ -193,8 +195,7 @@ function updatePreview() {
         pBox.appendChild(div);
     });
 
-    // 버튼 활성화 상태 업데이트
-    if(nextBtn) nextBtn.disabled = list.length === 0;
+    if (nextBtn) nextBtn.disabled = list.length === 0;
 }
 // --- [ 검색 기능 연동 ] ---
 function setupSearch() {
@@ -257,39 +258,33 @@ function backToStep1() {
     state.winnerKey = null;
 }
 
+// renderStep2Cards 수정 - card-ep-label을 "episode no - episode title"로
 function renderStep2Cards() {
     els.cardsContainer.innerHTML = '';
     const list = Object.values(state.selectedList);
 
-    // 1. 기존에 생성된 제목이 있다면 중복 방지를 위해 제거
     const existingTitle = els.step2.querySelector('.step2-title');
     if (existingTitle) existingTitle.remove();
 
-    // 2. Step 2 전용 안내 문구 생성
     const titleH2 = document.createElement("h2");
-    titleH2.className = "step2-title"; // 중복 제거 관리를 위한 클래스 추가
+    titleH2.className = "step2-title";
     titleH2.style.cssText = "color:var(--gold); margin-bottom:20px; font-size: 1.5rem; width: 100%; text-align: left;";
     titleH2.textContent = "최종 수상 에피소드를 선택하세요";
-
-    // 3. 제목을 cardsContainer(그리드) 안이 아니라, 그 '앞'에 배치 (그리드뷰 위쪽에 나타남)
     els.step2.insertBefore(titleH2, els.cardsContainer);
 
-    // 4. 카드 생성 및 그리드에 추가
     list.forEach(item => {
-        const card = document.createElement('div'); 
+        const card = document.createElement('div');
         card.className = 'anime-card';
-        
-        // 데이터 구조에 따라 thumbnail 경로 처리
         const thumbPath = `../${item.thumbnail}`;
 
         card.innerHTML = `
-            <div class="card-badge">EP.${item.episode}</div>
+            <div class="card-badge">${item.episodeNo}</div>
             <div class="card-thumb-wrapper">
                 <img src="${thumbPath}" class="card-thumb">
             </div>
             <div class="card-info-area">
                 <div class="card-title">${item.title}</div>
-                <div class="card-ep-label">제 ${item.episode}화</div>
+                <div class="card-ep-label">${item.episodeNo} - ${item.episodeTitle}</div>
             </div>
         `;
 
@@ -297,40 +292,35 @@ function renderStep2Cards() {
             document.querySelectorAll('.anime-card').forEach(c => c.classList.remove('selected'));
             card.classList.add('selected');
             state.winnerKey = item.uniqueKey;
-            // 수상 결정 버튼 활성화
             document.getElementById('final-btn').disabled = false;
         });
 
         els.cardsContainer.appendChild(card);
     });
 }
-
 // --- [ 모달 표시 및 데이터 저장 (originalNominate 스타일) ] ---
+// confirmFinalWinner 수정 - 모달 info-row 변경
 function confirmFinalWinner() {
-    if(!state.winnerKey) { 
-        alert("최종 수상 에피소드를 선택해주세요!"); 
-        return; 
+    if (!state.winnerKey) {
+        alert("최종 수상 에피소드를 선택해주세요!");
+        return;
     }
-    
+
     const winner = state.selectedList[state.winnerKey];
-    
-    // 1. 이미지 및 제목 텍스트 매핑
+
     document.getElementById('modal-img').src = `../${winner.thumbnail}`;
     document.getElementById('modal-title').textContent = winner.title;
-    
-    // 2. 세부 정보 매핑 (분기, 제작사, 에피소드)
-    document.getElementById('modal-quarter').textContent = winner.quarter || "-";
-    document.getElementById('modal-studio').textContent = winner.studio || "-";
-    document.getElementById('modal-episode').textContent = `EPISODE ${winner.episode}`;
 
-    // 3. 모달 띄우기 및 축하 효과
+    // 변경된 필드
+    document.getElementById('modal-episode-no').textContent = winner.episodeNo || "-";
+    document.getElementById('modal-episode-title').textContent = winner.episodeTitle || "-";
+    document.getElementById('modal-storyboard').textContent = winner.storyboard || "-";
+    document.getElementById('modal-episode-director').textContent = winner.episodeDirector || "-";
+
     document.getElementById('winner-modal').classList.remove('hidden');
-    fireConfetti(); 
-    
-    // 4. 로컬 스토리지 저장 (기존 로직 유지)
-    saveData(winner); 
+    fireConfetti();
+    saveData(winner);
 }
-
 function saveData(winner) {
     const KEY = 'anime_awards_result';
     let data = JSON.parse(localStorage.getItem(KEY) || '{}');
