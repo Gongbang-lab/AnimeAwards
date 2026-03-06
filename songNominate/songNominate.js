@@ -24,7 +24,7 @@ function getMergedSongData(themeType) {
     const targetType = themeType === "opening" ? "op" : "ed";
     const result = {};
 
-    // 1. AnimeList가 배열이므로, ID를 키로 하여 요일(day) 정보를 빠르게 찾을 수 있는 Map 생성
+    // AnimeList에서 요일(day) 정보를 ID로 빠르게 찾을 수 있는 Map 생성
     const animeInfoMap = {};
     if (typeof AnimeList !== 'undefined' && Array.isArray(AnimeList)) {
         AnimeList.forEach(anime => {
@@ -35,40 +35,31 @@ function getMergedSongData(themeType) {
         return {};
     }
 
-    // 2. AnimeSongs 구조 분석 (예: "1Q": [...], "2Q": [...] 등)
-    if (typeof AnimeSongs === 'undefined') return {};
+    if (typeof AnimeSongs === 'undefined' || !Array.isArray(AnimeSongs)) return {};
 
-    Object.entries(AnimeSongs).forEach(([quarterKey, animeGroups]) => {
-        const filteredSongs = [];
+    // 변경: 객체 순회 → 배열 순회
+    AnimeSongs.forEach(group => {
+        const baseInfo = animeInfoMap[group.id];
+        // quarter 정보를 직접 group에서 가져옴 (예: "1분기")
+        const quarterKey = group.quarter || "기타";
 
-        animeGroups.forEach(group => {
-            // AnimeList에서 해당 애니메이션의 상세 정보(특히 요일)를 가져옴
-            const baseInfo = animeInfoMap[group.id];
-            
-            group.songs.forEach((song, index) => {
-                if (song.type === targetType) {
-                    filteredSongs.push({
-                        // 고유 ID: 애니ID + 타입 + 인덱스
-                        uniqueId: `${group.id}-${song.type}-${index}`,
-                        id: group.id, 
-                        animeTitle: group.animeTitle,
-                        title: song.title,
-                        artist: song.artist,
-                        youtube: song.youtube,
-                        thumbnail: ytThumb(song.youtube),
-                        // AnimeList에 정보가 있으면 해당 요일 사용, 없으면 "기타"
-                        day: baseInfo ? baseInfo.day : "기타",
-                        // 표시용 분기 정보 (AnimeList의 "1분기" 등을 활용하거나 quarterKey 활용)
-                        displayQuarter: baseInfo ? baseInfo.quarter : quarterKey
-                    });
-                }
-            });
+        group.songs.forEach((song, index) => {
+            if (song.type === targetType) {
+                if (!result[quarterKey]) result[quarterKey] = [];
+
+                result[quarterKey].push({
+                    uniqueId: `${group.id}-${song.type}-${index}`,
+                    id: group.id,
+                    animeTitle: group.animeTitle,
+                    title: song.title,
+                    artist: song.artist,
+                    youtube: song.youtube,
+                    thumbnail: ytThumb(song.youtube),
+                    day: baseInfo ? baseInfo.day : "기타",
+                    displayQuarter: quarterKey
+                });
+            }
         });
-
-        if (filteredSongs.length > 0) {
-            const displayKey = quarterKey;
-            result[displayKey] = filteredSongs;
-        }
     });
 
     return result;
@@ -145,7 +136,7 @@ function renderFilteredList(query) {
             // 분기 버튼
             const quarterBtn = document.createElement("button");
             quarterBtn.className = `quarter-btn ${isSearching ? "active" : ""}`;
-            quarterBtn.innerHTML = `<span>${quarter.replace("Q", "")}분기</span><i class="fas fa-chevron-down"></i>`;
+            quarterBtn.innerHTML = `<span>${quarter}</span><i class="fas fa-chevron-down"></i>`;
 
             const quarterContent = document.createElement("div");
             quarterContent.className = `quarter-content ${isSearching ? "active" : ""}`;
