@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 ANIME AWARDS - OST Nominate</title>
+    <link rel="stylesheet" href="./ostNominate.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <nav class="top-nav">
+        <div class="nav-content-area">
+            <span class="brand">2026 ANIME AWARDS</span>
+            <span id="step-title-display"></span>
+        </div>
+        <div class="nav-sidebar-area">
+            <div class="search-container">
+                <input type="text" id="ost-search" placeholder="애니 제목 검색..." autocomplete="off" />
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-wrapper">
+        <div class="container">
+
+            <main class="content-area" id="left-area">
+                <div id="nominate-list-container"></div>
+            </main>
+
+            <aside class="sidebar">
+                <div class="status-indicator" id="step1-preview">
+                    <div id="preview-list" class="preview-list"></div>
+                </div>
+
+                <div class="button-group" id="step1-buttons">
+                    <button class="btn-outline" onclick="history.back()">메인으로</button>
+                    <button class="btn-gold" id="step1-next-btn" disabled>다음 단계</button>
+                </div>
+
+                <div class="button-group hidden" id="step2-buttons">
+                    <button class="btn-outline" id="step2-back-btn">이전 단계</button>
+                    <button class="btn-gold" id="step2-award-btn" disabled>수상 결정</button>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="winner-popup">
+        <div class="modal-content">
+            <button class="close-btn" id="close-modal-btn">&times;</button>
+            <div class="modal-header-text">🏆 FINAL WINNER 🏆</div>
+            <div class="modal-body">
+                <div class="modal-left popup-thumb">
+                    <img id="winner-thumb" src="" alt="winner thumbnail" />
+                    <a id="popup-youtube-link" class="popup-play-overlay" target="_blank">
+                        <span class="popup-play-icon">▶</span>
+                    </a>
+                </div>
+                <div class="modal-right">
+                    <div class="info-row">
+                        <span class="label">Anime</span>
+                        <span class="value gold-text" id="winner-anime" style="font-size: 1.3rem;"></span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Quarter</span>
+                        <span class="value" id="winner-quarter"></span>
+                    </div>
+                    <button class="btn-gold full-width" id="go-main-btn" style="margin-top: 30px;">확인 및 메인으로</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../data/animeData.js"></script>
+    <script src="../data/animeOSTData.js"></script>
+    <script src="../data/awardData.js"></script>
+    <script src="./ostNominate.js" defer></script>
+
+</body>
+</html>

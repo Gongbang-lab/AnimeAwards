@@ -2,107 +2,145 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>애니메이션 데이터 일괄 수정 도구</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Data Converter</title>
     <style>
-        body { font-family: sans-serif; padding: 20px; line-height: 1.6; background: #f9f9f9; }
-        .container { max-width: 900px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        textarea { width: 100%; height: 300px; margin-bottom: 15px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-family: monospace; font-size: 13px; }
-        .btn-group { display: flex; gap: 10px; }
-        button { flex: 1; padding: 15px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; font-weight: bold; transition: 0.3s; }
-        #convertBtn { background: #4A90E2; color: white; }
-        #copyBtn { background: #27ae60; color: white; display: none; }
-        #status { margin-top: 15px; font-weight: bold; text-align: center; }
-        .error { color: #e74c3c; }
-        .success { color: #2ecc71; }
+        :root {
+            --primary-color: #4a90e2;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Pretendard', -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h2 { text-align: center; color: var(--primary-color); }
+
+        .section { margin-bottom: 20px; }
+
+        label { display: block; margin-bottom: 8px; font-weight: bold; }
+
+        textarea {
+            width: 100%;
+            height: 200px;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            resize: vertical;
+            font-family: 'fira code', monospace;
+            font-size: 14px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-convert { background: var(--primary-color); color: white; }
+        .btn-convert:hover { background: #357abd; }
+
+        .btn-copy { background: #2ecc71; color: white; }
+        .btn-copy:hover { background: #27ae60; }
+
+        #output {
+            background: #282c34;
+            color: #abb2bf;
+            padding: 15px;
+            border-radius: 8px;
+            white-space: pre-wrap;
+            max-height: 300px;
+            overflow-y: auto;
+            font-family: 'fira code', monospace;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h2>데이터 수정 및 "1분기" 필드 추가</h2>
-    <p>데이터를 아래에 붙여넣으세요. (형식이 조금 불완전해도 최대한 수정합니다.)</p>
+    <h2>Anime Data Converter</h2>
     
-    <textarea id="inputArea" placeholder="데이터를 여기에 붙여넣으세요..."></textarea>
-    
-    <div class="btn-group">
-        <button id="convertBtn" onclick="processData()">변환 및 수정하기</button>
-        <button id="copyBtn" onclick="copyResult()">결과 복사하기</button>
+    <div class="section">
+        <label for="inputData">입력 (AnimeList JSON 객체)</label>
+        <textarea id="inputData" placeholder="const AnimeList = [...] 또는 JSON 배열을 입력하세요."></textarea>
     </div>
-    
-    <div id="status"></div>
+
+    <div class="button-group">
+        <button class="btn-convert" onclick="convertData()">변환하기</button>
+        <button class="btn-copy" onclick="copyToClipboard()">결과 복사</button>
+    </div>
+
+    <div class="section">
+        <label>결과 (animeOSTData)</label>
+        <div id="output">// 결과가 여기에 표시됩니다.</div>
+    </div>
 </div>
 
 <script>
-function processData() {
-    const input = document.getElementById('inputArea').value.trim();
-    const status = document.getElementById('status');
-    const copyBtn = document.getElementById('copyBtn');
-    
-    try {
-        // 1. 텍스트에서 실제 배열 데이터 부분만 추출하기 위한 정규식 처리
-        // Q1: [ 로 시작하는 부분을 찾습니다.
-        let targetText = input;
-        
-        // 만약 Q1: [ ] 형태가 있다면 그 내부 배열만 추출
-        if (targetText.includes('Q1:')) {
-            const startIdx = targetText.indexOf('[');
-            const endIdx = targetText.lastIndexOf(']');
-            if (startIdx !== -1 && endIdx !== -1) {
-                targetText = targetText.substring(startIdx, endIdx + 1);
-            }
-        } else if (targetText.includes('=[')) {
-            // const ... = [ ] 형태 처리
-            targetText = targetText.split('=')[1].trim();
-            if (targetText.endsWith(';')) targetText = targetText.slice(0, -1);
-        }
+    function convertData() {
+        const input = document.getElementById('inputData').value.trim();
+        const outputDiv = document.getElementById('output');
 
-        // 2. JSON으로 파싱 (느슨한 파싱을 위해 Function 사용 시도)
-        // 직접적인 JSON.parse는 따옴표가 엄격해야 하므로 eval-like 방식을 안전하게 처리
-        let data;
         try {
-            data = JSON.parse(targetText);
-        } catch(e) {
-            // JSON 형식이 엄격하지 않을 경우 (JS 객체 형태일 때)
-            data = new Function('return ' + targetText)();
-        }
+            // 입력값에서 'const AnimeList =' 같은 변수 선언부를 제거하고 순수 JSON만 추출
+            let jsonString = input.replace(/const\s+\w+\s*=\s*/, '').replace(/;$/, '').trim();
+            
+            // 완벽한 JSON 형식이 아닐 경우를 대비해 eval 대신 JSON.parse 시도
+            // (사용자가 JS 객체 형식으로 넣을 경우를 대비해 느슨한 변환 로직 적용)
+            const sourceData = eval(jsonString); 
 
-        if (!Array.isArray(data)) {
-            // 만약 결과가 배열이 아니라면 (Q1 키를 가진 객체라면)
-            if (data.Q1) data = data.Q1;
-            else throw new Error("배열 데이터를 찾을 수 없습니다.");
-        }
+            if (!Array.isArray(sourceData)) {
+                alert("배열 형태의 데이터가 아닙니다.");
+                return;
+            }
 
-        // 3. 데이터 수정: quarter 필드 추가 및 id, animeTitle 등 유지
-        const modifiedData = data.map(item => {
-            return {
+            const convertedData = sourceData.map(item => ({
                 id: item.id,
-                quarter: "1분기", // 요청하신 필드 추가
-                animeTitle: item.animeTitle,
-                songs: item.songs
-            };
-        });
+                quarter: item.quarter,
+                animeTitle: item.title,
+                youtube: ""
+            }));
 
-        // 4. 결과 출력
-        const finalJson = JSON.stringify(modifiedData, null, 2);
-        document.getElementById('inputArea').value = finalJson;
-        
-        status.innerText = "변환 성공! " + modifiedData.length + "개의 데이터가 수정되었습니다.";
-        status.className = "success";
-        copyBtn.style.display = "block";
-
-    } catch (err) {
-        console.error(err);
-        status.innerText = "오류: 데이터 형식을 확인해주세요. (괄호 닫힘 등)";
-        status.className = "error";
+            const resultText = `const animeOSTData = ${JSON.stringify(convertedData, null, 2)};`;
+            outputDiv.textContent = resultText;
+        } catch (error) {
+            outputDiv.textContent = "에러: 데이터 형식을 확인해주세요.\n" + error.message;
+        }
     }
-}
 
-function copyResult() {
-    const el = document.getElementById('inputArea');
-    el.select();
-    document.execCommand('copy');
-    alert("수정된 데이터가 복사되었습니다.");
-}
+    function copyToClipboard() {
+        const text = document.getElementById('output').textContent;
+        navigator.clipboard.writeText(text).then(() => {
+            alert("클립보드에 복사되었습니다!");
+        }).catch(err => {
+            alert("복사 실패: " + err);
+        });
+    }
 </script>
 
 </body>
