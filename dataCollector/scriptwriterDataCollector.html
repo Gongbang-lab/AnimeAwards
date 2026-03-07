@@ -50,26 +50,24 @@
     let generatedContent = "";
 
     function extractData() {
-        if (typeof AnimeByQuarter === 'undefined') {
+        if (typeof AnimeList === 'undefined') {
             alert("animeData.js 파일을 찾을 수 없거나 데이터 구조가 올바르지 않습니다.");
             return;
         }
 
         const nominatedList = [];
 
-        for (const quarter in AnimeByQuarter) {
-            AnimeByQuarter[quarter].forEach(anime => {
-                if (anime.staff && anime.staff.scriptwriter && anime.staff.scriptwriter.length > 0) {
-                    nominatedList.push({
-                        id: anime.id,
-                        title: anime.title,
-                        thumbnail: `${anime.thumbnail}`,
-                        studio: anime.studio,
-                        scriptwriter: anime.staff.scriptwriter
-                    });
-                }
-            });
-        }
+        AnimeList.forEach(anime => {
+            if (anime.staff && anime.staff.scriptwriter && anime.staff.scriptwriter.length > 0) {
+                nominatedList.push({
+                    id: anime.id,
+                    title: anime.title,
+                    thumbnail: `${anime.thumbnail}`,
+                    studio: anime.studio,
+                    scriptwriter: anime.staff.scriptwriter
+                });
+            }
+        });
 
         generatedContent = "const scriptwriterData = " + JSON.stringify(nominatedList, null, 2) + ";";
         document.getElementById('output').textContent = generatedContent;

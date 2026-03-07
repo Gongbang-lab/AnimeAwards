@@ -24,27 +24,23 @@
             try {
                 const studioMap = {};
 
-                // 1. 모든 분기(Q1, Q2...) 순회
-                for (const quarter in AnimeByQuarter) {
-                    AnimeByQuarter[quarter].forEach(anime => {
-                        const studioName = anime.studio;
+                // 1. AnimeList 배열 직접 순회
+                AnimeList.forEach(anime => {
+                    const studioName = anime.studio;
 
-                        // 스튜디오 키가 없으면 초기화
-                        if (!studioMap[studioName]) {
-                            studioMap[studioName] = {
-                                studio: studioName,
-                                studio_img: `image/studio/${studioName}.webp`, // 기본 경로 설정
-                                works: []
-                            };
-                        }
+                    if (!studioMap[studioName]) {
+                        studioMap[studioName] = {
+                            studio: studioName,
+                            studio_img: `image/studio/${studioName}.webp`,
+                            works: []
+                        };
+                    }
 
-                        // 해당 스튜디오의 작품 목록에 추가
-                        studioMap[studioName].works.push({
-                            title: anime.title,
-                            thumbnail: `${anime.thumbnail}`
-                        });
+                    studioMap[studioName].works.push({
+                        title: anime.title,
+                        thumbnail: `${anime.thumbnail}`
                     });
-                }
+                });
 
                 // 2. 객체를 배열 형태로 변환
                 const finalData = Object.values(studioMap);

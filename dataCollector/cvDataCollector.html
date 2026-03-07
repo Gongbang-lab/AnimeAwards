@@ -15,70 +15,77 @@
 <body>
     <div class="box">
         <h1>성우 데이터 추출기</h1>
-        <p style="color: #aaa;">AnimeByQuarter 데이터를 참조하여 애니메이션 한글 제목을 매칭합니다.</p>
+        <p style="color: #aaa;">AnimeList 데이터를 참조하여 애니메이션 한글 제목을 매칭합니다.</p>
         
         <button id="extract-btn">animeCharacterVoice.js 생성 및 다운로드</button>
         <div id="status"></div>
     </div>
 
     <script src="../data/animeData.js"></script>
-    <script src="../data/animeCharacter.js"></script>
+    <script src="../data/animeCharacterData.js"></script>
 
     <script>
 document.getElementById('extract-btn').onclick = function() {
     const statusDiv = document.getElementById('status');
     
     try {
-        if (typeof AnimeByQuarter === 'undefined' || typeof CharacterData === 'undefined') {
-            throw new Error("데이터 파일을 로드할 수 없습니다. 경로를 확인하세요.");
+        if (typeof AnimeList === 'undefined') {
+            throw new Error("AnimeList를 로드할 수 없습니다. animeData.js 경로를 확인하세요.");
+        }
+        if (typeof CharacterData === 'undefined') {
+            throw new Error("CharacterData를 로드할 수 없습니다. animeCharacter.js 경로를 확인하세요.");
+        }
+        if (!Array.isArray(CharacterData)) {
+            throw new Error(`CharacterData가 배열이 아닙니다. 현재 타입: ${typeof CharacterData} / 구조: ${JSON.stringify(CharacterData).slice(0, 100)}`);
+        }
+        if (!Array.isArray(AnimeList)) {
+            throw new Error(`AnimeList가 배열이 아닙니다. 현재 타입: ${typeof AnimeList}`);
         }
 
-        // 1. animeData(AnimeByQuarter)의 모든 데이터를 ID를 Key로 하는 맵으로 변환 (검색 속도 향상)
+        // 1. AnimeList 배열을 ID를 Key로 하는 맵으로 변환 (검색 속도 향상)
         const animeTitleMap = {};
-        Object.values(AnimeByQuarter).flat().forEach(anime => {
+        AnimeList.forEach(anime => {
             animeTitleMap[String(anime.id)] = anime.title;
         });
 
         const actorMap = {};
         let processedCount = 0;
 
-        // 2. CharacterData 순회 (Q1, Q2... 분기별로 순회)
-        Object.values(CharacterData).forEach(quarterList => {
-            quarterList.forEach(animeEntry => {
-                const animeId = String(animeEntry.id);
-                // animeData.js에서 한글 제목 가져오기, 없으면 animeCharacter.js의 영문 제목 사용
-                const animeTitle = animeTitleMap[animeId] || animeEntry.title;
-                const characters = animeEntry.characters || [];
+        // 2. CharacterData 배열을 직접 순회
+        CharacterData.forEach(animeEntry => {
+            const animeId = String(animeEntry.id);
+            // animeData.js에서 한글 제목 가져오기, 없으면 animeCharacter.js의 영문 제목 사용
+            const animeTitle = animeTitleMap[animeId] || animeEntry.title;
+            const characters = animeEntry.characters || [];
 
-                characters.forEach(char => {
-                    const actorName = (char.cv || char.vc || "").trim();
-                    if (!actorName || actorName === "정보 없음") return;
+            characters.forEach(char => {
+                const actorName = (char.cv || char.vc || "").trim();
+                if (!actorName || actorName === "정보 없음") return;
 
-                    // 성우 객체 생성
-                    if (!actorMap[actorName]) {
-                        actorMap[actorName] = {
-                            name: actorName,
-                            cvimg: `image/cvimg/${actorName}.webp`,
-                            gender: char.gender || "male",
-                            characters: []
-                        };
-                    }
+                // 성우 객체 생성
+                if (!actorMap[actorName]) {
+                    actorMap[actorName] = {
+                        name: actorName,
+                        cvimg: `image/cvimg/${actorName}.webp`,
+                        gender: char.gender || "male",
+                        characters: []
+                    };
+                }
 
-                    // 중복 캐릭터 방지
-                    const isDuplicate = actorMap[actorName].characters.some(
-                        c => c.charName === char.name && c.animeTitle === animeTitle
-                    );
+                // 중복 캐릭터 방지
+                const isDuplicate = actorMap[actorName].characters.some(
+                    c => c.charName === char.name && c.animeTitle === animeTitle
+                );
 
-                    if (!isDuplicate) {
-                        actorMap[actorName].characters.push({
-                            charName: char.name,
-                            animeTitle: animeTitle,
-                            img: char.img
-                        });
-                    }
-                });
-                processedCount++;
+                if (!isDuplicate) {
+                    actorMap[actorName].characters.push({
+                        charName: char.name,
+                        animeTitle: animeTitle,
+                        img: char.img
+                    });
+                }
             });
+            processedCount++;
         });
 
         // 3. 파일 생성 및 다운로드

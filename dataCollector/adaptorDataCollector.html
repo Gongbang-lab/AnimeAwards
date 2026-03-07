@@ -23,24 +23,22 @@
         function extractAdaptorData() {
             const nominatedList = [];
 
-            // AnimeByQuarter 객체의 모든 분기(Q1, Q2 등)를 순회
-            if (typeof AnimeByQuarter !== 'undefined') {
-                for (const quarter in AnimeByQuarter) {
-                    AnimeByQuarter[quarter].forEach(anime => {
-                        // staff 필드가 있고, 그 안에 adaptor 필드가 있는지 확인
-                        if (anime.staff && anime.staff.adaptor && anime.staff.adaptor.length > 0) {
-                            nominatedList.push({
-                                id: anime.id,
-                                title: anime.title,
-                                quarter: quarter,      // 분기 정보 추가 (Q1, Q2 등)
-                                day: anime.day || "",  // 요일 정보 추가 (Mondays 등)
-                                thumbnail: anime.thumbnail, 
-                                studio: anime.studio,
-                                adaptor: anime.staff.adaptor
-                            });
-                        }
-                    });
-                }
+            // AnimeList 배열을 순회
+            if (typeof AnimeList !== 'undefined') {
+                AnimeList.forEach(anime => {
+                    // staff 필드가 있고, 그 안에 adaptor 필드가 있는지 확인
+                    if (anime.staff && anime.staff.adaptor && anime.staff.adaptor.length > 0) {
+                        nominatedList.push({
+                            id: anime.id,
+                            title: anime.title,
+                            quarter: anime.quarter,    // 분기 정보 (1분기, 2분기 등)
+                            day: anime.day || "",      // 요일 정보 (Mondays 등)
+                            thumbnail: anime.thumbnail,
+                            studio: anime.studio,
+                            adaptor: anime.staff.adaptor
+                        });
+                    }
+                });
             }
 
             // 변수 선언문을 포함한 텍스트 생성
