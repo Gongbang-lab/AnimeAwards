@@ -63,7 +63,7 @@ function renderCards(dataList) {
             if (selectedItems.find(i => i.id === anime.id)) card.classList.add('selected');
 
             card.innerHTML = `
-                <div class="card-badge">${anime.studio || '제작사'}</div>
+                <div class="card-badge">${anime.quarter}</div>
                 <div class="card-thumb">
                     <img src="../${anime.thumbnail}" alt="${anime.title}" onerror="this.src='https://via.placeholder.com/200x300'">
                 </div>
@@ -113,6 +113,7 @@ function renderCards(dataList) {
         if(selectedItems.find(i => i.id === anime.id)) card.classList.add('selected');
 
         card.innerHTML = `
+            <div class="card-badge">${anime.quarter}</div>
             <img src="../${anime.thumbnail}" alt="${anime.title}">
             <div class="card-info">
                 <div class="card-title">${anime.title}</div>
@@ -229,6 +230,8 @@ function confirmFinalWinner() {
 
     const winner = selectedItems[0];
     const writerName = winner.scriptwriter ? winner.scriptwriter.join(', ') : "정보 없음";
+    const quarterDisplay = document.getElementById('modal-quarter');
+    quarterDisplay.textContent = winner.quarter;
     const studioDisplay = document.getElementById('modal-studio');
     studioDisplay.textContent = winner.studio;
     
@@ -239,14 +242,6 @@ function confirmFinalWinner() {
 
     const writerDisplay = document.getElementById('modal-writer');
     writerDisplay.textContent = writerName;
-
-    if (writerName.length > 15) {
-        writerDisplay.style.fontSize = '1.8rem'; // 이름이 매우 길 때
-    } else if (writerName.length > 8) {
-        writerDisplay.style.fontSize = '2.2rem'; // 이름이 조금 길 때
-    } else {
-        writerDisplay.style.fontSize = '3rem';   // 기본 크기
-    }
 
     document.getElementById('winner-modal').classList.remove('hidden');
     fireConfetti();

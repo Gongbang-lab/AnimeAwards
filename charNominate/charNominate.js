@@ -22,8 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   charState.theme = params.get("theme")
   charState.awardName = params.get("awardName")
-  
-  document.getElementById("modal-award-name").textContent = charState.awardName;
 
   // 데이터 준비
   const genderKey = charState.theme.includes("female") ? "female" : "male";

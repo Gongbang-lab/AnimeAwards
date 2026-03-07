@@ -263,43 +263,35 @@ function handleAwardDecision() {
 
 function openAwardModal(item) {
     const modal = document.getElementById("winner-modal");
-    const leftArea = document.getElementById("winner-studio-info");
-    const rightGrid = document.getElementById("winner-anime-grid");
-    
-    const studioImg =`../${item.studio_img}`;
-    const worksCount = item.works ? item.works.length : 0;
+    const modalBody = document.getElementById("modal-body");
+    const studioImg = `../${item.studio_img}`;
 
-    leftArea.innerHTML = `
-        <img src="${studioImg}" alt="${item.studio}">
-        <h2>${item.studio}</h2>
-        <div style="color: var(--gold); font-size: 1.1rem; margin-top: 10px;">
-            총 ${worksCount}개 작품
+    const workRows = item.works && item.works.length > 0
+        ? item.works.map(work => `
+            <div class="work-row">
+                <span class="work-title">${work.title}</span>
+            </div>`).join('')
+        : `<div class="work-row"><span class="work-title" style="color:#666;">제작 정보가 없습니다.</span></div>`;
+
+    modalBody.innerHTML = `
+        <div class="winner-layout">
+            <div class="winner-left">
+                <img src="${studioImg}" alt="${item.studio}">
+            </div>
+            <div class="winner-right">
+                <div class="winner-name-row">
+                    <span class="winner-name-label">수상 스튜디오</span>
+                    <span class="winner-name-value">${item.studio}</span>
+                </div>
+                <div class="work-list">${workRows}</div>
+                <div class="modal-footer">
+                    <button class="gold-btn" onclick="location.href='../index.html'">확인 및 메인으로</button>
+                </div>
+            </div>
         </div>
+        
     `;
 
-    if (!item.works || item.works.length === 0) {
-        rightGrid.innerHTML = "<p style='color:#666; text-align:center; padding: 20px;'>제작 정보가 없습니다.</p>";
-    } else {
-        let tableHTML = `
-            <table class="works-table">
-                <thead>
-                    <tr>
-                        <th class="col-num">No.</th>
-                        <th>작품 제목</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    ${item.works.map((work, index) => `
-                        <tr>
-                            <td class="col-num">${index + 1}</td>
-                            <td>${work.title}</td>
-                        </tr>
-                    `).join('')}
-                </tbody>
-            </table>
-        `;
-        rightGrid.innerHTML = tableHTML;
-    }
     modal.classList.remove("hidden");
 }
 

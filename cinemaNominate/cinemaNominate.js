@@ -120,13 +120,12 @@ function showWinnerCelebration(winner) {
 
     popup.innerHTML = `
         <div class="modal-content celebration-modal">
-            <h2 class="modal-header">🏆 ${cinemaState.awardName} 수상 🏆</h2>
+            <h2 class="modal-header">FINAL WINNER</h2>
             <hr class="modal-divider">
             <div class="winner-poster">
                 <img src="../${winner.thumbnail}">
             </div>
             <h1 class="winner-title">${winner.title}</h1>
-            <p class="winner-info">${winner.studio} · 감독: ${winner.director}</p>
             <button class="gold-btn full-width" onclick="location.href='../index.html'">결과 저장 및 메인으로</button>
         </div>
     `;

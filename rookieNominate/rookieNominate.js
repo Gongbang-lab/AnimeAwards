@@ -133,27 +133,33 @@ function openAwardModal(cv) {
     const modalBody = document.getElementById("modal-body");
     const displayImg = `../${cv.cvimg}`;
 
+    const workRows = cv.characters && cv.characters.length > 0
+        ? cv.characters.map(char => `
+            <div class="work-row">
+                <span class="work-title">${char.animeTitle}</span>
+                <span class="work-role">${char.charName} 역</span>
+            </div>`).join('')
+        : `<div class="work-row"><span class="work-title" style="color:#666;">참여 작품 정보가 없습니다.</span></div>`;
+
     modalBody.innerHTML = `
         <div class="winner-layout">
             <div class="winner-left">
                 <img src="${displayImg}" alt="${cv.name}">
             </div>
             <div class="winner-right">
-                <h2 id="modal-title">${cv.name}</h2>
-                <div class="info-row">
-                    <span class="info-label">수상 부문</span>
-                    <span class="info-value">${rookiestate.awardName}</span>
+                <div class="winner-name-row" style="border-bottom: 2px solid var(--gold); margin-bottom: 15px; padding-bottom: 15px;">
+                    <span class="winner-name-label">수상자</span>
+                    <span class="winner-name-value">${cv.name}</span>
                 </div>
-                <div class="info-row">
-                    <span class="info-label">데뷔 연도</span>
-                    <span class="info-value">${cv.debutYear || '2026'}</span>
-                </div>
-                <button class="gold-btn" style="margin-top:auto; width:100%;" onclick="location.href='../index.html'">
-                    확인 및 메인으로
-                </button>
+                <div class="work-list">${workRows}</div>
+            <div class="modal-footer">
+                <button class="gold-btn" onclick="location.href='../index.html'">확인 및 메인으로</button>
+            </div>
             </div>
         </div>
+        
     `;
+
     modal.classList.remove("hidden");
 }
 

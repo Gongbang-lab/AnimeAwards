@@ -147,32 +147,66 @@ body {
     position: fixed; top: 0; left: 0; width: 100%; height: 100%;
     background: rgba(0,0,0,0.9); display: flex; align-items: center; justify-content: center; z-index: 2000;
 }
-
 .modal-content {
     background: #1a1a1a; width: 90%; max-width: 800px;
     border: 2px solid var(--gold); border-radius: 15px; padding: 40px;
     position: relative;
 }
-
 .winner-layout { display: flex; gap: 40px; }
 .winner-left img { width: 280px; height: auto; border-radius: 8px; border: 2px solid var(--gold); }
 .winner-right { flex: 1; display: flex; flex-direction: column; text-align: left; }
 
-#modal-title { font-size: 2.5rem; color: #fff; margin: 0 0 20px 0; border-bottom: 2px solid rgba(212, 175, 55, 0.2); padding-bottom: 10px; }
-.info-row { display: flex; justify-content: space-between; border-bottom: 1px solid #333; padding: 15px 0; font-size: 1.1rem; }
-.info-label { color: var(--gold); font-weight: bold; }
-
-.work-item {
-    padding: 12px 10px;
+.winner-name-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 18px;
+    margin-bottom: 6px;
     border-bottom: 1px solid #333;
+}
+.winner-name-label { font-size: 1.25rem; color: var(--gold); font-weight: 400; }
+.work-list {
+    position: relative;
+    max-height: 340px;        /* ← 높이 제한 */
+    overflow-y: auto;         /* ← 넘치면 스크롤 */
+    overflow-x: hidden;
+    padding-right: 12px;      /* ← 스크롤바와 내용 간격 */
+}
+.info-label { color: var(--gold); }
+.info-row { border-bottom: 1px solid var(--gold); }
+.winner-works-scroll { border-top: 1px solid var(--gold); }
+
+/* 스크롤바 스타일 */
+.work-list::-webkit-scrollbar { width: 4px; }
+.work-list::-webkit-scrollbar-track { background: transparent; }
+.work-list::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 2px; }
+.work-list::before {
+    content: '';
+    position: absolute;
+    right: 0; top: 0; bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, transparent, var(--gold) 15%, var(--gold) 85%, transparent);
+}
+.modal-header { text-align: center; color: var(--gold); font-size: 1.8rem; margin: 0; }
+.modal-divider { border: 0; height: 1px; background: #444; margin: 15px 0 30px 0; }
+.work-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 15px;
+    padding: 13px 20px 13px 0;
+    border-bottom: 1px solid #2e2e2e;
+    gap: 16px;
 }
+.work-row:last-child { border-bottom: none; }
+.winner-name-value { font-size: 1.5rem; color: #fff !important; font-weight: 700; }
+.work-row { border-bottom: 1px solid #2e2e2e !important; }
 
-.work-name { color: #fff; font-size: 0.95rem; font-weight: 500; }
-.work-char { color: var(--gold); font-size: 0.85rem; white-space: nowrap; }
+.winner-right .work-title { font-size: 0.95rem; color: var(--gold) !important; flex: 1; line-height: 1.45; }
+.winner-right .work-role  { font-size: 0.95rem; color: #fff !important; white-space: nowrap; }
+.winner-right .work-row   { border-bottom: 1px solid #2e2e2e !important; }
+
+.modal-footer { margin-top: 28px; }
+.modal-footer .gold-btn { width: 100%; }
 
 .hidden { display: none !important; }
 /* 작품 모달 전용 레이아웃 */

@@ -124,7 +124,7 @@ function showWinnerCelebration(winner) {
 
     popup.innerHTML = `
         <div class="modal-content" style="text-align: center;">
-            <h2 class="modal-header">🏆 ${memeState.awardName} 수상 🏆</h2>
+            <h2 class="modal-header">FINAL WINNER</h2>
             <hr class="modal-divider">
             
             <div class="media-box" style="margin: 0 auto 20px auto; max-width: 500px; border-radius: 10px; overflow: hidden; background: transparent;">

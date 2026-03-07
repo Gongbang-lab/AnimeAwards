@@ -131,7 +131,7 @@ body {
 /* Step 2 전용 그리드 */
 #step2-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     gap: 20px;
 }
 .step2-cv-card {

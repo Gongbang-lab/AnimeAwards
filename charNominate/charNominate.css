@@ -40,34 +40,37 @@ body {
     border-radius: 10px; color: white; outline: none; transition: 0.3s;
 }
 #search-input:focus { border-color: var(--gold); }
+#search-input:disabled { opacity: 0.5; cursor: not-allowed; }
+
 .autocomplete-items {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: #111; /* 배경을 조금 더 진하게 */
-    max-height: 400px;
-    overflow-y: auto;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-    border-radius: 0 0 8px 8px;
+    position: absolute; top: 100%; left: 0; right: 0;
+    background: #111; max-height: 400px; overflow-y: auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5); border-radius: 0 0 8px 8px;
 }
 .autocomplete-items div { padding: 10px; cursor: pointer; border-bottom: 1px solid #333; }
 .autocomplete-items div:hover { background: var(--gray); color: var(--gold); }
-.autocomplete-items div strong {
-    color: var(--gold);
-}
+.autocomplete-items div strong { color: var(--gold); }
 .autocomplete-items::-webkit-scrollbar { width: 5px; }
 .autocomplete-items::-webkit-scrollbar-thumb { background: var(--gold); }
+
+.search-subtext {
+    font-size: 0.75rem; color: #888; display: block; margin-top: 2px;
+}
 
 /* 2. 메인 레이아웃 */
 .content-wrapper { padding-top: var(--nav-height); }
 .container { display: flex; min-height: calc(100vh - var(--nav-height)); }
 
 .content-area { flex: 7.5; padding: 40px; border-right: 1px solid rgba(212, 175, 55, 0.3); }
-.sidebar { flex: 2.5; background-color: #111; position: sticky; top: var(--nav-height); height: calc(100vh - var(--nav-height)); padding: 25px; box-sizing: border-box; }
+.sidebar {
+    flex: 2.5; background-color: #111; position: sticky;
+    top: var(--nav-height); height: calc(100vh - var(--nav-height));
+    padding: 25px; box-sizing: border-box;
+}
 
+/* 사이드바 프리뷰 박스 */
 .status-indicator.preview-box {
-    background: #000 !important; /* 배경 완전 검정 */
+    background: #000 !important;
     border: 1px solid #444 !important;
     border-radius: 8px;
     height: 320px;
@@ -75,11 +78,14 @@ body {
     padding: 10px;
     margin-bottom: 20px;
 }
+.status-indicator::-webkit-scrollbar { width: 6px; }
+.status-indicator::-webkit-scrollbar-thumb { background: #444; border-radius: 3px; }
+.preview-box.hidden { display: none !important; }
 
 .preview-item {
     padding: 12px !important;
     margin: 0 0 8px 0 !important;
-    background: var(--gray) !important; /* #2c2c2c */
+    background: var(--gray) !important;
     border-radius: 6px !important;
     cursor: pointer;
     font-size: 0.85rem;
@@ -87,32 +93,16 @@ body {
     text-align: center;
     transition: all 0.2s ease;
     display: block !important;
-    width: auto;
 }
-
-/* 삭제 유도 호버 효과 */
 .preview-item:hover {
     border-color: #ff6b6b !important;
     color: #ff6b6b !important;
     background: rgba(255, 107, 107, 0.1) !important;
     transform: translateY(-2px);
 }
+.preview-item br + small { display: block; margin-top: 3px; pointer-events: none; }
 
-/* 프리뷰 내부 소제목(작품명) 스타일 */
-.preview-item br + small {
-    display: block;
-    margin-top: 3px;
-    pointer-events: none; /* 클릭 방해 금지 */
-}
-
-/* 스크롤바 디자인 통일 */
-.status-indicator::-webkit-scrollbar {
-    width: 6px;
-}
-.status-indicator::-webkit-scrollbar-thumb {
-    background: #444;
-    border-radius: 3px;
-}
+/* 버튼 */
 .action-buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .gold-btn { background: var(--gold); color: black; font-weight: 800; padding: 15px; border: none; cursor: pointer; border-radius: 6px; }
 .gold-btn:disabled { opacity: 0.4; cursor: not-allowed; }
@@ -121,49 +111,115 @@ body {
 .btn-outline:hover { background: rgba(212, 175, 55, 0.1); }
 .hidden { display: none !important; }
 
-/* 3. 리스트 및 카드 */
+/* 3. 아코디언 리스트 (분기/일차/애니) */
 .quarter-section { margin-bottom: 15px; border: 1px solid #333; border-radius: 8px; overflow: hidden; }
-.quarter-btn, .day-btn {
-    width: 100%; padding: 16px 20px; background: #1f1f1f; border: none; font-size: 1rem; 
-    color: #eee; font-weight: bold; display: flex; justify-content: space-between; cursor: pointer;
+
+.quarter-btn, .day-btn, .anime-btn {
+    width: 100%; border: none; cursor: pointer;
+    display: flex; justify-content: space-between; transition: 0.2s;
 }
-.quarter-btn:hover, .day-btn:hover { background: #2a2a2a; color: var(--gold); }
+.quarter-btn {
+    padding: 16px 20px; background: #1f1f1f;
+    font-size: 1rem; color: #eee; font-weight: bold;
+}
+.quarter-btn:hover { background: #2a2a2a; color: var(--gold); }
 .quarter-btn.active { border-bottom: 1px solid #333; color: var(--gold); }
-.day-btn { background: #151515; color: #aaa; padding-left: 30px; border-top: 1px solid #222; }
+
+.day-btn {
+    background: #151515; color: #aaa;
+    font-size: 1rem; font-weight: bold;
+    padding: 16px 20px; padding-left: 30px; border-top: 1px solid #222;
+}
+.day-btn:hover { background: #2a2a2a; color: var(--gold); }
 .day-btn.active { color: var(--gold); background: #1a1a1a; }
 
-.day-content, #step2-grid {
-    display: grid;
+.anime-btn {
+    background: #0d0d0d; color: #999;
+    font-size: 0.9rem; padding: 12px 20px; padding-left: 45px;
+    border-top: 1px solid #1a1a1a;
+}
+.anime-btn:hover { color: var(--gold); background: #151515; }
+.anime-btn.active { color: var(--gold); background: #111; }
+
+/* 4. 카드 그리드 공통 */
+.day-content, .anime-content {
+    display: none;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 15px; padding: 20px; box-sizing: border-box; background: #0a0a0a;
-    /* 추가: 기본적으로 숨김 처리 */
-    display: none; 
 }
-/* JS에서 active 클래스를 붙여서 보여주기 위해 오버라이드 */
-.day-content.active, #step2-grid {
+.day-content.active { display: grid; }
+
+.anime-content {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    background: #050505; padding-left: 50px;
+}
+.anime-content.active { display: grid; }
+
+/* Step2 그리드 */
+#step2-grid {
     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 20px; padding: 10px 0 30px 0; background: transparent;
 }
 
-.card {
-    background: var(--gray); border: 2px solid transparent; border-radius: 8px;
-    overflow: hidden; cursor: pointer; transition: 0.3s; position: relative;
-    display: flex; flex-direction: column;
+/* 5. 카드 공통 (Step1 .card + Step2 .step2-char-card 통합) */
+.card, .step2-char-card {
+    background: var(--gray);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
-.card:hover { transform: translateY(-5px); border-color: rgba(212, 175, 55, 0.5); }
-.card.selected { border-color: var(--gold); box-shadow: 0 0 15px rgba(212, 175, 55, 0.3); }
+.card:hover, .step2-char-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(212, 175, 55, 0.5);
+}
+.card.selected, .step2-char-card.selected {
+    border-color: var(--gold);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+}
 
+/* 카드 배지 */
 .card-badge {
-  position: absolute; top: 6px; right: 6px;
-  background: rgba(0,0,0,0.7); color: var(--gold);
-  font-size: 0.7rem; padding: 2px 6px; border-radius: 4px;
+    position: absolute; top: 6px; right: 6px;
+    background: rgba(0,0,0,0.7); color: var(--gold);
+    font-size: 0.7rem; padding: 2px 6px; border-radius: 4px;
+}
+/* Step2 배지만 테두리 추가 */
+.step2-char-card .card-badge {
+    top: 8px; right: 8px;
+    font-size: 0.75rem; padding: 4px 8px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid var(--gold);
+    z-index: 10;
 }
 
-.card img { width: 100%; aspect-ratio: 3/4; object-fit: cover; display: block; }
-.card-info { padding: 12px; }
-.card-title { font-weight: bold; color: var(--gold); margin-bottom: 5px; font-size: 0.95rem; }
-.card-studio { font-size: 0.8rem; color: #bbb; }
+/* 카드 이미지 */
+.card img, .step2-char-card .card-thumb img {
+    width: 100%; aspect-ratio: 3/4; object-fit: cover; display: block;
+}
+.step2-char-card .card-thumb { width: 100%; aspect-ratio: 3/4; position: relative; }
+.step2-char-card .card-thumb img { height: 100%; }
 
-/* 4. 모달 */
+/* 카드 정보 영역 */
+.card-info, .step2-card-info { padding: 12px; }
+.step2-card-info { padding: 15px; text-align: left; }
+
+.card-title { font-weight: bold; color: var(--gold); margin-bottom: 5px; font-size: 0.95rem; }
+.step2-char-card .card-title { font-size: 1.05rem; }
+
+.card-studio { font-size: 0.8rem; color: #bbb; }
+.step2-char-card .card-studio {
+    font-size: 0.85rem;
+    display: -webkit-box; -webkit-line-clamp: 1; line-clamp: 1;
+    -webkit-box-orient: vertical; overflow: hidden;
+}
+
+/* 6. 모달 */
 .modal {
     position: fixed; top: 0; left: 0; width: 100%; height: 100%;
     background: rgba(0,0,0,0.9); display: flex; align-items: center; justify-content: center; z-index: 2000;
@@ -177,137 +233,14 @@ body {
 .winner-layout { display: flex; gap: 40px; }
 .winner-left img { width: 280px; height: auto; border-radius: 5px; border: 1px solid var(--gold); }
 .winner-right { flex: 1; display: flex; flex-direction: column; text-align: left; }
-#modal-title { font-size: 2rem; color: #fff; margin: 0 0 30px 0; border-bottom: 2px solid rgba(212, 175, 55, 0.2); padding-bottom: 10px; }
+#modal-title { font-size: 2rem; color: #fff; margin: 0 0 30px 0; border-bottom: 2px solid rgba(212, 175, 55, 0.2); padding-bottom: 10px; text-align: center;}
 .info-row { display: flex; justify-content: space-between; border-bottom: 1px solid #333; padding: 12px 0; font-size: 1.1rem; }
 .info-label { color: var(--gold); font-weight: bold; }
 .info-value { color: #eee; text-align: right; }
 
+/* 7. 기타 */
 #confettiCanvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    pointer-events: none;
-    z-index: 9999;
-}
-
-.preview-box.hidden {
-    display: none !important;
-}
-
-.anime-btn {
-    width: 100%; padding: 12px 20px; background: #0d0d0d; border: none; font-size: 0.9rem; 
-    color: #999; display: flex; justify-content: space-between; cursor: pointer;
-    padding-left: 45px; border-top: 1px solid #1a1a1a; transition: 0.2s;
-}
-.anime-btn:hover { color: var(--gold); background: #151515; }
-.anime-btn.active { color: var(--gold); background: #111; }
-
-/* 애니메이션별 카드 그리드 컨테이너 */
-.anime-content {
-    display: none; /* 기본 숨김 */
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    gap: 15px; padding: 20px; box-sizing: border-box; background: #050505;
-    padding-left: 50px;
-}
-.anime-content.active {
-    display: grid;
-}
-
-.search-subtext {
-    font-size: 0.75rem;
-    color: #888;
-    display: block;
-    margin-top: 2px;
-}
-
-/* 검색창 활성화 상태 */
-#search-input:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-}
-
-/* =========================================
-   Step 2 전용 디자인 (최종 수상작 선택 레이아웃)
-========================================= */
-#step2-grid {
-    display: grid !important; /* 기존 숨김 속성 방지 */
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)) !important; 
-    gap: 20px !important; 
-    padding: 10px 0 30px 0 !important;
-    background: transparent !important; /* 기존 어두운 배경 제거 */
-}
-
-.step2-char-card {
-    background: var(--gray); 
-    border: 2px solid transparent; 
-    border-radius: 8px;
-    overflow: hidden; 
-    cursor: pointer; 
-    transition: 0.3s; 
-    position: relative;
-    display: flex; 
-    flex-direction: column;
-}
-
-.step2-char-card:hover { 
-    transform: translateY(-5px); 
-    border-color: rgba(212, 175, 55, 0.5); 
-}
-
-.step2-char-card.selected { 
-    border-color: var(--gold); 
-    box-shadow: 0 0 15px rgba(212, 175, 55, 0.3); 
-}
-
-/* 우측 상단 배지 */
-.step2-char-card .card-badge {
-    position: absolute; 
-    top: 8px; 
-    right: 8px;
-    background: rgba(0, 0, 0, 0.8); 
-    color: var(--gold);
-    font-size: 0.75rem; 
-    padding: 4px 8px; 
-    border-radius: 4px;
-    border: 1px solid var(--gold); 
-    z-index: 10;
-}
-
-/* 이미지 컨테이너 (3:4 비율) */
-.step2-char-card .card-thumb { 
-    width: 100%; 
-    aspect-ratio: 3/4; 
-    position: relative; 
-}
-
-.step2-char-card .card-thumb img { 
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-    display: block;
-}
-
-/* 하단 정보 영역 */
-.step2-char-card .step2-card-info { 
-    padding: 15px; 
-    text-align: left; 
-}
-
-.step2-char-card .card-title { 
-    font-weight: bold; 
-    color: var(--gold); 
-    margin-bottom: 5px; 
-    font-size: 1.05rem; 
-}
-
-.step2-char-card .card-studio { 
-    font-size: 0.85rem; 
-    color: #bbb; 
-    display: -webkit-box; 
-    -webkit-line-clamp: 1; 
-    line-clamp: 1; 
-    -webkit-box-orient: vertical; 
-    overflow: hidden; 
+    position: fixed; top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    pointer-events: none; z-index: 9999;
 }
