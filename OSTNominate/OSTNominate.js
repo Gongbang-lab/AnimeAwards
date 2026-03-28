@@ -10,15 +10,6 @@ const dayMap = {
     "fridays": "금요일", "saturdays": "토요일", "sundays": "일요일", "anomaly": "변칙 편성", "web": "웹"
 };
 
-// 유틸: 유튜브 썸네일 추출
-function ytThumb(url) {
-    if (!url) return "../images/default.png";
-    let videoId = "";
-    if (url.includes("youtu.be/")) videoId = url.split("youtu.be/")[1].split("?")[0];
-    else if (url.includes("v=")) videoId = url.split("v=")[1].split("&")[0];
-    return videoId ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` : "../images/default.png";
-}
-
 // AnimeList에서 day 정보를 가져오는 Map 생성
 function buildAnimeInfoMap() {
     const map = {};
@@ -28,7 +19,7 @@ function buildAnimeInfoMap() {
     return map;
 }
 
-// animeOSTData를 quarter/day 기준으로 그룹핑
+// 변경된 animeOSTData 구조 반영
 function getMergedOSTData() {
     if (typeof animeOSTData === 'undefined' || !Array.isArray(animeOSTData)) return {};
 
@@ -39,15 +30,18 @@ function getMergedOSTData() {
         const baseInfo = animeInfoMap[String(ost.id)];
         const quarterKey = ost.quarter || "기타";
         const day = baseInfo ? baseInfo.day : "기타";
+        
+        // album 객체가 없을 경우를 대비한 안전한 접근
+        const albumData = ost.album || {};
 
         if (!result[quarterKey]) result[quarterKey] = [];
 
         result[quarterKey].push({
             uniqueId: `${ost.id}-ost-${index}`,
             id: ost.id,
-            animeTitle: ost.animeTitle,
-            youtube: ost.youtube,
-            thumbnail: ytThumb(ost.youtube),
+            animeTitle: albumData.title || "제목 없음",
+            thumbnail: albumData.coverImage || "../images/default.png",
+            composers: albumData.composer || [],
             day: day,
             displayQuarter: quarterKey
         });
@@ -94,7 +88,6 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 });
 
-// Step 1 렌더링
 function renderOSTStep1() {
     document.getElementById("left-area").innerHTML = `<div id="nominate-list-container"></div>`;
     renderFilteredList(document.getElementById("ost-search").value.toLowerCase());
@@ -130,7 +123,6 @@ function renderFilteredList(query) {
             quarterContent.classList.toggle("active");
         };
 
-        // 요일별 그룹핑
         const groupedByDay = {};
         filtered.forEach(ost => {
             if (!groupedByDay[ost.day]) groupedByDay[ost.day] = [];
@@ -162,7 +154,6 @@ function renderFilteredList(query) {
     });
 }
 
-// 카드 생성
 function createOSTCard(ost) {
     const item = document.createElement("div");
     item.className = "ost-card";
@@ -171,15 +162,15 @@ function createOSTCard(ost) {
         item.classList.add("selected");
     }
 
+    const composerText = ost.composers.length > 0 ? ost.composers.join(', ') : '';
+
     item.innerHTML = `
         <div class="card-thumb">
             <img src="${ost.thumbnail}" alt="thumbnail" onerror="this.src='../images/default.png'">
-            <a class="play-overlay" href="${ost.youtube}" target="_blank" onclick="event.stopPropagation();">
-                <span class="play-icon">▶</span>
-            </a>
         </div>
         <div class="card-info">
             <div class="anime-title">${ost.animeTitle}</div>
+            ${composerText ? `<div class="composer-title">${composerText}</div>` : ''}
         </div>
     `;
 
@@ -197,7 +188,6 @@ function createOSTCard(ost) {
     return item;
 }
 
-// Preview 업데이트
 function updatePreview() {
     const preview = document.getElementById("preview-list");
     const nextBtn = document.getElementById("step1-next-btn");
@@ -219,7 +209,6 @@ function updatePreview() {
     if (nextBtn) nextBtn.disabled = ostNominateState.selectedItems.length === 0;
 }
 
-// Step 2 렌더링
 function renderOSTStep2() {
     const container = document.getElementById("left-area");
     container.innerHTML = `<h2 style="color:var(--gold); margin-bottom:20px; font-size: 1.5rem;">최종 수상작을 선택하세요</h2>`;
@@ -232,17 +221,16 @@ function renderOSTStep2() {
         card.className = "step2-ost-card";
 
         const displayQuarter = ost.displayQuarter ? ost.displayQuarter.replace("Q", "") : "";
+        const composerText = ost.composers.length > 0 ? ost.composers.join(', ') : '';
 
         card.innerHTML = `
             <div class="card-badge">${displayQuarter}</div>
             <div class="card-thumb">
                 <img src="${ost.thumbnail}" alt="thumbnail" onerror="this.src='../images/default.png'">
-                <a class="play-overlay" href="${ost.youtube}" target="_blank" onclick="event.stopPropagation();">
-                    <span class="play-icon">▶</span>
-                </a>
             </div>
             <div class="step2-card-info">
                 <div class="card-title">${ost.animeTitle}</div>
+                ${composerText ? `<div class="composer-title">${composerText}</div>` : ''}
             </div>
         `;
 
@@ -257,7 +245,6 @@ function renderOSTStep2() {
     container.appendChild(grid);
 }
 
-// UI 토글 (Step 1 <-> Step 2)
 function toggleOSTStepUI() {
     const isStep1 = ostNominateState.step === 1;
     document.getElementById("step1-buttons").classList.toggle("hidden", !isStep1);
@@ -275,7 +262,7 @@ function saveOSTAwardResult() {
     stored[award] = {
         animeTitle: winner.animeTitle,
         thumbnail: winner.thumbnail,
-        youtube: winner.youtube,
+        composers: winner.composers,
         quarter: winner.displayQuarter
     };
     localStorage.setItem("anime_awards_result", JSON.stringify(stored));
@@ -286,8 +273,8 @@ function openOSTAwardPopup() {
     const winner = ostNominateState.finalWinner;
 
     document.getElementById("winner-thumb").src = winner.thumbnail;
-    document.getElementById("popup-youtube-link").href = winner.youtube;
     document.getElementById("winner-anime").textContent = winner.animeTitle;
+    document.getElementById("winner-composers").textContent = winner.composers.length > 0 ? winner.composers.join(', ') : '-';
     document.getElementById("winner-quarter").textContent = winner.displayQuarter;
 
     popup.classList.add("active");
@@ -298,7 +285,6 @@ function openOSTAwardPopup() {
     };
 }
 
-// 🎉 폭죽 연출
 function fireConfetti() {
     const duration = 3 * 1000;
     const end = Date.now() + duration;

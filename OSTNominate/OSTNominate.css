@@ -87,16 +87,9 @@ body {
 .card-thumb { position: relative; width: 100%; aspect-ratio: 16/9; overflow: hidden; }
 .card-thumb img { width: 100%; height: 100%; object-fit: cover; }
 
-.play-overlay {
-    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-    width: 45px; height: 45px; background: rgba(255, 0, 0, 0.85); border-radius: 50%;
-    display: flex; align-items: center; justify-content: center; text-decoration: none; transition: 0.2s; z-index: 2;
-}
-.play-overlay:hover { transform: translate(-50%, -50%) scale(1.15); background: #ff0000; box-shadow: 0 0 15px rgba(255, 0, 0, 0.7); }
-.play-icon { color: white; font-size: 18px; margin-left: 3px; }
-
 .card-info { padding: 15px; text-align: center; }
 .anime-title { font-size: 1rem; font-weight: bold; color: #fff; margin-bottom: 4px; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.composer-title { font-size: 0.8rem; color: #aaa; margin-top: 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .ost-card.selected .anime-title { color: var(--gold); }
 
 /* --- 사이드바 및 프리뷰 --- */
@@ -109,7 +102,7 @@ body {
 }
 .preview-item:hover { border-color: #ff6b6b; color: #ff6b6b; }
 
-.button-group { display: flex; gap: 10px; width: 100%; margin-top: auto}
+.button-group { display: flex; gap: 10px; width: 100%; margin-top: auto; }
 .btn-outline, .btn-gold { flex: 1; padding: 15px; font-weight: bold; border-radius: 6px; cursor: pointer; transition: 0.3s; text-align: center; border: none; }
 .btn-outline { background: transparent; border: 1px solid var(--gold); color: var(--gold); }
 .btn-outline:hover { background: rgba(212,175,55,0.1); }
@@ -179,15 +172,6 @@ body {
     width: 100%; aspect-ratio: 16/9; object-fit: cover;
     border-radius: 8px; border: 1px solid var(--gold); display: block;
 }
-
-.popup-play-overlay {
-    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-    width: 70px; height: 70px; background: rgba(255,0,0,0.9); border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    text-decoration: none; transition: 0.3s; box-shadow: 0 0 20px rgba(255,0,0,0.5);
-}
-.popup-play-overlay:hover { transform: translate(-50%,-50%) scale(1.1); background: #ff0000; }
-.popup-play-icon { color: white; font-size: 28px; margin-left: 5px; }
 
 .info-rows { display: flex; flex-direction: column; }
 .info-row { display: flex; justify-content: space-between; border-bottom: 1px solid #333; padding: 12px 0; }

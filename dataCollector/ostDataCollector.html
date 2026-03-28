@@ -1,225 +1,198 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🎵 OST Data Generator</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Mono:wght@400;500&display=swap');
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Data Transformer</title>
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --success-color: #27ae60;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+        }
 
-  :root {
-    --bg: #0a0a0a;
-    --surface: #141414;
-    --border: #262626;
-    --accent: #f0c040;
-    --red: #ff5f5f;
-    --text: #eeeeee;
-    --text-dim: #777;
-  }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+        }
 
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: 'DM Mono', monospace;
-    background: var(--bg);
-    color: var(--text);
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 40px 20px;
-  }
+        .container {
+            width: 100%;
+            max-width: 850px;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
 
-  .container { width: 100%; max-width: 800px; }
+        h2 {
+            margin-top: 0;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--bg-color);
+            padding-bottom: 10px;
+        }
 
-  .editor-card { 
-    background: var(--surface); 
-    border: 1px solid var(--border); 
-    border-radius: 20px; 
-    padding: 40px; 
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-  }
-  
-  .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
-  .title-display { font-family: 'Syne', sans-serif; font-size: 26px; color: var(--accent); }
+        textarea {
+            width: 100%;
+            height: 220px;
+            margin: 15px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 13px;
+            resize: vertical;
+            outline: none;
+        }
 
-  .section-title { 
-    font-family: 'Syne', sans-serif; font-size: 12px; color: var(--text-dim); 
-    text-transform: uppercase; margin: 30px 0 15px; border-bottom: 1px solid var(--border); 
-    padding-bottom: 8px; letter-spacing: 1px;
-  }
+        textarea:focus {
+            border-color: var(--primary-color);
+        }
 
-  .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
-  .full { grid-column: span 3; }
-  
-  label { font-size: 10px; color: var(--text-dim); margin-bottom: 8px; display: block; font-weight: bold; }
-  .input, .select {
-    width: 100%; background: #000; border: 1px solid var(--border); border-radius: 8px;
-    padding: 12px; color: var(--text); font-family: inherit; font-size: 13px; outline: none;
-    transition: 0.2s; appearance: none; /* 기본 화살표 제거 (커스텀 가능) */
-  }
-  .input:focus, .select:focus { border-color: var(--accent); }
-  
-  /* Select 전용 스타일 (화살표 추가) */
-  .select-wrapper { position: relative; }
-  .select-wrapper::after {
-    content: '▼'; font-size: 10px; color: var(--text-dim);
-    position: absolute; right: 12px; top: 50%; transform: translateY(-50%);
-    pointer-events: none;
-  }
+        .button-group {
+            display: flex;
+            gap: 10px;
+        }
 
-  /* 태그박스 */
-  .tag-box { 
-    background: #000; border: 1px solid var(--border); padding: 8px; 
-    border-radius: 8px; min-height: 45px; display: flex; flex-wrap: wrap; gap: 6px; 
-    align-items: center; cursor: text;
-  }
-  .tag { background: rgba(240,192,64,0.1); color: var(--accent); padding: 4px 10px; border-radius: 6px; font-size: 11px; display: flex; align-items: center; }
-  .tag-del { margin-left: 6px; cursor: pointer; font-weight: bold; }
-  .tag-input { background: none; border: none; color: white; flex: 1; outline: none; font-size: 12px; min-width: 100px; }
+        button {
+            flex: 1;
+            color: white;
+            border: none;
+            padding: 14px 25px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 15px;
+            transition: all 0.2s;
+        }
 
-  /* 트랙 리스트 */
-  .track-row { display: grid; grid-template-columns: 40px 1fr 2fr 40px; gap: 10px; align-items: center; margin-bottom: 10px; }
-  .track-num { color: var(--text-dim); font-size: 12px; text-align: center; font-weight: bold; }
+        .btn-transform {
+            background-color: var(--primary-color);
+        }
 
-  /* 버튼들 */
-  .btn { padding: 12px 24px; border-radius: 8px; cursor: pointer; border: none; font-family: 'Syne', sans-serif; font-weight: 700; transition: 0.2s; }
-  .btn-primary { background: var(--accent); color: #000; font-size: 14px; }
-  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(240,192,64,0.2); }
-  .btn-ghost { background: none; color: var(--text-dim); border: 1px solid var(--border); font-size: 11px; }
-  .btn-add-track { width: 100%; background: none; border: 1px dashed var(--border); color: var(--text-dim); padding: 12px; border-radius: 8px; cursor: pointer; margin-top: 10px; font-family: inherit; }
-  .btn-add-track:hover { border-color: var(--accent); color: var(--accent); }
+        .btn-transform:hover {
+            background-color: #357abd;
+        }
 
-  .toast { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%) translateY(100px); background: var(--accent); color: #000; padding: 12px 30px; border-radius: 50px; font-weight: 800; transition: 0.4s; opacity: 0; z-index: 1000; }
-  .toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
-</style>
+        .btn-copy {
+            background-color: #6c757d;
+        }
+
+        .btn-copy:hover {
+            background-color: #5a6268;
+        }
+
+        .btn-copy.success {
+            background-color: var(--success-color);
+        }
+
+        #output {
+            background-color: #282c34;
+            color: #abb2bf;
+            height: 350px;
+        }
+
+        .label {
+            font-weight: bold;
+            display: block;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
 
 <div class="container">
-  <div class="editor-card">
-    <div class="header">
-      <h2 id="displayTitle" class="title-display">New OST Project</h2>
-      <button class="btn-ghost" onclick="resetEditor()">↺ Reset All</button>
+    <h2>Anime JSON 데이터 구조 변환기</h2>
+    
+    <label class="label">1. 기존 AnimeList 데이터를 붙여넣으세요:</label>
+    <textarea id="input" placeholder="const AnimeList = [ ... ];"></textarea>
+    
+    <div class="button-group">
+        <button class="btn-transform" onclick="transformData()">데이터 구조 변환</button>
     </div>
 
-    <div class="section-title">Album Information</div>
-    <div class="grid">
-      <div class="full">
-        <label>ALBUM TITLE</label>
-        <input type="text" class="input" id="f_albumTitle" placeholder="앨범 제목 입력" oninput="updateUI(this.value)">
-      </div>
-      <div style="grid-column: span 1.5;">
-        <label>MAL ID</label>
-        <input type="number" class="input" id="f_id" placeholder="59978">
-      </div>
-      <div style="grid-column: span 1.5;">
-        <label>QUARTER</label>
-        <div class="select-wrapper">
-          <select class="select" id="f_quarter">
-            <option value="1분기">1분기</option>
-            <option value="2분기">2분기</option>
-            <option value="3분기">3분기</option>
-            <option value="4분기">4분기</option>
-          </select>
-        </div>
-      </div>
-      <div class="full">
-        <label>COMPOSERS (ENTER TO ADD)</label>
-        <div class="tag-box" onclick="document.getElementById('tagInput').focus()">
-          <div id="tagList" style="display:contents"></div>
-          <input type="text" class="tag-input" id="tagInput" placeholder="이름 입력 후 Enter" onkeydown="handleTag(event)">
-        </div>
-      </div>
+    <label class="label">2. 변환된 결과 (JSON):</label>
+    <textarea id="output" readonly placeholder="변환 버튼을 누르면 결과가 생성됩니다."></textarea>
+    
+    <div class="button-group">
+        <button id="copyBtn" class="btn-copy" onclick="copyToClipboard()">결과 복사하기</button>
     </div>
-
-    <div class="section-title">Tracklist</div>
-    <div id="trackList"></div>
-    <button class="btn-add-track" onclick="addTrack()">+ Add Track</button>
-
-    <div style="margin-top: 50px; padding-top: 30px; border-top: 1px solid var(--border); display: flex; justify-content: center;">
-      <button class="btn btn-primary" style="width: 100%;" onclick="copyJSON()">📋 현재 데이터 JSON 복사</button>
-    </div>
-  </div>
 </div>
 
-<div class="toast" id="toast">📋 JSON 복사 완료!</div>
-
 <script>
-  let currentData = { 
-    id: null, 
-    quarter: "1분기", 
-    album: { title: "", coverImage: "", composer: [] }, 
-    tracks: [] 
-  };
+    function transformData() {
+        const inputStr = document.getElementById('input').value.trim();
+        const outputArea = document.getElementById('output');
+        const copyBtn = document.getElementById('copyBtn');
 
-  function updateUI(val) {
-    document.getElementById('displayTitle').textContent = val || 'New OST Project';
-    const safeName = val.replace(/[\\/:*?"<>|]/g, '').replace(/\s+/g, '_');
-    currentData.album.coverImage = val ? `image/animeOST/${safeName}.webp` : "";
-    currentData.album.title = val;
-  }
+        // 복사 버튼 상태 초기화
+        copyBtn.innerText = "결과 복사하기";
+        copyBtn.classList.remove('success');
 
-  function handleTag(e) {
-    if (e.key === 'Enter' && e.target.value.trim()) {
-      currentData.album.composer.push(e.target.value.trim());
-      e.target.value = '';
-      renderTags();
+        try {
+            // 변수 할당문 제거 및 데이터 추출
+            let cleanData = inputStr.replace(/^(const|let|var)\s+\w+\s*=\s*/, '').replace(/;$/, '');
+            
+            // eval을 사용해 JS 객체로 변환
+            const rawData = eval(`(${cleanData})`);
+
+            if (!Array.isArray(rawData)) {
+                throw new Error("입력값이 배열 형식이 아닙니다.");
+            }
+
+            // 요청하신 새로운 데이터 구조로 매핑
+            const transformedData = rawData.map(item => ({
+                id: item.id,
+                quarter: item.quarter,
+                album: {
+                    title: item.title,
+                    coverImage: item.thumbnail ? item.thumbnail.replace('image/animeimg/Q1/', 'image/animeOST/') : "",
+                    composer: [""] 
+                }
+            }));
+
+            // 결과물 출력 (들여쓰기 2칸)
+            outputArea.value = JSON.stringify(transformedData, null, 2);
+            
+        } catch (e) {
+            alert("데이터 변환 실패: 형식을 확인해주세요.\n(" + e.message + ")");
+        }
     }
-  }
 
-  function renderTags() {
-    const list = document.getElementById('tagList');
-    list.innerHTML = currentData.album.composer.map((t, i) => `
-      <span class="tag">${t}<span class="tag-del" onclick="removeTag(${i})">✕</span></span>
-    `).join('');
-  }
+    async function copyToClipboard() {
+        const outputText = document.getElementById('output').value;
+        const copyBtn = document.getElementById('copyBtn');
 
-  function removeTag(i) {
-    currentData.album.composer.splice(i, 1);
-    renderTags();
-  }
+        if (!outputText) {
+            alert("복사할 내용이 없습니다. 먼저 변환을 진행해주세요.");
+            return;
+        }
 
-  function addTrack() {
-    currentData.tracks.push({ number: currentData.tracks.length + 1, title: "", youtubeUrl: "" });
-    renderTracks();
-  }
+        try {
+            await navigator.clipboard.writeText(outputText);
+            
+            // 시각적 피드백 제공
+            copyBtn.innerText = "복사 완료! ✔";
+            copyBtn.classList.add('success');
+            
+            // 2초 뒤 원래대로 복구
+            setTimeout(() => {
+                copyBtn.innerText = "결과 복사하기";
+                copyBtn.classList.remove('success');
+            }, 2000);
 
-  function renderTracks() {
-    const container = document.getElementById('trackList');
-    container.innerHTML = currentData.tracks.map((t, i) => `
-      <div class="track-row">
-        <div class="track-num">${i + 1}</div>
-        <input type="text" class="input" placeholder="Track Title" value="${t.title}" oninput="currentData.tracks[${i}].title = this.value">
-        <input type="text" class="input" style="color:var(--red)" placeholder="YouTube URL" value="${t.youtubeUrl}" oninput="currentData.tracks[${i}].youtubeUrl = this.value">
-        <button class="btn-ghost" style="border:none; color:var(--red); padding:0;" onclick="removeTrack(${i})">✕</button>
-      </div>
-    `).join('');
-  }
-
-  function removeTrack(i) {
-    currentData.tracks.splice(i, 1);
-    currentData.tracks.forEach((t, idx) => t.number = idx + 1);
-    renderTracks();
-  }
-
-  function resetEditor() {
-    if(!confirm("모든 데이터를 초기화할까요?")) return;
-    location.reload();
-  }
-
-  function copyJSON() {
-    currentData.id = parseInt(document.getElementById('f_id').value) || null;
-    currentData.quarter = document.getElementById('f_quarter').value; // 콤보박스 값 가져오기
-    currentData.album.title = document.getElementById('f_albumTitle').value;
-
-    const json = JSON.stringify(currentData, null, 2);
-    navigator.clipboard.writeText(json).then(() => {
-      const t = document.getElementById('toast');
-      t.classList.add('show');
-      setTimeout(() => t.classList.remove('show'), 2000);
-    });
-  }
-
-  window.onload = () => { addTrack(); };
+        } catch (err) {
+            alert("복사에 실패했습니다. 수동으로 복사해주세요.");
+        }
+    }
 </script>
+
 </body>
 </html>
