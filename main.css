@@ -308,13 +308,13 @@ h1 {
 .award-thumb {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
 }
 
 /* 요청하신 비율 설정 */
 .ratio-16-9 .thumb-wrapper { aspect-ratio: 16 / 9; }
-.ratio-11-16 .thumb-wrapper { aspect-ratio: 11 / 16; }
+.ratio-11-16 .thumb-wrapper { aspect-ratio: 11 / 16; object-fit: cover;}
 .ratio-poster .thumb-wrapper { aspect-ratio: 199 / 280; }
 /* 올해의 시리즈 섹션만 별도 지정하고 싶을 때 */
 .award-section:last-child .award-grid-inner {
