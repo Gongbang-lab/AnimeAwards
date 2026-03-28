@@ -33,9 +33,17 @@ function renderDirectorGrid(searchTerm = "") {
     if (!container) return;
     container.innerHTML = "";
 
-    // 1. 데이터 필터링
+    // 1. 데이터 필터링 (감독 이름 또는 작품 제목 검색)
     let filteredData = (dirState.step === 1)
-        ? animeDirectorData.filter(d => d.director.toLowerCase().includes(searchTerm.toLowerCase().trim()))
+        ? animeDirectorData.filter(d => {
+            const term = searchTerm.toLowerCase().trim();
+            // 감독 이름 확인
+            const matchDirector = d.director.toLowerCase().includes(term);
+            // 작품 배열이 존재할 경우, 작품 제목들 중 하나라도 포함하는지 확인
+            const matchWorks = d.works && d.works.some(w => w.title.toLowerCase().includes(term));
+            
+            return matchDirector || matchWorks;
+        })
         : dirState.selectedDirectors;
 
     const isSearching = searchTerm.length > 0;

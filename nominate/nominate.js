@@ -213,17 +213,27 @@ function updatePreview() {
 function goStep2() {
     nominateState.step = 2;
     
-    // 버튼 교체
+    // 1. 버튼 교체
     toggleElement("nav-home-btn", false);
     toggleElement("step1-next-btn", false);
     toggleElement("step2-back-btn", true);
     toggleElement("step2-award-btn", true);
     
+    // [추가] Step 2 진입 시 검색창과 프리뷰 박스 숨기기
+    toggleElement("search-container-wrapper", false); // 검색창 부모 컨테이너가 있다면 ID 지정 권장
+    // 또는 공통 클래스나 요소를 직접 선택
+    const searchArea = document.querySelector('.search-container');
+    const previewArea = document.getElementById("preview-box");
+    
+    if(searchArea) searchArea.classList.add("hidden");
+    if(previewArea) previewArea.classList.add("hidden");
+
+    // 2. 왼쪽 메인 영역 교체
     const leftArea = document.getElementById("left-area");
     leftArea.innerHTML = "";
     
     const h2 = document.createElement("h2");
-    h2.style.color = "var(--gold)";
+    h2.style.cssText = "color:var(--gold); margin-bottom:20px; font-size: 1.5rem; text-align: left;";
     h2.textContent = "최종 후보를 선택하세요";
     leftArea.appendChild(h2);
 
@@ -245,9 +255,19 @@ function goStep1() {
     toggleElement("step2-back-btn", false);
     toggleElement("step2-award-btn", false);
     
+    // [추가] Step 1 복귀 시 검색창과 프리뷰 박스 다시 표시
+    const searchArea = document.querySelector('.search-container');
+    const previewArea = document.getElementById("preview-box");
+    
+    if(searchArea) searchArea.classList.remove("hidden");
+    if(previewArea) previewArea.classList.remove("hidden");
+
     const awardBtn = document.getElementById("step2-award-btn");
     if(awardBtn) awardBtn.disabled = true;
 
+    // 검색어 초기화 후 렌더링
+    const searchInput = document.getElementById('search-input');
+    if(searchInput) searchInput.value = ""; 
     renderStep1();
 }
 

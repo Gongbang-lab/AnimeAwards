@@ -6,57 +6,56 @@ const cinemaState = {
 const movies = (typeof cinemaData !== 'undefined') ? cinemaData : [];
 
 document.addEventListener("DOMContentLoaded", () => {
+    // 초기 전체 카드 렌더링
     renderCards(movies);
 
     const searchInput = document.getElementById('searchInput');
-    const autocompleteList = document.getElementById('autocompleteList');
 
-    // 검색 로직
+    // 실시간 필터링 검색 로직
     if (searchInput) {
+        searchInput.placeholder = "영화 제목 또는 제작사 검색";
         searchInput.addEventListener('input', (e) => {
             const query = e.target.value.toLowerCase().trim();
-            const filtered = movies.filter(m => m.title.toLowerCase().includes(query));
-            renderCards(filtered);
-
-            autocompleteList.innerHTML = '';
-            if (query && filtered.length > 0) {
-                autocompleteList.style.display = 'block';
-                filtered.slice(0, 5).forEach(m => {
-                    const item = document.createElement('div');
-                    item.innerText = m.title;
-                    item.onclick = () => {
-                        searchInput.value = m.title;
-                        renderCards([m]);
-                        autocompleteList.style.display = 'none';
-                    };
-                    autocompleteList.appendChild(item);
-                });
-            } else {
-                autocompleteList.style.display = 'none';
-            }
+            
+            // 제목 또는 제작사(Studio)에서 검색어 포함 여부 확인
+            const filtered = movies.filter(m => 
+                m.title.toLowerCase().includes(query) || 
+                (m.studio && m.studio.toLowerCase().includes(query))
+            );
+            
+            renderCards(filtered, query); // 검색어 하이라이트를 위해 query 전달
         });
     }
 });
 
-function renderCards(data) {
+function renderCards(data, searchTerm = "") {
     const grid = document.getElementById("cardGrid");
     if (!grid) return;
 
     if (data.length === 0) {
-        grid.innerHTML = '<p style="color:var(--gold); padding:20px; grid-column: 1/-1; text-align:center;">검색된 영화가 없습니다.</p>';
+        grid.innerHTML = '<p style="color:var(--gold); padding:40px; grid-column: 1/-1; text-align:center;">검색된 영화가 없습니다.</p>';
         return;
     }
 
     grid.innerHTML = data.map(movie => {
         const isSelected = cinemaState.selectedMovie && cinemaState.selectedMovie.title === movie.title;
-        // 요청사항: zoom-btn 삭제
+        
+        // 검색어 하이라이트 처리
+        let displayTitle = movie.title;
+        if (searchTerm) {
+            const regex = new RegExp(searchTerm, "gi");
+            displayTitle = movie.title.replace(regex, (match) => `<span style="color:var(--gold);">${match}</span>`);
+        }
+
         return `
-            <div class="card ${isSelected ? 'selected' : ''}" id="card-${movie.title.replace(/\s/g, '')}" onclick="selectMovie('${movie.title}')">
+            <div class="card ${isSelected ? 'selected' : ''}" 
+                 id="card-${movie.title.replace(/\s/g, '')}" 
+                 onclick="selectMovie('${movie.title.replace(/'/g, "\\'")}')">
                 <div class="media-box">
                     <img src="../${movie.thumbnail}" alt="${movie.title}" onerror="this.src='https://dummyimage.com/200x300/333/d4af37&text=No+Image'">
                 </div>
                 <div class="card-info">
-                    <div class="card-title">${movie.title}</div>
+                    <div class="card-title">${displayTitle}</div>
                     <div class="card-studio">${movie.studio}</div>
                 </div>
             </div>
@@ -70,11 +69,13 @@ function selectMovie(title) {
 
     cinemaState.selectedMovie = movie;
     
+    // UI 업데이트: 선택된 카드 표시
     document.querySelectorAll('.card').forEach(c => c.classList.remove('selected'));
     const currentId = `card-${movie.title.replace(/\s/g, '')}`;
     const currentCard = document.getElementById(currentId);
     if (currentCard) currentCard.classList.add('selected');
 
+    // 수상 결정 버튼 활성화
     const awardBtn = document.getElementById('btn-award');
     if (awardBtn) awardBtn.disabled = false;
 }

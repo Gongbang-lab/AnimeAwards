@@ -13,8 +13,17 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("AnimeList 데이터를 불러오지 못했습니다. 경로를 확인해주세요.");
     }
 
-    initStep1();
-    setupSearch();
+    // 초기 렌더링 (검색어 없음)
+    renderStep1(); 
+    
+    // 검색창 이벤트 바인딩 (실시간 필터링)
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) {
+        searchInput.placeholder = "애니 제목 검색";
+        searchInput.addEventListener('input', (e) => {
+            renderStep1(e.target.value);
+        });
+    }
     
     // 버튼 이벤트 바인딩
     document.getElementById('next-btn').addEventListener('click', () => {
@@ -25,18 +34,126 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById('prev-btn').addEventListener('click', () => {
         if (state.step === 2) {
             state.step = 1;
-            state.finalTop3 = []; // 순위 초기화
-            initStep1();
+            state.finalTop3 = [];
+            
+            const searchArea = document.querySelector('.search-container');
+            const statusIndicator = document.querySelector('.status-indicator');
+            const previewBox = document.getElementById('preview-box');
+            
+            if (searchArea) searchArea.classList.remove('hidden');
+            if (statusIndicator) statusIndicator.classList.remove('hidden');
+            if (previewBox) previewBox.classList.remove('hidden');
+            
+            renderStep1(); // 복귀 시 다시 렌더링
         } else {
-            location.href = "../index.html"; // 실제 메인 경로에 맞게 수정
+            location.href = "../index.html";
         }
     });
 
     document.getElementById('save-main-btn').addEventListener('click', () => {
-        // 여기에 localStorage 저장 로직 추가 가능
         location.href = "../index.html";
     });
 });
+
+function renderStep1(searchTerm = "") {
+    state.step = 1;
+    document.getElementById('step-title').textContent = "올해의 시리즈 부문";
+    const nextBtn = document.getElementById('next-btn');
+    nextBtn.textContent = "다음 단계";
+    document.getElementById('rank-status').classList.add('hidden');
+    
+    const display = document.getElementById('main-display');
+    display.innerHTML = ""; 
+
+    const isSearching = searchTerm.trim() !== "";
+    const lowerTerm = searchTerm.toLowerCase().trim();
+
+    // 1. 데이터 필터링 (제목 또는 제작사)
+    let filteredData = state.allAnime;
+    if (isSearching) {
+        filteredData = state.allAnime.filter(item => 
+            item.title.toLowerCase().includes(lowerTerm) || 
+            (item.studio && item.studio.toLowerCase().includes(lowerTerm))
+        );
+    }
+
+    if (filteredData.length === 0) {
+        display.innerHTML = `<div style="color:#888; text-align:center; padding:40px;">검색 결과가 없습니다.</div>`;
+        return;
+    }
+
+    // 2. 데이터 그룹화
+    const grouped = {};
+    filteredData.forEach(item => {
+        const q = item.quarter || "기타 분기";
+        if (!grouped[q]) grouped[q] = {};
+        if (!grouped[q][item.day]) grouped[q][item.day] = [];
+        grouped[q][item.day].push(item);
+    });
+
+    // 3. 렌더링
+    Object.keys(grouped).sort().forEach(q => {
+        const section = document.createElement('div');
+        section.className = 'quarter-section';
+        
+        const qBtn = document.createElement('button');
+        qBtn.className = 'quarter-btn';
+        
+        const qWrapper = document.createElement('div');
+        
+        // 검색 중이면 자동 펼침
+        if (isSearching) {
+            qWrapper.className = ''; 
+            qBtn.className = 'quarter-btn active';
+            qBtn.innerHTML = `<span>${q}</span> <span>▲</span>`;
+        } else {
+            qWrapper.className = 'hidden'; 
+            qBtn.innerHTML = `<span>${q}</span> <span>▼</span>`;
+        }
+
+        qBtn.onclick = () => {
+            qBtn.classList.toggle('active');
+            qWrapper.classList.toggle('hidden');
+            qBtn.querySelector('span:last-child').textContent = qWrapper.classList.contains('hidden') ? '▼' : '▲';
+        };
+
+        Object.keys(grouped[q]).forEach(day => {
+            const dBtn = document.createElement('button');
+            dBtn.className = 'day-btn';
+            
+            const dContent = document.createElement('div');
+            
+            if (isSearching) {
+                dContent.className = 'day-content';
+                dBtn.className = 'day-btn active';
+                dBtn.innerHTML = `<span>${DAY_LABELS[day] || day}</span> <span>-</span>`;
+            } else {
+                dContent.className = 'day-content hidden';
+                dBtn.innerHTML = `<span>${DAY_LABELS[day] || day}</span> <span>+</span>`;
+            }
+
+            grouped[q][day].forEach(anime => {
+                const card = createCard(anime, false, searchTerm);
+                dContent.appendChild(card);
+            });
+
+            dBtn.onclick = () => {
+                dBtn.classList.toggle('active');
+                dContent.classList.toggle('hidden');
+                dBtn.querySelector('span:last-child').textContent = dContent.classList.contains('hidden') ? '+' : '-';
+            };
+
+            qWrapper.appendChild(dBtn);
+            qWrapper.appendChild(dContent);
+        });
+
+        section.appendChild(qBtn);
+        section.appendChild(qWrapper);
+        display.appendChild(section);
+    });
+    
+    updatePreview();
+}
 
 // ==========================================
 // STEP 1: 아코디언 리스트 생성 (CSS 100% 매칭)
@@ -111,25 +228,29 @@ function initStep1() {
 }
 
 // 공통 카드 생성 함수 (CSS 구조 완벽 일치)
-function createCard(anime, isStep2) {
+function createCard(anime, isStep2, searchTerm = "") {
     const isSelected = state.selectedCandidates.some(c => c.id === anime.id);
     const div = document.createElement('div');
     div.className = `card ${!isStep2 && isSelected ? 'selected' : ''}`;
     
-    // 중앙 오버레이용 div(.rank-overlay)를 추가했습니다.
+    let displayTitle = anime.title;
+    if (searchTerm && !isStep2) {
+        const regex = new RegExp(searchTerm.trim(), "gi");
+        displayTitle = anime.title.replace(regex, (match) => `<span style="color:var(--gold);">${match}</span>`);
+    }
+
     div.innerHTML = `
         <div class="card-badge">${anime.quarter}</div>
         <div class="rank-overlay"></div> 
         <img src="../${anime.thumbnail}" onerror="this.src='https://placehold.co/180x240?text=No+Image'" alt="${anime.title}">
         <div class="card-info">
-            <div class="card-title">${anime.title}</div>
+            <div class="card-title">${displayTitle}</div>
             <div class="card-studio">${anime.studio || '정보 없음'}</div>
         </div>
     `;
 
     div.onclick = () => {
         if (!isStep2) {
-            // Step 1: 후보 선택
             const idx = state.selectedCandidates.findIndex(c => c.id === anime.id);
             if (idx > -1) {
                 state.selectedCandidates.splice(idx, 1);
@@ -140,7 +261,6 @@ function createCard(anime, isStep2) {
             }
             updatePreview();
         } else {
-            // Step 2: 순위 결정
             const topIdx = state.finalTop3.findIndex(c => c.id === anime.id);
             if (topIdx > -1) {
                 state.finalTop3.splice(topIdx, 1);
@@ -152,7 +272,6 @@ function createCard(anime, isStep2) {
     };
     return div;
 }
-
 // 사이드바 미리보기 업데이트
 function updatePreview() {
     const pBox = document.getElementById("preview-box");
@@ -162,7 +281,6 @@ function updatePreview() {
     pBox.innerHTML = "";
 
     if (state.selectedCandidates.length === 0) {
-        pBox.innerHTML = `<div style="color:#666; text-align:center; margin-top:20px;"></div>`;
         if (nextBtn) nextBtn.disabled = true;
         return;
     }
@@ -172,8 +290,6 @@ function updatePreview() {
     state.selectedCandidates.forEach(anime => {
         const item = document.createElement("div");
         item.className = "preview-item";
-        
-        // 사진처럼 중앙 정렬된 제목과 그 아래 제작사 정보
         item.innerHTML = `
             ${anime.title}
             <small>${anime.studio || ''}</small>
@@ -181,8 +297,9 @@ function updatePreview() {
         
         item.onclick = () => {
             state.selectedCandidates = state.selectedCandidates.filter(a => a.id !== anime.id);
-            initStep1(); // 메인 화면 카드 선택 해제 동기화
-            updatePreview();
+            // 현재 입력된 검색어를 유지하며 리스트 갱신
+            const currentSearch = document.getElementById('search-input').value;
+            renderStep1(currentSearch); 
         };
         pBox.appendChild(item);
     });
@@ -198,6 +315,15 @@ function goStep2() {
     document.getElementById('next-btn').textContent = "수상 결정";
     document.getElementById('next-btn').disabled = true;
     document.getElementById('rank-status').classList.remove('hidden');
+
+    // [추가] Step 2 진입 시 검색창, 상태 표시줄, 프리뷰 박스 숨김
+    const searchArea = document.querySelector('.search-container');
+    const statusIndicator = document.querySelector('.status-indicator');
+    const previewBox = document.getElementById('preview-box');
+    
+    if (searchArea) searchArea.classList.add('hidden');
+    if (statusIndicator) statusIndicator.classList.add('hidden');
+    if (previewBox) previewBox.classList.add('hidden');
 
     const display = document.getElementById('main-display');
     // CSS에 정의된 #step2-grid 사용
@@ -307,38 +433,6 @@ function saveToLocalStorage() {
     }
 }
 
-function setupSearch() {
-    const input = document.getElementById('search-input');
-    const list = document.getElementById('autocomplete-list');
-
-    input.addEventListener('input', () => {
-        const val = input.value.trim().toLowerCase();
-        list.innerHTML = "";
-        if (!val) return;
-
-        const results = state.allAnime.filter(a => a.title.toLowerCase().includes(val)).slice(0, 10);
-        results.forEach(anime => {
-            const div = document.createElement('div');
-            div.textContent = anime.title;
-            div.onclick = () => {
-                if (!state.selectedCandidates.find(c => c.id === anime.id)) {
-                    state.selectedCandidates.push(anime);
-                    if(state.step === 1) updatePreview();
-                }
-                input.value = "";
-                list.innerHTML = "";
-            };
-            list.appendChild(div);
-        });
-    });
-    
-    // 바깥 클릭 시 자동완성 닫기
-    document.addEventListener('click', (e) => {
-        if (!e.target.closest('.search-container')) {
-            list.innerHTML = "";
-        }
-    });
-}
 
 function fireConfetti() {
     const duration = 3 * 1000;

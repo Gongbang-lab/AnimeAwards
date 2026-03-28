@@ -18,133 +18,182 @@ const DAY_LABELS = {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-  const params = new URLSearchParams(window.location.search);
+    const params = new URLSearchParams(window.location.search);
 
-  charState.theme = params.get("theme")
-  charState.awardName = params.get("awardName")
+    charState.theme = params.get("theme") || "character_male";
+    charState.awardName = params.get("awardName") || "올해의 주연상";
 
-  // 데이터 준비
-  const genderKey = charState.theme.includes("female") ? "female" : "male";
-  const flatData = getNormalizedCharData(genderKey); // 전체 캐릭터 데이터
-  if (genderKey === "female") {
-    document.getElementById("step-title").textContent = "올해의 여우 주연상 부문";
-  } else {
-    document.getElementById("step-title").textContent = "올해의 남우 주연상 부문";
-  }
+    // 데이터 준비
+    const genderKey = charState.theme.includes("female") ? "female" : "male";
+    if (genderKey === "female") {
+        document.getElementById("step-title").textContent = "올해의 여우 주연상 부문";
+    } else {
+        document.getElementById("step-title").textContent = "올해의 남우 주연상 부문";
+    }
 
-  const modalAwardEl = document.getElementById("modal-award-name");
-  if (modalAwardEl) {
-    modalAwardEl.textContent = charState.awardName;
-  }
-  
-  // 검색 기능 초기화 (전체 데이터를 넘겨줌)
-  initSearch(flatData);
+    const modalAwardEl = document.getElementById("modal-award-name");
+    if (modalAwardEl) {
+        modalAwardEl.textContent = charState.awardName;
+    }
 
-  renderStep1(flatData); // renderStep1 함수에 데이터를 인자로 전달하도록 구조를 살짝 변경하면 좋습니다.
-  bindEvents();
+    // 실시간 검색 기능 바인딩
+    const searchInput = document.getElementById("search-input");
+    searchInput.disabled = false;
+    searchInput.placeholder = "캐릭터 또는 애니 제목 검색";
+    searchInput.addEventListener("input", (e) => {
+        renderStep1(e.target.value);
+    });
+
+    renderStep1(); 
+    bindEvents();
 });
 
 /**
  * 1. Step 1 렌더링 (분기 -> 요일 -> 애니메이션 -> 캐릭터 카드)
  */
-function renderStep1() {
-  const left = document.getElementById("left-area");
-  left.innerHTML = ""; 
+function renderStep1(searchTerm = "") {
+    const left = document.getElementById("left-area");
+    left.innerHTML = ""; 
 
-  const genderKey = charState.theme.includes("female") ? "female" : "male";
-  const flatData = getNormalizedCharData(genderKey);
-  const hierarchy = groupByHierarchy(flatData);
+    const genderKey = charState.theme.includes("female") ? "female" : "male";
+    let flatData = getNormalizedCharData(genderKey);
 
-  Object.entries(hierarchy).forEach(([qName, days]) => {
-    // 1단계: 분기(Quarter)
-    const qSection = document.createElement("div");
-    qSection.className = "quarter-section";
+    // 검색어 필터링 로직 (캐릭터 이름 또는 애니메이션 제목)
+    if (searchTerm.trim() !== "") {
+        const lowerTerm = searchTerm.toLowerCase().trim();
+        flatData = flatData.filter(char => 
+            char.name.toLowerCase().includes(lowerTerm) || 
+            char.animeTitle.toLowerCase().includes(lowerTerm)
+        );
+    }
 
-    const qBtn = document.createElement("button");
-    qBtn.className = "quarter-btn";
-    qBtn.innerHTML = `<span>${QUARTER_MAP[qName] || qName}</span> <span>▼</span>`;
-    
-    const qContent = document.createElement("div");
-    qContent.className = "quarter-content";
-    qContent.style.display = "none";
+    if (flatData.length === 0) {
+        left.innerHTML = `<div style="color:#888; text-align:center; padding:40px;">검색 결과가 없습니다.</div>`;
+        return;
+    }
 
-    qBtn.onclick = () => {
-        const isOpen = qContent.style.display === "block";
-        qContent.style.display = isOpen ? "none" : "block";
-        qBtn.classList.toggle("active", !isOpen);
-        qBtn.querySelector("span:last-child").textContent = isOpen ? "▼" : "▲";
-    };
+    const hierarchy = groupByHierarchy(flatData);
+    const isSearching = searchTerm.trim() !== "";
 
-    // 2단계: 요일(Day)
-    Object.entries(days).forEach(([dName, animes]) => {
-      const dBtn = document.createElement("button");
-      dBtn.className = "day-btn";
-      dBtn.innerHTML = `<span>${DAY_LABELS[dName] || dName}</span> <span>▼</span>`;
+    Object.entries(hierarchy).forEach(([qName, days]) => {
+        // 1단계: 분기(Quarter)
+        const qSection = document.createElement("div");
+        qSection.className = "quarter-section";
 
-      const dContent = document.createElement("div");
-      dContent.className = "day-content-wrapper"; // 요일 안의 애니메이션들을 감싸는 통
-      dContent.style.display = "none";
-      
-      dBtn.onclick = () => {
-        const isOpen = dContent.style.display === "block";
-        dContent.style.display = isOpen ? "none" : "block";
-        dBtn.classList.toggle("active", !isOpen);
-        dBtn.querySelector("span:last-child").textContent = isOpen ? "▼" : "▲";
-      };
+        const qBtn = document.createElement("button");
+        qBtn.className = "quarter-btn";
+        
+        const qContent = document.createElement("div");
+        qContent.className = "quarter-content";
+        
+        // 검색 중이면 자동 펼침
+        if (isSearching) {
+            qContent.style.display = "block";
+            qBtn.classList.add("active");
+            qBtn.innerHTML = `<span>${QUARTER_MAP[qName] || qName}</span> <span>▲</span>`;
+        } else {
+            qContent.style.display = "none";
+            qBtn.innerHTML = `<span>${QUARTER_MAP[qName] || qName}</span> <span>▼</span>`;
+        }
 
-      // 3단계: 애니메이션 제목(Anime Title) - 새로 추가된 아코디언
-      Object.entries(animes).forEach(([aTitle, charList]) => {
-        const aBtn = document.createElement("button");
-        aBtn.className = "anime-btn";
-        aBtn.innerHTML = `<span>${aTitle}</span> <span>▼</span>`;
-
-        const aContent = document.createElement("div");
-        aContent.className = "anime-content"; // 실제 카드 그리드
-
-        aBtn.onclick = () => {
-          aContent.classList.toggle("active");
-          aBtn.classList.toggle("active");
-          aBtn.querySelector("span:last-child").textContent = aContent.classList.contains("active") ? "▲" : "▼";
+        qBtn.onclick = () => {
+            const isOpen = qContent.style.display === "block";
+            qContent.style.display = isOpen ? "none" : "block";
+            qBtn.classList.toggle("active", !isOpen);
+            qBtn.querySelector("span:last-child").textContent = isOpen ? "▼" : "▲";
         };
 
-        // 4단계: 캐릭터 카드
-        charList.forEach(char => {
-          const card = document.createElement("div");
-          card.className = "card";
-          card.dataset.charId = char.id;
-          
-          if (charState.selectedItems.some(s => s.id === char.id)) {
-            card.classList.add("selected");
-          }
+        // 2단계: 요일(Day)
+        Object.entries(days).forEach(([dName, animes]) => {
+            const dBtn = document.createElement("button");
+            dBtn.className = "day-btn";
 
-          card.innerHTML = `
-            <div class="card-badge">CV. ${char.cv}</div>
-            <img src="../${char.thumbnail}" alt="${char.name}" onerror="this.src='https://via.placeholder.com/200x280?text=No+Img'">
-            <div class="card-info">
-                <div class="card-title">${char.name}</div>
-                <div class="card-studio">${char.animeTitle}</div>
-            </div>
-          `;
+            const dContent = document.createElement("div");
+            dContent.className = "day-content-wrapper"; 
 
-          card.onclick = (e) => {
-            e.stopPropagation(); // 아코디언 버블링 방지
-            toggleCandidate(char, card);
-          };
-          aContent.appendChild(card);
+            if (isSearching) {
+                dContent.style.display = "block";
+                dBtn.classList.add("active");
+                dBtn.innerHTML = `<span>${DAY_LABELS[dName] || dName}</span> <span>▲</span>`;
+            } else {
+                dContent.style.display = "none";
+                dBtn.innerHTML = `<span>${DAY_LABELS[dName] || dName}</span> <span>▼</span>`;
+            }
+
+            dBtn.onclick = () => {
+                const isOpen = dContent.style.display === "block";
+                dContent.style.display = isOpen ? "none" : "block";
+                dBtn.classList.toggle("active", !isOpen);
+                dBtn.querySelector("span:last-child").textContent = isOpen ? "▼" : "▲";
+            };
+
+            // 3단계: 애니메이션 제목(Anime Title)
+            Object.entries(animes).forEach(([aTitle, charList]) => {
+                const aBtn = document.createElement("button");
+                aBtn.className = "anime-btn";
+
+                const aContent = document.createElement("div");
+                aContent.className = "anime-content";
+
+                if (isSearching) {
+                    aContent.classList.add("active");
+                    aBtn.classList.add("active");
+                    aBtn.innerHTML = `<span>${aTitle}</span> <span>▲</span>`;
+                } else {
+                    aBtn.innerHTML = `<span>${aTitle}</span> <span>▼</span>`;
+                }
+
+                aBtn.onclick = () => {
+                    aContent.classList.toggle("active");
+                    aBtn.classList.toggle("active");
+                    aBtn.querySelector("span:last-child").textContent = aContent.classList.contains("active") ? "▲" : "▼";
+                };
+
+                // 4단계: 캐릭터 카드
+                charList.forEach(char => {
+                    const card = document.createElement("div");
+                    card.className = "card";
+                    card.dataset.charId = char.id;
+                    
+                    if (charState.selectedItems.some(s => s.id === char.id)) {
+                        card.classList.add("selected");
+                    }
+
+                    // 검색어 하이라이트 처리 (선택 사항)
+                    let displayName = char.name;
+                    if (isSearching) {
+                        const regex = new RegExp(searchTerm.trim(), "gi");
+                        displayName = char.name.replace(regex, (match) => `<span style="color:var(--gold);">${match}</span>`);
+                    }
+
+                    card.innerHTML = `
+                        <div class="card-badge">CV. ${char.cv}</div>
+                        <img src="../${char.thumbnail}" alt="${char.name}" onerror="this.src='https://via.placeholder.com/200x280?text=No+Img'">
+                        <div class="card-info">
+                            <div class="card-title">${displayName}</div>
+                            <div class="card-studio">${char.animeTitle}</div>
+                        </div>
+                    `;
+
+                    card.onclick = (e) => {
+                        e.stopPropagation(); 
+                        toggleCandidate(char, card);
+                    };
+                    aContent.appendChild(card);
+                });
+
+                dContent.appendChild(aBtn);
+                dContent.appendChild(aContent);
+            });
+
+            qContent.appendChild(dBtn);
+            qContent.appendChild(dContent);
         });
 
-        dContent.appendChild(aBtn);
-        dContent.appendChild(aContent);
-      });
-
-      qContent.appendChild(dBtn);
-      qContent.appendChild(dContent);
+        qSection.appendChild(qBtn);
+        qSection.appendChild(qContent);
+        left.appendChild(qSection);
     });
-
-    qSection.appendChild(qBtn);
-    qSection.appendChild(qContent);
-    left.appendChild(qSection);
-  });
 }
 
 /**
@@ -400,7 +449,7 @@ function initSearch(allData) {
 
   // 검색창 활성화
   searchInput.disabled = false;
-  searchInput.placeholder = "캐릭터 또는 애니 제목 검색";
+  searchInput.placeholder = "캐릭터/애니 제목 검색";
 
   searchInput.oninput = function() {
     const val = this.value.trim().toLowerCase();

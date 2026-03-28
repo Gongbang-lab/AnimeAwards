@@ -217,25 +217,58 @@ function updatePreview() {
 
 function goStep2() {
     nominateState.step = 2;
-    document.getElementById("step-title").textContent = "베스트 각색상 부문";
+    
+    // 1. 헤더 타이틀 업데이트
+    document.getElementById("step-title").textContent = `${nominateState.awardName} 부문`;
+    
+    // 2. 버튼 상태 전환
     toggleElement("nav-home-btn", false);
     toggleElement("step1-next-btn", false);
     toggleElement("step2-back-btn", true);
     toggleElement("step2-award-btn", true);
+    
+    // 3. [핵심] Step 2 진입 시 검색창과 프리뷰 박스 숨김 처리
+    const searchArea = document.querySelector('.search-container');
+    const previewArea = document.getElementById("preview-box");
+    
+    if (searchArea) searchArea.classList.add("hidden");
+    if (previewArea) previewArea.classList.add("hidden");
+
+    // 4. 메인 콘텐츠 영역을 최종 후보 그리드로 교체
     const leftArea = document.getElementById("left-area");
-    leftArea.innerHTML = `<h2 style="color:var(--gold); margin-bottom:20px;">최종 수상작을 선택하세요</h2><div id="step2-grid"></div>`;
+    leftArea.innerHTML = `
+        <h2 style="color:var(--gold); margin-bottom:20px; font-size: 1.5rem; text-align: left;">최종 수상작을 선택하세요</h2>
+        <div id="step2-grid"></div>
+    `;
+    
     const gridDiv = document.getElementById("step2-grid");
-    nominateState.selectedItems.forEach(anime => gridDiv.appendChild(createCard(anime)));
+    // 선택된 항목들만 그리드에 추가
+    nominateState.selectedItems.forEach(anime => {
+        gridDiv.appendChild(createCard(anime));
+    });
 }
 
 function goStep1() {
     nominateState.step = 1;
     nominateState.selectedWinner = null;
-    document.getElementById("step-title").textContent = "";
+    
+    // 1. 버튼 및 타이틀 복구
     toggleElement("nav-home-btn", true);
     toggleElement("step1-next-btn", true);
     toggleElement("step2-back-btn", false);
     toggleElement("step2-award-btn", false);
+    
+    // 2. [핵심] Step 1 복귀 시 검색창과 프리뷰 박스 다시 표시
+    const searchArea = document.querySelector('.search-container');
+    const previewArea = document.getElementById("preview-box");
+    
+    if (searchArea) searchArea.classList.remove("hidden");
+    if (previewArea) previewArea.classList.remove("hidden");
+
+    const awardBtn = document.getElementById("step2-award-btn");
+    if (awardBtn) awardBtn.disabled = true;
+
+    // 3. Step 1 리스트 다시 렌더링
     renderStep1();
 }
 

@@ -107,12 +107,18 @@ function goToStep2() {
     document.getElementById("step1-buttons").classList.add("hidden");
     document.getElementById("step2-buttons").classList.remove("hidden");
 
+    // [추가] Step 2 진입 시 검색창 영역 숨김
+    const searchArea = document.querySelector('.search-container');
+    if (searchArea) searchArea.classList.add("hidden");
+
     document.getElementById("step-title").innerText = "올해의 스튜디오 상 부문";
-    document.getElementById("search-input").disabled = true;
+    
+    // input 자체도 비활성화 (보이지 않더라도 상태 유지)
+    const searchInput = document.getElementById("search-input");
+    if (searchInput) searchInput.disabled = true;
 
     renderFinalNominees();
 }
-
 /** Step 1 (후보 선정) 으로 돌아가기 */
 function goToStep1() {
     studioState.currentStep = 1;
@@ -127,8 +133,17 @@ function goToStep1() {
     document.getElementById("step2-buttons").classList.add("hidden");
     document.getElementById("step1-buttons").classList.remove("hidden");
 
-    document.getElementById("step-title").innerText = "올해의 스튜디오 상 부문"
-    document.getElementById("search-input").disabled = false;
+    // [추가] Step 1 복귀 시 검색창 영역 다시 표시
+    const searchArea = document.querySelector('.search-container');
+    if (searchArea) searchArea.classList.remove("hidden");
+
+    document.getElementById("step-title").innerText = "올해의 스튜디오 상 부문";
+    
+    const searchInput = document.getElementById("search-input");
+    if (searchInput) {
+        searchInput.disabled = false;
+        searchInput.value = ""; // 검색어 초기화
+    }
 
     renderStudioAccordionGroups();
     updatePreview();
@@ -306,14 +321,49 @@ function saveWinnerToLocal(item) {
     fireConfetti();
 }
 
+/** 검색 기능 초기화 (스튜디오 이름 + 애니메이션 제목) */
 function initSearch() {
     const input = document.getElementById("search-input");
+    if (!input) return;
+
     input.addEventListener("input", (e) => {
-        const keyword = e.target.value.toLowerCase();
+        const keyword = e.target.value.toLowerCase().trim();
+        
+        // 모든 카드를 순회하며 필터링
         document.querySelectorAll(".card").forEach(card => {
-            const name = card.querySelector(".card-title").textContent.toLowerCase();
-            card.style.display = name.includes(keyword) ? "block" : "none";
+            // 1. 카드에 표시된 스튜디오 이름 가져오기
+            const studioName = card.querySelector(".card-title").textContent;
+            
+            // 2. 해당 스튜디오의 전체 데이터 찾기
+            const studioData = AnimeStudioData.find(s => s.studio === studioName);
+            
+            if (!studioData) return;
+
+            // 3. 조건 검사 (스튜디오 이름 포함 여부)
+            const matchStudio = studioData.studio.toLowerCase().includes(keyword);
+            
+            // 4. 조건 검사 (작품 목록 중 제목 포함 여부)
+            const matchWorks = studioData.works && studioData.works.some(work => 
+                work.title.toLowerCase().includes(keyword)
+            );
+
+            // 둘 중 하나라도 맞으면 표시, 아니면 숨김
+            if (matchStudio || matchWorks) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
         });
+
+        // [추가 기능] 검색 중일 때는 아코디언 내용을 자동으로 펼쳐서 결과를 보여줌
+        if (keyword !== "") {
+            document.querySelectorAll(".acc-content").forEach(content => {
+                content.classList.add("open");
+            });
+            document.querySelectorAll(".acc-header").forEach(header => {
+                header.classList.add("active");
+            });
+        }
     });
 }
 

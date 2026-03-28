@@ -228,43 +228,43 @@ function removeCV(name) {
 function goStep2() {
     if (cvState.step === 1) {
         cvState.step = 2;
+        
+        // 1. Step 2 진입 시 검색창과 프리뷰 박스 숨김(hidden) 처리
+        const searchCont = document.querySelector('.search-container');
+        const previewBox = document.getElementById('step1-preview');
+
+        if (searchCont) searchCont.classList.add('hidden');
+        if (previewBox) previewBox.classList.add('hidden');
+
+        // 2. 타이틀 및 버튼 변경
         const stepTitle = document.getElementById("step-title");
         const genderKey = cvState.theme.includes("female") ? "female" : "male";
+        stepTitle.textContent = genderKey === "female" ? "올해의 여자 성우상 부문" : "올해의 남자 성우상 부문";
 
-        if (genderKey === "female") {
-            stepTitle.textContent = "올해의 여자 성우상 부문";
-        } else {
-            stepTitle.textContent = "올해의 남자 성우상 부문";
-        }
-
-        // 사이드바 버튼 변경
         document.getElementById("btn-back").textContent = "이전 단계";
         const nextBtn = document.getElementById("btn-next");
         nextBtn.textContent = "수상 결정";
         nextBtn.disabled = true;
 
-        // 메인 콘텐츠 교체 (타이틀 + 그리드 뷰)
+        // 3. 메인 콘텐츠 교체 (최종 투표 그리드 뷰)
         const mainContent = document.getElementById("main-content");
         mainContent.innerHTML = `
-            <h2 style="color:var(--gold); margin-bottom:20px; font-size: 1.5rem; text-align: left;">최종 수상작을 선택하세요</h2>
+            <h2 style="color:var(--gold); margin-bottom:20px; font-size: 1.5rem; text-align: left;">최종 수상자를 선택하세요</h2>
             <div id="step2-grid"></div>
         `;
         
         const grid = document.getElementById("step2-grid");
 
         cvState.selectedCVs.forEach(cv => {
-            // Step 2 전용 카드 생성
             const card = document.createElement("div");
             card.className = "step2-cv-card";
-
-            // 대표 작품 1개 추출 (서브 텍스트용)
             const repWork = cv.characters && cv.characters.length > 0 ? cv.characters[0].animeTitle : "";
             const subText = repWork ? `${repWork} 등` : "정보 없음";
 
             card.innerHTML = `
                 <div class="card-badge">${cv.characters.length}작품</div>
                 <div class="card-thumb">
-                    <img src="../${cv.cvimg}" alt="thumbnail" onerror="this.src='https://via.placeholder.com/200x300'">
+                    <img src="../${cv.cvimg}" onerror="this.src='https://via.placeholder.com/200x300'">
                 </div>
                 <div class="step2-card-info">
                     <div class="card-title">${cv.name}</div>
@@ -287,20 +287,50 @@ function goStep2() {
     }
 }
 
+function createStep2Card(cv) {
+    const card = document.createElement("div");
+    card.className = "step2-cv-card";
+    const repWork = cv.characters && cv.characters.length > 0 ? cv.characters[0].animeTitle : "";
+    
+    card.innerHTML = `
+        <div class="card-badge">${cv.characters.length}작품</div>
+        <div class="card-thumb">
+            <img src="../${cv.cvimg}" onerror="this.src='https://via.placeholder.com/200x300'">
+        </div>
+        <div class="step2-card-info">
+            <div class="card-title">${cv.name}</div>
+            <div class="card-studio">${repWork ? repWork + ' 등' : '정보 없음'}</div>
+        </div>
+    `;
+
+    card.onclick = () => {
+        document.querySelectorAll(".step2-cv-card").forEach(c => c.classList.remove("selected"));
+        card.classList.add("selected");
+        cvState.finalWinner = cv;
+        document.getElementById("btn-next").disabled = false;
+    };
+    return card;
+}
+
 function handleBack() {
     if (cvState.step === 2) {
         cvState.step = 1;
+        
+        // Step 1 복귀 시 숨겼던 검색창과 프리뷰 박스 다시 표시
+        const searchCont = document.querySelector('.search-container');
+        const previewBox = document.getElementById('step1-preview');
+
+        if (searchCont) searchCont.classList.remove('hidden');
+        if (previewBox) previewBox.classList.remove('hidden');
+
         document.getElementById("btn-back").textContent = "메인으로";
-        document.getElementById("btn-next").textContent = "다음 단계";
-        document.getElementById("btn-next").disabled = false;
-        renderCVStep1(); // Step 1 다시 렌더링 (선택 상태 유지됨)
-        // 선택된 카드들 다시 표시
-        setTimeout(() => {
-             cvState.selectedCVs.forEach(cv => {
-                 // 화면에 있는 카드 찾아서 selected 클래스 추가하는 로직 필요하나
-                 // renderCVStep1 내부에서 이미 처리함
-             });
-        }, 50);
+        const nextBtn = document.getElementById("btn-next");
+        nextBtn.textContent = "다음 단계";
+        
+        // 프리뷰에 선택된 아이템이 있으면 '다음 단계' 버튼 활성화
+        nextBtn.disabled = cvState.selectedCVs.length === 0;
+        
+        renderCVStep1(); // Step 1 다시 렌더링
     } else {
         location.href = "../index.html";
     }

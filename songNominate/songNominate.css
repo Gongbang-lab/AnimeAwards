@@ -71,7 +71,7 @@ body {
 /* 요일 클릭 시 펼쳐지는 그리드 */
 .day-content {
     display: none;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 20px; padding: 25px; background: #0a0a0a; border-top: 1px solid #222;
 }
 .day-content.active { display: grid; animation: slideDown 0.3s ease-out; }

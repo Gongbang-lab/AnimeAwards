@@ -221,21 +221,29 @@ function setupSearch() {
 
 // --- [ Step 이동 (originalNominate 스타일) ] ---
 function proceedToStep2() {
-    if (Object.keys(state.selectedList).length < 2) { alert("최소 2개 이상의 에피소드를 선택해주세요!"); return; }
+    if (Object.keys(state.selectedList).length < 2) { 
+        alert("최소 2개 이상의 에피소드를 선택해주세요!"); 
+        return; 
+    }
 
     els.step1.classList.add('hidden');
     els.step2.classList.remove('hidden');
+
+    // 1. [추가] Step 2 진입 시 검색창 숨김 처리
+    const searchArea = document.querySelector('.search-container');
+    if (searchArea) searchArea.classList.add('hidden');
 
     document.getElementById('step-title-display').textContent = "베스트 에피소드 상 부문";
     document.getElementById('next-btn').classList.add('hidden');
     document.getElementById('final-btn').classList.remove('hidden');
 
     const navBtn = document.getElementById('nav-btn');
-    navBtn.textContent = "이전 단계"; navBtn.onclick = backToStep1;
+    navBtn.textContent = "이전 단계"; 
+    navBtn.onclick = backToStep1;
     
-    // Step 2 프리뷰 숨김
+    // Step 2 프리뷰 박스 자체를 숨김
     const previewBox = document.querySelector('.status-indicator');
-    if (previewBox) previewBox.style.display = 'none';
+    if (previewBox) previewBox.classList.add('hidden'); // style.display 대신 hidden 클래스 사용 권장
 
     renderStep2Cards();
 }
@@ -244,16 +252,21 @@ function backToStep1() {
     els.step2.classList.add('hidden');
     els.step1.classList.remove('hidden');
 
+    // 1. [추가] Step 1 복귀 시 검색창 다시 표시
+    const searchArea = document.querySelector('.search-container');
+    if (searchArea) searchArea.classList.remove('hidden');
+
     document.getElementById('step-title-display').textContent = "베스트 에피소드 후보 선정";
     document.getElementById('next-btn').classList.remove('hidden');
     document.getElementById('final-btn').classList.add('hidden');
 
     const navBtn = document.getElementById('nav-btn');
-    navBtn.textContent = "메인으로"; navBtn.onclick = () => { location.href = '../index.html'; };
+    navBtn.textContent = "메인으로"; 
+    navBtn.onclick = () => { location.href = '../index.html'; };
 
     // Step 1 프리뷰 노출
     const previewBox = document.querySelector('.status-indicator');
-    if (previewBox) previewBox.style.display = 'block';
+    if (previewBox) previewBox.classList.remove('hidden');
 
     state.winnerKey = null;
 }

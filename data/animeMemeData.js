@@ -40,7 +40,7 @@ const AnimeMemeData = {
         "description": ""
     },
         "meme_006": {
-        "id": "meme_005",
+        "id": "meme_006",
         "name": "똥 쌌다고(한국어)",
         "type": "video",
         "src": "image/meme/똥 쌌다고_한국어.mp4",
