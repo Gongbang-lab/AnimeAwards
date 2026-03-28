@@ -42,7 +42,7 @@ body, html {
 .preview-box {
     background: #000;
     border: 1px solid #333;
-    height: 320px; /* 고정 높이 */
+    height: 280px; /* 고정 높이 */
     overflow-y: auto;
     padding: 10px;
     border-radius: 8px;
@@ -138,6 +138,13 @@ body, html {
     top: var(--nav-height); height: calc(100vh - var(--nav-height)); 
     padding: 25px; display: flex; flex-direction: column;
 }
+.fixed-sidebar-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* 부모인 .sidebar의 높이를 그대로 물려받음 */
+    width: 100%;
+}
+
 .action-buttons { margin-top: auto; display: flex; flex-direction: row; gap: 10px; width: 100%; }
 .action-buttons .btn-outline,
 .action-buttons .gold-btn {

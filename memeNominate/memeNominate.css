@@ -40,9 +40,11 @@ body {
     height: calc(100vh - var(--nav-height)); 
     padding: 40px 25px; /* 위쪽 패딩을 살짝 늘려줌 */
     box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
 }
 
-.action-buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.action-buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: auto;}
 .gold-btn { background: var(--gold); color: black; font-weight: 800; padding: 15px; border: none; cursor: pointer; border-radius: 6px; transition: 0.2s; }
 .gold-btn:disabled { opacity: 0.4; cursor: not-allowed; }
 .gold-btn:hover:not(:disabled) { background: #eac14d; transform: translateY(-2px); }

@@ -1185,15 +1185,15 @@ const AnimeSongs =
     "songs": [
       {
         "type": "op",
-        "title": "",
-        "artist": "",
-        "youtube": ""
+        "title": "LA FERALIA",
+        "artist": "고사키 사토루",
+        "youtube": "https://youtu.be/bq5sFepT84U?si=RqwAVXjoTxSRQO8F"
       },
       {
         "type": "ed",
         "title": "Tiny Light",
         "artist": "세븐틴",
-        "youtube": ""
+        "youtube": "https://youtu.be/eDN4PWwBpng?si=LKg04HMG3cImSwtE"
       }
     ]
   }
