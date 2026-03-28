@@ -30,5 +30,21 @@ const AnimeMemeData = {
         "src": "image/meme/하트튠 노래방.mp4",
         "origin": "한밤중 하트튠",
         "description": ""
+    },
+        "meme_005": {
+        "id": "meme_005",
+        "name": "똥 쌌다고",
+        "type": "video",
+        "src": "image/meme/똥 쌌다고.mp4",
+        "origin": "죠죠 스틸볼런",
+        "description": ""
+    },
+        "meme_006": {
+        "id": "meme_005",
+        "name": "똥 쌌다고(한국어)",
+        "type": "video",
+        "src": "image/meme/똥 쌌다고_한국어.mp4",
+        "origin": "죠죠 스틸볼런",
+        "description": ""
     }
 };

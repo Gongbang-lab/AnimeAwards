@@ -15,31 +15,90 @@ if (savedAwards) {
 
 document.getElementById("save-img-btn").onclick = function() {
     const target = document.body;
-    const btnGroup = document.querySelectorAll(".top-icon-btn");
+    const btnGroup = document.querySelectorAll(".top-icon-btn, .floating-btn");
+    const top3Cards = document.querySelectorAll(".award-card.rank-1, .award-card.rank-2, .award-card.rank-3");
     
+    // [추가] 그라데이션 제목 태그 가져오기
+    const mainTitle = document.querySelector('header h1');
+
+    // 1. 최상단으로 스크롤 이동
     window.scrollTo(0, 0);
 
-    // 캡처 전 처리: 상단 버튼 숨기기 & AOS 애니메이션 강제 완료
+    // 2. 캡처용 스타일 설정
     btnGroup.forEach(btn => btn.style.opacity = "0");
-    const aosElements = document.querySelectorAll('.aos-init');
-    aosElements.forEach(el => el.classList.add('aos-animate'));
 
-    html2canvas(target, {
-        useCORS: true,
-        allowTaint: true,
-        backgroundColor: "#121212",
-        scale: 2,
-        scrollY: -window.scrollY,
-        windowHeight: target.scrollHeight
-    }).then(canvas => {
-        const link = document.createElement("a");
-        link.download = `나의_애니메이션_어워즈_${new Date().toLocaleDateString()}.png`;
-        link.href = canvas.toDataURL("image/png");
-        link.click();
+    // [핵심 1] 제목 그라데이션 오류 방지 (글자 색상 강제 지정)
+    if (mainTitle) {
+        // html2canvas가 gradient-clip을 오해하지 않도록 색상을 명시적으로 지정
+        mainTitle.style.webkitTextFillColor = "#e0e0e0"; // 그라데이션 중간 톤의 밝은 회색으로 고정
+        mainTitle.style.color = "#e0e0e0";
+        mainTitle.style.backgroundImage = "none";      // 배경 그라데이션 일시 제거
+    }
+
+    // [핵심 2] TOP 3 애니메이션 종료 및 위치 고정 (기존 코드 유지)
+    top3Cards.forEach(card => {
+        card.style.animation = "none";
+        card.style.opacity = "1";
+        card.style.visibility = "visible";
         
-        // 다시 원래대로 복구
-        btnGroup.forEach(btn => btn.style.opacity = "1");
+        // CSS에 설정된 최종 위치(translateY)를 강제로 고정
+        if (card.classList.contains('rank-1')) card.style.transform = "translateY(-80px)";
+        else if (card.classList.contains('rank-2')) card.style.transform = "translateY(-20px)";
+        else if (card.classList.contains('rank-3')) card.style.transform = "translateY(40px)";
     });
+
+    // AOS 애니메이션 강제 종료 및 고정 (기존 코드 유지)
+    const aosElements = document.querySelectorAll('.aos-init');
+    aosElements.forEach(el => {
+        el.classList.add('aos-animate');
+        el.style.transition = 'none';
+        el.style.opacity = '1';
+        el.style.transform = 'none';
+    });
+
+    // 3. 브라우저가 위 스타일을 완전히 적용할 수 있도록 충분한 대기 시간 부여
+    setTimeout(() => {
+        html2canvas(target, {
+            useCORS: true,
+            allowTaint: true,
+            backgroundColor: "#050505", // CSS의 body 배경색과 일치
+            scale: 2,
+            scrollY: 0,
+            windowHeight: target.scrollHeight,
+            onclone: (clonedDoc) => {
+                clonedDoc.querySelectorAll(".top-icon-btn, .floating-btn").forEach(el => el.remove());
+            }
+        }).then(canvas => {
+            const link = document.createElement("a");
+            link.download = `나의_애니메이션_어워즈_${new Date().toLocaleDateString()}.png`;
+            link.href = canvas.toDataURL("image/png");
+            link.click();
+            
+            // 4. 원래 상태로 복구
+            btnGroup.forEach(btn => btn.style.opacity = "1");
+            
+            // 제목 스타일 복구
+            if (mainTitle) {
+                mainTitle.style.webkitTextFillColor = ""; // 원래 CSS 값으로 되돌림
+                mainTitle.style.color = "";
+                mainTitle.style.backgroundImage = "";
+            }
+
+            // TOP 3 스타일 복구
+            top3Cards.forEach(card => {
+                card.style.animation = "";
+                card.style.opacity = "";
+                card.style.transform = "";
+            });
+
+            // AOS 스타일 복구
+            aosElements.forEach(el => {
+                el.style.transition = '';
+                el.style.opacity = '';
+                el.style.transform = '';
+            });
+        });
+    }, 600); // 0.6초 대기
 };
 
 // 1. 카테고리 정의 및 비율 설정

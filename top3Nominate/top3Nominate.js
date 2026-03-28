@@ -5,7 +5,7 @@ const state = {
     allAnime: (typeof AnimeList !== 'undefined') ? AnimeList : [] 
 };
 
-const DAY_LABELS = { "Mondays":"월", "Tuesdays":"화", "Wednesdays":"수", "Thursdays":"목", "Fridays":"금", "Saturdays":"토", "Sundays":"일", "Anomaly":"기타", "Web":"웹" };
+const DAY_LABELS = { "Mondays":"월요일", "Tuesdays":"화요일", "Wednesdays":"수요일", "Thursdays":"목요일", "Fridays":"금요일", "Saturdays":"토요일", "Sundays":"일요일", "Anomaly":"변칙 편성", "Web":"웹" };
 const RANK_NAMES = ["우수상", "최우수상", "대상"];
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -82,7 +82,7 @@ function initStep1() {
         Object.keys(grouped[q]).forEach(day => {
             const dBtn = document.createElement('button');
             dBtn.className = 'day-btn';
-            dBtn.innerHTML = `<span>${DAY_LABELS[day] || day}요일</span> <span>+</span>`;
+            dBtn.innerHTML = `<span>${DAY_LABELS[day] || day}</span> <span>+</span>`;
             
             const dContent = document.createElement('div');
             dContent.className = 'day-content hidden'; 

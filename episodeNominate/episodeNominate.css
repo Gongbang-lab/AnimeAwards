@@ -268,7 +268,7 @@ body {
     flex-direction: column !important;
     justify-content: center !important;
     align-items: center !important;
-    padding: 12px !important;
+    padding: 5px !important;
     margin-bottom: 10px !important;
     background: var(--gray) !important;
     border-radius: 6px !important;

@@ -166,7 +166,7 @@ function createOSTCard(ost) {
 
     item.innerHTML = `
         <div class="card-thumb">
-            <img src="${ost.thumbnail}" alt="thumbnail" onerror="this.src='../images/default.png'">
+            <img src="../${ost.thumbnail}" alt="thumbnail" onerror="this.src='../images/default.png'">
         </div>
         <div class="card-info">
             <div class="anime-title">${ost.animeTitle}</div>
@@ -226,7 +226,7 @@ function renderOSTStep2() {
         card.innerHTML = `
             <div class="card-badge">${displayQuarter}</div>
             <div class="card-thumb">
-                <img src="${ost.thumbnail}" alt="thumbnail" onerror="this.src='../images/default.png'">
+                <img src="../${ost.thumbnail}" alt="thumbnail" onerror="this.src='../images/default.png'">
             </div>
             <div class="step2-card-info">
                 <div class="card-title">${ost.animeTitle}</div>
@@ -272,7 +272,7 @@ function openOSTAwardPopup() {
     const popup = document.getElementById("winner-popup");
     const winner = ostNominateState.finalWinner;
 
-    document.getElementById("winner-thumb").src = winner.thumbnail;
+    document.getElementById("winner-thumb").src = `../${winner.thumbnail}`;
     document.getElementById("winner-anime").textContent = winner.animeTitle;
     document.getElementById("winner-composers").textContent = winner.composers.length > 0 ? winner.composers.join(', ') : '-';
     document.getElementById("winner-quarter").textContent = winner.displayQuarter;

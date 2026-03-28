@@ -91,7 +91,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 12px;
+    padding: 5px;
     margin-bottom: 10px;
     background: var(--gray);
     border-radius: 6px;

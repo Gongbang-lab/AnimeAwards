@@ -6,7 +6,6 @@ const cinemaData =
         "director": "스튜디오 치즈",
         "writer": "호소다 마모루",
         "thumbnail": "image/cinema/끝이 없는 스칼렛.webp"
-        
     },
     {
         "title": "총집편 걸즈 밴드 크라이 청춘광주곡",

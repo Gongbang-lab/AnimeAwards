@@ -1176,7 +1176,14 @@ const AnimeSongs =
     "id": 61469,
     "quarter": "1분기",
     "animeTitle": "스틸 볼 런: 죠죠의 기묘한 모험",
-    "songs": []
+    "songs": [
+      {
+        "type": "ed",
+        "title": "Dance with STEEL BALL RUN",
+        "artist": "칸노 유고",
+        "youtube": "https://youtu.be/AFZFhMyiSZ8?si=nLsj9S2XoPEgCjWB"
+      }
+    ]
   },
   {
     "id": 49469,

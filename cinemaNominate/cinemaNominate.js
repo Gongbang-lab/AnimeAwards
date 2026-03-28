@@ -75,28 +75,8 @@ function selectMovie(title) {
     const currentCard = document.getElementById(currentId);
     if (currentCard) currentCard.classList.add('selected');
 
-    updatePreviewBox();
-
     const awardBtn = document.getElementById('btn-award');
     if (awardBtn) awardBtn.disabled = false;
-}
-
-function updatePreviewBox() {
-    const box = document.getElementById('preview-box');
-    const movie = cinemaState.selectedMovie;
-    if (!movie) return;
-
-    box.innerHTML = `
-        <div class="preview-content animate-fade">
-            <img src="../${movie.thumbnail}" class="preview-img">
-            <h3 class="preview-title">${movie.title}</h3>
-            <div class="preview-details">
-                <div class="detail-row"><span>Studio</span><strong>${movie.studio}</strong></div>
-                <div class="detail-row"><span>Director</span><strong>${movie.director}</strong></div>
-                <div class="detail-row"><span>Writer</span><strong>${movie.writer}</strong></div>
-            </div>
-        </div>
-    `;
 }
 
 function saveCinemaWinner() {
@@ -123,9 +103,25 @@ function showWinnerCelebration(winner) {
             <h2 class="modal-header">FINAL WINNER</h2>
             <hr class="modal-divider">
             <div class="winner-poster">
-                <img src="../${winner.thumbnail}">
+                <img src="../${winner.thumbnail}" alt="${winner.title}">
             </div>
             <h1 class="winner-title">${winner.title}</h1>
+            
+            <div class="winner-details">
+                <div class="detail-item">
+                    <span class="detail-label">Studio</span>
+                    <span class="detail-value">${winner.studio}</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Director</span>
+                    <span class="detail-value">${winner.director}</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Writer</span>
+                    <span class="detail-value">${winner.writer}</span>
+                </div>
+            </div>
+
             <button class="gold-btn full-width" onclick="location.href='../index.html'">결과 저장 및 메인으로</button>
         </div>
     `;

@@ -26,8 +26,8 @@ body {
 .brand { color: var(--gold); font-weight: 800; font-size: 1.4rem; margin-right: 25px; }
 #step-title { font-size: 1.1rem; color: #ccc; border-left: 3px solid var(--gray); padding-left: 15px; }
 
-.nav-search-area { padding-right: 40px; width: 300px; }
-.search-container { position: relative; width: 100%; margin-left: auto; margin-right: 20px; }
+.nav-search-area { padding-right: 40px; width: 23%; }
+.search-container { position: relative; width: 100%; margin-right: 10px; }
 #searchInput {
     width: 100%; padding: 10px; background: #000; border: 1px solid #444;
     border-radius: 10px; color: white; outline: none; box-sizing: border-box; transition: 0.3s;
@@ -55,7 +55,7 @@ body {
 }
 
 /* 사이드바 UI 요소 */
-.action-buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.action-buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: auto; }
 .gold-btn { background: var(--gold); color: black; font-weight: 800; padding: 15px; border: none; cursor: pointer; border-radius: 6px; transition: 0.2s; }
 .gold-btn:disabled { opacity: 0.4; cursor: not-allowed; }
 .btn-outline { background: transparent; border: 1px solid var(--gold); color: var(--gold); padding: 15px; font-weight: bold; cursor: pointer; border-radius: 6px; }
@@ -106,6 +106,43 @@ body {
 .winner-title { color: #fff; margin-bottom: 10px; }
 .winner-info { color: #888; margin-bottom: 30px; }
 .full-width { width: 100%; }
+/* --- 수상작 상세 정보 영역 (팝업 내부) --- */
+.winner-details {
+    background: #222;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    padding-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.detail-label {
+    color: #888;
+    font-weight: bold;
+}
+
+.detail-value {
+    color: var(--white);
+    font-weight: bold;
+    text-align: right;
+    word-break: keep-all;
+}
 
 .animate-fade { animation: fadeIn 0.4s ease-out; }
 @keyframes fadeIn {

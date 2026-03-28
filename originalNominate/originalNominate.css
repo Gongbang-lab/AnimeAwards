@@ -108,7 +108,7 @@ body {
 
 /* 프리뷰 리스트 내 개별 아이템 */
 .preview-item {
-    padding: 12px !important;
+    padding: 5px !important;
     margin: 0 0 8px 0 !important;
     background: var(--gray) !important;
     border-radius: 6px !important;
