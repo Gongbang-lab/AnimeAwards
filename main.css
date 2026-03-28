@@ -308,8 +308,14 @@ h1 {
 .award-thumb {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   display: block;
+}
+
+.award-thumb[src="./image/trophy.png"],
+.award-thumb[src*="trophy.png"], /* 경로 변형 대비 */
+.award-thumb.fallback-img {
+  object-fit: contain !important;
 }
 
 /* 요청하신 비율 설정 */

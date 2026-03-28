@@ -242,7 +242,7 @@ function createAwardCard(award, results, ratioClass) {
     const isVideo = String(displayThumb).endsWith('.mp4');
     const mediaTag = isVideo 
         ? `<video src="${displayThumb}" class="award-thumb" autoplay muted loop playsinline></video>`
-        : `<img src="${displayThumb}" class="award-thumb" onerror="this.src='./image/trophy.png'">`;
+        : `<img src="${displayThumb}" class="award-thumb" onerror="this.src='./image/trophy.png'" this.classList.add('fallback-img');>`;
 
     card.innerHTML = `
         <div class="thumb-wrapper">
