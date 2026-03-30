@@ -24,11 +24,15 @@ document.addEventListener("DOMContentLoaded", () => {
     charState.awardName = params.get("awardName") || "올해의 주연상";
 
     // 데이터 준비
-    const genderKey = charState.theme.includes("female") ? "female" : "male";
+    const genderKey = charState.theme.includes("female") ? "female"
+                : charState.theme.includes("male")   ? "male"
+                : "all";
     if (genderKey === "female") {
         document.getElementById("step-title").textContent = "올해의 여우 주연상 부문";
-    } else {
+    } else if (genderKey === "male") {
         document.getElementById("step-title").textContent = "올해의 남우 주연상 부문";
+    } else {
+        document.getElementById("step-title").textContent = "올해의 모든 캐릭터 상 부문";
     }
 
     const modalAwardEl = document.getElementById("modal-award-name");
@@ -39,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // 실시간 검색 기능 바인딩
     const searchInput = document.getElementById("search-input");
     searchInput.disabled = false;
-    searchInput.placeholder = "캐릭터 또는 애니 제목 검색";
+    searchInput.placeholder = "캐릭터/애니 제목 검색";
     searchInput.addEventListener("input", (e) => {
         renderStep1(e.target.value);
     });
@@ -55,7 +59,9 @@ function renderStep1(searchTerm = "") {
     const left = document.getElementById("left-area");
     left.innerHTML = ""; 
 
-    const genderKey = charState.theme.includes("female") ? "female" : "male";
+    const genderKey = charState.theme === "character_female" ? "female"
+                : charState.theme === "character_male"   ? "male"
+                : "all";
     let flatData = getNormalizedCharData(genderKey);
 
     // 검색어 필터링 로직 (캐릭터 이름 또는 애니메이션 제목)
@@ -405,9 +411,10 @@ function getNormalizedCharData(genderKey) {
     const animeId = String(anime.id);
     const characters = charMap[animeId];
     if (characters && Array.isArray(characters)) {
-      const filtered = characters.filter(c => 
-        String(c.gender).trim().toLowerCase() === String(genderKey).trim().toLowerCase()
-      );
+      const filtered = characters.filter(c => {
+        if (genderKey === "all") return true; // ← all이면 전부 통과
+            return String(c.gender).trim().toLowerCase() === String(genderKey).trim().toLowerCase();
+      });
       filtered.forEach((char, idx) => {
         result.push({
           id: `${animeId}_${char.name}_${idx}`,

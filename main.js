@@ -106,7 +106,7 @@ const categories = [
     { title: "시상식 오프닝", themes: ['meme'], ratio: 'ratio-16-9' },
     { title: "음악 부문", themes: ['opening', 'ending', 'ost'], ratio: 'ratio-16-9' },
     { title: "성우 부문", themes: ['rookie_voice', 'voice_male', 'voice_female'], ratio: 'ratio-11-16' },
-    { title: "캐릭터 부문", themes: ['character_male', 'character_female', 'best_couple'], ratio: 'ratio-11-16' },
+    { title: "캐릭터 부문", themes: ['character_male', 'character_female', 'best_couple','all_gender'], ratio: 'ratio-11-16' },
     { title: "스태프 부문", themes: ['original', 'dramatization', 'director'], ratio: 'ratio-poster' },
     { title: "아트 부문", themes: ['in_between', 'key_animation'], ratio: 'ratio-poster' },
     { title: "애니메이션 시리즈", themes: ['default', 'best_episode'], ratio: 'ratio-poster' },
@@ -284,6 +284,7 @@ function createAwardCard(award, results, ratioClass) {
         else if (theme === 'studio') path = "studioNominate/studioNominate.html";
         else if (theme === 'character_male') path = "charNominate/charNominate.html";
         else if (theme === 'character_female') path = "charNominate/charNominate.html";
+        else if (theme === 'all_gender') path = "charNominate/charNominate.html";
         else if (theme === 'voice_male') path = "cvNominate/cvNominate.html";
         else if (theme === 'voice_female') path = "cvNominate/cvNominate.html";
         else if (theme === 'best_couple') path = "bestCoupleNominate/bestCoupleNominate.html";
