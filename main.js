@@ -233,8 +233,18 @@ function createAwardCard(award, results, ratioClass) {
             if (foundPath) displayThumb = foundPath;
         }
 
-        if (winner.bestcouple) displayTitle = `${winner.bestcouple.name1} ♥ ${winner.bestcouple.name2}`;
-        else displayTitle = winner.title || winner.name || winner.animeTitle || "수상작";
+        if (winner.bestcouple) {
+            // 베스트 커플: bestcouple 객체 안의 name1, name2 사용
+            displayTitle = `${winner.bestcouple.name1} ♥ ${winner.bestcouple.name2}`;
+        } else if (winner.name1 && winner.name2) {
+            // 베스트 커플: 최상위에 name1, name2가 바로 있는 경우
+            displayTitle = `${winner.name1} ♥ ${winner.name2}`;
+        } else if (winner.episodeNo && winner.episodeTitle) {
+            // 베스트 에피소드: "제59화 - 센다이 콜로니" 형식
+            displayTitle = `${winner.episodeNo} - ${winner.episodeTitle}`;
+        } else {
+            displayTitle = winner.title || winner.name || winner.animeTitle || "수상작";
+        }
         
         card.classList.add("has-winner");
     }
