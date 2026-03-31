@@ -127,8 +127,9 @@ function createAnimeItem(anime) {
         ? animeEPData[String(anime.id)] 
         : [];
 
+    // 💡 수정된 부분: ${ep["episode no"]} 뒤에 : ${ep["episode title"]} 추가
     const options = epList.length > 0
-        ? epList.map((ep, i) => `<option value="${i}">${ep["episode no"]}</option>`).join('')
+        ? epList.map((ep, i) => `<option value="${i}">${ep["episode no"]} : ${ep["episode title"]}</option>`).join('')
         : `<option value="" disabled>에피소드 없음</option>`;
 
     div.innerHTML = `
