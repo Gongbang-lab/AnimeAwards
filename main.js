@@ -17,37 +17,27 @@ document.getElementById("save-img-btn").onclick = function() {
     const target = document.body;
     const btnGroup = document.querySelectorAll(".top-icon-btn, .floating-btn");
     const top3Cards = document.querySelectorAll(".award-card.rank-1, .award-card.rank-2, .award-card.rank-3");
-    
-    // [추가] 그라데이션 제목 태그 가져오기
     const mainTitle = document.querySelector('header h1');
 
-    // 1. 최상단으로 스크롤 이동
     window.scrollTo(0, 0);
 
-    // 2. 캡처용 스타일 설정
     btnGroup.forEach(btn => btn.style.opacity = "0");
 
-    // [핵심 1] 제목 그라데이션 오류 방지 (글자 색상 강제 지정)
     if (mainTitle) {
-        // html2canvas가 gradient-clip을 오해하지 않도록 색상을 명시적으로 지정
-        mainTitle.style.webkitTextFillColor = "#e0e0e0"; // 그라데이션 중간 톤의 밝은 회색으로 고정
+        mainTitle.style.webkitTextFillColor = "#e0e0e0";
         mainTitle.style.color = "#e0e0e0";
-        mainTitle.style.backgroundImage = "none";      // 배경 그라데이션 일시 제거
+        mainTitle.style.backgroundImage = "none";
     }
 
-    // [핵심 2] TOP 3 애니메이션 종료 및 위치 고정 (기존 코드 유지)
     top3Cards.forEach(card => {
         card.style.animation = "none";
         card.style.opacity = "1";
         card.style.visibility = "visible";
-        
-        // CSS에 설정된 최종 위치(translateY)를 강제로 고정
         if (card.classList.contains('rank-1')) card.style.transform = "translateY(-80px)";
         else if (card.classList.contains('rank-2')) card.style.transform = "translateY(-20px)";
         else if (card.classList.contains('rank-3')) card.style.transform = "translateY(40px)";
     });
 
-    // AOS 애니메이션 강제 종료 및 고정 (기존 코드 유지)
     const aosElements = document.querySelectorAll('.aos-init');
     aosElements.forEach(el => {
         el.classList.add('aos-animate');
@@ -56,49 +46,62 @@ document.getElementById("save-img-btn").onclick = function() {
         el.style.transform = 'none';
     });
 
-    // 3. 브라우저가 위 스타일을 완전히 적용할 수 있도록 충분한 대기 시간 부여
-    setTimeout(() => {
-        html2canvas(target, {
-            useCORS: true,
-            allowTaint: true,
-            backgroundColor: "#050505", // CSS의 body 배경색과 일치
-            scale: 2,
-            scrollY: 0,
-            windowHeight: target.scrollHeight,
-            onclone: (clonedDoc) => {
-                clonedDoc.querySelectorAll(".top-icon-btn, .floating-btn").forEach(el => el.remove());
-            }
-        }).then(canvas => {
-            const link = document.createElement("a");
-            link.download = `나의_애니메이션_어워즈_${new Date().toLocaleDateString()}.png`;
-            link.href = canvas.toDataURL("image/png");
-            link.click();
-            
-            // 4. 원래 상태로 복구
-            btnGroup.forEach(btn => btn.style.opacity = "1");
-            
-            // 제목 스타일 복구
-            if (mainTitle) {
-                mainTitle.style.webkitTextFillColor = ""; // 원래 CSS 값으로 되돌림
-                mainTitle.style.color = "";
-                mainTitle.style.backgroundImage = "";
-            }
+setTimeout(() => {
+    const pageW = document.body.scrollWidth;
+    const pageH = document.body.scrollHeight;
 
-            // TOP 3 스타일 복구
-            top3Cards.forEach(card => {
-                card.style.animation = "";
-                card.style.opacity = "";
-                card.style.transform = "";
-            });
+    // ✅ Chrome 최대 캔버스 픽셀 수 기준으로 안전한 scale 계산
+    const MAX_CANVAS_PIXELS = 16777216; // 4096 x 4096 = Chrome 실질 한계
+    const safeScale = Math.floor(Math.sqrt(MAX_CANVAS_PIXELS / (pageW * pageH)) * 10) / 10;
+    const scale = Math.max(1, Math.min(safeScale, 2.5));
 
-            // AOS 스타일 복구
-            aosElements.forEach(el => {
-                el.style.transition = '';
-                el.style.opacity = '';
-                el.style.transform = '';
-            });
+    console.log(`적용 scale: ${scale}`); // 이 페이지에선 약 1.2 나올 것
+
+    html2canvas(target, {
+        useCORS: true,
+        allowTaint: true,
+        backgroundColor: "#050505",
+        scale: scale,
+        scrollY: 0,
+        windowWidth: window.innerWidth,
+        windowHeight: pageH,
+        imageTimeout: 0,
+        logging: false,
+        onclone: (clonedDoc) => {
+            clonedDoc.querySelectorAll(".top-icon-btn, .floating-btn").forEach(el => el.remove());
+        }
+    }).then(canvas => {
+        const dataUrl = canvas.toDataURL("image/webp", 0.92);
+
+        if (dataUrl.length < 1000) {
+            console.error("❌ 여전히 빈 canvas — scale을 더 낮춰야 함");
+            return;
+        }
+
+        const link = document.createElement("a");
+        link.download = `나의_애니메이션_어워즈_${new Date().toLocaleDateString()}.webp`;
+        link.href = dataUrl;
+        link.click();
+
+        // 복구
+        btnGroup.forEach(btn => btn.style.opacity = "1");
+        if (mainTitle) {
+            mainTitle.style.webkitTextFillColor = "";
+            mainTitle.style.color = "";
+            mainTitle.style.backgroundImage = "";
+        }
+        top3Cards.forEach(card => {
+            card.style.animation = "";
+            card.style.opacity = "";
+            card.style.transform = "";
         });
-    }, 600); // 0.6초 대기
+        aosElements.forEach(el => {
+            el.style.transition = '';
+            el.style.opacity = '';
+            el.style.transform = '';
+        });
+    });
+}, 600);
 };
 
 // 1. 카테고리 정의 및 비율 설정
