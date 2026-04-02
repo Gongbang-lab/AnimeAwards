@@ -13,22 +13,21 @@ if (savedAwards) {
     Awards.push(...parsedAwards);  // 로컬스토리지에 저장된(추가/삭제된) 데이터로 채워넣기
 }
 
-document.getElementById("save-img-btn").onclick = function() {
+document.getElementById("save-img-btn").onclick = async function () {
     const target = document.body;
     const btnGroup = document.querySelectorAll(".top-icon-btn, .floating-btn");
     const top3Cards = document.querySelectorAll(".award-card.rank-1, .award-card.rank-2, .award-card.rank-3");
     const mainTitle = document.querySelector('header h1');
+    const aosElements = document.querySelectorAll('.aos-init');
 
+    // ── 캡처 준비 ──────────────────────────────
     window.scrollTo(0, 0);
-
     btnGroup.forEach(btn => btn.style.opacity = "0");
-
     if (mainTitle) {
         mainTitle.style.webkitTextFillColor = "#e0e0e0";
         mainTitle.style.color = "#e0e0e0";
         mainTitle.style.backgroundImage = "none";
     }
-
     top3Cards.forEach(card => {
         card.style.animation = "none";
         card.style.opacity = "1";
@@ -37,8 +36,6 @@ document.getElementById("save-img-btn").onclick = function() {
         else if (card.classList.contains('rank-2')) card.style.transform = "translateY(-20px)";
         else if (card.classList.contains('rank-3')) card.style.transform = "translateY(40px)";
     });
-
-    const aosElements = document.querySelectorAll('.aos-init');
     aosElements.forEach(el => {
         el.classList.add('aos-animate');
         el.style.transition = 'none';
@@ -46,62 +43,88 @@ document.getElementById("save-img-btn").onclick = function() {
         el.style.transform = 'none';
     });
 
-setTimeout(() => {
-    const pageW = document.body.scrollWidth;
-    const pageH = document.body.scrollHeight;
+    await new Promise(r => setTimeout(r, 600));
 
-    // ✅ Chrome 최대 캔버스 픽셀 수 기준으로 안전한 scale 계산
-    const MAX_CANVAS_PIXELS = 16777216; // 4096 x 4096 = Chrome 실질 한계
-    const safeScale = Math.floor(Math.sqrt(MAX_CANVAS_PIXELS / (pageW * pageH)) * 10) / 10;
-    const scale = Math.max(1, Math.min(safeScale, 2.5));
+    // ── 설정 ───────────────────────────────────
+    const ZOOM = 1.5;       // 확대 배율 (이것만 조절)
+    const PAGE_W = document.body.scrollWidth;
+    const PAGE_H = document.body.scrollHeight;
 
-    console.log(`적용 scale: ${scale}`); // 이 페이지에선 약 1.2 나올 것
+    // 조각당 높이: 픽셀 제한(268MB) 초과 안 하도록 자동 계산
+    // canvas 1px = RGBA 4byte → 268,435,456 bytes / 4 = 67,108,864px
+    const MAX_PX = 67_108_864;
+    const CANVAS_W = Math.ceil(PAGE_W * ZOOM);
+    const SLICE_PAGE_H = Math.floor(MAX_PX / CANVAS_W / ZOOM); // 원본 기준 조각 높이
 
-    html2canvas(target, {
-        useCORS: true,
-        allowTaint: true,
-        backgroundColor: "#050505",
-        scale: scale,
-        scrollY: 0,
-        windowWidth: window.innerWidth,
-        windowHeight: pageH,
-        imageTimeout: 0,
-        logging: false,
-        onclone: (clonedDoc) => {
-            clonedDoc.querySelectorAll(".top-icon-btn, .floating-btn").forEach(el => el.remove());
-        }
-    }).then(canvas => {
-        const dataUrl = canvas.toDataURL("image/webp", 0.92);
+    const sliceCount = Math.ceil(PAGE_H / SLICE_PAGE_H);
+    console.log(`페이지: ${PAGE_W}x${PAGE_H} / ZOOM: ${ZOOM} / 조각 수: ${sliceCount}`);
 
-        if (dataUrl.length < 1000) {
-            console.error("❌ 여전히 빈 canvas — scale을 더 낮춰야 함");
-            return;
-        }
+    // ── 조각별 캡처 ────────────────────────────
+    const slices = [];
 
-        const link = document.createElement("a");
-        link.download = `나의_애니메이션_어워즈_${new Date().toLocaleDateString()}.webp`;
-        link.href = dataUrl;
-        link.click();
+    for (let i = 0; i < sliceCount; i++) {
+        const startY  = i * SLICE_PAGE_H;
+        const sliceH  = Math.min(SLICE_PAGE_H, PAGE_H - startY);
 
-        // 복구
-        btnGroup.forEach(btn => btn.style.opacity = "1");
-        if (mainTitle) {
-            mainTitle.style.webkitTextFillColor = "";
-            mainTitle.style.color = "";
-            mainTitle.style.backgroundImage = "";
-        }
-        top3Cards.forEach(card => {
-            card.style.animation = "";
-            card.style.opacity = "";
-            card.style.transform = "";
+        const canvas = await html2canvas(target, {
+            useCORS: true,
+            allowTaint: true,
+            backgroundColor: "#050505",
+            scale: ZOOM,            // scale = ZOOM 으로 단순화
+            scrollY: 0,
+            x: 0,
+            y: startY,
+            width: document.getElementById("main-container").offsetWidth + 48,
+            height: sliceH,
+            windowWidth: document.getElementById("main-container").offsetWidth + 48,
+            windowHeight: PAGE_H,
+            imageTimeout: 0,
+            logging: false,
+            onclone: (clonedDoc) => {
+                clonedDoc.querySelectorAll(".top-icon-btn, .floating-btn")
+                    .forEach(el => el.remove());
+            }
         });
-        aosElements.forEach(el => {
-            el.style.transition = '';
-            el.style.opacity = '';
-            el.style.transform = '';
-        });
+
+        slices.push(canvas);
+        console.log(`조각 ${i + 1}/${sliceCount}: ${canvas.width}x${canvas.height}`);
+    }
+
+    // ── 조각 합치기 ────────────────────────────
+    const finalCanvas = document.createElement("canvas");
+    finalCanvas.width  = slices[0].width;
+    finalCanvas.height = slices.reduce((sum, c) => sum + c.height, 0);
+
+    const ctx = finalCanvas.getContext("2d");
+    let offsetY = 0;
+    for (const slice of slices) {
+        ctx.drawImage(slice, 0, offsetY);
+        offsetY += slice.height;
+    }
+
+    // ── 저장 ───────────────────────────────────
+    const link = document.createElement("a");
+    link.download = `나의_애니메이션_어워즈_${new Date().toLocaleDateString()}.webp`;
+    link.href = finalCanvas.toDataURL("image/webp", 0.92);
+    link.click();
+
+    // ── 복구 ───────────────────────────────────
+    btnGroup.forEach(btn => btn.style.opacity = "1");
+    if (mainTitle) {
+        mainTitle.style.webkitTextFillColor = "";
+        mainTitle.style.color = "";
+        mainTitle.style.backgroundImage = "";
+    }
+    top3Cards.forEach(card => {
+        card.style.animation = "";
+        card.style.opacity = "";
+        card.style.transform = "";
     });
-}, 600);
+    aosElements.forEach(el => {
+        el.style.transition = '';
+        el.style.opacity = '';
+        el.style.transform = '';
+    });
 };
 
 // 1. 카테고리 정의 및 비율 설정
