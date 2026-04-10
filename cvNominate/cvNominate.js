@@ -348,13 +348,15 @@ function openDetailModal(cv) {
     nameEl.textContent = `${cv.name} 참여 작품`;
     imgEl.src = `../${cv.cvimg}`;
     
-    // 캐릭터 이미지와 애니 제목을 함께 보여주는 리스트 형식으로 생성
+    // 리스트 뷰에서 그리드 뷰 카드 UI로 변경
     worksContainer.innerHTML = cv.characters.map(char => `
-        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px; background: #222; padding: 10px; border-radius: 8px;">
-            <img src="../${char.img}" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 1px solid var(--gold);">
-            <div>
-                <div style="color: var(--gold); font-weight: bold; font-size: 0.9rem;">${char.animeTitle}</div>
-                <div style="color: #fff; font-size: 1rem;">${char.charName} 역</div>
+        <div class="work-card">
+            <div class="work-card-thumb">
+                <img src="../${char.img}" onerror="this.src='https://via.placeholder.com/150'">
+            </div>
+            <div class="work-card-info">
+                <div class="work-card-title">${char.animeTitle}</div>
+                <div class="work-card-char">${char.charName} 역</div>
             </div>
         </div>
     `).join('');
