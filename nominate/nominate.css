@@ -201,7 +201,7 @@ body {
 .card.selected { border-color: var(--gold); box-shadow: 0 0 15px rgba(212, 175, 55, 0.3); }
 
 .card img {
-    width: 100%; aspect-ratio: 3/4; object-fit: cover; display: block;
+    width: 100%; aspect-ratio: 2/3; object-fit: cover; display: block;
     border-radius: 6px 6px 0 0;
 }
 .card-info { padding: 12px; text-align: center; }

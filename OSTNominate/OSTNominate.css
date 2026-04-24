@@ -103,14 +103,14 @@ body {
 }
 /* card-thumb에 border-radius 보정 */
 .ost-card .card-thumb {
-    position: relative; width: 100%; aspect-ratio: 1/1;
+    position: relative; width: 100%; aspect-ratio: 2/3;
     overflow: hidden;
     border-radius: 6px 6px 0 0; /* ✅ 상단 모서리만 */
 }
 .ost-card:hover { transform: translateY(-5px); border-color: #555; }
 .ost-card.selected { border: 2px solid var(--gold); box-shadow: 0 0 15px rgba(212, 175, 55, 0.4); transform: translateY(-5px); }
 
-.card-thumb { position: relative; width: 100%; aspect-ratio: 1/1; overflow: hidden; }
+.card-thumb { position: relative; width: 100%; aspect-ratio: 2/3; overflow: hidden; }
 .card-thumb img { width: 100%; height: 100%; object-fit: cover; }
 
 .card-info { padding: 15px; text-align: center; }
@@ -165,14 +165,14 @@ body {
     border: 1px solid var(--gold); z-index: 10;
 }
 .step2-ost-card .card-thumb { 
-    width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;
+    width: 100%; aspect-ratio: 2/3; object-fit: cover; display: block;
     align-items: center;
     justify-content: center;
     overflow: hidden;
 }
 
 .step2-ost-card .card-thumb img { 
-    width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block; object-position: center;
+    width: 100%; aspect-ratio: 2/3; object-fit: cover; display: block; object-position: center;
 }
 
 .step2-ost-card .step2-card-info { padding: 15px; text-align: left; }
@@ -203,7 +203,7 @@ body {
 
 .modal-thumb-wrap { position: relative; width: 100%; }
 .modal-thumb-wrap img {
-    width: 100%; aspect-ratio: 1/1; object-fit: cover;
+    width: 100%; aspect-ratio: 2/3; object-fit: cover;
     border-radius: 8px; border: 1px solid var(--gold); display: block;
 }
 
