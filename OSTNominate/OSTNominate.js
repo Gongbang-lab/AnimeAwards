@@ -5,6 +5,8 @@ const ostNominateState = {
     currentAward: null
 };
 
+let cachedVoteData = null;
+
 const dayMap = {
     "mondays": "월요일", "tuesdays": "화요일", "wednesdays": "수요일", "thursdays": "목요일",
     "fridays": "금요일", "saturdays": "토요일", "sundays": "일요일", "anomaly": "변칙 편성", "web": "웹"
@@ -86,6 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("close-modal-btn").onclick = () => {
         document.getElementById("winner-popup").classList.remove("active");
     };
+    waitForFirebaseAndListen();
 });
 
 function renderOSTStep1() {
@@ -152,27 +155,52 @@ function renderFilteredList(query) {
         quarterSection.append(quarterBtn, quarterContent);
         listContainer.appendChild(quarterSection);
     });
+    applyVoteBadges();
 }
 
 function createOSTCard(ost) {
     const item = document.createElement("div");
     item.className = "ost-card";
 
+    item.setAttribute('data-category', ostNominateState.currentAward);
+    item.setAttribute('data-anime-id', ost.animeTitle);
+
     if (ostNominateState.selectedItems.some(s => s.uniqueId === ost.uniqueId)) {
         item.classList.add("selected");
     }
 
-    const composerText = ost.composers.length > 0 ? ost.composers.join(', ') : '';
+    // ✅ DOM 직접 생성 (innerHTML 덮어쓰기 방지)
+    const rateBadge = document.createElement("div");
+    rateBadge.className = "card-selection-rate";
+    rateBadge.style.display = "none";
+    rateBadge.textContent = "0/0";
 
-    item.innerHTML = `
-        <div class="card-thumb">
-            <img src="../${ost.thumbnail}" alt="thumbnail" onerror="this.src='../images/default.png'">
-        </div>
-        <div class="card-info">
-            <div class="anime-title">${ost.animeTitle}</div>
-            ${composerText ? `<div class="composer-title">${composerText}</div>` : ''}
-        </div>
-    `;
+    const thumb = document.createElement("div");
+    thumb.className = "card-thumb";
+    const img = document.createElement("img");
+    img.src = `../${ost.thumbnail}`;
+    img.alt = "thumbnail";
+    img.onerror = () => { img.src = '../images/default.png'; };
+    thumb.appendChild(img);
+
+    const cardInfo = document.createElement("div");
+    cardInfo.className = "card-info";
+
+    const animeTitle = document.createElement("div");
+    animeTitle.className = "anime-title";
+    animeTitle.textContent = ost.animeTitle;
+    cardInfo.appendChild(animeTitle);
+
+    if (ost.composers.length > 0) {
+        const composerEl = document.createElement("div");
+        composerEl.className = "composer-title";
+        composerEl.textContent = ost.composers.join(', ');
+        cardInfo.appendChild(composerEl);
+    }
+
+    item.appendChild(rateBadge);
+    item.appendChild(thumb);
+    item.appendChild(cardInfo);
 
     item.onclick = () => {
         const idx = ostNominateState.selectedItems.findIndex(s => s.uniqueId === ost.uniqueId);
@@ -266,6 +294,9 @@ function saveOSTAwardResult() {
         quarter: winner.displayQuarter
     };
     localStorage.setItem("anime_awards_result", JSON.stringify(stored));
+    if (window.submitSingleAwardToDB) {
+        window.submitSingleAwardToDB(award);
+    }
 }
 
 function openOSTAwardPopup() {
@@ -294,4 +325,43 @@ function fireConfetti() {
         confetti({ particleCount: 3, angle: 120, spread: 55, origin: { x: 1, y: 0.6 }, zIndex: 9999, colors: ['#d4af37', '#ffffff'] });
         if (Date.now() < end) requestAnimationFrame(frame);
     }());
+}
+
+// ──────────────────────────────────────────────────────────
+// Firebase 실시간 득표율 뱃지
+// ──────────────────────────────────────────────────────────
+function applyVoteBadges() {
+    if (!cachedVoteData) return;
+
+    const total = cachedVoteData._participants || 0;
+
+    // ✅ ost-card 클래스 타겟팅
+    document.querySelectorAll('.ost-card').forEach(card => {
+        const animeId = card.getAttribute('data-anime-id');
+        const rateBadge = card.querySelector('.card-selection-rate');
+        if (!rateBadge || !animeId) return;
+
+        const count = cachedVoteData[animeId] || 0;
+        rateBadge.innerText = `${count}/${total}`;
+        rateBadge.style.display = "block";
+    });
+}
+
+function listenToVoteRates() {
+    if (!window.fbOnValue || !window.fbDB) return;
+
+    const categoryRef = window.fbRef(window.fbDB, `votes/categories/${ostNominateState.currentAward}`);
+
+    window.fbOnValue(categoryRef, (snapshot) => {
+        cachedVoteData = snapshot.val() || {};
+        applyVoteBadges();
+    });
+}
+
+function waitForFirebaseAndListen() {
+    if (window.fbOnValue && window.fbDB) {
+        listenToVoteRates();
+    } else {
+        setTimeout(waitForFirebaseAndListen, 300);
+    }
 }

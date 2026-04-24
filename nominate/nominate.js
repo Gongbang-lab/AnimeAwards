@@ -8,6 +8,8 @@ const nominateState = {
     awardName: ""
 };
 
+let cachedVoteData = null;
+
 // URL 파라미터 처리
 const params = new URLSearchParams(location.search);
 nominateState.awardName = params.get("awardName");
@@ -111,6 +113,7 @@ function renderStep1(filterText = "") {
         qSection.appendChild(qContent);
         leftArea.appendChild(qSection);
     });
+    applyVoteBadges();
 }
 
 // 카드 생성 함수
@@ -122,12 +125,15 @@ function createCard(anime) {
         : (nominateState.selectedWinner && nominateState.selectedWinner.id === anime.id);
 
     card.className = `card ${isSelected ? 'selected' : ''}`;
-    
-    // 데이터 경로: image/animeimg/... -> HTML 위치 기준 ../ 추가
+
+    // ✅ Firebase 연동용 data 속성
+    card.setAttribute('data-category', nominateState.awardName);
+    card.setAttribute('data-anime-id', anime.title);
+
     const imgPath = `../${anime.thumbnail}`;
 
-    // 배지는 데이터의 quarter("1분기")를 그대로 사용
     card.innerHTML = `
+        <div class="card-selection-rate" style="display:none;">0/0</div>
         <div class="card-badge">${anime.quarter}</div>
         <img src="${imgPath}" onerror="this.src='https://placehold.co/400x600/2f3542/ffffff?text=No+Image'" loading="lazy">
         <div class="card-info">
@@ -244,6 +250,7 @@ function goStep2() {
         gridDiv.appendChild(createCard(anime));
     });
     leftArea.appendChild(gridDiv);
+    applyVoteBadges();
 }
 
 function goStep1() {
@@ -374,6 +381,10 @@ function saveAwardResult(winner) {
 
     localStorage.setItem("anime_awards_result", JSON.stringify(currentResults));
     console.log("Saved:", awardName, winner.title);
+
+    if (window.submitSingleAwardToDB) {
+        window.submitSingleAwardToDB(nominateState.awardName);
+    }
 }
 
 function fireConfetti() {
@@ -425,4 +436,45 @@ const btnGoMain = document.getElementById("go-main-btn");
 if(btnGoMain) btnGoMain.onclick = () => location.href = "../index.html";
 
 // 초기 실행
+renderStep1();
+
+// ──────────────────────────────────────────────────────────
+// Firebase 실시간 득표율 뱃지
+// ──────────────────────────────────────────────────────────
+function applyVoteBadges() {
+    if (!cachedVoteData) return;
+
+    const total = cachedVoteData._participants || 0;
+
+    document.querySelectorAll('.card').forEach(card => {
+        const animeId = card.getAttribute('data-anime-id');
+        const rateBadge = card.querySelector('.card-selection-rate');
+        if (!rateBadge || !animeId) return;
+
+        const count = cachedVoteData[animeId] || 0;
+        rateBadge.innerText = `${count}/${total}`;
+        rateBadge.style.display = "block";
+    });
+}
+
+function listenToVoteRates() {
+    if (!window.fbOnValue || !window.fbDB) return;
+
+    const categoryRef = window.fbRef(window.fbDB, `votes/categories/${nominateState.awardName}`);
+
+    window.fbOnValue(categoryRef, (snapshot) => {
+        cachedVoteData = snapshot.val() || {};
+        applyVoteBadges();
+    });
+}
+
+function waitForFirebaseAndListen() {
+    if (window.fbOnValue && window.fbDB) {
+        listenToVoteRates();
+    } else {
+        setTimeout(waitForFirebaseAndListen, 300);
+    }
+}
+
+waitForFirebaseAndListen();
 renderStep1();

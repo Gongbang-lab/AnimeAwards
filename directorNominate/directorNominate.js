@@ -7,6 +7,7 @@ const dirState = {
     finalWinner: null,
     awardName: ""
 };
+let cachedVoteData = null;
 
 document.addEventListener("DOMContentLoaded", () => {
     // 1. 초기 렌더링
@@ -24,6 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const params = new URLSearchParams(window.location.search);
     dirState.awardName = params.get("awardName");
+
+    waitForFirebaseAndListen();
 });
 /**
  * 감독 그리드 렌더링 (Step 1: 아코디언 / Step 2: 일반 그리드)
@@ -110,6 +113,8 @@ function renderDirectorGrid(searchTerm = "") {
         qSection.appendChild(dContent);
         container.appendChild(qSection);
     });
+
+    applyVoteBadges();
 }
 
 /**
@@ -162,6 +167,15 @@ function createDirectorCard(data, step) {
     // Step 1: 후보 선정용 카드 (기존 디자인)
     // ==========================================
     card.className = "card";
+    // ✅ 추가: Firebase 연동용 data 속성
+    card.setAttribute('data-category', dirState.awardName);
+    card.setAttribute('data-anime-id', data.director);
+
+    // ✅ 추가: 득표율 뱃지 (좌측 상단)
+    const rateBadge = document.createElement("div");
+    rateBadge.className = "card-selection-rate";
+    rateBadge.style.display = "none";
+    rateBadge.textContent = "0/0";
 
     const badge = document.createElement("div");
     badge.className = "card-badge";
@@ -182,6 +196,7 @@ function createDirectorCard(data, step) {
         </div>
     `;
     card.prepend(badge);
+    card.prepend(rateBadge);
 
     card.onclick = () => {
         toggleSelect(data, card);
@@ -362,6 +377,10 @@ function openWinnerModal() {
         works: winner.works.map(w => w.title).join(', ')
     };
     localStorage.setItem("anime_awards_result", JSON.stringify(results));
+
+    if (window.submitSingleAwardToDB) {
+        window.submitSingleAwardToDB(dirState.awardName);
+    }
 }
 
 function closeModal(id) {
@@ -397,3 +416,38 @@ function fireConfetti() {
         }
     }());
 }
+function applyVoteBadges() {
+    if (!cachedVoteData) return;
+
+    const total = cachedVoteData._participants || 0;
+
+    document.querySelectorAll('.card').forEach(card => {
+        const animeId = card.getAttribute('data-anime-id');
+        const rateBadge = card.querySelector('.card-selection-rate');
+        if (!rateBadge || !animeId) return;
+
+        const count = cachedVoteData[animeId] || 0;
+        rateBadge.innerText = `${count}/${total}`;
+        rateBadge.style.display = "block";
+    });
+}
+
+function listenToVoteRates() {
+    if (!window.fbOnValue || !window.fbDB) return;
+
+    const categoryRef = window.fbRef(window.fbDB, `votes/categories/${dirState.awardName}`);
+
+    window.fbOnValue(categoryRef, (snapshot) => {
+        cachedVoteData = snapshot.val() || {};
+        applyVoteBadges();
+    });
+}
+
+function waitForFirebaseAndListen() {
+    if (window.fbOnValue && window.fbDB) {
+        listenToVoteRates();
+    } else {
+        setTimeout(waitForFirebaseAndListen, 300);
+    }
+}
+waitForFirebaseAndListen();

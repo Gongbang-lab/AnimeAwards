@@ -7,12 +7,15 @@ const originalState = {
     awardName: ""
 };
 
+let cachedVoteData = null;
+
 document.addEventListener('DOMContentLoaded', () => {
     if(typeof scriptwriterData !== 'undefined') {
         renderCards(scriptwriterData);
     }
     const params = new URLSearchParams(window.location.search);
     originalState.awardName = params.get("awardName");
+    waitForFirebaseAndListen();
 });
 
 document.getElementById('search-input').addEventListener('input', function(e) {
@@ -112,6 +115,9 @@ function renderCards(dataList) {
         card.className = 'card';
         if(selectedItems.find(i => i.id === anime.id)) card.classList.add('selected');
 
+        card.setAttribute('data-category', originalState.awardName);
+        card.setAttribute('data-anime-id', anime.title);
+
         card.innerHTML = `
             <div class="card-badge">${anime.quarter}</div>
             <img src="../${anime.thumbnail}" alt="${anime.title}">
@@ -123,6 +129,7 @@ function renderCards(dataList) {
         card.onclick = () => toggleSelect(anime, card);
         grid.appendChild(card);
     });
+    applyVoteBadges();
 }
 
 function toggleSelect(anime, cardElement) {
@@ -248,6 +255,10 @@ function confirmFinalWinner() {
     const results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
     results[originalState.awardName] = { title: winner.title, thumbnail: winner.thumbnail };
     localStorage.setItem("anime_awards_result", JSON.stringify(results));
+
+    if (window.submitSingleAwardToDB) {
+        window.submitSingleAwardToDB(originalState.awardName);
+    }
 }
 
 function fireConfetti() {
@@ -290,3 +301,41 @@ function fireConfetti() {
 }
 
 function goToMain() { location.href = '../index.html'; }
+
+// ──────────────────────────────────────────────────────────
+// Firebase 실시간 득표율 뱃지
+// ──────────────────────────────────────────────────────────
+function applyVoteBadges() {
+    if (!cachedVoteData) return;
+
+    const total = cachedVoteData._participants || 0;
+
+    document.querySelectorAll('.card').forEach(card => {
+        const animeId = card.getAttribute('data-anime-id');
+        const rateBadge = card.querySelector('.card-selection-rate');
+        if (!rateBadge || !animeId) return;
+
+        const count = cachedVoteData[animeId] || 0;
+        rateBadge.innerText = `${count}/${total}`;
+        rateBadge.style.display = "block";
+    });
+}
+
+function listenToVoteRates() {
+    if (!window.fbOnValue || !window.fbDB) return;
+
+    const categoryRef = window.fbRef(window.fbDB, `votes/categories/${originalState.awardName}`);
+
+    window.fbOnValue(categoryRef, (snapshot) => {
+        cachedVoteData = snapshot.val() || {};
+        applyVoteBadges();
+    });
+}
+
+function waitForFirebaseAndListen() {
+    if (window.fbOnValue && window.fbDB) {
+        listenToVoteRates();
+    } else {
+        setTimeout(waitForFirebaseAndListen, 300);
+    }
+}

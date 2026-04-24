@@ -5,6 +5,7 @@ const songNominateState = {
     finalWinner: null,
     currentAward: null
 };
+let cachedVoteData = null;
 
 const dayMap = {
     "mondays": "월요일", "tuesdays": "화요일", "wednesdays": "수요일", "thursdays": "목요일",
@@ -105,6 +106,8 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("close-modal-btn").onclick = () => {
         document.getElementById("winner-popup").classList.remove("active");
     };
+
+    waitForFirebaseAndListen();
 });
 
 // Step 1 렌더링
@@ -177,30 +180,67 @@ function renderFilteredList(query) {
             listContainer.appendChild(quarterSection);
         }
     });
+    applyVoteBadges();
 }
 
 // 카드 생성 공통 함수
 function createSongCard(song) {
     const item = document.createElement("div");
     item.className = "song-card";
-    
+
+    // ✅ Firebase 연동용 data 속성
+    item.setAttribute('data-category', songNominateState.currentAward);
+    item.setAttribute('data-anime-id', song.title);
+
     if (songNominateState.selectedItems.some(s => s.uniqueId === song.uniqueId)) {
         item.classList.add("selected");
     }
 
-    item.innerHTML = `
-        <div class="card-thumb">
-            <img src="${song.thumbnail}" alt="thumbnail">
-            <a class="play-overlay" href="${song.youtube}" target="_blank" onclick="event.stopPropagation();">
-                <span class="play-icon">▶</span>
-            </a>
-        </div>
-        <div class="card-info">
-            <div class="anime-title">${song.animeTitle}</div>
-            <div class="song-title">${song.title}</div>
-            <div class="song-singer">${song.artist || ""}</div>
-        </div>
-    `;
+    // ✅ DOM 직접 생성 (innerHTML 덮어쓰기 방지)
+    const rateBadge = document.createElement("div");
+    rateBadge.className = "card-selection-rate";
+    rateBadge.style.display = "none";
+    rateBadge.textContent = "0/0";
+
+    const thumb = document.createElement("div");
+    thumb.className = "card-thumb";
+
+    const img = document.createElement("img");
+    img.src = song.thumbnail;
+    img.alt = "thumbnail";
+
+    const playOverlay = document.createElement("a");
+    playOverlay.className = "play-overlay";
+    playOverlay.href = song.youtube;
+    playOverlay.target = "_blank";
+    playOverlay.onclick = (e) => e.stopPropagation();
+    playOverlay.innerHTML = `<span class="play-icon">▶</span>`;
+
+    thumb.appendChild(img);
+    thumb.appendChild(playOverlay);
+
+    const cardInfo = document.createElement("div");
+    cardInfo.className = "card-info";
+
+    const animeTitle = document.createElement("div");
+    animeTitle.className = "anime-title";
+    animeTitle.textContent = song.animeTitle;
+
+    const songTitle = document.createElement("div");
+    songTitle.className = "song-title";
+    songTitle.textContent = song.title;
+
+    const songSinger = document.createElement("div");
+    songSinger.className = "song-singer";
+    songSinger.textContent = song.artist || "";
+
+    cardInfo.appendChild(animeTitle);
+    cardInfo.appendChild(songTitle);
+    cardInfo.appendChild(songSinger);
+
+    item.appendChild(rateBadge);
+    item.appendChild(thumb);
+    item.appendChild(cardInfo);
 
     item.onclick = () => {
         const idx = songNominateState.selectedItems.findIndex(s => s.uniqueId === song.uniqueId);
@@ -304,6 +344,9 @@ function saveSongAwardResult() {
         youtube: winner.youtube
     };
     localStorage.setItem("anime_awards_result", JSON.stringify(stored));
+    if (window.submitSingleAwardToDB) {
+        window.submitSingleAwardToDB(award);
+    }
 }
 
 function openSongAwardPopup() {
@@ -354,4 +397,43 @@ function fireConfetti() {
             requestAnimationFrame(frame);
         }
     }());
+}
+
+// ──────────────────────────────────────────────────────────
+// Firebase 실시간 득표율 뱃지
+// ──────────────────────────────────────────────────────────
+function applyVoteBadges() {
+    if (!cachedVoteData) return;
+
+    const total = cachedVoteData._participants || 0;
+
+    // ✅ song-card 클래스 타겟팅
+    document.querySelectorAll('.song-card').forEach(card => {
+        const animeId = card.getAttribute('data-anime-id');
+        const rateBadge = card.querySelector('.card-selection-rate');
+        if (!rateBadge || !animeId) return;
+
+        const count = cachedVoteData[animeId] || 0;
+        rateBadge.innerText = `${count}/${total}`;
+        rateBadge.style.display = "block";
+    });
+}
+
+function listenToVoteRates() {
+    if (!window.fbOnValue || !window.fbDB) return;
+
+    const categoryRef = window.fbRef(window.fbDB, `votes/categories/${songNominateState.currentAward}`);
+
+    window.fbOnValue(categoryRef, (snapshot) => {
+        cachedVoteData = snapshot.val() || {};
+        applyVoteBadges();
+    });
+}
+
+function waitForFirebaseAndListen() {
+    if (window.fbOnValue && window.fbDB) {
+        listenToVoteRates();
+    } else {
+        setTimeout(waitForFirebaseAndListen, 300);
+    }
 }

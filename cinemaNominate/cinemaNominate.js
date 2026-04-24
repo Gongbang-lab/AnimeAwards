@@ -5,27 +5,26 @@ const cinemaState = {
 
 const movies = (typeof cinemaData !== 'undefined') ? cinemaData : [];
 
+// ✅ DB 데이터 캐시
+let cachedVoteData = null;
+
 document.addEventListener("DOMContentLoaded", () => {
-    // 초기 전체 카드 렌더링
     renderCards(movies);
 
     const searchInput = document.getElementById('searchInput');
-
-    // 실시간 필터링 검색 로직
     if (searchInput) {
         searchInput.placeholder = "영화 제목 또는 제작사 검색";
         searchInput.addEventListener('input', (e) => {
             const query = e.target.value.toLowerCase().trim();
-            
-            // 제목 또는 제작사(Studio)에서 검색어 포함 여부 확인
-            const filtered = movies.filter(m => 
-                m.title.toLowerCase().includes(query) || 
+            const filtered = movies.filter(m =>
+                m.title.toLowerCase().includes(query) ||
                 (m.studio && m.studio.toLowerCase().includes(query))
             );
-            
-            renderCards(filtered, query); // 검색어 하이라이트를 위해 query 전달
+            renderCards(filtered, query);
         });
     }
+
+    waitForFirebaseAndListen();
 });
 
 function renderCards(data, searchTerm = "") {
@@ -39,8 +38,7 @@ function renderCards(data, searchTerm = "") {
 
     grid.innerHTML = data.map(movie => {
         const isSelected = cinemaState.selectedMovie && cinemaState.selectedMovie.title === movie.title;
-        
-        // 검색어 하이라이트 처리
+
         let displayTitle = movie.title;
         if (searchTerm) {
             const regex = new RegExp(searchTerm, "gi");
@@ -48,9 +46,12 @@ function renderCards(data, searchTerm = "") {
         }
 
         return `
-            <div class="card ${isSelected ? 'selected' : ''}" 
-                 id="card-${movie.title.replace(/\s/g, '')}" 
+            <div class="card ${isSelected ? 'selected' : ''}"
+                 id="card-${movie.title.replace(/\s/g, '')}"
+                 data-category="${cinemaState.awardName}"
+                 data-anime-id="${movie.title}"
                  onclick="selectMovie('${movie.title.replace(/'/g, "\\'")}')">
+                <div class="card-selection-rate" style="display:none;">0/0</div>
                 <div class="media-box">
                     <img src="../${movie.thumbnail}" alt="${movie.title}" onerror="this.src='https://dummyimage.com/200x300/333/d4af37&text=No+Image'">
                 </div>
@@ -61,6 +62,9 @@ function renderCards(data, searchTerm = "") {
             </div>
         `;
     }).join('');
+
+    // ✅ 렌더링 완료 후 캐시 데이터로 즉시 뱃지 적용
+    applyVoteBadges();
 }
 
 function selectMovie(title) {
@@ -68,14 +72,12 @@ function selectMovie(title) {
     if (!movie) return;
 
     cinemaState.selectedMovie = movie;
-    
-    // UI 업데이트: 선택된 카드 표시
+
     document.querySelectorAll('.card').forEach(c => c.classList.remove('selected'));
     const currentId = `card-${movie.title.replace(/\s/g, '')}`;
     const currentCard = document.getElementById(currentId);
     if (currentCard) currentCard.classList.add('selected');
 
-    // 수상 결정 버튼 활성화
     const awardBtn = document.getElementById('btn-award');
     if (awardBtn) awardBtn.disabled = false;
 }
@@ -92,6 +94,11 @@ function saveCinemaWinner() {
     };
     localStorage.setItem("anime_awards_result", JSON.stringify(results));
 
+    // ✅ Firebase DB 전송
+    if (window.submitSingleAwardToDB) {
+        window.submitSingleAwardToDB(cinemaState.awardName);
+    }
+
     showWinnerCelebration(winner);
 }
 
@@ -107,7 +114,6 @@ function showWinnerCelebration(winner) {
                 <img src="../${winner.thumbnail}" alt="${winner.title}">
             </div>
             <h1 class="winner-title">${winner.title}</h1>
-            
             <div class="winner-details">
                 <div class="detail-item">
                     <span class="detail-label">Studio</span>
@@ -122,7 +128,6 @@ function showWinnerCelebration(winner) {
                     <span class="detail-value">${winner.writer}</span>
                 </div>
             </div>
-
             <button class="gold-btn full-width" onclick="location.href='../index.html'">결과 저장 및 메인으로</button>
         </div>
     `;
@@ -138,4 +143,42 @@ function fireConfetti() {
         confetti({ particleCount: 3, angle: 120, spread: 55, origin: { x: 1, y: 0.6 }, zIndex: 9999, colors: ['#d4af37', '#ffffff'] });
         if (Date.now() < end) requestAnimationFrame(frame);
     }());
+}
+
+// ──────────────────────────────────────────────────────────
+// Firebase 실시간 득표율 뱃지
+// ──────────────────────────────────────────────────────────
+function applyVoteBadges() {
+    if (!cachedVoteData) return;
+
+    const total = cachedVoteData._participants || 0;
+
+    document.querySelectorAll('.card').forEach(card => {
+        const animeId = card.getAttribute('data-anime-id');
+        const rateBadge = card.querySelector('.card-selection-rate');
+        if (!rateBadge || !animeId) return;
+
+        const count = cachedVoteData[animeId] || 0;
+        rateBadge.innerText = `${count}/${total}`;
+        rateBadge.style.display = "block";
+    });
+}
+
+function listenToVoteRates() {
+    if (!window.fbOnValue || !window.fbDB) return;
+
+    const categoryRef = window.fbRef(window.fbDB, `votes/categories/${cinemaState.awardName}`);
+
+    window.fbOnValue(categoryRef, (snapshot) => {
+        cachedVoteData = snapshot.val() || {};
+        applyVoteBadges();
+    });
+}
+
+function waitForFirebaseAndListen() {
+    if (window.fbOnValue && window.fbDB) {
+        listenToVoteRates();
+    } else {
+        setTimeout(waitForFirebaseAndListen, 300);
+    }
 }

@@ -172,14 +172,18 @@ function renderStep1(searchTerm = "") {
                         displayName = char.name.replace(regex, (match) => `<span style="color:var(--gold);">${match}</span>`);
                     }
 
+                    card.setAttribute('data-category', charState.awardName);
+                    card.setAttribute('data-anime-id', char.name);
+
                     card.innerHTML = `
+                        <div class="card-selection-rate" style="display:none;">0/0</div>
                         <div class="card-badge">CV. ${char.cv}</div>
                         <img src="../${char.thumbnail}" alt="${char.name}" onerror="this.src='https://via.placeholder.com/200x280?text=No+Img'">
                         <div class="card-info">
-                            <div class="card-title">${displayName}</div>
-                            <div class="card-studio">${char.animeTitle}</div>
-                        </div>
-                    `;
+                        <div class="card-title">${displayName}</div>
+                        <div class="card-studio">${char.animeTitle}</div>
+                    </div>
+                `;
 
                     card.onclick = (e) => {
                         e.stopPropagation(); 
@@ -350,6 +354,9 @@ function openAwardPopup() {
   document.getElementById("winner-modal").classList.remove("hidden");
   
   fireConfetti();
+  if (window.submitSingleAwardToDB) {
+      window.submitSingleAwardToDB(charState.awardName);
+  }
 }
 
 function fireConfetti() {
@@ -446,3 +453,37 @@ function groupByHierarchy(data) {
   });
   return grouped;
 }
+
+function listenToVoteRates() {
+    if (!window.fbOnValue || !window.fbDB) return;
+
+    const awardName = nominateState.awardName; // charNominate는 charState.awardName
+
+    // ✅ sanitizeKey 제거 - DB에 저장된 키 그대로 사용
+    const categoryRef = window.fbRef(window.fbDB, `votes/categories/${awardName}`);
+
+    window.fbOnValue(categoryRef, (snapshot) => {
+        const data = snapshot.val() || {};
+        const total = data._participants || 0;
+
+        document.querySelectorAll('.card').forEach(card => {
+            const animeId = card.getAttribute('data-anime-id');
+            const rateBadge = card.querySelector('.card-selection-rate');
+
+            if (!rateBadge || !animeId) return;
+
+            const count = data[animeId] || 0;
+            rateBadge.innerText = `${count}/${total}`;
+            rateBadge.style.display = "block";
+        });
+    });
+}
+
+function waitForFirebaseAndListen() {
+    if (window.fbOnValue && window.fbDB) {
+        listenToVoteRates();
+    } else {
+        setTimeout(waitForFirebaseAndListen, 300);
+    }
+}
+waitForFirebaseAndListen();

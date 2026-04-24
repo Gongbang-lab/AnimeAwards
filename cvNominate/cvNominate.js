@@ -9,6 +9,8 @@ const cvState = {
     finalWinner: null
 };
 
+let cachedVoteData = null;
+
 document.addEventListener("DOMContentLoaded", () => {
     // 검색 이벤트 바인딩
     document.getElementById("search-input").addEventListener("input", (e) => {
@@ -21,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("final-confirm-btn").onclick = () => location.href = "../index.html";
 
     renderCVStep1();
+    waitForFirebaseAndListen();
 });
 
 /**
@@ -102,6 +105,7 @@ function renderCVStep1(searchTerm = "") {
             mainContent.appendChild(section);
         });
     }
+    applyVoteBadges();
 }
 
 /**
@@ -110,38 +114,44 @@ function renderCVStep1(searchTerm = "") {
 function createCVCard(cv, step) {
     const card = document.createElement("div");
     card.className = "card";
-    
-    // 1. 배지 생성 (클릭 시 상세 정보 팝업)
+
+    // ✅ 추가: Firebase 연동용 data 속성
+    card.setAttribute('data-category', cvState.currentAward);
+    card.setAttribute('data-anime-id', cv.name);
+
+    // ✅ 추가: 득표율 뱃지 (좌측 상단)
+    const rateBadge = document.createElement("div");
+    rateBadge.className = "card-selection-rate";
+    rateBadge.style.display = "none";
+    rateBadge.textContent = "0/0";
+    card.appendChild(rateBadge);
+
+    // 기존 작품수 배지 (우측 상단, 클릭 시 상세 팝업)
     const badge = document.createElement("div");
     badge.className = "card-badge";
     badge.textContent = `${cv.characters.length}작품`;
-    
     badge.onclick = (e) => {
-        e.stopPropagation(); // 카드 전체 클릭 이벤트(선택) 방지
+        e.stopPropagation();
         openDetailModal(cv);
     };
-    
-    // 2. 카드 상태 설정 (이미 선택된 경우)
+
     const isSelected = cvState.selectedCVs.some(v => v.name === cv.name);
     if (step === "step1" && isSelected) card.classList.add("selected");
 
-    // 3. 카드 내부 레이아웃
-    card.innerHTML = `
+    card.innerHTML += `
         <img src="../${cv.cvimg}" loading="lazy" onerror="this.src='https://via.placeholder.com/200x300'">
         <div class="card-info">
             <div class="card-title">${cv.name}</div>
         </div>
     `;
-    
-    card.prepend(badge); // 배지를 카드 맨 위에 배치
 
-    // 4. 카드 본체 클릭 이벤트
+    card.prepend(badge);
+    card.prepend(rateBadge); // ✅ rateBadge를 맨 앞에 (badge보다 먼저)
+
     card.onclick = () => {
         if (step === "step1") {
-            // Step 1: 다중 선택 및 프리뷰 업데이트
             toggleCVSelection(cv, card);
         } else {
-            // Step 2: 단일 선택 (최종 투표)
             document.querySelectorAll("#step2-grid .card").forEach(c => c.classList.remove("selected"));
             card.classList.add("selected");
             cvState.finalWinner = cv;
@@ -444,3 +454,56 @@ function fireConfetti() {
         }
     }());
 }
+function saveResult(winner) {
+    const results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
+    results[cvState.currentAward] = {
+        name: winner.name,
+        thumbnail: winner.cvimg,
+        works: winner.characters.map(c => c.charName).join(', ')
+    };
+    localStorage.setItem("anime_awards_result", JSON.stringify(results));
+
+    // ✅ Firebase DB 전송
+    if (window.submitSingleAwardToDB) {
+        window.submitSingleAwardToDB(cvState.currentAward);
+    }
+}
+
+// ──────────────────────────────────────────────────────────
+// Firebase 실시간 득표율 뱃지
+// ──────────────────────────────────────────────────────────
+function applyVoteBadges() {
+    if (!cachedVoteData) return;
+
+    const total = cachedVoteData._participants || 0;
+
+    document.querySelectorAll('.card').forEach(card => {
+        const animeId = card.getAttribute('data-anime-id');
+        const rateBadge = card.querySelector('.card-selection-rate');
+        if (!rateBadge || !animeId) return;
+
+        const count = cachedVoteData[animeId] || 0;
+        rateBadge.innerText = `${count}/${total}`;
+        rateBadge.style.display = "block";
+    });
+}
+
+function listenToVoteRates() {
+    if (!window.fbOnValue || !window.fbDB) return;
+
+    const categoryRef = window.fbRef(window.fbDB, `votes/categories/${cvState.currentAward}`);
+
+    window.fbOnValue(categoryRef, (snapshot) => {
+        cachedVoteData = snapshot.val() || {};
+        applyVoteBadges();
+    });
+}
+
+function waitForFirebaseAndListen() {
+    if (window.fbOnValue && window.fbDB) {
+        listenToVoteRates();
+    } else {
+        setTimeout(waitForFirebaseAndListen, 300);
+    }
+}
+waitForFirebaseAndListen();

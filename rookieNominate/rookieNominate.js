@@ -3,6 +3,8 @@ const rookiestate = {
     awardName: null
 };
 
+let cachedVoteData = null;
+
 document.addEventListener("DOMContentLoaded", () => {
     const params = new URLSearchParams(location.search);
     rookiestate.awardName = params.get("awardName") || "올해의 신인 성우상";
@@ -12,6 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById("btn-home").onclick = () => location.href = "../index.html";
     document.getElementById("btn-award").onclick = () => handleAwardDecision();
+
+    waitForFirebaseAndListen();
 });
 
 /**
@@ -27,37 +31,54 @@ function renderRookieGrid() {
     list.forEach(cv => {
         const card = document.createElement("div");
         card.className = "card";
-        
+        card.setAttribute('data-category', rookiestate.awardName);
+        card.setAttribute('data-anime-id', cv.name);
+
         const displayImg = `../${cv.cvimg}`;
         const worksCount = cv.characters ? cv.characters.length : 0;
 
-        // card-badge를 항상 나타난 상태로 유지하며 "작품수"로 텍스트 변경
-        card.innerHTML = `
-            <div class="card-badge">작품수 ${worksCount}</div>
-            <img src="${displayImg}" alt="${cv.name}" loading="lazy" onerror="this.src='https://via.placeholder.com/200x280'">
-            <div class="card-info">
-                <div class="card-title">${cv.name}</div>
-                <div class="card-studio">데뷔: ${cv.debutYear || '2026'}</div>
-            </div>
+        // ✅ innerHTML 대신 DOM 직접 생성으로 변경 (innerHTML 덮어쓰기 문제 방지)
+        const rateBadge = document.createElement("div");
+        rateBadge.className = "card-selection-rate";
+        rateBadge.style.display = "none";
+        rateBadge.textContent = "0/0";
+
+        const cardBadge = document.createElement("div");
+        cardBadge.className = "card-badge";
+        cardBadge.textContent = `작품수 ${worksCount}`;
+        cardBadge.onclick = (e) => {
+            e.stopPropagation();
+            showWorksModal(cv);
+        };
+
+        const img = document.createElement("img");
+        img.src = displayImg;
+        img.alt = cv.name;
+        img.loading = "lazy";
+        img.onerror = () => { img.src = 'https://via.placeholder.com/200x280'; };
+
+        const cardInfo = document.createElement("div");
+        cardInfo.className = "card-info";
+        cardInfo.innerHTML = `
+            <div class="card-title">${cv.name}</div>
+            <div class="card-studio">데뷔: ${cv.debutYear || '2026'}</div>
         `;
 
-        // 카드 클릭 시 성우 선택
+        card.appendChild(rateBadge);
+        card.appendChild(cardBadge);
+        card.appendChild(img);
+        card.appendChild(cardInfo);
+
         card.onclick = (e) => {
             if (e.target.classList.contains('card-badge')) return;
             selectCandidate(cv, card);
         };
 
-        // 배지 클릭 시 작품 목록 팝업 호출
-        const badge = card.querySelector('.card-badge');
-        badge.onclick = (e) => {
-            e.stopPropagation();
-            showWorksModal(cv);
-        };
-
         grid.appendChild(card);
     });
-}
 
+    applyVoteBadges();
+}
 function showWorksModal(cv) {
     const modal = document.getElementById("works-modal");
     const gridBody = document.getElementById("works-grid-body");
@@ -171,6 +192,10 @@ function saveWinnerToLocal(cv) {
         debutYear: cv.debutYear || '2026'
     };
     localStorage.setItem("anime_awards_result", JSON.stringify(results));
+    
+    if (window.submitSingleAwardToDB) {
+        window.submitSingleAwardToDB(rookiestate.awardName);
+    }
 }
 
 function initSearch() {
@@ -214,4 +239,42 @@ function fireConfetti() {
             requestAnimationFrame(frame);
         }
     }());
+}
+
+// ──────────────────────────────────────────────────────────
+// Firebase 실시간 득표율 뱃지
+// ──────────────────────────────────────────────────────────
+function applyVoteBadges() {
+    if (!cachedVoteData) return;
+
+    const total = cachedVoteData._participants || 0;
+
+    document.querySelectorAll('.card').forEach(card => {
+        const animeId = card.getAttribute('data-anime-id');
+        const rateBadge = card.querySelector('.card-selection-rate');
+        if (!rateBadge || !animeId) return;
+
+        const count = cachedVoteData[animeId] || 0;
+        rateBadge.innerText = `${count}/${total}`;
+        rateBadge.style.display = "block";
+    });
+}
+
+function listenToVoteRates() {
+    if (!window.fbOnValue || !window.fbDB) return;
+
+    const categoryRef = window.fbRef(window.fbDB, `votes/categories/${rookiestate.awardName}`);
+
+    window.fbOnValue(categoryRef, (snapshot) => {
+        cachedVoteData = snapshot.val() || {};
+        applyVoteBadges();
+    });
+}
+
+function waitForFirebaseAndListen() {
+    if (window.fbOnValue && window.fbDB) {
+        listenToVoteRates();
+    } else {
+        setTimeout(waitForFirebaseAndListen, 300);
+    }
 }

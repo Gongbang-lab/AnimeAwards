@@ -5,6 +5,8 @@ const studioState = {
     awardName: ""
 };
 
+let cachedVoteData = null;
+
 document.addEventListener("DOMContentLoaded", () => {
     renderStudioAccordionGroups();
     initSearch();
@@ -23,6 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("step2-award-btn").onclick = handleAwardDecision;
     
     updatePreview(); // 초기 로드 시 미리보기 영역 초기화
+
+    waitForFirebaseAndListen();
 });
 
 /** 후보 선택 (Step 1과 2 로직 분리) */
@@ -154,6 +158,8 @@ function renderFinalNominees() {
     const grid = document.getElementById("final-nominees-grid");
     // Step 1에서 선택한 후보들을 기반으로 카드를 생성
     grid.innerHTML = studioState.nominees.map(item => createStudioCardHTML(item)).join('');
+
+    applyVoteBadges();
 }
 
 /** 아코디언 그룹 렌더링 (Step 1) */
@@ -204,23 +210,29 @@ function renderStudioAccordionGroups() {
         };
         container.appendChild(groupDiv);
     });
+
+    applyVoteBadges();
 }
 
 /** 스튜디오 카드 HTML 공통 생성 함수 */
 function createStudioCardHTML(item) {
-    const studioImg =`../${item.studio_img}`;
+    const studioImg = `../${item.studio_img}`;
     let isSelected = false;
 
-    // 현재 스텝에 따라 선택된 상태 표시 다르게 처리
     if (studioState.currentStep === 1) {
         isSelected = studioState.nominees.some(n => n.studio === item.studio);
     } else {
         isSelected = studioState.finalWinner && studioState.finalWinner.studio === item.studio;
     }
 
+    // ✅ sanitizeKey 없이 원본값 그대로 사용
     return `
-        <div class="card ${isSelected ? 'selected' : ''}" onclick="selectStudioCard(event, '${item.studio}')">
-            <div class="card-badge" onclick="event.stopPropagation(); showWorksModalByName('${item.studio}')">작품보기</div>
+        <div class="card ${isSelected ? 'selected' : ''}"
+             data-category="${studioState.awardName}"
+             data-anime-id="${item.studio}"
+             onclick="selectStudioCard(event, '${item.studio.replace(/'/g, "\\'")}')">
+            <div class="card-selection-rate" style="display:none;">0/0</div>
+            <div class="card-badge" onclick="event.stopPropagation(); showWorksModalByName('${item.studio.replace(/'/g, "\\'")}')">작품보기</div>
             <img src="${studioImg}" alt="${item.studio}">
             <div class="card-info">
                 <div class="card-title">${item.studio}</div>
@@ -319,6 +331,10 @@ function saveWinnerToLocal(item) {
     };
     localStorage.setItem("anime_awards_result", JSON.stringify(results));
     fireConfetti();
+
+    if (window.submitSingleAwardToDB) {
+        window.submitSingleAwardToDB(studioState.awardName);
+    }
 }
 
 /** 검색 기능 초기화 (스튜디오 이름 + 애니메이션 제목) */
@@ -395,4 +411,42 @@ function fireConfetti() {
             requestAnimationFrame(frame);
         }
     }());
+}
+
+// ──────────────────────────────────────────────────────────
+// Firebase 실시간 득표율 뱃지
+// ──────────────────────────────────────────────────────────
+function applyVoteBadges() {
+    if (!cachedVoteData) return;
+
+    const total = cachedVoteData._participants || 0;
+
+    document.querySelectorAll('.card').forEach(card => {
+        const animeId = card.getAttribute('data-anime-id');
+        const rateBadge = card.querySelector('.card-selection-rate');
+        if (!rateBadge || !animeId) return;
+
+        const count = cachedVoteData[animeId] || 0;
+        rateBadge.innerText = `${count}/${total}`;
+        rateBadge.style.display = "block";
+    });
+}
+
+function listenToVoteRates() {
+    if (!window.fbOnValue || !window.fbDB) return;
+
+    const categoryRef = window.fbRef(window.fbDB, `votes/categories/${studioState.awardName}`);
+
+    window.fbOnValue(categoryRef, (snapshot) => {
+        cachedVoteData = snapshot.val() || {};
+        applyVoteBadges();
+    });
+}
+
+function waitForFirebaseAndListen() {
+    if (window.fbOnValue && window.fbDB) {
+        listenToVoteRates();
+    } else {
+        setTimeout(waitForFirebaseAndListen, 300);
+    }
 }

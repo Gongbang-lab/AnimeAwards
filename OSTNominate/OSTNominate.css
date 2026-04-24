@@ -77,9 +77,35 @@ body {
 .day-content.active { display: grid; animation: slideDown 0.3s ease-out; }
 
 /* --- 카드 UI --- */
+/* 좌측 상단 득표율 뱃지 */
+.card-selection-rate {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background: rgba(212, 175, 55, 0.9);
+    color: #000;
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 2px 8px;
+    border-radius: 4px;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    pointer-events: none;
+}
+
+/* ✅ ost-card는 position: relative 추가 및 overflow: visible */
 .ost-card {
     background: var(--gray); border: 2px solid transparent; border-radius: 8px;
-    overflow: hidden; cursor: pointer; transition: all 0.2s ease; display: flex; flex-direction: column;
+    overflow: visible;
+    cursor: pointer; transition: all 0.2s ease;
+    display: flex; flex-direction: column;
+    position: relative; /* ✅ absolute 뱃지 기준점 */
+}
+/* card-thumb에 border-radius 보정 */
+.ost-card .card-thumb {
+    position: relative; width: 100%; aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 6px 6px 0 0; /* ✅ 상단 모서리만 */
 }
 .ost-card:hover { transform: translateY(-5px); border-color: #555; }
 .ost-card.selected { border: 2px solid var(--gold); box-shadow: 0 0 15px rgba(212, 175, 55, 0.4); transform: translateY(-5px); }
