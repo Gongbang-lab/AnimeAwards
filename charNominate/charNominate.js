@@ -473,7 +473,8 @@ function listenToVoteRates() {
             if (!rateBadge || !animeId) return;
 
             const count = data[animeId] || 0;
-            rateBadge.innerText = `${count}/${total}`;
+            const percent = total > 0 ? Math.round((count / total) * 100) : 0;
+            rateBadge.innerText = `${percent}%`;
             rateBadge.style.display = "block";
         });
     });
