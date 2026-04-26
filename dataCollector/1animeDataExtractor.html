@@ -140,22 +140,21 @@
       document.getElementById('status').innerText = `✅ 로드 완료. 제목과 분기를 설정하세요.`;
     } catch (e) { document.getElementById('status').innerText = "❌ 상세 정보 에러"; }
   }
-
-  function updateJSON() {
+  
+function updateJSON() {
     const title = document.getElementById('in-title').value.trim();
     const quarter = document.getElementById('in-quarter').value;
     const qKey = quarter.charAt(0); // "1분기" -> "1"
     
-    // 썸네일 경로 자동생성 (분기에 따라 Q1, Q2... 적용)
-    const formattedTitle = title.replace(/\s+/g, '_');
-    const autoThumbnail = title ? `image/animeimg/Q${qKey}/${formattedTitle}.webp` : "";
+    // 썸네일 경로 생성: 언더바(_) 없이 공백(space)을 그대로 유지합니다.
+    const autoThumbnail = title ? `image/animeimg/Q${qKey}/${title}.webp` : "";
 
     const writerField = currentAnime.isOriginal ? "scriptwriter" : "adaptor";
 
     const finalObj = {
       id: parseInt(document.getElementById('in-id').value) || 0,
       title: title,
-      quarter: quarter, // "1분기" 형태로 추가
+      quarter: quarter,
       thumbnail: autoThumbnail,
       day: document.getElementById('in-day').value,
       episodes: currentAnime.episodes || 0,
@@ -167,14 +166,30 @@
       }
     };
 
+    // 마지막에 콤마(,)를 붙여 배열에 추가하기 편하게 출력합니다.
     document.getElementById('codeOutput').value = JSON.stringify(finalObj, null, 2) + ",";
   }
 
-  function copyCode() {
+  async function copyCode() {
     const area = document.getElementById('codeOutput');
-    area.select();
-    document.execCommand('copy');
-    alert("코드가 복사되었습니다!");
+    const btn = document.querySelector('.btn-copy');
+    
+    try {
+        await navigator.clipboard.writeText(area.value);
+        const originalText = btn.innerText;
+        btn.innerText = "✅ 복사 완료!";
+        btn.style.background = "#2f855a"; // 진한 초록색으로 피드백
+        
+        setTimeout(() => {
+            btn.innerText = originalText;
+            btn.style.background = ""; // 원상복구
+        }, 2000);
+    } catch (err) {
+        // 구형 브라우저 대응용 fallback
+        area.select();
+        document.execCommand('copy');
+        alert("코드가 복사되었습니다!");
+    }
   }
 </script>
 </body>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Voice Actor Data Extractor</title>
+    <style>
+        body { background: #111; color: #fff; font-family: 'Pretendard', sans-serif; text-align: center; padding: 50px 20px; }
+        .box { background: #222; display: inline-block; width: 100%; max-width: 800px; padding: 40px; border-radius: 20px; border: 1px solid #333; box-sizing: border-box; }
+        
+        /* 버튼 스타일 */
+        .btn-group { margin: 20px 0; display: flex; justify-content: center; gap: 10px; }
+        button { padding: 15px 30px; font-size: 16px; cursor: pointer; border: none; border-radius: 8px; font-weight: bold; transition: all 0.2s; }
+        #extract-btn { background: gold; color: #000; }
+        #extract-btn:hover { background: #ffd700; transform: scale(1.02); }
+        #copy-btn { background: #444; color: #fff; display: none; } /* 초기엔 숨김 */
+        #copy-btn:hover { background: #555; }
+        
+        /* 미리보기 영역 */
+        #preview-container { margin-top: 30px; display: none; text-align: left; }
+        #preview-header { font-size: 14px; color: #aaa; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center; }
+        #json-preview { 
+            background: #000; color: #00ff41; padding: 20px; border-radius: 10px; 
+            font-family: 'Consolas', 'Monaco', monospace; font-size: 13px;
+            max-height: 400px; overflow-y: auto; white-space: pre-wrap; word-break: break-all;
+            border: 1px solid #333; line-height: 1.5;
+        }
+        
+        #status { margin-top: 20px; color: gold; font-weight: bold; white-space: pre-line; min-height: 40px; }
+        .error-msg { color: #ff4d4d !important; }
+
+        /* 스크롤바 커스텀 */
+        #json-preview::-webkit-scrollbar { width: 8px; }
+        #json-preview::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>성우 데이터 추출기</h1>
+        <p style="color: #aaa;">데이터를 분석하고 결과를 미리 확인하거나 복사할 수 있습니다.</p>
+        
+        <div class="btn-group">
+            <button id="extract-btn">데이터 분석하기</button>
+            <button id="copy-btn">클립보드 복사</button>
+        </div>
+
+        <div id="status"></div>
+
+        <div id="preview-container">
+            <div id="preview-header">
+                <span>미리보기 (Generated Code)</span>
+                <span id="char-count" style="font-size: 12px;"></span>
+            </div>
+            <pre id="json-preview"></pre>
+        </div>
+    </div>
+
+    <script src="../data/animeData.js"></script>
+    <script src="../data/animeCharacterData.js"></script>
+
+    <script>
+let generatedCode = ""; // 생성된 코드를 저장할 변수
+
+document.getElementById('extract-btn').onclick = function() {
+    const statusDiv = document.getElementById('status');
+    const previewContainer = document.getElementById('preview-container');
+    const previewArea = document.getElementById('json-preview');
+    const copyBtn = document.getElementById('copy-btn');
+    const charCount = document.getElementById('char-count');
+    
+    try {
+        if (typeof AnimeList === 'undefined' || typeof CharacterData === 'undefined') {
+            throw new Error("데이터 파일(js)을 로드할 수 없습니다.");
+        }
+
+        const animeTitleMap = {};
+        AnimeList.forEach(anime => { animeTitleMap[String(anime.id)] = anime.title; });
+
+        const actorMap = {};
+        let processedCount = 0;
+
+        CharacterData.forEach(animeEntry => {
+            const animeId = String(animeEntry.id);
+            const animeTitle = animeTitleMap[animeId] || animeEntry.title;
+            const characters = animeEntry.characters || [];
+
+            characters.forEach(char => {
+                const actorName = (char.cv || char.vc || "").trim();
+                if (!actorName || actorName === "정보 없음") return;
+
+                if (!actorMap[actorName]) {
+                    actorMap[actorName] = {
+                        name: actorName,
+                        cvimg: `image/cvimg/${actorName}.webp`,
+                        gender: char.gender || "male",
+                        characters: []
+                    };
+                }
+
+                if (!actorMap[actorName].characters.some(c => c.charName === char.name && c.animeTitle === animeTitle)) {
+                    actorMap[actorName].characters.push({
+                        charName: char.name,
+                        animeTitle: animeTitle,
+                        img: char.img
+                    });
+                }
+            });
+            processedCount++;
+        });
+
+        // 텍스트 생성
+        generatedCode = "const CharacterVoiceData = " + JSON.stringify(actorMap, null, 2) + ";";
+        
+        // UI 업데이트
+        previewArea.textContent = generatedCode;
+        previewContainer.style.display = "block";
+        copyBtn.style.display = "inline-block";
+        charCount.textContent = `Total length: ${generatedCode.length.toLocaleString()} chars`;
+        
+        statusDiv.className = "";
+        statusDiv.innerText = `✅ 분석 완료! ${processedCount}개의 작품을 처리했습니다.`;
+
+    } catch (e) {
+        statusDiv.className = "error-msg";
+        statusDiv.innerText = "❌ 오류: " + e.message;
+    }
+};
+
+// 복사 버튼 기능
+document.getElementById('copy-btn').onclick = async function() {
+    if (!generatedCode) return;
+    
+    try {
+        await navigator.clipboard.writeText(generatedCode);
+        const originalText = this.innerText;
+        this.innerText = "✅ 복사 성공!";
+        this.style.background = "gold";
+        this.style.color = "#000";
+        
+        setTimeout(() => {
+            this.innerText = originalText;
+            this.style.background = "#444";
+            this.style.color = "#fff";
+        }, 2000);
+    } catch (err) {
+        alert("복사에 실패했습니다.");
+    }
+};
+    </script>
+</body>
+</html>

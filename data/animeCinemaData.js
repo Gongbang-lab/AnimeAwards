@@ -48,5 +48,26 @@ const cinemaData =
         "director": "키노시타 바쿠",
         "writer": "코노모토 카즈야",
         "thumbnail": "image/cinema/내 곁에 있어줘.webp"
+    },
+    {
+    "title": "극장판 총집편 걸즈 밴드 크라이 있잖아, 미래.",
+    "studio": "토에이 애니메이션",
+    "director": "사카이 카즈오",
+    "writer": "하나다 줏키",
+    "thumbnail": "image/cinema/극장판 총집편 걸즈 밴드 크라이 있잖아, 미래.webp"
+    },
+    {
+    "title": "기동전사 건담 섬광의 하사웨이 키르케의 마녀",
+    "studio": "선라이즈",
+    "director": "무라세 슈코",
+    "writer": "무토 야스유키",
+    "thumbnail": "image/cinema/기동전사 건담 섬광의 하사웨이 키르케의 마녀.webp"
+    },
+    {
+    "title": "극장판 내 마음의 위험한 녀석",
+    "studio": "신에이 동화",
+    "director": "아카기 히로아키",
+    "writer": "하나다 줏키",
+    "thumbnail": "image/cinema/극장판 내 마음의 위험한 녀석.webp"
     }
 ]

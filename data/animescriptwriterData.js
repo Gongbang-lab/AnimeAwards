@@ -20,6 +20,16 @@ const scriptwriterData = [
     ]
   },
   {
+    "id": 63042,
+    "quarter": "1분기",
+    "title": "명탐정 프리큐어",
+    "thumbnail": "image/animeimg/Q1/명탐정 프리큐어.webp",
+    "studio": "토에이 애니메이션",
+    "scriptwriter": [
+      "무라야마 이사오"
+    ]
+  },
+  {
     "id": 19383,
     "quarter": "1분기",
     "title": "야미시바이 16기",
@@ -49,6 +59,16 @@ const scriptwriterData = [
     "scriptwriter": [
       "나츠오 사에리",
       "야마시타 신고"
+    ]
+  },
+  {
+    "id": 63667,
+    "quarter": "2분기",
+    "title": "마법의 자매 루루토리리",
+    "thumbnail": "image/animeimg/Q2/마법의 자매 루루토리리.webp",
+    "studio": "스튜디오 피에로",
+    "scriptwriter": [
+      "카키하라 유코"
     ]
   }
 ];

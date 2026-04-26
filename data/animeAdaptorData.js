@@ -659,5 +659,723 @@ const AnimeAdaptorData = [
     "adaptor": [
       "히구치 나나미"
     ]
+  },
+  {
+    "id": 59393,
+    "title": "치킨 파이터",
+    "quarter": "2분기",
+    "day": "Mondays",
+    "thumbnail": "image/animeimg/Q2/치킨 파이터.webp",
+    "studio": "산지겐",
+    "adaptor": [
+      "세코 히로시"
+    ]
+  },
+  {
+    "id": 62852,
+    "title": "고스트 콘서트: missing Songs",
+    "quarter": "2분기",
+    "day": "Mondays",
+    "thumbnail": "image/animeimg/Q2/고스트 콘서트 missing Songs.webp",
+    "studio": "ENGI",
+    "adaptor": [
+      "진보 마사토"
+    ]
+  },
+  {
+    "id": 61687,
+    "title": "자칭 악역 영애인 약혼자 관찰기록.",
+    "quarter": "2분기",
+    "day": "Mondays",
+    "thumbnail": "image/animeimg/Q2/자칭 악역 영애인 약혼자 관찰기록.webp",
+    "studio": "아시 프로덕션",
+    "adaptor": [
+      "이노우에 아키코"
+    ]
+  },
+  {
+    "id": 62146,
+    "title": "이세계 유유자적 농가 2",
+    "quarter": "2분기",
+    "day": "Mondays",
+    "thumbnail": "image/animeimg/Q2/이세계 유유자적 농가 2.webp",
+    "studio": "Zero-G",
+    "adaptor": [
+      "쿠라야 료이치"
+    ]
+  },
+  {
+    "id": 51553,
+    "title": "고깔모자 아틀리에",
+    "quarter": "2분기",
+    "day": "Mondays",
+    "thumbnail": "image/animeimg/Q2/고깔모자 아틀리에.webp",
+    "studio": "BUG FILMS",
+    "adaptor": [
+      "세코 히로시"
+    ]
+  },
+  {
+    "id": 61425,
+    "title": "허당 선도부원과 스커트 길이가 부적절한 여고생의 이야기",
+    "quarter": "2분기",
+    "day": "Mondays",
+    "thumbnail": "image/animeimg/Q2/허당 선도부원과 스커트 길이가 부적절한 여고생의 이야기.webp",
+    "studio": "Zero-G",
+    "adaptor": [
+      "요코타니 마사히로"
+    ]
+  },
+  {
+    "id": 62331,
+    "title": "라이어 게임",
+    "quarter": "2분기",
+    "day": "Tuesdays",
+    "thumbnail": "image/animeimg/Q2/라이어 게임.webp",
+    "studio": "매드하우스",
+    "adaptor": [
+      "우라하타 타츠히코"
+    ]
+  },
+  {
+    "id": 63375,
+    "title": "일본삼국",
+    "quarter": "2분기",
+    "day": "Tuesdays",
+    "thumbnail": "image/animeimg/Q2/일본삼국.webp",
+    "studio": "스튜디오 카프카",
+    "adaptor": [
+      "우츠미 테루코"
+    ]
+  },
+  {
+    "id": 61931,
+    "title": "비극의 원흉이 되는 최강악역 최종보스 여왕은 국민을 위해 헌신합니다 Season2",
+    "quarter": "2분기",
+    "day": "Tuesdays",
+    "thumbnail": "image/animeimg/Q2/비극의 원흉이 되는 최강악역 최종보스 여왕은 국민을 위해 헌신합니다 Season2.webp",
+    "studio": "OLM",
+    "adaptor": [
+      "아카오 데코"
+    ]
+  },
+  {
+    "id": 62601,
+    "title": "매리지 톡신",
+    "quarter": "2분기",
+    "day": "Tuesdays",
+    "thumbnail": "image/animeimg/Q2/매리지 톡신.webp",
+    "studio": "본즈 필름",
+    "adaptor": [
+      "우에노 키미코"
+    ]
+  },
+  {
+    "id": 61839,
+    "title": "사랑해 게임을 끝내고 싶어",
+    "quarter": "2분기",
+    "day": "Tuesdays",
+    "thumbnail": "image/animeimg/Q2/사랑해 게임을 끝내고 싶어.webp",
+    "studio": "FelixFilm",
+    "adaptor": [
+      "오오치 케이이치로"
+    ]
+  },
+  {
+    "id": 56734,
+    "title": "반에서 두 번째로 귀여운 여자애와 친구가 되었다",
+    "quarter": "2분기",
+    "day": "Tuesdays",
+    "thumbnail": "image/animeimg/Q2/반에서 두 번째로 귀여운 여자애와 친구가 되었다.webp",
+    "studio": "CONNECT",
+    "adaptor": [
+      "오오치 케이이치로"
+    ]
+  },
+  {
+    "id": 61013,
+    "title": "레플리카도, 사랑을 한다",
+    "quarter": "2분기",
+    "day": "Tuesdays",
+    "thumbnail": "image/animeimg/Q2/레플리카도, 사랑을 한다.webp",
+    "studio": "voil",
+    "adaptor": [
+      "시노즈카 토모코"
+    ]
+  },
+  {
+    "id": 53732,
+    "title": "왼손잡이 에렌",
+    "quarter": "2분기",
+    "day": "Wednesdays",
+    "thumbnail": "image/animeimg/Q2/왼손잡이 에렌.webp",
+    "studio": "Production I.G",
+    "adaptor": [
+      "키시모토 타쿠"
+    ]
+  },
+  {
+    "id": 63014,
+    "title": "두 남자와 룸쉐어 중입니다",
+    "quarter": "2분기",
+    "day": "Wednesdays",
+    "thumbnail": "image/animeimg/Q2/두 남자와 룸쉐어 중입니다.webp",
+    "studio": "타츠노코 프로덕션",
+    "adaptor": [
+      "이마자키 이츠키"
+    ]
+  },
+  {
+    "id": 63376,
+    "title": "여신 「이세계 전생하면 뭐가 되고 싶습니까」 나「용사의 갈비뼈로」",
+    "quarter": "2분기",
+    "day": "Wednesdays",
+    "thumbnail": "image/animeimg/Q2/여신 「이세계 전생하면 뭐가 되고 싶습니까」 나「용사의 갈비뼈로」.webp",
+    "studio": "Qzil.la",
+    "adaptor": [
+      "후타시로 짓파"
+    ]
+  },
+  {
+    "id": 59708,
+    "title": "어서 오세요 실력지상주의 교실에 4th Season",
+    "quarter": "2분기",
+    "day": "Wednesdays",
+    "thumbnail": "image/animeimg/Q2/어서 오세요 실력지상주의 교실에 4th Season.webp",
+    "studio": "Lerche",
+    "adaptor": [
+      "시게노부 코우"
+    ]
+  },
+  {
+    "id": 62512,
+    "title": "자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season",
+    "quarter": "2분기",
+    "day": "Wednesdays",
+    "thumbnail": "image/animeimg/Q2/자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season.webp",
+    "studio": "스튜디오 5조",
+    "adaptor": [
+      "타카하시 타츠야"
+    ]
+  },
+  {
+    "id": 61316,
+    "title": "Re:제로부터 시작하는 이세계 생활 4기",
+    "quarter": "2분기",
+    "day": "Wednesdays",
+    "thumbnail": "image/animeimg/Q2/Re 제로부터 시작하는 이세계 생활 4기.webp",
+    "studio": "WHITE FOX",
+    "adaptor": [
+      "요코타니 마사히로"
+    ]
+  },
+  {
+    "id": 61831,
+    "title": "최강의 왕, 두 번째 인생에는 무엇을 하는가 시즌 2",
+    "quarter": "2분기",
+    "day": "Wednesdays",
+    "thumbnail": "image/animeimg/Q2/최강의 왕, 두 번째 인생에는 무엇을 하는가 시즌 2.webp",
+    "studio": "studio A-CAT",
+    "adaptor": [
+      "코노 타카미츠"
+    ]
+  },
+  {
+    "id": 62604,
+    "title": "오타쿠에게 상냥한 갸루는 없다",
+    "quarter": "2분기",
+    "day": "Wednesdays",
+    "thumbnail": "image/animeimg/Q2/오타쿠에게 상냥한 갸루는 없다.webp",
+    "studio": "TMS 엔터테인먼트",
+    "adaptor": [
+      "이누카이 카즈히코"
+    ]
+  },
+  {
+    "id": 62893,
+    "title": "놓친 물고기는 컸지만 잡은 물고기가 너무 컸던 건",
+    "quarter": "2분기",
+    "day": "Thursdays",
+    "thumbnail": "image/animeimg/Q2/놓친 물고기는 컸지만 잡은 물고기가 너무 컸던 건.webp",
+    "studio": "TROYCA",
+    "adaptor": [
+      "요코테 미치코"
+    ]
+  },
+  {
+    "id": 59551,
+    "title": "힘내라 나카무라 군",
+    "quarter": "2분기",
+    "day": "Thursdays",
+    "thumbnail": "image/animeimg/Q2/힘내라 나카무라 군.webp",
+    "studio": "Drive",
+    "adaptor": [
+      "아오키 야스코"
+    ]
+  },
+  {
+    "id": 60028,
+    "title": "공주 기사는 야만족의 신부",
+    "quarter": "2분기",
+    "day": "Thursdays",
+    "thumbnail": "image/animeimg/Q2/공주 기사는 야만족의 신부.webp",
+    "studio": "주문당",
+    "adaptor": [
+      "아사카와 미야",
+      "모리미야 히사시"
+    ]
+  },
+  {
+    "id": 57592,
+    "title": "닥터 스톤 SCIENCE FUTURE",
+    "quarter": "2분기",
+    "day": "Thursdays",
+    "thumbnail": "image/animeimg/Q2/닥터 스톤 SCIENCE FUTURE.webp",
+    "studio": "TMS 엔터테인먼트",
+    "adaptor": [
+      "스나야마 쿠라스미"
+    ]
+  },
+  {
+    "id": 58832,
+    "title": "쿠지마 노래하면 집이 파다닥",
+    "quarter": "2분기",
+    "day": "Thursdays",
+    "thumbnail": "image/animeimg/Q2/쿠지마 노래하면 집이 파다닥.webp",
+    "studio": "스튜디오 히바리",
+    "adaptor": [
+      "야마다 야스노리"
+    ]
+  },
+  {
+    "id": 60852,
+    "title": "얼음 성벽",
+    "quarter": "2분기",
+    "day": "Thursdays",
+    "thumbnail": "image/animeimg/Q2/얼음 성벽.webp",
+    "studio": "스튜디오 KAI",
+    "adaptor": [
+      "나카니시 야스히로"
+    ]
+  },
+  {
+    "id": 59835,
+    "title": "키리오 팬클럽",
+    "quarter": "2분기",
+    "day": "Fridays",
+    "thumbnail": "image/animeimg/Q2/키리오 팬클럽.webp",
+    "studio": "SATELIGHT",
+    "adaptor": [
+      "사츠키 아야"
+    ]
+  },
+  {
+    "id": 59443,
+    "title": "리인카네이션의 꽃잎",
+    "quarter": "2분기",
+    "day": "Fridays",
+    "thumbnail": "image/animeimg/Q2/리인카네이션의 꽃잎.webp",
+    "studio": "BENTEN Film",
+    "adaptor": [
+      "이시노 아츠오"
+    ]
+  },
+  {
+    "id": 61943,
+    "title": "하이바라의 청춘 뉴 게임 플러스",
+    "quarter": "2분기",
+    "day": "Fridays",
+    "thumbnail": "image/animeimg/Q2/하이바라의 청춘 뉴 게임 플러스.webp",
+    "studio": "스튜디오 코메트",
+    "adaptor": [
+      "오오치 케이이치로"
+    ]
+  },
+  {
+    "id": 58820,
+    "title": "아와지마 가극학교",
+    "quarter": "2분기",
+    "day": "Fridays",
+    "thumbnail": "image/animeimg/Q2/아와지마 가극학교.webp",
+    "studio": "매드하우스",
+    "adaptor": [
+      "나카니시 야스히로"
+    ]
+  },
+  {
+    "id": 62964,
+    "title": "또 죽고 말았나요, 탐정님",
+    "quarter": "2분기",
+    "day": "Fridays",
+    "thumbnail": "image/animeimg/Q2/또 죽고 말았나요, 탐정님.webp",
+    "studio": "라이덴 필름",
+    "adaptor": [
+      "이노우에 미오"
+    ]
+  },
+  {
+    "id": 56876,
+    "title": "옆집 천사님 때문에 어느샌가 인간적으로 타락한 사연 2",
+    "quarter": "2분기",
+    "day": "Fridays",
+    "thumbnail": "image/animeimg/Q2/옆집 천사님 때문에 어느샌가 인간적으로 타락한 사연 2.webp",
+    "studio": "project No.9",
+    "adaptor": [
+      "오오치 케이이치로"
+    ]
+  },
+  {
+    "id": 59970,
+    "title": "전생했더니 슬라임이었던 건에 대하여 4기",
+    "quarter": "2분기",
+    "day": "Fridays",
+    "thumbnail": "image/animeimg/Q2/전생했더니 슬라임이었던 건에 대하여 4기.webp",
+    "studio": "8-Bit",
+    "adaptor": [
+      "오가와 히토미"
+    ]
+  },
+  {
+    "id": 62068,
+    "title": "스노우볼 어스",
+    "quarter": "2분기",
+    "day": "Fridays",
+    "thumbnail": "image/animeimg/Q2/스노우볼 어스.webp",
+    "studio": "스튜디오 KAI",
+    "adaptor": [
+      "무라코시 시게루"
+    ]
+  },
+  {
+    "id": 62981,
+    "title": "신의 물방울",
+    "quarter": "2분기",
+    "day": "Fridays",
+    "thumbnail": "image/animeimg/Q2/신의 물방울.webp",
+    "studio": "SATELIGHT",
+    "adaptor": [
+      "미츠루 유우"
+    ]
+  },
+  {
+    "id": 61186,
+    "title": "카미이나 보탄, 취한 모습은 백합의 꽃",
+    "quarter": "2분기",
+    "day": "Saturdays",
+    "thumbnail": "image/animeimg/Q2/카미이나 보탄, 취한 모습은 백합의 꽃.webp",
+    "studio": "소와네",
+    "adaptor": [
+      "요나이야마 요코"
+    ]
+  },
+  {
+    "id": 61200,
+    "title": "종말의 발키리 Ⅲ",
+    "quarter": "2분기",
+    "day": "Saturdays",
+    "thumbnail": "image/animeimg/Q2/종말의 발키리 Ⅲ.webp",
+    "studio": "유메타 컴퍼니",
+    "adaptor": [
+      "무토 야스유키"
+    ]
+  },
+  {
+    "id": 56646,
+    "title": "북두의 권 -FIST OF THE NORTH STAR-",
+    "quarter": "2분기",
+    "day": "Saturdays",
+    "thumbnail": "image/animeimg/Q2/북두의 권 -FIST OF THE NORTH STAR-.webp",
+    "studio": "TMS 엔터테인먼트",
+    "adaptor": [
+      "이누카이 카즈히코"
+    ]
+  },
+  {
+    "id": 62485,
+    "title": "여친, 빌리겠습니다 5기",
+    "quarter": "2분기",
+    "day": "Saturdays",
+    "thumbnail": "image/animeimg/Q2/여친, 빌리겠습니다 5기.webp",
+    "studio": "TMS 엔터테인먼트",
+    "adaptor": [
+      "히로타 미츠타카"
+    ]
+  },
+  {
+    "id": 57466,
+    "title": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
+    "quarter": "2분기",
+    "day": "Saturdays",
+    "thumbnail": "image/animeimg/Q2/책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~.webp",
+    "studio": "WIT STUDIO",
+    "adaptor": [
+      "쿠니사와 마리코"
+    ]
+  },
+  {
+    "id": 60310,
+    "title": "마계학교 이루마군 4기",
+    "quarter": "2분기",
+    "day": "Saturdays",
+    "thumbnail": "image/animeimg/Q2/마계학교 이루마군 4기.webp",
+    "studio": "반다이 남코 픽처스",
+    "adaptor": [
+      "후데야스 카즈유키"
+    ]
+  },
+  {
+    "id": 60444,
+    "title": "비실비실 선생님",
+    "quarter": "2분기",
+    "day": "Saturdays",
+    "thumbnail": "image/animeimg/Q2/비실비실 선생님.webp",
+    "studio": "브레인즈 베이스",
+    "adaptor": [
+      "후쿠시마 요시후미"
+    ]
+  },
+  {
+    "id": 62825,
+    "title": "최강의 직업은 용사도 현자도 아닌 감정사(임시)인 것 같은데요",
+    "quarter": "2분기",
+    "day": "Saturdays",
+    "thumbnail": "image/animeimg/Q2/최강의 직업은 용사도 현자도 아닌 감정사(임시)인 것 같은데요.webp",
+    "studio": "스튜디오 플러드",
+    "adaptor": [
+      "시미즈 메구미"
+    ]
+  },
+  {
+    "id": 62391,
+    "title": "킬 블루",
+    "quarter": "2분기",
+    "day": "Saturdays",
+    "thumbnail": "image/animeimg/Q2/킬 블루.webp",
+    "studio": "CUE",
+    "adaptor": [
+      "카부라기 히로"
+    ]
+  },
+  {
+    "id": 62164,
+    "title": "아카네 이야기",
+    "quarter": "2분기",
+    "day": "Saturdays",
+    "thumbnail": "image/animeimg/Q2/아카네 이야기.webp",
+    "studio": "ZEXCS",
+    "adaptor": [
+      "츠치야 미치히로"
+    ]
+  },
+  {
+    "id": 62001,
+    "title": "황천의 츠가이",
+    "quarter": "2분기",
+    "day": "Saturdays",
+    "thumbnail": "image/animeimg/Q2/황천의 츠가이.webp",
+    "studio": "본즈 필름",
+    "adaptor": [
+      "타카기 노보루"
+    ]
+  },
+  {
+    "id": 62048,
+    "title": "마오",
+    "quarter": "2분기",
+    "day": "Saturdays",
+    "thumbnail": "image/animeimg/Q2/마오.webp",
+    "studio": "선라이즈",
+    "adaptor": [
+      "카키하라 유코"
+    ]
+  },
+  {
+    "id": 61443,
+    "title": "춘하추동 대행자 봄의 춤",
+    "quarter": "2분기",
+    "day": "Sundays",
+    "thumbnail": "image/animeimg/Q2/춘하추동 대행자 봄의 춤.webp",
+    "studio": "WIT STUDIO",
+    "adaptor": [
+      "히사오 아유무"
+    ]
+  },
+  {
+    "id": 62913,
+    "title": "니디 걸 오버도즈",
+    "quarter": "2분기",
+    "day": "Sundays",
+    "thumbnail": "image/animeimg/Q2/니디 걸 오버도즈.webp",
+    "studio": "요스타 픽처스",
+    "adaptor": [
+      "나카시마 마사오키"
+    ]
+  },
+  {
+    "id": 61501,
+    "title": "카난 님은 초보 악마",
+    "quarter": "2분기",
+    "day": "Sundays",
+    "thumbnail": "image/animeimg/Q2/카난 님은 초보 악마.webp",
+    "studio": "스튜디오 KAI",
+    "adaptor": [
+      "이케다 린타로"
+    ]
+  },
+  {
+    "id": 62050,
+    "title": "신의 정원이 딸린 쿠스노키 저택",
+    "quarter": "2분기",
+    "day": "Sundays",
+    "thumbnail": "image/animeimg/Q2/신의 정원이 딸린 쿠스노키 저택.webp",
+    "studio": "JUVENAGE",
+    "adaptor": [
+      "코바야시 유지"
+    ]
+  },
+  {
+    "id": 62018,
+    "title": "다다미 한 장짜리 방 만끽 생활",
+    "quarter": "2분기",
+    "day": "Sundays",
+    "thumbnail": "image/animeimg/Q2/다다미 한 장짜리 방 만끽 생활.webp",
+    "studio": "PRA",
+    "adaptor": [
+      "타카하시 타츠야"
+    ]
+  },
+  {
+    "id": 63352,
+    "title": "부탁해 아이프리",
+    "quarter": "2분기",
+    "day": "Sundays",
+    "thumbnail": "image/animeimg/Q2/부탁해 아이프리.webp",
+    "studio": "OLM",
+    "adaptor": [
+      "이치카와 기가에몬"
+    ]
+  },
+  {
+    "id": 59983,
+    "title": "지팡이와 검의 위스토리아 Season2",
+    "quarter": "2분기",
+    "day": "Sundays",
+    "thumbnail": "image/animeimg/Q2/지팡이와 검의 위스토리아 Season2.webp",
+    "studio": "액터스",
+    "adaptor": [
+      "키무라 노보루"
+    ]
+  },
+  {
+    "id": 60055,
+    "title": "요자쿠라 일가의 대작전 제2기",
+    "quarter": "2분기",
+    "day": "Sundays",
+    "thumbnail": "image/animeimg/Q2/요자쿠라 일가의 대작전 제2기.webp",
+    "studio": "SILVER LINK.",
+    "adaptor": [
+      "Minato",
+      "Mirai"
+    ]
+  },
+  {
+    "id": 58877,
+    "title": "다이아몬드 에이스 actII -Second Season-",
+    "quarter": "2분기",
+    "day": "Sundays",
+    "thumbnail": "image/animeimg/Q2/다이아몬드 에이스 actII -Second Season-.webp",
+    "studio": "OLM",
+    "adaptor": [
+      "코누타 켄지"
+    ]
+  },
+  {
+    "id": 62342,
+    "title": "메이드 양은 먹기만 할 뿐",
+    "quarter": "2분기",
+    "day": "Sundays",
+    "thumbnail": "image/animeimg/Q2/메이드 양은 먹기만 할 뿐.webp",
+    "studio": "EMT 스퀘어드",
+    "adaptor": [
+      "타카하시 나츠코",
+      "후지모토 사에카"
+    ]
+  },
+  {
+    "id": 21,
+    "title": "원피스",
+    "quarter": "2분기",
+    "day": "Sundays",
+    "thumbnail": "image/animeimg/Q2/원피스.webp",
+    "studio": "토에이 애니메이션",
+    "adaptor": [
+      "요네무라 쇼지"
+    ]
+  },
+  {
+    "id": 62171,
+    "title": "검은 고양이와 마녀의 교실",
+    "quarter": "2분기",
+    "day": "Sundays",
+    "thumbnail": "image/animeimg/Q2/검은 고양이와 마녀의 교실.webp",
+    "studio": "라이덴 필름",
+    "adaptor": [
+      "고토 미도리"
+    ]
+  },
+  {
+    "id": 62983,
+    "title": "마리카쨩의 호감도는 망가져있다",
+    "quarter": "2분기",
+    "day": "Anomaly",
+    "thumbnail": "image/animeimg/Q2/마리카쨩의 호감도는 망가져있다.webp",
+    "studio": "스튜디오 레오",
+    "adaptor": [
+      "오타케 마사미츠"
+    ]
+  },
+  {
+    "id": 63248,
+    "title": "큰 여자는 좋아하세요",
+    "quarter": "2분기",
+    "day": "Anomaly",
+    "thumbnail": "image/animeimg/Q2/큰 여자는 좋아하세요.webp",
+    "studio": "Studio Hokiboshi",
+    "adaptor": [
+      "쿠로사키 에요"
+    ]
+  },
+  {
+    "id": 63310,
+    "title": "음옥단지",
+    "quarter": "2분기",
+    "day": "Anomaly",
+    "thumbnail": "image/animeimg/Q2/음옥단지.webp",
+    "studio": "Elias",
+    "adaptor": [
+      "쿠로사키 에요"
+    ]
+  },
+  {
+    "id": 57779,
+    "title": "도로헤도로 시즌 2",
+    "quarter": "2분기",
+    "day": "Web",
+    "thumbnail": "image/animeimg/Q2/도로헤도로 시즌 2.webp",
+    "studio": "MAPPA",
+    "adaptor": [
+      "세코 히로시"
+    ]
+  },
+  {
+    "id": 63572,
+    "title": "댄덜라이언",
+    "quarter": "2분기",
+    "day": "Web",
+    "thumbnail": "image/animeimg/Q2/댄덜라이언.webp",
+    "studio": "NAZ",
+    "adaptor": [
+      "스즈키 요스케"
+    ]
   }
 ];
