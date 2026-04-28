@@ -457,7 +457,7 @@ function groupByHierarchy(data) {
 function listenToVoteRates() {
     if (!window.fbOnValue || !window.fbDB) return;
 
-    const awardName = nominateState.awardName; // charNominate는 charState.awardName
+    const awardName = charState.awardName; // charNominate는 charState.awardName
 
     // ✅ sanitizeKey 제거 - DB에 저장된 키 그대로 사용
     const categoryRef = window.fbRef(window.fbDB, `votes/categories/${awardName}`);
