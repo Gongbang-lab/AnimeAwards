@@ -640,7 +640,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "A.C.G.T.",
-    "studio_img": "image/studio/A.C.G.T..avif",
+    "studio_img": "image/studio/ACGT.avif",
     "works": [
       {
         "title": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
@@ -820,13 +820,7 @@ const AnimeStudioData = [
         "title": "MF고스트 3rd Season",
         "thumbnail": "image/animeimg/Q1/MF고스트 3rd Season.webp",
         "director": "나카 토모히토"
-      }
-    ]
-  },
-  {
-    "studio": "FelixFilm",
-    "studio_img": "image/studio/FelixFilm.avif",
-    "works": [
+      },
       {
         "title": "사랑해 게임을 끝내고 싶어",
         "thumbnail": "image/animeimg/Q2/사랑해 게임을 끝내고 싶어.webp",
@@ -1073,7 +1067,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "SIGNAL.MD",
-    "studio_img": "image/studio/SIGNAL.MD.avif",
+    "studio_img": "image/studio/SIGNALMD.avif",
     "works": [
       {
         "title": "아름다운 그대에게",
@@ -1089,7 +1083,7 @@ const AnimeStudioData = [
   },
   {
     "studio": "SILVER LINK.",
-    "studio_img": "image/studio/SILVER LINK..avif",
+    "studio_img": "image/studio/SILVER LINK.avif",
     "works": [
       {
         "title": "아르네의 사건부",
@@ -1178,6 +1172,11 @@ const AnimeStudioData = [
     "studio_img": "image/studio/TMS 엔터테인먼트.avif",
     "works": [
       {
+        "title": "바키도: 무적의 검사 편",
+        "thumbnail": "image/animeimg/Q1/바키도.webp",
+        "director": "히라노 토시키"
+      },
+      {
         "title": "오타쿠에게 상냥한 갸루는 없다",
         "thumbnail": "image/animeimg/Q2/오타쿠에게 상냥한 갸루는 없다.webp",
         "director": "미타 아라타"
@@ -1196,17 +1195,6 @@ const AnimeStudioData = [
         "title": "여친, 빌리겠습니다 5기",
         "thumbnail": "image/animeimg/Q2/여친, 빌리겠습니다 5기.webp",
         "director": "코가 카즈오미"
-      }
-    ]
-  },
-  {
-    "studio": "TMS Entertainment",
-    "studio_img": "image/studio/TMS Entertainment.avif",
-    "works": [
-      {
-        "title": "바키도: 무적의 검사 편",
-        "thumbnail": "image/animeimg/Q1/바키도.webp",
-        "director": "히라노 토시키"
       }
     ]
   },
@@ -1260,20 +1248,14 @@ const AnimeStudioData = [
     ]
   },
   {
-    "studio": "Wit Studio",
-    "studio_img": "image/studio/Wit Studio.avif",
+    "studio": "WIT STUDIO",
+    "studio_img": "image/studio/WIT STUDIO.avif",
     "works": [
       {
         "title": "프리즘 윤무곡",
         "thumbnail": "image/animeimg/Q1/프리즘 윤무곡.webp",
         "director": "나카자와 카즈토"
-      }
-    ]
-  },
-  {
-    "studio": "WIT STUDIO",
-    "studio_img": "image/studio/WIT STUDIO.avif",
-    "works": [
+      },
       {
         "title": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
         "thumbnail": "image/animeimg/Q2/책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~.webp",

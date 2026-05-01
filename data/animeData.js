@@ -1022,7 +1022,7 @@ const AnimeList = [
     "day": "Web",
     "episodes": 20,
     "studio": [
-      "Wit Studio"
+      "WIT STUDIO"
     ],
     "staff": {
       "director": ["나카자와 카즈토", "타카하시 테츠야", "후지이 사키"],
@@ -1070,7 +1070,7 @@ const AnimeList = [
     "day": "Web",
     "episodes": 13,
     "studio": [
-      "TMS Entertainment"
+      "TMS 엔터테인먼트"
     ],
     "staff": {
       "director": ["히라노 토시키"],
@@ -1354,7 +1354,7 @@ const AnimeList = [
   "day": "Tuesdays",
   "episodes": 12,
   "studio": [
-    "FelixFilm"
+    "Felix Film"
   ],
   "staff": {
     "director": [
