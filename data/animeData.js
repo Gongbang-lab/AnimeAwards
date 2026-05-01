@@ -734,7 +734,7 @@ const AnimeList = [
     "day": "Sundays",
     "episodes": 12,
     "studio": [
-      "Signal.MD"
+      "SIGNAL.MD"
     ],
     "staff": {
       "director": ["타케무라 나츠키"],
@@ -1875,7 +1875,7 @@ const AnimeList = [
   "day": "Fridays",
   "episodes": 12,
   "studio": [
-    "project No.9"
+    "Project No.9"
   ],
   "staff": {
     "director": [
@@ -2407,7 +2407,7 @@ const AnimeList = [
   "day": "Sundays",
   "episodes": 0,
   "studio": [
-    "BN Pictures",
+    "반다이 남코 픽처스",
     "액터스"
   ],
   "staff": {

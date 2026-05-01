@@ -159,6 +159,11 @@ const AnimeStudioData = [
         "title": "마계학교 이루마군 4기",
         "thumbnail": "image/animeimg/Q2/마계학교 이루마군 4기.webp",
         "director": "모리와키 마코토"
+      },
+      {
+        "title": "지팡이와 검의 위스토리아 Season2",
+        "thumbnail": "image/animeimg/Q2/지팡이와 검의 위스토리아 Season2.webp",
+        "director": "나카노 히데아키"
       }
     ]
   },
@@ -678,17 +683,6 @@ const AnimeStudioData = [
     ]
   },
   {
-    "studio": "BN Pictures",
-    "studio_img": "image/studio/BN Pictures.avif",
-    "works": [
-      {
-        "title": "지팡이와 검의 위스토리아 Season2",
-        "thumbnail": "image/animeimg/Q2/지팡이와 검의 위스토리아 Season2.webp",
-        "director": "나카노 히데아키"
-      }
-    ]
-  },
-  {
     "studio": "BUG FILMS",
     "studio_img": "image/studio/BUG FILMS.avif",
     "works": [
@@ -1024,17 +1018,6 @@ const AnimeStudioData = [
     ]
   },
   {
-    "studio": "project No.9",
-    "studio_img": "image/studio/project No.9.avif",
-    "works": [
-      {
-        "title": "옆집 천사님 때문에 어느샌가 인간적으로 타락한 사연 2",
-        "thumbnail": "image/animeimg/Q2/옆집 천사님 때문에 어느샌가 인간적으로 타락한 사연 2.webp",
-        "director": "쿠마노 치히로"
-      }
-    ]
-  },
-  {
     "studio": "Project No.9",
     "studio_img": "image/studio/Project No.9.avif",
     "works": [
@@ -1042,6 +1025,11 @@ const AnimeStudioData = [
         "title": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
         "thumbnail": "image/animeimg/Q1/투명남과 인간녀 ~곧 부부가 될 두 사람~.webp",
         "director": "세타 미츠호"
+      },
+      {
+        "title": "옆집 천사님 때문에 어느샌가 인간적으로 타락한 사연 2",
+        "thumbnail": "image/animeimg/Q2/옆집 천사님 때문에 어느샌가 인간적으로 타락한 사연 2.webp",
+        "director": "쿠마노 치히로"
       }
     ]
   },
@@ -1084,20 +1072,14 @@ const AnimeStudioData = [
     ]
   },
   {
-    "studio": "Signal.MD",
-    "studio_img": "image/studio/Signal.MD.avif",
+    "studio": "SIGNAL.MD",
+    "studio_img": "image/studio/SIGNAL.MD.avif",
     "works": [
       {
         "title": "아름다운 그대에게",
         "thumbnail": "image/animeimg/Q1/아름다운 그대에게.webp",
         "director": "타케무라 나츠키"
-      }
-    ]
-  },
-  {
-    "studio": "SIGNAL.MD",
-    "studio_img": "image/studio/SIGNAL.MD.avif",
-    "works": [
+      },
       {
         "title": "왼손잡이 에렌",
         "thumbnail": "image/animeimg/Q2/왼손잡이 에렌.webp",
