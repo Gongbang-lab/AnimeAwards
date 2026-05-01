@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>애니메이션 수집기 (분기 선택 버전)</title>
+  <title>애니메이션 수집기 (제작사 배열 버전)</title>
   <style>
     :root { --primary: #4a5568; --secondary: #38a169; --bg: #f5f7fa; }
     body { font-family: 'Pretendard', sans-serif; padding: 20px; background: var(--bg); color: #333; line-height: 1.6; }
@@ -65,7 +65,8 @@
       </div>
 
       <div class="edit-grid">
-        <div class="edit-row"><label>제작사 (한국어)</label><input type="text" id="in-studio" oninput="updateJSON()"></div>
+        <!-- 제작사 필드를 쉼표 구분 입력으로 안내 -->
+        <div class="edit-row"><label>제작사 (쉼표 구분)</label><input type="text" id="in-studio" oninput="updateJSON()"></div>
         <div class="edit-row"><label>감독 (쉼표 구분)</label><input type="text" id="in-director" oninput="updateJSON()"></div>
         <div class="edit-row"><label id="label-writer">각색가 (쉼표 구분)</label><input type="text" id="in-writer" oninput="updateJSON()"></div>
         <div class="edit-row"><label>캐릭터 디자인 (쉼표 구분)</label><input type="text" id="in-char" oninput="updateJSON()"></div>
@@ -128,9 +129,12 @@
       document.getElementById('editArea').style.display = "block";
       document.getElementById('p-img').src = data.images.jpg.large_image_url;
       document.getElementById('in-id').value = data.mal_id;
-      document.getElementById('in-title').value = ""; // 제목은 직접 입력 유도
+      document.getElementById('in-title').value = ""; 
       document.getElementById('in-day').value = data.broadcast.day || "Unknown";
-      document.getElementById('in-studio').value = data.studios.length > 0 ? data.studios[0].name : "";
+      
+      // 제작사 정보를 쉼표로 연결하여 초기값 세팅
+      document.getElementById('in-studio').value = data.studios.map(s => s.name).join(', ');
+      
       document.getElementById('in-director').value = staffObj.director.join(', ');
       document.getElementById('in-writer').value = staffObj.writer.join(', ');
       document.getElementById('in-char').value = staffObj.character_design.join(', ');
@@ -144,12 +148,13 @@
 function updateJSON() {
     const title = document.getElementById('in-title').value.trim();
     const quarter = document.getElementById('in-quarter').value;
-    const qKey = quarter.charAt(0); // "1분기" -> "1"
+    const qKey = quarter.charAt(0); 
     
-    // 썸네일 경로 생성: 언더바(_) 없이 공백(space)을 그대로 유지합니다.
     const autoThumbnail = title ? `image/animeimg/Q${qKey}/${title}.webp` : "";
-
     const writerField = currentAnime.isOriginal ? "scriptwriter" : "adaptor";
+
+    // 공통 파싱 함수
+    const parseList = (id) => document.getElementById(id).value.split(',').map(s => s.trim()).filter(s => s);
 
     const finalObj = {
       id: parseInt(document.getElementById('in-id').value) || 0,
@@ -158,34 +163,31 @@ function updateJSON() {
       thumbnail: autoThumbnail,
       day: document.getElementById('in-day').value,
       episodes: currentAnime.episodes || 0,
-      studio: document.getElementById('in-studio').value,
+      // studio 필드를 배열로 변환
+      studio: parseList('in-studio'),
       staff: {
-        director: document.getElementById('in-director').value.split(',').map(s => s.trim()).filter(s => s),
-        [writerField]: document.getElementById('in-writer').value.split(',').map(s => s.trim()).filter(s => s),
-        character_design: document.getElementById('in-char').value.split(',').map(s => s.trim()).filter(s => s)
+        director: parseList('in-director'),
+        [writerField]: parseList('in-writer'),
+        character_design: parseList('in-char')
       }
     };
 
-    // 마지막에 콤마(,)를 붙여 배열에 추가하기 편하게 출력합니다.
     document.getElementById('codeOutput').value = JSON.stringify(finalObj, null, 2) + ",";
   }
 
   async function copyCode() {
     const area = document.getElementById('codeOutput');
     const btn = document.querySelector('.btn-copy');
-    
     try {
         await navigator.clipboard.writeText(area.value);
         const originalText = btn.innerText;
         btn.innerText = "✅ 복사 완료!";
-        btn.style.background = "#2f855a"; // 진한 초록색으로 피드백
-        
+        btn.style.background = "#2f855a";
         setTimeout(() => {
             btn.innerText = originalText;
-            btn.style.background = ""; // 원상복구
+            btn.style.background = "";
         }, 2000);
     } catch (err) {
-        // 구형 브라우저 대응용 fallback
         area.select();
         document.execCommand('copy');
         alert("코드가 복사되었습니다!");

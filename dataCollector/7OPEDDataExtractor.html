@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>애니 음악 자동 추출기</title>
+  <style>
+    body { font-family: 'Pretendard', sans-serif; padding: 20px; background: #f8fafc; color: #333; }
+    .container { max-width: 850px; margin: 0 auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+    
+    /* 입력 영역 레이아웃 수정 */
+    .search-box { display: flex; gap: 10px; margin-bottom: 20px; align-items: flex-end; }
+    .input-group { display: flex; flex-direction: column; gap: 5px; flex: 1; }
+    .input-group.short { flex: 0.4; }
+    
+    label { font-size: 13px; font-weight: bold; color: #4a5568; }
+    input, select { padding: 12px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 16px; background: white; }
+    input:focus, select:focus { outline: none; border-color: #3182ce; }
+    
+    button { padding: 12px 25px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; transition: 0.2s; height: 48px; }
+    .btn-fetch { background: #4a5568; color: white; }
+    .btn-fetch:hover { background: #2d3748; }
+    
+    .music-card { display: flex; flex-direction: column; gap: 10px; padding: 20px; border: 1px solid #edf2f7; border-radius: 12px; margin-bottom: 15px; background: #fff; }
+    .card-header { display: flex; justify-content: space-between; align-items: center; }
+    .type-badge { font-size: 11px; font-weight: bold; color: #3182ce; background: #ebf8ff; padding: 2px 8px; border-radius: 4px; }
+    
+    .edit-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .full-width { grid-column: span 2; }
+    
+    .field-label { font-size: 12px; color: #718096; margin-bottom: 4px; display: block; }
+    .input-edit { width: 100%; padding: 8px; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 14px; box-sizing: border-box; }
+    
+    .btn-yt { background: #ff0000; color: white; font-size: 12px; padding: 8px 15px; text-decoration: none; border-radius: 6px; font-weight: bold; text-align: center; }
+    
+    .json-header { display: flex; justify-content: space-between; align-items: center; margin-top: 30px; margin-bottom: 10px; }
+    .btn-copy { background: #38a169; color: white; padding: 8px 15px; font-size: 13px; }
+    .btn-copy:hover { background: #2f855a; }
+
+    #resultArea { width: 100%; height: 350px; font-family: 'Cascadia Code', monospace; padding: 15px; background: #1a202c; color: #a0aec0; border-radius: 8px; border: none; white-space: pre; overflow-x: auto; box-sizing: border-box; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>🎵 애니 주제가 자동 추출기</h2>
+  <p style="color: #666; font-size: 14px;">MAL ID와 방영 분기를 선택한 후 데이터를 추출하세요.</p>
+
+  <div class="search-box">
+    <div class="input-group">
+      <label for="malId">MyAnimeList ID</label>
+      <input type="number" id="malId" placeholder="예: 52991" oninput="updateJson()">
+    </div>
+    <div class="input-group short">
+      <label for="quarter">방영 분기</label>
+      <select id="quarter" onchange="updateJson()">
+        <option value="1분기">1분기</option>
+        <option value="2분기">2분기</option>
+        <option value="3분기">3분기</option>
+        <option value="4분기">4분기</option>
+      </select>
+    </div>
+    <button class="btn-fetch" onclick="fetchMusicData()">데이터 추출</button>
+  </div>
+
+  <div id="status" style="margin-bottom: 15px; font-weight: bold; color: #3182ce;"></div>
+  
+  <div id="musicList"></div>
+
+  <div class="json-header">
+    <h3 style="margin: 0;">📋 생성된 JSON</h3>
+    <button id="copyBtn" class="btn-copy" onclick="copyToClipboard()">JSON 복사하기</button>
+  </div>
+  <textarea id="resultArea" readonly placeholder="추출을 시작하면 JSON 데이터가 여기에 표시됩니다."></textarea>
+</div>
+
+<script>
+  let currentSongs = [];
+
+  async function fetchMusicData() {
+    const id = document.getElementById('malId').value;
+    const status = document.getElementById('status');
+    
+    if(!id) return alert("ID를 입력하세요.");
+    status.innerText = "⏳ 음악 정보를 분석하는 중...";
+    
+    try {
+      const animeResp = await fetch(`https://api.jikan.moe/v4/anime/${id}`);
+      const themeResp = await fetch(`https://api.jikan.moe/v4/anime/${id}/themes`);
+      
+      const animeData = await animeResp.json();
+      const themeData = await themeResp.json();
+      const animeTitle = animeData.data.title;
+
+      const opList = themeData.data.openings.map(t => parseTheme(t, 'op'));
+      const edList = themeData.data.endings.map(t => parseTheme(t, 'ed'));
+      currentSongs = [...opList, ...edList];
+
+      renderList(animeTitle);
+      updateJson();
+      status.innerText = `✅ 총 ${currentSongs.length}곡을 찾았습니다.`;
+
+    } catch (e) {
+      status.innerText = "❌ 에러: 데이터를 가져올 수 없습니다.";
+      console.error(e);
+    }
+  }
+
+  function renderList(animeTitle) {
+    const listDiv = document.getElementById('musicList');
+    listDiv.innerHTML = currentSongs.map((song, index) => {
+      const searchQuery = encodeURIComponent(`${animeTitle} ${song.type.toUpperCase()} ${song.title} ${song.artist}`);
+      const ytSearchUrl = `https://www.youtube.com/results?search_query=${searchQuery}`;
+      
+      return `
+        <div class="music-card">
+          <div class="card-header">
+            <span class="type-badge">${song.type.toUpperCase()}</span>
+            <a href="${ytSearchUrl}" target="_blank" class="btn-yt">YouTube 검색</a>
+          </div>
+          <div class="edit-fields">
+            <div>
+              <label class="field-label">곡 제목</label>
+              <input type="text" class="input-edit" value="${song.title}" oninput="updateData(${index}, 'title', this.value)">
+            </div>
+            <div>
+              <label class="field-label">아티스트</label>
+              <input type="text" class="input-edit" value="${song.artist}" oninput="updateData(${index}, 'artist', this.value)">
+            </div>
+            <div class="full-width">
+              <label class="field-label">YouTube URL</label>
+              <input type="text" class="input-edit" placeholder="https://youtu.be/..." oninput="updateData(${index}, 'youtube', this.value)">
+            </div>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  function updateData(index, field, value) {
+    currentSongs[index][field] = value;
+    updateJson();
+  }
+
+  // ID나 분기가 바뀔 때도 JSON이 실시간 업데이트 되도록 설정
+  function updateJson() {
+    const id = document.getElementById('malId').value;
+    const quarter = document.getElementById('quarter').value;
+    
+    const finalResult = {
+      id: parseInt(id) || 0,
+      quarter: quarter,
+      songs: currentSongs
+    };
+    document.getElementById('resultArea').value = JSON.stringify(finalResult, null, 2);
+  }
+
+  function parseTheme(themeStr, type) {
+    const titleMatch = themeStr.match(/"([^"]+)"/);
+    const artistMatch = themeStr.match(/by\s+([^(\n\r]+)/);
+
+    return {
+      type: type,
+      title: titleMatch ? titleMatch[1] : "Unknown Title",
+      artist: artistMatch ? artistMatch[1].trim() : "Unknown Artist",
+      youtube: ""
+    };
+  }
+
+  async function copyToClipboard() {
+    const resultArea = document.getElementById('resultArea');
+    const copyBtn = document.getElementById('copyBtn');
+
+    if (!resultArea.value || resultArea.value === "{}") {
+      alert("복사할 데이터가 없습니다.");
+      return;
+    }
+
+    try {
+      await navigator.clipboard.writeText(resultArea.value);
+      const originalText = copyBtn.innerText;
+      copyBtn.innerText = "✅ 복사 완료!";
+      copyBtn.style.background = "#2f855a";
+      setTimeout(() => {
+        copyBtn.innerText = originalText;
+        copyBtn.style.background = "#38a169";
+      }, 2000);
+    } catch (err) {
+      alert("복사에 실패했습니다.");
+    }
+  }
+</script>
+
+</body>
+</html>

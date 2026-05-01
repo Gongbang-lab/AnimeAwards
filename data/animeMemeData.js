@@ -59,6 +59,14 @@ const AnimeMemeData = [
     },
     {
         "id": "meme_008",
+        "name": "3인 영역전개",
+        "type": "webp",
+        "src1": "image/meme/3인 영역전개.webp",
+        "origin": "주술회전 3기",
+        "quarter": "1분기"
+    },
+    {
+        "id": "meme_009",
         "name": "액션의 사망 유희.",
         "type": "gif",
         "src1": "image/meme/액션의 사망유희.gif",
@@ -66,7 +74,7 @@ const AnimeMemeData = [
         "quarter": "1분기"
     },
     {
-        "id": "meme_009",
+        "id": "meme_010",
         "name": "메리지 톡신",
         "type": "webp",
         "src1": "image/meme/메리지 톡신.webp",
@@ -74,7 +82,7 @@ const AnimeMemeData = [
         "quarter": "2분기"
     },
     {
-        "id": "meme_010",
+        "id": "meme_011",
         "name": "카즈야 망상",
         "type": "mp4",
         "src1": "image/meme/카즈야 망상.mp4",
@@ -84,11 +92,23 @@ const AnimeMemeData = [
         "quarter": "2분기"
     },
     {
-        "id": "meme_011",
+        "id": "meme_012",
         "name": "속이 뻥",
         "type": "webp",
         "src1": "image/meme/속이 뻥.webp",
         "origin": "여친, 빌리겠습니다 5기",
+        "quarter": "2분기"
+    },
+    {
+        "id": "meme_013",
+        "name": "나카무라 그장면",
+        "type": "webp",
+        "src1": "image/meme/나카무라1.webp",
+        "src2_title": "아~	❤️",
+        "src2": "image/meme/나카무라2.webp",
+        "src3_title": "일루와잇!",
+        "src3": "image/meme/나카무라3.webp",
+        "origin": "힘내라! 나카무라 군!!",
         "quarter": "2분기"
     }
 ];

@@ -127,9 +127,9 @@ function renderFilteredList(query) {
 
     Object.entries(mergedData).forEach(([quarter, songs]) => {
         const filteredSongs = songs.filter(song => 
-            song.animeTitle.toLowerCase().includes(query) || 
-            song.title.toLowerCase().includes(query) ||
-            (song.artist && song.artist.toLowerCase().includes(query))
+            (song.animeTitle?.toLowerCase() || "").includes(query) || 
+            (song.title?.toLowerCase() || "").includes(query) ||
+            (song.artist?.toLowerCase() || "").includes(query)
         );
 
         if (filteredSongs.length > 0) {

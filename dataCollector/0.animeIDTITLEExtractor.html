@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID-Title 추출기 (형식 자동 보정)</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding: 20px; line-height: 1.6; background-color: #f0f2f5; color: #333; }
+        .container { max-width: 900px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        h2 { margin-top: 0; color: #1a1a1a; border-left: 5px solid #007bff; padding-left: 15px; }
+        textarea { width: 100%; height: 250px; padding: 15px; border: 1px solid #ddd; border-radius: 8px; resize: vertical; box-sizing: border-box; font-family: monospace; font-size: 13px; background: #fafafa; }
+        textarea:focus { outline: none; border-color: #007bff; background: #fff; }
+        .controls { margin-top: 15px; display: flex; gap: 10px; }
+        button { padding: 12px 24px; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; transition: all 0.2s; }
+        .btn-extract { background-color: #007bff; color: white; flex: 2; }
+        .btn-extract:hover { background-color: #0056b3; }
+        .btn-copy { background-color: #28a745; color: white; flex: 1; }
+        .btn-copy:hover { background-color: #218838; }
+        .result-area { margin-top: 25px; overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; background: white; }
+        th, td { border: 1px solid #eee; padding: 12px; text-align: left; }
+        th { background-color: #f8f9fa; color: #555; font-weight: 600; }
+        tr:hover { background-color: #fdfdfd; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>JSON ID-Title 데이터 추출</h2>
+    <p style="font-size: 0.9em; color: #666;">데이터가 <code>{...}, {...}</code> 형태여도 자동으로 배열로 인식하여 처리합니다.</p>
+    
+    <textarea id="json-input" placeholder="여기에 데이터를 붙여넣으세요..."></textarea>
+    
+    <div class="controls">
+        <button class="btn-extract" onclick="extractData()">ID-Title 추출하기</button>
+        <button class="btn-copy" onclick="copyToClipboard()">스프레드시트용 복사</button>
+    </div>
+
+    <div class="result-area">
+        <table id="result-table">
+            <thead>
+                <tr>
+                    <th style="width: 30%;">ID</th>
+                    <th>Title</th>
+                </tr>
+            </thead>
+            <tbody id="result-body">
+                <!-- 결과 데이터 출력 -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    let extractedText = "";
+
+    function extractData() {
+        const input = document.getElementById('json-input').value.trim();
+        const tbody = document.getElementById('result-body');
+        tbody.innerHTML = "";
+        extractedText = "";
+
+        if (!input) {
+            alert("데이터를 입력해주세요.");
+            return;
+        }
+
+        try {
+            // 보정 로직: 입력값이 [ ]로 시작하지 않으면 강제로 감싸줍니다.
+            // 마지막 쉼표(,)가 있을 경우를 대비해 처리합니다.
+            let formattedInput = input;
+            if (!formattedInput.startsWith('[')) {
+                formattedInput = '[' + formattedInput;
+            }
+            if (!formattedInput.endsWith(']')) {
+                // 마지막 문자가 쉼표면 제거 후 닫기, 아니면 그냥 닫기
+                formattedInput = formattedInput.replace(/,$/, '') + ']';
+            }
+
+            const data = JSON.parse(formattedInput);
+            
+            data.forEach(item => {
+                const id = item.id !== undefined ? item.id : "N/A";
+                const title = item.title !== undefined ? item.title : "N/A";
+
+                const row = document.createElement('tr');
+                row.innerHTML = `<td>${id}</td><td>${title}</td>`;
+                tbody.appendChild(row);
+
+                // 스프레드시트 호환용 (Tab 구분)
+                extractedText += `${id}\t${title}\n`;
+            });
+
+        } catch (e) {
+            console.error(e);
+            alert("데이터 형식이 잘못되었습니다. JSON 구조를 확인해주세요.");
+        }
+    }
+
+    function copyToClipboard() {
+        if (!extractedText) {
+            alert("먼저 추출하기 버튼을 눌러주세요.");
+            return;
+        }
+
+        const tempTextArea = document.createElement('textarea');
+        tempTextArea.value = extractedText.trim();
+        document.body.appendChild(tempTextArea);
+        tempTextArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(tempTextArea);
+
+        alert("복사되었습니다! 스프레드시트에 Ctrl+V 하세요.");
+    }
+</script>
+
+</body>
+</html>
