@@ -1076,6 +1076,11 @@ const CharacterVoiceData = {
         "charName": "세실 그란벨",
         "animeTitle": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~",
         "img": "image/charimg/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Cecil_Granvelle.jpg"
+      },
+      {
+        "charName": "ハル",
+        "animeTitle": "BEASTARS FINAL SEASON Part 2",
+        "img": "image/charimg/Q1/BEASTARS_FINAL_SEASON_Part_2/Haru.jpg"
       }
     ]
   },
@@ -3014,6 +3019,11 @@ const CharacterVoiceData = {
         "charName": "우시카와 요츠하",
         "animeTitle": "메달리스트 2기",
         "img": "image/charimg/Q1/Medalist_2nd_Season/Yotsuha_Ushikawa.jpg"
+      },
+      {
+        "charName": "호시카와 릴리",
+        "animeTitle": "Zombie Land Saga: Yume Ginga Paradise",
+        "img": "image/charimg/Q1/Zombie_Land_Saga_Yume_Ginga_Paradise/Lily_Hoshikawa.jpg"
       }
     ]
   },
@@ -3260,6 +3270,11 @@ const CharacterVoiceData = {
         "charName": "우즈키 시노부",
         "animeTitle": "한밤중 하트튠",
         "img": "image/charimg/Q1/Mayonaka_Heart_Tune/Shinobu_Uzuki.jpg"
+      },
+      {
+        "charName": "ミルキット",
+        "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
+        "img": "image/charimg/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Milkit.jpg"
       },
       {
         "charName": "밀리아 밀레아니아",
@@ -4267,6 +4282,11 @@ const CharacterVoiceData = {
         "charName": "두",
         "animeTitle": "마왕의 딸은 너무 친절해!!",
         "img": "image/charimg/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Doux.jpg"
+      },
+      {
+        "charName": "エターナ・リンバウ",
+        "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
+        "img": "image/charimg/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Eterna_Rinebow.jpg"
       },
       {
         "charName": "마에누마 사쿠야",
@@ -5580,6 +5600,11 @@ const CharacterVoiceData = {
         "charName": "와카바 아오이",
         "animeTitle": "인외 교실의 인간 혐오 교사",
         "img": "image/charimg/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Aoi_Wakaba.jpg"
+      },
+      {
+        "charName": "新条ひなき",
+        "animeTitle": "Aikatsu! x PriPara THE MOVIE -Deai no Kiseki-",
+        "img": "image/charimg/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Hinaki_Shinjou.jpg"
       },
       {
         "charName": "루루시",
@@ -7524,15 +7549,45 @@ const CharacterVoiceData = {
       }
     ]
   },
-  "M・A・O": {
-    "name": "M・A・O",
-    "cvimg": "image/cvimg/M・A・O.webp",
+  "M.A.O": {
+    "name": "M.A.O",
+    "cvimg": "image/cvimg/M.A.O.webp",
     "gender": "female",
     "characters": [
       {
         "charName": "릴리 오를라뮌데",
         "animeTitle": "에리스의 성배",
         "img": "image/charimg/Q1/Eris_no_Seihai/Lily_Orlamunde.jpg"
+      },
+      {
+        "charName": "아마노 쟈코",
+        "animeTitle": "하이스쿨! 기면조",
+        "img": "image/charimg/Q1/High_School!_Kimengumi_(2026)/Jako_Amano.jpg"
+      },
+      {
+        "charName": "아이리스",
+        "animeTitle": "불꽃 소방대 3장",
+        "img": "image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Iris.jpg"
+      },
+      {
+        "charName": "티르",
+        "animeTitle": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
+        "img": "image/charimg/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Till.jpg"
+      },
+      {
+        "charName": "세페크",
+        "animeTitle": "비극의 원흉이 되는 최강악역 최종보스 여왕은 국민을 위해 헌신합니다 Season2",
+        "img": "image/charimg/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Sefec.jpg"
+      },
+      {
+        "charName": "여신",
+        "animeTitle": "여신 「이세계 전생하면 뭐가 되고 싶습니까」 나「용사의 갈비뼈로」",
+        "img": "image/charimg/Q2/Megami_Isekai_Tensei_Nani_ni_Naritai_Desu_ka_Ore_Yuusha_no_Rokkotsu_de/Megami.jpg"
+      },
+      {
+        "charName": "린",
+        "animeTitle": "북두의 권 -FIST OF THE NORTH STAR-",
+        "img": "image/charimg/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Lin.jpg"
       }
     ]
   },
@@ -7845,27 +7900,30 @@ const CharacterVoiceData = {
       }
     ]
   },
-  "Ayaka Nanase": {
-    "name": "Ayaka Nanase",
-    "cvimg": "image/cvimg/Ayaka Nanase.webp",
+  "나나세 아야카": {
+    "name": "나나세 아야카",
+    "cvimg": "image/cvimg/나나세 아야카.webp",
     "gender": "female",
     "characters": [
       {
         "charName": "フラム・アプリコット",
         "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
         "img": "image/charimg/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Flum_Apricot.jpg"
-      }
-    ]
-  },
-  "Miku Itou": {
-    "name": "Miku Itou",
-    "cvimg": "image/cvimg/Miku Itou.webp",
-    "gender": "female",
-    "characters": [
+      },
       {
-        "charName": "ミルキット",
-        "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
-        "img": "image/charimg/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Milkit.jpg"
+        "charName": "키노시타 야마토",
+        "animeTitle": "타몬 군 지금 어느 쪽!?",
+        "img": "image/charimg/Q1/Tamon-kun_Ima_Docchi!/Yamato_Kinoshita.jpg"
+      },
+      {
+        "charName": "마스라오 나데코",
+        "animeTitle": "카난 님은 초보 악마",
+        "img": "image/charimg/Q2/Kanan-sama_wa_Akumade_Choroi/Nadeshiko_Masurao.jpg"
+      },
+      {
+        "charName": "サーシャ",
+        "animeTitle": "마물을 먹는 모험가 ~나만 마물을 먹고 강해진다~",
+        "img": "image/charimg/Q2/Mamonogurai_no_Boukensha_Ore_Dake_Mamono_wo_Kuratte_Tsuyoku_Naru/Sasha.jpg"
       }
     ]
   },
@@ -7891,18 +7949,6 @@ const CharacterVoiceData = {
       }
     ]
   },
-  "Misaki Kuno": {
-    "name": "Misaki Kuno",
-    "cvimg": "image/cvimg/Misaki Kuno.webp",
-    "gender": "female",
-    "characters": [
-      {
-        "charName": "エターナ・リンバウ",
-        "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
-        "img": "image/charimg/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Eterna_Rinebow.jpg"
-      }
-    ]
-  },
   "쿠로다 타카야": {
     "name": "쿠로다 타카야",
     "cvimg": "image/cvimg/쿠로다 타카야.webp",
@@ -7920,9 +7966,9 @@ const CharacterVoiceData = {
       }
     ]
   },
-  "Miki Kariya": {
-    "name": "Miki Kariya",
-    "cvimg": "image/cvimg/Miki Kariya.webp",
+  "카리야 미키": {
+    "name": "카리야 미키",
+    "cvimg": "image/cvimg/카리야 미키.webp",
     "gender": "female",
     "characters": [
       {
@@ -8855,28 +8901,6 @@ const CharacterVoiceData = {
       }
     ]
   },
-  "M·A·O": {
-    "name": "M·A·O",
-    "cvimg": "image/cvimg/M·A·O.webp",
-    "gender": "unknown",
-    "characters": [
-      {
-        "charName": "아마노 쟈코",
-        "animeTitle": "하이스쿨! 기면조",
-        "img": "image/charimg/Q1/High_School!_Kimengumi_(2026)/Jako_Amano.jpg"
-      },
-      {
-        "charName": "아이리스",
-        "animeTitle": "불꽃 소방대 3장",
-        "img": "image/charimg/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Iris.jpg"
-      },
-      {
-        "charName": "티르",
-        "animeTitle": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
-        "img": "image/charimg/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Till.jpg"
-      }
-    ]
-  },
   "사쿠라 카오루": {
     "name": "사쿠라 카오루",
     "cvimg": "image/cvimg/사쿠라 카오루.webp",
@@ -9350,9 +9374,9 @@ const CharacterVoiceData = {
       }
     ]
   },
-  "Wakana Kuramochi": {
-    "name": "Wakana Kuramochi",
-    "cvimg": "image/cvimg/Wakana Kuramochi.webp",
+  "쿠라모치 와카나": {
+    "name": "쿠라모치 와카나",
+    "cvimg": "image/cvimg/쿠라모치 와카나.webp",
     "gender": "female",
     "characters": [
       {
@@ -10231,28 +10255,6 @@ const CharacterVoiceData = {
         "charName": "토다",
         "animeTitle": "타몬 군 지금 어느 쪽!?",
         "img": "image/charimg/Q1/Tamon-kun_Ima_Docchi!/Toda.jpg"
-      }
-    ]
-  },
-  "나나세 아야카": {
-    "name": "나나세 아야카",
-    "cvimg": "image/cvimg/나나세 아야카.webp",
-    "gender": "male",
-    "characters": [
-      {
-        "charName": "키노시타 야마토",
-        "animeTitle": "타몬 군 지금 어느 쪽!?",
-        "img": "image/charimg/Q1/Tamon-kun_Ima_Docchi!/Yamato_Kinoshita.jpg"
-      },
-      {
-        "charName": "마스라오 나데코",
-        "animeTitle": "카난 님은 초보 악마",
-        "img": "image/charimg/Q2/Kanan-sama_wa_Akumade_Choroi/Nadeshiko_Masurao.jpg"
-      },
-      {
-        "charName": "サーシャ",
-        "animeTitle": "마물을 먹는 모험가 ~나만 마물을 먹고 강해진다~",
-        "img": "image/charimg/Q2/Mamonogurai_no_Boukensha_Ore_Dake_Mamono_wo_Kuratte_Tsuyoku_Naru/Sasha.jpg"
       }
     ]
   },
@@ -12491,18 +12493,6 @@ const CharacterVoiceData = {
       }
     ]
   },
-  "Sayaka Senbongi": {
-    "name": "Sayaka Senbongi",
-    "cvimg": "image/cvimg/Sayaka Senbongi.webp",
-    "gender": "female",
-    "characters": [
-      {
-        "charName": "ハル",
-        "animeTitle": "BEASTARS FINAL SEASON Part 2",
-        "img": "image/charimg/Q1/BEASTARS_FINAL_SEASON_Part_2/Haru.jpg"
-      }
-    ]
-  },
   "오키노 코지": {
     "name": "오키노 코지",
     "cvimg": "image/cvimg/오키노 코지.webp",
@@ -12881,39 +12871,37 @@ const CharacterVoiceData = {
       }
     ]
   },
-  "Shino Shimoji": {
-    "name": "Shino Shimoji",
-    "cvimg": "image/cvimg/Shino Shimoji.webp",
+  "시모지 시노": {
+    "name": "시모지 시노",
+    "cvimg": "image/cvimg/시모지 시노.webp",
     "gender": "female",
     "characters": [
       {
         "charName": "大空あかり",
         "animeTitle": "Aikatsu! x PriPara THE MOVIE -Deai no Kiseki-",
         "img": "image/charimg/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Akari_Oozora.jpg"
+      },
+      {
+        "charName": "루루시 루",
+        "animeTitle": "이세계 유유자적 농가 2",
+        "img": "image/charimg/Q2/Isekai_Nonbiri_Nouka_2/Loo.jpg"
+      },
+      {
+        "charName": "호쇼 카가리",
+        "animeTitle": "마오",
+        "img": "image/charimg/Q2/MAO/Kagari_Houshou.jpg"
       }
     ]
   },
-  "Yuu Wakui": {
-    "name": "Yuu Wakui",
-    "cvimg": "image/cvimg/Yuu Wakui.webp",
+  "와쿠이 유우": {
+    "name": "와쿠이 유우",
+    "cvimg": "image/cvimg/와쿠이 유우.webp",
     "gender": "female",
     "characters": [
       {
         "charName": "氷上スミレ",
         "animeTitle": "Aikatsu! x PriPara THE MOVIE -Deai no Kiseki-",
         "img": "image/charimg/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Sumire_Hikami.jpg"
-      }
-    ]
-  },
-  "Yui Ishikawa": {
-    "name": "Yui Ishikawa",
-    "cvimg": "image/cvimg/Yui Ishikawa.webp",
-    "gender": "female",
-    "characters": [
-      {
-        "charName": "新条ひなき",
-        "animeTitle": "Aikatsu! x PriPara THE MOVIE -Deai no Kiseki-",
-        "img": "image/charimg/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Hinaki_Shinjou.jpg"
       }
     ]
   },
@@ -13294,18 +13282,6 @@ const CharacterVoiceData = {
       }
     ]
   },
-  "Minami Tanaka": {
-    "name": "Minami Tanaka",
-    "cvimg": "image/cvimg/Minami Tanaka.webp",
-    "gender": "female",
-    "characters": [
-      {
-        "charName": "호시카와 릴리",
-        "animeTitle": "Zombie Land Saga: Yume Ginga Paradise",
-        "img": "image/charimg/Q1/Zombie_Land_Saga_Yume_Ginga_Paradise/Lily_Hoshikawa.jpg"
-      }
-    ]
-  },
   "타카하시 후미야": {
     "name": "타카하시 후미야",
     "cvimg": "image/cvimg/타카하시 후미야.webp",
@@ -13627,23 +13603,6 @@ const CharacterVoiceData = {
         "charName": "나",
         "animeTitle": "여신 「이세계 전생하면 뭐가 되고 싶습니까」 나「용사의 갈비뼈로」",
         "img": "image/charimg/Q2/Megami_Isekai_Tensei_Nani_ni_Naritai_Desu_ka_Ore_Yuusha_no_Rokkotsu_de/Ore.jpg"
-      }
-    ]
-  },
-  "시모지 시노": {
-    "name": "시모지 시노",
-    "cvimg": "image/cvimg/시모지 시노.webp",
-    "gender": "female",
-    "characters": [
-      {
-        "charName": "루루시 루",
-        "animeTitle": "이세계 유유자적 농가 2",
-        "img": "image/charimg/Q2/Isekai_Nonbiri_Nouka_2/Loo.jpg"
-      },
-      {
-        "charName": "호쇼 카가리",
-        "animeTitle": "마오",
-        "img": "image/charimg/Q2/MAO/Kagari_Houshou.jpg"
       }
     ]
   },
@@ -14167,18 +14126,6 @@ const CharacterVoiceData = {
       }
     ]
   },
-  "M.A.O.": {
-    "name": "M.A.O.",
-    "cvimg": "image/cvimg/M.A.O..webp",
-    "gender": "female",
-    "characters": [
-      {
-        "charName": "세페크",
-        "animeTitle": "비극의 원흉이 되는 최강악역 최종보스 여왕은 국민을 위해 헌신합니다 Season2",
-        "img": "image/charimg/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Sefec.jpg"
-      }
-    ]
-  },
   "유센 이사무": {
     "name": "유센 이사무",
     "cvimg": "image/cvimg/유센 이사무.webp",
@@ -14280,23 +14227,6 @@ const CharacterVoiceData = {
         "charName": "코미 사에",
         "animeTitle": "아카네 이야기",
         "img": "image/charimg/Q2/Akane-banashi/Sae_Komi.jpg"
-      }
-    ]
-  },
-  "M.A.O": {
-    "name": "M.A.O",
-    "cvimg": "image/cvimg/M.A.O.webp",
-    "gender": "female",
-    "characters": [
-      {
-        "charName": "여신",
-        "animeTitle": "여신 「이세계 전생하면 뭐가 되고 싶습니까」 나「용사의 갈비뼈로」",
-        "img": "image/charimg/Q2/Megami_Isekai_Tensei_Nani_ni_Naritai_Desu_ka_Ore_Yuusha_no_Rokkotsu_de/Megami.jpg"
-      },
-      {
-        "charName": "린",
-        "animeTitle": "북두의 권 -FIST OF THE NORTH STAR-",
-        "img": "image/charimg/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Lin.jpg"
       }
     ]
   },

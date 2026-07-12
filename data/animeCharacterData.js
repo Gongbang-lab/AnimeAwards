@@ -7141,109 +7141,109 @@ const CharacterData = [
       "name": "세실 글로우 알파스타",
       "gender": "male",
       "cv": "코바야시 유스케",
-      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku./Cecil_Glo_Alphasta.jpg"
+      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Cecil_Glo_Alphasta.jpg"
     },
     {
       "name": "바티아 이빌 노체스",
       "gender": "female",
       "cv": "토미타 미유",
-      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku./Bertia_Ibil_Noches.jpg"
+      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Bertia_Ibil_Noches.jpg"
     },
     {
       "name": "히로니아 인데른",
       "gender": "female",
       "cv": "미야모토 유메",
-      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku./Heronia_Inderon.jpg"
+      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Heronia_Inderon.jpg"
     },
     {
       "name": "조안나 켈츠워렌",
       "gender": "female",
       "cv": "오오하시 아야카",
-      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku./Joanna_Curtswarren.jpg"
+      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Joanna_Curtswarren.jpg"
     },
     {
       "name": "숀 터코인 알파스타",
       "gender": "male",
       "cv": "무라세 아유무",
-      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku./Shawn_Alphasta.jpg"
+      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Shawn_Alphasta.jpg"
     },
     {
       "name": "넬트 클럼",
       "gender": "male",
       "cv": "호리에 슌",
-      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku./Nelt_Krum.jpg"
+      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Nelt_Krum.jpg"
     },
     {
       "name": "시리카 루네아",
       "gender": "female",
       "cv": "사에키 이오리",
-      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku./Silica_Lunea.jpg"
+      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Silica_Lunea.jpg"
     },
     {
       "name": "바르드 노킨스",
       "gender": "male",
       "cv": "타카하시 히데노리",
-      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku./Vald_Norgins.jpg"
+      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Vald_Norgins.jpg"
     },
     {
       "name": "펜닐 로드",
       "gender": "male",
       "cv": "코노에 슈마",
-      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku./Fannil_Rhode.jpg"
+      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Fannil_Rhode.jpg"
     },
     {
       "name": "쿨건 데레스 마던",
       "gender": "male",
       "cv": "야마시타 세이이치로",
-      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku./Courtgain_Mardan.jpg"
+      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Courtgain_Mardan.jpg"
     },
     {
       "name": "이린 실베르츠 자작 영애",
       "gender": "female",
       "cv": "아카네야 히미카",
-      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku./Ilynn_Silbertz.jpg"
+      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Ilynn_Silbertz.jpg"
     },
     {
       "name": "쿠로",
       "gender": "female",
       "cv": "키토 아카리",
-      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku./Kuro.jpg"
+      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Kuro.jpg"
     },
     {
       "name": "찰스 라오넬",
       "gender": "male",
       "cv": "시라이 유스케",
-      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku./Charles_Laonel.jpg"
+      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Charles_Laonel.jpg"
     },
     {
       "name": "신시아 소넬리스",
       "gender": "female",
       "cv": "이치미치 마오",
-      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku./Cynthia_Linnerith.jpg"
+      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Cynthia_Linnerith.jpg"
     },
     {
       "name": "안네 코갈레스",
       "gender": "female",
       "cv": "우치다 아야",
-      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku./Anne_Kogares.jpg"
+      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Anne_Kogares.jpg"
     },
     {
       "name": "피짱",
       "gender": "unknown",
       "cv": "미나미 하루카",
-      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku./Pii.jpg"
+      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Pii.jpg"
     },
     {
       "name": "제노",
       "gender": "male",
       "cv": "타마루 아츠시",
-      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku./Zeno.jpg"
+      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Zeno.jpg"
     },
     {
       "name": "더글라스 이빌 노체스",
       "gender": "male",
       "cv": "이시이 코지",
-      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku./Douglas_Noches.jpg"
+      "img": "image/charimg/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Douglas_Noches.jpg"
     }
   ]
 },
@@ -8239,55 +8239,55 @@ const CharacterData = [
       "name": "아이카와 스나오",
       "gender": "female",
       "cv": "모로호시 스미레",
-      "img": "image/charimg/Q2/Replica_Datte,_Koi_wo_Suru./Sunao_Aikawa.jpg"
+      "img": "image/charimg/Q2/Replica_Datte,_Koi_wo_Suru/Sunao_Aikawa.jpg"
     },
     {
       "name": "아키",
       "gender": "male",
       "cv": "스즈키 료타",
-      "img": "image/charimg/Q2/Replica_Datte,_Koi_wo_Suru./Aki.jpg"
+      "img": "image/charimg/Q2/Replica_Datte,_Koi_wo_Suru/Aki.jpg"
     },
     {
       "name": "나오",
       "gender": "female",
       "cv": "모로호시 스미레",
-      "img": "image/charimg/Q2/Replica_Datte,_Koi_wo_Suru./Nao.jpg"
+      "img": "image/charimg/Q2/Replica_Datte,_Koi_wo_Suru/Nao.jpg"
     },
     {
       "name": "사나다 슈야",
       "gender": "male",
       "cv": "스즈키 료타",
-      "img": "image/charimg/Q2/Replica_Datte,_Koi_wo_Suru./Shuuya_Sanada.jpg"
+      "img": "image/charimg/Q2/Replica_Datte,_Koi_wo_Suru/Shuuya_Sanada.jpg"
     },
     {
       "name": "모리 스즈미",
       "gender": "female",
       "cv": "나즈카 카오리",
-      "img": "image/charimg/Q2/Replica_Datte,_Koi_wo_Suru./Suzumi_Mori.jpg"
+      "img": "image/charimg/Q2/Replica_Datte,_Koi_wo_Suru/Suzumi_Mori.jpg"
     },
     {
       "name": "히로나카 리츠코",
       "gender": "female",
       "cv": "타카다 유우키",
-      "img": "image/charimg/Q2/Replica_Datte,_Koi_wo_Suru./Ritsuko_Hironaka.jpg"
+      "img": "image/charimg/Q2/Replica_Datte,_Koi_wo_Suru/Ritsuko_Hironaka.jpg"
     },
     {
       "name": "요시이 하루카",
       "gender": "male",
       "cv": "나카무라 슈고",
-      "img": "image/charimg/Q2/Replica_Datte,_Koi_wo_Suru./Haruka_Yoshii.jpg"
+      "img": "image/charimg/Q2/Replica_Datte,_Koi_wo_Suru/Haruka_Yoshii.jpg"
     },
     {
       "name": "사토 코즈에",
       "gender": "female",
       "cv": "히다카 리나",
-      "img": "image/charimg/Q2/Replica_Datte,_Koi_wo_Suru./Kozue_Satou.jpg"
+      "img": "image/charimg/Q2/Replica_Datte,_Koi_wo_Suru/Kozue_Satou.jpg"
     },
     {
       "name": "모치즈키 슌",
       "gender": "male",
       "cv": "후쿠야마 쥰",
-      "img": "image/charimg/Q2/Replica_Datte,_Koi_wo_Suru./Shun_Mochizuki.jpg"
+      "img": "image/charimg/Q2/Replica_Datte,_Koi_wo_Suru/Shun_Mochizuki.jpg"
     }
   ]
 },
