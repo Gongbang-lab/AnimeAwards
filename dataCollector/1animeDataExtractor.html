@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>애니메이션 수집기 (제작사 배열 버전)</title>
+  <title>애니메이션 수집기 (시네마 대응 버전)</title>
   <style>
     :root { --primary: #4a5568; --secondary: #38a169; --bg: #f5f7fa; }
     body { font-family: 'Pretendard', sans-serif; padding: 20px; background: var(--bg); color: #333; line-height: 1.6; }
@@ -59,13 +59,12 @@
                 <option value="4분기">4분기 (Q4)</option>
               </select>
             </div>
-            <div class="edit-row"><label>요일</label><input type="text" id="in-day" oninput="updateJSON()"></div>
+            <div class="edit-row"><label>요일 (또는 Cinema)</label><input type="text" id="in-day" oninput="updateJSON()"></div>
           </div>
         </div>
       </div>
 
       <div class="edit-grid">
-        <!-- 제작사 필드를 쉼표 구분 입력으로 안내 -->
         <div class="edit-row"><label>제작사 (쉼표 구분)</label><input type="text" id="in-studio" oninput="updateJSON()"></div>
         <div class="edit-row"><label>감독 (쉼표 구분)</label><input type="text" id="in-director" oninput="updateJSON()"></div>
         <div class="edit-row"><label id="label-writer">각색가 (쉼표 구분)</label><input type="text" id="in-writer" oninput="updateJSON()"></div>
@@ -94,7 +93,7 @@
         <div class="search-item" onclick="getAnimeDetail(${anime.mal_id})">
           <img src="${anime.images.jpg.image_url}">
           <div>
-            <div style="font-weight:bold; font-size:14px;">${anime.title}</div>
+            <div style="font-weight:bold; font-size:14px;">${anime.title} [${anime.type || 'TV'}]</div>
             <div style="font-size:12px; color:#718096;">${anime.title_japanese || ''}</div>
           </div>
         </div>
@@ -113,6 +112,7 @@
       const data = (await aR.json()).data;
       const staffData = (await sR.json()).data;
       const isOriginal = data.source === "Original";
+      const isMovie = data.type === "Movie";
 
       document.getElementById('label-writer').innerText = isOriginal ? "각본가 (Original)" : "시리즈 구성 (Adaptor)";
       
@@ -130,16 +130,21 @@
       document.getElementById('p-img').src = data.images.jpg.large_image_url;
       document.getElementById('in-id').value = data.mal_id;
       document.getElementById('in-title').value = ""; 
-      document.getElementById('in-day').value = data.broadcast.day || "Unknown";
       
-      // 제작사 정보를 쉼표로 연결하여 초기값 세팅
+      // 영화인 경우 day 필드에 Cinema 자동 입력
+      document.getElementById('in-day').value = isMovie ? "Cinema" : (data.broadcast.day || "Unknown");
+      
       document.getElementById('in-studio').value = data.studios.map(s => s.name).join(', ');
-      
       document.getElementById('in-director').value = staffObj.director.join(', ');
       document.getElementById('in-writer').value = staffObj.writer.join(', ');
       document.getElementById('in-char').value = staffObj.character_design.join(', ');
 
-      currentAnime = { episodes: data.episodes || 0, isOriginal: isOriginal };
+      currentAnime = { 
+        episodes: data.episodes || 0, 
+        isOriginal: isOriginal,
+        type: data.type 
+      };
+      
       updateJSON();
       document.getElementById('status').innerText = `✅ 로드 완료. 제목과 분기를 설정하세요.`;
     } catch (e) { document.getElementById('status').innerText = "❌ 상세 정보 에러"; }
@@ -149,11 +154,14 @@ function updateJSON() {
     const title = document.getElementById('in-title').value.trim();
     const quarter = document.getElementById('in-quarter').value;
     const qKey = quarter.charAt(0); 
+    const isMovie = currentAnime.type === "Movie";
     
-    const autoThumbnail = title ? `image/animeimg/Q${qKey}/${title}.webp` : "";
-    const writerField = currentAnime.isOriginal ? "scriptwriter" : "adaptor";
+    // 영화 여부에 따른 썸네일 경로 분기
+    const autoThumbnail = title 
+      ? (isMovie ? `image/cinema/${title}.webp` : `image/animeimg/Q${qKey}/${title}.webp`)
+      : "";
 
-    // 공통 파싱 함수
+    const writerField = currentAnime.isOriginal ? "scriptwriter" : "adaptor";
     const parseList = (id) => document.getElementById(id).value.split(',').map(s => s.trim()).filter(s => s);
 
     const finalObj = {
@@ -163,7 +171,6 @@ function updateJSON() {
       thumbnail: autoThumbnail,
       day: document.getElementById('in-day').value,
       episodes: currentAnime.episodes || 0,
-      // studio 필드를 배열로 변환
       studio: parseList('in-studio'),
       staff: {
         director: parseList('in-director'),

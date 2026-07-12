@@ -1420,5 +1420,99 @@ const animeDirectorData = [
         "thumbnail": "image/animeimg/Q2/댄덜라이언.webp"
       }
     ]
+  },
+  {
+    "director": "후카세 사야",
+    "director_img": "image/staff/director/후카세 사야.webp",
+    "works": [
+      {
+        "title": "경멸하는 표정으로 팬티를 보여다오 R(리턴즈)",
+        "thumbnail": "image/animeimg/Q2/경멸하는 표정으로 팬티를 보여다오 R(리턴즈).webp"
+      }
+    ]
+  },
+  {
+    "director": "호소다 마모루",
+    "director_img": "image/staff/director/호소다 마모루.webp",
+    "works": [
+      {
+        "title": "끝이 없는 스칼렛",
+        "thumbnail": "image/cinema/끝이 없는 스칼렛.webp"
+      }
+    ]
+  },
+  {
+    "director": "사카이 카즈오",
+    "director_img": "image/staff/director/사카이 카즈오.webp",
+    "works": [
+      {
+        "title": "극장판 총집편 걸즈 밴드 크라이 청춘광주곡",
+        "thumbnail": "image/cinema/극장판 총집편 걸즈 밴드 크라이 청춘광주곡.webp"
+      },
+      {
+        "title": "극장판 총집편 걸즈 밴드 크라이 있잖아, 미래.",
+        "thumbnail": "image/cinema/극장판 총집편 걸즈 밴드 크라이 있잖아, 미래.webp"
+      }
+    ]
+  },
+  {
+    "director": "오오카와 타카히로",
+    "director_img": "image/staff/director/오오카와 타카히로.webp",
+    "works": [
+      {
+        "title": "아이엠스타!×프리파라 더 무비 -만남의 기적!-",
+        "thumbnail": "image/cinema/아이엠스타!×프리파라 더 무비 -만남의 기적!-.webp"
+      }
+    ]
+  },
+  {
+    "director": "카와무라 토모유키",
+    "director_img": "image/staff/director/카와무라 토모유키.webp",
+    "works": [
+      {
+        "title": "영화 러브 라이브! 니지가사키 학원 스쿨 아이돌 동호회 완결편 제2장",
+        "thumbnail": "image/cinema/영화 러브 라이브! 니지가사키 학원 스쿨 아이돌 동호회 완결편 제2장.webp"
+      }
+    ]
+  },
+  {
+    "director": "우다 코노스케",
+    "director_img": "image/staff/director/우다 코노스케.webp",
+    "works": [
+      {
+        "title": "좀비 랜드 사가 유메긴가 파라다이스",
+        "thumbnail": "image/cinema/좀비 랜드 사가 유메긴가 파라다이스.webp"
+      }
+    ]
+  },
+  {
+    "director": "사토 타케루",
+    "director_img": "image/staff/director/사토 타케루.webp",
+    "works": [
+      {
+        "title": "좀비 랜드 사가 유메긴가 파라다이스",
+        "thumbnail": "image/cinema/좀비 랜드 사가 유메긴가 파라다이스.webp"
+      }
+    ]
+  },
+  {
+    "director": "이시다 타카후미",
+    "director_img": "image/staff/director/이시다 타카후미.webp",
+    "works": [
+      {
+        "title": "좀비 랜드 사가 유메긴가 파라다이스",
+        "thumbnail": "image/cinema/좀비 랜드 사가 유메긴가 파라다이스.webp"
+      }
+    ]
+  },
+  {
+    "director": "이토 토모히코",
+    "director_img": "image/staff/director/이토 토모히코.webp",
+    "works": [
+      {
+        "title": "녹나무의 파수꾼",
+        "thumbnail": "image/cinema/녹나무의 파수꾼.webp"
+      }
+    ]
   }
 ];

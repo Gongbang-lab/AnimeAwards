@@ -16,10 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
         searchInput.placeholder = "영화 제목 또는 제작사 검색";
         searchInput.addEventListener('input', (e) => {
             const query = e.target.value.toLowerCase().trim();
-            const filtered = movies.filter(m =>
-                m.title.toLowerCase().includes(query) ||
-                (m.studio && m.studio.toLowerCase().includes(query))
-            );
+            const filtered = movies.filter(m => {
+                const matchTitle = m.title.toLowerCase().includes(query);
+                // studio가 배열이므로 some을 사용하여 검색
+                const matchStudio = m.studio && m.studio.some(studioName => studioName.toLowerCase().includes(query));
+                return matchTitle || matchStudio;
+            });
             renderCards(filtered, query);
         });
     }
@@ -37,7 +39,7 @@ function renderCards(data, searchTerm = "") {
     }
 
     grid.innerHTML = data.map(movie => {
-        const isSelected = cinemaState.selectedMovie && cinemaState.selectedMovie.title === movie.title;
+        const isSelected = cinemaState.selectedMovie && cinemaState.selectedMovie.id === movie.id;
 
         let displayTitle = movie.title;
         if (searchTerm) {
@@ -45,19 +47,22 @@ function renderCards(data, searchTerm = "") {
             displayTitle = movie.title.replace(regex, (match) => `<span style="color:var(--gold);">${match}</span>`);
         }
 
+        // studio 배열을 문자열로 쉼표로 연결
+        const displayStudio = movie.studio ? movie.studio.join(', ') : '제작사 불명';
+
         return `
             <div class="card ${isSelected ? 'selected' : ''}"
-                 id="card-${movie.title.replace(/\s/g, '')}"
+                 id="card-${movie.id}"
                  data-category="${cinemaState.awardName}"
-                 data-anime-id="${movie.title}"
-                 onclick="selectMovie('${movie.title.replace(/'/g, "\\'")}')">
+                 data-anime-id="${movie.id}"
+                 onclick="selectMovie(${movie.id})">
                 <div class="card-selection-rate" style="display:none;">0/0</div>
                 <div class="media-box">
                     <img src="../${movie.thumbnail}" alt="${movie.title}" onerror="this.src='https://dummyimage.com/200x300/333/d4af37&text=No+Image'">
                 </div>
                 <div class="card-info">
                     <div class="card-title">${displayTitle}</div>
-                    <div class="card-studio">${movie.studio}</div>
+                    <div class="card-studio">${displayStudio}</div>
                 </div>
             </div>
         `;
@@ -67,15 +72,14 @@ function renderCards(data, searchTerm = "") {
     applyVoteBadges();
 }
 
-function selectMovie(title) {
-    const movie = movies.find(m => m.title === title);
+function selectMovie(id) {
+    const movie = movies.find(m => m.id === id);
     if (!movie) return;
 
     cinemaState.selectedMovie = movie;
 
     document.querySelectorAll('.card').forEach(c => c.classList.remove('selected'));
-    const currentId = `card-${movie.title.replace(/\s/g, '')}`;
-    const currentCard = document.getElementById(currentId);
+    const currentCard = document.getElementById(`card-${movie.id}`);
     if (currentCard) currentCard.classList.add('selected');
 
     const awardBtn = document.getElementById('btn-award');
@@ -88,6 +92,7 @@ function saveCinemaWinner() {
 
     const results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
     results[cinemaState.awardName] = {
+        id: winner.id,
         title: winner.title,
         thumbnail: winner.thumbnail,
         studio: winner.studio
@@ -106,6 +111,12 @@ function showWinnerCelebration(winner) {
     const popup = document.getElementById("winner-popup");
     if (!popup) return;
 
+    // 새로운 staff 데이터 구조에 맞춰 변수 할당
+    const displayStudio = winner.studio ? winner.studio.join(', ') : '-';
+    const displayDirector = (winner.staff && winner.staff.director) ? winner.staff.director.join(', ') : '-';
+    const displayWriter = (winner.staff && winner.staff.scriptwriter) ? winner.staff.scriptwriter.join(', ') : '-';
+    const displayCharDesign = (winner.staff && winner.staff.character_design) ? winner.staff.character_design.join(', ') : '-';
+
     popup.innerHTML = `
         <div class="modal-content celebration-modal">
             <h2 class="modal-header">FINAL WINNER</h2>
@@ -117,15 +128,19 @@ function showWinnerCelebration(winner) {
             <div class="winner-details">
                 <div class="detail-item">
                     <span class="detail-label">Studio</span>
-                    <span class="detail-value">${winner.studio}</span>
+                    <span class="detail-value">${displayStudio}</span>
                 </div>
                 <div class="detail-item">
                     <span class="detail-label">Director</span>
-                    <span class="detail-value">${winner.director}</span>
+                    <span class="detail-value">${displayDirector}</span>
                 </div>
                 <div class="detail-item">
-                    <span class="detail-label">Writer</span>
-                    <span class="detail-value">${winner.writer}</span>
+                    <span class="detail-label">Scriptwriter</span>
+                    <span class="detail-value">${displayWriter}</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Character Design</span>
+                    <span class="detail-value">${displayCharDesign}</span>
                 </div>
             </div>
             <button class="gold-btn full-width" onclick="location.href='../index.html'">결과 저장 및 메인으로</button>
@@ -154,7 +169,7 @@ function applyVoteBadges() {
     const total = cachedVoteData._participants || 0;
 
     document.querySelectorAll('.card').forEach(card => {
-        const animeId = card.getAttribute('data-anime-id');
+        const animeId = card.getAttribute('data-anime-id'); // 이제 고유 id(예: 60610)를 가져옵니다.
         const rateBadge = card.querySelector('.card-selection-rate');
         if (!rateBadge || !animeId) return;
 

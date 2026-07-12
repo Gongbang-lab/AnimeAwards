@@ -11,12 +11,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     renderRookieGrid();
     initSearch();
+    showCriteriaModal();
 
     document.getElementById("btn-home").onclick = () => location.href = "../index.html";
     document.getElementById("btn-award").onclick = () => handleAwardDecision();
 
     waitForFirebaseAndListen();
 });
+
+
+function showCriteriaModal() {
+    document.getElementById("criteria-modal").classList.remove("hidden");
+}
+
+function closeCriteriaModal() {
+    document.getElementById("criteria-modal").classList.add("hidden");
+}
 
 /**
  * 그리드 렌더링 및 선택 이벤트 통합

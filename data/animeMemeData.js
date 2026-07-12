@@ -50,14 +50,6 @@ const AnimeMemeData = [
         "quarter": "1분기"
     },
     {
-        "id": "meme_007",
-        "name": "나 화남",
-        "type": "webp",
-        "src1": "image/meme/용사파티.webp",
-        "origin": "용사 파티에 귀여운 애가 있어서, 고백해봤다.",
-        "quarter": "1분기"
-    },
-    {
         "id": "meme_008",
         "name": "3인 영역전개",
         "type": "webp",

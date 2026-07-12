@@ -164,6 +164,11 @@ const AnimeStudioData = [
         "title": "지팡이와 검의 위스토리아 Season2",
         "thumbnail": "image/animeimg/Q2/지팡이와 검의 위스토리아 Season2.webp",
         "director": "나카노 히데아키"
+      },
+      {
+        "title": "아이엠스타!×프리파라 더 무비 -만남의 기적!-",
+        "thumbnail": "image/cinema/아이엠스타!×프리파라 더 무비 -만남의 기적!-.webp",
+        "director": "오오카와 타카히로"
       }
     ]
   },
@@ -239,6 +244,11 @@ const AnimeStudioData = [
         "title": "마오",
         "thumbnail": "image/animeimg/Q2/마오.webp",
         "director": "사토 테루오"
+      },
+      {
+        "title": "영화 러브 라이브! 니지가사키 학원 스쿨 아이돌 동호회 완결편 제2장",
+        "thumbnail": "image/cinema/영화 러브 라이브! 니지가사키 학원 스쿨 아이돌 동호회 완결편 제2장.webp",
+        "director": "카와무라 토모유키"
       }
     ]
   },
@@ -309,6 +319,17 @@ const AnimeStudioData = [
         "title": "마리카쨩의 호감도는 망가져있다",
         "thumbnail": "image/animeimg/Q2/마리카쨩의 호감도는 망가져있다.webp",
         "director": "사사키 스미토"
+      }
+    ]
+  },
+  {
+    "studio": "스튜디오 치즈",
+    "studio_img": "image/studio/스튜디오 치즈.avif",
+    "works": [
+      {
+        "title": "끝이 없는 스칼렛",
+        "thumbnail": "image/cinema/끝이 없는 스칼렛.webp",
+        "director": "호소다 마모루"
       }
     ]
   },
@@ -602,6 +623,16 @@ const AnimeStudioData = [
         "title": "원피스",
         "thumbnail": "image/animeimg/Q2/원피스.webp",
         "director": "마츠미 와타루"
+      },
+      {
+        "title": "극장판 총집편 걸즈 밴드 크라이 청춘광주곡",
+        "thumbnail": "image/cinema/극장판 총집편 걸즈 밴드 크라이 청춘광주곡.webp",
+        "director": "사카이 카즈오"
+      },
+      {
+        "title": "극장판 총집편 걸즈 밴드 크라이 있잖아, 미래.",
+        "thumbnail": "image/cinema/극장판 총집편 걸즈 밴드 크라이 있잖아, 미래.webp",
+        "director": "사카이 카즈오"
       }
     ]
   },
@@ -635,6 +666,11 @@ const AnimeStudioData = [
         "title": "Fate/strange Fake",
         "thumbnail": "image/animeimg/Q1/Fate strange Fake.webp",
         "director": "에노키도 슌"
+      },
+      {
+        "title": "녹나무의 파수꾼",
+        "thumbnail": "image/cinema/녹나무의 파수꾼.webp",
+        "director": "이토 토모히코"
       }
     ]
   },
@@ -922,6 +958,11 @@ const AnimeStudioData = [
         "title": "도로헤도로 시즌 2",
         "thumbnail": "image/animeimg/Q2/도로헤도로 시즌 2.webp",
         "director": "하야시 유이치로"
+      },
+      {
+        "title": "좀비 랜드 사가 유메긴가 파라다이스",
+        "thumbnail": "image/cinema/좀비 랜드 사가 유메긴가 파라다이스.webp",
+        "director": "우다 코노스케"
       }
     ]
   },
@@ -1024,6 +1065,17 @@ const AnimeStudioData = [
         "title": "옆집 천사님 때문에 어느샌가 인간적으로 타락한 사연 2",
         "thumbnail": "image/animeimg/Q2/옆집 천사님 때문에 어느샌가 인간적으로 타락한 사연 2.webp",
         "director": "쿠마노 치히로"
+      }
+    ]
+  },
+  {
+    "studio": "Psyde Kick Studio",
+    "studio_img": "image/studio/Psyde Kick Studio.avif",
+    "works": [
+      {
+        "title": "녹나무의 파수꾼",
+        "thumbnail": "image/cinema/녹나무의 파수꾼.webp",
+        "director": "이토 토모히코"
       }
     ]
   },

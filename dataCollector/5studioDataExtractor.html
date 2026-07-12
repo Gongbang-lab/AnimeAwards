@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Studio Data Extractor</title>
+    <style>
+        body { background: #111; color: #fff; font-family: 'Pretendard', sans-serif; text-align: center; padding: 50px 20px; margin: 0; }
+        .box { background: #222; display: inline-block; width: 100%; max-width: 900px; padding: 40px; border-radius: 24px; border: 1px solid #333; box-sizing: border-box; box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+        
+        h1 { font-size: 28px; margin-bottom: 10px; letter-spacing: -1px; color: #fff; }
+        .desc { color: #aaa; margin-bottom: 30px; font-size: 15px; }
+
+        /* 버튼 그룹 */
+        .btn-group { margin: 20px 0; display: flex; justify-content: center; gap: 12px; }
+        button { padding: 16px 32px; font-size: 15px; cursor: pointer; border: none; border-radius: 12px; font-weight: 700; transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); }
+        
+        #extract-btn { background: gold; color: #000; }
+        #extract-btn:hover { background: #ffd700; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3); }
+        #extract-btn:active { transform: translateY(0); }
+
+        #copy-btn { background: #333; color: #fff; display: none; border: 1px solid #444; }
+        #copy-btn:hover { background: #444; }
+        
+        /* 미리보기 영역 */
+        #preview-container { margin-top: 35px; display: none; text-align: left; animation: fadeIn 0.5s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        #preview-header { font-size: 13px; color: #888; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px; }
+        #data-count { font-weight: bold; color: gold; }
+
+        #json-preview { 
+            background: #0a0a0a; color: #00ff41; padding: 25px; border-radius: 15px; 
+            font-family: 'Fira Code', 'Consolas', monospace; font-size: 13px;
+            max-height: 500px; overflow-y: auto; white-space: pre-wrap; word-break: break-all;
+            border: 1px solid #333; line-height: 1.6;
+        }
+        
+        #status { margin-top: 25px; color: gold; font-weight: 500; font-size: 14px; white-space: pre-line; min-height: 20px; }
+        .error-msg { color: #ff5555 !important; }
+
+        /* 스크롤바 커스텀 */
+        #json-preview::-webkit-scrollbar { width: 8px; }
+        #json-preview::-webkit-scrollbar-track { background: transparent; }
+        #json-preview::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>스튜디오 데이터 추출기</h1>
+        <p class="desc">TVA와 극장판 데이터를 분석하여 스튜디오별 작품 리스트를 생성합니다.</p>
+        
+        <div class="btn-group">
+            <button id="extract-btn">데이터 분석 실행</button>
+            <button id="copy-btn">코드 복사하기</button>
+        </div>
+
+        <div id="status"></div>
+
+        <div id="preview-container">
+            <div id="preview-header">
+                <span>GENERATED JS CODE (AnimeStudioData)</span>
+                <span id="data-count"></span>
+            </div>
+            <pre id="json-preview"></pre>
+        </div>
+    </div>
+
+    <!-- 원본 데이터 파일 -->
+    <script src="../data/animeData.js"></script>
+    <script src="../data/animeCinemaData.js"></script>
+
+    <script>
+        let generatedCode = "";
+
+        document.getElementById('extract-btn').onclick = function() {
+            const statusDiv = document.getElementById('status');
+            const previewContainer = document.getElementById('preview-container');
+            const previewArea = document.getElementById('json-preview');
+            const copyBtn = document.getElementById('copy-btn');
+            const dataCountSpan = document.getElementById('data-count');
+            
+            try {
+                const isTvaExist = typeof AnimeList !== 'undefined';
+                const isCinemaExist = typeof cinemaData !== 'undefined';
+
+                if (!isTvaExist && !isCinemaExist) {
+                    throw new Error("데이터를 찾을 수 없습니다. animeData.js 또는 animeCinemaData.js 확인이 필요합니다.");
+                }
+
+                const studioMap = {};
+                let totalEntries = 0;
+                let combinedList = [];
+
+                // 데이터 통합
+                if (isTvaExist) combinedList = combinedList.concat(AnimeList);
+                if (isCinemaExist) combinedList = combinedList.concat(cinemaData);
+                
+                combinedList.forEach(anime => {
+                    // 1. Studio가 배열이므로 순회 (데이터가 없으면 'Unknown' 처리)
+                    const studios = (Array.isArray(anime.studio) && anime.studio.length > 0) 
+                                    ? anime.studio 
+                                    : ["Unknown Studio"];
+
+                    studios.forEach(studioName => {
+                        if (!studioMap[studioName]) {
+                            studioMap[studioName] = {
+                                studio: studioName,
+                                studio_img: `image/studio/${studioName}.avif`,
+                                works: []
+                            };
+                        }
+
+                        // 2. staff.director 배열에서 첫 번째 감독 추출
+                        let directorName = "미상";
+                        if (anime.staff && Array.isArray(anime.staff.director) && anime.staff.director.length > 0) {
+                            directorName = anime.staff.director[0];
+                        }
+
+                        // 3. 작품 정보 push
+                        studioMap[studioName].works.push({
+                            title: anime.title,
+                            thumbnail: anime.thumbnail,
+                            director: directorName
+                        });
+                        totalEntries++;
+                    });
+                });
+
+                // 스튜디오 이름순으로 정렬
+                const sortedData = Object.values(studioMap).sort((a, b) => 
+                    a.studio.localeCompare(b.studio)
+                );
+
+                // 최종 코드 생성
+                generatedCode = "const AnimeStudioData = " + JSON.stringify(sortedData, null, 2) + ";";
+
+                // UI 반영
+                previewArea.textContent = generatedCode;
+                previewContainer.style.display = "block";
+                copyBtn.style.display = "inline-block";
+                dataCountSpan.textContent = `Studios: ${sortedData.length} | Works: ${totalEntries}`;
+                
+                statusDiv.className = "";
+                statusDiv.innerText = `✅ 분석 완료! 총 ${sortedData.length}개의 스튜디오 데이터가 생성되었습니다. (TVA/극장판 통합)`;
+
+            } catch (e) {
+                statusDiv.className = "error-msg";
+                statusDiv.innerText = "❌ 오류: " + e.message;
+                console.error(e);
+            }
+        };
+
+        // 복사 기능
+        document.getElementById('copy-btn').onclick = async function() {
+            if (!generatedCode) return;
+            
+            try {
+                await navigator.clipboard.writeText(generatedCode);
+                const originalText = this.innerText;
+                this.innerText = "✅ 복사 완료!";
+                this.style.background = "gold";
+                this.style.color = "#000";
+                
+                setTimeout(() => {
+                    this.innerText = originalText;
+                    this.style.background = "#333";
+                    this.style.color = "#fff";
+                }, 2000);
+            } catch (err) {
+                alert("클립보드 복사에 실패했습니다.");
+            }
+        };
+    </script>
+</body>
+</html>

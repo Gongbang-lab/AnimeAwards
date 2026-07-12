@@ -44,6 +44,7 @@ function renderCVStep1(searchTerm = "") {
         }
         // 1. 데이터 필터링
         let filteredList = Object.values(CharacterVoiceData)
+            .filter(cv => cv.name !== "Unknown")
             .filter(cv => String(cv.gender).toLowerCase() === genderKey);
 
         if (searchTerm.trim() !== "") {
