@@ -1,17 +1,11 @@
 const AnimeMemeData = [
     {
         "id": "meme_001",
-        "name": "나오야 머리쓰다듬기",
+        "name": "나오야 전투",
         "type": "gif", // image, gif, video 구분
         "src1": "image/meme/나오야 전투.gif",
-        "origin": "주술회전 3기",
-        "quarter": "1분기"
-    },
-    {
-        "id": "meme_002",
-        "name": "나오야 마사지",
-        "type": "gif",
-        "src1": "image/meme/나오야 마사지.gif",
+        "src2_title": "마사지",
+        "src2": "image/meme/나오야 마사지.gif",
         "origin": "주술회전 3기",
         "quarter": "1분기"
     },
@@ -33,7 +27,7 @@ const AnimeMemeData = [
     },
     {
         "id": "meme_005",
-        "name": "똥 쌌다고",
+        "name": "죠죠 스틸볼런",
         "type": "video",
         "src1": "image/meme/똥 쌌다고.mp4",
         "src2_title": "한국어 버전",
@@ -59,7 +53,7 @@ const AnimeMemeData = [
     },
     {
         "id": "meme_009",
-        "name": "액션의 사망 유희.",
+        "name": "사망 유희의 액션 씬",
         "type": "gif",
         "src1": "image/meme/액션의 사망유희.gif",
         "origin": "사망 유희로 밥을 먹는다.",
@@ -85,7 +79,7 @@ const AnimeMemeData = [
     },
     {
         "id": "meme_012",
-        "name": "속이 뻥",
+        "name": "펀치",
         "type": "webp",
         "src1": "image/meme/속이 뻥.webp",
         "origin": "여친, 빌리겠습니다 5기",
@@ -93,7 +87,7 @@ const AnimeMemeData = [
     },
     {
         "id": "meme_013",
-        "name": "나카무라 그장면",
+        "name": "나카무라 쿤",
         "type": "webp",
         "src1": "image/meme/나카무라1.webp",
         "src2_title": "아~	❤️",
@@ -102,5 +96,45 @@ const AnimeMemeData = [
         "src3": "image/meme/나카무라3.webp",
         "origin": "힘내라! 나카무라 군!!",
         "quarter": "2분기"
-    }
+    },
+    {
+        "id": "meme_015",
+        "name": "자판기의 액션씬",
+        "type": "webp",
+        "src1": "image/meme/자판기_1.webp",
+        "src1": "image/meme/자판기_2.webp",
+        "src1": "image/meme/자판기_3.webp",
+        "origin": "자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season",
+        "quarter": "2분기"
+    },
+    {
+        "id": "meme_016",
+        "name": "북두의권 폭죽놀이",
+        "type": "webp",
+        "src1": "image/meme/북두의권.webp",
+        "origin": "북두의 권 -FIST OF THE NORTH STAR-",
+        "quarter": "2분기"
+    },
+    {
+        "id": "meme_017",
+        "name": "백화요란",
+        "type": "webp",
+        "src1": "image/meme/백화요란_1.webp",
+        "src2": "image/meme/백화요란_2.webp",
+        "src3": "image/meme/일도양단.gif",
+        "origin": "여친, 빌리겠습니다 5기",
+        "quarter": "2분기"
+    },    
+    {
+        "id": "meme_018",
+        "name": "나카무라 쿤",
+        "type": "webp",
+        "src1": "image/meme/나카무라_1.webp",
+        "src2": "image/meme/나카무라_2.webp",
+        "src3": "image/meme/나카무라_3.webp",
+        "src4": "image/meme/나카무라_4.webp",
+        "src5": "image/meme/나카무라_5.webp",
+        "origin": "힘내라! 나카무라 군!!",
+        "quarter": "2분기"
+    },
 ];
