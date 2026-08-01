@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>애니메이션 수집기 (검색 완료 상태 레이아웃)</title>
+  <style>
+    :root { --primary: #4a5568; --secondary: #38a169; --bg: #f5f7fa; }
+    body { font-family: 'Pretendard', sans-serif; padding: 20px; background: var(--bg); color: #333; line-height: 1.6; }
+    .container { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.5fr; gap: 20px; }
+    .section { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+    h3 { margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; font-size: 18px; }
+    
+    .search-input { width: 100%; padding: 12px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 16px; margin-bottom: 10px; box-sizing: border-box; }
+    .btn-search { width: 100%; background: var(--primary); color: white; padding: 12px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; margin-bottom: 20px; }
+    .search-item { display: flex; gap: 12px; padding: 10px; border-bottom: 1px solid #edf2f7; cursor: pointer; align-items: center; }
+    .search-item:hover { background: #f8fafc; }
+    .search-item.active { background: #ebf8ff; border-left: 4px solid #3182ce; } /* 선택된 항목 스타일 추가 */
+    .search-item img { width: 45px; height: 63px; border-radius: 4px; object-fit: cover; }
+
+    .edit-grid { display: grid; gap: 10px; margin-bottom: 20px; }
+    .edit-row { display: flex; flex-direction: column; gap: 5px; }
+    .edit-row label { font-size: 12px; font-weight: bold; color: #718096; }
+    .edit-row input, .edit-row select { padding: 8px; border: 1px solid #cbd5e0; border-radius: 4px; font-size: 14px; background: white; }
+
+    .quarter-check-group { display: flex; gap: 10px; flex-wrap: wrap; padding: 8px; border: 1px solid #cbd5e0; border-radius: 4px; background: white; }
+    .quarter-check-item { display: flex; align-items: center; gap: 4px; font-weight: normal; font-size: 13px; color: #333; cursor: pointer; }
+    
+    .preview-header { display: flex; gap: 15px; margin-bottom: 20px; align-items: flex-start; }
+    .preview-header img { width: 100px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+
+    #codeOutput { width: 100%; height: 280px; font-family: 'Fira Code', monospace; background: #1a202c; color: #e2e8f0; padding: 15px; border-radius: 8px; border: none; box-sizing: border-box; font-size: 13px; margin-top: 10px; }
+    .btn-copy { width: 100%; background: var(--secondary); color: white; padding: 12px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; margin-top: 10px; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- 왼쪽: 검색 영역 -->
+  <div class="section">
+    <h3>🔎 애니메이션 검색</h3>
+    <input type="text" id="query" class="search-input" value="프리렌" placeholder="제목 또는 MAL ID 입력" onkeypress="if(event.keyCode==13) searchAnime()">
+    <button class="btn-search" onclick="searchAnime()">조사하기</button>
+    <div id="status" style="font-size: 13px; color: #3182ce; margin-bottom: 10px;">✅ 로드 완료. 분기가 자동 선택되었으니 확인 후 제목을 입력하세요.</div>
+    
+    <!-- 검색 결과 목업 -->
+    <div id="searchResult">
+      <div class="search-item active">
+        <img src="https://cdn.myanimelist.net/images/anime/1015/138006l.jpg">
+        <div>
+          <div style="font-weight:bold; font-size:14px;">Sousou no Frieren [TV]</div>
+          <div style="font-size:12px; color:#718096;">葬送のフリーレン</div>
+        </div>
+      </div>
+      <div class="search-item">
+        <img src="https://cdn.myanimelist.net/images/anime/1094/139366l.jpg">
+        <div>
+          <div style="font-weight:bold; font-size:14px;">Sousou no Frieren: ?:? [ONA]</div>
+          <div style="font-size:12px; color:#718096;">葬送のフリーレン ～●～</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 오른쪽: 편집 및 추출 영역 -->
+  <div class="section">
+    <h3>📄 데이터 편집 & 추출</h3>
+    
+    <!-- display:block 상태로 변경됨 -->
+    <div id="editArea" style="display:block;">
+      <div class="preview-header">
+        <img id="p-img" src="https://cdn.myanimelist.net/images/anime/1015/138006l.jpg">
+        <div style="flex:1;">
+          <div class="edit-row">
+            <label>작품 제목 (한국어)</label>
+            <input type="text" id="in-title" value="장송의 프리렌" placeholder="제목 입력 시 썸네일 경로 자동생성" oninput="updateJSON()">
+          </div>
+          <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px; margin-top:10px;">
+            <div class="edit-row">
+              <label>분기 선택 (연속 방영 시 다중 선택 가능)</label>
+              <div class="quarter-check-group" id="in-quarter-group">
+                <label class="quarter-check-item"><input type="checkbox" class="quarter-check" value="1분기" checked onchange="updateJSON()"> 1분기</label>
+                <label class="quarter-check-item"><input type="checkbox" class="quarter-check" value="2분기" onchange="updateJSON()"> 2분기</label>
+                <label class="quarter-check-item"><input type="checkbox" class="quarter-check" value="3분기" onchange="updateJSON()"> 3분기</label>
+                <label class="quarter-check-item"><input type="checkbox" class="quarter-check" value="4분기" checked onchange="updateJSON()"> 4분기</label>
+              </div>
+            </div>
+            <div class="edit-row"><label>요일 (또는 Cinema)</label><input type="text" id="in-day" value="Fridays" oninput="updateJSON()"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="edit-grid">
+        <div class="edit-row"><label>제작사 (쉼표 구분)</label><input type="text" id="in-studio" value="Madhouse" oninput="updateJSON()"></div>
+        <div class="edit-row"><label>감독 (쉼표 구분)</label><input type="text" id="in-director" value="Saitou, Keiichirou" oninput="updateJSON()"></div>
+        <div class="edit-row"><label id="label-writer">시리즈 구성 (Adaptor)</label><input type="text" id="in-writer" value="Suzuki, Tomohiro" oninput="updateJSON()"></div>
+        <div class="edit-row"><label>캐릭터 디자인 (쉼표 구분)</label><input type="text" id="in-char" value="Nagasawa, Reiko" oninput="updateJSON()"></div>
+        <div class="edit-row"><label>음악 (쉼표 구분)</label><input type="text" id="in-composer" value="Call, Evan" oninput="updateJSON()"></div>
+        <input type="hidden" id="in-id" value="52991"> 
+      </div>
+
+      <!-- JSON 출력 목업 데이터 -->
+      <textarea id="codeOutput" readonly>{
+  "id": 52991,
+  "title": "장송의 프리렌",
+  "quarter": "1분기, 4분기",
+  "thumbnail": "image/animeimg/Q1/장송의 프리렌.webp",
+  "day": "Fridays",
+  "episodes": 28,
+  "studio": [
+    "Madhouse"
+  ],
+  "staff": {
+    "director": [
+      "Saitou, Keiichirou"
+    ],
+    "adaptor": [
+      "Suzuki, Tomohiro"
+    ],
+    "character_design": [
+      "Nagasawa, Reiko"
+    ],
+    "composer": [
+      "Call, Evan"
+    ]
+  }
+},</textarea>
+      <button class="btn-copy" onclick="copyCode()">JSON 코드 복사하기</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  // 목업 레이아웃을 위한 기본 스크립트 뼈대 (기능 유지)
+  let currentAnime = { episodes: 28, isOriginal: false, type: "TV" }; 
+
+  function updateJSON() {
+    const title = document.getElementById('in-title').value.trim();
+    const selectedQuarters = Array.from(document.querySelectorAll('.quarter-check:checked')).map(cb => cb.value);
+    const quarter = selectedQuarters.join(', ');
+    const qKey = selectedQuarters.length ? selectedQuarters[0].charAt(0) : '1';
+    const isMovie = currentAnime.type === "Movie";
+    
+    const autoThumbnail = title 
+      ? (isMovie ? `image/cinema/${title}.webp` : `image/animeimg/Q${qKey}/${title}.webp`)
+      : "";
+
+    const writerField = currentAnime.isOriginal ? "scriptwriter" : "adaptor";
+    const parseList = (id) => document.getElementById(id).value.split(',').map(s => s.trim()).filter(s => s);
+
+    const finalObj = {
+      id: parseInt(document.getElementById('in-id').value) || 0,
+      title: title,
+      quarter: quarter,
+      thumbnail: autoThumbnail,
+      day: document.getElementById('in-day').value,
+      episodes: currentAnime.episodes || 0,
+      studio: parseList('in-studio'),
+      staff: {
+        director: parseList('in-director'),
+        [writerField]: parseList('in-writer'),
+        character_design: parseList('in-char'),
+        composer: parseList('in-composer') 
+      }
+    };
+
+    document.getElementById('codeOutput').value = JSON.stringify(finalObj, null, 2) + ",";
+  }
+
+  async function copyCode() {
+    const area = document.getElementById('codeOutput');
+    const btn = document.querySelector('.btn-copy');
+    try {
+        await navigator.clipboard.writeText(area.value);
+        const originalText = btn.innerText;
+        btn.innerText = "✅ 복사 완료!";
+        btn.style.background = "#2f855a";
+        setTimeout(() => {
+            btn.innerText = originalText;
+            btn.style.background = "";
+        }, 2000);
+    } catch (err) {
+        area.select();
+        document.execCommand('copy');
+        alert("코드가 복사되었습니다!");
+    }
+  }
+</script>
+</body>
+</html>

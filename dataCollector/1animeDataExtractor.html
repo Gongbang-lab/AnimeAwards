@@ -20,6 +20,9 @@
     .edit-row { display: flex; flex-direction: column; gap: 5px; }
     .edit-row label { font-size: 12px; font-weight: bold; color: #718096; }
     .edit-row input, .edit-row select { padding: 8px; border: 1px solid #cbd5e0; border-radius: 4px; font-size: 14px; background: white; }
+
+    .quarter-check-group { display: flex; gap: 10px; flex-wrap: wrap; padding: 8px; border: 1px solid #cbd5e0; border-radius: 4px; background: white; }
+    .quarter-check-item { display: flex; align-items: center; gap: 4px; font-weight: normal; font-size: 13px; color: #333; cursor: pointer; }
     
     .preview-header { display: flex; gap: 15px; margin-bottom: 20px; align-items: flex-start; }
     .preview-header img { width: 100px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
@@ -51,13 +54,13 @@
           </div>
           <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px; margin-top:10px;">
             <div class="edit-row">
-              <label>분기 선택</label>
-              <select id="in-quarter" onchange="updateJSON()">
-                <option value="1분기">1분기 (Q1)</option>
-                <option value="2분기">2분기 (Q2)</option>
-                <option value="3분기">3분기 (Q3)</option>
-                <option value="4분기">4분기 (Q4)</option>
-              </select>
+              <label>분기 선택 (연속 방영 시 다중 선택 가능)</label>
+              <div class="quarter-check-group" id="in-quarter-group">
+                <label class="quarter-check-item"><input type="checkbox" class="quarter-check" value="1분기" onchange="updateJSON()"> 1분기</label>
+                <label class="quarter-check-item"><input type="checkbox" class="quarter-check" value="2분기" onchange="updateJSON()"> 2분기</label>
+                <label class="quarter-check-item"><input type="checkbox" class="quarter-check" value="3분기" onchange="updateJSON()"> 3분기</label>
+                <label class="quarter-check-item"><input type="checkbox" class="quarter-check" value="4분기" onchange="updateJSON()"> 4분기</label>
+              </div>
             </div>
             <div class="edit-row"><label>요일 (또는 Cinema)</label><input type="text" id="in-day" oninput="updateJSON()"></div>
           </div>
@@ -69,7 +72,10 @@
         <div class="edit-row"><label>감독 (쉼표 구분)</label><input type="text" id="in-director" oninput="updateJSON()"></div>
         <div class="edit-row"><label id="label-writer">각색가 (쉼표 구분)</label><input type="text" id="in-writer" oninput="updateJSON()"></div>
         <div class="edit-row"><label>캐릭터 디자인 (쉼표 구분)</label><input type="text" id="in-char" oninput="updateJSON()"></div>
-        <input type="hidden" id="in-id"> </div>
+        <!-- 음악 담당자 필드 추가 -->
+        <div class="edit-row"><label>음악 (쉼표 구분)</label><input type="text" id="in-composer" oninput="updateJSON()"></div>
+        <input type="hidden" id="in-id"> 
+      </div>
 
       <textarea id="codeOutput" readonly></textarea>
       <button class="btn-copy" onclick="copyCode()">JSON 코드 복사하기</button>
@@ -116,12 +122,16 @@
 
       document.getElementById('label-writer').innerText = isOriginal ? "각본가 (Original)" : "시리즈 구성 (Adaptor)";
       
-      const staffObj = { director: [], writer: [], character_design: [] };
+      // composer 키 추가
+      const staffObj = { director: [], writer: [], character_design: [], composer: [] };
       staffData.forEach(p => {
         const pos = p.positions.map(x => x.toLowerCase());
         const name = p.person.name;
         if (pos.some(x => (x === 'director' || x === 'series director') && !x.includes('animation') && !x.includes('sound'))) staffObj.director.push(name);
         if (pos.some(x => x.includes('character design'))) staffObj.character_design.push(name);
+        // 음악/작곡가 파싱 조건 추가
+        if (pos.some(x => x === 'music' || x.includes('composer'))) staffObj.composer.push(name);
+        
         if (isOriginal) { if (pos.some(x => x === 'script')) staffObj.writer.push(name); }
         else { if (pos.some(x => x.includes('series composition'))) staffObj.writer.push(name); }
       });
@@ -130,6 +140,12 @@
       document.getElementById('p-img').src = data.images.jpg.large_image_url;
       document.getElementById('in-id').value = data.mal_id;
       document.getElementById('in-title').value = ""; 
+
+      // 분기 체크박스 초기화 (새 작품 로드 시 이전 선택 해제)
+      document.querySelectorAll('.quarter-check').forEach(cb => cb.checked = false);
+
+      // Jikan aired.from / aired.to 날짜로 방영 분기 자동 계산
+      autoSelectQuarters(data.aired);
       
       // 영화인 경우 day 필드에 Cinema 자동 입력
       document.getElementById('in-day').value = isMovie ? "Cinema" : (data.broadcast.day || "Unknown");
@@ -138,6 +154,7 @@
       document.getElementById('in-director').value = staffObj.director.join(', ');
       document.getElementById('in-writer').value = staffObj.writer.join(', ');
       document.getElementById('in-char').value = staffObj.character_design.join(', ');
+      document.getElementById('in-composer').value = staffObj.composer.join(', '); // 음악 값 세팅
 
       currentAnime = { 
         episodes: data.episodes || 0, 
@@ -146,14 +163,48 @@
       };
       
       updateJSON();
-      document.getElementById('status').innerText = `✅ 로드 완료. 제목과 분기를 설정하세요.`;
+      document.getElementById('status').innerText = `✅ 로드 완료. 분기가 자동 선택되었으니 확인 후 제목을 입력하세요.`;
     } catch (e) { document.getElementById('status').innerText = "❌ 상세 정보 에러"; }
   }
   
-function updateJSON() {
+  // 월(month)을 분기 숫자(1~4)로 변환
+  function monthToQuarter(month) {
+    return Math.ceil(month / 3);
+  }
+
+  // aired 객체(from/to 날짜)를 기반으로 방영 분기를 계산해 체크박스에 자동 반영
+  function autoSelectQuarters(aired) {
+    if (!aired || !aired.from) return; // 방영일 정보가 없으면 수동 선택에 맡김
+
+    const fromDate = new Date(aired.from);
+    const fromYear = fromDate.getFullYear();
+    const startQ = monthToQuarter(fromDate.getMonth() + 1);
+
+    let endQ = startQ;
+    if (aired.to) {
+      const toDate = new Date(aired.to);
+      const toYear = toDate.getFullYear();
+      // 같은 해 안에서 끝나는 경우에만 종료 분기를 계산 (연도가 다르면 오탐 방지를 위해 시작 분기만 사용)
+      if (toYear === fromYear) {
+        endQ = monthToQuarter(toDate.getMonth() + 1);
+      }
+    }
+
+    for (let q = startQ; q <= endQ; q++) {
+      const cb = document.querySelector(`.quarter-check[value="${q}분기"]`);
+      if (cb) cb.checked = true;
+    }
+  }
+
+  function updateJSON() {
     const title = document.getElementById('in-title').value.trim();
-    const quarter = document.getElementById('in-quarter').value;
-    const qKey = quarter.charAt(0); 
+
+    // 체크된 분기들을 순서대로 수집 (연속 방영 대응)
+    const selectedQuarters = Array.from(document.querySelectorAll('.quarter-check:checked')).map(cb => cb.value);
+    const quarter = selectedQuarters.join(', ');
+    // 썸네일 경로는 방영 시작 분기(첫 번째로 선택된 분기) 기준으로 생성
+    const qKey = selectedQuarters.length ? selectedQuarters[0].charAt(0) : '1';
+
     const isMovie = currentAnime.type === "Movie";
     
     // 영화 여부에 따른 썸네일 경로 분기
@@ -175,7 +226,8 @@ function updateJSON() {
       staff: {
         director: parseList('in-director'),
         [writerField]: parseList('in-writer'),
-        character_design: parseList('in-char')
+        character_design: parseList('in-char'),
+        composer: parseList('in-composer') // JSON 객체에 composer 포함
       }
     };
 

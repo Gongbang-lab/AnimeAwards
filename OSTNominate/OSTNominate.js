@@ -12,38 +12,29 @@ const dayMap = {
     "fridays": "금요일", "saturdays": "토요일", "sundays": "일요일", "anomaly": "변칙 편성", "web": "웹"
 };
 
-// AnimeList에서 day 정보를 가져오는 Map 생성
-function buildAnimeInfoMap() {
-    const map = {};
-    if (typeof AnimeList !== 'undefined' && Array.isArray(AnimeList)) {
-        AnimeList.forEach(anime => { map[String(anime.id)] = anime; });
-    }
-    return map;
-}
-
-// 변경된 animeOSTData 구조 반영
+// 🌟 수정된 부분: 작곡가 정보가 없어도 모든 분기의 애니메이션이 나오도록 수정
 function getMergedOSTData() {
-    if (typeof animeOSTData === 'undefined' || !Array.isArray(animeOSTData)) return {};
+    if (typeof AnimeList === 'undefined' || !Array.isArray(AnimeList)) return {};
 
-    const animeInfoMap = buildAnimeInfoMap();
     const result = {};
 
-    animeOSTData.forEach((ost, index) => {
-        const baseInfo = animeInfoMap[String(ost.id)];
-        const quarterKey = ost.quarter || "기타";
-        const day = baseInfo ? baseInfo.day : "기타";
-        
-        // album 객체가 없을 경우를 대비한 안전한 접근
-        const albumData = ost.album || {};
+    AnimeList.forEach((anime, index) => {
+        const composers = (anime.staff && anime.staff.composer) ? anime.staff.composer : [];
 
+        // 🚨 이전 코드에서는 작곡가가 없으면 화면에 표시하지 않고 넘어갔으나, 이 제한을 삭제했습니다.
+        // if (composers.length === 0) return; 
+
+        const quarterKey = anime.quarter || "기타";
+        const day = anime.day || "기타";
+        
         if (!result[quarterKey]) result[quarterKey] = [];
 
         result[quarterKey].push({
-            uniqueId: `${ost.id}-ost-${index}`,
-            id: ost.id,
-            animeTitle: albumData.title || "제목 없음",
-            thumbnail: albumData.coverImage || "../images/default.png",
-            composers: albumData.composer || [],
+            uniqueId: `${anime.id}-ost-${index}`,
+            id: anime.id,
+            animeTitle: anime.title || "제목 없음",
+            thumbnail: anime.thumbnail || "../images/default.png",
+            composers: composers,
             day: day,
             displayQuarter: quarterKey
         });
@@ -169,7 +160,6 @@ function createOSTCard(ost) {
         item.classList.add("selected");
     }
 
-    // ✅ DOM 직접 생성 (innerHTML 덮어쓰기 방지)
     const rateBadge = document.createElement("div");
     rateBadge.className = "card-selection-rate";
     rateBadge.style.display = "none";
@@ -191,7 +181,8 @@ function createOSTCard(ost) {
     animeTitle.textContent = ost.animeTitle;
     cardInfo.appendChild(animeTitle);
 
-    if (ost.composers.length > 0) {
+    // 작곡가가 있을 때만 작곡가 텍스트 표시
+    if (ost.composers && ost.composers.length > 0) {
         const composerEl = document.createElement("div");
         composerEl.className = "composer-title";
         composerEl.textContent = ost.composers.join(', ');
@@ -249,7 +240,7 @@ function renderOSTStep2() {
         card.className = "step2-ost-card";
 
         const displayQuarter = ost.displayQuarter ? ost.displayQuarter.replace("Q", "") : "";
-        const composerText = ost.composers.length > 0 ? ost.composers.join(', ') : '';
+        const composerText = (ost.composers && ost.composers.length > 0) ? ost.composers.join(', ') : '작곡가 정보 없음';
 
         card.innerHTML = `
             <div class="card-badge">${displayQuarter}</div>
@@ -258,7 +249,7 @@ function renderOSTStep2() {
             </div>
             <div class="step2-card-info">
                 <div class="card-title">${ost.animeTitle}</div>
-                ${composerText ? `<div class="composer-title">${composerText}</div>` : ''}
+                <div class="composer-title">${composerText}</div>
             </div>
         `;
 
@@ -305,7 +296,7 @@ function openOSTAwardPopup() {
 
     document.getElementById("winner-thumb").src = `../${winner.thumbnail}`;
     document.getElementById("winner-anime").textContent = winner.animeTitle;
-    document.getElementById("winner-composers").textContent = winner.composers.length > 0 ? winner.composers.join(', ') : '-';
+    document.getElementById("winner-composers").textContent = (winner.composers && winner.composers.length > 0) ? winner.composers.join(', ') : '작곡가 정보 없음';
     document.getElementById("winner-quarter").textContent = winner.displayQuarter;
 
     popup.classList.add("active");
@@ -335,7 +326,6 @@ function applyVoteBadges() {
 
     const total = cachedVoteData._participants || 0;
 
-    // ✅ ost-card 클래스 타겟팅
     document.querySelectorAll('.ost-card').forEach(card => {
         const animeId = card.getAttribute('data-anime-id');
         const rateBadge = card.querySelector('.card-selection-rate');

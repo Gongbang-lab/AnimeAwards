@@ -328,6 +328,7 @@ function fireConfetti() {
 
 // ✅ 현재 화면 카드에 캐시 데이터로 뱃지 적용
 function applyVoteBadges() {
+    console.log("[DEBUG] applyVoteBadges 호출, cachedVoteData:", cachedVoteData);
     if (!cachedVoteData) return;
 
     const total = cachedVoteData._participants || 0;
@@ -338,6 +339,7 @@ function applyVoteBadges() {
         if (!rateBadge || !animeId) return;
 
         const count = cachedVoteData[animeId] || 0;
+        console.log(`[DEBUG] 카드 매칭: "${animeId}" -> count=${count}`);
         const percent = total > 0 ? Math.round((count / total) * 100) : 0;
         rateBadge.innerText = `${percent}%`;
         rateBadge.style.display = "block";
@@ -347,10 +349,12 @@ function applyVoteBadges() {
 // ✅ Firebase 리스너 — 부문별 경로만 구독, 데이터 캐싱
 function listenToVoteRates() {
     if (!window.fbOnValue || !window.fbDB) return;
+    console.log("[DEBUG] 리스너 등록, awardName:", nominateState.awardName); // 추가
 
     const categoryRef = window.fbRef(window.fbDB, `votes/categories/${nominateState.awardName}`);
 
     window.fbOnValue(categoryRef, (snapshot) => {
+        console.log("[DEBUG] 스냅샷 수신:", snapshot.val()); // 추가
         cachedVoteData = snapshot.val() || {};
         applyVoteBadges();
     });

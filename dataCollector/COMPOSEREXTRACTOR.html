@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Data Auto Merger (오류 수정 버전)</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 20px;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-top: 0;
+      text-align: center;
+      color: #2c3e50;
+    }
+    .input-section {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    .input-group {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #555;
+    }
+    textarea {
+      width: 100%;
+      height: 250px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: monospace;
+      font-size: 13px;
+      resize: vertical;
+      box-sizing: border-box;
+    }
+    .btn-group {
+      text-align: center;
+      margin: 20px 0;
+    }
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+    #copyBtn {
+      background-color: #2ecc71;
+      margin-left: 10px;
+    }
+    #copyBtn:hover {
+      background-color: #27ae60;
+    }
+    .output-group {
+      display: flex;
+      flex-direction: column;
+    }
+    #outputData {
+      height: 300px;
+      background-color: #282c34;
+      color: #abb2bf;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Anime Data Merger</h2>
+    
+    <div class="input-section">
+      <div class="input-group">
+        <label for="ostDataInput">1. animeOSTData (const 선언문 포함 가능)</label>
+        <textarea id="ostDataInput" placeholder="const animeOSTData = [\n  {\n    ...\n  }\n]"></textarea>
+      </div>
+      
+      <div class="input-group">
+        <label for="animeListInput">2. AnimeList (const 선언문 포함 가능)</label>
+        <textarea id="animeListInput" placeholder="const AnimeList = [\n  {\n    ...\n  }\n]"></textarea>
+      </div>
+    </div>
+
+    <div class="btn-group">
+      <button id="mergeBtn">데이터 합치기 실행</button>
+      <button id="copyBtn" style="display: none;">결과 복사하기</button>
+    </div>
+
+    <div class="output-group">
+      <label for="outputData">3. 합쳐진 결과 (Merged Data)</label>
+      <textarea id="outputData" readonly placeholder="여기에 결과가 출력됩니다."></textarea>
+    </div>
+  </div>
+
+  <script>
+    // 깨진 배열을 어떻게든 완벽한 배열로 복구해내는 함수
+    function parseJavaScriptArray(input) {
+      let text = input.trim();
+      
+      // 1. 앞부분의 'const 변수명 =' 제거
+      text = text.replace(/^(const|let|var)\s+[a-zA-Z0-9_]+\s*=\s*/i, '').trim();
+      
+      // 2. 맨 끝에 있는 공백, 쉼표, 세미콜론 싹 다 제거 (이 부분이 핵심입니다)
+      text = text.replace(/[,;\s]+$/, '');
+      
+      // 3. 만약 '}' 로 끝난다면 배열이 닫히지 않은 것이므로 ']' 추가
+      if (text.endsWith('}')) {
+        text += '\n]';
+      }
+      
+      // 4. 그래도 배열 형태('[')로 시작하지 않으면 강제로 씌우기
+      if (!text.startsWith('[')) text = '[\n' + text;
+      if (!text.endsWith(']')) text = text + '\n]';
+
+      // 5. 파싱 시도
+      const result = new Function("return " + text)();
+      
+      // 6. 배열이 아닌 다른 형태로 인식되었다면 에러 던지기
+      if (!Array.isArray(result)) {
+        throw new Error("입력된 데이터가 배열(목록) 형태가 아닙니다.");
+      }
+      
+      return result;
+    }
+
+    document.getElementById('mergeBtn').addEventListener('click', () => {
+      const ostInput = document.getElementById('ostDataInput').value.trim();
+      const listInput = document.getElementById('animeListInput').value.trim();
+
+      if (!ostInput || !listInput) {
+        alert("두 입력창에 모두 데이터를 넣어주세요.");
+        return;
+      }
+
+      try {
+        const ostData = parseJavaScriptArray(ostInput);
+        const animeList = parseJavaScriptArray(listInput);
+
+        const composerMap = {};
+        ostData.forEach(ost => {
+          if (ost.album && ost.album.composer) {
+            composerMap[ost.id] = ost.album.composer;
+          }
+        });
+
+        const mergedList = animeList.map(anime => {
+          if (composerMap[anime.id]) {
+            return {
+              ...anime,
+              staff: {
+                ...(anime.staff || {}), 
+                composer: composerMap[anime.id]
+              }
+            };
+          }
+          return anime;
+        });
+
+        const outputElement = document.getElementById('outputData');
+        outputElement.value = "const MergedAnimeList = " + JSON.stringify(mergedList, null, 2) + ";";
+        
+        document.getElementById('copyBtn').style.display = 'inline-block';
+
+      } catch (error) {
+        alert("데이터를 분석하는 중에 문제가 발생했습니다.\n\n오류 내용: " + error.message);
+      }
+    });
+
+    document.getElementById('copyBtn').addEventListener('click', () => {
+      const outputData = document.getElementById('outputData');
+      outputData.select();
+      document.execCommand('copy');
+      alert("결과가 클립보드에 복사되었습니다!");
+    });
+  </script>
+
+</body>
+</html>
