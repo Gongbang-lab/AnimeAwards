@@ -30,8 +30,9 @@ const DAY_KEYS = ["Mondays", "Tuesdays", "Wednesdays", "Thursdays", "Fridays", "
 const QUARTER_ORDER = ["1분기", "2분기", "3분기", "4분기", "변칙 편성", "기타"];
 
 // [중요] 평탄화된 AnimeList를 분기별로 그룹화 (Grouping)
-const AnimeByQuarter = AnimeList.reduce((acc, anime) => {
-    // quarter 값이 없으면 '기타'로 분류
+const SeasonFilteredList = SeasonFilter.filterAnimeList(AnimeList);
+
+const AnimeByQuarter = SeasonFilteredList.reduce((acc, anime) => {
     const q = anime.quarter || "기타";
     if (!acc[q]) acc[q] = [];
     acc[q].push(anime);

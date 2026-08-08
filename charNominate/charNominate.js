@@ -414,12 +414,14 @@ function getNormalizedCharData(genderKey) {
   const charMap = {};
   CharacterData.forEach(item => charMap[String(item.id)] = item.characters || []);
 
-  AnimeList.forEach(anime => {
+  const seasonAnimeList = SeasonFilter.filterAnimeList(AnimeList); // ← 추가
+
+  seasonAnimeList.forEach(anime => {   // ← AnimeList → seasonAnimeList로 수정
     const animeId = String(anime.id);
     const characters = charMap[animeId];
     if (characters && Array.isArray(characters)) {
       const filtered = characters.filter(c => {
-        if (genderKey === "all") return true; // ← all이면 전부 통과
+        if (genderKey === "all") return true;
             return String(c.gender).trim().toLowerCase() === String(genderKey).trim().toLowerCase();
       });
       filtered.forEach((char, idx) => {

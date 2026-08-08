@@ -21,8 +21,10 @@ const DAY_KEYS = ["Mondays", "Tuesdays", "Wednesdays", "Thursdays", "Fridays", "
 
 const sourceData = (typeof AnimeAdaptorData !== 'undefined') ? AnimeAdaptorData : [];
 
-const AnimeByQuarter = sourceData.reduce((acc, anime) => {
-    const q = anime.quarter || "Q1";
+const SeasonFilteredList = SeasonFilter.filterAnimeList(AnimeList);
+
+const AnimeByQuarter = SeasonFilteredList.reduce((acc, anime) => {
+    const q = anime.quarter || "기타";
     if (!acc[q]) acc[q] = [];
     acc[q].push(anime);
     return acc;

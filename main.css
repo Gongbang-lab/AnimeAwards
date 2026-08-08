@@ -580,3 +580,135 @@ body.delete-mode .award-card::after {
   75% { transform: rotate(1deg); }
   100% { transform: rotate(0deg); }
 }
+
+.hidden { display: none !important; }
+
+.season-select-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 40px 20px;
+  text-align: center;
+
+  background: rgba(5, 5, 5, 0.97);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  opacity: 1;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* 사라질 때 */
+.season-select-screen.fade-out {
+  opacity: 0;
+  transform: translateY(-30px);
+  pointer-events: none;
+}
+
+/* content-area는 뒤에서 서서히 나타나도록 */
+#content-area {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+#content-area.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.hero-subtitle {
+  color: #d4af37;
+  letter-spacing: 4px;
+  font-size: 0.85rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #f5f5f5;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.season-card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  max-width: 800px;
+}
+
+.season-card {
+  width: 120px;
+  height: 100px;
+  border: 1px solid #444;
+  border-radius: 14px;
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.season-card:hover {
+  border-color: #d4af37;
+  transform: translateY(-4px);
+}
+
+.season-card.selected {
+  background: #d4af37;
+  border-color: #d4af37;
+}
+
+.season-card.selected .season-card-main,
+.season-card.selected .season-card-sub {
+  color: #111;
+}
+
+.season-card-main {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #f5f5f5;
+}
+
+.season-card-sub {
+  font-size: 0.75rem;
+  color: #999;
+  margin-top: 4px;
+}
+
+.quarter-grid { margin-top: 8px; }
+
+.title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.change-season-btn {
+  background: transparent;
+  border: 1px solid #d4af37;
+  color: #d4af37;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.change-season-btn:hover {
+  background: #d4af37;
+  color: #111;
+}

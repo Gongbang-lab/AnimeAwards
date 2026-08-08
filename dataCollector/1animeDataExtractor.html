@@ -52,9 +52,13 @@
             <label>작품 제목 (한국어)</label>
             <input type="text" id="in-title" placeholder="제목 입력 시 썸네일 경로 자동생성" oninput="updateJSON()">
           </div>
-          <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px; margin-top:10px;">
+          <div style="display:grid; grid-template-columns: 80px 1.5fr 1fr; gap:10px; margin-top:10px;">
             <div class="edit-row">
-              <label>분기 선택 (연속 방영 시 다중 선택 가능)</label>
+              <label>연도</label>
+              <input type="number" id="in-year" oninput="updateJSON()">
+            </div>
+            <div class="edit-row">
+              <label>분기 선택 (연속 방영 시 다중 선택)</label>
               <div class="quarter-check-group" id="in-quarter-group">
                 <label class="quarter-check-item"><input type="checkbox" class="quarter-check" value="1분기" onchange="updateJSON()"> 1분기</label>
                 <label class="quarter-check-item"><input type="checkbox" class="quarter-check" value="2분기" onchange="updateJSON()"> 2분기</label>
@@ -62,7 +66,10 @@
                 <label class="quarter-check-item"><input type="checkbox" class="quarter-check" value="4분기" onchange="updateJSON()"> 4분기</label>
               </div>
             </div>
-            <div class="edit-row"><label>요일 (또는 Cinema)</label><input type="text" id="in-day" oninput="updateJSON()"></div>
+            <div class="edit-row">
+              <label>요일 (또는 Cinema)</label>
+              <input type="text" id="in-day" oninput="updateJSON()">
+            </div>
           </div>
         </div>
       </div>
@@ -72,7 +79,6 @@
         <div class="edit-row"><label>감독 (쉼표 구분)</label><input type="text" id="in-director" oninput="updateJSON()"></div>
         <div class="edit-row"><label id="label-writer">각색가 (쉼표 구분)</label><input type="text" id="in-writer" oninput="updateJSON()"></div>
         <div class="edit-row"><label>캐릭터 디자인 (쉼표 구분)</label><input type="text" id="in-char" oninput="updateJSON()"></div>
-        <!-- 음악 담당자 필드 추가 -->
         <div class="edit-row"><label>음악 (쉼표 구분)</label><input type="text" id="in-composer" oninput="updateJSON()"></div>
         <input type="hidden" id="in-id"> 
       </div>
@@ -122,14 +128,12 @@
 
       document.getElementById('label-writer').innerText = isOriginal ? "각본가 (Original)" : "시리즈 구성 (Adaptor)";
       
-      // composer 키 추가
       const staffObj = { director: [], writer: [], character_design: [], composer: [] };
       staffData.forEach(p => {
         const pos = p.positions.map(x => x.toLowerCase());
         const name = p.person.name;
         if (pos.some(x => (x === 'director' || x === 'series director') && !x.includes('animation') && !x.includes('sound'))) staffObj.director.push(name);
         if (pos.some(x => x.includes('character design'))) staffObj.character_design.push(name);
-        // 음악/작곡가 파싱 조건 추가
         if (pos.some(x => x === 'music' || x.includes('composer'))) staffObj.composer.push(name);
         
         if (isOriginal) { if (pos.some(x => x === 'script')) staffObj.writer.push(name); }
@@ -141,20 +145,20 @@
       document.getElementById('in-id').value = data.mal_id;
       document.getElementById('in-title').value = ""; 
 
-      // 분기 체크박스 초기화 (새 작품 로드 시 이전 선택 해제)
-      document.querySelectorAll('.quarter-check').forEach(cb => cb.checked = false);
+      // 연도 자동 파싱 (data.year가 우선, 없으면 aired.from 날짜 기준 추출)
+      const parsedYear = data.year || (data.aired && data.aired.from ? new Date(data.aired.from).getFullYear() : "");
+      document.getElementById('in-year').value = parsedYear;
 
-      // Jikan aired.from / aired.to 날짜로 방영 분기 자동 계산
+      // 분기 체크박스 초기화
+      document.querySelectorAll('.quarter-check').forEach(cb => cb.checked = false);
       autoSelectQuarters(data.aired);
       
-      // 영화인 경우 day 필드에 Cinema 자동 입력
       document.getElementById('in-day').value = isMovie ? "Cinema" : (data.broadcast.day || "Unknown");
-      
       document.getElementById('in-studio').value = data.studios.map(s => s.name).join(', ');
       document.getElementById('in-director').value = staffObj.director.join(', ');
       document.getElementById('in-writer').value = staffObj.writer.join(', ');
       document.getElementById('in-char').value = staffObj.character_design.join(', ');
-      document.getElementById('in-composer').value = staffObj.composer.join(', '); // 음악 값 세팅
+      document.getElementById('in-composer').value = staffObj.composer.join(', ');
 
       currentAnime = { 
         episodes: data.episodes || 0, 
@@ -163,18 +167,16 @@
       };
       
       updateJSON();
-      document.getElementById('status').innerText = `✅ 로드 완료. 분기가 자동 선택되었으니 확인 후 제목을 입력하세요.`;
+      document.getElementById('status').innerText = `✅ 로드 완료. 연도 및 분기가 자동 선택되었으니 확인 후 제목을 입력하세요.`;
     } catch (e) { document.getElementById('status').innerText = "❌ 상세 정보 에러"; }
   }
   
-  // 월(month)을 분기 숫자(1~4)로 변환
   function monthToQuarter(month) {
     return Math.ceil(month / 3);
   }
 
-  // aired 객체(from/to 날짜)를 기반으로 방영 분기를 계산해 체크박스에 자동 반영
   function autoSelectQuarters(aired) {
-    if (!aired || !aired.from) return; // 방영일 정보가 없으면 수동 선택에 맡김
+    if (!aired || !aired.from) return; 
 
     const fromDate = new Date(aired.from);
     const fromYear = fromDate.getFullYear();
@@ -184,7 +186,6 @@
     if (aired.to) {
       const toDate = new Date(aired.to);
       const toYear = toDate.getFullYear();
-      // 같은 해 안에서 끝나는 경우에만 종료 분기를 계산 (연도가 다르면 오탐 방지를 위해 시작 분기만 사용)
       if (toYear === fromYear) {
         endQ = monthToQuarter(toDate.getMonth() + 1);
       }
@@ -198,18 +199,17 @@
 
   function updateJSON() {
     const title = document.getElementById('in-title').value.trim();
+    const year = parseInt(document.getElementById('in-year').value) || 0; 
 
-    // 체크된 분기들을 순서대로 수집 (연속 방영 대응)
     const selectedQuarters = Array.from(document.querySelectorAll('.quarter-check:checked')).map(cb => cb.value);
     const quarter = selectedQuarters.join(', ');
-    // 썸네일 경로는 방영 시작 분기(첫 번째로 선택된 분기) 기준으로 생성
     const qKey = selectedQuarters.length ? selectedQuarters[0].charAt(0) : '1';
 
     const isMovie = currentAnime.type === "Movie";
     
-    // 영화 여부에 따른 썸네일 경로 분기
+    // 썸네일 경로에 year 추가 반영
     const autoThumbnail = title 
-      ? (isMovie ? `image/cinema/${title}.webp` : `image/animeimg/Q${qKey}/${title}.webp`)
+      ? (isMovie ? `image/cinema/${title}.webp` : `image/animeimg/${year}/Q${qKey}/${title}.webp`)
       : "";
 
     const writerField = currentAnime.isOriginal ? "scriptwriter" : "adaptor";
@@ -218,6 +218,7 @@
     const finalObj = {
       id: parseInt(document.getElementById('in-id').value) || 0,
       title: title,
+      year: year,
       quarter: quarter,
       thumbnail: autoThumbnail,
       day: document.getElementById('in-day').value,
@@ -227,7 +228,7 @@
         director: parseList('in-director'),
         [writerField]: parseList('in-writer'),
         character_design: parseList('in-char'),
-        composer: parseList('in-composer') // JSON 객체에 composer 포함
+        composer: parseList('in-composer') 
       }
     };
 

@@ -2,8 +2,8 @@ const cinemaState = {
     selectedMovie: null,
     awardName: "올해의 시네마 상"
 };
-
-const movies = (typeof cinemaData !== 'undefined') ? cinemaData : [];
+const rawMovies = (typeof cinemaData !== 'undefined') ? cinemaData : [];
+const movies = SeasonFilter.filterAnimeList(rawMovies);
 
 // ✅ DB 데이터 캐시
 let cachedVoteData = null;

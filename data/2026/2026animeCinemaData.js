@@ -4,7 +4,7 @@ const cinemaData =
   "id": 60610,
   "title": "끝이 없는 스칼렛",
   "quarter": "1분기",
-  "thumbnail": "image/cinema/끝이 없는 스칼렛.webp",
+  "thumbnail": "image/cinema/2026/끝이 없는 스칼렛.webp",
   "day": "Cinema",
   "episodes": 1,
   "studio": [
@@ -27,7 +27,7 @@ const cinemaData =
   "id": 59817,
   "title": "극장판 총집편 걸즈 밴드 크라이 청춘광주곡",
   "quarter": "1분기",
-  "thumbnail": "image/cinema/극장판 총집편 걸즈 밴드 크라이 청춘광주곡.webp",
+  "thumbnail": "image/cinema/2026/극장판 총집편 걸즈 밴드 크라이 청춘광주곡.webp",
   "day": "Cinema",
   "episodes": 2,
   "studio": [
@@ -49,7 +49,7 @@ const cinemaData =
   "id": 61558,
   "title": "아이엠스타!×프리파라 더 무비 -만남의 기적!-",
   "quarter": "1분기",
-  "thumbnail": "image/cinema/아이엠스타!×프리파라 더 무비 -만남의 기적!-.webp",
+  "thumbnail": "image/cinema/2026/아이엠스타!×프리파라 더 무비 -만남의 기적!-.webp",
   "day": "Cinema",
   "episodes": 1,
   "studio": [
@@ -72,7 +72,7 @@ const cinemaData =
   "id": 60159,
   "title": "영화 러브 라이브! 니지가사키 학원 스쿨 아이돌 동호회 완결편 제2장",
   "quarter": "1분기",
-  "thumbnail": "image/cinema/영화 러브 라이브! 니지가사키 학원 스쿨 아이돌 동호회 완결편 제2장.webp",
+  "thumbnail": "image/cinema/2026/영화 러브 라이브! 니지가사키 학원 스쿨 아이돌 동호회 완결편 제2장.webp",
   "day": "Cinema",
   "episodes": 1,
   "studio": [
@@ -94,7 +94,7 @@ const cinemaData =
   "id": 50159,
   "title": "좀비 랜드 사가 유메긴가 파라다이스",
   "quarter": "1분기",
-  "thumbnail": "image/cinema/좀비 랜드 사가 유메긴가 파라다이스.webp",
+  "thumbnail": "image/cinema/2026/좀비 랜드 사가 유메긴가 파라다이스.webp",
   "day": "Cinema",
   "episodes": 1,
   "studio": [
@@ -120,7 +120,7 @@ const cinemaData =
   "id": 61418,
   "title": "녹나무의 파수꾼",
   "quarter": "1분기",
-  "thumbnail": "image/cinema/녹나무의 파수꾼.webp",
+  "thumbnail": "image/cinema/2026/녹나무의 파수꾼.webp",
   "day": "Cinema",
   "episodes": 1,
   "studio": [
@@ -144,7 +144,7 @@ const cinemaData =
   "id": 62550,
   "title": "극장판 총집편 걸즈 밴드 크라이 있잖아, 미래.",
   "quarter": "2분기",
-  "thumbnail": "image/cinema/극장판 총집편 걸즈 밴드 크라이 있잖아, 미래.webp",
+  "thumbnail": "image/cinema/2026/극장판 총집편 걸즈 밴드 크라이 있잖아, 미래.webp",
   "day": "Cinema",
   "episodes": 1,
   "studio": [

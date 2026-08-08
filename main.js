@@ -1,6 +1,145 @@
 const mainContainer = document.getElementById("main-container");
 const top3Area = document.getElementById("top3-area");
 
+// ──────────────────────────────────────────────
+// 시즌 선택 (연도 카드 → 분기 카드)
+// ──────────────────────────────────────────────
+const YEARS = [...new Set(AnimeList.map(a => a.year))].sort((a, b) => a - b);
+const QUARTERS = [
+    { key: "1분기", label: "1분기", sub: "1 - 3월" },
+    { key: "2분기", label: "2분기", sub: "4 - 6월" },
+    { key: "3분기", label: "3분기", sub: "7 - 9월" },
+    { key: "4분기", label: "4분기", sub: "10 - 12월" },
+    { key: "모든 분기", label: "모든 분기", sub: "전체 연간" }
+];
+
+function getSelectedSeason() {
+    return {
+        year: localStorage.getItem("selected_year"),
+        quarter: localStorage.getItem("selected_quarter")
+    };
+}
+
+function setSelectedSeason(year, quarter) {
+    if (year) localStorage.setItem("selected_year", year);
+    if (quarter) localStorage.setItem("selected_quarter", quarter);
+}
+
+function clearSelectedSeason() {
+    localStorage.removeItem("selected_year");
+    localStorage.removeItem("selected_quarter");
+}
+
+function updateMainTitle() {
+    const { year, quarter } = getSelectedSeason();
+    const titleEl = document.getElementById("main-title");
+    if (!titleEl || !year || !quarter) return;
+
+    titleEl.textContent = (quarter === "모든 분기")
+        ? `${year}년 애니메이션 연말 결산`
+        : `${year}년 ${quarter} 시상식`;
+}
+
+function renderYearCards() {
+    const grid = document.getElementById("year-card-grid");
+    if (!grid) return;
+
+    const { year: selectedYear } = getSelectedSeason();
+
+    grid.innerHTML = "";
+    YEARS.forEach(year => {
+        const card = document.createElement("div");
+        card.className = `season-card ${String(year) === selectedYear ? "selected" : ""}`;
+        card.innerHTML = `<span class="season-card-main">${year}</span><span class="season-card-sub">년</span>`;
+
+        card.onclick = () => {
+            setSelectedSeason(year, null);
+            localStorage.removeItem("selected_quarter"); // 연도 바꾸면 분기 재선택 필요
+            renderYearCards();
+            renderQuarterCards();
+        };
+
+        grid.appendChild(card);
+    });
+}
+
+function renderQuarterCards() {
+    const grid = document.getElementById("quarter-card-grid");
+    if (!grid) return;
+
+    const { year, quarter: selectedQuarter } = getSelectedSeason();
+
+    if (!year) {
+        grid.classList.add("hidden");
+        grid.innerHTML = "";
+        return;
+    }
+
+    grid.classList.remove("hidden");
+    grid.innerHTML = "";
+
+    QUARTERS.forEach(q => {
+        const card = document.createElement("div");
+        card.className = `season-card quarter-card ${q.key === selectedQuarter ? "selected" : ""}`;
+        card.innerHTML = `<span class="season-card-main">${q.label}</span><span class="season-card-sub">${q.sub}</span>`;
+
+        card.onclick = () => {
+            setSelectedSeason(year, q.key);
+            enterMainContent();
+        };
+
+        grid.appendChild(card);
+    });
+}
+
+function enterMainContent() {
+    const { year, quarter } = getSelectedSeason();
+    if (!year || !quarter) return;
+
+    // 1. 본문 먼저 그려놓기 (오버레이 뒤에서 준비)
+    updateMainTitle();
+    renderAwards();
+
+    const overlay = document.getElementById("season-select-screen");
+    const content = document.getElementById("content-area");
+
+    // 2. 본문을 보이게 전환 시작
+    content.classList.add("visible");
+
+    // 3. 오버레이 페이드아웃
+    overlay.classList.add("fade-out");
+
+    // 4. 트랜지션 끝나면 완전히 DOM에서 숨김 (클릭 방지 + 렌더 비용 절약)
+    overlay.addEventListener("transitionend", () => {
+        overlay.classList.add("hidden");
+    }, { once: true });
+}
+
+function openSeasonSelectScreen() {
+    const overlay = document.getElementById("season-select-screen");
+    const content = document.getElementById("content-area");
+
+    overlay.classList.remove("hidden", "fade-out");
+    content.classList.remove("visible");
+
+    const grid = document.getElementById("quarter-card-grid");
+    if (grid) { grid.classList.add("hidden"); grid.innerHTML = ""; }
+
+    renderYearCards();
+}
+function initSeasonGate() {
+    const { year, quarter } = getSelectedSeason();
+
+    if (year && quarter) {
+        enterMainContent();
+    } else {
+        openSeasonSelectScreen();
+    }
+
+    const changeBtn = document.getElementById("change-season-btn");
+    if (changeBtn) changeBtn.onclick = openSeasonSelectScreen;
+}
+
 // 삭제 모드 상태 관리
 let isDeleteMode = false;
 
@@ -347,6 +486,7 @@ document.getElementById("reset-all-btn").onclick = () => {
 
 document.addEventListener("DOMContentLoaded", () => {
     initAOS();
+    initSeasonGate();
 
     const infoBtn = document.getElementById("info-btn");
     const infoModal = document.getElementById("info-modal");
@@ -404,6 +544,4 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         };
     }
-
-    renderAwards();
 });

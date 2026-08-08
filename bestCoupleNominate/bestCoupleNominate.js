@@ -1,4 +1,6 @@
 // --- 상태 변수 ---
+const SeasonFilteredAnimeList = SeasonFilter.filterAnimeList(AnimeList);
+
 let nominees = [];
 let selectedCoupleIndex = null;
 let currentPopupCharacters = [];
@@ -104,7 +106,7 @@ function handleSearchInput() {
     }
 
     // AnimeList에서 제목 포함 여부 확인
-    const matches = AnimeList.filter(anime => 
+    const matches = SeasonFilteredAnimeList.filter(anime =>   // ← 수정
         anime.title.toLowerCase().includes(query)
     );
 
@@ -135,7 +137,7 @@ function performSearch(queryText) {
     const query = queryText.trim().toLowerCase();
     if (!query) return;
 
-    const anime = AnimeList.find(a => a.title.toLowerCase().includes(query));
+    const anime = SeasonFilteredAnimeList.find(a => a.title.toLowerCase().includes(query));
 
     if (anime) {
         openCharacterPopup(anime.id, anime.title);

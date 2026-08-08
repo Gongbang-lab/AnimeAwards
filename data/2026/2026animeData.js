@@ -1,9 +1,10 @@
 const AnimeList = [
   {
     "id": 61886,
+    "year": 2026,
     "quarter": "1분기",
     "title": "고문 아르바이트의 일상",
-    "thumbnail": "image/animeimg/Q1/고문_아르바이트의_일상.webp",
+    "thumbnail": "image/animeimg/2026/Q1/고문_아르바이트의_일상.webp",
     "day": "Mondays",
     "episodes": 12,
     "studio": [
@@ -26,9 +27,10 @@ const AnimeList = [
   },
   {
     "id": 61942,
+    "year": 2026,
     "quarter": "1분기",
     "title": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
-    "thumbnail": "image/animeimg/Q1/비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기.webp",
+    "thumbnail": "image/animeimg/2026/Q1/비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기.webp",
     "day": "Mondays",
     "episodes": 13,
     "studio": [
@@ -53,9 +55,10 @@ const AnimeList = [
   },
   {
     "id": 61782,
+    "year": 2026,
     "quarter": "1분기",
     "title": "깨끗하게 해주시겠어요?",
-    "thumbnail": "image/animeimg/Q1/깨끗하게 해주시겠어요.webp",
+    "thumbnail": "image/animeimg/2026/Q1/깨끗하게 해주시겠어요.webp",
     "day": "Mondays",
     "episodes": 0,
     "studio": [
@@ -80,9 +83,10 @@ const AnimeList = [
   },
   {
     "id": 55772,
+    "year": 2026,
     "quarter": "1분기",
     "title": "골든 카무이 최종장",
-    "thumbnail": "image/animeimg/Q1/골든 카무이 최종장.webp",
+    "thumbnail": "image/animeimg/2026/Q1/골든 카무이 최종장.webp",
     "day": "Mondays",
     "episodes": 13,
     "studio": [
@@ -105,9 +109,10 @@ const AnimeList = [
   },
   {
     "id": 58524,
+    "year": 2026,
     "quarter": "1분기",
     "title": "공주님 \"고문\"의 시간입니다 2기",
-    "thumbnail": "image/animeimg/Q1/공주님 고문의 시간입니다 2기.webp",
+    "thumbnail": "image/animeimg/2026/Q1/공주님 고문의 시간입니다 2기.webp",
     "day": "Mondays",
     "episodes": 0,
     "studio": [
@@ -132,9 +137,10 @@ const AnimeList = [
   },
   {
     "id": 61359,
+    "year": 2026,
     "quarter": "1분기",
     "title": "소꿉친구와는 러브 코미디를 할 수 없어",
-    "thumbnail": "image/animeimg/Q1/소꿉친구와는 러브 코미디를 할 수 없어.webp",
+    "thumbnail": "image/animeimg/2026/Q1/소꿉친구와는 러브 코미디를 할 수 없어.webp",
     "day": "Tuesdays",
     "episodes": 12,
     "studio": [
@@ -159,9 +165,10 @@ const AnimeList = [
   },
   {
     "id": 61983,
+    "year": 2026,
     "quarter": "1분기",
     "title": "용사 파티에 귀여운 애가 있어서, 고백해봤다.",
-    "thumbnail": "image/animeimg/Q1/용사 파티에 귀여운 애가 있어서, 고백해봤다..webp",
+    "thumbnail": "image/animeimg/2026/Q1/용사 파티에 귀여운 애가 있어서, 고백해봤다..webp",
     "day": "Tuesdays",
     "episodes": 13,
     "studio": [
@@ -190,9 +197,10 @@ const AnimeList = [
   },
   {
     "id": 60226,
+    "year": 2026,
     "quarter": "1분기",
     "title": "이세계 사정은 사축 하기 나름",
-    "thumbnail": "image/animeimg/Q1/이세계 사정은 사축 하기 나름.webp",
+    "thumbnail": "image/animeimg/2026/Q1/이세계 사정은 사축 하기 나름.webp",
     "day": "Tuesdays",
     "episodes": 12,
     "studio": [
@@ -217,9 +225,10 @@ const AnimeList = [
   },
   {
     "id": 61211,
+    "year": 2026,
     "quarter": "1분기",
     "title": "한밤중 하트튠",
-    "thumbnail": "image/animeimg/Q1/한밤중 하트튠.webp",
+    "thumbnail": "image/animeimg/2026/Q1/한밤중 하트튠.webp",
     "day": "Tuesdays",
     "episodes": 12,
     "studio": [
@@ -246,9 +255,10 @@ const AnimeList = [
   },
   {
     "id": 61830,
+    "year": 2026,
     "quarter": "1분기",
     "title": "개진전 사무라이 트루퍼",
-    "thumbnail": "image/animeimg/Q1/개진전 사무라이 트루퍼.webp",
+    "thumbnail": "image/animeimg/2026/Q1/개진전 사무라이 트루퍼.webp",
     "day": "Tuesdays",
     "episodes": 12,
     "studio": [
@@ -272,9 +282,10 @@ const AnimeList = [
   },
   {
     "id": 58886,
+    "year": 2026,
     "quarter": "1분기",
     "title": "다윈 사변",
-    "thumbnail": "image/animeimg/Q1/다윈 사변.webp",
+    "thumbnail": "image/animeimg/2026/Q1/다윈 사변.webp",
     "day": "Wednesdays",
     "episodes": 0,
     "studio": [
@@ -298,9 +309,10 @@ const AnimeList = [
   },
   {
     "id": 61637,
+    "year": 2026,
     "quarter": "1분기",
     "title": "29세 독신 중견 모험가의 일상",
-    "thumbnail": "image/animeimg/Q1/독신 중견 모험가의 일상.webp",
+    "thumbnail": "image/animeimg/2026/Q1/독신 중견 모험가의 일상.webp",
     "day": "Wednesdays",
     "episodes": 12,
     "studio": [
@@ -326,9 +338,10 @@ const AnimeList = [
   },
   {
     "id": 60255,
+    "year": 2026,
     "quarter": "1분기",
     "title": "아르네의 사건부",
-    "thumbnail": "image/animeimg/Q1/아르네의 사건부.webp",
+    "thumbnail": "image/animeimg/2026/Q1/아르네의 사건부.webp",
     "day": "Wednesdays",
     "episodes": 12,
     "studio": [
@@ -353,9 +366,10 @@ const AnimeList = [
   },
   {
     "id": 61884,
+    "year": 2026,
     "quarter": "1분기",
     "title": "마왕의 딸은 너무 친절해!!",
-    "thumbnail": "image/animeimg/Q1/마왕의 딸은 너무 친절해.webp",
+    "thumbnail": "image/animeimg/2026/Q1/마왕의 딸은 너무 친절해.webp",
     "day": "Wednesdays",
     "episodes": 12,
     "studio": [
@@ -379,9 +393,10 @@ const AnimeList = [
   },
   {
     "id": 60058,
+    "year": 2026,
     "quarter": "1분기",
     "title": "【최애의 아이】 3기",
-    "thumbnail": "image/animeimg/Q1/【최애의 아이】 3기.webp",
+    "thumbnail": "image/animeimg/2026/Q1/【최애의 아이】 3기.webp",
     "day": "Wednesdays",
     "episodes": 11,
     "studio": [
@@ -407,9 +422,10 @@ const AnimeList = [
   },
   {
     "id": 59711,
+    "year": 2026,
     "quarter": "1분기",
     "title": "사망 유희로 밥을 먹는다.",
-    "thumbnail": "image/animeimg/Q1/사망 유희로 밥을 먹는다..webp",
+    "thumbnail": "image/animeimg/2026/Q1/사망 유희로 밥을 먹는다..webp",
     "day": "Wednesdays",
     "episodes": 11,
     "studio": [
@@ -434,9 +450,10 @@ const AnimeList = [
   },
   {
     "id": 60692,
+    "year": 2026,
     "quarter": "1분기",
     "title": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
-    "thumbnail": "image/animeimg/Q1/귀족 전생.webp",
+    "thumbnail": "image/animeimg/2026/Q1/귀족 전생.webp",
     "day": "Thursdays",
     "episodes": 0,
     "studio": [
@@ -463,9 +480,10 @@ const AnimeList = [
   },
   {
     "id": 60071,
+    "year": 2026,
     "quarter": "1분기",
     "title": "온화한 귀족의 휴가의 권장",
-    "thumbnail": "image/animeimg/Q1/온화한 귀족의 휴가의 권장.webp",
+    "thumbnail": "image/animeimg/2026/Q1/온화한 귀족의 휴가의 권장.webp",
     "day": "Thursdays",
     "episodes": 0,
     "studio": [
@@ -488,9 +506,10 @@ const AnimeList = [
   },
   {
     "id": 56752,
+    "year": 2026,
     "quarter": "1분기",
     "title": "시광대리인 -Link Click- 영도편",
-    "thumbnail": "image/animeimg/Q1/시광대리인 -Link Click- 영도편.webp",
+    "thumbnail": "image/animeimg/2026/Q1/시광대리인 -Link Click- 영도편.webp",
     "day": "Thursdays",
     "episodes": 6,
     "studio": [
@@ -517,9 +536,10 @@ const AnimeList = [
   },
   {
     "id": 56009,
+    "year": 2026,
     "quarter": "1분기",
     "title": "용사형에 처함",
-    "thumbnail": "image/animeimg/Q1/용사형에 처함.webp",
+    "thumbnail": "image/animeimg/2026/Q1/용사형에 처함.webp",
     "day": "Thursdays",
     "episodes": 12,
     "studio": [
@@ -542,9 +562,10 @@ const AnimeList = [
   },
   {
     "id": 58505,
+    "year": 2026,
     "quarter": "1분기",
     "title": "마도정병의 슬레이브 2기",
-    "thumbnail": "image/animeimg/Q1/마도정병의 슬레이브 2기.webp",
+    "thumbnail": "image/animeimg/2026/Q1/마도정병의 슬레이브 2기.webp",
     "day": "Thursdays",
     "episodes": 12,
     "studio": [
@@ -567,9 +588,10 @@ const AnimeList = [
   },
   {
     "id": 60395,
+    "year": 2026,
     "quarter": "1분기",
     "title": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
-    "thumbnail": "image/animeimg/Q1/투명남과 인간녀 ~곧 부부가 될 두 사람~.webp",
+    "thumbnail": "image/animeimg/2026/Q1/투명남과 인간녀 ~곧 부부가 될 두 사람~.webp",
     "day": "Thursdays",
     "episodes": 12,
     "studio": [
@@ -593,9 +615,10 @@ const AnimeList = [
   },
   {
     "id": 60151,
+    "year": 2026,
     "quarter": "1분기",
     "title": "에리스의 성배",
-    "thumbnail": "image/animeimg/Q1/에리스의 성배.webp",
+    "thumbnail": "image/animeimg/2026/Q1/에리스의 성배.webp",
     "day": "Thursdays",
     "episodes": 0,
     "studio": [
@@ -619,9 +642,10 @@ const AnimeList = [
   },
   {
     "id": 57658,
+    "year": 2026,
     "quarter": "1분기",
     "title": "주술회전 3기",
-    "thumbnail": "image/animeimg/Q1/주술회전 3기.webp",
+    "thumbnail": "image/animeimg/2026/Q1/주술회전 3기.webp",
     "day": "Fridays",
     "episodes": 12,
     "studio": [
@@ -647,9 +671,10 @@ const AnimeList = [
   },
   {
     "id": 61587,
+    "year": 2026,
     "quarter": "1분기",
     "title": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
-    "thumbnail": "image/animeimg/Q1/용사 파티에서 추방되었으니.webp",
+    "thumbnail": "image/animeimg/2026/Q1/용사 파티에서 추방되었으니.webp",
     "day": "Fridays",
     "episodes": 12,
     "studio": [
@@ -675,9 +700,10 @@ const AnimeList = [
   },
   {
     "id": 61325,
+    "year": 2026,
     "quarter": "1분기",
     "title": "어차피, 사랑하고 만다. 2기",
-    "thumbnail": "image/animeimg/Q1/어차피, 사랑하고 만다. 2기.webp",
+    "thumbnail": "image/animeimg/2026/Q1/어차피, 사랑하고 만다. 2기.webp",
     "day": "Fridays",
     "episodes": 12,
     "studio": [
@@ -702,9 +728,10 @@ const AnimeList = [
   },
   {
     "id": 60509,
+    "year": 2026,
     "quarter": "1분기",
     "title": "샹피뇽의 마녀",
-    "thumbnail": "image/animeimg/Q1/샹피뇽의 마녀.webp",
+    "thumbnail": "image/animeimg/2026/Q1/샹피뇽의 마녀.webp",
     "day": "Fridays",
     "episodes": 0,
     "studio": [
@@ -727,9 +754,10 @@ const AnimeList = [
   },
   {
     "id": 59978,
+    "year": 2026,
     "quarter": "1분기",
     "title": "장송의 프리렌 2기",
-    "thumbnail": "image/animeimg/Q1/장송의 프리렌 2기.webp",
+    "thumbnail": "image/animeimg/2026/Q1/장송의 프리렌 2기.webp",
     "day": "Fridays",
     "episodes": 10,
     "studio": [
@@ -754,9 +782,10 @@ const AnimeList = [
   },
   {
     "id": 62804,
+    "year": 2026,
     "quarter": "1분기",
     "title": "하이스쿨! 기면조",
-    "thumbnail": "image/animeimg/Q1/하이스쿨!_기면조.webp",
+    "thumbnail": "image/animeimg/2026/Q1/하이스쿨!_기면조.webp",
     "day": "Fridays",
     "episodes": 12,
     "studio": [
@@ -779,9 +808,10 @@ const AnimeList = [
   },
   {
     "id": 59853,
+    "year": 2026,
     "quarter": "1분기",
     "title": "DARK MOON: 달의 제단",
-    "thumbnail": "image/animeimg/Q1/DARK MOON.webp",
+    "thumbnail": "image/animeimg/2026/Q1/DARK MOON.webp",
     "day": "Saturdays",
     "episodes": 12,
     "studio": [
@@ -804,9 +834,10 @@ const AnimeList = [
   },
   {
     "id": 60460,
+    "year": 2026,
     "quarter": "1분기",
     "title": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~",
-    "thumbnail": "image/animeimg/Q1/헬 모드.webp",
+    "thumbnail": "image/animeimg/2026/Q1/헬 모드.webp",
     "day": "Saturdays",
     "episodes": 12,
     "studio": [
@@ -841,9 +872,10 @@ const AnimeList = [
   },
   {
     "id": 59229,
+    "year": 2026,
     "quarter": "1분기",
     "title": "불꽃 소방대 3장",
-    "thumbnail": "image/animeimg/Q1/불꽃 소방대 3장.webp",
+    "thumbnail": "image/animeimg/2026/Q1/불꽃 소방대 3장.webp",
     "day": "Saturdays",
     "episodes": 13,
     "studio": [
@@ -867,9 +899,10 @@ const AnimeList = [
   },
   {
     "id": 61207,
+    "year": 2026,
     "quarter": "1분기",
     "title": "전생했더니 드래곤의 알이었다 ~최강이 아니면 목표로 하지 않아~",
-    "thumbnail": "image/animeimg/Q1/전생했더니 드래곤의 알이었다.webp",
+    "thumbnail": "image/animeimg/2026/Q1/전생했더니 드래곤의 알이었다.webp",
     "day": "Saturdays",
     "episodes": 0,
     "studio": [
@@ -893,9 +926,10 @@ const AnimeList = [
   },
   {
     "id": 61549,
+    "year": 2026,
     "quarter": "1분기",
     "title": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
-    "thumbnail": "image/animeimg/Q1/무사태평 영주의 즐거운 영지 방어.webp",
+    "thumbnail": "image/animeimg/2026/Q1/무사태평 영주의 즐거운 영지 방어.webp",
     "day": "Saturdays",
     "episodes": 0,
     "studio": [
@@ -919,9 +953,10 @@ const AnimeList = [
   },
   {
     "id": 54863,
+    "year": 2026,
     "quarter": "1분기",
     "title": "트라이건 스타게이즈",
-    "thumbnail": "image/animeimg/Q1/트라이건 스타게이즈.webp",
+    "thumbnail": "image/animeimg/2026/Q1/트라이건 스타게이즈.webp",
     "day": "Saturdays",
     "episodes": 12,
     "studio": [
@@ -946,9 +981,10 @@ const AnimeList = [
   },
   {
     "id": 55830,
+    "year": 2026,
     "quarter": "1분기",
     "title": "Fate/strange Fake",
-    "thumbnail": "image/animeimg/Q1/Fate strange Fake.webp",
+    "thumbnail": "image/animeimg/2026/Q1/Fate strange Fake.webp",
     "day": "Saturdays",
     "episodes": 13,
     "studio": [
@@ -976,9 +1012,10 @@ const AnimeList = [
   },
   {
     "id": 61196,
+    "year": 2026,
     "quarter": "1분기",
     "title": "데드 어카운트",
-    "thumbnail": "image/animeimg/Q1/데드 어카운트.webp",
+    "thumbnail": "image/animeimg/2026/Q1/데드 어카운트.webp",
     "day": "Saturdays",
     "episodes": 12,
     "studio": [
@@ -1002,9 +1039,10 @@ const AnimeList = [
   },
   {
     "id": 62432,
+    "year": 2026,
     "quarter": "1분기",
     "title": "인외 교실의 인간 혐오 교사",
-    "thumbnail": "image/animeimg/Q1/인외 교실의 인간 혐오 교사.webp",
+    "thumbnail": "image/animeimg/2026/Q1/인외 교실의 인간 혐오 교사.webp",
     "day": "Sundays",
     "episodes": 13,
     "studio": [
@@ -1030,9 +1068,10 @@ const AnimeList = [
   },
   {
     "id": 61217,
+    "year": 2026,
     "quarter": "1분기",
     "title": "쓰레기 용사",
-    "thumbnail": "image/animeimg/Q1/쓰레기 용사.webp",
+    "thumbnail": "image/animeimg/2026/Q1/쓰레기 용사.webp",
     "day": "Sundays",
     "episodes": 24,
     "studio": [
@@ -1055,9 +1094,10 @@ const AnimeList = [
   },
   {
     "id": 59047,
+    "year": 2026,
     "quarter": "1분기",
     "title": "타몬 군 지금 어느 쪽!?",
-    "thumbnail": "image/animeimg/Q1/타몬 군 지금 어느 쪽.webp",
+    "thumbnail": "image/animeimg/2026/Q1/타몬 군 지금 어느 쪽.webp",
     "day": "Sundays",
     "episodes": 13,
     "studio": [
@@ -1081,9 +1121,10 @@ const AnimeList = [
   },
   {
     "id": 61335,
+    "year": 2026,
     "quarter": "1분기",
     "title": "메달리스트 2기",
-    "thumbnail": "image/animeimg/Q1/메달리스트 2기.webp",
+    "thumbnail": "image/animeimg/2026/Q1/메달리스트 2기.webp",
     "day": "Sundays",
     "episodes": 9,
     "studio": [
@@ -1106,9 +1147,10 @@ const AnimeList = [
   },
   {
     "id": 63042,
+    "year": 2026,
     "title": "명탐정 프리큐어",
     "quarter": "1분기",
-    "thumbnail": "image/animeimg/Q1/명탐정 프리큐어.webp",
+    "thumbnail": "image/animeimg/2026/Q1/명탐정 프리큐어.webp",
     "day": "Sundays",
     "episodes": 0,
     "studio": [
@@ -1123,14 +1165,19 @@ const AnimeList = [
       ],
       "character_design": [
         "야노 아카네"
+      ],
+      "composer": [
+        "후카자와 에리카",
+        "우마세 미사키"
       ]
     }
   },
   {
     "id": 61663,
+    "year": 2026,
     "quarter": "1분기",
     "title": "아름다운 초저녁달",
-    "thumbnail": "image/animeimg/Q1/아름다운 초저녁달.webp",
+    "thumbnail": "image/animeimg/2026/Q1/아름다운 초저녁달.webp",
     "day": "Sundays",
     "episodes": 0,
     "studio": [
@@ -1154,9 +1201,10 @@ const AnimeList = [
   },
   {
     "id": 60371,
+    "year": 2026,
     "quarter": "1분기",
     "title": "정반대의 너와 나",
-    "thumbnail": "image/animeimg/Q1/정반대의 너와 나.webp",
+    "thumbnail": "image/animeimg/2026/Q1/정반대의 너와 나.webp",
     "day": "Sundays",
     "episodes": 12,
     "studio": [
@@ -1180,9 +1228,10 @@ const AnimeList = [
   },
   {
     "id": 60223,
+    "year": 2026,
     "quarter": "1분기",
     "title": "카야는 무섭지 않아",
-    "thumbnail": "image/animeimg/Q1/카야는 무섭지 않아.webp",
+    "thumbnail": "image/animeimg/2026/Q1/카야는 무섭지 않아.webp",
     "day": "Sundays",
     "episodes": 12,
     "studio": [
@@ -1208,9 +1257,10 @@ const AnimeList = [
   },
   {
     "id": 58861,
+    "year": 2026,
     "quarter": "1분기",
     "title": "아름다운 그대에게",
-    "thumbnail": "image/animeimg/Q1/아름다운 그대에게.webp",
+    "thumbnail": "image/animeimg/2026/Q1/아름다운 그대에게.webp",
     "day": "Sundays",
     "episodes": 12,
     "studio": [
@@ -1233,9 +1283,10 @@ const AnimeList = [
   },
   {
     "id": 60810,
+    "year": 2026,
     "quarter": "1분기",
     "title": "마술사 쿠논은 보인다",
-    "thumbnail": "image/animeimg/Q1/마술사 쿠논은 보인다.webp",
+    "thumbnail": "image/animeimg/2026/Q1/마술사 쿠논은 보인다.webp",
     "day": "Sundays",
     "episodes": 0,
     "studio": [
@@ -1259,9 +1310,10 @@ const AnimeList = [
   },
   {
     "id": 61128,
+    "year": 2026,
     "quarter": "1분기",
     "title": "용사 파티에서 쫓겨난 다재무능",
-    "thumbnail": "image/animeimg/Q1/용사 파티에서 쫓겨난 다재무능.webp",
+    "thumbnail": "image/animeimg/2026/Q1/용사 파티에서 쫓겨난 다재무능.webp",
     "day": "Sundays",
     "episodes": 0,
     "studio": [
@@ -1284,9 +1336,10 @@ const AnimeList = [
   },
   {
     "id": 62000,
+    "year": 2026,
     "quarter": "1분기",
     "title": "악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다",
-    "thumbnail": "image/animeimg/Q1/악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다.webp",
+    "thumbnail": "image/animeimg/2026/Q1/악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다.webp",
     "day": "Sundays",
     "episodes": 12,
     "studio": [
@@ -1311,9 +1364,10 @@ const AnimeList = [
   },
   {
     "id": 58788,
+    "year": 2026,
     "quarter": "1분기",
     "title": "위국일기",
-    "thumbnail": "image/animeimg/Q1/위국일기.webp",
+    "thumbnail": "image/animeimg/2026/Q1/위국일기.webp",
     "day": "Sundays",
     "episodes": 13,
     "studio": [
@@ -1337,9 +1391,10 @@ const AnimeList = [
   },
   {
     "id": 61084,
+    "year": 2026,
     "quarter": "1분기",
     "title": "화식조 우슈보로토비구미",
-    "thumbnail": "image/animeimg/Q1/화식조 우슈보로토비구미.webp",
+    "thumbnail": "image/animeimg/2026/Q1/화식조 우슈보로토비구미.webp",
     "day": "Sundays",
     "episodes": 0,
     "studio": [
@@ -1369,9 +1424,10 @@ const AnimeList = [
   },
   {
     "id": 60602,
+    "year": 2026,
     "quarter": "1분기",
     "title": "MF고스트 3rd Season",
-    "thumbnail": "image/animeimg/Q1/MF고스트 3rd Season.webp",
+    "thumbnail": "image/animeimg/2026/Q1/MF고스트 3rd Season.webp",
     "day": "Sundays",
     "episodes": 0,
     "studio": [
@@ -1394,9 +1450,10 @@ const AnimeList = [
   },
   {
     "id": 55825,
+    "year": 2026,
     "quarter": "1분기",
     "title": "지옥락 2기",
-    "thumbnail": "image/animeimg/Q1/지옥락 2기.webp",
+    "thumbnail": "image/animeimg/2026/Q1/지옥락 2기.webp",
     "day": "Sundays",
     "episodes": 12,
     "studio": [
@@ -1420,9 +1477,10 @@ const AnimeList = [
   },
   {
     "id": 62543,
+    "year": 2026,
     "quarter": "1분기",
     "title": "내가 연인이 될 수 있을 리 없잖아, 무리무리! (※무리가 아니었다?!) ~넥스트 샤인!~",
-    "thumbnail": "image/animeimg/Q1/내가 연인이 될 수 있을 리 없잖아, 무리무리!.webp",
+    "thumbnail": "image/animeimg/2026/Q1/내가 연인이 될 수 있을 리 없잖아, 무리무리!.webp",
     "day": "Anomaly",
     "episodes": 5,
     "studio": [
@@ -1445,9 +1503,10 @@ const AnimeList = [
   },
   {
     "id": 63096,
+    "year": 2026,
     "quarter": "1분기",
     "title": "아리스가와 렌은 사실 여자라구!!",
-    "thumbnail": "image/animeimg/Q1/아리스가와 렌은 사실 여자라구.webp",
+    "thumbnail": "image/animeimg/2026/Q1/아리스가와 렌은 사실 여자라구.webp",
     "day": "Anomaly",
     "episodes": 8,
     "studio": [
@@ -1470,9 +1529,10 @@ const AnimeList = [
   },
   {
     "id": 62897,
+    "year": 2026,
     "quarter": "1분기",
     "title": "이치고 아이카 ~잡하고 생기발랄한 동생과 못말리는 오빠~",
-    "thumbnail": "image/animeimg/Q1/이치고 아이카.webp",
+    "thumbnail": "image/animeimg/2026/Q1/이치고 아이카.webp",
     "day": "Anomaly",
     "episodes": 0,
     "studio": [
@@ -1495,9 +1555,10 @@ const AnimeList = [
   },
   {
     "id": 62987,
+    "year": 2026,
     "quarter": "1분기",
     "title": "북두의 권: 권왕군 자코들의 만가",
-    "thumbnail": "image/animeimg/Q1/북두의 권.webp",
+    "thumbnail": "image/animeimg/2026/Q1/북두의 권.webp",
     "day": "Anomaly",
     "episodes": 0,
     "studio": [
@@ -1516,9 +1577,10 @@ const AnimeList = [
   },
   {
     "id": 61969,
+    "year": 2026,
     "quarter": "1분기",
     "title": "최애 의붓형을 사랑하기 위해, 오래 살겠습니다!",
-    "thumbnail": "image/animeimg/Q1/최애 의붓형을 사랑하기 위해, 오래 살겠습니다.webp",
+    "thumbnail": "image/animeimg/2026/Q1/최애 의붓형을 사랑하기 위해, 오래 살겠습니다.webp",
     "day": "Anomaly",
     "episodes": 0,
     "studio": [
@@ -1542,9 +1604,10 @@ const AnimeList = [
   },
   {
     "id": 61694,
+    "year": 2026,
     "quarter": "1분기",
     "title": "안드로이드는 경험인 수에 들어가나요??",
-    "thumbnail": "image/animeimg/Q1/안드로이드는 경험인 수에 들어가나요.webp",
+    "thumbnail": "image/animeimg/2026/Q1/안드로이드는 경험인 수에 들어가나요.webp",
     "day": "Anomaly",
     "episodes": 8,
     "studio": [
@@ -1567,9 +1630,10 @@ const AnimeList = [
   },
   {
     "id": 62864,
+    "year": 2026,
     "quarter": "1분기",
     "title": "너는 아직 군마를 모른다",
-    "thumbnail": "image/animeimg/Q1/너는 아직 군마를 모른다.webp",
+    "thumbnail": "image/animeimg/2026/Q1/너는 아직 군마를 모른다.webp",
     "day": "Anomaly",
     "episodes": 0,
     "studio": [
@@ -1590,9 +1654,10 @@ const AnimeList = [
   },
   {
     "id": 19383,
+    "year": 2026,
     "quarter": "1분기",
     "title": "야미시바이 16기",
-    "thumbnail": "image/animeimg/Q1/야미시바이.webp",
+    "thumbnail": "image/animeimg/2026/Q1/야미시바이.webp",
     "day": "Anomaly",
     "episodes": 13,
     "studio": [
@@ -1611,9 +1676,10 @@ const AnimeList = [
   },
   {
     "id": 60294,
+    "year": 2026,
     "quarter": "1분기",
     "title": "천수의 사쿠나히메 코코로와 농사 일지",
-    "thumbnail": "image/animeimg/Q1/천수의 사쿠나히메 코코로와 농사 일지.webp",
+    "thumbnail": "image/animeimg/2026/Q1/천수의 사쿠나히메 코코로와 농사 일지.webp",
     "day": "Anomaly",
     "episodes": 2,
     "studio": [
@@ -1634,9 +1700,10 @@ const AnimeList = [
   },
   {
     "id": 56906,
+    "year": 2026,
     "quarter": "1분기",
     "title": "이세계에서 치트 스킬을 얻은 나는 현실 세계에서도 무쌍한다 ~레벨업이 인생을 바꿨다~ TVSP",
-    "thumbnail": "image/animeimg/Q1/레벨업이 인생을 바꿨다.webp",
+    "thumbnail": "image/animeimg/2026/Q1/레벨업이 인생을 바꿨다.webp",
     "day": "Anomaly",
     "episodes": 1,
     "studio": [
@@ -1657,9 +1724,10 @@ const AnimeList = [
   },
   {
     "id": 63019,
+    "year": 2026,
     "quarter": "1분기",
     "title": "프리즘 윤무곡",
-    "thumbnail": "image/animeimg/Q1/프리즘 윤무곡.webp",
+    "thumbnail": "image/animeimg/2026/Q1/프리즘 윤무곡.webp",
     "day": "Web",
     "episodes": 20,
     "studio": [
@@ -1686,9 +1754,10 @@ const AnimeList = [
   },
   {
     "id": 62896,
+    "year": 2026,
     "quarter": "1분기",
     "title": "초(超) 가구야 공주!",
-    "thumbnail": "image/animeimg/Q1/초(超) 가구야 공주.webp",
+    "thumbnail": "image/animeimg/2026/Q1/초(超) 가구야 공주.webp",
     "day": "Web",
     "episodes": 1,
     "studio": [
@@ -1713,9 +1782,10 @@ const AnimeList = [
   },
   {
     "id": 61119,
+    "year": 2026,
     "quarter": "1분기",
     "title": "듀얼마스터즈 LOST ~망각의 태양~",
-    "thumbnail": "image/animeimg/Q1/듀얼마스터즈 LOST ~망각의 태양~.webp",
+    "thumbnail": "image/animeimg/2026/Q1/듀얼마스터즈 LOST ~망각의 태양~.webp",
     "day": "Web",
     "episodes": 4,
     "studio": [
@@ -1738,9 +1808,10 @@ const AnimeList = [
   },
   {
     "id": 58573,
+    "year": 2026,
     "quarter": "1분기",
     "title": "바키도: 무적의 검사 편",
-    "thumbnail": "image/animeimg/Q1/바키도.webp",
+    "thumbnail": "image/animeimg/2026/Q1/바키도.webp",
     "day": "Web",
     "episodes": 13,
     "studio": [
@@ -1763,9 +1834,10 @@ const AnimeList = [
   },
   {
     "id": 61469,
+    "year": 2026,
     "quarter": "1분기",
     "title": "스틸 볼 런: 죠죠의 기묘한 모험",
-    "thumbnail": "image/animeimg/Q1/스틸 볼 런.webp",
+    "thumbnail": "image/animeimg/2026/Q1/스틸 볼 런.webp",
     "day": "Web",
     "episodes": 0,
     "studio": [
@@ -1793,9 +1865,10 @@ const AnimeList = [
   },
   {
     "id": 49469,
+    "year": 2026,
     "quarter": "1분기",
     "title": "비스타즈 파이널 시즌",
-    "thumbnail": "image/animeimg/Q1/비스타즈 파이널 시즌.webp",
+    "thumbnail": "image/animeimg/2026/Q1/비스타즈 파이널 시즌.webp",
     "day": "Web",
     "episodes": 12,
     "studio": [
@@ -1819,9 +1892,10 @@ const AnimeList = [
   },
   {
     "id": 59393,
+    "year": 2026,
     "title": "치킨 파이터",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/치킨 파이터.webp",
+    "thumbnail": "image/animeimg/2026/Q2/치킨 파이터.webp",
     "day": "Mondays",
     "episodes": 0,
     "studio": [
@@ -1837,14 +1911,18 @@ const AnimeList = [
       "character_design": [
         "챠노하라 타쿠야",
         "Shin Joseph"
+      ],
+      "composer": [
+        "타카하시 테츠야"
       ]
     }
   },
   {
     "id": 62852,
+    "year": 2026,
     "title": "고스트 콘서트: missing Songs",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/고스트 콘서트 missing Songs.webp",
+    "thumbnail": "image/animeimg/2026/Q2/고스트 콘서트 missing Songs.webp",
     "day": "Mondays",
     "episodes": 12,
     "studio": [
@@ -1859,14 +1937,18 @@ const AnimeList = [
       ],
       "character_design": [
         "우이가와 마사아키"
+      ],
+      "composer": [
+        "츠치야 마사노리"
       ]
     }
   },
   {
     "id": 61687,
+    "year": 2026,
     "title": "자칭 악역 영애인 약혼자 관찰기록.",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/자칭 악역 영애인 약혼자 관찰기록.webp",
+    "thumbnail": "image/animeimg/2026/Q2/자칭 악역 영애인 약혼자 관찰기록.webp",
     "day": "Mondays",
     "episodes": 12,
     "studio": [
@@ -1883,14 +1965,20 @@ const AnimeList = [
         "마츠모토 미키",
         "아베",
         "마츠이 우니"
+      ],
+      "composer": [
+        "하야시 유키",
+        "Luke Standridge",
+        "Asa Taylor"
       ]
     }
   },
   {
     "id": 62146,
+    "year": 2026,
     "title": "이세계 유유자적 농가 2",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/이세계 유유자적 농가 2.webp",
+    "thumbnail": "image/animeimg/2026/Q2/이세계 유유자적 농가 2.webp",
     "day": "Mondays",
     "episodes": 12,
     "studio": [
@@ -1907,14 +1995,19 @@ const AnimeList = [
         "사이토 요시코",
         "나카하라 키요타카",
         "이소우치 유스케"
+      ],
+      "composer": [
+        "타카나시 야스하루",
+        "요하네스 닐슨"
       ]
     }
   },
   {
     "id": 51553,
+    "year": 2026,
     "title": "고깔모자 아틀리에",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/고깔모자 아틀리에.webp",
+    "thumbnail": "image/animeimg/2026/Q2/고깔모자 아틀리에.webp",
     "day": "Mondays",
     "episodes": 13,
     "studio": [
@@ -1932,14 +2025,18 @@ const AnimeList = [
         "나카지마 아츠코",
         "후쿠치 준페이",
         "미야자키 아사미"
+      ],
+      "composer": [
+        "키타무라 유카"
       ]
     }
   },
   {
     "id": 61425,
+    "year": 2026,
     "title": "허당 선도부원과 스커트 길이가 부적절한 여고생의 이야기",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/허당 선도부원과 스커트 길이가 부적절한 여고생의 이야기.webp",
+    "thumbnail": "image/animeimg/2026/Q2/허당 선도부원과 스커트 길이가 부적절한 여고생의 이야기.webp",
     "day": "Mondays",
     "episodes": 12,
     "studio": [
@@ -1954,14 +2051,21 @@ const AnimeList = [
       ],
       "character_design": [
         "히무로 요우"
+      ],
+      "composer": [
+        "이와모토 칸키",
+        "텐큐 히사시",
+        "토리야마 타카시",
+        "키타즈메 요시아키"
       ]
     }
   },
   {
     "id": 62331,
+    "year": 2026,
     "title": "라이어 게임",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/라이어 게임.webp",
+    "thumbnail": "image/animeimg/2026/Q2/라이어 게임.webp",
     "day": "Tuesdays",
     "episodes": 0,
     "studio": [
@@ -1978,14 +2082,18 @@ const AnimeList = [
       "character_design": [
         "츠치야 케이",
         "요코야마 아이"
+      ],
+      "composer": [
+        "칸노 유고"
       ]
     }
   },
   {
     "id": 63375,
+    "year": 2026,
     "title": "일본삼국",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/일본삼국.webp",
+    "thumbnail": "image/animeimg/2026/Q2/일본삼국.webp",
     "day": "Tuesdays",
     "episodes": 0,
     "studio": [
@@ -2001,14 +2109,18 @@ const AnimeList = [
       "character_design": [
         "아비루 타카히코",
         "츠지무라 코키"
+      ],
+      "composer": [
+        "Kevin Penkin"
       ]
     }
   },
   {
     "id": 61931,
+    "year": 2026,
     "title": "비극의 원흉이 되는 최강악역 최종보스 여왕은 국민을 위해 헌신합니다 Season2",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/비극의 원흉이 되는 최강악역 최종보스 여왕은 국민을 위해 헌신합니다 Season2.webp",
+    "thumbnail": "image/animeimg/2026/Q2/비극의 원흉이 되는 최강악역 최종보스 여왕은 국민을 위해 헌신합니다 Season2.webp",
     "day": "Tuesdays",
     "episodes": 12,
     "studio": [
@@ -2026,14 +2138,24 @@ const AnimeList = [
         "스즈노스케",
         "마츠우라 분코",
         "카와노 아키코"
+      ],
+      "composer": [
+        "나카무라 히나에",
+        "사이키 타츠히코",
+        "사쿠마 카나데",
+        "나카지마 준코",
+        "츠치다 미사키",
+        "타나카 츠구미",
+        "사와다 카호"
       ]
     }
   },
   {
     "id": 62601,
+    "year": 2026,
     "title": "매리지 톡신",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/매리지 톡신.webp",
+    "thumbnail": "image/animeimg/2026/Q2/매리지 톡신.webp",
     "day": "Tuesdays",
     "episodes": 0,
     "studio": [
@@ -2049,14 +2171,19 @@ const AnimeList = [
       "character_design": [
         "토쿠오카 코헤이",
         "사코 유리카"
+      ],
+      "composer": [
+        "이와사키 타이세이",
+        "yuma yamaguchi"
       ]
     }
   },
   {
     "id": 61839,
+    "year": 2026,
     "title": "사랑해 게임을 끝내고 싶어",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/사랑해 게임을 끝내고 싶어.webp",
+    "thumbnail": "image/animeimg/2026/Q2/사랑해 게임을 끝내고 싶어.webp",
     "day": "Tuesdays",
     "episodes": 12,
     "studio": [
@@ -2073,14 +2200,18 @@ const AnimeList = [
         "후쿠치 토모키",
         "타니가와 료스케",
         "스기무라 토모카즈"
+      ],
+      "composer": [
+        "마츠다 아키토"
       ]
     }
   },
   {
     "id": 56734,
+    "year": 2026,
     "title": "반에서 두 번째로 귀여운 여자애와 친구가 되었다",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/반에서 두 번째로 귀여운 여자애와 친구가 되었다.webp",
+    "thumbnail": "image/animeimg/2026/Q2/반에서 두 번째로 귀여운 여자애와 친구가 되었다.webp",
     "day": "Tuesdays",
     "episodes": 12,
     "studio": [
@@ -2096,14 +2227,20 @@ const AnimeList = [
       "character_design": [
         "타키모토 쇼코",
         "휴우가 아즈리"
+      ],
+      "composer": [
+        "카와다 루카",
+        "세키무카이 야요이",
+        "무츠키 슈헤이"
       ]
     }
   },
   {
     "id": 61013,
+    "year": 2026,
     "title": "레플리카도, 사랑을 한다",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/레플리카도, 사랑을 한다.webp",
+    "thumbnail": "image/animeimg/2026/Q2/레플리카도, 사랑을 한다.webp",
     "day": "Tuesdays",
     "episodes": 13,
     "studio": [
@@ -2119,14 +2256,18 @@ const AnimeList = [
       "character_design": [
         "아비코 에이지",
         "raemz"
+      ],
+      "composer": [
+        "하라 카나코"
       ]
     }
   },
   {
     "id": 53732,
+    "year": 2026,
     "title": "왼손잡이 에렌",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/왼손잡이 에렌.webp",
+    "thumbnail": "image/animeimg/2026/Q2/왼손잡이 에렌.webp",
     "day": "Wednesdays",
     "episodes": 13,
     "studio": [
@@ -2144,14 +2285,18 @@ const AnimeList = [
         "고토 타카유키",
         "후쿠치 유카",
         "타마이 아카네"
+      ],
+      "composer": [
+        "PC 음악 클럽"
       ]
     }
   },
   {
     "id": 63014,
+    "year": 2026,
     "title": "두 남자와 룸쉐어 중입니다",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/두 남자와 룸쉐어 중입니다.webp",
+    "thumbnail": "image/animeimg/2026/Q2/두 남자와 룸쉐어 중입니다.webp",
     "day": "Wednesdays",
     "episodes": 0,
     "studio": [
@@ -2166,14 +2311,18 @@ const AnimeList = [
       ],
       "character_design": [
         "키쿠치 슌스케"
+      ],
+      "composer": [
+        "하세가와 토모키"
       ]
     }
   },
   {
     "id": 63376,
+    "year": 2026,
     "title": "여신 「이세계 전생하면 뭐가 되고 싶습니까」 나「용사의 갈비뼈로」",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/여신 「이세계 전생하면 뭐가 되고 싶습니까」 나「용사의 갈비뼈로」.webp",
+    "thumbnail": "image/animeimg/2026/Q2/여신 「이세계 전생하면 뭐가 되고 싶습니까」 나「용사의 갈비뼈로」.webp",
     "day": "Wednesdays",
     "episodes": 0,
     "studio": [
@@ -2191,14 +2340,22 @@ const AnimeList = [
         "메바루",
         "쿠마노마타 카기지",
         "마츠모토 미키"
+      ],
+      "composer": [
+        "우라키 유타",
+        "코니시 카요",
+        "콘도 유키오",
+        "Nomi",
+        "와타나베 슌야"
       ]
     }
   },
   {
     "id": 59708,
+    "year": 2026,
     "title": "어서 오세요 실력지상주의 교실에 4th Season",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/어서 오세요 실력지상주의 교실에 4th Season.webp",
+    "thumbnail": "image/animeimg/2026/Q2/어서 오세요 실력지상주의 교실에 4th Season.webp",
     "day": "Wednesdays",
     "episodes": 16,
     "studio": [
@@ -2216,14 +2373,19 @@ const AnimeList = [
         "쇼킨지 나오코",
         "카와무라 아츠코",
         "나가타 하루나"
+      ],
+      "composer": [
+        "요코야마 마사루",
+        "하시구치 카나"
       ]
     }
   },
   {
     "id": 62512,
+    "year": 2026,
     "title": "자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season.webp",
+    "thumbnail": "image/animeimg/2026/Q2/자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season.webp",
     "day": "Wednesdays",
     "episodes": 0,
     "studio": [
@@ -2246,14 +2408,19 @@ const AnimeList = [
         "오제키 미야비",
         "황미정",
         "송현주"
+      ],
+      "composer": [
+        "우라키 유타",
+        "타카하시 케이타"
       ]
     }
   },
   {
     "id": 61316,
+    "year": 2026,
     "title": "Re:제로부터 시작하는 이세계 생활 4기",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/Re 제로부터 시작하는 이세계 생활 4기.webp",
+    "thumbnail": "image/animeimg/2026/Q2/Re 제로부터 시작하는 이세계 생활 4기.webp",
     "day": "Wednesdays",
     "episodes": 19,
     "studio": [
@@ -2270,14 +2437,18 @@ const AnimeList = [
         "오츠카 신이치로",
         "사가와 하루카",
         "치바 케이타로"
+      ],
+      "composer": [
+        "스에히로 켄이치로"
       ]
     }
   },
   {
     "id": 61831,
+    "year": 2026,
     "title": "최강의 왕, 두 번째 인생에는 무엇을 하는가 시즌 2",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/최강의 왕, 두 번째 인생에는 무엇을 하는가 시즌 2.webp",
+    "thumbnail": "image/animeimg/2026/Q2/최강의 왕, 두 번째 인생에는 무엇을 하는가 시즌 2.webp",
     "day": "Wednesdays",
     "episodes": 0,
     "studio": [
@@ -2292,14 +2463,19 @@ const AnimeList = [
       ],
       "character_design": [
         "스에오카 마사미"
+      ],
+      "composer": [
+        "이나이 케이지",
+        "Zio"
       ]
     }
   },
   {
     "id": 62604,
+    "year": 2026,
     "title": "오타쿠에게 상냥한 갸루는 없다",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/오타쿠에게 상냥한 갸루는 없다.webp",
+    "thumbnail": "image/animeimg/2026/Q2/오타쿠에게 상냥한 갸루는 없다.webp",
     "day": "Wednesdays",
     "episodes": 0,
     "studio": [
@@ -2314,14 +2490,18 @@ const AnimeList = [
       ],
       "character_design": [
         "마츠다 리온"
+      ],
+      "composer": [
+        "사토 와타루"
       ]
     }
   },
   {
     "id": 62893,
+    "year": 2026,
     "title": "놓친 물고기는 컸지만 잡은 물고기가 너무 컸던 건",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/놓친 물고기는 컸지만 잡은 물고기가 너무 컸던 건.webp",
+    "thumbnail": "image/animeimg/2026/Q2/놓친 물고기는 컸지만 잡은 물고기가 너무 컸던 건.webp",
     "day": "Thursdays",
     "episodes": 12,
     "studio": [
@@ -2336,14 +2516,19 @@ const AnimeList = [
       ],
       "character_design": [
         "스즈키 이사무"
+      ],
+      "composer": [
+        "하시구치 카나",
+        "하마다 나츠키"
       ]
     }
   },
   {
     "id": 59551,
+    "year": 2026,
     "title": "힘내라 나카무라 군",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/힘내라 나카무라 군.webp",
+    "thumbnail": "image/animeimg/2026/Q2/힘내라 나카무라 군.webp",
     "day": "Thursdays",
     "episodes": 13,
     "studio": [
@@ -2358,14 +2543,18 @@ const AnimeList = [
       ],
       "character_design": [
         "우메키 아오이"
+      ],
+      "composer": [
+        "츠치타 아야나"
       ]
     }
   },
   {
     "id": 60028,
+    "year": 2026,
     "title": "공주 기사는 야만족의 신부",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/공주 기사는 야만족의 신부.webp",
+    "thumbnail": "image/animeimg/2026/Q2/공주 기사는 야만족의 신부.webp",
     "day": "Thursdays",
     "episodes": 12,
     "studio": [
@@ -2384,14 +2573,18 @@ const AnimeList = [
         "후지타 마유미",
         "하타케야마 하지메",
         "김로호"
+      ],
+      "composer": [
+        "오케하자마 아리사"
       ]
     }
   },
   {
     "id": 57592,
+    "year": 2026,
     "title": "닥터 스톤 SCIENCE FUTURE",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/닥터 스톤 SCIENCE FUTURE.webp",
+    "thumbnail": "image/animeimg/2026/Q2/닥터 스톤 SCIENCE FUTURE.webp",
     "day": "Thursdays",
     "episodes": 12,
     "studio": [
@@ -2407,14 +2600,20 @@ const AnimeList = [
       "character_design": [
         "Boichi",
         "이와사 유코"
+      ],
+      "composer": [
+        "카토 타츠야",
+        "츠츠미 히로아키",
+        "YUKI KANESAKA"
       ]
     }
   },
   {
     "id": 58832,
+    "year": 2026,
     "title": "쿠지마 노래하면 집이 파다닥",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/쿠지마 노래하면 집이 파다닥.webp",
+    "thumbnail": "image/animeimg/2026/Q2/쿠지마 노래하면 집이 파다닥.webp",
     "day": "Thursdays",
     "episodes": 12,
     "studio": [
@@ -2431,14 +2630,18 @@ const AnimeList = [
       "character_design": [
         "미츠하시 사쿠라코",
         "하시모리 유카"
+      ],
+      "composer": [
+        "카쿠도 마나미"
       ]
     }
   },
   {
     "id": 60852,
+    "year": 2026,
     "title": "얼음 성벽",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/얼음 성벽.webp",
+    "thumbnail": "image/animeimg/2026/Q2/얼음 성벽.webp",
     "day": "Thursdays",
     "episodes": 0,
     "studio": [
@@ -2454,14 +2657,19 @@ const AnimeList = [
       "character_design": [
         "오기노 미키",
         "이토 에리코"
+      ],
+      "composer": [
+        "사쿠마 카나데",
+        "타부치 나츠미"
       ]
     }
   },
   {
     "id": 59835,
+    "year": 2026,
     "title": "키리오 팬클럽",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/키리오 팬클럽.webp",
+    "thumbnail": "image/animeimg/2026/Q2/키리오 팬클럽.webp",
     "day": "Fridays",
     "episodes": 12,
     "studio": [
@@ -2478,14 +2686,18 @@ const AnimeList = [
         "하야시 나미",
         "나가사카 칸지",
         "사다카타 키쿠코"
+      ],
+      "composer": [
+        "키쿠야 토모키"
       ]
     }
   },
   {
     "id": 59443,
+    "year": 2026,
     "title": "리인카네이션의 꽃잎",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/리인카네이션의 꽃잎.webp",
+    "thumbnail": "image/animeimg/2026/Q2/리인카네이션의 꽃잎.webp",
     "day": "Fridays",
     "episodes": 0,
     "studio": [
@@ -2501,14 +2713,18 @@ const AnimeList = [
       "character_design": [
         "카토 하루나",
         "이나타 와타루"
+      ],
+      "composer": [
+        "KOHTA YAMAMOTO"
       ]
     }
   },
   {
     "id": 61943,
+    "year": 2026,
     "title": "하이바라의 청춘 뉴 게임 플러스",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/하이바라의 청춘 뉴 게임 플러스.webp",
+    "thumbnail": "image/animeimg/2026/Q2/하이바라의 청춘 뉴 게임 플러스.webp",
     "day": "Fridays",
     "episodes": 12,
     "studio": [
@@ -2524,14 +2740,18 @@ const AnimeList = [
       "character_design": [
         "긴",
         "오노 히로미"
+      ],
+      "composer": [
+        "타카오 소노스케"
       ]
     }
   },
   {
     "id": 58820,
+    "year": 2026,
     "title": "아와지마 가극학교",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/아와지마 가극학교.webp",
+    "thumbnail": "image/animeimg/2026/Q2/아와지마 가극학교.webp",
     "day": "Fridays",
     "episodes": 12,
     "studio": [
@@ -2548,14 +2768,18 @@ const AnimeList = [
         "하마다 쿠니히코",
         "콘노 아키코",
         "나가야마 쇼타로"
+      ],
+      "composer": [
+        "오바타 타카히로"
       ]
     }
   },
   {
     "id": 62964,
+    "year": 2026,
     "title": "또 죽고 말았나요, 탐정님",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/또 죽고 말았나요, 탐정님.webp",
+    "thumbnail": "image/animeimg/2026/Q2/또 죽고 말았나요, 탐정님.webp",
     "day": "Fridays",
     "episodes": 0,
     "studio": [
@@ -2570,14 +2794,18 @@ const AnimeList = [
       ],
       "character_design": [
         "쿠마다 아키코"
+      ],
+      "composer": [
+        "무츠키 슈헤이"
       ]
     }
   },
   {
     "id": 56876,
+    "year": 2026,
     "title": "옆집 천사님 때문에 어느샌가 인간적으로 타락한 사연 2",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/옆집 천사님 때문에 어느샌가 인간적으로 타락한 사연 2.webp",
+    "thumbnail": "image/animeimg/2026/Q2/옆집 천사님 때문에 어느샌가 인간적으로 타락한 사연 2.webp",
     "day": "Fridays",
     "episodes": 12,
     "studio": [
@@ -2593,14 +2821,18 @@ const AnimeList = [
       "character_design": [
         "노구치 타카유키",
         "쿠라하시 N카루"
+      ],
+      "composer": [
+        "휴우가 모에"
       ]
     }
   },
   {
     "id": 59970,
+    "year": 2026,
     "title": "전생했더니 슬라임이었던 건에 대하여 4기",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/전생했더니 슬라임이었던 건에 대하여 4기.webp",
+    "thumbnail": "image/animeimg/2026/Q2/전생했더니 슬라임이었던 건에 대하여 4기.webp",
     "day": "Fridays",
     "episodes": 0,
     "studio": [
@@ -2619,14 +2851,18 @@ const AnimeList = [
         "코미네 마사요리",
         "야마자키 히데키",
         "이토 토모코"
+      ],
+      "composer": [
+        "R・O・N"
       ]
     }
   },
   {
     "id": 62068,
+    "year": 2026,
     "title": "스노우볼 어스",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/스노우볼 어스.webp",
+    "thumbnail": "image/animeimg/2026/Q2/스노우볼 어스.webp",
     "day": "Fridays",
     "episodes": 13,
     "studio": [
@@ -2642,14 +2878,20 @@ const AnimeList = [
       "character_design": [
         "코노 토시야",
         "세라 코타"
+      ],
+      "composer": [
+        "카토 타츠야",
+        "츠츠미 히로아키",
+        "YUKI KANESAKA"
       ]
     }
   },
   {
     "id": 62981,
+    "year": 2026,
     "title": "신의 물방울",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/신의 물방울.webp",
+    "thumbnail": "image/animeimg/2026/Q2/신의 물방울.webp",
     "day": "Fridays",
     "episodes": 24,
     "studio": [
@@ -2664,14 +2906,18 @@ const AnimeList = [
       ],
       "character_design": [
         "스와 소타"
+      ],
+      "composer": [
+        "세가와 에이시"
       ]
     }
   },
   {
     "id": 61186,
+    "year": 2026,
     "title": "카미이나 보탄, 취한 모습은 백합의 꽃",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/카미이나 보탄, 취한 모습은 백합의 꽃.webp",
+    "thumbnail": "image/animeimg/2026/Q2/카미이나 보탄, 취한 모습은 백합의 꽃.webp",
     "day": "Saturdays",
     "episodes": 12,
     "studio": [
@@ -2687,14 +2933,18 @@ const AnimeList = [
       "character_design": [
         "요시나리 코우",
         "미야치"
+      ],
+      "composer": [
+        "하시구치 카나"
       ]
     }
   },
   {
     "id": 61200,
+    "year": 2026,
     "title": "종말의 발키리 Ⅲ",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/종말의 발키리 Ⅲ.webp",
+    "thumbnail": "image/animeimg/2026/Q2/종말의 발키리 Ⅲ.webp",
     "day": "Saturdays",
     "episodes": 15,
     "studio": [
@@ -2713,14 +2963,18 @@ const AnimeList = [
         "카와시마 나오",
         "쿠마가이 테츠야",
         "하라다 렌키"
+      ],
+      "composer": [
+        "타카나시 야스하루"
       ]
     }
   },
   {
     "id": 56646,
+    "year": 2026,
     "title": "북두의 권 -FIST OF THE NORTH STAR-",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/북두의 권 -FIST OF THE NORTH STAR-.webp",
+    "thumbnail": "image/animeimg/2026/Q2/북두의 권 -FIST OF THE NORTH STAR-.webp",
     "day": "Saturdays",
     "episodes": 0,
     "studio": [
@@ -2736,14 +2990,18 @@ const AnimeList = [
       "character_design": [
         "히사츠네 나오키",
         "코지"
+      ],
+      "composer": [
+        "하야시 유키"
       ]
     }
   },
   {
     "id": 62485,
+    "year": 2026,
     "title": "여친, 빌리겠습니다 5기",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/여친, 빌리겠습니다 5기.webp",
+    "thumbnail": "image/animeimg/2026/Q2/여친, 빌리겠습니다 5기.webp",
     "day": "Saturdays",
     "episodes": 12,
     "studio": [
@@ -2758,14 +3016,20 @@ const AnimeList = [
       ],
       "character_design": [
         "히라야마 칸나"
+      ],
+      "composer": [
+        "햐다인",
+        "이타가키 유스케",
+        "오오타케 토모유키"
       ]
     }
   },
   {
     "id": 57466,
+    "year": 2026,
     "title": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~.webp",
+    "thumbnail": "image/animeimg/2026/Q2/책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~.webp",
     "day": "Saturdays",
     "episodes": 0,
     "studio": [
@@ -2791,14 +3055,18 @@ const AnimeList = [
         "키시노 미호",
         "핫토리 하나카",
         "카시자키 이노리"
+      ],
+      "composer": [
+        "미치루"
       ]
     }
   },
   {
     "id": 60310,
+    "year": 2026,
     "title": "마계학교 이루마군 4기",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/마계학교 이루마군 4기.webp",
+    "thumbnail": "image/animeimg/2026/Q2/마계학교 이루마군 4기.webp",
     "day": "Saturdays",
     "episodes": 24,
     "studio": [
@@ -2814,14 +3082,19 @@ const AnimeList = [
       ],
       "character_design": [
         "하라 유미코"
+      ],
+      "composer": [
+        "혼마 아키미츠",
+        "세키무카이 야요이"
       ]
     }
   },
   {
     "id": 60444,
+    "year": 2026,
     "title": "비실비실 선생님",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/비실비실 선생님.webp",
+    "thumbnail": "image/animeimg/2026/Q2/비실비실 선생님.webp",
     "day": "Saturdays",
     "episodes": 12,
     "studio": [
@@ -2836,14 +3109,19 @@ const AnimeList = [
       ],
       "character_design": [
         "아이사카 나오키"
+      ],
+      "composer": [
+        "타다 아키후미",
+        "타야마 리나"
       ]
     }
   },
   {
     "id": 62825,
+    "year": 2026,
     "title": "최강의 직업은 용사도 현자도 아닌 감정사(임시)인 것 같은데요",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/최강의 직업은 용사도 현자도 아닌 감정사(임시)인 것 같은데요.webp",
+    "thumbnail": "image/animeimg/2026/Q2/최강의 직업은 용사도 현자도 아닌 감정사(임시)인 것 같은데요.webp",
     "day": "Saturdays",
     "episodes": 0,
     "studio": [
@@ -2859,14 +3137,18 @@ const AnimeList = [
       "character_design": [
         "오오카와 미호코",
         "마츠모토 요시에"
+      ],
+      "composer": [
+        "키쿠야 토모키"
       ]
     }
   },
   {
     "id": 62391,
+    "year": 2026,
     "title": "킬 블루",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/킬 블루.webp",
+    "thumbnail": "image/animeimg/2026/Q2/킬 블루.webp",
     "day": "Saturdays",
     "episodes": 12,
     "studio": [
@@ -2881,14 +3163,18 @@ const AnimeList = [
       ],
       "character_design": [
         "다이도우지 미호"
+      ],
+      "composer": [
+        "코니시 료"
       ]
     }
   },
   {
     "id": 62164,
+    "year": 2026,
     "title": "아카네 이야기",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/아카네 이야기.webp",
+    "thumbnail": "image/animeimg/2026/Q2/아카네 이야기.webp",
     "day": "Saturdays",
     "episodes": 0,
     "studio": [
@@ -2907,14 +3193,18 @@ const AnimeList = [
         "타나카 키이",
         "닛타 야스나리",
         "카가와 히사시"
+      ],
+      "composer": [
+        "이즈츠 아키오"
       ]
     }
   },
   {
     "id": 62001,
+    "year": 2026,
     "title": "황천의 츠가이",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/황천의 츠가이.webp",
+    "thumbnail": "image/animeimg/2026/Q2/황천의 츠가이.webp",
     "day": "Saturdays",
     "episodes": 24,
     "studio": [
@@ -2929,14 +3219,18 @@ const AnimeList = [
       ],
       "character_design": [
         "아라이 노부히로"
+      ],
+      "composer": [
+        "스에히로 켄이치로"
       ]
     }
   },
   {
     "id": 62048,
+    "year": 2026,
     "title": "마오",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/마오.webp",
+    "thumbnail": "image/animeimg/2026/Q2/마오.webp",
     "day": "Saturdays",
     "episodes": 0,
     "studio": [
@@ -2954,14 +3248,18 @@ const AnimeList = [
         "리쿠 린",
         "사토 토시코",
         "카타야마 마나부"
+      ],
+      "composer": [
+        "카네마츠 슈"
       ]
     }
   },
   {
     "id": 61443,
+    "year": 2026,
     "title": "춘하추동 대행자 봄의 춤",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/춘하추동 대행자 봄의 춤.webp",
+    "thumbnail": "image/animeimg/2026/Q2/춘하추동 대행자 봄의 춤.webp",
     "day": "Sundays",
     "episodes": 14,
     "studio": [
@@ -2977,14 +3275,18 @@ const AnimeList = [
       "character_design": [
         "후루하시 카즈히로",
         "토리이 나미코"
+      ],
+      "composer": [
+        "우시오 켄스케"
       ]
     }
   },
   {
     "id": 62913,
+    "year": 2026,
     "title": "니디 걸 오버도즈",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/니디 걸 오버도즈.webp",
+    "thumbnail": "image/animeimg/2026/Q2/니디 걸 오버도즈.webp",
     "day": "Sundays",
     "episodes": 13,
     "studio": [
@@ -3006,14 +3308,20 @@ const AnimeList = [
         "簡延軒",
         "리오",
         "ALBACROW"
+      ],
+      "composer": [
+        "Aiobahn +81",
+        "하라구치 사스케",
+        "DÉ DÉ MOUSE"
       ]
     }
   },
   {
     "id": 61501,
+    "year": 2026,
     "title": "카난 님은 초보 악마",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/카난 님은 초보 악마.webp",
+    "thumbnail": "image/animeimg/2026/Q2/카난 님은 초보 악마.webp",
     "day": "Sundays",
     "episodes": 12,
     "studio": [
@@ -3029,14 +3337,18 @@ const AnimeList = [
       "character_design": [
         "미나가와 아카리",
         "시바타 치사"
+      ],
+      "composer": [
+        "무츠키 슈헤이"
       ]
     }
   },
   {
     "id": 62050,
+    "year": 2026,
     "title": "신의 정원이 딸린 쿠스노키 저택",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/신의 정원이 딸린 쿠스노키 저택.webp",
+    "thumbnail": "image/animeimg/2026/Q2/신의 정원이 딸린 쿠스노키 저택.webp",
     "day": "Sundays",
     "episodes": 12,
     "studio": [
@@ -3053,14 +3365,18 @@ const AnimeList = [
         "이노우에 유코",
         "노마 치카코",
         "ox"
+      ],
+      "composer": [
+        "R・O・N"
       ]
     }
   },
   {
     "id": 62018,
+    "year": 2026,
     "title": "다다미 한 장짜리 방 만끽 생활",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/다다미 한 장짜리 방 만끽 생활.webp",
+    "thumbnail": "image/animeimg/2026/Q2/다다미 한 장짜리 방 만끽 생활.webp",
     "day": "Sundays",
     "episodes": 11,
     "studio": [
@@ -3078,14 +3394,18 @@ const AnimeList = [
         "하라다 미네후미",
         "야부타 유키",
         "사키구치 사오리"
+      ],
+      "composer": [
+        "MONACA"
       ]
     }
   },
   {
     "id": 63352,
+    "year": 2026,
     "title": "부탁해 아이프리",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/부탁해 아이프리.webp",
+    "thumbnail": "image/animeimg/2026/Q2/부탁해 아이프리.webp",
     "day": "Sundays",
     "episodes": 0,
     "studio": [
@@ -3102,14 +3422,18 @@ const AnimeList = [
       ],
       "character_design": [
         "니이 마나부"
+      ],
+      "composer": [
+        "모리 이즈미"
       ]
     }
   },
   {
     "id": 59983,
+    "year": 2026,
     "title": "지팡이와 검의 위스토리아 Season2",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/지팡이와 검의 위스토리아 Season2.webp",
+    "thumbnail": "image/animeimg/2026/Q2/지팡이와 검의 위스토리아 Season2.webp",
     "day": "Sundays",
     "episodes": 0,
     "studio": [
@@ -3126,14 +3450,18 @@ const AnimeList = [
       ],
       "character_design": [
         "오노 사야카"
+      ],
+      "composer": [
+        "하야시 유키"
       ]
     }
   },
   {
     "id": 60055,
+    "year": 2026,
     "title": "요자쿠라 일가의 대작전 제2기",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/요자쿠라 일가의 대작전 제2기.webp",
+    "thumbnail": "image/animeimg/2026/Q2/요자쿠라 일가의 대작전 제2기.webp",
     "day": "Sundays",
     "episodes": 0,
     "studio": [
@@ -3150,14 +3478,18 @@ const AnimeList = [
       ],
       "character_design": [
         "타카하시 미즈키"
+      ],
+      "composer": [
+        "후지모토 코지"
       ]
     }
   },
   {
     "id": 58877,
+    "year": 2026,
     "title": "다이아몬드 에이스 actII -Second Season-",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/다이아몬드 에이스 actII -Second Season-.webp",
+    "thumbnail": "image/animeimg/2026/Q2/다이아몬드 에이스 actII -Second Season-.webp",
     "day": "Sundays",
     "episodes": 0,
     "studio": [
@@ -3172,14 +3504,18 @@ const AnimeList = [
       ],
       "character_design": [
         "쇼우지 야스카즈"
+      ],
+      "composer": [
+        "햣코쿠 하지메"
       ]
     }
   },
   {
     "id": 62342,
+    "year": 2026,
     "title": "메이드 양은 먹기만 할 뿐",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/메이드 양은 먹기만 할 뿐.webp",
+    "thumbnail": "image/animeimg/2026/Q2/메이드 양은 먹기만 할 뿐.webp",
     "day": "Sundays",
     "episodes": 12,
     "studio": [
@@ -3196,14 +3532,18 @@ const AnimeList = [
       ],
       "character_design": [
         "아베 치아키"
+      ],
+      "composer": [
+        "키타가와 카츠토시"
       ]
     }
   },
   {
     "id": 63667,
+    "year": 2026,
     "title": "마법의 자매 루루토리리",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/마법의 자매 루루토리리.webp",
+    "thumbnail": "image/animeimg/2026/Q2/마법의 자매 루루토리리.webp",
     "day": "Sundays",
     "episodes": 0,
     "studio": [
@@ -3220,14 +3560,18 @@ const AnimeList = [
         "토리이 나미코",
         "니시키 히로노",
         "소데야마 아사미"
+      ],
+      "composer": [
+        "ha-j"
       ]
     }
   },
   {
     "id": 21,
+    "year": 2026,
     "title": "원피스",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/원피스.webp",
+    "thumbnail": "image/animeimg/2026/Q2/원피스.webp",
     "day": "Sundays",
     "episodes": 0,
     "studio": [
@@ -3245,14 +3589,19 @@ const AnimeList = [
         "류즈광",
         "타카하시 나루미",
         "이이다 하나오"
+      ],
+      "composer": [
+        "타나카 코헤이",
+        "하마구치 시로"
       ]
     }
   },
   {
     "id": 62171,
+    "year": 2026,
     "title": "검은 고양이와 마녀의 교실",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/검은 고양이와 마녀의 교실.webp",
+    "thumbnail": "image/animeimg/2026/Q2/검은 고양이와 마녀의 교실.webp",
     "day": "Sundays",
     "episodes": 0,
     "studio": [
@@ -3269,14 +3618,18 @@ const AnimeList = [
         "오노다 타카유키",
         "니이즈마 다이스케",
         "하시모토 타카시"
+      ],
+      "composer": [
+        "R・O・N"
       ]
     }
   },
   {
     "id": 62983,
+    "year": 2026,
     "title": "마리카쨩의 호감도는 망가져있다",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/마리카쨩의 호감도는 망가져있다.webp",
+    "thumbnail": "image/animeimg/2026/Q2/마리카쨩의 호감도는 망가져있다.webp",
     "day": "Anomaly",
     "episodes": 8,
     "studio": [
@@ -3291,14 +3644,18 @@ const AnimeList = [
       ],
       "character_design": [
         "나스 레이나"
+      ],
+      "composer": [
+        ""
       ]
     }
   },
   {
     "id": 63248,
+    "year": 2026,
     "title": "큰 여자는 좋아하세요",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/큰 여자는 좋아하세요.webp",
+    "thumbnail": "image/animeimg/2026/Q2/큰 여자는 좋아하세요.webp",
     "day": "Anomaly",
     "episodes": 0,
     "studio": [
@@ -3313,14 +3670,18 @@ const AnimeList = [
       ],
       "character_design": [
         "아시타카 나가에"
+      ],
+      "composer": [
+        ""
       ]
     }
   },
   {
     "id": 63310,
+    "year": 2026,
     "title": "음옥단지",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/음옥단지.webp",
+    "thumbnail": "image/animeimg/2026/Q2/음옥단지.webp",
     "day": "Anomaly",
     "episodes": 12,
     "studio": [
@@ -3336,14 +3697,18 @@ const AnimeList = [
       "character_design": [
         "니시모토 신고",
         "조야마 유이"
+      ],
+      "composer": [
+        "카시와기 루자린"
       ]
     }
   },
   {
     "id": 63304,
+    "year": 2026,
     "title": "마물을 먹는 모험가 ~나만 마물을 먹고 강해진다~",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/마물을 먹는 모험가 ~나만 마물을 먹고 강해진다~.webp",
+    "thumbnail": "image/animeimg/2026/Q2/마물을 먹는 모험가 ~나만 마물을 먹고 강해진다~.webp",
     "day": "Fridays",
     "episodes": 0,
     "studio": [
@@ -3356,14 +3721,18 @@ const AnimeList = [
       "adaptor": [],
       "character_design": [
         "카와쿠"
+      ],
+      "composer": [
+        "onoken"
       ]
     }
   },
   {
     "id": 57779,
+    "year": 2026,
     "title": "도로헤도로 시즌 2",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/도로헤도로 시즌 2.webp",
+    "thumbnail": "image/animeimg/2026/Q2/도로헤도로 시즌 2.webp",
     "day": "Web",
     "episodes": 11,
     "studio": [
@@ -3380,14 +3749,18 @@ const AnimeList = [
         "키시 토모히로",
         "키시 토모히로",
         "카네다 리코"
+      ],
+      "composer": [
+        "(K)NoW_NAME"
       ]
     }
   },
   {
     "id": 63572,
+    "year": 2026,
     "title": "댄덜라이언",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/댄덜라이언.webp",
+    "thumbnail": "image/animeimg/2026/Q2/댄덜라이언.webp",
     "day": "Web",
     "episodes": 7,
     "studio": [
@@ -3402,14 +3775,18 @@ const AnimeList = [
       ],
       "character_design": [
         "아사리 아이"
+      ],
+      "composer": [
+        "하야시 유키"
       ]
     }
   },
   {
     "id": 62155,
+    "year": 2026,
     "title": "경멸하는 표정으로 팬티를 보여다오 R(리턴즈)",
     "quarter": "2분기",
-    "thumbnail": "image/animeimg/Q2/경멸하는 표정으로 팬티를 보여다오 R(리턴즈).webp",
+    "thumbnail": "image/animeimg/2026/Q2/경멸하는 표정으로 팬티를 보여다오 R(리턴즈).webp",
     "day": "Web",
     "episodes": 0,
     "studio": [
@@ -3422,7 +3799,12 @@ const AnimeList = [
       "adaptor": [
         "마에카와 아츠시"
       ],
-      "character_design": []
+      "character_design": [
+
+      ],
+      "composer": [
+        ""
+      ]
     }
   }
 ];
