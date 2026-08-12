@@ -1,4 +1,4 @@
-const AnimeList = [
+const AnimeList_2026 = [
   {
     "id": 61886,
     "year": 2026,

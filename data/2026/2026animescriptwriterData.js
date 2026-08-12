@@ -1,4 +1,4 @@
-const scriptwriterData = [
+const scriptwriterData_2026 = [
   {
     "id": 61830,
     "quarter": "1분기",

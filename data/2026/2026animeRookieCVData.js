@@ -1,4 +1,4 @@
-const RookieCVData = {
+const RookieCVData_2026 = {
   "치카사다 츠키노": {
     "name": "치카사다 츠키노",
     "debutYear": 2013,

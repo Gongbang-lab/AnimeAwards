@@ -1,4 +1,4 @@
-const CharacterVoiceData = {
+const CharacterVoiceData_2026 = {
   "토키 슌이치": {
     "name": "토키 슌이치",
     "cvimg": "image/cvimg/토키 슌이치.webp",

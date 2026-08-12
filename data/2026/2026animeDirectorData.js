@@ -1,4 +1,4 @@
-const animeDirectorData = [
+const animeDirectorData_2026 = [
   {
     "director": "오이자키 후미토시",
     "director_img": "image/staff/director/오이자키 후미토시.webp",

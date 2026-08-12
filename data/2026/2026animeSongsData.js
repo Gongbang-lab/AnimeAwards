@@ -1,4 +1,4 @@
-const AnimeSongs =
+const AnimeSongs_2026 =
 [
   {
     "id": 61886,

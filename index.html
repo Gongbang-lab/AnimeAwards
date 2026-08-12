@@ -151,8 +151,32 @@
 
 </div><!-- /content-area -->
 
+<!-- 1. 연도 목록 매니페스트 -->
+<script src="./data/manifest.js"></script>
+
+<!-- 2. 상 카테고리 정의 (연도 무관) -->
 <script src="./data/awardData.js"></script>
-<script src="./data/animeData.js"></script>
+
+<!-- 3. 현재 로드 가능한 모든 연도의 원본 데이터 -->
+<script src="./data/2026/2026animeData.js"></script>
+<script src="./data/2026/2026animeCharacterData.js"></script>
+<script src="./data/2026/2026animeCVData.js"></script>
+<script src="./data/2026/2026animeOSTData.js"></script>
+<script src="./data/2026/2026animeSongsData.js"></script>
+<script src="./data/2026/2026animeStudioData.js"></script>
+<script src="./data/2026/2026animeDirectorData.js"></script>
+<script src="./data/2026/2026animeAdaptorData.js"></script>
+<script src="./data/2026/2026animeRookieCVData.js"></script>
+<script src="./data/2026/2026animeEPData.js"></script>
+<script src="./data/2026/2026animeMemeData.js"></script>
+<script src="./data/2026/2026animeCinemaData.js"></script>
+<script src="./data/2026/2026animescriptwriterData.js"></script>
+<!-- 나중에 2027년 폴더 생기면 여기 아래에 같은 방식으로 13줄 추가 -->
+
+<!-- 4. 별칭 매핑 (반드시 데이터 로드 뒤, 로직 스크립트 앞) -->
+<script src="./data/resolveYear.js"></script>
+
+<!-- 5. 페이지 로직 -->
 <script src="./main.js"></script>
 <script type="module" src="./firebase_service.js"></script>
 </body>

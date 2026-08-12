@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>애니메이션 수집기 (시네마 대응 버전 - AniList API)</title>
+  <style>
+    :root { --primary: #4a5568; --secondary: #38a169; --bg: #f5f7fa; }
+    body { font-family: 'Pretendard', sans-serif; padding: 20px; background: var(--bg); color: #333; line-height: 1.6; }
+    .container { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.5fr; gap: 20px; }
+    .section { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+    h3 { margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; font-size: 18px; }
+    
+    .search-input { width: 100%; padding: 12px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 16px; margin-bottom: 10px; box-sizing: border-box; }
+    .btn-search { width: 100%; background: var(--primary); color: white; padding: 12px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; margin-bottom: 20px; }
+    .search-item { display: flex; gap: 12px; padding: 10px; border-bottom: 1px solid #edf2f7; cursor: pointer; align-items: center; }
+    .search-item:hover { background: #f8fafc; }
+    .search-item img { width: 45px; height: 63px; border-radius: 4px; object-fit: cover; }
+
+    .edit-grid { display: grid; gap: 10px; margin-bottom: 20px; }
+    .edit-row { display: flex; flex-direction: column; gap: 5px; }
+    .edit-row label { font-size: 12px; font-weight: bold; color: #718096; }
+    .edit-row input, .edit-row select { padding: 8px; border: 1px solid #cbd5e0; border-radius: 4px; font-size: 14px; background: white; }
+
+    .quarter-check-group { display: flex; gap: 10px; flex-wrap: wrap; padding: 8px; border: 1px solid #cbd5e0; border-radius: 4px; background: white; }
+    .quarter-check-item { display: flex; align-items: center; gap: 4px; font-weight: normal; font-size: 13px; color: #333; cursor: pointer; }
+    
+    .preview-header { display: flex; gap: 15px; margin-bottom: 20px; align-items: flex-start; }
+    .preview-header img { width: 100px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+
+    #codeOutput { width: 100%; height: 280px; font-family: 'Fira Code', monospace; background: #1a202c; color: #e2e8f0; padding: 15px; border-radius: 8px; border: none; box-sizing: border-box; font-size: 13px; margin-top: 10px; }
+    .btn-copy { width: 100%; background: var(--secondary); color: white; padding: 12px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; margin-top: 10px; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="section">
+    <h3>🔎 애니메이션 검색 (AniList)</h3>
+    <input type="text" id="query" class="search-input" placeholder="제목 또는 MAL ID 입력" onkeypress="if(event.keyCode==13) searchAnime()">
+    <button class="btn-search" onclick="searchAnime()">조사하기</button>
+    <div id="status" style="font-size: 13px; color: #3182ce; margin-bottom: 10px;"></div>
+    <div id="searchResult"></div>
+  </div>
+
+  <div class="section">
+    <h3>📄 데이터 편집 & 추출</h3>
+    <div id="editArea" style="display:none;">
+      <div class="preview-header">
+        <img id="p-img" src="">
+        <div style="flex:1;">
+          <div class="edit-row">
+            <label>작품 제목 (한국어)</label>
+            <input type="text" id="in-title" placeholder="제목 입력 시 썸네일 경로 자동생성" oninput="updateJSON()">
+          </div>
+          <div style="display:grid; grid-template-columns: 80px 1.5fr 1fr; gap:10px; margin-top:10px;">
+            <div class="edit-row">
+              <label>연도</label>
+              <input type="number" id="in-year" oninput="updateJSON()">
+            </div>
+            <div class="edit-row">
+              <label>분기 선택 (연속 방영 시 다중 선택)</label>
+              <div class="quarter-check-group" id="in-quarter-group">
+                <label class="quarter-check-item"><input type="checkbox" class="quarter-check" value="1분기" onchange="updateJSON()"> 1분기</label>
+                <label class="quarter-check-item"><input type="checkbox" class="quarter-check" value="2분기" onchange="updateJSON()"> 2분기</label>
+                <label class="quarter-check-item"><input type="checkbox" class="quarter-check" value="3분기" onchange="updateJSON()"> 3분기</label>
+                <label class="quarter-check-item"><input type="checkbox" class="quarter-check" value="4분기" onchange="updateJSON()"> 4분기</label>
+              </div>
+            </div>
+            <div class="edit-row">
+              <label>요일 (또는 Cinema)</label>
+              <input type="text" id="in-day" oninput="updateJSON()">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="edit-grid">
+        <div class="edit-row"><label>제작사 (쉼표 구분)</label><input type="text" id="in-studio" oninput="updateJSON()"></div>
+        <div class="edit-row"><label>감독 (쉼표 구분)</label><input type="text" id="in-director" oninput="updateJSON()"></div>
+        <div class="edit-row"><label id="label-writer">각색가 (쉼표 구분)</label><input type="text" id="in-writer" oninput="updateJSON()"></div>
+        <div class="edit-row"><label>캐릭터 디자인 (쉼표 구분)</label><input type="text" id="in-char" oninput="updateJSON()"></div>
+        <div class="edit-row"><label>음악 (쉼표 구분)</label><input type="text" id="in-composer" oninput="updateJSON()"></div>
+        <input type="hidden" id="in-id"> 
+      </div>
+
+      <textarea id="codeOutput" readonly></textarea>
+      <button class="btn-copy" onclick="copyCode()">JSON 코드 복사하기</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  let currentAnime = {}; 
+
+  // AniList GraphQL 공통 fetch 함수
+  async function fetchAniList(query, variables) {
+    const resp = await fetch('https://graphql.anilist.co', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+      },
+      body: JSON.stringify({ query, variables })
+    });
+    if (!resp.ok) throw new Error("Network Error");
+    return (await resp.json()).data;
+  }
+
+  async function searchAnime() {
+    const query = document.getElementById('query').value.trim();
+    if(!query) return;
+
+    // 숫자로만 이루어져 있다면 MAL ID로 간주하고 바로 상세 검색으로 넘어감
+    if (/^\d+$/.test(query)) { 
+      getAnimeDetailByMalId(parseInt(query)); 
+      return; 
+    }
+    
+    document.getElementById('status').innerText = "🔍 검색 중...";
+    const graphqlQuery = `
+      query ($search: String) {
+        Page(page: 1, perPage: 8) {
+          media(search: $search, type: ANIME) {
+            id
+            idMal
+            title { romaji native }
+            format
+            coverImage { large }
+          }
+        }
+      }
+    `;
+
+    try {
+      const data = await fetchAniList(graphqlQuery, { search: query });
+      const results = data.Page.media;
+      
+      document.getElementById('searchResult').innerHTML = results.map(anime => `
+        <div class="search-item" onclick="getAnimeDetail(${anime.id})">
+          <img src="${anime.coverImage.large}">
+          <div>
+            <div style="font-weight:bold; font-size:14px;">${anime.title.native || anime.title.romaji} [${anime.format || 'TV'}]</div>
+            <div style="font-size:12px; color:#718096;">MAL ID: ${anime.idMal || 'N/A'}</div>
+          </div>
+        </div>
+      `).join('');
+      document.getElementById('status').innerText = `✅ 검색 완료`;
+    } catch (e) { 
+      document.getElementById('status').innerText = "❌ 검색 에러"; 
+    }
+  }
+
+  // MAL ID를 기반으로 상세 정보를 가져오는 함수
+  async function getAnimeDetailByMalId(malId) {
+    document.getElementById('status').innerText = `⏳ MAL ID로 데이터 분석 중...`;
+    const graphqlQuery = `
+      query ($idMal: Int) {
+        Media(idMal: $idMal, type: ANIME) {
+          id
+          idMal
+          title { romaji native }
+          format
+          source
+          episodes
+          seasonYear
+          startDate { year month day }
+          endDate { year month day }
+          coverImage { extraLarge }
+          studios(isMain: true) { nodes { name } }
+          staff(sort: [RELEVANCE, ID_DESC]) {
+            edges {
+              role
+              node { name { full } }
+            }
+          }
+        }
+      }
+    `;
+    try {
+      const data = await fetchAniList(graphqlQuery, { idMal: malId });
+      if(!data.Media) throw new Error();
+      processAnimeData(data.Media);
+    } catch (e) { document.getElementById('status').innerText = "❌ MAL ID 검색 실패. 유효하지 않은 ID이거나 AniList에 매칭되지 않습니다."; }
+  }
+
+  // 검색 결과 클릭 시 AniList 내부 ID로 상세 정보를 가져오는 함수
+  async function getAnimeDetail(id) {
+    document.getElementById('status').innerText = `⏳ 데이터 분석 중...`;
+    const graphqlQuery = `
+      query ($id: Int) {
+        Media(id: $id, type: ANIME) {
+          id
+          idMal
+          title { romaji native }
+          format
+          source
+          episodes
+          seasonYear
+          startDate { year month day }
+          endDate { year month day }
+          coverImage { extraLarge }
+          studios(isMain: true) { nodes { name } }
+          staff(sort: [RELEVANCE, ID_DESC]) {
+            edges {
+              role
+              node { name { full } }
+            }
+          }
+        }
+      }
+    `;
+    try {
+      const data = await fetchAniList(graphqlQuery, { id: id });
+      processAnimeData(data.Media);
+    } catch (e) { document.getElementById('status').innerText = "❌ 상세 정보 에러"; }
+  }
+
+  // 가져온 GraphQL 데이터를 기존 UI에 매핑하는 핵심 함수
+  function processAnimeData(data) {
+    const isOriginal = data.source === "ORIGINAL";
+    const isMovie = data.format === "MOVIE";
+
+    document.getElementById('label-writer').innerText = isOriginal ? "각본가 (Original)" : "시리즈 구성 (Adaptor)";
+    
+    const staffObj = { director: [], writer: [], character_design: [], composer: [] };
+    
+    // AniList의 Role은 텍스트(문자열)로 제공되므로 키워드로 분류
+    if (data.staff && data.staff.edges) {
+      data.staff.edges.forEach(edge => {
+        const role = (edge.role || "").toLowerCase();
+        const name = edge.node.name.full;
+        
+        if (role.includes('director') && !role.includes('animation') && !role.includes('sound') && !role.includes('art') && !role.includes('cg') && !role.includes('photography')) {
+          if (!staffObj.director.includes(name)) staffObj.director.push(name);
+        }
+        if (role.includes('character design')) {
+          if (!staffObj.character_design.includes(name)) staffObj.character_design.push(name);
+        }
+        if (role === 'music' || role.includes('composer')) {
+          if (!staffObj.composer.includes(name)) staffObj.composer.push(name);
+        }
+        
+        if (isOriginal) { 
+          if (role.includes('script')) {
+            if (!staffObj.writer.includes(name)) staffObj.writer.push(name);
+          }
+        } else { 
+          if (role.includes('series composition')) {
+            if (!staffObj.writer.includes(name)) staffObj.writer.push(name);
+          }
+        }
+      });
+    }
+
+    document.getElementById('editArea').style.display = "block";
+    document.getElementById('p-img').src = data.coverImage.extraLarge;
+    // MAL ID가 있으면 사용하고, 없다면 AniList ID로 대체
+    document.getElementById('in-id').value = data.idMal || data.id; 
+    document.getElementById('in-title').value = ""; 
+
+    // 연도 파싱
+    const parsedYear = data.seasonYear || (data.startDate && data.startDate.year ? data.startDate.year : "");
+    document.getElementById('in-year').value = parsedYear;
+
+    // 분기 체크박스 초기화 및 자동 선택 포맷으로 변환
+    document.querySelectorAll('.quarter-check').forEach(cb => cb.checked = false);
+    const aired = {};
+    if (data.startDate && data.startDate.year) {
+      aired.from = `${data.startDate.year}-${String(data.startDate.month || 1).padStart(2, '0')}-${String(data.startDate.day || 1).padStart(2, '0')}`;
+    }
+    if (data.endDate && data.endDate.year) {
+      aired.to = `${data.endDate.year}-${String(data.endDate.month || 1).padStart(2, '0')}-${String(data.endDate.day || 1).padStart(2, '0')}`;
+    }
+    autoSelectQuarters(aired);
+    
+    // 요일 계산 로직
+    let dayOfWeek = "Unknown";
+    if (data.startDate && data.startDate.year && data.startDate.month && data.startDate.day) {
+        const d = new Date(data.startDate.year, data.startDate.month - 1, data.startDate.day);
+        const days = ['Sundays', 'Mondays', 'Tuesdays', 'Wednesdays', 'Thursdays', 'Fridays', 'Saturdays'];
+        dayOfWeek = days[d.getDay()];
+    }
+
+    // 영화면 Cinema, 아니면 계산된 요일
+    document.getElementById('in-day').value = isMovie ? "Cinema" : dayOfWeek;
+    
+    // 제작사 리스트
+    const studios = data.studios && data.studios.nodes ? data.studios.nodes.map(n => n.name) : [];
+    document.getElementById('in-studio').value = studios.join(', ');
+    
+    // 스태프 데이터 바인딩
+    document.getElementById('in-director').value = staffObj.director.join(', ');
+    document.getElementById('in-writer').value = staffObj.writer.join(', ');
+    document.getElementById('in-char').value = staffObj.character_design.join(', ');
+    document.getElementById('in-composer').value = staffObj.composer.join(', ');
+
+    currentAnime = { 
+      episodes: data.episodes || 0, 
+      isOriginal: isOriginal,
+      type: data.format === "MOVIE" ? "Movie" : "TV" 
+    };
+    
+    updateJSON();
+    document.getElementById('status').innerText = `✅ 로드 완료. 연도 및 분기가 자동 선택되었으니 확인 후 제목을 입력하세요.`;
+  }
+  
+  function monthToQuarter(month) {
+    return Math.ceil(month / 3);
+  }
+
+  function autoSelectQuarters(aired) {
+    if (!aired || !aired.from) return; 
+
+    const fromDate = new Date(aired.from);
+    const fromYear = fromDate.getFullYear();
+    const startQ = monthToQuarter(fromDate.getMonth() + 1);
+
+    let endQ = startQ;
+    if (aired.to) {
+      const toDate = new Date(aired.to);
+      const toYear = toDate.getFullYear();
+      if (toYear === fromYear) {
+        endQ = monthToQuarter(toDate.getMonth() + 1);
+      }
+    }
+
+    for (let q = startQ; q <= endQ; q++) {
+      const cb = document.querySelector(`.quarter-check[value="${q}분기"]`);
+      if (cb) cb.checked = true;
+    }
+  }
+
+  function updateJSON() {
+    const title = document.getElementById('in-title').value.trim();
+    const year = parseInt(document.getElementById('in-year').value) || 0; 
+
+    const selectedQuarters = Array.from(document.querySelectorAll('.quarter-check:checked')).map(cb => cb.value);
+    const quarter = selectedQuarters.join(', ');
+    const qKey = selectedQuarters.length ? selectedQuarters[0].charAt(0) : '1';
+
+    const isMovie = currentAnime.type === "Movie";
+    
+    // 썸네일 경로에 year 추가 반영
+    const autoThumbnail = title 
+      ? (isMovie ? `image/cinema/${title}.webp` : `image/animeimg/${year}/Q${qKey}/${title}.webp`)
+      : "";
+
+    const writerField = currentAnime.isOriginal ? "scriptwriter" : "adaptor";
+    const parseList = (id) => document.getElementById(id).value.split(',').map(s => s.trim()).filter(s => s);
+
+    const finalObj = {
+      id: parseInt(document.getElementById('in-id').value) || 0,
+      title: title,
+      year: year,
+      quarter: quarter,
+      thumbnail: autoThumbnail,
+      day: document.getElementById('in-day').value,
+      episodes: currentAnime.episodes || 0,
+      studio: parseList('in-studio'),
+      staff: {
+        director: parseList('in-director'),
+        [writerField]: parseList('in-writer'),
+        character_design: parseList('in-char'),
+        composer: parseList('in-composer') 
+      }
+    };
+
+    document.getElementById('codeOutput').value = JSON.stringify(finalObj, null, 2) + ",";
+  }
+
+  async function copyCode() {
+    const area = document.getElementById('codeOutput');
+    const btn = document.querySelector('.btn-copy');
+    try {
+        await navigator.clipboard.writeText(area.value);
+        const originalText = btn.innerText;
+        btn.innerText = "✅ 복사 완료!";
+        btn.style.background = "#2f855a";
+        setTimeout(() => {
+            btn.innerText = originalText;
+            btn.style.background = "";
+        }, 2000);
+    } catch (err) {
+        area.select();
+        document.execCommand('copy');
+        alert("코드가 복사되었습니다!");
+    }
+  }
+</script>
+</body>
+</html>

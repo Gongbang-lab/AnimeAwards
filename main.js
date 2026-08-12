@@ -4,7 +4,7 @@ const top3Area = document.getElementById("top3-area");
 // ──────────────────────────────────────────────
 // 시즌 선택 (연도 카드 → 분기 카드)
 // ──────────────────────────────────────────────
-const YEARS = [...new Set(AnimeList.map(a => a.year))].sort((a, b) => a - b);
+const YEARS = [...AvailableYears].sort((a, b) => a - b);
 const QUARTERS = [
     { key: "1분기", label: "1분기", sub: "1 - 3월" },
     { key: "2분기", label: "2분기", sub: "4 - 6월" },

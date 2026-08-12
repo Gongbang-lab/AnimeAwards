@@ -1,4 +1,4 @@
-const cinemaData =
+const cinemaData_2026 =
 [
 {
   "id": 60610,
