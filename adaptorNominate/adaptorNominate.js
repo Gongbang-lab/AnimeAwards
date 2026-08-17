@@ -298,9 +298,10 @@ function openAwardPopup() {
     document.getElementById("winner-modal").classList.remove("hidden");
     fireConfetti();
 
-    const results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
-    results[nominateState.awardName] = { title: winner.title, thumbnail: winner.thumbnail };
-    localStorage.setItem("anime_awards_result", JSON.stringify(results));
+    ResultStorage.saveOne(nominateState.awardName, {
+        title: winner.title,
+        thumbnail: winner.thumbnail
+    });
 
     if (window.submitSingleAwardToDB) {
         window.submitSingleAwardToDB(nominateState.awardName);

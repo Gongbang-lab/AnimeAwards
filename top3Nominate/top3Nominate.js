@@ -2,7 +2,9 @@ const state = {
     step: 1,
     selectedCandidates: [], 
     finalTop3: [],         
-    allAnime: (typeof AnimeList !== 'undefined') ? AnimeList : [] 
+    allAnime: (typeof AnimeList !== 'undefined' && typeof SeasonFilter !== 'undefined')
+        ? SeasonFilter.filterAnimeList(AnimeList)
+        : (typeof AnimeList !== 'undefined' ? AnimeList : [])
 };
 
 const DAY_LABELS = { "Mondays":"월요일", "Tuesdays":"화요일", "Wednesdays":"수요일", "Thursdays":"목요일", "Fridays":"금요일", "Saturdays":"토요일", "Sundays":"일요일", "Anomaly":"변칙 편성", "Web":"웹" };
@@ -71,10 +73,12 @@ function renderStep1(searchTerm = "") {
     // 1. 데이터 필터링 (제목 또는 제작사)
     let filteredData = state.allAnime;
     if (isSearching) {
-        filteredData = state.allAnime.filter(item => 
-            item.title.toLowerCase().includes(lowerTerm) || 
-            (item.studio && item.studio.toLowerCase().includes(lowerTerm))
-        );
+        filteredData = state.allAnime.filter(item => {
+            const matchTitle = item.title.toLowerCase().includes(lowerTerm);
+            const matchStudio = Array.isArray(item.studio) && 
+                item.studio.some(s => s.toLowerCase().includes(lowerTerm));
+            return matchTitle || matchStudio;
+        });
     }
 
     if (filteredData.length === 0) {
@@ -158,75 +162,6 @@ function renderStep1(searchTerm = "") {
 // ==========================================
 // STEP 1: 아코디언 리스트 생성 (CSS 100% 매칭)
 // ==========================================
-function initStep1() {
-    state.step = 1;
-    document.getElementById('step-title').textContent = "올해의 시리즈 부문";
-    document.getElementById('next-btn').textContent = "다음 단계";
-    document.getElementById('rank-status').classList.add('hidden');
-    
-    const display = document.getElementById('main-display');
-    display.innerHTML = ""; 
-
-    // 데이터 그룹화
-    const grouped = {};
-    state.allAnime.forEach(item => {
-        const q = item.quarter || "기타 분기";
-        if (!grouped[q]) grouped[q] = {};
-        if (!grouped[q][item.day]) grouped[q][item.day] = [];
-        grouped[q][item.day].push(item);
-    });
-
-    // 오름차순 정렬을 위해 .reverse()를 제거하고 정렬만 수행
-    // 예: 2024년 1분기 -> 2024년 2분기 순으로 정렬됩니다.
-    Object.keys(grouped).sort().forEach(q => {
-        const section = document.createElement('div');
-        section.className = 'quarter-section';
-        
-        const qBtn = document.createElement('button');
-        qBtn.className = 'quarter-btn';
-        qBtn.innerHTML = `<span>${q}</span> <span>▼</span>`;
-        
-        const qWrapper = document.createElement('div');
-        qWrapper.className = 'hidden'; 
-
-        qBtn.onclick = () => {
-            qBtn.classList.toggle('active');
-            qWrapper.classList.toggle('hidden');
-            qBtn.querySelector('span:last-child').textContent = qWrapper.classList.contains('hidden') ? '▼' : '▲';
-        };
-
-        // 요일 버튼 및 카드 그리드
-        Object.keys(grouped[q]).forEach(day => {
-            const dBtn = document.createElement('button');
-            dBtn.className = 'day-btn';
-            dBtn.innerHTML = `<span>${DAY_LABELS[day] || day}</span> <span>+</span>`;
-            
-            const dContent = document.createElement('div');
-            dContent.className = 'day-content hidden'; 
-
-            grouped[q][day].forEach(anime => {
-                const card = createCard(anime, false);
-                dContent.appendChild(card);
-            });
-
-            dBtn.onclick = () => {
-                dBtn.classList.toggle('active');
-                dContent.classList.toggle('hidden');
-                dBtn.querySelector('span:last-child').textContent = dContent.classList.contains('hidden') ? '+' : '-';
-            };
-
-            qWrapper.appendChild(dBtn);
-            qWrapper.appendChild(dContent);
-        });
-
-        section.appendChild(qBtn);
-        section.appendChild(qWrapper);
-        display.appendChild(section);
-    });
-    
-    updatePreview();
-}
-
 // 공통 카드 생성 함수 (CSS 구조 완벽 일치)
 function createCard(anime, isStep2, searchTerm = "") {
     const isSelected = state.selectedCandidates.some(c => c.id === anime.id);
@@ -245,7 +180,7 @@ function createCard(anime, isStep2, searchTerm = "") {
         <img src="../${anime.thumbnail}" onerror="this.src='https://placehold.co/180x240?text=No+Image'" alt="${anime.title}">
         <div class="card-info">
             <div class="card-title">${displayTitle}</div>
-            <div class="card-studio">${anime.studio || '정보 없음'}</div>
+            <div class="card-studio">${Array.isArray(anime.studio) ? anime.studio.join(', ') : (anime.studio || '정보 없음')}</div>
         </div>
     `;
 
@@ -408,14 +343,9 @@ function showResult() {
 
 function saveToLocalStorage() {
     try {
-        // 기존 결과 불러오기 (없으면 빈 객체)
-        const currentResults = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
-        
-        // 현재 어워드 이름 (예: "2024 애니메이션 어워드" 등, 필요시 state에 추가 가능)
-        // 여기서는 기본값으로 "TOP3_Awards"를 사용합니다.
+        const currentResults = ResultStorage.getResults();   // ← 수정
         const awardName = "TOP3_Awards"; 
         
-        // 제공해주신 구조에 맞춰 데이터 매핑 (우수, 최우수, 대상 순서)
         const resultData = state.finalTop3.map((anime, idx) => ({
             rank: RANK_NAMES[idx],
             title: anime.title,
@@ -424,15 +354,13 @@ function saveToLocalStorage() {
 
         currentResults[awardName] = resultData;
         
-        // 데이터 저장
-        localStorage.setItem("anime_awards_result", JSON.stringify(currentResults));
+        ResultStorage.saveResults(currentResults);   // ← 수정
         console.log("결과가 성공적으로 저장되었습니다:", currentResults);
         
     } catch (error) {
         console.error("localStorage 저장 중 오류 발생:", error);
     }
 }
-
 
 function fireConfetti() {
     const duration = 3 * 1000;

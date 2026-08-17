@@ -336,14 +336,12 @@ function openAwardPopup() {
   if (!winner) return;
 
   // LocalStorage 저장
-  const results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
-  results[charState.awardName] = { 
+  ResultStorage.saveOne(charState.awardName, { 
     name: winner.name, 
     anime: winner.animeTitle, 
     thumbnail: winner.thumbnail,
     cv: winner.cv
-  };
-  localStorage.setItem("anime_awards_result", JSON.stringify(results));
+  });
 
   // 모달 내용 업데이트
   document.getElementById("modal-img").src = `../${winner.thumbnail}`;

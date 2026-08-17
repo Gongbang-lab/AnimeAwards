@@ -359,13 +359,13 @@ function saveData(winner) {
     const KEY = 'anime_awards_result';
     let data = JSON.parse(localStorage.getItem(KEY) || '{}');
     if (Array.isArray(data)) data = {}; 
-    data[state.AwardName] = { 
+    ResultStorage.saveOne(state.AwardName, { 
         title: winner.title, 
         thumbnail: winner.thumbnail, 
-        episodeNo: winner.episodeNo,      // 추가
-        episodeTitle: winner.episodeTitle, // 추가
+        episodeNo: winner.episodeNo,      
+        episodeTitle: winner.episodeTitle, 
         date: new Date().toISOString() 
-    };
+    });
     localStorage.setItem(KEY, JSON.stringify(data));
 }
 

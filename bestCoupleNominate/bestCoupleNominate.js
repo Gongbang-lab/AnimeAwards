@@ -323,12 +323,12 @@ async function saveAndGoMain() {
 
         // 이미지 병합 (260x378)
         const combinedImageBase64 = await createCombinedImage(path1, path2);
-        finalData[awardName] = {
+        ResultStorage.saveOne(awardName, {
             name1: winner.char1.name,
             name2: winner.char2.name,
             animeTitle: winner.animeTitle,
             img: combinedImageBase64
-        };
+        });
 
         // 전체 데이터 저장
         localStorage.setItem("anime_awards_result", JSON.stringify(finalData));

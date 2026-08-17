@@ -323,13 +323,11 @@ function openAwardModal(item) {
 }
 
 function saveWinnerToLocal(item) {
-    let results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
-    results[studioState.awardName] = {
+    ResultStorage.saveOne(studioState.awardName, {
         name: item.studio,
         thumbnail: item.studio_img,
         year: '2026'
-    };
-    localStorage.setItem("anime_awards_result", JSON.stringify(results));
+    });
     fireConfetti();
 
     if (window.submitSingleAwardToDB) {

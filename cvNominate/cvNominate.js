@@ -413,13 +413,11 @@ function openWinnerModal() {
 }
 
 function saveResult(winner) {
-    const results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
-    results[cvState.currentAward] = {
+    ResultStorage.saveOne(cvState.currentAward, {
         name: winner.name,
         thumbnail: winner.cvimg,
         works: winner.characters.map(c => c.charName).join(', ')
-    };
-    localStorage.setItem("anime_awards_result", JSON.stringify(results));
+    });
 }
 
 function closeModal(id) {

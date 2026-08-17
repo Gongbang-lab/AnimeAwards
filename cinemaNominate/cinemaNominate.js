@@ -90,14 +90,12 @@ function saveCinemaWinner() {
     const winner = cinemaState.selectedMovie;
     if (!winner) return;
 
-    const results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
-    results[cinemaState.awardName] = {
+    ResultStorage.saveOne(cinemaState.awardName, {
         id: winner.id,
         title: winner.title,
         thumbnail: winner.thumbnail,
         studio: winner.studio
-    };
-    localStorage.setItem("anime_awards_result", JSON.stringify(results));
+    });
 
     // ✅ Firebase DB 전송
     if (window.submitSingleAwardToDB) {

@@ -3806,5 +3806,276 @@ const AnimeList_2026 = [
         ""
       ]
     }
+  },
+  {
+  "id": 59193,
+  "title": "무직전생 Ⅲ ~이세계에 갔으면 최선을 다한다~",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/무직전생 Ⅲ ~이세계에 갔으면 최선을 다한다~.webp",
+  "day": "Mondays",
+  "episodes": 14,
+  "studio": [
+    "스튜디오 바인드"
+  ],
+  "staff": {
+    "director": [
+      "시부야 료스케"
+    ],
+    "adaptor": [
+      "시부야 료스케",
+      "타니우치 나오토"
+    ],
+    "character_design": [
+      "시마다 사나에",
+      "후루카와 료타"
+    ],
+    "composer": [
+      "후지사와 요시아키"
+    ]
   }
+},
+{
+  "id": 58878,
+  "title": "안녕, 라라",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/안녕, 라라.webp",
+  "day": "Mondays",
+  "episodes": 12,
+  "studio": [
+    "키네마 시트러스"
+  ],
+  "staff": {
+    "director": [
+      "코이데 타쿠시"
+    ],
+    "scriptwriter": [
+      "카와하라 안나"
+    ],
+    "character_design": [
+      "타니 시오리"
+    ],
+    "composer": [
+      "Yuma Yamaguchi"
+    ]
+  }
+},
+{
+  "id": 56736,
+  "title": "최강 찌꺼기 황자의 암약 제위 쟁탈전",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/최강 찌꺼기 황자의 암약 제위 쟁탈전.webp",
+  "day": "Mondays",
+  "episodes": 12,
+  "studio": [
+    "MAHO FILM"
+  ],
+  "staff": {
+    "director": [
+      "야나세 유지"
+    ],
+    "adaptor": [
+      "후데야스 카즈유키"
+    ],
+    "character_design": [
+      "타다노 카즈코"
+    ],
+    "composer": [
+      "Akki"
+    ]
+  }
+},
+{
+  "id": 62936,
+  "title": "투명한 밤을 달리는 너와, 눈에 보이지 않는 사랑을 했다.",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/투명한 밤을 달리는 너와, 눈에 보이지 않는 사랑을 했다..webp",
+  "day": "Mondays",
+  "episodes": 12,
+  "studio": [
+    "마카리아"
+  ],
+  "staff": {
+    "director": [
+      "요시자키 죠"
+    ],
+    "adaptor": [
+      "카키하라 유코"
+    ],
+    "character_design": [
+      "사와다 요시히로",
+      "이시이 유즈키"
+    ],
+    "composer": [
+      "후우키 하루미"
+    ]
+  }
+},
+{
+  "id": 60522,
+  "title": "해골기사님은 지금 이세계 모험 중 Ⅱ",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/해골기사님은 지금 이세계 모험 중 Ⅱ.webp",
+  "day": "Mondays",
+  "episodes": 12,
+  "studio": [
+    "오라 스튜디오"
+  ],
+  "staff": {
+    "director": [
+      "오노 카츠미"
+    ],
+    "adaptor": [
+      "네모토 토시조"
+    ],
+    "character_design": [
+      "이마니시 토오루",
+      "시바타 치사"
+    ],
+    "composer": [
+      "eba",
+      "이토 츠바사"
+    ]
+  }
+},
+{
+  "id": 62617,
+  "title": "여기는 내게 맡기고 먼저 가라고 말한 지 10년이 지났더니 전설이 되어 있었다.",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/여기는 내게 맡기고 먼저 가라고 말한 지 10년이 지났더니 전설이 되어 있었다..webp",
+  "day": "Mondays",
+  "episodes": 12,
+  "studio": [
+    "겟코"
+  ],
+  "staff": {
+    "director": [
+      "칸베 히로유키"
+    ],
+    "adaptor": [
+      "히로타 미츠타카"
+    ],
+    "character_design": [
+      "마지로"
+    ],
+    "composer": [
+      "오오스미 토모타카"
+    ]
+  }
+},
+{
+  "id": 62289,
+  "title": "열받은 영애는 복수를 다짐했습니다  ~마도서의 힘으로 조국을 부숴버릴게요~",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/열받은 영애는 복수를 다짐했습니다  ~마도서의 힘으로 조국을 부숴버릴게요~.webp",
+  "day": "Mondays",
+  "episodes": 12,
+  "studio": [
+    "스튜디오 코메트"
+  ],
+  "staff": {
+    "director": [
+      "쿠즈야 나오유키"
+    ],
+    "adaptor": [
+      "히로타 미츠타카"
+    ],
+    "character_design": [
+      "아네사키 사야카",
+      "후치와키 타이가"
+    ],
+    "composer": [
+      "호노 사토시",
+      "나카노 카오리"
+    ]
+  }
+},
+{
+  "id": 63752,
+  "title": "버려진 성녀의 이세계 밥 여행 숨겨진 스킬로 캠핑카를 소환했습니다",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/버려진 성녀의 이세계 밥 여행 숨겨진 스킬로 캠핑카를 소환했습니다.webp",
+  "day": "Mondays",
+  "episodes": 12,
+  "studio": [
+    "EMT 스퀘어드"
+  ],
+  "staff": {
+    "director": [
+      "니고리카와 아츠시"
+    ],
+    "adaptor": [
+      "아오시마 타카시"
+    ],
+    "character_design": [
+      "이시이 이즈미"
+    ],
+    "composer": [
+      "우타타네 카나"
+    ]
+  }
+},
+{
+  "id": 62031,
+  "title": "피구여왕 단코",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/피구여왕 단코.webp",
+  "day": "Mondays",
+  "episodes": 12,
+  "studio": [
+    "CUE"
+  ],
+  "staff": {
+    "director": [
+      "히로시 이케하타"
+    ],
+    "adaptor": [
+      "효도 카즈호"
+    ],
+    "character_design": [
+      "세키카와 나리히토"
+    ],
+    "composer": [
+      "이와사키 야스노리",
+      "츠카고시 렌"
+    ]
+  }
+},
+{
+  "id": 56735,
+  "title": "전학 간 학교의 청순가련한 미소녀가 옛날에 남자라고 생각해서 같이 놀던 소꿉친구였던 일",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/전학 간 학교의 청순가련한 미소녀가 옛날에 남자라고 생각해서 같이 놀던 소꿉친구였던 일.webp",
+  "day": "Mondays",
+  "episodes": 12,
+  "studio": [
+    "project No.9"
+  ],
+  "staff": {
+    "director": [
+      "죠 덴호"
+    ],
+    "adaptor": [
+      "아카오 데코"
+    ],
+    "character_design": [
+      "쿠라하시 N카루"
+    ],
+    "composer": [
+      "나카니시 료스케",
+      "타니 나오키",
+      "모리타 유리"
+    ]
+  }
+},
+
 ];

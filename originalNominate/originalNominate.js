@@ -252,9 +252,10 @@ function confirmFinalWinner() {
 
     document.getElementById('winner-modal').classList.remove('hidden');
     fireConfetti();
-    const results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
-    results[originalState.awardName] = { title: winner.title, thumbnail: winner.thumbnail };
-    localStorage.setItem("anime_awards_result", JSON.stringify(results));
+    ResultStorage.saveOne(originalState.awardName, { 
+            title: winner.title, 
+            thumbnail: winner.thumbnail 
+        });
 
     if (window.submitSingleAwardToDB) {
         window.submitSingleAwardToDB(originalState.awardName);

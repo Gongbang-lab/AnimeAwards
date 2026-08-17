@@ -284,7 +284,7 @@ function renderAwards() {
     mainContainer.innerHTML = "";
     top3Area.innerHTML = "";
 
-    const results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
+    const results = ResultStorage.getResults();
 
     // --- 1. 수상 완료된 TOP 3 데이터 추출 ---
     const top3Names = ['대상', '최우수상', '우수상'];
@@ -470,7 +470,7 @@ function createAwardCard(award, results, ratioClass) {
 // 🟢 [버튼 1] 수상 결과만 초기화
 document.getElementById("reset-result-btn").onclick = () => {
     if (confirm("수상 결과를 초기화하시겠습니까?\n(직접 추가/삭제한 카드 목록은 그대로 유지됩니다)")) {
-        localStorage.removeItem("anime_awards_result");
+        ResultStorage.clearResults();   // ← 수정
         renderAwards();
     }
 };
@@ -478,9 +478,9 @@ document.getElementById("reset-result-btn").onclick = () => {
 // 🟢 [버튼 2] 전체 상태 (카드 포함) 맨 처음으로 초기화
 document.getElementById("reset-all-btn").onclick = () => {
     if (confirm("⚠️ 경고 ⚠️\n수상 결과는 물론, 사용자가 직접 추가하거나 삭제한 카드 내역까지 모두 맨 처음 상태로 되돌리시겠습니까?")) {
-        localStorage.removeItem("anime_awards_result");
-        localStorage.removeItem("custom_awards_list"); // 커스텀 카드 목록 삭제
-        location.reload(); // 새로고침 하여 awardData.js 원본 데이터로 재시작
+        ResultStorage.clearResults();   // ← 수정
+        localStorage.removeItem("custom_awards_list");
+        location.reload();
     }
 };
 

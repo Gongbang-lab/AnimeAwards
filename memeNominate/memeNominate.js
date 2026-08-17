@@ -303,14 +303,12 @@ function saveMemeWinner() {
     const srcs = getSrcs(winner);
     const savedSrc = memeState.selectedSrc || srcs[0].url;
 
-    const results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
-    results[memeState.awardName] = {
+    ResultStorage.saveOne(memeState.awardName, {
         title: winner.name,
         thumbnail: savedSrc,
         type: winner.type,
         origin: winner.origin
-    };
-    localStorage.setItem("anime_awards_result", JSON.stringify(results));
+    });
     
     if (window.submitSingleAwardToDB) {
         window.submitSingleAwardToDB(memeState.awardName);

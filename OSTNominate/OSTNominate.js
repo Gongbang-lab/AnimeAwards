@@ -277,14 +277,12 @@ function saveOSTAwardResult() {
     const winner = ostNominateState.finalWinner;
     if (!award || !winner) return;
 
-    const stored = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
-    stored[award] = {
+    ResultStorage.saveOne(award, {
         animeTitle: winner.animeTitle,
         thumbnail: winner.thumbnail,
         composers: winner.composers,
         quarter: winner.displayQuarter
-    };
-    localStorage.setItem("anime_awards_result", JSON.stringify(stored));
+    });
     if (window.submitSingleAwardToDB) {
         window.submitSingleAwardToDB(award);
     }

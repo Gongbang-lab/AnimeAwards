@@ -370,13 +370,11 @@ function openWinnerModal() {
     fireConfetti();
     
     // 로컬스토리지 저장 (감독상)
-    const results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
-    results[dirState.awardName] = {
+    ResultStorage.saveOne(dirState.awardName, {
         name: winner.director,
         thumbnail: winner.director_img,
         works: winner.works.map(w => w.title).join(', ')
-    };
-    localStorage.setItem("anime_awards_result", JSON.stringify(results));
+    });
 
     if (window.submitSingleAwardToDB) {
         window.submitSingleAwardToDB(dirState.awardName);

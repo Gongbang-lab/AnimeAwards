@@ -354,7 +354,7 @@ function setText(id, text) {
 }
 
 function saveAwardResult(winner) {
-    const currentResults = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
+    const currentResults = ResultStorage.getResults();   // ← 수정
     const awardName = nominateState.awardName; 
 
     const top3Ranks = ["대상", "최우수상", "우수상"];
@@ -380,7 +380,7 @@ function saveAwardResult(winner) {
         currentResults[awardName] = { title: winner.title, thumbnail: finalThumb };
     }
 
-    localStorage.setItem("anime_awards_result", JSON.stringify(currentResults));
+    ResultStorage.saveResults(currentResults);   // ← 수정
     console.log("Saved:", awardName, winner.title);
 
     if (window.submitSingleAwardToDB) {

@@ -195,13 +195,11 @@ function openAwardModal(cv) {
 }
 
 function saveWinnerToLocal(cv) {
-    let results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
-    results[rookiestate.awardName] = {
+    ResultStorage.saveOne(rookiestate.awardName, {
         name: cv.name,
         thumbnail: cv.cvimg,
         debutYear: cv.debutYear || '2026'
-    };
-    localStorage.setItem("anime_awards_result", JSON.stringify(results));
+    });
     
     if (window.submitSingleAwardToDB) {
         window.submitSingleAwardToDB(rookiestate.awardName);

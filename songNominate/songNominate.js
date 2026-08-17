@@ -334,16 +334,14 @@ function saveSongAwardResult() {
     const winner = songNominateState.finalWinner;
     if (!award || !winner) return;
 
-    const stored = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
-    stored[songNominateState.currentAward] = {
+    ResultStorage.saveOne(songNominateState.currentAward, {
         theme: songNominateState.theme,
         animeTitle: winner.animeTitle,
         title: winner.title,
         singer: winner.artist,
         thumbnail: winner.thumbnail,
         youtube: winner.youtube
-    };
-    localStorage.setItem("anime_awards_result", JSON.stringify(stored));
+    });
     if (window.submitSingleAwardToDB) {
         window.submitSingleAwardToDB(award);
     }
