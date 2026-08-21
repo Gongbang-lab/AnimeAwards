@@ -31,14 +31,14 @@
     </div>
 
     <!-- 데이터 소스 로드 -->
-    <script src="../data/animeData.js"></script>
-    <script src="../data/animeCinemaData.js"></script>
+    <script src="../data/2026/2026animeData.js"></script>
+    <script src="../data/2026/2026animeCinema.js"></script>
 
     <script>
         function generateJSFileContent() {
             // 두 데이터가 모두 없는 경우 체크
-            const isTvaExist = typeof AnimeList !== 'undefined';
-            const isCinemaExist = typeof cinemaData !== 'undefined';
+            const isTvaExist = typeof AnimeList_2026 !== 'undefined';
+            const isCinemaExist = typeof cinemaData_2026 !== 'undefined';
 
             if (!isTvaExist && !isCinemaExist) {
                 return "에러: 데이터를 로드할 수 없습니다. 경로를 확인해주세요.";
@@ -48,8 +48,8 @@
             let combinedList = [];
 
             // 데이터 통합
-            if (isTvaExist) combinedList = combinedList.concat(AnimeList);
-            if (isCinemaExist) combinedList = combinedList.concat(cinemaData);
+            if (isTvaExist) combinedList = combinedList.concat(AnimeList_2026);
+            if (isCinemaExist) combinedList = combinedList.concat(cinemaData_2026);
 
             combinedList.forEach(anime => {
                 const directors = anime.staff?.director;
@@ -68,14 +68,16 @@
 
                         directorMap[dirName].works.push({
                             title: anime.title,
-                            thumbnail: anime.thumbnail
+                            thumbnail: anime.thumbnail,
+                            quarter: anime.quarter,
+                            year: anime.year
                         });
                     });
                 }
             });
 
             const finalArray = Object.values(directorMap);
-            return `const animeDirectorData = ${JSON.stringify(finalArray, null, 2)};`;
+            return `var animeDirectorData = ${JSON.stringify(finalArray, null, 2)};`;
         }
 
         // 결과 출력 실행

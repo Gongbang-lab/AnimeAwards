@@ -4,20 +4,36 @@
 const cvState = {
     step: 1,
     theme: new URLSearchParams(location.search).get("theme") || "character_male",
-    currentAward: new URLSearchParams(location.search).get("awardName") || "올해의 성우상",
+    awardName: new URLSearchParams(location.search).get("awardName") || "올해의 성우상",  // ✅ currentAward → awardName (다른 파일들과 통일)
     selectedCVs: [], 
     finalWinner: null
 };
 
 let cachedVoteData = null;
 
+/**
+ * ✅ 추가: 성별 + 시즌(분기) 기준으로 필터링된 성우 목록을 반환
+ * - 각 성우의 characters(참여작)를 선택된 분기에 해당하는 것만 남기고
+ * - 남은 참여작이 하나도 없는 성우는 후보 목록에서 제외
+ */
+function getSeasonFilteredCVList(genderKey) {
+    if (typeof CharacterVoiceData === 'undefined') return [];
+
+    return Object.values(CharacterVoiceData)
+        .filter(cv => cv.name !== "Unknown")
+        .filter(cv => String(cv.gender).toLowerCase() === genderKey)
+        .map(cv => ({
+            ...cv,
+            characters: (cv.characters || []).filter(role => SeasonFilter.isInSeason(role))
+        }))
+        .filter(cv => cv.characters.length > 0);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
-    // 검색 이벤트 바인딩
     document.getElementById("search-input").addEventListener("input", (e) => {
         renderCVStep1(e.target.value);
     });
 
-    // 버튼 이벤트 바인딩
     document.getElementById("btn-next").onclick = goStep2;
     document.getElementById("btn-back").onclick = handleBack;
     document.getElementById("final-confirm-btn").onclick = () => location.href = "../index.html";
@@ -34,7 +50,7 @@ function renderCVStep1(searchTerm = "") {
     const stepTitle = document.getElementById("step-title");
     
     if (cvState.step === 1) {
-        mainContent.innerHTML = ""; // 초기화
+        mainContent.innerHTML = "";
         
         const genderKey = cvState.theme.includes("female") ? "female" : "male";
         if (genderKey === "female") {
@@ -42,10 +58,9 @@ function renderCVStep1(searchTerm = "") {
         } else {
             stepTitle.textContent = "올해의 남자 성우상 부문";
         }
-        // 1. 데이터 필터링
-        let filteredList = Object.values(CharacterVoiceData)
-            .filter(cv => cv.name !== "Unknown")
-            .filter(cv => String(cv.gender).toLowerCase() === genderKey);
+
+        // ✅ 수정: SeasonFilter 적용된 목록 사용
+        let filteredList = getSeasonFilteredCVList(genderKey);
 
         if (searchTerm.trim() !== "") {
             filteredList = filteredList.filter(cv => 
@@ -53,7 +68,7 @@ function renderCVStep1(searchTerm = "") {
             );
         }
 
-        // 2. 그룹화 (작품 수 기준)
+        // 2. 그룹화 (이번 시즌 참여작 수 기준)
         const groups = {};
         filteredList.forEach(cv => {
             const count = cv.characters ? cv.characters.length : 0;
@@ -64,39 +79,32 @@ function renderCVStep1(searchTerm = "") {
 
         const sortedGroupKeys = Object.keys(groups).sort((a, b) => groups[b].count - groups[a].count);
 
-        // 3. 렌더링 (CSS 클래스 .quarter-section 활용)
         sortedGroupKeys.forEach(groupKey => {
             const groupData = groups[groupKey];
             groupData.list.sort((a, b) => a.name.localeCompare(b.name, 'ko'));
 
-            // 섹션 컨테이너
             const section = document.createElement("div");
             section.className = "quarter-section";
 
-            // 헤더 버튼
             const btn = document.createElement("button");
             btn.className = "quarter-btn";
             btn.innerHTML = `<span>${groupKey}</span> <span>▼</span>`;
             
-            // 콘텐츠 그리드
             const content = document.createElement("div");
             content.className = "day-content";
-            content.style.display = "none"; // 기본 숨김
+            content.style.display = "none";
 
-            // 검색 중이면 자동 펼침
             if (searchTerm) {
                 content.style.display = "grid";
                 btn.classList.add("active");
             }
 
-            // 토글 이벤트
             btn.onclick = () => {
                 const isOpen = content.style.display === "grid";
                 content.style.display = isOpen ? "none" : "grid";
                 btn.classList.toggle("active", !isOpen);
             };
 
-            // 카드 생성
             groupData.list.forEach(cv => {
                 content.appendChild(createCVCard(cv, "step1"));
             });
@@ -110,24 +118,21 @@ function renderCVStep1(searchTerm = "") {
 }
 
 /**
- * 카드 생성 함수 (CSS .card 클래스 사용)
+ * 카드 생성 함수
  */
 function createCVCard(cv, step) {
     const card = document.createElement("div");
     card.className = "card";
 
-    // ✅ 추가: Firebase 연동용 data 속성
-    card.setAttribute('data-category', cvState.currentAward);
+    card.setAttribute('data-category', cvState.awardName);
     card.setAttribute('data-anime-id', cv.name);
 
-    // ✅ 추가: 득표율 뱃지 (좌측 상단)
     const rateBadge = document.createElement("div");
     rateBadge.className = "card-selection-rate";
     rateBadge.style.display = "none";
     rateBadge.textContent = "0/0";
     card.appendChild(rateBadge);
 
-    // 기존 작품수 배지 (우측 상단, 클릭 시 상세 팝업)
     const badge = document.createElement("div");
     badge.className = "card-badge";
     badge.textContent = `${cv.characters.length}작품`;
@@ -147,7 +152,7 @@ function createCVCard(cv, step) {
     `;
 
     card.prepend(badge);
-    card.prepend(rateBadge); // ✅ rateBadge를 맨 앞에 (badge보다 먼저)
+    card.prepend(rateBadge);
 
     card.onclick = () => {
         if (step === "step1") {
@@ -170,16 +175,13 @@ function toggleCVSelection(cv, cardElement) {
     const index = cvState.selectedCVs.findIndex(v => v.name === cv.name);
     
     if (index > -1) {
-        // 이미 선택된 경우 제거
         cvState.selectedCVs.splice(index, 1);
         cardElement.classList.remove("selected");
     } else {
-        // 새로 선택하는 경우 추가
         cvState.selectedCVs.push(cv);
         cardElement.classList.add("selected");
     }
     
-    // 오른쪽 사이드바 프리뷰 박스 새로고침
     updatePreview();
 }
 
@@ -189,10 +191,9 @@ function updatePreview() {
 
     if (!list) return;
     
-    list.innerHTML = ""; // 초기화
+    list.innerHTML = "";
 
     cvState.selectedCVs.forEach(cv => {
-        // 애니송 페이지와 동일한 preview-item 구조
         const div = document.createElement("div");
         div.className = "preview-item";
         div.innerHTML = `
@@ -200,7 +201,6 @@ function updatePreview() {
             <br><small style="color:#888;">${cv.characters.length}개 작품 참여</small>
         `;
         
-        // 클릭 시 삭제 실행
         div.onclick = () => {
             removeCV(cv.name);
         };
@@ -214,13 +214,11 @@ function updatePreview() {
 }
 
 function removeCV(name) {
-    // 1. 데이터에서 삭제
     const index = cvState.selectedCVs.findIndex(v => v.name === name);
     if (index > -1) {
         cvState.selectedCVs.splice(index, 1);
     }
 
-    // 2. 메인 화면 카드 UI 체크 해제
     const cards = document.querySelectorAll(".card");
     cards.forEach(c => {
         const title = c.querySelector(".card-title");
@@ -229,7 +227,6 @@ function removeCV(name) {
         }
     });
 
-    // 3. 프리뷰 재갱신
     updatePreview();
 }
 
@@ -240,14 +237,12 @@ function goStep2() {
     if (cvState.step === 1) {
         cvState.step = 2;
         
-        // 1. Step 2 진입 시 검색창과 프리뷰 박스 숨김(hidden) 처리
         const searchCont = document.querySelector('.search-container');
         const previewBox = document.getElementById('step1-preview');
 
         if (searchCont) searchCont.classList.add('hidden');
         if (previewBox) previewBox.classList.add('hidden');
 
-        // 2. 타이틀 및 버튼 변경
         const stepTitle = document.getElementById("step-title");
         const genderKey = cvState.theme.includes("female") ? "female" : "male";
         stepTitle.textContent = genderKey === "female" ? "올해의 여자 성우상 부문" : "올해의 남자 성우상 부문";
@@ -257,7 +252,6 @@ function goStep2() {
         nextBtn.textContent = "수상 결정";
         nextBtn.disabled = true;
 
-        // 3. 메인 콘텐츠 교체 (최종 투표 그리드 뷰)
         const mainContent = document.getElementById("main-content");
         mainContent.innerHTML = `
             <h2 style="color:var(--gold); margin-bottom:20px; font-size: 1.5rem; text-align: left;">최종 수상자를 선택하세요</h2>
@@ -266,34 +260,13 @@ function goStep2() {
         
         const grid = document.getElementById("step2-grid");
 
+        // ✅ 수정: 인라인 중복 대신 createStep2Card() 재사용
         cvState.selectedCVs.forEach(cv => {
-            const card = document.createElement("div");
-            card.className = "step2-cv-card";
-            const repWork = cv.characters && cv.characters.length > 0 ? cv.characters[0].animeTitle : "";
-            const subText = repWork ? `${repWork} 등` : "정보 없음";
-
-            card.innerHTML = `
-                <div class="card-badge">${cv.characters.length}작품</div>
-                <div class="card-thumb">
-                    <img src="../${cv.cvimg}" onerror="this.src='https://via.placeholder.com/200x300'">
-                </div>
-                <div class="step2-card-info">
-                    <div class="card-title">${cv.name}</div>
-                    <div class="card-studio">${subText}</div>
-                </div>
-            `;
-
-            card.onclick = () => {
-                document.querySelectorAll(".step2-cv-card").forEach(c => c.classList.remove("selected"));
-                card.classList.add("selected");
-                cvState.finalWinner = cv;
-                document.getElementById("btn-next").disabled = false;
-            };
-            
-            grid.appendChild(card);
+            grid.appendChild(createStep2Card(cv));
         });
+
+        applyVoteBadges();   // ✅ 추가: Step2 진입 시에도 뱃지 반영
     } else {
-        // 최종 투표 완료
         openWinnerModal();
     }
 }
@@ -301,16 +274,23 @@ function goStep2() {
 function createStep2Card(cv) {
     const card = document.createElement("div");
     card.className = "step2-cv-card";
+
+    // ✅ 추가: 뱃지 매칭용 속성 (기존엔 없어서 Step2에서 뱃지가 안 떴음)
+    card.setAttribute('data-category', cvState.awardName);
+    card.setAttribute('data-anime-id', cv.name);
+
     const repWork = cv.characters && cv.characters.length > 0 ? cv.characters[0].animeTitle : "";
-    
+    const subText = repWork ? `${repWork} 등` : "정보 없음";
+
     card.innerHTML = `
+        <div class="card-selection-rate" style="display:none;">0/0</div>
         <div class="card-badge">${cv.characters.length}작품</div>
         <div class="card-thumb">
             <img src="../${cv.cvimg}" onerror="this.src='https://via.placeholder.com/200x300'">
         </div>
         <div class="step2-card-info">
             <div class="card-title">${cv.name}</div>
-            <div class="card-studio">${repWork ? repWork + ' 등' : '정보 없음'}</div>
+            <div class="card-studio">${subText}</div>
         </div>
     `;
 
@@ -327,7 +307,6 @@ function handleBack() {
     if (cvState.step === 2) {
         cvState.step = 1;
         
-        // Step 1 복귀 시 숨겼던 검색창과 프리뷰 박스 다시 표시
         const searchCont = document.querySelector('.search-container');
         const previewBox = document.getElementById('step1-preview');
 
@@ -338,10 +317,9 @@ function handleBack() {
         const nextBtn = document.getElementById("btn-next");
         nextBtn.textContent = "다음 단계";
         
-        // 프리뷰에 선택된 아이템이 있으면 '다음 단계' 버튼 활성화
         nextBtn.disabled = cvState.selectedCVs.length === 0;
         
-        renderCVStep1(); // Step 1 다시 렌더링
+        renderCVStep1();
     } else {
         location.href = "../index.html";
     }
@@ -359,7 +337,6 @@ function openDetailModal(cv) {
     nameEl.textContent = `${cv.name} 참여 작품`;
     imgEl.src = `../${cv.cvimg}`;
     
-    // 리스트 뷰에서 그리드 뷰 카드 UI로 변경
     worksContainer.innerHTML = cv.characters.map(char => `
         <div class="work-card">
             <div class="work-card-thumb">
@@ -379,13 +356,10 @@ function openWinnerModal() {
     const winner = cvState.finalWinner;
     if (!winner) return;
 
-    // 1. 이미지 설정
     document.getElementById("winner-img").src = `../${winner.cvimg}`;
 
-    // 2. 우측 콘텐츠 생성 (이름 + 모든 작품 리스트)
     const infoContent = document.getElementById("winner-info-content");
     
-    // 작품 리스트 HTML 생성
     const worksListHTML = winner.characters.map(char => `
         <div class="info-row">
             <span class="info-label">${char.animeTitle}</span>
@@ -393,7 +367,6 @@ function openWinnerModal() {
         </div>
     `).join('');
 
-    // 전체 구조 주입
     infoContent.innerHTML = `
         <div class="info-row" style="border-bottom: 2px solid var(--gold); margin-bottom: 15px; padding-bottom: 15px;">
             <span class="info-label" style="font-size: 1.4rem;">수상자</span>
@@ -404,20 +377,24 @@ function openWinnerModal() {
         </div>
     `;
 
-    // 3. 모달 표시 및 폭죽
     document.getElementById("winner-modal").classList.remove("hidden");
     fireConfetti();
 
-    // 4. 로컬스토리지 저장 (결과창 연동용)
     saveResult(winner);
 }
 
+// ✅ 삭제: 예전 방식(anime_awards_result 직접 조작)으로 이 함수를 덮어쓰던 중복 정의 제거
+//         ResultStorage.saveOne()을 쓰는 버전 하나만 유지
 function saveResult(winner) {
-    ResultStorage.saveOne(cvState.currentAward, {
+    ResultStorage.saveOne(cvState.awardName, {
         name: winner.name,
         thumbnail: winner.cvimg,
         works: winner.characters.map(c => c.charName).join(', ')
     });
+
+    if (window.submitSingleAwardToDB) {
+        window.submitSingleAwardToDB(cvState.awardName);
+    }
 }
 
 function closeModal(id) {
@@ -429,7 +406,6 @@ function fireConfetti() {
     const end = Date.now() + duration;
 
     (function frame() {
-        // 왼쪽에서 발사
         confetti({
             particleCount: 3,
             angle: 60,
@@ -438,7 +414,6 @@ function fireConfetti() {
             zIndex: 9999,
             colors: ['#d4af37', '#ffffff']
         });
-        // 오른쪽에서 발사
         confetti({
             particleCount: 3,
             angle: 120,
@@ -452,20 +427,6 @@ function fireConfetti() {
             requestAnimationFrame(frame);
         }
     }());
-}
-function saveResult(winner) {
-    const results = JSON.parse(localStorage.getItem("anime_awards_result")) || {};
-    results[cvState.currentAward] = {
-        name: winner.name,
-        thumbnail: winner.cvimg,
-        works: winner.characters.map(c => c.charName).join(', ')
-    };
-    localStorage.setItem("anime_awards_result", JSON.stringify(results));
-
-    // ✅ Firebase DB 전송
-    if (window.submitSingleAwardToDB) {
-        window.submitSingleAwardToDB(cvState.currentAward);
-    }
 }
 
 // ──────────────────────────────────────────────────────────
@@ -491,7 +452,7 @@ function applyVoteBadges() {
 function listenToVoteRates() {
     if (!window.fbOnValue || !window.fbDB) return;
 
-    const categoryRef = window.fbRef(window.fbDB, `votes/categories/${cvState.currentAward}`);
+    const categoryRef = window.fbRef(window.fbDB, window.getVotesCategoryPath(cvState.awardName));
 
     window.fbOnValue(categoryRef, (snapshot) => {
         cachedVoteData = snapshot.val() || {};
@@ -506,4 +467,3 @@ function waitForFirebaseAndListen() {
         setTimeout(waitForFirebaseAndListen, 300);
     }
 }
-waitForFirebaseAndListen();

@@ -9,7 +9,7 @@ const CURRENT_YEAR =
 const YEAR_DATA_KEYS = [
     ["AnimeList",        "AnimeList"],
     ["CharacterData",    "CharacterData"],
-    ["CVData",           "CVData"],
+    ["CharacterVoiceData",           "CharacterVoiceData"],
     ["cinemaData",       "cinemaData"],
     ["OSTData",          "OSTData"],
     ["SongsData",        "SongsData"],
@@ -19,7 +19,7 @@ const YEAR_DATA_KEYS = [
     ["RookieCVData",     "RookieCVData"],
     ["EPData",           "EPData"],
     ["MemeData",         "MemeData"],
-    ["ScriptwriterData", "ScriptwriterData"]
+    ["scriptwriterData", "scriptwriterData"]
 ];
 
 YEAR_DATA_KEYS.forEach(([alias, prefix]) => {

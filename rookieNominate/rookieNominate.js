@@ -33,10 +33,10 @@ function closeCriteriaModal() {
  */
 function renderRookieGrid() {
     const grid = document.getElementById("rookie-grid");
-    if (!grid || typeof RookieCVData === 'undefined') return;
+    if (!grid || typeof RookieCVData_2026 === 'undefined') return;
 
     grid.innerHTML = "";
-    const list = Object.values(RookieCVData).sort((a, b) => a.name.localeCompare(b.name));
+    const list = Object.values(RookieCVData_2026).sort((a, b) => a.name.localeCompare(b.name));
 
     list.forEach(cv => {
         const card = document.createElement("div");
@@ -272,7 +272,7 @@ function applyVoteBadges() {
 function listenToVoteRates() {
     if (!window.fbOnValue || !window.fbDB) return;
 
-    const categoryRef = window.fbRef(window.fbDB, `votes/categories/${rookiestate.awardName}`);
+    const categoryRef = window.fbRef(window.fbDB, window.getVotesCategoryPath(rookiestate.awardName));
 
     window.fbOnValue(categoryRef, (snapshot) => {
         cachedVoteData = snapshot.val() || {};

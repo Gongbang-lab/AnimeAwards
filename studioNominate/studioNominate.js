@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /** 후보 선택 (Step 1과 2 로직 분리) */
 function selectStudioCard(event, studioName) {
-    const item = AnimeStudioData.find(s => s.studio === studioName);
+    const item = AnimeStudioData_2026.find(s => s.studio === studioName);
     if (!item) return;
 
     if (studioState.currentStep === 1) {
@@ -434,7 +434,7 @@ function applyVoteBadges() {
 function listenToVoteRates() {
     if (!window.fbOnValue || !window.fbDB) return;
 
-    const categoryRef = window.fbRef(window.fbDB, `votes/categories/${studioState.awardName}`);
+    const categoryRef = window.fbRef(window.fbDB, window.getVotesCategoryPath(studioState.awardName));
 
     window.fbOnValue(categoryRef, (snapshot) => {
         cachedVoteData = snapshot.val() || {};

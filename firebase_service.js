@@ -38,31 +38,47 @@ window.getWinnerIdentifier = function(awardData) {
   return awardData.title || awardData.name || (awardData.name1 && awardData.name2 ? `${awardData.name1}_${awardData.name2}` : "unknown");
 };
 
+// ✅ [신규] 시즌(연도+분기) 키 생성 — 모든 Firebase 경로에서 이걸 통해서만 시즌을 조합
+window.getSeasonPathKey = function() {
+  const year = localStorage.getItem("selected_year") || "unknown";
+  const quarter = localStorage.getItem("selected_quarter") || "unknown";
+  return `${year}_${quarter}`;
+};
+
+// ✅ [신규] 특정 상(awardName)의 투표 카테고리 경로를 만드는 공통 함수
+// 각 nominate.js의 listenToVoteRates()에서 이 함수로 경로를 통일해서 씀
+window.getVotesCategoryPath = function(awardName) {
+  return `votes/categories/${window.getSeasonPathKey()}/${awardName}`;
+};
+
 // 3. 개별 페이지에서 호출할 공통 전송 함수
 window.submitSingleAwardToDB = async function(awardName) {
-  if (localStorage.getItem(`submitted_${awardName}`)) return;
+  const seasonKey = window.getSeasonPathKey();
+  const submittedFlagKey = `submitted_${seasonKey}_${awardName}`;   // ← 시즌별로 분리
 
-  const savedData = JSON.parse(localStorage.getItem('anime_awards_result'));
+  if (localStorage.getItem(submittedFlagKey)) return;
+
+  // ✅ 시즌별로 분리 저장된 결과를 ResultStorage에서 읽음
+  const savedData = window.ResultStorage ? window.ResultStorage.getResults() : null;
   if (!savedData || !savedData[awardName]) return;
 
   const winnerData = savedData[awardName];
+  const basePath = window.getVotesCategoryPath(awardName);   // ← 시즌 포함 경로
 
   if (Array.isArray(winnerData)) {
     await Promise.all(winnerData.map(item => {
-      // ✅ sanitizeKey 제거 — 원본 title 그대로 저장
       const id = window.getWinnerIdentifier(item);
-      const ref = window.fbRef(window.fbDB, `votes/categories/${awardName}/${id}`);
+      const ref = window.fbRef(window.fbDB, `${basePath}/${id}`);
       return window.fbTransaction(ref, (current) => (current || 0) + 1);
     }));
   } else {
-    // ✅ sanitizeKey 제거 — 원본 title 그대로 저장
     const id = window.getWinnerIdentifier(winnerData);
-    const ref = window.fbRef(window.fbDB, `votes/categories/${awardName}/${id}`);
+    const ref = window.fbRef(window.fbDB, `${basePath}/${id}`);
     await window.fbTransaction(ref, (current) => (current || 0) + 1);
   }
 
-  const participantsRef = window.fbRef(window.fbDB, `votes/categories/${awardName}/_participants`);
+  const participantsRef = window.fbRef(window.fbDB, `${basePath}/_participants`);
   await window.fbTransaction(participantsRef, (current) => (current || 0) + 1);
 
-  localStorage.setItem(`submitted_${awardName}`, 'true');
+  localStorage.setItem(submittedFlagKey, 'true');
 };

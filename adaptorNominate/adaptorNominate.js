@@ -19,7 +19,10 @@ const DAY_LABELS = {
 
 const DAY_KEYS = ["Mondays", "Tuesdays", "Wednesdays", "Thursdays", "Fridays", "Saturdays", "Sundays", "Anomaly", "Web"];
 
-const sourceData = (typeof AnimeAdaptorData !== 'undefined') ? AnimeAdaptorData : [];
+// ✅ 수정: 체크하는 변수와 대입하는 변수를 일치시키고, SeasonFilter 적용
+const sourceData = (typeof AnimeAdaptorData !== 'undefined')
+    ? SeasonFilter.filterAnimeList(AnimeAdaptorData)
+    : [];
 
 const SeasonFilteredList = SeasonFilter.filterAnimeList(AnimeList);
 
@@ -44,14 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const stepTitleEl = document.getElementById("step-title");
     if (stepTitleEl) stepTitleEl.textContent = `${nominateState.awardName} 부문`;
 
-    const searchInput = document.getElementById('search-input');
-    if (searchInput) {
-        searchInput.oninput = function() {
-            const val = this.value;
-            renderStep1(val);
-            updateAutocomplete(val);
-        };
-    }
+    // ✅ 삭제: 존재하지 않는 updateAutocomplete()를 호출하던 중복 핸들러 제거
+    //         (실제 동작하는 핸들러는 파일 하단에 이미 있음)
 
     document.getElementById("step1-next-btn").onclick = goStep2;
     document.getElementById("step2-back-btn").onclick = goStep1;
@@ -143,7 +140,6 @@ function createCard(anime) {
 
     card.className = `card ${isSelected ? 'selected' : ''}`;
 
-    // ✅ sanitizeKey 없이 원본값 그대로 사용
     card.setAttribute('data-category', nominateState.awardName);
     card.setAttribute('data-anime-id', anime.title);
 
@@ -236,7 +232,6 @@ function goStep2() {
         gridDiv.appendChild(createCard(anime));
     });
 
-    // ✅ Step2 카드에도 즉시 뱃지 적용
     applyVoteBadges();
 }
 
@@ -265,14 +260,19 @@ function toggleElement(id, show) {
     if (el) el.classList.toggle("hidden", !show);
 }
 
+// ✅ 검색창 이벤트: 실제로 동작하는 유일한 핸들러 (자동완성 포함)
 const searchInput = document.getElementById('search-input');
 const autocompleteList = document.getElementById('autocomplete-list');
 if (searchInput) {
     searchInput.oninput = function() {
         const val = this.value;
         renderStep1(val);
+        if (!autocompleteList) return;
+
         autocompleteList.innerHTML = '';
         if (!val) return;
+
+        // ✅ sourceData는 이미 SeasonFilter를 거친 상태이므로 자동완성도 시즌에 맞게 노출됨
         sourceData.filter(a => a.title.toLowerCase().includes(val.toLowerCase())).slice(0, 5).forEach(match => {
             const div = document.createElement("div");
             div.textContent = match.title;
@@ -328,10 +328,7 @@ function fireConfetti() {
 // ──────────────────────────────────────────────────────────
 // Firebase 실시간 득표율 뱃지
 // ──────────────────────────────────────────────────────────
-
-// ✅ 현재 화면 카드에 캐시 데이터로 뱃지 적용
 function applyVoteBadges() {
-    console.log("[DEBUG] applyVoteBadges 호출, cachedVoteData:", cachedVoteData);
     if (!cachedVoteData) return;
 
     const total = cachedVoteData._participants || 0;
@@ -342,22 +339,18 @@ function applyVoteBadges() {
         if (!rateBadge || !animeId) return;
 
         const count = cachedVoteData[animeId] || 0;
-        console.log(`[DEBUG] 카드 매칭: "${animeId}" -> count=${count}`);
         const percent = total > 0 ? Math.round((count / total) * 100) : 0;
         rateBadge.innerText = `${percent}%`;
         rateBadge.style.display = "block";
     });
 }
 
-// ✅ Firebase 리스너 — 부문별 경로만 구독, 데이터 캐싱
 function listenToVoteRates() {
     if (!window.fbOnValue || !window.fbDB) return;
-    console.log("[DEBUG] 리스너 등록, awardName:", nominateState.awardName); // 추가
 
-    const categoryRef = window.fbRef(window.fbDB, `votes/categories/${nominateState.awardName}`);
+    const categoryRef = window.fbRef(window.fbDB, window.getVotesCategoryPath(nominateState.awardName));
 
     window.fbOnValue(categoryRef, (snapshot) => {
-        console.log("[DEBUG] 스냅샷 수신:", snapshot.val()); // 추가
         cachedVoteData = snapshot.val() || {};
         applyVoteBadges();
     });

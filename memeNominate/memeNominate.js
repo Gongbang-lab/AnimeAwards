@@ -39,11 +39,11 @@ function getSrcs(meme) {
 
 function renderMemeGrid() {
     const grid = document.getElementById("meme-grid");
-    if (!grid || typeof AnimeMemeData === 'undefined') return;
+    if (!grid || typeof AnimeMemeData_2026 === 'undefined') return;
 
     // quarter별 그룹핑
     const groups = {};
-    AnimeMemeData.forEach(meme => {
+    AnimeMemeData_2026.forEach(meme => {
         const key = meme.quarter || '기타';
         if (!groups[key]) groups[key] = [];
         groups[key].push(meme);
@@ -179,7 +179,7 @@ function switchSrc(memeId, srcUrl, tabBtn, e) {
 
     // 미디어 교체
     const mediaBox = document.getElementById(`media-${memeId}`);
-    const meme = AnimeMemeData.find(m => m.id === memeId);
+    const meme = AnimeMemeData_2026.find(m => m.id === memeId);
     const isVideo = meme.type === 'video' || srcUrl.endsWith('.mp4');
 
     mediaBox.innerHTML = isVideo
@@ -204,7 +204,7 @@ function toggleAccordion(btn) {
 
 function selectMeme(id) {
     const prevSelectedId = memeState.selectedMeme?.id;
-    const meme = AnimeMemeData.find(m => m.id === id);
+    const meme = AnimeMemeData_2026.find(m => m.id === id);
     memeState.selectedMeme = meme;
 
     // 현재 카드에서 활성 탭의 src를 selectedSrc로 저장
@@ -229,7 +229,7 @@ function selectMeme(id) {
 
 function openMemeZoom(id, e) {
     if (e) e.stopPropagation();
-    const meme = AnimeMemeData.find(m => m.id === id);
+    const meme = AnimeMemeData_2026.find(m => m.id === id);
     const popup = document.getElementById("winner-popup");
     if (!meme || !popup) return;
 
@@ -385,7 +385,7 @@ function applyVoteBadges() {
 function listenToVoteRates() {
     if (!window.fbOnValue || !window.fbDB) return;
 
-    const categoryRef = window.fbRef(window.fbDB, `votes/categories/${memeState.awardName}`);
+    const categoryRef = window.fbRef(window.fbDB, window.getVotesCategoryPath(memeState.awardName));
 
     window.fbOnValue(categoryRef, (snapshot) => {
         cachedVoteData = snapshot.val() || {};

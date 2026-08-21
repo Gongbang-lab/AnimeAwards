@@ -2,9 +2,9 @@ const state = {
     step: 1,
     selectedCandidates: [], 
     finalTop3: [],         
-    allAnime: (typeof AnimeList !== 'undefined' && typeof SeasonFilter !== 'undefined')
-        ? SeasonFilter.filterAnimeList(AnimeList)
-        : (typeof AnimeList !== 'undefined' ? AnimeList : [])
+    allAnime: (typeof AnimeList_2026 !== 'undefined' && typeof SeasonFilter !== 'undefined')
+        ? SeasonFilter.filterAnimeList(AnimeList_2026)
+        : (typeof AnimeList_2026 !== 'undefined' ? AnimeList_2026 : [])
 };
 
 const DAY_LABELS = { "Mondays":"월요일", "Tuesdays":"화요일", "Wednesdays":"수요일", "Thursdays":"목요일", "Fridays":"금요일", "Saturdays":"토요일", "Sundays":"일요일", "Anomaly":"변칙 편성", "Web":"웹" };
@@ -12,7 +12,7 @@ const RANK_NAMES = ["우수상", "최우수상", "대상"];
 
 document.addEventListener("DOMContentLoaded", () => {
     if(state.allAnime.length === 0) {
-        console.error("AnimeList 데이터를 불러오지 못했습니다. 경로를 확인해주세요.");
+        console.error("AnimeList_2026 데이터를 불러오지 못했습니다. 경로를 확인해주세요.");
     }
 
     // 초기 렌더링 (검색어 없음)

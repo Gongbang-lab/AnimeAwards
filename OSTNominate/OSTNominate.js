@@ -14,11 +14,11 @@ const dayMap = {
 
 // 🌟 수정된 부분: 작곡가 정보가 없어도 모든 분기의 애니메이션이 나오도록 수정
 function getMergedOSTData() {
-    if (typeof AnimeList === 'undefined' || !Array.isArray(AnimeList)) return {};
+    if (typeof AnimeList_2026 === 'undefined' || !Array.isArray(AnimeList_2026)) return {};
 
     const result = {};
 
-    AnimeList.forEach((anime, index) => {
+    AnimeList_2026.forEach((anime, index) => {
         const composers = (anime.staff && anime.staff.composer) ? anime.staff.composer : [];
 
         // 🚨 이전 코드에서는 작곡가가 없으면 화면에 표시하지 않고 넘어갔으나, 이 제한을 삭제했습니다.
@@ -339,7 +339,7 @@ function applyVoteBadges() {
 function listenToVoteRates() {
     if (!window.fbOnValue || !window.fbDB) return;
 
-    const categoryRef = window.fbRef(window.fbDB, `votes/categories/${ostNominateState.currentAward}`);
+    const categoryRef = window.fbRef(window.fbDB, window.getVotesCategoryPath(ostNominateState.currentAward));
 
     window.fbOnValue(categoryRef, (snapshot) => {
         cachedVoteData = snapshot.val() || {};

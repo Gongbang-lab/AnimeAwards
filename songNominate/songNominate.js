@@ -36,10 +36,10 @@ function getMergedSongData(themeType) {
         return {};
     }
 
-    if (typeof AnimeSongs === 'undefined' || !Array.isArray(AnimeSongs)) return {};
+    if (typeof AnimeSongs_2026 === 'undefined' || !Array.isArray(AnimeSongs_2026)) return {};
 
     // 변경: 객체 순회 → 배열 순회
-    AnimeSongs.forEach(group => {
+    AnimeSongs_2026.forEach(group => {
         const baseInfo = animeInfoMap[group.id];
         // quarter 정보를 직접 group에서 가져옴 (예: "1분기")
         const quarterKey = group.quarter || "기타";
@@ -421,7 +421,7 @@ function applyVoteBadges() {
 function listenToVoteRates() {
     if (!window.fbOnValue || !window.fbDB) return;
 
-    const categoryRef = window.fbRef(window.fbDB, `votes/categories/${songNominateState.currentAward}`);
+    const categoryRef = window.fbRef(window.fbDB, window.getVotesCategoryPath(songNominateState.currentAward));
 
     window.fbOnValue(categoryRef, (snapshot) => {
         cachedVoteData = snapshot.val() || {};

@@ -9,25 +9,41 @@ const dirState = {
 };
 let cachedVoteData = null;
 
+/**
+ * ✅ 추가: 시즌(분기) 기준으로 필터링된 감독 목록을 반환
+ * - 각 감독의 works(연출작)를 선택된 분기에 해당하는 것만 남기고
+ * - 남은 작품이 하나도 없는 감독은 후보 목록에서 제외
+ */
+function getSeasonFilteredDirectorList() {
+    if (typeof animeDirectorData === 'undefined') return [];
+
+    return animeDirectorData
+        .map(d => ({
+            ...d,
+            works: (d.works || []).filter(w => SeasonFilter.isInSeason(w))
+        }))
+        .filter(d => d.works.length > 0);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. 초기 렌더링
+    // ✅ 수정: awardName을 renderDirectorGrid() 호출보다 먼저 설정
+    //         (기존엔 렌더링 뒤에 설정돼서 첫 렌더링 카드의 data-category가 비어있었음)
+    const params = new URLSearchParams(window.location.search);
+    dirState.awardName = params.get("awardName");
+
     renderDirectorGrid();
 
-    // 2. 검색 이벤트 바인딩
     document.getElementById("search-input").addEventListener("input", (e) => {
         renderDirectorGrid(e.target.value);
     });
 
-    // 3. 버튼 이벤트 바인딩
     document.getElementById("btn-next").onclick = goStep2;
     document.getElementById("btn-back").onclick = handleBack;
     document.getElementById("final-confirm-btn").onclick = () => location.href = "../index.html";
 
-    const params = new URLSearchParams(window.location.search);
-    dirState.awardName = params.get("awardName");
-
     waitForFirebaseAndListen();
 });
+
 /**
  * 감독 그리드 렌더링 (Step 1: 아코디언 / Step 2: 일반 그리드)
  */
@@ -36,15 +52,12 @@ function renderDirectorGrid(searchTerm = "") {
     if (!container) return;
     container.innerHTML = "";
 
-    // 1. 데이터 필터링 (감독 이름 또는 작품 제목 검색)
+    // ✅ 수정: SeasonFilter 적용된 목록을 기준으로 검색 필터링
     let filteredData = (dirState.step === 1)
-        ? animeDirectorData.filter(d => {
+        ? getSeasonFilteredDirectorList().filter(d => {
             const term = searchTerm.toLowerCase().trim();
-            // 감독 이름 확인
             const matchDirector = d.director.toLowerCase().includes(term);
-            // 작품 배열이 존재할 경우, 작품 제목들 중 하나라도 포함하는지 확인
             const matchWorks = d.works && d.works.some(w => w.title.toLowerCase().includes(term));
-            
             return matchDirector || matchWorks;
         })
         : dirState.selectedDirectors;
@@ -60,7 +73,6 @@ function renderDirectorGrid(searchTerm = "") {
     // Step 2: 최종 수상자 선택 렌더링
     // ==========================================
     if (dirState.step === 2) {
-        // Step 2 전용 타이틀 추가
         const titleH2 = document.createElement("h2");
         titleH2.style.cssText = "color:var(--gold); margin-bottom:20px; font-size: 1.5rem; text-align: left;";
         titleH2.textContent = "최종 수상자를 선택하세요";
@@ -72,11 +84,13 @@ function renderDirectorGrid(searchTerm = "") {
             finalGrid.appendChild(createDirectorCard(director, "step2"));
         });
         container.appendChild(finalGrid);
+
+        applyVoteBadges();   // ✅ 추가: Step2 진입 시에도 뱃지 반영
         return;
     }
 
     // ==========================================
-    // Step 1: 작품 수별 아코디언 표시 (기존 로직 유지)
+    // Step 1: 작품 수별 아코디언 표시
     // ==========================================
     const groups = {};
     filteredData.forEach(d => {
@@ -124,7 +138,6 @@ function createDirectorCard(data, step) {
     const card = document.createElement("div");
 
     const worksCount = data.works ? data.works.length : 0;
-    const worksTitles = data.works ? data.works.map(w => w.title).join(', ') : '대표작 없음';
 
     // ==========================================
     // Step 2: 최종 선택용 카드
@@ -135,7 +148,12 @@ function createDirectorCard(data, step) {
             card.classList.add("selected");
         }
 
+        // ✅ 추가: 뱃지 매칭용 속성 (기존엔 없어서 Step2에서 뱃지가 안 떴음)
+        card.setAttribute('data-category', dirState.awardName);
+        card.setAttribute('data-anime-id', data.director);
+
         card.innerHTML = `
+            <div class="card-selection-rate" style="display:none;">0/0</div>
             <div class="card-badge">${worksCount}작품</div>
             <div class="card-thumb">
                 <img src="../${data.director_img}" alt="${data.director}" onerror="this.src='../image/placeholder.webp'">
@@ -145,14 +163,12 @@ function createDirectorCard(data, step) {
             </div>
         `;
 
-        // 배지 클릭 시 상세 정보 모달 열기
         const badge = card.querySelector('.card-badge');
         badge.onclick = (e) => {
             e.stopPropagation();
             openDetailModal(data);
         };
 
-        // 카드 클릭 시 단일 선택 로직
         card.onclick = () => {
             document.querySelectorAll(".step2-director-card").forEach(c => c.classList.remove("selected"));
             card.classList.add("selected");
@@ -164,14 +180,12 @@ function createDirectorCard(data, step) {
     }
 
     // ==========================================
-    // Step 1: 후보 선정용 카드 (기존 디자인)
+    // Step 1: 후보 선정용 카드
     // ==========================================
     card.className = "card";
-    // ✅ 추가: Firebase 연동용 data 속성
     card.setAttribute('data-category', dirState.awardName);
     card.setAttribute('data-anime-id', data.director);
 
-    // ✅ 추가: 득표율 뱃지 (좌측 상단)
     const rateBadge = document.createElement("div");
     rateBadge.className = "card-selection-rate";
     rateBadge.style.display = "none";
@@ -212,11 +226,9 @@ function toggleSelect(data, cardElement) {
     const index = dirState.selectedDirectors.findIndex(d => d.director === data.director);
     
     if (index > -1) {
-        // 제거
         dirState.selectedDirectors.splice(index, 1);
         cardElement.classList.remove("selected");
     } else {
-        // 추가
         dirState.selectedDirectors.push(data);
         cardElement.classList.add("selected");
     }
@@ -230,7 +242,6 @@ function updatePreview() {
     const previewList = document.getElementById('preview-list');
     if (!previewList) return;
     
-    // 선택된 항목이 없을 때
     if (dirState.selectedDirectors.length === 0) {
         previewList.innerHTML = `<span style="font-size: 0.85rem; color:#555;">후보를 선택해주세요</span>`;
         if (document.getElementById("btn-next")) document.getElementById("btn-next").disabled = true;
@@ -242,7 +253,6 @@ function updatePreview() {
         const div = document.createElement('div');
         div.className = 'preview-item';
         
-        // 성우 페이지와 동일하게 이름과 참여 작품 수를 표시 (클릭 시 삭제)
         div.innerHTML = `
             ${item.director}
             <br><small style="color:#888; font-size:0.75rem;">${item.works ? item.works.length : 0}개의 작품</small>
@@ -260,18 +270,17 @@ function updatePreview() {
         document.getElementById("btn-next").disabled = dirState.selectedDirectors.length === 0;
     }
 }
+
 /**
  * 프리뷰에서 제거
  */
 function removeDirector(name) {
-    // Step 2(최종 투표 단계)에서는 사이드바에서 삭제 불가하도록 설정
     if (dirState.step === 2) return;
 
     const index = dirState.selectedDirectors.findIndex(d => d.director === name);
     if (index > -1) {
         dirState.selectedDirectors.splice(index, 1);
         
-        // 메인 그리드의 카드 'selected' 클래스 제거
         const cards = document.querySelectorAll(".card");
         cards.forEach(c => {
             const titleElement = c.querySelector(".card-title");
@@ -296,7 +305,7 @@ function goStep2() {
         nextBtn.textContent = "수상 결정";
         nextBtn.disabled = true;
 
-        renderDirectorGrid(); // 선택된 후보만 다시 렌더링
+        renderDirectorGrid();
     } else {
         openWinnerModal();
     }
@@ -347,7 +356,6 @@ function openWinnerModal() {
 
     document.getElementById("winner-img").src = `../${winner.director_img}`;
     
-    // 우측 콘텐츠 생성
     const infoContent = document.getElementById("winner-info-content");
     const worksListHTML = winner.works.map(w => `
         <div class="info-row">
@@ -369,7 +377,6 @@ function openWinnerModal() {
     document.getElementById("winner-modal").classList.remove("hidden");
     fireConfetti();
     
-    // 로컬스토리지 저장 (감독상)
     ResultStorage.saveOne(dirState.awardName, {
         name: winner.director,
         thumbnail: winner.director_img,
@@ -390,7 +397,6 @@ function fireConfetti() {
     const end = Date.now() + duration;
 
     (function frame() {
-        // 왼쪽에서 발사
         confetti({
             particleCount: 3,
             angle: 60,
@@ -399,7 +405,6 @@ function fireConfetti() {
             zIndex: 9999,
             colors: ['#d4af37', '#ffffff']
         });
-        // 오른쪽에서 발사
         confetti({
             particleCount: 3,
             angle: 120,
@@ -414,6 +419,7 @@ function fireConfetti() {
         }
     }());
 }
+
 function applyVoteBadges() {
     if (!cachedVoteData) return;
 
@@ -434,7 +440,7 @@ function applyVoteBadges() {
 function listenToVoteRates() {
     if (!window.fbOnValue || !window.fbDB) return;
 
-    const categoryRef = window.fbRef(window.fbDB, `votes/categories/${dirState.awardName}`);
+    const categoryRef = window.fbRef(window.fbDB, window.getVotesCategoryPath(dirState.awardName));
 
     window.fbOnValue(categoryRef, (snapshot) => {
         cachedVoteData = snapshot.val() || {};
@@ -449,4 +455,3 @@ function waitForFirebaseAndListen() {
         setTimeout(waitForFirebaseAndListen, 300);
     }
 }
-waitForFirebaseAndListen();

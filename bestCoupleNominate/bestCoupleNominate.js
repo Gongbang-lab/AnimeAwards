@@ -1,10 +1,12 @@
-// --- 상태 변수 ---
-const SeasonFilteredAnimeList = SeasonFilter.filterAnimeList(AnimeList);
+// --- 상태 관리 (다른 페이지의 charState/cinemaState/nominateState와 통일) ---
+const coupleState = {
+    nominees: [],
+    selectedIndex: null,
+    currentPopupCharacters: [],
+    selectedPopupChars: []
+};
 
-let nominees = [];
-let selectedCoupleIndex = null;
-let currentPopupCharacters = [];
-let selectedPopupChars = [];
+const SeasonFilteredAnimeList = SeasonFilter.filterAnimeList(AnimeList);
 
 // --- DOM 요소 ---
 const searchInput = document.getElementById('searchInput');
@@ -56,23 +58,18 @@ window.onload = function() {
         }
     });
 
-    // 팝업 닫기
+    // ✅ 중복 제거: closeCharModal.onclick 한 번만 정의
     if (closeCharModal) {
         closeCharModal.onclick = () => {
             charModal.classList.add('hidden');
             resetPopupSelection();
         };
     }
-    closeCharModal.onclick = () => {
-        charModal.classList.add('hidden');
-        resetPopupSelection();
-    };
-    const closeInfoModal = document.getElementById('closeInfoModal');
-    const infoBtn = document.getElementById("info-btn");
-    const infoModal = document.getElementById('infoModal');
 
+    // ✅ 중복 제거: infoModal 관련 요소는 최상단에서 이미 선언됨, 재선언 삭제
     if (closeInfoModal) closeInfoModal.onclick = () => infoModal.classList.add('hidden');
     if (infoBtn) infoBtn.onclick = () => infoModal.classList.remove('hidden');
+
     // 기능 버튼
     addCoupleBtn.onclick = registerCouple;
     goMainBtn.onclick = () => { window.location.href = '../index.html'; };
@@ -81,19 +78,7 @@ window.onload = function() {
 };
 
 // --- 1. 검색 및 연관 검색어 로직 ---
-
-// 모든 애니메이션 제목을 가져오는 헬퍼 함수
-function getAllAnimeList() {
-    let allAnime = [];
-    if (typeof AnimeByQuarter !== 'undefined') {
-        for (const quarter in AnimeByQuarter) {
-            if (Array.isArray(AnimeByQuarter[quarter])) {
-                allAnime = allAnime.concat(AnimeByQuarter[quarter]);
-            }
-        }
-    }
-    return allAnime;
-}
+// ✅ 삭제: 존재하지 않는 AnimeByQuarter를 참조하고 어디서도 호출되지 않던 getAllAnimeList() 제거
 
 // 검색어 입력 시 호출
 function handleSearchInput() {
@@ -105,8 +90,7 @@ function handleSearchInput() {
         return;
     }
 
-    // AnimeList에서 제목 포함 여부 확인
-    const matches = SeasonFilteredAnimeList.filter(anime =>   // ← 수정
+    const matches = SeasonFilteredAnimeList.filter(anime =>
         anime.title.toLowerCase().includes(query)
     );
 
@@ -118,7 +102,6 @@ function handleSearchInput() {
             li.onclick = () => {
                 searchInput.value = anime.title;
                 closeSuggestions();
-                // 클릭 시 해당 애니메이션의 id로 바로 팝업 오픈
                 openCharacterPopup(anime.id, anime.title);
             };
             suggestionList.appendChild(li);
@@ -149,8 +132,7 @@ function performSearch(queryText) {
 // --- 2. 캐릭터 팝업 로직 ---
 
 function openCharacterPopup(animeId, animeTitle) {
-    // 1. CharacterData 배열에서 AnimeList의 id와 일치하는 객체를 찾습니다.
-    // id가 숫자이므로 일치 연산자(===)가 정확히 작동합니다.
+    // ✅ 수정: CharacterData_2026 하드코딩 → resolveYear.js가 만든 별칭 CharacterData 사용
     const animeEntry = CharacterData.find(entry => entry.id === animeId);
 
     if (!animeEntry || !animeEntry.characters || animeEntry.characters.length === 0) {
@@ -161,27 +143,24 @@ function openCharacterPopup(animeId, animeTitle) {
 
     const targetCharacters = animeEntry.characters;
 
-    // 2. 모달 인터페이스 업데이트
     modalAnimeTitle.textContent = animeTitle;
-    currentPopupCharacters = targetCharacters;
+    coupleState.currentPopupCharacters = targetCharacters;
     resetPopupSelection();
-    
-    // 3. 캐릭터 카드 렌더링
+
     renderCharacterCards(targetCharacters);
-    
-    // 4. 모달 표시
+
     charModal.classList.remove('hidden');
 }
 
 function renderCharacterCards(characters) {
     characterGrid.innerHTML = '';
-    
+
     characters.forEach((char) => {
         if (!char) return;
 
         const card = document.createElement('div');
-        card.className = 'char-card'; // CSS에서 세로 스택 & width:100% 처리됨
-        
+        card.className = 'char-card';
+
         const img = document.createElement('img');
         img.src = `../${char.img}`;
         img.alt = char.name;
@@ -200,14 +179,14 @@ function renderCharacterCards(characters) {
 }
 
 function toggleCharSelection(cardElement, charObj) {
-    const isSelected = selectedPopupChars.some(c => c.name === charObj.name);
+    const isSelected = coupleState.selectedPopupChars.some(c => c.name === charObj.name);
 
     if (isSelected) {
-        selectedPopupChars = selectedPopupChars.filter(c => c.name !== charObj.name);
+        coupleState.selectedPopupChars = coupleState.selectedPopupChars.filter(c => c.name !== charObj.name);
         cardElement.classList.remove('selected');
     } else {
-        if (selectedPopupChars.length < 2) {
-            selectedPopupChars.push(charObj);
+        if (coupleState.selectedPopupChars.length < 2) {
+            coupleState.selectedPopupChars.push(charObj);
             cardElement.classList.add('selected');
         } else {
             alert("2명까지만 선택 가능합니다.");
@@ -217,44 +196,42 @@ function toggleCharSelection(cardElement, charObj) {
 }
 
 function updateAddButtonState() {
-    const count = selectedPopupChars.length;
+    const count = coupleState.selectedPopupChars.length;
     addCoupleBtn.innerText = count === 2 ? "후보 등록 완료" : `후보 등록 (${count}/2)`;
     addCoupleBtn.disabled = (count !== 2);
 }
 
 function resetPopupSelection() {
-    selectedPopupChars = [];
+    coupleState.selectedPopupChars = [];
     updateAddButtonState();
 }
 
 function registerCouple() {
-    if (selectedPopupChars.length !== 2) return;
+    if (coupleState.selectedPopupChars.length !== 2) return;
 
     const newCouple = {
         id: Date.now(),
-        char1: selectedPopupChars[0],
-        char2: selectedPopupChars[1],
+        char1: coupleState.selectedPopupChars[0],
+        char2: coupleState.selectedPopupChars[1],
         animeTitle: modalAnimeTitle.textContent
     };
 
-    nominees.push(newCouple);
+    coupleState.nominees.push(newCouple);
     charModal.classList.add('hidden');
 
-    const mainArea = document.getElementById('mainArea');
     mainArea.classList.add('has-candidates');
     renderNominees();
-    
-    mainArea.classList.add('has-candidates');
+
     searchInput.value = '';
 }
 
 function renderNominees() {
     nomineeList.innerHTML = '';
     const confirmBtn = document.getElementById('confirmAwardBtn');
-    
-    nominees.forEach((couple, index) => {
+
+    coupleState.nominees.forEach((couple, index) => {
         const card = document.createElement('div');
-        card.className = `couple-card ${index === selectedCoupleIndex ? 'selected' : ''}`;
+        card.className = `couple-card ${index === coupleState.selectedIndex ? 'selected' : ''}`;
         card.innerHTML = `
             <div class="couple-imgs">
                 <div class="couple-img-wrap"><img src="../${couple.char1.img}"></div>
@@ -266,43 +243,33 @@ function renderNominees() {
             </div>
         `;
         card.onclick = () => {
-            selectedCoupleIndex = (selectedCoupleIndex === index) ? null : index;
-            confirmBtn.disabled = (selectedCoupleIndex === null);
+            coupleState.selectedIndex = (coupleState.selectedIndex === index) ? null : index;
+            confirmBtn.disabled = (coupleState.selectedIndex === null);
             renderNominees();
         };
         nomineeList.appendChild(card);
     });
 }
+
 // --- 3. 수상 및 폭죽 로직 ---
 
 function showAwardModal() {
-    if (selectedCoupleIndex === null) return;
-    const winner = nominees[selectedCoupleIndex];
-    
-    document.getElementById("awardAnimeTitle").textContent = winner.animeTitle;
-    document.getElementById("awardImg1").src = winner.char1.img;
-    document.getElementById("awardName1").textContent = winner.char1.name;
-    document.getElementById("awardImg2").src = winner.char2.img;
-    document.getElementById("awardName2").textContent = winner.char2.name;
+    if (coupleState.selectedIndex === null) return;
+    const winner = coupleState.nominees[coupleState.selectedIndex];
 
-    document.getElementById('awardModal').classList.remove('hidden');
-    
-    // 모달 내용 채우기
     awardAnimeTitle.textContent = winner.animeTitle;
     awardImg1.src = `../${winner.char1.img}`;
     awardName1.textContent = winner.char1.name;
     awardImg2.src = `../${winner.char2.img}`;
     awardName2.textContent = winner.char2.name;
 
-    // 모달 띄우기
     awardModal.classList.remove('hidden');
 
-    // 폭죽 시작
     fireConfetti();
 }
 
 async function saveAndGoMain() {
-    if (selectedCoupleIndex === null) {
+    if (coupleState.selectedIndex === null) {
         alert("수상할 커플을 선택해주세요!");
         return;
     }
@@ -312,26 +279,19 @@ async function saveAndGoMain() {
     confirmBtn.disabled = true;
 
     try {
-        const winner = nominees[selectedCoupleIndex];
+        const winner = coupleState.nominees[coupleState.selectedIndex];
         const path1 = winner.char1.img.startsWith('../') ? winner.char1.img : `../${winner.char1.img}`;
         const path2 = winner.char2.img.startsWith('../') ? winner.char2.img : `../${winner.char2.img}`;
 
-        
-        // [핵심] 기존 로컬스토리지 데이터 불러오기 (없으면 빈 객체)
-        const existingDataRaw = localStorage.getItem("anime_awards_result");
-        let finalData = existingDataRaw ? JSON.parse(existingDataRaw) : {};
-
-        // 이미지 병합 (260x378)
         const combinedImageBase64 = await createCombinedImage(path1, path2);
+
+        // ✅ 삭제: 예전 방식(anime_awards_result 직접 읽고쓰기) 완전히 제거, ResultStorage로 일원화
         ResultStorage.saveOne(awardName, {
             name1: winner.char1.name,
             name2: winner.char2.name,
             animeTitle: winner.animeTitle,
             img: combinedImageBase64
         });
-
-        // 전체 데이터 저장
-        localStorage.setItem("anime_awards_result", JSON.stringify(finalData));
 
         window.location.href = '../index.html';
 
@@ -348,23 +308,16 @@ function createCombinedImage(src1, src2) {
         const canvas = document.createElement('canvas');
         const ctx = canvas.getContext('2d');
 
-        // 목표 크기 설정
         const targetWidth = 260;
         const targetHeight = 378;
         canvas.width = targetWidth;
         canvas.height = targetHeight;
 
-        // 반쪽 너비
         const halfWidth = targetWidth / 2;
 
-        // 이미지 객체 생성
         const img1 = new Image();
         const img2 = new Image();
 
-        console.log("Loading Image 1:", src1);
-        console.log("Loading Image 2:", src2);
-
-        // CORS 문제 방지 (외부 이미지일 경우)
         img1.crossOrigin = "Anonymous";
         img2.crossOrigin = "Anonymous";
 
@@ -373,27 +326,20 @@ function createCombinedImage(src1, src2) {
         const checkLoad = () => {
             loadedCount++;
             if (loadedCount === 2) {
-                // 두 이미지가 모두 로드되면 그리기 시작
                 try {
-                    // 배경을 검은색으로 채우기 (투명 방지)
                     ctx.fillStyle = "#000";
                     ctx.fillRect(0, 0, targetWidth, targetHeight);
 
-                    // 왼쪽 이미지 그리기 (0 ~ 130px 영역)
                     drawImageCenterCover(ctx, img1, 0, 0, halfWidth, targetHeight);
-
-                    // 오른쪽 이미지 그리기 (130 ~ 260px 영역)
                     drawImageCenterCover(ctx, img2, halfWidth, 0, halfWidth, targetHeight);
 
-                    // (옵션) 가운데 구분선 그리기 - 세련된 느낌을 위해
                     ctx.beginPath();
                     ctx.moveTo(halfWidth, 0);
                     ctx.lineTo(halfWidth, targetHeight);
-                    ctx.strokeStyle = "#d4af37"; // 골드 컬러
+                    ctx.strokeStyle = "#d4af37";
                     ctx.lineWidth = 2;
                     ctx.stroke();
 
-                    // Base64 변환 (JPEG 포맷, 퀄리티 0.9)
                     const dataURL = canvas.toDataURL("image/jpeg", 0.9);
                     resolve(dataURL);
                 } catch (e) {
@@ -419,17 +365,15 @@ function drawImageCenterCover(ctx, img, x, y, w, h) {
     let sx, sy, sWidth, sHeight;
 
     if (imgRatio > targetRatio) {
-        // 이미지가 더 넓음 -> 높이를 맞추고 너비를 자름
         sHeight = img.height;
         sWidth = img.height * targetRatio;
         sy = 0;
-        sx = (img.width - sWidth) / 2; // 중앙 크롭
+        sx = (img.width - sWidth) / 2;
     } else {
-        // 이미지가 더 높음(길쭉함) -> 너비를 맞추고 높이를 자름
         sWidth = img.width;
         sHeight = img.width / targetRatio;
         sx = 0;
-        sy = (img.height - sHeight) / 2; // 중앙 크롭
+        sy = (img.height - sHeight) / 2;
     }
 
     ctx.drawImage(img, sx, sy, sWidth, sHeight, x, y, w, h);
@@ -441,7 +385,6 @@ function fireConfetti() {
     const end = Date.now() + duration;
 
     (function frame() {
-        // 왼쪽에서 발사
         confetti({
             particleCount: 3,
             angle: 60,
@@ -450,12 +393,11 @@ function fireConfetti() {
             zIndex: 9999,
             colors: ['#d4af37', '#ffffff']
         });
-        // 오른쪽에서 발사
         confetti({
             particleCount: 3,
             angle: 120,
             spread: 55,
-            origin: { x: 1, y: 0.6 }, 
+            origin: { x: 1, y: 0.6 },
             zIndex: 9999,
             colors: ['#d4af37', '#ffffff']
         });

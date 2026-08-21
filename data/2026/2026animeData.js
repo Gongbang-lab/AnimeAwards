@@ -1,4 +1,4 @@
-const AnimeList_2026 = [
+var AnimeList_2026 = [
   {
     "id": 61886,
     "year": 2026,
@@ -4077,5 +4077,382 @@ const AnimeList_2026 = [
     ]
   }
 },
-
+{
+  "id": 62542,
+  "title": "그랑블루 시즌3",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/그랑블루 시즌3.webp",
+  "day": "Tuesdays",
+  "episodes": 12,
+  "studio": [
+    "Zero-G",
+    "세이버 웍스"
+  ],
+  "staff": {
+    "director": [
+      "타카마츠 신지"
+    ],
+    "adaptor": [
+      "타카마츠 신지"
+    ],
+    "character_design": [
+      "요시오카 키미타케"
+    ],
+    "composer": [
+      "하시모토 유카리"
+    ]
+  }
+},
+{
+  "id": 46488,
+  "title": "대전 감사합니다 ~숙녀는 격투 게임을 안 해요~",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/대전 감사합니다 ~숙녀는 격투 게임을 안 해요~.webp",
+  "day": "Tuesdays",
+  "episodes": 12,
+  "studio": [
+    "디오미디어"
+  ],
+  "staff": {
+    "director": [
+      "이바타 쇼타"
+    ],
+    "adaptor": [
+      "와타리 와타루"
+    ],
+    "character_design": [
+      "마츠모토 마유코"
+    ],
+    "composer": [
+      "하시구치 카나"
+    ]
+  }
+},
+{
+  "id": 61126,
+  "title": "네가 죽을 때까지 사랑하고 싶어",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/네가 죽을 때까지 사랑하고 싶어.webp",
+  "day": "Tuesdays",
+  "episodes": 13,
+  "studio": [
+    "ROLL2"
+  ],
+  "staff": {
+    "director": [
+      "토모다 야스시",
+      "에노모토 나오"
+    ],
+    "adaptor": [
+      "하나다 줏키"
+    ],
+    "character_design": [
+      "유후 쿄코"
+    ],
+    "composer": [
+      "하시모토 유카리",
+      "미치루"
+    ]
+  }
+},
+{
+  "id": 58929,
+  "title": "공각기동대 THE GHOST IN THE SHELL",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/공각기동대 THE GHOST IN THE SHELL.webp",
+  "day": "Tuesdays",
+  "episodes": 0,
+  "studio": [
+    "사이언스 SARU"
+  ],
+  "staff": {
+    "director": [
+      "모코짱"
+    ],
+    "adaptor": [
+      "엔조 도"
+    ],
+    "character_design": [
+      "한다 슈헤이"
+    ],
+    "composer": [
+      "이와사키 타이세이",
+      "코니시 료",
+      "YUKI KANESAKA"
+    ]
+  }
+},
+{
+  "id": 63047,
+  "title": "개진전 사무라이 트루퍼",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/개진전 사무라이 트루퍼.webp",
+  "day": "Tuesdays",
+  "episodes": 12,
+  "studio": [
+    "Sunrise"
+  ],
+  "staff": {
+    "director": [
+      "후지타 요이치"
+    ],
+    "scriptwriter": [
+      "무토 쇼고"
+    ],
+    "character_design": [
+      "무로타 유헤이",
+      "코토부키 츠카사",
+      "니시무라 히로유키",
+      "야마나카 준코",
+      "닛타 미츠키",
+      "타나카 토모코"
+    ],
+    "composer": [
+      "카타야마 슈지"
+    ]
+  }
+},
+{
+  "id": 62476,
+  "title": "히든 카드가 많은 빅토리아",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/히든 카드가 많은 빅토리아.webp",
+  "day": "Wednesdays",
+  "episodes": 9,
+  "studio": [
+    "스튜디오 딘"
+  ],
+  "staff": {
+    "director": [
+      "키무라 노부카게"
+    ],
+    "adaptor": [
+      "후쿠시마 나오히로"
+    ],
+    "character_design": [
+      "오오사와 미나"
+    ],
+    "composer": [
+      "휴우가 모에"
+    ]
+  }
+},
+{
+  "id": 63489,
+  "title": "하늘은 붉은 강가",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/하늘은 붉은 강가.webp",
+  "day": "Wednesdays",
+  "episodes": 0,
+  "studio": [
+    "타츠노코 프로덕션"
+  ],
+  "staff": {
+    "director": [
+      "코바야시 코스케"
+    ],
+    "adaptor": [
+      "토미타 요리코"
+    ],
+    "character_design": [
+      "후지사키 켄지"
+    ],
+    "composer": [
+      "히라노 요시히사"
+    ]
+  }
+},
+{
+  "id": 62513,
+  "title": "클레바테스 Ⅱ -마수왕과 가짜 용사 전승-",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/클레바테스 Ⅱ -마수왕과 가짜 용사 전승-.webp",
+  "day": "Wednesdays",
+  "episodes": 13,
+  "studio": [
+    "Lay-duce"
+  ],
+  "staff": {
+    "director": [
+      "타구치 키요타카"
+    ],
+    "adaptor": [
+      "코야나기 케이고"
+    ],
+    "character_design": [
+      "사코 소이치로"
+    ],
+    "composer": [
+      "노부사와 노부아키"
+    ]
+  }
+},
+{
+  "id": 49233,
+  "title": "유녀전기 Ⅱ",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/유녀전기 Ⅱ.webp",
+  "day": "Wednesdays",
+  "episodes": 12,
+  "studio": [
+    "NUT"
+  ],
+  "staff": {
+    "director": [
+      "야마모토 타카유키"
+    ],
+    "adaptor": [
+      "이하라 켄타"
+    ],
+    "character_design": [
+      "호소고에 유지"
+    ],
+    "composer": [
+      "카타야마 슈지"
+    ]
+  }
+},
+{
+  "id": 61686,
+  "title": "올 워크스 메이드 입니다",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/히로인? 성녀? 아니요, 올 워크스 메이드 입니다(자랑)!.webp",
+  "day": "Wednesdays",
+  "episodes": 12,
+  "studio": [
+    "EMT 스퀘어드"
+  ],
+  "staff": {
+    "director": [
+      "무라카와 나오야"
+    ],
+    "adaptor": [
+      "네모토 토시조"
+    ],
+    "character_design": [
+      "토쿠가와 에리"
+    ],
+    "composer": [
+      "이토 켄"
+    ]
+  }
+},
+{
+  "id": 61316,
+  "title": "Re:제로부터 시작하는 이세계 생활 4기",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/Re 제로부터 시작하는 이세계 생활 4기.webp",
+  "day": "Wednesdays",
+  "episodes": 19,
+  "studio": [
+    "WHITE FOX"
+  ],
+  "staff": {
+    "director": [
+      "시노하라 마사히로"
+    ],
+    "adaptor": [
+      "요코타니 마사히로"
+    ],
+    "character_design": [
+      "사가와 하루카"
+    ],
+    "composer": [
+      "스에히로 켄이치로"
+    ]
+  }
+},
+{
+  "id": 62102,
+  "title": "구박하지 않는 계모와 언니들",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/구박하지 않는 계모와 언니들.webp",
+  "day": "Wednesdays",
+  "episodes": 0,
+  "studio": [
+    "NEWON"
+  ],
+  "staff": {
+    "director": [
+      "이노우에 케이스케"
+    ],
+    "adaptor": [
+      "호시노 나나미"
+    ],
+    "character_design": [
+      "사사키 무츠미"
+    ],
+    "composer": [
+      "타야마 리나"
+    ]
+  }
+},
+{
+  "id": 54000,
+  "title": "여성향 게임 세계는 모브에게 가혹한 세계입니다 2",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/여성향 게임 세계는 모브에게 가혹한 세계입니다 2.webp",
+  "day": "Wednesdays",
+  "episodes": 12,
+  "studio": [
+    "ENGI"
+  ],
+  "staff": {
+    "director": [
+      "미우라 카즈야"
+    ],
+    "adaptor": [
+      "이하라 켄타"
+    ],
+    "character_design": [
+      "스즈키 마사히코"
+    ],
+    "composer": [
+      "하시구치 카나",
+      "아라타메 쇼"
+    ]
+  }
+},
+{
+  "id": 61897,
+  "title": "촌구석 아저씨, 검성이 되다 Ⅱ",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/촌구석 아저씨, 검성이 되다 Ⅱ.webp",
+  "day": "Wednesdays",
+  "episodes": 12,
+  "studio": [
+    "팟쇼네",
+    "하야부사 필름"
+  ],
+  "staff": {
+    "director": [
+      "카즈미 아키오",
+      "코가 노조미",
+      "카와시마 마사루("
+    ],
+    "adaptor": [
+      "오카다 쿠니히코"
+    ],
+    "character_design": [
+      "하야사카 사츠키"
+    ],
+    "composer": [
+      "타카나시 야스하루"
+    ]
+  }
+},
 ];

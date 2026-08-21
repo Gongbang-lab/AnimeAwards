@@ -1,4 +1,4 @@
-const CharacterData_2026 = [
+var CharacterData_2026 = [
 {
   "id": 61886,
   "title": "Goumon Baito-kun no Nichijou",

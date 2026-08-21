@@ -1,4 +1,4 @@
-const AnimeAdaptorData_2026 = [
+var AnimeAdaptorData_2026 = [
   {
     "id": 61886,
     "title": "고문 아르바이트의 일상",

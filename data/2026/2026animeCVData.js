@@ -1,4 +1,4 @@
-const CharacterVoiceData_2026 = {
+var CharacterVoiceData_2026 = {
   "토키 슌이치": {
     "name": "토키 슌이치",
     "cvimg": "image/cvimg/토키 슌이치.webp",
@@ -7,27 +7,37 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "세로",
         "animeTitle": "고문 아르바이트의 일상",
-        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Cero.jpg"
+        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Cero.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "베네팀 레오풀",
         "animeTitle": "용사형에 처함",
-        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Venetim_Leopool.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Venetim_Leopool.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "시온",
         "animeTitle": "DARK MOON: 달의 제단",
-        "img": "image/charimg/2026/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Shion.jpg"
+        "img": "image/charimg/2026/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Shion.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "이르시아",
         "animeTitle": "전생했더니 드래곤의 알이었다 ~최강이 아니면 목표로 하지 않아~",
-        "img": "image/charimg/2026/Q1/Tensei_Shitara_Dragon_no_Tamago_Datta/Irushia.jpg"
+        "img": "image/charimg/2026/Q1/Tensei_Shitara_Dragon_no_Tamago_Datta/Irushia.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "알로켈 슈나이더",
         "animeTitle": "마계학교 이루마군 4기",
-        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Schneider_Allocer.jpg"
+        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Schneider_Allocer.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -39,7 +49,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "시우",
         "animeTitle": "고문 아르바이트의 일상",
-        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Shiu.jpg"
+        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Shiu.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -51,12 +63,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "미케",
         "animeTitle": "고문 아르바이트의 일상",
-        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Mikke.jpg"
+        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Mikke.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "에릭 길크리스트",
         "animeTitle": "비극의 원흉이 되는 최강악역 최종보스 여왕은 국민을 위해 헌신합니다 Season2",
-        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Eric_Gilchrist.jpg"
+        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Eric_Gilchrist.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -68,47 +84,65 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "휴우",
         "animeTitle": "고문 아르바이트의 일상",
-        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Hugh.jpg"
+        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Hugh.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "자이로 폴바츠",
         "animeTitle": "용사형에 처함",
-        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Xylo_Forbartz.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Xylo_Forbartz.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "토노메 아키라",
         "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
-        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Akira_Tounome.jpg"
+        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Akira_Tounome.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "랜돌프 얼스터",
         "animeTitle": "에리스의 성배",
-        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Randolph_Ulster.jpg"
+        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Randolph_Ulster.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "조프리 오브라이언",
         "animeTitle": "프리즘 윤무곡",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Joffrey_O'Brien.jpg"
+        "img": "image/charimg/2026/Q1/Prism_Rondo/Joffrey_O'Brien.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "자이로 체펠리",
         "animeTitle": "스틸 볼 런: 죠죠의 기묘한 모험",
-        "img": "image/charimg/2026/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Gyro_Zeppeli.jpg"
+        "img": "image/charimg/2026/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Gyro_Zeppeli.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "하시모토 마사요시",
         "animeTitle": "어서 오세요 실력지상주의 교실에 4th Season",
-        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Masayoshi_Hashimoto.jpg"
+        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Masayoshi_Hashimoto.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "코다 스구루",
         "animeTitle": "쿠지마 노래하면 집이 파다닥",
-        "img": "image/charimg/2026/Q2/Kujima_Utaeba_Ie_Hororo/Suguru_Kouda.jpg"
+        "img": "image/charimg/2026/Q2/Kujima_Utaeba_Ie_Hororo/Suguru_Kouda.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아라카와 쿄지",
         "animeTitle": "아카네 이야기",
-        "img": "image/charimg/2026/Q2/Akane-banashi/Kyoji_Arakawa.jpg"
+        "img": "image/charimg/2026/Q2/Akane-banashi/Kyoji_Arakawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -120,42 +154,58 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "폰",
         "animeTitle": "고문 아르바이트의 일상",
-        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Fon.jpg"
+        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Fon.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "리샤트",
         "animeTitle": "29세 독신 중견 모험가의 일상",
-        "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Richat.jpg"
+        "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Richat.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "카르마",
         "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
-        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Karma_Amanecer.jpg"
+        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Karma_Amanecer.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "모리오",
         "animeTitle": "치킨 파이터",
-        "img": "image/charimg/2026/Q2/Niwatori_Fighter/Morio.jpg"
+        "img": "image/charimg/2026/Q2/Niwatori_Fighter/Morio.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "시라토리 레이타",
         "animeTitle": "하이바라의 청춘 뉴 게임 플러스",
-        "img": "image/charimg/2026/Q2/Haibara-kun_no_Tsuyokute_Seishun_New_Game/Reita_Shiratori.jpg"
+        "img": "image/charimg/2026/Q2/Haibara-kun_no_Tsuyokute_Seishun_New_Game/Reita_Shiratori.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "사쿠라이 타미야",
         "animeTitle": "스노우볼 어스",
-        "img": "image/charimg/2026/Q2/Snowball_Earth/Tamiya_Sakurai.jpg"
+        "img": "image/charimg/2026/Q2/Snowball_Earth/Tamiya_Sakurai.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "릴리르 마스",
         "animeTitle": "지팡이와 검의 위스토리아 Season2",
-        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Lyril_Marze.jpg"
+        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Lyril_Marze.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아스트레아 라이브라",
         "animeTitle": "검은 고양이와 마녀의 교실",
-        "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Astraea_Libra.jpg"
+        "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Astraea_Libra.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -167,7 +217,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "네로",
         "animeTitle": "고문 아르바이트의 일상",
-        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Nero.jpg"
+        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Nero.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -179,37 +231,51 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "이즈아",
         "animeTitle": "고문 아르바이트의 일상",
-        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Izua.jpg"
+        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Izua.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "키라우시",
         "animeTitle": "골든 카무이 최종장",
-        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Kirawus.jpg"
+        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Kirawus.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "알레슈 인드라크",
         "animeTitle": "이세계 사정은 사축 하기 나름",
-        "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Aresh_Indolark.jpg"
+        "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Aresh_Indolark.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "사가미야 콘로",
         "animeTitle": "불꽃 소방대 3장",
-        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Konro_Sagamiya.jpg"
+        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Konro_Sagamiya.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "난조 코레키요",
         "animeTitle": "데드 어카운트",
-        "img": "image/charimg/2026/Q1/Dead_Account/Korekiyo_Nanzou.jpg"
+        "img": "image/charimg/2026/Q1/Dead_Account/Korekiyo_Nanzou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "킨로",
         "animeTitle": "닥터 스톤 SCIENCE FUTURE",
-        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Kinrou.jpg"
+        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Kinrou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "베루도라 템페스트",
         "animeTitle": "전생했더니 슬라임이었던 건에 대하여 4기",
-        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Veldora_Tempest.jpg"
+        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Veldora_Tempest.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -221,7 +287,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "라스",
         "animeTitle": "고문 아르바이트의 일상",
-        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Russ.jpg"
+        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Russ.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -233,12 +301,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "헤라",
         "animeTitle": "고문 아르바이트의 일상",
-        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Hela.jpg"
+        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Hela.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "비어벨",
         "animeTitle": "장송의 프리렌 2기",
-        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Wirbel.jpg"
+        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Wirbel.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -250,12 +322,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "루크",
         "animeTitle": "고문 아르바이트의 일상",
-        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Luk.jpg"
+        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Luk.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아카네 센타로",
         "animeTitle": "아름다운 초저녁달",
-        "img": "image/charimg/2026/Q1/Uruwashi_no_Yoi_no_Tsuki/Sentarou_Akane.jpg"
+        "img": "image/charimg/2026/Q1/Uruwashi_no_Yoi_no_Tsuki/Sentarou_Akane.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -267,42 +343,58 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "노에",
         "animeTitle": "고문 아르바이트의 일상",
-        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Noe.jpg"
+        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Noe.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "야마부키 아리스",
         "animeTitle": "한밤중 하트튠",
-        "img": "image/charimg/2026/Q1/Mayonaka_Heart_Tune/Arisu_Yamabuki.jpg"
+        "img": "image/charimg/2026/Q1/Mayonaka_Heart_Tune/Arisu_Yamabuki.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "베룬트",
         "animeTitle": "아르네의 사건부",
-        "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Bernd.jpg"
+        "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Bernd.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "야코 후타",
         "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
-        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Fuuta_Yakou.jpg"
+        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Fuuta_Yakou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "세키 노조무",
         "animeTitle": "반에서 두 번째로 귀여운 여자애와 친구가 되었다",
-        "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Nozomi_Seki.jpg"
+        "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Nozomi_Seki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "赤星隼人",
         "animeTitle": "얼음 성벽",
-        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Hayato_Akahoshi.jpg"
+        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Hayato_Akahoshi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "폰타",
         "animeTitle": "얼음 성벽",
-        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Ponta.jpg"
+        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Ponta.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "오우츠키 사쿠야",
         "animeTitle": "또 죽고 말았나요, 탐정님",
-        "img": "image/charimg/2026/Q2/Mata_Korosarete_Shimatta_no_desu_ne,_Tantei-sama/Sakuya_Outsuki.jpg"
+        "img": "image/charimg/2026/Q2/Mata_Korosarete_Shimatta_no_desu_ne,_Tantei-sama/Sakuya_Outsuki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -314,17 +406,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "리셰",
         "animeTitle": "고문 아르바이트의 일상",
-        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Rishe.jpg"
+        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Rishe.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "우사미 스이",
         "animeTitle": "인외 교실의 인간 혐오 교사",
-        "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Sui_Usami.jpg"
+        "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Sui_Usami.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "로바 마나카",
         "animeTitle": "메달리스트 2기",
-        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Manaka_Roba.jpg"
+        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Manaka_Roba.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -336,7 +434,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "레우",
         "animeTitle": "고문 아르바이트의 일상",
-        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Reu.jpg"
+        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Reu.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -348,37 +448,51 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "마니카",
         "animeTitle": "고문 아르바이트의 일상",
-        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Manica.jpg"
+        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Manica.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "애로우",
         "animeTitle": "불꽃 소방대 3장",
-        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Arrow.jpg"
+        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Arrow.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "반 네이 페르티오",
         "animeTitle": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
-        "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Van_Fertio.jpg"
+        "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Van_Fertio.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "야마기시 에렌",
         "animeTitle": "왼손잡이 에렌",
-        "img": "image/charimg/2026/Q2/Hidarikiki_no_Eren/Eren_Yamagishi.jpg"
+        "img": "image/charimg/2026/Q2/Hidarikiki_no_Eren/Eren_Yamagishi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "와니부치 에리",
         "animeTitle": "킬 블루",
-        "img": "image/charimg/2026/Q2/Kill_Ao/Eri_Wanibuchi.jpg"
+        "img": "image/charimg/2026/Q2/Kill_Ao/Eri_Wanibuchi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "사쿠라자와 선생(",
         "animeTitle": "황천의 츠가이",
-        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Sakurazawa.jpg"
+        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Sakurazawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "요자쿠라 나나오",
         "animeTitle": "요자쿠라 일가의 대작전 제2기",
-        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Nanao_Yozakura.jpg"
+        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Nanao_Yozakura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -390,12 +504,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "벨타",
         "animeTitle": "고문 아르바이트의 일상",
-        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Berta.jpg"
+        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Berta.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아즈키",
         "animeTitle": "마계학교 이루마군 4기",
-        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Azuki.jpg"
+        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Azuki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -407,22 +525,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "메리무",
         "animeTitle": "고문 아르바이트의 일상",
-        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Merim.jpg"
+        "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Merim.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "캐서린 애스터",
         "animeTitle": "프리즘 윤무곡",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Catherine_Astor.jpg"
+        "img": "image/charimg/2026/Q1/Prism_Rondo/Catherine_Astor.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "초노 후지코",
         "animeTitle": "허당 선도부원과 스커트 길이가 부적절한 여고생의 이야기",
-        "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Fujiko_Chouno.jpg"
+        "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Fujiko_Chouno.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "하자쿠라 루리",
         "animeTitle": "춘하추동 대행자 봄의 춤",
-        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Ruri_Hazakura.jpg"
+        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Ruri_Hazakura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -434,32 +560,44 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "하이마와리 코이치",
         "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
-        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Kouichi_Haimawari.jpg"
+        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Kouichi_Haimawari.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "이시모치 큐쇼",
         "animeTitle": "깨끗하게 해주시겠어요?",
-        "img": "image/charimg/2026/Q1/Kirei_ni_Shitemoraemasu_ka/Kyuushou_Ishimochi.jpg"
+        "img": "image/charimg/2026/Q1/Kirei_ni_Shitemoraemasu_ka/Kyuushou_Ishimochi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "토리고에 신노스케",
         "animeTitle": "화식조 우슈보로토비구미",
-        "img": "image/charimg/2026/Q1/Hikuidori/Shinnosuke_Torigoe.jpg"
+        "img": "image/charimg/2026/Q1/Hikuidori/Shinnosuke_Torigoe.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "나가오 무톤",
         "animeTitle": "일본삼국",
-        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Nagao_Muuton.jpg"
+        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Nagao_Muuton.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "플라치도 디 루비니",
         "animeTitle": "놓친 물고기는 컸지만 잡은 물고기가 너무 컸던 건",
-        "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Placido_di_Rubini.jpg"
+        "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Placido_di_Rubini.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "네코타 코타츠",
         "animeTitle": "킬 블루",
-        "img": "image/charimg/2026/Q2/Kill_Ao/Kotatsu_Nekota.jpg"
+        "img": "image/charimg/2026/Q2/Kill_Ao/Kotatsu_Nekota.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -471,37 +609,51 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "하네야마 카즈호",
         "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
-        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Kazuho_Haneyama.jpg"
+        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Kazuho_Haneyama.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "ケイラ",
         "animeTitle": "다윈 사변",
-        "img": "image/charimg/2026/Q1/Darwin_Jihen/Kayla.jpg"
+        "img": "image/charimg/2026/Q1/Darwin_Jihen/Kayla.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "카타요세 유라",
         "animeTitle": "【최애의 아이】 3기",
-        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Yura_Katayose.jpg"
+        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Yura_Katayose.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "우루 치에",
         "animeTitle": "하이스쿨! 기면조",
-        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Chie_Uru.jpg"
+        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Chie_Uru.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "코히나타 리릭",
         "animeTitle": "허당 선도부원과 스커트 길이가 부적절한 여고생의 이야기",
-        "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Ririku_Kohinata.jpg"
+        "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Ririku_Kohinata.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "닛타 니나",
         "animeTitle": "반에서 두 번째로 귀여운 여자애와 친구가 되었다",
-        "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Nina_Nitta.jpg"
+        "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Nina_Nitta.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "오토히메 마이",
         "animeTitle": "킬 블루",
-        "img": "image/charimg/2026/Q2/Kill_Ao/Mai_Otohime.jpg"
+        "img": "image/charimg/2026/Q2/Kill_Ao/Mai_Otohime.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -513,22 +665,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "쿠로이와 타케시",
         "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
-        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Oguro_Iwao.jpg"
+        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Oguro_Iwao.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아에슈마",
         "animeTitle": "마왕의 딸은 너무 친절해!!",
-        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Aeshma.jpg"
+        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Aeshma.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "마그마",
         "animeTitle": "닥터 스톤 SCIENCE FUTURE",
-        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Magma.jpg"
+        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Magma.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "다이아",
         "animeTitle": "북두의 권 -FIST OF THE NORTH STAR-",
-        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Diamond.jpg"
+        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Diamond.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -540,72 +700,100 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아이자와 쇼타",
         "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
-        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Shouta_Aizawa.jpg"
+        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Shouta_Aizawa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "료멘스쿠나",
         "animeTitle": "주술회전 3기",
-        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Sukuna.jpg"
+        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Sukuna.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "브래드",
         "animeTitle": "트라이건 스타게이즈",
-        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Brad.jpg"
+        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Brad.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "キース",
         "animeTitle": "악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다",
-        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Keith.jpg"
+        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Keith.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "카사마치 신고",
         "animeTitle": "위국일기",
-        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Shingo_Kasamachi.jpg"
+        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Shingo_Kasamachi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "오오토 칸쿠로",
         "animeTitle": "화식조 우슈보로토비구미",
-        "img": "image/charimg/2026/Q1/Hikuidori/Kankurou_Ooto.jpg"
+        "img": "image/charimg/2026/Q1/Hikuidori/Kankurou_Ooto.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아카바 카이토",
         "animeTitle": "MF고스트 3rd Season",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Kaito_Akabane.jpg"
+        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Kaito_Akabane.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "주화",
         "animeTitle": "지옥락 2기",
-        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Ju_Fa.jpg"
+        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Ju_Fa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "주진",
         "animeTitle": "지옥락 2기",
-        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Zhu_Jin.jpg"
+        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Zhu_Jin.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "구이화",
         "animeTitle": "지옥락 2기",
-        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Gui_Fa.jpg"
+        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Gui_Fa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "리처드 처치",
         "animeTitle": "프리즘 윤무곡",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Richard_Church.jpg"
+        "img": "image/charimg/2026/Q1/Prism_Rondo/Richard_Church.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "이스히스",
         "animeTitle": "고깔모자 아틀리에",
-        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Easthies.jpg"
+        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Easthies.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "바르",
         "animeTitle": "비극의 원흉이 되는 최강악역 최종보스 여왕은 국민을 위해 헌신합니다 Season2",
-        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Val.jpg"
+        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Val.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "카게모리 진",
         "animeTitle": "황천의 츠가이",
-        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Jin_Kagemori.jpg"
+        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Jin_Kagemori.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -617,17 +805,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "야마다 히자시",
         "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
-        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Hizashi_Yamada.jpg"
+        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Hizashi_Yamada.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "이타바시 토모히사",
         "animeTitle": "매리지 톡신",
-        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Tomohisa_Itabashi.jpg"
+        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Tomohisa_Itabashi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "이타바시 요스케",
         "animeTitle": "매리지 톡신",
-        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Yousuke_Itabashi.jpg"
+        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Yousuke_Itabashi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -639,7 +833,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "카야마 네무리",
         "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
-        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Nemuri_Kayama.jpg"
+        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Nemuri_Kayama.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -651,52 +847,72 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "시라쿠모 오보로",
         "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
-        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Oboro_Shirakumo.jpg"
+        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Oboro_Shirakumo.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "오오지 타쿠토",
         "animeTitle": "아름다운 초저녁달",
-        "img": "image/charimg/2026/Q1/Uruwashi_no_Yoi_no_Tsuki/Takuto_Ouji.jpg"
+        "img": "image/charimg/2026/Q1/Uruwashi_no_Yoi_no_Tsuki/Takuto_Ouji.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "카지 세이쥬로",
         "animeTitle": "화식조 우슈보로토비구미",
-        "img": "image/charimg/2026/Q1/Hikuidori/Seijurou_Kaji.jpg"
+        "img": "image/charimg/2026/Q1/Hikuidori/Seijurou_Kaji.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "토우마",
         "animeTitle": "지옥락 2기",
-        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Touma.jpg"
+        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Touma.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "미스미 아오테루",
         "animeTitle": "일본삼국",
-        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Aoteru_Misumi.jpg"
+        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Aoteru_Misumi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "마츠무라 코우세이",
         "animeTitle": "힘내라 나카무라 군",
-        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Kousei_Matsumura.jpg"
+        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Kousei_Matsumura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "사이온지 우쿄",
         "animeTitle": "닥터 스톤 SCIENCE FUTURE",
-        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Ukyou_Saionji.jpg"
+        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Ukyou_Saionji.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "카도와키 유타",
         "animeTitle": "옆집 천사님 때문에 어느샌가 인간적으로 타락한 사연 2",
-        "img": "image/charimg/2026/Q2/Otonari_no_Tenshi-sama_ni_Itsunomanika_Dame_Ningen_ni_Sareteita_Ken_2nd_Season/Yuuta_Kadowaki.jpg"
+        "img": "image/charimg/2026/Q2/Otonari_no_Tenshi-sama_ni_Itsunomanika_Dame_Ningen_ni_Sareteita_Ken_2nd_Season/Yuuta_Kadowaki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "유르",
         "animeTitle": "황천의 츠가이",
-        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Yuru.jpg"
+        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Yuru.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "토도로키 라이치",
         "animeTitle": "다이아몬드 에이스 actII -Second Season-",
-        "img": "image/charimg/2026/Q2/Diamond_no_Ace_act_II_Second_Season/Raichi_Todoroki.jpg"
+        "img": "image/charimg/2026/Q2/Diamond_no_Ace_act_II_Second_Season/Raichi_Todoroki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -708,32 +924,44 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "크리스토퍼 스카이라인",
         "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
-        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Christopher_Skyline.jpg"
+        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Christopher_Skyline.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "길버트 스타인",
         "animeTitle": "다윈 사변",
-        "img": "image/charimg/2026/Q1/Darwin_Jihen/Gilbert_Stein.jpg"
+        "img": "image/charimg/2026/Q1/Darwin_Jihen/Gilbert_Stein.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "니시노 츠요시",
         "animeTitle": "어차피, 사랑하고 만다. 2기",
-        "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Tsuyoshi_Nishino.jpg"
+        "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Tsuyoshi_Nishino.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "사토 시즈오",
         "animeTitle": "카야는 무섭지 않아",
-        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Shizuo_Satou.jpg"
+        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Shizuo_Satou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "알버트 로열 아이비",
         "animeTitle": "비극의 원흉이 되는 최강악역 최종보스 여왕은 국민을 위해 헌신합니다 Season2",
-        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Albert_Royal_Ivy.jpg"
+        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Albert_Royal_Ivy.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "칼스테드 토터 링크베르트",
         "animeTitle": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
-        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Karstedt.jpg"
+        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Karstedt.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -745,12 +973,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "츠카우치 나오마사",
         "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
-        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Naomasa_Tsukauchi.jpg"
+        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Naomasa_Tsukauchi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "라지트 히슬로",
         "animeTitle": "용사형에 처함",
-        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Rajit_Heathrow.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Rajit_Heathrow.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -762,22 +994,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "츠카우치 마코토",
         "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
-        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Makoto_Tsukauchi.jpg"
+        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Makoto_Tsukauchi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "시라누이 프릴",
         "animeTitle": "【최애의 아이】 3기",
-        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Frill_Shiranui.jpg"
+        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Frill_Shiranui.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "히가시마치 사키",
         "animeTitle": "일본삼국",
-        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Saki_Higashimachi.jpg"
+        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Saki_Higashimachi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "브리기테",
         "animeTitle": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
-        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Brigitte_Armbos.jpg"
+        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Brigitte_Armbos.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -789,62 +1029,86 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "토요미츠 타이시로",
         "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
-        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Taishirou_Toyomitsu.jpg"
+        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Taishirou_Toyomitsu.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "오르지프 로다",
         "animeTitle": "이세계 사정은 사축 하기 나름",
-        "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Orjef_Rhoda.jpg"
+        "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Orjef_Rhoda.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "막시밀리안 카스티엘",
         "animeTitle": "에리스의 성배",
-        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Maximillian_Castiel.jpg"
+        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Maximillian_Castiel.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "카림 플램",
         "animeTitle": "불꽃 소방대 3장",
-        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Karim_Flam.jpg"
+        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Karim_Flam.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "우타게 아빠",
         "animeTitle": "타몬 군 지금 어느 쪽!?",
-        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Utage_no_Chichi.jpg"
+        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Utage_no_Chichi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "도고 토시로",
         "animeTitle": "매리지 톡신",
-        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Toshiro_Dogo.jpg"
+        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Toshiro_Dogo.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "카미야 유스케",
         "animeTitle": "왼손잡이 에렌",
-        "img": "image/charimg/2026/Q2/Hidarikiki_no_Eren/Yuusuke_Kamiya.jpg"
+        "img": "image/charimg/2026/Q2/Hidarikiki_no_Eren/Yuusuke_Kamiya.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "모즈",
         "animeTitle": "닥터 스톤 SCIENCE FUTURE",
-        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Mozu.jpg"
+        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Mozu.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "주신",
         "animeTitle": "최강의 직업은 용사도 현자도 아닌 감정사(임시)인 것 같은데요",
-        "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Shushin.jpg"
+        "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Shushin.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "사카키 류쟈쿠",
         "animeTitle": "아카네 이야기",
-        "img": "image/charimg/2026/Q2/Akane-banashi/Ryujaku_Sakaki.jpg"
+        "img": "image/charimg/2026/Q2/Akane-banashi/Ryujaku_Sakaki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "시라누이",
         "animeTitle": "마오",
-        "img": "image/charimg/2026/Q2/MAO/Shiranui.jpg"
+        "img": "image/charimg/2026/Q2/MAO/Shiranui.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "요자쿠라 신조",
         "animeTitle": "요자쿠라 일가의 대작전 제2기",
-        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Shinzo_Yozakura.jpg"
+        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Shinzo_Yozakura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -856,7 +1120,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "카미하라 신야",
         "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
-        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Shinya_Kamihara.jpg"
+        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Shinya_Kamihara.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -868,22 +1134,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "베스트 지니스트",
         "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
-        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Tsunagu_Hakamada.jpg"
+        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Tsunagu_Hakamada.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "토노메 타쿠미",
         "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
-        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Takumi_Tounome.jpg"
+        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Takumi_Tounome.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "크레일",
         "animeTitle": "악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다",
-        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Crail.jpg"
+        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Crail.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "세드릭 실버 로웰",
         "animeTitle": "비극의 원흉이 되는 최강악역 최종보스 여왕은 국민을 위해 헌신합니다 Season2",
-        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Cedric_Silva_Lowell.jpg"
+        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Cedric_Silva_Lowell.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -895,17 +1169,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "카니야시키 모니카",
         "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
-        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Monika_Kaniyashiki.jpg"
+        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Monika_Kaniyashiki.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아나스타시아 호신",
         "animeTitle": "Re:제로부터 시작하는 이세계 생활 4기",
-        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Anastasia_Hoshin.jpg"
+        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Anastasia_Hoshin.jpg",
+        "quarter": "3분기",
+        "year": 2026
       },
       {
         "charName": "에키드나",
         "animeTitle": "Re:제로부터 시작하는 이세계 생활 4기",
-        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Eridna.jpg"
+        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Eridna.jpg",
+        "quarter": "3분기",
+        "year": 2026
       }
     ]
   },
@@ -917,42 +1197,58 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "No. 6",
         "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
-        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Number_6.jpg"
+        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Number_6.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "발칸 조제프",
         "animeTitle": "불꽃 소방대 3장",
-        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Vulcan_Joseph.jpg"
+        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Vulcan_Joseph.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "사노 이즈미",
         "animeTitle": "아름다운 그대에게",
-        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Izumi_Sano.jpg"
+        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Izumi_Sano.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "모로보시 세나",
         "animeTitle": "MF고스트 3rd Season",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Sena_Moroboshi.jpg"
+        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Sena_Moroboshi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "미우라 타카유키",
         "animeTitle": "라이어 게임",
-        "img": "image/charimg/2026/Q2/LIAR_GAME/Takayoshi_Miura.jpg"
+        "img": "image/charimg/2026/Q2/LIAR_GAME/Takayoshi_Miura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "라이몬드 치가타",
         "animeTitle": "놓친 물고기는 컸지만 잡은 물고기가 너무 컸던 건",
-        "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Raimondo_Cigata.jpg"
+        "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Raimondo_Cigata.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아카자와 이츠키",
         "animeTitle": "옆집 천사님 때문에 어느샌가 인간적으로 타락한 사연 2",
-        "img": "image/charimg/2026/Q2/Otonari_no_Tenshi-sama_ni_Itsunomanika_Dame_Ningen_ni_Sareteita_Ken_2nd_Season/Itsuki_Akazawa.jpg"
+        "img": "image/charimg/2026/Q2/Otonari_no_Tenshi-sama_ni_Itsunomanika_Dame_Ningen_ni_Sareteita_Ken_2nd_Season/Itsuki_Akazawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아자미 린도우",
         "animeTitle": "춘하추동 대행자 봄의 춤",
-        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Rindo_Azami.jpg"
+        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Rindo_Azami.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -964,47 +1260,65 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "야기 토시노리",
         "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
-        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Toshinori_Yagi.jpg"
+        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Toshinori_Yagi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "알리오토 페슈츠",
         "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
-        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Aliotto_Peschutz.jpg"
+        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Aliotto_Peschutz.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "버즈디롯 코델리온",
         "animeTitle": "Fate/strange Fake",
-        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Bazdilot_Cordelion.jpg"
+        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Bazdilot_Cordelion.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "에밀 한니넨",
         "animeTitle": "MF고스트 3rd Season",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Emile_Hänninen.jpg"
+        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Emile_Hänninen.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "스티븐 스틸",
         "animeTitle": "스틸 볼 런: 죠죠의 기묘한 모험",
-        "img": "image/charimg/2026/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Steven_Steel.jpg"
+        "img": "image/charimg/2026/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Steven_Steel.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "우루무드 압둘",
         "animeTitle": "스틸 볼 런: 죠죠의 기묘한 모험",
-        "img": "image/charimg/2026/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Urmd_Avdol.jpg"
+        "img": "image/charimg/2026/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Urmd_Avdol.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "케이지",
         "animeTitle": "치킨 파이터",
-        "img": "image/charimg/2026/Q2/Niwatori_Fighter/Keiji.jpg"
+        "img": "image/charimg/2026/Q2/Niwatori_Fighter/Keiji.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "토도로키 노부",
         "animeTitle": "힘내라 나카무라 군",
-        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Nobu_Todoroki.jpg"
+        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Nobu_Todoroki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "클로드",
         "animeTitle": "최강의 직업은 용사도 현자도 아닌 감정사(임시)인 것 같은데요",
-        "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Claude.jpg"
+        "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Claude.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -1016,32 +1330,44 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "올 포 원",
         "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
-        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/All_For_One.jpg"
+        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/All_For_One.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "리베라 파이어어벤트",
         "animeTitle": "다윈 사변",
-        "img": "image/charimg/2026/Q1/Darwin_Jihen/Rivera_Feyerabend.jpg"
+        "img": "image/charimg/2026/Q1/Darwin_Jihen/Rivera_Feyerabend.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아리만",
         "animeTitle": "마왕의 딸은 너무 친절해!!",
-        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Ahriman.jpg"
+        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Ahriman.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "제노프",
         "animeTitle": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~",
-        "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Zenoff.jpg"
+        "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Zenoff.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "한마 유지로",
         "animeTitle": "바키도: 무적의 검사 편",
-        "img": "image/charimg/2026/Q1/BAKI-DOU/Yujiro_Hanma.jpg"
+        "img": "image/charimg/2026/Q1/BAKI-DOU/Yujiro_Hanma.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아라카와 잇쇼",
         "animeTitle": "아카네 이야기",
-        "img": "image/charimg/2026/Q2/Akane-banashi/Isshou_Arakawa.jpg"
+        "img": "image/charimg/2026/Q2/Akane-banashi/Isshou_Arakawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -1053,7 +1379,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "이이다 텐세이",
         "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
-        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Tensei_Iida.jpg"
+        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Tensei_Iida.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -1065,22 +1393,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "하치스카 쿠인",
         "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
-        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Kuin_Hachisuka.jpg"
+        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Kuin_Hachisuka.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "길가",
         "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
-        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Gilga.jpg"
+        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Gilga.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "세실 그란벨",
         "animeTitle": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~",
-        "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Cecil_Granvelle.jpg"
+        "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Cecil_Granvelle.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "ハル",
         "animeTitle": "BEASTARS FINAL SEASON Part 2",
-        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Haru.jpg"
+        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Haru.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -1092,17 +1428,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "하이니스 퍼플",
         "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
-        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/His_Purple_Highness.jpg"
+        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/His_Purple_Highness.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "레츠 카이오",
         "animeTitle": "바키도: 무적의 검사 편",
-        "img": "image/charimg/2026/Q1/BAKI-DOU/Kaiou_Retsu.jpg"
+        "img": "image/charimg/2026/Q1/BAKI-DOU/Kaiou_Retsu.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "오른쪽",
         "animeTitle": "황천의 츠가이",
-        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Migi.jpg"
+        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Migi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -1114,7 +1456,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "홋타 이치로",
         "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
-        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Ichiro_Hotta.jpg"
+        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Ichiro_Hotta.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -1126,7 +1470,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "홋타 지로",
         "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
-        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Jiro_Hotta.jpg"
+        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Jiro_Hotta.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -1138,7 +1484,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "玉川三茶",
         "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
-        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Sansa_Tamakawa.jpg"
+        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Sansa_Tamakawa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -1150,22 +1498,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "釘崎爪牙",
         "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
-        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Souga_Kugizaki.jpg"
+        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Souga_Kugizaki.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "이시카와 다쿠보쿠",
         "animeTitle": "골든 카무이 최종장",
-        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Takuboku_Ishikawa.jpg"
+        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Takuboku_Ishikawa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "레이",
         "animeTitle": "온화한 귀족의 휴가의 권장",
-        "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Ray.jpg"
+        "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Ray.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "새의 마도사",
         "animeTitle": "샹피뇽의 마녀",
-        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Tori_no_Mahoutsukai.jpg"
+        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Tori_no_Mahoutsukai.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -1177,7 +1533,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "灯市燃",
         "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
-        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Moyuru_Touchi.jpg"
+        "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Moyuru_Touchi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -1189,52 +1547,72 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "킨메 와카나",
         "animeTitle": "깨끗하게 해주시겠어요?",
-        "img": "image/charimg/2026/Q1/Kirei_ni_Shitemoraemasu_ka/Wakana_Kinme.jpg"
+        "img": "image/charimg/2026/Q1/Kirei_ni_Shitemoraemasu_ka/Wakana_Kinme.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "키리노 이코",
         "animeTitle": "한밤중 하트튠",
-        "img": "image/charimg/2026/Q1/Mayonaka_Heart_Tune/Iko_Kirino.jpg"
+        "img": "image/charimg/2026/Q1/Mayonaka_Heart_Tune/Iko_Kirino.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "리루이",
         "animeTitle": "29세 독신 중견 모험가의 일상",
-        "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Rirui.jpg"
+        "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Rirui.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "스칼렛 카스티엘",
         "animeTitle": "에리스의 성배",
-        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Scarlet_Castiel.jpg"
+        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Scarlet_Castiel.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "스즈키 미유",
         "animeTitle": "정반대의 너와 나",
-        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Miyu_Suzuki.jpg"
+        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Miyu_Suzuki.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아마미 유우",
         "animeTitle": "반에서 두 번째로 귀여운 여자애와 친구가 되었다",
-        "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Yuu_Amami.jpg"
+        "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Yuu_Amami.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "세라피나 드 라빌란트",
         "animeTitle": "공주 기사는 야만족의 신부",
-        "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Serafina_de_Lavillant.jpg"
+        "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Serafina_de_Lavillant.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "나나세 유이노",
         "animeTitle": "하이바라의 청춘 뉴 게임 플러스",
-        "img": "image/charimg/2026/Q2/Haibara-kun_no_Tsuyokute_Seishun_New_Game/Yuino_Nanase.jpg"
+        "img": "image/charimg/2026/Q2/Haibara-kun_no_Tsuyokute_Seishun_New_Game/Yuino_Nanase.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "카미이나 보탄",
         "animeTitle": "카미이나 보탄, 취한 모습은 백합의 꽃",
-        "img": "image/charimg/2026/Q2/Kamiina_Botan,_Yoeru_Sugata_wa_Yuri_no_Hana/Botan_Kamiina.jpg"
+        "img": "image/charimg/2026/Q2/Kamiina_Botan,_Yoeru_Sugata_wa_Yuri_no_Hana/Botan_Kamiina.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "쟌느",
         "animeTitle": "카난 님은 초보 악마",
-        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Jeanne.jpg"
+        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Jeanne.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -1246,27 +1624,37 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "와카스기 쿠리루",
         "animeTitle": "깨끗하게 해주시겠어요?",
-        "img": "image/charimg/2026/Q1/Kirei_ni_Shitemoraemasu_ka/Kuriru_Wakasagi.jpg"
+        "img": "image/charimg/2026/Q1/Kirei_ni_Shitemoraemasu_ka/Kuriru_Wakasagi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아야츠무기 로카",
         "animeTitle": "초(超) 가구야 공주!",
-        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Roka_Ayatsumugi.jpg"
+        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Roka_Ayatsumugi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "하이가미네 유리우",
         "animeTitle": "또 죽고 말았나요, 탐정님",
-        "img": "image/charimg/2026/Q2/Mata_Korosarete_Shimatta_no_desu_ne,_Tantei-sama/Yuriu_Haigamine.jpg"
+        "img": "image/charimg/2026/Q2/Mata_Korosarete_Shimatta_no_desu_ne,_Tantei-sama/Yuriu_Haigamine.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "토나미 이부키",
         "animeTitle": "카미이나 보탄, 취한 모습은 백합의 꽃",
-        "img": "image/charimg/2026/Q2/Kamiina_Botan,_Yoeru_Sugata_wa_Yuri_no_Hana/Ibuki_Tonami.jpg"
+        "img": "image/charimg/2026/Q2/Kamiina_Botan,_Yoeru_Sugata_wa_Yuri_no_Hana/Ibuki_Tonami.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "히메다카 사쿠라",
         "animeTitle": "춘하추동 대행자 봄의 춤",
-        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Sakura_Himedaka.jpg"
+        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Sakura_Himedaka.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -1278,17 +1666,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "카타구치 나이로",
         "animeTitle": "깨끗하게 해주시겠어요?",
-        "img": "image/charimg/2026/Q1/Kirei_ni_Shitemoraemasu_ka/Nairo_Katakuchi.jpg"
+        "img": "image/charimg/2026/Q1/Kirei_ni_Shitemoraemasu_ka/Nairo_Katakuchi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "亜昼 美玖",
         "animeTitle": "메달리스트 2기",
-        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Miku_Ahiru.jpg"
+        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Miku_Ahiru.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아마네 케이",
         "animeTitle": "오타쿠에게 상냥한 갸루는 없다",
-        "img": "image/charimg/2026/Q2/Otaku_ni_Yasashii_Gal_wa_Inai!/Kei_Amane.jpg"
+        "img": "image/charimg/2026/Q2/Otaku_ni_Yasashii_Gal_wa_Inai!/Kei_Amane.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -1300,27 +1694,37 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "야가라 아사미",
         "animeTitle": "깨끗하게 해주시겠어요?",
-        "img": "image/charimg/2026/Q1/Kirei_ni_Shitemoraemasu_ka/Asami_Yagara.jpg"
+        "img": "image/charimg/2026/Q1/Kirei_ni_Shitemoraemasu_ka/Asami_Yagara.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "네이거스",
         "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
-        "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Neigass.jpg"
+        "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Neigass.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "유이츠카 노조미",
         "animeTitle": "메달리스트 2기",
-        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Nozomi_Yuitsuka.jpg"
+        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Nozomi_Yuitsuka.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "노기 아오",
         "animeTitle": "스노우볼 어스",
-        "img": "image/charimg/2026/Q2/Snowball_Earth/Ao_Nogi.jpg"
+        "img": "image/charimg/2026/Q2/Snowball_Earth/Ao_Nogi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "하루",
         "animeTitle": "도로헤도로 시즌 2",
-        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Haru.jpg"
+        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Haru.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -1332,12 +1736,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "와카스기 모루다",
         "animeTitle": "깨끗하게 해주시겠어요?",
-        "img": "image/charimg/2026/Q1/Kirei_ni_Shitemoraemasu_ka/Moruda_Wakasagi.jpg"
+        "img": "image/charimg/2026/Q1/Kirei_ni_Shitemoraemasu_ka/Moruda_Wakasagi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "田中",
         "animeTitle": "얼음 성벽",
-        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Tanaka.jpg"
+        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Tanaka.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -1349,7 +1757,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아지",
         "animeTitle": "깨끗하게 해주시겠어요?",
-        "img": "image/charimg/2026/Q1/Kirei_ni_Shitemoraemasu_ka/Aji.jpg"
+        "img": "image/charimg/2026/Q1/Kirei_ni_Shitemoraemasu_ka/Aji.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -1361,22 +1771,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "하츠아유 우카",
         "animeTitle": "깨끗하게 해주시겠어요?",
-        "img": "image/charimg/2026/Q1/Kirei_ni_Shitemoraemasu_ka/Uka_Hatsuayu.jpg"
+        "img": "image/charimg/2026/Q1/Kirei_ni_Shitemoraemasu_ka/Uka_Hatsuayu.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "리스 쿠루미",
         "animeTitle": "메달리스트 2기",
-        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Kurumi_Risu.jpg"
+        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Kurumi_Risu.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "마리에타",
         "animeTitle": "악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다",
-        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Marietta.jpg"
+        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Marietta.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "미엘",
         "animeTitle": "카난 님은 초보 악마",
-        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Miel_Zebul.jpg"
+        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Miel_Zebul.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -1388,42 +1806,58 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "스기모토 사이치",
         "animeTitle": "골든 카무이 최종장",
-        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Saichi_Sugimoto.jpg"
+        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Saichi_Sugimoto.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "엑스",
         "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
-        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Ex.jpg"
+        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Ex.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "디",
         "animeTitle": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
-        "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Dee.jpg"
+        "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Dee.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "지엔 오토야",
         "animeTitle": "데드 어카운트",
-        "img": "image/charimg/2026/Q1/Dead_Account/Jien_Otoya.jpg"
+        "img": "image/charimg/2026/Q1/Dead_Account/Jien_Otoya.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "시온",
         "animeTitle": "지옥락 2기",
-        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Shion.jpg"
+        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Shion.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "담임선생님",
         "animeTitle": "초(超) 가구야 공주!",
-        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Tannin_no_Sensei.jpg"
+        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Tannin_no_Sensei.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "レゴシ",
         "animeTitle": "BEASTARS FINAL SEASON Part 2",
-        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Legoshi.jpg"
+        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Legoshi.jpg",
+        "quarter": "",
+        "year": ""
       },
       {
         "charName": "탄바 테츠오",
         "animeTitle": "댄덜라이언",
-        "img": "image/charimg/2026/Q2/Dandelion/Tetsuo_Tanba.jpg"
+        "img": "image/charimg/2026/Q2/Dandelion/Tetsuo_Tanba.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -1435,52 +1869,72 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아시리파",
         "animeTitle": "골든 카무이 최종장",
-        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Asirpa.jpg"
+        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Asirpa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "공주",
         "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
-        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Hime.jpg"
+        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Hime.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "콧코",
         "animeTitle": "29세 독신 중견 모험가의 일상",
-        "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Cocko.jpg"
+        "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Cocko.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아자미 마코",
         "animeTitle": "【최애의 아이】 3기",
-        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Mako_Azami.jpg"
+        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Mako_Azami.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "루나",
         "animeTitle": "샹피뇽의 마녀",
-        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Luna.jpg"
+        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Luna.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "카와 유이",
         "animeTitle": "하이스쿨! 기면조",
-        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Yui_Kawa.jpg"
+        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Yui_Kawa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "게로 아카리",
         "animeTitle": "매리지 톡신",
-        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Akari_Gero.jpg"
+        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Akari_Gero.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "A 아인슈타인",
         "animeTitle": "리인카네이션의 꽃잎",
-        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Albert_Einstein.jpg"
+        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Albert_Einstein.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "시라카와 치토세",
         "animeTitle": "옆집 천사님 때문에 어느샌가 인간적으로 타락한 사연 2",
-        "img": "image/charimg/2026/Q2/Otonari_no_Tenshi-sama_ni_Itsunomanika_Dame_Ningen_ni_Sareteita_Ken_2nd_Season/Chitose_Shirakawa.jpg"
+        "img": "image/charimg/2026/Q2/Otonari_no_Tenshi-sama_ni_Itsunomanika_Dame_Ningen_ni_Sareteita_Ken_2nd_Season/Chitose_Shirakawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "이오 타우로스",
         "animeTitle": "검은 고양이와 마녀의 교실",
-        "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Io_Taurus.jpg"
+        "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Io_Taurus.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -1492,7 +1946,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "시라이시 요시타케",
         "animeTitle": "골든 카무이 최종장",
-        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Yoshitake_Shiraishi.jpg"
+        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Yoshitake_Shiraishi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -1504,7 +1960,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "히지카타 토시조",
         "animeTitle": "골든 카무이 최종장",
-        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Toshizou_Hijikata.jpg"
+        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Toshizou_Hijikata.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -1516,12 +1974,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "나가쿠라 신파치",
         "animeTitle": "골든 카무이 최종장",
-        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Shinpachi_Nagakura.jpg"
+        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Shinpachi_Nagakura.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "오로치 돗포",
         "animeTitle": "바키도: 무적의 검사 편",
-        "img": "image/charimg/2026/Q1/BAKI-DOU/Doppo_Orochi.jpg"
+        "img": "image/charimg/2026/Q1/BAKI-DOU/Doppo_Orochi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -1533,27 +1995,37 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "오가타 햐쿠노스케",
         "animeTitle": "골든 카무이 최종장",
-        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Hyakunosuke_Ogata.jpg"
+        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Hyakunosuke_Ogata.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "조커",
         "animeTitle": "불꽃 소방대 3장",
-        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Joker.jpg"
+        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Joker.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "호박의 가시",
         "animeTitle": "쓰레기 용사",
-        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Kohaku_no_Ibara_Kyou.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Kohaku_no_Ibara_Kyou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "요이의 아버지",
         "animeTitle": "아름다운 초저녁달",
-        "img": "image/charimg/2026/Q1/Uruwashi_no_Yoi_no_Tsuki/Yoi_no_Chichi.jpg"
+        "img": "image/charimg/2026/Q1/Uruwashi_no_Yoi_no_Tsuki/Yoi_no_Chichi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "베스타",
         "animeTitle": "전생했더니 슬라임이었던 건에 대하여 4기",
-        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Vesta.jpg"
+        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Vesta.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -1565,7 +2037,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "츠루미 토쿠시로",
         "animeTitle": "골든 카무이 최종장",
-        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Tokushirou_Tsurumi.jpg"
+        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Tokushirou_Tsurumi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -1577,17 +2051,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "우시야마 타츠우마",
         "animeTitle": "골든 카무이 최종장",
-        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Tatsuma_Ushiyama.jpg"
+        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Tatsuma_Ushiyama.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "리데오 소드릭",
         "animeTitle": "용사형에 처함",
-        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Lideo_Soderick.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Lideo_Soderick.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "지드",
         "animeTitle": "북두의 권 -FIST OF THE NORTH STAR-",
-        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Zeed.jpg"
+        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Zeed.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -1599,42 +2079,58 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "니카이도 코헤이",
         "animeTitle": "골든 카무이 최종장",
-        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Kouhei_Nikaidou.jpg"
+        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Kouhei_Nikaidou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "펭타",
         "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
-        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Penta.jpg"
+        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Penta.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "크리슈나",
         "animeTitle": "에리스의 성배",
-        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Rufus_May.jpg"
+        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Rufus_May.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "버틀러 폰 그란벨",
         "animeTitle": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~",
-        "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Butler_von_Granvelle.jpg"
+        "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Butler_von_Granvelle.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "레이드 아스트레아",
         "animeTitle": "Re:제로부터 시작하는 이세계 생활 4기",
-        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Reid_Astrea.jpg"
+        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Reid_Astrea.jpg",
+        "quarter": "3분기",
+        "year": 2026
       },
       {
         "charName": "아다루만",
         "animeTitle": "전생했더니 슬라임이었던 건에 대하여 4기",
-        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Adalman.jpg"
+        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Adalman.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "사가미 잇세키",
         "animeTitle": "스노우볼 어스",
-        "img": "image/charimg/2026/Q2/Snowball_Earth/Isseki_Sagami.jpg"
+        "img": "image/charimg/2026/Q2/Snowball_Earth/Isseki_Sagami.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "다곤",
         "animeTitle": "카난 님은 초보 악마",
-        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Dagon.jpg"
+        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Dagon.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -1646,42 +2142,58 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "코이토 오토노신",
         "animeTitle": "골든 카무이 최종장",
-        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Otonoshin_Koito.jpg"
+        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Otonoshin_Koito.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "한자 세르반테스",
         "animeTitle": "Fate/strange Fake",
-        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Hansa_Cervantes.jpg"
+        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Hansa_Cervantes.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아서 펜드래건",
         "animeTitle": "쓰레기 용사",
-        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Arthur_Pendragon.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Arthur_Pendragon.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "다그다",
         "animeTitle": "고깔모자 아틀리에",
-        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Dagda.jpg"
+        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Dagda.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "항우",
         "animeTitle": "리인카네이션의 꽃잎",
-        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Kouu.jpg"
+        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Kouu.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "소조로기 카오루타",
         "animeTitle": "또 죽고 말았나요, 탐정님",
-        "img": "image/charimg/2026/Q2/Mata_Korosarete_Shimatta_no_desu_ne,_Tantei-sama/Kaoruta_Sozorogi.jpg"
+        "img": "image/charimg/2026/Q2/Mata_Korosarete_Shimatta_no_desu_ne,_Tantei-sama/Kaoruta_Sozorogi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "다이고",
         "animeTitle": "마오",
-        "img": "image/charimg/2026/Q2/MAO/Daigo.jpg"
+        "img": "image/charimg/2026/Q2/MAO/Daigo.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "요자쿠라 쿄이치로",
         "animeTitle": "요자쿠라 일가의 대작전 제2기",
-        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Kyouichirou_Yozakura.jpg"
+        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Kyouichirou_Yozakura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -1693,22 +2205,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "우이루크",
         "animeTitle": "골든 카무이 최종장",
-        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Wilk.jpg"
+        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Wilk.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "카밀",
         "animeTitle": "이세계 사정은 사축 하기 나름",
-        "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Camile_Karvada.jpg"
+        "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Camile_Karvada.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "하이터",
         "animeTitle": "장송의 프리렌 2기",
-        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Heiter.jpg"
+        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Heiter.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "보스",
         "animeTitle": "킬 블루",
-        "img": "image/charimg/2026/Q2/Kill_Ao/Boss.jpg"
+        "img": "image/charimg/2026/Q2/Kill_Ao/Boss.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -1720,17 +2240,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "키로란케",
         "animeTitle": "골든 카무이 최종장",
-        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Kiroranke.jpg"
+        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Kiroranke.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "카부라기 마사야",
         "animeTitle": "【최애의 아이】 3기",
-        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Masaya_Kaburagi.jpg"
+        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Masaya_Kaburagi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아라카와 시구마",
         "animeTitle": "아카네 이야기",
-        "img": "image/charimg/2026/Q2/Akane-banashi/Shiguma_Arakawa.jpg"
+        "img": "image/charimg/2026/Q2/Akane-banashi/Shiguma_Arakawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -1742,12 +2268,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "카도쿠라 토시유키",
         "animeTitle": "골든 카무이 최종장",
-        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Toshiyuki_Kadokura.jpg"
+        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Toshiyuki_Kadokura.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "노르노아",
         "animeTitle": "고깔모자 아틀리에",
-        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Nolnoa.jpg"
+        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Nolnoa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -1759,7 +2289,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "토니 안지",
         "animeTitle": "골든 카무이 최종장",
-        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Toni_Anji.jpg"
+        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Toni_Anji.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -1771,7 +2303,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "츠키시마 하지메",
         "animeTitle": "골든 카무이 최종장",
-        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Hajime_Tsukishima.jpg"
+        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Hajime_Tsukishima.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -1783,57 +2317,79 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "우사미 토키시게",
         "animeTitle": "골든 카무이 최종장",
-        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Tokishige_Usami.jpg"
+        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Tokishige_Usami.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "타츠야",
         "animeTitle": "용사형에 처함",
-        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Tatsuya.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Tatsuya.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "슛세 키요시",
         "animeTitle": "하이스쿨! 기면조",
-        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Kiyoshi_Shusse.jpg"
+        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Kiyoshi_Shusse.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "밧슈 더 스탬피드",
         "animeTitle": "트라이건 스타게이즈",
-        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Vash_the_Stampede.jpg"
+        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Vash_the_Stampede.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "플랫 에스카르도스",
         "animeTitle": "Fate/strange Fake",
-        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Flatt_Escardos.jpg"
+        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Flatt_Escardos.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "텐조 유야",
         "animeTitle": "이세계에서 치트 스킬을 얻은 나는 현실 세계에서도 무쌍한다 ~레벨업이 인생을 바꿨다~ TVSP",
-        "img": "image/charimg/2026/Q1/Isekai_de_Cheat_Skill_wo_Te_ni_Shita_Ore_wa,_Genjitsu_Sekai_wo_mo_Musou_Suru_Level_Up_wa_Jinsei_wo_Kaeta/Yuuya_Tenjou.jpg"
+        "img": "image/charimg/2026/Q1/Isekai_de_Cheat_Skill_wo_Te_ni_Shita_Ore_wa,_Genjitsu_Sekai_wo_mo_Musou_Suru_Level_Up_wa_Jinsei_wo_Kaeta/Yuuya_Tenjou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "고마자와 노이",
         "animeTitle": "초(超) 가구야 공주!",
-        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Noi_Komazawa.jpg"
+        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Noi_Komazawa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "헤브이",
         "animeTitle": "자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season",
-        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Hevee.jpg"
+        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Hevee.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "베리알 베리 라즈베리",
         "animeTitle": "마계학교 이루마군 4기",
-        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Raspberry_Berry_Belial.jpg"
+        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Raspberry_Berry_Belial.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "요자쿠라 켄고",
         "animeTitle": "요자쿠라 일가의 대작전 제2기",
-        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Kengo_Yozakura.jpg"
+        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Kengo_Yozakura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "골리앗",
         "animeTitle": "요자쿠라 일가의 대작전 제2기",
-        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Goliath.jpg"
+        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Goliath.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -1845,47 +2401,65 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "바실리",
         "animeTitle": "골든 카무이 최종장",
-        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Vasily.jpg"
+        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Vasily.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "질",
         "animeTitle": "온화한 귀족의 휴가의 권장",
-        "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Gil.jpg"
+        "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Gil.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "호시카와 토고",
         "animeTitle": "어차피, 사랑하고 만다. 2기",
-        "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Tougo_Hoshikawa.jpg"
+        "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Tougo_Hoshikawa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "양손의 쐐기",
         "animeTitle": "쓰레기 용사",
-        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Morote_no_Kusabi_Kyou.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Morote_no_Kusabi_Kyou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "난바 미나미",
         "animeTitle": "아름다운 그대에게",
-        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Minami_Nanba.jpg"
+        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Minami_Nanba.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아쿠아스티드",
         "animeTitle": "악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다",
-        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Aquasteed_Marineforest.jpg"
+        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Aquasteed_Marineforest.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "마츠나가 켄고",
         "animeTitle": "화식조 우슈보로토비구미",
-        "img": "image/charimg/2026/Q1/Hikuidori/Gengo_Matsunaga.jpg"
+        "img": "image/charimg/2026/Q1/Hikuidori/Gengo_Matsunaga.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "다무엘",
         "animeTitle": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
-        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Damuel_Bernett.jpg"
+        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Damuel_Bernett.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "하리마 사이가",
         "animeTitle": "신의 정원이 딸린 쿠스노키 저택",
-        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Saiga_Harima.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Saiga_Harima.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -1897,27 +2471,37 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "오오사와 후사타로",
         "animeTitle": "골든 카무이 최종장",
-        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Fusatarou_Oosawa.jpg"
+        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Fusatarou_Oosawa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "이치도 레이",
         "animeTitle": "하이스쿨! 기면조",
-        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Rei_Ichidou.jpg"
+        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Rei_Ichidou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "길가메시",
         "animeTitle": "Fate/strange Fake",
-        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Gilgamesh.jpg"
+        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Gilgamesh.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "타카하시 케이스케",
         "animeTitle": "MF고스트 3rd Season",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Keisuke_Takahashi.jpg"
+        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Keisuke_Takahashi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "워크너 노그램",
         "animeTitle": "지팡이와 검의 위스토리아 Season2",
-        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Workner_Norgram.jpg"
+        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Workner_Norgram.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -1929,12 +2513,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "소피아 골든핸드",
         "animeTitle": "골든 카무이 최종장",
-        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Sofia_Goldenhand.jpg"
+        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Sofia_Goldenhand.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "킴벌리 스미스",
         "animeTitle": "에리스의 성배",
-        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Kimberly_Smith.jpg"
+        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Kimberly_Smith.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -1946,37 +2534,51 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아리코 리키마츠 일등병",
         "animeTitle": "골든 카무이 최종장",
-        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Rikimatsu_Ariko.jpg"
+        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Rikimatsu_Ariko.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "후지타 와타루",
         "animeTitle": "타몬 군 지금 어느 쪽!?",
-        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Wataru_Fujita.jpg"
+        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Wataru_Fujita.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "텐노지 메구미",
         "animeTitle": "아름다운 그대에게",
-        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Megumi_Tennouji.jpg"
+        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Megumi_Tennouji.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "샌드맨",
         "animeTitle": "스틸 볼 런: 죠죠의 기묘한 모험",
-        "img": "image/charimg/2026/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Sandman.jpg"
+        "img": "image/charimg/2026/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Sandman.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "류엔 카케루",
         "animeTitle": "어서 오세요 실력지상주의 교실에 4th Season",
-        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Kakeru_Ryuuen.jpg"
+        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Kakeru_Ryuuen.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "폴 T",
         "animeTitle": "리인카네이션의 꽃잎",
-        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Pol_Pot.jpg"
+        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Pol_Pot.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "시온 알스터",
         "animeTitle": "지팡이와 검의 위스토리아 Season2",
-        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Sion_Ulster.jpg"
+        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Sion_Ulster.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -1988,7 +2590,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "우에지 케이지",
         "animeTitle": "골든 카무이 최종장",
-        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Keiji_Ueji.jpg"
+        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Keiji_Ueji.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -2000,37 +2604,51 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "카네코 카에코",
         "animeTitle": "골든 카무이 최종장",
-        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Hanaeko_Kaneko.jpg"
+        "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Hanaeko_Kaneko.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "토처 토르튜어",
         "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
-        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Tortura_Torture.jpg"
+        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Tortura_Torture.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "베로니카 발리",
         "animeTitle": "29세 독신 중견 모험가의 일상",
-        "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Veronica_Valli.jpg"
+        "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Veronica_Valli.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "하쿠시",
         "animeTitle": "사망 유희로 밥을 먹는다.",
-        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Hakushi.jpg"
+        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Hakushi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아사나기 소라",
         "animeTitle": "반에서 두 번째로 귀여운 여자애와 친구가 되었다",
-        "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Sora_Asanagi.jpg"
+        "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Sora_Asanagi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "에마리아",
         "animeTitle": "최강의 직업은 용사도 현자도 아닌 감정사(임시)인 것 같은데요",
-        "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Emalia_Steinbart.jpg"
+        "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Emalia_Steinbart.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "오우사키 마사키",
         "animeTitle": "아카네 이야기",
-        "img": "image/charimg/2026/Q2/Akane-banashi/Masaki_Ousaki.jpg"
+        "img": "image/charimg/2026/Q2/Akane-banashi/Masaki_Ousaki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -2042,42 +2660,58 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "요우키",
         "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
-        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Youki.jpg"
+        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Youki.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "야마시나 리카",
         "animeTitle": "아름다운 그대에게",
-        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Rika_Yamashina.jpg"
+        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Rika_Yamashina.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "사카요리 이로하",
         "animeTitle": "초(超) 가구야 공주!",
-        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Iroha_Sakayori.jpg"
+        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Iroha_Sakayori.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "히메카와 쿄코",
         "animeTitle": "매리지 톡신",
-        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Kyouko_Himekawa.jpg"
+        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Kyouko_Himekawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "히카와 코유키",
         "animeTitle": "얼음 성벽",
-        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Koyuki_Hikawa.jpg"
+        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Koyuki_Hikawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "키노에 오토이치",
         "animeTitle": "스노우볼 어스",
-        "img": "image/charimg/2026/Q2/Snowball_Earth/Otoichi_Kinoe.jpg"
+        "img": "image/charimg/2026/Q2/Snowball_Earth/Otoichi_Kinoe.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "오우사키 아카네",
         "animeTitle": "아카네 이야기",
-        "img": "image/charimg/2026/Q2/Akane-banashi/Akane_Ousaki.jpg"
+        "img": "image/charimg/2026/Q2/Akane-banashi/Akane_Ousaki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "카체",
         "animeTitle": "니디 걸 오버도즈",
-        "img": "image/charimg/2026/Q2/NEEDY_GIRL_OVERDOSE/Kache.jpg"
+        "img": "image/charimg/2026/Q2/NEEDY_GIRL_OVERDOSE/Kache.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -2089,22 +2723,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "인키",
         "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
-        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Inki.jpg"
+        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Inki.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "이라 제리신",
         "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
-        "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Y'lla_Jelicin.jpg"
+        "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Y'lla_Jelicin.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "하루나 미라이",
         "animeTitle": "인외 교실의 인간 혐오 교사",
-        "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Mirai_Haruna.jpg"
+        "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Mirai_Haruna.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "카고 요우",
         "animeTitle": "메달리스트 2기",
-        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/You_Kago.jpg"
+        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/You_Kago.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -2116,27 +2758,37 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "크롤",
         "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
-        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Krall.jpg"
+        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Krall.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아멜리아 홉스",
         "animeTitle": "에리스의 성배",
-        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Amelia_Hobbes.jpg"
+        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Amelia_Hobbes.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "토네 노바라",
         "animeTitle": "아름다운 초저녁달",
-        "img": "image/charimg/2026/Q1/Uruwashi_no_Yoi_no_Tsuki/Nobara_Tone.jpg"
+        "img": "image/charimg/2026/Q1/Uruwashi_no_Yoi_no_Tsuki/Nobara_Tone.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아시야 미즈키",
         "animeTitle": "아름다운 그대에게",
-        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Mizuki_Ashiya.jpg"
+        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Mizuki_Ashiya.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "사쿠라 우타",
         "animeTitle": "하이바라의 청춘 뉴 게임 플러스",
-        "img": "image/charimg/2026/Q2/Haibara-kun_no_Tsuyokute_Seishun_New_Game/Uta_Sakura.jpg"
+        "img": "image/charimg/2026/Q2/Haibara-kun_no_Tsuyokute_Seishun_New_Game/Uta_Sakura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -2148,27 +2800,37 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "자이언트",
         "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
-        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Giant.jpg"
+        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Giant.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "사오토메 유키",
         "animeTitle": "인외 교실의 인간 혐오 교사",
-        "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Yuki_Saotome.jpg"
+        "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Yuki_Saotome.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "쿠리오네 마리카",
         "animeTitle": "메달리스트 2기",
-        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Marika_Kurione.jpg"
+        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Marika_Kurione.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "필미나",
         "animeTitle": "자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season",
-        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Filmina.jpg"
+        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Filmina.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "우에다 료코",
         "animeTitle": "아와지마 가극학교",
-        "img": "image/charimg/2026/Q2/Awajima_Hyakkei/Ryoko_Ueda.jpg"
+        "img": "image/charimg/2026/Q2/Awajima_Hyakkei/Ryoko_Ueda.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -2180,12 +2842,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "마왕",
         "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
-        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Maou.jpg"
+        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Maou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "사구완",
         "animeTitle": "BEASTARS FINAL SEASON Part 2",
-        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Sagwan.jpg"
+        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Sagwan.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -2197,27 +2863,37 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "마오마오",
         "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
-        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Maomao.jpg"
+        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Maomao.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "클레오파트라",
         "animeTitle": "고스트 콘서트: missing Songs",
-        "img": "image/charimg/2026/Q2/Ghost_Concert_missing_Songs/Cleopatra.jpg"
+        "img": "image/charimg/2026/Q2/Ghost_Concert_missing_Songs/Cleopatra.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "사토 코즈에",
         "animeTitle": "레플리카도, 사랑을 한다",
-        "img": "image/charimg/2026/Q2/Replica_Datte,_Koi_wo_Suru/Kozue_Satou.jpg"
+        "img": "image/charimg/2026/Q2/Replica_Datte,_Koi_wo_Suru/Kozue_Satou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "사카야나기 아리스",
         "animeTitle": "어서 오세요 실력지상주의 교실에 4th Season",
-        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Arisu_Sakayanagi.jpg"
+        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Arisu_Sakayanagi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "밀림 나바",
         "animeTitle": "전생했더니 슬라임이었던 건에 대하여 4기",
-        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Milim_Nava.jpg"
+        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Milim_Nava.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -2229,27 +2905,37 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "루룬",
         "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
-        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Lulune.jpg"
+        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Lulune.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "타나베 카나코",
         "animeTitle": "아름다운 그대에게",
-        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Kanako_Tanabe.jpg"
+        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Kanako_Tanabe.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아비쿠라 아케미",
         "animeTitle": "비실비실 선생님",
-        "img": "image/charimg/2026/Q2/Yowa_Yowa_Sensei/Akemi_Abikura.jpg"
+        "img": "image/charimg/2026/Q2/Yowa_Yowa_Sensei/Akemi_Abikura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "크레일비 세라",
         "animeTitle": "지팡이와 검의 위스토리아 Season2",
-        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Clairie_Serah.jpg"
+        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Clairie_Serah.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "이츠와 다유",
         "animeTitle": "요자쿠라 일가의 대작전 제2기",
-        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Itsuwa_Yozakura.jpg"
+        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Itsuwa_Yozakura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -2261,47 +2947,65 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "바닐라 페슈츠",
         "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
-        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Vanilla_Peschutz.jpg"
+        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Vanilla_Peschutz.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "바티아 이빌 노체스",
         "animeTitle": "자칭 악역 영애인 약혼자 관찰기록.",
-        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Bertia_Ibil_Noches.jpg"
+        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Bertia_Ibil_Noches.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "플로라 사크투",
         "animeTitle": "이세계 유유자적 농가 2",
-        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Flora.jpg"
+        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Flora.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "코기 시온",
         "animeTitle": "두 남자와 룸쉐어 중입니다",
-        "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Shion_Kogi.jpg"
+        "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Shion_Kogi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "슈이",
         "animeTitle": "자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season",
-        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Shui.jpg"
+        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Shui.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "키마키",
         "animeTitle": "공주 기사는 야만족의 신부",
-        "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Kimaki.jpg"
+        "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Kimaki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "M 다르몽",
         "animeTitle": "리인카네이션의 꽃잎",
-        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Charlotte_Corday.jpg"
+        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Charlotte_Corday.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "키타모리 야에카",
         "animeTitle": "카미이나 보탄, 취한 모습은 백합의 꽃",
-        "img": "image/charimg/2026/Q2/Kamiina_Botan,_Yoeru_Sugata_wa_Yuri_no_Hana/Yaeka_Kitamori.jpg"
+        "img": "image/charimg/2026/Q2/Kamiina_Botan,_Yoeru_Sugata_wa_Yuri_no_Hana/Yaeka_Kitamori.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "에비스",
         "animeTitle": "도로헤도로 시즌 2",
-        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Ebisu.jpg"
+        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Ebisu.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -2313,37 +3017,51 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "사쿠라 하트록",
         "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
-        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Sakura_Heartrock.jpg"
+        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Sakura_Heartrock.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "베니야",
         "animeTitle": "사망 유희로 밥을 먹는다.",
-        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Beniya.jpg"
+        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Beniya.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "알렌",
         "animeTitle": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~",
-        "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Allen.jpg"
+        "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Allen.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "이세 켄타로",
         "animeTitle": "카야는 무섭지 않아",
-        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Kenken.jpg"
+        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Kenken.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "타타",
         "animeTitle": "고깔모자 아틀리에",
-        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Tartah.jpg"
+        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Tartah.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "루츠",
         "animeTitle": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
-        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Lutz.jpg"
+        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Lutz.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "핀",
         "animeTitle": "지팡이와 검의 위스토리아 Season2",
-        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Finn.jpg"
+        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Finn.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -2355,22 +3073,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "카나지",
         "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
-        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Kanadge.jpg"
+        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Kanadge.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "차브",
         "animeTitle": "용사형에 처함",
-        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Tsav.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Tsav.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "클로드",
         "animeTitle": "샹피뇽의 마녀",
-        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Claude.jpg"
+        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Claude.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "쿠타니 소고",
         "animeTitle": "데드 어카운트",
-        "img": "image/charimg/2026/Q1/Dead_Account/Ban_Ashina.jpg"
+        "img": "image/charimg/2026/Q1/Dead_Account/Ban_Ashina.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -2382,22 +3108,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "지모치",
         "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
-        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Jimochi.jpg"
+        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Jimochi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "찰스 브랜트",
         "animeTitle": "프리즘 윤무곡",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Charles_Brant.jpg"
+        "img": "image/charimg/2026/Q1/Prism_Rondo/Charles_Brant.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "하쿠로우",
         "animeTitle": "전생했더니 슬라임이었던 건에 대하여 4기",
-        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Hakurou.jpg"
+        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Hakurou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아론 마스테리아스 올드킹",
         "animeTitle": "지팡이와 검의 위스토리아 Season2",
-        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Aaron_Masterias_Oldking.jpg"
+        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Aaron_Masterias_Oldking.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -2409,17 +3143,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "キュイ",
         "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
-        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Kyui.jpg"
+        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Kyui.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "츠쿠요미",
         "animeTitle": "【최애의 아이】 3기",
-        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Karasu_Shoujo.jpg"
+        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Karasu_Shoujo.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "토코로야마 사키",
         "animeTitle": "마도정병의 슬레이브 2기",
-        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Saki_Tokoyama.jpg"
+        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Saki_Tokoyama.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -2431,17 +3171,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "브루제",
         "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
-        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Bruse.jpg"
+        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Bruse.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "사토 테츠조",
         "animeTitle": "라이어 게임",
-        "img": "image/charimg/2026/Q2/LIAR_GAME/Tetsuzo_Sato.jpg"
+        "img": "image/charimg/2026/Q2/LIAR_GAME/Tetsuzo_Sato.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "ジンライ",
         "animeTitle": "전생했더니 슬라임이었던 건에 대하여 4기",
-        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Jinrai.jpg"
+        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Jinrai.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -2453,97 +3199,135 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "다타마",
         "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
-        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Datarma.jpg"
+        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Datarma.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "東方の魔女",
         "animeTitle": "샹피뇽의 마녀",
-        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Touhou_no_Majo.jpg"
+        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Touhou_no_Majo.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "은랑 키메라",
         "animeTitle": "Fate/strange Fake",
-        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Wolf.jpg"
+        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Wolf.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "赤ずきん",
         "animeTitle": "Fate/strange Fake",
-        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Akazukin.jpg"
+        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Akazukin.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "칸노 코나미",
         "animeTitle": "데드 어카운트",
-        "img": "image/charimg/2026/Q1/Dead_Account/Konami_Kanno.jpg"
+        "img": "image/charimg/2026/Q1/Dead_Account/Konami_Kanno.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "SHIORI",
         "animeTitle": "타몬 군 지금 어느 쪽!?",
-        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/SHIORI.jpg"
+        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/SHIORI.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "坂口利一",
         "animeTitle": "타몬 군 지금 어느 쪽!?",
-        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Toshikazu_Sakaguchi.jpg"
+        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Toshikazu_Sakaguchi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "자부톤",
         "animeTitle": "이세계 유유자적 농가 2",
-        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Zabuton.jpg"
+        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Zabuton.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "黒八咫",
         "animeTitle": "자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season",
-        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Kuroyata.jpg"
+        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Kuroyata.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "우피",
         "animeTitle": "얼음 성벽",
-        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Uppi.jpg"
+        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Uppi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "안드라스",
         "animeTitle": "종말의 발키리 Ⅲ",
-        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Andras.jpg"
+        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Andras.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "알베르트 아인슈타인",
         "animeTitle": "종말의 발키리 Ⅲ",
-        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Albert_Einstein.jpg"
+        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Albert_Einstein.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "치우",
         "animeTitle": "종말의 발키리 Ⅲ",
-        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Chi_You.jpg"
+        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Chi_You.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "플라우로스",
         "animeTitle": "종말의 발키리 Ⅲ",
-        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Flauros.jpg"
+        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Flauros.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아이작 뉴턴",
         "animeTitle": "종말의 발키리 Ⅲ",
-        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Isaac_Newton.jpg"
+        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Isaac_Newton.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "レッサー",
         "animeTitle": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
-        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Lessy.jpg"
+        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Lessy.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "보니",
         "animeTitle": "마계학교 이루마군 4기",
-        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Bonny.jpg"
+        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Bonny.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "로스티 나우만",
         "animeTitle": "지팡이와 검의 위스토리아 Season2",
-        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Rosti_Naumann.jpg"
+        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Rosti_Naumann.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "쿠비나시",
         "animeTitle": "지팡이와 검의 위스토리아 Season2",
-        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Kubinashi.jpg"
+        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Kubinashi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -2555,12 +3339,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "햄짱",
         "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
-        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Hamcha_Starham.jpg"
+        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Hamcha_Starham.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "서포 짱",
         "animeTitle": "최강의 직업은 용사도 현자도 아닌 감정사(임시)인 것 같은데요",
-        "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Sapo-chan.jpg"
+        "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Sapo-chan.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -2572,7 +3360,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "코바야시 아내",
         "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
-        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Kobayashi-san_(Tsuma).jpg"
+        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Kobayashi-san_(Tsuma).jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -2584,17 +3374,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "코바야시 남편",
         "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
-        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Kobayashi-san_(Otto).jpg"
+        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Kobayashi-san_(Otto).jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "Dr.조반니",
         "animeTitle": "불꽃 소방대 3장",
-        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Dr._Giovanni.jpg"
+        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Dr._Giovanni.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "가루도 묘르마일",
         "animeTitle": "전생했더니 슬라임이었던 건에 대하여 4기",
-        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Garde-Myourmiles.jpg"
+        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Garde-Myourmiles.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -2606,17 +3402,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "엑스트럭 페슈츠",
         "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
-        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Extrac_Peschutz.jpg"
+        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Extrac_Peschutz.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "돌의 마녀",
         "animeTitle": "샹피뇽의 마녀",
-        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Ishi_no_Majo.jpg"
+        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Ishi_no_Majo.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "난바 이오",
         "animeTitle": "아름다운 그대에게",
-        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Io_Nanba.jpg"
+        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Io_Nanba.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -2628,22 +3430,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "콩코 콩",
         "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
-        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Konko_Kon.jpg"
+        "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Konko_Kon.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "우레시노 시오리",
         "animeTitle": "매리지 톡신",
-        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Shiori_Ureshino.jpg"
+        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Shiori_Ureshino.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아카네 유우코",
         "animeTitle": "왼손잡이 에렌",
-        "img": "image/charimg/2026/Q2/Hidarikiki_no_Eren/Yuuko_Akane.jpg"
+        "img": "image/charimg/2026/Q2/Hidarikiki_no_Eren/Yuuko_Akane.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "테오도리코",
         "animeTitle": "놓친 물고기는 컸지만 잡은 물고기가 너무 컸던 건",
-        "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Teodorico.jpg"
+        "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Teodorico.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -2655,7 +3465,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "사카이 요노스케",
         "animeTitle": "소꿉친구와는 러브 코미디를 할 수 없어",
-        "img": "image/charimg/2026/Q1/Osananajimi_to_wa_Love_Comedy_ni_Naranai/Yonosuke_Sakai.jpg"
+        "img": "image/charimg/2026/Q1/Osananajimi_to_wa_Love_Comedy_ni_Naranai/Yonosuke_Sakai.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -2667,7 +3479,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "미나모 시오",
         "animeTitle": "소꿉친구와는 러브 코미디를 할 수 없어",
-        "img": "image/charimg/2026/Q1/Osananajimi_to_wa_Love_Comedy_ni_Naranai/Shio_Minamo.jpg"
+        "img": "image/charimg/2026/Q1/Osananajimi_to_wa_Love_Comedy_ni_Naranai/Shio_Minamo.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -2679,12 +3493,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "히나타 하루",
         "animeTitle": "소꿉친구와는 러브 코미디를 할 수 없어",
-        "img": "image/charimg/2026/Q1/Osananajimi_to_wa_Love_Comedy_ni_Naranai/Haru_Hinata.jpg"
+        "img": "image/charimg/2026/Q1/Osananajimi_to_wa_Love_Comedy_ni_Naranai/Haru_Hinata.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "ゆうすけ",
         "animeTitle": "쓰레기 용사",
-        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Yuusuke.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Yuusuke.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -2696,32 +3514,44 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "히오도시 아카리",
         "animeTitle": "소꿉친구와는 러브 코미디를 할 수 없어",
-        "img": "image/charimg/2026/Q1/Osananajimi_to_wa_Love_Comedy_ni_Naranai/Akari_Hiodoshi.jpg"
+        "img": "image/charimg/2026/Q1/Osananajimi_to_wa_Love_Comedy_ni_Naranai/Akari_Hiodoshi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "미나미 미레이",
         "animeTitle": "Aikatsu! x PriPara THE MOVIE -Deai no Kiseki-",
-        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Mirei_Minami.jpg"
+        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Mirei_Minami.jpg",
+        "quarter": "",
+        "year": ""
       },
       {
         "charName": "페르",
         "animeTitle": "자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season",
-        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Pell.jpg"
+        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Pell.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "이지치 코토코",
         "animeTitle": "오타쿠에게 상냥한 갸루는 없다",
-        "img": "image/charimg/2026/Q2/Otaku_ni_Yasashii_Gal_wa_Inai!/Kotoko_Ijichi.jpg"
+        "img": "image/charimg/2026/Q2/Otaku_ni_Yasashii_Gal_wa_Inai!/Kotoko_Ijichi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "마리아 안노바치",
         "animeTitle": "놓친 물고기는 컸지만 잡은 물고기가 너무 컸던 건",
-        "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Maria_Annovazzi.jpg"
+        "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Maria_Annovazzi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "야에모리 미니",
         "animeTitle": "여친, 빌리겠습니다 5기",
-        "img": "image/charimg/2026/Q2/Kanojo,_Okarishimasu_5th_Season/Mini_Yaemori.jpg"
+        "img": "image/charimg/2026/Q2/Kanojo,_Okarishimasu_5th_Season/Mini_Yaemori.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -2733,12 +3563,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "츠키미 루나",
         "animeTitle": "소꿉친구와는 러브 코미디를 할 수 없어",
-        "img": "image/charimg/2026/Q1/Osananajimi_to_wa_Love_Comedy_ni_Naranai/Runa_Tsukimi.jpg"
+        "img": "image/charimg/2026/Q1/Osananajimi_to_wa_Love_Comedy_ni_Naranai/Runa_Tsukimi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "요시즈미 미미",
         "animeTitle": "【최애의 아이】 3기",
-        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Mimi_Yoshizumi.jpg"
+        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Mimi_Yoshizumi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -2750,47 +3584,65 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "세실리아 아쿠아레인",
         "animeTitle": "용사 파티에 귀여운 애가 있어서, 고백해봤다.",
-        "img": "image/charimg/2026/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Cecilia.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Cecilia.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "안도 레몬",
         "animeTitle": "한밤중 하트튠",
-        "img": "image/charimg/2026/Q1/Mayonaka_Heart_Tune/Lemon_Andou.jpg"
+        "img": "image/charimg/2026/Q1/Mayonaka_Heart_Tune/Lemon_Andou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "야마시로 렌",
         "animeTitle": "마도정병의 슬레이브 2기",
-        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Ren_Yamashiro.jpg"
+        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Ren_Yamashiro.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아야카 사조",
         "animeTitle": "Fate/strange Fake",
-        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Ayaka_Sajyou.jpg"
+        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Ayaka_Sajyou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "しょうこ",
         "animeTitle": "위국일기",
-        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Shouko.jpg"
+        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Shouko.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "나카마 린코",
         "animeTitle": "두 남자와 룸쉐어 중입니다",
-        "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Rinko_Nakama.jpg"
+        "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Rinko_Nakama.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "자이라",
         "animeTitle": "놓친 물고기는 컸지만 잡은 물고기가 너무 컸던 건",
-        "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Zaira.jpg"
+        "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Zaira.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아사카 미도리",
         "animeTitle": "아와지마 가극학교",
-        "img": "image/charimg/2026/Q2/Awajima_Hyakkei/Midori_Asaka.jpg"
+        "img": "image/charimg/2026/Q2/Awajima_Hyakkei/Midori_Asaka.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "유키야나기 코바이",
         "animeTitle": "춘하추동 대행자 봄의 춤",
-        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Koubai_Yukiyanagi.jpg"
+        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Koubai_Yukiyanagi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -2802,32 +3654,44 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "요우키",
         "animeTitle": "용사 파티에 귀여운 애가 있어서, 고백해봤다.",
-        "img": "image/charimg/2026/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Youki.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Youki.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "이시바시 나츠키",
         "animeTitle": "타몬 군 지금 어느 쪽!?",
-        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Natsuki_Ishibashi.jpg"
+        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Natsuki_Ishibashi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "ポチ",
         "animeTitle": "타몬 군 지금 어느 쪽!?",
-        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Pochi.jpg"
+        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Pochi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "오토 스웬",
         "animeTitle": "Re:제로부터 시작하는 이세계 생활 4기",
-        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Otto_Suwen.jpg"
+        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Otto_Suwen.jpg",
+        "quarter": "3분기",
+        "year": 2026
       },
       {
         "charName": "윌 셰르홀트",
         "animeTitle": "지팡이와 검의 위스토리아 Season2",
-        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Will_Serfort.jpg"
+        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Will_Serfort.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "키타미 카나타",
         "animeTitle": "마리카쨩의 호감도는 망가져있다",
-        "img": "image/charimg/2026/Q2/Marika-chan_no_Koukando_wa_Bukkowareteiru/Kanata_Kitami.jpg"
+        "img": "image/charimg/2026/Q2/Marika-chan_no_Koukando_wa_Bukkowareteiru/Kanata_Kitami.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -2839,7 +3703,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "미사키",
         "animeTitle": "용사 파티에 귀여운 애가 있어서, 고백해봤다.",
-        "img": "image/charimg/2026/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Misaki.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Misaki.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -2851,7 +3717,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "시케",
         "animeTitle": "용사 파티에 귀여운 애가 있어서, 고백해봤다.",
-        "img": "image/charimg/2026/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Shike.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Shike.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -2863,27 +3731,37 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "유우가",
         "animeTitle": "용사 파티에 귀여운 애가 있어서, 고백해봤다.",
-        "img": "image/charimg/2026/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Yuuga.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Yuuga.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아자 초베",
         "animeTitle": "지옥락 2기",
-        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Choubei_Aza.jpg"
+        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Choubei_Aza.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아스모데우스 앨리스",
         "animeTitle": "마계학교 이루마군 4기",
-        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Alice_Asmodeus.jpg"
+        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Alice_Asmodeus.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아마히사 코세이",
         "animeTitle": "다이아몬드 에이스 actII -Second Season-",
-        "img": "image/charimg/2026/Q2/Diamond_no_Ace_act_II_Second_Season/Kousei_Amahisa.jpg"
+        "img": "image/charimg/2026/Q2/Diamond_no_Ace_act_II_Second_Season/Kousei_Amahisa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "존슨",
         "animeTitle": "도로헤도로 시즌 2",
-        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Jonson.jpg"
+        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Jonson.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -2895,27 +3773,37 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "미카나",
         "animeTitle": "용사 파티에 귀여운 애가 있어서, 고백해봤다.",
-        "img": "image/charimg/2026/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Mikana.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Mikana.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "니와토리 사나",
         "animeTitle": "메달리스트 2기",
-        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Sana_Niwatori.jpg"
+        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Sana_Niwatori.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "줄리아 맥스웰",
         "animeTitle": "아름다운 그대에게",
-        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Julia_Maxwell.jpg"
+        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Julia_Maxwell.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "카구야",
         "animeTitle": "초(超) 가구야 공주!",
-        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Kaguya.jpg"
+        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Kaguya.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "쿠구리 카야",
         "animeTitle": "비실비실 선생님",
-        "img": "image/charimg/2026/Q2/Yowa_Yowa_Sensei/Kaya_Kuguri.jpg"
+        "img": "image/charimg/2026/Q2/Yowa_Yowa_Sensei/Kaya_Kuguri.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -2927,12 +3815,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "듀크",
         "animeTitle": "용사 파티에 귀여운 애가 있어서, 고백해봤다.",
-        "img": "image/charimg/2026/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Duke.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Duke.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "히토마 레이",
         "animeTitle": "인외 교실의 인간 혐오 교사",
-        "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Rei_Hitoma.jpg"
+        "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Rei_Hitoma.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -2944,7 +3836,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "해피니스",
         "animeTitle": "용사 파티에 귀여운 애가 있어서, 고백해봤다.",
-        "img": "image/charimg/2026/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Happiness.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Happiness.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -2956,52 +3850,72 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "레이븐",
         "animeTitle": "용사 파티에 귀여운 애가 있어서, 고백해봤다.",
-        "img": "image/charimg/2026/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Raven.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Raven.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "에렌딜라 더 크림슨네일",
         "animeTitle": "트라이건 스타게이즈",
-        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Elendira_the_Crimsonnail.jpg"
+        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Elendira_the_Crimsonnail.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "시쟈",
         "animeTitle": "지옥락 2기",
-        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Shija.jpg"
+        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Shija.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아르바",
         "animeTitle": "최애 의붓형을 사랑하기 위해, 오래 살겠습니다!",
-        "img": "image/charimg/2026/Q1/Saioshi_no_Gikei_Mederu_Tame,_Nagaikishimasu!/Alba.jpg"
+        "img": "image/charimg/2026/Q1/Saioshi_no_Gikei_Mederu_Tame,_Nagaikishimasu!/Alba.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "숀 터코인 알파스타",
         "animeTitle": "자칭 악역 영애인 약혼자 관찰기록.",
-        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Shawn_Alphasta.jpg"
+        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Shawn_Alphasta.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "다이라 도노쓰구",
         "animeTitle": "일본삼국",
-        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Tonotsugu_Taira.jpg"
+        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Tonotsugu_Taira.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "긴로",
         "animeTitle": "닥터 스톤 SCIENCE FUTURE",
-        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Ginrou.jpg"
+        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Ginrou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "코다 아라타",
         "animeTitle": "쿠지마 노래하면 집이 파다닥",
-        "img": "image/charimg/2026/Q2/Kujima_Utaeba_Ie_Hororo/Arata_Kouda.jpg"
+        "img": "image/charimg/2026/Q2/Kujima_Utaeba_Ie_Hororo/Arata_Kouda.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "A 히틀러",
         "animeTitle": "리인카네이션의 꽃잎",
-        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Adolf_Hitler.jpg"
+        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Adolf_Hitler.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "스즈키 이루마",
         "animeTitle": "마계학교 이루마군 4기",
-        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Iruma_Suzuki.jpg"
+        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Iruma_Suzuki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -3013,17 +3927,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "시크",
         "animeTitle": "용사 파티에 귀여운 애가 있어서, 고백해봤다.",
-        "img": "image/charimg/2026/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Seek.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Seek.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "우시카와 요츠하",
         "animeTitle": "메달리스트 2기",
-        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Yotsuha_Ushikawa.jpg"
+        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Yotsuha_Ushikawa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "호시카와 릴리",
         "animeTitle": "Zombie Land Saga: Yume Ginga Paradise",
-        "img": "image/charimg/2026/Q1/Zombie_Land_Saga_Yume_Ginga_Paradise/Lily_Hoshikawa.jpg"
+        "img": "image/charimg/2026/Q1/Zombie_Land_Saga_Yume_Ginga_Paradise/Lily_Hoshikawa.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -3035,12 +3955,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "콘도 세이이치로",
         "animeTitle": "이세계 사정은 사축 하기 나름",
-        "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Seiichirou_Kondou.jpg"
+        "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Seiichirou_Kondou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "진스케",
         "animeTitle": "화식조 우슈보로토비구미",
-        "img": "image/charimg/2026/Q1/Hikuidori/Jinsuke.jpg"
+        "img": "image/charimg/2026/Q1/Hikuidori/Jinsuke.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -3052,17 +3976,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "시그볼드",
         "animeTitle": "이세계 사정은 사축 하기 나름",
-        "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Siegvold.jpg"
+        "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Siegvold.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "리처드 1세",
         "animeTitle": "Fate/strange Fake",
-        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Richard_I.jpg"
+        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Richard_I.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "ルイ",
         "animeTitle": "BEASTARS FINAL SEASON Part 2",
-        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Louis.jpg"
+        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Louis.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -3074,37 +4004,51 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "놀베르트",
         "animeTitle": "이세계 사정은 사축 하기 나름",
-        "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Norbert_Blanc.jpg"
+        "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Norbert_Blanc.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "시마 마사노리",
         "animeTitle": "【최애의 아이】 3기",
-        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Masanori_Shima.jpg"
+        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Masanori_Shima.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "쿨건 데레스 마던",
         "animeTitle": "자칭 악역 영애인 약혼자 관찰기록.",
-        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Courtgain_Mardan.jpg"
+        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Courtgain_Mardan.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "코르넬리우스",
         "animeTitle": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
-        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Cornelius.jpg"
+        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Cornelius.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아라카와 구리코",
         "animeTitle": "아카네 이야기",
-        "img": "image/charimg/2026/Q2/Akane-banashi/Guriko_Arakawa.jpg"
+        "img": "image/charimg/2026/Q2/Akane-banashi/Guriko_Arakawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "쿄우기 요우지",
         "animeTitle": "카난 님은 초보 악마",
-        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Youji_Kyougi.jpg"
+        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Youji_Kyougi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "코오리야마 료스케",
         "animeTitle": "부탁해 아이프리",
-        "img": "image/charimg/2026/Q2/Onegai_AiPri/Ryousuke_Kouriyama.jpg"
+        "img": "image/charimg/2026/Q2/Onegai_AiPri/Ryousuke_Kouriyama.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -3116,37 +4060,51 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "세리오",
         "animeTitle": "이세계 사정은 사축 하기 나름",
-        "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Selio.jpg"
+        "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Selio.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아즈마 토베라",
         "animeTitle": "마도정병의 슬레이브 2기",
-        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Tobera_Azuma.jpg"
+        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Tobera_Azuma.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "치히로",
         "animeTitle": "카야는 무섭지 않아",
-        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Chihiro-sensei.jpg"
+        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Chihiro-sensei.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "뼝아리",
         "animeTitle": "치킨 파이터",
-        "img": "image/charimg/2026/Q2/Niwatori_Fighter/Piyoko.jpg"
+        "img": "image/charimg/2026/Q2/Niwatori_Fighter/Piyoko.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "스코",
         "animeTitle": "자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season",
-        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Suco.jpg"
+        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Suco.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "실비아 인드라스",
         "animeTitle": "최강의 왕, 두 번째 인생에는 무엇을 하는가 시즌 2",
-        "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Sylvie.jpg"
+        "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Sylvie.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "도산코",
         "animeTitle": "마계학교 이루마군 4기",
-        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Dosanko.jpg"
+        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Dosanko.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -3158,7 +4116,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "헤르무트",
         "animeTitle": "이세계 사정은 사축 하기 나름",
-        "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Helmut_Somaria.jpg"
+        "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Helmut_Somaria.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -3170,12 +4130,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "유리우스",
         "animeTitle": "이세계 사정은 사축 하기 나름",
-        "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Yurius.jpg"
+        "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Yurius.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "무닌",
         "animeTitle": "종말의 발키리 Ⅲ",
-        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Muninn.jpg"
+        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Muninn.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -3187,7 +4151,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "시그마",
         "animeTitle": "이세계 사정은 사축 하기 나름",
-        "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Sigma.jpg"
+        "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Sigma.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -3199,7 +4165,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "시라이시 유아",
         "animeTitle": "이세계 사정은 사축 하기 나름",
-        "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Yua_Shiraishi.jpg"
+        "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Yua_Shiraishi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -3211,7 +4179,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "하비 모랄레스",
         "animeTitle": "이세계 사정은 사축 하기 나름",
-        "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Harvey_Morales.jpg"
+        "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Harvey_Morales.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -3223,12 +4193,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "이스트",
         "animeTitle": "이세계 사정은 사축 하기 나름",
-        "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Ist.jpg"
+        "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Ist.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "빌",
         "animeTitle": "BEASTARS FINAL SEASON Part 2",
-        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Bill.jpg"
+        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Bill.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -3240,12 +4214,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "매튜 니에베스",
         "animeTitle": "이세계 사정은 사축 하기 나름",
-        "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Matthew_Nieves.jpg"
+        "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Matthew_Nieves.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "미야모토 소우시",
         "animeTitle": "어서 오세요 실력지상주의 교실에 4th Season",
-        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Soushi_Miyamoto.jpg"
+        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Soushi_Miyamoto.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -3257,7 +4235,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "시로 쿠에바스",
         "animeTitle": "이세계 사정은 사축 하기 나름",
-        "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Ciro_Quellbas.jpg"
+        "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Ciro_Quellbas.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -3269,22 +4249,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "우즈키 시노부",
         "animeTitle": "한밤중 하트튠",
-        "img": "image/charimg/2026/Q1/Mayonaka_Heart_Tune/Shinobu_Uzuki.jpg"
+        "img": "image/charimg/2026/Q1/Mayonaka_Heart_Tune/Shinobu_Uzuki.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "ミルキット",
         "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
-        "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Milkit.jpg"
+        "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Milkit.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "밀리아 밀레아니아",
         "animeTitle": "전생했더니 드래곤의 알이었다 ~최강이 아니면 목표로 하지 않아~",
-        "img": "image/charimg/2026/Q1/Tensei_Shitara_Dragon_no_Tamago_Datta/Myria_Milleania.jpg"
+        "img": "image/charimg/2026/Q1/Tensei_Shitara_Dragon_no_Tamago_Datta/Myria_Milleania.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "사쿠라 미쿠",
         "animeTitle": "사랑해 게임을 끝내고 싶어",
-        "img": "image/charimg/2026/Q2/Aishiteru_Game_wo_Owarasetai/Miku_Sakura.jpg"
+        "img": "image/charimg/2026/Q2/Aishiteru_Game_wo_Owarasetai/Miku_Sakura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -3296,17 +4284,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "이노하나 릿카",
         "animeTitle": "한밤중 하트튠",
-        "img": "image/charimg/2026/Q1/Mayonaka_Heart_Tune/Rikka_Inohana.jpg"
+        "img": "image/charimg/2026/Q1/Mayonaka_Heart_Tune/Rikka_Inohana.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "히비야 코토부키",
         "animeTitle": "아름다운 초저녁달",
-        "img": "image/charimg/2026/Q1/Uruwashi_no_Yoi_no_Tsuki/Kotobuki_Hibiya.jpg"
+        "img": "image/charimg/2026/Q1/Uruwashi_no_Yoi_no_Tsuki/Kotobuki_Hibiya.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아마사와 이치카",
         "animeTitle": "어서 오세요 실력지상주의 교실에 4th Season",
-        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Ichika_Amasawa.jpg"
+        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Ichika_Amasawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -3318,32 +4312,44 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "히메카와 네네",
         "animeTitle": "한밤중 하트튠",
-        "img": "image/charimg/2026/Q1/Mayonaka_Heart_Tune/Nene_Himekawa.jpg"
+        "img": "image/charimg/2026/Q1/Mayonaka_Heart_Tune/Nene_Himekawa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "MEM쵸",
         "animeTitle": "【최애의 아이】 3기",
-        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/MEM-cho.jpg"
+        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/MEM-cho.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "필리 카펜터",
         "animeTitle": "용사 파티에서 쫓겨난 다재무능",
-        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Filly_Carpenter.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Filly_Carpenter.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "로잘리아 피노티",
         "animeTitle": "놓친 물고기는 컸지만 잡은 물고기가 너무 컸던 건",
-        "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Rosalia_Pinotti.jpg"
+        "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Rosalia_Pinotti.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "소우카",
         "animeTitle": "전생했더니 슬라임이었던 건에 대하여 4기",
-        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Souka.jpg"
+        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Souka.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아이리스 X 스텔라마리스",
         "animeTitle": "지팡이와 검의 위스토리아 Season2",
-        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Iris_Stellamaris.jpg"
+        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Iris_Stellamaris.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -3355,12 +4361,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아이코",
         "animeTitle": "한밤중 하트튠",
-        "img": "image/charimg/2026/Q1/Mayonaka_Heart_Tune/Aiko.jpg"
+        "img": "image/charimg/2026/Q1/Mayonaka_Heart_Tune/Aiko.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "레오나 웨스트",
         "animeTitle": "Aikatsu! x PriPara THE MOVIE -Deai no Kiseki-",
-        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Reona_West.jpg"
+        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Reona_West.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -3372,32 +4382,44 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "모모토세 아오",
         "animeTitle": "한밤중 하트튠",
-        "img": "image/charimg/2026/Q1/Mayonaka_Heart_Tune/Ao_Momotose.jpg"
+        "img": "image/charimg/2026/Q1/Mayonaka_Heart_Tune/Ao_Momotose.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "산",
         "animeTitle": "에리스의 성배",
-        "img": "image/charimg/2026/Q1/Eris_no_Seihai/San.jpg"
+        "img": "image/charimg/2026/Q1/Eris_no_Seihai/San.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "우메다 리오",
         "animeTitle": "아름다운 그대에게",
-        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Rio_Umeda.jpg"
+        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Rio_Umeda.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "이치노세 호나미",
         "animeTitle": "어서 오세요 실력지상주의 교실에 4th Season",
-        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Honami_Ichinose.jpg"
+        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Honami_Ichinose.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "사라시나 루카",
         "animeTitle": "여친, 빌리겠습니다 5기",
-        "img": "image/charimg/2026/Q2/Kanojo,_Okarishimasu_5th_Season/Ruka_Sarashina.jpg"
+        "img": "image/charimg/2026/Q2/Kanojo,_Okarishimasu_5th_Season/Ruka_Sarashina.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "나즈나",
         "animeTitle": "춘하추동 대행자 봄의 춤",
-        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Nazuna.jpg"
+        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Nazuna.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -3409,37 +4431,51 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "찰리 스타인",
         "animeTitle": "다윈 사변",
-        "img": "image/charimg/2026/Q1/Darwin_Jihen/Charlie.jpg"
+        "img": "image/charimg/2026/Q1/Darwin_Jihen/Charlie.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "프리렌",
         "animeTitle": "장송의 프리렌 2기",
-        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Frieren.jpg"
+        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Frieren.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "이치조인 릴리",
         "animeTitle": "프리즘 윤무곡",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Lili_Ichijoin.jpg"
+        "img": "image/charimg/2026/Q1/Prism_Rondo/Lili_Ichijoin.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "쥬노",
         "animeTitle": "BEASTARS FINAL SEASON Part 2",
-        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Juno.jpg"
+        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Juno.jpg",
+        "quarter": "",
+        "year": ""
       },
       {
         "charName": "이지치 카케루",
         "animeTitle": "오타쿠에게 상냥한 갸루는 없다",
-        "img": "image/charimg/2026/Q2/Otaku_ni_Yasashii_Gal_wa_Inai!/Kakeru_Ijichi.jpg"
+        "img": "image/charimg/2026/Q2/Otaku_ni_Yasashii_Gal_wa_Inai!/Kakeru_Ijichi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "하나다 니키",
         "animeTitle": "닥터 스톤 SCIENCE FUTURE",
-        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Nikki_Hanada.jpg"
+        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Nikki_Hanada.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "시라이시 치사토",
         "animeTitle": "킬 블루",
-        "img": "image/charimg/2026/Q2/Kill_Ao/Chisato_Shiraishi.jpg"
+        "img": "image/charimg/2026/Q2/Kill_Ao/Chisato_Shiraishi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -3451,7 +4487,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "루시 엘드레드",
         "animeTitle": "다윈 사변",
-        "img": "image/charimg/2026/Q1/Darwin_Jihen/Lucy_Eldred.jpg"
+        "img": "image/charimg/2026/Q1/Darwin_Jihen/Lucy_Eldred.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -3463,52 +4501,72 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "게일",
         "animeTitle": "다윈 사변",
-        "img": "image/charimg/2026/Q1/Darwin_Jihen/Gale.jpg"
+        "img": "image/charimg/2026/Q1/Darwin_Jihen/Gale.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "토야",
         "animeTitle": "어차피, 사랑하고 만다. 2기",
-        "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Touya.jpg"
+        "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Touya.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "오오타니 요스케",
         "animeTitle": "MF고스트 3rd Season",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Yousuke_Ootani.jpg"
+        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Yousuke_Ootani.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "디에고 브란도",
         "animeTitle": "스틸 볼 런: 죠죠의 기묘한 모험",
-        "img": "image/charimg/2026/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Diego_Brando.jpg"
+        "img": "image/charimg/2026/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Diego_Brando.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아사기 유키야",
         "animeTitle": "사랑해 게임을 끝내고 싶어",
-        "img": "image/charimg/2026/Q2/Aishiteru_Game_wo_Owarasetai/Yukiya_Asagi.jpg"
+        "img": "image/charimg/2026/Q2/Aishiteru_Game_wo_Owarasetai/Yukiya_Asagi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "사츠키 아키토",
         "animeTitle": "두 남자와 룸쉐어 중입니다",
-        "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Akito_Satsuki.jpg"
+        "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Akito_Satsuki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "I 뉴턴",
         "animeTitle": "리인카네이션의 꽃잎",
-        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Newton.jpg"
+        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Newton.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "진시황",
         "animeTitle": "종말의 발키리 Ⅲ",
-        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Shihuang_Qin.jpg"
+        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Shihuang_Qin.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "道端草助",
         "animeTitle": "요자쿠라 일가의 대작전 제2기",
-        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Sousuke_Michibata.jpg"
+        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Sousuke_Michibata.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "미치바타 소스케",
         "animeTitle": "요자쿠라 일가의 대작전 제2기",
-        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Momo_Yozakura.jpg"
+        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Momo_Yozakura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -3520,12 +4578,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "한나 스타인",
         "animeTitle": "다윈 사변",
-        "img": "image/charimg/2026/Q1/Darwin_Jihen/Hannah_Stein.jpg"
+        "img": "image/charimg/2026/Q1/Darwin_Jihen/Hannah_Stein.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "알리에노르 카스티엘",
         "animeTitle": "에리스의 성배",
-        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Alienore_Shibola.jpg"
+        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Alienore_Shibola.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -3537,37 +4599,51 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "필립 그라함",
         "animeTitle": "다윈 사변",
-        "img": "image/charimg/2026/Q1/Darwin_Jihen/Philip_Graham.jpg"
+        "img": "image/charimg/2026/Q1/Darwin_Jihen/Philip_Graham.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "우루시바라 테츠",
         "animeTitle": "【최애의 아이】 3기",
-        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Tetsu_Urushibara.jpg"
+        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Tetsu_Urushibara.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "노르가유 센리지",
         "animeTitle": "용사형에 처함",
-        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Norgalle_Senridge.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Norgalle_Senridge.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "蒲池(副社長)",
         "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
-        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Gamaike_(Fukushachou).jpg"
+        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Gamaike_(Fukushachou).jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "비젤 크라임 크롬",
         "animeTitle": "이세계 유유자적 농가 2",
-        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Besel_Chrome.jpg"
+        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Besel_Chrome.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "리체리트의 선생님",
         "animeTitle": "고깔모자 아틀리에",
-        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Richeh_no_Sensei.jpg"
+        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Richeh_no_Sensei.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "타니무라 테루오",
         "animeTitle": "라이어 게임",
-        "img": "image/charimg/2026/Q2/LIAR_GAME/Teruo_Tanimura.jpg"
+        "img": "image/charimg/2026/Q2/LIAR_GAME/Teruo_Tanimura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -3579,12 +4655,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "레슬리 K. 리프만",
         "animeTitle": "다윈 사변",
-        "img": "image/charimg/2026/Q1/Darwin_Jihen/Leslie_Lippman.jpg"
+        "img": "image/charimg/2026/Q1/Darwin_Jihen/Leslie_Lippman.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "호센 카즈오미",
         "animeTitle": "어서 오세요 실력지상주의 교실에 4th Season",
-        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Kazuomi_Housen.jpg"
+        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Kazuomi_Housen.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -3596,17 +4676,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "オジー",
         "animeTitle": "다윈 사변",
-        "img": "image/charimg/2026/Q1/Darwin_Jihen/Ozzy.jpg"
+        "img": "image/charimg/2026/Q1/Darwin_Jihen/Ozzy.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "키키라 다이치",
         "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
-        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Daichi_Kikira.jpg"
+        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Daichi_Kikira.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "가죽 재킷",
         "animeTitle": "GIRLS BAND CRY: Seishun Kyousoukyoku",
-        "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Jean_Kawa.jpg"
+        "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Jean_Kawa.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -3618,7 +4704,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "トレヴァー",
         "animeTitle": "다윈 사변",
-        "img": "image/charimg/2026/Q1/Darwin_Jihen/Thevor.jpg"
+        "img": "image/charimg/2026/Q1/Darwin_Jihen/Thevor.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -3630,17 +4718,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "ミア",
         "animeTitle": "다윈 사변",
-        "img": "image/charimg/2026/Q1/Darwin_Jihen/Mia.jpg"
+        "img": "image/charimg/2026/Q1/Darwin_Jihen/Mia.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "쿠로다",
         "animeTitle": "어차피, 사랑하고 만다. 2기",
-        "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Kuroda.jpg"
+        "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Kuroda.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "유메미야 와카바",
         "animeTitle": "부탁해 아이프리",
-        "img": "image/charimg/2026/Q2/Onegai_AiPri/Wakaba_Yumemiya.jpg"
+        "img": "image/charimg/2026/Q2/Onegai_AiPri/Wakaba_Yumemiya.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -3652,7 +4746,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "파울러",
         "animeTitle": "다윈 사변",
-        "img": "image/charimg/2026/Q1/Darwin_Jihen/Fowler.jpg"
+        "img": "image/charimg/2026/Q1/Darwin_Jihen/Fowler.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -3664,37 +4760,51 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아르네 노인투터",
         "animeTitle": "아르네의 사건부",
-        "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Arne_Neuntöte.jpg"
+        "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Arne_Neuntöte.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "레가트 블루서머즈",
         "animeTitle": "트라이건 스타게이즈",
-        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Legato_Bluesummers.jpg"
+        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Legato_Bluesummers.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "카스바타 쿠쿠루",
         "animeTitle": "데드 어카운트",
-        "img": "image/charimg/2026/Q1/Dead_Account/Kukuru_Kasubata.jpg"
+        "img": "image/charimg/2026/Q1/Dead_Account/Kukuru_Kasubata.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "카야시마 타이키",
         "animeTitle": "아름다운 그대에게",
-        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Taiki_Kayashima.jpg"
+        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Taiki_Kayashima.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "키트 처치",
         "animeTitle": "프리즘 윤무곡",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Kit_Church.jpg"
+        "img": "image/charimg/2026/Q1/Prism_Rondo/Kit_Church.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "스테일 로열 아이비",
         "animeTitle": "비극의 원흉이 되는 최강악역 최종보스 여왕은 국민을 위해 헌신합니다 Season2",
-        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Stayle_Royal_Ivy.jpg"
+        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Stayle_Royal_Ivy.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "도쿠가",
         "animeTitle": "도로헤도로 시즌 2",
-        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Dokuga.jpg"
+        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Dokuga.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -3706,17 +4816,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "린 라인바이스",
         "animeTitle": "아르네의 사건부",
-        "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Lynn_Reinweiß.jpg"
+        "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Lynn_Reinweiß.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "야코 시즈카",
         "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
-        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Shizuka_Yakou.jpg"
+        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Shizuka_Yakou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "카요 히나기쿠",
         "animeTitle": "춘하추동 대행자 봄의 춤",
-        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Hinagiku_Kayou.jpg"
+        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Hinagiku_Kayou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -3728,37 +4844,51 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "루이스 하트만",
         "animeTitle": "아르네의 사건부",
-        "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Louis_Hartmann.jpg"
+        "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Louis_Hartmann.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "제리에",
         "animeTitle": "장송의 프리렌 2기",
-        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Serie.jpg"
+        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Serie.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "카무신",
         "animeTitle": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
-        "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Khamsin.jpg"
+        "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Khamsin.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "리리핀",
         "animeTitle": "고깔모자 아틀리에",
-        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Riliphin.jpg"
+        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Riliphin.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "우시오 시즈쿠",
         "animeTitle": "매리지 톡신",
-        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Shizuku_Ushio.jpg"
+        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Shizuku_Ushio.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "이와시미즈 마치코",
         "animeTitle": "아카네 이야기",
-        "img": "image/charimg/2026/Q2/Akane-banashi/Machiko_Iwashimizu.jpg"
+        "img": "image/charimg/2026/Q2/Akane-banashi/Machiko_Iwashimizu.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "키리사키 아야카",
         "animeTitle": "요자쿠라 일가의 대작전 제2기",
-        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Ayaka_Kirisaki.jpg"
+        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Ayaka_Kirisaki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -3770,22 +4900,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "엘리제",
         "animeTitle": "아르네의 사건부",
-        "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Eliza.jpg"
+        "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Eliza.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "오토야",
         "animeTitle": "마오",
-        "img": "image/charimg/2026/Q2/MAO/Otoya.jpg"
+        "img": "image/charimg/2026/Q2/MAO/Otoya.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "츠무기",
         "animeTitle": "신의 정원이 딸린 쿠스노키 저택",
-        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Tsumugi.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Tsumugi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "나루미 미치카",
         "animeTitle": "다다미 한 장짜리 방 만끽 생활",
-        "img": "image/charimg/2026/Q2/Ichijouma_Mankitsu-gurashi!/Michika_Narumi.jpg"
+        "img": "image/charimg/2026/Q2/Ichijouma_Mankitsu-gurashi!/Michika_Narumi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -3797,32 +4935,44 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "하인츠",
         "animeTitle": "아르네의 사건부",
-        "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Heinz.jpg"
+        "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Heinz.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "사이토 료스케",
         "animeTitle": "어차피, 사랑하고 만다. 2기",
-        "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Ryousuke_Saitou.jpg"
+        "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Ryousuke_Saitou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "자카",
         "animeTitle": "DARK MOON: 달의 제단",
-        "img": "image/charimg/2026/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Jakah.jpg"
+        "img": "image/charimg/2026/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Jakah.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "게로 테루아키",
         "animeTitle": "매리지 톡신",
-        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Teruaki_Gero.jpg"
+        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Teruaki_Gero.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "하이바라 나츠키",
         "animeTitle": "하이바라의 청춘 뉴 게임 플러스",
-        "img": "image/charimg/2026/Q2/Haibara-kun_no_Tsuyokute_Seishun_New_Game/Natsuki_Haibara.jpg"
+        "img": "image/charimg/2026/Q2/Haibara-kun_no_Tsuyokute_Seishun_New_Game/Natsuki_Haibara.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "카스톨 제미니",
         "animeTitle": "검은 고양이와 마녀의 교실",
-        "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Castor_Gemini.jpg"
+        "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Castor_Gemini.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -3834,17 +4984,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "지셰",
         "animeTitle": "아르네의 사건부",
-        "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Zishe.jpg"
+        "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Zishe.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "리제",
         "animeTitle": "샹피뇽의 마녀",
-        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Lisl.jpg"
+        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Lisl.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "히로세 아이키",
         "animeTitle": "힘내라 나카무라 군",
-        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Aiki_Hirose_.jpg"
+        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Aiki_Hirose_.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -3856,22 +5012,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "카이",
         "animeTitle": "아르네의 사건부",
-        "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Kai.jpg"
+        "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Kai.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "후쿠하라 타몬",
         "animeTitle": "타몬 군 지금 어느 쪽!?",
-        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Tamon_Fukuhara.jpg"
+        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Tamon_Fukuhara.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아즈미 유키",
         "animeTitle": "얼음 성벽",
-        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Yuki_Azumi.jpg"
+        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Yuki_Azumi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아비쿠라 아키히토",
         "animeTitle": "비실비실 선생님",
-        "img": "image/charimg/2026/Q2/Yowa_Yowa_Sensei/Akihito_Abikura.jpg"
+        "img": "image/charimg/2026/Q2/Yowa_Yowa_Sensei/Akihito_Abikura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -3883,7 +5047,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "나흐체러르",
         "animeTitle": "아르네의 사건부",
-        "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Nachzehrer.jpg"
+        "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Nachzehrer.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -3895,7 +5061,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "괴도 빨강망토",
         "animeTitle": "아르네의 사건부",
-        "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Kaitou_Akazukin.jpg"
+        "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Kaitou_Akazukin.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -3907,47 +5075,65 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "에이미",
         "animeTitle": "아르네의 사건부",
-        "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Amy.jpg"
+        "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Amy.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "닐리",
         "animeTitle": "용사형에 처함",
-        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Neely.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Neely.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "파나메라 카레라 카이엔",
         "animeTitle": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
-        "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Panamera_Kaien.jpg"
+        "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Panamera_Kaien.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "코우치 미나",
         "animeTitle": "데드 어카운트",
-        "img": "image/charimg/2026/Q1/Dead_Account/Mina_Kouchi.jpg"
+        "img": "image/charimg/2026/Q1/Dead_Account/Mina_Kouchi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "그라파룬",
         "animeTitle": "이세계 유유자적 농가 2",
-        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Graffaloon.jpg"
+        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Graffaloon.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "호쿠토자이 미나미",
         "animeTitle": "닥터 스톤 SCIENCE FUTURE",
-        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Minami_Hokutouzai.jpg"
+        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Minami_Hokutouzai.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "이벨",
         "animeTitle": "최강의 직업은 용사도 현자도 아닌 감정사(임시)인 것 같은데요",
-        "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Ivel.jpg"
+        "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Ivel.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "텐코",
         "animeTitle": "마오",
-        "img": "image/charimg/2026/Q2/MAO/Tenko.jpg"
+        "img": "image/charimg/2026/Q2/MAO/Tenko.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "미스즈 헨더슨",
         "animeTitle": "춘하추동 대행자 봄의 춤",
-        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Misuzu_Henderson.jpg"
+        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Misuzu_Henderson.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -3959,27 +5145,37 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "고든",
         "animeTitle": "아르네의 사건부",
-        "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Gordon.jpg"
+        "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Gordon.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "シムリード・コルマディノ",
         "animeTitle": "용사형에 처함",
-        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Simreed_Colmadino.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Simreed_Colmadino.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "Chapel the Evergreen",
         "animeTitle": "트라이건 스타게이즈",
-        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Chapel_the_Evergreen.jpg"
+        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Chapel_the_Evergreen.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "학장",
         "animeTitle": "프리즘 윤무곡",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Gakuinchou.jpg"
+        "img": "image/charimg/2026/Q1/Prism_Rondo/Gakuinchou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "구스타프",
         "animeTitle": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
-        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Gustav.jpg"
+        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Gustav.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -3991,7 +5187,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "다이애나",
         "animeTitle": "아르네의 사건부",
-        "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Diana.jpg"
+        "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Diana.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -4003,52 +5201,72 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "시노노메 하지메",
         "animeTitle": "29세 독신 중견 모험가의 일상",
-        "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Hajime_Shinonome.jpg"
+        "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Hajime_Shinonome.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아코만",
         "animeTitle": "마왕의 딸은 너무 친절해!!",
-        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Akoman.jpg"
+        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Akoman.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "오르토 시트",
         "animeTitle": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
-        "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Ortho_Sheet.jpg"
+        "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Ortho_Sheet.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "에이젠",
         "animeTitle": "지옥락 2기",
-        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Eizen.jpg"
+        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Eizen.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "오오키 타이주",
         "animeTitle": "닥터 스톤 SCIENCE FUTURE",
-        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Taiju_Ooki.jpg"
+        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Taiju_Ooki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "후지미야 슈토",
         "animeTitle": "옆집 천사님 때문에 어느샌가 인간적으로 타락한 사연 2",
-        "img": "image/charimg/2026/Q2/Otonari_no_Tenshi-sama_ni_Itsunomanika_Dame_Ningen_ni_Sareteita_Ken_2nd_Season/Shuuto_Fujimiya.jpg"
+        "img": "image/charimg/2026/Q2/Otonari_no_Tenshi-sama_ni_Itsunomanika_Dame_Ningen_ni_Sareteita_Ken_2nd_Season/Shuuto_Fujimiya.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "베니마루",
         "animeTitle": "전생했더니 슬라임이었던 건에 대하여 4기",
-        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Benimaru.jpg"
+        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Benimaru.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "니콜라 테슬라",
         "animeTitle": "종말의 발키리 Ⅲ",
-        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Nikola_Tesla.jpg"
+        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Nikola_Tesla.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "제오 토르제우스 라인볼트",
         "animeTitle": "지팡이와 검의 위스토리아 Season2",
-        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Zeo_Thorzeus_Reinbolt.jpg"
+        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Zeo_Thorzeus_Reinbolt.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "루드",
         "animeTitle": "마물을 먹는 모험가 ~나만 마물을 먹고 강해진다~",
-        "img": "image/charimg/2026/Q2/Mamonogurai_no_Boukensha_Ore_Dake_Mamono_wo_Kuratte_Tsuyoku_Naru/Rudd.jpg"
+        "img": "image/charimg/2026/Q2/Mamonogurai_no_Boukensha_Ore_Dake_Mamono_wo_Kuratte_Tsuyoku_Naru/Rudd.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -4060,7 +5278,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아냥고",
         "animeTitle": "29세 독신 중견 모험가의 일상",
-        "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Anyango.jpg"
+        "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Anyango.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -4072,7 +5292,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "올리브 카르멘",
         "animeTitle": "29세 독신 중견 모험가의 일상",
-        "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Olive_Carmen.jpg"
+        "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Olive_Carmen.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -4084,32 +5306,44 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "나탈리",
         "animeTitle": "29세 독신 중견 모험가의 일상",
-        "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Natalie.jpg"
+        "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Natalie.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아즈마 마이아",
         "animeTitle": "마도정병의 슬레이브 2기",
-        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Maia_Azuma.jpg"
+        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Maia_Azuma.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "렉시아 폰 아르세리아",
         "animeTitle": "이세계에서 치트 스킬을 얻은 나는 현실 세계에서도 무쌍한다 ~레벨업이 인생을 바꿨다~ TVSP",
-        "img": "image/charimg/2026/Q1/Isekai_de_Cheat_Skill_wo_Te_ni_Shita_Ore_wa,_Genjitsu_Sekai_wo_mo_Musou_Suru_Level_Up_wa_Jinsei_wo_Kaeta/Lexia_Von_Alceria.jpg"
+        "img": "image/charimg/2026/Q1/Isekai_de_Cheat_Skill_wo_Te_ni_Shita_Ore_wa,_Genjitsu_Sekai_wo_mo_Musou_Suru_Level_Up_wa_Jinsei_wo_Kaeta/Lexia_Von_Alceria.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "오사카 시즈쿠",
         "animeTitle": "Love Live! Nijigasaki Gakuen School Idol Doukoukai: Kanketsu-hen 2",
-        "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Shizuku_Ousaka.jpg"
+        "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Shizuku_Ousaka.jpg",
+        "quarter": "",
+        "year": ""
       },
       {
         "charName": "엘레오노라 카샬리",
         "animeTitle": "놓친 물고기는 컸지만 잡은 물고기가 너무 컸던 건",
-        "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Eleonora_Casciari.jpg"
+        "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Eleonora_Casciari.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "고다 매지컬 모모린",
         "animeTitle": "다다미 한 장짜리 방 만끽 생활",
-        "img": "image/charimg/2026/Q2/Ichijouma_Mankitsu-gurashi!/Majikarumomorin_Gouda.jpg"
+        "img": "image/charimg/2026/Q2/Ichijouma_Mankitsu-gurashi!/Majikarumomorin_Gouda.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -4121,12 +5355,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "두 쿠쿠두르",
         "animeTitle": "29세 독신 중견 모험가의 일상",
-        "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Cockdole.jpg"
+        "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Cockdole.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "이치조인 료타로",
         "animeTitle": "프리즘 윤무곡",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Ryoutarou_Ichijoin.jpg"
+        "img": "image/charimg/2026/Q1/Prism_Rondo/Ryoutarou_Ichijoin.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -4138,37 +5376,51 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "세키히메",
         "animeTitle": "29세 독신 중견 모험가의 일상",
-        "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Sekihime.jpg"
+        "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Sekihime.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "키노시타 우타게",
         "animeTitle": "타몬 군 지금 어느 쪽!?",
-        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Utage_Kinoshita.jpg"
+        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Utage_Kinoshita.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "쿠논 그리온",
         "animeTitle": "마술사 쿠논은 보인다",
-        "img": "image/charimg/2026/Q1/Majutsushi_Kunon_wa_Mieteiru/Kunon_Glion.jpg"
+        "img": "image/charimg/2026/Q1/Majutsushi_Kunon_wa_Mieteiru/Kunon_Glion.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "루나미 야치요",
         "animeTitle": "초(超) 가구야 공주!",
-        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Yachiyo_Runami.jpg"
+        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Yachiyo_Runami.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아이다 아메티스",
         "animeTitle": "놓친 물고기는 컸지만 잡은 물고기가 너무 컸던 건",
-        "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Aida_Amethis.jpg"
+        "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Aida_Amethis.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "유리아",
         "animeTitle": "북두의 권 -FIST OF THE NORTH STAR-",
-        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Yuria.jpg"
+        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Yuria.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "오시라 님",
         "animeTitle": "황천의 츠가이",
-        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Oshirasama.jpg"
+        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Oshirasama.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -4180,32 +5432,44 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "제시카 리틀다트",
         "animeTitle": "29세 독신 중견 모험가의 일상",
-        "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Jessica.jpg"
+        "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Jessica.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "프렌시 마스티볼트",
         "animeTitle": "용사형에 처함",
-        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Frenci_Mastibolt.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Frenci_Mastibolt.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "오오가미 이사키",
         "animeTitle": "인외 교실의 인간 혐오 교사",
-        "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Isaki_Oogami.jpg"
+        "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Isaki_Oogami.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "셀마 클로델",
         "animeTitle": "용사 파티에서 쫓겨난 다재무능",
-        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Selma_Clodel.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Selma_Clodel.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "오우즈카 마이",
         "animeTitle": "내가 연인이 될 수 있을 리 없잖아, 무리무리! (※무리가 아니었다?!) ~넥스트 샤인!~",
-        "img": "image/charimg/2026/Q1/Watashi_ga_Koibito_ni_Nareru_Wake_Nai_jan,_Muri_Muri!_(※Muri_ja_Nakatta!)_Next_Shine!/Mai_Ouzuka.jpg"
+        "img": "image/charimg/2026/Q1/Watashi_ga_Koibito_ni_Nareru_Wake_Nai_jan,_Muri_Muri!_(※Muri_ja_Nakatta!)_Next_Shine!/Mai_Ouzuka.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "킨죠 나기사",
         "animeTitle": "황천의 츠가이",
-        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Nagisa_Kinjou.jpg"
+        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Nagisa_Kinjou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -4217,32 +5481,44 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "타냐 시로노프",
         "animeTitle": "29세 독신 중견 모험가의 일상",
-        "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Tanya.jpg"
+        "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Tanya.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "콘노 준코",
         "animeTitle": "Zombie Land Saga: Yume Ginga Paradise",
-        "img": "image/charimg/2026/Q1/Zombie_Land_Saga_Yume_Ginga_Paradise/Junko_Konno.jpg"
+        "img": "image/charimg/2026/Q1/Zombie_Land_Saga_Yume_Ginga_Paradise/Junko_Konno.jpg",
+        "quarter": "",
+        "year": ""
       },
       {
         "charName": "아카기 리코",
         "animeTitle": "스노우볼 어스",
-        "img": "image/charimg/2026/Q2/Snowball_Earth/Riko_Akagi.jpg"
+        "img": "image/charimg/2026/Q2/Snowball_Earth/Riko_Akagi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "장징란",
         "animeTitle": "카미이나 보탄, 취한 모습은 백합의 꽃",
-        "img": "image/charimg/2026/Q2/Kamiina_Botan,_Yoeru_Sugata_wa_Yuri_no_Hana/Chin-lan_Chang.jpg"
+        "img": "image/charimg/2026/Q2/Kamiina_Botan,_Yoeru_Sugata_wa_Yuri_no_Hana/Chin-lan_Chang.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아미",
         "animeTitle": "카난 님은 초보 악마",
-        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Ami.jpg"
+        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Ami.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "코마츠 나나",
         "animeTitle": "메이드 양은 먹기만 할 뿐",
-        "img": "image/charimg/2026/Q2/Maid-san_wa_Taberu_dake/Nana_Komatsu.jpg"
+        "img": "image/charimg/2026/Q2/Maid-san_wa_Taberu_dake/Nana_Komatsu.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -4254,22 +5530,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "드래곤",
         "animeTitle": "29세 독신 중견 모험가의 일상",
-        "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Dragon.jpg"
+        "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Dragon.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "후지와라 미야비",
         "animeTitle": "Aikatsu! x PriPara THE MOVIE -Deai no Kiseki-",
-        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Miyabi_Fujiwara.jpg"
+        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Miyabi_Fujiwara.jpg",
+        "quarter": "",
+        "year": ""
       },
       {
         "charName": "키시 아카리",
         "animeTitle": "왼손잡이 에렌",
-        "img": "image/charimg/2026/Q2/Hidarikiki_no_Eren/Akari_Kishi.jpg"
+        "img": "image/charimg/2026/Q2/Hidarikiki_no_Eren/Akari_Kishi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "엘파리아 알비스 셰르홀트",
         "animeTitle": "지팡이와 검의 위스토리아 Season2",
-        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Elfaria_Serfort.jpg"
+        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Elfaria_Serfort.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -4281,37 +5565,51 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "두",
         "animeTitle": "마왕의 딸은 너무 친절해!!",
-        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Doux.jpg"
+        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Doux.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "エターナ・リンバウ",
         "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
-        "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Eterna_Rinebow.jpg"
+        "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Eterna_Rinebow.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "마에누마 사쿠야",
         "animeTitle": "카야는 무섭지 않아",
-        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Saku-chan.jpg"
+        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Saku-chan.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "흥흥",
         "animeTitle": "고깔모자 아틀리에",
-        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Fudemushi.jpg"
+        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Fudemushi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "가브짱",
         "animeTitle": "황천의 츠가이",
-        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Gabby.jpg"
+        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Gabby.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "코다곤",
         "animeTitle": "카난 님은 초보 악마",
-        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Kodagon.jpg"
+        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Kodagon.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아이",
         "animeTitle": "요자쿠라 일가의 대작전 제2기",
-        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Ai.jpg"
+        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Ai.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -4323,12 +5621,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "쟈히",
         "animeTitle": "마왕의 딸은 너무 친절해!!",
-        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Jahi.jpg"
+        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Jahi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "조안나 켈츠워렌",
         "animeTitle": "자칭 악역 영애인 약혼자 관찰기록.",
-        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Joanna_Curtswarren.jpg"
+        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Joanna_Curtswarren.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -4340,17 +5642,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "사티",
         "animeTitle": "마왕의 딸은 너무 친절해!!",
-        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Thaiti.jpg"
+        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Thaiti.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "무라오카 사츠키",
         "animeTitle": "키리오 팬클럽",
-        "img": "image/charimg/2026/Q2/Kirio_Fanclub/Satsuki_Muraoka.jpg"
+        "img": "image/charimg/2026/Q2/Kirio_Fanclub/Satsuki_Muraoka.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "토요토미 사유키",
         "animeTitle": "마리카쨩의 호감도는 망가져있다",
-        "img": "image/charimg/2026/Q2/Marika-chan_no_Koukando_wa_Bukkowareteiru/Sayuki_Toyotomi.jpg"
+        "img": "image/charimg/2026/Q2/Marika-chan_no_Koukando_wa_Bukkowareteiru/Sayuki_Toyotomi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -4362,12 +5670,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "자레스",
         "animeTitle": "마왕의 딸은 너무 친절해!!",
-        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Zareth.jpg"
+        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Zareth.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "고샤",
         "animeTitle": "BEASTARS FINAL SEASON Part 2",
-        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Gosha.jpg"
+        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Gosha.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -4379,12 +5691,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아지 다하카",
         "animeTitle": "마왕의 딸은 너무 친절해!!",
-        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Dahaka_Azi.jpg"
+        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Dahaka_Azi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "로자 로열 아이비",
         "animeTitle": "비극의 원흉이 되는 최강악역 최종보스 여왕은 국민을 위해 헌신합니다 Season2",
-        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Rosa_Royal_Ivy.jpg"
+        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Rosa_Royal_Ivy.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -4396,12 +5712,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "메리나",
         "animeTitle": "마왕의 딸은 너무 친절해!!",
-        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Merryna.jpg"
+        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Merryna.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "라이트",
         "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
-        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Light_Festus.jpg"
+        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Light_Festus.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -4413,17 +5733,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "마유",
         "animeTitle": "마왕의 딸은 너무 친절해!!",
-        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Mayu.jpg"
+        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Mayu.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "길",
         "animeTitle": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
-        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Gil.jpg"
+        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Gil.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "오오가미 쥬조",
         "animeTitle": "킬 블루",
-        "img": "image/charimg/2026/Q2/Kill_Ao/Juuzou_Ougami.jpg"
+        "img": "image/charimg/2026/Q2/Kill_Ao/Juuzou_Ougami.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -4435,7 +5761,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "야루야",
         "animeTitle": "마왕의 딸은 너무 친절해!!",
-        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Yairya.jpg"
+        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Yairya.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -4447,7 +5775,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "노파",
         "animeTitle": "마왕의 딸은 너무 친절해!!",
-        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Obaasan.jpg"
+        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Obaasan.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -4459,12 +5789,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아심",
         "animeTitle": "마왕의 딸은 너무 친절해!!",
-        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Asshim.jpg"
+        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Asshim.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "이시가미 뱌쿠야",
         "animeTitle": "닥터 스톤 SCIENCE FUTURE",
-        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Byakuya_Ishigami.jpg"
+        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Byakuya_Ishigami.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -4476,12 +5810,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "살라만드라",
         "animeTitle": "마왕의 딸은 너무 친절해!!",
-        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Salamandra.jpg"
+        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Salamandra.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "죠류",
         "animeTitle": "마도정병의 슬레이브 2기",
-        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Jouryuu.jpg"
+        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Jouryuu.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -4493,12 +5831,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "톤토",
         "animeTitle": "마왕의 딸은 너무 친절해!!",
-        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Tontt.jpg"
+        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Tontt.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "가루루",
         "animeTitle": "Aikatsu! x PriPara THE MOVIE -Deai no Kiseki-",
-        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Gaaruru.jpg"
+        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Gaaruru.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -4510,12 +5852,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "ドゥルジ",
         "animeTitle": "마왕의 딸은 너무 친절해!!",
-        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Duruji.jpg"
+        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Duruji.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "インドラ",
         "animeTitle": "마왕의 딸은 너무 친절해!!",
-        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Indra.jpg"
+        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Indra.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -4527,7 +5873,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "ヴーシュ",
         "animeTitle": "마왕의 딸은 너무 친절해!!",
-        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Vuushu.jpg"
+        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Vuushu.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -4539,7 +5887,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "우른",
         "animeTitle": "마왕의 딸은 너무 친절해!!",
-        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Urun.jpg"
+        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Urun.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -4551,12 +5901,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "고슈",
         "animeTitle": "마왕의 딸은 너무 친절해!!",
-        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Gauche.jpg"
+        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Gauche.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "케이스케 ",
         "animeTitle": "치킨 파이터",
-        "img": "image/charimg/2026/Q2/Niwatori_Fighter/Keisuke.jpg"
+        "img": "image/charimg/2026/Q2/Niwatori_Fighter/Keisuke.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -4568,7 +5922,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "セティア",
         "animeTitle": "마왕의 딸은 너무 친절해!!",
-        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Setia.jpg"
+        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Setia.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -4580,7 +5936,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "무슈",
         "animeTitle": "마왕의 딸은 너무 친절해!!",
-        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Mus.jpg"
+        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Mus.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -4592,7 +5950,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "우르",
         "animeTitle": "마왕의 딸은 너무 친절해!!",
-        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Ur.jpg"
+        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Ur.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -4604,7 +5964,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "サウルワ",
         "animeTitle": "마왕의 딸은 너무 친절해!!",
-        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Sauruwa.jpg"
+        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Sauruwa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -4616,17 +5978,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "ハルワタート",
         "animeTitle": "마왕의 딸은 너무 친절해!!",
-        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Haurvatat.jpg"
+        "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Haurvatat.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "키도 아야카",
         "animeTitle": "옆집 천사님 때문에 어느샌가 인간적으로 타락한 사연 2",
-        "img": "image/charimg/2026/Q2/Otonari_no_Tenshi-sama_ni_Itsunomanika_Dame_Ningen_ni_Sareteita_Ken_2nd_Season/Ayaka_Kido.jpg"
+        "img": "image/charimg/2026/Q2/Otonari_no_Tenshi-sama_ni_Itsunomanika_Dame_Ningen_ni_Sareteita_Ken_2nd_Season/Ayaka_Kido.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "히와무라 히요리",
         "animeTitle": "비실비실 선생님",
-        "img": "image/charimg/2026/Q2/Yowa_Yowa_Sensei/Hiyori_Hiwamura.jpg"
+        "img": "image/charimg/2026/Q2/Yowa_Yowa_Sensei/Hiyori_Hiwamura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -4638,32 +6006,44 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "호시노 아쿠아마린",
         "animeTitle": "【최애의 아이】 3기",
-        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Aquamarine_Hoshino.jpg"
+        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Aquamarine_Hoshino.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아케우라지 츠카사",
         "animeTitle": "메달리스트 2기",
-        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Tsukasa_Akeuraji.jpg"
+        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Tsukasa_Akeuraji.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "오룬 두라",
         "animeTitle": "용사 파티에서 쫓겨난 다재무능",
-        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Orhun_Dura.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Orhun_Dura.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "코로",
         "animeTitle": "BEASTARS FINAL SEASON Part 2",
-        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Collot.jpg"
+        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Collot.jpg",
+        "quarter": "",
+        "year": ""
       },
       {
         "charName": "아키야마 신이치",
         "animeTitle": "라이어 게임",
-        "img": "image/charimg/2026/Q2/LIAR_GAME/Shinichi_Akiyama.jpg"
+        "img": "image/charimg/2026/Q2/LIAR_GAME/Shinichi_Akiyama.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "텐도 텐마",
         "animeTitle": "킬 블루",
-        "img": "image/charimg/2026/Q2/Kill_Ao/Tenma_Tendou.jpg"
+        "img": "image/charimg/2026/Q2/Kill_Ao/Tenma_Tendou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -4675,17 +6055,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "호시노 루비",
         "animeTitle": "【최애의 아이】 3기",
-        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Ruby_Hoshino.jpg"
+        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Ruby_Hoshino.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "무쿠바야시 미즈키",
         "animeTitle": "비실비실 선생님",
-        "img": "image/charimg/2026/Q2/Yowa_Yowa_Sensei/Mizuki_Mukubayashi.jpg"
+        "img": "image/charimg/2026/Q2/Yowa_Yowa_Sensei/Mizuki_Mukubayashi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "미카사 코코나",
         "animeTitle": "마리카쨩의 호감도는 망가져있다",
-        "img": "image/charimg/2026/Q2/Marika-chan_no_Koukando_wa_Bukkowareteiru/Kokona_Misaka.jpg"
+        "img": "image/charimg/2026/Q2/Marika-chan_no_Koukando_wa_Bukkowareteiru/Kokona_Misaka.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -4697,17 +6083,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아리마 카나",
         "animeTitle": "【최애의 아이】 3기",
-        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Kana_Arima.jpg"
+        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Kana_Arima.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "도로시 브라운",
         "animeTitle": "프리즘 윤무곡",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Dorothy_Brown.jpg"
+        "img": "image/charimg/2026/Q1/Prism_Rondo/Dorothy_Brown.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "쿠로가네 미사키",
         "animeTitle": "댄덜라이언",
-        "img": "image/charimg/2026/Q2/Dandelion/Misaki_Kurogane.jpg"
+        "img": "image/charimg/2026/Q2/Dandelion/Misaki_Kurogane.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -4719,32 +6111,44 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "쿠로카와 아카네",
         "animeTitle": "【최애의 아이】 3기",
-        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Akane_Kurokawa.jpg"
+        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Akane_Kurokawa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "츠키요노 벨",
         "animeTitle": "마도정병의 슬레이브 2기",
-        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Bell_Tsukiyono.jpg"
+        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Bell_Tsukiyono.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "캐롤라인 잉그롯",
         "animeTitle": "용사 파티에서 쫓겨난 다재무능",
-        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Caroline_Inglaud.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Caroline_Inglaud.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아사나기 우미",
         "animeTitle": "반에서 두 번째로 귀여운 여자애와 친구가 되었다",
-        "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Umi_Asanagi.jpg"
+        "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Umi_Asanagi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "시시오 미라이",
         "animeTitle": "닥터 스톤 SCIENCE FUTURE",
-        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Mirai_Shishiou.jpg"
+        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Mirai_Shishiou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "시이나 마히루",
         "animeTitle": "옆집 천사님 때문에 어느샌가 인간적으로 타락한 사연 2",
-        "img": "image/charimg/2026/Q2/Otonari_no_Tenshi-sama_ni_Itsunomanika_Dame_Ningen_ni_Sareteita_Ken_2nd_Season/Mahiru_Shiina.jpg"
+        "img": "image/charimg/2026/Q2/Otonari_no_Tenshi-sama_ni_Itsunomanika_Dame_Ningen_ni_Sareteita_Ken_2nd_Season/Mahiru_Shiina.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -4756,37 +6160,51 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "사이토 미야코",
         "animeTitle": "【최애의 아이】 3기",
-        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Miyako_Saitou.jpg"
+        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Miyako_Saitou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "프린세스 히바나",
         "animeTitle": "불꽃 소방대 3장",
-        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Princess_Hibana.jpg"
+        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Princess_Hibana.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "어새신",
         "animeTitle": "Fate/strange Fake",
-        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Assassin.jpg"
+        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Assassin.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "리아",
         "animeTitle": "이세계 유유자적 농가 2",
-        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Ria.jpg"
+        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Ria.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "사토 마야",
         "animeTitle": "어서 오세요 실력지상주의 교실에 4th Season",
-        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Maya_Satou.jpg"
+        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Maya_Satou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "토미네 세라",
         "animeTitle": "신의 물방울",
-        "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Sarah.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Sarah.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "리아나 오웬자우스",
         "animeTitle": "지팡이와 검의 위스토리아 Season2",
-        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Lihanna_Owenzaus.jpg"
+        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Lihanna_Owenzaus.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -4798,12 +6216,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "고토부키 미나미",
         "animeTitle": "【최애의 아이】 3기",
-        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Minami_Kotobuki.jpg"
+        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Minami_Kotobuki.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "할리 볼자크",
         "animeTitle": "Fate/strange Fake",
-        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Haruri_Borzak.jpg"
+        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Haruri_Borzak.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -4815,12 +6237,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "사이토 이치고",
         "animeTitle": "【최애의 아이】 3기",
-        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Ichigo_Saitou.jpg"
+        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Ichigo_Saitou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "바우크스",
         "animeTitle": "도로헤도로 시즌 2",
-        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Vaux.jpg"
+        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Vaux.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -4832,7 +6258,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "요시즈미 슌",
         "animeTitle": "【최애의 아이】 3기",
-        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Shun_Yoshizumi.jpg"
+        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Shun_Yoshizumi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -4844,22 +6272,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "카미키 히카루",
         "animeTitle": "【최애의 아이】 3기",
-        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Hikaru_Kamiki.jpg"
+        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Hikaru_Kamiki.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "신몬 베니마루",
         "animeTitle": "불꽃 소방대 3장",
-        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Benimaru_Shinmon.jpg"
+        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Benimaru_Shinmon.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "타츠미 코타로",
         "animeTitle": "Zombie Land Saga: Yume Ginga Paradise",
-        "img": "image/charimg/2026/Q1/Zombie_Land_Saga_Yume_Ginga_Paradise/Koutarou_Tatsumi.jpg"
+        "img": "image/charimg/2026/Q1/Zombie_Land_Saga_Yume_Ginga_Paradise/Koutarou_Tatsumi.jpg",
+        "quarter": "",
+        "year": ""
       },
       {
         "charName": "쿄카와 마사키",
         "animeTitle": "댄덜라이언",
-        "img": "image/charimg/2026/Q2/Dandelion/Masaki_Kyouga.jpg"
+        "img": "image/charimg/2026/Q2/Dandelion/Masaki_Kyouga.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -4871,17 +6307,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "사메지마 아비코",
         "animeTitle": "【최애의 아이】 3기",
-        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Abiko_Samejima.jpg"
+        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Abiko_Samejima.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "사이온지 렌",
         "animeTitle": "MF고스트 3rd Season",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Ren_Saionji.jpg"
+        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Ren_Saionji.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "존 V 노이만",
         "animeTitle": "리인카네이션의 꽃잎",
-        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/John_V._Neumann.jpg"
+        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/John_V._Neumann.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -4893,17 +6335,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "킨다이치 토시로",
         "animeTitle": "【최애의 아이】 3기",
-        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Toshirou_Kindaichi.jpg"
+        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Toshirou_Kindaichi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "야코 카오루",
         "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
-        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Kaoru_Yakou.jpg"
+        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Kaoru_Yakou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "조모",
         "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
-        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Sobo.jpg"
+        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Sobo.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -4915,12 +6363,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "메이야",
         "animeTitle": "【최애의 아이】 3기",
-        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Meiya.jpg"
+        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Meiya.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "호리카와 시오리",
         "animeTitle": "신의 정원이 딸린 쿠스노키 저택",
-        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Shiori_Horikawa.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Shiori_Horikawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -4932,12 +6384,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아타노 카즈히코",
         "animeTitle": "【최애의 아이】 3기",
-        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Kazuhiko_Itano.jpg"
+        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Kazuhiko_Itano.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "레로니라",
         "animeTitle": "라이어 게임",
-        "img": "image/charimg/2026/Q2/LIAR_GAME/Leronira.jpg"
+        "img": "image/charimg/2026/Q2/LIAR_GAME/Leronira.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -4949,12 +6405,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "고탄다 타이시",
         "animeTitle": "【최애의 아이】 3기",
-        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Taishi_Gotanda.jpg"
+        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Taishi_Gotanda.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "호토케야마 세이지",
         "animeTitle": "요자쿠라 일가의 대작전 제2기",
-        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Seiji_Hotokeyama.jpg"
+        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Seiji_Hotokeyama.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -4966,37 +6426,51 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "호시노 아이",
         "animeTitle": "【최애의 아이】 3기",
-        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Ai_Hoshino.jpg"
+        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Ai_Hoshino.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "유즈리하",
         "animeTitle": "지옥락 2기",
-        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Yuzuriha.jpg"
+        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Yuzuriha.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "루시 스틸",
         "animeTitle": "스틸 볼 런: 죠죠의 기묘한 모험",
-        "img": "image/charimg/2026/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Lucy_Steel.jpg"
+        "img": "image/charimg/2026/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Lucy_Steel.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "키코유",
         "animeTitle": "자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season",
-        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Kikoyu.jpg"
+        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Kikoyu.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "에밀리아",
         "animeTitle": "Re:제로부터 시작하는 이세계 생활 4기",
-        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Emilia.jpg"
+        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Emilia.jpg",
+        "quarter": "3분기",
+        "year": 2026
       },
       {
         "charName": "사쿠라사와 스미",
         "animeTitle": "여친, 빌리겠습니다 5기",
-        "img": "image/charimg/2026/Q2/Kanojo,_Okarishimasu_5th_Season/Sumi_Sakurasawa.jpg"
+        "img": "image/charimg/2026/Q2/Kanojo,_Okarishimasu_5th_Season/Sumi_Sakurasawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "코라기 히카루",
         "animeTitle": "아카네 이야기",
-        "img": "image/charimg/2026/Q2/Akane-banashi/Hikaru_Koragi.jpg"
+        "img": "image/charimg/2026/Q2/Akane-banashi/Hikaru_Koragi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -5008,12 +6482,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "혼다 미오",
         "animeTitle": "【최애의 아이】 3기",
-        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Mio_Honda.jpg"
+        "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Mio_Honda.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "프레이야",
         "animeTitle": "프리즘 윤무곡",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Freya.jpg"
+        "img": "image/charimg/2026/Q1/Prism_Rondo/Freya.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -5025,7 +6503,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "유우키",
         "animeTitle": "사망 유희로 밥을 먹는다.",
-        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Yuki_Sorimachi.jpg"
+        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Yuki_Sorimachi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -5037,17 +6517,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "킨코",
         "animeTitle": "사망 유희로 밥을 먹는다.",
-        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Kinko.jpg"
+        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Kinko.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "렘",
         "animeTitle": "Re:제로부터 시작하는 이세계 생활 4기",
-        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Rem.jpg"
+        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Rem.jpg",
+        "quarter": "3분기",
+        "year": 2026
       },
       {
         "charName": "마리아베르 로조",
         "animeTitle": "전생했더니 슬라임이었던 건에 대하여 4기",
-        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Mariabell_Rosso.jpg"
+        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Mariabell_Rosso.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -5059,17 +6545,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "모모노",
         "animeTitle": "사망 유희로 밥을 먹는다.",
-        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Momono.jpg"
+        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Momono.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "맹독전파소녀☆퍼플 롤리팝",
         "animeTitle": "니디 걸 오버도즈",
-        "img": "image/charimg/2026/Q2/NEEDY_GIRL_OVERDOSE/Moudoku_Denpa_Shoujo☆Purple_Lollipop.jpg"
+        "img": "image/charimg/2026/Q2/NEEDY_GIRL_OVERDOSE/Moudoku_Denpa_Shoujo☆Purple_Lollipop.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아리스 네네",
         "animeTitle": "경멸하는 표정으로 팬티를 보여다오 R(리턴즈)",
-        "img": "image/charimg/2026/Q2/Iya_na_Kao_sare_nagara_Opantsu_Misete_Moraitai_Returns/Nene_Arisu.jpg"
+        "img": "image/charimg/2026/Q2/Iya_na_Kao_sare_nagara_Opantsu_Misete_Moraitai_Returns/Nene_Arisu.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -5081,7 +6573,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "코쿠토",
         "animeTitle": "사망 유희로 밥을 먹는다.",
-        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Kokutou.jpg"
+        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Kokutou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -5093,12 +6587,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아오이",
         "animeTitle": "사망 유희로 밥을 먹는다.",
-        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Aoi.jpg"
+        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Aoi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "코코",
         "animeTitle": "고깔모자 아틀리에",
-        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Coco.jpg"
+        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Coco.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -5110,7 +6608,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "미시로",
         "animeTitle": "사망 유희로 밥을 먹는다.",
-        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Mishiro.jpg"
+        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Mishiro.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -5122,22 +6622,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "케이토",
         "animeTitle": "사망 유희로 밥을 먹는다.",
-        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Keito.jpg"
+        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Keito.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아사기 와카나",
         "animeTitle": "사랑해 게임을 끝내고 싶어",
-        "img": "image/charimg/2026/Q2/Aishiteru_Game_wo_Owarasetai/Wakana_Asagi.jpg"
+        "img": "image/charimg/2026/Q2/Aishiteru_Game_wo_Owarasetai/Wakana_Asagi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "하이토 루오 브웨트",
         "animeTitle": "리인카네이션의 꽃잎",
-        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Haito_Le_Buffett.jpg"
+        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Haito_Le_Buffett.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "토모사카 구미",
         "animeTitle": "부탁해 아이프리",
-        "img": "image/charimg/2026/Q2/Onegai_AiPri/Gumi_Tomosaka.jpg"
+        "img": "image/charimg/2026/Q2/Onegai_AiPri/Gumi_Tomosaka.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -5149,12 +6657,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "치에",
         "animeTitle": "사망 유희로 밥을 먹는다.",
-        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Chie.jpg"
+        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Chie.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "하네다 토바리",
         "animeTitle": "인외 교실의 인간 혐오 교사",
-        "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Tobari_Haneda.jpg"
+        "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Tobari_Haneda.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -5166,27 +6678,37 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "코토하",
         "animeTitle": "사망 유희로 밥을 먹는다.",
-        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Kotoha.jpg"
+        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Kotoha.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아르테 온 페르디낫트",
         "animeTitle": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
-        "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Arte_Ferdinand.jpg"
+        "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Arte_Ferdinand.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "키노사키 메이",
         "animeTitle": "매리지 톡신",
-        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Mei_Kinosaki.jpg"
+        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Mei_Kinosaki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "소메타니 나미",
         "animeTitle": "키리오 팬클럽",
-        "img": "image/charimg/2026/Q2/Kirio_Fanclub/Nami_Sometani.jpg"
+        "img": "image/charimg/2026/Q2/Kirio_Fanclub/Nami_Sometani.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "리리테아",
         "animeTitle": "또 죽고 말았나요, 탐정님",
-        "img": "image/charimg/2026/Q2/Mata_Korosarete_Shimatta_no_desu_ne,_Tantei-sama/Lilithea.jpg"
+        "img": "image/charimg/2026/Q2/Mata_Korosarete_Shimatta_no_desu_ne,_Tantei-sama/Lilithea.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -5198,27 +6720,37 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "모에기",
         "animeTitle": "사망 유희로 밥을 먹는다.",
-        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Moegi.jpg"
+        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Moegi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "야기 유우나",
         "animeTitle": "메달리스트 2기",
-        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Yuuna_Yagi.jpg"
+        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Yuuna_Yagi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "리타",
         "animeTitle": "이세계 유유자적 농가 2",
-        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Lita.jpg"
+        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Lita.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "리제",
         "animeTitle": "이세계 유유자적 농가 2",
-        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Lize.jpg"
+        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Lize.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "하나사키 코하루",
         "animeTitle": "부탁해 아이프리",
-        "img": "image/charimg/2026/Q2/Onegai_AiPri/Koharu_Hanasaki.jpg"
+        "img": "image/charimg/2026/Q2/Onegai_AiPri/Koharu_Hanasaki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -5230,37 +6762,51 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아이리",
         "animeTitle": "사망 유희로 밥을 먹는다.",
-        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Airi.jpg"
+        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Airi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아즈마 히마리",
         "animeTitle": "마도정병의 슬레이브 2기",
-        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Himari_Azuma.jpg"
+        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Himari_Azuma.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "세스",
         "animeTitle": "에리스의 성배",
-        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Cess.jpg"
+        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Cess.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "히로니아 인데른",
         "animeTitle": "자칭 악역 영애인 약혼자 관찰기록.",
-        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Heronia_Inderon.jpg"
+        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Heronia_Inderon.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아리무라 마린",
         "animeTitle": "매리지 톡신",
-        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Marin_Arimura.jpg"
+        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Marin_Arimura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아사",
         "animeTitle": "황천의 츠가이",
-        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Asa.jpg"
+        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Asa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "우사",
         "animeTitle": "요자쿠라 일가의 대작전 제2기",
-        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Usa.jpg"
+        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Usa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -5272,7 +6818,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아즈마",
         "animeTitle": "사망 유희로 밥을 먹는다.",
-        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Azuma.jpg"
+        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Azuma.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -5284,42 +6832,58 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "리코",
         "animeTitle": "사망 유희로 밥을 먹는다.",
-        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Riko.jpg"
+        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Riko.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "테슬라",
         "animeTitle": "트라이건 스타게이즈",
-        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Tesla.jpg"
+        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Tesla.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "티네 체르크",
         "animeTitle": "Fate/strange Fake",
-        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Tine_Chelc.jpg"
+        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Tine_Chelc.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "나라 에미리",
         "animeTitle": "위국일기",
-        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Emiri_Nara.jpg"
+        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Emiri_Nara.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아이카와 스나오",
         "animeTitle": "레플리카도, 사랑을 한다",
-        "img": "image/charimg/2026/Q2/Replica_Datte,_Koi_wo_Suru/Sunao_Aikawa.jpg"
+        "img": "image/charimg/2026/Q2/Replica_Datte,_Koi_wo_Suru/Sunao_Aikawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "나오",
         "animeTitle": "레플리카도, 사랑을 한다",
-        "img": "image/charimg/2026/Q2/Replica_Datte,_Koi_wo_Suru/Nao.jpg"
+        "img": "image/charimg/2026/Q2/Replica_Datte,_Koi_wo_Suru/Nao.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "우사다 마오",
         "animeTitle": "두 남자와 룸쉐어 중입니다",
-        "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Mao_Usada.jpg"
+        "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Mao_Usada.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "리마",
         "animeTitle": "북두의 권 -FIST OF THE NORTH STAR-",
-        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Rima.jpg"
+        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Rima.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -5331,7 +6895,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "츠바키",
         "animeTitle": "사망 유희로 밥을 먹는다.",
-        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Tsubaki.jpg"
+        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Tsubaki.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -5343,7 +6909,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "미캉",
         "animeTitle": "사망 유희로 밥을 먹는다.",
-        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Mikan.jpg"
+        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Mikan.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -5355,7 +6923,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "카야",
         "animeTitle": "사망 유희로 밥을 먹는다.",
-        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Kaya.jpg"
+        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Kaya.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -5367,12 +6937,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "마유미",
         "animeTitle": "사망 유희로 밥을 먹는다.",
-        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Mayumi.jpg"
+        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Mayumi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "칸자키 나오",
         "animeTitle": "라이어 게임",
-        "img": "image/charimg/2026/Q2/LIAR_GAME/Nao_Kanzaki.jpg"
+        "img": "image/charimg/2026/Q2/LIAR_GAME/Nao_Kanzaki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -5384,7 +6958,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "스기야마",
         "animeTitle": "사망 유희로 밥을 먹는다.",
-        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Sugiyama.jpg"
+        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Sugiyama.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -5396,7 +6972,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아몬",
         "animeTitle": "사망 유희로 밥을 먹는다.",
-        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Amon.jpg"
+        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Amon.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -5408,17 +6986,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "히와다",
         "animeTitle": "사망 유희로 밥을 먹는다.",
-        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Hiwada.jpg"
+        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Hiwada.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "율리시스 파리스",
         "animeTitle": "에리스의 성배",
-        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Ulysses_Faris.jpg"
+        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Ulysses_Faris.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "노노야마 후우",
         "animeTitle": "마법의 자매 루루토리리",
-        "img": "image/charimg/2026/Q2/Mahou_no_Shimai_LuluttoLilly_Part_2/Fuu_Nonoyama.jpg"
+        "img": "image/charimg/2026/Q2/Mahou_no_Shimai_LuluttoLilly_Part_2/Fuu_Nonoyama.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -5430,7 +7014,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "와라비",
         "animeTitle": "사망 유희로 밥을 먹는다.",
-        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Warabi.jpg"
+        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Warabi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -5442,22 +7028,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "카린",
         "animeTitle": "사망 유희로 밥을 먹는다.",
-        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Karin.jpg"
+        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Karin.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아마오리 레나코",
         "animeTitle": "내가 연인이 될 수 있을 리 없잖아, 무리무리! (※무리가 아니었다?!) ~넥스트 샤인!~",
-        "img": "image/charimg/2026/Q1/Watashi_ga_Koibito_ni_Nareru_Wake_Nai_jan,_Muri_Muri!_(※Muri_ja_Nakatta!)_Next_Shine!/Renako_Amaori.jpg"
+        "img": "image/charimg/2026/Q1/Watashi_ga_Koibito_ni_Nareru_Wake_Nai_jan,_Muri_Muri!_(※Muri_ja_Nakatta!)_Next_Shine!/Renako_Amaori.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "모토미야 미오리",
         "animeTitle": "하이바라의 청춘 뉴 게임 플러스",
-        "img": "image/charimg/2026/Q2/Haibara-kun_no_Tsuyokute_Seishun_New_Game/Miori_Motomiya.jpg"
+        "img": "image/charimg/2026/Q2/Haibara-kun_no_Tsuyokute_Seishun_New_Game/Miori_Motomiya.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "타카다",
         "animeTitle": "킬 블루",
-        "img": "image/charimg/2026/Q2/Kill_Ao/Reika_Takada.jpg"
+        "img": "image/charimg/2026/Q2/Kill_Ao/Reika_Takada.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -5469,22 +7063,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "미토",
         "animeTitle": "사망 유희로 밥을 먹는다.",
-        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Mizunoto.jpg"
+        "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Mizunoto.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아이바 세리아",
         "animeTitle": "고스트 콘서트: missing Songs",
-        "img": "image/charimg/2026/Q2/Ghost_Concert_missing_Songs/Seria_Aiba.jpg"
+        "img": "image/charimg/2026/Q2/Ghost_Concert_missing_Songs/Seria_Aiba.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "미나토의 여자",
         "animeTitle": "얼음 성벽",
-        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Minato_no_Kanojo.jpg"
+        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Minato_no_Kanojo.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아타미 나나",
         "animeTitle": "부탁해 아이프리",
-        "img": "image/charimg/2026/Q2/Onegai_AiPri/Nana_Atami.jpg"
+        "img": "image/charimg/2026/Q2/Onegai_AiPri/Nana_Atami.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -5496,7 +7098,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "노아 아라라트",
         "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
-        "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Noah_Ararat.jpg"
+        "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Noah_Ararat.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -5508,32 +7112,44 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "알버트 아라라트",
         "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
-        "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Henry_Ararat.jpg"
+        "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Henry_Ararat.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아이바 슌",
         "animeTitle": "MF고스트 3rd Season",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Shun_Aiba.jpg"
+        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Shun_Aiba.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아마부키 나오마사",
         "animeTitle": "Zombie Land Saga: Yume Ginga Paradise",
-        "img": "image/charimg/2026/Q1/Zombie_Land_Saga_Yume_Ginga_Paradise/Naomasa_Amabuki.jpg"
+        "img": "image/charimg/2026/Q1/Zombie_Land_Saga_Yume_Ginga_Paradise/Naomasa_Amabuki.jpg",
+        "quarter": "",
+        "year": ""
       },
       {
         "charName": "카람 보르드",
         "animeTitle": "비극의 원흉이 되는 최강악역 최종보스 여왕은 국민을 위해 헌신합니다 Season2",
-        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Calum_Bordeaux.jpg"
+        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Calum_Bordeaux.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "그란베르 로조",
         "animeTitle": "전생했더니 슬라임이었던 건에 대하여 4기",
-        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Granbell_Rosso.jpg"
+        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Granbell_Rosso.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "나베리우스 카르에고",
         "animeTitle": "마계학교 이루마군 4기",
-        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Kalego_Naberius.jpg"
+        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Kalego_Naberius.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -5545,7 +7161,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "조이",
         "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
-        "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Zoey.jpg"
+        "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Zoey.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -5557,32 +7175,44 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "오스카 아라라트",
         "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
-        "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Oscar_Ararat.jpg"
+        "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Oscar_Ararat.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "라이 바텐카이토스",
         "animeTitle": "Re:제로부터 시작하는 이세계 생활 4기",
-        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Lye_Batenkaitos.jpg"
+        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Lye_Batenkaitos.jpg",
+        "quarter": "3분기",
+        "year": 2026
       },
       {
         "charName": "로이 알파르드",
         "animeTitle": "Re:제로부터 시작하는 이세계 생활 4기",
-        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Roy_Alphard.jpg"
+        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Roy_Alphard.jpg",
+        "quarter": "3분기",
+        "year": 2026
       },
       {
         "charName": "아사기리 겐",
         "animeTitle": "닥터 스톤 SCIENCE FUTURE",
-        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Gen_Asagiri.jpg"
+        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Gen_Asagiri.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "이즈미 나유타",
         "animeTitle": "스노우볼 어스",
-        "img": "image/charimg/2026/Q2/Snowball_Earth/Nayuta_Izumi.jpg"
+        "img": "image/charimg/2026/Q2/Snowball_Earth/Nayuta_Izumi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "이그노르 린도르",
         "animeTitle": "지팡이와 검의 위스토리아 Season2",
-        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Wignall_Lindor.jpg"
+        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Wignall_Lindor.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -5594,27 +7224,37 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "에벌린",
         "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
-        "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Evelyn.jpg"
+        "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Evelyn.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "와카바 아오이",
         "animeTitle": "인외 교실의 인간 혐오 교사",
-        "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Aoi_Wakaba.jpg"
+        "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Aoi_Wakaba.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "新条ひなき",
         "animeTitle": "Aikatsu! x PriPara THE MOVIE -Deai no Kiseki-",
-        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Hinaki_Shinjou.jpg"
+        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Hinaki_Shinjou.jpg",
+        "quarter": "",
+        "year": ""
       },
       {
         "charName": "루루시",
         "animeTitle": "고깔모자 아틀리에",
-        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Luluci.jpg"
+        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Luluci.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "카토 사유리",
         "animeTitle": "왼손잡이 에렌",
-        "img": "image/charimg/2026/Q2/Hidarikiki_no_Eren/Sayuri_Katou.jpg"
+        "img": "image/charimg/2026/Q2/Hidarikiki_no_Eren/Sayuri_Katou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -5626,7 +7266,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "왕비",
         "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
-        "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Ouhi.jpg"
+        "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Ouhi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -5638,17 +7280,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "셜리 그랜즈",
         "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
-        "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Shirley_Grantz.jpg"
+        "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Shirley_Grantz.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "もっち",
         "animeTitle": "위국일기",
-        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Mocchi.jpg"
+        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Mocchi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "시리카 루네아",
         "animeTitle": "자칭 악역 영애인 약혼자 관찰기록.",
-        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Silica_Lunea.jpg"
+        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Silica_Lunea.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -5660,12 +7308,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "인드라 아라라트",
         "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
-        "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Indra_Ararat.jpg"
+        "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Indra_Ararat.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "하세가와 헤이조 노부오",
         "animeTitle": "화식조 우슈보로토비구미",
-        "img": "image/charimg/2026/Q1/Hikuidori/Heizou_Hasegawa.jpg"
+        "img": "image/charimg/2026/Q1/Hikuidori/Heizou_Hasegawa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -5677,7 +7329,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "지지",
         "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
-        "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Gigi.jpg"
+        "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Gigi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -5689,27 +7343,37 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "황제",
         "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
-        "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Koutei.jpg"
+        "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Koutei.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "남부의 용사",
         "animeTitle": "장송의 프리렌 2기",
-        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Minami_no_Yuusha.jpg"
+        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Minami_no_Yuusha.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "카라스마 시로",
         "animeTitle": "인외 교실의 인간 혐오 교사",
-        "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Shirou_Karasuma.jpg"
+        "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Shirou_Karasuma.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "질베스타 토터 에렌페스트",
         "animeTitle": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
-        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Sylvester.jpg"
+        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Sylvester.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "주인님",
         "animeTitle": "메이드 양은 먹기만 할 뿐",
-        "img": "image/charimg/2026/Q2/Maid-san_wa_Taberu_dake/Goshujin-sama.jpg"
+        "img": "image/charimg/2026/Q2/Maid-san_wa_Taberu_dake/Goshujin-sama.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -5721,17 +7385,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "알리체",
         "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
-        "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Alichey.jpg"
+        "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Alichey.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "사토 카야",
         "animeTitle": "카야는 무섭지 않아",
-        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Kaya_Satou.jpg"
+        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Kaya_Satou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "유우 아리에스",
         "animeTitle": "검은 고양이와 마녀의 교실",
-        "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Ewe_Aries.jpg"
+        "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Ewe_Aries.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -5743,52 +7413,72 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "길버트 아라라트",
         "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
-        "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Gilbert_Ararat.jpg"
+        "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Gilbert_Ararat.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "부잼",
         "animeTitle": "용사형에 처함",
-        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Boojum.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Boojum.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "레볼테",
         "animeTitle": "장송의 프리렌 2기",
-        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Revolte.jpg"
+        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Revolte.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "미드버레이 더 홈프릭",
         "animeTitle": "트라이건 스타게이즈",
-        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Midvalley_the_Hornfreak.jpg"
+        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Midvalley_the_Hornfreak.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "마미야 키요히로",
         "animeTitle": "쓰레기 용사",
-        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Kiyohito_Takayama.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Kiyohito_Takayama.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "국왕",
         "animeTitle": "악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다",
-        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Kokou.jpg"
+        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Kokou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "토고로",
         "animeTitle": "화식조 우슈보로토비구미",
-        "img": "image/charimg/2026/Q1/Hikuidori/Tougorou.jpg"
+        "img": "image/charimg/2026/Q1/Hikuidori/Tougorou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "야후야",
         "animeTitle": "BEASTARS FINAL SEASON Part 2",
-        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Yahya.jpg"
+        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Yahya.jpg",
+        "quarter": "",
+        "year": ""
       },
       {
         "charName": "미키",
         "animeTitle": "두 남자와 룸쉐어 중입니다",
-        "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Takeru_Miki.jpg"
+        "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Takeru_Miki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "요사노 이반",
         "animeTitle": "황천의 츠가이",
-        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Ivan_Yosano.jpg"
+        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Ivan_Yosano.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -5800,57 +7490,79 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "앨버트 아라라트",
         "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
-        "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Albert_Ararat.jpg"
+        "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Albert_Ararat.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "젠인 나오야",
         "animeTitle": "주술회전 3기",
-        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Naoya_Zenin.jpg"
+        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Naoya_Zenin.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "오리시모 사몬",
         "animeTitle": "화식조 우슈보로토비구미",
-        "img": "image/charimg/2026/Q1/Hikuidori/Samon_Orishimo.jpg"
+        "img": "image/charimg/2026/Q1/Hikuidori/Samon_Orishimo.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "짓카",
         "animeTitle": "지옥락 2기",
-        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Jikka.jpg"
+        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Jikka.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "질베르 버틀러",
         "animeTitle": "비극의 원흉이 되는 최강악역 최종보스 여왕은 국민을 위해 헌신합니다 Season2",
-        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Gilbert_Butler.jpg"
+        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Gilbert_Butler.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "야나기 하지메",
         "animeTitle": "왼손잡이 에렌",
-        "img": "image/charimg/2026/Q2/Hidarikiki_no_Eren/Hajime_Yanagi.jpg"
+        "img": "image/charimg/2026/Q2/Hidarikiki_no_Eren/Hajime_Yanagi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "신",
         "animeTitle": "북두의 권 -FIST OF THE NORTH STAR-",
-        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Shin.jpg"
+        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Shin.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "카요 슌게츠",
         "animeTitle": "춘하추동 대행자 봄의 춤",
-        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Shungetsu_Kayou.jpg"
+        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Shungetsu_Kayou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "응룡",
         "animeTitle": "신의 정원이 딸린 쿠스노키 저택",
-        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Ouryuu.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Ouryuu.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "교장 선생님",
         "animeTitle": "부탁해 아이프리",
-        "img": "image/charimg/2026/Q2/Onegai_AiPri/Kouchou-sensei.jpg"
+        "img": "image/charimg/2026/Q2/Onegai_AiPri/Kouchou-sensei.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "에드워드 셀펜스",
         "animeTitle": "지팡이와 검의 위스토리아 Season2",
-        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Edward_Serfence.jpg"
+        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Edward_Serfence.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -5862,17 +7574,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "리젤",
         "animeTitle": "온화한 귀족의 휴가의 권장",
-        "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Lizel.jpg"
+        "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Lizel.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아마이 린",
         "animeTitle": "주술회전 3기",
-        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Rin_Amai.jpg"
+        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Rin_Amai.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "나루코 겐야",
         "animeTitle": "매리지 톡신",
-        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Genya_Naruko.jpg"
+        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Genya_Naruko.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -5884,12 +7602,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "일레븐",
         "animeTitle": "온화한 귀족의 휴가의 권장",
-        "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Eleven.jpg"
+        "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Eleven.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "율리우스 레인버그",
         "animeTitle": "지팡이와 검의 위스토리아 Season2",
-        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Julius_Reinburg.jpg"
+        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Julius_Reinburg.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -5901,57 +7623,79 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "스터드",
         "animeTitle": "온화한 귀족의 휴가의 권장",
-        "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Stud.jpg"
+        "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Stud.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "우메다 호쿠토",
         "animeTitle": "아름다운 그대에게",
-        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Hokuto_Umeda.jpg"
+        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Hokuto_Umeda.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "츠키시마 세이이치",
         "animeTitle": "허당 선도부원과 스커트 길이가 부적절한 여고생의 이야기",
-        "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Seiichi_Tsukishima.jpg"
+        "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Seiichi_Tsukishima.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "네아르코",
         "animeTitle": "라이어 게임",
-        "img": "image/charimg/2026/Q2/LIAR_GAME/Nearco.jpg"
+        "img": "image/charimg/2026/Q2/LIAR_GAME/Nearco.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아사마 요시쓰네",
         "animeTitle": "일본삼국",
-        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Yoshitsune_Asama.jpg"
+        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Yoshitsune_Asama.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "모치즈키 슌",
         "animeTitle": "레플리카도, 사랑을 한다",
-        "img": "image/charimg/2026/Q2/Replica_Datte,_Koi_wo_Suru/Shun_Mochizuki.jpg"
+        "img": "image/charimg/2026/Q2/Replica_Datte,_Koi_wo_Suru/Shun_Mochizuki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "핫콘",
         "animeTitle": "자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season",
-        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Hakkon.jpg"
+        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Hakkon.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "E 슈뢰딩거",
         "animeTitle": "리인카네이션의 꽃잎",
-        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/E._Schrodinger.jpg"
+        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/E._Schrodinger.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "레온 크롬웰",
         "animeTitle": "전생했더니 슬라임이었던 건에 대하여 4기",
-        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Leon_Cromwell.jpg"
+        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Leon_Cromwell.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아라카와 신타",
         "animeTitle": "아카네 이야기",
-        "img": "image/charimg/2026/Q2/Akane-banashi/Shinta_Arakawa.jpg"
+        "img": "image/charimg/2026/Q2/Akane-banashi/Shinta_Arakawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "캐리엇 인스티어 와이즈먼",
         "animeTitle": "지팡이와 검의 위스토리아 Season2",
-        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Cariot_Incindia_Wiseman.jpg"
+        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Cariot_Incindia_Wiseman.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -5963,22 +7707,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "저지",
         "animeTitle": "온화한 귀족의 휴가의 권장",
-        "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Judge.jpg"
+        "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Judge.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "센타",
         "animeTitle": "지옥락 2기",
-        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Senta.jpg"
+        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Senta.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "적",
         "animeTitle": "자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season",
-        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Aka.jpg"
+        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Aka.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "바트",
         "animeTitle": "북두의 권 -FIST OF THE NORTH STAR-",
-        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Bat.jpg"
+        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Bat.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -5990,32 +7742,44 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "섀도",
         "animeTitle": "온화한 귀족의 휴가의 권장",
-        "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Shadow.jpg"
+        "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Shadow.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "카론",
         "animeTitle": "불꽃 소방대 3장",
-        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Charon.jpg"
+        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Charon.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "이시가미 후진",
         "animeTitle": "MF고스트 3rd Season",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Fuujin_Ishigami.jpg"
+        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Fuujin_Ishigami.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "가르가",
         "animeTitle": "고깔모자 아틀리에",
-        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Galga.jpg"
+        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Galga.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "로데릭 베레스포드",
         "animeTitle": "비극의 원흉이 되는 최강악역 최종보스 여왕은 국민을 위해 헌신합니다 Season2",
-        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Rodrick_Beresford.jpg"
+        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Rodrick_Beresford.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "오로바스 코코",
         "animeTitle": "마계학교 이루마군 4기",
-        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Walb.jpg"
+        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Walb.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -6027,12 +7791,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "인사이",
         "animeTitle": "온화한 귀족의 휴가의 권장",
-        "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Insigh.jpg"
+        "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Insigh.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "조프레크 오스트비슈",
         "animeTitle": "용사형에 처함",
-        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Zofflec_Ostbiche.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Zofflec_Ostbiche.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -6044,32 +7812,44 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "アイン",
         "animeTitle": "온화한 귀족의 휴가의 권장",
-        "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Ein.jpg"
+        "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Ein.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "마츠기",
         "animeTitle": "쓰레기 용사",
-        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Matsugi.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Matsugi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "올리버 카디프",
         "animeTitle": "용사 파티에서 쫓겨난 다재무능",
-        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Oliver_Cardiff.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Oliver_Cardiff.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "우에이 요우",
         "animeTitle": "닥터 스톤 SCIENCE FUTURE",
-        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/You_Uei.jpg"
+        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/You_Uei.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "린도 에이지",
         "animeTitle": "킬 블루",
-        "img": "image/charimg/2026/Q2/Kill_Ao/Eiji_Rindou.jpg"
+        "img": "image/charimg/2026/Q2/Kill_Ao/Eiji_Rindou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "풍신",
         "animeTitle": "신의 정원이 딸린 쿠스노키 저택",
-        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Fuujin.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Fuujin.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -6081,27 +7861,37 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "루광",
         "animeTitle": "시광대리인 -Link Click- 영도편",
-        "img": "image/charimg/2026/Q1/Shiguang_Dailiren_Yingdu_Pian/Guang_Lu.jpg"
+        "img": "image/charimg/2026/Q1/Shiguang_Dailiren_Yingdu_Pian/Guang_Lu.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "켄자쿠",
         "animeTitle": "주술회전 3기",
-        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Kenjaku.jpg"
+        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Kenjaku.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "카를로스 N 헤스콕",
         "animeTitle": "리인카네이션의 꽃잎",
-        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Carlos_Hathcock.jpg"
+        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Carlos_Hathcock.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "디아블로",
         "animeTitle": "전생했더니 슬라임이었던 건에 대하여 4기",
-        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Diablo.jpg"
+        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Diablo.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "미유키 카즈야",
         "animeTitle": "다이아몬드 에이스 actII -Second Season-",
-        "img": "image/charimg/2026/Q2/Diamond_no_Ace_act_II_Second_Season/Kazuya_Miyuki.jpg"
+        "img": "image/charimg/2026/Q2/Diamond_no_Ace_act_II_Second_Season/Kazuya_Miyuki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -6113,12 +7903,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "청샤오시",
         "animeTitle": "시광대리인 -Link Click- 영도편",
-        "img": "image/charimg/2026/Q1/Shiguang_Dailiren_Yingdu_Pian/Xiaoshi_Cheng.jpg"
+        "img": "image/charimg/2026/Q1/Shiguang_Dailiren_Yingdu_Pian/Xiaoshi_Cheng.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "카몬",
         "animeTitle": "마오",
-        "img": "image/charimg/2026/Q2/MAO/Kamon.jpg"
+        "img": "image/charimg/2026/Q2/MAO/Kamon.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -6130,42 +7924,58 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "샤페이",
         "animeTitle": "시광대리인 -Link Click- 영도편",
-        "img": "image/charimg/2026/Q1/Shiguang_Dailiren_Yingdu_Pian/Fei_Xia.jpg"
+        "img": "image/charimg/2026/Q1/Shiguang_Dailiren_Yingdu_Pian/Fei_Xia.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "마다라이토 코스케",
         "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
-        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Kousuke_Madaraito.jpg"
+        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Kousuke_Madaraito.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "이타도리 유지",
         "animeTitle": "주술회전 3기",
-        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Yuuji_Itadori.jpg"
+        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Yuuji_Itadori.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "팔데우스 디오란도",
         "animeTitle": "Fate/strange Fake",
-        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Faldeus_Dioland.jpg"
+        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Faldeus_Dioland.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "잭",
         "animeTitle": "BEASTARS FINAL SEASON Part 2",
-        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Jack.jpg"
+        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Jack.jpg",
+        "quarter": "",
+        "year": ""
       },
       {
         "charName": "사쿠라다이몬 토우고",
         "animeTitle": "허당 선도부원과 스커트 길이가 부적절한 여고생의 이야기",
-        "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Tougo_Sakuradaimon.jpg"
+        "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Tougo_Sakuradaimon.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아서 베레스포드",
         "animeTitle": "비극의 원흉이 되는 최강악역 최종보스 여왕은 국민을 위해 헌신합니다 Season2",
-        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Arthur_Beresford.jpg"
+        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Arthur_Beresford.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "백",
         "animeTitle": "자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season",
-        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Shiro.jpg"
+        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Shiro.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -6177,17 +7987,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "챠오링",
         "animeTitle": "시광대리인 -Link Click- 영도편",
-        "img": "image/charimg/2026/Q1/Shiguang_Dailiren_Yingdu_Pian/Ling_Qiao.jpg"
+        "img": "image/charimg/2026/Q1/Shiguang_Dailiren_Yingdu_Pian/Ling_Qiao.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "쿠루오카 츠바키",
         "animeTitle": "Fate/strange Fake",
-        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Tsubaki_Kuruoka.jpg"
+        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Tsubaki_Kuruoka.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "카난 님은 초보 악마",
         "animeTitle": "카난 님은 초보 악마",
-        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Kanan_Zebul.jpg"
+        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Kanan_Zebul.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -6199,47 +8015,65 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "리우샤오",
         "animeTitle": "시광대리인 -Link Click- 영도편",
-        "img": "image/charimg/2026/Q1/Shiguang_Dailiren_Yingdu_Pian/Xiao_Liu.jpg"
+        "img": "image/charimg/2026/Q1/Shiguang_Dailiren_Yingdu_Pian/Xiao_Liu.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "꽃의 마법사",
         "animeTitle": "샹피뇽의 마녀",
-        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Hana_no_Mahoutsukai.jpg"
+        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Hana_no_Mahoutsukai.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "하스미 렌리",
         "animeTitle": "데드 어카운트",
-        "img": "image/charimg/2026/Q1/Dead_Account/Renri_Hasumi.jpg"
+        "img": "image/charimg/2026/Q1/Dead_Account/Renri_Hasumi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "우오부치 카케루",
         "animeTitle": "메달리스트 2기",
-        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Kakeru_Uobuchi.jpg"
+        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Kakeru_Uobuchi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "오코테루 고토",
         "animeTitle": "초(超) 가구야 공주!",
-        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Koto_Okkoteru.jpg"
+        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Koto_Okkoteru.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "키프리",
         "animeTitle": "고깔모자 아틀리에",
-        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Qifrey.jpg"
+        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Qifrey.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "일레네오 마르케이",
         "animeTitle": "놓친 물고기는 컸지만 잡은 물고기가 너무 컸던 건",
-        "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Ireneo_Marchei.jpg"
+        "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Ireneo_Marchei.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "미나미 요시키",
         "animeTitle": "리인카네이션의 꽃잎",
-        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Minami_Yoshiki.jpg"
+        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Minami_Yoshiki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "코미나토 하루이치",
         "animeTitle": "다이아몬드 에이스 actII -Second Season-",
-        "img": "image/charimg/2026/Q2/Diamond_no_Ace_act_II_Second_Season/Haruichi_Kominato.jpg"
+        "img": "image/charimg/2026/Q2/Diamond_no_Ace_act_II_Second_Season/Haruichi_Kominato.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -6251,27 +8085,37 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "샤오웨이잉",
         "animeTitle": "시광대리인 -Link Click- 영도편",
-        "img": "image/charimg/2026/Q1/Shiguang_Dailiren_Yingdu_Pian/Vein.jpg"
+        "img": "image/charimg/2026/Q1/Shiguang_Dailiren_Yingdu_Pian/Vein.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "후시구로 메구미",
         "animeTitle": "주술회전 3기",
-        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Megumi_Fushiguro.jpg"
+        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Megumi_Fushiguro.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "요다카 쥰",
         "animeTitle": "메달리스트 2기",
-        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Jun_Yodaka.jpg"
+        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Jun_Yodaka.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "카나타 리빙턴",
         "animeTitle": "MF고스트 3rd Season",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Kanata_Rivington.jpg"
+        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Kanata_Rivington.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "고마자와 라이",
         "animeTitle": "초(超) 가구야 공주!",
-        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Rai_Komazawa.jpg"
+        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Rai_Komazawa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -6283,17 +8127,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "왕칭",
         "animeTitle": "시광대리인 -Link Click- 영도편",
-        "img": "image/charimg/2026/Q1/Shiguang_Dailiren_Yingdu_Pian/Qing_Wang.jpg"
+        "img": "image/charimg/2026/Q1/Shiguang_Dailiren_Yingdu_Pian/Qing_Wang.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "코다이 마키오",
         "animeTitle": "위국일기",
-        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Makio_Koudai.jpg"
+        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Makio_Koudai.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "브륀힐트",
         "animeTitle": "종말의 발키리 Ⅲ",
-        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Brunhilde.jpg"
+        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Brunhilde.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -6305,12 +8155,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "테오리타",
         "animeTitle": "용사형에 처함",
-        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Teoritta.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Teoritta.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "클레나",
         "animeTitle": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~",
-        "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Krena.jpg"
+        "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Krena.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -6322,17 +8176,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "도터 루즈러스",
         "animeTitle": "용사형에 처함",
-        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Dotta_Luzulas.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Dotta_Luzulas.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "넬트 클럼",
         "animeTitle": "자칭 악역 영애인 약혼자 관찰기록.",
-        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Nelt_Krum.jpg"
+        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Nelt_Krum.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "키노시타 카즈야",
         "animeTitle": "여친, 빌리겠습니다 5기",
-        "img": "image/charimg/2026/Q2/Kanojo,_Okarishimasu_5th_Season/Kazuya_Kinoshita.jpg"
+        "img": "image/charimg/2026/Q2/Kanojo,_Okarishimasu_5th_Season/Kazuya_Kinoshita.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -6344,27 +8204,37 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "파트셰 키비아",
         "animeTitle": "용사형에 처함",
-        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Patausche_Kivia.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Patausche_Kivia.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "케메트",
         "animeTitle": "비극의 원흉이 되는 최강악역 최종보스 여왕은 국민을 위해 헌신합니다 Season2",
-        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Kemet.jpg"
+        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Kemet.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "세키구치 료타",
         "animeTitle": "전생했더니 슬라임이었던 건에 대하여 4기",
-        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Ryouta_Sekiguchi.jpg"
+        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Ryouta_Sekiguchi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "엔도 소라",
         "animeTitle": "메이드 양은 먹기만 할 뿐",
-        "img": "image/charimg/2026/Q2/Maid-san_wa_Taberu_dake/Sora_Endou.jpg"
+        "img": "image/charimg/2026/Q2/Maid-san_wa_Taberu_dake/Sora_Endou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "이토 치토세",
         "animeTitle": "경멸하는 표정으로 팬티를 보여다오 R(리턴즈)",
-        "img": "image/charimg/2026/Q2/Iya_na_Kao_sare_nagara_Opantsu_Misete_Moraitai_Returns/Chitose_Itou.jpg"
+        "img": "image/charimg/2026/Q2/Iya_na_Kao_sare_nagara_Opantsu_Misete_Moraitai_Returns/Chitose_Itou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -6376,77 +8246,107 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "제이스 파치락트",
         "animeTitle": "용사형에 처함",
-        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Jayce_Patiract.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Jayce_Patiract.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "올더스 클레이턴",
         "animeTitle": "에리스의 성배",
-        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Aldous_Clayton.jpg"
+        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Aldous_Clayton.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "젠인 란타",
         "animeTitle": "주술회전 3기",
-        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Ranta_Zenin.jpg"
+        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Ranta_Zenin.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "이즈미 아이루",
         "animeTitle": "어차피, 사랑하고 만다. 2기",
-        "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Airu_Izumi.jpg"
+        "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Airu_Izumi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "앙리",
         "animeTitle": "샹피뇽의 마녀",
-        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Henri.jpg"
+        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Henri.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "미하이 그란벨",
         "animeTitle": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~",
-        "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Mikhail_Granvelle.jpg"
+        "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Mikhail_Granvelle.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "유우",
         "animeTitle": "불꽃 소방대 3장",
-        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Yuu.jpg"
+        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Yuu.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "사카구치 오우리",
         "animeTitle": "타몬 군 지금 어느 쪽!?",
-        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Ouri_Sakaguchi.jpg"
+        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Ouri_Sakaguchi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아사쿠라 코이치",
         "animeTitle": "왼손잡이 에렌",
-        "img": "image/charimg/2026/Q2/Hidarikiki_no_Eren/Kouichi_Asakura.jpg"
+        "img": "image/charimg/2026/Q2/Hidarikiki_no_Eren/Kouichi_Asakura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아야노코지 키요타카",
         "animeTitle": "어서 오세요 실력지상주의 교실에 4th Season",
-        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Kiyotaka_Ayanokouji.jpg"
+        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Kiyotaka_Ayanokouji.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "루카스 와익스",
         "animeTitle": "최강의 왕, 두 번째 인생에는 무엇을 하는가 시즌 2",
-        "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Lucas_Wykes.jpg"
+        "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Lucas_Wykes.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "타무라 아란도",
         "animeTitle": "힘내라 나카무라 군",
-        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Arandou_Tamura.jpg"
+        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Arandou_Tamura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아마미야 미나토",
         "animeTitle": "얼음 성벽",
-        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Minato_Amamiya.jpg"
+        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Minato_Amamiya.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "센지 토우야",
         "animeTitle": "리인카네이션의 꽃잎",
-        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Touya_Senji.jpg"
+        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Touya_Senji.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "린도 카즈마",
         "animeTitle": "킬 블루",
-        "img": "image/charimg/2026/Q2/Kill_Ao/Kazuma_Rindou.jpg"
+        "img": "image/charimg/2026/Q2/Kill_Ao/Kazuma_Rindou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -6458,42 +8358,58 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "라이노",
         "animeTitle": "용사형에 처함",
-        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Rhyno.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Rhyno.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "잭슨 테일러",
         "animeTitle": "MF고스트 3rd Season",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Jackson_Taylor.jpg"
+        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Jackson_Taylor.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "오르기오",
         "animeTitle": "고깔모자 아틀리에",
-        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Olruggio.jpg"
+        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Olruggio.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "가쿠 야스아키",
         "animeTitle": "일본삼국",
-        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Yasuaki_Kaku.jpg"
+        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Yasuaki_Kaku.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "라인하르트 반 아스트레아",
         "animeTitle": "Re:제로부터 시작하는 이세계 생활 4기",
-        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Reinhard_van_Astrea.jpg"
+        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Reinhard_van_Astrea.jpg",
+        "quarter": "3분기",
+        "year": 2026
       },
       {
         "charName": "시시오 츠카사",
         "animeTitle": "닥터 스톤 SCIENCE FUTURE",
-        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Tsukasa_Shishiou.jpg"
+        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Tsukasa_Shishiou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "레이",
         "animeTitle": "북두의 권 -FIST OF THE NORTH STAR-",
-        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Rei.jpg"
+        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Rei.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "타데라 류",
         "animeTitle": "황천의 츠가이",
-        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Ryuu_Tadera.jpg"
+        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Ryuu_Tadera.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -6505,7 +8421,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "셰나",
         "animeTitle": "용사형에 처함",
-        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Siena.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Siena.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -6517,7 +8435,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "坑夫長",
         "animeTitle": "용사형에 처함",
-        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Koufuchou.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Koufuchou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -6529,22 +8449,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "카프젠 다크롬",
         "animeTitle": "용사형에 처함",
-        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Kafzen_Dakrom.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Kafzen_Dakrom.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "클라크 다윈",
         "animeTitle": "비극의 원흉이 되는 최강악역 최종보스 여왕은 국민을 위해 헌신합니다 Season2",
-        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Clark_Darwin.jpg"
+        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Clark_Darwin.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "타나카 씨",
         "animeTitle": "여신 「이세계 전생하면 뭐가 되고 싶습니까」 나「용사의 갈비뼈로」",
-        "img": "image/charimg/2026/Q2/Megami_Isekai_Tensei_Nani_ni_Naritai_Desu_ka_Ore_Yuusha_no_Rokkotsu_de/Tanaka-san.jpg"
+        "img": "image/charimg/2026/Q2/Megami_Isekai_Tensei_Nani_ni_Naritai_Desu_ka_Ore_Yuusha_no_Rokkotsu_de/Tanaka-san.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "유스톡스",
         "animeTitle": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
-        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Justus.jpg"
+        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Justus.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -6556,7 +8484,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "호드 클리비오스",
         "animeTitle": "용사형에 처함",
-        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Hord_Clivios.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Hord_Clivios.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -6568,22 +8498,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "페르메리",
         "animeTitle": "용사형에 처함",
-        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Pelmerry.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Pelmerry.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "미나토 쿄카",
         "animeTitle": "반에서 두 번째로 귀여운 여자애와 친구가 되었다",
-        "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Kyouka_Minato.jpg"
+        "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Kyouka_Minato.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "미하시 유리나",
         "animeTitle": "왼손잡이 에렌",
-        "img": "image/charimg/2026/Q2/Hidarikiki_no_Eren/Yurina_Mitsuhashi.jpg"
+        "img": "image/charimg/2026/Q2/Hidarikiki_no_Eren/Yurina_Mitsuhashi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "유사 아카네",
         "animeTitle": "카미이나 보탄, 취한 모습은 백합의 꽃",
-        "img": "image/charimg/2026/Q2/Kamiina_Botan,_Yoeru_Sugata_wa_Yuri_no_Hana/Akane_Yusa.jpg"
+        "img": "image/charimg/2026/Q2/Kamiina_Botan,_Yoeru_Sugata_wa_Yuri_no_Hana/Akane_Yusa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -6595,7 +8533,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "세오드니 난티아",
         "animeTitle": "용사형에 처함",
-        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Theodney_Nantea.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Theodney_Nantea.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -6607,7 +8547,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "시지 바우",
         "animeTitle": "용사형에 처함",
-        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Shiji_Bau.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Shiji_Bau.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -6619,12 +8561,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "마렌 키비아",
         "animeTitle": "용사형에 처함",
-        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Marlen_Kivia.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Marlen_Kivia.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "리그루도",
         "animeTitle": "전생했더니 슬라임이었던 건에 대하여 4기",
-        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Rigurd.jpg"
+        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Rigurd.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -6636,17 +8582,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "와쿠라 유우키",
         "animeTitle": "마도정병의 슬레이브 2기",
-        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Yuuki_Wakura.jpg"
+        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Yuuki_Wakura.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "브루노",
         "animeTitle": "최애 의붓형을 사랑하기 위해, 오래 살겠습니다!",
-        "img": "image/charimg/2026/Q1/Saioshi_no_Gikei_Mederu_Tame,_Nagaikishimasu!/Bruno.jpg"
+        "img": "image/charimg/2026/Q1/Saioshi_no_Gikei_Mederu_Tame,_Nagaikishimasu!/Bruno.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "만다 미츠루",
         "animeTitle": "키리오 팬클럽",
-        "img": "image/charimg/2026/Q2/Kirio_Fanclub/Mitsuru_Manda.jpg"
+        "img": "image/charimg/2026/Q2/Kirio_Fanclub/Mitsuru_Manda.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -6658,7 +8610,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "시코쿠",
         "animeTitle": "마도정병의 슬레이브 2기",
-        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Shikoku.jpg"
+        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Shikoku.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -6670,42 +8624,58 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "에조 야쿠모",
         "animeTitle": "마도정병의 슬레이브 2기",
-        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Yakumo_Ezo.jpg"
+        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Yakumo_Ezo.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "수하",
         "animeTitle": "DARK MOON: 달의 제단",
-        "img": "image/charimg/2026/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Su-Ha.jpg"
+        "img": "image/charimg/2026/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Su-Ha.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아즈미 미키",
         "animeTitle": "얼음 성벽",
-        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Miki_Azumi.jpg"
+        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Miki_Azumi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "타시로 세이라",
         "animeTitle": "키리오 팬클럽",
-        "img": "image/charimg/2026/Q2/Kirio_Fanclub/Seira_Tashiro.jpg"
+        "img": "image/charimg/2026/Q2/Kirio_Fanclub/Seira_Tashiro.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "미츠오카 노렌",
         "animeTitle": "킬 블루",
-        "img": "image/charimg/2026/Q2/Kill_Ao/Noren_Mitsuoka.jpg"
+        "img": "image/charimg/2026/Q2/Kill_Ao/Noren_Mitsuoka.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "미르티",
         "animeTitle": "카난 님은 초보 악마",
-        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Milch_Zebul.jpg"
+        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Milch_Zebul.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "프리네코",
         "animeTitle": "부탁해 아이프리",
-        "img": "image/charimg/2026/Q2/Onegai_AiPri/PriNeko.jpg"
+        "img": "image/charimg/2026/Q2/Onegai_AiPri/PriNeko.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아리아 아쿠에리아스",
         "animeTitle": "검은 고양이와 마녀의 교실",
-        "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Aria_Aquarius.jpg"
+        "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Aria_Aquarius.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -6717,17 +8687,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아즈마 야치호",
         "animeTitle": "마도정병의 슬레이브 2기",
-        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Yachiho_Azuma.jpg"
+        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Yachiho_Azuma.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "미츠키 마코토",
         "animeTitle": "쿠지마 노래하면 집이 파다닥",
-        "img": "image/charimg/2026/Q2/Kujima_Utaeba_Ie_Hororo/Makoto_Mitsuki.jpg"
+        "img": "image/charimg/2026/Q2/Kujima_Utaeba_Ie_Hororo/Makoto_Mitsuki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "미요시 아이미",
         "animeTitle": "키리오 팬클럽",
-        "img": "image/charimg/2026/Q2/Kirio_Fanclub/Aimi_Miyoshi.jpg"
+        "img": "image/charimg/2026/Q2/Kirio_Fanclub/Aimi_Miyoshi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -6739,12 +8715,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "묘가 리우",
         "animeTitle": "마도정병의 슬레이브 2기",
-        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Riu_Myouga.jpg"
+        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Riu_Myouga.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "토요",
         "animeTitle": "북두의 권 -FIST OF THE NORTH STAR-",
-        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Toyo.jpg"
+        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Toyo.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -6756,7 +8736,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "스루가 슈슈",
         "animeTitle": "마도정병의 슬레이브 2기",
-        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Shushu_Suruga.jpg"
+        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Shushu_Suruga.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -6768,17 +8750,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "와쿠라 아오바",
         "animeTitle": "마도정병의 슬레이브 2기",
-        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Aoba_Wakura.jpg"
+        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Aoba_Wakura.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "검은 도마뱀",
         "animeTitle": "전생했더니 드래곤의 알이었다 ~최강이 아니면 목표로 하지 않아~",
-        "img": "image/charimg/2026/Q1/Tensei_Shitara_Dragon_no_Tamago_Datta/Kuro_Tokage.jpg"
+        "img": "image/charimg/2026/Q1/Tensei_Shitara_Dragon_no_Tamago_Datta/Kuro_Tokage.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "혼다 리카코",
         "animeTitle": "정반대의 너와 나",
-        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Rikako_Honda.jpg"
+        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Rikako_Honda.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -6790,7 +8778,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아즈마 호마레",
         "animeTitle": "마도정병의 슬레이브 2기",
-        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Homare_Azuma.jpg"
+        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Homare_Azuma.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -6802,27 +8792,37 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "라이렌",
         "animeTitle": "마도정병의 슬레이브 2기",
-        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Rairen.jpg"
+        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Rairen.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "야바미 큐코",
         "animeTitle": "데드 어카운트",
-        "img": "image/charimg/2026/Q1/Dead_Account/Kyuuko_Yabami.jpg"
+        "img": "image/charimg/2026/Q1/Dead_Account/Kyuuko_Yabami.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "樹乃イッキ",
         "animeTitle": "위국일기",
-        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Ikki_Juno.jpg"
+        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Ikki_Juno.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "다이애나",
         "animeTitle": "프리즘 윤무곡",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Diana.jpg"
+        "img": "image/charimg/2026/Q1/Prism_Rondo/Diana.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "나리타 선생",
         "animeTitle": "힘내라 나카무라 군",
-        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Narita-sensei.jpg"
+        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Narita-sensei.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -6834,12 +8834,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "오오카와무라 네이",
         "animeTitle": "마도정병의 슬레이브 2기",
-        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Nei_Ookawamura.jpg"
+        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Nei_Ookawamura.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "소피아 클로델",
         "animeTitle": "용사 파티에서 쫓겨난 다재무능",
-        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Sophia_Clodel.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Sophia_Clodel.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -6851,37 +8855,51 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "카미운텐 미라",
         "animeTitle": "마도정병의 슬레이브 2기",
-        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Mira_Kamiunten.jpg"
+        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Mira_Kamiunten.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "우루스가와 키요미",
         "animeTitle": "데드 어카운트",
-        "img": "image/charimg/2026/Q1/Dead_Account/Kiyomi_Urusugawa.jpg"
+        "img": "image/charimg/2026/Q1/Dead_Account/Kiyomi_Urusugawa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "충견 오타코",
         "animeTitle": "초(超) 가구야 공주!",
-        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Otakou_Chuuken.jpg"
+        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Otakou_Chuuken.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "프라이드 로열 아이비",
         "animeTitle": "비극의 원흉이 되는 최강악역 최종보스 여왕은 국민을 위해 헌신합니다 Season2",
-        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Pride_Royal_Ivy.jpg"
+        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Pride_Royal_Ivy.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "샤울라",
         "animeTitle": "Re:제로부터 시작하는 이세계 생활 4기",
-        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Shaula.jpg"
+        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Shaula.jpg",
+        "quarter": "3분기",
+        "year": 2026
       },
       {
         "charName": "카와무라 히후미",
         "animeTitle": "힘내라 나카무라 군",
-        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Hifumi_Kawamura.jpg"
+        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Hifumi_Kawamura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "레오 레굴루스",
         "animeTitle": "검은 고양이와 마녀의 교실",
-        "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Leo_Regulus.jpg"
+        "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Leo_Regulus.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -6893,12 +8911,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아즈마 소라코",
         "animeTitle": "마도정병의 슬레이브 2기",
-        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Sorako_Azuma.jpg"
+        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Sorako_Azuma.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "알드라",
         "animeTitle": "Fate/strange Fake",
-        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Aludra.jpg"
+        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Aludra.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -6910,52 +8932,72 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "우젠 쿄카",
         "animeTitle": "마도정병의 슬레이브 2기",
-        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Kyouka_Uzen.jpg"
+        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Kyouka_Uzen.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "죠가미네 아키",
         "animeTitle": "쓰레기 용사",
-        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Aki_Jougamine.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Aki_Jougamine.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "미리카 휴그리아",
         "animeTitle": "마술사 쿠논은 보인다",
-        "img": "image/charimg/2026/Q1/Majutsushi_Kunon_wa_Mieteiru/Mirika_Huglia.jpg"
+        "img": "image/charimg/2026/Q1/Majutsushi_Kunon_wa_Mieteiru/Mirika_Huglia.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "호죠 카오리",
         "animeTitle": "이세계에서 치트 스킬을 얻은 나는 현실 세계에서도 무쌍한다 ~레벨업이 인생을 바꿨다~ TVSP",
-        "img": "image/charimg/2026/Q1/Isekai_de_Cheat_Skill_wo_Te_ni_Shita_Ore_wa,_Genjitsu_Sekai_wo_mo_Musou_Suru_Level_Up_wa_Jinsei_wo_Kaeta/Kaori_Houjou.jpg"
+        "img": "image/charimg/2026/Q1/Isekai_de_Cheat_Skill_wo_Te_ni_Shita_Ore_wa,_Genjitsu_Sekai_wo_mo_Musou_Suru_Level_Up_wa_Jinsei_wo_Kaeta/Kaori_Houjou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "코바야카와 사쿠라",
         "animeTitle": "프리즘 윤무곡",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Sakura_Kobayakawa.jpg"
+        "img": "image/charimg/2026/Q1/Prism_Rondo/Sakura_Kobayakawa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "코노에 카나타",
         "animeTitle": "Love Live! Nijigasaki Gakuen School Idol Doukoukai: Kanketsu-hen 2",
-        "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Kanata_Konoe.jpg"
+        "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Kanata_Konoe.jpg",
+        "quarter": "",
+        "year": ""
       },
       {
         "charName": "쿠로",
         "animeTitle": "자칭 악역 영애인 약혼자 관찰기록.",
-        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Kuro.jpg"
+        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Kuro.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "호리키타 스즈네",
         "animeTitle": "어서 오세요 실력지상주의 교실에 4th Season",
-        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Suzune_Horikita.jpg"
+        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Suzune_Horikita.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "쿠리키 모모카",
         "animeTitle": "얼음 성벽",
-        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Momoka_Kuriki.jpg"
+        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Momoka_Kuriki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "요자쿠라 후타바",
         "animeTitle": "요자쿠라 일가의 대작전 제2기",
-        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Futaba_Yozakura.jpg"
+        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Futaba_Yozakura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -6967,52 +9009,72 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "타타라 코노미",
         "animeTitle": "마도정병의 슬레이브 2기",
-        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Konomi_Tatara.jpg"
+        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Konomi_Tatara.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "콘스탄스 그레일",
         "animeTitle": "에리스의 성배",
-        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Constance_Grail.jpg"
+        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Constance_Grail.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "페른",
         "animeTitle": "장송의 프리렌 2기",
-        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Fern.jpg"
+        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Fern.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "카미사키 히카루",
         "animeTitle": "메달리스트 2기",
-        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Hikaru_Kamisaki_.jpg"
+        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Hikaru_Kamisaki_.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "오스즈",
         "animeTitle": "화식조 우슈보로토비구미",
-        "img": "image/charimg/2026/Q1/Hikuidori/Osuzu.jpg"
+        "img": "image/charimg/2026/Q1/Hikuidori/Osuzu.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "코토 사츠키",
         "animeTitle": "내가 연인이 될 수 있을 리 없잖아, 무리무리! (※무리가 아니었다?!) ~넥스트 샤인!~",
-        "img": "image/charimg/2026/Q1/Watashi_ga_Koibito_ni_Nareru_Wake_Nai_jan,_Muri_Muri!_(※Muri_ja_Nakatta!)_Next_Shine!/Satsuki_Koto.jpg"
+        "img": "image/charimg/2026/Q1/Watashi_ga_Koibito_ni_Nareru_Wake_Nai_jan,_Muri_Muri!_(※Muri_ja_Nakatta!)_Next_Shine!/Satsuki_Koto.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "테시아 에라리스",
         "animeTitle": "최강의 왕, 두 번째 인생에는 무엇을 하는가 시즌 2",
-        "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Tessia_Eralith.jpg"
+        "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Tessia_Eralith.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "오가와 유즈리하",
         "animeTitle": "닥터 스톤 SCIENCE FUTURE",
-        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Yuzuriha_Ogawa.jpg"
+        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Yuzuriha_Ogawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "타카나시 사라",
         "animeTitle": "아와지마 가극학교",
-        "img": "image/charimg/2026/Q2/Awajima_Hyakkei/Sara_Takanashi.jpg"
+        "img": "image/charimg/2026/Q2/Awajima_Hyakkei/Sara_Takanashi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "타치바나 스즈메",
         "animeTitle": "메이드 양은 먹기만 할 뿐",
-        "img": "image/charimg/2026/Q2/Maid-san_wa_Taberu_dake/Suzume_Tachibana.jpg"
+        "img": "image/charimg/2026/Q2/Maid-san_wa_Taberu_dake/Suzume_Tachibana.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -7024,12 +9086,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아즈마 타케미",
         "animeTitle": "마도정병의 슬레이브 2기",
-        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Takemi_Azuma.jpg"
+        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Takemi_Azuma.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "尾崎ママ",
         "animeTitle": "아카네 이야기",
-        "img": "image/charimg/2026/Q2/Akane-banashi/Ozaki_Mama.jpg"
+        "img": "image/charimg/2026/Q2/Akane-banashi/Ozaki_Mama.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -7041,32 +9107,44 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "와카사 사하라",
         "animeTitle": "마도정병의 슬레이브 2기",
-        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Sahara_Wakasa.jpg"
+        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Sahara_Wakasa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "메토데",
         "animeTitle": "장송의 프리렌 2기",
-        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Methode.jpg"
+        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Methode.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "쿠로사와 네네코",
         "animeTitle": "인외 교실의 인간 혐오 교사",
-        "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Neneko_Kurosawa.jpg"
+        "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Neneko_Kurosawa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "루리",
         "animeTitle": "닥터 스톤 SCIENCE FUTURE",
-        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Ruri.jpg"
+        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Ruri.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "F 나이팅게일",
         "animeTitle": "리인카네이션의 꽃잎",
-        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/F._Nightingale.jpg"
+        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/F._Nightingale.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "유라코",
         "animeTitle": "마오",
-        "img": "image/charimg/2026/Q2/MAO/Yurako.jpg"
+        "img": "image/charimg/2026/Q2/MAO/Yurako.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -7078,12 +9156,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아즈마 유미나",
         "animeTitle": "마도정병의 슬레이브 2기",
-        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Yumina_Azuma.jpg"
+        "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Yumina_Azuma.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "켄지",
         "animeTitle": "요자쿠라 일가의 대작전 제2기",
-        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Kenji.jpg"
+        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Kenji.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -7095,17 +9177,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "쟈라시 루나",
         "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
-        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Luna_Jarashi.jpg"
+        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Luna_Jarashi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "타카미네 하즈키",
         "animeTitle": "두 남자와 룸쉐어 중입니다",
-        "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Hazuki_Takamine.jpg"
+        "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Hazuki_Takamine.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "히이라기",
         "animeTitle": "아카네 이야기",
-        "img": "image/charimg/2026/Q2/Akane-banashi/Hiiragi.jpg"
+        "img": "image/charimg/2026/Q2/Akane-banashi/Hiiragi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -7117,17 +9205,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "투인",
         "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
-        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Twin.jpg"
+        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Twin.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "시즈키 클로드 아시야",
         "animeTitle": "아름다운 그대에게",
-        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Shizuki_Ashiya.jpg"
+        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Shizuki_Ashiya.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "레온 아도니스 코로나리아",
         "animeTitle": "비극의 원흉이 되는 최강악역 최종보스 여왕은 국민을 위해 헌신합니다 Season2",
-        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Leon_Adonis_Coronaria.jpg"
+        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Leon_Adonis_Coronaria.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -7139,12 +9233,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "야코 유카리",
         "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
-        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Yukari_Yakou.jpg"
+        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Yukari_Yakou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "레아노",
         "animeTitle": "BEASTARS FINAL SEASON Part 2",
-        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Leanno.jpg"
+        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Leanno.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -7156,17 +9254,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "透綾アヤ",
         "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
-        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Aya_Sukiya.jpg"
+        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Aya_Sukiya.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "와지마 오가",
         "animeTitle": "일본삼국",
-        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Ohga_Wajima.jpg"
+        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Ohga_Wajima.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "야기사와 미키",
         "animeTitle": "반에서 두 번째로 귀여운 여자애와 친구가 되었다",
-        "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Miki_Yagisawa.jpg"
+        "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Miki_Yagisawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -7178,12 +9282,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "瑞浪あこう",
         "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
-        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Akou_Mizunami.jpg"
+        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Akou_Mizunami.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "후치",
         "animeTitle": "지옥락 2기",
-        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Fuchi.jpg"
+        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Fuchi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -7195,42 +9303,58 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "ゆう",
         "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
-        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Yuu_Kemauchi.jpg"
+        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Yuu_Kemauchi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "쥐의 마법사",
         "animeTitle": "샹피뇽의 마녀",
-        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Nezumi_no_Mahoutsukai.jpg"
+        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Nezumi_no_Mahoutsukai.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "마쉬",
         "animeTitle": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~",
-        "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Mash.jpg"
+        "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Mash.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "소니도리 리오우",
         "animeTitle": "메달리스트 2기",
-        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Riou_Sonidori.jpg"
+        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Riou_Sonidori.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "누루가이",
         "animeTitle": "지옥락 2기",
-        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Nurugai.jpg"
+        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Nurugai.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "하마오카 유카",
         "animeTitle": "힘내라 나카무라 군",
-        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Yuuka_Hamaoka.jpg"
+        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Yuuka_Hamaoka.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "우츠기",
         "animeTitle": "신의 정원이 딸린 쿠스노키 저택",
-        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Utsugi.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Utsugi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "유우키 레온",
         "animeTitle": "부탁해 아이프리",
-        "img": "image/charimg/2026/Q2/Onegai_AiPri/Leon_Yuuki.jpg"
+        "img": "image/charimg/2026/Q2/Onegai_AiPri/Leon_Yuuki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -7242,17 +9366,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "毛馬内",
         "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
-        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Kemanai.jpg"
+        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Kemanai.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "카고 코이치",
         "animeTitle": "메달리스트 2기",
-        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Kouichi_Kago.jpg"
+        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Kouichi_Kago.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "카넬",
         "animeTitle": "북두의 권 -FIST OF THE NORTH STAR-",
-        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Colonel.jpg"
+        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Colonel.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -7264,12 +9394,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "스즈",
         "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
-        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Yuzu.jpg"
+        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Yuzu.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "요자쿠라 츠보미",
         "animeTitle": "요자쿠라 일가의 대작전 제2기",
-        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Tsubomi_Yozakura.jpg"
+        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Tsubomi_Yozakura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -7281,17 +9415,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "女将",
         "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
-        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Okami.jpg"
+        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Okami.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "시리우스",
         "animeTitle": "매리지 톡신",
-        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Sirius.jpg"
+        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Sirius.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "베아트리스",
         "animeTitle": "Re:제로부터 시작하는 이세계 생활 4기",
-        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Beatrice.jpg"
+        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Beatrice.jpg",
+        "quarter": "3분기",
+        "year": 2026
       }
     ]
   },
@@ -7303,22 +9443,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "키리구로 마사시",
         "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
-        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Masashi_Kiriguro.jpg"
+        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Masashi_Kiriguro.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "박쥐의 마법사",
         "animeTitle": "샹피뇽의 마녀",
-        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Koumori_no_Mahoutsukai.jpg"
+        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Koumori_no_Mahoutsukai.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "오오와다 잇코",
         "animeTitle": "데드 어카운트",
-        "img": "image/charimg/2026/Q1/Dead_Account/Ikko_Oowada.jpg"
+        "img": "image/charimg/2026/Q1/Dead_Account/Ikko_Oowada.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "쿠와바타케 슌",
         "animeTitle": "아름다운 초저녁달",
-        "img": "image/charimg/2026/Q1/Uruwashi_no_Yoi_no_Tsuki/Shun_Kuwabatake.jpg"
+        "img": "image/charimg/2026/Q1/Uruwashi_no_Yoi_no_Tsuki/Shun_Kuwabatake.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -7330,17 +9478,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "토노메 쇼코",
         "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
-        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Shouko_Tounome.jpg"
+        "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Shouko_Tounome.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "루이더",
         "animeTitle": "트라이건 스타게이즈",
-        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Luida.jpg"
+        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Luida.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "세븐",
         "animeTitle": "BEASTARS FINAL SEASON Part 2",
-        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Seven.jpg"
+        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Seven.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -7352,12 +9506,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "케이트 로레인",
         "animeTitle": "에리스의 성배",
-        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Kate_Lorraine.jpg"
+        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Kate_Lorraine.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "리체리트",
         "animeTitle": "고깔모자 아틀리에",
-        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Richeh.jpg"
+        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Richeh.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -7369,12 +9527,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "살바도르",
         "animeTitle": "에리스의 성배",
-        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Salvador.jpg"
+        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Salvador.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아리모토 유우",
         "animeTitle": "타몬 군 지금 어느 쪽!?",
-        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Yuu_Arimoto.jpg"
+        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Yuu_Arimoto.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -7386,47 +9548,65 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "시시",
         "animeTitle": "에리스의 성배",
-        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Cecilia_Adelbide.jpg"
+        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Cecilia_Adelbide.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "프란체스카 프렐라티",
         "animeTitle": "Fate/strange Fake",
-        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Francesca_Prelati.jpg"
+        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Francesca_Prelati.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "쿠사바 에루",
         "animeTitle": "데드 어카운트",
-        "img": "image/charimg/2026/Q1/Dead_Account/Eru_Kusaba.jpg"
+        "img": "image/charimg/2026/Q1/Dead_Account/Eru_Kusaba.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "하스미 치에",
         "animeTitle": "카야는 무섭지 않아",
-        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Chie_Hasumi.jpg"
+        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Chie_Hasumi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "이코 라운드",
         "animeTitle": "마술사 쿠논은 보인다",
-        "img": "image/charimg/2026/Q1/Majutsushi_Kunon_wa_Mieteiru/Iko_Round.jpg"
+        "img": "image/charimg/2026/Q1/Majutsushi_Kunon_wa_Mieteiru/Iko_Round.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "키요마루",
         "animeTitle": "지옥락 2기",
-        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Kiyomaru.jpg"
+        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Kiyomaru.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "시노하라 미야비",
         "animeTitle": "신의 물방울",
-        "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Miyabi_Shinohara.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Miyabi_Shinohara.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "다이후고인 베리카",
         "animeTitle": "카난 님은 초보 악마",
-        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Berika_Daifugoin.jpg"
+        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Berika_Daifugoin.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "치토세 마리카",
         "animeTitle": "마리카쨩의 호감도는 망가져있다",
-        "img": "image/charimg/2026/Q2/Marika-chan_no_Koukando_wa_Bukkowareteiru/Marika_Chitose.jpg"
+        "img": "image/charimg/2026/Q2/Marika-chan_no_Koukando_wa_Bukkowareteiru/Marika_Chitose.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -7438,12 +9618,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "데보라 다르키안",
         "animeTitle": "에리스의 성배",
-        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Deborah_Darkian.jpg"
+        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Deborah_Darkian.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "가오",
         "animeTitle": "다다미 한 장짜리 방 만끽 생활",
-        "img": "image/charimg/2026/Q2/Ichijouma_Mankitsu-gurashi!/Gao.jpg"
+        "img": "image/charimg/2026/Q2/Ichijouma_Mankitsu-gurashi!/Gao.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -7455,7 +9639,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "루치아 오브라이언",
         "animeTitle": "에리스의 성배",
-        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Lucia_O'Brian.jpg"
+        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Lucia_O'Brian.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -7467,17 +9653,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "애비게일 오브라이언",
         "animeTitle": "에리스의 성배",
-        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Abigail_O'Brian.jpg"
+        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Abigail_O'Brian.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "물고기의 마녀",
         "animeTitle": "샹피뇽의 마녀",
-        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Mizu_no_Majo.jpg"
+        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Mizu_no_Majo.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "레비",
         "animeTitle": "쓰레기 용사",
-        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Levi.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Levi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -7489,7 +9681,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "마고 튜더",
         "animeTitle": "에리스의 성배",
-        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Margot_Tudor.jpg"
+        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Margot_Tudor.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -7501,7 +9695,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "에밀리아 고드윈",
         "animeTitle": "에리스의 성배",
-        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Emilia_Godwin.jpg"
+        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Emilia_Godwin.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -7513,17 +9709,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "딜런 벨레스포드",
         "animeTitle": "에리스의 성배",
-        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Dylan_Bellesford.jpg"
+        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Dylan_Bellesford.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "東郷優斗",
         "animeTitle": "위국일기",
-        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Yuuto_Tougou.jpg"
+        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Yuuto_Tougou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "쿠로야 아키오",
         "animeTitle": "황천의 츠가이",
-        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Akio_Kuroya.jpg"
+        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Akio_Kuroya.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -7535,17 +9737,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "조안 아델바이드",
         "animeTitle": "에리스의 성배",
-        "img": "image/charimg/2026/Q1/Eris_no_Seihai/John_Adelbide.jpg"
+        "img": "image/charimg/2026/Q1/Eris_no_Seihai/John_Adelbide.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "스루기 데이",
         "animeTitle": "데드 어카운트",
-        "img": "image/charimg/2026/Q1/Dead_Account/Dei_Surugi.jpg"
+        "img": "image/charimg/2026/Q1/Dead_Account/Dei_Surugi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아타미 산고",
         "animeTitle": "부탁해 아이프리",
-        "img": "image/charimg/2026/Q2/Onegai_AiPri/Sango_Atami.jpg"
+        "img": "image/charimg/2026/Q2/Onegai_AiPri/Sango_Atami.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -7557,37 +9765,51 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "릴리 오를라뮌데",
         "animeTitle": "에리스의 성배",
-        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Lily_Orlamunde.jpg"
+        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Lily_Orlamunde.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아마노 쟈코",
         "animeTitle": "하이스쿨! 기면조",
-        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Jako_Amano.jpg"
+        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Jako_Amano.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아이리스",
         "animeTitle": "불꽃 소방대 3장",
-        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Iris.jpg"
+        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Iris.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "티르",
         "animeTitle": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
-        "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Till.jpg"
+        "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Till.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "세페크",
         "animeTitle": "비극의 원흉이 되는 최강악역 최종보스 여왕은 국민을 위해 헌신합니다 Season2",
-        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Sefec.jpg"
+        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Sefec.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "여신",
         "animeTitle": "여신 「이세계 전생하면 뭐가 되고 싶습니까」 나「용사의 갈비뼈로」",
-        "img": "image/charimg/2026/Q2/Megami_Isekai_Tensei_Nani_ni_Naritai_Desu_ka_Ore_Yuusha_no_Rokkotsu_de/Megami.jpg"
+        "img": "image/charimg/2026/Q2/Megami_Isekai_Tensei_Nani_ni_Naritai_Desu_ka_Ore_Yuusha_no_Rokkotsu_de/Megami.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "린",
         "animeTitle": "북두의 권 -FIST OF THE NORTH STAR-",
-        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Lin.jpg"
+        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Lin.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -7599,27 +9821,37 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "레베카",
         "animeTitle": "에리스의 성배",
-        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Rebecca.jpg"
+        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Rebecca.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "히나",
         "animeTitle": "GIRLS BAND CRY: Seishun Kyousoukyoku",
-        "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Hina.jpg"
+        "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Hina.jpg",
+        "quarter": "",
+        "year": ""
       },
       {
         "charName": "유리",
         "animeTitle": "이세계 유유자적 농가 2",
-        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Yuuri.jpg"
+        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Yuuri.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "타치카와 마코토",
         "animeTitle": "황천의 츠가이",
-        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Makoto_Tachikawa.jpg"
+        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Makoto_Tachikawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "니카이도",
         "animeTitle": "도로헤도로 시즌 2",
-        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Nikaido.jpg"
+        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Nikaido.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -7631,12 +9863,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "닐 브론슨",
         "animeTitle": "에리스의 성배",
-        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Neil_Bronson.jpg"
+        "img": "image/charimg/2026/Q1/Eris_no_Seihai/Neil_Bronson.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "푸르손 소이",
         "animeTitle": "마계학교 이루마군 4기",
-        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Soi_Purson.jpg"
+        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Soi_Purson.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -7648,7 +9884,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "옷코츠 유타",
         "animeTitle": "주술회전 3기",
-        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Yuuta_Okkotsu.jpg"
+        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Yuuta_Okkotsu.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -7660,32 +9898,44 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "쵸소우",
         "animeTitle": "주술회전 3기",
-        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Chousou.jpg"
+        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Chousou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "로드 엘멜로이 2세",
         "animeTitle": "Fate/strange Fake",
-        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Waver_Velvet.jpg"
+        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Waver_Velvet.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "오오이시 다이고",
         "animeTitle": "MF고스트 3rd Season",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Daigo_Ooishi.jpg"
+        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Daigo_Ooishi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "홍연어 스승",
         "animeTitle": "여신 「이세계 전생하면 뭐가 되고 싶습니까」 나「용사의 갈비뼈로」",
-        "img": "image/charimg/2026/Q2/Megami_Isekai_Tensei_Nani_ni_Naritai_Desu_ka_Ore_Yuusha_no_Rokkotsu_de/Benizake_Shishou.jpg"
+        "img": "image/charimg/2026/Q2/Megami_Isekai_Tensei_Nani_ni_Naritai_Desu_ka_Ore_Yuusha_no_Rokkotsu_de/Benizake_Shishou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "한스 U 루델",
         "animeTitle": "리인카네이션의 꽃잎",
-        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Hans_Rudel.jpg"
+        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Hans_Rudel.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "베엘제붑",
         "animeTitle": "종말의 발키리 Ⅲ",
-        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Beelzebub.jpg"
+        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Beelzebub.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -7697,7 +9947,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "츠쿠모 유키",
         "animeTitle": "주술회전 3기",
-        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Yuki_Tsukumo.jpg"
+        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Yuki_Tsukumo.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -7709,12 +9961,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "젠인 마키",
         "animeTitle": "주술회전 3기",
-        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Maki_Zenin.jpg"
+        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Maki_Zenin.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "이부키 미오",
         "animeTitle": "어서 오세요 실력지상주의 교실에 4th Season",
-        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Mio_Ibuki.jpg"
+        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Mio_Ibuki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -7726,7 +9982,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "젠인 오우기",
         "animeTitle": "주술회전 3기",
-        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Ogi_Zenin.jpg"
+        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Ogi_Zenin.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -7738,12 +9996,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "젠인 진이치",
         "animeTitle": "주술회전 3기",
-        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Jinichi_Zenin.jpg"
+        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Jinichi_Zenin.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "레오니다스",
         "animeTitle": "종말의 발키리 Ⅲ",
-        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Leonidas.jpg"
+        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Leonidas.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -7755,12 +10017,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "젠인 마이",
         "animeTitle": "주술회전 3기",
-        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Mai_Zenin.jpg"
+        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Mai_Zenin.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "야규 쥬베 미츠요시",
         "animeTitle": "리인카네이션의 꽃잎",
-        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Juubei_Yagyu.jpg"
+        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Juubei_Yagyu.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -7772,12 +10038,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "텐겐",
         "animeTitle": "주술회전 3기",
-        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Tengen.jpg"
+        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Tengen.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "에비스모리 무츠",
         "animeTitle": "카야는 무섭지 않아",
-        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Mutsu_Ebisumori.jpg"
+        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Mutsu_Ebisumori.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -7789,7 +10059,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "젠인 초쥬로",
         "animeTitle": "주술회전 3기",
-        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Choujurou_Zenin.jpg"
+        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Choujurou_Zenin.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -7801,7 +10073,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "코가네",
         "animeTitle": "주술회전 3기",
-        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Kogane.jpg"
+        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Kogane.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -7813,22 +10087,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "이에이리 쇼코",
         "animeTitle": "주술회전 3기",
-        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Shouko_Ieiri.jpg"
+        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Shouko_Ieiri.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "마리아 아펜젠스",
         "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
-        "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Maria_Afenjuns.jpg"
+        "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Maria_Afenjuns.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "리시아",
         "animeTitle": "Re:제로부터 시작하는 이세계 생활 4기",
-        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Reshia_Tinzel.jpg"
+        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Reshia_Tinzel.jpg",
+        "quarter": "3분기",
+        "year": 2026
       },
       {
         "charName": "아카리",
         "animeTitle": "얼음 성벽",
-        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Youta_no_Haha.jpg"
+        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Youta_no_Haha.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -7840,7 +10122,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "레미",
         "animeTitle": "주술회전 3기",
-        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Remi.jpg"
+        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Remi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -7852,7 +10136,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "フルダテ",
         "animeTitle": "주술회전 3기",
-        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Furudate.jpg"
+        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Furudate.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -7864,7 +10150,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "미겔 오두르",
         "animeTitle": "주술회전 3기",
-        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Miguel.jpg"
+        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Miguel.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -7876,27 +10164,37 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "젠인 노부아키",
         "animeTitle": "주술회전 3기",
-        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Nobuaki_Zenin.jpg"
+        "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Nobuaki_Zenin.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "벌레의 마법사",
         "animeTitle": "샹피뇽의 마녀",
-        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Mushi_no_Mahoutsukai.jpg"
+        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Mushi_no_Mahoutsukai.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "죠",
         "animeTitle": "쓰레기 용사",
-        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Joe.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Joe.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "미카미",
         "animeTitle": "춘하추동 대행자 봄의 춤",
-        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Mikami.jpg"
+        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Mikami.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "이시노 마이클",
         "animeTitle": "부탁해 아이프리",
-        "img": "image/charimg/2026/Q2/Onegai_AiPri/Michael_Ishino.jpg"
+        "img": "image/charimg/2026/Q2/Onegai_AiPri/Michael_Ishino.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -7908,22 +10206,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "フラム・アプリコット",
         "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
-        "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Flum_Apricot.jpg"
+        "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Flum_Apricot.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "키노시타 야마토",
         "animeTitle": "타몬 군 지금 어느 쪽!?",
-        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Yamato_Kinoshita.jpg"
+        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Yamato_Kinoshita.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "마스라오 나데코",
         "animeTitle": "카난 님은 초보 악마",
-        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Nadeshiko_Masurao.jpg"
+        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Nadeshiko_Masurao.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "サーシャ",
         "animeTitle": "마물을 먹는 모험가 ~나만 마물을 먹고 강해진다~",
-        "img": "image/charimg/2026/Q2/Mamonogurai_no_Boukensha_Ore_Dake_Mamono_wo_Kuratte_Tsuyoku_Naru/Sasha.jpg"
+        "img": "image/charimg/2026/Q2/Mamonogurai_no_Boukensha_Ore_Dake_Mamono_wo_Kuratte_Tsuyoku_Naru/Sasha.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -7935,17 +10241,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "セーラ・アンビレン",
         "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
-        "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Sara_Anvillen.jpg"
+        "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Sara_Anvillen.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "하이지마 히요리",
         "animeTitle": "데드 어카운트",
-        "img": "image/charimg/2026/Q1/Dead_Account/Hiyori_Haijima.jpg"
+        "img": "image/charimg/2026/Q1/Dead_Account/Hiyori_Haijima.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "세나",
         "animeTitle": "이세계 유유자적 농가 2",
-        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Senna.jpg"
+        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Senna.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -7957,12 +10269,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "ガディオ・ラスカット",
         "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
-        "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Gadhio_Lathcutt.jpg"
+        "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Gadhio_Lathcutt.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "벨제붑",
         "animeTitle": "카난 님은 초보 악마",
-        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Beelzebub.jpg"
+        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Beelzebub.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -7974,7 +10290,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "キリル・スウィーチカ",
         "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
-        "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Cyrill_Sweechka.jpg"
+        "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Cyrill_Sweechka.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -7986,12 +10304,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "ジーン・インテージ",
         "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
-        "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Jean_Inteige.jpg"
+        "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Jean_Inteige.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "조니 벱",
         "animeTitle": "Aikatsu! x PriPara THE MOVIE -Deai no Kiseki-",
-        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Johnny_Bepp.jpg"
+        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Johnny_Bepp.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -8003,17 +10325,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "ライナス・レディアンツ",
         "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
-        "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Linus_Radiants.jpg"
+        "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Linus_Radiants.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "솔론",
         "animeTitle": "DARK MOON: 달의 제단",
-        "img": "image/charimg/2026/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Solon.jpg"
+        "img": "image/charimg/2026/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Solon.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "모모세 하야토",
         "animeTitle": "키리오 팬클럽",
-        "img": "image/charimg/2026/Q2/Kirio_Fanclub/Hayato_Momose.jpg"
+        "img": "image/charimg/2026/Q2/Kirio_Fanclub/Hayato_Momose.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -8025,7 +10353,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "데인 피니어스",
         "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
-        "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Dein_Phineas.jpg"
+        "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Dein_Phineas.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8037,7 +10367,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "잉크 리스크라프트",
         "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
-        "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Ink_Wreathcraft.jpg"
+        "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Ink_Wreathcraft.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8049,7 +10381,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "니시노 미즈호",
         "animeTitle": "어차피, 사랑하고 만다. 2기",
-        "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Mizuho_Nishino.jpg"
+        "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Mizuho_Nishino.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8061,27 +10395,37 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "하자와 키즈키",
         "animeTitle": "어차피, 사랑하고 만다. 2기",
-        "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Kizuki_Hazawa.jpg"
+        "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Kizuki_Hazawa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "규스타브",
         "animeTitle": "샹피뇽의 마녀",
-        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Gustave.jpg"
+        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Gustave.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "쿠로야 하루오",
         "animeTitle": "황천의 츠가이",
-        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Haruo_Kuroya.jpg"
+        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Haruo_Kuroya.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "고든 발리",
         "animeTitle": "지팡이와 검의 위스토리아 Season2",
-        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Gordon_Baret.jpg"
+        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Gordon_Baret.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "키론 새저테리어스 아라디아",
         "animeTitle": "검은 고양이와 마녀의 교실",
-        "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Chiron_Sagittarius_Aradia.jpg"
+        "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Chiron_Sagittarius_Aradia.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -8093,7 +10437,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "카시와기 신",
         "animeTitle": "어차피, 사랑하고 만다. 2기",
-        "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Shin_Kashiwagi.jpg"
+        "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Shin_Kashiwagi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8105,17 +10451,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "호시카와 슈고",
         "animeTitle": "어차피, 사랑하고 만다. 2기",
-        "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Shuugo_Hoshikawa.jpg"
+        "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Shuugo_Hoshikawa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "베오르",
         "animeTitle": "공주 기사는 야만족의 신부",
-        "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Veor.jpg"
+        "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Veor.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "히노 요타",
         "animeTitle": "얼음 성벽",
-        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Youta_Hino.jpg"
+        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Youta_Hino.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -8127,7 +10479,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "히라츠카 아몬",
         "animeTitle": "어차피, 사랑하고 만다. 2기",
-        "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Amon_Hiratsuka.jpg"
+        "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Amon_Hiratsuka.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8139,12 +10493,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "쿠라시키 치카",
         "animeTitle": "어차피, 사랑하고 만다. 2기",
-        "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Chika_Kurashiki.jpg"
+        "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Chika_Kurashiki.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아키라",
         "animeTitle": "카야는 무섭지 않아",
-        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Akira-sensei.jpg"
+        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Akira-sensei.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8156,12 +10514,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "이즈미 사리나",
         "animeTitle": "어차피, 사랑하고 만다. 2기",
-        "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Sarina_Izumi.jpg"
+        "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Sarina_Izumi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "제니에 코스",
         "animeTitle": "마술사 쿠논은 보인다",
-        "img": "image/charimg/2026/Q1/Majutsushi_Kunon_wa_Mieteiru/Jenie_Kors.jpg"
+        "img": "image/charimg/2026/Q1/Majutsushi_Kunon_wa_Mieteiru/Jenie_Kors.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8173,12 +10535,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "사쿠라",
         "animeTitle": "어차피, 사랑하고 만다. 2기",
-        "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Sakura.jpg"
+        "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Sakura.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "루나 프록하트",
         "animeTitle": "용사 파티에서 쫓겨난 다재무능",
-        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Luna_Flockhart.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Luna_Flockhart.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8190,17 +10556,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "시라이시 마나미",
         "animeTitle": "어차피, 사랑하고 만다. 2기",
-        "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Manami_Shiraishi.jpg"
+        "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Manami_Shiraishi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "모리 스즈미",
         "animeTitle": "레플리카도, 사랑을 한다",
-        "img": "image/charimg/2026/Q2/Replica_Datte,_Koi_wo_Suru/Suzumi_Mori.jpg"
+        "img": "image/charimg/2026/Q2/Replica_Datte,_Koi_wo_Suru/Suzumi_Mori.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "프레데리카 바우먼",
         "animeTitle": "Re:제로부터 시작하는 이세계 생활 4기",
-        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Frederica_Baumann.jpg"
+        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Frederica_Baumann.jpg",
+        "quarter": "3분기",
+        "year": 2026
       }
     ]
   },
@@ -8212,12 +10584,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "고양이의 마녀",
         "animeTitle": "샹피뇽의 마녀",
-        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Dorothy.jpg"
+        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Dorothy.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "시온 나스터티움",
         "animeTitle": "용사 파티에서 쫓겨난 다재무능",
-        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Shion_Nasturtium.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Shion_Nasturtium.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8229,17 +10605,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "미노스",
         "animeTitle": "샹피뇽의 마녀",
-        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Minos.jpg"
+        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Minos.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "타카미네 히토미",
         "animeTitle": "메달리스트 2기",
-        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Hitomi_Takamine.jpg"
+        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Hitomi_Takamine.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "이지치 히비키",
         "animeTitle": "오타쿠에게 상냥한 갸루는 없다",
-        "img": "image/charimg/2026/Q2/Otaku_ni_Yasashii_Gal_wa_Inai!/Hibiki_Ijichi.jpg"
+        "img": "image/charimg/2026/Q2/Otaku_ni_Yasashii_Gal_wa_Inai!/Hibiki_Ijichi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -8251,17 +10633,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "메리노",
         "animeTitle": "샹피뇽의 마녀",
-        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Merino.jpg"
+        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Merino.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "프라우렘 크롬",
         "animeTitle": "이세계 유유자적 농가 2",
-        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Fraurem_Chrome.jpg"
+        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Fraurem_Chrome.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "리무루 템페스트",
         "animeTitle": "전생했더니 슬라임이었던 건에 대하여 4기",
-        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Rimuru_Tempest.jpg"
+        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Rimuru_Tempest.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -8273,17 +10661,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "버섯의 왕",
         "animeTitle": "샹피뇽의 마녀",
-        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Kinoko_no_Omo.jpg"
+        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Kinoko_no_Omo.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "게엔",
         "animeTitle": "장송의 프리렌 2기",
-        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Gehen.jpg"
+        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Gehen.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "영귀",
         "animeTitle": "신의 정원이 딸린 쿠스노키 저택",
-        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Reiki.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Reiki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -8295,7 +10689,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "책방 주인",
         "animeTitle": "샹피뇽의 마녀",
-        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Honya.jpg"
+        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Honya.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8307,22 +10703,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "시시",
         "animeTitle": "샹피뇽의 마녀",
-        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Sisi.jpg"
+        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Sisi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "네즈 마치",
         "animeTitle": "인외 교실의 인간 혐오 교사",
-        "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Machi_Nezu.jpg"
+        "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Machi_Nezu.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "시라카게",
         "animeTitle": "음옥단지",
-        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Shiro_Shirakage.jpg"
+        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Shiro_Shirakage.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "쇼다",
         "animeTitle": "음옥단지",
-        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Masami_Shouda.jpg"
+        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Masami_Shouda.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -8334,27 +10738,37 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "불꽃의 마도사",
         "animeTitle": "샹피뇽의 마녀",
-        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Homura_no_Mahousukai.jpg"
+        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Homura_no_Mahousukai.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "포옌 리",
         "animeTitle": "불꽃 소방대 3장",
-        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Huo_Yan_Li.jpg"
+        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Huo_Yan_Li.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "카구라자카 마코토",
         "animeTitle": "아름다운 그대에게",
-        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Makoto_Kagurazaka.jpg"
+        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Makoto_Kagurazaka.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "세츠테이",
         "animeTitle": "고스트 콘서트: missing Songs",
-        "img": "image/charimg/2026/Q2/Ghost_Concert_missing_Songs/Setsutei.jpg"
+        "img": "image/charimg/2026/Q2/Ghost_Concert_missing_Songs/Setsutei.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "칸게츠 이테쵸",
         "animeTitle": "춘하추동 대행자 봄의 춤",
-        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Itechou_Kangetsu.jpg"
+        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Itechou_Kangetsu.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -8366,17 +10780,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "マクシミリアン",
         "animeTitle": "샹피뇽의 마녀",
-        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Maximilian.jpg"
+        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Maximilian.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "소니도리 신이치로",
         "animeTitle": "메달리스트 2기",
-        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Shinichirou_Sonidori.jpg"
+        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Shinichirou_Sonidori.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "후지미야 아마네",
         "animeTitle": "옆집 천사님 때문에 어느샌가 인간적으로 타락한 사연 2",
-        "img": "image/charimg/2026/Q2/Otonari_no_Tenshi-sama_ni_Itsunomanika_Dame_Ningen_ni_Sareteita_Ken_2nd_Season/Amane_Fujimiya.jpg"
+        "img": "image/charimg/2026/Q2/Otonari_no_Tenshi-sama_ni_Itsunomanika_Dame_Ningen_ni_Sareteita_Ken_2nd_Season/Amane_Fujimiya.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -8388,12 +10808,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "짐승의 마법사",
         "animeTitle": "샹피뇽의 마녀",
-        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Kemono_no_Mahoutsukai.jpg"
+        "img": "image/charimg/2026/Q1/Champignon_no_Majo/Kemono_no_Mahoutsukai.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "빅토르 리히토",
         "animeTitle": "불꽃 소방대 3장",
-        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Viktor_Licht.jpg"
+        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Viktor_Licht.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8405,42 +10829,58 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "슈타르크",
         "animeTitle": "장송의 프리렌 2기",
-        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Stark.jpg"
+        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Stark.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "다이마 진",
         "animeTitle": "하이스쿨! 기면조",
-        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Jin_Daima.jpg"
+        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Jin_Daima.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "노아",
         "animeTitle": "DARK MOON: 달의 제단",
-        "img": "image/charimg/2026/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Noa.jpg"
+        "img": "image/charimg/2026/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Noa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "가비마루",
         "animeTitle": "지옥락 2기",
-        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Gabimaru.jpg"
+        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Gabimaru.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "혼다 쿄",
         "animeTitle": "두 남자와 룸쉐어 중입니다",
-        "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Kyou_Honda.jpg"
+        "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Kyou_Honda.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "나카무라 오쿠토",
         "animeTitle": "힘내라 나카무라 군",
-        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Okuto_Nakamura.jpg"
+        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Okuto_Nakamura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "이가라시 츠바사",
         "animeTitle": "얼음 성벽",
-        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Tsubasa_Igarashi.jpg"
+        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Tsubasa_Igarashi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아라카와 코구마",
         "animeTitle": "아카네 이야기",
-        "img": "image/charimg/2026/Q2/Akane-banashi/Koguma_Arakawa.jpg"
+        "img": "image/charimg/2026/Q2/Akane-banashi/Koguma_Arakawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -8452,32 +10892,44 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "힘멜",
         "animeTitle": "장송의 프리렌 2기",
-        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Himmel.jpg"
+        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Himmel.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "니히루다 요우",
         "animeTitle": "하이스쿨! 기면조",
-        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/You_Nihiruda.jpg"
+        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/You_Nihiruda.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "에니시로 소지",
         "animeTitle": "데드 어카운트",
-        "img": "image/charimg/2026/Q1/Dead_Account/Souji_Enishiro.jpg"
+        "img": "image/charimg/2026/Q1/Dead_Account/Souji_Enishiro.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아담 보르네오 네펜테스",
         "animeTitle": "비극의 원흉이 되는 최강악역 최종보스 여왕은 국민을 위해 헌신합니다 Season2",
-        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Adam_Nepenthes.jpg"
+        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Adam_Nepenthes.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "가필 틴젤",
         "animeTitle": "Re:제로부터 시작하는 이세계 생활 4기",
-        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Garfiel_Tinsel.jpg"
+        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Garfiel_Tinsel.jpg",
+        "quarter": "3분기",
+        "year": 2026
       },
       {
         "charName": "마르제",
         "animeTitle": "지팡이와 검의 위스토리아 Season2",
-        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Marze.jpg"
+        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Marze.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -8489,7 +10941,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아이젠",
         "animeTitle": "장송의 프리렌 2기",
-        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Eisen.jpg"
+        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Eisen.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8501,27 +10955,37 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "에레",
         "animeTitle": "장송의 프리렌 2기",
-        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Ehre.jpg"
+        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Ehre.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "쿠리스 코코네",
         "animeTitle": "Aikatsu! x PriPara THE MOVIE -Deai no Kiseki-",
-        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Kokone_Kurisu.jpg"
+        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Kokone_Kurisu.jpg",
+        "quarter": "",
+        "year": ""
       },
       {
         "charName": "하쿠렌",
         "animeTitle": "이세계 유유자적 농가 2",
-        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Hakuren.jpg"
+        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Hakuren.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아카이 메가네",
         "animeTitle": "부탁해 아이프리",
-        "img": "image/charimg/2026/Q2/Onegai_AiPri/Meganee_Akai.jpg"
+        "img": "image/charimg/2026/Q2/Onegai_AiPri/Meganee_Akai.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "미타 나나코",
         "animeTitle": "경멸하는 표정으로 팬티를 보여다오 R(리턴즈)",
-        "img": "image/charimg/2026/Q2/Iya_na_Kao_sare_nagara_Opantsu_Misete_Moraitai_Returns/Nanako_Mita.jpg"
+        "img": "image/charimg/2026/Q2/Iya_na_Kao_sare_nagara_Opantsu_Misete_Moraitai_Returns/Nanako_Mita.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -8533,7 +10997,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "샤르프",
         "animeTitle": "장송의 프리렌 2기",
-        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Scharf.jpg"
+        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Scharf.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8545,7 +11011,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "다흐 백작",
         "animeTitle": "장송의 프리렌 2기",
-        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Dach_Hakushaku.jpg"
+        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Dach_Hakushaku.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8557,17 +11025,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "에델",
         "animeTitle": "장송의 프리렌 2기",
-        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Edel.jpg"
+        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Edel.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "도고 토나코",
         "animeTitle": "매리지 톡신",
-        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Tonako_Dogo.jpg"
+        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Tonako_Dogo.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "괼",
         "animeTitle": "종말의 발키리 Ⅲ",
-        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Göll.jpg"
+        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Göll.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -8579,12 +11053,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "뎅켄",
         "animeTitle": "장송의 프리렌 2기",
-        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Denken.jpg"
+        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Denken.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "마드 군조",
         "animeTitle": "북두의 권 -FIST OF THE NORTH STAR-",
-        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Mad_Sarge.jpg"
+        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Mad_Sarge.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -8596,17 +11074,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "밀리아르데",
         "animeTitle": "장송의 프리렌 2기",
-        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Milliarde.jpg"
+        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Milliarde.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "사토 미라이",
         "animeTitle": "카야는 무섭지 않아",
-        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Mirai_Satou.jpg"
+        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Mirai_Satou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "結",
         "animeTitle": "지옥락 2기",
-        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Yui.jpg"
+        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Yui.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8618,12 +11102,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "파스",
         "animeTitle": "장송의 프리렌 2기",
-        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Fass.jpg"
+        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Fass.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "카와시타 마코토",
         "animeTitle": "요자쿠라 일가의 대작전 제2기",
-        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Makoto_Kawashita.jpg"
+        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Makoto_Kawashita.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -8635,12 +11123,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "게나우",
         "animeTitle": "장송의 프리렌 2기",
-        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Genau.jpg"
+        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Genau.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "루카와 슌",
         "animeTitle": "왼손잡이 에렌",
-        "img": "image/charimg/2026/Q2/Hidarikiki_no_Eren/Shun_Rukawa.jpg"
+        "img": "image/charimg/2026/Q2/Hidarikiki_no_Eren/Shun_Rukawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -8652,7 +11144,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "헤몬",
         "animeTitle": "장송의 프리렌 2기",
-        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Hermon.jpg"
+        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Hermon.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8664,7 +11158,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "노름",
         "animeTitle": "장송의 프리렌 2기",
-        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Norm.jpg"
+        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Norm.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8676,7 +11172,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "조리데",
         "animeTitle": "장송의 프리렌 2기",
-        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Zorida.jpg"
+        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Zorida.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8688,7 +11186,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "융",
         "animeTitle": "장송의 프리렌 2기",
-        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Yun.jpg"
+        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Yun.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8700,12 +11200,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "레르넨",
         "animeTitle": "장송의 프리렌 2기",
-        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Lernen.jpg"
+        "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Lernen.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "곰 회장",
         "animeTitle": "자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season",
-        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Kuma_Kaichou.jpg"
+        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Kuma_Kaichou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -8717,22 +11221,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "레이에츠 고",
         "animeTitle": "하이스쿨! 기면조",
-        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Gou_Reietsu.jpg"
+        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Gou_Reietsu.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "나가미네 시료",
         "animeTitle": "일본삼국",
-        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Shiryo_Nagamine.jpg"
+        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Shiryo_Nagamine.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "니오 카오루",
         "animeTitle": "힘내라 나카무라 군",
-        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Kaoru_Niou.jpg"
+        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Kaoru_Niou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "켄시로",
         "animeTitle": "북두의 권 -FIST OF THE NORTH STAR-",
-        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Kenshirou.jpg"
+        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Kenshirou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -8744,17 +11256,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "모노호시 다이",
         "animeTitle": "하이스쿨! 기면조",
-        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Dai_Monohoshi.jpg"
+        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Dai_Monohoshi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "헬리",
         "animeTitle": "DARK MOON: 달의 제단",
-        "img": "image/charimg/2026/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Heli.jpg"
+        "img": "image/charimg/2026/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Heli.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "나카츠 슈이치",
         "animeTitle": "아름다운 그대에게",
-        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Shuichi_Nakatsu.jpg"
+        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Shuichi_Nakatsu.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8766,7 +11284,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "나카스도 오미야",
         "animeTitle": "하이스쿨! 기면조",
-        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Omiya_Nakasudou.jpg"
+        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Omiya_Nakasudou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8778,7 +11298,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "메리 켄사쿠",
         "animeTitle": "하이스쿨! 기면조",
-        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Kensaku_Meri.jpg"
+        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Kensaku_Meri.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8790,7 +11312,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "죠가이 란토",
         "animeTitle": "하이스쿨! 기면조",
-        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Ranto_Jougai.jpg"
+        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Ranto_Jougai.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8802,7 +11326,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "타부치 코에루",
         "animeTitle": "하이스쿨! 기면조",
-        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Koeru_Tabuchi.jpg"
+        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Koeru_Tabuchi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8814,42 +11340,58 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "운도 카이",
         "animeTitle": "하이스쿨! 기면조",
-        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Kai_Undo.jpg"
+        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Kai_Undo.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아서 보일",
         "animeTitle": "불꽃 소방대 3장",
-        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Arthur_Boyle.jpg"
+        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Arthur_Boyle.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "텐자",
         "animeTitle": "지옥락 2기",
-        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Tenza.jpg"
+        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Tenza.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "세실 글로우 알파스타",
         "animeTitle": "자칭 악역 영애인 약혼자 관찰기록.",
-        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Cecil_Glo_Alphasta.jpg"
+        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Cecil_Glo_Alphasta.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "나츠키 스바루",
         "animeTitle": "Re:제로부터 시작하는 이세계 생활 4기",
-        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Subaru_Natsuki.jpg"
+        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Subaru_Natsuki.jpg",
+        "quarter": "3분기",
+        "year": 2026
       },
       {
         "charName": "컬커 로트",
         "animeTitle": "공주 기사는 야만족의 신부",
-        "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Calca_Lot.jpg"
+        "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Calca_Lot.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "이시가미 센쿠",
         "animeTitle": "닥터 스톤 SCIENCE FUTURE",
-        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Senkuu_Ishigami.jpg"
+        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Senkuu_Ishigami.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "가이우스 율리우스 카이사르",
         "animeTitle": "리인카네이션의 꽃잎",
-        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Gaius_Julius_Caesar.jpg"
+        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Gaius_Julius_Caesar.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -8861,7 +11403,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아키레스 켄",
         "animeTitle": "하이스쿨! 기면조",
-        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Ken_Akiresu.jpg"
+        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Ken_Akiresu.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8873,7 +11417,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "인타하이 스스무",
         "animeTitle": "하이스쿨! 기면조",
-        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Susumu_Intahai.jpg"
+        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Susumu_Intahai.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8885,7 +11431,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "콘죠 유타카",
         "animeTitle": "하이스쿨! 기면조",
-        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Yutaka_Konjou.jpg"
+        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Yutaka_Konjou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8897,7 +11445,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "스지 치카라",
         "animeTitle": "하이스쿨! 기면조",
-        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Chikara_Suji.jpg"
+        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Chikara_Suji.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8909,7 +11459,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "히다리 마키",
         "animeTitle": "하이스쿨! 기면조",
-        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Maki_Hidari.jpg"
+        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Maki_Hidari.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8921,7 +11473,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "산단바라 이쿠에",
         "animeTitle": "하이스쿨! 기면조",
-        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Ikue_Sandanhara.jpg"
+        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Ikue_Sandanhara.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8933,7 +11487,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "혼바 데스코",
         "animeTitle": "하이스쿨! 기면조",
-        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Desuko_Honba.jpg"
+        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Desuko_Honba.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8945,7 +11501,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "오오바 카요",
         "animeTitle": "하이스쿨! 기면조",
-        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Kayo_Ouba.jpg"
+        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Kayo_Ouba.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8957,12 +11515,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "키레이데 쇼",
         "animeTitle": "하이스쿨! 기면조",
-        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Shou_Kireide.jpg"
+        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Shou_Kireide.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "코하자메 신",
         "animeTitle": "킬 블루",
-        "img": "image/charimg/2026/Q2/Kill_Ao/Shin_Kohazame.jpg"
+        "img": "image/charimg/2026/Q2/Kill_Ao/Shin_Kohazame.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -8974,7 +11536,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "셋토 키메루",
         "animeTitle": "하이스쿨! 기면조",
-        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Kimeru_Setto.jpg"
+        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Kimeru_Setto.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8986,7 +11550,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "타노킨 토리오",
         "animeTitle": "하이스쿨! 기면조",
-        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Torio_Tanokin.jpg"
+        "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Torio_Tanokin.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -8998,17 +11564,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "지노",
         "animeTitle": "DARK MOON: 달의 제단",
-        "img": "image/charimg/2026/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Jino.jpg"
+        "img": "image/charimg/2026/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Jino.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "요시이 하루카",
         "animeTitle": "레플리카도, 사랑을 한다",
-        "img": "image/charimg/2026/Q2/Replica_Datte,_Koi_wo_Suru/Haruka_Yoshii.jpg"
+        "img": "image/charimg/2026/Q2/Replica_Datte,_Koi_wo_Suru/Haruka_Yoshii.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "후나사카 히로시",
         "animeTitle": "리인카네이션의 꽃잎",
-        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Hiroshi_Funasaka.jpg"
+        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Hiroshi_Funasaka.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -9020,7 +11592,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "이안",
         "animeTitle": "DARK MOON: 달의 제단",
-        "img": "image/charimg/2026/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Jaan.jpg"
+        "img": "image/charimg/2026/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Jaan.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -9032,22 +11606,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "드골라",
         "animeTitle": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~",
-        "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Dogora.jpg"
+        "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Dogora.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "타치바나 케이토",
         "animeTitle": "타몬 군 지금 어느 쪽!?",
-        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Keito_Tachibana.jpg"
+        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Keito_Tachibana.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "오가타",
         "animeTitle": "MF고스트 3rd Season",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Ogata.jpg"
+        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Ogata.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "유우키 알란",
         "animeTitle": "부탁해 아이프리",
-        "img": "image/charimg/2026/Q2/Onegai_AiPri/Alan_Yuuki.jpg"
+        "img": "image/charimg/2026/Q2/Onegai_AiPri/Alan_Yuuki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -9059,32 +11641,44 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "테레시아",
         "animeTitle": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~",
-        "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Theresia.jpg"
+        "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Theresia.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "코다이 미노리",
         "animeTitle": "위국일기",
-        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Minori_Koudai.jpg"
+        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Minori_Koudai.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "이스즈",
         "animeTitle": "지옥락 2기",
-        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Isuzu.jpg"
+        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Isuzu.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "코히나타 미라이",
         "animeTitle": "허당 선도부원과 스커트 길이가 부적절한 여고생의 이야기",
-        "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Mirai_Kohinata.jpg"
+        "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Mirai_Kohinata.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아마미 에리",
         "animeTitle": "반에서 두 번째로 귀여운 여자애와 친구가 되었다",
-        "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Eri_Amami.jpg"
+        "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Eri_Amami.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "프레이",
         "animeTitle": "전생했더니 슬라임이었던 건에 대하여 4기",
-        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Frey.jpg"
+        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Frey.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -9096,7 +11690,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "로단",
         "animeTitle": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~",
-        "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Rodan.jpg"
+        "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Rodan.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -9108,12 +11704,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "토머스 그란벨",
         "animeTitle": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~",
-        "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Thomas_Granvelle.jpg"
+        "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Thomas_Granvelle.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "高村美咲",
         "animeTitle": "이치고 아이카 ~잡하고 생기발랄한 동생과 못말리는 오빠~",
-        "img": "image/charimg/2026/Q1/Ichigo_Aika_Zatsu_de_Namaiki_na_Imouto_to_Warikirenai_Ani/Misaki_Takamura.jpg"
+        "img": "image/charimg/2026/Q1/Ichigo_Aika_Zatsu_de_Namaiki_na_Imouto_to_Warikirenai_Ani/Misaki_Takamura.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -9125,7 +11725,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "카르넬 자작",
         "animeTitle": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~",
-        "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Carnell.jpg"
+        "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Carnell.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -9137,32 +11739,44 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "신라 쿠사카베",
         "animeTitle": "불꽃 소방대 3장",
-        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Shinra_Kusakabe.jpg"
+        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Shinra_Kusakabe.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "시그마",
         "animeTitle": "Fate/strange Fake",
-        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Sigma.jpg"
+        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Sigma.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "미도리카와 다이치",
         "animeTitle": "얼음 성벽",
-        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Daichi_Midorikawa.jpg"
+        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Daichi_Midorikawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "키리오 켄",
         "animeTitle": "키리오 팬클럽",
-        "img": "image/charimg/2026/Q2/Kirio_Fanclub/Kirio.jpg"
+        "img": "image/charimg/2026/Q2/Kirio_Fanclub/Kirio.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "쿠리바야시 슌",
         "animeTitle": "여친, 빌리겠습니다 5기",
-        "img": "image/charimg/2026/Q2/Kanojo,_Okarishimasu_5th_Season/Shun_Kuribayashi.jpg"
+        "img": "image/charimg/2026/Q2/Kanojo,_Okarishimasu_5th_Season/Shun_Kuribayashi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "카임 카무이",
         "animeTitle": "마계학교 이루마군 4기",
-        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Kamui_Caim.jpg"
+        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Kamui_Caim.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -9174,17 +11788,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "타마키 코타츠",
         "animeTitle": "불꽃 소방대 3장",
-        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Tamaki_Kotatsu.jpg"
+        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Tamaki_Kotatsu.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "나나미 마미",
         "animeTitle": "여친, 빌리겠습니다 5기",
-        "img": "image/charimg/2026/Q2/Kanojo,_Okarishimasu_5th_Season/Mami_Nanami.jpg"
+        "img": "image/charimg/2026/Q2/Kanojo,_Okarishimasu_5th_Season/Mami_Nanami.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "요자쿠라 시온",
         "animeTitle": "요자쿠라 일가의 대작전 제2기",
-        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Shion_Yozakura.jpg"
+        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Shion_Yozakura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -9196,12 +11816,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아키타루 오비",
         "animeTitle": "불꽃 소방대 3장",
-        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Akitaru_Oubi.jpg"
+        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Akitaru_Oubi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "케리오일",
         "animeTitle": "자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season",
-        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Kerioyl.jpg"
+        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Kerioyl.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -9213,17 +11837,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "타케히사 히나와",
         "animeTitle": "불꽃 소방대 3장",
-        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Takehisa_Hinawa.jpg"
+        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Takehisa_Hinawa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "사카요리 토모히사",
         "animeTitle": "초(超) 가구야 공주!",
-        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Tomohito_Sakayori.jpg"
+        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Tomohito_Sakayori.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아폴론",
         "animeTitle": "종말의 발키리 Ⅲ",
-        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Apollo.jpg"
+        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Apollo.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -9235,17 +11865,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "마키 오제",
         "animeTitle": "불꽃 소방대 3장",
-        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Maki_Oze.jpg"
+        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Maki_Oze.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "天野空",
         "animeTitle": "얼음 성벽",
-        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Sora_Amano.jpg"
+        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Sora_Amano.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "마리",
         "animeTitle": "얼음 성벽",
-        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Mari.jpg"
+        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Mari.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -9257,17 +11893,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "히카게",
         "animeTitle": "불꽃 소방대 3장",
-        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Hikage.jpg"
+        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Hikage.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "히나타",
         "animeTitle": "불꽃 소방대 3장",
-        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Hinata.jpg"
+        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Hinata.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "카구라자카 키요미",
         "animeTitle": "아름다운 그대에게",
-        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Kiyomi_Kagurazaka.jpg"
+        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Kiyomi_Kagurazaka.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -9279,22 +11921,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "쇼우 쿠사카베",
         "animeTitle": "불꽃 소방대 3장",
-        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Shou_Kusakabe.jpg"
+        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Shou_Kusakabe.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "렘 세이브렘",
         "animeTitle": "트라이건 스타게이즈",
-        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Rem_Saverem.jpg"
+        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Rem_Saverem.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "사카요리 모미지",
         "animeTitle": "초(超) 가구야 공주!",
-        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Momiji_Sakayori.jpg"
+        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Momiji_Sakayori.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "프랑소와",
         "animeTitle": "닥터 스톤 SCIENCE FUTURE",
-        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Francois.jpg"
+        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Francois.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -9306,22 +11956,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "리사 이사리베",
         "animeTitle": "불꽃 소방대 3장",
-        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Lisa_Isaribi.jpg"
+        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Lisa_Isaribi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "뷰프메이크",
         "animeTitle": "공주 기사는 야만족의 신부",
-        "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Vyufmec.jpg"
+        "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Vyufmec.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "미사키 켄야",
         "animeTitle": "전생했더니 슬라임이었던 건에 대하여 4기",
-        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Kenya_Misaki.jpg"
+        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Kenya_Misaki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "발락 클라라",
         "animeTitle": "마계학교 이루마군 4기",
-        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Clara_Valac.jpg"
+        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Clara_Valac.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -9333,32 +11991,44 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "하우메아",
         "animeTitle": "불꽃 소방대 3장",
-        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Haumea.jpg"
+        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Haumea.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "마리엘",
         "animeTitle": "전생했더니 드래곤의 알이었다 ~최강이 아니면 목표로 하지 않아~",
-        "img": "image/charimg/2026/Q1/Tensei_Shitara_Dragon_no_Tamago_Datta/Marielle.jpg"
+        "img": "image/charimg/2026/Q1/Tensei_Shitara_Dragon_no_Tamago_Datta/Marielle.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "FUSHI",
         "animeTitle": "초(超) 가구야 공주!",
-        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/FUSHI.jpg"
+        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/FUSHI.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "샤르디나 인페리셔스",
         "animeTitle": "또 죽고 말았나요, 탐정님",
-        "img": "image/charimg/2026/Q2/Mata_Korosarete_Shimatta_no_desu_ne,_Tantei-sama/Shardina_Infelicius.jpg"
+        "img": "image/charimg/2026/Q2/Mata_Korosarete_Shimatta_no_desu_ne,_Tantei-sama/Shardina_Infelicius.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "나츠노",
         "animeTitle": "마오",
-        "img": "image/charimg/2026/Q2/MAO/Natsuno.jpg"
+        "img": "image/charimg/2026/Q2/MAO/Natsuno.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "히다카 니노",
         "animeTitle": "마리카쨩의 호감도는 망가져있다",
-        "img": "image/charimg/2026/Q2/Marika-chan_no_Koukando_wa_Bukkowareteiru/Niino_Hidaka.jpg"
+        "img": "image/charimg/2026/Q2/Marika-chan_no_Koukando_wa_Bukkowareteiru/Niino_Hidaka.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -9370,7 +12040,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "구스타프 혼다",
         "animeTitle": "불꽃 소방대 3장",
-        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Gustav_Honda.jpg"
+        "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Gustav_Honda.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -9382,7 +12054,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "푸르리엘",
         "animeTitle": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
-        "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Purriel.jpg"
+        "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Purriel.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -9394,22 +12068,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "쿠사라",
         "animeTitle": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
-        "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Xara.jpg"
+        "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Xara.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "와가리 미노루",
         "animeTitle": "데드 어카운트",
-        "img": "image/charimg/2026/Q1/Dead_Account/Minoru_Wagari.jpg"
+        "img": "image/charimg/2026/Q1/Dead_Account/Minoru_Wagari.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "イライジャ・ナイト",
         "animeTitle": "최강의 왕, 두 번째 인생에는 무엇을 하는가 시즌 2",
-        "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Elijah_Knight.jpg"
+        "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Elijah_Knight.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "크롬",
         "animeTitle": "닥터 스톤 SCIENCE FUTURE",
-        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Chrome.jpg"
+        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Chrome.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -9421,7 +12103,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "라다 프리오라",
         "animeTitle": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
-        "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Lada_Priora.jpg"
+        "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Lada_Priora.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -9433,22 +12117,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "에스파다",
         "animeTitle": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
-        "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Esparda.jpg"
+        "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Esparda.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "헤이 야야키치",
         "animeTitle": "일본삼국",
-        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Yayakichi_Hei.jpg"
+        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Yayakichi_Hei.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "블라드 3세",
         "animeTitle": "리인카네이션의 꽃잎",
-        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Vlad_Sansei.jpg"
+        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Vlad_Sansei.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "엔",
         "animeTitle": "도로헤도로 시즌 2",
-        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/En.jpg"
+        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/En.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -9460,17 +12152,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "니콜라스 D. 울프우드",
         "animeTitle": "트라이건 스타게이즈",
-        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Nicholas_D._Wolfwood.jpg"
+        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Nicholas_D._Wolfwood.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "키타즈카 이츠키",
         "animeTitle": "리인카네이션의 꽃잎",
-        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Itsuki_Kitazuka.jpg"
+        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Itsuki_Kitazuka.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "신",
         "animeTitle": "도로헤도로 시즌 2",
-        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Shin.jpg"
+        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Shin.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -9482,7 +12180,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "메릴 스트라이프",
         "animeTitle": "트라이건 스타게이즈",
-        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Meryl_Stryfe.jpg"
+        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Meryl_Stryfe.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -9494,7 +12194,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "밀리 톰슨",
         "animeTitle": "트라이건 스타게이즈",
-        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Milly_Thompson.jpg"
+        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Milly_Thompson.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -9506,12 +12208,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "제시카",
         "animeTitle": "트라이건 스타게이즈",
-        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Jessica.jpg"
+        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Jessica.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "메일리 포트루트",
         "animeTitle": "Re:제로부터 시작하는 이세계 생활 4기",
-        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Meili_Portroute.jpg"
+        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Meili_Portroute.jpg",
+        "quarter": "3분기",
+        "year": 2026
       }
     ]
   },
@@ -9523,7 +12229,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "밀리온즈 나이브스",
         "animeTitle": "트라이건 스타게이즈",
-        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Knives_Millions.jpg"
+        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Knives_Millions.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -9535,7 +12243,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "저지 더 비스트",
         "animeTitle": "트라이건 스타게이즈",
-        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Zazie_the_Beast.jpg"
+        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Zazie_the_Beast.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -9547,17 +12257,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "호퍼드 더 건틀렛",
         "animeTitle": "트라이건 스타게이즈",
-        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Hoppered_the_Gauntlet.jpg"
+        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Hoppered_the_Gauntlet.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "카리오스",
         "animeTitle": "자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season",
-        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Karios.jpg"
+        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Karios.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "스페이드",
         "animeTitle": "북두의 권 -FIST OF THE NORTH STAR-",
-        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Spade.jpg"
+        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Spade.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -9569,7 +12285,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "레오노프 더 퍼펫마스터",
         "animeTitle": "트라이건 스타게이즈",
-        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Leonof_the_Puppet-Master.jpg"
+        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Leonof_the_Puppet-Master.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -9581,12 +12299,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "윌리엄 콘래드",
         "animeTitle": "트라이건 스타게이즈",
-        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/William_Conrad.jpg"
+        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/William_Conrad.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "사사란",
         "animeTitle": "고깔모자 아틀리에",
-        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Sasaran.jpg"
+        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Sasaran.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -9598,12 +12320,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "리비오 더 더블팽",
         "animeTitle": "트라이건 스타게이즈",
-        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Livio.jpg"
+        "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Livio.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "스나가",
         "animeTitle": "BEASTARS FINAL SEASON Part 2",
-        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Sunaga.jpg"
+        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Sunaga.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -9615,17 +12341,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "엘키두",
         "animeTitle": "Fate/strange Fake",
-        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Enkidu.jpg"
+        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Enkidu.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "레이젠 료코",
         "animeTitle": "카난 님은 초보 악마",
-        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Ryouko_Reizen.jpg"
+        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Ryouko_Reizen.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "노이",
         "animeTitle": "도로헤도로 시즌 2",
-        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Noi.jpg"
+        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Noi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -9637,12 +12369,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "올란도 리브",
         "animeTitle": "Fate/strange Fake",
-        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Orlando_Reeve.jpg"
+        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Orlando_Reeve.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "쟈신",
         "animeTitle": "듀얼마스터즈 LOST ~망각의 태양~",
-        "img": "image/charimg/2026/Q1/Duel_Masters_LOST_Boukyaku_no_Taiyou/Jashin-kun.jpg"
+        "img": "image/charimg/2026/Q1/Duel_Masters_LOST_Boukyaku_no_Taiyou/Jashin-kun.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -9654,7 +12390,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "제스터 카르투레",
         "animeTitle": "Fate/strange Fake",
-        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Jester_Karture.jpg"
+        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Jester_Karture.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -9666,7 +12404,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "알렉상드르 뒤마 페르",
         "animeTitle": "Fate/strange Fake",
-        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Alexandre_Dumas.jpg"
+        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Alexandre_Dumas.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -9678,12 +12418,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "필리아",
         "animeTitle": "Fate/strange Fake",
-        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Philia.jpg"
+        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Philia.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "쿠로스 아로마",
         "animeTitle": "Aikatsu! x PriPara THE MOVIE -Deai no Kiseki-",
-        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Aroma_Kurosu.jpg"
+        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Aroma_Kurosu.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -9695,7 +12439,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "헤라클레스",
         "animeTitle": "Fate/strange Fake",
-        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Heracles.jpg"
+        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Heracles.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -9707,12 +12453,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "오리온",
         "animeTitle": "Fate/strange Fake",
-        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Orion.jpg"
+        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Orion.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "코가시와 카이",
         "animeTitle": "MF고스트 3rd Season",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Kai_Kogashiwa.jpg"
+        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Kai_Kogashiwa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -9724,7 +12474,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "로코 벨페반",
         "animeTitle": "Fate/strange Fake",
-        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Rocco_Belfeban.jpg"
+        "img": "image/charimg/2026/Q1/Fatestrange_Fake/Rocco_Belfeban.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -9736,52 +12488,72 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "에모토 나루히코",
         "animeTitle": "데드 어카운트",
-        "img": "image/charimg/2026/Q1/Dead_Account/Naruhiko_Emoto.jpg"
+        "img": "image/charimg/2026/Q1/Dead_Account/Naruhiko_Emoto.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "야시로",
         "animeTitle": "쓰레기 용사",
-        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Yashiro.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Yashiro.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "이치무라 코하쿠",
         "animeTitle": "아름다운 초저녁달",
-        "img": "image/charimg/2026/Q1/Uruwashi_no_Yoi_no_Tsuki/Kohaku_Ichimura.jpg"
+        "img": "image/charimg/2026/Q1/Uruwashi_no_Yoi_no_Tsuki/Kohaku_Ichimura.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "슈겐",
         "animeTitle": "지옥락 2기",
-        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Shugen.jpg"
+        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Shugen.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "해리슨 디르크",
         "animeTitle": "비극의 원흉이 되는 최강악역 최종보스 여왕은 국민을 위해 헌신합니다 Season2",
-        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Harrison.jpg"
+        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Harrison.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아키",
         "animeTitle": "레플리카도, 사랑을 한다",
-        "img": "image/charimg/2026/Q2/Replica_Datte,_Koi_wo_Suru/Aki.jpg"
+        "img": "image/charimg/2026/Q2/Replica_Datte,_Koi_wo_Suru/Aki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "사나다 슈야",
         "animeTitle": "레플리카도, 사랑을 한다",
-        "img": "image/charimg/2026/Q2/Replica_Datte,_Koi_wo_Suru/Shuuya_Sanada.jpg"
+        "img": "image/charimg/2026/Q2/Replica_Datte,_Koi_wo_Suru/Shuuya_Sanada.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "미야케 아키토",
         "animeTitle": "어서 오세요 실력지상주의 교실에 4th Season",
-        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Akito_Miyake.jpg"
+        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Akito_Miyake.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "나나미 류스이",
         "animeTitle": "닥터 스톤 SCIENCE FUTURE",
-        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Ryuusui_Nanami.jpg"
+        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Ryuusui_Nanami.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "나기우라 타츠야",
         "animeTitle": "하이바라의 청춘 뉴 게임 플러스",
-        "img": "image/charimg/2026/Q2/Haibara-kun_no_Tsuyokute_Seishun_New_Game/Tatsuya_Nagiura.jpg"
+        "img": "image/charimg/2026/Q2/Haibara-kun_no_Tsuyokute_Seishun_New_Game/Tatsuya_Nagiura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -9793,22 +12565,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아자키 요이마루",
         "animeTitle": "데드 어카운트",
-        "img": "image/charimg/2026/Q1/Dead_Account/Yoimaru_Azaki.jpg"
+        "img": "image/charimg/2026/Q1/Dead_Account/Yoimaru_Azaki.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "하르트나이츠",
         "animeTitle": "악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다",
-        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Hartknights_Lapis-Lazuli_Lacmouth.jpg"
+        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Hartknights_Lapis-Lazuli_Lacmouth.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "토미네 잇세",
         "animeTitle": "신의 물방울",
-        "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Issei_Tomine.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Issei_Tomine.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "하쿠비",
         "animeTitle": "마오",
-        "img": "image/charimg/2026/Q2/MAO/Hakubi.jpg"
+        "img": "image/charimg/2026/Q2/MAO/Hakubi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -9820,7 +12600,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "나메카와 키리",
         "animeTitle": "데드 어카운트",
-        "img": "image/charimg/2026/Q1/Dead_Account/Kiri_Namekawa.jpg"
+        "img": "image/charimg/2026/Q1/Dead_Account/Kiri_Namekawa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -9832,7 +12614,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "이타바시 카키코",
         "animeTitle": "데드 어카운트",
-        "img": "image/charimg/2026/Q1/Dead_Account/Kakiko_Itabashi.jpg"
+        "img": "image/charimg/2026/Q1/Dead_Account/Kakiko_Itabashi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -9844,12 +12628,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "카이코자 켄지",
         "animeTitle": "데드 어카운트",
-        "img": "image/charimg/2026/Q1/Dead_Account/Kenji_Ekoza.jpg"
+        "img": "image/charimg/2026/Q1/Dead_Account/Kenji_Ekoza.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "마에조노 카즈히로",
         "animeTitle": "MF고스트 3rd Season",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Kazuhiro_Maezono.jpg"
+        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Kazuhiro_Maezono.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -9861,7 +12649,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "오치 사바토",
         "animeTitle": "데드 어카운트",
-        "img": "image/charimg/2026/Q1/Dead_Account/Sabato_Ochi.jpg"
+        "img": "image/charimg/2026/Q1/Dead_Account/Sabato_Ochi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -9873,17 +12663,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "토리마타 히루코",
         "animeTitle": "데드 어카운트",
-        "img": "image/charimg/2026/Q1/Dead_Account/Hiruko_Torimata.jpg"
+        "img": "image/charimg/2026/Q1/Dead_Account/Hiruko_Torimata.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "시라이시 료",
         "animeTitle": "킬 블루",
-        "img": "image/charimg/2026/Q2/Kill_Ao/Ryou_Shiraishi.jpg"
+        "img": "image/charimg/2026/Q2/Kill_Ao/Ryou_Shiraishi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아사노 타이요",
         "animeTitle": "요자쿠라 일가의 대작전 제2기",
-        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Taiyou_Asano.jpg"
+        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Taiyou_Asano.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -9895,12 +12691,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "이이즈카 미미",
         "animeTitle": "데드 어카운트",
-        "img": "image/charimg/2026/Q1/Dead_Account/Mimi_Iizuka.jpg"
+        "img": "image/charimg/2026/Q1/Dead_Account/Mimi_Iizuka.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "츠다 아카네",
         "animeTitle": "안드로이드는 경험인 수에 들어가나요??",
-        "img": "image/charimg/2026/Q1/Android_wa_Keiken_Ninzuu_ni_Hairimasu_ka/Akane_Tsuda.jpg"
+        "img": "image/charimg/2026/Q1/Android_wa_Keiken_Ninzuu_ni_Hairimasu_ka/Akane_Tsuda.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -9912,7 +12712,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아사츠지 키즈키",
         "animeTitle": "데드 어카운트",
-        "img": "image/charimg/2026/Q1/Dead_Account/Kizuki_Asatsuji.jpg"
+        "img": "image/charimg/2026/Q1/Dead_Account/Kizuki_Asatsuji.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -9924,17 +12726,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "미나즈키 쿄카",
         "animeTitle": "인외 교실의 인간 혐오 교사",
-        "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Kyouka_Minazuki.jpg"
+        "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Kyouka_Minazuki.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "미즈하라 치즈루",
         "animeTitle": "여친, 빌리겠습니다 5기",
-        "img": "image/charimg/2026/Q2/Kanojo,_Okarishimasu_5th_Season/Chizuru_Ichinose.jpg"
+        "img": "image/charimg/2026/Q2/Kanojo,_Okarishimasu_5th_Season/Chizuru_Ichinose.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "엘노르 리요스 알브",
         "animeTitle": "지팡이와 검의 위스토리아 Season2",
-        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Ellenor_Ljos_Alf.jpg"
+        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Ellenor_Ljos_Alf.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -9946,17 +12754,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "류자키 카린",
         "animeTitle": "인외 교실의 인간 혐오 교사",
-        "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Karin_Ryuuzaki.jpg"
+        "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Karin_Ryuuzaki.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "코하쿠",
         "animeTitle": "닥터 스톤 SCIENCE FUTURE",
-        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Kohaku.jpg"
+        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Kohaku.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "사카구치 히나타",
         "animeTitle": "전생했더니 슬라임이었던 건에 대하여 4기",
-        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Hinata_Sakaguchi.jpg"
+        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Hinata_Sakaguchi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -9968,7 +12782,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "호시노 사토루",
         "animeTitle": "인외 교실의 인간 혐오 교사",
-        "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Satoru_Hoshino.jpg"
+        "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Satoru_Hoshino.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -9980,12 +12796,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "오코노기 마키",
         "animeTitle": "인외 교실의 인간 혐오 교사",
-        "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Maki_Okonogi.jpg"
+        "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Maki_Okonogi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "펠릭스 아가일",
         "animeTitle": "Re:제로부터 시작하는 이세계 생활 4기",
-        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Felix_Argyle.jpg"
+        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Felix_Argyle.jpg",
+        "quarter": "3분기",
+        "year": 2026
       }
     ]
   },
@@ -9997,7 +12817,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "인도 유키네",
         "animeTitle": "쓰레기 용사",
-        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Yukine_Indou.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Yukine_Indou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10009,17 +12831,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "세라 카시와기 펜드레건",
         "animeTitle": "쓰레기 용사",
-        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Sara_Pendragon.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Sara_Pendragon.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아카리",
         "animeTitle": "악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다",
-        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Akari.jpg"
+        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Akari.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "야마다 아사에몬 사기리",
         "animeTitle": "지옥락 2기",
-        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Sagiri.jpg"
+        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Sagiri.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10031,12 +12859,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "이시노오",
         "animeTitle": "쓰레기 용사",
-        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Ishinoo.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Ishinoo.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "유키오",
         "animeTitle": "스노우볼 어스",
-        "img": "image/charimg/2026/Q2/Snowball_Earth/Yukio.jpg"
+        "img": "image/charimg/2026/Q2/Snowball_Earth/Yukio.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -10048,7 +12880,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "마루타",
         "animeTitle": "쓰레기 용사",
-        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Maruta.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Maruta.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10060,12 +12894,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "에드 사일러스",
         "animeTitle": "쓰레기 용사",
-        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Ed_Cyrus.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Ed_Cyrus.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "스고 고",
         "animeTitle": "일본삼국",
-        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Gou_Sugou.jpg"
+        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Gou_Sugou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -10077,32 +12915,44 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "이드",
         "animeTitle": "쓰레기 용사",
-        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Id.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Id.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "오카 리히토",
         "animeTitle": "정반대의 너와 나",
-        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Rihito_Oka.jpg"
+        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Rihito_Oka.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "게로 히카루",
         "animeTitle": "매리지 톡신",
-        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Hikaru_Gero.jpg"
+        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Hikaru_Gero.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "마에하라 마키",
         "animeTitle": "반에서 두 번째로 귀여운 여자애와 친구가 되었다",
-        "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Maki_Maehara.jpg"
+        "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Maki_Maehara.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "우사다 하루마",
         "animeTitle": "두 남자와 룸쉐어 중입니다",
-        "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Haruma_Usada.jpg"
+        "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Haruma_Usada.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "리그루",
         "animeTitle": "전생했더니 슬라임이었던 건에 대하여 4기",
-        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Rigur.jpg"
+        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Rigur.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -10114,7 +12964,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "ナレーター",
         "animeTitle": "쓰레기 용사",
-        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Narrator.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Narrator.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10126,7 +12978,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "こむぎ",
         "animeTitle": "쓰레기 용사",
-        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Komugi.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Komugi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10138,12 +12992,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "사하라",
         "animeTitle": "쓰레기 용사",
-        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Sahara.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Sahara.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "단노 다이스케",
         "animeTitle": "라이어 게임",
-        "img": "image/charimg/2026/Q2/LIAR_GAME/Daisuke_Danno.jpg"
+        "img": "image/charimg/2026/Q2/LIAR_GAME/Daisuke_Danno.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -10155,7 +13013,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "カンザキ",
         "animeTitle": "쓰레기 용사",
-        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Kanzaki.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Kanzaki.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10167,7 +13027,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "케이",
         "animeTitle": "쓰레기 용사",
-        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Kay.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Kay.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10179,7 +13041,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "카이 린타로",
         "animeTitle": "타몬 군 지금 어느 쪽!?",
-        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Rintarou_Kai.jpg"
+        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Rintarou_Kai.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10191,7 +13055,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "유이나",
         "animeTitle": "타몬 군 지금 어느 쪽!?",
-        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Yuina.jpg"
+        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Yuina.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10203,7 +13069,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "리코",
         "animeTitle": "타몬 군 지금 어느 쪽!?",
-        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Riko.jpg"
+        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Riko.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10215,22 +13083,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "이노우에 아스카",
         "animeTitle": "타몬 군 지금 어느 쪽!?",
-        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Asuka_Inoue.jpg"
+        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Asuka_Inoue.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "나나",
         "animeTitle": "GIRLS BAND CRY: Seishun Kyousoukyoku",
-        "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Nana.jpg"
+        "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Nana.jpg",
+        "quarter": "",
+        "year": ""
       },
       {
         "charName": "갸리",
         "animeTitle": "마계학교 이루마군 4기",
-        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Gyari.jpg"
+        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Gyari.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "나가츠키 레이코",
         "animeTitle": "춘하추동 대행자 봄의 춤",
-        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Reiko_Nagatsuki.jpg"
+        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Reiko_Nagatsuki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -10242,7 +13118,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "키노시타 호마레",
         "animeTitle": "타몬 군 지금 어느 쪽!?",
-        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Homare_Kinoshita.jpg"
+        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Homare_Kinoshita.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10254,7 +13132,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "토다",
         "animeTitle": "타몬 군 지금 어느 쪽!?",
-        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Toda.jpg"
+        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Toda.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10266,12 +13146,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "우타게 엄마",
         "animeTitle": "타몬 군 지금 어느 쪽!?",
-        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Utage_no_Haha.jpg"
+        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Utage_no_Haha.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "할머니",
         "animeTitle": "메이드 양은 먹기만 할 뿐",
-        "img": "image/charimg/2026/Q2/Maid-san_wa_Taberu_dake/Obaa-sama.jpg"
+        "img": "image/charimg/2026/Q2/Maid-san_wa_Taberu_dake/Obaa-sama.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -10283,12 +13167,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "시라이시 이즈미",
         "animeTitle": "타몬 군 지금 어느 쪽!?",
-        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Izumi_Shiraishi.jpg"
+        "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Izumi_Shiraishi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "왼쪽",
         "animeTitle": "황천의 츠가이",
-        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Hidari.jpg"
+        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Hidari.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -10300,12 +13188,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "유이츠카 이노리",
         "animeTitle": "메달리스트 2기",
-        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Inori_Yuitsuka.jpg"
+        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Inori_Yuitsuka.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "사쿠라 메이",
         "animeTitle": "경멸하는 표정으로 팬티를 보여다오 R(리턴즈)",
-        "img": "image/charimg/2026/Q2/Iya_na_Kao_sare_nagara_Opantsu_Misete_Moraitai_Returns/Mei_Sakura.jpg"
+        "img": "image/charimg/2026/Q2/Iya_na_Kao_sare_nagara_Opantsu_Misete_Moraitai_Returns/Mei_Sakura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -10317,7 +13209,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "세코마 마모루",
         "animeTitle": "메달리스트 2기",
-        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Mamoru_Sekoma.jpg"
+        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Mamoru_Sekoma.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10329,17 +13223,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "오카자키 이루카",
         "animeTitle": "메달리스트 2기",
-        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Iruka_Okazaki.jpg"
+        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Iruka_Okazaki.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "애거트 아크롬",
         "animeTitle": "고깔모자 아틀리에",
-        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Agott_Arkrome.jpg"
+        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Agott_Arkrome.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "나기사",
         "animeTitle": "얼음 성벽",
-        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Nagisa_Amamiya.jpg"
+        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Nagisa_Amamiya.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -10351,7 +13251,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "유이츠카 히로노부",
         "animeTitle": "메달리스트 2기",
-        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Hironobu_Yuitsuka.jpg"
+        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Hironobu_Yuitsuka.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10363,7 +13265,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "사루카와 린나",
         "animeTitle": "메달리스트 2기",
-        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Rinna_Sarukawa.jpg"
+        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Rinna_Sarukawa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10375,12 +13279,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아나구마 사키나",
         "animeTitle": "메달리스트 2기",
-        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Sakina_Anaguma.jpg"
+        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Sakina_Anaguma.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "코야나기 카호",
         "animeTitle": "내가 연인이 될 수 있을 리 없잖아, 무리무리! (※무리가 아니었다?!) ~넥스트 샤인!~",
-        "img": "image/charimg/2026/Q1/Watashi_ga_Koibito_ni_Nareru_Wake_Nai_jan,_Muri_Muri!_(※Muri_ja_Nakatta!)_Next_Shine!/Kaho_Koyanagi.jpg"
+        "img": "image/charimg/2026/Q1/Watashi_ga_Koibito_ni_Nareru_Wake_Nai_jan,_Muri_Muri!_(※Muri_ja_Nakatta!)_Next_Shine!/Kaho_Koyanagi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10392,12 +13300,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "코죠 리이나",
         "animeTitle": "메달리스트 2기",
-        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Riina_Kojou.jpg"
+        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Riina_Kojou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "휴루미",
         "animeTitle": "자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season",
-        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Hulemy.jpg"
+        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Hulemy.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -10409,22 +13321,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "카모가와 코헤이",
         "animeTitle": "메달리스트 2기",
-        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Kouhei_Kamogawa.jpg"
+        "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Kouhei_Kamogawa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "쥬소 하야토",
         "animeTitle": "아름다운 그대에게",
-        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Hayato_Jusou.jpg"
+        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Hayato_Jusou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "키쿠치와 타카히로",
         "animeTitle": "라이어 게임",
-        "img": "image/charimg/2026/Q2/LIAR_GAME/Takahiro_Kikuzawa.jpg"
+        "img": "image/charimg/2026/Q2/LIAR_GAME/Takahiro_Kikuzawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "타르프 캔서",
         "animeTitle": "검은 고양이와 마녀의 교실",
-        "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Tarf_Cancer.jpg"
+        "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Tarf_Cancer.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -10436,7 +13356,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "타키구치 요이",
         "animeTitle": "아름다운 초저녁달",
-        "img": "image/charimg/2026/Q1/Uruwashi_no_Yoi_no_Tsuki/Yoi_Takiguchi.jpg"
+        "img": "image/charimg/2026/Q1/Uruwashi_no_Yoi_no_Tsuki/Yoi_Takiguchi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10448,32 +13370,44 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "타니 유스케",
         "animeTitle": "정반대의 너와 나",
-        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Yuusuke_Tani.jpg"
+        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Yuusuke_Tani.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "야나기다 타쿠야",
         "animeTitle": "MF고스트 3rd Season",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Takuya_Yanagida.jpg"
+        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Takuya_Yanagida.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "피터 앤서니",
         "animeTitle": "프리즘 윤무곡",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Peter_Anthony.jpg"
+        "img": "image/charimg/2026/Q1/Prism_Rondo/Peter_Anthony.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "죠니 죠스타",
         "animeTitle": "스틸 볼 런: 죠죠의 기묘한 모험",
-        "img": "image/charimg/2026/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Johnny_Joestar.jpg"
+        "img": "image/charimg/2026/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Johnny_Joestar.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "칸츠바키 로우세이",
         "animeTitle": "춘하추동 대행자 봄의 춤",
-        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Rosei_Kantsubaki.jpg"
+        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Rosei_Kantsubaki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "쿠스노키 미나토",
         "animeTitle": "신의 정원이 딸린 쿠스노키 저택",
-        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Minato_Kusunoki.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Minato_Kusunoki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -10485,7 +13419,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "타이라 슈지",
         "animeTitle": "정반대의 너와 나",
-        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Shuuji_Taira.jpg"
+        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Shuuji_Taira.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10497,12 +13433,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아즈마 시노",
         "animeTitle": "정반대의 너와 나",
-        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Shino_Azuma.jpg"
+        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Shino_Azuma.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "단노 하나",
         "animeTitle": "황천의 츠가이",
-        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Hana_Danno.jpg"
+        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Hana_Danno.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -10514,7 +13454,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "야마다 켄타로",
         "animeTitle": "정반대의 너와 나",
-        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Kentarou_Yamada.jpg"
+        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Kentarou_Yamada.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10526,7 +13468,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "니시 나츠미",
         "animeTitle": "정반대의 너와 나",
-        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Natsumi_Nishi.jpg"
+        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Natsumi_Nishi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10538,7 +13482,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "와타나베 마나미",
         "animeTitle": "정반대의 너와 나",
-        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Manami_Watanabe.jpg"
+        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Manami_Watanabe.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10550,7 +13496,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "사토 아오이",
         "animeTitle": "정반대의 너와 나",
-        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Aoi_Satou.jpg"
+        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Aoi_Satou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10562,7 +13510,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "스즈키 엄마",
         "animeTitle": "정반대의 너와 나",
-        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Suzuki_no_Haha.jpg"
+        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Suzuki_no_Haha.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10574,7 +13524,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "스즈키 아빠",
         "animeTitle": "정반대의 너와 나",
-        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Suzuki_no_Chichi.jpg"
+        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Suzuki_no_Chichi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10586,7 +13538,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "스즈키 미유의 오빠",
         "animeTitle": "정반대의 너와 나",
-        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Suzuki_no_Ani.jpg"
+        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Suzuki_no_Ani.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10598,7 +13552,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "타니의 할머니",
         "animeTitle": "정반대의 너와 나",
-        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Tani_no_Sobo.jpg"
+        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Tani_no_Sobo.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10610,7 +13566,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "타니 엄마",
         "animeTitle": "정반대의 너와 나",
-        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Tani_no_Haha.jpg"
+        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Tani_no_Haha.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10622,7 +13580,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "담임",
         "animeTitle": "정반대의 너와 나",
-        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Tannin.jpg"
+        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Tannin.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10634,7 +13594,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "고마퐁",
         "animeTitle": "정반대의 너와 나",
-        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Gomapon.jpg"
+        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Gomapon.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10646,7 +13608,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "早乙女",
         "animeTitle": "정반대의 너와 나",
-        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Saotome.jpg"
+        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Saotome.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10658,7 +13622,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "長谷川",
         "animeTitle": "정반대의 너와 나",
-        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Hasegawa.jpg"
+        "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Hasegawa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10670,32 +13636,44 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "에비스모리 나무",
         "animeTitle": "카야는 무섭지 않아",
-        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Namu_Ebisumori.jpg"
+        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Namu_Ebisumori.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "코바야카와 신노스케",
         "animeTitle": "프리즘 윤무곡",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Shinnosuke_Kobayakawa.jpg"
+        "img": "image/charimg/2026/Q1/Prism_Rondo/Shinnosuke_Kobayakawa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "피나",
         "animeTitle": "BEASTARS FINAL SEASON Part 2",
-        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Pina.jpg"
+        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Pina.jpg",
+        "quarter": "",
+        "year": ""
       },
       {
         "charName": "마오",
         "animeTitle": "마오",
-        "img": "image/charimg/2026/Q2/MAO/Mao.jpg"
+        "img": "image/charimg/2026/Q2/MAO/Mao.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "나루미야 메이",
         "animeTitle": "다이아몬드 에이스 actII -Second Season-",
-        "img": "image/charimg/2026/Q2/Diamond_no_Ace_act_II_Second_Season/Mei_Narumiya.jpg"
+        "img": "image/charimg/2026/Q2/Diamond_no_Ace_act_II_Second_Season/Mei_Narumiya.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "13",
         "animeTitle": "도로헤도로 시즌 2",
-        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Thirteen.jpg"
+        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Thirteen.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -10707,7 +13685,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "모부 오사무",
         "animeTitle": "카야는 무섭지 않아",
-        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Osamu_Mobu.jpg"
+        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Osamu_Mobu.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10719,12 +13699,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "에비스모리 나나",
         "animeTitle": "카야는 무섭지 않아",
-        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Nana_Ebisumori.jpg"
+        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Nana_Ebisumori.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "티아라 로열 아이비",
         "animeTitle": "비극의 원흉이 되는 최강악역 최종보스 여왕은 국민을 위해 헌신합니다 Season2",
-        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Tiara_Royal_Ivy.jpg"
+        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Tiara_Royal_Ivy.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -10736,7 +13720,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "園長",
         "animeTitle": "카야는 무섭지 않아",
-        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Enchou.jpg"
+        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Enchou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10748,17 +13734,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "타치바나 유즈",
         "animeTitle": "카야는 무섭지 않아",
-        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Yuzu_Tachibana.jpg"
+        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Yuzu_Tachibana.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "텐노지 리나",
         "animeTitle": "Love Live! Nijigasaki Gakuen School Idol Doukoukai: Kanketsu-hen 2",
-        "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Rina_Tennouji.jpg"
+        "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Rina_Tennouji.jpg",
+        "quarter": "",
+        "year": ""
       },
       {
         "charName": "명신",
         "animeTitle": "최강의 직업은 용사도 현자도 아닌 감정사(임시)인 것 같은데요",
-        "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Meijin.jpg"
+        "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Meijin.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -10770,7 +13762,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "管野まい",
         "animeTitle": "카야는 무섭지 않아",
-        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Mai_Sugano.jpg"
+        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Mai_Sugano.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10782,7 +13776,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "ユミちゃん",
         "animeTitle": "카야는 무섭지 않아",
-        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Yumi-chan.jpg"
+        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Yumi-chan.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10794,12 +13790,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "アイコちゃん",
         "animeTitle": "카야는 무섭지 않아",
-        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Aiko-chan.jpg"
+        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Aiko-chan.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "펄",
         "animeTitle": "악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다",
-        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Pearl.jpg"
+        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Pearl.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10811,17 +13811,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "나카하시 유우키",
         "animeTitle": "카야는 무섭지 않아",
-        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Michiru_Yano.jpg"
+        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Michiru_Yano.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아마오리 하루나",
         "animeTitle": "내가 연인이 될 수 있을 리 없잖아, 무리무리! (※무리가 아니었다?!) ~넥스트 샤인!~",
-        "img": "image/charimg/2026/Q1/Watashi_ga_Koibito_ni_Nareru_Wake_Nai_jan,_Muri_Muri!_(※Muri_ja_Nakatta!)_Next_Shine!/Haruna_Amaori.jpg"
+        "img": "image/charimg/2026/Q1/Watashi_ga_Koibito_ni_Nareru_Wake_Nai_jan,_Muri_Muri!_(※Muri_ja_Nakatta!)_Next_Shine!/Haruna_Amaori.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "나카스 카스미",
         "animeTitle": "Love Live! Nijigasaki Gakuen School Idol Doukoukai: Kanketsu-hen 2",
-        "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Kasumi_Nakasu.jpg"
+        "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Kasumi_Nakasu.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -10833,12 +13839,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "메로",
         "animeTitle": "카야는 무섭지 않아",
-        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Melo-sensei.jpg"
+        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Melo-sensei.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "엘리자베스",
         "animeTitle": "치킨 파이터",
-        "img": "image/charimg/2026/Q2/Niwatori_Fighter/Elizabeth.jpg"
+        "img": "image/charimg/2026/Q2/Niwatori_Fighter/Elizabeth.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -10850,7 +13860,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "たちばなカン",
         "animeTitle": "카야는 무섭지 않아",
-        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Kan_Tachibana.jpg"
+        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Kan_Tachibana.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10862,7 +13874,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "타카마츠 나츠키",
         "animeTitle": "카야는 무섭지 않아",
-        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Natsuki_Takamatsu.jpg"
+        "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Natsuki_Takamatsu.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10874,7 +13888,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "니카이도 마유미",
         "animeTitle": "아름다운 그대에게",
-        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Mayumi_Nikaidou.jpg"
+        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Mayumi_Nikaidou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10886,7 +13902,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "노에 신지",
         "animeTitle": "아름다운 그대에게",
-        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Shinji_Noe.jpg"
+        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Shinji_Noe.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10898,7 +13916,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "니혼바시 와타루",
         "animeTitle": "아름다운 그대에게",
-        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Wataru_Nihonbashi.jpg"
+        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Wataru_Nihonbashi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10910,17 +13930,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "카구라자카 토모미",
         "animeTitle": "아름다운 그대에게",
-        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Tamami_Kagurazaka.jpg"
+        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Tamami_Kagurazaka.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아타가와 아키네",
         "animeTitle": "얼음 성벽",
-        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Akine_Atagawa.jpg"
+        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Akine_Atagawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "키바 나노카",
         "animeTitle": "마오",
-        "img": "image/charimg/2026/Q2/MAO/Nanoka_Kiba.jpg"
+        "img": "image/charimg/2026/Q2/MAO/Nanoka_Kiba.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -10932,12 +13958,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "세키메 쿄고",
         "animeTitle": "아름다운 그대에게",
-        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Kyougo_Sekime.jpg"
+        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Kyougo_Sekime.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "마키오",
         "animeTitle": "놓친 물고기는 컸지만 잡은 물고기가 너무 컸던 건",
-        "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Macchio.jpg"
+        "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Macchio.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -10949,12 +13979,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "카도마 쇼타로",
         "animeTitle": "아름다운 그대에게",
-        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Shotarou_Kadoma.jpg"
+        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Shotarou_Kadoma.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "뇌신",
         "animeTitle": "신의 정원이 딸린 쿠스노키 저택",
-        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Raijin.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Raijin.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -10966,7 +14000,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "마키타 타카미",
         "animeTitle": "아름다운 그대에게",
-        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Takami_Makita.jpg"
+        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Takami_Makita.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -10978,32 +14014,44 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "히메지마 마사오",
         "animeTitle": "아름다운 그대에게",
-        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Masao_Himejima.jpg"
+        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Masao_Himejima.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "야나기사와 마사카즈",
         "animeTitle": "Kusunoki no Bannin",
-        "img": "image/charimg/2026/Q1/Kusunoki_no_Bannin/Masakazu_Yanagisawa.jpg"
+        "img": "image/charimg/2026/Q1/Kusunoki_no_Bannin/Masakazu_Yanagisawa.jpg",
+        "quarter": "",
+        "year": ""
       },
       {
         "charName": "시노노메 마사루",
         "animeTitle": "사랑해 게임을 끝내고 싶어",
-        "img": "image/charimg/2026/Q2/Aishiteru_Game_wo_Owarasetai/Masaru_Shinonome.jpg"
+        "img": "image/charimg/2026/Q2/Aishiteru_Game_wo_Owarasetai/Masaru_Shinonome.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "로즈월 L. 메이더스",
         "animeTitle": "Re:제로부터 시작하는 이세계 생활 4기",
-        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Roswaal_Mathers.jpg"
+        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Roswaal_Mathers.jpg",
+        "quarter": "3분기",
+        "year": 2026
       },
       {
         "charName": "벤노",
         "animeTitle": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
-        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Benno.jpg"
+        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Benno.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "암두스키아스 포로",
         "animeTitle": "마계학교 이루마군 4기",
-        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Amduscias_Poro.jpg"
+        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Amduscias_Poro.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -11015,7 +14063,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "키타하나다 타케시",
         "animeTitle": "아름다운 그대에게",
-        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Takeshi_Kitahanada.jpg"
+        "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Takeshi_Kitahanada.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11027,32 +14077,44 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "제온리 핀롤",
         "animeTitle": "마술사 쿠논은 보인다",
-        "img": "image/charimg/2026/Q1/Majutsushi_Kunon_wa_Mieteiru/Zeonly_Finroll.jpg"
+        "img": "image/charimg/2026/Q1/Majutsushi_Kunon_wa_Mieteiru/Zeonly_Finroll.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "히코야",
         "animeTitle": "화식조 우슈보로토비구미",
-        "img": "image/charimg/2026/Q1/Hikuidori/Hikoya.jpg"
+        "img": "image/charimg/2026/Q1/Hikuidori/Hikoya.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "한마 바키",
         "animeTitle": "바키도: 무적의 검사 편",
-        "img": "image/charimg/2026/Q1/BAKI-DOU/Baki_Hanma.jpg"
+        "img": "image/charimg/2026/Q1/BAKI-DOU/Baki_Hanma.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아라카와 마이케루",
         "animeTitle": "아카네 이야기",
-        "img": "image/charimg/2026/Q2/Akane-banashi/Maikeru_Arakawa.jpg"
+        "img": "image/charimg/2026/Q2/Akane-banashi/Maikeru_Arakawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "후루야 사토루",
         "animeTitle": "다이아몬드 에이스 actII -Second Season-",
-        "img": "image/charimg/2026/Q2/Diamond_no_Ace_act_II_Second_Season/Satoru_Furuya.jpg"
+        "img": "image/charimg/2026/Q2/Diamond_no_Ace_act_II_Second_Season/Satoru_Furuya.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "클로드 시리우스",
         "animeTitle": "검은 고양이와 마녀의 교실",
-        "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Claude_Sirius.jpg"
+        "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Claude_Sirius.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -11064,7 +14126,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "カシス・ホーク",
         "animeTitle": "마술사 쿠논은 보인다",
-        "img": "image/charimg/2026/Q1/Majutsushi_Kunon_wa_Mieteiru/Cassis_Hawk.jpg"
+        "img": "image/charimg/2026/Q1/Majutsushi_Kunon_wa_Mieteiru/Cassis_Hawk.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11076,7 +14140,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아손 그리온",
         "animeTitle": "마술사 쿠논은 보인다",
-        "img": "image/charimg/2026/Q1/Majutsushi_Kunon_wa_Mieteiru/Arson_Glion.jpg"
+        "img": "image/charimg/2026/Q1/Majutsushi_Kunon_wa_Mieteiru/Arson_Glion.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11088,42 +14154,58 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "로간 헤이워드",
         "animeTitle": "용사 파티에서 쫓겨난 다재무능",
-        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Logan_Hayward.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Logan_Hayward.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "미야하라 히토미",
         "animeTitle": "라이어 게임",
-        "img": "image/charimg/2026/Q2/LIAR_GAME/Hitomi_Miyahara.jpg"
+        "img": "image/charimg/2026/Q2/LIAR_GAME/Hitomi_Miyahara.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "후쿠나가 유지",
         "animeTitle": "라이어 게임",
-        "img": "image/charimg/2026/Q2/LIAR_GAME/Yuuji_Fukunaga.jpg"
+        "img": "image/charimg/2026/Q2/LIAR_GAME/Yuuji_Fukunaga.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아오키야마 레이코",
         "animeTitle": "힘내라 나카무라 군",
-        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Reiko_Aokiyama.jpg"
+        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Reiko_Aokiyama.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "닐레아",
         "animeTitle": "공주 기사는 야만족의 신부",
-        "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Nyrea.jpg"
+        "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Nyrea.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "다케하라 기누에",
         "animeTitle": "아와지마 가극학교",
-        "img": "image/charimg/2026/Q2/Awajima_Hyakkei/Kinue_Takehara.jpg"
+        "img": "image/charimg/2026/Q2/Awajima_Hyakkei/Kinue_Takehara.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "릴리스",
         "animeTitle": "종말의 발키리 Ⅲ",
-        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Lilith.jpg"
+        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Lilith.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "포츄",
         "animeTitle": "부탁해 아이프리",
-        "img": "image/charimg/2026/Q2/Onegai_AiPri/Fortu.jpg"
+        "img": "image/charimg/2026/Q2/Onegai_AiPri/Fortu.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -11135,12 +14217,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아넬리 와일즈",
         "animeTitle": "용사 파티에서 쫓겨난 다재무능",
-        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Annery_Wiles.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Annery_Wiles.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "에르스",
         "animeTitle": "BEASTARS FINAL SEASON Part 2",
-        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Els.jpg"
+        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Els.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -11152,7 +14238,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "데릭 모즐리",
         "animeTitle": "용사 파티에서 쫓겨난 다재무능",
-        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Derrick_Mosely.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Derrick_Mosely.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11164,7 +14252,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "アラン",
         "animeTitle": "용사 파티에서 쫓겨난 다재무능",
-        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Aran.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Aran.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11176,7 +14266,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "레인 허그웰",
         "animeTitle": "용사 파티에서 쫓겨난 다재무능",
-        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Rain_Hagwell.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Rain_Hagwell.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11188,7 +14280,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "루크레시아 오티스",
         "animeTitle": "용사 파티에서 쫓겨난 다재무능",
-        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Lucrecia_Otis.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Lucrecia_Otis.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11200,7 +14294,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "윌크스 세버리",
         "animeTitle": "용사 파티에서 쫓겨난 다재무능",
-        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Wilkes_Severley.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Wilkes_Severley.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11212,7 +14308,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "카라",
         "animeTitle": "용사 파티에서 쫓겨난 다재무능",
-        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Carla.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Carla.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11224,57 +14322,79 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "에스테라",
         "animeTitle": "용사 파티에서 쫓겨난 다재무능",
-        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Estella.jpg"
+        "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Estella.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "카타기리",
         "animeTitle": "음옥단지",
-        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Katagiri.jpg"
+        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Katagiri.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "와타나베",
         "animeTitle": "음옥단지",
-        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Watanabe.jpg"
+        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Watanabe.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "이치노세",
         "animeTitle": "음옥단지",
-        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Ichinose.jpg"
+        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Ichinose.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "미즈타니",
         "animeTitle": "음옥단지",
-        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Mizutani.jpg"
+        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Mizutani.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "사나모리",
         "animeTitle": "음옥단지",
-        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Sanamori.jpg"
+        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Sanamori.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "칸자키",
         "animeTitle": "음옥단지",
-        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Kanzaki.jpg"
+        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Kanzaki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "시키죠",
         "animeTitle": "음옥단지",
-        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Shikijou.jpg"
+        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Shikijou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "고다",
         "animeTitle": "음옥단지",
-        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Gouda.jpg"
+        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Gouda.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "사카쿠라",
         "animeTitle": "음옥단지",
-        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Sakakura.jpg"
+        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Sakakura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "이카야마",
         "animeTitle": "음옥단지",
-        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Ikayama.jpg"
+        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Ikayama.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -11286,7 +14406,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "티아로즈",
         "animeTitle": "악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다",
-        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Tiararose_Lapis_Clementille.jpg"
+        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Tiararose_Lapis_Clementille.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11298,7 +14420,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "タルモ",
         "animeTitle": "악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다",
-        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Tarmo.jpg"
+        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Tarmo.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11310,7 +14434,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "필리네 산피스트",
         "animeTitle": "악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다",
-        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Philine_Sunfist.jpg"
+        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Philine_Sunfist.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11322,12 +14448,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "엘리엇",
         "animeTitle": "악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다",
-        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Elliott.jpg"
+        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Elliott.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "프랑",
         "animeTitle": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
-        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Fran.jpg"
+        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Fran.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -11339,7 +14469,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "플루아네",
         "animeTitle": "악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다",
-        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Fleuriane.jpg"
+        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Fleuriane.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11351,12 +14483,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "슈나우스 라피스 클라멘티르",
         "animeTitle": "악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다",
-        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Schnauss_Lapis_Clementille.jpg"
+        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Schnauss_Lapis_Clementille.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "안쇼",
         "animeTitle": "신의 정원이 딸린 쿠스노키 저택",
-        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Anshou.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Anshou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -11368,7 +14504,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "ソティリス・マリンフォレスト",
         "animeTitle": "악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다",
-        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Sotiris_Marineforest.jpg"
+        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Sotiris_Marineforest.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11380,7 +14518,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "일티나 라피스 클라멘티르",
         "animeTitle": "악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다",
-        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Iltiana_Lapis_Clementille.jpg"
+        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Iltiana_Lapis_Clementille.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11392,7 +14532,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아이실라 펄랜드",
         "animeTitle": "악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다",
-        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Icilla_Pearllant.jpg"
+        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Icilla_Pearllant.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11404,7 +14546,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "ラヴィーナ・マリンフォレスト",
         "animeTitle": "악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다",
-        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Lavinia_Marineforest.jpg"
+        "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Lavinia_Marineforest.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11416,7 +14560,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "타쿠미 아사",
         "animeTitle": "위국일기",
-        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Asa_Takumi.jpg"
+        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Asa_Takumi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11428,7 +14574,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "다이고 나나",
         "animeTitle": "위국일기",
-        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Nana_Daigo.jpg"
+        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Nana_Daigo.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11440,7 +14588,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "토노 카즈나리",
         "animeTitle": "위국일기",
-        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Kazunari_Touno.jpg"
+        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Kazunari_Touno.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11452,7 +14602,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "楢美知子",
         "animeTitle": "위국일기",
-        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Michiko_Nara.jpg"
+        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Michiko_Nara.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11464,7 +14616,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "田汲はじめ",
         "animeTitle": "위국일기",
-        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Hajime_Takumi.jpg"
+        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Hajime_Takumi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11476,7 +14630,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "高代京子",
         "animeTitle": "위국일기",
-        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Kyouko_Koudai.jpg"
+        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Kyouko_Koudai.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11488,22 +14644,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "코토코",
         "animeTitle": "위국일기",
-        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Kotoko.jpg"
+        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Kotoko.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "유파",
         "animeTitle": "공주 기사는 야만족의 신부",
-        "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Yufa.jpg"
+        "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Yufa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "후지미야 시호코",
         "animeTitle": "옆집 천사님 때문에 어느샌가 인간적으로 타락한 사연 2",
-        "img": "image/charimg/2026/Q2/Otonari_no_Tenshi-sama_ni_Itsunomanika_Dame_Ningen_ni_Sareteita_Ken_2nd_Season/Shihoko_Fujimiya.jpg"
+        "img": "image/charimg/2026/Q2/Otonari_no_Tenshi-sama_ni_Itsunomanika_Dame_Ningen_ni_Sareteita_Ken_2nd_Season/Shihoko_Fujimiya.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "마나베 히비키",
         "animeTitle": "최강의 직업은 용사도 현자도 아닌 감정사(임시)인 것 같은데요",
-        "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Hibiki_Manabe.jpg"
+        "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Hibiki_Manabe.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -11515,7 +14679,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "もつ",
         "animeTitle": "위국일기",
-        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Motsu.jpg"
+        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Motsu.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11527,7 +14693,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "えみりの父",
         "animeTitle": "위국일기",
-        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Emiri_no_Chichi.jpg"
+        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Emiri_no_Chichi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11539,12 +14707,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "모리모토 치요",
         "animeTitle": "위국일기",
-        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Chiyo_Morimoto.jpg"
+        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Chiyo_Morimoto.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "마미야",
         "animeTitle": "북두의 권 -FIST OF THE NORTH STAR-",
-        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Mamiya.jpg"
+        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Mamiya.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -11556,7 +14728,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "칸다 유우미",
         "animeTitle": "위국일기",
-        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Yumi_Kanda.jpg"
+        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Yumi_Kanda.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11568,7 +14742,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "소네 아스카",
         "animeTitle": "위국일기",
-        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Asuka_Sone.jpg"
+        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Asuka_Sone.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11580,7 +14756,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "요시무라",
         "animeTitle": "위국일기",
-        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Yoshimura.jpg"
+        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Yoshimura.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11592,12 +14770,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "篤彦",
         "animeTitle": "위국일기",
-        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Tokuhiko.jpg"
+        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Tokuhiko.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "츠노다 코스케",
         "animeTitle": "라이어 게임",
-        "img": "image/charimg/2026/Q2/LIAR_GAME/Kosuke_Tsunoda.jpg"
+        "img": "image/charimg/2026/Q2/LIAR_GAME/Kosuke_Tsunoda.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -11609,7 +14791,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "服部",
         "animeTitle": "위국일기",
-        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Hattori.jpg"
+        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Hattori.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11621,7 +14805,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "森",
         "animeTitle": "위국일기",
-        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Mori.jpg"
+        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Mori.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11633,7 +14819,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "あやか",
         "animeTitle": "위국일기",
-        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Ayaka.jpg"
+        "img": "image/charimg/2026/Q1/Ikoku_Nikki/Ayaka.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11645,12 +14833,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "토라지로",
         "animeTitle": "화식조 우슈보로토비구미",
-        "img": "image/charimg/2026/Q1/Hikuidori/Torajirou.jpg"
+        "img": "image/charimg/2026/Q1/Hikuidori/Torajirou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "아이카와",
         "animeTitle": "도로헤도로 시즌 2",
-        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Shou.jpg"
+        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Shou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -11662,7 +14854,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "렌지",
         "animeTitle": "화식조 우슈보로토비구미",
-        "img": "image/charimg/2026/Q1/Hikuidori/Renji.jpg"
+        "img": "image/charimg/2026/Q1/Hikuidori/Renji.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11674,12 +14868,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "킨고로",
         "animeTitle": "화식조 우슈보로토비구미",
-        "img": "image/charimg/2026/Q1/Hikuidori/Kingorou.jpg"
+        "img": "image/charimg/2026/Q1/Hikuidori/Kingorou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "발하스",
         "animeTitle": "공주 기사는 야만족의 신부",
-        "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Balhas.jpg"
+        "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Balhas.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -11691,7 +14889,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "오나츠",
         "animeTitle": "화식조 우슈보로토비구미",
-        "img": "image/charimg/2026/Q1/Hikuidori/Onatsu.jpg"
+        "img": "image/charimg/2026/Q1/Hikuidori/Onatsu.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11703,12 +14903,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "토리고에 아키요",
         "animeTitle": "화식조 우슈보로토비구미",
-        "img": "image/charimg/2026/Q1/Hikuidori/Akiyo.jpg"
+        "img": "image/charimg/2026/Q1/Hikuidori/Akiyo.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "니노마에 고젠",
         "animeTitle": "요자쿠라 일가의 대작전 제2기",
-        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Ninomae_Yozakura.jpg"
+        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Ninomae_Yozakura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -11720,7 +14924,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "다테가세키 모리에몬",
         "animeTitle": "화식조 우슈보로토비구미",
-        "img": "image/charimg/2026/Q1/Hikuidori/Moriemon_Dategasaki.jpg"
+        "img": "image/charimg/2026/Q1/Hikuidori/Moriemon_Dategasaki.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11732,12 +14938,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "신죠 로쿠에몬",
         "animeTitle": "화식조 우슈보로토비구미",
-        "img": "image/charimg/2026/Q1/Hikuidori/Rokuemon_Houjou.jpg"
+        "img": "image/charimg/2026/Q1/Hikuidori/Rokuemon_Houjou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "미야모토 무사시",
         "animeTitle": "바키도: 무적의 검사 편",
-        "img": "image/charimg/2026/Q1/BAKI-DOU/Musashi_Miyamoto.jpg"
+        "img": "image/charimg/2026/Q1/BAKI-DOU/Musashi_Miyamoto.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11749,7 +14959,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "마츠나가 미유키",
         "animeTitle": "화식조 우슈보로토비구미",
-        "img": "image/charimg/2026/Q1/Hikuidori/Miyuki.jpg"
+        "img": "image/charimg/2026/Q1/Hikuidori/Miyuki.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11761,22 +14973,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "미하엘 베켄바우어",
         "animeTitle": "MF고스트 3rd Season",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Michael_Beckenbauer.jpg"
+        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Michael_Beckenbauer.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "시디우스",
         "animeTitle": "공주 기사는 야만족의 신부",
-        "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Sidius.jpg"
+        "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Sidius.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "이즈모 카이",
         "animeTitle": "요자쿠라 일가의 대작전 제2기",
-        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Kai_Izumo.jpg"
+        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Kai_Izumo.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "사나다 슌페이",
         "animeTitle": "다이아몬드 에이스 actII -Second Season-",
-        "img": "image/charimg/2026/Q2/Diamond_no_Ace_act_II_Second_Season/Shunpei_Sanada.jpg"
+        "img": "image/charimg/2026/Q2/Diamond_no_Ace_act_II_Second_Season/Shunpei_Sanada.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -11788,12 +15008,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "사와타리 코우키",
         "animeTitle": "MF고스트 3rd Season",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Kouki_Sawatari.jpg"
+        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Kouki_Sawatari.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "사와무라 에이준",
         "animeTitle": "다이아몬드 에이스 actII -Second Season-",
-        "img": "image/charimg/2026/Q2/Diamond_no_Ace_act_II_Second_Season/Eijun_Sawamura.jpg"
+        "img": "image/charimg/2026/Q2/Diamond_no_Ace_act_II_Second_Season/Eijun_Sawamura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -11805,7 +15029,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "타나카 요우지",
         "animeTitle": "MF고스트 3rd Season",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Youji_Tanaka.jpg"
+        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Youji_Tanaka.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11817,7 +15043,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "죠유 후미히로",
         "animeTitle": "MF고스트 3rd Season",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Hiroshi_Fumihiro.jpg"
+        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Hiroshi_Fumihiro.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11829,12 +15057,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "오쿠야마 히로야",
         "animeTitle": "MF고스트 3rd Season",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Hiroya_Okuyama.jpg"
+        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Hiroya_Okuyama.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "M 노스트라다무스",
         "animeTitle": "리인카네이션의 꽃잎",
-        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Nostradamus.jpg"
+        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Nostradamus.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -11846,22 +15078,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "켄지",
         "animeTitle": "MF고스트 3rd Season",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Kenji.jpg"
+        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Kenji.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "콘도 이사미",
         "animeTitle": "종말의 발키리 Ⅲ",
-        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Isami_Kondou.jpg"
+        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Isami_Kondou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "쟈기",
         "animeTitle": "북두의 권 -FIST OF THE NORTH STAR-",
-        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Jagi.jpg"
+        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Jagi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "카이만",
         "animeTitle": "도로헤도로 시즌 2",
-        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Kaiman.jpg"
+        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Kaiman.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -11873,12 +15113,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "사토 마미",
         "animeTitle": "MF고스트 3rd Season",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Mami_Satou.jpg"
+        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Mami_Satou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "유키 세츠나",
         "animeTitle": "Love Live! Nijigasaki Gakuen School Idol Doukoukai: Kanketsu-hen 2",
-        "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Setsuna_Yuki.jpg"
+        "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Setsuna_Yuki.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -11890,7 +15134,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "야시오 카케루",
         "animeTitle": "MF고스트 3rd Season",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Kakeru_Yashio.jpg"
+        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Kakeru_Yashio.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -11902,32 +15148,44 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "타미야 간테츠사이",
         "animeTitle": "지옥락 2기",
-        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Gantetsusai_Tamiya.jpg"
+        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Gantetsusai_Tamiya.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "드라임",
         "animeTitle": "이세계 유유자적 농가 2",
-        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Doraim.jpg"
+        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Doraim.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "코고리 카오루",
         "animeTitle": "허당 선도부원과 스커트 길이가 부적절한 여고생의 이야기",
-        "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Kaoru_Kogori.jpg"
+        "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Kaoru_Kogori.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "이나다 테츠",
         "animeTitle": "놓친 물고기는 컸지만 잡은 물고기가 너무 컸던 건",
-        "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Mimi_Chichi.jpg"
+        "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Mimi_Chichi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "폭스",
         "animeTitle": "북두의 권 -FIST OF THE NORTH STAR-",
-        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Fox.jpg"
+        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Fox.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "탄바",
         "animeTitle": "도로헤도로 시즌 2",
-        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Tanba.jpg"
+        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Tanba.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -11939,37 +15197,51 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "메이",
         "animeTitle": "지옥락 2기",
-        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Mei.jpg"
+        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Mei.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "이사야마 마미",
         "animeTitle": "초(超) 가구야 공주!",
-        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Mami_Isayama.jpg"
+        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Mami_Isayama.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "사쿠라다이몬 키쿠카",
         "animeTitle": "허당 선도부원과 스커트 길이가 부적절한 여고생의 이야기",
-        "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Kikuka_Sakuradaimon.jpg"
+        "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Kikuka_Sakuradaimon.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "루이 아르네브",
         "animeTitle": "Re:제로부터 시작하는 이세계 생활 4기",
-        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Rui_Arneb.jpg"
+        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Rui_Arneb.jpg",
+        "quarter": "3분기",
+        "year": 2026
       },
       {
         "charName": "아마미야 사유",
         "animeTitle": "오타쿠에게 상냥한 갸루는 없다",
-        "img": "image/charimg/2026/Q2/Otaku_ni_Yasashii_Gal_wa_Inai!/Sayu_Amamiya.jpg"
+        "img": "image/charimg/2026/Q2/Otaku_ni_Yasashii_Gal_wa_Inai!/Sayu_Amamiya.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "키르기스 로랑",
         "animeTitle": "신의 물방울",
-        "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Loulan.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Loulan.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "타카키요 쇼타로",
         "animeTitle": "카난 님은 초보 악마",
-        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Shoutarou_Takakiyo.jpg"
+        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Shoutarou_Takakiyo.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -11981,52 +15253,72 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "리엔",
         "animeTitle": "지옥락 2기",
-        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Rien.jpg"
+        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Rien.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "란",
         "animeTitle": "지옥락 2기",
-        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Ran.jpg"
+        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Ran.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "타오화",
         "animeTitle": "지옥락 2기",
-        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Tao_Fa.jpg"
+        "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Tao_Fa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "이치조인 타케",
         "animeTitle": "프리즘 윤무곡",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Take_Ichijoin.jpg"
+        "img": "image/charimg/2026/Q1/Prism_Rondo/Take_Ichijoin.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "야마토 나데시코",
         "animeTitle": "허당 선도부원과 스커트 길이가 부적절한 여고생의 이야기",
-        "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Nadeshiko_Yamato.jpg"
+        "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Nadeshiko_Yamato.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "마에하라 마사키",
         "animeTitle": "반에서 두 번째로 귀여운 여자애와 친구가 되었다",
-        "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Masaki_Maehara.jpg"
+        "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Masaki_Maehara.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "캐롤라인 클락",
         "animeTitle": "두 남자와 룸쉐어 중입니다",
-        "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Carol_Usada.jpg"
+        "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Carol_Usada.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "루비니 왕비",
         "animeTitle": "놓친 물고기는 컸지만 잡은 물고기가 너무 컸던 건",
-        "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Rubini_Ouhi.jpg"
+        "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Rubini_Ouhi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "위스텔레시아 드 일드렌",
         "animeTitle": "공주 기사는 야만족의 신부",
-        "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Wysteresia.jpg"
+        "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Wysteresia.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "키류 료코",
         "animeTitle": "신의 물방울",
-        "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Ryouko_Kiryuo.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Ryouko_Kiryuo.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -12038,17 +15330,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "세나 아지사이",
         "animeTitle": "내가 연인이 될 수 있을 리 없잖아, 무리무리! (※무리가 아니었다?!) ~넥스트 샤인!~",
-        "img": "image/charimg/2026/Q1/Watashi_ga_Koibito_ni_Nareru_Wake_Nai_jan,_Muri_Muri!_(※Muri_ja_Nakatta!)_Next_Shine!/Ajisai_Sena.jpg"
+        "img": "image/charimg/2026/Q1/Watashi_ga_Koibito_ni_Nareru_Wake_Nai_jan,_Muri_Muri!_(※Muri_ja_Nakatta!)_Next_Shine!/Ajisai_Sena.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "사카모토 하나",
         "animeTitle": "힘내라 나카무라 군",
-        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Hana_Sakamoto.jpg"
+        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Hana_Sakamoto.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아자미",
         "animeTitle": "황천의 츠가이",
-        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Azami.jpg"
+        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Azami.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -12060,7 +15358,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아리스가와 쿄헤이",
         "animeTitle": "아리스가와 렌은 사실 여자라구!!",
-        "img": "image/charimg/2026/Q1/Arisugawa_Ren_tte_Honto_wa_Onna_Nanda_yo_ne/Kyouhei_Arisugawa.jpg"
+        "img": "image/charimg/2026/Q1/Arisugawa_Ren_tte_Honto_wa_Onna_Nanda_yo_ne/Kyouhei_Arisugawa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -12072,7 +15372,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아리스가와 렌",
         "animeTitle": "아리스가와 렌은 사실 여자라구!!",
-        "img": "image/charimg/2026/Q1/Arisugawa_Ren_tte_Honto_wa_Onna_Nanda_yo_ne/Ren_Arisugawa.jpg"
+        "img": "image/charimg/2026/Q1/Arisugawa_Ren_tte_Honto_wa_Onna_Nanda_yo_ne/Ren_Arisugawa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -12084,12 +15386,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "요시오카 사츠키",
         "animeTitle": "아리스가와 렌은 사실 여자라구!!",
-        "img": "image/charimg/2026/Q1/Arisugawa_Ren_tte_Honto_wa_Onna_Nanda_yo_ne/Satsuki_Yoshioka.jpg"
+        "img": "image/charimg/2026/Q1/Arisugawa_Ren_tte_Honto_wa_Onna_Nanda_yo_ne/Satsuki_Yoshioka.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "타치바나 카오루",
         "animeTitle": "큰 여자는 좋아하세요",
-        "img": "image/charimg/2026/Q2/Ookii_Onnanoko_wa_Suki_desu_ka/Kaoru_Tachibana.jpg"
+        "img": "image/charimg/2026/Q2/Ookii_Onnanoko_wa_Suki_desu_ka/Kaoru_Tachibana.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -12101,12 +15407,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "히이라기 모모카",
         "animeTitle": "아리스가와 렌은 사실 여자라구!!",
-        "img": "image/charimg/2026/Q1/Arisugawa_Ren_tte_Honto_wa_Onna_Nanda_yo_ne/Momoka_Hiiragi.jpg"
+        "img": "image/charimg/2026/Q1/Arisugawa_Ren_tte_Honto_wa_Onna_Nanda_yo_ne/Momoka_Hiiragi.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "유리아 맥캔지",
         "animeTitle": "큰 여자는 좋아하세요",
-        "img": "image/charimg/2026/Q2/Ookii_Onnanoko_wa_Suki_desu_ka/Julia_Mackenzie.jpg"
+        "img": "image/charimg/2026/Q2/Ookii_Onnanoko_wa_Suki_desu_ka/Julia_Mackenzie.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -12118,7 +15428,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "미야시타 하루나",
         "animeTitle": "아리스가와 렌은 사실 여자라구!!",
-        "img": "image/charimg/2026/Q1/Arisugawa_Ren_tte_Honto_wa_Onna_Nanda_yo_ne/Haruna_Miyashita.jpg"
+        "img": "image/charimg/2026/Q1/Arisugawa_Ren_tte_Honto_wa_Onna_Nanda_yo_ne/Haruna_Miyashita.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -12130,7 +15442,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "스키사키 히나",
         "animeTitle": "아리스가와 렌은 사실 여자라구!!",
-        "img": "image/charimg/2026/Q1/Arisugawa_Ren_tte_Honto_wa_Onna_Nanda_yo_ne/Hina_Sugisaki.jpg"
+        "img": "image/charimg/2026/Q1/Arisugawa_Ren_tte_Honto_wa_Onna_Nanda_yo_ne/Hina_Sugisaki.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -12142,7 +15456,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "타카무라 아이카",
         "animeTitle": "이치고 아이카 ~잡하고 생기발랄한 동생과 못말리는 오빠~",
-        "img": "image/charimg/2026/Q1/Ichigo_Aika_Zatsu_de_Namaiki_na_Imouto_to_Warikirenai_Ani/Aika_Takamura.jpg"
+        "img": "image/charimg/2026/Q1/Ichigo_Aika_Zatsu_de_Namaiki_na_Imouto_to_Warikirenai_Ani/Aika_Takamura.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -12154,7 +15470,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "타카무라 코타",
         "animeTitle": "이치고 아이카 ~잡하고 생기발랄한 동생과 못말리는 오빠~",
-        "img": "image/charimg/2026/Q1/Ichigo_Aika_Zatsu_de_Namaiki_na_Imouto_to_Warikirenai_Ani/Kouta_Takamura.jpg"
+        "img": "image/charimg/2026/Q1/Ichigo_Aika_Zatsu_de_Namaiki_na_Imouto_to_Warikirenai_Ani/Kouta_Takamura.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -12166,7 +15484,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "타카무라 요시유키",
         "animeTitle": "이치고 아이카 ~잡하고 생기발랄한 동생과 못말리는 오빠~",
-        "img": "image/charimg/2026/Q1/Ichigo_Aika_Zatsu_de_Namaiki_na_Imouto_to_Warikirenai_Ani/Yoshiyuki_Takamura.jpg"
+        "img": "image/charimg/2026/Q1/Ichigo_Aika_Zatsu_de_Namaiki_na_Imouto_to_Warikirenai_Ani/Yoshiyuki_Takamura.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -12178,7 +15498,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "오르시스",
         "animeTitle": "최애 의붓형을 사랑하기 위해, 오래 살겠습니다!",
-        "img": "image/charimg/2026/Q1/Saioshi_no_Gikei_Mederu_Tame,_Nagaikishimasu!/Orsis.jpg"
+        "img": "image/charimg/2026/Q1/Saioshi_no_Gikei_Mederu_Tame,_Nagaikishimasu!/Orsis.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -12190,7 +15512,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "하르스",
         "animeTitle": "최애 의붓형을 사랑하기 위해, 오래 살겠습니다!",
-        "img": "image/charimg/2026/Q1/Saioshi_no_Gikei_Mederu_Tame,_Nagaikishimasu!/Hals.jpg"
+        "img": "image/charimg/2026/Q1/Saioshi_no_Gikei_Mederu_Tame,_Nagaikishimasu!/Hals.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -12202,7 +15526,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "플로로",
         "animeTitle": "최애 의붓형을 사랑하기 위해, 오래 살겠습니다!",
-        "img": "image/charimg/2026/Q1/Saioshi_no_Gikei_Mederu_Tame,_Nagaikishimasu!/Floro.jpg"
+        "img": "image/charimg/2026/Q1/Saioshi_no_Gikei_Mederu_Tame,_Nagaikishimasu!/Floro.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -12214,7 +15540,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "나데시코",
         "animeTitle": "안드로이드는 경험인 수에 들어가나요??",
-        "img": "image/charimg/2026/Q1/Android_wa_Keiken_Ninzuu_ni_Hairimasu_ka/Nadeshiko.jpg"
+        "img": "image/charimg/2026/Q1/Android_wa_Keiken_Ninzuu_ni_Hairimasu_ka/Nadeshiko.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -12226,7 +15554,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "이토 씨",
         "animeTitle": "안드로이드는 경험인 수에 들어가나요??",
-        "img": "image/charimg/2026/Q1/Android_wa_Keiken_Ninzuu_ni_Hairimasu_ka/Itou-san.jpg"
+        "img": "image/charimg/2026/Q1/Android_wa_Keiken_Ninzuu_ni_Hairimasu_ka/Itou-san.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -12238,7 +15568,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "사쿠나히메",
         "animeTitle": "천수의 사쿠나히메 코코로와 농사 일지",
-        "img": "image/charimg/2026/Q1/Tensui_no_Sakuna-hime_Kokorowa_Inasaku_Nisshi/Sakuna-hime.jpg"
+        "img": "image/charimg/2026/Q1/Tensui_no_Sakuna-hime_Kokorowa_Inasaku_Nisshi/Sakuna-hime.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -12250,12 +15582,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "코코로와히메",
         "animeTitle": "천수의 사쿠나히메 코코로와 농사 일지",
-        "img": "image/charimg/2026/Q1/Tensui_no_Sakuna-hime_Kokorowa_Inasaku_Nisshi/Kokorowa-hime.jpg"
+        "img": "image/charimg/2026/Q1/Tensui_no_Sakuna-hime_Kokorowa_Inasaku_Nisshi/Kokorowa-hime.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "유우기리",
         "animeTitle": "Zombie Land Saga: Yume Ginga Paradise",
-        "img": "image/charimg/2026/Q1/Zombie_Land_Saga_Yume_Ginga_Paradise/Yuugiri.jpg"
+        "img": "image/charimg/2026/Q1/Zombie_Land_Saga_Yume_Ginga_Paradise/Yuugiri.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12267,7 +15603,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "그레이스 클라크",
         "animeTitle": "프리즘 윤무곡",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Grace.jpg"
+        "img": "image/charimg/2026/Q1/Prism_Rondo/Grace.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -12279,7 +15617,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "호리애나 하비",
         "animeTitle": "프리즘 윤무곡",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Orianna.jpg"
+        "img": "image/charimg/2026/Q1/Prism_Rondo/Orianna.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -12291,7 +15631,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "샘",
         "animeTitle": "프리즘 윤무곡",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Sam.jpg"
+        "img": "image/charimg/2026/Q1/Prism_Rondo/Sam.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -12303,12 +15645,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "스테이시 라이트",
         "animeTitle": "프리즘 윤무곡",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Stacy.jpg"
+        "img": "image/charimg/2026/Q1/Prism_Rondo/Stacy.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "하이바라",
         "animeTitle": "음옥단지",
-        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Haibara.jpg"
+        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Haibara.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -12320,7 +15666,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "셜리 테일러",
         "animeTitle": "프리즘 윤무곡",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Shirley.jpg"
+        "img": "image/charimg/2026/Q1/Prism_Rondo/Shirley.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -12332,7 +15680,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "사라 스미스",
         "animeTitle": "프리즘 윤무곡",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Sara.jpg"
+        "img": "image/charimg/2026/Q1/Prism_Rondo/Sara.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -12344,7 +15694,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아서 카터렛",
         "animeTitle": "프리즘 윤무곡",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Arthur.jpg"
+        "img": "image/charimg/2026/Q1/Prism_Rondo/Arthur.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -12356,7 +15708,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "보비 로버츠",
         "animeTitle": "프리즘 윤무곡",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Bobby.jpg"
+        "img": "image/charimg/2026/Q1/Prism_Rondo/Bobby.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -12368,7 +15722,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "데이비드",
         "animeTitle": "프리즘 윤무곡",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/David.jpg"
+        "img": "image/charimg/2026/Q1/Prism_Rondo/David.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -12380,7 +15736,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "에디",
         "animeTitle": "프리즘 윤무곡",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Eddie.jpg"
+        "img": "image/charimg/2026/Q1/Prism_Rondo/Eddie.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -12392,7 +15750,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "이누DOGE",
         "animeTitle": "초(超) 가구야 공주!",
-        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Inudoge.jpg"
+        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Inudoge.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -12404,17 +15764,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "미카도 아키라",
         "animeTitle": "초(超) 가구야 공주!",
-        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Akira_Mikado.jpg"
+        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Akira_Mikado.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "요우테츠",
         "animeTitle": "고스트 콘서트: missing Songs",
-        "img": "image/charimg/2026/Q2/Ghost_Concert_missing_Songs/Youtetsu.jpg"
+        "img": "image/charimg/2026/Q2/Ghost_Concert_missing_Songs/Youtetsu.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "扇寺西耶",
         "animeTitle": "리인카네이션의 꽃잎",
-        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Seiya_Senji.jpg"
+        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Seiya_Senji.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -12426,7 +15792,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "키리후다 윈",
         "animeTitle": "듀얼마스터즈 LOST ~망각의 태양~",
-        "img": "image/charimg/2026/Q1/Duel_Masters_LOST_Boukyaku_no_Taiyou/Win_Kirifuda.jpg"
+        "img": "image/charimg/2026/Q1/Duel_Masters_LOST_Boukyaku_no_Taiyou/Win_Kirifuda.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -12438,17 +15806,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "니이카",
         "animeTitle": "듀얼마스터즈 LOST ~망각의 태양~",
-        "img": "image/charimg/2026/Q1/Duel_Masters_LOST_Boukyaku_no_Taiyou/Niika_Katori.jpg"
+        "img": "image/charimg/2026/Q1/Duel_Masters_LOST_Boukyaku_no_Taiyou/Niika_Katori.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "체시",
         "animeTitle": "공주 기사는 야만족의 신부",
-        "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Cersei.jpg"
+        "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Cersei.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "모리타 메이코",
         "animeTitle": "다다미 한 장짜리 방 만끽 생활",
-        "img": "image/charimg/2026/Q2/Ichijouma_Mankitsu-gurashi!/Meiko_Morita.jpg"
+        "img": "image/charimg/2026/Q2/Ichijouma_Mankitsu-gurashi!/Meiko_Morita.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -12460,7 +15834,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "코쿠죠 쿄시로",
         "animeTitle": "듀얼마스터즈 LOST ~망각의 태양~",
-        "img": "image/charimg/2026/Q1/Duel_Masters_LOST_Boukyaku_no_Taiyou/Kyoushirou_Kokujou.jpg"
+        "img": "image/charimg/2026/Q1/Duel_Masters_LOST_Boukyaku_no_Taiyou/Kyoushirou_Kokujou.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -12472,7 +15848,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "시부카와 고키",
         "animeTitle": "바키도: 무적의 검사 편",
-        "img": "image/charimg/2026/Q1/BAKI-DOU/Gouki_Shibukawa.jpg"
+        "img": "image/charimg/2026/Q1/BAKI-DOU/Gouki_Shibukawa.jpg",
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -12484,12 +15862,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "포코로코",
         "animeTitle": "스틸 볼 런: 죠죠의 기묘한 모험",
-        "img": "image/charimg/2026/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Pocoloco.jpg"
+        "img": "image/charimg/2026/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Pocoloco.jpg",
+        "quarter": "1분기",
+        "year": 2026
       },
       {
         "charName": "사쿠마 이후",
         "animeTitle": "왼손잡이 에렌",
-        "img": "image/charimg/2026/Q2/Hidarikiki_no_Eren/Ifuu_Sakuma.jpg"
+        "img": "image/charimg/2026/Q2/Hidarikiki_no_Eren/Ifuu_Sakuma.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -12501,7 +15883,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "메론",
         "animeTitle": "BEASTARS FINAL SEASON Part 2",
-        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Melon.jpg"
+        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Melon.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12513,12 +15897,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "더럼",
         "animeTitle": "BEASTARS FINAL SEASON Part 2",
-        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Durham.jpg"
+        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Durham.jpg",
+        "quarter": "",
+        "year": ""
       },
       {
         "charName": "타오",
         "animeTitle": "BEASTARS FINAL SEASON Part 2",
-        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Tao.jpg"
+        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Tao.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12530,17 +15918,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "미구노",
         "animeTitle": "BEASTARS FINAL SEASON Part 2",
-        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Miguno.jpg"
+        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Miguno.jpg",
+        "quarter": "",
+        "year": ""
       },
       {
         "charName": "하르트무트",
         "animeTitle": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
-        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Hartmut.jpg"
+        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Hartmut.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "레비아탄 레이지",
         "animeTitle": "마계학교 이루마군 4기",
-        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Leviathan_Leiji.jpg"
+        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Leviathan_Leiji.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -12552,7 +15946,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "보스",
         "animeTitle": "BEASTARS FINAL SEASON Part 2",
-        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Voss.jpg"
+        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Voss.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12564,7 +15960,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "에렌",
         "animeTitle": "BEASTARS FINAL SEASON Part 2",
-        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Ellen.jpg"
+        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Ellen.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12576,7 +15974,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아오바",
         "animeTitle": "BEASTARS FINAL SEASON Part 2",
-        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Aoba.jpg"
+        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Aoba.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12588,7 +15988,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "키비",
         "animeTitle": "BEASTARS FINAL SEASON Part 2",
-        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Kibi.jpg"
+        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Kibi.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12600,7 +16002,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "시장",
         "animeTitle": "BEASTARS FINAL SEASON Part 2",
-        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Mayor.jpg"
+        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Mayor.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12612,7 +16016,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "곤",
         "animeTitle": "BEASTARS FINAL SEASON Part 2",
-        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Gon.jpg"
+        "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Gon.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12624,7 +16030,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "스칼렛",
         "animeTitle": "Hateshinaki Scarlet",
-        "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Scarlet.jpg"
+        "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Scarlet.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12636,7 +16044,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "히지리",
         "animeTitle": "Hateshinaki Scarlet",
-        "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Hijiri.jpg"
+        "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Hijiri.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12648,7 +16058,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "클로디어스",
         "animeTitle": "Hateshinaki Scarlet",
-        "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Rosenkrantz.jpg"
+        "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Rosenkrantz.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12660,22 +16072,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "폴로니어스",
         "animeTitle": "Hateshinaki Scarlet",
-        "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Polonius.jpg"
+        "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Polonius.jpg",
+        "quarter": "",
+        "year": ""
       },
       {
         "charName": "류몬 미쓰히데",
         "animeTitle": "일본삼국",
-        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Mitsuhide_Ryuumon.jpg"
+        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Mitsuhide_Ryuumon.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "사사키 코지로",
         "animeTitle": "종말의 발키리 Ⅲ",
-        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Kojirou_Sasaki.jpg"
+        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Kojirou_Sasaki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "보니파티우스",
         "animeTitle": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
-        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Bonifatius.jpg"
+        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Bonifatius.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -12687,7 +16107,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "암렛",
         "animeTitle": "Hateshinaki Scarlet",
-        "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Amlet.jpg"
+        "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Amlet.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12699,7 +16121,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "레어티즈",
         "animeTitle": "Hateshinaki Scarlet",
-        "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Laerte.jpg"
+        "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Laerte.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12711,7 +16135,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "거트루드",
         "animeTitle": "Hateshinaki Scarlet",
-        "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Gertrude.jpg"
+        "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Gertrude.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12723,7 +16149,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "코넬리우스",
         "animeTitle": "Hateshinaki Scarlet",
-        "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Cornelius.jpg"
+        "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Cornelius.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12735,7 +16163,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "소녀",
         "animeTitle": "Hateshinaki Scarlet",
-        "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Shoujo.jpg"
+        "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Shoujo.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12747,7 +16177,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "볼티먼드",
         "animeTitle": "Hateshinaki Scarlet",
-        "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Voltemand.jpg"
+        "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Voltemand.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12759,7 +16191,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "노파",
         "animeTitle": "Hateshinaki Scarlet",
-        "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Rouba.jpg"
+        "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Rouba.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12771,7 +16205,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "길든스턴",
         "animeTitle": "Hateshinaki Scarlet",
-        "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Guildenstern.jpg"
+        "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Guildenstern.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12783,7 +16219,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "이세리 니나",
         "animeTitle": "GIRLS BAND CRY: Seishun Kyousoukyoku",
-        "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Nina_Iseri.jpg"
+        "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Nina_Iseri.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12795,7 +16233,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "카와라기 모모카",
         "animeTitle": "GIRLS BAND CRY: Seishun Kyousoukyoku",
-        "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Momoka_Kawaragi.jpg"
+        "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Momoka_Kawaragi.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12807,7 +16247,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아와 스바루",
         "animeTitle": "GIRLS BAND CRY: Seishun Kyousoukyoku",
-        "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Subaru_Awa.jpg"
+        "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Subaru_Awa.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12819,7 +16261,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "에비즈카 토모",
         "animeTitle": "GIRLS BAND CRY: Seishun Kyousoukyoku",
-        "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Tomo_Ebizuka.jpg"
+        "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Tomo_Ebizuka.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12831,7 +16275,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "루파",
         "animeTitle": "GIRLS BAND CRY: Seishun Kyousoukyoku",
-        "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Rupa.jpg"
+        "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Rupa.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12843,7 +16289,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아이",
         "animeTitle": "GIRLS BAND CRY: Seishun Kyousoukyoku",
-        "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Ai.jpg"
+        "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Ai.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12855,7 +16303,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "린",
         "animeTitle": "GIRLS BAND CRY: Seishun Kyousoukyoku",
-        "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Rin.jpg"
+        "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Rin.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12867,7 +16317,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "쿄코",
         "animeTitle": "GIRLS BAND CRY: Seishun Kyousoukyoku",
-        "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Kyouko.jpg"
+        "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Kyouko.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12879,17 +16331,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "大空あかり",
         "animeTitle": "Aikatsu! x PriPara THE MOVIE -Deai no Kiseki-",
-        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Akari_Oozora.jpg"
+        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Akari_Oozora.jpg",
+        "quarter": "",
+        "year": ""
       },
       {
         "charName": "루루시 루",
         "animeTitle": "이세계 유유자적 농가 2",
-        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Loo.jpg"
+        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Loo.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "호쇼 카가리",
         "animeTitle": "마오",
-        "img": "image/charimg/2026/Q2/MAO/Kagari_Houshou.jpg"
+        "img": "image/charimg/2026/Q2/MAO/Kagari_Houshou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -12901,7 +16359,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "氷上スミレ",
         "animeTitle": "Aikatsu! x PriPara THE MOVIE -Deai no Kiseki-",
-        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Sumire_Hikami.jpg"
+        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Sumire_Hikami.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12913,12 +16373,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "마나카 라라",
         "animeTitle": "Aikatsu! x PriPara THE MOVIE -Deai no Kiseki-",
-        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Laala_Manaka.jpg"
+        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Laala_Manaka.jpg",
+        "quarter": "",
+        "year": ""
       },
       {
         "charName": "이린 실베르츠 자작 영애",
         "animeTitle": "자칭 악역 영애인 약혼자 관찰기록.",
-        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Ilynn_Silbertz.jpg"
+        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Ilynn_Silbertz.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -12930,12 +16394,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "호조 소피",
         "animeTitle": "Aikatsu! x PriPara THE MOVIE -Deai no Kiseki-",
-        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Sophy_Hojo.jpg"
+        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Sophy_Hojo.jpg",
+        "quarter": "",
+        "year": ""
       },
       {
         "charName": "아사카 카린",
         "animeTitle": "Love Live! Nijigasaki Gakuen School Idol Doukoukai: Kanketsu-hen 2",
-        "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Karin_Asaka.jpg"
+        "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Karin_Asaka.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12947,7 +16415,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "쿠레바야시 쥬리",
         "animeTitle": "Aikatsu! x PriPara THE MOVIE -Deai no Kiseki-",
-        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Juri_Kurebayashi.jpg"
+        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Juri_Kurebayashi.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12959,22 +16429,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "쿠로사와 린",
         "animeTitle": "Aikatsu! x PriPara THE MOVIE -Deai no Kiseki-",
-        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Rin_Kurosawa.jpg"
+        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Rin_Kurosawa.jpg",
+        "quarter": "",
+        "year": ""
       },
       {
         "charName": "히로나카 리츠코",
         "animeTitle": "레플리카도, 사랑을 한다",
-        "img": "image/charimg/2026/Q2/Replica_Datte,_Koi_wo_Suru/Ritsuko_Hironaka.jpg"
+        "img": "image/charimg/2026/Q2/Replica_Datte,_Koi_wo_Suru/Ritsuko_Hironaka.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "피도",
         "animeTitle": "또 죽고 말았나요, 탐정님",
-        "img": "image/charimg/2026/Q2/Mata_Korosarete_Shimatta_no_desu_ne,_Tantei-sama/Fido.jpg"
+        "img": "image/charimg/2026/Q2/Mata_Korosarete_Shimatta_no_desu_ne,_Tantei-sama/Fido.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "벨카 제펠린",
         "animeTitle": "또 죽고 말았나요, 탐정님",
-        "img": "image/charimg/2026/Q2/Mata_Korosarete_Shimatta_no_desu_ne,_Tantei-sama/Belka_Zeppelin.jpg"
+        "img": "image/charimg/2026/Q2/Mata_Korosarete_Shimatta_no_desu_ne,_Tantei-sama/Belka_Zeppelin.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -12986,7 +16464,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아마하네 마도카",
         "animeTitle": "Aikatsu! x PriPara THE MOVIE -Deai no Kiseki-",
-        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Madoka_Amahane.jpg"
+        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Madoka_Amahane.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -12998,7 +16478,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "다이치 노노",
         "animeTitle": "Aikatsu! x PriPara THE MOVIE -Deai no Kiseki-",
-        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Nono_Daichi.jpg"
+        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Nono_Daichi.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -13010,7 +16492,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "시라카바 리사",
         "animeTitle": "Aikatsu! x PriPara THE MOVIE -Deai no Kiseki-",
-        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Risa_Shirakaba.jpg"
+        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Risa_Shirakaba.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -13022,7 +16506,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "도지마 니나",
         "animeTitle": "Aikatsu! x PriPara THE MOVIE -Deai no Kiseki-",
-        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Nina_Dojima.jpg"
+        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Nina_Dojima.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -13034,7 +16520,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "토도 시온",
         "animeTitle": "Aikatsu! x PriPara THE MOVIE -Deai no Kiseki-",
-        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Sion_Toudou.jpg"
+        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Sion_Toudou.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -13046,7 +16534,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "도로시 웨스트",
         "animeTitle": "Aikatsu! x PriPara THE MOVIE -Deai no Kiseki-",
-        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Dorothy_West.jpg"
+        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Dorothy_West.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -13058,7 +16548,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "시라타마 미캉",
         "animeTitle": "Aikatsu! x PriPara THE MOVIE -Deai no Kiseki-",
-        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Mikan_Shiratama.jpg"
+        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Mikan_Shiratama.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -13070,17 +16562,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "시쿄인 히비키",
         "animeTitle": "Aikatsu! x PriPara THE MOVIE -Deai no Kiseki-",
-        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Hibiki_Shikyouin.jpg"
+        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Hibiki_Shikyouin.jpg",
+        "quarter": "",
+        "year": ""
       },
       {
         "charName": "이귄",
         "animeTitle": "고깔모자 아틀리에",
-        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Iguin.jpg"
+        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Iguin.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "오페라",
         "animeTitle": "마계학교 이루마군 4기",
-        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Opera.jpg"
+        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Opera.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13092,12 +16590,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "파루루",
         "animeTitle": "Aikatsu! x PriPara THE MOVIE -Deai no Kiseki-",
-        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Falulu.jpg"
+        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Falulu.jpg",
+        "quarter": "",
+        "year": ""
       },
       {
         "charName": "펠트",
         "animeTitle": "Re:제로부터 시작하는 이세계 생활 4기",
-        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Felt.jpg"
+        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Felt.jpg",
+        "quarter": "3분기",
+        "year": 2026
       }
     ]
   },
@@ -13109,7 +16611,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "미도리카제 후와리",
         "animeTitle": "Aikatsu! x PriPara THE MOVIE -Deai no Kiseki-",
-        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Fuwari_Midorikaze.jpg"
+        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Fuwari_Midorikaze.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -13121,7 +16625,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "미츠이시 오리히메",
         "animeTitle": "Aikatsu! x PriPara THE MOVIE -Deai no Kiseki-",
-        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Orihime_Mitsuishi.jpg"
+        "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Orihime_Mitsuishi.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -13133,7 +16639,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "미후네 시오리코",
         "animeTitle": "Love Live! Nijigasaki Gakuen School Idol Doukoukai: Kanketsu-hen 2",
-        "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Shioriko_Mifune.jpg"
+        "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Shioriko_Mifune.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -13145,7 +16653,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "미야시타 아이",
         "animeTitle": "Love Live! Nijigasaki Gakuen School Idol Doukoukai: Kanketsu-hen 2",
-        "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Ai_Miyashita.jpg"
+        "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Ai_Miyashita.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -13157,7 +16667,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "미아 테일러",
         "animeTitle": "Love Live! Nijigasaki Gakuen School Idol Doukoukai: Kanketsu-hen 2",
-        "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Mia_Taylor.jpg"
+        "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Mia_Taylor.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -13169,7 +16681,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "우에하라 아유무",
         "animeTitle": "Love Live! Nijigasaki Gakuen School Idol Doukoukai: Kanketsu-hen 2",
-        "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Ayumu_Uehara.jpg"
+        "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Ayumu_Uehara.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -13181,7 +16695,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "쇼우 란쥬",
         "animeTitle": "Love Live! Nijigasaki Gakuen School Idol Doukoukai: Kanketsu-hen 2",
-        "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Lanzhu_Zhong.jpg"
+        "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Lanzhu_Zhong.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -13193,7 +16709,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "타카사키 유우",
         "animeTitle": "Love Live! Nijigasaki Gakuen School Idol Doukoukai: Kanketsu-hen 2",
-        "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Yuu_Takasaki.jpg"
+        "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Yuu_Takasaki.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -13205,7 +16723,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "엠마 베르데",
         "animeTitle": "Love Live! Nijigasaki Gakuen School Idol Doukoukai: Kanketsu-hen 2",
-        "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Emma_Verde.jpg"
+        "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Emma_Verde.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -13217,27 +16737,37 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "미나모토 사쿠라",
         "animeTitle": "Zombie Land Saga: Yume Ginga Paradise",
-        "img": "image/charimg/2026/Q1/Zombie_Land_Saga_Yume_Ginga_Paradise/Sakura_Minamoto.jpg"
+        "img": "image/charimg/2026/Q1/Zombie_Land_Saga_Yume_Ginga_Paradise/Sakura_Minamoto.jpg",
+        "quarter": "",
+        "year": ""
       },
       {
         "charName": "모에기 나츠키",
         "animeTitle": "사랑해 게임을 끝내고 싶어",
-        "img": "image/charimg/2026/Q2/Aishiteru_Game_wo_Owarasetai/Natsuki_Moegi.jpg"
+        "img": "image/charimg/2026/Q2/Aishiteru_Game_wo_Owarasetai/Natsuki_Moegi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "랏미스",
         "animeTitle": "자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season",
-        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Lammis.jpg"
+        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Lammis.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "요자쿠라 무츠미",
         "animeTitle": "요자쿠라 일가의 대작전 제2기",
-        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Mutsumi_Yozakura.jpg"
+        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Mutsumi_Yozakura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "스피카 버고",
         "animeTitle": "검은 고양이와 마녀의 교실",
-        "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Spica_Virgo.jpg"
+        "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Spica_Virgo.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13249,7 +16779,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "니카이도 사키",
         "animeTitle": "Zombie Land Saga: Yume Ginga Paradise",
-        "img": "image/charimg/2026/Q1/Zombie_Land_Saga_Yume_Ginga_Paradise/Saki_Nikaidou.jpg"
+        "img": "image/charimg/2026/Q1/Zombie_Land_Saga_Yume_Ginga_Paradise/Saki_Nikaidou.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -13261,7 +16793,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "미즈노 아이",
         "animeTitle": "Zombie Land Saga: Yume Ginga Paradise",
-        "img": "image/charimg/2026/Q1/Zombie_Land_Saga_Yume_Ginga_Paradise/Ai_Mizuno.jpg"
+        "img": "image/charimg/2026/Q1/Zombie_Land_Saga_Yume_Ginga_Paradise/Ai_Mizuno.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -13273,12 +16807,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "야마다 타에",
         "animeTitle": "Zombie Land Saga: Yume Ginga Paradise",
-        "img": "image/charimg/2026/Q1/Zombie_Land_Saga_Yume_Ginga_Paradise/Tae_Yamada.jpg"
+        "img": "image/charimg/2026/Q1/Zombie_Land_Saga_Yume_Ginga_Paradise/Tae_Yamada.jpg",
+        "quarter": "",
+        "year": ""
       },
       {
         "charName": "아라이라",
         "animeTitle": "고깔모자 아틀리에",
-        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Alaira.jpg"
+        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Alaira.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13290,7 +16828,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "나오이 레이토",
         "animeTitle": "Kusunoki no Bannin",
-        "img": "image/charimg/2026/Q1/Kusunoki_no_Bannin/Reito_Naoi.jpg"
+        "img": "image/charimg/2026/Q1/Kusunoki_no_Bannin/Reito_Naoi.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -13302,7 +16842,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "야나기사와 치후네",
         "animeTitle": "Kusunoki no Bannin",
-        "img": "image/charimg/2026/Q1/Kusunoki_no_Bannin/Chifune_Yanagisawa.jpg"
+        "img": "image/charimg/2026/Q1/Kusunoki_no_Bannin/Chifune_Yanagisawa.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -13314,7 +16856,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "사지 유미",
         "animeTitle": "Kusunoki no Bannin",
-        "img": "image/charimg/2026/Q1/Kusunoki_no_Bannin/Yumi_Saji.jpg"
+        "img": "image/charimg/2026/Q1/Kusunoki_no_Bannin/Yumi_Saji.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -13326,7 +16870,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "오바 소키",
         "animeTitle": "Kusunoki no Bannin",
-        "img": "image/charimg/2026/Q1/Kusunoki_no_Bannin/Souki_Ouba.jpg"
+        "img": "image/charimg/2026/Q1/Kusunoki_no_Bannin/Souki_Ouba.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -13338,7 +16884,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "佐治寿明",
         "animeTitle": "Kusunoki no Bannin",
-        "img": "image/charimg/2026/Q1/Kusunoki_no_Bannin/Toshiaki_Saji.jpg"
+        "img": "image/charimg/2026/Q1/Kusunoki_no_Bannin/Toshiaki_Saji.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -13350,7 +16898,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "야나기사와 카츠시게",
         "animeTitle": "Kusunoki no Bannin",
-        "img": "image/charimg/2026/Q1/Kusunoki_no_Bannin/Katsushige_Yanagisawa.jpg"
+        "img": "image/charimg/2026/Q1/Kusunoki_no_Bannin/Katsushige_Yanagisawa.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -13362,7 +16912,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "오바 토이치로",
         "animeTitle": "Kusunoki no Bannin",
-        "img": "image/charimg/2026/Q1/Kusunoki_no_Bannin/Touichirou_Ooba.jpg"
+        "img": "image/charimg/2026/Q1/Kusunoki_no_Bannin/Touichirou_Ooba.jpg",
+        "quarter": "",
+        "year": ""
       }
     ]
   },
@@ -13374,7 +16926,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "이치카와 루이",
         "animeTitle": "고스트 콘서트: missing Songs",
-        "img": "image/charimg/2026/Q2/Ghost_Concert_missing_Songs/Rui_Ichikawa.jpg"
+        "img": "image/charimg/2026/Q2/Ghost_Concert_missing_Songs/Rui_Ichikawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13386,12 +16940,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "무라야마 슈리",
         "animeTitle": "고스트 콘서트: missing Songs",
-        "img": "image/charimg/2026/Q2/Ghost_Concert_missing_Songs/Akari_Murayama.jpg"
+        "img": "image/charimg/2026/Q2/Ghost_Concert_missing_Songs/Akari_Murayama.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "카펠라 카프리콘",
         "animeTitle": "검은 고양이와 마녀의 교실",
-        "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Capella_Capricorn.jpg"
+        "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Capella_Capricorn.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13403,12 +16961,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "사이온지 카에데",
         "animeTitle": "고스트 콘서트: missing Songs",
-        "img": "image/charimg/2026/Q2/Ghost_Concert_missing_Songs/Kaede_Saionji.jpg"
+        "img": "image/charimg/2026/Q2/Ghost_Concert_missing_Songs/Kaede_Saionji.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "노노야마 루이",
         "animeTitle": "마법의 자매 루루토리리",
-        "img": "image/charimg/2026/Q2/Mahou_no_Shimai_LuluttoLilly_Part_2/Rui_Nonoyama.jpg"
+        "img": "image/charimg/2026/Q2/Mahou_no_Shimai_LuluttoLilly_Part_2/Rui_Nonoyama.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13420,7 +16982,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아오키 리쿠",
         "animeTitle": "고스트 콘서트: missing Songs",
-        "img": "image/charimg/2026/Q2/Ghost_Concert_missing_Songs/Riku_Aoki.jpg"
+        "img": "image/charimg/2026/Q2/Ghost_Concert_missing_Songs/Riku_Aoki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13432,12 +16996,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "MiucS",
         "animeTitle": "고스트 콘서트: missing Songs",
-        "img": "image/charimg/2026/Q2/Ghost_Concert_missing_Songs/MiucS.jpg"
+        "img": "image/charimg/2026/Q2/Ghost_Concert_missing_Songs/MiucS.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "롯테",
         "animeTitle": "비극의 원흉이 되는 최강악역 최종보스 여왕은 국민을 위해 헌신합니다 Season2",
-        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Lotte.jpg"
+        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Lotte.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13449,17 +17017,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "오디세우스",
         "animeTitle": "고스트 콘서트: missing Songs",
-        "img": "image/charimg/2026/Q2/Ghost_Concert_missing_Songs/Odysseus.jpg"
+        "img": "image/charimg/2026/Q2/Ghost_Concert_missing_Songs/Odysseus.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "구죠 카나데",
         "animeTitle": "카미이나 보탄, 취한 모습은 백합의 꽃",
-        "img": "image/charimg/2026/Q2/Kamiina_Botan,_Yoeru_Sugata_wa_Yuri_no_Hana/Kanade_Gujou.jpg"
+        "img": "image/charimg/2026/Q2/Kamiina_Botan,_Yoeru_Sugata_wa_Yuri_no_Hana/Kanade_Gujou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "토리카",
         "animeTitle": "신의 정원이 딸린 쿠스노키 저택",
-        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Torika.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Torika.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13471,7 +17045,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "바르드 노킨스",
         "animeTitle": "자칭 악역 영애인 약혼자 관찰기록.",
-        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Vald_Norgins.jpg"
+        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Vald_Norgins.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13483,7 +17059,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "펜닐 로드",
         "animeTitle": "자칭 악역 영애인 약혼자 관찰기록.",
-        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Fannil_Rhode.jpg"
+        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Fannil_Rhode.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13495,7 +17073,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "찰스 라오넬",
         "animeTitle": "자칭 악역 영애인 약혼자 관찰기록.",
-        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Charles_Laonel.jpg"
+        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Charles_Laonel.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13507,12 +17087,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "신시아 소넬리스",
         "animeTitle": "자칭 악역 영애인 약혼자 관찰기록.",
-        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Cynthia_Linnerith.jpg"
+        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Cynthia_Linnerith.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "사쿠라 아이리",
         "animeTitle": "어서 오세요 실력지상주의 교실에 4th Season",
-        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Airi_Sakura.jpg"
+        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Airi_Sakura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13524,12 +17108,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "안네 코갈레스",
         "animeTitle": "자칭 악역 영애인 약혼자 관찰기록.",
-        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Anne_Kogares.jpg"
+        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Anne_Kogares.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "프리다",
         "animeTitle": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
-        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Freida.jpg"
+        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Freida.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13541,7 +17129,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "피짱",
         "animeTitle": "자칭 악역 영애인 약혼자 관찰기록.",
-        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Pii.jpg"
+        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Pii.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13553,27 +17143,37 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "제노",
         "animeTitle": "자칭 악역 영애인 약혼자 관찰기록.",
-        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Zeno.jpg"
+        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Zeno.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "레나트 디 루비니",
         "animeTitle": "놓친 물고기는 컸지만 잡은 물고기가 너무 컸던 건",
-        "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Renato_di_Rubini.jpg"
+        "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Renato_di_Rubini.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "무카이 료",
         "animeTitle": "힘내라 나카무라 군",
-        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Ryou_Mukai.jpg"
+        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Ryou_Mukai.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "마이크 마이우스",
         "animeTitle": "지팡이와 검의 위스토리아 Season2",
-        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Mike_Maius.jpg"
+        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Mike_Maius.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "로지 홀랜드",
         "animeTitle": "지팡이와 검의 위스토리아 Season2",
-        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Rodge_Holland.jpg"
+        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Rodge_Holland.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13585,7 +17185,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "더글라스 이빌 노체스",
         "animeTitle": "자칭 악역 영애인 약혼자 관찰기록.",
-        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Douglas_Noches.jpg"
+        "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Douglas_Noches.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13597,12 +17199,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "마치오 히라쿠",
         "animeTitle": "이세계 유유자적 농가 2",
-        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Hiraku_Machio.jpg"
+        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Hiraku_Machio.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "나",
         "animeTitle": "여신 「이세계 전생하면 뭐가 되고 싶습니까」 나「용사의 갈비뼈로」",
-        "img": "image/charimg/2026/Q2/Megami_Isekai_Tensei_Nani_ni_Naritai_Desu_ka_Ore_Yuusha_no_Rokkotsu_de/Ore.jpg"
+        "img": "image/charimg/2026/Q2/Megami_Isekai_Tensei_Nani_ni_Naritai_Desu_ka_Ore_Yuusha_no_Rokkotsu_de/Ore.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13614,7 +17220,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "티어",
         "animeTitle": "이세계 유유자적 농가 2",
-        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Tier.jpg"
+        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Tier.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13626,12 +17234,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "앤",
         "animeTitle": "이세계 유유자적 농가 2",
-        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Ann.jpg"
+        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Ann.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "미미 펄배튼",
         "animeTitle": "Re:제로부터 시작하는 이세계 생활 4기",
-        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Mimi_Pearlbaton.jpg"
+        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Mimi_Pearlbaton.jpg",
+        "quarter": "3분기",
+        "year": 2026
       }
     ]
   },
@@ -13643,7 +17255,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "라스티스문",
         "animeTitle": "이세계 유유자적 농가 2",
-        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Rasutisumoon.jpg"
+        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Rasutisumoon.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13655,22 +17269,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "창조신",
         "animeTitle": "이세계 유유자적 농가 2",
-        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Souzou_Shin.jpg"
+        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Souzou_Shin.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "창조신",
         "animeTitle": "여신 「이세계 전생하면 뭐가 되고 싶습니까」 나「용사의 갈비뼈로」",
-        "img": "image/charimg/2026/Q2/Megami_Isekai_Tensei_Nani_ni_Naritai_Desu_ka_Ore_Yuusha_no_Rokkotsu_de/Souzou-shin.jpg"
+        "img": "image/charimg/2026/Q2/Megami_Isekai_Tensei_Nani_ni_Naritai_Desu_ka_Ore_Yuusha_no_Rokkotsu_de/Souzou-shin.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "페르디난드",
         "animeTitle": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
-        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Ferdinand.jpg"
+        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Ferdinand.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "기린",
         "animeTitle": "신의 정원이 딸린 쿠스노키 저택",
-        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Kirin.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Kirin.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13682,12 +17304,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "리콧토",
         "animeTitle": "이세계 유유자적 농가 2",
-        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Licott.jpg"
+        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Licott.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "리스",
         "animeTitle": "이세계 유유자적 농가 2",
-        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Liese.jpg"
+        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Liese.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13699,12 +17325,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "리리",
         "animeTitle": "이세계 유유자적 농가 2",
-        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Lily.jpg"
+        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Lily.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "리프",
         "animeTitle": "이세계 유유자적 농가 2",
-        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Leaf.jpg"
+        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Leaf.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13716,7 +17346,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "걸프",
         "animeTitle": "이세계 유유자적 농가 2",
-        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Gulf.jpg"
+        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Gulf.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13728,12 +17360,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "랭던",
         "animeTitle": "이세계 유유자적 농가 2",
-        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Landan.jpg"
+        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Landan.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "다댄 워커",
         "animeTitle": "최강의 왕, 두 번째 인생에는 무엇을 하는가 시즌 2",
-        "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Durden_Walker.jpg"
+        "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Durden_Walker.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13745,12 +17381,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "쿠로",
         "animeTitle": "이세계 유유자적 농가 2",
-        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Kuro.jpg"
+        "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Kuro.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "우사다 마사시",
         "animeTitle": "두 남자와 룸쉐어 중입니다",
-        "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Masashi_Usada.jpg"
+        "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Masashi_Usada.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13762,7 +17402,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "테티아",
         "animeTitle": "고깔모자 아틀리에",
-        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Tetia.jpg"
+        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Tetia.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13774,7 +17416,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "코코의 어머니",
         "animeTitle": "고깔모자 아틀리에",
-        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Coco_no_Haha.jpg"
+        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Coco_no_Haha.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13786,7 +17430,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "유이니",
         "animeTitle": "고깔모자 아틀리에",
-        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Euini.jpg"
+        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Euini.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13798,7 +17444,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "쿠스타스",
         "animeTitle": "고깔모자 아틀리에",
-        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Custas.jpg"
+        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Custas.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13810,12 +17458,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "우트윈",
         "animeTitle": "고깔모자 아틀리에",
-        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Utowin.jpg"
+        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Utowin.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "이지치 겐이치로",
         "animeTitle": "오타쿠에게 상냥한 갸루는 없다",
-        "img": "image/charimg/2026/Q2/Otaku_ni_Yasashii_Gal_wa_Inai!/Genichirou_Ijichi.jpg"
+        "img": "image/charimg/2026/Q2/Otaku_ni_Yasashii_Gal_wa_Inai!/Genichirou_Ijichi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13827,7 +17479,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "쿠크로우",
         "animeTitle": "고깔모자 아틀리에",
-        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Kukrow.jpg"
+        "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Kukrow.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13839,22 +17493,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "코히나타 포엠",
         "animeTitle": "허당 선도부원과 스커트 길이가 부적절한 여고생의 이야기",
-        "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Poemu_Kohinata.jpg"
+        "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Poemu_Kohinata.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "타무라 마키코",
         "animeTitle": "라이어 게임",
-        "img": "image/charimg/2026/Q2/LIAR_GAME/Makiko_Tamura.jpg"
+        "img": "image/charimg/2026/Q2/LIAR_GAME/Makiko_Tamura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "안젤라 로즈",
         "animeTitle": "최강의 왕, 두 번째 인생에는 무엇을 하는가 시즌 2",
-        "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Angela_Rose.jpg"
+        "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Angela_Rose.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "남동생",
         "animeTitle": "얼음 성벽",
-        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Haruto_Hino.jpg"
+        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Haruto_Hino.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13866,7 +17528,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아키나 모토코",
         "animeTitle": "허당 선도부원과 스커트 길이가 부적절한 여고생의 이야기",
-        "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Motoko_Akina.jpg"
+        "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Motoko_Akina.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13878,7 +17542,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "코히나타 라임",
         "animeTitle": "허당 선도부원과 스커트 길이가 부적절한 여고생의 이야기",
-        "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Raimu_Kohinata.jpg"
+        "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Raimu_Kohinata.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13890,7 +17556,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "이즈부치 유우",
         "animeTitle": "허당 선도부원과 스커트 길이가 부적절한 여고생의 이야기",
-        "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Yuu_Izubuchi.jpg"
+        "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Yuu_Izubuchi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13902,7 +17570,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "타사키 루이",
         "animeTitle": "허당 선도부원과 스커트 길이가 부적절한 여고생의 이야기",
-        "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Rui_Tasaki.jpg"
+        "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Rui_Tasaki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13914,7 +17584,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "마츠바라 후미오",
         "animeTitle": "라이어 게임",
-        "img": "image/charimg/2026/Q2/LIAR_GAME/Fumio_Matsubara.jpg"
+        "img": "image/charimg/2026/Q2/LIAR_GAME/Fumio_Matsubara.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13926,12 +17598,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "후지사와 카즈오",
         "animeTitle": "라이어 게임",
-        "img": "image/charimg/2026/Q2/LIAR_GAME/Kazuo_Fujisawa.jpg"
+        "img": "image/charimg/2026/Q2/LIAR_GAME/Kazuo_Fujisawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "앨런 스미시",
         "animeTitle": "리인카네이션의 꽃잎",
-        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Alan_Smithee.jpg"
+        "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Alan_Smithee.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13943,7 +17619,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "니시하라 레이나",
         "animeTitle": "라이어 게임",
-        "img": "image/charimg/2026/Q2/LIAR_GAME/Reina_Nishihara.jpg"
+        "img": "image/charimg/2026/Q2/LIAR_GAME/Reina_Nishihara.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13955,7 +17633,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "마키하라 유키",
         "animeTitle": "라이어 게임",
-        "img": "image/charimg/2026/Q2/LIAR_GAME/Yuki_Makihara.jpg"
+        "img": "image/charimg/2026/Q2/LIAR_GAME/Yuki_Makihara.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13967,7 +17647,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "에다 테루유키",
         "animeTitle": "라이어 게임",
-        "img": "image/charimg/2026/Q2/LIAR_GAME/Yuki_Edateru.jpg"
+        "img": "image/charimg/2026/Q2/LIAR_GAME/Yuki_Edateru.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13979,7 +17661,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "호소에 준",
         "animeTitle": "라이어 게임",
-        "img": "image/charimg/2026/Q2/LIAR_GAME/Jun_Hosoe.jpg"
+        "img": "image/charimg/2026/Q2/LIAR_GAME/Jun_Hosoe.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -13991,7 +17675,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "키타무라 히로토",
         "animeTitle": "라이어 게임",
-        "img": "image/charimg/2026/Q2/LIAR_GAME/Hiroto_Kitamura.jpg"
+        "img": "image/charimg/2026/Q2/LIAR_GAME/Hiroto_Kitamura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14003,17 +17689,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "후지타 신고",
         "animeTitle": "라이어 게임",
-        "img": "image/charimg/2026/Q2/LIAR_GAME/Shingo_Fujita.jpg"
+        "img": "image/charimg/2026/Q2/LIAR_GAME/Shingo_Fujita.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "후지 3세",
         "animeTitle": "일본삼국",
-        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Fuji_Sansei.jpg"
+        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Fuji_Sansei.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아담 크랜슈",
         "animeTitle": "최강의 왕, 두 번째 인생에는 무엇을 하는가 시즌 2",
-        "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Adam_Krensh.jpg"
+        "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Adam_Krensh.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14025,7 +17717,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "다이라 덴키",
         "animeTitle": "일본삼국",
-        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Denki_Taira.jpg"
+        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Denki_Taira.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14037,17 +17731,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "구라 아테루이",
         "animeTitle": "일본삼국",
-        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Aterui_Kura.jpg"
+        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Aterui_Kura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "米谷飯",
         "animeTitle": "힘내라 나카무라 군",
-        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Kometani_Ii.jpg"
+        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Kometani_Ii.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "사쿠야 슌스케",
         "animeTitle": "신의 정원이 딸린 쿠스노키 저택",
-        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Kakunojou_Katsuragi.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Kakunojou_Katsuragi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14059,7 +17759,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "히가시마치 노부히토",
         "animeTitle": "일본삼국",
-        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Nobuhito_Higashimachi.jpg"
+        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Nobuhito_Higashimachi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14071,7 +17773,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "도요타 마구로",
         "animeTitle": "일본삼국",
-        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Maguro_Toyota.jpg"
+        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Maguro_Toyota.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14083,17 +17787,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "시마다 히로마사",
         "animeTitle": "일본삼국",
-        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Hiromasa_Shimada.jpg"
+        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Hiromasa_Shimada.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "할아버지",
         "animeTitle": "쿠지마 노래하면 집이 파다닥",
-        "img": "image/charimg/2026/Q2/Kujima_Utaeba_Ie_Hororo/Mitsuki-san.jpg"
+        "img": "image/charimg/2026/Q2/Kujima_Utaeba_Ie_Hororo/Mitsuki-san.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "혼마 쵸스케",
         "animeTitle": "신의 물방울",
-        "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Chousuke_Honma.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Chousuke_Honma.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14105,7 +17815,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "다이라 요시히로",
         "animeTitle": "일본삼국",
-        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Yoshihiro_Taira.jpg"
+        "img": "image/charimg/2026/Q2/Nippon_Sangoku/Yoshihiro_Taira.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14117,12 +17829,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "앨런 버나즈",
         "animeTitle": "비극의 원흉이 되는 최강악역 최종보스 여왕은 국민을 위해 헌신합니다 Season2",
-        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Alan_Bernards.jpg"
+        "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Alan_Bernards.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "햣카",
         "animeTitle": "마오",
-        "img": "image/charimg/2026/Q2/MAO/Hyakka.jpg"
+        "img": "image/charimg/2026/Q2/MAO/Hyakka.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14134,7 +17850,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "하나마키 토시키",
         "animeTitle": "매리지 톡신",
-        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Toshiki_Hanamaki.jpg"
+        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Toshiki_Hanamaki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14146,7 +17864,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "뱟코",
         "animeTitle": "매리지 톡신",
-        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Byakko.jpg"
+        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Byakko.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14158,7 +17878,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아라시야마 키미에",
         "animeTitle": "매리지 톡신",
-        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Kimie_Arashiyama.jpg"
+        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Kimie_Arashiyama.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14170,7 +17892,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "나카가와 피이치",
         "animeTitle": "매리지 톡신",
-        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Piichi_Nakagawa.jpg"
+        "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Piichi_Nakagawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14182,12 +17906,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "하나바 히나코",
         "animeTitle": "사랑해 게임을 끝내고 싶어",
-        "img": "image/charimg/2026/Q2/Aishiteru_Game_wo_Owarasetai/Hinako_Hanaba.jpg"
+        "img": "image/charimg/2026/Q2/Aishiteru_Game_wo_Owarasetai/Hinako_Hanaba.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "유리노 유리코",
         "animeTitle": "카난 님은 초보 악마",
-        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Yuriko_Yurino.jpg"
+        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Yuriko_Yurino.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14199,17 +17927,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "마에하라 이츠키",
         "animeTitle": "반에서 두 번째로 귀여운 여자애와 친구가 되었다",
-        "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Itsuki_Maehara.jpg"
+        "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Itsuki_Maehara.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "하루나 미치오",
         "animeTitle": "두 남자와 룸쉐어 중입니다",
-        "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Michio_Haruna.jpg"
+        "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Michio_Haruna.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "풋맨",
         "animeTitle": "전생했더니 슬라임이었던 건에 대하여 4기",
-        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Footman.jpg"
+        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Footman.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14221,12 +17955,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "에모토 히토미",
         "animeTitle": "두 남자와 룸쉐어 중입니다",
-        "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Hitomi_Emoto.jpg"
+        "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Hitomi_Emoto.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "코미 사에",
         "animeTitle": "아카네 이야기",
-        "img": "image/charimg/2026/Q2/Akane-banashi/Sae_Komi.jpg"
+        "img": "image/charimg/2026/Q2/Akane-banashi/Sae_Komi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14238,7 +17976,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "용사 지요크",
         "animeTitle": "여신 「이세계 전생하면 뭐가 되고 싶습니까」 나「용사의 갈비뼈로」",
-        "img": "image/charimg/2026/Q2/Megami_Isekai_Tensei_Nani_ni_Naritai_Desu_ka_Ore_Yuusha_no_Rokkotsu_de/Jiyouku.jpg"
+        "img": "image/charimg/2026/Q2/Megami_Isekai_Tensei_Nani_ni_Naritai_Desu_ka_Ore_Yuusha_no_Rokkotsu_de/Jiyouku.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14250,7 +17990,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "여신의 종자",
         "animeTitle": "여신 「이세계 전생하면 뭐가 되고 싶습니까」 나「용사의 갈비뼈로」",
-        "img": "image/charimg/2026/Q2/Megami_Isekai_Tensei_Nani_ni_Naritai_Desu_ka_Ore_Yuusha_no_Rokkotsu_de/Megami_no_Juusha.jpg"
+        "img": "image/charimg/2026/Q2/Megami_Isekai_Tensei_Nani_ni_Naritai_Desu_ka_Ore_Yuusha_no_Rokkotsu_de/Megami_no_Juusha.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14262,12 +18004,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "카루이자와 케이",
         "animeTitle": "어서 오세요 실력지상주의 교실에 4th Season",
-        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Kei_Karuizawa.jpg"
+        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Kei_Karuizawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "로리카와 유이",
         "animeTitle": "카난 님은 초보 악마",
-        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Yui_Rorikawa.jpg"
+        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Yui_Rorikawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14279,12 +18025,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "쿠시다 키쿄",
         "animeTitle": "어서 오세요 실력지상주의 교실에 4th Season",
-        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Kikyou_Kushida.jpg"
+        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Kikyou_Kushida.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "님할라",
         "animeTitle": "공주 기사는 야만족의 신부",
-        "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Nimuhara.jpg"
+        "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Nimuhara.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14296,7 +18046,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "나나세 츠바사",
         "animeTitle": "어서 오세요 실력지상주의 교실에 4th Season",
-        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Tsubasa_Nanase.jpg"
+        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Tsubasa_Nanase.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14308,17 +18060,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "히라타 요스케",
         "animeTitle": "어서 오세요 실력지상주의 교실에 4th Season",
-        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Yousuke_Hirata.jpg"
+        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Yousuke_Hirata.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아미 키리요",
         "animeTitle": "마계학교 이루마군 4기",
-        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Kiriwo_Amy.jpg"
+        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Kiriwo_Amy.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "단지",
         "animeTitle": "황천의 츠가이",
-        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Danji.jpg"
+        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Danji.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14330,7 +18088,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "스도 켄",
         "animeTitle": "어서 오세요 실력지상주의 교실에 4th Season",
-        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Ken_Sudou.jpg"
+        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Ken_Sudou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14342,7 +18102,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "이케 칸지",
         "animeTitle": "어서 오세요 실력지상주의 교실에 4th Season",
-        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Kanji_Ike.jpg"
+        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Kanji_Ike.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14354,7 +18116,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "소토무라 히데오",
         "animeTitle": "어서 오세요 실력지상주의 교실에 4th Season",
-        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Hideo_Sotomura.jpg"
+        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Hideo_Sotomura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14366,7 +18130,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "유키무라 테루히코",
         "animeTitle": "어서 오세요 실력지상주의 교실에 4th Season",
-        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Teruhiko_Yukimura.jpg"
+        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Teruhiko_Yukimura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14378,7 +18144,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "하세베 하루카",
         "animeTitle": "어서 오세요 실력지상주의 교실에 4th Season",
-        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Haruka_Hasebe.jpg"
+        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Haruka_Hasebe.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14390,7 +18158,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "시노하라 사츠키",
         "animeTitle": "어서 오세요 실력지상주의 교실에 4th Season",
-        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Satsuki_Shinohara.jpg"
+        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Satsuki_Shinohara.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14402,7 +18172,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "이시자키 다이치",
         "animeTitle": "어서 오세요 실력지상주의 교실에 4th Season",
-        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Daichi_Ishizaki.jpg"
+        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Daichi_Ishizaki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14414,12 +18186,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "시바 카츠노리",
         "animeTitle": "어서 오세요 실력지상주의 교실에 4th Season",
-        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Katsunori_Shiba.jpg"
+        "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Katsunori_Shiba.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "봉황",
         "animeTitle": "신의 정원이 딸린 쿠스노키 저택",
-        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Houou.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Houou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14431,22 +18207,30 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "미슈엘",
         "animeTitle": "자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season",
-        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Mishuel.jpg"
+        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Mishuel.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "율리우스 유클리우스",
         "animeTitle": "Re:제로부터 시작하는 이세계 생활 4기",
-        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Julius_Euclius.jpg"
+        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Julius_Euclius.jpg",
+        "quarter": "3분기",
+        "year": 2026
       },
       {
         "charName": "오토기리 소우",
         "animeTitle": "힘내라 나카무라 군",
-        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Sou_Otogiri.jpg"
+        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Sou_Otogiri.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "네리마야 카라시",
         "animeTitle": "아카네 이야기",
-        "img": "image/charimg/2026/Q2/Akane-banashi/Karashi_Nerimaya.jpg"
+        "img": "image/charimg/2026/Q2/Akane-banashi/Karashi_Nerimaya.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14458,17 +18242,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "스루림",
         "animeTitle": "자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season",
-        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Sulream.jpg"
+        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Sulream.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "코다 미요시",
         "animeTitle": "쿠지마 노래하면 집이 파다닥",
-        "img": "image/charimg/2026/Q2/Kujima_Utaeba_Ie_Hororo/Miyoshi_Kouda.jpg"
+        "img": "image/charimg/2026/Q2/Kujima_Utaeba_Ie_Hororo/Miyoshi_Kouda.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아마테라스 오미카미",
         "animeTitle": "신의 정원이 딸린 쿠스노키 저택",
-        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Amaterasu.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Amaterasu.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14480,7 +18270,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "회",
         "animeTitle": "자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season",
-        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Hai.jpg"
+        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Hai.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14492,7 +18284,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "피티",
         "animeTitle": "자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season",
-        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Pity.jpg"
+        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Pity.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14504,7 +18298,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "스오리",
         "animeTitle": "자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season",
-        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Suori.jpg"
+        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Suori.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14516,7 +18312,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "고스",
         "animeTitle": "자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season",
-        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Gorth.jpg"
+        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Gorth.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14528,7 +18326,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "무나미",
         "animeTitle": "자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season",
-        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Munami.jpg"
+        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Munami.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14540,7 +18340,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "셜리",
         "animeTitle": "자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season",
-        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Shirley.jpg"
+        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Shirley.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14552,12 +18354,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "미케네",
         "animeTitle": "자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season",
-        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Mikenne.jpg"
+        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Mikenne.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "앨리스 레윈",
         "animeTitle": "최강의 왕, 두 번째 인생에는 무엇을 하는가 시즌 2",
-        "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Alice_Leywin.jpg"
+        "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Alice_Leywin.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14569,12 +18375,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "쇼토",
         "animeTitle": "자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season",
-        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Short.jpg"
+        "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Short.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "스티리아",
         "animeTitle": "최강의 직업은 용사도 현자도 아닌 감정사(임시)인 것 같은데요",
-        "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Steelia.jpg"
+        "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Steelia.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14586,7 +18396,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "람",
         "animeTitle": "Re:제로부터 시작하는 이세계 생활 4기",
-        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Ram.jpg"
+        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Ram.jpg",
+        "quarter": "3분기",
+        "year": 2026
       }
     ]
   },
@@ -14598,7 +18410,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "페트라 레이테",
         "animeTitle": "Re:제로부터 시작하는 이세계 생활 4기",
-        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Petra_Leyte.jpg"
+        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Petra_Leyte.jpg",
+        "quarter": "3분기",
+        "year": 2026
       }
     ]
   },
@@ -14610,7 +18424,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "파트라슈",
         "animeTitle": "Re:제로부터 시작하는 이세계 생활 4기",
-        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Patrasche.jpg"
+        "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Patrasche.jpg",
+        "quarter": "3분기",
+        "year": 2026
       }
     ]
   },
@@ -14622,17 +18438,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아서 레윈",
         "animeTitle": "최강의 왕, 두 번째 인생에는 무엇을 하는가 시즌 2",
-        "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Arthur_Leywin.jpg"
+        "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Arthur_Leywin.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "오카베 에미",
         "animeTitle": "아와지마 가극학교",
-        "img": "image/charimg/2026/Q2/Awajima_Hyakkei/Emi_Okabe.jpg"
+        "img": "image/charimg/2026/Q2/Awajima_Hyakkei/Emi_Okabe.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "타데라 켄",
         "animeTitle": "황천의 츠가이",
-        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Ken_Tadera.jpg"
+        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Ken_Tadera.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14644,7 +18466,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "자스민 플레임스워스",
         "animeTitle": "최강의 왕, 두 번째 인생에는 무엇을 하는가 시즌 2",
-        "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Jasmine_Flamesworth.jpg"
+        "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Jasmine_Flamesworth.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14656,7 +18480,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "레이놀드 레윈",
         "animeTitle": "최강의 왕, 두 번째 인생에는 무엇을 하는가 시즌 2",
-        "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Reynolds_Leywin.jpg"
+        "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Reynolds_Leywin.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14668,7 +18494,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "헬렌 샤드",
         "animeTitle": "최강의 왕, 두 번째 인생에는 무엇을 하는가 시즌 2",
-        "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Helen_Shard.jpg"
+        "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Helen_Shard.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14680,7 +18508,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "세오 타쿠야",
         "animeTitle": "오타쿠에게 상냥한 갸루는 없다",
-        "img": "image/charimg/2026/Q2/Otaku_ni_Yasashii_Gal_wa_Inai!/Takuya_Seo.jpg"
+        "img": "image/charimg/2026/Q2/Otaku_ni_Yasashii_Gal_wa_Inai!/Takuya_Seo.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14692,17 +18522,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "고프레드",
         "animeTitle": "놓친 물고기는 컸지만 잡은 물고기가 너무 컸던 건",
-        "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Goffredo.jpg"
+        "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Goffredo.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "야마기와 선생",
         "animeTitle": "힘내라 나카무라 군",
-        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Yamagiwa-sensei.jpg"
+        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Yamagiwa-sensei.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "테츠조",
         "animeTitle": "도로헤도로 시즌 2",
-        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Tetsujo.jpg"
+        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Tetsujo.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14714,12 +18550,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "타케우치 코타",
         "animeTitle": "힘내라 나카무라 군",
-        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Kouta_Takeuchi.jpg"
+        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Kouta_Takeuchi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "헤임달",
         "animeTitle": "종말의 발키리 Ⅲ",
-        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Heimdall.jpg"
+        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Heimdall.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14731,7 +18571,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "오오모리 츠카사",
         "animeTitle": "힘내라 나카무라 군",
-        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Tsukasa_Oomori.jpg"
+        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Tsukasa_Oomori.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14743,7 +18585,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "오쿠다 마사코",
         "animeTitle": "힘내라 나카무라 군",
-        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Masako_Okuda.jpg"
+        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Masako_Okuda.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14755,7 +18599,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "히로세 사호",
         "animeTitle": "힘내라 나카무라 군",
-        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Saho_Hirose.jpg"
+        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Saho_Hirose.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14767,12 +18613,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "마쿠노우치",
         "animeTitle": "힘내라 나카무라 군",
-        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Makunouchi.jpg"
+        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Makunouchi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "카게모리 히카루",
         "animeTitle": "황천의 츠가이",
-        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Hikaru_Kagemori.jpg"
+        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Hikaru_Kagemori.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14784,7 +18634,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "타쿠",
         "animeTitle": "힘내라 나카무라 군",
-        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Taku.jpg"
+        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Taku.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14796,7 +18648,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "바퀴벌레",
         "animeTitle": "힘내라 나카무라 군",
-        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Goki-chan.jpg"
+        "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Goki-chan.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14808,12 +18662,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "알리사 마르시아스",
         "animeTitle": "공주 기사는 야만족의 신부",
-        "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Alyssa_Marsius.jpg"
+        "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Alyssa_Marsius.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "모미지 호무라",
         "animeTitle": "닥터 스톤 SCIENCE FUTURE",
-        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Homura_Momiji.jpg"
+        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Homura_Momiji.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14825,7 +18683,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "구아스",
         "animeTitle": "공주 기사는 야만족의 신부",
-        "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Guas.jpg"
+        "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Guas.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14837,7 +18697,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "바스",
         "animeTitle": "공주 기사는 야만족의 신부",
-        "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Vas.jpg"
+        "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Vas.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14849,7 +18711,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "스이카",
         "animeTitle": "닥터 스톤 SCIENCE FUTURE",
-        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Suika.jpg"
+        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Suika.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14861,7 +18725,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "카세키",
         "animeTitle": "닥터 스톤 SCIENCE FUTURE",
-        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Kaseki.jpg"
+        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Kaseki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14873,12 +18739,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아카츠키 효가",
         "animeTitle": "닥터 스톤 SCIENCE FUTURE",
-        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Hyouga.jpg"
+        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Hyouga.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "카게모리 아스마",
         "animeTitle": "황천의 츠가이",
-        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Asuma_Kagemori.jpg"
+        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Asuma_Kagemori.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14890,7 +18760,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "맨틀",
         "animeTitle": "닥터 스톤 SCIENCE FUTURE",
-        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Mantle.jpg"
+        "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Mantle.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14902,7 +18774,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "쿠지마",
         "animeTitle": "쿠지마 노래하면 집이 파다닥",
-        "img": "image/charimg/2026/Q2/Kujima_Utaeba_Ie_Hororo/Kujima.jpg"
+        "img": "image/charimg/2026/Q2/Kujima_Utaeba_Ie_Hororo/Kujima.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14914,7 +18788,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "코다 마사오미",
         "animeTitle": "쿠지마 노래하면 집이 파다닥",
-        "img": "image/charimg/2026/Q2/Kujima_Utaeba_Ie_Hororo/Masaomi_Kouda.jpg"
+        "img": "image/charimg/2026/Q2/Kujima_Utaeba_Ie_Hororo/Masaomi_Kouda.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14926,7 +18802,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "이치노 토우야",
         "animeTitle": "쿠지마 노래하면 집이 파다닥",
-        "img": "image/charimg/2026/Q2/Kujima_Utaeba_Ie_Hororo/Shuuya_Ichino.jpg"
+        "img": "image/charimg/2026/Q2/Kujima_Utaeba_Ie_Hororo/Shuuya_Ichino.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14938,7 +18816,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "소노다 에이지",
         "animeTitle": "쿠지마 노래하면 집이 파다닥",
-        "img": "image/charimg/2026/Q2/Kujima_Utaeba_Ie_Hororo/Eiji_Sonoda.jpg"
+        "img": "image/charimg/2026/Q2/Kujima_Utaeba_Ie_Hororo/Eiji_Sonoda.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14950,12 +18830,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "タツ",
         "animeTitle": "얼음 성벽",
-        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Tatsu.jpg"
+        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Tatsu.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아버지",
         "animeTitle": "얼음 성벽",
-        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Youta_no_Chichi.jpg"
+        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Youta_no_Chichi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14967,7 +18851,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아타가와 마나츠",
         "animeTitle": "얼음 성벽",
-        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Manatsu_Atagawa.jpg"
+        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Manatsu_Atagawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14979,7 +18865,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "코와카 와카나",
         "animeTitle": "얼음 성벽",
-        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Noriko-sensei.jpg"
+        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Noriko-sensei.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -14991,7 +18879,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "사쿠라",
         "animeTitle": "얼음 성벽",
-        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Miharu.jpg"
+        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Miharu.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15003,7 +18893,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "무코",
         "animeTitle": "얼음 성벽",
-        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Muko.jpg"
+        "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Muko.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15015,7 +18907,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "호시미야 히카리",
         "animeTitle": "하이바라의 청춘 뉴 게임 플러스",
-        "img": "image/charimg/2026/Q2/Haibara-kun_no_Tsuyokute_Seishun_New_Game/Hikari_Hoshimiya.jpg"
+        "img": "image/charimg/2026/Q2/Haibara-kun_no_Tsuyokute_Seishun_New_Game/Hikari_Hoshimiya.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15027,7 +18921,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "혼도 세리카",
         "animeTitle": "하이바라의 청춘 뉴 게임 플러스",
-        "img": "image/charimg/2026/Q2/Haibara-kun_no_Tsuyokute_Seishun_New_Game/Serika_Hondo.jpg"
+        "img": "image/charimg/2026/Q2/Haibara-kun_no_Tsuyokute_Seishun_New_Game/Serika_Hondo.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15039,7 +18935,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "다바타 와카나",
         "animeTitle": "아와지마 가극학교",
-        "img": "image/charimg/2026/Q2/Awajima_Hyakkei/Wakana_Tabata.jpg"
+        "img": "image/charimg/2026/Q2/Awajima_Hyakkei/Wakana_Tabata.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15051,7 +18949,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "이부키 가쓰라코",
         "animeTitle": "아와지마 가극학교",
-        "img": "image/charimg/2026/Q2/Awajima_Hyakkei/Katsurako_Ibuki.jpg"
+        "img": "image/charimg/2026/Q2/Awajima_Hyakkei/Katsurako_Ibuki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15063,12 +18963,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "후지사와 에리",
         "animeTitle": "아와지마 가극학교",
-        "img": "image/charimg/2026/Q2/Awajima_Hyakkei/Eri_Fujisawa.jpg"
+        "img": "image/charimg/2026/Q2/Awajima_Hyakkei/Eri_Fujisawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "사나",
         "animeTitle": "마오",
-        "img": "image/charimg/2026/Q2/MAO/Sana.jpg"
+        "img": "image/charimg/2026/Q2/MAO/Sana.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15080,17 +18984,23 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "우타가와 시즈카",
         "animeTitle": "아와지마 가극학교",
-        "img": "image/charimg/2026/Q2/Awajima_Hyakkei/Shizuka_Utagawa.jpg"
+        "img": "image/charimg/2026/Q2/Awajima_Hyakkei/Shizuka_Utagawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "고부타",
         "animeTitle": "전생했더니 슬라임이었던 건에 대하여 4기",
-        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Gobta.jpg"
+        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Gobta.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "점보",
         "animeTitle": "아카네 이야기",
-        "img": "image/charimg/2026/Q2/Akane-banashi/Jumbo_Ozaki.jpg"
+        "img": "image/charimg/2026/Q2/Akane-banashi/Jumbo_Ozaki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15102,7 +19012,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "쿠로베",
         "animeTitle": "전생했더니 슬라임이었던 건에 대하여 4기",
-        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Kurobee.jpg"
+        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Kurobee.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15114,7 +19026,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "카이진",
         "animeTitle": "전생했더니 슬라임이었던 건에 대하여 4기",
-        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Kaijin.jpg"
+        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Kaijin.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15126,7 +19040,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "프릿츠",
         "animeTitle": "전생했더니 슬라임이었던 건에 대하여 4기",
-        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Fritz.jpg"
+        "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Fritz.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15138,12 +19054,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "야부사메 테츠오",
         "animeTitle": "스노우볼 어스",
-        "img": "image/charimg/2026/Q2/Snowball_Earth/Tetsuo_Yabusame.jpg"
+        "img": "image/charimg/2026/Q2/Snowball_Earth/Tetsuo_Yabusame.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아가레스 피케로",
         "animeTitle": "마계학교 이루마군 4기",
-        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Picero_Agares.jpg"
+        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Picero_Agares.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15155,7 +19075,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "타키무라 하가네",
         "animeTitle": "스노우볼 어스",
-        "img": "image/charimg/2026/Q2/Snowball_Earth/Hagane_Takimura.jpg"
+        "img": "image/charimg/2026/Q2/Snowball_Earth/Hagane_Takimura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15167,7 +19089,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "우즈키 유마",
         "animeTitle": "스노우볼 어스",
-        "img": "image/charimg/2026/Q2/Snowball_Earth/Yuma_Uzuki.jpg"
+        "img": "image/charimg/2026/Q2/Snowball_Earth/Yuma_Uzuki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15179,7 +19103,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "사이온지 마코토",
         "animeTitle": "스노우볼 어스",
-        "img": "image/charimg/2026/Q2/Snowball_Earth/Makoto_Saionji.jpg"
+        "img": "image/charimg/2026/Q2/Snowball_Earth/Makoto_Saionji.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15191,7 +19117,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "칸자키 시즈쿠",
         "animeTitle": "신의 물방울",
-        "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Shizuku_Kanzaki.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Shizuku_Kanzaki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15203,7 +19131,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "도이 로베르",
         "animeTitle": "신의 물방울",
-        "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Robert_Doi.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Robert_Doi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15215,7 +19145,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "河原毛",
         "animeTitle": "신의 물방울",
-        "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Kawarage.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Kawarage.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15227,7 +19159,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "칸자키 유타카",
         "animeTitle": "신의 물방울",
-        "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Yutaka_Kanzaki.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Yutaka_Kanzaki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15239,12 +19173,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "후지에다 시로",
         "animeTitle": "신의 물방울",
-        "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Shirou_Fujieda.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Shirou_Fujieda.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "산신",
         "animeTitle": "신의 정원이 딸린 쿠스노키 저택",
-        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Yamagami.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Yamagami.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15256,7 +19194,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "사이온지 마키",
         "animeTitle": "신의 물방울",
-        "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Maki_Saionji.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Maki_Saionji.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15268,12 +19208,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "미시마 소이치로",
         "animeTitle": "신의 물방울",
-        "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Souichirou_Mishima.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Souichirou_Mishima.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "미네",
         "animeTitle": "황천의 츠가이",
-        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Mine.jpg"
+        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Mine.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15285,12 +19229,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "하데스",
         "animeTitle": "종말의 발키리 Ⅲ",
-        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Hades.jpg"
+        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Hades.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "타카키요 아빠",
         "animeTitle": "카난 님은 초보 악마",
-        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Takakiyo_Papa.jpg"
+        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Takakiyo_Papa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15302,7 +19250,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "후긴",
         "animeTitle": "종말의 발키리 Ⅲ",
-        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Huginn.jpg"
+        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Huginn.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15314,7 +19264,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "오키타 소지",
         "animeTitle": "종말의 발키리 Ⅲ",
-        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Souji_Okita.jpg"
+        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Souji_Okita.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15326,7 +19278,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "게이뢰눌",
         "animeTitle": "종말의 발키리 Ⅲ",
-        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Geirolul.jpg"
+        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Geirolul.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15338,7 +19292,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "유방",
         "animeTitle": "종말의 발키리 Ⅲ",
-        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Bang_Liu.jpg"
+        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Bang_Liu.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15350,7 +19306,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "춘연",
         "animeTitle": "종말의 발키리 Ⅲ",
-        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Chun_Yan.jpg"
+        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Chun_Yan.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15362,7 +19320,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "피톤",
         "animeTitle": "종말의 발키리 Ⅲ",
-        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Python.jpg"
+        "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Python.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15374,12 +19334,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "자칼",
         "animeTitle": "북두의 권 -FIST OF THE NORTH STAR-",
-        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Jackal.jpg"
+        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Jackal.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "묘귀",
         "animeTitle": "마오",
-        "img": "image/charimg/2026/Q2/MAO/Byouki.jpg"
+        "img": "image/charimg/2026/Q2/MAO/Byouki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15391,12 +19355,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "클로버",
         "animeTitle": "북두의 권 -FIST OF THE NORTH STAR-",
-        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Club.jpg"
+        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Club.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "쵸타",
         "animeTitle": "도로헤도로 시즌 2",
-        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Chota.jpg"
+        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Chota.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15408,12 +19376,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "토키",
         "animeTitle": "북두의 권 -FIST OF THE NORTH STAR-",
-        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Toki.jpg"
+        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Toki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "에비스",
         "animeTitle": "신의 정원이 딸린 쿠스노키 저택",
-        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Ebisu.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Ebisu.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15425,7 +19397,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "류우켄",
         "animeTitle": "북두의 권 -FIST OF THE NORTH STAR-",
-        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Ryuuken.jpg"
+        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Ryuuken.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15437,7 +19411,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "라오우",
         "animeTitle": "북두의 권 -FIST OF THE NORTH STAR-",
-        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Raoh.jpg"
+        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Raoh.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15449,7 +19425,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "하트",
         "animeTitle": "북두의 권 -FIST OF THE NORTH STAR-",
-        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Heart.jpg"
+        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Heart.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15461,7 +19439,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "죠니",
         "animeTitle": "북두의 권 -FIST OF THE NORTH STAR-",
-        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Johnny.jpg"
+        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Johnny.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15473,7 +19453,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아이리",
         "animeTitle": "북두의 권 -FIST OF THE NORTH STAR-",
-        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Airi.jpg"
+        "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Airi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15485,7 +19467,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "키노시타 나고미",
         "animeTitle": "여친, 빌리겠습니다 5기",
-        "img": "image/charimg/2026/Q2/Kanojo,_Okarishimasu_5th_Season/Nagomi_Kinoshita.jpg"
+        "img": "image/charimg/2026/Q2/Kanojo,_Okarishimasu_5th_Season/Nagomi_Kinoshita.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15497,7 +19481,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "마인",
         "animeTitle": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
-        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Myne.jpg"
+        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Myne.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15509,7 +19495,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "빌마",
         "animeTitle": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
-        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Wilma.jpg"
+        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Wilma.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15521,7 +19509,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "투리",
         "animeTitle": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
-        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Tuuli.jpg"
+        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Tuuli.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15533,7 +19523,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "자크",
         "animeTitle": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
-        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Zack.jpg"
+        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Zack.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15545,7 +19537,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "요한",
         "animeTitle": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
-        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Johann.jpg"
+        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Johann.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15557,7 +19551,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "플로렌치아",
         "animeTitle": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
-        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Florencia.jpg"
+        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Florencia.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15569,7 +19565,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "엘라",
         "animeTitle": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
-        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Ella.jpg"
+        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Ella.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15581,7 +19579,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "베로니카",
         "animeTitle": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
-        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Veronica.jpg"
+        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Veronica.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15593,12 +19593,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "빌프리트",
         "animeTitle": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
-        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Wilfried.jpg"
+        "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Wilfried.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "메메",
         "animeTitle": "마계학교 이루마군 4기",
-        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Meimei.jpg"
+        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Meimei.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15610,7 +19614,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "가프 고에몽",
         "animeTitle": "마계학교 이루마군 4기",
-        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Goemon_Garp.jpg"
+        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Goemon_Garp.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15622,7 +19628,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "큐파",
         "animeTitle": "마계학교 이루마군 4기",
-        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Kyupa.jpg"
+        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Kyupa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15634,7 +19642,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "로노웨 로미엘",
         "animeTitle": "마계학교 이루마군 4기",
-        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Romiere_Ronove.jpg"
+        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Romiere_Ronove.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15646,7 +19656,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "크로셀 케로리",
         "animeTitle": "마계학교 이루마군 4기",
-        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Keroli_Crocell.jpg"
+        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Keroli_Crocell.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15658,7 +19670,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "앰프시 나프라",
         "animeTitle": "마계학교 이루마군 4기",
-        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Nafra_Ampsey.jpg"
+        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Nafra_Ampsey.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15670,7 +19684,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "이포스 이쵸",
         "animeTitle": "마계학교 이루마군 4기",
-        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Ichou_Ipos.jpg"
+        "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Ichou_Ipos.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15682,7 +19698,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "유키시타 유우키",
         "animeTitle": "비실비실 선생님",
-        "img": "image/charimg/2026/Q2/Yowa_Yowa_Sensei/Yuuki_Yukishita.jpg"
+        "img": "image/charimg/2026/Q2/Yowa_Yowa_Sensei/Yuuki_Yukishita.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15694,7 +19712,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "마신",
         "animeTitle": "최강의 직업은 용사도 현자도 아닌 감정사(임시)인 것 같은데요",
-        "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Majin.jpg"
+        "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Majin.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15706,7 +19726,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "리리안",
         "animeTitle": "최강의 직업은 용사도 현자도 아닌 감정사(임시)인 것 같은데요",
-        "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Lilian.jpg"
+        "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Lilian.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15718,7 +19740,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "뷔네",
         "animeTitle": "최강의 직업은 용사도 현자도 아닌 감정사(임시)인 것 같은데요",
-        "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Vene.jpg"
+        "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Vene.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15730,7 +19754,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "바바",
         "animeTitle": "킬 블루",
-        "img": "image/charimg/2026/Q2/Kill_Ao/Tomomi_Baba.jpg"
+        "img": "image/charimg/2026/Q2/Kill_Ao/Tomomi_Baba.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15742,7 +19768,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "판다 마스크",
         "animeTitle": "킬 블루",
-        "img": "image/charimg/2026/Q2/Kill_Ao/Panda_Mask.jpg"
+        "img": "image/charimg/2026/Q2/Kill_Ao/Panda_Mask.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15754,7 +19782,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아라카와 카이세이",
         "animeTitle": "아카네 이야기",
-        "img": "image/charimg/2026/Q2/Akane-banashi/Kaisei_Arakawa.jpg"
+        "img": "image/charimg/2026/Q2/Akane-banashi/Kaisei_Arakawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15766,7 +19796,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아라카와 젠쇼",
         "animeTitle": "아카네 이야기",
-        "img": "image/charimg/2026/Q2/Akane-banashi/Zensho_Arakawa.jpg"
+        "img": "image/charimg/2026/Q2/Akane-banashi/Zensho_Arakawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15778,7 +19810,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "요시노 사키",
         "animeTitle": "아카네 이야기",
-        "img": "image/charimg/2026/Q2/Akane-banashi/Saki_Yoshino.jpg"
+        "img": "image/charimg/2026/Q2/Akane-banashi/Saki_Yoshino.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15790,7 +19824,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "카시오 키미히사",
         "animeTitle": "아카네 이야기",
-        "img": "image/charimg/2026/Q2/Akane-banashi/Kimihisa_Kashio.jpg"
+        "img": "image/charimg/2026/Q2/Akane-banashi/Kimihisa_Kashio.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15802,7 +19838,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아라카와 잇켄",
         "animeTitle": "아카네 이야기",
-        "img": "image/charimg/2026/Q2/Akane-banashi/Ikken_Arakawa.jpg"
+        "img": "image/charimg/2026/Q2/Akane-banashi/Ikken_Arakawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15814,7 +19852,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "마도카",
         "animeTitle": "아카네 이야기",
-        "img": "image/charimg/2026/Q2/Akane-banashi/Yanagiya_Sensei.jpg"
+        "img": "image/charimg/2026/Q2/Akane-banashi/Yanagiya_Sensei.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15826,7 +19866,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "카시와야 하쿠슈",
         "animeTitle": "아카네 이야기",
-        "img": "image/charimg/2026/Q2/Akane-banashi/Shirasu_Kashiwaya.jpg"
+        "img": "image/charimg/2026/Q2/Akane-banashi/Shirasu_Kashiwaya.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15838,7 +19880,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "미쿠리야 마모루",
         "animeTitle": "아카네 이야기",
-        "img": "image/charimg/2026/Q2/Akane-banashi/Mamoru_Mikuriya.jpg"
+        "img": "image/charimg/2026/Q2/Akane-banashi/Mamoru_Mikuriya.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15850,7 +19894,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "야마하",
         "animeTitle": "황천의 츠가이",
-        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Yamaha.jpg"
+        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Yamaha.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15862,7 +19908,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "쿄카",
         "animeTitle": "황천의 츠가이",
-        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Kyouka.jpg"
+        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Kyouka.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15874,7 +19922,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "카게모리 곤조",
         "animeTitle": "황천의 츠가이",
-        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Gonzo_Kagemori.jpg"
+        "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Gonzo_Kagemori.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15886,7 +19936,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "우오즈미 후나",
         "animeTitle": "마오",
-        "img": "image/charimg/2026/Q2/MAO/Uozumi.jpg"
+        "img": "image/charimg/2026/Q2/MAO/Uozumi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15898,7 +19950,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "카가미 소마",
         "animeTitle": "마오",
-        "img": "image/charimg/2026/Q2/MAO/Souma_Kagami.jpg"
+        "img": "image/charimg/2026/Q2/MAO/Souma_Kagami.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15910,7 +19964,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "하자쿠라 아야메",
         "animeTitle": "춘하추동 대행자 봄의 춤",
-        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Ayame_Hazakura.jpg"
+        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Ayame_Hazakura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15922,7 +19978,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "이와이즈키 나데시코",
         "animeTitle": "춘하추동 대행자 봄의 춤",
-        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Nadeshiko_Iwaizuki.jpg"
+        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Nadeshiko_Iwaizuki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15934,7 +19992,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "이시하라",
         "animeTitle": "춘하추동 대행자 봄의 춤",
-        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Ishihara.jpg"
+        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Ishihara.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15946,7 +20006,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "봄의 마을 이장",
         "animeTitle": "춘하추동 대행자 봄의 춤",
-        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Haru_no_Satoosa.jpg"
+        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Haru_no_Satoosa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15958,7 +20020,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "토도 유키미",
         "animeTitle": "춘하추동 대행자 봄의 춤",
-        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Yukimi_Toudou.jpg"
+        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Yukimi_Toudou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15970,7 +20034,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "시모츠키 린타로",
         "animeTitle": "춘하추동 대행자 봄의 춤",
-        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Rintarou_Shimotsuki.jpg"
+        "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Rintarou_Shimotsuki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15982,7 +20048,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아메짱",
         "animeTitle": "니디 걸 오버도즈",
-        "img": "image/charimg/2026/Q2/NEEDY_GIRL_OVERDOSE/Ame-chan.jpg"
+        "img": "image/charimg/2026/Q2/NEEDY_GIRL_OVERDOSE/Ame-chan.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -15994,7 +20062,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "고쿠바라 미치카",
         "animeTitle": "니디 걸 오버도즈",
-        "img": "image/charimg/2026/Q2/NEEDY_GIRL_OVERDOSE/Michica_Gokubara.jpg"
+        "img": "image/charimg/2026/Q2/NEEDY_GIRL_OVERDOSE/Michica_Gokubara.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16006,7 +20076,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "네치카 님",
         "animeTitle": "니디 걸 오버도즈",
-        "img": "image/charimg/2026/Q2/NEEDY_GIRL_OVERDOSE/Nechika-sama.jpg"
+        "img": "image/charimg/2026/Q2/NEEDY_GIRL_OVERDOSE/Nechika-sama.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16018,7 +20090,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "릴림",
         "animeTitle": "카난 님은 초보 악마",
-        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Lilim_Zebul.jpg"
+        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Lilim_Zebul.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16030,7 +20104,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "제블가의 메이드장",
         "animeTitle": "카난 님은 초보 악마",
-        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Zebul-ka_Maid-Chou.jpg"
+        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Zebul-ka_Maid-Chou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16042,7 +20118,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "타카키요 마마",
         "animeTitle": "카난 님은 초보 악마",
-        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Takakiyo_Mama.jpg"
+        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Takakiyo_Mama.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16054,7 +20132,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "メェ",
         "animeTitle": "카난 님은 초보 악마",
-        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Mee.jpg"
+        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Mee.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16066,7 +20146,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "ウィ",
         "animeTitle": "카난 님은 초보 악마",
-        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Wii.jpg"
+        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Wii.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16078,7 +20160,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "ドゥ",
         "animeTitle": "카난 님은 초보 악마",
-        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Dou.jpg"
+        "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Dou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16090,7 +20174,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "세리",
         "animeTitle": "신의 정원이 딸린 쿠스노키 저택",
-        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Seri.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Seri.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16102,7 +20188,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "카츠라기 코테츠",
         "animeTitle": "신의 정원이 딸린 쿠스노키 저택",
-        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Kotetsu_Katsuragi.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Kotetsu_Katsuragi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16114,7 +20202,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "이치조 세이시로",
         "animeTitle": "신의 정원이 딸린 쿠스노키 저택",
-        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Seishirou_Ichijou.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Seishirou_Ichijou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16126,7 +20216,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "자시키와라시",
         "animeTitle": "신의 정원이 딸린 쿠스노키 저택",
-        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Zashiki-warashi.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Zashiki-warashi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16138,7 +20230,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "할아버지",
         "animeTitle": "신의 정원이 딸린 쿠스노키 저택",
-        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Minato_no_Sofu.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Minato_no_Sofu.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16150,7 +20244,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "어머니",
         "animeTitle": "신의 정원이 딸린 쿠스노키 저택",
-        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Minato_no_Haha.jpg"
+        "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Minato_no_Haha.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16162,7 +20258,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아마미야 리에",
         "animeTitle": "다다미 한 장짜리 방 만끽 생활",
-        "img": "image/charimg/2026/Q2/Ichijouma_Mankitsu-gurashi!/Rie_Amamiya.jpg"
+        "img": "image/charimg/2026/Q2/Ichijouma_Mankitsu-gurashi!/Rie_Amamiya.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16174,7 +20272,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "스즈키 마리카",
         "animeTitle": "다다미 한 장짜리 방 만끽 생활",
-        "img": "image/charimg/2026/Q2/Ichijouma_Mankitsu-gurashi!/Marika_Suzuki.jpg"
+        "img": "image/charimg/2026/Q2/Ichijouma_Mankitsu-gurashi!/Marika_Suzuki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16186,12 +20286,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "나카노 네오",
         "animeTitle": "다다미 한 장짜리 방 만끽 생활",
-        "img": "image/charimg/2026/Q2/Ichijouma_Mankitsu-gurashi!/Neo_Nakano.jpg"
+        "img": "image/charimg/2026/Q2/Ichijouma_Mankitsu-gurashi!/Neo_Nakano.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "아라키 아사히",
         "animeTitle": "마법의 자매 루루토리리",
-        "img": "image/charimg/2026/Q2/Mahou_no_Shimai_LuluttoLilly_Part_2/Asahi_Araki.jpg"
+        "img": "image/charimg/2026/Q2/Mahou_no_Shimai_LuluttoLilly_Part_2/Asahi_Araki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16203,7 +20307,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "모리타 미오리",
         "animeTitle": "다다미 한 장짜리 방 만끽 생활",
-        "img": "image/charimg/2026/Q2/Ichijouma_Mankitsu-gurashi!/Miori_Morita.jpg"
+        "img": "image/charimg/2026/Q2/Ichijouma_Mankitsu-gurashi!/Miori_Morita.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16215,7 +20321,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "베르나",
         "animeTitle": "다다미 한 장짜리 방 만끽 생활",
-        "img": "image/charimg/2026/Q2/Ichijouma_Mankitsu-gurashi!/Berna.jpg"
+        "img": "image/charimg/2026/Q2/Ichijouma_Mankitsu-gurashi!/Berna.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16227,7 +20335,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "코노미 이노리",
         "animeTitle": "부탁해 아이프리",
-        "img": "image/charimg/2026/Q2/Onegai_AiPri/Inori_Konomi.jpg"
+        "img": "image/charimg/2026/Q2/Onegai_AiPri/Inori_Konomi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16239,7 +20349,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "유메미야 아오이",
         "animeTitle": "부탁해 아이프리",
-        "img": "image/charimg/2026/Q2/Onegai_AiPri/Aoi_Yumemiya.jpg"
+        "img": "image/charimg/2026/Q2/Onegai_AiPri/Aoi_Yumemiya.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16251,7 +20363,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "유우키 올리비아",
         "animeTitle": "부탁해 아이프리",
-        "img": "image/charimg/2026/Q2/Onegai_AiPri/Olivia_Yuuki.jpg"
+        "img": "image/charimg/2026/Q2/Onegai_AiPri/Olivia_Yuuki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16263,12 +20377,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "모치나가 에마",
         "animeTitle": "부탁해 아이프리",
-        "img": "image/charimg/2026/Q2/Onegai_AiPri/Emma_Mochinaga.jpg"
+        "img": "image/charimg/2026/Q2/Onegai_AiPri/Emma_Mochinaga.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "멜로우 파이시즈",
         "animeTitle": "검은 고양이와 마녀의 교실",
-        "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Merrow_Pisces.jpg"
+        "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Merrow_Pisces.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16280,7 +20398,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "코노미 미노루",
         "animeTitle": "부탁해 아이프리",
-        "img": "image/charimg/2026/Q2/Onegai_AiPri/Minoru_Konomi.jpg"
+        "img": "image/charimg/2026/Q2/Onegai_AiPri/Minoru_Konomi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16292,7 +20412,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "코노미 카렌",
         "animeTitle": "부탁해 아이프리",
-        "img": "image/charimg/2026/Q2/Onegai_AiPri/Karen_Konomi.jpg"
+        "img": "image/charimg/2026/Q2/Onegai_AiPri/Karen_Konomi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16304,12 +20426,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "강아지",
         "animeTitle": "부탁해 아이프리",
-        "img": "image/charimg/2026/Q2/Onegai_AiPri/Koinu.jpg"
+        "img": "image/charimg/2026/Q2/Onegai_AiPri/Koinu.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "치쿠와",
         "animeTitle": "부탁해 아이프리",
-        "img": "image/charimg/2026/Q2/Onegai_AiPri/Chikuwa.jpg"
+        "img": "image/charimg/2026/Q2/Onegai_AiPri/Chikuwa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16321,7 +20447,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "리오리",
         "animeTitle": "부탁해 아이프리",
-        "img": "image/charimg/2026/Q2/Onegai_AiPri/Riori.jpg"
+        "img": "image/charimg/2026/Q2/Onegai_AiPri/Riori.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16333,7 +20461,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아즈밍",
         "animeTitle": "부탁해 아이프리",
-        "img": "image/charimg/2026/Q2/Onegai_AiPri/Azumin.jpg"
+        "img": "image/charimg/2026/Q2/Onegai_AiPri/Azumin.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16345,7 +20475,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "쿄카",
         "animeTitle": "부탁해 아이프리",
-        "img": "image/charimg/2026/Q2/Onegai_AiPri/Kyouka.jpg"
+        "img": "image/charimg/2026/Q2/Onegai_AiPri/Kyouka.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16357,7 +20489,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "코바야카와 사츠키",
         "animeTitle": "부탁해 아이프리",
-        "img": "image/charimg/2026/Q2/Onegai_AiPri/Satsuki_Kobayakawa.jpg"
+        "img": "image/charimg/2026/Q2/Onegai_AiPri/Satsuki_Kobayakawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16369,7 +20503,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "콜레트 루아르",
         "animeTitle": "지팡이와 검의 위스토리아 Season2",
-        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Colette_Loire.jpg"
+        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Colette_Loire.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16381,7 +20517,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "키키",
         "animeTitle": "지팡이와 검의 위스토리아 Season2",
-        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Kiki.jpg"
+        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Kiki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16393,7 +20531,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "콜드론 아누브",
         "animeTitle": "지팡이와 검의 위스토리아 Season2",
-        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Caldron_Anouve.jpg"
+        "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Caldron_Anouve.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16405,7 +20545,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "후도 린",
         "animeTitle": "요자쿠라 일가의 대작전 제2기",
-        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Rin_Fudou.jpg"
+        "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Rin_Fudou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16417,7 +20559,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "쿠라모치 요이치",
         "animeTitle": "다이아몬드 에이스 actII -Second Season-",
-        "img": "image/charimg/2026/Q2/Diamond_no_Ace_act_II_Second_Season/Youichi_Kuramochi.jpg"
+        "img": "image/charimg/2026/Q2/Diamond_no_Ace_act_II_Second_Season/Youichi_Kuramochi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16429,7 +20573,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "리코타 프레스카",
         "animeTitle": "메이드 양은 먹기만 할 뿐",
-        "img": "image/charimg/2026/Q2/Maid-san_wa_Taberu_dake/Ricotta_Fresca.jpg"
+        "img": "image/charimg/2026/Q2/Maid-san_wa_Taberu_dake/Ricotta_Fresca.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16441,7 +20587,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "신게츠 안즈",
         "animeTitle": "메이드 양은 먹기만 할 뿐",
-        "img": "image/charimg/2026/Q2/Maid-san_wa_Taberu_dake/Anzu_Shingetsu.jpg"
+        "img": "image/charimg/2026/Q2/Maid-san_wa_Taberu_dake/Anzu_Shingetsu.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16453,7 +20601,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "하나 사소리죠",
         "animeTitle": "검은 고양이와 마녀의 교실",
-        "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Hana_Sasorijou.jpg"
+        "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Hana_Sasorijou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16465,7 +20615,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "폴룩스 제미니",
         "animeTitle": "검은 고양이와 마녀의 교실",
-        "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Pollux_Gemini.jpg"
+        "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Pollux_Gemini.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16477,7 +20629,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "타치바나 소타",
         "animeTitle": "큰 여자는 좋아하세요",
-        "img": "image/charimg/2026/Q2/Ookii_Onnanoko_wa_Suki_desu_ka/Souta_Tachibana.jpg"
+        "img": "image/charimg/2026/Q2/Ookii_Onnanoko_wa_Suki_desu_ka/Souta_Tachibana.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16489,7 +20643,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "하세가와 아야노",
         "animeTitle": "큰 여자는 좋아하세요",
-        "img": "image/charimg/2026/Q2/Ookii_Onnanoko_wa_Suki_desu_ka/Ayano_Hasegawa.jpg"
+        "img": "image/charimg/2026/Q2/Ookii_Onnanoko_wa_Suki_desu_ka/Ayano_Hasegawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16501,7 +20657,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아사쿠라 사쿠라",
         "animeTitle": "큰 여자는 좋아하세요",
-        "img": "image/charimg/2026/Q2/Ookii_Onnanoko_wa_Suki_desu_ka/Sakura_Asakura.jpg"
+        "img": "image/charimg/2026/Q2/Ookii_Onnanoko_wa_Suki_desu_ka/Sakura_Asakura.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16513,7 +20671,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "테시가와라 쿄카",
         "animeTitle": "큰 여자는 좋아하세요",
-        "img": "image/charimg/2026/Q2/Ookii_Onnanoko_wa_Suki_desu_ka/Kyouka_Teshigawara.jpg"
+        "img": "image/charimg/2026/Q2/Ookii_Onnanoko_wa_Suki_desu_ka/Kyouka_Teshigawara.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16525,7 +20685,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "야마다 사나에",
         "animeTitle": "큰 여자는 좋아하세요",
-        "img": "image/charimg/2026/Q2/Ookii_Onnanoko_wa_Suki_desu_ka/Sanae_Yamada.jpg"
+        "img": "image/charimg/2026/Q2/Ookii_Onnanoko_wa_Suki_desu_ka/Sanae_Yamada.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16537,7 +20699,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "요시다",
         "animeTitle": "음옥단지",
-        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Mamoru_Yoshida.jpg"
+        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Mamoru_Yoshida.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16549,12 +20713,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "하세가와",
         "animeTitle": "음옥단지",
-        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Hasegawa.jpg"
+        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Hasegawa.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "츠지사키",
         "animeTitle": "음옥단지",
-        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Tsujisaki.jpg"
+        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Tsujisaki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16566,7 +20734,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "안도",
         "animeTitle": "음옥단지",
-        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Andou.jpg"
+        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Andou.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16578,7 +20748,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "누마지리",
         "animeTitle": "음옥단지",
-        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Numajiri.jpg"
+        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Numajiri.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16590,7 +20762,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "키리타니",
         "animeTitle": "음옥단지",
-        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Kiritani.jpg"
+        "img": "image/charimg/2026/Q2/Ingoku_Danchi/Kiritani.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16602,7 +20776,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "에리시아",
         "animeTitle": "마물을 먹는 모험가 ~나만 마물을 먹고 강해진다~",
-        "img": "image/charimg/2026/Q2/Mamonogurai_no_Boukensha_Ore_Dake_Mamono_wo_Kuratte_Tsuyoku_Naru/Elyssia.jpg"
+        "img": "image/charimg/2026/Q2/Mamonogurai_no_Boukensha_Ore_Dake_Mamono_wo_Kuratte_Tsuyoku_Naru/Elyssia.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16614,12 +20790,16 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "バイエル",
         "animeTitle": "마물을 먹는 모험가 ~나만 마물을 먹고 강해진다~",
-        "img": "image/charimg/2026/Q2/Mamonogurai_no_Boukensha_Ore_Dake_Mamono_wo_Kuratte_Tsuyoku_Naru/Vaiell.jpg"
+        "img": "image/charimg/2026/Q2/Mamonogurai_no_Boukensha_Ore_Dake_Mamono_wo_Kuratte_Tsuyoku_Naru/Vaiell.jpg",
+        "quarter": "2분기",
+        "year": 2026
       },
       {
         "charName": "후지타",
         "animeTitle": "도로헤도로 시즌 2",
-        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Fujita.jpg"
+        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Fujita.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16631,7 +20811,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "리스",
         "animeTitle": "도로헤도로 시즌 2",
-        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Risu.jpg"
+        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Risu.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16643,7 +20825,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "나츠키",
         "animeTitle": "도로헤도로 시즌 2",
-        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Natsuki.jpg"
+        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Natsuki.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16655,7 +20839,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "카스카베 박사",
         "animeTitle": "도로헤도로 시즌 2",
-        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Kasukabe.jpg"
+        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Kasukabe.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16667,7 +20853,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아스",
         "animeTitle": "도로헤도로 시즌 2",
-        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Asu.jpg"
+        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Asu.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16679,7 +20867,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "아이 콜먼",
         "animeTitle": "도로헤도로 시즌 2",
-        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Ai_Coleman.jpg"
+        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Ai_Coleman.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16691,7 +20881,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "사지",
         "animeTitle": "도로헤도로 시즌 2",
-        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Saji.jpg"
+        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Saji.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16703,7 +20895,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "톤",
         "animeTitle": "도로헤도로 시즌 2",
-        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Ton.jpg"
+        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Ton.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16715,7 +20909,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "우시시마다",
         "animeTitle": "도로헤도로 시즌 2",
-        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Ushishimada.jpg"
+        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Ushishimada.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16727,7 +20923,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "키쿠라게",
         "animeTitle": "도로헤도로 시즌 2",
-        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Kikurage.jpg"
+        "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Kikurage.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16739,7 +20937,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "발미나 디어 녹스",
         "animeTitle": "경멸하는 표정으로 팬티를 보여다오 R(리턴즈)",
-        "img": "image/charimg/2026/Q2/Iya_na_Kao_sare_nagara_Opantsu_Misete_Moraitai_Returns/Valmina_Nox.jpg"
+        "img": "image/charimg/2026/Q2/Iya_na_Kao_sare_nagara_Opantsu_Misete_Moraitai_Returns/Valmina_Nox.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16751,7 +20951,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "쿠로세 사키",
         "animeTitle": "경멸하는 표정으로 팬티를 보여다오 R(리턴즈)",
-        "img": "image/charimg/2026/Q2/Iya_na_Kao_sare_nagara_Opantsu_Misete_Moraitai_Returns/Saki_Kurose.jpg"
+        "img": "image/charimg/2026/Q2/Iya_na_Kao_sare_nagara_Opantsu_Misete_Moraitai_Returns/Saki_Kurose.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   },
@@ -16763,7 +20965,9 @@ const CharacterVoiceData_2026 = {
       {
         "charName": "키사라기 코코로",
         "animeTitle": "경멸하는 표정으로 팬티를 보여다오 R(리턴즈)",
-        "img": "image/charimg/2026/Q2/Iya_na_Kao_sare_nagara_Opantsu_Misete_Moraitai_Returns/Kokoro_Kisaragi.jpg"
+        "img": "image/charimg/2026/Q2/Iya_na_Kao_sare_nagara_Opantsu_Misete_Moraitai_Returns/Kokoro_Kisaragi.jpg",
+        "quarter": "2분기",
+        "year": 2026
       }
     ]
   }

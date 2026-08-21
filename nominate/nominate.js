@@ -29,7 +29,7 @@ const DAY_KEYS = ["Mondays", "Tuesdays", "Wednesdays", "Thursdays", "Fridays", "
 // 분기 정렬 순서 (데이터의 quarter가 이미 "1분기" 한글임)
 const QUARTER_ORDER = ["1분기", "2분기", "3분기", "4분기", "변칙 편성", "기타"];
 
-// [중요] 평탄화된 AnimeList를 분기별로 그룹화 (Grouping)
+// ✅ 수정: AnimeList_2026 하드코딩 → resolveYear.js가 만든 별칭 AnimeList 사용
 const SeasonFilteredList = SeasonFilter.filterAnimeList(AnimeList);
 
 const AnimeByQuarter = SeasonFilteredList.reduce((acc, anime) => {
@@ -49,27 +49,22 @@ function renderStep1(filterText = "") {
     
     const isSearching = filterText.length > 0;
 
-    // 정의된 분기 순서대로 출력 (데이터에 없는 분기는 건너뜀)
     QUARTER_ORDER.forEach(qKey => {
         const animeList = AnimeByQuarter[qKey];
-        if (!animeList) return; // 해당 분기 데이터 없으면 패스
+        if (!animeList) return;
 
-        // 검색 필터 적용
         const filteredList = animeList.filter(a => a.title.toLowerCase().includes(filterText.toLowerCase()));
         if (filteredList.length === 0 && isSearching) return;
         
         const targetList = isSearching ? filteredList : animeList;
 
-        // 분기 섹션 생성
         const qSection = document.createElement("div");
         qSection.className = "quarter-section";
 
-        // 분기 버튼
         const qBtn = document.createElement("button");
         qBtn.className = `quarter-btn ${isSearching ? 'active' : ''}`;
         qBtn.innerHTML = `<span>${qKey}</span> <span>▼</span>`;
 
-        // 분기 내용 컨테이너
         const qContent = document.createElement("div");
         qContent.className = "quarter-content";
         qContent.style.display = isSearching ? "block" : "none";
@@ -80,7 +75,6 @@ function renderStep1(filterText = "") {
             qBtn.classList.toggle("active", !isVisible);
         };
 
-        // 요일별 루프
         DAY_KEYS.forEach(dKey => {
             const dayAnimes = targetList.filter(a => a.day === dKey);
             if (dayAnimes.length === 0) return;
@@ -127,7 +121,6 @@ function createCard(anime) {
 
     card.className = `card ${isSelected ? 'selected' : ''}`;
 
-    // ✅ Firebase 연동용 data 속성
     card.setAttribute('data-category', nominateState.awardName);
     card.setAttribute('data-anime-id', anime.title);
 
@@ -177,33 +170,28 @@ function updatePreview() {
     const nextBtn = document.getElementById("step1-next-btn");
     
     if(!previewBox) return;
-    previewBox.innerHTML = ""; // 기존 내용 비우기
+    previewBox.innerHTML = "";
     
-    // 선택된 항목이 없을 때 가이드 문구 (성우 페이지 스타일)
     if (nominateState.selectedItems.length === 0) {
         previewBox.innerHTML = `<div style="color:#666; text-align:center; padding-top:20px; font-size:0.85rem;">후보를 선택해주세요</div>`;
         if(nextBtn) nextBtn.disabled = true;
         return;
     }
 
-    // 성우 페이지 방식: div 생성 후 appendChild
     nominateState.selectedItems.forEach(anime => {
         const div = document.createElement("div");
         div.className = "preview-item";
         
-        // 성우 페이지와 동일하게 제목을 배치 (감독/성우 대신 애니메이션 제목만)
         div.innerHTML = `
             <div class="preview-title">${anime.title}</div>
             <div class="preview-subtitle">${anime.quarter}</div>
         `;
         
         div.onclick = () => {
-            // Step 1에서만 삭제 가능
             if (nominateState.step === 1) {
                 nominateState.selectedItems = nominateState.selectedItems.filter(a => a.id !== anime.id);
                 updatePreview();
                 
-                // 메인 그리드 카드 상태 동기화
                 const searchVal = document.getElementById('search-input')?.value || "";
                 renderStep1(searchVal);
             }
@@ -220,22 +208,19 @@ function updatePreview() {
 function goStep2() {
     nominateState.step = 2;
     
-    // 1. 버튼 교체
     toggleElement("nav-home-btn", false);
     toggleElement("step1-next-btn", false);
     toggleElement("step2-back-btn", true);
     toggleElement("step2-award-btn", true);
     
-    // [추가] Step 2 진입 시 검색창과 프리뷰 박스 숨기기
-    toggleElement("search-container-wrapper", false); // 검색창 부모 컨테이너가 있다면 ID 지정 권장
-    // 또는 공통 클래스나 요소를 직접 선택
+    // ✅ 삭제: 존재 여부 불확실한 "search-container-wrapper" 대상 죽은 코드 제거
+    //         (바로 아래 querySelector('.search-container')로 실제 처리됨)
     const searchArea = document.querySelector('.search-container');
     const previewArea = document.getElementById("preview-box");
     
     if(searchArea) searchArea.classList.add("hidden");
     if(previewArea) previewArea.classList.add("hidden");
 
-    // 2. 왼쪽 메인 영역 교체
     const leftArea = document.getElementById("left-area");
     leftArea.innerHTML = "";
     
@@ -263,7 +248,6 @@ function goStep1() {
     toggleElement("step2-back-btn", false);
     toggleElement("step2-award-btn", false);
     
-    // [추가] Step 1 복귀 시 검색창과 프리뷰 박스 다시 표시
     const searchArea = document.querySelector('.search-container');
     const previewArea = document.getElementById("preview-box");
     
@@ -273,7 +257,6 @@ function goStep1() {
     const awardBtn = document.getElementById("step2-award-btn");
     if(awardBtn) awardBtn.disabled = true;
 
-    // 검색어 초기화 후 렌더링
     const searchInput = document.getElementById('search-input');
     if(searchInput) searchInput.value = ""; 
     renderStep1();
@@ -300,6 +283,7 @@ if(searchInput) {
             autocompleteList.innerHTML = '';
             if (!val) return;
             
+            // ✅ 수정: AnimeList_2026 → AnimeList
             AnimeList.filter(a => a.title.toLowerCase().includes(val.toLowerCase())).slice(0, 5).forEach(match => {
                 const div = document.createElement("div");
                 div.textContent = match.title;
@@ -321,24 +305,19 @@ function openAwardPopup() {
     const winner = nominateState.selectedWinner;
     if (!winner) return;
 
-    // 이미지 및 기본 정보
     const modalImg = document.getElementById("modal-img");
     if(modalImg) modalImg.src = `../${winner.thumbnail}`;
     
     const modalTitle = document.getElementById("modal-title");
     if(modalTitle) modalTitle.textContent = winner.title;
     
-    // [중요] 변경된 데이터 구조 매핑 (staff 객체 접근)
-    // 1. 분기: 데이터에 "1분기"라고 되어 있으므로 그대로 사용
     setText("modal-quarter", winner.quarter);
     
-    // 2. 감독: staff.director 배열을 문자열로 결합 (데이터가 없을 경우 방어 코드 작성)
     const directorText = (winner.staff && winner.staff.director) 
         ? winner.staff.director.join(", ") 
         : "정보 없음";
     setText("modal-director", directorText);
 
-    // 3. 제작사
     setText("modal-studio", winner.studio || "-");
     
     const modal = document.getElementById("winner-modal");
@@ -354,7 +333,7 @@ function setText(id, text) {
 }
 
 function saveAwardResult(winner) {
-    const currentResults = ResultStorage.getResults();   // ← 수정
+    const currentResults = ResultStorage.getResults();
     const awardName = nominateState.awardName; 
 
     const top3Ranks = ["대상", "최우수상", "우수상"];
@@ -380,7 +359,7 @@ function saveAwardResult(winner) {
         currentResults[awardName] = { title: winner.title, thumbnail: finalThumb };
     }
 
-    ResultStorage.saveResults(currentResults);   // ← 수정
+    ResultStorage.saveResults(currentResults);
     console.log("Saved:", awardName, winner.title);
 
     if (window.submitSingleAwardToDB) {
@@ -393,7 +372,6 @@ function fireConfetti() {
     const end = Date.now() + duration;
 
     (function frame() {
-        // 왼쪽에서 발사
         confetti({
             particleCount: 3,
             angle: 60,
@@ -402,7 +380,6 @@ function fireConfetti() {
             zIndex: 9999,
             colors: ['#d4af37', '#ffffff']
         });
-        // 오른쪽에서 발사
         confetti({
             particleCount: 3,
             angle: 120,
@@ -436,9 +413,6 @@ if(btnHome) btnHome.onclick = () => location.href = "../index.html";
 const btnGoMain = document.getElementById("go-main-btn");
 if(btnGoMain) btnGoMain.onclick = () => location.href = "../index.html";
 
-// 초기 실행
-renderStep1();
-
 // ──────────────────────────────────────────────────────────
 // Firebase 실시간 득표율 뱃지
 // ──────────────────────────────────────────────────────────
@@ -462,7 +436,7 @@ function applyVoteBadges() {
 function listenToVoteRates() {
     if (!window.fbOnValue || !window.fbDB) return;
 
-    const categoryRef = window.fbRef(window.fbDB, `votes/categories/${nominateState.awardName}`);
+    const categoryRef = window.fbRef(window.fbDB, window.getVotesCategoryPath(nominateState.awardName));
 
     window.fbOnValue(categoryRef, (snapshot) => {
         cachedVoteData = snapshot.val() || {};
@@ -478,5 +452,6 @@ function waitForFirebaseAndListen() {
     }
 }
 
+// ✅ 수정: renderStep1() 중복 호출 제거 (기존엔 이 지점과 파일 상단 "초기 실행" 두 군데서 호출됨)
 waitForFirebaseAndListen();
 renderStep1();

@@ -9,6 +9,9 @@ const charState = {
   awardName: ""
 };
 
+// ✅ 다른 nominate 페이지들과 통일: 득표율 캐시 변수
+let cachedVoteData = null;
+
 // 매핑 데이터
 const QUARTER_MAP = { "Q1": "1분기", "Q2": "2분기", "Q3": "3분기", "Q4": "4분기" };
 const DAY_LABELS = {
@@ -23,7 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
     charState.theme = params.get("theme") || "character_male";
     charState.awardName = params.get("awardName") || "올해의 주연상";
 
-    // 데이터 준비
     const genderKey = charState.theme.includes("female") ? "female"
                 : charState.theme.includes("male")   ? "male"
                 : "all";
@@ -40,7 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
         modalAwardEl.textContent = charState.awardName;
     }
 
-    // 실시간 검색 기능 바인딩
     const searchInput = document.getElementById("search-input");
     searchInput.disabled = false;
     searchInput.placeholder = "캐릭터/애니 제목 검색";
@@ -48,8 +49,9 @@ document.addEventListener("DOMContentLoaded", () => {
         renderStep1(e.target.value);
     });
 
-    renderStep1(); 
+    renderStep1();
     bindEvents();
+    waitForFirebaseAndListen();   // ✅ 다른 파일들과 통일: DOMContentLoaded 안에서 호출
 });
 
 /**
@@ -64,7 +66,6 @@ function renderStep1(searchTerm = "") {
                 : "all";
     let flatData = getNormalizedCharData(genderKey);
 
-    // 검색어 필터링 로직 (캐릭터 이름 또는 애니메이션 제목)
     if (searchTerm.trim() !== "") {
         const lowerTerm = searchTerm.toLowerCase().trim();
         flatData = flatData.filter(char => 
@@ -82,7 +83,6 @@ function renderStep1(searchTerm = "") {
     const isSearching = searchTerm.trim() !== "";
 
     Object.entries(hierarchy).forEach(([qName, days]) => {
-        // 1단계: 분기(Quarter)
         const qSection = document.createElement("div");
         qSection.className = "quarter-section";
 
@@ -92,7 +92,6 @@ function renderStep1(searchTerm = "") {
         const qContent = document.createElement("div");
         qContent.className = "quarter-content";
         
-        // 검색 중이면 자동 펼침
         if (isSearching) {
             qContent.style.display = "block";
             qBtn.classList.add("active");
@@ -109,7 +108,6 @@ function renderStep1(searchTerm = "") {
             qBtn.querySelector("span:last-child").textContent = isOpen ? "▼" : "▲";
         };
 
-        // 2단계: 요일(Day)
         Object.entries(days).forEach(([dName, animes]) => {
             const dBtn = document.createElement("button");
             dBtn.className = "day-btn";
@@ -133,7 +131,6 @@ function renderStep1(searchTerm = "") {
                 dBtn.querySelector("span:last-child").textContent = isOpen ? "▼" : "▲";
             };
 
-            // 3단계: 애니메이션 제목(Anime Title)
             Object.entries(animes).forEach(([aTitle, charList]) => {
                 const aBtn = document.createElement("button");
                 aBtn.className = "anime-btn";
@@ -155,7 +152,6 @@ function renderStep1(searchTerm = "") {
                     aBtn.querySelector("span:last-child").textContent = aContent.classList.contains("active") ? "▲" : "▼";
                 };
 
-                // 4단계: 캐릭터 카드
                 charList.forEach(char => {
                     const card = document.createElement("div");
                     card.className = "card";
@@ -165,7 +161,6 @@ function renderStep1(searchTerm = "") {
                         card.classList.add("selected");
                     }
 
-                    // 검색어 하이라이트 처리 (선택 사항)
                     let displayName = char.name;
                     if (isSearching) {
                         const regex = new RegExp(searchTerm.trim(), "gi");
@@ -204,6 +199,8 @@ function renderStep1(searchTerm = "") {
         qSection.appendChild(qContent);
         left.appendChild(qSection);
     });
+
+    applyVoteBadges();   // ✅ 추가: 재렌더링(검색 등) 후에도 캐시된 득표율 즉시 반영
 }
 
 /**
@@ -237,7 +234,7 @@ function updatePreview() {
 
   nextBtn.disabled = false;
   charState.selectedItems.forEach(char => {
-    const item = document.createElement("div"); // span에서 div로 변경하여 block 처리
+    const item = document.createElement("div");
     item.className = "preview-item";
     item.innerHTML = `
         ${char.name}
@@ -245,10 +242,8 @@ function updatePreview() {
     `;
     
     item.onclick = () => {
-      // 삭제 로직
       charState.selectedItems = charState.selectedItems.filter(s => s.id !== char.id);
       
-      // 메인 화면 카드 UI 체크 해제
       const targetCard = document.querySelector(`.card[data-char-id="${char.id}"]`);
       if (targetCard) targetCard.classList.remove("selected");
       
@@ -270,7 +265,6 @@ function goStep2() {
 
     const left = document.getElementById("left-area");
 
-    // Step 2 컨테이너 생성 (타이틀 추가)
     left.innerHTML = `
         <h2 style="color:var(--gold); margin-bottom:20px; font-size: 1.5rem; text-align: left;">최종 수상작을 선택하세요</h2>
         <div id="step2-grid"></div>
@@ -280,9 +274,13 @@ function goStep2() {
 
     charState.selectedItems.forEach(char => {
         const card = document.createElement("div");
-        card.className = "step2-char-card"; // 전용 디자인 클래스 적용
+        card.className = "step2-char-card";
+
+        card.setAttribute('data-category', charState.awardName);   // ✅ 추가: Step2 카드도 뱃지 매칭 가능하도록
+        card.setAttribute('data-anime-id', char.name);
 
         card.innerHTML = `
+            <div class="card-selection-rate" style="display:none;">0/0</div>
             <div class="card-badge">CV. ${char.cv}</div>
             <div class="card-thumb">
                 <img src="../${char.thumbnail}" alt="${char.name}" onerror="this.src='https://via.placeholder.com/200x280?text=No+Img'">
@@ -296,10 +294,11 @@ function goStep2() {
         card.onclick = () => selectFinalWinner(char, card);
         grid.appendChild(card);
     });
+
+    applyVoteBadges();   // ✅ 추가: Step2 진입 시에도 뱃지 반영
 }
 
 function selectFinalWinner(char, cardElement) {
-    // 기존 .card 대신 .step2-char-card를 타겟팅
     document.querySelectorAll("#step2-grid .step2-char-card").forEach(c => c.classList.remove("selected"));
     cardElement.classList.add("selected");
     charState.finalWinner = char;
@@ -335,7 +334,6 @@ function openAwardPopup() {
   const winner = charState.finalWinner;
   if (!winner) return;
 
-  // LocalStorage 저장
   ResultStorage.saveOne(charState.awardName, { 
     name: winner.name, 
     anime: winner.animeTitle, 
@@ -343,7 +341,6 @@ function openAwardPopup() {
     cv: winner.cv
   });
 
-  // 모달 내용 업데이트
   document.getElementById("modal-img").src = `../${winner.thumbnail}`;
   document.getElementById("modal-title").textContent = winner.name;
   document.getElementById("modal-anime").textContent = winner.animeTitle;
@@ -362,7 +359,6 @@ function fireConfetti() {
     const end = Date.now() + duration;
 
     (function frame() {
-        // 왼쪽에서 발사
         confetti({
             particleCount: 3,
             angle: 60,
@@ -371,7 +367,6 @@ function fireConfetti() {
             zIndex: 9999,
             colors: ['#d4af37', '#ffffff']
         });
-        // 오른쪽에서 발사
         confetti({
             particleCount: 3,
             angle: 120,
@@ -403,18 +398,19 @@ function bindEvents() {
 }
 
 /**
- * 5. 데이터 처리 (기존 로직 유지)
+ * 5. 데이터 처리
  */
 function getNormalizedCharData(genderKey) {
   const result = [];
+  // ✅ 수정: CharacterData_2026 하드코딩 → resolveYear.js가 만든 별칭 CharacterData 사용
   if (typeof CharacterData === 'undefined' || typeof AnimeList === 'undefined') return result;
 
   const charMap = {};
   CharacterData.forEach(item => charMap[String(item.id)] = item.characters || []);
 
-  const seasonAnimeList = SeasonFilter.filterAnimeList(AnimeList); // ← 추가
+  const seasonAnimeList = SeasonFilter.filterAnimeList(AnimeList);
 
-  seasonAnimeList.forEach(anime => {   // ← AnimeList → seasonAnimeList로 수정
+  seasonAnimeList.forEach(anime => {
     const animeId = String(anime.id);
     const characters = charMap[animeId];
     if (characters && Array.isArray(characters)) {
@@ -454,29 +450,34 @@ function groupByHierarchy(data) {
   return grouped;
 }
 
+// ──────────────────────────────────────────────────────────
+// Firebase 실시간 득표율 뱃지 (다른 nominate 페이지들과 통일된 캐시 패턴)
+// ──────────────────────────────────────────────────────────
+function applyVoteBadges() {
+    if (!cachedVoteData) return;
+
+    const total = cachedVoteData._participants || 0;
+
+    document.querySelectorAll('.card').forEach(card => {
+        const animeId = card.getAttribute('data-anime-id');
+        const rateBadge = card.querySelector('.card-selection-rate');
+        if (!rateBadge || !animeId) return;
+
+        const count = cachedVoteData[animeId] || 0;
+        const percent = total > 0 ? Math.round((count / total) * 100) : 0;
+        rateBadge.innerText = `${percent}%`;
+        rateBadge.style.display = "block";
+    });
+}
+
 function listenToVoteRates() {
     if (!window.fbOnValue || !window.fbDB) return;
 
-    const awardName = charState.awardName; // charNominate는 charState.awardName
-
-    // ✅ sanitizeKey 제거 - DB에 저장된 키 그대로 사용
-    const categoryRef = window.fbRef(window.fbDB, `votes/categories/${awardName}`);
+    const categoryRef = window.fbRef(window.fbDB, window.getVotesCategoryPath(charState.awardName));
 
     window.fbOnValue(categoryRef, (snapshot) => {
-        const data = snapshot.val() || {};
-        const total = data._participants || 0;
-
-        document.querySelectorAll('.card').forEach(card => {
-            const animeId = card.getAttribute('data-anime-id');
-            const rateBadge = card.querySelector('.card-selection-rate');
-
-            if (!rateBadge || !animeId) return;
-
-            const count = data[animeId] || 0;
-            const percent = total > 0 ? Math.round((count / total) * 100) : 0;
-            rateBadge.innerText = `${percent}%`;
-            rateBadge.style.display = "block";
-        });
+        cachedVoteData = snapshot.val() || {};
+        applyVoteBadges();
     });
 }
 
@@ -487,4 +488,3 @@ function waitForFirebaseAndListen() {
         setTimeout(waitForFirebaseAndListen, 300);
     }
 }
-waitForFirebaseAndListen();

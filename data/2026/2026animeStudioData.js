@@ -1,4 +1,4 @@
-const AnimeStudioData_2026 = [
+var AnimeStudioData_2026 = [
   {
     "studio": "8-Bit",
     "studio_img": "image/studio/8-Bit.avif",

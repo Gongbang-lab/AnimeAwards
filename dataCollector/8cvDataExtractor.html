@@ -54,8 +54,8 @@
         </div>
     </div>
 
-    <script src="../data/animeData.js"></script>
-    <script src="../data/animeCharacterData.js"></script>
+    <script src="../data/2026/2026animeData.js"></script>
+    <script src="../data/2026/2026animeCharacterData.js"></script>
 
     <script>
 let generatedCode = ""; // 생성된 코드를 저장할 변수
@@ -68,19 +68,29 @@ document.getElementById('extract-btn').onclick = function() {
     const charCount = document.getElementById('char-count');
     
     try {
-        if (typeof AnimeList === 'undefined' || typeof CharacterData === 'undefined') {
+        if (typeof AnimeList_2026 === 'undefined' || typeof CharacterData_2026 === 'undefined') {
             throw new Error("데이터 파일(js)을 로드할 수 없습니다.");
         }
 
-        const animeTitleMap = {};
-        AnimeList.forEach(anime => { animeTitleMap[String(anime.id)] = anime.title; });
+        // 작품 id -> { title, quarter, year } 매핑
+        const animeInfoMap = {};
+        AnimeList_2026.forEach(anime => {
+            animeInfoMap[String(anime.id)] = {
+                title: anime.title,
+                quarter: anime.quarter,
+                year: anime.year
+            };
+        });
 
         const actorMap = {};
         let processedCount = 0;
 
-        CharacterData.forEach(animeEntry => {
+        CharacterData_2026.forEach(animeEntry => {
             const animeId = String(animeEntry.id);
-            const animeTitle = animeTitleMap[animeId] || animeEntry.title;
+            const animeInfo = animeInfoMap[animeId] || {};
+            const animeTitle = animeInfo.title || animeEntry.title;
+            const quarter = animeInfo.quarter || "";
+            const year = animeInfo.year || "";
             const characters = animeEntry.characters || [];
 
             characters.forEach(char => {
@@ -100,7 +110,9 @@ document.getElementById('extract-btn').onclick = function() {
                     actorMap[actorName].characters.push({
                         charName: char.name,
                         animeTitle: animeTitle,
-                        img: char.img
+                        img: char.img,
+                        quarter: quarter,
+                        year: year
                     });
                 }
             });
@@ -108,7 +120,7 @@ document.getElementById('extract-btn').onclick = function() {
         });
 
         // 텍스트 생성
-        generatedCode = "const CharacterVoiceData = " + JSON.stringify(actorMap, null, 2) + ";";
+        generatedCode = "const CharacterVoiceData_2026 = " + JSON.stringify(actorMap, null, 2) + ";";
         
         // UI 업데이트
         previewArea.textContent = generatedCode;

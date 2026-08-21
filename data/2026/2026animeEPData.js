@@ -1,4 +1,4 @@
-const animeEPData_2026 = {
+var animeEPData_2026 = {
 "61886": [
     {
         "episode no": "제1화",
