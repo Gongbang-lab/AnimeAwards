@@ -342,7 +342,7 @@
     
     // 썸네일 경로에 year 추가 반영
     const autoThumbnail = title 
-      ? (isMovie ? `image/cinema/${title}.webp` : `image/animeimg/${year}/Q${qKey}/${title}.webp`)
+      ? (isMovie ? `image/cinema/${year}/${title}.webp` : `image/animeimg/${year}/Q${qKey}/${title}.webp`)
       : "";
 
     const writerField = currentAnime.isOriginal ? "scriptwriter" : "adaptor";

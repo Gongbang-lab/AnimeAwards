@@ -2831,7 +2831,7 @@ var AnimeList_2026 = [
     "id": 59970,
     "year": 2026,
     "title": "전생했더니 슬라임이었던 건에 대하여 4기",
-    "quarter": "2분기",
+    "quarter": "2분기, 3분기",
     "thumbnail": "image/animeimg/2026/Q2/전생했더니 슬라임이었던 건에 대하여 4기.webp",
     "day": "Fridays",
     "episodes": 0,
@@ -2890,7 +2890,7 @@ var AnimeList_2026 = [
     "id": 62981,
     "year": 2026,
     "title": "신의 물방울",
-    "quarter": "2분기",
+    "quarter": "2분기, 3분기",
     "thumbnail": "image/animeimg/2026/Q2/신의 물방울.webp",
     "day": "Fridays",
     "episodes": 24,
@@ -3028,7 +3028,7 @@ var AnimeList_2026 = [
     "id": 57466,
     "year": 2026,
     "title": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
-    "quarter": "2분기",
+    "quarter": "2분기, 3분기",
     "thumbnail": "image/animeimg/2026/Q2/책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~.webp",
     "day": "Saturdays",
     "episodes": 0,
@@ -3065,7 +3065,7 @@ var AnimeList_2026 = [
     "id": 60310,
     "year": 2026,
     "title": "마계학교 이루마군 4기",
-    "quarter": "2분기",
+    "quarter": "2분기, 3분기",
     "thumbnail": "image/animeimg/2026/Q2/마계학교 이루마군 4기.webp",
     "day": "Saturdays",
     "episodes": 24,
@@ -3203,7 +3203,7 @@ var AnimeList_2026 = [
     "id": 62001,
     "year": 2026,
     "title": "황천의 츠가이",
-    "quarter": "2분기",
+    "quarter": "2분기, 3분기",
     "thumbnail": "image/animeimg/2026/Q2/황천의 츠가이.webp",
     "day": "Saturdays",
     "episodes": 24,
@@ -3229,10 +3229,10 @@ var AnimeList_2026 = [
     "id": 62048,
     "year": 2026,
     "title": "마오",
-    "quarter": "2분기",
+    "quarter": "2분기, 3분기",
     "thumbnail": "image/animeimg/2026/Q2/마오.webp",
     "day": "Saturdays",
-    "episodes": 0,
+    "episodes": 26,
     "studio": [
       "선라이즈"
     ],
@@ -4326,7 +4326,7 @@ var AnimeList_2026 = [
   "title": "올 워크스 메이드 입니다",
   "year": 2026,
   "quarter": "3분기",
-  "thumbnail": "image/animeimg/2026/Q3/히로인? 성녀? 아니요, 올 워크스 메이드 입니다(자랑)!.webp",
+  "thumbnail": "image/animeimg/2026/Q3/올 워크스 메이드 입니다.webp",
   "day": "Wednesdays",
   "episodes": 12,
   "studio": [
@@ -4733,4 +4733,988 @@ var AnimeList_2026 = [
     ]
   }
 },
+{
+  "id": 59741,
+  "title": "추방 당한 전생 중기사는 게임 지식으로 무쌍한다",
+  "year": 2026,
+  "quarter": "3분기, 4분기",
+  "thumbnail": "image/animeimg/2026/Q3/추방 당한 전생 중기사는 게임 지식으로 무쌍한다.webp",
+  "day": "Fridays",
+  "episodes": 26,
+  "studio": [
+    "GoHands"
+  ],
+  "staff": {
+    "director": [
+      "스즈키 신고",
+      "요코미네 카츠마사",
+      "야마기시 테츠이치"
+    ],
+    "adaptor": [
+      "야마기시 테츠이치"
+    ],
+    "character_design": [
+      "타니 케이지",
+      "우치다 타카유키"
+    ],
+    "composer": [
+      "Ludvig Forssell"
+    ]
+  }
+},
+{
+  "id": 63403,
+  "title": "담배 고양이",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/담배 고양이.webp",
+  "day": "Fridays",
+  "episodes": 0,
+  "studio": [
+    "바이브리 애니메이션 스튜디오"
+  ],
+  "staff": {
+    "director": [
+      "키무라 타쿠"
+    ],
+    "adaptor": [
+      "아오시마 타카시"
+    ],
+    "character_design": [
+      "마츠우라 리키"
+    ],
+    "composer": [
+      "스즈키 케이이치"
+    ]
+  }
+},
+{
+  "id": 63150,
+  "title": "소녀 괴수 캐러멜리제",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/소녀 괴수 캐러멜리제.webp",
+  "day": "Fridays",
+  "episodes": 12,
+  "studio": [
+    "라이덴 필름"
+  ],
+  "staff": {
+    "director": [
+      "오오미네 테루유키"
+    ],
+    "adaptor": [
+      "아야나 유니코"
+    ],
+    "character_design": [
+      "나카야마 미츠미"
+    ],
+    "composer": [
+      "후루하시 유키",
+      "Shinnosuke Nakasone"
+    ]
+  }
+},
+{
+  "id": 62078,
+  "title": "영민 0명 스타트 변경 영주님",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/영민 0명 스타트 변경 영주님.webp",
+  "day": "Fridays",
+  "episodes": 12,
+  "studio": [
+    "animation studio42"
+  ],
+  "staff": {
+    "director": [
+      "이마이즈미 켄이치"
+    ],
+    "adaptor": [
+      "오카다 쿠니히코"
+    ],
+    "character_design": [
+      "츠보야마 케이이치"
+    ],
+    "composer": [
+      "사쿠라기 사키코"
+    ]
+  }
+},
+{
+  "id": 60059,
+  "title": "도망을 잘 치는 도련님 2기",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/도망을 잘 치는 도련님 2기.webp",
+  "day": "Fridays",
+  "episodes": 12,
+  "studio": [
+    "CloverWorks"
+  ],
+  "staff": {
+    "director": [
+      "야마자키 유타",
+      "카와카미 유스케"
+    ],
+    "adaptor": [
+      "토미타 요리코"
+    ],
+    "character_design": [
+      "니시야 야스시"
+    ],
+    "composer": [
+      "GEMBI",
+      "타테야마 아키유키"
+    ]
+  }
+},
+{
+  "id": 61280,
+  "title": "이거 그리고 죽어",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/이거 그리고 죽어.webp",
+  "day": "Fridays",
+  "episodes": 12,
+  "studio": [
+    "신에이 동화"
+  ],
+  "staff": {
+    "director": [
+      "아카기 히로아키"
+    ],
+    "adaptor": [
+      "후쿠다 히로코"
+    ],
+    "character_design": [
+      "세가와 타케히사"
+    ],
+    "composer": [
+      "츠츠미 히로아키"
+    ]
+  }
+},
+{
+  "id": 63061,
+  "title": "우리 남동생들이 죄송합니다",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/우리 남동생들이 죄송합니다.webp",
+  "day": "Saturdays",
+  "episodes": 24,
+  "studio": [
+    "Lay-duce"
+  ],
+  "staff": {
+    "director": [
+      "난바 히토시"
+    ],
+    "adaptor": [
+      "시미즈 메구미"
+    ],
+    "character_design": [
+      "히라이와 시오리",
+      "후쿠시마 요코"
+    ],
+    "composer": [
+      "긴"
+    ]
+  }
+},
+{
+  "id": 63817,
+  "title": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~ 2기",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~ 2기.webp",
+  "day": "Saturdays",
+  "episodes": 13,
+  "studio": [
+    "요코하마 애니메이션 랩"
+  ],
+  "staff": {
+    "director": [
+      "타마가와 마코토"
+    ],
+    "adaptor": [
+      "타니무라 다이시로"
+    ],
+    "character_design": [
+      "츠시마 케이",
+      "시키베 미요코",
+      "이츠보 유나"
+    ],
+    "composer": [
+      "츠치다 미사키",
+      "카나자키 모유",
+      "나카지마 준코",
+      "사쿠마 카나데",
+      "아베 레이코",
+      "사와다 카호",
+      "보우 데미안",
+      "타나카 츠구미",
+      "후쿠히로 슈이치로",
+      "쿠리하라 마요",
+      "미키 신"
+    ]
+  }
+},
+{
+  "id": 56835,
+  "title": "코드 기아스 탈환의 로제",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/코드 기아스 탈환의 로제.webp",
+  "day": "Fridays",
+  "episodes": 12,
+  "studio": [
+    "선라이즈"
+  ],
+  "staff": {
+    "director": [
+      "오오하시 요시미츠"
+    ],
+    "scriptwriter": [
+      "키무라 노보루"
+    ],
+    "character_design": [
+      "키무라 타카히로",
+      "시마무라 히데카즈"
+    ],
+    "composer": [
+      "카와이 켄지"
+    ]
+  }
+},
+{
+  "id": 61048,
+  "title": "고양이와 용",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/고양이와 용.webp",
+  "day": "Saturdays",
+  "episodes": 12,
+  "studio": [
+    "OLM"
+  ],
+  "staff": {
+    "director": [
+      "오진구"
+    ],
+    "adaptor": [
+      "히로타 미츠타카"
+    ],
+    "character_design": [
+      "쿠라카즈 치아키",
+      "니시노 리에",
+      "쿠로사와 히로미"
+    ],
+    "composer": [
+      "오바타 마사히로"
+    ]
+  }
+},
+{
+  "id": 61169,
+  "title": "블랙 토치",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/블랙 토치.webp",
+  "day": "Saturdays",
+  "episodes": 0,
+  "studio": [
+    "100studio"
+  ],
+  "staff": {
+    "director": [
+      "우마비키 케이"
+    ],
+    "adaptor": [
+      "이치카와 기가에몬"
+    ],
+    "character_design": [
+      "스즈키 고",
+      "나카무라 유미",
+      "스즈키 마사히코",
+      "키노시타 마리코"
+    ],
+    "composer": [
+      "야마다 유타카"
+    ]
+  }
+},
+{
+  "id": 63324,
+  "title": "이와모토 선배의 추천",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/이와모토 선배의 추천.webp",
+  "day": "Saturdays",
+  "episodes": 0,
+  "studio": [
+    "스튜디오 딘"
+  ],
+  "staff": {
+    "director": [
+      "카와세 토시후미"
+    ],
+    "adaptor": [
+      "오오치 케이이치로"
+    ],
+    "character_design": [
+      "나카지마 아츠코"
+    ],
+    "composer": [
+      "데와 요시아키",
+      "이시즈카 토오루"
+    ]
+  }
+},
+{
+  "id": 60636,
+  "title": "블리치 천년혈전 편 : 화진담",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/블리치 천년혈전 편 화진담.webp",
+  "day": "Saturdays",
+  "episodes": 10,
+  "studio": [
+    "피에로 필름스"
+  ],
+  "staff": {
+    "director": [
+      "타구치 토모히사",
+      "무라타 히카루"
+    ],
+    "adaptor": [
+      "타구치 토모히사",
+      "히라마츠 마사키"
+    ],
+    "character_design": [
+      "쿠도 마사시"
+    ],
+    "composer": [
+      "사기스 시로"
+    ]
+  }
+},
+{
+  "id": 61483,
+  "title": "천막의 자두가르",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/천막의 자두가르.webp",
+  "day": "Saturdays",
+  "episodes": 0,
+  "studio": [
+    "사이언스 SARU"
+  ],
+  "staff": {
+    "director": [
+      "야마다 나오코",
+      "아벨 공고라"
+    ],
+    "adaptor": [
+      "카토 칸이치"
+    ],
+    "character_design": [
+      "요시다 켄이치"
+    ],
+    "composer": [
+      "히노 코시로"
+    ]
+  }
+},
+{
+  "id": 62051,
+  "title": "그로우 업 쇼 ~해바라기 서커스단~",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/그로우 업 쇼 ~해바라기 서커스단~.webp",
+  "day": "Sundays",
+  "episodes": 0,
+  "studio": [
+    "A-1 Pictures",
+    "Psyde Kick Studio"
+  ],
+  "staff": {
+    "director": [
+      "카메이 칸타",
+      "타카하시 사츠키"
+    ],
+    "scriptwriter": [
+      "키쿠치 타케시"
+    ],
+    "character_design": [
+      "마키노 카즈토시"
+    ],
+    "composer": [
+      "칸노 유고"
+    ]
+  }
+},
+{
+  "id": 61814,
+  "title": "오니의 신부",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/오니의 신부.webp",
+  "day": "Sundays",
+  "episodes": 12,
+  "studio": [
+    "Colored Pencil Animation Japan"
+  ],
+  "staff": {
+    "director": [
+      "오오미야 카즈히토"
+    ],
+    "adaptor": [
+      "카마쿠라 유미"
+    ],
+    "character_design": [
+      "타나카 히카리",
+      "시게쿠니 히로코"
+    ],
+    "composer": [
+      "요코야마 마사루"
+    ]
+  }
+},
+{
+  "id": 60552,
+  "title": "주식회사 마지루미에 2기",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/주식회사 마지루미에 2기.webp",
+  "day": "Sundays",
+  "episodes": 0,
+  "studio": [
+    "J.C.STAFF"
+  ],
+  "staff": {
+    "director": [
+      "후쿠시마 토시노리",
+      "오다 히로야스"
+    ],
+    "adaptor": [
+      "요코테 미치코"
+    ],
+    "character_design": [
+      "후지이 마사히로"
+    ],
+    "composer": [
+      "미야자키 마코토"
+    ]
+  }
+},
+{
+  "id": 60637,
+  "title": "마법소녀 리리컬 나노하 EXCEEDS Gun Blaze Vengeance",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/마법소녀 리리컬 나노하 EXCEEDS Gun Blaze Vengeance.webp",
+  "day": "Sundays",
+  "episodes": 12,
+  "studio": [
+    "세븐 아크스"
+  ],
+  "staff": {
+    "director": [
+      "하마나 타카유키"
+    ],
+    "scriptwriter": [
+      "츠즈키 마사키"
+    ],
+    "character_design": [
+      "아라카키 잇세이"
+    ],
+    "composer": [
+      "시오노 카이"
+    ]
+  }
+},
+{
+  "id": 63537,
+  "title": "「널 사랑할 생각은 없어」라던 차기 공작님이 어째선지 제게 푹 빠졌어요 차기 공작님이 어째선지 제게 푹 빠졌어요",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/「널 사랑할 생각은 없어」라던 차기 공작님이 어째선지 제게 푹 빠졌어요 차기 공작님이 어째선지 제게 푹 빠졌어요.webp",
+  "day": "Sundays",
+  "episodes": 12,
+  "studio": [
+    "Zero-G",
+    "그라스"
+  ],
+  "staff": {
+    "director": [
+      "마츠이 히토유키"
+    ],
+    "adaptor": [
+      "콘파루 토모코"
+    ],
+    "character_design": [
+      "야히로 유코",
+      "스기모토 사치코",
+      "카와무라 토시에",
+      "스즈키 미오리"
+    ],
+    "composer": [
+      "미치루"
+    ]
+  }
+},
+{
+  "id": 62535,
+  "title": "하나오리 양은 전생해서도 싸움이 하고 싶어",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/하나오리 양은 전생해서도 싸움이 하고 싶어.webp",
+  "day": "Sundays",
+  "episodes": 12,
+  "studio": [
+    "라이덴 필름"
+  ],
+  "staff": {
+    "director": [
+      "야마모토 히데요"
+    ],
+    "adaptor": [
+      "스가와라 유키에"
+    ],
+    "character_design": [
+      "오쿠다 요스케"
+    ],
+    "composer": [
+      "하시모토 유카리",
+      "R・O・N"
+    ]
+  }
+},
+{
+  "id": 62876,
+  "title": "아가씨 돌보기 ~영애들이 다니는 명문 학교에서 제일가는 아가씨 (생활력 없음) 를 남몰래 돕는  시중 담당 이 되었습니다~",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/아가씨 돌보기 ~영애들이 다니는 명문 학교에서 제일가는 아가씨 (생활력 없음) 를 남몰래 돕는  시중 담당 이 되었습니다~.webp",
+  "day": "Sundays",
+  "episodes": 12,
+  "studio": [
+    "브레인즈 베이스"
+  ],
+  "staff": {
+    "director": [
+      "모리시타 슈세이"
+    ],
+    "adaptor": [
+      "요시나가 아야"
+    ],
+    "character_design": [
+      "카와시마 나오"
+    ],
+    "composer": [
+      "타부치 나츠미",
+      "나카무라 히나에"
+    ]
+  }
+},
+{
+  "id": 62683,
+  "title": "렛츠고 괴기조",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/렛츠고 괴기조.webp",
+  "day": "Sundays",
+  "episodes": 12,
+  "studio": [
+    "C-Station"
+  ],
+  "staff": {
+    "director": [
+      "히라타 유타카"
+    ],
+    "adaptor": [
+      "이토 무츠미"
+    ],
+    "character_design": [
+      "야마시타 요시미츠"
+    ],
+    "composer": [
+      "타테야마 아키유키"
+    ]
+  }
+},
+{
+  "id": 63832,
+  "title": "정반대의 너와 나 2기",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/정반대의 너와 나 2기.webp",
+  "day": "Sundays",
+  "episodes": 13,
+  "studio": [
+    "라판트랙"
+  ],
+  "staff": {
+    "director": [
+      "나가토모 타카요시"
+    ],
+    "adaptor": [
+      "우츠미 테루코"
+    ],
+    "character_design": [
+      "미야코 마코",
+      "코조노 나호"
+    ],
+    "composer": [
+      "tofubeats"
+    ]
+  }
+},
+{
+  "id": 63100,
+  "title": "철냄비 짱!",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/철냄비 짱!.webp",
+  "day": "Sundays",
+  "episodes": 0,
+  "studio": [
+    "TROYCA"
+  ],
+  "staff": {
+    "director": [
+      "아오키 에이"
+    ],
+    "adaptor": [
+      "우에즈 마코토"
+    ],
+    "character_design": [
+      "마츠모토 마사코"
+    ],
+    "composer": [
+      "키쿠야 토모키"
+    ]
+  }
+},
+{
+  "id": 62435,
+  "title": "세계 최강의 후위 ~미궁국의 신인 탐색자~",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/세계 최강의 후위 ~미궁국의 신인 탐색자~.webp",
+  "day": "Sundays",
+  "episodes": 12,
+  "studio": [
+    "MAHO FILM"
+  ],
+  "staff": {
+    "director": [
+      "야나세 유지"
+    ],
+    "adaptor": [
+      "아카오 데코"
+    ],
+    "character_design": [
+      "야나기모토 에리코",
+      "카마다 히토시",
+      "코지마 에리",
+      "마스타테 토시히데"
+    ],
+    "composer": [
+      "츠바키야마 히나코",
+      "후와리"
+    ]
+  }
+},
+{
+  "id": 62811,
+  "title": "너를 너무너무너무너무 좋아하는 100명의 그녀 3기",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/너를 너무너무너무너무 좋아하는 100명의 그녀 3기.webp",
+  "day": "Sundays",
+  "episodes": 12,
+  "studio": [
+    "바이브리 애니메이션 스튜디오"
+  ],
+  "staff": {
+    "director": [
+      "사토 히카루"
+    ],
+    "adaptor": [
+      "아오시마 타카시"
+    ],
+    "character_design": [
+      "야노 아카네",
+      "니시야마 미카"
+    ],
+    "composer": [
+      "무츠키 슈헤이",
+      "타키자와 슌스케",
+      "eba"
+    ]
+  }
+},
+{
+  "id": 62856,
+  "title": "20세기 전기 목록",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/20세기 전기 목록.webp",
+  "day": "Sundays",
+  "episodes": 13,
+  "studio": [
+    "교토 애니메이션"
+  ],
+  "staff": {
+    "director": [
+      "오오타 미노루"
+    ],
+    "adaptor": [
+      "우라하타 타츠히코"
+    ],
+    "character_design": [
+      "오카무라 코헤이"
+    ],
+    "composer": [
+      "코토 히토미"
+    ]
+  }
+},
+{
+  "id": 61240,
+  "title": "못 미더운 악녀입니다만",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/못 미더운 악녀입니다만.webp",
+  "day": "Sundays",
+  "episodes": 11,
+  "studio": [
+    "동화공방"
+  ],
+  "staff": {
+    "director": [
+      "야마사키 미츠에",
+      "노로 스미에"
+    ],
+    "adaptor": [
+      "나카무라 요시코"
+    ],
+    "character_design": [
+      "키쿠치 아이"
+    ],
+    "composer": [
+      "하시모토 유카리"
+    ]
+  }
+},
+{
+  "id": 56613,
+  "title": "아주르 레인 미속전진! 2!!",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/아주르 레인 미속전진! 2!!.webp",
+  "day": "Anomaly",
+  "episodes": 12,
+  "studio": [
+    "Studio CANDY BOX"
+  ],
+  "staff": {
+    "director": [
+      "마키 슌지"
+    ],
+    "adaptor": [
+      "사토 유타카",
+      "아사후지 호타루"
+    ],
+    "character_design": [
+      "하기와라 히로미츠",
+      "모리 나나"
+    ],
+    "composer": [
+      "하토리 후우가"
+    ]
+  }
+},
+{
+  "id": 63878,
+  "title": "대역 영애를 구한 것은 냉혹 무자비한 얼음 왕자의 사랑이었습니다",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/대역 영애를 구한 것은 냉혹 무자비한 얼음 왕자의 사랑이었습니다.webp",
+  "day": "Anomaly",
+  "episodes": 0,
+  "studio": [
+    "Imageworks Studio",
+    "이매지카인포스"
+  ],
+  "staff": {
+    "director": [
+      "모리시타 유스케"
+    ],
+    "adaptor": [
+      "마치다 리카코"
+    ],
+    "character_design": [
+      "주식회사 스테인랩"
+    ],
+    "composer": [
+      "Morrigan"
+    ]
+  }
+},
+{
+  "id": 62883,
+  "title": "문호 스트레이독스 멍! 2",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/문호 스트레이독스 멍! 2.webp",
+  "day": "Anomaly",
+  "episodes": 12,
+  "studio": [
+    "본즈",
+    "NOMAD"
+  ],
+  "staff": {
+    "director": [
+      "키쿠치 토시히로"
+    ],
+    "adaptor": [
+      "마치다 토우코"
+    ],
+    "character_design": [
+      "다이미 히로미"
+    ],
+    "composer": [
+      "이와사키 타쿠"
+    ]
+  }
+},
+{
+  "id": 63468,
+  "title": "뒤에 있는 카무이 씨",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/뒤에 있는 카무이 씨.webp",
+  "day": "Anomaly",
+  "episodes": 12,
+  "studio": [
+    "Zero-G",
+    "ZG-R"
+  ],
+  "staff": {
+    "director": [
+      "츠쿠모 타쿠미"
+    ],
+    "adaptor": [
+      "나카죠 모토시"
+    ],
+    "character_design": [
+      "야마시타 토시나리"
+    ],
+    "composer": [
+      "엔도 치히로"
+    ]
+  }
+},
+{
+  "id": 62233,
+  "title": "원피스 히로인즈",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/원피스 히로인즈.webp",
+  "day": "Sundays",
+  "episodes": 1,
+  "studio": [
+    "토에이 애니메이션"
+  ],
+  "staff": {
+    "director": [
+      "카마타니 하루카"
+    ],
+    "adaptor": [
+      "토요다 모모카"
+    ],
+    "character_design": [
+      "코지마 타카시"
+    ],
+    "composer": []
+  }
+},
+{
+  "id": 62550,
+  "title": "극장판 총집편 걸즈 밴드 크라이 있잖아, 미래.",
+  "quarter": "2분기",
+  "thumbnail": "image/cinema/2026/극장판 총집편 걸즈 밴드 크라이 있잖아, 미래.webp",
+  "day": "Web",
+  "episodes": 1,
+  "studio": [
+    "토에이 애니메이션"
+  ],
+  "staff": {
+    "director": [
+      "사카이 카즈오"
+    ],
+    "scriptwriter": [
+      "하나다 줏키"
+    ],
+    "character_design": [
+      "테시마 nari"
+    ]
+  }
+},
+{
+  "id": 61546,
+  "title": "스타워즈 비전스 PRESENTS - 아홉 번째 제다이",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/스타워즈 비전스 PRESENTS - 아홉 번째 제다이.webp",
+  "day": "Web",
+  "episodes": 8,
+  "studio": [
+    "Production I.G"
+  ],
+  "staff": {
+    "director": [
+      "타다 슌스케"
+    ],
+    "scriptwriter": [
+      "사카이 미츠야스"
+    ],
+    "character_design": [
+      "니시오 테츠야",
+      "Thomas Romain"
+    ],
+    "composer": []
+  }
+},
+{
+  "id": 61469,
+  "title": "스틸 볼 런: 죠죠의 기묘한 모험 (2nd STAGE)",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/스틸 볼 런 죠죠의 기묘한 모험 (2nd STAGE).webp",
+  "day": "Fridays",
+  "episodes": 11,
+  "studio": [
+    "david production"
+  ],
+  "staff": {
+    "director": [
+      "키무라 야스히로",
+      "타카하시 히데야"
+    ],
+    "adaptor": [
+      "코바야시 야스코"
+    ],
+    "character_design": [
+      "츠마가리 다이스케"
+    ],
+    "composer": [
+      "칸노 유고"
+    ]
+  }
+},
+
 ];

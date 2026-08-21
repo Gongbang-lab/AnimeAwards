@@ -140,26 +140,81 @@ var cinemaData_2026 =
     ]
   }
 },
+
 {
-  "id": 62550,
-  "title": "극장판 총집편 걸즈 밴드 크라이 있잖아, 미래.",
-  "quarter": "2분기",
-  "thumbnail": "image/cinema/2026/극장판 총집편 걸즈 밴드 크라이 있잖아, 미래.webp",
+  "id": 64012,
+  "title": "리본 히어로",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/cinema/2026/리본 히어로.webp",
   "day": "Cinema",
   "episodes": 1,
   "studio": [
-    "토에이 애니메이션"
+    "OUTLINE"
   ],
   "staff": {
     "director": [
-      "사카이 카즈오"
+      "이가라시 유키"
     ],
-    "scriptwriter": [
-      "하나다 줏키"
+    "adaptor": [
+      "이가라시 유키"
     ],
     "character_design": [
-      "테시마 nari"
+      "아라카키 잇세이"
+    ],
+    "composer": []
+  }
+},
+{
+  "id": 62421,
+  "title": "극장판 암살교실 모두의 시간",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/cinema/2026/극장판 암살교실 모두의 시간.webp",
+  "day": "Cinema",
+  "episodes": 1,
+  "studio": [
+    "Lerche"
+  ],
+  "staff": {
+    "director": [
+      "키타무라 마사키"
+    ],
+    "adaptor": [
+      "우에즈 마코토"
+    ],
+    "character_design": [
+      "히가미 아야"
+    ],
+    "composer": []
+  }
+},
+{
+  "id": 213958,
+  "title": "사랑의 하츄핑: 고래보석의 전설",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/cinema/2026/사랑의 하츄핑: 고래보석의 전설.webp",
+  "day": "Cinema",
+  "episodes": 1,
+  "studio": [
+    "SAMG ENTERTAINMENT"
+  ],
+  "staff": {
+    "director": [
+      "김수훈"
+    ],
+    "scriptwriter": [
+      "아라카와 나루히사"
+    ],
+    "character_design": [
+      "이동진",
+      "김민성",
+      "박용주"
+    ],
+    "composer": [
+      "김태호"
     ]
   }
-}
+},
 ]
