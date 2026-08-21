@@ -4455,4 +4455,282 @@ var AnimeList_2026 = [
     ]
   }
 },
+{
+  "id": 63508,
+  "title": "낙제 현자의 학원 무쌍 ~두 번 전생한 최강 현자, 400년 후의 세계를 마법으로 무쌍~",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/낙제 현자의 학원 무쌍 ~두 번 전생한 최강 현자, 400년 후의 세계를 마법으로 무쌍~.webp",
+  "day": "Thursdays",
+  "episodes": 0,
+  "studio": [
+    "EMT 스퀘어드"
+  ],
+  "staff": {
+    "director": [
+      "이시이 히사시"
+    ],
+    "adaptor": [
+      "아카오 데코"
+    ],
+    "character_design": [
+      "후루카와 히데키"
+    ],
+    "composer": [
+      "나카하시 타카아키"
+    ]
+  }
+},
+{
+  "id": 62322,
+  "title": "LV999의 마을사람",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/LV999의 마을사람.webp",
+  "day": "Thursdays",
+  "episodes": 12,
+  "studio": [
+    "브레인즈 베이스"
+  ],
+  "staff": {
+    "director": [
+      "카사이 요시노부"
+    ],
+    "adaptor": [
+      "후지타 신조"
+    ],
+    "character_design": [
+      "마츠모토 켄타로",
+      "이와오카 유코"
+    ],
+    "composer": [
+      "나카무라 히로시"
+    ]
+  }
+},
+{
+  "id": 63780,
+  "title": "아름다운 그대에게 2기",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/아름다운 그대에게 2기.webp",
+  "day": "Thursdays",
+  "episodes": 13,
+  "studio": [
+    "SIGNAL.MD"
+  ],
+  "staff": {
+    "director": [
+      "타케무라 나츠키",
+      "우에다 시게루"
+    ],
+    "adaptor": [
+      "요시오카 타카오"
+    ],
+    "character_design": [
+      "스 시이"
+    ],
+    "composer": [
+      "요코야마 마사루"
+    ]
+  }
+},
+{
+  "id": 63418,
+  "title": "썬더 3",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/썬더 3.webp",
+  "day": "Thursdays",
+  "episodes": 0,
+  "studio": [
+    "UNEND"
+  ],
+  "staff": {
+    "director": [
+      "세시타 히로유키",
+      "이데 케이스케",
+      "스가이 스스무",
+      "류나리"
+    ],
+    "adaptor": [
+      "세코 히로시"
+    ],
+    "character_design": [
+      "온다 나오유키",
+      "야마나카 준코",
+      "모리야마 유키"
+    ],
+    "composer": [
+      "타테야마 아키유키",
+      "Frédéric Chateau"
+    ]
+  }
+},
+{
+  "id": 63316,
+  "title": "도굴왕",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/도굴왕.webp",
+  "day": "Thursdays",
+  "episodes": 12,
+  "studio": [
+    "스튜디오 이크"
+  ],
+  "staff": {
+    "director": [
+      "우승욱"
+    ],
+    "adaptor": [
+      "우승욱"
+    ],
+    "character_design": [
+      "이현정"
+    ],
+    "composer": [
+      "김주영"
+    ]
+  }
+},
+{
+  "id": 63082,
+  "title": "레이와의 다라 씨",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/레이와의 다라 씨.webp",
+  "day": "Thursdays",
+  "episodes": 13,
+  "studio": [
+    "아사히 프로덕션"
+  ],
+  "staff": {
+    "director": [
+      "스즈키 마사토"
+    ],
+    "adaptor": [
+      "키무라 노보루",
+      "야마다 야스노리"
+    ],
+    "character_design": [
+      "키쿠타 코이치"
+    ],
+    "composer": [
+      "이시즈카 레이"
+    ]
+  }
+},
+{
+  "id": 63347,
+  "title": "월드 이즈 댄싱",
+  "year": 2026,
+  "quarter": "2분기",
+  "thumbnail": "image/animeimg/2026/Q2/월드 이즈 댄싱.webp",
+  "day": "Mondays",
+  "episodes": 13,
+  "studio": [
+    "사이픽"
+  ],
+  "staff": {
+    "director": [
+      "쿠로야나기 토시마사",
+      "후치모토 슈헤이"
+    ],
+    "adaptor": [
+      "카와미츠 사와코"
+    ],
+    "character_design": [
+      "사사키 케이고",
+      "히사타케 이오리"
+    ],
+    "composer": [
+      "시노다 다이스케"
+    ]
+  }
+},
+{
+  "id": 62430,
+  "title": "BanG Dream! YUME∞MITA",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/BanG Dream! YUME∞MITA.webp",
+  "day": "Thursdays",
+  "episodes": 13,
+  "studio": [
+    "니치카라인"
+  ],
+  "staff": {
+    "director": [
+      "우메츠 토모미",
+      "모리타 히로시"
+    ],
+    "adaptor": [
+      "고토 미도리"
+    ],
+    "character_design": [
+      "노부사와 오사무",
+      "모치푸요",
+      "챠노하라 타쿠야",
+      "하치모리 유카"
+    ],
+    "composer": [
+      "PHYZ"
+    ]
+  }
+},
+{
+  "id": 63802,
+  "title": "뫼비우스 더스트",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/뫼비우스 더스트.webp",
+  "day": "Thursdays",
+  "episodes": 0,
+  "studio": [
+    "동화공방"
+  ],
+  "staff": {
+    "director": [
+      "이와사키 타로"
+    ],
+    "adaptor": [
+      "토미타 요리코"
+    ],
+    "character_design": [
+      "코지마 하츠메",
+      "이치하라 케이코"
+    ],
+    "composer": [
+      "DÉ DÉ MOUSE"
+    ]
+  }
+},
+{
+  "id": 62076,
+  "title": "슈퍼 뒤에서 담배 피우는 두 사람",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/슈퍼 뒤에서 담배 피우는 두 사람.webp",
+  "day": "Thursdays",
+  "episodes": 12,
+  "studio": [
+    "아사히 프로덕션"
+  ],
+  "staff": {
+    "director": [
+      "스즈키 마사토",
+      "모리 아오이"
+    ],
+    "adaptor": [
+      "이노우에 미오"
+    ],
+    "character_design": [
+      "오오타키 야스카"
+    ],
+    "composer": [
+      "코노 신",
+      "아오키 사야카"
+    ]
+  }
+},
 ];

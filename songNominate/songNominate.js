@@ -3,7 +3,7 @@ const songNominateState = {
     step: 1,
     selectedItems: [],
     finalWinner: null,
-    currentAward: null
+    awardName: null   // ✅ currentAward → awardName (다른 파일들과 통일)
 };
 let cachedVoteData = null;
 
@@ -25,7 +25,6 @@ function getMergedSongData(themeType) {
     const targetType = themeType === "opening" ? "op" : "ed";
     const result = {};
 
-    // AnimeList에서 요일(day) 정보를 ID로 빠르게 찾을 수 있는 Map 생성
     const animeInfoMap = {};
     if (typeof AnimeList !== 'undefined' && Array.isArray(AnimeList)) {
         AnimeList.forEach(anime => {
@@ -36,12 +35,14 @@ function getMergedSongData(themeType) {
         return {};
     }
 
-    if (typeof AnimeSongs_2026 === 'undefined' || !Array.isArray(AnimeSongs_2026)) return {};
+    // ✅ 수정: AnimeSongs_2026 → AnimeSongs(별칭)
+    if (typeof AnimeSongs === 'undefined' || !Array.isArray(AnimeSongs)) return {};
 
-    // 변경: 객체 순회 → 배열 순회
-    AnimeSongs_2026.forEach(group => {
+    // ✅ 추가: SeasonFilter 적용
+    const seasonFilteredSongs = SeasonFilter.filterAnimeList(AnimeSongs);
+
+    seasonFilteredSongs.forEach(group => {
         const baseInfo = animeInfoMap[group.id];
-        // quarter 정보를 직접 group에서 가져옴 (예: "1분기")
         const quarterKey = group.quarter || "기타";
 
         group.songs.forEach((song, index) => {
@@ -72,17 +73,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const awardName = params.get("awardName");
 
     songNominateState.theme = theme;
-    songNominateState.currentAward = awardName;
-    document.getElementById("step-title-display").textContent = `${songNominateState.currentAward}` + " 부문";
+    songNominateState.awardName = awardName;
+    document.getElementById("step-title-display").textContent = `${songNominateState.awardName}` + " 부문";
 
     renderSongStep1();
 
-    // 검색 이벤트 연결
     document.getElementById("song-search").addEventListener("input", (e) => {
         renderFilteredList(e.target.value.toLowerCase());
     });
 
-    // 버튼 이벤트 바인딩
     document.getElementById("step1-next-btn").onclick = () => {
         if(songNominateState.selectedItems.length === 0) return;
         songNominateState.step = 2;
@@ -94,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
         songNominateState.step = 1;
         songNominateState.finalWinner = null;
         toggleSongStepUI();
-        renderSongStep1(); // 다시 렌더링
+        renderSongStep1();
     };
 
     document.getElementById("step2-award-btn").onclick = () => {
@@ -110,11 +109,9 @@ document.addEventListener("DOMContentLoaded", () => {
     waitForFirebaseAndListen();
 });
 
-// Step 1 렌더링
 function renderSongStep1() {
     document.getElementById("left-area").innerHTML = `<div id="nominate-list-container"></div>`;
     renderFilteredList(document.getElementById("song-search").value.toLowerCase());
-    
 }
 
 function renderFilteredList(query) {
@@ -136,7 +133,6 @@ function renderFilteredList(query) {
             const quarterSection = document.createElement("div");
             quarterSection.className = "quarter-section";
 
-            // 분기 버튼
             const quarterBtn = document.createElement("button");
             quarterBtn.className = `quarter-btn ${isSearching ? "active" : ""}`;
             quarterBtn.innerHTML = `<span>${quarter}</span><i class="fas fa-chevron-down"></i>`;
@@ -155,7 +151,6 @@ function renderFilteredList(query) {
                 groupedByDay[song.day].push(song);
             });
 
-            // 요일 버튼 및 카드 그리드
             Object.entries(groupedByDay).forEach(([day, daySongs]) => {
                 const dayBtn = document.createElement("button");
                 dayBtn.className = `day-btn ${isSearching ? "active" : ""}`;
@@ -183,20 +178,17 @@ function renderFilteredList(query) {
     applyVoteBadges();
 }
 
-// 카드 생성 공통 함수
 function createSongCard(song) {
     const item = document.createElement("div");
     item.className = "song-card";
 
-    // ✅ Firebase 연동용 data 속성
-    item.setAttribute('data-category', songNominateState.currentAward);
+    item.setAttribute('data-category', songNominateState.awardName);
     item.setAttribute('data-anime-id', song.title);
 
     if (songNominateState.selectedItems.some(s => s.uniqueId === song.uniqueId)) {
         item.classList.add("selected");
     }
 
-    // ✅ DOM 직접 생성 (innerHTML 덮어쓰기 방지)
     const rateBadge = document.createElement("div");
     rateBadge.className = "card-selection-rate";
     rateBadge.style.display = "none";
@@ -256,7 +248,6 @@ function createSongCard(song) {
     return item;
 }
 
-// Preview 업데이트
 function updatePreview() {
     const preview = document.getElementById("preview-list");
     const nextBtn = document.getElementById("step1-next-btn");
@@ -269,7 +260,7 @@ function updatePreview() {
         
         div.onclick = () => {
             songNominateState.selectedItems = songNominateState.selectedItems.filter(s => s.uniqueId !== song.uniqueId);
-            renderFilteredList(document.getElementById("song-search").value.toLowerCase()); // UI 갱신
+            renderFilteredList(document.getElementById("song-search").value.toLowerCase());
             updatePreview();
         };
         preview.appendChild(div);
@@ -278,21 +269,17 @@ function updatePreview() {
     if(nextBtn) nextBtn.disabled = songNominateState.selectedItems.length === 0;
 }
 
-// Step 2 (최종 선택) 렌더링
 function renderSongStep2() {
     const container = document.getElementById("left-area");
-    // Step 2 전용 타이틀 추가
     container.innerHTML = `<h2 style="color:var(--gold); margin-bottom:20px; font-size: 1.5rem;">최종 수상작을 선택하세요</h2>`;
 
     const grid = document.createElement("div");
     grid.id = "step2-grid"; 
 
     songNominateState.selectedItems.forEach(song => {
-        // Step 2 전용 카드 생성
         const card = document.createElement("div");
         card.className = "step2-song-card";
 
-        // 분기 텍스트 추출 (Q 제거)
         const displayQuarter = song.displayQuarter ? song.displayQuarter.replace("Q", "") : "";
 
         card.innerHTML = `
@@ -320,7 +307,6 @@ function renderSongStep2() {
     container.appendChild(grid);
 }
 
-// UI 토글 (Step 1 <-> Step 2)
 function toggleSongStepUI() {
     const isStep1 = songNominateState.step === 1;
     document.getElementById("step1-buttons").classList.toggle("hidden", !isStep1);
@@ -330,11 +316,11 @@ function toggleSongStepUI() {
 }
 
 function saveSongAwardResult() {
-    const award = songNominateState.currentAward;
+    const award = songNominateState.awardName;
     const winner = songNominateState.finalWinner;
     if (!award || !winner) return;
 
-    ResultStorage.saveOne(songNominateState.currentAward, {
+    ResultStorage.saveOne(award, {
         theme: songNominateState.theme,
         animeTitle: winner.animeTitle,
         title: winner.title,
@@ -366,13 +352,11 @@ function openSongAwardPopup() {
     };
 }
 
-// 🎉 폭죽 연출
 function fireConfetti() {
     const duration = 3 * 1000;
     const end = Date.now() + duration;
 
     (function frame() {
-        // 왼쪽에서 발사
         confetti({
             particleCount: 3,
             angle: 60,
@@ -381,7 +365,6 @@ function fireConfetti() {
             zIndex: 9999,
             colors: ['#d4af37', '#ffffff']
         });
-        // 오른쪽에서 발사
         confetti({
             particleCount: 3,
             angle: 120,
@@ -405,7 +388,6 @@ function applyVoteBadges() {
 
     const total = cachedVoteData._participants || 0;
 
-    // ✅ song-card 클래스 타겟팅
     document.querySelectorAll('.song-card').forEach(card => {
         const animeId = card.getAttribute('data-anime-id');
         const rateBadge = card.querySelector('.card-selection-rate');
@@ -421,7 +403,7 @@ function applyVoteBadges() {
 function listenToVoteRates() {
     if (!window.fbOnValue || !window.fbDB) return;
 
-    const categoryRef = window.fbRef(window.fbDB, window.getVotesCategoryPath(songNominateState.currentAward));
+    const categoryRef = window.fbRef(window.fbDB, window.getVotesCategoryPath(songNominateState.awardName));
 
     window.fbOnValue(categoryRef, (snapshot) => {
         cachedVoteData = snapshot.val() || {};

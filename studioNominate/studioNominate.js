@@ -1,11 +1,20 @@
 const studioState = {
-    nominees: [],       // Step 1에서 선택된 후보들 (다중)
-    finalWinner: null,  // Step 2에서 선택된 최종 1인
-    currentStep: 1,
+    nominees: [],
+    finalWinner: null,
+    step: 1,   // ✅ currentStep → step (다른 파일들과 통일)
     awardName: ""
 };
 
 let cachedVoteData = null;
+
+// ✅ 추가: 시즌(분기) 기준으로 필터링된 스튜디오 목록
+// - 각 스튜디오의 works를 선택된 분기에 해당하는 것만 남기고
+// - 남은 작품이 하나도 없는 스튜디오는 후보 목록에서 제외
+const SeasonFilteredStudioData = (typeof AnimeStudioData !== 'undefined')
+    ? AnimeStudioData
+        .map(s => ({ ...s, works: (s.works || []).filter(w => SeasonFilter.isInSeason(w)) }))
+        .filter(s => s.works.length > 0)
+    : [];
 
 document.addEventListener("DOMContentLoaded", () => {
     renderStudioAccordionGroups();
@@ -18,24 +27,23 @@ document.addEventListener("DOMContentLoaded", () => {
     const modalAwardNameEl = document.getElementById("modal-award-name");
     if (modalAwardNameEl) modalAwardNameEl.textContent = studioState.awardName;
 
-    // 변경된 버튼 ID로 이벤트 연결
     document.getElementById("nav-home-btn").onclick = () => location.href = "../index.html";
     document.getElementById("step1-next-btn").onclick = goToStep2;
     document.getElementById("step2-back-btn").onclick = goToStep1;
     document.getElementById("step2-award-btn").onclick = handleAwardDecision;
     
-    updatePreview(); // 초기 로드 시 미리보기 영역 초기화
+    updatePreview();
 
     waitForFirebaseAndListen();
 });
 
 /** 후보 선택 (Step 1과 2 로직 분리) */
 function selectStudioCard(event, studioName) {
-    const item = AnimeStudioData_2026.find(s => s.studio === studioName);
+    // ✅ 수정: AnimeStudioData_2026 → SeasonFilteredStudioData (시즌 필터링 + 별칭 통일)
+    const item = SeasonFilteredStudioData.find(s => s.studio === studioName);
     if (!item) return;
 
-    if (studioState.currentStep === 1) {
-        // Step 1: 다중 선택 (토글) - 최대 제한 없음
+    if (studioState.step === 1) {
         const index = studioState.nominees.findIndex(n => n.studio === studioName);
         if (index > -1) {
             studioState.nominees.splice(index, 1);
@@ -44,9 +52,8 @@ function selectStudioCard(event, studioName) {
             studioState.nominees.push(item);
             event.currentTarget.classList.add('selected');
         }
-        updatePreview(); // 함수명 변경 적용
+        updatePreview();
     } else {
-        // Step 2: 단일 선택 (최종 우승)
         document.querySelectorAll('#final-nominees-grid .card').forEach(c => c.classList.remove('selected'));
         event.currentTarget.classList.add('selected');
         studioState.finalWinner = item;
@@ -63,20 +70,17 @@ function updatePreview() {
     if (!pBox) return;
     pBox.innerHTML = "";
 
-    // 후보가 없을 때
     if (studioState.nominees.length === 0) {
         pBox.innerHTML = `<div style="color:#666; text-align:center; margin-top:20px;"></div>`;
         nextBtn.disabled = true;
         return;
     }
 
-    // 후보가 있을 때
     nextBtn.disabled = false;
     studioState.nominees.forEach(item => {
         const previewEl = document.createElement("div");
         previewEl.className = "preview-item";
         
-        // 스튜디오 데이터에 맞게 제목 및 작품 수 렌더링
         const worksCount = item.works ? item.works.length : 0;
         previewEl.innerHTML = `
             ${item.studio}
@@ -84,10 +88,8 @@ function updatePreview() {
         `;
         
         previewEl.onclick = () => {
-            // 선택 해제 로직
             studioState.nominees = studioState.nominees.filter(s => s.studio !== item.studio);
             
-            // 메인 화면 렌더링 갱신 (선택된 카드 클래스 재계산)
             renderStudioAccordionGroups();
             updatePreview();
         };
@@ -99,45 +101,39 @@ function updatePreview() {
 function goToStep2() {
     if (studioState.nominees.length === 0) return;
     
-    studioState.currentStep = 2;
+    studioState.step = 2;
     studioState.finalWinner = null; 
 
-    // 화면 전환
     document.getElementById("step1-container").classList.add("hidden");
     document.getElementById("step2-container").classList.remove("hidden");
     
-    // 사이드바 요소 전환
     document.getElementById("preview-box").classList.add("hidden");
     document.getElementById("step1-buttons").classList.add("hidden");
     document.getElementById("step2-buttons").classList.remove("hidden");
 
-    // [추가] Step 2 진입 시 검색창 영역 숨김
     const searchArea = document.querySelector('.search-container');
     if (searchArea) searchArea.classList.add("hidden");
 
     document.getElementById("step-title").innerText = "올해의 스튜디오 상 부문";
     
-    // input 자체도 비활성화 (보이지 않더라도 상태 유지)
     const searchInput = document.getElementById("search-input");
     if (searchInput) searchInput.disabled = true;
 
     renderFinalNominees();
 }
+
 /** Step 1 (후보 선정) 으로 돌아가기 */
 function goToStep1() {
-    studioState.currentStep = 1;
+    studioState.step = 1;
     studioState.finalWinner = null;
 
-    // 화면 전환
     document.getElementById("step2-container").classList.add("hidden");
     document.getElementById("step1-container").classList.remove("hidden");
     
-    // 사이드바 요소 전환
     document.getElementById("preview-box").classList.remove("hidden");
     document.getElementById("step2-buttons").classList.add("hidden");
     document.getElementById("step1-buttons").classList.remove("hidden");
 
-    // [추가] Step 1 복귀 시 검색창 영역 다시 표시
     const searchArea = document.querySelector('.search-container');
     if (searchArea) searchArea.classList.remove("hidden");
 
@@ -146,7 +142,7 @@ function goToStep1() {
     const searchInput = document.getElementById("search-input");
     if (searchInput) {
         searchInput.disabled = false;
-        searchInput.value = ""; // 검색어 초기화
+        searchInput.value = "";
     }
 
     renderStudioAccordionGroups();
@@ -156,7 +152,6 @@ function goToStep1() {
 /** Step 2의 선택된 후보 그리드 렌더링 */
 function renderFinalNominees() {
     const grid = document.getElementById("final-nominees-grid");
-    // Step 1에서 선택한 후보들을 기반으로 카드를 생성
     grid.innerHTML = studioState.nominees.map(item => createStudioCardHTML(item)).join('');
 
     applyVoteBadges();
@@ -169,7 +164,8 @@ function renderStudioAccordionGroups() {
     container.innerHTML = "";
 
     const groups = new Map();
-    AnimeStudioData.forEach(item => {
+    // ✅ 수정: AnimeStudioData → SeasonFilteredStudioData
+    SeasonFilteredStudioData.forEach(item => {
         const count = item.works ? item.works.length : 0;
         if (!groups.has(count)) groups.set(count, []);
         groups.get(count).push(item);
@@ -180,7 +176,7 @@ function renderStudioAccordionGroups() {
     sortedCounts.forEach(count => {
         const studios = groups.get(count);
         const groupDiv = document.createElement("div");
-        groupDiv.className = "acc-level-1"; // 통일된 클래스 적용
+        groupDiv.className = "acc-level-1";
         
         groupDiv.innerHTML = `
             <div class="acc-header level-1-header">
@@ -197,7 +193,6 @@ function renderStudioAccordionGroups() {
         const header = groupDiv.querySelector('.acc-header');
         const content = groupDiv.querySelector('.acc-content');
         
-        // 클릭 시 즉각적인 열림/닫힘 (애니메이션 X)
         header.onclick = () => {
             const isOpen = content.classList.contains('open');
             if (isOpen) {
@@ -219,13 +214,12 @@ function createStudioCardHTML(item) {
     const studioImg = `../${item.studio_img}`;
     let isSelected = false;
 
-    if (studioState.currentStep === 1) {
+    if (studioState.step === 1) {
         isSelected = studioState.nominees.some(n => n.studio === item.studio);
     } else {
         isSelected = studioState.finalWinner && studioState.finalWinner.studio === item.studio;
     }
 
-    // ✅ sanitizeKey 없이 원본값 그대로 사용
     return `
         <div class="card ${isSelected ? 'selected' : ''}"
              data-category="${studioState.awardName}"
@@ -241,9 +235,10 @@ function createStudioCardHTML(item) {
     `;
 }
 
-// === 모달 및 수상 관련 로직 (기존과 동일) ===
+// === 모달 및 수상 관련 로직 ===
 function showWorksModalByName(studioName) {
-    const item = AnimeStudioData.find(s => s.studio === studioName);
+    // ✅ 수정: AnimeStudioData → SeasonFilteredStudioData (모달도 이번 시즌 작품만 표시)
+    const item = SeasonFilteredStudioData.find(s => s.studio === studioName);
     if (item) showWorksModal(item);
 }
 
@@ -282,7 +277,7 @@ function closeWorksModal() {
 }
 
 function handleAwardDecision() {
-    if (!studioState.finalWinner) return; // Step 2에서 고른 최종 우승자
+    if (!studioState.finalWinner) return;
     saveWinnerToLocal(studioState.finalWinner);
     
     openAwardModal(studioState.finalWinner);
@@ -343,25 +338,20 @@ function initSearch() {
     input.addEventListener("input", (e) => {
         const keyword = e.target.value.toLowerCase().trim();
         
-        // 모든 카드를 순회하며 필터링
         document.querySelectorAll(".card").forEach(card => {
-            // 1. 카드에 표시된 스튜디오 이름 가져오기
             const studioName = card.querySelector(".card-title").textContent;
             
-            // 2. 해당 스튜디오의 전체 데이터 찾기
-            const studioData = AnimeStudioData.find(s => s.studio === studioName);
+            // ✅ 수정: AnimeStudioData → SeasonFilteredStudioData
+            const studioData = SeasonFilteredStudioData.find(s => s.studio === studioName);
             
             if (!studioData) return;
 
-            // 3. 조건 검사 (스튜디오 이름 포함 여부)
             const matchStudio = studioData.studio.toLowerCase().includes(keyword);
             
-            // 4. 조건 검사 (작품 목록 중 제목 포함 여부)
             const matchWorks = studioData.works && studioData.works.some(work => 
                 work.title.toLowerCase().includes(keyword)
             );
 
-            // 둘 중 하나라도 맞으면 표시, 아니면 숨김
             if (matchStudio || matchWorks) {
                 card.style.display = "block";
             } else {
@@ -369,7 +359,6 @@ function initSearch() {
             }
         });
 
-        // [추가 기능] 검색 중일 때는 아코디언 내용을 자동으로 펼쳐서 결과를 보여줌
         if (keyword !== "") {
             document.querySelectorAll(".acc-content").forEach(content => {
                 content.classList.add("open");
@@ -386,7 +375,6 @@ function fireConfetti() {
     const end = Date.now() + duration;
 
     (function frame() {
-        // 왼쪽에서 발사
         confetti({
             particleCount: 3,
             angle: 60,
@@ -395,7 +383,6 @@ function fireConfetti() {
             zIndex: 9999,
             colors: ['#d4af37', '#ffffff']
         });
-        // 오른쪽에서 발사
         confetti({
             particleCount: 3,
             angle: 120,

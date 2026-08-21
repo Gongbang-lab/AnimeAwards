@@ -2,6 +2,7 @@ var AnimeSongs_2026 =
 [
   {
     "id": 61886,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "고문 아르바이트의 일상",
     "songs": [
@@ -21,6 +22,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 61942,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "비질랜티 -나의 히어로 아카데미아 ILLEGALS- 제2기",
     "songs": [
@@ -40,6 +42,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 61782,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "깨끗하게 해주시겠어요?",
     "songs": [
@@ -59,6 +62,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 55772,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "골든 카무이 최종장",
     "songs": [
@@ -78,6 +82,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 58524,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
     "songs": [
@@ -97,6 +102,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 61359,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "소꿉친구와는 러브 코미디를 할 수 없어",
     "songs": [
@@ -116,6 +122,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 61983,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "용사 파티에 귀여운 애가 있어서, 고백해봤다.",
     "songs": [
@@ -141,6 +148,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 60226,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "이세계 사정은 사축 하기 나름",
     "songs": [
@@ -160,6 +168,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 61211,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "한밤중 하트튠",
     "songs": [
@@ -179,6 +188,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 61830,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "개진전 사무라이 트루퍼",
     "songs": [
@@ -198,6 +208,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 58886,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "다윈 사변",
     "songs": [
@@ -217,6 +228,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 60255,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "아르네의 사건부",
     "songs": [
@@ -236,6 +248,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 61637,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "29세 독신 중견 모험가의 일상",
     "songs": [
@@ -255,6 +268,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 61884,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "마왕의 딸은 너무 친절해!!",
     "songs": [
@@ -274,6 +288,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 60058,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "【최애의 아이】 3기",
     "songs": [
@@ -293,6 +308,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 59711,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "사망 유희로 밥을 먹는다.",
     "songs": [
@@ -312,6 +328,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 60692,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
     "songs": [
@@ -331,6 +348,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 60071,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "Odayaka Kizoku no Kyuuka no Susume.",
     "songs": [
@@ -350,6 +368,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 56752,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "Shiguang Dailiren: Yingdu Pian",
     "songs": [
@@ -369,6 +388,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 56009,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "용사형에 처함",
     "songs": [
@@ -388,6 +408,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 58505,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "마도정병의 슬레이브 2기",
     "songs": [
@@ -413,6 +434,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 60395,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
     "songs": [
@@ -432,6 +454,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 60151,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "에리스의 성배",
     "songs": [
@@ -451,6 +474,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 57658,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "주술회전 3기",
     "songs": [
@@ -470,6 +494,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 61587,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
     "songs": [
@@ -489,6 +514,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 61325,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "어차피, 사랑하고 만다. 2기",
     "songs": [
@@ -508,6 +534,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 60509,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "샹피뇽의 마녀",
     "songs": [
@@ -527,6 +554,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 59978,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "장송의 프리렌 2기",
     "songs": [
@@ -546,6 +574,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 62804,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "하이스쿨! 기면조",
     "songs": [
@@ -565,6 +594,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 59853,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "DARK MOON: 달의 제단",
     "songs": [
@@ -590,6 +620,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 60460,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~",
     "songs": [
@@ -609,6 +640,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 59229,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "불꽃 소방대 3장",
     "songs": [
@@ -628,6 +660,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 61207,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "전생했더니 드래곤의 알이었다 ~최강이 아니면 목표로 하지 않아~",
     "songs": [
@@ -647,6 +680,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 61549,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
     "songs": [
@@ -666,6 +700,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 54863,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "트라이건 스타게이즈",
     "songs": [
@@ -685,6 +720,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 55830,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "Fate/strange Fake",
     "songs": [
@@ -710,6 +746,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 61196,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "데드 어카운트",
     "songs": [
@@ -729,6 +766,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 62432,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "인외 교실의 인간 혐오 교사",
     "songs": [
@@ -748,6 +786,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 61217,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "쓰레기 용사",
     "songs": [
@@ -767,6 +806,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 59047,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "타몬 군 지금 어느 쪽!?",
     "songs": [
@@ -786,6 +826,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 61335,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "메달리스트 2기",
     "songs": [
@@ -805,6 +846,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 61663,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "아름다운 초저녁달",
     "songs": [
@@ -824,6 +866,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 60371,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "정반대의 너와 나",
     "songs": [
@@ -843,6 +886,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 60223,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "카야는 무섭지 않아",
     "songs": [
@@ -862,6 +906,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 58861,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "아름다운 그대에게",
     "songs": [
@@ -881,6 +926,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 60810,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "마술사 쿠논은 보인다",
     "songs": [
@@ -900,6 +946,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 61128,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "용사 파티에서 쫓겨난 다재무능",
     "songs": [
@@ -919,6 +966,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 62000,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "악역 영애는 이웃나라 왕태자의 사랑을 듬뿍 받는다",
     "songs": [
@@ -938,6 +986,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 58788,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "위국일기",
     "songs": [
@@ -957,6 +1006,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 61084,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "화식조 우슈보로토비구미",
     "songs": [
@@ -976,6 +1026,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 60602,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "MF고스트 3rd Season",
     "songs": [
@@ -995,6 +1046,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 55825,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "지옥락 2기",
     "songs": [
@@ -1014,6 +1066,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 62543,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "내가 연인이 될 수 있을 리 없잖아, 무리무리! (※무리가 아니었다?!) ~넥스트 샤인!~",
     "songs": [
@@ -1039,6 +1092,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 63096,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "아리스가와 렌은 사실 여자라구!!",
     "songs": [
@@ -1052,6 +1106,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 62897,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "이치고 아이카 ~잡하고 생기발랄한 동생과 못말리는 오빠~",
     "songs": [
@@ -1065,6 +1120,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 61969,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "최애 의붓형을 사랑하기 위해, 오래 살겠습니다!",
     "songs": [
@@ -1078,6 +1134,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 61694,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "안드로이드는 경험인 수에 들어가나요??",
     "songs": [
@@ -1091,6 +1148,7 @@ var AnimeSongs_2026 =
   },
     {
     "id": 60294,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "천수의 사쿠나히메 코코로와 농사 일지",
     "songs": [
@@ -1104,6 +1162,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 63019,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "프리즘 윤무곡",
     "songs": [
@@ -1117,6 +1176,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 62896,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "초(超) 가구야 공주!",
     "songs": [
@@ -1136,6 +1196,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 61119,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "듀얼마스터즈 LOST ~망각의 태양~",
     "songs": [
@@ -1155,6 +1216,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 58573,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "바키도: 무적의 검사 편",
     "songs": [
@@ -1174,6 +1236,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 61469,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "스틸 볼 런: 죠죠의 기묘한 모험",
     "songs": [
@@ -1187,6 +1250,7 @@ var AnimeSongs_2026 =
   },
   {
     "id": 49469,
+    "year" : 2026,
     "quarter": "1분기",
     "animeTitle": "비스타즈 파이널 시즌",
     "songs": [
@@ -1206,6 +1270,7 @@ var AnimeSongs_2026 =
   },
   {
   "id": 59393,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1224,6 +1289,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 62852,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1242,6 +1308,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 61687,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1260,6 +1327,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 62146,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1278,6 +1346,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 51553,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1296,6 +1365,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 61425,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1314,6 +1384,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 62331,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1332,6 +1403,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 63375,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1350,6 +1422,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 61931,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1368,6 +1441,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 62601,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1386,6 +1460,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 61839,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1404,6 +1479,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 56734,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1422,6 +1498,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 61013,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1440,6 +1517,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 53732,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1458,6 +1536,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 63014,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1476,6 +1555,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 63376,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1494,6 +1574,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 59708,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1512,6 +1593,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 62512,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1530,6 +1612,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 61316,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1548,6 +1631,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 61831,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1566,6 +1650,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 62604,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1584,6 +1669,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 62893,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1602,6 +1688,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 59551,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1650,6 +1737,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 60028,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1668,6 +1756,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 57592,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1686,6 +1775,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 58832,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1704,6 +1794,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 60852,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1722,6 +1813,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 59835,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1740,6 +1832,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 59443,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1758,6 +1851,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 61943,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1776,6 +1870,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 58820,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1794,6 +1889,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 62964,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1812,6 +1908,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 56876,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1830,6 +1927,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 59970,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1848,6 +1946,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 62068,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1866,6 +1965,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 62981,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1884,6 +1984,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 61186,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1902,6 +2003,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 61200,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1920,6 +2022,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 56646,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1938,6 +2041,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 62485,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1956,6 +2060,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 57466,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1974,6 +2079,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 60310,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -1992,6 +2098,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 60444,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -2010,6 +2117,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 62825,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -2028,6 +2136,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 62391,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -2046,6 +2155,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 62164,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -2064,6 +2174,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 62001,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -2082,6 +2193,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 62048,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -2100,6 +2212,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 61443,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -2118,6 +2231,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 62913,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -2136,6 +2250,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 61501,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -2154,6 +2269,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 62050,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -2172,6 +2288,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 62018,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -2190,6 +2307,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 63352,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -2208,6 +2326,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 59983,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -2226,6 +2345,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 60055,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -2244,6 +2364,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 58877,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -2262,6 +2383,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 62342,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -2280,6 +2402,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 63667,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -2298,6 +2421,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 21,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -2316,6 +2440,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 62171,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -2334,6 +2459,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 62983,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -2346,6 +2472,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 63248,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -2358,6 +2485,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 63310,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -2370,6 +2498,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 63304,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -2388,6 +2517,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 57779,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -2406,6 +2536,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 63572,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {
@@ -2418,6 +2549,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 62155,
+  "year" : 2026,
   "quarter": "2분기",
   "songs": [
     {

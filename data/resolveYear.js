@@ -12,13 +12,13 @@ const YEAR_DATA_KEYS = [
     ["CharacterVoiceData",           "CharacterVoiceData"],
     ["cinemaData",       "cinemaData"],
     ["OSTData",          "OSTData"],
-    ["SongsData",        "SongsData"],
-    ["StudioData",       "StudioData"],
+    ["AnimeSongs",        "AnimeSongs"],
+    ["AnimeStudioData",       "AnimeStudioData"],
     ["DirectorData",     "DirectorData"],
     ["AdaptorData",      "AdaptorData"],
     ["RookieCVData",     "RookieCVData"],
     ["EPData",           "EPData"],
-    ["MemeData",         "MemeData"],
+    ["AnimeMemeData",         "AnimeMemeData"],
     ["scriptwriterData", "scriptwriterData"]
 ];
 

@@ -2,7 +2,7 @@ const ostNominateState = {
     step: 1,
     selectedItems: [],
     finalWinner: null,
-    currentAward: null
+    awardName: null   // ✅ currentAward → awardName (다른 파일들과 통일)
 };
 
 let cachedVoteData = null;
@@ -12,17 +12,17 @@ const dayMap = {
     "fridays": "금요일", "saturdays": "토요일", "sundays": "일요일", "anomaly": "변칙 편성", "web": "웹"
 };
 
-// 🌟 수정된 부분: 작곡가 정보가 없어도 모든 분기의 애니메이션이 나오도록 수정
 function getMergedOSTData() {
-    if (typeof AnimeList_2026 === 'undefined' || !Array.isArray(AnimeList_2026)) return {};
+    // ✅ 수정: AnimeList_2026 → AnimeList(별칭)
+    if (typeof AnimeList === 'undefined' || !Array.isArray(AnimeList)) return {};
+
+    // ✅ 추가: SeasonFilter 적용
+    const seasonFilteredList = SeasonFilter.filterAnimeList(AnimeList);
 
     const result = {};
 
-    AnimeList_2026.forEach((anime, index) => {
+    seasonFilteredList.forEach((anime, index) => {
         const composers = (anime.staff && anime.staff.composer) ? anime.staff.composer : [];
-
-        // 🚨 이전 코드에서는 작곡가가 없으면 화면에 표시하지 않고 넘어갔으나, 이 제한을 삭제했습니다.
-        // if (composers.length === 0) return; 
 
         const quarterKey = anime.quarter || "기타";
         const day = anime.day || "기타";
@@ -47,8 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const params = new URLSearchParams(location.search);
     const awardName = params.get("awardName");
 
-    ostNominateState.currentAward = awardName;
-    document.getElementById("step-title-display").textContent = `${ostNominateState.currentAward}` + " 부문";
+    ostNominateState.awardName = awardName;
+    document.getElementById("step-title-display").textContent = `${ostNominateState.awardName}` + " 부문";
 
     renderOSTStep1();
 
@@ -153,7 +153,7 @@ function createOSTCard(ost) {
     const item = document.createElement("div");
     item.className = "ost-card";
 
-    item.setAttribute('data-category', ostNominateState.currentAward);
+    item.setAttribute('data-category', ostNominateState.awardName);
     item.setAttribute('data-anime-id', ost.animeTitle);
 
     if (ostNominateState.selectedItems.some(s => s.uniqueId === ost.uniqueId)) {
@@ -181,7 +181,6 @@ function createOSTCard(ost) {
     animeTitle.textContent = ost.animeTitle;
     cardInfo.appendChild(animeTitle);
 
-    // 작곡가가 있을 때만 작곡가 텍스트 표시
     if (ost.composers && ost.composers.length > 0) {
         const composerEl = document.createElement("div");
         composerEl.className = "composer-title";
@@ -273,7 +272,7 @@ function toggleOSTStepUI() {
 }
 
 function saveOSTAwardResult() {
-    const award = ostNominateState.currentAward;
+    const award = ostNominateState.awardName;
     const winner = ostNominateState.finalWinner;
     if (!award || !winner) return;
 
@@ -339,7 +338,7 @@ function applyVoteBadges() {
 function listenToVoteRates() {
     if (!window.fbOnValue || !window.fbDB) return;
 
-    const categoryRef = window.fbRef(window.fbDB, window.getVotesCategoryPath(ostNominateState.currentAward));
+    const categoryRef = window.fbRef(window.fbDB, window.getVotesCategoryPath(ostNominateState.awardName));
 
     window.fbOnValue(categoryRef, (snapshot) => {
         cachedVoteData = snapshot.val() || {};

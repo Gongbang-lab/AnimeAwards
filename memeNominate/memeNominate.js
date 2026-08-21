@@ -1,6 +1,6 @@
 const memeState = {
     selectedMeme: null,
-    selectedSrc: null,   // 현재 선택된 src 추적
+    selectedSrc: null,
     awardName: "올해의 밈"
 };
 let cachedVoteData = null;
@@ -32,18 +32,19 @@ function getSrcs(meme) {
     if (meme.src2) srcs.push({ url: meme.src2, label: meme.src2_title || "ver.2" });
     if (meme.src3) srcs.push({ url: meme.src3, label: meme.src3_title || "ver.3" });
     if (meme.src4) srcs.push({ url: meme.src4, label: meme.src4_title || "ver.4" });
-    // 구버전 src 폴백
     if (srcs.length === 0 && meme.src) srcs.push({ url: meme.src, label: "원본" });
     return srcs;
 }
 
 function renderMemeGrid() {
     const grid = document.getElementById("meme-grid");
-    if (!grid || typeof AnimeMemeData_2026 === 'undefined') return;
+    if (!grid || typeof AnimeMemeData === 'undefined') return;
 
-    // quarter별 그룹핑
+    // ✅ 수정: AnimeMemeData_2026 → AnimeMemeData(별칭) + SeasonFilter 적용
+    const seasonFilteredMemes = SeasonFilter.filterAnimeList(AnimeMemeData);
+
     const groups = {};
-    AnimeMemeData_2026.forEach(meme => {
+    seasonFilteredMemes.forEach(meme => {
         const key = meme.quarter || '기타';
         if (!groups[key]) groups[key] = [];
         groups[key].push(meme);
@@ -93,24 +94,20 @@ function createMemeCard(meme) {
     card.className = "card meme-card";
     card.id = `card-${meme.id}`;
 
-    // ✅ Firebase 연동용 data 속성
     card.setAttribute('data-category', memeState.awardName);
     card.setAttribute('data-anime-id', meme.name);
 
-    // ✅ 득표율 뱃지 (좌측 상단)
     const rateBadge = document.createElement("div");
     rateBadge.className = "card-selection-rate";
     rateBadge.style.display = "none";
     rateBadge.textContent = "0%";
 
-    // 돋보기 버튼
     const zoomBtn = document.createElement("button");
     zoomBtn.className = "zoom-btn";
     zoomBtn.title = "확대 보기";
     zoomBtn.textContent = "+";
     zoomBtn.onclick = (e) => openMemeZoom(meme.id, e);
 
-    // 미디어 박스
     const mediaBox = document.createElement("div");
     mediaBox.className = "media-box";
     mediaBox.id = `media-${meme.id}`;
@@ -130,7 +127,6 @@ function createMemeCard(meme) {
         mediaBox.appendChild(img);
     }
 
-    // 카드 정보
     const cardInfo = document.createElement("div");
     cardInfo.className = "card-info";
     cardInfo.innerHTML = `
@@ -147,46 +143,24 @@ function createMemeCard(meme) {
     return card;
 }
 
-function renderMemeCard(meme) {
-    const srcs = getSrcs(meme);
-    const firstSrc = srcs[0];
-
-    const mediaHtml = (meme.type === 'video' || firstSrc.url.endsWith('.mp4'))
-        ? `<video src="../${firstSrc.url}" muted loop onmouseover="this.play()" onmouseout="this.pause()"></video>`
-        : `<img src="../${firstSrc.url}" alt="${meme.name}">`;
-
-    return `
-        <div class="card meme-card" id="card-${meme.id}" onclick="selectMeme('${meme.id}')">
-            <button class="zoom-btn" onclick="openMemeZoom('${meme.id}', event)" title="확대 보기">+</button>
-            <div class="media-box" id="media-${meme.id}">
-                ${mediaHtml}
-            </div>
-            <div class="card-info">
-                <div class="card-title">${meme.name}</div>
-                <div class="card-studio">${meme.origin || '출처 불명'}</div>
-            </div>
-        </div>
-    `;
-}
+// ✅ 삭제: 코드 어디서도 호출되지 않던 죽은 함수 renderMemeCard() 제거
+//         (createMemeCard()가 실제 카드 렌더링을 담당하며 기능이 완전히 중복됨)
 
 function switchSrc(memeId, srcUrl, tabBtn, e) {
-    e.stopPropagation(); // 카드 선택 이벤트 방지
+    e.stopPropagation();
 
-    // 탭 활성화
     const card = document.getElementById(`card-${memeId}`);
     card.querySelectorAll('.src-tab').forEach(t => t.classList.remove('active'));
     tabBtn.classList.add('active');
 
-    // 미디어 교체
     const mediaBox = document.getElementById(`media-${memeId}`);
-    const meme = AnimeMemeData_2026.find(m => m.id === memeId);
+    const meme = AnimeMemeData.find(m => m.id === memeId);   // ✅ 수정
     const isVideo = meme.type === 'video' || srcUrl.endsWith('.mp4');
 
     mediaBox.innerHTML = isVideo
         ? `<video src="../${srcUrl}" muted loop autoplay onmouseover="this.play()" onmouseout="this.pause()"></video>`
         : `<img src="../${srcUrl}" alt="${meme.name}">`;
 
-    // 선택된 상태라면 선택 src도 업데이트
     if (memeState.selectedMeme?.id === memeId) {
         memeState.selectedSrc = srcUrl;
     }
@@ -204,10 +178,9 @@ function toggleAccordion(btn) {
 
 function selectMeme(id) {
     const prevSelectedId = memeState.selectedMeme?.id;
-    const meme = AnimeMemeData_2026.find(m => m.id === id);
+    const meme = AnimeMemeData.find(m => m.id === id);   // ✅ 수정
     memeState.selectedMeme = meme;
 
-    // 현재 카드에서 활성 탭의 src를 selectedSrc로 저장
     const card = document.getElementById(`card-${id}`);
     const activeTab = card?.querySelector('.src-tab.active');
     const srcs = getSrcs(meme);
@@ -229,13 +202,12 @@ function selectMeme(id) {
 
 function openMemeZoom(id, e) {
     if (e) e.stopPropagation();
-    const meme = AnimeMemeData_2026.find(m => m.id === id);
+    const meme = AnimeMemeData.find(m => m.id === id);   // ✅ 수정
     const popup = document.getElementById("winner-popup");
     if (!meme || !popup) return;
 
     const srcs = getSrcs(meme);
 
-    // 첫 번째 src로 미디어 렌더링
     function renderZoomMedia(src) {
         const isVideo = meme.type === 'video' || src.url.endsWith('.mp4');
         return isVideo
@@ -268,27 +240,24 @@ function openMemeZoom(id, e) {
     `;
     popup.classList.remove('hidden');
 
-    // meme 데이터를 팝업에 임시 저장 (탭 전환용)
     popup._meme = meme;
     popup._srcs = srcs;
 }
+
 function switchPopupSrc(memeId, srcIndex) {
     const popup = document.getElementById("winner-popup");
     const srcs = popup._srcs;
     const meme = popup._meme;
     if (!srcs || !meme) return;
 
-    // 탭 활성화
     popup.querySelectorAll('.popup-tab').forEach((t, i) => {
         t.classList.toggle('active', i === srcIndex);
     });
 
-    // 미디어 교체
     const src = srcs[srcIndex];
     const isVideo = meme.type === 'video' || src.url.endsWith('.mp4');
     const mediaBox = document.getElementById('popup-media');
 
-    // 기존 비디오 정리
     mediaBox.querySelectorAll('video').forEach(v => { v.pause(); v.removeAttribute('src'); v.load(); });
 
     mediaBox.innerHTML = isVideo
