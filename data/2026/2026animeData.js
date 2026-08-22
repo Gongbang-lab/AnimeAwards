@@ -2419,7 +2419,7 @@ var AnimeList_2026 = [
     "id": 61316,
     "year": 2026,
     "title": "Re:제로부터 시작하는 이세계 생활 4기",
-    "quarter": "2분기",
+    "quarter": "2분기, 3분기",
     "thumbnail": "image/animeimg/2026/Q2/Re 제로부터 시작하는 이세계 생활 4기.webp",
     "day": "Wednesdays",
     "episodes": 19,
@@ -4323,7 +4323,7 @@ var AnimeList_2026 = [
 },
 {
   "id": 61686,
-  "title": "올 워크스 메이드 입니다",
+  "title": "히로인? 성녀? 아니요, 올 워크스 메이드 입니다! (자랑)",
   "year": 2026,
   "quarter": "3분기",
   "thumbnail": "image/animeimg/2026/Q3/올 워크스 메이드 입니다.webp",

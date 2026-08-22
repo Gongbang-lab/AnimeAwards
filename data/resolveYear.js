@@ -19,7 +19,8 @@ const YEAR_DATA_KEYS = [
     ["RookieCVData",     "RookieCVData"],
     ["EPData",           "EPData"],
     ["AnimeMemeData",         "AnimeMemeData"],
-    ["scriptwriterData", "scriptwriterData"]
+    ["scriptwriterData", "scriptwriterData"],
+    ["TOP3_Awards",      "TOP3_Awards"],
 ];
 
 YEAR_DATA_KEYS.forEach(([alias, prefix]) => {

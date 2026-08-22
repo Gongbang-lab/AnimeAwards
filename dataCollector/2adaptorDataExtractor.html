@@ -18,8 +18,8 @@
     <pre id="result"></pre>
 
     <!-- 두 데이터를 모두 로드 -->
-    <script src="../data/animeData.js"></script>
-    <script src="../data/animeCinemaData.js"></script>
+    <script src="../data/2026/2026animeData.js"></script>
+    <script src="../data/2026/2026animeCinemaData.js"></script>
     
     <script>
         function extractAdaptorData() {
@@ -53,7 +53,7 @@
             });
 
             // 변수 선언문을 포함한 텍스트 생성
-            const finalString = `const AnimeAdaptorData = ${JSON.stringify(nominatedList, null, 2)};`;
+            const finalString = `var AnimeAdaptorData = ${JSON.stringify(nominatedList, null, 2)};`;
             
             // 화면에 출력
             document.getElementById('result').textContent = finalString;

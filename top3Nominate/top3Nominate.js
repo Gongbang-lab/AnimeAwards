@@ -1,24 +1,22 @@
-const state = {
+const top3State = {
     step: 1,
     selectedCandidates: [], 
-    finalTop3: [],         
-    allAnime: (typeof AnimeList_2026 !== 'undefined' && typeof SeasonFilter !== 'undefined')
-        ? SeasonFilter.filterAnimeList(AnimeList_2026)
-        : (typeof AnimeList_2026 !== 'undefined' ? AnimeList_2026 : [])
+    finalTop3: [],
+    awardName: "TOP3_Awards",   // ✅ 추가: 다른 파일들과 통일 (함수 내부 하드코딩 제거)
+    // ✅ 수정: AnimeList_2026 → AnimeList(별칭), 불필요한 이중 방어 코드 단순화
+    allAnime: (typeof AnimeList !== 'undefined') ? SeasonFilter.filterAnimeList(AnimeList) : []
 };
 
 const DAY_LABELS = { "Mondays":"월요일", "Tuesdays":"화요일", "Wednesdays":"수요일", "Thursdays":"목요일", "Fridays":"금요일", "Saturdays":"토요일", "Sundays":"일요일", "Anomaly":"변칙 편성", "Web":"웹" };
 const RANK_NAMES = ["우수상", "최우수상", "대상"];
 
 document.addEventListener("DOMContentLoaded", () => {
-    if(state.allAnime.length === 0) {
-        console.error("AnimeList_2026 데이터를 불러오지 못했습니다. 경로를 확인해주세요.");
+    if(top3State.allAnime.length === 0) {
+        console.error("AnimeList 데이터를 불러오지 못했습니다. 경로를 확인해주세요.");
     }
 
-    // 초기 렌더링 (검색어 없음)
     renderStep1(); 
     
-    // 검색창 이벤트 바인딩 (실시간 필터링)
     const searchInput = document.getElementById('search-input');
     if (searchInput) {
         searchInput.placeholder = "애니 제목 검색";
@@ -27,16 +25,15 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
     
-    // 버튼 이벤트 바인딩
     document.getElementById('next-btn').addEventListener('click', () => {
-        if (state.step === 1) goStep2();
+        if (top3State.step === 1) goStep2();
         else showResult();
     });
 
     document.getElementById('prev-btn').addEventListener('click', () => {
-        if (state.step === 2) {
-            state.step = 1;
-            state.finalTop3 = [];
+        if (top3State.step === 2) {
+            top3State.step = 1;
+            top3State.finalTop3 = [];
             
             const searchArea = document.querySelector('.search-container');
             const statusIndicator = document.querySelector('.status-indicator');
@@ -46,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (statusIndicator) statusIndicator.classList.remove('hidden');
             if (previewBox) previewBox.classList.remove('hidden');
             
-            renderStep1(); // 복귀 시 다시 렌더링
+            renderStep1();
         } else {
             location.href = "../index.html";
         }
@@ -58,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function renderStep1(searchTerm = "") {
-    state.step = 1;
+    top3State.step = 1;
     document.getElementById('step-title').textContent = "올해의 시리즈 부문";
     const nextBtn = document.getElementById('next-btn');
     nextBtn.textContent = "다음 단계";
@@ -70,10 +67,9 @@ function renderStep1(searchTerm = "") {
     const isSearching = searchTerm.trim() !== "";
     const lowerTerm = searchTerm.toLowerCase().trim();
 
-    // 1. 데이터 필터링 (제목 또는 제작사)
-    let filteredData = state.allAnime;
+    let filteredData = top3State.allAnime;
     if (isSearching) {
-        filteredData = state.allAnime.filter(item => {
+        filteredData = top3State.allAnime.filter(item => {
             const matchTitle = item.title.toLowerCase().includes(lowerTerm);
             const matchStudio = Array.isArray(item.studio) && 
                 item.studio.some(s => s.toLowerCase().includes(lowerTerm));
@@ -86,7 +82,6 @@ function renderStep1(searchTerm = "") {
         return;
     }
 
-    // 2. 데이터 그룹화
     const grouped = {};
     filteredData.forEach(item => {
         const q = item.quarter || "기타 분기";
@@ -95,7 +90,6 @@ function renderStep1(searchTerm = "") {
         grouped[q][item.day].push(item);
     });
 
-    // 3. 렌더링
     Object.keys(grouped).sort().forEach(q => {
         const section = document.createElement('div');
         section.className = 'quarter-section';
@@ -105,7 +99,6 @@ function renderStep1(searchTerm = "") {
         
         const qWrapper = document.createElement('div');
         
-        // 검색 중이면 자동 펼침
         if (isSearching) {
             qWrapper.className = ''; 
             qBtn.className = 'quarter-btn active';
@@ -159,12 +152,9 @@ function renderStep1(searchTerm = "") {
     updatePreview();
 }
 
-// ==========================================
-// STEP 1: 아코디언 리스트 생성 (CSS 100% 매칭)
-// ==========================================
-// 공통 카드 생성 함수 (CSS 구조 완벽 일치)
+// 공통 카드 생성 함수
 function createCard(anime, isStep2, searchTerm = "") {
-    const isSelected = state.selectedCandidates.some(c => c.id === anime.id);
+    const isSelected = top3State.selectedCandidates.some(c => c.id === anime.id);
     const div = document.createElement('div');
     div.className = `card ${!isStep2 && isSelected ? 'selected' : ''}`;
     
@@ -186,27 +176,28 @@ function createCard(anime, isStep2, searchTerm = "") {
 
     div.onclick = () => {
         if (!isStep2) {
-            const idx = state.selectedCandidates.findIndex(c => c.id === anime.id);
+            const idx = top3State.selectedCandidates.findIndex(c => c.id === anime.id);
             if (idx > -1) {
-                state.selectedCandidates.splice(idx, 1);
+                top3State.selectedCandidates.splice(idx, 1);
                 div.classList.remove('selected');
             } else {
-                state.selectedCandidates.push(anime);
+                top3State.selectedCandidates.push(anime);
                 div.classList.add('selected');
             }
             updatePreview();
         } else {
-            const topIdx = state.finalTop3.findIndex(c => c.id === anime.id);
+            const topIdx = top3State.finalTop3.findIndex(c => c.id === anime.id);
             if (topIdx > -1) {
-                state.finalTop3.splice(topIdx, 1);
-            } else if (state.finalTop3.length < 3) {
-                state.finalTop3.push(anime);
+                top3State.finalTop3.splice(topIdx, 1);
+            } else if (top3State.finalTop3.length < 3) {
+                top3State.finalTop3.push(anime);
             }
             updateStep2UI();
         }
     };
     return div;
 }
+
 // 사이드바 미리보기 업데이트
 function updatePreview() {
     const pBox = document.getElementById("preview-box");
@@ -215,24 +206,25 @@ function updatePreview() {
     if (!pBox) return;
     pBox.innerHTML = "";
 
-    if (state.selectedCandidates.length === 0) {
+    if (top3State.selectedCandidates.length === 0) {
         if (nextBtn) nextBtn.disabled = true;
         return;
     }
 
-    if (nextBtn) nextBtn.disabled = state.selectedCandidates.length < 3;
+    if (nextBtn) nextBtn.disabled = top3State.selectedCandidates.length < 3;
 
-    state.selectedCandidates.forEach(anime => {
+    top3State.selectedCandidates.forEach(anime => {
         const item = document.createElement("div");
         item.className = "preview-item";
+        // ✅ 수정: studio 배열 처리
+        const studioText = Array.isArray(anime.studio) ? anime.studio.join(', ') : (anime.studio || '');
         item.innerHTML = `
             ${anime.title}
-            <small>${anime.studio || ''}</small>
+            <small>${studioText}</small>
         `;
         
         item.onclick = () => {
-            state.selectedCandidates = state.selectedCandidates.filter(a => a.id !== anime.id);
-            // 현재 입력된 검색어를 유지하며 리스트 갱신
+            top3State.selectedCandidates = top3State.selectedCandidates.filter(a => a.id !== anime.id);
             const currentSearch = document.getElementById('search-input').value;
             renderStep1(currentSearch); 
         };
@@ -244,14 +236,13 @@ function updatePreview() {
 // STEP 2: 순위 결정 (우수 -> 최우수 -> 대상)
 // ==========================================
 function goStep2() {
-    state.step = 2;
-    state.finalTop3 = [];
+    top3State.step = 2;
+    top3State.finalTop3 = [];
     document.getElementById('step-title').textContent = "최종 후보 순위 결정";
     document.getElementById('next-btn').textContent = "수상 결정";
     document.getElementById('next-btn').disabled = true;
     document.getElementById('rank-status').classList.remove('hidden');
 
-    // [추가] Step 2 진입 시 검색창, 상태 표시줄, 프리뷰 박스 숨김
     const searchArea = document.querySelector('.search-container');
     const statusIndicator = document.querySelector('.status-indicator');
     const previewBox = document.getElementById('preview-box');
@@ -261,11 +252,10 @@ function goStep2() {
     if (previewBox) previewBox.classList.add('hidden');
 
     const display = document.getElementById('main-display');
-    // CSS에 정의된 #step2-grid 사용
     display.innerHTML = `<div id="step2-grid"></div>`;
     const grid = document.getElementById('step2-grid');
 
-    state.selectedCandidates.forEach(anime => {
+    top3State.selectedCandidates.forEach(anime => {
         const card = createCard(anime, true);
         grid.appendChild(card);
     });
@@ -276,7 +266,7 @@ function updateStep2UI() {
     const cards = document.querySelectorAll('#step2-grid .card');
     cards.forEach(card => {
         const title = card.querySelector('.card-title').textContent;
-        const rankIdx = state.finalTop3.findIndex(c => c.title === title);
+        const rankIdx = top3State.finalTop3.findIndex(c => c.title === title);
         const overlay = card.querySelector('.rank-overlay');
         const badge = card.querySelector('.card-badge');
         
@@ -289,17 +279,14 @@ function updateStep2UI() {
             card.classList.add('selected');
             card.setAttribute('data-rank', rankName);
             
-            // 중앙 오버레이에 순위 텍스트 삽입
             overlay.textContent = rankName;
-            
-            // 뱃지는 깔끔하게 숨기거나 기본 분기 유지
             badge.style.opacity = "0"; 
         } else {
             badge.style.opacity = "1";
         }
     });
     
-    document.getElementById('next-btn').disabled = state.finalTop3.length < 3;
+    document.getElementById('next-btn').disabled = top3State.finalTop3.length < 3;
 }
 
 // ==========================================
@@ -309,11 +296,9 @@ function showResult() {
     const modal = document.getElementById('result-modal');
     const body = document.getElementById('modal-body');
     
-    // 데이터 저장 실행
     saveToLocalStorage();
 
-    // finalTop3 구조: [0: 우수, 1: 최우수, 2: 대상]
-    const [bronze, silver, gold] = state.finalTop3;
+    const [bronze, silver, gold] = top3State.finalTop3;
 
     body.innerHTML = `
         <div class="winner-layout">
@@ -343,19 +328,23 @@ function showResult() {
 
 function saveToLocalStorage() {
     try {
-        const currentResults = ResultStorage.getResults();   // ← 수정
-        const awardName = "TOP3_Awards"; 
+        const currentResults = ResultStorage.getResults();
         
-        const resultData = state.finalTop3.map((anime, idx) => ({
+        const resultData = top3State.finalTop3.map((anime, idx) => ({
             rank: RANK_NAMES[idx],
             title: anime.title,
             thumbnail: anime.thumbnail
         }));
 
-        currentResults[awardName] = resultData;
+        currentResults[top3State.awardName] = resultData;
         
-        ResultStorage.saveResults(currentResults);   // ← 수정
+        ResultStorage.saveResults(currentResults);
         console.log("결과가 성공적으로 저장되었습니다:", currentResults);
+
+        // ✅ 추가: 다른 파일들과 통일 (Firebase 투표 집계 제출)
+        if (window.submitSingleAwardToDB) {
+            window.submitSingleAwardToDB(top3State.awardName);
+        }
         
     } catch (error) {
         console.error("localStorage 저장 중 오류 발생:", error);
@@ -367,7 +356,6 @@ function fireConfetti() {
     const end = Date.now() + duration;
 
     (function frame() {
-        // 왼쪽에서 발사
         confetti({
             particleCount: 3,
             angle: 60,
@@ -376,7 +364,6 @@ function fireConfetti() {
             zIndex: 9999,
             colors: ['#d4af37', '#ffffff']
         });
-        // 오른쪽에서 발사
         confetti({
             particleCount: 3,
             angle: 120,

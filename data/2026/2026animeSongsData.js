@@ -2559,5 +2559,305 @@ var AnimeSongs_2026 =
       "youtube": "https://youtu.be/HId-_WNsKZg?si=M2PLip00C-2OnE1Y"
     }
   ]
+},
+{
+  "id": 59193,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "결의의 노래",
+      "artist": "오오하라 유이코",
+      "youtube": "https://youtu.be/3F8-KF40VhI?si=2aQvGgLBIZPYr8uU"
+    },
+    {
+      "type": "op",
+      "title": "새싹의 노래",
+      "artist": "오오하라 유이코",
+      "youtube": "https://youtu.be/Es0mqcdYw9Q?si=xm3d0BAoXwAszyeC"
+    },
+    {
+      "type": "op",
+      "title": "빛의 노래",
+      "artist": "오오하라 유이코",
+      "youtube": "https://youtu.be/t_VzPD5NznA?si=SZDM1m9cs637HVhD"
+    },
+    {
+      "type": "ed",
+      "title": "기도, 끝나면",
+      "artist": "나카시마 미카",
+      "youtube": "https://youtu.be/UKcJqQqiXq0?si=eMCqUEKU_bFDJQDe"
+    }
+  ]
+},
+{
+  "id": 58878,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "안녕, 라라",
+      "artist": "이키모노가카리",
+      "youtube": "https://youtu.be/GOfC_4qCa9c?si=JpVZ991i2EPxMHWc"
+    },
+    {
+      "type": "ed",
+      "title": "Hearts Glow",
+      "artist": "Hana Hope",
+      "youtube": "https://youtu.be/od3XN58Gnws?si=4n1XqPpUcvx-l1ui"
+    }
+  ]
+},
+{
+  "id": 56736,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "Script",
+      "artist": "BUDDiiS",
+      "youtube": "https://youtu.be/lWYRZq7TuHQ?si=hDLHW-DvSLBtFDTC"
+    },
+    {
+      "type": "ed",
+      "title": "근사한 착각",
+      "artist": "Class in Wonderland (くらわん)",
+      "youtube": "https://youtu.be/r7Izfz0iyRw?si=POHwfQMRV_WawrHl"
+    }
+  ]
+},
+{
+  "id": 62936,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "ひとひら",
+      "artist": "하타 모토히로",
+      "youtube": "https://youtu.be/OhRKTSgC7Es?si=Bn70qfwGBUlsLM6Y"
+    },
+    {
+      "type": "ed",
+      "title": "光",
+      "artist": "사쿠라이 유이",
+      "youtube": "https://youtu.be/H_Ab3nKZUfM?si=4_ATod_pNtC2n9PG"
+    }
+  ]
+},
+{
+  "id": 60522,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "낭만가도, 산책 중",
+      "artist": "PelleK",
+      "youtube": "https://youtu.be/9Qr1nkwhqvM?si=SKdHdGNxPDUVZZAX"
+    },
+    {
+      "type": "ed",
+      "title": "기적은 일어나지 않아",
+      "artist": "DIALOGUE+",
+      "youtube": "https://youtu.be/UTR6_vbX5lQ?si=-aIaK8HtRlLErNEZ"
+    }
+  ]
+},
+{
+  "id": 62617,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "그럼에도 흐린 날씨를 넘어가",
+      "artist": "sajou no hana",
+      "youtube": "https://youtu.be/lMq8obidFDI?si=c3Um6v3rSSDRJeek"
+    },
+    {
+      "type": "ed",
+      "title": "평범한 일상과 행운이 가득한 나날로",
+      "artist": "명칭비공개",
+      "youtube": "https://youtu.be/UDD-U-c-m9Y?si=5tdPbVkbh-ePPSHR"
+    }
+  ]
+},
+{
+  "id": 62289,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "Q.E.D.",
+      "artist": "오구라 유이",
+      "youtube": "https://youtu.be/nxdEDwvplY0?si=fGYJmElQAhGfk3qo"
+    },
+    {
+      "type": "ed",
+      "title": "굿바이 룰러바이",
+      "artist": "오오니시 아구리",
+      "youtube": "https://youtu.be/PgZqXjwNGBA?si=aLtJxH569-s8g6oN"
+    }
+  ]
+},
+{
+  "id": 63752,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "Butterfly",
+      "artist": "INUWASI",
+      "youtube": "https://youtu.be/sdOQK3KW2vI?si=DfnZXv1ZOzs2OVHz"
+    },
+    {
+      "type": "ed",
+      "title": "Holy Sweet Home",
+      "artist": "음감 레모네이드",
+      "youtube": "https://youtu.be/5EcanUJkPOY?si=h7SigPhE0wpOyOgh"
+    }
+  ]
+},
+{
+  "id": 62031,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "회심의 일극",
+      "artist": "모모이로 클로버 Z",
+      "youtube": "https://youtu.be/S5BYg1_0u7M?si=vnTbUCqnqVtYj396"
+    },
+    {
+      "type": "ed",
+      "title": "Welcome to 비열한 월드",
+      "artist": "i☆Ris",
+      "youtube": "https://youtu.be/miLM7VnR08o?si=IT1ofT1Y4_tvkJmd"
+    }
+  ]
+},
+{
+  "id": 56735,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "夏に重ねて",
+      "artist": "DIALOGUE＋",
+      "youtube": "https://youtu.be/u0bs0o-EXg4?si=8Ff8VS7MNdyr4MeV"
+    },
+    {
+      "type": "ed",
+      "title": "Tilt",
+      "artist": "harmoe",
+      "youtube": "https://youtu.be/c7gDuH3d4g4?si=SlwJV3Zt04mgEJoS"
+    }
+  ]
+},
+{
+  "id": 62542,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "夏子",
+      "artist": "FUNKY MONKEY BΛBY'S",
+      "youtube": "https://youtu.be/AmXiXQYXIJI?si=fiMXZO-QxHdRpheF"
+    },
+    {
+      "type": "ed",
+      "title": "裸のマーメード",
+      "artist": "마메시바의 대군",
+      "youtube": "https://youtu.be/c-kKrErfKvM?si=V87-FFDhhSzUMVPK"
+    }
+  ]
+},
+{
+  "id": 46488,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "命短し対する乙女よ",
+      "artist": "하나비에",
+      "youtube": "https://youtu.be/0T9ekzDoW1k?si=7PoF_vz9H1qhMsbC"
+    },
+    {
+      "type": "ed",
+      "title": "NEW GAME",
+      "artist": "halca",
+      "youtube": "https://youtu.be/GKtdRThIuuE?si=5SgGn-spUIMp8g4c"
+    }
+  ]
+},
+{
+  "id": 61126,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "Amore",
+      "artist": "ReoNa",
+      "youtube": "https://youtu.be/01Vgu7BIxmI?si=7lcMJXNXWjsyUfCy"
+    },
+    {
+      "type": "ed",
+      "title": "Eternel",
+      "artist": "sajou no hana",
+      "youtube": "https://youtu.be/bszg61aM_7E?si=J70knh7bQAu5f2Yw"
+    }
+  ]
+},
+{
+  "id": 58929,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "GO GHOST",
+      "artist": "King Gnu",
+      "youtube": "https://youtu.be/FhzaLI_Npg8?si=jyj54qv3kLVt9IVw"
+    },
+    {
+      "type": "ed",
+      "title": "Blue",
+      "artist": "MILLENNIUM PARADE",
+      "youtube": "https://youtu.be/IwnUKgmV5QQ?si=U3bLisjMdbWyjS5Z"
+    }
+  ]
+},
+{
+  "id": 63047,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "BAD遺伝子",
+      "artist": "Dannie May",
+      "youtube": "https://youtu.be/XOyydxN5QFs?si=d1rhjoJiRA7mmFIi"
+    },
+    {
+      "type": "ed",
+      "title": "ばけもん",
+      "artist": "카라노아",
+      "youtube": "https://youtu.be/g8YYbQeC5G4?si=3tK1pPZq7Lz3RW1K"
+    }
+  ]
+},
+{
+  "id": 62476,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "一進",
+      "artist": "하쿠",
+      "youtube": "https://youtu.be/s9peIEgH2zU?si=8LJwnCdmXB_CxkbL"
+    },
+    {
+      "type": "ed",
+      "title": "인연",
+      "artist": "KI_EN",
+      "youtube": "https://youtu.be/r6pUQw5xjoc?si=45WbBHIsx6cJgO3z"
+    }
+  ]
 }
 ]
