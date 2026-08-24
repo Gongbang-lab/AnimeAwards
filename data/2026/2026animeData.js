@@ -2419,7 +2419,7 @@ var AnimeList_2026 = [
     "id": 61316,
     "year": 2026,
     "title": "Re:제로부터 시작하는 이세계 생활 4기",
-    "quarter": "2분기, 3분기",
+    "quarter": "2분기",
     "thumbnail": "image/animeimg/2026/Q2/Re 제로부터 시작하는 이세계 생활 4기.webp",
     "day": "Wednesdays",
     "episodes": 19,
@@ -2831,7 +2831,7 @@ var AnimeList_2026 = [
     "id": 59970,
     "year": 2026,
     "title": "전생했더니 슬라임이었던 건에 대하여 4기",
-    "quarter": "2분기, 3분기",
+    "quarter": "2분기",
     "thumbnail": "image/animeimg/2026/Q2/전생했더니 슬라임이었던 건에 대하여 4기.webp",
     "day": "Fridays",
     "episodes": 0,
@@ -2890,7 +2890,7 @@ var AnimeList_2026 = [
     "id": 62981,
     "year": 2026,
     "title": "신의 물방울",
-    "quarter": "2분기, 3분기",
+    "quarter": "2분기",
     "thumbnail": "image/animeimg/2026/Q2/신의 물방울.webp",
     "day": "Fridays",
     "episodes": 24,
@@ -3028,7 +3028,7 @@ var AnimeList_2026 = [
     "id": 57466,
     "year": 2026,
     "title": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
-    "quarter": "2분기, 3분기",
+    "quarter": "2분기",
     "thumbnail": "image/animeimg/2026/Q2/책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~.webp",
     "day": "Saturdays",
     "episodes": 0,
@@ -3065,7 +3065,7 @@ var AnimeList_2026 = [
     "id": 60310,
     "year": 2026,
     "title": "마계학교 이루마군 4기",
-    "quarter": "2분기, 3분기",
+    "quarter": "2분기",
     "thumbnail": "image/animeimg/2026/Q2/마계학교 이루마군 4기.webp",
     "day": "Saturdays",
     "episodes": 24,
@@ -3203,7 +3203,7 @@ var AnimeList_2026 = [
     "id": 62001,
     "year": 2026,
     "title": "황천의 츠가이",
-    "quarter": "2분기, 3분기",
+    "quarter": "2분기",
     "thumbnail": "image/animeimg/2026/Q2/황천의 츠가이.webp",
     "day": "Saturdays",
     "episodes": 24,
@@ -3229,7 +3229,7 @@ var AnimeList_2026 = [
     "id": 62048,
     "year": 2026,
     "title": "마오",
-    "quarter": "2분기, 3분기",
+    "quarter": "2분기",
     "thumbnail": "image/animeimg/2026/Q2/마오.webp",
     "day": "Saturdays",
     "episodes": 26,
@@ -5716,5 +5716,209 @@ var AnimeList_2026 = [
     ]
   }
 },
+  {
+    "id": 61316,
+    "year": 2026,
+    "title": "Re:제로부터 시작하는 이세계 생활 4기",
+    "quarter": "3분기",
+    "thumbnail": "image/animeimg/2026/Q2/Re 제로부터 시작하는 이세계 생활 4기.webp",
+    "day": "Wednesdays",
+    "episodes": 19,
+    "studio": [
+      "WHITE FOX"
+    ],
+    "staff": {
+      "director": [
+        "시노하라 마사히로"
+      ],
+      "adaptor": [
+        "요코타니 마사히로"
+      ],
+      "character_design": [
+        "오츠카 신이치로",
+        "사가와 하루카",
+        "치바 케이타로"
+      ],
+      "composer": [
+        "스에히로 켄이치로"
+      ]
+    }
+  },
+  {
+    "id": 59970,
+    "year": 2026,
+    "title": "전생했더니 슬라임이었던 건에 대하여 4기",
+    "quarter": "3분기",
+    "thumbnail": "image/animeimg/2026/Q2/전생했더니 슬라임이었던 건에 대하여 4기.webp",
+    "day": "Fridays",
+    "episodes": 0,
+    "studio": [
+      "8-Bit"
+    ],
+    "staff": {
+      "director": [
+        "츠다 나오카츠"
+      ],
+      "adaptor": [
+        "오가와 히토미"
+      ],
+      "character_design": [
+        "에바타 료마",
+        "키시다 타카히로",
+        "코미네 마사요리",
+        "야마자키 히데키",
+        "이토 토모코"
+      ],
+      "composer": [
+        "R・O・N"
+      ]
+    }
+  },
+  {
+    "id": 62981,
+    "year": 2026,
+    "title": "신의 물방울",
+    "quarter": "3분기",
+    "thumbnail": "image/animeimg/2026/Q2/신의 물방울.webp",
+    "day": "Fridays",
+    "episodes": 24,
+    "studio": [
+      "SATELIGHT"
+    ],
+    "staff": {
+      "director": [
+        "이토소 켄지"
+      ],
+      "adaptor": [
+        "미츠루 유우"
+      ],
+      "character_design": [
+        "스와 소타"
+      ],
+      "composer": [
+        "세가와 에이시"
+      ]
+    }
+  },
+  {
+    "id": 57466,
+    "year": 2026,
+    "title": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
+    "quarter": "3분기",
+    "thumbnail": "image/animeimg/2026/Q2/책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~.webp",
+    "day": "Saturdays",
+    "episodes": 0,
+    "studio": [
+      "WIT STUDIO"
+    ],
+    "staff": {
+      "director": [
+        "이와사키 요시아키"
+      ],
+      "adaptor": [
+        "쿠니사와 마리코"
+      ],
+      "character_design": [
+        "미노와 아이코",
+        "이시다테 나미코",
+        "무라카미 타츠야",
+        "오치 신지",
+        "호사카 모모코",
+        "야마자키 코이치",
+        "아미 케이노스케",
+        "장 샤오웨이",
+        "와타나베 켄스케",
+        "키시노 미호",
+        "핫토리 하나카",
+        "카시자키 이노리"
+      ],
+      "composer": [
+        "미치루"
+      ]
+    }
+  },
+  {
+    "id": 60310,
+    "year": 2026,
+    "title": "마계학교 이루마군 4기",
+    "quarter": "3분기",
+    "thumbnail": "image/animeimg/2026/Q2/마계학교 이루마군 4기.webp",
+    "day": "Saturdays",
+    "episodes": 24,
+    "studio": [
+      "반다이 남코 픽처스"
+    ],
+    "staff": {
+      "director": [
+        "모리와키 마코토",
+        "츠지하시 아야카"
+      ],
+      "adaptor": [
+        "후데야스 카즈유키"
+      ],
+      "character_design": [
+        "하라 유미코"
+      ],
+      "composer": [
+        "혼마 아키미츠",
+        "세키무카이 야요이"
+      ]
+    }
+  },
+  {
+    "id": 62001,
+    "year": 2026,
+    "title": "황천의 츠가이",
+    "quarter": "3분기",
+    "thumbnail": "image/animeimg/2026/Q2/황천의 츠가이.webp",
+    "day": "Saturdays",
+    "episodes": 24,
+    "studio": [
+      "본즈 필름"
+    ],
+    "staff": {
+      "director": [
+        "안도 마사히로"
+      ],
+      "adaptor": [
+        "타카기 노보루"
+      ],
+      "character_design": [
+        "아라이 노부히로"
+      ],
+      "composer": [
+        "스에히로 켄이치로"
+      ]
+    }
+  },
+  {
+    "id": 62048,
+    "year": 2026,
+    "title": "마오",
+    "quarter": "3분기",
+    "thumbnail": "image/animeimg/2026/Q2/마오.webp",
+    "day": "Saturdays",
+    "episodes": 26,
+    "studio": [
+      "선라이즈"
+    ],
+    "staff": {
+      "director": [
+        "사토 테루오"
+      ],
+      "adaptor": [
+        "카키하라 유코"
+      ],
+      "character_design": [
+        "히시누마 요시히토",
+        "리쿠 린",
+        "사토 토시코",
+        "카타야마 마나부"
+      ],
+      "composer": [
+        "카네마츠 슈"
+      ]
+    }
+  }
 
 ];

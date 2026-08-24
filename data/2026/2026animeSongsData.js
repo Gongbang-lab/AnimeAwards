@@ -2562,6 +2562,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 59193,
+  "year" : 2026,
   "quarter": "3분기",
   "songs": [
     {
@@ -2592,6 +2593,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 58878,
+  "year" : 2026,
   "quarter": "3분기",
   "songs": [
     {
@@ -2610,6 +2612,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 56736,
+  "year" : 2026,
   "quarter": "3분기",
   "songs": [
     {
@@ -2628,6 +2631,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 62936,
+  "year" : 2026,
   "quarter": "3분기",
   "songs": [
     {
@@ -2646,6 +2650,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 60522,
+  "year" : 2026,
   "quarter": "3분기",
   "songs": [
     {
@@ -2664,6 +2669,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 62617,
+  "year" : 2026,
   "quarter": "3분기",
   "songs": [
     {
@@ -2682,6 +2688,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 62289,
+  "year" : 2026,
   "quarter": "3분기",
   "songs": [
     {
@@ -2700,6 +2707,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 63752,
+  "year" : 2026,
   "quarter": "3분기",
   "songs": [
     {
@@ -2718,6 +2726,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 62031,
+  "year" : 2026,
   "quarter": "3분기",
   "songs": [
     {
@@ -2736,6 +2745,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 56735,
+  "year" : 2026,
   "quarter": "3분기",
   "songs": [
     {
@@ -2754,6 +2764,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 62542,
+  "year" : 2026,
   "quarter": "3분기",
   "songs": [
     {
@@ -2772,6 +2783,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 46488,
+  "year" : 2026,
   "quarter": "3분기",
   "songs": [
     {
@@ -2790,6 +2802,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 61126,
+  "year" : 2026,
   "quarter": "3분기",
   "songs": [
     {
@@ -2808,6 +2821,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 58929,
+  "year" : 2026,
   "quarter": "3분기",
   "songs": [
     {
@@ -2826,6 +2840,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 63047,
+  "year" : 2026,
   "quarter": "3분기",
   "songs": [
     {
@@ -2844,6 +2859,7 @@ var AnimeSongs_2026 =
 },
 {
   "id": 62476,
+  "year" : 2026,
   "quarter": "3분기",
   "songs": [
     {
@@ -2857,6 +2873,955 @@ var AnimeSongs_2026 =
       "title": "인연",
       "artist": "KI_EN",
       "youtube": "https://youtu.be/r6pUQw5xjoc?si=45WbBHIsx6cJgO3z"
+    }
+  ]
+},
+{
+  "id": 63489,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "여명의 하늘",
+      "artist": "나나미 히로키",
+      "youtube": "https://youtu.be/cpytH8hQ5BE?si=gqj2Rp8IwYZY6NEn"
+    },
+    {
+      "type": "ed",
+      "title": "Reunion",
+      "artist": "시미즈 미이샤",
+      "youtube": "https://youtu.be/z0cYxw8Eifg?si=wH0hTLm5RwPF15bp"
+    }
+  ]
+},
+{
+  "id": 62513,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "Foreshadow",
+      "artist": "마에시마 마유",
+      "youtube": "https://youtu.be/SiTi3WCmzfc?si=cbtzmMDJjvJKVqjS"
+    },
+    {
+      "type": "ed",
+      "title": "Awake Anew",
+      "artist": "MYTH & ROID",
+      "youtube": "https://youtu.be/Tbyi0Tx1QLA?si=i8AtM-HJxYkeX8jl"
+    }
+  ]
+},
+{
+  "id": 49233,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "Why? RED induction",
+      "artist": "MYTH & ROID",
+      "youtube": "https://youtu.be/IVyvkwvsqW0?si=4PCBrFdb4WPERShJ"
+    },
+    {
+      "type": "ed",
+      "title": "Weiter! Weiter!",
+      "artist": "타냐 데그레챠프",
+      "youtube": "https://youtu.be/x2k_iYCGKvE?si=pFJ4M1dx40flYMS8"
+    }
+  ]
+},
+{
+  "id": 61686,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "마듀얼↔하트",
+      "artist": "멜로디 웨이브,루시아나 루토르버그",
+      "youtube": "https://youtu.be/N9qyQ1s06yc?si=5vrWVqAWazTR7IYv"
+    },
+    {
+      "type": "ed",
+      "title": "핸드메이드",
+      "artist": "타냐 데그레챠프",
+      "youtube": "https://youtu.be/hzJqg7M1JrE?si=tt_fxzFEkSIXqd1Q"
+    }
+  ]
+},
+{
+  "id": 62102,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "비를 피하는 동경",
+      "artist": "Lia",
+      "youtube": "https://youtu.be/k2Gfd254sMg?si=f7EZhKn2yW-zhNJ5"
+    },
+    {
+      "type": "ed",
+      "title": "클레어",
+      "artist": "AVAM",
+      "youtube": "https://youtu.be/q1p5q_HIeCk?si=ruF671NKqVU9gVS8"
+    }
+  ]
+},
+{
+  "id": 54000,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "인생 엔딩 크레딧",
+      "artist": "Ando",
+      "youtube": "https://youtu.be/i_dXw-oJZBA?si=xLYme1f73aQQM2rL"
+    },
+    {
+      "type": "ed",
+      "title": "내일은 내일의 케세라세라!",
+      "artist": "명칭비공개",
+      "youtube": "https://youtu.be/pU3P4At856Q?si=xgTuFN_1JMRrUmNV"
+    }
+  ]
+},
+{
+  "id": 61897,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "クレナイノハ",
+      "artist": "UNICORN",
+      "youtube": "https://youtu.be/3a1w0lo3OxM?si=CsHDgvlbfenNL8rS"
+    },
+    {
+      "type": "ed",
+      "title": "未完成",
+      "artist": "BLUE ENCOUNT",
+      "youtube": "https://youtu.be/KUrvQ0UYuYQ?si=FIHwQPvrZZK0VDN_"
+    }
+  ]
+},
+{
+  "id": 63508,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "＋ENCOUNT",
+      "artist": "FLOW",
+      "youtube": "https://youtu.be/tbJPoZC5MWc?si=bMYq1U2rARkggTzM"
+    },
+    {
+      "type": "ed",
+      "title": "동경",
+      "artist": "TrySail",
+      "youtube": "https://youtu.be/DGS4b3gm1s0?si=ULFXiMSzGJuCXqjl"
+    }
+  ]
+},
+{
+  "id": 62322,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "Not a Hero",
+      "artist": "아이츠키 나쿠루,나츠메 이츠키",
+      "youtube": "https://youtu.be/4iRiuYov9pY?si=h6OXy9Mg52-W1Vb4"
+    },
+    {
+      "type": "ed",
+      "title": "HP",
+      "artist": "유키무라.",
+      "youtube": "https://youtu.be/MgIol7kDcTE?si=PrJATjjiiqX4Ct5N"
+    }
+  ]
+},
+{
+  "id": 63780,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "FLASHBULB",
+      "artist": "Omoinotake",
+      "youtube": "https://youtu.be/SccI7wPhm5s?si=UelufNiXo1Vse2V0"
+    },
+    {
+      "type": "ed",
+      "title": "꽃다발",
+      "artist": "Omoinotake",
+      "youtube": "https://youtu.be/-nGHy6oi9dA?si=aITrBOlQdSM8xgQg"
+    }
+  ]
+},
+{
+  "id": 63418,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "썬더볼트",
+      "artist": "유우리",
+      "youtube": "https://youtu.be/gnsGSDo0fTU?si=FkQisaDNEc2ZF0nO"
+    },
+    {
+      "type": "ed",
+      "title": "슈루레리라",
+      "artist": "音羽-otoha-",
+      "youtube": "https://youtu.be/2SXzmgP26bk?si=T2G6DyHqqHqLqNsw"
+    }
+  ]
+},
+{
+  "id": 63316,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "SHOW DOWN",
+      "artist": "QWER",
+      "youtube": "https://youtu.be/PVN8Pj_Ykyo?si=flf6bxxkdPS-vkE-"
+    },
+    {
+      "type": "ed",
+      "title": "To Be Continued",
+      "artist": "QWER",
+      "youtube": "https://youtu.be/_4TDl0RPfnE?si=_pXgiEjnMIJ3sKoO"
+    }
+  ]
+},
+{
+  "id": 63082,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "다라다라♡댄싱",
+      "artist": "다라 씨,미소기야 히나타,미소기야 카오루,내레이션",
+      "youtube": "https://youtu.be/ARajp8DyC48?si=cdynhpAAeN1168gj"
+    },
+    {
+      "type": "ed",
+      "title": "햇볕 쬐기",
+      "artist": "REIRIE",
+      "youtube": "https://youtu.be/HjtjOaJz-_U?si=gXoJjnuxLwZt-eOs"
+    },
+    {
+      "type": "ed",
+      "title": "건 바르제 테마",
+      "artist": "엔도 마사아키",
+      "youtube": "https://youtu.be/wTPWul-o-UY?si=dfLxHe4YDvLfteqn"
+    }
+  ]
+},
+{
+  "id": 63347,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "종소",
+      "artist": "마카로니 엔피츠",
+      "youtube": "https://youtu.be/6f78rxIxzV0?si=7XhiG_j3CepwzHRA"
+    },
+    {
+      "type": "ed",
+      "title": "이름 없는 꽃",
+      "artist": "hockrockb",
+      "youtube": "https://youtu.be/kBP_Urtwx7Q?si=G_Q9TrQANqeebrJs"
+    }
+  ]
+},
+{
+  "id": 62430,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "이것은 우리들이 살아남는 줄거리",
+      "artist": "무겐다이 뮤타입",
+      "youtube": "https://youtu.be/Ech7Tj8ga0Y?si=xt-a2iDiuxgdbFOW"
+    },
+    {
+      "type": "ed",
+      "title": "우주의 신비",
+      "artist": "무겐다이 뮤타입",
+      "youtube": "https://youtu.be/7xrs-MPYydw?si=khsOv24eAsZYnvua"
+    }
+  ]
+},
+{
+  "id": 63802,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "뫼비우스",
+      "artist": "이에이리 레오",
+      "youtube": "https://youtu.be/DZIN7Fx_K48?si=344B_Pm8H_uQ6e5x"
+    },
+    {
+      "type": "ed",
+      "title": "딜레마",
+      "artist": "토미오카 아이",
+      "youtube": "https://youtu.be/00D8aV_cT6c?si=DnWnkrUlQxfv2dWO"
+    }
+  ]
+},
+{
+  "id": 62076,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "족제비 이념",
+      "artist": "계속 한밤중이면 좋을 텐데.",
+      "youtube": "https://youtu.be/OUmtsSroxns?si=Gs4M-YG0voujbFuz"
+    },
+    {
+      "type": "ed",
+      "title": "NIGHT DANCER",
+      "artist": "imase",
+      "youtube": "https://youtu.be/9eo3M7-wAtU?si=JzQ-5Up8F53yjL8J"
+    },
+    {
+      "type": "op",
+      "title": "무화과 연기",
+      "artist": "계속 한밤중이면 좋을 텐데.",
+      "youtube": "https://youtu.be/0HGEaVFajSU?si=fOTH36b8vx_m2YSW"
+    },
+    {
+      "type": "ed",
+      "title": "Fiction",
+      "artist": "imase",
+      "youtube": "https://youtu.be/rn0QtVBIo2o?si=4xcZ3a5xpxYLHELq"
+    }
+  ]
+},
+{
+  "id": 59741,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "Awake",
+      "artist": "SPYAIR",
+      "youtube": "https://youtu.be/_j3Bm3tr7dA?si=LsUJj6iBJl7_JOIx"
+    },
+    {
+      "type": "ed",
+      "title": "Lv1 직업：인간",
+      "artist": "ReoNa",
+      "youtube": "https://youtu.be/2KcoQLp7Kx8?si=c-g0A9kbN1BukFc3"
+    }
+  ]
+},
+{
+  "id": 63403,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "아무것도 없어",
+      "artist": "와스레란네요",
+      "youtube": "https://youtu.be/46Z-WQv_vFc?si=Wr55pPs0KVNq6E5t"
+    },
+    {
+      "type": "ed",
+      "title": "연기와 블루",
+      "artist": "네크라이토키",
+      "youtube": "https://youtu.be/TwumA6YhQp4?si=_RVC9DesZG-ngMan"
+    }
+  ]
+},
+{
+  "id": 63150,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "소녀괴수",
+      "artist": "METANICK",
+      "youtube": "https://youtu.be/hFldDZZcrQo?si=BvM4rY3VA1EsNjvp"
+    },
+    {
+      "type": "ed",
+      "title": "オトメノホンキ",
+      "artist": "HoneyWorks feat.하코니와릴리",
+      "youtube": "https://youtu.be/waOUdRPozDY?si=WLISZOrSTCIJbVlY"
+    }
+  ]
+},
+{
+  "id": 62078,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "Wonder",
+      "artist": "CROWN HEAD",
+      "youtube": "https://youtu.be/fCboU3XWuLU?si=thk2BMGw1HlOM8IZ"
+    },
+    {
+      "type": "ed",
+      "title": "별 내리는 밤의 약속",
+      "artist": "카야(花耶)",
+      "youtube": "https://youtu.be/dhAKFhT6pno?si=Vk3SThLoVJ5e5PgV"
+    }
+  ]
+},
+{
+  "id": 59970,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "TACTIC",
+      "artist": "DAOKO",
+      "youtube": "https://youtu.be/zvIS6EIkXx8?si=5-TvpSziWhPNzIfz"
+    },
+    {
+      "type": "ed",
+      "title": "ヒムナル",
+      "artist": "타도코로 아즈사",
+      "youtube": "https://youtu.be/jYbklPS7mDk?si=t77KBBp18WmixfLe"
+    }
+  ]
+},
+{
+  "id": 61280,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "유서",
+      "artist": "키타니 타츠야",
+      "youtube": "https://youtu.be/ZcX905vF0j0?si=-vnY6A2O-1HJvw3Y"
+    },
+    {
+      "type": "ed",
+      "title": "코니퍼",
+      "artist": "리갈 릴리",
+      "youtube": "https://youtu.be/BHS-_AXCWrc?si=WgbYftIxLe90G6bv"
+    }
+  ]
+},
+{
+  "id": 63061,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "アイコトバ",
+      "artist": "DISH//",
+      "youtube": "https://youtu.be/X_knFby9AJc?si=Vb9h5b8HtGaZgHVO"
+    },
+    {
+      "type": "ed",
+      "title": "Clove",
+      "artist": "우시오 레이라",
+      "youtube": "https://youtu.be/4KZnNNPfkss?si=lEMOffVvEMMu-o0q"
+    }
+  ]
+},
+{
+  "id": 63817,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "○✕△□",
+      "artist": "낭만파 마시멜로",
+      "youtube": "https://youtu.be/ByIgOD0qOKY?si=bINDv7kE7_C611Wx"
+    },
+    {
+      "type": "ed",
+      "title": "Firetail",
+      "artist": "초큐메이",
+      "youtube": "https://youtu.be/SYpHpUiGcQU?si=1V3-AfPpahcRWvbX"
+    }
+  ]
+},
+{
+  "id": 56835,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "Running In My Head",
+      "artist": "MIYAVI",
+      "youtube": "https://youtu.be/5zRfzTVcHKU?si=bh-0NtjuUPYJK_Cw"
+    },
+    {
+      "type": "ed",
+      "title": "로제 (Prod.TeddyLoid)",
+      "artist": "미츠시마 히카리",
+      "youtube": "https://youtu.be/u0nHMnETTT4?si=QnqujcGy_FBP2rf5"
+    }
+  ]
+},
+{
+  "id": 61048,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "고양이의 날들",
+      "artist": "suis from 요루시카",
+      "youtube": "https://youtu.be/ZH8xYK5vac0?si=cz4RxUOdPr4weilJ"
+    },
+    {
+      "type": "ed",
+      "title": "내가 돌아온 곳",
+      "artist": "shallm",
+      "youtube": "https://youtu.be/CmP5HMtIOEY?si=zPL_SCFGQRN4FlwO"
+    }
+  ]
+},
+{
+  "id": 61169,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "FREEZE ME UP",
+      "artist": "SiM",
+      "youtube": "https://youtu.be/2FjRzlo5zHI?si=2lzwwrNi62YTuwaF"
+    },
+    {
+      "type": "ed",
+      "title": "Groooovy",
+      "artist": "I Don't Like Mondays.",
+      "youtube": "https://youtu.be/yaX2p36llik?si=Xy6L7RJAzJVWq60d"
+    }
+  ]
+},
+{
+  "id": 63324,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "BUDDING",
+      "artist": "THE JET BOY BANGERZ",
+      "youtube": "https://youtu.be/ms6fXO3Ngk4?si=ALeAwWD8tgJO7a4P"
+    },
+    {
+      "type": "ed",
+      "title": "ココニイル",
+      "artist": "WOLF HOWL HARMONY",
+      "youtube": "https://youtu.be/WM9BicFEhKs?si=E18OKtmPi02p859u"
+    }
+  ]
+},
+{
+  "id": 60636,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "I-BULL",
+      "artist": "jo0ji",
+      "youtube": "https://youtu.be/9idm6v9jNbg?si=_W1JgfWHFGvsR0Lv"
+    },
+    {
+      "type": "ed",
+      "title": "나선",
+      "artist": "9Lana",
+      "youtube": "https://youtu.be/E2c3V6nxjCw?si=iNkyii-d6NF-j63a"
+    }
+  ]
+},
+{
+  "id": 61483,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "Stella",
+      "artist": "SEKAI NO OWARI",
+      "youtube": "https://youtu.be/_GlLp6hyM2E?si=Y2FCHWEscpQYzHke"
+    },
+    {
+      "type": "ed",
+      "title": "별",
+      "artist": "여왕벌",
+      "youtube": "https://youtu.be/bLQV43WeRvk?si=ggra8FA6ldB93gB2"
+    }
+  ]
+},
+{
+  "id": 62001,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "back shot",
+      "artist": "오토다 마사노리",
+      "youtube": "https://youtu.be/nQGfyebJ_oc?si=bnNHwDTFq6TX_xqf"
+    },
+    {
+      "type": "ed",
+      "title": "공작",
+      "artist": "스가와라 케이",
+      "youtube": "https://youtu.be/-oJdHssdJAk?si=knrqnR51YlRUv-2q"
+    }
+  ]
+},
+{
+  "id": 62051,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "ユラリユレル",
+      "artist": "NOMELON NOLEMON",
+      "youtube": "https://youtu.be/QxJWmZ74GfM?si=WQMpLw6TXk55ercu"
+    },
+    {
+      "type": "ed",
+      "title": "DAYS!",
+      "artist": "Aooo",
+      "youtube": "https://youtu.be/Z3LKxdlyNSU?si=A6dy5qbYpwkPagvJ"
+    }
+  ]
+},
+{
+  "id": 61814,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "한마디 말",
+      "artist": "ClariS",
+      "youtube": "https://youtu.be/MnFWBiWIfPg?si=vhFYOARNBorweHJX"
+    },
+    {
+      "type": "ed",
+      "title": "마음의 별",
+      "artist": "야마자키 이쿠사부로",
+      "youtube": "https://youtu.be/ercJJBclL9k?si=DEKoiC6lNAA26Mx2"
+    }
+  ]
+},
+{
+  "id": 60552,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "라테 매직",
+      "artist": "syudou,야기 유세이",
+      "youtube": "https://youtu.be/bp1F_BYa27U?si=KHgHxZ1szQLFZkR-"
+    },
+    {
+      "type": "ed",
+      "title": "BooooM!!!",
+      "artist": "호쇼 마린",
+      "youtube": "https://youtu.be/CCjQ0FuVx7s?si=4bYGBQvl-R_3pH0V"
+    }
+  ]
+},
+{
+  "id": 60637,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "CRIMSON BULLET",
+      "artist": "미즈키 나나",
+      "youtube": "https://youtu.be/_gBcPnxRXDY?si=oaD4hGv92LDAaYvg"
+    },
+    {
+      "type": "ed",
+      "title": "Ephemeral",
+      "artist": "아오키 히나",
+      "youtube": "https://youtu.be/hHBu5YXhiXQ?si=dpcgOXtUB529igxB"
+    }
+  ]
+},
+{
+  "id": 63537,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "언젠가 제대로",
+      "artist": "리리아.",
+      "youtube": "https://youtu.be/GU5DQI5snck?si=33Z2uY5-Ev7GxQuL"
+    },
+    {
+      "type": "ed",
+      "title": "최종회",
+      "artist": "sorato",
+      "youtube": "https://youtu.be/jW-nRpVHw8c?si=GpHeUr51zbd43ITx"
+    }
+  ]
+},
+{
+  "id": 62535,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "High-maintenance girl",
+      "artist": "오오이시 마사요시",
+      "youtube": "https://youtu.be/dv1TGoV_aS8?si=Z0SxmjSRVRe8rbLd"
+    },
+    {
+      "type": "ed",
+      "title": "Very Good Encounter",
+      "artist": "우치다 마아야",
+      "youtube": "https://youtu.be/mGmKY-PB82o?si=yHIpSWTuboZAJ_jh"
+    }
+  ]
+},
+{
+  "id": 62876,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "최최최고급으로 돌봐줘",
+      "artist": "angela",
+      "youtube": "https://youtu.be/nWwsthEoUnQ?si=-eg3rCFAodQUeALL"
+    },
+    {
+      "type": "ed",
+      "title": "완벽하지 않은 나",
+      "artist": "마에시마 아미",
+      "youtube": "https://youtu.be/n7iidGIYvkw?si=HGefcwQdRGtbk1VE"
+    }
+  ]
+},
+{
+  "id": 62683,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "気味が悪いんだからねっ",
+      "artist": "SWEET STEADY",
+      "youtube": "https://youtu.be/GEZWCWyX-is?si=Cf_Iykq4JmnpmhTR"
+    },
+    {
+      "type": "ed",
+      "title": "呪わしてね？",
+      "artist": "우케츠",
+      "youtube": "https://youtu.be/MnDO2Vv4ZkA?si=JtxM8QVBizxwqqdK"
+    }
+  ]
+},
+{
+  "id": 63832,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "강아지풀",
+      "artist": "7co",
+      "youtube": "https://youtu.be/kUe7LOCbjzQ?si=m7NlvycZf8KNXIZz"
+    },
+    {
+      "type": "ed",
+      "title": "운명의 너",
+      "artist": "메가 신노스케",
+      "youtube": "https://youtu.be/FlqDBh8QjZk?si=91B1Nlt6EvvcsRCK"
+    }
+  ]
+},
+{
+  "id": 63100,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "火宴",
+      "artist": "원인은 자신에게 있다.",
+      "youtube": "https://youtu.be/wTQdf37-OBk?si=zN_uT7osNvFri0em"
+    },
+    {
+      "type": "ed",
+      "title": "The Weeping Devil",
+      "artist": "에무니미니",
+      "youtube": "https://youtu.be/1tc784esysA?si=UOLn17Xhpe_0Binj"
+    }
+  ]
+},
+{
+  "id": 62435,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "license",
+      "artist": "Redhair Rosy",
+      "youtube": "https://youtu.be/RSfkFGTuPyo?si=qcxFGqjAJi_FSojE"
+    },
+    {
+      "type": "ed",
+      "title": "끝없는 밤하늘을 지키는 방법",
+      "artist": "이너 저니",
+      "youtube": "https://youtu.be/lrB8anaL9X4?si=rwjlhpYay4fYIg9x"
+    }
+  ]
+},
+{
+  "id": 62811,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "너무 좋아해♡ 쭉 영원히♡",
+      "artist": "렌타로 패밀리",
+      "youtube": "https://youtu.be/wRroEVXmXW4?si=9iP313Tcx9YfnYgB"
+    },
+    {
+      "type": "ed",
+      "title": "오세연・닿으세애",
+      "artist": "렌타로 패밀리",
+      "youtube": "https://youtu.be/ldGdGl9fdP4?si=xMfzakPpj40myFpW"
+    }
+  ]
+},
+{
+  "id": 62856,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "유레카 에브리카",
+      "artist": "고아미 루나",
+      "youtube": "https://youtu.be/MtxdM8wWpRc?si=R0o_twX8cuscmuoU"
+    },
+    {
+      "type": "ed",
+      "title": "Soarin’",
+      "artist": "진저 루트",
+      "youtube": "https://youtu.be/lJ6dDUwWOis?si=qe-ll0gBFSKRnmvR"
+    },
+    {
+      "type": "ed",
+      "title": "ウキヨバナレ",
+      "artist": "메이지 유신 전기 소녀 악단",
+      "youtube": "https://youtu.be/FoODDgtivdw?si=Odn0Z6AMGC9G6Hnh"
+    }
+  ]
+},
+{
+  "id": 61240,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "Sunny",
+      "artist": "milet",
+      "youtube": "https://youtu.be/LshSTzPWdLk?si=cT7QqWAvPvfy_waE"
+    },
+    {
+      "type": "ed",
+      "title": "혜성",
+      "artist": "로쿠데나시",
+      "youtube": "https://youtu.be/T3gqwRlME5Q?si=qvsF8CtKqv5nI-wm"
+    }
+  ]
+},
+{
+  "id": 56613,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "샤이스맛!",
+      "artist": "사카키바라 유이",
+      "youtube": "https://youtu.be/-6tYHv0ceQQ?si=7H03n6AWiaWK3mWJ"
+    },
+    {
+      "type": "ed",
+      "title": "Lu lu lun♪~정반대 기분은 오토매틱~",
+      "artist": "하시모토 미유키",
+      "youtube": "https://youtu.be/0s8wRiSeKyg?si=1-nJURxDzbe6ZsQq"
+    }
+  ]
+},
+{
+  "id": 63468,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "성불 Come true",
+      "artist": "ORCALAND",
+      "youtube": "https://youtu.be/3h9yV1NUxmo?si=gB9RArBT-lf5lbkB"
+    },
+    {
+      "type": "ed",
+      "title": "SAY-BYE!!",
+      "artist": "KOTOKO",
+      "youtube": "https://youtu.be/pz13xB20pQg?si=plfcBQrNkA0WF3Lh"
+    }
+  ]
+},
+{
+  "id": 62233,
+  "year" : 2026,
+  "quarter": "3분기",
+  "songs": [
+    {
+      "type": "op",
+      "title": "Blue Shining Star",
+      "artist": "아이나·디·엔드",
+      "youtube": "https://youtu.be/oDsll0GzhpY?si=DtAuR9RtXKIRJyhH"
     }
   ]
 }

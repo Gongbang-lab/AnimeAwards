@@ -77,34 +77,45 @@
   let currentSongs = [];
 
   async function fetchMusicData() {
-    const id = document.getElementById('malId').value;
-    const status = document.getElementById('status');
-    
-    if(!id) return alert("ID를 입력하세요.");
-    status.innerText = "⏳ 음악 정보를 분석하는 중...";
-    
-    try {
-      const animeResp = await fetch(`https://api.jikan.moe/v4/anime/${id}`);
-      const themeResp = await fetch(`https://api.jikan.moe/v4/anime/${id}/themes`);
-      
-      const animeData = await animeResp.json();
-      const themeData = await themeResp.json();
-      const animeTitle = animeData.data.title;
+  const id = document.getElementById('malId').value;
+  const status = document.getElementById('status');
 
-      const opList = themeData.data.openings.map(t => parseTheme(t, 'op'));
-      const edList = themeData.data.endings.map(t => parseTheme(t, 'ed'));
-      currentSongs = [...opList, ...edList];
+  if (!id) return alert("ID를 입력하세요.");
+  status.innerText = "⏳ 음악 정보를 분석하는 중...";
 
-      renderList(animeTitle);
-      updateJson();
-      status.innerText = `✅ 총 ${currentSongs.length}곡을 찾았습니다.`;
+  try {
+    // 동시 요청 대신 순차 요청 + 약간의 딜레이로 레이트리밋 회피
+    const animeResp = await fetch(`https://api.jikan.moe/v4/anime/${id}`);
+    const animeData = await animeResp.json();
 
-    } catch (e) {
-      status.innerText = "❌ 에러: 데이터를 가져올 수 없습니다.";
-      console.error(e);
+    if (!animeResp.ok || !animeData.data) {
+      throw new Error(animeData.message || `MAL ID ${id}에 해당하는 애니를 찾을 수 없습니다.`);
     }
-  }
 
+    await new Promise(r => setTimeout(r, 400)); // Jikan 레이트리밋 완화용 딜레이
+
+    const themeResp = await fetch(`https://api.jikan.moe/v4/anime/${id}/themes`);
+    const themeData = await themeResp.json();
+
+    if (!themeResp.ok || !themeData.data) {
+      throw new Error(themeData.message || "테마(OP/ED) 정보를 가져올 수 없습니다.");
+    }
+
+    const animeTitle = animeData.data.title;
+
+    const opList = themeData.data.openings.map(t => parseTheme(t, 'op'));
+    const edList = themeData.data.endings.map(t => parseTheme(t, 'ed'));
+    currentSongs = [...opList, ...edList];
+
+    renderList(animeTitle);
+    updateJson();
+    status.innerText = `✅ 총 ${currentSongs.length}곡을 찾았습니다.`;
+
+  } catch (e) {
+    status.innerText = `❌ 에러: ${e.message}`;
+    console.error(e);
+  }
+}
   function renderList(animeTitle) {
     const listDiv = document.getElementById('musicList');
     listDiv.innerHTML = currentSongs.map((song, index) => {

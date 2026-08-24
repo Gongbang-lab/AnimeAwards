@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>애니 음악 자동 추출기 (AniList 기반)</title>
+  <style>
+    body { font-family: 'Pretendard', sans-serif; padding: 20px; background: #f8fafc; color: #333; }
+    .container { max-width: 850px; margin: 0 auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+
+    /* 입력 영역 레이아웃 */
+    .search-box { display: flex; gap: 10px; margin-bottom: 20px; align-items: flex-end; }
+    .input-group { display: flex; flex-direction: column; gap: 5px; flex: 1; }
+    .input-group.short { flex: 0.4; }
+
+    label { font-size: 13px; font-weight: bold; color: #4a5568; }
+    input, select { padding: 12px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 16px; background: white; }
+    input:focus, select:focus { outline: none; border-color: #3182ce; }
+
+    button { padding: 12px 25px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; transition: 0.2s; height: 48px; }
+    .btn-fetch { background: #4a5568; color: white; }
+    .btn-fetch:hover { background: #2d3748; }
+
+    .music-card { display: flex; flex-direction: column; gap: 10px; padding: 20px; border: 1px solid #edf2f7; border-radius: 12px; margin-bottom: 15px; background: #fff; }
+    .card-header { display: flex; justify-content: space-between; align-items: center; }
+    .type-badge { font-size: 11px; font-weight: bold; color: #3182ce; background: #ebf8ff; padding: 2px 8px; border-radius: 4px; }
+    .source-badge { font-size: 10px; font-weight: bold; color: #718096; margin-left: 6px; }
+
+    .edit-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .full-width { grid-column: span 2; }
+
+    .field-label { font-size: 12px; color: #718096; margin-bottom: 4px; display: block; }
+    .input-edit { width: 100%; padding: 8px; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 14px; box-sizing: border-box; }
+
+    .btn-row { display: flex; gap: 8px; }
+    .btn-yt { background: #ff0000; color: white; font-size: 12px; padding: 8px 15px; text-decoration: none; border-radius: 6px; font-weight: bold; text-align: center; flex: 1; }
+    .btn-at { background: #3182ce; color: white; font-size: 12px; padding: 8px 15px; text-decoration: none; border-radius: 6px; font-weight: bold; text-align: center; flex: 1; }
+    .btn-disabled { background: #cbd5e0; color: #718096; pointer-events: none; }
+
+    .json-header { display: flex; justify-content: space-between; align-items: center; margin-top: 30px; margin-bottom: 10px; }
+    .btn-copy { background: #38a169; color: white; padding: 8px 15px; font-size: 13px; }
+    .btn-copy:hover { background: #2f855a; }
+
+    #resultArea { width: 100%; height: 350px; font-family: 'Cascadia Code', monospace; padding: 15px; background: #1a202c; color: #a0aec0; border-radius: 8px; border: none; white-space: pre; overflow-x: auto; box-sizing: border-box; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>🎵 애니 주제가 자동 추출기 (AniList 버전)</h2>
+  <p style="color: #666; font-size: 14px;">AniList ID와 방영 분기를 선택한 후 데이터를 추출하세요. (AniList → AnimeThemes.moe 매핑을 이용합니다)</p>
+
+  <div class="search-box">
+    <div class="input-group">
+      <label for="anilistId">AniList ID</label>
+      <input type="number" id="anilistId" placeholder="예: 21519" oninput="updateJson()">
+    </div>
+    <div class="input-group short">
+      <label for="quarter">방영 분기</label>
+      <select id="quarter" onchange="updateJson()">
+        <option value="1분기">1분기</option>
+        <option value="2분기">2분기</option>
+        <option value="3분기">3분기</option>
+        <option value="4분기">4분기</option>
+      </select>
+    </div>
+    <button class="btn-fetch" onclick="fetchMusicData()">데이터 추출</button>
+  </div>
+
+  <div id="status" style="margin-bottom: 15px; font-weight: bold; color: #3182ce;"></div>
+
+  <div id="musicList"></div>
+
+  <div class="json-header">
+    <h3 style="margin: 0;">📋 생성된 JSON</h3>
+    <button id="copyBtn" class="btn-copy" onclick="copyToClipboard()">JSON 복사하기</button>
+  </div>
+  <textarea id="resultArea" readonly placeholder="추출을 시작하면 JSON 데이터가 여기에 표시됩니다."></textarea>
+</div>
+
+<script>
+  let currentSongs = [];
+
+  // AniList GraphQL로 제목 정보 가져오기 (검색용, idMal도 함께 확보)
+  async function fetchAnilistTitle(anilistId) {
+    const query = `
+      query ($id: Int) {
+        Media(id: $id, type: ANIME) {
+          id
+          idMal
+          title {
+            romaji
+            english
+          }
+        }
+      }
+    `;
+    const resp = await fetch('https://graphql.anilist.co', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({ query, variables: { id: parseInt(anilistId) } })
+    });
+    if (!resp.ok) throw new Error('AniList 조회 실패');
+    const json = await resp.json();
+    if (!json.data || !json.data.Media) throw new Error('AniList에서 해당 ID를 찾을 수 없습니다.');
+    return json.data.Media;
+  }
+
+  // AnimeThemes.moe에서 AniList ID로 매핑된 anime의 OP/ED 테마 가져오기
+  async function fetchAnimeThemes(anilistId) {
+    const url = `https://api.animethemes.moe/anime` +
+      `?filter[has]=resources&filter[site]=AniList&filter[external_id]=${anilistId}` +
+      `&include=animethemes.song.artists,animethemes.animethemeentries.videos`;
+
+    const resp = await fetch(url, { headers: { 'Accept': 'application/json' } });
+    if (!resp.ok) throw new Error('AnimeThemes API 호출 실패');
+    const json = await resp.json();
+
+    if (!json.anime || json.anime.length === 0) {
+      throw new Error('AnimeThemes.moe에 해당 애니의 OP/ED 데이터가 없습니다.');
+    }
+    return json.anime[0]; // AniList ID는 1:1 매핑이므로 첫 번째 결과 사용
+  }
+
+  // 테마 하나(OP/ED)에서 가장 좋은 비디오 링크를 골라 반환
+  function pickBestVideoLink(animetheme) {
+    const entries = animetheme.animethemeentries || [];
+    let best = null;
+
+    entries.forEach(entry => {
+      (entry.videos || []).forEach(video => {
+        // 우선순위: NC(자막/크레딧 없음) > BD 소스 > 높은 해상도
+        const score = (video.nc ? 100 : 0) + (video.source === 'BD' ? 10 : 0) + (video.resolution || 0) / 100;
+        if (!best || score > best.score) {
+          best = { score, video };
+        }
+      });
+    });
+
+    if (!best) return null;
+    // API가 link 필드를 직접 주는 경우도 있고, 없으면 basename으로 조립
+    return best.video.link || `https://v.animethemes.moe/${best.video.basename}`;
+  }
+
+  async function fetchMusicData() {
+    const anilistId = document.getElementById('anilistId').value;
+    const status = document.getElementById('status');
+
+    if (!anilistId) return alert("AniList ID를 입력하세요.");
+    status.innerText = "⏳ AniList에서 정보를 확인하는 중...";
+
+    try {
+      const media = await fetchAnilistTitle(anilistId);
+      const animeTitle = media.title.english || media.title.romaji;
+
+      status.innerText = "⏳ AnimeThemes.moe에서 OP/ED를 검색하는 중...";
+      const animeData = await fetchAnimeThemes(anilistId);
+
+      const themes = animeData.animethemes || [];
+      currentSongs = themes.map(theme => {
+        const song = theme.song || {};
+        const artists = (song.artists || []).map(a => a.name).join(', ');
+        return {
+          type: theme.type === 'OP' ? 'op' : 'ed',
+          label: `${theme.type}${theme.sequence || ''}`, // 예: OP1, ED2
+          title: song.title || 'Unknown Title',
+          artist: artists || 'Unknown Artist',
+          videoLink: pickBestVideoLink(theme) || '',
+          youtube: ''
+        };
+      });
+
+      renderList(animeTitle);
+      updateJson();
+      status.innerText = `✅ "${animeTitle}" — 총 ${currentSongs.length}곡을 찾았습니다.`;
+
+    } catch (e) {
+      status.innerText = `❌ 에러: ${e.message}`;
+      console.error(e);
+    }
+  }
+
+  function renderList(animeTitle) {
+    const listDiv = document.getElementById('musicList');
+    listDiv.innerHTML = currentSongs.map((song, index) => {
+      const searchQuery = encodeURIComponent(`${animeTitle} ${song.label} ${song.title} ${song.artist}`);
+      const ytSearchUrl = `https://www.youtube.com/results?search_query=${searchQuery}`;
+      const atBtn = song.videoLink
+        ? `<a href="${song.videoLink}" target="_blank" class="btn-at">AnimeThemes 영상</a>`
+        : `<span class="btn-at btn-disabled">영상 없음</span>`;
+
+      return `
+        <div class="music-card">
+          <div class="card-header">
+            <span>
+              <span class="type-badge">${song.label.toUpperCase()}</span>
+              <span class="source-badge">AnimeThemes.moe 매칭</span>
+            </span>
+          </div>
+          <div class="edit-fields">
+            <div>
+              <label class="field-label">곡 제목</label>
+              <input type="text" class="input-edit" value="${escapeHtml(song.title)}" oninput="updateData(${index}, 'title', this.value)">
+            </div>
+            <div>
+              <label class="field-label">아티스트</label>
+              <input type="text" class="input-edit" value="${escapeHtml(song.artist)}" oninput="updateData(${index}, 'artist', this.value)">
+            </div>
+            <div class="full-width">
+              <label class="field-label">YouTube URL (직접 입력)</label>
+              <input type="text" class="input-edit" placeholder="https://youtu.be/..." oninput="updateData(${index}, 'youtube', this.value)">
+            </div>
+          </div>
+          <div class="btn-row">
+            <a href="${ytSearchUrl}" target="_blank" class="btn-yt">YouTube 검색</a>
+            ${atBtn}
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  function escapeHtml(str) {
+    return String(str).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  function updateData(index, field, value) {
+    currentSongs[index][field] = value;
+    updateJson();
+  }
+
+  function updateJson() {
+    const id = document.getElementById('anilistId').value;
+    const quarter = document.getElementById('quarter').value;
+
+    const finalResult = {
+      anilistId: parseInt(id) || 0,
+      quarter: quarter,
+      songs: currentSongs.map(s => ({
+        type: s.type,
+        title: s.title,
+        artist: s.artist,
+        youtube: s.youtube,
+        animethemesVideo: s.videoLink || undefined
+      }))
+    };
+    document.getElementById('resultArea').value = JSON.stringify(finalResult, null, 2);
+  }
+
+  async function copyToClipboard() {
+    const resultArea = document.getElementById('resultArea');
+    const copyBtn = document.getElementById('copyBtn');
+
+    if (!resultArea.value || resultArea.value === "{}") {
+      alert("복사할 데이터가 없습니다.");
+      return;
+    }
+
+    try {
+      await navigator.clipboard.writeText(resultArea.value);
+      const originalText = copyBtn.innerText;
+      copyBtn.innerText = "✅ 복사 완료!";
+      copyBtn.style.background = "#2f855a";
+      setTimeout(() => {
+        copyBtn.innerText = originalText;
+        copyBtn.style.background = "#38a169";
+      }, 2000);
+    } catch (err) {
+      alert("복사에 실패했습니다.");
+    }
+  }
+</script>
+
+</body>
+</html>
