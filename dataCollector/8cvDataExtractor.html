@@ -60,6 +60,19 @@
     <script>
 let generatedCode = ""; // 생성된 코드를 저장할 변수
 
+// "2,3분기" 형태의 문자열에서 가장 빠른 분기만 추출 ("2분기")
+function getFirstQuarter(quarterStr) {
+    if (!quarterStr) return quarterStr;
+    return String(quarterStr).split(',')[0].trim();
+}
+
+// 분기 문자열에서 숫자만 뽑아 비교용으로 사용 (예: "3분기" -> 3)
+function parseQuarterNum(quarterStr) {
+    if (!quarterStr) return 99;
+    const match = String(quarterStr).match(/(\d)/);
+    return match ? parseInt(match[1], 10) : 99;
+}
+
 document.getElementById('extract-btn').onclick = function() {
     const statusDiv = document.getElementById('status');
     const previewContainer = document.getElementById('preview-container');
@@ -77,7 +90,7 @@ document.getElementById('extract-btn').onclick = function() {
         AnimeList_2026.forEach(anime => {
             animeInfoMap[String(anime.id)] = {
                 title: anime.title,
-                quarter: anime.quarter,
+                quarter: getFirstQuarter(anime.quarter), // "2,3분기" -> "2분기"
                 year: anime.year
             };
         });
@@ -89,7 +102,7 @@ document.getElementById('extract-btn').onclick = function() {
             const animeId = String(animeEntry.id);
             const animeInfo = animeInfoMap[animeId] || {};
             const animeTitle = animeInfo.title || animeEntry.title;
-            const quarter = animeInfo.quarter || "";
+            const quarter = animeInfo.quarter || getFirstQuarter(animeEntry.quarter) || "";
             const year = animeInfo.year || "";
             const characters = animeEntry.characters || [];
 
@@ -106,7 +119,12 @@ document.getElementById('extract-btn').onclick = function() {
                     };
                 }
 
-                if (!actorMap[actorName].characters.some(c => c.charName === char.name && c.animeTitle === animeTitle)) {
+                const existingIndex = actorMap[actorName].characters.findIndex(
+                    c => c.charName === char.name && c.animeTitle === animeTitle
+                );
+
+                if (existingIndex === -1) {
+                    // 처음 등장하는 캐릭터 -> 추가
                     actorMap[actorName].characters.push({
                         charName: char.name,
                         animeTitle: animeTitle,
@@ -114,13 +132,20 @@ document.getElementById('extract-btn').onclick = function() {
                         quarter: quarter,
                         year: year
                     });
+                } else {
+                    // 이미 존재하는 캐릭터(다른 분기로 중복 등장) -> 더 빠른 분기로 갱신
+                    const existing = actorMap[actorName].characters[existingIndex];
+                    if (parseQuarterNum(quarter) < parseQuarterNum(existing.quarter)) {
+                        existing.quarter = quarter;
+                        existing.year = year;
+                    }
                 }
             });
             processedCount++;
         });
 
         // 텍스트 생성
-        generatedCode = "const CharacterVoiceData_2026 = " + JSON.stringify(actorMap, null, 2) + ";";
+        generatedCode = "var CharacterVoiceData_2026 = " + JSON.stringify(actorMap, null, 2) + ";";
         
         // UI 업데이트
         previewArea.textContent = generatedCode;
