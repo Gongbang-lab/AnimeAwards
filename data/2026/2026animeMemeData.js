@@ -138,7 +138,7 @@ var AnimeMemeData_2026 = [
         "origin": "여친, 빌리겠습니다 5기",
         "quarter": "2분기",
         "year" : 2026
-    },    
+    },
     {
         "id": "meme_018",
         "name": "나카무라 쿤",
@@ -150,6 +150,62 @@ var AnimeMemeData_2026 = [
         "src5": "image/meme/나카무라_5.webp",
         "origin": "힘내라! 나카무라 군!!",
         "quarter": "2분기",
+        "year" : 2026
+    },
+    {
+        "id": "meme_019",
+        "name": "20세기 엉덩이 목록",
+        "type": "webp",
+        "src1": "image/meme/20세기 전기 목록1.webp",
+        "src2": "image/meme/20세기 전기 목록2.webp",
+        "origin": "20세기 전기 목록",
+        "quarter": "3분기",
+        "year" : 2026
+    },
+    {
+        "id": "meme_020",
+        "name": "엉덩이 태고",
+        "type": "gif",
+        "src1": "image/meme/100등분1.gif",
+        "src2": "image/meme/100등분2.gif",
+        "origin": "너를 너무너무너무너무 좋아하는 100명의 그녀",
+        "quarter": "3분기",
+        "year" : 2026
+    },
+    {
+        "id": "meme_021",
+        "name": "발전한 검복동 액션씬",
+        "type": "gif",
+        "src1": "image/meme/검복동1.gif",
+        "src2": "image/meme/검복동2.gif",
+        "src3": "image/meme/검복동3.gif",
+        "src4": "image/meme/검복동4.gif",
+        "origin": "촌구석 아저씨, 검성이 되다 Ⅱ",
+        "quarter": "3분기",
+        "year" : 2026
+    },
+    {
+        "id": "meme_022",
+        "name": "아냐네코 집주인",
+        "type": "webp",
+        "src1_title": "담뱃재 샤워",
+        "src1": "image/meme/아냐네코1.webp",
+        "src2_title": "떡치는 집주인",
+        "src2": "image/meme/아냐네코2.gif",
+        "origin": "담배 고양이",
+        "quarter": "3분기",
+        "year" : 2026
+    },
+    {
+        "id": "meme_023",
+        "name": "어느 애니 제작사의 카메라 워킹",
+        "type": "webp",
+        "src1": "image/meme/카메라워킹1.webp",
+        "src2": "image/meme/카메라워킹2.webp",
+        "src3": "image/meme/카메라워킹3.webp",
+        "src4": "image/meme/카메라워킹4.webp",
+        "origin": "추방 당한 전생 중기사는 게임 지식으로 무쌍한다.",
+        "quarter": "3분기",
         "year" : 2026
     },
 ];

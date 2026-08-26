@@ -4737,7 +4737,7 @@ var AnimeList_2026 = [
   "id": 59741,
   "title": "추방 당한 전생 중기사는 게임 지식으로 무쌍한다",
   "year": 2026,
-  "quarter": "3분기, 4분기",
+  "quarter": "3분기",
   "thumbnail": "image/animeimg/2026/Q3/추방 당한 전생 중기사는 게임 지식으로 무쌍한다.webp",
   "day": "Fridays",
   "episodes": 26,
@@ -5640,28 +5640,6 @@ var AnimeList_2026 = [
       "코지마 타카시"
     ],
     "composer": []
-  }
-},
-{
-  "id": 62550,
-  "title": "극장판 총집편 걸즈 밴드 크라이 있잖아, 미래.",
-  "quarter": "2분기",
-  "thumbnail": "image/cinema/2026/극장판 총집편 걸즈 밴드 크라이 있잖아, 미래.webp",
-  "day": "Web",
-  "episodes": 1,
-  "studio": [
-    "토에이 애니메이션"
-  ],
-  "staff": {
-    "director": [
-      "사카이 카즈오"
-    ],
-    "scriptwriter": [
-      "하나다 줏키"
-    ],
-    "character_design": [
-      "테시마 nari"
-    ]
   }
 },
 {

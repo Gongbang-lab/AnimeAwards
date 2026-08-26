@@ -2352,7 +2352,7 @@ var CharacterData_2026 = [
     {
       "name": "릴리 오를라뮌데",
       "gender": "female",
-      "cv": "M.A.O",
+      "cv": "M·A·O",
       "img": "image/charimg/2026/Q1/Eris_no_Seihai/Lily_Orlamunde.jpg"
     },
     {
@@ -3102,7 +3102,7 @@ var CharacterData_2026 = [
     {
       "name": "아마노 쟈코",
       "gender": "unknown",
-      "cv": "M.A.O",
+      "cv": "M·A·O",
       "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Jako_Amano.jpg"
     },
     {
@@ -3318,7 +3318,7 @@ var CharacterData_2026 = [
     {
       "name": "아이리스",
       "gender": "female",
-      "cv": "M.A.O",
+      "cv": "M·A·O",
       "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Iris.jpg"
     },
     {
@@ -3480,7 +3480,7 @@ var CharacterData_2026 = [
     {
       "name": "티르",
       "gender": "female",
-      "cv": "M.A.O",
+      "cv": "M·A·O",
       "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Till.jpg"
     },
     {
@@ -3578,12 +3578,6 @@ var CharacterData_2026 = [
       "gender": "unknown",
       "cv": "사토 류지",
       "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Knives_Millions.jpg"
-    },
-    {
-      "name": "저지 더 비스트",
-      "gender": "male",
-      "cv": "TARAKO",
-      "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Zazie_the_Beast.jpg"
     },
     {
       "name": "호퍼드 더 건틀렛",
@@ -5818,12 +5812,6 @@ var CharacterData_2026 = [
   "title": "Arisugawa Ren tte Honto wa Onna Nanda yo ne.",
   "characters": [
     {
-      "name": "아리스가와 쿄헤이",
-      "gender": "male",
-      "cv": "니시야마 유우키",
-      "img": "image/charimg/2026/Q1/Arisugawa_Ren_tte_Honto_wa_Onna_Nanda_yo_ne/Kyouhei_Arisugawa.jpg"
-    },
-    {
       "name": "아리스가와 렌",
       "gender": "female",
       "cv": "아마이 미루쿠",
@@ -5870,12 +5858,6 @@ var CharacterData_2026 = [
       "gender": "male",
       "cv": "이가라시 유타",
       "img": "image/charimg/2026/Q1/Ichigo_Aika_Zatsu_de_Namaiki_na_Imouto_to_Warikirenai_Ani/Kouta_Takamura.jpg"
-    },
-    {
-      "name": "타카무라 요시유키",
-      "gender": "male",
-      "cv": "모모스케",
-      "img": "image/charimg/2026/Q1/Ichigo_Aika_Zatsu_de_Namaiki_na_Imouto_to_Warikirenai_Ani/Yoshiyuki_Takamura.jpg"
     },
     {
       "name": "高村美咲",
@@ -7944,7 +7926,7 @@ var CharacterData_2026 = [
     {
       "name": "세페크",
       "gender": "female",
-      "cv": "M.A.O",
+      "cv": "M·A·O",
       "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Sefec.jpg"
     },
     {
@@ -8448,7 +8430,7 @@ var CharacterData_2026 = [
     {
       "name": "여신",
       "gender": "female",
-      "cv": "M.A.O",
+      "cv": "M·A·O",
       "img": "image/charimg/2026/Q2/Megami_Isekai_Tensei_Nani_ni_Naritai_Desu_ka_Ore_Yuusha_no_Rokkotsu_de/Megami.jpg"
     },
     {
@@ -10698,7 +10680,7 @@ var CharacterData_2026 = [
     {
       "name": "린",
       "gender": "female",
-      "cv": "M.A.O",
+      "cv": "M·A·O",
       "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Lin.jpg"
     },
     {
@@ -11166,7 +11148,7 @@ var CharacterData_2026 = [
     {
       "name": "크로셀 케로리",
       "gender": "female",
-      "cv": "도야마 나오",
+      "cv": "토야마 나오",
       "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Keroli_Crocell.jpg"
     },
     {
@@ -13740,12 +13722,6 @@ var CharacterData_2026 = [
       "img": "image/charimg/2026/Q3/Sayonara_Lara/Luca.jpg"
     },
     {
-      "name": "レア",
-      "gender": "female",
-      "cv": "Minori Suzuki",
-      "img": "image/charimg/2026/Q3/Sayonara_Lara/Lea.jpg"
-    },
-    {
       "name": "오츠 에마",
       "gender": "female",
       "cv": "스미토모 나나에",
@@ -14707,12 +14683,6 @@ var CharacterData_2026 = [
       "gender": "male",
       "cv": "우치다 나오야",
       "img": "image/charimg/2026/Q3/Grand_Blue_Season_3/Kitahara_Chichi.jpg"
-    },
-    {
-      "name": "池越雄一",
-      "gender": "male",
-      "cv": "Ryouhei Kimura",
-      "img": "image/charimg/2026/Q3/Grand_Blue_Season_3/Yuuichi_Ikegoshi.jpg"
     }
   ]
 },
@@ -15028,18 +14998,6 @@ var CharacterData_2026 = [
       "gender": "unknown",
       "cv": "우치다 유야",
       "img": "image/charimg/2026/Q3/Koukaku_Kidoutai_THE_GHOST_IN_THE_SHELL/Pazu.jpg"
-    },
-    {
-      "name": "加賀崎宗平",
-      "gender": "male",
-      "cv": "Toshihiko Seki",
-      "img": "image/charimg/2026/Q3/Koukaku_Kidoutai_THE_GHOST_IN_THE_SHELL/Souhei_Kagasaki.jpg"
-    },
-    {
-      "name": "草薙の彼氏",
-      "gender": "male",
-      "cv": "Hidenobu Kiuchi",
-      "img": "image/charimg/2026/Q3/Koukaku_Kidoutai_THE_GHOST_IN_THE_SHELL/Kusanagi_no_Kareshi.jpg"
     }
   ]
 },
@@ -15781,9 +15739,9 @@ var CharacterData_2026 = [
       "img": "image/charimg/2026/Q3/Otomege_Sekai_wa_Mob_ni_Kibishii_Sekai_desu_2/Hertrauda_Sera_Fanoss.jpg"
     },
     {
-      "name": "타치바나 신노스케",
+      "name": "브래드 포우 필드",
       "gender": "male",
-      "cv": "브래드 포우 필드",
+      "cv": "타치바나 신노스케",
       "img": "image/charimg/2026/Q3/Otomege_Sekai_wa_Mob_ni_Kibishii_Sekai_desu_2/Brad_Fou_Field.jpg"
     },
     {
@@ -17955,12 +17913,6 @@ var CharacterData_2026 = [
       "img": "image/charimg/2026/Q3/Neko_to_Ryuu/Annerossa.jpg"
     },
     {
-      "name": "四代目モシャモシャ",
-      "gender": "male",
-      "cv": "Youji Ueda",
-      "img": "image/charimg/2026/Q3/Neko_to_Ryuu/Yondaime_Moshamosha.jpg"
-    },
-    {
       "name": "4대 모샤모샤",
       "gender": "male",
       "cv": "우에다 요지",
@@ -18367,12 +18319,6 @@ var CharacterData_2026 = [
       "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Tolui.jpg"
     },
     {
-      "name": "ズムッルド",
-      "gender": "female",
-      "cv": "Farahnaz Nikray",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Zumurrud.jpg"
-    },
-    {
       "name": "모게",
       "gender": "female",
       "cv": "아사이 아야카",
@@ -18473,12 +18419,6 @@ var CharacterData_2026 = [
       "gender": "male",
       "cv": "이리노 미유",
       "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Shira.jpg"
-    },
-    {
-      "name": "アフマド",
-      "gender": "male",
-      "cv": "Binbin Takaoka",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Ahmad.jpg"
     },
     {
       "name": "보락친",
@@ -18660,12 +18600,6 @@ var CharacterData_2026 = [
       "gender": "male",
       "cv": "우라 카즈키",
       "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Haruo_Kuroya.jpg"
-    },
-    {
-      "name": "黒谷アキオ",
-      "gender": "male",
-      "cv": "Ryuunosuke Watanuki",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Akio_Kuroya.jpg"
     },
     {
       "name": "사쿠라자와 선생",
@@ -19541,12 +19475,6 @@ var CharacterData_2026 = [
       "img": "image/charimg/2026/Q3/Seihantai_na_Kimi_to_Boku_2nd_Season/Morimo.jpg"
     },
     {
-      "name": "니미 미코",
-      "gender": "female",
-      "cv": "루시야마 유우키",
-      "img": "image/charimg/2026/Q3/Seihantai_na_Kimi_to_Boku_2nd_Season/Mini.jpg"
-    },
-    {
       "name": "담임",
       "gender": "male",
       "cv": "사쿠마 노부유키",
@@ -19677,7 +19605,7 @@ var CharacterData_2026 = [
     {
       "name": "미사키",
       "gender": "female",
-      "cv": "Kaede 혼도 카에데Hondo",
+      "cv": "혼도 카에데",
       "img": "image/charimg/2026/Q3/Sekai_Saikyou_no_Kouei_Meikyuukoku_no_Shinjin_Tansakusha/Misaki.jpg"
     },
     {
@@ -20103,12 +20031,6 @@ var CharacterData_2026 = [
       "gender": "female",
       "cv": "토미타 미유",
       "img": "image/charimg/2026/Q3/Azur_Lane_Bisoku_Zenshin!_Ni!!/New_Jersey.jpg"
-    },
-    {
-      "name": "皇家财富号",
-      "gender": "female",
-      "cv": "Aimi Tanaka",
-      "img": "image/charimg/2026/Q3/Azur_Lane_Bisoku_Zenshin!_Ni!!/Royal_Fortune.jpg"
     },
     {
       "name": "저비스",
