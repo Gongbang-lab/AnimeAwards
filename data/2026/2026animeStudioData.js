@@ -1,4 +1,4 @@
-var AnimeStudioData = [
+var AnimeStudioData_2026 = [
   {
     "studio": "100studio",
     "studio_img": "image/studio/100studio.avif",
@@ -1238,7 +1238,7 @@ var AnimeStudioData = [
   },
   {
     "studio": "A.C.G.T.",
-    "studio_img": "image/studio/A.C.G.T.avif",
+    "studio_img": "image/studio/ACGT.avif",
     "works": [
       {
         "title": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",

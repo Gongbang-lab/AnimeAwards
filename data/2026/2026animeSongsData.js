@@ -1,5 +1,4 @@
-var AnimeSongs_2026 =
-[
+var AnimeSongs_2026 = [
   {
     "id": 61886,
     "year" : 2026,

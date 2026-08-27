@@ -81,7 +81,7 @@
             }
         });
 
-        generatedContent = "const scriptwriterData = " + JSON.stringify(nominatedList, null, 2) + ";";
+        generatedContent = "var scriptwriterData = " + JSON.stringify(nominatedList, null, 2) + ";";
         document.getElementById('output').textContent = generatedContent;
         document.getElementById('status').textContent = `총 ${nominatedList.length}개의 작품(TVA/극장판 포함)이 추출되었습니다.`;
     }

@@ -1,8 +1,8 @@
-var cinemaData_2026 =
-[
+var cinemaData_2026 =[
 {
   "id": 60610,
   "title": "끝이 없는 스칼렛",
+  "year": 2026,
   "quarter": "1분기",
   "thumbnail": "image/cinema/2026/끝이 없는 스칼렛.webp",
   "day": "Cinema",
@@ -26,6 +26,7 @@ var cinemaData_2026 =
 {
   "id": 59817,
   "title": "극장판 총집편 걸즈 밴드 크라이 청춘광주곡",
+  "year": 2026,
   "quarter": "1분기",
   "thumbnail": "image/cinema/2026/극장판 총집편 걸즈 밴드 크라이 청춘광주곡.webp",
   "day": "Cinema",
@@ -48,6 +49,7 @@ var cinemaData_2026 =
 {
   "id": 61558,
   "title": "아이엠스타!×프리파라 더 무비 -만남의 기적!-",
+  "year": 2026,
   "quarter": "1분기",
   "thumbnail": "image/cinema/2026/아이엠스타!×프리파라 더 무비 -만남의 기적!-.webp",
   "day": "Cinema",
@@ -71,6 +73,7 @@ var cinemaData_2026 =
 {
   "id": 60159,
   "title": "영화 러브 라이브! 니지가사키 학원 스쿨 아이돌 동호회 완결편 제2장",
+  "year": 2026,
   "quarter": "1분기",
   "thumbnail": "image/cinema/2026/영화 러브 라이브! 니지가사키 학원 스쿨 아이돌 동호회 완결편 제2장.webp",
   "day": "Cinema",
@@ -93,6 +96,7 @@ var cinemaData_2026 =
 {
   "id": 50159,
   "title": "좀비 랜드 사가 유메긴가 파라다이스",
+  "year": 2026,
   "quarter": "1분기",
   "thumbnail": "image/cinema/2026/좀비 랜드 사가 유메긴가 파라다이스.webp",
   "day": "Cinema",
@@ -119,6 +123,7 @@ var cinemaData_2026 =
 {
   "id": 61418,
   "title": "녹나무의 파수꾼",
+  "year": 2026,
   "quarter": "1분기",
   "thumbnail": "image/cinema/2026/녹나무의 파수꾼.webp",
   "day": "Cinema",
@@ -216,5 +221,5 @@ var cinemaData_2026 =
       "김태호"
     ]
   }
-},
+}
 ]

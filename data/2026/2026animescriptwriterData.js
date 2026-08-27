@@ -1,6 +1,7 @@
-const scriptwriterData = [
+var scriptwriterData_2026 = [
   {
     "id": 61830,
+    "year": 2026,
     "quarter": "1분기",
     "title": "개진전 사무라이 트루퍼",
     "thumbnail": "image/animeimg/2026/Q1/개진전 사무라이 트루퍼.webp",
@@ -13,6 +14,7 @@ const scriptwriterData = [
   },
   {
     "id": 56752,
+    "year": 2026,
     "quarter": "1분기",
     "title": "시광대리인 -Link Click- 영도편",
     "thumbnail": "image/animeimg/2026/Q1/시광대리인 -Link Click- 영도편.webp",
@@ -25,6 +27,7 @@ const scriptwriterData = [
   },
   {
     "id": 63042,
+    "year": 2026,
     "quarter": "1분기",
     "title": "명탐정 프리큐어",
     "thumbnail": "image/animeimg/2026/Q1/명탐정 프리큐어.webp",
@@ -37,6 +40,7 @@ const scriptwriterData = [
   },
   {
     "id": 19383,
+    "year": 2026,
     "quarter": "1분기",
     "title": "야미시바이 16기",
     "thumbnail": "image/animeimg/2026/Q1/야미시바이.webp",
@@ -49,6 +53,7 @@ const scriptwriterData = [
   },
   {
     "id": 63019,
+    "year": 2026,
     "quarter": "1분기",
     "title": "프리즘 윤무곡",
     "thumbnail": "image/animeimg/2026/Q1/프리즘 윤무곡.webp",
@@ -62,6 +67,7 @@ const scriptwriterData = [
   },
   {
     "id": 62896,
+    "year": 2026,
     "quarter": "1분기",
     "title": "초(超) 가구야 공주!",
     "thumbnail": "image/animeimg/2026/Q1/초(超) 가구야 공주.webp",
@@ -75,6 +81,7 @@ const scriptwriterData = [
   },
   {
     "id": 63667,
+    "year": 2026,
     "quarter": "2분기",
     "title": "마법의 자매 루루토리리",
     "thumbnail": "image/animeimg/2026/Q2/마법의 자매 루루토리리.webp",
@@ -87,6 +94,7 @@ const scriptwriterData = [
   },
   {
     "id": 58878,
+    "year": 2026,
     "quarter": "3분기",
     "title": "안녕, 라라",
     "thumbnail": "image/animeimg/2026/Q3/안녕, 라라.webp",
@@ -99,6 +107,7 @@ const scriptwriterData = [
   },
   {
     "id": 63047,
+    "year": 2026,
     "quarter": "3분기",
     "title": "개진전 사무라이 트루퍼",
     "thumbnail": "image/animeimg/2026/Q3/개진전 사무라이 트루퍼.webp",
@@ -111,6 +120,7 @@ const scriptwriterData = [
   },
   {
     "id": 56835,
+    "year": 2026,
     "quarter": "3분기",
     "title": "코드 기아스 탈환의 로제",
     "thumbnail": "image/animeimg/2026/Q3/코드 기아스 탈환의 로제.webp",
@@ -123,6 +133,7 @@ const scriptwriterData = [
   },
   {
     "id": 62051,
+    "year": 2026,
     "quarter": "3분기",
     "title": "그로우 업 쇼 ~해바라기 서커스단~",
     "thumbnail": "image/animeimg/2026/Q3/그로우 업 쇼 ~해바라기 서커스단~.webp",
@@ -136,6 +147,7 @@ const scriptwriterData = [
   },
   {
     "id": 60637,
+    "year": 2026,
     "quarter": "3분기",
     "title": "마법소녀 리리컬 나노하 EXCEEDS Gun Blaze Vengeance",
     "thumbnail": "image/animeimg/2026/Q3/마법소녀 리리컬 나노하 EXCEEDS Gun Blaze Vengeance.webp",
@@ -148,6 +160,7 @@ const scriptwriterData = [
   },
   {
     "id": 61546,
+    "year": 2026,
     "quarter": "3분기",
     "title": "스타워즈 비전스 PRESENTS - 아홉 번째 제다이",
     "thumbnail": "image/animeimg/2026/Q3/스타워즈 비전스 PRESENTS - 아홉 번째 제다이.webp",
@@ -160,6 +173,7 @@ const scriptwriterData = [
   },
   {
     "id": 60610,
+    "year": 2026,
     "quarter": "1분기",
     "title": "끝이 없는 스칼렛",
     "thumbnail": "image/cinema/2026/끝이 없는 스칼렛.webp",
@@ -172,6 +186,7 @@ const scriptwriterData = [
   },
   {
     "id": 59817,
+    "year": 2026,
     "quarter": "1분기",
     "title": "극장판 총집편 걸즈 밴드 크라이 청춘광주곡",
     "thumbnail": "image/cinema/2026/극장판 총집편 걸즈 밴드 크라이 청춘광주곡.webp",
@@ -184,6 +199,7 @@ const scriptwriterData = [
   },
   {
     "id": 61558,
+    "year": 2026,
     "quarter": "1분기",
     "title": "아이엠스타!×프리파라 더 무비 -만남의 기적!-",
     "thumbnail": "image/cinema/2026/아이엠스타!×프리파라 더 무비 -만남의 기적!-.webp",
@@ -196,6 +212,7 @@ const scriptwriterData = [
   },
   {
     "id": 60159,
+    "year": 2026,
     "quarter": "1분기",
     "title": "영화 러브 라이브! 니지가사키 학원 스쿨 아이돌 동호회 완결편 제2장",
     "thumbnail": "image/cinema/2026/영화 러브 라이브! 니지가사키 학원 스쿨 아이돌 동호회 완결편 제2장.webp",
@@ -208,6 +225,7 @@ const scriptwriterData = [
   },
   {
     "id": 50159,
+    "year": 2026,
     "quarter": "1분기",
     "title": "좀비 랜드 사가 유메긴가 파라다이스",
     "thumbnail": "image/cinema/2026/좀비 랜드 사가 유메긴가 파라다이스.webp",
@@ -220,6 +238,7 @@ const scriptwriterData = [
   },
   {
     "id": 213958,
+    "year": 2026,
     "quarter": "3분기",
     "title": "사랑의 하츄핑: 고래보석의 전설",
     "thumbnail": "image/cinema/2026/사랑의 하츄핑: 고래보석의 전설.webp",

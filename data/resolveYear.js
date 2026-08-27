@@ -14,7 +14,7 @@ const YEAR_DATA_KEYS = [
     ["OSTData",          "OSTData"],
     ["AnimeSongs",        "AnimeSongs"],
     ["AnimeStudioData",       "AnimeStudioData"],
-    ["DirectorData",     "DirectorData"],
+    ["animeDirectorData",     "animeDirectorData"],
     ["AdaptorData",      "AdaptorData"],
     ["RookieCVData",     "RookieCVData"],
     ["EPData",           "EPData"],
