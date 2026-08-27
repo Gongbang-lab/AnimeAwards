@@ -177,7 +177,7 @@ var AnimeList_2026 = [
     "staff": {
       "director": [
         "미네 토모노리",
-        "야마모토 야스타카(총)"
+        "야마모토 야스타카"
       ],
       "character_design": [
         "오오사와 미나",

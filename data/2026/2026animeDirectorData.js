@@ -25,7 +25,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "오오니시 켄타",
-    "director_img": "image/staff/director/오오니시 켄타.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "깨끗하게 해주시겠어요?",
@@ -37,7 +37,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "스가하라 시즈타카",
-    "director_img": "image/staff/director/스가하라 시즈타카.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "골든 카무이 최종장",
@@ -49,7 +49,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "카나모리 요코",
-    "director_img": "image/staff/director/카나모리 요코.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "공주님 \"고문\"의 시간입니다 2기",
@@ -73,7 +73,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "미네 토모노리",
-    "director_img": "image/staff/director/미네 토모노리.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "용사 파티에 귀여운 애가 있어서, 고백해봤다.",
@@ -84,8 +84,8 @@ var animeDirectorData_2026 = [
     ]
   },
   {
-    "director": "야마모토 야스타카(총)",
-    "director_img": "image/staff/director/야마모토 야스타카(총).webp",
+    "director": "야마모토 야스타카",
+    "director_img": "image/staff/director/야마모토 야스타카.webp",
     "works": [
       {
         "title": "용사 파티에 귀여운 애가 있어서, 고백해봤다.",
@@ -109,7 +109,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "타카하시 마사유키",
-    "director_img": "image/staff/director/타카하시 마사유키.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "한밤중 하트튠",
@@ -199,7 +199,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "오오타 마사히코",
-    "director_img": "image/staff/director/오오타 마사히코.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "마왕의 딸은 너무 친절해!!",
@@ -247,7 +247,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "노다 켄타",
-    "director_img": "image/staff/director/노다 켄타.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "온화한 귀족의 휴가의 권장",
@@ -271,7 +271,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "타카시마 히로유키",
-    "director_img": "image/staff/director/타카시마 히로유키.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "용사형에 처함",
@@ -283,7 +283,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "타무라 마사후미",
-    "director_img": "image/staff/director/타무라 마사후미.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "마도정병의 슬레이브 2기",
@@ -295,7 +295,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "세타 미츠호",
-    "director_img": "image/staff/director/세타 미츠호.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
@@ -307,7 +307,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "모리타와 준페이",
-    "director_img": "image/staff/director/모리타와 준페이.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "에리스의 성배",
@@ -361,7 +361,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "쿠보 요스케",
-    "director_img": "image/staff/director/쿠보 요스케.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "샹피뇽의 마녀",
@@ -373,7 +373,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "키타가와 토모야",
-    "director_img": "image/staff/director/키타가와 토모야.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "장송의 프리렌 2기",
@@ -397,7 +397,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "시가 쇼코",
-    "director_img": "image/staff/director/시가 쇼코.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "DARK MOON: 달의 제단",
@@ -409,7 +409,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "타마가와 마코토",
-    "director_img": "image/staff/director/타마가와 마코토.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~",
@@ -427,7 +427,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "미나미카와 타츠마",
-    "director_img": "image/staff/director/미나미카와 타츠마.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "불꽃 소방대 3장",
@@ -439,7 +439,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "타카무라 유타",
-    "director_img": "image/staff/director/타카무라 유타.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "전생했더니 드래곤의 알이었다 ~최강이 아니면 목표로 하지 않아~",
@@ -469,7 +469,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "쿠리야마 타카유키",
-    "director_img": "image/staff/director/쿠리야마 타카유키.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "무사태평 영주의 즐거운 영지 방어 ~생산계 마법으로 이름 없는 마을을 최강의 성채 도시로~",
@@ -481,7 +481,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "사토 마사코",
-    "director_img": "image/staff/director/사토 마사코.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "트라이건 스타게이즈",
@@ -493,7 +493,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "에노키도 슌",
-    "director_img": "image/staff/director/에노키도 슌.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "Fate/strange Fake",
@@ -601,7 +601,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "나가토모 타카요시",
-    "director_img": "image/staff/director/나가토모 타카요시.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "정반대의 너와 나",
@@ -637,7 +637,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "타케무라 나츠키",
-    "director_img": "image/staff/director/타케무라 나츠키.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "아름다운 그대에게",
@@ -655,7 +655,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "오오바 히데아키",
-    "director_img": "image/staff/director/오오바 히데아키.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "마술사 쿠논은 보인다",
@@ -781,7 +781,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "사사키 스미토",
-    "director_img": "image/staff/director/사사키 스미토.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "아리스가와 렌은 사실 여자라구!!",
@@ -811,7 +811,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "모리시타 유스케",
-    "director_img": "image/staff/director/모리시타 유스케.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "최애 의붓형을 사랑하기 위해, 오래 살겠습니다!",
@@ -925,7 +925,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "타카하시 히데야",
-    "director_img": "image/staff/director/타카하시 히데야.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "스틸 볼 런: 죠죠의 기묘한 모험",
@@ -943,7 +943,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "키무라 야스히로",
-    "director_img": "image/staff/director/키무라 야스히로.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "스틸 볼 런: 죠죠의 기묘한 모험",
@@ -1009,7 +1009,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "와타나베 아유무",
-    "director_img": "image/staff/director/와타나베 아유무.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "고깔모자 아틀리에",
@@ -1171,7 +1171,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "노마타 노리유키",
-    "director_img": "image/staff/director/노마타 노리유키.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "어서 오세요 실력지상주의 교실에 4th Season",
@@ -1759,7 +1759,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "사토 히카루",
-    "director_img": "image/staff/director/사토 히카루.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "마물을 먹는 모험가 ~나만 마물을 먹고 강해진다~",
@@ -1813,7 +1813,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "시부야 료스케",
-    "director_img": "image/staff/director/시부야 료스케.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "무직전생 Ⅲ ~이세계에 갔으면 최선을 다한다~",
@@ -1855,7 +1855,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "요시자키 죠",
-    "director_img": "image/staff/director/요시자키 죠.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "투명한 밤을 달리는 너와, 눈에 보이지 않는 사랑을 했다.",
@@ -1879,7 +1879,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "쿠즈야 나오유키",
-    "director_img": "image/staff/director/쿠즈야 나오유키.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "열받은 영애는 복수를 다짐했습니다  ~마도서의 힘으로 조국을 부숴버릴게요~",
@@ -1891,7 +1891,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "니고리카와 아츠시",
-    "director_img": "image/staff/director/니고리카와 아츠시.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "버려진 성녀의 이세계 밥 여행 숨겨진 스킬로 캠핑카를 소환했습니다",
@@ -1903,7 +1903,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "죠 덴호",
-    "director_img": "image/staff/director/죠 덴호.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "전학 간 학교의 청순가련한 미소녀가 옛날에 남자라고 생각해서 같이 놀던 소꿉친구였던 일",
@@ -1927,7 +1927,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "이바타 쇼타",
-    "director_img": "image/staff/director/이바타 쇼타.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "대전 감사합니다 ~숙녀는 격투 게임을 안 해요~",
@@ -1939,7 +1939,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "토모다 야스시",
-    "director_img": "image/staff/director/토모다 야스시.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "네가 죽을 때까지 사랑하고 싶어",
@@ -1951,7 +1951,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "에노모토 나오",
-    "director_img": "image/staff/director/에노모토 나오.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "네가 죽을 때까지 사랑하고 싶어",
@@ -1975,7 +1975,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "키무라 노부카게",
-    "director_img": "image/staff/director/키무라 노부카게.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "히든 카드가 많은 빅토리아",
@@ -2011,7 +2011,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "야마모토 타카유키",
-    "director_img": "image/staff/director/야마모토 타카유키.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "유녀전기 Ⅱ",
@@ -2023,7 +2023,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "무라카와 나오야",
-    "director_img": "image/staff/director/무라카와 나오야.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "올 워크스 메이드 입니다",
@@ -2047,7 +2047,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "카즈미 아키오",
-    "director_img": "image/staff/director/카즈미 아키오.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "촌구석 아저씨, 검성이 되다 Ⅱ",
@@ -2059,7 +2059,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "코가 노조미",
-    "director_img": "image/staff/director/코가 노조미.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "촌구석 아저씨, 검성이 되다 Ⅱ",
@@ -2071,7 +2071,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "카와시마 마사루",
-    "director_img": "image/staff/director/카와시마 마사루.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "촌구석 아저씨, 검성이 되다 Ⅱ",
@@ -2083,7 +2083,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "이시이 히사시",
-    "director_img": "image/staff/director/이시이 히사시.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "낙제 현자의 학원 무쌍 ~두 번 전생한 최강 현자, 400년 후의 세계를 마법으로 무쌍~",
@@ -2095,7 +2095,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "카사이 요시노부",
-    "director_img": "image/staff/director/카사이 요시노부.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "LV999의 마을사람",
@@ -2107,7 +2107,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "우에다 시게루",
-    "director_img": "image/staff/director/우에다 시게루.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "아름다운 그대에게 2기",
@@ -2119,7 +2119,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "세시타 히로유키",
-    "director_img": "image/staff/director/세시타 히로유키.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "썬더 3",
@@ -2131,7 +2131,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "이데 케이스케",
-    "director_img": "image/staff/director/이데 케이스케.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "썬더 3",
@@ -2143,7 +2143,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "스가이 스스무",
-    "director_img": "image/staff/director/스가이 스스무.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "썬더 3",
@@ -2155,7 +2155,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "류나리",
-    "director_img": "image/staff/director/류나리.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "썬더 3",
@@ -2167,7 +2167,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "우승욱",
-    "director_img": "image/staff/director/우승욱.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "도굴왕",
@@ -2179,7 +2179,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "스즈키 마사토",
-    "director_img": "image/staff/director/스즈키 마사토.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "레이와의 다라 씨",
@@ -2221,7 +2221,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "우메츠 토모미",
-    "director_img": "image/staff/director/우메츠 토모미.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "BanG Dream! YUME∞MITA",
@@ -2233,7 +2233,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "모리타 히로시",
-    "director_img": "image/staff/director/모리타 히로시.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "BanG Dream! YUME∞MITA",
@@ -2245,7 +2245,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "이와사키 타로",
-    "director_img": "image/staff/director/이와사키 타로.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "뫼비우스 더스트",
@@ -2257,7 +2257,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "모리 아오이",
-    "director_img": "image/staff/director/모리 아오이.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "슈퍼 뒤에서 담배 피우는 두 사람",
@@ -2317,7 +2317,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "오오미네 테루유키",
-    "director_img": "image/staff/director/오오미네 테루유키.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "소녀 괴수 캐러멜리제",
@@ -2329,7 +2329,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "이마이즈미 켄이치",
-    "director_img": "image/staff/director/이마이즈미 켄이치.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "영민 0명 스타트 변경 영주님",
@@ -2353,7 +2353,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "카와카미 유스케",
-    "director_img": "image/staff/director/카와카미 유스케.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "도망을 잘 치는 도련님 2기",
@@ -2389,7 +2389,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "오오하시 요시미츠",
-    "director_img": "image/staff/director/오오하시 요시미츠.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "코드 기아스 탈환의 로제",
@@ -2401,7 +2401,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "오진구",
-    "director_img": "image/staff/director/오진구.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "고양이와 용",
@@ -2413,7 +2413,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "우마비키 케이",
-    "director_img": "image/staff/director/우마비키 케이.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "블랙 토치",
@@ -2449,7 +2449,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "무라타 히카루",
-    "director_img": "image/staff/director/무라타 히카루.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "블리치 천년혈전 편 : 화진담",
@@ -2485,7 +2485,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "카메이 칸타",
-    "director_img": "image/staff/director/카메이 칸타.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "그로우 업 쇼 ~해바라기 서커스단~",
@@ -2497,7 +2497,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "타카하시 사츠키",
-    "director_img": "image/staff/director/타카하시 사츠키.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "그로우 업 쇼 ~해바라기 서커스단~",
@@ -2509,7 +2509,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "오오미야 카즈히토",
-    "director_img": "image/staff/director/오오미야 카즈히토.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "오니의 신부",
@@ -2521,7 +2521,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "오다 히로야스",
-    "director_img": "image/staff/director/오다 히로야스.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "주식회사 마지루미에 2기",
@@ -2533,7 +2533,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "마츠이 히토유키",
-    "director_img": "image/staff/director/마츠이 히토유키.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "「널 사랑할 생각은 없어」라던 차기 공작님이 어째선지 제게 푹 빠졌어요 차기 공작님이 어째선지 제게 푹 빠졌어요",
@@ -2557,7 +2557,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "모리시타 슈세이",
-    "director_img": "image/staff/director/모리시타 슈세이.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "아가씨 돌보기 ~영애들이 다니는 명문 학교에서 제일가는 아가씨 (생활력 없음) 를 남몰래 돕는  시중 담당 이 되었습니다~",
@@ -2569,7 +2569,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "히라타 유타카",
-    "director_img": "image/staff/director/히라타 유타카.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "렛츠고 괴기조",
@@ -2605,7 +2605,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "야마사키 미츠에",
-    "director_img": "image/staff/director/야마사키 미츠에.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "못 미더운 악녀입니다만",
@@ -2617,7 +2617,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "노로 스미에",
-    "director_img": "image/staff/director/노로 스미에.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "못 미더운 악녀입니다만",
@@ -2629,7 +2629,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "마키 슌지",
-    "director_img": "image/staff/director/마키 슌지.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "아주르 레인 미속전진! 2!!",
@@ -2641,7 +2641,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "키쿠치 토시히로",
-    "director_img": "image/staff/director/키쿠치 토시히로.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "문호 스트레이독스 멍! 2",
@@ -2653,7 +2653,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "츠쿠모 타쿠미",
-    "director_img": "image/staff/director/츠쿠모 타쿠미.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "뒤에 있는 카무이 씨",
@@ -2665,7 +2665,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "카마타니 하루카",
-    "director_img": "image/staff/director/카마타니 하루카.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "원피스 히로인즈",
@@ -2688,7 +2688,7 @@ var animeDirectorData_2026 = [
   },
   {
     "director": "타다 슌스케",
-    "director_img": "image/staff/director/타다 슌스케.webp",
+    "director_img": "image/staff/director/default.webp",
     "works": [
       {
         "title": "스타워즈 비전스 PRESENTS - 아홉 번째 제다이",

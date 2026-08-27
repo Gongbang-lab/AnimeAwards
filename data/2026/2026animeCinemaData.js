@@ -199,7 +199,7 @@ var cinemaData_2026 =[
   "title": "사랑의 하츄핑: 고래보석의 전설",
   "year": 2026,
   "quarter": "3분기",
-  "thumbnail": "image/cinema/2026/사랑의 하츄핑: 고래보석의 전설.webp",
+  "thumbnail": "image/cinema/2026/사랑의 하츄핑 고래보석의 전설.webp",
   "day": "Cinema",
   "episodes": 1,
   "studio": [
