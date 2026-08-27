@@ -2070,8 +2070,8 @@ var animeDirectorData = [
     ]
   },
   {
-    "director": "카와시마 마사루(",
-    "director_img": "image/staff/director/카와시마 마사루(.webp",
+    "director": "카와시마 마사루",
+    "director_img": "image/staff/director/카와시마 마사루.webp",
     "works": [
       {
         "title": "촌구석 아저씨, 검성이 되다 Ⅱ",

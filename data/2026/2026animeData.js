@@ -4195,7 +4195,7 @@ var AnimeList_2026 = [
   "day": "Tuesdays",
   "episodes": 12,
   "studio": [
-    "Sunrise"
+    "선라이즈"
   ],
   "staff": {
     "director": [
@@ -4442,7 +4442,7 @@ var AnimeList_2026 = [
     "director": [
       "카즈미 아키오",
       "코가 노조미",
-      "카와시마 마사루("
+      "카와시마 마사루"
     ],
     "adaptor": [
       "오카다 쿠니히코"
@@ -4657,7 +4657,7 @@ var AnimeList_2026 = [
   "day": "Thursdays",
   "episodes": 13,
   "studio": [
-    "니치카라인"
+    "산지겐"
   ],
   "staff": {
     "director": [
@@ -5573,7 +5573,7 @@ var AnimeList_2026 = [
   "day": "Anomaly",
   "episodes": 12,
   "studio": [
-    "본즈",
+    "본즈 필름",
     "NOMAD"
   ],
   "staff": {

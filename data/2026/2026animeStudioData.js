@@ -86,19 +86,6 @@ var AnimeStudioData = [
     ]
   },
   {
-    "studio": "니치카라인",
-    "studio_img": "image/studio/니치카라인.avif",
-    "works": [
-      {
-        "title": "BanG Dream! YUME∞MITA",
-        "thumbnail": "image/animeimg/2026/Q3/BanG Dream! YUME∞MITA.webp",
-        "director": "우메츠 토모미",
-        "quarter": "3분기",
-        "year": 2026
-      }
-    ]
-  },
-  {
     "studio": "데즈카 프로덕션",
     "studio_img": "image/studio/데즈카 프로덕션.avif",
     "works": [
@@ -371,19 +358,6 @@ var AnimeStudioData = [
     ]
   },
   {
-    "studio": "본즈",
-    "studio_img": "image/studio/본즈.avif",
-    "works": [
-      {
-        "title": "문호 스트레이독스 멍! 2",
-        "thumbnail": "image/animeimg/2026/Q3/문호 스트레이독스 멍! 2.webp",
-        "director": "키쿠치 토시히로",
-        "quarter": "3분기",
-        "year": 2026
-      }
-    ]
-  },
-  {
     "studio": "본즈 필름",
     "studio_img": "image/studio/본즈 필름.avif",
     "works": [
@@ -412,6 +386,13 @@ var AnimeStudioData = [
         "title": "황천의 츠가이",
         "thumbnail": "image/animeimg/2026/Q2/황천의 츠가이.webp",
         "director": "안도 마사히로",
+        "quarter": "3분기",
+        "year": 2026
+      },
+      {
+        "title": "문호 스트레이독스 멍! 2",
+        "thumbnail": "image/animeimg/2026/Q3/문호 스트레이독스 멍! 2.webp",
+        "director": "키쿠치 토시히로",
         "quarter": "3분기",
         "year": 2026
       }
@@ -494,6 +475,13 @@ var AnimeStudioData = [
         "director": "스즈키 다이스케",
         "quarter": "2분기",
         "year": 2026
+      },
+            {
+        "title": "BanG Dream! YUME∞MITA",
+        "thumbnail": "image/animeimg/2026/Q3/BanG Dream! YUME∞MITA.webp",
+        "director": "우메츠 토모미",
+        "quarter": "3분기",
+        "year": 2026
       }
     ]
   },
@@ -534,6 +522,13 @@ var AnimeStudioData = [
         "thumbnail": "image/cinema/2026/영화 러브 라이브! 니지가사키 학원 스쿨 아이돌 동호회 완결편 제2장.webp",
         "director": "카와무라 토모유키",
         "quarter": "1분기"
+      },
+            {
+        "title": "개진전 사무라이 트루퍼",
+        "thumbnail": "image/animeimg/2026/Q3/개진전 사무라이 트루퍼.webp",
+        "director": "후지타 요이치",
+        "quarter": "3분기",
+        "year": 2026
       }
     ]
   },
@@ -1243,7 +1238,7 @@ var AnimeStudioData = [
   },
   {
     "studio": "A.C.G.T.",
-    "studio_img": "image/studio/A.C.G.T..avif",
+    "studio_img": "image/studio/A.C.G.T.avif",
     "works": [
       {
         "title": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
@@ -2108,7 +2103,7 @@ var AnimeStudioData = [
   },
   {
     "studio": "SILVER LINK.",
-    "studio_img": "image/studio/SILVER LINK..avif",
+    "studio_img": "image/studio/SILVER LINK.avif",
     "works": [
       {
         "title": "아르네의 사건부",
@@ -2194,19 +2189,6 @@ var AnimeStudioData = [
         "thumbnail": "image/animeimg/2026/Q1/내가 연인이 될 수 있을 리 없잖아, 무리무리!.webp",
         "director": "우치누마 나츠미",
         "quarter": "1분기",
-        "year": 2026
-      }
-    ]
-  },
-  {
-    "studio": "Sunrise",
-    "studio_img": "image/studio/Sunrise.avif",
-    "works": [
-      {
-        "title": "개진전 사무라이 트루퍼",
-        "thumbnail": "image/animeimg/2026/Q3/개진전 사무라이 트루퍼.webp",
-        "director": "후지타 요이치",
-        "quarter": "3분기",
         "year": 2026
       }
     ]
