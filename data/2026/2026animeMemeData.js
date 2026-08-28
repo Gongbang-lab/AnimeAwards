@@ -208,4 +208,13 @@ var AnimeMemeData_2026 = [
         "quarter": "3분기",
         "year" : 2026
     },
+    {
+        "id": "meme_024",
+        "name": "그 장면",
+        "type": "mp4",
+        "src1": "image/meme/그 장면.mp4",
+        "origin": "황천의 츠가이",
+        "quarter": "3분기",
+        "year" : 2026
+    }
 ];
