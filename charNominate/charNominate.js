@@ -30,11 +30,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 : charState.theme.includes("male")   ? "male"
                 : "all";
     if (genderKey === "female") {
-        document.getElementById("step-title").textContent = "올해의 여우 주연상 부문";
+        document.getElementById("step-title").textContent = `${SeasonFilter.toDisplayAwardName("올해의 여우 주연상")} 부문`;
     } else if (genderKey === "male") {
-        document.getElementById("step-title").textContent = "올해의 남우 주연상 부문";
+        document.getElementById("step-title").textContent = `${SeasonFilter.toDisplayAwardName("올해의 남우 주연상")} 부문`;
     } else {
-        document.getElementById("step-title").textContent = "올해의 모든 캐릭터 상 부문";
+        document.getElementById("step-title").textContent = `${SeasonFilter.toDisplayAwardName("올해의 모든 캐릭터 상")} 부문`;
     }
 
     const modalAwardEl = document.getElementById("modal-award-name");

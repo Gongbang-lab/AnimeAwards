@@ -9,8 +9,8 @@ const originalState = {
 let cachedVoteData = null;
 
 // ✅ 추가: SeasonFilter 적용된 시나리오 작가 데이터
-const SeasonFilteredScriptwriterData = (typeof scriptwriterData_2026 !== 'undefined')
-    ? SeasonFilter.filterAnimeList(scriptwriterData_2026)
+const SeasonFilteredScriptwriterData = (typeof scriptwriterData !== 'undefined')
+    ? SeasonFilter.filterAnimeList(scriptwriterData)
     : [];
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -18,6 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const params = new URLSearchParams(window.location.search);
     originalState.awardName = params.get("awardName");
+
+    const stepTitleEl = document.getElementById('step-title-display');
+    if (stepTitleEl) stepTitleEl.textContent = `${SeasonFilter.toDisplayAwardName("베스트 각본상")} 부문`;
+
     waitForFirebaseAndListen();
 });
 
@@ -190,7 +194,7 @@ function proceedToStep2() {
     originalState.selectedItems = []; 
     originalState.step = 2;
 
-    document.getElementById('step-title-display').textContent = "베스트 각본상 부문";
+    document.getElementById('step-title-display').textContent = `${SeasonFilter.toDisplayAwardName("베스트 각본상")} 부문`;
     document.getElementById('next-btn').classList.add('hidden');
     document.getElementById('final-btn').classList.remove('hidden');
 
@@ -209,7 +213,7 @@ function backToStep1() {
     originalState.step = 1;
     originalState.selectedItems = [...originalState.step1Selected];
 
-    document.getElementById('step-title-display').textContent = "각본상 후보 선정";
+    document.getElementById('step-title-display').textContent = `${SeasonFilter.toDisplayAwardName("베스트 각본상")} 부문`;
     document.getElementById('next-btn').classList.remove('hidden');
     document.getElementById('final-btn').classList.add('hidden');
 

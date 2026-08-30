@@ -26,10 +26,11 @@ function getSeasonFilteredDirectorList() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    // ✅ 수정: awardName을 renderDirectorGrid() 호출보다 먼저 설정
-    //         (기존엔 렌더링 뒤에 설정돼서 첫 렌더링 카드의 data-category가 비어있었음)
     const params = new URLSearchParams(window.location.search);
     dirState.awardName = params.get("awardName");
+
+    const stepTitleEl = document.getElementById("step-title");
+    if (stepTitleEl) stepTitleEl.textContent = `${SeasonFilter.toDisplayAwardName("올해의 감독상")} 부문`;
 
     renderDirectorGrid();
 
@@ -298,7 +299,7 @@ function removeDirector(name) {
 function goStep2() {
     if (dirState.step === 1) {
         dirState.step = 2;
-        document.getElementById("step-title").textContent = "올해의 감독상 부문";
+        document.getElementById("step-title").textContent = `${SeasonFilter.toDisplayAwardName("올해의 감독상")} 부문`;
         document.getElementById("btn-back").textContent = "이전 단계";
         
         const nextBtn = document.getElementById("btn-next");
@@ -314,7 +315,7 @@ function goStep2() {
 function handleBack() {
     if (dirState.step === 2) {
         dirState.step = 1;
-        document.getElementById("step-title").textContent = "올해의 감독상 후보 선발";
+        document.getElementById("step-title").textContent = `${SeasonFilter.toDisplayAwardName("올해의 감독상")} 부문`;
         document.getElementById("btn-back").textContent = "메인으로";
         
         const nextBtn = document.getElementById("btn-next");

@@ -241,7 +241,7 @@ var scriptwriterData_2026 = [
     "year": 2026,
     "quarter": "3분기",
     "title": "사랑의 하츄핑: 고래보석의 전설",
-    "thumbnail": "image/cinema/2026/사랑의 하츄핑: 고래보석의 전설.webp",
+    "thumbnail": "image/cinema/2026/사랑의 하츄핑 고래보석의 전설.webp",
     "studio": [
       "SAMG ENTERTAINMENT"
     ],

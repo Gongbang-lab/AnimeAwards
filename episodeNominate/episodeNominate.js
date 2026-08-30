@@ -28,7 +28,9 @@ function init() {
     const params = new URLSearchParams(window.location.search);
     episodeState.awardName = params.get("awardName");
     
-    // ✅ 수정: SeasonFilter 적용
+    const stepTitleEl = document.getElementById("step-title-display");
+    if (stepTitleEl) stepTitleEl.textContent = `${SeasonFilter.toDisplayAwardName("베스트 에피소드")} 부문`;
+
     const seasonFilteredList = SeasonFilter.filterAnimeList(AnimeList);
     const groupedData = groupData(seasonFilteredList);
     renderAccordion(groupedData);
@@ -229,7 +231,7 @@ function proceedToStep2() {
     const searchArea = document.querySelector('.search-container');
     if (searchArea) searchArea.classList.add('hidden');
 
-    document.getElementById('step-title-display').textContent = "베스트 에피소드 상 부문";
+    document.getElementById('step-title-display').textContent = `${SeasonFilter.toDisplayAwardName("베스트 에피소드")} 상 부문`;
     document.getElementById('next-btn').classList.add('hidden');
     document.getElementById('final-btn').classList.remove('hidden');
 
@@ -250,7 +252,7 @@ function backToStep1() {
     const searchArea = document.querySelector('.search-container');
     if (searchArea) searchArea.classList.remove('hidden');
 
-    document.getElementById('step-title-display').textContent = "베스트 에피소드 후보 선정";
+    document.getElementById('step-title-display').textContent = `${SeasonFilter.toDisplayAwardName("베스트 에피소드")} 후보 선정`;
     document.getElementById('next-btn').classList.remove('hidden');
     document.getElementById('final-btn').classList.add('hidden');
 

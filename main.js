@@ -420,7 +420,7 @@ function createAwardCard(award, results, ratioClass) {
         <div class="thumb-wrapper">
             ${mediaTag}
         </div>
-        <div class="award-name">${award.name}</div>
+        <div class="award-name">${SeasonFilter.toDisplayAwardName(award.name)}</div>
         <div class="award-winner" title="${displayTitle}">${displayTitle}</div>
     `;
 

@@ -19,7 +19,6 @@ const DAY_LABELS = {
 
 const DAY_KEYS = ["Mondays", "Tuesdays", "Wednesdays", "Thursdays", "Fridays", "Saturdays", "Sundays", "Anomaly", "Web"];
 
-// ✅ 수정: 체크하는 변수와 대입하는 변수를 일치시키고, SeasonFilter 적용
 const sourceData = (typeof AnimeAdaptorData !== 'undefined')
     ? SeasonFilter.filterAnimeList(AnimeAdaptorData)
     : [];
@@ -33,7 +32,6 @@ const AnimeByQuarter = SeasonFilteredList.reduce((acc, anime) => {
     return acc;
 }, {});
 
-// ✅ DB 데이터 캐시 (카드 렌더링 후 즉시 뱃지 적용용)
 let cachedVoteData = null;
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -41,14 +39,12 @@ document.addEventListener("DOMContentLoaded", () => {
     nominateState.theme = params.get("theme");
     nominateState.awardName = params.get("awardName");
 
+    // ✅ 수정: 표시용 이름은 toDisplayAwardName()으로 변환 (저장용 원본은 nominateState.awardName 그대로 유지)
     const modalAwardNameEl = document.getElementById("modal-award-name");
-    if (modalAwardNameEl) modalAwardNameEl.textContent = nominateState.awardName;
+    if (modalAwardNameEl) modalAwardNameEl.textContent = SeasonFilter.toDisplayAwardName(nominateState.awardName);
 
     const stepTitleEl = document.getElementById("step-title");
-    if (stepTitleEl) stepTitleEl.textContent = `${nominateState.awardName} 부문`;
-
-    // ✅ 삭제: 존재하지 않는 updateAutocomplete()를 호출하던 중복 핸들러 제거
-    //         (실제 동작하는 핸들러는 파일 하단에 이미 있음)
+    if (stepTitleEl) stepTitleEl.textContent = `${SeasonFilter.toDisplayAwardName(nominateState.awardName)} 부문`;
 
     document.getElementById("step1-next-btn").onclick = goStep2;
     document.getElementById("step2-back-btn").onclick = goStep1;
@@ -128,7 +124,6 @@ function renderStep1(filterText = "") {
         leftArea.appendChild(qSection);
     });
 
-    // ✅ 렌더링 완료 후 캐시 데이터로 즉시 뱃지 적용
     applyVoteBadges();
 }
 
@@ -140,6 +135,7 @@ function createCard(anime) {
 
     card.className = `card ${isSelected ? 'selected' : ''}`;
 
+    // ⚠️ data-category는 Firebase/ResultStorage 매칭 키라서 원본 그대로 유지 (표시명으로 바꾸면 안 됨)
     card.setAttribute('data-category', nominateState.awardName);
     card.setAttribute('data-anime-id', anime.title);
 
@@ -209,7 +205,8 @@ function updatePreview() {
 function goStep2() {
     nominateState.step = 2;
 
-    document.getElementById("step-title").textContent = `${nominateState.awardName} 부문`;
+    // ✅ 수정: 표시명 변환 적용
+    document.getElementById("step-title").textContent = `${SeasonFilter.toDisplayAwardName(nominateState.awardName)} 부문`;
 
     toggleElement("nav-home-btn", false);
     toggleElement("step1-next-btn", false);
@@ -260,7 +257,6 @@ function toggleElement(id, show) {
     if (el) el.classList.toggle("hidden", !show);
 }
 
-// ✅ 검색창 이벤트: 실제로 동작하는 유일한 핸들러 (자동완성 포함)
 const searchInput = document.getElementById('search-input');
 const autocompleteList = document.getElementById('autocomplete-list');
 if (searchInput) {
@@ -272,7 +268,6 @@ if (searchInput) {
         autocompleteList.innerHTML = '';
         if (!val) return;
 
-        // ✅ sourceData는 이미 SeasonFilter를 거친 상태이므로 자동완성도 시즌에 맞게 노출됨
         sourceData.filter(a => a.title.toLowerCase().includes(val.toLowerCase())).slice(0, 5).forEach(match => {
             const div = document.createElement("div");
             div.textContent = match.title;
@@ -298,6 +293,7 @@ function openAwardPopup() {
     document.getElementById("winner-modal").classList.remove("hidden");
     fireConfetti();
 
+    // ⚠️ 저장/투표 집계는 원본 awardName 그대로 사용 (표시명과 무관하게 키 일관성 유지)
     ResultStorage.saveOne(nominateState.awardName, {
         title: winner.title,
         thumbnail: winner.thumbnail

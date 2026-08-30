@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const awardName = params.get("awardName");
 
     ostNominateState.awardName = awardName;
-    document.getElementById("step-title-display").textContent = `${ostNominateState.awardName}` + " 부문";
+    document.getElementById("step-title-display").textContent = `${SeasonFilter.toDisplayAwardName(ostNominateState.awardName)}` + " 부문";
 
     renderOSTStep1();
 

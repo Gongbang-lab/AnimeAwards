@@ -34,5 +34,36 @@ window.SeasonFilter = (function () {
         return new Set(filterAnimeList(animeList).map(a => a.id));
     }
 
-    return { getSelectedSeason, isInSeason, filterAnimeList, getSeasonAnimeTitleSet, getSeasonAnimeIdSet };
+    const TOP3_NAMES = ["대상", "최우수상", "우수상"];
+
+    function toDisplayAwardName(rawName) {
+        if (!rawName) return rawName;
+        if (rawName.includes("신인")) return rawName; // 신인 부문은 원본 유지
+
+        const { quarter } = getSelectedSeason();
+        if (!quarter || quarter === "모든 분기") return rawName;
+
+        // ✅ 추가: top3(대상/최우수상/우수상)는 "베스트" 없이 [분기] [이름] 형식
+        if (TOP3_NAMES.includes(rawName)) {
+            return `${quarter} ${rawName}`;
+        }
+
+        let core = rawName;
+        if (core.startsWith("올해의 ")) {
+            core = core.slice("올해의 ".length);
+        } else if (core.startsWith("베스트 ")) {
+            core = core.slice("베스트 ".length);
+        }
+
+        return `${quarter} 베스트 ${core}`;
+    }
+
+    return { 
+        getSelectedSeason, 
+        isInSeason, 
+        filterAnimeList, 
+        getSeasonAnimeTitleSet, 
+        getSeasonAnimeIdSet,
+        toDisplayAwardName
+    };
 })();

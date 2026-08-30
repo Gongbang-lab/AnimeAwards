@@ -41,6 +41,9 @@ const confirmAwardBtn = document.getElementById('confirmAwardBtn');
 
 // --- 초기화 ---
 window.onload = function() {
+    const stepTitleEl = document.getElementById("step-title");
+    if (stepTitleEl) stepTitleEl.textContent = `${SeasonFilter.toDisplayAwardName(awardName)} 부문`;
+
     // 검색 관련
     searchBtn.addEventListener('click', () => performSearch(searchInput.value));
     searchInput.addEventListener('input', handleSearchInput); // 입력 시 연관검색어

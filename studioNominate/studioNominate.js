@@ -25,7 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
     studioState.awardName = params.get("awardName");
     
     const modalAwardNameEl = document.getElementById("modal-award-name");
-    if (modalAwardNameEl) modalAwardNameEl.textContent = studioState.awardName;
+    if (modalAwardNameEl) modalAwardNameEl.textContent = `${SeasonFilter.toDisplayAwardName(studioState.awardName)}` + " 부문";
+
+    const stepTitleEl = document.getElementById("step-title");
+    if (stepTitleEl) stepTitleEl.innerText = `${SeasonFilter.toDisplayAwardName("올해의 스튜디오 상")} 부문`;
 
     document.getElementById("nav-home-btn").onclick = () => location.href = "../index.html";
     document.getElementById("step1-next-btn").onclick = goToStep2;
@@ -114,7 +117,7 @@ function goToStep2() {
     const searchArea = document.querySelector('.search-container');
     if (searchArea) searchArea.classList.add("hidden");
 
-    document.getElementById("step-title").innerText = "올해의 스튜디오 상 부문";
+    document.getElementById("step-title").innerText = `${SeasonFilter.toDisplayAwardName("올해의 스튜디오 상")} 부문`;
     
     const searchInput = document.getElementById("search-input");
     if (searchInput) searchInput.disabled = true;
@@ -137,7 +140,7 @@ function goToStep1() {
     const searchArea = document.querySelector('.search-container');
     if (searchArea) searchArea.classList.remove("hidden");
 
-    document.getElementById("step-title").innerText = "올해의 스튜디오 상 부문";
+    document.getElementById("step-title").innerText = `${SeasonFilter.toDisplayAwardName("올해의 스튜디오 상")} 부문`;
     
     const searchInput = document.getElementById("search-input");
     if (searchInput) {

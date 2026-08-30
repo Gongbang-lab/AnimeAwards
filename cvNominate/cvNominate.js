@@ -54,9 +54,9 @@ function renderCVStep1(searchTerm = "") {
         
         const genderKey = cvState.theme.includes("female") ? "female" : "male";
         if (genderKey === "female") {
-            stepTitle.textContent = "올해의 여자 성우상 부문";
+            stepTitle.textContent = `${SeasonFilter.toDisplayAwardName("올해의 여자 성우상")} 부문`;
         } else {
-            stepTitle.textContent = "올해의 남자 성우상 부문";
+            stepTitle.textContent = `${SeasonFilter.toDisplayAwardName("올해의 남자 성우상")} 부문`;
         }
 
         // ✅ 수정: SeasonFilter 적용된 목록 사용
@@ -245,8 +245,10 @@ function goStep2() {
 
         const stepTitle = document.getElementById("step-title");
         const genderKey = cvState.theme.includes("female") ? "female" : "male";
-        stepTitle.textContent = genderKey === "female" ? "올해의 여자 성우상 부문" : "올해의 남자 성우상 부문";
-
+        stepTitle.textContent = genderKey === "female"
+            ? `${SeasonFilter.toDisplayAwardName("올해의 여자 성우상")} 부문`
+            : `${SeasonFilter.toDisplayAwardName("올해의 남자 성우상")} 부문`;
+            
         document.getElementById("btn-back").textContent = "이전 단계";
         const nextBtn = document.getElementById("btn-next");
         nextBtn.textContent = "수상 결정";

@@ -11,6 +11,10 @@ const movies = (typeof cinemaData !== 'undefined')
 let cachedVoteData = null;
 
 document.addEventListener("DOMContentLoaded", () => {
+    const stepTitleEl = document.getElementById("step-title");
+    if (stepTitleEl) stepTitleEl.textContent = `${SeasonFilter.toDisplayAwardName(cinemaState.awardName)} 부문`;
+
+    
     renderCards(movies);
 
     const searchInput = document.getElementById('searchInput');

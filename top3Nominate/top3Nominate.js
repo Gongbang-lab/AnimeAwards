@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function renderStep1(searchTerm = "") {
     top3State.step = 1;
-    document.getElementById('step-title').textContent = "올해의 시리즈 부문";
+    document.getElementById('step-title').textContent = `${SeasonFilter.toDisplayAwardName("올해의 시리즈")} 부문`;
     const nextBtn = document.getElementById('next-btn');
     nextBtn.textContent = "다음 단계";
     document.getElementById('rank-status').classList.add('hidden');

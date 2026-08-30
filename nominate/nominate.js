@@ -16,7 +16,7 @@ nominateState.awardName = params.get("awardName");
 const modalAwardName = document.getElementById('modal-award-name');
 if(modalAwardName) modalAwardName.textContent = nominateState.awardName;
 const stepTitle = document.getElementById("step-title");
-stepTitle.textContent = `${nominateState.awardName} 부문`;
+stepTitle.textContent = `${SeasonFilter.toDisplayAwardName(nominateState.awardName)} 부문`;
 
 // 요일 매핑 (데이터의 day는 영어 그대로 유지됨)
 const DAY_LABELS = {

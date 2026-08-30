@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     songNominateState.theme = theme;
     songNominateState.awardName = awardName;
-    document.getElementById("step-title-display").textContent = `${songNominateState.awardName}` + " 부문";
+    document.getElementById("step-title-display").textContent = `${SeasonFilter.toDisplayAwardName(songNominateState.awardName)}` + " 부문";
 
     renderSongStep1();
 

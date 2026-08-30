@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     memeState.awardName = params.get("awardName");
 
     const stepTitle = document.getElementById("step-title");
-    if (stepTitle) stepTitle.textContent = `${memeState.awardName} 부문`;
+    if (stepTitle) stepTitle.textContent = `${SeasonFilter.toDisplayAwardName(memeState.awardName)} 부문`;
 
     renderMemeGrid();
 
