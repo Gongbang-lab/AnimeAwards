@@ -11322,6 +11322,151 @@ var animeEPData_2026 = {
                 "와카바야시 칸지"
             ]
         }
+    },
+    {
+        "episode no": "제14화",
+        "episode title": "독재",
+        "storyboard": {
+            "staff": [
+                "코지나 히로시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카와노 아사미",
+                "지양호"
+            ]
+        }
+    },
+    {
+        "episode no": "제15화",
+        "episode title": "비책",
+        "storyboard": {
+            "staff": [
+                "시미즈 켄이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "나카노 아키코",
+                "김민선"
+            ]
+        }
+    },
+    {
+        "episode no": "제16화",
+        "episode title": "교란",
+        "storyboard": {
+            "staff": [
+                "시미즈 켄이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "와카바야시 칸지",
+                "김기남"
+            ]
+        }
+    },
+    {
+        "episode no": "제17화",
+        "episode title": "밀고",
+        "storyboard": {
+            "staff": [
+                "카와노 아사미"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카와노 아사미",
+                "김문수"
+            ]
+        }
+    },
+    {
+        "episode no": "제18화",
+        "episode title": "경계",
+        "storyboard": {
+            "staff": [
+                "야마우치 아이미"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "나카노 아키코",
+                "지양호"
+            ]
+        }
+    },
+    {
+        "episode no": "제19화",
+        "episode title": "연대",
+        "storyboard": {
+            "staff": [
+                "사토 유조"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "와카바야시 칸지",
+                "김민선"
+            ]
+        }
+    },
+    {
+        "episode no": "제20화",
+        "episode title": "도발",
+        "storyboard": {
+            "staff": [
+                "사토 유조"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카와노 아사미",
+                "박시후"
+            ]
+        }
+    },
+    {
+        "episode no": "제21화",
+        "episode title": "先鋒戦",
+        "storyboard": {
+            "staff": [
+                "카와무라 켄이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "나카노 아키코",
+                "양정희"
+            ]
+        }
+    },
+    {
+        "episode no": "제22화",
+        "episode title": "罠",
+        "storyboard": {
+            "staff": [
+                "사토 유조"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "와카바야시 칸지",
+                "강태식"
+            ]
+        }
+    },
+    {
+        "episode no": "제23화",
+        "episode title": "中堅戦",
+        "storyboard": {
+            "staff": []
+        },
+        "episode director": {
+            "staff": []
+        }
     }
 ],
 "63375": [
@@ -18611,6 +18756,115 @@ var animeEPData_2026 = {
                 "아사키 유키히코"
             ]
         }
+    },
+    {
+        "episode no": "제15화",
+        "episode title": "유르와 단지",
+        "storyboard": {
+            "staff": [
+                "카모이 토모요"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카모이 토모요",
+                "이케노 쇼지"
+            ]
+        }
+    },
+    {
+        "episode no": "제16화",
+        "episode title": "카게모리와 신고",
+        "storyboard": {
+            "staff": [
+                "나가토미 코지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "나가토미 코지"
+            ]
+        }
+    },
+    {
+        "episode no": "제17화",
+        "episode title": "우는 아이와 나쁜 아이",
+        "storyboard": {
+            "staff": [
+                "허종"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "키타무라 마사시"
+            ]
+        }
+    },
+    {
+        "episode no": "제18화",
+        "episode title": "풍신과 뇌신",
+        "storyboard": {
+            "staff": [
+                "야마기시 다이고"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야마기시 다이고"
+            ]
+        }
+    },
+    {
+        "episode no": "제19화",
+        "episode title": "칼과 활",
+        "storyboard": {
+            "staff": [
+                "시미즈 히로시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "시미즈 히로시"
+            ]
+        }
+    },
+    {
+        "episode no": "제20화",
+        "episode title": "도망자와 추적자",
+        "storyboard": {
+            "staff": [
+                "허종"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이케노 쇼지"
+            ]
+        }
+    },
+    {
+        "episode no": "제21화",
+        "episode title": "자시키와라시와 히가시무라",
+        "storyboard": {
+            "staff": [
+                "타니무라 다이시로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이이노 신야"
+            ]
+        }
+    },
+    {
+        "episode no": "제22화",
+        "episode title": "카게모리 형제와 쿠로야 남매",
+        "storyboard": {
+            "staff": []
+        },
+        "episode director": {
+            "staff": []
+        }
     }
 ],
 "62048": [
@@ -18809,6 +19063,120 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "토바 아키라"
+            ]
+        }
+    },
+    {
+        "episode no": "제15화",
+        "episode title": "시라누이",
+        "storyboard": {
+            "staff": [
+                "요네다 미츠히로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "요네다 미츠히로",
+                "도몬 켄이치"
+            ]
+        }
+    },
+    {
+        "episode no": "제16화",
+        "episode title": "하쿠비",
+        "storyboard": {
+            "staff": [
+                "카나자와 히로미츠"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야마모토 카츠야"
+            ]
+        }
+    },
+    {
+        "episode no": "제17화",
+        "episode title": "마오구이",
+        "storyboard": {
+            "staff": [
+                "타가시라 마리에"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "타가시라 마리에"
+            ]
+        }
+    },
+    {
+        "episode no": "제18화",
+        "episode title": "나츠노",
+        "storyboard": {
+            "staff": [
+                "카와이 사쿠라"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "토바 아키라"
+            ]
+        }
+    },
+    {
+        "episode no": "제19화",
+        "episode title": "바닷속 사당",
+        "storyboard": {
+            "staff": [
+                "안도 나오야"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "요네다 미츠히로"
+            ]
+        }
+    },
+    {
+        "episode no": "제20화",
+        "episode title": "사나의 심장",
+        "storyboard": {
+            "staff": [
+                "카나자와 히로미츠"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "쿠마사와 유지"
+            ]
+        }
+    },
+    {
+        "episode no": "제21화",
+        "episode title": "소마",
+        "storyboard": {
+            "staff": [
+                "임가희"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "도몬 켄이치",
+                "요네다 미츠히로"
+            ]
+        }
+    },
+    {
+        "episode no": "제22화",
+        "episode title": "온몸을 던져",
+        "storyboard": {
+            "staff": [
+                "카와이 사쿠라"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "사토 테루오"
             ]
         }
     }
@@ -21893,6 +22261,6571 @@ var animeEPData_2026 = {
             "staff": [
                 "마타가 다이스케"
             ]
+        }
+    }
+],
+"59193": [
+    {
+        "episode no": "제1화",
+        "episode title": "불타올라라, 광견",
+        "storyboard": {
+            "staff": [
+                "시부야 료스케"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카토 쇼고"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "울부짖어라, 광견",
+        "storyboard": {
+            "staff": [
+                "란자키 아카리",
+                "시부야 료스케"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "란자키 아카리"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "돌아온 일상",
+        "storyboard": {
+            "staff": [
+                "아키야마 야스히코"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이시마루 료"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "수왕급 마술사",
+        "storyboard": {
+            "staff": [
+                "나가시마 히로키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "나가시마 히로키"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "축하",
+        "storyboard": {
+            "staff": [
+                "이토 토모히코"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "타치노 유키"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "아수라장 재림?",
+        "storyboard": {
+            "staff": [
+                "오오이시 미에"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "호시 케이토"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "제4단계",
+        "storyboard": {
+            "staff": [
+                "Yuri Pinzon"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카토 쇼고"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "공중 성채",
+        "storyboard": {
+            "staff": [
+                "코모토 쇼고",
+                "시부야 료스케"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이시마루 료"
+            ]
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "통곡",
+        "storyboard": {
+            "staff": [
+                "이타다키 신지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야마시타 사토루"
+            ]
+        }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "",
+        "storyboard": {
+            "staff": [
+                "나가시마 히로키",
+                "아키야마 야스히코",
+                "시부야 료스케"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "나가시마 히로키"
+            ]
+        }
+    }
+],
+"58878": [
+    {
+        "episode no": "제1화",
+        "episode title": "인어공주 라라",
+        "storyboard": {
+            "staff": [
+                "코이데 타쿠시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "코이데 타쿠시"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "울부짖어라, 광견",
+        "storyboard": {
+            "staff": [
+                "코이데 타쿠시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "사토 요스케"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "눈을 피하면 지는 거야",
+        "storyboard": {
+            "staff": [
+                "츠지 아야카"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "츠지 아야카"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "공주와 왕자",
+        "storyboard": {
+            "staff": [
+                "코이데 타쿠시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "코이케 유키"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "케이크를 위해서라면 죽을 수 있어요!",
+        "storyboard": {
+            "staff": [
+                "히로에 케이스케"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "히로에 케이스케"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "나를 비추는 빛",
+        "storyboard": {
+            "staff": [
+                "코사토 아스카"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "코사토 아스카"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "決勝戦の夜",
+        "storyboard": {
+            "staff": [
+                "카와나미 에이사쿠"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카와나미 에이사쿠"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "決勝戦の夜",
+        "storyboard": {
+            "staff": [
+                "요시베 나오키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "요시베 나오키"
+            ]
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "本当の愛",
+        "storyboard": {
+            "staff": [
+                "츠지 아야카"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "츠지 아야카"
+            ]
+        }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "刃を持ったプリンセス",
+        "storyboard": {
+            "staff": [
+                "코이데 타쿠시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이토 신노스케",
+                "모리 요시히코",
+                "코자토 아스카",
+                "이이노 신야"
+            ]
+        }
+    }
+],
+"56736": [
+    {
+        "episode no": "제1화",
+        "episode title": "찌꺼기 황자",
+        "storyboard": {
+            "staff": [
+                "야나세 유지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야나세 유지"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "제도 데이트?",
+        "storyboard": {
+            "staff": [
+                "야나세 유지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카네코 마사즈미"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "에르나 강습",
+        "storyboard": {
+            "staff": [
+                "모리 타케시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카토 아키라"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "기사 수렵제 전야의 마을에서",
+        "storyboard": {
+            "staff": [
+                "모리 타케시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "오오야부 쿄헤이"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "기사 수렵제, 전편",
+        "storyboard": {
+            "staff": [
+                "이시야마 타카아키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "테라사키 유타카"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "기사 수렵제, 후편",
+        "storyboard": {
+            "staff": [
+                "모리 타케시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "쿠사카 나오요시"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "암약과 혼약",
+        "storyboard": {
+            "staff": [
+                "모리 타케시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카네코 마사즈미"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "비 피하기",
+        "storyboard": {
+            "staff": [
+                "야나세 유지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야나세 유지"
+            ]
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "바꿔치기와 아르노르트의 고뇌",
+        "storyboard": {
+            "staff": [
+                "이시야마 타카아키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "오오야부 쿄헤이"
+            ]
+        }
+    }
+],
+"62936": [
+    {
+        "episode no": "제1화",
+        "episode title": "만남",
+        "storyboard": {
+            "staff": [
+                "요네다 미츠요시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "太田気績"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "후유츠키 코하루",
+        "storyboard": {
+            "staff": [
+                "후지와라 나츠토"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "키무라 켄스케"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "노란 책갈피",
+        "storyboard": {
+            "staff": [
+                "박지승"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "나카노 류타"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "첫 데이트",
+        "storyboard": {
+            "staff": [
+                "와타나베 마사하루"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야마모토 타츠미"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "불꽃놀이",
+        "storyboard": {
+            "staff": [
+                "우미노 나마코"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "키무라 켄스케"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "空白のテラス席",
+        "storyboard": {
+            "staff": [
+                "요네다 미츠요시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "太田気績"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "透明",
+        "storyboard": {
+            "staff": [
+                "니시타 마사요시",
+                "키무라 켄스케"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야마모토 타츠미"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "恋心",
+        "storyboard": {
+            "staff": [
+                "박지승"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카마돈"
+            ]
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "ひとり",
+        "storyboard": {
+            "staff": [
+                "키무라 켄스케"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "키무라 켄스케"
+            ]
+        }
+    }
+],
+"60522": [
+    {
+        "episode no": "제1화",
+        "episode title": "사투? 백은의 기사 대 백은의 기사!",
+        "storyboard": {
+            "staff": [
+                "오노 카츠미"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "타카하시 유키오"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "엘프 신부를 노리는 암살의 독니",
+        "storyboard": {
+            "staff": [
+                "오오하라 미노루"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야구치 마도카"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "악당 산화와 남매애의 춤",
+        "storyboard": {
+            "staff": [
+                "니시자와 스스무"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "노가미 카즈오"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "저주의 마을에 성녀의 영혼이 떠돌다",
+        "storyboard": {
+            "staff": [
+                "오오하라 미노루"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "무라카미 츠토무"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "공포! 땅 아래에서 꿈틀대는 사령의 그림자",
+        "storyboard": {
+            "staff": [
+                "오오하라 미노루"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "타카하시 유키오"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "용왕의 샘에 떠오르는 것은 이세계의 이치",
+        "storyboard": {
+            "staff": [
+                "요시카와 히로아키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "사이 인가이"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "숨겨진 마을에 피는 것은, 사나이의 혼!",
+        "storyboard": {
+            "staff": [
+                "니시자와 스스무"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "노가미 카즈오"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "파도 소리여 들어라, 슬픈 쿠노이치의 마음을",
+        "storyboard": {
+            "staff": [
+                "오오하라 미노루"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야구치 마도카"
+            ]
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "재회는 검은 짐승의 포효와 함께",
+        "storyboard": {
+            "staff": [
+                "이시히라 신지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "무라카미 츠토무"
+            ]
+        }
+    }
+],
+"62617": [
+    {
+        "episode no": "제1화",
+        "episode title": "돌아왔더니 영웅이 되어 있었다",
+        "storyboard": {
+            "staff": [
+                "칸베 히로유키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "사사키 요시히로",
+                "오오모리 히데토시",
+                "미네 토모노리",
+                "키무라 유토"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "소굴 안 깊은 곳에 엄청난 적이 있었다",
+        "storyboard": {
+            "staff": [
+                "시부에 모타"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "우치호리 마사토"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "숨겨 둔 자식이란 의심을 받은 데다가 첫 모험에 동행하게 됐다",
+        "storyboard": {
+            "staff": [
+                "아오야마 아카리"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야마우치 토미오"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "10년이 지났더니 그림책 주인공까지 되어 있었다",
+        "storyboard": {
+            "staff": [
+                "히시카와 나오키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "히시카와 나오키"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "10년이 지났더니 먼저 가라는 말을 들었다",
+        "storyboard": {
+            "staff": [
+                "미야후지 야스히로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "미야후지 야스히로"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "10년이 지났더니 가족이 생겼다",
+        "storyboard": {
+            "staff": [
+                "아오야마 히로시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "스튜디오 시구레"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "침입자와 비밀 통로",
+        "storyboard": {
+            "staff": [
+                "YURI PINZON"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "오카다 유야"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "10년 만에 파티 멤버가 다 모였다",
+        "storyboard": {
+            "staff": [
+                "호리 코지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "사사키 요시히로"
+            ]
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "어둠에 숨어 있는 마수들",
+        "storyboard": {
+            "staff": [
+                "이시다 치요"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "시미즈 쇼고"
+            ]
+        }
+    }
+],
+"62289": [
+    {
+        "episode no": "제1화",
+        "episode title": "절망과 복수의 맹세",
+        "storyboard": {
+            "staff": [
+                "쿠즈야 나오유키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "사토 마사후미"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "망명과 창업",
+        "storyboard": {
+            "staff": [
+                "쿠즈야 나오유키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "서혜진"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "여행길에서 마주친 인연",
+        "storyboard": {
+            "staff": [
+                "오오조라 마사키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "와타나베 토모키"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "새로운 동료와 사교 파티",
+        "storyboard": {
+            "staff": [
+                "쿠즈야 나오유키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "소메야 유리카"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "모험가 집결",
+        "storyboard": {
+            "staff": [
+                "오오조라 마사키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "서혜진"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "요새 탈환 작전",
+        "storyboard": {
+            "staff": [
+                "쿠즈야 나오유키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "김민선"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "암야의보복",
+        "storyboard": {
+            "staff": [
+                "쿠즈야 나오유키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "아즈마 료스케"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "아티백작가의비극",
+        "storyboard": {
+            "staff": [
+                "쿠즈야 나오유키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "와타나베 토모키"
+            ]
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "제국길드평의회",
+        "storyboard": {
+            "staff": [
+                "오오조라 마사키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "후카야 유리카"
+            ]
+        }
+    }
+],
+"63752": [
+    {
+        "episode no": "제1화",
+        "episode title": "이세계 송어 외줄낚시 도깨비와 함께",
+        "storyboard": {
+            "staff": [
+                "키요시마 유코"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "마에조노 후미오"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "동료도 재료도 하나가 되는 영양솥밥!",
+        "storyboard": {
+            "staff": [
+                "시로 소타"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "시로 소타"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "바다에서 전투개시 해산물 바비큐로 돌격!",
+        "storyboard": {
+            "staff": [
+                "나카무라 노리유키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "유카와 아츠시"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "음식계의 악마 강림! 그 이름은 타르타르소스!",
+        "storyboard": {
+            "staff": [
+                "키요시마 유코"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "코야마 요시타카"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "얘들아, 던전 고기 파티다!",
+        "storyboard": {
+            "staff": [
+                "아미야 마사카즈"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "니시무라 레이",
+                "소라키 유리나"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "짐은 붕장어도 좋지만 장어도 좋다!",
+        "storyboard": {
+            "staff": [
+                "니고리카와 아츠시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "니고리카와 아츠시"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "お腰につけたムーチ団子～、一つ残らずくださいな～♪",
+        "storyboard": {
+            "staff": [
+                "마에사와 히로키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "마사모토 토시키"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "煮込み＆イクラ『私とあの子、どっちを選ぶの!?』 米『両方とも大好きだ！』",
+        "storyboard": {
+            "staff": [
+                "마에사와 히로키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "칸자키 유지"
+            ]
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "サクッと解決、カラッと和解! 天ぷらだけにね!",
+        "storyboard": {
+            "staff": [
+                "키요시마 유코"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이이무라 마사유키"
+            ]
+        }
+    }
+],
+"62031": [
+    {
+        "episode no": "제1화",
+        "episode title": "불꽃의 피구여왕! 이치게키 단코!",
+        "storyboard": {
+            "staff": [
+                "히로시 이케하타"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "시바 칸타"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "당당하게 등장! 숙명의 라이벌!",
+        "storyboard": {
+            "staff": [
+                "히로시 이케하타"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야구치 마도카"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "격돌! 예측 불가한 시합의 시작!",
+        "storyboard": {
+            "staff": [
+                "이나가키 타카유키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "소네 토시유키"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "빗속의 결전! 단코, 각성!",
+        "storyboard": {
+            "staff": [
+                "호리오 히로시",
+                "히로시 이케하타"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "호리오 히로시",
+                "히로시 이케하타"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "인연의 매듭! 나아가라, 타마가와 피구부!",
+        "storyboard": {
+            "staff": [
+                "아미야 마사카즈"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "니시무라 레이",
+                "소라키 유리나"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "새로운 강적 등장?! 합동 훈련!",
+        "storyboard": {
+            "staff": [
+                "시무라 히로아키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "시바 칸타"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "개막! 비공식 슈퍼 피구 대회!",
+        "storyboard": {
+            "staff": [
+                "히로시 이케하타"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "키무라 케이지"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "超常対決! 巨人 vs 巨人!",
+        "storyboard": {
+            "staff": [
+                "니시자와 스스무"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야구치 마도카"
+            ]
+        }
+    }
+],
+"56735": [
+    {
+        "episode no": "제1화",
+        "episode title": "시작의 여름날",
+        "storyboard": {
+            "staff": [
+                "죠 덴호"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "아이바 유우"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "연애 얘기는 서툴러",
+        "storyboard": {
+            "staff": [
+                "고다 케이스케"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "고다 케이스케"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "히메코의 프로듀스",
+        "storyboard": {
+            "staff": [
+                "타케자와 키요타카"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "-"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "작은 손바닥, 커다란 등",
+        "storyboard": {
+            "staff": [
+                "니시타 마사요시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "藤乃宮真浪"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "통제하라, 소녀여",
+        "storyboard": {
+            "staff": [
+                "와타나베 신이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "아이바 유우"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "위장은 어쩌고?",
+        "storyboard": {
+            "staff": [
+                "니시타 마사요시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "시바 칸타"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "特別、だから",
+        "storyboard": {
+            "staff": [
+                "후타무라 히데키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "시미즈 쇼고"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "心の、居場所",
+        "storyboard": {
+            "staff": [
+                "고다 케이스케"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "고다 케이스케"
+            ]
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "本当の、特別",
+        "storyboard": {
+            "staff": [
+                "와타나베 신이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "아이바 유우"
+            ]
+        }
+    }
+],
+"62542": [
+    {
+        "episode no": "제1화",
+        "episode title": "미처 하지 못한 일",
+        "storyboard": {
+            "staff": [
+                "사토 후미카즈"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "나카노 케이타",
+                "후카자와 타쿠미"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "귀성",
+        "storyboard": {
+            "staff": [
+                "니시지마 카츠히코"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "아사미 타카시"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "여권 탈환 작전",
+        "storyboard": {
+            "staff": [
+                "로마노프 히가"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "나카노 케이타"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "팔라우의 바다",
+        "storyboard": {
+            "staff": [
+                "하치고우미"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "마에조노 후미오"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "TV取材",
+        "storyboard": {
+            "staff": [
+                "와타나베 신이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "나카하라 하루미치"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "アシスト",
+        "storyboard": {
+            "staff": [
+                "로마노프 히가"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "아사미 타카시"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "お母さん",
+        "storyboard": {
+            "staff": [
+                "이나가키 타카유키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "나카노 케이타",
+                "코이데 마사미"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "合コン round2",
+        "storyboard": {
+            "staff": [
+                "요시모토 고타"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "나카하라 하루미치"
+            ]
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "受難",
+        "storyboard": {
+            "staff": [
+                "와타나베 신이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "아사미 타카시"
+            ]
+        }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "宝くじ",
+        "storyboard": {
+            "staff": [
+                "타카모토 요시히로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카도타 히데히코"
+            ]
+        }
+    }
+],
+"46488": [
+    {
+        "episode no": "제1화",
+        "episode title": "격겜은 이제 그만둘래",
+        "storyboard": {
+            "staff": [
+                "이바타 쇼타"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이바타 쇼타"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "대전 감사합니다",
+        "storyboard": {
+            "staff": [
+                "이바타 쇼타"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이바타 쇼타",
+                "코쵸란 아게하"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "심야의 대전 모임",
+        "storyboard": {
+            "staff": [
+                "이바타 쇼타"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "코쵸란 아게하"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "심야의 공부 모임",
+        "storyboard": {
+            "staff": [
+                "타마키 신고"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "타마키 신고"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "숭고한 결투",
+        "storyboard": {
+            "staff": [
+                "쿠사카와 케이조"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "쿠사카와 케이조"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "연대",
+        "storyboard": {
+            "staff": [
+                "이바타 쇼타"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이바타 쇼타"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "작은 악마",
+        "storyboard": {
+            "staff": [
+                "타마키 신고"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "타마키 신고"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "틀림없이 질 거야",
+        "storyboard": {
+            "staff": [
+                "쿠사카와 케이조"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "쿠사카와 케이조",
+                "타마키 신고"
+            ]
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "遊びのプレイ",
+        "storyboard": {
+            "staff": [
+                "이바타 쇼타"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이바타 쇼타",
+                "타마키 신고"
+            ]
+        }
+    }
+],
+"61126": [
+    {
+        "episode no": "제1화",
+        "episode title": "키스",
+        "storyboard": {
+            "staff": [
+                "카쿠치 타쿠다이"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "혼마 미나미"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "나도 아파",
+        "storyboard": {
+            "staff": [
+                "토모다 야스시",
+                "카쿠치 타쿠다이",
+                "에노모토 나오"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "토모다 야스시"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "친구",
+        "storyboard": {
+            "staff": [
+                "에노모토 나오"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "에노모토 나오"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "공범",
+        "storyboard": {
+            "staff": [
+                "토모다 야스시",
+                "에노모토 나오"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "아이바 유우"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "끝나지 않는 밤",
+        "storyboard": {
+            "staff": [
+                "코마다 유키",
+                "에노모토 나오"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "타카하시 슌스케"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "어서 와",
+        "storyboard": {
+            "staff": [
+                "혼마 미나미"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "혼마 미나미"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "이제 무섭지 않아",
+        "storyboard": {
+            "staff": [
+                "에노모토 나오"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "에노모토 나오"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "다녀왔어",
+        "storyboard": {
+            "staff": [
+                "토모다 야스시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "토모다 야스시"
+            ]
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "わたしの魔法",
+        "storyboard": {
+            "staff": [
+                "야마모토 쿄헤이"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야마모토 쿄헤이"
+            ]
+        }
+    }
+],
+"58929": [
+    {
+        "episode no": "제1화",
+        "episode title": "PROLOGUE + SUPER SPARTAN i",
+        "storyboard": {
+            "staff": [
+                "모코짱"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "모코짱"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "SUPER SPARTAN ii + JUNK JUNGLE i",
+        "storyboard": {
+            "staff": [
+                "하스타니 토오루",
+                "모코짱"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "하스타니 토오루"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "JUNK JUNGLE ii + MEGATECH MACHINE i + ii",
+        "storyboard": {
+            "staff": [
+                "Bahi JD",
+                "간하오티엔",
+                "사카이하라 미키",
+                "모코짱"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "Bahi JD",
+                "이와케 준야"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "ROBOT RONDO",
+        "storyboard": {
+            "staff": [
+                "키쿠치 요코",
+                "모코짱"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "키쿠치 요코",
+                "하스타니 토오루"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "PHANTOM FUND",
+        "storyboard": {
+            "staff": [
+                "간하오티엔"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "간하오티엔"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "DUMB BARTER",
+        "storyboard": {
+            "staff": [
+                "타나카 히로노리"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "타나카 히로노리"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "BYE BYE CLAY",
+        "storyboard": {
+            "staff": [
+                "요코야마 아키토시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "요코야마 아키토시"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "INTERMISSION + BRAIN DRAIN i",
+        "storyboard": {
+            "staff": [
+                "야마다 카요나카"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야마다 카요나카"
+            ]
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "BRAIN DRAIN ii",
+        "storyboard": {
+            "staff": [
+                "허종",
+                "모코짱"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "스즈키 타카토시"
+            ]
+        }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "BRAIN DRAIN ⅲ + GHOST COAST + EPILOGUE",
+        "storyboard": {
+            "staff": []
+        },
+        "episode director": {
+            "staff": []
+        }
+    }
+],
+"63047": [
+    {
+        "episode no": "제1화",
+        "episode title": "프롤로그",
+        "storyboard": {
+            "staff": [
+                "후지타 요이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "후지타 요이치"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "아머",
+        "storyboard": {
+            "staff": [
+                "후지타 요이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이노우에 다이스케"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "링크",
+        "storyboard": {
+            "staff": [
+                "스즈키 모에"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "스즈키 모에"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "컴뱃",
+        "storyboard": {
+            "staff": [
+                "하카타 마사토시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "하라다 나나",
+                "에지마 야스오"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "새드네스",
+        "storyboard": {
+            "staff": [
+                "후지타 요이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "하카타 마사토시"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "리스타트",
+        "storyboard": {
+            "staff": [
+                "임가희"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "임가희"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "메모리",
+        "storyboard": {
+            "staff": [
+                "오오쿠라 마사히코",
+                "에가미 키요시",
+                "후지타 요이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "에가미 키요시"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "어게인",
+        "storyboard": {
+            "staff": [
+                "스즈키 모에"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "후지모토 코스케"
+            ]
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "아웃브레이크",
+        "storyboard": {
+            "staff": [
+                "하카타 마사토시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "요시자와 슌이치"
+            ]
+        }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "새크리파이스",
+        "storyboard": {
+            "staff": [
+                "임가희"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "스즈키 히요리",
+                "임가희"
+            ]
+        }
+    },
+    {
+        "episode no": "제11화",
+        "episode title": "리턴",
+        "storyboard": {
+            "staff": [
+                "사쿠라이 치카라",
+                "테라오카 이와오"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "에가미 키요시"
+            ]
+        }
+    },
+    {
+        "episode no": "제12화",
+        "episode title": "에필로그",
+        "storyboard": {
+            "staff": [
+                "오오쿠라 마사히코",
+                "사쿠라이 치카라",
+                "후지타 요이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "하라다 나나"
+            ]
+        }
+    },
+    {
+        "episode no": "제13화",
+        "episode title": "신장",
+        "storyboard": {
+            "staff": [
+                "하카타 마사토시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "하카타 마사토시"
+            ]
+        }
+    },
+    {
+        "episode no": "제14화",
+        "episode title": "기적",
+        "storyboard": {
+            "staff": [
+                "아사미야 키아",
+                "후지타 요이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "시라이시 미치타"
+            ]
+        }
+    },
+    {
+        "episode no": "제15화",
+        "episode title": "협연",
+        "storyboard": {
+            "staff": [
+                "후쿠다 유야"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카세 아츠코"
+            ]
+        }
+    },
+    {
+        "episode no": "제16화",
+        "episode title": "공방",
+        "storyboard": {
+            "staff": [
+                "요시자와 슌이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "요시자와 슌이치"
+            ]
+        }
+    },
+    {
+        "episode no": "제17화",
+        "episode title": "섬광",
+        "storyboard": {
+            "staff": [
+                "카와이 사쿠라"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "토바 아키라"
+            ]
+        }
+    },
+    {
+        "episode no": "제18화",
+        "episode title": "재기",
+        "storyboard": {
+            "staff": [
+                "사쿠라이 치카라",
+                "하바라 노부요시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "스즈키 모에"
+            ]
+        }
+    },
+    {
+        "episode no": "제19화",
+        "episode title": "빙해",
+        "storyboard": {
+            "staff": [
+                "하카타 마사토시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "도몬 켄이치"
+            ]
+        }
+    },
+    {
+        "episode no": "제20화",
+        "episode title": "사명",
+        "storyboard": {
+            "staff": [
+                "마스다 토시히코",
+                "후지타 요이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "에가미 키요시"
+            ]
+        }
+    },
+    {
+        "episode no": "제21화",
+        "episode title": "ケイコク",
+        "storyboard": {
+            "staff": [
+                "요시자와 슌이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "요시자와 슌이치"
+            ]
+        }
+    }
+],
+"62476": [
+    {
+        "episode no": "제1화",
+        "episode title": "누구에게도 얽매이지 않고 자유롭게",
+        "storyboard": {
+            "staff": [
+                "키무라 노부카게"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "무라타 나오키",
+                "키무라 노부카게"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "불쌍하지 않아",
+        "storyboard": {
+            "staff": [
+                "후나쿠보 리지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "요시다 슌지"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "기댈 수 있는 존재가 되지 못했다",
+        "storyboard": {
+            "staff": [
+                "카무라 유이"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카무라 유이"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "절 잡아가실 건가요?",
+        "storyboard": {
+            "staff": [
+                "야마우치 시게야스"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야마우치 시게야스"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "언젠가 내게 벌이 내리는 걸",
+        "storyboard": {
+            "staff": [
+                "야마사키 오사무"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "와타나베 마사히코"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "리스타트",
+        "storyboard": {
+            "staff": [
+                "마츠조노 히로시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "孫睿婕",
+                "則恩"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "멋진 추억이 생긴 건",
+        "storyboard": {
+            "staff": [
+                "오오하타 키요타카"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "무라타 나오키"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "정말로 고맙다고 생각하거든",
+        "storyboard": {
+            "staff": [
+                "후쿠시마 히로유키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "와타나베 마사히코"
+            ]
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "앞으로 무슨 일이 있더라도",
+        "storyboard": {
+            "staff": [
+                "야마우치 시게야스"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이기섭",
+                "키무라 노부카게"
+            ]
+        }
+    }
+],
+"63489": [
+    {
+        "episode no": "Episode01",
+        "episode title": "이별과 만남의 키스",
+        "storyboard": {
+            "staff": [
+                "코바야시 코스케"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "코바야시 코스케"
+            ]
+        }
+    },
+    {
+        "episode no": "Episode02",
+        "episode title": "검은 물",
+        "storyboard": {
+            "staff": [
+                "코바야시 코스케"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이토 히로시"
+            ]
+        }
+    },
+    {
+        "episode no": "Episode03",
+        "episode title": "돌아가지 않아, 돌아가지 못해",
+        "storyboard": {
+            "staff": [
+                "시무라 히로아키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "우에하라 히데아키"
+            ]
+        }
+    },
+    {
+        "episode no": "Episode04",
+        "episode title": "이슈타르의 화신",
+        "storyboard": {
+            "staff": [
+                "미나미 야스히로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "미나미 야스히로"
+            ]
+        }
+    },
+    {
+        "episode no": "Episode05",
+        "episode title": "싸우기 위해 검을 들다",
+        "storyboard": {
+            "staff": [
+                "와타나베 켄이치로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "와타나베 켄이치로"
+            ]
+        }
+    },
+    {
+        "episode no": "Episode06",
+        "episode title": "사랑해서는 안 될 사람",
+        "storyboard": {
+            "staff": [
+                "마츠조노 히로시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이토 히로시",
+                "코마츠 타츠히코"
+            ]
+        }
+    },
+    {
+        "episode no": "Episode07",
+        "episode title": "차가운 입술",
+        "storyboard": {
+            "staff": [
+                "사토 유조"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "사토 유조"
+            ]
+        }
+    },
+    {
+        "episode no": "Episode08",
+        "episode title": "사과나무 아래에서",
+        "storyboard": {
+            "staff": [
+                "우에하라 히데아키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "우에하라 히데아키"
+            ]
+        }
+    },
+    {
+        "episode no": "Episode09",
+        "episode title": "손바닥의 증표",
+        "storyboard": {
+            "staff": [
+                "요네다 미츠히로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "요네다 미츠히로"
+            ]
+        }
+    }
+],
+"62513": [
+    {
+        "episode no": "제1막",
+        "episode title": "신학교 솔세인",
+        "storyboard": {
+            "staff": [
+                "사이토 노리아키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "츠카다 타쿠로"
+            ]
+        }
+    },
+    {
+        "episode no": "제2막",
+        "episode title": "또 다른 세계",
+        "storyboard": {
+            "staff": [
+                "소쿠자 마코토"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "소쿠자 마코토"
+            ]
+        }
+    },
+    {
+        "episode no": "제3막",
+        "episode title": "용사 전설과 시작의 마을",
+        "storyboard": {
+            "staff": [
+                "사이토 노리아키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "히라타 마사무네"
+            ]
+        }
+    },
+    {
+        "episode no": "제4막",
+        "episode title": "검은 탑",
+        "storyboard": {
+            "staff": [
+                "사이토 노리아키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "시바타 쿄노스케"
+            ]
+        }
+    },
+    {
+        "episode no": "제5막",
+        "episode title": "자신과의 싸움",
+        "storyboard": {
+            "staff": [
+                "사이토 노리아키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "오노 료타"
+            ]
+        }
+    },
+    {
+        "episode no": "제6막",
+        "episode title": "속삭이는 목소리",
+        "storyboard": {
+            "staff": [
+                "오카무라 텐사이"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "소쿠자 마코토"
+            ]
+        }
+    },
+    {
+        "episode no": "제7막",
+        "episode title": "표면의 세계와 이면의 세계",
+        "storyboard": {
+            "staff": [
+                "아사이 요시유키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "미야자키 슈지"
+            ]
+        }
+    },
+    {
+        "episode no": "제8막",
+        "episode title": "친구의 기억",
+        "storyboard": {
+            "staff": [
+                "타케우치 마사토",
+                "요코야 켄타"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "타케우치 마사토",
+                "요코야 켄타"
+            ]
+        }
+    },
+    {
+        "episode no": "제9막",
+        "episode title": "鏡の迷宮",
+        "storyboard": {
+            "staff": []
+        },
+        "episode director": {
+            "staff": []
+        }
+    }
+],
+"49233": [
+    {
+        "episode no": "제1화",
+        "episode title": "샐러맨더 전투단",
+        "storyboard": {
+            "staff": [
+                "야마모토 타카유키",
+                "쿠리타 신이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야마모토 타카유키"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "또 다른 세계",
+        "storyboard": {
+            "staff": [
+                "오가타 미츠히로",
+                "슈 히로마츠"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "오가타 미츠히로"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "선의의 중개인",
+        "storyboard": {
+            "staff": [
+                "마츠바라 사토시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "마츠바라 사토시"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "철퇴 작전",
+        "storyboard": {
+            "staff": [
+                "사이토 카이"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "타카츠도 토모아키"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "불운",
+        "storyboard": {
+            "staff": [
+                "야마모토 타카유키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "미우라 케이"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "미끼",
+        "storyboard": {
+            "staff": [
+                "쿠보 유스케"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "코가 카즈오미"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "연옥",
+        "storyboard": {
+            "staff": [
+                "우메모토 슌페이"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "우메모토 슌페이"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "뇌격",
+        "storyboard": {
+            "staff": [
+                "미야자키 나기사"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야구치 마도카"
+            ]
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "관광 여행",
+        "storyboard": {
+            "staff": []
+        },
+        "episode director": {
+            "staff": []
+        }
+    }
+],
+"61686": [
+    {
+        "episode no": "제1화",
+        "episode title": "메이드가 되고 싶었던 소녀",
+        "storyboard": {
+            "staff": [
+                "이시히라 신지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "무라카와 나오야"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "지금 이곳에서 메이드의 무쌍이 시작됩니다",
+        "storyboard": {
+            "staff": [
+                "무라카와 나오야"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "무라카와 나오야"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "두 소녀는 왕성으로 간다",
+        "storyboard": {
+            "staff": [
+                "이시히라 신지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "시미즈 아키라"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "월하의 진실",
+        "storyboard": {
+            "staff": [
+                "무라카와 나오야"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "키요다 켄"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "진지한 전개는 갑작스럽게",
+        "storyboard": {
+            "staff": [
+                "이시히라 신지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "코사카 하루메"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "루토르버그가의 올 워크스 메이드",
+        "storyboard": {
+            "staff": [
+                "이시히라 신지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "키요다 켄"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "안네마리의 두근두근 휴일 데이트",
+        "storyboard": {
+            "staff": [
+                "이시히라 신지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "우메모토 슌페이"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "왕립 학원에서의 새로운 만남",
+        "storyboard": {
+            "staff": [
+                "미야자키 나기사"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "박종원"
+            ]
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "재회한 기사와 흔들리는 메이드 혼",
+        "storyboard": {
+            "staff": [
+                "이시히라 신지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "타카야마 히데키"
+            ]
+        }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "질투의 마녀 사건",
+        "storyboard": {
+            "staff": [
+                "이시히라 신지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "키요다 켄"
+            ]
+        }
+    },
+    {
+        "episode no": "제11화",
+        "episode title": "그녀들의 선택지",
+        "storyboard": {
+            "staff": []
+        },
+        "episode director": {
+            "staff": []
+        }
+    }
+],
+"61316": [
+    {
+        "episode no": "제78화",
+        "episode title": "앞으로의 이야기",
+        "storyboard": {
+            "staff": [
+                "이타다키 신지",
+                "시노하라 마사히로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "나카츠 타마키"
+            ]
+        }
+    },
+    {
+        "episode no": "제79화",
+        "episode title": "일어나요",
+        "storyboard": {
+            "staff": [
+                "시노하라 마사히로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "마사키 히나코"
+            ]
+        }
+    },
+    {
+        "episode no": "제80화",
+        "episode title": "다섯 개의 장애",
+        "storyboard": {
+            "staff": [
+                "이타다키 신지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카와베 신야"
+            ]
+        }
+    },
+    {
+        "episode no": "제81화",
+        "episode title": "一途な星",
+        "storyboard": {
+            "staff": [
+                "하라 히데카즈",
+                "코지마 마사유키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "하라 히데카즈"
+            ]
+        }
+    }
+],
+"62102": [
+    {
+        "episode no": "제1화",
+        "episode title": "구박하지 않는 계모와 언니들",
+        "storyboard": {
+            "staff": [
+                "이노우에 케이스케"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이노우에 케이스케"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "코노쿠라의 경호원",
+        "storyboard": {
+            "staff": [
+                "이와하타 고이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이노우에 케이스케"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "명문가의 딸들",
+        "storyboard": {
+            "staff": [
+                "이와하타 고이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "고다 케이스케"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "미야의 보은",
+        "storyboard": {
+            "staff": [
+                "호소다 마사히로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "호소다 마사히로"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "첫 친구",
+        "storyboard": {
+            "staff": [
+                "이와하타 고이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "니시모토 코사키"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "이나리가의 영애",
+        "storyboard": {
+            "staff": [
+                "미나토 미라이"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "고다 케이스케"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "코노쿠라의 보물",
+        "storyboard": {
+            "staff": [
+                "Noumin6"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "요시무라 아사히",
+                "오타니 마사히토"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "강아지 언니",
+        "storyboard": {
+            "staff": [
+                "호소다 마사히로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "호소다 마사히로"
+            ]
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "規律と伝統の生徒会",
+        "storyboard": {
+            "staff": [
+                "무라카와 나오야"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "시미즈 아키라"
+            ]
+        }
+    }
+],
+"54000": [
+    {
+        "episode no": "제1화",
+        "episode title": "사랑이 세상을 구하는 법이지",
+        "storyboard": {
+            "staff": [
+                "吳瑜玹"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "吳瑜玹"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "멸망의 미학이 취향이신지요?",
+        "storyboard": {
+            "staff": [
+                "마스다 토시히코"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "안도 타카시"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "야, 망할 꼬맹이",
+        "storyboard": {
+            "staff": [
+                "하치고우미"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "후쿠모토 신이치"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "또 손바닥 뒤집냐",
+        "storyboard": {
+            "staff": [
+                "사이토 히사시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "쿠보 유리"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "겉치레를 좋아해서요",
+        "storyboard": {
+            "staff": [
+                "마스다 토시히코",
+                "미우라 카즈야"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카와이 코헤이"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "싫다면 전 도망칠 따름입니다",
+        "storyboard": {
+            "staff": [
+                "사이토 히사시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "사사키 스미토"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "그 더러운 입 다물어, 쓰레기야",
+        "storyboard": {
+            "staff": [
+                "이시야마 타카아키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이토 후미오"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "사랑을 수치로 재다니 이상해!",
+        "storyboard": {
+            "staff": [
+                "쿠마노 치히로",
+                "미우라 카즈야"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "후쿠모토 신이치"
+            ]
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "리비아",
+        "storyboard": {
+            "staff": []
+        },
+        "episode director": {
+            "staff": []
+        }
+    }
+],
+"61897": [
+    {
+        "episode no": "제1화",
+        "episode title": "片田舎のおっさん、新たな職場に行く",
+        "storyboard": {
+            "staff": [
+                "이타다키 신지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카와시마 마사루",
+                "에지리 타카히데"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "片田舎のおっさん、成長を見守る",
+        "storyboard": {
+            "staff": [
+                "나카야마 마사에",
+                "카즈미 아키오"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "타카다 유타"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "片田舎のおっさん、老輩に己を重ねる",
+        "storyboard": {
+            "staff": [
+                "이타다키 신지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "모리토모 히로키"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "片田舎のおっさん、帰省する",
+        "storyboard": {
+            "staff": [
+                "Royden B"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "아유무 마사히로"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "片田舎のおっさん、雄叫びをあげる",
+        "storyboard": {
+            "staff": [
+                "스기시마 쿠니히사"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카와시마 마사루",
+                "도바시 유키오"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "片田舎のおっさん、父と対峙する",
+        "storyboard": {
+            "staff": [
+                "사이토 히사시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "사사키 스미토"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "片田舎のおっさん、貴族に招かれる",
+        "storyboard": {
+            "staff": [
+                "나카야마 마사에",
+                "카즈미 아키오"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "모리토모 히로키"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "片田舎のおっさん、求婚される",
+        "storyboard": {
+            "staff": [
+                "이타다키 신지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "호마 히로"
+            ]
+        }
+    }
+],
+"63508": [
+    {
+        "episode no": "제1화",
+        "episode title": "프롤로그",
+        "storyboard": {
+            "staff": [
+                "이시이 히사시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이시이 히사시"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "무적성의 천재",
+        "storyboard": {
+            "staff": [
+                "이시이 히사시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카미야 마키"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "외도",
+        "storyboard": {
+            "staff": [
+                "이시이 히사시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "히라야마 타카나리"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "여행길에 오르다",
+        "storyboard": {
+            "staff": [
+                "니시하타 유키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "니시하타 유키"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "재회",
+        "storyboard": {
+            "staff": [
+                "카토 모에"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "오타니 마사히토"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "에프탈",
+        "storyboard": {
+            "staff": [
+                "이시이 히사시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "오오쿠보 료"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "소녀의 마음",
+        "storyboard": {
+            "staff": [
+                "모리 타케시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "박종원"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "숙명",
+        "storyboard": {
+            "staff": [
+                "이시이 히사시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "타카하시 코헤이"
+            ]
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "",
+        "storyboard": {
+            "staff": [
+                "모리 타케시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "코바야시 이치조"
+            ]
+        }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "",
+        "storyboard": {
+            "staff": [
+                "오오쿠보 료"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "오오쿠보 료"
+            ]
+        }
+    }
+],
+"62322": [
+    {
+        "episode no": "Lv1",
+        "episode title": "세계의 시스템",
+        "storyboard": {
+            "staff": [
+                "카사이 요시노부"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카사이 요시노부"
+            ]
+        }
+    },
+    {
+        "episode no": "Lv2",
+        "episode title": "최고로 바보라서",
+        "storyboard": {
+            "staff": [
+                "오오하라 미노루"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "오오쿠보 마사시",
+                "카사이 요시노부"
+            ]
+        }
+    },
+    {
+        "episode no": "Lv3",
+        "episode title": "마족과 인간의 공존",
+        "storyboard": {
+            "staff": [
+                "오오조라 마사키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이시다 세이야"
+            ]
+        }
+    },
+    {
+        "episode no": "Lv4",
+        "episode title": "묻고 싶은 것이 있다",
+        "storyboard": {
+            "staff": [
+                "오오하라 미노루"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카사이 요시노부"
+            ]
+        }
+    },
+    {
+        "episode no": "Lv5",
+        "episode title": "주어진 역할",
+        "storyboard": {
+            "staff": [
+                "아사히 나호코"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "히시카와 나오키"
+            ]
+        }
+    },
+    {
+        "episode no": "Lv6",
+        "episode title": "공주님의 생각",
+        "storyboard": {
+            "staff": [
+                "이시다 세이야"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이시다 세이야"
+            ]
+        }
+    },
+    {
+        "episode no": "Lv7",
+        "episode title": "만남은 사람을 바꾼다",
+        "storyboard": {
+            "staff": [
+                "오오조라 마사키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "아라이 마사키"
+            ]
+        }
+    },
+    {
+        "episode no": "Lv8",
+        "episode title": "여태껏 없었던 희망",
+        "storyboard": {
+            "staff": [
+                "타카시마 토모야",
+                "쿠마 후쿠로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "코바리 쇼시"
+            ]
+        }
+    },
+    {
+        "episode no": "Lv9",
+        "episode title": "여태껏 없었던 희망",
+        "storyboard": {
+            "staff": [
+                "오오하라 미노루"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이시다 세이야"
+            ]
+        }
+    },
+    {
+        "episode no": "Lv10",
+        "episode title": "이제부터 부수겠어",
+        "storyboard": {
+            "staff": [
+                "오오하라 미노루"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카사이 요시노부"
+            ]
+        }
+    },
+    {
+        "episode no": "Lv11",
+        "episode title": "王は絶対",
+        "storyboard": {
+            "staff": [
+                "오오조라 마사키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "코바리 쇼시"
+            ]
+        }
+    }
+],
+"63780": [
+    {
+        "episode no": "ep.1",
+        "episode title": "분명 이상해",
+        "storyboard": {
+            "staff": [
+                "코바야시 이치조"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "홍 페니"
+            ]
+        }
+    },
+    {
+        "episode no": "ep.2",
+        "episode title": "강하게 만들어 주세요!",
+        "storyboard": {
+            "staff": [
+                "陳暁燦"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "陳暁燦"
+            ]
+        }
+    },
+    {
+        "episode no": "ep.3",
+        "episode title": "어떻게 알았어!?",
+        "storyboard": {
+            "staff": [
+                "미카미 유타"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "미카미 유타"
+            ]
+        }
+    },
+    {
+        "episode no": "ep.4",
+        "episode title": "기다려줄게",
+        "storyboard": {
+            "staff": [
+                "타카하시 테츠야"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "사토 유이치"
+            ]
+        }
+    },
+    {
+        "episode no": "ep.5",
+        "episode title": "의식하게 돼",
+        "storyboard": {
+            "staff": [
+                "타카하시 테츠야"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "나카무라 킨야"
+            ]
+        }
+    },
+    {
+        "episode no": "ep.6",
+        "episode title": "괜찮은 거지?",
+        "storyboard": {
+            "staff": [
+                "코바야시 이치조"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이시구리 카즈야"
+            ]
+        }
+    },
+    {
+        "episode no": "ep.7",
+        "episode title": "계속 곁에 있고 싶으니까",
+        "storyboard": {
+            "staff": [
+                "코바야시 이치조"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "타나카 유야"
+            ]
+        }
+    },
+    {
+        "episode no": "ep.8",
+        "episode title": "선생님의 남자 친구?",
+        "storyboard": {
+            "staff": [
+                "하라 히로시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "클레르 발브 데 크리에르"
+            ]
+        }
+    },
+    {
+        "episode no": "ep.9",
+        "episode title": "보면 안 돼!!",
+        "storyboard": {
+            "staff": [
+                "오오하타 키요타카"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "우에다 시게루"
+            ]
+        }
+    },
+    {
+        "episode no": "ep.10",
+        "episode title": "네가 했어?",
+        "storyboard": {
+            "staff": [
+                "타케무라 나츠키",
+                "와카바야시 노조미"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "타케무라 나츠키",
+                "타나카 유야"
+            ]
+        }
+    },
+    {
+        "episode no": "ep.11",
+        "episode title": "원하는 게 뭐야?",
+        "storyboard": {
+            "staff": [
+                "마에사와 히로키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "홍 페니"
+            ]
+        }
+    }
+],
+"63418": [
+    {
+        "episode no": "EPISODE 1",
+        "episode title": "스몰 3",
+        "storyboard": {
+            "staff": []
+        },
+        "episode director": {
+            "staff": []
+        }
+    },
+    {
+        "episode no": "EPISODE 2",
+        "episode title": "멀티버스",
+        "storyboard": {
+            "staff": []
+        },
+        "episode director": {
+            "staff": []
+        }
+    },
+    {
+        "episode no": "EPISODE 3",
+        "episode title": "외계인",
+        "storyboard": {
+            "staff": []
+        },
+        "episode director": {
+            "staff": []
+        }
+    },
+    {
+        "episode no": "EPISODE 4",
+        "episode title": "미스터 세가미",
+        "storyboard": {
+            "staff": []
+        },
+        "episode director": {
+            "staff": []
+        }
+    },
+    {
+        "episode no": "EPISODE 5",
+        "episode title": "리벨리온",
+        "storyboard": {
+            "staff": []
+        },
+        "episode director": {
+            "staff": []
+        }
+    },
+    {
+        "episode no": "EPISODE 6",
+        "episode title": "덤벼라!",
+        "storyboard": {
+            "staff": []
+        },
+        "episode director": {
+            "staff": []
+        }
+    },
+    {
+        "episode no": "EPISODE 7",
+        "episode title": "반격",
+        "storyboard": {
+            "staff": []
+        },
+        "episode director": {
+            "staff": []
+        }
+    },
+    {
+        "episode no": "EPISODE 8",
+        "episode title": "이방인들",
+        "storyboard": {
+            "staff": []
+        },
+        "episode director": {
+            "staff": []
+        }
+    },
+    {
+        "episode no": "EPISODE 9",
+        "episode title": "THE STRONG MEN",
+        "storyboard": {
+            "staff": []
+        },
+        "episode director": {
+            "staff": []
+        }
+    }
+],
+"63316": [
+    {
+        "episode no": "제1화",
+        "episode title": "마지막에서 다시",
+        "storyboard": {
+            "staff": [
+                "우승욱",
+                "KIM C.H"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "서성종",
+                "이갑민",
+                "조훈"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "유물의 주인이 되려는 자",
+        "storyboard": {
+            "staff": [
+                "이현정"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "방승진",
+                "이현정",
+                "박홍근"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "지배가 적성에 맞는 자",
+        "storyboard": {
+            "staff": [
+                "우승욱",
+                "조준영"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "서성종",
+                "이갑민",
+                "강일구"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "미래를 훔친 자",
+        "storyboard": {
+            "staff": [
+                "이현정"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "방승진",
+                "박홍근"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "불로초의 주인",
+        "storyboard": {
+            "staff": [
+                "우승욱",
+                "KIM C.H",
+                "조준영"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "서성종",
+                "이갑민"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "대고분화",
+        "storyboard": {
+            "staff": [
+                "우승욱",
+                "KIM C.H",
+                "조영대"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "방승진",
+                "박홍근",
+                "이갑민",
+                "조훈"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "유물 복원",
+        "storyboard": {
+            "staff": [
+                "우승욱",
+                "조준영"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "서성종",
+                "이갑민",
+                "강일구"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "까마귀의 비밀",
+        "storyboard": {
+            "staff": []
+        },
+        "episode director": {
+            "staff": []
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "유물을 다스리는 자",
+        "storyboard": {
+            "staff": []
+        },
+        "episode director": {
+            "staff": []
+        }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "",
+        "storyboard": {
+            "staff": []
+        },
+        "episode director": {
+            "staff": []
+        }
+    }
+],
+"63082": [
+    {
+        "episode no": "제1괴",
+        "episode title": "불길한 땅의 야마타기마다라",
+        "storyboard": {
+            "staff": [
+                "스즈키 마사토"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "스즈키 마사토"
+            ]
+        }
+    },
+    {
+        "episode no": "제2괴",
+        "episode title": "첫 학교 방문",
+        "storyboard": {
+            "staff": [
+                "스즈키 마사토"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "스나가 마오"
+            ]
+        }
+    },
+    {
+        "episode no": "제3괴",
+        "episode title": "금지 구역의 규율",
+        "storyboard": {
+            "staff": [
+                "보브 시라하타"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "와타나베 마사히코"
+            ]
+        }
+    },
+    {
+        "episode no": "제4괴",
+        "episode title": "부활한 야미타기마다라",
+        "storyboard": {
+            "staff": [
+                "후지와라 료지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카토 아키라"
+            ]
+        }
+    },
+    {
+        "episode no": "제5괴",
+        "episode title": "산지기의 계보",
+        "storyboard": {
+            "staff": [
+                "시미즈 사토시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "시라이시 미치타"
+            ]
+        }
+    },
+    {
+        "episode no": "제6괴",
+        "episode title": "환영의 수신님",
+        "storyboard": {
+            "staff": [
+                "보브 시라하타"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "ㅍ"
+            ]
+        }
+    },
+    {
+        "episode no": "제7괴",
+        "episode title": "옛이야기 그림 연극",
+        "storyboard": {
+            "staff": [
+                "스나가 마오"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "스나가 마오"
+            ]
+        }
+    },
+    {
+        "episode no": "제8괴",
+        "episode title": "분투하는 오로치",
+        "storyboard": {
+            "staff": [
+                "후지와라 료지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카토 아키라"
+            ]
+        }
+    },
+    {
+        "episode no": "제9괴",
+        "episode title": "학교 7대 불가사의",
+        "storyboard": {
+            "staff": [
+                "보브 시라하타"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "와타나베 마사히코"
+            ]
+        }
+    },
+    {
+        "episode no": "제10괴",
+        "episode title": "단둘만의 축제",
+        "storyboard": {
+            "staff": []
+        },
+        "episode director": {
+            "staff": []
+        }
+    }
+],
+"63347": [
+    {
+        "episode no": "1번",
+        "episode title": "사람은 왜 춤을 출까",
+        "storyboard": {
+            "staff": [
+                "쿠로야나기 토시마사",
+                "rui"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "호소마 나루"
+            ]
+        }
+    },
+    {
+        "episode no": "2번",
+        "episode title": "너에겐 몸이 있잖아",
+        "storyboard": {
+            "staff": [
+                "쿠로야나기 토시마사",
+                "와타베 타카히로",
+                "rui"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "후치모토 슈헤이",
+                "rui"
+            ]
+        }
+    },
+    {
+        "episode no": "3번",
+        "episode title": "너에겐 너만의 장점이 있다",
+        "storyboard": {
+            "staff": [
+                "나가야 세이시로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "키타무라 미츠키"
+            ]
+        }
+    },
+    {
+        "episode no": "4번",
+        "episode title": "운명의 크기는 저마다 다를지라도",
+        "storyboard": {
+            "staff": [
+                "쿠로야나기 토시마사"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "호소마 나루"
+            ]
+        }
+    },
+    {
+        "episode no": "5번",
+        "episode title": "싹트는 고동",
+        "storyboard": {
+            "staff": [
+                "후치모토 슈헤이",
+                "사토 토시유키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "후치모토 슈헤이"
+            ]
+        }
+    },
+    {
+        "episode no": "6번",
+        "episode title": "유대",
+        "storyboard": {
+            "staff": [
+                "카타오카 후미아키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "토미야 미카"
+            ]
+        }
+    },
+    {
+        "episode no": "7번",
+        "episode title": "경계에서",
+        "storyboard": {
+            "staff": [
+                "쿠로야나기 토시마사"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "후지이 야스오"
+            ]
+        }
+    },
+    {
+        "episode no": "8번",
+        "episode title": "다리 너머로",
+        "storyboard": {
+            "staff": [
+                "타카하시 켄지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "타카하시 켄지"
+            ]
+        }
+    },
+    {
+        "episode no": "9번",
+        "episode title": "숨겨진 마음",
+        "storyboard": {
+            "staff": [
+                "스즈키 이쿠"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "만사와 슈"
+            ]
+        }
+    },
+    {
+        "episode no": "10번",
+        "episode title": "넘쳐흐르는 세상",
+        "storyboard": {
+            "staff": [
+                "후치모토 슈헤이"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "호소마 나루"
+            ]
+        }
+    }
+],
+"62430": [
+    {
+        "episode no": "#01",
+        "episode title": "뮤타입",
+        "storyboard": {
+            "staff": [
+                "우메츠 토모미"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "모리타 히로시"
+            ]
+        }
+    },
+    {
+        "episode no": "#02",
+        "episode title": "쪽~!",
+        "storyboard": {
+            "staff": [
+                "우메츠 토모미"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "우치다 다이키"
+            ]
+        }
+    },
+    {
+        "episode no": "#03",
+        "episode title": "마음대로 해",
+        "storyboard": {
+            "staff": [
+                "사사키 켄타",
+                "오카 코즈에"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "모리타 히로시"
+            ]
+        }
+    },
+    {
+        "episode no": "#04",
+        "episode title": "즐거울지도",
+        "storyboard": {
+            "staff": [
+                "쿠로야나기 토시마사"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "호소마 나루"
+            ]
+        }
+    },
+    {
+        "episode no": "#05",
+        "episode title": "도와줘",
+        "storyboard": {
+            "staff": [
+                "우메츠 토모미"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "우치다 다이키"
+            ]
+        }
+    },
+    {
+        "episode no": "#06",
+        "episode title": "운명",
+        "storyboard": {
+            "staff": [
+                "사사키 켄타"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "미야타 타쿠미"
+            ]
+        }
+    },
+    {
+        "episode no": "#07",
+        "episode title": "새로운 마음으로",
+        "storyboard": {
+            "staff": [
+                "모리타 히로시",
+                "엔도 모토무"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "네즈 토모코",
+                "오오모리 다이치"
+            ]
+        }
+    },
+    {
+        "episode no": "#08",
+        "episode title": "참 잘했어요",
+        "storyboard": {
+            "staff": [
+                "사사키 켄타"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "우치다 히로키"
+            ]
+        }
+    },
+    {
+        "episode no": "#09",
+        "episode title": "해산",
+        "storyboard": {
+            "staff": [
+                "사사키 켄타",
+                "코바야시 코타로",
+                "모리타 히로시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "미야타 타쿠미"
+            ]
+        }
+    },
+    {
+        "episode no": "#10",
+        "episode title": "바다",
+        "storyboard": {
+            "staff": [
+                "우메츠 토모미"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "미야타 타쿠미"
+            ]
+        }
+    },
+    {
+        "episode no": "#11",
+        "episode title": "즐거웠어",
+        "storyboard": {
+            "staff": [
+                "에후쿠 카요코"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "오가와 코타로"
+            ]
+        }
+    },
+    {
+        "episode no": "#12",
+        "episode title": "이별",
+        "storyboard": {
+            "staff": []
+        },
+        "episode director": {
+            "staff": []
+        }
+    }
+],
+"63802": [
+    {
+        "episode no": "제1화",
+        "episode title": "퍼스트 라이트",
+        "storyboard": {
+            "staff": [
+                "이와사키 타로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이와사키 타로"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "아드레날린 게임",
+        "storyboard": {
+            "staff": [
+                "세토 켄지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "츠키노 마사시"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "다이아볼릭 미티어",
+        "storyboard": {
+            "staff": [
+                "히이로 유키나"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "히이로 유키나"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "오버히트",
+        "storyboard": {
+            "staff": [
+                "쿠라모토 호다카"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "쿠라모토 호다카"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "걸스 로어",
+        "storyboard": {
+            "staff": [
+                "차차마루",
+                "세토 켄지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "나카무라 유토"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "シン・シンコイワ",
+        "storyboard": {
+            "staff": [
+                "세토 켄지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "타케우치 타카시",
+                "사토 쇼타로"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "リストアド・メモリー",
+        "storyboard": {
+            "staff": [
+                "오기와라 마코토"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "쿠라모토 호다카"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "ディープ・ディバイド",
+        "storyboard": {
+            "staff": [
+                "히이로 유키나"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "히이로 유키나"
+            ]
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "エンプティ・クラウン",
+        "storyboard": {
+            "staff": [
+                "오기와라 마코토"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "츠키노 마사시"
+            ]
+        }
+    }
+],
+"62076": [
+    {
+        "episode no": "한 대째",
+        "episode title": "슈퍼 뒤에서 담배 피우는 두 사람",
+        "storyboard": {
+            "staff": [
+                "스즈키 마사토"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "스즈키 마사토"
+            ]
+        }
+    },
+    {
+        "episode no": "두 대째",
+        "episode title": "슈퍼 뒤에서 함께 머무는 두 사람",
+        "storyboard": {
+            "staff": [
+                "모리 아오이"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "모리 아오이"
+            ]
+        }
+    },
+    {
+        "episode no": "세 대째",
+        "episode title": "슈퍼 뒤에서 선물 나누는 두 사람",
+        "storyboard": {
+            "staff": [
+                "스즈키 마사토"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야마우치 토미오"
+            ]
+        }
+    },
+    {
+        "episode no": "네 대째",
+        "episode title": "슈퍼 뒤에서 배우는 한 사람",
+        "storyboard": {
+            "staff": [
+                "모리 아오이"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "모리 아오이",
+                "스즈키 마사토"
+            ]
+        }
+    },
+    {
+        "episode no": "다섯 대째",
+        "episode title": "슈퍼 뒤에서 시간 보내는 두 사람",
+        "storyboard": {
+            "staff": [
+                "스즈키 마사토"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "오노다 유스케"
+            ]
+        }
+    },
+    {
+        "episode no": "여섯 대째",
+        "episode title": "슈퍼 뒤에서 풍겨오는 잔향",
+        "storyboard": {
+            "staff": [
+                "모리 아오이"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "모리 아오이"
+            ]
+        }
+    },
+    {
+        "episode no": "일곱 대째",
+        "episode title": "슈퍼 뒤에서 맞는 여름의 끝",
+        "storyboard": {
+            "staff": [
+                "스즈키 마사토"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "코사카 하루메"
+            ]
+        }
+    },
+    {
+        "episode no": "여덟 대째",
+        "episode title": "슈퍼 뒤에서 발견하는 두 사람",
+        "storyboard": {
+            "staff": [
+                "마츠우라 나오키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야마우치 토미오"
+            ]
+        }
+    }
+],
+"59741": [
+    {
+        "episode no": "Chapter1",
+        "episode title": "중기사 엘마",
+        "storyboard": {
+            "staff": [
+                "스즈키 신고"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "요코미네 카츠마사"
+            ]
+        }
+    },
+    {
+        "episode no": "Chapter2",
+        "episode title": "위협적인 원숭이 거미",
+        "storyboard": {
+            "staff": [
+                "스즈키 신고"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야마기시 테츠이치"
+            ]
+        }
+    },
+    {
+        "episode no": "Chapter3",
+        "episode title": "대규모의뢰",
+        "storyboard": {
+            "staff": [
+                "스즈키 신고"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야마기시 테츠이치"
+            ]
+        }
+    },
+    {
+        "episode no": "Chapter4",
+        "episode title": "존재 진화",
+        "storyboard": {
+            "staff": [
+                "요코미네 카츠마사"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "아다치 쇼헤이"
+            ]
+        }
+    },
+    {
+        "episode no": "Chapter5",
+        "episode title": "그을린 광기의 송곳니",
+        "storyboard": {
+            "staff": [
+                "요코미네 카츠마사"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "아다치 쇼헤이"
+            ]
+        }
+    },
+    {
+        "episode no": "Chapter6",
+        "episode title": "광대 루체",
+        "storyboard": {
+            "staff": [
+                "요코미네 카츠마사"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "스즈키 신고",
+                "야마기시 테츠이치"
+            ]
+        }
+    },
+    {
+        "episode no": "Chapter7",
+        "episode title": "졸부 라나 사냥",
+        "storyboard": {
+            "staff": [
+                "요코미네 카츠마사"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야마기시 테츠이치"
+            ]
+        }
+    },
+    {
+        "episode no": "Chapter8",
+        "episode title": "왕의 방황",
+        "storyboard": {
+            "staff": [
+                "요코미네 카츠마사"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "요코미네 카츠마사"
+            ]
+        }
+    },
+    {
+        "episode no": "Chapte9",
+        "episode title": "꿈의 주인",
+        "storyboard": {
+            "staff": [
+                "요코미네 카츠마사"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "요코미네 카츠마사"
+            ]
+        }
+    },
+    {
+        "episode no": "Chapte10",
+        "episode title": "교섭",
+        "storyboard": {
+            "staff": [
+                "요코미네 카츠마사"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야마기시 테츠이치"
+            ]
+        }
+    }
+],
+"63403": [
+    {
+        "episode no": "제1화",
+        "episode title": "내가 야니네코다냥",
+        "storyboard": {
+            "staff": [
+                "키무라 타쿠"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "키무라 타쿠"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "내 후배들이다냥",
+        "storyboard": {
+            "staff": [
+                "아오야기 류헤이"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "히로타 코스케"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "ニャーはボケよりツッコミ寄りにゃ",
+        "storyboard": {
+            "staff": [
+                "나와 무네노리"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "쿠리니시 유스케"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "ニャーのまわりは変人ばかりにゃ",
+        "storyboard": {
+            "staff": [
+                "나와 무네노리"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "나와 무네노리"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "ニャーたち秘境に行くにゃ",
+        "storyboard": {
+            "staff": [
+                "쿠마노 치히로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이타비사시 미치루"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "ニャーの夏が始まって終わるにゃ",
+        "storyboard": {
+            "staff": [
+                "나와 무네노리"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "히로타 코스케"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "ニャーも親から生まれたにゃ",
+        "storyboard": {
+            "staff": [
+                "요네다 미츠히로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "요네다 미츠히로"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "ニャーたちも師走は走るにゃ",
+        "storyboard": {
+            "staff": [
+                "나츠노 모모코"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야마다 보우"
+            ]
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "ニャーの妹ちゃんはモテモテにゃ",
+        "storyboard": {
+            "staff": [
+                "나츠노 모모코"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "히로타 코스케",
+                "시부타 나오아키"
+            ]
+        }
+    }
+],
+"63150": [
+    {
+        "episode no": "제1화",
+        "episode title": "소녀 괴수, 도쿄에 나타나다",
+        "storyboard": {
+            "staff": [
+                "오오미네 테루유키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "오오미네 테루유키"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "열리지 않는 문",
+        "storyboard": {
+            "staff": [
+                "후루하시 카즈히로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "오오니시 모에"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "빛나는 주말~ 꿈의 나라로~",
+        "storyboard": {
+            "staff": [
+                "타카하시 켄지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "타카하시 켄지"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "공포의 괴수 페스티벌",
+        "storyboard": {
+            "staff": [
+                "야마모토 히데요"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "아리토미 코지"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "갸루와 립스틱",
+        "storyboard": {
+            "staff": [
+                "migmi"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "migmi"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "라이리의 숲",
+        "storyboard": {
+            "staff": [
+                "마도카 코스케"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "마도카 코스케"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "표적이 된 아라타",
+        "storyboard": {
+            "staff": [
+                "쿠로다 켄지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "쿠로다 켄지"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "마나츠의 괴수 섬으로 날아라!!",
+        "storyboard": {
+            "staff": [
+                "이시가오카 노리카즈"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이시가오카 노리카즈"
+            ]
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "乙女怪獣愚痴を吐け!",
+        "storyboard": {
+            "staff": [
+                "호리구치 카즈키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "오오니시 모에"
+            ]
+        }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "泣くな失恋怪獣",
+        "storyboard": {
+            "staff": [
+                "요시오카 시노부"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "요시오카 시노부",
+                "쿠로다 켄지"
+            ]
+        }
+    }
+],
+"62078": [
+    {
+        "episode no": "제1화",
+        "episode title": "변경 영주님과 푸른 뿔 소녀",
+        "storyboard": {
+            "staff": [
+                "이마이즈미 켄이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카와모토 카즈타카",
+                "후지 아야나"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "변경 영주님과 첫 방문객",
+        "storyboard": {
+            "staff": [
+                "이마이즈미 켄이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "아베 모토히로",
+                "키쿠치 마코토"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "변경 영주님과 기묘한 행상인",
+        "storyboard": {
+            "staff": [
+                "이마이즈미 켄이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이노쿠마 타케시"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "변경 영주님과 이웃 영주",
+        "storyboard": {
+            "staff": [
+                "이마이즈미 켄이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카이타니 코토나리"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "변경 영주님과 사막에서 온 습격자",
+        "storyboard": {
+            "staff": [
+                "이마이즈미 켄이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "JOL짱"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "변경 영주님과 쌍둥이의 기도",
+        "storyboard": {
+            "staff": [
+                "후지 아야나",
+                "카와모토 카즈타카"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "후지 아야나",
+                "카와모토 카즈타카"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "변경 영주님과 새로운 영민들",
+        "storyboard": {
+            "staff": [
+                "호리 코지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이노쿠마 타케시"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "변경 영주님과 초원에서의 싸움",
+        "storyboard": {
+            "staff": [
+                "이마이즈미 켄이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카이타니 코토나리"
+            ]
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "辺境領主様と結婚式",
+        "storyboard": {
+            "staff": [
+                "카와모토 카즈타카",
+                "후지 아야나"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카와모토 카즈타카",
+                "후지 아야나"
+            ]
+        }
+    }
+],
+"60059": [
+    {
+        "episode no": "제13회",
+        "episode title": "다시 한번 먹고 싶어",
+        "storyboard": {
+            "staff": [
+                "야마자키 유타"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야마자키 유타"
+            ]
+        }
+    },
+    {
+        "episode no": "제14회",
+        "episode title": "야야코의 두근두근♥ 대작전!",
+        "storyboard": {
+            "staff": [
+                "카와카미 유스케"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카와카미 유스케"
+            ]
+        }
+    },
+    {
+        "episode no": "제15회",
+        "episode title": "토키유키와 삼대장",
+        "storyboard": {
+            "staff": [
+                "코무로 유이치로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "코무로 유이치로"
+            ]
+        }
+    },
+    {
+        "episode no": "제16회",
+        "episode title": "사랑의 전사! 시나노 가면",
+        "storyboard": {
+            "staff": [
+                "키유나 아카리"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "키유나 아카리"
+            ]
+        }
+    },
+    {
+        "episode no": "제17회",
+        "episode title": "패배하지 않는 자들",
+        "storyboard": {
+            "staff": [
+                "야마자키 유타"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "스나토케이 아이"
+            ]
+        }
+    },
+    {
+        "episode no": "제18회",
+        "episode title": "신이 된 소년",
+        "storyboard": {
+            "staff": [
+                "丘 城鋭"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "丘 城鋭"
+            ]
+        }
+    },
+    {
+        "episode no": "제19회",
+        "episode title": "나의 작은아버지",
+        "storyboard": {
+            "staff": [
+                "히라미네 요시히로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "히라미네 요시히로"
+            ]
+        }
+    },
+    {
+        "episode no": "제20회",
+        "episode title": "둘도 없는 것",
+        "storyboard": {
+            "staff": [
+                "카와카미 유스케"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카와카미 유스케"
+            ]
+        }
+    }
+],
+"61280": [
+    {
+        "episode no": "제1화",
+        "episode title": "마법 저택 ~이럴 때 만화 주인공이라면?",
+        "storyboard": {
+            "staff": [
+                "아카기 히로아키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "아가키 히로아키",
+                "에조에 히토미",
+                "에노키다 타카히로"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "넌 빛나고 있어~만화를 만드는 건 힘들다",
+        "storyboard": {
+            "staff": [
+                "시라하타 요시유키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "시라하타 요시유키"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "코코로의 마음 ~이거 그리고 죽어",
+        "storyboard": {
+            "staff": [
+                "이마무라 히로키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이마무라 히로키"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "유토피아~만화를 만들 때는 동료가 있는 게 좋다",
+        "storyboard": {
+            "staff": [
+                "쥬테키 잇파츠"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "쿠보 타로"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "다 같이 가자! ~'생각'을 담자",
+        "storyboard": {
+            "staff": [
+                "오오하시 아키요"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "오오하시 아키요"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "코미티아 ~더 재밌는 만화를 그리자!",
+        "storyboard": {
+            "staff": [
+                "니시다 쇼지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "에조에 히토미",
+                "시라하타 요시유키"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "로스트 월드 ~죽일 생각으로 그리자",
+        "storyboard": {
+            "staff": [
+                "요시카와 히로아키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "박경순"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "터치 ~만화로 그리고 싶은 100가지!!!",
+        "storyboard": {
+            "staff": [
+                "에노키다 타카히로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "에노키다 타카히로"
+            ]
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "인터넷의 바다로~누군가를 위해서가 아닌 자신을 위해 그리자!",
+        "storyboard": {
+            "staff": []
+        },
+        "episode director": {
+            "staff": []
+        }
+    }
+],
+"63061": [
+    {
+        "episode no": "제1화",
+        "episode title": "나리타 가에 온 걸 환영해",
+        "storyboard": {
+            "staff": [
+                "산죠 나미미"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "나카무라 다이키"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "거짓말쟁이는 가족의 시작",
+        "storyboard": {
+            "staff": [
+                "나카무라 사토미"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "나카무라 사토미"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "나리타 가의 새로운 규칙",
+        "storyboard": {
+            "staff": [
+                "요시무라 아이"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "타카모토 요시히로"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "솔직하지 못해서",
+        "storyboard": {
+            "staff": [
+                "호리카와 유코"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "나카무라 다이키"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "은둔형 천사",
+        "storyboard": {
+            "staff": [
+                "산죠 나미미",
+                "후쿠다 미치오",
+                "니시모토 켄토"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "서혜진",
+                "나카무라 다이키"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "형제의 마음",
+        "storyboard": {
+            "staff": [
+                "후쿠다 미치오"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "쿠라모토 호다카"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "남동생이 왕자님?",
+        "storyboard": {
+            "staff": [
+                "사이토 노리아키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "나카무라 사토미"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "문화제의 방향은!?",
+        "storyboard": {
+            "staff": [
+                "사쿠라이 히로아키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "나카무라 다이키"
+            ]
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "생일 선물 보너스",
+        "storyboard": {
+            "staff": [
+                "有季尾捨吉"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "토바 아키라"
+            ]
+        }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "관계의 증표",
+        "storyboard": {
+            "staff": [
+                "세키 아키코"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "세키 아키코"
+            ]
+        }
+    }
+],
+"63817": [
+    {
+        "episode no": "제13화",
+        "episode title": "학원 도시로!",
+        "storyboard": {
+            "staff": [
+                "아베 모토히로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "타카세 스미카"
+            ]
+        }
+    },
+    {
+        "episode no": "제14화",
+        "episode title": "새로운 동료",
+        "storyboard": {
+            "staff": [
+                "아베 모토히로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "오수진"
+            ]
+        }
+    },
+    {
+        "episode no": "제15화",
+        "episode title": "던전을 공략하라",
+        "storyboard": {
+            "staff": [
+                "와타나베 신이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "오은수"
+            ]
+        }
+    },
+    {
+        "episode no": "제16화",
+        "episode title": "왕태자의 부름",
+        "storyboard": {
+            "staff": [
+                "이바타 요시히데"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이바타 요시히데"
+            ]
+        }
+    },
+    {
+        "episode no": "제17화",
+        "episode title": "정령왕의 예언",
+        "storyboard": {
+            "staff": [
+                "아베 모토히로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "요코노 미츠요"
+            ]
+        }
+    },
+    {
+        "episode no": "제18화",
+        "episode title": "결전! 학원 무술 대회",
+        "storyboard": {
+            "staff": [
+                "아베 모토히로",
+                "카와베 신야"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "신재익",
+                "스즈키 켄토"
+            ]
+        }
+    },
+    {
+        "episode no": "제19화",
+        "episode title": "로젠헤임으로",
+        "storyboard": {
+            "staff": [
+                "와타나베 신이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "타카세 스미카"
+            ]
+        }
+    },
+    {
+        "episode no": "제20화",
+        "episode title": "티아모 공방전",
+        "storyboard": {
+            "staff": [
+                "니이도메 토시야"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "오은수",
+                "신재익",
+                "스즈키 켄토"
+            ]
+        }
+    },
+    {
+        "episode no": "제21화",
+        "episode title": "라폴카의 마족들",
+        "storyboard": {
+            "staff": [
+                "이시히라 신지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이바타 요시히데"
+            ]
+        }
+    },
+    {
+        "episode no": "제22화",
+        "episode title": "기도가 가득 차올라서",
+        "storyboard": {
+            "staff": [
+                "오가와 유키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "신재익",
+                "스즈키 켄토"
+            ]
+        }
+    }
+],
+"56835": [
+    {
+        "episode no": "1막",
+        "episode title": "설해",
+        "storyboard": {
+            "staff": [
+                "오오하시 요시미츠"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이시이 아키에",
+                "시카마 타카히로"
+            ]
+        }
+    },
+    {
+        "episode no": "1막",
+        "episode title": "빙벽",
+        "storyboard": {
+            "staff": [
+                "오오하시 요시미츠"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이시이 아키에",
+                "시카마 타카히로"
+            ]
+        }
+    },
+    {
+        "episode no": "1막",
+        "episode title": "홍하",
+        "storyboard": {
+            "staff": [
+                "오오하시 요시미츠"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이시이 아키에",
+                "시카마 타카히로"
+            ]
+        }
+    },
+    {
+        "episode no": "2막",
+        "episode title": "형화",
+        "storyboard": {
+            "staff": []
+        },
+        "episode director": {
+            "staff": []
+        }
+    },
+    {
+        "episode no": "2막",
+        "episode title": "광망",
+        "storyboard": {
+            "staff": []
+        },
+        "episode director": {
+            "staff": []
+        }
+    },
+    {
+        "episode no": "2막",
+        "episode title": "훈의",
+        "storyboard": {
+            "staff": []
+        },
+        "episode director": {
+            "staff": []
+        }
+    },
+    {
+        "episode no": "3막",
+        "episode title": "농월",
+        "storyboard": {
+            "staff": [
+                "오오하시 요시미츠"
+            ]
+        },
+        "episode director": {
+            "staff": []
+        }
+    },
+    {
+        "episode no": "3막",
+        "episode title": "은토",
+        "storyboard": {
+            "staff": [
+                "오오하시 요시미츠"
+            ]
+        },
+        "episode director": {
+            "staff": []
+        }
+    },
+    {
+        "episode no": "3막",
+        "episode title": "연심",
+        "storyboard": {
+            "staff": [
+                "오오하시 요시미츠"
+            ]
+        },
+        "episode director": {
+            "staff": []
+        }
+    }
+],
+"61048": [
+    {
+        "episode no": "제1화",
+        "episode title": "고양이와 용",
+        "storyboard": {
+            "staff": [
+                "오진구"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "오진구"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "어미 고양이와 소녀",
+        "storyboard": {
+            "staff": [
+                "오진구"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "후지시로 카즈야"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "아기 고양이들과 날개 아저씨",
+        "storyboard": {
+            "staff": [
+                "오진구"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "니시야마 유키"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "검은 고양이와 왕자",
+        "storyboard": {
+            "staff": [
+                "모리 타케시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "오진구"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "하얀 고양이와 소녀",
+        "storyboard": {
+            "staff": [
+                "니헤이 유이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "테즈카 코노미"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "강아지풀의 밤",
+        "storyboard": {
+            "staff": [
+                "오오츠키 아츠시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "홍페니"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "어미 고양이의 귀환",
+        "storyboard": {
+            "staff": [
+                "오진구"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "나카노 츠요시"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "성 아랫마을의 생활&검은 고양이와 모험하는 왕자",
+        "storyboard": {
+            "staff": [
+                "모리 타케시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "스즈키 마사히코"
+            ]
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "하얀 고양이와 의욕 없는 소녀",
+        "storyboard": {
+            "staff": [
+                "모리 타케시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "후지시로 카즈야"
+            ]
+        }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "악마와 용과 어버이날",
+        "storyboard": {
+            "staff": [
+                "니헤이 유이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "니헤이 유이치"
+            ]
+        }
+    },
+    {
+        "episode no": "제11화",
+        "episode title": "마지막 안식처",
+        "storyboard": {
+            "staff": []
+        },
+        "episode director": {
+            "staff": []
+        }
+    }
+],
+"61169": [
+    {
+        "episode no": "제1화",
+        "episode title": "미래는 우리의 손안에",
+        "storyboard": {
+            "staff": [
+                "아오야기 류헤이"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "아오야기 류헤이"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "The Choice Is Yours",
+        "storyboard": {
+            "staff": [
+                "아오야기 류헤이"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "고성철"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "WHAT’S MY NAME?",
+        "storyboard": {
+            "staff": [
+                "우마비키 케이",
+                "하라 히로시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "王易"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "부족한 둘",
+        "storyboard": {
+            "staff": [
+                "아오야기 류헤이"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이바타 요시히데"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "Young Gunz",
+        "storyboard": {
+            "staff": [
+                "TYUTYU",
+                "오쿠야마 키요시",
+                "마츠이 마유코"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이와사키 야스토시",
+                "모토 히토시"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "Turn Up",
+        "storyboard": {
+            "staff": [
+                "TYUTYU",
+                "닛타 치히로",
+                "나가요시 미즈키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이시카와 유다이"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "3 ON THREE",
+        "storyboard": {
+            "staff": [
+                "우마비키 케이"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "타카츠도 토모아키"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "Underdog",
+        "storyboard": {
+            "staff": [
+                "아오야기 류헤이"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "아오야기 류헤이"
+            ]
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "ONE",
+        "storyboard": {
+            "staff": [
+                "TYUTYU",
+                "닛타 치히로",
+                "나가요시 미즈키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "고성철"
+            ]
+        }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "ヤバスギルスキル",
+        "storyboard": {
+            "staff": []
+        },
+        "episode director": {
+            "staff": []
+        }
+    }
+],
+"63324": [
+    {
+        "episode no": "제1화",
+        "episode title": "黒イ雪",
+        "storyboard": {
+            "staff": [
+                "카와세 토시후미"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "와타나베 마사히코"
+            ]
+        }
+    },
+    {
+        "episode no": "제2화",
+        "episode title": "縁切リノ鎌",
+        "storyboard": {
+            "staff": [
+                "오오하타 키요타카"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "요시다 슌지"
+            ]
+        }
+    },
+    {
+        "episode no": "제3화",
+        "episode title": "蟲愛ヅル君",
+        "storyboard": {
+            "staff": [
+                "마츠이 히토유키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카와이 코헤이"
+            ]
+        }
+    },
+    {
+        "episode no": "제4화",
+        "episode title": "屍人伝説ト瓦斯工場",
+        "storyboard": {
+            "staff": [
+                "마츠이 히토유키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "안도 히로아키"
+            ]
+        }
+    },
+    {
+        "episode no": "제5화",
+        "episode title": "神殺シノ炎",
+        "storyboard": {
+            "staff": [
+                "카와세 토시후미"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카와세 토시후미"
+            ]
+        }
+    },
+    {
+        "episode no": "제6화",
+        "episode title": "魔女ノ侵攻",
+        "storyboard": {
+            "staff": [
+                "후지와라 료지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "시바 칸타"
+            ]
+        }
+    },
+    {
+        "episode no": "제7화",
+        "episode title": "残響ノ廃音",
+        "storyboard": {
+            "staff": [
+                "코가 카즈오미",
+                "후지와라 료지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야부우치 유우",
+                "아사미 마츠오"
+            ]
+        }
+    },
+    {
+        "episode no": "제8화",
+        "episode title": "通称・怪奇箱男",
+        "storyboard": {
+            "staff": [
+                "오키타 미야나"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "요시다 슌지"
+            ]
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "隙間男ト箱男",
+        "storyboard": {
+            "staff": [
+                "이와하타 고이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "안도 히로아키"
+            ]
+        }
+    }
+],
+"60636": [
+    {
+        "episode no": "제41화",
+        "episode title": "GOD OF THUNDER",
+        "storyboard": {
+            "staff": [
+                "첸 달리"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "첸 달리"
+            ]
+        }
+    },
+    {
+        "episode no": "제42화",
+        "episode title": "SON OF DARKNESS",
+        "storyboard": {
+            "staff": [
+                "마츠이 신타로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "마츠이 신타로"
+            ]
+        }
+    },
+    {
+        "episode no": "제43화",
+        "episode title": "BLOOD FOR MY BONE",
+        "storyboard": {
+            "staff": [
+                "우에다 신이치로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "우에다 신이치로"
+            ]
+        }
+    },
+    {
+        "episode no": "제44화",
+        "episode title": "THE PERFECT CRIMSON",
+        "storyboard": {
+            "staff": [
+                "정영훈"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "정영훈"
+            ]
+        }
+    },
+    {
+        "episode no": "제45화",
+        "episode title": "DEFEND YOU",
+        "storyboard": {
+            "staff": [
+                "타구치 토모히사"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "타구치 토모히사"
+            ]
+        }
+    },
+    {
+        "episode no": "제46화",
+        "episode title": "THE END",
+        "storyboard": {
+            "staff": [
+                "나가이 이토코"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "나가이 이토코"
+            ]
+        }
+    },
+    {
+        "episode no": "제47화",
+        "episode title": "THE END 2",
+        "storyboard": {
+            "staff": []
+        },
+        "episode director": {
+            "staff": []
+        }
+    },
+    {
+        "episode no": "제48화",
+        "episode title": "THE END TWO WORLD",
+        "storyboard": {
+            "staff": []
+        },
+        "episode director": {
+            "staff": []
+        }
+    }
+],
+"61483": [
+    {
+        "episode no": "제1막",
+        "episode title": "하늘에 있는 것, 땅에 있는 것",
+        "storyboard": {
+            "staff": [
+                "아벨 공고라"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "아벨 공고라"
+            ]
+        }
+    },
+    {
+        "episode no": "제2막",
+        "episode title": "2월에 피는 장미",
+        "storyboard": {
+            "staff": [
+                "야마다 나오코"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야마다 나오코",
+                "후지쿠라 타쿠야"
+            ]
+        }
+    },
+    {
+        "episode no": "제3막",
+        "episode title": "꺼지지 않는 불꽃",
+        "storyboard": {
+            "staff": [
+                "아베 유지로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "아베 유지로"
+            ]
+        }
+    },
+    {
+        "episode no": "제4막",
+        "episode title": "옷치긴",
+        "storyboard": {
+            "staff": [
+                "시모야마 토모히사"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "시모야마 토모히사"
+            ]
+        }
+    },
+    {
+        "episode no": "제5막",
+        "episode title": "뱀의 얼룩은 바깥쪽에 사람의 얼룩은 안쪽에",
+        "storyboard": {
+            "staff": [
+                "사사키 신사쿠"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이시가오카 노리카즈"
+            ]
+        }
+    },
+    {
+        "episode no": "제6막",
+        "episode title": "메르겐의 백성",
+        "storyboard": {
+            "staff": [
+                "안도 마사시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "마츠나가 코타로"
+            ]
+        }
+    },
+    {
+        "episode no": "제7막",
+        "episode title": "형제",
+        "storyboard": {
+            "staff": [
+                "아베 유지로",
+                "Nicholas McKergow"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "아베 유지로"
+            ]
+        }
+    },
+    {
+        "episode no": "제8막",
+        "episode title": "대카툰 보락친",
+        "storyboard": {
+            "staff": [
+                "무라코시 아사미"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "무라코시 아사미"
+            ]
+        }
+    },
+    {
+        "episode no": "제9막",
+        "episode title": "하늘",
+        "storyboard": {
+            "staff": [
+                "마츠나가 코타로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "마츠나가 코타로"
+            ]
+        }
+    },
+    {
+        "episode no": "제10막",
+        "episode title": "지혜",
+        "storyboard": {
+            "staff": [
+                "마에바 켄지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "마에바 켄지"
+            ]
+        }
+    },
+    {
+        "episode no": "제11막",
+        "episode title": "불편한 돌",
+        "storyboard": {
+            "staff": [
+                "아이케이 료타",
+                "야마다 나오코",
+                "아벨 공고라"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이와케 준야"
+            ]
+        }
+    },
+    {
+        "episode no": "제12막",
+        "episode title": "평소와 다름없는 초원",
+        "storyboard": {
+            "staff": []
+        },
+        "episode director": {
+            "staff": []
         }
     }
 ],

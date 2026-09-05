@@ -487,8 +487,7 @@ document.getElementById("reset-all-btn").onclick = () => {
 document.addEventListener("DOMContentLoaded", () => {
     initAOS();
     initSeasonGate();
-
-    const infoBtn = document.getElementById("info-btn");
+    
     const infoModal = document.getElementById("info-modal");
     const closeInfoModal = document.querySelector("#info-modal .close-modal");
 

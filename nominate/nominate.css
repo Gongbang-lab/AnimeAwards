@@ -272,3 +272,77 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--dark-gold); 
 }
+
+/* ──────────────────────────────────────────────
+   올해의 이카루스 상 - 소개 모달 전용 스타일
+   ────────────────────────────────────────────── */
+#icarus-intro-modal .modal-content {
+    max-width: 480px;
+    background: linear-gradient(160deg, #1a1a1a 0%, #100d05 100%);
+    border: 1px solid var(--gold, #d4af37);
+    box-shadow: 0 0 40px rgba(212, 175, 55, 0.15);
+    padding: 40px 35px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 은은한 태양 광선 배경 연출 */
+#icarus-intro-modal .modal-content {
+    max-width: 480px;
+    background: linear-gradient(160deg, #1a1a1a 0%, #100d05 100%);
+    border: 1px solid var(--gold, #d4af37);
+    box-shadow: 0 0 40px rgba(212, 175, 55, 0.15);
+    padding: 40px 35px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#icarus-intro-modal .modal-content::before {
+    content: "";
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 220px;
+    height: 220px;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.35) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+#icarus-intro-modal .modal-header {
+    position: relative;
+    justify-content: center;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+
+#icarus-intro-modal .modal-header h2 {
+    font-size: 1.5rem;
+    color: var(--gold, #d4af37);
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+#icarus-intro-modal .modal-body {
+    position: relative;
+    padding-top: 10px;
+}
+
+#icarus-intro-modal .modal-body p {
+    color: #cfcfcf;
+    font-size: 0.98rem;
+    line-height: 1.8;
+    margin: 6px 0;
+}
+
+#icarus-intro-modal .modal-body p:last-child {
+    color: #e8b84b;
+    font-weight: 600;
+}
+@keyframes icarusFadeIn {
+    from { opacity: 0; transform: translateY(-20px) scale(0.97); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+}
