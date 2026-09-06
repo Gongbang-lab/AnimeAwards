@@ -113,6 +113,14 @@ function enterMainContent() {
     overlay.addEventListener("transitionend", () => {
         overlay.classList.add("hidden");
     }, { once: true });
+
+    const savedScrollY = sessionStorage.getItem("mainScrollY");
+    if (savedScrollY !== null) {
+        requestAnimationFrame(() => {
+            window.scrollTo(0, parseInt(savedScrollY, 10));
+        });
+        sessionStorage.removeItem("mainScrollY"); // 한 번 쓰고 제거 (시즌 변경 등 다른 진입 경로에서 재사용 안 되도록)
+    }
 }
 
 function openSeasonSelectScreen() {
@@ -438,6 +446,8 @@ function createAwardCard(award, results, ratioClass) {
             }
             return;
         }
+
+        sessionStorage.setItem("mainScrollY", window.scrollY);
 
         const query = `awardName=${encodeURIComponent(award.name)}&theme=${encodeURIComponent(award.theme)}`;
         let path = "nominate/nominate.html";
