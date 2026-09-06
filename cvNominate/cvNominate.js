@@ -63,8 +63,12 @@ function renderCVStep1(searchTerm = "") {
         let filteredList = getSeasonFilteredCVList(genderKey);
 
         if (searchTerm.trim() !== "") {
-            filteredList = filteredList.filter(cv => 
-                cv.name.toLowerCase().includes(searchTerm.toLowerCase().trim())
+                const term = searchTerm.toLowerCase().trim();
+                    filteredList = filteredList.filter(cv => 
+                        cv.name.toLowerCase().includes(term) ||
+                        (cv.characters || []).some(role => 
+                    role.charName && role.charName.toLowerCase().includes(term)
+                )
             );
         }
 
