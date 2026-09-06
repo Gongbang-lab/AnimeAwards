@@ -370,7 +370,7 @@ function saveAwardResult(winner) {
 }
 
 function showIcarusIntroIfNeeded() {
-    if (nominateState.awardName !== "설레발 상") return;
+    if (nominateState.awardName !== "올해의 설레발 상") return;
 
     const modal = document.getElementById("icarus-intro-modal");
     if (!modal) return;

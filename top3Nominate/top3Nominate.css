@@ -158,7 +158,7 @@ body {
     font-size: 0.7rem; padding: 2px 6px; border-radius: 4px;
 }
 
-.card img { width: 100%; aspect-ratio: 3/4; object-fit: cover; display: block; }
+.card img { width: 100%; aspect-ratio: 2/3; object-fit: cover; display: block; }
 .card-info { padding: 12px; }
 .card-title { font-weight: bold; color: var(--gold); margin-bottom: 5px; font-size: 0.95rem; }
 .card-studio { font-size: 0.8rem; color: #bbb; }
