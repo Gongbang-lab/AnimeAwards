@@ -216,5 +216,14 @@ var AnimeMemeData_2026 = [
         "origin": "황천의 츠가이",
         "quarter": "3분기",
         "year" : 2026
+    },
+    {
+        "id": "meme_025",
+        "name": "레노리노삐빠뽀",
+        "type": "mp4",
+        "src1": "image/meme/레노리노삐빠뽀.mp4",
+        "origin": "뫼비우스 더스트",
+        "quarter": "3분기",
+        "year" : 2026
     }
 ];

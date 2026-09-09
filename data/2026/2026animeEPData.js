@@ -22872,6 +22872,20 @@ var animeEPData_2026 = {
                 "나가시마 히로키"
             ]
         }
+    },
+        {
+        "episode no": "제11화",
+        "episode title": "터닝 포인트 4",
+        "storyboard": {
+            "staff": [
+                "카와구치 케이이치로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "호시 케이토"
+            ]
+        }
     }
 ],
 "58878": [
@@ -23017,6 +23031,20 @@ var animeEPData_2026 = {
                 "이이노 신야"
             ]
         }
+    },
+    {
+        "episode no": "제11화",
+        "episode title": "魔女グレイス",
+        "storyboard": {
+            "staff": [
+                "사토 요스케"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "사토 요스케"
+            ]
+        }
     }
 ],
 "56736": [
@@ -23143,6 +23171,20 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "오오야부 쿄헤이"
+            ]
+        }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "각자의 역할",
+        "storyboard": {
+            "staff": [
+                "모리 타케시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "쿠사카 나오요시"
             ]
         }
     }
@@ -23274,6 +23316,20 @@ var animeEPData_2026 = {
                 "키무라 켄스케"
             ]
         }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "ずっと、そばに",
+        "storyboard": {
+            "staff": [
+                "박지승"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "太田気績"
+            ]
+        }
     }
 ],
 "60522": [
@@ -23400,6 +23456,20 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "무라카미 츠토무"
+            ]
+        }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "비정한 규율! 눈물을 품고 오라버니를 쫓다",
+        "storyboard": {
+            "staff": [
+                "이시히라 신지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "사이 인가이"
             ]
         }
     }
@@ -23533,6 +23603,20 @@ var animeEPData_2026 = {
                 "시미즈 쇼고"
             ]
         }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "적진 돌입",
+        "storyboard": {
+            "staff": [
+                "시부타 나오아키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카와무라 아야"
+            ]
+        }
     }
 ],
 "62289": [
@@ -23659,6 +23743,20 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "후카야 유리카"
+            ]
+        }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "海辺にて",
+        "storyboard": {
+            "staff": [
+                "오오야 미츠코"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "사토 마사후미"
             ]
         }
     }
@@ -23790,6 +23888,21 @@ var animeEPData_2026 = {
                 "이이무라 마사유키"
             ]
         }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "ひゃっはあっ、タルタルソースの時間だぁっ！ （５話ぶり２回目）",
+        "storyboard": {
+            "staff": [
+                "오오하타 코이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "코야마 요시타카",
+                "야마구치 유키"
+            ]
+        }
     }
 ],
 "62031": [
@@ -23896,7 +24009,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제8화",
-        "episode title": "超常対決! 巨人 vs 巨人!",
+        "episode title": "초인 대결! 거인 vs 거인!",
         "storyboard": {
             "staff": [
                 "니시자와 스스무"
@@ -23905,6 +24018,34 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "야구치 마도카"
+            ]
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "戦慄の記憶! 修羅のドッジ!",
+        "storyboard": {
+            "staff": [
+                "시무라 히로아키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야마모토 나오키"
+            ]
+        }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "生き残れ!デンジャラス・タイム!",
+        "storyboard": {
+            "staff": [
+                "카와구치 케이이치로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "오오바 히데아키"
             ]
         }
     }
@@ -24033,6 +24174,20 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "아이바 유우"
+            ]
+        }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "友達、だよね",
+        "storyboard": {
+            "staff": [
+                "니시타 마사요시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카미죠 오사무"
             ]
         }
     }
@@ -24298,7 +24453,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제9화",
-        "episode title": "遊びのプレイ",
+        "episode title": "장난 같은 플레이",
         "storyboard": {
             "staff": [
                 "이바타 쇼타"
@@ -24307,6 +24462,20 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "이바타 쇼타",
+                "타마키 신고"
+            ]
+        }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "そう思ったんだ",
+        "storyboard": {
+            "staff": [
+                "타마키 신고"
+            ]
+        },
+        "episode director": {
+            "staff": [
                 "타마키 신고"
             ]
         }
@@ -24431,7 +24600,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제9화",
-        "episode title": "わたしの魔法",
+        "episode title": "나의 마법",
         "storyboard": {
             "staff": [
                 "야마모토 쿄헤이"
@@ -24440,6 +24609,21 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "야마모토 쿄헤이"
+            ]
+        }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "忘れない日",
+        "storyboard": {
+            "staff": [
+                "코마다 유키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "스즈키 타쿠마",
+                "미네 토모노리"
             ]
         }
     }
@@ -24883,7 +25067,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제21화",
-        "episode title": "ケイコク",
+        "episode title": "경고",
         "storyboard": {
             "staff": [
                 "요시자와 슌이치"
@@ -24892,6 +25076,21 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "요시자와 슌이치"
+            ]
+        }
+    },
+    {
+        "episode no": "제22화",
+        "episode title": "사랑",
+        "storyboard": {
+            "staff": [
+                "시모다 마사",
+                "후지타 요이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "시모토리 코스케"
             ]
         }
     }
@@ -25154,6 +25353,20 @@ var animeEPData_2026 = {
                 "요네다 미츠히로"
             ]
         }
+    },
+    {
+        "episode no": "Episode10",
+        "episode title": "빼앗긴 이슈타르",
+        "storyboard": {
+            "staff": [
+                "미나미 야스히로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "타카바야시 히사야"
+            ]
+        }
     }
 ],
 "62513": [
@@ -25273,7 +25486,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제9막",
-        "episode title": "鏡の迷宮",
+        "episode title": "거울 미궁",
         "storyboard": {
             "staff": []
         },
