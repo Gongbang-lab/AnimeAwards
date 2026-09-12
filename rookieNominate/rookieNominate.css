@@ -57,6 +57,12 @@ body {
     flex-direction: column;
 }
 
+/* 사이드바 상단 "후보군" 버튼 */
+.candidate-pool-trigger {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
 .action-buttons-vertical {
     width: 100%;
     margin-bottom: 30px;
@@ -167,6 +173,12 @@ body {
     position: fixed; top: 0; left: 0; width: 100%; height: 100%;
     background: rgba(0,0,0,0.9); display: flex; align-items: center; justify-content: center; z-index: 2000;
 }
+
+/* works-modal은 candidate-pool-modal 등 다른 모달 위에서 열릴 수 있으므로
+   DOM 순서와 무관하게 항상 최상단에 오도록 z-index를 별도로 높게 지정 */
+#works-modal {
+    z-index: 2100;
+}
 .modal-content {
     background: #1a1a1a; width: 90%; max-width: 800px;
     border: 2px solid var(--gold); border-radius: 15px; padding: 40px;
@@ -247,8 +259,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* 점수/스탯 섹션이 추가되며 내용이 길어져 상단 정렬 + 스크롤로 변경 */
+    justify-content: flex-start;
     text-align: center;
+    overflow-y: auto;
 }
 
 .works-modal-left img {
@@ -260,6 +274,48 @@ body {
     border: 2px solid var(--gold);
     margin-bottom: 20px;
 }
+
+/* works-modal-left 내부 스크롤바 */
+.works-modal-left::-webkit-scrollbar { width: 4px; }
+.works-modal-left::-webkit-scrollbar-track { background: transparent; }
+.works-modal-left::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 2px; }
+
+/* 성우 점수 breakdown / 활동 통계 (works-modal 왼쪽 하단) */
+.cv-score-breakdown,
+.cv-stats {
+    width: 100%;
+    text-align: left;
+    margin-top: 6px;
+    margin-bottom: 20px;
+}
+
+.cv-info-subtitle {
+    color: var(--gold);
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #333;
+}
+
+.score-row,
+.stat-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    border-bottom: 1px solid #2a2a2a;
+    font-size: 0.85rem;
+}
+
+.score-row:last-child,
+.stat-row:last-child { border-bottom: none; }
+
+.score-row span:first-child,
+.stat-row span:first-child { color: #bbb; }
+
+.score-row span:last-child,
+.stat-row span:last-child { color: var(--gold); font-weight: 700; }
 
 .works-modal-right {
     flex: 7;
@@ -327,3 +383,93 @@ body {
     color: #666;
 }
 
+/* ──────────────────────────────────────────────────────── */
+/* 후보군(31~50위) 모달 - 데이터 테이블 UI */
+/* ──────────────────────────────────────────────────────── */
+.candidate-pool-modal-content {
+    max-width: 700px;
+    width: 90%;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.candidate-pool-table-wrap {
+    flex: 1;
+    overflow-y: auto;
+    margin: 10px 0 20px 0;
+}
+
+.candidate-pool-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.candidate-pool-table thead th {
+    text-align: left;
+    color: var(--gold);
+    font-size: 0.85rem;
+    padding: 10px 8px;
+    border-bottom: 2px solid var(--gold);
+    position: sticky;
+    top: 0;
+    background: #1a1a1a;
+}
+
+.candidate-pool-table thead th.col-check,
+.candidate-pool-table thead th.col-detail { width: 90px; }
+
+.candidate-pool-table tbody td {
+    padding: 10px 8px;
+    border-bottom: 1px solid #2e2e2e;
+    font-size: 0.9rem;
+    color: #eee;
+}
+
+.candidate-pool-table tbody tr.row-selected {
+    background: rgba(212, 175, 55, 0.12);
+}
+
+.candidate-pool-table tbody tr:hover {
+    background: rgba(212, 175, 55, 0.06);
+}
+
+.candidate-pool-table td.col-check { text-align: center; }
+.candidate-pool-table td.col-score { color: var(--gold); font-weight: 700; }
+.candidate-pool-table td.col-detail { text-align: center; }
+
+.candidate-pool-table input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--gold);
+    cursor: pointer;
+}
+
+.btn-detail-small {
+    background: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    font-size: 0.75rem;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+    white-space: nowrap;
+}
+
+.btn-detail-small:hover {
+    background: var(--gold);
+    color: #000;
+}
+
+.candidate-pool-empty {
+    text-align: center;
+    color: #666;
+    padding: 30px 0 !important;
+}
+
+.candidate-pool-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
