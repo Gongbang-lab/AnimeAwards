@@ -264,76 +264,10 @@ var RookieCVData_2026 = {
       }
     ]
   },
-  "Elle Genovata": {
-    "id": 387728,
-    "name": "Elle Genovata",
-    "rank": 4,
-    "debutYear": 2026,
-    "score": 125,
-    "scoreBreakdown": {
-      "career": 40,
-      "totalWorks": 15,
-      "currentYearWorks": 30,
-      "mainRole": 25,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 2,
-      "currentYearWorks": 2,
-      "mainWorks": 2,
-      "supportingWorks": 1,
-      "yearsActive": 0
-    },
-    "cvimg": "image/rookiecv/cv/ElleGenovata.jpg",
-    "characters": [
-      {
-        "animeTitle": "THE RIBBON HERO",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Sapphire",
-        "charimg": "image/rookiecv/ElleGenovataSapphire.jpg",
-        "appearances": [
-          {
-            "animeTitle": "THE RIBBON HERO",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Chou Kaguya-hime!",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Otakou Chuuken",
-        "charimg": "image/rookiecv/ElleGenovataOtakouChuuken.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Chou Kaguya-hime!",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Chou Kaguya-hime!",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Kaguya",
-        "charimg": "image/rookiecv/ElleGenovataKaguya.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Chou Kaguya-hime!",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      }
-    ]
-  },
   "Yuu Shiraki": {
     "id": 381341,
     "name": "Yuu Shiraki",
-    "rank": 5,
+    "rank": 4,
     "debutYear": 2026,
     "score": 125,
     "scoreBreakdown": {
@@ -376,7 +310,7 @@ var RookieCVData_2026 = {
   "Momoko Seto": {
     "id": 298582,
     "name": "Momoko Seto",
-    "rank": 6,
+    "rank": 5,
     "debutYear": 2023,
     "score": 122,
     "scoreBreakdown": {
@@ -489,7 +423,7 @@ var RookieCVData_2026 = {
   "Rena Motomura": {
     "id": 344276,
     "name": "Rena Motomura",
-    "rank": 7,
+    "rank": 6,
     "debutYear": 2024,
     "score": 120,
     "scoreBreakdown": {
@@ -644,7 +578,7 @@ var RookieCVData_2026 = {
   "Haruka Satou": {
     "id": 333068,
     "name": "Haruka Satou",
-    "rank": 8,
+    "rank": 7,
     "debutYear": 2024,
     "score": 120,
     "scoreBreakdown": {
@@ -752,7 +686,7 @@ var RookieCVData_2026 = {
   "Niina Hanamiya": {
     "id": 311814,
     "name": "Niina Hanamiya",
-    "rank": 9,
+    "rank": 8,
     "debutYear": 2025,
     "score": 120,
     "scoreBreakdown": {
@@ -818,7 +752,7 @@ var RookieCVData_2026 = {
   "Azusa Tachibana": {
     "id": 337852,
     "name": "Azusa Tachibana",
-    "rank": 10,
+    "rank": 9,
     "debutYear": 2024,
     "score": 120,
     "scoreBreakdown": {
@@ -968,7 +902,7 @@ var RookieCVData_2026 = {
   "May Tachibana": {
     "id": 377812,
     "name": "May Tachibana",
-    "rank": 11,
+    "rank": 10,
     "debutYear": 2025,
     "score": 117,
     "scoreBreakdown": {
@@ -1062,7 +996,7 @@ var RookieCVData_2026 = {
   "Sae Hiratsuka": {
     "id": 294238,
     "name": "Sae Hiratsuka",
-    "rank": 12,
+    "rank": 11,
     "debutYear": 2022,
     "score": 115,
     "scoreBreakdown": {
@@ -1274,7 +1208,7 @@ var RookieCVData_2026 = {
   "Taihi Kimura": {
     "id": 335875,
     "name": "Taihi Kimura",
-    "rank": 13,
+    "rank": 12,
     "debutYear": 2024,
     "score": 115,
     "scoreBreakdown": {
@@ -1401,7 +1335,7 @@ var RookieCVData_2026 = {
   "Anji Iwata": {
     "id": 342862,
     "name": "Anji Iwata",
-    "rank": 14,
+    "rank": 13,
     "debutYear": 2026,
     "score": 115,
     "scoreBreakdown": {
@@ -1444,7 +1378,7 @@ var RookieCVData_2026 = {
   "Cocoro Oomori": {
     "id": 358248,
     "name": "Cocoro Oomori",
-    "rank": 15,
+    "rank": 14,
     "debutYear": 2025,
     "score": 115,
     "scoreBreakdown": {
@@ -1515,7 +1449,7 @@ var RookieCVData_2026 = {
   "Hiroto Shimizu": {
     "id": 374889,
     "name": "Hiroto Shimizu",
-    "rank": 16,
+    "rank": 15,
     "debutYear": 2026,
     "score": 115,
     "scoreBreakdown": {
@@ -1564,114 +1498,10 @@ var RookieCVData_2026 = {
       }
     ]
   },
-  "Kenz Ancero-Bontogon": {
-    "id": 387730,
-    "name": "Kenz Ancero-Bontogon",
-    "rank": 17,
-    "debutYear": 2026,
-    "score": 115,
-    "scoreBreakdown": {
-      "career": 40,
-      "totalWorks": 15,
-      "currentYearWorks": 30,
-      "mainRole": 15,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 2,
-      "currentYearWorks": 2,
-      "mainWorks": 1,
-      "supportingWorks": 1,
-      "yearsActive": 0
-    },
-    "cvimg": "image/rookiecv/cv/KenzAnceroBontogon.jpg",
-    "characters": [
-      {
-        "animeTitle": "THE RIBBON HERO",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Hecate",
-        "charimg": "image/rookiecv/KenzAnceroBontogonHecate.jpg",
-        "appearances": [
-          {
-            "animeTitle": "THE RIBBON HERO",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Chou Kaguya-hime!",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Iroha Sakayori",
-        "charimg": "image/rookiecv/KenzAnceroBontogonIrohaSakayori.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Chou Kaguya-hime!",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      }
-    ]
-  },
-  "Rona Aguilar": {
-    "id": 387727,
-    "name": "Rona Aguilar",
-    "rank": 18,
-    "debutYear": 2026,
-    "score": 115,
-    "scoreBreakdown": {
-      "career": 40,
-      "totalWorks": 15,
-      "currentYearWorks": 30,
-      "mainRole": 15,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 2,
-      "currentYearWorks": 2,
-      "mainWorks": 1,
-      "supportingWorks": 1,
-      "yearsActive": 0
-    },
-    "cvimg": "image/rookiecv/cv/RonaAguilar.jpg",
-    "characters": [
-      {
-        "animeTitle": "THE RIBBON HERO",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Pine",
-        "charimg": "image/rookiecv/RonaAguilarPine.jpg",
-        "appearances": [
-          {
-            "animeTitle": "THE RIBBON HERO",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Chou Kaguya-hime!",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Kaguya",
-        "charimg": "image/rookiecv/RonaAguilarKaguya.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Chou Kaguya-hime!",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      }
-    ]
-  },
   "Yuuto Takenaka": {
     "id": 331994,
     "name": "Yuuto Takenaka",
-    "rank": 19,
+    "rank": 16,
     "debutYear": 2024,
     "score": 115,
     "scoreBreakdown": {
@@ -1748,76 +1578,10 @@ var RookieCVData_2026 = {
       }
     ]
   },
-  "Kamil Mrożek": {
-    "id": 382155,
-    "name": "Kamil Mrożek",
-    "rank": 20,
-    "debutYear": 2025,
-    "score": 113,
-    "scoreBreakdown": {
-      "career": 40,
-      "totalWorks": 15,
-      "currentYearWorks": 30,
-      "mainRole": 8,
-      "recentGrowth": 20
-    },
-    "stats": {
-      "totalWorks": 3,
-      "currentYearWorks": 2,
-      "mainWorks": 0,
-      "supportingWorks": 2,
-      "yearsActive": 1
-    },
-    "cvimg": "image/rookiecv/cv/KamilMroek.jpg",
-    "characters": [
-      {
-        "animeTitle": "THE RIBBON HERO",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Rock Holmes",
-        "charimg": "image/rookiecv/KamilMroekRockHolmes.jpg",
-        "appearances": [
-          {
-            "animeTitle": "THE RIBBON HERO",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Ginga Tokkyuu Milky☆Subway: Kakueki Teisha Gekijou Yuki",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Asami",
-        "charimg": "image/rookiecv/KamilMroekAsami.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Ginga Tokkyuu Milky☆Subway: Kakueki Teisha Gekijou Yuki",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Shuumatsu no Valkyrie III",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Haggis",
-        "charimg": "image/rookiecv/KamilMroekHaggis.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Shuumatsu no Valkyrie III",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
   "Yurie Igoma": {
     "id": 293910,
     "name": "Yurie Igoma",
-    "rank": 21,
+    "rank": 17,
     "debutYear": 2023,
     "score": 112,
     "scoreBreakdown": {
@@ -1949,7 +1713,7 @@ var RookieCVData_2026 = {
   "Rin Kusumi": {
     "id": 245301,
     "name": "Rin Kusumi",
-    "rank": 22,
+    "rank": 18,
     "debutYear": 2022,
     "score": 112,
     "scoreBreakdown": {
@@ -2099,7 +1863,7 @@ var RookieCVData_2026 = {
   "Anan Furuya": {
     "id": 291030,
     "name": "Anan Furuya",
-    "rank": 23,
+    "rank": 19,
     "debutYear": 2023,
     "score": 110,
     "scoreBreakdown": {
@@ -2231,7 +1995,7 @@ var RookieCVData_2026 = {
   "Harumi Momo": {
     "id": 350718,
     "name": "Harumi Momo",
-    "rank": 24,
+    "rank": 20,
     "debutYear": 2022,
     "score": 110,
     "scoreBreakdown": {
@@ -2302,7 +2066,7 @@ var RookieCVData_2026 = {
   "Sakura Shinfuku": {
     "id": 294426,
     "name": "Sakura Shinfuku",
-    "rank": 25,
+    "rank": 21,
     "debutYear": 2023,
     "score": 110,
     "scoreBreakdown": {
@@ -2370,62 +2134,10 @@ var RookieCVData_2026 = {
       }
     ]
   },
-  "Carl Simon Dela Cruz": {
-    "id": 387731,
-    "name": "Carl Simon Dela Cruz",
-    "rank": 26,
-    "debutYear": 2026,
-    "score": 108,
-    "scoreBreakdown": {
-      "career": 40,
-      "totalWorks": 15,
-      "currentYearWorks": 30,
-      "mainRole": 8,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 2,
-      "currentYearWorks": 2,
-      "mainWorks": 0,
-      "supportingWorks": 2,
-      "yearsActive": 0
-    },
-    "cvimg": "image/rookiecv/cv/CarlSimonDelaCruz.jpg",
-    "characters": [
-      {
-        "animeTitle": "THE RIBBON HERO",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Velvet",
-        "charimg": "image/rookiecv/CarlSimonDelaCruzVelvet.jpg",
-        "appearances": [
-          {
-            "animeTitle": "THE RIBBON HERO",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Chou Kaguya-hime!",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Akira Mikado",
-        "charimg": "image/rookiecv/CarlSimonDelaCruzAkiraMikado.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Chou Kaguya-hime!",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
   "Konatsu Hirabayashi": {
     "id": 332956,
     "name": "Konatsu Hirabayashi",
-    "rank": 27,
+    "rank": 22,
     "debutYear": 2026,
     "score": 108,
     "scoreBreakdown": {
@@ -2468,7 +2180,7 @@ var RookieCVData_2026 = {
   "Momoko Noji": {
     "id": 349480,
     "name": "Momoko Noji",
-    "rank": 28,
+    "rank": 23,
     "debutYear": 2024,
     "score": 108,
     "scoreBreakdown": {
@@ -2525,7 +2237,7 @@ var RookieCVData_2026 = {
   "Nobuyuki Sakuma": {
     "id": 387026,
     "name": "Nobuyuki Sakuma",
-    "rank": 29,
+    "rank": 24,
     "debutYear": 2026,
     "score": 108,
     "scoreBreakdown": {
@@ -2568,7 +2280,7 @@ var RookieCVData_2026 = {
   "Noel Kanzaki": {
     "id": 380643,
     "name": "Noel Kanzaki",
-    "rank": 30,
+    "rank": 25,
     "debutYear": 2026,
     "score": 108,
     "scoreBreakdown": {
@@ -2617,81 +2329,10 @@ var RookieCVData_2026 = {
       }
     ]
   },
-  "Paulina Śmigielska": {
-    "id": 338649,
-    "name": "Paulina Śmigielska",
-    "rank": 31,
-    "debutYear": 2024,
-    "score": 108,
-    "scoreBreakdown": {
-      "career": 40,
-      "totalWorks": 15,
-      "currentYearWorks": 30,
-      "mainRole": 8,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 4,
-      "currentYearWorks": 2,
-      "mainWorks": 0,
-      "supportingWorks": 2,
-      "yearsActive": 2
-    },
-    "cvimg": "image/rookiecv/cv/Paulinamigielska.jpg",
-    "characters": [
-      {
-        "animeTitle": "THE RIBBON HERO",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Hecate",
-        "charimg": "image/rookiecv/PaulinamigielskaHecate.jpg",
-        "appearances": [
-          {
-            "animeTitle": "THE RIBBON HERO",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Ginga Tokkyuu Milky☆Subway: Kakueki Teisha Gekijou Yuki",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "O.T.A.M.",
-        "charimg": "image/rookiecv/PaulinamigielskaOTAM.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Ginga Tokkyuu Milky☆Subway: Kakueki Teisha Gekijou Yuki",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Rising Impact Season 2",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Yumiko Koizumi",
-        "charimg": "image/rookiecv/PaulinamigielskaYumikoKoizumi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Rising Impact Season 2",
-            "year": 2024,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Rising Impact",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
   "Ria Shinonome": {
     "id": 403540,
     "name": "Ria Shinonome",
-    "rank": 32,
+    "rank": 26,
     "debutYear": 2026,
     "score": 108,
     "scoreBreakdown": {
@@ -2734,7 +2375,7 @@ var RookieCVData_2026 = {
   "Yume Matsumura": {
     "id": 397068,
     "name": "Yume Matsumura",
-    "rank": 33,
+    "rank": 27,
     "debutYear": 2026,
     "score": 108,
     "scoreBreakdown": {
@@ -2777,7 +2418,7 @@ var RookieCVData_2026 = {
   "Yuka Hinata": {
     "id": 259891,
     "name": "Yuka Hinata",
-    "rank": 34,
+    "rank": 28,
     "debutYear": 2022,
     "score": 107,
     "scoreBreakdown": {
@@ -2890,7 +2531,7 @@ var RookieCVData_2026 = {
   "Saya Hitomi": {
     "id": 330963,
     "name": "Saya Hitomi",
-    "rank": 35,
+    "rank": 29,
     "debutYear": 2024,
     "score": 107,
     "scoreBreakdown": {
@@ -3012,7 +2653,7 @@ var RookieCVData_2026 = {
   "Minori Fujidera": {
     "id": 206623,
     "name": "Minori Fujidera",
-    "rank": 36,
+    "rank": 30,
     "debutYear": 2021,
     "score": 105,
     "scoreBreakdown": {
@@ -3233,7 +2874,7 @@ var RookieCVData_2026 = {
   "Reo Osanai": {
     "id": 289560,
     "name": "Reo Osanai",
-    "rank": 37,
+    "rank": 31,
     "debutYear": 2023,
     "score": 105,
     "scoreBreakdown": {
@@ -3464,90 +3105,10 @@ var RookieCVData_2026 = {
       }
     ]
   },
-  "Nao Ojika": {
-    "id": 295047,
-    "name": "Nao Ojika",
-    "rank": 38,
-    "debutYear": 2023,
-    "score": 105,
-    "scoreBreakdown": {
-      "career": 30,
-      "totalWorks": 15,
-      "currentYearWorks": 30,
-      "mainRole": 15,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 5,
-      "currentYearWorks": 2,
-      "mainWorks": 1,
-      "supportingWorks": 1,
-      "yearsActive": 3
-    },
-    "cvimg": "image/rookiecv/cv/NaoOjika.jpg",
-    "characters": [
-      {
-        "animeTitle": "Ghost Concert: missing Songs",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Kaede Saionji",
-        "charimg": "image/rookiecv/NaoOjikaKaedeSaionji.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Ghost Concert: missing Songs",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Mahou no Shimai LuluttoLilly",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Rui Nonoyama",
-        "charimg": "image/rookiecv/NaoOjikaRuiNonoyama.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Mahou no Shimai LuluttoLilly",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Ittai Itsukara",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Temari Tsukimura",
-        "charimg": "image/rookiecv/NaoOjikaTemariTsukimura.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Ittai Itsukara",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Isekai de Cheat Skill wo Te ni Shita Ore wa, Genjitsu Sekai wo mo Musou Suru: Level Up wa Jinsei wo Kaeta",
-        "year": 2023,
-        "role": "MAIN",
-        "charName": "Yuuya Tenjou",
-        "charimg": "image/rookiecv/NaoOjikaYuuyaTenjou.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Isekai de Cheat Skill wo Te ni Shita Ore wa, Genjitsu Sekai wo mo Musou Suru: Level Up wa Jinsei wo Kaeta",
-            "year": 2023,
-            "role": "MAIN"
-          }
-        ]
-      }
-    ]
-  },
   "Hika Tsukishiro": {
     "id": 280420,
     "name": "Hika Tsukishiro",
-    "rank": 39,
+    "rank": 32,
     "debutYear": 2025,
     "score": 105,
     "scoreBreakdown": {
@@ -3638,90 +3199,10 @@ var RookieCVData_2026 = {
       }
     ]
   },
-  "Aleksandra Dziewit": {
-    "id": 301452,
-    "name": "Aleksandra Dziewit",
-    "rank": 40,
-    "debutYear": 2022,
-    "score": 103,
-    "scoreBreakdown": {
-      "career": 30,
-      "totalWorks": 15,
-      "currentYearWorks": 30,
-      "mainRole": 8,
-      "recentGrowth": 20
-    },
-    "stats": {
-      "totalWorks": 4,
-      "currentYearWorks": 2,
-      "mainWorks": 0,
-      "supportingWorks": 2,
-      "yearsActive": 4
-    },
-    "cvimg": "image/rookiecv/cv/AleksandraDziewit.jpg",
-    "characters": [
-      {
-        "animeTitle": "Koori no Jouheki",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Tsukiko Shimojima",
-        "charimg": "image/rookiecv/AleksandraDziewitTsukikoShimojima.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Koori no Jouheki",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Chou Kaguya-hime!",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Mami Isayama",
-        "charimg": "image/rookiecv/AleksandraDziewitMamiIsayama.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Chou Kaguya-hime!",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "My Melody & Kuromi",
-        "year": 2025,
-        "role": "MAIN",
-        "charName": "My Melody",
-        "charimg": "image/rookiecv/AleksandraDziewitMyMelody.jpg",
-        "appearances": [
-          {
-            "animeTitle": "My Melody & Kuromi",
-            "year": 2025,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Isekai Oji-san",
-        "year": 2022,
-        "role": "SUPPORTING",
-        "charName": "Takafumi Takaoka",
-        "charimg": "image/rookiecv/AleksandraDziewitTakafumiTakaoka.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Isekai Oji-san",
-            "year": 2022,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
   "Maria Abo": {
     "id": 249661,
     "name": "Maria Abo",
-    "rank": 41,
+    "rank": 33,
     "debutYear": 2022,
     "score": 103,
     "scoreBreakdown": {
@@ -3815,7 +3296,7 @@ var RookieCVData_2026 = {
   "Seena Hoshiki": {
     "id": 172100,
     "name": "Seena Hoshiki",
-    "rank": 42,
+    "rank": 34,
     "debutYear": 2020,
     "score": 102,
     "scoreBreakdown": {
@@ -3907,10 +3388,90 @@ var RookieCVData_2026 = {
       }
     ]
   },
+  "Nao Ojika": {
+    "id": 295047,
+    "name": "Nao Ojika",
+    "rank": 35,
+    "debutYear": 2023,
+    "score": 102,
+    "scoreBreakdown": {
+      "career": 30,
+      "totalWorks": 12,
+      "currentYearWorks": 30,
+      "mainRole": 15,
+      "recentGrowth": 15
+    },
+    "stats": {
+      "totalWorks": 6,
+      "currentYearWorks": 2,
+      "mainWorks": 1,
+      "supportingWorks": 1,
+      "yearsActive": 3
+    },
+    "cvimg": "image/rookiecv/cv/NaoOjika.jpg",
+    "characters": [
+      {
+        "animeTitle": "Ghost Concert: missing Songs",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Kaede Saionji",
+        "charimg": "image/rookiecv/NaoOjikaKaedeSaionji.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Ghost Concert: missing Songs",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Mahou no Shimai LuluttoLilly",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "Rui Nonoyama",
+        "charimg": "image/rookiecv/NaoOjikaRuiNonoyama.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Mahou no Shimai LuluttoLilly",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Ittai Itsukara",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "Temari Tsukimura",
+        "charimg": "image/rookiecv/NaoOjikaTemariTsukimura.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Ittai Itsukara",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Isekai de Cheat Skill wo Te ni Shita Ore wa, Genjitsu Sekai wo mo Musou Suru: Level Up wa Jinsei wo Kaeta",
+        "year": 2023,
+        "role": "MAIN",
+        "charName": "Yuuya Tenjou",
+        "charimg": "image/rookiecv/NaoOjikaYuuyaTenjou.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Isekai de Cheat Skill wo Te ni Shita Ore wa, Genjitsu Sekai wo mo Musou Suru: Level Up wa Jinsei wo Kaeta",
+            "year": 2023,
+            "role": "MAIN"
+          }
+        ]
+      }
+    ]
+  },
   "Yumika Yano": {
     "id": 290884,
     "name": "Yumika Yano",
-    "rank": 43,
+    "rank": 36,
     "debutYear": 2023,
     "score": 102,
     "scoreBreakdown": {
@@ -4009,7 +3570,7 @@ var RookieCVData_2026 = {
   "Jun Saito": {
     "id": 378759,
     "name": "Jun Saito",
-    "rank": 44,
+    "rank": 37,
     "debutYear": 2023,
     "score": 98,
     "scoreBreakdown": {
@@ -4075,7 +3636,7 @@ var RookieCVData_2026 = {
   "Shinnosuke Musashi": {
     "id": 298681,
     "name": "Shinnosuke Musashi",
-    "rank": 45,
+    "rank": 38,
     "debutYear": 2023,
     "score": 98,
     "scoreBreakdown": {
@@ -4174,7 +3735,7 @@ var RookieCVData_2026 = {
   "Rina Kawaguchi": {
     "id": 227955,
     "name": "Rina Kawaguchi",
-    "rank": 46,
+    "rank": 39,
     "debutYear": 2021,
     "score": 97,
     "scoreBreakdown": {
@@ -4390,7 +3951,7 @@ var RookieCVData_2026 = {
   "Ao Senami": {
     "id": 272566,
     "name": "Ao Senami",
-    "rank": 47,
+    "rank": 40,
     "debutYear": 2020,
     "score": 95,
     "scoreBreakdown": {
@@ -4461,7 +4022,7 @@ var RookieCVData_2026 = {
   "Hayato Doujima": {
     "id": 291032,
     "name": "Hayato Doujima",
-    "rank": 48,
+    "rank": 41,
     "debutYear": 2023,
     "score": 95,
     "scoreBreakdown": {
@@ -4555,7 +4116,7 @@ var RookieCVData_2026 = {
   "Miyuki Sakurai": {
     "id": 311996,
     "name": "Miyuki Sakurai",
-    "rank": 49,
+    "rank": 42,
     "debutYear": 2023,
     "score": 95,
     "scoreBreakdown": {
@@ -4663,7 +4224,7 @@ var RookieCVData_2026 = {
   "Natsuko Abe": {
     "id": 273563,
     "name": "Natsuko Abe",
-    "rank": 50,
+    "rank": 43,
     "debutYear": 2022,
     "score": 95,
     "scoreBreakdown": {
@@ -4874,7 +4435,7 @@ var RookieCVData_2026 = {
   "Riko Akechi": {
     "id": 343492,
     "name": "Riko Akechi",
-    "rank": 51,
+    "rank": 44,
     "debutYear": 2025,
     "score": 95,
     "scoreBreakdown": {
@@ -5062,7 +4623,7 @@ var RookieCVData_2026 = {
   "Saho Shirasu": {
     "id": 205010,
     "name": "Saho Shirasu",
-    "rank": 52,
+    "rank": 45,
     "debutYear": 2021,
     "score": 93,
     "scoreBreakdown": {
@@ -5367,7 +4928,7 @@ var RookieCVData_2026 = {
   "Natsumi Haruse": {
     "id": 129305,
     "name": "Natsumi Haruse",
-    "rank": 53,
+    "rank": 46,
     "debutYear": 2015,
     "score": 92,
     "scoreBreakdown": {
@@ -5548,7 +5109,7 @@ var RookieCVData_2026 = {
   "Mayu Iizuka": {
     "id": 166401,
     "name": "Mayu Iizuka",
-    "rank": 54,
+    "rank": 47,
     "debutYear": 2015,
     "score": 92,
     "scoreBreakdown": {
@@ -5676,7 +5237,7 @@ var RookieCVData_2026 = {
   "Asaki Yuikawa": {
     "id": 301279,
     "name": "Asaki Yuikawa",
-    "rank": 55,
+    "rank": 48,
     "debutYear": 2023,
     "score": 92,
     "scoreBreakdown": {
@@ -5892,7 +5453,7 @@ var RookieCVData_2026 = {
   "Yuuki Urushiyama": {
     "id": 213989,
     "name": "Yuuki Urushiyama",
-    "rank": 56,
+    "rank": 49,
     "debutYear": 2020,
     "score": 90,
     "scoreBreakdown": {
@@ -6056,7 +5617,7 @@ var RookieCVData_2026 = {
   "Farahnaz Nikray": {
     "id": 217864,
     "name": "Farahnaz Nikray",
-    "rank": 57,
+    "rank": 50,
     "debutYear": 2021,
     "score": 90,
     "scoreBreakdown": {
@@ -6155,7 +5716,7 @@ var RookieCVData_2026 = {
   "Yukari Anzai": {
     "id": 128650,
     "name": "Yukari Anzai",
-    "rank": 58,
+    "rank": 51,
     "debutYear": 2018,
     "score": 88,
     "scoreBreakdown": {
@@ -6413,7 +5974,7 @@ var RookieCVData_2026 = {
   "Hitomi Shogawa": {
     "id": 162831,
     "name": "Hitomi Shogawa",
-    "rank": 59,
+    "rank": 52,
     "debutYear": 2018,
     "score": 88,
     "scoreBreakdown": {
@@ -6564,7 +6125,7 @@ var RookieCVData_2026 = {
   "Miyuki Sahaku": {
     "id": 303477,
     "name": "Miyuki Sahaku",
-    "rank": 60,
+    "rank": 53,
     "debutYear": 2021,
     "score": 88,
     "scoreBreakdown": {
@@ -6635,7 +6196,7 @@ var RookieCVData_2026 = {
   "Hiroya Egashira": {
     "id": 191128,
     "name": "Hiroya Egashira",
-    "rank": 61,
+    "rank": 54,
     "debutYear": 2020,
     "score": 87,
     "scoreBreakdown": {
@@ -6897,7 +6458,7 @@ var RookieCVData_2026 = {
   "Saeko Kamijou": {
     "id": 135200,
     "name": "Saeko Kamijou",
-    "rank": 62,
+    "rank": 55,
     "debutYear": 2019,
     "score": 87,
     "scoreBreakdown": {
@@ -7016,7 +6577,7 @@ var RookieCVData_2026 = {
   "Aino Shimada": {
     "id": 168957,
     "name": "Aino Shimada",
-    "rank": 63,
+    "rank": 56,
     "debutYear": 2022,
     "score": 85,
     "scoreBreakdown": {
@@ -7234,95 +6795,10 @@ var RookieCVData_2026 = {
       }
     ]
   },
-  "Zbigniew Dziduch": {
-    "id": 261619,
-    "name": "Zbigniew Dziduch",
-    "rank": 64,
-    "debutYear": 2009,
-    "score": 85,
-    "scoreBreakdown": {
-      "career": 0,
-      "totalWorks": 15,
-      "currentYearWorks": 30,
-      "mainRole": 25,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 4,
-      "currentYearWorks": 2,
-      "mainWorks": 2,
-      "supportingWorks": 0,
-      "yearsActive": 17
-    },
-    "cvimg": "image/rookiecv/cv/ZbigniewDziduch.jpg",
-    "characters": [
-      {
-        "animeTitle": "BAKI-DOU Part 2",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Musashi Miyamoto",
-        "charimg": "image/rookiecv/ZbigniewDziduchMusashiMiyamoto.jpg",
-        "appearances": [
-          {
-            "animeTitle": "BAKI-DOU Part 2",
-            "year": 2026,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "BAKI-DOU",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Smile Precure!",
-        "year": 2012,
-        "role": "SUPPORTING",
-        "charName": "Akaooni",
-        "charimg": "image/rookiecv/ZbigniewDziduchAkaooni.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Smile Precure!",
-            "year": 2012,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Smile Precure!",
-        "year": 2012,
-        "role": "SUPPORTING",
-        "charName": "Akanbe",
-        "charimg": "image/rookiecv/ZbigniewDziduchAkanbe.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Smile Precure!",
-            "year": 2012,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Dragon Ball Kai",
-        "year": 2009,
-        "role": "SUPPORTING",
-        "charName": "Raditz",
-        "charimg": "image/rookiecv/ZbigniewDziduchRaditz.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Dragon Ball Kai",
-            "year": 2009,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
   "Rena Hasegawa": {
     "id": 197864,
     "name": "Rena Hasegawa",
-    "rank": 65,
+    "rank": 57,
     "debutYear": 2021,
     "score": 83,
     "scoreBreakdown": {
@@ -7496,7 +6972,7 @@ var RookieCVData_2026 = {
   "Hiiro Ishibashi": {
     "id": 136188,
     "name": "Hiiro Ishibashi",
-    "rank": 66,
+    "rank": 58,
     "debutYear": 2019,
     "score": 82,
     "scoreBreakdown": {
@@ -7703,7 +7179,7 @@ var RookieCVData_2026 = {
   "Setsuo Itou": {
     "id": 119798,
     "name": "Setsuo Itou",
-    "rank": 67,
+    "rank": 59,
     "debutYear": 2013,
     "score": 82,
     "scoreBreakdown": {
@@ -7986,7 +7462,7 @@ var RookieCVData_2026 = {
   "Miyari Nemoto": {
     "id": 238272,
     "name": "Miyari Nemoto",
-    "rank": 68,
+    "rank": 60,
     "debutYear": 2021,
     "score": 82,
     "scoreBreakdown": {
@@ -8203,118 +7679,10 @@ var RookieCVData_2026 = {
       }
     ]
   },
-  "Małgorzata Prochera": {
-    "id": 262553,
-    "name": "Małgorzata Prochera",
-    "rank": 69,
-    "debutYear": 1989,
-    "score": 82,
-    "scoreBreakdown": {
-      "career": 0,
-      "totalWorks": 12,
-      "currentYearWorks": 30,
-      "mainRole": 25,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 6,
-      "currentYearWorks": 2,
-      "mainWorks": 2,
-      "supportingWorks": 0,
-      "yearsActive": 37
-    },
-    "cvimg": "image/rookiecv/cv/MagorzataProchera.jpg",
-    "characters": [
-      {
-        "animeTitle": "THE RIBBON HERO",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Sapphire",
-        "charimg": "image/rookiecv/MagorzataProcheraSapphire.jpg",
-        "appearances": [
-          {
-            "animeTitle": "THE RIBBON HERO",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Nijusseiki Denki Mokuroku: Eureka Evrika",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Inako Momokawa",
-        "charimg": "image/rookiecv/MagorzataProcheraInakoMomokawa.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Nijusseiki Denki Mokuroku: Eureka Evrika",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Kakegurui Twin",
-        "year": 2022,
-        "role": "SUPPORTING",
-        "charName": "Chitose Inui",
-        "charimg": "image/rookiecv/MagorzataProcheraChitoseInui.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kakegurui Twin",
-            "year": 2022,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Blue Period",
-        "year": 2021,
-        "role": "MAIN",
-        "charName": "Ryuuji Ayukawa",
-        "charimg": "image/rookiecv/MagorzataProcheraRyuujiAyukawa.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Blue Period",
-            "year": 2021,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Pocket Monsters Sun & Moon",
-        "year": 2016,
-        "role": "SUPPORTING",
-        "charName": "Hoshi",
-        "charimg": "image/rookiecv/MagorzataProcheraHoshi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Pocket Monsters Sun & Moon",
-            "year": 2016,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Majo no Takkyuubin",
-        "year": 1989,
-        "role": "MAIN",
-        "charName": "Kiki",
-        "charimg": "image/rookiecv/MagorzataProcheraKiki.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Majo no Takkyuubin",
-            "year": 1989,
-            "role": "MAIN"
-          }
-        ]
-      }
-    ]
-  },
   "Marika Hayase": {
     "id": 120170,
     "name": "Marika Hayase",
-    "rank": 70,
+    "rank": 61,
     "debutYear": 2015,
     "score": 82,
     "scoreBreakdown": {
@@ -8432,6 +7800,1753 @@ var RookieCVData_2026 = {
           {
             "animeTitle": "Tantei Kageki Milky Holmes TD",
             "year": 2015,
+            "role": "SUPPORTING"
+          }
+        ]
+      }
+    ]
+  },
+  "Yuria Kouzuki": {
+    "id": 101182,
+    "name": "Yuria Kouzuki",
+    "rank": 62,
+    "debutYear": 2008,
+    "score": 82,
+    "scoreBreakdown": {
+      "career": 0,
+      "totalWorks": 12,
+      "currentYearWorks": 30,
+      "mainRole": 25,
+      "recentGrowth": 15
+    },
+    "stats": {
+      "totalWorks": 6,
+      "currentYearWorks": 2,
+      "mainWorks": 2,
+      "supportingWorks": 0,
+      "yearsActive": 18
+    },
+    "cvimg": "image/rookiecv/cv/YuriaKouzuki.jpg",
+    "characters": [
+      {
+        "animeTitle": "Shou 3 Ashibe QQ Goma-chan",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "Goma-chan",
+        "charimg": "image/rookiecv/YuriaKouzukiGomachan.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Shou 3 Ashibe QQ Goma-chan",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Kujima Utaeba Ie Hororo",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "Kujima",
+        "charimg": "image/rookiecv/YuriaKouzukiKujima.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Kujima Utaeba Ie Hororo",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Okaimono Panda! (ONA)",
+        "year": 2024,
+        "role": "SUPPORTING",
+        "charName": "Mugi",
+        "charimg": "image/rookiecv/YuriaKouzukiMugi.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Okaimono Panda! (ONA)",
+            "year": 2024,
+            "role": "SUPPORTING"
+          },
+          {
+            "animeTitle": "Okaimono Panda!",
+            "year": 2024,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "CHIMIMO",
+        "year": 2022,
+        "role": "MAIN",
+        "charName": "Mei Onigami",
+        "charimg": "image/rookiecv/YuriaKouzukiMeiOnigami.jpg",
+        "appearances": [
+          {
+            "animeTitle": "CHIMIMO",
+            "year": 2022,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Gake no Ue no Ponyo",
+        "year": 2008,
+        "role": "MAIN",
+        "charName": "Ponyo",
+        "charimg": "image/rookiecv/YuriaKouzukiPonyo.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Gake no Ue no Ponyo",
+            "year": 2008,
+            "role": "MAIN"
+          }
+        ]
+      }
+    ]
+  },
+  "Daisuke Sakuma": {
+    "id": 272715,
+    "name": "Daisuke Sakuma",
+    "rank": 63,
+    "debutYear": 2019,
+    "score": 80,
+    "scoreBreakdown": {
+      "career": 10,
+      "totalWorks": 7,
+      "currentYearWorks": 40,
+      "mainRole": 8,
+      "recentGrowth": 15
+    },
+    "stats": {
+      "totalWorks": 16,
+      "currentYearWorks": 3,
+      "mainWorks": 0,
+      "supportingWorks": 3,
+      "yearsActive": 7
+    },
+    "cvimg": "image/rookiecv/cv/DaisukeSakuma.jpg",
+    "characters": [
+      {
+        "animeTitle": "Kill Ao",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Shin Kohazame",
+        "charimg": "image/rookiecv/DaisukeSakumaShinKohazame.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Kill Ao",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Cardfight!! Vanguard: Divinez - Genma Seisen-hen",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Michiru Hazama",
+        "charimg": "image/rookiecv/DaisukeSakumaMichiruHazama.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Cardfight!! Vanguard: Divinez - Genma Seisen-hen",
+            "year": 2026,
+            "role": "SUPPORTING"
+          },
+          {
+            "animeTitle": "Cardfight!! Vanguard: Divinez - Deluxe Kesshou-hen",
+            "year": 2025,
+            "role": "MAIN"
+          },
+          {
+            "animeTitle": "Cardfight!! Vanguard: Divinez - Deluxe-hen",
+            "year": 2025,
+            "role": "SUPPORTING"
+          },
+          {
+            "animeTitle": "Cardfight!! Vanguard: Divinez Season 2",
+            "year": 2024,
+            "role": "SUPPORTING"
+          },
+          {
+            "animeTitle": "Cardfight!! Vanguard: will+Dress Season 3",
+            "year": 2023,
+            "role": "SUPPORTING"
+          },
+          {
+            "animeTitle": "Cardfight!! Vanguard: will+Dress Season 2",
+            "year": 2023,
+            "role": "SUPPORTING"
+          },
+          {
+            "animeTitle": "Cardfight!! Vanguard: will+Dress",
+            "year": 2022,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "High School! Kimengumi (2026)",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Shou Kireide",
+        "charimg": "image/rookiecv/DaisukeSakumaShouKireide.jpg",
+        "appearances": [
+          {
+            "animeTitle": "High School! Kimengumi (2026)",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Kimi to Idol Precure♪ Omatase! Kimi ni Todokeru KirakkiLive!",
+        "year": 2025,
+        "role": "SUPPORTING",
+        "charName": "Kaito Hibiki",
+        "charimg": "image/rookiecv/DaisukeSakumaKaitoHibiki.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Kimi to Idol Precure♪ Omatase! Kimi ni Todokeru KirakkiLive!",
+            "year": 2025,
+            "role": "SUPPORTING"
+          },
+          {
+            "animeTitle": "Kimi to Idol Precure♪",
+            "year": 2025,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Bai She: Yuan Qi",
+        "year": 2019,
+        "role": "MAIN",
+        "charName": "Axuan",
+        "charimg": "image/rookiecv/DaisukeSakumaAxuan.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Bai She: Yuan Qi",
+            "year": 2019,
+            "role": "MAIN"
+          }
+        ]
+      }
+    ]
+  },
+  "Robert Waterman": {
+    "id": 139317,
+    "name": "Robert Waterman",
+    "rank": 64,
+    "debutYear": 2018,
+    "score": 80,
+    "scoreBreakdown": {
+      "career": 10,
+      "totalWorks": 12,
+      "currentYearWorks": 30,
+      "mainRole": 8,
+      "recentGrowth": 20
+    },
+    "stats": {
+      "totalWorks": 7,
+      "currentYearWorks": 2,
+      "mainWorks": 0,
+      "supportingWorks": 2,
+      "yearsActive": 8
+    },
+    "cvimg": "image/rookiecv/cv/RobertWaterman.jpg",
+    "characters": [
+      {
+        "animeTitle": "Grand Blue Season 3",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Kenta Fujiwara",
+        "charimg": "image/rookiecv/RobertWatermanKentaFujiwara.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Grand Blue Season 3",
+            "year": 2026,
+            "role": "SUPPORTING"
+          },
+          {
+            "animeTitle": "Grand Blue Season 2",
+            "year": 2025,
+            "role": "SUPPORTING"
+          },
+          {
+            "animeTitle": "Grand Blue",
+            "year": 2018,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Ginga Tokkyuu Milky☆Subway: Kakueki Teisha Gekijou Yuki",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Haga",
+        "charimg": "image/rookiecv/RobertWatermanHaga.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Ginga Tokkyuu Milky☆Subway: Kakueki Teisha Gekijou Yuki",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Blue Lock",
+        "year": 2022,
+        "role": "SUPPORTING",
+        "charName": "Dada Silva",
+        "charimg": "image/rookiecv/RobertWatermanDadaSilva.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Blue Lock",
+            "year": 2022,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Hachi-nan tte, Sore wa Nai deshou!",
+        "year": 2020,
+        "role": "SUPPORTING",
+        "charName": "Alterio Märchen",
+        "charimg": "image/rookiecv/RobertWatermanAlterioMrchen.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Hachi-nan tte, Sore wa Nai deshou!",
+            "year": 2020,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Mairimashita! Iruma-kun",
+        "year": 2019,
+        "role": "SUPPORTING",
+        "charName": "Behemolt",
+        "charimg": "image/rookiecv/RobertWatermanBehemolt.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Mairimashita! Iruma-kun",
+            "year": 2019,
+            "role": "SUPPORTING"
+          }
+        ]
+      }
+    ]
+  },
+  "Ryuuho Nagaoka": {
+    "id": 297726,
+    "name": "Ryuuho Nagaoka",
+    "rank": 65,
+    "debutYear": 2023,
+    "score": 80,
+    "scoreBreakdown": {
+      "career": 30,
+      "totalWorks": 12,
+      "currentYearWorks": 30,
+      "mainRole": 8,
+      "recentGrowth": 0
+    },
+    "stats": {
+      "totalWorks": 9,
+      "currentYearWorks": 2,
+      "mainWorks": 0,
+      "supportingWorks": 2,
+      "yearsActive": 3
+    },
+    "cvimg": "image/rookiecv/cv/RyuuhoNagaoka.jpg",
+    "characters": [
+      {
+        "animeTitle": "DARK MOON: Kuro no Tsuki - Tsuki no Saidan",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Mahan",
+        "charimg": "image/rookiecv/RyuuhoNagaokaMahan.jpg",
+        "appearances": [
+          {
+            "animeTitle": "DARK MOON: Kuro no Tsuki - Tsuki no Saidan",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Tamon-kun Ima Docchi!?",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Rintarou Kai",
+        "charimg": "image/rookiecv/RyuuhoNagaokaRintarouKai.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Tamon-kun Ima Docchi!?",
+            "year": 2026,
+            "role": "SUPPORTING"
+          },
+          {
+            "animeTitle": "F/ACE OFF",
+            "year": 2025,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Karaoke Iko!",
+        "year": 2025,
+        "role": "SUPPORTING",
+        "charName": "Masami Oka",
+        "charimg": "image/rookiecv/RyuuhoNagaokaMasamiOka.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Karaoke Iko!",
+            "year": 2025,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Binan Koukou Chikyuu Bouei-bu Haikara!",
+        "year": 2025,
+        "role": "MAIN",
+        "charName": "Narushi Sukayu",
+        "charimg": "image/rookiecv/RyuuhoNagaokaNarushiSukayu.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Binan Koukou Chikyuu Bouei-bu Haikara!",
+            "year": 2025,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Rock wa Lady no Tashinami Deshite",
+        "year": 2025,
+        "role": "SUPPORTING",
+        "charName": "Itsuki",
+        "charimg": "image/rookiecv/RyuuhoNagaokaItsuki.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Rock wa Lady no Tashinami Deshite",
+            "year": 2025,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Shinmai Ossan Bouken-sha, Saikyou Party ni Shinu Hodo Kitaerarete Muteki ni Naru.",
+        "year": 2024,
+        "role": "SUPPORTING",
+        "charName": "Linx Laulot",
+        "charimg": "image/rookiecv/RyuuhoNagaokaLinxLaulot.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Shinmai Ossan Bouken-sha, Saikyou Party ni Shinu Hodo Kitaerarete Muteki ni Naru.",
+            "year": 2024,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Tensei Shitara Slime Datta Ken 3rd Season",
+        "year": 2024,
+        "role": "SUPPORTING",
+        "charName": "Dagura",
+        "charimg": "image/rookiecv/RyuuhoNagaokaDagura.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Tensei Shitara Slime Datta Ken 3rd Season",
+            "year": 2024,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Dead Mount Death Play Part 2",
+        "year": 2023,
+        "role": "SUPPORTING",
+        "charName": "Hifuki Mushi",
+        "charimg": "image/rookiecv/RyuuhoNagaokaHifukiMushi.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Dead Mount Death Play Part 2",
+            "year": 2023,
+            "role": "SUPPORTING"
+          }
+        ]
+      }
+    ]
+  },
+  "Miho Wataya": {
+    "id": 161150,
+    "name": "Miho Wataya",
+    "rank": 66,
+    "debutYear": 2015,
+    "score": 78,
+    "scoreBreakdown": {
+      "career": 0,
+      "totalWorks": 10,
+      "currentYearWorks": 40,
+      "mainRole": 8,
+      "recentGrowth": 20
+    },
+    "stats": {
+      "totalWorks": 11,
+      "currentYearWorks": 3,
+      "mainWorks": 0,
+      "supportingWorks": 3,
+      "yearsActive": 11
+    },
+    "cvimg": "image/rookiecv/cv/MihoWataya.jpg",
+    "characters": [
+      {
+        "animeTitle": "FOXING: Kitsuné-tsuki",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "Shinano",
+        "charimg": "image/rookiecv/MihoWatayaShinano.jpg",
+        "appearances": [
+          {
+            "animeTitle": "FOXING: Kitsuné-tsuki",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Thunder 3",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Sydney",
+        "charimg": "image/rookiecv/MihoWatayaSydney.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Thunder 3",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Hell Mode: Yarikomi-zuki no Gamer wa Haisettei no Isekai de Musou Suru 2nd Season",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Myura",
+        "charimg": "image/rookiecv/MihoWatayaMyura.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Hell Mode: Yarikomi-zuki no Gamer wa Haisettei no Isekai de Musou Suru 2nd Season",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Kuroneko to Majo no Kyoushitsu",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Hana Sasorijou",
+        "charimg": "image/rookiecv/MihoWatayaHanaSasorijou.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Kuroneko to Majo no Kyoushitsu",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Disney Twisted-Wonderland: THE ANIMATION - Season 1: EPISODE of HEARTSLABYUL",
+        "year": 2025,
+        "role": "SUPPORTING",
+        "charName": "Trey Clover",
+        "charimg": "image/rookiecv/MihoWatayaTreyClover.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Disney Twisted-Wonderland: THE ANIMATION - Season 1: EPISODE of HEARTSLABYUL",
+            "year": 2025,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Mieruko-chan",
+        "year": 2021,
+        "role": "SUPPORTING",
+        "charName": "Arai",
+        "charimg": "image/rookiecv/MihoWatayaArai.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Mieruko-chan",
+            "year": 2021,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Mewkledreamy",
+        "year": 2020,
+        "role": "SUPPORTING",
+        "charName": "Gakusha",
+        "charimg": "image/rookiecv/MihoWatayaGakusha.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Mewkledreamy",
+            "year": 2020,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Ishuzoku Reviewers",
+        "year": 2020,
+        "role": "SUPPORTING",
+        "charName": "Tamatehime",
+        "charimg": "image/rookiecv/MihoWatayaTamatehime.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Ishuzoku Reviewers",
+            "year": 2020,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Youkai Apartment no Yuuga na Nichijou",
+        "year": 2017,
+        "role": "SUPPORTING",
+        "charName": "Yon-chan",
+        "charimg": "image/rookiecv/MihoWatayaYonchan.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Youkai Apartment no Yuuga na Nichijou",
+            "year": 2017,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Schwarzesmarken",
+        "year": 2016,
+        "role": "SUPPORTING",
+        "charName": "Paule Meyer",
+        "charimg": "image/rookiecv/MihoWatayaPauleMeyer.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Schwarzesmarken",
+            "year": 2016,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Schwarzesmarken",
+        "year": 2016,
+        "role": "SUPPORTING",
+        "charName": "Rosalinde Buch",
+        "charimg": "image/rookiecv/MihoWatayaRosalindeBuch.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Schwarzesmarken",
+            "year": 2016,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "BIKINI WARRIORS",
+        "year": 2015,
+        "role": "SUPPORTING",
+        "charName": "Megami",
+        "charimg": "image/rookiecv/MihoWatayaMegami.jpg",
+        "appearances": [
+          {
+            "animeTitle": "BIKINI WARRIORS",
+            "year": 2015,
+            "role": "SUPPORTING"
+          }
+        ]
+      }
+    ]
+  },
+  "Momoka Terasawa": {
+    "id": 292760,
+    "name": "Momoka Terasawa",
+    "rank": 67,
+    "debutYear": 2022,
+    "score": 78,
+    "scoreBreakdown": {
+      "career": 30,
+      "totalWorks": 3,
+      "currentYearWorks": 0,
+      "mainRole": 25,
+      "recentGrowth": 20
+    },
+    "stats": {
+      "totalWorks": 30,
+      "currentYearWorks": 13,
+      "mainWorks": 2,
+      "supportingWorks": 11,
+      "yearsActive": 4
+    },
+    "cvimg": "image/rookiecv/cv/MomokaTerasawa.jpg",
+    "characters": [
+      {
+        "animeTitle": "Ibitte Konai Gibo to Gishi",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Koyuki Inari",
+        "charimg": "image/rookiecv/MomokaTerasawaKoyukiInari.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Ibitte Konai Gibo to Gishi",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Honoo no Toukyuujyo Dodge Danko",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Urara Mitamura",
+        "charimg": "image/rookiecv/MomokaTerasawaUraraMitamura.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Honoo no Toukyuujyo Dodge Danko",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Oni no Hanayome",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Sou",
+        "charimg": "image/rookiecv/MomokaTerasawaSou.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Oni no Hanayome",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Uchi no Otouto-domo ga Sumimasen",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Rui Narita",
+        "charimg": "image/rookiecv/MomokaTerasawaRuiNarita.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Uchi no Otouto-domo ga Sumimasen",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Reiwa no Dara-san",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "Kaoru Misogiya",
+        "charimg": "image/rookiecv/MomokaTerasawaKaoruMisogiya.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Reiwa no Dara-san",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Saishuu Gakushou Hibike! Euphonium - Zenpen",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Kaho Hariya",
+        "charimg": "image/rookiecv/MomokaTerasawaKahoHariya.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Saishuu Gakushou Hibike! Euphonium - Zenpen",
+            "year": 2026,
+            "role": "SUPPORTING"
+          },
+          {
+            "animeTitle": "Hibike! Euphonium 3: Extra Episodes",
+            "year": 2024,
+            "role": "MAIN"
+          },
+          {
+            "animeTitle": "Hibike! Euphonium 3",
+            "year": 2024,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Ichijouma Mankitsu-gurashi!",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Michika Narumi",
+        "charimg": "image/rookiecv/MomokaTerasawaMichikaNarumi.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Ichijouma Mankitsu-gurashi!",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Kami no Niwatsuki Kusunoki-tei",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Tsumugi",
+        "charimg": "image/rookiecv/MomokaTerasawaTsumugi.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Kami no Niwatsuki Kusunoki-tei",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "MAO",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Otoya",
+        "charimg": "image/rookiecv/MomokaTerasawaOtoya.jpg",
+        "appearances": [
+          {
+            "animeTitle": "MAO",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Yomi no Tsugai",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Danji",
+        "charimg": "image/rookiecv/MomokaTerasawaDanji.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Yomi no Tsugai",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Himitsu no AiPri: Mankai Buzzrium Live!",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Vivi Hachiouji",
+        "charimg": "image/rookiecv/MomokaTerasawaViviHachiouji.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Himitsu no AiPri: Mankai Buzzrium Live!",
+            "year": 2026,
+            "role": "SUPPORTING"
+          },
+          {
+            "animeTitle": "Himitsu no AiPri: Ring-hen",
+            "year": 2025,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Boku no Kokoro no Yabai Yatsu Movie",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Akira Momoyama",
+        "charimg": "image/rookiecv/MomokaTerasawaAkiraMomoyama.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Boku no Kokoro no Yabai Yatsu Movie",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Ginga Tokkyuu Milky☆Subway: Kakueki Teisha Gekijou Yuki",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "Chiharu Kujou",
+        "charimg": "image/rookiecv/MomokaTerasawaChiharuKujou.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Ginga Tokkyuu Milky☆Subway: Kakueki Teisha Gekijou Yuki",
+            "year": 2026,
+            "role": "MAIN"
+          },
+          {
+            "animeTitle": "Ginga Tokkyuu Milky☆Subway: PARCO Original Animation",
+            "year": 2025,
+            "role": "MAIN"
+          },
+          {
+            "animeTitle": "Ginga Tokkyuu Milky☆Subway",
+            "year": 2025,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Arne no Jikenbo",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Eliza",
+        "charimg": "image/rookiecv/MomokaTerasawaEliza.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Arne no Jikenbo",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Fate/strange Fake",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Viola Wahlstrom",
+        "charimg": "image/rookiecv/MomokaTerasawaViolaWahlstrom.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Fate/strange Fake",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Saigo ni Hitotsu dake Onegai Shite mo Yoroshii Deshou ka",
+        "year": 2025,
+        "role": "SUPPORTING",
+        "charName": "Mary",
+        "charimg": "image/rookiecv/MomokaTerasawaMary.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Saigo ni Hitotsu dake Onegai Shite mo Yoroshii Deshou ka",
+            "year": 2025,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Ame to Kimi to",
+        "year": 2025,
+        "role": "SUPPORTING",
+        "charName": "Maracas no Ko",
+        "charimg": "image/rookiecv/MomokaTerasawaMaracasnoKo.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Ame to Kimi to",
+            "year": 2025,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Zutaboro Reijou wa Ane no Moto Konyakusha ni Dekiai Sareru",
+        "year": 2025,
+        "role": "SUPPORTING",
+        "charName": "Caecilie",
+        "charimg": "image/rookiecv/MomokaTerasawaCaecilie.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Zutaboro Reijou wa Ane no Moto Konyakusha ni Dekiai Sareru",
+            "year": 2025,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "DIVE IN!",
+        "year": 2025,
+        "role": "SUPPORTING",
+        "charName": "Ally",
+        "charimg": "image/rookiecv/MomokaTerasawaAlly.jpg",
+        "appearances": [
+          {
+            "animeTitle": "DIVE IN!",
+            "year": 2025,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Make Heroine ga Oosugiru!",
+        "year": 2024,
+        "role": "MAIN",
+        "charName": "Chika Komari",
+        "charimg": "image/rookiecv/MomokaTerasawaChikaKomari.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Make Heroine ga Oosugiru!",
+            "year": 2024,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Yozakura-san Chi no Daisakusen",
+        "year": 2024,
+        "role": "MAIN",
+        "charName": "Shinzo Yozakura",
+        "charimg": "image/rookiecv/MomokaTerasawaShinzoYozakura.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Yozakura-san Chi no Daisakusen",
+            "year": 2024,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Yuzuki-san Chi no Yon Kyoudai.",
+        "year": 2023,
+        "role": "MAIN",
+        "charName": "Gakuto Yuzuki",
+        "charimg": "image/rookiecv/MomokaTerasawaGakutoYuzuki.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Yuzuki-san Chi no Yon Kyoudai.",
+            "year": 2023,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "beautiful day dreamer",
+        "year": 2022,
+        "role": "MAIN",
+        "charName": "Yuzu Hanaoka",
+        "charimg": "image/rookiecv/MomokaTerasawaYuzuHanaoka.jpg",
+        "appearances": [
+          {
+            "animeTitle": "beautiful day dreamer",
+            "year": 2022,
+            "role": "MAIN"
+          }
+        ]
+      }
+    ]
+  },
+  "Wakana Maruoka": {
+    "id": 191136,
+    "name": "Wakana Maruoka",
+    "rank": 68,
+    "debutYear": 2021,
+    "score": 77,
+    "scoreBreakdown": {
+      "career": 20,
+      "totalWorks": 7,
+      "currentYearWorks": 10,
+      "mainRole": 25,
+      "recentGrowth": 15
+    },
+    "stats": {
+      "totalWorks": 16,
+      "currentYearWorks": 6,
+      "mainWorks": 2,
+      "supportingWorks": 4,
+      "yearsActive": 5
+    },
+    "cvimg": "image/rookiecv/cv/WakanaMaruoka.jpg",
+    "characters": [
+      {
+        "animeTitle": "Koko wa Ore ni Makasete Saki ni Ike to Ittekara 10-nen ga Tattara Densetsu ni Natteita.",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Arone",
+        "charimg": "image/rookiecv/WakanaMaruokaArone.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Koko wa Ore ni Makasete Saki ni Ike to Ittekara 10-nen ga Tattara Densetsu ni Natteita.",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "BanG Dream! Yume∞Mita",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Bell",
+        "charimg": "image/rookiecv/WakanaMaruokaBell.jpg",
+        "appearances": [
+          {
+            "animeTitle": "BanG Dream! Yume∞Mita",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Aishiteru Game wo Owarasetai",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Wakana Asagi",
+        "charimg": "image/rookiecv/WakanaMaruokaWakanaAsagi.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Aishiteru Game wo Owarasetai",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Onegai AiPri",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "Gumi Tomosaka",
+        "charimg": "image/rookiecv/WakanaMaruokaGumiTomosaka.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Onegai AiPri",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Reincarnation no Kaben",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "Haito Le Buffett",
+        "charimg": "image/rookiecv/WakanaMaruokaHaitoLeBuffett.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Reincarnation no Kaben",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Shibou Yuugi de Meshi wo Kuu.",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Keito",
+        "charimg": "image/rookiecv/WakanaMaruokaKeito.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Shibou Yuugi de Meshi wo Kuu.",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Nukitashi THE ANIMATION",
+        "year": 2025,
+        "role": "SUPPORTING",
+        "charName": "Shain Miyachiyo",
+        "charimg": "image/rookiecv/WakanaMaruokaShainMiyachiyo.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Nukitashi THE ANIMATION",
+            "year": 2025,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "The iDOLM@STER: Shiny Colors 2nd season - SHHis",
+        "year": 2025,
+        "role": "SUPPORTING",
+        "charName": "Rinze Morino",
+        "charimg": "image/rookiecv/WakanaMaruokaRinzeMorino.jpg",
+        "appearances": [
+          {
+            "animeTitle": "The iDOLM@STER: Shiny Colors 2nd season - SHHis",
+            "year": 2025,
+            "role": "SUPPORTING"
+          },
+          {
+            "animeTitle": "The iDOLM@STER: Shiny Colors 2nd season",
+            "year": 2024,
+            "role": "MAIN"
+          },
+          {
+            "animeTitle": "The iDOLM@STER: Shiny Colors",
+            "year": 2024,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Tokidoki Bosotto Rossiya-go de Dereru Tonari no Alya-san",
+        "year": 2024,
+        "role": "SUPPORTING",
+        "charName": "Yuki Suou",
+        "charimg": "image/rookiecv/WakanaMaruokaYukiSuou.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Tokidoki Bosotto Rossiya-go de Dereru Tonari no Alya-san",
+            "year": 2024,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Jijou wo Shiranai Tenkousei ga Guigui Kuru.",
+        "year": 2023,
+        "role": "SUPPORTING",
+        "charName": "Sumire Kasahara",
+        "charimg": "image/rookiecv/WakanaMaruokaSumireKasahara.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Jijou wo Shiranai Tenkousei ga Guigui Kuru.",
+            "year": 2023,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Shijou Saikyou no Daimaou, Murabito A ni Tensei suru",
+        "year": 2022,
+        "role": "MAIN",
+        "charName": "Ireena Olhyde",
+        "charimg": "image/rookiecv/WakanaMaruokaIreenaOlhyde.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Shijou Saikyou no Daimaou, Murabito A ni Tensei suru",
+            "year": 2022,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Dolls' Frontline",
+        "year": 2022,
+        "role": "SUPPORTING",
+        "charName": "Kawasaki",
+        "charimg": "image/rookiecv/WakanaMaruokaKawasaki.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Dolls' Frontline",
+            "year": 2022,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Yoru no Kuni",
+        "year": 2021,
+        "role": "SUPPORTING",
+        "charName": "Kotoko",
+        "charimg": "image/rookiecv/WakanaMaruokaKotoko.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Yoru no Kuni",
+            "year": 2021,
+            "role": "SUPPORTING"
+          }
+        ]
+      }
+    ]
+  },
+  "Emiri Suyama": {
+    "id": 127723,
+    "name": "Emiri Suyama",
+    "rank": 69,
+    "debutYear": 2018,
+    "score": 76,
+    "scoreBreakdown": {
+      "career": 10,
+      "totalWorks": 3,
+      "currentYearWorks": 40,
+      "mainRole": 8,
+      "recentGrowth": 15
+    },
+    "stats": {
+      "totalWorks": 23,
+      "currentYearWorks": 3,
+      "mainWorks": 0,
+      "supportingWorks": 3,
+      "yearsActive": 8
+    },
+    "cvimg": "image/rookiecv/cv/EmiriSuyama.jpg",
+    "characters": [
+      {
+        "animeTitle": "Saishuu Gakushou Hibike! Euphonium - Zenpen",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Sari Yoshii",
+        "charimg": "image/rookiecv/EmiriSuyamaSariYoshii.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Saishuu Gakushou Hibike! Euphonium - Zenpen",
+            "year": 2026,
+            "role": "SUPPORTING"
+          },
+          {
+            "animeTitle": "Hibike! Euphonium 3",
+            "year": 2024,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Ghost Concert: missing Songs",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "MiucS",
+        "charimg": "image/rookiecv/EmiriSuyamaMiucS.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Ghost Concert: missing Songs",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "MAO",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Masago",
+        "charimg": "image/rookiecv/EmiriSuyamaMasago.jpg",
+        "appearances": [
+          {
+            "animeTitle": "MAO",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Rock wa Lady no Tashinami Deshite",
+        "year": 2025,
+        "role": "SUPPORTING",
+        "charName": "Minami Komori",
+        "charimg": "image/rookiecv/EmiriSuyamaMinamiKomori.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Rock wa Lady no Tashinami Deshite",
+            "year": 2025,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Shadowverse Flame: Arc-hen",
+        "year": 2024,
+        "role": "SUPPORTING",
+        "charName": "Misaki",
+        "charimg": "image/rookiecv/EmiriSuyamaMisaki.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Shadowverse Flame: Arc-hen",
+            "year": 2024,
+            "role": "SUPPORTING"
+          },
+          {
+            "animeTitle": "Shadowverse Flame: Seven Shadows-hen",
+            "year": 2023,
+            "role": "SUPPORTING"
+          },
+          {
+            "animeTitle": "Shadowverse Flame",
+            "year": 2022,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Momochi-san Chi no Ayakashi Ouji",
+        "year": 2024,
+        "role": "SUPPORTING",
+        "charName": "Hana Iizuka",
+        "charimg": "image/rookiecv/EmiriSuyamaHanaIizuka.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Momochi-san Chi no Ayakashi Ouji",
+            "year": 2024,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Hokkyoku Hyakkaten no Concierge-san",
+        "year": 2023,
+        "role": "SUPPORTING",
+        "charName": "Barbary Lion Kanojo",
+        "charimg": "image/rookiecv/EmiriSuyamaBarbaryLionKanojo.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Hokkyoku Hyakkaten no Concierge-san",
+            "year": 2023,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Higeki no Genkyou to Naru Saikyou Gedou Last Boss Joou wa Tami no Tame ni Tsukushimasu.",
+        "year": 2023,
+        "role": "SUPPORTING",
+        "charName": "Lotte",
+        "charimg": "image/rookiecv/EmiriSuyamaLotte.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Higeki no Genkyou to Naru Saikyou Gedou Last Boss Joou wa Tami no Tame ni Tsukushimasu.",
+            "year": 2023,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Umayuru",
+        "year": 2022,
+        "role": "SUPPORTING",
+        "charName": "Etsuko Otonashi",
+        "charimg": "image/rookiecv/EmiriSuyamaEtsukoOtonashi.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Umayuru",
+            "year": 2022,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Hula Fulla Dance",
+        "year": 2021,
+        "role": "MAIN",
+        "charName": "Shion Shirasawa",
+        "charimg": "image/rookiecv/EmiriSuyamaShionShirasawa.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Hula Fulla Dance",
+            "year": 2021,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Puraore!: PRIDE OF ORANGE",
+        "year": 2021,
+        "role": "SUPPORTING",
+        "charName": "Kaori Mihara",
+        "charimg": "image/rookiecv/EmiriSuyamaKaoriMihara.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Puraore!: PRIDE OF ORANGE",
+            "year": 2021,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Blue Period",
+        "year": 2021,
+        "role": "SUPPORTING",
+        "charName": "Sae Okada",
+        "charimg": "image/rookiecv/EmiriSuyamaSaeOkada.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Blue Period",
+            "year": 2021,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Tomica Kizuna Gattai: Earth Granner",
+        "year": 2020,
+        "role": "SUPPORTING",
+        "charName": "Rin Kumaneko",
+        "charimg": "image/rookiecv/EmiriSuyamaRinKumaneko.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Tomica Kizuna Gattai: Earth Granner",
+            "year": 2020,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Mewkledreamy",
+        "year": 2020,
+        "role": "SUPPORTING",
+        "charName": "Fumiko Amamiya",
+        "charimg": "image/rookiecv/EmiriSuyamaFumikoAmamiya.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Mewkledreamy",
+            "year": 2020,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Oda Cinnamon Nobunaga",
+        "year": 2020,
+        "role": "SUPPORTING",
+        "charName": "Tomo",
+        "charimg": "image/rookiecv/EmiriSuyamaTomo.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Oda Cinnamon Nobunaga",
+            "year": 2020,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Aikatsu on Parade!",
+        "year": 2019,
+        "role": "SUPPORTING",
+        "charName": "Sakuya Shirayuri",
+        "charimg": "image/rookiecv/EmiriSuyamaSakuyaShirayuri.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Aikatsu on Parade!",
+            "year": 2019,
+            "role": "SUPPORTING"
+          },
+          {
+            "animeTitle": "Aikatsu Friends!: Kagayaki no Jewel",
+            "year": 2019,
+            "role": "SUPPORTING"
+          },
+          {
+            "animeTitle": "Aikatsu Friends!",
+            "year": 2018,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Cosmos",
+        "year": 2019,
+        "role": "MAIN",
+        "charName": "Sora Ichinose",
+        "charimg": "image/rookiecv/EmiriSuyamaSoraIchinose.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Cosmos",
+            "year": 2019,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "BEATLESS",
+        "year": 2018,
+        "role": "MAIN",
+        "charName": "Erika Burroughs",
+        "charimg": "image/rookiecv/EmiriSuyamaErikaBurroughs.jpg",
+        "appearances": [
+          {
+            "animeTitle": "BEATLESS",
+            "year": 2018,
+            "role": "MAIN"
+          }
+        ]
+      }
+    ]
+  },
+  "Kento Hama": {
+    "id": 122595,
+    "name": "Kento Hama",
+    "rank": 70,
+    "debutYear": 2014,
+    "score": 75,
+    "scoreBreakdown": {
+      "career": 0,
+      "totalWorks": 7,
+      "currentYearWorks": 40,
+      "mainRole": 8,
+      "recentGrowth": 20
+    },
+    "stats": {
+      "totalWorks": 16,
+      "currentYearWorks": 3,
+      "mainWorks": 0,
+      "supportingWorks": 3,
+      "yearsActive": 12
+    },
+    "cvimg": "image/rookiecv/cv/KentoHama.jpg",
+    "characters": [
+      {
+        "animeTitle": "Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu II",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Ein",
+        "charimg": "image/rookiecv/KentoHamaEin.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu II",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Diamond no Ace act II: Second Season",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Kouji Nara",
+        "charimg": "image/rookiecv/KentoHamaKoujiNara.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Diamond no Ace act II: Second Season",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Yuusha Party wo Oidasareta Kiyou Binbou",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "Wilkes Severley",
+        "charimg": "image/rookiecv/KentoHamaWilkesSeverley.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Yuusha Party wo Oidasareta Kiyou Binbou",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Disney Twisted-Wonderland: THE ANIMATION - Season 1: EPISODE of HEARTSLABYUL",
+        "year": 2025,
+        "role": "SUPPORTING",
+        "charName": "Alchemi Pinka",
+        "charimg": "image/rookiecv/KentoHamaAlchemiPinka.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Disney Twisted-Wonderland: THE ANIMATION - Season 1: EPISODE of HEARTSLABYUL",
+            "year": 2025,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Touken Ranbu Kai: Kyoden Moyuru Honnouji",
+        "year": 2024,
+        "role": "SUPPORTING",
+        "charName": "Mutsunokami Yoshiyuki",
+        "charimg": "image/rookiecv/KentoHamaMutsunokamiYoshiyuki.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Touken Ranbu Kai: Kyoden Moyuru Honnouji",
+            "year": 2024,
+            "role": "SUPPORTING"
+          },
+          {
+            "animeTitle": "Toku: Touken Ranbu - Hanamaru - Setsugetsuka",
+            "year": 2022,
+            "role": "SUPPORTING"
+          },
+          {
+            "animeTitle": "Zoku Touken Ranbu: Hanamaru",
+            "year": 2018,
+            "role": "SUPPORTING"
+          },
+          {
+            "animeTitle": "Touken Ranbu: Hanamaru - Makuai Kaisouroku",
+            "year": 2017,
+            "role": "SUPPORTING"
+          },
+          {
+            "animeTitle": "Katsugeki Touken Ranbu",
+            "year": 2017,
+            "role": "MAIN"
+          },
+          {
+            "animeTitle": "Touken Ranbu: Hanamaru",
+            "year": 2016,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Dosukoi Sushi-Zumou",
+        "year": 2021,
+        "role": "MAIN",
+        "charName": "Oyakata Takenoko",
+        "charimg": "image/rookiecv/KentoHamaOyakataTakenoko.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Dosukoi Sushi-Zumou",
+            "year": 2021,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "A3! SEASON AUTUMN & WINTER",
+        "year": 2020,
+        "role": "MAIN",
+        "charName": "Taichi Nanao",
+        "charimg": "image/rookiecv/KentoHamaTaichiNanao.jpg",
+        "appearances": [
+          {
+            "animeTitle": "A3! SEASON AUTUMN & WINTER",
+            "year": 2020,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "The Idolm@ster SideM Wake Atte Mini!",
+        "year": 2018,
+        "role": "SUPPORTING",
+        "charName": "Ryu Kimura",
+        "charimg": "image/rookiecv/KentoHamaRyuKimura.jpg",
+        "appearances": [
+          {
+            "animeTitle": "The Idolm@ster SideM Wake Atte Mini!",
+            "year": 2018,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Kyoukai no Rinne 2",
+        "year": 2016,
+        "role": "SUPPORTING",
+        "charName": "Shoot Saka",
+        "charimg": "image/rookiecv/KentoHamaShootSaka.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Kyoukai no Rinne 2",
+            "year": 2016,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Cardfight!! Vanguard G: GIRS Crisis-hen",
+        "year": 2015,
+        "role": "SUPPORTING",
+        "charName": "Olivier Gaillard",
+        "charimg": "image/rookiecv/KentoHamaOlivierGaillard.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Cardfight!! Vanguard G: GIRS Crisis-hen",
+            "year": 2015,
+            "role": "SUPPORTING"
+          },
+          {
+            "animeTitle": "Cardfight!! Vanguard: Legion Mate-hen",
+            "year": 2014,
             "role": "SUPPORTING"
           }
         ]
