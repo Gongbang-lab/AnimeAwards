@@ -11430,7 +11430,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제21화",
-        "episode title": "先鋒戦",
+        "episode title": "선봉전",
         "storyboard": {
             "staff": [
                 "카와무라 켄이치"
@@ -11445,7 +11445,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제22화",
-        "episode title": "罠",
+        "episode title": "함정",
         "storyboard": {
             "staff": [
                 "사토 유조"
@@ -11462,10 +11462,30 @@ var animeEPData_2026 = {
         "episode no": "제23화",
         "episode title": "中堅戦",
         "storyboard": {
-            "staff": []
+            "staff": [
+                "코바야시 이치조"
+            ]
         },
         "episode director": {
-            "staff": []
+            "staff": [
+                "카와노 아사미",
+                "류승철"
+            ]
+        }
+    },
+    {
+        "episode no": "제24화",
+        "episode title": "逆襲",
+        "storyboard": {
+            "staff": [
+                "김현정"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "김현정",
+                "김문수"
+            ]
         }
     }
 ],
@@ -19324,10 +19344,32 @@ var animeEPData_2026 = {
         "episode no": "제22화",
         "episode title": "카게모리 형제와 쿠로야 남매",
         "storyboard": {
-            "staff": []
+            "staff": [
+                "카모이 토모요"
+            ]
         },
         "episode director": {
-            "staff": []
+            "staff": [
+                "요시나가 하루카",
+                "카모이 토모요",
+                "나가토미 코지"
+            ]
+        }
+    },
+    {
+        "episode no": "제23화",
+        "episode title": "정과 이치",
+        "storyboard": {
+            "staff": [
+                "허종",
+                "이이노 신야"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "키타무라 마사시",
+                "야마기시 다이고"
+            ]
         }
     }
 ],
@@ -19641,6 +19683,35 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "사토 테루오"
+            ]
+        }
+    },
+    {
+        "episode no": "제23화",
+        "episode title": "밤을 걷는 환자",
+        "storyboard": {
+            "staff": [
+                "카와이 사쿠라"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야마모토 카츠야"
+            ]
+        }
+    },
+    {
+        "episode no": "제24화",
+        "episode title": "村芝居の一座",
+        "storyboard": {
+            "staff": [
+                "요네다 미츠히로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "요네다 미츠히로",
+                "도몬 켄이치"
             ]
         }
     }
@@ -22886,6 +22957,21 @@ var animeEPData_2026 = {
                 "호시 케이토"
             ]
         }
+    },
+    {
+        "episode no": "제12화",
+        "episode title": "끝과 시작",
+        "storyboard": {
+            "staff": [
+                "이토 토모히코",
+                "시부야 료스케"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카토 쇼고"
+            ]
+        }
     }
 ],
 "58878": [
@@ -22905,7 +22991,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제2화",
-        "episode title": "울부짖어라, 광견",
+        "episode title": "시가를 달린다",
         "storyboard": {
             "staff": [
                 "코이데 타쿠시"
@@ -22975,7 +23061,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제7화",
-        "episode title": "決勝戦の夜",
+        "episode title": "토요일 10시, 비와코 테라스에서",
         "storyboard": {
             "staff": [
                 "카와나미 에이사쿠"
@@ -22989,7 +23075,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제8화",
-        "episode title": "決勝戦の夜",
+        "episode title": "결승전의 밤",
         "storyboard": {
             "staff": [
                 "요시베 나오키"
@@ -23003,7 +23089,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제9화",
-        "episode title": "本当の愛",
+        "episode title": "진정한 사랑",
         "storyboard": {
             "staff": [
                 "츠지 아야카"
@@ -23017,7 +23103,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제10화",
-        "episode title": "刃を持ったプリンセス",
+        "episode title": "칼날을 쥔 프린세스",
         "storyboard": {
             "staff": [
                 "코이데 타쿠시"
@@ -23029,20 +23115,6 @@ var animeEPData_2026 = {
                 "모리 요시히코",
                 "코자토 아스카",
                 "이이노 신야"
-            ]
-        }
-    },
-    {
-        "episode no": "제11화",
-        "episode title": "魔女グレイス",
-        "storyboard": {
-            "staff": [
-                "사토 요스케"
-            ]
-        },
-        "episode director": {
-            "staff": [
-                "사토 요스케"
             ]
         }
     }
@@ -23187,6 +23259,21 @@ var animeEPData_2026 = {
                 "쿠사카 나오요시"
             ]
         }
+    },
+    {
+        "episode no": "제11화",
+        "episode title": "레비아타노, 포효",
+        "storyboard": {
+            "staff": [
+                "모리 타케시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야나세 유지",
+                "오오바 유코"
+            ]
+        }
     }
 ],
 "62936": [
@@ -23262,7 +23349,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제6화",
-        "episode title": "空白のテラス席",
+        "episode title": "테라스의 빈자리",
         "storyboard": {
             "staff": [
                 "요네다 미츠요시"
@@ -23276,7 +23363,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제7화",
-        "episode title": "透明",
+        "episode title": "투명",
         "storyboard": {
             "staff": [
                 "니시타 마사요시",
@@ -23314,20 +23401,6 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "키무라 켄스케"
-            ]
-        }
-    },
-    {
-        "episode no": "제10화",
-        "episode title": "ずっと、そばに",
-        "storyboard": {
-            "staff": [
-                "박지승"
-            ]
-        },
-        "episode director": {
-            "staff": [
-                "太田気績"
             ]
         }
     }
@@ -23470,6 +23543,20 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "사이 인가이"
+            ]
+        }
+    },
+    {
+        "episode no": "제11화",
+        "episode title": "혈투! 붕괴하는 마을에서 죽다",
+        "storyboard": {
+            "staff": [
+                "오오하라 미노루"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "타카하시 유키오"
             ]
         }
     }
@@ -23617,6 +23704,20 @@ var animeEPData_2026 = {
                 "카와무라 아야"
             ]
         }
+    },
+    {
+        "episode no": "제11화",
+        "episode title": "10년을 싸워서 마신은 여유롭게 잡을 수 있다",
+        "storyboard": {
+            "staff": [
+                "나카가와 사토시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "세키 하루타"
+            ]
+        }
     }
 ],
 "62289": [
@@ -23748,7 +23849,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제10화",
-        "episode title": "海辺にて",
+        "episode title": "해변에서",
         "storyboard": {
             "staff": [
                 "오오야 미츠코"
@@ -23757,6 +23858,20 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "사토 마사후미"
+            ]
+        }
+    },
+    {
+        "episode no": "제11화",
+        "episode title": "偽りの金貨",
+        "storyboard": {
+            "staff": [
+                "쿠즈야 나오유키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "김민선"
             ]
         }
     }
@@ -23849,7 +23964,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제7화",
-        "episode title": "お腰につけたムーチ団子～、一つ残らずくださいな～♪",
+        "episode title": "당고 하나 더 주면 안 잡아 먹지",
         "storyboard": {
             "staff": [
                 "마에사와 히로키"
@@ -23863,7 +23978,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제8화",
-        "episode title": "煮込み＆イクラ『私とあの子、どっちを選ぶの!?』 米『両方とも大好きだ！』",
+        "episode title": "진정한 밥도둑은 조림? 연어알? 둘 다 포기 못 해!",
         "storyboard": {
             "staff": [
                 "마에사와 히로키"
@@ -23877,7 +23992,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제9화",
-        "episode title": "サクッと解決、カラッと和解! 天ぷらだけにね!",
+        "episode title": "바싹하게 해결! 촉촉하게 화해! 튀김처럼 말이지!",
         "storyboard": {
             "staff": [
                 "키요시마 유코"
@@ -23901,6 +24016,20 @@ var animeEPData_2026 = {
             "staff": [
                 "코야마 요시타카",
                 "야마구치 유키"
+            ]
+        }
+    },
+    {
+        "episode no": "제11화",
+        "episode title": "夜のキューバサンドは罪の味！",
+        "storyboard": {
+            "staff": [
+                "마에사와 히로키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "시로 소타"
             ]
         }
     }
@@ -24023,7 +24152,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제9화",
-        "episode title": "戦慄の記憶! 修羅のドッジ!",
+        "episode title": "전율의 기억! 지옥의 피구!",
         "storyboard": {
             "staff": [
                 "시무라 히로아키"
@@ -24046,6 +24175,20 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "오오바 히데아키"
+            ]
+        }
+    },
+    {
+        "episode no": "제11화",
+        "episode title": "闇をなぎ払え! 伝説のシュート!",
+        "storyboard": {
+            "staff": [
+                "유키히로 마츠시타"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카토 아키라"
             ]
         }
     }
@@ -24137,7 +24280,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제7화",
-        "episode title": "特別、だから",
+        "episode title": "특별하니까",
         "storyboard": {
             "staff": [
                 "후타무라 히데키"
@@ -24151,7 +24294,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제8화",
-        "episode title": "心の、居場所",
+        "episode title": "마음이 머물 곳",
         "storyboard": {
             "staff": [
                 "고다 케이스케"
@@ -24188,6 +24331,21 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "카미죠 오사무"
+            ]
+        }
+    },
+    {
+        "episode no": "제11화",
+        "episode title": "二人、一緒なら",
+        "storyboard": {
+            "staff": [
+                "니시타 마사요시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "시라이 베니하",
+                "사쿠마 미즈키"
             ]
         }
     }
@@ -24252,7 +24410,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제5화",
-        "episode title": "TV取材",
+        "episode title": "TV 취재",
         "storyboard": {
             "staff": [
                 "와타나베 신이치"
@@ -24266,7 +24424,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제6화",
-        "episode title": "アシスト",
+        "episode title": "어시스트",
         "storyboard": {
             "staff": [
                 "로마노프 히가"
@@ -24280,7 +24438,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제7화",
-        "episode title": "お母さん",
+        "episode title": "엄마",
         "storyboard": {
             "staff": [
                 "이나가키 타카유키"
@@ -24332,6 +24490,21 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "카도타 히데히코"
+            ]
+        }
+    },
+    {
+        "episode no": "제11화",
+        "episode title": "沖縄再上陸（表）",
+        "storyboard": {
+            "staff": [
+                "사토 후미카즈"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "타카바야시 히사야",
+                "나카노 케이타"
             ]
         }
     }
@@ -24468,7 +24641,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제10화",
-        "episode title": "そう思ったんだ",
+        "episode title": "그런 생각이 들었다",
         "storyboard": {
             "staff": [
                 "타마키 신고"
@@ -24477,6 +24650,20 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "타마키 신고"
+            ]
+        }
+    },
+    {
+        "episode no": "제11화",
+        "episode title": "獣",
+        "storyboard": {
+            "staff": [
+                "이바타 쇼타"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이바타 쇼타"
             ]
         }
     }
@@ -24614,7 +24801,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제10화",
-        "episode title": "忘れない日",
+        "episode title": "잊을 수 없는 날",
         "storyboard": {
             "staff": [
                 "코마다 유키"
@@ -24624,6 +24811,23 @@ var animeEPData_2026 = {
             "staff": [
                 "스즈키 타쿠마",
                 "미네 토모노리"
+            ]
+        }
+    },
+    {
+        "episode no": "제11화",
+        "episode title": "無垢",
+        "storyboard": {
+            "staff": [
+                "에노모토 나오",
+                "야마이 아츠키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "타카하시 슌스케",
+                "야마이 아츠키",
+                "에노모토 나오"
             ]
         }
     }
@@ -24767,10 +24971,14 @@ var animeEPData_2026 = {
         "episode no": "제10화",
         "episode title": "BRAIN DRAIN ⅲ + GHOST COAST + EPILOGUE",
         "storyboard": {
-            "staff": []
+            "staff": [
+                "모코짱"
+            ]
         },
         "episode director": {
-            "staff": []
+            "staff": [
+                "카네코 타카히로"
+            ]
         }
     }
 ],
@@ -25093,6 +25301,21 @@ var animeEPData_2026 = {
                 "시모토리 코스케"
             ]
         }
+    },
+    {
+        "episode no": "제23화",
+        "episode title": "シン",
+        "storyboard": {
+            "staff": [
+                "카와이 사쿠라",
+                "하카타 마사토시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "하라다 나나"
+            ]
+        }
     }
 ],
 "62476": [
@@ -25367,6 +25590,20 @@ var animeEPData_2026 = {
                 "타카바야시 히사야"
             ]
         }
+    },
+    {
+        "episode no": "Episode11",
+        "episode title": "마음이 머무는 곳",
+        "storyboard": {
+            "staff": [
+                "마츠조노 히로시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이토 히로시"
+            ]
+        }
     }
 ],
 "62513": [
@@ -25488,10 +25725,28 @@ var animeEPData_2026 = {
         "episode no": "제9막",
         "episode title": "거울 미궁",
         "storyboard": {
-            "staff": []
+            "staff": [
+                "사이토 노리아키"
+            ]
         },
         "episode director": {
-            "staff": []
+            "staff": [
+                "오노 료타"
+            ]
+        }
+    },
+    {
+        "episode no": "제10막",
+        "episode title": "제2의 시련",
+        "storyboard": {
+            "staff": [
+                "소쿠자 마코토"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "소쿠자 마코토"
+            ]
         }
     }
 ],
@@ -25614,10 +25869,31 @@ var animeEPData_2026 = {
         "episode no": "제9화",
         "episode title": "관광 여행",
         "storyboard": {
-            "staff": []
+            "staff": [
+                "미우라 케이",
+                "야마모토 타카유키"
+            ]
         },
         "episode director": {
-            "staff": []
+            "staff": [
+                "마츠바라 사토시",
+                "오가타 미츠히로",
+                "후지사와 카이"
+            ]
+        }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "활로",
+        "storyboard": {
+            "staff": [
+                "마츠바라 사토시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "마츠바라 사토시"
+            ]
         }
     }
 ],
@@ -25766,10 +26042,28 @@ var animeEPData_2026 = {
         "episode no": "제11화",
         "episode title": "그녀들의 선택지",
         "storyboard": {
-            "staff": []
+            "staff": [
+                "이시히라 신지"
+            ]
         },
         "episode director": {
-            "staff": []
+            "staff": [
+                "타카하시 코헤이"
+            ]
+        }
+    },
+    {
+        "episode no": "제12화",
+        "episode title": "세상에서 제일 멋진 메이드",
+        "storyboard": {
+            "staff": [
+                "이시히라 신지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "무라카와 나오야"
+            ]
         }
     }
 ],
@@ -25819,7 +26113,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제81화",
-        "episode title": "一途な星",
+        "episode title": "일편단심인 별",
         "storyboard": {
             "staff": [
                 "하라 히데카즈",
@@ -25829,6 +26123,20 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "하라 히데카즈"
+            ]
+        }
+    },
+    {
+        "episode no": "제82화",
+        "episode title": "나츠키 스바루",
+        "storyboard": {
+            "staff": [
+                "오자와 카즈히로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "오자와 카즈히로"
             ]
         }
     }
@@ -25949,7 +26257,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제9화",
-        "episode title": "規律と伝統の生徒会",
+        "episode title": "규율과 전통의 학생회",
         "storyboard": {
             "staff": [
                 "무라카와 나오야"
@@ -25958,6 +26266,20 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "시미즈 아키라"
+            ]
+        }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "소녀들의 전쟁",
+        "storyboard": {
+            "staff": [
+                "Noumin6"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야마모토 유타로"
             ]
         }
     }
@@ -26079,12 +26401,32 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제9화",
-        "episode title": "리비아",
+        "episode title": "리비아...",
         "storyboard": {
-            "staff": []
+            "staff": [
+                "미우라 카즈야",
+                "吳瑜玹"
+            ]
         },
         "episode director": {
-            "staff": []
+            "staff": [
+                "吳瑜玹"
+            ]
+        }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "아픈 데를 찌르네",
+        "storyboard": {
+            "staff": [
+                "마스다 토시히코",
+                "미우라 카즈야"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "오오시마 루브"
+            ]
         }
     }
 ],
@@ -26204,6 +26546,21 @@ var animeEPData_2026 = {
                 "호마 히로"
             ]
         }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "片田舎のおっさん、教都に行く",
+        "storyboard": {
+            "staff": [
+                "Royden B"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카와시마 마사루",
+                "에지리 타카히데"
+            ]
+        }
     }
 ],
 "63508": [
@@ -26321,7 +26678,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제9화",
-        "episode title": "",
+        "episode title": "탈환",
         "storyboard": {
             "staff": [
                 "모리 타케시"
@@ -26335,7 +26692,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제10화",
-        "episode title": "",
+        "episode title": "기만",
         "storyboard": {
             "staff": [
                 "오오쿠보 료"
@@ -26344,6 +26701,35 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "오오쿠보 료"
+            ]
+        }
+    },
+    {
+        "episode no": "제11화",
+        "episode title": "断鎖",
+        "storyboard": {
+            "staff": [
+                "이시이 히사시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "히라야마 타카나리"
+            ]
+        }
+    },
+    {
+        "episode no": "제12화",
+        "episode title": "神をも超えて",
+        "storyboard": {
+            "staff": [
+                "이시이 히사시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이시이 히사시",
+                "타카하시 코헤이"
             ]
         }
     }
@@ -26504,6 +26890,22 @@ var animeEPData_2026 = {
                 "코바리 쇼시"
             ]
         }
+    },
+    {
+        "episode no": "Lv12",
+        "episode title": "쓰레기 같은 상식",
+        "storyboard": {
+            "staff": [
+                "타카시마 토모야",
+                "쿠마 후쿠로",
+                "카사이 요시노부"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카사이 요시노부"
+            ]
+        }
     }
 ],
 "63780": [
@@ -26662,6 +27064,20 @@ var animeEPData_2026 = {
                 "홍 페니"
             ]
         }
+    },
+    {
+        "episode no": "ep.12",
+        "episode title": "어쩔 수 없지",
+        "storyboard": {
+            "staff": [
+                "오오츠키 아츠시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "나카무라 킨야"
+            ]
+        }
     }
 ],
 "63418": [
@@ -26747,7 +27163,17 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "EPISODE 9",
-        "episode title": "THE STRONG MEN",
+        "episode title": "강한 남자들",
+        "storyboard": {
+            "staff": []
+        },
+        "episode director": {
+            "staff": []
+        }
+    },
+    {
+        "episode no": "EPISODE 10",
+        "episode title": "타임아웃",
         "storyboard": {
             "staff": []
         },
@@ -27037,10 +27463,28 @@ var animeEPData_2026 = {
         "episode no": "제10괴",
         "episode title": "단둘만의 축제",
         "storyboard": {
-            "staff": []
+            "staff": [
+                "시미즈 사토시"
+            ]
         },
         "episode director": {
-            "staff": []
+            "staff": [
+                "요시다 슌지"
+            ]
+        }
+    },
+    {
+        "episode no": "제11괴",
+        "episode title": "금단 담력 시험",
+        "storyboard": {
+            "staff": [
+                "스나가 마오"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "스나가 마오"
+            ]
         }
     }
 ],
@@ -27187,6 +27631,34 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "호소마 나루"
+            ]
+        }
+    },
+    {
+        "episode no": "11번",
+        "episode title": "보름 전야",
+        "storyboard": {
+            "staff": [
+                "요네모리 유키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "요네모리 유키"
+            ]
+        }
+    },
+    {
+        "episode no": "12번",
+        "episode title": "초심",
+        "storyboard": {
+            "staff": [
+                "쿠로야나기 토시마사"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "쿠로야나기 토시마사"
             ]
         }
     }
@@ -27355,10 +27827,30 @@ var animeEPData_2026 = {
         "episode no": "#12",
         "episode title": "이별",
         "storyboard": {
-            "staff": []
+            "staff": [
+                "우메츠 토모미"
+            ]
         },
         "episode director": {
-            "staff": []
+            "staff": [
+                "미야타 타쿠미"
+            ]
+        }
+    },
+    {
+        "episode no": "#13",
+        "episode title": "무겐다이 뮤타입",
+        "storyboard": {
+            "staff": [
+                "우메츠 토모미",
+                "사사키 켄타",
+                "우메츠 토모미"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "오가와 코타로"
+            ]
         }
     }
 ],
@@ -27436,7 +27928,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제6화",
-        "episode title": "シン・シンコイワ",
+        "episode title": "신 신코이와",
         "storyboard": {
             "staff": [
                 "세토 켄지"
@@ -27465,7 +27957,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제8화",
-        "episode title": "ディープ・ディバイド",
+        "episode title": "딥 디바이드",
         "storyboard": {
             "staff": [
                 "히이로 유키나"
@@ -27488,6 +27980,20 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "츠키노 마사시"
+            ]
+        }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "バリア・ブレイク",
+        "storyboard": {
+            "staff": [
+                "오기와라 마코토"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "나카무라 유토"
             ]
         }
     }
@@ -27603,6 +28109,34 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "야마우치 토미오"
+            ]
+        }
+    },
+    {
+        "episode no": "아홉 대째",
+        "episode title": "슈퍼 뒤에서 가까워지는 두 사람",
+        "storyboard": {
+            "staff": [
+                "나카야마 타케히로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "후세키 카즈노부"
+            ]
+        }
+    },
+    {
+        "episode no": "열 대째",
+        "episode title": "슈퍼 뒤에서 빛을 발하는 두 사람",
+        "storyboard": {
+            "staff": [
+                "모리 아오이"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "엔도 료헤이"
             ]
         }
     }
@@ -27748,6 +28282,20 @@ var animeEPData_2026 = {
                 "야마기시 테츠이치"
             ]
         }
+    },
+    {
+        "episode no": "Chapter11",
+        "episode title": "피할 수 없는 과거",
+        "storyboard": {
+            "staff": [
+                "요코미네 카츠마사"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야마기시 테츠이치"
+            ]
+        }
     }
 ],
 "63403": [
@@ -27781,7 +28329,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제3화",
-        "episode title": "ニャーはボケよりツッコミ寄りにゃ",
+        "episode title": "나는 이래 봬도 팩폭 담당이다냥",
         "storyboard": {
             "staff": [
                 "나와 무네노리"
@@ -27795,7 +28343,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제4화",
-        "episode title": "ニャーのまわりは変人ばかりにゃ",
+        "episode title": "내 주변엔 이상한 애들밖에 없다냥",
         "storyboard": {
             "staff": [
                 "나와 무네노리"
@@ -27809,7 +28357,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제5화",
-        "episode title": "ニャーたち秘境に行くにゃ",
+        "episode title": "나는 미지의 땅으로 가겠다냥",
         "storyboard": {
             "staff": [
                 "쿠마노 치히로"
@@ -27875,6 +28423,21 @@ var animeEPData_2026 = {
             "staff": [
                 "히로타 코스케",
                 "시부타 나오아키"
+            ]
+        }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "ニャーもイベントを楽しむにゃ",
+        "storyboard": {
+            "staff": [
+                "요네다 미츠히로",
+                "타카하시 켄지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카미야마 마사토"
             ]
         }
     }
@@ -27994,7 +28557,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제9화",
-        "episode title": "乙女怪獣愚痴を吐け!",
+        "episode title": "소녀 괴수, 불만을 털어놔!!",
         "storyboard": {
             "staff": [
                 "호리구치 카즈키"
@@ -28008,7 +28571,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제10화",
-        "episode title": "泣くな失恋怪獣",
+        "episode title": "울지마, 실연 괴수",
         "storyboard": {
             "staff": [
                 "요시오카 시노부"
@@ -28018,6 +28581,21 @@ var animeEPData_2026 = {
             "staff": [
                 "요시오카 시노부",
                 "쿠로다 켄지"
+            ]
+        }
+    },
+    {
+        "episode no": "제11화",
+        "episode title": "クロエVSアカエ",
+        "storyboard": {
+            "staff": [
+                "스즈키 마사오"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "오오니시 모에",
+                "니시카타 야스히토"
             ]
         }
     }
@@ -28141,7 +28719,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제9화",
-        "episode title": "辺境領主様と結婚式",
+        "episode title": "변경 영주님과 결혼식",
         "storyboard": {
             "staff": [
                 "카와모토 카즈타카",
@@ -28152,6 +28730,34 @@ var animeEPData_2026 = {
             "staff": [
                 "카와모토 카즈타카",
                 "후지 아야나"
+            ]
+        }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "변경 영주님과 아들딸들",
+        "storyboard": {
+            "staff": [
+                "아베 모토히로"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "아베 모토히로"
+            ]
+        }
+    },
+    {
+        "episode no": "제11화",
+        "episode title": "辺境領主様とアルナーの兄",
+        "storyboard": {
+            "staff": [
+                "이마이즈미 켄이치"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "카이타니 코토나리"
             ]
         }
     }
@@ -28266,6 +28872,20 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "카와카미 유스케"
+            ]
+        }
+    },
+    {
+        "episode no": "제21회",
+        "episode title": "그 사나이, 쿠스노키 마사시게",
+        "storyboard": {
+            "staff": [
+                "카와카미 유스케"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야마모토 요스케"
             ]
         }
     }
@@ -28388,12 +29008,30 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제9화",
-        "episode title": "인터넷의 바다로~누군가를 위해서가 아닌 자신을 위해 그리자!",
+        "episode title": "인터넷의 바다로 ~남을 위해서가 아니라 날 위해서 그리자!",
         "storyboard": {
-            "staff": []
+            "staff": [
+                "니시다 쇼지"
+            ]
         },
         "episode director": {
-            "staff": []
+            "staff": [
+                "쿠보 타로"
+            ]
+        }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "이 세상의 90%는 쓰레기다 ~엄마보다 강해지려면 ‘친구’가 필요하다",
+        "storyboard": {
+            "staff": [
+                "오가사와라 타쿠야"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "오가사와라 타쿠야"
+            ]
         }
     }
 ],
@@ -28538,6 +29176,20 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "세키 아키코"
+            ]
+        }
+    },
+    {
+        "episode no": "제11화",
+        "episode title": "히로시마 오노미치 온천 사건",
+        "storyboard": {
+            "staff": [
+                "산죠 나미미"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "토바 아키라"
             ]
         }
     }
@@ -28685,6 +29337,20 @@ var animeEPData_2026 = {
             "staff": [
                 "신재익",
                 "스즈키 켄토"
+            ]
+        }
+    },
+    {
+        "episode no": "제23화",
+        "episode title": "개방자",
+        "storyboard": {
+            "staff": [
+                "이시히라 신지"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이나무라 호나미"
             ]
         }
     }
@@ -28947,10 +29613,28 @@ var animeEPData_2026 = {
         "episode no": "제11화",
         "episode title": "마지막 안식처",
         "storyboard": {
-            "staff": []
+            "staff": [
+                "오오츠키 아츠시"
+            ]
         },
         "episode director": {
-            "staff": []
+            "staff": [
+                "코야노 타츠나리"
+            ]
+        }
+    },
+    {
+        "episode no": "제12화",
+        "episode title": "고양이와 왕도의 축제",
+        "storyboard": {
+            "staff": [
+                "나카노 츠요시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "나카노 츠요시"
+            ]
         }
     }
 ],
@@ -29091,12 +29775,34 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제10화",
-        "episode title": "ヤバスギルスキル",
+        "episode title": "너무 위험한 스킬",
         "storyboard": {
-            "staff": []
+            "staff": [
+                "TYUTYU",
+                "닛타 치히로",
+                "나가요시 미즈키"
+            ]
         },
         "episode director": {
-            "staff": []
+            "staff": [
+                "王易"
+            ]
+        }
+    },
+    {
+        "episode no": "제11화",
+        "episode title": "Black or White",
+        "storyboard": {
+            "staff": [
+                "TYUTYU",
+                "오쿠야마 키요시",
+                "마츠이 마유코"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이바타 요시히데"
+            ]
         }
     }
 ],
@@ -29228,6 +29934,34 @@ var animeEPData_2026 = {
                 "안도 히로아키"
             ]
         }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "同時多発流星事件ト電波物件ト念写男",
+        "storyboard": {
+            "staff": [
+                "마츠이 히토유키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "무라타 나오키"
+            ]
+        }
+    },
+    {
+        "episode no": "제11화",
+        "episode title": "毒男",
+        "storyboard": {
+            "staff": [
+                "안도 히로아키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "마타노 히로미치"
+            ]
+        }
     }
 ],
 "60636": [
@@ -29319,20 +30053,28 @@ var animeEPData_2026 = {
         "episode no": "제47화",
         "episode title": "THE END 2",
         "storyboard": {
-            "staff": []
+            "staff": [
+                "시죠 쿄스케"
+            ]
         },
         "episode director": {
-            "staff": []
+            "staff": [
+                "마츠이 신타로"
+            ]
         }
     },
     {
         "episode no": "제48화",
         "episode title": "THE END TWO WORLD",
         "storyboard": {
-            "staff": []
+            "staff": [
+                "우에다 신이치로"
+            ]
         },
         "episode director": {
-            "staff": []
+            "staff": [
+                "우에다 신이치로"
+            ]
         }
     }
 ],
@@ -29499,10 +30241,15 @@ var animeEPData_2026 = {
         "episode no": "제12막",
         "episode title": "평소와 다름없는 초원",
         "storyboard": {
-            "staff": []
+            "staff": [
+                "치나"
+            ]
         },
         "episode director": {
-            "staff": []
+            "staff": [
+                "나카무라 료스케",
+                "치나"
+            ]
         }
     }
 ],
@@ -29644,6 +30391,20 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "카와기시 카즈키"
+            ]
+        }
+    },
+    {
+        "episode no": "제11화",
+        "episode title": "못다 이룬 꿈은, 누구를 위해?",
+        "storyboard": {
+            "staff": [
+                "카메이 칸타"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야마구치 이사무"
             ]
         }
     }
@@ -29793,12 +30554,17 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제11화",
-        "episode title": "花嫁の姉妹",
+        "episode title": "신부의 자매",
         "storyboard": {
-            "staff": []
+            "staff": [
+                "타카시마 토모야",
+                "쿠마 후쿠로"
+            ]
         },
         "episode director": {
-            "staff": []
+            "staff": [
+                "미요시 나오"
+            ]
         }
     }
 ],
@@ -29928,6 +30694,20 @@ var animeEPData_2026 = {
                 "마에조노 후미오"
             ]
         }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "プリハト……好きなんですか？",
+        "storyboard": {
+            "staff": [
+                "스즈키 요헤이"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "마사모토 토시키"
+            ]
+        }
     }
 ],
 "60637": [
@@ -30017,7 +30797,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제7화",
-        "episode title": "第四管区地下鉄道・追跡駆除戦",
+        "episode title": "제4관구 지하철도·추적 구제전",
         "storyboard": {
             "staff": [
                 "사카타 준이치"
@@ -30031,7 +30811,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제8화",
-        "episode title": "夜海トワ Descent",
+        "episode title": "요루미 토와 Descent",
         "storyboard": {
             "staff": [
                 "하야시 히로키"
@@ -30045,7 +30825,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제9화",
-        "episode title": "EXCEEDS",
+        "episode title": "익시드",
         "storyboard": {
             "staff": [
                 "오가와 유키"
@@ -30059,7 +30839,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제10화",
-        "episode title": "南極地下研究所・捜索殲滅戦",
+        "episode title": "남극지하연구소 • 수색섬멸전",
         "storyboard": {
             "staff": [
                 "후세키 카즈노부"
@@ -30068,6 +30848,20 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "후세키 카즈노부"
+            ]
+        }
+    },
+    {
+        "episode no": "제11화",
+        "episode title": "마인 • 시노미야 마나",
+        "storyboard": {
+            "staff": [
+                "타카하시 미유키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "마에지마 히소카"
             ]
         }
     }
@@ -30217,6 +31011,22 @@ var animeEPData_2026 = {
                 "마에조노 후미오"
             ]
         }
+    },
+    {
+        "episode no": "제11화",
+        "episode title": "창고에 갇혀서...",
+        "storyboard": {
+            "staff": [
+                "나카가와 사토시"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "마에다 모토마사",
+                "야기 슈헤이",
+                "미요시 마사토"
+            ]
+        }
     }
 ],
 "62535": [
@@ -30345,12 +31155,10 @@ var animeEPData_2026 = {
                 "이토가 신타로"
             ]
         }
-    }
-],
-"62535": [
+    },
     {
-        "episode no": "제1화",
-        "episode title": "연인들의 예감",
+        "episode no": "제10화",
+        "episode title": "슬픔의 삼각형",
         "storyboard": {
             "staff": [
                 "야마모토 히데요"
@@ -30358,119 +31166,164 @@ var animeEPData_2026 = {
         },
         "episode director": {
             "staff": [
-                "니시카타 야스히토"
+                "히라무키 토모코"
+            ]
+        }
+    }
+],
+"62876": [
+    {
+        "episode no": "제1화",
+        "episode title": "완벽한 아가씨",
+        "storyboard": {
+            "staff": [
+                "모리시타 슈세이"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "모리시타 슈세이"
             ]
         }
     },
     {
         "episode no": "제2화",
-        "episode title": "오즈의 마법사",
+        "episode title": "시중 담당 첫째 날",
         "storyboard": {
             "staff": [
-                "야마모토 히데요"
+                "모리시타 슈세이"
             ]
         },
         "episode director": {
             "staff": [
-                "이토가 신타로"
+                "칸바라 하루카"
             ]
         }
     },
     {
         "episode no": "제3화",
-        "episode title": "미드나이트 런",
+        "episode title": "재회",
         "storyboard": {
             "staff": [
-                "야마모토 히데요"
+                "모리시타 슈세이"
             ]
         },
         "episode director": {
             "staff": [
-                "야마모토 나오키"
+                "칸바라 하루카"
             ]
         }
     },
     {
         "episode no": "제4화",
-        "episode title": "용서받지 못한 자",
+        "episode title": "거짓말과 비밀",
         "storyboard": {
             "staff": [
-                "야마모토 히데요"
+                "오가와 하루토"
             ]
         },
         "episode director": {
             "staff": [
-                "김수림"
+                "이마카케 이사무"
             ]
         }
     },
     {
         "episode no": "제5화",
-        "episode title": "헛소동",
+        "episode title": "나를 납치해 줘",
         "storyboard": {
             "staff": [
-                "야마모토 히데요"
+                "모리시타 슈세이"
             ]
         },
         "episode director": {
             "staff": [
-                "우치노 아키오"
+                "오가와 하루토"
             ]
         }
     },
     {
         "episode no": "제6화",
-        "episode title": "펄프 픽션",
+        "episode title": "텐노지 미레이의 제안",
         "storyboard": {
             "staff": [
-                "야마모토 히데요"
+                "모리시타 슈세이"
             ]
         },
         "episode director": {
             "staff": [
-                "나카하라 레이"
+                "이마카케 이사무"
             ]
         }
     },
     {
         "episode no": "제7화",
-        "episode title": "세븐",
+        "episode title": "아가씨의 고민",
         "storyboard": {
             "staff": [
-                "야마모토 히데요"
+                "오가와 하루토"
             ]
         },
         "episode director": {
             "staff": [
-                "야마모토 히데요"
+                "후지이 타카후미"
             ]
         }
     },
     {
         "episode no": "제8화",
-        "episode title": "트레이닝 데이",
+        "episode title": "거짓말하기 없기",
         "storyboard": {
             "staff": [
-                "야마모토 히데요"
+                "칸바라 하루카"
             ]
         },
         "episode director": {
             "staff": [
-                "天沢美"
+                "이마카케 이사무"
             ]
         }
     },
     {
         "episode no": "제9화",
-        "episode title": "스크림",
+        "episode title": "아가씨의 휴일",
         "storyboard": {
             "staff": [
-                "야마모토 히데요"
+                "모리시타 슈세이"
             ]
         },
         "episode director": {
             "staff": [
-                "이토가 신타로"
+                "모리시타 슈세이",
+                "후지이 타카후미"
+            ]
+        }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "나리카의 외톨이 탈피 계획",
+        "storyboard": {
+            "staff": [
+                "오가와 하루토"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "후지이 타카후미"
+            ]
+        }
+    },
+    {
+        "episode no": "제11화",
+        "episode title": "아가씨의 대결",
+        "storyboard": {
+            "staff": [
+                "칸바라 하루카"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "칸바라 하루카"
             ]
         }
     }
@@ -30603,6 +31456,35 @@ var animeEPData_2026 = {
                 "카네코 신고"
             ]
         }
+    },
+    {
+        "episode no": "제10괴",
+        "episode title": "",
+        "storyboard": {
+            "staff": [
+                "사노 히후미"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "우가카미 료스케",
+                "사노 히후미"
+            ]
+        }
+    },
+    {
+        "episode no": "제11괴",
+        "episode title": "",
+        "storyboard": {
+            "staff": [
+                "히라타 유타카"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "히라타 유타카"
+            ]
+        }
     }
 ],
 "63832": [
@@ -30732,6 +31614,35 @@ var animeEPData_2026 = {
                 "미야케 코스케"
             ]
         }
+    },
+    {
+        "episode no": "제22화",
+        "episode title": "마음과 선택",
+        "storyboard": {
+            "staff": [
+                "나가토모 타카요시",
+                "나카하라 모에"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "나카하라 모에"
+            ]
+        }
+    },
+    {
+        "episode no": "제23화",
+        "episode title": "내 자리",
+        "storyboard": {
+            "staff": [
+                "야마오카 미노루"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "야마오카 미노루"
+            ]
+        }
     }
 ],
 "63100": [
@@ -30825,7 +31736,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제7화",
-        "episode title": "鍋を振れ!",
+        "episode title": "웍을 흔들어라!",
         "storyboard": {
             "staff": [
                 "미즈노 미노리"
@@ -30839,7 +31750,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제8화",
-        "episode title": "鍋を振れ!",
+        "episode title": "악의!",
         "storyboard": {
             "staff": [
                 "하야시 히로키"
@@ -30863,6 +31774,36 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "카부모토 타케시"
+            ]
+        }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "審査の焦点",
+        "storyboard": {
+            "staff": [
+                "아키야마 카츠히토"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이와타 요시히코"
+            ]
+        }
+    },
+    {
+        "episode no": "제11화",
+        "episode title": "血の洗礼!",
+        "storyboard": {
+            "staff": [
+                "아키야마 카츠히토"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "이노우에 마사키요",
+                "오구리 요시나",
+                "타마가와 히마리"
             ]
         }
     }
@@ -30995,6 +31936,34 @@ var animeEPData_2026 = {
             "staff": [
                 "마츠모토 요시히사",
                 "호노에 카라타"
+            ]
+        }
+    },
+    {
+        "episode no": "#10",
+        "episode title": "미치광이 숲속의 마녀",
+        "storyboard": {
+            "staff": [
+                "하야시 나오타카"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "쿠사카 나오요시"
+            ]
+        }
+    },
+    {
+        "episode no": "#11",
+        "episode title": "원점 회귀의 유혹",
+        "storyboard": {
+            "staff": [
+                "오오쿠보 토미히코"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "테라사키 유타카"
             ]
         }
     }
@@ -31132,7 +32101,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제34화",
-        "episode title": "くっころ彼女",
+        "episode title": "큭 죽여라 그녀",
         "storyboard": {
             "staff": [
                 "카와베 신야"
@@ -31141,6 +32110,22 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "카와베 신야"
+            ]
+        }
+    },
+    {
+        "episode no": "제35화",
+        "episode title": "아이도, 어른도, 누나도, 엄마도.",
+        "storyboard": {
+            "staff": [
+                "나가이 신페이",
+                "고토 유키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "아오키 you이치로",
+                "고토 유키"
             ]
         }
     }
@@ -31275,7 +32260,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제10화",
-        "episode title": "求婚騒動",
+        "episode title": "구혼 소동",
         "storyboard": {
             "staff": [
                 "키타노하라 노리유키"
@@ -31284,6 +32269,21 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "키타노하라 노리유키"
+            ]
+        }
+    },
+    {
+        "episode no": "제11화",
+        "episode title": "유혹의 회로",
+        "storyboard": {
+            "staff": [
+                "이시하라 타츠야",
+                "미야기 료"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "미야기 료"
             ]
         }
     }
@@ -31401,6 +32401,35 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "츠카하라 유키코"
+            ]
+        }
+    },
+    {
+        "episode no": "제9화",
+        "episode title": "반드시 돕겠어요",
+        "storyboard": {
+            "staff": [
+                "요시카와 히로아키",
+                "사이토 테츠히토"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "니시무라 슌스케"
+            ]
+        }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "저주도 반반씩",
+        "storyboard": {
+            "staff": [
+                "이토 유키"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "오카다 켄지로"
             ]
         }
     }
@@ -31529,6 +32558,34 @@ var animeEPData_2026 = {
         "episode director": {
             "staff": [
                 "시미즈 모모"
+            ]
+        }
+    },
+    {
+        "episode no": "제10화",
+        "episode title": "美味しいスイーツを食べましょうか。",
+        "storyboard": {
+            "staff": [
+                "사토 유타카"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "후루모토 카츠야"
+            ]
+        }
+    },
+    {
+        "episode no": "제11화",
+        "episode title": "撃たずに済めば、良かったんだけどね・・・",
+        "storyboard": {
+            "staff": [
+                "아사후지 호타루"
+            ]
+        },
+        "episode director": {
+            "staff": [
+                "쿠리게 쿠로카게"
             ]
         }
     }

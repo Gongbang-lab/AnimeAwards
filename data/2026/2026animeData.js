@@ -4159,6 +4159,34 @@ var AnimeList_2026 = [
   }
 },
 {
+  "id": 62080,
+  "title": "무자각한 성녀는 오늘도 무의식적으로 힘을 흘린다",
+  "year": 2026,
+  "quarter": "3분기",
+  "thumbnail": "image/animeimg/2026/Q3/무자각한 성녀는 오늘도 무의식적으로 힘을 흘린다.webp",
+  "day": "Tuesdays",
+  "episodes": 12,
+  "studio": [
+    "매직버스",
+    "피칸테 서커스"
+  ],
+  "staff": {
+    "director": [
+      "노시타니 미츠타카"
+    ],
+    "adaptor": [
+      "마치다 토코"
+    ],
+    "character_design": [
+      "나가이 타이헤이",
+      "에노모토 아야메"
+    ],
+    "composer": [
+      "SUPA LOVE"
+    ]
+  }
+},
+{
   "id": 58929,
   "title": "공각기동대 THE GHOST IN THE SHELL",
   "year": 2026,
