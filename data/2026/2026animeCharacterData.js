@@ -5418,7 +5418,6 @@ var CharacterData_2026 = [
 },
 {
     "id": 60602,
-    "quarter": "1분기",
     "characters": [
       {
         "name": "카나타 리빙턴",
@@ -5793,7 +5792,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62897,
-  "year": 2026,
   "characters": [
     {
       "name": "타카무라 아이카",
@@ -5852,7 +5850,6 @@ var CharacterData_2026 = [
 },
   {
     "id": 61694,
-    "quarter": "1분기",
     "characters": [
       {
         "name": "나데시코",
@@ -5876,7 +5873,6 @@ var CharacterData_2026 = [
   },
   {
     "id": 60294,
-    "quarter": "1분기",
     "characters": [
       {
         "name": "사쿠나히메",
@@ -5894,7 +5890,6 @@ var CharacterData_2026 = [
   },
   {
     "id": 56906,
-    "quarter": "1분기",
     "characters": [
       {
         "name": "텐조 유야",
@@ -5918,7 +5913,6 @@ var CharacterData_2026 = [
   },
   {
     "id": 63019,
-    "quarter": "1분기",
     "characters": [
       {
         "name": "이치조인 릴리",
@@ -6074,7 +6068,6 @@ var CharacterData_2026 = [
   },
   {
     "id": 62896,
-    "quarter": "1분기",
     "characters": [
       {
         "name": "카구야",
@@ -6170,7 +6163,6 @@ var CharacterData_2026 = [
   },
   {
     "id": 61119,
-    "quarter": "1분기",
     "characters": [
       {
         "name": "키리후다 윈",
@@ -6200,7 +6192,6 @@ var CharacterData_2026 = [
   },
   {
     "id": 58573,
-    "quarter": "1분기",
     "characters": [
       {
         "name": "한마 바키",
@@ -13146,7 +13137,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 59193,
-  "year": 2026,
   "characters": [
     {
       "name": "루데우스 그레이랫",
@@ -13368,7 +13358,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 58878,
-  "year": 2026,
   "characters": [
     {
       "name": "라라",
@@ -13476,7 +13465,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 56736,
-  "year": 2026,
   "characters": [
     {
       "name": "아르놀트 레이크스 아들러",
@@ -13560,7 +13548,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62936,
-  "year": 2026,
   "characters": [
     {
       "name": "소라노 카케루",
@@ -13590,7 +13577,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 60522,
-  "year": 2026,
   "characters": [
     {
       "name": "폰타",
@@ -13740,7 +13726,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62617,
-  "year": 2026,
   "characters": [
     {
       "name": "랙",
@@ -13848,7 +13833,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62289,
-  "year": 2026,
   "characters": [
     {
       "name": "엘리자베트 레이스턴",
@@ -13920,7 +13904,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63752,
-  "year": 2026,
   "characters": [
     {
       "name": "타카나시 린",
@@ -13974,7 +13957,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62031,
-  "year": 2026,
   "characters": [
     {
       "name": "이치게키 단코",
@@ -14190,7 +14172,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 56735,
-  "year": 2026,
   "characters": [
     {
       "name": "키리시마 하야토",
@@ -14226,7 +14207,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62542,
-  "year": 2026,
   "characters": [
     {
       "name": "코테가와 치사",
@@ -14394,7 +14374,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 46488,
-  "year": 2026,
   "characters": [
     {
       "name": "미츠키 아야",
@@ -14466,7 +14445,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61126,
-  "year": 2026,
   "characters": [
     {
       "name": "카가리 미미",
@@ -14538,7 +14516,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 58929,
-  "year": 2026,
   "characters": [
     {
       "name": "쿠사나기 모토코",
@@ -14700,7 +14677,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62476,
-  "year": 2026,
   "characters": [
     {
       "name": "빅토리아 셀러스",
@@ -14772,7 +14748,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63489,
-  "year": 2026,
   "characters": [
     {
       "name": "스즈키 유리",
@@ -14880,7 +14855,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62513,
-  "year": 2026,
   "characters": [
     {
       "name": "알리시아 글렌폴",
@@ -15006,7 +14980,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 49233,
-  "year": 2026,
   "characters": [
     {
       "name": "타냐 데그레챠프",
@@ -15162,7 +15135,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61686,
-  "year": 2026,
   "characters": [
     {
       "name": "멜로디 웨이브",
@@ -15216,7 +15188,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62102,
-  "year": 2026,
   "characters": [
     {
       "name": "코노쿠라 미야",
@@ -15306,7 +15277,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 54000,
-  "year": 2026,
   "characters": [
     {
       "name": "리온 포우 발트파르트",
@@ -15444,7 +15414,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61897,
-  "year": 2026,
   "characters": [
     {
       "name": "베릴 가드넌트",
@@ -15540,7 +15509,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63508,
-  "year": 2026,
   "characters": [
     {
       "name": "아나스타샤 블라노바",
@@ -15636,7 +15604,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62322,
-  "year": 2026,
   "characters": [
     {
       "name": "아리스 바루네시오",
@@ -15702,7 +15669,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63780,
-  "year": 2026,
   "characters": [
     {
       "name": "아시야 미즈키",
@@ -15828,7 +15794,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63316,
-  "year": 2026,
   "characters": [
     {
       "name": "아이린 홀튼",
@@ -15876,7 +15841,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63082,
-  "year": 2026,
   "characters": [
     {
       "name": "다라 씨",
@@ -16068,7 +16032,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63347,
-  "year": 2026,
   "characters": [
     {
       "name": "오니야샤",
@@ -16194,7 +16157,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62430,
-  "year": 2026,
   "characters": [
     {
       "name": "나카마치 아라레",
@@ -16266,7 +16228,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63802,
-  "year": 2026,
   "characters": [
     {
       "name": "시라토리 오르가",
@@ -16464,7 +16425,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62076,
-  "year": 2026,
   "characters": [
     {
       "name": "사사키",
@@ -16512,7 +16472,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 59741,
-  "year": 2026,
   "characters": [
     {
       "name": "엘마 에드반",
@@ -16578,7 +16537,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63403,
-  "year": 2026,
   "characters": [
     {
       "name": "야니네코",
@@ -16740,7 +16698,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63150,
-  "year": 2026,
   "characters": [
     {
       "name": "아카이시 쿠로에",
@@ -16818,7 +16775,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62078,
-  "year": 2026,
   "characters": [
     {
       "name": "디아스",
@@ -17010,7 +16966,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 60059,
-  "year": 2026,
   "characters": [
     {
       "name": "유이카와 아사키",
@@ -17064,7 +17019,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61280,
-  "year": 2026,
   "characters": [
     {
       "name": "야스미 아이",
@@ -17130,7 +17084,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63061,
-  "year": 2026,
   "characters": [
     {
       "name": "나리타 겐",
@@ -17220,7 +17173,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63817,
-  "year": 2026,
   "characters": [
     {
       "name": "알렌",
@@ -17352,7 +17304,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 56835,
-  "year": 2026,
   "characters": [
     {
       "name": "로제",
@@ -17550,7 +17501,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61048,
-  "year": 2026,
   "characters": [
     {
       "name": "묘룡",
@@ -17658,7 +17608,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61169,
-  "year": 2026,
   "characters": [
     {
       "name": "아즈마 지로",
@@ -17796,7 +17745,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63324,
-  "year": 2026,
   "characters": [
     {
       "name": "이와모토 코도",
@@ -17850,7 +17798,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 60636,
-  "year": 2026,
   "characters": [
     {
       "name": "쿠로사키 이치고",
@@ -17952,7 +17899,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61483,
-  "year": 2026,
   "characters": [
     {
       "name": "시타라",
@@ -18138,7 +18084,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62001,
-  "year": 2026,
   "characters": [
     {
       "name": "유르",
@@ -18354,7 +18299,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62051,
-  "year": 2026,
   "characters": [
     {
       "name": "츠루마키 미즈카",
@@ -18462,7 +18406,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61814,
-  "year": 2026,
   "characters": [
     {
       "name": "키류인 레이야",
@@ -18546,7 +18489,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 60552,
-  "year": 2026,
   "characters": [
     {
       "name": "시게모토 코지",
@@ -18654,7 +18596,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 60637,
-  "year": 2026,
   "characters": [
     {
       "name": "페이트 T. 하라오운",
@@ -18738,7 +18679,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63537,
-  "year": 2026,
   "characters": [
     {
       "name": "엘사 유카라이넨",
@@ -18816,7 +18756,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62535,
-  "year": 2026,
   "characters": [
     {
       "name": "나루카미 류세이",
@@ -18888,7 +18827,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62876,
-  "year": 2026,
   "characters": [
     {
       "name": "코노하나 히나코",
@@ -18942,7 +18880,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62683,
-  "year": 2026,
   "characters": [
     {
       "name": "주인공",
@@ -19038,7 +18975,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63832,
-  "year": 2026,
   "characters": [
     {
       "name": "스즈키 미유",
@@ -19152,7 +19088,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63100,
-  "year": 2026,
   "characters": [
     {
       "name": "아키야마 짱",
@@ -19218,7 +19153,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62435,
-  "year": 2026,
   "characters": [
     {
       "name": "아토베 아리히토",
@@ -19272,7 +19206,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62811,
-  "year": 2026,
   "characters": [
     {
       "name": "아이죠 렌타로",
@@ -19422,7 +19355,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62856,
-  "year": 2026,
   "characters": [
     {
       "name": "사카모토 키하치",
@@ -19548,7 +19480,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61240,
-  "year": 2026,
   "characters": [
     {
       "name": "황영림",
@@ -19632,7 +19563,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 56613,
-  "year": 2026,
   "characters": [
     {
       "name": "라피",
@@ -19794,7 +19724,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62883,
-  "year": 2026,
   "characters": [
     {
       "name": "나카지마 아츠시",
@@ -19956,7 +19885,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63468,
-  "year": 2026,
   "characters": [
     {
       "name": "카무이",
@@ -20004,7 +19932,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62233,
-  "year": 2026,
   "characters": [
     {
       "name": "나미",
@@ -20046,7 +19973,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61546,
-  "year": 2026,
   "characters": [
     {
       "name": "카라",

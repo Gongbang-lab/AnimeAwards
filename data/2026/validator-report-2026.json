@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-18T08:40:45.467Z",
+  "generatedAt": "2026-09-18T08:46:50.675Z",
   "year": 2026,
   "counts": {
     "AnimeAdaptorData_2026": 199,
-    "CharacterVoiceData_2026": 1091,
+    "CharacterVoiceData_2026": 1093,
     "CharacterData_2026": 201,
     "cinemaData_2026": 9,
     "AnimeList_2026": 213,
@@ -16,22 +16,337 @@
     "scriptwriterData_2026": 19
   },
   "issues": {
-    "error": [
-      {
-        "code": "CHARACTER_CV_ORPHAN",
-        "message": "CharacterData의 CV '아오키 무네타카'가 CharacterVoiceData에 없습니다.",
-        "animeId": 60610,
-        "animeTitle": "Hateshinaki Scarlet",
-        "character": "로젠크란츠",
-        "cv": "아오키 무네타카"
-      }
-    ],
+    "error": [],
     "warning": [
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[0].title이 없습니다.",
+        "index": 0,
+        "animeId": 61886
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[1].title이 없습니다.",
+        "index": 1,
+        "animeId": 61942
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[2].title이 없습니다.",
+        "index": 2,
+        "animeId": 61782
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[3].title이 없습니다.",
+        "index": 3,
+        "animeId": 55772
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[4].title이 없습니다.",
+        "index": 4,
+        "animeId": 58524
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[5].title이 없습니다.",
+        "index": 5,
+        "animeId": 61359
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[6].title이 없습니다.",
+        "index": 6,
+        "animeId": 61983
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[7].title이 없습니다.",
+        "index": 7,
+        "animeId": 60226
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[8].title이 없습니다.",
+        "index": 8,
+        "animeId": 61211
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[9].title이 없습니다.",
+        "index": 9,
+        "animeId": 58886
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[10].title이 없습니다.",
+        "index": 10,
+        "animeId": 60255
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[11].title이 없습니다.",
+        "index": 11,
+        "animeId": 61637
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[12].title이 없습니다.",
+        "index": 12,
+        "animeId": 61884
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[13].title이 없습니다.",
+        "index": 13,
+        "animeId": 60058
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[14].title이 없습니다.",
+        "index": 14,
+        "animeId": 59711
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[15].title이 없습니다.",
+        "index": 15,
+        "animeId": 60692
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[16].title이 없습니다.",
+        "index": 16,
+        "animeId": 60071
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[17].title이 없습니다.",
+        "index": 17,
+        "animeId": 56752
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[18].title이 없습니다.",
+        "index": 18,
+        "animeId": 56009
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[19].title이 없습니다.",
+        "index": 19,
+        "animeId": 58505
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[20].title이 없습니다.",
+        "index": 20,
+        "animeId": 60395
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[21].title이 없습니다.",
+        "index": 21,
+        "animeId": 60151
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[22].title이 없습니다.",
+        "index": 22,
+        "animeId": 57658
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[23].title이 없습니다.",
+        "index": 23,
+        "animeId": 61587
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[24].title이 없습니다.",
+        "index": 24,
+        "animeId": 61325
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[25].title이 없습니다.",
+        "index": 25,
+        "animeId": 60509
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[26].title이 없습니다.",
+        "index": 26,
+        "animeId": 59978
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[27].title이 없습니다.",
+        "index": 27,
+        "animeId": 62804
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[28].title이 없습니다.",
+        "index": 28,
+        "animeId": 59853
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[29].title이 없습니다.",
+        "index": 29,
+        "animeId": 60460
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[30].title이 없습니다.",
+        "index": 30,
+        "animeId": 59229
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[31].title이 없습니다.",
+        "index": 31,
+        "animeId": 61207
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[32].title이 없습니다.",
+        "index": 32,
+        "animeId": 61549
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[33].title이 없습니다.",
+        "index": 33,
+        "animeId": 54863
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[34].title이 없습니다.",
+        "index": 34,
+        "animeId": 55830
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[35].title이 없습니다.",
+        "index": 35,
+        "animeId": 61196
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[36].title이 없습니다.",
+        "index": 36,
+        "animeId": 62432
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[37].title이 없습니다.",
+        "index": 37,
+        "animeId": 61217
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[38].title이 없습니다.",
+        "index": 38,
+        "animeId": 59047
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[39].title이 없습니다.",
+        "index": 39,
+        "animeId": 61335
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[40].title이 없습니다.",
+        "index": 40,
+        "animeId": 61663
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[41].title이 없습니다.",
+        "index": 41,
+        "animeId": 60371
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[42].title이 없습니다.",
+        "index": 42,
+        "animeId": 60223
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[43].title이 없습니다.",
+        "index": 43,
+        "animeId": 58861
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[44].title이 없습니다.",
+        "index": 44,
+        "animeId": 60810
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[45].title이 없습니다.",
+        "index": 45,
+        "animeId": 61128
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[46].title이 없습니다.",
+        "index": 46,
+        "animeId": 62000
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[47].title이 없습니다.",
+        "index": 47,
+        "animeId": 58788
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[48].title이 없습니다.",
+        "index": 48,
+        "animeId": 61084
+      },
       {
         "code": "CHARACTER_TITLE_MISSING",
         "message": "CharacterData[49].title이 없습니다.",
         "index": 49,
         "animeId": 60602
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[50].title이 없습니다.",
+        "index": 50,
+        "animeId": 55825
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[51].title이 없습니다.",
+        "index": 51,
+        "animeId": 62543
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[52].title이 없습니다.",
+        "index": 52,
+        "animeId": 63096
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[53].title이 없습니다.",
+        "index": 53,
+        "animeId": 62897
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[54].title이 없습니다.",
+        "index": 54,
+        "animeId": 61969
       },
       {
         "code": "CHARACTER_TITLE_MISSING",
@@ -74,6 +389,1156 @@
         "message": "CharacterData[61].title이 없습니다.",
         "index": 61,
         "animeId": 58573
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[62].title이 없습니다.",
+        "index": 62,
+        "animeId": 61469
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[63].title이 없습니다.",
+        "index": 63,
+        "animeId": 61114
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[64].title이 없습니다.",
+        "index": 64,
+        "animeId": 60610
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[65].title이 없습니다.",
+        "index": 65,
+        "animeId": 59817
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[66].title이 없습니다.",
+        "index": 66,
+        "animeId": 61558
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[67].title이 없습니다.",
+        "index": 67,
+        "animeId": 60159
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[68].title이 없습니다.",
+        "index": 68,
+        "animeId": 50159
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[69].title이 없습니다.",
+        "index": 69,
+        "animeId": 61418
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[70].title이 없습니다.",
+        "index": 70,
+        "animeId": 59393
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[71].title이 없습니다.",
+        "index": 71,
+        "animeId": 62852
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[72].title이 없습니다.",
+        "index": 72,
+        "animeId": 61687
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[73].title이 없습니다.",
+        "index": 73,
+        "animeId": 62146
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[74].title이 없습니다.",
+        "index": 74,
+        "animeId": 51553
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[75].title이 없습니다.",
+        "index": 75,
+        "animeId": 61425
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[76].title이 없습니다.",
+        "index": 76,
+        "animeId": 62331
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[77].title이 없습니다.",
+        "index": 77,
+        "animeId": 63375
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[78].title이 없습니다.",
+        "index": 78,
+        "animeId": 61931
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[79].title이 없습니다.",
+        "index": 79,
+        "animeId": 62601
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[80].title이 없습니다.",
+        "index": 80,
+        "animeId": 61839
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[81].title이 없습니다.",
+        "index": 81,
+        "animeId": 56734
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[82].title이 없습니다.",
+        "index": 82,
+        "animeId": 61013
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[83].title이 없습니다.",
+        "index": 83,
+        "animeId": 53732
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[84].title이 없습니다.",
+        "index": 84,
+        "animeId": 63014
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[85].title이 없습니다.",
+        "index": 85,
+        "animeId": 63376
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[86].title이 없습니다.",
+        "index": 86,
+        "animeId": 59708
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[87].title이 없습니다.",
+        "index": 87,
+        "animeId": 62512
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[88].title이 없습니다.",
+        "index": 88,
+        "animeId": 61316
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[89].title이 없습니다.",
+        "index": 89,
+        "animeId": 61831
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[90].title이 없습니다.",
+        "index": 90,
+        "animeId": 62604
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[91].title이 없습니다.",
+        "index": 91,
+        "animeId": 62893
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[92].title이 없습니다.",
+        "index": 92,
+        "animeId": 59551
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[93].title이 없습니다.",
+        "index": 93,
+        "animeId": 60028
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[94].title이 없습니다.",
+        "index": 94,
+        "animeId": 57592
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[95].title이 없습니다.",
+        "index": 95,
+        "animeId": 58832
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[96].title이 없습니다.",
+        "index": 96,
+        "animeId": 60852
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[97].title이 없습니다.",
+        "index": 97,
+        "animeId": 59835
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[98].title이 없습니다.",
+        "index": 98,
+        "animeId": 59443
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[99].title이 없습니다.",
+        "index": 99,
+        "animeId": 61943
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[100].title이 없습니다.",
+        "index": 100,
+        "animeId": 58820
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[101].title이 없습니다.",
+        "index": 101,
+        "animeId": 62964
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[102].title이 없습니다.",
+        "index": 102,
+        "animeId": 56876
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[103].title이 없습니다.",
+        "index": 103,
+        "animeId": 59970
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[104].title이 없습니다.",
+        "index": 104,
+        "animeId": 62068
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[105].title이 없습니다.",
+        "index": 105,
+        "animeId": 62981
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[106].title이 없습니다.",
+        "index": 106,
+        "animeId": 61186
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[107].title이 없습니다.",
+        "index": 107,
+        "animeId": 61200
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[108].title이 없습니다.",
+        "index": 108,
+        "animeId": 56646
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[109].title이 없습니다.",
+        "index": 109,
+        "animeId": 62485
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[110].title이 없습니다.",
+        "index": 110,
+        "animeId": 57466
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[111].title이 없습니다.",
+        "index": 111,
+        "animeId": 60310
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[112].title이 없습니다.",
+        "index": 112,
+        "animeId": 60444
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[113].title이 없습니다.",
+        "index": 113,
+        "animeId": 62825
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[114].title이 없습니다.",
+        "index": 114,
+        "animeId": 62391
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[115].title이 없습니다.",
+        "index": 115,
+        "animeId": 62164
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[116].title이 없습니다.",
+        "index": 116,
+        "animeId": 62048
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[117].title이 없습니다.",
+        "index": 117,
+        "animeId": 61443
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[118].title이 없습니다.",
+        "index": 118,
+        "animeId": 62913
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[119].title이 없습니다.",
+        "index": 119,
+        "animeId": 61501
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[120].title이 없습니다.",
+        "index": 120,
+        "animeId": 62050
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[121].title이 없습니다.",
+        "index": 121,
+        "animeId": 62018
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[122].title이 없습니다.",
+        "index": 122,
+        "animeId": 63352
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[123].title이 없습니다.",
+        "index": 123,
+        "animeId": 59983
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[124].title이 없습니다.",
+        "index": 124,
+        "animeId": 60055
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[125].title이 없습니다.",
+        "index": 125,
+        "animeId": 58877
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[126].title이 없습니다.",
+        "index": 126,
+        "animeId": 62342
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[127].title이 없습니다.",
+        "index": 127,
+        "animeId": 63667
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[128].title이 없습니다.",
+        "index": 128,
+        "animeId": 62171
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[129].title이 없습니다.",
+        "index": 129,
+        "animeId": 62983
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[130].title이 없습니다.",
+        "index": 130,
+        "animeId": 63248
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[131].title이 없습니다.",
+        "index": 131,
+        "animeId": 63310
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[132].title이 없습니다.",
+        "index": 132,
+        "animeId": 63304
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[133].title이 없습니다.",
+        "index": 133,
+        "animeId": 57779
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[134].title이 없습니다.",
+        "index": 134,
+        "animeId": 63572
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[135].title이 없습니다.",
+        "index": 135,
+        "animeId": 62155
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[136].title이 없습니다.",
+        "index": 136,
+        "animeId": 59193
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[137].title이 없습니다.",
+        "index": 137,
+        "animeId": 58878
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[138].title이 없습니다.",
+        "index": 138,
+        "animeId": 56736
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[139].title이 없습니다.",
+        "index": 139,
+        "animeId": 62936
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[140].title이 없습니다.",
+        "index": 140,
+        "animeId": 60522
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[141].title이 없습니다.",
+        "index": 141,
+        "animeId": 62617
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[142].title이 없습니다.",
+        "index": 142,
+        "animeId": 62289
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[143].title이 없습니다.",
+        "index": 143,
+        "animeId": 63752
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[144].title이 없습니다.",
+        "index": 144,
+        "animeId": 62031
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[145].title이 없습니다.",
+        "index": 145,
+        "animeId": 56735
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[146].title이 없습니다.",
+        "index": 146,
+        "animeId": 62542
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[147].title이 없습니다.",
+        "index": 147,
+        "animeId": 46488
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[148].title이 없습니다.",
+        "index": 148,
+        "animeId": 61126
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[149].title이 없습니다.",
+        "index": 149,
+        "animeId": 58929
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[150].title이 없습니다.",
+        "index": 150,
+        "animeId": 62476
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[151].title이 없습니다.",
+        "index": 151,
+        "animeId": 63489
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[152].title이 없습니다.",
+        "index": 152,
+        "animeId": 62513
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[153].title이 없습니다.",
+        "index": 153,
+        "animeId": 49233
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[154].title이 없습니다.",
+        "index": 154,
+        "animeId": 61686
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[155].title이 없습니다.",
+        "index": 155,
+        "animeId": 62102
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[156].title이 없습니다.",
+        "index": 156,
+        "animeId": 54000
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[157].title이 없습니다.",
+        "index": 157,
+        "animeId": 61897
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[158].title이 없습니다.",
+        "index": 158,
+        "animeId": 63508
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[159].title이 없습니다.",
+        "index": 159,
+        "animeId": 62322
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[160].title이 없습니다.",
+        "index": 160,
+        "animeId": 63780
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[161].title이 없습니다.",
+        "index": 161,
+        "animeId": 63316
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[162].title이 없습니다.",
+        "index": 162,
+        "animeId": 63082
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[163].title이 없습니다.",
+        "index": 163,
+        "animeId": 63347
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[164].title이 없습니다.",
+        "index": 164,
+        "animeId": 62430
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[165].title이 없습니다.",
+        "index": 165,
+        "animeId": 63802
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[166].title이 없습니다.",
+        "index": 166,
+        "animeId": 62076
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[167].title이 없습니다.",
+        "index": 167,
+        "animeId": 59741
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[168].title이 없습니다.",
+        "index": 168,
+        "animeId": 63403
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[169].title이 없습니다.",
+        "index": 169,
+        "animeId": 63150
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[170].title이 없습니다.",
+        "index": 170,
+        "animeId": 62078
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[171].title이 없습니다.",
+        "index": 171,
+        "animeId": 60059
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[172].title이 없습니다.",
+        "index": 172,
+        "animeId": 61280
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[173].title이 없습니다.",
+        "index": 173,
+        "animeId": 63061
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[174].title이 없습니다.",
+        "index": 174,
+        "animeId": 63817
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[175].title이 없습니다.",
+        "index": 175,
+        "animeId": 56835
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[176].title이 없습니다.",
+        "index": 176,
+        "animeId": 61048
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[177].title이 없습니다.",
+        "index": 177,
+        "animeId": 61169
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[178].title이 없습니다.",
+        "index": 178,
+        "animeId": 63324
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[179].title이 없습니다.",
+        "index": 179,
+        "animeId": 60636
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[180].title이 없습니다.",
+        "index": 180,
+        "animeId": 61483
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[181].title이 없습니다.",
+        "index": 181,
+        "animeId": 62001
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[182].title이 없습니다.",
+        "index": 182,
+        "animeId": 62051
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[183].title이 없습니다.",
+        "index": 183,
+        "animeId": 61814
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[184].title이 없습니다.",
+        "index": 184,
+        "animeId": 60552
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[185].title이 없습니다.",
+        "index": 185,
+        "animeId": 60637
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[186].title이 없습니다.",
+        "index": 186,
+        "animeId": 63537
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[187].title이 없습니다.",
+        "index": 187,
+        "animeId": 62535
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[188].title이 없습니다.",
+        "index": 188,
+        "animeId": 62876
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[189].title이 없습니다.",
+        "index": 189,
+        "animeId": 62683
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[190].title이 없습니다.",
+        "index": 190,
+        "animeId": 63832
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[191].title이 없습니다.",
+        "index": 191,
+        "animeId": 63100
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[192].title이 없습니다.",
+        "index": 192,
+        "animeId": 62435
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[193].title이 없습니다.",
+        "index": 193,
+        "animeId": 62811
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[194].title이 없습니다.",
+        "index": 194,
+        "animeId": 62856
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[195].title이 없습니다.",
+        "index": 195,
+        "animeId": 61240
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[196].title이 없습니다.",
+        "index": 196,
+        "animeId": 56613
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[197].title이 없습니다.",
+        "index": 197,
+        "animeId": 62883
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[198].title이 없습니다.",
+        "index": 198,
+        "animeId": 63468
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[199].title이 없습니다.",
+        "index": 199,
+        "animeId": 62233
+      },
+      {
+        "code": "CHARACTER_TITLE_MISSING",
+        "message": "CharacterData[200].title이 없습니다.",
+        "index": 200,
+        "animeId": 61546
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '세리자와 유우' characters[1] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '타나카 미나미' characters[2] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '와카이 유우키' characters[1] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '후쿠니시 마사야' characters[2] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '마에다 카오리' characters[3] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '카와세 마키' characters[1] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '세키네 아키라' characters[1] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '사나다 아사미' characters[1] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '미야노 마모루' characters[2] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '오노 다이스케' characters[2] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '이시카와 유이' characters[2] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '키토 아카리' characters[5] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '콘도 레이나' characters[1] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '야스무라 마코토' characters[1] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '이토 카나에' characters[1] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '마키노 유이' characters[1] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '마츠오카 미사토' characters[1] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '타나카 치에미' characters[1] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '사가라 마유' characters[2] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '코야스 타케히토' characters[1] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '하야시 코코' characters[1] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '키누가와 리카' characters[1] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '아시다 마나' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '오카다 마사키' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '아오키 무네타카' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '야마지 카즈히로' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '이치무라 마사치카' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '에모토 토키오' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '야쿠쇼 코지' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '사이토 유키' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '마츠시게 유타카' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '시로야마 노아' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '요시다 코타로' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '시라이시 카요코' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '소메타니 쇼타' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '리나' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '유리' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '미레이' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '나츠' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '슈리' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '미야시로 모모코' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '우루시야마 유우키' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '타카하시 리츠' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '시모지 시노' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '와쿠이 유우' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '아카네야 히미카' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '쿠보타 미유' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '쿠보타 미유' characters[1] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '사이토 아야' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '타카다 유우키' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '카와카미 치히로' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '코이와이 코토리' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '후쿠 사나에' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '야노 아사미' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '야마키타 사키' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '시부야 아즈키' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '와타나베 유이' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '사이가 미츠키' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '아카사키 치나츠' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '사토 아즈사' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '마츠타니 카야' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '코이즈미 모에카' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '라카미 나츠미' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '우치다 슈우' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '오오니시 아구리' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '호모토 아키나' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '야노 히나키' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '사시데 마리아' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '혼도 카에데' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '타노 아사미' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '타네다 리사' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '미츠이시 코토노' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '타카하시 후미야' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '아마미 유키' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '사이토 아스카' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '미야세 류비' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '사지 도시아키' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '타나카 미오' characters[0] animeTitle이 없습니다."
+      },
+      {
+        "code": "CV_ANIME_TITLE_MISSING",
+        "message": "CV '카미야 아키라' characters[0] animeTitle이 없습니다."
       },
       {
         "code": "SONG_ANIME_TITLE_MISSING",
@@ -1310,11 +2775,15 @@
       },
       {
         "code": "CV_SUMMARY",
-        "message": "성우 1091명 / 캐릭터 연결 3170건. 연도·분기 누락 연결 102건."
+        "message": "성우 1093명 / 캐릭터 연결 3167건. 연도·분기 누락 연결 79건."
       },
       {
         "code": "CV_TITLE_SCOPE",
         "message": "연도·분기가 채워진 CV 연결 중 현재 제목과 일치하지 않는 건수: 0."
+      },
+      {
+        "code": "CV_REVERSE_LINK_OK",
+        "message": "CharacterData → CharacterVoiceData 성우명 연결은 모두 확인되었습니다."
       },
       {
         "code": "CV_MARKET_SCOPE_UNVERIFIED",
