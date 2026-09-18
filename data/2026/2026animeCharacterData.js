@@ -6515,14 +6515,14 @@ var CharacterData_2026 = [
     },
     {
       "name": "히지리",
-      "gender": "unknown",
+      "gender": "male",
       "cv": "오카다 마사키",
       "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Hijiri.jpg"
     },
     {
-      "name": "클로디어스",
-      "gender": "unknown",
-      "cv": "야쿠쇼 코지",
+      "name": "로젠크란츠",
+      "gender": "male",
+      "cv": "아오키 무네타카",
       "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Rosenkrantz.jpg"
     },
     {
@@ -6539,7 +6539,7 @@ var CharacterData_2026 = [
     },
     {
       "name": "레어티즈",
-      "gender": "unknown",
+      "gender": "male",
       "cv": "에모토 토키오",
       "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Laerte.jpg"
     },
@@ -11544,162 +11544,6 @@ var CharacterData_2026 = [
   ]
 },
 {
-  "id": 62001,
-  "title": "Yomi no Tsugai",
-  "characters": [
-    {
-      "name": "유르",
-      "gender": "male",
-      "cv": "오노 켄쇼",
-      "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Yuru.jpg"
-    },
-    {
-      "name": "아사",
-      "gender": "female",
-      "cv": "미야모토 유메",
-      "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Asa.jpg"
-    },
-    {
-      "name": "왼쪽",
-      "gender": "female",
-      "cv": "혼다 타카코",
-      "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Hidari.jpg"
-    },
-    {
-      "name": "오른쪽",
-      "gender": "male",
-      "cv": "코야마 리키야",
-      "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Migi.jpg"
-    },
-    {
-      "name": "타데라 류",
-      "gender": "male",
-      "cv": "나카무라 유이치",
-      "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Ryuu_Tadera.jpg"
-    },
-    {
-      "name": "타데라 켄",
-      "gender": "male",
-      "cv": "후지와라 나츠미",
-      "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Ken_Tadera.jpg"
-    },
-    {
-      "name": "단노 하나",
-      "gender": "female",
-      "cv": "시마부쿠로 미유리",
-      "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Hana_Danno.jpg"
-    },
-    {
-      "name": "가브짱",
-      "gender": "female",
-      "cv": "쿠노 미사키",
-      "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Gabby.jpg"
-    },
-    {
-      "name": "카게모리 진",
-      "gender": "male",
-      "cv": "스와베 준이치",
-      "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Jin_Kagemori.jpg"
-    },
-    {
-      "name": "아사",
-      "gender": "female",
-      "cv": "미야모토 유메",
-      "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Nise_Asa.jpg"
-    },
-    {
-      "name": "단지",
-      "gender": "male",
-      "cv": "오사카 료타",
-      "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Danji.jpg"
-    },
-    {
-      "name": "야마하",
-      "gender": "female",
-      "cv": "아리마 미즈카",
-      "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Yamaha.jpg"
-    },
-    {
-      "name": "미네",
-      "gender": "male",
-      "cv": "우치다 유야",
-      "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Mine.jpg"
-    },
-    {
-      "name": "킨죠 나기사",
-      "gender": "female",
-      "cv": "오오니시 사오리",
-      "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Nagisa_Kinjou.jpg"
-    },
-    {
-      "name": "아자미",
-      "gender": "female",
-      "cv": "안자이 유카리",
-      "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Azami.jpg"
-    },
-    {
-      "name": "쿄카",
-      "gender": "female",
-      "cv": "사쿠라바 아리사",
-      "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Kyouka.jpg"
-    },
-    {
-      "name": "오시라 님",
-      "gender": "female",
-      "cv": "하야미 사오리",
-      "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Oshirasama.jpg"
-    },
-    {
-      "name": "카게모리 곤조",
-      "gender": "male",
-      "cv": "이와사키 히로시",
-      "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Gonzo_Kagemori.jpg"
-    },
-    {
-      "name": "카게모리 히카루",
-      "gender": "male",
-      "cv": "야마구치 캇페이",
-      "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Hikaru_Kagemori.jpg"
-    },
-    {
-      "name": "카게모리 아스마",
-      "gender": "male",
-      "cv": "이시다 아키라",
-      "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Asuma_Kagemori.jpg"
-    },
-    {
-      "name": "쿠로야 하루오",
-      "gender": "male",
-      "cv": "우라 카즈키",
-      "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Haruo_Kuroya.jpg"
-    },
-    {
-      "name": "쿠로야 아키오",
-      "gender": "male",
-      "cv": "와타누키 류노스케",
-      "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Akio_Kuroya.jpg"
-    },
-    {
-      "name": "사쿠라자와 선생(",
-      "gender": "female",
-      "cv": "우치야마 유미",
-      "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Sakurazawa.jpg"
-    },
-    {
-      "name": "요사노 이반",
-      "gender": "male",
-      "cv": "미키 신이치로",
-      "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Ivan_Yosano.jpg"
-    },
-    {
-      "name": "타치카와 마코토",
-      "gender": "female",
-      "cv": "콘도 레이나",
-      "img": "image/charimg/2026/Q2/Yomi_no_Tsugai/Makoto_Tachikawa.jpg"
-    }
-  ]
-},
-{
   "id": 62048,
   "title": "MAO",
   "characters": [
@@ -14547,7 +14391,7 @@ var CharacterData_2026 = [
       "img": "image/charimg/2026/Q3/Grand_Blue_Season_3/Aina_Yoshiwara.jpg"
     },
     {
-      "name": "코테가와 나나카",
+      "name": "하마오카 아즈사",
       "gender": "female",
       "cv": "유키나리 토아",
       "img": "image/charimg/2026/Q3/Grand_Blue_Season_3/Azusa_Hamaoka.jpg"
@@ -14914,12 +14758,6 @@ var CharacterData_2026 = [
       "gender": "male",
       "cv": "야나카 히로시",
       "img": "image/charimg/2026/Q3/Koukaku_Kidoutai_THE_GHOST_IN_THE_SHELL/Itou_Jikan.jpg"
-    },
-    {
-      "name": "清掃局員",
-      "gender": "male",
-      "cv": "우에다 요지",
-      "img": "image/charimg/2026/Q3/Koukaku_Kidoutai_THE_GHOST_IN_THE_SHELL/Seisou_Kyokuin.jpg"
     },
     {
       "name": "한카 정밀기계 사장",
@@ -18405,7 +18243,7 @@ var CharacterData_2026 = [
     {
       "name": "쿠르트간의 형",
       "gender": "male",
-      "cv": "",
+      "cv": "unknown",
       "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Qultuqan_no_Ani.jpg"
     },
     {
@@ -19089,7 +18927,7 @@ var CharacterData_2026 = [
     {
       "name": "율리우스 로이아스",
       "gender": "male",
-      "cv": "사이토 소마[",
+      "cv": "사이토 소마",
       "img": "image/charimg/2026/Q3/Kimi_wo_Aisuru_Ki_wa_nai_to_Itta_Jiki_Koushaku-sama_ga_Naze_ka_Dekiai_Shitekimasu/Julius_Roias.jpg"
     },
     {

@@ -1864,32 +1864,32 @@ var AnimeList_2026 = [
     }
   },
   {
-    "id": 49469,
-    "year": 2026,
-    "quarter": "1분기",
-    "title": "비스타즈 파이널 시즌",
-    "thumbnail": "image/animeimg/2026/Q1/비스타즈 파이널 시즌.webp",
-    "day": "Web",
-    "episodes": 12,
-    "studio": [
-      "오렌지"
+  "id": 61114,
+  "title": "비스타즈 마지막 시즌",
+  "year": 2026,
+  "quarter": "1분기",
+  "thumbnail": "image/animeimg/2026/Q1/비스타즈 마지막 시즌.webp",
+  "day": "Web",
+  "episodes": 12,
+  "studio": [
+    "오렌지"
+  ],
+  "staff": {
+    "director": [
+      "마츠미 신이치"
     ],
-    "staff": {
-      "director": [
-        "마츠미 신이치"
-      ],
-      "character_design": [
-        "오오츠 나오",
-        "노리타 타쿠모"
-      ],
-      "adaptor": [
-        "히구치 나나미"
-      ],
-      "composer": [
-        "고사키 사토루"
-      ]
-    }
-  },
+    "adaptor": [
+      "히구치 나나미"
+    ],
+    "character_design": [
+      "오오츠 나오",
+      "노리타 타쿠모"
+    ],
+    "composer": [
+      "고사키 사토루"
+    ]
+  }
+},
   {
     "id": 59393,
     "year": 2026,
@@ -5722,34 +5722,6 @@ var AnimeList_2026 = [
     ]
   }
 },
-  {
-    "id": 61316,
-    "year": 2026,
-    "title": "Re:제로부터 시작하는 이세계 생활 4기",
-    "quarter": "3분기",
-    "thumbnail": "image/animeimg/2026/Q2/Re 제로부터 시작하는 이세계 생활 4기.webp",
-    "day": "Wednesdays",
-    "episodes": 19,
-    "studio": [
-      "WHITE FOX"
-    ],
-    "staff": {
-      "director": [
-        "시노하라 마사히로"
-      ],
-      "adaptor": [
-        "요코타니 마사히로"
-      ],
-      "character_design": [
-        "오츠카 신이치로",
-        "사가와 하루카",
-        "치바 케이타로"
-      ],
-      "composer": [
-        "스에히로 켄이치로"
-      ]
-    }
-  },
   {
     "id": 59970,
     "year": 2026,
