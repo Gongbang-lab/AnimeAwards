@@ -1,7 +1,6 @@
 var CharacterData_2026 = [
 {
   "id": 61886,
-  "title": "Goumon Baito-kun no Nichijou",
   "characters": [
     {
       "name": "세로",
@@ -103,7 +102,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61942,
-  "title": "Vigilante: Boku no Hero Academia ILLEGALS 2nd Season",
   "characters": [
     {
       "name": "하이마와리 코이치",
@@ -259,7 +257,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61782,
-  "title": "Kirei ni Shitemoraemasu ka.",
   "characters": [
     {
       "name": "킨메 와카나",
@@ -313,7 +310,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 55772,
-  "title": "Golden Kamuy: Saishuushou",
   "characters": [
     {
       "name": "스기모토 사이치",
@@ -463,7 +459,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 58524,
-  "title": "Hime-sama, \"Goumon\" no Jikan desu 2nd Season",
   "characters": [
     {
       "name": "공주",
@@ -619,7 +614,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61359,
-  "title": "Osananajimi to wa Love Comedy ni Naranai",
   "characters": [
     {
       "name": "사카이 요노스케",
@@ -655,7 +649,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61983,
-  "title": "Yuusha Party ni Kawaii Ko ga Ita no de, Kokuhaku Shitemita.",
   "characters": [
     {
       "name": "세실리아 아쿠아레인",
@@ -721,7 +714,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 60226,
-  "title": "Isekai no Sata wa Shachiku Shidai",
   "characters": [
     {
       "name": "알레슈 인드라크",
@@ -817,7 +809,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61211,
-  "title": "Mayonaka Heart Tune",
   "characters": [
     {
       "name": "우즈키 시노부",
@@ -871,7 +862,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 58886,
-  "title": "Darwin Jihen",
   "characters": [
     {
       "name": "찰리 스타인",
@@ -955,7 +945,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 60255,
-  "title": "Arne no Jikenbo",
   "characters": [
     {
       "name": "아르네 노인투터",
@@ -1039,7 +1028,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61637,
-  "title": "29-sai Dokushin Chuuken Boukensha no Nichijou",
   "characters": [
     {
       "name": "시노노메 하지메",
@@ -1123,7 +1111,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61884,
-  "title": "Maou no Musume wa Yasashi Sugiru!!",
   "characters": [
     {
       "name": "두",
@@ -1279,7 +1266,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 60058,
-  "title": "[Oshi no Ko] 3rd Season",
   "characters": [
     {
       "name": "호시노 아쿠아마린",
@@ -1435,7 +1421,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 59711,
-  "title": "Shibou Yuugi de Meshi wo Kuu.",
   "characters": [
     {
       "name": "유우키",
@@ -1591,7 +1576,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 60692,
-  "title": "Kizoku Tensei: Megumareta Umare kara Saikyou no Chikara wo Eru",
   "characters": [
     {
       "name": "노아 아라라트",
@@ -1675,7 +1659,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 60071,
-  "title": "Odayaka Kizoku no Kyuuka no Susume.",
   "characters": [
     {
       "name": "리젤",
@@ -1735,7 +1718,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 56752,
-  "title": "Shiguang Dailiren: Yingdu Pian",
   "characters": [
     {
       "name": "루광",
@@ -1783,7 +1765,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 56009,
-  "title": "Yuusha Kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku",
   "characters": [
     {
       "name": "자이로 폴바츠",
@@ -1939,7 +1920,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 58505,
-  "title": "Mato Seihei no Slave 2",
   "characters": [
     {
       "name": "와쿠라 유우키",
@@ -2089,7 +2069,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 60395,
-  "title": "Toumei Otoko to Ningen Onna: Sonouchi Fuufu ni Naru Futari",
   "characters": [
     {
       "name": "토노메 아키라",
@@ -2227,7 +2206,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 60151,
-  "title": "Eris no Seihai",
   "characters": [
     {
       "name": "스칼렛 카스티엘",
@@ -2383,7 +2361,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 57658,
-  "title": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
   "characters": [
     {
       "name": "이타도리 유지",
@@ -2521,7 +2498,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61587,
-  "title": "\"Omae Gotoki ga Maou ni Kateru to Omou na\" to Yuusha Party wo Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
   "characters": [
     {
       "name": "フラム・アプリコット",
@@ -2605,7 +2581,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61325,
-  "title": "Douse, Koishite Shimaunda. Season 2",
   "characters": [
     {
       "name": "니시노 미즈호",
@@ -2701,7 +2676,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 60509,
-  "title": "Champignon no Majo",
   "characters": [
     {
       "name": "루나",
@@ -2839,7 +2813,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 59978,
-  "title": "Sousou no Frieren 2nd Season",
   "characters": [
     {
       "name": "프리렌",
@@ -2995,7 +2968,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62804,
-  "title": "High School! Kimengumi (2026)",
   "characters": [
     {
       "name": "이치도 레이",
@@ -3151,7 +3123,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 59853,
-  "title": "DARK MOON: Kuro no Tsuki - Tsuki no Saidan",
   "characters": [
     {
       "name": "헬리",
@@ -3205,7 +3176,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 60460,
-  "title": "Hell Mode: Yarikomi Suki no Gamer wa Haisettei no Isekai de Musou Suru",
   "characters": [
     {
       "name": "알렌",
@@ -3283,7 +3253,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 59229,
-  "title": "Enen no Shouboutai: San no Shou Part 2",
   "characters": [
     {
       "name": "신라 쿠사카베",
@@ -3439,7 +3408,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61207,
-  "title": "Tensei Shitara Dragon no Tamago Datta",
   "characters": [
     {
       "name": "이르시아",
@@ -3469,7 +3437,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61549,
-  "title": "Okiraku Ryoushu no Tanoshii Ryouchi Bouei",
   "characters": [
     {
       "name": "반 네이 페르티오",
@@ -3541,7 +3508,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 54863,
-  "title": "TRIGUN STARGAZE",
   "characters": [
     {
       "name": "밧슈 더 스탬피드",
@@ -3655,7 +3621,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 55830,
-  "title": "Fate/strange Fake",
   "characters": [
     {
       "name": "아야카 사조",
@@ -3811,7 +3776,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61196,
-  "title": "Dead Account",
   "characters": [
     {
       "name": "에니시로 소지",
@@ -3961,7 +3925,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62432,
-  "title": "Jingai Kyoushitsu no Ningengirai Kyoushi",
   "characters": [
     {
       "name": "히토마 레이",
@@ -4051,7 +4014,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61217,
-  "title": "Yuusha no Kuzu",
   "characters": [
     {
       "name": "야시로",
@@ -4183,7 +4145,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 59047,
-  "title": "Tamon-kun Ima Docchi!?",
   "characters": [
     {
       "name": "키노시타 우타게",
@@ -4309,7 +4270,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61335,
-  "title": "Medalist 2nd Season",
   "characters": [
     {
       "name": "유이츠카 이노리",
@@ -4465,7 +4425,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61663,
-  "title": "Uruwashi no Yoi no Tsuki",
   "characters": [
     {
       "name": "이치무라 코하쿠",
@@ -4519,7 +4478,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 60371,
-  "title": "Seihantai na Kimi to Boku",
   "characters": [
     {
       "name": "스즈키 미유",
@@ -4639,7 +4597,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 60223,
-  "title": "Kaya-chan wa Kowakunai",
   "characters": [
     {
       "name": "사토 카야",
@@ -4771,7 +4728,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 58861,
-  "title": "Hanazakari no Kimitachi e",
   "characters": [
     {
       "name": "아시야 미즈키",
@@ -4927,7 +4883,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 60810,
-  "title": "Majutsushi Kunon wa Mieteiru",
   "characters": [
     {
       "name": "쿠논 그리온",
@@ -4975,7 +4930,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61128,
-  "title": "Yuusha Party wo Oidasareta Kiyou Binbou",
   "characters": [
     {
       "name": "오룬 두라",
@@ -5083,7 +5037,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62000,
-  "title": "Akuyaku Reijou wa Ringoku no Outaishi ni Dekiai Sareru",
   "characters": [
     {
       "name": "티아로즈",
@@ -5197,7 +5150,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 58788,
-  "title": "Ikoku Nikki",
   "characters": [
     {
       "name": "코다이 마키오",
@@ -5353,7 +5305,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61084,
-  "title": "Hikuidori",
   "characters": [
     {
       "name": "마츠나가 켄고",
@@ -5611,7 +5562,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 55825,
-  "title": "Jigokuraku 2nd Season",
   "characters": [
     {
       "name": "가비마루",
@@ -5767,7 +5717,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62543,
-  "title": "Watashi ga Koibito ni Nareru Wake Nai jan, Muri Muri! (※Muri ja Nakatta!?): Next Shine!",
   "characters": [
     {
       "name": "오우즈카 마이",
@@ -5809,7 +5758,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63096,
-  "title": "Arisugawa Ren tte Honto wa Onna Nanda yo ne.",
   "characters": [
     {
       "name": "아리스가와 렌",
@@ -5845,7 +5793,7 @@ var CharacterData_2026 = [
 },
 {
   "id": 62897,
-  "title": "Ichigo Aika: Zatsu de Namaiki na Imouto to Warikirenai Ani",
+  "year": 2026,
   "characters": [
     {
       "name": "타카무라 아이카",
@@ -5869,7 +5817,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61969,
-  "title": "Saioshi no Gikei Mederu Tame, Nagaikishimasu!",
   "characters": [
     {
       "name": "아르바",
@@ -6295,7 +6242,6 @@ var CharacterData_2026 = [
   },
 {
   "id": 61469,
-  "title": "JoJo no Kimyou na Bouken: Steel Ball Run",
   "characters": [
     {
       "name": "자이로 체펠리",
@@ -6349,7 +6295,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61114,
-  "title": "BEASTARS FINAL SEASON Part 2",
   "characters": [
     {
       "name": "レゴシ",
@@ -6505,7 +6450,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 60610,
-  "title": "Hateshinaki Scarlet",
   "characters": [
     {
       "name": "스칼렛",
@@ -6589,7 +6533,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 59817,
-  "title": "GIRLS BAND CRY: Seishun Kyousoukyoku",
   "characters": [
     {
       "name": "이세리 니나",
@@ -6661,7 +6604,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61558,
-  "title": "Aikatsu! x PriPara THE MOVIE -Deai no Kiseki-",
   "characters": [
     {
       "name": "大空あかり",
@@ -6817,7 +6759,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 60159,
-  "title": "Love Live! Nijigasaki Gakuen School Idol Doukoukai: Kanketsu-hen 2",
   "characters": [
     {
       "name": "유키 세츠나",
@@ -6901,7 +6842,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 50159,
-  "title": "Zombie Land Saga: Yume Ginga Paradise",
   "characters": [
     {
       "name": "미나모토 사쿠라",
@@ -6961,7 +6901,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61418,
-  "title": "Kusunoki no Bannin",
   "characters": [
     {
       "name": "나오이 레이토",
@@ -7015,7 +6954,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 59393,
-  "title": "Niwatori Fighter",
   "characters": [
     {
       "name": "케이지",
@@ -7051,7 +6989,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62852,
-  "title": "Ghost Concert: missing Songs",
   "characters": [
     {
       "name": "아이바 세리아",
@@ -7117,7 +7054,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61687,
-  "title": "Jishou Akuyaku Reijou na Konyakusha no Kansatsu Kiroku.",
   "characters": [
     {
       "name": "세실 글로우 알파스타",
@@ -7231,7 +7167,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62146,
-  "title": "Isekai Nonbiri Nouka 2",
   "characters": [
     {
       "name": "마치오 히라쿠",
@@ -7387,7 +7322,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 51553,
-  "title": "Tongari Boushi no Atelier",
   "characters": [
     {
       "name": "코코",
@@ -7531,7 +7465,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61425,
-  "title": "Ponkotsu Fuuki Iin to Skirt take ga Futekisetsu na JK no Hanashi",
   "characters": [
     {
       "name": "사쿠라다이몬 토우고",
@@ -7615,7 +7548,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62331,
-  "title": "LIAR GAME",
   "characters": [
     {
       "name": "칸자키 나오",
@@ -7747,7 +7679,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63375,
-  "title": "Nippon Sangoku",
   "characters": [
     {
       "name": "미스미 아오테루",
@@ -7861,7 +7792,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61931,
-  "title": "Higeki no Genkyou to Naru Saikyou Gedou Last Boss Joou wa Tami no Tame ni Tsukushimasu.  Season 2",
   "characters": [
     {
       "name": "프라이드 로열 아이비",
@@ -7987,7 +7917,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62601,
-  "title": "MARRIAGETOXIN",
   "characters": [
     {
       "name": "게로 히카루",
@@ -8101,7 +8030,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61839,
-  "title": "Aishiteru Game wo Owarasetai",
   "characters": [
     {
       "name": "사쿠라 미쿠",
@@ -8143,7 +8071,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 56734,
-  "title": "Class de 2-banme ni Kawaii Onnanoko to Tomodachi ni Natta",
   "characters": [
     {
       "name": "마에하라 마키",
@@ -8215,7 +8142,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61013,
-  "title": "Replica Datte, Koi wo Suru.",
   "characters": [
     {
       "name": "아이카와 스나오",
@@ -8275,7 +8201,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 53732,
-  "title": "Hidarikiki no Eren",
   "characters": [
     {
       "name": "아사쿠라 코이치",
@@ -8341,7 +8266,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63014,
-  "title": "Tadaima, Ojamasaremasu!",
   "characters": [
     {
       "name": "나카마 린코",
@@ -8419,7 +8343,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63376,
-  "title": "Megami \"Isekai Tensei Nani ni Naritai Desu ka\" Ore \"Yuusha no Rokkotsu de\"",
   "characters": [
     {
       "name": "나",
@@ -8467,7 +8390,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 59708,
-  "title": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 4th Season 2-nensei-hen Ichi Gakki",
   "characters": [
     {
       "name": "아야노코지 키요타카",
@@ -8623,7 +8545,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62512,
-  "title": "Jidou Hanbaiki ni Umarekawatta Ore wa Meikyuu wo Samayou 3rd Season",
   "characters": [
     {
       "name": "핫콘",
@@ -8779,7 +8700,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61316,
-  "title": "Re:Zero kara Hajimeru Isekai Seikatsu 4th Season",
   "characters": [
     {
       "name": "에밀리아",
@@ -8935,7 +8855,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61831,
-  "title": "Saikyou no Ousama, Nidome no Jinsei wa Nani wo Suru? 2nd Season",
   "characters": [
     {
       "name": "아서 레윈",
@@ -9013,7 +8932,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62604,
-  "title": "Otaku ni Yasashii Gal wa Inai!?",
   "characters": [
     {
       "name": "세오 타쿠야",
@@ -9061,7 +8979,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62893,
-  "title": "Nigashita Sakana wa Ookikatta ga Tsuriageta Sakana ga Ookisugita Ken",
   "characters": [
     {
       "name": "마리아 안노바치",
@@ -9151,7 +9068,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 59551,
-  "title": "Ganbare! Nakamura-kun!!",
   "characters": [
     {
       "name": "나카무라 오쿠토",
@@ -9289,7 +9205,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 60028,
-  "title": "Hime Kishi wa Barbaroi no Yome",
   "characters": [
     {
       "name": "세라피나 드 라빌란트",
@@ -9385,7 +9300,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 57592,
-  "title": "Dr. STONE: SCIENCE FUTURE",
   "characters": [
     {
       "name": "이시가미 센쿠",
@@ -9541,7 +9455,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 58832,
-  "title": "Kujima Utaeba Ie Hororo",
   "characters": [
     {
       "name": "쿠지마",
@@ -9601,7 +9514,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 60852,
-  "title": "Koori no Jouheki",
   "characters": [
     {
       "name": "아즈미 미키",
@@ -9757,7 +9669,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 59835,
-  "title": "Kirio Fanclub",
   "characters": [
     {
       "name": "미요시 아이미",
@@ -9805,7 +9716,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 59443,
-  "title": "Reincarnation no Kaben",
   "characters": [
     {
       "name": "센지 토우야",
@@ -9943,7 +9853,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61943,
-  "title": "Haibara-kun no Tsuyokute Seishun New Game",
   "characters": [
     {
       "name": "하이바라 나츠키",
@@ -9997,7 +9906,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 58820,
-  "title": "Awajima Hyakkei",
   "characters": [
     {
       "name": "다바타 와카나",
@@ -10057,7 +9965,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62964,
-  "title": "Mata Korosarete Shimatta no desu ne, Tantei-sama",
   "characters": [
     {
       "name": "오우츠키 사쿠야",
@@ -10105,7 +10012,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 56876,
-  "title": "Otonari no Tenshi-sama ni Itsunomanika Dame Ningen ni Sareteita Ken 2nd Season",
   "characters": [
     {
       "name": "시이나 마히루",
@@ -10159,7 +10065,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 59970,
-  "title": "Tensei Shitara Slime Datta Ken 4th Season",
   "characters": [
     {
       "name": "리무루 템페스트",
@@ -10315,7 +10220,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62068,
-  "title": "Snowball Earth",
   "characters": [
     {
       "name": "유키오",
@@ -10387,7 +10291,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62981,
-  "title": "Kami no Shizuku",
   "characters": [
     {
       "name": "토미네 잇세",
@@ -10471,7 +10374,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61186,
-  "title": "Kamiina Botan, Yoeru Sugata wa Yuri no Hana",
   "characters": [
     {
       "name": "토나미 이부키",
@@ -10513,7 +10415,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61200,
-  "title": "Shuumatsu no Valkyrie III",
   "characters": [
     {
       "name": "진시황",
@@ -10663,7 +10564,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 56646,
-  "title": "Hokuto no Ken: FIST OF THE NORTH STAR",
   "characters": [
     {
       "name": "켄시로",
@@ -10813,7 +10713,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62485,
-  "title": "Kanojo, Okarishimasu 5th Season",
   "characters": [
     {
       "name": "미즈하라 치즈루",
@@ -10867,7 +10766,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 57466,
-  "title": "Honzuki no Gekokujou: Ryoushu no Youjo",
   "characters": [
     {
       "name": "마인",
@@ -11023,7 +10921,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 60310,
-  "title": "Mairimashita! Iruma-kun 4",
   "characters": [
     {
       "name": "스즈키 이루마",
@@ -11179,7 +11076,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 60444,
-  "title": "Yowa Yowa Sensei",
   "characters": [
     {
       "name": "히와무라 히요리",
@@ -11221,7 +11117,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62825,
-  "title": "Saikyou no Shokugyou wa Yuusha demo Kenja demo Naku Kanteishi (Kari) Rashii desu yo?",
   "characters": [
     {
       "name": "마나베 히비키",
@@ -11293,7 +11188,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62391,
-  "title": "Kill Ao",
   "characters": [
     {
       "name": "오오가미 쥬조",
@@ -11389,7 +11283,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62164,
-  "title": "Akane-banashi",
   "characters": [
     {
       "name": "오우사키 아카네",
@@ -11545,7 +11438,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62048,
-  "title": "MAO",
   "characters": [
     {
       "name": "마오",
@@ -11647,7 +11539,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61443,
-  "title": "Shunkashuutou Daikousha: Haru no Mai",
   "characters": [
     {
       "name": "카요 히나기쿠",
@@ -11761,7 +11652,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62913,
-  "title": "NEEDY GIRL OVERDOSE",
   "characters": [
     {
       "name": "아메짱",
@@ -11797,7 +11687,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61501,
-  "title": "Kanan-sama wa Akumade Choroi",
   "characters": [
     {
       "name": "카난 님은 초보 악마",
@@ -11935,7 +11824,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62050,
-  "title": "Kami no Niwatsuki Kusunoki-tei",
   "characters": [
     {
       "name": "쿠스노키 미나토",
@@ -12079,7 +11967,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62018,
-  "title": "Ichijouma Mankitsu-gurashi!",
   "characters": [
     {
       "name": "모리타 메이코",
@@ -12139,7 +12026,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63352,
-  "title": "Onegai AiPri",
   "characters": [
     {
       "name": "코노미 이노리",
@@ -12295,7 +12181,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 59983,
-  "title": "Tsue to Tsurugi no Wistoria Season 2",
   "characters": [
     {
       "name": "윌 셰르홀트",
@@ -12451,7 +12336,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 60055,
-  "title": "Yozakura-san Chi no Daisakusen 2nd Season",
   "characters": [
     {
       "name": "아사노 타이요",
@@ -12589,7 +12473,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 58877,
-  "title": "Diamond no Ace act II: Second Season",
   "characters": [
     {
       "name": "코미나토 하루이치",
@@ -12649,7 +12532,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62342,
-  "title": "Maid-san wa Taberu dake",
   "characters": [
     {
       "name": "타치바나 스즈메",
@@ -12697,7 +12579,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63667,
-  "title": "Mahou no Shimai LuluttoLilly Part 2",
   "characters": [
     {
       "name": "노노야마 루이",
@@ -12721,7 +12602,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62171,
-  "title": "Kuroneko to Majo no Kyoushitsu",
   "characters": [
     {
       "name": "스피카 버고",
@@ -12811,7 +12691,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62983,
-  "title": "Marika-chan no Koukando wa Bukkowareteiru",
   "characters": [
     {
       "name": "치토세 마리카",
@@ -12847,7 +12726,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63248,
-  "title": "Ookii Onnanoko wa Suki desu ka?",
   "characters": [
     {
       "name": "타치바나 소타",
@@ -12895,7 +12773,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63310,
-  "title": "Ingoku Danchi",
   "characters": [
     {
       "name": "요시다",
@@ -13015,7 +12892,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63304,
-  "title": "Mamonogurai no Boukensha: Ore Dake Mamono wo Kuratte Tsuyoku Naru",
   "characters": [
     {
       "name": "루드",
@@ -13045,7 +12921,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 57779,
-  "title": "Dorohedoro Season 2",
   "characters": [
     {
       "name": "카이만",
@@ -13201,7 +13076,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63572,
-  "title": "Dandelion",
   "characters": [
     {
       "name": "탄바 테츠오",
@@ -13225,7 +13099,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62155,
-  "title": "Iya na Kao sare nagara Opantsu Misete Moraitai Returns",
   "characters": [
     {
       "name": "이토 치토세",
@@ -13273,7 +13146,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 59193,
-  "title": "Mushoku Tensei III: Isekai Ittara Honki Dasu",
   "year": 2026,
   "characters": [
     {
@@ -13496,7 +13368,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 58878,
-  "title": "Sayonara Lara",
   "year": 2026,
   "characters": [
     {
@@ -13605,7 +13476,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 56736,
-  "title": "Saikyou Degarashi Ouji no Anyaku Teii Arasoi: Munou wo Enjiru SS Rank Ouji wa Koui Keishou-sen wo Kage kara Shihai suru",
   "year": 2026,
   "characters": [
     {
@@ -13690,7 +13560,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62936,
-  "title": "Toumei na Yoru ni Kakeru Kimi to, Me ni Mienai Koi wo Shita.",
   "year": 2026,
   "characters": [
     {
@@ -13721,7 +13590,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 60522,
-  "title": "Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu II",
   "year": 2026,
   "characters": [
     {
@@ -13872,7 +13740,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62617,
-  "title": "Koko wa Ore ni Makasete Saki ni Ike to Ittekara 10-nen ga Tattara Densetsu ni Natteita.",
   "year": 2026,
   "characters": [
     {
@@ -13981,7 +13848,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62289,
-  "title": "Buchigire Reijou wa Houfuku wo Chikaimashita.: Madousho no Chikara de Sokoku wo Tataki Tsubushimasu",
   "year": 2026,
   "characters": [
     {
@@ -14054,7 +13920,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63752,
-  "title": "Suterare Seijo no Isekai Gohantabi: Kakure Skill de Camping Car wo Shoukan Shimashita",
   "year": 2026,
   "characters": [
     {
@@ -14109,7 +13974,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62031,
-  "title": "Honoo no Toukyuujyo Dodge Danko",
   "year": 2026,
   "characters": [
     {
@@ -14326,7 +14190,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 56735,
-  "title": "Tenkousaki no Seiso Karen na Bishoujo ga, Mukashi Danshi to Omotte Issho ni Asonda Osananajimi datta Ken",
   "year": 2026,
   "characters": [
     {
@@ -14363,7 +14226,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62542,
-  "title": "Grand Blue Season 3",
   "year": 2026,
   "characters": [
     {
@@ -14532,7 +14394,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 46488,
-  "title": "Tai-Ari deshita.: Ojou-sama wa Kakutou Game nante Shinai",
   "year": 2026,
   "characters": [
     {
@@ -14605,7 +14466,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61126,
-  "title": "Kimi ga Shinu made Koi wo Shitai",
   "year": 2026,
   "characters": [
     {
@@ -14678,7 +14538,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 58929,
-  "title": "Koukaku Kidoutai: THE GHOST IN THE SHELL",
   "year": 2026,
   "characters": [
     {
@@ -14841,7 +14700,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62476,
-  "title": "Tefuda ga Oome no Victoria",
   "year": 2026,
   "characters": [
     {
@@ -14914,7 +14772,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63489,
-  "title": "Sora wa Akai Kawa no Hotori",
   "year": 2026,
   "characters": [
     {
@@ -15023,7 +14880,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62513,
-  "title": "Clevatess II: Majuu no Ou to Itsuwari no Yuusha Denshou",
   "year": 2026,
   "characters": [
     {
@@ -15150,7 +15006,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 49233,
-  "title": "Youjo Senki II",
   "year": 2026,
   "characters": [
     {
@@ -15307,7 +15162,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61686,
-  "title": "Heroine? Seijo? Iie, All Works Maid desu (Ko)!",
   "year": 2026,
   "characters": [
     {
@@ -15362,7 +15216,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62102,
-  "title": "Ibitte Konai Gibo to Gishi",
   "year": 2026,
   "characters": [
     {
@@ -15453,7 +15306,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 54000,
-  "title": "Otomege Sekai wa Mob ni Kibishii Sekai desu 2",
   "year": 2026,
   "characters": [
     {
@@ -15592,7 +15444,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61897,
-  "title": "Katainaka no Ossan, Kensei ni Naru II",
   "year": 2026,
   "characters": [
     {
@@ -15689,7 +15540,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63508,
-  "title": "Rakudai Kenja no Gakuin Musou: Nidome no Tensei, S-Rank Cheat Majutsushi Bouken-roku",
   "year": 2026,
   "characters": [
     {
@@ -15786,7 +15636,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62322,
-  "title": "LV999 no Murabito",
   "year": 2026,
   "characters": [
     {
@@ -15853,7 +15702,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63780,
-  "title": "Hanazakari no Kimitachi e 2nd Season",
   "year": 2026,
   "characters": [
     {
@@ -15980,7 +15828,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63316,
-  "title": "Dogul Wang",
   "year": 2026,
   "characters": [
     {
@@ -16029,7 +15876,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63082,
-  "title": "Reiwa no Dara-san",
   "year": 2026,
   "characters": [
     {
@@ -16222,7 +16068,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63347,
-  "title": "World Is Dancing",
   "year": 2026,
   "characters": [
     {
@@ -16349,7 +16194,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62430,
-  "title": "BanG Dream! Yume∞Mita",
   "year": 2026,
   "characters": [
     {
@@ -16422,7 +16266,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63802,
-  "title": "Mebius Dust",
   "year": 2026,
   "characters": [
     {
@@ -16621,7 +16464,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62076,
-  "title": "Super no Ura de Yani Suu Futari",
   "year": 2026,
   "characters": [
     {
@@ -16670,7 +16512,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 59741,
-  "title": "Tsuihou Sareta Tensei Juukishi wa Game Chishiki de Musou Suru",
   "year": 2026,
   "characters": [
     {
@@ -16737,7 +16578,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63403,
-  "title": "Yani Neko",
   "year": 2026,
   "characters": [
     {
@@ -16900,7 +16740,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63150,
-  "title": "Otome Kaijuu Caraméliser",
   "year": 2026,
   "characters": [
     {
@@ -16979,7 +16818,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62078,
-  "title": "Ryoumin 0-Nin Start no Henkyou Ryoushu-sama",
   "year": 2026,
   "characters": [
     {
@@ -17172,7 +17010,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 60059,
-  "title": "Nige Jouzu no Wakagimi 2nd Season",
   "year": 2026,
   "characters": [
     {
@@ -17227,7 +17064,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61280,
-  "title": "Kore Kaite Shine",
   "year": 2026,
   "characters": [
     {
@@ -17294,7 +17130,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63061,
-  "title": "Uchi no Otouto-domo ga Sumimasen",
   "year": 2026,
   "characters": [
     {
@@ -17385,7 +17220,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63817,
-  "title": "Hell Mode: Yarikomi-zuki no Gamer wa Haisettei no Isekai de Musou Suru 2nd Season",
   "year": 2026,
   "characters": [
     {
@@ -17518,7 +17352,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 56835,
-  "title": "Code Geass: Dakkan no Rozé",
   "year": 2026,
   "characters": [
     {
@@ -17717,7 +17550,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61048,
-  "title": "Neko to Ryuu",
   "year": 2026,
   "characters": [
     {
@@ -17826,7 +17658,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61169,
-  "title": "BLACK TORCH",
   "year": 2026,
   "characters": [
     {
@@ -17965,7 +17796,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63324,
-  "title": "Iwamoto-senpai no Suisen",
   "year": 2026,
   "characters": [
     {
@@ -18020,7 +17850,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 60636,
-  "title": "BLEACH: Sennen Kessen-hen - Kashin-tan",
   "year": 2026,
   "characters": [
     {
@@ -18123,7 +17952,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61483,
-  "title": "Tenmaku no Jaadugar",
   "year": 2026,
   "characters": [
     {
@@ -18310,7 +18138,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62001,
-  "title": "Yomi no Tsugai",
   "year": 2026,
   "characters": [
     {
@@ -18527,7 +18354,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62051,
-  "title": "Grow Up Show: Himawari no Circus-dan",
   "year": 2026,
   "characters": [
     {
@@ -18636,7 +18462,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61814,
-  "title": "Oni no Hanayome",
   "year": 2026,
   "characters": [
     {
@@ -18721,7 +18546,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 60552,
-  "title": "Kabushiki Gaisha Magi Lumiere 2nd Season",
   "year": 2026,
   "characters": [
     {
@@ -18830,7 +18654,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 60637,
-  "title": "Mahou Shoujo Lyrical Nanoha EXCEEDS Gun Blaze Vengeance",
   "year": 2026,
   "characters": [
     {
@@ -18915,7 +18738,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63537,
-  "title": "\"Kimi wo Aisuru Ki wa nai\" to Itta Jiki Koushaku-sama ga Naze ka Dekiai Shitekimasu",
   "year": 2026,
   "characters": [
     {
@@ -18994,7 +18816,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62535,
-  "title": "Hanaori-san wa Tensei Shite mo Kenka ga Shitai",
   "year": 2026,
   "characters": [
     {
@@ -19067,7 +18888,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62876,
-  "title": "Saijo no Osewa: Takane no Hanadarake na Meimonkou de, Gakuin Ichi no Ojou-sama (Seikatsu Nouryoku Kaimu) wo Kagenagara Osewa suru Koto ni Narimashita",
   "year": 2026,
   "characters": [
     {
@@ -19122,7 +18942,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62683,
-  "title": "Let's Go Kaikigumi",
   "year": 2026,
   "characters": [
     {
@@ -19219,7 +19038,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63832,
-  "title": "Seihantai na Kimi to Boku 2nd Season",
   "year": 2026,
   "characters": [
     {
@@ -19334,7 +19152,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63100,
-  "title": "Tetsunabe no Jan!",
   "year": 2026,
   "characters": [
     {
@@ -19401,7 +19218,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62435,
-  "title": "Sekai Saikyou no Kouei: Meikyuukoku no Shinjin Tansakusha",
   "year": 2026,
   "characters": [
     {
@@ -19456,7 +19272,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62811,
-  "title": "Kimi no Koto ga Dai Dai Dai Dai Daisuki na 100-nin no Kanojo 3rd Season",
   "year": 2026,
   "characters": [
     {
@@ -19607,7 +19422,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62856,
-  "title": "Nijusseiki Denki Mokuroku: Eureka Evrika",
   "year": 2026,
   "characters": [
     {
@@ -19734,7 +19548,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61240,
-  "title": "Futsutsuka na Akujo de wa Gozaimasu ga: Suuguu Chouso Torikae Den",
   "year": 2026,
   "characters": [
     {
@@ -19819,7 +19632,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 56613,
-  "title": "Azur Lane: Bisoku Zenshin! Ni!!",
   "year": 2026,
   "characters": [
     {
@@ -19982,7 +19794,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62883,
-  "title": "Bungou Stray Dogs Wan! 2",
   "year": 2026,
   "characters": [
     {
@@ -20145,7 +19956,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 63468,
-  "title": "Ushiro no Shoumen Kamui-san",
   "year": 2026,
   "characters": [
     {
@@ -20194,7 +20004,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 62233,
-  "title": "ONE PIECE HEROINES",
   "year": 2026,
   "characters": [
     {
@@ -20237,7 +20046,6 @@ var CharacterData_2026 = [
 },
 {
   "id": 61546,
-  "title": "Star Wars: Visions - Kyuuninme no Jedi",
   "year": 2026,
   "characters": [
     {

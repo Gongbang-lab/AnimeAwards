@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-18T06:01:43.205Z",
+  "generatedAt": "2026-09-18T08:40:45.467Z",
   "year": 2026,
   "counts": {
     "AnimeAdaptorData_2026": 199,
     "CharacterVoiceData_2026": 1091,
-    "CharacterData_2026": 202,
+    "CharacterData_2026": 201,
     "cinemaData_2026": 9,
-    "AnimeList_2026": 214,
+    "AnimeList_2026": 213,
     "animeDirectorData_2026": 213,
     "animeEPData_2026": 192,
     "AnimeMemeData_2026": 22,
@@ -18,83 +18,12 @@
   "issues": {
     "error": [
       {
-        "code": "ANIME_DUPLICATE_SAME_QUARTER",
-        "message": "AnimeList ID 61316가 3분기에 2건 존재합니다.",
-        "id": "61316",
-        "quarter": "3분기",
-        "records": [
-          {
-            "title": "Re:제로부터 시작하는 이세계 생활 4기",
-            "thumbnail": "image/animeimg/2026/Q3/Re 제로부터 시작하는 이세계 생활 4기.webp"
-          },
-          {
-            "title": "Re:제로부터 시작하는 이세계 생활 4기",
-            "thumbnail": "image/animeimg/2026/Q2/Re 제로부터 시작하는 이세계 생활 4기.webp"
-          }
-        ]
-      },
-      {
-        "code": "CHARACTER_DATA_DUPLICATE_ID",
-        "message": "CharacterData ID 62001가 2건 존재합니다. 분기/버전 구분자가 없어 자동 병합 기준이 없습니다.",
-        "id": "62001",
-        "records": [
-          {
-            "title": "Yomi no Tsugai",
-            "characterCount": 25
-          },
-          {
-            "title": "Yomi no Tsugai",
-            "characterCount": 35
-          }
-        ]
-      },
-      {
-        "code": "CHARACTER_ANIME_ORPHAN",
-        "message": "CharacterData ID 61114가 AnimeList/Cinema 어디에도 없습니다.",
-        "index": 63,
-        "animeId": 61114,
-        "title": "BEASTARS FINAL SEASON Part 2"
-      },
-      {
         "code": "CHARACTER_CV_ORPHAN",
-        "message": "CharacterData의 CV '사이토 소마['가 CharacterVoiceData에 없습니다.",
-        "animeId": 63537,
-        "animeTitle": "\"Kimi wo Aisuru Ki wa nai\" to Itta Jiki Koushaku-sama ga Naze ka Dekiai Shitekimasu",
-        "character": "율리우스 로이아스",
-        "cv": "사이토 소마["
-      },
-      {
-        "code": "RESOLVEYEAR_MAPPING_BROKEN",
-        "message": "resolveYear.js: alias 'OSTData'가 찾는 'OSTData_2026' 변수가 없습니다.",
-        "alias": "OSTData",
-        "prefix": "OSTData",
-        "expected": "OSTData_2026"
-      },
-      {
-        "code": "RESOLVEYEAR_MAPPING_BROKEN",
-        "message": "resolveYear.js: alias 'AdaptorData'가 찾는 'AdaptorData_2026' 변수가 없습니다.",
-        "alias": "AdaptorData",
-        "prefix": "AdaptorData",
-        "expected": "AdaptorData_2026"
-      },
-      {
-        "code": "RESOLVEYEAR_MAPPING_BROKEN",
-        "message": "resolveYear.js: alias 'TOP3_Awards'가 찾는 'TOP3_Awards_2026' 변수가 없습니다.",
-        "alias": "TOP3_Awards",
-        "prefix": "TOP3_Awards",
-        "expected": "TOP3_Awards_2026"
-      },
-      {
-        "code": "HTML_LOCAL_SCRIPT_MISSING",
-        "message": "dataCollector\\3directorDataExtractor.html가 존재하지 않는 스크립트를 참조합니다: ../data/2026/2026animeCinema.js",
-        "html": "dataCollector\\3directorDataExtractor.html",
-        "src": "../data/2026/2026animeCinema.js"
-      },
-      {
-        "code": "HTML_LOCAL_SCRIPT_MISSING",
-        "message": "index.html가 존재하지 않는 스크립트를 참조합니다: ./data/2026/2026animeOSTData.js",
-        "html": "index.html",
-        "src": "./data/2026/2026animeOSTData.js"
+        "message": "CharacterData의 CV '아오키 무네타카'가 CharacterVoiceData에 없습니다.",
+        "animeId": 60610,
+        "animeTitle": "Hateshinaki Scarlet",
+        "character": "로젠크란츠",
+        "cv": "아오키 무네타카"
       }
     ],
     "warning": [
@@ -147,42 +76,394 @@
         "animeId": 58573
       },
       {
-        "code": "CHARACTER_DUPLICATE_NAME",
-        "message": "같은 작품에서 동일 캐릭터명이 반복됩니다: 클로디어스",
-        "animeId": 60610,
-        "title": "Hateshinaki Scarlet",
-        "firstIndex": 2,
-        "secondIndex": 6
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[0] animeTitle이 없습니다. (ID 61886)",
+        "index": 0,
+        "id": 61886
       },
       {
-        "code": "CHARACTER_DUPLICATE_NAME",
-        "message": "같은 작품에서 동일 캐릭터명이 반복됩니다: 아사",
-        "animeId": 62001,
-        "title": "Yomi no Tsugai",
-        "firstIndex": 1,
-        "secondIndex": 9
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[1] animeTitle이 없습니다. (ID 61942)",
+        "index": 1,
+        "id": 61942
       },
       {
-        "code": "CHARACTER_DUPLICATE_NAME",
-        "message": "같은 작품에서 동일 캐릭터명이 반복됩니다: 코테가와 나나카",
-        "animeId": 62542,
-        "title": "Grand Blue Season 3",
-        "firstIndex": 4,
-        "secondIndex": 7
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[2] animeTitle이 없습니다. (ID 61782)",
+        "index": 2,
+        "id": 61782
       },
       {
-        "code": "CHARACTER_DUPLICATE_NAME",
-        "message": "같은 작품에서 동일 캐릭터명이 반복됩니다: 清掃局員",
-        "animeId": 58929,
-        "title": "Koukaku Kidoutai: THE GHOST IN THE SHELL",
-        "firstIndex": 8,
-        "secondIndex": 13
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[3] animeTitle이 없습니다. (ID 55772)",
+        "index": 3,
+        "id": 55772
       },
       {
-        "code": "CHARACTER_CV_MISSING",
-        "message": "캐릭터 쿠르트간의 형의 CV가 없습니다.",
-        "animeId": 61483,
-        "charIndex": 19
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[4] animeTitle이 없습니다. (ID 58524)",
+        "index": 4,
+        "id": 58524
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[5] animeTitle이 없습니다. (ID 61359)",
+        "index": 5,
+        "id": 61359
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[6] animeTitle이 없습니다. (ID 61983)",
+        "index": 6,
+        "id": 61983
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[7] animeTitle이 없습니다. (ID 60226)",
+        "index": 7,
+        "id": 60226
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[8] animeTitle이 없습니다. (ID 61211)",
+        "index": 8,
+        "id": 61211
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[9] animeTitle이 없습니다. (ID 61830)",
+        "index": 9,
+        "id": 61830
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[10] animeTitle이 없습니다. (ID 58886)",
+        "index": 10,
+        "id": 58886
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[11] animeTitle이 없습니다. (ID 60255)",
+        "index": 11,
+        "id": 60255
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[12] animeTitle이 없습니다. (ID 61637)",
+        "index": 12,
+        "id": 61637
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[13] animeTitle이 없습니다. (ID 61884)",
+        "index": 13,
+        "id": 61884
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[14] animeTitle이 없습니다. (ID 60058)",
+        "index": 14,
+        "id": 60058
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[15] animeTitle이 없습니다. (ID 59711)",
+        "index": 15,
+        "id": 59711
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[16] animeTitle이 없습니다. (ID 60692)",
+        "index": 16,
+        "id": 60692
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[17] animeTitle이 없습니다. (ID 60071)",
+        "index": 17,
+        "id": 60071
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[18] animeTitle이 없습니다. (ID 56752)",
+        "index": 18,
+        "id": 56752
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[19] animeTitle이 없습니다. (ID 56009)",
+        "index": 19,
+        "id": 56009
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[20] animeTitle이 없습니다. (ID 58505)",
+        "index": 20,
+        "id": 58505
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[21] animeTitle이 없습니다. (ID 60395)",
+        "index": 21,
+        "id": 60395
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[22] animeTitle이 없습니다. (ID 60151)",
+        "index": 22,
+        "id": 60151
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[23] animeTitle이 없습니다. (ID 57658)",
+        "index": 23,
+        "id": 57658
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[24] animeTitle이 없습니다. (ID 61587)",
+        "index": 24,
+        "id": 61587
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[25] animeTitle이 없습니다. (ID 61325)",
+        "index": 25,
+        "id": 61325
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[26] animeTitle이 없습니다. (ID 60509)",
+        "index": 26,
+        "id": 60509
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[27] animeTitle이 없습니다. (ID 59978)",
+        "index": 27,
+        "id": 59978
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[28] animeTitle이 없습니다. (ID 62804)",
+        "index": 28,
+        "id": 62804
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[29] animeTitle이 없습니다. (ID 59853)",
+        "index": 29,
+        "id": 59853
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[30] animeTitle이 없습니다. (ID 60460)",
+        "index": 30,
+        "id": 60460
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[31] animeTitle이 없습니다. (ID 59229)",
+        "index": 31,
+        "id": 59229
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[32] animeTitle이 없습니다. (ID 61207)",
+        "index": 32,
+        "id": 61207
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[33] animeTitle이 없습니다. (ID 61549)",
+        "index": 33,
+        "id": 61549
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[34] animeTitle이 없습니다. (ID 54863)",
+        "index": 34,
+        "id": 54863
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[35] animeTitle이 없습니다. (ID 55830)",
+        "index": 35,
+        "id": 55830
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[36] animeTitle이 없습니다. (ID 61196)",
+        "index": 36,
+        "id": 61196
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[37] animeTitle이 없습니다. (ID 62432)",
+        "index": 37,
+        "id": 62432
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[38] animeTitle이 없습니다. (ID 61217)",
+        "index": 38,
+        "id": 61217
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[39] animeTitle이 없습니다. (ID 59047)",
+        "index": 39,
+        "id": 59047
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[40] animeTitle이 없습니다. (ID 61335)",
+        "index": 40,
+        "id": 61335
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[41] animeTitle이 없습니다. (ID 61663)",
+        "index": 41,
+        "id": 61663
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[42] animeTitle이 없습니다. (ID 60371)",
+        "index": 42,
+        "id": 60371
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[43] animeTitle이 없습니다. (ID 60223)",
+        "index": 43,
+        "id": 60223
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[44] animeTitle이 없습니다. (ID 58861)",
+        "index": 44,
+        "id": 58861
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[45] animeTitle이 없습니다. (ID 60810)",
+        "index": 45,
+        "id": 60810
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[46] animeTitle이 없습니다. (ID 61128)",
+        "index": 46,
+        "id": 61128
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[47] animeTitle이 없습니다. (ID 62000)",
+        "index": 47,
+        "id": 62000
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[48] animeTitle이 없습니다. (ID 58788)",
+        "index": 48,
+        "id": 58788
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[49] animeTitle이 없습니다. (ID 61084)",
+        "index": 49,
+        "id": 61084
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[50] animeTitle이 없습니다. (ID 60602)",
+        "index": 50,
+        "id": 60602
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[51] animeTitle이 없습니다. (ID 55825)",
+        "index": 51,
+        "id": 55825
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[52] animeTitle이 없습니다. (ID 62543)",
+        "index": 52,
+        "id": 62543
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[53] animeTitle이 없습니다. (ID 63096)",
+        "index": 53,
+        "id": 63096
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[54] animeTitle이 없습니다. (ID 62897)",
+        "index": 54,
+        "id": 62897
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[55] animeTitle이 없습니다. (ID 61969)",
+        "index": 55,
+        "id": 61969
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[56] animeTitle이 없습니다. (ID 61694)",
+        "index": 56,
+        "id": 61694
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[57] animeTitle이 없습니다. (ID 60294)",
+        "index": 57,
+        "id": 60294
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[58] animeTitle이 없습니다. (ID 63019)",
+        "index": 58,
+        "id": 63019
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[59] animeTitle이 없습니다. (ID 62896)",
+        "index": 59,
+        "id": 62896
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[60] animeTitle이 없습니다. (ID 61119)",
+        "index": 60,
+        "id": 61119
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[61] animeTitle이 없습니다. (ID 58573)",
+        "index": 61,
+        "id": 58573
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[62] animeTitle이 없습니다. (ID 61469)",
+        "index": 62,
+        "id": 61469
+      },
+      {
+        "code": "SONG_ANIME_ORPHAN",
+        "message": "AnimeSongs[63] ID 49469가 Anime/Cinema에 없습니다.",
+        "index": 63,
+        "id": 49469
+      },
+      {
+        "code": "SONG_ANIME_TITLE_MISSING",
+        "message": "AnimeSongs[63] animeTitle이 없습니다. (ID 49469)",
+        "index": 63,
+        "id": 49469
       },
       {
         "code": "SONG_ANIME_TITLE_MISSING",
@@ -983,6 +1264,11 @@
         "id": 62233
       },
       {
+        "code": "EP_ANIME_ORPHAN",
+        "message": "animeEPData ID 49469가 AnimeList에 없습니다.",
+        "animeId": "49469"
+      },
+      {
         "code": "EP_DUPLICATE_NO",
         "message": "작품 56835에서 episode no '1막'가 반복됩니다.",
         "animeId": "56835"
@@ -1016,11 +1302,11 @@
     "info": [
       {
         "code": "ANIME_SEASONAL_REUSE",
-        "message": "AnimeList 214건 중 ID가 여러 분기에 재사용되는 작품 8개를 확인했습니다. 분기별 재사용은 허용합니다."
+        "message": "AnimeList 213건 중 ID가 여러 분기에 재사용되는 작품 8개를 확인했습니다. 분기별 재사용은 허용합니다."
       },
       {
         "code": "ANIME_COUNT",
-        "message": "AnimeList 214건 검사 완료. 같은 분기 중복 1그룹."
+        "message": "AnimeList 213건 검사 완료. 같은 분기 중복 0그룹."
       },
       {
         "code": "CV_SUMMARY",
