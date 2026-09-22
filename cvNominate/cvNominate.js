@@ -12,19 +12,128 @@ const cvState = {
 let cachedVoteData = null;
 
 /**
- * ✅ 추가: 성별 + 시즌(분기) 기준으로 필터링된 성우 목록을 반환
- * - 각 성우의 characters(참여작)를 선택된 분기에 해당하는 것만 남기고
- * - 남은 참여작이 하나도 없는 성우는 후보 목록에서 제외
+ * 2-4 데이터 조회 계층
+ *
+ * CVData는 더 이상 캐릭터 상세정보를 중복 저장하지 않고
+ * characterIds만 보유한다. 화면에서는 아래 lookup을 통해
+ * CharacterData + AnimeData를 조합한 runtime view model을 만든다.
+ */
+function getAnimeList() {
+    if (typeof AnimeList_2026 === "undefined" || !Array.isArray(AnimeList_2026)) return [];
+    return AnimeList_2026;
+}
+
+function buildAnimeMap() {
+    const map = new Map();
+    getAnimeList().forEach(anime => {
+        const animeId = Number(anime?.id);
+        if (Number.isFinite(animeId) && animeId > 0) {
+            map.set(animeId, anime);
+        }
+    });
+    return map;
+}
+
+function buildCharacterMap() {
+    const map = new Map();
+
+    if (typeof CharacterData_2026 === "undefined" || !Array.isArray(CharacterData_2026)) {
+        return map;
+    }
+
+    CharacterData_2026.forEach(animeEntry => {
+        const animeId = Number(animeEntry?.id);
+        if (!Number.isFinite(animeId) || animeId <= 0) return;
+
+        const characters = Array.isArray(animeEntry?.characters) ? animeEntry.characters : [];
+        characters.forEach(character => {
+            const characterId = Number(character?.characterId);
+            if (!Number.isFinite(characterId) || characterId <= 0) return;
+
+            map.set(characterId, {
+                ...character,
+                animeId
+            });
+        });
+    });
+
+    return map;
+}
+
+const animeMap = buildAnimeMap();
+const characterMap = buildCharacterMap();
+
+function getCVRecords() {
+    if (typeof CharacterVoiceData_2026 === "undefined") return [];
+
+    if (Array.isArray(CharacterVoiceData_2026)) {
+        return CharacterVoiceData_2026;
+    }
+
+    if (CharacterVoiceData_2026 && typeof CharacterVoiceData_2026 === "object") {
+        return Object.values(CharacterVoiceData_2026);
+    }
+
+    return [];
+}
+
+/**
+ * CVData의 characterIds를 CharacterData와 AnimeList로 복원해
+ * 화면에서만 사용하는 상세 역할 정보(runtime view model)를 만든다.
+ *
+ * 저장 데이터에는 아래 정보가 다시 들어가지 않는다.
+ * - animeTitle
+ * - charName
+ * - character img
+ * - year / quarter
+ */
+function resolveCVCharacters(cv) {
+    const characterIds = Array.isArray(cv?.characterIds) ? cv.characterIds : [];
+    const seen = new Set();
+    const roles = [];
+
+    characterIds.forEach(rawId => {
+        const characterId = Number(rawId);
+        if (!Number.isFinite(characterId) || characterId <= 0 || seen.has(characterId)) return;
+        seen.add(characterId);
+
+        const character = characterMap.get(characterId);
+        if (!character) return;
+
+        const anime = animeMap.get(Number(character.animeId));
+        if (!anime) return;
+
+        roles.push({
+            characterId,
+            animeId: Number(character.animeId),
+            charName: character.name || "이름 없음",
+            img: character.img || "",
+            animeTitle: anime.title || "작품명 없음",
+            year: anime.year,
+            quarter: anime.quarter
+        });
+    });
+
+    return roles;
+}
+
+/**
+ * 성별 + 시즌(연도/분기) 기준 CV 목록을 반환한다.
+ * 시즌 판단은 CVData에 저장된 quarter/year가 아니라
+ * Character -> animeId -> AnimeList 관계를 기준으로 한다.
  */
 function getSeasonFilteredCVList(genderKey) {
-    if (typeof CharacterVoiceData === 'undefined') return [];
-
-    return Object.values(CharacterVoiceData)
-        .filter(cv => cv.name !== "Unknown")
-        .filter(cv => String(cv.gender).toLowerCase() === genderKey)
+    return getCVRecords()
+        .filter(cv => cv?.name && cv.name !== "Unknown")
+        .filter(cv => String(cv?.gender || "").toLowerCase() === genderKey)
         .map(cv => ({
             ...cv,
-            characters: (cv.characters || []).filter(role => SeasonFilter.isInSeason(role))
+            id: Number(cv.id),
+            characters: resolveCVCharacters(cv)
+                .filter(role => {
+                    const anime = animeMap.get(Number(role.animeId));
+                    return anime ? SeasonFilter.isInSeason(anime) : false;
+                })
         }))
         .filter(cv => cv.characters.length > 0);
 }
@@ -129,7 +238,9 @@ function createCVCard(cv, step) {
     card.className = "card";
 
     card.setAttribute('data-category', cvState.awardName);
+    // 기존 Firebase vote key 호환을 위해 data-anime-id에는 성우명을 유지한다.
     card.setAttribute('data-anime-id', cv.name);
+    if (Number.isFinite(Number(cv.id))) card.setAttribute('data-candidate-id', String(cv.id));
 
     const rateBadge = document.createElement("div");
     rateBadge.className = "card-selection-rate";
@@ -145,7 +256,9 @@ function createCVCard(cv, step) {
         openDetailModal(cv);
     };
 
-    const isSelected = cvState.selectedCVs.some(v => v.name === cv.name);
+    const isSelected = cvState.selectedCVs.some(v => Number.isFinite(Number(cv.id)) && Number.isFinite(Number(v.id))
+        ? Number(v.id) === Number(cv.id)
+        : v.name === cv.name);
     if (step === "step1" && isSelected) card.classList.add("selected");
 
     card.innerHTML += `
@@ -176,7 +289,11 @@ function createCVCard(cv, step) {
  * 선택 및 프리뷰 로직
  */
 function toggleCVSelection(cv, cardElement) {
-    const index = cvState.selectedCVs.findIndex(v => v.name === cv.name);
+    const index = cvState.selectedCVs.findIndex(v =>
+        Number.isFinite(Number(cv.id)) && Number.isFinite(Number(v.id))
+            ? Number(v.id) === Number(cv.id)
+            : v.name === cv.name
+    );
     
     if (index > -1) {
         cvState.selectedCVs.splice(index, 1);
@@ -206,7 +323,7 @@ function updatePreview() {
         `;
         
         div.onclick = () => {
-            removeCV(cv.name);
+            removeCV(cv);
         };
         
         list.appendChild(div);
@@ -217,19 +334,31 @@ function updatePreview() {
     }
 }
 
-function removeCV(name) {
-    const index = cvState.selectedCVs.findIndex(v => v.name === name);
-    if (index > -1) {
-        cvState.selectedCVs.splice(index, 1);
-    }
+function removeCV(target) {
+    const targetId = target && Number.isFinite(Number(target.id)) ? Number(target.id) : null;
+    const targetName = typeof target === "string" ? target : target?.name;
 
-    const cards = document.querySelectorAll(".card");
-    cards.forEach(c => {
-        const title = c.querySelector(".card-title");
-        if (title && title.textContent === name) {
-            c.classList.remove("selected");
+    const index = cvState.selectedCVs.findIndex(v => {
+        if (targetId !== null && Number.isFinite(Number(v.id))) {
+            return Number(v.id) === targetId;
         }
+        return v.name === targetName;
     });
+
+    if (index > -1) {
+        const removed = cvState.selectedCVs[index];
+        cvState.selectedCVs.splice(index, 1);
+
+        const cards = document.querySelectorAll(".card");
+        cards.forEach(c => {
+            const candidateId = c.getAttribute("data-candidate-id");
+            const title = c.querySelector(".card-title");
+            if ((targetId !== null && candidateId === String(targetId)) ||
+                (targetId === null && title && title.textContent === removed.name)) {
+                c.classList.remove("selected");
+            }
+        });
+    }
 
     updatePreview();
 }
@@ -283,7 +412,9 @@ function createStep2Card(cv) {
 
     // ✅ 추가: 뱃지 매칭용 속성 (기존엔 없어서 Step2에서 뱃지가 안 떴음)
     card.setAttribute('data-category', cvState.awardName);
+    // 기존 Firebase vote key 호환을 위해 data-anime-id에는 성우명을 유지한다.
     card.setAttribute('data-anime-id', cv.name);
+    if (Number.isFinite(Number(cv.id))) card.setAttribute('data-candidate-id', String(cv.id));
 
     const repWork = cv.characters && cv.characters.length > 0 ? cv.characters[0].animeTitle : "";
     const subText = repWork ? `${repWork} 등` : "정보 없음";

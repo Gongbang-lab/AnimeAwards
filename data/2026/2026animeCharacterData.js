@@ -1,20010 +1,13155 @@
-var CharacterData_2026 = [
-{
-  "id": 61886,
-  "characters": [
-    {
-      "name": "세로",
-      "gender": "male",
-      "cv": "토키 슌이치",
-      "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Cero.jpg"
-    },
-    {
-      "name": "시우",
-      "gender": "male",
-      "cv": "테라시마 타쿠마",
-      "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Shiu.jpg"
-    },
-    {
-      "name": "미케",
-      "gender": "male",
-      "cv": "나가츠카 타쿠마",
-      "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Mikke.jpg"
-    },
-    {
-      "name": "휴우",
-      "gender": "male",
-      "cv": "아자카미 요헤이",
-      "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Hugh.jpg"
-    },
-    {
-      "name": "폰",
-      "gender": "male",
-      "cv": "오오노 토모히로",
-      "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Fon.jpg"
-    },
-    {
-      "name": "네로",
-      "gender": "female",
-      "cv": "하토리 사츠키",
-      "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Nero.jpg"
-    },
-    {
-      "name": "이즈아",
-      "gender": "male",
-      "cv": "마에노 토모아키",
-      "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Izua.jpg"
-    },
-    {
-      "name": "라스",
-      "gender": "male",
-      "cv": "아카바네 켄지",
-      "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Russ.jpg"
-    },
-    {
-      "name": "헤라",
-      "gender": "male",
-      "cv": "타니야마 키쇼",
-      "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Hela.jpg"
-    },
-    {
-      "name": "루크",
-      "gender": "male",
-      "cv": "하야마 쇼타",
-      "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Luk.jpg"
-    },
-    {
-      "name": "노에",
-      "gender": "male",
-      "cv": "야스다 리쿠야",
-      "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Noe.jpg"
-    },
-    {
-      "name": "리셰",
-      "gender": "female",
-      "cv": "나가나와 마리아",
-      "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Rishe.jpg"
-    },
-    {
-      "name": "레우",
-      "gender": "female",
-      "cv": "유우키 코즈에",
-      "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Reu.jpg"
-    },
-    {
-      "name": "마니카",
-      "gender": "female",
-      "cv": "우치야마 유미",
-      "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Manica.jpg"
-    },
-    {
-      "name": "벨타",
-      "gender": "female",
-      "cv": "야마모토 노조미",
-      "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Berta.jpg"
-    },
-    {
-      "name": "메리무",
-      "gender": "female",
-      "cv": "우에사카 스미레",
-      "img": "image/charimg/2026/Q1/Goumon_Baito-kun_no_Nichijou/Merim.jpg"
-    }
-  ]
-},
-{
-  "id": 61942,
-  "characters": [
-    {
-      "name": "하이마와리 코이치",
-      "gender": "male",
-      "cv": "우메다 슈이치로",
-      "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Kouichi_Haimawari.jpg"
-    },
-    {
-      "name": "하네야마 카즈호",
-      "gender": "female",
-      "cv": "하세가와 이쿠미",
-      "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Kazuho_Haneyama.jpg"
-    },
-    {
-      "name": "쿠로이와 타케시",
-      "gender": "male",
-      "cv": "마미야 야스히로",
-      "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Oguro_Iwao.jpg"
-    },
-    {
-      "name": "아이자와 쇼타",
-      "gender": "male",
-      "cv": "스와베 준이치",
-      "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Shouta_Aizawa.jpg"
-    },
-    {
-      "name": "야마다 히자시",
-      "gender": "male",
-      "cv": "요시노 히로유키",
-      "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Hizashi_Yamada.jpg"
-    },
-    {
-      "name": "카야마 네무리",
-      "gender": "female",
-      "cv": "와타나베 아케노",
-      "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Nemuri_Kayama.jpg"
-    },
-    {
-      "name": "시라쿠모 오보로",
-      "gender": "male",
-      "cv": "오노 켄쇼",
-      "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Oboro_Shirakumo.jpg"
-    },
-    {
-      "name": "크리스토퍼 스카이라인",
-      "gender": "male",
-      "cv": "모리카와 토시유키",
-      "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Christopher_Skyline.jpg"
-    },
-    {
-      "name": "츠카우치 나오마사",
-      "gender": "male",
-      "cv": "카와시마 토쿠요시",
-      "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Naomasa_Tsukauchi.jpg"
-    },
-    {
-      "name": "츠카우치 마코토",
-      "gender": "female",
-      "cv": "세토 아사미",
-      "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Makoto_Tsukauchi.jpg"
-    },
-    {
-      "name": "토요미츠 타이시로",
-      "gender": "male",
-      "cv": "오키츠 카즈유키",
-      "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Taishirou_Toyomitsu.jpg"
-    },
-    {
-      "name": "카미하라 신야",
-      "gender": "male",
-      "cv": "카마카리 켄타",
-      "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Shinya_Kamihara.jpg"
-    },
-    {
-      "name": "베스트 지니스트",
-      "gender": "male",
-      "cv": "미도리카와 히카루",
-      "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Tsunagu_Hakamada.jpg"
-    },
-    {
-      "name": "카니야시키 모니카",
-      "gender": "female",
-      "cv": "우에다 카나",
-      "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Monika_Kaniyashiki.jpg"
-    },
-    {
-      "name": "No. 6",
-      "gender": "male",
-      "cv": "야시로 타쿠",
-      "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Number_6.jpg"
-    },
-    {
-      "name": "야기 토시노리",
-      "gender": "male",
-      "cv": "미야케 켄타",
-      "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Toshinori_Yagi.jpg"
-    },
-    {
-      "name": "올 포 원",
-      "gender": "male",
-      "cv": "오오츠카 아키오",
-      "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/All_For_One.jpg"
-    },
-    {
-      "name": "이이다 텐세이",
-      "gender": "male",
-      "cv": "키타다 마사미치",
-      "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Tensei_Iida.jpg"
-    },
-    {
-      "name": "하치스카 쿠인",
-      "gender": "female",
-      "cv": "센본기 사야카",
-      "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Kuin_Hachisuka.jpg"
-    },
-    {
-      "name": "하이니스 퍼플",
-      "gender": "unknown",
-      "cv": "코야마 리키야",
-      "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/His_Purple_Highness.jpg"
-    },
-    {
-      "name": "홋타 이치로",
-      "gender": "unknown",
-      "cv": "미야모토 쥰",
-      "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Ichiro_Hotta.jpg"
-    },
-    {
-      "name": "홋타 지로",
-      "gender": "unknown",
-      "cv": "후지와라 세이유",
-      "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Jiro_Hotta.jpg"
-    },
-    {
-      "name": "玉川三茶",
-      "gender": "unknown",
-      "cv": "후루시마 키요타카",
-      "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Sansa_Tamakawa.jpg"
-    },
-    {
-      "name": "釘崎爪牙",
-      "gender": "male",
-      "cv": "토리우미 코스케",
-      "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Souga_Kugizaki.jpg"
-    },
-    {
-      "name": "灯市燃",
-      "gender": "male",
-      "cv": "히라이 케이지",
-      "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Moyuru_Touchi.jpg"
-    }
-  ]
-},
-{
-  "id": 61782,
-  "characters": [
-    {
-      "name": "킨메 와카나",
-      "gender": "unknown",
-      "cv": "스즈시로 사유미",
-      "img": "image/charimg/2026/Q1/Kirei_ni_Shitemoraemasu_ka/Wakana_Kinme.jpg"
-    },
-    {
-      "name": "이시모치 큐쇼",
-      "gender": "male",
-      "cv": "우메다 슈이치로",
-      "img": "image/charimg/2026/Q1/Kirei_ni_Shitemoraemasu_ka/Kyuushou_Ishimochi.jpg"
-    },
-    {
-      "name": "와카스기 쿠리루",
-      "gender": "female",
-      "cv": "아오야마 요시노",
-      "img": "image/charimg/2026/Q1/Kirei_ni_Shitemoraemasu_ka/Kuriru_Wakasagi.jpg"
-    },
-    {
-      "name": "카타구치 나이로",
-      "gender": "female",
-      "cv": "이나가키 코노미",
-      "img": "image/charimg/2026/Q1/Kirei_ni_Shitemoraemasu_ka/Nairo_Katakuchi.jpg"
-    },
-    {
-      "name": "야가라 아사미",
-      "gender": "female",
-      "cv": "코시미즈 아미",
-      "img": "image/charimg/2026/Q1/Kirei_ni_Shitemoraemasu_ka/Asami_Yagara.jpg"
-    },
-    {
-      "name": "와카스기 모루다",
-      "gender": "male",
-      "cv": "시라이시 켄토",
-      "img": "image/charimg/2026/Q1/Kirei_ni_Shitemoraemasu_ka/Moruda_Wakasagi.jpg"
-    },
-    {
-      "name": "아지",
-      "gender": "female",
-      "cv": "미즈타 와사비",
-      "img": "image/charimg/2026/Q1/Kirei_ni_Shitemoraemasu_ka/Aji.jpg"
-    },
-    {
-      "name": "하츠아유 우카",
-      "gender": "unknown",
-      "cv": "토오노 히카루",
-      "img": "image/charimg/2026/Q1/Kirei_ni_Shitemoraemasu_ka/Uka_Hatsuayu.jpg"
-    }
-  ]
-},
-{
-  "id": 55772,
-  "characters": [
-    {
-      "name": "스기모토 사이치",
-      "gender": "male",
-      "cv": "코바야시 치카히로",
-      "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Saichi_Sugimoto.jpg"
-    },
-    {
-      "name": "아시리파",
-      "gender": "female",
-      "cv": "시라이시 하루카",
-      "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Asirpa.jpg"
-    },
-    {
-      "name": "시라이시 요시타케",
-      "gender": "male",
-      "cv": "이토 켄타로",
-      "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Yoshitake_Shiraishi.jpg"
-    },
-    {
-      "name": "히지카타 토시조",
-      "gender": "male",
-      "cv": "나카타 죠지",
-      "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Toshizou_Hijikata.jpg"
-    },
-    {
-      "name": "나가쿠라 신파치",
-      "gender": "unknown",
-      "cv": "스고 타카유키",
-      "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Shinpachi_Nagakura.jpg"
-    },
-    {
-      "name": "오가타 햐쿠노스케",
-      "gender": "male",
-      "cv": "츠다 켄지로",
-      "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Hyakunosuke_Ogata.jpg"
-    },
-    {
-      "name": "츠루미 토쿠시로",
-      "gender": "male",
-      "cv": "오오츠카 호우츄",
-      "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Tokushirou_Tsurumi.jpg"
-    },
-    {
-      "name": "우시야마 타츠우마",
-      "gender": "male",
-      "cv": "노무라 켄지",
-      "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Tatsuma_Ushiyama.jpg"
-    },
-    {
-      "name": "니카이도 코헤이",
-      "gender": "unknown",
-      "cv": "스기타 토모카즈",
-      "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Kouhei_Nikaidou.jpg"
-    },
-    {
-      "name": "코이토 오토노신",
-      "gender": "male",
-      "cv": "코니시 카츠유키",
-      "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Otonoshin_Koito.jpg"
-    },
-    {
-      "name": "우이루크",
-      "gender": "male",
-      "cv": "토치 히로키",
-      "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Wilk.jpg"
-    },
-    {
-      "name": "키로란케",
-      "gender": "unknown",
-      "cv": "테라소마 마사키",
-      "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Kiroranke.jpg"
-    },
-    {
-      "name": "카도쿠라 토시유키",
-      "gender": "male",
-      "cv": "야스하라 요시토",
-      "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Toshiyuki_Kadokura.jpg"
-    },
-    {
-      "name": "토니 안지",
-      "gender": "unknown",
-      "cv": "미즈시마 유우",
-      "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Toni_Anji.jpg"
-    },
-    {
-      "name": "츠키시마 하지메",
-      "gender": "male",
-      "cv": "타케모토 에이지",
-      "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Hajime_Tsukishima.jpg"
-    },
-    {
-      "name": "우사미 토키시게",
-      "gender": "male",
-      "cv": "마츠오카 요시츠구",
-      "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Tokishige_Usami.jpg"
-    },
-    {
-      "name": "키라우시",
-      "gender": "male",
-      "cv": "마에노 토모아키",
-      "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Kirawus.jpg"
-    },
-    {
-      "name": "바실리",
-      "gender": "male",
-      "cv": "우메하라 유이치로",
-      "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Vasily.jpg"
-    },
-    {
-      "name": "오오사와 후사타로",
-      "gender": "male",
-      "cv": "세키 토모카즈",
-      "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Fusatarou_Oosawa.jpg"
-    },
-    {
-      "name": "소피아 골든핸드",
-      "gender": "unknown",
-      "cv": "사이토 키미코",
-      "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Sofia_Goldenhand.jpg"
-    },
-    {
-      "name": "아리코 리키마츠 일등병",
-      "gender": "male",
-      "cv": "미즈나카 마사아키",
-      "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Rikimatsu_Ariko.jpg"
-    },
-    {
-      "name": "우에지 케이지",
-      "gender": "male",
-      "cv": "히야마 노부유키",
-      "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Keiji_Ueji.jpg"
-    },
-    {
-      "name": "이시카와 다쿠보쿠",
-      "gender": "male",
-      "cv": "토리우미 코스케",
-      "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Takuboku_Ishikawa.jpg"
-    },
-    {
-      "name": "카네코 카에코",
-      "gender": "female",
-      "cv": "이토 시즈카",
-      "img": "image/charimg/2026/Q1/Golden_Kamuy_Saishuushou/Hanaeko_Kaneko.jpg"
-    }
-  ]
-},
-{
-  "id": 58524,
-  "characters": [
-    {
-      "name": "공주",
-      "gender": "female",
-      "cv": "시라이시 하루카",
-      "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Hime.jpg"
-    },
-    {
-      "name": "엑스",
-      "gender": "unknown",
-      "cv": "코바야시 치카히로",
-      "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Ex.jpg"
-    },
-    {
-      "name": "토처 토르튜어",
-      "gender": "female",
-      "cv": "이토 시즈카",
-      "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Tortura_Torture.jpg"
-    },
-    {
-      "name": "요우키",
-      "gender": "female",
-      "cv": "나가세 안나",
-      "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Youki.jpg"
-    },
-    {
-      "name": "인키",
-      "gender": "female",
-      "cv": "이노우에 호노카",
-      "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Inki.jpg"
-    },
-    {
-      "name": "크롤",
-      "gender": "female",
-      "cv": "야마네 아야",
-      "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Krall.jpg"
-    },
-    {
-      "name": "자이언트",
-      "gender": "female",
-      "cv": "카야노 아이",
-      "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Giant.jpg"
-    },
-    {
-      "name": "마왕",
-      "gender": "male",
-      "cv": "겐다 텟쇼",
-      "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Maou.jpg"
-    },
-    {
-      "name": "마오마오",
-      "gender": "female",
-      "cv": "히다카 리나",
-      "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Maomao.jpg"
-    },
-    {
-      "name": "루룬",
-      "gender": "female",
-      "cv": "나카하라 마이",
-      "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Lulune.jpg"
-    },
-    {
-      "name": "바닐라 페슈츠",
-      "gender": "female",
-      "cv": "토미타 미유",
-      "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Vanilla_Peschutz.jpg"
-    },
-    {
-      "name": "길가",
-      "gender": "female",
-      "cv": "센본기 사야카",
-      "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Gilga.jpg"
-    },
-    {
-      "name": "사쿠라 하트록",
-      "gender": "female",
-      "cv": "타무라 무츠미",
-      "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Sakura_Heartrock.jpg"
-    },
-    {
-      "name": "카나지",
-      "gender": "male",
-      "cv": "후쿠시마 준",
-      "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Kanadge.jpg"
-    },
-    {
-      "name": "지모치",
-      "gender": "male",
-      "cv": "오오츠카 호츄",
-      "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Jimochi.jpg"
-    },
-    {
-      "name": "キュイ",
-      "gender": "unknown",
-      "cv": "키노 히나",
-      "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Kyui.jpg"
-    },
-    {
-      "name": "브루제",
-      "gender": "male",
-      "cv": "키우치 타로",
-      "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Bruse.jpg"
-    },
-    {
-      "name": "다타마",
-      "gender": "male",
-      "cv": "Unknown",
-      "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Datarma.jpg"
-    },
-    {
-      "name": "햄짱",
-      "gender": "unknown",
-      "cv": "타무라 유카리",
-      "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Hamcha_Starham.jpg"
-    },
-    {
-      "name": "펭타",
-      "gender": "male",
-      "cv": "스기타 토모카즈",
-      "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Penta.jpg"
-    },
-    {
-      "name": "코바야시 아내",
-      "gender": "female",
-      "cv": "코미야 카즈에",
-      "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Kobayashi-san_(Tsuma).jpg"
-    },
-    {
-      "name": "코바야시 남편",
-      "gender": "male",
-      "cv": "아오야마 유타카",
-      "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Kobayashi-san_(Otto).jpg"
-    },
-    {
-      "name": "알리오토 페슈츠",
-      "gender": "male",
-      "cv": "미야케 켄타",
-      "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Aliotto_Peschutz.jpg"
-    },
-    {
-      "name": "엑스트럭 페슈츠",
-      "gender": "female",
-      "cv": "유즈키 료카",
-      "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Extrac_Peschutz.jpg"
-    },
-    {
-      "name": "콩코 콩",
-      "gender": "female",
-      "cv": "유이카와 아사키",
-      "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Konko_Kon.jpg"
-    }
-  ]
-},
-{
-  "id": 61359,
-  "characters": [
-    {
-      "name": "사카이 요노스케",
-      "gender": "male",
-      "cv": "우라오 타케히로",
-      "img": "image/charimg/2026/Q1/Osananajimi_to_wa_Love_Comedy_ni_Naranai/Yonosuke_Sakai.jpg"
-    },
-    {
-      "name": "미나모 시오",
-      "gender": "female",
-      "cv": "쿠스미 린",
-      "img": "image/charimg/2026/Q1/Osananajimi_to_wa_Love_Comedy_ni_Naranai/Shio_Minamo.jpg"
-    },
-    {
-      "name": "히나타 하루",
-      "gender": "female",
-      "cv": "야마모토 유우키",
-      "img": "image/charimg/2026/Q1/Osananajimi_to_wa_Love_Comedy_ni_Naranai/Haru_Hinata.jpg"
-    },
-    {
-      "name": "히오도시 아카리",
-      "gender": "female",
-      "cv": "세리자와 유우",
-      "img": "image/charimg/2026/Q1/Osananajimi_to_wa_Love_Comedy_ni_Naranai/Akari_Hiodoshi.jpg"
-    },
-    {
-      "name": "츠키미 루나",
-      "gender": "female",
-      "cv": "히라츠카 사에",
-      "img": "image/charimg/2026/Q1/Osananajimi_to_wa_Love_Comedy_ni_Naranai/Runa_Tsukimi.jpg"
-    }
-  ]
-},
-{
-  "id": 61983,
-  "characters": [
-    {
-      "name": "세실리아 아쿠아레인",
-      "gender": "female",
-      "cv": "하나자와 카나",
-      "img": "image/charimg/2026/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Cecilia.jpg"
-    },
-    {
-      "name": "요우키",
-      "gender": "male",
-      "cv": "아마사키 코헤이",
-      "img": "image/charimg/2026/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Youki.jpg"
-    },
-    {
-      "name": "미사키",
-      "gender": "female",
-      "cv": "오자와 아이미",
-      "img": "image/charimg/2026/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Misaki.jpg"
-    },
-    {
-      "name": "시케",
-      "gender": "female",
-      "cv": "사쿠라이 모모",
-      "img": "image/charimg/2026/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Shike.jpg"
-    },
-    {
-      "name": "유우가",
-      "gender": "male",
-      "cv": "키무라 료헤이",
-      "img": "image/charimg/2026/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Yuuga.jpg"
-    },
-    {
-      "name": "미카나",
-      "gender": "female",
-      "cv": "나츠요시 유우코",
-      "img": "image/charimg/2026/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Mikana.jpg"
-    },
-    {
-      "name": "듀크",
-      "gender": "male",
-      "cv": "마스다 토시키",
-      "img": "image/charimg/2026/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Duke.jpg"
-    },
-    {
-      "name": "해피니스",
-      "gender": "female",
-      "cv": "노구치 이오리",
-      "img": "image/charimg/2026/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Happiness.jpg"
-    },
-    {
-      "name": "레이븐",
-      "gender": "male",
-      "cv": "무라세 아유무",
-      "img": "image/charimg/2026/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Raven.jpg"
-    },
-    {
-      "name": "시크",
-      "gender": "female",
-      "cv": "타나카 미나미",
-      "img": "image/charimg/2026/Q1/Yuusha_Party_ni_Kawaii_Ko_ga_Ita_no_de,_Kokuhaku_Shitemita/Seek.jpg"
-    }
-  ]
-},
-{
-  "id": 60226,
-  "characters": [
-    {
-      "name": "알레슈 인드라크",
-      "gender": "male",
-      "cv": "마에노 토모아키",
-      "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Aresh_Indolark.jpg"
-    },
-    {
-      "name": "콘도 세이이치로",
-      "gender": "male",
-      "cv": "이토 켄토",
-      "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Seiichirou_Kondou.jpg"
-    },
-    {
-      "name": "오르지프 로다",
-      "gender": "male",
-      "cv": "오키츠 카즈유키",
-      "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Orjef_Rhoda.jpg"
-    },
-    {
-      "name": "시그볼드",
-      "gender": "male",
-      "cv": "오노 유우키",
-      "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Siegvold.jpg"
-    },
-    {
-      "name": "놀베르트",
-      "gender": "male",
-      "cv": "야마시타 세이이치로",
-      "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Norbert_Blanc.jpg"
-    },
-    {
-      "name": "세리오",
-      "gender": "male",
-      "cv": "이자와 시오리",
-      "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Selio.jpg"
-    },
-    {
-      "name": "카밀",
-      "gender": "male",
-      "cv": "토치 히로키",
-      "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Camile_Karvada.jpg"
-    },
-    {
-      "name": "헤르무트",
-      "gender": "male",
-      "cv": "스즈키 타쿠마",
-      "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Helmut_Somaria.jpg"
-    },
-    {
-      "name": "유리우스",
-      "gender": "male",
-      "cv": "야마구치 토모히로",
-      "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Yurius.jpg"
-    },
-    {
-      "name": "시그마",
-      "gender": "male",
-      "cv": "코자카이 유리에",
-      "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Sigma.jpg"
-    },
-    {
-      "name": "시라이시 유아",
-      "gender": "female",
-      "cv": "카마쿠라 유우나",
-      "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Yua_Shiraishi.jpg"
-    },
-    {
-      "name": "하비 모랄레스",
-      "gender": "male",
-      "cv": "바바 준페이",
-      "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Harvey_Morales.jpg"
-    },
-    {
-      "name": "이스트",
-      "gender": "male",
-      "cv": "토라시마 타카아키",
-      "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Ist.jpg"
-    },
-    {
-      "name": "매튜 니에베스",
-      "gender": "male",
-      "cv": "미야기 카즈키",
-      "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Matthew_Nieves.jpg"
-    },
-    {
-      "name": "시로 쿠에바스",
-      "gender": "male",
-      "cv": "모리사키 윈",
-      "img": "image/charimg/2026/Q1/Isekai_no_Sata_wa_Shachiku_Shidai/Ciro_Quellbas.jpg"
-    }
-  ]
-},
-{
-  "id": 61211,
-  "characters": [
-    {
-      "name": "우즈키 시노부",
-      "gender": "female",
-      "cv": "이토 미쿠",
-      "img": "image/charimg/2026/Q1/Mayonaka_Heart_Tune/Shinobu_Uzuki.jpg"
-    },
-    {
-      "name": "키리노 이코",
-      "gender": "female",
-      "cv": "스즈시로 사유미",
-      "img": "image/charimg/2026/Q1/Mayonaka_Heart_Tune/Iko_Kirino.jpg"
-    },
-    {
-      "name": "이노하나 릿카",
-      "gender": "female",
-      "cv": "세토 모모코",
-      "img": "image/charimg/2026/Q1/Mayonaka_Heart_Tune/Rikka_Inohana.jpg"
-    },
-    {
-      "name": "히메카와 네네",
-      "gender": "female",
-      "cv": "오오쿠보 루미",
-      "img": "image/charimg/2026/Q1/Mayonaka_Heart_Tune/Nene_Himekawa.jpg"
-    },
-    {
-      "name": "야마부키 아리스",
-      "gender": "male",
-      "cv": "야스다 리쿠야",
-      "img": "image/charimg/2026/Q1/Mayonaka_Heart_Tune/Arisu_Yamabuki.jpg"
-    },
-    {
-      "name": "안도 레몬",
-      "gender": "female",
-      "cv": "하나자와 카나",
-      "img": "image/charimg/2026/Q1/Mayonaka_Heart_Tune/Lemon_Andou.jpg"
-    },
-    {
-      "name": "아이코",
-      "gender": "female",
-      "cv": "와카이 유우키",
-      "img": "image/charimg/2026/Q1/Mayonaka_Heart_Tune/Aiko.jpg"
-    },
-    {
-      "name": "모모토세 아오",
-      "gender": "female",
-      "cv": "토야마 나오",
-      "img": "image/charimg/2026/Q1/Mayonaka_Heart_Tune/Ao_Momotose.jpg"
-    }
-  ]
-},
-{
-  "id": 58886,
-  "characters": [
-    {
-      "name": "찰리 스타인",
-      "gender": "male",
-      "cv": "타네자키 아츠미",
-      "img": "image/charimg/2026/Q1/Darwin_Jihen/Charlie.jpg"
-    },
-    {
-      "name": "루시 엘드레드",
-      "gender": "female",
-      "cv": "칸베 미츠호",
-      "img": "image/charimg/2026/Q1/Darwin_Jihen/Lucy_Eldred.jpg"
-    },
-    {
-      "name": "리베라 파이어어벤트",
-      "gender": "male",
-      "cv": "오오츠카 아키오",
-      "img": "image/charimg/2026/Q1/Darwin_Jihen/Rivera_Feyerabend.jpg"
-    },
-    {
-      "name": "게일",
-      "gender": "male",
-      "cv": "이시카와 카이토",
-      "img": "image/charimg/2026/Q1/Darwin_Jihen/Gale.jpg"
-    },
-    {
-      "name": "한나 스타인",
-      "gender": "female",
-      "cv": "사토 리나",
-      "img": "image/charimg/2026/Q1/Darwin_Jihen/Hannah_Stein.jpg"
-    },
-    {
-      "name": "필립 그라함",
-      "gender": "male",
-      "cv": "우에다 요지",
-      "img": "image/charimg/2026/Q1/Darwin_Jihen/Philip_Graham.jpg"
-    },
-    {
-      "name": "길버트 스타인",
-      "gender": "male",
-      "cv": "모리카와 토시유키",
-      "img": "image/charimg/2026/Q1/Darwin_Jihen/Gilbert_Stein.jpg"
-    },
-    {
-      "name": "레슬리 K. 리프만",
-      "gender": "male",
-      "cv": "에가시라 히로야",
-      "img": "image/charimg/2026/Q1/Darwin_Jihen/Leslie_Lippman.jpg"
-    },
-    {
-      "name": "オジー",
-      "gender": "male",
-      "cv": "후쿠니시 마사야",
-      "img": "image/charimg/2026/Q1/Darwin_Jihen/Ozzy.jpg"
-    },
-    {
-      "name": "トレヴァー",
-      "gender": "male",
-      "cv": "바토리 쇼고",
-      "img": "image/charimg/2026/Q1/Darwin_Jihen/Thevor.jpg"
-    },
-    {
-      "name": "ミア",
-      "gender": "female",
-      "cv": "카자마 마유코",
-      "img": "image/charimg/2026/Q1/Darwin_Jihen/Mia.jpg"
-    },
-    {
-      "name": "ケイラ",
-      "gender": "female",
-      "cv": "하세가와 이쿠미",
-      "img": "image/charimg/2026/Q1/Darwin_Jihen/Kayla.jpg"
-    },
-    {
-      "name": "파울러",
-      "gender": "male",
-      "cv": "이하라 마사아키",
-      "img": "image/charimg/2026/Q1/Darwin_Jihen/Fowler.jpg"
-    }
-  ]
-},
-{
-  "id": 60255,
-  "characters": [
-    {
-      "name": "아르네 노인투터",
-      "gender": "male",
-      "cv": "우치야마 코우키",
-      "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Arne_Neuntöte.jpg"
-    },
-    {
-      "name": "린 라인바이스",
-      "gender": "female",
-      "cv": "누쿠이 유카",
-      "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Lynn_Reinweiß.jpg"
-    },
-    {
-      "name": "루이스 하트만",
-      "gender": "male",
-      "cv": "이세 마리야",
-      "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Louis_Hartmann.jpg"
-    },
-    {
-      "name": "엘리제",
-      "gender": "female",
-      "cv": "테라사와 모모카",
-      "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Eliza.jpg"
-    },
-    {
-      "name": "베룬트",
-      "gender": "male",
-      "cv": "야스다 리쿠야",
-      "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Bernd.jpg"
-    },
-    {
-      "name": "하인츠",
-      "gender": "male",
-      "cv": "우에무라 유토",
-      "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Heinz.jpg"
-    },
-    {
-      "name": "지셰",
-      "gender": "male",
-      "cv": "사카키하라 유우키",
-      "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Zishe.jpg"
-    },
-    {
-      "name": "카이",
-      "gender": "male",
-      "cv": "하타노 카케루",
-      "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Kai.jpg"
-    },
-    {
-      "name": "나흐체러르",
-      "gender": "male",
-      "cv": "신 유우키",
-      "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Nachzehrer.jpg"
-    },
-    {
-      "name": "괴도 빨강망토",
-      "gender": "female",
-      "cv": "미야무라 유코",
-      "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Kaitou_Akazukin.jpg"
-    },
-    {
-      "name": "에이미",
-      "gender": "female",
-      "cv": "히카사 요코",
-      "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Amy.jpg"
-    },
-    {
-      "name": "고든",
-      "gender": "male",
-      "cv": "나카 히로시",
-      "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Gordon.jpg"
-    },
-    {
-      "name": "다이애나",
-      "gender": "female",
-      "cv": "오사나이 레오",
-      "img": "image/charimg/2026/Q1/Arne_no_Jikenbo/Diana.jpg"
-    }
-  ]
-},
-{
-  "id": 61637,
-  "characters": [
-    {
-      "name": "시노노메 하지메",
-      "gender": "male",
-      "cv": "후루카와 마코토",
-      "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Hajime_Shinonome.jpg"
-    },
-    {
-      "name": "리루이",
-      "gender": "female",
-      "cv": "스즈시로 사유미",
-      "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Rirui.jpg"
-    },
-    {
-      "name": "베로니카 발리",
-      "gender": "female",
-      "cv": "이토 시즈카",
-      "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Veronica_Valli.jpg"
-    },
-    {
-      "name": "아냥고",
-      "gender": "female",
-      "cv": "쿠와하라 유우키",
-      "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Anyango.jpg"
-    },
-    {
-      "name": "올리브 카르멘",
-      "gender": "unknown",
-      "cv": "오가타 유우나",
-      "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Olive_Carmen.jpg"
-    },
-    {
-      "name": "나탈리",
-      "gender": "unknown",
-      "cv": "마에다 카오리",
-      "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Natalie.jpg"
-    },
-    {
-      "name": "리샤트",
-      "gender": "male",
-      "cv": "오오노 토모히로",
-      "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Richat.jpg"
-    },
-    {
-      "name": "콧코",
-      "gender": "unknown",
-      "cv": "시라이시 하루카",
-      "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Cocko.jpg"
-    },
-    {
-      "name": "두 쿠쿠두르",
-      "gender": "unknown",
-      "cv": "마츠모토 야스노리",
-      "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Cockdole.jpg"
-    },
-    {
-      "name": "세키히메",
-      "gender": "female",
-      "cv": "하야미 사오리",
-      "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Sekihime.jpg"
-    },
-    {
-      "name": "제시카 리틀다트",
-      "gender": "female",
-      "cv": "오오니시 사오리",
-      "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Jessica.jpg"
-    },
-    {
-      "name": "타냐 시로노프",
-      "gender": "female",
-      "cv": "카와세 마키",
-      "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Tanya.jpg"
-    },
-    {
-      "name": "드래곤",
-      "gender": "unknown",
-      "cv": "세키네 아키라",
-      "img": "image/charimg/2026/Q1/29-sai_Dokushin_Chuuken_Boukensha_no_Nichijou/Dragon.jpg"
-    }
-  ]
-},
-{
-  "id": 61884,
-  "characters": [
-    {
-      "name": "두",
-      "gender": "female",
-      "cv": "쿠노 미사키",
-      "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Doux.jpg"
-    },
-    {
-      "name": "쟈히",
-      "gender": "female",
-      "cv": "오오하시 아야카",
-      "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Jahi.jpg"
-    },
-    {
-      "name": "아리만",
-      "gender": "male",
-      "cv": "오오츠카 아키오",
-      "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Ahriman.jpg"
-    },
-    {
-      "name": "사티",
-      "gender": "female",
-      "cv": "이토 아야사",
-      "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Thaiti.jpg"
-    },
-    {
-      "name": "자레스",
-      "gender": "male",
-      "cv": "치바 시게루",
-      "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Zareth.jpg"
-    },
-    {
-      "name": "아지 다하카",
-      "gender": "female",
-      "cv": "이노우에 키쿠코",
-      "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Dahaka_Azi.jpg"
-    },
-    {
-      "name": "메리나",
-      "gender": "female",
-      "cv": "이시하라 카오리",
-      "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Merryna.jpg"
-    },
-    {
-      "name": "마유",
-      "gender": "male",
-      "cv": "산페이 유코",
-      "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Mayu.jpg"
-    },
-    {
-      "name": "아코만",
-      "gender": "male",
-      "cv": "후루카와 마코토",
-      "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Akoman.jpg"
-    },
-    {
-      "name": "야루야",
-      "gender": "female",
-      "cv": "아사카와 유우",
-      "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Yairya.jpg"
-    },
-    {
-      "name": "노파",
-      "gender": "female",
-      "cv": "마야마 아코",
-      "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Obaasan.jpg"
-    },
-    {
-      "name": "아심",
-      "gender": "male",
-      "cv": "미카미 사토시",
-      "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Asshim.jpg"
-    },
-    {
-      "name": "살라만드라",
-      "gender": "female",
-      "cv": "나바타메 히토미",
-      "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Salamandra.jpg"
-    },
-    {
-      "name": "톤토",
-      "gender": "unknown",
-      "cv": "사나다 아사미",
-      "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Tontt.jpg"
-    },
-    {
-      "name": "아에슈마",
-      "gender": "male",
-      "cv": "마미야 야스히로",
-      "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Aeshma.jpg"
-    },
-    {
-      "name": "ドゥルジ",
-      "gender": "unknown",
-      "cv": "하나미 류지",
-      "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Duruji.jpg"
-    },
-    {
-      "name": "ヴーシュ",
-      "gender": "female",
-      "cv": "유미 하라",
-      "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Vuushu.jpg"
-    },
-    {
-      "name": "우른",
-      "gender": "male",
-      "cv": "스야마 아키오",
-      "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Urun.jpg"
-    },
-    {
-      "name": "고슈",
-      "gender": "male",
-      "cv": "카누카 미츠아키",
-      "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Gauche.jpg"
-    },
-    {
-      "name": "セティア",
-      "gender": "female",
-      "cv": "치하라 미노리",
-      "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Setia.jpg"
-    },
-    {
-      "name": "무슈",
-      "gender": "female",
-      "cv": "후나토 유리에",
-      "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Mus.jpg"
-    },
-    {
-      "name": "우르",
-      "gender": "female",
-      "cv": "무라나카 토모",
-      "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Ur.jpg"
-    },
-    {
-      "name": "サウルワ",
-      "gender": "unknown",
-      "cv": "타지마 아키히로",
-      "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Sauruwa.jpg"
-    },
-    {
-      "name": "インドラ",
-      "gender": "unknown",
-      "cv": "하나미 류지",
-      "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Indra.jpg"
-    },
-    {
-      "name": "ハルワタート",
-      "gender": "female",
-      "cv": "코우노 마리카",
-      "img": "image/charimg/2026/Q1/Maou_no_Musume_wa_Yasashi_Sugiru!!/Haurvatat.jpg"
-    }
-  ]
-},
-{
-  "id": 60058,
-  "characters": [
-    {
-      "name": "호시노 아쿠아마린",
-      "gender": "male",
-      "cv": "오오츠카 타케오",
-      "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Aquamarine_Hoshino.jpg"
-    },
-    {
-      "name": "호시노 루비",
-      "gender": "female",
-      "cv": "이고마 유리에",
-      "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Ruby_Hoshino.jpg"
-    },
-    {
-      "name": "아리마 카나",
-      "gender": "female",
-      "cv": "한 메구미",
-      "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Kana_Arima.jpg"
-    },
-    {
-      "name": "쿠로카와 아카네",
-      "gender": "female",
-      "cv": "이와미 마나카",
-      "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Akane_Kurokawa.jpg"
-    },
-    {
-      "name": "MEM쵸",
-      "gender": "female",
-      "cv": "오오쿠보 루미",
-      "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/MEM-cho.jpg"
-    },
-    {
-      "name": "사이토 미야코",
-      "gender": "female",
-      "cv": "Lynn",
-      "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Miyako_Saitou.jpg"
-    },
-    {
-      "name": "카부라기 마사야",
-      "gender": "male",
-      "cv": "테라소마 마사키",
-      "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Masaya_Kaburagi.jpg"
-    },
-    {
-      "name": "고토부키 미나미",
-      "gender": "female",
-      "cv": "요우미야 히나",
-      "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Minami_Kotobuki.jpg"
-    },
-    {
-      "name": "시라누이 프릴",
-      "gender": "female",
-      "cv": "세토 아사미",
-      "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Frill_Shiranui.jpg"
-    },
-    {
-      "name": "사이토 이치고",
-      "gender": "male",
-      "cv": "에가와 히사오",
-      "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Ichigo_Saitou.jpg"
-    },
-    {
-      "name": "요시즈미 슌",
-      "gender": "male",
-      "cv": "타케나카 유토",
-      "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Shun_Yoshizumi.jpg"
-    },
-    {
-      "name": "우루시바라 테츠",
-      "gender": "male",
-      "cv": "우에다 요지",
-      "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Tetsu_Urushibara.jpg"
-    },
-    {
-      "name": "카미키 히카루",
-      "gender": "male",
-      "cv": "미야노 마모루",
-      "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Hikaru_Kamiki.jpg"
-    },
-    {
-      "name": "츠쿠요미",
-      "gender": "female",
-      "cv": "키노 히나",
-      "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Karasu_Shoujo.jpg"
-    },
-    {
-      "name": "사메지마 아비코",
-      "gender": "female",
-      "cv": "사쿠라 아야네",
-      "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Abiko_Samejima.jpg"
-    },
-    {
-      "name": "킨다이치 토시로",
-      "gender": "male",
-      "cv": "시무라 토모유키",
-      "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Toshirou_Kindaichi.jpg"
-    },
-    {
-      "name": "요시즈미 미미",
-      "gender": "female",
-      "cv": "히라츠카 사에",
-      "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Mimi_Yoshizumi.jpg"
-    },
-    {
-      "name": "시마 마사노리",
-      "gender": "male",
-      "cv": "야마시타 세이이치로",
-      "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Masanori_Shima.jpg"
-    },
-    {
-      "name": "메이야",
-      "gender": "female",
-      "cv": "시마무라 유",
-      "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Meiya.jpg"
-    },
-    {
-      "name": "카타요세 유라",
-      "gender": "female",
-      "cv": "하세가와 이쿠미",
-      "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Yura_Katayose.jpg"
-    },
-    {
-      "name": "아타노 카즈히코",
-      "gender": "male",
-      "cv": "나카야 카즈히로",
-      "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Kazuhiko_Itano.jpg"
-    },
-    {
-      "name": "아자미 마코",
-      "gender": "female",
-      "cv": "시라이시 하루카",
-      "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Mako_Azami.jpg"
-    },
-    {
-      "name": "고탄다 타이시",
-      "gender": "male",
-      "cv": "카세 야스유키",
-      "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Taishi_Gotanda.jpg"
-    },
-    {
-      "name": "호시노 아이",
-      "gender": "female",
-      "cv": "타카하시 리에",
-      "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Ai_Hoshino.jpg"
-    },
-    {
-      "name": "혼다 미오",
-      "gender": "female",
-      "cv": "타케우치 에미코",
-      "img": "image/charimg/2026/Q1/[Oshi_no_Ko]_3rd_Season/Mio_Honda.jpg"
-    }
-  ]
-},
-{
-  "id": 59711,
-  "characters": [
-    {
-      "name": "유우키",
-      "gender": "female",
-      "cv": "미우라 치유키",
-      "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Yuki_Sorimachi.jpg"
-    },
-    {
-      "name": "킨코",
-      "gender": "female",
-      "cv": "미나세 이노리",
-      "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Kinko.jpg"
-    },
-    {
-      "name": "모모노",
-      "gender": "female",
-      "cv": "카와구치 리나",
-      "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Momono.jpg"
-    },
-    {
-      "name": "베니야",
-      "gender": "female",
-      "cv": "타무라 무츠미",
-      "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Beniya.jpg"
-    },
-    {
-      "name": "코쿠토",
-      "gender": "female",
-      "cv": "사토 하루카",
-      "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Kokutou.jpg"
-    },
-    {
-      "name": "아오이",
-      "gender": "female",
-      "cv": "모토무라 레나",
-      "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Aoi.jpg"
-    },
-    {
-      "name": "미시로",
-      "gender": "female",
-      "cv": "츠치야 리오",
-      "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Mishiro.jpg"
-    },
-    {
-      "name": "케이토",
-      "gender": "female",
-      "cv": "마루오카 와카나",
-      "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Keito.jpg"
-    },
-    {
-      "name": "치에",
-      "gender": "female",
-      "cv": "타나베 루이",
-      "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Chie.jpg"
-    },
-    {
-      "name": "코토하",
-      "gender": "female",
-      "cv": "와카야마 시온",
-      "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Kotoha.jpg"
-    },
-    {
-      "name": "하쿠시",
-      "gender": "female",
-      "cv": "이토 시즈카",
-      "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Hakushi.jpg"
-    },
-    {
-      "name": "모에기",
-      "gender": "female",
-      "cv": "아베 나츠코",
-      "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Moegi.jpg"
-    },
-    {
-      "name": "아이리",
-      "gender": "female",
-      "cv": "미야모토 유메",
-      "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Airi.jpg"
-    },
-    {
-      "name": "아즈마",
-      "gender": "female",
-      "cv": "오리베 하루카",
-      "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Azuma.jpg"
-    },
-    {
-      "name": "리코",
-      "gender": "female",
-      "cv": "모로호시 스미레",
-      "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Riko.jpg"
-    },
-    {
-      "name": "츠바키",
-      "gender": "female",
-      "cv": "니시조노 유키노",
-      "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Tsubaki.jpg"
-    },
-    {
-      "name": "미캉",
-      "gender": "female",
-      "cv": "타나카 유키",
-      "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Mikan.jpg"
-    },
-    {
-      "name": "카야",
-      "gender": "female",
-      "cv": "히가시우치 마리코",
-      "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Kaya.jpg"
-    },
-    {
-      "name": "마유미",
-      "gender": "female",
-      "cv": "히토미 사야",
-      "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Mayumi.jpg"
-    },
-    {
-      "name": "스기야마",
-      "gender": "female",
-      "cv": "아오이 아즈사",
-      "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Sugiyama.jpg"
-    },
-    {
-      "name": "아몬",
-      "gender": "female",
-      "cv": "마에시마 아미",
-      "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Amon.jpg"
-    },
-    {
-      "name": "히와다",
-      "gender": "female",
-      "cv": "타치바나 메이",
-      "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Hiwada.jpg"
-    },
-    {
-      "name": "와라비",
-      "gender": "female",
-      "cv": "스즈키 아유",
-      "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Warabi.jpg"
-    },
-    {
-      "name": "카린",
-      "gender": "female",
-      "cv": "나카무라 칸나",
-      "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Karin.jpg"
-    },
-    {
-      "name": "미토",
-      "gender": "female",
-      "cv": "후지데라 미노리",
-      "img": "image/charimg/2026/Q1/Shibou_Yuugi_de_Meshi_wo_Kuu/Mizunoto.jpg"
-    }
-  ]
-},
-{
-  "id": 60692,
-  "characters": [
-    {
-      "name": "노아 아라라트",
-      "gender": "male",
-      "cv": "나나미 카린",
-      "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Noah_Ararat.jpg"
-    },
-    {
-      "name": "알버트 아라라트",
-      "gender": "male",
-      "cv": "오노 다이스케",
-      "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Henry_Ararat.jpg"
-    },
-    {
-      "name": "조이",
-      "gender": "female",
-      "cv": "미야시타 사키",
-      "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Zoey.jpg"
-    },
-    {
-      "name": "오스카 아라라트",
-      "gender": "male",
-      "cv": "카와니시 켄고",
-      "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Oscar_Ararat.jpg"
-    },
-    {
-      "name": "에벌린",
-      "gender": "female",
-      "cv": "이시카와 유이",
-      "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Evelyn.jpg"
-    },
-    {
-      "name": "왕비",
-      "gender": "female",
-      "cv": "미즈키 나나",
-      "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Ouhi.jpg"
-    },
-    {
-      "name": "셜리 그랜즈",
-      "gender": "female",
-      "cv": "사에키 이오리",
-      "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Shirley_Grantz.jpg"
-    },
-    {
-      "name": "인드라 아라라트",
-      "gender": "male",
-      "cv": "코무라 테츠오",
-      "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Indra_Ararat.jpg"
-    },
-    {
-      "name": "지지",
-      "gender": "female",
-      "cv": "와타다 미사키",
-      "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Gigi.jpg"
-    },
-    {
-      "name": "황제",
-      "gender": "male",
-      "cv": "이노우에 카즈히코",
-      "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Koutei.jpg"
-    },
-    {
-      "name": "알리체",
-      "gender": "female",
-      "cv": "타치바나 아즈사",
-      "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Alichey.jpg"
-    },
-    {
-      "name": "길버트 아라라트",
-      "gender": "male",
-      "cv": "미키 신이치로",
-      "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Gilbert_Ararat.jpg"
-    },
-    {
-      "name": "앨버트 아라라트",
-      "gender": "male",
-      "cv": "유사 코지",
-      "img": "image/charimg/2026/Q1/Kizoku_Tensei_Megumareta_Umare_kara_Saikyou_no_Chikara_wo_Eru/Albert_Ararat.jpg"
-    }
-  ]
-},
-{
-  "id": 60071,
-  "characters": [
-    {
-      "name": "리젤",
-      "gender": "male",
-      "cv": "사이토 소마",
-      "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Lizel.jpg"
-    },
-    {
-      "name": "질",
-      "gender": "male",
-      "cv": "우메하라 유이치로",
-      "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Gil.jpg"
-    },
-    {
-      "name": "일레븐",
-      "gender": "male",
-      "cv": "카키하라 테츠야",
-      "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Eleven.jpg"
-    },
-    {
-      "name": "스터드",
-      "gender": "male",
-      "cv": "후쿠야마 쥰",
-      "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Stud.jpg"
-    },
-    {
-      "name": "저지",
-      "gender": "male",
-      "cv": "야마시타 다이키",
-      "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Judge.jpg"
-    },
-    {
-      "name": "레이",
-      "gender": "male",
-      "cv": "토리우미 코스케",
-      "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Ray.jpg"
-    },
-    {
-      "name": "섀도",
-      "gender": "male",
-      "cv": "야스모토 히로키",
-      "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Shadow.jpg"
-    },
-    {
-      "name": "인사이",
-      "gender": "male",
-      "cv": "하마다 켄지",
-      "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Insigh.jpg"
-    },
-    {
-      "name": "アイン",
-      "gender": "male",
-      "cv": "나카지마 요시키",
-      "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Ein.jpg"
-    }
-  ]
-},
-{
-  "id": 56752,
-  "characters": [
-    {
-      "name": "루광",
-      "gender": "male",
-      "cv": "사쿠라이 타카히로",
-      "img": "image/charimg/2026/Q1/Shiguang_Dailiren_Yingdu_Pian/Guang_Lu.jpg"
-    },
-    {
-      "name": "청샤오시",
-      "gender": "male",
-      "cv": "토요나가 토시유키",
-      "img": "image/charimg/2026/Q1/Shiguang_Dailiren_Yingdu_Pian/Xiaoshi_Cheng.jpg"
-    },
-    {
-      "name": "샤페이",
-      "gender": "male",
-      "cv": "에노키 준야",
-      "img": "image/charimg/2026/Q1/Shiguang_Dailiren_Yingdu_Pian/Fei_Xia.jpg"
-    },
-    {
-      "name": "챠오링",
-      "gender": "female",
-      "cv": "코가 아오이",
-      "img": "image/charimg/2026/Q1/Shiguang_Dailiren_Yingdu_Pian/Ling_Qiao.jpg"
-    },
-    {
-      "name": "리우샤오",
-      "gender": "male",
-      "cv": "하나에 나츠키",
-      "img": "image/charimg/2026/Q1/Shiguang_Dailiren_Yingdu_Pian/Xiao_Liu.jpg"
-    },
-    {
-      "name": "샤오웨이잉",
-      "gender": "male",
-      "cv": "우치다 유우마",
-      "img": "image/charimg/2026/Q1/Shiguang_Dailiren_Yingdu_Pian/Vein.jpg"
-    },
-    {
-      "name": "왕칭",
-      "gender": "female",
-      "cv": "사와시로 미유키",
-      "img": "image/charimg/2026/Q1/Shiguang_Dailiren_Yingdu_Pian/Qing_Wang.jpg"
-    }
-  ]
-},
-{
-  "id": 56009,
-  "characters": [
-    {
-      "name": "자이로 폴바츠",
-      "gender": "male",
-      "cv": "아자카미 요헤이",
-      "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Xylo_Forbartz.jpg"
-    },
-    {
-      "name": "테오리타",
-      "gender": "female",
-      "cv": "이이즈카 마유",
-      "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Teoritta.jpg"
-    },
-    {
-      "name": "도터 루즈러스",
-      "gender": "male",
-      "cv": "호리에 슌",
-      "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Dotta_Luzulas.jpg"
-    },
-    {
-      "name": "베네팀 레오풀",
-      "gender": "male",
-      "cv": "토키 슌이치",
-      "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Venetim_Leopool.jpg"
-    },
-    {
-      "name": "노르가유 센리지",
-      "gender": "male",
-      "cv": "우에다 요지",
-      "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Norgalle_Senridge.jpg"
-    },
-    {
-      "name": "파트셰 키비아",
-      "gender": "female",
-      "cv": "이시가미 시즈카",
-      "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Patausche_Kivia.jpg"
-    },
-    {
-      "name": "차브",
-      "gender": "male",
-      "cv": "후쿠시마 준",
-      "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Tsav.jpg"
-    },
-    {
-      "name": "타츠야",
-      "gender": "male",
-      "cv": "마츠오카 요시츠구",
-      "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Tatsuya.jpg"
-    },
-    {
-      "name": "제이스 파치락트",
-      "gender": "male",
-      "cv": "치바 쇼야",
-      "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Jayce_Patiract.jpg"
-    },
-    {
-      "name": "닐리",
-      "gender": "female",
-      "cv": "히카사 요코",
-      "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Neely.jpg"
-    },
-    {
-      "name": "프렌시 마스티볼트",
-      "gender": "female",
-      "cv": "오오니시 사오리",
-      "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Frenci_Mastibolt.jpg"
-    },
-    {
-      "name": "라이노",
-      "gender": "male",
-      "cv": "나카무라 유이치",
-      "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Rhyno.jpg"
-    },
-    {
-      "name": "라지트 히슬로",
-      "gender": "male",
-      "cv": "카와시마 토쿠요시",
-      "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Rajit_Heathrow.jpg"
-    },
-    {
-      "name": "조프레크 오스트비슈",
-      "gender": "male",
-      "cv": "하마다 켄지",
-      "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Zofflec_Ostbiche.jpg"
-    },
-    {
-      "name": "셰나",
-      "gender": "female",
-      "cv": "와타나베 케이코",
-      "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Siena.jpg"
-    },
-    {
-      "name": "シムリード・コルマディノ",
-      "gender": "male",
-      "cv": "나카 히로시",
-      "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Simreed_Colmadino.jpg"
-    },
-    {
-      "name": "坑夫長",
-      "gender": "male",
-      "cv": "비후 히토시",
-      "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Koufuchou.jpg"
-    },
-    {
-      "name": "카프젠 다크롬",
-      "gender": "male",
-      "cv": "세키 토시히코",
-      "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Kafzen_Dakrom.jpg"
-    },
-    {
-      "name": "호드 클리비오스",
-      "gender": "male",
-      "cv": "무라카미 유우야",
-      "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Hord_Clivios.jpg"
-    },
-    {
-      "name": "페르메리",
-      "gender": "female",
-      "cv": "아마미 유리나",
-      "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Pelmerry.jpg"
-    },
-    {
-      "name": "세오드니 난티아",
-      "gender": "male",
-      "cv": "키다 타스쿠",
-      "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Theodney_Nantea.jpg"
-    },
-    {
-      "name": "부잼",
-      "gender": "male",
-      "cv": "미키 신이치로",
-      "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Boojum.jpg"
-    },
-    {
-      "name": "시지 바우",
-      "gender": "female",
-      "cv": "스기모토 유",
-      "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Shiji_Bau.jpg"
-    },
-    {
-      "name": "마렌 키비아",
-      "gender": "male",
-      "cv": "야마모토 카네히라",
-      "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Marlen_Kivia.jpg"
-    },
-    {
-      "name": "리데오 소드릭",
-      "gender": "male",
-      "cv": "노무라 켄지",
-      "img": "image/charimg/2026/Q1/Yuusha_Kei_ni_Shosu_Choubatsu_Yuusha_9004-tai_Keimu_Kiroku/Lideo_Soderick.jpg"
-    }
-  ]
-},
-{
-  "id": 58505,
-  "characters": [
-    {
-      "name": "와쿠라 유우키",
-      "gender": "male",
-      "cv": "히로세 유우야",
-      "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Yuuki_Wakura.jpg"
-    },
-    {
-      "name": "야마시로 렌",
-      "gender": "female",
-      "cv": "하나자와 카나",
-      "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Ren_Yamashiro.jpg"
-    },
-    {
-      "name": "시코쿠",
-      "gender": "female",
-      "cv": "모리노 마코",
-      "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Shikoku.jpg"
-    },
-    {
-      "name": "에조 야쿠모",
-      "gender": "female",
-      "cv": "이즈미 후카",
-      "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Yakumo_Ezo.jpg"
-    },
-    {
-      "name": "죠류",
-      "gender": "female",
-      "cv": "나바타메 히토미",
-      "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Jouryuu.jpg"
-    },
-    {
-      "name": "아즈마 야치호",
-      "gender": "female",
-      "cv": "히에다 네네",
-      "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Yachiho_Azuma.jpg"
-    },
-    {
-      "name": "아즈마 마이아",
-      "gender": "female",
-      "cv": "마에다 카오리",
-      "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Maia_Azuma.jpg"
-    },
-    {
-      "name": "묘가 리우",
-      "gender": "female",
-      "cv": "사다오카 사유리",
-      "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Riu_Myouga.jpg"
-    },
-    {
-      "name": "스루가 슈슈",
-      "gender": "female",
-      "cv": "히노 마리",
-      "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Shushu_Suruga.jpg"
-    },
-    {
-      "name": "와쿠라 아오바",
-      "gender": "female",
-      "cv": "쿠스노키 토모리",
-      "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Aoba_Wakura.jpg"
-    },
-    {
-      "name": "아즈마 호마레",
-      "gender": "female",
-      "cv": "네모토 유나",
-      "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Homare_Azuma.jpg"
-    },
-    {
-      "name": "라이렌",
-      "gender": "unknown",
-      "cv": "쿠지라",
-      "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Rairen.jpg"
-    },
-    {
-      "name": "오오카와무라 네이",
-      "gender": "female",
-      "cv": "타치바나 히나",
-      "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Nei_Ookawamura.jpg"
-    },
-    {
-      "name": "카미운텐 미라",
-      "gender": "female",
-      "cv": "파이루즈 아이",
-      "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Mira_Kamiunten.jpg"
-    },
-    {
-      "name": "아즈마 토베라",
-      "gender": "female",
-      "cv": "이자와 시오리",
-      "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Tobera_Azuma.jpg"
-    },
-    {
-      "name": "아즈마 소라코",
-      "gender": "female",
-      "cv": "카네타 아이",
-      "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Sorako_Azuma.jpg"
-    },
-    {
-      "name": "우젠 쿄카",
-      "gender": "female",
-      "cv": "키토 아카리",
-      "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Kyouka_Uzen.jpg"
-    },
-    {
-      "name": "타타라 코노미",
-      "gender": "female",
-      "cv": "이치노세 카나",
-      "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Konomi_Tatara.jpg"
-    },
-    {
-      "name": "토코로야마 사키",
-      "gender": "female",
-      "cv": "키노 히나",
-      "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Saki_Tokoyama.jpg"
-    },
-    {
-      "name": "아즈마 타케미",
-      "gender": "female",
-      "cv": "히로마츠 세리카",
-      "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Takemi_Azuma.jpg"
-    },
-    {
-      "name": "아즈마 히마리",
-      "gender": "female",
-      "cv": "미야모토 유메",
-      "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Himari_Azuma.jpg"
-    },
-    {
-      "name": "츠키요노 벨",
-      "gender": "female",
-      "cv": "이와미 마나카",
-      "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Bell_Tsukiyono.jpg"
-    },
-    {
-      "name": "와카사 사하라",
-      "gender": "female",
-      "cv": "우에다 레이나",
-      "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Sahara_Wakasa.jpg"
-    },
-    {
-      "name": "아즈마 유미나",
-      "gender": "female",
-      "cv": "나카노 사이마",
-      "img": "image/charimg/2026/Q1/Mato_Seihei_no_Slave_2/Yumina_Azuma.jpg"
-    }
-  ]
-},
-{
-  "id": 60395,
-  "characters": [
-    {
-      "name": "토노메 아키라",
-      "gender": "male",
-      "cv": "아자카미 요헤이",
-      "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Akira_Tounome.jpg"
-    },
-    {
-      "name": "야코 시즈카",
-      "gender": "female",
-      "cv": "누쿠이 유카",
-      "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Shizuka_Yakou.jpg"
-    },
-    {
-      "name": "쟈라시 루나",
-      "gender": "female",
-      "cv": "스기야마 리호",
-      "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Luna_Jarashi.jpg"
-    },
-    {
-      "name": "키키라 다이치",
-      "gender": "male",
-      "cv": "후쿠니시 마사야",
-      "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Daichi_Kikira.jpg"
-    },
-    {
-      "name": "카르마",
-      "gender": "male",
-      "cv": "오오노 토모히로",
-      "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Karma_Amanecer.jpg"
-    },
-    {
-      "name": "라이트",
-      "gender": "female",
-      "cv": "이시하라 카오리",
-      "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Light_Festus.jpg"
-    },
-    {
-      "name": "마다라이토 코스케",
-      "gender": "male",
-      "cv": "에노키 준야",
-      "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Kousuke_Madaraito.jpg"
-    },
-    {
-      "name": "투인",
-      "gender": "male",
-      "cv": "타치바나 신노스케",
-      "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Twin.jpg"
-    },
-    {
-      "name": "야코 유카리",
-      "gender": "female",
-      "cv": "쿠와시마 호우코",
-      "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Yukari_Yakou.jpg"
-    },
-    {
-      "name": "透綾アヤ",
-      "gender": "female",
-      "cv": "츠다 미나미",
-      "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Aya_Sukiya.jpg"
-    },
-    {
-      "name": "蒲池(副社長)",
-      "gender": "male",
-      "cv": "우에다 요지",
-      "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Gamaike_(Fukushachou).jpg"
-    },
-    {
-      "name": "瑞浪あこう",
-      "gender": "male",
-      "cv": "이치카와 아오이",
-      "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Akou_Mizunami.jpg"
-    },
-    {
-      "name": "ゆう",
-      "gender": "male",
-      "cv": "코이치 마코토",
-      "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Yuu_Kemauchi.jpg"
-    },
-    {
-      "name": "毛馬内",
-      "gender": "male",
-      "cv": "호시노 타카노리",
-      "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Kemanai.jpg"
-    },
-    {
-      "name": "스즈",
-      "gender": "female",
-      "cv": "유카나",
-      "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Yuzu.jpg"
-    },
-    {
-      "name": "女将",
-      "gender": "female",
-      "cv": "아라이 사토미",
-      "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Okami.jpg"
-    },
-    {
-      "name": "야코 후타",
-      "gender": "male",
-      "cv": "야스다 리쿠야",
-      "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Fuuta_Yakou.jpg"
-    },
-    {
-      "name": "야코 카오루",
-      "gender": "male",
-      "cv": "시무라 토모유키",
-      "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Kaoru_Yakou.jpg"
-    },
-    {
-      "name": "조모",
-      "gender": "female",
-      "cv": "시무라 토모유키",
-      "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Sobo.jpg"
-    },
-    {
-      "name": "키리구로 마사시",
-      "gender": "male",
-      "cv": "쿠마가이 켄타로",
-      "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Masashi_Kiriguro.jpg"
-    },
-    {
-      "name": "토노메 타쿠미",
-      "gender": "male",
-      "cv": "미도리카와 히카루",
-      "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Takumi_Tounome.jpg"
-    },
-    {
-      "name": "토노메 쇼코",
-      "gender": "female",
-      "cv": "오리카사 후미코",
-      "img": "image/charimg/2026/Q1/Toumei_Otoko_to_Ningen_Onna_Sonouchi_Fuufu_ni_Naru_Futari/Shouko_Tounome.jpg"
-    }
-  ]
-},
-{
-  "id": 60151,
-  "characters": [
-    {
-      "name": "스칼렛 카스티엘",
-      "gender": "unknown",
-      "cv": "스즈시로 사유미",
-      "img": "image/charimg/2026/Q1/Eris_no_Seihai/Scarlet_Castiel.jpg"
-    },
-    {
-      "name": "콘스탄스 그레일",
-      "gender": "unknown",
-      "cv": "이치노세 카나",
-      "img": "image/charimg/2026/Q1/Eris_no_Seihai/Constance_Grail.jpg"
-    },
-    {
-      "name": "케이트 로레인",
-      "gender": "female",
-      "cv": "츠키시로 히카",
-      "img": "image/charimg/2026/Q1/Eris_no_Seihai/Kate_Lorraine.jpg"
-    },
-    {
-      "name": "킴벌리 스미스",
-      "gender": "female",
-      "cv": "사이토 키미코",
-      "img": "image/charimg/2026/Q1/Eris_no_Seihai/Kimberly_Smith.jpg"
-    },
-    {
-      "name": "올더스 클레이턴",
-      "gender": "male",
-      "cv": "치바 쇼야",
-      "img": "image/charimg/2026/Q1/Eris_no_Seihai/Aldous_Clayton.jpg"
-    },
-    {
-      "name": "살바도르",
-      "gender": "male",
-      "cv": "야나기타 준이치",
-      "img": "image/charimg/2026/Q1/Eris_no_Seihai/Salvador.jpg"
-    },
-    {
-      "name": "시시",
-      "gender": "female",
-      "cv": "우치다 마아야",
-      "img": "image/charimg/2026/Q1/Eris_no_Seihai/Cecilia_Adelbide.jpg"
-    },
-    {
-      "name": "데보라 다르키안",
-      "gender": "female",
-      "cv": "사이토 치와",
-      "img": "image/charimg/2026/Q1/Eris_no_Seihai/Deborah_Darkian.jpg"
-    },
-    {
-      "name": "루치아 오브라이언",
-      "gender": "female",
-      "cv": "이누이 나츠네",
-      "img": "image/charimg/2026/Q1/Eris_no_Seihai/Lucia_O'Brian.jpg"
-    },
-    {
-      "name": "애비게일 오브라이언",
-      "gender": "female",
-      "cv": "카와스미 아야코",
-      "img": "image/charimg/2026/Q1/Eris_no_Seihai/Abigail_O'Brian.jpg"
-    },
-    {
-      "name": "크리슈나",
-      "gender": "male",
-      "cv": "스기타 토모카즈",
-      "img": "image/charimg/2026/Q1/Eris_no_Seihai/Rufus_May.jpg"
-    },
-    {
-      "name": "알리에노르 카스티엘",
-      "gender": "female",
-      "cv": "사토 리나",
-      "img": "image/charimg/2026/Q1/Eris_no_Seihai/Alienore_Shibola.jpg"
-    },
-    {
-      "name": "막시밀리안 카스티엘",
-      "gender": "male",
-      "cv": "오키츠 카즈유키",
-      "img": "image/charimg/2026/Q1/Eris_no_Seihai/Maximillian_Castiel.jpg"
-    },
-    {
-      "name": "마고 튜더",
-      "gender": "female",
-      "cv": "카와구치 사쿠라",
-      "img": "image/charimg/2026/Q1/Eris_no_Seihai/Margot_Tudor.jpg"
-    },
-    {
-      "name": "율리시스 파리스",
-      "gender": "male",
-      "cv": "타치바나 메이",
-      "img": "image/charimg/2026/Q1/Eris_no_Seihai/Ulysses_Faris.jpg"
-    },
-    {
-      "name": "랜돌프 얼스터",
-      "gender": "male",
-      "cv": "아자카미 요헤이",
-      "img": "image/charimg/2026/Q1/Eris_no_Seihai/Randolph_Ulster.jpg"
-    },
-    {
-      "name": "에밀리아 고드윈",
-      "gender": "female",
-      "cv": "하라 사유리",
-      "img": "image/charimg/2026/Q1/Eris_no_Seihai/Emilia_Godwin.jpg"
-    },
-    {
-      "name": "딜런 벨레스포드",
-      "gender": "male",
-      "cv": "와타누키 류노스케",
-      "img": "image/charimg/2026/Q1/Eris_no_Seihai/Dylan_Bellesford.jpg"
-    },
-    {
-      "name": "산",
-      "gender": "female",
-      "cv": "토야마 나오",
-      "img": "image/charimg/2026/Q1/Eris_no_Seihai/San.jpg"
-    },
-    {
-      "name": "조안 아델바이드",
-      "gender": "male",
-      "cv": "이마이 후미야",
-      "img": "image/charimg/2026/Q1/Eris_no_Seihai/John_Adelbide.jpg"
-    },
-    {
-      "name": "릴리 오를라뮌데",
-      "gender": "female",
-      "cv": "M·A·O",
-      "img": "image/charimg/2026/Q1/Eris_no_Seihai/Lily_Orlamunde.jpg"
-    },
-    {
-      "name": "레베카",
-      "gender": "female",
-      "cv": "콘도 레이나",
-      "img": "image/charimg/2026/Q1/Eris_no_Seihai/Rebecca.jpg"
-    },
-    {
-      "name": "닐 브론슨",
-      "gender": "male",
-      "cv": "이토 세츠오",
-      "img": "image/charimg/2026/Q1/Eris_no_Seihai/Neil_Bronson.jpg"
-    },
-    {
-      "name": "아멜리아 홉스",
-      "gender": "female",
-      "cv": "야마네 아야",
-      "img": "image/charimg/2026/Q1/Eris_no_Seihai/Amelia_Hobbes.jpg"
-    },
-    {
-      "name": "세스",
-      "gender": "female",
-      "cv": "미야모토 유메",
-      "img": "image/charimg/2026/Q1/Eris_no_Seihai/Cess.jpg"
-    }
-  ]
-},
-{
-  "id": 57658,
-  "characters": [
-    {
-      "name": "이타도리 유지",
-      "gender": "male",
-      "cv": "에노키 준야",
-      "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Yuuji_Itadori.jpg"
-    },
-    {
-      "name": "후시구로 메구미",
-      "gender": "male",
-      "cv": "우치다 유우마",
-      "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Megumi_Fushiguro.jpg"
-    },
-    {
-      "name": "옷코츠 유타",
-      "gender": "male",
-      "cv": "오가타 메구미",
-      "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Yuuta_Okkotsu.jpg"
-    },
-    {
-      "name": "쵸소우",
-      "gender": "male",
-      "cv": "나미카와 다이스케",
-      "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Chousou.jpg"
-    },
-    {
-      "name": "츠쿠모 유키",
-      "gender": "female",
-      "cv": "히다카 노리코",
-      "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Yuki_Tsukumo.jpg"
-    },
-    {
-      "name": "젠인 마키",
-      "gender": "female",
-      "cv": "코마츠 미카코",
-      "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Maki_Zenin.jpg"
-    },
-    {
-      "name": "젠인 나오야",
-      "gender": "male",
-      "cv": "유사 코지",
-      "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Naoya_Zenin.jpg"
-    },
-    {
-      "name": "젠인 오우기",
-      "gender": "male",
-      "cv": "소노베 케이이치",
-      "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Ogi_Zenin.jpg"
-    },
-    {
-      "name": "젠인 진이치",
-      "gender": "male",
-      "cv": "시로쿠마 히로시",
-      "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Jinichi_Zenin.jpg"
-    },
-    {
-      "name": "젠인 마이",
-      "gender": "female",
-      "cv": "이노우에 마리나",
-      "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Mai_Zenin.jpg"
-    },
-    {
-      "name": "켄자쿠",
-      "gender": "male",
-      "cv": "사쿠라이 타카히로",
-      "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Kenjaku.jpg"
-    },
-    {
-      "name": "텐겐",
-      "gender": "unknown",
-      "cv": "사카키바라 요시코",
-      "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Tengen.jpg"
-    },
-    {
-      "name": "료멘스쿠나",
-      "gender": "male",
-      "cv": "스와베 준이치",
-      "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Sukuna.jpg"
-    },
-    {
-      "name": "젠인 초쥬로",
-      "gender": "male",
-      "cv": "타케이 카즈호",
-      "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Choujurou_Zenin.jpg"
-    },
-    {
-      "name": "코가네",
-      "gender": "unknown",
-      "cv": "니이코",
-      "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Kogane.jpg"
-    },
-    {
-      "name": "아마이 린",
-      "gender": "male",
-      "cv": "사이토 소마",
-      "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Rin_Amai.jpg"
-    },
-    {
-      "name": "이에이리 쇼코",
-      "gender": "female",
-      "cv": "엔도 아야",
-      "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Shouko_Ieiri.jpg"
-    },
-    {
-      "name": "젠인 란타",
-      "gender": "male",
-      "cv": "치바 쇼야",
-      "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Ranta_Zenin.jpg"
-    },
-    {
-      "name": "레미",
-      "gender": "female",
-      "cv": "오자와 아리",
-      "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Remi.jpg"
-    },
-    {
-      "name": "フルダテ",
-      "gender": "male",
-      "cv": "니시무라 토모미치",
-      "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Furudate.jpg"
-    },
-    {
-      "name": "미겔 오두르",
-      "gender": "male",
-      "cv": "야마데라 코이치",
-      "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Miguel.jpg"
-    },
-    {
-      "name": "젠인 노부아키",
-      "gender": "male",
-      "cv": "타도코로 히나타",
-      "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Nobuaki_Zenin.jpg"
-    }
-  ]
-},
-{
-  "id": 61587,
-  "characters": [
-    {
-      "name": "フラム・アプリコット",
-      "gender": "female",
-      "cv": "나나세 아야카",
-      "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Flum_Apricot.jpg"
-    },
-    {
-      "name": "ミルキット",
-      "gender": "female",
-      "cv": "이토 미쿠",
-      "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Milkit.jpg"
-    },
-    {
-      "name": "セーラ・アンビレン",
-      "gender": "female",
-      "cv": "Machico",
-      "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Sara_Anvillen.jpg"
-    },
-    {
-      "name": "エターナ・リンバウ",
-      "gender": "female",
-      "cv": "쿠노 미사키",
-      "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Eterna_Rinebow.jpg"
-    },
-    {
-      "name": "ガディオ・ラスカット",
-      "gender": "male",
-      "cv": "쿠로다 타카야",
-      "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Gadhio_Lathcutt.jpg"
-    },
-    {
-      "name": "キリル・スウィーチカ",
-      "gender": "female",
-      "cv": "카리야 미키",
-      "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Cyrill_Sweechka.jpg"
-    },
-    {
-      "name": "ジーン・インテージ",
-      "gender": "male",
-      "cv": "야스무라 마코토",
-      "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Jean_Inteige.jpg"
-    },
-    {
-      "name": "ライナス・レディアンツ",
-      "gender": "male",
-      "cv": "오가사와라 진",
-      "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Linus_Radiants.jpg"
-    },
-    {
-      "name": "마리아 아펜젠스",
-      "gender": "female",
-      "cv": "엔도 아야",
-      "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Maria_Afenjuns.jpg"
-    },
-    {
-      "name": "이라 제리신",
-      "gender": "female",
-      "cv": "이노우에 호노카",
-      "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Y'lla_Jelicin.jpg"
-    },
-    {
-      "name": "데인 피니어스",
-      "gender": "male",
-      "cv": "모리타 마사카즈",
-      "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Dein_Phineas.jpg"
-    },
-    {
-      "name": "네이거스",
-      "gender": "female",
-      "cv": "코시미즈 아미",
-      "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Neigass.jpg"
-    },
-    {
-      "name": "잉크 리스크라프트",
-      "gender": "female",
-      "cv": "후지노 아야미",
-      "img": "image/charimg/2026/Q1/Omae_Gotoki_ga_Maou_ni_Kateru_to_Omou_na_to_Yuusha_Party_wo_Tsuihou_Sareta_node,_Outo_de_Kimama_ni_Kurashitai/Ink_Wreathcraft.jpg"
-    }
-  ]
-},
-{
-  "id": 61325,
-  "characters": [
-    {
-      "name": "니시노 미즈호",
-      "gender": "female",
-      "cv": "신후쿠 사쿠라",
-      "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Mizuho_Nishino.jpg"
-    },
-    {
-      "name": "하자와 키즈키",
-      "gender": "male",
-      "cv": "우라 카즈키",
-      "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Kizuki_Hazawa.jpg"
-    },
-    {
-      "name": "카시와기 신",
-      "gender": "male",
-      "cv": "요시타카 시온",
-      "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Shin_Kashiwagi.jpg"
-    },
-    {
-      "name": "이즈미 아이루",
-      "gender": "male",
-      "cv": "치바 쇼야",
-      "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Airu_Izumi.jpg"
-    },
-    {
-      "name": "호시카와 슈고",
-      "gender": "male",
-      "cv": "이노마타 사토시",
-      "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Shuugo_Hoshikawa.jpg"
-    },
-    {
-      "name": "사이토 료스케",
-      "gender": "male",
-      "cv": "우에무라 유토",
-      "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Ryousuke_Saitou.jpg"
-    },
-    {
-      "name": "쿠로다",
-      "gender": "female",
-      "cv": "카자마 마유코",
-      "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Kuroda.jpg"
-    },
-    {
-      "name": "토야",
-      "gender": "male",
-      "cv": "이시카와 카이토",
-      "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Touya.jpg"
-    },
-    {
-      "name": "히라츠카 아몬",
-      "gender": "male",
-      "cv": "한다 히로",
-      "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Amon_Hiratsuka.jpg"
-    },
-    {
-      "name": "니시노 츠요시",
-      "gender": "male",
-      "cv": "모리카와 토시유키",
-      "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Tsuyoshi_Nishino.jpg"
-    },
-    {
-      "name": "쿠라시키 치카",
-      "gender": "female",
-      "cv": "타도코로 아즈사",
-      "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Chika_Kurashiki.jpg"
-    },
-    {
-      "name": "이즈미 사리나",
-      "gender": "female",
-      "cv": "야마구치 리카코",
-      "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Sarina_Izumi.jpg"
-    },
-    {
-      "name": "호시카와 토고",
-      "gender": "male",
-      "cv": "우메하라 유이치로",
-      "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Tougo_Hoshikawa.jpg"
-    },
-    {
-      "name": "사쿠라",
-      "gender": "female",
-      "cv": "타자와 마스미",
-      "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Sakura.jpg"
-    },
-    {
-      "name": "시라이시 마나미",
-      "gender": "female",
-      "cv": "나즈카 카오리",
-      "img": "image/charimg/2026/Q1/Douse,_Koishite_Shimaunda._Season_2/Manami_Shiraishi.jpg"
-    }
-  ]
-},
-{
-  "id": 60509,
-  "characters": [
-    {
-      "name": "루나",
-      "gender": "female",
-      "cv": "시라이시 하루카",
-      "img": "image/charimg/2026/Q1/Champignon_no_Majo/Luna.jpg"
-    },
-    {
-      "name": "리제",
-      "gender": "male",
-      "cv": "사카키하라 유우키",
-      "img": "image/charimg/2026/Q1/Champignon_no_Majo/Lisl.jpg"
-    },
-    {
-      "name": "고양이의 마녀",
-      "gender": "female",
-      "cv": "후지타 아카네",
-      "img": "image/charimg/2026/Q1/Champignon_no_Majo/Dorothy.jpg"
-    },
-    {
-      "name": "돌의 마녀",
-      "gender": "female",
-      "cv": "유즈키 료카",
-      "img": "image/charimg/2026/Q1/Champignon_no_Majo/Ishi_no_Majo.jpg"
-    },
-    {
-      "name": "박쥐의 마법사",
-      "gender": "male",
-      "cv": "쿠마가이 켄타로",
-      "img": "image/charimg/2026/Q1/Champignon_no_Majo/Koumori_no_Mahoutsukai.jpg"
-    },
-    {
-      "name": "꽃의 마법사",
-      "gender": "male",
-      "cv": "하나에 나츠키",
-      "img": "image/charimg/2026/Q1/Champignon_no_Majo/Hana_no_Mahoutsukai.jpg"
-    },
-    {
-      "name": "클로드",
-      "gender": "male",
-      "cv": "후쿠시마 준",
-      "img": "image/charimg/2026/Q1/Champignon_no_Majo/Claude.jpg"
-    },
-    {
-      "name": "쥐의 마법사",
-      "gender": "male",
-      "cv": "코이치 마코토",
-      "img": "image/charimg/2026/Q1/Champignon_no_Majo/Nezumi_no_Mahoutsukai.jpg"
-    },
-    {
-      "name": "벌레의 마법사",
-      "gender": "male",
-      "cv": "타도코로 히나타",
-      "img": "image/charimg/2026/Q1/Champignon_no_Majo/Mushi_no_Mahoutsukai.jpg"
-    },
-    {
-      "name": "미노스",
-      "gender": "unknown",
-      "cv": "카토 에미리",
-      "img": "image/charimg/2026/Q1/Champignon_no_Majo/Minos.jpg"
-    },
-    {
-      "name": "새의 마도사",
-      "gender": "male",
-      "cv": "토리우미 코스케",
-      "img": "image/charimg/2026/Q1/Champignon_no_Majo/Tori_no_Mahoutsukai.jpg"
-    },
-    {
-      "name": "東方の魔女",
-      "gender": "female",
-      "cv": "Unknown",
-      "img": "image/charimg/2026/Q1/Champignon_no_Majo/Touhou_no_Majo.jpg"
-    },
-    {
-      "name": "메리노",
-      "gender": "unknown",
-      "cv": "오카사키 미호",
-      "img": "image/charimg/2026/Q1/Champignon_no_Majo/Merino.jpg"
-    },
-    {
-      "name": "버섯의 왕",
-      "gender": "male",
-      "cv": "오오카와 토오루",
-      "img": "image/charimg/2026/Q1/Champignon_no_Majo/Kinoko_no_Omo.jpg"
-    },
-    {
-      "name": "책방 주인",
-      "gender": "male",
-      "cv": "노지마 켄지",
-      "img": "image/charimg/2026/Q1/Champignon_no_Majo/Honya.jpg"
-    },
-    {
-      "name": "시시",
-      "gender": "unknown",
-      "cv": "후쿠엔 미사토",
-      "img": "image/charimg/2026/Q1/Champignon_no_Majo/Sisi.jpg"
-    },
-    {
-      "name": "불꽃의 마도사",
-      "gender": "male",
-      "cv": "히노 사토시",
-      "img": "image/charimg/2026/Q1/Champignon_no_Majo/Homura_no_Mahousukai.jpg"
-    },
-    {
-      "name": "マクシミリアン",
-      "gender": "male",
-      "cv": "반 타이토",
-      "img": "image/charimg/2026/Q1/Champignon_no_Majo/Maximilian.jpg"
-    },
-    {
-      "name": "앙리",
-      "gender": "male",
-      "cv": "치바 쇼야",
-      "img": "image/charimg/2026/Q1/Champignon_no_Majo/Henri.jpg"
-    },
-    {
-      "name": "짐승의 마법사",
-      "gender": "male",
-      "cv": "사카구치 다이스케",
-      "img": "image/charimg/2026/Q1/Champignon_no_Majo/Kemono_no_Mahoutsukai.jpg"
-    },
-    {
-      "name": "규스타브",
-      "gender": "male",
-      "cv": "우라 카즈키",
-      "img": "image/charimg/2026/Q1/Champignon_no_Majo/Gustave.jpg"
-    },
-    {
-      "name": "물고기의 마녀",
-      "gender": "female",
-      "cv": "카와스미 아야코",
-      "img": "image/charimg/2026/Q1/Champignon_no_Majo/Mizu_no_Majo.jpg"
-    }
-  ]
-},
-{
-  "id": 59978,
-  "characters": [
-    {
-      "name": "프리렌",
-      "gender": "female",
-      "cv": "타네자키 아츠미",
-      "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Frieren.jpg"
-    },
-    {
-      "name": "페른",
-      "gender": "female",
-      "cv": "이치노세 카나",
-      "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Fern.jpg"
-    },
-    {
-      "name": "슈타르크",
-      "gender": "male",
-      "cv": "코바야시 치아키",
-      "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Stark.jpg"
-    },
-    {
-      "name": "힘멜",
-      "gender": "male",
-      "cv": "오카모토 노부히코",
-      "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Himmel.jpg"
-    },
-    {
-      "name": "하이터",
-      "gender": "male",
-      "cv": "토치 히로키",
-      "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Heiter.jpg"
-    },
-    {
-      "name": "아이젠",
-      "gender": "male",
-      "cv": "우에다 요우지",
-      "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Eisen.jpg"
-    },
-    {
-      "name": "비어벨",
-      "gender": "male",
-      "cv": "타니야마 키쇼",
-      "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Wirbel.jpg"
-    },
-    {
-      "name": "에레",
-      "gender": "female",
-      "cv": "이토 카나에",
-      "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Ehre.jpg"
-    },
-    {
-      "name": "샤르프",
-      "gender": "male",
-      "cv": "무라이 유지",
-      "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Scharf.jpg"
-    },
-    {
-      "name": "남부의 용사",
-      "gender": "male",
-      "cv": "이노우에 카즈히코",
-      "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Minami_no_Yuusha.jpg"
-    },
-    {
-      "name": "다흐 백작",
-      "gender": "male",
-      "cv": "코바야시 코스케",
-      "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Dach_Hakushaku.jpg"
-    },
-    {
-      "name": "에델",
-      "gender": "female",
-      "cv": "쿠로사와 토모요",
-      "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Edel.jpg"
-    },
-    {
-      "name": "뎅켄",
-      "gender": "male",
-      "cv": "사이토 지로",
-      "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Denken.jpg"
-    },
-    {
-      "name": "게엔",
-      "gender": "male",
-      "cv": "오오카와 토오루",
-      "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Gehen.jpg"
-    },
-    {
-      "name": "레볼테",
-      "gender": "male",
-      "cv": "미키 신이치로",
-      "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Revolte.jpg"
-    },
-    {
-      "name": "밀리아르데",
-      "gender": "female",
-      "cv": "노토 마미코",
-      "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Milliarde.jpg"
-    },
-    {
-      "name": "제리에",
-      "gender": "female",
-      "cv": "이세 마리야",
-      "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Serie.jpg"
-    },
-    {
-      "name": "파스",
-      "gender": "male",
-      "cv": "우에다 유지",
-      "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Fass.jpg"
-    },
-    {
-      "name": "게나우",
-      "gender": "male",
-      "cv": "신가키 타루스케",
-      "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Genau.jpg"
-    },
-    {
-      "name": "헤몬",
-      "gender": "male",
-      "cv": "이시이 미즈키",
-      "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Hermon.jpg"
-    },
-    {
-      "name": "노름",
-      "gender": "male",
-      "cv": "에고시 아키노리",
-      "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Norm.jpg"
-    },
-    {
-      "name": "메토데",
-      "gender": "female",
-      "cv": "우에다 레이나",
-      "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Methode.jpg"
-    },
-    {
-      "name": "조리데",
-      "gender": "female",
-      "cv": "와카야마 미유키",
-      "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Zorida.jpg"
-    },
-    {
-      "name": "융",
-      "gender": "female",
-      "cv": "치카사다 츠키노",
-      "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Yun.jpg"
-    },
-    {
-      "name": "레르넨",
-      "gender": "male",
-      "cv": "미야우치 아츠시",
-      "img": "image/charimg/2026/Q1/Sousou_no_Frieren_2nd_Season/Lernen.jpg"
-    }
-  ]
-},
-{
-  "id": 62804,
-  "characters": [
-    {
-      "name": "이치도 레이",
-      "gender": "male",
-      "cv": "세키 토모카즈",
-      "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Rei_Ichidou.jpg"
-    },
-    {
-      "name": "레이에츠 고",
-      "gender": "male",
-      "cv": "타케우치 슌스케",
-      "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Gou_Reietsu.jpg"
-    },
-    {
-      "name": "슛세 키요시",
-      "gender": "male",
-      "cv": "마츠오카 요시츠구",
-      "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Kiyoshi_Shusse.jpg"
-    },
-    {
-      "name": "다이마 진",
-      "gender": "male",
-      "cv": "코바야시 치아키",
-      "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Jin_Daima.jpg"
-    },
-    {
-      "name": "모노호시 다이",
-      "gender": "male",
-      "cv": "토야 키쿠노스케",
-      "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Dai_Monohoshi.jpg"
-    },
-    {
-      "name": "카와 유이",
-      "gender": "female",
-      "cv": "시라이시 하루카",
-      "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Yui_Kawa.jpg"
-    },
-    {
-      "name": "우루 치에",
-      "gender": "female",
-      "cv": "하세가와 이쿠미",
-      "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Chie_Uru.jpg"
-    },
-    {
-      "name": "니히루다 요우",
-      "gender": "male",
-      "cv": "오카모토 노부히코",
-      "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/You_Nihiruda.jpg"
-    },
-    {
-      "name": "나카스도 오미야",
-      "gender": "male",
-      "cv": "호리키타 토시키",
-      "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Omiya_Nakasudou.jpg"
-    },
-    {
-      "name": "메리 켄사쿠",
-      "gender": "male",
-      "cv": "아사기리 유우히",
-      "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Kensaku_Meri.jpg"
-    },
-    {
-      "name": "죠가이 란토",
-      "gender": "male",
-      "cv": "코바타케 마사후미",
-      "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Ranto_Jougai.jpg"
-    },
-    {
-      "name": "타부치 코에루",
-      "gender": "male",
-      "cv": "오가와 카즈키",
-      "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Koeru_Tabuchi.jpg"
-    },
-    {
-      "name": "운도 카이",
-      "gender": "male",
-      "cv": "코바야시 유스케",
-      "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Kai_Undo.jpg"
-    },
-    {
-      "name": "아키레스 켄",
-      "gender": "male",
-      "cv": "요코야마 타쿠토",
-      "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Ken_Akiresu.jpg"
-    },
-    {
-      "name": "인타하이 스스무",
-      "gender": "male",
-      "cv": "사토 마사유키",
-      "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Susumu_Intahai.jpg"
-    },
-    {
-      "name": "콘죠 유타카",
-      "gender": "male",
-      "cv": "와타나베 슈야",
-      "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Yutaka_Konjou.jpg"
-    },
-    {
-      "name": "스지 치카라",
-      "gender": "male",
-      "cv": "아사쿠라 아유무",
-      "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Chikara_Suji.jpg"
-    },
-    {
-      "name": "아마노 쟈코",
-      "gender": "unknown",
-      "cv": "M·A·O",
-      "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Jako_Amano.jpg"
-    },
-    {
-      "name": "히다리 마키",
-      "gender": "female",
-      "cv": "사쿠라 카오루",
-      "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Maki_Hidari.jpg"
-    },
-    {
-      "name": "산단바라 이쿠에",
-      "gender": "female",
-      "cv": "오카다 사치코",
-      "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Ikue_Sandanhara.jpg"
-    },
-    {
-      "name": "혼바 데스코",
-      "gender": "female",
-      "cv": "오오이 마리에",
-      "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Desuko_Honba.jpg"
-    },
-    {
-      "name": "오오바 카요",
-      "gender": "female",
-      "cv": "신도 미나미",
-      "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Kayo_Ouba.jpg"
-    },
-    {
-      "name": "키레이데 쇼",
-      "gender": "male",
-      "cv": "사쿠마 다이스케",
-      "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Shou_Kireide.jpg"
-    },
-    {
-      "name": "셋토 키메루",
-      "gender": "male",
-      "cv": "야마모토 하야토",
-      "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Kimeru_Setto.jpg"
-    },
-    {
-      "name": "타노킨 토리오",
-      "gender": "male",
-      "cv": "사사모리 요헤이",
-      "img": "image/charimg/2026/Q1/High_School!_Kimengumi_(2026)/Torio_Tanokin.jpg"
-    }
-  ]
-},
-{
-  "id": 59853,
-  "characters": [
-    {
-      "name": "헬리",
-      "gender": "male",
-      "cv": "토야 키쿠노스케",
-      "img": "image/charimg/2026/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Heli.jpg"
-    },
-    {
-      "name": "노아",
-      "gender": "male",
-      "cv": "코바야시 치아키",
-      "img": "image/charimg/2026/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Noa.jpg"
-    },
-    {
-      "name": "시온",
-      "gender": "male",
-      "cv": "토키 슌이치",
-      "img": "image/charimg/2026/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Shion.jpg"
-    },
-    {
-      "name": "수하",
-      "gender": "female",
-      "cv": "이즈미 후카",
-      "img": "image/charimg/2026/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Su-Ha.jpg"
-    },
-    {
-      "name": "지노",
-      "gender": "male",
-      "cv": "나카무라 슈고",
-      "img": "image/charimg/2026/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Jino.jpg"
-    },
-    {
-      "name": "솔론",
-      "gender": "male",
-      "cv": "오가사와라 진",
-      "img": "image/charimg/2026/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Solon.jpg"
-    },
-    {
-      "name": "자카",
-      "gender": "male",
-      "cv": "우에무라 유토",
-      "img": "image/charimg/2026/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Jakah.jpg"
-    },
-    {
-      "name": "이안",
-      "gender": "male",
-      "cv": "시미즈 히로토",
-      "img": "image/charimg/2026/Q1/DARK_MOON_Kuro_no_Tsuki_-_Tsuki_no_Saidan/Jaan.jpg"
-    }
-  ]
-},
-{
-  "id": 60460,
-  "characters": [
-    {
-      "name": "알렌",
-      "gender": "male",
-      "cv": "타무라 무츠미",
-      "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Allen.jpg"
-    },
-    {
-      "name": "세실 그란벨",
-      "gender": "female",
-      "cv": "센본기 사야카",
-      "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Cecil_Granvelle.jpg"
-    },
-    {
-      "name": "클레나",
-      "gender": "female",
-      "cv": "이이즈카 마유",
-      "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Krena.jpg"
-    },
-    {
-      "name": "드골라",
-      "gender": "male",
-      "cv": "하타나카 타스쿠",
-      "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Dogora.jpg"
-    },
-    {
-      "name": "마쉬",
-      "gender": "male",
-      "cv": "코이치 마코토",
-      "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Mash.jpg"
-    },
-    {
-      "name": "테레시아",
-      "gender": "female",
-      "cv": "오오하라 사야카",
-      "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Theresia.jpg"
-    },
-    {
-      "name": "로단",
-      "gender": "male",
-      "cv": "이시카와 히데오",
-      "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Rodan.jpg"
-    },
-    {
-      "name": "버틀러 폰 그란벨",
-      "gender": "male",
-      "cv": "스기타 토모카즈",
-      "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Butler_von_Granvelle.jpg"
-    },
-    {
-      "name": "토머스 그란벨",
-      "gender": "male",
-      "cv": "미야케 마리에",
-      "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Thomas_Granvelle.jpg"
-    },
-    {
-      "name": "미하이 그란벨",
-      "gender": "male",
-      "cv": "치바 쇼야",
-      "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Mikhail_Granvelle.jpg"
-    },
-    {
-      "name": "카르넬 자작",
-      "gender": "male",
-      "cv": "미야모토 타카히로",
-      "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Carnell.jpg"
-    },
-    {
-      "name": "제노프",
-      "gender": "male",
-      "cv": "오오츠카 아키오",
-      "img": "image/charimg/2026/Q1/Hell_Mode_Yarikomi_Suki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru/Zenoff.jpg"
-    }
-  ]
-},
-{
-  "id": 59229,
-  "characters": [
-    {
-      "name": "신라 쿠사카베",
-      "gender": "male",
-      "cv": "카지와라 가쿠토",
-      "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Shinra_Kusakabe.jpg"
-    },
-    {
-      "name": "아서 보일",
-      "gender": "male",
-      "cv": "코바야시 유스케",
-      "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Arthur_Boyle.jpg"
-    },
-    {
-      "name": "타마키 코타츠",
-      "gender": "female",
-      "cv": "유우키 아오이",
-      "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Tamaki_Kotatsu.jpg"
-    },
-    {
-      "name": "아키타루 오비",
-      "gender": "male",
-      "cv": "나카이 카즈야",
-      "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Akitaru_Oubi.jpg"
-    },
-    {
-      "name": "타케히사 히나와",
-      "gender": "male",
-      "cv": "스즈무라 켄이치",
-      "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Takehisa_Hinawa.jpg"
-    },
-    {
-      "name": "아이리스",
-      "gender": "female",
-      "cv": "M·A·O",
-      "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Iris.jpg"
-    },
-    {
-      "name": "마키 오제",
-      "gender": "female",
-      "cv": "카미죠 사에코",
-      "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Maki_Oze.jpg"
-    },
-    {
-      "name": "프린세스 히바나",
-      "gender": "female",
-      "cv": "Lynn",
-      "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Princess_Hibana.jpg"
-    },
-    {
-      "name": "포옌 리",
-      "gender": "male",
-      "cv": "히노 사토시",
-      "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Huo_Yan_Li.jpg"
-    },
-    {
-      "name": "카림 플램",
-      "gender": "male",
-      "cv": "오키츠 카즈유키",
-      "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Karim_Flam.jpg"
-    },
-    {
-      "name": "신몬 베니마루",
-      "gender": "male",
-      "cv": "미야노 마모루",
-      "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Benimaru_Shinmon.jpg"
-    },
-    {
-      "name": "히카게",
-      "gender": "female",
-      "cv": "아카오 히카루",
-      "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Hikage.jpg"
-    },
-    {
-      "name": "히나타",
-      "gender": "female",
-      "cv": "아카오 히카루",
-      "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Hinata.jpg"
-    },
-    {
-      "name": "사가미야 콘로",
-      "gender": "male",
-      "cv": "마에노 토모아키",
-      "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Konro_Sagamiya.jpg"
-    },
-    {
-      "name": "빅토르 리히토",
-      "gender": "male",
-      "cv": "사카구치 다이스케",
-      "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Viktor_Licht.jpg"
-    },
-    {
-      "name": "조커",
-      "gender": "male",
-      "cv": "츠다 켄지로",
-      "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Joker.jpg"
-    },
-    {
-      "name": "발칸 조제프",
-      "gender": "male",
-      "cv": "야시로 타쿠",
-      "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Vulcan_Joseph.jpg"
-    },
-    {
-      "name": "쇼우 쿠사카베",
-      "gender": "male",
-      "cv": "사카모토 마아야",
-      "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Shou_Kusakabe.jpg"
-    },
-    {
-      "name": "유우",
-      "gender": "male",
-      "cv": "치바 쇼야",
-      "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Yuu.jpg"
-    },
-    {
-      "name": "리사 이사리베",
-      "gender": "female",
-      "cv": "아사이 아야카",
-      "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Lisa_Isaribi.jpg"
-    },
-    {
-      "name": "Dr.조반니",
-      "gender": "male",
-      "cv": "아오야마 유타카",
-      "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Dr._Giovanni.jpg"
-    },
-    {
-      "name": "애로우",
-      "gender": "female",
-      "cv": "우치야마 유미",
-      "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Arrow.jpg"
-    },
-    {
-      "name": "하우메아",
-      "gender": "female",
-      "cv": "쿠기미야 리에",
-      "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Haumea.jpg"
-    },
-    {
-      "name": "구스타프 혼다",
-      "gender": "unknown",
-      "cv": "하시 타카야",
-      "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Gustav_Honda.jpg"
-    },
-    {
-      "name": "카론",
-      "gender": "male",
-      "cv": "야스모토 히로키",
-      "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Charon.jpg"
-    }
-  ]
-},
-{
-  "id": 61207,
-  "characters": [
-    {
-      "name": "이르시아",
-      "gender": "male",
-      "cv": "토키 슌이치",
-      "img": "image/charimg/2026/Q1/Tensei_Shitara_Dragon_no_Tamago_Datta/Irushia.jpg"
-    },
-    {
-      "name": "밀리아 밀레아니아",
-      "gender": "female",
-      "cv": "이토 미쿠",
-      "img": "image/charimg/2026/Q1/Tensei_Shitara_Dragon_no_Tamago_Datta/Myria_Milleania.jpg"
-    },
-    {
-      "name": "마리엘",
-      "gender": "female",
-      "cv": "쿠기미야 리에",
-      "img": "image/charimg/2026/Q1/Tensei_Shitara_Dragon_no_Tamago_Datta/Marielle.jpg"
-    },
-    {
-      "name": "검은 도마뱀",
-      "gender": "female",
-      "cv": "쿠스노키 토모리",
-      "img": "image/charimg/2026/Q1/Tensei_Shitara_Dragon_no_Tamago_Datta/Kuro_Tokage.jpg"
-    }
-  ]
-},
-{
-  "id": 61549,
-  "characters": [
-    {
-      "name": "반 네이 페르티오",
-      "gender": "male",
-      "cv": "우치야마 유미",
-      "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Van_Fertio.jpg"
-    },
-    {
-      "name": "티르",
-      "gender": "female",
-      "cv": "M·A·O",
-      "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Till.jpg"
-    },
-    {
-      "name": "카무신",
-      "gender": "male",
-      "cv": "이세 마리야",
-      "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Khamsin.jpg"
-    },
-    {
-      "name": "푸르리엘",
-      "gender": "female",
-      "cv": "쿠라모치 와카나",
-      "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Purriel.jpg"
-    },
-    {
-      "name": "쿠사라",
-      "gender": "male",
-      "cv": "사토 겐",
-      "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Xara.jpg"
-    },
-    {
-      "name": "라다 프리오라",
-      "gender": "female",
-      "cv": "오오부치 노노카",
-      "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Lada_Priora.jpg"
-    },
-    {
-      "name": "파나메라 카레라 카이엔",
-      "gender": "female",
-      "cv": "히카사 요코",
-      "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Panamera_Kaien.jpg"
-    },
-    {
-      "name": "에스파다",
-      "gender": "male",
-      "cv": "호리우치 켄유",
-      "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Esparda.jpg"
-    },
-    {
-      "name": "아르테 온 페르디낫트",
-      "gender": "female",
-      "cv": "와카야마 시온",
-      "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Arte_Ferdinand.jpg"
-    },
-    {
-      "name": "디",
-      "gender": "male",
-      "cv": "코바야시 치카히로",
-      "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Dee.jpg"
-    },
-    {
-      "name": "오르토 시트",
-      "gender": "male",
-      "cv": "후루카와 마코토",
-      "img": "image/charimg/2026/Q1/Okiraku_Ryoushu_no_Tanoshii_Ryouchi_Bouei/Ortho_Sheet.jpg"
-    }
-  ]
-},
-{
-  "id": 54863,
-  "characters": [
-    {
-      "name": "밧슈 더 스탬피드",
-      "gender": "male",
-      "cv": "마츠오카 요시츠구",
-      "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Vash_the_Stampede.jpg"
-    },
-    {
-      "name": "니콜라스 D. 울프우드",
-      "gender": "male",
-      "cv": "호소야 요시마사",
-      "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Nicholas_D._Wolfwood.jpg"
-    },
-    {
-      "name": "메릴 스트라이프",
-      "gender": "female",
-      "cv": "안도 사쿠라",
-      "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Meryl_Stryfe.jpg"
-    },
-    {
-      "name": "밀리 톰슨",
-      "gender": "unknown",
-      "cv": "아야모리 치카",
-      "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Milly_Thompson.jpg"
-    },
-    {
-      "name": "제시카",
-      "gender": "female",
-      "cv": "스즈키 에리",
-      "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Jessica.jpg"
-    },
-    {
-      "name": "밀리온즈 나이브스",
-      "gender": "unknown",
-      "cv": "사토 류지",
-      "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Knives_Millions.jpg"
-    },
-    {
-      "name": "호퍼드 더 건틀렛",
-      "gender": "unknown",
-      "cv": "타케토라",
-      "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Hoppered_the_Gauntlet.jpg"
-    },
-    {
-      "name": "레오노프 더 퍼펫마스터",
-      "gender": "unknown",
-      "cv": "쵸",
-      "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Leonof_the_Puppet-Master.jpg"
-    },
-    {
-      "name": "미드버레이 더 홈프릭",
-      "gender": "unknown",
-      "cv": "미키 신이치로",
-      "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Midvalley_the_Hornfreak.jpg"
-    },
-    {
-      "name": "레가트 블루서머즈",
-      "gender": "male",
-      "cv": "우치야마 코우키",
-      "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Legato_Bluesummers.jpg"
-    },
-    {
-      "name": "윌리엄 콘래드",
-      "gender": "male",
-      "cv": "나카오 류세이",
-      "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/William_Conrad.jpg"
-    },
-    {
-      "name": "에렌딜라 더 크림슨네일",
-      "gender": "female",
-      "cv": "무라세 아유무",
-      "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Elendira_the_Crimsonnail.jpg"
-    },
-    {
-      "name": "렘 세이브렘",
-      "gender": "female",
-      "cv": "사카모토 마아야",
-      "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Rem_Saverem.jpg"
-    },
-    {
-      "name": "리비오 더 더블팽",
-      "gender": "male",
-      "cv": "무로 겐키",
-      "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Livio.jpg"
-    },
-    {
-      "name": "브래드",
-      "gender": "unknown",
-      "cv": "스와베 준이치",
-      "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Brad.jpg"
-    },
-    {
-      "name": "루이더",
-      "gender": "female",
-      "cv": "오리카사 후미코",
-      "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Luida.jpg"
-    },
-    {
-      "name": "테슬라",
-      "gender": "unknown",
-      "cv": "모로호시 스미레",
-      "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Tesla.jpg"
-    },
-    {
-      "name": "Chapel the Evergreen",
-      "gender": "unknown",
-      "cv": "나카 히로시",
-      "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Chapel_the_Evergreen.jpg"
-    }
-  ]
-},
-{
-  "id": 55830,
-  "characters": [
-    {
-      "name": "아야카 사조",
-      "gender": "female",
-      "cv": "하나자와 카나",
-      "img": "image/charimg/2026/Q1/Fatestrange_Fake/Ayaka_Sajyou.jpg"
-    },
-    {
-      "name": "리처드 1세",
-      "gender": "male",
-      "cv": "오노 유우키",
-      "img": "image/charimg/2026/Q1/Fatestrange_Fake/Richard_I.jpg"
-    },
-    {
-      "name": "길가메시",
-      "gender": "male",
-      "cv": "세키 토모카즈",
-      "img": "image/charimg/2026/Q1/Fatestrange_Fake/Gilgamesh.jpg"
-    },
-    {
-      "name": "엘키두",
-      "gender": "unknown",
-      "cv": "코바야시 유우",
-      "img": "image/charimg/2026/Q1/Fatestrange_Fake/Enkidu.jpg"
-    },
-    {
-      "name": "은랑 키메라",
-      "gender": "unknown",
-      "cv": "Unknown",
-      "img": "image/charimg/2026/Q1/Fatestrange_Fake/Wolf.jpg"
-    },
-    {
-      "name": "어새신",
-      "gender": "unknown",
-      "cv": "Lynn",
-      "img": "image/charimg/2026/Q1/Fatestrange_Fake/Assassin.jpg"
-    },
-    {
-      "name": "쿠루오카 츠바키",
-      "gender": "female",
-      "cv": "코가 아오이",
-      "img": "image/charimg/2026/Q1/Fatestrange_Fake/Tsubaki_Kuruoka.jpg"
-    },
-    {
-      "name": "팔데우스 디오란도",
-      "gender": "unknown",
-      "cv": "에노키 준야",
-      "img": "image/charimg/2026/Q1/Fatestrange_Fake/Faldeus_Dioland.jpg"
-    },
-    {
-      "name": "티네 체르크",
-      "gender": "female",
-      "cv": "모로호시 스미레",
-      "img": "image/charimg/2026/Q1/Fatestrange_Fake/Tine_Chelc.jpg"
-    },
-    {
-      "name": "올란도 리브",
-      "gender": "male",
-      "cv": "하타노 와타루",
-      "img": "image/charimg/2026/Q1/Fatestrange_Fake/Orlando_Reeve.jpg"
-    },
-    {
-      "name": "로드 엘멜로이 2세",
-      "gender": "male",
-      "cv": "나미카와 다이스케",
-      "img": "image/charimg/2026/Q1/Fatestrange_Fake/Waver_Velvet.jpg"
-    },
-    {
-      "name": "플랫 에스카르도스",
-      "gender": "male",
-      "cv": "마츠오카 요시츠구",
-      "img": "image/charimg/2026/Q1/Fatestrange_Fake/Flatt_Escardos.jpg"
-    },
-    {
-      "name": "프란체스카 프렐라티",
-      "gender": "unknown",
-      "cv": "우치다 마아야",
-      "img": "image/charimg/2026/Q1/Fatestrange_Fake/Francesca_Prelati.jpg"
-    },
-    {
-      "name": "제스터 카르투레",
-      "gender": "male",
-      "cv": "타치바나 타츠마루",
-      "img": "image/charimg/2026/Q1/Fatestrange_Fake/Jester_Karture.jpg"
-    },
-    {
-      "name": "알렉상드르 뒤마 페르",
-      "gender": "male",
-      "cv": "모리쿠보 쇼타로",
-      "img": "image/charimg/2026/Q1/Fatestrange_Fake/Alexandre_Dumas.jpg"
-    },
-    {
-      "name": "시그마",
-      "gender": "male",
-      "cv": "카지와라 가쿠토",
-      "img": "image/charimg/2026/Q1/Fatestrange_Fake/Sigma.jpg"
-    },
-    {
-      "name": "한자 세르반테스",
-      "gender": "male",
-      "cv": "코니시 카츠유키",
-      "img": "image/charimg/2026/Q1/Fatestrange_Fake/Hansa_Cervantes.jpg"
-    },
-    {
-      "name": "버즈디롯 코델리온",
-      "gender": "unknown",
-      "cv": "미야케 켄타",
-      "img": "image/charimg/2026/Q1/Fatestrange_Fake/Bazdilot_Cordelion.jpg"
-    },
-    {
-      "name": "필리아",
-      "gender": "female",
-      "cv": "마키노 유이",
-      "img": "image/charimg/2026/Q1/Fatestrange_Fake/Philia.jpg"
-    },
-    {
-      "name": "赤ずきん",
-      "gender": "female",
-      "cv": "Unknown",
-      "img": "image/charimg/2026/Q1/Fatestrange_Fake/Akazukin.jpg"
-    },
-    {
-      "name": "헤라클레스",
-      "gender": "male",
-      "cv": "사이젠 타다히사",
-      "img": "image/charimg/2026/Q1/Fatestrange_Fake/Heracles.jpg"
-    },
-    {
-      "name": "오리온",
-      "gender": "male",
-      "cv": "칸나 노부토시",
-      "img": "image/charimg/2026/Q1/Fatestrange_Fake/Orion.jpg"
-    },
-    {
-      "name": "할리 볼자크",
-      "gender": "female",
-      "cv": "요우미야 히나",
-      "img": "image/charimg/2026/Q1/Fatestrange_Fake/Haruri_Borzak.jpg"
-    },
-    {
-      "name": "알드라",
-      "gender": "unknown",
-      "cv": "카네타 아이",
-      "img": "image/charimg/2026/Q1/Fatestrange_Fake/Aludra.jpg"
-    },
-    {
-      "name": "로코 벨페반",
-      "gender": "unknown",
-      "cv": "아소 토모히사",
-      "img": "image/charimg/2026/Q1/Fatestrange_Fake/Rocco_Belfeban.jpg"
-    }
-  ]
-},
-{
-  "id": 61196,
-  "characters": [
-    {
-      "name": "에니시로 소지",
-      "gender": "male",
-      "cv": "오카모토 노부히코",
-      "img": "image/charimg/2026/Q1/Dead_Account/Souji_Enishiro.jpg"
-    },
-    {
-      "name": "카스바타 쿠쿠루",
-      "gender": "male",
-      "cv": "우치야마 코우키",
-      "img": "image/charimg/2026/Q1/Dead_Account/Kukuru_Kasubata.jpg"
-    },
-    {
-      "name": "우루스가와 키요미",
-      "gender": "female",
-      "cv": "파이루즈 아이",
-      "img": "image/charimg/2026/Q1/Dead_Account/Kiyomi_Urusugawa.jpg"
-    },
-    {
-      "name": "하스미 렌리",
-      "gender": "male",
-      "cv": "하나에 나츠키",
-      "img": "image/charimg/2026/Q1/Dead_Account/Renri_Hasumi.jpg"
-    },
-    {
-      "name": "에모토 나루히코",
-      "gender": "male",
-      "cv": "스즈키 료타",
-      "img": "image/charimg/2026/Q1/Dead_Account/Naruhiko_Emoto.jpg"
-    },
-    {
-      "name": "하이지마 히요리",
-      "gender": "female",
-      "cv": "Machico",
-      "img": "image/charimg/2026/Q1/Dead_Account/Hiyori_Haijima.jpg"
-    },
-    {
-      "name": "아자키 요이마루",
-      "gender": "male",
-      "cv": "사토 타쿠야",
-      "img": "image/charimg/2026/Q1/Dead_Account/Yoimaru_Azaki.jpg"
-    },
-    {
-      "name": "스루기 데이",
-      "gender": "male",
-      "cv": "이마이 후미야",
-      "img": "image/charimg/2026/Q1/Dead_Account/Dei_Surugi.jpg"
-    },
-    {
-      "name": "와가리 미노루",
-      "gender": "male",
-      "cv": "사토 겐",
-      "img": "image/charimg/2026/Q1/Dead_Account/Minoru_Wagari.jpg"
-    },
-    {
-      "name": "쿠사바 에루",
-      "gender": "female",
-      "cv": "우치다 마아야",
-      "img": "image/charimg/2026/Q1/Dead_Account/Eru_Kusaba.jpg"
-    },
-    {
-      "name": "오오와다 잇코",
-      "gender": "male",
-      "cv": "쿠마가이 켄타로",
-      "img": "image/charimg/2026/Q1/Dead_Account/Ikko_Oowada.jpg"
-    },
-    {
-      "name": "나메카와 키리",
-      "gender": "male",
-      "cv": "미야자키 마사야",
-      "img": "image/charimg/2026/Q1/Dead_Account/Kiri_Namekawa.jpg"
-    },
-    {
-      "name": "쿠타니 소고",
-      "gender": "male",
-      "cv": "후쿠시마 준",
-      "img": "image/charimg/2026/Q1/Dead_Account/Ban_Ashina.jpg"
-    },
-    {
-      "name": "지엔 오토야",
-      "gender": "male",
-      "cv": "코바야시 치카히로",
-      "img": "image/charimg/2026/Q1/Dead_Account/Jien_Otoya.jpg"
-    },
-    {
-      "name": "칸노 코나미",
-      "gender": "female",
-      "cv": "Unknown",
-      "img": "image/charimg/2026/Q1/Dead_Account/Konami_Kanno.jpg"
-    },
-    {
-      "name": "이타바시 카키코",
-      "gender": "female",
-      "cv": "카쿠마 아이",
-      "img": "image/charimg/2026/Q1/Dead_Account/Kakiko_Itabashi.jpg"
-    },
-    {
-      "name": "난조 코레키요",
-      "gender": "male",
-      "cv": "마에노 토모아키",
-      "img": "image/charimg/2026/Q1/Dead_Account/Korekiyo_Nanzou.jpg"
-    },
-    {
-      "name": "야바미 큐코",
-      "gender": "female",
-      "cv": "쿠지라",
-      "img": "image/charimg/2026/Q1/Dead_Account/Kyuuko_Yabami.jpg"
-    },
-    {
-      "name": "카이코자 켄지",
-      "gender": "male",
-      "cv": "미야조노 타쿠무",
-      "img": "image/charimg/2026/Q1/Dead_Account/Kenji_Ekoza.jpg"
-    },
-    {
-      "name": "오치 사바토",
-      "gender": "male",
-      "cv": "사지 카즈야",
-      "img": "image/charimg/2026/Q1/Dead_Account/Sabato_Ochi.jpg"
-    },
-    {
-      "name": "토리마타 히루코",
-      "gender": "male",
-      "cv": "카와시마 레이지",
-      "img": "image/charimg/2026/Q1/Dead_Account/Hiruko_Torimata.jpg"
-    },
-    {
-      "name": "이이즈카 미미",
-      "gender": "female",
-      "cv": "시미즈 아야카",
-      "img": "image/charimg/2026/Q1/Dead_Account/Mimi_Iizuka.jpg"
-    },
-    {
-      "name": "아사츠지 키즈키",
-      "gender": "male",
-      "cv": "코가 아키라",
-      "img": "image/charimg/2026/Q1/Dead_Account/Kizuki_Asatsuji.jpg"
-    },
-    {
-      "name": "코우치 미나",
-      "gender": "female",
-      "cv": "히카사 요코",
-      "img": "image/charimg/2026/Q1/Dead_Account/Mina_Kouchi.jpg"
-    }
-  ]
-},
-{
-  "id": 62432,
-  "characters": [
-    {
-      "name": "히토마 레이",
-      "gender": "male",
-      "cv": "마스다 토시키",
-      "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Rei_Hitoma.jpg"
-    },
-    {
-      "name": "미나즈키 쿄카",
-      "gender": "female",
-      "cv": "아마미야 소라",
-      "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Kyouka_Minazuki.jpg"
-    },
-    {
-      "name": "하네다 토바리",
-      "gender": "female",
-      "cv": "타나베 루이",
-      "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Tobari_Haneda.jpg"
-    },
-    {
-      "name": "오오가미 이사키",
-      "gender": "female",
-      "cv": "오오니시 사오리",
-      "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Isaki_Oogami.jpg"
-    },
-    {
-      "name": "우사미 스이",
-      "gender": "female",
-      "cv": "나가나와 마리아",
-      "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Sui_Usami.jpg"
-    },
-    {
-      "name": "네즈 마치",
-      "gender": "female",
-      "cv": "후쿠엔 미사토",
-      "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Machi_Nezu.jpg"
-    },
-    {
-      "name": "류자키 카린",
-      "gender": "female",
-      "cv": "누마쿠라 마나미",
-      "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Karin_Ryuuzaki.jpg"
-    },
-    {
-      "name": "호시노 사토루",
-      "gender": "male",
-      "cv": "이시이 마코토",
-      "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Satoru_Hoshino.jpg"
-    },
-    {
-      "name": "카라스마 시로",
-      "gender": "male",
-      "cv": "이노우에 카즈히코",
-      "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Shirou_Karasuma.jpg"
-    },
-    {
-      "name": "사오토메 유키",
-      "gender": "female",
-      "cv": "카야노 아이",
-      "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Yuki_Saotome.jpg"
-    },
-    {
-      "name": "오코노기 마키",
-      "gender": "female",
-      "cv": "호리에 유이",
-      "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Maki_Okonogi.jpg"
-    },
-    {
-      "name": "하루나 미라이",
-      "gender": "female",
-      "cv": "이노우에 호노카",
-      "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Mirai_Haruna.jpg"
-    },
-    {
-      "name": "와카바 아오이",
-      "gender": "female",
-      "cv": "이시카와 유이",
-      "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Aoi_Wakaba.jpg"
-    },
-    {
-      "name": "쿠로사와 네네코",
-      "gender": "female",
-      "cv": "우에다 레이나",
-      "img": "image/charimg/2026/Q1/Jingai_Kyoushitsu_no_Ningengirai_Kyoushi/Neneko_Kurosawa.jpg"
-    }
-  ]
-},
-{
-  "id": 61217,
-  "characters": [
-    {
-      "name": "야시로",
-      "gender": "male",
-      "cv": "스즈키 료타",
-      "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Yashiro.jpg"
-    },
-    {
-      "name": "죠가미네 아키",
-      "gender": "female",
-      "cv": "키토 아카리",
-      "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Aki_Jougamine.jpg"
-    },
-    {
-      "name": "인도 유키네",
-      "gender": "female",
-      "cv": "하루미 모모",
-      "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Yukine_Indou.jpg"
-    },
-    {
-      "name": "세라 카시와기 펜드레건",
-      "gender": "female",
-      "cv": "하나모리 유미리",
-      "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Sara_Pendragon.jpg"
-    },
-    {
-      "name": "죠",
-      "gender": "male",
-      "cv": "타도코로 히나타",
-      "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Joe.jpg"
-    },
-    {
-      "name": "이시노오",
-      "gender": "male",
-      "cv": "히라카와 다이스케",
-      "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Ishinoo.jpg"
-    },
-    {
-      "name": "마루타",
-      "gender": "male",
-      "cv": "타카토 야스히로",
-      "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Maruta.jpg"
-    },
-    {
-      "name": "에드 사일러스",
-      "gender": "male",
-      "cv": "타케우치 료타",
-      "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Ed_Cyrus.jpg"
-    },
-    {
-      "name": "마미야 키요히로",
-      "gender": "male",
-      "cv": "미키 신이치로",
-      "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Kiyohito_Takayama.jpg"
-    },
-    {
-      "name": "아서 펜드래건",
-      "gender": "male",
-      "cv": "코니시 카츠유키",
-      "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Arthur_Pendragon.jpg"
-    },
-    {
-      "name": "호박의 가시",
-      "gender": "male",
-      "cv": "츠다 켄지로",
-      "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Kohaku_no_Ibara_Kyou.jpg"
-    },
-    {
-      "name": "양손의 쐐기",
-      "gender": "male",
-      "cv": "우메하라 유이치로",
-      "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Morote_no_Kusabi_Kyou.jpg"
-    },
-    {
-      "name": "레비",
-      "gender": "female",
-      "cv": "카와스미 아야코",
-      "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Levi.jpg"
-    },
-    {
-      "name": "이드",
-      "gender": "male",
-      "cv": "이시야 하루키",
-      "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Id.jpg"
-    },
-    {
-      "name": "ナレーター",
-      "gender": "unknown",
-      "cv": "아이자와 마사키",
-      "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Narrator.jpg"
-    },
-    {
-      "name": "마츠기",
-      "gender": "male",
-      "cv": "나카지마 요시키",
-      "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Matsugi.jpg"
-    },
-    {
-      "name": "ゆうすけ",
-      "gender": "male",
-      "cv": "야마모토 유우키",
-      "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Yuusuke.jpg"
-    },
-    {
-      "name": "こむぎ",
-      "gender": "female",
-      "cv": "미즈노 아미",
-      "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Komugi.jpg"
-    },
-    {
-      "name": "사하라",
-      "gender": "male",
-      "cv": "후카마치 토시나리",
-      "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Sahara.jpg"
-    },
-    {
-      "name": "カンザキ",
-      "gender": "male",
-      "cv": "캰 카즈키",
-      "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Kanzaki.jpg"
-    },
-    {
-      "name": "케이",
-      "gender": "female",
-      "cv": "하라 유미",
-      "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Kay.jpg"
-    }
-  ]
-},
-{
-  "id": 59047,
-  "characters": [
-    {
-      "name": "키노시타 우타게",
-      "gender": "female",
-      "cv": "하야미 사오리",
-      "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Utage_Kinoshita.jpg"
-    },
-    {
-      "name": "후쿠하라 타몬",
-      "gender": "male",
-      "cv": "하타노 카케루",
-      "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Tamon_Fukuhara.jpg"
-    },
-    {
-      "name": "사카구치 오우리",
-      "gender": "male",
-      "cv": "치바 쇼야",
-      "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Ouri_Sakaguchi.jpg"
-    },
-    {
-      "name": "타치바나 케이토",
-      "gender": "male",
-      "cv": "하타나카 타스쿠",
-      "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Keito_Tachibana.jpg"
-    },
-    {
-      "name": "이시바시 나츠키",
-      "gender": "male",
-      "cv": "아마사키 코헤이",
-      "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Natsuki_Ishibashi.jpg"
-    },
-    {
-      "name": "카이 린타로",
-      "gender": "male",
-      "cv": "나가오카 류호",
-      "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Rintarou_Kai.jpg"
-    },
-    {
-      "name": "유이나",
-      "gender": "female",
-      "cv": "후쿠즈미 사야",
-      "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Yuina.jpg"
-    },
-    {
-      "name": "SHIORI",
-      "gender": "female",
-      "cv": "Unknown",
-      "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/SHIORI.jpg"
-    },
-    {
-      "name": "리코",
-      "gender": "female",
-      "cv": "히라야마 유리카",
-      "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Riko.jpg"
-    },
-    {
-      "name": "이노우에 아스카",
-      "gender": "female",
-      "cv": "마츠오카 미사토",
-      "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Asuka_Inoue.jpg"
-    },
-    {
-      "name": "키노시타 호마레",
-      "gender": "female",
-      "cv": "사사키 루나",
-      "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Homare_Kinoshita.jpg"
-    },
-    {
-      "name": "토다",
-      "gender": "female",
-      "cv": "사토 하나",
-      "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Toda.jpg"
-    },
-    {
-      "name": "키노시타 야마토",
-      "gender": "male",
-      "cv": "나나세 아야카",
-      "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Yamato_Kinoshita.jpg"
-    },
-    {
-      "name": "우타게 아빠",
-      "gender": "male",
-      "cv": "오키츠 카즈유키",
-      "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Utage_no_Chichi.jpg"
-    },
-    {
-      "name": "우타게 엄마",
-      "gender": "female",
-      "cv": "토요구치 메구미",
-      "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Utage_no_Haha.jpg"
-    },
-    {
-      "name": "후지타 와타루",
-      "gender": "male",
-      "cv": "미즈나카 마사아키",
-      "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Wataru_Fujita.jpg"
-    },
-    {
-      "name": "ポチ",
-      "gender": "unknown",
-      "cv": "아마사키 코헤이",
-      "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Pochi.jpg"
-    },
-    {
-      "name": "시라이시 이즈미",
-      "gender": "female",
-      "cv": "혼다 타카코",
-      "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Izumi_Shiraishi.jpg"
-    },
-    {
-      "name": "坂口利一",
-      "gender": "male",
-      "cv": "Unknown",
-      "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Toshikazu_Sakaguchi.jpg"
-    },
-    {
-      "name": "아리모토 유우",
-      "gender": "male",
-      "cv": "야나기타 준이치",
-      "img": "image/charimg/2026/Q1/Tamon-kun_Ima_Docchi!/Yuu_Arimoto.jpg"
-    }
-  ]
-},
-{
-  "id": 61335,
-  "characters": [
-    {
-      "name": "유이츠카 이노리",
-      "gender": "female",
-      "cv": "하루세 나츠미",
-      "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Inori_Yuitsuka.jpg"
-    },
-    {
-      "name": "아케우라지 츠카사",
-      "gender": "male",
-      "cv": "오오츠카 타케오",
-      "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Tsukasa_Akeuraji.jpg"
-    },
-    {
-      "name": "카미사키 히카루",
-      "gender": "female",
-      "cv": "이치노세 카나",
-      "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Hikaru_Kamisaki_.jpg"
-    },
-    {
-      "name": "소니도리 리오우",
-      "gender": "male",
-      "cv": "코이치 마코토",
-      "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Riou_Sonidori.jpg"
-    },
-    {
-      "name": "소니도리 신이치로",
-      "gender": "male",
-      "cv": "반 타이토",
-      "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Shinichirou_Sonidori.jpg"
-    },
-    {
-      "name": "타카미네 히토미",
-      "gender": "female",
-      "cv": "카토 에미리",
-      "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Hitomi_Takamine.jpg"
-    },
-    {
-      "name": "세코마 마모루",
-      "gender": "male",
-      "cv": "무라지 마나부",
-      "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Mamoru_Sekoma.jpg"
-    },
-    {
-      "name": "카고 코이치",
-      "gender": "unknown",
-      "cv": "호시노 타카노리",
-      "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Kouichi_Kago.jpg"
-    },
-    {
-      "name": "요다카 쥰",
-      "gender": "male",
-      "cv": "우치다 유우마",
-      "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Jun_Yodaka.jpg"
-    },
-    {
-      "name": "유이츠카 노조미",
-      "gender": "female",
-      "cv": "코시미즈 아미",
-      "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Nozomi_Yuitsuka.jpg"
-    },
-    {
-      "name": "카고 요우",
-      "gender": "female",
-      "cv": "이노우에 호노카",
-      "img": "image/charimg/2026/Q1/Medalist_2nd_Season/You_Kago.jpg"
-    },
-    {
-      "name": "오카자키 이루카",
-      "gender": "female",
-      "cv": "야마무라 히비쿠",
-      "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Iruka_Okazaki.jpg"
-    },
-    {
-      "name": "유이츠카 히로노부",
-      "gender": "male",
-      "cv": "니시 켄스케",
-      "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Hironobu_Yuitsuka.jpg"
-    },
-    {
-      "name": "야기 유우나",
-      "gender": "female",
-      "cv": "아베 나츠코",
-      "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Yuuna_Yagi.jpg"
-    },
-    {
-      "name": "사루카와 린나",
-      "gender": "female",
-      "cv": "이토 마오",
-      "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Rinna_Sarukawa.jpg"
-    },
-    {
-      "name": "아나구마 사키나",
-      "gender": "female",
-      "cv": "타나카 타카코",
-      "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Sakina_Anaguma.jpg"
-    },
-    {
-      "name": "쿠리오네 마리카",
-      "gender": "female",
-      "cv": "카야노 아이",
-      "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Marika_Kurione.jpg"
-    },
-    {
-      "name": "로바 마나카",
-      "gender": "female",
-      "cv": "나가나와 마리아",
-      "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Manaka_Roba.jpg"
-    },
-    {
-      "name": "우시카와 요츠하",
-      "gender": "female",
-      "cv": "타나카 미나미",
-      "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Yotsuha_Ushikawa.jpg"
-    },
-    {
-      "name": "리스 쿠루미",
-      "gender": "female",
-      "cv": "토오노 히카루",
-      "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Kurumi_Risu.jpg"
-    },
-    {
-      "name": "니와토리 사나",
-      "gender": "female",
-      "cv": "나츠요시 유우코",
-      "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Sana_Niwatori.jpg"
-    },
-    {
-      "name": "코죠 리이나",
-      "gender": "female",
-      "cv": "아이하라 코토미",
-      "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Riina_Kojou.jpg"
-    },
-    {
-      "name": "亜昼 美玖",
-      "gender": "female",
-      "cv": "이나가키 코노미",
-      "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Miku_Ahiru.jpg"
-    },
-    {
-      "name": "카모가와 코헤이",
-      "gender": "male",
-      "cv": "이시게 쇼야",
-      "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Kouhei_Kamogawa.jpg"
-    },
-    {
-      "name": "우오부치 카케루",
-      "gender": "male",
-      "cv": "하나에 나츠키",
-      "img": "image/charimg/2026/Q1/Medalist_2nd_Season/Kakeru_Uobuchi.jpg"
-    }
-  ]
-},
-{
-  "id": 61663,
-  "characters": [
-    {
-      "name": "이치무라 코하쿠",
-      "gender": "male",
-      "cv": "스즈키 료타",
-      "img": "image/charimg/2026/Q1/Uruwashi_no_Yoi_no_Tsuki/Kohaku_Ichimura.jpg"
-    },
-    {
-      "name": "타키구치 요이",
-      "gender": "female",
-      "cv": "이치노미야 레이",
-      "img": "image/charimg/2026/Q1/Uruwashi_no_Yoi_no_Tsuki/Yoi_Takiguchi.jpg"
-    },
-    {
-      "name": "토네 노바라",
-      "gender": "female",
-      "cv": "야마네 아야",
-      "img": "image/charimg/2026/Q1/Uruwashi_no_Yoi_no_Tsuki/Nobara_Tone.jpg"
-    },
-    {
-      "name": "쿠와바타케 슌",
-      "gender": "male",
-      "cv": "쿠마가이 켄타로",
-      "img": "image/charimg/2026/Q1/Uruwashi_no_Yoi_no_Tsuki/Shun_Kuwabatake.jpg"
-    },
-    {
-      "name": "히비야 코토부키",
-      "gender": "female",
-      "cv": "세토 모모코",
-      "img": "image/charimg/2026/Q1/Uruwashi_no_Yoi_no_Tsuki/Kotobuki_Hibiya.jpg"
-    },
-    {
-      "name": "아카네 센타로",
-      "gender": "male",
-      "cv": "하야마 쇼타",
-      "img": "image/charimg/2026/Q1/Uruwashi_no_Yoi_no_Tsuki/Sentarou_Akane.jpg"
-    },
-    {
-      "name": "요이의 아버지",
-      "gender": "male",
-      "cv": "츠다 켄지로",
-      "img": "image/charimg/2026/Q1/Uruwashi_no_Yoi_no_Tsuki/Yoi_no_Chichi.jpg"
-    },
-    {
-      "name": "오오지 타쿠토",
-      "gender": "male",
-      "cv": "오노 켄쇼",
-      "img": "image/charimg/2026/Q1/Uruwashi_no_Yoi_no_Tsuki/Takuto_Ouji.jpg"
-    }
-  ]
-},
-{
-  "id": 60371,
-  "characters": [
-    {
-      "name": "스즈키 미유",
-      "gender": "female",
-      "cv": "스즈시로 사유미",
-      "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Miyu_Suzuki.jpg"
-    },
-    {
-      "name": "타니 유스케",
-      "gender": "male",
-      "cv": "사카타 쇼고",
-      "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Yuusuke_Tani.jpg"
-    },
-    {
-      "name": "타이라 슈지",
-      "gender": "male",
-      "cv": "카토 와타루",
-      "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Shuuji_Taira.jpg"
-    },
-    {
-      "name": "아즈마 시노",
-      "gender": "female",
-      "cv": "시마부쿠로 미유리",
-      "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Shino_Azuma.jpg"
-    },
-    {
-      "name": "야마다 켄타로",
-      "gender": "male",
-      "cv": "이와타 안지",
-      "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Kentarou_Yamada.jpg"
-    },
-    {
-      "name": "니시 나츠미",
-      "gender": "female",
-      "cv": "오오모리 코코로",
-      "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Natsumi_Nishi.jpg"
-    },
-    {
-      "name": "혼다 리카코",
-      "gender": "female",
-      "cv": "쿠스노키 토모리",
-      "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Rikako_Honda.jpg"
-    },
-    {
-      "name": "와타나베 마나미",
-      "gender": "female",
-      "cv": "타니구치 유나",
-      "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Manami_Watanabe.jpg"
-    },
-    {
-      "name": "사토 아오이",
-      "gender": "female",
-      "cv": "히라바야시 코나츠",
-      "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Aoi_Satou.jpg"
-    },
-    {
-      "name": "오카 리히토",
-      "gender": "male",
-      "cv": "이시야 하루키",
-      "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Rihito_Oka.jpg"
-    },
-    {
-      "name": "스즈키 엄마",
-      "gender": "female",
-      "cv": "사하쿠 미유키",
-      "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Suzuki_no_Haha.jpg"
-    },
-    {
-      "name": "스즈키 아빠",
-      "gender": "male",
-      "cv": "타마이 유우키",
-      "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Suzuki_no_Chichi.jpg"
-    },
-    {
-      "name": "스즈키 미유의 오빠",
-      "gender": "male",
-      "cv": "나카무라 겐타",
-      "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Suzuki_no_Ani.jpg"
-    },
-    {
-      "name": "타니의 할머니",
-      "gender": "female",
-      "cv": "노지 모모코",
-      "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Tani_no_Sobo.jpg"
-    },
-    {
-      "name": "타니 엄마",
-      "gender": "female",
-      "cv": "쇼가와 히토미",
-      "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Tani_no_Haha.jpg"
-    },
-    {
-      "name": "담임",
-      "gender": "male",
-      "cv": "사쿠마 노부유키",
-      "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Tannin.jpg"
-    },
-    {
-      "name": "고마퐁",
-      "gender": "male",
-      "cv": "마키 슌이치",
-      "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Gomapon.jpg"
-    },
-    {
-      "name": "早乙女",
-      "gender": "male",
-      "cv": "니와 사토시",
-      "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Saotome.jpg"
-    },
-    {
-      "name": "長谷川",
-      "gender": "male",
-      "cv": "미노 유다이",
-      "img": "image/charimg/2026/Q1/Seihantai_na_Kimi_to_Boku/Hasegawa.jpg"
-    }
-  ]
-},
-{
-  "id": 60223,
-  "characters": [
-    {
-      "name": "사토 카야",
-      "gender": "female",
-      "cv": "타치바나 아즈사",
-      "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Kaya_Satou.jpg"
-    },
-    {
-      "name": "하스미 치에",
-      "gender": "female",
-      "cv": "우치다 마아야",
-      "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Chie_Hasumi.jpg"
-    },
-    {
-      "name": "에비스모리 나무",
-      "gender": "male",
-      "cv": "카지 유우키",
-      "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Namu_Ebisumori.jpg"
-    },
-    {
-      "name": "모부 오사무",
-      "gender": "male",
-      "cv": "오치아이 후쿠시",
-      "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Osamu_Mobu.jpg"
-    },
-    {
-      "name": "아키라",
-      "gender": "female",
-      "cv": "타도코로 아즈사",
-      "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Akira-sensei.jpg"
-    },
-    {
-      "name": "치히로",
-      "gender": "female",
-      "cv": "이자와 시오리",
-      "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Chihiro-sensei.jpg"
-    },
-    {
-      "name": "사토 시즈오",
-      "gender": "male",
-      "cv": "모리카와 토시유키",
-      "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Shizuo_Satou.jpg"
-    },
-    {
-      "name": "사토 미라이",
-      "gender": "female",
-      "cv": "노토 마미코",
-      "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Mirai_Satou.jpg"
-    },
-    {
-      "name": "에비스모리 나나",
-      "gender": "female",
-      "cv": "토마츠 하루카",
-      "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Nana_Ebisumori.jpg"
-    },
-    {
-      "name": "에비스모리 무츠",
-      "gender": "female",
-      "cv": "사카키바라 요시코",
-      "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Mutsu_Ebisumori.jpg"
-    },
-    {
-      "name": "園長",
-      "gender": "female",
-      "cv": "야오야 쿄",
-      "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Enchou.jpg"
-    },
-    {
-      "name": "마에누마 사쿠야",
-      "gender": "female",
-      "cv": "쿠노 미사키",
-      "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Saku-chan.jpg"
-    },
-    {
-      "name": "이세 켄타로",
-      "gender": "male",
-      "cv": "타무라 무츠미",
-      "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Kenken.jpg"
-    },
-    {
-      "name": "타치바나 유즈",
-      "gender": "female",
-      "cv": "타나카 치에미",
-      "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Yuzu_Tachibana.jpg"
-    },
-    {
-      "name": "管野まい",
-      "gender": "female",
-      "cv": "마메사키 리오",
-      "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Mai_Sugano.jpg"
-    },
-    {
-      "name": "ユミちゃん",
-      "gender": "female",
-      "cv": "나루미 마이",
-      "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Yumi-chan.jpg"
-    },
-    {
-      "name": "アイコちゃん",
-      "gender": "unknown",
-      "cv": "후리하타 아이",
-      "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Aiko-chan.jpg"
-    },
-    {
-      "name": "나카하시 유우키",
-      "gender": "female",
-      "cv": "사가라 마유",
-      "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Michiru_Yano.jpg"
-    },
-    {
-      "name": "메로",
-      "gender": "female",
-      "cv": "혼다 마리코",
-      "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Melo-sensei.jpg"
-    },
-    {
-      "name": "たちばなカン",
-      "gender": "male",
-      "cv": "히나 마도카",
-      "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Kan_Tachibana.jpg"
-    },
-    {
-      "name": "타카마츠 나츠키",
-      "gender": "female",
-      "cv": "모모세 호나미",
-      "img": "image/charimg/2026/Q1/Kaya-chan_wa_Kowakunai/Natsuki_Takamatsu.jpg"
-    }
-  ]
-},
-{
-  "id": 58861,
-  "characters": [
-    {
-      "name": "아시야 미즈키",
-      "gender": "female",
-      "cv": "야마네 아야",
-      "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Mizuki_Ashiya.jpg"
-    },
-    {
-      "name": "사노 이즈미",
-      "gender": "male",
-      "cv": "야시로 타쿠",
-      "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Izumi_Sano.jpg"
-    },
-    {
-      "name": "나카츠 슈이치",
-      "gender": "male",
-      "cv": "토야 키쿠노스케",
-      "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Shuichi_Nakatsu.jpg"
-    },
-    {
-      "name": "우메다 호쿠토",
-      "gender": "male",
-      "cv": "후쿠야마 쥰",
-      "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Hokuto_Umeda.jpg"
-    },
-    {
-      "name": "난바 이오",
-      "gender": "female",
-      "cv": "유즈키 료카",
-      "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Io_Nanba.jpg"
-    },
-    {
-      "name": "니카이도 마유미",
-      "gender": "female",
-      "cv": "카하라 모에",
-      "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Mayumi_Nikaidou.jpg"
-    },
-    {
-      "name": "난바 미나미",
-      "gender": "male",
-      "cv": "우메하라 유이치로",
-      "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Minami_Nanba.jpg"
-    },
-    {
-      "name": "시즈키 클로드 아시야",
-      "gender": "male",
-      "cv": "타치바나 신노스케",
-      "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Shizuki_Ashiya.jpg"
-    },
-    {
-      "name": "노에 신지",
-      "gender": "male",
-      "cv": "후루야 아난",
-      "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Shinji_Noe.jpg"
-    },
-    {
-      "name": "야마시나 리카",
-      "gender": "female",
-      "cv": "나가세 안나",
-      "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Rika_Yamashina.jpg"
-    },
-    {
-      "name": "쥬소 하야토",
-      "gender": "male",
-      "cv": "이시게 쇼야",
-      "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Hayato_Jusou.jpg"
-    },
-    {
-      "name": "카구라자카 마코토",
-      "gender": "male",
-      "cv": "히노 사토시",
-      "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Makoto_Kagurazaka.jpg"
-    },
-    {
-      "name": "니혼바시 와타루",
-      "gender": "male",
-      "cv": "니시야마 코타로",
-      "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Wataru_Nihonbashi.jpg"
-    },
-    {
-      "name": "카구라자카 키요미",
-      "gender": "female",
-      "cv": "아카오 히카루",
-      "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Kiyomi_Kagurazaka.jpg"
-    },
-    {
-      "name": "카야시마 타이키",
-      "gender": "male",
-      "cv": "우치야마 코우키",
-      "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Taiki_Kayashima.jpg"
-    },
-    {
-      "name": "우메다 리오",
-      "gender": "female",
-      "cv": "토야마 나오",
-      "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Rio_Umeda.jpg"
-    },
-    {
-      "name": "카구라자카 토모미",
-      "gender": "female",
-      "cv": "카와이다 나츠미",
-      "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Tamami_Kagurazaka.jpg"
-    },
-    {
-      "name": "세키메 쿄고",
-      "gender": "male",
-      "cv": "코마다 와타루",
-      "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Kyougo_Sekime.jpg"
-    },
-    {
-      "name": "텐노지 메구미",
-      "gender": "male",
-      "cv": "미즈나카 마사아키",
-      "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Megumi_Tennouji.jpg"
-    },
-    {
-      "name": "카도마 쇼타로",
-      "gender": "male",
-      "cv": "코바야시 다이키",
-      "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Shotarou_Kadoma.jpg"
-    },
-    {
-      "name": "마키타 타카미",
-      "gender": "male",
-      "cv": "이와나카 무츠키",
-      "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Takami_Makita.jpg"
-    },
-    {
-      "name": "줄리아 맥스웰",
-      "gender": "female",
-      "cv": "나츠요시 유우코",
-      "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Julia_Maxwell.jpg"
-    },
-    {
-      "name": "히메지마 마사오",
-      "gender": "male",
-      "cv": "코야스 타케히토",
-      "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Masao_Himejima.jpg"
-    },
-    {
-      "name": "타나베 카나코",
-      "gender": "female",
-      "cv": "나카하라 마이",
-      "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Kanako_Tanabe.jpg"
-    },
-    {
-      "name": "키타하나다 타케시",
-      "gender": "male",
-      "cv": "마츠오카 요헤이",
-      "img": "image/charimg/2026/Q1/Hanazakari_no_Kimitachi_e/Takeshi_Kitahanada.jpg"
-    }
-  ]
-},
-{
-  "id": 60810,
-  "characters": [
-    {
-      "name": "쿠논 그리온",
-      "gender": "male",
-      "cv": "하야미 사오리",
-      "img": "image/charimg/2026/Q1/Majutsushi_Kunon_wa_Mieteiru/Kunon_Glion.jpg"
-    },
-    {
-      "name": "이코 라운드",
-      "gender": "female",
-      "cv": "우치다 마아야",
-      "img": "image/charimg/2026/Q1/Majutsushi_Kunon_wa_Mieteiru/Iko_Round.jpg"
-    },
-    {
-      "name": "미리카 휴그리아",
-      "gender": "female",
-      "cv": "키토 아카리",
-      "img": "image/charimg/2026/Q1/Majutsushi_Kunon_wa_Mieteiru/Mirika_Huglia.jpg"
-    },
-    {
-      "name": "제니에 코스",
-      "gender": "female",
-      "cv": "야마구치 리카코",
-      "img": "image/charimg/2026/Q1/Majutsushi_Kunon_wa_Mieteiru/Jenie_Kors.jpg"
-    },
-    {
-      "name": "제온리 핀롤",
-      "gender": "male",
-      "cv": "시마자키 노부나가",
-      "img": "image/charimg/2026/Q1/Majutsushi_Kunon_wa_Mieteiru/Zeonly_Finroll.jpg"
-    },
-    {
-      "name": "カシス・ホーク",
-      "gender": "female",
-      "cv": "아이자와 사야",
-      "img": "image/charimg/2026/Q1/Majutsushi_Kunon_wa_Mieteiru/Cassis_Hawk.jpg"
-    },
-    {
-      "name": "아손 그리온",
-      "gender": "male",
-      "cv": "미야모토 미츠루",
-      "img": "image/charimg/2026/Q1/Majutsushi_Kunon_wa_Mieteiru/Arson_Glion.jpg"
-    }
-  ]
-},
-{
-  "id": 61128,
-  "characters": [
-    {
-      "name": "오룬 두라",
-      "gender": "male",
-      "cv": "오오츠카 타케오",
-      "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Orhun_Dura.jpg"
-    },
-    {
-      "name": "소피아 클로델",
-      "gender": "female",
-      "cv": "타치바나 히나",
-      "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Sophia_Clodel.jpg"
-    },
-    {
-      "name": "셀마 클로델",
-      "gender": "female",
-      "cv": "오오니시 사오리",
-      "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Selma_Clodel.jpg"
-    },
-    {
-      "name": "로간 헤이워드",
-      "gender": "male",
-      "cv": "타이치 요우",
-      "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Logan_Hayward.jpg"
-    },
-    {
-      "name": "캐롤라인 잉그롯",
-      "gender": "female",
-      "cv": "이와미 마나카",
-      "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Caroline_Inglaud.jpg"
-    },
-    {
-      "name": "올리버 카디프",
-      "gender": "male",
-      "cv": "나카지마 요시키",
-      "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Oliver_Cardiff.jpg"
-    },
-    {
-      "name": "루나 프록하트",
-      "gender": "female",
-      "cv": "타자와 마스미",
-      "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Luna_Flockhart.jpg"
-    },
-    {
-      "name": "아넬리 와일즈",
-      "gender": "female",
-      "cv": "와타베 사유미",
-      "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Annery_Wiles.jpg"
-    },
-    {
-      "name": "데릭 모즐리",
-      "gender": "male",
-      "cv": "본코바라 코우",
-      "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Derrick_Mosely.jpg"
-    },
-    {
-      "name": "필리 카펜터",
-      "gender": "female",
-      "cv": "오오쿠보 루미",
-      "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Filly_Carpenter.jpg"
-    },
-    {
-      "name": "アラン",
-      "gender": "male",
-      "cv": "후지요시 코지",
-      "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Aran.jpg"
-    },
-    {
-      "name": "레인 허그웰",
-      "gender": "female",
-      "cv": "후카가와 세리아",
-      "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Rain_Hagwell.jpg"
-    },
-    {
-      "name": "루크레시아 오티스",
-      "gender": "female",
-      "cv": "오오쿠라 츠무기",
-      "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Lucrecia_Otis.jpg"
-    },
-    {
-      "name": "윌크스 세버리",
-      "gender": "male",
-      "cv": "하마 켄토",
-      "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Wilkes_Severley.jpg"
-    },
-    {
-      "name": "시온 나스터티움",
-      "gender": "female",
-      "cv": "후지타 아카네",
-      "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Shion_Nasturtium.jpg"
-    },
-    {
-      "name": "카라",
-      "gender": "female",
-      "cv": "카와무라 우미노",
-      "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Carla.jpg"
-    },
-    {
-      "name": "에스테라",
-      "gender": "female",
-      "cv": "유우키 카나",
-      "img": "image/charimg/2026/Q1/Yuusha_Party_wo_Oidasareta_Kiyou_Binbou/Estella.jpg"
-    }
-  ]
-},
-{
-  "id": 62000,
-  "characters": [
-    {
-      "name": "티아로즈",
-      "gender": "female",
-      "cv": "후치가미 마이",
-      "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Tiararose_Lapis_Clementille.jpg"
-    },
-    {
-      "name": "아쿠아스티드",
-      "gender": "male",
-      "cv": "우메하라 유이치로",
-      "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Aquasteed_Marineforest.jpg"
-    },
-    {
-      "name": "하르트나이츠",
-      "gender": "male",
-      "cv": "사토 타쿠야",
-      "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Hartknights_Lapis-Lazuli_Lacmouth.jpg"
-    },
-    {
-      "name": "아카리",
-      "gender": "female",
-      "cv": "하나모리 유미리",
-      "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Akari.jpg"
-    },
-    {
-      "name": "마리에타",
-      "gender": "female",
-      "cv": "토오노 히카루",
-      "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Marietta.jpg"
-    },
-    {
-      "name": "タルモ",
-      "gender": "male",
-      "cv": "코마츠 쇼헤이",
-      "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Tarmo.jpg"
-    },
-    {
-      "name": "필리네 산피스트",
-      "gender": "female",
-      "cv": "타카하시 미나미",
-      "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Philine_Sunfist.jpg"
-    },
-    {
-      "name": "국왕",
-      "gender": "male",
-      "cv": "미키 신이치로",
-      "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Kokou.jpg"
-    },
-    {
-      "name": "엘리엇",
-      "gender": "male",
-      "cv": "카리노 쇼",
-      "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Elliott.jpg"
-    },
-    {
-      "name": "플루아네",
-      "gender": "female",
-      "cv": "나카이 미코토",
-      "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Fleuriane.jpg"
-    },
-    {
-      "name": "펄",
-      "gender": "female",
-      "cv": "후리하타 아이",
-      "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Pearl.jpg"
-    },
-    {
-      "name": "슈나우스 라피스 클라멘티르",
-      "gender": "male",
-      "cv": "카네미츠 노부아키",
-      "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Schnauss_Lapis_Clementille.jpg"
-    },
-    {
-      "name": "크레일",
-      "gender": "male",
-      "cv": "미도리카와 히카루",
-      "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Crail.jpg"
-    },
-    {
-      "name": "ソティリス・マリンフォレスト",
-      "gender": "male",
-      "cv": "한다 유스케",
-      "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Sotiris_Marineforest.jpg"
-    },
-    {
-      "name": "キース",
-      "gender": "male",
-      "cv": "스와베 준이치",
-      "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Keith.jpg"
-    },
-    {
-      "name": "일티나 라피스 클라멘티르",
-      "gender": "female",
-      "cv": "시마다 아키",
-      "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Iltiana_Lapis_Clementille.jpg"
-    },
-    {
-      "name": "아이실라 펄랜드",
-      "gender": "female",
-      "cv": "야마다 마리나",
-      "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Icilla_Pearllant.jpg"
-    },
-    {
-      "name": "ラヴィーナ・マリンフォレスト",
-      "gender": "female",
-      "cv": "니시다 노조미",
-      "img": "image/charimg/2026/Q1/Akuyaku_Reijou_wa_Ringoku_no_Outaishi_ni_Dekiai_Sareru/Lavinia_Marineforest.jpg"
-    }
-  ]
-},
-{
-  "id": 58788,
-  "characters": [
-    {
-      "name": "코다이 마키오",
-      "gender": "female",
-      "cv": "사와시로 미유키",
-      "img": "image/charimg/2026/Q1/Ikoku_Nikki/Makio_Koudai.jpg"
-    },
-    {
-      "name": "타쿠미 아사",
-      "gender": "female",
-      "cv": "모리 후코",
-      "img": "image/charimg/2026/Q1/Ikoku_Nikki/Asa_Takumi.jpg"
-    },
-    {
-      "name": "카사마치 신고",
-      "gender": "male",
-      "cv": "스와베 준이치",
-      "img": "image/charimg/2026/Q1/Ikoku_Nikki/Shingo_Kasamachi.jpg"
-    },
-    {
-      "name": "나라 에미리",
-      "gender": "female",
-      "cv": "모로호시 스미레",
-      "img": "image/charimg/2026/Q1/Ikoku_Nikki/Emiri_Nara.jpg"
-    },
-    {
-      "name": "다이고 나나",
-      "gender": "female",
-      "cv": "마츠이 에리코",
-      "img": "image/charimg/2026/Q1/Ikoku_Nikki/Nana_Daigo.jpg"
-    },
-    {
-      "name": "토노 카즈나리",
-      "gender": "male",
-      "cv": "콘도 타카시",
-      "img": "image/charimg/2026/Q1/Ikoku_Nikki/Kazunari_Touno.jpg"
-    },
-    {
-      "name": "楢美知子",
-      "gender": "female",
-      "cv": "소노자키 미에",
-      "img": "image/charimg/2026/Q1/Ikoku_Nikki/Michiko_Nara.jpg"
-    },
-    {
-      "name": "코다이 미노리",
-      "gender": "female",
-      "cv": "오오하라 사야카",
-      "img": "image/charimg/2026/Q1/Ikoku_Nikki/Minori_Koudai.jpg"
-    },
-    {
-      "name": "田汲はじめ",
-      "gender": "male",
-      "cv": "요시노 타카히로",
-      "img": "image/charimg/2026/Q1/Ikoku_Nikki/Hajime_Takumi.jpg"
-    },
-    {
-      "name": "高代京子",
-      "gender": "female",
-      "cv": "아사노 마유미",
-      "img": "image/charimg/2026/Q1/Ikoku_Nikki/Kyouko_Koudai.jpg"
-    },
-    {
-      "name": "코토코",
-      "gender": "female",
-      "cv": "카네모토 히사코",
-      "img": "image/charimg/2026/Q1/Ikoku_Nikki/Kotoko.jpg"
-    },
-    {
-      "name": "もつ",
-      "gender": "female",
-      "cv": "코바야시 사나에",
-      "img": "image/charimg/2026/Q1/Ikoku_Nikki/Motsu.jpg"
-    },
-    {
-      "name": "樹乃イッキ",
-      "gender": "unknown",
-      "cv": "쿠지라",
-      "img": "image/charimg/2026/Q1/Ikoku_Nikki/Ikki_Juno.jpg"
-    },
-    {
-      "name": "えみりの父",
-      "gender": "male",
-      "cv": "키야스 코헤이",
-      "img": "image/charimg/2026/Q1/Ikoku_Nikki/Emiri_no_Chichi.jpg"
-    },
-    {
-      "name": "しょうこ",
-      "gender": "female",
-      "cv": "하나자와 카나",
-      "img": "image/charimg/2026/Q1/Ikoku_Nikki/Shouko.jpg"
-    },
-    {
-      "name": "모리모토 치요",
-      "gender": "female",
-      "cv": "아오키 루리코",
-      "img": "image/charimg/2026/Q1/Ikoku_Nikki/Chiyo_Morimoto.jpg"
-    },
-    {
-      "name": "東郷優斗",
-      "gender": "male",
-      "cv": "와타누키 류노스케",
-      "img": "image/charimg/2026/Q1/Ikoku_Nikki/Yuuto_Tougou.jpg"
-    },
-    {
-      "name": "칸다 유우미",
-      "gender": "female",
-      "cv": "코바시 사토미",
-      "img": "image/charimg/2026/Q1/Ikoku_Nikki/Yumi_Kanda.jpg"
-    },
-    {
-      "name": "소네 아스카",
-      "gender": "female",
-      "cv": "카미죠 치히로",
-      "img": "image/charimg/2026/Q1/Ikoku_Nikki/Asuka_Sone.jpg"
-    },
-    {
-      "name": "요시무라",
-      "gender": "male",
-      "cv": "미츠토미 타카오",
-      "img": "image/charimg/2026/Q1/Ikoku_Nikki/Yoshimura.jpg"
-    },
-    {
-      "name": "篤彦",
-      "gender": "male",
-      "cv": "미야세 나오야",
-      "img": "image/charimg/2026/Q1/Ikoku_Nikki/Tokuhiko.jpg"
-    },
-    {
-      "name": "服部",
-      "gender": "male",
-      "cv": "키쿠치 타케루",
-      "img": "image/charimg/2026/Q1/Ikoku_Nikki/Hattori.jpg"
-    },
-    {
-      "name": "もっち",
-      "gender": "female",
-      "cv": "사에키 이오리",
-      "img": "image/charimg/2026/Q1/Ikoku_Nikki/Mocchi.jpg"
-    },
-    {
-      "name": "森",
-      "gender": "female",
-      "cv": "키우치 유카코",
-      "img": "image/charimg/2026/Q1/Ikoku_Nikki/Mori.jpg"
-    },
-    {
-      "name": "あやか",
-      "gender": "female",
-      "cv": "아시다 모에나",
-      "img": "image/charimg/2026/Q1/Ikoku_Nikki/Ayaka.jpg"
-    }
-  ]
-},
-{
-  "id": 61084,
-  "characters": [
-    {
-      "name": "마츠나가 켄고",
-      "gender": "male",
-      "cv": "우메하라 유이치로",
-      "img": "image/charimg/2026/Q1/Hikuidori/Gengo_Matsunaga.jpg"
-    },
-    {
-      "name": "카지 세이쥬로",
-      "gender": "male",
-      "cv": "오노 켄쇼",
-      "img": "image/charimg/2026/Q1/Hikuidori/Seijurou_Kaji.jpg"
-    },
-    {
-      "name": "토리고에 신노스케",
-      "gender": "male",
-      "cv": "우메다 슈이치로",
-      "img": "image/charimg/2026/Q1/Hikuidori/Shinnosuke_Torigoe.jpg"
-    },
-    {
-      "name": "토라지로",
-      "gender": "male",
-      "cv": "키무라 스바루",
-      "img": "image/charimg/2026/Q1/Hikuidori/Torajirou.jpg"
-    },
-    {
-      "name": "히코야",
-      "gender": "male",
-      "cv": "시마자키 노부나가",
-      "img": "image/charimg/2026/Q1/Hikuidori/Hikoya.jpg"
-    },
-    {
-      "name": "렌지",
-      "gender": "male",
-      "cv": "타쿠미 야스아키",
-      "img": "image/charimg/2026/Q1/Hikuidori/Renji.jpg"
-    },
-    {
-      "name": "오오토 칸쿠로",
-      "gender": "male",
-      "cv": "스와베 준이치",
-      "img": "image/charimg/2026/Q1/Hikuidori/Kankurou_Ooto.jpg"
-    },
-    {
-      "name": "킨고로",
-      "gender": "male",
-      "cv": "츠지 신파치",
-      "img": "image/charimg/2026/Q1/Hikuidori/Kingorou.jpg"
-    },
-    {
-      "name": "오나츠",
-      "gender": "female",
-      "cv": "호란 치아키",
-      "img": "image/charimg/2026/Q1/Hikuidori/Onatsu.jpg"
-    },
-    {
-      "name": "토리고에 아키요",
-      "gender": "female",
-      "cv": "히사카와 아야",
-      "img": "image/charimg/2026/Q1/Hikuidori/Akiyo.jpg"
-    },
-    {
-      "name": "다테가세키 모리에몬",
-      "gender": "male",
-      "cv": "오가미 신노스케",
-      "img": "image/charimg/2026/Q1/Hikuidori/Moriemon_Dategasaki.jpg"
-    },
-    {
-      "name": "오스즈",
-      "gender": "female",
-      "cv": "이치노세 카나",
-      "img": "image/charimg/2026/Q1/Hikuidori/Osuzu.jpg"
-    },
-    {
-      "name": "진스케",
-      "gender": "male",
-      "cv": "이토 켄토",
-      "img": "image/charimg/2026/Q1/Hikuidori/Jinsuke.jpg"
-    },
-    {
-      "name": "하세가와 헤이조 노부오",
-      "gender": "male",
-      "cv": "코무라 테츠오",
-      "img": "image/charimg/2026/Q1/Hikuidori/Heizou_Hasegawa.jpg"
-    },
-    {
-      "name": "신죠 로쿠에몬",
-      "gender": "male",
-      "cv": "우치다 나오야",
-      "img": "image/charimg/2026/Q1/Hikuidori/Rokuemon_Houjou.jpg"
-    },
-    {
-      "name": "토고로",
-      "gender": "male",
-      "cv": "미키 신이치로",
-      "img": "image/charimg/2026/Q1/Hikuidori/Tougorou.jpg"
-    },
-    {
-      "name": "오리시모 사몬",
-      "gender": "male",
-      "cv": "유사 코지",
-      "img": "image/charimg/2026/Q1/Hikuidori/Samon_Orishimo.jpg"
-    },
-    {
-      "name": "마츠나가 미유키",
-      "gender": "female",
-      "cv": "미요시 아야카",
-      "img": "image/charimg/2026/Q1/Hikuidori/Miyuki.jpg"
-    }
-  ]
-},
-{
-    "id": 60602,
-    "characters": [
-      {
-        "name": "카나타 리빙턴",
-        "gender": "male",
-        "cv": "우치다 유우마",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Kanata_Rivington.jpg"
-      },
-      {
-        "name": "사이온지 렌",
-        "gender": "female",
-        "cv": "사쿠라 아야네",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Ren_Saionji.jpg"
-      },
-      {
-        "name": "오가타",
-        "gender": "male",
-        "cv": "하타나카 타스쿠",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Ogata.jpg"
-      },
-      {
-        "name": "미하엘 베켄바우어",
-        "gender": "male",
-        "cv": "카미야 히로시",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Michael_Beckenbauer.jpg"
-      },
-      {
-        "name": "모로보시 세나",
-        "gender": "male",
-        "cv": "야시로 타쿠",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Sena_Moroboshi.jpg"
-      },
-      {
-        "name": "사와타리 코우키",
-        "gender": "male",
-        "cv": "오오사카 료타",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Kouki_Sawatari.jpg"
-      },
-      {
-        "name": "타나카 요우지",
-        "gender": "male",
-        "cv": "코베 타츠키",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Youji_Tanaka.jpg"
-      },
-      {
-        "name": "에밀 한니넨",
-        "gender": "male",
-        "cv": "미야케 켄타",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Emile_Hänninen.jpg"
-      },
-      {
-        "name": "죠유 후미히로",
-        "gender": "male",
-        "cv": "호소이 오사무",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Hiroshi_Fumihiro.jpg"
-      },
-      {
-        "name": "오쿠야마 히로야",
-        "gender": "unknown",
-        "cv": "사카구치 슈헤이",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Hiroya_Okuyama.jpg"
-      },
-      {
-        "name": "아이바 슌",
-        "gender": "male",
-        "cv": "오노 다이스케",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Shun_Aiba.jpg"
-      },
-      {
-        "name": "타카하시 케이스케",
-        "gender": "male",
-        "cv": "세키 토모카즈",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Keisuke_Takahashi.jpg"
-      },
-      {
-        "name": "야나기다 타쿠야",
-        "gender": "male",
-        "cv": "사카타 쇼고",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Takuya_Yanagida.jpg"
-      },
-      {
-        "name": "오오이시 다이고",
-        "gender": "male",
-        "cv": "나미카와 다이스케",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Daigo_Ooishi.jpg"
-      },
-      {
-        "name": "코가시와 카이",
-        "gender": "unknown",
-        "cv": "칸나 노부토시",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Kai_Kogashiwa.jpg"
-      },
-      {
-        "name": "잭슨 테일러",
-        "gender": "male",
-        "cv": "나카무라 유이치",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Jackson_Taylor.jpg"
-      },
-      {
-        "name": "아카바 카이토",
-        "gender": "male",
-        "cv": "스와베 준이치",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Kaito_Akabane.jpg"
-      },
-      {
-        "name": "켄지",
-        "gender": "unknown",
-        "cv": "타카기 와타루",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Kenji.jpg"
-      },
-      {
-        "name": "마에조노 카즈히로",
-        "gender": "male",
-        "cv": "미야조노 타쿠무",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Kazuhiro_Maezono.jpg"
-      },
-      {
-        "name": "이시가미 후진",
-        "gender": "male",
-        "cv": "야스모토 히로키",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Fuujin_Ishigami.jpg"
-      },
-      {
-        "name": "사토 마미",
-        "gender": "female",
-        "cv": "하야시 코코",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Mami_Satou.jpg"
-      },
-      {
-        "name": "오오타니 요스케",
-        "gender": "male",
-        "cv": "이시카와 카이토",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Yousuke_Ootani.jpg"
-      },
-      {
-        "name": "야시오 카케루",
-        "gender": "male",
-        "cv": "타나베 코스케",
-        "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Kakeru_Yashio.jpg"
-      }
-    ]
-},
-{
-  "id": 55825,
-  "characters": [
-    {
-      "name": "가비마루",
-      "gender": "male",
-      "cv": "코바야시 치아키",
-      "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Gabimaru.jpg"
-    },
-    {
-      "name": "야마다 아사에몬 사기리",
-      "gender": "female",
-      "cv": "하나모리 유미리",
-      "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Sagiri.jpg"
-    },
-    {
-      "name": "아자 초베",
-      "gender": "male",
-      "cv": "키무라 료헤이",
-      "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Choubei_Aza.jpg"
-    },
-    {
-      "name": "토우마",
-      "gender": "male",
-      "cv": "오노 켄쇼",
-      "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Touma.jpg"
-    },
-    {
-      "name": "유즈리하",
-      "gender": "female",
-      "cv": "타카하시 리에",
-      "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Yuzuriha.jpg"
-    },
-    {
-      "name": "시온",
-      "gender": "male",
-      "cv": "코바야시 치카히로",
-      "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Shion.jpg"
-    },
-    {
-      "name": "누루가이",
-      "gender": "female",
-      "cv": "코이치 마코토",
-      "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Nurugai.jpg"
-    },
-    {
-      "name": "타미야 간테츠사이",
-      "gender": "male",
-      "cv": "이나다 테츠",
-      "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Gantetsusai_Tamiya.jpg"
-    },
-    {
-      "name": "후치",
-      "gender": "male",
-      "cv": "이치카와 아오이",
-      "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Fuchi.jpg"
-    },
-    {
-      "name": "에이젠",
-      "gender": "male",
-      "cv": "후루카와 마코토",
-      "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Eizen.jpg"
-    },
-    {
-      "name": "슈겐",
-      "gender": "male",
-      "cv": "스즈키 료타",
-      "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Shugen.jpg"
-    },
-    {
-      "name": "짓카",
-      "gender": "male",
-      "cv": "유사 코지",
-      "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Jikka.jpg"
-    },
-    {
-      "name": "메이",
-      "gender": "female",
-      "cv": "코하라 코노미",
-      "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Mei.jpg"
-    },
-    {
-      "name": "텐자",
-      "gender": "male",
-      "cv": "코바야시 유스케",
-      "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Tenza.jpg"
-    },
-    {
-      "name": "센타",
-      "gender": "male",
-      "cv": "야마시타 다이키",
-      "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Senta.jpg"
-    },
-    {
-      "name": "이스즈",
-      "gender": "female",
-      "cv": "오오하라 사야카",
-      "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Isuzu.jpg"
-    },
-    {
-      "name": "키요마루",
-      "gender": "male",
-      "cv": "우치다 마아야",
-      "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Kiyomaru.jpg"
-    },
-    {
-      "name": "리엔",
-      "gender": "female; male/female (through her puppets)",
-      "cv": "카이다 유코",
-      "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Rien.jpg"
-    },
-    {
-      "name": "結",
-      "gender": "female",
-      "cv": "노토 마미코",
-      "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Yui.jpg"
-    },
-    {
-      "name": "주화",
-      "gender": "male/female (prefer the male gender)",
-      "cv": "스와베 준이치",
-      "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Ju_Fa.jpg"
-    },
-    {
-      "name": "란",
-      "gender": "male/female (prefers the male gender)",
-      "cv": "카이다 유코",
-      "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Ran.jpg"
-    },
-    {
-      "name": "주진",
-      "gender": "male/female (switches constantly)",
-      "cv": "스와베 준이치",
-      "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Zhu_Jin.jpg"
-    },
-    {
-      "name": "타오화",
-      "gender": "female/male (prefers the female gender)",
-      "cv": "카이다 유코",
-      "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Tao_Fa.jpg"
-    },
-    {
-      "name": "구이화",
-      "gender": "male/female",
-      "cv": "스와베 준이치",
-      "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Gui_Fa.jpg"
-    },
-    {
-      "name": "시쟈",
-      "gender": "unknown",
-      "cv": "무라세 아유무",
-      "img": "image/charimg/2026/Q1/Jigokuraku_2nd_Season/Shija.jpg"
-    }
-  ]
-},
-{
-  "id": 62543,
-  "characters": [
-    {
-      "name": "오우즈카 마이",
-      "gender": "female",
-      "cv": "오오니시 사오리",
-      "img": "image/charimg/2026/Q1/Watashi_ga_Koibito_ni_Nareru_Wake_Nai_jan,_Muri_Muri!_(※Muri_ja_Nakatta!)_Next_Shine!/Mai_Ouzuka.jpg"
-    },
-    {
-      "name": "아마오리 레나코",
-      "gender": "female",
-      "cv": "나카무라 칸나",
-      "img": "image/charimg/2026/Q1/Watashi_ga_Koibito_ni_Nareru_Wake_Nai_jan,_Muri_Muri!_(※Muri_ja_Nakatta!)_Next_Shine!/Renako_Amaori.jpg"
-    },
-    {
-      "name": "코토 사츠키",
-      "gender": "female",
-      "cv": "이치노세 카나",
-      "img": "image/charimg/2026/Q1/Watashi_ga_Koibito_ni_Nareru_Wake_Nai_jan,_Muri_Muri!_(※Muri_ja_Nakatta!)_Next_Shine!/Satsuki_Koto.jpg"
-    },
-    {
-      "name": "세나 아지사이",
-      "gender": "female",
-      "cv": "안자이 유카리",
-      "img": "image/charimg/2026/Q1/Watashi_ga_Koibito_ni_Nareru_Wake_Nai_jan,_Muri_Muri!_(※Muri_ja_Nakatta!)_Next_Shine!/Ajisai_Sena.jpg"
-    },
-    {
-      "name": "코야나기 카호",
-      "gender": "female",
-      "cv": "타나카 타카코",
-      "img": "image/charimg/2026/Q1/Watashi_ga_Koibito_ni_Nareru_Wake_Nai_jan,_Muri_Muri!_(※Muri_ja_Nakatta!)_Next_Shine!/Kaho_Koyanagi.jpg"
-    },
-    {
-      "name": "아마오리 하루나",
-      "gender": "female",
-      "cv": "사가라 마유",
-      "img": "image/charimg/2026/Q1/Watashi_ga_Koibito_ni_Nareru_Wake_Nai_jan,_Muri_Muri!_(※Muri_ja_Nakatta!)_Next_Shine!/Haruna_Amaori.jpg"
-    }
-  ]
-},
-{
-  "id": 63096,
-  "characters": [
-    {
-      "name": "아리스가와 렌",
-      "gender": "female",
-      "cv": "아마이 미루쿠",
-      "img": "image/charimg/2026/Q1/Arisugawa_Ren_tte_Honto_wa_Onna_Nanda_yo_ne/Ren_Arisugawa.jpg"
-    },
-    {
-      "name": "요시오카 사츠키",
-      "gender": "female",
-      "cv": "나츠키 칸나",
-      "img": "image/charimg/2026/Q1/Arisugawa_Ren_tte_Honto_wa_Onna_Nanda_yo_ne/Satsuki_Yoshioka.jpg"
-    },
-    {
-      "name": "히이라기 모모카",
-      "gender": "unknown",
-      "cv": "칸자키 노에루",
-      "img": "image/charimg/2026/Q1/Arisugawa_Ren_tte_Honto_wa_Onna_Nanda_yo_ne/Momoka_Hiiragi.jpg"
-    },
-    {
-      "name": "미야시타 하루나",
-      "gender": "female",
-      "cv": "하나카게 호타루",
-      "img": "image/charimg/2026/Q1/Arisugawa_Ren_tte_Honto_wa_Onna_Nanda_yo_ne/Haruna_Miyashita.jpg"
-    },
-    {
-      "name": "스키사키 히나",
-      "gender": "female",
-      "cv": "아리아케 콘부",
-      "img": "image/charimg/2026/Q1/Arisugawa_Ren_tte_Honto_wa_Onna_Nanda_yo_ne/Hina_Sugisaki.jpg"
-    }
-  ]
-},
-{
-  "id": 62897,
-  "characters": [
-    {
-      "name": "타카무라 아이카",
-      "gender": "unknown",
-      "cv": "유리모토 하나",
-      "img": "image/charimg/2026/Q1/Ichigo_Aika_Zatsu_de_Namaiki_na_Imouto_to_Warikirenai_Ani/Aika_Takamura.jpg"
-    },
-    {
-      "name": "타카무라 코타",
-      "gender": "male",
-      "cv": "이가라시 유타",
-      "img": "image/charimg/2026/Q1/Ichigo_Aika_Zatsu_de_Namaiki_na_Imouto_to_Warikirenai_Ani/Kouta_Takamura.jpg"
-    },
-    {
-      "name": "高村美咲",
-      "gender": "female",
-      "cv": "미야케 마리에",
-      "img": "image/charimg/2026/Q1/Ichigo_Aika_Zatsu_de_Namaiki_na_Imouto_to_Warikirenai_Ani/Misaki_Takamura.jpg"
-    }
-  ]
-},
-{
-  "id": 61969,
-  "characters": [
-    {
-      "name": "아르바",
-      "gender": "unknown",
-      "cv": "무라세 아유무",
-      "img": "image/charimg/2026/Q1/Saioshi_no_Gikei_Mederu_Tame,_Nagaikishimasu!/Alba.jpg"
-    },
-    {
-      "name": "오르시스",
-      "gender": "unknown",
-      "cv": "아오이 쇼타",
-      "img": "image/charimg/2026/Q1/Saioshi_no_Gikei_Mederu_Tame,_Nagaikishimasu!/Orsis.jpg"
-    },
-    {
-      "name": "하르스",
-      "gender": "male",
-      "cv": "타츠모리 레오",
-      "img": "image/charimg/2026/Q1/Saioshi_no_Gikei_Mederu_Tame,_Nagaikishimasu!/Hals.jpg"
-    },
-    {
-      "name": "플로로",
-      "gender": "unknown",
-      "cv": "토리고에 마아야",
-      "img": "image/charimg/2026/Q1/Saioshi_no_Gikei_Mederu_Tame,_Nagaikishimasu!/Floro.jpg"
-    },
-    {
-      "name": "브루노",
-      "gender": "male",
-      "cv": "히로세 유우야",
-      "img": "image/charimg/2026/Q1/Saioshi_no_Gikei_Mederu_Tame,_Nagaikishimasu!/Bruno.jpg"
-    }
-  ]
-},
+var CharacterVoiceData_2026 = [
   {
-    "id": 61694,
-    "characters": [
-      {
-        "name": "나데시코",
-        "gender": "female",
-        "cv": "하야세 마리카",
-        "img": "image/charimg/2026/Q1/Android_wa_Keiken_Ninzuu_ni_Hairimasu_ka/Nadeshiko.jpg"
-      },
-      {
-        "name": "츠다 아카네",
-        "gender": "female",
-        "cv": "시미즈 아야카",
-        "img": "image/charimg/2026/Q1/Android_wa_Keiken_Ninzuu_ni_Hairimasu_ka/Akane_Tsuda.jpg"
-      },
-      {
-        "name": "이토 씨",
-        "gender": "female",
-        "cv": "쿠리코마 코마루",
-        "img": "image/charimg/2026/Q1/Android_wa_Keiken_Ninzuu_ni_Hairimasu_ka/Itou-san.jpg"
-      }
+    "id": 95761,
+    "name": "겐다 텟쇼",
+    "cvimg": "image/cvimg/겐다_텟쇼.webp",
+    "gender": "male",
+    "characterIds": [
+      121059,
+      150499,
+      151044
     ]
   },
   {
-    "id": 60294,
-    "characters": [
-      {
-        "name": "사쿠나히메",
-        "gender": "female",
-        "cv": "오오조라 나오미",
-        "img": "image/charimg/2026/Q1/Tensui_no_Sakuna-hime_Kokorowa_Inasaku_Nisshi/Sakuna-hime.jpg"
-      },
-      {
-        "name": "코코로와히메",
-        "gender": "female",
-        "cv": "키누가와 리카",
-        "img": "image/charimg/2026/Q1/Tensui_no_Sakuna-hime_Kokorowa_Inasaku_Nisshi/Kokorowa-hime.jpg"
-      }
+    "id": 95936,
+    "name": "고다 호즈미",
+    "cvimg": "image/cvimg/고다_호즈미.webp",
+    "gender": "male",
+    "characterIds": [
+      40955,
+      376035
     ]
   },
   {
-    "id": 56906,
-    "characters": [
-      {
-        "name": "텐조 유야",
-        "gender": "male",
-        "cv": "마츠오카 요시츠구",
-        "img": "image/charimg/2026/Q1/Isekai_de_Cheat_Skill_wo_Te_ni_Shita_Ore_wa,_Genjitsu_Sekai_wo_mo_Musou_Suru_Level_Up_wa_Jinsei_wo_Kaeta/Yuuya_Tenjou.jpg"
-      },
-      {
-        "name": "호죠 카오리",
-        "gender": "female",
-        "cv": "키토 아카리",
-        "img": "image/charimg/2026/Q1/Isekai_de_Cheat_Skill_wo_Te_ni_Shita_Ore_wa,_Genjitsu_Sekai_wo_mo_Musou_Suru_Level_Up_wa_Jinsei_wo_Kaeta/Kaori_Houjou.jpg"
-      },
-      {
-        "name": "렉시아 폰 아르세리아",
-        "gender": "female",
-        "cv": "마에다 카오리",
-        "img": "image/charimg/2026/Q1/Isekai_de_Cheat_Skill_wo_Te_ni_Shita_Ore_wa,_Genjitsu_Sekai_wo_mo_Musou_Suru_Level_Up_wa_Jinsei_wo_Kaeta/Lexia_Von_Alceria.jpg"
-      }
+    "id": 249687,
+    "name": "고덴 츠바사",
+    "cvimg": "image/cvimg/고덴_츠바사.webp",
+    "gender": "unknown",
+    "characterIds": [
+      173450
     ]
   },
   {
-    "id": 63019,
-    "characters": [
-      {
-        "name": "이치조인 릴리",
-        "gender": "female",
-        "cv": "타네자키 아츠미",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Lili_Ichijoin.jpg"
-      },
-      {
-        "name": "키트 처치",
-        "gender": "male",
-        "cv": "우치야마 코우키",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Kit_Church.jpg"
-      },
-      {
-        "name": "코바야카와 신노스케",
-        "gender": "male",
-        "cv": "카지 유우키",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Shinnosuke_Kobayakawa.jpg"
-      },
-      {
-        "name": "코바야카와 사쿠라",
-        "gender": "female",
-        "cv": "키토 아카리",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Sakura_Kobayakawa.jpg"
-      },
-      {
-        "name": "도로시 브라운",
-        "gender": "female",
-        "cv": "한 메구미",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Dorothy_Brown.jpg"
-      },
-      {
-        "name": "피터 앤서니",
-        "gender": "male",
-        "cv": "사카타 쇼고",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Peter_Anthony.jpg"
-      },
-      {
-        "name": "조프리 오브라이언",
-        "gender": "male",
-        "cv": "아자카미 요헤이",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Joffrey_O'Brien.jpg"
-      },
-      {
-        "name": "캐서린 애스터",
-        "gender": "female",
-        "cv": "우에사카 스미레",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Catherine_Astor.jpg"
-      },
-      {
-        "name": "이치조인 타케",
-        "gender": "female",
-        "cv": "카이다 유코",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Take_Ichijoin.jpg"
-      },
-      {
-        "name": "이치조인 료타로",
-        "gender": "male",
-        "cv": "마츠모토 야스노리",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Ryoutarou_Ichijoin.jpg"
-      },
-      {
-        "name": "리처드 처치",
-        "gender": "male",
-        "cv": "스와베 준이치",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Richard_Church.jpg"
-      },
-      {
-        "name": "찰스 브랜트",
-        "gender": "male",
-        "cv": "오오츠카 호츄",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Charles_Brant.jpg"
-      },
-      {
-        "name": "학장",
-        "gender": "male",
-        "cv": "나카 히로시",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Gakuinchou.jpg"
-      },
-      {
-        "name": "그레이스 클라크",
-        "gender": "female",
-        "cv": "호리고메 사야",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Grace.jpg"
-      },
-      {
-        "name": "호리애나 하비",
-        "gender": "female",
-        "cv": "마츠시마 아미",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Orianna.jpg"
-      },
-      {
-        "name": "다이애나",
-        "gender": "female",
-        "cv": "쿠지라",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Diana.jpg"
-      },
-      {
-        "name": "샘",
-        "gender": "male",
-        "cv": "카타야마 코스케",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Sam.jpg"
-      },
-      {
-        "name": "스테이시 라이트",
-        "gender": "female",
-        "cv": "쿠지메 나기사",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Stacy.jpg"
-      },
-      {
-        "name": "셜리 테일러",
-        "gender": "female",
-        "cv": "코시라카와 마나",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Shirley.jpg"
-      },
-      {
-        "name": "사라 스미스",
-        "gender": "female",
-        "cv": "키도 마도카",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Sara.jpg"
-      },
-      {
-        "name": "아서 카터렛",
-        "gender": "male",
-        "cv": "무로이 카이토",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Arthur.jpg"
-      },
-      {
-        "name": "보비 로버츠",
-        "gender": "male",
-        "cv": "코구레 코세키",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Bobby.jpg"
-      },
-      {
-        "name": "데이비드",
-        "gender": "male",
-        "cv": "나츠메 쿄헤이",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/David.jpg"
-      },
-      {
-        "name": "에디",
-        "gender": "male",
-        "cv": "시바 유우마",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Eddie.jpg"
-      },
-      {
-        "name": "프레이야",
-        "gender": "unknown",
-        "cv": "타케우치 에미코",
-        "img": "image/charimg/2026/Q1/Prism_Rondo/Freya.jpg"
-      }
+    "id": 191932,
+    "name": "고마즈루 아야",
+    "cvimg": "image/cvimg/고마즈루_아야.webp",
+    "gender": "unknown",
+    "characterIds": [
+      393592
     ]
   },
   {
-    "id": 62896,
-    "characters": [
-      {
-        "name": "카구야",
-        "gender": "female",
-        "cv": "나츠요시 유우코",
-        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Kaguya.jpg"
-      },
-      {
-        "name": "사카요리 이로하",
-        "gender": "female",
-        "cv": "나가세 안나",
-        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Iroha_Sakayori.jpg"
-      },
-      {
-        "name": "루나미 야치요",
-        "gender": "female",
-        "cv": "하야미 사오리",
-        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Yachiyo_Runami.jpg"
-      },
-      {
-        "name": "FUSHI",
-        "gender": "unknown",
-        "cv": "쿠기미야 리에",
-        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/FUSHI.jpg"
-      },
-      {
-        "name": "이누DOGE",
-        "gender": "unknown",
-        "cv": "쇼지 사라사",
-        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Inudoge.jpg"
-      },
-      {
-        "name": "미카도 아키라",
-        "gender": "male",
-        "cv": "이리노 미유",
-        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Akira_Mikado.jpg"
-      },
-      {
-        "name": "고마자와 라이",
-        "gender": "male",
-        "cv": "우치다 유우마",
-        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Rai_Komazawa.jpg"
-      },
-      {
-        "name": "고마자와 노이",
-        "gender": "male",
-        "cv": "마츠오카 요시츠구",
-        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Noi_Komazawa.jpg"
-      },
-      {
-        "name": "이사야마 마미",
-        "gender": "female",
-        "cv": "코하라 코노미",
-        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Mami_Isayama.jpg"
-      },
-      {
-        "name": "아야츠무기 로카",
-        "gender": "female",
-        "cv": "아오야마 요시노",
-        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Roka_Ayatsumugi.jpg"
-      },
-      {
-        "name": "오코테루 고토",
-        "gender": "male",
-        "cv": "하나에 나츠키",
-        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Koto_Okkoteru.jpg"
-      },
-      {
-        "name": "충견 오타코",
-        "gender": "female",
-        "cv": "파이루즈 아이",
-        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Otakou_Chuuken.jpg"
-      },
-      {
-        "name": "사카요리 모미지",
-        "gender": "female",
-        "cv": "사카모토 마아야",
-        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Momiji_Sakayori.jpg"
-      },
-      {
-        "name": "사카요리 토모히사",
-        "gender": "male",
-        "cv": "스즈무라 켄이치",
-        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Tomohito_Sakayori.jpg"
-      },
-      {
-        "name": "담임선생님",
-        "gender": "male",
-        "cv": "코바야시 치카히로",
-        "img": "image/charimg/2026/Q1/Chou_Kaguya-hime!/Tannin_no_Sensei.jpg"
-      }
+    "id": 172194,
+    "name": "고토 코스케",
+    "cvimg": "image/cvimg/고토_코스케.webp",
+    "gender": "unknown",
+    "characterIds": [
+      2676,
+      400429
     ]
   },
   {
-    "id": 61119,
-    "characters": [
-      {
-        "name": "키리후다 윈",
-        "gender": "male",
-        "cv": "우자와 쇼타로",
-        "img": "image/charimg/2026/Q1/Duel_Masters_LOST_Boukyaku_no_Taiyou/Win_Kirifuda.jpg"
-      },
-      {
-        "name": "니이카",
-        "gender": "female",
-        "cv": "히시카와 하나",
-        "img": "image/charimg/2026/Q1/Duel_Masters_LOST_Boukyaku_no_Taiyou/Niika_Katori.jpg"
-      },
-      {
-        "name": "쟈신",
-        "gender": "male",
-        "cv": "하타노 와타루",
-        "img": "image/charimg/2026/Q1/Duel_Masters_LOST_Boukyaku_no_Taiyou/Jashin-kun.jpg"
-      },
-      {
-        "name": "코쿠죠 쿄시로",
-        "gender": "male",
-        "cv": "키시오 다이스케",
-        "img": "image/charimg/2026/Q1/Duel_Masters_LOST_Boukyaku_no_Taiyou/Kyoushirou_Kokujou.jpg"
-      }
+    "id": 95330,
+    "name": "긴가 반조",
+    "cvimg": "image/cvimg/긴가_반조.webp",
+    "gender": "male",
+    "characterIds": [
+      380115
     ]
   },
   {
-    "id": 58573,
-    "characters": [
-      {
-        "name": "한마 바키",
-        "gender": "male",
-        "cv": "시마자키 노부나가",
-        "img": "image/charimg/2026/Q1/BAKI-DOU/Baki_Hanma.jpg"
-      },
-      {
-        "name": "미야모토 무사시",
-        "gender": "male",
-        "cv": "우치다 나오야",
-        "img": "image/charimg/2026/Q1/BAKI-DOU/Musashi_Miyamoto.jpg"
-      },
-      {
-        "name": "한마 유지로",
-        "gender": "male",
-        "cv": "오오츠카 아키오",
-        "img": "image/charimg/2026/Q1/BAKI-DOU/Yujiro_Hanma.jpg"
-      },
-      {
-        "name": "오로치 돗포",
-        "gender": "male",
-        "cv": "스고 타카유키",
-        "img": "image/charimg/2026/Q1/BAKI-DOU/Doppo_Orochi.jpg"
-      },
-      {
-        "name": "레츠 카이오",
-        "gender": "male",
-        "cv": "코야마 리키야",
-        "img": "image/charimg/2026/Q1/BAKI-DOU/Kaiou_Retsu.jpg"
-      },
-      {
-        "name": "시부카와 고키",
-        "gender": "male",
-        "cv": "시마다 빈",
-        "img": "image/charimg/2026/Q1/BAKI-DOU/Gouki_Shibukawa.jpg"
-      }
+    "id": 118923,
+    "name": "나가나와 마리아",
+    "cvimg": "image/cvimg/나가나와_마리아.webp",
+    "gender": "female",
+    "characterIds": [
+      130179,
+      173761,
+      374177,
+      382018,
+      393211,
+      398008,
+      408261
     ]
   },
-{
-  "id": 61469,
-  "characters": [
-    {
-      "name": "자이로 체펠리",
-      "gender": "male",
-      "cv": "아자카미 요헤이",
-      "img": "image/charimg/2026/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Gyro_Zeppeli.jpg"
-    },
-    {
-      "name": "죠니 죠스타",
-      "gender": "male",
-      "cv": "사카타 쇼고",
-      "img": "image/charimg/2026/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Johnny_Joestar.jpg"
-    },
-    {
-      "name": "디에고 브란도",
-      "gender": "male",
-      "cv": "이시카와 카이토",
-      "img": "image/charimg/2026/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Diego_Brando.jpg"
-    },
-    {
-      "name": "루시 스틸",
-      "gender": "female",
-      "cv": "타카하시 리에",
-      "img": "image/charimg/2026/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Lucy_Steel.jpg"
-    },
-    {
-      "name": "스티븐 스틸",
-      "gender": "male",
-      "cv": "미야케 켄타",
-      "img": "image/charimg/2026/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Steven_Steel.jpg"
-    },
-    {
-      "name": "샌드맨",
-      "gender": "male",
-      "cv": "미즈나카 마사아키",
-      "img": "image/charimg/2026/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Sandman.jpg"
-    },
-    {
-      "name": "포코로코",
-      "gender": "male",
-      "cv": "마츠다 켄이치로",
-      "img": "image/charimg/2026/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Pocoloco.jpg"
-    },
-    {
-      "name": "우루무드 압둘",
-      "gender": "unknown",
-      "cv": "미야케 켄타",
-      "img": "image/charimg/2026/Q1/JoJo_no_Kimyou_na_Bouken_Steel_Ball_Run/Urmd_Avdol.jpg"
-    }
-  ]
-},
-{
-  "id": 61114,
-  "characters": [
-    {
-      "name": "レゴシ",
-      "gender": "male",
-      "cv": "코바야시 치카히로",
-      "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Legoshi.jpg"
-    },
-    {
-      "name": "ルイ",
-      "gender": "male",
-      "cv": "오노 유우키",
-      "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Louis.jpg"
-    },
-    {
-      "name": "ハル",
-      "gender": "female",
-      "cv": "센본기 사야카",
-      "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Haru.jpg"
-    },
-    {
-      "name": "메론",
-      "gender": "male",
-      "cv": "오키노 코지",
-      "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Melon.jpg"
-    },
-    {
-      "name": "쥬노",
-      "gender": "female",
-      "cv": "타네자키 아츠미",
-      "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Juno.jpg"
-    },
-    {
-      "name": "잭",
-      "gender": "male",
-      "cv": "에노키 준야",
-      "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Jack.jpg"
-    },
-    {
-      "name": "더럼",
-      "gender": "male",
-      "cv": "코바야시 나오토",
-      "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Durham.jpg"
-    },
-    {
-      "name": "미구노",
-      "gender": "male",
-      "cv": "우치다 유마",
-      "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Miguno.jpg"
-    },
-    {
-      "name": "코로",
-      "gender": "male",
-      "cv": "오오츠카 타케오",
-      "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Collot.jpg"
-    },
-    {
-      "name": "보스",
-      "gender": "male",
-      "cv": "시모즈마 요시유키",
-      "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Voss.jpg"
-    },
-    {
-      "name": "스나가",
-      "gender": "male",
-      "cv": "무로 겐키",
-      "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Sunaga.jpg"
-    },
-    {
-      "name": "야후야",
-      "gender": "male",
-      "cv": "미키 신이치로",
-      "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Yahya.jpg"
-    },
-    {
-      "name": "고샤",
-      "gender": "unknown",
-      "cv": "치바 시게루",
-      "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Gosha.jpg"
-    },
-    {
-      "name": "세븐",
-      "gender": "female",
-      "cv": "오리카사 후미코",
-      "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Seven.jpg"
-    },
-    {
-      "name": "사구완",
-      "gender": "male",
-      "cv": "겐다 텟쇼",
-      "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Sagwan.jpg"
-    },
-    {
-      "name": "빌",
-      "gender": "male",
-      "cv": "토라시마 타카아키",
-      "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Bill.jpg"
-    },
-    {
-      "name": "에르스",
-      "gender": "unknown",
-      "cv": "와타베 사유미",
-      "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Els.jpg"
-    },
-    {
-      "name": "피나",
-      "gender": "male",
-      "cv": "카지 유우키",
-      "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Pina.jpg"
-    },
-    {
-      "name": "레아노",
-      "gender": "female",
-      "cv": "쿠와시마 호우코",
-      "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Leanno.jpg"
-    },
-    {
-      "name": "에렌",
-      "gender": "unknown",
-      "cv": "오오우치 아카네",
-      "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Ellen.jpg"
-    },
-    {
-      "name": "아오바",
-      "gender": "unknown",
-      "cv": "카네마사 이쿠토",
-      "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Aoba.jpg"
-    },
-    {
-      "name": "키비",
-      "gender": "unknown",
-      "cv": "이구치 유이치",
-      "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Kibi.jpg"
-    },
-    {
-      "name": "타오",
-      "gender": "unknown",
-      "cv": "코바야시 나오토",
-      "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Tao.jpg"
-    },
-    {
-      "name": "시장",
-      "gender": "unknown",
-      "cv": "호시노 미츠아키",
-      "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Mayor.jpg"
-    },
-    {
-      "name": "곤",
-      "gender": "male",
-      "cv": "사사 켄타",
-      "img": "image/charimg/2026/Q1/BEASTARS_FINAL_SEASON_Part_2/Gon.jpg"
-    }
-  ]
-},
-{
-  "id": 60610,
-  "characters": [
-    {
-      "name": "스칼렛",
-      "gender": "female",
-      "cv": "아시다 마나",
-      "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Scarlet.jpg"
-    },
-    {
-      "name": "히지리",
-      "gender": "male",
-      "cv": "오카다 마사키",
-      "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Hijiri.jpg"
-    },
-    {
-      "name": "로젠크란츠",
-      "gender": "male",
-      "cv": "아오키 무네타카",
-      "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Rosenkrantz.jpg"
-    },
-    {
-      "name": "폴로니어스",
-      "gender": "male",
-      "cv": "야마지 카즈히로",
-      "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Polonius.jpg"
-    },
-    {
-      "name": "암렛",
-      "gender": "male",
-      "cv": "이치무라 마사치카",
-      "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Amlet.jpg"
-    },
-    {
-      "name": "레어티즈",
-      "gender": "male",
-      "cv": "에모토 토키오",
-      "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Laerte.jpg"
-    },
-    {
-      "name": "클로디어스",
-      "gender": "male",
-      "cv": "야쿠쇼 코지",
-      "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Claudius.jpg"
-    },
-    {
-      "name": "거트루드",
-      "gender": "unknown",
-      "cv": "사이토 유키",
-      "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Gertrude.jpg"
-    },
-    {
-      "name": "코넬리우스",
-      "gender": "male",
-      "cv": "마츠시게 유타카",
-      "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Cornelius.jpg"
-    },
-    {
-      "name": "소녀",
-      "gender": "female",
-      "cv": "시로야마 노아",
-      "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Shoujo.jpg"
-    },
-    {
-      "name": "볼티먼드",
-      "gender": "male",
-      "cv": "요시다 코타로",
-      "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Voltemand.jpg"
-    },
-    {
-      "name": "노파",
-      "gender": "female",
-      "cv": "시라이시 카요코",
-      "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Rouba.jpg"
-    },
-    {
-      "name": "길든스턴",
-      "gender": "male",
-      "cv": "소메타니 쇼타",
-      "img": "image/charimg/2026/Q1/Hateshinaki_Scarlet/Guildenstern.jpg"
-    }
-  ]
-},
-{
-  "id": 59817,
-  "characters": [
-    {
-      "name": "이세리 니나",
-      "gender": "female",
-      "cv": "리나",
-      "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Nina_Iseri.jpg"
-    },
-    {
-      "name": "카와라기 모모카",
-      "gender": "female",
-      "cv": "유리",
-      "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Momoka_Kawaragi.jpg"
-    },
-    {
-      "name": "아와 스바루",
-      "gender": "female",
-      "cv": "미레이",
-      "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Subaru_Awa.jpg"
-    },
-    {
-      "name": "에비즈카 토모",
-      "gender": "female",
-      "cv": "나츠",
-      "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Tomo_Ebizuka.jpg"
-    },
-    {
-      "name": "루파",
-      "gender": "female",
-      "cv": "슈리",
-      "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Rupa.jpg"
-    },
-    {
-      "name": "히나",
-      "gender": "female",
-      "cv": "콘도 레이나",
-      "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Hina.jpg"
-    },
-    {
-      "name": "아이",
-      "gender": "female",
-      "cv": "미야시로 모모코",
-      "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Ai.jpg"
-    },
-    {
-      "name": "나나",
-      "gender": "female",
-      "cv": "마츠오카 미사토",
-      "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Nana.jpg"
-    },
-    {
-      "name": "린",
-      "gender": "female",
-      "cv": "우루시야마 유우키",
-      "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Rin.jpg"
-    },
-    {
-      "name": "쿄코",
-      "gender": "female",
-      "cv": "타카하시 리츠",
-      "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Kyouko.jpg"
-    },
-    {
-      "name": "가죽 재킷",
-      "gender": "male",
-      "cv": "후쿠니시 마사야",
-      "img": "image/charimg/2026/Q1/GIRLS_BAND_CRY_Seishun_Kyousoukyoku/Jean_Kawa.jpg"
-    }
-  ]
-},
-{
-  "id": 61558,
-  "characters": [
-    {
-      "name": "大空あかり",
-      "gender": "female",
-      "cv": "시모지 시노",
-      "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Akari_Oozora.jpg"
-    },
-    {
-      "name": "氷上スミレ",
-      "gender": "female",
-      "cv": "와쿠이 유우",
-      "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Sumire_Hikami.jpg"
-    },
-    {
-      "name": "新条ひなき",
-      "gender": "female",
-      "cv": "이시카와 유이",
-      "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Hinaki_Shinjou.jpg"
-    },
-    {
-      "name": "마나카 라라",
-      "gender": "female",
-      "cv": "아카네야 히미카",
-      "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Laala_Manaka.jpg"
-    },
-    {
-      "name": "미나미 미레이",
-      "gender": "female",
-      "cv": "세리자와 유우",
-      "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Mirei_Minami.jpg"
-    },
-    {
-      "name": "호조 소피",
-      "gender": "female",
-      "cv": "쿠보타 미유",
-      "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Sophy_Hojo.jpg"
-    },
-    {
-      "name": "쿠레바야시 쥬리",
-      "gender": "female",
-      "cv": "사이토 아야",
-      "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Juri_Kurebayashi.jpg"
-    },
-    {
-      "name": "쿠로사와 린",
-      "gender": "female",
-      "cv": "타카다 유우키",
-      "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Rin_Kurosawa.jpg"
-    },
-    {
-      "name": "아마하네 마도카",
-      "gender": "female",
-      "cv": "카와카미 치히로",
-      "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Madoka_Amahane.jpg"
-    },
-    {
-      "name": "다이치 노노",
-      "gender": "female",
-      "cv": "코이와이 코토리",
-      "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Nono_Daichi.jpg"
-    },
-    {
-      "name": "시라카바 리사",
-      "gender": "female",
-      "cv": "후쿠 사나에",
-      "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Risa_Shirakaba.jpg"
-    },
-    {
-      "name": "후지와라 미야비",
-      "gender": "female",
-      "cv": "세키네 아키라",
-      "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Miyabi_Fujiwara.jpg"
-    },
-    {
-      "name": "쿠리스 코코네",
-      "gender": "female",
-      "cv": "이토 카나에",
-      "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Kokone_Kurisu.jpg"
-    },
-    {
-      "name": "도지마 니나",
-      "gender": "female",
-      "cv": "야노 아사미",
-      "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Nina_Dojima.jpg"
-    },
-    {
-      "name": "토도 시온",
-      "gender": "female",
-      "cv": "야마키타 사키",
-      "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Sion_Toudou.jpg"
-    },
-    {
-      "name": "도로시 웨스트",
-      "gender": "female",
-      "cv": "시부야 아즈키",
-      "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Dorothy_West.jpg"
-    },
-    {
-      "name": "레오나 웨스트",
-      "gender": "male",
-      "cv": "와카이 유우키",
-      "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Reona_West.jpg"
-    },
-    {
-      "name": "쿠로스 아로마",
-      "gender": "female",
-      "cv": "마키노 유이",
-      "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Aroma_Kurosu.jpg"
-    },
-    {
-      "name": "시라타마 미캉",
-      "gender": "unknown",
-      "cv": "와타나베 유이",
-      "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Mikan_Shiratama.jpg"
-    },
-    {
-      "name": "가루루",
-      "gender": "female",
-      "cv": "사나다 아사미",
-      "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Gaaruru.jpg"
-    },
-    {
-      "name": "시쿄인 히비키",
-      "gender": "unknown",
-      "cv": "사이가 미츠키",
-      "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Hibiki_Shikyouin.jpg"
-    },
-    {
-      "name": "파루루",
-      "gender": "female",
-      "cv": "아카사키 치나츠",
-      "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Falulu.jpg"
-    },
-    {
-      "name": "미도리카제 후와리",
-      "gender": "unknown",
-      "cv": "사토 아즈사",
-      "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Fuwari_Midorikaze.jpg"
-    },
-    {
-      "name": "조니 벱",
-      "gender": "unknown",
-      "cv": "야스무라 마코토",
-      "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Johnny_Bepp.jpg"
-    },
-    {
-      "name": "미츠이시 오리히메",
-      "gender": "female",
-      "cv": "마츠타니 카야",
-      "img": "image/charimg/2026/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Orihime_Mitsuishi.jpg"
-    }
-  ]
-},
-{
-  "id": 60159,
-  "characters": [
-    {
-      "name": "유키 세츠나",
-      "gender": "female",
-      "cv": "하야시 코코",
-      "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Setsuna_Yuki.jpg"
-    },
-    {
-      "name": "미후네 시오리코",
-      "gender": "female",
-      "cv": "코이즈미 모에카",
-      "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Shioriko_Mifune.jpg"
-    },
-    {
-      "name": "미야시타 아이",
-      "gender": "female",
-      "cv": "라카미 나츠미",
-      "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Ai_Miyashita.jpg"
-    },
-    {
-      "name": "미아 테일러",
-      "gender": "female",
-      "cv": "우치다 슈우",
-      "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Mia_Taylor.jpg"
-    },
-    {
-      "name": "아사카 카린",
-      "gender": "female",
-      "cv": "쿠보타 미유",
-      "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Karin_Asaka.jpg"
-    },
-    {
-      "name": "텐노지 리나",
-      "gender": "female",
-      "cv": "타나카 치에미",
-      "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Rina_Tennouji.jpg"
-    },
-    {
-      "name": "우에하라 아유무",
-      "gender": "female",
-      "cv": "오오니시 아구리",
-      "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Ayumu_Uehara.jpg"
-    },
-    {
-      "name": "쇼우 란쥬",
-      "gender": "female",
-      "cv": "호모토 아키나",
-      "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Lanzhu_Zhong.jpg"
-    },
-    {
-      "name": "나카스 카스미",
-      "gender": "female",
-      "cv": "사가라 마유",
-      "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Kasumi_Nakasu.jpg"
-    },
-    {
-      "name": "오사카 시즈쿠",
-      "gender": "female",
-      "cv": "마에다 카오리",
-      "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Shizuku_Ousaka.jpg"
-    },
-    {
-      "name": "타카사키 유우",
-      "gender": "female",
-      "cv": "야노 히나키",
-      "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Yuu_Takasaki.jpg"
-    },
-    {
-      "name": "엠마 베르데",
-      "gender": "female",
-      "cv": "사시데 마리아",
-      "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Emma_Verde.jpg"
-    },
-    {
-      "name": "코노에 카나타",
-      "gender": "female",
-      "cv": "키토 아카리",
-      "img": "image/charimg/2026/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Kanata_Konoe.jpg"
-    }
-  ]
-},
-{
-  "id": 50159,
-  "characters": [
-    {
-      "name": "미나모토 사쿠라",
-      "gender": "female",
-      "cv": "혼도 카에데",
-      "img": "image/charimg/2026/Q1/Zombie_Land_Saga_Yume_Ginga_Paradise/Sakura_Minamoto.jpg"
-    },
-    {
-      "name": "니카이도 사키",
-      "gender": "female",
-      "cv": "타노 아사미",
-      "img": "image/charimg/2026/Q1/Zombie_Land_Saga_Yume_Ginga_Paradise/Saki_Nikaidou.jpg"
-    },
-    {
-      "name": "미즈노 아이",
-      "gender": "female",
-      "cv": "타네다 리사",
-      "img": "image/charimg/2026/Q1/Zombie_Land_Saga_Yume_Ginga_Paradise/Ai_Mizuno.jpg"
-    },
-    {
-      "name": "콘노 준코",
-      "gender": "female",
-      "cv": "카와세 마키",
-      "img": "image/charimg/2026/Q1/Zombie_Land_Saga_Yume_Ginga_Paradise/Junko_Konno.jpg"
-    },
-    {
-      "name": "야마다 타에",
-      "gender": "female",
-      "cv": "미츠이시 코토노",
-      "img": "image/charimg/2026/Q1/Zombie_Land_Saga_Yume_Ginga_Paradise/Tae_Yamada.jpg"
-    },
-    {
-      "name": "유우기리",
-      "gender": "female",
-      "cv": "키누가와 리카",
-      "img": "image/charimg/2026/Q1/Zombie_Land_Saga_Yume_Ginga_Paradise/Yuugiri.jpg"
-    },
-    {
-      "name": "호시카와 릴리",
-      "gender": "female",
-      "cv": "타나카 미나미",
-      "img": "image/charimg/2026/Q1/Zombie_Land_Saga_Yume_Ginga_Paradise/Lily_Hoshikawa.jpg"
-    },
-    {
-      "name": "아마부키 나오마사",
-      "gender": "male",
-      "cv": "오노 다이스케",
-      "img": "image/charimg/2026/Q1/Zombie_Land_Saga_Yume_Ginga_Paradise/Naomasa_Amabuki.jpg"
-    },
-    {
-      "name": "타츠미 코타로",
-      "gender": "male",
-      "cv": "미야노 마모루",
-      "img": "image/charimg/2026/Q1/Zombie_Land_Saga_Yume_Ginga_Paradise/Koutarou_Tatsumi.jpg"
-    }
-  ]
-},
-{
-  "id": 61418,
-  "characters": [
-    {
-      "name": "나오이 레이토",
-      "gender": "male",
-      "cv": "타카하시 후미야",
-      "img": "image/charimg/2026/Q1/Kusunoki_no_Bannin/Reito_Naoi.jpg"
-    },
-    {
-      "name": "야나기사와 치후네",
-      "gender": "female",
-      "cv": "아마미 유키",
-      "img": "image/charimg/2026/Q1/Kusunoki_no_Bannin/Chifune_Yanagisawa.jpg"
-    },
-    {
-      "name": "사지 유미",
-      "gender": "female",
-      "cv": "사이토 아스카",
-      "img": "image/charimg/2026/Q1/Kusunoki_no_Bannin/Yumi_Saji.jpg"
-    },
-    {
-      "name": "오바 소키",
-      "gender": "male",
-      "cv": "미야세 류비",
-      "img": "image/charimg/2026/Q1/Kusunoki_no_Bannin/Souki_Ouba.jpg"
-    },
-    {
-      "name": "佐治寿明",
-      "gender": "male",
-      "cv": "사지 도시아키",
-      "img": "image/charimg/2026/Q1/Kusunoki_no_Bannin/Toshiaki_Saji.jpg"
-    },
-    {
-      "name": "야나기사와 마사카즈",
-      "gender": "male",
-      "cv": "코야스 타케히토",
-      "img": "image/charimg/2026/Q1/Kusunoki_no_Bannin/Masakazu_Yanagisawa.jpg"
-    },
-    {
-      "name": "야나기사와 카츠시게",
-      "gender": "male",
-      "cv": "타나카 미오",
-      "img": "image/charimg/2026/Q1/Kusunoki_no_Bannin/Katsushige_Yanagisawa.jpg"
-    },
-    {
-      "name": "오바 토이치로",
-      "gender": "male",
-      "cv": "카미야 아키라",
-      "img": "image/charimg/2026/Q1/Kusunoki_no_Bannin/Touichirou_Ooba.jpg"
-    }
-  ]
-},
-{
-  "id": 59393,
-  "characters": [
-    {
-      "name": "케이지",
-      "gender": "male",
-      "cv": "미야케 켄타",
-      "img": "image/charimg/2026/Q2/Niwatori_Fighter/Keiji.jpg"
-    },
-    {
-      "name": "엘리자베스",
-      "gender": "female",
-      "cv": "혼다 마리코",
-      "img": "image/charimg/2026/Q2/Niwatori_Fighter/Elizabeth.jpg"
-    },
-    {
-      "name": "뼝아리",
-      "gender": "unknown",
-      "cv": "이자와 시오리",
-      "img": "image/charimg/2026/Q2/Niwatori_Fighter/Piyoko.jpg"
-    },
-    {
-      "name": "모리오",
-      "gender": "unknown",
-      "cv": "오오노 토모히로",
-      "img": "image/charimg/2026/Q2/Niwatori_Fighter/Morio.jpg"
-    },
-    {
-      "name": "케이스케 ",
-      "gender": "male",
-      "cv": "카누카 미츠아키",
-      "img": "image/charimg/2026/Q2/Niwatori_Fighter/Keisuke.jpg"
-    }
-  ]
-},
-{
-  "id": 62852,
-  "characters": [
-    {
-      "name": "아이바 세리아",
-      "gender": "female",
-      "cv": "후지데라 미노리",
-      "img": "image/charimg/2026/Q2/Ghost_Concert_missing_Songs/Seria_Aiba.jpg"
-    },
-    {
-      "name": "클레오파트라",
-      "gender": "female",
-      "cv": "히다카 리나",
-      "img": "image/charimg/2026/Q2/Ghost_Concert_missing_Songs/Cleopatra.jpg"
-    },
-    {
-      "name": "요우테츠",
-      "gender": "male",
-      "cv": "이리노 미유",
-      "img": "image/charimg/2026/Q2/Ghost_Concert_missing_Songs/Youtetsu.jpg"
-    },
-    {
-      "name": "이치카와 루이",
-      "gender": "female",
-      "cv": "안 유리",
-      "img": "image/charimg/2026/Q2/Ghost_Concert_missing_Songs/Rui_Ichikawa.jpg"
-    },
-    {
-      "name": "무라야마 슈리",
-      "gender": "female",
-      "cv": "사쿠라이 미유키",
-      "img": "image/charimg/2026/Q2/Ghost_Concert_missing_Songs/Akari_Murayama.jpg"
-    },
-    {
-      "name": "사이온지 카에데",
-      "gender": "female",
-      "cv": "오지카 나오",
-      "img": "image/charimg/2026/Q2/Ghost_Concert_missing_Songs/Kaede_Saionji.jpg"
-    },
-    {
-      "name": "아오키 리쿠",
-      "gender": "female",
-      "cv": "사토 사토미",
-      "img": "image/charimg/2026/Q2/Ghost_Concert_missing_Songs/Riku_Aoki.jpg"
-    },
-    {
-      "name": "MiucS",
-      "gender": "female",
-      "cv": "스야마 에미리",
-      "img": "image/charimg/2026/Q2/Ghost_Concert_missing_Songs/MiucS.jpg"
-    },
-    {
-      "name": "세츠테이",
-      "gender": "male",
-      "cv": "히노 사토시",
-      "img": "image/charimg/2026/Q2/Ghost_Concert_missing_Songs/Setsutei.jpg"
-    },
-    {
-      "name": "오디세우스",
-      "gender": "female",
-      "cv": "코토부키 미나코",
-      "img": "image/charimg/2026/Q2/Ghost_Concert_missing_Songs/Odysseus.jpg"
-    }
-  ]
-},
-{
-  "id": 61687,
-  "characters": [
-    {
-      "name": "세실 글로우 알파스타",
-      "gender": "male",
-      "cv": "코바야시 유스케",
-      "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Cecil_Glo_Alphasta.jpg"
-    },
-    {
-      "name": "바티아 이빌 노체스",
-      "gender": "female",
-      "cv": "토미타 미유",
-      "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Bertia_Ibil_Noches.jpg"
-    },
-    {
-      "name": "히로니아 인데른",
-      "gender": "female",
-      "cv": "미야모토 유메",
-      "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Heronia_Inderon.jpg"
-    },
-    {
-      "name": "조안나 켈츠워렌",
-      "gender": "female",
-      "cv": "오오하시 아야카",
-      "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Joanna_Curtswarren.jpg"
-    },
-    {
-      "name": "숀 터코인 알파스타",
-      "gender": "male",
-      "cv": "무라세 아유무",
-      "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Shawn_Alphasta.jpg"
-    },
-    {
-      "name": "넬트 클럼",
-      "gender": "male",
-      "cv": "호리에 슌",
-      "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Nelt_Krum.jpg"
-    },
-    {
-      "name": "시리카 루네아",
-      "gender": "female",
-      "cv": "사에키 이오리",
-      "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Silica_Lunea.jpg"
-    },
-    {
-      "name": "바르드 노킨스",
-      "gender": "male",
-      "cv": "타카하시 히데노리",
-      "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Vald_Norgins.jpg"
-    },
-    {
-      "name": "펜닐 로드",
-      "gender": "male",
-      "cv": "코노에 슈마",
-      "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Fannil_Rhode.jpg"
-    },
-    {
-      "name": "쿨건 데레스 마던",
-      "gender": "male",
-      "cv": "야마시타 세이이치로",
-      "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Courtgain_Mardan.jpg"
-    },
-    {
-      "name": "이린 실베르츠 자작 영애",
-      "gender": "female",
-      "cv": "아카네야 히미카",
-      "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Ilynn_Silbertz.jpg"
-    },
-    {
-      "name": "쿠로",
-      "gender": "female",
-      "cv": "키토 아카리",
-      "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Kuro.jpg"
-    },
-    {
-      "name": "찰스 라오넬",
-      "gender": "male",
-      "cv": "시라이 유스케",
-      "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Charles_Laonel.jpg"
-    },
-    {
-      "name": "신시아 소넬리스",
-      "gender": "female",
-      "cv": "이치미치 마오",
-      "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Cynthia_Linnerith.jpg"
-    },
-    {
-      "name": "안네 코갈레스",
-      "gender": "female",
-      "cv": "우치다 아야",
-      "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Anne_Kogares.jpg"
-    },
-    {
-      "name": "피짱",
-      "gender": "unknown",
-      "cv": "미나미 하루카",
-      "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Pii.jpg"
-    },
-    {
-      "name": "제노",
-      "gender": "male",
-      "cv": "타마루 아츠시",
-      "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Zeno.jpg"
-    },
-    {
-      "name": "더글라스 이빌 노체스",
-      "gender": "male",
-      "cv": "이시이 코지",
-      "img": "image/charimg/2026/Q2/Jishou_Akuyaku_Reijou_na_Konyakusha_no_Kansatsu_Kiroku/Douglas_Noches.jpg"
-    }
-  ]
-},
-{
-  "id": 62146,
-  "characters": [
-    {
-      "name": "마치오 히라쿠",
-      "gender": "male",
-      "cv": "아베 아츠시",
-      "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Hiraku_Machio.jpg"
-    },
-    {
-      "name": "루루시 루",
-      "gender": "female",
-      "cv": "시모지 시노",
-      "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Loo.jpg"
-    },
-    {
-      "name": "티어",
-      "gender": "female",
-      "cv": "스자키 아야",
-      "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Tier.jpg"
-    },
-    {
-      "name": "리아",
-      "gender": "female",
-      "cv": "Lynn",
-      "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Ria.jpg"
-    },
-    {
-      "name": "앤",
-      "gender": "female",
-      "cv": "후지이 유키요",
-      "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Ann.jpg"
-    },
-    {
-      "name": "플로라 사크투",
-      "gender": "female",
-      "cv": "토미타 미유",
-      "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Flora.jpg"
-    },
-    {
-      "name": "세나",
-      "gender": "female",
-      "cv": "Machico",
-      "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Senna.jpg"
-    },
-    {
-      "name": "라스티스문",
-      "gender": "female",
-      "cv": "히오카 나츠미",
-      "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Rasutisumoon.jpg"
-    },
-    {
-      "name": "창조신",
-      "gender": "male",
-      "cv": "하야미 쇼",
-      "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Souzou_Shin.jpg"
-    },
-    {
-      "name": "자부톤",
-      "gender": "female",
-      "cv": "Unknown",
-      "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Zabuton.jpg"
-    },
-    {
-      "name": "하쿠렌",
-      "gender": "female",
-      "cv": "이토 카나에",
-      "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Hakuren.jpg"
-    },
-    {
-      "name": "드라임",
-      "gender": "male",
-      "cv": "이나다 테츠",
-      "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Doraim.jpg"
-    },
-    {
-      "name": "프라우렘 크롬",
-      "gender": "female",
-      "cv": "오카사키 미호",
-      "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Fraurem_Chrome.jpg"
-    },
-    {
-      "name": "유리",
-      "gender": "female",
-      "cv": "콘도 레이나",
-      "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Yuuri.jpg"
-    },
-    {
-      "name": "그라파룬",
-      "gender": "female",
-      "cv": "히카사 요코",
-      "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Graffaloon.jpg"
-    },
-    {
-      "name": "리타",
-      "gender": "female",
-      "cv": "아베 나츠코",
-      "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Lita.jpg"
-    },
-    {
-      "name": "리콧토",
-      "gender": "female",
-      "cv": "히이라기 유카",
-      "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Licott.jpg"
-    },
-    {
-      "name": "리리",
-      "gender": "female",
-      "cv": "시마노 하나",
-      "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Lily.jpg"
-    },
-    {
-      "name": "리제",
-      "gender": "female",
-      "cv": "아베 나츠코",
-      "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Lize.jpg"
-    },
-    {
-      "name": "리스",
-      "gender": "female",
-      "cv": "히이라기 유카",
-      "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Liese.jpg"
-    },
-    {
-      "name": "리프",
-      "gender": "female",
-      "cv": "시마노 하나",
-      "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Leaf.jpg"
-    },
-    {
-      "name": "걸프",
-      "gender": "male",
-      "cv": "타카하시 료스케",
-      "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Gulf.jpg"
-    },
-    {
-      "name": "비젤 크라임 크롬",
-      "gender": "male",
-      "cv": "우에다 요지",
-      "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Besel_Chrome.jpg"
-    },
-    {
-      "name": "랭던",
-      "gender": "male",
-      "cv": "타카하시 신야",
-      "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Landan.jpg"
-    },
-    {
-      "name": "쿠로",
-      "gender": "male",
-      "cv": "키우치 히데노부",
-      "img": "image/charimg/2026/Q2/Isekai_Nonbiri_Nouka_2/Kuro.jpg"
-    }
-  ]
-},
-{
-  "id": 51553,
-  "characters": [
-    {
-      "name": "코코",
-      "gender": "female",
-      "cv": "모토무라 레나",
-      "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Coco.jpg"
-    },
-    {
-      "name": "키프리",
-      "gender": "male",
-      "cv": "하나에 나츠키",
-      "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Qifrey.jpg"
-    },
-    {
-      "name": "애거트 아크롬",
-      "gender": "female",
-      "cv": "야마무라 히비쿠",
-      "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Agott_Arkrome.jpg"
-    },
-    {
-      "name": "테티아",
-      "gender": "female",
-      "cv": "하루키 쿠루미",
-      "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Tetia.jpg"
-    },
-    {
-      "name": "리체리트",
-      "gender": "female",
-      "cv": "츠키시로 히카",
-      "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Richeh.jpg"
-    },
-    {
-      "name": "오르기오",
-      "gender": "male",
-      "cv": "나카무라 유이치",
-      "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Olruggio.jpg"
-    },
-    {
-      "name": "이귄",
-      "gender": "unknown",
-      "cv": "사이가 미츠키",
-      "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Iguin.jpg"
-    },
-    {
-      "name": "흥흥",
-      "gender": "unknown",
-      "cv": "쿠노 미사키",
-      "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Fudemushi.jpg"
-    },
-    {
-      "name": "아라이라",
-      "gender": "female",
-      "cv": "미츠이시 코토노",
-      "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Alaira.jpg"
-    },
-    {
-      "name": "코코의 어머니",
-      "gender": "female",
-      "cv": "사코 마유미",
-      "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Coco_no_Haha.jpg"
-    },
-    {
-      "name": "타타",
-      "gender": "male",
-      "cv": "타무라 무츠미",
-      "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Tartah.jpg"
-    },
-    {
-      "name": "노르노아",
-      "gender": "male",
-      "cv": "야스하라 요시토",
-      "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Nolnoa.jpg"
-    },
-    {
-      "name": "이스히스",
-      "gender": "male",
-      "cv": "스와베 준이치",
-      "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Easthies.jpg"
-    },
-    {
-      "name": "유이니",
-      "gender": "male",
-      "cv": "이시바시 히이로",
-      "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Euini.jpg"
-    },
-    {
-      "name": "루루시",
-      "gender": "female",
-      "cv": "이시카와 유이",
-      "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Luluci.jpg"
-    },
-    {
-      "name": "쿠스타스",
-      "gender": "male",
-      "cv": "쿠마가이 토시키",
-      "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Custas.jpg"
-    },
-    {
-      "name": "다그다",
-      "gender": "male",
-      "cv": "코니시 카츠유키",
-      "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Dagda.jpg"
-    },
-    {
-      "name": "우트윈",
-      "gender": "male",
-      "cv": "카사마 쥰",
-      "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Utowin.jpg"
-    },
-    {
-      "name": "사사란",
-      "gender": "male",
-      "cv": "나카오 류세이",
-      "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Sasaran.jpg"
-    },
-    {
-      "name": "가르가",
-      "gender": "male",
-      "cv": "야스모토 히로키",
-      "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Galga.jpg"
-    },
-    {
-      "name": "쿠크로우",
-      "gender": "male",
-      "cv": "야나카 히로시",
-      "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Kukrow.jpg"
-    },
-    {
-      "name": "리리핀",
-      "gender": "male",
-      "cv": "이세 마리야",
-      "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Riliphin.jpg"
-    },
-    {
-      "name": "리체리트의 선생님",
-      "gender": "male",
-      "cv": "우에다 요지",
-      "img": "image/charimg/2026/Q2/Tongari_Boushi_no_Atelier/Richeh_no_Sensei.jpg"
-    }
-  ]
-},
-{
-  "id": 61425,
-  "characters": [
-    {
-      "name": "사쿠라다이몬 토우고",
-      "gender": "male",
-      "cv": "에노키 준야",
-      "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Tougo_Sakuradaimon.jpg"
-    },
-    {
-      "name": "코히나타 포엠",
-      "gender": "female",
-      "cv": "아케치 리코",
-      "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Poemu_Kohinata.jpg"
-    },
-    {
-      "name": "코히나타 미라이",
-      "gender": "female",
-      "cv": "오오하라 사야카",
-      "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Mirai_Kohinata.jpg"
-    },
-    {
-      "name": "아키나 모토코",
-      "gender": "female",
-      "cv": "이토 유이나",
-      "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Motoko_Akina.jpg"
-    },
-    {
-      "name": "코히나타 라임",
-      "gender": "male",
-      "cv": "키노시타 히로유키",
-      "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Raimu_Kohinata.jpg"
-    },
-    {
-      "name": "츠키시마 세이이치",
-      "gender": "male",
-      "cv": "후쿠야마 쥰",
-      "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Seiichi_Tsukishima.jpg"
-    },
-    {
-      "name": "코히나타 리릭",
-      "gender": "female",
-      "cv": "하세가와 이쿠미",
-      "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Ririku_Kohinata.jpg"
-    },
-    {
-      "name": "이즈부치 유우",
-      "gender": "male",
-      "cv": "도지마 하야토",
-      "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Yuu_Izubuchi.jpg"
-    },
-    {
-      "name": "사쿠라다이몬 키쿠카",
-      "gender": "female",
-      "cv": "코하라 코노미",
-      "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Kikuka_Sakuradaimon.jpg"
-    },
-    {
-      "name": "타사키 루이",
-      "gender": "female",
-      "cv": "후쿠하라 아야카",
-      "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Rui_Tasaki.jpg"
-    },
-    {
-      "name": "초노 후지코",
-      "gender": "female",
-      "cv": "우에사카 스미레",
-      "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Fujiko_Chouno.jpg"
-    },
-    {
-      "name": "야마토 나데시코",
-      "gender": "female",
-      "cv": "카이다 유코",
-      "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Nadeshiko_Yamato.jpg"
-    },
-    {
-      "name": "코고리 카오루",
-      "gender": "male",
-      "cv": "이나다 테츠",
-      "img": "image/charimg/2026/Q2/Ponkotsu_Fuuki_Iin_to_Skirt_take_ga_Futekisetsu_na_JK_no_Hanashi/Kaoru_Kogori.jpg"
-    }
-  ]
-},
-{
-  "id": 62331,
-  "characters": [
-    {
-      "name": "칸자키 나오",
-      "gender": "female",
-      "cv": "히토미 사야",
-      "img": "image/charimg/2026/Q2/LIAR_GAME/Nao_Kanzaki.jpg"
-    },
-    {
-      "name": "아키야마 신이치",
-      "gender": "male",
-      "cv": "오오츠카 타케오",
-      "img": "image/charimg/2026/Q2/LIAR_GAME/Shinichi_Akiyama.jpg"
-    },
-    {
-      "name": "사토 테츠조",
-      "gender": "male",
-      "cv": "키우치 타로",
-      "img": "image/charimg/2026/Q2/LIAR_GAME/Tetsuzo_Sato.jpg"
-    },
-    {
-      "name": "미우라 타카유키",
-      "gender": "unknown",
-      "cv": "야시로 타쿠",
-      "img": "image/charimg/2026/Q2/LIAR_GAME/Takayoshi_Miura.jpg"
-    },
-    {
-      "name": "타무라 마키코",
-      "gender": "female",
-      "cv": "아케치 리코",
-      "img": "image/charimg/2026/Q2/LIAR_GAME/Makiko_Tamura.jpg"
-    },
-    {
-      "name": "마츠바라 후미오",
-      "gender": "male",
-      "cv": "니시자와 료",
-      "img": "image/charimg/2026/Q2/LIAR_GAME/Fumio_Matsubara.jpg"
-    },
-    {
-      "name": "레로니라",
-      "gender": "unknown",
-      "cv": "나카야 카즈히로",
-      "img": "image/charimg/2026/Q2/LIAR_GAME/Leronira.jpg"
-    },
-    {
-      "name": "단노 다이스케",
-      "gender": "male",
-      "cv": "후카마치 토시나리",
-      "img": "image/charimg/2026/Q2/LIAR_GAME/Daisuke_Danno.jpg"
-    },
-    {
-      "name": "미야하라 히토미",
-      "gender": "female",
-      "cv": "타이치 요우",
-      "img": "image/charimg/2026/Q2/LIAR_GAME/Hitomi_Miyahara.jpg"
-    },
-    {
-      "name": "타니무라 테루오",
-      "gender": "male",
-      "cv": "우에다 요지",
-      "img": "image/charimg/2026/Q2/LIAR_GAME/Teruo_Tanimura.jpg"
-    },
-    {
-      "name": "츠노다 코스케",
-      "gender": "male",
-      "cv": "미야세 나오야",
-      "img": "image/charimg/2026/Q2/LIAR_GAME/Kosuke_Tsunoda.jpg"
-    },
-    {
-      "name": "후쿠나가 유지",
-      "gender": "unknown",
-      "cv": "타이치 요우",
-      "img": "image/charimg/2026/Q2/LIAR_GAME/Yuuji_Fukunaga.jpg"
-    },
-    {
-      "name": "후지사와 카즈오",
-      "gender": "male",
-      "cv": "토비타 노부오",
-      "img": "image/charimg/2026/Q2/LIAR_GAME/Kazuo_Fujisawa.jpg"
-    },
-    {
-      "name": "니시하라 레이나",
-      "gender": "female",
-      "cv": "야마다 미스즈",
-      "img": "image/charimg/2026/Q2/LIAR_GAME/Reina_Nishihara.jpg"
-    },
-    {
-      "name": "네아르코",
-      "gender": "unknown",
-      "cv": "후쿠야마 쥰",
-      "img": "image/charimg/2026/Q2/LIAR_GAME/Nearco.jpg"
-    },
-    {
-      "name": "키쿠치와 타카히로",
-      "gender": "unknown",
-      "cv": "이시게 쇼야",
-      "img": "image/charimg/2026/Q2/LIAR_GAME/Takahiro_Kikuzawa.jpg"
-    },
-    {
-      "name": "마키하라 유키",
-      "gender": "female",
-      "cv": "고마즈루 아야",
-      "img": "image/charimg/2026/Q2/LIAR_GAME/Yuki_Makihara.jpg"
-    },
-    {
-      "name": "에다 테루유키",
-      "gender": "male",
-      "cv": "토미오카 야스타카",
-      "img": "image/charimg/2026/Q2/LIAR_GAME/Yuki_Edateru.jpg"
-    },
-    {
-      "name": "호소에 준",
-      "gender": "female",
-      "cv": "사카이 미사노",
-      "img": "image/charimg/2026/Q2/LIAR_GAME/Jun_Hosoe.jpg"
-    },
-    {
-      "name": "키타무라 히로토",
-      "gender": "male",
-      "cv": "아사노 료스케",
-      "img": "image/charimg/2026/Q2/LIAR_GAME/Hiroto_Kitamura.jpg"
-    },
-    {
-      "name": "후지타 신고",
-      "gender": "male",
-      "cv": "키무라 타이히",
-      "img": "image/charimg/2026/Q2/LIAR_GAME/Shingo_Fujita.jpg"
-    }
-  ]
-},
-{
-  "id": 63375,
-  "characters": [
-    {
-      "name": "미스미 아오테루",
-      "gender": "male",
-      "cv": "오노 켄쇼",
-      "img": "image/charimg/2026/Q2/Nippon_Sangoku/Aoteru_Misumi.jpg"
-    },
-    {
-      "name": "아사마 요시쓰네",
-      "gender": "male",
-      "cv": "후쿠야마 쥰",
-      "img": "image/charimg/2026/Q2/Nippon_Sangoku/Yoshitsune_Asama.jpg"
-    },
-    {
-      "name": "히가시마치 사키",
-      "gender": "female",
-      "cv": "세토 아사미",
-      "img": "image/charimg/2026/Q2/Nippon_Sangoku/Saki_Higashimachi.jpg"
-    },
-    {
-      "name": "다이라 덴키",
-      "gender": "male",
-      "cv": "나가사코 타카시",
-      "img": "image/charimg/2026/Q2/Nippon_Sangoku/Denki_Taira.jpg"
-    },
-    {
-      "name": "류몬 미쓰히데",
-      "gender": "male",
-      "cv": "야마지 카즈히로",
-      "img": "image/charimg/2026/Q2/Nippon_Sangoku/Mitsuhide_Ryuumon.jpg"
-    },
-    {
-      "name": "가쿠 야스아키",
-      "gender": "male",
-      "cv": "나카무라 유이치",
-      "img": "image/charimg/2026/Q2/Nippon_Sangoku/Yasuaki_Kaku.jpg"
-    },
-    {
-      "name": "후지 3세",
-      "gender": "male",
-      "cv": "키무라 타이히",
-      "img": "image/charimg/2026/Q2/Nippon_Sangoku/Fuji_Sansei.jpg"
-    },
-    {
-      "name": "와지마 오가",
-      "gender": "female",
-      "cv": "츠다 미나미",
-      "img": "image/charimg/2026/Q2/Nippon_Sangoku/Ohga_Wajima.jpg"
-    },
-    {
-      "name": "헤이 야야키치",
-      "gender": "male",
-      "cv": "호리우치 켄유",
-      "img": "image/charimg/2026/Q2/Nippon_Sangoku/Yayakichi_Hei.jpg"
-    },
-    {
-      "name": "나가오 무톤",
-      "gender": "male",
-      "cv": "우메다 슈이치로",
-      "img": "image/charimg/2026/Q2/Nippon_Sangoku/Nagao_Muuton.jpg"
-    },
-    {
-      "name": "구라 아테루이",
-      "gender": "male",
-      "cv": "사쿠야 슌스케",
-      "img": "image/charimg/2026/Q2/Nippon_Sangoku/Aterui_Kura.jpg"
-    },
-    {
-      "name": "다이라 도노쓰구",
-      "gender": "male",
-      "cv": "무라세 아유무",
-      "img": "image/charimg/2026/Q2/Nippon_Sangoku/Tonotsugu_Taira.jpg"
-    },
-    {
-      "name": "히가시마치 노부히토",
-      "gender": "male",
-      "cv": "야마구치 사토시",
-      "img": "image/charimg/2026/Q2/Nippon_Sangoku/Nobuhito_Higashimachi.jpg"
-    },
-    {
-      "name": "도요타 마구로",
-      "gender": "male",
-      "cv": "시라이시 미노루",
-      "img": "image/charimg/2026/Q2/Nippon_Sangoku/Maguro_Toyota.jpg"
-    },
-    {
-      "name": "시마다 히로마사",
-      "gender": "male",
-      "cv": "호리 소시로",
-      "img": "image/charimg/2026/Q2/Nippon_Sangoku/Hiromasa_Shimada.jpg"
-    },
-    {
-      "name": "다이라 요시히로",
-      "gender": "male",
-      "cv": "오카이 카츠노리",
-      "img": "image/charimg/2026/Q2/Nippon_Sangoku/Yoshihiro_Taira.jpg"
-    },
-    {
-      "name": "나가미네 시료",
-      "gender": "male",
-      "cv": " 타케우치 슌스케",
-      "img": "image/charimg/2026/Q2/Nippon_Sangoku/Shiryo_Nagamine.jpg"
-    },
-    {
-      "name": "스고 고",
-      "gender": "male",
-      "cv": "타케우치 료타",
-      "img": "image/charimg/2026/Q2/Nippon_Sangoku/Gou_Sugou.jpg"
-    }
-  ]
-},
-{
-  "id": 61931,
-  "characters": [
-    {
-      "name": "프라이드 로열 아이비",
-      "gender": "female",
-      "cv": "파이루즈 아이",
-      "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Pride_Royal_Ivy.jpg"
-    },
-    {
-      "name": "해리슨 디르크",
-      "gender": "male",
-      "cv": "스즈키 료타",
-      "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Harrison.jpg"
-    },
-    {
-      "name": "로데릭 베레스포드",
-      "gender": "male",
-      "cv": "야스모토 히로키",
-      "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Rodrick_Beresford.jpg"
-    },
-    {
-      "name": "아서 베레스포드",
-      "gender": "male",
-      "cv": "에노키 준야",
-      "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Arthur_Beresford.jpg"
-    },
-    {
-      "name": "아담 보르네오 네펜테스",
-      "gender": "male",
-      "cv": "오카모토 노부히코",
-      "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Adam_Nepenthes.jpg"
-    },
-    {
-      "name": "앨런 버나즈",
-      "gender": "male",
-      "cv": "시모노 히로",
-      "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Alan_Bernards.jpg"
-    },
-    {
-      "name": "티아라 로열 아이비",
-      "gender": "female",
-      "cv": "토마츠 하루카",
-      "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Tiara_Royal_Ivy.jpg"
-    },
-    {
-      "name": "알버트 로열 아이비",
-      "gender": "male",
-      "cv": "모리카와 토시유키",
-      "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Albert_Royal_Ivy.jpg"
-    },
-    {
-      "name": "로자 로열 아이비",
-      "gender": "female",
-      "cv": "이노우에 키쿠코",
-      "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Rosa_Royal_Ivy.jpg"
-    },
-    {
-      "name": "스테일 로열 아이비",
-      "gender": "male",
-      "cv": "우치야마 코우키",
-      "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Stayle_Royal_Ivy.jpg"
-    },
-    {
-      "name": "세페크",
-      "gender": "female",
-      "cv": "M·A·O",
-      "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Sefec.jpg"
-    },
-    {
-      "name": "에릭 길크리스트",
-      "gender": "male",
-      "cv": "나가츠카 타쿠마",
-      "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Eric_Gilchrist.jpg"
-    },
-    {
-      "name": "질베르 버틀러",
-      "gender": "male",
-      "cv": "유사 코지",
-      "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Gilbert_Butler.jpg"
-    },
-    {
-      "name": "케메트",
-      "gender": "male",
-      "cv": "이시가미 시즈카",
-      "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Kemet.jpg"
-    },
-    {
-      "name": "바르",
-      "gender": "male",
-      "cv": "스와베 준이치",
-      "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Val.jpg"
-    },
-    {
-      "name": "롯테",
-      "gender": "female",
-      "cv": "스야마 에미리",
-      "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Lotte.jpg"
-    },
-    {
-      "name": "세드릭 실버 로웰",
-      "gender": "male",
-      "cv": "미도리카와 히카루",
-      "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Cedric_Silva_Lowell.jpg"
-    },
-    {
-      "name": "클라크 다윈",
-      "gender": "male",
-      "cv": "세키 토시히코",
-      "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Clark_Darwin.jpg"
-    },
-    {
-      "name": "레온 아도니스 코로나리아",
-      "gender": "male",
-      "cv": "타치바나 신노스케",
-      "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Leon_Adonis_Coronaria.jpg"
-    },
-    {
-      "name": "카람 보르드",
-      "gender": "male",
-      "cv": "오노 다이스케",
-      "img": "image/charimg/2026/Q2/Higeki_no_Genkyou_to_Naru_Saikyou_Gedou_Last_Boss_Joou_wa_Tami_no_Tame_ni_Tsukushimasu._Season_2/Calum_Bordeaux.jpg"
-    }
-  ]
-},
-{
-  "id": 62601,
-  "characters": [
-    {
-      "name": "게로 히카루",
-      "gender": "male",
-      "cv": "이시야 하루키",
-      "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Hikaru_Gero.jpg"
-    },
-    {
-      "name": "키노사키 메이",
-      "gender": "unknown",
-      "cv": "와카야마 시온",
-      "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Mei_Kinosaki.jpg"
-    },
-    {
-      "name": "하나마키 토시키",
-      "gender": "male",
-      "cv": "유센 이사무",
-      "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Toshiki_Hanamaki.jpg"
-    },
-    {
-      "name": "도고 토나코",
-      "gender": "female",
-      "cv": "쿠로사와 토모요",
-      "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Tonako_Dogo.jpg"
-    },
-    {
-      "name": "게로 아카리",
-      "gender": "female",
-      "cv": "시라이시 하루카",
-      "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Akari_Gero.jpg"
-    },
-    {
-      "name": "게로 테루아키",
-      "gender": "male",
-      "cv": "우에무라 유토",
-      "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Teruaki_Gero.jpg"
-    },
-    {
-      "name": "히메카와 쿄코",
-      "gender": "female",
-      "cv": "나가세 안나",
-      "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Kyouko_Himekawa.jpg"
-    },
-    {
-      "name": "시리우스",
-      "gender": "unknown",
-      "cv": "아라이 사토미",
-      "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Sirius.jpg"
-    },
-    {
-      "name": "우레시노 시오리",
-      "gender": "female",
-      "cv": "유이카와 아사키",
-      "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Shiori_Ureshino.jpg"
-    },
-    {
-      "name": "뱟코",
-      "gender": "female",
-      "cv": "스와 아야카",
-      "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Byakko.jpg"
-    },
-    {
-      "name": "우시오 시즈쿠",
-      "gender": "female",
-      "cv": "이세 마리야",
-      "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Shizuku_Ushio.jpg"
-    },
-    {
-      "name": "도고 토시로",
-      "gender": "male",
-      "cv": "오키츠 카즈유키",
-      "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Toshiro_Dogo.jpg"
-    },
-    {
-      "name": "아라시야마 키미에",
-      "gender": "female",
-      "cv": "시라하마 히나노",
-      "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Kimie_Arashiyama.jpg"
-    },
-    {
-      "name": "이타바시 토모히사",
-      "gender": "male",
-      "cv": "요시노 히로유키",
-      "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Tomohisa_Itabashi.jpg"
-    },
-    {
-      "name": "나카가와 피이치",
-      "gender": "male",
-      "cv": "츠치야 신바",
-      "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Piichi_Nakagawa.jpg"
-    },
-    {
-      "name": "이타바시 요스케",
-      "gender": "male",
-      "cv": "요시노 히로유키",
-      "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Yousuke_Itabashi.jpg"
-    },
-    {
-      "name": "나루코 겐야",
-      "gender": "male",
-      "cv": "사이토 소마",
-      "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Genya_Naruko.jpg"
-    },
-    {
-      "name": "아리무라 마린",
-      "gender": "female",
-      "cv": "미야모토 유메",
-      "img": "image/charimg/2026/Q2/MARRIAGETOXIN/Marin_Arimura.jpg"
-    }
-  ]
-},
-{
-  "id": 61839,
-  "characters": [
-    {
-      "name": "사쿠라 미쿠",
-      "gender": "female",
-      "cv": "이토 미쿠",
-      "img": "image/charimg/2026/Q2/Aishiteru_Game_wo_Owarasetai/Miku_Sakura.jpg"
-    },
-    {
-      "name": "아사기 유키야",
-      "gender": "male",
-      "cv": "이시카와 카이토",
-      "img": "image/charimg/2026/Q2/Aishiteru_Game_wo_Owarasetai/Yukiya_Asagi.jpg"
-    },
-    {
-      "name": "모에기 나츠키",
-      "gender": "female",
-      "cv": "혼도 카에데",
-      "img": "image/charimg/2026/Q2/Aishiteru_Game_wo_Owarasetai/Natsuki_Moegi.jpg"
-    },
-    {
-      "name": "하나바 히나코",
-      "gender": "female",
-      "cv": "오구라 유이",
-      "img": "image/charimg/2026/Q2/Aishiteru_Game_wo_Owarasetai/Hinako_Hanaba.jpg"
-    },
-    {
-      "name": "아사기 와카나",
-      "gender": "female",
-      "cv": "마루오카 와카나",
-      "img": "image/charimg/2026/Q2/Aishiteru_Game_wo_Owarasetai/Wakana_Asagi.jpg"
-    },
-    {
-      "name": "시노노메 마사루",
-      "gender": "male",
-      "cv": "코야스 타케히토",
-      "img": "image/charimg/2026/Q2/Aishiteru_Game_wo_Owarasetai/Masaru_Shinonome.jpg"
-    }
-  ]
-},
-{
-  "id": 56734,
-  "characters": [
-    {
-      "name": "마에하라 마키",
-      "gender": "male",
-      "cv": "이시야 하루키",
-      "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Maki_Maehara.jpg"
-    },
-    {
-      "name": "아사나기 우미",
-      "gender": "female",
-      "cv": "이와미 마나카",
-      "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Umi_Asanagi.jpg"
-    },
-    {
-      "name": "마에하라 이츠키",
-      "gender": "male",
-      "cv": "카와다 신지",
-      "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Itsuki_Maehara.jpg"
-    },
-    {
-      "name": "미나토 쿄카",
-      "gender": "female",
-      "cv": "아마미 유리나",
-      "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Kyouka_Minato.jpg"
-    },
-    {
-      "name": "닛타 니나",
-      "gender": "female",
-      "cv": "하세가와 이쿠미",
-      "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Nina_Nitta.jpg"
-    },
-    {
-      "name": "아마미 에리",
-      "gender": "female",
-      "cv": "오오하라 사야카",
-      "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Eri_Amami.jpg"
-    },
-    {
-      "name": "아마미 유우",
-      "gender": "female",
-      "cv": "스즈시로 사유미",
-      "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Yuu_Amami.jpg"
-    },
-    {
-      "name": "야기사와 미키",
-      "gender": "female",
-      "cv": "츠다 미나미",
-      "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Miki_Yagisawa.jpg"
-    },
-    {
-      "name": "아사나기 소라",
-      "gender": "female",
-      "cv": "이토 시즈카",
-      "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Sora_Asanagi.jpg"
-    },
-    {
-      "name": "마에하라 마사키",
-      "gender": "female",
-      "cv": "카이다 유코",
-      "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Masaki_Maehara.jpg"
-    },
-    {
-      "name": "세키 노조무",
-      "gender": "male",
-      "cv": "야스다 리쿠야",
-      "img": "image/charimg/2026/Q2/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta/Nozomi_Seki.jpg"
-    }
-  ]
-},
-{
-  "id": 61013,
-  "characters": [
-    {
-      "name": "아이카와 스나오",
-      "gender": "female",
-      "cv": "모로호시 스미레",
-      "img": "image/charimg/2026/Q2/Replica_Datte,_Koi_wo_Suru/Sunao_Aikawa.jpg"
-    },
-    {
-      "name": "아키",
-      "gender": "male",
-      "cv": "스즈키 료타",
-      "img": "image/charimg/2026/Q2/Replica_Datte,_Koi_wo_Suru/Aki.jpg"
-    },
-    {
-      "name": "나오",
-      "gender": "female",
-      "cv": "모로호시 스미레",
-      "img": "image/charimg/2026/Q2/Replica_Datte,_Koi_wo_Suru/Nao.jpg"
-    },
-    {
-      "name": "사나다 슈야",
-      "gender": "male",
-      "cv": "스즈키 료타",
-      "img": "image/charimg/2026/Q2/Replica_Datte,_Koi_wo_Suru/Shuuya_Sanada.jpg"
-    },
-    {
-      "name": "모리 스즈미",
-      "gender": "female",
-      "cv": "나즈카 카오리",
-      "img": "image/charimg/2026/Q2/Replica_Datte,_Koi_wo_Suru/Suzumi_Mori.jpg"
-    },
-    {
-      "name": "히로나카 리츠코",
-      "gender": "female",
-      "cv": "타카다 유우키",
-      "img": "image/charimg/2026/Q2/Replica_Datte,_Koi_wo_Suru/Ritsuko_Hironaka.jpg"
-    },
-    {
-      "name": "요시이 하루카",
-      "gender": "male",
-      "cv": "나카무라 슈고",
-      "img": "image/charimg/2026/Q2/Replica_Datte,_Koi_wo_Suru/Haruka_Yoshii.jpg"
-    },
-    {
-      "name": "사토 코즈에",
-      "gender": "female",
-      "cv": "히다카 리나",
-      "img": "image/charimg/2026/Q2/Replica_Datte,_Koi_wo_Suru/Kozue_Satou.jpg"
-    },
-    {
-      "name": "모치즈키 슌",
-      "gender": "male",
-      "cv": "후쿠야마 쥰",
-      "img": "image/charimg/2026/Q2/Replica_Datte,_Koi_wo_Suru/Shun_Mochizuki.jpg"
-    }
-  ]
-},
-{
-  "id": 53732,
-  "characters": [
-    {
-      "name": "아사쿠라 코이치",
-      "gender": "male",
-      "cv": "치바 쇼야",
-      "img": "image/charimg/2026/Q2/Hidarikiki_no_Eren/Kouichi_Asakura.jpg"
-    },
-    {
-      "name": "야마기시 에렌",
-      "gender": "female",
-      "cv": "우치야마 유미",
-      "img": "image/charimg/2026/Q2/Hidarikiki_no_Eren/Eren_Yamagishi.jpg"
-    },
-    {
-      "name": "루카와 슌",
-      "gender": "male",
-      "cv": "신가키 타루스케",
-      "img": "image/charimg/2026/Q2/Hidarikiki_no_Eren/Shun_Rukawa.jpg"
-    },
-    {
-      "name": "사쿠마 이후",
-      "gender": "male",
-      "cv": "마츠다 켄이치로",
-      "img": "image/charimg/2026/Q2/Hidarikiki_no_Eren/Ifuu_Sakuma.jpg"
-    },
-    {
-      "name": "키시 아카리",
-      "gender": "female",
-      "cv": "세키네 아키라",
-      "img": "image/charimg/2026/Q2/Hidarikiki_no_Eren/Akari_Kishi.jpg"
-    },
-    {
-      "name": "카토 사유리",
-      "gender": "female",
-      "cv": "이시카와 유이",
-      "img": "image/charimg/2026/Q2/Hidarikiki_no_Eren/Sayuri_Katou.jpg"
-    },
-    {
-      "name": "미하시 유리나",
-      "gender": "female",
-      "cv": "아마미 유리나",
-      "img": "image/charimg/2026/Q2/Hidarikiki_no_Eren/Yurina_Mitsuhashi.jpg"
-    },
-    {
-      "name": "야나기 하지메",
-      "gender": "male",
-      "cv": "유사 코지",
-      "img": "image/charimg/2026/Q2/Hidarikiki_no_Eren/Hajime_Yanagi.jpg"
-    },
-    {
-      "name": "카미야 유스케",
-      "gender": "male",
-      "cv": "오키츠 카즈유키",
-      "img": "image/charimg/2026/Q2/Hidarikiki_no_Eren/Yuusuke_Kamiya.jpg"
-    },
-    {
-      "name": "아카네 유우코",
-      "gender": "female",
-      "cv": "유이카와 아사키",
-      "img": "image/charimg/2026/Q2/Hidarikiki_no_Eren/Yuuko_Akane.jpg"
-    }
-  ]
-},
-{
-  "id": 63014,
-  "characters": [
-    {
-      "name": "나카마 린코",
-      "gender": "female",
-      "cv": "하나자와 카나",
-      "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Rinko_Nakama.jpg"
-    },
-    {
-      "name": "사츠키 아키토",
-      "gender": "male",
-      "cv": "이시카와 카이토",
-      "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Akito_Satsuki.jpg"
-    },
-    {
-      "name": "우사다 하루마",
-      "gender": "male",
-      "cv": "이시야 하루키",
-      "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Haruma_Usada.jpg"
-    },
-    {
-      "name": "캐롤라인 클락",
-      "gender": "female",
-      "cv": "카이다 유코",
-      "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Carol_Usada.jpg"
-    },
-    {
-      "name": "미키",
-      "gender": "male",
-      "cv": "미키 신이치로",
-      "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Takeru_Miki.jpg"
-    },
-    {
-      "name": "에모토 히토미",
-      "gender": "female",
-      "cv": "시마다 아이노",
-      "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Hitomi_Emoto.jpg"
-    },
-    {
-      "name": "코기 시온",
-      "gender": "male",
-      "cv": "토미타 미유",
-      "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Shion_Kogi.jpg"
-    },
-    {
-      "name": "하루나 미치오",
-      "gender": "male",
-      "cv": "카와다 신지",
-      "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Michio_Haruna.jpg"
-    },
-    {
-      "name": "우사다 마오",
-      "gender": "female",
-      "cv": "모로호시 스미레",
-      "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Mao_Usada.jpg"
-    },
-    {
-      "name": "타카미네 하즈키",
-      "gender": "male",
-      "cv": "스기야마 리호",
-      "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Hazuki_Takamine.jpg"
-    },
-    {
-      "name": "혼다 쿄",
-      "gender": "male",
-      "cv": "코바야시 치아키",
-      "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Kyou_Honda.jpg"
-    },
-    {
-      "name": "우사다 마사시",
-      "gender": "male",
-      "cv": "키우치 히데노부",
-      "img": "image/charimg/2026/Q2/Tadaima,_Ojamasaremasu!/Masashi_Usada.jpg"
-    }
-  ]
-},
-{
-  "id": 63376,
-  "characters": [
-    {
-      "name": "나",
-      "gender": "male",
-      "cv": "아베 아츠시",
-      "img": "image/charimg/2026/Q2/Megami_Isekai_Tensei_Nani_ni_Naritai_Desu_ka_Ore_Yuusha_no_Rokkotsu_de/Ore.jpg"
-    },
-    {
-      "name": "여신",
-      "gender": "female",
-      "cv": "M·A·O",
-      "img": "image/charimg/2026/Q2/Megami_Isekai_Tensei_Nani_ni_Naritai_Desu_ka_Ore_Yuusha_no_Rokkotsu_de/Megami.jpg"
-    },
-    {
-      "name": "홍연어 스승",
-      "gender": "male",
-      "cv": "나미카와 다이스케",
-      "img": "image/charimg/2026/Q2/Megami_Isekai_Tensei_Nani_ni_Naritai_Desu_ka_Ore_Yuusha_no_Rokkotsu_de/Benizake_Shishou.jpg"
-    },
-    {
-      "name": "타나카 씨",
-      "gender": "male",
-      "cv": "세키 토시히코",
-      "img": "image/charimg/2026/Q2/Megami_Isekai_Tensei_Nani_ni_Naritai_Desu_ka_Ore_Yuusha_no_Rokkotsu_de/Tanaka-san.jpg"
-    },
-    {
-      "name": "창조신",
-      "gender": "male",
-      "cv": "하야미 쇼",
-      "img": "image/charimg/2026/Q2/Megami_Isekai_Tensei_Nani_ni_Naritai_Desu_ka_Ore_Yuusha_no_Rokkotsu_de/Souzou-shin.jpg"
-    },
-    {
-      "name": "용사 지요크",
-      "gender": "male",
-      "cv": "오가타 타카히로",
-      "img": "image/charimg/2026/Q2/Megami_Isekai_Tensei_Nani_ni_Naritai_Desu_ka_Ore_Yuusha_no_Rokkotsu_de/Jiyouku.jpg"
-    },
-    {
-      "name": "여신의 종자",
-      "gender": "female",
-      "cv": "카네다 토모코",
-      "img": "image/charimg/2026/Q2/Megami_Isekai_Tensei_Nani_ni_Naritai_Desu_ka_Ore_Yuusha_no_Rokkotsu_de/Megami_no_Juusha.jpg"
-    }
-  ]
-},
-{
-  "id": 59708,
-  "characters": [
-    {
-      "name": "아야노코지 키요타카",
-      "gender": "male",
-      "cv": "치바 쇼야",
-      "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Kiyotaka_Ayanokouji.jpg"
-    },
-    {
-      "name": "호리키타 스즈네",
-      "gender": "female",
-      "cv": "키토 아카리",
-      "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Suzune_Horikita.jpg"
-    },
-    {
-      "name": "카루이자와 케이",
-      "gender": "female",
-      "cv": "타케타츠 아야나",
-      "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Kei_Karuizawa.jpg"
-    },
-    {
-      "name": "쿠시다 키쿄",
-      "gender": "female",
-      "cv": "쿠보 유리카",
-      "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Kikyou_Kushida.jpg"
-    },
-    {
-      "name": "나나세 츠바사",
-      "gender": "female",
-      "cv": "사토 미나코",
-      "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Tsubasa_Nanase.jpg"
-    },
-    {
-      "name": "아마사와 이치카",
-      "gender": "female",
-      "cv": "세토 모모코",
-      "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Ichika_Amasawa.jpg"
-    },
-    {
-      "name": "사쿠라 아이리",
-      "gender": "female",
-      "cv": "이치미치 마오",
-      "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Airi_Sakura.jpg"
-    },
-    {
-      "name": "히라타 요스케",
-      "gender": "male",
-      "cv": "오사카 료타",
-      "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Yousuke_Hirata.jpg"
-    },
-    {
-      "name": "스도 켄",
-      "gender": "male",
-      "cv": "타케우치 에이지",
-      "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Ken_Sudou.jpg"
-    },
-    {
-      "name": "이케 칸지",
-      "gender": "male",
-      "cv": "아베 다이키",
-      "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Kanji_Ike.jpg"
-    },
-    {
-      "name": "소토무라 히데오",
-      "gender": "male",
-      "cv": "카와베 슌스케",
-      "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Hideo_Sotomura.jpg"
-    },
-    {
-      "name": "유키무라 테루히코",
-      "gender": "male",
-      "cv": "고덴 츠바사",
-      "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Teruhiko_Yukimura.jpg"
-    },
-    {
-      "name": "미야케 아키토",
-      "gender": "male",
-      "cv": "스즈키 료타",
-      "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Akito_Miyake.jpg"
-    },
-    {
-      "name": "하세베 하루카",
-      "gender": "female",
-      "cv": "타츠미 유이코",
-      "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Haruka_Hasebe.jpg"
-    },
-    {
-      "name": "사토 마야",
-      "gender": "female",
-      "cv": "Lynn",
-      "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Maya_Satou.jpg"
-    },
-    {
-      "name": "시노하라 사츠키",
-      "gender": "female",
-      "cv": "코우다 사오리",
-      "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Satsuki_Shinohara.jpg"
-    },
-    {
-      "name": "미야모토 소우시",
-      "gender": "male",
-      "cv": "미야기 카즈키",
-      "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Soushi_Miyamoto.jpg"
-    },
-    {
-      "name": "류엔 카케루",
-      "gender": "male",
-      "cv": "미즈나카 마사아키",
-      "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Kakeru_Ryuuen.jpg"
-    },
-    {
-      "name": "이부키 미오",
-      "gender": "female",
-      "cv": "코마츠 미카코",
-      "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Mio_Ibuki.jpg"
-    },
-    {
-      "name": "이시자키 다이치",
-      "gender": "male",
-      "cv": "호세 유이치",
-      "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Daichi_Ishizaki.jpg"
-    },
-    {
-      "name": "하시모토 마사요시",
-      "gender": "male",
-      "cv": "아자카미 요헤이",
-      "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Masayoshi_Hashimoto.jpg"
-    },
-    {
-      "name": "호센 카즈오미",
-      "gender": "unknown",
-      "cv": "에가시라 히로야",
-      "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Kazuomi_Housen.jpg"
-    },
-    {
-      "name": "시바 카츠노리",
-      "gender": "male",
-      "cv": "타카하시 히로키",
-      "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Katsunori_Shiba.jpg"
-    },
-    {
-      "name": "이치노세 호나미",
-      "gender": "female",
-      "cv": "토야마 나오",
-      "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Honami_Ichinose.jpg"
-    },
-    {
-      "name": "사카야나기 아리스",
-      "gender": "female",
-      "cv": "히다카 리나",
-      "img": "image/charimg/2026/Q2/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e_4th_Season_2-nensei-hen_Ichi_Gakki/Arisu_Sakayanagi.jpg"
-    }
-  ]
-},
-{
-  "id": 62512,
-  "characters": [
-    {
-      "name": "핫콘",
-      "gender": "male",
-      "cv": "후쿠야마 쥰",
-      "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Hakkon.jpg"
-    },
-    {
-      "name": "랏미스",
-      "gender": "female",
-      "cv": "혼도 카에데",
-      "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Lammis.jpg"
-    },
-    {
-      "name": "휴루미",
-      "gender": "female",
-      "cv": "아이하라 코토미",
-      "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Hulemy.jpg"
-    },
-    {
-      "name": "슈이",
-      "gender": "female",
-      "cv": "토미타 미유",
-      "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Shui.jpg"
-    },
-    {
-      "name": "케리오일",
-      "gender": "male",
-      "cv": "나카이 카즈야",
-      "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Kerioyl.jpg"
-    },
-    {
-      "name": "필미나",
-      "gender": "female",
-      "cv": "카야노 아이",
-      "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Filmina.jpg"
-    },
-    {
-      "name": "곰 회장",
-      "gender": "male",
-      "cv": "미야우치 아츠시",
-      "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Kuma_Kaichou.jpg"
-    },
-    {
-      "name": "적",
-      "gender": "male",
-      "cv": "야마시타 다이키",
-      "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Aka.jpg"
-    },
-    {
-      "name": "백",
-      "gender": "male",
-      "cv": "에노키 준야",
-      "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Shiro.jpg"
-    },
-    {
-      "name": "미슈엘",
-      "gender": "male",
-      "cv": "에구치 타쿠야",
-      "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Mishuel.jpg"
-    },
-    {
-      "name": "헤브이",
-      "gender": "male",
-      "cv": "마츠오카 요시츠구",
-      "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Hevee.jpg"
-    },
-    {
-      "name": "키코유",
-      "gender": "female",
-      "cv": "타카하시 리에",
-      "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Kikoyu.jpg"
-    },
-    {
-      "name": "스루림",
-      "gender": "female",
-      "cv": "시라이시 료코",
-      "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Sulream.jpg"
-    },
-    {
-      "name": "회",
-      "gender": "male",
-      "cv": "야부키 마오",
-      "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Hai.jpg"
-    },
-    {
-      "name": "피티",
-      "gender": "female",
-      "cv": "아케사카 사토미",
-      "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Pity.jpg"
-    },
-    {
-      "name": "스오리",
-      "gender": "female",
-      "cv": "호시노야 시즈쿠",
-      "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Suori.jpg"
-    },
-    {
-      "name": "카리오스",
-      "gender": "male",
-      "cv": "타케토라",
-      "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Karios.jpg"
-    },
-    {
-      "name": "고스",
-      "gender": "male",
-      "cv": "이와사와 토시키",
-      "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Gorth.jpg"
-    },
-    {
-      "name": "무나미",
-      "gender": "female",
-      "cv": "오쿠이 유우코",
-      "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Munami.jpg"
-    },
-    {
-      "name": "셜리",
-      "gender": "female",
-      "cv": "모리 나나코",
-      "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Shirley.jpg"
-    },
-    {
-      "name": "미케네",
-      "gender": "male",
-      "cv": "마에다 레나",
-      "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Mikenne.jpg"
-    },
-    {
-      "name": "페르",
-      "gender": "male",
-      "cv": "세리자와 유우",
-      "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Pell.jpg"
-    },
-    {
-      "name": "쇼토",
-      "gender": "male",
-      "cv": "토쿠이 소라",
-      "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Short.jpg"
-    },
-    {
-      "name": "스코",
-      "gender": "female",
-      "cv": "이자와 시오리",
-      "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Suco.jpg"
-    },
-    {
-      "name": "黒八咫",
-      "gender": "unknown",
-      "cv": "Unknown",
-      "img": "image/charimg/2026/Q2/Jidou_Hanbaiki_ni_Umarekawatta_Ore_wa_Meikyuu_wo_Samayou_3rd_Season/Kuroyata.jpg"
-    }
-  ]
-},
-{
-  "id": 61316,
-  "characters": [
-    {
-      "name": "에밀리아",
-      "gender": "female",
-      "cv": "타카하시 리에",
-      "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Emilia.jpg"
-    },
-    {
-      "name": "나츠키 스바루",
-      "gender": "male",
-      "cv": "코바야시 유스케",
-      "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Subaru_Natsuki.jpg"
-    },
-    {
-      "name": "베아트리스",
-      "gender": "female",
-      "cv": "아라이 사토미",
-      "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Beatrice.jpg"
-    },
-    {
-      "name": "아나스타시아 호신",
-      "gender": "female",
-      "cv": "우에다 카나",
-      "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Anastasia_Hoshin.jpg"
-    },
-    {
-      "name": "람",
-      "gender": "female",
-      "cv": "무라카와 리에",
-      "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Ram.jpg"
-    },
-    {
-      "name": "율리우스 유클리우스",
-      "gender": "male",
-      "cv": "에구치 타쿠야",
-      "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Julius_Euclius.jpg"
-    },
-    {
-      "name": "메일리 포트루트",
-      "gender": "unknown",
-      "cv": "스즈키 에리",
-      "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Meili_Portroute.jpg"
-    },
-    {
-      "name": "펠트",
-      "gender": "female",
-      "cv": "아카사키 치나츠",
-      "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Felt.jpg"
-    },
-    {
-      "name": "렘",
-      "gender": "female",
-      "cv": "미나세 이노리",
-      "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Rem.jpg"
-    },
-    {
-      "name": "라인하르트 반 아스트레아",
-      "gender": "male",
-      "cv": "나카무라 유이치",
-      "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Reinhard_van_Astrea.jpg"
-    },
-    {
-      "name": "로즈월 L. 메이더스",
-      "gender": "male",
-      "cv": "코야스 타케히토",
-      "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Roswaal_Mathers.jpg"
-    },
-    {
-      "name": "펠릭스 아가일",
-      "gender": "male",
-      "cv": "호리에 유이",
-      "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Felix_Argyle.jpg"
-    },
-    {
-      "name": "오토 스웬",
-      "gender": "male",
-      "cv": "아마사키 코헤이",
-      "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Otto_Suwen.jpg"
-    },
-    {
-      "name": "가필 틴젤",
-      "gender": "male",
-      "cv": "오카모토 노부히코",
-      "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Garfiel_Tinsel.jpg"
-    },
-    {
-      "name": "페트라 레이테",
-      "gender": "female",
-      "cv": "코노 마리카",
-      "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Petra_Leyte.jpg"
-    },
-    {
-      "name": "프레데리카 바우먼",
-      "gender": "female",
-      "cv": "나즈카 카오리",
-      "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Frederica_Baumann.jpg"
-    },
-    {
-      "name": "미미 펄배튼",
-      "gender": "female",
-      "cv": "후지이 유키요",
-      "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Mimi_Pearlbaton.jpg"
-    },
-    {
-      "name": "라이 바텐카이토스",
-      "gender": "unknown",
-      "cv": "카와니시 켄고",
-      "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Lye_Batenkaitos.jpg"
-    },
-    {
-      "name": "로이 알파르드",
-      "gender": "unknown",
-      "cv": "카와니시 켄고",
-      "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Roy_Alphard.jpg"
-    },
-    {
-      "name": "루이 아르네브",
-      "gender": "female",
-      "cv": "코하라 코노미",
-      "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Rui_Arneb.jpg"
-    },
-    {
-      "name": "파트라슈",
-      "gender": "unknown",
-      "cv": "소마 고이치",
-      "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Patrasche.jpg"
-    },
-    {
-      "name": "샤울라",
-      "gender": "female",
-      "cv": "파이루즈 아이",
-      "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Shaula.jpg"
-    },
-    {
-      "name": "레이드 아스트레아",
-      "gender": "unknown",
-      "cv": "스기타 토모카즈",
-      "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Reid_Astrea.jpg"
-    },
-    {
-      "name": "리시아",
-      "gender": "female",
-      "cv": "엔도 아야",
-      "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Reshia_Tinzel.jpg"
-    },
-    {
-      "name": "에키드나",
-      "gender": "female",
-      "cv": "우에다 카나",
-      "img": "image/charimg/2026/Q2/ReZero_kara_Hajimeru_Isekai_Seikatsu_4th_Season/Eridna.jpg"
-    }
-  ]
-},
-{
-  "id": 61831,
-  "characters": [
-    {
-      "name": "아서 레윈",
-      "gender": "male",
-      "cv": "후지와라 나츠미",
-      "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Arthur_Leywin.jpg"
-    },
-    {
-      "name": "자스민 플레임스워스",
-      "gender": "female",
-      "cv": "오미가와 치아키",
-      "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Jasmine_Flamesworth.jpg"
-    },
-    {
-      "name": "イライジャ・ナイト",
-      "gender": "male",
-      "cv": "사토 겐",
-      "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Elijah_Knight.jpg"
-    },
-    {
-      "name": "루카스 와익스",
-      "gender": "male",
-      "cv": "치바 쇼야",
-      "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Lucas_Wykes.jpg"
-    },
-    {
-      "name": "테시아 에라리스",
-      "gender": "female",
-      "cv": "이치노세 카나",
-      "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Tessia_Eralith.jpg"
-    },
-    {
-      "name": "레이놀드 레윈",
-      "gender": "male",
-      "cv": "킨죠 야마토",
-      "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Reynolds_Leywin.jpg"
-    },
-    {
-      "name": "헬렌 샤드",
-      "gender": "female",
-      "cv": "오구라 미유",
-      "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Helen_Shard.jpg"
-    },
-    {
-      "name": "아담 크랜슈",
-      "gender": "male",
-      "cv": "키무라 타이히",
-      "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Adam_Krensh.jpg"
-    },
-    {
-      "name": "앨리스 레윈",
-      "gender": "female",
-      "cv": "마에다 레나",
-      "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Alice_Leywin.jpg"
-    },
-    {
-      "name": "다댄 워커",
-      "gender": "male",
-      "cv": "타카하시 신야",
-      "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Durden_Walker.jpg"
-    },
-    {
-      "name": "안젤라 로즈",
-      "gender": "female",
-      "cv": "아케치 리코",
-      "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Angela_Rose.jpg"
-    },
-    {
-      "name": "실비아 인드라스",
-      "gender": "female",
-      "cv": "이자와 시오리",
-      "img": "image/charimg/2026/Q2/Saikyou_no_Ousama,_Nidome_no_Jinsei_wa_Nani_wo_Suru_2nd_Season/Sylvie.jpg"
-    }
-  ]
-},
-{
-  "id": 62604,
-  "characters": [
-    {
-      "name": "세오 타쿠야",
-      "gender": "male",
-      "cv": "코무라 쇼",
-      "img": "image/charimg/2026/Q2/Otaku_ni_Yasashii_Gal_wa_Inai!/Takuya_Seo.jpg"
-    },
-    {
-      "name": "아마네 케이",
-      "gender": "female",
-      "cv": "이나가키 코노미",
-      "img": "image/charimg/2026/Q2/Otaku_ni_Yasashii_Gal_wa_Inai!/Kei_Amane.jpg"
-    },
-    {
-      "name": "이지치 코토코",
-      "gender": "female",
-      "cv": "세리자와 유우",
-      "img": "image/charimg/2026/Q2/Otaku_ni_Yasashii_Gal_wa_Inai!/Kotoko_Ijichi.jpg"
-    },
-    {
-      "name": "이지치 히비키",
-      "gender": "unknown",
-      "cv": "카토 에미리",
-      "img": "image/charimg/2026/Q2/Otaku_ni_Yasashii_Gal_wa_Inai!/Hibiki_Ijichi.jpg"
-    },
-    {
-      "name": "아마미야 사유",
-      "gender": "female",
-      "cv": "코하라 코노미",
-      "img": "image/charimg/2026/Q2/Otaku_ni_Yasashii_Gal_wa_Inai!/Sayu_Amamiya.jpg"
-    },
-    {
-      "name": "이지치 카케루",
-      "gender": "unknown",
-      "cv": "타네자키 아츠미",
-      "img": "image/charimg/2026/Q2/Otaku_ni_Yasashii_Gal_wa_Inai!/Kakeru_Ijichi.jpg"
-    },
-    {
-      "name": "이지치 겐이치로",
-      "gender": "male",
-      "cv": "카사마 쥰",
-      "img": "image/charimg/2026/Q2/Otaku_ni_Yasashii_Gal_wa_Inai!/Genichirou_Ijichi.jpg"
-    }
-  ]
-},
-{
-  "id": 62893,
-  "characters": [
-    {
-      "name": "마리아 안노바치",
-      "gender": "female",
-      "cv": "세리자와 유우",
-      "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Maria_Annovazzi.jpg"
-    },
-    {
-      "name": "레나트 디 루비니",
-      "gender": "male",
-      "cv": "타마루 아츠시",
-      "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Renato_di_Rubini.jpg"
-    },
-    {
-      "name": "이나다 테츠",
-      "gender": "male",
-      "cv": "이나다 테츠",
-      "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Mimi_Chichi.jpg"
-    },
-    {
-      "name": "루비니 왕비",
-      "gender": "female",
-      "cv": "카이다 유코",
-      "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Rubini_Ouhi.jpg"
-    },
-    {
-      "name": "아이다 아메티스",
-      "gender": "female",
-      "cv": "하야미 사오리",
-      "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Aida_Amethis.jpg"
-    },
-    {
-      "name": "마키오",
-      "gender": "unknown",
-      "cv": "코마다 와타루",
-      "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Macchio.jpg"
-    },
-    {
-      "name": "플라치도 디 루비니",
-      "gender": "male",
-      "cv": "우메다 슈이치로",
-      "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Placido_di_Rubini.jpg"
-    },
-    {
-      "name": "고프레드",
-      "gender": "unknown",
-      "cv": "하마노 다이키",
-      "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Goffredo.jpg"
-    },
-    {
-      "name": "라이몬드 치가타",
-      "gender": "male",
-      "cv": "야시로 타쿠",
-      "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Raimondo_Cigata.jpg"
-    },
-    {
-      "name": "테오도리코",
-      "gender": "male",
-      "cv": "유이카와 아사키",
-      "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Teodorico.jpg"
-    },
-    {
-      "name": "엘레오노라 카샬리",
-      "gender": "female",
-      "cv": "마에다 카오리",
-      "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Eleonora_Casciari.jpg"
-    },
-    {
-      "name": "자이라",
-      "gender": "female",
-      "cv": "하나자와 카나",
-      "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Zaira.jpg"
-    },
-    {
-      "name": "로잘리아 피노티",
-      "gender": "female",
-      "cv": "오오쿠보 루미",
-      "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Rosalia_Pinotti.jpg"
-    },
-    {
-      "name": "일레네오 마르케이",
-      "gender": "male",
-      "cv": "하나에 나츠키",
-      "img": "image/charimg/2026/Q2/Nigashita_Sakana_wa_Ookikatta_ga_Tsuriageta_Sakana_ga_Ookisugita_Ken/Ireneo_Marchei.jpg"
-    }
-  ]
-},
-{
-  "id": 59551,
-  "characters": [
-    {
-      "name": "나카무라 오쿠토",
-      "gender": "male",
-      "cv": "코바야시 치아키",
-      "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Okuto_Nakamura.jpg"
-    },
-    {
-      "name": "히로세 아이키",
-      "gender": "male",
-      "cv": "사카키하라 유우키",
-      "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Aiki_Hirose_.jpg"
-    },
-    {
-      "name": "오토기리 소우",
-      "gender": "male",
-      "cv": "에구치 타쿠야",
-      "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Sou_Otogiri.jpg"
-    },
-    {
-      "name": "카와무라 히후미",
-      "gender": "female",
-      "cv": "파이루즈 아이",
-      "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Hifumi_Kawamura.jpg"
-    },
-    {
-      "name": "타케우치 코타",
-      "gender": "male",
-      "cv": "노즈야마 유키히로",
-      "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Kouta_Takeuchi.jpg"
-    },
-    {
-      "name": "무카이 료",
-      "gender": "male",
-      "cv": "타마루 아츠시",
-      "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Ryou_Mukai.jpg"
-    },
-    {
-      "name": "오오모리 츠카사",
-      "gender": "male",
-      "cv": "사사 츠바사",
-      "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Tsukasa_Oomori.jpg"
-    },
-    {
-      "name": "하마오카 유카",
-      "gender": "female",
-      "cv": "코이치 마코토",
-      "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Yuuka_Hamaoka.jpg"
-    },
-    {
-      "name": "오쿠다 마사코",
-      "gender": "female",
-      "cv": "마이하라 유메",
-      "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Masako_Okuda.jpg"
-    },
-    {
-      "name": "아오키야마 레이코",
-      "gender": "female",
-      "cv": "타이치 요우",
-      "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Reiko_Aokiyama.jpg"
-    },
-    {
-      "name": "타무라 아란도",
-      "gender": "male",
-      "cv": "치바 쇼야",
-      "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Arandou_Tamura.jpg"
-    },
-    {
-      "name": "마츠무라 코우세이",
-      "gender": "male",
-      "cv": "오노 켄쇼",
-      "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Kousei_Matsumura.jpg"
-    },
-    {
-      "name": "니오 카오루",
-      "gender": "male",
-      "cv": "타케우치 슌스케",
-      "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Kaoru_Niou.jpg"
-    },
-    {
-      "name": "히로세 사호",
-      "gender": "female",
-      "cv": "나나미 히로키",
-      "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Saho_Hirose.jpg"
-    },
-    {
-      "name": "토도로키 노부",
-      "gender": "male",
-      "cv": "미야케 켄타",
-      "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Nobu_Todoroki.jpg"
-    },
-    {
-      "name": "마쿠노우치",
-      "gender": "male",
-      "cv": "야마구치 캇페이",
-      "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Makunouchi.jpg"
-    },
-    {
-      "name": "타쿠",
-      "gender": "male",
-      "cv": "타케우치 준코",
-      "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Taku.jpg"
-    },
-    {
-      "name": "야마기와 선생",
-      "gender": "male",
-      "cv": "하마노 다이키",
-      "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Yamagiwa-sensei.jpg"
-    },
-    {
-      "name": "나리타 선생",
-      "gender": "female",
-      "cv": "쿠지라",
-      "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Narita-sensei.jpg"
-    },
-    {
-      "name": "바퀴벌레",
-      "gender": "unknown",
-      "cv": "요시다 유리",
-      "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Goki-chan.jpg"
-    },
-    {
-      "name": "사카모토 하나",
-      "gender": "female",
-      "cv": "안자이 유카리",
-      "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Hana_Sakamoto.jpg"
-    },
-    {
-      "name": "米谷飯",
-      "gender": "male",
-      "cv": "사쿠야 슌스케",
-      "img": "image/charimg/2026/Q2/Ganbare!_Nakamura-kun!!/Kometani_Ii.jpg"
-    }
-  ]
-},
-{
-  "id": 60028,
-  "characters": [
-    {
-      "name": "세라피나 드 라빌란트",
-      "gender": "female",
-      "cv": "스즈시로 사유미",
-      "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Serafina_de_Lavillant.jpg"
-    },
-    {
-      "name": "베오르",
-      "gender": "male",
-      "cv": "\t 이노마타 사토시",
-      "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Veor.jpg"
-    },
-    {
-      "name": "체시",
-      "gender": "female",
-      "cv": "\t 히시카와 하나",
-      "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Cersei.jpg"
-    },
-    {
-      "name": "알리사 마르시아스",
-      "gender": "female",
-      "cv": "토요사키 아키",
-      "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Alyssa_Marsius.jpg"
-    },
-    {
-      "name": "컬커 로트",
-      "gender": "male",
-      "cv": "코바야시 유스케",
-      "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Calca_Lot.jpg"
-    },
-    {
-      "name": "님할라",
-      "gender": "unknown",
-      "cv": "쿠보 유리카",
-      "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Nimuhara.jpg"
-    },
-    {
-      "name": "구아스",
-      "gender": "male",
-      "cv": "키쿠치 야스히로",
-      "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Guas.jpg"
-    },
-    {
-      "name": "닐레아",
-      "gender": "unknown",
-      "cv": "타이치 요우",
-      "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Nyrea.jpg"
-    },
-    {
-      "name": "키마키",
-      "gender": "female",
-      "cv": "토미타 미유",
-      "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Kimaki.jpg"
-    },
-    {
-      "name": "발하스",
-      "gender": "male",
-      "cv": "츠지 신파치",
-      "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Balhas.jpg"
-    },
-    {
-      "name": "시디우스",
-      "gender": "male",
-      "cv": "카미야 히로시",
-      "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Sidius.jpg"
-    },
-    {
-      "name": "바스",
-      "gender": "male",
-      "cv": "소마 코이치",
-      "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Vas.jpg"
-    },
-    {
-      "name": "유파",
-      "gender": "unknown",
-      "cv": "카네모토 히사코",
-      "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Yufa.jpg"
-    },
-    {
-      "name": "위스텔레시아 드 일드렌",
-      "gender": "female",
-      "cv": "카이다 유코",
-      "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Wysteresia.jpg"
-    },
-    {
-      "name": "뷰프메이크",
-      "gender": "unknown",
-      "cv": "아사이 아야카",
-      "img": "image/charimg/2026/Q2/Hime_Kishi_wa_Barbaroi_no_Yome/Vyufmec.jpg"
-    }
-  ]
-},
-{
-  "id": 57592,
-  "characters": [
-    {
-      "name": "이시가미 센쿠",
-      "gender": "male",
-      "cv": "코바야시 유스케",
-      "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Senkuu_Ishigami.jpg"
-    },
-    {
-      "name": "코하쿠",
-      "gender": "female",
-      "cv": "누마쿠라 마나미",
-      "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Kohaku.jpg"
-    },
-    {
-      "name": "크롬",
-      "gender": "male",
-      "cv": "사토 겐",
-      "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Chrome.jpg"
-    },
-    {
-      "name": "아사기리 겐",
-      "gender": "male",
-      "cv": "카와니시 켄고",
-      "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Gen_Asagiri.jpg"
-    },
-    {
-      "name": "나나미 류스이",
-      "gender": "male",
-      "cv": "스즈키 료타",
-      "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Ryuusui_Nanami.jpg"
-    },
-    {
-      "name": "오오키 타이주",
-      "gender": "male",
-      "cv": "후루카와 마코토",
-      "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Taiju_Ooki.jpg"
-    },
-    {
-      "name": "시시오 츠카사",
-      "gender": "male",
-      "cv": "나카무라 유이치",
-      "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Tsukasa_Shishiou.jpg"
-    },
-    {
-      "name": "오가와 유즈리하",
-      "gender": "female",
-      "cv": "이치노세 카나",
-      "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Yuzuriha_Ogawa.jpg"
-    },
-    {
-      "name": "스이카",
-      "gender": "female",
-      "cv": "타카하시 카린",
-      "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Suika.jpg"
-    },
-    {
-      "name": "카세키",
-      "gender": "male",
-      "cv": "무기히토",
-      "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Kaseki.jpg"
-    },
-    {
-      "name": "긴로",
-      "gender": "male",
-      "cv": "무라세 아유무",
-      "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Ginrou.jpg"
-    },
-    {
-      "name": "킨로",
-      "gender": "male",
-      "cv": "마에노 토모아키",
-      "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Kinrou.jpg"
-    },
-    {
-      "name": "루리",
-      "gender": "female",
-      "cv": "우에다 레이나",
-      "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Ruri.jpg"
-    },
-    {
-      "name": "우에이 요우",
-      "gender": "male",
-      "cv": "나카지마 요시키",
-      "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/You_Uei.jpg"
-    },
-    {
-      "name": "아카츠키 효가",
-      "gender": "male",
-      "cv": "이시다 아키라",
-      "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Hyouga.jpg"
-    },
-    {
-      "name": "하나다 니키",
-      "gender": "female",
-      "cv": "타네자키 아츠미",
-      "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Nikki_Hanada.jpg"
-    },
-    {
-      "name": "사이온지 우쿄",
-      "gender": "male",
-      "cv": "오노 켄쇼",
-      "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Ukyou_Saionji.jpg"
-    },
-    {
-      "name": "모미지 호무라",
-      "gender": "female",
-      "cv": "토요사키 아키",
-      "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Homura_Momiji.jpg"
-    },
-    {
-      "name": "마그마",
-      "gender": "male",
-      "cv": "마미야 야스히로",
-      "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Magma.jpg"
-    },
-    {
-      "name": "호쿠토자이 미나미",
-      "gender": "female",
-      "cv": "히카사 요코",
-      "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Minami_Hokutouzai.jpg"
-    },
-    {
-      "name": "프랑소와",
-      "gender": "unknown",
-      "cv": "사카모토 마아야",
-      "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Francois.jpg"
-    },
-    {
-      "name": "시시오 미라이",
-      "gender": "female",
-      "cv": "이와미 마나카",
-      "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Mirai_Shishiou.jpg"
-    },
-    {
-      "name": "맨틀",
-      "gender": "male",
-      "cv": "마츠시게 신",
-      "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Mantle.jpg"
-    },
-    {
-      "name": "이시가미 뱌쿠야",
-      "gender": "male",
-      "cv": "미카미 사토시",
-      "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Byakuya_Ishigami.jpg"
-    },
-    {
-      "name": "모즈",
-      "gender": "male",
-      "cv": "오키츠 카즈유키",
-      "img": "image/charimg/2026/Q2/Dr._STONE_SCIENCE_FUTURE/Mozu.jpg"
-    }
-  ]
-},
-{
-  "id": 58832,
-  "characters": [
-    {
-      "name": "쿠지마",
-      "gender": "unknown",
-      "cv": "코즈키 유리아",
-      "img": "image/charimg/2026/Q2/Kujima_Utaeba_Ie_Hororo/Kujima.jpg"
-    },
-    {
-      "name": "코다 아라타",
-      "gender": "male",
-      "cv": "무라세 아유무",
-      "img": "image/charimg/2026/Q2/Kujima_Utaeba_Ie_Hororo/Arata_Kouda.jpg"
-    },
-    {
-      "name": "할아버지",
-      "gender": "male",
-      "cv": "호리 소시로",
-      "img": "image/charimg/2026/Q2/Kujima_Utaeba_Ie_Hororo/Mitsuki-san.jpg"
-    },
-    {
-      "name": "코다 미요시",
-      "gender": "female",
-      "cv": "시라이시 료코",
-      "img": "image/charimg/2026/Q2/Kujima_Utaeba_Ie_Hororo/Miyoshi_Kouda.jpg"
-    },
-    {
-      "name": "코다 스구루",
-      "gender": "male",
-      "cv": "\t 아자카미 요헤이",
-      "img": "image/charimg/2026/Q2/Kujima_Utaeba_Ie_Hororo/Suguru_Kouda.jpg"
-    },
-    {
-      "name": "코다 마사오미",
-      "gender": "male",
-      "cv": "노지마 히로후미",
-      "img": "image/charimg/2026/Q2/Kujima_Utaeba_Ie_Hororo/Masaomi_Kouda.jpg"
-    },
-    {
-      "name": "미츠키 마코토",
-      "gender": "female",
-      "cv": "히에다 네네",
-      "img": "image/charimg/2026/Q2/Kujima_Utaeba_Ie_Hororo/Makoto_Mitsuki.jpg"
-    },
-    {
-      "name": "이치노 토우야",
-      "gender": "male",
-      "cv": "미우라 카이토",
-      "img": "image/charimg/2026/Q2/Kujima_Utaeba_Ie_Hororo/Shuuya_Ichino.jpg"
-    },
-    {
-      "name": "소노다 에이지",
-      "gender": "male",
-      "cv": "Marika",
-      "img": "image/charimg/2026/Q2/Kujima_Utaeba_Ie_Hororo/Eiji_Sonoda.jpg"
-    }
-  ]
-},
-{
-  "id": 60852,
-  "characters": [
-    {
-      "name": "아즈미 미키",
-      "gender": "female",
-      "cv": "이즈미 후카",
-      "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Miki_Azumi.jpg"
-    },
-    {
-      "name": "아마미야 미나토",
-      "gender": "male",
-      "cv": "치바 쇼야",
-      "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Minato_Amamiya.jpg"
-    },
-    {
-      "name": "히카와 코유키",
-      "gender": "female",
-      "cv": "나가세 안나",
-      "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Koyuki_Hikawa.jpg"
-    },
-    {
-      "name": "히노 요타",
-      "gender": "male",
-      "cv": "이노마타 사토시",
-      "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Youta_Hino.jpg"
-    },
-    {
-      "name": "쿠리키 모모카",
-      "gender": "female",
-      "cv": "키토 아카리",
-      "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Momoka_Kuriki.jpg"
-    },
-    {
-      "name": "미나토의 여자",
-      "gender": "female",
-      "cv": "후지데라 미노리",
-      "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Minato_no_Kanojo.jpg"
-    },
-    {
-      "name": "아즈미 유키",
-      "gender": "male",
-      "cv": "하타노 카케루",
-      "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Yuki_Azumi.jpg"
-    },
-    {
-      "name": "タツ",
-      "gender": "male",
-      "cv": "와타나베 토시키",
-      "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Tatsu.jpg"
-    },
-    {
-      "name": "아타가와 아키네",
-      "gender": "female",
-      "cv": "카와이다 나츠미",
-      "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Akine_Atagawa.jpg"
-    },
-    {
-      "name": "田中",
-      "gender": "male",
-      "cv": "시라이시 켄토",
-      "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Tanaka.jpg"
-    },
-    {
-      "name": "天野空",
-      "gender": "female",
-      "cv": "카미죠 사에코",
-      "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Sora_Amano.jpg"
-    },
-    {
-      "name": "아타가와 마나츠",
-      "gender": "female",
-      "cv": "오기노 하즈키",
-      "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Manatsu_Atagawa.jpg"
-    },
-    {
-      "name": "코와카 와카나",
-      "gender": "female",
-      "cv": "코와카 와카나",
-      "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Noriko-sensei.jpg"
-    },
-    {
-      "name": "남동생",
-      "gender": "male",
-      "cv": "아케치 리코",
-      "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Haruto_Hino.jpg"
-    },
-    {
-      "name": "우피",
-      "gender": "unknown",
-      "cv": "Unknown",
-      "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Uppi.jpg"
-    },
-    {
-      "name": "사쿠라",
-      "gender": "female",
-      "cv": "타카기시 미리아",
-      "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Miharu.jpg"
-    },
-    {
-      "name": "미도리카와 다이치",
-      "gender": "male",
-      "cv": "카지와라 가쿠토",
-      "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Daichi_Midorikawa.jpg"
-    },
-    {
-      "name": "아카리",
-      "gender": "female",
-      "cv": "엔도 아야",
-      "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Youta_no_Haha.jpg"
-    },
-    {
-      "name": "이가라시 츠바사",
-      "gender": "male",
-      "cv": "코바야시 치아키",
-      "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Tsubasa_Igarashi.jpg"
-    },
-    {
-      "name": "무코",
-      "gender": "female",
-      "cv": "무라카미 마나츠",
-      "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Muko.jpg"
-    },
-    {
-      "name": "赤星隼人",
-      "gender": "male",
-      "cv": "야스다 리쿠야",
-      "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Hayato_Akahoshi.jpg"
-    },
-    {
-      "name": "아버지",
-      "gender": "male",
-      "cv": "와타나베 토시키",
-      "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Youta_no_Chichi.jpg"
-    },
-    {
-      "name": "폰타",
-      "gender": "unknown",
-      "cv": "야스다 리쿠야",
-      "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Ponta.jpg"
-    },
-    {
-      "name": "마리",
-      "gender": "female",
-      "cv": "카미죠 사에코",
-      "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Mari.jpg"
-    },
-    {
-      "name": "나기사",
-      "gender": "female",
-      "cv": "야마무라 히비쿠",
-      "img": "image/charimg/2026/Q2/Koori_no_Jouheki/Nagisa_Amamiya.jpg"
-    }
-  ]
-},
-{
-  "id": 59835,
-  "characters": [
-    {
-      "name": "미요시 아이미",
-      "gender": "female",
-      "cv": "히에다 네네",
-      "img": "image/charimg/2026/Q2/Kirio_Fanclub/Aimi_Miyoshi.jpg"
-    },
-    {
-      "name": "소메타니 나미",
-      "gender": "female",
-      "cv": "와카야마 시온",
-      "img": "image/charimg/2026/Q2/Kirio_Fanclub/Nami_Sometani.jpg"
-    },
-    {
-      "name": "키리오 켄",
-      "gender": "male",
-      "cv": "카지와라 가쿠토",
-      "img": "image/charimg/2026/Q2/Kirio_Fanclub/Kirio.jpg"
-    },
-    {
-      "name": "만다 미츠루",
-      "gender": "male",
-      "cv": "히로세 유우야",
-      "img": "image/charimg/2026/Q2/Kirio_Fanclub/Mitsuru_Manda.jpg"
-    },
-    {
-      "name": "모모세 하야토",
-      "gender": "male",
-      "cv": "오가사와라 진",
-      "img": "image/charimg/2026/Q2/Kirio_Fanclub/Hayato_Momose.jpg"
-    },
-    {
-      "name": "무라오카 사츠키",
-      "gender": "female",
-      "cv": "이토 아야사",
-      "img": "image/charimg/2026/Q2/Kirio_Fanclub/Satsuki_Muraoka.jpg"
-    },
-    {
-      "name": "타시로 세이라",
-      "gender": "female",
-      "cv": "이즈미 후카",
-      "img": "image/charimg/2026/Q2/Kirio_Fanclub/Seira_Tashiro.jpg"
-    }
-  ]
-},
-{
-  "id": 59443,
-  "characters": [
-    {
-      "name": "센지 토우야",
-      "gender": "male",
-      "cv": "치바 쇼야",
-      "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Touya_Senji.jpg"
-    },
-    {
-      "name": "하이토 루오 브웨트",
-      "gender": "female",
-      "cv": "마루오카 와카나",
-      "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Haito_Le_Buffett.jpg"
-    },
-    {
-      "name": "존 V 노이만",
-      "gender": "female",
-      "cv": "사쿠라 아야네",
-      "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/John_V._Neumann.jpg"
-    },
-    {
-      "name": "F 나이팅게일",
-      "gender": "female",
-      "cv": "우에다 레이나",
-      "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/F._Nightingale.jpg"
-    },
-    {
-      "name": "한스 U 루델",
-      "gender": "male",
-      "cv": "나미카와 다이스케",
-      "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Hans_Rudel.jpg"
-    },
-    {
-      "name": "A 히틀러",
-      "gender": "unknown",
-      "cv": "무라세 아유무",
-      "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Adolf_Hitler.jpg"
-    },
-    {
-      "name": "앨런 스미시",
-      "gender": "unknown",
-      "cv": "토비타 노부오",
-      "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Alan_Smithee.jpg"
-    },
-    {
-      "name": "폴 T",
-      "gender": "unknown",
-      "cv": "미즈나카 마사아키",
-      "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Pol_Pot.jpg"
-    },
-    {
-      "name": "키타즈카 이츠키",
-      "gender": "male",
-      "cv": "호소야 요시마사",
-      "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Itsuki_Kitazuka.jpg"
-    },
-    {
-      "name": "I 뉴턴",
-      "gender": "male",
-      "cv": "이시카와 카이토",
-      "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Newton.jpg"
-    },
-    {
-      "name": "M 다르몽",
-      "gender": "unknown",
-      "cv": "토미타 미유",
-      "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Charlotte_Corday.jpg"
-    },
-    {
-      "name": "블라드 3세",
-      "gender": "male",
-      "cv": "호리우치 켄유",
-      "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Vlad_Sansei.jpg"
-    },
-    {
-      "name": "A 아인슈타인",
-      "gender": "female",
-      "cv": "시라이시 하루카",
-      "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Albert_Einstein.jpg"
-    },
-    {
-      "name": "항우",
-      "gender": "unknown",
-      "cv": "코니시 카츠유키",
-      "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Kouu.jpg"
-    },
-    {
-      "name": "扇寺西耶",
-      "gender": "unknown",
-      "cv": "이리노 미유",
-      "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Seiya_Senji.jpg"
-    },
-    {
-      "name": "후나사카 히로시",
-      "gender": "male",
-      "cv": "나카무라 슈고",
-      "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Hiroshi_Funasaka.jpg"
-    },
-    {
-      "name": "M 노스트라다무스",
-      "gender": "unknown",
-      "cv": "사카구치 슈헤이",
-      "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Nostradamus.jpg"
-    },
-    {
-      "name": "가이우스 율리우스 카이사르",
-      "gender": "unknown",
-      "cv": "코바야시 유스케",
-      "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Gaius_Julius_Caesar.jpg"
-    },
-    {
-      "name": "야규 쥬베 미츠요시",
-      "gender": "female",
-      "cv": "이노우에 마리나",
-      "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Juubei_Yagyu.jpg"
-    },
-    {
-      "name": "카를로스 N 헤스콕",
-      "gender": "male",
-      "cv": "사쿠라이 타카히로",
-      "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Carlos_Hathcock.jpg"
-    },
-    {
-      "name": "E 슈뢰딩거",
-      "gender": "male",
-      "cv": "후쿠야마 쥰",
-      "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/E._Schrodinger.jpg"
-    },
-    {
-      "name": "미나미 요시키",
-      "gender": "male",
-      "cv": "하나에 나츠키",
-      "img": "image/charimg/2026/Q2/Reincarnation_no_Kaben/Minami_Yoshiki.jpg"
-    }
-  ]
-},
-{
-  "id": 61943,
-  "characters": [
-    {
-      "name": "하이바라 나츠키",
-      "gender": "male",
-      "cv": "우에무라 유토",
-      "img": "image/charimg/2026/Q2/Haibara-kun_no_Tsuyokute_Seishun_New_Game/Natsuki_Haibara.jpg"
-    },
-    {
-      "name": "호시미야 히카리",
-      "gender": "female",
-      "cv": "타카오 카논",
-      "img": "image/charimg/2026/Q2/Haibara-kun_no_Tsuyokute_Seishun_New_Game/Hikari_Hoshimiya.jpg"
-    },
-    {
-      "name": "모토미야 미오리",
-      "gender": "female",
-      "cv": "나카무라 칸나",
-      "img": "image/charimg/2026/Q2/Haibara-kun_no_Tsuyokute_Seishun_New_Game/Miori_Motomiya.jpg"
-    },
-    {
-      "name": "사쿠라 우타",
-      "gender": "female",
-      "cv": "야마네 아야",
-      "img": "image/charimg/2026/Q2/Haibara-kun_no_Tsuyokute_Seishun_New_Game/Uta_Sakura.jpg"
-    },
-    {
-      "name": "나나세 유이노",
-      "gender": "female",
-      "cv": "스즈시로 사유미",
-      "img": "image/charimg/2026/Q2/Haibara-kun_no_Tsuyokute_Seishun_New_Game/Yuino_Nanase.jpg"
-    },
-    {
-      "name": "나기우라 타츠야",
-      "gender": "male",
-      "cv": "스즈키 료타",
-      "img": "image/charimg/2026/Q2/Haibara-kun_no_Tsuyokute_Seishun_New_Game/Tatsuya_Nagiura.jpg"
-    },
-    {
-      "name": "시라토리 레이타",
-      "gender": "male",
-      "cv": "오오노 토모히로",
-      "img": "image/charimg/2026/Q2/Haibara-kun_no_Tsuyokute_Seishun_New_Game/Reita_Shiratori.jpg"
-    },
-    {
-      "name": "혼도 세리카",
-      "gender": "female",
-      "cv": "아이미",
-      "img": "image/charimg/2026/Q2/Haibara-kun_no_Tsuyokute_Seishun_New_Game/Serika_Hondo.jpg"
-    }
-  ]
-},
-{
-  "id": 58820,
-  "characters": [
-    {
-      "name": "다바타 와카나",
-      "gender": "female",
-      "cv": "나카바야시 니나",
-      "img": "image/charimg/2026/Q2/Awajima_Hyakkei/Wakana_Tabata.jpg"
-    },
-    {
-      "name": "다케하라 기누에",
-      "gender": "female",
-      "cv": "타이치 요우",
-      "img": "image/charimg/2026/Q2/Awajima_Hyakkei/Kinue_Takehara.jpg"
-    },
-    {
-      "name": "우에다 료코",
-      "gender": "female",
-      "cv": "카야노 아이",
-      "img": "image/charimg/2026/Q2/Awajima_Hyakkei/Ryoko_Ueda.jpg"
-    },
-    {
-      "name": "오카베 에미",
-      "gender": "female",
-      "cv": "후지와라 나츠미",
-      "img": "image/charimg/2026/Q2/Awajima_Hyakkei/Emi_Okabe.jpg"
-    },
-    {
-      "name": "이부키 가쓰라코",
-      "gender": "female",
-      "cv": "츠네마츠 아유미",
-      "img": "image/charimg/2026/Q2/Awajima_Hyakkei/Katsurako_Ibuki.jpg"
-    },
-    {
-      "name": "후지사와 에리",
-      "gender": "female",
-      "cv": "시미즈 리사",
-      "img": "image/charimg/2026/Q2/Awajima_Hyakkei/Eri_Fujisawa.jpg"
-    },
-    {
-      "name": "우타가와 시즈카",
-      "gender": "female",
-      "cv": "토마리 아스나",
-      "img": "image/charimg/2026/Q2/Awajima_Hyakkei/Shizuka_Utagawa.jpg"
-    },
-    {
-      "name": "타카나시 사라",
-      "gender": "female",
-      "cv": "이치노세 카나",
-      "img": "image/charimg/2026/Q2/Awajima_Hyakkei/Sara_Takanashi.jpg"
-    },
-    {
-      "name": "아사카 미도리",
-      "gender": "female",
-      "cv": "하나자와 카나",
-      "img": "image/charimg/2026/Q2/Awajima_Hyakkei/Midori_Asaka.jpg"
-    }
-  ]
-},
-{
-  "id": 62964,
-  "characters": [
-    {
-      "name": "오우츠키 사쿠야",
-      "gender": "male",
-      "cv": "야스다 리쿠야",
-      "img": "image/charimg/2026/Q2/Mata_Korosarete_Shimatta_no_desu_ne,_Tantei-sama/Sakuya_Outsuki.jpg"
-    },
-    {
-      "name": "리리테아",
-      "gender": "female",
-      "cv": "와카야마 시온",
-      "img": "image/charimg/2026/Q2/Mata_Korosarete_Shimatta_no_desu_ne,_Tantei-sama/Lilithea.jpg"
-    },
-    {
-      "name": "피도",
-      "gender": "unknown",
-      "cv": "타카다 유우키",
-      "img": "image/charimg/2026/Q2/Mata_Korosarete_Shimatta_no_desu_ne,_Tantei-sama/Fido.jpg"
-    },
-    {
-      "name": "소조로기 카오루타",
-      "gender": "male",
-      "cv": "코니시 카츠유키",
-      "img": "image/charimg/2026/Q2/Mata_Korosarete_Shimatta_no_desu_ne,_Tantei-sama/Kaoruta_Sozorogi.jpg"
-    },
-    {
-      "name": "하이가미네 유리우",
-      "gender": "female",
-      "cv": "아오야마 요시노",
-      "img": "image/charimg/2026/Q2/Mata_Korosarete_Shimatta_no_desu_ne,_Tantei-sama/Yuriu_Haigamine.jpg"
-    },
-    {
-      "name": "샤르디나 인페리셔스",
-      "gender": "female",
-      "cv": "쿠기미야 리에",
-      "img": "image/charimg/2026/Q2/Mata_Korosarete_Shimatta_no_desu_ne,_Tantei-sama/Shardina_Infelicius.jpg"
-    },
-    {
-      "name": "벨카 제펠린",
-      "gender": "female",
-      "cv": "타카다 유우키",
-      "img": "image/charimg/2026/Q2/Mata_Korosarete_Shimatta_no_desu_ne,_Tantei-sama/Belka_Zeppelin.jpg"
-    }
-  ]
-},
-{
-  "id": 56876,
-  "characters": [
-    {
-      "name": "시이나 마히루",
-      "gender": "female",
-      "cv": "이와미 마나카",
-      "img": "image/charimg/2026/Q2/Otonari_no_Tenshi-sama_ni_Itsunomanika_Dame_Ningen_ni_Sareteita_Ken_2nd_Season/Mahiru_Shiina.jpg"
-    },
-    {
-      "name": "후지미야 아마네",
-      "gender": "male",
-      "cv": "반 타이토",
-      "img": "image/charimg/2026/Q2/Otonari_no_Tenshi-sama_ni_Itsunomanika_Dame_Ningen_ni_Sareteita_Ken_2nd_Season/Amane_Fujimiya.jpg"
-    },
-    {
-      "name": "시라카와 치토세",
-      "gender": "female",
-      "cv": "시라이시 하루카",
-      "img": "image/charimg/2026/Q2/Otonari_no_Tenshi-sama_ni_Itsunomanika_Dame_Ningen_ni_Sareteita_Ken_2nd_Season/Chitose_Shirakawa.jpg"
-    },
-    {
-      "name": "아카자와 이츠키",
-      "gender": "male",
-      "cv": "야시로 타쿠",
-      "img": "image/charimg/2026/Q2/Otonari_no_Tenshi-sama_ni_Itsunomanika_Dame_Ningen_ni_Sareteita_Ken_2nd_Season/Itsuki_Akazawa.jpg"
-    },
-    {
-      "name": "키도 아야카",
-      "gender": "female",
-      "cv": "코우노 마리카",
-      "img": "image/charimg/2026/Q2/Otonari_no_Tenshi-sama_ni_Itsunomanika_Dame_Ningen_ni_Sareteita_Ken_2nd_Season/Ayaka_Kido.jpg"
-    },
-    {
-      "name": "후지미야 슈토",
-      "gender": "unknown",
-      "cv": "후루카와 마코토",
-      "img": "image/charimg/2026/Q2/Otonari_no_Tenshi-sama_ni_Itsunomanika_Dame_Ningen_ni_Sareteita_Ken_2nd_Season/Shuuto_Fujimiya.jpg"
-    },
-    {
-      "name": "후지미야 시호코",
-      "gender": "female",
-      "cv": "카네모토 히사코",
-      "img": "image/charimg/2026/Q2/Otonari_no_Tenshi-sama_ni_Itsunomanika_Dame_Ningen_ni_Sareteita_Ken_2nd_Season/Shihoko_Fujimiya.jpg"
-    },
-    {
-      "name": "카도와키 유타",
-      "gender": "male",
-      "cv": "오노 켄쇼",
-      "img": "image/charimg/2026/Q2/Otonari_no_Tenshi-sama_ni_Itsunomanika_Dame_Ningen_ni_Sareteita_Ken_2nd_Season/Yuuta_Kadowaki.jpg"
-    }
-  ]
-},
-{
-  "id": 59970,
-  "characters": [
-    {
-      "name": "리무루 템페스트",
-      "gender": "male (past life) → agender",
-      "cv": "오카사키 미호",
-      "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Rimuru_Tempest.jpg"
-    },
-    {
-      "name": "디아블로",
-      "gender": "male",
-      "cv": "사쿠라이 타카히로",
-      "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Diablo.jpg"
-    },
-    {
-      "name": "쿠로베",
-      "gender": "male",
-      "cv": "야나기타 쥰이치",
-      "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Kurobee.jpg"
-    },
-    {
-      "name": "베스타",
-      "gender": "male",
-      "cv": "츠다 켄지로",
-      "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Vesta.jpg"
-    },
-    {
-      "name": "하쿠로우",
-      "gender": "male",
-      "cv": "오오츠카 호츄",
-      "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Hakurou.jpg"
-    },
-    {
-      "name": "리그루",
-      "gender": "male",
-      "cv": "이시야 하루키",
-      "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Rigur.jpg"
-    },
-    {
-      "name": "프레이",
-      "gender": "female",
-      "cv": "오오하라 사야카",
-      "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Frey.jpg"
-    },
-    {
-      "name": "그란베르 로조",
-      "gender": "male",
-      "cv": "오노 다이스케",
-      "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Granbell_Rosso.jpg"
-    },
-    {
-      "name": "사카구치 히나타",
-      "gender": "female",
-      "cv": "누마쿠라 마나미",
-      "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Hinata_Sakaguchi.jpg"
-    },
-    {
-      "name": "풋맨",
-      "gender": "unknown",
-      "cv": "카와다 신지",
-      "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Footman.jpg"
-    },
-    {
-      "name": "베니마루",
-      "gender": "male",
-      "cv": "후루카와 마코토",
-      "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Benimaru.jpg"
-    },
-    {
-      "name": "세키구치 료타",
-      "gender": "male",
-      "cv": "이시가미 시즈카",
-      "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Ryouta_Sekiguchi.jpg"
-    },
-    {
-      "name": "카이진",
-      "gender": "male",
-      "cv": "오노 아츠시",
-      "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Kaijin.jpg"
-    },
-    {
-      "name": "마리아베르 로조",
-      "gender": "female",
-      "cv": "미나세 이노리",
-      "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Mariabell_Rosso.jpg"
-    },
-    {
-      "name": "베루도라 템페스트",
-      "gender": "male",
-      "cv": "마에노 토모아키",
-      "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Veldora_Tempest.jpg"
-    },
-    {
-      "name": "가루도 묘르마일",
-      "gender": "male",
-      "cv": "아오야마 유타카",
-      "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Garde-Myourmiles.jpg"
-    },
-    {
-      "name": "리그루도",
-      "gender": "male",
-      "cv": "야마모토 카네히라",
-      "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Rigurd.jpg"
-    },
-    {
-      "name": "밀림 나바",
-      "gender": "female",
-      "cv": "히다카 리나",
-      "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Milim_Nava.jpg"
-    },
-    {
-      "name": "ジンライ",
-      "gender": "male",
-      "cv": "키우치 타로",
-      "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Jinrai.jpg"
-    },
-    {
-      "name": "레온 크롬웰",
-      "gender": "male",
-      "cv": "후쿠야마 쥰",
-      "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Leon_Cromwell.jpg"
-    },
-    {
-      "name": "미사키 켄야",
-      "gender": "male",
-      "cv": "아사이 아야카",
-      "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Kenya_Misaki.jpg"
-    },
-    {
-      "name": "고부타",
-      "gender": "male",
-      "cv": "토마리 아스나",
-      "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Gobta.jpg"
-    },
-    {
-      "name": "소우카",
-      "gender": "female",
-      "cv": "오오쿠보 루미",
-      "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Souka.jpg"
-    },
-    {
-      "name": "아다루만",
-      "gender": "male",
-      "cv": "스기타 토모카즈",
-      "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Adalman.jpg"
-    },
-    {
-      "name": "프릿츠",
-      "gender": "male",
-      "cv": "무라타 타이시",
-      "img": "image/charimg/2026/Q2/Tensei_Shitara_Slime_Datta_Ken_4th_Season/Fritz.jpg"
-    }
-  ]
-},
-{
-  "id": 62068,
-  "characters": [
-    {
-      "name": "유키오",
-      "gender": "unknown",
-      "cv": "히라카와 다이스케",
-      "img": "image/charimg/2026/Q2/Snowball_Earth/Yukio.jpg"
-    },
-    {
-      "name": "야부사메 테츠오",
-      "gender": "male",
-      "cv": "요시나가 타쿠토",
-      "img": "image/charimg/2026/Q2/Snowball_Earth/Tetsuo_Yabusame.jpg"
-    },
-    {
-      "name": "키노에 오토이치",
-      "gender": "male",
-      "cv": "나가세 안나",
-      "img": "image/charimg/2026/Q2/Snowball_Earth/Otoichi_Kinoe.jpg"
-    },
-    {
-      "name": "사가미 잇세키",
-      "gender": "male",
-      "cv": "스기타 토모카즈",
-      "img": "image/charimg/2026/Q2/Snowball_Earth/Isseki_Sagami.jpg"
-    },
-    {
-      "name": "타키무라 하가네",
-      "gender": "female",
-      "cv": "타무라 코노미",
-      "img": "image/charimg/2026/Q2/Snowball_Earth/Hagane_Takimura.jpg"
-    },
-    {
-      "name": "아카기 리코",
-      "gender": "female",
-      "cv": "카와세 마키",
-      "img": "image/charimg/2026/Q2/Snowball_Earth/Riko_Akagi.jpg"
-    },
-    {
-      "name": "노기 아오",
-      "gender": "female",
-      "cv": "코시미즈 아미",
-      "img": "image/charimg/2026/Q2/Snowball_Earth/Ao_Nogi.jpg"
-    },
-    {
-      "name": "우즈키 유마",
-      "gender": "female",
-      "cv": "나라히라 마나미",
-      "img": "image/charimg/2026/Q2/Snowball_Earth/Yuma_Uzuki.jpg"
-    },
-    {
-      "name": "사쿠라이 타미야",
-      "gender": "male",
-      "cv": "오오노 토모히로",
-      "img": "image/charimg/2026/Q2/Snowball_Earth/Tamiya_Sakurai.jpg"
-    },
-    {
-      "name": "사이온지 마코토",
-      "gender": "male",
-      "cv": "모리나가 치토세",
-      "img": "image/charimg/2026/Q2/Snowball_Earth/Makoto_Saionji.jpg"
-    },
-    {
-      "name": "이즈미 나유타",
-      "gender": "male",
-      "cv": "카와니시 켄고",
-      "img": "image/charimg/2026/Q2/Snowball_Earth/Nayuta_Izumi.jpg"
-    }
-  ]
-},
-{
-  "id": 62981,
-  "characters": [
-    {
-      "name": "토미네 잇세",
-      "gender": "male",
-      "cv": "사토 타쿠야",
-      "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Issei_Tomine.jpg"
-    },
-    {
-      "name": "칸자키 시즈쿠",
-      "gender": "male",
-      "cv": "카메나시 카즈야",
-      "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Shizuku_Kanzaki.jpg"
-    },
-    {
-      "name": "시노하라 미야비",
-      "gender": "female",
-      "cv": "우치다 마아야",
-      "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Miyabi_Shinohara.jpg"
-    },
-    {
-      "name": "도이 로베르",
-      "gender": "male",
-      "cv": "우라야마 진",
-      "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Robert_Doi.jpg"
-    },
-    {
-      "name": "토미네 세라",
-      "gender": "female",
-      "cv": "Lynn",
-      "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Sarah.jpg"
-    },
-    {
-      "name": "河原毛",
-      "gender": "male",
-      "cv": "이시즈미 아키히코",
-      "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Kawarage.jpg"
-    },
-    {
-      "name": "칸자키 유타카",
-      "gender": "male",
-      "cv": "긴가 반조",
-      "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Yutaka_Kanzaki.jpg"
-    },
-    {
-      "name": "혼마 쵸스케",
-      "gender": "male",
-      "cv": "호리 소시로",
-      "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Chousuke_Honma.jpg"
-    },
-    {
-      "name": "키류 료코",
-      "gender": "female",
-      "cv": "카이다 유코",
-      "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Ryouko_Kiryuo.jpg"
-    },
-    {
-      "name": "키르기스 로랑",
-      "gender": "female",
-      "cv": "코하라 코노미",
-      "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Loulan.jpg"
-    },
-    {
-      "name": "후지에다 시로",
-      "gender": "male",
-      "cv": "후지 신슈",
-      "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Shirou_Fujieda.jpg"
-    },
-    {
-      "name": "사이온지 마키",
-      "gender": "female",
-      "cv": "와타나베 미사",
-      "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Maki_Saionji.jpg"
-    },
-    {
-      "name": "미시마 소이치로",
-      "gender": "male",
-      "cv": "우치다 유야",
-      "img": "image/charimg/2026/Q2/Kami_no_Shizuku/Souichirou_Mishima.jpg"
-    }
-  ]
-},
-{
-  "id": 61186,
-  "characters": [
-    {
-      "name": "토나미 이부키",
-      "gender": "female",
-      "cv": "아오야마 요시노",
-      "img": "image/charimg/2026/Q2/Kamiina_Botan,_Yoeru_Sugata_wa_Yuri_no_Hana/Ibuki_Tonami.jpg"
-    },
-    {
-      "name": "카미이나 보탄",
-      "gender": "female",
-      "cv": "스즈시로 사유미",
-      "img": "image/charimg/2026/Q2/Kamiina_Botan,_Yoeru_Sugata_wa_Yuri_no_Hana/Botan_Kamiina.jpg"
-    },
-    {
-      "name": "유사 아카네",
-      "gender": "female",
-      "cv": "아마미 유리나",
-      "img": "image/charimg/2026/Q2/Kamiina_Botan,_Yoeru_Sugata_wa_Yuri_no_Hana/Akane_Yusa.jpg"
-    },
-    {
-      "name": "키타모리 야에카",
-      "gender": "female",
-      "cv": "토미타 미유",
-      "img": "image/charimg/2026/Q2/Kamiina_Botan,_Yoeru_Sugata_wa_Yuri_no_Hana/Yaeka_Kitamori.jpg"
-    },
-    {
-      "name": "구죠 카나데",
-      "gender": "female",
-      "cv": "코토부키 미나코",
-      "img": "image/charimg/2026/Q2/Kamiina_Botan,_Yoeru_Sugata_wa_Yuri_no_Hana/Kanade_Gujou.jpg"
-    },
-    {
-      "name": "장징란",
-      "gender": "female",
-      "cv": "카와세 마키",
-      "img": "image/charimg/2026/Q2/Kamiina_Botan,_Yoeru_Sugata_wa_Yuri_no_Hana/Chin-lan_Chang.jpg"
-    }
-  ]
-},
-{
-  "id": 61200,
-  "characters": [
-    {
-      "name": "진시황",
-      "gender": "male",
-      "cv": "이시카와 카이토",
-      "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Shihuang_Qin.jpg"
-    },
-    {
-      "name": "괼",
-      "gender": "female",
-      "cv": "쿠로사와 토모요",
-      "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Göll.jpg"
-    },
-    {
-      "name": "하데스",
-      "gender": "male",
-      "cv": "오키아유 료타로",
-      "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Hades.jpg"
-    },
-    {
-      "name": "레오니다스",
-      "gender": "male",
-      "cv": "시로쿠마 히로시",
-      "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Leonidas.jpg"
-    },
-    {
-      "name": "니콜라 테슬라",
-      "gender": "male",
-      "cv": "후루카와 마코토",
-      "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Nikola_Tesla.jpg"
-    },
-    {
-      "name": "브륀힐트",
-      "gender": "female",
-      "cv": "사와시로 미유키",
-      "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Brunhilde.jpg"
-    },
-    {
-      "name": "아폴론",
-      "gender": "male",
-      "cv": "스즈무라 켄이치",
-      "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Apollo.jpg"
-    },
-    {
-      "name": "베엘제붑",
-      "gender": "male",
-      "cv": "나미카와 다이스케",
-      "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Beelzebub.jpg"
-    },
-    {
-      "name": "사사키 코지로",
-      "gender": "male",
-      "cv": "야마지 카즈히로",
-      "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Kojirou_Sasaki.jpg"
-    },
-    {
-      "name": "후긴",
-      "gender": "male",
-      "cv": "나카노 다이스케",
-      "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Huginn.jpg"
-    },
-    {
-      "name": "안드라스",
-      "gender": "male",
-      "cv": "Unknown",
-      "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Andras.jpg"
-    },
-    {
-      "name": "오키타 소지",
-      "gender": "male",
-      "cv": "요나가 츠바사",
-      "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Souji_Okita.jpg"
-    },
-    {
-      "name": "콘도 이사미",
-      "gender": "male",
-      "cv": "타카기 와타루",
-      "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Isami_Kondou.jpg"
-    },
-    {
-      "name": "알베르트 아인슈타인",
-      "gender": "male",
-      "cv": "Unknown",
-      "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Albert_Einstein.jpg"
-    },
-    {
-      "name": "치우",
-      "gender": "male",
-      "cv": "Unknown",
-      "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Chi_You.jpg"
-    },
-    {
-      "name": "게이뢰눌",
-      "gender": "female",
-      "cv": "토도 마이",
-      "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Geirolul.jpg"
-    },
-    {
-      "name": "헤임달",
-      "gender": "male",
-      "cv": "노즈야마 유키히로",
-      "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Heimdall.jpg"
-    },
-    {
-      "name": "유방",
-      "gender": "male",
-      "cv": "스기사키 료",
-      "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Bang_Liu.jpg"
-    },
-    {
-      "name": "릴리스",
-      "gender": "female",
-      "cv": "타이치 요우",
-      "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Lilith.jpg"
-    },
-    {
-      "name": "플라우로스",
-      "gender": "male",
-      "cv": "Unknown",
-      "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Flauros.jpg"
-    },
-    {
-      "name": "아이작 뉴턴",
-      "gender": "male",
-      "cv": "Unknown",
-      "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Isaac_Newton.jpg"
-    },
-    {
-      "name": "춘연",
-      "gender": "female",
-      "cv": "오리이 아유미",
-      "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Chun_Yan.jpg"
-    },
-    {
-      "name": "피톤",
-      "gender": "non-binary",
-      "cv": "시라토리 테츠",
-      "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Python.jpg"
-    },
-    {
-      "name": "무닌",
-      "gender": "male",
-      "cv": "야마구치 토모히로",
-      "img": "image/charimg/2026/Q2/Shuumatsu_no_Valkyrie_III/Muninn.jpg"
-    }
-  ]
-},
-{
-  "id": 56646,
-  "characters": [
-    {
-      "name": "켄시로",
-      "gender": "male",
-      "cv": "타케우치 슌스케",
-      "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Kenshirou.jpg"
-    },
-    {
-      "name": "바트",
-      "gender": "male",
-      "cv": "야마시타 다이키",
-      "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Bat.jpg"
-    },
-    {
-      "name": "린",
-      "gender": "female",
-      "cv": "M·A·O",
-      "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Lin.jpg"
-    },
-    {
-      "name": "레이",
-      "gender": "unknown",
-      "cv": "나카무라 유이치",
-      "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Rei.jpg"
-    },
-    {
-      "name": "다이아",
-      "gender": "male",
-      "cv": "마미야 야스히로",
-      "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Diamond.jpg"
-    },
-    {
-      "name": "토요",
-      "gender": "unknown",
-      "cv": "사다오카 사유리",
-      "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Toyo.jpg"
-    },
-    {
-      "name": "카넬",
-      "gender": "male",
-      "cv": "호시노 타카노리",
-      "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Colonel.jpg"
-    },
-    {
-      "name": "마미야",
-      "gender": "unknown",
-      "cv": "아오키 루리코",
-      "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Mamiya.jpg"
-    },
-    {
-      "name": "자칼",
-      "gender": "male",
-      "cv": "마츠야마 타카시",
-      "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Jackal.jpg"
-    },
-    {
-      "name": "쟈기",
-      "gender": "unknown",
-      "cv": "타카기 와타루",
-      "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Jagi.jpg"
-    },
-    {
-      "name": "클로버",
-      "gender": "male",
-      "cv": "카츠 안리",
-      "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Club.jpg"
-    },
-    {
-      "name": "폭스",
-      "gender": "male",
-      "cv": "이나다 테츠",
-      "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Fox.jpg"
-    },
-    {
-      "name": "토키",
-      "gender": "male",
-      "cv": "모가미 츠구오",
-      "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Toki.jpg"
-    },
-    {
-      "name": "스페이드",
-      "gender": "male",
-      "cv": "타케토라",
-      "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Spade.jpg"
-    },
-    {
-      "name": "류우켄",
-      "gender": "unknown",
-      "cv": "다나카 히데유키",
-      "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Ryuuken.jpg"
-    },
-    {
-      "name": "라오우",
-      "gender": "male",
-      "cv": "쿠스노키 타이텐",
-      "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Raoh.jpg"
-    },
-    {
-      "name": "리마",
-      "gender": "female",
-      "cv": "모로호시 스미레",
-      "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Rima.jpg"
-    },
-    {
-      "name": "마드 군조",
-      "gender": "male",
-      "cv": "사이토 지로",
-      "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Mad_Sarge.jpg"
-    },
-    {
-      "name": "신",
-      "gender": "unknown",
-      "cv": "유사 코지",
-      "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Shin.jpg"
-    },
-    {
-      "name": "하트",
-      "gender": "male",
-      "cv": "챠후린",
-      "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Heart.jpg"
-    },
-    {
-      "name": "죠니",
-      "gender": "male",
-      "cv": "하나와 에이지",
-      "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Johnny.jpg"
-    },
-    {
-      "name": "유리아",
-      "gender": "unknown",
-      "cv": "하야미 사오리",
-      "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Yuria.jpg"
-    },
-    {
-      "name": "아이리",
-      "gender": "unknown",
-      "cv": "이나가와 에리",
-      "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Airi.jpg"
-    },
-    {
-      "name": "지드",
-      "gender": "male",
-      "cv": "노무라 켄지",
-      "img": "image/charimg/2026/Q2/Hokuto_no_Ken_FIST_OF_THE_NORTH_STAR/Zeed.jpg"
-    }
-  ]
-},
-{
-  "id": 62485,
-  "characters": [
-    {
-      "name": "미즈하라 치즈루",
-      "gender": "female",
-      "cv": "아마미야 소라",
-      "img": "image/charimg/2026/Q2/Kanojo,_Okarishimasu_5th_Season/Chizuru_Ichinose.jpg"
-    },
-    {
-      "name": "키노시타 카즈야",
-      "gender": "male",
-      "cv": "호리에 슌",
-      "img": "image/charimg/2026/Q2/Kanojo,_Okarishimasu_5th_Season/Kazuya_Kinoshita.jpg"
-    },
-    {
-      "name": "나나미 마미",
-      "gender": "female",
-      "cv": "유우키 아오이",
-      "img": "image/charimg/2026/Q2/Kanojo,_Okarishimasu_5th_Season/Mami_Nanami.jpg"
-    },
-    {
-      "name": "야에모리 미니",
-      "gender": "female",
-      "cv": "세리자와 유우",
-      "img": "image/charimg/2026/Q2/Kanojo,_Okarishimasu_5th_Season/Mini_Yaemori.jpg"
-    },
-    {
-      "name": "사쿠라사와 스미",
-      "gender": "female",
-      "cv": "타카하시 리에",
-      "img": "image/charimg/2026/Q2/Kanojo,_Okarishimasu_5th_Season/Sumi_Sakurasawa.jpg"
-    },
-    {
-      "name": "사라시나 루카",
-      "gender": "female",
-      "cv": "토야마 나오",
-      "img": "image/charimg/2026/Q2/Kanojo,_Okarishimasu_5th_Season/Ruka_Sarashina.jpg"
-    },
-    {
-      "name": "쿠리바야시 슌",
-      "gender": "male",
-      "cv": "카지와라 가쿠토",
-      "img": "image/charimg/2026/Q2/Kanojo,_Okarishimasu_5th_Season/Shun_Kuribayashi.jpg"
-    },
-    {
-      "name": "키노시타 나고미",
-      "gender": "female",
-      "cv": "노자와 유카리",
-      "img": "image/charimg/2026/Q2/Kanojo,_Okarishimasu_5th_Season/Nagomi_Kinoshita.jpg"
-    }
-  ]
-},
-{
-  "id": 57466,
-  "characters": [
-    {
-      "name": "마인",
-      "gender": "female",
-      "cv": "이구치 유카",
-      "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Myne.jpg"
-    },
-    {
-      "name": "페르디난드",
-      "gender": "male",
-      "cv": "하야미 쇼",
-      "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Ferdinand.jpg"
-    },
-    {
-      "name": "질베스타 토터 에렌페스트",
-      "gender": "male",
-      "cv": "이노우에 카즈히코",
-      "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Sylvester.jpg"
-    },
-    {
-      "name": "칼스테드 토터 링크베르트",
-      "gender": "male",
-      "cv": "모리카와 토시유키",
-      "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Karstedt.jpg"
-    },
-    {
-      "name": "다무엘",
-      "gender": "male",
-      "cv": "우메하라 유이치로",
-      "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Damuel_Bernett.jpg"
-    },
-    {
-      "name": "프랑",
-      "gender": "male",
-      "cv": "카리노 쇼",
-      "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Fran.jpg"
-    },
-    {
-      "name": "길",
-      "gender": "unknown",
-      "cv": "산페이 유코",
-      "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Gil.jpg"
-    },
-    {
-      "name": "빌마",
-      "gender": "female",
-      "cv": "야스노 키요노",
-      "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Wilma.jpg"
-    },
-    {
-      "name": "벤노",
-      "gender": "male",
-      "cv": "코야스 타케히토",
-      "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Benno.jpg"
-    },
-    {
-      "name": "루츠",
-      "gender": "male",
-      "cv": "타무라 무츠미",
-      "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Lutz.jpg"
-    },
-    {
-      "name": "투리",
-      "gender": "female",
-      "cv": "나카지마 메구미",
-      "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Tuuli.jpg"
-    },
-    {
-      "name": "자크",
-      "gender": "male",
-      "cv": "후쿠하라 카츠미",
-      "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Zack.jpg"
-    },
-    {
-      "name": "요한",
-      "gender": "male",
-      "cv": "타카하시 코우지",
-      "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Johann.jpg"
-    },
-    {
-      "name": "レッサー",
-      "gender": "unknown",
-      "cv": "Unknown",
-      "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Lessy.jpg"
-    },
-    {
-      "name": "플로렌치아",
-      "gender": "female",
-      "cv": "타카야마 미나미",
-      "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Florencia.jpg"
-    },
-    {
-      "name": "엘라",
-      "gender": "female",
-      "cv": "마루야마 나기사",
-      "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Ella.jpg"
-    },
-    {
-      "name": "보니파티우스",
-      "gender": "male",
-      "cv": "야마지 카즈히로",
-      "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Bonifatius.jpg"
-    },
-    {
-      "name": "코르넬리우스",
-      "gender": "male",
-      "cv": "야마시타 세이이치로",
-      "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Cornelius.jpg"
-    },
-    {
-      "name": "하르트무트",
-      "gender": "male",
-      "cv": "우치다 유마",
-      "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Hartmut.jpg"
-    },
-    {
-      "name": "베로니카",
-      "gender": "female",
-      "cv": "코야마 마미",
-      "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Veronica.jpg"
-    },
-    {
-      "name": "유스톡스",
-      "gender": "male",
-      "cv": "세키 토시히코",
-      "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Justus.jpg"
-    },
-    {
-      "name": "구스타프",
-      "gender": "unknown",
-      "cv": "나카 히로시",
-      "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Gustav.jpg"
-    },
-    {
-      "name": "브리기테",
-      "gender": "female",
-      "cv": "세토 아사미",
-      "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Brigitte_Armbos.jpg"
-    },
-    {
-      "name": "빌프리트",
-      "gender": "male",
-      "cv": "테라사키 유카",
-      "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Wilfried.jpg"
-    },
-    {
-      "name": "프리다",
-      "gender": "unknown",
-      "cv": "우치다 아야",
-      "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Freida.jpg"
-    }
-  ]
-},
-{
-  "id": 60310,
-  "characters": [
-    {
-      "name": "스즈키 이루마",
-      "gender": "male",
-      "cv": "무라세 아유무",
-      "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Iruma_Suzuki.jpg"
-    },
-    {
-      "name": "아스모데우스 앨리스",
-      "gender": "male",
-      "cv": "키무라 료헤이",
-      "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Alice_Asmodeus.jpg"
-    },
-    {
-      "name": "발락 클라라",
-      "gender": "female",
-      "cv": "아사이 아야카",
-      "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Clara_Valac.jpg"
-    },
-    {
-      "name": "가프 고에몽",
-      "gender": "male",
-      "cv": "오오카와 겐키",
-      "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Goemon_Garp.jpg"
-    },
-    {
-      "name": "오페라",
-      "gender": "non-binary",
-      "cv": "사이가 미츠키",
-      "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Opera.jpg"
-    },
-    {
-      "name": "아즈키",
-      "gender": "female",
-      "cv": "야마모토 노조미",
-      "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Azuki.jpg"
-    },
-    {
-      "name": "베리알 베리 라즈베리",
-      "gender": "male",
-      "cv": "마츠오카 요시츠구",
-      "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Raspberry_Berry_Belial.jpg"
-    },
-    {
-      "name": "푸르손 소이",
-      "gender": "male",
-      "cv": "이토 세츠오",
-      "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Soi_Purson.jpg"
-    },
-    {
-      "name": "아가레스 피케로",
-      "gender": "male",
-      "cv": "요시나가 타쿠토",
-      "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Picero_Agares.jpg"
-    },
-    {
-      "name": "암두스키아스 포로",
-      "gender": "male",
-      "cv": "코야스 타케히토",
-      "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Amduscias_Poro.jpg"
-    },
-    {
-      "name": "오로바스 코코",
-      "gender": "male",
-      "cv": "야스모토 히로키",
-      "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Walb.jpg"
-    },
-    {
-      "name": "갸리",
-      "gender": "female",
-      "cv": "마츠오카 미사토",
-      "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Gyari.jpg"
-    },
-    {
-      "name": "카임 카무이",
-      "gender": "male",
-      "cv": "카지와라 가쿠토",
-      "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Kamui_Caim.jpg"
-    },
-    {
-      "name": "큐파",
-      "gender": "unknown",
-      "cv": "나가사와 미키",
-      "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Kyupa.jpg"
-    },
-    {
-      "name": "레비아탄 레이지",
-      "gender": "male",
-      "cv": "우치다 유마",
-      "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Leviathan_Leiji.jpg"
-    },
-    {
-      "name": "알로켈 슈나이더",
-      "gender": "male",
-      "cv": "토키 슌이치",
-      "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Schneider_Allocer.jpg"
-    },
-    {
-      "name": "메메",
-      "gender": "unknown",
-      "cv": "테라사키 유카",
-      "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Meimei.jpg"
-    },
-    {
-      "name": "로노웨 로미엘",
-      "gender": "male",
-      "cv": "스즈키 타츠히사",
-      "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Romiere_Ronove.jpg"
-    },
-    {
-      "name": "보니",
-      "gender": "male",
-      "cv": "Unknown",
-      "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Bonny.jpg"
-    },
-    {
-      "name": "아미 키리요",
-      "gender": "male",
-      "cv": "오사카 료타",
-      "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Kiriwo_Amy.jpg"
-    },
-    {
-      "name": "크로셀 케로리",
-      "gender": "female",
-      "cv": "토야마 나오",
-      "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Keroli_Crocell.jpg"
-    },
-    {
-      "name": "나베리우스 카르에고",
-      "gender": "male",
-      "cv": "오노 다이스케",
-      "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Kalego_Naberius.jpg"
-    },
-    {
-      "name": "앰프시 나프라",
-      "gender": "female",
-      "cv": "카나자와 마이",
-      "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Nafra_Ampsey.jpg"
-    },
-    {
-      "name": "도산코",
-      "gender": "unknown",
-      "cv": "이자와 시오리",
-      "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Dosanko.jpg"
-    },
-    {
-      "name": "이포스 이쵸",
-      "gender": "male",
-      "cv": "콘도 타카유키",
-      "img": "image/charimg/2026/Q2/Mairimashita!_Iruma-kun_4/Ichou_Ipos.jpg"
-    }
-  ]
-},
-{
-  "id": 60444,
-  "characters": [
-    {
-      "name": "히와무라 히요리",
-      "gender": "female",
-      "cv": "코우노 마리카",
-      "img": "image/charimg/2026/Q2/Yowa_Yowa_Sensei/Hiyori_Hiwamura.jpg"
-    },
-    {
-      "name": "아비쿠라 아키히토",
-      "gender": "male",
-      "cv": "하타노 카케루",
-      "img": "image/charimg/2026/Q2/Yowa_Yowa_Sensei/Akihito_Abikura.jpg"
-    },
-    {
-      "name": "무쿠바야시 미즈키",
-      "gender": "female",
-      "cv": "이고마 유리에",
-      "img": "image/charimg/2026/Q2/Yowa_Yowa_Sensei/Mizuki_Mukubayashi.jpg"
-    },
-    {
-      "name": "유키시타 유우키",
-      "gender": "female",
-      "cv": "사사하라 유우",
-      "img": "image/charimg/2026/Q2/Yowa_Yowa_Sensei/Yuuki_Yukishita.jpg"
-    },
-    {
-      "name": "쿠구리 카야",
-      "gender": "female",
-      "cv": "나츠요시 유우코",
-      "img": "image/charimg/2026/Q2/Yowa_Yowa_Sensei/Kaya_Kuguri.jpg"
-    },
-    {
-      "name": "아비쿠라 아케미",
-      "gender": "female",
-      "cv": "나카하라 마이",
-      "img": "image/charimg/2026/Q2/Yowa_Yowa_Sensei/Akemi_Abikura.jpg"
-    }
-  ]
-},
-{
-  "id": 62825,
-  "characters": [
-    {
-      "name": "마나베 히비키",
-      "gender": "male",
-      "cv": "카네모토 히사코",
-      "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Hibiki_Manabe.jpg"
-    },
-    {
-      "name": "에마리아",
-      "gender": "female",
-      "cv": "이토 시즈카",
-      "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Emalia_Steinbart.jpg"
-    },
-    {
-      "name": "서포 짱",
-      "gender": "unknown",
-      "cv": "타무라 유카리",
-      "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Sapo-chan.jpg"
-    },
-    {
-      "name": "마신",
-      "gender": "female",
-      "cv": "스즈모토 아키호",
-      "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Majin.jpg"
-    },
-    {
-      "name": "클로드",
-      "gender": "male",
-      "cv": "미야케 켄타",
-      "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Claude.jpg"
-    },
-    {
-      "name": "이벨",
-      "gender": "female",
-      "cv": "히카사 요코",
-      "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Ivel.jpg"
-    },
-    {
-      "name": "리리안",
-      "gender": "female",
-      "cv": "라마르파 미셸 타테야마",
-      "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Lilian.jpg"
-    },
-    {
-      "name": "뷔네",
-      "gender": "unknown",
-      "cv": "슈토 유키나",
-      "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Vene.jpg"
-    },
-    {
-      "name": "스티리아",
-      "gender": "female",
-      "cv": "토쿠이 소라",
-      "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Steelia.jpg"
-    },
-    {
-      "name": "주신",
-      "gender": "male",
-      "cv": "오키츠 카즈유키",
-      "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Shushin.jpg"
-    },
-    {
-      "name": "명신",
-      "gender": "female",
-      "cv": "타나카 치에미",
-      "img": "image/charimg/2026/Q2/Saikyou_no_Shokugyou_wa_Yuusha_demo_Kenja_demo_Naku_Kanteishi_(Kari)_Rashii_desu_yo/Meijin.jpg"
-    }
-  ]
-},
-{
-  "id": 62391,
-  "characters": [
-    {
-      "name": "오오가미 쥬조",
-      "gender": "male",
-      "cv": "산페이 유코",
-      "img": "image/charimg/2026/Q2/Kill_Ao/Juuzou_Ougami.jpg"
-    },
-    {
-      "name": "미츠오카 노렌",
-      "gender": "female",
-      "cv": "이즈미 후카",
-      "img": "image/charimg/2026/Q2/Kill_Ao/Noren_Mitsuoka.jpg"
-    },
-    {
-      "name": "네코타 코타츠",
-      "gender": "male",
-      "cv": "우메다 슈이치로",
-      "img": "image/charimg/2026/Q2/Kill_Ao/Kotatsu_Nekota.jpg"
-    },
-    {
-      "name": "텐도 텐마",
-      "gender": "male",
-      "cv": "오오츠카 타케오",
-      "img": "image/charimg/2026/Q2/Kill_Ao/Tenma_Tendou.jpg"
-    },
-    {
-      "name": "시라이시 치사토",
-      "gender": "female",
-      "cv": "타네자키 아츠미",
-      "img": "image/charimg/2026/Q2/Kill_Ao/Chisato_Shiraishi.jpg"
-    },
-    {
-      "name": "시라이시 료",
-      "gender": "male",
-      "cv": "카와시마 레이지",
-      "img": "image/charimg/2026/Q2/Kill_Ao/Ryou_Shiraishi.jpg"
-    },
-    {
-      "name": "코하자메 신",
-      "gender": "male",
-      "cv": "사쿠마 다이스케",
-      "img": "image/charimg/2026/Q2/Kill_Ao/Shin_Kohazame.jpg"
-    },
-    {
-      "name": "와니부치 에리",
-      "gender": "female",
-      "cv": "우치야마 유미",
-      "img": "image/charimg/2026/Q2/Kill_Ao/Eri_Wanibuchi.jpg"
-    },
-    {
-      "name": "린도 에이지",
-      "gender": "male",
-      "cv": "나카지마 요시키",
-      "img": "image/charimg/2026/Q2/Kill_Ao/Eiji_Rindou.jpg"
-    },
-    {
-      "name": "린도 카즈마",
-      "gender": "male",
-      "cv": "치바 쇼야",
-      "img": "image/charimg/2026/Q2/Kill_Ao/Kazuma_Rindou.jpg"
-    },
-    {
-      "name": "타카다",
-      "gender": "female",
-      "cv": "나카무라 칸나",
-      "img": "image/charimg/2026/Q2/Kill_Ao/Reika_Takada.jpg"
-    },
-    {
-      "name": "바바",
-      "gender": "female",
-      "cv": "아사히나 마도카",
-      "img": "image/charimg/2026/Q2/Kill_Ao/Tomomi_Baba.jpg"
-    },
-    {
-      "name": "보스",
-      "gender": "male",
-      "cv": "토치 히로키",
-      "img": "image/charimg/2026/Q2/Kill_Ao/Boss.jpg"
-    },
-    {
-      "name": "판다 마스크",
-      "gender": "male",
-      "cv": "테즈카 히로미치",
-      "img": "image/charimg/2026/Q2/Kill_Ao/Panda_Mask.jpg"
-    },
-    {
-      "name": "오토히메 마이",
-      "gender": "female",
-      "cv": "하세가와 이쿠미",
-      "img": "image/charimg/2026/Q2/Kill_Ao/Mai_Otohime.jpg"
-    }
-  ]
-},
-{
-  "id": 62164,
-  "characters": [
-    {
-      "name": "오우사키 아카네",
-      "gender": "female",
-      "cv": "나가세 안나",
-      "img": "image/charimg/2026/Q2/Akane-banashi/Akane_Ousaki.jpg"
-    },
-    {
-      "name": "네리마야 카라시",
-      "gender": "male",
-      "cv": "에구치 타쿠야",
-      "img": "image/charimg/2026/Q2/Akane-banashi/Karashi_Nerimaya.jpg"
-    },
-    {
-      "name": "코라기 히카루",
-      "gender": "female",
-      "cv": "타카하시 리에",
-      "img": "image/charimg/2026/Q2/Akane-banashi/Hikaru_Koragi.jpg"
-    },
-    {
-      "name": "아라카와 카이세이",
-      "gender": "male",
-      "cv": "시오노 아키히사",
-      "img": "image/charimg/2026/Q2/Akane-banashi/Kaisei_Arakawa.jpg"
-    },
-    {
-      "name": "아라카와 신타",
-      "gender": "male",
-      "cv": "후쿠야마 쥰",
-      "img": "image/charimg/2026/Q2/Akane-banashi/Shinta_Arakawa.jpg"
-    },
-    {
-      "name": "아라카와 마이케루",
-      "gender": "male",
-      "cv": "시마자키 노부나가",
-      "img": "image/charimg/2026/Q2/Akane-banashi/Maikeru_Arakawa.jpg"
-    },
-    {
-      "name": "아라카와 코구마",
-      "gender": "male",
-      "cv": "코바야시 치아키",
-      "img": "image/charimg/2026/Q2/Akane-banashi/Koguma_Arakawa.jpg"
-    },
-    {
-      "name": "아라카와 쿄지",
-      "gender": "male",
-      "cv": "아자카미 요헤이",
-      "img": "image/charimg/2026/Q2/Akane-banashi/Kyoji_Arakawa.jpg"
-    },
-    {
-      "name": "아라카와 구리코",
-      "gender": "male",
-      "cv": "야마시타 세이이치로",
-      "img": "image/charimg/2026/Q2/Akane-banashi/Guriko_Arakawa.jpg"
-    },
-    {
-      "name": "아라카와 시구마",
-      "gender": "male",
-      "cv": "테라소마 마사키",
-      "img": "image/charimg/2026/Q2/Akane-banashi/Shiguma_Arakawa.jpg"
-    },
-    {
-      "name": "아라카와 잇쇼",
-      "gender": "male",
-      "cv": "오오츠카 아키오",
-      "img": "image/charimg/2026/Q2/Akane-banashi/Isshou_Arakawa.jpg"
-    },
-    {
-      "name": "오우사키 마사키",
-      "gender": "female",
-      "cv": "이토 시즈카",
-      "img": "image/charimg/2026/Q2/Akane-banashi/Masaki_Ousaki.jpg"
-    },
-    {
-      "name": "아라카와 젠쇼",
-      "gender": "male",
-      "cv": "타치키 후미히코",
-      "img": "image/charimg/2026/Q2/Akane-banashi/Zensho_Arakawa.jpg"
-    },
-    {
-      "name": "요시노 사키",
-      "gender": "female",
-      "cv": "코나츠 유미코",
-      "img": "image/charimg/2026/Q2/Akane-banashi/Saki_Yoshino.jpg"
-    },
-    {
-      "name": "카시오 키미히사",
-      "gender": "male",
-      "cv": "이와사키 료타",
-      "img": "image/charimg/2026/Q2/Akane-banashi/Kimihisa_Kashio.jpg"
-    },
-    {
-      "name": "점보",
-      "gender": "male",
-      "cv": "토마리 아스나",
-      "img": "image/charimg/2026/Q2/Akane-banashi/Jumbo_Ozaki.jpg"
-    },
-    {
-      "name": "아라카와 잇켄",
-      "gender": "male",
-      "cv": "히라타 히로아키",
-      "img": "image/charimg/2026/Q2/Akane-banashi/Ikken_Arakawa.jpg"
-    },
-    {
-      "name": "尾崎ママ",
-      "gender": "female",
-      "cv": "히로마츠 세리카",
-      "img": "image/charimg/2026/Q2/Akane-banashi/Ozaki_Mama.jpg"
-    },
-    {
-      "name": "마도카",
-      "gender": "male",
-      "cv": "와카바야시 유우",
-      "img": "image/charimg/2026/Q2/Akane-banashi/Yanagiya_Sensei.jpg"
-    },
-    {
-      "name": "이와시미즈 마치코",
-      "gender": "female",
-      "cv": "이세 마리야",
-      "img": "image/charimg/2026/Q2/Akane-banashi/Machiko_Iwashimizu.jpg"
-    },
-    {
-      "name": "코미 사에",
-      "gender": "female",
-      "cv": "시마다 아이노",
-      "img": "image/charimg/2026/Q2/Akane-banashi/Sae_Komi.jpg"
-    },
-    {
-      "name": "사카키 류쟈쿠",
-      "gender": "male",
-      "cv": "오키츠 카즈유키",
-      "img": "image/charimg/2026/Q2/Akane-banashi/Ryujaku_Sakaki.jpg"
-    },
-    {
-      "name": "카시와야 하쿠슈",
-      "gender": "male",
-      "cv": "에라고야 코스케",
-      "img": "image/charimg/2026/Q2/Akane-banashi/Shirasu_Kashiwaya.jpg"
-    },
-    {
-      "name": "미쿠리야 마모루",
-      "gender": "male",
-      "cv": "타케다 코지",
-      "img": "image/charimg/2026/Q2/Akane-banashi/Mamoru_Mikuriya.jpg"
-    },
-    {
-      "name": "히이라기",
-      "gender": "female",
-      "cv": "스기야마 리호",
-      "img": "image/charimg/2026/Q2/Akane-banashi/Hiiragi.jpg"
-    }
-  ]
-},
-{
-  "id": 62048,
-  "characters": [
-    {
-      "name": "마오",
-      "gender": "male",
-      "cv": "카지 유우키",
-      "img": "image/charimg/2026/Q2/MAO/Mao.jpg"
-    },
-    {
-      "name": "키바 나노카",
-      "gender": "female",
-      "cv": "카와이다 나츠미",
-      "img": "image/charimg/2026/Q2/MAO/Nanoka_Kiba.jpg"
-    },
-    {
-      "name": "햣카",
-      "gender": "male",
-      "cv": "시모노 히로",
-      "img": "image/charimg/2026/Q2/MAO/Hyakka.jpg"
-    },
-    {
-      "name": "우오즈미 후나",
-      "gender": "unknown",
-      "cv": "쿠마이 모토코",
-      "img": "image/charimg/2026/Q2/MAO/Uozumi.jpg"
-    },
-    {
-      "name": "묘귀",
-      "gender": "unknown",
-      "cv": "마츠야마 타카시",
-      "img": "image/charimg/2026/Q2/MAO/Byouki.jpg"
-    },
-    {
-      "name": "카몬",
-      "gender": "male",
-      "cv": "토요나가 토시유키",
-      "img": "image/charimg/2026/Q2/MAO/Kamon.jpg"
-    },
-    {
-      "name": "사나",
-      "gender": "female",
-      "cv": "시미즈 리사",
-      "img": "image/charimg/2026/Q2/MAO/Sana.jpg"
-    },
-    {
-      "name": "하쿠비",
-      "gender": "unknown",
-      "cv": "사토 타쿠야",
-      "img": "image/charimg/2026/Q2/MAO/Hakubi.jpg"
-    },
-    {
-      "name": "오토야",
-      "gender": "male",
-      "cv": "테라사와 모모카",
-      "img": "image/charimg/2026/Q2/MAO/Otoya.jpg"
-    },
-    {
-      "name": "다이고",
-      "gender": "unknown",
-      "cv": "코니시 카츠유키",
-      "img": "image/charimg/2026/Q2/MAO/Daigo.jpg"
-    },
-    {
-      "name": "시라누이",
-      "gender": "unknown",
-      "cv": "오키츠 카즈유키",
-      "img": "image/charimg/2026/Q2/MAO/Shiranui.jpg"
-    },
-    {
-      "name": "나츠노",
-      "gender": "female",
-      "cv": "쿠기미야 리에",
-      "img": "image/charimg/2026/Q2/MAO/Natsuno.jpg"
-    },
-    {
-      "name": "텐코",
-      "gender": "unknown",
-      "cv": "히카사 요코",
-      "img": "image/charimg/2026/Q2/MAO/Tenko.jpg"
-    },
-    {
-      "name": "카가미 소마",
-      "gender": "unknown",
-      "cv": "카이토 타스쿠",
-      "img": "image/charimg/2026/Q2/MAO/Souma_Kagami.jpg"
-    },
-    {
-      "name": "유라코",
-      "gender": "unknown",
-      "cv": "우에다 레이나",
-      "img": "image/charimg/2026/Q2/MAO/Yurako.jpg"
-    },
-    {
-      "name": "호쇼 카가리",
-      "gender": "unknown",
-      "cv": "시모지 시노",
-      "img": "image/charimg/2026/Q2/MAO/Kagari_Houshou.jpg"
-    }
-  ]
-},
-{
-  "id": 61443,
-  "characters": [
-    {
-      "name": "카요 히나기쿠",
-      "gender": "female",
-      "cv": "누쿠이 유카",
-      "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Hinagiku_Kayou.jpg"
-    },
-    {
-      "name": "히메다카 사쿠라",
-      "gender": "female",
-      "cv": "아오야마 요시노",
-      "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Sakura_Himedaka.jpg"
-    },
-    {
-      "name": "칸츠바키 로우세이",
-      "gender": "male",
-      "cv": "사카타 쇼고",
-      "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Rosei_Kantsubaki.jpg"
-    },
-    {
-      "name": "칸게츠 이테쵸",
-      "gender": "male",
-      "cv": "히노 사토시",
-      "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Itechou_Kangetsu.jpg"
-    },
-    {
-      "name": "하자쿠라 루리",
-      "gender": "female",
-      "cv": "우에사카 스미레",
-      "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Ruri_Hazakura.jpg"
-    },
-    {
-      "name": "하자쿠라 아야메",
-      "gender": "female",
-      "cv": "바바 란코",
-      "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Ayame_Hazakura.jpg"
-    },
-    {
-      "name": "이와이즈키 나데시코",
-      "gender": "female",
-      "cv": "사와다 히메",
-      "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Nadeshiko_Iwaizuki.jpg"
-    },
-    {
-      "name": "아자미 린도우",
-      "gender": "male",
-      "cv": "야시로 타쿠",
-      "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Rindo_Azami.jpg"
-    },
-    {
-      "name": "유키야나기 코바이",
-      "gender": "female",
-      "cv": "하나자와 카나",
-      "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Koubai_Yukiyanagi.jpg"
-    },
-    {
-      "name": "나즈나",
-      "gender": "female",
-      "cv": "토야마 나오",
-      "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Nazuna.jpg"
-    },
-    {
-      "name": "이시하라",
-      "gender": "female",
-      "cv": "미카와 하루나",
-      "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Ishihara.jpg"
-    },
-    {
-      "name": "봄의 마을 이장",
-      "gender": "female",
-      "cv": "코우다 나오코",
-      "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Haru_no_Satoosa.jpg"
-    },
-    {
-      "name": "카요 슌게츠",
-      "gender": "male",
-      "cv": "유사 코지",
-      "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Shungetsu_Kayou.jpg"
-    },
-    {
-      "name": "미스즈 헨더슨",
-      "gender": "female",
-      "cv": "히카사 요코",
-      "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Misuzu_Henderson.jpg"
-    },
-    {
-      "name": "나가츠키 레이코",
-      "gender": "female",
-      "cv": "마츠오카 미사토",
-      "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Reiko_Nagatsuki.jpg"
-    },
-    {
-      "name": "미카미",
-      "gender": "male",
-      "cv": "타도코로 히나타",
-      "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Mikami.jpg"
-    },
-    {
-      "name": "토도 유키미",
-      "gender": "male",
-      "cv": "미야자키 유우",
-      "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Yukimi_Toudou.jpg"
-    },
-    {
-      "name": "시모츠키 린타로",
-      "gender": "male",
-      "cv": "카시와자키 하야토",
-      "img": "image/charimg/2026/Q2/Shunkashuutou_Daikousha_Haru_no_Mai/Rintarou_Shimotsuki.jpg"
-    }
-  ]
-},
-{
-  "id": 62913,
-  "characters": [
-    {
-      "name": "아메짱",
-      "gender": "female",
-      "cv": "아마키 샐리",
-      "img": "image/charimg/2026/Q2/NEEDY_GIRL_OVERDOSE/Ame-chan.jpg"
-    },
-    {
-      "name": "맹독전파소녀☆퍼플 롤리팝",
-      "gender": "female",
-      "cv": "카와구치 리나",
-      "img": "image/charimg/2026/Q2/NEEDY_GIRL_OVERDOSE/Moudoku_Denpa_Shoujo☆Purple_Lollipop.jpg"
-    },
-    {
-      "name": "고쿠바라 미치카",
-      "gender": "female",
-      "cv": "시이나 사츠키",
-      "img": "image/charimg/2026/Q2/NEEDY_GIRL_OVERDOSE/Michica_Gokubara.jpg"
-    },
-    {
-      "name": "네치카 님",
-      "gender": "female",
-      "cv": "호시키 세에나",
-      "img": "image/charimg/2026/Q2/NEEDY_GIRL_OVERDOSE/Nechika-sama.jpg"
-    },
-    {
-      "name": "카체",
-      "gender": "female",
-      "cv": "나가세 안나",
-      "img": "image/charimg/2026/Q2/NEEDY_GIRL_OVERDOSE/Kache.jpg"
-    }
-  ]
-},
-{
-  "id": 61501,
-  "characters": [
-    {
-      "name": "카난 님은 초보 악마",
-      "gender": "female",
-      "cv": "코가 아오이",
-      "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Kanan_Zebul.jpg"
-    },
-    {
-      "name": "쿄우기 요우지",
-      "gender": "male",
-      "cv": "야마시타 세이이치로",
-      "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Youji_Kyougi.jpg"
-    },
-    {
-      "name": "쟌느",
-      "gender": "female",
-      "cv": "스즈시로 사유미",
-      "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Jeanne.jpg"
-    },
-    {
-      "name": "마스라오 나데코",
-      "gender": "female",
-      "cv": "나나세 아야카",
-      "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Nadeshiko_Masurao.jpg"
-    },
-    {
-      "name": "아미",
-      "gender": "female",
-      "cv": "카와세 마키",
-      "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Ami.jpg"
-    },
-    {
-      "name": "벨제붑",
-      "gender": "male",
-      "cv": "쿠로다 타카야",
-      "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Beelzebub.jpg"
-    },
-    {
-      "name": "릴림",
-      "gender": "female",
-      "cv": "난죠 요시노",
-      "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Lilim_Zebul.jpg"
-    },
-    {
-      "name": "미르티",
-      "gender": "female",
-      "cv": "이즈미 후카",
-      "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Milch_Zebul.jpg"
-    },
-    {
-      "name": "미엘",
-      "gender": "female",
-      "cv": "토오노 히카루",
-      "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Miel_Zebul.jpg"
-    },
-    {
-      "name": "다이후고인 베리카",
-      "gender": "female",
-      "cv": "우치다 마아야",
-      "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Berika_Daifugoin.jpg"
-    },
-    {
-      "name": "제블가의 메이드장",
-      "gender": "female",
-      "cv": "코키도 시호",
-      "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Zebul-ka_Maid-Chou.jpg"
-    },
-    {
-      "name": "코다곤",
-      "gender": "female",
-      "cv": "쿠노 미사키",
-      "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Kodagon.jpg"
-    },
-    {
-      "name": "다곤",
-      "gender": "male",
-      "cv": "스기타 토모카즈",
-      "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Dagon.jpg"
-    },
-    {
-      "name": "로리카와 유이",
-      "gender": "female",
-      "cv": "타케타츠 아야나",
-      "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Yui_Rorikawa.jpg"
-    },
-    {
-      "name": "유리노 유리코",
-      "gender": "female",
-      "cv": "오구라 유이",
-      "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Yuriko_Yurino.jpg"
-    },
-    {
-      "name": "레이젠 료코",
-      "gender": "female",
-      "cv": "코바야시 유우",
-      "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Ryouko_Reizen.jpg"
-    },
-    {
-      "name": "타카키요 아빠",
-      "gender": "male",
-      "cv": "오키아유 료타로",
-      "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Takakiyo_Papa.jpg"
-    },
-    {
-      "name": "타카키요 마마",
-      "gender": "female",
-      "cv": "미나구치 유코",
-      "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Takakiyo_Mama.jpg"
-    },
-    {
-      "name": "타카키요 쇼타로",
-      "gender": "male",
-      "cv": "코하라 코노미",
-      "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Shoutarou_Takakiyo.jpg"
-    },
-    {
-      "name": "メェ",
-      "gender": "unknown",
-      "cv": "Misano Sakai",
-      "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Mee.jpg"
-    },
-    {
-      "name": "ウィ",
-      "gender": "unknown",
-      "cv": "Misuzu Yamada",
-      "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Wii.jpg"
-    },
-    {
-      "name": "ドゥ",
-      "gender": "unknown",
-      "cv": "Rin Fujishiro",
-      "img": "image/charimg/2026/Q2/Kanan-sama_wa_Akumade_Choroi/Dou.jpg"
-    }
-  ]
-},
-{
-  "id": 62050,
-  "characters": [
-    {
-      "name": "쿠스노키 미나토",
-      "gender": "male",
-      "cv": "사카타 쇼고",
-      "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Minato_Kusunoki.jpg"
-    },
-    {
-      "name": "산신",
-      "gender": "male",
-      "cv": "후지 신슈",
-      "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Yamagami.jpg"
-    },
-    {
-      "name": "하리마 사이가",
-      "gender": "male",
-      "cv": "우메하라 유이치로",
-      "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Saiga_Harima.jpg"
-    },
-    {
-      "name": "세리",
-      "gender": "male",
-      "cv": "토쿠도메 신노스케",
-      "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Seri.jpg"
-    },
-    {
-      "name": "토리카",
-      "gender": "female",
-      "cv": "코토부키 미나코",
-      "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Torika.jpg"
-    },
-    {
-      "name": "우츠기",
-      "gender": "male",
-      "cv": "코이치 마코토",
-      "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Utsugi.jpg"
-    },
-    {
-      "name": "풍신",
-      "gender": "male",
-      "cv": "나카지마 요시키",
-      "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Fuujin.jpg"
-    },
-    {
-      "name": "뇌신",
-      "gender": "male",
-      "cv": "코바야시 다이키",
-      "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Raijin.jpg"
-    },
-    {
-      "name": "영귀",
-      "gender": "unknown",
-      "cv": "오오카와 토오루",
-      "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Reiki.jpg"
-    },
-    {
-      "name": "응룡",
-      "gender": "male",
-      "cv": "유사 코지",
-      "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Ouryuu.jpg"
-    },
-    {
-      "name": "기린",
-      "gender": "unknown",
-      "cv": "하야미 쇼",
-      "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Kirin.jpg"
-    },
-    {
-      "name": "봉황",
-      "gender": "unknown",
-      "cv": "타카하시 히로키",
-      "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Houou.jpg"
-    },
-    {
-      "name": "카츠라기 코테츠",
-      "gender": "male",
-      "cv": "사사키 히로오",
-      "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Kotetsu_Katsuragi.jpg"
-    },
-    {
-      "name": "이치조 세이시로",
-      "gender": "male",
-      "cv": "하야시 유우",
-      "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Seishirou_Ichijou.jpg"
-    },
-    {
-      "name": "호리카와 시오리",
-      "gender": "female",
-      "cv": "시마무라 유",
-      "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Shiori_Horikawa.jpg"
-    },
-    {
-      "name": "안쇼",
-      "gender": "male",
-      "cv": "카네미츠 노부아키",
-      "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Anshou.jpg"
-    },
-    {
-      "name": "아마테라스 오미카미",
-      "gender": "female",
-      "cv": "시라이시 료코",
-      "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Amaterasu.jpg"
-    },
-    {
-      "name": "사쿠야 슌스케",
-      "gender": "male",
-      "cv": "사쿠야 슌스케",
-      "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Kakunojou_Katsuragi.jpg"
-    },
-    {
-      "name": "자시키와라시",
-      "gender": "female",
-      "cv": "하라 유코",
-      "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Zashiki-warashi.jpg"
-    },
-    {
-      "name": "할아버지",
-      "gender": "male",
-      "cv": "하시모토 신메이",
-      "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Minato_no_Sofu.jpg"
-    },
-    {
-      "name": "어머니",
-      "gender": "female",
-      "cv": "히라타 히로미",
-      "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Minato_no_Haha.jpg"
-    },
-    {
-      "name": "츠무기",
-      "gender": "unknown",
-      "cv": "테라사와 모모카",
-      "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Tsumugi.jpg"
-    },
-    {
-      "name": "에비스",
-      "gender": "male",
-      "cv": "모가미 츠구오",
-      "img": "image/charimg/2026/Q2/Kami_no_Niwatsuki_Kusunoki-tei/Ebisu.jpg"
-    }
-  ]
-},
-{
-  "id": 62018,
-  "characters": [
-    {
-      "name": "모리타 메이코",
-      "gender": "female",
-      "cv": "히시카와 하나",
-      "img": "image/charimg/2026/Q2/Ichijouma_Mankitsu-gurashi!/Meiko_Morita.jpg"
-    },
-    {
-      "name": "아마미야 리에",
-      "gender": "female",
-      "cv": "시라스 사호",
-      "img": "image/charimg/2026/Q2/Ichijouma_Mankitsu-gurashi!/Rie_Amamiya.jpg"
-    },
-    {
-      "name": "스즈키 마리카",
-      "gender": "female",
-      "cv": "치하루",
-      "img": "image/charimg/2026/Q2/Ichijouma_Mankitsu-gurashi!/Marika_Suzuki.jpg"
-    },
-    {
-      "name": "나카노 네오",
-      "gender": "female",
-      "cv": "네모토 미야리",
-      "img": "image/charimg/2026/Q2/Ichijouma_Mankitsu-gurashi!/Neo_Nakano.jpg"
-    },
-    {
-      "name": "나루미 미치카",
-      "gender": "female",
-      "cv": "테라사와 모모카",
-      "img": "image/charimg/2026/Q2/Ichijouma_Mankitsu-gurashi!/Michika_Narumi.jpg"
-    },
-    {
-      "name": "모리타 미오리",
-      "gender": "female",
-      "cv": "무라카미 나츠미",
-      "img": "image/charimg/2026/Q2/Ichijouma_Mankitsu-gurashi!/Miori_Morita.jpg"
-    },
-    {
-      "name": "가오",
-      "gender": "female",
-      "cv": "사이토 치와",
-      "img": "image/charimg/2026/Q2/Ichijouma_Mankitsu-gurashi!/Gao.jpg"
-    },
-    {
-      "name": "고다 매지컬 모모린",
-      "gender": "female",
-      "cv": "마에다 카오리",
-      "img": "image/charimg/2026/Q2/Ichijouma_Mankitsu-gurashi!/Majikarumomorin_Gouda.jpg"
-    },
-    {
-      "name": "베르나",
-      "gender": "female",
-      "cv": "코바 란",
-      "img": "image/charimg/2026/Q2/Ichijouma_Mankitsu-gurashi!/Berna.jpg"
-    }
-  ]
-},
-{
-  "id": 63352,
-  "characters": [
-    {
-      "name": "코노미 이노리",
-      "gender": "female",
-      "cv": "오가와 하나카",
-      "img": "image/charimg/2026/Q2/Onegai_AiPri/Inori_Konomi.jpg"
-    },
-    {
-      "name": "유메미야 아오이",
-      "gender": "female",
-      "cv": "카나야 리카",
-      "img": "image/charimg/2026/Q2/Onegai_AiPri/Aoi_Yumemiya.jpg"
-    },
-    {
-      "name": "토모사카 구미",
-      "gender": "female",
-      "cv": "마루오카 와카나",
-      "img": "image/charimg/2026/Q2/Onegai_AiPri/Gumi_Tomosaka.jpg"
-    },
-    {
-      "name": "유우키 올리비아",
-      "gender": "female",
-      "cv": "오카무라 하루카",
-      "img": "image/charimg/2026/Q2/Onegai_AiPri/Olivia_Yuuki.jpg"
-    },
-    {
-      "name": "아타미 나나",
-      "gender": "female",
-      "cv": "후지데라 미노리",
-      "img": "image/charimg/2026/Q2/Onegai_AiPri/Nana_Atami.jpg"
-    },
-    {
-      "name": "모치나가 에마",
-      "gender": "female",
-      "cv": "스즈키 미노리",
-      "img": "image/charimg/2026/Q2/Onegai_AiPri/Emma_Mochinaga.jpg"
-    },
-    {
-      "name": "포츄",
-      "gender": "unknown",
-      "cv": "타이치 요우",
-      "img": "image/charimg/2026/Q2/Onegai_AiPri/Fortu.jpg"
-    },
-    {
-      "name": "아카이 메가네",
-      "gender": "female",
-      "cv": "이토 카나에",
-      "img": "image/charimg/2026/Q2/Onegai_AiPri/Meganee_Akai.jpg"
-    },
-    {
-      "name": "코노미 미노루",
-      "gender": "male",
-      "cv": "이치조 카즈야",
-      "img": "image/charimg/2026/Q2/Onegai_AiPri/Minoru_Konomi.jpg"
-    },
-    {
-      "name": "아타미 산고",
-      "gender": "male",
-      "cv": "이마이 후미야",
-      "img": "image/charimg/2026/Q2/Onegai_AiPri/Sango_Atami.jpg"
-    },
-    {
-      "name": "유우키 레온",
-      "gender": "male",
-      "cv": "코이치 마코토",
-      "img": "image/charimg/2026/Q2/Onegai_AiPri/Leon_Yuuki.jpg"
-    },
-    {
-      "name": "프리네코",
-      "gender": "unknown",
-      "cv": "이즈미 후카",
-      "img": "image/charimg/2026/Q2/Onegai_AiPri/PriNeko.jpg"
-    },
-    {
-      "name": "코노미 카렌",
-      "gender": "female",
-      "cv": "이가라시 레이",
-      "img": "image/charimg/2026/Q2/Onegai_AiPri/Karen_Konomi.jpg"
-    },
-    {
-      "name": "코오리야마 료스케",
-      "gender": "male",
-      "cv": "야마시타 세이이치로",
-      "img": "image/charimg/2026/Q2/Onegai_AiPri/Ryousuke_Kouriyama.jpg"
-    },
-    {
-      "name": "강아지",
-      "gender": "unknown",
-      "cv": "하나이 미하루",
-      "img": "image/charimg/2026/Q2/Onegai_AiPri/Koinu.jpg"
-    },
-    {
-      "name": "리오리",
-      "gender": "female",
-      "cv": "오리노 리오",
-      "img": "image/charimg/2026/Q2/Onegai_AiPri/Riori.jpg"
-    },
-    {
-      "name": "치쿠와",
-      "gender": "unknown",
-      "cv": "하나이 미하루",
-      "img": "image/charimg/2026/Q2/Onegai_AiPri/Chikuwa.jpg"
-    },
-    {
-      "name": "이시노 마이클",
-      "gender": "male",
-      "cv": "타도코로 히나타",
-      "img": "image/charimg/2026/Q2/Onegai_AiPri/Michael_Ishino.jpg"
-    },
-    {
-      "name": "유우키 알란",
-      "gender": "male",
-      "cv": "하타나카 타스쿠",
-      "img": "image/charimg/2026/Q2/Onegai_AiPri/Alan_Yuuki.jpg"
-    },
-    {
-      "name": "아즈밍",
-      "gender": "female",
-      "cv": "아즈미 나오",
-      "img": "image/charimg/2026/Q2/Onegai_AiPri/Azumin.jpg"
-    },
-    {
-      "name": "교장 선생님",
-      "gender": "male",
-      "cv": "유사 코지",
-      "img": "image/charimg/2026/Q2/Onegai_AiPri/Kouchou-sensei.jpg"
-    },
-    {
-      "name": "유메미야 와카바",
-      "gender": "female",
-      "cv": "카자마 마유코",
-      "img": "image/charimg/2026/Q2/Onegai_AiPri/Wakaba_Yumemiya.jpg"
-    },
-    {
-      "name": "쿄카",
-      "gender": "female",
-      "cv": "킷카와 쿄카",
-      "img": "image/charimg/2026/Q2/Onegai_AiPri/Kyouka.jpg"
-    },
-    {
-      "name": "하나사키 코하루",
-      "gender": "female",
-      "cv": "아베 나츠코",
-      "img": "image/charimg/2026/Q2/Onegai_AiPri/Koharu_Hanasaki.jpg"
-    },
-    {
-      "name": "코바야카와 사츠키",
-      "gender": "female",
-      "cv": "카게야마 아카리",
-      "img": "image/charimg/2026/Q2/Onegai_AiPri/Satsuki_Kobayakawa.jpg"
-    }
-  ]
-},
-{
-  "id": 59983,
-  "characters": [
-    {
-      "name": "윌 셰르홀트",
-      "gender": "male",
-      "cv": "아마사키 코헤이",
-      "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Will_Serfort.jpg"
-    },
-    {
-      "name": "콜레트 루아르",
-      "gender": "female",
-      "cv": "아마노 사토미",
-      "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Colette_Loire.jpg"
-    },
-    {
-      "name": "시온 알스터",
-      "gender": "male",
-      "cv": "미즈나카 마사아키",
-      "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Sion_Ulster.jpg"
-    },
-    {
-      "name": "율리우스 레인버그",
-      "gender": "male",
-      "cv": "카키하라 테츠야",
-      "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Julius_Reinburg.jpg"
-    },
-    {
-      "name": "리아나 오웬자우스",
-      "gender": "female",
-      "cv": "Lynn",
-      "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Lihanna_Owenzaus.jpg"
-    },
-    {
-      "name": "이그노르 린도르",
-      "gender": "male",
-      "cv": "카와니시 켄고",
-      "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Wignall_Lindor.jpg"
-    },
-    {
-      "name": "키키",
-      "gender": "unknown",
-      "cv": "이나세 아오이",
-      "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Kiki.jpg"
-    },
-    {
-      "name": "엘파리아 알비스 셰르홀트",
-      "gender": "female",
-      "cv": "세키네 아키라",
-      "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Elfaria_Serfort.jpg"
-    },
-    {
-      "name": "로스티 나우만",
-      "gender": "male",
-      "cv": "Unknown",
-      "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Rosti_Naumann.jpg"
-    },
-    {
-      "name": "워크너 노그램",
-      "gender": "male",
-      "cv": "세키 토모카즈",
-      "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Workner_Norgram.jpg"
-    },
-    {
-      "name": "에드워드 셀펜스",
-      "gender": "male",
-      "cv": "유사 코지",
-      "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Edward_Serfence.jpg"
-    },
-    {
-      "name": "아이리스 X 스텔라마리스",
-      "gender": "female",
-      "cv": "오오쿠보 루미",
-      "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Iris_Stellamaris.jpg"
-    },
-    {
-      "name": "캐리엇 인스티어 와이즈먼",
-      "gender": "male",
-      "cv": "후쿠야마 쥰",
-      "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Cariot_Incindia_Wiseman.jpg"
-    },
-    {
-      "name": "제오 토르제우스 라인볼트",
-      "gender": "male",
-      "cv": "후루카와 마코토",
-      "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Zeo_Thorzeus_Reinbolt.jpg"
-    },
-    {
-      "name": "엘노르 리요스 알브",
-      "gender": "female",
-      "cv": "아마미야 소라",
-      "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Ellenor_Ljos_Alf.jpg"
-    },
-    {
-      "name": "쿠비나시",
-      "gender": "unknown",
-      "cv": "Unknown",
-      "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Kubinashi.jpg"
-    },
-    {
-      "name": "마르제",
-      "gender": "unknown",
-      "cv": "오카모토 노부히코",
-      "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Marze.jpg"
-    },
-    {
-      "name": "핀",
-      "gender": "unknown",
-      "cv": "타무라 무츠미",
-      "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Finn.jpg"
-    },
-    {
-      "name": "크레일비 세라",
-      "gender": "female",
-      "cv": "나카하라 마이",
-      "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Clairie_Serah.jpg"
-    },
-    {
-      "name": "아론 마스테리아스 올드킹",
-      "gender": "male",
-      "cv": "오오츠카 호츄",
-      "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Aaron_Masterias_Oldking.jpg"
-    },
-    {
-      "name": "콜드론 아누브",
-      "gender": "female",
-      "cv": "스즈키 레이코",
-      "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Caldron_Anouve.jpg"
-    },
-    {
-      "name": "릴리르 마스",
-      "gender": "male",
-      "cv": "오오노 토모히로",
-      "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Lyril_Marze.jpg"
-    },
-    {
-      "name": "고든 발리",
-      "gender": "male",
-      "cv": "우라 카즈키",
-      "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Gordon_Baret.jpg"
-    },
-    {
-      "name": "마이크 마이우스",
-      "gender": "male",
-      "cv": "타마루 아츠시",
-      "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Mike_Maius.jpg"
-    },
-    {
-      "name": "로지 홀랜드",
-      "gender": "unknown",
-      "cv": "타마루 아츠시",
-      "img": "image/charimg/2026/Q2/Tsue_to_Tsurugi_no_Wistoria_Season_2/Rodge_Holland.jpg"
-    }
-  ]
-},
-{
-  "id": 60055,
-  "characters": [
-    {
-      "name": "아사노 타이요",
-      "gender": "male",
-      "cv": "카와시마 레이지",
-      "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Taiyou_Asano.jpg"
-    },
-    {
-      "name": "요자쿠라 무츠미",
-      "gender": "female",
-      "cv": "혼도 카에데",
-      "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Mutsumi_Yozakura.jpg"
-    },
-    {
-      "name": "요자쿠라 쿄이치로",
-      "gender": "male",
-      "cv": "코니시 카츠유키",
-      "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Kyouichirou_Yozakura.jpg"
-    },
-    {
-      "name": "요자쿠라 나나오",
-      "gender": "male",
-      "cv": "우치야마 유미",
-      "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Nanao_Yozakura.jpg"
-    },
-    {
-      "name": "요자쿠라 시온",
-      "gender": "female",
-      "cv": "유우키 아오이",
-      "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Shion_Yozakura.jpg"
-    },
-    {
-      "name": "요자쿠라 후타바",
-      "gender": "female",
-      "cv": "키토 아카리",
-      "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Futaba_Yozakura.jpg"
-    },
-    {
-      "name": "요자쿠라 켄고",
-      "gender": "male",
-      "cv": "마츠오카 요시츠구",
-      "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Kengo_Yozakura.jpg"
-    },
-    {
-      "name": "키리사키 아야카",
-      "gender": "female",
-      "cv": "이세 마리야",
-      "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Ayaka_Kirisaki.jpg"
-    },
-    {
-      "name": "골리앗",
-      "gender": "male",
-      "cv": "마츠오카 요시츠구",
-      "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Goliath.jpg"
-    },
-    {
-      "name": "호토케야마 세이지",
-      "gender": "male",
-      "cv": "카세 야스유키",
-      "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Seiji_Hotokeyama.jpg"
-    },
-    {
-      "name": "후도 린",
-      "gender": "female",
-      "cv": "박로미",
-      "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Rin_Fudou.jpg"
-    },
-    {
-      "name": "요자쿠라 신조",
-      "gender": "male",
-      "cv": "오키츠 카즈유키",
-      "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Shinzo_Yozakura.jpg"
-    },
-    {
-      "name": "카와시타 마코토",
-      "gender": "unknown",
-      "cv": "우에다 유지",
-      "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Makoto_Kawashita.jpg"
-    },
-    {
-      "name": "道端草助",
-      "gender": "male",
-      "cv": "이시카와 카이토",
-      "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Sousuke_Michibata.jpg"
-    },
-    {
-      "name": "미치바타 소스케",
-      "gender": "male",
-      "cv": "이시카와 카이토",
-      "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Momo_Yozakura.jpg"
-    },
-    {
-      "name": "요자쿠라 츠보미",
-      "gender": "female",
-      "cv": "유카나",
-      "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Tsubomi_Yozakura.jpg"
-    },
-    {
-      "name": "아이",
-      "gender": "female",
-      "cv": "쿠노 미사키",
-      "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Ai.jpg"
-    },
-    {
-      "name": "켄지",
-      "gender": "male",
-      "cv": "나카노 사이마",
-      "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Kenji.jpg"
-    },
-    {
-      "name": "우사",
-      "gender": "unknown",
-      "cv": "미야모토 유메",
-      "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Usa.jpg"
-    },
-    {
-      "name": "니노마에 고젠",
-      "gender": "female",
-      "cv": "히사카와 아야",
-      "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Ninomae_Yozakura.jpg"
-    },
-    {
-      "name": "이츠와 다유",
-      "gender": "female",
-      "cv": "나카하라 마이",
-      "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Itsuwa_Yozakura.jpg"
-    },
-    {
-      "name": "이즈모 카이",
-      "gender": "male",
-      "cv": "카미야 히로시",
-      "img": "image/charimg/2026/Q2/Yozakura-san_Chi_no_Daisakusen_2nd_Season/Kai_Izumo.jpg"
-    }
-  ]
-},
-{
-  "id": 58877,
-  "characters": [
-    {
-      "name": "코미나토 하루이치",
-      "gender": "male",
-      "cv": "하나에 나츠키",
-      "img": "image/charimg/2026/Q2/Diamond_no_Ace_act_II_Second_Season/Haruichi_Kominato.jpg"
-    },
-    {
-      "name": "사와무라 에이준",
-      "gender": "male",
-      "cv": "오오사카 료타",
-      "img": "image/charimg/2026/Q2/Diamond_no_Ace_act_II_Second_Season/Eijun_Sawamura.jpg"
-    },
-    {
-      "name": "후루야 사토루",
-      "gender": "male",
-      "cv": "시마자키 노부나가",
-      "img": "image/charimg/2026/Q2/Diamond_no_Ace_act_II_Second_Season/Satoru_Furuya.jpg"
-    },
-    {
-      "name": "미유키 카즈야",
-      "gender": "male",
-      "cv": "사쿠라이 타카히로",
-      "img": "image/charimg/2026/Q2/Diamond_no_Ace_act_II_Second_Season/Kazuya_Miyuki.jpg"
-    },
-    {
-      "name": "사나다 슌페이",
-      "gender": "male",
-      "cv": "카미야 히로시",
-      "img": "image/charimg/2026/Q2/Diamond_no_Ace_act_II_Second_Season/Shunpei_Sanada.jpg"
-    },
-    {
-      "name": "나루미야 메이",
-      "gender": "male",
-      "cv": "카지 유우키",
-      "img": "image/charimg/2026/Q2/Diamond_no_Ace_act_II_Second_Season/Mei_Narumiya.jpg"
-    },
-    {
-      "name": "아마히사 코세이",
-      "gender": "male",
-      "cv": "키무라 료헤이",
-      "img": "image/charimg/2026/Q2/Diamond_no_Ace_act_II_Second_Season/Kousei_Amahisa.jpg"
-    },
-    {
-      "name": "토도로키 라이치",
-      "gender": "male",
-      "cv": "오노 켄쇼",
-      "img": "image/charimg/2026/Q2/Diamond_no_Ace_act_II_Second_Season/Raichi_Todoroki.jpg"
-    },
-    {
-      "name": "쿠라모치 요이치",
-      "gender": "male",
-      "cv": "아사누마 신타로",
-      "img": "image/charimg/2026/Q2/Diamond_no_Ace_act_II_Second_Season/Youichi_Kuramochi.jpg"
-    }
-  ]
-},
-{
-  "id": 62342,
-  "characters": [
-    {
-      "name": "타치바나 스즈메",
-      "gender": "female",
-      "cv": "이치노세 카나",
-      "img": "image/charimg/2026/Q2/Maid-san_wa_Taberu_dake/Suzume_Tachibana.jpg"
-    },
-    {
-      "name": "리코타 프레스카",
-      "gender": "female",
-      "cv": "스노 치히로",
-      "img": "image/charimg/2026/Q2/Maid-san_wa_Taberu_dake/Ricotta_Fresca.jpg"
-    },
-    {
-      "name": "코마츠 나나",
-      "gender": "female",
-      "cv": "카와세 마키",
-      "img": "image/charimg/2026/Q2/Maid-san_wa_Taberu_dake/Nana_Komatsu.jpg"
-    },
-    {
-      "name": "엔도 소라",
-      "gender": "male",
-      "cv": "\t 이시가미 시즈카",
-      "img": "image/charimg/2026/Q2/Maid-san_wa_Taberu_dake/Sora_Endou.jpg"
-    },
-    {
-      "name": "신게츠 안즈",
-      "gender": "female",
-      "cv": "이가라시 히로미",
-      "img": "image/charimg/2026/Q2/Maid-san_wa_Taberu_dake/Anzu_Shingetsu.jpg"
-    },
-    {
-      "name": "할머니",
-      "gender": "female",
-      "cv": "토요구치 메구미",
-      "img": "image/charimg/2026/Q2/Maid-san_wa_Taberu_dake/Obaa-sama.jpg"
-    },
-    {
-      "name": "주인님",
-      "gender": "male",
-      "cv": "이노우에 카즈히코",
-      "img": "image/charimg/2026/Q2/Maid-san_wa_Taberu_dake/Goshujin-sama.jpg"
-    }
-  ]
-},
-{
-  "id": 63667,
-  "characters": [
-    {
-      "name": "노노야마 루이",
-      "gender": "female",
-      "cv": "오지카 나오",
-      "img": "image/charimg/2026/Q2/Mahou_no_Shimai_LuluttoLilly_Part_2/Rui_Nonoyama.jpg"
-    },
-    {
-      "name": "노노야마 후우",
-      "gender": "female",
-      "cv": "타치바나 메이",
-      "img": "image/charimg/2026/Q2/Mahou_no_Shimai_LuluttoLilly_Part_2/Fuu_Nonoyama.jpg"
-    },
-    {
-      "name": "아라키 아사히",
-      "gender": "female",
-      "cv": "네모토 미야리",
-      "img": "image/charimg/2026/Q2/Mahou_no_Shimai_LuluttoLilly_Part_2/Asahi_Araki.jpg"
-    }
-  ]
-},
-{
-  "id": 62171,
-  "characters": [
-    {
-      "name": "스피카 버고",
-      "gender": "female",
-      "cv": "혼도 카에데",
-      "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Spica_Virgo.jpg"
-    },
-    {
-      "name": "클로드 시리우스",
-      "gender": "male",
-      "cv": "시마자키 노부나가",
-      "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Claude_Sirius.jpg"
-    },
-    {
-      "name": "하나 사소리죠",
-      "gender": "female",
-      "cv": "와타야 미호",
-      "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Hana_Sasorijou.jpg"
-    },
-    {
-      "name": "유우 아리에스",
-      "gender": "female",
-      "cv": "타치바나 아즈사",
-      "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Ewe_Aries.jpg"
-    },
-    {
-      "name": "아리아 아쿠에리아스",
-      "gender": "female",
-      "cv": "이즈미 후카",
-      "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Aria_Aquarius.jpg"
-    },
-    {
-      "name": "키론 새저테리어스 아라디아",
-      "gender": "male",
-      "cv": "우라 카즈키",
-      "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Chiron_Sagittarius_Aradia.jpg"
-    },
-    {
-      "name": "타르프 캔서",
-      "gender": "male",
-      "cv": "이시게 쇼야",
-      "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Tarf_Cancer.jpg"
-    },
-    {
-      "name": "이오 타우로스",
-      "gender": "female",
-      "cv": "시라이시 하루카",
-      "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Io_Taurus.jpg"
-    },
-    {
-      "name": "폴룩스 제미니",
-      "gender": "female",
-      "cv": "하세가와 레나",
-      "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Pollux_Gemini.jpg"
-    },
-    {
-      "name": "카스톨 제미니",
-      "gender": "male",
-      "cv": "우에무라 유토",
-      "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Castor_Gemini.jpg"
-    },
-    {
-      "name": "레오 레굴루스",
-      "gender": "female",
-      "cv": "파이루즈 아이",
-      "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Leo_Regulus.jpg"
-    },
-    {
-      "name": "카펠라 카프리콘",
-      "gender": "female",
-      "cv": "사쿠라이 미유키",
-      "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Capella_Capricorn.jpg"
-    },
-    {
-      "name": "아스트레아 라이브라",
-      "gender": "male",
-      "cv": "오오노 토모히로",
-      "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Astraea_Libra.jpg"
-    },
-    {
-      "name": "멜로우 파이시즈",
-      "gender": "female",
-      "cv": "스즈키 미노리",
-      "img": "image/charimg/2026/Q2/Kuroneko_to_Majo_no_Kyoushitsu/Merrow_Pisces.jpg"
-    }
-  ]
-},
-{
-  "id": 62983,
-  "characters": [
-    {
-      "name": "치토세 마리카",
-      "gender": "female",
-      "cv": "우치다 마아야",
-      "img": "image/charimg/2026/Q2/Marika-chan_no_Koukando_wa_Bukkowareteiru/Marika_Chitose.jpg"
-    },
-    {
-      "name": "키타미 카나타",
-      "gender": "male",
-      "cv": "아마사키 코헤이",
-      "img": "image/charimg/2026/Q2/Marika-chan_no_Koukando_wa_Bukkowareteiru/Kanata_Kitami.jpg"
-    },
-    {
-      "name": "미카사 코코나",
-      "gender": "female",
-      "cv": "이고마 유리에",
-      "img": "image/charimg/2026/Q2/Marika-chan_no_Koukando_wa_Bukkowareteiru/Kokona_Misaka.jpg"
-    },
-    {
-      "name": "히다카 니노",
-      "gender": "unknown",
-      "cv": "쿠기미야 리에",
-      "img": "image/charimg/2026/Q2/Marika-chan_no_Koukando_wa_Bukkowareteiru/Niino_Hidaka.jpg"
-    },
-    {
-      "name": "토요토미 사유키",
-      "gender": "female",
-      "cv": "이토 아야사",
-      "img": "image/charimg/2026/Q2/Marika-chan_no_Koukando_wa_Bukkowareteiru/Sayuki_Toyotomi.jpg"
-    }
-  ]
-},
-{
-  "id": 63248,
-  "characters": [
-    {
-      "name": "타치바나 소타",
-      "gender": "male",
-      "cv": "페니실린",
-      "img": "image/charimg/2026/Q2/Ookii_Onnanoko_wa_Suki_desu_ka/Souta_Tachibana.jpg"
-    },
-    {
-      "name": "하세가와 아야노",
-      "gender": "female",
-      "cv": "미즈시로 스이",
-      "img": "image/charimg/2026/Q2/Ookii_Onnanoko_wa_Suki_desu_ka/Ayano_Hasegawa.jpg"
-    },
-    {
-      "name": "타치바나 카오루",
-      "gender": "female",
-      "cv": "나츠키 칸나",
-      "img": "image/charimg/2026/Q2/Ookii_Onnanoko_wa_Suki_desu_ka/Kaoru_Tachibana.jpg"
-    },
-    {
-      "name": "아사쿠라 사쿠라",
-      "gender": "female",
-      "cv": "사자나미 스즈",
-      "img": "image/charimg/2026/Q2/Ookii_Onnanoko_wa_Suki_desu_ka/Sakura_Asakura.jpg"
-    },
-    {
-      "name": "테시가와라 쿄카",
-      "gender": "female",
-      "cv": "나가츠키 아키",
-      "img": "image/charimg/2026/Q2/Ookii_Onnanoko_wa_Suki_desu_ka/Kyouka_Teshigawara.jpg"
-    },
-    {
-      "name": "유리아 맥캔지",
-      "gender": "female",
-      "cv": "칸자키 노에루",
-      "img": "image/charimg/2026/Q2/Ookii_Onnanoko_wa_Suki_desu_ka/Julia_Mackenzie.jpg"
-    },
-    {
-      "name": "야마다 사나에",
-      "gender": "female",
-      "cv": "마메시바 하나",
-      "img": "image/charimg/2026/Q2/Ookii_Onnanoko_wa_Suki_desu_ka/Sanae_Yamada.jpg"
-    }
-  ]
-},
-{
-  "id": 63310,
-  "characters": [
-    {
-      "name": "요시다",
-      "gender": "male",
-      "cv": "와쿠노 아이카",
-      "img": "image/charimg/2026/Q2/Ingoku_Danchi/Mamoru_Yoshida.jpg"
-    },
-    {
-      "name": "카타기리",
-      "gender": "female",
-      "cv": "유우키 카나",
-      "img": "image/charimg/2026/Q2/Ingoku_Danchi/Katagiri.jpg"
-    },
-    {
-      "name": "와타나베",
-      "gender": "female",
-      "cv": "유우키 카나",
-      "img": "image/charimg/2026/Q2/Ingoku_Danchi/Watanabe.jpg"
-    },
-    {
-      "name": "이치노세",
-      "gender": "female",
-      "cv": "유우키 카나",
-      "img": "image/charimg/2026/Q2/Ingoku_Danchi/Ichinose.jpg"
-    },
-    {
-      "name": "미즈타니",
-      "gender": "female",
-      "cv": "유우키 카나",
-      "img": "image/charimg/2026/Q2/Ingoku_Danchi/Mizutani.jpg"
-    },
-    {
-      "name": "사나모리",
-      "gender": "female",
-      "cv": "유우키 카나",
-      "img": "image/charimg/2026/Q2/Ingoku_Danchi/Sanamori.jpg"
-    },
-    {
-      "name": "칸자키",
-      "gender": "female",
-      "cv": "유우키 카나",
-      "img": "image/charimg/2026/Q2/Ingoku_Danchi/Kanzaki.jpg"
-    },
-    {
-      "name": "시키죠",
-      "gender": "female",
-      "cv": "유우키 카나",
-      "img": "image/charimg/2026/Q2/Ingoku_Danchi/Shikijou.jpg"
-    },
-    {
-      "name": "고다",
-      "gender": "female",
-      "cv": "유우키 카나",
-      "img": "image/charimg/2026/Q2/Ingoku_Danchi/Gouda.jpg"
-    },
-    {
-      "name": "시라카게",
-      "gender": "female",
-      "cv": "후쿠엔 미사토",
-      "img": "image/charimg/2026/Q2/Ingoku_Danchi/Shiro_Shirakage.jpg"
-    },
-    {
-      "name": "하이바라",
-      "gender": "female",
-      "cv": "쿠지메 나기사",
-      "img": "image/charimg/2026/Q2/Ingoku_Danchi/Haibara.jpg"
-    },
-    {
-      "name": "사카쿠라",
-      "gender": "female",
-      "cv": "유우키 카나",
-      "img": "image/charimg/2026/Q2/Ingoku_Danchi/Sakakura.jpg"
-    },
-    {
-      "name": "쇼다",
-      "gender": "female",
-      "cv": "후쿠엔 미사토",
-      "img": "image/charimg/2026/Q2/Ingoku_Danchi/Masami_Shouda.jpg"
-    },
-    {
-      "name": "이카야마",
-      "gender": "female",
-      "cv": "유우키 카나",
-      "img": "image/charimg/2026/Q2/Ingoku_Danchi/Ikayama.jpg"
-    },
-    {
-      "name": "하세가와",
-      "gender": "female",
-      "cv": "야하기 사유리",
-      "img": "image/charimg/2026/Q2/Ingoku_Danchi/Hasegawa.jpg"
-    },
-    {
-      "name": "안도",
-      "gender": "female",
-      "cv": "아사미 카즈키",
-      "img": "image/charimg/2026/Q2/Ingoku_Danchi/Andou.jpg"
-    },
-    {
-      "name": "츠지사키",
-      "gender": "female",
-      "cv": "야하기 사유리",
-      "img": "image/charimg/2026/Q2/Ingoku_Danchi/Tsujisaki.jpg"
-    },
-    {
-      "name": "누마지리",
-      "gender": "female",
-      "cv": "이즈미 시노부",
-      "img": "image/charimg/2026/Q2/Ingoku_Danchi/Numajiri.jpg"
-    },
-    {
-      "name": "키리타니",
-      "gender": "female",
-      "cv": "시미즈 아이",
-      "img": "image/charimg/2026/Q2/Ingoku_Danchi/Kiritani.jpg"
-    }
-  ]
-},
-{
-  "id": 63304,
-  "characters": [
-    {
-      "name": "루드",
-      "gender": "male",
-      "cv": "후루카와 마코토",
-      "img": "image/charimg/2026/Q2/Mamonogurai_no_Boukensha_Ore_Dake_Mamono_wo_Kuratte_Tsuyoku_Naru/Rudd.jpg"
-    },
-    {
-      "name": "에리시아",
-      "gender": "female",
-      "cv": "나카시마 유키",
-      "img": "image/charimg/2026/Q2/Mamonogurai_no_Boukensha_Ore_Dake_Mamono_wo_Kuratte_Tsuyoku_Naru/Elyssia.jpg"
-    },
-    {
-      "name": "バイエル",
-      "gender": "male",
-      "cv": "타카나시 켄고",
-      "img": "image/charimg/2026/Q2/Mamonogurai_no_Boukensha_Ore_Dake_Mamono_wo_Kuratte_Tsuyoku_Naru/Vaiell.jpg"
-    },
-    {
-      "name": "サーシャ",
-      "gender": "female",
-      "cv": "나나세 아야카",
-      "img": "image/charimg/2026/Q2/Mamonogurai_no_Boukensha_Ore_Dake_Mamono_wo_Kuratte_Tsuyoku_Naru/Sasha.jpg"
-    }
-  ]
-},
-{
-  "id": 57779,
-  "characters": [
-    {
-      "name": "카이만",
-      "gender": "male",
-      "cv": "타카기 와타루",
-      "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Kaiman.jpg"
-    },
-    {
-      "name": "니카이도",
-      "gender": "female",
-      "cv": "콘도 레이나",
-      "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Nikaido.jpg"
-    },
-    {
-      "name": "신",
-      "gender": "male",
-      "cv": "호소야 요시마사",
-      "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Shin.jpg"
-    },
-    {
-      "name": "노이",
-      "gender": "female",
-      "cv": "코바야시 유우",
-      "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Noi.jpg"
-    },
-    {
-      "name": "리스",
-      "gender": "unknown",
-      "cv": "송도",
-      "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Risu.jpg"
-    },
-    {
-      "name": "나츠키",
-      "gender": "unknown",
-      "cv": "마츠모토 사라",
-      "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Natsuki.jpg"
-    },
-    {
-      "name": "엔",
-      "gender": "male",
-      "cv": "호리우치 켄유",
-      "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/En.jpg"
-    },
-    {
-      "name": "쵸타",
-      "gender": "male",
-      "cv": "카츠 안리",
-      "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Chota.jpg"
-    },
-    {
-      "name": "후지타",
-      "gender": "male",
-      "cv": "타카나시 켄고",
-      "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Fujita.jpg"
-    },
-    {
-      "name": "에비스",
-      "gender": "unknown",
-      "cv": "토미타 미유",
-      "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Ebisu.jpg"
-    },
-    {
-      "name": "바우크스",
-      "gender": "unknown",
-      "cv": "에가와 히사오",
-      "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Vaux.jpg"
-    },
-    {
-      "name": "카스카베 박사",
-      "gender": "male",
-      "cv": "이치키 미츠히로",
-      "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Kasukabe.jpg"
-    },
-    {
-      "name": "아스",
-      "gender": "male",
-      "cv": "고다 호즈미",
-      "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Asu.jpg"
-    },
-    {
-      "name": "도쿠가",
-      "gender": "unknown",
-      "cv": "우치야마 코우키",
-      "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Dokuga.jpg"
-    },
-    {
-      "name": "하루",
-      "gender": "female",
-      "cv": "코시미즈 아미",
-      "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Haru.jpg"
-    },
-    {
-      "name": "아이카와",
-      "gender": "unknown",
-      "cv": "키무라 스바루",
-      "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Shou.jpg"
-    },
-    {
-      "name": "아이 콜먼",
-      "gender": "male",
-      "cv": "사카이 코다이",
-      "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Ai_Coleman.jpg"
-    },
-    {
-      "name": "존슨",
-      "gender": "unknown",
-      "cv": "키무라 료헤이",
-      "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Jonson.jpg"
-    },
-    {
-      "name": "테츠조",
-      "gender": "unknown",
-      "cv": "하마노 다이키",
-      "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Tetsujo.jpg"
-    },
-    {
-      "name": "사지",
-      "gender": "unknown",
-      "cv": "코시무라 토모카즈",
-      "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Saji.jpg"
-    },
-    {
-      "name": "톤",
-      "gender": "unknown",
-      "cv": "노무라 카츠히토",
-      "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Ton.jpg"
-    },
-    {
-      "name": "우시시마다",
-      "gender": "unknown",
-      "cv": "이마루오카 아츠시",
-      "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Ushishimada.jpg"
-    },
-    {
-      "name": "13",
-      "gender": "unknown",
-      "cv": "카지 유우키",
-      "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Thirteen.jpg"
-    },
-    {
-      "name": "탄바",
-      "gender": "unknown",
-      "cv": "이나다 테츠",
-      "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Tanba.jpg"
-    },
-    {
-      "name": "키쿠라게",
-      "gender": "unknown",
-      "cv": "우도노 마유",
-      "img": "image/charimg/2026/Q2/Dorohedoro_Season_2/Kikurage.jpg"
-    }
-  ]
-},
-{
-  "id": 63572,
-  "characters": [
-    {
-      "name": "탄바 테츠오",
-      "gender": "male",
-      "cv": "코바야시 치카히로",
-      "img": "image/charimg/2026/Q2/Dandelion/Tetsuo_Tanba.jpg"
-    },
-    {
-      "name": "쿠로가네 미사키",
-      "gender": "female",
-      "cv": "한 메구미",
-      "img": "image/charimg/2026/Q2/Dandelion/Misaki_Kurogane.jpg"
-    },
-    {
-      "name": "쿄카와 마사키",
-      "gender": "male",
-      "cv": "미야노 마모루",
-      "img": "image/charimg/2026/Q2/Dandelion/Masaki_Kyouga.jpg"
-    }
-  ]
-},
-{
-  "id": 62155,
-  "characters": [
-    {
-      "name": "이토 치토세",
-      "gender": "female",
-      "cv": "이시가미 시즈카",
-      "img": "image/charimg/2026/Q2/Iya_na_Kao_sare_nagara_Opantsu_Misete_Moraitai_Returns/Chitose_Itou.jpg"
-    },
-    {
-      "name": "미타 나나코",
-      "gender": "female",
-      "cv": "이토 카나에",
-      "img": "image/charimg/2026/Q2/Iya_na_Kao_sare_nagara_Opantsu_Misete_Moraitai_Returns/Nanako_Mita.jpg"
-    },
-    {
-      "name": "발미나 디어 녹스",
-      "gender": "female",
-      "cv": "이이다 히카루",
-      "img": "image/charimg/2026/Q2/Iya_na_Kao_sare_nagara_Opantsu_Misete_Moraitai_Returns/Valmina_Nox.jpg"
-    },
-    {
-      "name": "쿠로세 사키",
-      "gender": "female",
-      "cv": "오리카사 아이",
-      "img": "image/charimg/2026/Q2/Iya_na_Kao_sare_nagara_Opantsu_Misete_Moraitai_Returns/Saki_Kurose.jpg"
-    },
-    {
-      "name": "키사라기 코코로",
-      "gender": "female",
-      "cv": "스구타 히나",
-      "img": "image/charimg/2026/Q2/Iya_na_Kao_sare_nagara_Opantsu_Misete_Moraitai_Returns/Kokoro_Kisaragi.jpg"
-    },
-    {
-      "name": "사쿠라 메이",
-      "gender": "female",
-      "cv": "하루세 나츠미",
-      "img": "image/charimg/2026/Q2/Iya_na_Kao_sare_nagara_Opantsu_Misete_Moraitai_Returns/Mei_Sakura.jpg"
-    },
-    {
-      "name": "아리스 네네",
-      "gender": "female",
-      "cv": "카와구치 리나",
-      "img": "image/charimg/2026/Q2/Iya_na_Kao_sare_nagara_Opantsu_Misete_Moraitai_Returns/Nene_Arisu.jpg"
-    }
-  ]
-},
-{
-  "id": 59193,
-  "characters": [
-    {
-      "name": "루데우스 그레이랫",
-      "gender": "male",
-      "cv": "우치야마 유미",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Rudeus_Greyrat.jpg"
-    },
-    {
-      "name": "에리스 보레아스 그레이랫",
-      "gender": "female",
-      "cv": "카쿠마 아이",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Eris_Boreas_Greyrat.jpg"
-    },
-    {
-      "name": "실피에트",
-      "gender": "female",
-      "cv": "카야노 아이",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Sylphiette.jpg"
-    },
-    {
-      "name": "록시 미굴디아",
-      "gender": "female",
-      "cv": "코하라 코노미",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Roxy_Migurdia.jpg"
-    },
-    {
-      "name": "프루세나 아돌디어",
-      "gender": "female",
-      "cv": "타나카 미나미",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Pursena_Adoldia.jpg"
-    },
-    {
-      "name": "리니아나 데돌디어",
-      "gender": "female",
-      "cv": "파이루즈 아이",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Linia_Dedoldia.jpg"
-    },
-    {
-      "name": "레이다 리아",
-      "gender": "female",
-      "cv": "요코오 마리",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Reida_Reia.jpg"
-    },
-    {
-      "name": "바디가디",
-      "gender": "male",
-      "cv": "쿠스노키 타이텐",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Badigadi.jpg"
-    },
-    {
-      "name": "길레느 데돌디어",
-      "gender": "female",
-      "cv": "토요구치 메구미",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Ghislaine_Dedoldia.jpg"
-    },
-    {
-      "name": "루시 그레이랫",
-      "gender": "female",
-      "cv": "Unknown",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Lucy_Greyrat.jpg"
-    },
-    {
-      "name": "지너스 할파스",
-      "gender": "male",
-      "cv": "아오야마 유타카",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Jenius_Halfas.jpg"
-    },
-    {
-      "name": "아이샤 그레이랫",
-      "gender": "female",
-      "cv": "타카다 유우키",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Aisha_Greyrat.jpg"
-    },
-    {
-      "name": "키시리카 키시리스",
-      "gender": "female",
-      "cv": "이구치 유카",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Kishirika_Kishirisu.jpg"
-    },
-    {
-      "name": "아토페라토페 라이백",
-      "gender": "female",
-      "cv": "모리 나나코",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Atoferatofe_Raibaku.jpg"
-    },
-    {
-      "name": "니나 파리온",
-      "gender": "female",
-      "cv": "토마츠 하루카",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Nina_Farion.jpg"
-    },
-    {
-      "name": "스잔느",
-      "gender": "female",
-      "cv": "코바야시 유우",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Suzanne.jpg"
-    },
-    {
-      "name": "올스테드",
-      "gender": "male",
-      "cv": "츠다 켄지로",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Orsted.jpg"
-    },
-    {
-      "name": "광휘의 아르만피",
-      "gender": "male",
-      "cv": "카와니시 켄고",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Almanfi.jpg"
-    },
-    {
-      "name": "나나호시 시즈카",
-      "gender": "female",
-      "cv": "와카야마 시온",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Shizuka_Nanahoshi.jpg"
-    },
-    {
-      "name": "갈 파리온",
-      "gender": "male",
-      "cv": "이나다 테츠",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Gal_Farion.jpg"
-    },
-    {
-      "name": "사라",
-      "gender": "female",
-      "cv": "시라이시 하루카",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Sara.jpg"
-    },
-    {
-      "name": "자노바 실론",
-      "gender": "male",
-      "cv": "츠루오카 사토시",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Zanoba_Shirone.jpg"
-    },
-    {
-      "name": "엘리나리제 드래곤로드",
-      "gender": "female",
-      "cv": "타나카 리에",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Elinalise_Dragonroad.jpg"
-    },
-    {
-      "name": "아리엘 아네모이 아슬라",
-      "gender": "female",
-      "cv": "우에다 레이나",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Ariel_Asura.jpg"
-    },
-    {
-      "name": "노른 그레이랫",
-      "gender": "female",
-      "cv": "아이자와 사야",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Norn_Greyrat.jpg"
-    },
-    {
-      "name": "크리프 그리몰",
-      "gender": "male",
-      "cv": "오오사카 료타",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Cliff_Grimoire.jpg"
-    },
-    {
-      "name": "공허의 실바릴",
-      "gender": "female",
-      "cv": "츠네마츠 아유미",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Sylvaril.jpg"
-    },
-    {
-      "name": "이졸테 크루엘",
-      "gender": "female",
-      "cv": "히카사 요코",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Isolte_Cruel.jpg"
-    },
-    {
-      "name": "줄리엣",
-      "gender": "female",
-      "cv": "모로호시 스미레",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Juliette.jpg"
-    },
-    {
-      "name": "페르기우스 도라",
-      "gender": "male",
-      "cv": "코야마 리키야",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Perugius_Dola.jpg"
-    },
-    {
-      "name": "리랴 그레이랫",
-      "gender": "female",
-      "cv": "Lynn",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Lilia.jpg"
-    },
-    {
-      "name": "지노 블리츠",
-      "gender": "male",
-      "cv": "카와시마 레이지",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Jino_Britts.jpg"
-    },
-    {
-      "name": "제니스 그레이랫",
-      "gender": "female",
-      "cv": "카네모토 히사코",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Zenith_Greyrat.jpg"
-    },
-    {
-      "name": "루크 노토스 그레이랫",
-      "gender": "male",
-      "cv": "오키츠 카즈유키",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Luke_Notos_Greyrat.jpg"
-    },
-    {
-      "name": "오베르 콜벳",
-      "gender": "male",
-      "cv": "코니시 카츠유키",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Auber_Corvette.jpg"
-    },
-    {
-      "name": "티모시",
-      "gender": "male",
-      "cv": "하타노 와타루",
-      "img": "image/charimg/2026/Q3/Mushoku_Tensei_III_Isekai_Ittara_Honki_Dasu/Timothy.jpg"
-    }
-  ]
-},
-{
-  "id": 58878,
-  "characters": [
-    {
-      "name": "라라",
-      "gender": "female",
-      "cv": "히시카와 하나",
-      "img": "image/charimg/2026/Q3/Sayonara_Lara/Lara.jpg"
-    },
-    {
-      "name": "오츠 마리",
-      "gender": "female",
-      "cv": "카와이시 나나",
-      "img": "image/charimg/2026/Q3/Sayonara_Lara/Mari_Ootsu.jpg"
-    },
-    {
-      "name": "오츠 마코토",
-      "gender": "male",
-      "cv": "마도노 미츠아키",
-      "img": "image/charimg/2026/Q3/Sayonara_Lara/Makoto_Ootsu.jpg"
-    },
-    {
-      "name": "모리야마 오지",
-      "gender": "male",
-      "cv": "나가모리 에이지",
-      "img": "image/charimg/2026/Q3/Sayonara_Lara/Ouji_Moriyama.jpg"
-    },
-    {
-      "name": "리사",
-      "gender": "female",
-      "cv": "츠다 미나미",
-      "img": "image/charimg/2026/Q3/Sayonara_Lara/Lisa.jpg"
-    },
-    {
-      "name": "오오츠 케이코",
-      "gender": "female",
-      "cv": "아이카와 나츠키",
-      "img": "image/charimg/2026/Q3/Sayonara_Lara/Keiko_Ootsu.jpg"
-    },
-    {
-      "name": "코타",
-      "gender": "male",
-      "cv": "야마모토 카즈토미",
-      "img": "image/charimg/2026/Q3/Sayonara_Lara/Kouta.jpg"
-    },
-    {
-      "name": "나가하마 치오",
-      "gender": "female",
-      "cv": "아이바 아이나",
-      "img": "image/charimg/2026/Q3/Sayonara_Lara/Chio_Nagahama.jpg"
-    },
-    {
-      "name": "그레이스",
-      "gender": "female",
-      "cv": "후카미 리카",
-      "img": "image/charimg/2026/Q3/Sayonara_Lara/Grace.jpg"
-    },
-    {
-      "name": "라우라",
-      "gender": "unknown",
-      "cv": "쇼지 우메카",
-      "img": "image/charimg/2026/Q3/Sayonara_Lara/Laura.jpg"
-    },
-    {
-      "name": "루카",
-      "gender": "male",
-      "cv": "무라세 아유무",
-      "img": "image/charimg/2026/Q3/Sayonara_Lara/Luca.jpg"
-    },
-    {
-      "name": "오츠 에마",
-      "gender": "female",
-      "cv": "스미토모 나나에",
-      "img": "image/charimg/2026/Q3/Sayonara_Lara/Ema_Ootsu.jpg"
-    },
-    {
-      "name": "로자",
-      "gender": "female",
-      "cv": "타카기 미유",
-      "img": "image/charimg/2026/Q3/Sayonara_Lara/Rosa.jpg"
-    },
-    {
-      "name": "오츠 요시야",
-      "gender": "male",
-      "cv": "오오노 토모히로",
-      "img": "image/charimg/2026/Q3/Sayonara_Lara/Yoshiya_Ootsu.jpg"
-    },
-    {
-      "name": "루나",
-      "gender": "female",
-      "cv": "이노우에 호노카",
-      "img": "image/charimg/2026/Q3/Sayonara_Lara/Luna.jpg"
-    },
-    {
-      "name": "로완",
-      "gender": "male",
-      "cv": "테라소마 마사키",
-      "img": "image/charimg/2026/Q3/Sayonara_Lara/Rowan.jpg"
-    },
-    {
-      "name": "마이바라 히메카",
-      "gender": "female",
-      "cv": "쿠라오카 미즈하",
-      "img": "image/charimg/2026/Q3/Sayonara_Lara/Himeka_Maihara.jpg"
-    }
-  ]
-},
-{
-  "id": 56736,
-  "characters": [
-    {
-      "name": "아르놀트 레이크스 아들러",
-      "gender": "male",
-      "cv": "우치다 유우마",
-      "img": "image/charimg/2026/Q3/Saikyou_Degarashi_Ouji_no_Anyaku_Teii_Arasoi_Munou_wo_Enjiru_SS_Rank_Ouji_wa_Koui_Keishou-sen_wo_Kage_kara_Shihai_suru/Arnold_Lakes_Adler.jpg"
-    },
-    {
-      "name": "에르나 폰 암스베르그",
-      "gender": "unknown",
-      "cv": "우치다 마아야",
-      "img": "image/charimg/2026/Q3/Saikyou_Degarashi_Ouji_no_Anyaku_Teii_Arasoi_Munou_wo_Enjiru_SS_Rank_Ouji_wa_Koui_Keishou-sen_wo_Kage_kara_Shihai_suru/Elna_von_Amsberg.jpg"
-    },
-    {
-      "name": "피네 폰 크라이넬트",
-      "gender": "unknown",
-      "cv": "이와미 마나카",
-      "img": "image/charimg/2026/Q3/Saikyou_Degarashi_Ouji_no_Anyaku_Teii_Arasoi_Munou_wo_Enjiru_SS_Rank_Ouji_wa_Koui_Keishou-sen_wo_Kage_kara_Shihai_suru/Fiine_von_Clinert.jpg"
-    },
-    {
-      "name": "요하네스 레이크스 아들러",
-      "gender": "male",
-      "cv": "이노우에 카즈히코",
-      "img": "image/charimg/2026/Q3/Saikyou_Degarashi_Ouji_no_Anyaku_Teii_Arasoi_Munou_wo_Enjiru_SS_Rank_Ouji_wa_Koui_Keishou-sen_wo_Kage_kara_Shihai_suru/Johannes_Lakes_Adler.jpg"
-    },
-    {
-      "name": "세바스찬",
-      "gender": "male",
-      "cv": "타나카 마사히코",
-      "img": "image/charimg/2026/Q3/Saikyou_Degarashi_Ouji_no_Anyaku_Teii_Arasoi_Munou_wo_Enjiru_SS_Rank_Ouji_wa_Koui_Keishou-sen_wo_Kage_kara_Shihai_suru/Sebastian.jpg"
-    },
-    {
-      "name": "크리스타 렉스 아드라",
-      "gender": "female",
-      "cv": "쿠와하라 유우키",
-      "img": "image/charimg/2026/Q3/Saikyou_Degarashi_Ouji_no_Anyaku_Teii_Arasoi_Munou_wo_Enjiru_SS_Rank_Ouji_wa_Koui_Keishou-sen_wo_Kage_kara_Shihai_suru/Christa_Lakes_Adler.jpg"
-    },
-    {
-      "name": "린피아",
-      "gender": "female",
-      "cv": "혼도 카에데",
-      "img": "image/charimg/2026/Q3/Saikyou_Degarashi_Ouji_no_Anyaku_Teii_Arasoi_Munou_wo_Enjiru_SS_Rank_Ouji_wa_Koui_Keishou-sen_wo_Kage_kara_Shihai_suru/Lynfia.jpg"
-    },
-    {
-      "name": "미츠바 렉스 아드라",
-      "gender": "female",
-      "cv": "카야노 아이",
-      "img": "image/charimg/2026/Q3/Saikyou_Degarashi_Ouji_no_Anyaku_Teii_Arasoi_Munou_wo_Enjiru_SS_Rank_Ouji_wa_Koui_Keishou-sen_wo_Kage_kara_Shihai_suru/Mitsuba.jpg"
-    },
-    {
-      "name": "레오나르트 렉스 아드라",
-      "gender": "male",
-      "cv": "토야 키쿠노스케",
-      "img": "image/charimg/2026/Q3/Saikyou_Degarashi_Ouji_no_Anyaku_Teii_Arasoi_Munou_wo_Enjiru_SS_Rank_Ouji_wa_Koui_Keishou-sen_wo_Kage_kara_Shihai_suru/Leonard_Lakes_Adler.jpg"
-    },
-    {
-      "name": "트라우고트 렉스 아드라",
-      "gender": "male",
-      "cv": "마츠오카 요시츠구",
-      "img": "image/charimg/2026/Q3/Saikyou_Degarashi_Ouji_no_Anyaku_Teii_Arasoi_Munou_wo_Enjiru_SS_Rank_Ouji_wa_Koui_Keishou-sen_wo_Kage_kara_Shihai_suru/Traugott_Lakes_Adler.jpg"
-    },
-    {
-      "name": "에리크 렉스 아드라",
-      "gender": "male",
-      "cv": "타마루 아츠시",
-      "img": "image/charimg/2026/Q3/Saikyou_Degarashi_Ouji_no_Anyaku_Teii_Arasoi_Munou_wo_Enjiru_SS_Rank_Ouji_wa_Koui_Keishou-sen_wo_Kage_kara_Shihai_suru/Eric_Lakes_Adler.jpg"
-    },
-    {
-      "name": "고든 렉스 아드라",
-      "gender": "male",
-      "cv": "타케우치 료타",
-      "img": "image/charimg/2026/Q3/Saikyou_Degarashi_Ouji_no_Anyaku_Teii_Arasoi_Munou_wo_Enjiru_SS_Rank_Ouji_wa_Koui_Keishou-sen_wo_Kage_kara_Shihai_suru/Gordon_Lakes_Adler.jpg"
-    },
-    {
-      "name": "잔드라 렉스 아드라",
-      "gender": "female",
-      "cv": "사이가 미츠키",
-      "img": "image/charimg/2026/Q3/Saikyou_Degarashi_Ouji_no_Anyaku_Teii_Arasoi_Munou_wo_Enjiru_SS_Rank_Ouji_wa_Koui_Keishou-sen_wo_Kage_kara_Shihai_suru/Zandra_Lakes_Adler.jpg"
-    }
-  ]
-},
-{
-  "id": 62936,
-  "characters": [
-    {
-      "name": "소라노 카케루",
-      "gender": "male",
-      "cv": "이리노 미유",
-      "img": "image/charimg/2026/Q3/Toumei_na_Yoru_ni_Kakeru_Kimi_to,_Me_ni_Mienai_Koi_wo_Shita./Kakeru_Sorano.jpg"
-    },
-    {
-      "name": "후유츠키 코하루",
-      "gender": "female",
-      "cv": "하야미 사오리",
-      "img": "image/charimg/2026/Q3/Toumei_na_Yoru_ni_Kakeru_Kimi_to,_Me_ni_Mienai_Koi_wo_Shita./Koharu_Fuyutsuki.jpg"
-    },
-    {
-      "name": "하야세 유코",
-      "gender": "female",
-      "cv": "코하라 코노미",
-      "img": "image/charimg/2026/Q3/Toumei_na_Yoru_ni_Kakeru_Kimi_to,_Me_ni_Mienai_Koi_wo_Shita./Yuuko_Hayase.jpg"
-    },
-    {
-      "name": "나루미 우시오",
-      "gender": "male",
-      "cv": "아자카미 요헤이",
-      "img": "image/charimg/2026/Q3/Toumei_na_Yoru_ni_Kakeru_Kimi_to,_Me_ni_Mienai_Koi_wo_Shita./Ushio_Narumi.jpg"
-    }
-  ]
-},
-{
-  "id": 60522,
-  "characters": [
-    {
-      "name": "폰타",
-      "gender": "unknown",
-      "cv": "히에다 네네",
-      "img": "image/charimg/2026/Q3/Gaikotsu_Kishi-sama,_Tadaima_Isekai_e_Odekakechuu_II/Ponta.jpg"
-    },
-    {
-      "name": "아크",
-      "gender": "male",
-      "cv": "마에노 토모아키",
-      "img": "image/charimg/2026/Q3/Gaikotsu_Kishi-sama,_Tadaima_Isekai_e_Odekakechuu_II/Arc_.jpg"
-    },
-    {
-      "name": "아리안 그레니스 메이플",
-      "gender": "female",
-      "cv": "파이루즈 아이",
-      "img": "image/charimg/2026/Q3/Gaikotsu_Kishi-sama,_Tadaima_Isekai_e_Odekakechuu_II/Ariane_Glenys_Maple.jpg"
-    },
-    {
-      "name": "이빈 그레니스 메이플",
-      "gender": "female",
-      "cv": "오오쿠보 루미",
-      "img": "image/charimg/2026/Q3/Gaikotsu_Kishi-sama,_Tadaima_Isekai_e_Odekakechuu_II/Eevin_Glenys_Maple.jpg"
-    },
-    {
-      "name": "섹트 론달 카를론 로덴 사디에",
-      "gender": "male",
-      "cv": "카와니시 켄고",
-      "img": "image/charimg/2026/Q3/Gaikotsu_Kishi-sama,_Tadaima_Isekai_e_Odekakechuu_II/Sekto_Rondal_Kallon_Roden_Ollavu.jpg"
-    },
-    {
-      "name": "세리아나 메리아 드 올라브 티시엔트",
-      "gender": "female",
-      "cv": "야마네 아야",
-      "img": "image/charimg/2026/Q3/Gaikotsu_Kishi-sama,_Tadaima_Isekai_e_Odekakechuu_II/Seriarna_du_Olav_Ticient.jpg"
-    },
-    {
-      "name": "차로스 아카디아 인더스트리아",
-      "gender": "unknown",
-      "cv": "이와타 미츠오",
-      "img": "image/charimg/2026/Q3/Gaikotsu_Kishi-sama,_Tadaima_Isekai_e_Odekakechuu_II/Charos_Acedia_Industria.jpg"
-    },
-    {
-      "name": "팔루모 아바리티아 리베랄리타스",
-      "gender": "unknown",
-      "cv": "아카바네 켄지",
-      "img": "image/charimg/2026/Q3/Gaikotsu_Kishi-sama,_Tadaima_Isekai_e_Odekakechuu_II/Parulmo_Avaritia_Liberalitas.jpg"
-    },
-    {
-      "name": "다카레스 시시에 카를론 로덴 베트란",
-      "gender": "male",
-      "cv": "하마노 다이키",
-      "img": "image/charimg/2026/Q3/Gaikotsu_Kishi-sama,_Tadaima_Isekai_e_Odekakechuu_II/Dakares_Shishie_Kallen_Roden_Ollavu.jpg"
-    },
-    {
-      "name": "치요메",
-      "gender": "female",
-      "cv": "토미타 미유",
-      "img": "image/charimg/2026/Q3/Gaikotsu_Kishi-sama,_Tadaima_Isekai_e_Odekakechuu_II/Chiyome.jpg"
-    },
-    {
-      "name": "윌리어스핌",
-      "gender": "unknown",
-      "cv": "세키 토시히코",
-      "img": "image/charimg/2026/Q3/Gaikotsu_Kishi-sama,_Tadaima_Isekai_e_Odekakechuu_II/Wiliahsfim.jpg"
-    },
-    {
-      "name": "유리아나 메롤 메리사 로덴 올라브",
-      "gender": "female",
-      "cv": "오오니시 사오리",
-      "img": "image/charimg/2026/Q3/Gaikotsu_Kishi-sama,_Tadaima_Isekai_e_Odekakechuu_II/Yuriana_Melor_Marissa_Roden_Ollavu.jpg"
-    },
-    {
-      "name": "단카",
-      "gender": "male",
-      "cv": "에구치 타쿠야",
-      "img": "image/charimg/2026/Q3/Gaikotsu_Kishi-sama,_Tadaima_Isekai_e_Odekakechuu_II/Danka_Niel_Maple.jpg"
-    },
-    {
-      "name": "사스케",
-      "gender": "male",
-      "cv": "오노 켄쇼",
-      "img": "image/charimg/2026/Q3/Gaikotsu_Kishi-sama,_Tadaima_Isekai_e_Odekakechuu_II/Sasuke.jpg"
-    },
-    {
-      "name": "세트리온 드 올스테리오",
-      "gender": "male",
-      "cv": "시라이시 미노루",
-      "img": "image/charimg/2026/Q3/Gaikotsu_Kishi-sama,_Tadaima_Isekai_e_Odekakechuu_II/Cetrion.jpg"
-    },
-    {
-      "name": "고에몬",
-      "gender": "male",
-      "cv": "타케우치 료타",
-      "img": "image/charimg/2026/Q3/Gaikotsu_Kishi-sama,_Tadaima_Isekai_e_Odekakechuu_II/Goemon.jpg"
-    },
-    {
-      "name": "발토드 수페르비아 후밀리타스",
-      "gender": "unknown",
-      "cv": "시노미야 고",
-      "img": "image/charimg/2026/Q3/Gaikotsu_Kishi-sama,_Tadaima_Isekai_e_Odekakechuu_II/Bertholdt_Superbia_Humilitas.jpg"
-    },
-    {
-      "name": "드미티아누스 레브란 발레티아펠베",
-      "gender": "unknown",
-      "cv": "이시다 아키라",
-      "img": "image/charimg/2026/Q3/Gaikotsu_Kishi-sama,_Tadaima_Isekai_e_Odekakechuu_II/Domitianus.jpg"
-    },
-    {
-      "name": "딜런 터그 라라토이아",
-      "gender": "male",
-      "cv": "토리우미 코스케",
-      "img": "image/charimg/2026/Q3/Gaikotsu_Kishi-sama,_Tadaima_Isekai_e_Odekakechuu_II/Dylan_Tahg_Lalatoya.jpg"
-    },
-    {
-      "name": "타나토스",
-      "gender": "male",
-      "cv": "스와베 준이치",
-      "img": "image/charimg/2026/Q3/Gaikotsu_Kishi-sama,_Tadaima_Isekai_e_Odekakechuu_II/Thanatos_Sylvius_Hilk.jpg"
-    },
-    {
-      "name": "22대 한조",
-      "gender": "male",
-      "cv": "나카 히로시",
-      "img": "image/charimg/2026/Q3/Gaikotsu_Kishi-sama,_Tadaima_Isekai_e_Odekakechuu_II/Hanzou.jpg"
-    },
-    {
-      "name": "그레니스 알루나 라라토이아",
-      "gender": "female",
-      "cv": "미나구치 유코",
-      "img": "image/charimg/2026/Q3/Gaikotsu_Kishi-sama,_Tadaima_Isekai_e_Odekakechuu_II/Glenys_Alna_Lalatoya.jpg"
-    },
-    {
-      "name": "츠보네",
-      "gender": "female",
-      "cv": "우에다 히토미",
-      "img": "image/charimg/2026/Q3/Gaikotsu_Kishi-sama,_Tadaima_Isekai_e_Odekakechuu_II/Tsubone.jpg"
-    },
-    {
-      "name": "에인",
-      "gender": "male",
-      "cv": "하마 켄토",
-      "img": "image/charimg/2026/Q3/Gaikotsu_Kishi-sama,_Tadaima_Isekai_e_Odekakechuu_II/Ein.jpg"
-    }
-  ]
-},
-{
-  "id": 62617,
-  "characters": [
-    {
-      "name": "랙",
-      "gender": "male",
-      "cv": "카지와라 가쿠토",
-      "img": "image/charimg/2026/Q3/Koko_wa_Ore_ni_Makasete_Saki_ni_Ike_to_Ittekara_10-nen_ga_Tattara_Densetsu_ni_Natteita./Luck_Franzen.jpg"
-    },
-    {
-      "name": "샬럿",
-      "gender": "female",
-      "cv": "하나이 미하루",
-      "img": "image/charimg/2026/Q3/Koko_wa_Ore_ni_Makasete_Saki_ni_Ike_to_Ittekara_10-nen_ga_Tattara_Densetsu_ni_Natteita./Charlotte.jpg"
-    },
-    {
-      "name": "뱀파이어 로드",
-      "gender": "unknown",
-      "cv": "토리우미 코스케",
-      "img": "image/charimg/2026/Q3/Koko_wa_Ore_ni_Makasete_Saki_ni_Ike_to_Ittekara_10-nen_ga_Tattara_Densetsu_ni_Natteita./Vampire_Lord.jpg"
-    },
-    {
-      "name": "골란 모턴",
-      "gender": "male",
-      "cv": "코야마 츠요시",
-      "img": "image/charimg/2026/Q3/Koko_wa_Ore_ni_Makasete_Saki_ni_Ike_to_Ittekara_10-nen_ga_Tattara_Densetsu_ni_Natteita./Goran_Morton.jpg"
-    },
-    {
-      "name": "마리",
-      "gender": "female",
-      "cv": "키노시타 스즈나",
-      "img": "image/charimg/2026/Q3/Koko_wa_Ore_ni_Makasete_Saki_ni_Ike_to_Ittekara_10-nen_ga_Tattara_Densetsu_ni_Natteita./Marie.jpg"
-    },
-    {
-      "name": "에릭 이므가르드 맨디리발",
-      "gender": "male",
-      "cv": "모리카와 토시유키",
-      "img": "image/charimg/2026/Q3/Koko_wa_Ore_ni_Makasete_Saki_ni_Ike_to_Ittekara_10-nen_ga_Tattara_Densetsu_ni_Natteita./Eric_Mendirival.jpg"
-    },
-    {
-      "name": "게르베르가",
-      "gender": "male",
-      "cv": "쵸",
-      "img": "image/charimg/2026/Q3/Koko_wa_Ore_ni_Makasete_Saki_ni_Ike_to_Ittekara_10-nen_ga_Tattara_Densetsu_ni_Natteita./Gerberga.jpg"
-    },
-    {
-      "name": "셀리스 모턴",
-      "gender": "female",
-      "cv": "이시카와 유이",
-      "img": "image/charimg/2026/Q3/Koko_wa_Ore_ni_Makasete_Saki_ni_Ike_to_Ittekara_10-nen_ga_Tattara_Densetsu_ni_Natteita./Celliss_Morton.jpg"
-    },
-    {
-      "name": "가르브",
-      "gender": "male",
-      "cv": "코바야시 나오토",
-      "img": "image/charimg/2026/Q3/Koko_wa_Ore_ni_Makasete_Saki_ni_Ike_to_Ittekara_10-nen_ga_Tattara_Densetsu_ni_Natteita./Garuvu.jpg"
-    },
-    {
-      "name": "시어 울코트",
-      "gender": "female",
-      "cv": "사가라 마유",
-      "img": "image/charimg/2026/Q3/Koko_wa_Ore_ni_Makasete_Saki_ni_Ike_to_Ittekara_10-nen_ga_Tattara_Densetsu_ni_Natteita./Sia_Wolcott.jpg"
-    },
-    {
-      "name": "루칠라",
-      "gender": "male",
-      "cv": "M·A·O",
-      "img": "image/charimg/2026/Q3/Koko_wa_Ore_ni_Makasete_Saki_ni_Ike_to_Ittekara_10-nen_ga_Tattara_Densetsu_ni_Natteita./Luccira.jpg"
-    },
-    {
-      "name": "아로네",
-      "gender": "female",
-      "cv": "마루오카 와카나",
-      "img": "image/charimg/2026/Q3/Koko_wa_Ore_ni_Makasete_Saki_ni_Ike_to_Ittekara_10-nen_ga_Tattara_Densetsu_ni_Natteita./Arone.jpg"
-    },
-    {
-      "name": "미르카",
-      "gender": "female",
-      "cv": "코자카이 유리에",
-      "img": "image/charimg/2026/Q3/Koko_wa_Ore_ni_Makasete_Saki_ni_Ike_to_Ittekara_10-nen_ga_Tattara_Densetsu_ni_Natteita./Milca.jpg"
-    },
-    {
-      "name": "아리오",
-      "gender": "male",
-      "cv": "테루이 유우키",
-      "img": "image/charimg/2026/Q3/Koko_wa_Ore_ni_Makasete_Saki_ni_Ike_to_Ittekara_10-nen_ga_Tattara_Densetsu_ni_Natteita./Ario.jpg"
-    },
-    {
-      "name": "필리 마스터폰",
-      "gender": "female",
-      "cv": "혼이즈미 리나",
-      "img": "image/charimg/2026/Q3/Koko_wa_Ore_ni_Makasete_Saki_ni_Ike_to_Ittekara_10-nen_ga_Tattara_Densetsu_ni_Natteita./Philly.jpg"
-    },
-    {
-      "name": "지니",
-      "gender": "female",
-      "cv": "미야자키 아카리",
-      "img": "image/charimg/2026/Q3/Koko_wa_Ore_ni_Makasete_Saki_ni_Ike_to_Ittekara_10-nen_ga_Tattara_Densetsu_ni_Natteita./Ginny.jpg"
-    },
-    {
-      "name": "뱀파이어 하이로드",
-      "gender": "male",
-      "cv": "오카모토 노부히코",
-      "img": "image/charimg/2026/Q3/Koko_wa_Ore_ni_Makasete_Saki_ni_Ike_to_Ittekara_10-nen_ga_Tattara_Densetsu_ni_Natteita./Vampire_High_Lord.jpg"
-    }
-  ]
-},
-{
-  "id": 62289,
-  "characters": [
-    {
-      "name": "엘리자베트 레이스턴",
-      "gender": "female",
-      "cv": "오오니시 사오리",
-      "img": "image/charimg/2026/Q3/Buchigire_Reijou_wa_Houfuku_wo_Chikaimashita._Madousho_no_Chikara_de_Sokoku_wo_Tataki_Tsubushimasu/Elizabeth_Leiston.jpg"
-    },
-    {
-      "name": "엘자 아치필드",
-      "gender": "female",
-      "cv": "이시가미 시즈카",
-      "img": "image/charimg/2026/Q3/Buchigire_Reijou_wa_Houfuku_wo_Chikaimashita._Madousho_no_Chikara_de_Sokoku_wo_Tataki_Tsubushimasu/Elsa_Archfield.jpg"
-    },
-    {
-      "name": "미레이 카타리아",
-      "gender": "female",
-      "cv": "하세가와 이쿠미",
-      "img": "image/charimg/2026/Q3/Buchigire_Reijou_wa_Houfuku_wo_Chikaimashita._Madousho_no_Chikara_de_Sokoku_wo_Tataki_Tsubushimasu/Mireille_Katarina.jpg"
-    },
-    {
-      "name": "로베르트 아티",
-      "gender": "male",
-      "cv": "아카바네 켄지",
-      "img": "image/charimg/2026/Q3/Buchigire_Reijou_wa_Houfuku_wo_Chikaimashita._Madousho_no_Chikara_de_Sokoku_wo_Tataki_Tsubushimasu/Robert_Arti.jpg"
-    },
-    {
-      "name": "르노아 칼튼",
-      "gender": "female",
-      "cv": "오구라 유이",
-      "img": "image/charimg/2026/Q3/Buchigire_Reijou_wa_Houfuku_wo_Chikaimashita._Madousho_no_Chikara_de_Sokoku_wo_Tataki_Tsubushimasu/Lunoa_Carlton.jpg"
-    },
-    {
-      "name": "로젤리아 파드갈",
-      "gender": "female",
-      "cv": "세토 아사미",
-      "img": "image/charimg/2026/Q3/Buchigire_Reijou_wa_Houfuku_wo_Chikaimashita._Madousho_no_Chikara_de_Sokoku_wo_Tataki_Tsubushimasu/Rozelia_Fadgar.jpg"
-    },
-    {
-      "name": "미샤 테일",
-      "gender": "female",
-      "cv": "우에하라 아유미",
-      "img": "image/charimg/2026/Q3/Buchigire_Reijou_wa_Houfuku_wo_Chikaimashita._Madousho_no_Chikara_de_Sokoku_wo_Tataki_Tsubushimasu/Misha_Tail.jpg"
-    },
-    {
-      "name": "루카스 레브릭",
-      "gender": "male",
-      "cv": "아자카미 요헤이",
-      "img": "image/charimg/2026/Q3/Buchigire_Reijou_wa_Houfuku_wo_Chikaimashita._Madousho_no_Chikara_de_Sokoku_wo_Tataki_Tsubushimasu/Lucas_Lebrick.jpg"
-    },
-    {
-      "name": "프리드 할드리아",
-      "gender": "male",
-      "cv": "미즈나카 마사아키",
-      "img": "image/charimg/2026/Q3/Buchigire_Reijou_wa_Houfuku_wo_Chikaimashita._Madousho_no_Chikara_de_Sokoku_wo_Tataki_Tsubushimasu/Friede_Haldoria.jpg"
-    },
-    {
-      "name": "실비아 록이트",
-      "gender": "female",
-      "cv": "코우노 마리카",
-      "img": "image/charimg/2026/Q3/Buchigire_Reijou_wa_Houfuku_wo_Chikaimashita._Madousho_no_Chikara_de_Sokoku_wo_Tataki_Tsubushimasu/Sylvia_Lockit.jpg"
-    },
-    {
-      "name": "티다",
-      "gender": "female",
-      "cv": "세리자와 유우",
-      "img": "image/charimg/2026/Q3/Buchigire_Reijou_wa_Houfuku_wo_Chikaimashita._Madousho_no_Chikara_de_Sokoku_wo_Tataki_Tsubushimasu/Tida.jpg"
-    }
-  ]
-},
-{
-  "id": 63752,
-  "characters": [
-    {
-      "name": "타카나시 린",
-      "gender": "female",
-      "cv": "토쿠이 소라",
-      "img": "image/charimg/2026/Q3/Suterare_Seijo_no_Isekai_Gohantabi_Kakure_Skill_de_Camping_Car_wo_Shoukan_Shimashita/Rin_Takanashi.jpg"
-    },
-    {
-      "name": "빌",
-      "gender": "male",
-      "cv": "오노 유우키",
-      "img": "image/charimg/2026/Q3/Suterare_Seijo_no_Isekai_Gohantabi_Kakure_Skill_de_Camping_Car_wo_Shoukan_Shimashita/Viru.jpg"
-    },
-    {
-      "name": "아리아",
-      "gender": "female",
-      "cv": "모로호시 스미레",
-      "img": "image/charimg/2026/Q3/Suterare_Seijo_no_Isekai_Gohantabi_Kakure_Skill_de_Camping_Car_wo_Shoukan_Shimashita/Aria.jpg"
-    },
-    {
-      "name": "에드",
-      "gender": "male",
-      "cv": "치바 쇼야",
-      "img": "image/charimg/2026/Q3/Suterare_Seijo_no_Isekai_Gohantabi_Kakure_Skill_de_Camping_Car_wo_Shoukan_Shimashita/Edo.jpg"
-    },
-    {
-      "name": "세논",
-      "gender": "male",
-      "cv": "타치바나 신노스케",
-      "img": "image/charimg/2026/Q3/Suterare_Seijo_no_Isekai_Gohantabi_Kakure_Skill_de_Camping_Car_wo_Shoukan_Shimashita/Xenon.jpg"
-    },
-    {
-      "name": "고마미소",
-      "gender": "unknown",
-      "cv": "혼도 카에데",
-      "img": "image/charimg/2026/Q3/Suterare_Seijo_no_Isekai_Gohantabi_Kakure_Skill_de_Camping_Car_wo_Shoukan_Shimashita/Gomamiso.jpg"
-    },
-    {
-      "name": "토리",
-      "gender": "male",
-      "cv": "야마모토 카네히라",
-      "img": "image/charimg/2026/Q3/Suterare_Seijo_no_Isekai_Gohantabi_Kakure_Skill_de_Camping_Car_wo_Shoukan_Shimashita/Toori.jpg"
-    },
-    {
-      "name": "실라",
-      "gender": "female",
-      "cv": "타무라 유카리",
-      "img": "image/charimg/2026/Q3/Suterare_Seijo_no_Isekai_Gohantabi_Kakure_Skill_de_Camping_Car_wo_Shoukan_Shimashita/Sheila.jpg"
-    }
-  ]
-},
-{
-  "id": 62031,
-  "characters": [
-    {
-      "name": "이치게키 단코",
-      "gender": "female",
-      "cv": "나카야마 마나카",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Danko_Ichigeki.jpg"
-    },
-    {
-      "name": "코보토게 친코",
-      "gender": "female",
-      "cv": "마에다 카오리",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Chinko_Kobotake.jpg"
-    },
-    {
-      "name": "에타이 모치코",
-      "gender": "female",
-      "cv": "세키네 아키라",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Mochiko_Etai.jpg"
-    },
-    {
-      "name": "수잔 캐논 수지",
-      "gender": "female",
-      "cv": "타이치 요우",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Susan_Canon.jpg"
-    },
-    {
-      "name": "오토하나 하니이",
-      "gender": "female",
-      "cv": "사사하라 유우",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Honey_Otohana.jpg"
-    },
-    {
-      "name": "미카사 하코",
-      "gender": "female",
-      "cv": "우에사카 스미레",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Hako_Mikasa.jpg"
-    },
-    {
-      "name": "히우라 하야미",
-      "gender": "female",
-      "cv": "나카무라 칸나",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Hayami_Hiura.jpg"
-    },
-    {
-      "name": "니카이도 페이코",
-      "gender": "female",
-      "cv": "와카이 유우키",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Peiko_Nikaidou.jpg"
-    },
-    {
-      "name": "이가라시 쥬리",
-      "gender": "female",
-      "cv": "이구치 유카",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Juri_Igarashi.jpg"
-    },
-    {
-      "name": "사카모토 류카",
-      "gender": "female",
-      "cv": "아케사카 사토미",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Ruka_Sakamoto.jpg"
-    },
-    {
-      "name": "조이",
-      "gender": "female",
-      "cv": "파이루즈 아이",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Zoe.jpg"
-    },
-    {
-      "name": "미도 란",
-      "gender": "female",
-      "cv": "이세 마리야",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Ran_Midou.jpg"
-    },
-    {
-      "name": "나통키",
-      "gender": "male",
-      "cv": "히다카 노리코",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Danpei_Ichigeki.jpg"
-    },
-    {
-      "name": "오맹태",
-      "gender": "male",
-      "cv": "이나다 테츠",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Chinnen_Kobotoke.jpg"
-    },
-    {
-      "name": "나레타",
-      "gender": "unknown",
-      "cv": "히다카 노리코",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Narrator.jpg"
-    },
-    {
-      "name": "사카키바라 사요",
-      "gender": "female",
-      "cv": "히토미 사야",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Sayo_Sakakibara.jpg"
-    },
-    {
-      "name": "시소우마 나츠미",
-      "gender": "female",
-      "cv": "타케다 라리사 타고",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Natsumi_Shisoma.jpg"
-    },
-    {
-      "name": "히가시야마 아카리",
-      "gender": "female",
-      "cv": "하세가와 레나",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Akari_Higashiyama.jpg"
-    },
-    {
-      "name": "코바야카와 린",
-      "gender": "female",
-      "cv": "이토 아야사",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Rin_Kobayakawa.jpg"
-    },
-    {
-      "name": "엘다",
-      "gender": "female",
-      "cv": "미카지리 노조미",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Elda.jpg"
-    },
-    {
-      "name": "손미나",
-      "gender": "female",
-      "cv": "히다카 노리코",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Misato_Ichigeki.jpg"
-    },
-    {
-      "name": "미타무라 우라라",
-      "gender": "female",
-      "cv": "테라사와 모모카",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Urara_Mitamura.jpg"
-    },
-    {
-      "name": "타카야마 사츠키",
-      "gender": "female",
-      "cv": "이노우에 마리나",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Satsuki_Takayama.jpg"
-    },
-    {
-      "name": "김미화",
-      "gender": "female",
-      "cv": "후쿠엔 미사토",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Haruka_Ichigeki.jpg"
-    },
-    {
-      "name": "하리마 미호",
-      "gender": "female",
-      "cv": "히로마츠 세리카",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Miho_Harima.jpg"
-    },
-    {
-      "name": "오가타 키라",
-      "gender": "female",
-      "cv": "코자카이 유리에",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Kira_Ogata.jpg"
-    },
-    {
-      "name": "마리나",
-      "gender": "female",
-      "cv": "오키 카나에",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Marina.jpg"
-    },
-    {
-      "name": "우사미 루나",
-      "gender": "female",
-      "cv": "이자와 시오리",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Runa_Usami.jpg"
-    },
-    {
-      "name": "모모카",
-      "gender": "female",
-      "cv": "하나사키 미유",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Momoka.jpg"
-    },
-    {
-      "name": "후와 히나타",
-      "gender": "female",
-      "cv": "하야시 리카",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Hinata_Fuwa.jpg"
-    },
-    {
-      "name": "리코",
-      "gender": "female",
-      "cv": "오오모리 니치카",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Riko.jpg"
-    },
-    {
-      "name": "유우키 이로하",
-      "gender": "female",
-      "cv": "후지데라 미노리",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Iroha_Yuuki.jpg"
-    },
-    {
-      "name": "쿠스노키 모아",
-      "gender": "female",
-      "cv": "타치바나 아즈사",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Moa_Kusunoki.jpg"
-    },
-    {
-      "name": "카츠라기 나나미",
-      "gender": "female",
-      "cv": "아사히나 마도카",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Nanami_Katsuragi.jpg"
-    },
-    {
-      "name": "핫토리 아라타",
-      "gender": "female",
-      "cv": "이시이 미사",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Arata_Hattori.jpg"
-    }
-  ]
-},
-{
-  "id": 56735,
-  "characters": [
-    {
-      "name": "키리시마 하야토",
-      "gender": "male",
-      "cv": "토키 슌이치",
-      "img": "image/charimg/2026/Q3/Tenkousaki_no_Seiso_Karen_na_Bishoujo_ga,_Mukashi_Danshi_to_Omotte_Issho_ni_Asonda_Osananajimi_datta_Ken/Hayato_Kirishima.jpg"
-    },
-    {
-      "name": "니카이도 하루키",
-      "gender": "female",
-      "cv": "하세가와 이쿠미",
-      "img": "image/charimg/2026/Q3/Tenkousaki_no_Seiso_Karen_na_Bishoujo_ga,_Mukashi_Danshi_to_Omotte_Issho_ni_Asonda_Osananajimi_datta_Ken/Haruki_Nikaido.jpg"
-    },
-    {
-      "name": "키리시마 히메코",
-      "gender": "female",
-      "cv": "하나이 미하루",
-      "img": "image/charimg/2026/Q3/Tenkousaki_no_Seiso_Karen_na_Bishoujo_ga,_Mukashi_Danshi_to_Omotte_Issho_ni_Asonda_Osananajimi_datta_Ken/Himeko_Kirishima.jpg"
-    },
-    {
-      "name": "미타케 미나모",
-      "gender": "female",
-      "cv": "하루세 나츠미",
-      "img": "image/charimg/2026/Q3/Tenkousaki_no_Seiso_Karen_na_Bishoujo_ga,_Mukashi_Danshi_to_Omotte_Issho_ni_Asonda_Osananajimi_datta_Ken/Minamo_Mitake.jpg"
-    },
-    {
-      "name": "무라오 사키",
-      "gender": "female",
-      "cv": "이즈미 후카",
-      "img": "image/charimg/2026/Q3/Tenkousaki_no_Seiso_Karen_na_Bishoujo_ga,_Mukashi_Danshi_to_Omotte_Issho_ni_Asonda_Osananajimi_datta_Ken/Saki_Murao.jpg"
-    }
-  ]
-},
-{
-  "id": 62542,
-  "characters": [
-    {
-      "name": "코테가와 치사",
-      "gender": "female",
-      "cv": "안자이 치카",
-      "img": "image/charimg/2026/Q3/Grand_Blue_Season_3/Chisa_Kotegawa.jpg"
-    },
-    {
-      "name": "키타하라 이오리",
-      "gender": "male",
-      "cv": "우치다 유우마",
-      "img": "image/charimg/2026/Q3/Grand_Blue_Season_3/Iori_Kitahara.jpg"
-    },
-    {
-      "name": "이케고시 유이치",
-      "gender": "male",
-      "cv": "키무라 료헤이",
-      "img": "image/charimg/2026/Q3/Grand_Blue_Season_3/Kouhei_Imamura.jpg"
-    },
-    {
-      "name": "요시와라 아이나",
-      "gender": "female",
-      "cv": "아스미 카나",
-      "img": "image/charimg/2026/Q3/Grand_Blue_Season_3/Aina_Yoshiwara.jpg"
-    },
-    {
-      "name": "하마오카 아즈사",
-      "gender": "female",
-      "cv": "유키나리 토아",
-      "img": "image/charimg/2026/Q3/Grand_Blue_Season_3/Azusa_Hamaoka.jpg"
-    },
-    {
-      "name": "토키타 신지",
-      "gender": "male",
-      "cv": "야스모토 히로키",
-      "img": "image/charimg/2026/Q3/Grand_Blue_Season_3/Shinji_Tokita.jpg"
-    },
-    {
-      "name": "코토부키 류지로",
-      "gender": "male",
-      "cv": "코니시 카츠유키",
-      "img": "image/charimg/2026/Q3/Grand_Blue_Season_3/Ryuujirou_Kotobuki.jpg"
-    },
-    {
-      "name": "코테가와 나나카",
-      "gender": "female",
-      "cv": "우치다 마아야",
-      "img": "image/charimg/2026/Q3/Grand_Blue_Season_3/Nanaka_Kotegawa.jpg"
-    },
-    {
-      "name": "미타라이 유우",
-      "gender": "male",
-      "cv": "하나에 나츠키",
-      "img": "image/charimg/2026/Q3/Grand_Blue_Season_3/Yuu_Mitarai_.jpg"
-    },
-    {
-      "name": "야마모토 신이치로",
-      "gender": "male",
-      "cv": "에노키 준야",
-      "img": "image/charimg/2026/Q3/Grand_Blue_Season_3/Shinichirou_Yamamoto.jpg"
-    },
-    {
-      "name": "코테가와 토시오",
-      "gender": "male",
-      "cv": "카와다 신지",
-      "img": "image/charimg/2026/Q3/Grand_Blue_Season_3/Toshio_Kotegawa.jpg"
-    },
-    {
-      "name": "노지마 하지메",
-      "gender": "male",
-      "cv": "에구치 타쿠야",
-      "img": "image/charimg/2026/Q3/Grand_Blue_Season_3/Hajime_Nojima.jpg"
-    },
-    {
-      "name": "쿠도",
-      "gender": "male",
-      "cv": "후쿠야마 쥰",
-      "img": "image/charimg/2026/Q3/Grand_Blue_Season_3/Kudou.jpg"
-    },
-    {
-      "name": "미즈키 카야",
-      "gender": "female",
-      "cv": "미즈키 나나",
-      "img": "image/charimg/2026/Q3/Grand_Blue_Season_3/Kaya_Mizuki.jpg"
-    },
-    {
-      "name": "후지와라 켄타",
-      "gender": "male",
-      "cv": "로버트 워터맨",
-      "img": "image/charimg/2026/Q3/Grand_Blue_Season_3/Kenta_Fujiwara.jpg"
-    },
-    {
-      "name": "부스지마 사쿠라코",
-      "gender": "female",
-      "cv": "야마네 아야",
-      "img": "image/charimg/2026/Q3/Grand_Blue_Season_3/Sakurako_Busujima.jpg"
-    },
-    {
-      "name": "키타하라 시오리",
-      "gender": "female",
-      "cv": "모로호시 스미레",
-      "img": "image/charimg/2026/Q3/Grand_Blue_Season_3/Shiori_Kitahara.jpg"
-    },
-    {
-      "name": "오토야 나오미",
-      "gender": "male",
-      "cv": "아오야마 요시노",
-      "img": "image/charimg/2026/Q3/Grand_Blue_Season_3/Naomi_Otoya.jpg"
-    },
-    {
-      "name": "코테가와 사야카",
-      "gender": "female",
-      "cv": "오오하라 사야카",
-      "img": "image/charimg/2026/Q3/Grand_Blue_Season_3/Sayaka_Kotegawa.jpg"
-    },
-    {
-      "name": "카리나",
-      "gender": "female",
-      "cv": "M·A·O",
-      "img": "image/charimg/2026/Q3/Grand_Blue_Season_3/Carina.jpg"
-    },
-    {
-      "name": "치프",
-      "gender": "female",
-      "cv": "세토 아사미",
-      "img": "image/charimg/2026/Q3/Grand_Blue_Season_3/Chief.jpg"
-    },
-    {
-      "name": "마키",
-      "gender": "female",
-      "cv": "스자키 아야",
-      "img": "image/charimg/2026/Q3/Grand_Blue_Season_3/Maki.jpg"
-    },
-    {
-      "name": "타카하시 아이",
-      "gender": "female",
-      "cv": "이노우에 마리나",
-      "img": "image/charimg/2026/Q3/Grand_Blue_Season_3/Takahashi_Ai.jpg"
-    },
-    {
-      "name": "シュトロハイム",
-      "gender": "male",
-      "cv": "코마다 와타루",
-      "img": "image/charimg/2026/Q3/Grand_Blue_Season_3/Stroheim.jpg"
-    },
-    {
-      "name": "クーゲルシュライバー",
-      "gender": "male",
-      "cv": "오와다 쇼헤이",
-      "img": "image/charimg/2026/Q3/Grand_Blue_Season_3/Kugelschreiber.jpg"
-    },
-    {
-      "name": "北原母",
-      "gender": "female",
-      "cv": "우치다 마아야",
-      "img": "image/charimg/2026/Q3/Grand_Blue_Season_3/Kitahara_Haha.jpg"
-    },
-    {
-      "name": "北原父",
-      "gender": "male",
-      "cv": "우치다 나오야",
-      "img": "image/charimg/2026/Q3/Grand_Blue_Season_3/Kitahara_Chichi.jpg"
-    }
-  ]
-},
-{
-  "id": 46488,
-  "characters": [
-    {
-      "name": "미츠키 아야",
-      "gender": "female",
-      "cv": "하세가와 이쿠미",
-      "img": "image/charimg/2026/Q3/Tai-Ari_deshita._Ojou-sama_wa_Kakutou_Game_nante_Shinai/Aya_Mitsuki.jpg"
-    },
-    {
-      "name": "요루에 미오",
-      "gender": "female",
-      "cv": "이치노세 카나",
-      "img": "image/charimg/2026/Q3/Tai-Ari_deshita._Ojou-sama_wa_Kakutou_Game_nante_Shinai/Mio_Yorue.jpg"
-    },
-    {
-      "name": "이치노세 하나",
-      "gender": "female",
-      "cv": "하나모리 유미리",
-      "img": "image/charimg/2026/Q3/Tai-Ari_deshita._Ojou-sama_wa_Kakutou_Game_nante_Shinai/Hana_Ichinose.jpg"
-    },
-    {
-      "name": "카페오레",
-      "gender": "male",
-      "cv": "아자카미 요헤이",
-      "img": "image/charimg/2026/Q3/Tai-Ari_deshita._Ojou-sama_wa_Kakutou_Game_nante_Shinai/CA-FE-O-RE.jpg"
-    },
-    {
-      "name": "이누이 유우",
-      "gender": "female",
-      "cv": "센본기 사야카",
-      "img": "image/charimg/2026/Q3/Tai-Ari_deshita._Ojou-sama_wa_Kakutou_Game_nante_Shinai/Yuu_Inui.jpg"
-    },
-    {
-      "name": "사키사카 나츠메",
-      "gender": "female",
-      "cv": "히토미 사야",
-      "img": "image/charimg/2026/Q3/Tai-Ari_deshita._Ojou-sama_wa_Kakutou_Game_nante_Shinai/Natsume_Sukisaka.jpg"
-    },
-    {
-      "name": "이치노세 타마키",
-      "gender": "female",
-      "cv": "시모지 시노",
-      "img": "image/charimg/2026/Q3/Tai-Ari_deshita._Ojou-sama_wa_Kakutou_Game_nante_Shinai/Tamaki_Ichinose.jpg"
-    },
-    {
-      "name": "후지미야 아리사",
-      "gender": "female",
-      "cv": "나가나와 마리아",
-      "img": "image/charimg/2026/Q3/Tai-Ari_deshita._Ojou-sama_wa_Kakutou_Game_nante_Shinai/Arisa_Fujimiya.jpg"
-    },
-    {
-      "name": "플랑베르주",
-      "gender": "male",
-      "cv": "아루",
-      "img": "image/charimg/2026/Q3/Tai-Ari_deshita._Ojou-sama_wa_Kakutou_Game_nante_Shinai/Flamberge.jpg"
-    },
-    {
-      "name": "게키도",
-      "gender": "male",
-      "cv": "히야마 노부유키",
-      "img": "image/charimg/2026/Q3/Tai-Ari_deshita._Ojou-sama_wa_Kakutou_Game_nante_Shinai/gekido.jpg"
-    },
-    {
-      "name": "세실",
-      "gender": "male",
-      "cv": "야시로 타쿠",
-      "img": "image/charimg/2026/Q3/Tai-Ari_deshita._Ojou-sama_wa_Kakutou_Game_nante_Shinai/Seshiro.jpg"
-    }
-  ]
-},
-{
-  "id": 61126,
-  "characters": [
-    {
-      "name": "카가리 미미",
-      "gender": "female",
-      "cv": "히다카 리나",
-      "img": "image/charimg/2026/Q3/Kimi_ga_Shinu_made_Koi_wo_Shitai/Mimi_Kagari.jpg"
-    },
-    {
-      "name": "토츠키 시나",
-      "gender": "female",
-      "cv": "타카하시 리에",
-      "img": "image/charimg/2026/Q3/Kimi_ga_Shinu_made_Koi_wo_Shitai/Sheena_Totsuki.jpg"
-    },
-    {
-      "name": "헤더",
-      "gender": "female",
-      "cv": "Unknown",
-      "img": "image/charimg/2026/Q3/Kimi_ga_Shinu_made_Koi_wo_Shitai/Heather.jpg"
-    },
-    {
-      "name": "모드 아리",
-      "gender": "female",
-      "cv": "이시카와 유이",
-      "img": "image/charimg/2026/Q3/Kimi_ga_Shinu_made_Koi_wo_Shitai/Ali_Maud.jpg"
-    },
-    {
-      "name": "안할트 할프레드",
-      "gender": "non-binary",
-      "cv": "스기야마 리호",
-      "img": "image/charimg/2026/Q3/Kimi_ga_Shinu_made_Koi_wo_Shitai/Halfred_Anhalt.jpg"
-    },
-    {
-      "name": "리지 세이란",
-      "gender": "female",
-      "cv": "세토 아사미",
-      "img": "image/charimg/2026/Q3/Kimi_ga_Shinu_made_Koi_wo_Shitai/Seiran_Lizzy.jpg"
-    },
-    {
-      "name": "오미",
-      "gender": "female",
-      "cv": "카야노 아이",
-      "img": "image/charimg/2026/Q3/Kimi_ga_Shinu_made_Koi_wo_Shitai/Omi.jpg"
-    },
-    {
-      "name": "프란",
-      "gender": "female",
-      "cv": "우치야마 유미",
-      "img": "image/charimg/2026/Q3/Kimi_ga_Shinu_made_Koi_wo_Shitai/Fran.jpg"
-    },
-    {
-      "name": "노파 선생",
-      "gender": "female",
-      "cv": "쇼가와 히토미",
-      "img": "image/charimg/2026/Q3/Kimi_ga_Shinu_made_Koi_wo_Shitai/Rouba_Sensei.jpg"
-    },
-    {
-      "name": "니노 에스터",
-      "gender": "female",
-      "cv": "시라이시 하루카",
-      "img": "image/charimg/2026/Q3/Kimi_ga_Shinu_made_Koi_wo_Shitai/Esta_Nino.jpg"
-    },
-    {
-      "name": "멜 라우라",
-      "gender": "female",
-      "cv": "아마미야 소라",
-      "img": "image/charimg/2026/Q3/Kimi_ga_Shinu_made_Koi_wo_Shitai/Laura_Mel.jpg"
-    }
-  ]
-},
-{
-  "id": 58929,
-  "characters": [
-    {
-      "name": "쿠사나기 모토코",
-      "gender": "female",
-      "cv": "사카모토 마아야",
-      "img": "image/charimg/2026/Q3/Koukaku_Kidoutai_THE_GHOST_IN_THE_SHELL/Motoko_Kusanagi.jpg"
-    },
-    {
-      "name": "아라마키 다이스케",
-      "gender": "unknown",
-      "cv": "야마지 카즈히로",
-      "img": "image/charimg/2026/Q3/Koukaku_Kidoutai_THE_GHOST_IN_THE_SHELL/Daisuke_Aramaki.jpg"
-    },
-    {
-      "name": "바토",
-      "gender": "male",
-      "cv": "야스모토 히로키",
-      "img": "image/charimg/2026/Q3/Koukaku_Kidoutai_THE_GHOST_IN_THE_SHELL/Batou.jpg"
-    },
-    {
-      "name": "토구사",
-      "gender": "unknown",
-      "cv": "나카무라 유이치",
-      "img": "image/charimg/2026/Q3/Koukaku_Kidoutai_THE_GHOST_IN_THE_SHELL/Togusa.jpg"
-    },
-    {
-      "name": "이시카와",
-      "gender": "unknown",
-      "cv": "고토 코스케",
-      "img": "image/charimg/2026/Q3/Koukaku_Kidoutai_THE_GHOST_IN_THE_SHELL/Ishikawa.jpg"
-    },
-    {
-      "name": "사이토",
-      "gender": "unknown",
-      "cv": "나라 토오루",
-      "img": "image/charimg/2026/Q3/Koukaku_Kidoutai_THE_GHOST_IN_THE_SHELL/Saito.jpg"
-    },
-    {
-      "name": "오퍼레이터",
-      "gender": "female",
-      "cv": "오오이 마리에",
-      "img": "image/charimg/2026/Q3/Koukaku_Kidoutai_THE_GHOST_IN_THE_SHELL/Operator.jpg"
-    },
-    {
-      "name": "28번",
-      "gender": "male",
-      "cv": "마츠오카 미사토",
-      "img": "image/charimg/2026/Q3/Koukaku_Kidoutai_THE_GHOST_IN_THE_SHELL/28-ban.jpg"
-    },
-    {
-      "name": "清掃局員",
-      "gender": "male",
-      "cv": "사토 세츠지",
-      "img": "image/charimg/2026/Q3/Koukaku_Kidoutai_THE_GHOST_IN_THE_SHELL/Seisou_Kyokuin.jpg"
-    },
-    {
-      "name": "토노다 대령",
-      "gender": "male",
-      "cv": "오가타 켄이치",
-      "img": "image/charimg/2026/Q3/Koukaku_Kidoutai_THE_GHOST_IN_THE_SHELL/Tonoda_Taisa.jpg"
-    },
-    {
-      "name": "인형사",
-      "gender": "unknown",
-      "cv": "이노우에 키쿠코",
-      "img": "image/charimg/2026/Q3/Koukaku_Kidoutai_THE_GHOST_IN_THE_SHELL/Project_2501.jpg"
-    },
-    {
-      "name": "후치코마",
-      "gender": "unknown",
-      "cv": "카네다 토모코",
-      "img": "image/charimg/2026/Q3/Koukaku_Kidoutai_THE_GHOST_IN_THE_SHELL/Fuchikoma.jpg"
-    },
-    {
-      "name": "伊東次官",
-      "gender": "male",
-      "cv": "야나카 히로시",
-      "img": "image/charimg/2026/Q3/Koukaku_Kidoutai_THE_GHOST_IN_THE_SHELL/Itou_Jikan.jpg"
-    },
-    {
-      "name": "한카 정밀기계 사장",
-      "gender": "male",
-      "cv": "에바라 마사시",
-      "img": "image/charimg/2026/Q3/Koukaku_Kidoutai_THE_GHOST_IN_THE_SHELL/Hanka_Seiki_Shachou.jpg"
-    },
-    {
-      "name": "나카무라 부장",
-      "gender": "unknown",
-      "cv": "치바 시게루",
-      "img": "image/charimg/2026/Q3/Koukaku_Kidoutai_THE_GHOST_IN_THE_SHELL/Nakamura.jpg"
-    },
-    {
-      "name": "인형",
-      "gender": "male",
-      "cv": "타카기 와타루",
-      "img": "image/charimg/2026/Q3/Koukaku_Kidoutai_THE_GHOST_IN_THE_SHELL/Ningyou.jpg"
-    },
-    {
-      "name": "모토코 친구(장발)",
-      "gender": "female",
-      "cv": "쿠와시마 호우코",
-      "img": "image/charimg/2026/Q3/Koukaku_Kidoutai_THE_GHOST_IN_THE_SHELL/Kusanagi_no_Yuujin_(Chouhatsu).jpg"
-    },
-    {
-      "name": "ウィリス博士",
-      "gender": "male",
-      "cv": "후쿠마츠 신야",
-      "img": "image/charimg/2026/Q3/Koukaku_Kidoutai_THE_GHOST_IN_THE_SHELL/Willis_Hakase.jpg"
-    },
-    {
-      "name": "가벨 공화국 마레스 대령",
-      "gender": "male",
-      "cv": "오오츠카 아키오",
-      "img": "image/charimg/2026/Q3/Koukaku_Kidoutai_THE_GHOST_IN_THE_SHELL/Mares_Taisa.jpg"
-    },
-    {
-      "name": "相馬亭",
-      "gender": "male",
-      "cv": "사카즈메 타카유키",
-      "img": "image/charimg/2026/Q3/Koukaku_Kidoutai_THE_GHOST_IN_THE_SHELL/Souma-tei.jpg"
-    },
-    {
-      "name": "모토코 친구(단발)",
-      "gender": "female",
-      "cv": "나카하라 마이 ",
-      "img": "image/charimg/2026/Q3/Koukaku_Kidoutai_THE_GHOST_IN_THE_SHELL/Kusanagi_no_Yuujin_(Tanpatsu).jpg"
-    },
-    {
-      "name": "내무대신",
-      "gender": "male",
-      "cv": "챠후린",
-      "img": "image/charimg/2026/Q3/Koukaku_Kidoutai_THE_GHOST_IN_THE_SHELL/Naidaijin.jpg"
-    },
-    {
-      "name": "中島",
-      "gender": "unknown",
-      "cv": "타도코로 히나타",
-      "img": "image/charimg/2026/Q3/Koukaku_Kidoutai_THE_GHOST_IN_THE_SHELL/Nakajima.jpg"
-    },
-    {
-      "name": "보마 ",
-      "gender": "unknown",
-      "cv": "미야우치 아츠시",
-      "img": "image/charimg/2026/Q3/Koukaku_Kidoutai_THE_GHOST_IN_THE_SHELL/Borma.jpg"
-    },
-    {
-      "name": "警備員リーダー",
-      "gender": "male",
-      "cv": "이나다 테츠",
-      "img": "image/charimg/2026/Q3/Koukaku_Kidoutai_THE_GHOST_IN_THE_SHELL/Keibiin_Leader.jpg"
-    },
-    {
-      "name": "파즈",
-      "gender": "unknown",
-      "cv": "우치다 유야",
-      "img": "image/charimg/2026/Q3/Koukaku_Kidoutai_THE_GHOST_IN_THE_SHELL/Pazu.jpg"
-    }
-  ]
-},
-{
-  "id": 62476,
-  "characters": [
-    {
-      "name": "빅토리아 셀러스",
-      "gender": "female",
-      "cv": "안자이 치카",
-      "img": "image/charimg/2026/Q3/Tefuda_ga_Oome_no_Victoria/Victoria_Sellers.jpg"
-    },
-    {
-      "name": "제프리 어셔",
-      "gender": "male",
-      "cv": "아자카미 요헤이",
-      "img": "image/charimg/2026/Q3/Tefuda_ga_Oome_no_Victoria/Jeffrey_Asher.jpg"
-    },
-    {
-      "name": "논나",
-      "gender": "female",
-      "cv": "와카야마 시온",
-      "img": "image/charimg/2026/Q3/Tefuda_ga_Oome_no_Victoria/Nonna.jpg"
-    },
-    {
-      "name": "버나드 피처",
-      "gender": "male",
-      "cv": "야나카 히로시",
-      "img": "image/charimg/2026/Q3/Tefuda_ga_Oome_no_Victoria/Bernard_Fitcher.jpg"
-    },
-    {
-      "name": "클라크 앤더슨",
-      "gender": "male",
-      "cv": "한 메구미",
-      "img": "image/charimg/2026/Q3/Tefuda_ga_Oome_no_Victoria/Clark_Anderson.jpg"
-    },
-    {
-      "name": "세드릭 애쉬버리",
-      "gender": "male",
-      "cv": "오노 켄쇼",
-      "img": "image/charimg/2026/Q3/Tefuda_ga_Oome_no_Victoria/Cedric_Ashbury.jpg"
-    },
-    {
-      "name": "랑콤",
-      "gender": "male",
-      "cv": "노지마 켄지",
-      "img": "image/charimg/2026/Q3/Tefuda_ga_Oome_no_Victoria/Lancome.jpg"
-    },
-    {
-      "name": "요라나 헤인즈",
-      "gender": "female",
-      "cv": "아키호 사에코",
-      "img": "image/charimg/2026/Q3/Tefuda_ga_Oome_no_Victoria/Yolana_Haynes.jpg"
-    },
-    {
-      "name": "콘래드 애쉬버리",
-      "gender": "male",
-      "cv": "오오사카 료타",
-      "img": "image/charimg/2026/Q3/Tefuda_ga_Oome_no_Victoria/Conrad_Ashbury.jpg"
-    },
-    {
-      "name": "에드워드 어셔",
-      "gender": "male",
-      "cv": "오노 다이스케",
-      "img": "image/charimg/2026/Q3/Tefuda_ga_Oome_no_Victoria/Edward_Asher.jpg"
-    },
-    {
-      "name": "자하로",
-      "gender": "male",
-      "cv": "후루카와 마코토",
-      "img": "image/charimg/2026/Q3/Tefuda_ga_Oome_no_Victoria/Zaharo.jpg"
-    }
-  ]
-},
-{
-  "id": 63489,
-  "characters": [
-    {
-      "name": "스즈키 유리",
-      "gender": "female",
-      "cv": "타치바나 미라이",
-      "img": "image/charimg/2026/Q3/Sora_wa_Akai_Kawa_no_Hotori/Yuri_Suzuki.jpg"
-    },
-    {
-      "name": "카일 무르시리",
-      "gender": "male",
-      "cv": "카토 와타루",
-      "img": "image/charimg/2026/Q3/Sora_wa_Akai_Kawa_no_Hotori/Kail_Mursili.jpg"
-    },
-    {
-      "name": "우르히 샤르마",
-      "gender": "male",
-      "cv": "유사 코지",
-      "img": "image/charimg/2026/Q3/Sora_wa_Akai_Kawa_no_Hotori/Urhi.jpg"
-    },
-    {
-      "name": "어머니",
-      "gender": "female",
-      "cv": "타카야마 미나미",
-      "img": "image/charimg/2026/Q3/Sora_wa_Akai_Kawa_no_Hotori/Yuri_no_Haha.jpg"
-    },
-    {
-      "name": "키쿨리",
-      "gender": "male",
-      "cv": "오오노 토모히로",
-      "img": "image/charimg/2026/Q3/Sora_wa_Akai_Kawa_no_Hotori/Kikkuri.jpg"
-    },
-    {
-      "name": "아버지",
-      "gender": "male",
-      "cv": "이노우에 카즈히코",
-      "img": "image/charimg/2026/Q3/Sora_wa_Akai_Kawa_no_Hotori/Yuri_no_Chichi.jpg"
-    },
-    {
-      "name": "히무로 사토시",
-      "gender": "male",
-      "cv": "나나미 히로키",
-      "img": "image/charimg/2026/Q3/Sora_wa_Akai_Kawa_no_Hotori/Satoshi_Himuro.jpg"
-    },
-    {
-      "name": "하디",
-      "gender": "female",
-      "cv": "아오키 시키",
-      "img": "image/charimg/2026/Q3/Sora_wa_Akai_Kawa_no_Hotori/Hadi.jpg"
-    },
-    {
-      "name": "카슈",
-      "gender": "male",
-      "cv": "이시야 하루키",
-      "img": "image/charimg/2026/Q3/Sora_wa_Akai_Kawa_no_Hotori/Kash.jpg"
-    },
-    {
-      "name": "나키아",
-      "gender": "female",
-      "cv": "우치다 아야",
-      "img": "image/charimg/2026/Q3/Sora_wa_Akai_Kawa_no_Hotori/Nakia.jpg"
-    },
-    {
-      "name": "루사파",
-      "gender": "male",
-      "cv": "에노키 준야",
-      "img": "image/charimg/2026/Q3/Sora_wa_Akai_Kawa_no_Hotori/Rusafa.jpg"
-    },
-    {
-      "name": "이르 바아니",
-      "gender": "male",
-      "cv": "마에노 토모아키",
-      "img": "image/charimg/2026/Q3/Sora_wa_Akai_Kawa_no_Hotori/Il_Bani.jpg"
-    },
-    {
-      "name": "미탄나무와",
-      "gender": "male",
-      "cv": "카미오 신이치로",
-      "img": "image/charimg/2026/Q3/Sora_wa_Akai_Kawa_no_Hotori/Mittannamuwa.jpg"
-    },
-    {
-      "name": "자난자 하투시리",
-      "gender": "male",
-      "cv": "치바 쇼야",
-      "img": "image/charimg/2026/Q3/Sora_wa_Akai_Kawa_no_Hotori/Zannanza_Hattušili.jpg"
-    },
-    {
-      "name": "샤라",
-      "gender": "female",
-      "cv": "마츠오카 미사토",
-      "img": "image/charimg/2026/Q3/Sora_wa_Akai_Kawa_no_Hotori/Shala.jpg"
-    },
-    {
-      "name": "마티와자",
-      "gender": "male",
-      "cv": "토리우미 코스케",
-      "img": "image/charimg/2026/Q3/Sora_wa_Akai_Kawa_no_Hotori/Mattiwaza.jpg"
-    },
-    {
-      "name": "류이",
-      "gender": "female",
-      "cv": "카와이다 나츠미",
-      "img": "image/charimg/2026/Q3/Sora_wa_Akai_Kawa_no_Hotori/Ryui.jpg"
-    }
-  ]
-},
-{
-  "id": 62513,
-  "characters": [
-    {
-      "name": "알리시아 글렌폴",
-      "gender": "female",
-      "cv": "시라이시 하루카",
-      "img": "image/charimg/2026/Q3/Clevatess_II_Majuu_no_Ou_to_Itsuwari_no_Yuusha_Denshou/Alicia.jpg"
-    },
-    {
-      "name": "클렌",
-      "gender": "male",
-      "cv": "타무라 무츠미",
-      "img": "image/charimg/2026/Q3/Clevatess_II_Majuu_no_Ou_to_Itsuwari_no_Yuusha_Denshou/Clen.jpg"
-    },
-    {
-      "name": "티겔",
-      "gender": "male",
-      "cv": "스즈키 료타",
-      "img": "image/charimg/2026/Q3/Clevatess_II_Majuu_no_Ou_to_Itsuwari_no_Yuusha_Denshou/Tiger.jpg"
-    },
-    {
-      "name": "가르트",
-      "gender": "male",
-      "cv": "아오야기 타카야",
-      "img": "image/charimg/2026/Q3/Clevatess_II_Majuu_no_Ou_to_Itsuwari_no_Yuusha_Denshou/Gart.jpg"
-    },
-    {
-      "name": "루나",
-      "gender": "male",
-      "cv": "아이자와 사야",
-      "img": "image/charimg/2026/Q3/Clevatess_II_Majuu_no_Ou_to_Itsuwari_no_Yuusha_Denshou/Luna.jpg"
-    },
-    {
-      "name": "리온",
-      "gender": "male",
-      "cv": "미네타 히로무",
-      "img": "image/charimg/2026/Q3/Clevatess_II_Majuu_no_Ou_to_Itsuwari_no_Yuusha_Denshou/Lion.jpg"
-    },
-    {
-      "name": "네루루",
-      "gender": "female",
-      "cv": "유우키 아오이",
-      "img": "image/charimg/2026/Q3/Clevatess_II_Majuu_no_Ou_to_Itsuwari_no_Yuusha_Denshou/Neruru.jpg"
-    },
-    {
-      "name": "에디슨 뉴크래프트",
-      "gender": "male",
-      "cv": "니시야마 코타로",
-      "img": "image/charimg/2026/Q3/Clevatess_II_Majuu_no_Ou_to_Itsuwari_no_Yuusha_Denshou/Edison.jpg"
-    },
-    {
-      "name": "보딘",
-      "gender": "male",
-      "cv": "쿠로다 타카야",
-      "img": "image/charimg/2026/Q3/Clevatess_II_Majuu_no_Ou_to_Itsuwari_no_Yuusha_Denshou/Vordein.jpg"
-    },
-    {
-      "name": "나이에 시폰리츠",
-      "gender": "female",
-      "cv": "쿠로사와 토모요",
-      "img": "image/charimg/2026/Q3/Clevatess_II_Majuu_no_Ou_to_Itsuwari_no_Yuusha_Denshou/Naie_Chiffonlitz.jpg"
-    },
-    {
-      "name": "사라사 루 에이라 라포",
-      "gender": "female",
-      "cv": "쿠노 미사키",
-      "img": "image/charimg/2026/Q3/Clevatess_II_Majuu_no_Ou_to_Itsuwari_no_Yuusha_Denshou/Sarasa.jpg"
-    },
-    {
-      "name": "트알라",
-      "gender": "female",
-      "cv": "토요사키 아키",
-      "img": "image/charimg/2026/Q3/Clevatess_II_Majuu_no_Ou_to_Itsuwari_no_Yuusha_Denshou/Toara.jpg"
-    },
-    {
-      "name": "로드 로이에스",
-      "gender": "male",
-      "cv": "세키 토모카즈",
-      "img": "image/charimg/2026/Q3/Clevatess_II_Majuu_no_Ou_to_Itsuwari_no_Yuusha_Denshou/Rodd.jpg"
-    },
-    {
-      "name": "에를로 로메",
-      "gender": "male",
-      "cv": "사노 시로",
-      "img": "image/charimg/2026/Q3/Clevatess_II_Majuu_no_Ou_to_Itsuwari_no_Yuusha_Denshou/Romain.jpg"
-    },
-    {
-      "name": "레이 포레스터",
-      "gender": "male",
-      "cv": "우메다 슈이치로",
-      "img": "image/charimg/2026/Q3/Clevatess_II_Majuu_no_Ou_to_Itsuwari_no_Yuusha_Denshou/Rey_Forester.jpg"
-    },
-    {
-      "name": "미레아 레놀트 알로우자 워즈",
-      "gender": "female",
-      "cv": "세키네 아키라",
-      "img": "image/charimg/2026/Q3/Clevatess_II_Majuu_no_Ou_to_Itsuwari_no_Yuusha_Denshou/Mirea.jpg"
-    },
-    {
-      "name": "메리메리",
-      "gender": "female",
-      "cv": "키쿠치 유리나",
-      "img": "image/charimg/2026/Q3/Clevatess_II_Majuu_no_Ou_to_Itsuwari_no_Yuusha_Denshou/Mary_Meriweather.jpg"
-    },
-    {
-      "name": "미무의 자브티에",
-      "gender": "female",
-      "cv": "한 메구미",
-      "img": "image/charimg/2026/Q3/Clevatess_II_Majuu_no_Ou_to_Itsuwari_no_Yuusha_Denshou/Zavthier.jpg"
-    },
-    {
-      "name": "앤드류 윕",
-      "gender": "male",
-      "cv": "타치바나 타츠마루",
-      "img": "image/charimg/2026/Q3/Clevatess_II_Majuu_no_Ou_to_Itsuwari_no_Yuusha_Denshou/Andrew_Whipp.jpg"
-    },
-    {
-      "name": "군청의 라스웰",
-      "gender": "male",
-      "cv": "스기타 토모카즈",
-      "img": "image/charimg/2026/Q3/Clevatess_II_Majuu_no_Ou_to_Itsuwari_no_Yuusha_Denshou/Laswell.jpg"
-    }
-  ]
-},
-{
-  "id": 49233,
-  "characters": [
-    {
-      "name": "타냐 데그레챠프",
-      "gender": "female",
-      "cv": "유우키 아오이",
-      "img": "image/charimg/2026/Q3/Youjo_Senki_II/Tanya_Degurechaff.jpg"
-    },
-    {
-      "name": "비샤",
-      "gender": "female",
-      "cv": "하야미 사오리",
-      "img": "image/charimg/2026/Q3/Youjo_Senki_II/Viktoriya_Serebryakov.jpg"
-    },
-    {
-      "name": "에리히 폰 레르겐",
-      "gender": "male",
-      "cv": "미키 신이치로",
-      "img": "image/charimg/2026/Q3/Youjo_Senki_II/Erich_von_Lergen.jpg"
-    },
-    {
-      "name": "쿠르트 폰 루델돌프",
-      "gender": "male",
-      "cv": "겐다 텟쇼",
-      "img": "image/charimg/2026/Q3/Youjo_Senki_II/Kurt_von_Rudersdorf.jpg"
-    },
-    {
-      "name": "한스 폰 제투아",
-      "gender": "male",
-      "cv": "오오츠카 호츄",
-      "img": "image/charimg/2026/Q3/Youjo_Senki_II/Hans_von_Zettour.jpg"
-    },
-    {
-      "name": "보렌 글란츠",
-      "gender": "male",
-      "cv": "코바야시 유스케",
-      "img": "image/charimg/2026/Q3/Youjo_Senki_II/Warren_Grantz.jpg"
-    },
-    {
-      "name": "빌리발트 쾨니히",
-      "gender": "male",
-      "cv": "카사마 쥰",
-      "img": "image/charimg/2026/Q3/Youjo_Senki_II/Wilibald_Koenig.jpg"
-    },
-    {
-      "name": "메어리 수",
-      "gender": "female",
-      "cv": "토마츠 하루카",
-      "img": "image/charimg/2026/Q3/Youjo_Senki_II/Mary_Sioux.jpg"
-    },
-    {
-      "name": "라이너 노이만",
-      "gender": "male",
-      "cv": "하야시 다이치",
-      "img": "image/charimg/2026/Q3/Youjo_Senki_II/Rhiner_Neumann.jpg"
-    },
-    {
-      "name": "마테우스 요한 바이스",
-      "gender": "male",
-      "cv": "하마노 다이키",
-      "img": "image/charimg/2026/Q3/Youjo_Senki_II/Matheus_Johann_Weiss.jpg"
-    },
-    {
-      "name": "윌리엄 더글라스 드레이크",
-      "gender": "male",
-      "cv": "모리카와 토시유키",
-      "img": "image/charimg/2026/Q3/Youjo_Senki_II/William_Douglas_Drake.jpg"
-    },
-    {
-      "name": "미켈",
-      "gender": "male",
-      "cv": "스기타 토모카즈",
-      "img": "image/charimg/2026/Q3/Youjo_Senki_II/Mikel.jpg"
-    },
-    {
-      "name": "릴리야 이바노바 타네치카",
-      "gender": "female",
-      "cv": "히카사 요코",
-      "img": "image/charimg/2026/Q3/Youjo_Senki_II/Lilya_Tanechka.jpg"
-    },
-    {
-      "name": "로리야",
-      "gender": "unknown",
-      "cv": "쵸",
-      "img": "image/charimg/2026/Q3/Youjo_Senki_II/Loria.jpg"
-    },
-    {
-      "name": "가스만",
-      "gender": "male",
-      "cv": "미즈시마 유",
-      "img": "image/charimg/2026/Q3/Youjo_Senki_II/Igor_Gassman.jpg"
-    },
-    {
-      "name": "빌지니오 칼란드로",
-      "gender": "male",
-      "cv": "하나와 에이지",
-      "img": "image/charimg/2026/Q3/Youjo_Senki_II/Virginio_Calandro.jpg"
-    },
-    {
-      "name": "ドナルド・ハーバーグラム",
-      "gender": "male",
-      "cv": "타카다 유지",
-      "img": "image/charimg/2026/Q3/Youjo_Senki_II/Donald_Habergram.jpg"
-    },
-    {
-      "name": "막시밀리안 요한 폰 우거",
-      "gender": "male",
-      "cv": "아카기 스스무",
-      "img": "image/charimg/2026/Q3/Youjo_Senki_II/Maximilian_Johann_Von_Ugar.jpg"
-    },
-    {
-      "name": "테오발트 외스테만",
-      "gender": "male",
-      "cv": "마츠오카 요헤이",
-      "img": "image/charimg/2026/Q3/Youjo_Senki_II/Theobald_Wüstemann.jpg"
-    },
-    {
-      "name": "에르마 알렌스 대위",
-      "gender": "male",
-      "cv": "유사 코지",
-      "img": "image/charimg/2026/Q3/Youjo_Senki_II/Elmer_Ahrens.jpg"
-    },
-    {
-      "name": "롤프 메베르트 대위",
-      "gender": "male",
-      "cv": "시로쿠마 히로시",
-      "img": "image/charimg/2026/Q3/Youjo_Senki_II/Rolf_Meybert.jpg"
-    },
-    {
-      "name": "클라우스 토스판 중위",
-      "gender": "male",
-      "cv": "하마다 요헤이",
-      "img": "image/charimg/2026/Q3/Youjo_Senki_II/Klaus_Tospan.jpg"
-    },
-    {
-      "name": "린하르트 톤 대위",
-      "gender": "male",
-      "cv": "누마타 유스케",
-      "img": "image/charimg/2026/Q3/Youjo_Senki_II/Lienhart_Thon.jpg"
-    },
-    {
-      "name": "クラム",
-      "gender": "unknown",
-      "cv": "콘도 히로노리",
-      "img": "image/charimg/2026/Q3/Youjo_Senki_II/Krum.jpg"
-    },
-    {
-      "name": "아이작 더스틴 드레이크 경",
-      "gender": "male",
-      "cv": "타카오카 빈빈",
-      "img": "image/charimg/2026/Q3/Youjo_Senki_II/Isaac_Dustin_Drake.jpg"
-    }
-  ]
-},
-{
-  "id": 61686,
-  "characters": [
-    {
-      "name": "멜로디 웨이브",
-      "gender": "female",
-      "cv": "미야모토 유메",
-      "img": "image/charimg/2026/Q3/Heroine_Seijo_Iie,_All_Works_Maid_desu_(Ko)!/Melody_Wave.jpg"
-    },
-    {
-      "name": "루시아나 루토르버그",
-      "gender": "female",
-      "cv": "오오쿠보 루미",
-      "img": "image/charimg/2026/Q3/Heroine_Seijo_Iie,_All_Works_Maid_desu_(Ko)!/Luciana_Rutleberg.jpg"
-    },
-    {
-      "name": "크리스토퍼 폰 테오라스",
-      "gender": "male",
-      "cv": "아마사키 코헤이",
-      "img": "image/charimg/2026/Q3/Heroine_Seijo_Iie,_All_Works_Maid_desu_(Ko)!/Christopher_von_Theoras.jpg"
-    },
-    {
-      "name": "안네마리 빅티리움",
-      "gender": "female",
-      "cv": "히카사 요코",
-      "img": "image/charimg/2026/Q3/Heroine_Seijo_Iie,_All_Works_Maid_desu_(Ko)!/Annamarie_Victirium.jpg"
-    },
-    {
-      "name": "렉티어스 프로도",
-      "gender": "male",
-      "cv": "오노 유우키",
-      "img": "image/charimg/2026/Q3/Heroine_Seijo_Iie,_All_Works_Maid_desu_(Ko)!/Lectias_Froude.jpg"
-    },
-    {
-      "name": "류크",
-      "gender": "male",
-      "cv": "호리에 슌",
-      "img": "image/charimg/2026/Q3/Heroine_Seijo_Iie,_All_Works_Maid_desu_(Ko)!/Byuuku.jpg"
-    },
-    {
-      "name": "그레일 (마왕)",
-      "gender": "male",
-      "cv": "나카무라 슈고",
-      "img": "image/charimg/2026/Q3/Heroine_Seijo_Iie,_All_Works_Maid_desu_(Ko)!/Maou.jpg"
-    },
-    {
-      "name": "맥스웰 릭렌토스",
-      "gender": "male",
-      "cv": "오오노 토모히로",
-      "img": "image/charimg/2026/Q3/Heroine_Seijo_Iie,_All_Works_Maid_desu_(Ko)!/Maxwell_Reclentos.jpg"
-    }
-  ]
-},
-{
-  "id": 62102,
-  "characters": [
-    {
-      "name": "코노쿠라 미야",
-      "gender": "female",
-      "cv": "스즈키 히나",
-      "img": "image/charimg/2026/Q3/Ibitte_Konai_Gibo_to_Gishi/Miya_Kounokura.jpg"
-    },
-    {
-      "name": "코노쿠라 테루",
-      "gender": "female",
-      "cv": "쿠지라",
-      "img": "image/charimg/2026/Q3/Ibitte_Konai_Gibo_to_Gishi/Teru_Kounokura.jpg"
-    },
-    {
-      "name": "코노쿠라 마리카",
-      "gender": "female",
-      "cv": "세리자와 유우",
-      "img": "image/charimg/2026/Q3/Ibitte_Konai_Gibo_to_Gishi/Marika_Kounokura.jpg"
-    },
-    {
-      "name": "코노쿠라 아리사",
-      "gender": "female",
-      "cv": "누쿠이 유카",
-      "img": "image/charimg/2026/Q3/Ibitte_Konai_Gibo_to_Gishi/Arisa_Kounokura.jpg"
-    },
-    {
-      "name": "궁그닐",
-      "gender": "male",
-      "cv": "무기호 안나",
-      "img": "image/charimg/2026/Q3/Ibitte_Konai_Gibo_to_Gishi/Gungnir.jpg"
-    },
-    {
-      "name": "나고",
-      "gender": "female",
-      "cv": "우치야마 유미",
-      "img": "image/charimg/2026/Q3/Ibitte_Konai_Gibo_to_Gishi/Nago.jpg"
-    },
-    {
-      "name": "코노쿠라 야에코",
-      "gender": "female",
-      "cv": "네모토 미야리",
-      "img": "image/charimg/2026/Q3/Ibitte_Konai_Gibo_to_Gishi/Yaeko_Kouzou.jpg"
-    },
-    {
-      "name": "미츠야",
-      "gender": "female",
-      "cv": "M·A·O",
-      "img": "image/charimg/2026/Q3/Ibitte_Konai_Gibo_to_Gishi/Mitsuya.jpg"
-    },
-    {
-      "name": "우에키",
-      "gender": "male",
-      "cv": "토치 히로키",
-      "img": "image/charimg/2026/Q3/Ibitte_Konai_Gibo_to_Gishi/Ueki.jpg"
-    },
-    {
-      "name": "나카무라 야스",
-      "gender": "female",
-      "cv": "야마다 에이코",
-      "img": "image/charimg/2026/Q3/Ibitte_Konai_Gibo_to_Gishi/Yasu_Nakamura.jpg"
-    },
-    {
-      "name": "카잔 리루",
-      "gender": "female",
-      "cv": "타이치 요우",
-      "img": "image/charimg/2026/Q3/Ibitte_Konai_Gibo_to_Gishi/Riru_Kazan.jpg"
-    },
-    {
-      "name": "미야의 어머니",
-      "gender": "female",
-      "cv": "쿠와시마 호우코",
-      "img": "image/charimg/2026/Q3/Ibitte_Konai_Gibo_to_Gishi/Miya_no_Haha.jpg"
-    },
-    {
-      "name": "이나리 코유키",
-      "gender": "female",
-      "cv": "테라사와 모모카",
-      "img": "image/charimg/2026/Q3/Ibitte_Konai_Gibo_to_Gishi/Koyuki_Inari.jpg"
-    },
-    {
-      "name": "庭師",
-      "gender": "male",
-      "cv": "키무라 하야토",
-      "img": "image/charimg/2026/Q3/Ibitte_Konai_Gibo_to_Gishi/Niwashi.jpg"
-    }
-  ]
-},
-{
-  "id": 54000,
-  "characters": [
-    {
-      "name": "리온 포우 발트파르트",
-      "gender": "male",
-      "cv": "오오츠카 타케오",
-      "img": "image/charimg/2026/Q3/Otomege_Sekai_wa_Mob_ni_Kibishii_Sekai_desu_2/Leon_Fou_Bartfort.jpg"
-    },
-    {
-      "name": "올리비아",
-      "gender": "female",
-      "cv": "이치노세 카나",
-      "img": "image/charimg/2026/Q3/Otomege_Sekai_wa_Mob_ni_Kibishii_Sekai_desu_2/Olivia.jpg"
-    },
-    {
-      "name": "안젤리카 라파 레드글레이브",
-      "gender": "female",
-      "cv": "파이루즈 아이",
-      "img": "image/charimg/2026/Q3/Otomege_Sekai_wa_Mob_ni_Kibishii_Sekai_desu_2/Angelica_Rafua_Redgrave.jpg"
-    },
-    {
-      "name": "그렉 포우 세버그",
-      "gender": "male",
-      "cv": "히야마 노부유키",
-      "img": "image/charimg/2026/Q3/Otomege_Sekai_wa_Mob_ni_Kibishii_Sekai_desu_2/Greg_Fou_Seberg.jpg"
-    },
-    {
-      "name": "발가스 포우 발트하르트",
-      "gender": "male",
-      "cv": "신가키 타루스케",
-      "img": "image/charimg/2026/Q3/Otomege_Sekai_wa_Mob_ni_Kibishii_Sekai_desu_2/Balcus_Fou_Bartfort.jpg"
-    },
-    {
-      "name": "크리스 피아 아크라이트",
-      "gender": "male",
-      "cv": "유사 코지",
-      "img": "image/charimg/2026/Q3/Otomege_Sekai_wa_Mob_ni_Kibishii_Sekai_desu_2/Chris_Fia_Arclight.jpg"
-    },
-    {
-      "name": "다니엘 포우 덜랜드",
-      "gender": "male",
-      "cv": "반 타이토",
-      "img": "image/charimg/2026/Q3/Otomege_Sekai_wa_Mob_ni_Kibishii_Sekai_desu_2/Daniel_Fou_Durland.jpg"
-    },
-    {
-      "name": "카일",
-      "gender": "male",
-      "cv": "타케우치 준코",
-      "img": "image/charimg/2026/Q3/Otomege_Sekai_wa_Mob_ni_Kibishii_Sekai_desu_2/Kyle.jpg"
-    },
-    {
-      "name": "빈스 라파 레드글레이브",
-      "gender": "male",
-      "cv": "키시노 유키마사",
-      "img": "image/charimg/2026/Q3/Otomege_Sekai_wa_Mob_ni_Kibishii_Sekai_desu_2/Vince_Rapha_Redgrave.jpg"
-    },
-    {
-      "name": "마리에 포우 라판",
-      "gender": "female",
-      "cv": "사쿠라 아야네",
-      "img": "image/charimg/2026/Q3/Otomege_Sekai_wa_Mob_ni_Kibishii_Sekai_desu_2/Marie_Fou_Lafuan.jpg"
-    },
-    {
-      "name": "헤르트뤼더 세라 판오스",
-      "gender": "female",
-      "cv": "아마미야 소라",
-      "img": "image/charimg/2026/Q3/Otomege_Sekai_wa_Mob_ni_Kibishii_Sekai_desu_2/Hertrude_Sera_Fanoss.jpg"
-    },
-    {
-      "name": "조라 피아 발트하르트",
-      "gender": "female",
-      "cv": "오리카사 아이",
-      "img": "image/charimg/2026/Q3/Otomege_Sekai_wa_Mob_ni_Kibishii_Sekai_desu_2/Zola.jpg"
-    },
-    {
-      "name": "룩시온",
-      "gender": "unknown",
-      "cv": "이시다 아키라",
-      "img": "image/charimg/2026/Q3/Otomege_Sekai_wa_Mob_ni_Kibishii_Sekai_desu_2/Luxion.jpg"
-    },
-    {
-      "name": "반데르 힘 젠덴",
-      "gender": "male",
-      "cv": "우가키 히데나리",
-      "img": "image/charimg/2026/Q3/Otomege_Sekai_wa_Mob_ni_Kibishii_Sekai_desu_2/Vandel_Him_Zenden.jpg"
-    },
-    {
-      "name": "레이먼드 포우 아킨",
-      "gender": "male",
-      "cv": "츠치다 레이오",
-      "img": "image/charimg/2026/Q3/Otomege_Sekai_wa_Mob_ni_Kibishii_Sekai_desu_2/Raymond_Fou_Arkin.jpg"
-    },
-    {
-      "name": "율리우스 라파 호르파트",
-      "gender": "male",
-      "cv": "스즈무라 켄이치",
-      "img": "image/charimg/2026/Q3/Otomege_Sekai_wa_Mob_ni_Kibishii_Sekai_desu_2/Julius_Rafa_Holfort.jpg"
-    },
-    {
-      "name": "밀렌 라파 호르파트",
-      "gender": "female",
-      "cv": "오하라 사야카",
-      "img": "image/charimg/2026/Q3/Otomege_Sekai_wa_Mob_ni_Kibishii_Sekai_desu_2/Mylene_Rafa_Holfort.jpg"
-    },
-    {
-      "name": "게라트",
-      "gender": "male",
-      "cv": "쿠로다 타카야",
-      "img": "image/charimg/2026/Q3/Otomege_Sekai_wa_Mob_ni_Kibishii_Sekai_desu_2/Garrett.jpg"
-    },
-    {
-      "name": "질크 피아 마모리아",
-      "gender": "male",
-      "cv": "토리우미 코스케",
-      "img": "image/charimg/2026/Q3/Otomege_Sekai_wa_Mob_ni_Kibishii_Sekai_desu_2/Jilk_Fia_Marmoria.jpg"
-    },
-    {
-      "name": "헤르트라위다 세라 판오스",
-      "gender": "female",
-      "cv": "오구라 유이",
-      "img": "image/charimg/2026/Q3/Otomege_Sekai_wa_Mob_ni_Kibishii_Sekai_desu_2/Hertrauda_Sera_Fanoss.jpg"
-    },
-    {
-      "name": "브래드 포우 필드",
-      "gender": "male",
-      "cv": "타치바나 신노스케",
-      "img": "image/charimg/2026/Q3/Otomege_Sekai_wa_Mob_ni_Kibishii_Sekai_desu_2/Brad_Fou_Field.jpg"
-    },
-    {
-      "name": "카라 포우 웨인",
-      "gender": "female",
-      "cv": "시라이시 하루카",
-      "img": "image/charimg/2026/Q3/Otomege_Sekai_wa_Mob_ni_Kibishii_Sekai_desu_2/Carla_Fou_Wayne.jpg"
-    }
-  ]
-},
-{
-  "id": 61897,
-  "characters": [
-    {
-      "name": "베릴 가드넌트",
-      "gender": "male",
-      "cv": "히라타 히로아키",
-      "img": "image/charimg/2026/Q3/Katainaka_no_Ossan,_Kensei_ni_Naru_II/Beryl_Gardenant.jpg"
-    },
-    {
-      "name": "알루시아 어머니",
-      "gender": "female",
-      "cv": "우치다 마미",
-      "img": "image/charimg/2026/Q3/Katainaka_no_Ossan,_Kensei_ni_Naru_II/Prim.jpg"
-    },
-    {
-      "name": "슬레나 리산드라",
-      "gender": "female",
-      "cv": "우에다 히토미",
-      "img": "image/charimg/2026/Q3/Katainaka_no_Ossan,_Kensei_ni_Naru_II/Surena_Lysandra.jpg"
-    },
-    {
-      "name": "ハノイ・クレッサ",
-      "gender": "male",
-      "cv": "콘도 타카시",
-      "img": "image/charimg/2026/Q3/Katainaka_no_Ossan,_Kensei_ni_Naru_II/Hanoy_Cressa.jpg"
-    },
-    {
-      "name": "피셀 하벨러",
-      "gender": "female",
-      "cv": "야노 히나키",
-      "img": "image/charimg/2026/Q3/Katainaka_no_Ossan,_Kensei_ni_Naru_II/Ficelle_Harbeller.jpg"
-    },
-    {
-      "name": "사리카츠",
-      "gender": "male",
-      "cv": "미네타 히로무",
-      "img": "image/charimg/2026/Q3/Katainaka_no_Ossan,_Kensei_ni_Naru_II/Kuriu_Rybark.jpg"
-    },
-    {
-      "name": "크루니 크루시엘",
-      "gender": "female",
-      "cv": "히로세 유우키",
-      "img": "image/charimg/2026/Q3/Katainaka_no_Ossan,_Kensei_ni_Naru_II/Curuni_Crueciel.jpg"
-    },
-    {
-      "name": "몰데아 가드넌트",
-      "gender": "male",
-      "cv": "우치다 나오야",
-      "img": "image/charimg/2026/Q3/Katainaka_no_Ossan,_Kensei_ni_Naru_II/Mordea_Gardenant.jpg"
-    },
-    {
-      "name": "알류시아 시트러스",
-      "gender": "female",
-      "cv": "토야마 나오",
-      "img": "image/charimg/2026/Q3/Katainaka_no_Ossan,_Kensei_ni_Naru_II/Allucia_Citrus.jpg"
-    },
-    {
-      "name": "モーリス・パシューシカ",
-      "gender": "male",
-      "cv": "야나카 히로시",
-      "img": "image/charimg/2026/Q3/Katainaka_no_Ossan,_Kensei_ni_Naru_II/Morris_Pashushka.jpg"
-    },
-    {
-      "name": "뮤이 프레이야",
-      "gender": "female",
-      "cv": "나카다 아리사",
-      "img": "image/charimg/2026/Q3/Katainaka_no_Ossan,_Kensei_ni_Naru_II/Mewi_Freya.jpg"
-    },
-    {
-      "name": "슈스테 플룸베르크",
-      "gender": "female",
-      "cv": "우에사카 스미레",
-      "img": "image/charimg/2026/Q3/Katainaka_no_Ossan,_Kensei_ni_Naru_II/Shueste_Flumvelk.jpg"
-    },
-    {
-      "name": "헨블리츠 드로트",
-      "gender": "male",
-      "cv": "이시카와 카이토",
-      "img": "image/charimg/2026/Q3/Katainaka_no_Ossan,_Kensei_ni_Naru_II/Henbritz_Drought.jpg"
-    },
-    {
-      "name": "워렌 플룸베르크",
-      "gender": "male",
-      "cv": "오노 켄쇼",
-      "img": "image/charimg/2026/Q3/Katainaka_no_Ossan,_Kensei_ni_Naru_II/Warren_Flumvelk.jpg"
-    },
-    {
-      "name": "루시 다이아몬드",
-      "gender": "female",
-      "cv": "사이토 치와",
-      "img": "image/charimg/2026/Q3/Katainaka_no_Ossan,_Kensei_ni_Naru_II/Lucy_Diamond.jpg"
-    }
-  ]
-},
-{
-  "id": 63508,
-  "characters": [
-    {
-      "name": "아나스타샤 블라노바",
-      "gender": "female",
-      "cv": "오사나이 레오",
-      "img": "image/charimg/2026/Q3/Rakudai_Kenja_no_Gakuin_Musou_Nidome_no_Tensei,_S-Rank_Cheat_Majutsushi_Bouken-roku/Anastasia.jpg"
-    },
-    {
-      "name": "올곳트 에프탈",
-      "gender": "male",
-      "cv": "우메다 슈이치로",
-      "img": "image/charimg/2026/Q3/Rakudai_Kenja_no_Gakuin_Musou_Nidome_no_Tensei,_S-Rank_Cheat_Majutsushi_Bouken-roku/Ephtal.jpg"
-    },
-    {
-      "name": "마린 올곳트",
-      "gender": "female",
-      "cv": "시라이시 하루카",
-      "img": "image/charimg/2026/Q3/Rakudai_Kenja_no_Gakuin_Musou_Nidome_no_Tensei,_S-Rank_Cheat_Majutsushi_Bouken-roku/Merlin.jpg"
-    },
-    {
-      "name": "프란츠",
-      "gender": "male",
-      "cv": "오카노 코스케",
-      "img": "image/charimg/2026/Q3/Rakudai_Kenja_no_Gakuin_Musou_Nidome_no_Tensei,_S-Rank_Cheat_Majutsushi_Bouken-roku/Franz.jpg"
-    },
-    {
-      "name": "모리아",
-      "gender": "male",
-      "cv": "코야마 츠요시",
-      "img": "image/charimg/2026/Q3/Rakudai_Kenja_no_Gakuin_Musou_Nidome_no_Tensei,_S-Rank_Cheat_Majutsushi_Bouken-roku/Mauriat.jpg"
-    },
-    {
-      "name": "올곳트 요하임",
-      "gender": "unknown",
-      "cv": "이토 켄타로",
-      "img": "image/charimg/2026/Q3/Rakudai_Kenja_no_Gakuin_Musou_Nidome_no_Tensei,_S-Rank_Cheat_Majutsushi_Bouken-roku/Joachim.jpg"
-    },
-    {
-      "name": "일리아",
-      "gender": "female",
-      "cv": "카토 에미리",
-      "img": "image/charimg/2026/Q3/Rakudai_Kenja_no_Gakuin_Musou_Nidome_no_Tensei,_S-Rank_Cheat_Majutsushi_Bouken-roku/Iria.jpg"
-    },
-    {
-      "name": "루젠트",
-      "gender": "male",
-      "cv": "아소 토모히사",
-      "img": "image/charimg/2026/Q3/Rakudai_Kenja_no_Gakuin_Musou_Nidome_no_Tensei,_S-Rank_Cheat_Majutsushi_Bouken-roku/Luzent.jpg"
-    },
-    {
-      "name": "올곳트 프레이저",
-      "gender": "male",
-      "cv": "히라카와 다이스케",
-      "img": "image/charimg/2026/Q3/Rakudai_Kenja_no_Gakuin_Musou_Nidome_no_Tensei,_S-Rank_Cheat_Majutsushi_Bouken-roku/Fraser.jpg"
-    },
-    {
-      "name": "올곳트 공작",
-      "gender": "male",
-      "cv": "쿠스미 나오미",
-      "img": "image/charimg/2026/Q3/Rakudai_Kenja_no_Gakuin_Musou_Nidome_no_Tensei,_S-Rank_Cheat_Majutsushi_Bouken-roku/Olcott-koushaku.jpg"
-    },
-    {
-      "name": "마리아 판노멜",
-      "gender": "female",
-      "cv": "카와구치 리나",
-      "img": "image/charimg/2026/Q3/Rakudai_Kenja_no_Gakuin_Musou_Nidome_no_Tensei,_S-Rank_Cheat_Majutsushi_Bouken-roku/Maria.jpg"
-    },
-    {
-      "name": "エドワーズ",
-      "gender": "male",
-      "cv": "후쿠니시 마사야",
-      "img": "image/charimg/2026/Q3/Rakudai_Kenja_no_Gakuin_Musou_Nidome_no_Tensei,_S-Rank_Cheat_Majutsushi_Bouken-roku/Edwards.jpg"
-    },
-    {
-      "name": "魔神",
-      "gender": "male",
-      "cv": "타카하시 히로키",
-      "img": "image/charimg/2026/Q3/Rakudai_Kenja_no_Gakuin_Musou_Nidome_no_Tensei,_S-Rank_Cheat_Majutsushi_Bouken-roku/Majin.jpg"
-    },
-    {
-      "name": "타치아나 블라노바",
-      "gender": "female",
-      "cv": "아마미야 소라",
-      "img": "image/charimg/2026/Q3/Rakudai_Kenja_no_Gakuin_Musou_Nidome_no_Tensei,_S-Rank_Cheat_Majutsushi_Bouken-roku/Tatiana.jpg"
-    },
-    {
-      "name": "에이브 포르테스",
-      "gender": "male",
-      "cv": "카미오 신이치로",
-      "img": "image/charimg/2026/Q3/Rakudai_Kenja_no_Gakuin_Musou_Nidome_no_Tensei,_S-Rank_Cheat_Majutsushi_Bouken-roku/Abe.jpg"
-    }
-  ]
-},
-{
-  "id": 62322,
-  "characters": [
-    {
-      "name": "아리스 바루네시오",
-      "gender": "female",
-      "cv": "토야마 나오",
-      "img": "image/charimg/2026/Q3/LV999_no_Murabito/Alice.jpg"
-    },
-    {
-      "name": "카가미 코지",
-      "gender": "male",
-      "cv": "이노마타 사토시",
-      "img": "image/charimg/2026/Q3/LV999_no_Murabito/Kouji_Kagami.jpg"
-    },
-    {
-      "name": "다크드래곤",
-      "gender": "male",
-      "cv": "이나다 테츠",
-      "img": "image/charimg/2026/Q3/LV999_no_Murabito/Dark_Dragon.jpg"
-    },
-    {
-      "name": "밀리터리아 리모트",
-      "gender": "male",
-      "cv": "우에다 요지",
-      "img": "image/charimg/2026/Q3/LV999_no_Murabito/Militaria_Remote.jpg"
-    },
-    {
-      "name": "렉스 니플즈보이",
-      "gender": "male",
-      "cv": "시마자키 노부나가",
-      "img": "image/charimg/2026/Q3/LV999_no_Murabito/Rex.jpg"
-    },
-    {
-      "name": "타카코 빌더",
-      "gender": "female",
-      "cv": "에가시라 히로야",
-      "img": "image/charimg/2026/Q3/LV999_no_Murabito/Takako.jpg"
-    },
-    {
-      "name": "티나 빌스",
-      "gender": "female",
-      "cv": "코가 아오이",
-      "img": "image/charimg/2026/Q3/LV999_no_Murabito/Tina.jpg"
-    },
-    {
-      "name": "쿠루루 헥살도리아",
-      "gender": "female",
-      "cv": "이와미 마나카",
-      "img": "image/charimg/2026/Q3/LV999_no_Murabito/Krull.jpg"
-    },
-    {
-      "name": "파루나 비오레",
-      "gender": "unknown",
-      "cv": "Lynn",
-      "img": "image/charimg/2026/Q3/LV999_no_Murabito/Paruna.jpg"
-    },
-    {
-      "name": "메노우 에이브라샤",
-      "gender": "unknown",
-      "cv": "우메하라 유이치로",
-      "img": "image/charimg/2026/Q3/LV999_no_Murabito/Menou.jpg"
-    }
-  ]
-},
-{
-  "id": 63780,
-  "characters": [
-    {
-      "name": "아시야 미즈키",
-      "gender": "female",
-      "cv": "야마네 아야",
-      "img": "image/charimg/2026/Q3/Hanazakari_no_Kimitachi_e_2nd_Season/Mizuki_Ashiya.jpg"
-    },
-    {
-      "name": "사노 이즈미(",
-      "gender": "male",
-      "cv": "야시로 타쿠",
-      "img": "image/charimg/2026/Q3/Hanazakari_no_Kimitachi_e_2nd_Season/Izumi_Sano.jpg"
-    },
-    {
-      "name": "나카츠 슈이치",
-      "gender": "male",
-      "cv": "토야 키쿠노스케",
-      "img": "image/charimg/2026/Q3/Hanazakari_no_Kimitachi_e_2nd_Season/Shuichi_Nakatsu.jpg"
-    },
-    {
-      "name": "노에 신지",
-      "gender": "male",
-      "cv": "후루야 아난",
-      "img": "image/charimg/2026/Q3/Hanazakari_no_Kimitachi_e_2nd_Season/Shinji_Noe.jpg"
-    },
-    {
-      "name": "우메다 리오",
-      "gender": "female",
-      "cv": "토야마 나오",
-      "img": "image/charimg/2026/Q3/Hanazakari_no_Kimitachi_e_2nd_Season/Rio_Umeda.jpg"
-    },
-    {
-      "name": "텐노지 메구미",
-      "gender": "male",
-      "cv": "미즈나카 마사아키",
-      "img": "image/charimg/2026/Q3/Hanazakari_no_Kimitachi_e_2nd_Season/Megumi_Tennouji.jpg"
-    },
-    {
-      "name": "사노 신",
-      "gender": "male",
-      "cv": "치바 쇼야",
-      "img": "image/charimg/2026/Q3/Hanazakari_no_Kimitachi_e_2nd_Season/Shin_Sano.jpg"
-    },
-    {
-      "name": "카구라자카 마코토",
-      "gender": "male",
-      "cv": "히노 사토시",
-      "img": "image/charimg/2026/Q3/Hanazakari_no_Kimitachi_e_2nd_Season/Makoto_Kagurazaka.jpg"
-    },
-    {
-      "name": "니혼바시 와타루",
-      "gender": "male",
-      "cv": "니시야마 코타로",
-      "img": "image/charimg/2026/Q3/Hanazakari_no_Kimitachi_e_2nd_Season/Wataru_Nihonbashi.jpg"
-    },
-    {
-      "name": "난바 미나미",
-      "gender": "male",
-      "cv": "우메하라 유이치로",
-      "img": "image/charimg/2026/Q3/Hanazakari_no_Kimitachi_e_2nd_Season/Minami_Nanba.jpg"
-    },
-    {
-      "name": "쿠죠 이츠키",
-      "gender": "male",
-      "cv": "에노키 준야",
-      "img": "image/charimg/2026/Q3/Hanazakari_no_Kimitachi_e_2nd_Season/Itsuki_Kujou.jpg"
-    },
-    {
-      "name": "하라 아키하",
-      "gender": "male",
-      "cv": "모리쿠보 쇼타로",
-      "img": "image/charimg/2026/Q3/Hanazakari_no_Kimitachi_e_2nd_Season/Akiha_Hara.jpg"
-    },
-    {
-      "name": "우메다 호쿠토",
-      "gender": "male",
-      "cv": "후쿠야마 쥰",
-      "img": "image/charimg/2026/Q3/Hanazakari_no_Kimitachi_e_2nd_Season/Hokuto_Umeda.jpg"
-    },
-    {
-      "name": "히메지마 마사오",
-      "gender": "male",
-      "cv": "코야스 타케히토",
-      "img": "image/charimg/2026/Q3/Hanazakari_no_Kimitachi_e_2nd_Season/Masao_Himejima.jpg"
-    },
-    {
-      "name": "나카오 센리",
-      "gender": "male",
-      "cv": "카와시마 레이지",
-      "img": "image/charimg/2026/Q3/Hanazakari_no_Kimitachi_e_2nd_Season/Senri_Nakao.jpg"
-    },
-    {
-      "name": "야마시나 리카",
-      "gender": "female",
-      "cv": "나가세 안나",
-      "img": "image/charimg/2026/Q3/Hanazakari_no_Kimitachi_e_2nd_Season/Komari_Imaike.jpg"
-    },
-    {
-      "name": "카야시마 타이키",
-      "gender": "male",
-      "cv": "우치야마 코우키",
-      "img": "image/charimg/2026/Q3/Hanazakari_no_Kimitachi_e_2nd_Season/Taiki_Kayashima.jpg"
-    },
-    {
-      "name": "카라스마 키누코",
-      "gender": "female",
-      "cv": "미즈키 나나",
-      "img": "image/charimg/2026/Q3/Hanazakari_no_Kimitachi_e_2nd_Season/Kinuko_Karasuma.jpg"
-    },
-    {
-      "name": "세키메 쿄고",
-      "gender": "male",
-      "cv": "코마다 와타루",
-      "img": "image/charimg/2026/Q3/Hanazakari_no_Kimitachi_e_2nd_Season/Kyougo_Sekime.jpg"
-    },
-    {
-      "name": "줄리아 맥스웰",
-      "gender": "female",
-      "cv": "나츠요시 유우코",
-      "img": "image/charimg/2026/Q3/Hanazakari_no_Kimitachi_e_2nd_Season/Julia_Maxwell.jpg"
-    }
-  ]
-},
-{
-  "id": 63316,
-  "characters": [
-    {
-      "name": "아이린 홀튼",
-      "gender": "female",
-      "cv": "하야미 사오리",
-      "img": "image/charimg/2026/Q3/Dogul_Wang/Irene_Holton.jpg"
-    },
-    {
-      "name": "서주헌",
-      "gender": "male",
-      "cv": "호소야 요시마사",
-      "img": "image/charimg/2026/Q3/Dogul_Wang/Ju-Heon_Seo.jpg"
-    },
-    {
-      "name": "권태준",
-      "gender": "male",
-      "cv": "스와베 준이치",
-      "img": "image/charimg/2026/Q3/Dogul_Wang/Tae-Jun_Kwon.jpg"
-    },
-    {
-      "name": "유재하",
-      "gender": "male",
-      "cv": "이리노 미유",
-      "img": "image/charimg/2026/Q3/Dogul_Wang/Jae-Ha_Yu.jpg"
-    },
-    {
-      "name": "오승우",
-      "gender": "male",
-      "cv": "오카모토 노부히코",
-      "img": "image/charimg/2026/Q3/Dogul_Wang/Seung-U_O.jpg"
-    },
-    {
-      "name": "율리안 밀러",
-      "gender": "male",
-      "cv": "코구레 코세키",
-      "img": "image/charimg/2026/Q3/Dogul_Wang/Julian_Miller.jpg"
-    },
-    {
-      "name": "까마귀",
-      "gender": "female",
-      "cv": "키노시타 사야카",
-      "img": "image/charimg/2026/Q3/Dogul_Wang/Crow.jpg"
-    }
-  ]
-},
-{
-  "id": 63082,
-  "characters": [
-    {
-      "name": "다라 씨",
-      "gender": "female",
-      "cv": "타무라 무츠미",
-      "img": "image/charimg/2026/Q3/Reiwa_no_Dara-san/Dara-san.jpg"
-    },
-    {
-      "name": "미소기야 히나타",
-      "gender": "female",
-      "cv": "츠다 미나미",
-      "img": "image/charimg/2026/Q3/Reiwa_no_Dara-san/Hinata_Misogiya.jpg"
-    },
-    {
-      "name": "미소기야 카오루",
-      "gender": "male",
-      "cv": "테라사와 모모카",
-      "img": "image/charimg/2026/Q3/Reiwa_no_Dara-san/Kaoru_Misogiya.jpg"
-    },
-    {
-      "name": "미소기야 효고",
-      "gender": "male",
-      "cv": "야마모토 카네히라",
-      "img": "image/charimg/2026/Q3/Reiwa_no_Dara-san/Hyougo_Misogiya.jpg"
-    },
-    {
-      "name": "타니마타기마다라",
-      "gender": "unknown",
-      "cv": "오오츠카 호츄",
-      "img": "image/charimg/2026/Q3/Reiwa_no_Dara-san/Orochi.jpg"
-    },
-    {
-      "name": "하세가와 아마네",
-      "gender": "female",
-      "cv": "코가 아오이",
-      "img": "image/charimg/2026/Q3/Reiwa_no_Dara-san/Amane_Hasegawa.jpg"
-    },
-    {
-      "name": "후데기 나오미치",
-      "gender": "male",
-      "cv": "스기타 토모카즈",
-      "img": "image/charimg/2026/Q3/Reiwa_no_Dara-san/Naomichi_Fudegi.jpg"
-    },
-    {
-      "name": "이라코 미와",
-      "gender": "female",
-      "cv": "아이자와 마이",
-      "img": "image/charimg/2026/Q3/Reiwa_no_Dara-san/Miwa_Irako.jpg"
-    },
-    {
-      "name": "하타히로 사에코",
-      "gender": "female",
-      "cv": "안자이 치카",
-      "img": "image/charimg/2026/Q3/Reiwa_no_Dara-san/Saeko_Hatahiro.jpg"
-    },
-    {
-      "name": "하타히로 마사츠구",
-      "gender": "male",
-      "cv": "산페이 유우키",
-      "img": "image/charimg/2026/Q3/Reiwa_no_Dara-san/Masatsugu_Hatahiro.jpg"
-    },
-    {
-      "name": "언니 무녀",
-      "gender": "female",
-      "cv": "하야미 사오리",
-      "img": "image/charimg/2026/Q3/Reiwa_no_Dara-san/Tsubaki.jpg"
-    },
-    {
-      "name": "쥬로타",
-      "gender": "male",
-      "cv": "오키츠 카즈유키",
-      "img": "image/charimg/2026/Q3/Reiwa_no_Dara-san/Jyuurouta.jpg"
-    },
-    {
-      "name": "미소기야 치요",
-      "gender": "female",
-      "cv": "아오키 루리코",
-      "img": "image/charimg/2026/Q3/Reiwa_no_Dara-san/Chiyo_Misogiya.jpg"
-    },
-    {
-      "name": "미소기야 윌리엄",
-      "gender": "male",
-      "cv": "탄자와 테루유키",
-      "img": "image/charimg/2026/Q3/Reiwa_no_Dara-san/William_Misogiya.jpg"
-    },
-    {
-      "name": "토미타 칸나",
-      "gender": "female",
-      "cv": "카자마 마유코",
-      "img": "image/charimg/2026/Q3/Reiwa_no_Dara-san/Kanna_Tomita.jpg"
-    },
-    {
-      "name": "篠原小梢",
-      "gender": "female",
-      "cv": "오사나이 레오",
-      "img": "image/charimg/2026/Q3/Reiwa_no_Dara-san/Kozue_Shinohara.jpg"
-    },
-    {
-      "name": "吉岡健介",
-      "gender": "male",
-      "cv": "타카하시 세이나",
-      "img": "image/charimg/2026/Q3/Reiwa_no_Dara-san/Kensuke_Yoshioka.jpg"
-    },
-    {
-      "name": "袰主水樹",
-      "gender": "female",
-      "cv": "이즈미 후카",
-      "img": "image/charimg/2026/Q3/Reiwa_no_Dara-san/Mizuki_Horonushi.jpg"
-    },
-    {
-      "name": "毒島結子",
-      "gender": "female",
-      "cv": "에노요시 마야",
-      "img": "image/charimg/2026/Q3/Reiwa_no_Dara-san/Yuuko_Busujima.jpg"
-    },
-    {
-      "name": "波尻刷子",
-      "gender": "female",
-      "cv": "나미키 사쿠라",
-      "img": "image/charimg/2026/Q3/Reiwa_no_Dara-san/Hako_Namishiri.jpg"
-    },
-    {
-      "name": "藤岡朋子",
-      "gender": "female",
-      "cv": "아이사카 유카",
-      "img": "image/charimg/2026/Q3/Reiwa_no_Dara-san/Tomoko_Fujioka.jpg"
-    },
-    {
-      "name": "村社花子",
-      "gender": "female",
-      "cv": "후부키 케이",
-      "img": "image/charimg/2026/Q3/Reiwa_no_Dara-san/Hanako_Murakoso.jpg"
-    },
-    {
-      "name": "六十里詩穂",
-      "gender": "female",
-      "cv": "Unknown",
-      "img": "image/charimg/2026/Q3/Reiwa_no_Dara-san/Shiho_Tsuiji.jpg"
-    },
-    {
-      "name": "佐渡夏々子",
-      "gender": "female",
-      "cv": "Unknown",
-      "img": "image/charimg/2026/Q3/Reiwa_no_Dara-san/Nanako_Sawatari.jpg"
-    },
-    {
-      "name": "四十八願圭太",
-      "gender": "male",
-      "cv": "Unknown",
-      "img": "image/charimg/2026/Q3/Reiwa_no_Dara-san/Keita_Yoinara.jpg"
-    },
-    {
-      "name": "新田冬子",
-      "gender": "female",
-      "cv": "마에다 카오리",
-      "img": "image/charimg/2026/Q3/Reiwa_no_Dara-san/Fuyuko_Nitta.jpg"
-    },
-    {
-      "name": "新田伸二",
-      "gender": "male",
-      "cv": "미야타 히로노리",
-      "img": "image/charimg/2026/Q3/Reiwa_no_Dara-san/Shinji_Nitta.jpg"
-    },
-    {
-      "name": "新田静江",
-      "gender": "female",
-      "cv": "타나카 카나타",
-      "img": "image/charimg/2026/Q3/Reiwa_no_Dara-san/Shizue_Nitta.jpg"
-    },
-    {
-      "name": "柳友隆",
-      "gender": "male",
-      "cv": "이케다 미사키",
-      "img": "image/charimg/2026/Q3/Reiwa_no_Dara-san/Tomotaka_Yanagi.jpg"
-    },
-    {
-      "name": "みつ",
-      "gender": "female",
-      "cv": "하루사카 아게하",
-      "img": "image/charimg/2026/Q3/Reiwa_no_Dara-san/Mitsu.jpg"
-    },
-    {
-      "name": "観重",
-      "gender": "male",
-      "cv": "후지 신슈",
-      "img": "image/charimg/2026/Q3/Reiwa_no_Dara-san/Kenjuu.jpg"
-    }
-  ]
-},
-{
-  "id": 63347,
-  "characters": [
-    {
-      "name": "오니야샤",
-      "gender": "male",
-      "cv": "하나모리 유미리",
-      "img": "image/charimg/2026/Q3/World_Is_Dancing/Oniyasha.jpg"
-    },
-    {
-      "name": "니조 요시모토",
-      "gender": "male",
-      "cv": "토비타 노부오",
-      "img": "image/charimg/2026/Q3/World_Is_Dancing/Yoshimoto_Nijou.jpg"
-    },
-    {
-      "name": "토시고",
-      "gender": "male",
-      "cv": "우다가와 카이토",
-      "img": "image/charimg/2026/Q3/World_Is_Dancing/Toshigo.jpg"
-    },
-    {
-      "name": "이시야",
-      "gender": "male",
-      "cv": "츠치야 신바",
-      "img": "image/charimg/2026/Q3/World_Is_Dancing/Ishiya.jpg"
-    },
-    {
-      "name": "나리코",
-      "gender": "female",
-      "cv": "노토 마미코",
-      "img": "image/charimg/2026/Q3/World_Is_Dancing/Nariko.jpg"
-    },
-    {
-      "name": "센리",
-      "gender": "male",
-      "cv": "에치고야 코스케",
-      "img": "image/charimg/2026/Q3/World_Is_Dancing/Senri.jpg"
-    },
-    {
-      "name": "코가네",
-      "gender": "male",
-      "cv": "우치다 마아야",
-      "img": "image/charimg/2026/Q3/World_Is_Dancing/Kogane.jpg"
-    },
-    {
-      "name": "치하루",
-      "gender": "female",
-      "cv": "미나세 이노리",
-      "img": "image/charimg/2026/Q3/World_Is_Dancing/Chiharu.jpg"
-    },
-    {
-      "name": "사마노스케",
-      "gender": "male",
-      "cv": "야마기시 하루오",
-      "img": "image/charimg/2026/Q3/World_Is_Dancing/Samanosuke.jpg"
-    },
-    {
-      "name": "조지로",
-      "gender": "male",
-      "cv": "박로미",
-      "img": "image/charimg/2026/Q3/World_Is_Dancing/Zojiro.jpg"
-    },
-    {
-      "name": "사츠키",
-      "gender": "female",
-      "cv": "세토 하즈키",
-      "img": "image/charimg/2026/Q3/World_Is_Dancing/Satsuki.jpg"
-    },
-    {
-      "name": "히후미",
-      "gender": "male",
-      "cv": "츠치다 레이오",
-      "img": "image/charimg/2026/Q3/World_Is_Dancing/Hifumi.jpg"
-    },
-    {
-      "name": "이누오",
-      "gender": "unknown",
-      "cv": "마츠다 요지",
-      "img": "image/charimg/2026/Q3/World_Is_Dancing/Inuou.jpg"
-    },
-    {
-      "name": "전 시라뵤시",
-      "gender": "female",
-      "cv": "사와시로 미유키",
-      "img": "image/charimg/2026/Q3/World_Is_Dancing/Shirabyoshi.jpg"
-    },
-    {
-      "name": "주니고로",
-      "gender": "male",
-      "cv": "이시야 하루키",
-      "img": "image/charimg/2026/Q3/World_Is_Dancing/Junigoro.jpg"
-    },
-    {
-      "name": "호소카와 요리유키",
-      "gender": "male",
-      "cv": "마츠다 켄이치로",
-      "img": "image/charimg/2026/Q3/World_Is_Dancing/Yoriyuki_Hosokawa.jpg"
-    },
-    {
-      "name": "칸아미",
-      "gender": "male",
-      "cv": "코니시 카츠유키",
-      "img": "image/charimg/2026/Q3/World_Is_Dancing/Kan’ami.jpg"
-    },
-    {
-      "name": "장로",
-      "gender": "male",
-      "cv": "호우키 카츠히사",
-      "img": "image/charimg/2026/Q3/World_Is_Dancing/Chourou.jpg"
-    },
-    {
-      "name": "아시카가 요시미츠",
-      "gender": "male",
-      "cv": "사쿠라이 타카히로",
-      "img": "image/charimg/2026/Q3/World_Is_Dancing/Yoshimitsu_Ashikaga.jpg"
-    },
-    {
-      "name": "만타로",
-      "gender": "male",
-      "cv": "호리 소시로",
-      "img": "image/charimg/2026/Q3/World_Is_Dancing/Mantarou.jpg"
-    }
-  ]
-},
-{
-  "id": 62430,
-  "characters": [
-    {
-      "name": "나카마치 아라레",
-      "gender": "female",
-      "cv": "나카마치 아라레",
-      "img": "image/charimg/2026/Q3/BanG_Dream!_Yume∞Mita/Arale_Nakamachi.jpg"
-    },
-    {
-      "name": "센고쿠 유노",
-      "gender": "female",
-      "cv": "센고쿠 유노",
-      "img": "image/charimg/2026/Q3/BanG_Dream!_Yume∞Mita/Yuno_Sengoku.jpg"
-    },
-    {
-      "name": "미야나가 노노카",
-      "gender": "female",
-      "cv": "미야나가 노노카",
-      "img": "image/charimg/2026/Q3/BanG_Dream!_Yume∞Mita/Nonoka_Miyanaga.jpg"
-    },
-    {
-      "name": "후지 미야코",
-      "gender": "female",
-      "cv": "후지 미야코",
-      "img": "image/charimg/2026/Q3/BanG_Dream!_Yume∞Mita/Miyako_Fuji.jpg"
-    },
-    {
-      "name": "미네츠키 리츠",
-      "gender": "female",
-      "cv": "미네츠키 리츠",
-      "img": "image/charimg/2026/Q3/BanG_Dream!_Yume∞Mita/Ritsu_Minetsuki.jpg"
-    },
-    {
-      "name": "비올라",
-      "gender": "female",
-      "cv": "혼도 카에데",
-      "img": "image/charimg/2026/Q3/BanG_Dream!_Yume∞Mita/Viola.jpg"
-    },
-    {
-      "name": "벨",
-      "gender": "female",
-      "cv": "마루오카 와카나",
-      "img": "image/charimg/2026/Q3/BanG_Dream!_Yume∞Mita/Bell.jpg"
-    },
-    {
-      "name": "포포",
-      "gender": "female",
-      "cv": "츠카다 유이",
-      "img": "image/charimg/2026/Q3/BanG_Dream!_Yume∞Mita/Popo.jpg"
-    },
-    {
-      "name": "뮤타입의 매니저",
-      "gender": "female",
-      "cv": "사나이 루나",
-      "img": "image/charimg/2026/Q3/BanG_Dream!_Yume∞Mita/Manager.jpg"
-    },
-    {
-      "name": "A코",
-      "gender": "female",
-      "cv": "아이카와 카나타",
-      "img": "image/charimg/2026/Q3/BanG_Dream!_Yume∞Mita/A-Ko.jpg"
-    },
-    {
-      "name": "우타미",
-      "gender": "female",
-      "cv": "세키네 아키라",
-      "img": "image/charimg/2026/Q3/BanG_Dream!_Yume∞Mita/Utami.jpg"
-    }
-  ]
-},
-{
-  "id": 63802,
-  "characters": [
-    {
-      "name": "시라토리 오르가",
-      "gender": "female",
-      "cv": "사토 하루카",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Olga_Shiratori.jpg"
-    },
-    {
-      "name": "토모리 아라키",
-      "gender": "male",
-      "cv": "타케나카 유토",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Araki_Tomori.jpg"
-    },
-    {
-      "name": "토모리 스텔라",
-      "gender": "female",
-      "cv": "히에다 네네",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Stella_Tomori.jpg"
-    },
-    {
-      "name": "코토부키 스피카",
-      "gender": "female",
-      "cv": "미카미 시오리",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Spica_Kotobuki.jpg"
-    },
-    {
-      "name": "야카타 텐로우",
-      "gender": "male",
-      "cv": "시오구치 료헤이",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Tenrou_Yakata.jpg"
-    },
-    {
-      "name": "아미호시 마오",
-      "gender": "female",
-      "cv": "아오야마 레이나",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Mao_Amihoshi.jpg"
-    },
-    {
-      "name": "츠루기 케이",
-      "gender": "male",
-      "cv": "오오노 토모히로",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Kei.jpg"
-    },
-    {
-      "name": "야카타 시라유키",
-      "gender": "female",
-      "cv": "히로하시 료",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Shirayuki_Yakata.jpg"
-    },
-    {
-      "name": "카마도 유우이치",
-      "gender": "male",
-      "cv": "시오구치 료헤이",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Yuuichi_Kamado.jpg"
-    },
-    {
-      "name": "나츠즈리 쿄코",
-      "gender": "female",
-      "cv": "후쿠하라 아야카",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Kyouko_Natsuduri.jpg"
-    },
-    {
-      "name": "미스미야 키라라",
-      "gender": "female",
-      "cv": "히노 마리",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Kirara_Misumiya.jpg"
-    },
-    {
-      "name": "카마이리 아이노조우",
-      "gender": "male",
-      "cv": "나카무라 유이치",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Ainojou.jpg"
-    },
-    {
-      "name": "히키나미 카이",
-      "gender": "male",
-      "cv": "이치카와 아오이",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Kai_Kinami.jpg"
-    },
-    {
-      "name": "시오쿠미 마리아",
-      "gender": "female",
-      "cv": "센본기 사야카",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Maria_Shiokumi.jpg"
-    },
-    {
-      "name": "츠바쿠라 타카라",
-      "gender": "female",
-      "cv": "쿠와하라 유우키",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Takara_Tsubakura.jpg"
-    },
-    {
-      "name": "메라 소라",
-      "gender": "female",
-      "cv": "아마네 카논",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Sora.jpg"
-    },
-    {
-      "name": "이소라 쇼세이",
-      "gender": "male",
-      "cv": "반 타이토",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Shousei_Isora.jpg"
-    },
-    {
-      "name": "코가네사와 스자쿠",
-      "gender": "female",
-      "cv": "아츠치 아야카",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Suzaku_Koganesawa.jpg"
-    },
-    {
-      "name": "아오카제 아츠시",
-      "gender": "male",
-      "cv": "테즈카 히로미치",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Atsushi_Aokaze.jpg"
-    },
-    {
-      "name": "히미즈 타츠토",
-      "gender": "male",
-      "cv": "나카무라 겐타",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Himizu.jpg"
-    },
-    {
-      "name": "유다 신리",
-      "gender": "male",
-      "cv": "카와세 마키",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Yuda_Hakase.jpg"
-    },
-    {
-      "name": "카라스 안즈",
-      "gender": "female",
-      "cv": "혼이즈미 리나",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Anzu.jpg"
-    },
-    {
-      "name": "쿠루마자 렌지",
-      "gender": "male",
-      "cv": "사카키하라 유우키",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Renji_Kurumaza.jpg"
-    },
-    {
-      "name": "카노키시 타이요",
-      "gender": "male",
-      "cv": "하야마 쇼타",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Taiyou.jpg"
-    },
-    {
-      "name": "카가리 하르토 ",
-      "gender": "male",
-      "cv": "호리카네 소헤이",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Haruto_Kagari.jpg"
-    },
-    {
-      "name": "소가 카츠키",
-      "gender": "male",
-      "cv": "나카무라 코우키",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Katsuki_Soga.jpg"
-    },
-    {
-      "name": "카쿠리키 겐고",
-      "gender": "male",
-      "cv": "이노마타 사토시",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Gengo.jpg"
-    },
-    {
-      "name": "오나다 코헤이",
-      "gender": "male",
-      "cv": "본코바라 코우",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Kouhei_Oonada.jpg"
-    },
-    {
-      "name": "코토부키 쿠루스",
-      "gender": "female",
-      "cv": "마츠다 사츠미",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Kurusu.jpg"
-    },
-    {
-      "name": "싯포 마리모",
-      "gender": "male",
-      "cv": "츠치다 히로시",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Shippo_Marimo.jpg"
-    },
-    {
-      "name": "호리이 타케츠네",
-      "gender": "male",
-      "cv": "모리나가 아야토",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Taketsune_Horii.jpg"
-    },
-    {
-      "name": "시 하오유",
-      "gender": "male",
-      "cv": "우에스기 켄쇼",
-      "img": "image/charimg/2026/Q3/Mebius_Dust/Haoyu_Shi.jpg"
-    }
-  ]
-},
-{
-  "id": 62076,
-  "characters": [
-    {
-      "name": "사사키",
-      "gender": "male",
-      "cv": "사토 타쿠야",
-      "img": "image/charimg/2026/Q3/Super_no_Ura_de_Yani_Suu_Futari/Sasaki.jpg"
-    },
-    {
-      "name": "야마다",
-      "gender": "female",
-      "cv": "호시키 세에나",
-      "img": "image/charimg/2026/Q3/Super_no_Ura_de_Yani_Suu_Futari/Yamada.jpg"
-    },
-    {
-      "name": "스즈키",
-      "gender": "male",
-      "cv": "타카하시 신야",
-      "img": "image/charimg/2026/Q3/Super_no_Ura_de_Yani_Suu_Futari/Suzuki.jpg"
-    },
-    {
-      "name": "마에자와",
-      "gender": "female",
-      "cv": "히카사 요코",
-      "img": "image/charimg/2026/Q3/Super_no_Ura_de_Yani_Suu_Futari/Maezawa.jpg"
-    },
-    {
-      "name": "고토",
-      "gender": "female",
-      "cv": "유키나리 토아",
-      "img": "image/charimg/2026/Q3/Super_no_Ura_de_Yani_Suu_Futari/Gotou.jpg"
-    },
-    {
-      "name": "오바타",
-      "gender": "male",
-      "cv": "야스다 리쿠야",
-      "img": "image/charimg/2026/Q3/Super_no_Ura_de_Yani_Suu_Futari/Obata.jpg"
-    },
-    {
-      "name": "오오노",
-      "gender": "female",
-      "cv": "토요구치 메구미",
-      "img": "image/charimg/2026/Q3/Super_no_Ura_de_Yani_Suu_Futari/Oono.jpg"
-    }
-  ]
-},
-{
-  "id": 59741,
-  "characters": [
-    {
-      "name": "엘마 에드반",
-      "gender": "male",
-      "cv": "오오츠카 타케오",
-      "img": "image/charimg/2026/Q3/Tsuihou_Sareta_Tensei_Juukishi_wa_Game_Chishiki_de_Musou_Suru/Elymas_Edvan.jpg"
-    },
-    {
-      "name": "루체 루비스",
-      "gender": "female",
-      "cv": "와카야마 시온",
-      "img": "image/charimg/2026/Q3/Tsuihou_Sareta_Tensei_Juukishi_wa_Game_Chishiki_de_Musou_Suru/Luce_Rubis.jpg"
-    },
-    {
-      "name": "마리스 에드반",
-      "gender": "female",
-      "cv": "아베 나츠코",
-      "img": "image/charimg/2026/Q3/Tsuihou_Sareta_Tensei_Juukishi_wa_Game_Chishiki_de_Musou_Suru/Maris_Edvan.jpg"
-    },
-    {
-      "name": "리스",
-      "gender": "unknown",
-      "cv": "시마부쿠로 미유리",
-      "img": "image/charimg/2026/Q3/Tsuihou_Sareta_Tensei_Juukishi_wa_Game_Chishiki_de_Musou_Suru/Reiss.jpg"
-    },
-    {
-      "name": "아이자스 에드반",
-      "gender": "unknown",
-      "cv": "토네 켄타로",
-      "img": "image/charimg/2026/Q3/Tsuihou_Sareta_Tensei_Juukishi_wa_Game_Chishiki_de_Musou_Suru/Aizas_Edvaughn.jpg"
-    },
-    {
-      "name": "아레스",
-      "gender": "male",
-      "cv": "이토 마사히로",
-      "img": "image/charimg/2026/Q3/Tsuihou_Sareta_Tensei_Juukishi_wa_Game_Chishiki_de_Musou_Suru/Ares.jpg"
-    },
-    {
-      "name": "테일",
-      "gender": "unknown",
-      "cv": "아사다 하루키",
-      "img": "image/charimg/2026/Q3/Tsuihou_Sareta_Tensei_Juukishi_wa_Game_Chishiki_de_Musou_Suru/Teal.jpg"
-    },
-    {
-      "name": "受付嬢",
-      "gender": "unknown",
-      "cv": "쿠노 미사키",
-      "img": "image/charimg/2026/Q3/Tsuihou_Sareta_Tensei_Juukishi_wa_Game_Chishiki_de_Musou_Suru/Uketsuke-jou.jpg"
-    },
-    {
-      "name": "클라",
-      "gender": "unknown",
-      "cv": "후쿠하라 카츠미",
-      "img": "image/charimg/2026/Q3/Tsuihou_Sareta_Tensei_Juukishi_wa_Game_Chishiki_de_Musou_Suru/Cline.jpg"
-    },
-    {
-      "name": "고우탄",
-      "gender": "unknown",
-      "cv": "이나다 테츠",
-      "img": "image/charimg/2026/Q3/Tsuihou_Sareta_Tensei_Juukishi_wa_Game_Chishiki_de_Musou_Suru/Goutan.jpg"
-    }
-  ]
-},
-{
-  "id": 63403,
-  "characters": [
-    {
-      "name": "야니네코",
-      "gender": "female",
-      "cv": "나츠요시 유우코",
-      "img": "image/charimg/2026/Q3/Yani_Neko/Yaniko_Satou.jpg"
-    },
-    {
-      "name": "야쿠네코",
-      "gender": "female",
-      "cv": "마츠오카 미사토",
-      "img": "image/charimg/2026/Q3/Yani_Neko/Mashiko_Koshimaru.jpg"
-    },
-    {
-      "name": "하메네코",
-      "gender": "female",
-      "cv": "후나토 유리에",
-      "img": "image/charimg/2026/Q3/Yani_Neko/Hameko_Yurufuwa_Anal_Tenshi.jpg"
-    },
-    {
-      "name": "간사이네코",
-      "gender": "female",
-      "cv": "시미즈 아야카",
-      "img": "image/charimg/2026/Q3/Yani_Neko/Kaoruko_Nishi.jpg"
-    },
-    {
-      "name": "아루네코",
-      "gender": "female",
-      "cv": "이자와 시오리",
-      "img": "image/charimg/2026/Q3/Yani_Neko/Aruko_Sakai.jpg"
-    },
-    {
-      "name": "오친포 타츠로",
-      "gender": "female",
-      "cv": "아케치 리코",
-      "img": "image/charimg/2026/Q3/Yani_Neko/Saori_Tatsuno.jpg"
-    },
-    {
-      "name": "집주인",
-      "gender": "male",
-      "cv": "이나다 테츠",
-      "img": "image/charimg/2026/Q3/Yani_Neko/Ouya_Ootani.jpg"
-    },
-    {
-      "name": "동생네코",
-      "gender": "female",
-      "cv": "혼이즈미 리나",
-      "img": "image/charimg/2026/Q3/Yani_Neko/Imoko_Satou.jpg"
-    },
-    {
-      "name": "펜펜네코",
-      "gender": "female",
-      "cv": "코바야시 유우",
-      "img": "image/charimg/2026/Q3/Yani_Neko/Penpenneko.jpg"
-    },
-    {
-      "name": "지카키네코",
-      "gender": "female",
-      "cv": "나카바야시 니나",
-      "img": "image/charimg/2026/Q3/Yani_Neko/Eiko_Kaku.jpg"
-    },
-    {
-      "name": "라니",
-      "gender": "female",
-      "cv": "이세 마리야",
-      "img": "image/charimg/2026/Q3/Yani_Neko/Lani.jpg"
-    },
-    {
-      "name": "하나",
-      "gender": "female",
-      "cv": "타나카 유키",
-      "img": "image/charimg/2026/Q3/Yani_Neko/Hana.jpg"
-    },
-    {
-      "name": "미미코",
-      "gender": "female",
-      "cv": "아사히나 마도카",
-      "img": "image/charimg/2026/Q3/Yani_Neko/Mimiko.jpg"
-    },
-    {
-      "name": "시즈에",
-      "gender": "female",
-      "cv": "하라 유미",
-      "img": "image/charimg/2026/Q3/Yani_Neko/Shizue_Satou.jpg"
-    },
-    {
-      "name": "슌란",
-      "gender": "male",
-      "cv": "마시로 켄타로",
-      "img": "image/charimg/2026/Q3/Yani_Neko/Shunran_Nishi.jpg"
-    },
-    {
-      "name": "니시 쥰코",
-      "gender": "female",
-      "cv": "신도 나오미",
-      "img": "image/charimg/2026/Q3/Yani_Neko/Junko_Nishi.jpg"
-    },
-    {
-      "name": "카즈시",
-      "gender": "male",
-      "cv": "히로타 미노루",
-      "img": "image/charimg/2026/Q3/Yani_Neko/Kazushi.jpg"
-    },
-    {
-      "name": "시바타",
-      "gender": "male",
-      "cv": "나카무라 쇼고",
-      "img": "image/charimg/2026/Q3/Yani_Neko/Shibata.jpg"
-    },
-    {
-      "name": "카츠라다",
-      "gender": "male",
-      "cv": "나가사키 카즈호",
-      "img": "image/charimg/2026/Q3/Yani_Neko/Katsurada.jpg"
-    },
-    {
-      "name": "슈우",
-      "gender": "male",
-      "cv": "하타노 카케루",
-      "img": "image/charimg/2026/Q3/Yani_Neko/Shuu.jpg"
-    },
-    {
-      "name": "미코토",
-      "gender": "female",
-      "cv": "아마미 유리나",
-      "img": "image/charimg/2026/Q3/Yani_Neko/Mikoto.jpg"
-    },
-    {
-      "name": "토로냥",
-      "gender": "female",
-      "cv": "아마노 사토미",
-      "img": "image/charimg/2026/Q3/Yani_Neko/Toronyan.jpg"
-    },
-    {
-      "name": "이노우에",
-      "gender": "unknown",
-      "cv": "이노우에 호노카",
-      "img": "image/charimg/2026/Q3/Yani_Neko/Inoue.jpg"
-    },
-    {
-      "name": "타나카",
-      "gender": "female",
-      "cv": "유키무라 에리",
-      "img": "image/charimg/2026/Q3/Yani_Neko/Tanaka.jpg"
-    },
-    {
-      "name": "야마다",
-      "gender": "female",
-      "cv": "타카다 유우키",
-      "img": "image/charimg/2026/Q3/Yani_Neko/Yamada.jpg"
-    },
-    {
-      "name": "시오타니 루마코",
-      "gender": "female",
-      "cv": "모토무라 레나",
-      "img": "image/charimg/2026/Q3/Yani_Neko/Rumako_Shioya.jpg"
-    }
-  ]
-},
-{
-  "id": 63150,
-  "characters": [
-    {
-      "name": "아카이시 쿠로에",
-      "gender": "female",
-      "cv": "센가 히카리",
-      "img": "image/charimg/2026/Q3/Otome_Kaijuu_Caraméliser/Kuroe_Akaishi.jpg"
-    },
-    {
-      "name": "미나미 아라타",
-      "gender": "male",
-      "cv": "카지타 다이시",
-      "img": "image/charimg/2026/Q3/Otome_Kaijuu_Caraméliser/Arata_Minami.jpg"
-    },
-    {
-      "name": "토모사토 마나츠",
-      "gender": "female",
-      "cv": "세키네 아키라",
-      "img": "image/charimg/2026/Q3/Otome_Kaijuu_Caraméliser/Manatsu_Tomosato.jpg"
-    },
-    {
-      "name": "코노 라이무",
-      "gender": "female",
-      "cv": "시라이시 하루카",
-      "img": "image/charimg/2026/Q3/Otome_Kaijuu_Caraméliser/Raimu_Kouno.jpg"
-    },
-    {
-      "name": "아카이시 린코",
-      "gender": "female",
-      "cv": "미츠이시 코토노",
-      "img": "image/charimg/2026/Q3/Otome_Kaijuu_Caraméliser/Rinko_Akaishi.jpg"
-    },
-    {
-      "name": "히비노 코타로",
-      "gender": "male",
-      "cv": "코니시 카츠유키",
-      "img": "image/charimg/2026/Q3/Otome_Kaijuu_Caraméliser/Koutarou_Hibino.jpg"
-    },
-    {
-      "name": "점보 킹",
-      "gender": "unknown",
-      "cv": "마츠이 에리코",
-      "img": "image/charimg/2026/Q3/Otome_Kaijuu_Caraméliser/Jumbo_King.jpg"
-    },
-    {
-      "name": "미유",
-      "gender": "unknown",
-      "cv": "니이자키 미즈키",
-      "img": "image/charimg/2026/Q3/Otome_Kaijuu_Caraméliser/Miyuu.jpg"
-    },
-    {
-      "name": "리포터",
-      "gender": "female",
-      "cv": "나카노 사이마",
-      "img": "image/charimg/2026/Q3/Otome_Kaijuu_Caraméliser/Reporter.jpg"
-    },
-    {
-      "name": "南最愛",
-      "gender": "female",
-      "cv": "하나이 미하루",
-      "img": "image/charimg/2026/Q3/Otome_Kaijuu_Caraméliser/Moa_Minami.jpg"
-    },
-    {
-      "name": "岡田",
-      "gender": "unknown",
-      "cv": "Ryouta Oosaka",
-      "img": "image/charimg/2026/Q3/Otome_Kaijuu_Caraméliser/Okada.jpg"
-    },
-    {
-      "name": "凪子",
-      "gender": "unknown",
-      "cv": "Ryouko Maekawa",
-      "img": "image/charimg/2026/Q3/Otome_Kaijuu_Caraméliser/Nagiko.jpg"
-    }
-  ]
-},
-{
-  "id": 62078,
-  "characters": [
-    {
-      "name": "디아스",
-      "gender": "male",
-      "cv": "마츠다 켄이치로",
-      "img": "image/charimg/2026/Q3/Ryoumin_0-Nin_Start_no_Henkyou_Ryoushu-sama/Dias.jpg"
-    },
-    {
-      "name": "아루나",
-      "gender": "female",
-      "cv": "와카야마 시온",
-      "img": "image/charimg/2026/Q3/Ryoumin_0-Nin_Start_no_Henkyou_Ryoushu-sama/Alna.jpg"
-    },
-    {
-      "name": "클라우스",
-      "gender": "male",
-      "cv": "반 타이토",
-      "img": "image/charimg/2026/Q3/Ryoumin_0-Nin_Start_no_Henkyou_Ryoushu-sama/Klaus.jpg"
-    },
-    {
-      "name": "세나이",
-      "gender": "female",
-      "cv": "이토 미쿠",
-      "img": "image/charimg/2026/Q3/Ryoumin_0-Nin_Start_no_Henkyou_Ryoushu-sama/Senai.jpg"
-    },
-    {
-      "name": "아이한",
-      "gender": "female",
-      "cv": "시라이시 하루카",
-      "img": "image/charimg/2026/Q3/Ryoumin_0-Nin_Start_no_Henkyou_Ryoushu-sama/Aihan.jpg"
-    },
-    {
-      "name": "프랜시스",
-      "gender": "male",
-      "cv": "야스다 리쿠야",
-      "img": "image/charimg/2026/Q3/Ryoumin_0-Nin_Start_no_Henkyou_Ryoushu-sama/Francis.jpg"
-    },
-    {
-      "name": "프랑소와",
-      "gender": "unknown",
-      "cv": "아보 마리아",
-      "img": "image/charimg/2026/Q3/Ryoumin_0-Nin_Start_no_Henkyou_Ryoushu-sama/Francois.jpg"
-    },
-    {
-      "name": "에르단 카스덱스",
-      "gender": "male",
-      "cv": "후쿠야마 쥰",
-      "img": "image/charimg/2026/Q3/Ryoumin_0-Nin_Start_no_Henkyou_Ryoushu-sama/Eldan.jpg"
-    },
-    {
-      "name": "카마로츠 ",
-      "gender": "male",
-      "cv": "타카하시 신야",
-      "img": "image/charimg/2026/Q3/Ryoumin_0-Nin_Start_no_Henkyou_Ryoushu-sama/Camalotz.jpg"
-    },
-    {
-      "name": "디아네",
-      "gender": "female",
-      "cv": "히카사 요코",
-      "img": "image/charimg/2026/Q3/Ryoumin_0-Nin_Start_no_Henkyou_Ryoushu-sama/Diane.jpg"
-    },
-    {
-      "name": "모르",
-      "gender": "female",
-      "cv": "쿠지라",
-      "img": "image/charimg/2026/Q3/Ryoumin_0-Nin_Start_no_Henkyou_Ryoushu-sama/Mall.jpg"
-    },
-    {
-      "name": "에이마 제리 보아",
-      "gender": "female",
-      "cv": "토야마 나오",
-      "img": "image/charimg/2026/Q3/Ryoumin_0-Nin_Start_no_Henkyou_Ryoushu-sama/Eima_Gerryboa.jpg"
-    },
-    {
-      "name": "리처드",
-      "gender": "male",
-      "cv": "테라시마 타쿠마",
-      "img": "image/charimg/2026/Q3/Ryoumin_0-Nin_Start_no_Henkyou_Ryoushu-sama/Richard.jpg"
-    },
-    {
-      "name": "조르그",
-      "gender": "male",
-      "cv": "쿠마가이 켄타로",
-      "img": "image/charimg/2026/Q3/Ryoumin_0-Nin_Start_no_Henkyou_Ryoushu-sama/Zorg.jpg"
-    },
-    {
-      "name": "카니스",
-      "gender": "female",
-      "cv": "츠다 미나미",
-      "img": "image/charimg/2026/Q3/Ryoumin_0-Nin_Start_no_Henkyou_Ryoushu-sama/Kanis.jpg"
-    },
-    {
-      "name": "마이저",
-      "gender": "male",
-      "cv": "치바 쇼야",
-      "img": "image/charimg/2026/Q3/Ryoumin_0-Nin_Start_no_Henkyou_Ryoushu-sama/Meiser.jpg"
-    },
-    {
-      "name": "플리네시아",
-      "gender": "female",
-      "cv": "하야시 미호",
-      "img": "image/charimg/2026/Q3/Ryoumin_0-Nin_Start_no_Henkyou_Ryoushu-sama/Prinessia.jpg"
-    },
-    {
-      "name": "미랄다",
-      "gender": "unknown",
-      "cv": "키타지마 미즈키",
-      "img": "image/charimg/2026/Q3/Ryoumin_0-Nin_Start_no_Henkyou_Ryoushu-sama/Miralda.jpg"
-    },
-    {
-      "name": "마야 할머니",
-      "gender": "female",
-      "cv": "타카시마 가라",
-      "img": "image/charimg/2026/Q3/Ryoumin_0-Nin_Start_no_Henkyou_Ryoushu-sama/Maya.jpg"
-    },
-    {
-      "name": "칠치",
-      "gender": "female",
-      "cv": "타치바나 U코",
-      "img": "image/charimg/2026/Q3/Ryoumin_0-Nin_Start_no_Henkyou_Ryoushu-sama/Chilchi.jpg"
-    },
-    {
-      "name": "타라",
-      "gender": "female",
-      "cv": "미야자와 키요코",
-      "img": "image/charimg/2026/Q3/Ryoumin_0-Nin_Start_no_Henkyou_Ryoushu-sama/Taara.jpg"
-    },
-    {
-      "name": "페이진드",
-      "gender": "unknown",
-      "cv": "후쿠시마 준",
-      "img": "image/charimg/2026/Q3/Ryoumin_0-Nin_Start_no_Henkyou_Ryoushu-sama/Peijin_Do.jpg"
-    },
-    {
-      "name": "디아스를 원한 귀족",
-      "gender": "unknown",
-      "cv": "요시노 히로유키",
-      "img": "image/charimg/2026/Q3/Ryoumin_0-Nin_Start_no_Henkyou_Ryoushu-sama/Dias_o_Uramu_Kizoku.jpg"
-    },
-    {
-      "name": "실드",
-      "gender": "unknown",
-      "cv": "키쿠치 미치타케",
-      "img": "image/charimg/2026/Q3/Ryoumin_0-Nin_Start_no_Henkyou_Ryoushu-sama/Sildo.jpg"
-    },
-    {
-      "name": "아니",
-      "gender": "unknown",
-      "cv": "아오야마 요시노",
-      "img": "image/charimg/2026/Q3/Ryoumin_0-Nin_Start_no_Henkyou_Ryoushu-sama/Anne.jpg"
-    },
-    {
-      "name": "リックアナコンダ",
-      "gender": "unknown",
-      "cv": "이시구로 후미타케",
-      "img": "image/charimg/2026/Q3/Ryoumin_0-Nin_Start_no_Henkyou_Ryoushu-sama/Rick_Anaconda.jpg"
-    },
-    {
-      "name": "개런트",
-      "gender": "unknown",
-      "cv": "오키츠 카즈유키",
-      "img": "image/charimg/2026/Q3/Ryoumin_0-Nin_Start_no_Henkyou_Ryoushu-sama/Geraint.jpg"
-    },
-    {
-      "name": "오순 셰프족",
-      "gender": "male",
-      "cv": "아마사키 코헤이",
-      "img": "image/charimg/2026/Q3/Ryoumin_0-Nin_Start_no_Henkyou_Ryoushu-sama/Shev_Ausun_Shep.jpg"
-    },
-    {
-      "name": "티베 마스티족",
-      "gender": "male",
-      "cv": "야마시타 타이키",
-      "img": "image/charimg/2026/Q3/Ryoumin_0-Nin_Start_no_Henkyou_Ryoushu-sama/Marf_Tibe_Masti.jpg"
-    },
-    {
-      "name": "바 센지족",
-      "gender": "male",
-      "cv": "마지마 준지",
-      "img": "image/charimg/2026/Q3/Ryoumin_0-Nin_Start_no_Henkyou_Ryoushu-sama/Sedrio_Bah_Senji.jpg"
-    },
-    {
-      "name": "나리우스",
-      "gender": "unknown",
-      "cv": "에고시 아키노리",
-      "img": "image/charimg/2026/Q3/Ryoumin_0-Nin_Start_no_Henkyou_Ryoushu-sama/Narius.jpg"
-    }
-  ]
-},
-{
-  "id": 60059,
-  "characters": [
-    {
-      "name": "유이카와 아사키",
-      "gender": "male",
-      "cv": "유이카와 아사키",
-      "img": "image/charimg/2026/Q3/Nige_Jouzu_no_Wakagimi_2nd_Season/Tokiyuki_Houjou.jpg"
-    },
-    {
-      "name": "스와 시즈쿠",
-      "gender": "female",
-      "cv": "야노 히나키",
-      "img": "image/charimg/2026/Q3/Nige_Jouzu_no_Wakagimi_2nd_Season/Shizuku.jpg"
-    },
-    {
-      "name": "네즈 코지로",
-      "gender": "male",
-      "cv": "히노 마리",
-      "img": "image/charimg/2026/Q3/Nige_Jouzu_no_Wakagimi_2nd_Season/Kojirou_Nezu.jpg"
-    },
-    {
-      "name": "모치즈키 아야코",
-      "gender": "female",
-      "cv": "스즈시로 사유미",
-      "img": "image/charimg/2026/Q3/Nige_Jouzu_no_Wakagimi_2nd_Season/Ayako_Mochizuki.jpg"
-    },
-    {
-      "name": "카자마 겐바",
-      "gender": "male",
-      "cv": "유우키 아오이",
-      "img": "image/charimg/2026/Q3/Nige_Jouzu_no_Wakagimi_2nd_Season/Genba_Kazama.jpg"
-    },
-    {
-      "name": "히코베 후부키",
-      "gender": "male",
-      "cv": "토야 키쿠노스케",
-      "img": "image/charimg/2026/Q3/Nige_Jouzu_no_Wakagimi_2nd_Season/Fubuki.jpg"
-    },
-    {
-      "name": "스와 요리시게",
-      "gender": "male",
-      "cv": "나카무라 유이치",
-      "img": "image/charimg/2026/Q3/Nige_Jouzu_no_Wakagimi_2nd_Season/Yorishige_Suwa.jpg"
-    },
-    {
-      "name": "아시카가 다카우지",
-      "gender": "male",
-      "cv": "코니시 카츠유키",
-      "img": "image/charimg/2026/Q3/Nige_Jouzu_no_Wakagimi_2nd_Season/Takauji_Ashikaga.jpg"
-    }
-  ]
-},
-{
-  "id": 61280,
-  "characters": [
-    {
-      "name": "야스미 아이",
-      "gender": "female",
-      "cv": "세키네 아키라",
-      "img": "image/charimg/2026/Q3/Kore_Kaite_Shine/Ai_Yasumi.jpg"
-    },
-    {
-      "name": "콘고지 하나",
-      "gender": "female",
-      "cv": "유카나",
-      "img": "image/charimg/2026/Q3/Kore_Kaite_Shine/Hana_Kongouji.jpg"
-    },
-    {
-      "name": "테시마 레이",
-      "gender": "female",
-      "cv": "하야미 사오리",
-      "img": "image/charimg/2026/Q3/Kore_Kaite_Shine/Rei_Teshima.jpg"
-    },
-    {
-      "name": "모리사키 우라라",
-      "gender": "female",
-      "cv": "나가세 안나",
-      "img": "image/charimg/2026/Q3/Kore_Kaite_Shine/Loups_Garous.jpg"
-    },
-    {
-      "name": "세키류 히카루",
-      "gender": "female",
-      "cv": "미나세 이노리",
-      "img": "image/charimg/2026/Q3/Kore_Kaite_Shine/Hikaru_Sekiryuu.jpg"
-    },
-    {
-      "name": "후지모리 코코로",
-      "gender": "female",
-      "cv": "히토미 사야",
-      "img": "image/charimg/2026/Q3/Kore_Kaite_Shine/Kokoro_Fujimori.jpg"
-    },
-    {
-      "name": "아카후쿠 사치",
-      "gender": "female",
-      "cv": "후지무라 카논",
-      "img": "image/charimg/2026/Q3/Kore_Kaite_Shine/Sachi_Akafuku.jpg"
-    },
-    {
-      "name": "헤비치카 선생",
-      "gender": "female",
-      "cv": "이노우에 키쿠코",
-      "img": "image/charimg/2026/Q3/Kore_Kaite_Shine/Hebichika-sensei.jpg"
-    },
-    {
-      "name": "포코타",
-      "gender": "unknown",
-      "cv": "히다카 노리코",
-      "img": "image/charimg/2026/Q3/Kore_Kaite_Shine/Pokota.jpg"
-    },
-    {
-      "name": "테라무라 나나",
-      "gender": "female",
-      "cv": "타네자키 아츠미",
-      "img": "image/charimg/2026/Q3/Kore_Kaite_Shine/Nana_Teramura.jpg"
-    }
-  ]
-},
-{
-  "id": 63061,
-  "characters": [
-    {
-      "name": "나리타 겐",
-      "gender": "male",
-      "cv": "마스다 토시키",
-      "img": "image/charimg/2026/Q3/Uchi_no_Otouto-domo_ga_Sumimasen/Gen_Narita.jpg"
-    },
-    {
-      "name": "나리타 이토",
-      "gender": "female",
-      "cv": "오오조라 나오미",
-      "img": "image/charimg/2026/Q3/Uchi_no_Otouto-domo_ga_Sumimasen/Ito_Narita.jpg"
-    },
-    {
-      "name": "타카라기 메구미",
-      "gender": "female",
-      "cv": "안자이 유카리",
-      "img": "image/charimg/2026/Q3/Uchi_no_Otouto-domo_ga_Sumimasen/Megumi_Hoshou.jpg"
-    },
-    {
-      "name": "유키토모 토모유키",
-      "gender": "male",
-      "cv": "마츠오카 요시츠구",
-      "img": "image/charimg/2026/Q3/Uchi_no_Otouto-domo_ga_Sumimasen/Tomoyuki_Yukitomo.jpg"
-    },
-    {
-      "name": "나리타 루이",
-      "gender": "male",
-      "cv": "테라사와 모모카",
-      "img": "image/charimg/2026/Q3/Uchi_no_Otouto-domo_ga_Sumimasen/Rui_Narita.jpg"
-    },
-    {
-      "name": "혼마 오오타",
-      "gender": "male",
-      "cv": "아마사키 코헤이",
-      "img": "image/charimg/2026/Q3/Uchi_no_Otouto-domo_ga_Sumimasen/Outa_Homma.jpg"
-    },
-    {
-      "name": "나리타 라쿠",
-      "gender": "male",
-      "cv": "야시로 타쿠",
-      "img": "image/charimg/2026/Q3/Uchi_no_Otouto-domo_ga_Sumimasen/Raku_Narita.jpg"
-    },
-    {
-      "name": "사가라 이쿠토",
-      "gender": "male",
-      "cv": "아자카미 요헤이",
-      "img": "image/charimg/2026/Q3/Uchi_no_Otouto-domo_ga_Sumimasen/Ikuto_Sagara.jpg"
-    },
-    {
-      "name": "나리타 슈",
-      "gender": "male",
-      "cv": "오노 켄쇼",
-      "img": "image/charimg/2026/Q3/Uchi_no_Otouto-domo_ga_Sumimasen/Syu_Narita.jpg"
-    },
-    {
-      "name": "사와키 모네",
-      "gender": "female",
-      "cv": "카쿠마 아이",
-      "img": "image/charimg/2026/Q3/Uchi_no_Otouto-domo_ga_Sumimasen/Mone_Sawaki.jpg"
-    },
-    {
-      "name": "나리타 사호",
-      "gender": "female",
-      "cv": "엔도 아야",
-      "img": "image/charimg/2026/Q3/Uchi_no_Otouto-domo_ga_Sumimasen/Saho_Narita.jpg"
-    },
-    {
-      "name": "오다가와 마후유",
-      "gender": "male",
-      "cv": "후쿠야마 쥰",
-      "img": "image/charimg/2026/Q3/Uchi_no_Otouto-domo_ga_Sumimasen/Mafuyu_Udagawa.jpg"
-    },
-    {
-      "name": "나리타 이사오",
-      "gender": "male",
-      "cv": "오노 다이스케",
-      "img": "image/charimg/2026/Q3/Uchi_no_Otouto-domo_ga_Sumimasen/Isao_Narita.jpg"
-    },
-    {
-      "name": "엔도 리오",
-      "gender": "female",
-      "cv": "타이치 요우",
-      "img": "image/charimg/2026/Q3/Uchi_no_Otouto-domo_ga_Sumimasen/Rio_Endou.jpg"
-    }
-  ]
-},
-{
-  "id": 63817,
-  "characters": [
-    {
-      "name": "알렌",
-      "gender": "male",
-      "cv": "타무라 무츠미",
-      "img": "image/charimg/2026/Q3/Hell_Mode_Yarikomi-zuki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru_2nd_Season/Allen.jpg"
-    },
-    {
-      "name": "세실 그란벨",
-      "gender": "female",
-      "cv": "센본기 사야카",
-      "img": "image/charimg/2026/Q3/Hell_Mode_Yarikomi-zuki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru_2nd_Season/Cecil_Granvelle.jpg"
-    },
-    {
-      "name": "클레나",
-      "gender": "female",
-      "cv": "이이즈카 마유",
-      "img": "image/charimg/2026/Q3/Hell_Mode_Yarikomi-zuki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru_2nd_Season/Krena.jpg"
-    },
-    {
-      "name": "소피아로네",
-      "gender": "female",
-      "cv": "야스노 키요노",
-      "img": "image/charimg/2026/Q3/Hell_Mode_Yarikomi-zuki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru_2nd_Season/Sophialohne.jpg"
-    },
-    {
-      "name": "드골라",
-      "gender": "male",
-      "cv": "하타나카 타스쿠",
-      "img": "image/charimg/2026/Q3/Hell_Mode_Yarikomi-zuki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru_2nd_Season/Dogora.jpg"
-    },
-    {
-      "name": "헤르미오스 폰 세이크리드",
-      "gender": "male",
-      "cv": "사쿠라이 타카히로",
-      "img": "image/charimg/2026/Q3/Hell_Mode_Yarikomi-zuki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru_2nd_Season/Helmios.jpg"
-    },
-    {
-      "name": "마쉬",
-      "gender": "male",
-      "cv": "코이치 마코토",
-      "img": "image/charimg/2026/Q3/Hell_Mode_Yarikomi-zuki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru_2nd_Season/Mash.jpg"
-    },
-    {
-      "name": "테레시아",
-      "gender": "female",
-      "cv": "오오하라 사야카",
-      "img": "image/charimg/2026/Q3/Hell_Mode_Yarikomi-zuki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru_2nd_Season/Theresia.jpg"
-    },
-    {
-      "name": "로단",
-      "gender": "male",
-      "cv": "이시카와 히데오",
-      "img": "image/charimg/2026/Q3/Hell_Mode_Yarikomi-zuki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru_2nd_Season/Rodan.jpg"
-    },
-    {
-      "name": "버틀러 폰 그란벨",
-      "gender": "male",
-      "cv": "스기타 토모카즈",
-      "img": "image/charimg/2026/Q3/Hell_Mode_Yarikomi-zuki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru_2nd_Season/Butler_von_Granvelle.jpg"
-    },
-    {
-      "name": "토머스 그란벨",
-      "gender": "male",
-      "cv": "미야케 마리에",
-      "img": "image/charimg/2026/Q3/Hell_Mode_Yarikomi-zuki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru_2nd_Season/Thomas_Granvelle.jpg"
-    },
-    {
-      "name": "미하이 그란벨",
-      "gender": "male",
-      "cv": "치바 쇼야",
-      "img": "image/charimg/2026/Q3/Hell_Mode_Yarikomi-zuki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru_2nd_Season/Mikhail_Granvelle.jpg"
-    },
-    {
-      "name": "카브로니 카르넬",
-      "gender": "male",
-      "cv": "미야모토 타카히로",
-      "img": "image/charimg/2026/Q3/Hell_Mode_Yarikomi-zuki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru_2nd_Season/Carnell.jpg"
-    },
-    {
-      "name": "제노프",
-      "gender": "male",
-      "cv": "오오츠카 아키오",
-      "img": "image/charimg/2026/Q3/Hell_Mode_Yarikomi-zuki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru_2nd_Season/Zenoff.jpg"
-    },
-    {
-      "name": "킬 폰 카르넬",
-      "gender": "male",
-      "cv": "카와시마 레이지",
-      "img": "image/charimg/2026/Q3/Hell_Mode_Yarikomi-zuki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru_2nd_Season/Keel.jpg"
-    },
-    {
-      "name": "포르마르",
-      "gender": "male",
-      "cv": "미도리카와 히카루",
-      "img": "image/charimg/2026/Q3/Hell_Mode_Yarikomi-zuki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru_2nd_Season/Volmaar.jpg"
-    },
-    {
-      "name": "메루루",
-      "gender": "female",
-      "cv": "토미타 미유",
-      "img": "image/charimg/2026/Q3/Hell_Mode_Yarikomi-zuki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru_2nd_Season/Meruru.jpg"
-    },
-    {
-      "name": "드베르그",
-      "gender": "male",
-      "cv": "타케토라",
-      "img": "image/charimg/2026/Q3/Hell_Mode_Yarikomi-zuki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru_2nd_Season/Dverg.jpg"
-    },
-    {
-      "name": "테오도실",
-      "gender": "male",
-      "cv": "미키 신이치로",
-      "img": "image/charimg/2026/Q3/Hell_Mode_Yarikomi-zuki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru_2nd_Season/Theodojiil.jpg"
-    },
-    {
-      "name": "마리아",
-      "gender": "female",
-      "cv": "호리에 유이",
-      "img": "image/charimg/2026/Q3/Hell_Mode_Yarikomi-zuki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru_2nd_Season/Maria.jpg"
-    },
-    {
-      "name": "뮈라",
-      "gender": "female",
-      "cv": "와타야 미호",
-      "img": "image/charimg/2026/Q3/Hell_Mode_Yarikomi-zuki_no_Gamer_wa_Haisettei_no_Isekai_de_Musou_Suru_2nd_Season/Myura.jpg"
-    }
-  ]
-},
-{
-  "id": 56835,
-  "characters": [
-    {
-      "name": "로제",
-      "gender": "unknown",
-      "cv": "아마사키 코헤이",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Rozé.jpg"
-    },
-    {
-      "name": "애쉬 피닉스",
-      "gender": "male",
-      "cv": "후루카와 마코토",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Ash.jpg"
-    },
-    {
-      "name": "캐서린 사바스라",
-      "gender": "female",
-      "cv": "토야마 나오",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Catherine_Savasula.jpg"
-    },
-    {
-      "name": "놀랜드 폰 뤼네베르크",
-      "gender": "male",
-      "cv": "야스모토 히로키",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Noland_von_Lüneberg.jpg"
-    },
-    {
-      "name": "나라 본",
-      "gender": "female",
-      "cv": "우치야마 유미",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Narah_Vaughn.jpg"
-    },
-    {
-      "name": "카리스 알 브리타니아",
-      "gender": "male",
-      "cv": "이치노세 카나",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Callis_al_Britannia.jpg"
-    },
-    {
-      "name": "니나 아인슈타인",
-      "gender": "female",
-      "cv": "치바 사에코",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Nina_Einstein.jpg"
-    },
-    {
-      "name": "디복 메르테",
-      "gender": "male",
-      "cv": "미즈나카 마사아키",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Divock_Merte.jpg"
-    },
-    {
-      "name": "나탈리아 룩셈부르크",
-      "gender": "female",
-      "cv": "테라사키 유카",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Natalia_Luxembourg.jpg"
-    },
-    {
-      "name": "아놀드 렝크",
-      "gender": "male",
-      "cv": "사이토 소마",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Arnold_Renk.jpg"
-    },
-    {
-      "name": "크리스토프 시저맨",
-      "gender": "male",
-      "cv": "요시노 히로유키",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Christoph_Scissorman.jpg"
-    },
-    {
-      "name": "루타카 하루카",
-      "gender": "female",
-      "cv": "토미타 미유",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Haruka_Rutaka.jpg"
-    },
-    {
-      "name": "오다 토모오미",
-      "gender": "male",
-      "cv": "치바 쇼야",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Tomoomi_Oda.jpg"
-    },
-    {
-      "name": "그리드 커크웨인",
-      "gender": "male",
-      "cv": "노지마 히로후미",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Greede_Kirkwayne.jpg"
-    },
-    {
-      "name": "모노베 이사오",
-      "gender": "male",
-      "cv": "코니시 카츠유키",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Isao_Monobe.jpg"
-    },
-    {
-      "name": "그랜 커크웨인",
-      "gender": "male",
-      "cv": "오노 유우키",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Gran_Kirkwayne.jpg"
-    },
-    {
-      "name": "스탠리 폰 브라운",
-      "gender": "male",
-      "cv": "히라카와 다이스케",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Stanley_Vonbraun.jpg"
-    },
-    {
-      "name": "바렌 스타크",
-      "gender": "male",
-      "cv": "노가와 마사시",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Vallen_Sterk.jpg"
-    },
-    {
-      "name": "사노 유우리",
-      "gender": "female",
-      "cv": "하루노 안즈",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Yuuri_Sano.jpg"
-    },
-    {
-      "name": "사카이 미나토",
-      "gender": "female",
-      "cv": "Lynn",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Minato_Sakai.jpg"
-    },
-    {
-      "name": "토우미 산시로",
-      "gender": "male",
-      "cv": "후지이 하야토",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Sanshirou_Toumi.jpg"
-    },
-    {
-      "name": "아라키 요코",
-      "gender": "female",
-      "cv": "스기야마 리호",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Youko_Araki.jpg"
-    },
-    {
-      "name": "발터 빈슈테드",
-      "gender": "male",
-      "cv": "카세 야스유키",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Walter_Lindstedt.jpg"
-    },
-    {
-      "name": "무네모리 쇼타",
-      "gender": "male",
-      "cv": "반 타이토",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Shouta_Munemori.jpg"
-    },
-    {
-      "name": "히스 로트",
-      "gender": "male",
-      "cv": "오오사카 료타",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Heath_Lott.jpg"
-    },
-    {
-      "name": "에마 메이",
-      "gender": "female",
-      "cv": "시라이시 하루카",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Mei_Ema.jpg"
-    },
-    {
-      "name": "시즈카 카오루",
-      "gender": "male",
-      "cv": "코바야시 치카히로",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Kaoru_Shizuka.jpg"
-    },
-    {
-      "name": "이와모토 토키오",
-      "gender": "male",
-      "cv": "아오야마 유타카",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Tokio_Iwamoto.jpg"
-    },
-    {
-      "name": "쿠로토 켄세이",
-      "gender": "male",
-      "cv": "쿠로다 타카야",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Kensei_Kuroto.jpg"
-    },
-    {
-      "name": "사자나미 시로",
-      "gender": "male",
-      "cv": "야마모토 카네히라",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Shirou_Sazanami.jpg"
-    },
-    {
-      "name": "코넬리아 리 브리타니아",
-      "gender": "female",
-      "cv": "미나가와 준코",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Cornelia_li_Britannia.jpg"
-    },
-    {
-      "name": "지노 바인베르그",
-      "gender": "unknown",
-      "cv": "호시 소이치로",
-      "img": "image/charimg/2026/Q3/Code_Geass_Dakkan_no_Rozé/Gino_Weinberg.jpg"
-    }
-  ]
-},
-{
-  "id": 61048,
-  "characters": [
-    {
-      "name": "묘룡",
-      "gender": "male",
-      "cv": "코야스 타케히토",
-      "img": "image/charimg/2026/Q3/Neko_to_Ryuu/Nekoryuu.jpg"
-    },
-    {
-      "name": "스탄",
-      "gender": "male",
-      "cv": "에노키 준야",
-      "img": "image/charimg/2026/Q3/Neko_to_Ryuu/Stan.jpg"
-    },
-    {
-      "name": "미케미케",
-      "gender": "unknown",
-      "cv": "시라스 사호",
-      "img": "image/charimg/2026/Q3/Neko_to_Ryuu/Mikemike.jpg"
-    },
-    {
-      "name": "치쿠로",
-      "gender": "male",
-      "cv": "카와세 마키",
-      "img": "image/charimg/2026/Q3/Neko_to_Ryuu/Chiikuro.jpg"
-    },
-    {
-      "name": "안네로사",
-      "gender": "female",
-      "cv": "안자이 치카",
-      "img": "image/charimg/2026/Q3/Neko_to_Ryuu/Annerossa.jpg"
-    },
-    {
-      "name": "4대 모샤모샤",
-      "gender": "male",
-      "cv": "우에다 요지",
-      "img": "image/charimg/2026/Q3/Neko_to_Ryuu/Kurotama.jpg"
-    },
-    {
-      "name": "왕자",
-      "gender": "male",
-      "cv": "코이치 마코토",
-      "img": "image/charimg/2026/Q3/Neko_to_Ryuu/Ouji.jpg"
-    },
-    {
-      "name": "하이부치",
-      "gender": "male",
-      "cv": "스기야마 노리아키",
-      "img": "image/charimg/2026/Q3/Neko_to_Ryuu/Haibuchi.jpg"
-    },
-    {
-      "name": "국왕",
-      "gender": "male",
-      "cv": "이치조 카즈야",
-      "img": "image/charimg/2026/Q3/Neko_to_Ryuu/Kokuou.jpg"
-    },
-    {
-      "name": "어미 고양이",
-      "gender": "female",
-      "cv": "이노우에 키쿠코",
-      "img": "image/charimg/2026/Q3/Neko_to_Ryuu/Mama-nyan.jpg"
-    },
-    {
-      "name": "하네코",
-      "gender": "unknown",
-      "cv": "세리자와 유우",
-      "img": "image/charimg/2026/Q3/Neko_to_Ryuu/Haneko.jpg"
-    },
-    {
-      "name": "쿠로바네",
-      "gender": "male",
-      "cv": "하야미 쇼",
-      "img": "image/charimg/2026/Q3/Neko_to_Ryuu/Kurobane.jpg"
-    },
-    {
-      "name": "그레이터 데몬",
-      "gender": "male",
-      "cv": "타도코로 히나타",
-      "img": "image/charimg/2026/Q3/Neko_to_Ryuu/Greater_Demon.jpg"
-    },
-    {
-      "name": "시로타에",
-      "gender": "unknown",
-      "cv": "이즈미 후카",
-      "img": "image/charimg/2026/Q3/Neko_to_Ryuu/Shirotae.jpg"
-    },
-    {
-      "name": "모나르카(흑)",
-      "gender": "unknown",
-      "cv": "하나에 나츠키",
-      "img": "image/charimg/2026/Q3/Neko_to_Ryuu/Monarca_(Kuro).jpg"
-    },
-    {
-      "name": "가리",
-      "gender": "female",
-      "cv": "타네자키 아츠미",
-      "img": "image/charimg/2026/Q3/Neko_to_Ryuu/Gally.jpg"
-    },
-    {
-      "name": "폼포라",
-      "gender": "male",
-      "cv": "아소 토모히사",
-      "img": "image/charimg/2026/Q3/Neko_to_Ryuu/Pompora.jpg"
-    }
-  ]
-},
-{
-  "id": 61169,
-  "characters": [
-    {
-      "name": "아즈마 지로",
-      "gender": "male",
-      "cv": "스즈키 료타",
-      "img": "image/charimg/2026/Q3/BLACK_TORCH/Jirou_Azuma.jpg"
-    },
-    {
-      "name": "나후",
-      "gender": "male",
-      "cv": "우에다 요지",
-      "img": "image/charimg/2026/Q3/BLACK_TORCH/Ragou.jpg"
-    },
-    {
-      "name": "키시모진 이치카",
-      "gender": "female",
-      "cv": "센본기 사야카",
-      "img": "image/charimg/2026/Q3/BLACK_TORCH/Ichika_Kishimojin.jpg"
-    },
-    {
-      "name": "키리하라 레이지",
-      "gender": "male",
-      "cv": "에노키 준야",
-      "img": "image/charimg/2026/Q3/BLACK_TORCH/Reiji_Kirihara.jpg"
-    },
-    {
-      "name": "우사미 하나",
-      "gender": "female",
-      "cv": "우에다 레이나",
-      "img": "image/charimg/2026/Q3/BLACK_TORCH/Hana_Usami.jpg"
-    },
-    {
-      "name": "시바 료스케",
-      "gender": "male",
-      "cv": "스와베 준이치",
-      "img": "image/charimg/2026/Q3/BLACK_TORCH/Ryousuke_Shiba.jpg"
-    },
-    {
-      "name": "후요",
-      "gender": "female",
-      "cv": "오오조라 나오미",
-      "img": "image/charimg/2026/Q3/BLACK_TORCH/Fuyou.jpg"
-    },
-    {
-      "name": "코우가",
-      "gender": "male",
-      "cv": "오카모토 노부히코",
-      "img": "image/charimg/2026/Q3/BLACK_TORCH/Kouga.jpg"
-    },
-    {
-      "name": "쿠스미 토코",
-      "gender": "female",
-      "cv": "카이다 유코",
-      "img": "image/charimg/2026/Q3/BLACK_TORCH/Touko_Kusumi.jpg"
-    },
-    {
-      "name": "나루코",
-      "gender": "female",
-      "cv": "쿠노 미사키",
-      "img": "image/charimg/2026/Q3/BLACK_TORCH/Naruko.jpg"
-    },
-    {
-      "name": "아마기",
-      "gender": "male",
-      "cv": "모리카와 토시유키",
-      "img": "image/charimg/2026/Q3/BLACK_TORCH/Amagi.jpg"
-    },
-    {
-      "name": "히메츠카 반리",
-      "gender": "female",
-      "cv": "야노 히나키",
-      "img": "image/charimg/2026/Q3/BLACK_TORCH/Banri_Himezuka.jpg"
-    },
-    {
-      "name": "이누이 타케루",
-      "gender": "unknown",
-      "cv": "하마노 다이키",
-      "img": "image/charimg/2026/Q3/BLACK_TORCH/Takeru_Inui.jpg"
-    },
-    {
-      "name": "이부키 ",
-      "gender": "female",
-      "cv": "Unknown",
-      "img": "image/charimg/2026/Q3/BLACK_TORCH/Ibuki.jpg"
-    },
-    {
-      "name": "아즈마 토시마사",
-      "gender": "male",
-      "cv": "츠지 신파치",
-      "img": "image/charimg/2026/Q3/BLACK_TORCH/Toshimasa_Azuma.jpg"
-    },
-    {
-      "name": "로렌",
-      "gender": "unknown",
-      "cv": "코바야시 치아키",
-      "img": "image/charimg/2026/Q3/BLACK_TORCH/Roren.jpg"
-    },
-    {
-      "name": "토키에다 반쥬로",
-      "gender": "male",
-      "cv": "오오츠카 호츄",
-      "img": "image/charimg/2026/Q3/BLACK_TORCH/Banjuurou_Tokieda.jpg"
-    },
-    {
-      "name": "키리하라 신지",
-      "gender": "unknown",
-      "cv": "이시카와 카이토",
-      "img": "image/charimg/2026/Q3/BLACK_TORCH/Shinji_Kirihara.jpg"
-    },
-    {
-      "name": "카나데",
-      "gender": "female",
-      "cv": "유즈키 료카",
-      "img": "image/charimg/2026/Q3/BLACK_TORCH/Kanade_Kishichimojin.jpg"
-    },
-    {
-      "name": "니시나",
-      "gender": "unknown",
-      "cv": "시마부쿠로 미유리",
-      "img": "image/charimg/2026/Q3/BLACK_TORCH/Nishina.jpg"
-    },
-    {
-      "name": "카나와",
-      "gender": "unknown",
-      "cv": "이나다 테츠",
-      "img": "image/charimg/2026/Q3/BLACK_TORCH/Tetsuwa.jpg"
-    },
-    {
-      "name": "키리하라",
-      "gender": "unknown",
-      "cv": "야스무라 마코토",
-      "img": "image/charimg/2026/Q3/BLACK_TORCH/Kirihara.jpg"
-    }
-  ]
-},
-{
-  "id": 63324,
-  "characters": [
-    {
-      "name": "이와모토 코도",
-      "gender": "male",
-      "cv": "반 타이토",
-      "img": "image/charimg/2026/Q3/Iwamoto-senpai_no_Suisen/Kodou_Iwamoto.jpg"
-    },
-    {
-      "name": "하라마치 카이",
-      "gender": "male",
-      "cv": "사카키하라 유우키",
-      "img": "image/charimg/2026/Q3/Iwamoto-senpai_no_Suisen/Kai_Haramachi.jpg"
-    },
-    {
-      "name": "아마바 소이치로",
-      "gender": "male",
-      "cv": "이토 켄토",
-      "img": "image/charimg/2026/Q3/Iwamoto-senpai_no_Suisen/Souichirou_Amaha.jpg"
-    },
-    {
-      "name": "키츠죠 보쿄",
-      "gender": "male",
-      "cv": "이시다 아키라",
-      "img": "image/charimg/2026/Q3/Iwamoto-senpai_no_Suisen/Boukyo_Kizujou.jpg"
-    },
-    {
-      "name": "오쿠아키 오니",
-      "gender": "male",
-      "cv": "후쿠니시 마사야",
-      "img": "image/charimg/2026/Q3/Iwamoto-senpai_no_Suisen/Oni_Okuaki.jpg"
-    },
-    {
-      "name": "아오누마 시즈마",
-      "gender": "male",
-      "cv": "나가츠카 타쿠마",
-      "img": "image/charimg/2026/Q3/Iwamoto-senpai_no_Suisen/Shizuma_Aonuma.jpg"
-    },
-    {
-      "name": "사자메 류우우",
-      "gender": "male",
-      "cv": "사토 겐",
-      "img": "image/charimg/2026/Q3/Iwamoto-senpai_no_Suisen/Ryuu_Sazame.jpg"
-    },
-    {
-      "name": "아와다마 미즈히",
-      "gender": "male",
-      "cv": "토쿠도메 신노스케",
-      "img": "image/charimg/2026/Q3/Iwamoto-senpai_no_Suisen/Mizuhi_Awadama.jpg"
-    }
-  ]
-},
-{
-  "id": 60636,
-  "characters": [
-    {
-      "name": "쿠로사키 이치고",
-      "gender": "male",
-      "cv": "모리타 마사카즈",
-      "img": "image/charimg/2026/Q3/BLEACH_Sennen_Kessen-hen_-_Kashin-tan/Ichigo_Kurosaki.jpg"
-    },
-    {
-      "name": "이노우에 오리히메",
-      "gender": "female",
-      "cv": "마츠오카 유키",
-      "img": "image/charimg/2026/Q3/BLEACH_Sennen_Kessen-hen_-_Kashin-tan/Orihime_Inoue.jpg"
-    },
-    {
-      "name": "이시다 우류",
-      "gender": "male",
-      "cv": "스기야마 노리아키",
-      "img": "image/charimg/2026/Q3/BLEACH_Sennen_Kessen-hen_-_Kashin-tan/Uryuu_Ishida.jpg"
-    },
-    {
-      "name": "사도 야스토라",
-      "gender": "male",
-      "cv": "야스모토 히로키",
-      "img": "image/charimg/2026/Q3/BLEACH_Sennen_Kessen-hen_-_Kashin-tan/Yasutora_Sado.jpg"
-    },
-    {
-      "name": "시호인 요루이치",
-      "gender": "female",
-      "cv": "유키노 사츠키",
-      "img": "image/charimg/2026/Q3/BLEACH_Sennen_Kessen-hen_-_Kashin-tan/Yoruichi_Shihouin.jpg"
-    },
-    {
-      "name": "유하바하",
-      "gender": "male",
-      "cv": "스고 타카유키",
-      "img": "image/charimg/2026/Q3/BLEACH_Sennen_Kessen-hen_-_Kashin-tan/Yhwach.jpg"
-    },
-    {
-      "name": "유그람 하쉬발트",
-      "gender": "male",
-      "cv": "우메하라 유이치로",
-      "img": "image/charimg/2026/Q3/BLEACH_Sennen_Kessen-hen_-_Kashin-tan/Jugram_Haschwalth.jpg"
-    },
-    {
-      "name": "시바 간쥬",
-      "gender": "male",
-      "cv": "타카기 와타루",
-      "img": "image/charimg/2026/Q3/BLEACH_Sennen_Kessen-hen_-_Kashin-tan/Ganju_Shiba.jpg"
-    },
-    {
-      "name": "우라하라 키스케",
-      "gender": "male",
-      "cv": "미키 신이치로",
-      "img": "image/charimg/2026/Q3/BLEACH_Sennen_Kessen-hen_-_Kashin-tan/Kisuke_Urahara.jpg"
-    },
-    {
-      "name": "히츠가야 토시로",
-      "gender": "male",
-      "cv": "박로미",
-      "img": "image/charimg/2026/Q3/BLEACH_Sennen_Kessen-hen_-_Kashin-tan/Toushirou_Hitsugaya.jpg"
-    },
-    {
-      "name": "쿠치키 뱌쿠야",
-      "gender": "male",
-      "cv": "오키아유 료타로",
-      "img": "image/charimg/2026/Q3/BLEACH_Sennen_Kessen-hen_-_Kashin-tan/Byakuya_Kuchiki.jpg"
-    },
-    {
-      "name": "자라키 켄파치",
-      "gender": "male",
-      "cv": "타치키 후미히코",
-      "img": "image/charimg/2026/Q3/BLEACH_Sennen_Kessen-hen_-_Kashin-tan/Kenpachi_Zaraki.jpg"
-    },
-    {
-      "name": "티아 하리벨",
-      "gender": "female",
-      "cv": "오가타 메구미",
-      "img": "image/charimg/2026/Q3/BLEACH_Sennen_Kessen-hen_-_Kashin-tan/Tier_Harribel.jpg"
-    },
-    {
-      "name": "아스킨 나크 르 바르",
-      "gender": "male",
-      "cv": "타케우치 슌스케",
-      "img": "image/charimg/2026/Q3/BLEACH_Sennen_Kessen-hen_-_Kashin-tan/Askin_Nakk_Le_Vaar.jpg"
-    },
-    {
-      "name": "제라드 발키리",
-      "gender": "male",
-      "cv": "코야마 츠요시",
-      "img": "image/charimg/2026/Q3/BLEACH_Sennen_Kessen-hen_-_Kashin-tan/Gerard_Valkyrie.jpg"
-    },
-    {
-      "name": "쿠치키 루키아",
-      "gender": "female",
-      "cv": "오리카사 후미코",
-      "img": "image/charimg/2026/Q3/BLEACH_Sennen_Kessen-hen_-_Kashin-tan/Rukia_Kuchiki.jpg"
-    }
-  ]
-},
-{
-  "id": 61483,
-  "characters": [
-    {
-      "name": "시타라",
-      "gender": "female",
-      "cv": "세키네 아키라",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Sitara.jpg"
-    },
-    {
-      "name": "주치",
-      "gender": "male",
-      "cv": "노지마 켄지",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Jochi.jpg"
-    },
-    {
-      "name": "다이르 우순",
-      "gender": "male",
-      "cv": "이시다 아키라",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Dayir.jpg"
-    },
-    {
-      "name": "수베게데이",
-      "gender": "male",
-      "cv": "사쿠마 모토키",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Sübeedei.jpg"
-    },
-    {
-      "name": "툴루이",
-      "gender": "male",
-      "cv": "스즈키 료타",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Tolui.jpg"
-    },
-    {
-      "name": "모게",
-      "gender": "female",
-      "cv": "아사이 아야카",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Möge.jpg"
-    },
-    {
-      "name": "테무게",
-      "gender": "male",
-      "cv": "카와다 신지",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Temüge.jpg"
-    },
-    {
-      "name": "쿨란",
-      "gender": "female",
-      "cv": "미나세 이노리",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Khulan.jpg"
-    },
-    {
-      "name": "퇴레게네",
-      "gender": "female",
-      "cv": "코시미즈 아미",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Töregene.jpg"
-    },
-    {
-      "name": "아니스",
-      "gender": "female",
-      "cv": "이세 마리야",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Anis.jpg"
-    },
-    {
-      "name": "키르기스타니",
-      "gender": "female",
-      "cv": "신타니 마유미",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Kirgistani.jpg"
-    },
-    {
-      "name": "훌라구",
-      "gender": "male",
-      "cv": "무라세 아유무",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Hülegü.jpg"
-    },
-    {
-      "name": "카다크",
-      "gender": "male",
-      "cv": "누마타 유스케",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Qadaq.jpg"
-    },
-    {
-      "name": "쿠르트간",
-      "gender": "male",
-      "cv": "치바 쇼야",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Qultuqan.jpg"
-    },
-    {
-      "name": "오타이",
-      "gender": "male",
-      "cv": "우치다 슈이치",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Otai.jpg"
-    },
-    {
-      "name": "파티마",
-      "gender": "female",
-      "cv": "쿠와시마 호우코",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Fatima.jpg"
-    },
-    {
-      "name": "외숙부",
-      "gender": "male",
-      "cv": "모가미 츠구오",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Oji.jpg"
-    },
-    {
-      "name": "소르칵타니 베키",
-      "gender": "female",
-      "cv": "쿠노 미사키",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Sorghaghtani_Beki.jpg"
-    },
-    {
-      "name": "쿠빌라이",
-      "gender": "male",
-      "cv": "이시바시 히이로",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Kublai.jpg"
-    },
-    {
-      "name": "쿠르트간의 형",
-      "gender": "male",
-      "cv": "unknown",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Qultuqan_no_Ani.jpg"
-    },
-    {
-      "name": "오르다",
-      "gender": "male",
-      "cv": "사토 마사유키",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Uurda.jpg"
-    },
-    {
-      "name": "실라",
-      "gender": "male",
-      "cv": "이리노 미유",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Shira.jpg"
-    },
-    {
-      "name": "보락친",
-      "gender": "female",
-      "cv": "쿠지라",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Boraqchin.jpg"
-    },
-    {
-      "name": "이르케",
-      "gender": "male",
-      "cv": "마미야 야스히로",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Ilke.jpg"
-    },
-    {
-      "name": "바투",
-      "gender": "male",
-      "cv": "호리카네 소헤이",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Batu.jpg"
-    },
-    {
-      "name": "무함마드",
-      "gender": "male",
-      "cv": "사이토 준",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Muhammad.jpg"
-    },
-    {
-      "name": "カマルッディーン",
-      "gender": "male",
-      "cv": "마에다 히로키",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Kamal_al-Din.jpg"
-    },
-    {
-      "name": "친카이",
-      "gender": "male",
-      "cv": "우에다 요지",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Chinqai.jpg"
-    },
-    {
-      "name": "오고타이",
-      "gender": "male",
-      "cv": "시모노 히로",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Ögedei.jpg"
-    },
-    {
-      "name": "차가타이",
-      "gender": "male",
-      "cv": "나미카와 다이스케",
-      "img": "image/charimg/2026/Q3/Tenmaku_no_Jaadugar/Chagatai.jpg"
-    }
-  ]
-},
-{
-  "id": 62001,
-  "characters": [
-    {
-      "name": "유르",
-      "gender": "male",
-      "cv": "오노 켄쇼",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Yuru.jpg"
-    },
-    {
-      "name": "아사",
-      "gender": "female",
-      "cv": "미야모토 유메",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Asa.jpg"
-    },
-    {
-      "name": "왼쪽",
-      "gender": "female",
-      "cv": "혼다 타카코",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Hidari.jpg"
-    },
-    {
-      "name": "오른쪽",
-      "gender": "male",
-      "cv": "코야마 리키야",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Migi.jpg"
-    },
-    {
-      "name": "타데라 류",
-      "gender": "male",
-      "cv": "나카무라 유이치",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Ryuu_Tadera.jpg"
-    },
-    {
-      "name": "타데라 켄",
-      "gender": "male",
-      "cv": "후지와라 나츠미",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Ken_Tadera.jpg"
-    },
-    {
-      "name": "단노 하나",
-      "gender": "female",
-      "cv": "시마부쿠로 미유리",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Hana_Danno.jpg"
-    },
-    {
-      "name": "가브짱",
-      "gender": "female",
-      "cv": "쿠노 미사키",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Gabby.jpg"
-    },
-    {
-      "name": "카게모리 진",
-      "gender": "male",
-      "cv": "스와베 준이치",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Jin_Kagemori.jpg"
-    },
-    {
-      "name": "가짜 아사",
-      "gender": "female",
-      "cv": "미야모토 유메",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Nise_Asa.jpg"
-    },
-    {
-      "name": "단지",
-      "gender": "male",
-      "cv": "오오사카 료타",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Danji.jpg"
-    },
-    {
-      "name": "야마하",
-      "gender": "female",
-      "cv": "아리마 미즈카",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Yamaha.jpg"
-    },
-    {
-      "name": "미네",
-      "gender": "male",
-      "cv": "우치다 유야",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Mine.jpg"
-    },
-    {
-      "name": "킨죠 나기사",
-      "gender": "female",
-      "cv": "오오니시 사오리",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Nagisa_Kinjou.jpg"
-    },
-    {
-      "name": "아자미",
-      "gender": "female",
-      "cv": "안자이 유카리",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Azami.jpg"
-    },
-    {
-      "name": "쿄카",
-      "gender": "female",
-      "cv": "사쿠라바 아리사",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Kyouka.jpg"
-    },
-    {
-      "name": "오시라 님",
-      "gender": "female",
-      "cv": "하야미 사오리",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Oshirasama.jpg"
-    },
-    {
-      "name": "카게모리 곤조",
-      "gender": "male",
-      "cv": "이와사키 히로시",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Gonzo_Kagemori.jpg"
-    },
-    {
-      "name": "카게모리 히카루",
-      "gender": "male",
-      "cv": "야마구치 캇페이",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Hikaru_Kagemori.jpg"
-    },
-    {
-      "name": "카게모리 아스마",
-      "gender": "male",
-      "cv": "이시다 아키라",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Asuma_Kagemori.jpg"
-    },
-    {
-      "name": "쿠로야 하루오",
-      "gender": "male",
-      "cv": "우라 카즈키",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Haruo_Kuroya.jpg"
-    },
-    {
-      "name": "사쿠라자와 선생",
-      "gender": "female",
-      "cv": "우치야마 유미",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Sakurazawa.jpg"
-    },
-    {
-      "name": "요사노 이반",
-      "gender": "male",
-      "cv": "미키 신이치로",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Ivan_Yosano.jpg"
-    },
-    {
-      "name": "타치카와 마코토",
-      "gender": "female",
-      "cv": "콘도 레이나",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Makoto_Tachikawa.jpg"
-    },
-    {
-      "name": "하무라 켄이치",
-      "gender": "male",
-      "cv": "오카와 하야타",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Kenichi_Hamura.jpg"
-    },
-    {
-      "name": "아키시마",
-      "gender": "male",
-      "cv": "니시자와 료",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Akishima.jpg"
-    },
-    {
-      "name": "해",
-      "gender": "unknown",
-      "cv": "사카키바라 요시코",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Kai.jpg"
-    },
-    {
-      "name": "쿠로야 나츠키",
-      "gender": "female",
-      "cv": "시마무라 유",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Natsuki_Kuroya.jpg"
-    },
-    {
-      "name": "쿠로야 후유키",
-      "gender": "male",
-      "cv": "후지이 하야토",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Fuyuki_Kuroya.jpg"
-    },
-    {
-      "name": "아주머니 자객",
-      "gender": "female",
-      "cv": "사이토 키미코",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Chuunen_Onna.jpg"
-    },
-    {
-      "name": "테나가",
-      "gender": "unknown",
-      "cv": "마야마 아코",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Tenaga.jpg"
-    },
-    {
-      "name": "아시나가",
-      "gender": "unknown",
-      "cv": "치바 시게루",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Ashinaga.jpg"
-    },
-    {
-      "name": "신고 하야토",
-      "gender": "male",
-      "cv": "사토 세츠지",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Hayato_Shingo.jpg"
-    },
-    {
-      "name": "야마",
-      "gender": "male",
-      "cv": "키우치 히데노부",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Yama.jpg"
-    },
-    {
-      "name": "외할머니",
-      "gender": "female",
-      "cv": "이소베 마사코",
-      "img": "image/charimg/2026/Q3/Yomi_no_Tsugai/Asa_no_Sobo.jpg"
-    }
-  ]
-},
-{
-  "id": 62051,
-  "characters": [
-    {
-      "name": "츠루마키 미즈카",
-      "gender": "female",
-      "cv": "노다 토모카",
-      "img": "image/charimg/2026/Q3/Grow_Up_Show_Himawari_no_Circus-dan/Mizuka_Tsurumaki.jpg"
-    },
-    {
-      "name": "카와스미 오우카",
-      "gender": "female",
-      "cv": "쿠로사키 시오리",
-      "img": "image/charimg/2026/Q3/Grow_Up_Show_Himawari_no_Circus-dan/Ouka_Kawasumi.jpg"
-    },
-    {
-      "name": "아가노 이마리",
-      "gender": "female",
-      "cv": "오사나이 레오",
-      "img": "image/charimg/2026/Q3/Grow_Up_Show_Himawari_no_Circus-dan/Imari_Agano.jpg"
-    },
-    {
-      "name": "이카즈치 이스즈",
-      "gender": "female",
-      "cv": "안도 나나코",
-      "img": "image/charimg/2026/Q3/Grow_Up_Show_Himawari_no_Circus-dan/Isuzu_Ikazuchi.jpg"
-    },
-    {
-      "name": "유라 아오이",
-      "gender": "female",
-      "cv": "쿠스노키 토모리",
-      "img": "image/charimg/2026/Q3/Grow_Up_Show_Himawari_no_Circus-dan/Aoi_Yura.jpg"
-    },
-    {
-      "name": "유라 아카네",
-      "gender": "female",
-      "cv": "나츠요시 유우코",
-      "img": "image/charimg/2026/Q3/Grow_Up_Show_Himawari_no_Circus-dan/Akane_Yura.jpg"
-    },
-    {
-      "name": "사카와 시즈쿠",
-      "gender": "female",
-      "cv": "카마쿠라 유우나",
-      "img": "image/charimg/2026/Q3/Grow_Up_Show_Himawari_no_Circus-dan/Shizuku_Sakawa.jpg"
-    },
-    {
-      "name": "스베틀라나 로젠 야마다",
-      "gender": "female",
-      "cv": "이와하시 유카",
-      "img": "image/charimg/2026/Q3/Grow_Up_Show_Himawari_no_Circus-dan/Svetlana.jpg"
-    },
-    {
-      "name": "마미야 린",
-      "gender": "female",
-      "cv": "카야노 아이",
-      "img": "image/charimg/2026/Q3/Grow_Up_Show_Himawari_no_Circus-dan/Rin_Mamiya.jpg"
-    },
-    {
-      "name": "마리아",
-      "gender": "female",
-      "cv": "쿠기미야 리에",
-      "img": "image/charimg/2026/Q3/Grow_Up_Show_Himawari_no_Circus-dan/Maria.jpg"
-    },
-    {
-      "name": "스메라기 나나미",
-      "gender": "unknown",
-      "cv": "세키네 아키라",
-      "img": "image/charimg/2026/Q3/Grow_Up_Show_Himawari_no_Circus-dan/Nanami_Sumeragi.jpg"
-    },
-    {
-      "name": "츠루마키 지사부로",
-      "gender": "male",
-      "cv": "야마구치 요시유키",
-      "img": "image/charimg/2026/Q3/Grow_Up_Show_Himawari_no_Circus-dan/Black_Lotus.jpg"
-    },
-    {
-      "name": "金剛寺睦美",
-      "gender": "female",
-      "cv": "스즈키 에리",
-      "img": "image/charimg/2026/Q3/Grow_Up_Show_Himawari_no_Circus-dan/Mutsumi_Kongouji.jpg"
-    },
-    {
-      "name": "시라하마 카스미",
-      "gender": "female",
-      "cv": "미조노 츠무기",
-      "img": "image/charimg/2026/Q3/Grow_Up_Show_Himawari_no_Circus-dan/Kasumi_Shirahama.jpg"
-    },
-    {
-      "name": "에이든 제트 미처",
-      "gender": "male",
-      "cv": "스와베 준이치",
-      "img": "image/charimg/2026/Q3/Grow_Up_Show_Himawari_no_Circus-dan/Aiden_Mitscher.jpg"
-    },
-    {
-      "name": "시노",
-      "gender": "female",
-      "cv": "오카모토 마리",
-      "img": "image/charimg/2026/Q3/Grow_Up_Show_Himawari_no_Circus-dan/Shino.jpg"
-    },
-    {
-      "name": "ラフレシア団長",
-      "gender": "female",
-      "cv": "나바타메 히토미",
-      "img": "image/charimg/2026/Q3/Grow_Up_Show_Himawari_no_Circus-dan/Rafflesia_Danchou.jpg"
-    }
-  ]
-},
-{
-  "id": 61814,
-  "characters": [
-    {
-      "name": "키류인 레이야",
-      "gender": "male",
-      "cv": "우메하라 유이치로",
-      "img": "image/charimg/2026/Q3/Oni_no_Hanayome/Reiya_Kiryuuin.jpg"
-    },
-    {
-      "name": "시노노메 유즈",
-      "gender": "female",
-      "cv": "하야미 사오리",
-      "img": "image/charimg/2026/Q3/Oni_no_Hanayome/Yuzu_Shinonome.jpg"
-    },
-    {
-      "name": "시노노메 카린",
-      "gender": "female",
-      "cv": "이와미 마나카",
-      "img": "image/charimg/2026/Q3/Oni_no_Hanayome/Karin_Shinonome.jpg"
-    },
-    {
-      "name": "코게츠 요타",
-      "gender": "male",
-      "cv": "오오사카 료타",
-      "img": "image/charimg/2026/Q3/Oni_no_Hanayome/Youta_Kogetsu.jpg"
-    },
-    {
-      "name": "토코",
-      "gender": "female",
-      "cv": "센본기 사야카",
-      "img": "image/charimg/2026/Q3/Oni_no_Hanayome/Touko.jpg"
-    },
-    {
-      "name": "아오",
-      "gender": "unknown",
-      "cv": "코바시 미유",
-      "img": "image/charimg/2026/Q3/Oni_no_Hanayome/Ao.jpg"
-    },
-    {
-      "name": "소우",
-      "gender": "unknown",
-      "cv": "테라사와 모모카",
-      "img": "image/charimg/2026/Q3/Oni_no_Hanayome/Sou.jpg"
-    },
-    {
-      "name": "네코타 토키치",
-      "gender": "male",
-      "cv": "하나에 나츠키",
-      "img": "image/charimg/2026/Q3/Oni_no_Hanayome/Toukichi_Nekota.jpg"
-    },
-    {
-      "name": "키야마 사쿠라코",
-      "gender": "female",
-      "cv": "엔도 아야",
-      "img": "image/charimg/2026/Q3/Oni_no_Hanayome/Sakurako_Oniyama.jpg"
-    },
-    {
-      "name": "아라키 타카미치",
-      "gender": "male",
-      "cv": "반 타이토",
-      "img": "image/charimg/2026/Q3/Oni_no_Hanayome/Takamichi_Araki.jpg"
-    },
-    {
-      "name": "키야마 오우가",
-      "gender": "male",
-      "cv": "시마자키 노부나가",
-      "img": "image/charimg/2026/Q3/Oni_no_Hanayome/Ouga_Oniyama.jpg"
-    },
-    {
-      "name": "키류인 센야",
-      "gender": "male",
-      "cv": "이시다 아키라",
-      "img": "image/charimg/2026/Q3/Oni_no_Hanayome/Senya_Kiryuuin.jpg"
-    },
-    {
-      "name": "키류인 사라",
-      "gender": "female",
-      "cv": "후쿠엔 미사토",
-      "img": "image/charimg/2026/Q3/Oni_no_Hanayome/Sara_Kiryuuin.jpg"
-    }
-  ]
-},
-{
-  "id": 60552,
-  "characters": [
-    {
-      "name": "시게모토 코지",
-      "gender": "male",
-      "cv": "코야마 리키야",
-      "img": "image/charimg/2026/Q3/Kabushiki_Gaisha_Magi_Lumiere_2nd_Season/Kouji_Shigemoto.jpg"
-    },
-    {
-      "name": "니코야마 카즈오",
-      "gender": "male",
-      "cv": "야마시타 다이키",
-      "img": "image/charimg/2026/Q3/Kabushiki_Gaisha_Magi_Lumiere_2nd_Season/Kazuo_Nikoyama.jpg"
-    },
-    {
-      "name": "사쿠라기 카나",
-      "gender": "female",
-      "cv": "파이루즈 아이",
-      "img": "image/charimg/2026/Q3/Kabushiki_Gaisha_Magi_Lumiere_2nd_Season/Kana_Sakuragi.jpg"
-    },
-    {
-      "name": "미도리카와 카에데",
-      "gender": "male",
-      "cv": "오오사카 료타",
-      "img": "image/charimg/2026/Q3/Kabushiki_Gaisha_Magi_Lumiere_2nd_Season/Kaede_Midorikawa.jpg"
-    },
-    {
-      "name": "코시가야 히토미",
-      "gender": "female",
-      "cv": "히가시우치 마리코",
-      "img": "image/charimg/2026/Q3/Kabushiki_Gaisha_Magi_Lumiere_2nd_Season/Hitomi_Koshigaya.jpg"
-    },
-    {
-      "name": "마키노 아카네",
-      "gender": "female",
-      "cv": "아마미 유리나",
-      "img": "image/charimg/2026/Q3/Kabushiki_Gaisha_Magi_Lumiere_2nd_Season/Akane_Makino.jpg"
-    },
-    {
-      "name": "코가 케이",
-      "gender": "male",
-      "cv": "이시다 아키라",
-      "img": "image/charimg/2026/Q3/Kabushiki_Gaisha_Magi_Lumiere_2nd_Season/Kei_Koga.jpg"
-    },
-    {
-      "name": "니시나",
-      "gender": "male",
-      "cv": "나카 히로시",
-      "img": "image/charimg/2026/Q3/Kabushiki_Gaisha_Magi_Lumiere_2nd_Season/Nishina.jpg"
-    },
-    {
-      "name": "아오이 리리",
-      "gender": "female",
-      "cv": "이시하라 카오리",
-      "img": "image/charimg/2026/Q3/Kabushiki_Gaisha_Magi_Lumiere_2nd_Season/Lily_Aoi.jpg"
-    },
-    {
-      "name": "아카사카 이로하",
-      "gender": "female",
-      "cv": "와타베 사유미",
-      "img": "image/charimg/2026/Q3/Kabushiki_Gaisha_Magi_Lumiere_2nd_Season/Iroha_Akasaka.jpg"
-    },
-    {
-      "name": "마나오 쇼",
-      "gender": "male",
-      "cv": "시라이 유스케",
-      "img": "image/charimg/2026/Q3/Kabushiki_Gaisha_Magi_Lumiere_2nd_Season/Shou_Manao.jpg"
-    },
-    {
-      "name": "만다",
-      "gender": "male",
-      "cv": "타케토라",
-      "img": "image/charimg/2026/Q3/Kabushiki_Gaisha_Magi_Lumiere_2nd_Season/Manda_Shochou.jpg"
-    },
-    {
-      "name": "긴지 하나",
-      "gender": "female",
-      "cv": "코노 히요리",
-      "img": "image/charimg/2026/Q3/Kabushiki_Gaisha_Magi_Lumiere_2nd_Season/Hana_Ginji.jpg"
-    },
-    {
-      "name": "코시가야 켄지",
-      "gender": "male",
-      "cv": "고토 코스케",
-      "img": "image/charimg/2026/Q3/Kabushiki_Gaisha_Magi_Lumiere_2nd_Season/Koshigaya_Choukan.jpg"
-    },
-    {
-      "name": "야미모리 히비키",
-      "gender": "male",
-      "cv": "후쿠니시 마사야",
-      "img": "image/charimg/2026/Q3/Kabushiki_Gaisha_Magi_Lumiere_2nd_Season/Hibiki_Yamimori.jpg"
-    },
-    {
-      "name": "츠치바 메이",
-      "gender": "female",
-      "cv": "안자이 치카",
-      "img": "image/charimg/2026/Q3/Kabushiki_Gaisha_Magi_Lumiere_2nd_Season/Mei_Tsuchiba.jpg"
-    },
-    {
-      "name": "토노모리 사카에",
-      "gender": "female",
-      "cv": "이와미 마나카",
-      "img": "image/charimg/2026/Q3/Kabushiki_Gaisha_Magi_Lumiere_2nd_Season/Sakae_Tounomori.jpg"
-    }
-  ]
-},
-{
-  "id": 60637,
-  "characters": [
-    {
-      "name": "페이트 T. 하라오운",
-      "gender": "female",
-      "cv": "미즈키 나나",
-      "img": "image/charimg/2026/Q3/Mahou_Shoujo_Lyrical_Nanoha_EXCEEDS_Gun_Blaze_Vengeance/Fate_Testarossa.jpg"
-    },
-    {
-      "name": "쿠제 세츠나",
-      "gender": "female",
-      "cv": "히다카 리나",
-      "img": "image/charimg/2026/Q3/Mahou_Shoujo_Lyrical_Nanoha_EXCEEDS_Gun_Blaze_Vengeance/Setsuna_Kuze.jpg"
-    },
-    {
-      "name": "타카마치 나노하",
-      "gender": "female",
-      "cv": "타무라 유카리",
-      "img": "image/charimg/2026/Q3/Mahou_Shoujo_Lyrical_Nanoha_EXCEEDS_Gun_Blaze_Vengeance/Nanoha_Takamachi.jpg"
-    },
-    {
-      "name": "야가미 하야테",
-      "gender": "female",
-      "cv": "우에다 카나",
-      "img": "image/charimg/2026/Q3/Mahou_Shoujo_Lyrical_Nanoha_EXCEEDS_Gun_Blaze_Vengeance/Hayate_Yagami.jpg"
-    },
-    {
-      "name": "쿠제 시이나",
-      "gender": "female",
-      "cv": "타치바나 아즈사",
-      "img": "image/charimg/2026/Q3/Mahou_Shoujo_Lyrical_Nanoha_EXCEEDS_Gun_Blaze_Vengeance/Shiina_Kuze.jpg"
-    },
-    {
-      "name": "키타모리 유우나",
-      "gender": "female",
-      "cv": "코바야시 아이카",
-      "img": "image/charimg/2026/Q3/Mahou_Shoujo_Lyrical_Nanoha_EXCEEDS_Gun_Blaze_Vengeance/Yuuna_Kitamori.jpg"
-    },
-    {
-      "name": "시노미야 마나",
-      "gender": "female",
-      "cv": "우에사카 스미레",
-      "img": "image/charimg/2026/Q3/Mahou_Shoujo_Lyrical_Nanoha_EXCEEDS_Gun_Blaze_Vengeance/Mana_Shinomiya.jpg"
-    },
-    {
-      "name": "니이나 아오이",
-      "gender": "female",
-      "cv": "이토 아야사",
-      "img": "image/charimg/2026/Q3/Mahou_Shoujo_Lyrical_Nanoha_EXCEEDS_Gun_Blaze_Vengeance/Aoi_Niina.jpg"
-    },
-    {
-      "name": "레이징하트",
-      "gender": "unknown",
-      "cv": "오가타 유나",
-      "img": "image/charimg/2026/Q3/Mahou_Shoujo_Lyrical_Nanoha_EXCEEDS_Gun_Blaze_Vengeance/Raising_Heart.jpg"
-    },
-    {
-      "name": "요루미 토와",
-      "gender": "female",
-      "cv": "유이카와 아사키",
-      "img": "image/charimg/2026/Q3/Mahou_Shoujo_Lyrical_Nanoha_EXCEEDS_Gun_Blaze_Vengeance/Towa_Yorumi.jpg"
-    },
-    {
-      "name": "바르디슈",
-      "gender": "male",
-      "cv": "사토 아키나리",
-      "img": "image/charimg/2026/Q3/Mahou_Shoujo_Lyrical_Nanoha_EXCEEDS_Gun_Blaze_Vengeance/Bardiche.jpg"
-    },
-    {
-      "name": "아이자와 시오리",
-      "gender": "female",
-      "cv": "치하루",
-      "img": "image/charimg/2026/Q3/Mahou_Shoujo_Lyrical_Nanoha_EXCEEDS_Gun_Blaze_Vengeance/Shiori_Aizawa.jpg"
-    },
-    {
-      "name": "코데라 유즈",
-      "gender": "female",
-      "cv": "아오키 히나",
-      "img": "image/charimg/2026/Q3/Mahou_Shoujo_Lyrical_Nanoha_EXCEEDS_Gun_Blaze_Vengeance/Yuzu_Kodera.jpg"
-    }
-  ]
-},
-{
-  "id": 63537,
-  "characters": [
-    {
-      "name": "엘사 유카라이넨",
-      "gender": "female",
-      "cv": "이시카와 유이",
-      "img": "image/charimg/2026/Q3/Kimi_wo_Aisuru_Ki_wa_nai_to_Itta_Jiki_Koushaku-sama_ga_Naze_ka_Dekiai_Shitekimasu/Elsa_Jukarainen.jpg"
-    },
-    {
-      "name": "율리우스 로이아스",
-      "gender": "male",
-      "cv": "사이토 소마",
-      "img": "image/charimg/2026/Q3/Kimi_wo_Aisuru_Ki_wa_nai_to_Itta_Jiki_Koushaku-sama_ga_Naze_ka_Dekiai_Shitekimasu/Julius_Roias.jpg"
-    },
-    {
-      "name": "루카스 유카라이넨",
-      "gender": "male",
-      "cv": "나미카와 다이스케",
-      "img": "image/charimg/2026/Q3/Kimi_wo_Aisuru_Ki_wa_nai_to_Itta_Jiki_Koushaku-sama_ga_Naze_ka_Dekiai_Shitekimasu/Lukas_Jukarainen.jpg"
-    },
-    {
-      "name": "소피아 유카라이넨",
-      "gender": "female",
-      "cv": "코우다 마리코",
-      "img": "image/charimg/2026/Q3/Kimi_wo_Aisuru_Ki_wa_nai_to_Itta_Jiki_Koushaku-sama_ga_Naze_ka_Dekiai_Shitekimasu/Sofia_Jukarainen.jpg"
-    },
-    {
-      "name": "세라피나 팔니라",
-      "gender": "female",
-      "cv": "안자이 치카",
-      "img": "image/charimg/2026/Q3/Kimi_wo_Aisuru_Ki_wa_nai_to_Itta_Jiki_Koushaku-sama_ga_Naze_ka_Dekiai_Shitekimasu/Serafina_Parnilla.jpg"
-    },
-    {
-      "name": "타냐",
-      "gender": "female",
-      "cv": "우치다 마아야",
-      "img": "image/charimg/2026/Q3/Kimi_wo_Aisuru_Ki_wa_nai_to_Itta_Jiki_Koushaku-sama_ga_Naze_ka_Dekiai_Shitekimasu/Tanja.jpg"
-    },
-    {
-      "name": "야르모 팔니라",
-      "gender": "male",
-      "cv": "이시카와 카이토",
-      "img": "image/charimg/2026/Q3/Kimi_wo_Aisuru_Ki_wa_nai_to_Itta_Jiki_Koushaku-sama_ga_Naze_ka_Dekiai_Shitekimasu/Yarmo_Parnilla.jpg"
-    },
-    {
-      "name": "스팀",
-      "gender": "male",
-      "cv": "타무라 마코토",
-      "img": "image/charimg/2026/Q3/Kimi_wo_Aisuru_Ki_wa_nai_to_Itta_Jiki_Koushaku-sama_ga_Naze_ka_Dekiai_Shitekimasu/Stim.jpg"
-    },
-    {
-      "name": "레베카 리코넨",
-      "gender": "female",
-      "cv": "야마무라 히비쿠",
-      "img": "image/charimg/2026/Q3/Kimi_wo_Aisuru_Ki_wa_nai_to_Itta_Jiki_Koushaku-sama_ga_Naze_ka_Dekiai_Shitekimasu/Rebecca_Rikkonen.jpg"
-    },
-    {
-      "name": "한네스 유카라이넨",
-      "gender": "male",
-      "cv": "에노키 준야",
-      "img": "image/charimg/2026/Q3/Kimi_wo_Aisuru_Ki_wa_nai_to_Itta_Jiki_Koushaku-sama_ga_Naze_ka_Dekiai_Shitekimasu/Hannes_Jukarainen.jpg"
-    },
-    {
-      "name": "알렉시스 요세프 랄트",
-      "gender": "male",
-      "cv": "키무라 료헤이",
-      "img": "image/charimg/2026/Q3/Kimi_wo_Aisuru_Ki_wa_nai_to_Itta_Jiki_Koushaku-sama_ga_Naze_ka_Dekiai_Shitekimasu/Aleksis_Josef_Ralt.jpg"
-    },
-    {
-      "name": "옐레 에클루스",
-      "gender": "male",
-      "cv": "스즈키 료타",
-      "img": "image/charimg/2026/Q3/Kimi_wo_Aisuru_Ki_wa_nai_to_Itta_Jiki_Koushaku-sama_ga_Naze_ka_Dekiai_Shitekimasu/Jere_Ekrous.jpg"
-    }
-  ]
-},
-{
-  "id": 62535,
-  "characters": [
-    {
-      "name": "나루카미 류세이",
-      "gender": "male",
-      "cv": "후쿠야마 쥰",
-      "img": "image/charimg/2026/Q3/Hanaori-san_wa_Tensei_Shite_mo_Kenka_ga_Shitai/Ryuusei_Narukami.jpg"
-    },
-    {
-      "name": "하나오리 미티어",
-      "gender": "female",
-      "cv": "세키네 아키라",
-      "img": "image/charimg/2026/Q3/Hanaori-san_wa_Tensei_Shite_mo_Kenka_ga_Shitai/Meteor_Hanaori.jpg"
-    },
-    {
-      "name": "아사히나 에리코",
-      "gender": "female",
-      "cv": "이가라시 히로미",
-      "img": "image/charimg/2026/Q3/Hanaori-san_wa_Tensei_Shite_mo_Kenka_ga_Shitai/Eriko_Asahina.jpg"
-    },
-    {
-      "name": "나루카미 모에",
-      "gender": "female",
-      "cv": "이토 아야사",
-      "img": "image/charimg/2026/Q3/Hanaori-san_wa_Tensei_Shite_mo_Kenka_ga_Shitai/Moe_Narukami.jpg"
-    },
-    {
-      "name": "나가모리 마츠리카",
-      "gender": "female",
-      "cv": "우에다 히토미",
-      "img": "image/charimg/2026/Q3/Hanaori-san_wa_Tensei_Shite_mo_Kenka_ga_Shitai/Marika_Nagamori.jpg"
-    },
-    {
-      "name": "츠무기나 에루",
-      "gender": "female",
-      "cv": "우치다 마아야",
-      "img": "image/charimg/2026/Q3/Hanaori-san_wa_Tensei_Shite_mo_Kenka_ga_Shitai/Meru_Tsumugina.jpg"
-    },
-    {
-      "name": "사츠키 마코",
-      "gender": "female",
-      "cv": "호시키 세에나",
-      "img": "image/charimg/2026/Q3/Hanaori-san_wa_Tensei_Shite_mo_Kenka_ga_Shitai/Mako_Satsuki.jpg"
-    },
-    {
-      "name": "쿠라이시 마나",
-      "gender": "female",
-      "cv": "토쿠이 소라",
-      "img": "image/charimg/2026/Q3/Hanaori-san_wa_Tensei_Shite_mo_Kenka_ga_Shitai/Mana_Kuraishi.jpg"
-    },
-    {
-      "name": "타키가와 민토",
-      "gender": "female",
-      "cv": "히에다 네네",
-      "img": "image/charimg/2026/Q3/Hanaori-san_wa_Tensei_Shite_mo_Kenka_ga_Shitai/Minto_Takigawa.jpg"
-    },
-    {
-      "name": "로쿠도 사쿠라",
-      "gender": "female",
-      "cv": "히카사 요코",
-      "img": "image/charimg/2026/Q3/Hanaori-san_wa_Tensei_Shite_mo_Kenka_ga_Shitai/Sakura_Rokudo.jpg"
-    },
-    {
-      "name": "타카나시 아야메",
-      "gender": "female",
-      "cv": "타카하시 리에",
-      "img": "image/charimg/2026/Q3/Hanaori-san_wa_Tensei_Shite_mo_Kenka_ga_Shitai/Ayahime_Takanashi.jpg"
-    }
-  ]
-},
-{
-  "id": 62876,
-  "characters": [
-    {
-      "name": "코노하나 히나코",
-      "gender": "female",
-      "cv": "코하라 코노미",
-      "img": "image/charimg/2026/Q3/Saijo_no_Osewa_Takane_no_Hanadarake_na_Meimonkou_de,_Gakuin_Ichi_no_Ojou-sama_(Seikatsu_Nouryoku_Kaimu)_wo_Kagenagara_Osewa_suru_Koto_ni_Narimashita/Hinako_Konohana.jpg"
-    },
-    {
-      "name": "토모나리 이츠키",
-      "gender": "male",
-      "cv": "우에무라 유토",
-      "img": "image/charimg/2026/Q3/Saijo_no_Osewa_Takane_no_Hanadarake_na_Meimonkou_de,_Gakuin_Ichi_no_Ojou-sama_(Seikatsu_Nouryoku_Kaimu)_wo_Kagenagara_Osewa_suru_Koto_ni_Narimashita/Itsuki_Tomonari.jpg"
-    },
-    {
-      "name": "텐노지 미레이",
-      "gender": "female",
-      "cv": "오오니시 사오리",
-      "img": "image/charimg/2026/Q3/Saijo_no_Osewa_Takane_no_Hanadarake_na_Meimonkou_de,_Gakuin_Ichi_no_Ojou-sama_(Seikatsu_Nouryoku_Kaimu)_wo_Kagenagara_Osewa_suru_Koto_ni_Narimashita/Mirei_Tennouji.jpg"
-    },
-    {
-      "name": "타이쇼 카츠야",
-      "gender": "male",
-      "cv": "쿠마가이 켄타로",
-      "img": "image/charimg/2026/Q3/Saijo_no_Osewa_Takane_no_Hanadarake_na_Meimonkou_de,_Gakuin_Ichi_no_Ojou-sama_(Seikatsu_Nouryoku_Kaimu)_wo_Kagenagara_Osewa_suru_Koto_ni_Narimashita/Katsuya_Taishou.jpg"
-    },
-    {
-      "name": "미야코지마 나리카",
-      "gender": "female",
-      "cv": "츠치야 리오",
-      "img": "image/charimg/2026/Q3/Saijo_no_Osewa_Takane_no_Hanadarake_na_Meimonkou_de,_Gakuin_Ichi_no_Ojou-sama_(Seikatsu_Nouryoku_Kaimu)_wo_Kagenagara_Osewa_suru_Koto_ni_Narimashita/Narika_Miyakojima.jpg"
-    },
-    {
-      "name": "아사히 카렌",
-      "gender": "female",
-      "cv": "마에시마 아미",
-      "img": "image/charimg/2026/Q3/Saijo_no_Osewa_Takane_no_Hanadarake_na_Meimonkou_de,_Gakuin_Ichi_no_Ojou-sama_(Seikatsu_Nouryoku_Kaimu)_wo_Kagenagara_Osewa_suru_Koto_ni_Narimashita/Asahi_Karen.jpg"
-    },
-    {
-      "name": "코노하나 카겐",
-      "gender": "male",
-      "cv": "코야스 타케히토",
-      "img": "image/charimg/2026/Q3/Saijo_no_Osewa_Takane_no_Hanadarake_na_Meimonkou_de,_Gakuin_Ichi_no_Ojou-sama_(Seikatsu_Nouryoku_Kaimu)_wo_Kagenagara_Osewa_suru_Koto_ni_Narimashita/Kagen_Konohana.jpg"
-    },
-    {
-      "name": "츠루미 시즈네",
-      "gender": "female",
-      "cv": "코시미즈 아미",
-      "img": "image/charimg/2026/Q3/Saijo_no_Osewa_Takane_no_Hanadarake_na_Meimonkou_de,_Gakuin_Ichi_no_Ojou-sama_(Seikatsu_Nouryoku_Kaimu)_wo_Kagenagara_Osewa_suru_Koto_ni_Narimashita/Shizune_Tsurumi.jpg"
-    }
-  ]
-},
-{
-  "id": 62683,
-  "characters": [
-    {
-      "name": "주인공",
-      "gender": "male",
-      "cv": "하타나카 타스쿠",
-      "img": "image/charimg/2026/Q3/Let's_Go_Kaikigumi/Shujinkou.jpg"
-    },
-    {
-      "name": "메챠코",
-      "gender": "female",
-      "cv": "아오키 루리코",
-      "img": "image/charimg/2026/Q3/Let's_Go_Kaikigumi/Mechako.jpg"
-    },
-    {
-      "name": "저주받은 인형",
-      "gender": "unknown",
-      "cv": "신타니 마유미",
-      "img": "image/charimg/2026/Q3/Let's_Go_Kaikigumi/Noroi_no_Ningyou.jpg"
-    },
-    {
-      "name": "슈라코",
-      "gender": "female",
-      "cv": "아오야마 요시노",
-      "img": "image/charimg/2026/Q3/Let's_Go_Kaikigumi/Shurako.jpg"
-    },
-    {
-      "name": "도플갱어",
-      "gender": "male",
-      "cv": "사카키하라 유우키",
-      "img": "image/charimg/2026/Q3/Let's_Go_Kaikigumi/Doppelganger.jpg"
-    },
-    {
-      "name": "유킨코",
-      "gender": "female",
-      "cv": "하나자와 카나",
-      "img": "image/charimg/2026/Q3/Let's_Go_Kaikigumi/Yukinko.jpg"
-    },
-    {
-      "name": "坊主",
-      "gender": "male",
-      "cv": "시라이시 켄토",
-      "img": "image/charimg/2026/Q3/Let's_Go_Kaikigumi/Bouzu.jpg"
-    },
-    {
-      "name": "도깨비불",
-      "gender": "unknown",
-      "cv": "코바야시 다이키",
-      "img": "image/charimg/2026/Q3/Let's_Go_Kaikigumi/Onibi.jpg"
-    },
-    {
-      "name": "빨간 훈도시",
-      "gender": "male",
-      "cv": "히야마 노부유키",
-      "img": "image/charimg/2026/Q3/Let's_Go_Kaikigumi/Akai_Fundoshi_no_Otoko.jpg"
-    },
-    {
-      "name": "사인폴",
-      "gender": "unknown",
-      "cv": "우치다 유야",
-      "img": "image/charimg/2026/Q3/Let's_Go_Kaikigumi/Sign_Pole.jpg"
-    },
-    {
-      "name": "볶음밥 유령",
-      "gender": "unknown",
-      "cv": "카네다 토모코",
-      "img": "image/charimg/2026/Q3/Let's_Go_Kaikigumi/Kani_Chaahan.jpg"
-    },
-    {
-      "name": "영매사",
-      "gender": "male",
-      "cv": "쿠스노키 타이텐",
-      "img": "image/charimg/2026/Q3/Let's_Go_Kaikigumi/Reibaishi.jpg"
-    },
-    {
-      "name": "저주 받은 비디오",
-      "gender": "unknown",
-      "cv": "타카기 와타루",
-      "img": "image/charimg/2026/Q3/Let's_Go_Kaikigumi/Noroi_no_Video.jpg"
-    },
-    {
-      "name": "오컬트부",
-      "gender": "male",
-      "cv": "마미야 야스히로",
-      "img": "image/charimg/2026/Q3/Let's_Go_Kaikigumi/Megane.jpg"
-    },
-    {
-      "name": "거대 오이초밥",
-      "gender": "unknown",
-      "cv": "오가타 메구미",
-      "img": "image/charimg/2026/Q3/Let's_Go_Kaikigumi/Kappa_Maki.jpg"
-    }
-  ]
-},
-{
-  "id": 63832,
-  "characters": [
-    {
-      "name": "스즈키 미유",
-      "gender": "female",
-      "cv": "스즈시로 사유미",
-      "img": "image/charimg/2026/Q3/Seihantai_na_Kimi_to_Boku_2nd_Season/Miyu_Suzuki.jpg"
-    },
-    {
-      "name": "타니 유스케",
-      "gender": "male",
-      "cv": "사카타 쇼고",
-      "img": "image/charimg/2026/Q3/Seihantai_na_Kimi_to_Boku_2nd_Season/Yuusuke_Tani.jpg"
-    },
-    {
-      "name": "타이라 슈지",
-      "gender": "male",
-      "cv": "카토 와타루",
-      "img": "image/charimg/2026/Q3/Seihantai_na_Kimi_to_Boku_2nd_Season/Shuuji_Taira.jpg"
-    },
-    {
-      "name": "아즈마 시노",
-      "gender": "female",
-      "cv": "시마부쿠로 미유리",
-      "img": "image/charimg/2026/Q3/Seihantai_na_Kimi_to_Boku_2nd_Season/Shino_Azuma.jpg"
-    },
-    {
-      "name": "야마다 켄타로",
-      "gender": "male",
-      "cv": "이와타 안지",
-      "img": "image/charimg/2026/Q3/Seihantai_na_Kimi_to_Boku_2nd_Season/Kentarou_Yamada.jpg"
-    },
-    {
-      "name": "니시 나츠미",
-      "gender": "female",
-      "cv": "오오모리 코코로",
-      "img": "image/charimg/2026/Q3/Seihantai_na_Kimi_to_Boku_2nd_Season/Natsumi_Nishi.jpg"
-    },
-    {
-      "name": "혼다 리카코",
-      "gender": "female",
-      "cv": "쿠스노키 토모리",
-      "img": "image/charimg/2026/Q3/Seihantai_na_Kimi_to_Boku_2nd_Season/Rikako_Honda.jpg"
-    },
-    {
-      "name": "와타나베 마나미",
-      "gender": "female",
-      "cv": "타니구치 유나",
-      "img": "image/charimg/2026/Q3/Seihantai_na_Kimi_to_Boku_2nd_Season/Manami_Watanabe.jpg"
-    },
-    {
-      "name": "사토 아오이",
-      "gender": "female",
-      "cv": "히라바야시 코나츠",
-      "img": "image/charimg/2026/Q3/Seihantai_na_Kimi_to_Boku_2nd_Season/Aoi_Satou.jpg"
-    },
-    {
-      "name": "스즈키 미유의 오빠",
-      "gender": "male",
-      "cv": "나카무라 겐타",
-      "img": "image/charimg/2026/Q3/Seihantai_na_Kimi_to_Boku_2nd_Season/Suzuki_no_Ani.jpg"
-    },
-    {
-      "name": "타니 유스케의 할머니",
-      "gender": "female",
-      "cv": "노지 모모코",
-      "img": "image/charimg/2026/Q3/Seihantai_na_Kimi_to_Boku_2nd_Season/Tani_no_Sobo.jpg"
-    },
-    {
-      "name": "타이라의 여동생",
-      "gender": "female",
-      "cv": "율두스 카논",
-      "img": "image/charimg/2026/Q3/Seihantai_na_Kimi_to_Boku_2nd_Season/Taira_no_Imouto.jpg"
-    },
-    {
-      "name": "사오토메",
-      "gender": "male",
-      "cv": "니와 사토시",
-      "img": "image/charimg/2026/Q3/Seihantai_na_Kimi_to_Boku_2nd_Season/Saotome.jpg"
-    },
-    {
-      "name": "하세가와",
-      "gender": "male",
-      "cv": "미노 유다이",
-      "img": "image/charimg/2026/Q3/Seihantai_na_Kimi_to_Boku_2nd_Season/Hasegawa.jpg"
-    },
-    {
-      "name": "모리모토",
-      "gender": "male",
-      "cv": "엔도 다이치",
-      "img": "image/charimg/2026/Q3/Seihantai_na_Kimi_to_Boku_2nd_Season/Morimo.jpg"
-    },
-    {
-      "name": "담임",
-      "gender": "male",
-      "cv": "사쿠마 노부유키",
-      "img": "image/charimg/2026/Q3/Seihantai_na_Kimi_to_Boku_2nd_Season/Tannin.jpg"
-    },
-    {
-      "name": "고마퐁",
-      "gender": "male",
-      "cv": " 마키 슌이치",
-      "img": "image/charimg/2026/Q3/Seihantai_na_Kimi_to_Boku_2nd_Season/Gomapon.jpg"
-    },
-    {
-      "name": "카와사키",
-      "gender": "female",
-      "cv": "히로마츠 세리카",
-      "img": "image/charimg/2026/Q3/Seihantai_na_Kimi_to_Boku_2nd_Season/Kawasaki.jpg"
-    }
-  ]
-},
-{
-  "id": 63100,
-  "characters": [
-    {
-      "name": "아키야마 짱",
-      "gender": "male",
-      "cv": "토야 키쿠노스케",
-      "img": "image/charimg/2026/Q3/Tetsunabe_no_Jan!/Jan_Akiyama.jpg"
-    },
-    {
-      "name": "고반초 키리코",
-      "gender": "female",
-      "cv": "하세가와 이쿠미",
-      "img": "image/charimg/2026/Q3/Tetsunabe_no_Jan!/Kiriko_Gobanchou.jpg"
-    },
-    {
-      "name": "오코노기 타카오",
-      "gender": "unknown",
-      "cv": "아마사키 코헤이",
-      "img": "image/charimg/2026/Q3/Tetsunabe_no_Jan!/Takao_Okonogi.jpg"
-    },
-    {
-      "name": "내레이션",
-      "gender": "unknown",
-      "cv": "츠다 켄지로",
-      "img": "image/charimg/2026/Q3/Tetsunabe_no_Jan!/Narrator.jpg"
-    },
-    {
-      "name": "카와바라 유지",
-      "gender": "male",
-      "cv": "코바야시 유스케",
-      "img": "image/charimg/2026/Q3/Tetsunabe_no_Jan!/Yuuji_Kawahara.jpg"
-    },
-    {
-      "name": "비토 류지",
-      "gender": "male",
-      "cv": "스기타 토모카즈",
-      "img": "image/charimg/2026/Q3/Tetsunabe_no_Jan!/Ryuuji_Bitou.jpg"
-    },
-    {
-      "name": "오타니 니치도",
-      "gender": "male",
-      "cv": "아마다 마스오",
-      "img": "image/charimg/2026/Q3/Tetsunabe_no_Jan!/Nichidou_Ootani.jpg"
-    },
-    {
-      "name": "셀레느 얀",
-      "gender": "female",
-      "cv": "M·A·O",
-      "img": "image/charimg/2026/Q3/Tetsunabe_no_Jan!/Celene_Yang.jpg"
-    },
-    {
-      "name": "사와다 케이",
-      "gender": "male",
-      "cv": "사쿠라이 타카히로",
-      "img": "image/charimg/2026/Q3/Tetsunabe_no_Jan!/Kei_Sawada.jpg"
-    },
-    {
-      "name": "쥰 토모히데",
-      "gender": "male",
-      "cv": "무라타 타이시",
-      "img": "image/charimg/2026/Q3/Tetsunabe_no_Jan!/Tomohide_Jun.jpg"
-    }
-  ]
-},
-{
-  "id": 62435,
-  "characters": [
-    {
-      "name": "아토베 아리히토",
-      "gender": "unknown",
-      "cv": "마츠오카 요시츠구",
-      "img": "image/charimg/2026/Q3/Sekai_Saikyou_no_Kouei_Meikyuukoku_no_Shinjin_Tansakusha/Atobe_Arihito.jpg"
-    },
-    {
-      "name": "테레지아",
-      "gender": "unknown",
-      "cv": "코가 아오이",
-      "img": "image/charimg/2026/Q3/Sekai_Saikyou_no_Kouei_Meikyuukoku_no_Shinjin_Tansakusha/Theresa.jpg"
-    },
-    {
-      "name": "이가라시 쿄우카",
-      "gender": "unknown",
-      "cv": "나카무라 사쿠라",
-      "img": "image/charimg/2026/Q3/Sekai_Saikyou_no_Kouei_Meikyuukoku_no_Shinjin_Tansakusha/Kyouka_Igarashi.jpg"
-    },
-    {
-      "name": "시로미야 스즈나",
-      "gender": "female",
-      "cv": "하야미 사오리",
-      "img": "image/charimg/2026/Q3/Sekai_Saikyou_no_Kouei_Meikyuukoku_no_Shinjin_Tansakusha/Suzuna.jpg"
-    },
-    {
-      "name": "에리티아",
-      "gender": "female",
-      "cv": "이시카와 유이",
-      "img": "image/charimg/2026/Q3/Sekai_Saikyou_no_Kouei_Meikyuukoku_no_Shinjin_Tansakusha/Elitia.jpg"
-    },
-    {
-      "name": "멜리사",
-      "gender": "female",
-      "cv": "아이사카 유카",
-      "img": "image/charimg/2026/Q3/Sekai_Saikyou_no_Kouei_Meikyuukoku_no_Shinjin_Tansakusha/Melissa.jpg"
-    },
-    {
-      "name": "미사키",
-      "gender": "female",
-      "cv": "혼도 카에데",
-      "img": "image/charimg/2026/Q3/Sekai_Saikyou_no_Kouei_Meikyuukoku_no_Shinjin_Tansakusha/Misaki.jpg"
-    },
-    {
-      "name": "시노노메 마도카",
-      "gender": "female",
-      "cv": "타카오 카논",
-      "img": "image/charimg/2026/Q3/Sekai_Saikyou_no_Kouei_Meikyuukoku_no_Shinjin_Tansakusha/Madoka.jpg"
-    }
-  ]
-},
-{
-  "id": 62811,
-  "characters": [
-    {
-      "name": "아이죠 렌타로",
-      "gender": "male",
-      "cv": "카토 와타루",
-      "img": "image/charimg/2026/Q3/Kimi_no_Koto_ga_Dai_Dai_Dai_Dai_Daisuki_na_100-nin_no_Kanojo_3rd_Season/Rentarou_Aijou.jpg"
-    },
-    {
-      "name": "하라가 쿠루미",
-      "gender": "female",
-      "cv": "신도 아마네",
-      "img": "image/charimg/2026/Q3/Kimi_no_Koto_ga_Dai_Dai_Dai_Dai_Daisuki_na_100-nin_no_Kanojo_3rd_Season/Kurumi_Haraga.jpg"
-    },
-    {
-      "name": "야쿠젠 야쿠",
-      "gender": "female",
-      "cv": "쿠기미야 리에",
-      "img": "image/charimg/2026/Q3/Kimi_no_Koto_ga_Dai_Dai_Dai_Dai_Daisuki_na_100-nin_no_Kanojo_3rd_Season/Yaku_Yakuzen.jpg"
-    },
-    {
-      "name": "하나조노 하카리",
-      "gender": "female",
-      "cv": "혼도 카에데",
-      "img": "image/charimg/2026/Q3/Kimi_no_Koto_ga_Dai_Dai_Dai_Dai_Daisuki_na_100-nin_no_Kanojo_3rd_Season/Hakari_Hanazono.jpg"
-    },
-    {
-      "name": "야쿠젠 쿠스리",
-      "gender": "female",
-      "cv": "아사이 아야카",
-      "img": "image/charimg/2026/Q3/Kimi_no_Koto_ga_Dai_Dai_Dai_Dai_Daisuki_na_100-nin_no_Kanojo_3rd_Season/Kusuri_Yakuzen.jpg"
-    },
-    {
-      "name": "토로토로 키시카",
-      "gender": "female",
-      "cv": "Unknown",
-      "img": "image/charimg/2026/Q3/Kimi_no_Koto_ga_Dai_Dai_Dai_Dai_Daisuki_na_100-nin_no_Kanojo_3rd_Season/Kishika_Torotoro.jpg"
-    },
-    {
-      "name": "인다 카라네",
-      "gender": "female",
-      "cv": "토미타 미유",
-      "img": "image/charimg/2026/Q3/Kimi_no_Koto_ga_Dai_Dai_Dai_Dai_Daisuki_na_100-nin_no_Kanojo_3rd_Season/Karane_Inda.jpg"
-    },
-    {
-      "name": "메이도 메이",
-      "gender": "female",
-      "cv": "미모리 스즈코",
-      "img": "image/charimg/2026/Q3/Kimi_no_Koto_ga_Dai_Dai_Dai_Dai_Daisuki_na_100-nin_no_Kanojo_3rd_Season/Mei_Meido.jpg"
-    },
-    {
-      "name": "모미 모미지",
-      "gender": "female",
-      "cv": "코가 아오이",
-      "img": "image/charimg/2026/Q3/Kimi_no_Koto_ga_Dai_Dai_Dai_Dai_Daisuki_na_100-nin_no_Kanojo_3rd_Season/Momi_Momiji.jpg"
-    },
-    {
-      "name": "에이아이 나노",
-      "gender": "female",
-      "cv": "세토 아사미",
-      "img": "image/charimg/2026/Q3/Kimi_no_Koto_ga_Dai_Dai_Dai_Dai_Daisuki_na_100-nin_no_Kanojo_3rd_Season/Nano_Eiai.jpg"
-    },
-    {
-      "name": "스토 이쿠",
-      "gender": "female",
-      "cv": "타카하시 리에",
-      "img": "image/charimg/2026/Q3/Kimi_no_Koto_ga_Dai_Dai_Dai_Dai_Daisuki_na_100-nin_no_Kanojo_3rd_Season/Iku_Sutou.jpg"
-    },
-    {
-      "name": "야사시키 야마메",
-      "gender": "female",
-      "cv": "타메가이 하나",
-      "img": "image/charimg/2026/Q3/Kimi_no_Koto_ga_Dai_Dai_Dai_Dai_Daisuki_na_100-nin_no_Kanojo_3rd_Season/Yamame_Yasashiki.jpg"
-    },
-    {
-      "name": "요시모토 시즈카",
-      "gender": "female",
-      "cv": "나가나와 마리아",
-      "img": "image/charimg/2026/Q3/Kimi_no_Koto_ga_Dai_Dai_Dai_Dai_Daisuki_na_100-nin_no_Kanojo_3rd_Season/Shizuka_Yoshimoto.jpg"
-    },
-    {
-      "name": "우츠쿠시스기 미미미",
-      "gender": "female",
-      "cv": "Lynn",
-      "img": "image/charimg/2026/Q3/Kimi_no_Koto_ga_Dai_Dai_Dai_Dai_Daisuki_na_100-nin_no_Kanojo_3rd_Season/Mimimi_Utsukushisugi.jpg"
-    },
-    {
-      "name": "이인 치요",
-      "gender": "female",
-      "cv": "이시하라 카오리",
-      "img": "image/charimg/2026/Q3/Kimi_no_Koto_ga_Dai_Dai_Dai_Dai_Daisuki_na_100-nin_no_Kanojo_3rd_Season/Chiyo_Iin.jpg"
-    },
-    {
-      "name": "야마토 나데시코",
-      "gender": "female",
-      "cv": "타케타츠 아야나",
-      "img": "image/charimg/2026/Q3/Kimi_no_Koto_ga_Dai_Dai_Dai_Dai_Daisuki_na_100-nin_no_Kanojo_3rd_Season/Nadeshiko_Yamato.jpg"
-    },
-    {
-      "name": "카쿠레 메메",
-      "gender": "female",
-      "cv": "타카오 카논",
-      "img": "image/charimg/2026/Q3/Kimi_no_Koto_ga_Dai_Dai_Dai_Dai_Daisuki_na_100-nin_no_Kanojo_3rd_Season/Meme_Kakure.jpg"
-    },
-    {
-      "name": "하나조노 하하리",
-      "gender": "female",
-      "cv": "우에사카 스미레",
-      "img": "image/charimg/2026/Q3/Kimi_no_Koto_ga_Dai_Dai_Dai_Dai_Daisuki_na_100-nin_no_Kanojo_3rd_Season/Hahari_Hanazono.jpg"
-    },
-    {
-      "name": "야쿠젠 요모기",
-      "gender": "female",
-      "cv": "이구치 유카",
-      "img": "image/charimg/2026/Q3/Kimi_no_Koto_ga_Dai_Dai_Dai_Dai_Daisuki_na_100-nin_no_Kanojo_3rd_Season/Yomogi_Yakuzen.jpg"
-    },
-    {
-      "name": "이인 히로",
-      "gender": "male",
-      "cv": "미키 신이치로",
-      "img": "image/charimg/2026/Q3/Kimi_no_Koto_ga_Dai_Dai_Dai_Dai_Daisuki_na_100-nin_no_Kanojo_3rd_Season/Hirotsugu_Iin.jpg"
-    },
-    {
-      "name": "야쿠젠 하루히코",
-      "gender": "male",
-      "cv": "스기타 토모카즈",
-      "img": "image/charimg/2026/Q3/Kimi_no_Koto_ga_Dai_Dai_Dai_Dai_Daisuki_na_100-nin_no_Kanojo_3rd_Season/Haruhiko_Yakuzen.jpg"
-    },
-    {
-      "name": "키지네타 토루루",
-      "gender": "female",
-      "cv": "미사키 나코",
-      "img": "image/charimg/2026/Q3/Kimi_no_Koto_ga_Dai_Dai_Dai_Dai_Daisuki_na_100-nin_no_Kanojo_3rd_Season/Toruru_Kijineta.jpg"
-    },
-    {
-      "name": "신",
-      "gender": "male",
-      "cv": "치바 시게루",
-      "img": "image/charimg/2026/Q3/Kimi_no_Koto_ga_Dai_Dai_Dai_Dai_Daisuki_na_100-nin_no_Kanojo_3rd_Season/Kami-sama.jpg"
-    },
-    {
-      "name": "교감선생님",
-      "gender": "female",
-      "cv": "쿠지라",
-      "img": "image/charimg/2026/Q3/Kimi_no_Koto_ga_Dai_Dai_Dai_Dai_Daisuki_na_100-nin_no_Kanojo_3rd_Season/Anzu_Baba.jpg"
-    }
-  ]
-},
-{
-  "id": 62856,
-  "characters": [
-    {
-      "name": "사카모토 키하치",
-      "gender": "male",
-      "cv": "우치다 유우마",
-      "img": "image/charimg/2026/Q3/Nijusseiki_Denki_Mokuroku_Eureka_Evrika/Kihachi_Sakamoto.jpg"
-    },
-    {
-      "name": "모모카와 이나코",
-      "gender": "female",
-      "cv": "아마미야 소라",
-      "img": "image/charimg/2026/Q3/Nijusseiki_Denki_Mokuroku_Eureka_Evrika/Inako_Momokawa.jpg"
-    },
-    {
-      "name": "미조에 요스케",
-      "gender": "male",
-      "cv": "우치야마 코우키",
-      "img": "image/charimg/2026/Q3/Nijusseiki_Denki_Mokuroku_Eureka_Evrika/Yousuke_Mizoe.jpg"
-    },
-    {
-      "name": "쿠가 켄고",
-      "gender": "male",
-      "cv": "타케우치 슌스케",
-      "img": "image/charimg/2026/Q3/Nijusseiki_Denki_Mokuroku_Eureka_Evrika/Kengo_Kuga.jpg"
-    },
-    {
-      "name": "모모카와 노리코",
-      "gender": "female",
-      "cv": "코토부키 미나코",
-      "img": "image/charimg/2026/Q3/Nijusseiki_Denki_Mokuroku_Eureka_Evrika/Noriko_Momokawa.jpg"
-    },
-    {
-      "name": "사카모토 세이로쿠",
-      "gender": "male",
-      "cv": "오노 다이스케",
-      "img": "image/charimg/2026/Q3/Nijusseiki_Denki_Mokuroku_Eureka_Evrika/Seiroku_Sakamoto.jpg"
-    },
-    {
-      "name": "하라시마 스즈",
-      "gender": "female",
-      "cv": "타이치 요우",
-      "img": "image/charimg/2026/Q3/Nijusseiki_Denki_Mokuroku_Eureka_Evrika/Suzu_Harashima.jpg"
-    },
-    {
-      "name": "오오쿠라 케이트",
-      "gender": "female",
-      "cv": "카와이다 나츠미",
-      "img": "image/charimg/2026/Q3/Nijusseiki_Denki_Mokuroku_Eureka_Evrika/Kate_Ookura.jpg"
-    },
-    {
-      "name": "야구라 야지로",
-      "gender": "male",
-      "cv": "우라 카즈키",
-      "img": "image/charimg/2026/Q3/Nijusseiki_Denki_Mokuroku_Eureka_Evrika/Yajirou_Yagura.jpg"
-    },
-    {
-      "name": "마스부치 이조",
-      "gender": "male",
-      "cv": "히라카와 다이스케",
-      "img": "image/charimg/2026/Q3/Nijusseiki_Denki_Mokuroku_Eureka_Evrika/Izou_Masubuchi.jpg"
-    },
-    {
-      "name": "모모카와 나에코",
-      "gender": "female",
-      "cv": "아사노 마유미",
-      "img": "image/charimg/2026/Q3/Nijusseiki_Denki_Mokuroku_Eureka_Evrika/Naeko_Momokawa.jpg"
-    },
-    {
-      "name": "모모카와 진에몬",
-      "gender": "male",
-      "cv": "야나카 히로시",
-      "img": "image/charimg/2026/Q3/Nijusseiki_Denki_Mokuroku_Eureka_Evrika/Jinemon_Momokawa.jpg"
-    },
-    {
-      "name": "야구라 분시치",
-      "gender": "male",
-      "cv": "엔도 다이치",
-      "img": "image/charimg/2026/Q3/Nijusseiki_Denki_Mokuroku_Eureka_Evrika/Bunshichi_Yagura.jpg"
-    },
-    {
-      "name": "토메",
-      "gender": "female",
-      "cv": "타카가키 아야히",
-      "img": "image/charimg/2026/Q3/Nijusseiki_Denki_Mokuroku_Eureka_Evrika/Tome.jpg"
-    },
-    {
-      "name": "이나리",
-      "gender": "unknown",
-      "cv": "타카가키 아야히",
-      "img": "image/charimg/2026/Q3/Nijusseiki_Denki_Mokuroku_Eureka_Evrika/Inari.jpg"
-    },
-    {
-      "name": "이바타 아키라",
-      "gender": "male",
-      "cv": "미야자키 유우",
-      "img": "image/charimg/2026/Q3/Nijusseiki_Denki_Mokuroku_Eureka_Evrika/Akira_Ibata.jpg"
-    },
-    {
-      "name": "스튜어트 스미스",
-      "gender": "male",
-      "cv": "카와하라 요시히사",
-      "img": "image/charimg/2026/Q3/Nijusseiki_Denki_Mokuroku_Eureka_Evrika/Stuart_Smith.jpg"
-    },
-    {
-      "name": "사키",
-      "gender": "female",
-      "cv": "엔도 아야",
-      "img": "image/charimg/2026/Q3/Nijusseiki_Denki_Mokuroku_Eureka_Evrika/Saki_Mizoe.jpg"
-    },
-    {
-      "name": "오시에 아이노스케",
-      "gender": "male",
-      "cv": "KENN",
-      "img": "image/charimg/2026/Q3/Nijusseiki_Denki_Mokuroku_Eureka_Evrika/Ainosuke_Oshie.jpg"
-    },
-    {
-      "name": "이바타 치요",
-      "gender": "female",
-      "cv": "타마가와 사키코",
-      "img": "image/charimg/2026/Q3/Nijusseiki_Denki_Mokuroku_Eureka_Evrika/Chiyo_Ibata.jpg"
-    }
-  ]
-},
-{
-  "id": 61240,
-  "characters": [
-    {
-      "name": "황영림",
-      "gender": "female",
-      "cv": "이와미 마나카",
-      "img": "image/charimg/2026/Q3/Futsutsuka_na_Akujo_de_wa_Gozaimasu_ga_Suuguu_Chouso_Torikae_Den/Reirin_Kou.jpg"
-    },
-    {
-      "name": "주혜월",
-      "gender": "female",
-      "cv": "카와이다 나츠미",
-      "img": "image/charimg/2026/Q3/Futsutsuka_na_Akujo_de_wa_Gozaimasu_ga_Suuguu_Chouso_Torikae_Den/Keigetsu_Shu.jpg"
-    },
-    {
-      "name": "남방춘",
-      "gender": "female",
-      "cv": "미나세 이노리",
-      "img": "image/charimg/2026/Q3/Futsutsuka_na_Akujo_de_wa_Gozaimasu_ga_Suuguu_Chouso_Torikae_Den/Houshun_Ran.jpg"
-    },
-    {
-      "name": "황견수",
-      "gender": "female",
-      "cv": "이가라시 레이",
-      "img": "image/charimg/2026/Q3/Futsutsuka_na_Akujo_de_wa_Gozaimasu_ga_Suuguu_Chouso_Torikae_Den/Kenshuu_Kou.jpg"
-    },
-    {
-      "name": "영요명",
-      "gender": "male",
-      "cv": "후루카와 마코토",
-      "img": "image/charimg/2026/Q3/Futsutsuka_na_Akujo_de_wa_Gozaimasu_ga_Suuguu_Chouso_Torikae_Den/Gyoumei_Ei.jpg"
-    },
-    {
-      "name": "주아미",
-      "gender": "female",
-      "cv": "카야노 아이",
-      "img": "image/charimg/2026/Q3/Futsutsuka_na_Akujo_de_wa_Gozaimasu_ga_Suuguu_Chouso_Torikae_Den/Gabi_Shu.jpg"
-    },
-    {
-      "name": "진우",
-      "gender": "male",
-      "cv": "우메하라 유이치로",
-      "img": "image/charimg/2026/Q3/Futsutsuka_na_Akujo_de_wa_Gozaimasu_ga_Suuguu_Chouso_Torikae_Den/Shin-U.jpg"
-    },
-    {
-      "name": "문앙",
-      "gender": "male",
-      "cv": "코바야시 유스케",
-      "img": "image/charimg/2026/Q3/Futsutsuka_na_Akujo_de_wa_Gozaimasu_ga_Suuguu_Chouso_Torikae_Den/Bunkou.jpg"
-    },
-    {
-      "name": "리리",
-      "gender": "female",
-      "cv": "히시카와 하나",
-      "img": "image/charimg/2026/Q3/Futsutsuka_na_Akujo_de_wa_Gozaimasu_ga_Suuguu_Chouso_Torikae_Den/Riri.jpg"
-    },
-    {
-      "name": "금청가",
-      "gender": "female",
-      "cv": "나카하라 마이",
-      "img": "image/charimg/2026/Q3/Futsutsuka_na_Akujo_de_wa_Gozaimasu_ga_Suuguu_Chouso_Torikae_Den/Seika_Kin.jpg"
-    },
-    {
-      "name": "황동설",
-      "gender": "female",
-      "cv": "니케라이 파라나제",
-      "img": "image/charimg/2026/Q3/Futsutsuka_na_Akujo_de_wa_Gozaimasu_ga_Suuguu_Chouso_Torikae_Den/Tousetsu_Kou.jpg"
-    },
-    {
-      "name": "취옥",
-      "gender": "female",
-      "cv": "카마쿠라 유우나",
-      "img": "image/charimg/2026/Q3/Futsutsuka_na_Akujo_de_wa_Gozaimasu_ga_Suuguu_Chouso_Torikae_Den/Suigyoku.jpg"
-    },
-    {
-      "name": "현가취",
-      "gender": "female",
-      "cv": "이시카와 유이",
-      "img": "image/charimg/2026/Q3/Futsutsuka_na_Akujo_de_wa_Gozaimasu_ga_Suuguu_Chouso_Torikae_Den/Kasui_Gen.jpg"
-    }
-  ]
-},
-{
-  "id": 56613,
-  "characters": [
-    {
-      "name": "라피",
-      "gender": "unknown",
-      "cv": "나가나와 마리아",
-      "img": "image/charimg/2026/Q3/Azur_Lane_Bisoku_Zenshin!_Ni!!/Laffey.jpg"
-    },
-    {
-      "name": "재블린",
-      "gender": "unknown",
-      "cv": "야마네 노조미",
-      "img": "image/charimg/2026/Q3/Azur_Lane_Bisoku_Zenshin!_Ni!!/Javelin.jpg"
-    },
-    {
-      "name": "아야나미",
-      "gender": "unknown",
-      "cv": "타이치 요우",
-      "img": "image/charimg/2026/Q3/Azur_Lane_Bisoku_Zenshin!_Ni!!/Ayanami.jpg"
-    },
-    {
-      "name": "Z23",
-      "gender": "unknown",
-      "cv": "아베 리카",
-      "img": "image/charimg/2026/Q3/Azur_Lane_Bisoku_Zenshin!_Ni!!/Z23.jpg"
-    },
-    {
-      "name": "다이도",
-      "gender": "unknown",
-      "cv": "아오키 루리코",
-      "img": "image/charimg/2026/Q3/Azur_Lane_Bisoku_Zenshin!_Ni!!/Dido.jpg"
-    },
-    {
-      "name": "Z46",
-      "gender": "female",
-      "cv": "치하라 미노리",
-      "img": "image/charimg/2026/Q3/Azur_Lane_Bisoku_Zenshin!_Ni!!/Z46.jpg"
-    },
-    {
-      "name": "재너스",
-      "gender": "female",
-      "cv": "키노 히나",
-      "img": "image/charimg/2026/Q3/Azur_Lane_Bisoku_Zenshin!_Ni!!/Janus.jpg"
-    },
-    {
-      "name": "뉴저지",
-      "gender": "female",
-      "cv": "토미타 미유",
-      "img": "image/charimg/2026/Q3/Azur_Lane_Bisoku_Zenshin!_Ni!!/New_Jersey.jpg"
-    },
-    {
-      "name": "저비스",
-      "gender": "unknown",
-      "cv": "사토 미유키",
-      "img": "image/charimg/2026/Q3/Azur_Lane_Bisoku_Zenshin!_Ni!!/Jervis.jpg"
-    },
-    {
-      "name": "차라",
-      "gender": "unknown",
-      "cv": "타네자키 아츠미",
-      "img": "image/charimg/2026/Q3/Azur_Lane_Bisoku_Zenshin!_Ni!!/Zara.jpg"
-    },
-    {
-      "name": "브레머튼",
-      "gender": "female",
-      "cv": "타츠미 유이코",
-      "img": "image/charimg/2026/Q3/Azur_Lane_Bisoku_Zenshin!_Ni!!/Bremerton.jpg"
-    },
-    {
-      "name": "센토",
-      "gender": "female",
-      "cv": "우치다 아야",
-      "img": "image/charimg/2026/Q3/Azur_Lane_Bisoku_Zenshin!_Ni!!/Centaur.jpg"
-    },
-    {
-      "name": "시나노",
-      "gender": "unknown",
-      "cv": "노토 마미코",
-      "img": "image/charimg/2026/Q3/Azur_Lane_Bisoku_Zenshin!_Ni!!/Shinano.jpg"
-    },
-    {
-      "name": "스루가",
-      "gender": "female",
-      "cv": "엔도 아야",
-      "img": "image/charimg/2026/Q3/Azur_Lane_Bisoku_Zenshin!_Ni!!/Suruga.jpg"
-    },
-    {
-      "name": "리버풀",
-      "gender": "unknown",
-      "cv": "마노 미즈키",
-      "img": "image/charimg/2026/Q3/Azur_Lane_Bisoku_Zenshin!_Ni!!/Liverpool.jpg"
-    },
-    {
-      "name": "아카시",
-      "gender": "unknown",
-      "cv": "우에사카 스미레",
-      "img": "image/charimg/2026/Q3/Azur_Lane_Bisoku_Zenshin!_Ni!!/Akashi.jpg"
-    },
-    {
-      "name": "알제리",
-      "gender": "female",
-      "cv": "이토 시즈카",
-      "img": "image/charimg/2026/Q3/Azur_Lane_Bisoku_Zenshin!_Ni!!/Algérie.jpg"
-    },
-    {
-      "name": "데본셔",
-      "gender": "unknown",
-      "cv": "사쿠라 카오루",
-      "img": "image/charimg/2026/Q3/Azur_Lane_Bisoku_Zenshin!_Ni!!/Devonshire.jpg"
-    },
-    {
-      "name": "파먀티 메르쿠리야",
-      "gender": "female",
-      "cv": "요시오카 마야",
-      "img": "image/charimg/2026/Q3/Azur_Lane_Bisoku_Zenshin!_Ni!!/Pamiat_Merkuria.jpg"
-    },
-    {
-      "name": "임플래커블",
-      "gender": "female",
-      "cv": "유카나",
-      "img": "image/charimg/2026/Q3/Azur_Lane_Bisoku_Zenshin!_Ni!!/Implacable.jpg"
-    },
-    {
-      "name": "카리브디스",
-      "gender": "unknown",
-      "cv": "아야세 유우",
-      "img": "image/charimg/2026/Q3/Azur_Lane_Bisoku_Zenshin!_Ni!!/Charybdis.jpg"
-    },
-    {
-      "name": "시마카제",
-      "gender": "female",
-      "cv": "하야미 사오리",
-      "img": "image/charimg/2026/Q3/Azur_Lane_Bisoku_Zenshin!_Ni!!/Shimakaze.jpg"
-    },
-    {
-      "name": "알비온",
-      "gender": "female",
-      "cv": "시라키 나오",
-      "img": "image/charimg/2026/Q3/Azur_Lane_Bisoku_Zenshin!_Ni!!/Albion.jpg"
-    },
-    {
-      "name": "골든 하인드",
-      "gender": "unknown",
-      "cv": "히나타 유카",
-      "img": "image/charimg/2026/Q3/Azur_Lane_Bisoku_Zenshin!_Ni!!/Golden_Hind.jpg"
-    },
-    {
-      "name": "르 말랭",
-      "gender": "unknown",
-      "cv": "시라이시 하루카",
-      "img": "image/charimg/2026/Q3/Azur_Lane_Bisoku_Zenshin!_Ni!!/Le_Malin.jpg"
-    },
-    {
-      "name": "프리드리히 데어 그로세",
-      "gender": "female",
-      "cv": "나바타메 히토미",
-      "img": "image/charimg/2026/Q3/Azur_Lane_Bisoku_Zenshin!_Ni!!/Friedrich_der_Große.jpg"
-    }
-  ]
-},
-{
-  "id": 62883,
-  "characters": [
-    {
-      "name": "나카지마 아츠시",
-      "gender": "male",
-      "cv": "우에무라 유토",
-      "img": "image/charimg/2026/Q3/Bungou_Stray_Dogs_Wan!_2/Atsushi_Nakajima.jpg"
-    },
-    {
-      "name": "다자이 오사무",
-      "gender": "male",
-      "cv": "미야노 마모루",
-      "img": "image/charimg/2026/Q3/Bungou_Stray_Dogs_Wan!_2/Osamu_Dazai.jpg"
-    },
-    {
-      "name": "루이자 메이 올컷",
-      "gender": "female",
-      "cv": "우에다 히카루",
-      "img": "image/charimg/2026/Q3/Bungou_Stray_Dogs_Wan!_2/Louisa_May_Alcott.jpg"
-    },
-    {
-      "name": "죠우노 사이기쿠",
-      "gender": "male",
-      "cv": "카지 유우키",
-      "img": "image/charimg/2026/Q3/Bungou_Stray_Dogs_Wan!_2/Saigiku_Jouno.jpg"
-    },
-    {
-      "name": "미야자와 켄지",
-      "gender": "male",
-      "cv": "카구라 키츠네",
-      "img": "image/charimg/2026/Q3/Bungou_Stray_Dogs_Wan!_2/Kenji_Miyazawa.jpg"
-    },
-    {
-      "name": "니콜라이 고골",
-      "gender": "male",
-      "cv": "코야스 타케히토",
-      "img": "image/charimg/2026/Q3/Bungou_Stray_Dogs_Wan!_2/Nikolai_Gogol.jpg"
-    },
-    {
-      "name": "후쿠치 오우치",
-      "gender": "male",
-      "cv": "오오츠카 아키오",
-      "img": "image/charimg/2026/Q3/Bungou_Stray_Dogs_Wan!_2/Oochi_Fukuchi.jpg"
-    },
-    {
-      "name": "에도가와 란포",
-      "gender": "male",
-      "cv": "카미야 히로시",
-      "img": "image/charimg/2026/Q3/Bungou_Stray_Dogs_Wan!_2/Ranpo_Edogawa.jpg"
-    },
-    {
-      "name": "나카하라 츄야",
-      "gender": "male",
-      "cv": "타니야마 키쇼",
-      "img": "image/charimg/2026/Q3/Bungou_Stray_Dogs_Wan!_2/Chuuya_Nakahara.jpg"
-    },
-    {
-      "name": "사카구치 안고",
-      "gender": "male",
-      "cv": "후쿠야마 쥰",
-      "img": "image/charimg/2026/Q3/Bungou_Stray_Dogs_Wan!_2/Ango_Sakaguchi.jpg"
-    },
-    {
-      "name": "스에히로 텟쵸",
-      "gender": "male",
-      "cv": "아자카미 요헤이",
-      "img": "image/charimg/2026/Q3/Bungou_Stray_Dogs_Wan!_2/Tecchou_Suehiro.jpg"
-    },
-    {
-      "name": "쿠니키다 돗포",
-      "gender": "male",
-      "cv": "호소야 요시마사",
-      "img": "image/charimg/2026/Q3/Bungou_Stray_Dogs_Wan!_2/Doppo_Kunikida.jpg"
-    },
-    {
-      "name": "에드거 앨런 포",
-      "gender": "male",
-      "cv": "모리카와 토시유키",
-      "img": "image/charimg/2026/Q3/Bungou_Stray_Dogs_Wan!_2/Edgar_Poe.jpg"
-    },
-    {
-      "name": "오구리 무시타로",
-      "gender": "male",
-      "cv": "쿠사오 타케시",
-      "img": "image/charimg/2026/Q3/Bungou_Stray_Dogs_Wan!_2/Mushitarou_Oguri.jpg"
-    },
-    {
-      "name": "아쿠타가와 류노스케",
-      "gender": "male",
-      "cv": "오노 켄쇼",
-      "img": "image/charimg/2026/Q3/Bungou_Stray_Dogs_Wan!_2/Ryuunosuke_Akutagawa.jpg"
-    },
-    {
-      "name": "표도르 도스토옙스키",
-      "gender": "male",
-      "cv": "이시다 아키라",
-      "img": "image/charimg/2026/Q3/Bungou_Stray_Dogs_Wan!_2/Fyodor_Dostoyevsky.jpg"
-    },
-    {
-      "name": "타니자키 준이치로",
-      "gender": "male",
-      "cv": "토요나가 토시유키",
-      "img": "image/charimg/2026/Q3/Bungou_Stray_Dogs_Wan!_2/Junichirou_Tanizaki.jpg"
-    },
-    {
-      "name": "이즈미 쿄카",
-      "gender": "female",
-      "cv": "모로호시 스미레",
-      "img": "image/charimg/2026/Q3/Bungou_Stray_Dogs_Wan!_2/Kyouka_Izumi.jpg"
-    },
-    {
-      "name": "오오쿠라 테루코",
-      "gender": "unknown",
-      "cv": "코이치 마코토",
-      "img": "image/charimg/2026/Q3/Bungou_Stray_Dogs_Wan!_2/Teruko_Ookura.jpg"
-    },
-    {
-      "name": "요사노 아키코",
-      "gender": "female",
-      "cv": "시마무라 유",
-      "img": "image/charimg/2026/Q3/Bungou_Stray_Dogs_Wan!_2/Akiko_Yosano.jpg"
-    },
-    {
-      "name": "프랜시스 스콧 키 피츠제럴드",
-      "gender": "male",
-      "cv": "사쿠라이 타카히로",
-      "img": "image/charimg/2026/Q3/Bungou_Stray_Dogs_Wan!_2/Francis_Fitzgerald.jpg"
-    },
-    {
-      "name": "시그마",
-      "gender": "male",
-      "cv": "치바 쇼야",
-      "img": "image/charimg/2026/Q3/Bungou_Stray_Dogs_Wan!_2/Sigma.jpg"
-    },
-    {
-      "name": "타니자키 나오미",
-      "gender": "female",
-      "cv": "오미가와 치아키",
-      "img": "image/charimg/2026/Q3/Bungou_Stray_Dogs_Wan!_2/Naomi_Tanizaki.jpg"
-    },
-    {
-      "name": "루시 모드 몽고메리",
-      "gender": "unknown",
-      "cv": "하나자와 카나",
-      "img": "image/charimg/2026/Q3/Bungou_Stray_Dogs_Wan!_2/Lucy_Montgomery.jpg"
-    },
-    {
-      "name": "타치하라 미치조",
-      "gender": "male",
-      "cv": "하야시 유우",
-      "img": "image/charimg/2026/Q3/Bungou_Stray_Dogs_Wan!_2/Michizou_Tachihara.jpg"
-    },
-    {
-      "name": "후쿠자와 유키치",
-      "gender": "male",
-      "cv": "코야마 리키야",
-      "img": "image/charimg/2026/Q3/Bungou_Stray_Dogs_Wan!_2/Yukichi_Fukuzawa.jpg"
-    }
-  ]
-},
-{
-  "id": 63468,
-  "characters": [
-    {
-      "name": "카무이",
-      "gender": "male",
-      "cv": "스기타 토모카즈",
-      "img": "image/charimg/2026/Q3/Ushiro_no_Shoumen_Kamui-san/Kamui.jpg"
-    },
-    {
-      "name": "미미즈카 시즈카",
-      "gender": "female",
-      "cv": "아오노 리코",
-      "img": "image/charimg/2026/Q3/Ushiro_no_Shoumen_Kamui-san/Shizuka_Mimizuka.jpg"
-    },
-    {
-      "name": "이나가와",
-      "gender": "female",
-      "cv": "이자와 시오리",
-      "img": "image/charimg/2026/Q3/Ushiro_no_Shoumen_Kamui-san/Inagawa.jpg"
-    },
-    {
-      "name": "오이치",
-      "gender": "female",
-      "cv": "M·A·O",
-      "img": "image/charimg/2026/Q3/Ushiro_no_Shoumen_Kamui-san/Oichi.jpg"
-    },
-    {
-      "name": "쿄코",
-      "gender": "female",
-      "cv": "아이사카 유카",
-      "img": "image/charimg/2026/Q3/Ushiro_no_Shoumen_Kamui-san/Kyouko.jpg"
-    },
-    {
-      "name": "메리",
-      "gender": "female",
-      "cv": "시노노메 리아",
-      "img": "image/charimg/2026/Q3/Ushiro_no_Shoumen_Kamui-san/Mary.jpg"
-    },
-    {
-      "name": "테케테케",
-      "gender": "female",
-      "cv": "모모이 이치고",
-      "img": "image/charimg/2026/Q3/Ushiro_no_Shoumen_Kamui-san/Teketeke.jpg"
-    }
-  ]
-},
-{
-  "id": 62233,
-  "characters": [
-    {
-      "name": "나미",
-      "gender": "female",
-      "cv": "오카무라 아케미",
-      "img": "image/charimg/2026/Q3/ONE_PIECE_HEROINES/Nami.jpg"
-    },
-    {
-      "name": "니코 로빈",
-      "gender": "female",
-      "cv": "야마구치 유리코",
-      "img": "image/charimg/2026/Q3/ONE_PIECE_HEROINES/Robin_Nico.jpg"
-    },
-    {
-      "name": "미우차",
-      "gender": "unknown",
-      "cv": "사카모토 마아야",
-      "img": "image/charimg/2026/Q3/ONE_PIECE_HEROINES/Miucha.jpg"
-    },
-    {
-      "name": "루브노",
-      "gender": "male",
-      "cv": "코야스 타케히토",
-      "img": "image/charimg/2026/Q3/ONE_PIECE_HEROINES/Lebno.jpg"
-    },
-    {
-      "name": "제우스",
-      "gender": "unknown",
-      "cv": "미즈시마 유",
-      "img": "image/charimg/2026/Q3/ONE_PIECE_HEROINES/Zeus.jpg"
-    },
-    {
-      "name": "페로나",
-      "gender": "female",
-      "cv": "니시하라 쿠미코",
-      "img": "image/charimg/2026/Q3/ONE_PIECE_HEROINES/Perona.jpg"
-    }
-  ]
-},
-{
-  "id": 61546,
-  "characters": [
-    {
-      "name": "카라",
-      "gender": "female",
-      "cv": "아카사키 치나츠",
-      "img": "image/charimg/2026/Q3/Star_Wars_Visions_-_Kyuuninme_no_Jedi/Kara.jpg"
-    },
-    {
-      "name": "주로",
-      "gender": "male",
-      "cv": "카나오 테츠오",
-      "img": "image/charimg/2026/Q3/Star_Wars_Visions_-_Kyuuninme_no_Jedi/Juro.jpg"
-    },
-    {
-      "name": "라 지마",
-      "gender": "male",
-      "cv": "미키 신이치로",
-      "img": "image/charimg/2026/Q3/Star_Wars_Visions_-_Kyuuninme_no_Jedi/Zhima.jpg"
-    },
-    {
-      "name": "이던",
-      "gender": "unknown",
-      "cv": "미네타 히로무",
-      "img": "image/charimg/2026/Q3/Star_Wars_Visions_-_Kyuuninme_no_Jedi/Ethan.jpg"
-    },
-    {
-      "name": "나와암",
-      "gender": "male",
-      "cv": "오오모리 나오",
-      "img": "image/charimg/2026/Q3/Star_Wars_Visions_-_Kyuuninme_no_Jedi/Nawaam.jpg"
-    }
-  ]
-}
-
+  {
+    "id": 386999,
+    "name": "나가모리 에이지",
+    "cvimg": "image/cvimg/나가모리_에이지.webp",
+    "gender": "unknown",
+    "characterIds": [
+      405912
+    ]
+  },
+  {
+    "id": 95209,
+    "name": "나가사와 미키",
+    "cvimg": "image/cvimg/나가사와_미키.webp",
+    "gender": "female",
+    "characterIds": [
+      195658
+    ]
+  },
+  {
+    "id": 96260,
+    "name": "나가사코 타카시",
+    "cvimg": "image/cvimg/나가사코_타카시.webp",
+    "gender": "male",
+    "characterIds": [
+      388637
+    ]
+  },
+  {
+    "id": 362521,
+    "name": "나가사키 카즈호",
+    "cvimg": "image/cvimg/나가사키_카즈호.webp",
+    "gender": "unknown",
+    "characterIds": [
+      368291,
+      404712
+    ]
+  },
+  {
+    "id": 182100,
+    "name": "나가세 안나",
+    "cvimg": "image/cvimg/나가세_안나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      151041,
+      264023,
+      299682,
+      354440,
+      378972,
+      390148,
+      390228,
+      396163,
+      405518
+    ]
+  },
+  {
+    "id": 297726,
+    "name": "나가오카 류호",
+    "cvimg": "image/cvimg/나가오카_류호.webp",
+    "gender": "unknown",
+    "characterIds": [
+      337684,
+      396070
+    ]
+  },
+  {
+    "id": 120404,
+    "name": "나가츠카 타쿠마",
+    "cvimg": "image/cvimg/나가츠카_타쿠마.webp",
+    "gender": "unknown",
+    "characterIds": [
+      373037,
+      399798
+    ]
+  },
+  {
+    "id": 391334,
+    "name": "나가츠키 아키",
+    "cvimg": "image/cvimg/나가츠키_아키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      391314
+    ]
+  },
+  {
+    "id": 122695,
+    "name": "나나미 카린",
+    "cvimg": "image/cvimg/나나미_카린.webp",
+    "gender": "unknown",
+    "characterIds": [
+      377492
+    ]
+  },
+  {
+    "id": 151342,
+    "name": "나나미 히로키",
+    "cvimg": "image/cvimg/나나미_히로키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      365646,
+      393359,
+      407333
+    ]
+  },
+  {
+    "id": 119626,
+    "name": "나나세 아야카",
+    "cvimg": "image/cvimg/나나세_아야카.webp",
+    "gender": "female",
+    "characterIds": [
+      219037,
+      321161,
+      381204,
+      395261
+    ]
+  },
+  {
+    "id": 140626,
+    "name": "나나하라 테이코",
+    "cvimg": "image/cvimg/나나하라_테이코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      197153
+    ]
+  },
+  {
+    "id": 96659,
+    "name": "나라 토오루",
+    "cvimg": "image/cvimg/나라_토오루.webp",
+    "gender": "male",
+    "characterIds": [
+      2656,
+      191596,
+      406172,
+      408132
+    ]
+  },
+  {
+    "id": 396166,
+    "name": "나라히라 마나미",
+    "cvimg": "image/cvimg/나라히라_마나미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      396167
+    ]
+  },
+  {
+    "id": 188879,
+    "name": "나루미 마이",
+    "cvimg": "image/cvimg/나루미_마이.webp",
+    "gender": "unknown",
+    "characterIds": [
+      387174
+    ]
+  },
+  {
+    "id": 95109,
+    "name": "나리타 켄",
+    "cvimg": "image/cvimg/나리타_켄.webp",
+    "gender": "male",
+    "characterIds": [
+      19675
+    ]
+  },
+  {
+    "id": 95087,
+    "name": "나미카와 다이스케",
+    "cvimg": "image/cvimg/나미카와_다이스케.webp",
+    "gender": "male",
+    "characterIds": [
+      16023,
+      21324,
+      157116,
+      252554,
+      295786,
+      388601,
+      393992,
+      399633,
+      400253
+    ]
+  },
+  {
+    "id": 303939,
+    "name": "나미키 사쿠라",
+    "cvimg": "image/cvimg/나미키_사쿠라.webp",
+    "gender": "unknown",
+    "characterIds": [
+      382223
+    ]
+  },
+  {
+    "id": 95184,
+    "name": "나바타메 히토미",
+    "cvimg": "image/cvimg/나바타메_히토미.webp",
+    "gender": "female",
+    "characterIds": [
+      387217,
+      394151,
+      405509,
+      407160
+    ]
+  },
+  {
+    "id": 95078,
+    "name": "나즈카 카오리",
+    "cvimg": "image/cvimg/나즈카_카오리.webp",
+    "gender": "female",
+    "characterIds": [
+      143378,
+      366005,
+      392191
+    ]
+  },
+  {
+    "id": 321535,
+    "name": "나츠",
+    "cvimg": "image/cvimg/나츠.webp",
+    "gender": "unknown",
+    "characterIds": [
+      306619
+    ]
+  },
+  {
+    "id": 250745,
+    "name": "나츠메 쿄헤이",
+    "cvimg": "image/cvimg/나츠메_쿄헤이.webp",
+    "gender": "unknown",
+    "characterIds": [
+      387474
+    ]
+  },
+  {
+    "id": 136272,
+    "name": "나츠요시 유우코",
+    "cvimg": "image/cvimg/나츠요시_유우코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      4921,
+      374763,
+      378971,
+      382021,
+      388595,
+      389131,
+      396513
+    ]
+  },
+  {
+    "id": 123804,
+    "name": "나츠키 칸나",
+    "cvimg": "image/cvimg/나츠키_칸나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      380641,
+      391311
+    ]
+  },
+  {
+    "id": 302996,
+    "name": "나츠타니 미키",
+    "cvimg": "image/cvimg/나츠타니_미키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      393116
+    ]
+  },
+  {
+    "id": 96174,
+    "name": "나카 히로시",
+    "cvimg": "image/cvimg/나카_히로시.webp",
+    "gender": "male",
+    "characterIds": [
+      18614,
+      126540,
+      387437,
+      387493,
+      387967,
+      401988,
+      402523
+    ]
+  },
+  {
+    "id": 175300,
+    "name": "나카노 다이스케",
+    "cvimg": "image/cvimg/나카노_다이스케.webp",
+    "gender": "unknown",
+    "characterIds": [
+      213945
+    ]
+  },
+  {
+    "id": 115480,
+    "name": "나카노 사이마",
+    "cvimg": "image/cvimg/나카노_사이마.webp",
+    "gender": "female",
+    "characterIds": [
+      259545,
+      403431
+    ]
+  },
+  {
+    "id": 123929,
+    "name": "나카다 아리사",
+    "cvimg": "image/cvimg/나카다_아리사.webp",
+    "gender": "unknown",
+    "characterIds": [
+      356652
+    ]
+  },
+  {
+    "id": 404473,
+    "name": "나카마치 아라레",
+    "cvimg": "image/cvimg/나카마치_아라레.webp",
+    "gender": "unknown",
+    "characterIds": [
+      374184
+    ]
+  },
+  {
+    "id": 292075,
+    "name": "나카무라 겐타",
+    "cvimg": "image/cvimg/나카무라_겐타.webp",
+    "gender": "unknown",
+    "characterIds": [
+      387019,
+      389118,
+      403468
+    ]
+  },
+  {
+    "id": 111323,
+    "name": "나카무라 사쿠라",
+    "cvimg": "image/cvimg/나카무라_사쿠라.webp",
+    "gender": "female",
+    "characterIds": [
+      161909
+    ]
+  },
+  {
+    "id": 112517,
+    "name": "나카무라 쇼고",
+    "cvimg": "image/cvimg/나카무라_쇼고.webp",
+    "gender": "male",
+    "characterIds": [
+      156104,
+      404711
+    ]
+  },
+  {
+    "id": 123626,
+    "name": "나카무라 슈고",
+    "cvimg": "image/cvimg/나카무라_슈고.webp",
+    "gender": "unknown",
+    "characterIds": [
+      300879,
+      390174,
+      392193,
+      393083,
+      400754
+    ]
+  },
+  {
+    "id": 103983,
+    "name": "나카무라 에리코",
+    "cvimg": "image/cvimg/나카무라_에리코.webp",
+    "gender": "female",
+    "characterIds": [
+      399571
+    ]
+  },
+  {
+    "id": 95513,
+    "name": "나카무라 유이치",
+    "cvimg": "image/cvimg/나카무라_유이치.webp",
+    "gender": "male",
+    "characterIds": [
+      2654,
+      5661,
+      88577,
+      124144,
+      127691,
+      137972,
+      175945,
+      295781,
+      300898,
+      334313,
+      382390,
+      391998,
+      409109
+    ]
+  },
+  {
+    "id": 106562,
+    "name": "나카무라 카오리",
+    "cvimg": "image/cvimg/나카무라_카오리.webp",
+    "gender": "female",
+    "characterIds": [
+      388905,
+      408033
+    ]
+  },
+  {
+    "id": 261344,
+    "name": "나카무라 칸나",
+    "cvimg": "image/cvimg/나카무라_칸나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      196166,
+      382313,
+      390618,
+      391935,
+      397747,
+      400139
+    ]
+  },
+  {
+    "id": 390766,
+    "name": "나카무라 코우키",
+    "cvimg": "image/cvimg/나카무라_코우키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      400909,
+      403305
+    ]
+  },
+  {
+    "id": 368009,
+    "name": "나카바야시 니나",
+    "cvimg": "image/cvimg/나카바야시_니나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      379536,
+      404687
+    ]
+  },
+  {
+    "id": 128152,
+    "name": "나카시마 유키",
+    "cvimg": "image/cvimg/나카시마_유키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      389939,
+      395247
+    ]
+  },
+  {
+    "id": 112627,
+    "name": "나카야 카즈히로",
+    "cvimg": "image/cvimg/나카야_카즈히로.webp",
+    "gender": "male",
+    "characterIds": [
+      21322,
+      308808,
+      408662
+    ]
+  },
+  {
+    "id": 321471,
+    "name": "나카야마 마나카",
+    "cvimg": "image/cvimg/나카야마_마나카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      391151
+    ]
+  },
+  {
+    "id": 95259,
+    "name": "나카오 류세이",
+    "cvimg": "image/cvimg/나카오_류세이.webp",
+    "gender": "male",
+    "characterIds": [
+      292182,
+      331259
+    ]
+  },
+  {
+    "id": 303039,
+    "name": "나카이 미코토",
+    "cvimg": "image/cvimg/나카이_미코토.webp",
+    "gender": "unknown",
+    "characterIds": [
+      393868
+    ]
+  },
+  {
+    "id": 95123,
+    "name": "나카이 카즈야",
+    "cvimg": "image/cvimg/나카이_카즈야.webp",
+    "gender": "male",
+    "characterIds": [
+      130712,
+      134593,
+      197584,
+      306330
+    ]
+  },
+  {
+    "id": 96105,
+    "name": "나카지마 메구미",
+    "cvimg": "image/cvimg/나카지마_메구미.webp",
+    "gender": "female",
+    "characterIds": [
+      126526
+    ]
+  },
+  {
+    "id": 115096,
+    "name": "나카지마 요시키",
+    "cvimg": "image/cvimg/나카지마_요시키.webp",
+    "gender": "male",
+    "characterIds": [
+      145061,
+      301336,
+      320889,
+      376815,
+      381809,
+      390839,
+      391756
+    ]
+  },
+  {
+    "id": 128195,
+    "name": "나카츠카사 타카유키",
+    "cvimg": "image/cvimg/나카츠카사_타카유키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      404095
+    ]
+  },
+  {
+    "id": 95091,
+    "name": "나카타 죠지",
+    "cvimg": "image/cvimg/나카타_죠지.webp",
+    "gender": "male",
+    "characterIds": [
+      125422
+    ]
+  },
+  {
+    "id": 95031,
+    "name": "나카하라 마이",
+    "cvimg": "image/cvimg/나카하라_마이.webp",
+    "gender": "female",
+    "characterIds": [
+      259554,
+      319576,
+      388594,
+      393540,
+      394845,
+      396158,
+      403580
+    ]
+  },
+  {
+    "id": 96592,
+    "name": "난죠 요시노",
+    "cvimg": "image/cvimg/난죠_요시노.webp",
+    "gender": "female",
+    "characterIds": [
+      318830
+    ]
+  },
+  {
+    "id": 238272,
+    "name": "네모토 미야리",
+    "cvimg": "image/cvimg/네모토_미야리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      393176,
+      400990,
+      402012
+    ]
+  },
+  {
+    "id": 243272,
+    "name": "네모토 유나",
+    "cvimg": "image/cvimg/네모토_유나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      266760
+    ]
+  },
+  {
+    "id": 118552,
+    "name": "노가와 마사시",
+    "cvimg": "image/cvimg/노가와_마사시.webp",
+    "gender": "male",
+    "characterIds": [
+      338225
+    ]
+  },
+  {
+    "id": 128109,
+    "name": "노구치 이오리",
+    "cvimg": "image/cvimg/노구치_이오리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      381121
+    ]
+  },
+  {
+    "id": 369290,
+    "name": "노다 토모카",
+    "cvimg": "image/cvimg/노다_토모카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      396508
+    ]
+  },
+  {
+    "id": 100697,
+    "name": "노무라 카츠히토",
+    "cvimg": "image/cvimg/노무라_카츠히토.webp",
+    "gender": "male",
+    "characterIds": [
+      54985
+    ]
+  },
+  {
+    "id": 95299,
+    "name": "노무라 켄지",
+    "cvimg": "image/cvimg/노무라_켄지.webp",
+    "gender": "male",
+    "characterIds": [
+      125443,
+      369496,
+      392245,
+      408140
+    ]
+  },
+  {
+    "id": 95557,
+    "name": "노자와 마사코",
+    "cvimg": "image/cvimg/노자와_마사코.webp",
+    "gender": "female",
+    "characterIds": [
+      362888
+    ]
+  },
+  {
+    "id": 163689,
+    "name": "노즈야마 유키히로",
+    "cvimg": "image/cvimg/노즈야마_유키히로.webp",
+    "gender": "unknown",
+    "characterIds": [
+      140652,
+      276133,
+      375401
+    ]
+  },
+  {
+    "id": 349480,
+    "name": "노지 모모코",
+    "cvimg": "image/cvimg/노지_모모코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      387167
+    ]
+  },
+  {
+    "id": 95074,
+    "name": "노지마 켄지",
+    "cvimg": "image/cvimg/노지마_켄지.webp",
+    "gender": "male",
+    "characterIds": [
+      186479,
+      278296,
+      393901,
+      399634,
+      399799
+    ]
+  },
+  {
+    "id": 95341,
+    "name": "노지마 히로후미",
+    "cvimg": "image/cvimg/노지마_히로후미.webp",
+    "gender": "male",
+    "characterIds": [
+      286389,
+      338221,
+      391529
+    ]
+  },
+  {
+    "id": 95040,
+    "name": "노토 마미코",
+    "cvimg": "image/cvimg/노토_마미코.webp",
+    "gender": "female",
+    "characterIds": [
+      151771,
+      206233,
+      331425,
+      380245,
+      394717,
+      398683
+    ]
+  },
+  {
+    "id": 221711,
+    "name": "노토미 모모코",
+    "cvimg": "image/cvimg/노토미_모모코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      408134
+    ]
+  },
+  {
+    "id": 104973,
+    "name": "누마쿠라 마나미",
+    "cvimg": "image/cvimg/누마쿠라_마나미.webp",
+    "gender": "female",
+    "characterIds": [
+      124143,
+      131042,
+      380368
+    ]
+  },
+  {
+    "id": 102631,
+    "name": "누마타 유스케",
+    "cvimg": "image/cvimg/누마타_유스케.webp",
+    "gender": "male",
+    "characterIds": [
+      403716,
+      404884
+    ]
+  },
+  {
+    "id": 126865,
+    "name": "누쿠이 유카",
+    "cvimg": "image/cvimg/누쿠이_유카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      319954,
+      327034,
+      350618,
+      378164
+    ]
+  },
+  {
+    "id": 100928,
+    "name": "니시 린타로",
+    "cvimg": "image/cvimg/니시_린타로.webp",
+    "gender": "male",
+    "characterIds": [
+      37070
+    ]
+  },
+  {
+    "id": 142175,
+    "name": "니시 켄스케",
+    "cvimg": "image/cvimg/니시_켄스케.webp",
+    "gender": "unknown",
+    "characterIds": [
+      353996
+    ]
+  },
+  {
+    "id": 120135,
+    "name": "니시다 노조미",
+    "cvimg": "image/cvimg/니시다_노조미.webp",
+    "gender": "female",
+    "characterIds": [
+      393876
+    ]
+  },
+  {
+    "id": 101175,
+    "name": "니시무라 토모미치",
+    "cvimg": "image/cvimg/니시무라_토모미치.webp",
+    "gender": "male",
+    "characterIds": [
+      306278
+    ]
+  },
+  {
+    "id": 381614,
+    "name": "니시미야 히로키",
+    "cvimg": "image/cvimg/니시미야_히로키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      381613
+    ]
+  },
+  {
+    "id": 373392,
+    "name": "니시야마 유우키",
+    "cvimg": "image/cvimg/니시야마_유우키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      380638
+    ]
+  },
+  {
+    "id": 112075,
+    "name": "니시야마 코타로",
+    "cvimg": "image/cvimg/니시야마_코타로.webp",
+    "gender": "male",
+    "characterIds": [
+      381978,
+      400741
+    ]
+  },
+  {
+    "id": 311578,
+    "name": "니시자와 료",
+    "cvimg": "image/cvimg/니시자와_료.webp",
+    "gender": "unknown",
+    "characterIds": [
+      393596,
+      398214
+    ]
+  },
+  {
+    "id": 390603,
+    "name": "니시조노 유키노",
+    "cvimg": "image/cvimg/니시조노_유키노.webp",
+    "gender": "unknown",
+    "characterIds": [
+      390602
+    ]
+  },
+  {
+    "id": 95725,
+    "name": "니시하라 쿠미코",
+    "cvimg": "image/cvimg/니시하라_쿠미코.webp",
+    "gender": "female",
+    "characterIds": [
+      7467
+    ]
+  },
+  {
+    "id": 298365,
+    "name": "니와 사토시",
+    "cvimg": "image/cvimg/니와_사토시.webp",
+    "gender": "unknown",
+    "characterIds": [
+      394945,
+      407765
+    ]
+  },
+  {
+    "id": 352810,
+    "name": "니이자키 미즈키",
+    "cvimg": "image/cvimg/니이자키_미즈키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      403430
+    ]
+  },
+  {
+    "id": 95589,
+    "name": "니이코",
+    "cvimg": "image/cvimg/니이코.webp",
+    "gender": "female",
+    "characterIds": [
+      389616
+    ]
+  },
+  {
+    "id": 217864,
+    "name": "니케라이 파라나제",
+    "cvimg": "image/cvimg/니케라이_파라나제.webp",
+    "gender": "unknown",
+    "characterIds": [
+      394847,
+      403348
+    ]
+  },
+  {
+    "id": 95234,
+    "name": "다나카 히데유키",
+    "cvimg": "image/cvimg/다나카_히데유키.webp",
+    "gender": "male",
+    "characterIds": [
+      17985
+    ]
+  },
+  {
+    "id": 102923,
+    "name": "도자카 코조",
+    "cvimg": "image/cvimg/도자카_코조.webp",
+    "gender": "male",
+    "characterIds": [
+      392867
+    ]
+  },
+  {
+    "id": 291032,
+    "name": "도지마 하야토",
+    "cvimg": "image/cvimg/도지마_하야토.webp",
+    "gender": "unknown",
+    "characterIds": [
+      188075,
+      396062
+    ]
+  },
+  {
+    "id": 197865,
+    "name": "라마르파 미셸 타테야마",
+    "cvimg": "image/cvimg/라마르파_미셸_타테야마.webp",
+    "gender": "unknown",
+    "characterIds": [
+      377720,
+      392635
+    ]
+  },
+  {
+    "id": 121712,
+    "name": "라카미 나츠미",
+    "cvimg": "image/cvimg/라카미_나츠미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      132799,
+      393214
+    ]
+  },
+  {
+    "id": 139317,
+    "name": "로버트 워터맨",
+    "cvimg": "image/cvimg/로버트_워터맨.webp",
+    "gender": "unknown",
+    "characterIds": [
+      139316
+    ]
+  },
+  {
+    "id": 306615,
+    "name": "리나",
+    "cvimg": "image/cvimg/리나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      306614
+    ]
+  },
+  {
+    "id": 321350,
+    "name": "마노 미즈키",
+    "cvimg": "image/cvimg/마노_미즈키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      405412
+    ]
+  },
+  {
+    "id": 95394,
+    "name": "마도노 미츠아키",
+    "cvimg": "image/cvimg/마도노_미츠아키.webp",
+    "gender": "male",
+    "characterIds": [
+      396503
+    ]
+  },
+  {
+    "id": 191136,
+    "name": "마루오카 와카나",
+    "cvimg": "image/cvimg/마루오카_와카나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      214620,
+      386176,
+      392172,
+      393289,
+      397772,
+      403321
+    ]
+  },
+  {
+    "id": 397301,
+    "name": "마리카",
+    "cvimg": "image/cvimg/마리카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      397300
+    ]
+  },
+  {
+    "id": 278321,
+    "name": "마메사키 리오",
+    "cvimg": "image/cvimg/마메사키_리오.webp",
+    "gender": "unknown",
+    "characterIds": [
+      387173
+    ]
+  },
+  {
+    "id": 391336,
+    "name": "마메시바 하나",
+    "cvimg": "image/cvimg/마메시바_하나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      391312
+    ]
+  },
+  {
+    "id": 104677,
+    "name": "마미야 야스히로",
+    "cvimg": "image/cvimg/마미야_야스히로.webp",
+    "gender": "male",
+    "characterIds": [
+      28511,
+      129631,
+      145095,
+      388604,
+      395543,
+      405400,
+      406168,
+      407670
+    ]
+  },
+  {
+    "id": 107017,
+    "name": "마스다 토시키",
+    "cvimg": "image/cvimg/마스다_토시키.webp",
+    "gender": "male",
+    "characterIds": [
+      205741,
+      232524,
+      374176,
+      381120
+    ]
+  },
+  {
+    "id": 101241,
+    "name": "마스타니 야스노리",
+    "cvimg": "image/cvimg/마스타니_야스노리.webp",
+    "gender": "male",
+    "characterIds": [
+      40985,
+      397277
+    ]
+  },
+  {
+    "id": 164131,
+    "name": "마시로 켄타로",
+    "cvimg": "image/cvimg/마시로_켄타로.webp",
+    "gender": "unknown",
+    "characterIds": [
+      403129
+    ]
+  },
+  {
+    "id": 100929,
+    "name": "마야마 아코",
+    "cvimg": "image/cvimg/마야마_아코.webp",
+    "gender": "female",
+    "characterIds": [
+      387190,
+      399888
+    ]
+  },
+  {
+    "id": 96489,
+    "name": "마에노 토모아키",
+    "cvimg": "image/cvimg/마에노_토모아키.webp",
+    "gender": "male",
+    "characterIds": [
+      37092,
+      128034,
+      130852,
+      143271,
+      161637,
+      373709,
+      388369,
+      393208
+    ]
+  },
+  {
+    "id": 112101,
+    "name": "마에다 레나",
+    "cvimg": "image/cvimg/마에다_레나.webp",
+    "gender": "female",
+    "characterIds": [
+      312630,
+      356910
+    ]
+  },
+  {
+    "id": 126863,
+    "name": "마에다 카오리",
+    "cvimg": "image/cvimg/마에다_카오리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      132798,
+      192857,
+      266758,
+      381904,
+      391152,
+      392606,
+      393216,
+      405891
+    ]
+  },
+  {
+    "id": 137418,
+    "name": "마에다 히로키",
+    "cvimg": "image/cvimg/마에다_히로키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      403352
+    ]
+  },
+  {
+    "id": 128161,
+    "name": "마에시마 아미",
+    "cvimg": "image/cvimg/마에시마_아미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      388956,
+      390612
+    ]
+  },
+  {
+    "id": 120430,
+    "name": "마에카와 료코",
+    "cvimg": "image/cvimg/마에카와_료코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      403429
+    ]
+  },
+  {
+    "id": 284240,
+    "name": "마이하라 유메",
+    "cvimg": "image/cvimg/마이하라_유메.webp",
+    "gender": "unknown",
+    "characterIds": [
+      375405
+    ]
+  },
+  {
+    "id": 95820,
+    "name": "마지마 준지",
+    "cvimg": "image/cvimg/마지마_준지.webp",
+    "gender": "male",
+    "characterIds": [
+      406534
+    ]
+  },
+  {
+    "id": 119960,
+    "name": "마츠다 리사에",
+    "cvimg": "image/cvimg/마츠다_리사에.webp",
+    "gender": "female",
+    "characterIds": [
+      400600
+    ]
+  },
+  {
+    "id": 119959,
+    "name": "마츠다 사츠미",
+    "cvimg": "image/cvimg/마츠다_사츠미.webp",
+    "gender": "female",
+    "characterIds": [
+      400478
+    ]
+  },
+  {
+    "id": 127680,
+    "name": "마츠다 슈헤이",
+    "cvimg": "image/cvimg/마츠다_슈헤이.webp",
+    "gender": "unknown",
+    "characterIds": [
+      149186
+    ]
+  },
+  {
+    "id": 95951,
+    "name": "마츠다 요지",
+    "cvimg": "image/cvimg/마츠다_요지.webp",
+    "gender": "male",
+    "characterIds": [
+      393980
+    ]
+  },
+  {
+    "id": 105273,
+    "name": "마츠다 켄이치로",
+    "cvimg": "image/cvimg/마츠다_켄이치로.webp",
+    "gender": "male",
+    "characterIds": [
+      28968,
+      163549,
+      398510,
+      402161
+    ]
+  },
+  {
+    "id": 134577,
+    "name": "마츠모토 사라",
+    "cvimg": "image/cvimg/마츠모토_사라.webp",
+    "gender": "unknown",
+    "characterIds": [
+      40983
+    ]
+  },
+  {
+    "id": 95310,
+    "name": "마츠모토 야스노리",
+    "cvimg": "image/cvimg/마츠모토_야스노리.webp",
+    "gender": "male",
+    "characterIds": [
+      35977,
+      381906,
+      387451
+    ]
+  },
+  {
+    "id": 147641,
+    "name": "마츠시게 신",
+    "cvimg": "image/cvimg/마츠시게_신.webp",
+    "gender": "unknown",
+    "characterIds": [
+      147570
+    ]
+  },
+  {
+    "id": 215866,
+    "name": "마츠시게 유타카",
+    "cvimg": "image/cvimg/마츠시게_유타카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      379199
+    ]
+  },
+  {
+    "id": 280011,
+    "name": "마츠시마 아미",
+    "cvimg": "image/cvimg/마츠시마_아미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      387442
+    ]
+  },
+  {
+    "id": 95685,
+    "name": "마츠야마 타카시",
+    "cvimg": "image/cvimg/마츠야마_타카시.webp",
+    "gender": "male",
+    "characterIds": [
+      369515
+    ]
+  },
+  {
+    "id": 149680,
+    "name": "마츠오카 미사토",
+    "cvimg": "image/cvimg/마츠오카_미사토.webp",
+    "gender": "unknown",
+    "characterIds": [
+      199527,
+      222035,
+      389134,
+      391772,
+      392740,
+      395255,
+      398277,
+      399190,
+      403586
+    ]
+  },
+  {
+    "id": 106817,
+    "name": "마츠오카 요시츠구",
+    "cvimg": "image/cvimg/마츠오카_요시츠구.webp",
+    "gender": "male",
+    "characterIds": [
+      162,
+      87319,
+      131877,
+      140648,
+      160042,
+      161908,
+      169991,
+      169993,
+      192860,
+      218501,
+      226057,
+      317219,
+      360741,
+      366665,
+      385544,
+      402180,
+      406381,
+      407810
+    ]
+  },
+  {
+    "id": 236518,
+    "name": "마츠오카 요헤이",
+    "cvimg": "image/cvimg/마츠오카_요헤이.webp",
+    "gender": "unknown",
+    "characterIds": [
+      394602,
+      403712
+    ]
+  },
+  {
+    "id": 95073,
+    "name": "마츠오카 유키",
+    "cvimg": "image/cvimg/마츠오카_유키.webp",
+    "gender": "female",
+    "characterIds": [
+      7
+    ]
+  },
+  {
+    "id": 115835,
+    "name": "마츠이 에리코",
+    "cvimg": "image/cvimg/마츠이_에리코.webp",
+    "gender": "female",
+    "characterIds": [
+      363292,
+      383266
+    ]
+  },
+  {
+    "id": 119048,
+    "name": "마츠카와 히로키",
+    "cvimg": "image/cvimg/마츠카와_히로키.webp",
+    "gender": "male",
+    "characterIds": [
+      406268
+    ]
+  },
+  {
+    "id": 95442,
+    "name": "마츠타니 카야",
+    "cvimg": "image/cvimg/마츠타니_카야.webp",
+    "gender": "female",
+    "characterIds": [
+      74776
+    ]
+  },
+  {
+    "id": 120276,
+    "name": "마키 슌이치",
+    "cvimg": "image/cvimg/마키_슌이치.webp",
+    "gender": "unknown",
+    "characterIds": [
+      388228
+    ]
+  },
+  {
+    "id": 95089,
+    "name": "마키노 유이",
+    "cvimg": "image/cvimg/마키노_유이.webp",
+    "gender": "female",
+    "characterIds": [
+      127784,
+      221839
+    ]
+  },
+  {
+    "id": 249669,
+    "name": "마키무라 타쿠야",
+    "cvimg": "image/cvimg/마키무라_타쿠야.webp",
+    "gender": "unknown",
+    "characterIds": [
+      407312
+    ]
+  },
+  {
+    "id": 103730,
+    "name": "모가미 츠구오",
+    "cvimg": "image/cvimg/모가미_츠구오.webp",
+    "gender": "male",
+    "characterIds": [
+      9130,
+      188975,
+      396745,
+      399426,
+      399569,
+      403350,
+      407251
+    ]
+  },
+  {
+    "id": 106404,
+    "name": "모로호시 스미레",
+    "cvimg": "image/cvimg/모로호시_스미레.webp",
+    "gender": "female",
+    "characterIds": [
+      27993,
+      87307,
+      89856,
+      125928,
+      230591,
+      355421,
+      363290,
+      369522,
+      372040,
+      389887,
+      393708,
+      398641,
+      409053
+    ]
+  },
+  {
+    "id": 118454,
+    "name": "모리 나나코",
+    "cvimg": "image/cvimg/모리_나나코.webp",
+    "gender": "female",
+    "characterIds": [
+      247634,
+      310556
+    ]
+  },
+  {
+    "id": 347891,
+    "name": "모리 후코",
+    "cvimg": "image/cvimg/모리_후코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      189957
+    ]
+  },
+  {
+    "id": 254163,
+    "name": "모리나가 아야토",
+    "cvimg": "image/cvimg/모리나가_아야토.webp",
+    "gender": "unknown",
+    "characterIds": [
+      381612,
+      403302
+    ]
+  },
+  {
+    "id": 119813,
+    "name": "모리나가 치토세",
+    "cvimg": "image/cvimg/모리나가_치토세.webp",
+    "gender": "female",
+    "characterIds": [
+      396161
+    ]
+  },
+  {
+    "id": 119435,
+    "name": "모리노 마코",
+    "cvimg": "image/cvimg/모리노_마코.webp",
+    "gender": "female",
+    "characterIds": [
+      192911
+    ]
+  },
+  {
+    "id": 175964,
+    "name": "모리사키 윈",
+    "cvimg": "image/cvimg/모리사키_윈.webp",
+    "gender": "unknown",
+    "characterIds": [
+      379382
+    ]
+  },
+  {
+    "id": 95006,
+    "name": "모리카와 토시유키",
+    "cvimg": "image/cvimg/모리카와_토시유키.webp",
+    "gender": "male",
+    "characterIds": [
+      127632,
+      129766,
+      146838,
+      148129,
+      156108,
+      376523,
+      380246,
+      382347,
+      394969
+    ]
+  },
+  {
+    "id": 95178,
+    "name": "모리쿠보 쇼타로",
+    "cvimg": "image/cvimg/모리쿠보_쇼타로.webp",
+    "gender": "male",
+    "characterIds": [
+      4920,
+      218086,
+      392178,
+      406934
+    ]
+  },
+  {
+    "id": 95205,
+    "name": "모리타 마사카즈",
+    "cvimg": "image/cvimg/모리타_마사카즈.webp",
+    "gender": "male",
+    "characterIds": [
+      5,
+      379468
+    ]
+  },
+  {
+    "id": 344278,
+    "name": "모모세 호나미",
+    "cvimg": "image/cvimg/모모세_호나미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      391180
+    ]
+  },
+  {
+    "id": 379027,
+    "name": "모모스케",
+    "cvimg": "image/cvimg/모모스케.webp",
+    "gender": "unknown",
+    "characterIds": [
+      379026
+    ]
+  },
+  {
+    "id": 100175,
+    "name": "모모이 이치고",
+    "cvimg": "image/cvimg/모모이_이치고.webp",
+    "gender": "female",
+    "characterIds": [
+      403541
+    ]
+  },
+  {
+    "id": 344276,
+    "name": "모토무라 레나",
+    "cvimg": "image/cvimg/모토무라_레나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      34733,
+      129840,
+      346672,
+      355438,
+      406971
+    ]
+  },
+  {
+    "id": 119794,
+    "name": "무기호 안나",
+    "cvimg": "image/cvimg/무기호_안나.webp",
+    "gender": "female",
+    "characterIds": [
+      397376
+    ]
+  },
+  {
+    "id": 96436,
+    "name": "무기히토",
+    "cvimg": "image/cvimg/무기히토.webp",
+    "gender": "male",
+    "characterIds": [
+      136446,
+      157867,
+      301335,
+      301607
+    ]
+  },
+  {
+    "id": 107238,
+    "name": "무라나카 토모",
+    "cvimg": "image/cvimg/무라나카_토모.webp",
+    "gender": "female",
+    "characterIds": [
+      392690
+    ]
+  },
+  {
+    "id": 110919,
+    "name": "무라세 아유무",
+    "cvimg": "image/cvimg/무라세_아유무.webp",
+    "gender": "male",
+    "characterIds": [
+      16214,
+      52037,
+      135018,
+      143270,
+      170487,
+      214630,
+      379167,
+      380332,
+      381122,
+      392286,
+      393230,
+      395539,
+      404550
+    ]
+  },
+  {
+    "id": 184624,
+    "name": "무라이 유지",
+    "cvimg": "image/cvimg/무라이_유지.webp",
+    "gender": "unknown",
+    "characterIds": [
+      327305,
+      404963
+    ]
+  },
+  {
+    "id": 101057,
+    "name": "무라지 마나부",
+    "cvimg": "image/cvimg/무라지_마나부.webp",
+    "gender": "male",
+    "characterIds": [
+      197156
+    ]
+  },
+  {
+    "id": 204420,
+    "name": "무라카미 마나츠",
+    "cvimg": "image/cvimg/무라카미_마나츠.webp",
+    "gender": "unknown",
+    "characterIds": [
+      396047
+    ]
+  },
+  {
+    "id": 112787,
+    "name": "무라카미 유우야",
+    "cvimg": "image/cvimg/무라카미_유우야.webp",
+    "gender": "male",
+    "characterIds": [
+      389680
+    ]
+  },
+  {
+    "id": 107212,
+    "name": "무라카와 리에",
+    "cvimg": "image/cvimg/무라카와_리에.webp",
+    "gender": "female",
+    "characterIds": [
+      88576
+    ]
+  },
+  {
+    "id": 107705,
+    "name": "무라타 타이시",
+    "cvimg": "image/cvimg/무라타_타이시.webp",
+    "gender": "male",
+    "characterIds": [
+      187010,
+      327461,
+      398633
+    ]
+  },
+  {
+    "id": 108055,
+    "name": "무로 겐키",
+    "cvimg": "image/cvimg/무로_겐키.webp",
+    "gender": "male",
+    "characterIds": [
+      18833,
+      351008
+    ]
+  },
+  {
+    "id": 193054,
+    "name": "무로이 카이토",
+    "cvimg": "image/cvimg/무로이_카이토.webp",
+    "gender": "unknown",
+    "characterIds": [
+      387468
+    ]
+  },
+  {
+    "id": 298681,
+    "name": "무사시 신노스케",
+    "cvimg": "image/cvimg/무사시_신노스케.webp",
+    "gender": "unknown",
+    "characterIds": [
+      407733
+    ]
+  },
+  {
+    "id": 95062,
+    "name": "미나가와 준코",
+    "cvimg": "image/cvimg/미나가와_준코.webp",
+    "gender": "female",
+    "characterIds": [
+      797
+    ]
+  },
+  {
+    "id": 95170,
+    "name": "미나구치 유코",
+    "cvimg": "image/cvimg/미나구치_유코.webp",
+    "gender": "female",
+    "characterIds": [
+      199191,
+      396107
+    ]
+  },
+  {
+    "id": 344277,
+    "name": "미나미 하루카",
+    "cvimg": "image/cvimg/미나미_하루카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      398534
+    ]
+  },
+  {
+    "id": 106297,
+    "name": "미나세 이노리",
+    "cvimg": "image/cvimg/미나세_이노리.webp",
+    "gender": "female",
+    "characterIds": [
+      88575,
+      212506,
+      339251,
+      355431,
+      394851,
+      398684,
+      405242
+    ]
+  },
+  {
+    "id": 166430,
+    "name": "미네 아키히로",
+    "cvimg": "image/cvimg/미네_아키히로.webp",
+    "gender": "unknown",
+    "characterIds": [
+      239478
+    ]
+  },
+  {
+    "id": 404472,
+    "name": "미네츠키 리츠",
+    "cvimg": "image/cvimg/미네츠키_리츠.webp",
+    "gender": "unknown",
+    "characterIds": [
+      374188
+    ]
+  },
+  {
+    "id": 161538,
+    "name": "미네타 히로무",
+    "cvimg": "image/cvimg/미네타_히로무.webp",
+    "gender": "unknown",
+    "characterIds": [
+      249155,
+      387288,
+      402817
+    ]
+  },
+  {
+    "id": 213146,
+    "name": "미노 유다이",
+    "cvimg": "image/cvimg/미노_유다이.webp",
+    "gender": "unknown",
+    "characterIds": [
+      394946
+    ]
+  },
+  {
+    "id": 95112,
+    "name": "미도리카와 히카루",
+    "cvimg": "image/cvimg/미도리카와_히카루.webp",
+    "gender": "male",
+    "characterIds": [
+      143536,
+      381966,
+      391899,
+      394511,
+      395541,
+      399130
+    ]
+  },
+  {
+    "id": 321534,
+    "name": "미레이",
+    "cvimg": "image/cvimg/미레이.webp",
+    "gender": "unknown",
+    "characterIds": [
+      306618
+    ]
+  },
+  {
+    "id": 106359,
+    "name": "미모리 스즈코",
+    "cvimg": "image/cvimg/미모리_스즈코.webp",
+    "gender": "female",
+    "characterIds": [
+      188521
+    ]
+  },
+  {
+    "id": 199740,
+    "name": "미사키 나코",
+    "cvimg": "image/cvimg/미사키_나코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      219930
+    ]
+  },
+  {
+    "id": 153978,
+    "name": "미야기 카즈키",
+    "cvimg": "image/cvimg/미야기_카즈키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      385651,
+      395368
+    ]
+  },
+  {
+    "id": 404471,
+    "name": "미야나가 노노카",
+    "cvimg": "image/cvimg/미야나가_노노카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      374186
+    ]
+  },
+  {
+    "id": 95065,
+    "name": "미야노 마모루",
+    "cvimg": "image/cvimg/미야노_마모루.webp",
+    "gender": "male",
+    "characterIds": [
+      89198,
+      127543,
+      130848,
+      299249,
+      396744
+    ]
+  },
+  {
+    "id": 96469,
+    "name": "미야모토 미츠루",
+    "cvimg": "image/cvimg/미야모토_미츠루.webp",
+    "gender": "male",
+    "characterIds": [
+      380022
+    ]
+  },
+  {
+    "id": 104510,
+    "name": "미야모토 유메",
+    "cvimg": "image/cvimg/미야모토_유메.webp",
+    "gender": "female",
+    "characterIds": [
+      170335,
+      259546,
+      270809,
+      270810,
+      336020,
+      355434,
+      364413,
+      389475,
+      394792
+    ]
+  },
+  {
+    "id": 125492,
+    "name": "미야모토 쥰",
+    "cvimg": "image/cvimg/미야모토_쥰.webp",
+    "gender": "unknown",
+    "characterIds": [
+      148984
+    ]
+  },
+  {
+    "id": 205209,
+    "name": "미야모토 타카히로",
+    "cvimg": "image/cvimg/미야모토_타카히로.webp",
+    "gender": "unknown",
+    "characterIds": [
+      382673
+    ]
+  },
+  {
+    "id": 95458,
+    "name": "미야무라 유코",
+    "cvimg": "image/cvimg/미야무라_유코.webp",
+    "gender": "female",
+    "characterIds": [
+      392578
+    ]
+  },
+  {
+    "id": 175015,
+    "name": "미야세 나오야",
+    "cvimg": "image/cvimg/미야세_나오야.webp",
+    "gender": "unknown",
+    "characterIds": [
+      388271,
+      392492,
+      393590
+    ]
+  },
+  {
+    "id": 381840,
+    "name": "미야세 류비",
+    "cvimg": "image/cvimg/미야세_류비.webp",
+    "gender": "unknown",
+    "characterIds": [
+      381838
+    ]
+  },
+  {
+    "id": 126572,
+    "name": "미야시타 사키",
+    "cvimg": "image/cvimg/미야시타_사키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      377493
+    ]
+  },
+  {
+    "id": 95784,
+    "name": "미야시타 에이지",
+    "cvimg": "image/cvimg/미야시타_에이지.webp",
+    "gender": "male",
+    "characterIds": [
+      395253
+    ]
+  },
+  {
+    "id": 102699,
+    "name": "미야우치 아츠시",
+    "cvimg": "image/cvimg/미야우치_아츠시.webp",
+    "gender": "unknown",
+    "characterIds": [
+      2675,
+      306332,
+      327299
+    ]
+  },
+  {
+    "id": 152228,
+    "name": "미야자와 키요코",
+    "cvimg": "image/cvimg/미야자와_키요코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      201570,
+      406508
+    ]
+  },
+  {
+    "id": 320298,
+    "name": "미야자키 마사야",
+    "cvimg": "image/cvimg/미야자키_마사야.webp",
+    "gender": "unknown",
+    "characterIds": [
+      382258
+    ]
+  },
+  {
+    "id": 164137,
+    "name": "미야자키 아카리",
+    "cvimg": "image/cvimg/미야자키_아카리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      397774
+    ]
+  },
+  {
+    "id": 127155,
+    "name": "미야자키 유우",
+    "cvimg": "image/cvimg/미야자키_유우.webp",
+    "gender": "unknown",
+    "characterIds": [
+      398279,
+      404966
+    ]
+  },
+  {
+    "id": 190927,
+    "name": "미야조노 타쿠무",
+    "cvimg": "image/cvimg/미야조노_타쿠무.webp",
+    "gender": "unknown",
+    "characterIds": [
+      295784,
+      390655
+    ]
+  },
+  {
+    "id": 349118,
+    "name": "미야지마 다케시",
+    "cvimg": "image/cvimg/미야지마_다케시.webp",
+    "gender": "unknown",
+    "characterIds": [
+      405444
+    ]
+  },
+  {
+    "id": 107588,
+    "name": "미야케 마리에",
+    "cvimg": "image/cvimg/미야케_마리에.webp",
+    "gender": "female",
+    "characterIds": [
+      379028,
+      381987
+    ]
+  },
+  {
+    "id": 95720,
+    "name": "미야케 켄타",
+    "cvimg": "image/cvimg/미야케_켄타.webp",
+    "gender": "male",
+    "characterIds": [
+      16875,
+      23652,
+      89224,
+      172169,
+      212585,
+      225097,
+      295785,
+      377719,
+      389341,
+      398562
+    ]
+  },
+  {
+    "id": 264749,
+    "name": "미야타 히로노리",
+    "cvimg": "image/cvimg/미야타_히로노리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      405892
+    ]
+  },
+  {
+    "id": 382821,
+    "name": "미요시 아야카",
+    "cvimg": "image/cvimg/미요시_아야카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      382820
+    ]
+  },
+  {
+    "id": 140853,
+    "name": "미우라 치유키",
+    "cvimg": "image/cvimg/미우라_치유키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      305754
+    ]
+  },
+  {
+    "id": 353207,
+    "name": "미우라 카이토",
+    "cvimg": "image/cvimg/미우라_카이토.webp",
+    "gender": "unknown",
+    "characterIds": [
+      397299
+    ]
+  },
+  {
+    "id": 296335,
+    "name": "미유미 슈리",
+    "cvimg": "image/cvimg/미유미_슈리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      408138
+    ]
+  },
+  {
+    "id": 378809,
+    "name": "미조노 츠무기",
+    "cvimg": "image/cvimg/미조노_츠무기.webp",
+    "gender": "unknown",
+    "characterIds": [
+      404005
+    ]
+  },
+  {
+    "id": 126794,
+    "name": "미즈나카 마사아키",
+    "cvimg": "image/cvimg/미즈나카_마사아키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      16715,
+      28967,
+      159627,
+      212393,
+      214627,
+      256438,
+      338215,
+      375632,
+      399217
+    ]
+  },
+  {
+    "id": 190420,
+    "name": "미즈노 아미",
+    "cvimg": "image/cvimg/미즈노_아미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      391768
+    ]
+  },
+  {
+    "id": 95048,
+    "name": "미즈사와 후미에",
+    "cvimg": "image/cvimg/미즈사와_후미에.webp",
+    "gender": "female",
+    "characterIds": [
+      403915
+    ]
+  },
+  {
+    "id": 391333,
+    "name": "미즈시로 스이",
+    "cvimg": "image/cvimg/미즈시로_스이.webp",
+    "gender": "unknown",
+    "characterIds": [
+      391310
+    ]
+  },
+  {
+    "id": 96452,
+    "name": "미즈시마 유",
+    "cvimg": "image/cvimg/미즈시마_유.webp",
+    "gender": "male",
+    "characterIds": [
+      233909,
+      404502
+    ]
+  },
+  {
+    "id": 95081,
+    "name": "미즈키 나나",
+    "cvimg": "image/cvimg/미즈키_나나.webp",
+    "gender": "female",
+    "characterIds": [
+      1896,
+      51107,
+      139315,
+      283136,
+      382950,
+      403125
+    ]
+  },
+  {
+    "id": 101567,
+    "name": "미즈타 와사비",
+    "cvimg": "image/cvimg/미즈타_와사비.webp",
+    "gender": "unknown",
+    "characterIds": [
+      381834
+    ]
+  },
+  {
+    "id": 95009,
+    "name": "미츠이시 코토노",
+    "cvimg": "image/cvimg/미츠이시_코토노.webp",
+    "gender": "female",
+    "characterIds": [
+      127650,
+      137973,
+      169777
+    ]
+  },
+  {
+    "id": 120386,
+    "name": "미츠토미 타카오",
+    "cvimg": "image/cvimg/미츠토미_타카오.webp",
+    "gender": "unknown",
+    "characterIds": [
+      388270
+    ]
+  },
+  {
+    "id": 118511,
+    "name": "미카미 사토시",
+    "cvimg": "image/cvimg/미카미_사토시.webp",
+    "gender": "male",
+    "characterIds": [
+      149275,
+      387202,
+      408136
+    ]
+  },
+  {
+    "id": 106236,
+    "name": "미카미 시오리",
+    "cvimg": "image/cvimg/미카미_시오리.webp",
+    "gender": "female",
+    "characterIds": [
+      389601,
+      400479
+    ]
+  },
+  {
+    "id": 259588,
+    "name": "미카와 하루나",
+    "cvimg": "image/cvimg/미카와_하루나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      395434,
+      396252
+    ]
+  },
+  {
+    "id": 207261,
+    "name": "미카지리 노조미",
+    "cvimg": "image/cvimg/미카지리_노조미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      402031
+    ]
+  },
+  {
+    "id": 95022,
+    "name": "미키 신이치로",
+    "cvimg": "image/cvimg/미키_신이치로.webp",
+    "gender": "male",
+    "characterIds": [
+      210,
+      18615,
+      79491,
+      121058,
+      132984,
+      205234,
+      249156,
+      306695,
+      324639,
+      331269,
+      380216,
+      382119,
+      391272,
+      391721,
+      393882,
+      400471,
+      401989,
+      402346
+    ]
+  },
+  {
+    "id": 387504,
+    "name": "바바 란코",
+    "cvimg": "image/cvimg/바바_란코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      320097
+    ]
+  },
+  {
+    "id": 249680,
+    "name": "바바 준페이",
+    "cvimg": "image/cvimg/바바_준페이.webp",
+    "gender": "unknown",
+    "characterIds": [
+      385650
+    ]
+  },
+  {
+    "id": 148876,
+    "name": "바토리 쇼고",
+    "cvimg": "image/cvimg/바토리_쇼고.webp",
+    "gender": "unknown",
+    "characterIds": [
+      392839
+    ]
+  },
+  {
+    "id": 95082,
+    "name": "박로미",
+    "cvimg": "image/cvimg/박로미.webp",
+    "gender": "female",
+    "characterIds": [
+      245,
+      170000,
+      393978
+    ]
+  },
+  {
+    "id": 151336,
+    "name": "반 타이토",
+    "cvimg": "image/cvimg/반_타이토.webp",
+    "gender": "unknown",
+    "characterIds": [
+      195601,
+      197159,
+      306843,
+      338232,
+      394144,
+      394258,
+      396496,
+      400379,
+      400475
+    ]
+  },
+  {
+    "id": 323171,
+    "name": "본코바라 코우",
+    "cvimg": "image/cvimg/본코바라_코우.webp",
+    "gender": "unknown",
+    "characterIds": [
+      381811,
+      396254,
+      403470,
+      406604
+    ]
+  },
+  {
+    "id": 114371,
+    "name": "브리드컷 세라 에미",
+    "cvimg": "image/cvimg/브리드컷_세라_에미.webp",
+    "gender": "female",
+    "characterIds": [
+      396118,
+      396250
+    ]
+  },
+  {
+    "id": 101937,
+    "name": "비후 히토시",
+    "cvimg": "image/cvimg/비후_히토시.webp",
+    "gender": "male",
+    "characterIds": [
+      387976
+    ]
+  },
+  {
+    "id": 120172,
+    "name": "사가라 마유",
+    "cvimg": "image/cvimg/사가라_마유.webp",
+    "gender": "female",
+    "characterIds": [
+      132797,
+      308290,
+      382735,
+      386635,
+      399572
+    ]
+  },
+  {
+    "id": 95126,
+    "name": "사나다 아사미",
+    "cvimg": "image/cvimg/사나다_아사미.webp",
+    "gender": "female",
+    "characterIds": [
+      127787,
+      387707
+    ]
+  },
+  {
+    "id": 404433,
+    "name": "사나이 루나",
+    "cvimg": "image/cvimg/사나이_루나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      404425
+    ]
+  },
+  {
+    "id": 110701,
+    "name": "사노 시로",
+    "cvimg": "image/cvimg/사노_시로.webp",
+    "gender": "male",
+    "characterIds": [
+      400743
+    ]
+  },
+  {
+    "id": 100749,
+    "name": "사다오카 사유리",
+    "cvimg": "image/cvimg/사다오카_사유리.webp",
+    "gender": "female",
+    "characterIds": [
+      205795,
+      394517
+    ]
+  },
+  {
+    "id": 275616,
+    "name": "사사 츠바사",
+    "cvimg": "image/cvimg/사사_츠바사.webp",
+    "gender": "unknown",
+    "characterIds": [
+      375403
+    ]
+  },
+  {
+    "id": 163674,
+    "name": "사사 켄타",
+    "cvimg": "image/cvimg/사사_켄타.webp",
+    "gender": "unknown",
+    "characterIds": [
+      175767
+    ]
+  },
+  {
+    "id": 101239,
+    "name": "사사누마 아키라",
+    "cvimg": "image/cvimg/사사누마_아키라.webp",
+    "gender": "male",
+    "characterIds": [
+      376031
+    ]
+  },
+  {
+    "id": 370609,
+    "name": "사사모리 요헤이",
+    "cvimg": "image/cvimg/사사모리_요헤이.webp",
+    "gender": "unknown",
+    "characterIds": [
+      381611
+    ]
+  },
+  {
+    "id": 381205,
+    "name": "사사키 루나",
+    "cvimg": "image/cvimg/사사키_루나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      381203
+    ]
+  },
+  {
+    "id": 106675,
+    "name": "사사키 히로오",
+    "cvimg": "image/cvimg/사사키_히로오.webp",
+    "gender": "male",
+    "characterIds": [
+      399537
+    ]
+  },
+  {
+    "id": 127725,
+    "name": "사사하라 유우",
+    "cvimg": "image/cvimg/사사하라_유우.webp",
+    "gender": "unknown",
+    "characterIds": [
+      388593,
+      391157,
+      396248
+    ]
+  },
+  {
+    "id": 131481,
+    "name": "사시데 마리아",
+    "cvimg": "image/cvimg/사시데_마리아.webp",
+    "gender": "unknown",
+    "characterIds": [
+      132802,
+      392627
+    ]
+  },
+  {
+    "id": 139844,
+    "name": "사에키 이오리",
+    "cvimg": "image/cvimg/사에키_이오리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      171747,
+      377495,
+      389144,
+      393232
+    ]
+  },
+  {
+    "id": 288078,
+    "name": "사와다 히메",
+    "cvimg": "image/cvimg/사와다_히메.webp",
+    "gender": "unknown",
+    "characterIds": [
+      320099
+    ]
+  },
+  {
+    "id": 95099,
+    "name": "사와시로 미유키",
+    "cvimg": "image/cvimg/사와시로_미유키.webp",
+    "gender": "female",
+    "characterIds": [
+      140636,
+      171138,
+      362333,
+      400473
+    ]
+  },
+  {
+    "id": 120159,
+    "name": "사와시로 치하루",
+    "cvimg": "image/cvimg/사와시로_치하루.webp",
+    "gender": "male",
+    "characterIds": [
+      187009
+    ]
+  },
+  {
+    "id": 95197,
+    "name": "사이가 미츠키",
+    "cvimg": "image/cvimg/사이가_미츠키.webp",
+    "gender": "female",
+    "characterIds": [
+      127783,
+      147759,
+      163622,
+      398540
+    ]
+  },
+  {
+    "id": 96359,
+    "name": "사이젠 타다히사",
+    "cvimg": "image/cvimg/사이젠_타다히사.webp",
+    "gender": "male",
+    "characterIds": [
+      504
+    ]
+  },
+  {
+    "id": 113227,
+    "name": "사이토 소마",
+    "cvimg": "image/cvimg/사이토_소마.webp",
+    "gender": "male",
+    "characterIds": [
+      18034,
+      173948,
+      197977,
+      252543,
+      306187,
+      335862,
+      338217
+    ]
+  },
+  {
+    "id": 96431,
+    "name": "사이토 시로",
+    "cvimg": "image/cvimg/사이토_시로.webp",
+    "gender": "male",
+    "characterIds": [
+      396257
+    ]
+  },
+  {
+    "id": 381839,
+    "name": "사이토 아스카",
+    "cvimg": "image/cvimg/사이토_아스카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      381837
+    ]
+  },
+  {
+    "id": 103476,
+    "name": "사이토 유카",
+    "cvimg": "image/cvimg/사이토_유카.webp",
+    "gender": "female",
+    "characterIds": [
+      406657
+    ]
+  },
+  {
+    "id": 107801,
+    "name": "사이토 유키",
+    "cvimg": "image/cvimg/사이토_유키.webp",
+    "gender": "female",
+    "characterIds": [
+      379207
+    ]
+  },
+  {
+    "id": 378759,
+    "name": "사이토 준",
+    "cvimg": "image/cvimg/사이토_준.webp",
+    "gender": "unknown",
+    "characterIds": [
+      394597
+    ]
+  },
+  {
+    "id": 102914,
+    "name": "사이토 지로",
+    "cvimg": "image/cvimg/사이토_지로.webp",
+    "gender": "male",
+    "characterIds": [
+      246058,
+      369517,
+      399555
+    ]
+  },
+  {
+    "id": 95061,
+    "name": "사이토 치와",
+    "cvimg": "image/cvimg/사이토_치와.webp",
+    "gender": "female",
+    "characterIds": [
+      355084,
+      393215,
+      393909
+    ]
+  },
+  {
+    "id": 95294,
+    "name": "사이토 키미코",
+    "cvimg": "image/cvimg/사이토_키미코.webp",
+    "gender": "female",
+    "characterIds": [
+      196077,
+      393919,
+      399884
+    ]
+  },
+  {
+    "id": 118377,
+    "name": "사이토 히로노리",
+    "cvimg": "image/cvimg/사이토_히로노리.webp",
+    "gender": "male",
+    "characterIds": [
+      212901
+    ]
+  },
+  {
+    "id": 194165,
+    "name": "사지 카즈야",
+    "cvimg": "image/cvimg/사지_카즈야.webp",
+    "gender": "unknown",
+    "characterIds": [
+      390786
+    ]
+  },
+  {
+    "id": 95278,
+    "name": "사카구치 다이스케",
+    "cvimg": "image/cvimg/사카구치_다이스케.webp",
+    "gender": "male",
+    "characterIds": [
+      130862,
+      393894
+    ]
+  },
+  {
+    "id": 95431,
+    "name": "사카구치 슈헤이",
+    "cvimg": "image/cvimg/사카구치_슈헤이.webp",
+    "gender": "male",
+    "characterIds": [
+      82767,
+      214628
+    ]
+  },
+  {
+    "id": 95090,
+    "name": "사카모토 마아야",
+    "cvimg": "image/cvimg/사카모토_마아야.webp",
+    "gender": "female",
+    "characterIds": [
+      1180,
+      1795,
+      145098,
+      150194,
+      206510,
+      387890
+    ]
+  },
+  {
+    "id": 214249,
+    "name": "사카이 미사노",
+    "cvimg": "image/cvimg/사카이_미사노.webp",
+    "gender": "unknown",
+    "characterIds": [
+      393593
+    ]
+  },
+  {
+    "id": 119832,
+    "name": "사카이 코다이",
+    "cvimg": "image/cvimg/사카이_코다이.webp",
+    "gender": "male",
+    "characterIds": [
+      41004
+    ]
+  },
+  {
+    "id": 96756,
+    "name": "사카즈메 타카유키",
+    "cvimg": "image/cvimg/사카즈메_타카유키.webp",
+    "gender": "male",
+    "characterIds": [
+      406315
+    ]
+  },
+  {
+    "id": 95362,
+    "name": "사카키바라 요시코",
+    "cvimg": "image/cvimg/사카키바라_요시코.webp",
+    "gender": "female",
+    "characterIds": [
+      217291,
+      380247,
+      398964
+    ]
+  },
+  {
+    "id": 216701,
+    "name": "사카키하라 유우키",
+    "cvimg": "image/cvimg/사카키하라_유우키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      133627,
+      243828,
+      324198,
+      381980,
+      396497,
+      398519
+    ]
+  },
+  {
+    "id": 158510,
+    "name": "사카타 쇼고",
+    "cvimg": "image/cvimg/사카타_쇼고.webp",
+    "gender": "unknown",
+    "characterIds": [
+      19492,
+      171746,
+      281251,
+      295783,
+      319955,
+      327981,
+      374766,
+      380697
+    ]
+  },
+  {
+    "id": 96673,
+    "name": "사코 마유미",
+    "cvimg": "image/cvimg/사코_마유미.webp",
+    "gender": "female",
+    "characterIds": [
+      331261
+    ]
+  },
+  {
+    "id": 106622,
+    "name": "사쿠라 아야네",
+    "cvimg": "image/cvimg/사쿠라_아야네.webp",
+    "gender": "female",
+    "characterIds": [
+      148743,
+      152675,
+      191507,
+      214622,
+      237576
+    ]
+  },
+  {
+    "id": 119834,
+    "name": "사쿠라 카오루",
+    "cvimg": "image/cvimg/사쿠라_카오루.webp",
+    "gender": "female",
+    "characterIds": [
+      380391,
+      405413
+    ]
+  },
+  {
+    "id": 136232,
+    "name": "사쿠라기 아미사",
+    "cvimg": "image/cvimg/사쿠라기_아미사.webp",
+    "gender": "unknown",
+    "characterIds": [
+      136233
+    ]
+  },
+  {
+    "id": 122482,
+    "name": "사쿠라바 아리사",
+    "cvimg": "image/cvimg/사쿠라바_아리사.webp",
+    "gender": "unknown",
+    "characterIds": [
+      395411
+    ]
+  },
+  {
+    "id": 386823,
+    "name": "사쿠라이 모모",
+    "cvimg": "image/cvimg/사쿠라이_모모.webp",
+    "gender": "unknown",
+    "characterIds": [
+      386824
+    ]
+  },
+  {
+    "id": 311996,
+    "name": "사쿠라이 미유키",
+    "cvimg": "image/cvimg/사쿠라이_미유키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      307379,
+      392076
+    ]
+  },
+  {
+    "id": 95079,
+    "name": "사쿠라이 타카히로",
+    "cvimg": "image/cvimg/사쿠라이_타카히로.webp",
+    "gender": "male",
+    "characterIds": [
+      30267,
+      121164,
+      131033,
+      180506,
+      218267,
+      289584,
+      393979,
+      393996,
+      394852,
+      398632
+    ]
+  },
+  {
+    "id": 109163,
+    "name": "사쿠라이 토오루",
+    "cvimg": "image/cvimg/사쿠라이_토오루.webp",
+    "gender": "male",
+    "characterIds": [
+      295780,
+      389113
+    ]
+  },
+  {
+    "id": 387026,
+    "name": "사쿠마 노부유키",
+    "cvimg": "image/cvimg/사쿠마_노부유키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      387025
+    ]
+  },
+  {
+    "id": 272715,
+    "name": "사쿠마 다이스케",
+    "cvimg": "image/cvimg/사쿠마_다이스케.webp",
+    "gender": "unknown",
+    "characterIds": [
+      320887,
+      381607
+    ]
+  },
+  {
+    "id": 198641,
+    "name": "사쿠마 모토키",
+    "cvimg": "image/cvimg/사쿠마_모토키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      406642
+    ]
+  },
+  {
+    "id": 102492,
+    "name": "사쿠야 슌스케",
+    "cvimg": "image/cvimg/사쿠야_슌스케.webp",
+    "gender": "male",
+    "characterIds": [
+      87299,
+      395538,
+      399542,
+      399689
+    ]
+  },
+  {
+    "id": 141083,
+    "name": "사토 겐",
+    "cvimg": "image/cvimg/사토_겐.webp",
+    "gender": "unknown",
+    "characterIds": [
+      124145,
+      306273,
+      367530,
+      381823,
+      382255,
+      399860
+    ]
+  },
+  {
+    "id": 256566,
+    "name": "사토 류지",
+    "cvimg": "image/cvimg/사토_류지.webp",
+    "gender": "unknown",
+    "characterIds": [
+      1599
+    ]
+  },
+  {
+    "id": 95241,
+    "name": "사토 리나",
+    "cvimg": "image/cvimg/사토_리나.webp",
+    "gender": "female",
+    "characterIds": [
+      123217,
+      382345,
+      393928
+    ]
+  },
+  {
+    "id": 303877,
+    "name": "사토 마사유키",
+    "cvimg": "image/cvimg/사토_마사유키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      379823,
+      405952
+    ]
+  },
+  {
+    "id": 153559,
+    "name": "사토 미나코",
+    "cvimg": "image/cvimg/사토_미나코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      171748
+    ]
+  },
+  {
+    "id": 108801,
+    "name": "사토 미유키",
+    "cvimg": "image/cvimg/사토_미유키.webp",
+    "gender": "female",
+    "characterIds": [
+      392491,
+      407162
+    ]
+  },
+  {
+    "id": 101560,
+    "name": "사토 사토미",
+    "cvimg": "image/cvimg/사토_사토미.webp",
+    "gender": "female",
+    "characterIds": [
+      202487,
+      392078
+    ]
+  },
+  {
+    "id": 100222,
+    "name": "사토 세츠지",
+    "cvimg": "image/cvimg/사토_세츠지.webp",
+    "gender": "male",
+    "characterIds": [
+      401992,
+      404102,
+      406932
+    ]
+  },
+  {
+    "id": 125230,
+    "name": "사토 아즈사",
+    "cvimg": "image/cvimg/사토_아즈사.webp",
+    "gender": "unknown",
+    "characterIds": [
+      127782
+    ]
+  },
+  {
+    "id": 323969,
+    "name": "사토 아키나리",
+    "cvimg": "image/cvimg/사토_아키나리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      220250
+    ]
+  },
+  {
+    "id": 104580,
+    "name": "사토 타쿠야",
+    "cvimg": "image/cvimg/사토_타쿠야.webp",
+    "gender": "male",
+    "characterIds": [
+      28828,
+      135024,
+      281763,
+      342425,
+      371757
+    ]
+  },
+  {
+    "id": 125030,
+    "name": "사토 하나",
+    "cvimg": "image/cvimg/사토_하나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      392755
+    ]
+  },
+  {
+    "id": 333068,
+    "name": "사토 하루카",
+    "cvimg": "image/cvimg/사토_하루카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      355436,
+      398635
+    ]
+  },
+  {
+    "id": 303477,
+    "name": "사하쿠 미유키",
+    "cvimg": "image/cvimg/사하쿠_미유키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      387018
+    ]
+  },
+  {
+    "id": 128197,
+    "name": "산페이 유우키",
+    "cvimg": "image/cvimg/산페이_유우키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      382229,
+      406602
+    ]
+  },
+  {
+    "id": 95407,
+    "name": "산페이 유코a",
+    "cvimg": "image/cvimg/산페이_유코a.webp",
+    "gender": "female",
+    "characterIds": [
+      126547,
+      308634,
+      336463,
+      381883
+    ]
+  },
+  {
+    "id": 116515,
+    "name": "세리자와 유우",
+    "cvimg": "image/cvimg/세리자와_유우.webp",
+    "gender": "female",
+    "characterIds": [
+      88929,
+      153703,
+      295778,
+      312631,
+      322472,
+      327033,
+      360413,
+      378746,
+      395626,
+      400422,
+      400432,
+      407528
+    ]
+  },
+  {
+    "id": 95001,
+    "name": "세키 토모카즈",
+    "cvimg": "image/cvimg/세키_토모카즈.webp",
+    "gender": "male",
+    "characterIds": [
+      2514,
+      2822,
+      10284,
+      137974,
+      195780,
+      336095,
+      366649,
+      371795
+    ]
+  },
+  {
+    "id": 95129,
+    "name": "세키 토시히코",
+    "cvimg": "image/cvimg/세키_토시히코.webp",
+    "gender": "male",
+    "characterIds": [
+      201588,
+      220791,
+      388602,
+      388812,
+      405460,
+      405696
+    ]
+  },
+  {
+    "id": 119155,
+    "name": "세키네 아키라",
+    "cvimg": "image/cvimg/세키네_아키라.webp",
+    "gender": "female",
+    "characterIds": [
+      88875,
+      147513,
+      187008,
+      220378,
+      326398,
+      328089,
+      339249,
+      375493,
+      386988,
+      389310,
+      391154,
+      400744,
+      403442,
+      405045
+    ]
+  },
+  {
+    "id": 298582,
+    "name": "세토 모모코",
+    "cvimg": "image/cvimg/세토_모모코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      159629,
+      339098,
+      379525
+    ]
+  },
+  {
+    "id": 106787,
+    "name": "세토 아사미",
+    "cvimg": "image/cvimg/세토_아사미.webp",
+    "gender": "female",
+    "characterIds": [
+      129765,
+      173762,
+      201567,
+      223871,
+      229290,
+      388636,
+      394088,
+      401651
+    ]
+  },
+  {
+    "id": 398686,
+    "name": "세토 하즈키",
+    "cvimg": "image/cvimg/세토_하즈키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      398685
+    ]
+  },
+  {
+    "id": 383264,
+    "name": "센가 히카리",
+    "cvimg": "image/cvimg/센가_히카리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      138874
+    ]
+  },
+  {
+    "id": 404474,
+    "name": "센고쿠 유노",
+    "cvimg": "image/cvimg/센고쿠_유노.webp",
+    "gender": "unknown",
+    "characterIds": [
+      374185
+    ]
+  },
+  {
+    "id": 119616,
+    "name": "센본기 사야카",
+    "cvimg": "image/cvimg/센본기_사야카.webp",
+    "gender": "female",
+    "characterIds": [
+      125169,
+      128040,
+      129764,
+      137546,
+      170334,
+      328206,
+      364056,
+      369796,
+      393181,
+      400906
+    ]
+  },
+  {
+    "id": 96302,
+    "name": "소노베 케이이치",
+    "cvimg": "image/cvimg/소노베_케이이치.webp",
+    "gender": "male",
+    "characterIds": [
+      227443
+    ]
+  },
+  {
+    "id": 95602,
+    "name": "소노자키 미에",
+    "cvimg": "image/cvimg/소노자키_미에.webp",
+    "gender": "female",
+    "characterIds": [
+      388246,
+      392884,
+      407755
+    ]
+  },
+  {
+    "id": 113545,
+    "name": "소마 코이치",
+    "cvimg": "image/cvimg/소마_코이치.webp",
+    "gender": "male",
+    "characterIds": [
+      181313,
+      389855,
+      396749
+    ]
+  },
+  {
+    "id": 135607,
+    "name": "소메타니 쇼타",
+    "cvimg": "image/cvimg/소메타니_쇼타.webp",
+    "gender": "unknown",
+    "characterIds": [
+      379203
+    ]
+  },
+  {
+    "id": 150947,
+    "name": "송도",
+    "cvimg": "image/cvimg/송도.webp",
+    "gender": "unknown",
+    "characterIds": [
+      31212
+    ]
+  },
+  {
+    "id": 162831,
+    "name": "쇼가와 히토미",
+    "cvimg": "image/cvimg/쇼가와_히토미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      193751,
+      388227,
+      402135
+    ]
+  },
+  {
+    "id": 288528,
+    "name": "쇼지 사라사",
+    "cvimg": "image/cvimg/쇼지_사라사.webp",
+    "gender": "unknown",
+    "characterIds": [
+      381222
+    ]
+  },
+  {
+    "id": 102262,
+    "name": "쇼지 우메카",
+    "cvimg": "image/cvimg/쇼지_우메카.webp",
+    "gender": "female",
+    "characterIds": [
+      306703,
+      405727
+    ]
+  },
+  {
+    "id": 321536,
+    "name": "슈리",
+    "cvimg": "image/cvimg/슈리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      306620
+    ]
+  },
+  {
+    "id": 153582,
+    "name": "슈토 유키나",
+    "cvimg": "image/cvimg/슈토_유키나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      377721,
+      392630
+    ]
+  },
+  {
+    "id": 95037,
+    "name": "스고 타카유키",
+    "cvimg": "image/cvimg/스고_타카유키.webp",
+    "gender": "male",
+    "characterIds": [
+      16261,
+      68537,
+      125426
+    ]
+  },
+  {
+    "id": 136365,
+    "name": "스구타 히나",
+    "cvimg": "image/cvimg/스구타_히나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      396462
+    ]
+  },
+  {
+    "id": 96153,
+    "name": "스기모토 유",
+    "cvimg": "image/cvimg/스기모토_유.webp",
+    "gender": "female",
+    "characterIds": [
+      391273
+    ]
+  },
+  {
+    "id": 106141,
+    "name": "스기사키 료",
+    "cvimg": "image/cvimg/스기사키_료.webp",
+    "gender": "male",
+    "characterIds": [
+      130853,
+      341267,
+      382276,
+      398323
+    ]
+  },
+  {
+    "id": 95016,
+    "name": "스기야마 노리아키",
+    "cvimg": "image/cvimg/스기야마_노리아키.webp",
+    "gender": "male",
+    "characterIds": [
+      564,
+      392454
+    ]
+  },
+  {
+    "id": 125475,
+    "name": "스기야마 리호",
+    "cvimg": "image/cvimg/스기야마_리호.webp",
+    "gender": "unknown",
+    "characterIds": [
+      318896,
+      338230,
+      374529,
+      376030,
+      380871,
+      393710,
+      397271
+    ]
+  },
+  {
+    "id": 119870,
+    "name": "스기우라 시오리",
+    "cvimg": "image/cvimg/스기우라_시오리.webp",
+    "gender": "female",
+    "characterIds": [
+      382225
+    ]
+  },
+  {
+    "id": 95002,
+    "name": "스기타 토모카즈",
+    "cvimg": "image/cvimg/스기타_토모카즈.webp",
+    "gender": "male",
+    "characterIds": [
+      127291,
+      159840,
+      201311,
+      241937,
+      248818,
+      306696,
+      381986,
+      382217,
+      382307,
+      382666,
+      394718,
+      394784,
+      396164,
+      397041,
+      397414,
+      399870,
+      400780,
+      402385,
+      403058,
+      407977
+    ]
+  },
+  {
+    "id": 350107,
+    "name": "스노 치히로",
+    "cvimg": "image/cvimg/스노_치히로.webp",
+    "gender": "unknown",
+    "characterIds": [
+      379812
+    ]
+  },
+  {
+    "id": 129947,
+    "name": "스미 타카히로",
+    "cvimg": "image/cvimg/스미_타카히로.webp",
+    "gender": "unknown",
+    "characterIds": [
+      200767,
+      307701
+    ]
+  },
+  {
+    "id": 111137,
+    "name": "스미토모 나나에",
+    "cvimg": "image/cvimg/스미토모_나나에.webp",
+    "gender": "unknown",
+    "characterIds": [
+      396500
+    ]
+  },
+  {
+    "id": 95583,
+    "name": "스야마 아키오",
+    "cvimg": "image/cvimg/스야마_아키오.webp",
+    "gender": "male",
+    "characterIds": [
+      390208
+    ]
+  },
+  {
+    "id": 127723,
+    "name": "스야마 에미리",
+    "cvimg": "image/cvimg/스야마_에미리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      392079
+    ]
+  },
+  {
+    "id": 115106,
+    "name": "스와 아야카",
+    "cvimg": "image/cvimg/스와_아야카.webp",
+    "gender": "female",
+    "characterIds": [
+      336022
+    ]
+  },
+  {
+    "id": 95095,
+    "name": "스와베 준이치",
+    "cvimg": "image/cvimg/스와베_준이치.webp",
+    "gender": "male",
+    "characterIds": [
+      89225,
+      127825,
+      133701,
+      137547,
+      140647,
+      151772,
+      151775,
+      158683,
+      170488,
+      214287,
+      229892,
+      261997,
+      295789,
+      315143,
+      321814,
+      363291,
+      380702,
+      381967,
+      382825,
+      405977
+    ]
+  },
+  {
+    "id": 114834,
+    "name": "스자키 아야",
+    "cvimg": "image/cvimg/스자키_아야.webp",
+    "gender": "female",
+    "characterIds": [
+      293203,
+      394089
+    ]
+  },
+  {
+    "id": 95005,
+    "name": "스즈무라 켄이치",
+    "cvimg": "image/cvimg/스즈무라_켄이치.webp",
+    "gender": "male",
+    "characterIds": [
+      130714,
+      168842,
+      321730,
+      387891
+    ]
+  },
+  {
+    "id": 126963,
+    "name": "스즈시로 사유미",
+    "cvimg": "image/cvimg/스즈시로_사유미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      173951,
+      200622,
+      278302,
+      281250,
+      300905,
+      308681,
+      309275,
+      316484,
+      318829,
+      339096,
+      343069,
+      363687,
+      367201,
+      391937
+    ]
+  },
+  {
+    "id": 101504,
+    "name": "스즈키 레이코",
+    "cvimg": "image/cvimg/스즈키_레이코.webp",
+    "gender": "female",
+    "characterIds": [
+      337474
+    ]
+  },
+  {
+    "id": 123450,
+    "name": "스즈키 료타",
+    "cvimg": "image/cvimg/스즈키_료타.webp",
+    "gender": "unknown",
+    "characterIds": [
+      137304,
+      145097,
+      148752,
+      189144,
+      207024,
+      233970,
+      342424,
+      377102,
+      379814,
+      380761,
+      387285,
+      391938,
+      392096,
+      399105,
+      399672,
+      407759,
+      408133
+    ]
+  },
+  {
+    "id": 373725,
+    "name": "스즈키 모구라",
+    "cvimg": "image/cvimg/스즈키_모구라.webp",
+    "gender": "unknown",
+    "characterIds": [
+      407812,
+      407815
+    ]
+  },
+  {
+    "id": 120134,
+    "name": "스즈키 미노리",
+    "cvimg": "image/cvimg/스즈키_미노리.webp",
+    "gender": "female",
+    "characterIds": [
+      307386,
+      392176,
+      405729
+    ]
+  },
+  {
+    "id": 283232,
+    "name": "스즈키 아유",
+    "cvimg": "image/cvimg/스즈키_아유.webp",
+    "gender": "unknown",
+    "characterIds": [
+      390617
+    ]
+  },
+  {
+    "id": 118688,
+    "name": "스즈키 에리",
+    "cvimg": "image/cvimg/스즈키_에리.webp",
+    "gender": "female",
+    "characterIds": [
+      72207,
+      175577,
+      404919
+    ]
+  },
+  {
+    "id": 95735,
+    "name": "스즈키 타츠히사",
+    "cvimg": "image/cvimg/스즈키_타츠히사.webp",
+    "gender": "male",
+    "characterIds": [
+      20059,
+      151767
+    ]
+  },
+  {
+    "id": 101981,
+    "name": "스즈키 타쿠마",
+    "cvimg": "image/cvimg/스즈키_타쿠마.webp",
+    "gender": "male",
+    "characterIds": [
+      385648
+    ]
+  },
+  {
+    "id": 359682,
+    "name": "스즈키 히나",
+    "cvimg": "image/cvimg/스즈키_히나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      327032
+    ]
+  },
+  {
+    "id": 403540,
+    "name": "시노노메 리아",
+    "cvimg": "image/cvimg/시노노메_리아.webp",
+    "gender": "unknown",
+    "characterIds": [
+      403539
+    ]
+  },
+  {
+    "id": 101724,
+    "name": "시노미야 고",
+    "cvimg": "image/cvimg/시노미야_고.webp",
+    "gender": "male",
+    "characterIds": [
+      220911
+    ]
+  },
+  {
+    "id": 205010,
+    "name": "시라스 사호",
+    "cvimg": "image/cvimg/시라스_사호.webp",
+    "gender": "unknown",
+    "characterIds": [
+      388360,
+      393174,
+      393930,
+      402575
+    ]
+  },
+  {
+    "id": 114641,
+    "name": "시라이 유스케",
+    "cvimg": "image/cvimg/시라이_유스케.webp",
+    "gender": "male",
+    "characterIds": [
+      201319,
+      398531,
+      405932
+    ]
+  },
+  {
+    "id": 95348,
+    "name": "시라이시 료코",
+    "cvimg": "image/cvimg/시라이시_료코.webp",
+    "gender": "female",
+    "characterIds": [
+      391168,
+      391527,
+      397771
+    ]
+  },
+  {
+    "id": 95261,
+    "name": "시라이시 미노루",
+    "cvimg": "image/cvimg/시라이시_미노루.webp",
+    "gender": "male",
+    "characterIds": [
+      220792,
+      395252,
+      395606,
+      397259,
+      406742
+    ]
+  },
+  {
+    "id": 379202,
+    "name": "시라이시 카요코",
+    "cvimg": "image/cvimg/시라이시_카요코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      379201
+    ]
+  },
+  {
+    "id": 203133,
+    "name": "시라이시 켄토",
+    "cvimg": "image/cvimg/시라이시_켄토.webp",
+    "gender": "unknown",
+    "characterIds": [
+      381832,
+      396050,
+      406158
+    ]
+  },
+  {
+    "id": 112629,
+    "name": "시라이시 하루카",
+    "cvimg": "image/cvimg/시라이시_하루카.webp",
+    "gender": "female",
+    "characterIds": [
+      15706,
+      124701,
+      132746,
+      151042,
+      201294,
+      206604,
+      214619,
+      230208,
+      274402,
+      282236,
+      307389,
+      324197,
+      335859,
+      338234,
+      339318,
+      380872,
+      381905,
+      390291,
+      391327,
+      393712,
+      394147,
+      395629
+    ]
+  },
+  {
+    "id": 387933,
+    "name": "시라카와 히지리",
+    "cvimg": "image/cvimg/시라카와_히지리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      392634
+    ]
+  },
+  {
+    "id": 145777,
+    "name": "시라키 나오",
+    "cvimg": "image/cvimg/시라키_나오.webp",
+    "gender": "unknown",
+    "characterIds": [
+      407159
+    ]
+  },
+  {
+    "id": 357120,
+    "name": "시라하마 히나노",
+    "cvimg": "image/cvimg/시라하마_히나노.webp",
+    "gender": "unknown",
+    "characterIds": [
+      299681
+    ]
+  },
+  {
+    "id": 379209,
+    "name": "시로야마 노아",
+    "cvimg": "image/cvimg/시로야마_노아.webp",
+    "gender": "unknown",
+    "characterIds": [
+      379208
+    ]
+  },
+  {
+    "id": 102698,
+    "name": "시로쿠마 히로시",
+    "cvimg": "image/cvimg/시로쿠마_히로시.webp",
+    "gender": "male",
+    "characterIds": [
+      229952,
+      341135,
+      393719,
+      403714
+    ]
+  },
+  {
+    "id": 162501,
+    "name": "시마노 하나",
+    "cvimg": "image/cvimg/시마노_하나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      376027,
+      376038
+    ]
+  },
+  {
+    "id": 95651,
+    "name": "시마다 빈",
+    "cvimg": "image/cvimg/시마다_빈.webp",
+    "gender": "male",
+    "characterIds": [
+      36384
+    ]
+  },
+  {
+    "id": 168957,
+    "name": "시마다 아이노",
+    "cvimg": "image/cvimg/시마다_아이노.webp",
+    "gender": "unknown",
+    "characterIds": [
+      283887,
+      294554,
+      402347
+    ]
+  },
+  {
+    "id": 353482,
+    "name": "시마다 아키",
+    "cvimg": "image/cvimg/시마다_아키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      393872
+    ]
+  },
+  {
+    "id": 100295,
+    "name": "시마무라 유",
+    "cvimg": "image/cvimg/시마무라_유.webp",
+    "gender": "female",
+    "characterIds": [
+      295843,
+      399539,
+      399877
+    ]
+  },
+  {
+    "id": 126579,
+    "name": "시마부쿠로 미유리",
+    "cvimg": "image/cvimg/시마부쿠로_미유리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      146835,
+      171891,
+      302626,
+      334316,
+      405344
+    ]
+  },
+  {
+    "id": 105989,
+    "name": "시마자키 노부나가",
+    "cvimg": "image/cvimg/시마자키_노부나가.webp",
+    "gender": "male",
+    "characterIds": [
+      10498,
+      30266,
+      280942,
+      307380,
+      375293,
+      381827,
+      391478,
+      400380
+    ]
+  },
+  {
+    "id": 310818,
+    "name": "시마쿠라 가이하",
+    "cvimg": "image/cvimg/시마쿠라_가이하.webp",
+    "gender": "unknown",
+    "characterIds": [
+      396529
+    ]
+  },
+  {
+    "id": 95356,
+    "name": "시모노 히로",
+    "cvimg": "image/cvimg/시모노_히로.webp",
+    "gender": "male",
+    "characterIds": [
+      399632
+    ]
+  },
+  {
+    "id": 105022,
+    "name": "시모야마 요시미츠",
+    "cvimg": "image/cvimg/시모야마_요시미츠.webp",
+    "gender": "male",
+    "characterIds": [
+      389314
+    ]
+  },
+  {
+    "id": 118985,
+    "name": "시모즈마 요시유키",
+    "cvimg": "image/cvimg/시모즈마_요시유키.webp",
+    "gender": "male",
+    "characterIds": [
+      160353
+    ]
+  },
+  {
+    "id": 118841,
+    "name": "시모지 시노",
+    "cvimg": "image/cvimg/시모지_시노.webp",
+    "gender": "female",
+    "characterIds": [
+      88523,
+      293202,
+      364057
+    ]
+  },
+  {
+    "id": 96520,
+    "name": "시무라 토모유키",
+    "cvimg": "image/cvimg/시무라_토모유키.webp",
+    "gender": "male",
+    "characterIds": [
+      245514,
+      393573,
+      408019
+    ]
+  },
+  {
+    "id": 107282,
+    "name": "시미즈 리사",
+    "cvimg": "image/cvimg/시미즈_리사.webp",
+    "gender": "female",
+    "characterIds": [
+      392501
+    ]
+  },
+  {
+    "id": 104108,
+    "name": "시미즈 아야카",
+    "cvimg": "image/cvimg/시미즈_아야카.webp",
+    "gender": "female",
+    "characterIds": [
+      306668,
+      345721,
+      389136,
+      390788
+    ]
+  },
+  {
+    "id": 95072,
+    "name": "시미즈 아이",
+    "cvimg": "image/cvimg/시미즈_아이.webp",
+    "gender": "female",
+    "characterIds": [
+      311199
+    ]
+  },
+  {
+    "id": 374889,
+    "name": "시미즈 히로토",
+    "cvimg": "image/cvimg/시미즈_히로토.webp",
+    "gender": "unknown",
+    "characterIds": [
+      271024,
+      300882
+    ]
+  },
+  {
+    "id": 387477,
+    "name": "시바 유우마",
+    "cvimg": "image/cvimg/시바_유우마.webp",
+    "gender": "unknown",
+    "characterIds": [
+      387471
+    ]
+  },
+  {
+    "id": 126076,
+    "name": "시부야 아즈키",
+    "cvimg": "image/cvimg/시부야_아즈키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      126762
+    ]
+  },
+  {
+    "id": 284061,
+    "name": "시오구치 료헤이",
+    "cvimg": "image/cvimg/시오구치_료헤이.webp",
+    "gender": "unknown",
+    "characterIds": [
+      401612,
+      403304
+    ]
+  },
+  {
+    "id": 384084,
+    "name": "시오노 아키히사",
+    "cvimg": "image/cvimg/시오노_아키히사.webp",
+    "gender": "unknown",
+    "characterIds": [
+      283884
+    ]
+  },
+  {
+    "id": 283714,
+    "name": "시이나 사츠키",
+    "cvimg": "image/cvimg/시이나_사츠키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      386070
+    ]
+  },
+  {
+    "id": 153049,
+    "name": "신 유우키",
+    "cvimg": "image/cvimg/신_유우키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      367210,
+      381981
+    ]
+  },
+  {
+    "id": 102242,
+    "name": "신가키 타루스케",
+    "cvimg": "image/cvimg/신가키_타루스케.webp",
+    "gender": "male",
+    "characterIds": [
+      246055,
+      398509
+    ]
+  },
+  {
+    "id": 95256,
+    "name": "신도 나오미",
+    "cvimg": "image/cvimg/신도_나오미.webp",
+    "gender": "female",
+    "characterIds": [
+      406970
+    ]
+  },
+  {
+    "id": 341823,
+    "name": "신도 미나미",
+    "cvimg": "image/cvimg/신도_미나미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      380394,
+      399573,
+      405442
+    ]
+  },
+  {
+    "id": 137843,
+    "name": "신도 아마네",
+    "cvimg": "image/cvimg/신도_아마네.webp",
+    "gender": "unknown",
+    "characterIds": [
+      182333
+    ]
+  },
+  {
+    "id": 95617,
+    "name": "신타니 마유미",
+    "cvimg": "image/cvimg/신타니_마유미.webp",
+    "gender": "female",
+    "characterIds": [
+      398517,
+      403709
+    ]
+  },
+  {
+    "id": 294426,
+    "name": "신후쿠 사쿠라",
+    "cvimg": "image/cvimg/신후쿠_사쿠라.webp",
+    "gender": "unknown",
+    "characterIds": [
+      232520,
+      393702
+    ]
+  },
+  {
+    "id": 293058,
+    "name": "아난도 유키",
+    "cvimg": "image/cvimg/아난도_유키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      393830
+    ]
+  },
+  {
+    "id": 95124,
+    "name": "아라이 사토미",
+    "cvimg": "image/cvimg/아라이_사토미.webp",
+    "gender": "female",
+    "characterIds": [
+      90181,
+      388886,
+      403032
+    ]
+  },
+  {
+    "id": 365371,
+    "name": "아라이 쇼코",
+    "cvimg": "image/cvimg/아라이_쇼코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      389148,
+      393812,
+      407265
+    ]
+  },
+  {
+    "id": 398010,
+    "name": "아루",
+    "cvimg": "image/cvimg/아루.webp",
+    "gender": "unknown",
+    "characterIds": [
+      398009
+    ]
+  },
+  {
+    "id": 102881,
+    "name": "아리마 미즈카",
+    "cvimg": "image/cvimg/아리마_미즈카.webp",
+    "gender": "female",
+    "characterIds": [
+      395407
+    ]
+  },
+  {
+    "id": 380646,
+    "name": "아리아케 콘부",
+    "cvimg": "image/cvimg/아리아케_콘부.webp",
+    "gender": "unknown",
+    "characterIds": [
+      380645
+    ]
+  },
+  {
+    "id": 161090,
+    "name": "아마네 카논",
+    "cvimg": "image/cvimg/아마네_카논.webp",
+    "gender": "unknown",
+    "characterIds": [
+      403467
+    ]
+  },
+  {
+    "id": 137669,
+    "name": "아마노 사토미",
+    "cvimg": "image/cvimg/아마노_사토미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      212586,
+      405876
+    ]
+  },
+  {
+    "id": 95397,
+    "name": "아마다 마스오",
+    "cvimg": "image/cvimg/아마다_마스오.webp",
+    "gender": "male",
+    "characterIds": [
+      398630
+    ]
+  },
+  {
+    "id": 162030,
+    "name": "아마미 유리나",
+    "cvimg": "image/cvimg/아마미_유리나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      309274,
+      317451,
+      386992,
+      389681,
+      398688,
+      405261
+    ]
+  },
+  {
+    "id": 111773,
+    "name": "아마미 유키",
+    "cvimg": "image/cvimg/아마미_유키.webp",
+    "gender": "female",
+    "characterIds": [
+      372055
+    ]
+  },
+  {
+    "id": 116517,
+    "name": "아마미야 소라",
+    "cvimg": "image/cvimg/아마미야_소라.webp",
+    "gender": "female",
+    "characterIds": [
+      128106,
+      138063,
+      189728,
+      278301,
+      337477,
+      374179,
+      378093,
+      402133,
+      406411
+    ]
+  },
+  {
+    "id": 119871,
+    "name": "아마사키 코헤이",
+    "cvimg": "image/cvimg/아마사키_코헤이.webp",
+    "gender": "male",
+    "characterIds": [
+      124110,
+      212394,
+      232061,
+      321265,
+      337682,
+      368608,
+      380255,
+      392736,
+      394919,
+      406378,
+      406532
+    ]
+  },
+  {
+    "id": 373387,
+    "name": "아마이 미루쿠",
+    "cvimg": "image/cvimg/아마이_미루쿠.webp",
+    "gender": "unknown",
+    "characterIds": [
+      380639
+    ]
+  },
+  {
+    "id": 127759,
+    "name": "아마키 샐리",
+    "cvimg": "image/cvimg/아마키_샐리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      296304
+    ]
+  },
+  {
+    "id": 273563,
+    "name": "아베 나츠코",
+    "cvimg": "image/cvimg/아베_나츠코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      342589,
+      355051,
+      355430,
+      376019,
+      376032,
+      400224
+    ]
+  },
+  {
+    "id": 281090,
+    "name": "아베 다이키",
+    "cvimg": "image/cvimg/아베_다이키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      273646
+    ]
+  },
+  {
+    "id": 121488,
+    "name": "아베 리카",
+    "cvimg": "image/cvimg/아베_리카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      130084
+    ]
+  },
+  {
+    "id": 95991,
+    "name": "아베 아츠시",
+    "cvimg": "image/cvimg/아베_아츠시.webp",
+    "gender": "male",
+    "characterIds": [
+      293201,
+      388599
+    ]
+  },
+  {
+    "id": 249661,
+    "name": "아보 마리아",
+    "cvimg": "image/cvimg/아보_마리아.webp",
+    "gender": "unknown",
+    "characterIds": [
+      399791,
+      401321
+    ]
+  },
+  {
+    "id": 194440,
+    "name": "아사기리 유우히",
+    "cvimg": "image/cvimg/아사기리_유우히.webp",
+    "gender": "unknown",
+    "characterIds": [
+      379817
+    ]
+  },
+  {
+    "id": 301984,
+    "name": "아사노 료스케",
+    "cvimg": "image/cvimg/아사노_료스케.webp",
+    "gender": "unknown",
+    "characterIds": [
+      393586
+    ]
+  },
+  {
+    "id": 95400,
+    "name": "아사노 마유미",
+    "cvimg": "image/cvimg/아사노_마유미.webp",
+    "gender": "female",
+    "characterIds": [
+      387235,
+      401115
+    ]
+  },
+  {
+    "id": 95186,
+    "name": "아사누마 신타로",
+    "cvimg": "image/cvimg/아사누마_신타로.webp",
+    "gender": "male",
+    "characterIds": [
+      89395
+    ]
+  },
+  {
+    "id": 303694,
+    "name": "아사다 하루키",
+    "cvimg": "image/cvimg/아사다_하루키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      405339
+    ]
+  },
+  {
+    "id": 392601,
+    "name": "아사미 카즈키",
+    "cvimg": "image/cvimg/아사미_카즈키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      311466
+    ]
+  },
+  {
+    "id": 118939,
+    "name": "아사이 아야카",
+    "cvimg": "image/cvimg/아사이_아야카.webp",
+    "gender": "female",
+    "characterIds": [
+      132751,
+      135019,
+      150322,
+      173763,
+      389847,
+      403708
+    ]
+  },
+  {
+    "id": 95119,
+    "name": "아사카와 유우",
+    "cvimg": "image/cvimg/아사카와_유우.webp",
+    "gender": "female",
+    "characterIds": [
+      387189
+    ]
+  },
+  {
+    "id": 118479,
+    "name": "아사쿠라 모모",
+    "cvimg": "image/cvimg/아사쿠라_모모.webp",
+    "gender": "female",
+    "characterIds": [
+      408148
+    ]
+  },
+  {
+    "id": 105461,
+    "name": "아사쿠라 아유무",
+    "cvimg": "image/cvimg/아사쿠라_아유무.webp",
+    "gender": "male",
+    "characterIds": [
+      379825
+    ]
+  },
+  {
+    "id": 119812,
+    "name": "아사히나 마도카",
+    "cvimg": "image/cvimg/아사히나_마도카.webp",
+    "gender": "female",
+    "characterIds": [
+      397750,
+      402029,
+      403753
+    ]
+  },
+  {
+    "id": 95854,
+    "name": "아소 토모히사",
+    "cvimg": "image/cvimg/아소_토모히사.webp",
+    "gender": "male",
+    "characterIds": [
+      158552,
+      402574,
+      406229
+    ]
+  },
+  {
+    "id": 95817,
+    "name": "아스미 카나",
+    "cvimg": "image/cvimg/아스미_카나.webp",
+    "gender": "female",
+    "characterIds": [
+      127420
+    ]
+  },
+  {
+    "id": 112563,
+    "name": "아시다 마나",
+    "cvimg": "image/cvimg/아시다_마나.webp",
+    "gender": "female",
+    "characterIds": [
+      363109
+    ]
+  },
+  {
+    "id": 329745,
+    "name": "아시다 모에나",
+    "cvimg": "image/cvimg/아시다_모에나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      389146
+    ]
+  },
+  {
+    "id": 338535,
+    "name": "아야모리 치카",
+    "cvimg": "image/cvimg/아야모리_치카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      714
+    ]
+  },
+  {
+    "id": 121490,
+    "name": "아야세 유우",
+    "cvimg": "image/cvimg/아야세_유우.webp",
+    "gender": "unknown",
+    "characterIds": [
+      405414
+    ]
+  },
+  {
+    "id": 350108,
+    "name": "아오노 리코",
+    "cvimg": "image/cvimg/아오노_리코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      397413
+    ]
+  },
+  {
+    "id": 130323,
+    "name": "아오야기 타카야",
+    "cvimg": "image/cvimg/아오야기_타카야.webp",
+    "gender": "unknown",
+    "characterIds": [
+      371382
+    ]
+  },
+  {
+    "id": 162046,
+    "name": "아오야마 레이나",
+    "cvimg": "image/cvimg/아오야마_레이나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      403303
+    ]
+  },
+  {
+    "id": 118475,
+    "name": "아오야마 요시노",
+    "cvimg": "image/cvimg/아오야마_요시노.webp",
+    "gender": "female",
+    "characterIds": [
+      138467,
+      309268,
+      319956,
+      381831,
+      385546,
+      389409,
+      398518,
+      406537
+    ]
+  },
+  {
+    "id": 96538,
+    "name": "아오야마 유타카",
+    "cvimg": "image/cvimg/아오야마_유타카.webp",
+    "gender": "male",
+    "characterIds": [
+      132749,
+      150692,
+      306194,
+      311809,
+      338236,
+      388447
+    ]
+  },
+  {
+    "id": 109879,
+    "name": "아오이 쇼타",
+    "cvimg": "image/cvimg/아오이_쇼타.webp",
+    "gender": "male",
+    "characterIds": [
+      380333
+    ]
+  },
+  {
+    "id": 301301,
+    "name": "아오이 아즈사",
+    "cvimg": "image/cvimg/아오이_아즈사.webp",
+    "gender": "unknown",
+    "characterIds": [
+      390611
+    ]
+  },
+  {
+    "id": 119922,
+    "name": "아오키 루리코",
+    "cvimg": "image/cvimg/아오키_루리코.webp",
+    "gender": "female",
+    "characterIds": [
+      17798,
+      202486,
+      377068,
+      382215,
+      388266,
+      408268
+    ]
+  },
+  {
+    "id": 354691,
+    "name": "아오키 무네타카",
+    "cvimg": "image/cvimg/아오키_무네타카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      379204
+    ]
+  },
+  {
+    "id": 129329,
+    "name": "아오키 시키",
+    "cvimg": "image/cvimg/아오키_시키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      51101
+    ]
+  },
+  {
+    "id": 289756,
+    "name": "아오키 히나",
+    "cvimg": "image/cvimg/아오키_히나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      385187
+    ]
+  },
+  {
+    "id": 109519,
+    "name": "아이미",
+    "cvimg": "image/cvimg/아이미.webp",
+    "gender": "female",
+    "characterIds": [
+      382310,
+      398511
+    ]
+  },
+  {
+    "id": 126659,
+    "name": "아이바 아이나",
+    "cvimg": "image/cvimg/아이바_아이나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      406186
+    ]
+  },
+  {
+    "id": 118478,
+    "name": "아이사카 유카",
+    "cvimg": "image/cvimg/아이사카_유카.webp",
+    "gender": "female",
+    "characterIds": [
+      376025,
+      382224,
+      396504,
+      397416
+    ]
+  },
+  {
+    "id": 382963,
+    "name": "아이자와 나나코",
+    "cvimg": "image/cvimg/아이자와_나나코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      382962
+    ]
+  },
+  {
+    "id": 95807,
+    "name": "아이자와 마사키",
+    "cvimg": "image/cvimg/아이자와_마사키.webp",
+    "gender": "male",
+    "characterIds": [
+      36309,
+      198950
+    ]
+  },
+  {
+    "id": 95581,
+    "name": "아이자와 마이",
+    "cvimg": "image/cvimg/아이자와_마이.webp",
+    "gender": "female",
+    "characterIds": [
+      382230
+    ]
+  },
+  {
+    "id": 129326,
+    "name": "아이자와 사야",
+    "cvimg": "image/cvimg/아이자와_사야.webp",
+    "gender": "unknown",
+    "characterIds": [
+      145458,
+      355949,
+      393170
+    ]
+  },
+  {
+    "id": 97123,
+    "name": "아이카와 나츠키",
+    "cvimg": "image/cvimg/아이카와_나츠키.webp",
+    "gender": "female",
+    "characterIds": [
+      405913
+    ]
+  },
+  {
+    "id": 153578,
+    "name": "아이카와 카나타",
+    "cvimg": "image/cvimg/아이카와_카나타.webp",
+    "gender": "unknown",
+    "characterIds": [
+      404446
+    ]
+  },
+  {
+    "id": 299363,
+    "name": "아이카와 하루카",
+    "cvimg": "image/cvimg/아이카와_하루카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      328216
+    ]
+  },
+  {
+    "id": 127073,
+    "name": "아이하라 코토미",
+    "cvimg": "image/cvimg/아이하라_코토미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      306328,
+      382022
+    ]
+  },
+  {
+    "id": 109155,
+    "name": "아자카미 요헤이",
+    "cvimg": "image/cvimg/아자카미_요헤이.webp",
+    "gender": "male",
+    "characterIds": [
+      11772,
+      163186,
+      188816,
+      207027,
+      280941,
+      350617,
+      354099,
+      355722,
+      357291,
+      373038,
+      374840,
+      380699,
+      391528,
+      399216,
+      401662,
+      406383
+    ]
+  },
+  {
+    "id": 395150,
+    "name": "아즈미 나오",
+    "cvimg": "image/cvimg/아즈미_나오.webp",
+    "gender": "unknown",
+    "characterIds": [
+      395148
+    ]
+  },
+  {
+    "id": 347888,
+    "name": "아츠치 아야카",
+    "cvimg": "image/cvimg/아츠치_아야카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      400907
+    ]
+  },
+  {
+    "id": 104684,
+    "name": "아카기 스스무",
+    "cvimg": "image/cvimg/아카기_스스무.webp",
+    "gender": "male",
+    "characterIds": [
+      135059
+    ]
+  },
+  {
+    "id": 119203,
+    "name": "아카네야 히미카",
+    "cvimg": "image/cvimg/아카네야_히미카.webp",
+    "gender": "female",
+    "characterIds": [
+      88927,
+      399459
+    ]
+  },
+  {
+    "id": 102512,
+    "name": "아카바네 켄지",
+    "cvimg": "image/cvimg/아카바네_켄지.webp",
+    "gender": "male",
+    "characterIds": [
+      220914,
+      393209,
+      401650
+    ]
+  },
+  {
+    "id": 107652,
+    "name": "아카사키 치나츠",
+    "cvimg": "image/cvimg/아카사키_치나츠.webp",
+    "gender": "female",
+    "characterIds": [
+      88574,
+      127781,
+      249154,
+      398320
+    ]
+  },
+  {
+    "id": 125016,
+    "name": "아카오 히카루",
+    "cvimg": "image/cvimg/아카오_히카루.webp",
+    "gender": "unknown",
+    "characterIds": [
+      130849,
+      130851,
+      390229
+    ]
+  },
+  {
+    "id": 95723,
+    "name": "아케사카 사토미",
+    "cvimg": "image/cvimg/아케사카_사토미.webp",
+    "gender": "female",
+    "characterIds": [
+      391170,
+      400141
+    ]
+  },
+  {
+    "id": 343492,
+    "name": "아케치 리코",
+    "cvimg": "image/cvimg/아케치_리코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      188008,
+      356912,
+      389139,
+      393588,
+      402217
+    ]
+  },
+  {
+    "id": 396255,
+    "name": "아키야마 료",
+    "cvimg": "image/cvimg/아키야마_료.webp",
+    "gender": "unknown",
+    "characterIds": [
+      396251
+    ]
+  },
+  {
+    "id": 168196,
+    "name": "아키야마 에리",
+    "cvimg": "image/cvimg/아키야마_에리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      389340
+    ]
+  },
+  {
+    "id": 322657,
+    "name": "아키야마 타이세이",
+    "cvimg": "image/cvimg/아키야마_타이세이.webp",
+    "gender": "unknown",
+    "characterIds": [
+      399570
+    ]
+  },
+  {
+    "id": 292887,
+    "name": "아키호 사에코",
+    "cvimg": "image/cvimg/아키호_사에코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      399800
+    ]
+  },
+  {
+    "id": 392085,
+    "name": "안 유리",
+    "cvimg": "image/cvimg/안_유리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      392083
+    ]
+  },
+  {
+    "id": 350109,
+    "name": "안도 나나코",
+    "cvimg": "image/cvimg/안도_나나코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      396511
+    ]
+  },
+  {
+    "id": 160345,
+    "name": "안도 사쿠라",
+    "cvimg": "image/cvimg/안도_사쿠라.webp",
+    "gender": "unknown",
+    "characterIds": [
+      713
+    ]
+  },
+  {
+    "id": 128650,
+    "name": "안자이 유카리",
+    "cvimg": "image/cvimg/안자이_유카리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      306048,
+      395410,
+      400841,
+      406382
+    ]
+  },
+  {
+    "id": 106030,
+    "name": "안자이 치카",
+    "cvimg": "image/cvimg/안자이_치카.webp",
+    "gender": "female",
+    "characterIds": [
+      123181,
+      317448,
+      374839,
+      382228,
+      398536,
+      398640,
+      400233
+    ]
+  },
+  {
+    "id": 145293,
+    "name": "야기 카오리",
+    "cvimg": "image/cvimg/야기_카오리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      145291
+    ]
+  },
+  {
+    "id": 400217,
+    "name": "야나기 코헤이",
+    "cvimg": "image/cvimg/야나기_코헤이.webp",
+    "gender": "unknown",
+    "characterIds": [
+      400234
+    ]
+  },
+  {
+    "id": 131421,
+    "name": "야나기 코헤이",
+    "cvimg": "image/cvimg/야나기_코헤이.webp",
+    "gender": "unknown",
+    "characterIds": [
+      400235
+    ]
+  },
+  {
+    "id": 114639,
+    "name": "야나기타 준이치",
+    "cvimg": "image/cvimg/야나기타_준이치.webp",
+    "gender": "male",
+    "characterIds": [
+      131051,
+      392792,
+      393546,
+      394782,
+      405399
+    ]
+  },
+  {
+    "id": 95477,
+    "name": "야나카 히로시",
+    "cvimg": "image/cvimg/야나카_히로시.webp",
+    "gender": "male",
+    "characterIds": [
+      331279,
+      399804,
+      401113,
+      402820,
+      403584
+    ]
+  },
+  {
+    "id": 128180,
+    "name": "야노 아사미",
+    "cvimg": "image/cvimg/야노_아사미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      128178
+    ]
+  },
+  {
+    "id": 290884,
+    "name": "야노 유미카",
+    "cvimg": "image/cvimg/야노_유미카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      266529,
+      400225
+    ]
+  },
+  {
+    "id": 143887,
+    "name": "야노 히나키",
+    "cvimg": "image/cvimg/야노_히나키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      146840,
+      170349,
+      300902,
+      353731
+    ]
+  },
+  {
+    "id": 100770,
+    "name": "야라 유사쿠",
+    "cvimg": "image/cvimg/야라_유사쿠.webp",
+    "gender": "male",
+    "characterIds": [
+      82289
+    ]
+  },
+  {
+    "id": 156900,
+    "name": "야마구치 레이고",
+    "cvimg": "image/cvimg/야마구치_레이고.webp",
+    "gender": "unknown",
+    "characterIds": [
+      402183
+    ]
+  },
+  {
+    "id": 112247,
+    "name": "야마구치 리카코",
+    "cvimg": "image/cvimg/야마구치_리카코.webp",
+    "gender": "female",
+    "characterIds": [
+      381826,
+      394968
+    ]
+  },
+  {
+    "id": 247088,
+    "name": "야마구치 사토시",
+    "cvimg": "image/cvimg/야마구치_사토시.webp",
+    "gender": "unknown",
+    "characterIds": [
+      395605,
+      398322
+    ]
+  },
+  {
+    "id": 136786,
+    "name": "야마구치 요시유키",
+    "cvimg": "image/cvimg/야마구치_요시유키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      403443
+    ]
+  },
+  {
+    "id": 95130,
+    "name": "야마구치 유리코",
+    "cvimg": "image/cvimg/야마구치_유리코.webp",
+    "gender": "female",
+    "characterIds": [
+      61
+    ]
+  },
+  {
+    "id": 95067,
+    "name": "야마구치 캇페이",
+    "cvimg": "image/cvimg/야마구치_캇페이.webp",
+    "gender": "male",
+    "characterIds": [
+      395902,
+      398959
+    ]
+  },
+  {
+    "id": 95989,
+    "name": "야마구치 타로",
+    "cvimg": "image/cvimg/야마구치_타로.webp",
+    "gender": "male",
+    "characterIds": [
+      133522
+    ]
+  },
+  {
+    "id": 131120,
+    "name": "야마구치 토모히로",
+    "cvimg": "image/cvimg/야마구치_토모히로.webp",
+    "gender": "unknown",
+    "characterIds": [
+      213946,
+      379379,
+      402181
+    ]
+  },
+  {
+    "id": 117123,
+    "name": "야마기시 하루오",
+    "cvimg": "image/cvimg/야마기시_하루오.webp",
+    "gender": "male",
+    "characterIds": [
+      402166
+    ]
+  },
+  {
+    "id": 118974,
+    "name": "야마네 노조미",
+    "cvimg": "image/cvimg/야마네_노조미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      137057
+    ]
+  },
+  {
+    "id": 152204,
+    "name": "야마네 아야",
+    "cvimg": "image/cvimg/야마네_아야.webp",
+    "gender": "unknown",
+    "characterIds": [
+      5168,
+      157207,
+      261998,
+      319575,
+      339477,
+      391936,
+      393931,
+      408825
+    ]
+  },
+  {
+    "id": 136483,
+    "name": "야마다 마리나",
+    "cvimg": "image/cvimg/야마다_마리나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      381968
+    ]
+  },
+  {
+    "id": 205454,
+    "name": "야마다 미스즈",
+    "cvimg": "image/cvimg/야마다_미스즈.webp",
+    "gender": "unknown",
+    "characterIds": [
+      393591
+    ]
+  },
+  {
+    "id": 100763,
+    "name": "야마다 에이코",
+    "cvimg": "image/cvimg/야마다_에이코.webp",
+    "gender": "female",
+    "characterIds": [
+      402367
+    ]
+  },
+  {
+    "id": 95011,
+    "name": "야마데라 코이치",
+    "cvimg": "image/cvimg/야마데라_코이치.webp",
+    "gender": "male",
+    "characterIds": [
+      259533,
+      272175
+    ]
+  },
+  {
+    "id": 107490,
+    "name": "야마모토 노조미",
+    "cvimg": "image/cvimg/야마모토_노조미.webp",
+    "gender": "female",
+    "characterIds": [
+      382475,
+      399576
+    ]
+  },
+  {
+    "id": 298382,
+    "name": "야마모토 유우키",
+    "cvimg": "image/cvimg/야마모토_유우키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      360415,
+      391767
+    ]
+  },
+  {
+    "id": 110543,
+    "name": "야마모토 카네히라",
+    "cvimg": "image/cvimg/야마모토_카네히라.webp",
+    "gender": "male",
+    "characterIds": [
+      129348,
+      338238,
+      382214,
+      392244,
+      400912
+    ]
+  },
+  {
+    "id": 104790,
+    "name": "야마모토 카즈토미",
+    "cvimg": "image/cvimg/야마모토_카즈토미.webp",
+    "gender": "male",
+    "characterIds": [
+      401820
+    ]
+  },
+  {
+    "id": 381610,
+    "name": "야마모토 하야토",
+    "cvimg": "image/cvimg/야마모토_하야토.webp",
+    "gender": "unknown",
+    "characterIds": [
+      381609,
+      407311
+    ]
+  },
+  {
+    "id": 107750,
+    "name": "야마무라 히비쿠",
+    "cvimg": "image/cvimg/야마무라_히비쿠.webp",
+    "gender": "female",
+    "characterIds": [
+      129842,
+      341767,
+      396247,
+      399132,
+      407760
+    ]
+  },
+  {
+    "id": 116971,
+    "name": "야마시타 다이키",
+    "cvimg": "image/cvimg/야마시타_다이키.webp",
+    "gender": "male",
+    "characterIds": [
+      17907,
+      137266,
+      306333,
+      317449,
+      380597
+    ]
+  },
+  {
+    "id": 118249,
+    "name": "야마시타 세이이치로",
+    "cvimg": "image/cvimg/야마시타_세이이치로.webp",
+    "gender": "male",
+    "characterIds": [
+      201320,
+      279367,
+      282075,
+      294559,
+      295838,
+      373706,
+      398529,
+      400094,
+      400229
+    ]
+  },
+  {
+    "id": 236982,
+    "name": "야마시타 타이키",
+    "cvimg": "image/cvimg/야마시타_타이키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      406533
+    ]
+  },
+  {
+    "id": 118591,
+    "name": "야마야 요시타카",
+    "cvimg": "image/cvimg/야마야_요시타카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      148542
+    ]
+  },
+  {
+    "id": 95496,
+    "name": "야마자키 와카나",
+    "cvimg": "image/cvimg/야마자키_와카나.webp",
+    "gender": "female",
+    "characterIds": [
+      399577
+    ]
+  },
+  {
+    "id": 101755,
+    "name": "야마지 카즈히로",
+    "cvimg": "image/cvimg/야마지_카즈히로.webp",
+    "gender": "male",
+    "characterIds": [
+      2677,
+      140646,
+      201624,
+      379205,
+      392000
+    ]
+  },
+  {
+    "id": 117183,
+    "name": "야마키타 사키",
+    "cvimg": "image/cvimg/야마키타_사키.webp",
+    "gender": "female",
+    "characterIds": [
+      126886,
+      139310,
+      405468
+    ]
+  },
+  {
+    "id": 312547,
+    "name": "야부키 마오",
+    "cvimg": "image/cvimg/야부키_마오.webp",
+    "gender": "unknown",
+    "characterIds": [
+      391169,
+      392629
+    ]
+  },
+  {
+    "id": 107711,
+    "name": "야스노 키요노",
+    "cvimg": "image/cvimg/야스노_키요노.webp",
+    "gender": "female",
+    "characterIds": [
+      136634,
+      399128
+    ]
+  },
+  {
+    "id": 128786,
+    "name": "야스다 리쿠야",
+    "cvimg": "image/cvimg/야스다_리쿠야.webp",
+    "gender": "unknown",
+    "characterIds": [
+      315451,
+      339097,
+      373296,
+      379913,
+      387496,
+      389147,
+      393571,
+      395542,
+      396245,
+      398687,
+      399790
+    ]
+  },
+  {
+    "id": 95025,
+    "name": "야스모토 히로키",
+    "cvimg": "image/cvimg/야스모토_히로키.webp",
+    "gender": "male",
+    "characterIds": [
+      575,
+      2653,
+      127066,
+      171898,
+      219106,
+      295787,
+      331274,
+      338213,
+      380598
+    ]
+  },
+  {
+    "id": 96074,
+    "name": "야스무라 마코토",
+    "cvimg": "image/cvimg/야스무라_마코토.webp",
+    "gender": "male",
+    "characterIds": [
+      74774,
+      146837,
+      242473,
+      371342
+    ]
+  },
+  {
+    "id": 96245,
+    "name": "야스하라 요시토",
+    "cvimg": "image/cvimg/야스하라_요시토.webp",
+    "gender": "male",
+    "characterIds": [
+      158681
+    ]
+  },
+  {
+    "id": 119833,
+    "name": "야시로 타쿠",
+    "cvimg": "image/cvimg/야시로_타쿠.webp",
+    "gender": "male",
+    "characterIds": [
+      4914,
+      21320,
+      134583,
+      143289,
+      148981,
+      230210,
+      232526,
+      295782,
+      320098,
+      378750,
+      401658
+    ]
+  },
+  {
+    "id": 95131,
+    "name": "야오 카즈키",
+    "cvimg": "image/cvimg/야오_카즈키.webp",
+    "gender": "male",
+    "characterIds": [
+      15003
+    ]
+  },
+  {
+    "id": 151148,
+    "name": "야오야 쿄",
+    "cvimg": "image/cvimg/야오야_쿄.webp",
+    "gender": "unknown",
+    "characterIds": [
+      342605,
+      387172,
+      407762
+    ]
+  },
+  {
+    "id": 122872,
+    "name": "야쿠쇼 코지",
+    "cvimg": "image/cvimg/야쿠쇼_코지.webp",
+    "gender": "unknown",
+    "characterIds": [
+      379197
+    ]
+  },
+  {
+    "id": 95380,
+    "name": "야하기 사유리",
+    "cvimg": "image/cvimg/야하기_사유리.webp",
+    "gender": "female",
+    "characterIds": [
+      311465,
+      311467
+    ]
+  },
+  {
+    "id": 191128,
+    "name": "에가시라 히로야",
+    "cvimg": "image/cvimg/에가시라_히로야.webp",
+    "gender": "unknown",
+    "characterIds": [
+      159626,
+      382348,
+      391477,
+      408137
+    ]
+  },
+  {
+    "id": 96481,
+    "name": "에가와 히사오",
+    "cvimg": "image/cvimg/에가와_히사오.webp",
+    "gender": "male",
+    "characterIds": [
+      32745,
+      245521,
+      362509
+    ]
+  },
+  {
+    "id": 158578,
+    "name": "에고시 아키노리",
+    "cvimg": "image/cvimg/에고시_아키노리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      331435,
+      406535
+    ]
+  },
+  {
+    "id": 102695,
+    "name": "에구치 타쿠야",
+    "cvimg": "image/cvimg/에구치_타쿠야.webp",
+    "gender": "male",
+    "characterIds": [
+      10501,
+      90183,
+      128039,
+      139313,
+      219083,
+      283885,
+      306335,
+      375399
+    ]
+  },
+  {
+    "id": 152495,
+    "name": "에노요시 마야",
+    "cvimg": "image/cvimg/에노요시_마야.webp",
+    "gender": "unknown",
+    "characterIds": [
+      382226
+    ]
+  },
+  {
+    "id": 119319,
+    "name": "에노키 준야",
+    "cvimg": "image/cvimg/에노키_준야.webp",
+    "gender": "male",
+    "characterIds": [
+      34243,
+      51103,
+      87297,
+      127212,
+      132982,
+      138908,
+      139311,
+      188007,
+      260734,
+      306334,
+      352437,
+      382309,
+      383118,
+      398639,
+      399133
+    ]
+  },
+  {
+    "id": 154693,
+    "name": "에라고야 코스케",
+    "cvimg": "image/cvimg/에라고야_코스케.webp",
+    "gender": "unknown",
+    "characterIds": [
+      389940,
+      397269,
+      402165,
+      405209
+    ]
+  },
+  {
+    "id": 135637,
+    "name": "에모토 토키오",
+    "cvimg": "image/cvimg/에모토_토키오.webp",
+    "gender": "unknown",
+    "characterIds": [
+      379206
+    ]
+  },
+  {
+    "id": 95179,
+    "name": "에바라 마사시",
+    "cvimg": "image/cvimg/에바라_마사시.webp",
+    "gender": "male",
+    "characterIds": [
+      405196
+    ]
+  },
+  {
+    "id": 346639,
+    "name": "엔도 다이치",
+    "cvimg": "image/cvimg/엔도_다이치.webp",
+    "gender": "unknown",
+    "characterIds": [
+      387020
+    ]
+  },
+  {
+    "id": 105675,
+    "name": "엔도 다이치",
+    "cvimg": "image/cvimg/엔도_다이치.webp",
+    "gender": "male",
+    "characterIds": [
+      401114
+    ]
+  },
+  {
+    "id": 95054,
+    "name": "엔도 아야",
+    "cvimg": "image/cvimg/엔도_아야.webp",
+    "gender": "female",
+    "characterIds": [
+      158154,
+      205112,
+      371344,
+      395627,
+      400378,
+      401312,
+      402215,
+      406143,
+      407151
+    ]
+  },
+  {
+    "id": 154090,
+    "name": "오가미 신노스케",
+    "cvimg": "image/cvimg/오가미_신노스케.webp",
+    "gender": "unknown",
+    "characterIds": [
+      149187,
+      382116
+    ]
+  },
+  {
+    "id": 158184,
+    "name": "오가사와라 진",
+    "cvimg": "image/cvimg/오가사와라_진.webp",
+    "gender": "unknown",
+    "characterIds": [
+      300883,
+      371343,
+      382985
+    ]
+  },
+  {
+    "id": 170386,
+    "name": "오가와 카즈키",
+    "cvimg": "image/cvimg/오가와_카즈키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      379820
+    ]
+  },
+  {
+    "id": 392168,
+    "name": "오가와 하나카",
+    "cvimg": "image/cvimg/오가와_하나카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      392167
+    ]
+  },
+  {
+    "id": 95287,
+    "name": "오가타 메구미",
+    "cvimg": "image/cvimg/오가타_메구미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      3217,
+      129571,
+      390790,
+      406169
+    ]
+  },
+  {
+    "id": 103483,
+    "name": "오가타 미츠루",
+    "cvimg": "image/cvimg/오가타_미츠루.webp",
+    "gender": "male",
+    "characterIds": [
+      390263
+    ]
+  },
+  {
+    "id": 190470,
+    "name": "오가타 유우나",
+    "cvimg": "image/cvimg/오가타_유우나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      162220,
+      381903
+    ]
+  },
+  {
+    "id": 95481,
+    "name": "오가타 켄이치",
+    "cvimg": "image/cvimg/오가타_켄이치.webp",
+    "gender": "male",
+    "characterIds": [
+      192177,
+      387334,
+      405197
+    ]
+  },
+  {
+    "id": 394364,
+    "name": "오가타 타카히로",
+    "cvimg": "image/cvimg/오가타_타카히로.webp",
+    "gender": "unknown",
+    "characterIds": [
+      394363
+    ]
+  },
+  {
+    "id": 303156,
+    "name": "오구라 미유",
+    "cvimg": "image/cvimg/오구라_미유.webp",
+    "gender": "unknown",
+    "characterIds": [
+      356908
+    ]
+  },
+  {
+    "id": 105981,
+    "name": "오구라 유이",
+    "cvimg": "image/cvimg/오구라_유이.webp",
+    "gender": "female",
+    "characterIds": [
+      393290,
+      396103,
+      398006,
+      400674
+    ]
+  },
+  {
+    "id": 106629,
+    "name": "오기노 세이로",
+    "cvimg": "image/cvimg/오기노_세이로.webp",
+    "gender": "male",
+    "characterIds": [
+      402520
+    ]
+  },
+  {
+    "id": 168158,
+    "name": "오기노 하즈키",
+    "cvimg": "image/cvimg/오기노_하즈키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      396044
+    ]
+  },
+  {
+    "id": 95212,
+    "name": "오노 다이스케",
+    "cvimg": "image/cvimg/오노_다이스케.webp",
+    "gender": "male",
+    "characterIds": [
+      135021,
+      148746,
+      174745,
+      202774,
+      326217,
+      328205,
+      376041,
+      380219,
+      381739,
+      391469,
+      399802,
+      401313
+    ]
+  },
+  {
+    "id": 100491,
+    "name": "오노 아츠시",
+    "cvimg": "image/cvimg/오노_아츠시.webp",
+    "gender": "male",
+    "characterIds": [
+      129915
+    ]
+  },
+  {
+    "id": 96154,
+    "name": "오노 유우키",
+    "cvimg": "image/cvimg/오노_유우키.webp",
+    "gender": "male",
+    "characterIds": [
+      125170,
+      127453,
+      338223,
+      380507,
+      390990,
+      394149,
+      400752
+    ]
+  },
+  {
+    "id": 95819,
+    "name": "오노 켄쇼",
+    "cvimg": "image/cvimg/오노_켄쇼.webp",
+    "gender": "male",
+    "characterIds": [
+      88303,
+      89199,
+      137261,
+      145064,
+      148982,
+      220916,
+      230209,
+      232522,
+      270811,
+      375290,
+      388635,
+      390525,
+      398561,
+      399806,
+      406542
+    ]
+  },
+  {
+    "id": 391395,
+    "name": "오리노 리오",
+    "cvimg": "image/cvimg/오리노_리오.webp",
+    "gender": "unknown",
+    "characterIds": [
+      395147
+    ]
+  },
+  {
+    "id": 379766,
+    "name": "오리베 하루카",
+    "cvimg": "image/cvimg/오리베_하루카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      385692
+    ]
+  },
+  {
+    "id": 351659,
+    "name": "오리이 아유미",
+    "cvimg": "image/cvimg/오리이_아유미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      368550
+    ]
+  },
+  {
+    "id": 95208,
+    "name": "오리카사 아이",
+    "cvimg": "image/cvimg/오리카사_아이.webp",
+    "gender": "female",
+    "characterIds": [
+      396465
+    ]
+  },
+  {
+    "id": 95152,
+    "name": "오리카사 후미코",
+    "cvimg": "image/cvimg/오리카사_후미코.webp",
+    "gender": "female",
+    "characterIds": [
+      6,
+      185331,
+      392473,
+      394512
+    ]
+  },
+  {
+    "id": 96760,
+    "name": "오미가와 치아키",
+    "cvimg": "image/cvimg/오미가와_치아키.webp",
+    "gender": "female",
+    "characterIds": [
+      355260
+    ]
+  },
+  {
+    "id": 289560,
+    "name": "오사나이 레오",
+    "cvimg": "image/cvimg/오사나이_레오.webp",
+    "gender": "unknown",
+    "characterIds": [
+      376034,
+      382219,
+      387494,
+      391325,
+      396510
+    ]
+  },
+  {
+    "id": 110743,
+    "name": "오사카 료타",
+    "cvimg": "image/cvimg/오사카_료타.webp",
+    "gender": "male",
+    "characterIds": [
+      22998,
+      123218,
+      151768,
+      255894,
+      295790,
+      306243,
+      317446,
+      338233,
+      393180,
+      395406,
+      399801,
+      406456
+    ]
+  },
+  {
+    "id": 167563,
+    "name": "오오노 토모히로",
+    "cvimg": "image/cvimg/오오노_토모히로.webp",
+    "gender": "unknown",
+    "characterIds": [
+      35934,
+      307383,
+      339972,
+      368755,
+      374076,
+      381941,
+      382479,
+      391939,
+      396160,
+      396501,
+      400904,
+      403724
+    ]
+  },
+  {
+    "id": 114884,
+    "name": "오오니시 사오리",
+    "cvimg": "image/cvimg/오오니시_사오리.webp",
+    "gender": "female",
+    "characterIds": [
+      196167,
+      220769,
+      356659,
+      374180,
+      382391,
+      383973,
+      388953,
+      389307,
+      393717,
+      393925,
+      395409
+    ]
+  },
+  {
+    "id": 132804,
+    "name": "오오니시 아구리",
+    "cvimg": "image/cvimg/오오니시_아구리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      132803
+    ]
+  },
+  {
+    "id": 95751,
+    "name": "오오니시 타케하루",
+    "cvimg": "image/cvimg/오오니시_타케하루.webp",
+    "gender": "unknown",
+    "characterIds": [
+      397257
+    ]
+  },
+  {
+    "id": 118921,
+    "name": "오오모리 니치카",
+    "cvimg": "image/cvimg/오오모리_니치카.webp",
+    "gender": "female",
+    "characterIds": [
+      402028
+    ]
+  },
+  {
+    "id": 358248,
+    "name": "오오모리 코코로",
+    "cvimg": "image/cvimg/오오모리_코코로.webp",
+    "gender": "unknown",
+    "characterIds": [
+      302624
+    ]
+  },
+  {
+    "id": 328470,
+    "name": "오오부치 노노카",
+    "cvimg": "image/cvimg/오오부치_노노카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      381824
+    ]
+  },
+  {
+    "id": 111541,
+    "name": "오오사와 타카오",
+    "cvimg": "image/cvimg/오오사와_타카오.webp",
+    "gender": "male",
+    "characterIds": [
+      381836
+    ]
+  },
+  {
+    "id": 396748,
+    "name": "오오야기 안나",
+    "cvimg": "image/cvimg/오오야기_안나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      396747
+    ]
+  },
+  {
+    "id": 405593,
+    "name": "오오와다 쇼헤이",
+    "cvimg": "image/cvimg/오오와다_쇼헤이.webp",
+    "gender": "unknown",
+    "characterIds": [
+      405592
+    ]
+  },
+  {
+    "id": 160344,
+    "name": "오오우치 아카네",
+    "cvimg": "image/cvimg/오오우치_아카네.webp",
+    "gender": "unknown",
+    "characterIds": [
+      160360
+    ]
+  },
+  {
+    "id": 176221,
+    "name": "오오이 마리에",
+    "cvimg": "image/cvimg/오오이_마리에.webp",
+    "gender": "unknown",
+    "characterIds": [
+      21421,
+      380393,
+      393703
+    ]
+  },
+  {
+    "id": 117329,
+    "name": "오오조라 나오미",
+    "cvimg": "image/cvimg/오오조라_나오미.webp",
+    "gender": "female",
+    "characterIds": [
+      138903,
+      232523,
+      329666
+    ]
+  },
+  {
+    "id": 95146,
+    "name": "오오츠카 아키오",
+    "cvimg": "image/cvimg/오오츠카_아키오.webp",
+    "gender": "male",
+    "characterIds": [
+      10499,
+      125956,
+      189364,
+      278459,
+      337478,
+      367448,
+      374035,
+      382674,
+      404661
+    ]
+  },
+  {
+    "id": 128426,
+    "name": "오오츠카 타케오",
+    "cvimg": "image/cvimg/오오츠카_타케오.webp",
+    "gender": "unknown",
+    "characterIds": [
+      13473,
+      152674,
+      160347,
+      183885,
+      197163,
+      277688,
+      320893,
+      356657,
+      402007
+    ]
+  },
+  {
+    "id": 95337,
+    "name": "오오츠카 호우츄",
+    "cvimg": "image/cvimg/오오츠카_호우츄.webp",
+    "gender": "male",
+    "characterIds": [
+      121056,
+      125442,
+      131043,
+      146841,
+      328201,
+      337472,
+      380703,
+      381082,
+      390791,
+      392628,
+      400573,
+      401990,
+      402005
+    ]
+  },
+  {
+    "id": 114946,
+    "name": "오오카와 겐키",
+    "cvimg": "image/cvimg/오오카와_겐키.webp",
+    "gender": "male",
+    "characterIds": [
+      148545
+    ]
+  },
+  {
+    "id": 95243,
+    "name": "오오카와 토오루",
+    "cvimg": "image/cvimg/오오카와_토오루.webp",
+    "gender": "male",
+    "characterIds": [
+      331424,
+      391554,
+      393887
+    ]
+  },
+  {
+    "id": 379334,
+    "name": "오오쿠라 츠무기",
+    "cvimg": "image/cvimg/오오쿠라_츠무기.webp",
+    "gender": "unknown",
+    "characterIds": [
+      381921
+    ]
+  },
+  {
+    "id": 107041,
+    "name": "오오쿠보 루미",
+    "cvimg": "image/cvimg/오오쿠보_루미.webp",
+    "gender": "female",
+    "characterIds": [
+      191538,
+      205434,
+      261990,
+      337446,
+      339099,
+      364414,
+      381812,
+      392605,
+      393714
+    ]
+  },
+  {
+    "id": 131242,
+    "name": "오오키 사에코",
+    "cvimg": "image/cvimg/오오키_사에코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      157142
+    ]
+  },
+  {
+    "id": 95092,
+    "name": "오오하라 사야카",
+    "cvimg": "image/cvimg/오오하라_사야카.webp",
+    "gender": "female",
+    "characterIds": [
+      131038,
+      151770,
+      157213,
+      195586,
+      203167,
+      363293,
+      381984,
+      403289
+    ]
+  },
+  {
+    "id": 110903,
+    "name": "오오하시 아야카",
+    "cvimg": "image/cvimg/오오하시_아야카.webp",
+    "gender": "female",
+    "characterIds": [
+      257292,
+      393229,
+      399574,
+      408264
+    ]
+  },
+  {
+    "id": 118663,
+    "name": "오자와 아리",
+    "cvimg": "image/cvimg/오자와_아리.webp",
+    "gender": "female",
+    "characterIds": [
+      306240
+    ]
+  },
+  {
+    "id": 386822,
+    "name": "오자와 아이미",
+    "cvimg": "image/cvimg/오자와_아이미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      386821
+    ]
+  },
+  {
+    "id": 295047,
+    "name": "오지카 나오",
+    "cvimg": "image/cvimg/오지카_나오.webp",
+    "gender": "unknown",
+    "characterIds": [
+      377807,
+      392077
+    ]
+  },
+  {
+    "id": 119506,
+    "name": "오치아이 후쿠시",
+    "cvimg": "image/cvimg/오치아이_후쿠시.webp",
+    "gender": "male",
+    "characterIds": [
+      376715
+    ]
+  },
+  {
+    "id": 95434,
+    "name": "오카노 코스케",
+    "cvimg": "image/cvimg/오카노_코스케.webp",
+    "gender": "male",
+    "characterIds": [
+      406224
+    ]
+  },
+  {
+    "id": 379196,
+    "name": "오카다 마사키",
+    "cvimg": "image/cvimg/오카다_마사키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      379195
+    ]
+  },
+  {
+    "id": 180027,
+    "name": "오카다 메구미",
+    "cvimg": "image/cvimg/오카다_메구미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      365379
+    ]
+  },
+  {
+    "id": 162829,
+    "name": "오카다 사치코",
+    "cvimg": "image/cvimg/오카다_사치코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      380392,
+      404627
+    ]
+  },
+  {
+    "id": 318466,
+    "name": "오카다 유키",
+    "cvimg": "image/cvimg/오카다_유키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      382314
+    ]
+  },
+  {
+    "id": 95270,
+    "name": "오카모토 노부히코",
+    "cvimg": "image/cvimg/오카모토_노부히코.webp",
+    "gender": "male",
+    "characterIds": [
+      133847,
+      138906,
+      184311,
+      298421,
+      345923,
+      379815,
+      399810,
+      406612,
+      406968
+    ]
+  },
+  {
+    "id": 182099,
+    "name": "오카모토 노부히코",
+    "cvimg": "image/cvimg/오카모토_노부히코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      400096
+    ]
+  },
+  {
+    "id": 96249,
+    "name": "오카모토 마리",
+    "cvimg": "image/cvimg/오카모토_마리.webp",
+    "gender": "female",
+    "characterIds": [
+      404006
+    ]
+  },
+  {
+    "id": 265168,
+    "name": "오카모토 미카",
+    "cvimg": "image/cvimg/오카모토_미카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      407850
+    ]
+  },
+  {
+    "id": 95076,
+    "name": "오카무라 아케미",
+    "cvimg": "image/cvimg/오카무라_아케미.webp",
+    "gender": "female",
+    "characterIds": [
+      723,
+      408141
+    ]
+  },
+  {
+    "id": 273899,
+    "name": "오카무라 하루카",
+    "cvimg": "image/cvimg/오카무라_하루카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      392173
+    ]
+  },
+  {
+    "id": 127666,
+    "name": "오카사키 미호",
+    "cvimg": "image/cvimg/오카사키_미호.webp",
+    "gender": "unknown",
+    "characterIds": [
+      123962,
+      304727,
+      380438
+    ]
+  },
+  {
+    "id": 328213,
+    "name": "오카와 하야타",
+    "cvimg": "image/cvimg/오카와_하야타.webp",
+    "gender": "unknown",
+    "characterIds": [
+      398213
+    ]
+  },
+  {
+    "id": 120265,
+    "name": "오카이 카츠노리",
+    "cvimg": "image/cvimg/오카이_카츠노리.webp",
+    "gender": "male",
+    "characterIds": [
+      396195
+    ]
+  },
+  {
+    "id": 292286,
+    "name": "오쿠이 유우코",
+    "cvimg": "image/cvimg/오쿠이_유우코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      309996
+    ]
+  },
+  {
+    "id": 100607,
+    "name": "오키 카나에",
+    "cvimg": "image/cvimg/오키_카나에.webp",
+    "gender": "female",
+    "characterIds": [
+      402026
+    ]
+  },
+  {
+    "id": 127044,
+    "name": "오키노 코지",
+    "cvimg": "image/cvimg/오키노_코지.webp",
+    "gender": "unknown",
+    "characterIds": [
+      157276
+    ]
+  },
+  {
+    "id": 95177,
+    "name": "오키아유 료타로",
+    "cvimg": "image/cvimg/오키아유_료타로.webp",
+    "gender": "male",
+    "characterIds": [
+      907,
+      252553,
+      371796,
+      396106,
+      406266
+    ]
+  },
+  {
+    "id": 102288,
+    "name": "오키츠 카즈유키",
+    "cvimg": "image/cvimg/오키츠_카즈유키.webp",
+    "gender": "male",
+    "characterIds": [
+      129755,
+      130790,
+      157298,
+      170003,
+      226703,
+      283889,
+      335861,
+      380505,
+      382234,
+      386990,
+      392608,
+      392734,
+      393924,
+      398321,
+      406523
+    ]
+  },
+  {
+    "id": 203135,
+    "name": "와카바야시 유우",
+    "cvimg": "image/cvimg/와카바야시_유우.webp",
+    "gender": "unknown",
+    "characterIds": [
+      302050,
+      395448,
+      399005
+    ]
+  },
+  {
+    "id": 393044,
+    "name": "와카야마 미유키",
+    "cvimg": "image/cvimg/와카야마_미유키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      393043
+    ]
+  },
+  {
+    "id": 148220,
+    "name": "와카야마 시온",
+    "cvimg": "image/cvimg/와카야마_시온.webp",
+    "gender": "unknown",
+    "characterIds": [
+      137816,
+      163548,
+      297788,
+      344248,
+      345228,
+      374841,
+      377663,
+      379914,
+      386178
+    ]
+  },
+  {
+    "id": 137399,
+    "name": "와카야마 아키히사",
+    "cvimg": "image/cvimg/와카야마_아키히사.webp",
+    "gender": "unknown",
+    "characterIds": [
+      207022
+    ]
+  },
+  {
+    "id": 122697,
+    "name": "와카이 유우키",
+    "cvimg": "image/cvimg/와카이_유우키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      127780,
+      385344,
+      397664,
+      405461
+    ]
+  },
+  {
+    "id": 318262,
+    "name": "와쿠노 아이카",
+    "cvimg": "image/cvimg/와쿠노_아이카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      311444
+    ]
+  },
+  {
+    "id": 118839,
+    "name": "와쿠이 유우",
+    "cvimg": "image/cvimg/와쿠이_유우.webp",
+    "gender": "female",
+    "characterIds": [
+      88522
+    ]
+  },
+  {
+    "id": 119517,
+    "name": "와키 아즈미",
+    "cvimg": "image/cvimg/와키_아즈미.webp",
+    "gender": "female",
+    "characterIds": [
+      197160
+    ]
+  },
+  {
+    "id": 95230,
+    "name": "와타나베 미사",
+    "cvimg": "image/cvimg/와타나베_미사.webp",
+    "gender": "female",
+    "characterIds": [
+      395189
+    ]
+  },
+  {
+    "id": 367186,
+    "name": "와타나베 슈야",
+    "cvimg": "image/cvimg/와타나베_슈야.webp",
+    "gender": "unknown",
+    "characterIds": [
+      379824
+    ]
+  },
+  {
+    "id": 95094,
+    "name": "와타나베 아케노",
+    "cvimg": "image/cvimg/와타나베_아케노.webp",
+    "gender": "female",
+    "characterIds": [
+      127427,
+      395257
+    ]
+  },
+  {
+    "id": 106864,
+    "name": "와타나베 유이",
+    "cvimg": "image/cvimg/와타나베_유이.webp",
+    "gender": "female",
+    "characterIds": [
+      127786
+    ]
+  },
+  {
+    "id": 176881,
+    "name": "와타나베 케이코",
+    "cvimg": "image/cvimg/와타나베_케이코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      387955
+    ]
+  },
+  {
+    "id": 314281,
+    "name": "와타나베 토시키",
+    "cvimg": "image/cvimg/와타나베_토시키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      396051,
+      402214
+    ]
+  },
+  {
+    "id": 131578,
+    "name": "와타누키 류노스케",
+    "cvimg": "image/cvimg/와타누키_류노스케.webp",
+    "gender": "unknown",
+    "characterIds": [
+      388267,
+      393920,
+      397197
+    ]
+  },
+  {
+    "id": 152199,
+    "name": "와타다 미사키",
+    "cvimg": "image/cvimg/와타다_미사키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      377496,
+      389112
+    ]
+  },
+  {
+    "id": 121023,
+    "name": "와타베 사유미",
+    "cvimg": "image/cvimg/와타베_사유미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      160355,
+      381808,
+      399593
+    ]
+  },
+  {
+    "id": 161150,
+    "name": "와타야 미호",
+    "cvimg": "image/cvimg/와타야_미호.webp",
+    "gender": "unknown",
+    "characterIds": [
+      307390,
+      404695
+    ]
+  },
+  {
+    "id": 95556,
+    "name": "요나가 츠바사",
+    "cvimg": "image/cvimg/요나가_츠바사.webp",
+    "gender": "male",
+    "characterIds": [
+      168593
+    ]
+  },
+  {
+    "id": 142982,
+    "name": "요리타 나츠",
+    "cvimg": "image/cvimg/요리타_나츠.webp",
+    "gender": "unknown",
+    "characterIds": [
+      389114
+    ]
+  },
+  {
+    "id": 106662,
+    "name": "요시나가 타쿠토",
+    "cvimg": "image/cvimg/요시나가_타쿠토.webp",
+    "gender": "male",
+    "characterIds": [
+      148548,
+      242827
+    ]
+  },
+  {
+    "id": 293129,
+    "name": "요시노 타카히로",
+    "cvimg": "image/cvimg/요시노_타카히로.webp",
+    "gender": "unknown",
+    "characterIds": [
+      390753
+    ]
+  },
+  {
+    "id": 95283,
+    "name": "요시노 히로유키",
+    "cvimg": "image/cvimg/요시노_히로유키.webp",
+    "gender": "male",
+    "characterIds": [
+      127425,
+      338218,
+      402157,
+      402158,
+      406513
+    ]
+  },
+  {
+    "id": 118392,
+    "name": "요시다 유리",
+    "cvimg": "image/cvimg/요시다_유리.webp",
+    "gender": "female",
+    "characterIds": [
+      396705
+    ]
+  },
+  {
+    "id": 181126,
+    "name": "요시다 코타로",
+    "cvimg": "image/cvimg/요시다_코타로.webp",
+    "gender": "unknown",
+    "characterIds": [
+      379200
+    ]
+  },
+  {
+    "id": 113445,
+    "name": "요시오카 마야",
+    "cvimg": "image/cvimg/요시오카_마야.webp",
+    "gender": "female",
+    "characterIds": [
+      244864
+    ]
+  },
+  {
+    "id": 118477,
+    "name": "요시오카 마유",
+    "cvimg": "image/cvimg/요시오카_마유.webp",
+    "gender": "female",
+    "characterIds": [
+      376036
+    ]
+  },
+  {
+    "id": 375723,
+    "name": "요시카와 리리",
+    "cvimg": "image/cvimg/요시카와_리리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      407851
+    ]
+  },
+  {
+    "id": 339321,
+    "name": "요시타카 시온",
+    "cvimg": "image/cvimg/요시타카_시온.webp",
+    "gender": "unknown",
+    "characterIds": [
+      232517
+    ]
+  },
+  {
+    "id": 205892,
+    "name": "요우미야 히나",
+    "cvimg": "image/cvimg/요우미야_히나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      225096,
+      252073
+    ]
+  },
+  {
+    "id": 176882,
+    "name": "요코야마 타쿠토",
+    "cvimg": "image/cvimg/요코야마_타쿠토.webp",
+    "gender": "unknown",
+    "characterIds": [
+      379822
+    ]
+  },
+  {
+    "id": 104472,
+    "name": "요코오 마리",
+    "cvimg": "image/cvimg/요코오_마리.webp",
+    "gender": "female",
+    "characterIds": [
+      262707
+    ]
+  },
+  {
+    "id": 103022,
+    "name": "우가키 히데나리",
+    "cvimg": "image/cvimg/우가키_히데나리.webp",
+    "gender": "male",
+    "characterIds": [
+      279430,
+      406620
+    ]
+  },
+  {
+    "id": 255095,
+    "name": "우다가와 카이토",
+    "cvimg": "image/cvimg/우다가와_카이토.webp",
+    "gender": "unknown",
+    "characterIds": [
+      402164
+    ]
+  },
+  {
+    "id": 107079,
+    "name": "우도노 마유",
+    "cvimg": "image/cvimg/우도노_마유.webp",
+    "gender": "female",
+    "characterIds": [
+      79445
+    ]
+  },
+  {
+    "id": 220465,
+    "name": "우라 카즈키",
+    "cvimg": "image/cvimg/우라_카즈키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      232516,
+      307382,
+      339973,
+      364883,
+      388249,
+      398523,
+      399004
+    ]
+  },
+  {
+    "id": 107677,
+    "name": "우라야마 진",
+    "cvimg": "image/cvimg/우라야마_진.webp",
+    "gender": "male",
+    "characterIds": [
+      395191
+    ]
+  },
+  {
+    "id": 172201,
+    "name": "우라오 타케히로",
+    "cvimg": "image/cvimg/우라오_타케히로.webp",
+    "gender": "unknown",
+    "characterIds": [
+      360411
+    ]
+  },
+  {
+    "id": 120293,
+    "name": "우라타 와타루",
+    "cvimg": "image/cvimg/우라타_와타루.webp",
+    "gender": "unknown",
+    "characterIds": [
+      376040
+    ]
+  },
+  {
+    "id": 213989,
+    "name": "우루시야마 유우키",
+    "cvimg": "image/cvimg/우루시야마_유우키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      387021
+    ]
+  },
+  {
+    "id": 236715,
+    "name": "우메다 슈이치로",
+    "cvimg": "image/cvimg/우메다_슈이치로.webp",
+    "gender": "unknown",
+    "characterIds": [
+      126087,
+      308636,
+      375291,
+      378749,
+      381829,
+      387281,
+      391326,
+      395537
+    ]
+  },
+  {
+    "id": 118908,
+    "name": "우메하라 유이치로",
+    "cvimg": "image/cvimg/우메하라_유이치로.webp",
+    "gender": "male",
+    "characterIds": [
+      4918,
+      71949,
+      156109,
+      356704,
+      361186,
+      371756,
+      374850,
+      375289,
+      376814,
+      391725,
+      394841,
+      396115,
+      407807
+    ]
+  },
+  {
+    "id": 106362,
+    "name": "우시다 히로코",
+    "cvimg": "image/cvimg/우시다_히로코.webp",
+    "gender": "female",
+    "characterIds": [
+      406743
+    ]
+  },
+  {
+    "id": 118602,
+    "name": "우에다 레이나",
+    "cvimg": "image/cvimg/우에다_레이나.webp",
+    "gender": "female",
+    "characterIds": [
+      138904,
+      143272,
+      170331,
+      187716,
+      246054,
+      380366,
+      393081,
+      407809
+    ]
+  },
+  {
+    "id": 95926,
+    "name": "우에다 요지",
+    "cvimg": "image/cvimg/우에다_요지.webp",
+    "gender": "male",
+    "characterIds": [
+      21321,
+      137545,
+      184312,
+      308812,
+      360742,
+      376022,
+      382312,
+      382346,
+      388888,
+      398319,
+      401294,
+      402576,
+      403897,
+      404101,
+      406599
+    ]
+  },
+  {
+    "id": 95058,
+    "name": "우에다 유지",
+    "cvimg": "image/cvimg/우에다_유지.webp",
+    "gender": "male",
+    "characterIds": [
+      187229,
+      331439,
+      403914
+    ]
+  },
+  {
+    "id": 95116,
+    "name": "우에다 카나",
+    "cvimg": "image/cvimg/우에다_카나.webp",
+    "gender": "female",
+    "characterIds": [
+      2768,
+      90177,
+      148983,
+      313108
+    ]
+  },
+  {
+    "id": 340880,
+    "name": "우에다 카나",
+    "cvimg": "image/cvimg/우에다_카나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      391702
+    ]
+  },
+  {
+    "id": 138528,
+    "name": "우에다 하루미",
+    "cvimg": "image/cvimg/우에다_하루미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      394793
+    ]
+  },
+  {
+    "id": 119604,
+    "name": "우에다 히카루",
+    "cvimg": "image/cvimg/우에다_히카루.webp",
+    "gender": "female",
+    "characterIds": [
+      138062
+    ]
+  },
+  {
+    "id": 125306,
+    "name": "우에다 히토미",
+    "cvimg": "image/cvimg/우에다_히토미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      353734,
+      394828,
+      400777
+    ]
+  },
+  {
+    "id": 118498,
+    "name": "우에무라 유토",
+    "cvimg": "image/cvimg/우에무라_유토.webp",
+    "gender": "male",
+    "characterIds": [
+      89197,
+      232518,
+      300884,
+      307392,
+      318198,
+      336019,
+      381188,
+      387497,
+      395378
+    ]
+  },
+  {
+    "id": 109441,
+    "name": "우에사카 스미레",
+    "cvimg": "image/cvimg/우에사카_스미레.webp",
+    "gender": "female",
+    "characterIds": [
+      130073,
+      173812,
+      319341,
+      320096,
+      380700,
+      393213,
+      400138,
+      402169,
+      406541,
+      407619
+    ]
+  },
+  {
+    "id": 404354,
+    "name": "우에스기 켄쇼",
+    "cvimg": "image/cvimg/우에스기_켄쇼.webp",
+    "gender": "unknown",
+    "characterIds": [
+      404353
+    ]
+  },
+  {
+    "id": 398004,
+    "name": "우에하라 아유미",
+    "cvimg": "image/cvimg/우에하라_아유미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      398007
+    ]
+  },
+  {
+    "id": 106660,
+    "name": "우자와 쇼타로",
+    "cvimg": "image/cvimg/우자와_쇼타로.webp",
+    "gender": "male",
+    "characterIds": [
+      284558
+    ]
+  },
+  {
+    "id": 95338,
+    "name": "우치다 나오야",
+    "cvimg": "image/cvimg/우치다_나오야.webp",
+    "gender": "male",
+    "characterIds": [
+      157234,
+      157297,
+      270569,
+      382111,
+      402819
+    ]
+  },
+  {
+    "id": 140680,
+    "name": "우치다 마미",
+    "cvimg": "image/cvimg/우치다_마미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      402815
+    ]
+  },
+  {
+    "id": 108639,
+    "name": "우치다 마아야",
+    "cvimg": "image/cvimg/우치다_마아야.webp",
+    "gender": "female",
+    "characterIds": [
+      127068,
+      138620,
+      151776,
+      156416,
+      162432,
+      217995,
+      321159,
+      348547,
+      357524,
+      379986,
+      380254,
+      382256,
+      393977,
+      400291,
+      402365,
+      405594
+    ]
+  },
+  {
+    "id": 121417,
+    "name": "우치다 슈우",
+    "cvimg": "image/cvimg/우치다_슈우.webp",
+    "gender": "unknown",
+    "characterIds": [
+      250499
+    ]
+  },
+  {
+    "id": 162833,
+    "name": "우치다 슈이치",
+    "cvimg": "image/cvimg/우치다_슈이치.webp",
+    "gender": "unknown",
+    "characterIds": [
+      405951
+    ]
+  },
+  {
+    "id": 103921,
+    "name": "우치다 아야",
+    "cvimg": "image/cvimg/우치다_아야.webp",
+    "gender": "female",
+    "characterIds": [
+      126541,
+      133348,
+      398533,
+      407163
+    ]
+  },
+  {
+    "id": 96637,
+    "name": "우치다 유야",
+    "cvimg": "image/cvimg/우치다_유야.webp",
+    "gender": "male",
+    "characterIds": [
+      2655,
+      22381,
+      395190,
+      395408,
+      406161
+    ]
+  },
+  {
+    "id": 119617,
+    "name": "우치다 유우마",
+    "cvimg": "image/cvimg/우치다_유우마.webp",
+    "gender": "male",
+    "characterIds": [
+      123182,
+      126635,
+      148744,
+      156417,
+      160356,
+      197164,
+      201611,
+      218500,
+      353547,
+      378092,
+      385543
+    ]
+  },
+  {
+    "id": 106784,
+    "name": "우치야마 유미",
+    "cvimg": "image/cvimg/우치야마_유미.webp",
+    "gender": "female",
+    "characterIds": [
+      34730,
+      88348,
+      131039,
+      154079,
+      169988,
+      308632,
+      338227,
+      362388,
+      379635,
+      393212,
+      397196,
+      400732,
+      400992
+    ]
+  },
+  {
+    "id": 96764,
+    "name": "우치야마 코우키",
+    "cvimg": "image/cvimg/우치야마_코우키.webp",
+    "gender": "male",
+    "characterIds": [
+      715,
+      4916,
+      40982,
+      260731,
+      342422,
+      378163,
+      380692,
+      391466
+    ]
+  },
+  {
+    "id": 321533,
+    "name": "유리",
+    "cvimg": "image/cvimg/유리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      306616
+    ]
+  },
+  {
+    "id": 365524,
+    "name": "유리모토 하나",
+    "cvimg": "image/cvimg/유리모토_하나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      379023
+    ]
+  },
+  {
+    "id": 107016,
+    "name": "유미 하라",
+    "cvimg": "image/cvimg/유미_하라.webp",
+    "gender": "female",
+    "characterIds": [
+      389133,
+      389454,
+      391766
+    ]
+  },
+  {
+    "id": 95068,
+    "name": "유사 코지",
+    "cvimg": "image/cvimg/유사_코지.webp",
+    "gender": "male",
+    "characterIds": [
+      16419,
+      148756,
+      186483,
+      208204,
+      212395,
+      260733,
+      265077,
+      380217,
+      382112,
+      386991,
+      391555,
+      397292,
+      398544,
+      400223,
+      403713
+    ]
+  },
+  {
+    "id": 231061,
+    "name": "유센 이사무",
+    "cvimg": "image/cvimg/유센_이사무.webp",
+    "gender": "unknown",
+    "characterIds": [
+      335860
+    ]
+  },
+  {
+    "id": 96463,
+    "name": "유야 아츠코",
+    "cvimg": "image/cvimg/유야_아츠코.webp",
+    "gender": "female",
+    "characterIds": [
+      408229
+    ]
+  },
+  {
+    "id": 101686,
+    "name": "유우키 아오이",
+    "cvimg": "image/cvimg/유우키_아오이.webp",
+    "gender": "female",
+    "characterIds": [
+      121052,
+      130751,
+      154224,
+      169989,
+      295094,
+      300906
+    ]
+  },
+  {
+    "id": 118739,
+    "name": "유우키 카나",
+    "cvimg": "image/cvimg/유우키_카나.webp",
+    "gender": "female",
+    "characterIds": [
+      311445,
+      311446,
+      311447,
+      311450,
+      311452,
+      311453,
+      311454,
+      311456,
+      311461,
+      311463,
+      389120,
+      392980
+    ]
+  },
+  {
+    "id": 186409,
+    "name": "유우키 코즈에",
+    "cvimg": "image/cvimg/유우키_코즈에.webp",
+    "gender": "unknown",
+    "characterIds": [
+      382474
+    ]
+  },
+  {
+    "id": 301279,
+    "name": "유이카와 아사키",
+    "cvimg": "image/cvimg/유이카와_아사키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      215499,
+      299680,
+      385188,
+      389343,
+      397984,
+      398508
+    ]
+  },
+  {
+    "id": 95141,
+    "name": "유즈키 료카",
+    "cvimg": "image/cvimg/유즈키_료카.webp",
+    "gender": "female",
+    "characterIds": [
+      16716,
+      138907,
+      389342,
+      393896
+    ]
+  },
+  {
+    "id": 95140,
+    "name": "유카나",
+    "cvimg": "image/cvimg/유카나.webp",
+    "gender": "female",
+    "characterIds": [
+      192784,
+      259535,
+      391361,
+      394967,
+      407158
+    ]
+  },
+  {
+    "id": 108551,
+    "name": "유키나리 토아",
+    "cvimg": "image/cvimg/유키나리_토아.webp",
+    "gender": "female",
+    "characterIds": [
+      123180,
+      307811
+    ]
+  },
+  {
+    "id": 95003,
+    "name": "유키노 사츠키",
+    "cvimg": "image/cvimg/유키노_사츠키.webp",
+    "gender": "female",
+    "characterIds": [
+      908
+    ]
+  },
+  {
+    "id": 130279,
+    "name": "유키무라 에리",
+    "cvimg": "image/cvimg/유키무라_에리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      198042,
+      395546,
+      405879
+    ]
+  },
+  {
+    "id": 406003,
+    "name": "율두즈 카논",
+    "cvimg": "image/cvimg/율두즈_카논.webp",
+    "gender": "unknown",
+    "characterIds": [
+      406002
+    ]
+  },
+  {
+    "id": 102524,
+    "name": "이가라시 레이",
+    "cvimg": "image/cvimg/이가라시_레이.webp",
+    "gender": "female",
+    "characterIds": [
+      297202,
+      400221
+    ]
+  },
+  {
+    "id": 379025,
+    "name": "이가라시 유타",
+    "cvimg": "image/cvimg/이가라시_유타.webp",
+    "gender": "unknown",
+    "characterIds": [
+      379024
+    ]
+  },
+  {
+    "id": 104876,
+    "name": "이가라시 히로미",
+    "cvimg": "image/cvimg/이가라시_히로미.webp",
+    "gender": "female",
+    "characterIds": [
+      387722,
+      394838
+    ]
+  },
+  {
+    "id": 293910,
+    "name": "이고마 유리에",
+    "cvimg": "image/cvimg/이고마_유리에.webp",
+    "gender": "unknown",
+    "characterIds": [
+      183884,
+      388592,
+      391144
+    ]
+  },
+  {
+    "id": 105064,
+    "name": "이구치 유이치",
+    "cvimg": "image/cvimg/이구치_유이치.webp",
+    "gender": "male",
+    "characterIds": [
+      160354
+    ]
+  },
+  {
+    "id": 95885,
+    "name": "이구치 유카",
+    "cvimg": "image/cvimg/이구치_유카.webp",
+    "gender": "female",
+    "characterIds": [
+      126156,
+      186588,
+      306704,
+      400140
+    ]
+  },
+  {
+    "id": 271036,
+    "name": "이나가키 코노미",
+    "cvimg": "image/cvimg/이나가키_코노미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      322471,
+      381830,
+      389429
+    ]
+  },
+  {
+    "id": 95395,
+    "name": "이나다 테츠",
+    "cvimg": "image/cvimg/이나다_테츠.webp",
+    "gender": "male",
+    "characterIds": [
+      79441,
+      137264,
+      146839,
+      195581,
+      262623,
+      304726,
+      369516,
+      394800,
+      395258,
+      395547,
+      395975,
+      403583,
+      405342,
+      406598
+    ]
+  },
+  {
+    "id": 172198,
+    "name": "이나세 아오이",
+    "cvimg": "image/cvimg/이나세_아오이.webp",
+    "gender": "unknown",
+    "characterIds": [
+      327988
+    ]
+  },
+  {
+    "id": 146982,
+    "name": "이네무리 스야코",
+    "cvimg": "image/cvimg/이네무리_스야코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      391313
+    ]
+  },
+  {
+    "id": 165186,
+    "name": "이노마타 사토시",
+    "cvimg": "image/cvimg/이노마타_사토시.webp",
+    "gender": "unknown",
+    "characterIds": [
+      232521,
+      308680,
+      354443,
+      373000,
+      403301
+    ]
+  },
+  {
+    "id": 95158,
+    "name": "이노우에 마리나",
+    "cvimg": "image/cvimg/이노우에_마리나.webp",
+    "gender": "female",
+    "characterIds": [
+      134168,
+      393084,
+      402032,
+      405590
+    ]
+  },
+  {
+    "id": 95021,
+    "name": "이노우에 카즈히코",
+    "cvimg": "image/cvimg/이노우에_카즈히코.webp",
+    "gender": "male",
+    "characterIds": [
+      157135,
+      331267,
+      382473,
+      382952,
+      398541,
+      402198
+    ]
+  },
+  {
+    "id": 95195,
+    "name": "이노우에 키쿠코",
+    "cvimg": "image/cvimg/이노우에_키쿠코.webp",
+    "gender": "female",
+    "characterIds": [
+      18516,
+      157149,
+      306366,
+      392451,
+      393361,
+      393946,
+      394964
+    ]
+  },
+  {
+    "id": 129363,
+    "name": "이노우에 호노카",
+    "cvimg": "image/cvimg/이노우에_호노카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      34268,
+      151043,
+      197166,
+      379469,
+      382470,
+      405728,
+      405877
+    ]
+  },
+  {
+    "id": 129351,
+    "name": "이노우에 호노카",
+    "cvimg": "image/cvimg/이노우에_호노카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      129350,
+      282717,
+      327264,
+      392502,
+      393713
+    ]
+  },
+  {
+    "id": 357904,
+    "name": "이누이 나츠네",
+    "cvimg": "image/cvimg/이누이_나츠네.webp",
+    "gender": "unknown",
+    "characterIds": [
+      393915
+    ]
+  },
+  {
+    "id": 95088,
+    "name": "이리노 미유",
+    "cvimg": "image/cvimg/이리노_미유.webp",
+    "gender": "male",
+    "characterIds": [
+      187178,
+      354097,
+      385542,
+      392082,
+      394596
+    ]
+  },
+  {
+    "id": 95229,
+    "name": "이마루오카 아츠시",
+    "cvimg": "image/cvimg/이마루오카_아츠시.webp",
+    "gender": "male",
+    "characterIds": [
+      54987
+    ]
+  },
+  {
+    "id": 103662,
+    "name": "이마이 아사미",
+    "cvimg": "image/cvimg/이마이_아사미.webp",
+    "gender": "female",
+    "characterIds": [
+      390780
+    ]
+  },
+  {
+    "id": 167940,
+    "name": "이마이 후미야",
+    "cvimg": "image/cvimg/이마이_후미야.webp",
+    "gender": "unknown",
+    "characterIds": [
+      382254,
+      382308,
+      394791,
+      395545,
+      400228
+    ]
+  },
+  {
+    "id": 95655,
+    "name": "이세 마리야",
+    "cvimg": "image/cvimg/이세_마리야.webp",
+    "gender": "female",
+    "characterIds": [
+      169992,
+      200765,
+      219734,
+      282716,
+      304079,
+      331253,
+      373271,
+      378162,
+      400143,
+      403349,
+      405257
+    ]
+  },
+  {
+    "id": 257587,
+    "name": "이세 유우리",
+    "cvimg": "image/cvimg/이세_유우리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      395379
+    ]
+  },
+  {
+    "id": 107487,
+    "name": "이소베 마사코",
+    "cvimg": "image/cvimg/이소베_마사코.webp",
+    "gender": "female",
+    "characterIds": [
+      401994
+    ]
+  },
+  {
+    "id": 118738,
+    "name": "이시가미 시즈카",
+    "cvimg": "image/cvimg/이시가미_시즈카.webp",
+    "gender": "female",
+    "characterIds": [
+      130268,
+      355724,
+      361639,
+      387721,
+      400431
+    ]
+  },
+  {
+    "id": 121940,
+    "name": "이시게 쇼야",
+    "cvimg": "image/cvimg/이시게_쇼야.webp",
+    "gender": "unknown",
+    "characterIds": [
+      21319,
+      307384,
+      312446,
+      360104,
+      393543
+    ]
+  },
+  {
+    "id": 157985,
+    "name": "이시구로 후미타케",
+    "cvimg": "image/cvimg/이시구로_후미타케.webp",
+    "gender": "unknown",
+    "characterIds": [
+      406538
+    ]
+  },
+  {
+    "id": 95017,
+    "name": "이시다 아키라",
+    "cvimg": "image/cvimg/이시다_아키라.webp",
+    "gender": "male",
+    "characterIds": [
+      131048,
+      138067,
+      145062,
+      161418,
+      220784,
+      306701,
+      334315,
+      344761,
+      366925,
+      399796,
+      404894,
+      405241
+    ]
+  },
+  {
+    "id": 136188,
+    "name": "이시바시 히이로",
+    "cvimg": "image/cvimg/이시바시_히이로.webp",
+    "gender": "unknown",
+    "characterIds": [
+      158684,
+      404551
+    ]
+  },
+  {
+    "id": 119200,
+    "name": "이시야 하루키",
+    "cvimg": "image/cvimg/이시야_하루키.webp",
+    "gender": "male",
+    "characterIds": [
+      51105,
+      129349,
+      297787,
+      316483,
+      376026,
+      380738,
+      390850,
+      391727,
+      393981
+    ]
+  },
+  {
+    "id": 96126,
+    "name": "이시이 마코토",
+    "cvimg": "image/cvimg/이시이_마코토.webp",
+    "gender": "male",
+    "characterIds": [
+      382472
+    ]
+  },
+  {
+    "id": 180149,
+    "name": "이시이 미사",
+    "cvimg": "image/cvimg/이시이_미사.webp",
+    "gender": "unknown",
+    "characterIds": [
+      402037
+    ]
+  },
+  {
+    "id": 303856,
+    "name": "이시이 미즈키",
+    "cvimg": "image/cvimg/이시이_미즈키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      393042
+    ]
+  },
+  {
+    "id": 95045,
+    "name": "이시이 코지",
+    "cvimg": "image/cvimg/이시이_코지.webp",
+    "gender": "male",
+    "characterIds": [
+      398535
+    ]
+  },
+  {
+    "id": 103729,
+    "name": "이시즈미 아키히코",
+    "cvimg": "image/cvimg/이시즈미_아키히코.webp",
+    "gender": "male",
+    "characterIds": [
+      395193
+    ]
+  },
+  {
+    "id": 131888,
+    "name": "이시카리 유우키",
+    "cvimg": "image/cvimg/이시카리_유우키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      390262
+    ]
+  },
+  {
+    "id": 100142,
+    "name": "이시카와 유이",
+    "cvimg": "image/cvimg/이시카와_유이.webp",
+    "gender": "female",
+    "characterIds": [
+      88524,
+      131046,
+      219490,
+      229291,
+      252544,
+      377494,
+      380365,
+      382311,
+      382734,
+      386989,
+      389406,
+      394849
+    ]
+  },
+  {
+    "id": 115156,
+    "name": "이시카와 카이토",
+    "cvimg": "image/cvimg/이시카와_카이토.webp",
+    "gender": "male",
+    "characterIds": [
+      20148,
+      138905,
+      203633,
+      214621,
+      251537,
+      267548,
+      295779,
+      355085,
+      380737,
+      382344,
+      393343,
+      398537
+    ]
+  },
+  {
+    "id": 95412,
+    "name": "이시카와 히데오",
+    "cvimg": "image/cvimg/이시카와_히데오.webp",
+    "gender": "male",
+    "characterIds": [
+      381985
+    ]
+  },
+  {
+    "id": 105217,
+    "name": "이시하라 카오리",
+    "cvimg": "image/cvimg/이시하라_카오리.webp",
+    "gender": "female",
+    "characterIds": [
+      214580,
+      317447,
+      381882,
+      381942,
+      409046
+    ]
+  },
+  {
+    "id": 129952,
+    "name": "이와나카 무츠키",
+    "cvimg": "image/cvimg/이와나카_무츠키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      393936
+    ]
+  },
+  {
+    "id": 121821,
+    "name": "이와미 마나카",
+    "cvimg": "image/cvimg/이와미_마나카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      145100,
+      156418,
+      192782,
+      195602,
+      201609,
+      203384,
+      297195,
+      316482,
+      381806,
+      391480,
+      393184,
+      401586
+    ]
+  },
+  {
+    "id": 116425,
+    "name": "이와사와 토시키",
+    "cvimg": "image/cvimg/이와사와_토시키.webp",
+    "gender": "male",
+    "characterIds": [
+      158988,
+      309994
+    ]
+  },
+  {
+    "id": 126856,
+    "name": "이와사키 료타",
+    "cvimg": "image/cvimg/이와사키_료타.webp",
+    "gender": "unknown",
+    "characterIds": [
+      282718
+    ]
+  },
+  {
+    "id": 100435,
+    "name": "이와사키 히로시",
+    "cvimg": "image/cvimg/이와사키_히로시.webp",
+    "gender": "male",
+    "characterIds": [
+      397195
+    ]
+  },
+  {
+    "id": 95399,
+    "name": "이와타 미츠오",
+    "cvimg": "image/cvimg/이와타_미츠오.webp",
+    "gender": "male",
+    "characterIds": [
+      7955,
+      220907
+    ]
+  },
+  {
+    "id": 342862,
+    "name": "이와타 안지",
+    "cvimg": "image/cvimg/이와타_안지.webp",
+    "gender": "unknown",
+    "characterIds": [
+      302625
+    ]
+  },
+  {
+    "id": 143018,
+    "name": "이와하시 유카",
+    "cvimg": "image/cvimg/이와하시_유카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      396515
+    ]
+  },
+  {
+    "id": 116245,
+    "name": "이이다 유우코",
+    "cvimg": "image/cvimg/이이다_유우코.webp",
+    "gender": "female",
+    "characterIds": [
+      295792
+    ]
+  },
+  {
+    "id": 144964,
+    "name": "이이다 히카루",
+    "cvimg": "image/cvimg/이이다_히카루.webp",
+    "gender": "unknown",
+    "characterIds": [
+      396466
+    ]
+  },
+  {
+    "id": 166401,
+    "name": "이이즈카 마유",
+    "cvimg": "image/cvimg/이이즈카_마유.webp",
+    "gender": "unknown",
+    "characterIds": [
+      355726,
+      369797
+    ]
+  },
+  {
+    "id": 111453,
+    "name": "이자와 시오리",
+    "cvimg": "image/cvimg/이자와_시오리.webp",
+    "gender": "female",
+    "characterIds": [
+      266761,
+      312633,
+      348018,
+      365187,
+      376717,
+      380506,
+      389137,
+      397417,
+      402034
+    ]
+  },
+  {
+    "id": 106609,
+    "name": "이즈미 시노부",
+    "cvimg": "image/cvimg/이즈미_시노부.webp",
+    "gender": "female",
+    "characterIds": [
+      297680
+    ]
+  },
+  {
+    "id": 164145,
+    "name": "이즈미 후카",
+    "cvimg": "image/cvimg/이즈미_후카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      192781,
+      300878,
+      307393,
+      308635,
+      318832,
+      354442,
+      377810,
+      382222,
+      382987,
+      392452,
+      394362,
+      395146,
+      400219
+    ]
+  },
+  {
+    "id": 363987,
+    "name": "이치노미야 레이",
+    "cvimg": "image/cvimg/이치노미야_레이.webp",
+    "gender": "unknown",
+    "characterIds": [
+      205878,
+      397660
+    ]
+  },
+  {
+    "id": 124390,
+    "name": "이치노세 카나",
+    "cvimg": "image/cvimg/이치노세_카나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      124147,
+      152673,
+      173952,
+      183965,
+      192581,
+      192778,
+      197152,
+      223110,
+      286332,
+      338214,
+      355259,
+      382117,
+      392503
+    ]
+  },
+  {
+    "id": 101754,
+    "name": "이치무라 마사치카",
+    "cvimg": "image/cvimg/이치무라_마사치카.webp",
+    "gender": "male",
+    "characterIds": [
+      379198
+    ]
+  },
+  {
+    "id": 96519,
+    "name": "이치조 카즈야",
+    "cvimg": "image/cvimg/이치조_카즈야.webp",
+    "gender": "male",
+    "characterIds": [
+      400220,
+      400421
+    ]
+  },
+  {
+    "id": 122966,
+    "name": "이치카와 아오이",
+    "cvimg": "image/cvimg/이치카와_아오이.webp",
+    "gender": "unknown",
+    "characterIds": [
+      137268,
+      390845,
+      400474
+    ]
+  },
+  {
+    "id": 96527,
+    "name": "이치키 미츠히로",
+    "cvimg": "image/cvimg/이치키_미츠히로.webp",
+    "gender": "male",
+    "characterIds": [
+      40926
+    ]
+  },
+  {
+    "id": 179337,
+    "name": "이케다 미사키",
+    "cvimg": "image/cvimg/이케다_미사키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      405894
+    ]
+  },
+  {
+    "id": 150456,
+    "name": "이토 마사히로",
+    "cvimg": "image/cvimg/이토_마사히로.webp",
+    "gender": "unknown",
+    "characterIds": [
+      342590
+    ]
+  },
+  {
+    "id": 379404,
+    "name": "이토 마오",
+    "cvimg": "image/cvimg/이토_마오.webp",
+    "gender": "unknown",
+    "characterIds": [
+      382015
+    ]
+  },
+  {
+    "id": 118581,
+    "name": "이토 미쿠",
+    "cvimg": "image/cvimg/이토_미쿠.webp",
+    "gender": "female",
+    "characterIds": [
+      219038,
+      234868,
+      267549,
+      339095,
+      394145
+    ]
+  },
+  {
+    "id": 119798,
+    "name": "이토 세츠오",
+    "cvimg": "image/cvimg/이토_세츠오.webp",
+    "gender": "male",
+    "characterIds": [
+      155648,
+      393927
+    ]
+  },
+  {
+    "id": 95093,
+    "name": "이토 시즈카",
+    "cvimg": "image/cvimg/이토_시즈카.webp",
+    "gender": "female",
+    "characterIds": [
+      151039,
+      264105,
+      355437,
+      374075,
+      377718,
+      392481,
+      393258,
+      407157
+    ]
+  },
+  {
+    "id": 118799,
+    "name": "이토 아야사",
+    "cvimg": "image/cvimg/이토_아야사.webp",
+    "gender": "female",
+    "characterIds": [
+      257291,
+      382986,
+      385186,
+      391146,
+      394840,
+      402023,
+      407941
+    ]
+  },
+  {
+    "id": 188507,
+    "name": "이토 유이나",
+    "cvimg": "image/cvimg/이토_유이나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      195580
+    ]
+  },
+  {
+    "id": 95762,
+    "name": "이토 카나에",
+    "cvimg": "image/cvimg/이토_카나에.webp",
+    "gender": "female",
+    "characterIds": [
+      123223,
+      127768,
+      300444,
+      321718,
+      396461
+    ]
+  },
+  {
+    "id": 95221,
+    "name": "이토 켄타로",
+    "cvimg": "image/cvimg/이토_켄타로.webp",
+    "gender": "male",
+    "characterIds": [
+      124699,
+      406225,
+      408131
+    ]
+  },
+  {
+    "id": 122874,
+    "name": "이토 켄토",
+    "cvimg": "image/cvimg/이토_켄토.webp",
+    "gender": "unknown",
+    "characterIds": [
+      373708,
+      382110,
+      396498
+    ]
+  },
+  {
+    "id": 130061,
+    "name": "이하라 마사아키",
+    "cvimg": "image/cvimg/이하라_마사아키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      392842
+    ]
+  },
+  {
+    "id": 406171,
+    "name": "찬스 오시로",
+    "cvimg": "image/cvimg/찬스_오시로.webp",
+    "gender": "unknown",
+    "characterIds": [
+      406170
+    ]
+  },
+  {
+    "id": 95831,
+    "name": "챠후린",
+    "cvimg": "image/cvimg/챠후린.webp",
+    "gender": "male",
+    "characterIds": [
+      56379,
+      301606,
+      403579
+    ]
+  },
+  {
+    "id": 95898,
+    "name": "쵸",
+    "cvimg": "image/cvimg/쵸.webp",
+    "gender": "male",
+    "characterIds": [
+      18620,
+      203965,
+      305440,
+      402006,
+      404623
+    ]
+  },
+  {
+    "id": 96504,
+    "name": "츠네마츠 아유미",
+    "cvimg": "image/cvimg/츠네마츠_아유미.webp",
+    "gender": "female",
+    "characterIds": [
+      262619,
+      382164,
+      406933
+    ]
+  },
+  {
+    "id": 376043,
+    "name": "츠다 리호",
+    "cvimg": "image/cvimg/츠다_리호.webp",
+    "gender": "unknown",
+    "characterIds": [
+      376042
+    ]
+  },
+  {
+    "id": 106492,
+    "name": "츠다 미나미",
+    "cvimg": "image/cvimg/츠다_미나미.webp",
+    "gender": "female",
+    "characterIds": [
+      382212,
+      388887,
+      392001,
+      392479,
+      401624,
+      401819
+    ]
+  },
+  {
+    "id": 95591,
+    "name": "츠다 켄지로",
+    "cvimg": "image/cvimg/츠다_켄지로.webp",
+    "gender": "male",
+    "characterIds": [
+      36309,
+      125440,
+      132364,
+      135385,
+      187382,
+      390524,
+      391724
+    ]
+  },
+  {
+    "id": 100539,
+    "name": "츠루오카 사토시",
+    "cvimg": "image/cvimg/츠루오카_사토시.webp",
+    "gender": "male",
+    "characterIds": [
+      187710,
+      280467,
+      404964,
+      406601
+    ]
+  },
+  {
+    "id": 95800,
+    "name": "츠지 신파치",
+    "cvimg": "image/cvimg/츠지_신파치.webp",
+    "gender": "male",
+    "characterIds": [
+      70493,
+      146845,
+      382114,
+      389854,
+      397258
+    ]
+  },
+  {
+    "id": 150518,
+    "name": "츠지이 켄고",
+    "cvimg": "image/cvimg/츠지이_켄고.webp",
+    "gender": "unknown",
+    "characterIds": [
+      402182
+    ]
+  },
+  {
+    "id": 127804,
+    "name": "츠치다 레이오",
+    "cvimg": "image/cvimg/츠치다_레이오.webp",
+    "gender": "unknown",
+    "characterIds": [
+      402167,
+      407022,
+      408267
+    ]
+  },
+  {
+    "id": 101214,
+    "name": "츠치다 히로시",
+    "cvimg": "image/cvimg/츠치다_히로시.webp",
+    "gender": "male",
+    "characterIds": [
+      401611
+    ]
+  },
+  {
+    "id": 198603,
+    "name": "츠치야 리오",
+    "cvimg": "image/cvimg/츠치야_리오.webp",
+    "gender": "unknown",
+    "characterIds": [
+      385691,
+      388955
+    ]
+  },
+  {
+    "id": 121823,
+    "name": "츠치야 신바",
+    "cvimg": "image/cvimg/츠치야_신바.webp",
+    "gender": "unknown",
+    "characterIds": [
+      220377,
+      303628,
+      393976
+    ]
+  },
+  {
+    "id": 174663,
+    "name": "츠카다 유이",
+    "cvimg": "image/cvimg/츠카다_유이.webp",
+    "gender": "unknown",
+    "characterIds": [
+      395144,
+      403322,
+      404000
+    ]
+  },
+  {
+    "id": 280420,
+    "name": "츠키시로 히카",
+    "cvimg": "image/cvimg/츠키시로_히카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      129838,
+      393908
+    ]
+  },
+  {
+    "id": 95135,
+    "name": "치바 사에코",
+    "cvimg": "image/cvimg/치바_사에코.webp",
+    "gender": "female",
+    "characterIds": [
+      1124
+    ]
+  },
+  {
+    "id": 119672,
+    "name": "치바 쇼야",
+    "cvimg": "image/cvimg/치바_쇼야.webp",
+    "gender": "male",
+    "characterIds": [
+      4922,
+      123212,
+      138815,
+      150321,
+      214623,
+      229951,
+      232519,
+      270567,
+      320891,
+      324200,
+      337681,
+      338220,
+      354441,
+      365647,
+      367531,
+      375408,
+      379636,
+      381988,
+      393918,
+      396065,
+      398542,
+      398642,
+      401322,
+      401625,
+      405243
+    ]
+  },
+  {
+    "id": 95255,
+    "name": "치바 시게루",
+    "cvimg": "image/cvimg/치바_시게루.webp",
+    "gender": "male",
+    "characterIds": [
+      77779,
+      132981,
+      306697,
+      392004,
+      399889
+    ]
+  },
+  {
+    "id": 95899,
+    "name": "치바 잇신",
+    "cvimg": "image/cvimg/치바_잇신.webp",
+    "gender": "male",
+    "characterIds": [
+      406272
+    ]
+  },
+  {
+    "id": 289336,
+    "name": "치카마츠 타카츠구",
+    "cvimg": "image/cvimg/치카마츠_타카츠구.webp",
+    "gender": "unknown",
+    "characterIds": [
+      390608
+    ]
+  },
+  {
+    "id": 302497,
+    "name": "치카사다 츠키노",
+    "cvimg": "image/cvimg/치카사다_츠키노.webp",
+    "gender": "unknown",
+    "characterIds": [
+      306735,
+      393045
+    ]
+  },
+  {
+    "id": 95053,
+    "name": "치하라 미노리",
+    "cvimg": "image/cvimg/치하라_미노리.webp",
+    "gender": "female",
+    "characterIds": [
+      228191,
+      392005
+    ]
+  },
+  {
+    "id": 142669,
+    "name": "치하루",
+    "cvimg": "image/cvimg/치하루.webp",
+    "gender": "unknown",
+    "characterIds": [
+      385184,
+      393175
+    ]
+  },
+  {
+    "id": 119282,
+    "name": "카게야마 아카리",
+    "cvimg": "image/cvimg/카게야마_아카리.webp",
+    "gender": "female",
+    "characterIds": [
+      400232
+    ]
+  },
+  {
+    "id": 105059,
+    "name": "카게우라 다이스케",
+    "cvimg": "image/cvimg/카게우라_다이스케.webp",
+    "gender": "male",
+    "characterIds": [
+      407252
+    ]
+  },
+  {
+    "id": 392171,
+    "name": "카나야 리카",
+    "cvimg": "image/cvimg/카나야_리카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      392169
+    ]
+  },
+  {
+    "id": 108715,
+    "name": "카나오 테츠오",
+    "cvimg": "image/cvimg/카나오_테츠오.webp",
+    "gender": "male",
+    "characterIds": [
+      249157
+    ]
+  },
+  {
+    "id": 95272,
+    "name": "카네다 토모코",
+    "cvimg": "image/cvimg/카네다_토모코.webp",
+    "gender": "female",
+    "characterIds": [
+      46119,
+      396026,
+      406163
+    ]
+  },
+  {
+    "id": 160343,
+    "name": "카네마사 이쿠토",
+    "cvimg": "image/cvimg/카네마사_이쿠토.webp",
+    "gender": "unknown",
+    "characterIds": [
+      160359
+    ]
+  },
+  {
+    "id": 103555,
+    "name": "카네모토 히사코",
+    "cvimg": "image/cvimg/카네모토_히사코.webp",
+    "gender": "female",
+    "characterIds": [
+      179855,
+      191508,
+      296639,
+      343064,
+      377717,
+      387243,
+      389846
+    ]
+  },
+  {
+    "id": 104816,
+    "name": "카네미츠 노부아키",
+    "cvimg": "image/cvimg/카네미츠_노부아키.webp",
+    "gender": "male",
+    "characterIds": [
+      393873,
+      395251,
+      397678,
+      399540,
+      405466
+    ]
+  },
+  {
+    "id": 143864,
+    "name": "카네코 하야토",
+    "cvimg": "image/cvimg/카네코_하야토.webp",
+    "gender": "unknown",
+    "characterIds": [
+      408130
+    ]
+  },
+  {
+    "id": 248928,
+    "name": "카네타 아이",
+    "cvimg": "image/cvimg/카네타_아이.webp",
+    "gender": "unknown",
+    "characterIds": [
+      239479
+    ]
+  },
+  {
+    "id": 104749,
+    "name": "카누카 미츠아키",
+    "cvimg": "image/cvimg/카누카_미츠아키.webp",
+    "gender": "male",
+    "characterIds": [
+      368754,
+      390209
+    ]
+  },
+  {
+    "id": 137985,
+    "name": "카리노 쇼",
+    "cvimg": "image/cvimg/카리노_쇼.webp",
+    "gender": "unknown",
+    "characterIds": [
+      126546,
+      393870,
+      397135
+    ]
+  },
+  {
+    "id": 371345,
+    "name": "카리야 미키",
+    "cvimg": "image/cvimg/카리야_미키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      371341
+    ]
+  },
+  {
+    "id": 392638,
+    "name": "카마다 호노카",
+    "cvimg": "image/cvimg/카마다_호노카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      392637
+    ]
+  },
+  {
+    "id": 95680,
+    "name": "카마카리 켄타",
+    "cvimg": "image/cvimg/카마카리_켄타.webp",
+    "gender": "male",
+    "characterIds": [
+      143275
+    ]
+  },
+  {
+    "id": 121941,
+    "name": "카마쿠라 유우나",
+    "cvimg": "image/cvimg/카마쿠라_유우나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      379380,
+      382220,
+      396514,
+      405914
+    ]
+  },
+  {
+    "id": 380114,
+    "name": "카메나시 카즈야",
+    "cvimg": "image/cvimg/카메나시_카즈야.webp",
+    "gender": "unknown",
+    "characterIds": [
+      24249
+    ]
+  },
+  {
+    "id": 340451,
+    "name": "카메오카 타카히로",
+    "cvimg": "image/cvimg/카메오카_타카히로.webp",
+    "gender": "unknown",
+    "characterIds": [
+      388744
+    ]
+  },
+  {
+    "id": 95416,
+    "name": "카미야 아키라",
+    "cvimg": "image/cvimg/카미야_아키라.webp",
+    "gender": "male",
+    "characterIds": [
+      391450
+    ]
+  },
+  {
+    "id": 95118,
+    "name": "카미야 히로시",
+    "cvimg": "image/cvimg/카미야_히로시.webp",
+    "gender": "male",
+    "characterIds": [
+      89201,
+      89390,
+      244665,
+      285582,
+      389845,
+      406177
+    ]
+  },
+  {
+    "id": 133604,
+    "name": "카미오 신이치로",
+    "cvimg": "image/cvimg/카미오_신이치로.webp",
+    "gender": "unknown",
+    "characterIds": [
+      399189,
+      405856
+    ]
+  },
+  {
+    "id": 135200,
+    "name": "카미죠 사에코",
+    "cvimg": "image/cvimg/카미죠_사에코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      130713,
+      396046,
+      398317
+    ]
+  },
+  {
+    "id": 188341,
+    "name": "카미죠 치히로",
+    "cvimg": "image/cvimg/카미죠_치히로.webp",
+    "gender": "unknown",
+    "characterIds": [
+      388269
+    ]
+  },
+  {
+    "id": 135537,
+    "name": "카사마 쥰",
+    "cvimg": "image/cvimg/카사마_쥰.webp",
+    "gender": "unknown",
+    "characterIds": [
+      135046,
+      253736,
+      392460,
+      392866
+    ]
+  },
+  {
+    "id": 95801,
+    "name": "카세 야스유키",
+    "cvimg": "image/cvimg/카세_야스유키.webp",
+    "gender": "male",
+    "characterIds": [
+      169994,
+      245519,
+      338231,
+      351117,
+      406603
+    ]
+  },
+  {
+    "id": 306141,
+    "name": "카시와자키 하야토",
+    "cvimg": "image/cvimg/카시와자키_하야토.webp",
+    "gender": "unknown",
+    "characterIds": [
+      398280
+    ]
+  },
+  {
+    "id": 105765,
+    "name": "카야노 아이",
+    "cvimg": "image/cvimg/카야노_아이.webp",
+    "gender": "female",
+    "characterIds": [
+      24086,
+      88346,
+      161606,
+      306331,
+      364448,
+      382017,
+      382471,
+      393917,
+      396517,
+      400731,
+      400778,
+      402179
+    ]
+  },
+  {
+    "id": 227955,
+    "name": "카와구치 리나",
+    "cvimg": "image/cvimg/카와구치_리나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      355432,
+      386069,
+      396464,
+      405857
+    ]
+  },
+  {
+    "id": 238291,
+    "name": "카와구치 사쿠라",
+    "cvimg": "image/cvimg/카와구치_사쿠라.webp",
+    "gender": "unknown",
+    "characterIds": [
+      393929
+    ]
+  },
+  {
+    "id": 110877,
+    "name": "카와니시 켄고",
+    "cvimg": "image/cvimg/카와니시_켄고.webp",
+    "gender": "male",
+    "characterIds": [
+      127445,
+      174097,
+      175578,
+      209571,
+      220766,
+      331144,
+      380218,
+      396162
+    ]
+  },
+  {
+    "id": 95410,
+    "name": "카와다 신지",
+    "cvimg": "image/cvimg/카와다_신지.webp",
+    "gender": "male",
+    "characterIds": [
+      139312,
+      198040,
+      398689,
+      402348,
+      404548,
+      406274
+    ]
+  },
+  {
+    "id": 301300,
+    "name": "카와무라 우미노",
+    "cvimg": "image/cvimg/카와무라_우미노.webp",
+    "gender": "unknown",
+    "characterIds": [
+      392979
+    ]
+  },
+  {
+    "id": 118987,
+    "name": "카와베 슌스케",
+    "cvimg": "image/cvimg/카와베_슌스케.webp",
+    "gender": "male",
+    "characterIds": [
+      284288
+    ]
+  },
+  {
+    "id": 127542,
+    "name": "카와세 마키",
+    "cvimg": "image/cvimg/카와세_마키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      127541,
+      282074,
+      309267,
+      341268,
+      379813,
+      389308,
+      392455,
+      396165,
+      399635,
+      400476
+    ]
+  },
+  {
+    "id": 95013,
+    "name": "카와스미 아야코",
+    "cvimg": "image/cvimg/카와스미_아야코.webp",
+    "gender": "female",
+    "characterIds": [
+      174550,
+      391726,
+      393893,
+      393913
+    ]
+  },
+  {
+    "id": 180532,
+    "name": "카와시마 레이지",
+    "cvimg": "image/cvimg/카와시마_레이지.webp",
+    "gender": "unknown",
+    "characterIds": [
+      4917,
+      162723,
+      271219,
+      308633,
+      390787,
+      396073,
+      399129
+    ]
+  },
+  {
+    "id": 95911,
+    "name": "카와시마 토쿠요시",
+    "cvimg": "image/cvimg/카와시마_토쿠요시.webp",
+    "gender": "male",
+    "characterIds": [
+      129762,
+      387953
+    ]
+  },
+  {
+    "id": 151445,
+    "name": "카와이다 나츠미",
+    "cvimg": "image/cvimg/카와이다_나츠미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      297196,
+      390230,
+      394747,
+      398522,
+      399191
+    ]
+  },
+  {
+    "id": 375977,
+    "name": "카와이시 나나",
+    "cvimg": "image/cvimg/카와이시_나나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      375976
+    ]
+  },
+  {
+    "id": 116381,
+    "name": "카와카미 치히로",
+    "cvimg": "image/cvimg/카와카미_치히로.webp",
+    "gender": "female",
+    "characterIds": [
+      88877
+    ]
+  },
+  {
+    "id": 95409,
+    "name": "카와하라 요시히사",
+    "cvimg": "image/cvimg/카와하라_요시히사.webp",
+    "gender": "male",
+    "characterIds": [
+      16290,
+      395599,
+      406142
+    ]
+  },
+  {
+    "id": 95428,
+    "name": "카이다 유코",
+    "cvimg": "image/cvimg/카이다_유코.webp",
+    "gender": "female",
+    "characterIds": [
+      138909,
+      148754,
+      151773,
+      151778,
+      195582,
+      380701,
+      392480,
+      395186,
+      396418,
+      400286,
+      402345
+    ]
+  },
+  {
+    "id": 236528,
+    "name": "카이토 타스쿠",
+    "cvimg": "image/cvimg/카이토_타스쿠.webp",
+    "gender": "unknown",
+    "characterIds": [
+      407847
+    ]
+  },
+  {
+    "id": 175810,
+    "name": "카자마 마유코",
+    "cvimg": "image/cvimg/카자마_마유코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      375501,
+      382218,
+      392844,
+      396253,
+      400231
+    ]
+  },
+  {
+    "id": 95672,
+    "name": "카지 유우키",
+    "cvimg": "image/cvimg/카지_유우키.webp",
+    "gender": "male",
+    "characterIds": [
+      68585,
+      89310,
+      132947,
+      163187,
+      376714,
+      380694,
+      396060,
+      396069
+    ]
+  },
+  {
+    "id": 123286,
+    "name": "카지와라 가쿠토",
+    "cvimg": "image/cvimg/카지와라_가쿠토.webp",
+    "gender": "unknown",
+    "characterIds": [
+      120462,
+      138590,
+      148547,
+      345229,
+      376525,
+      396244
+    ]
+  },
+  {
+    "id": 195176,
+    "name": "카지타 다이시",
+    "cvimg": "image/cvimg/카지타_다이시.webp",
+    "gender": "unknown",
+    "characterIds": [
+      169778
+    ]
+  },
+  {
+    "id": 95756,
+    "name": "카츠 안리",
+    "cvimg": "image/cvimg/카츠_안리.webp",
+    "gender": "male",
+    "characterIds": [
+      40923,
+      369525
+    ]
+  },
+  {
+    "id": 113511,
+    "name": "카쿠마 아이",
+    "cvimg": "image/cvimg/카쿠마_아이.webp",
+    "gender": "female",
+    "characterIds": [
+      88349,
+      388368,
+      406379
+    ]
+  },
+  {
+    "id": 95167,
+    "name": "카키하라 테츠야",
+    "cvimg": "image/cvimg/카키하라_테츠야.webp",
+    "gender": "male",
+    "characterIds": [
+      148552,
+      327990,
+      380596
+    ]
+  },
+  {
+    "id": 373724,
+    "name": "카타마리 미즈카와",
+    "cvimg": "image/cvimg/카타마리_미즈카와.webp",
+    "gender": "unknown",
+    "characterIds": [
+      407813,
+      407814
+    ]
+  },
+  {
+    "id": 166419,
+    "name": "카타야마 코스케",
+    "cvimg": "image/cvimg/카타야마_코스케.webp",
+    "gender": "unknown",
+    "characterIds": [
+      256437,
+      387467
+    ]
+  },
+  {
+    "id": 266215,
+    "name": "카토 세이나",
+    "cvimg": "image/cvimg/카토_세이나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      392632
+    ]
+  },
+  {
+    "id": 95052,
+    "name": "카토 에미리",
+    "cvimg": "image/cvimg/카토_에미리.webp",
+    "gender": "female",
+    "characterIds": [
+      197161,
+      380437,
+      392457,
+      398525
+    ]
+  },
+  {
+    "id": 145234,
+    "name": "카토 와타루",
+    "cvimg": "image/cvimg/카토_와타루.webp",
+    "gender": "unknown",
+    "characterIds": [
+      4586,
+      173758,
+      302627
+    ]
+  },
+  {
+    "id": 206358,
+    "name": "카하라 모에",
+    "cvimg": "image/cvimg/카하라_모에.webp",
+    "gender": "unknown",
+    "characterIds": [
+      346673,
+      393544
+    ]
+  },
+  {
+    "id": 95096,
+    "name": "칸나 노부토시",
+    "cvimg": "image/cvimg/칸나_노부토시.webp",
+    "gender": "male",
+    "characterIds": [
+      37085,
+      270573
+    ]
+  },
+  {
+    "id": 147549,
+    "name": "칸베 미츠호",
+    "cvimg": "image/cvimg/칸베_미츠호.webp",
+    "gender": "unknown",
+    "characterIds": [
+      374034,
+      396048
+    ]
+  },
+  {
+    "id": 380643,
+    "name": "칸자키 노에루",
+    "cvimg": "image/cvimg/칸자키_노에루.webp",
+    "gender": "unknown",
+    "characterIds": [
+      380642,
+      391315
+    ]
+  },
+  {
+    "id": 251850,
+    "name": "캰 카즈키",
+    "cvimg": "image/cvimg/캰_카즈키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      391762
+    ]
+  },
+  {
+    "id": 123268,
+    "name": "코가 아오이",
+    "cvimg": "image/cvimg/코가_아오이.webp",
+    "gender": "unknown",
+    "characterIds": [
+      76522,
+      161910,
+      218265,
+      254931,
+      282076,
+      382221,
+      391479
+    ]
+  },
+  {
+    "id": 156972,
+    "name": "코가 아키라",
+    "cvimg": "image/cvimg/코가_아키라.webp",
+    "gender": "unknown",
+    "characterIds": [
+      390789
+    ]
+  },
+  {
+    "id": 289555,
+    "name": "코구레 코세키",
+    "cvimg": "image/cvimg/코구레_코세키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      187179,
+      387472
+    ]
+  },
+  {
+    "id": 310899,
+    "name": "코나츠 유미코",
+    "cvimg": "image/cvimg/코나츠_유미코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      395446
+    ]
+  },
+  {
+    "id": 128640,
+    "name": "코노 히요리",
+    "cvimg": "image/cvimg/코노_히요리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      389116
+    ]
+  },
+  {
+    "id": 353813,
+    "name": "코노에 슈마",
+    "cvimg": "image/cvimg/코노에_슈마.webp",
+    "gender": "unknown",
+    "characterIds": [
+      399458
+    ]
+  },
+  {
+    "id": 95020,
+    "name": "코니시 카츠유키",
+    "cvimg": "image/cvimg/코니시_카츠유키.webp",
+    "gender": "male",
+    "characterIds": [
+      127067,
+      128971,
+      138308,
+      138621,
+      165308,
+      214625,
+      249347,
+      262712,
+      300903,
+      338222,
+      382305,
+      383265,
+      389410,
+      391722,
+      393982
+    ]
+  },
+  {
+    "id": 126934,
+    "name": "코마다 와타루",
+    "cvimg": "image/cvimg/코마다_와타루.webp",
+    "gender": "unknown",
+    "characterIds": [
+      16712,
+      393934,
+      397565,
+      405591
+    ]
+  },
+  {
+    "id": 105071,
+    "name": "코마츠 미카코",
+    "cvimg": "image/cvimg/코마츠_미카코.webp",
+    "gender": "female",
+    "characterIds": [
+      134167,
+      174781,
+      197872
+    ]
+  },
+  {
+    "id": 123613,
+    "name": "코마츠 쇼헤이",
+    "cvimg": "image/cvimg/코마츠_쇼헤이.webp",
+    "gender": "unknown",
+    "characterIds": [
+      393881,
+      396061
+    ]
+  },
+  {
+    "id": 297355,
+    "name": "코무라 쇼",
+    "cvimg": "image/cvimg/코무라_쇼.webp",
+    "gender": "unknown",
+    "characterIds": [
+      322478,
+      400095
+    ]
+  },
+  {
+    "id": 96682,
+    "name": "코무라 테츠오",
+    "cvimg": "image/cvimg/코무라_테츠오.webp",
+    "gender": "male",
+    "characterIds": [
+      382118,
+      382951
+    ]
+  },
+  {
+    "id": 95962,
+    "name": "코미야 카즈에",
+    "cvimg": "image/cvimg/코미야_카즈에.webp",
+    "gender": "female",
+    "characterIds": [
+      388446
+    ]
+  },
+  {
+    "id": 342762,
+    "name": "코바 란",
+    "cvimg": "image/cvimg/코바_란.webp",
+    "gender": "unknown",
+    "characterIds": [
+      393217
+    ]
+  },
+  {
+    "id": 368610,
+    "name": "코바시 미유",
+    "cvimg": "image/cvimg/코바시_미유.webp",
+    "gender": "unknown",
+    "characterIds": [
+      393182
+    ]
+  },
+  {
+    "id": 161152,
+    "name": "코바시 사토미",
+    "cvimg": "image/cvimg/코바시_사토미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      388268
+    ]
+  },
+  {
+    "id": 132334,
+    "name": "코바야시 나오토",
+    "cvimg": "image/cvimg/코바야시_나오토.webp",
+    "gender": "unknown",
+    "characterIds": [
+      160348,
+      175774,
+      406198
+    ]
+  },
+  {
+    "id": 120264,
+    "name": "코바야시 다이키",
+    "cvimg": "image/cvimg/코바야시_다이키.webp",
+    "gender": "male",
+    "characterIds": [
+      34732,
+      376816,
+      406159
+    ]
+  },
+  {
+    "id": 298664,
+    "name": "코바야시 미야코",
+    "cvimg": "image/cvimg/코바야시_미야코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      407848
+    ]
+  },
+  {
+    "id": 95149,
+    "name": "코바야시 사나에",
+    "cvimg": "image/cvimg/코바야시_사나에.webp",
+    "gender": "female",
+    "characterIds": [
+      387244
+    ]
+  },
+  {
+    "id": 119904,
+    "name": "코바야시 아이카",
+    "cvimg": "image/cvimg/코바야시_아이카.webp",
+    "gender": "female",
+    "characterIds": [
+      385183
+    ]
+  },
+  {
+    "id": 118407,
+    "name": "코바야시 유스케",
+    "cvimg": "image/cvimg/코바야시_유스케.webp",
+    "gender": "male",
+    "characterIds": [
+      88573,
+      124142,
+      130715,
+      131049,
+      135041,
+      137265,
+      157124,
+      201318,
+      379821,
+      389848,
+      398634,
+      404626
+    ]
+  },
+  {
+    "id": 95034,
+    "name": "코바야시 유우",
+    "cvimg": "image/cvimg/코바야시_유우.webp",
+    "gender": "female",
+    "characterIds": [
+      16059,
+      34931,
+      60059,
+      261304,
+      389138,
+      393912,
+      396105,
+      407808
+    ]
+  },
+  {
+    "id": 95983,
+    "name": "코바야시 유코",
+    "cvimg": "image/cvimg/코바야시_유코.webp",
+    "gender": "female",
+    "characterIds": [
+      405462
+    ]
+  },
+  {
+    "id": 133507,
+    "name": "코바야시 치아키",
+    "cvimg": "image/cvimg/코바야시_치아키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      133626,
+      137260,
+      146846,
+      184313,
+      280944,
+      300885,
+      317222,
+      390626,
+      393711,
+      409111
+    ]
+  },
+  {
+    "id": 124703,
+    "name": "코바야시 치카히로",
+    "cvimg": "image/cvimg/코바야시_치카히로.webp",
+    "gender": "unknown",
+    "characterIds": [
+      124704,
+      125168,
+      128035,
+      137267,
+      151040,
+      161515,
+      338235,
+      377665,
+      387893,
+      388363,
+      392276,
+      407460
+    ]
+  },
+  {
+    "id": 168154,
+    "name": "코바야시 코스케",
+    "cvimg": "image/cvimg/코바야시_코스케.webp",
+    "gender": "unknown",
+    "characterIds": [
+      331423
+    ]
+  },
+  {
+    "id": 379672,
+    "name": "코바야시 히데유키",
+    "cvimg": "image/cvimg/코바야시_히데유키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      395380
+    ]
+  },
+  {
+    "id": 254486,
+    "name": "코바타케 마사후미",
+    "cvimg": "image/cvimg/코바타케_마사후미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      379819,
+      398977,
+      400598,
+      407763
+    ]
+  },
+  {
+    "id": 206287,
+    "name": "코베 타츠키",
+    "cvimg": "image/cvimg/코베_타츠키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      295791
+    ]
+  },
+  {
+    "id": 348318,
+    "name": "코시라카와 마나",
+    "cvimg": "image/cvimg/코시라카와_마나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      387473
+    ]
+  },
+  {
+    "id": 394495,
+    "name": "코시무라 토모카즈",
+    "cvimg": "image/cvimg/코시무라_토모카즈.webp",
+    "gender": "unknown",
+    "characterIds": [
+      54983
+    ]
+  },
+  {
+    "id": 95070,
+    "name": "코시미즈 아미",
+    "cvimg": "image/cvimg/코시미즈_아미.webp",
+    "gender": "female",
+    "characterIds": [
+      40984,
+      197165,
+      266759,
+      343062,
+      361640,
+      381833,
+      382685,
+      389885,
+      395628,
+      396117,
+      399215,
+      407023,
+      407811,
+      408009
+    ]
+  },
+  {
+    "id": 95113,
+    "name": "코야마 리키야",
+    "cvimg": "image/cvimg/코야마_리키야.webp",
+    "gender": "male",
+    "characterIds": [
+      80249,
+      148980,
+      209572,
+      273647,
+      317445,
+      324638
+    ]
+  },
+  {
+    "id": 95571,
+    "name": "코야마 마미",
+    "cvimg": "image/cvimg/코야마_마미.webp",
+    "gender": "female",
+    "characterIds": [
+      194299
+    ]
+  },
+  {
+    "id": 95285,
+    "name": "코야마 츠요시",
+    "cvimg": "image/cvimg/코야마_츠요시.webp",
+    "gender": "male",
+    "characterIds": [
+      135187,
+      376524,
+      406226
+    ]
+  },
+  {
+    "id": 95160,
+    "name": "코야스 타케히토",
+    "cvimg": "image/cvimg/코야스_타케히토.webp",
+    "gender": "male",
+    "characterIds": [
+      2821,
+      4923,
+      90182,
+      126537,
+      151368,
+      157218,
+      195930,
+      379625,
+      388952,
+      391448,
+      393291,
+      402236,
+      406931,
+      407766
+    ]
+  },
+  {
+    "id": 143057,
+    "name": "코와카 와카나",
+    "cvimg": "image/cvimg/코와카_와카나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      396246
+    ]
+  },
+  {
+    "id": 119383,
+    "name": "코우노 마리카",
+    "cvimg": "image/cvimg/코우노_마리카.webp",
+    "gender": "female",
+    "characterIds": [
+      141858,
+      350942,
+      394044,
+      395285,
+      399218
+    ]
+  },
+  {
+    "id": 166958,
+    "name": "코우다 나오코",
+    "cvimg": "image/cvimg/코우다_나오코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      396567
+    ]
+  },
+  {
+    "id": 95275,
+    "name": "코우다 마리코",
+    "cvimg": "image/cvimg/코우다_마리코.webp",
+    "gender": "female",
+    "characterIds": [
+      400252
+    ]
+  },
+  {
+    "id": 191509,
+    "name": "코우다 사오리",
+    "cvimg": "image/cvimg/코우다_사오리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      191506
+    ]
+  },
+  {
+    "id": 96474,
+    "name": "코우다 카호",
+    "cvimg": "image/cvimg/코우다_카호.webp",
+    "gender": "female",
+    "characterIds": [
+      408379
+    ]
+  },
+  {
+    "id": 109131,
+    "name": "코이와이 코토리",
+    "cvimg": "image/cvimg/코이와이_코토리.webp",
+    "gender": "female",
+    "characterIds": [
+      128175,
+      376039
+    ]
+  },
+  {
+    "id": 126657,
+    "name": "코이즈미 모에카",
+    "cvimg": "image/cvimg/코이즈미_모에카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      208996
+    ]
+  },
+  {
+    "id": 129325,
+    "name": "코이치 마코토",
+    "cvimg": "image/cvimg/코이치_마코토.webp",
+    "gender": "unknown",
+    "characterIds": [
+      137262,
+      167899,
+      197158,
+      375404,
+      375858,
+      381983,
+      391359,
+      393889,
+      400420,
+      401963,
+      409054
+    ]
+  },
+  {
+    "id": 127127,
+    "name": "코자카이 유리에",
+    "cvimg": "image/cvimg/코자카이_유리에.webp",
+    "gender": "unknown",
+    "characterIds": [
+      385649,
+      402033,
+      406199
+    ]
+  },
+  {
+    "id": 101182,
+    "name": "코즈키 유리아",
+    "cvimg": "image/cvimg/코즈키_유리아.webp",
+    "gender": "female",
+    "characterIds": [
+      303429
+    ]
+  },
+  {
+    "id": 100997,
+    "name": "코쿠류 사치",
+    "cvimg": "image/cvimg/코쿠류_사치.webp",
+    "gender": "female",
+    "characterIds": [
+      368546
+    ]
+  },
+  {
+    "id": 119129,
+    "name": "코키도 시호",
+    "cvimg": "image/cvimg/코키도_시호.webp",
+    "gender": "female",
+    "characterIds": [
+      321162
+    ]
+  },
+  {
+    "id": 101634,
+    "name": "코토부키 미나코",
+    "cvimg": "image/cvimg/코토부키_미나코.webp",
+    "gender": "female",
+    "characterIds": [
+      309270,
+      375857,
+      391468,
+      392081
+    ]
+  },
+  {
+    "id": 121961,
+    "name": "코하라 코노미",
+    "cvimg": "image/cvimg/코하라_코노미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      88350,
+      148755,
+      175582,
+      195583,
+      290272,
+      354100,
+      385545,
+      392248,
+      392458,
+      395195,
+      396108
+    ]
+  },
+  {
+    "id": 124747,
+    "name": "콘도 레이나",
+    "cvimg": "image/cvimg/콘도_레이나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      16057,
+      311586,
+      393914,
+      398212
+    ]
+  },
+  {
+    "id": 118538,
+    "name": "콘도 유이",
+    "cvimg": "image/cvimg/콘도_유이.webp",
+    "gender": "female",
+    "characterIds": [
+      316321
+    ]
+  },
+  {
+    "id": 95206,
+    "name": "콘도 타카시",
+    "cvimg": "image/cvimg/콘도_타카시.webp",
+    "gender": "male",
+    "characterIds": [
+      381262,
+      402816
+    ]
+  },
+  {
+    "id": 95829,
+    "name": "콘도 타카유키",
+    "cvimg": "image/cvimg/콘도_타카유키.webp",
+    "gender": "male",
+    "characterIds": [
+      260349
+    ]
+  },
+  {
+    "id": 106840,
+    "name": "콘도 히로노리",
+    "cvimg": "image/cvimg/콘도_히로노리.webp",
+    "gender": "male",
+    "characterIds": [
+      399636,
+      406375
+    ]
+  },
+  {
+    "id": 95008,
+    "name": "쿠기미야 리에",
+    "cvimg": "image/cvimg/쿠기미야_리에.webp",
+    "gender": "female",
+    "characterIds": [
+      157868,
+      160044,
+      254932,
+      381221,
+      382467,
+      389408,
+      391145,
+      396516,
+      406175
+    ]
+  },
+  {
+    "id": 106641,
+    "name": "쿠노 미사키",
+    "cvimg": "image/cvimg/쿠노_미사키.webp",
+    "gender": "female",
+    "characterIds": [
+      146836,
+      171744,
+      259537,
+      270712,
+      321163,
+      321813,
+      331260,
+      382171,
+      393716,
+      400742,
+      403707,
+      405340
+    ]
+  },
+  {
+    "id": 224605,
+    "name": "쿠라모치 와카나",
+    "cvimg": "image/cvimg/쿠라모치_와카나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      381822,
+      393935,
+      403287
+    ]
+  },
+  {
+    "id": 142672,
+    "name": "쿠라오카 미즈하",
+    "cvimg": "image/cvimg/쿠라오카_미즈하.webp",
+    "gender": "unknown",
+    "characterIds": [
+      405911
+    ]
+  },
+  {
+    "id": 96122,
+    "name": "쿠로다 타카야",
+    "cvimg": "image/cvimg/쿠로다_타카야.webp",
+    "gender": "male",
+    "characterIds": [
+      135023,
+      189237,
+      270714,
+      321160,
+      338237,
+      396068
+    ]
+  },
+  {
+    "id": 106661,
+    "name": "쿠로사와 토모요",
+    "cvimg": "image/cvimg/쿠로사와_토모요.webp",
+    "gender": "female",
+    "characterIds": [
+      140651,
+      315929,
+      336018,
+      366648
+    ]
+  },
+  {
+    "id": 327798,
+    "name": "쿠로사키 시오리",
+    "cvimg": "image/cvimg/쿠로사키_시오리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      396509
+    ]
+  },
+  {
+    "id": 377555,
+    "name": "쿠리코마 코마루",
+    "cvimg": "image/cvimg/쿠리코마_코마루.webp",
+    "gender": "unknown",
+    "characterIds": [
+      377554
+    ]
+  },
+  {
+    "id": 124759,
+    "name": "쿠마가이 켄타로",
+    "cvimg": "image/cvimg/쿠마가이_켄타로.webp",
+    "gender": "unknown",
+    "characterIds": [
+      339478,
+      382257,
+      388954,
+      393888,
+      394510,
+      401623
+    ]
+  },
+  {
+    "id": 259670,
+    "name": "쿠마가이 토시키",
+    "cvimg": "image/cvimg/쿠마가이_토시키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      236474
+    ]
+  },
+  {
+    "id": 112209,
+    "name": "쿠보 유리카",
+    "cvimg": "image/cvimg/쿠보_유리카.webp",
+    "gender": "female",
+    "characterIds": [
+      123214,
+      389851
+    ]
+  },
+  {
+    "id": 119204,
+    "name": "쿠보타 미유",
+    "cvimg": "image/cvimg/쿠보타_미유.webp",
+    "gender": "female",
+    "characterIds": [
+      88928,
+      132795
+    ]
+  },
+  {
+    "id": 95134,
+    "name": "쿠사오 타케시",
+    "cvimg": "image/cvimg/쿠사오_타케시.webp",
+    "gender": "male",
+    "characterIds": [
+      173343
+    ]
+  },
+  {
+    "id": 95893,
+    "name": "쿠스노키 타이텐",
+    "cvimg": "image/cvimg/쿠스노키_타이텐.webp",
+    "gender": "male",
+    "characterIds": [
+      8738,
+      406164
+    ]
+  },
+  {
+    "id": 124923,
+    "name": "쿠스노키 토모리",
+    "cvimg": "image/cvimg/쿠스노키_토모리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      170333,
+      378435,
+      382468,
+      396512
+    ]
+  },
+  {
+    "id": 95742,
+    "name": "쿠스미 나오미",
+    "cvimg": "image/cvimg/쿠스미_나오미.webp",
+    "gender": "male",
+    "characterIds": [
+      406228
+    ]
+  },
+  {
+    "id": 245301,
+    "name": "쿠스미 린",
+    "cvimg": "image/cvimg/쿠스미_린.webp",
+    "gender": "unknown",
+    "characterIds": [
+      360412
+    ]
+  },
+  {
+    "id": 95057,
+    "name": "쿠와시마 호우코",
+    "cvimg": "image/cvimg/쿠와시마_호우코.webp",
+    "gender": "female",
+    "characterIds": [
+      157105,
+      388885,
+      394598,
+      404096,
+      406289
+    ]
+  },
+  {
+    "id": 118399,
+    "name": "쿠와하라 유우키",
+    "cvimg": "image/cvimg/쿠와하라_유우키.webp",
+    "gender": "female",
+    "characterIds": [
+      374077,
+      399512,
+      401615
+    ]
+  },
+  {
+    "id": 95103,
+    "name": "쿠지라",
+    "cvimg": "image/cvimg/쿠지라.webp",
+    "gender": "female",
+    "characterIds": [
+      211165,
+      317334,
+      327035,
+      387466,
+      388370,
+      392490,
+      397042,
+      399793,
+      403710
+    ]
+  },
+  {
+    "id": 387478,
+    "name": "쿠지메 나기사",
+    "cvimg": "image/cvimg/쿠지메_나기사.webp",
+    "gender": "unknown",
+    "characterIds": [
+      311460,
+      387475
+    ]
+  },
+  {
+    "id": 119822,
+    "name": "키노 히나",
+    "cvimg": "image/cvimg/키노_히나.webp",
+    "gender": "female",
+    "characterIds": [
+      266766,
+      308806,
+      328204,
+      407161
+    ]
+  },
+  {
+    "id": 101479,
+    "name": "키노시타 사야카",
+    "cvimg": "image/cvimg/키노시타_사야카.webp",
+    "gender": "female",
+    "characterIds": [
+      148985,
+      295963
+    ]
+  },
+  {
+    "id": 127059,
+    "name": "키노시타 스즈나",
+    "cvimg": "image/cvimg/키노시타_스즈나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      400266
+    ]
+  },
+  {
+    "id": 100356,
+    "name": "키노시타 히로유키",
+    "cvimg": "image/cvimg/키노시타_히로유키.webp",
+    "gender": "male",
+    "characterIds": [
+      195579
+    ]
+  },
+  {
+    "id": 119821,
+    "name": "키누가와 리카",
+    "cvimg": "image/cvimg/키누가와_리카.webp",
+    "gender": "female",
+    "characterIds": [
+      127651,
+      329669,
+      408135
+    ]
+  },
+  {
+    "id": 237150,
+    "name": "키다 타스쿠",
+    "cvimg": "image/cvimg/키다_타스쿠.webp",
+    "gender": "unknown",
+    "characterIds": [
+      389682
+    ]
+  },
+  {
+    "id": 387476,
+    "name": "키도 마도카",
+    "cvimg": "image/cvimg/키도_마도카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      387470
+    ]
+  },
+  {
+    "id": 96762,
+    "name": "키무라 료헤이",
+    "cvimg": "image/cvimg/키무라_료헤이.webp",
+    "gender": "male",
+    "characterIds": [
+      42321,
+      125917,
+      135022,
+      137269,
+      191430,
+      239563,
+      248143,
+      374762,
+      399671
+    ]
+  },
+  {
+    "id": 107480,
+    "name": "키무라 스바루",
+    "cvimg": "image/cvimg/키무라_스바루.webp",
+    "gender": "male",
+    "characterIds": [
+      79513,
+      137975,
+      375292
+    ]
+  },
+  {
+    "id": 118918,
+    "name": "키무라 쥬리",
+    "cvimg": "image/cvimg/키무라_쥬리.webp",
+    "gender": "female",
+    "characterIds": [
+      343065
+    ]
+  },
+  {
+    "id": 335875,
+    "name": "키무라 타이히",
+    "cvimg": "image/cvimg/키무라_타이히.webp",
+    "gender": "unknown",
+    "characterIds": [
+      356909,
+      391999,
+      393594,
+      396064
+    ]
+  },
+  {
+    "id": 120160,
+    "name": "키무라 하야토",
+    "cvimg": "image/cvimg/키무라_하야토.webp",
+    "gender": "male",
+    "characterIds": [
+      406293
+    ]
+  },
+  {
+    "id": 303853,
+    "name": "키미나리타 코스케",
+    "cvimg": "image/cvimg/키미나리타_코스케.webp",
+    "gender": "unknown",
+    "characterIds": [
+      396071
+    ]
+  },
+  {
+    "id": 214250,
+    "name": "키소 히로코",
+    "cvimg": "image/cvimg/키소_히로코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      405441
+    ]
+  },
+  {
+    "id": 100845,
+    "name": "키시노 유키마사",
+    "cvimg": "image/cvimg/키시노_유키마사.webp",
+    "gender": "male",
+    "characterIds": [
+      278298
+    ]
+  },
+  {
+    "id": 95440,
+    "name": "키시오 다이스케",
+    "cvimg": "image/cvimg/키시오_다이스케.webp",
+    "gender": "male",
+    "characterIds": [
+      12271
+    ]
+  },
+  {
+    "id": 95619,
+    "name": "키야스 코헤이",
+    "cvimg": "image/cvimg/키야스_코헤이.webp",
+    "gender": "male",
+    "characterIds": [
+      393118
+    ]
+  },
+  {
+    "id": 296336,
+    "name": "키우치 유카코",
+    "cvimg": "image/cvimg/키우치_유카코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      389145
+    ]
+  },
+  {
+    "id": 133568,
+    "name": "키우치 타로",
+    "cvimg": "image/cvimg/키우치_타로.webp",
+    "gender": "unknown",
+    "characterIds": [
+      312448,
+      387000,
+      393587
+    ]
+  },
+  {
+    "id": 95174,
+    "name": "키우치 히데노부",
+    "cvimg": "image/cvimg/키우치_히데노부.webp",
+    "gender": "male",
+    "characterIds": [
+      364447,
+      376024,
+      401993,
+      402344,
+      406319
+    ]
+  },
+  {
+    "id": 274869,
+    "name": "키쿠치 미치타케",
+    "cvimg": "image/cvimg/키쿠치_미치타케.webp",
+    "gender": "unknown",
+    "characterIds": [
+      406536
+    ]
+  },
+  {
+    "id": 255530,
+    "name": "키쿠치 야스히로",
+    "cvimg": "image/cvimg/키쿠치_야스히로.webp",
+    "gender": "unknown",
+    "characterIds": [
+      389852
+    ]
+  },
+  {
+    "id": 370143,
+    "name": "키쿠치 유리나",
+    "cvimg": "image/cvimg/키쿠치_유리나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      387282
+    ]
+  },
+  {
+    "id": 123623,
+    "name": "키쿠치 타케루",
+    "cvimg": "image/cvimg/키쿠치_타케루.webp",
+    "gender": "unknown",
+    "characterIds": [
+      388272
+    ]
+  },
+  {
+    "id": 127684,
+    "name": "키타다 마사미치",
+    "cvimg": "image/cvimg/키타다_마사미치.webp",
+    "gender": "unknown",
+    "characterIds": [
+      129757
+    ]
+  },
+  {
+    "id": 95413,
+    "name": "키타무라 에리",
+    "cvimg": "image/cvimg/키타무라_에리.webp",
+    "gender": "female",
+    "characterIds": [
+      278295,
+      395600
+    ]
+  },
+  {
+    "id": 354625,
+    "name": "키타지마 미즈키",
+    "cvimg": "image/cvimg/키타지마_미즈키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      406502
+    ]
+  },
+  {
+    "id": 119722,
+    "name": "키토 아카리",
+    "cvimg": "image/cvimg/키토_아카리.webp",
+    "gender": "female",
+    "characterIds": [
+      123213,
+      132801,
+      162524,
+      169990,
+      192862,
+      377103,
+      380695,
+      381825,
+      394745,
+      398530
+    ]
+  },
+  {
+    "id": 126320,
+    "name": "킨죠 야마토",
+    "cvimg": "image/cvimg/킨죠_야마토.webp",
+    "gender": "unknown",
+    "characterIds": [
+      356906
+    ]
+  },
+  {
+    "id": 395151,
+    "name": "킷카와 쿄카",
+    "cvimg": "image/cvimg/킷카와_쿄카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      395149
+    ]
+  },
+  {
+    "id": 118444,
+    "name": "타나베 루이",
+    "cvimg": "image/cvimg/타나베_루이.webp",
+    "gender": "female",
+    "characterIds": [
+      374178,
+      386177
+    ]
+  },
+  {
+    "id": 198640,
+    "name": "타나베 코스케",
+    "cvimg": "image/cvimg/타나베_코스케.webp",
+    "gender": "unknown",
+    "characterIds": [
+      295788,
+      396063,
+      404105
+    ]
+  },
+  {
+    "id": 95060,
+    "name": "타나카 리에",
+    "cvimg": "image/cvimg/타나카_리에.webp",
+    "gender": "female",
+    "characterIds": [
+      132729,
+      186490
+    ]
+  },
+  {
+    "id": 96414,
+    "name": "타나카 마사히코",
+    "cvimg": "image/cvimg/타나카_마사히코.webp",
+    "gender": "male",
+    "characterIds": [
+      2823,
+      399511
+    ]
+  },
+  {
+    "id": 118473,
+    "name": "타나카 미나미",
+    "cvimg": "image/cvimg/타나카_미나미.webp",
+    "gender": "female",
+    "characterIds": [
+      127652,
+      187381,
+      381123,
+      382019
+    ]
+  },
+  {
+    "id": 158727,
+    "name": "타나카 미오",
+    "cvimg": "image/cvimg/타나카_미오.webp",
+    "gender": "unknown",
+    "characterIds": [
+      391449
+    ]
+  },
+  {
+    "id": 338004,
+    "name": "타나카 소노카",
+    "cvimg": "image/cvimg/타나카_소노카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      392633
+    ]
+  },
+  {
+    "id": 119281,
+    "name": "타나카 아이미",
+    "cvimg": "image/cvimg/타나카_아이미.webp",
+    "gender": "female",
+    "characterIds": [
+      405765
+    ]
+  },
+  {
+    "id": 147551,
+    "name": "타나카 유키",
+    "cvimg": "image/cvimg/타나카_유키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      390604,
+      395976,
+      403752
+    ]
+  },
+  {
+    "id": 120102,
+    "name": "타나카 치에미",
+    "cvimg": "image/cvimg/타나카_치에미.webp",
+    "gender": "female",
+    "characterIds": [
+      132800,
+      382173
+    ]
+  },
+  {
+    "id": 292685,
+    "name": "타나카 카나타",
+    "cvimg": "image/cvimg/타나카_카나타.webp",
+    "gender": "unknown",
+    "characterIds": [
+      405893
+    ]
+  },
+  {
+    "id": 125361,
+    "name": "타나카 타카코",
+    "cvimg": "image/cvimg/타나카_타카코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      306777,
+      382016
+    ]
+  },
+  {
+    "id": 111135,
+    "name": "타네다 리사",
+    "cvimg": "image/cvimg/타네다_리사.webp",
+    "gender": "female",
+    "characterIds": [
+      127539
+    ]
+  },
+  {
+    "id": 112215,
+    "name": "타네자키 아츠미",
+    "cvimg": "image/cvimg/타네자키_아츠미.webp",
+    "gender": "female",
+    "characterIds": [
+      132946,
+      145063,
+      176754,
+      244474,
+      320890,
+      357959,
+      380691,
+      392459,
+      394966,
+      398638
+    ]
+  },
+  {
+    "id": 107666,
+    "name": "타노 아사미",
+    "cvimg": "image/cvimg/타노_아사미.webp",
+    "gender": "female",
+    "characterIds": [
+      127538
+    ]
+  },
+  {
+    "id": 147723,
+    "name": "타니구치 유나",
+    "cvimg": "image/cvimg/타니구치_유나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      373191,
+      392636
+    ]
+  },
+  {
+    "id": 95196,
+    "name": "타니야마 키쇼",
+    "cvimg": "image/cvimg/타니야마_키쇼.webp",
+    "gender": "male",
+    "characterIds": [
+      89853,
+      321716,
+      373295,
+      407025
+    ]
+  },
+  {
+    "id": 324860,
+    "name": "타니에 레오",
+    "cvimg": "image/cvimg/타니에_레오.webp",
+    "gender": "unknown",
+    "characterIds": [
+      408147
+    ]
+  },
+  {
+    "id": 262093,
+    "name": "타다노 아카리",
+    "cvimg": "image/cvimg/타다노_아카리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      392631
+    ]
+  },
+  {
+    "id": 112297,
+    "name": "타도코로 아즈사",
+    "cvimg": "image/cvimg/타도코로_아즈사.webp",
+    "gender": "female",
+    "characterIds": [
+      132760,
+      366004,
+      376716
+    ]
+  },
+  {
+    "id": 128613,
+    "name": "타도코로 히나타",
+    "cvimg": "image/cvimg/타도코로_히나타.webp",
+    "gender": "unknown",
+    "characterIds": [
+      140649,
+      229954,
+      381600,
+      393898,
+      398278,
+      400230,
+      402572,
+      404100
+    ]
+  },
+  {
+    "id": 95448,
+    "name": "타마가와 사키코",
+    "cvimg": "image/cvimg/타마가와_사키코.webp",
+    "gender": "female",
+    "characterIds": [
+      404965
+    ]
+  },
+  {
+    "id": 103639,
+    "name": "타마루 아츠시",
+    "cvimg": "image/cvimg/타마루_아츠시.webp",
+    "gender": "male",
+    "characterIds": [
+      263184,
+      343056,
+      375402,
+      378747,
+      390175,
+      398527,
+      398538,
+      399427
+    ]
+  },
+  {
+    "id": 101968,
+    "name": "타마루 아츠시",
+    "cvimg": "image/cvimg/타마루_아츠시.webp",
+    "gender": "male",
+    "characterIds": [
+      343053
+    ]
+  },
+  {
+    "id": 206818,
+    "name": "타마이 유우키",
+    "cvimg": "image/cvimg/타마이_유우키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      392474
+    ]
+  },
+  {
+    "id": 145692,
+    "name": "타메가이 하나",
+    "cvimg": "image/cvimg/타메가이_하나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      240542
+    ]
+  },
+  {
+    "id": 130059,
+    "name": "타무라 마코토",
+    "cvimg": "image/cvimg/타무라_마코토.webp",
+    "gender": "unknown",
+    "characterIds": [
+      400290
+    ]
+  },
+  {
+    "id": 105013,
+    "name": "타무라 무츠미",
+    "cvimg": "image/cvimg/타무라_무츠미.webp",
+    "gender": "female",
+    "characterIds": [
+      126529,
+      158680,
+      190921,
+      339319,
+      342213,
+      346657,
+      351117,
+      355435,
+      358310,
+      382172,
+      382211
+    ]
+  },
+  {
+    "id": 95027,
+    "name": "타무라 유카리",
+    "cvimg": "image/cvimg/타무라_유카리.webp",
+    "gender": "female",
+    "characterIds": [
+      2010,
+      201312,
+      382665,
+      400913
+    ]
+  },
+  {
+    "id": 278499,
+    "name": "타무라 코노미",
+    "cvimg": "image/cvimg/타무라_코노미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      382684
+    ]
+  },
+  {
+    "id": 109251,
+    "name": "타이치 요우",
+    "cvimg": "image/cvimg/타이치_요우.webp",
+    "gender": "female",
+    "characterIds": [
+      16877,
+      137056,
+      298134,
+      365644,
+      379537,
+      381807,
+      389853,
+      391155,
+      392177,
+      393595,
+      393715,
+      398520,
+      405526,
+      406380
+    ]
+  },
+  {
+    "id": 118922,
+    "name": "타자와 마스미",
+    "cvimg": "image/cvimg/타자와_마스미.webp",
+    "gender": "female",
+    "characterIds": [
+      191401,
+      367209,
+      381810,
+      394970,
+      399575
+    ]
+  },
+  {
+    "id": 174684,
+    "name": "타지마 아키히로",
+    "cvimg": "image/cvimg/타지마_아키히로.webp",
+    "gender": "unknown",
+    "characterIds": [
+      388615
+    ]
+  },
+  {
+    "id": 156962,
+    "name": "타츠모리 레오",
+    "cvimg": "image/cvimg/타츠모리_레오.webp",
+    "gender": "unknown",
+    "characterIds": [
+      382106
+    ]
+  },
+  {
+    "id": 101997,
+    "name": "타츠미 유이코",
+    "cvimg": "image/cvimg/타츠미_유이코.webp",
+    "gender": "female",
+    "characterIds": [
+      163517,
+      211478
+    ]
+  },
+  {
+    "id": 96522,
+    "name": "타츠타 나오키",
+    "cvimg": "image/cvimg/타츠타_나오키.webp",
+    "gender": "male",
+    "characterIds": [
+      376028
+    ]
+  },
+  {
+    "id": 358449,
+    "name": "타치바나 마리카",
+    "cvimg": "image/cvimg/타치바나_마리카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      400218
+    ]
+  },
+  {
+    "id": 377812,
+    "name": "타치바나 메이",
+    "cvimg": "image/cvimg/타치바나_메이.webp",
+    "gender": "unknown",
+    "characterIds": [
+      377806,
+      390613,
+      394790,
+      405915
+    ]
+  },
+  {
+    "id": 153575,
+    "name": "타치바나 미라이",
+    "cvimg": "image/cvimg/타치바나_미라이.webp",
+    "gender": "unknown",
+    "characterIds": [
+      8939
+    ]
+  },
+  {
+    "id": 95792,
+    "name": "타치바나 신노스케",
+    "cvimg": "image/cvimg/타치바나_신노스케.webp",
+    "gender": "male",
+    "characterIds": [
+      29568,
+      265074,
+      383119,
+      391900,
+      398643
+    ]
+  },
+  {
+    "id": 337852,
+    "name": "타치바나 아즈사",
+    "cvimg": "image/cvimg/타치바나_아즈사.webp",
+    "gender": "unknown",
+    "characterIds": [
+      307388,
+      348546,
+      377497,
+      385182,
+      402020
+    ]
+  },
+  {
+    "id": 379444,
+    "name": "타치바나 안리",
+    "cvimg": "image/cvimg/타치바나_안리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      394947
+    ]
+  },
+  {
+    "id": 156970,
+    "name": "타치바나 쥰지",
+    "cvimg": "image/cvimg/타치바나_쥰지.webp",
+    "gender": "unknown",
+    "characterIds": [
+      399541
+    ]
+  },
+  {
+    "id": 137436,
+    "name": "타치바나 타츠마루",
+    "cvimg": "image/cvimg/타치바나_타츠마루.webp",
+    "gender": "unknown",
+    "characterIds": [
+      87315,
+      387284,
+      402184,
+      408663
+    ]
+  },
+  {
+    "id": 141370,
+    "name": "타치바나 히나",
+    "cvimg": "image/cvimg/타치바나_히나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      170336,
+      356658,
+      394783
+    ]
+  },
+  {
+    "id": 105833,
+    "name": "타치바나 U코",
+    "cvimg": "image/cvimg/타치바나_U코.webp",
+    "gender": "female",
+    "characterIds": [
+      406507
+    ]
+  },
+  {
+    "id": 95284,
+    "name": "타치키 후미히코",
+    "cvimg": "image/cvimg/타치키_후미히코.webp",
+    "gender": "male",
+    "characterIds": [
+      909,
+      371801
+    ]
+  },
+  {
+    "id": 95823,
+    "name": "타카가키 아야히",
+    "cvimg": "image/cvimg/타카가키_아야히.webp",
+    "gender": "female",
+    "characterIds": [
+      401111,
+      401112,
+      407024
+    ]
+  },
+  {
+    "id": 118476,
+    "name": "타카기 미유",
+    "cvimg": "image/cvimg/타카기_미유.webp",
+    "gender": "female",
+    "characterIds": [
+      405730
+    ]
+  },
+  {
+    "id": 95133,
+    "name": "타카기 와타루",
+    "cvimg": "image/cvimg/타카기_와타루.webp",
+    "gender": "male",
+    "characterIds": [
+      1091,
+      9192,
+      17796,
+      37074,
+      140640,
+      168597,
+      393947,
+      404659,
+      406167
+    ]
+  },
+  {
+    "id": 330994,
+    "name": "타카기시 미리아",
+    "cvimg": "image/cvimg/타카기시_미리아.webp",
+    "gender": "unknown",
+    "characterIds": [
+      396043,
+      402218
+    ]
+  },
+  {
+    "id": 110477,
+    "name": "타카나시 켄고",
+    "cvimg": "image/cvimg/타카나시_켄고.webp",
+    "gender": "male",
+    "characterIds": [
+      16062,
+      395260
+    ]
+  },
+  {
+    "id": 119154,
+    "name": "타카다 유우키",
+    "cvimg": "image/cvimg/타카다_유우키.webp",
+    "gender": "female",
+    "characterIds": [
+      88876,
+      145459,
+      389407,
+      389411,
+      392192,
+      405878
+    ]
+  },
+  {
+    "id": 100161,
+    "name": "타카다 유지",
+    "cvimg": "image/cvimg/타카다_유지.webp",
+    "gender": "male",
+    "characterIds": [
+      403711
+    ]
+  },
+  {
+    "id": 107240,
+    "name": "타카시나 토시츠구",
+    "cvimg": "image/cvimg/타카시나_토시츠구.webp",
+    "gender": "male",
+    "characterIds": [
+      306245
+    ]
+  },
+  {
+    "id": 95497,
+    "name": "타카시마 가라",
+    "cvimg": "image/cvimg/타카시마_가라.webp",
+    "gender": "female",
+    "characterIds": [
+      406506
+    ]
+  },
+  {
+    "id": 95024,
+    "name": "타카야마 미나미",
+    "cvimg": "image/cvimg/타카야마_미나미.webp",
+    "gender": "female",
+    "characterIds": [
+      201321
+    ]
+  },
+  {
+    "id": 132283,
+    "name": "타카오 카논",
+    "cvimg": "image/cvimg/타카오_카논.webp",
+    "gender": "unknown",
+    "characterIds": [
+      205771,
+      381189,
+      396506
+    ]
+  },
+  {
+    "id": 105777,
+    "name": "타카오카 빈빈",
+    "cvimg": "image/cvimg/타카오카_빈빈.webp",
+    "gender": "male",
+    "characterIds": [
+      135040,
+      403351
+    ]
+  },
+  {
+    "id": 95752,
+    "name": "타카토 야스히로",
+    "cvimg": "image/cvimg/타카토_야스히로.webp",
+    "gender": "male",
+    "characterIds": [
+      381602
+    ]
+  },
+  {
+    "id": 127581,
+    "name": "타카하시 료스케",
+    "cvimg": "image/cvimg/타카하시_료스케.webp",
+    "gender": "unknown",
+    "characterIds": [
+      376021
+    ]
+  },
+  {
+    "id": 119331,
+    "name": "타카하시 리에",
+    "cvimg": "image/cvimg/타카하시_리에.webp",
+    "gender": "female",
+    "characterIds": [
+      23651,
+      88572,
+      137270,
+      144665,
+      163518,
+      172759,
+      190912,
+      198883,
+      283886,
+      366666,
+      394836
+    ]
+  },
+  {
+    "id": 117003,
+    "name": "타카하시 미나미",
+    "cvimg": "image/cvimg/타카하시_미나미.webp",
+    "gender": "female",
+    "characterIds": [
+      393867
+    ]
+  },
+  {
+    "id": 404790,
+    "name": "타카하시 세이나",
+    "cvimg": "image/cvimg/타카하시_세이나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      404789
+    ]
+  },
+  {
+    "id": 105148,
+    "name": "타카하시 신야",
+    "cvimg": "image/cvimg/타카하시_신야.webp",
+    "gender": "male",
+    "characterIds": [
+      319609,
+      356911,
+      376023,
+      396746,
+      397260,
+      402187,
+      406494,
+      406605,
+      408273
+    ]
+  },
+  {
+    "id": 125920,
+    "name": "타카하시 카린",
+    "cvimg": "image/cvimg/타카하시_카린.webp",
+    "gender": "unknown",
+    "characterIds": [
+      124162
+    ]
+  },
+  {
+    "id": 116233,
+    "name": "타카하시 코우지",
+    "cvimg": "image/cvimg/타카하시_코우지.webp",
+    "gender": "male",
+    "characterIds": [
+      136633
+    ]
+  },
+  {
+    "id": 182244,
+    "name": "타카하시 후미야",
+    "cvimg": "image/cvimg/타카하시_후미야.webp",
+    "gender": "unknown",
+    "characterIds": [
+      372054
+    ]
+  },
+  {
+    "id": 107039,
+    "name": "타카하시 히데노리",
+    "cvimg": "image/cvimg/타카하시_히데노리.webp",
+    "gender": "male",
+    "characterIds": [
+      398528
+    ]
+  },
+  {
+    "id": 95064,
+    "name": "타카하시 히로키",
+    "cvimg": "image/cvimg/타카하시_히로키.webp",
+    "gender": "male",
+    "characterIds": [
+      294555,
+      391557,
+      405858
+    ]
+  },
+  {
+    "id": 331994,
+    "name": "타케나카 유토",
+    "cvimg": "image/cvimg/타케나카_유토.webp",
+    "gender": "unknown",
+    "characterIds": [
+      280874,
+      398636
+    ]
+  },
+  {
+    "id": 123888,
+    "name": "타케다 라리사 타고",
+    "cvimg": "image/cvimg/타케다_라리사_타고.webp",
+    "gender": "unknown",
+    "characterIds": [
+      402030
+    ]
+  },
+  {
+    "id": 109157,
+    "name": "타케다 코지",
+    "cvimg": "image/cvimg/타케다_코지.webp",
+    "gender": "male",
+    "characterIds": [
+      397270
+    ]
+  },
+  {
+    "id": 174145,
+    "name": "타케다 타이치",
+    "cvimg": "image/cvimg/타케다_타이치.webp",
+    "gender": "unknown",
+    "characterIds": [
+      397679
+    ]
+  },
+  {
+    "id": 95576,
+    "name": "타케모토 에이지",
+    "cvimg": "image/cvimg/타케모토_에이지.webp",
+    "gender": "male",
+    "characterIds": [
+      131136,
+      306197
+    ]
+  },
+  {
+    "id": 107615,
+    "name": "타케우치 료타",
+    "cvimg": "image/cvimg/타케우치_료타.webp",
+    "gender": "male",
+    "characterIds": [
+      261993,
+      288362,
+      391719,
+      395250,
+      396742,
+      398539
+    ]
+  },
+  {
+    "id": 119185,
+    "name": "타케우치 슌스케",
+    "cvimg": "image/cvimg/타케우치_슌스케.webp",
+    "gender": "male",
+    "characterIds": [
+      2511,
+      87085,
+      298129,
+      317221,
+      391467,
+      395904,
+      396741
+    ]
+  },
+  {
+    "id": 121022,
+    "name": "타케우치 에미코",
+    "cvimg": "image/cvimg/타케우치_에미코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      308810,
+      387469
+    ]
+  },
+  {
+    "id": 117419,
+    "name": "타케우치 에이지",
+    "cvimg": "image/cvimg/타케우치_에이지.webp",
+    "gender": "male",
+    "characterIds": [
+      207025
+    ]
+  },
+  {
+    "id": 95015,
+    "name": "타케우치 준코",
+    "cvimg": "image/cvimg/타케우치_준코.webp",
+    "gender": "female",
+    "characterIds": [
+      278300,
+      306185,
+      395903
+    ]
+  },
+  {
+    "id": 201866,
+    "name": "타케이 카즈호",
+    "cvimg": "image/cvimg/타케이_카즈호.webp",
+    "gender": "unknown",
+    "characterIds": [
+      229953
+    ]
+  },
+  {
+    "id": 101996,
+    "name": "타케타츠 아야",
+    "cvimg": "image/cvimg/타케타츠_아야.webp",
+    "gender": "female",
+    "characterIds": [
+      141122,
+      227073,
+      321165,
+      355433,
+      367208
+    ]
+  },
+  {
+    "id": 95345,
+    "name": "타케토라",
+    "cvimg": "image/cvimg/타케토라.webp",
+    "gender": "female",
+    "characterIds": [
+      14827
+    ]
+  },
+  {
+    "id": 101165,
+    "name": "타케토라",
+    "cvimg": "image/cvimg/타케토라.webp",
+    "gender": "male",
+    "characterIds": [
+      18621,
+      309993,
+      369502,
+      400430,
+      400470
+    ]
+  },
+  {
+    "id": 106510,
+    "name": "타쿠미 야스아키",
+    "cvimg": "image/cvimg/타쿠미_야스아키.webp",
+    "gender": "male",
+    "characterIds": [
+      382113
+    ]
+  },
+  {
+    "id": 104629,
+    "name": "탄자와 테루유키",
+    "cvimg": "image/cvimg/탄자와_테루유키.webp",
+    "gender": "male",
+    "characterIds": [
+      382216
+    ]
+  },
+  {
+    "id": 405469,
+    "name": "테라니시 하루",
+    "cvimg": "image/cvimg/테라니시_하루.webp",
+    "gender": "unknown",
+    "characterIds": [
+      405467
+    ]
+  },
+  {
+    "id": 292760,
+    "name": "테라사와 모모카",
+    "cvimg": "image/cvimg/테라사와_모모카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      232525,
+      382213,
+      387495,
+      393183,
+      393218,
+      399568,
+      402024,
+      406212
+    ]
+  },
+  {
+    "id": 95671,
+    "name": "테라사키 유카",
+    "cvimg": "image/cvimg/테라사키_유카.webp",
+    "gender": "female",
+    "characterIds": [
+      195657,
+      201564,
+      338216
+    ]
+  },
+  {
+    "id": 95563,
+    "name": "테라소마 마사키",
+    "cvimg": "image/cvimg/테라소마_마사키.webp",
+    "gender": "male",
+    "characterIds": [
+      129247,
+      245518,
+      264107,
+      396502
+    ]
+  },
+  {
+    "id": 95494,
+    "name": "테라시마 타쿠마",
+    "cvimg": "image/cvimg/테라시마_타쿠마.webp",
+    "gender": "male",
+    "characterIds": [
+      373036,
+      401622
+    ]
+  },
+  {
+    "id": 301591,
+    "name": "테루이 유우키",
+    "cvimg": "image/cvimg/테루이_유우키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      397773
+    ]
+  },
+  {
+    "id": 119724,
+    "name": "테즈카 히로미치",
+    "cvimg": "image/cvimg/테즈카_히로미치.webp",
+    "gender": "unknown",
+    "characterIds": [
+      397752,
+      401616
+    ]
+  },
+  {
+    "id": 105571,
+    "name": "토네 켄타로",
+    "cvimg": "image/cvimg/토네_켄타로.webp",
+    "gender": "male",
+    "characterIds": [
+      405343
+    ]
+  },
+  {
+    "id": 98894,
+    "name": "토다 메구미",
+    "cvimg": "image/cvimg/토다_메구미.webp",
+    "gender": "female",
+    "characterIds": [
+      389339
+    ]
+  },
+  {
+    "id": 145949,
+    "name": "토라시마 타카아키",
+    "cvimg": "image/cvimg/토라시마_타카아키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      132945,
+      379381,
+      406600
+    ]
+  },
+  {
+    "id": 212910,
+    "name": "토리고에 마아야",
+    "cvimg": "image/cvimg/토리고에_마아야.webp",
+    "gender": "unknown",
+    "characterIds": [
+      382107
+    ]
+  },
+  {
+    "id": 95097,
+    "name": "토리우미 코스케",
+    "cvimg": "image/cvimg/토리우미_코스케.webp",
+    "gender": "male",
+    "characterIds": [
+      199189,
+      265075,
+      360820,
+      368799,
+      380599,
+      382303,
+      393890,
+      393907,
+      398543,
+      406969
+    ]
+  },
+  {
+    "id": 95890,
+    "name": "토마츠 하루카",
+    "cvimg": "image/cvimg/토마츠_하루카.webp",
+    "gender": "female",
+    "characterIds": [
+      135052,
+      260729,
+      262624,
+      380248
+    ]
+  },
+  {
+    "id": 278045,
+    "name": "토미오카 야스타카",
+    "cvimg": "image/cvimg/토미오카_야스타카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      393585
+    ]
+  },
+  {
+    "id": 119518,
+    "name": "토미타 미유",
+    "cvimg": "image/cvimg/토미타_미유.webp",
+    "gender": "female",
+    "characterIds": [
+      16063,
+      131045,
+      157125,
+      173760,
+      180528,
+      194356,
+      214626,
+      244476,
+      294908,
+      306329,
+      309271,
+      338219,
+      389844,
+      393709,
+      399131
+    ]
+  },
+  {
+    "id": 95157,
+    "name": "토비타 노부오",
+    "cvimg": "image/cvimg/토비타_노부오.webp",
+    "gender": "male",
+    "characterIds": [
+      390500,
+      393995,
+      398682
+    ]
+  },
+  {
+    "id": 284463,
+    "name": "토야 키쿠노스케",
+    "cvimg": "image/cvimg/토야_키쿠노스케.webp",
+    "gender": "unknown",
+    "characterIds": [
+      4915,
+      84579,
+      300880,
+      317218,
+      320996,
+      395109,
+      402186
+    ]
+  },
+  {
+    "id": 106184,
+    "name": "토야마 나오",
+    "cvimg": "image/cvimg/토야마_나오.webp",
+    "gender": "female",
+    "characterIds": [
+      34267,
+      123216,
+      147005,
+      147760,
+      201569,
+      336102,
+      353732,
+      372999,
+      385342,
+      393932,
+      393938,
+      399794,
+      407332
+    ]
+  },
+  {
+    "id": 137842,
+    "name": "토오노 히카루",
+    "cvimg": "image/cvimg/토오노_히카루.webp",
+    "gender": "unknown",
+    "characterIds": [
+      318831,
+      382020,
+      392164,
+      393869
+    ]
+  },
+  {
+    "id": 95144,
+    "name": "토요구치 메구미",
+    "cvimg": "image/cvimg/토요구치_메구미.webp",
+    "gender": "female",
+    "characterIds": [
+      129347,
+      206392,
+      315452,
+      392735,
+      402199,
+      406273
+    ]
+  },
+  {
+    "id": 95600,
+    "name": "토요나가 토시유키",
+    "cvimg": "image/cvimg/토요나가_토시유키.webp",
+    "gender": "male",
+    "characterIds": [
+      218266
+    ]
+  },
+  {
+    "id": 95599,
+    "name": "토요사키 아키",
+    "cvimg": "image/cvimg/토요사키_아키.webp",
+    "gender": "female",
+    "characterIds": [
+      145065,
+      358728
+    ]
+  },
+  {
+    "id": 118400,
+    "name": "토죠 히사코",
+    "cvimg": "image/cvimg/토죠_히사코.webp",
+    "gender": "female",
+    "characterIds": [
+      138624,
+      393117
+    ]
+  },
+  {
+    "id": 95236,
+    "name": "토치 히로키",
+    "cvimg": "image/cvimg/토치_히로키.webp",
+    "gender": "male",
+    "characterIds": [
+      129220,
+      184310,
+      280468,
+      373707,
+      393916,
+      397751,
+      402366
+    ]
+  },
+  {
+    "id": 138019,
+    "name": "토쿠도메 신노스케",
+    "cvimg": "image/cvimg/토쿠도메_신노스케.webp",
+    "gender": "unknown",
+    "characterIds": [
+      159628,
+      375859,
+      392456,
+      399861,
+      403300
+    ]
+  },
+  {
+    "id": 106361,
+    "name": "토쿠이 소라",
+    "cvimg": "image/cvimg/토쿠이_소라.webp",
+    "gender": "female",
+    "characterIds": [
+      312632,
+      392607,
+      394148,
+      394830
+    ]
+  },
+  {
+    "id": 123971,
+    "name": "토키 슌이치",
+    "cvimg": "image/cvimg/토키_슌이치.webp",
+    "gender": "unknown",
+    "characterIds": [
+      148543,
+      234869,
+      300881,
+      315337,
+      355723,
+      373035,
+      409110
+    ]
+  },
+  {
+    "id": 133625,
+    "name": "파이루즈 아이",
+    "cvimg": "image/cvimg/파이루즈_아이.webp",
+    "gender": "unknown",
+    "characterIds": [
+      152676,
+      184458,
+      186214,
+      187380,
+      192785,
+      194353,
+      283281,
+      307387,
+      342421,
+      365645,
+      385549,
+      400142,
+      408126
+    ]
+  },
+  {
+    "id": 391335,
+    "name": "페니실린",
+    "cvimg": "image/cvimg/페니실린.webp",
+    "gender": "unknown",
+    "characterIds": [
+      391309
+    ]
+  },
+  {
+    "id": 116543,
+    "name": "하나모리 유미리",
+    "cvimg": "image/cvimg/하나모리_유미리.webp",
+    "gender": "female",
+    "characterIds": [
+      137263,
+      371758,
+      377105,
+      387641,
+      400226,
+      400227,
+      401659
+    ]
+  },
+  {
+    "id": 387196,
+    "name": "하나미 류지",
+    "cvimg": "image/cvimg/하나미_류지.webp",
+    "gender": "unknown",
+    "characterIds": [
+      388606,
+      394041
+    ]
+  },
+  {
+    "id": 311814,
+    "name": "하나미야 니나",
+    "cvimg": "image/cvimg/하나미야_니나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      408172
+    ]
+  },
+  {
+    "id": 303598,
+    "name": "하나사키 미유",
+    "cvimg": "image/cvimg/하나사키_미유.webp",
+    "gender": "unknown",
+    "characterIds": [
+      402027
+    ]
+  },
+  {
+    "id": 111635,
+    "name": "하나에 나츠키",
+    "cvimg": "image/cvimg/하나에_나츠키.webp",
+    "gender": "male",
+    "characterIds": [
+      20726,
+      69295,
+      129841,
+      132755,
+      139309,
+      317321,
+      342423,
+      356053,
+      381144,
+      385548,
+      392604,
+      393185,
+      393897,
+      393994,
+      402573,
+      407764
+    ]
+  },
+  {
+    "id": 123187,
+    "name": "하나와 마나미",
+    "cvimg": "image/cvimg/하나와_마나미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      406267
+    ]
+  },
+  {
+    "id": 95804,
+    "name": "하나와 에이지",
+    "cvimg": "image/cvimg/하나와_에이지.webp",
+    "gender": "male",
+    "characterIds": [
+      369518,
+      403060
+    ]
+  },
+  {
+    "id": 121455,
+    "name": "하나이 미하루",
+    "cvimg": "image/cvimg/하나이_미하루.webp",
+    "gender": "unknown",
+    "characterIds": [
+      36309,
+      394360,
+      400222,
+      400267,
+      401964,
+      406455
+    ]
+  },
+  {
+    "id": 95185,
+    "name": "하나자와 카나",
+    "cvimg": "image/cvimg/하나자와_카나.webp",
+    "gender": "female",
+    "characterIds": [
+      54223,
+      132222,
+      192783,
+      208533,
+      316320,
+      327791,
+      368609,
+      375232,
+      380736,
+      393115,
+      393937,
+      400675,
+      401309,
+      402151
+    ]
+  },
+  {
+    "id": 122813,
+    "name": "하나카게 호타루",
+    "cvimg": "image/cvimg/하나카게_호타루.webp",
+    "gender": "unknown",
+    "characterIds": [
+      380644,
+      406501
+    ]
+  },
+  {
+    "id": 107013,
+    "name": "하라 사유리",
+    "cvimg": "image/cvimg/하라_사유리.webp",
+    "gender": "female",
+    "characterIds": [
+      393921
+    ]
+  },
+  {
+    "id": 118720,
+    "name": "하라 유코",
+    "cvimg": "image/cvimg/하라_유코.webp",
+    "gender": "female",
+    "characterIds": [
+      399543
+    ]
+  },
+  {
+    "id": 122615,
+    "name": "하루노 안즈",
+    "cvimg": "image/cvimg/하루노_안즈.webp",
+    "gender": "unknown",
+    "characterIds": [
+      131034,
+      338226
+    ]
+  },
+  {
+    "id": 350718,
+    "name": "하루미 모모",
+    "cvimg": "image/cvimg/하루미_모모.webp",
+    "gender": "unknown",
+    "characterIds": [
+      377104
+    ]
+  },
+  {
+    "id": 334699,
+    "name": "하루사카 아게하",
+    "cvimg": "image/cvimg/하루사카_아게하.webp",
+    "gender": "unknown",
+    "characterIds": [
+      406979
+    ]
+  },
+  {
+    "id": 129305,
+    "name": "하루세 나츠미",
+    "cvimg": "image/cvimg/하루세_나츠미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      197151,
+      394361,
+      396463
+    ]
+  },
+  {
+    "id": 391322,
+    "name": "하루키 쿠루미",
+    "cvimg": "image/cvimg/하루키_쿠루미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      129839
+    ]
+  },
+  {
+    "id": 122595,
+    "name": "하마 켄토",
+    "cvimg": "image/cvimg/하마_켄토.webp",
+    "gender": "unknown",
+    "characterIds": [
+      381922,
+      390176,
+      402524
+    ]
+  },
+  {
+    "id": 120263,
+    "name": "하마노 다이키",
+    "cvimg": "image/cvimg/하마노_다이키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      54981,
+      135058,
+      146842,
+      220767,
+      397566
+    ]
+  },
+  {
+    "id": 163897,
+    "name": "하마다 요헤이",
+    "cvimg": "image/cvimg/하마다_요헤이.webp",
+    "gender": "unknown",
+    "characterIds": [
+      396249,
+      403715
+    ]
+  },
+  {
+    "id": 95371,
+    "name": "하마다 켄지",
+    "cvimg": "image/cvimg/하마다_켄지.webp",
+    "gender": "male",
+    "characterIds": [
+      380601,
+      387954
+    ]
+  },
+  {
+    "id": 197864,
+    "name": "하세가와 레나",
+    "cvimg": "image/cvimg/하세가와_레나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      307381,
+      402021
+    ]
+  },
+  {
+    "id": 329883,
+    "name": "하세가와 로쿠",
+    "cvimg": "image/cvimg/하세가와_로쿠.webp",
+    "gender": "unknown",
+    "characterIds": [
+      407849
+    ]
+  },
+  {
+    "id": 119855,
+    "name": "하세가와 요시아키",
+    "cvimg": "image/cvimg/하세가와_요시아키.webp",
+    "gender": "male",
+    "characterIds": [
+      396530
+    ]
+  },
+  {
+    "id": 132768,
+    "name": "하세가와 이쿠미",
+    "cvimg": "image/cvimg/하세가와_이쿠미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      129632,
+      131032,
+      195585,
+      223109,
+      232065,
+      274403,
+      299253,
+      315338,
+      316485,
+      317220,
+      320892,
+      392843,
+      395635,
+      398005
+    ]
+  },
+  {
+    "id": 106704,
+    "name": "하시 타카야",
+    "cvimg": "image/cvimg/하시_타카야.webp",
+    "gender": "male",
+    "characterIds": [
+      171893
+    ]
+  },
+  {
+    "id": 399547,
+    "name": "하시모토 신메이",
+    "cvimg": "image/cvimg/하시모토_신메이.webp",
+    "gender": "unknown",
+    "characterIds": [
+      399546
+    ]
+  },
+  {
+    "id": 159684,
+    "name": "하야마 쇼타",
+    "cvimg": "image/cvimg/하야마_쇼타.webp",
+    "gender": "unknown",
+    "characterIds": [
+      379526,
+      393210,
+      403469
+    ]
+  },
+  {
+    "id": 95869,
+    "name": "하야미 사오리",
+    "cvimg": "image/cvimg/하야미_사오리.webp",
+    "gender": "female",
+    "characterIds": [
+      17982,
+      121057,
+      135020,
+      187029,
+      318789,
+      339252,
+      353973,
+      354098,
+      374851,
+      378748,
+      378973,
+      382233,
+      388634,
+      389405,
+      396084,
+      406187,
+      406653
+    ]
+  },
+  {
+    "id": 95137,
+    "name": "하야미 쇼",
+    "cvimg": "image/cvimg/하야미_쇼.webp",
+    "gender": "male",
+    "characterIds": [
+      126544,
+      140639,
+      296627,
+      382306,
+      388603,
+      391556,
+      392453
+    ]
+  },
+  {
+    "id": 120170,
+    "name": "하야세 마리카",
+    "cvimg": "image/cvimg/하야세_마리카.webp",
+    "gender": "female",
+    "characterIds": [
+      306706
+    ]
+  },
+  {
+    "id": 121241,
+    "name": "하야시 다이치",
+    "cvimg": "image/cvimg/하야시_다이치.webp",
+    "gender": "unknown",
+    "characterIds": [
+      135057
+    ]
+  },
+  {
+    "id": 324001,
+    "name": "하야시 리카",
+    "cvimg": "image/cvimg/하야시_리카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      402035
+    ]
+  },
+  {
+    "id": 116157,
+    "name": "하야시 유우",
+    "cvimg": "image/cvimg/하야시_유우.webp",
+    "gender": "male",
+    "characterIds": [
+      136705,
+      399538
+    ]
+  },
+  {
+    "id": 124857,
+    "name": "하야시 코코",
+    "cvimg": "image/cvimg/하야시_코코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      132796,
+      295793
+    ]
+  },
+  {
+    "id": 179000,
+    "name": "하타나카 마리에",
+    "cvimg": "image/cvimg/하타나카_마리에.webp",
+    "gender": "unknown",
+    "characterIds": [
+      389115
+    ]
+  },
+  {
+    "id": 107018,
+    "name": "하타나카 타스쿠",
+    "cvimg": "image/cvimg/하타나카_타스쿠.webp",
+    "gender": "male",
+    "characterIds": [
+      148742,
+      337683,
+      369798,
+      377067,
+      401965
+    ]
+  },
+  {
+    "id": 95098,
+    "name": "하타노 와타루",
+    "cvimg": "image/cvimg/하타노_와타루.webp",
+    "gender": "male",
+    "characterIds": [
+      87313,
+      146843,
+      284557
+    ]
+  },
+  {
+    "id": 316611,
+    "name": "하타노 카케루",
+    "cvimg": "image/cvimg/하타노_카케루.webp",
+    "gender": "unknown",
+    "characterIds": [
+      318692,
+      350941,
+      387498,
+      394746,
+      405260
+    ]
+  },
+  {
+    "id": 382481,
+    "name": "하토리 사츠키",
+    "cvimg": "image/cvimg/하토리_사츠키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      382480
+    ]
+  },
+  {
+    "id": 107961,
+    "name": "한 메구미",
+    "cvimg": "image/cvimg/한_메구미.webp",
+    "gender": "female",
+    "characterIds": [
+      188783,
+      380696,
+      392277,
+      394392,
+      399805,
+      400779
+    ]
+  },
+  {
+    "id": 178456,
+    "name": "한다 유스케",
+    "cvimg": "image/cvimg/한다_유스케.webp",
+    "gender": "unknown",
+    "characterIds": [
+      393874
+    ]
+  },
+  {
+    "id": 301989,
+    "name": "한다 히로",
+    "cvimg": "image/cvimg/한다_히로.webp",
+    "gender": "unknown",
+    "characterIds": [
+      393344
+    ]
+  },
+  {
+    "id": 253717,
+    "name": "호란 치아키",
+    "cvimg": "image/cvimg/호란_치아키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      389886
+    ]
+  },
+  {
+    "id": 131554,
+    "name": "호리 소시로",
+    "cvimg": "image/cvimg/호리_소시로.webp",
+    "gender": "unknown",
+    "characterIds": [
+      395194,
+      396194,
+      397367,
+      402163
+    ]
+  },
+  {
+    "id": 148819,
+    "name": "호리고메 사야",
+    "cvimg": "image/cvimg/호리고메_사야.webp",
+    "gender": "unknown",
+    "characterIds": [
+      387436
+    ]
+  },
+  {
+    "id": 119869,
+    "name": "호리에 슌",
+    "cvimg": "image/cvimg/호리에_슌.webp",
+    "gender": "male",
+    "characterIds": [
+      128105,
+      269800,
+      355725,
+      393231,
+      400753
+    ]
+  },
+  {
+    "id": 95028,
+    "name": "호리에 유이",
+    "cvimg": "image/cvimg/호리에_유이.webp",
+    "gender": "female",
+    "characterIds": [
+      90184,
+      380364,
+      382304,
+      401666
+    ]
+  },
+  {
+    "id": 95262,
+    "name": "호리우치 켄유",
+    "cvimg": "image/cvimg/호리우치_켄유.webp",
+    "gender": "male",
+    "characterIds": [
+      16060,
+      87321,
+      377664,
+      395536,
+      397687
+    ]
+  },
+  {
+    "id": 303348,
+    "name": "호리카네 소헤이",
+    "cvimg": "image/cvimg/호리카네_소헤이.webp",
+    "gender": "unknown",
+    "characterIds": [
+      400477,
+      405953,
+      407428
+    ]
+  },
+  {
+    "id": 379818,
+    "name": "호리키타 토시키",
+    "cvimg": "image/cvimg/호리키타_토시키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      379816
+    ]
+  },
+  {
+    "id": 250501,
+    "name": "호모토 아키나",
+    "cvimg": "image/cvimg/호모토_아키나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      250500
+    ]
+  },
+  {
+    "id": 128204,
+    "name": "호세 유이치",
+    "cvimg": "image/cvimg/호세_유이치.webp",
+    "gender": "unknown",
+    "characterIds": [
+      282230
+    ]
+  },
+  {
+    "id": 100626,
+    "name": "호소야 요시마사",
+    "cvimg": "image/cvimg/호소야_요시마사.webp",
+    "gender": "male",
+    "characterIds": [
+      722,
+      16058,
+      89200,
+      141875,
+      393998
+    ]
+  },
+  {
+    "id": 101631,
+    "name": "호소이 오사무",
+    "cvimg": "image/cvimg/호소이_오사무.webp",
+    "gender": "male",
+    "characterIds": [
+      37069
+    ]
+  },
+  {
+    "id": 95030,
+    "name": "호시 소이치로",
+    "cvimg": "image/cvimg/호시_소이치로.webp",
+    "gender": "male",
+    "characterIds": [
+      11474
+    ]
+  },
+  {
+    "id": 217241,
+    "name": "호시 유우키",
+    "cvimg": "image/cvimg/호시_유우키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      360822
+    ]
+  },
+  {
+    "id": 95945,
+    "name": "호시노 미츠아키",
+    "cvimg": "image/cvimg/호시노_미츠아키.webp",
+    "gender": "male",
+    "characterIds": [
+      160351
+    ]
+  },
+  {
+    "id": 96052,
+    "name": "호시노 타카노리",
+    "cvimg": "image/cvimg/호시노_타카노리.webp",
+    "gender": "male",
+    "characterIds": [
+      42968,
+      197162,
+      391360
+    ]
+  },
+  {
+    "id": 189748,
+    "name": "호시노야 시즈쿠",
+    "cvimg": "image/cvimg/호시노야_시즈쿠.webp",
+    "gender": "unknown",
+    "characterIds": [
+      309992
+    ]
+  },
+  {
+    "id": 172100,
+    "name": "호시키 세에나",
+    "cvimg": "image/cvimg/호시키_세에나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      281764,
+      386068,
+      394829
+    ]
+  },
+  {
+    "id": 100317,
+    "name": "호우키 카츠히사",
+    "cvimg": "image/cvimg/호우키_카츠히사.webp",
+    "gender": "male",
+    "characterIds": [
+      394045,
+      402162
+    ]
+  },
+  {
+    "id": 95769,
+    "name": "혼나 요코",
+    "cvimg": "image/cvimg/혼나_요코.webp",
+    "gender": "female",
+    "characterIds": [
+      396066
+    ]
+  },
+  {
+    "id": 103805,
+    "name": "혼다 마리코",
+    "cvimg": "image/cvimg/혼다_마리코.webp",
+    "gender": "female",
+    "characterIds": [
+      348019,
+      389322,
+      395256,
+      395544
+    ]
+  },
+  {
+    "id": 95041,
+    "name": "혼다 타카코",
+    "cvimg": "image/cvimg/혼다_타카코.webp",
+    "gender": "female",
+    "characterIds": [
+      287182,
+      375633
+    ]
+  },
+  {
+    "id": 119416,
+    "name": "혼도 카에데",
+    "cvimg": "image/cvimg/혼도_카에데.webp",
+    "gender": "female",
+    "characterIds": [
+      127540,
+      134576,
+      148546,
+      157299,
+      162724,
+      173759,
+      201565,
+      224520,
+      307378,
+      393293,
+      395108,
+      396505,
+      398644,
+      403320
+    ]
+  },
+  {
+    "id": 125577,
+    "name": "혼이즈미 리나",
+    "cvimg": "image/cvimg/혼이즈미_리나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      389132,
+      391431,
+      400908,
+      406836
+    ]
+  },
+  {
+    "id": 162029,
+    "name": "후나토 유리에",
+    "cvimg": "image/cvimg/후나토_유리에.webp",
+    "gender": "unknown",
+    "characterIds": [
+      389135,
+      392689
+    ]
+  },
+  {
+    "id": 95482,
+    "name": "후루시마 키요타카",
+    "cvimg": "image/cvimg/후루시마_키요타카.webp",
+    "gender": "male",
+    "characterIds": [
+      241582
+    ]
+  },
+  {
+    "id": 291030,
+    "name": "후루야 아난",
+    "cvimg": "image/cvimg/후루야_아난.webp",
+    "gender": "unknown",
+    "characterIds": [
+      16713,
+      396059
+    ]
+  },
+  {
+    "id": 112635,
+    "name": "후루카와 마코토",
+    "cvimg": "image/cvimg/후루카와_마코토.webp",
+    "gender": "male",
+    "characterIds": [
+      124146,
+      128038,
+      151774,
+      180505,
+      284632,
+      297201,
+      299923,
+      321266,
+      337476,
+      363686,
+      381821,
+      387188,
+      395248,
+      399803
+    ]
+  },
+  {
+    "id": 119906,
+    "name": "후리하타 아이",
+    "cvimg": "image/cvimg/후리하타_아이.webp",
+    "gender": "female",
+    "characterIds": [
+      381964,
+      387175
+    ]
+  },
+  {
+    "id": 406983,
+    "name": "후부키 케이",
+    "cvimg": "image/cvimg/후부키_케이.webp",
+    "gender": "unknown",
+    "characterIds": [
+      382227
+    ]
+  },
+  {
+    "id": 404436,
+    "name": "후지 미야코",
+    "cvimg": "image/cvimg/후지_미야코.webp",
+    "gender": "unknown",
+    "characterIds": [
+      374187
+    ]
+  },
+  {
+    "id": 105987,
+    "name": "후지 신슈",
+    "cvimg": "image/cvimg/후지_신슈.webp",
+    "gender": "male",
+    "characterIds": [
+      375329,
+      395187,
+      406980
+    ]
+  },
+  {
+    "id": 211773,
+    "name": "후지노 아야미",
+    "cvimg": "image/cvimg/후지노_아야미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      270713
+    ]
+  },
+  {
+    "id": 206623,
+    "name": "후지데라 미노리",
+    "cvimg": "image/cvimg/후지데라_미노리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      378042,
+      390619,
+      392174,
+      396049,
+      397659,
+      402036
+    ]
+  },
+  {
+    "id": 294643,
+    "name": "후지무라 카논",
+    "cvimg": "image/cvimg/후지무라_카논.webp",
+    "gender": "unknown",
+    "characterIds": [
+      339248
+    ]
+  },
+  {
+    "id": 119740,
+    "name": "후지와라 나츠미",
+    "cvimg": "image/cvimg/후지와라_나츠미.webp",
+    "gender": "female",
+    "characterIds": [
+      334314,
+      347710,
+      382163,
+      399913,
+      408139
+    ]
+  },
+  {
+    "id": 209569,
+    "name": "후지와라 세이유",
+    "cvimg": "image/cvimg/후지와라_세이유.webp",
+    "gender": "unknown",
+    "characterIds": [
+      148986,
+      388252,
+      402185
+    ]
+  },
+  {
+    "id": 116655,
+    "name": "후지요시 코지",
+    "cvimg": "image/cvimg/후지요시_코지.webp",
+    "gender": "male",
+    "characterIds": [
+      392981
+    ]
+  },
+  {
+    "id": 106162,
+    "name": "후지이 유키요",
+    "cvimg": "image/cvimg/후지이_유키요.webp",
+    "gender": "female",
+    "characterIds": [
+      157961,
+      294907,
+      389316
+    ]
+  },
+  {
+    "id": 134431,
+    "name": "후지이 하야토",
+    "cvimg": "image/cvimg/후지이_하야토.webp",
+    "gender": "unknown",
+    "characterIds": [
+      338229,
+      399878
+    ]
+  },
+  {
+    "id": 116155,
+    "name": "후지타 아카네",
+    "cvimg": "image/cvimg/후지타_아카네.webp",
+    "gender": "female",
+    "characterIds": [
+      381923,
+      388250
+    ]
+  },
+  {
+    "id": 104593,
+    "name": "후치가미 마이",
+    "cvimg": "image/cvimg/후치가미_마이.webp",
+    "gender": "female",
+    "characterIds": [
+      371755
+    ]
+  },
+  {
+    "id": 118705,
+    "name": "후카가와 세리아",
+    "cvimg": "image/cvimg/후카가와_세리아.webp",
+    "gender": "unknown",
+    "characterIds": [
+      381920
+    ]
+  },
+  {
+    "id": 120290,
+    "name": "후카마치 토시나리",
+    "cvimg": "image/cvimg/후카마치_토시나리.webp",
+    "gender": "unknown",
+    "characterIds": [
+      391761,
+      393589
+    ]
+  },
+  {
+    "id": 95436,
+    "name": "후카미 리카",
+    "cvimg": "image/cvimg/후카미_리카.webp",
+    "gender": "female",
+    "characterIds": [
+      392287
+    ]
+  },
+  {
+    "id": 119857,
+    "name": "후쿠 사나에",
+    "cvimg": "image/cvimg/후쿠_사나에.webp",
+    "gender": "female",
+    "characterIds": [
+      128174
+    ]
+  },
+  {
+    "id": 175016,
+    "name": "후쿠니시 마사야",
+    "cvimg": "image/cvimg/후쿠니시_마사야.webp",
+    "gender": "unknown",
+    "characterIds": [
+      342291,
+      374530,
+      392838,
+      399797,
+      406227
+    ]
+  },
+  {
+    "id": 107708,
+    "name": "후쿠다 켄지",
+    "cvimg": "image/cvimg/후쿠다_켄지.webp",
+    "gender": "male",
+    "characterIds": [
+      407852
+    ]
+  },
+  {
+    "id": 101603,
+    "name": "후쿠마츠 신야",
+    "cvimg": "image/cvimg/후쿠마츠_신야.webp",
+    "gender": "male",
+    "characterIds": [
+      406895
+    ]
+  },
+  {
+    "id": 95086,
+    "name": "후쿠야마 쥰",
+    "cvimg": "image/cvimg/후쿠야마_쥰.webp",
+    "gender": "male",
+    "characterIds": [
+      4919,
+      21323,
+      131047,
+      134500,
+      139314,
+      188076,
+      224521,
+      264106,
+      337475,
+      380600,
+      381145,
+      382259,
+      387720,
+      391997,
+      392195,
+      393082,
+      393718,
+      393948,
+      394146,
+      406953
+    ]
+  },
+  {
+    "id": 95207,
+    "name": "후쿠엔 미사토",
+    "cvimg": "image/cvimg/후쿠엔_미사토.webp",
+    "gender": "female",
+    "characterIds": [
+      311459,
+      311462,
+      380367,
+      380439,
+      404056,
+      404895
+    ]
+  },
+  {
+    "id": 159548,
+    "name": "후쿠즈미 사야",
+    "cvimg": "image/cvimg/후쿠즈미_사야.webp",
+    "gender": "unknown",
+    "characterIds": [
+      375634
+    ]
+  },
+  {
+    "id": 117223,
+    "name": "후쿠하라 아야카",
+    "cvimg": "image/cvimg/후쿠하라_아야카.webp",
+    "gender": "female",
+    "characterIds": [
+      146844,
+      195584,
+      197154,
+      400905
+    ]
+  },
+  {
+    "id": 122731,
+    "name": "후쿠하라 카츠미",
+    "cvimg": "image/cvimg/후쿠하라_카츠미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      201576,
+      405341
+    ]
+  },
+  {
+    "id": 108507,
+    "name": "히가시우치 마리코",
+    "cvimg": "image/cvimg/히가시우치_마리코.webp",
+    "gender": "female",
+    "characterIds": [
+      283284,
+      354545,
+      389119,
+      390606
+    ]
+  },
+  {
+    "id": 387185,
+    "name": "히나 마도카",
+    "cvimg": "image/cvimg/히나_마도카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      389317
+    ]
+  },
+  {
+    "id": 217222,
+    "name": "히나타 미나미",
+    "cvimg": "image/cvimg/히나타_미나미.webp",
+    "gender": "unknown",
+    "characterIds": [
+      354547
+    ]
+  },
+  {
+    "id": 259891,
+    "name": "히나타 유카",
+    "cvimg": "image/cvimg/히나타_유카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      405415
+    ]
+  },
+  {
+    "id": 119707,
+    "name": "히노 마리",
+    "cvimg": "image/cvimg/히노_마리.webp",
+    "gender": "female",
+    "characterIds": [
+      170330,
+      300904,
+      327466,
+      401614
+    ]
+  },
+  {
+    "id": 95245,
+    "name": "히노 사토시",
+    "cvimg": "image/cvimg/히노_사토시.webp",
+    "gender": "male",
+    "characterIds": [
+      34242,
+      130788,
+      207026,
+      319957,
+      392080,
+      393892
+    ]
+  },
+  {
+    "id": 95181,
+    "name": "히다카 노리코",
+    "cvimg": "image/cvimg/히다카_노리코.webp",
+    "gender": "female",
+    "characterIds": [
+      12500,
+      36309,
+      196502,
+      394965,
+      404055
+    ]
+  },
+  {
+    "id": 100250,
+    "name": "히다카 리나",
+    "cvimg": "image/cvimg/히다카_리나.webp",
+    "gender": "female",
+    "characterIds": [
+      124691,
+      128036,
+      151038,
+      170338,
+      198884,
+      378043,
+      385185,
+      392194
+    ]
+  },
+  {
+    "id": 124959,
+    "name": "히라노 준야",
+    "cvimg": "image/cvimg/히라노_준야.webp",
+    "gender": "unknown",
+    "characterIds": [
+      20725
+    ]
+  },
+  {
+    "id": 332956,
+    "name": "히라바야시 코나츠",
+    "cvimg": "image/cvimg/히라바야시_코나츠.webp",
+    "gender": "unknown",
+    "characterIds": [
+      373190
+    ]
+  },
+  {
+    "id": 327894,
+    "name": "히라야마 유리카",
+    "cvimg": "image/cvimg/히라야마_유리카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      375635
+    ]
+  },
+  {
+    "id": 104945,
+    "name": "히라이 케이지",
+    "cvimg": "image/cvimg/히라이_케이지.webp",
+    "gender": "male",
+    "characterIds": [
+      360821
+    ]
+  },
+  {
+    "id": 294238,
+    "name": "히라츠카 사에",
+    "cvimg": "image/cvimg/히라츠카_사에.webp",
+    "gender": "unknown",
+    "characterIds": [
+      282748,
+      360414,
+      393922
+    ]
+  },
+  {
+    "id": 95183,
+    "name": "히라카와 다이스케",
+    "cvimg": "image/cvimg/히라카와_다이스케.webp",
+    "gender": "male",
+    "characterIds": [
+      242828,
+      338224,
+      381601,
+      398521,
+      398526
+    ]
+  },
+  {
+    "id": 95850,
+    "name": "히라타 히로미",
+    "cvimg": "image/cvimg/히라타_히로미.webp",
+    "gender": "female",
+    "characterIds": [
+      399548
+    ]
+  },
+  {
+    "id": 95125,
+    "name": "히라타 히로아키",
+    "cvimg": "image/cvimg/히라타_히로아키.webp",
+    "gender": "male",
+    "characterIds": [
+      283888,
+      291149
+    ]
+  },
+  {
+    "id": 183242,
+    "name": "히로마츠 세리카",
+    "cvimg": "image/cvimg/히로마츠_세리카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      393825,
+      395447,
+      402025
+    ]
+  },
+  {
+    "id": 120129,
+    "name": "히로세 유우야",
+    "cvimg": "image/cvimg/히로세_유우야.webp",
+    "gender": "male",
+    "characterIds": [
+      170329,
+      382108,
+      382984
+    ]
+  },
+  {
+    "id": 121025,
+    "name": "히로세 유우키",
+    "cvimg": "image/cvimg/히로세_유우키.webp",
+    "gender": "unknown",
+    "characterIds": [
+      198041,
+      353733
+    ]
+  },
+  {
+    "id": 105984,
+    "name": "히로타 미노루",
+    "cvimg": "image/cvimg/히로타_미노루.webp",
+    "gender": "male",
+    "characterIds": [
+      404710
+    ]
+  },
+  {
+    "id": 102321,
+    "name": "히로타 코세이",
+    "cvimg": "image/cvimg/히로타_코세이.webp",
+    "gender": "male",
+    "characterIds": [
+      376033
+    ]
+  },
+  {
+    "id": 276952,
+    "name": "히로하라 후우",
+    "cvimg": "image/cvimg/히로하라_후우.webp",
+    "gender": "unknown",
+    "characterIds": [
+      377811
+    ]
+  },
+  {
+    "id": 95111,
+    "name": "히로하시 료",
+    "cvimg": "image/cvimg/히로하시_료.webp",
+    "gender": "female",
+    "characterIds": [
+      401613
+    ]
+  },
+  {
+    "id": 95080,
+    "name": "히사카와 아야",
+    "cvimg": "image/cvimg/히사카와_아야.webp",
+    "gender": "female",
+    "characterIds": [
+      259553,
+      382115
+    ]
+  },
+  {
+    "id": 260902,
+    "name": "히시카와 하나",
+    "cvimg": "image/cvimg/히시카와_하나.webp",
+    "gender": "unknown",
+    "characterIds": [
+      198043,
+      341907,
+      358729,
+      368281,
+      369052,
+      394843
+    ]
+  },
+  {
+    "id": 95257,
+    "name": "히야마 노부유키",
+    "cvimg": "image/cvimg/히야마_노부유키.webp",
+    "gender": "male",
+    "characterIds": [
+      265076,
+      305624,
+      401657,
+      406160
+    ]
+  },
+  {
+    "id": 163903,
+    "name": "히에다 네네",
+    "cvimg": "image/cvimg/히에다_네네.webp",
+    "gender": "unknown",
+    "characterIds": [
+      170337,
+      194351,
+      345227,
+      391553,
+      394832,
+      398637
+    ]
+  },
+  {
+    "id": 112777,
+    "name": "히오카 나츠미",
+    "cvimg": "image/cvimg/히오카_나츠미.webp",
+    "gender": "female",
+    "characterIds": [
+      294910
+    ]
+  },
+  {
+    "id": 166187,
+    "name": "히이라기 유카",
+    "cvimg": "image/cvimg/히이라기_유카.webp",
+    "gender": "unknown",
+    "characterIds": [
+      376020,
+      376037
+    ]
+  },
+  {
+    "id": 102263,
+    "name": "히카사 요코",
+    "cvimg": "image/cvimg/히카사_요코.webp",
+    "gender": "female",
+    "characterIds": [
+      12529,
+      145096,
+      202488,
+      262709,
+      270564,
+      286391,
+      315453,
+      339421,
+      375407,
+      377662,
+      381982,
+      390632,
+      394644,
+      394834,
+      394920,
+      397666,
+      399792,
+      403059,
+      406176
+    ]
+  },
+  {
+    "id": 330963,
+    "name": "히토미 사야",
+    "cvimg": "image/cvimg/히토미_사야.webp",
+    "gender": "unknown",
+    "characterIds": [
+      13472,
+      339250,
+      390607,
+      402022,
+      404654
+    ]
+  },
+  {
+    "id": 119187,
+    "name": "Aya Saitou",
+    "cvimg": "image/cvimg/Aya_Saitou.webp",
+    "gender": "female",
+    "characterIds": [
+      88865
+    ]
+  },
+  {
+    "id": 105094,
+    "name": "Jun Fukushima",
+    "cvimg": "image/cvimg/Jun_Fukushima.webp",
+    "gender": "male",
+    "characterIds": [
+      282320,
+      324196,
+      328190,
+      370733,
+      388362,
+      406509
+    ]
+  },
+  {
+    "id": 95857,
+    "name": "KENN",
+    "cvimg": "image/cvimg/KENN.webp",
+    "gender": "male",
+    "characterIds": [
+      405522
+    ]
+  },
+  {
+    "id": 118806,
+    "name": "Lynn",
+    "cvimg": "image/cvimg/Lynn.webp",
+    "gender": "female",
+    "characterIds": [
+      76520,
+      130783,
+      131037,
+      163519,
+      179854,
+      197921,
+      223870,
+      293204,
+      331143,
+      338228,
+      391481,
+      395192
+    ]
+  },
+  {
+    "id": 118510,
+    "name": "M·A·O",
+    "cvimg": "image/cvimg/M·A·O.webp",
+    "gender": "female",
+    "characterIds": [
+      17906,
+      44973,
+      123215,
+      128033,
+      130716,
+      157233,
+      192562,
+      357292,
+      373270,
+      376029,
+      388600,
+      397415,
+      398532,
+      398631,
+      400991,
+      406200
+    ]
+  },
+  {
+    "id": 119606,
+    "name": "Machico",
+    "cvimg": "image/cvimg/Machico.webp",
+    "gender": "female",
+    "characterIds": [
+      270711,
+      294909,
+      371625
+    ]
+  }
 ];
