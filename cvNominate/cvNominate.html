@@ -1,90 +1,80 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026 ANIME AWARDS - Nominate정</title>
-    <link rel="stylesheet" href="cvNominate.css">
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026 ANIME AWARDS - Nominate</title>
+  <link rel="stylesheet" href="cvNominate.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
-    <nav class="top-nav">
-        <div class="nav-content-area">
-            <div class="brand">2026 ANIME AWARDS</div>
-            <div id="step-title"></div>
-        </div>
-        <div class="nav-sidebar-area">
-            <div class="search-container">
-                <input type="text" id="search-input" placeholder="성우 이름 검색" autocomplete="off">
-                <div id="autocomplete-list" class="autocomplete-items"></div>
-            </div>
-        </div>
-    </nav>
-
-    <div class="content-wrapper">
-        <div class="container">
-            <div id="main-content" class="content-area">
-                </div>
-
-            <aside class="sidebar">
-                <div class="status-indicator preview-box" id="step1-preview">
-                    <div id="preview-list" class="preview-list"></div>
-                </div>
-
-                <div class="action-buttons">
-                    <button id="btn-back" class="btn-outline">메인으로</button>
-                    <button id="btn-next" class="gold-btn" disabled>다음 단계</button>
-                </div>
-            </aside>
-        </div>
+  <nav class="top-nav">
+    <div class="nav-content-area">
+      <div class="brand">2026 ANIME AWARDS</div>
+      <div id="step-title"></div>
     </div>
-
-    <div id="cv-detail-modal" class="modal hidden">
-        <div class="modal-content">
-            <button class="modal-close-btn" onclick="closeModal('cv-detail-modal')">&times;</button>
-            <h2 class="modal-header">성우 상세 정보</h2>
-            <hr class="modal-divider">
-            <div class="winner-layout">
-                <div class="winner-left">
-                    <img id="detail-img" src="" alt="성우 이미지">
-                </div>
-                <div class="winner-right">
-                    <h2 id="detail-name" style="color:white; margin-top:0;"></h2>
-                    <div id="detail-works"div>
-                </div>
-            </div>
-        </div>
+    <div class="nav-sidebar-area">
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="성우 이름 검색" autocomplete="off">
+        <div id="autocomplete-list" class="autocomplete-items"></div>
+      </div>
     </div>
+  </nav>
 
-    <div id="winner-modal" class="modal hidden">
-        <div class="modal-content">
-            <h2 class="modal-header">FINAL WINNER</h2>
-            <hr class="modal-divider">
-            <div class="winner-layout">
-                <div class="winner-left">
-                    <img id="winner-img" src="" alt="수상자">
-                </div>
-                <div class="winner-right">
-                    <div id="winner-info-content"></div>
-                    <button id="final-confirm-btn" class="gold-btn" style="width:100%; margin-top:30px;">확인 및 종료</button>
-                </div>
-            </div>
-            
+  <div class="content-wrapper">
+    <div class="container">
+      <div id="main-content" class="content-area"></div>
+      <aside class="sidebar">
+        <div class="status-indicator preview-box" id="step1-preview">
+          <div id="preview-list" class="preview-list"></div>
         </div>
+        <div class="action-buttons">
+          <button id="btn-back" class="btn-outline">메인으로</button>
+          <button id="btn-next" class="gold-btn" disabled>다음 단계</button>
+        </div>
+      </aside>
     </div>
+  </div>
 
-    <canvas id="confettiCanvas"></canvas>
+  <div id="cv-detail-modal" class="modal hidden">
+    <div class="modal-content">
+      <button class="modal-close-btn" onclick="closeModal('cv-detail-modal')">&times;</button>
+      <h2 class="modal-header">성우 상세 정보</h2>
+      <hr class="modal-divider">
+      <div class="winner-layout">
+        <div class="winner-left"><img id="detail-img" src="" alt="성우 이미지"></div>
+        <div class="winner-right">
+          <h2 id="detail-name" style="color:white;margin-top:0;"></h2>
+          <div id="detail-works"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-    
-    <script src="../data/manifest.js"></script>
-    <script src="../resultStorage.js"></script>
-    <script src="../data/2026/2026animeData.js"></script>
-    <script src="../data/2026/2026animeCharacterData.js"></script>
-    <script src="../data/2026/2026animeCVData.js"></script>
-    <script src="../data/resolveYear.js"></script>
-    <script src="../seasonFilter.js"></script>
-    <script src="cvNominate.js"></script>
-    <script type="module" src="../firebase_service.js"></script>
+  <div id="winner-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2 class="modal-header">FINAL WINNER</h2>
+      <hr class="modal-divider">
+      <div class="winner-layout">
+        <div class="winner-left"><img id="winner-img" src="" alt="수상자"></div>
+        <div class="winner-right">
+          <div id="winner-info-content"></div>
+          <button id="final-confirm-btn" class="gold-btn" style="width:100%;margin-top:30px;">확인 및 종료</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="data-diagnostic" hidden></div>
+
+  <script src="../data/manifest.js"></script>
+  <script src="../resultStorage.js"></script>
+  <script src="../data/2026/2026animeData.js"></script>
+  <script src="../data/2026/2026animeCharacterData.js"></script>
+  <script src="../data/2026/2026animeCVData.js"></script>
+  <script src="../data/resolveYear.js"></script>
+  <script src="../seasonFilter.js"></script>
+  <script src="cvNominate.js"></script>
+  <script type="module" src="../firebase_service.js"></script>
 </body>
 </html>
