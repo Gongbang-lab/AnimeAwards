@@ -10854,7 +10854,7 @@ var CharacterData_2026 = [
       "name": "미야시타 아이",
       "gender": "female",
       "cvId": 121712,
-      "cv": "라카미 나츠미",
+      "cv": "무라카미 나츠미",
       "img": "image/charimg/2025/Q1/Love_Live!_Nijigasaki_Gakuen_School_Idol_Doukoukai_Kanketsu-hen_2/Ai_Miyashita.jpg"
     },
     {

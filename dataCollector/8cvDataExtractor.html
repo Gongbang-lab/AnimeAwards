@@ -21,6 +21,16 @@
         #preview-header { font-size:14px; color:#aaa; margin-bottom:8px; display:flex; justify-content:space-between; align-items:center; gap:10px; }
         #json-preview { background:#000; color:#00ff41; padding:20px; border-radius:10px; font-family:'Consolas','Monaco',monospace; font-size:13px; max-height:500px; overflow:auto; white-space:pre-wrap; word-break:break-word; border:1px solid #333; line-height:1.5; }
         .note { margin-top:16px; color:#888; font-size:13px; text-align:left; line-height:1.6; }
+        #unknown-gender-container { margin-top:28px; display:none; text-align:left; }
+        #unknown-gender-header { font-size:14px; color:#aaa; margin-bottom:8px; display:flex; justify-content:space-between; align-items:center; }
+        #unknown-gender-header b { color:gold; }
+        #unknown-gender-list { max-height:420px; overflow:auto; border:1px solid #333; border-radius:10px; background:#171717; }
+        .unknown-row { display:flex; justify-content:space-between; align-items:center; gap:12px; padding:10px 16px; border-bottom:1px solid #2a2a2a; }
+        .unknown-row:last-child { border-bottom:none; }
+        .unknown-row .row-name { color:#eee; font-size:14px; }
+        .unknown-row .row-id { color:#666; font-size:11px; margin-left:6px; }
+        .unknown-row select { background:#000; color:#0ff; border:1px solid #444; border-radius:6px; padding:6px 10px; font-size:13px; cursor:pointer; }
+        .unknown-row select.is-set { color:#00ff41; border-color:#00ff41; }
     </style>
 </head>
 <body>
@@ -48,6 +58,13 @@
         <pre id="json-preview"></pre>
     </div>
 
+    <div id="unknown-gender-container">
+        <div id="unknown-gender-header">
+            <span>gender 미확인 성우 수동 지정 (<b id="unknown-gender-count">0</b>명)</span>
+        </div>
+        <div id="unknown-gender-list"></div>
+    </div>
+
     <p class="note">
         ※ CV 이름은 AniList의 영어 이름이 아니라 CharacterData의 <code>cv</code> 값을 사용합니다.<br>
         ※ 같은 <code>cvId</code>에 서로 다른 <code>cv</code> 이름이 발견되면 첫 번째 유효한 한글 이름을 사용하고 경고합니다.<br>
@@ -60,6 +77,8 @@
 <script>
 const API_URL = 'https://graphql.anilist.co';
 let generatedCode = '';
+let currentOutput = [];
+let currentStats = null;
 
 function normalizeName(value) {
     return String(value ?? '').trim();
@@ -111,8 +130,91 @@ function updateStats(stats) {
         <div>cv 이름 충돌: <b>${stats.cvNameConflictCount.toLocaleString()}</b></div>
         <div>AniList Staff 조회 성공: <b>${stats.staffLookupSuccess.toLocaleString()}</b></div>
         <div>AniList Staff 조회 실패: <b>${stats.staffLookupFailed.toLocaleString()}</b></div>
-        <div>gender 미확인: <b>${stats.unknownGenderCount.toLocaleString()}</b></div>
+        <div>gender 미확인: <b id="stat-unknown-gender">${stats.unknownGenderCount.toLocaleString()}</b></div>
     `;
+}
+
+function regenerateOutput() {
+    generatedCode = 'var CharacterVoiceData_2026 = ' + JSON.stringify(currentOutput, null, 2) + ';';
+
+    const previewArea = document.getElementById('json-preview');
+    const charCount = document.getElementById('char-count');
+    if (previewArea) previewArea.textContent = generatedCode;
+    if (charCount) charCount.textContent = `Total length: ${generatedCode.length.toLocaleString()} chars`;
+
+    if (currentStats) {
+        currentStats.unknownGenderCount = currentOutput.filter(cv => cv.gender === 'unknown').length;
+        const statEl = document.getElementById('stat-unknown-gender');
+        if (statEl) statEl.textContent = currentStats.unknownGenderCount.toLocaleString();
+    }
+}
+
+function handleGenderSelectChange(cvId, selectEl) {
+    const value = selectEl.value;
+    const entry = currentOutput.find(cv => cv.id === cvId);
+    if (!entry) return;
+
+    entry.gender = value;
+    selectEl.classList.toggle('is-set', value !== 'unknown');
+
+    regenerateOutput();
+
+    const countEl = document.getElementById('unknown-gender-count');
+    if (value !== 'unknown') {
+        const row = document.getElementById(`unknown-row-${cvId}`);
+        if (row) row.remove();
+
+        const remaining = document.querySelectorAll('#unknown-gender-list .unknown-row').length;
+        if (countEl) countEl.textContent = remaining.toLocaleString();
+        if (remaining === 0) {
+            document.getElementById('unknown-gender-container').style.display = 'none';
+        }
+    }
+}
+
+function renderUnknownGenderList() {
+    const container = document.getElementById('unknown-gender-container');
+    const listEl = document.getElementById('unknown-gender-list');
+    const countEl = document.getElementById('unknown-gender-count');
+
+    listEl.innerHTML = '';
+    const unresolved = currentOutput.filter(cv => cv.gender === 'unknown');
+
+    if (unresolved.length === 0) {
+        container.style.display = 'none';
+        countEl.textContent = '0';
+        return;
+    }
+
+    unresolved.forEach(cv => {
+        const row = document.createElement('div');
+        row.className = 'unknown-row';
+        row.id = `unknown-row-${cv.id}`;
+
+        const label = document.createElement('span');
+        label.className = 'row-name';
+        label.textContent = cv.name;
+        const idTag = document.createElement('span');
+        idTag.className = 'row-id';
+        idTag.textContent = `(id: ${cv.id})`;
+        label.appendChild(idTag);
+
+        const select = document.createElement('select');
+        select.innerHTML = `
+            <option value="unknown">미확정</option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+        `;
+        select.value = cv.gender;
+        select.addEventListener('change', () => handleGenderSelectChange(cv.id, select));
+
+        row.appendChild(label);
+        row.appendChild(select);
+        listEl.appendChild(row);
+    });
+
+    countEl.textContent = unresolved.length.toLocaleString();
+    container.style.display = 'block';
 }
 
 async function fetchStaffGenderMap(cvIds, statusDiv, stats) {
@@ -206,6 +308,8 @@ async function extractCVData() {
     extractBtn.disabled = true;
     previewContainer.style.display = 'none';
     copyBtn.style.display = 'none';
+    document.getElementById('unknown-gender-container').style.display = 'none';
+    document.getElementById('unknown-gender-list').innerHTML = '';
 
     try {
         const animeEntries = getCharacterRecords();
@@ -282,6 +386,8 @@ async function extractCVData() {
             });
 
         stats.cvCount = output.length;
+        currentOutput = output;
+        currentStats = stats;
         generatedCode = 'var CharacterVoiceData_2026 = ' + JSON.stringify(output, null, 2) + ';';
 
         previewArea.textContent = generatedCode;
@@ -289,6 +395,7 @@ async function extractCVData() {
         copyBtn.style.display = 'inline-block';
         charCount.textContent = `Total length: ${generatedCode.length.toLocaleString()} chars`;
         updateStats(stats);
+        renderUnknownGenderList();
 
         statusDiv.className = '';
         statusDiv.innerText =
