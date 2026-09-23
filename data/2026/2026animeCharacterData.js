@@ -781,7 +781,7 @@ var CharacterData_2026 = [
       "name": "バニラ・ペシュッツ",
       "gender": "female",
       "cvId": 119518,
-      "cv": "Miyu Tomita",
+      "cv": "토미타 미유",
       "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Vanilla_Peschutz.jpg"
     },
     {
@@ -805,7 +805,7 @@ var CharacterData_2026 = [
       "name": "카나지",
       "gender": "male",
       "cvId": 105094,
-      "cv": "Jun Fukushima",
+      "cv": "후쿠시마 준",
       "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Kanadge.jpg"
     },
     {
@@ -3696,10 +3696,10 @@ var CharacterData_2026 = [
     },
     {
       "characterId": 134168,
-      "name": "이노우에 마리나",
+      "name": "젠인 마이",
       "gender": "female",
       "cvId": 95158,
-      "cv": "Marina Inoue",
+      "cv": "이노우에 마리나",
       "img": "image/charimg/2026/Q1/Jujutsu_Kaisen_Shimetsu_Kaiyuu_-_Zenpen/Mai_Zenin.jpg"
     },
     {
@@ -5763,7 +5763,7 @@ var CharacterData_2026 = [
       "name": "オロチ",
       "gender": "unknown",
       "cvId": 95093,
-      "cv": "Shizuka Itou",
+      "cv": "이토 시즈카",
       "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Orochi_.jpg"
     },
     {
@@ -5771,7 +5771,7 @@ var CharacterData_2026 = [
       "name": "レオナルド・バーンズ",
       "gender": "male",
       "cvId": 95893,
-      "cv": "Taiten Kusunoki",
+      "cv": "쿠스노키 타이텐",
       "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Leonard_Burns.jpg"
     },
     {
@@ -5779,7 +5779,7 @@ var CharacterData_2026 = [
       "name": "死神様",
       "gender": "male",
       "cvId": 95113,
-      "cv": "Rikiya Koyama",
+      "cv": "코야마 리키야",
       "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Shinigami.jpg"
     },
     {
@@ -5787,7 +5787,7 @@ var CharacterData_2026 = [
       "name": "火代子黄",
       "gender": "female",
       "cvId": 95092,
-      "cv": "Sayaka Oohara",
+      "cv": "오오하라 사야카",
       "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Kayoko_Huang.jpg"
     },
     {
@@ -5795,7 +5795,7 @@ var CharacterData_2026 = [
       "name": "烈火星宮",
       "gender": "male",
       "cvId": 95001,
-      "cv": "Tomokazu Seki",
+      "cv": "세키 토모카즈",
       "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Rekka_Hoshimiya.jpg"
     },
     {
@@ -5803,7 +5803,7 @@ var CharacterData_2026 = [
       "name": "亜門弾木",
       "gender": "unknown",
       "cvId": 95097,
-      "cv": "Kousuke Toriumi",
+      "cv": "토리우미 코스케",
       "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Amon_Hajiki.jpg"
     },
     {
@@ -5811,7 +5811,7 @@ var CharacterData_2026 = [
       "name": "アサコ・アーグ",
       "gender": "unknown",
       "cvId": 103555,
-      "cv": "Hisako Kanemoto",
+      "cv": "카네모토 히사코",
       "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Asako_Hague.jpg"
     },
     {
@@ -5819,7 +5819,7 @@ var CharacterData_2026 = [
       "name": "エクスカリバー",
       "gender": "unknown",
       "cvId": 95160,
-      "cv": "Takehito Koyasu",
+      "cv": "코야스 타케히토",
       "img": "image/charimg/2026/Q1/Enen_no_Shouboutai_San_no_Shou_Part_2/Excalibur.jpg"
     }
   ]
@@ -6854,14 +6854,6 @@ var CharacterData_2026 = [
       "cvId": 119200,
       "cv": "이시야 하루키",
       "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Id.jpg"
-    },
-    {
-      "characterId": 36309,
-      "name": "ナレーター",
-      "gender": "unknown",
-      "cvId": 95807,
-      "cv": "아이자와 마사키",
-      "img": "image/charimg/2026/Q1/Yuusha_no_Kuzu/Narrator.jpg"
     },
     {
       "characterId": 391756,
@@ -8944,7 +8936,7 @@ var CharacterData_2026 = [
       "name": "마츠모토 슈이치",
       "gender": "unknown",
       "cvId": 100928,
-      "cv": "Rintarou Nishi",
+      "cv": "니시 린타로",
       "img": "image/charimg/2026/Q1/MF_Ghost_3rd_Season/Shuichi_Matsumoto.jpg"
     },
     {
@@ -10458,7 +10450,7 @@ var CharacterData_2026 = [
 {
   "id": 60610,
   "title": "Hateshinaki Scarlet",
-  "year": 2025,
+  "year": 2026,
   "characters": [
     {
       "characterId": 363109,
@@ -10671,7 +10663,7 @@ var CharacterData_2026 = [
       "name": "紅林珠璃",
       "gender": "female",
       "cvId": 119187,
-      "cv": "Aya Saitou",
+      "cv": "사이토 아야",
       "img": "image/charimg/2025/Q1/Aikatsu!_x_PriPara_THE_MOVIE_-Deai_no_Kiseki-/Juri_Kurebayashi.jpg"
     },
     {
@@ -17635,7 +17627,7 @@ var CharacterData_2026 = [
       "name": "인고",
       "gender": "male",
       "cvId": 112517,
-      "cv": "Shougo Nakamura",
+      "cv": "나카무라 쇼고",
       "img": "image/charimg/2026/Q2/Honzuki_no_Gekokujou_Ryoushu_no_Youjo/Ingo.jpg"
     },
     {
@@ -19338,14 +19330,6 @@ var CharacterData_2026 = [
       "cvId": 109251,
       "cv": "타이치 요우",
       "img": "image/charimg/2026/Q2/Onegai_AiPri/Fortu.jpg"
-    },
-    {
-      "characterId": 36309,
-      "name": "나레이션",
-      "gender": "unknown",
-      "cvId": 121455,
-      "cv": "하나이 미하루",
-      "img": "image/charimg/2026/Q2/Onegai_AiPri/Narrator.jpg"
     },
     {
       "characterId": 127768,
@@ -22332,14 +22316,6 @@ var CharacterData_2026 = [
       "cvId": 95395,
       "cv": "이나다 테츠",
       "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Chinnen_Kobotoke.jpg"
-    },
-    {
-      "characterId": 36309,
-      "name": "나레이터",
-      "gender": "unknown",
-      "cvId": 95181,
-      "cv": "히다카 노리코",
-      "img": "image/charimg/2026/Q3/Honoo_no_Toukyuujyo_Dodge_Danko/Narrator.jpg"
     },
     {
       "characterId": 402020,
@@ -29582,14 +29558,6 @@ var CharacterData_2026 = [
       "cvId": 119871,
       "cv": "아마사키 코헤이",
       "img": "image/charimg/2026/Q3/Tetsunabe_no_Jan!/Takao_Okonogi.jpg"
-    },
-    {
-      "characterId": 36309,
-      "name": "내레이션",
-      "gender": "unknown",
-      "cvId": 95591,
-      "cv": "츠다 켄지로",
-      "img": "image/charimg/2026/Q3/Tetsunabe_no_Jan!/Narrator.jpg"
     },
     {
       "characterId": 398630,

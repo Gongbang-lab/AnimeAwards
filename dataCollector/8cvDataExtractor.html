@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voice Actor Data Extractor v2.3</title>
+    <title>Voice Actor Data Extractor v2.4</title>
     <style>
         body { background:#111; color:#fff; font-family:'Pretendard',sans-serif; text-align:center; padding:40px 20px; }
         .box { background:#222; width:100%; max-width:900px; margin:0 auto; padding:36px; border-radius:20px; border:1px solid #333; box-sizing:border-box; }
@@ -25,11 +25,11 @@
 </head>
 <body>
 <div class="box">
-    <h1>성우 데이터 추출기 v2.3</h1>
+    <h1>성우 데이터 추출기 v2.4</h1>
     <p class="desc">
         <b>CharacterData_2026</b>의 <b>cvId</b>를 기준으로 CV 데이터를 생성합니다.<br>
         <b>CV 이름은 CharacterData의 한글 cv 필드</b>를 사용하며, AniList Staff에서는 <b>gender만 직접 조회</b>합니다.<br>
-        CVData에는 캐릭터 상세 정보를 복사하지 않고 <b>characterIds</b>만 저장합니다.
+        CVData에는 캐릭터 상세 정보나 <b>characterIds</b>를 저장하지 않습니다.<br>담당 캐릭터는 CharacterData의 <b>cvId</b>로 역조회합니다.
     </p>
 
     <div class="btn-group">
@@ -50,8 +50,9 @@
 
     <p class="note">
         ※ CV 이름은 AniList의 영어 이름이 아니라 CharacterData의 <code>cv</code> 값을 사용합니다.<br>
-        ※ 같은 <code>cvId</code>에 서로 다른 <code>cv</code> 이름이 발견되면 첫 번째 유효한 이름을 사용하고 경고 통계에 표시합니다.<br>
-        ※ 성우 성별은 캐릭터 성별로 추정하지 않으며, AniList <code>Staff.gender</code>를 사용합니다.
+        ※ 같은 <code>cvId</code>에 서로 다른 <code>cv</code> 이름이 발견되면 첫 번째 유효한 한글 이름을 사용하고 경고합니다.<br>
+        ※ 성우 성별은 캐릭터 성별로 추정하지 않으며, AniList <code>Staff.gender</code>를 사용합니다.<br>
+        ※ 출력 데이터에는 <code>characterIds</code>가 없습니다. 담당 캐릭터는 CharacterData의 <code>cvId</code>로 조회합니다.
     </p>
 </div>
 
@@ -76,6 +77,20 @@ function normalizeGender(value) {
     return 'unknown';
 }
 
+function getCharacterRecords() {
+    if (typeof CharacterData_2026 === 'undefined') {
+        throw new Error('CharacterData_2026를 찾을 수 없습니다. 2-2에서 생성한 CharacterData를 먼저 로드하세요.');
+    }
+
+    if (Array.isArray(CharacterData_2026)) return CharacterData_2026;
+
+    if (CharacterData_2026 && typeof CharacterData_2026 === 'object') {
+        return Object.values(CharacterData_2026);
+    }
+
+    throw new Error('CharacterData_2026 형식이 배열/객체가 아닙니다.');
+}
+
 function chunk(array, size) {
     const result = [];
     for (let i = 0; i < array.length; i += size) {
@@ -89,21 +104,17 @@ function updateStats(stats) {
     box.style.display = 'block';
     box.innerHTML = `
         <div>성우 수: <b>${stats.cvCount.toLocaleString()}</b></div>
-        <div>연결된 캐릭터 수: <b>${stats.characterCount.toLocaleString()}</b></div>
-        <div>중복 캐릭터 참조 제거: <b>${stats.duplicateCharacterRefs.toLocaleString()}</b></div>
+        <div>성우 연결 캐릭터 레코드 수: <b>${stats.characterCount.toLocaleString()}</b></div>
+        <div>중복 캐릭터 레코드: <b>${stats.duplicateCharacterRefs.toLocaleString()}</b></div>
         <div>cvId 누락으로 제외: <b>${stats.missingCvId.toLocaleString()}</b></div>
         <div>characterId 누락으로 제외: <b>${stats.missingCharacterId.toLocaleString()}</b></div>
-        <div>한 cvId에 여러 이름 발견: <b>${stats.cvNameConflictCount.toLocaleString()}</b></div>
-        <div>AniList 성우 성별 조회 성공: <b>${stats.staffLookupSuccess.toLocaleString()}</b></div>
-        <div>AniList 성우 성별 조회 실패: <b>${stats.staffLookupFailed.toLocaleString()}</b></div>
-        <div>성우 gender 미확인: <b>${stats.unknownGenderCount.toLocaleString()}</b></div>
+        <div>cv 이름 충돌: <b>${stats.cvNameConflictCount.toLocaleString()}</b></div>
+        <div>AniList Staff 조회 성공: <b>${stats.staffLookupSuccess.toLocaleString()}</b></div>
+        <div>AniList Staff 조회 실패: <b>${stats.staffLookupFailed.toLocaleString()}</b></div>
+        <div>gender 미확인: <b>${stats.unknownGenderCount.toLocaleString()}</b></div>
     `;
 }
 
-/**
- * AniList Staff 정보를 alias를 이용해 여러 명씩 조회합니다.
- * 이름은 조회하지 않고 gender만 조회합니다.
- */
 async function fetchStaffGenderMap(cvIds, statusDiv, stats) {
     const staffGenderMap = new Map();
     const ids = [...new Set(cvIds)].sort((a, b) => a - b);
@@ -197,30 +208,26 @@ async function extractCVData() {
     copyBtn.style.display = 'none';
 
     try {
-        if (typeof CharacterData_2026 === 'undefined') {
-            throw new Error('CharacterData_2026를 찾을 수 없습니다. 2-2 버전의 CharacterData를 먼저 사용하세요.');
-        }
-
-        // 1) CharacterData에서 cvId 기준으로 성우를 그룹화합니다.
-        //    이름은 CharacterData의 한글 cv 필드를 사용합니다.
+        const animeEntries = getCharacterRecords();
         const cvMap = new Map();
         const allCvIds = new Set();
 
-        CharacterData_2026.forEach((animeEntry) => {
-            const characters = Array.isArray(animeEntry.characters) ? animeEntry.characters : [];
+        // CharacterData를 단일 원본으로 사용합니다.
+        // CVData에는 캐릭터 ID를 저장하지 않고 성우 기본 정보만 생성합니다.
+        animeEntries.forEach((animeEntry, entryIndex) => {
+            const characters = Array.isArray(animeEntry?.characters) ? animeEntry.characters : [];
 
-            characters.forEach((character) => {
-                const characterId = Number(character.characterId);
-                const cvId = Number(character.cvId);
-                const cvName = normalizeName(character.cv);
+            characters.forEach((character, characterIndex) => {
+                const characterId = Number(character?.characterId);
+                const cvId = Number(character?.cvId);
+                const cvName = normalizeName(character?.cv);
 
                 if (!Number.isFinite(characterId) || characterId <= 0) {
                     stats.missingCharacterId++;
                     return;
                 }
 
-                // cvId 또는 한글 cv 이름이 없으면 CVData에서 제외합니다.
-                if (!Number.isFinite(cvId) || cvId <= 0 || !cvName || cvName.toLowerCase() === 'unknown' || cvName === '정보 없음') {
+                if (!Number.isFinite(cvId) || cvId <= 0 || !cvName || /^(unknown|정보 없음)$/i.test(cvName)) {
                     stats.missingCvId++;
                     return;
                 }
@@ -231,25 +238,17 @@ async function extractCVData() {
                     cvMap.set(cvId, {
                         id: cvId,
                         name: cvName,
-                        characterIdSet: new Set(),
                         alternateNames: new Set()
                     });
                 }
 
                 const cv = cvMap.get(cvId);
-
-                // 같은 cvId인데 다른 한글 이름이 들어오면 데이터 불일치 가능성이 있으므로 경고만 냅니다.
                 if (cv.name !== cvName) {
                     cv.alternateNames.add(cvName);
                 }
 
-                // 같은 Character ID가 여러 레코드에서 등장해도 한 번만 참조합니다.
-                if (cv.characterIdSet.has(characterId)) {
-                    stats.duplicateCharacterRefs++;
-                    return;
-                }
-
-                cv.characterIdSet.add(characterId);
+                // 이번 스키마에서는 CharacterData가 관계의 원본이므로
+                // characterIds를 CVData에 저장하지 않습니다.
                 stats.characterCount++;
             });
         });
@@ -257,29 +256,28 @@ async function extractCVData() {
         for (const cv of cvMap.values()) {
             if (cv.alternateNames.size > 0) {
                 stats.cvNameConflictCount++;
-                console.warn(`cvId ${cv.id}에 여러 이름이 있습니다:`, [cv.name, ...cv.alternateNames]);
+                console.warn(
+                    `[CVData] cvId ${cv.id}에 여러 한글 이름이 발견되었습니다. ` +
+                    `첫 번째 이름을 사용합니다.`,
+                    [cv.name, ...cv.alternateNames]
+                );
             }
         }
 
-        // 2) 성우의 gender는 Character.gender가 아니라 AniList Staff.gender에서 직접 가져옵니다.
+        statusDiv.innerText = `⏳ 총 ${cvMap.size.toLocaleString()}명의 성우 성별을 조회합니다...`;
         const staffGenderMap = await fetchStaffGenderMap([...allCvIds], statusDiv, stats);
 
-        // 3) 최종 CVData 생성
         const output = Array.from(cvMap.values())
             .sort((a, b) => a.name.localeCompare(b.name, 'ko'))
             .map(cv => {
                 const gender = staffGenderMap.get(cv.id) || 'unknown';
-
-                if (gender === 'unknown') {
-                    stats.unknownGenderCount++;
-                }
+                if (gender === 'unknown') stats.unknownGenderCount++;
 
                 return {
                     id: cv.id,
                     name: cv.name,
                     cvimg: `image/cvimg/${sanitizeFileName(cv.name)}.webp`,
-                    gender,
-                    characterIds: Array.from(cv.characterIdSet).sort((a, b) => a - b)
+                    gender
                 };
             });
 
@@ -296,7 +294,8 @@ async function extractCVData() {
         statusDiv.innerText =
             `✅ 분석 완료! ${output.length.toLocaleString()}명의 성우를 생성했습니다.\n` +
             `✅ CV 이름은 CharacterData의 한글 cv 필드를 사용했습니다.\n` +
-            `✅ 성우 gender는 AniList Staff.gender를 사용했습니다.` +
+            `✅ 성우 gender는 AniList Staff.gender를 사용했습니다.\n` +
+            `✅ CVData에는 characterIds를 저장하지 않습니다.` +
             (stats.cvNameConflictCount > 0
                 ? `\n⚠️ 같은 cvId에 여러 이름이 발견된 성우가 ${stats.cvNameConflictCount}명 있습니다.`
                 : '');
