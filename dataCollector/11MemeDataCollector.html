@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>밈 데이터 빌더 — 2026 ANIME AWARDS</title>
+<style>
+  :root{
+    --bg:#121016;
+    --bg-alt:#0d0c11;
+    --panel:#1b1820;
+    --panel-alt:#221e28;
+    --border:#332d3d;
+    --text:#f2eee6;
+    --text-dim:#a89fb0;
+    --gold:#d4af37;
+    --gold-soft:rgba(212,175,55,.14);
+    --danger:#cf6555;
+    --danger-soft:rgba(207,101,85,.14);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:
+      radial-gradient(ellipse at top, #201c28 0%, var(--bg) 55%);
+    color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Pretendard,"Noto Sans KR",sans-serif;
+    min-height:100vh;
+    line-height:1.5;
+  }
+  header{
+    padding:28px 32px 20px;
+    border-bottom:1px solid var(--border);
+    display:flex;
+    align-items:baseline;
+    gap:14px;
+    flex-wrap:wrap;
+  }
+  header h1{
+    font-size:19px;
+    font-weight:700;
+    margin:0;
+    letter-spacing:.2px;
+  }
+  header .brand{color:var(--gold);}
+  header p{
+    margin:0;
+    color:var(--text-dim);
+    font-size:13px;
+  }
+  main{
+    display:grid;
+    grid-template-columns:380px 1fr;
+    gap:0;
+    align-items:start;
+  }
+  @media (max-width:880px){
+    main{grid-template-columns:1fr;}
+  }
+  section.form-col{
+    padding:24px;
+    border-right:1px solid var(--border);
+    position:sticky;
+    top:0;
+  }
+  @media (max-width:880px){
+    section.form-col{position:static; border-right:none; border-bottom:1px solid var(--border);}
+  }
+  section.queue-col{
+    padding:24px;
+    min-width:0;
+  }
+  .field{margin-bottom:14px;}
+  .field label{
+    display:block;
+    font-size:12.5px;
+    color:var(--text-dim);
+    margin-bottom:6px;
+  }
+  .field input[type=text],
+  .field input[type=number],
+  .field select{
+    width:100%;
+    background:var(--panel);
+    border:1px solid var(--border);
+    color:var(--text);
+    padding:9px 10px;
+    border-radius:6px;
+    font-size:14px;
+    font-family:inherit;
+  }
+  .field input:focus,.field select:focus{
+    outline:none;
+    border-color:var(--gold);
+  }
+  .row2{display:grid; grid-template-columns:1fr 1fr; gap:10px;}
+  .src-slot{
+    background:var(--panel);
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:12px;
+    margin-bottom:10px;
+  }
+  .src-slot-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:8px;
+  }
+  .src-slot-head span{
+    font-size:12px;
+    color:var(--gold);
+    font-weight:600;
+  }
+  .src-slot .remove-slot{
+    background:none;
+    border:none;
+    color:var(--text-dim);
+    cursor:pointer;
+    font-size:12px;
+  }
+  .src-slot .remove-slot:hover{color:var(--danger);}
+  .filepick{
+    display:flex;
+    gap:8px;
+    align-items:center;
+    margin-bottom:8px;
+  }
+  .filepick input[type=file]{
+    flex:1;
+    font-size:12px;
+    color:var(--text-dim);
+  }
+  .thumb{
+    width:34px;height:34px;
+    border-radius:5px;
+    object-fit:cover;
+    background:var(--panel-alt);
+    border:1px solid var(--border);
+    flex-shrink:0;
+  }
+  button.ghost{
+    width:100%;
+    background:var(--panel-alt);
+    border:1px dashed var(--border);
+    color:var(--text-dim);
+    padding:9px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:13px;
+    margin-bottom:16px;
+  }
+  button.ghost:hover{border-color:var(--gold); color:var(--gold);}
+  button.primary{
+    width:100%;
+    background:var(--gold);
+    border:none;
+    color:#1a1508;
+    font-weight:700;
+    padding:12px;
+    border-radius:7px;
+    cursor:pointer;
+    font-size:14.5px;
+    letter-spacing:.2px;
+  }
+  button.primary:hover{filter:brightness(1.08);}
+  button.primary:disabled{background:var(--border); color:var(--text-dim); cursor:not-allowed;}
+
+  .queue-empty{
+    color:var(--text-dim);
+    font-size:13.5px;
+    border:1px dashed var(--border);
+    border-radius:8px;
+    padding:28px;
+    text-align:center;
+  }
+  .queue-item{
+    display:flex;
+    gap:12px;
+    align-items:center;
+    background:var(--panel);
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:10px 12px;
+    margin-bottom:8px;
+  }
+  .queue-item .qthumb{
+    width:44px;height:44px;
+    border-radius:6px;
+    object-fit:cover;
+    background:var(--panel-alt);
+    flex-shrink:0;
+  }
+  .queue-item .qinfo{flex:1; min-width:0;}
+  .queue-item .qid{
+    font-size:11px; color:var(--gold); font-weight:700;
+  }
+  .queue-item .qname{
+    font-size:14px; font-weight:600;
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+  }
+  .queue-item .qmeta{
+    font-size:12px; color:var(--text-dim);
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+  }
+  .queue-item .qactions{display:flex; gap:6px;}
+  .queue-item .qactions button{
+    background:var(--panel-alt);
+    border:1px solid var(--border);
+    color:var(--text-dim);
+    border-radius:5px;
+    padding:6px 9px;
+    font-size:11.5px;
+    cursor:pointer;
+  }
+  .queue-item .qactions button:hover{color:var(--text); border-color:var(--gold);}
+  .queue-item .qactions button.del:hover{color:var(--danger); border-color:var(--danger);}
+
+  .queue-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:12px;
+  }
+  .queue-head h2{font-size:15px; margin:0;}
+  .queue-head .count{
+    font-size:12px; color:var(--text-dim);
+  }
+
+  .output-box{
+    margin-top:26px;
+    border:1px solid var(--border);
+    border-radius:8px;
+    overflow:hidden;
+  }
+  .output-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:var(--panel-alt);
+    padding:10px 14px;
+    border-bottom:1px solid var(--border);
+  }
+  .output-head h3{font-size:13px; margin:0; color:var(--text-dim); font-weight:600;}
+  .output-head .btns{display:flex; gap:8px;}
+  .output-head button{
+    background:var(--panel);
+    border:1px solid var(--border);
+    color:var(--text);
+    padding:6px 11px;
+    border-radius:5px;
+    font-size:12px;
+    cursor:pointer;
+  }
+  .output-head button:hover{border-color:var(--gold); color:var(--gold);}
+  pre{
+    margin:0;
+    padding:14px;
+    background:var(--bg-alt);
+    color:#cfead0;
+    font-size:12.5px;
+    line-height:1.55;
+    overflow-x:auto;
+    max-height:320px;
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  }
+  .hint{
+    font-size:12px;
+    color:var(--text-dim);
+    padding:10px 14px;
+    border-top:1px solid var(--border);
+    background:var(--panel-alt);
+  }
+  .toast{
+    position:fixed;
+    bottom:22px; left:50%;
+    transform:translateX(-50%) translateY(10px);
+    background:var(--gold);
+    color:#1a1508;
+    padding:9px 18px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+    opacity:0;
+    pointer-events:none;
+    transition:opacity .2s, transform .2s;
+  }
+  .toast.show{opacity:1; transform:translateX(-50%) translateY(0);}
+</style>
+</head>
+<body>
+
+<header>
+  <h1><span class="brand">2026 ANIME AWARDS</span> · 밈 데이터 빌더</h1>
+  <p>로컬 전용 도구 — 입력한 항목은 저장되지 않고, 아래 코드를 복사해 2026animeMemeData.js에 붙여넣으세요.</p>
+</header>
+
+<main>
+  <section class="form-col">
+    <div class="field">
+      <label>다음 ID 시작 번호</label>
+      <input type="number" id="startId" value="27" min="1">
+    </div>
+
+    <div class="field">
+      <label>제목 (name)</label>
+      <input type="text" id="fName" placeholder="예: 나오야 전투씬 1">
+    </div>
+
+    <div class="row2">
+      <div class="field">
+        <label>분기 (quarter)</label>
+        <select id="fQuarter">
+          <option>1분기</option>
+          <option>2분기</option>
+          <option>3분기</option>
+          <option selected>4분기</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>연도 (year)</label>
+        <input type="number" id="fYear" value="2026">
+      </div>
+    </div>
+
+    <div class="field">
+      <label>타입 (type)</label>
+      <select id="fType">
+        <option value="gif">gif</option>
+        <option value="webp">webp</option>
+        <option value="video">video</option>
+        <option value="mp4">mp4</option>
+        <option value="image">image</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>출처 (origin)</label>
+      <input type="text" id="fOrigin" placeholder="예: 주술회전 3기">
+    </div>
+
+    <div class="field">
+      <label>경로 접두사</label>
+      <input type="text" id="fPrefix" value="image/meme/">
+    </div>
+
+    <div class="field" style="margin-bottom:6px;">
+      <label style="margin-bottom:10px;">버전 (src)</label>
+      <div id="srcSlots"></div>
+      <button class="ghost" id="addSlotBtn" type="button">+ 버전 추가 (탭)</button>
+    </div>
+
+    <button class="primary" id="addEntryBtn" type="button">큐에 추가</button>
+  </section>
+
+  <section class="queue-col">
+    <div class="queue-head">
+      <h2>추가된 항목</h2>
+      <span class="count" id="queueCount">0개</span>
+    </div>
+    <div id="queueList"><div class="queue-empty">아직 추가된 밈이 없어요. 왼쪽 폼을 채우고 "큐에 추가"를 눌러주세요.</div></div>
+
+    <div class="output-box">
+      <div class="output-head">
+        <h3 id="outHeader">생성된 코드 (0개 항목)</h3>
+        <div class="btns">
+          <button id="copyBtn">전체 복사</button>
+          <button id="downloadBtn">.js 다운로드</button>
+        </div>
+      </div>
+      <pre id="outputCode">// 항목을 추가하면 여기에 코드가 생성됩니다</pre>
+      <div class="hint">기존 2026animeMemeData.js 배열의 마지막 항목 뒤, 닫는 <code>];</code> 앞에 이 코드를 붙여넣으면 됩니다.</div>
+    </div>
+  </section>
+</main>
+
+<div class="toast" id="toast"></div>
+
+<script>
+(function(){
+  let slotCount = 1;
+  let queue = [];
+  let idCounter = null;
+
+  const srcSlotsEl = document.getElementById('srcSlots');
+  const addSlotBtn = document.getElementById('addSlotBtn');
+  const addEntryBtn = document.getElementById('addEntryBtn');
+  const startIdEl = document.getElementById('startId');
+  const queueListEl = document.getElementById('queueList');
+  const queueCountEl = document.getElementById('queueCount');
+  const outputCodeEl = document.getElementById('outputCode');
+  const outHeaderEl = document.getElementById('outHeader');
+  const toastEl = document.getElementById('toast');
+
+  function extToType(filename){
+    const ext = (filename.split('.').pop() || '').toLowerCase();
+    if(ext === 'mp4') return 'mp4';
+    if(ext === 'gif') return 'gif';
+    if(ext === 'webp') return 'webp';
+    if(['mov','webm'].includes(ext)) return 'video';
+    if(['png','jpg','jpeg'].includes(ext)) return 'image';
+    return null;
+  }
+
+  function makeSlot(index){
+    const wrap = document.createElement('div');
+    wrap.className = 'src-slot';
+    wrap.dataset.slot = index;
+
+    const isFirst = index === 1;
+    wrap.innerHTML = `
+      <div class="src-slot-head">
+        <span>src${index}${isFirst ? ' (원본)' : ''}</span>
+        ${isFirst ? '' : '<button type="button" class="remove-slot">삭제</button>'}
+      </div>
+      <div class="filepick">
+        <img class="thumb" style="display:none;">
+        <input type="file" accept="image/*,video/*" title="파일을 선택하면 파일명이 자동으로 채워지고 미리보기가 표시됩니다">
+      </div>
+      <input type="text" class="src-url" placeholder="파일명 (예: 나오야 전투.gif)">
+      ${isFirst ? '' : '<input type="text" class="src-title" placeholder="버전 제목 (예: 한국어 버전)" style="margin-top:8px;">'}
+    `;
+
+    const fileInput = wrap.querySelector('input[type=file]');
+    const urlInput = wrap.querySelector('.src-url');
+    const thumb = wrap.querySelector('.thumb');
+
+    fileInput.addEventListener('change', () => {
+      const file = fileInput.files[0];
+      if(!file) return;
+      urlInput.value = file.name;
+      const url = URL.createObjectURL(file);
+      thumb.src = url;
+      thumb.style.display = 'block';
+      if(index === 1){
+        const detected = extToType(file.name);
+        if(detected) document.getElementById('fType').value = detected;
+      }
+    });
+
+    const removeBtn = wrap.querySelector('.remove-slot');
+    if(removeBtn){
+      removeBtn.addEventListener('click', () => {
+        wrap.remove();
+        renumberSlots();
+      });
+    }
+
+    return wrap;
+  }
+
+  function renumberSlots(){
+    const slots = [...srcSlotsEl.children];
+    slots.forEach((el, i) => {
+      const n = i + 1;
+      el.dataset.slot = n;
+      el.querySelector('.src-slot-head span').textContent = `src${n}${n === 1 ? ' (원본)' : ''}`;
+    });
+    slotCount = slots.length;
+    addSlotBtn.style.display = slotCount >= 5 ? 'none' : 'block';
+  }
+
+  function addSlot(){
+    if(slotCount >= 5) return;
+    slotCount++;
+    srcSlotsEl.appendChild(makeSlot(slotCount));
+    addSlotBtn.style.display = slotCount >= 5 ? 'none' : 'block';
+  }
+
+  addSlotBtn.addEventListener('click', addSlot);
+  srcSlotsEl.appendChild(makeSlot(1));
+
+  function readForm(){
+    const name = document.getElementById('fName').value.trim();
+    const origin = document.getElementById('fOrigin').value.trim();
+    const quarter = document.getElementById('fQuarter').value;
+    const year = parseInt(document.getElementById('fYear').value, 10) || 2026;
+    const type = document.getElementById('fType').value;
+    const prefix = document.getElementById('fPrefix').value;
+
+    const slots = [...srcSlotsEl.children].map((el) => {
+      const url = el.querySelector('.src-url').value.trim();
+      const titleInput = el.querySelector('.src-title');
+      const title = titleInput ? titleInput.value.trim() : '';
+      const thumb = el.querySelector('.thumb');
+      const previewUrl = thumb && thumb.style.display !== 'none' ? thumb.src : null;
+      return { url, title, previewUrl };
+    }).filter(s => s.url);
+
+    return { name, origin, quarter, year, type, prefix, slots };
+  }
+
+  function nextId(){
+    if(idCounter === null){
+      idCounter = parseInt(startIdEl.value, 10) || 1;
+    } else {
+      idCounter++;
+    }
+    return 'meme_' + String(idCounter).padStart(3, '0');
+  }
+
+  addEntryBtn.addEventListener('click', () => {
+    const data = readForm();
+    if(!data.name || !data.origin || data.slots.length === 0){
+      showToast('제목 / 출처 / src1은 필수예요');
+      return;
+    }
+    const entry = {
+      id: nextId(),
+      name: data.name,
+      type: data.type,
+      origin: data.origin,
+      quarter: data.quarter,
+      year: data.year,
+      srcs: data.slots.map((s, i) => ({
+        key: 'src' + (i + 1),
+        titleKey: i === 0 ? null : 'src' + (i + 1) + '_title',
+        value: data.prefix + s.url,
+        title: s.title,
+        previewUrl: s.previewUrl
+      }))
+    };
+    queue.push(entry);
+    renderQueue();
+    renderOutput();
+
+    // 다음 입력 편하게: 제목/출처/파일만 초기화, 분기·연도·타입·접두사는 유지
+    document.getElementById('fName').value = '';
+    document.getElementById('fOrigin').value = '';
+    srcSlotsEl.innerHTML = '';
+    slotCount = 1;
+    srcSlotsEl.appendChild(makeSlot(1));
+    addSlotBtn.style.display = 'block';
+    document.getElementById('fName').focus();
+    showToast(entry.id + ' 추가됨');
+  });
+
+  function renderQueue(){
+    queueCountEl.textContent = queue.length + '개';
+    if(queue.length === 0){
+      queueListEl.innerHTML = '<div class="queue-empty">아직 추가된 밈이 없어요. 왼쪽 폼을 채우고 "큐에 추가"를 눌러주세요.</div>';
+      return;
+    }
+    queueListEl.innerHTML = '';
+    queue.forEach((entry, idx) => {
+      const first = entry.srcs[0];
+      const row = document.createElement('div');
+      row.className = 'queue-item';
+      row.innerHTML = `
+        ${first.previewUrl
+          ? `<img class="qthumb" src="${first.previewUrl}">`
+          : `<div class="qthumb"></div>`}
+        <div class="qinfo">
+          <div class="qid">${entry.id} · ${entry.type}</div>
+          <div class="qname">${escapeHtml(entry.name)}</div>
+          <div class="qmeta">${escapeHtml(entry.origin)} · ${entry.quarter} · 버전 ${entry.srcs.length}개</div>
+        </div>
+        <div class="qactions">
+          <button type="button" class="del">삭제</button>
+        </div>
+      `;
+      row.querySelector('.del').addEventListener('click', () => {
+        queue.splice(idx, 1);
+        renderQueue();
+        renderOutput();
+      });
+      queueListEl.appendChild(row);
+    });
+  }
+
+  function escapeHtml(str){
+    return str.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  function jsStr(v){
+    return JSON.stringify(String(v));
+  }
+
+  function renderOutput(){
+    outHeaderEl.textContent = `생성된 코드 (${queue.length}개 항목)`;
+    if(queue.length === 0){
+      outputCodeEl.textContent = '// 항목을 추가하면 여기에 코드가 생성됩니다';
+      return;
+    }
+    const blocks = queue.map(entry => {
+      const lines = [];
+      lines.push('    {');
+      lines.push(`        "id": ${jsStr(entry.id)},`);
+      lines.push(`        "name": ${jsStr(entry.name)},`);
+      lines.push(`        "type": ${jsStr(entry.type)},`);
+      entry.srcs.forEach(s => {
+        if(s.titleKey && s.title){
+          lines.push(`        "${s.titleKey}": ${jsStr(s.title)},`);
+        }
+        lines.push(`        "${s.key}": ${jsStr(s.value)},`);
+      });
+      lines.push(`        "origin": ${jsStr(entry.origin)},`);
+      lines.push(`        "quarter": ${jsStr(entry.quarter)},`);
+      lines.push(`        "year": ${entry.year}`);
+      lines.push('    }');
+      return lines.join('\n');
+    });
+    outputCodeEl.textContent = blocks.join(',\n') + ',';
+  }
+
+  document.getElementById('copyBtn').addEventListener('click', async () => {
+    if(queue.length === 0) return;
+    try{
+      await navigator.clipboard.writeText(outputCodeEl.textContent);
+      showToast('클립보드에 복사됨');
+    }catch(e){
+      showToast('복사 실패 — 직접 드래그해서 복사해주세요');
+    }
+  });
+
+  document.getElementById('downloadBtn').addEventListener('click', () => {
+    if(queue.length === 0) return;
+    const blob = new Blob([outputCodeEl.textContent], {type:'text/javascript'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'meme_new_entries.js';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+  });
+
+  let toastTimer;
+  function showToast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toastEl.classList.remove('show'), 1800);
+  }
+})();
+</script>
+
+</body>
+</html>

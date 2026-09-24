@@ -12,7 +12,7 @@ const Awards = [
   { id: 11, name: '올해의 남우 주연상', thumb: 'image/trophy 1.png', theme: 'character_male'},
   { id: 12, name: '올해의 여우 주연상', thumb: 'image/trophy 1.png', theme: 'character_female'},
   { id: 13, name: '베스트 커플상', thumb: 'image/trophy 1.png', theme: 'best_couple'},
-  { id: 14, name: '베스트 각본상', thumb: 'image/trophy 1.png', theme: 'original'},
+  { id: 14, name: '베스트 각본상', thumb: 'image/trophy 1.png', theme: 'scriptwriter'},
   { id: 15, name: '베스트 각색상', thumb: 'image/trophy 1.png', theme: 'dramatization'},
   { id: 26, name: '베스트 연출상', thumb: 'image/trophy 1.png', theme: 'directing'},
   { id: 16, name: '베스트 감독상', thumb: 'image/trophy 1.png', theme: 'director'},

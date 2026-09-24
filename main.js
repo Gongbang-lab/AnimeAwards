@@ -280,7 +280,7 @@ const categories = [
     { title: "음악 부문", themes: ['opening', 'ending', 'ost'], ratio: 'ratio-16-9' },
     { title: "성우 부문", themes: ['rookie_voice', 'voice_male', 'voice_female'], ratio: 'ratio-11-16' },
     { title: "캐릭터 부문", themes: ['character_male', 'character_female', 'best_couple','all_gender'], ratio: 'ratio-11-16' },
-    { title: "스태프 부문", themes: ['original', 'dramatization', 'director'], ratio: 'ratio-poster' },
+    { title: "스태프 부문", themes: ['scriptwriter', 'dramatization', 'director'], ratio: 'ratio-poster' },
     { title: "아트 부문", themes: ['in_between', 'key_animation'], ratio: 'ratio-poster' },
     { title: "애니메이션 시리즈", themes: ['default', 'best_episode'], ratio: 'ratio-poster' },
     { title: "올해의 시리즈", themes: ['cinema', 'studio', 'series', 'top3'], ratio: 'ratio-poster' }
@@ -458,7 +458,7 @@ function createAwardCard(award, results, ratioClass) {
         else if (theme === 'ost') path = "OSTNominate/OSTNominate.html"
         else if (theme === 'rookie_voice') path = "rookieNominate/rookieNominate.html";
         else if (theme === 'meme') path = "memeNominate/memeNominate.html";
-        else if (theme === 'original') path = "originalNominate/originalNominate.html";
+        else if (theme === 'scriptwriter') path = "scriptwriterNominate/scriptwriterNominate.html";
         else if (theme === 'director') path = "directorNominate/directorNominate.html";
         else if (theme === 'dramatization') path = "adaptorNominate/adaptorNominate.html";
         else if (theme === 'best_episode') path = "episodeNominate/episodeNominate.html";
