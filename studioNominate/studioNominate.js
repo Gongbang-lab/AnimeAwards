@@ -5,7 +5,6 @@ const studioState = {
     awardName: ""
 };
 
-let cachedVoteData = null;
 
 // ✅ 추가: 시즌(분기) 기준으로 필터링된 스튜디오 목록
 // - 각 스튜디오의 works를 선택된 분기에 해당하는 것만 남기고
@@ -37,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     updatePreview();
 
-    waitForFirebaseAndListen();
+    NominateCommon.waitForFirebaseAndListen(() => studioState.awardName);
 });
 
 /** 후보 선택 (Step 1과 2 로직 분리) */
@@ -157,7 +156,7 @@ function renderFinalNominees() {
     const grid = document.getElementById("final-nominees-grid");
     grid.innerHTML = studioState.nominees.map(item => createStudioCardHTML(item)).join('');
 
-    applyVoteBadges();
+    NominateCommon.applyVoteBadges();
 }
 
 /** 아코디언 그룹 렌더링 (Step 1) */
@@ -209,7 +208,7 @@ function renderStudioAccordionGroups() {
         container.appendChild(groupDiv);
     });
 
-    applyVoteBadges();
+    NominateCommon.applyVoteBadges();
 }
 
 /** 스튜디오 카드 HTML 공통 생성 함수 */
@@ -326,7 +325,7 @@ function saveWinnerToLocal(item) {
         thumbnail: item.studio_img,
         year: '2026'
     });
-    fireConfetti();
+    NominateCommon.fireConfetti();
 
     if (window.submitSingleAwardToDB) {
         window.submitSingleAwardToDB(studioState.awardName);
@@ -371,71 +370,4 @@ function initSearch() {
             });
         }
     });
-}
-
-function fireConfetti() {
-    const duration = 3 * 1000;
-    const end = Date.now() + duration;
-
-    (function frame() {
-        confetti({
-            particleCount: 3,
-            angle: 60,
-            spread: 55,
-            origin: { x: 0, y: 0.6 },
-            zIndex: 9999,
-            colors: ['#d4af37', '#ffffff']
-        });
-        confetti({
-            particleCount: 3,
-            angle: 120,
-            spread: 55,
-            origin: { x: 1, y: 0.6 }, 
-            zIndex: 9999,
-            colors: ['#d4af37', '#ffffff']
-        });
-
-        if (Date.now() < end) {
-            requestAnimationFrame(frame);
-        }
-    }());
-}
-
-// ──────────────────────────────────────────────────────────
-// Firebase 실시간 득표율 뱃지
-// ──────────────────────────────────────────────────────────
-function applyVoteBadges() {
-    if (!cachedVoteData) return;
-
-    const total = cachedVoteData._participants || 0;
-
-    document.querySelectorAll('.card').forEach(card => {
-        const animeId = card.getAttribute('data-anime-id');
-        const rateBadge = card.querySelector('.card-selection-rate');
-        if (!rateBadge || !animeId) return;
-
-        const count = cachedVoteData[animeId] || 0;
-        const percent = total > 0 ? Math.round((count / total) * 100) : 0;
-        rateBadge.innerText = `${percent}%`;
-        rateBadge.style.display = "block";
-    });
-}
-
-function listenToVoteRates() {
-    if (!window.fbOnValue || !window.fbDB) return;
-
-    const categoryRef = window.fbRef(window.fbDB, window.getVotesCategoryPath(studioState.awardName));
-
-    window.fbOnValue(categoryRef, (snapshot) => {
-        cachedVoteData = snapshot.val() || {};
-        applyVoteBadges();
-    });
-}
-
-function waitForFirebaseAndListen() {
-    if (window.fbOnValue && window.fbDB) {
-        listenToVoteRates();
-    } else {
-        setTimeout(waitForFirebaseAndListen, 300);
-    }
 }
