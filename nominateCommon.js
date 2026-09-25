@@ -1,6 +1,8 @@
 (function (global) {
     let cachedVoteData = null;
     let firebaseRetryTimer = null;
+    let showVoteCounts = false;
+    let voteBadgeTimer = null;
 
     function fireConfetti() {
         const canvas = document.getElementById("confettiCanvas");
@@ -35,6 +37,13 @@
 
     function applyVoteBadges() {
         if (!cachedVoteData) return;
+
+        if (!voteBadgeTimer) {
+            voteBadgeTimer = global.setInterval(() => {
+                showVoteCounts = !showVoteCounts;
+                applyVoteBadges();
+            }, 2200);
+        }
         const total = cachedVoteData._participants || 0;
         // Step 2 nominee cards use page-specific classes, while sharing the
         // same vote key and badge markup as the Step 1 cards.
@@ -47,7 +56,9 @@
             if (!rateBadge || !identifier) return;
             const count = cachedVoteData[identifier] || 0;
             const percent = total > 0 ? Math.round((count / total) * 100) : 0;
-            rateBadge.innerText = `${percent}%`;
+            rateBadge.innerText = showVoteCounts
+                ? `${count} / ${total}`
+                : `${percent}%`;
             rateBadge.style.display = "block";
         });
     }
@@ -77,3 +88,6 @@
         waitForFirebaseAndListen
     };
 })(window);
+
+
+
