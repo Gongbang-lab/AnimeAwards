@@ -36,7 +36,9 @@
     function applyVoteBadges() {
         if (!cachedVoteData) return;
         const total = cachedVoteData._participants || 0;
-        document.querySelectorAll('.card').forEach(card => {
+        // Step 2 nominee cards use page-specific classes, while sharing the
+        // same vote key and badge markup as the Step 1 cards.
+        document.querySelectorAll('.card, .song-card, .step2-cv-card, .step2-char-card').forEach(card => {
             const identifier = card.getAttribute('data-anime-id');
             const rateBadge = card.querySelector('.card-selection-rate');
             if (!rateBadge || !identifier) return;

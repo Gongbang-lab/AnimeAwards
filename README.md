@@ -51,7 +51,6 @@ AnimeAwards/
 ├── episodeNominate/        # 에피소드 부문
 ├── songNominate/           # 애니송 부문
 ├── rookieNominate/         # 신인 부문
-├── originalNominate/       # 오리지널 작품 부문
 ├── memeNominate/           # 밈 부문
 └── cinemaNominate/         # 극장판 부문
 ```

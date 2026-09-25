@@ -344,7 +344,7 @@ function confirmFinalWinner() {
     document.getElementById('modal-episode-director').textContent = winner.episodeDirector || "-";
 
     document.getElementById('winner-modal').classList.remove('hidden');
-    fireConfetti();
+    window.NominateCommon.fireConfetti();
     saveData(winner);
 }
 
@@ -362,42 +362,6 @@ function saveData(winner) {
     if (window.submitSingleAwardToDB) {
         window.submitSingleAwardToDB(episodeState.awardName);
     }
-}
-
-function fireConfetti() {
-    const canvas = document.getElementById('confettiCanvas');
-    if (!canvas) return;
-
-    const myConfetti = confetti.create(canvas, {
-        resize: true,
-        useWorker: true
-    });
-
-    const duration = 3000;
-    const animationEnd = Date.now() + duration;
-
-    (function frame() {
-        const timeLeft = animationEnd - Date.now();
-        if (timeLeft <= 0) return;
-
-        myConfetti({
-            particleCount: 3,
-            angle: 60,
-            spread: 55,
-            origin: { x: 0, y: 0.8 },
-            colors: ['#d4af37', '#ffffff', '#aa8a2e']
-        });
-
-        myConfetti({
-            particleCount: 3,
-            angle: 120,
-            spread: 55,
-            origin: { x: 1, y: 0.8 },
-            colors: ['#d4af37', '#ffffff', '#aa8a2e']
-        });
-
-        requestAnimationFrame(frame);
-    }());
 }
 
 function goToMain() { location.href = '../index.html'; }

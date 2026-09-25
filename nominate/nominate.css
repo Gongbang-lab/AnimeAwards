@@ -207,6 +207,7 @@ body {
 .card-info { padding: 12px; text-align: center; }
 .card-title { color: #fff; font-size: 0.9rem; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .card-studio { color: #888; font-size: 0.75rem; margin-top: 4px; }
+.composer-title { color: #aaa; font-size: 0.75rem; margin-top: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
 /* 배지 */
 .card-badge {

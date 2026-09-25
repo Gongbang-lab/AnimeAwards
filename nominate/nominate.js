@@ -5,14 +5,14 @@ const nominateState = {
     step: 1,
     selectedItems: [],
     selectedWinner: null,
-    awardName: ""
+    awardName: "",
+    theme: ""
 };
-
-let cachedVoteData = null;
 
 // URL 파라미터 처리
 const params = new URLSearchParams(location.search);
 nominateState.awardName = params.get("awardName");
+nominateState.theme = params.get("theme") || "";
 const modalAwardName = document.getElementById('modal-award-name');
 if(modalAwardName) modalAwardName.textContent = nominateState.awardName;
 const stepTitle = document.getElementById("step-title");
@@ -110,7 +110,7 @@ function renderStep1(filterText = "") {
         qSection.appendChild(qContent);
         leftArea.appendChild(qSection);
     });
-    applyVoteBadges();
+    window.NominateCommon.applyVoteBadges();
 }
 
 // 카드 생성 함수
@@ -134,9 +134,20 @@ function createCard(anime) {
         <img src="${imgPath}" onerror="this.src='https://placehold.co/400x600/2f3542/ffffff?text=No+Image'" loading="lazy">
         <div class="card-info">
             <div class="card-title">${anime.title}</div>
-            <div class="card-studio">${anime.studio || ''}</div>
         </div>
     `;
+
+    const detail = document.createElement("div");
+    if (isOSTNomination()) {
+        detail.className = "composer-title";
+        detail.textContent = getComposerNames(anime).join(", ");
+    } else {
+        detail.className = "card-studio";
+        detail.textContent = Array.isArray(anime.studio)
+            ? anime.studio.join(", ")
+            : (anime.studio || "");
+    }
+    card.querySelector(".card-info").appendChild(detail);
 
     card.onclick = () => handleCardClick(anime, card);
     return card;
@@ -238,7 +249,7 @@ function goStep2() {
         gridDiv.appendChild(createCard(anime));
     });
     leftArea.appendChild(gridDiv);
-    applyVoteBadges();
+    window.NominateCommon.applyVoteBadges();
 }
 
 function goStep1() {
@@ -315,23 +326,51 @@ function openAwardPopup() {
     
     setText("modal-quarter", winner.quarter);
     
-    const directorText = (winner.staff && winner.staff.director) 
-        ? winner.staff.director.join(", ") 
-        : "정보 없음";
-    setText("modal-director", directorText);
+    const directorRow = document.getElementById("modal-director-row");
+    const studioRow = document.getElementById("modal-studio-row");
+    const awardRow = document.getElementById("modal-award-row");
+    const studioLabel = document.getElementById("modal-studio-label");
 
-    setText("modal-studio", winner.studio || "-");
+    if (isOSTNomination()) {
+        if (directorRow) directorRow.classList.add("hidden");
+        if (awardRow) awardRow.classList.add("hidden");
+        if (studioLabel) studioLabel.textContent = "Composer:";
+        setText("modal-studio", getComposerNames(winner).join(", ") || "정보 없음");
+    } else {
+        if (directorRow) directorRow.classList.remove("hidden");
+        if (studioRow) studioRow.classList.remove("hidden");
+        if (awardRow) awardRow.classList.remove("hidden");
+        if (studioLabel) studioLabel.textContent = "Studio:";
+        const directorText = (winner.staff && winner.staff.director)
+            ? winner.staff.director.join(", ")
+            : "정보 없음";
+        setText("modal-director", directorText);
+        setText("modal-studio", Array.isArray(winner.studio)
+            ? winner.studio.join(", ")
+            : (winner.studio || "-"));
+    }
     
     const modal = document.getElementById("winner-modal");
     if(modal) modal.classList.remove("hidden");
     
-    fireConfetti();
+    window.NominateCommon.fireConfetti();
     saveAwardResult(winner);
 }
 
 function setText(id, text) {
     const el = document.getElementById(id);
     if(el) el.textContent = text;
+}
+
+function isOSTNomination() {
+    return nominateState.theme === "ost" || nominateState.awardName === "올해의 OST";
+}
+
+function getComposerNames(anime) {
+    const composers = anime?.staff?.composer;
+    if (Array.isArray(composers)) return composers.filter(Boolean);
+    if (typeof composers === "string" && composers.trim()) return [composers.trim()];
+    return [];
 }
 
 function saveAwardResult(winner) {
@@ -357,6 +396,12 @@ function saveAwardResult(winner) {
         } else {
             currentResults[top3Key] = [{ rank: awardName, title: winner.title, thumbnail: finalThumb }];
         }
+    } else if (isOSTNomination()) {
+        currentResults[awardName] = {
+            title: winner.title,
+            thumbnail: finalThumb,
+            composer: getComposerNames(winner)
+        };
     } else {
         currentResults[awardName] = { title: winner.title, thumbnail: finalThumb };
     }
@@ -384,34 +429,6 @@ function showIcarusIntroIfNeeded() {
     }
 }
 
-function fireConfetti() {
-    const duration = 3 * 1000;
-    const end = Date.now() + duration;
-
-    (function frame() {
-        confetti({
-            particleCount: 3,
-            angle: 60,
-            spread: 55,
-            origin: { x: 0, y: 0.6 },
-            zIndex: 9999,
-            colors: ['#d4af37', '#ffffff']
-        });
-        confetti({
-            particleCount: 3,
-            angle: 120,
-            spread: 55,
-            origin: { x: 1, y: 0.6 }, 
-            zIndex: 9999,
-            colors: ['#d4af37', '#ffffff']
-        });
-
-        if (Date.now() < end) {
-            requestAnimationFrame(frame);
-        }
-    }());
-}
-
 // ──────────────────────────────────────────────────────────
 // 6. 이벤트 바인딩 및 초기화
 // ──────────────────────────────────────────────────────────
@@ -431,44 +448,8 @@ const btnGoMain = document.getElementById("go-main-btn");
 if(btnGoMain) btnGoMain.onclick = () => location.href = "../index.html";
 
 // ──────────────────────────────────────────────────────────
-// Firebase 실시간 득표율 뱃지
-// ──────────────────────────────────────────────────────────
-function applyVoteBadges() {
-    if (!cachedVoteData) return;
-
-    const total = cachedVoteData._participants || 0;
-
-    document.querySelectorAll('.card').forEach(card => {
-        const animeId = card.getAttribute('data-anime-id');
-        const rateBadge = card.querySelector('.card-selection-rate');
-        if (!rateBadge || !animeId) return;
-
-        const count = cachedVoteData[animeId] || 0;
-        const percent = total > 0 ? Math.round((count / total) * 100) : 0;
-        rateBadge.innerText = `${percent}%`;
-        rateBadge.style.display = "block";
-    });
-}
-
-function listenToVoteRates() {
-    if (!window.fbOnValue || !window.fbDB) return;
-
-    const categoryRef = window.fbRef(window.fbDB, window.getVotesCategoryPath(nominateState.awardName));
-
-    window.fbOnValue(categoryRef, (snapshot) => {
-        cachedVoteData = snapshot.val() || {};
-        applyVoteBadges();
-    });
-}
-
-function waitForFirebaseAndListen() {
-    if (window.fbOnValue && window.fbDB) {
-        listenToVoteRates();
-    } else {
-        setTimeout(waitForFirebaseAndListen, 300);
-    }
-}
-
 // ✅ 수정: renderStep1() 중복 호출 제거 (기존엔 이 지점과 파일 상단 "초기 실행" 두 군데서 호출됨)
-waitForFirebaseAndListen();
+window.NominateCommon.waitForFirebaseAndListen(
+    () => nominateState.awardName
+);
 renderStep1();

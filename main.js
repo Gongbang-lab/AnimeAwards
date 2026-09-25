@@ -455,7 +455,7 @@ function createAwardCard(award, results, ratioClass) {
 
         if (theme === "top3" || theme === 'series') path = "top3Nominate/top3Nominate.html";
         else if (['opening', 'ending'].includes(theme)) path = "songNominate/songNominate.html";
-        else if (theme === 'ost') path = "OSTNominate/OSTNominate.html"
+        else if (theme === 'ost') path = "nominate/nominate.html";
         else if (theme === 'rookie_voice') path = "rookieNominate/rookieNominate.html";
         else if (theme === 'meme') path = "memeNominate/memeNominate.html";
         else if (theme === 'scriptwriter') path = "scriptwriterNominate/scriptwriterNominate.html";

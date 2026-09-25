@@ -28,8 +28,6 @@ const cvState = {
     finalWinner: null
 };
 
-let cachedVoteData = null;
-
 const DATA = {
     anime: [],
     cv: [],
@@ -427,7 +425,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     renderCVStep1();
-    waitForFirebaseAndListen();
+    window.NominateCommon.waitForFirebaseAndListen(
+        () => cvState.awardName
+    );
 });
 
 /* ---------------------------------------------------------
@@ -441,7 +441,7 @@ function renderCVStep1(searchTerm = "") {
     if (!mainContent) return;
 
     if (cvState.step !== 1) {
-        applyVoteBadges();
+        window.NominateCommon.applyVoteBadges();
         return;
     }
 
@@ -495,7 +495,7 @@ function renderCVStep1(searchTerm = "") {
         `;
 
         updatePreview();
-        applyVoteBadges();
+        window.NominateCommon.applyVoteBadges();
 
         return;
     }
@@ -565,7 +565,7 @@ function renderCVStep1(searchTerm = "") {
     });
 
     updatePreview();
-    applyVoteBadges();
+    window.NominateCommon.applyVoteBadges();
 }
 
 function getSeasonLabel() {
@@ -838,7 +838,7 @@ function goStep2() {
             );
         });
 
-        applyVoteBadges();
+        window.NominateCommon.applyVoteBadges();
     } else {
         openWinnerModal();
     }
@@ -1213,7 +1213,7 @@ function openWinnerModal() {
         "hidden"
     );
 
-    fireConfetti();
+    window.NominateCommon.fireConfetti();
 
     saveResult(winner);
 }
@@ -1257,169 +1257,6 @@ function closeModal(id) {
             "hidden"
         );
     }
-}
-
-/* ---------------------------------------------------------
- * Confetti
- * --------------------------------------------------------- */
-
-function fireConfetti() {
-    if (
-        typeof confetti !==
-        "function"
-    ) {
-        return;
-    }
-
-    const duration = 3000;
-    const end =
-        Date.now() + duration;
-
-    (function frame() {
-        confetti({
-            particleCount: 3,
-            angle: 60,
-            spread: 55,
-            origin: {
-                x: 0,
-                y: 0.6
-            },
-            zIndex: 9999,
-            colors: [
-                "#d4af37",
-                "#ffffff"
-            ]
-        });
-
-        confetti({
-            particleCount: 3,
-            angle: 120,
-            spread: 55,
-            origin: {
-                x: 1,
-                y: 0.6
-            },
-            zIndex: 9999,
-            colors: [
-                "#d4af37",
-                "#ffffff"
-            ]
-        });
-
-        if (
-            Date.now() < end
-        ) {
-            requestAnimationFrame(
-                frame
-            );
-        }
-    })();
-}
-
-/* ---------------------------------------------------------
- * Firebase vote badges
- * --------------------------------------------------------- */
-
-function applyVoteBadges() {
-    if (!cachedVoteData) return;
-
-    const total =
-        Number(
-            cachedVoteData._participants ||
-            0
-        );
-
-    document
-        .querySelectorAll(
-            ".card, .step2-cv-card"
-        )
-        .forEach(card => {
-            const voteKey =
-                card.getAttribute(
-                    "data-anime-id"
-                );
-
-            const badge =
-                card.querySelector(
-                    ".card-selection-rate"
-                );
-
-            if (
-                !voteKey ||
-                !badge
-            ) {
-                return;
-            }
-
-            const count =
-                Number(
-                    cachedVoteData[
-                        voteKey
-                    ] || 0
-                );
-
-            const percent =
-                total > 0
-                    ? Math.round(
-                        (count / total) * 100
-                    )
-                    : 0;
-
-            badge.textContent =
-                `${percent}%`;
-
-            badge.style.display =
-                "block";
-        });
-}
-
-function listenToVoteRates() {
-    if (
-        !window.fbOnValue ||
-        !window.fbDB ||
-        !window.fbRef ||
-        !window.getVotesCategoryPath
-    ) {
-        return;
-    }
-
-    const categoryPath =
-        window.getVotesCategoryPath(
-            cvState.awardName
-        );
-
-    const categoryRef =
-        window.fbRef(
-            window.fbDB,
-            categoryPath
-        );
-
-    window.fbOnValue(
-        categoryRef,
-        snapshot => {
-            cachedVoteData =
-                snapshot.val() || {};
-
-            applyVoteBadges();
-        }
-    );
-}
-
-function waitForFirebaseAndListen() {
-    if (
-        window.fbOnValue &&
-        window.fbDB &&
-        window.fbRef &&
-        window.getVotesCategoryPath
-    ) {
-        listenToVoteRates();
-        return;
-    }
-
-    setTimeout(
-        waitForFirebaseAndListen,
-        300
-    );
 }
 
 /* ---------------------------------------------------------

@@ -3,8 +3,6 @@ const rookiestate = {
     awardName: null
 };
 
-let cachedVoteData = null;
-
 // top30 / 31~50 후보군 상태 관리
 let allRookieData = [];          // 전체 정렬된 리스트 (참고용)
 let rookiePoolCandidates = [];   // 31~50위 중 아직 메인 페이지에 추가되지 않은 후보군
@@ -25,7 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("btn-candidate-pool-add").onclick = () => handleCandidatePoolAdd();
     document.getElementById("btn-candidate-pool-close").onclick = () => closeCandidatePoolModal();
 
-    waitForFirebaseAndListen();
+    window.NominateCommon.waitForFirebaseAndListen(
+        () => rookiestate.awardName
+    );
 });
 
 
@@ -61,7 +61,7 @@ function renderRookieGrid() {
     const cardList = [...top30].sort((a, b) => a.name.localeCompare(b.name));
     cardList.forEach(cv => grid.appendChild(createRookieCard(cv)));
 
-    applyVoteBadges();
+    window.NominateCommon.applyVoteBadges();
 }
 
 /**
@@ -189,7 +189,6 @@ function renderCandidatePoolTable() {
         tbody.appendChild(tr);
     });
 }
-
 /**
  * 체크된 후보군을 메인 페이지 카드로 추가
  */
@@ -307,7 +306,7 @@ function handleAwardDecision() {
     if (!cv) return;
 
     saveWinnerToLocal(cv);
-    fireConfetti();
+    window.NominateCommon.fireConfetti();
     openAwardModal(cv);
 }
 
@@ -372,73 +371,4 @@ function initSearch() {
             card.style.display = name.includes(keyword) ? "block" : "none";
         });
     });
-}
-
-function fireConfetti() {
-    const duration = 3 * 1000;
-    const end = Date.now() + duration;
-
-    (function frame() {
-        // 왼쪽에서 발사
-        confetti({
-            particleCount: 3,
-            angle: 60,
-            spread: 55,
-            origin: { x: 0, y: 0.6 },
-            zIndex: 9999,
-            colors: ['#d4af37', '#ffffff']
-        });
-        // 오른쪽에서 발사
-        confetti({
-            particleCount: 3,
-            angle: 120,
-            spread: 55,
-            origin: { x: 1, y: 0.6 }, 
-            zIndex: 9999,
-            colors: ['#d4af37', '#ffffff']
-        });
-
-        if (Date.now() < end) {
-            requestAnimationFrame(frame);
-        }
-    }());
-}
-
-// ──────────────────────────────────────────────────────────
-// Firebase 실시간 득표율 뱃지
-// ──────────────────────────────────────────────────────────
-function applyVoteBadges() {
-    if (!cachedVoteData) return;
-
-    const total = cachedVoteData._participants || 0;
-
-    document.querySelectorAll('.card').forEach(card => {
-        const animeId = card.getAttribute('data-anime-id');
-        const rateBadge = card.querySelector('.card-selection-rate');
-        if (!rateBadge || !animeId) return;
-
-        const count = cachedVoteData[animeId] || 0;
-        const percent = total > 0 ? Math.round((count / total) * 100) : 0;
-        rateBadge.innerText = `${percent}%`;
-        rateBadge.style.display = "block";
-    });
-}
-
-function listenToVoteRates() {
-    if (!window.fbOnValue || !window.fbDB) return;
-
-    const categoryRef = window.fbRef(window.fbDB, window.getVotesCategoryPath(rookiestate.awardName));
-
-    window.fbOnValue(categoryRef, (snapshot) => {
-        cachedVoteData = snapshot.val() || {};
-        applyVoteBadges();
-    });
-}
-
-function waitForFirebaseAndListen() {
-    if (window.fbOnValue && window.fbDB) {
-        listenToVoteRates();
-    } else {
-        setTimeout(waitForFirebaseAndListen, 300);
-    }
 }
