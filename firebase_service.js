@@ -21,12 +21,11 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 const auth = getAuth(app);
-const functions = getFunctions(app);
+const functions = getFunctions(app, "asia-southeast1");
 const submitVoteCallable = httpsCallable(functions, "submitVote");
 
 window.fbDB = db;
 window.fbRef = ref;
-window.fbTransaction = runTransaction;
 window.fbOnValue = onValue;
 
 // 사용자 화면에 로그인 절차를 노출하지 않고 익명 UID를 확보한다.
@@ -48,9 +47,7 @@ anonymousUserReady.catch(err => console.error("익명 인증 실패:", err));
 
 // 2. 데이터 식별 및 정제 유틸 함수
 window.sanitizeKey = function(key) {
-  const value = String(key ?? "");
-  if (!/[.#$/\[\]\u0000-\u001f\u007f]/.test(value)) return value;
-  return `b64_${new TextEncoder().encode(value).reduce((binary, byte) => binary + String.fromCharCode(byte), "")}`;
+  return window.getVoteCandidateKey(key);
 };
 
 // 데이터에 Firebase에서 금지하는 문자가 있을 때만 충돌 가능성이 낮은 안전 키로 변환한다.
@@ -64,6 +61,7 @@ window.getVoteCandidateKey = function(value) {
 };
 
 window.getWinnerIdentifier = function(awardData) {
+  if (!awardData || typeof awardData !== "object") return "";
   return awardData.title || awardData.name || (awardData.name1 && awardData.name2 ? `${awardData.name1}_${awardData.name2}` : "unknown");
 };
 

@@ -296,6 +296,10 @@ async function saveAndGoMain() {
             img: combinedImageBase64
         });
 
+        if (window.submitSingleAwardToDB) {
+            await window.submitSingleAwardToDB(awardName);
+        }
+
         window.location.href = '../index.html';
 
     } catch (error) {

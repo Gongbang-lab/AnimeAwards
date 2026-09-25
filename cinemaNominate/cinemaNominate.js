@@ -58,7 +58,7 @@ function renderCards(data, searchTerm = "") {
             <div class="card ${isSelected ? 'selected' : ''}"
                  id="card-${movie.id}"
                  data-category="${escapeHtml(cinemaState.awardName)}"
-                 data-anime-id="${movie.id}"
+                 data-anime-id="${escapeHtml(movie.title)}"
                  onclick="selectMovie(${Number(movie.id)})">
                 <div class="card-selection-rate" style="display:none;">0%</div>
                 <div class="media-box">
