@@ -11,7 +11,6 @@ const YEAR_DATA_KEYS = [
     ["CharacterData",    "CharacterData"],
     ["CharacterVoiceData",           "CharacterVoiceData"],
     ["cinemaData",       "cinemaData"],
-    ["OSTData",          "OSTData"],
     ["AnimeSongs",        "AnimeSongs"],
     ["AnimeStudioData",       "AnimeStudioData"],
     ["animeDirectorData",     "animeDirectorData"],
@@ -19,8 +18,7 @@ const YEAR_DATA_KEYS = [
     ["RookieCVData",     "RookieCVData"],
     ["animeEPData",           "animeEPData"],
     ["AnimeMemeData",         "AnimeMemeData"],
-    ["scriptwriterData", "scriptwriterData"],
-    ["TOP3_Awards",      "TOP3_Awards"],
+    ["scriptwriterData", "scriptwriterData"]
 ];
 
 YEAR_DATA_KEYS.forEach(([alias, prefix]) => {

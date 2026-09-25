@@ -3,8 +3,6 @@ const memeState = {
     selectedSrc: null,
     awardName: "올해의 밈"
 };
-let cachedVoteData = null;
-
 document.addEventListener("DOMContentLoaded", () => {
     const params = new URLSearchParams(window.location.search);
     memeState.theme = params.get("theme");
@@ -22,7 +20,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    waitForFirebaseAndListen();
+    window.NominateCommon.waitForFirebaseAndListen(
+        () => memeState.awardName
+    );
 });
 
 // src 목록 배열로 정규화
@@ -82,7 +82,7 @@ function renderMemeGrid() {
         section.appendChild(qContent);
         grid.appendChild(section);
     });
-    applyVoteBadges();
+    window.NominateCommon.applyVoteBadges();
 }
 
 function createMemeCard(meme) {
@@ -308,7 +308,7 @@ function showWinnerCelebration(winner, src) {
         </div>
     `;
     popup.classList.remove('hidden');
-    fireConfetti();
+    window.NominateCommon.fireConfetti();
 }
 
 function closePopup() {
@@ -319,53 +319,4 @@ function closePopup() {
     });
     popup.innerHTML = "";
     popup.classList.add('hidden');
-}
-
-function fireConfetti() {
-    const duration = 3 * 1000;
-    const end = Date.now() + duration;
-    (function frame() {
-        confetti({ particleCount: 3, angle: 60, spread: 55, origin: { x: 0, y: 0.6 }, zIndex: 9999, colors: ['#d4af37', '#ffffff'] });
-        confetti({ particleCount: 3, angle: 120, spread: 55, origin: { x: 1, y: 0.6 }, zIndex: 9999, colors: ['#d4af37', '#ffffff'] });
-        if (Date.now() < end) requestAnimationFrame(frame);
-    }());
-}
-
-// ──────────────────────────────────────────────────────────
-// Firebase 실시간 득표율 뱃지
-// ──────────────────────────────────────────────────────────
-function applyVoteBadges() {
-    if (!cachedVoteData) return;
-
-    const total = cachedVoteData._participants || 0;
-
-    document.querySelectorAll('.meme-card').forEach(card => {
-        const animeId = card.getAttribute('data-anime-id');
-        const rateBadge = card.querySelector('.card-selection-rate');
-        if (!rateBadge || !animeId) return;
-
-        const count = cachedVoteData[animeId] || 0;
-        const percent = total > 0 ? Math.round((count / total) * 100) : 0;
-        rateBadge.innerText = `${percent}%`;
-        rateBadge.style.display = "block";
-    });
-}
-
-function listenToVoteRates() {
-    if (!window.fbOnValue || !window.fbDB) return;
-
-    const categoryRef = window.fbRef(window.fbDB, window.getVotesCategoryPath(memeState.awardName));
-
-    window.fbOnValue(categoryRef, (snapshot) => {
-        cachedVoteData = snapshot.val() || {};
-        applyVoteBadges();
-    });
-}
-
-function waitForFirebaseAndListen() {
-    if (window.fbOnValue && window.fbDB) {
-        listenToVoteRates();
-    } else {
-        setTimeout(waitForFirebaseAndListen, 300);
-    }
 }

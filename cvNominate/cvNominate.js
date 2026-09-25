@@ -1,475 +1,1288 @@
 /**
- * 상태 관리
+ * AnimeAwards - CV Nomination
+ * 2-4 schema rebuild
+ *
+ * CVData:
+ * {
+ *   id,
+ *   name,
+ *   cvimg,
+ *   gender
+ * }
+ *
+ * 담당 캐릭터/작품은 CharacterData.characters[].cvId를 역조회해서
+ * 실행 시점(runtime)에 복원한다.
+ *
+ * 저장하지 않는 중복 데이터:
+ * - characterIds
+ * - animeTitle
+ * - character image
+ * - year / quarter
  */
+
 const cvState = {
     step: 1,
     theme: new URLSearchParams(location.search).get("theme") || "character_male",
-    awardName: new URLSearchParams(location.search).get("awardName") || "올해의 성우상",  // ✅ currentAward → awardName (다른 파일들과 통일)
-    selectedCVs: [], 
+    awardName: new URLSearchParams(location.search).get("awardName") || "올해의 성우상",
+    selectedCVs: [],
     finalWinner: null
 };
 
-let cachedVoteData = null;
+const DATA = {
+    anime: [],
+    cv: [],
+    charactersByCvId: new Map(),
+    animeMap: new Map()
+};
 
-/**
- * ✅ 추가: 성별 + 시즌(분기) 기준으로 필터링된 성우 목록을 반환
- * - 각 성우의 characters(참여작)를 선택된 분기에 해당하는 것만 남기고
- * - 남은 참여작이 하나도 없는 성우는 후보 목록에서 제외
- */
+/* ---------------------------------------------------------
+ * Generic helpers
+ * --------------------------------------------------------- */
+
+function normalizeId(value) {
+    const n = Number(value);
+    return Number.isFinite(n) && n > 0 ? n : null;
+}
+
+function normalizeGender(value) {
+    const gender = String(value ?? "").trim().toLowerCase();
+    if (gender === "male" || gender === "female") return gender;
+    return "";
+}
+
+function normalizeName(value) {
+    return String(value ?? "").trim();
+}
+
+function getGlobalArray(name) {
+    try {
+        if (typeof window !== "undefined" && Array.isArray(window[name])) {
+            return window[name];
+        }
+    } catch (_) {}
+
+    try {
+        if (typeof globalThis !== "undefined" && Array.isArray(globalThis[name])) {
+            return globalThis[name];
+        }
+    } catch (_) {}
+
+    try {
+        const value = eval(name);
+        return Array.isArray(value) ? value : [];
+    } catch (_) {
+        return [];
+    }
+}
+
+function valuesAsArray(value) {
+    if (Array.isArray(value)) return value;
+    if (value && typeof value === "object") return Object.values(value);
+    return [];
+}
+
+/* ---------------------------------------------------------
+ * Source data
+ * --------------------------------------------------------- */
+
+function loadAnimeData() {
+    return valuesAsArray(getGlobalArray("AnimeList_2026"));
+}
+
+function loadCharacterData() {
+    return valuesAsArray(getGlobalArray("CharacterData_2026"));
+}
+
+function loadCVData() {
+    return valuesAsArray(getGlobalArray("CharacterVoiceData_2026"));
+}
+
+/* ---------------------------------------------------------
+ * Build indexes
+ * --------------------------------------------------------- */
+
+function rebuildIndexes() {
+    DATA.anime = loadAnimeData();
+    DATA.cv = loadCVData();
+    DATA.charactersByCvId = new Map();
+    DATA.animeMap = new Map();
+
+    DATA.anime.forEach(anime => {
+        const animeId = normalizeId(anime?.id);
+
+        if (animeId !== null) {
+            DATA.animeMap.set(animeId, anime);
+        }
+    });
+
+    const characterEntries = loadCharacterData();
+
+    characterEntries.forEach((animeEntry, entryIndex) => {
+        const animeId = normalizeId(animeEntry?.id);
+
+        if (animeId === null) return;
+
+        const characters = Array.isArray(animeEntry?.characters)
+            ? animeEntry.characters
+            : [];
+
+        characters.forEach((character, characterIndex) => {
+            const characterId = normalizeId(character?.characterId);
+            const cvId = normalizeId(character?.cvId);
+
+            if (characterId === null || cvId === null) return;
+
+            const role = {
+                animeId,
+                characterId,
+                charName: normalizeName(character?.name) || "이름 없음",
+                img: normalizeName(character?.img),
+                cvName: normalizeName(character?.cv),
+                entryIndex,
+                characterIndex
+            };
+
+            if (!DATA.charactersByCvId.has(cvId)) {
+                DATA.charactersByCvId.set(cvId, []);
+            }
+
+            DATA.charactersByCvId.get(cvId).push(role);
+        });
+    });
+
+    console.info("[cvNominate] INDEX READY", {
+        animeCount: DATA.anime.length,
+        cvCount: DATA.cv.length,
+        characterEntryCount: characterEntries.length,
+        characterCount: [...DATA.charactersByCvId.values()]
+            .reduce((sum, list) => sum + list.length, 0),
+        cvIdIndexCount: DATA.charactersByCvId.size
+    });
+}
+
+/* ---------------------------------------------------------
+ * Runtime CV -> Character -> Anime relation
+ * --------------------------------------------------------- */
+
+function resolveCVCharacters(cv) {
+    const cvId = normalizeId(cv?.id);
+
+    if (cvId === null) return [];
+
+    const roles = DATA.charactersByCvId.get(cvId) || [];
+    const seen = new Set();
+    const resolved = [];
+
+    roles.forEach(role => {
+        const anime = DATA.animeMap.get(role.animeId);
+
+        if (!anime) return;
+
+        // 같은 작품 + 같은 Character ID가 중복 저장된 경우만 제거.
+        // 같은 characterId가 서로 다른 animeId에서 반복되는 것은 정상으로 유지한다.
+        const pairKey = `${role.animeId}:${role.characterId}`;
+
+        if (seen.has(pairKey)) return;
+
+        seen.add(pairKey);
+
+        resolved.push({
+            characterId: role.characterId,
+            animeId: role.animeId,
+            charName: role.charName,
+            img: role.img,
+            cvName: role.cvName,
+            animeTitle: normalizeName(anime?.title) || "작품명 없음",
+            year: anime?.year,
+            quarter: anime?.quarter
+        });
+    });
+
+    resolved.sort((a, b) => {
+        const aTitle = a.animeTitle;
+        const bTitle = b.animeTitle;
+
+        return aTitle.localeCompare(bTitle, "ko");
+    });
+
+    return resolved;
+}
+
+function isInSelectedSeason(anime) {
+    if (!anime) return false;
+
+    if (
+        typeof SeasonFilter !== "undefined" &&
+        SeasonFilter &&
+        typeof SeasonFilter.isInSeason === "function"
+    ) {
+        try {
+            return !!SeasonFilter.isInSeason(anime);
+        } catch (error) {
+            console.warn(
+                "[cvNominate] SeasonFilter.isInSeason 오류",
+                error,
+                anime
+            );
+        }
+    }
+
+    // SeasonFilter를 사용할 수 없는 경우의 안전한 fallback.
+    const selected = getSelectedSeason();
+
+    if (!selected) return false;
+
+    return (
+        Number(anime.year) === Number(selected.year) &&
+        String(anime.quarter ?? "") === String(selected.quarter ?? "")
+    );
+}
+
+function getSelectedSeason() {
+    if (
+        typeof SeasonFilter !== "undefined" &&
+        SeasonFilter &&
+        SeasonFilter.selectedSeason
+    ) {
+        return SeasonFilter.selectedSeason;
+    }
+
+    if (
+        typeof window !== "undefined" &&
+        window.SeasonFilter &&
+        window.SeasonFilter.selectedSeason
+    ) {
+        return window.SeasonFilter.selectedSeason;
+    }
+
+    return null;
+}
+
+/* ---------------------------------------------------------
+ * Candidate list
+ * --------------------------------------------------------- */
+
 function getSeasonFilteredCVList(genderKey) {
-    if (typeof CharacterVoiceData === 'undefined') return [];
+    const list = [];
 
-    return Object.values(CharacterVoiceData)
-        .filter(cv => cv.name !== "Unknown")
-        .filter(cv => String(cv.gender).toLowerCase() === genderKey)
-        .map(cv => ({
-            ...cv,
-            characters: (cv.characters || []).filter(role => SeasonFilter.isInSeason(role))
-        }))
-        .filter(cv => cv.characters.length > 0);
+    DATA.cv.forEach(rawCV => {
+        const cvId = normalizeId(rawCV?.id);
+        const name = normalizeName(rawCV?.name);
+        const gender = normalizeGender(rawCV?.gender);
+
+        if (cvId === null) return;
+        if (!name || name === "Unknown") return;
+        if (gender !== genderKey) return;
+
+        const allRoles = resolveCVCharacters(rawCV);
+
+        const seasonRoles = allRoles.filter(role => {
+            const anime = DATA.animeMap.get(role.animeId);
+
+            return isInSelectedSeason(anime);
+        });
+
+        if (seasonRoles.length === 0) return;
+
+        list.push({
+            id: cvId,
+            name,
+            cvimg: normalizeName(rawCV?.cvimg),
+            gender,
+            characters: seasonRoles
+        });
+    });
+
+    list.sort((a, b) =>
+        a.name.localeCompare(b.name, "ko")
+    );
+
+    return list;
+}
+
+function getGenderKey() {
+    return cvState.theme.includes("female")
+        ? "female"
+        : "male";
+}
+
+function getDisplayAwardName() {
+    const genderKey = getGenderKey();
+
+    const fallback = genderKey === "female"
+        ? "올해의 여자 성우상"
+        : "올해의 남자 성우상";
+
+    if (
+        typeof SeasonFilter !== "undefined" &&
+        SeasonFilter &&
+        typeof SeasonFilter.toDisplayAwardName === "function"
+    ) {
+        try {
+            return SeasonFilter.toDisplayAwardName(fallback);
+        } catch (_) {}
+    }
+
+    return fallback;
+}
+
+/* ---------------------------------------------------------
+ * Diagnostics
+ * --------------------------------------------------------- */
+
+function printDiagnostics(genderKey, candidateList) {
+    const selectedSeason = getSelectedSeason();
+
+    const totalResolvedRoles = DATA.cv.reduce(
+        (sum, cv) => sum + resolveCVCharacters(cv).length,
+        0
+    );
+
+    const seasonMatchedRoles = candidateList.reduce(
+        (sum, cv) => sum + cv.characters.length,
+        0
+    );
+
+    const matchingCVIds = candidateList.map(cv => cv.id);
+
+    console.groupCollapsed("[cvNominate] DATA DIAGNOSTIC");
+
+    console.log({
+        animeCount: DATA.anime.length,
+        animeMapCount: DATA.animeMap.size,
+        cvCount: DATA.cv.length,
+        characterCVIndexCount: DATA.charactersByCvId.size,
+        totalResolvedRoles,
+        seasonMatchedRoles,
+        genderKey,
+        targetGenderCVCount: DATA.cv.filter(
+            cv => normalizeGender(cv?.gender) === genderKey
+        ).length,
+        candidateCount: candidateList.length,
+        selectedSeason,
+        matchingCVIds,
+        cvDataSchemaSample: DATA.cv[0]
+            ? {
+                id: DATA.cv[0].id,
+                name: DATA.cv[0].name,
+                gender: DATA.cv[0].gender,
+                hasCharacterIds: Array.isArray(DATA.cv[0].characterIds),
+                hasCharacterObjects: Array.isArray(DATA.cv[0].characters)
+            }
+            : null
+    });
+
+    console.groupEnd();
+
+    if (candidateList.length === 0) {
+        console.warn(
+            "[cvNominate] 현재 시즌의 후보가 없습니다.",
+            {
+                selectedSeason,
+                genderKey,
+                animeCount: DATA.anime.length,
+                cvCount: DATA.cv.length,
+                characterCVIndexCount: DATA.charactersByCvId.size
+            }
+        );
+    }
+}
+
+/* ---------------------------------------------------------
+ * DOM initialization
+ * --------------------------------------------------------- */
+
+function safeGet(id) {
+    return document.getElementById(id);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("search-input").addEventListener("input", (e) => {
-        renderCVStep1(e.target.value);
-    });
+    rebuildIndexes();
 
-    document.getElementById("btn-next").onclick = goStep2;
-    document.getElementById("btn-back").onclick = handleBack;
-    document.getElementById("final-confirm-btn").onclick = () => location.href = "../index.html";
+    const searchInput = safeGet("search-input");
+    const nextButton = safeGet("btn-next");
+    const backButton = safeGet("btn-back");
+    const finalButton = safeGet("final-confirm-btn");
 
-    renderCVStep1();
-    waitForFirebaseAndListen();
-});
-
-/**
- * Step 1: 성우 리스트 렌더링 (아코디언 스타일 적용)
- */
-function renderCVStep1(searchTerm = "") {
-    const mainContent = document.getElementById("main-content");
-    const stepTitle = document.getElementById("step-title");
-    
-    if (cvState.step === 1) {
-        mainContent.innerHTML = "";
-        
-        const genderKey = cvState.theme.includes("female") ? "female" : "male";
-        if (genderKey === "female") {
-            stepTitle.textContent = `${SeasonFilter.toDisplayAwardName("올해의 여자 성우상")} 부문`;
-        } else {
-            stepTitle.textContent = `${SeasonFilter.toDisplayAwardName("올해의 남자 성우상")} 부문`;
-        }
-
-        // ✅ 수정: SeasonFilter 적용된 목록 사용
-        let filteredList = getSeasonFilteredCVList(genderKey);
-
-        if (searchTerm.trim() !== "") {
-                const term = searchTerm.toLowerCase().trim();
-                    filteredList = filteredList.filter(cv => 
-                        cv.name.toLowerCase().includes(term) ||
-                        (cv.characters || []).some(role => 
-                    role.charName && role.charName.toLowerCase().includes(term)
-                )
-            );
-        }
-
-        // 2. 그룹화 (이번 시즌 참여작 수 기준)
-        const groups = {};
-        filteredList.forEach(cv => {
-            const count = cv.characters ? cv.characters.length : 0;
-            const groupKey = `${count}개 작품 참여`;
-            if (!groups[groupKey]) groups[groupKey] = { count: count, list: [] };
-            groups[groupKey].list.push(cv);
-        });
-
-        const sortedGroupKeys = Object.keys(groups).sort((a, b) => groups[b].count - groups[a].count);
-
-        sortedGroupKeys.forEach(groupKey => {
-            const groupData = groups[groupKey];
-            groupData.list.sort((a, b) => a.name.localeCompare(b.name, 'ko'));
-
-            const section = document.createElement("div");
-            section.className = "quarter-section";
-
-            const btn = document.createElement("button");
-            btn.className = "quarter-btn";
-            btn.innerHTML = `<span>${groupKey}</span> <span>▼</span>`;
-            
-            const content = document.createElement("div");
-            content.className = "day-content";
-            content.style.display = "none";
-
-            if (searchTerm) {
-                content.style.display = "grid";
-                btn.classList.add("active");
-            }
-
-            btn.onclick = () => {
-                const isOpen = content.style.display === "grid";
-                content.style.display = isOpen ? "none" : "grid";
-                btn.classList.toggle("active", !isOpen);
-            };
-
-            groupData.list.forEach(cv => {
-                content.appendChild(createCVCard(cv, "step1"));
-            });
-
-            section.appendChild(btn);
-            section.appendChild(content);
-            mainContent.appendChild(section);
+    if (searchInput) {
+        searchInput.addEventListener("input", event => {
+            renderCVStep1(event.target.value);
         });
     }
-    applyVoteBadges();
+
+    if (nextButton) {
+        nextButton.onclick = goStep2;
+    }
+
+    if (backButton) {
+        backButton.onclick = handleBack;
+    }
+
+    if (finalButton) {
+        finalButton.onclick = () => {
+            location.href = "../index.html";
+        };
+    }
+
+    renderCVStep1();
+    window.NominateCommon.waitForFirebaseAndListen(
+        () => cvState.awardName
+    );
+});
+
+/* ---------------------------------------------------------
+ * Step 1
+ * --------------------------------------------------------- */
+
+function renderCVStep1(searchTerm = "") {
+    const mainContent = safeGet("main-content");
+    const stepTitle = safeGet("step-title");
+
+    if (!mainContent) return;
+
+    if (cvState.step !== 1) {
+        window.NominateCommon.applyVoteBadges();
+        return;
+    }
+
+    mainContent.innerHTML = "";
+
+    if (stepTitle) {
+        stepTitle.textContent = `${getDisplayAwardName()} 부문`;
+    }
+
+    const genderKey = getGenderKey();
+
+    let filteredList = getSeasonFilteredCVList(genderKey);
+
+    const term = normalizeName(searchTerm)
+        .toLocaleLowerCase("ko-KR");
+
+    if (term) {
+        filteredList = filteredList.filter(cv =>
+            cv.name
+                .toLocaleLowerCase("ko-KR")
+                .includes(term) ||
+
+            cv.characters.some(role =>
+                role.charName
+                    .toLocaleLowerCase("ko-KR")
+                    .includes(term) ||
+
+                role.animeTitle
+                    .toLocaleLowerCase("ko-KR")
+                    .includes(term)
+            )
+        );
+    }
+
+    printDiagnostics(genderKey, filteredList);
+
+    if (filteredList.length === 0) {
+        mainContent.innerHTML = `
+            <div style="
+                padding: 40px 20px;
+                color: #999;
+                text-align: center;
+                line-height: 1.7;
+            ">
+                현재 시즌의 성우 후보가 없습니다.<br>
+                <small>
+                    선택 시즌: ${escapeHTML(getSeasonLabel())}<br>
+                    F12 → Console의 [cvNominate] DATA DIAGNOSTIC을 확인하세요.
+                </small>
+            </div>
+        `;
+
+        updatePreview();
+        window.NominateCommon.applyVoteBadges();
+
+        return;
+    }
+
+    const groups = new Map();
+
+    filteredList.forEach(cv => {
+        const count = cv.characters.length;
+
+        if (!groups.has(count)) {
+            groups.set(count, []);
+        }
+
+        groups.get(count).push(cv);
+    });
+
+    const sortedCounts = [...groups.keys()]
+        .sort((a, b) => b - a);
+
+    sortedCounts.forEach(count => {
+        const groupList = groups.get(count) || [];
+
+        const section = document.createElement("div");
+        section.className = "quarter-section";
+
+        const btn = document.createElement("button");
+        btn.className = "quarter-btn";
+
+        btn.innerHTML = `
+            <span>${count}개 작품 참여</span>
+            <span>▼</span>
+        `;
+
+        const content = document.createElement("div");
+        content.className = "day-content";
+        content.style.display = term
+            ? "grid"
+            : "none";
+
+        if (term) {
+            btn.classList.add("active");
+        }
+
+        btn.onclick = () => {
+            const opened = content.style.display === "grid";
+
+            content.style.display = opened
+                ? "none"
+                : "grid";
+
+            btn.classList.toggle(
+                "active",
+                !opened
+            );
+        };
+
+        groupList.forEach(cv => {
+            content.appendChild(
+                createCVCard(cv, "step1")
+            );
+        });
+
+        section.appendChild(btn);
+        section.appendChild(content);
+
+        mainContent.appendChild(section);
+    });
+
+    updatePreview();
+    window.NominateCommon.applyVoteBadges();
 }
 
-/**
- * 카드 생성 함수
- */
+function getSeasonLabel() {
+    const season = getSelectedSeason();
+
+    if (!season) {
+        return "알 수 없음";
+    }
+
+    return `${season.year} / ${season.quarter}`;
+}
+
+/* ---------------------------------------------------------
+ * Cards
+ * --------------------------------------------------------- */
+
 function createCVCard(cv, step) {
     const card = document.createElement("div");
+
     card.className = "card";
 
-    card.setAttribute('data-category', cvState.awardName);
-    card.setAttribute('data-anime-id', cv.name);
+    card.dataset.category = cvState.awardName;
+
+    // 기존 Firebase vote key 호환
+    card.dataset.animeId = cv.name;
+
+    card.dataset.candidateId = String(cv.id);
 
     const rateBadge = document.createElement("div");
+
     rateBadge.className = "card-selection-rate";
     rateBadge.style.display = "none";
-    rateBadge.textContent = "0/0";
-    card.appendChild(rateBadge);
+    rateBadge.textContent = "0%";
 
-    const badge = document.createElement("div");
-    badge.className = "card-badge";
-    badge.textContent = `${cv.characters.length}작품`;
-    badge.onclick = (e) => {
-        e.stopPropagation();
+    const workBadge = document.createElement("div");
+
+    workBadge.className = "card-badge";
+    workBadge.textContent = `${cv.characters.length}작품`;
+
+    workBadge.addEventListener("click", event => {
+        event.stopPropagation();
         openDetailModal(cv);
+    });
+
+    const image = document.createElement("img");
+
+    image.loading = "lazy";
+    image.src = `../${cv.cvimg}`;
+    image.alt = cv.name;
+
+    image.onerror = () => {
+        image.src =
+            "https://via.placeholder.com/200x300";
     };
 
-    const isSelected = cvState.selectedCVs.some(v => v.name === cv.name);
-    if (step === "step1" && isSelected) card.classList.add("selected");
+    const info = document.createElement("div");
 
-    card.innerHTML += `
-        <img src="../${cv.cvimg}" loading="lazy" onerror="this.src='https://via.placeholder.com/200x300'">
-        <div class="card-info">
-            <div class="card-title">${cv.name}</div>
-        </div>
-    `;
+    info.className = "card-info";
 
-    card.prepend(badge);
-    card.prepend(rateBadge);
+    const title = document.createElement("div");
 
-    card.onclick = () => {
+    title.className = "card-title";
+    title.textContent = cv.name;
+
+    info.appendChild(title);
+
+    card.appendChild(rateBadge);
+    card.appendChild(workBadge);
+    card.appendChild(image);
+    card.appendChild(info);
+
+    const isSelected = cvState.selectedCVs.some(
+        selected =>
+            normalizeId(selected?.id) ===
+            normalizeId(cv.id)
+    );
+
+    if (step === "step1" && isSelected) {
+        card.classList.add("selected");
+    }
+
+    card.addEventListener("click", () => {
         if (step === "step1") {
-            toggleCVSelection(cv, card);
-        } else {
-            document.querySelectorAll("#step2-grid .card").forEach(c => c.classList.remove("selected"));
-            card.classList.add("selected");
-            cvState.finalWinner = cv;
-            document.getElementById("btn-next").disabled = false;
+            toggleCVSelection(
+                cv,
+                card
+            );
         }
-    };
+    });
 
     return card;
 }
 
-/**
- * 선택 및 프리뷰 로직
- */
 function toggleCVSelection(cv, cardElement) {
-    const index = cvState.selectedCVs.findIndex(v => v.name === cv.name);
-    
-    if (index > -1) {
-        cvState.selectedCVs.splice(index, 1);
-        cardElement.classList.remove("selected");
+    const index = cvState.selectedCVs.findIndex(
+        selected =>
+            normalizeId(selected?.id) ===
+            normalizeId(cv.id)
+    );
+
+    if (index >= 0) {
+        cvState.selectedCVs.splice(
+            index,
+            1
+        );
+
+        cardElement.classList.remove(
+            "selected"
+        );
     } else {
         cvState.selectedCVs.push(cv);
-        cardElement.classList.add("selected");
+
+        cardElement.classList.add(
+            "selected"
+        );
     }
-    
+
     updatePreview();
 }
 
 function updatePreview() {
-    const list = document.getElementById("preview-list");
-    const nextBtn = document.getElementById("btn-next");
+    const list = safeGet("preview-list");
+    const nextButton = safeGet("btn-next");
 
-    if (!list) return;
-    
-    list.innerHTML = "";
+    if (list) {
+        list.innerHTML = "";
 
-    cvState.selectedCVs.forEach(cv => {
-        const div = document.createElement("div");
-        div.className = "preview-item";
-        div.innerHTML = `
-            ${cv.name}
-            <br><small style="color:#888;">${cv.characters.length}개 작품 참여</small>
-        `;
-        
-        div.onclick = () => {
-            removeCV(cv.name);
-        };
-        
-        list.appendChild(div);
-    });
+        cvState.selectedCVs.forEach(cv => {
+            const item = document.createElement("div");
 
-    if (nextBtn) {
-        nextBtn.disabled = cvState.selectedCVs.length === 0;
+            item.className = "preview-item";
+
+            item.innerHTML = `
+                ${escapeHTML(cv.name)}
+                <br>
+                <small style="color:#888;">
+                    ${cv.characters.length}개 작품 참여
+                </small>
+            `;
+
+            item.onclick = () =>
+                removeCV(cv);
+
+            list.appendChild(item);
+        });
+    }
+
+    if (nextButton) {
+        nextButton.disabled =
+            cvState.selectedCVs.length === 0;
     }
 }
 
-function removeCV(name) {
-    const index = cvState.selectedCVs.findIndex(v => v.name === name);
-    if (index > -1) {
-        cvState.selectedCVs.splice(index, 1);
-    }
+function removeCV(target) {
+    const targetId = normalizeId(target?.id);
 
-    const cards = document.querySelectorAll(".card");
-    cards.forEach(c => {
-        const title = c.querySelector(".card-title");
-        if (title && title.textContent === name) {
-            c.classList.remove("selected");
-        }
-    });
+    const index = cvState.selectedCVs.findIndex(
+        cv =>
+            normalizeId(cv?.id) === targetId
+    );
+
+    if (index < 0) return;
+
+    const removed =
+        cvState.selectedCVs[index];
+
+    cvState.selectedCVs.splice(
+        index,
+        1
+    );
+
+    document
+        .querySelectorAll(".card")
+        .forEach(card => {
+            if (
+                card.dataset.candidateId ===
+                String(removed.id)
+            ) {
+                card.classList.remove(
+                    "selected"
+                );
+            }
+        });
 
     updatePreview();
 }
 
-/**
- * Step 이동 로직
- */
+/* ---------------------------------------------------------
+ * Step 2
+ * --------------------------------------------------------- */
+
 function goStep2() {
     if (cvState.step === 1) {
+        if (cvState.selectedCVs.length === 0) {
+            return;
+        }
+
         cvState.step = 2;
-        
-        const searchCont = document.querySelector('.search-container');
-        const previewBox = document.getElementById('step1-preview');
 
-        if (searchCont) searchCont.classList.add('hidden');
-        if (previewBox) previewBox.classList.add('hidden');
+        const searchContainer =
+            document.querySelector(
+                ".search-container"
+            );
 
-        const stepTitle = document.getElementById("step-title");
-        const genderKey = cvState.theme.includes("female") ? "female" : "male";
-        stepTitle.textContent = genderKey === "female"
-            ? `${SeasonFilter.toDisplayAwardName("올해의 여자 성우상")} 부문`
-            : `${SeasonFilter.toDisplayAwardName("올해의 남자 성우상")} 부문`;
-            
-        document.getElementById("btn-back").textContent = "이전 단계";
-        const nextBtn = document.getElementById("btn-next");
-        nextBtn.textContent = "수상 결정";
-        nextBtn.disabled = true;
+        const previewBox =
+            safeGet("step1-preview");
 
-        const mainContent = document.getElementById("main-content");
+        if (searchContainer) {
+            searchContainer.classList.add(
+                "hidden"
+            );
+        }
+
+        if (previewBox) {
+            previewBox.classList.add(
+                "hidden"
+            );
+        }
+
+        const stepTitle =
+            safeGet("step-title");
+
+        if (stepTitle) {
+            stepTitle.textContent =
+                `${getDisplayAwardName()} 부문`;
+        }
+
+        const backButton =
+            safeGet("btn-back");
+
+        const nextButton =
+            safeGet("btn-next");
+
+        if (backButton) {
+            backButton.textContent =
+                "이전 단계";
+        }
+
+        if (nextButton) {
+            nextButton.textContent =
+                "수상 결정";
+
+            nextButton.disabled = true;
+        }
+
+        const mainContent =
+            safeGet("main-content");
+
+        if (!mainContent) return;
+
         mainContent.innerHTML = `
-            <h2 style="color:var(--gold); margin-bottom:20px; font-size: 1.5rem; text-align: left;">최종 수상자를 선택하세요</h2>
+            <h2 style="
+                color:var(--gold);
+                margin-bottom:20px;
+                font-size:1.5rem;
+                text-align:left;
+            ">
+                최종 수상자를 선택하세요
+            </h2>
+
             <div id="step2-grid"></div>
         `;
-        
-        const grid = document.getElementById("step2-grid");
 
-        // ✅ 수정: 인라인 중복 대신 createStep2Card() 재사용
+        const grid =
+            safeGet("step2-grid");
+
         cvState.selectedCVs.forEach(cv => {
-            grid.appendChild(createStep2Card(cv));
+            grid.appendChild(
+                createStep2Card(cv)
+            );
         });
 
-        applyVoteBadges();   // ✅ 추가: Step2 진입 시에도 뱃지 반영
+        window.NominateCommon.applyVoteBadges();
     } else {
         openWinnerModal();
     }
 }
 
 function createStep2Card(cv) {
-    const card = document.createElement("div");
-    card.className = "step2-cv-card";
+    const card =
+        document.createElement("div");
 
-    // ✅ 추가: 뱃지 매칭용 속성 (기존엔 없어서 Step2에서 뱃지가 안 떴음)
-    card.setAttribute('data-category', cvState.awardName);
-    card.setAttribute('data-anime-id', cv.name);
+    card.className =
+        "step2-cv-card";
 
-    const repWork = cv.characters && cv.characters.length > 0 ? cv.characters[0].animeTitle : "";
-    const subText = repWork ? `${repWork} 등` : "정보 없음";
+    card.dataset.category =
+        cvState.awardName;
 
-    card.innerHTML = `
-        <div class="card-selection-rate" style="display:none;">0/0</div>
-        <div class="card-badge">${cv.characters.length}작품</div>
-        <div class="card-thumb">
-            <img src="../${cv.cvimg}" onerror="this.src='https://via.placeholder.com/200x300'">
-        </div>
-        <div class="step2-card-info">
-            <div class="card-title">${cv.name}</div>
-            <div class="card-studio">${subText}</div>
-        </div>
-    `;
+    // 기존 Firebase vote key 호환
+    card.dataset.animeId = cv.name;
 
-    card.onclick = () => {
-        document.querySelectorAll(".step2-cv-card").forEach(c => c.classList.remove("selected"));
-        card.classList.add("selected");
-        cvState.finalWinner = cv;
-        document.getElementById("btn-next").disabled = false;
+    card.dataset.candidateId =
+        String(cv.id);
+
+    const rateBadge =
+        document.createElement("div");
+
+    rateBadge.className =
+        "card-selection-rate";
+
+    rateBadge.style.display =
+        "none";
+
+    rateBadge.textContent =
+        "0%";
+
+    const badge =
+        document.createElement("div");
+
+    badge.className =
+        "card-badge";
+
+    badge.textContent =
+        `${cv.characters.length}작품`;
+
+    const thumb =
+        document.createElement("div");
+
+    thumb.className =
+        "card-thumb";
+
+    const image =
+        document.createElement("img");
+
+    image.src =
+        `../${cv.cvimg}`;
+
+    image.alt =
+        cv.name;
+
+    image.loading =
+        "lazy";
+
+    image.onerror = () => {
+        image.src =
+            "https://via.placeholder.com/200x300";
     };
+
+    thumb.appendChild(image);
+
+    const info =
+        document.createElement("div");
+
+    info.className =
+        "step2-card-info";
+
+    const title =
+        document.createElement("div");
+
+    title.className =
+        "card-title";
+
+    title.textContent =
+        cv.name;
+
+    const representativeWork =
+        cv.characters[0]?.animeTitle ||
+        "";
+
+    const subText =
+        representativeWork
+            ? `${representativeWork} 등`
+            : "정보 없음";
+
+    const work =
+        document.createElement("div");
+
+    work.className =
+        "card-studio";
+
+    work.textContent =
+        subText;
+
+    info.appendChild(title);
+    info.appendChild(work);
+
+    card.appendChild(rateBadge);
+    card.appendChild(badge);
+    card.appendChild(thumb);
+    card.appendChild(info);
+
+    card.addEventListener("click", () => {
+        document
+            .querySelectorAll(
+                "#step2-grid .step2-cv-card"
+            )
+            .forEach(item =>
+                item.classList.remove(
+                    "selected"
+                )
+            );
+
+        card.classList.add(
+            "selected"
+        );
+
+        cvState.finalWinner =
+            cv;
+
+        const nextButton =
+            safeGet("btn-next");
+
+        if (nextButton) {
+            nextButton.disabled = false;
+        }
+    });
+
     return card;
 }
+
+/* ---------------------------------------------------------
+ * Back
+ * --------------------------------------------------------- */
 
 function handleBack() {
     if (cvState.step === 2) {
         cvState.step = 1;
-        
-        const searchCont = document.querySelector('.search-container');
-        const previewBox = document.getElementById('step1-preview');
 
-        if (searchCont) searchCont.classList.remove('hidden');
-        if (previewBox) previewBox.classList.remove('hidden');
+        const searchContainer =
+            document.querySelector(
+                ".search-container"
+            );
 
-        document.getElementById("btn-back").textContent = "메인으로";
-        const nextBtn = document.getElementById("btn-next");
-        nextBtn.textContent = "다음 단계";
-        
-        nextBtn.disabled = cvState.selectedCVs.length === 0;
-        
+        const previewBox =
+            safeGet("step1-preview");
+
+        if (searchContainer) {
+            searchContainer.classList.remove(
+                "hidden"
+            );
+        }
+
+        if (previewBox) {
+            previewBox.classList.remove(
+                "hidden"
+            );
+        }
+
+        const backButton =
+            safeGet("btn-back");
+
+        const nextButton =
+            safeGet("btn-next");
+
+        if (backButton) {
+            backButton.textContent =
+                "메인으로";
+        }
+
+        if (nextButton) {
+            nextButton.textContent =
+                "다음 단계";
+        }
+
         renderCVStep1();
     } else {
-        location.href = "../index.html";
+        location.href =
+            "../index.html";
     }
 }
 
-/**
- * 모달 관련 함수
- */
-function openDetailModal(cv) {
-    const modal = document.getElementById("cv-detail-modal");
-    const nameEl = document.getElementById("detail-name");
-    const imgEl = document.getElementById("detail-img");
-    const worksContainer = document.getElementById("detail-works");
+/* ---------------------------------------------------------
+ * Detail / Winner modal
+ * --------------------------------------------------------- */
 
-    nameEl.textContent = `${cv.name} 참여 작품`;
-    imgEl.src = `../${cv.cvimg}`;
-    
-    worksContainer.innerHTML = cv.characters.map(char => `
-        <div class="work-card">
-            <div class="work-card-thumb">
-                <img src="../${char.img}" onerror="this.src='https://via.placeholder.com/150'">
-            </div>
-            <div class="work-card-info">
-                <div class="work-card-title">${char.animeTitle}</div>
-                <div class="work-card-char">${char.charName} 역</div>
-            </div>
-        </div>
-    `).join('');
-    
-    modal.classList.remove("hidden");
+function openDetailModal(cv) {
+    const modal =
+        safeGet("cv-detail-modal");
+
+    const nameEl =
+        safeGet("detail-name");
+
+    const imgEl =
+        safeGet("detail-img");
+
+    const worksContainer =
+        safeGet("detail-works");
+
+    if (
+        !modal ||
+        !nameEl ||
+        !imgEl ||
+        !worksContainer
+    ) {
+        return;
+    }
+
+    nameEl.textContent =
+        `${cv.name} 참여 작품`;
+
+    imgEl.src =
+        `../${cv.cvimg}`;
+
+    imgEl.alt =
+        cv.name;
+
+    worksContainer.innerHTML =
+        "";
+
+    cv.characters.forEach(char => {
+        const workCard =
+            document.createElement("div");
+
+        workCard.className =
+            "work-card";
+
+        const thumb =
+            document.createElement("div");
+
+        thumb.className =
+            "work-card-thumb";
+
+        const image =
+            document.createElement("img");
+
+        image.src = char.img
+            ? `../${char.img}`
+            : "https://via.placeholder.com/150";
+
+        image.alt =
+            char.charName;
+
+        image.onerror = () => {
+            image.src =
+                "https://via.placeholder.com/150";
+        };
+
+        thumb.appendChild(image);
+
+        const info =
+            document.createElement("div");
+
+        info.className =
+            "work-card-info";
+
+        const animeTitle =
+            document.createElement("div");
+
+        animeTitle.className =
+            "work-card-title";
+
+        animeTitle.textContent =
+            char.animeTitle;
+
+        const charName =
+            document.createElement("div");
+
+        charName.className =
+            "work-card-char";
+
+        charName.textContent =
+            `${char.charName} 역`;
+
+        info.appendChild(animeTitle);
+        info.appendChild(charName);
+
+        workCard.appendChild(thumb);
+        workCard.appendChild(info);
+
+        worksContainer.appendChild(
+            workCard
+        );
+    });
+
+    modal.classList.remove(
+        "hidden"
+    );
 }
 
 function openWinnerModal() {
-    const winner = cvState.finalWinner;
+    const winner =
+        cvState.finalWinner;
+
     if (!winner) return;
 
-    document.getElementById("winner-img").src = `../${winner.cvimg}`;
+    const winnerImg =
+        safeGet("winner-img");
 
-    const infoContent = document.getElementById("winner-info-content");
-    
-    const worksListHTML = winner.characters.map(char => `
-        <div class="info-row">
-            <span class="info-label">${char.animeTitle}</span>
-            <span class="info-value">${char.charName} 역</span>
-        </div>
-    `).join('');
+    const infoContent =
+        safeGet(
+            "winner-info-content"
+        );
+
+    const modal =
+        safeGet("winner-modal");
+
+    if (
+        !winnerImg ||
+        !infoContent ||
+        !modal
+    ) {
+        return;
+    }
+
+    winnerImg.src =
+        `../${winner.cvimg}`;
+
+    winnerImg.alt =
+        winner.name;
+
+    const rows =
+        winner.characters.map(char => `
+            <div class="info-row">
+                <span class="info-label">
+                    ${escapeHTML(char.animeTitle)}
+                </span>
+
+                <span class="info-value">
+                    ${escapeHTML(char.charName)} 역
+                </span>
+            </div>
+        `).join("");
 
     infoContent.innerHTML = `
-        <div class="info-row" style="border-bottom: 2px solid var(--gold); margin-bottom: 15px; padding-bottom: 15px;">
-            <span class="info-label" style="font-size: 1.4rem;">수상자</span>
-            <span class="info-value" style="font-size: 1.4rem; color: #fff; font-weight: bold;">${winner.name}</span>
+        <div class="info-row" style="
+            border-bottom:2px solid var(--gold);
+            margin-bottom:15px;
+            padding-bottom:15px;
+        ">
+            <span class="info-label" style="
+                font-size:1.4rem;
+            ">
+                수상자
+            </span>
+
+            <span class="info-value" style="
+                font-size:1.4rem;
+                color:#fff;
+                font-weight:bold;
+            ">
+                ${escapeHTML(winner.name)}
+            </span>
         </div>
-        <div class="winner-works-scroll" style="max-height: 300px; overflow-y: auto; padding-right: 10px;">
-            ${worksListHTML}
+
+        <div class="winner-works-scroll" style="
+            max-height:300px;
+            overflow-y:auto;
+            padding-right:10px;
+        ">
+            ${rows}
         </div>
     `;
 
-    document.getElementById("winner-modal").classList.remove("hidden");
-    fireConfetti();
+    modal.classList.remove(
+        "hidden"
+    );
+
+    window.NominateCommon.fireConfetti();
 
     saveResult(winner);
 }
 
-// ✅ 삭제: 예전 방식(anime_awards_result 직접 조작)으로 이 함수를 덮어쓰던 중복 정의 제거
-//         ResultStorage.saveOne()을 쓰는 버전 하나만 유지
 function saveResult(winner) {
-    ResultStorage.saveOne(cvState.awardName, {
-        name: winner.name,
-        thumbnail: winner.cvimg,
-        works: winner.characters.map(c => c.charName).join(', ')
-    });
+    if (
+        typeof ResultStorage !==
+            "undefined" &&
+        ResultStorage &&
+        typeof ResultStorage.saveOne ===
+            "function"
+    ) {
+        ResultStorage.saveOne(
+            cvState.awardName,
+            {
+                name: winner.name,
+                thumbnail: winner.cvimg,
+                works: winner.characters
+                    .map(c => c.charName)
+                    .join(", ")
+            }
+        );
+    }
 
-    if (window.submitSingleAwardToDB) {
-        window.submitSingleAwardToDB(cvState.awardName);
+    if (
+        typeof window !==
+            "undefined" &&
+        window.submitSingleAwardToDB
+    ) {
+        window.submitSingleAwardToDB(
+            cvState.awardName
+        );
     }
 }
 
 function closeModal(id) {
-    document.getElementById(id).classList.add("hidden");
-}
+    const modal = safeGet(id);
 
-function fireConfetti() {
-    const duration = 3 * 1000;
-    const end = Date.now() + duration;
-
-    (function frame() {
-        confetti({
-            particleCount: 3,
-            angle: 60,
-            spread: 55,
-            origin: { x: 0, y: 0.6 },
-            zIndex: 9999,
-            colors: ['#d4af37', '#ffffff']
-        });
-        confetti({
-            particleCount: 3,
-            angle: 120,
-            spread: 55,
-            origin: { x: 1, y: 0.6 }, 
-            zIndex: 9999,
-            colors: ['#d4af37', '#ffffff']
-        });
-
-        if (Date.now() < end) {
-            requestAnimationFrame(frame);
-        }
-    }());
-}
-
-// ──────────────────────────────────────────────────────────
-// Firebase 실시간 득표율 뱃지
-// ──────────────────────────────────────────────────────────
-function applyVoteBadges() {
-    if (!cachedVoteData) return;
-
-    const total = cachedVoteData._participants || 0;
-
-    document.querySelectorAll('.card').forEach(card => {
-        const animeId = card.getAttribute('data-anime-id');
-        const rateBadge = card.querySelector('.card-selection-rate');
-        if (!rateBadge || !animeId) return;
-
-        const count = cachedVoteData[animeId] || 0;
-        const percent = total > 0 ? Math.round((count / total) * 100) : 0;
-        rateBadge.innerText = `${percent}%`;
-        rateBadge.style.display = "block";
-    });
-}
-
-function listenToVoteRates() {
-    if (!window.fbOnValue || !window.fbDB) return;
-
-    const categoryRef = window.fbRef(window.fbDB, window.getVotesCategoryPath(cvState.awardName));
-
-    window.fbOnValue(categoryRef, (snapshot) => {
-        cachedVoteData = snapshot.val() || {};
-        applyVoteBadges();
-    });
-}
-
-function waitForFirebaseAndListen() {
-    if (window.fbOnValue && window.fbDB) {
-        listenToVoteRates();
-    } else {
-        setTimeout(waitForFirebaseAndListen, 300);
+    if (modal) {
+        modal.classList.add(
+            "hidden"
+        );
     }
+}
+
+/* ---------------------------------------------------------
+ * Safety helpers
+ * --------------------------------------------------------- */
+
+function escapeHTML(value) {
+    return String(value ?? "")
+        .replaceAll(
+            "&",
+            "&amp;"
+        )
+        .replaceAll(
+            "<",
+            "&lt;"
+        )
+        .replaceAll(
+            ">",
+            "&gt;"
+        )
+        .replaceAll(
+            '"',
+            "&quot;"
+        )
+        .replaceAll(
+            "'",
+            "&#039;"
+        );
 }

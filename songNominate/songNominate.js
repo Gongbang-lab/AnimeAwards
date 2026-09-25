@@ -5,8 +5,6 @@ const songNominateState = {
     finalWinner: null,
     awardName: null   // ✅ currentAward → awardName (다른 파일들과 통일)
 };
-let cachedVoteData = null;
-
 const dayMap = {
     "mondays": "월요일", "tuesdays": "화요일", "wednesdays": "수요일", "thursdays": "목요일",
     "fridays": "금요일", "saturdays": "토요일", "sundays": "일요일", "anomaly": "변칙 편성", "web": "웹"
@@ -106,7 +104,9 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("winner-popup").classList.remove("active");
     };
 
-    waitForFirebaseAndListen();
+    window.NominateCommon.waitForFirebaseAndListen(
+        () => songNominateState.awardName
+    );
 });
 
 function renderSongStep1() {
@@ -175,7 +175,7 @@ function renderFilteredList(query) {
             listContainer.appendChild(quarterSection);
         }
     });
-    applyVoteBadges();
+    window.NominateCommon.applyVoteBadges();
 }
 
 function createSongCard(song) {
@@ -345,76 +345,9 @@ function openSongAwardPopup() {
     document.getElementById("winner-artist").textContent = winner.artist || "정보 없음";
 
     popup.classList.add("active");
-    fireConfetti();
+    window.NominateCommon.fireConfetti();
 
     document.getElementById("go-main-btn").onclick = () => {
         location.href = "../index.html";
     };
-}
-
-function fireConfetti() {
-    const duration = 3 * 1000;
-    const end = Date.now() + duration;
-
-    (function frame() {
-        confetti({
-            particleCount: 3,
-            angle: 60,
-            spread: 55,
-            origin: { x: 0, y: 0.6 },
-            zIndex: 9999,
-            colors: ['#d4af37', '#ffffff']
-        });
-        confetti({
-            particleCount: 3,
-            angle: 120,
-            spread: 55,
-            origin: { x: 1, y: 0.6 }, 
-            zIndex: 9999,
-            colors: ['#d4af37', '#ffffff']
-        });
-
-        if (Date.now() < end) {
-            requestAnimationFrame(frame);
-        }
-    }());
-}
-
-// ──────────────────────────────────────────────────────────
-// Firebase 실시간 득표율 뱃지
-// ──────────────────────────────────────────────────────────
-function applyVoteBadges() {
-    if (!cachedVoteData) return;
-
-    const total = cachedVoteData._participants || 0;
-
-    document.querySelectorAll('.song-card').forEach(card => {
-        const animeId = card.getAttribute('data-anime-id');
-        const rateBadge = card.querySelector('.card-selection-rate');
-        if (!rateBadge || !animeId) return;
-
-        const count = cachedVoteData[animeId] || 0;
-        const percent = total > 0 ? Math.round((count / total) * 100) : 0;
-        rateBadge.innerText = `${percent}%`;
-        rateBadge.style.display = "block";
-    });
-}
-
-function listenToVoteRates() {
-    if (!window.fbOnValue || !window.fbDB) return;
-
-    const categoryRef = window.fbRef(window.fbDB, window.getVotesCategoryPath(songNominateState.awardName));
-
-    window.fbOnValue(categoryRef, (snapshot) => {
-        cachedVoteData = snapshot.val() || {};
-        applyVoteBadges();
-    });
-}
-
-function waitForFirebaseAndListen() {
-    if (window.fbOnValue && window.fbDB) {
-        listenToVoteRates();
-    } else {
-        setTimeout(waitForFirebaseAndListen, 300);
-    }
 }

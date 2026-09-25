@@ -1,8 +1,9 @@
 // firebase_service.js
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
-import { getDatabase, ref, runTransaction, onValue } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js";
-import { getAuth, signInAnonymously } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js";
+import { getAuth, onAuthStateChanged, signInAnonymously } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+import { getFunctions, httpsCallable } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-functions.js";
 
 // [주의] 본인의 파이어베이스 설정값으로 변경하세요
 const firebaseConfig = {
@@ -20,21 +21,47 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 const auth = getAuth(app);
+const functions = getFunctions(app, "asia-southeast1");
+const submitVoteCallable = httpsCallable(functions, "submitVote");
 
 window.fbDB = db;
 window.fbRef = ref;
-window.fbTransaction = runTransaction;
 window.fbOnValue = onValue;
 
-// 익명 로그인 실행 (투표 권한 부여)
-signInAnonymously(auth).catch(err => console.error("인증 실패:", err));
+// 사용자 화면에 로그인 절차를 노출하지 않고 익명 UID를 확보한다.
+const anonymousUserReady = new Promise((resolve, reject) => {
+  let unsubscribe = () => {};
+  unsubscribe = onAuthStateChanged(auth, user => {
+    unsubscribe();
+    if (user) {
+      resolve(user);
+      return;
+    }
+    signInAnonymously(auth).then(result => resolve(result.user), reject);
+  }, error => {
+    unsubscribe();
+    reject(error);
+  });
+});
+anonymousUserReady.catch(err => console.error("익명 인증 실패:", err));
 
 // 2. 데이터 식별 및 정제 유틸 함수
 window.sanitizeKey = function(key) {
-  return key.replace(/[.#$[\]]/g, "_");
+  return window.getVoteCandidateKey(key);
+};
+
+// 데이터에 Firebase에서 금지하는 문자가 있을 때만 충돌 가능성이 낮은 안전 키로 변환한다.
+window.getVoteCandidateKey = function(value) {
+  const text = String(value ?? "");
+  if (!/[.#$/\[\]\u0000-\u001f\u007f]/.test(text)) return text;
+  const bytes = new TextEncoder().encode(text);
+  let binary = "";
+  bytes.forEach(byte => { binary += String.fromCharCode(byte); });
+  return `b64_${btoa(binary).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/g, "")}`;
 };
 
 window.getWinnerIdentifier = function(awardData) {
+  if (!awardData || typeof awardData !== "object") return "";
   return awardData.title || awardData.name || (awardData.name1 && awardData.name2 ? `${awardData.name1}_${awardData.name2}` : "unknown");
 };
 
@@ -48,37 +75,39 @@ window.getSeasonPathKey = function() {
 // ✅ [신규] 특정 상(awardName)의 투표 카테고리 경로를 만드는 공통 함수
 // 각 nominate.js의 listenToVoteRates()에서 이 함수로 경로를 통일해서 씀
 window.getVotesCategoryPath = function(awardName) {
-  return `votes/categories/${window.getSeasonPathKey()}/${awardName}`;
+  return `votes/categories/${window.getSeasonPathKey()}/${window.getVoteCandidateKey(awardName)}`;
 };
 
-// 3. 개별 페이지에서 호출할 공통 전송 함수
+// 3. 결과 저장소에서 선택한 후보를 읽고 서버 함수에 익명 UID와 함께 제출한다.
 window.submitSingleAwardToDB = async function(awardName) {
-  const seasonKey = window.getSeasonPathKey();
-  const submittedFlagKey = `submitted_${seasonKey}_${awardName}`;   // ← 시즌별로 분리
+  try {
+    if (typeof awardName !== "string" || !awardName.trim()) return { ok: false, reason: "invalid-award" };
+    const seasonKey = window.getSeasonPathKey();
+    const savedData = window.ResultStorage ? window.ResultStorage.getResults() : null;
+    if (!savedData) return { ok: false, reason: "missing-results" };
 
-  if (localStorage.getItem(submittedFlagKey)) return;
+    let winnerData = savedData[awardName];
+    // 일반 Nominate 페이지가 저장하는 TOP3 rank 결과도 기존 저장 형식 그대로 읽는다.
+    if (!winnerData && ["대상", "최우수상", "우수상"].includes(awardName)) {
+      winnerData = (savedData["올해의 애니메이션"] || []).find(item => item.rank === awardName);
+    }
+    if (!winnerData) return { ok: false, reason: "missing-winner" };
 
-  // ✅ 시즌별로 분리 저장된 결과를 ResultStorage에서 읽음
-  const savedData = window.ResultStorage ? window.ResultStorage.getResults() : null;
-  if (!savedData || !savedData[awardName]) return;
+    const winners = Array.isArray(winnerData) ? winnerData : [winnerData];
+    const candidateIds = winners.map(window.getWinnerIdentifier);
+    if (candidateIds.some(id => typeof id !== "string" || !id.trim())) {
+      return { ok: false, reason: "invalid-candidate" };
+    }
 
-  const winnerData = savedData[awardName];
-  const basePath = window.getVotesCategoryPath(awardName);   // ← 시즌 포함 경로
-
-  if (Array.isArray(winnerData)) {
-    await Promise.all(winnerData.map(item => {
-      const id = window.getWinnerIdentifier(item);
-      const ref = window.fbRef(window.fbDB, `${basePath}/${id}`);
-      return window.fbTransaction(ref, (current) => (current || 0) + 1);
-    }));
-  } else {
-    const id = window.getWinnerIdentifier(winnerData);
-    const ref = window.fbRef(window.fbDB, `${basePath}/${id}`);
-    await window.fbTransaction(ref, (current) => (current || 0) + 1);
+    await anonymousUserReady;
+    const response = await submitVoteCallable({ seasonKey, awardName, candidateIds });
+    if (response.data?.alreadyVoted) {
+      console.info(`[Firebase] 이 익명 계정은 ${awardName}에 이미 제출했습니다.`);
+      return { ok: true, alreadyVoted: true };
+    }
+    return { ok: true, alreadyVoted: false };
+  } catch (error) {
+    console.error("Firebase 투표 제출 실패:", error);
+    return { ok: false, error };
   }
-
-  const participantsRef = window.fbRef(window.fbDB, `${basePath}/_participants`);
-  await window.fbTransaction(participantsRef, (current) => (current || 0) + 1);
-
-  localStorage.setItem(submittedFlagKey, 'true');
 };

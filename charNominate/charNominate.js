@@ -9,9 +9,6 @@ const charState = {
   awardName: ""
 };
 
-// ✅ 다른 nominate 페이지들과 통일: 득표율 캐시 변수
-let cachedVoteData = null;
-
 // 매핑 데이터
 const QUARTER_MAP = { "Q1": "1분기", "Q2": "2분기", "Q3": "3분기", "Q4": "4분기" };
 const DAY_LABELS = {
@@ -51,7 +48,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     renderStep1();
     bindEvents();
-    waitForFirebaseAndListen();   // ✅ 다른 파일들과 통일: DOMContentLoaded 안에서 호출
+    window.NominateCommon.waitForFirebaseAndListen(
+        () => charState.awardName
+    );
 });
 
 /**
@@ -200,7 +199,7 @@ function renderStep1(searchTerm = "") {
         left.appendChild(qSection);
     });
 
-    applyVoteBadges();   // ✅ 추가: 재렌더링(검색 등) 후에도 캐시된 득표율 즉시 반영
+    window.NominateCommon.applyVoteBadges();
 }
 
 /**
@@ -295,7 +294,7 @@ function goStep2() {
         grid.appendChild(card);
     });
 
-    applyVoteBadges();   // ✅ 추가: Step2 진입 시에도 뱃지 반영
+    window.NominateCommon.applyVoteBadges();
 }
 
 function selectFinalWinner(char, cardElement) {
@@ -348,38 +347,10 @@ function openAwardPopup() {
   
   document.getElementById("winner-modal").classList.remove("hidden");
   
-  fireConfetti();
+  window.NominateCommon.fireConfetti();
   if (window.submitSingleAwardToDB) {
       window.submitSingleAwardToDB(charState.awardName);
   }
-}
-
-function fireConfetti() {
-    const duration = 3 * 1000;
-    const end = Date.now() + duration;
-
-    (function frame() {
-        confetti({
-            particleCount: 3,
-            angle: 60,
-            spread: 55,
-            origin: { x: 0, y: 0.6 },
-            zIndex: 9999,
-            colors: ['#d4af37', '#ffffff']
-        });
-        confetti({
-            particleCount: 3,
-            angle: 120,
-            spread: 55,
-            origin: { x: 1, y: 0.6 }, 
-            zIndex: 9999,
-            colors: ['#d4af37', '#ffffff']
-        });
-
-        if (Date.now() < end) {
-            requestAnimationFrame(frame);
-        }
-    }());
 }
 
 function bindEvents() {
@@ -448,43 +419,4 @@ function groupByHierarchy(data) {
     grouped[qKey][item.day][item.animeTitle].push(item);
   });
   return grouped;
-}
-
-// ──────────────────────────────────────────────────────────
-// Firebase 실시간 득표율 뱃지 (다른 nominate 페이지들과 통일된 캐시 패턴)
-// ──────────────────────────────────────────────────────────
-function applyVoteBadges() {
-    if (!cachedVoteData) return;
-
-    const total = cachedVoteData._participants || 0;
-
-    document.querySelectorAll('.card').forEach(card => {
-        const animeId = card.getAttribute('data-anime-id');
-        const rateBadge = card.querySelector('.card-selection-rate');
-        if (!rateBadge || !animeId) return;
-
-        const count = cachedVoteData[animeId] || 0;
-        const percent = total > 0 ? Math.round((count / total) * 100) : 0;
-        rateBadge.innerText = `${percent}%`;
-        rateBadge.style.display = "block";
-    });
-}
-
-function listenToVoteRates() {
-    if (!window.fbOnValue || !window.fbDB) return;
-
-    const categoryRef = window.fbRef(window.fbDB, window.getVotesCategoryPath(charState.awardName));
-
-    window.fbOnValue(categoryRef, (snapshot) => {
-        cachedVoteData = snapshot.val() || {};
-        applyVoteBadges();
-    });
-}
-
-function waitForFirebaseAndListen() {
-    if (window.fbOnValue && window.fbDB) {
-        listenToVoteRates();
-    } else {
-        setTimeout(waitForFirebaseAndListen, 300);
-    }
 }

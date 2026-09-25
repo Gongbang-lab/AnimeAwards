@@ -1,10 +1,10 @@
 var AnimeMemeData_2026 = [
     {
         "id": "meme_001",
-        "name": "나오야 전투",
+        "name": "나오야 전투씬 1",
         "type": "gif", // image, gif, video 구분
         "src1": "image/meme/나오야 전투.gif",
-        "src2_title": "마사지",
+        "src2_title": "전투씬 2",
         "src2": "image/meme/나오야 마사지.gif",
         "origin": "주술회전 3기",
         "quarter": "1분기",
@@ -88,7 +88,7 @@ var AnimeMemeData_2026 = [
     },
     {
         "id": "meme_012",
-        "name": "펀치",
+        "name": "카즈야 펀치",
         "type": "webp",
         "src1": "image/meme/속이 뻥.webp",
         "origin": "여친, 빌리겠습니다 5기",
@@ -110,7 +110,7 @@ var AnimeMemeData_2026 = [
     },
     {
         "id": "meme_015",
-        "name": "자판기의 액션씬",
+        "name": "자동판매기의 액션씬",
         "type": "webp",
         "src1": "image/meme/자판기_1.webp",
         "src1": "image/meme/자판기_2.webp",
@@ -174,7 +174,7 @@ var AnimeMemeData_2026 = [
     },
     {
         "id": "meme_021",
-        "name": "발전한 검복동 액션씬",
+        "name": "검복동 액션씬",
         "type": "gif",
         "src1": "image/meme/검복동1.gif",
         "src2": "image/meme/검복동2.gif",
@@ -210,7 +210,7 @@ var AnimeMemeData_2026 = [
     },
     {
         "id": "meme_024",
-        "name": "그 장면",
+        "name": "에드워드...",
         "type": "mp4",
         "src1": "image/meme/그 장면.mp4",
         "origin": "황천의 츠가이",
@@ -222,6 +222,17 @@ var AnimeMemeData_2026 = [
         "name": "레노리노삐빠뽀",
         "type": "mp4",
         "src1": "image/meme/레노리노삐빠뽀.mp4",
+        "origin": "뫼비우스 더스트",
+        "quarter": "3분기",
+        "year" : 2026
+    },
+    {
+        "id": "meme_026",
+        "name": "리제로 전투씬",
+        "type": "gif",
+        "src1": "image/meme/리제로_1.gif",
+        "src2": "image/meme/리제로_2.gif",
+        "src3": "image/meme/리제로_3.gif",
         "origin": "뫼비우스 더스트",
         "quarter": "3분기",
         "year" : 2026

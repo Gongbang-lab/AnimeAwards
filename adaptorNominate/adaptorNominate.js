@@ -32,12 +32,11 @@ const AnimeByQuarter = SeasonFilteredList.reduce((acc, anime) => {
     return acc;
 }, {});
 
-let cachedVoteData = null;
-
 document.addEventListener("DOMContentLoaded", () => {
     const params = new URLSearchParams(window.location.search);
     nominateState.theme = params.get("theme");
-    nominateState.awardName = params.get("awardName");
+    const urlAwardName = params.get("awardName");
+    if (urlAwardName) nominateState.awardName = urlAwardName;
 
     // ✅ 수정: 표시용 이름은 toDisplayAwardName()으로 변환 (저장용 원본은 nominateState.awardName 그대로 유지)
     const modalAwardNameEl = document.getElementById("modal-award-name");
@@ -53,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("go-main-btn").onclick = () => location.href = "../index.html";
 
     renderStep1();
-    waitForFirebaseAndListen();
+    NominateCommon.waitForFirebaseAndListen(() => nominateState.awardName);
 });
 
 // ──────────────────────────────────────────────────────────
@@ -124,7 +123,7 @@ function renderStep1(filterText = "") {
         leftArea.appendChild(qSection);
     });
 
-    applyVoteBadges();
+    NominateCommon.applyVoteBadges();
 }
 
 function createCard(anime) {
@@ -229,7 +228,7 @@ function goStep2() {
         gridDiv.appendChild(createCard(anime));
     });
 
-    applyVoteBadges();
+    NominateCommon.applyVoteBadges();
 }
 
 function goStep1() {
@@ -291,13 +290,29 @@ function openAwardPopup() {
     document.getElementById("modal-studio").textContent = winner.studio || "-";
     document.getElementById("modal-adaptor").textContent = winner.adaptor ? winner.adaptor.join(", ") : "-";
     document.getElementById("winner-modal").classList.remove("hidden");
-    fireConfetti();
 
-    // ⚠️ 저장/투표 집계는 원본 awardName 그대로 사용 (표시명과 무관하게 키 일관성 유지)
-    ResultStorage.saveOne(nominateState.awardName, {
+    // 수상 결과는 애니메이션과 독립적으로 먼저 저장한다.
+    // URL에 awardName이 없더라도 기본 awardName을 유지하도록 위에서 방어한다.
+    const savedWinner = {
+        id: winner.id,
         title: winner.title,
-        thumbnail: winner.thumbnail
-    });
+        thumbnail: winner.thumbnail,
+        year: winner.year,
+        quarter: winner.quarter,
+        adaptor: winner.adaptor,
+        studio: winner.studio
+    };
+
+    try {
+        ResultStorage.saveOne(nominateState.awardName, savedWinner);
+        console.log("[adaptorNominate] 수상 결과 저장 완료:",
+            ResultStorage.getSeasonKey(), nominateState.awardName, savedWinner);
+    } catch (error) {
+        console.error("[adaptorNominate] 수상 결과 저장 실패:", error);
+    }
+
+    // 저장 이후 축하 애니메이션을 실행한다.
+    NominateCommon.fireConfetti();
 
     if (window.submitSingleAwardToDB) {
         window.submitSingleAwardToDB(nominateState.awardName);
@@ -306,59 +321,5 @@ function openAwardPopup() {
     }
 }
 
-function fireConfetti() {
-    const canvas = document.getElementById('confettiCanvas');
-    if (!canvas) return;
 
-    const myConfetti = confetti.create(canvas, { resize: true, useWorker: true });
-    const animationEnd = Date.now() + 3000;
-
-    (function frame() {
-        if (Date.now() >= animationEnd) return;
-        myConfetti({ particleCount: 3, angle: 60, spread: 55, origin: { x: 0, y: 0.8 }, colors: ['#d4af37', '#ffffff', '#aa8a2e'] });
-        myConfetti({ particleCount: 3, angle: 120, spread: 55, origin: { x: 1, y: 0.8 }, colors: ['#d4af37', '#ffffff', '#aa8a2e'] });
-        requestAnimationFrame(frame);
-    }());
-}
-
-// ──────────────────────────────────────────────────────────
-// Firebase 실시간 득표율 뱃지
-// ──────────────────────────────────────────────────────────
-function applyVoteBadges() {
-    if (!cachedVoteData) return;
-
-    const total = cachedVoteData._participants || 0;
-
-    document.querySelectorAll('.card').forEach(card => {
-        const animeId = card.getAttribute('data-anime-id');
-        const rateBadge = card.querySelector('.card-selection-rate');
-        if (!rateBadge || !animeId) return;
-
-        const count = cachedVoteData[animeId] || 0;
-        const percent = total > 0 ? Math.round((count / total) * 100) : 0;
-        rateBadge.innerText = `${percent}%`;
-        rateBadge.style.display = "block";
-    });
-}
-
-function listenToVoteRates() {
-    if (!window.fbOnValue || !window.fbDB) return;
-
-    const categoryRef = window.fbRef(window.fbDB, window.getVotesCategoryPath(nominateState.awardName));
-
-    window.fbOnValue(categoryRef, (snapshot) => {
-        cachedVoteData = snapshot.val() || {};
-        applyVoteBadges();
-    });
-}
-
-function waitForFirebaseAndListen() {
-    if (window.fbOnValue && window.fbDB) {
-        listenToVoteRates();
-    } else {
-        setTimeout(waitForFirebaseAndListen, 300);
-    }
-}
-
-waitForFirebaseAndListen();
 renderStep1();

@@ -7,7 +7,6 @@ const dirState = {
     finalWinner: null,
     awardName: ""
 };
-let cachedVoteData = null;
 
 /**
  * ✅ 추가: 시즌(분기) 기준으로 필터링된 감독 목록을 반환
@@ -42,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("btn-back").onclick = handleBack;
     document.getElementById("final-confirm-btn").onclick = () => location.href = "../index.html";
 
-    waitForFirebaseAndListen();
+    NominateCommon.waitForFirebaseAndListen(() => dirState.awardName);
 });
 
 /**
@@ -86,7 +85,7 @@ function renderDirectorGrid(searchTerm = "") {
         });
         container.appendChild(finalGrid);
 
-        applyVoteBadges();   // ✅ 추가: Step2 진입 시에도 뱃지 반영
+        NominateCommon.applyVoteBadges();   // Step2 진입 시에도 뱃지 반영
         return;
     }
 
@@ -129,7 +128,7 @@ function renderDirectorGrid(searchTerm = "") {
         container.appendChild(qSection);
     });
 
-    applyVoteBadges();
+    NominateCommon.applyVoteBadges();
 }
 
 /**
@@ -376,7 +375,7 @@ function openWinnerModal() {
     `;
 
     document.getElementById("winner-modal").classList.remove("hidden");
-    fireConfetti();
+    NominateCommon.fireConfetti();
     
     ResultStorage.saveOne(dirState.awardName, {
         name: winner.director,
@@ -393,66 +392,3 @@ function closeModal(id) {
     document.getElementById(id).classList.add("hidden");
 }
 
-function fireConfetti() {
-    const duration = 3 * 1000;
-    const end = Date.now() + duration;
-
-    (function frame() {
-        confetti({
-            particleCount: 3,
-            angle: 60,
-            spread: 55,
-            origin: { x: 0, y: 0.6 },
-            zIndex: 9999,
-            colors: ['#d4af37', '#ffffff']
-        });
-        confetti({
-            particleCount: 3,
-            angle: 120,
-            spread: 55,
-            origin: { x: 1, y: 0.6 }, 
-            zIndex: 9999,
-            colors: ['#d4af37', '#ffffff']
-        });
-
-        if (Date.now() < end) {
-            requestAnimationFrame(frame);
-        }
-    }());
-}
-
-function applyVoteBadges() {
-    if (!cachedVoteData) return;
-
-    const total = cachedVoteData._participants || 0;
-
-    document.querySelectorAll('.card').forEach(card => {
-        const animeId = card.getAttribute('data-anime-id');
-        const rateBadge = card.querySelector('.card-selection-rate');
-        if (!rateBadge || !animeId) return;
-
-        const count = cachedVoteData[animeId] || 0;
-        const percent = total > 0 ? Math.round((count / total) * 100) : 0;
-        rateBadge.innerText = `${percent}%`;
-        rateBadge.style.display = "block";
-    });
-}
-
-function listenToVoteRates() {
-    if (!window.fbOnValue || !window.fbDB) return;
-
-    const categoryRef = window.fbRef(window.fbDB, window.getVotesCategoryPath(dirState.awardName));
-
-    window.fbOnValue(categoryRef, (snapshot) => {
-        cachedVoteData = snapshot.val() || {};
-        applyVoteBadges();
-    });
-}
-
-function waitForFirebaseAndListen() {
-    if (window.fbOnValue && window.fbDB) {
-        listenToVoteRates();
-    } else {
-        setTimeout(waitForFirebaseAndListen, 300);
-    }
-}

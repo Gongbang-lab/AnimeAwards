@@ -323,7 +323,7 @@ function showResult() {
     `;
 
     modal.classList.remove('hidden');
-    fireConfetti();
+    window.NominateCommon.fireConfetti();
 }
 
 function saveToLocalStorage() {
@@ -349,32 +349,4 @@ function saveToLocalStorage() {
     } catch (error) {
         console.error("localStorage 저장 중 오류 발생:", error);
     }
-}
-
-function fireConfetti() {
-    const duration = 3 * 1000;
-    const end = Date.now() + duration;
-
-    (function frame() {
-        confetti({
-            particleCount: 3,
-            angle: 60,
-            spread: 55,
-            origin: { x: 0, y: 0.6 },
-            zIndex: 9999,
-            colors: ['#d4af37', '#ffffff']
-        });
-        confetti({
-            particleCount: 3,
-            angle: 120,
-            spread: 55,
-            origin: { x: 1, y: 0.6 }, 
-            zIndex: 9999,
-            colors: ['#d4af37', '#ffffff']
-        });
-
-        if (Date.now() < end) {
-            requestAnimationFrame(frame);
-        }
-    }());
 }
