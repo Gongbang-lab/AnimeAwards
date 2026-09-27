@@ -3,9 +3,12 @@ const rookiestate = {
     awardName: null
 };
 
-// top30 / 31~50 후보군 상태 관리
+const ROOKIE_MAIN_LIMIT = 20;
+const ROOKIE_POOL_LIMIT = 70;
+
+// 상위 20명 / 21~70위 후보군 상태 관리
 let allRookieData = [];          // 전체 정렬된 리스트 (참고용)
-let rookiePoolCandidates = [];   // 31~50위 중 아직 메인 페이지에 추가되지 않은 후보군
+let rookiePoolCandidates = [];   // 21~70위 중 아직 메인 페이지에 추가되지 않은 후보군
 let poolSelectedNames = new Set(); // 후보군 모달에서 체크된 이름
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -39,8 +42,8 @@ function closeCriteriaModal() {
 
 /**
  * 그리드 렌더링
- * - score(또는 rank) 기준 상위 30명만 카드로 렌더링
- * - 31~50위는 rookiePoolCandidates에 보관만 해두고, "후보군" 모달에서 선택적으로 추가
+ * - 점수순 상위 20명만 카드로 렌더링
+ * - 21~70위는 rookiePoolCandidates에 보관하고, "후보군" 모달에서 선택적으로 추가
  */
 function renderRookieGrid() {
     const grid = document.getElementById("rookie-grid");
@@ -48,17 +51,19 @@ function renderRookieGrid() {
 
     grid.innerHTML = "";
 
-    // rank 기준 오름차순 정렬(1위가 가장 먼저) - rank 없으면 score 내림차순으로 대체
+    // 점수 내림차순 정렬. 동점이면 추출기에서 부여한 rank를 사용한다.
     allRookieData = Object.values(RookieCVData_2026).sort((a, b) => {
+        const scoreDiff = (b.score || 0) - (a.score || 0);
+        if (scoreDiff !== 0) return scoreDiff;
         if (a.rank != null && b.rank != null) return a.rank - b.rank;
-        return (b.score || 0) - (a.score || 0);
+        return a.name.localeCompare(b.name);
     });
 
-    const top30 = allRookieData.slice(0, 30);
-    rookiePoolCandidates = allRookieData.slice(30, 70);
+    const top20 = allRookieData.slice(0, ROOKIE_MAIN_LIMIT);
+    rookiePoolCandidates = allRookieData.slice(ROOKIE_MAIN_LIMIT, ROOKIE_POOL_LIMIT);
 
     // 카드는 이름순 정렬 유지 (기존 UX와 동일)
-    const cardList = [...top30].sort((a, b) => a.name.localeCompare(b.name));
+    const cardList = [...top20].sort((a, b) => a.name.localeCompare(b.name));
     cardList.forEach(cv => grid.appendChild(createRookieCard(cv)));
 
     window.NominateCommon.applyVoteBadges();
@@ -207,7 +212,7 @@ function handleCandidatePoolAdd() {
     poolSelectedNames.clear();
 
     renderCandidatePoolTable();
-    applyVoteBadges();
+    window.NominateCommon.applyVoteBadges();
 }
 
 /**
@@ -240,11 +245,12 @@ function showWorksModal(cv) {
 
         <div class="cv-score-breakdown">
             <h3 class="cv-info-subtitle">점수 breakdown</h3>
-            <div class="score-row"><span>경력 (career)</span><span>${sb.career ?? '-'}</span></div>
-            <div class="score-row"><span>전체 작품수 (totalWorks)</span><span>${sb.totalWorks ?? '-'}</span></div>
-            <div class="score-row"><span>당해 활동 작품수 (currentYearWorks)</span><span>${sb.currentYearWorks ?? '-'}</span></div>
-            <div class="score-row"><span>메인 역할 (mainRole)</span><span>${sb.mainRole ?? '-'}</span></div>
-            <div class="score-row"><span>최근 성장세 (recentGrowth)</span><span>${sb.recentGrowth ?? '-'}</span></div>
+            <div class="score-row"><span>데뷔 시점 (/15)</span><span>${sb.careerRecency ?? sb.career ?? '-'}</span></div>
+            <div class="score-row"><span>해당 연도 작품 수 (/27)</span><span>${sb.currentYearWorks ?? '-'}</span></div>
+            <div class="score-row"><span>해당 연도 이전 작품 수 (/10)</span><span>${sb.priorWorks ?? sb.totalWorks ?? '-'}</span></div>
+            <div class="score-row"><span>최근 활동 증가 (/17)</span><span>${sb.recentGrowth ?? '-'}</span></div>
+            <div class="score-row"><span>캐릭터 인지도 (/19)</span><span>${sb.characterRecognition ?? '-'}</span></div>
+            <div class="score-row"><span>출연작 화제성 (/12)</span><span>${sb.mediaExposure ?? '-'}</span></div>
         </div>
 
         <div class="cv-stats">

@@ -2,37 +2,62 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>AniList Full History Extractor v33 CharacterQuarterFix Top70</title>
+<title>AniList Rookie Extractor v35 RoleWeighted Top70</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
 <style>
 body{background:#0b0e14;color:#ecf0f1;font-family:'Pretendard',sans-serif;padding:20px}.container{max-width:1100px;margin:0 auto;background:#151f28;padding:30px;border-radius:15px;border:1px solid #2e3c4a}button,select{padding:10px 14px;border-radius:5px;border:1px solid #2e3c4a;font-weight:bold}button{cursor:pointer;background:#00d1b2;color:#000;border:0;margin-right:5px}button:hover{opacity:.8}button:disabled{opacity:.4;cursor:not-allowed}.controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:12px}.controls select{background:#0b1622;color:#ecf0f1}.progress-bar{height:8px;background:#2e3c4a;width:100%;border-radius:4px;margin:10px 0}.progress-bar div{height:100%;background:#00d1b2;width:0%;transition:.3s}.stats{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0}.stat{background:#0b1622;border:1px solid #2e3c4a;border-radius:8px;padding:8px 12px;color:#b8c7cf}.stat b{color:#fff}.panel{background:#0b1622;border:1px solid #2e3c4a;border-radius:8px;padding:12px;margin:12px 0}.candidate-row{display:flex;align-items:center;gap:10px;padding:7px;border-bottom:1px solid #202d38}.candidate-row:last-child{border-bottom:0}.candidate-row label{flex:1;cursor:pointer}.score{font-weight:bold;min-width:70px}.rising{color:#00d1b2}.candidate{color:#f1c40f}#log{background:#000;color:#00ffcc;height:430px;overflow-y:auto;padding:15px;font-family:monospace;font-size:12px;border:1px solid #2e3c4a;margin-bottom:10px;line-height:1.6}textarea{width:100%;height:280px;background:#0b1622;color:#8ba3ad;border:1px solid #2e3c4a;border-radius:8px;padding:10px;font-size:11px;box-sizing:border-box}.muted{color:#8ba3ad;font-size:12px}
+@media(max-width:600px){.translation-row{grid-template-columns:1fr!important}}
 </style>
 </head>
 <body>
 <div class="container">
-<h1>AniList Full History Extractor v33 CharacterQuarterFix Top70</h1>
-<p style="color:#8ba3ad;">2단계 빠른 필터 · 분야별 최소조건 · 최종 Top 70 · 작품명/캐릭터명/역할 저장 · 캐시 검증 지원</p>
+<h1>AniList Rookie Extractor v35 RoleWeighted Top70</h1>
+<p style="color:#8ba3ad;">가중 점수 필터(70점 컷오프) · 캐릭터 인지도/작품 화제성 · 속편 통합 · 최종 Top 70 · 작품명/캐릭터명/역할 저장</p>
 <div class="controls">
 <label>연도 <select id="year-select"></select></label>
 <label>조회 범위 <select id="quarter-select"><option value="1">1분기까지</option><option value="2">2분기까지</option><option value="3">3분기까지</option><option value="4" selected>4분기까지</option></select></label>
 <button onclick="startExtraction()">빠른 전체 추출 시작</button>
-<button style="background:#f1c40f" onclick="downloadJS()">JS 저장</button>
+<button id="js-btn" style="background:#f1c40f" onclick="downloadJS()" disabled>번역 반영 후 JS 저장</button>
 <button id="img-btn" style="background:#e74c3c;color:#fff" onclick="downloadAllImages()" disabled>이미지 ZIP</button>
 <button style="background:#7f8c8d;color:#fff" onclick="clearCache()">캐시 삭제</button>
 </div>
-<div class="muted">API 호출은 여러 성우를 한 GraphQL 요청에 묶어서 처리합니다. 캐시는 성우 이력/최종 상세 데이터를 브라우저에 저장합니다. 최종 JS에는 Top 70 전체가 저장되며, 사용할 30명 선택은 별도의 데이터 처리 JS에서 수행하면 됩니다. 상세 캐시는 캐릭터 데이터가 없는 경우 자동으로 다시 조회합니다.</div>
+<div class="muted">총 100점 중 70점 이상을 통과시킵니다. 주연/조연 배역만 포함하며 배경 배역은 제외합니다. 배점: 데뷔 최근성 15 / 올해 작품 27 / 이전 작품 10 / 최근 성장 17 / 캐릭터 인지도 19 / 작품 화제성 12. popularity는 AniList 목록에 등록한 사용자 수(누적 관심), trending은 최근 1시간의 관련 활동량이며, 둘은 작품 인지·관심도의 참고 지표입니다. 속편/전작은 AniList 관계로 통합합니다.</div>
 <div class="progress-bar"><div id="bar-fill"></div></div>
 <div class="stats" id="stats"></div>
 <div id="candidate-panel" class="panel"></div>
+<div id="translation-panel" class="panel" style="display:none">
+  <h2 style="margin-top:0">추출 후 한국어 번역</h2>
+  <p class="muted">추출이 끝난 뒤 성우 이름, 작품명, 캐릭터명을 직접 입력해 번역할 수 있습니다. 번역하지 않은 값은 원문으로 유지됩니다. 입력을 마치면 [번역 반영]을 누른 뒤 JS를 저장하세요.</p>
+  <div id="translation-fields"></div>
+  <button id="apply-translations-btn" type="button" style="margin-top:12px">번역 반영 및 JS 결과 갱신</button>
+  <span id="translation-status" class="muted" style="margin-left:8px"></span>
+  <div style="border-top:1px solid #2e3c4a;margin-top:16px;padding-top:12px">
+    <p class="muted">ID로 찾지 못한 고유 항목은 JSON으로 묶어 내보내 번역 도구에 한 번에 요청할 수 있습니다. <code>field</code>와 <code>source</code>는 유지하고 <code>korean</code> 값만 채운 JSON을 아래에 붙여넣으세요.</p>
+    <div class="controls">
+      <button id="export-unmatched-btn" type="button" style="background:#3498db;color:#fff">미매칭 JSON 만들기</button>
+      <button id="import-translations-btn" type="button" style="background:#8e44ad;color:#fff">번역 JSON 가져오기</button>
+    </div>
+    <textarea id="translation-batch-json" rows="8" style="height:220px" placeholder="미매칭 목록이 여기에 표시됩니다. 번역한 JSON을 붙여넣고 [번역 JSON 가져오기]를 누르세요."></textarea>
+  </div>
+</div>
 <div id="log">준비 완료. 연도와 조회 범위를 선택한 후 [빠른 전체 추출 시작]을 눌러주세요.</div>
 <textarea id="output" readonly placeholder="결과 JSON이 여기에 생성됩니다."></textarea>
 </div>
+<!--
+  주의: 아래 3개 데이터 스크립트는 2026년으로 고정되어 있습니다.
+  다른 연도로 추출하려면 파일 경로와 전역 변수명(AnimeList_YYYY 등)이 실제 연도에 맞는 파일을 가리키도록 교체해야 합니다.
+  buildKoreanIndexes()는 THIS_YEAR를 기준으로 동적으로 전역 변수명을 찾으므로, 스크립트 태그만 교체하면 로직 수정 없이 동작합니다.
+-->
+<script src="../data/2026/2026animeData.js"></script>
+<script src="../data/2026/2026animeCharacterData.js"></script>
+<script src="../data/2026/2026animeCVData.js"></script>
 <script>
-let rookieStore={},imageFiles=[],candidateMap=new Map(),THIS_YEAR=2026,END_QUARTER=4;
-const TOP_LIMIT=70,MIN_TOTAL_SCORE=40;const MIN_FIELD={career:10,currentYearWorks:15,mainRole:8,totalWorks:5,recentGrowth:5};
-const ANILIST_URL='https://graphql.anilist.co',REQUEST_GAP=2150,STAFF_BATCH=5,DETAIL_BATCH=3,CACHE_SUMMARY='anilist_v30_summary_cache',CACHE_FULL='anilist_v30_full_cache_qfilter_v5';const IMAGE_TARGET_WIDTH=1200,IMAGE_MIN_WIDTH=600,IMAGE_MAX_SCALE=3,IMAGE_JPEG_QUALITY=0.95;
+let rookieStore={},imageFiles=[],candidateMap=new Map(),mediaParent=new Map(),currentMediaStats=new Map(),mediaExposureByFranchise=new Map(),THIS_YEAR=2026,END_QUARTER=4;
+const TOP_LIMIT=70,MIN_TOTAL_SCORE=70;
+const ANILIST_URL='https://graphql.anilist.co',REQUEST_GAP=2150,STAFF_BATCH=10,DETAIL_BATCH=3,CACHE_SUMMARY='anilist_v33_rolefiltered_summary_cache',CACHE_FULL='anilist_v31_rolefiltered_full_cache_v7';const IMAGE_TARGET_WIDTH=1200,IMAGE_MIN_WIDTH=600,IMAGE_MAX_SCALE=3,IMAGE_JPEG_QUALITY=0.95;
 let lastRequestAt=0;
+let manualTranslations={},autoTranslations={},autoTranslationConflicts=new Set(),translationApplied=false,koreanIndexes=null;
 function sleep(ms){return new Promise(r=>setTimeout(r,ms))}
 function clean(str){return(str||'').replace(/[^가-힣a-zA-Z0-9]/g,'')}
 function getSelectedEndDate(){
@@ -56,42 +81,223 @@ function initSelectors(){const s=document.getElementById('year-select'),y=new Da
 function getSelectedConditions(){THIS_YEAR=parseInt(document.getElementById('year-select').value,10);END_QUARTER=parseInt(document.getElementById('quarter-select').value,10)}
 function loadJsonCache(key){try{return JSON.parse(localStorage.getItem(key)||'{}')}catch(e){return{}}}
 function saveJsonCache(key,data){try{localStorage.setItem(key,JSON.stringify(data))}catch(e){addLog(`<span style="color:#f39c12">⚠️ 캐시 저장 실패(용량 초과 가능)</span><br>`)} }
-function clearCache(){localStorage.removeItem(CACHE_SUMMARY);localStorage.removeItem(CACHE_FULL);addLog(`<br>🧹 v28 캐시를 삭제했습니다.<br>`)}
+function clearCache(){localStorage.removeItem(CACHE_SUMMARY);localStorage.removeItem(CACHE_FULL);addLog(`<br>🧹 요약/상세 캐시를 삭제했습니다.<br>`)}
 async function waitForSlot(){const wait=Math.max(0,REQUEST_GAP-(Date.now()-lastRequestAt));if(wait)await sleep(wait);lastRequestAt=Date.now()}
 async function gql(query,variables=null,retries=5){for(let attempt=0;attempt<=retries;attempt++){await waitForSlot();try{const res=await fetch(ANILIST_URL,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({query,variables})});const limit=res.headers.get('x-ratelimit-limit'),remaining=res.headers.get('x-ratelimit-remaining');if(limit&&remaining&&Number(remaining)<=3)addLog(`<span style="color:#f39c12">⚠️ API 잔여 요청 ${remaining}/${limit}</span><br>`);if(!res.ok){let t='';try{t=await res.text()}catch(e){}if(res.status===429){const wait=Math.max(2,parseInt(res.headers.get('retry-after')||'15',10));addLog(`<span style="color:#e74c3c">❌ HTTP 429 → ${wait}초 대기 후 재시도</span><br>`);await sleep((wait+1)*1000);continue}if(attempt<retries){await sleep(2500);continue}addLog(`<span style="color:#e74c3c">❌ HTTP ${res.status}</span><br><span style="color:#f39c12">${escapeHtml(t.slice(0,800))}</span><br>`);return null}const json=await res.json();if(json.errors){const msg=json.errors.map(e=>e.message||'Unknown error').join(' | ');addLog(`<span style="color:#e74c3c">❌ GraphQL:</span> ${escapeHtml(msg)}<br>`);return null}return json.data}catch(e){if(attempt<retries){await sleep(2500);continue}addLog(`<span style="color:#e74c3c">❌ Network Error:</span> ${escapeHtml(e.message||String(e))}<br>`);return null}}return null}
-const SEASON_QUERY=`query($season:MediaSeason,$seasonYear:Int,$page:Int){Page(page:$page,perPage:50){pageInfo{hasNextPage}media(season:$season,seasonYear:$seasonYear,type:ANIME){id title{romaji} characters(page:1,perPage:50){edges{role node{id name{full}} voiceActors{id name{full native} language languageV2}}}}}}`;
+const SEASON_QUERY=`query($season:MediaSeason,$seasonYear:Int,$page:Int){Page(page:$page,perPage:50){pageInfo{hasNextPage}media(season:$season,seasonYear:$seasonYear,type:ANIME){id title{romaji} popularity trending relations{edges{relationType node{id type}}} characters(page:1,perPage:50){pageInfo{hasNextPage}edges{role node{id name{full} favourites image{large medium}} voiceActors{id name{full native} language languageV2}}}}}}`;
+const MEDIA_CHARACTERS_QUERY=`query($id:Int,$page:Int){Media(id:$id){characters(page:$page,perPage:50){pageInfo{hasNextPage}edges{role node{id name{full} favourites image{large medium}} voiceActors{id name{full native} language languageV2}}}}}`;
 const STAFF_LIGHT_PREFIX=`query{`;
-const STAFF_LIGHT_FIELDS=`name{full} characterMedia(sort:START_DATE_DESC,page:PAGE,perPage:25){pageInfo{hasNextPage}edges{characterRole node{id startDate{year}}}}`;
+const STAFF_LIGHT_FIELDS=`name{full} characterMedia(sort:START_DATE_DESC,page:PAGE,perPage:25){pageInfo{hasNextPage}edges{characterRole characters{id} node{id startDate{year month} relations{edges{relationType node{id type}}}}}}`;
 const STAFF_FULL_PREFIX=`query{`;
 const STAFF_FULL_FIELDS=`name{full} image{large medium} characterMedia(sort:START_DATE_DESC,page:PAGE,perPage:25){pageInfo{hasNextPage}edges{characterRole characterName characters{id name{full} image{large medium}} node{id title{romaji english native} startDate{year month day}}}}`;
 function hasJapaneseScript(str){return /[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FFF]/.test(str||'')}
-function isJapaneseVoiceActor(va){
-  if(!va) return false;
-  const langTagOk = va.languageV2?.toLowerCase()==='japanese' || va.language?.toUpperCase()==='JAPANESE';
-  const nativeScriptOk = hasJapaneseScript(va.name?.native);
-  return langTagOk && nativeScriptOk;
+function isScoredCharacterRole(role){return role==='MAIN'||role==='SUPPORTING'}
+function getVoiceActorLanguage(va){
+  if(!va)return '';
+  const languageV2=typeof va.languageV2==='string'?va.languageV2.trim():'';
+  if(languageV2)return languageV2.toLowerCase();
+  const legacyLanguage=typeof va.language==='string'?va.language.trim():'';
+  return legacyLanguage.toLowerCase();
 }
-async function scanSeason(season,year){let page=1,hasNext=true,mediaCount=0,edgeCount=0,japaneseVaCount=0,rejectedNonNativeCount=0;while(hasNext){addLog(`📄 ${season} page ${page} 요청...<br>`);const data=await gql(SEASON_QUERY,{season,seasonYear:year,page});if(!data?.Page){addLog(`<span style="color:#e74c3c">[FETCH FAIL]</span> ${season} page ${page}<br>`);break}const mediaList=data.Page.media||[];mediaCount+=mediaList.length;for(const anime of mediaList){for(const edge of anime.characters?.edges||[]){edgeCount++;if(edge.role==='BACKGROUND')continue;for(const va of edge.voiceActors||[]){const langTagOk = va?.languageV2?.toLowerCase()==='japanese' || va?.language?.toUpperCase()==='JAPANESE';if(langTagOk && !hasJapaneseScript(va?.name?.native)){rejectedNonNativeCount++;addLog(`<span style="color:#f39c12">⚠️ 언어태그는 일본어이나 native 표기가 비일본어라 제외: ${escapeHtml(va?.name?.full||'')} (${escapeHtml(anime.title?.romaji||'')})</span><br>`)}if(!isJapaneseVoiceActor(va)||!va.id)continue;japaneseVaCount++;if(!candidateMap.has(va.id))candidateMap.set(va.id,{id:va.id,name:va.name?.full||`Unknown-${va.id}`,thisYearRoles:[],thisYearAnimeIds:new Set(),thisYearCharacters:[]});const c=candidateMap.get(va.id);c.thisYearRoles.push(edge.role);c.thisYearAnimeIds.add(anime.id);c.thisYearCharacters.push({animeId:anime.id,animeTitle:anime.title?.romaji||'',character:edge.node?.name?.full||'',role:edge.role})}}}hasNext=!!data.Page.pageInfo?.hasNextPage;page++}addLog(`&nbsp;&nbsp;└ ${season}: 작품 ${mediaCount}개 / character-edge ${edgeCount}개 / 일본어 성우 매칭 ${japaneseVaCount}건 / native 검증 실패 제외 ${rejectedNonNativeCount}건<br>`)}
+function isJapaneseVoiceActor(va){return getVoiceActorLanguage(va)==='japanese'}
+function mediaFind(id){id=String(id);if(!mediaParent.has(id))mediaParent.set(id,id);if(mediaParent.get(id)!==id)mediaParent.set(id,mediaFind(mediaParent.get(id)));return mediaParent.get(id)}
+function mediaJoin(a,b){const ra=mediaFind(a),rb=mediaFind(b);if(ra!==rb)mediaParent.set(ra,rb)}
+function percentileRank(value,values){if(!Number.isFinite(value)||value<=0||!values.length)return 0;let low=0,high=values.length;while(low<high){const mid=(low+high)>>1;if(values[mid]<=value)low=mid+1;else high=mid}return low/values.length}
+function prepareMediaExposure(){const popularityValues=[...currentMediaStats.values()].map(x=>Number(x.popularity)||0).filter(x=>x>0).sort((a,b)=>a-b),trendingValues=[...currentMediaStats.values()].map(x=>Number(x.trending)||0).filter(x=>x>0).sort((a,b)=>a-b),groups=new Map();for(const [id,entry] of currentMediaStats){const root=mediaFind(id);if(!groups.has(root))groups.set(root,[]);groups.get(root).push({popularityRank:percentileRank(Number(entry.popularity)||0,popularityValues),trendingRank:percentileRank(Number(entry.trending)||0,trendingValues)})}mediaExposureByFranchise=new Map([...groups].map(([root,items])=>[root,{popularity:items.reduce((sum,x)=>sum+x.popularityRank,0)/items.length,trending:items.reduce((sum,x)=>sum+x.trendingRank,0)/items.length}]))}
+async function fetchAllCharacterEdges(mediaId, firstPageEdges, firstHasNext){
+  let edges=[...firstPageEdges];
+  let page=2, hasNext=firstHasNext;
+  while(hasNext){
+    const data=await gql(MEDIA_CHARACTERS_QUERY,{id:mediaId,page});
+    if(!data?.Media?.characters){
+      addLog(`<span style="color:#f39c12">⚠️ media ${mediaId} 캐릭터 ${page}페이지 조회 실패, 이후 페이지 생략</span><br>`);
+      break;
+    }
+    edges=edges.concat(data.Media.characters.edges||[]);
+    hasNext=!!data.Media.characters.pageInfo?.hasNextPage;
+    page++;
+  }
+  return edges;
+}
+async function scanSeason(season,year){let page=1,hasNext=true,mediaCount=0,edgeCount=0,japaneseVaCount=0,nativeScriptNoteCount=0;while(hasNext){addLog(`📄 ${season} page ${page} 요청...<br>`);const data=await gql(SEASON_QUERY,{season,seasonYear:year,page});if(!data?.Page){addLog(`<span style="color:#e74c3c">[FETCH FAIL]</span> ${season} page ${page}<br>`);break}const mediaList=data.Page.media||[];mediaCount+=mediaList.length;for(const anime of mediaList){currentMediaStats.set(anime.id,{season,popularity:Number(anime.popularity)||0,trending:Number(anime.trending)||0});mediaFind(anime.id);for(const rel of anime.relations?.edges||[])if(['PREQUEL','SEQUEL'].includes(rel.relationType)&&rel.node?.type==='ANIME'&&rel.node.id)mediaJoin(anime.id,rel.node.id);let charEdges=anime.characters?.edges||[];if(anime.characters?.pageInfo?.hasNextPage){charEdges=await fetchAllCharacterEdges(anime.id,charEdges,true);}for(const edge of charEdges){if(!isScoredCharacterRole(edge.role))continue;edgeCount++;for(const va of edge.voiceActors||[]){if(!isJapaneseVoiceActor(va)||!va.id)continue;japaneseVaCount++;if(!hasJapaneseScript(va?.name?.native)){nativeScriptNoteCount++;addLog(`<span style="color:#f39c12">ℹ️ 일본어 언어 태그로 포함, native 이름은 일본어 문자 아님(참고): ${escapeHtml(va?.name?.full||'')} (${escapeHtml(anime.title?.romaji||'')})</span><br>`)}if(!candidateMap.has(va.id))candidateMap.set(va.id,{id:va.id,name:va.name?.full||`Unknown-${va.id}`,thisYearRoles:[],thisYearAnimeIds:new Set(),thisYearCharacters:[]});const c=candidateMap.get(va.id);c.thisYearRoles.push(edge.role);c.thisYearAnimeIds.add(anime.id);c.thisYearCharacters.push({animeId:anime.id,characterId:edge.node?.id||null,animeTitle:anime.title?.romaji||'',character:edge.node?.name?.full||'',image:edge.node?.image?.large||edge.node?.image?.medium||'',favourites:Number(edge.node?.favourites)||0,role:edge.role})}}}hasNext=!!data.Page.pageInfo?.hasNextPage;page++}addLog(`&nbsp;&nbsp;└ ${season}: 작품 ${mediaCount}개 / 주연·조연 character-edge ${edgeCount}개 / 일본어 성우 매칭 ${japaneseVaCount}건 / native 이름 참고 로그 ${nativeScriptNoteCount}건<br>`)}
 function buildBatchLightQuery(ids,page){return STAFF_LIGHT_PREFIX+ids.map((id,i)=>`s${i}:Staff(id:${Number(id)}){${STAFF_LIGHT_FIELDS.replace('PAGE',page)}}`).join('')+'}'}
 function buildBatchFullQuery(ids,page){return STAFF_FULL_PREFIX+ids.map((id,i)=>`s${i}:Staff(id:${Number(id)}){${STAFF_FULL_FIELDS.replace('PAGE',page)}}`).join('')+'}'}
-function mergeWorkSummary(map,edges){for(const e of edges||[]){if(e.characterRole==='BACKGROUND')continue;const id=e.node?.id;if(!id)continue;if(!map.has(id))map.set(id,{id,year:e.node?.startDate?.year||0});}}
-async function collectLightBatch(list,cache){const states=new Map();for(const va of list){const cached=cache[va.id];if(cached&&cached.complete){states.set(va.id,{...cached,fromCache:true});continue}states.set(va.id,{id:va.id,name:va.name,workMap:new Map(),yearCounts:{},hasNext:true,page:1,totalPagesFetched:0})}let active=list.filter(v=>{const s=states.get(v.id);return !s.fromCache});while(active.length){const page=Math.max(...active.map(v=>states.get(v.id).page));const pageItems=active.filter(v=>states.get(v.id).page===page);const data=await gql(buildBatchLightQuery(pageItems.map(v=>v.id),page));if(!data){active=active.filter(v=>states.get(v.id).page!==page);for(const va of pageItems)states.set(va.id,{id:va.id,name:va.name,failed:true});continue}for(const va of pageItems){const s=states.get(va.id),staff=data[`s${pageItems.indexOf(va)}`];if(!staff){s.failed=true;s.hasNext=false;continue}mergeWorkSummary(s.workMap,staff.characterMedia?.edges);s.totalPagesFetched++;s.hasNext=!!staff.characterMedia?.pageInfo?.hasNextPage;if(s.workMap.size>40){s.hasNext=false;s.hardReject=true}else if(!s.hasNext){s.complete=true}}active=active.filter(v=>{const s=states.get(v.id);if(s.fromCache||s.failed)return false;if(s.hardReject)return false;if(s.hasNext){s.page++;return true}s.complete=true;return false})}for(const va of list){const s=states.get(va.id);if(s.fromCache)continue;if(s.failed||s.hardReject){cache[va.id]={id:va.id,name:va.name,totalWorks:s.workMap?.size||41,complete:true,hardReject:true};continue}let debutYear=0;for(const w of s.workMap.values()){if(w.year&&(debutYear===0||w.year<debutYear))debutYear=w.year;if(w.year)s.yearCounts[w.year]=(s.yearCounts[w.year]||0)+1}s.debutYear=debutYear;s.totalWorks=s.workMap.size;s.complete=true;cache[va.id]={id:va.id,name:va.name,debutYear,totalWorks:s.totalWorks,yearCounts:s.yearCounts,complete:true,hardReject:false}}saveJsonCache(CACHE_SUMMARY,cache);return states}
-function calcScore(va,s){const currentWorks=va.thisYearAnimeIds.size;const thisYearWorkMap=new Map();(va.thisYearCharacters||[]).forEach(x=>{if(!thisYearWorkMap.has(x.animeId))thisYearWorkMap.set(x.animeId,new Set());if(x.role)thisYearWorkMap.get(x.animeId).add(x.role)});const mainWorks=[...thisYearWorkMap.values()].filter(r=>r.has('MAIN')).length,supportingWorks=[...thisYearWorkMap.values()].filter(r=>r.has('SUPPORTING')).length,totalWorks=s.totalWorks||0,debutYear=s.debutYear||0,yearsActive=debutYear?THIS_YEAR-debutYear:999,yearCounts=s.yearCounts||{};let b={career:0,totalWorks:0,currentYearWorks:0,mainRole:0,recentGrowth:0};if(yearsActive<=2)b.career=40;else if(yearsActive<=4)b.career=30;else if(yearsActive===5)b.career=20;else if(yearsActive<=8)b.career=10;if(totalWorks<=5)b.totalWorks=15;else if(totalWorks<=10)b.totalWorks=12;else if(totalWorks<=15)b.totalWorks=10;else if(totalWorks<=20)b.totalWorks=7;else if(totalWorks<=30)b.totalWorks=3;if(currentWorks===2)b.currentYearWorks=30;else if(currentWorks===3)b.currentYearWorks=40;else if(currentWorks===4)b.currentYearWorks=35;else if(currentWorks===5)b.currentYearWorks=25;else if(currentWorks<=8)b.currentYearWorks=10;if(mainWorks>=2)b.mainRole=25;else if(mainWorks===1)b.mainRole=15;else if(supportingWorks>0)b.mainRole=8;const prev1=yearCounts[THIS_YEAR-1]||0,prev2=yearCounts[THIS_YEAR-2]||0,avgPrev=(prev1+prev2)/2;if(currentWorks>prev1&&prev1>=prev2&&prev1>0)b.recentGrowth=20;else if(currentWorks>prev1||currentWorks>avgPrev)b.recentGrowth=15;else if(currentWorks>=prev1&&currentWorks>0)b.recentGrowth=5;const score=Object.values(b).reduce((a,v)=>a+v,0),hardReject=totalWorks>40||currentWorks>8,scoreGrade=hardReject?'EXCLUDED':score>=65?'RISING':score>=40?'CANDIDATE':'EXCLUDED';return{score,scoreBreakdown:b,scoreGrade,debutYear,totalWorks,yearsActive,currentWorks,mainWorks,supportingWorks,yearCounts,prev1,prev2}}
-function evaluateFieldCriteria(r){const core={career:r.scoreBreakdown.career>=MIN_FIELD.career,currentYearWorks:r.scoreBreakdown.currentYearWorks>=MIN_FIELD.currentYearWorks,mainRole:r.scoreBreakdown.mainRole>=MIN_FIELD.mainRole};const support={totalWorks:r.scoreBreakdown.totalWorks>=MIN_FIELD.totalWorks,recentGrowth:r.scoreBreakdown.recentGrowth>=MIN_FIELD.recentGrowth};const corePassed=Object.values(core).filter(Boolean).length,supportPassed=Object.values(support).filter(Boolean).length;return{core,support,corePassed,supportPassed,qualified:r.score>=MIN_TOTAL_SCORE&&!r.hardReject&&corePassed>=2&&supportPassed>=1}}
-function cachedSummaryScore(va,s){if(s?.hardReject)return{score:0,scoreBreakdown:{},hardReject:true,fieldCriteria:{qualified:false}};const r=calcScore(va,s);r.fieldCriteria=evaluateFieldCriteria(r);return r}
-async function collectFullBatch(list,fullCache){const states=new Map();for(const va of list){const c=fullCache[va.id];if(c?.complete&&c.schemaVersion===5&&c.name===va.name&&Array.isArray(c.works)&&c.works.length>0&&c.works.some(w=>Array.isArray(w.characters)&&w.characters.length>0)){states.set(va.id,{...c,fromCache:true});continue}states.set(va.id,{id:va.id,name:va.name,workMap:new Map(),staffImageUrl:'',hasNext:true,page:1,failed:false})}let active=list.filter(v=>!states.get(v.id).fromCache);while(active.length){const page=Math.max(...active.map(v=>states.get(v.id).page));const pageItems=active.filter(v=>states.get(v.id).page===page);const data=await gql(buildBatchFullQuery(pageItems.map(v=>v.id),page));if(!data){for(const va of pageItems)states.get(va.id).failed=true;active=active.filter(v=>states.get(v.id).page!==page);continue}for(const va of pageItems){const s=states.get(va.id),staff=data[`s${pageItems.indexOf(va)}`];if(!staff){s.failed=true;s.hasNext=false;continue}s.staffImageUrl=staff.image?.large||staff.image?.medium||s.staffImageUrl;for(const e of staff.characterMedia?.edges||[]){if(e.characterRole==='BACKGROUND')continue;const id=e.node?.id;if(!id)continue;if(!s.workMap.has(id))s.workMap.set(id,{id,title:e.node?.title?.romaji||e.node?.title?.english||e.node?.title?.native||'',year:e.node?.startDate?.year||0,month:e.node?.startDate?.month||0,characters:[],roles:new Set()});const w=s.workMap.get(id);if(e.characterRole)w.roles.add(e.characterRole);for(const c of e.characters||[]){if(c?.id){const role=e.characterRole||'';if(!w.characters.some(x=>x.id===c.id&&x.role===role))w.characters.push({id:c.id,name:c.name?.full||'',image:c.image?.large||c.image?.medium||'',role})}}if((!e.characters||e.characters.length===0)&&e.characterName){const role=e.characterRole||'';if(!w.characters.some(x=>x.name===e.characterName&&x.role===role))w.characters.push({id:null,name:e.characterName,image:'',role})}}s.hasNext=!!staff.characterMedia?.pageInfo?.hasNextPage}active=active.filter(v=>{const s=states.get(v.id);if(s.failed)return false;if(s.hasNext){s.page++;return true}s.complete=true;return false})}for(const va of list){const s=states.get(va.id);if(s.fromCache)continue;if(s.failed)continue;const works=[...s.workMap.values()]
+function mergeWorkSummary(map,edges){for(const e of edges||[]){if(!isScoredCharacterRole(e.characterRole))continue;const id=e.node?.id;if(!id)continue;if(!map.has(id))map.set(id,{id,year:e.node?.startDate?.year||0,month:e.node?.startDate?.month||0,characterIds:new Set(),relatedIds:new Set()});const work=map.get(id);for(const c of e.characters||[])if(c?.id)work.characterIds.add(String(c.id));for(const rel of e.node?.relations?.edges||[])if(['PREQUEL','SEQUEL'].includes(rel.relationType)&&rel.node?.type==='ANIME'&&rel.node.id)work.relatedIds.add(String(rel.node.id));}}
+async function collectLightBatch(list,cache){const states=new Map();for(const va of list){const cached=cache[va.id];if(cached&&cached.complete&&cached.schemaVersion===33&&cached.cacheYear===THIS_YEAR){states.set(va.id,{...cached,fromCache:true});continue}states.set(va.id,{id:va.id,name:va.name,workMap:new Map(),yearCounts:{},hasNext:true,page:1,totalPagesFetched:0,failed:false})}let active=list.filter(v=>{const s=states.get(v.id);return !s.fromCache});while(active.length){const page=Math.max(...active.map(v=>states.get(v.id).page));const pageItems=active.filter(v=>states.get(v.id).page===page);const data=await gql(buildBatchLightQuery(pageItems.map(v=>v.id),page));if(!data){for(const va of pageItems){const s=states.get(va.id);s.failed=true;s.hasNext=false}active=active.filter(v=>states.get(v.id).page!==page);continue}for(const va of pageItems){const s=states.get(va.id),staff=data[`s${pageItems.indexOf(va)}`];if(!staff){s.failed=true;s.hasNext=false;continue}mergeWorkSummary(s.workMap,staff.characterMedia?.edges);s.totalPagesFetched++;s.hasNext=!!staff.characterMedia?.pageInfo?.hasNextPage;if(!s.hasNext)s.complete=true}active=active.filter(v=>{const s=states.get(v.id);if(s.fromCache||s.failed)return false;if(s.hasNext){s.page++;return true}s.complete=true;return false})}for(const va of list){const s=states.get(va.id);if(s.fromCache)continue;if(s.failed&&s.workMap.size===0){addLog(`<span style="color:#e74c3c">[SUMMARY FAIL]</span> ${escapeHtml(va.name)} — 데이터 없이 실패, 이번 회차에서 제외<br>`);continue}if(s.failed)addLog(`<span style="color:#f39c12">⚠️ ${escapeHtml(va.name)} 요약 일부 페이지 누락 (부분 데이터로 계산, 캐시에는 미완료로 표시)</span><br>`);let debutYear=0;for(const w of s.workMap.values())if(w.year&&(debutYear===0||w.year<debutYear))debutYear=w.year;const parent=new Map(),find=x=>{if(!parent.has(x))parent.set(x,x);if(parent.get(x)!==x)parent.set(x,find(parent.get(x)));return parent.get(x)},join=(a,b)=>{const ra=find(a),rb=find(b);if(ra!==rb)parent.set(ra,rb)};for(const w of s.workMap.values()){find(String(w.id));for(const related of w.relatedIds||[])join(String(w.id),related)}const allFranchises=new Set(),yearFranchises={};for(const w of s.workMap.values()){const root=find(String(w.id));allFranchises.add(root);if(!w.year)continue;if(w.year===THIS_YEAR&&!isWorkWithinSelectedPeriod(w.year,w.month))continue;(yearFranchises[w.year]||=new Set()).add(root)}for(const [year,franchises] of Object.entries(yearFranchises))s.yearCounts[year]=franchises.size;s.debutYear=debutYear;s.totalWorks=allFranchises.size;s.schemaVersion=33;s.cacheYear=THIS_YEAR;cache[va.id]={id:va.id,name:va.name,debutYear,totalWorks:s.totalWorks,yearCounts:s.yearCounts,complete:!s.failed,schemaVersion:33,cacheYear:THIS_YEAR}}saveJsonCache(CACHE_SUMMARY,cache);return states}
+function calcScore(va,s){const currentWorks=va.thisYearAnimeIds?.size||0,totalWorks=s.totalWorks||0,debutYear=s.debutYear||0,yearsActive=debutYear?Math.max(1,THIS_YEAR-debutYear+1):0,yearCounts=s.yearCounts||{},priorWorks=Math.max(0,totalWorks-(yearCounts[THIS_YEAR]||currentWorks)),prev1=yearCounts[THIS_YEAR-1]||0,prev2=yearCounts[THIS_YEAR-2]||0,avgPrev=(prev1+prev2)/2;const maxCharacterFavourites=Math.max(0,...(va.thisYearCharacters||[]).map(x=>Number(x.favourites)||0));const careerRecency=debutYear?(yearsActive<=3?15:yearsActive<=4?11:yearsActive<=6?6:0):0,currentYearPoints=currentWorks===0?0:currentWorks===1?8:currentWorks===2?16:currentWorks===3?22:currentWorks===4?25:27,priorWorkPoints=priorWorks<=30?10:priorWorks<=40?5:0,increase=currentWorks-avgPrev,recentGrowth=increase>=3?17:increase>=2?12:increase>=1?7:increase>=0&&currentWorks>0?2:0,characterRecognition=Math.round(19*Math.min(1,Math.log10(maxCharacterFavourites+1)/Math.log10(50001)));const exposureItems=[...va.thisYearAnimeIds].map(id=>mediaExposureByFranchise.get(String(id))).filter(Boolean),mediaExposure=exposureItems.length?Math.round(12*exposureItems.reduce((sum,x)=>sum+.7*x.popularity+.3*x.trending,0)/exposureItems.length):0;const b={careerRecency,currentYearWorks:currentYearPoints,priorWorks:priorWorkPoints,recentGrowth,characterRecognition,mediaExposure},score=Object.values(b).reduce((sum,value)=>sum+value,0);const rolesByAnime=new Map();for(const x of va.thisYearCharacters||[]){const root=mediaFind(x.animeId);if(!rolesByAnime.has(root))rolesByAnime.set(root,new Set());if(x.role)rolesByAnime.get(root).add(x.role)}const mainWorks=[...rolesByAnime.values()].filter(x=>x.has('MAIN')).length,supportingWorks=[...rolesByAnime.values()].filter(x=>x.has('SUPPORTING')).length;return{score,scoreBreakdown:b,scoreGrade:score>=MIN_TOTAL_SCORE?'CANDIDATE':'EXCLUDED',debutYear,totalWorks,priorWorks,yearsActive,currentWorks,mainWorks,supportingWorks,yearCounts,prev1,prev2,maxCharacterFavourites,mediaExposureValue:mediaExposure}}
+function evaluateFieldCriteria(r){return{qualified:r.score>=MIN_TOTAL_SCORE}}
+function cachedSummaryScore(va,s){const r=calcScore(va,s);r.fieldCriteria=evaluateFieldCriteria(r);return r}
+async function collectFullBatch(list,fullCache){const states=new Map();for(const va of list){const c=fullCache[va.id];if(c?.complete&&c.schemaVersion===7&&c.cacheYear===THIS_YEAR&&c.cacheQuarter===END_QUARTER&&c.name===va.name&&Array.isArray(c.works)&&c.works.length>0&&c.works.some(w=>Array.isArray(w.characters)&&w.characters.length>0)){states.set(va.id,{...c,fromCache:true});continue}states.set(va.id,{id:va.id,name:va.name,workMap:new Map(),staffImageUrl:'',hasNext:true,page:1,failed:false})}let active=list.filter(v=>!states.get(v.id).fromCache);while(active.length){const page=Math.max(...active.map(v=>states.get(v.id).page));const pageItems=active.filter(v=>states.get(v.id).page===page);const data=await gql(buildBatchFullQuery(pageItems.map(v=>v.id),page));if(!data){for(const va of pageItems)states.get(va.id).failed=true;active=active.filter(v=>states.get(v.id).page!==page);continue}for(const va of pageItems){const s=states.get(va.id),staff=data[`s${pageItems.indexOf(va)}`];if(!staff){s.failed=true;s.hasNext=false;continue}s.staffImageUrl=staff.image?.large||staff.image?.medium||s.staffImageUrl;for(const e of staff.characterMedia?.edges||[]){if(!isScoredCharacterRole(e.characterRole))continue;const id=e.node?.id;if(!id)continue;if(!s.workMap.has(id))s.workMap.set(id,{id,title:e.node?.title?.romaji||e.node?.title?.english||e.node?.title?.native||'',year:e.node?.startDate?.year||0,month:e.node?.startDate?.month||0,characters:[],roles:new Set()});const w=s.workMap.get(id);if(e.characterRole)w.roles.add(e.characterRole);for(const c of e.characters||[]){if(c?.id){const role=e.characterRole||'';if(!w.characters.some(x=>x.id===c.id&&x.role===role))w.characters.push({id:c.id,name:c.name?.full||'',image:c.image?.large||c.image?.medium||'',role})}}if((!e.characters||e.characters.length===0)&&e.characterName){const role=e.characterRole||'';if(!w.characters.some(x=>x.name===e.characterName&&x.role===role))w.characters.push({id:null,name:e.characterName,image:'',role})}}s.hasNext=!!staff.characterMedia?.pageInfo?.hasNextPage}active=active.filter(v=>{const s=states.get(v.id);if(s.failed)return false;if(s.hasNext){s.page++;return true}s.complete=true;return false})}for(const va of list){const s=states.get(va.id);if(s.fromCache)continue;if(s.failed&&s.workMap.size===0){addLog(`<span style="color:#e74c3c">[DETAIL FAIL]</span> ${escapeHtml(va.name)} — 데이터 없이 실패<br>`);continue}if(s.failed)addLog(`<span style="color:#f39c12">⚠️ ${escapeHtml(va.name)} 상세 일부 페이지 누락 (부분 데이터로 저장, 캐시에는 미완료로 표시되어 다음 실행 시 재조회)</span><br>`);const works=[...s.workMap.values()]
 .filter(w=>isWorkWithinSelectedPeriod(w.year,w.month))
-.map(w=>({id:w.id,title:w.title,year:w.year,month:w.month,roles:[...w.roles],characters:w.characters.map(c=>({id:c.id,name:c.name,image:c.image,role:c.role}))}));fullCache[va.id]={schemaVersion:5,id:va.id,name:va.name,staffImageUrl:s.staffImageUrl,works,complete:true}}saveJsonCache(CACHE_FULL,fullCache);return states}
-function renderCandidatePanel(){const rows=Object.values(rookieStore).sort((a,b)=>a.rank-b.rank);const panel=document.getElementById('candidate-panel');panel.style.display='block';panel.innerHTML=`<div style="font-weight:bold;margin-bottom:8px">최종 선별 Top 70</div><div class="muted" style="margin-bottom:8px">총점 40점 미만 및 분야별 최소조건 미충족 성우는 제외됩니다. 여기서는 30명을 추가로 자르지 않고 70명 전체를 저장합니다. <b>사용할 30명 선택은 이 데이터를 다루는 별도 JS에서 rank/score 기준으로 수행하면 됩니다.</b></div><div id="candidate-list"></div>`;const list=document.getElementById('candidate-list');rows.forEach(v=>{const row=document.createElement('div');row.className='candidate-row';row.innerHTML=`<label>#${v.rank} ${escapeHtml(v.name)} <span class="score">${v.score}점</span> <span class="muted">(총${v.stats.totalWorks} / 올해${v.stats.currentYearWorks} / MAIN${v.stats.mainWorks})</span></label>`;list.appendChild(row)})}
-async function startExtraction(){getSelectedConditions();const log=document.getElementById('log'),fill=document.getElementById('bar-fill');rookieStore={};imageFiles=[];candidateMap=new Map();document.getElementById('img-btn').disabled=true;fill.style.width='0%';setStats(0,0,0,0);document.getElementById('candidate-panel').innerHTML='';const q=['','1분기','2분기','3분기','4분기'];log.innerHTML=`📡 [1단계] ${THIS_YEAR}년 ${q[END_QUARTER]}까지 시즌 스캔 시작...<br>📌 상세 작품 데이터도 ${THIS_YEAR}년 ${q[END_QUARTER]}까지로 제한합니다.<br>`;const seasons=['WINTER','SPRING','SUMMER','FALL'].slice(0,END_QUARTER);for(const season of seasons)await scanSeason(season,THIS_YEAR);const allCandidates=[...candidateMap.values()],survivors=allCandidates.filter(v=>v.thisYearAnimeIds.size>=2&&v.thisYearRoles.some(r=>r==='MAIN'||r==='SUPPORTING'));setStats(allCandidates.length,survivors.length,0,0);addLog(`<br>🔍 시즌 단계: ${allCandidates.length}명 → 정밀 후보 ${survivors.length}명<br>⚡ [2단계] ${STAFF_BATCH}명씩 묶어 전체 이력 요약 조회...<br>`);const summaryCache=loadJsonCache(CACHE_SUMMARY),summaryStates=new Map();let done=0;for(let i=0;i<survivors.length;i+=STAFF_BATCH){const batch=survivors.slice(i,i+STAFF_BATCH),states=await collectLightBatch(batch,summaryCache);for(const va of batch)summaryStates.set(va.id,states.get(va.id));done+=batch.length;fill.style.width=`${Math.min(45,45*done/Math.max(1,survivors.length))}%`;addLog(`　요약 ${Math.min(done,survivors.length)}/${survivors.length} 완료<br>`)}const qualified=[];for(const va of survivors){const s=summaryStates.get(va.id);if(!s||s.failed)continue;const r=cachedSummaryScore(va,s),f=r.fieldCriteria||{qualified:false,corePassed:0,supportPassed:0};addLog(`[평가] ${escapeHtml(va.name)} | SCORE ${r.score} | 경력:${r.scoreBreakdown.career} / 전체:${r.scoreBreakdown.totalWorks} / 올해:${r.scoreBreakdown.currentYearWorks} / MAIN:${r.scoreBreakdown.mainRole} / 성장:${r.scoreBreakdown.recentGrowth} | 핵심 ${f.corePassed}/3 · 보조 ${f.supportPassed}/2 → ${f.qualified?'통과 ✅':'제외'}<br>`);if(!f.qualified)continue;qualified.push({...va,summary:s,result:r})}qualified.sort((a,b)=>b.result.score-a.result.score||b.result.scoreBreakdown.currentYearWorks-a.result.scoreBreakdown.currentYearWorks||b.result.scoreBreakdown.mainRole-a.result.scoreBreakdown.mainRole||b.result.scoreBreakdown.recentGrowth-a.result.scoreBreakdown.recentGrowth||a.name.localeCompare(b.name));const passed=qualified.slice(0,TOP_LIMIT);passed.forEach((x,i)=>{x.rank=i+1});setStats(allCandidates.length,survivors.length,qualified.length,passed.length);addLog(`<br>🎯 분야별 최소조건 통과 ${qualified.length}명 → 상위 ${passed.length}명만 선별<br>🧩 [3단계] 상위 ${TOP_LIMIT}명 전체의 캐릭터/작품/역할/이미지 상세 조회...<br>`);const fullCache=loadJsonCache(CACHE_FULL);let fullDone=0;addLog(`　ℹ️ 상세 캐시는 작품/캐릭터 데이터가 있는 항목만 재사용합니다.<br>`);for(let i=0;i<passed.length;i+=DETAIL_BATCH){const batch=passed.slice(i,i+DETAIL_BATCH),states=await collectFullBatch(batch,fullCache);for(const va of batch){const s=states.get(va.id),r=va.result;if(!s||s.failed){addLog(`<span style="color:#e74c3c">[DETAIL FAIL]</span> ${escapeHtml(va.name)}<br>`);continue}const fullHistoryMap=new Map();const usedImageNames=new Set();
+.map(w=>({id:w.id,title:w.title,year:w.year,month:w.month,roles:[...w.roles],characters:w.characters.map(c=>({id:c.id,name:c.name,image:c.image,role:c.role}))}));fullCache[va.id]={schemaVersion:7,id:va.id,name:va.name,cacheYear:THIS_YEAR,cacheQuarter:END_QUARTER,staffImageUrl:s.staffImageUrl,works,complete:!s.failed}}saveJsonCache(CACHE_FULL,fullCache);return states}
+function renderCandidatePanel(){const rows=Object.values(rookieStore).sort((a,b)=>a.rank-b.rank);const panel=document.getElementById('candidate-panel');panel.style.display='block';panel.innerHTML=`<div style="font-weight:bold;margin-bottom:8px">최종 선별 Top 70</div><div class="muted" style="margin-bottom:8px">100점 만점 중 70점 이상을 통과시킵니다. 배점은 데뷔 최근성 15, 올해 작품 27, 이전 작품 10, 최근 성장 17, 캐릭터 인지도 19, 작품 화제성 12입니다. 속편 작품은 AniList 전작/후속작 관계로 합산하며 최대 70명을 저장합니다. <b>최종 목록은 점수순 최대 70명입니다.</b></div><div id="candidate-list"></div>`;const list=document.getElementById('candidate-list');rows.forEach(v=>{const row=document.createElement('div');row.className='candidate-row';row.innerHTML=`<label>#${v.rank} ${escapeHtml(v.name)} <span class="score">${v.score}점</span> <span class="muted">(통합 작품 ${v.stats.totalWorks}개 / 올해 ${v.stats.currentYearWorks}개 / 대표 캐릭터 즐겨찾기 ${v.stats.maxCharacterFavourites})</span></label>`;list.appendChild(row)})}
+function translationKey(field,value){return `${field}::${value}`}
+function buildKoreanIndexes(){
+  const animeList=window[`AnimeList_${THIS_YEAR}`];
+  const characterGroups=window[`CharacterData_${THIS_YEAR}`];
+  const cvList=window[`CharacterVoiceData_${THIS_YEAR}`];
+  if(!animeList&&!characterGroups&&!cvList)return null;
+  const animeById=new Map((animeList||[]).map(item=>[String(item.id),item]));
+  const characterById=new Map();
+  (characterGroups||[]).forEach(group=>(group.characters||[]).forEach(character=>characterById.set(String(character.characterId),character)));
+  const cvById=new Map((cvList||[]).map(cv=>[String(cv.id),cv]));
+  return{animeById,characterById,cvById};
+}
+function rememberAutoTranslation(field,source,localized){
+  if(typeof source!=='string'||!source||typeof localized!=='string'||!localized||source===localized)return;
+  const key=translationKey(field,source);
+  if(autoTranslationConflicts.has(key))return;
+  if(Object.prototype.hasOwnProperty.call(autoTranslations,key)&&autoTranslations[key]!==localized){
+    delete autoTranslations[key];
+    autoTranslationConflicts.add(key);
+    return;
+  }
+  autoTranslations[key]=localized;
+}
+function getTranslationSources(){
+  const sources={name:new Set(),animeTitle:new Set(),charName:new Set()};
+  const add=(field,value)=>{if(typeof value==='string'&&value.trim())sources[field].add(value)};
+  Object.values(rookieStore).forEach(cv=>{
+    add('name',cv.name);
+    (cv.characters||[]).forEach(character=>{
+      add('animeTitle',character.animeTitle);
+      add('charName',character.charName);
+      (character.appearances||[]).forEach(appearance=>add('animeTitle',appearance.animeTitle));
+    });
+  });
+  return sources;
+}
+function renderTranslationPanel(){
+  const panel=document.getElementById('translation-panel');
+  const container=document.getElementById('translation-fields');
+  container.innerHTML='';
+  const labels={name:'성우 이름 (name)',animeTitle:'작품명 (animeTitle)',charName:'캐릭터명 (charName)'};
+  const sources=getTranslationSources();
+  Object.entries(sources).forEach(([field,values])=>{
+    const section=document.createElement('section');
+    section.style.margin='16px 0';
+    const heading=document.createElement('h3');
+    heading.textContent=`${labels[field]} · ${values.size}개`;
+    section.appendChild(heading);
+    [...values].sort((a,b)=>a.localeCompare(b)).forEach(original=>{
+      const row=document.createElement('div');
+      row.className='translation-row';
+      row.style.cssText='display:grid;grid-template-columns:minmax(220px,1fr) minmax(220px,1fr);gap:10px;align-items:center;margin:6px 0';
+      const source=document.createElement('span');
+      source.textContent=original;
+      source.title=original;
+      const input=document.createElement('input');
+      input.type='text';
+      const key=translationKey(field,original);
+      input.value=Object.prototype.hasOwnProperty.call(manualTranslations,key)
+        ? manualTranslations[key]
+        : (autoTranslations[key]||'');
+      input.placeholder=autoTranslations[key]?'ID 자동 매칭 · 필요하면 수정':'한국어 번역 입력';
+      input.setAttribute('aria-label',`${labels[field]} 번역: ${original}`);
+      input.style.cssText='width:100%;box-sizing:border-box;padding:8px;border-radius:5px;background:#0b1622;color:#ecf0f1;border:1px solid #2e3c4a';
+      input.addEventListener('input',()=>{manualTranslations[key]=input.value;updateTranslationStatus(sources)});
+      row.append(source,input);
+      section.appendChild(row);
+    });
+    container.appendChild(section);
+  });
+  panel.style.display='block';
+  document.getElementById('apply-translations-btn').onclick=applyManualTranslations;
+  document.getElementById('export-unmatched-btn').onclick=exportUnmatchedTranslations;
+  document.getElementById('import-translations-btn').onclick=importBatchTranslations;
+  updateTranslationStatus(sources);
+}
+function updateTranslationStatus(sources=getTranslationSources()){
+  const totals={automatic:0,manual:0,pending:0};
+  Object.entries(sources).forEach(([field,values])=>values.forEach(original=>{
+    const key=translationKey(field,original);
+    if(Object.prototype.hasOwnProperty.call(manualTranslations,key)){
+      if(manualTranslations[key].trim())totals.manual++;
+      else totals.pending++;
+    }else if(autoTranslations[key])totals.automatic++;
+    else totals.pending++;
+  }));
+  document.getElementById('translation-status').textContent=`ID 자동 매칭 ${totals.automatic}개 · 직접 수정 ${totals.manual}개 · 번역 필요 ${totals.pending}개 (총 ${totals.automatic+totals.manual+totals.pending}개 고유 항목)`;
+}
+function exportUnmatchedTranslations(){
+  const sources=getTranslationSources();
+  const entries=[];
+  Object.entries(sources).forEach(([field,values])=>values.forEach(source=>{
+    const key=translationKey(field,source);
+    const manuallyEntered=Object.prototype.hasOwnProperty.call(manualTranslations,key)&&manualTranslations[key].trim();
+    if(manuallyEntered||autoTranslations[key])return;
+    entries.push({field,source,korean:''});
+  }));
+  const textarea=document.getElementById('translation-batch-json');
+  textarea.value=JSON.stringify(entries,null,2);
+  textarea.focus();
+  textarea.select();
+  document.getElementById('translation-status').textContent=`미매칭 ${entries.length}개를 JSON으로 만들었습니다. 복사해 번역한 뒤 결과 JSON을 붙여넣으세요.`;
+}
+function importBatchTranslations(){
+  const textarea=document.getElementById('translation-batch-json');
+  let entries;
+  try{entries=JSON.parse(textarea.value)}catch(error){alert('JSON 형식이 올바르지 않습니다.');return}
+  if(!Array.isArray(entries)){alert('번역 JSON은 배열 형식이어야 합니다.');return}
+  const sources=getTranslationSources();
+  const imported=[];
+  entries.forEach(entry=>{
+    if(!entry||!['name','animeTitle','charName'].includes(entry.field)||typeof entry.source!=='string'||typeof entry.korean!=='string')return;
+    if(!sources[entry.field]?.has(entry.source)||!entry.korean.trim())return;
+    manualTranslations[translationKey(entry.field,entry.source)]=entry.korean.trim();
+    imported.push(entry);
+  });
+  if(!imported.length){alert('가져올 번역이 없습니다. field/source가 추출 결과와 일치하는지 확인해주세요.');return}
+  renderTranslationPanel();
+  document.getElementById('translation-status').textContent=`번역 ${imported.length}개를 가져왔습니다. [번역 반영 및 JS 결과 갱신]을 눌러 결과에 적용하세요.`;
+}
+function applyManualTranslations(){
+  const translated=JSON.parse(JSON.stringify(rookieStore));
+  const apply=(field,value)=>{
+    if(typeof value!=='string')return value;
+    const key=translationKey(field,value);
+    const replacement=Object.prototype.hasOwnProperty.call(manualTranslations,key)
+      ? manualTranslations[key]
+      : autoTranslations[key];
+    return typeof replacement==='string'&&replacement.trim()?replacement.trim():value;
+  };
+  Object.values(translated).forEach(cv=>{
+    cv.name=apply('name',cv.name);
+    (cv.characters||[]).forEach(character=>{
+      character.animeTitle=apply('animeTitle',character.animeTitle);
+      character.charName=apply('charName',character.charName);
+      (character.appearances||[]).forEach(appearance=>{appearance.animeTitle=apply('animeTitle',appearance.animeTitle)});
+    });
+  });
+  updateOutput(translated);
+  const count=Object.values(manualTranslations).filter(value=>typeof value==='string'&&value.trim()).length;
+  document.getElementById('translation-status').textContent=`${count}개 번역을 JS 결과에 반영했습니다. 비워둔 값은 원문으로 유지됩니다.`;
+  translationApplied=true;
+  document.getElementById('js-btn').disabled=false;
+}
+async function startExtraction(){getSelectedConditions();translationApplied=false;manualTranslations={};autoTranslations={};autoTranslationConflicts=new Set();koreanIndexes=buildKoreanIndexes();document.getElementById('translation-panel').style.display='none';document.getElementById('js-btn').disabled=true;const log=document.getElementById('log'),fill=document.getElementById('bar-fill');rookieStore={};imageFiles=[];candidateMap=new Map();mediaParent=new Map();currentMediaStats=new Map();mediaExposureByFranchise=new Map();document.getElementById('img-btn').disabled=true;fill.style.width='0%';setStats(0,0,0,0);document.getElementById('candidate-panel').innerHTML='';const q=['','1분기','2분기','3분기','4분기'];log.innerHTML=`📡 [1단계] ${THIS_YEAR}년 ${q[END_QUARTER]}까지 시즌 스캔 시작...<br>📌 상세 작품 데이터도 ${THIS_YEAR}년 ${q[END_QUARTER]}까지로 제한합니다.<br>📌 배점: 데뷔 최근성 15 / 올해 작품 27 / 이전 작품 10 / 최근 성장 17 / 캐릭터 인지도 19 / 작품 화제성 12 (총 100점), 70점 이상을 선정합니다.<br>`;const seasons=['WINTER','SPRING','SUMMER','FALL'].slice(0,END_QUARTER);for(const season of seasons)await scanSeason(season,THIS_YEAR);for(const va of candidateMap.values())va.thisYearAnimeIds=new Set([...va.thisYearAnimeIds].map(id=>mediaFind(id)));prepareMediaExposure();const allCandidates=[...candidateMap.values()],survivors=allCandidates;setStats(allCandidates.length,survivors.length,0,0);addLog(`<br>🔍 시즌 단계: ${allCandidates.length}명 → 정밀 후보 ${survivors.length}명<br>⚡ [2단계] ${STAFF_BATCH}명씩 묶어 전체 이력 및 속편 관계 조회...<br>`);const summaryCache=loadJsonCache(CACHE_SUMMARY),summaryStates=new Map();let done=0;for(let i=0;i<survivors.length;i+=STAFF_BATCH){const batch=survivors.slice(i,i+STAFF_BATCH),states=await collectLightBatch(batch,summaryCache);for(const va of batch)summaryStates.set(va.id,states.get(va.id));done+=batch.length;fill.style.width=`${Math.min(45,45*done/Math.max(1,survivors.length))}%`;addLog(`　요약 ${Math.min(done,survivors.length)}/${survivors.length} 완료<br>`)}const qualified=[];for(const va of survivors){const s=summaryStates.get(va.id);if(!s||(s.failed&&s.workMap&&s.workMap.size===0&&!s.fromCache))continue;const r=cachedSummaryScore(va,s),f=r.fieldCriteria||{qualified:false};addLog(`[평가] ${escapeHtml(va.name)} | ${r.score}/${MIN_TOTAL_SCORE}점 | 데뷔:${r.scoreBreakdown.careerRecency}/15 / 올해작품:${r.scoreBreakdown.currentYearWorks}/27 / 이전작품:${r.scoreBreakdown.priorWorks}/10 / 성장:${r.scoreBreakdown.recentGrowth}/17 / 캐릭터인지도:${r.scoreBreakdown.characterRecognition}/19 / 작품화제성:${r.scoreBreakdown.mediaExposure}/12 → ${f.qualified?'통과 ✅':'제외'}<br>`);if(!f.qualified)continue;qualified.push({...va,summary:s,result:r})}qualified.sort((a,b)=>b.result.score-a.result.score||b.result.scoreBreakdown.currentYearWorks-a.result.scoreBreakdown.currentYearWorks||b.result.scoreBreakdown.characterRecognition-a.result.scoreBreakdown.characterRecognition||b.result.scoreBreakdown.mediaExposure-a.result.scoreBreakdown.mediaExposure||b.result.scoreBreakdown.recentGrowth-a.result.scoreBreakdown.recentGrowth||a.name.localeCompare(b.name));const passed=qualified.slice(0,TOP_LIMIT);passed.forEach((x,i)=>{x.rank=i+1});setStats(allCandidates.length,survivors.length,qualified.length,passed.length);addLog(`<br>🎯 ${MIN_TOTAL_SCORE}점 이상 ${qualified.length}명 → 상위 ${passed.length}명 저장 (최대 ${TOP_LIMIT}명)<br>🧩 [3단계] 상위 ${TOP_LIMIT}명 전체의 캐릭터/작품/역할/이미지 상세 조회...<br>`);const fullCache=loadJsonCache(CACHE_FULL);let fullDone=0;addLog(`　ℹ️ 상세 캐시는 같은 연도+분기 조합이면서 작품/캐릭터 데이터가 있는 항목만 재사용합니다.<br>`);for(let i=0;i<passed.length;i+=DETAIL_BATCH){const batch=passed.slice(i,i+DETAIL_BATCH),states=await collectFullBatch(batch,fullCache);for(const va of batch){const s=states.get(va.id),r=va.result;if(!s||(s.failed&&s.workMap&&s.workMap.size===0&&!s.fromCache)){addLog(`<span style="color:#e74c3c">[DETAIL FAIL]</span> ${escapeHtml(va.name)}<br>`);continue}const fullHistoryMap=new Map();const usedImageNames=new Set();
+for(const c of va.thisYearCharacters||[]){
+  const charName=c.character||'',fileName=`${clean(va.name)}${clean(charName)}.jpg`,imgUrl=c.image||'';
+  rememberAutoTranslation('animeTitle',c.animeTitle,koreanIndexes?.animeById.get(String(c.animeId))?.title);
+  rememberAutoTranslation('charName',charName,koreanIndexes?.characterById.get(String(c.characterId))?.name);
+  if(imgUrl&&!usedImageNames.has(fileName)){imageFiles.push({url:imgUrl,name:fileName});usedImageNames.add(fileName)}
+  const key=c.characterId!=null?`cid:${c.characterId}`:`noid:${clean(charName)}:${c.animeId}`;
+  if(!fullHistoryMap.has(key))fullHistoryMap.set(key,{animeTitle:c.animeTitle,year:THIS_YEAR,role:c.role||'',charName,charimg:imgUrl?`image/rookiecv/${fileName}`:'',appearances:[]});
+  const item=fullHistoryMap.get(key),appearance={animeTitle:c.animeTitle,year:THIS_YEAR,role:c.role||''};
+  if(!item.appearances.some(a=>a.animeTitle===appearance.animeTitle&&a.year===appearance.year&&a.role===appearance.role))item.appearances.push(appearance);
+}
+rememberAutoTranslation('name',va.name,koreanIndexes?.cvById.get(String(va.id))?.name);
 for(const w of s.works||[]){
+  rememberAutoTranslation('animeTitle',w.title,koreanIndexes?.animeById.get(String(w.id))?.title);
   for(const c of w.characters?.length?w.characters:[{name:'',image:'',role:''}]){
-    const charName=c.name||'',fileName=`${clean(va.name)}${clean(charName)}.jpg`,imgUrl=c.image||'';
+    const charName=c.name||'';
+    rememberAutoTranslation('charName',charName,koreanIndexes?.characterById.get(String(c.id))?.name);
+    const fileName=`${clean(va.name)}${clean(charName)}.jpg`,imgUrl=c.image||'';
     if(imgUrl&&!usedImageNames.has(fileName)){
       imageFiles.push({url:imgUrl,name:fileName});
       usedImageNames.add(fileName);
     }
-    const key=charName.trim();
+    const key=c.id!=null?`cid:${c.id}`:`noid:${clean(charName)}:${w.id}`;
     if(!fullHistoryMap.has(key)){
       fullHistoryMap.set(key,{
         animeTitle:w.title,
@@ -112,9 +318,9 @@ for(const w of s.works||[]){
   }
 }
 const fullHistory=[...fullHistoryMap.values()];
-const cvPath=s.staffImageUrl?`image/rookiecv/cv/${clean(va.name)}.jpg`:'image/rookiecv/cv/.webp';if(s.staffImageUrl)imageFiles.push({url:s.staffImageUrl,name:`cv/${clean(va.name)}.jpg`});rookieStore[va.name]={id:va.id,name:va.name,rank:va.rank,debutYear:r.debutYear,score:r.score,scoreBreakdown:r.scoreBreakdown,stats:{totalWorks:r.totalWorks,currentYearWorks:r.currentWorks,mainWorks:r.mainWorks,supportingWorks:r.supportingWorks,yearsActive:r.yearsActive},cvimg:cvPath,characters:fullHistory}}fullDone+=batch.length;fill.style.width=`${45+55*Math.min(fullDone,passed.length)/Math.max(1,passed.length)}%`;addLog(`　상세 ${Math.min(fullDone,passed.length)}/${passed.length} 완료<br>`)}renderCandidatePanel();updateOutput();document.getElementById('img-btn').disabled=imageFiles.length===0;fill.style.width='100%';addLog(`<br>✨ 완료! 최종 저장 ${Object.keys(rookieStore).length}명 / Top ${TOP_LIMIT}<br>📌 데이터 JS에는 Top 70 전체를 저장하며, Top 30 선택은 별도 JS에서 처리하세요.<br>`)}
-function updateOutput(){document.getElementById('output').value=`var RookieCVData_${THIS_YEAR} = ${JSON.stringify(rookieStore,null,2)};`}
-function downloadJS(){const content=document.getElementById('output').value;if(!content.trim()||!Object.keys(rookieStore).length){alert('먼저 전체 추출을 실행해주세요.');return}saveAs(new Blob([content],{type:'text/javascript'}),`RookieCV_${THIS_YEAR}.js`)}
+const cvPath=s.staffImageUrl?`image/rookiecv/cv/${clean(va.name)}.jpg`:'image/rookiecv/cv/.webp';if(s.staffImageUrl)imageFiles.push({url:s.staffImageUrl,name:`cv/${clean(va.name)}.jpg`});rookieStore[va.name]={id:va.id,name:va.name,rank:va.rank,debutYear:r.debutYear,score:r.score,scoreBreakdown:r.scoreBreakdown,stats:{totalWorks:r.totalWorks,currentYearWorks:r.currentWorks,mainWorks:r.mainWorks,supportingWorks:r.supportingWorks,yearsActive:r.yearsActive,maxCharacterFavourites:r.maxCharacterFavourites,mediaExposure:r.mediaExposureValue},cvimg:cvPath,characters:fullHistory}}fullDone+=batch.length;fill.style.width=`${45+55*Math.min(fullDone,passed.length)/Math.max(1,passed.length)}%`;addLog(`　상세 ${Math.min(fullDone,passed.length)}/${passed.length} 완료<br>`)}renderCandidatePanel();updateOutput();renderTranslationPanel();document.getElementById('img-btn').disabled=imageFiles.length===0;fill.style.width='100%';addLog(`<br>✨ 완료! 최종 저장 ${Object.keys(rookieStore).length}명 / Top ${TOP_LIMIT}<br>📌 데이터 JS에는 70점 이상 점수 순 최대 70명을 저장합니다.<br>`)}
+function updateOutput(data=rookieStore){document.getElementById('output').value=`var RookieCVData_${THIS_YEAR} = ${JSON.stringify(data,null,2)};`}
+function downloadJS(){const content=document.getElementById('output').value;if(!content.trim()||!Object.keys(rookieStore).length){alert('먼저 전체 추출을 실행해주세요.');return}if(!translationApplied){alert('추출 후 번역을 확인하고 [번역 반영 및 JS 결과 갱신]을 눌러주세요.');return}saveAs(new Blob([content],{type:'text/javascript'}),`RookieCV_${THIS_YEAR}.js`)}
 async function fetchImageBlob(url,name){
   const res=await fetch(url,{mode:'cors',cache:'force-cache'});
   if(!res.ok)throw new Error(`HTTP ${res.status}`);

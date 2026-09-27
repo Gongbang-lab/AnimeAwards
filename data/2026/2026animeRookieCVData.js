@@ -1,117 +1,109 @@
 var RookieCVData_2026 = {
-  "Hikari Senga": {
-    "id": 383264,
-    "name": "Hikari Senga",
+  "Rena Motomura": {
+    "id": 344276,
+    "name": "모토무라 레나",
     "rank": 1,
-    "debutYear": 2026,
-    "score": 135,
+    "debutYear": 2024,
+    "score": 92,
     "scoreBreakdown": {
-      "career": 40,
-      "totalWorks": 15,
-      "currentYearWorks": 40,
-      "mainRole": 25,
-      "recentGrowth": 15
+      "careerRecency": 15,
+      "currentYearWorks": 27,
+      "priorWorks": 10,
+      "recentGrowth": 17,
+      "characterRecognition": 14,
+      "mediaExposure": 9
     },
     "stats": {
-      "totalWorks": 4,
-      "currentYearWorks": 3,
-      "mainWorks": 3,
-      "supportingWorks": 0,
-      "yearsActive": 0
+      "totalWorks": 10,
+      "currentYearWorks": 6,
+      "mainWorks": 1,
+      "supportingWorks": 5,
+      "yearsActive": 3,
+      "maxCharacterFavourites": 2509,
+      "mediaExposure": 9
     },
-    "cvimg": "image/rookiecv/cv/HikariSenga.jpg",
+    "cvimg": "image/rookiecv/cv/RenaMotomura.jpg",
     "characters": [
       {
-        "animeTitle": "Meitantei Precure! Fushigi na Niwa to Futari no Himitsu",
+        "animeTitle": "사망 유희로 밥을 먹는다.",
         "year": 2026,
-        "role": "MAIN",
-        "charName": "Anna Akechi",
-        "charimg": "image/rookiecv/HikariSengaAnnaAkechi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Meitantei Precure! Fushigi na Niwa to Futari no Himitsu",
-            "year": 2026,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Meitantei Conan: Hanamaru na Answer",
-            "year": 2026,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Meitantei Precure!",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Otome Kaijuu Caraméliser",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Kuroe Akaishi",
-        "charimg": "image/rookiecv/HikariSengaKuroeAkaishi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Otome Kaijuu Caraméliser",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      }
-    ]
-  },
-  "Riko Aono": {
-    "id": 350108,
-    "name": "Riko Aono",
-    "rank": 2,
-    "debutYear": 2025,
-    "score": 130,
-    "scoreBreakdown": {
-      "career": 40,
-      "totalWorks": 15,
-      "currentYearWorks": 30,
-      "mainRole": 25,
-      "recentGrowth": 20
-    },
-    "stats": {
-      "totalWorks": 5,
-      "currentYearWorks": 2,
-      "mainWorks": 2,
-      "supportingWorks": 0,
-      "yearsActive": 1
-    },
-    "cvimg": "image/rookiecv/cv/RikoAono.jpg",
-    "characters": [
-      {
-        "animeTitle": "Snack HAZAMA",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Shizuka Mimizuka",
-        "charimg": "image/rookiecv/RikoAonoShizukaMimizuka.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Snack HAZAMA",
-            "year": 2026,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Ushiro no Shoumen Kamui-san",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Fumetsu no Anata e Season 3",
-        "year": 2025,
         "role": "SUPPORTING",
-        "charName": "Fuuna",
-        "charimg": "image/rookiecv/RikoAonoFuuna.jpg",
+        "charName": "아오이",
+        "charimg": "image/rookiecv/RenaMotomuraAoi.jpg",
         "appearances": [
           {
-            "animeTitle": "Fumetsu no Anata e Season 3",
-            "year": 2025,
+            "animeTitle": "사망 유희로 밥을 먹는다.",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "에리스의 성배",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "엔리케 아델바이드",
+        "charimg": "image/rookiecv/RenaMotomuraEnriqueAdelbide.jpg",
+        "appearances": [
+          {
+            "animeTitle": "에리스의 성배",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "고깔모자의 아틀리에",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "코코",
+        "charimg": "image/rookiecv/RenaMotomuraCoco.jpg",
+        "appearances": [
+          {
+            "animeTitle": "고깔모자의 아틀리에",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "Re:제로부터 시작하는 이세계 생활 4기",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "프레드",
+        "charimg": "image/rookiecv/RenaMotomuraFredThompson.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Re:제로부터 시작하는 이세계 생활 4기",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "담배 고양이",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "시오타니 루마코",
+        "charimg": "image/rookiecv/RenaMotomuraRumakoShioya.jpg",
+        "appearances": [
+          {
+            "animeTitle": "담배 고양이",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "아름다운 그대에게 2기",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "아마가사키 칸나",
+        "charimg": "image/rookiecv/RenaMotomuraKannaAmagasaki.jpg",
+        "appearances": [
+          {
+            "animeTitle": "아름다운 그대에게 2기",
+            "year": 2026,
             "role": "SUPPORTING"
           }
         ]
@@ -120,4312 +112,95 @@ var RookieCVData_2026 = {
   },
   "Kakeru Hatano": {
     "id": 316611,
-    "name": "Kakeru Hatano",
-    "rank": 3,
+    "name": "하타노 카케루",
+    "rank": 2,
     "debutYear": 2024,
-    "score": 127,
+    "score": 89,
     "scoreBreakdown": {
-      "career": 40,
-      "totalWorks": 12,
-      "currentYearWorks": 35,
-      "mainRole": 25,
-      "recentGrowth": 15
+      "careerRecency": 15,
+      "currentYearWorks": 27,
+      "priorWorks": 10,
+      "recentGrowth": 17,
+      "characterRecognition": 12,
+      "mediaExposure": 8
     },
     "stats": {
-      "totalWorks": 9,
-      "currentYearWorks": 4,
+      "totalWorks": 8,
+      "currentYearWorks": 5,
       "mainWorks": 2,
-      "supportingWorks": 2,
-      "yearsActive": 2
+      "supportingWorks": 3,
+      "yearsActive": 3,
+      "maxCharacterFavourites": 846,
+      "mediaExposure": 8
     },
     "cvimg": "image/rookiecv/cv/KakeruHatano.jpg",
     "characters": [
       {
-        "animeTitle": "Yani Neko",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Shuu",
-        "charimg": "image/rookiecv/KakeruHatanoShuu.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Yani Neko",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Yowa Yowa Sensei",
+        "animeTitle": "타몬 군 지금 어느 쪽?!",
         "year": 2026,
         "role": "MAIN",
-        "charName": "Akihito Abikura",
-        "charimg": "image/rookiecv/KakeruHatanoAkihitoAbikura.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Yowa Yowa Sensei",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Koori no Jouheki",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Yuki Azumi",
-        "charimg": "image/rookiecv/KakeruHatanoYukiAzumi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Koori no Jouheki",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Arne no Jikenbo",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Kai",
-        "charimg": "image/rookiecv/KakeruHatanoKai.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Arne no Jikenbo",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Tamon-kun Ima Docchi!?",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Tamon Fukuhara",
+        "charName": "후쿠하라 타몬",
         "charimg": "image/rookiecv/KakeruHatanoTamonFukuhara.jpg",
         "appearances": [
           {
-            "animeTitle": "Tamon-kun Ima Docchi!?",
+            "animeTitle": "타몬 군 지금 어느 쪽?!",
             "year": 2026,
             "role": "MAIN"
-          },
-          {
-            "animeTitle": "F/ACE OFF",
-            "year": 2025,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Ore dake Level Up na Ken: ReAwakening",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Kyu-Hwan Jo",
-        "charimg": "image/rookiecv/KakeruHatanoKyuHwanJo.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Ore dake Level Up na Ken: ReAwakening",
-            "year": 2024,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Ore dake Level Up na Ken",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Blue Lock VS. U-20 JAPAN",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Nanase  Nijirou",
-        "charimg": "image/rookiecv/KakeruHatanoNanaseNijirou.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Blue Lock VS. U-20 JAPAN",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Ore dake Level Up na Ken",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Seong-Chul Yun",
-        "charimg": "image/rookiecv/KakeruHatanoSeongChulYun.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Ore dake Level Up na Ken",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Yuu Shiraki": {
-    "id": 381341,
-    "name": "Yuu Shiraki",
-    "rank": 4,
-    "debutYear": 2026,
-    "score": 125,
-    "scoreBreakdown": {
-      "career": 40,
-      "totalWorks": 15,
-      "currentYearWorks": 30,
-      "mainRole": 25,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 2,
-      "currentYearWorks": 2,
-      "mainWorks": 2,
-      "supportingWorks": 0,
-      "yearsActive": 0
-    },
-    "cvimg": "image/rookiecv/cv/YuuShiraki.jpg",
-    "characters": [
-      {
-        "animeTitle": "Android wa Keiken Ninzuu ni Hairimasu ka??: 5-kakan Tsuzukete......?",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Nadeshiko",
-        "charimg": "image/rookiecv/YuuShirakiNadeshiko.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Android wa Keiken Ninzuu ni Hairimasu ka??: 5-kakan Tsuzukete......?",
-            "year": 2026,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Android wa Keiken Ninzuu ni Hairimasu ka??",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      }
-    ]
-  },
-  "Momoko Seto": {
-    "id": 298582,
-    "name": "Momoko Seto",
-    "rank": 5,
-    "debutYear": 2023,
-    "score": 122,
-    "scoreBreakdown": {
-      "career": 30,
-      "totalWorks": 12,
-      "currentYearWorks": 40,
-      "mainRole": 25,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 9,
-      "currentYearWorks": 3,
-      "mainWorks": 2,
-      "supportingWorks": 1,
-      "yearsActive": 3
-    },
-    "cvimg": "image/rookiecv/cv/MomokoSeto.jpg",
-    "characters": [
-      {
-        "animeTitle": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 4th Season 2-nensei-hen Ichi Gakki",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Ichika Amasawa",
-        "charimg": "image/rookiecv/MomokoSetoIchikaAmasawa.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 4th Season 2-nensei-hen Ichi Gakki",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Uruwashi no Yoi no Tsuki",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Kotobuki Hibiya",
-        "charimg": "image/rookiecv/MomokoSetoKotobukiHibiya.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Uruwashi no Yoi no Tsuki",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Mayonaka Heart Tune",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Rikka Inohana",
-        "charimg": "image/rookiecv/MomokoSetoRikkaInohana.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Mayonaka Heart Tune",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Uma Musume: Cinderella Gray Part 2",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Belno Light",
-        "charimg": "image/rookiecv/MomokoSetoBelnoLight.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Uma Musume: Cinderella Gray Part 2",
-            "year": 2025,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Uma Musume: Cinderella Gray",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Ballpark de Tsukamaete!",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Kokoro",
-        "charimg": "image/rookiecv/MomokoSetoKokoro.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Ballpark de Tsukamaete!",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Liar Liar",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Fuuka Tatara",
-        "charimg": "image/rookiecv/MomokoSetoFuukaTatara.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Liar Liar",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Rena Motomura": {
-    "id": 344276,
-    "name": "Rena Motomura",
-    "rank": 6,
-    "debutYear": 2024,
-    "score": 120,
-    "scoreBreakdown": {
-      "career": 40,
-      "totalWorks": 10,
-      "currentYearWorks": 35,
-      "mainRole": 15,
-      "recentGrowth": 20
-    },
-    "stats": {
-      "totalWorks": 12,
-      "currentYearWorks": 4,
-      "mainWorks": 1,
-      "supportingWorks": 3,
-      "yearsActive": 2
-    },
-    "cvimg": "image/rookiecv/cv/RenaMotomura.jpg",
-    "characters": [
-      {
-        "animeTitle": "Yani Neko",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Rumako Shioya",
-        "charimg": "image/rookiecv/RenaMotomuraRumakoShioya.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Yani Neko",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Hanazakari no Kimitachi e 2nd Season",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Kanna Amagasaki",
-        "charimg": "image/rookiecv/RenaMotomuraKannaAmagasaki.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Hanazakari no Kimitachi e 2nd Season",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Re:Zero kara Hajimeru Isekai Seikatsu 4th Season",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Fred Thompson",
-        "charimg": "image/rookiecv/RenaMotomuraFredThompson.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Re:Zero kara Hajimeru Isekai Seikatsu 4th Season",
-            "year": 2026,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Re:Zero kara Hajimeru Isekai Seikatsu 3rd Season",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Tongari Boushi no Atelier",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Coco",
-        "charimg": "image/rookiecv/RenaMotomuraCoco.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Tongari Boushi no Atelier",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Eris no Seihai",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Enrique Adelbide",
-        "charimg": "image/rookiecv/RenaMotomuraEnriqueAdelbide.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Eris no Seihai",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Shibou Yuugi de Meshi wo Kuu.",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Aoi",
-        "charimg": "image/rookiecv/RenaMotomuraAoi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Shibou Yuugi de Meshi wo Kuu.",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Zutaboro Reijou wa Ane no Moto Konyakusha ni Dekiai Sareru",
-        "year": 2025,
-        "role": "MAIN",
-        "charName": "Marie Shaderan",
-        "charimg": "image/rookiecv/RenaMotomuraMarieShaderan.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Zutaboro Reijou wa Ane no Moto Konyakusha ni Dekiai Sareru",
-            "year": 2025,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Maebashi Witches",
-        "year": 2025,
-        "role": "MAIN",
-        "charName": "Kyouka Kitahara",
-        "charimg": "image/rookiecv/RenaMotomuraKyoukaKitahara.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Maebashi Witches",
-            "year": 2025,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "cocoon: Aru Natsu no Shoujo-tachi Yori",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Hina",
-        "charimg": "image/rookiecv/RenaMotomuraHina.jpg",
-        "appearances": [
-          {
-            "animeTitle": "cocoon: Aru Natsu no Shoujo-tachi Yori",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Haruka Satou": {
-    "id": 333068,
-    "name": "Haruka Satou",
-    "rank": 7,
-    "debutYear": 2024,
-    "score": 120,
-    "scoreBreakdown": {
-      "career": 40,
-      "totalWorks": 15,
-      "currentYearWorks": 30,
-      "mainRole": 15,
-      "recentGrowth": 20
-    },
-    "stats": {
-      "totalWorks": 4,
-      "currentYearWorks": 2,
-      "mainWorks": 1,
-      "supportingWorks": 1,
-      "yearsActive": 2
-    },
-    "cvimg": "image/rookiecv/cv/HarukaSatou.jpg",
-    "characters": [
-      {
-        "animeTitle": "Mebius Dust",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Olga Shiratori",
-        "charimg": "image/rookiecv/HarukaSatouOlgaShiratori.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Mebius Dust",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Shibou Yuugi de Meshi wo Kuu.",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Kokutou",
-        "charimg": "image/rookiecv/HarukaSatouKokutou.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Shibou Yuugi de Meshi wo Kuu.",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Everyday Host",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Mayumi",
-        "charimg": "image/rookiecv/HarukaSatouMayumi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Everyday Host",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Everyday Host",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Mayumi Yuujin",
-        "charimg": "image/rookiecv/HarukaSatouMayumiYuujin.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Everyday Host",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Everyday Host",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Chiyoko Shigemi",
-        "charimg": "image/rookiecv/HarukaSatouChiyokoShigemi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Everyday Host",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Youkai Gakkou no Sensei Hajimemashita!",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Hijita Ane",
-        "charimg": "image/rookiecv/HarukaSatouHijitaAne.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Youkai Gakkou no Sensei Hajimemashita!",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Niina Hanamiya": {
-    "id": 311814,
-    "name": "Niina Hanamiya",
-    "rank": 8,
-    "debutYear": 2025,
-    "score": 120,
-    "scoreBreakdown": {
-      "career": 40,
-      "totalWorks": 15,
-      "currentYearWorks": 30,
-      "mainRole": 15,
-      "recentGrowth": 20
-    },
-    "stats": {
-      "totalWorks": 3,
-      "currentYearWorks": 2,
-      "mainWorks": 1,
-      "supportingWorks": 1,
-      "yearsActive": 1
-    },
-    "cvimg": "image/rookiecv/cv/NiinaHanamiya.jpg",
-    "characters": [
-      {
-        "animeTitle": "Nige Jouzu no Wakagimi 2nd Season",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Mima",
-        "charimg": "image/rookiecv/NiinaHanamiyaMima.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Nige Jouzu no Wakagimi 2nd Season",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Love Live! Hasunosora Jogakuin School Idol Club: Bloom Garden Party",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Kozue Otomune",
-        "charimg": "image/rookiecv/NiinaHanamiyaKozueOtomune.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Love Live! Hasunosora Jogakuin School Idol Club: Bloom Garden Party",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Bad Girl",
-        "year": 2025,
-        "role": "MAIN",
-        "charName": "Atori Mizutori",
-        "charimg": "image/rookiecv/NiinaHanamiyaAtoriMizutori.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Bad Girl",
-            "year": 2025,
-            "role": "MAIN"
-          }
-        ]
-      }
-    ]
-  },
-  "Azusa Tachibana": {
-    "id": 337852,
-    "name": "Azusa Tachibana",
-    "rank": 9,
-    "debutYear": 2024,
-    "score": 120,
-    "scoreBreakdown": {
-      "career": 40,
-      "totalWorks": 10,
-      "currentYearWorks": 25,
-      "mainRole": 25,
-      "recentGrowth": 20
-    },
-    "stats": {
-      "totalWorks": 11,
-      "currentYearWorks": 5,
-      "mainWorks": 2,
-      "supportingWorks": 3,
-      "yearsActive": 2
-    },
-    "cvimg": "image/rookiecv/cv/AzusaTachibana.jpg",
-    "characters": [
-      {
-        "animeTitle": "Honoo no Toukyuujyo Dodge Danko",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Moa Kusunoki",
-        "charimg": "image/rookiecv/AzusaTachibanaMoaKusunoki.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Honoo no Toukyuujyo Dodge Danko",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Mahou Shoujo Lyrical Nanoha EXCEEDS Gun Blaze Vengeance",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Shiina Kuze",
-        "charimg": "image/rookiecv/AzusaTachibanaShiinaKuze.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Mahou Shoujo Lyrical Nanoha EXCEEDS Gun Blaze Vengeance",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Kuroneko to Majo no Kyoushitsu",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Ewe Aries",
-        "charimg": "image/rookiecv/AzusaTachibanaEweAries.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kuroneko to Majo no Kyoushitsu",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Kaya-chan wa Kowakunai",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Kaya Satou",
-        "charimg": "image/rookiecv/AzusaTachibanaKayaSatou.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kaya-chan wa Kowakunai",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Kizoku Tensei: Megumareta Umare kara Saikyou no Chikara wo Eru",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Alichey",
-        "charimg": "image/rookiecv/AzusaTachibanaAlichey.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kizoku Tensei: Megumareta Umare kara Saikyou no Chikara wo Eru",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Bad Girl",
-        "year": 2025,
-        "role": "MAIN",
-        "charName": "Yuu Yuutani",
-        "charimg": "image/rookiecv/AzusaTachibanaYuuYuutani.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Bad Girl",
-            "year": 2025,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Princess-Session Orchestra",
-        "year": 2025,
-        "role": "MAIN",
-        "charName": "Nagase Ichijou",
-        "charimg": "image/rookiecv/AzusaTachibanaNagaseIchijou.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Princess-Session Orchestra",
-            "year": 2025,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Dandadan",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Joshi B",
-        "charimg": "image/rookiecv/AzusaTachibanaJoshiB.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Dandadan",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Go-toubun no Hanayome *",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Lily",
-        "charimg": "image/rookiecv/AzusaTachibanaLily.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Go-toubun no Hanayome *",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "May Tachibana": {
-    "id": 377812,
-    "name": "May Tachibana",
-    "rank": 10,
-    "debutYear": 2025,
-    "score": 117,
-    "scoreBreakdown": {
-      "career": 40,
-      "totalWorks": 12,
-      "currentYearWorks": 30,
-      "mainRole": 15,
-      "recentGrowth": 20
-    },
-    "stats": {
-      "totalWorks": 7,
-      "currentYearWorks": 2,
-      "mainWorks": 1,
-      "supportingWorks": 1,
-      "yearsActive": 1
-    },
-    "cvimg": "image/rookiecv/cv/MayTachibana.jpg",
-    "characters": [
-      {
-        "animeTitle": "Futsutsuka na Akujo de wa Gozaimasu ga: Suuguu Chouso Torikae Den",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Sango",
-        "charimg": "image/rookiecv/MayTachibanaSango.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Futsutsuka na Akujo de wa Gozaimasu ga: Suuguu Chouso Torikae Den",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Mahou no Shimai LuluttoLilly",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Fuu Nonoyama",
-        "charimg": "image/rookiecv/MayTachibanaFuuNonoyama.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Mahou no Shimai LuluttoLilly",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Eris no Seihai",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Ulysses Faris",
-        "charimg": "image/rookiecv/MayTachibanaUlyssesFaris.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Eris no Seihai",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Shibou Yuugi de Meshi wo Kuu.",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Hiwada",
-        "charimg": "image/rookiecv/MayTachibanaHiwada.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Shibou Yuugi de Meshi wo Kuu.",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Honey Lemon Soda",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Mikarin",
-        "charimg": "image/rookiecv/MayTachibanaMikarin.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Honey Lemon Soda",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Sae Hiratsuka": {
-    "id": 294238,
-    "name": "Sae Hiratsuka",
-    "rank": 11,
-    "debutYear": 2022,
-    "score": 115,
-    "scoreBreakdown": {
-      "career": 30,
-      "totalWorks": 10,
-      "currentYearWorks": 35,
-      "mainRole": 25,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 13,
-      "currentYearWorks": 4,
-      "mainWorks": 2,
-      "supportingWorks": 2,
-      "yearsActive": 4
-    },
-    "cvimg": "image/rookiecv/cv/SaeHiratsuka.jpg",
-    "characters": [
-      {
-        "animeTitle": "Himitsu no AiPri: Mankai Buzzrium Live!",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Mitsuki Hoshikawa",
-        "charimg": "image/rookiecv/SaeHiratsukaMitsukiHoshikawa.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Himitsu no AiPri: Mankai Buzzrium Live!",
-            "year": 2026,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Himitsu no AiPri: Ring-hen",
-            "year": 2025,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Himitsu no AiPri",
-            "year": 2024,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "[Oshi no Ko] 3rd Season",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Mimi Yoshizumi",
-        "charimg": "image/rookiecv/SaeHiratsukaMimiYoshizumi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "[Oshi no Ko] 3rd Season",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Eris no Seihai",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Brenda",
-        "charimg": "image/rookiecv/SaeHiratsukaBrenda.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Eris no Seihai",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Osananajimi to wa Love Kome ni Naranai",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Runa Tsukimi",
-        "charimg": "image/rookiecv/SaeHiratsukaRunaTsukimi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Osananajimi to wa Love Kome ni Naranai",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Boku to Roboco Movie",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Meico",
-        "charimg": "image/rookiecv/SaeHiratsukaMeico.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Boku to Roboco Movie",
-            "year": 2025,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Boku to Roboco",
-            "year": 2022,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Zatsu Tabi: That's Journey",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Yui Unoki",
-        "charimg": "image/rookiecv/SaeHiratsukaYuiUnoki.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Zatsu Tabi: That's Journey",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Himitsu no AiPri: Ring-hen",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Tamaki no Aimuu",
-        "charimg": "image/rookiecv/SaeHiratsukaTamakinoAimuu.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Himitsu no AiPri: Ring-hen",
-            "year": 2025,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Himitsu no AiPri",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "S-Rank Monster no \"Behemoth\" Dakedo, Neko to Machigawarete Elf Musume no Pet to Shite Kurashitemasu",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Lala",
-        "charimg": "image/rookiecv/SaeHiratsukaLala.jpg",
-        "appearances": [
-          {
-            "animeTitle": "S-Rank Monster no \"Behemoth\" Dakedo, Neko to Machigawarete Elf Musume no Pet to Shite Kurashitemasu",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Shikanoko Nokonoko Koshitantan",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Classmate Joshi A",
-        "charimg": "image/rookiecv/SaeHiratsukaClassmateJoshiA.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Shikanoko Nokonoko Koshitantan",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Himitsu no AiPri",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Comet",
-        "charimg": "image/rookiecv/SaeHiratsukaComet.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Himitsu no AiPri",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Jaku-Chara Tomozaki-kun 2nd STAGE",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Akina",
-        "charimg": "image/rookiecv/SaeHiratsukaAkina.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Jaku-Chara Tomozaki-kun 2nd STAGE",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Hametsu no Oukoku",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Crystal Maya",
-        "charimg": "image/rookiecv/SaeHiratsukaCrystalMaya.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Hametsu no Oukoku",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Taihi Kimura": {
-    "id": 335875,
-    "name": "Taihi Kimura",
-    "rank": 12,
-    "debutYear": 2024,
-    "score": 115,
-    "scoreBreakdown": {
-      "career": 40,
-      "totalWorks": 12,
-      "currentYearWorks": 35,
-      "mainRole": 8,
-      "recentGrowth": 20
-    },
-    "stats": {
-      "totalWorks": 10,
-      "currentYearWorks": 4,
-      "mainWorks": 0,
-      "supportingWorks": 4,
-      "yearsActive": 2
-    },
-    "cvimg": "image/rookiecv/cv/TaihiKimura.jpg",
-    "characters": [
-      {
-        "animeTitle": "LIAR GAME",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Shingo Fujita",
-        "charimg": "image/rookiecv/TaihiKimuraShingoFujita.jpg",
-        "appearances": [
-          {
-            "animeTitle": "LIAR GAME",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Nippon Sangoku",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Fuji Sansei",
-        "charimg": "image/rookiecv/TaihiKimuraFujiSansei.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Nippon Sangoku",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Saikyou no Ousama, Nidome no Jinsei wa Nani wo Suru? 2nd Season",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Adam Krensh",
-        "charimg": "image/rookiecv/TaihiKimuraAdamKrensh.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Saikyou no Ousama, Nidome no Jinsei wa Nani wo Suru? 2nd Season",
-            "year": 2026,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Saikyou no Ousama, Nidome no Jinsei wa Nani wo Suru?",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "DARK MOON: Kuro no Tsuki - Tsuki no Saidan",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Khan",
-        "charimg": "image/rookiecv/TaihiKimuraKhan.jpg",
-        "appearances": [
-          {
-            "animeTitle": "DARK MOON: Kuro no Tsuki - Tsuki no Saidan",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Onmyo Kaiten Re:verse",
-        "year": 2025,
-        "role": "MAIN",
-        "charName": "Takeru Narihira",
-        "charimg": "image/rookiecv/TaihiKimuraTakeruNarihira.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Onmyo Kaiten Re:verse",
-            "year": 2025,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Hana wa Saku, Shura no Gotoku",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Rengo Nishino",
-        "charimg": "image/rookiecv/TaihiKimuraRengoNishino.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Hana wa Saku, Shura no Gotoku",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Youkai Gakkou no Sensei Hajimemashita!",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Kazuo",
-        "charimg": "image/rookiecv/TaihiKimuraKazuo.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Youkai Gakkou no Sensei Hajimemashita!",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Anji Iwata": {
-    "id": 342862,
-    "name": "Anji Iwata",
-    "rank": 13,
-    "debutYear": 2026,
-    "score": 115,
-    "scoreBreakdown": {
-      "career": 40,
-      "totalWorks": 15,
-      "currentYearWorks": 30,
-      "mainRole": 15,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 2,
-      "currentYearWorks": 2,
-      "mainWorks": 1,
-      "supportingWorks": 1,
-      "yearsActive": 0
-    },
-    "cvimg": "image/rookiecv/cv/AnjiIwata.jpg",
-    "characters": [
-      {
-        "animeTitle": "Seihantai na Kimi to Boku 2nd Season",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Kentarou Yamada",
-        "charimg": "image/rookiecv/AnjiIwataKentarouYamada.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Seihantai na Kimi to Boku 2nd Season",
-            "year": 2026,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Seihantai na Kimi to Boku",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Cocoro Oomori": {
-    "id": 358248,
-    "name": "Cocoro Oomori",
-    "rank": 14,
-    "debutYear": 2025,
-    "score": 115,
-    "scoreBreakdown": {
-      "career": 40,
-      "totalWorks": 15,
-      "currentYearWorks": 30,
-      "mainRole": 15,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 5,
-      "currentYearWorks": 2,
-      "mainWorks": 1,
-      "supportingWorks": 1,
-      "yearsActive": 1
-    },
-    "cvimg": "image/rookiecv/cv/CocoroOomori.jpg",
-    "characters": [
-      {
-        "animeTitle": "Seihantai na Kimi to Boku 2nd Season",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Natsumi Nishi",
-        "charimg": "image/rookiecv/CocoroOomoriNatsumiNishi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Seihantai na Kimi to Boku 2nd Season",
-            "year": 2026,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Seihantai na Kimi to Boku",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Yasei no Last Boss ga Arawareta!",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Virgo",
-        "charimg": "image/rookiecv/CocoroOomoriVirgo.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Yasei no Last Boss ga Arawareta!",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Honey Lemon Soda",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Kaede",
-        "charimg": "image/rookiecv/CocoroOomoriKaede.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Honey Lemon Soda",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Hiroto Shimizu": {
-    "id": 374889,
-    "name": "Hiroto Shimizu",
-    "rank": 15,
-    "debutYear": 2026,
-    "score": 115,
-    "scoreBreakdown": {
-      "career": 40,
-      "totalWorks": 15,
-      "currentYearWorks": 30,
-      "mainRole": 15,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 2,
-      "currentYearWorks": 2,
-      "mainWorks": 1,
-      "supportingWorks": 1,
-      "yearsActive": 0
-    },
-    "cvimg": "image/rookiecv/cv/HirotoShimizu.jpg",
-    "characters": [
-      {
-        "animeTitle": "Otomege Sekai wa Mob ni Kibishii Sekai desu 2",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Nicks Fou Bartfort",
-        "charimg": "image/rookiecv/HirotoShimizuNicksFouBartfort.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Otomege Sekai wa Mob ni Kibishii Sekai desu 2",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "DARK MOON: Kuro no Tsuki - Tsuki no Saidan",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Jaan",
-        "charimg": "image/rookiecv/HirotoShimizuJaan.jpg",
-        "appearances": [
-          {
-            "animeTitle": "DARK MOON: Kuro no Tsuki - Tsuki no Saidan",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      }
-    ]
-  },
-  "Yuuto Takenaka": {
-    "id": 331994,
-    "name": "Yuuto Takenaka",
-    "rank": 16,
-    "debutYear": 2024,
-    "score": 115,
-    "scoreBreakdown": {
-      "career": 40,
-      "totalWorks": 15,
-      "currentYearWorks": 30,
-      "mainRole": 15,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 4,
-      "currentYearWorks": 2,
-      "mainWorks": 1,
-      "supportingWorks": 1,
-      "yearsActive": 2
-    },
-    "cvimg": "image/rookiecv/cv/YuutoTakenaka.jpg",
-    "characters": [
-      {
-        "animeTitle": "Mebius Dust",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Araki Tomori",
-        "charimg": "image/rookiecv/YuutoTakenakaArakiTomori.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Mebius Dust",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "[Oshi no Ko] 3rd Season",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Shun Yoshizumi",
-        "charimg": "image/rookiecv/YuutoTakenakaShunYoshizumi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "[Oshi no Ko] 3rd Season",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Shikanoko Nokonoko Koshitantan",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Classmate Danshi B",
-        "charimg": "image/rookiecv/YuutoTakenakaClassmateDanshiB.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Shikanoko Nokonoko Koshitantan",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Isekai de Mofumofu Nadenade Suru Tame ni Ganbattemasu.",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Yannick Borson",
-        "charimg": "image/rookiecv/YuutoTakenakaYannickBorson.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Isekai de Mofumofu Nadenade Suru Tame ni Ganbattemasu.",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Yurie Igoma": {
-    "id": 293910,
-    "name": "Yurie Igoma",
-    "rank": 17,
-    "debutYear": 2023,
-    "score": 112,
-    "scoreBreakdown": {
-      "career": 30,
-      "totalWorks": 12,
-      "currentYearWorks": 40,
-      "mainRole": 15,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 10,
-      "currentYearWorks": 3,
-      "mainWorks": 1,
-      "supportingWorks": 2,
-      "yearsActive": 3
-    },
-    "cvimg": "image/rookiecv/cv/YurieIgoma.jpg",
-    "characters": [
-      {
-        "animeTitle": "Yowa Yowa Sensei",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Mizuki Mukubayashi",
-        "charimg": "image/rookiecv/YurieIgomaMizukiMukubayashi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Yowa Yowa Sensei",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Marika-chan no Koukando wa Bukkowareteiru",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Kokona Misaka",
-        "charimg": "image/rookiecv/YurieIgomaKokonaMisaka.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Marika-chan no Koukando wa Bukkowareteiru",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "[Oshi no Ko] 3rd Season",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Ruby Hoshino",
-        "charimg": "image/rookiecv/YurieIgomaRubyHoshino.jpg",
-        "appearances": [
-          {
-            "animeTitle": "[Oshi no Ko] 3rd Season",
-            "year": 2026,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "[Oshi no Ko] 2nd Season",
-            "year": 2024,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "[Oshi no Ko]",
-            "year": 2023,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Watari-kun no xx ga Houkai Sunzen",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Yukari Ishihara",
-        "charimg": "image/rookiecv/YurieIgomaYukariIshihara.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Watari-kun no xx ga Houkai Sunzen",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Kimi no Koto ga Dai Dai Dai Dai Daisuki na 100-nin no Kanojo 2nd Season",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Kakedashi Idol-chan",
-        "charimg": "image/rookiecv/YurieIgomaKakedashiIdolchan.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kimi no Koto ga Dai Dai Dai Dai Daisuki na 100-nin no Kanojo 2nd Season",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Mecha-ude (TV)",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Fourte",
-        "charimg": "image/rookiecv/YurieIgomaFourte.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Mecha-ude (TV)",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Uma Musume: Pretty Derby - Shin Jidai no Tobira",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Shima",
-        "charimg": "image/rookiecv/YurieIgomaShima.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Uma Musume: Pretty Derby - Shin Jidai no Tobira",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Rin Kusumi": {
-    "id": 245301,
-    "name": "Rin Kusumi",
-    "rank": 18,
-    "debutYear": 2022,
-    "score": 112,
-    "scoreBreakdown": {
-      "career": 30,
-      "totalWorks": 12,
-      "currentYearWorks": 30,
-      "mainRole": 25,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 8,
-      "currentYearWorks": 2,
-      "mainWorks": 2,
-      "supportingWorks": 0,
-      "yearsActive": 4
-    },
-    "cvimg": "image/rookiecv/cv/RinKusumi.jpg",
-    "characters": [
-      {
-        "animeTitle": "Hoppe-chan: Sun Oukoku to Kuro Hoppe-dan no Himitsu",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Ganso Hoppe-chan",
-        "charimg": "image/rookiecv/RinKusumiGansoHoppechan.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Hoppe-chan: Sun Oukoku to Kuro Hoppe-dan no Himitsu",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Osananajimi to wa Love Kome ni Naranai",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Shio Minamo",
-        "charimg": "image/rookiecv/RinKusumiShioMinamo.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Osananajimi to wa Love Kome ni Naranai",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Potion-danomi de Ikinobimasu!",
-        "year": 2023,
-        "role": "MAIN",
-        "charName": "Kaoru",
-        "charimg": "image/rookiecv/RinKusumiKaoru.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Potion-danomi de Ikinobimasu!",
-            "year": 2023,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Shiro Seijo to Kuro Bokushi",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Lily",
-        "charimg": "image/rookiecv/RinKusumiLily.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Shiro Seijo to Kuro Bokushi",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Level 1 dakedo Unique Skill de Saikyou desu",
-        "year": 2023,
-        "role": "MAIN",
-        "charName": "Emily Brown",
-        "charimg": "image/rookiecv/RinKusumiEmilyBrown.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Level 1 dakedo Unique Skill de Saikyou desu",
-            "year": 2023,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Kumichou Musume to Sewagakari",
-        "year": 2022,
-        "role": "SUPPORTING",
-        "charName": "Ohagi",
-        "charimg": "image/rookiecv/RinKusumiOhagi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kumichou Musume to Sewagakari",
-            "year": 2022,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Kumichou Musume to Sewagakari",
-        "year": 2022,
-        "role": "SUPPORTING",
-        "charName": "Hina Aoi",
-        "charimg": "image/rookiecv/RinKusumiHinaAoi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kumichou Musume to Sewagakari",
-            "year": 2022,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu",
-        "year": 2022,
-        "role": "SUPPORTING",
-        "charName": "Lauren Laraiya du Luvierte",
-        "charimg": "image/rookiecv/RinKusumiLaurenLaraiyaduLuvierte.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu",
-            "year": 2022,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Slow Loop",
-        "year": 2022,
-        "role": "MAIN",
-        "charName": "Hiyori Minagi",
-        "charimg": "image/rookiecv/RinKusumiHiyoriMinagi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Slow Loop",
-            "year": 2022,
-            "role": "MAIN"
-          }
-        ]
-      }
-    ]
-  },
-  "Anan Furuya": {
-    "id": 291030,
-    "name": "Anan Furuya",
-    "rank": 19,
-    "debutYear": 2023,
-    "score": 110,
-    "scoreBreakdown": {
-      "career": 30,
-      "totalWorks": 12,
-      "currentYearWorks": 40,
-      "mainRole": 8,
-      "recentGrowth": 20
-    },
-    "stats": {
-      "totalWorks": 9,
-      "currentYearWorks": 3,
-      "mainWorks": 0,
-      "supportingWorks": 3,
-      "yearsActive": 3
-    },
-    "cvimg": "image/rookiecv/cv/AnanFuruya.jpg",
-    "characters": [
-      {
-        "animeTitle": "Hanazakari no Kimitachi e 2nd Season",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Shinji Noe",
-        "charimg": "image/rookiecv/AnanFuruyaShinjiNoe.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Hanazakari no Kimitachi e 2nd Season",
-            "year": 2026,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Hanazakari no Kimitachi e",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "DARK MOON: Kuro no Tsuki - Tsuki no Saidan",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Ruslan",
-        "charimg": "image/rookiecv/AnanFuruyaRuslan.jpg",
-        "appearances": [
-          {
-            "animeTitle": "DARK MOON: Kuro no Tsuki - Tsuki no Saidan",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "SI-VIS: The Sound of Heroes",
-        "year": 2025,
-        "role": "MAIN",
-        "charName": "Kyouya Minami",
-        "charimg": "image/rookiecv/AnanFuruyaKyouyaMinami.jpg",
-        "appearances": [
-          {
-            "animeTitle": "SI-VIS: The Sound of Heroes",
-            "year": 2025,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Muchuu sa, Kimi ni.",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Shoutarou Yamada",
-        "charimg": "image/rookiecv/AnanFuruyaShoutarouYamada.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Muchuu sa, Kimi ni.",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Yamato yo Towa ni: REBEL3199",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Jirou Shima",
-        "charimg": "image/rookiecv/AnanFuruyaJirouShima.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Yamato yo Towa ni: REBEL3199",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Gekkan Mousou Kagaku",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Perch",
-        "charimg": "image/rookiecv/AnanFuruyaPerch.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Gekkan Mousou Kagaku",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Overtake! Extra",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Haruka Asahina",
-        "charimg": "image/rookiecv/AnanFuruyaHarukaAsahina.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Overtake! Extra",
-            "year": 2023,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Overtake!",
-            "year": 2023,
-            "role": "MAIN"
-          }
-        ]
-      }
-    ]
-  },
-  "Harumi Momo": {
-    "id": 350718,
-    "name": "Harumi Momo",
-    "rank": 20,
-    "debutYear": 2022,
-    "score": 110,
-    "scoreBreakdown": {
-      "career": 30,
-      "totalWorks": 15,
-      "currentYearWorks": 30,
-      "mainRole": 15,
-      "recentGrowth": 20
-    },
-    "stats": {
-      "totalWorks": 4,
-      "currentYearWorks": 2,
-      "mainWorks": 1,
-      "supportingWorks": 1,
-      "yearsActive": 4
-    },
-    "cvimg": "image/rookiecv/cv/HarumiMomo.jpg",
-    "characters": [
-      {
-        "animeTitle": "Chiikawa: Ningyo no Shima no Himitsu",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Furuhonya",
-        "charimg": "image/rookiecv/HarumiMomoFuruhonya.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Chiikawa: Ningyo no Shima no Himitsu",
-            "year": 2026,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Chiikawa",
-            "year": 2022,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Yuusha no Kuzu",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Yukine Indou",
-        "charimg": "image/rookiecv/HarumiMomoYukineIndou.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Yuusha no Kuzu",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Uchuujin MuuMuu",
-        "year": 2025,
-        "role": "MAIN",
-        "charName": "Sakurako Umeyashiki",
-        "charimg": "image/rookiecv/HarumiMomoSakurakoUmeyashiki.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Uchuujin MuuMuu",
-            "year": 2025,
-            "role": "MAIN"
-          }
-        ]
-      }
-    ]
-  },
-  "Sakura Shinfuku": {
-    "id": 294426,
-    "name": "Sakura Shinfuku",
-    "rank": 21,
-    "debutYear": 2023,
-    "score": 110,
-    "scoreBreakdown": {
-      "career": 30,
-      "totalWorks": 15,
-      "currentYearWorks": 30,
-      "mainRole": 15,
-      "recentGrowth": 20
-    },
-    "stats": {
-      "totalWorks": 4,
-      "currentYearWorks": 2,
-      "mainWorks": 1,
-      "supportingWorks": 1,
-      "yearsActive": 3
-    },
-    "cvimg": "image/rookiecv/cv/SakuraShinfuku.jpg",
-    "characters": [
-      {
-        "animeTitle": "Koori no Jouheki",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Tsukiko Shimojima",
-        "charimg": "image/rookiecv/SakuraShinfukuTsukikoShimojima.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Koori no Jouheki",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Douse, Koishite Shimaunda. Season 2",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Mizuho Nishino",
-        "charimg": "image/rookiecv/SakuraShinfukuMizuhoNishino.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Douse, Koishite Shimaunda. Season 2",
-            "year": 2026,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Douse, Koishite Shimaunda.",
-            "year": 2025,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Yuusha ga Shinda!",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Milly Yunis",
-        "charimg": "image/rookiecv/SakuraShinfukuMillyYunis.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Yuusha ga Shinda!",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Konatsu Hirabayashi": {
-    "id": 332956,
-    "name": "Konatsu Hirabayashi",
-    "rank": 22,
-    "debutYear": 2026,
-    "score": 108,
-    "scoreBreakdown": {
-      "career": 40,
-      "totalWorks": 15,
-      "currentYearWorks": 30,
-      "mainRole": 8,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 2,
-      "currentYearWorks": 2,
-      "mainWorks": 0,
-      "supportingWorks": 2,
-      "yearsActive": 0
-    },
-    "cvimg": "image/rookiecv/cv/KonatsuHirabayashi.jpg",
-    "characters": [
-      {
-        "animeTitle": "Seihantai na Kimi to Boku 2nd Season",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Aoi Satou",
-        "charimg": "image/rookiecv/KonatsuHirabayashiAoiSatou.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Seihantai na Kimi to Boku 2nd Season",
-            "year": 2026,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Seihantai na Kimi to Boku",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Momoko Noji": {
-    "id": 349480,
-    "name": "Momoko Noji",
-    "rank": 23,
-    "debutYear": 2024,
-    "score": 108,
-    "scoreBreakdown": {
-      "career": 40,
-      "totalWorks": 15,
-      "currentYearWorks": 30,
-      "mainRole": 8,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 3,
-      "currentYearWorks": 2,
-      "mainWorks": 0,
-      "supportingWorks": 2,
-      "yearsActive": 2
-    },
-    "cvimg": "image/rookiecv/cv/MomokoNoji.jpg",
-    "characters": [
-      {
-        "animeTitle": "Seihantai na Kimi to Boku 2nd Season",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Tani no Sobo",
-        "charimg": "image/rookiecv/MomokoNojiTaninoSobo.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Seihantai na Kimi to Boku 2nd Season",
-            "year": 2026,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Seihantai na Kimi to Boku",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Natsume Yuujinchou Shichi",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Furohonya no Tenshu",
-        "charimg": "image/rookiecv/MomokoNojiFurohonyanoTenshu.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Natsume Yuujinchou Shichi",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Nobuyuki Sakuma": {
-    "id": 387026,
-    "name": "Nobuyuki Sakuma",
-    "rank": 24,
-    "debutYear": 2026,
-    "score": 108,
-    "scoreBreakdown": {
-      "career": 40,
-      "totalWorks": 15,
-      "currentYearWorks": 30,
-      "mainRole": 8,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 2,
-      "currentYearWorks": 2,
-      "mainWorks": 0,
-      "supportingWorks": 2,
-      "yearsActive": 0
-    },
-    "cvimg": "image/rookiecv/cv/NobuyukiSakuma.jpg",
-    "characters": [
-      {
-        "animeTitle": "Seihantai na Kimi to Boku 2nd Season",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Tannin",
-        "charimg": "image/rookiecv/NobuyukiSakumaTannin.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Seihantai na Kimi to Boku 2nd Season",
-            "year": 2026,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Seihantai na Kimi to Boku",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Noel Kanzaki": {
-    "id": 380643,
-    "name": "Noel Kanzaki",
-    "rank": 25,
-    "debutYear": 2026,
-    "score": 108,
-    "scoreBreakdown": {
-      "career": 40,
-      "totalWorks": 15,
-      "currentYearWorks": 30,
-      "mainRole": 8,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 2,
-      "currentYearWorks": 2,
-      "mainWorks": 0,
-      "supportingWorks": 2,
-      "yearsActive": 0
-    },
-    "cvimg": "image/rookiecv/cv/NoelKanzaki.jpg",
-    "characters": [
-      {
-        "animeTitle": "Ookii Onnanoko wa Suki desu ka?",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Julia Mackenzie",
-        "charimg": "image/rookiecv/NoelKanzakiJuliaMackenzie.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Ookii Onnanoko wa Suki desu ka?",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Arisugawa Ren tte Honto wa Onna Nanda yo ne.",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Momoka Hiiragi",
-        "charimg": "image/rookiecv/NoelKanzakiMomokaHiiragi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Arisugawa Ren tte Honto wa Onna Nanda yo ne.",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Ria Shinonome": {
-    "id": 403540,
-    "name": "Ria Shinonome",
-    "rank": 26,
-    "debutYear": 2026,
-    "score": 108,
-    "scoreBreakdown": {
-      "career": 40,
-      "totalWorks": 15,
-      "currentYearWorks": 30,
-      "mainRole": 8,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 2,
-      "currentYearWorks": 2,
-      "mainWorks": 0,
-      "supportingWorks": 2,
-      "yearsActive": 0
-    },
-    "cvimg": "image/rookiecv/cv/RiaShinonome.jpg",
-    "characters": [
-      {
-        "animeTitle": "Snack HAZAMA",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Mary",
-        "charimg": "image/rookiecv/RiaShinonomeMary.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Snack HAZAMA",
-            "year": 2026,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Ushiro no Shoumen Kamui-san",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Yume Matsumura": {
-    "id": 397068,
-    "name": "Yume Matsumura",
-    "rank": 27,
-    "debutYear": 2026,
-    "score": 108,
-    "scoreBreakdown": {
-      "career": 40,
-      "totalWorks": 15,
-      "currentYearWorks": 30,
-      "mainRole": 8,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 3,
-      "currentYearWorks": 2,
-      "mainWorks": 0,
-      "supportingWorks": 2,
-      "yearsActive": 0
-    },
-    "cvimg": "image/rookiecv/cv/YumeMatsumura.jpg",
-    "characters": [
-      {
-        "animeTitle": "Kidou Keisatsu Patlabor EZY File 2",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Hachikuma Yuzuki",
-        "charimg": "image/rookiecv/YumeMatsumuraHachikumaYuzuki.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kidou Keisatsu Patlabor EZY File 2",
-            "year": 2026,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Kidou Keisatsu Patlabor EZY File 1",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Yuka Hinata": {
-    "id": 259891,
-    "name": "Yuka Hinata",
-    "rank": 28,
-    "debutYear": 2022,
-    "score": 107,
-    "scoreBreakdown": {
-      "career": 30,
-      "totalWorks": 12,
-      "currentYearWorks": 30,
-      "mainRole": 15,
-      "recentGrowth": 20
-    },
-    "stats": {
-      "totalWorks": 6,
-      "currentYearWorks": 2,
-      "mainWorks": 1,
-      "supportingWorks": 1,
-      "yearsActive": 4
-    },
-    "cvimg": "image/rookiecv/cv/YukaHinata.jpg",
-    "characters": [
-      {
-        "animeTitle": "Azur Lane: Bisoku Zenshin! Ni!!",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Golden Hind",
-        "charimg": "image/rookiecv/YukaHinataGoldenHind.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Azur Lane: Bisoku Zenshin! Ni!!",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Mou Ichido, Shitemitai.",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Yuuna Inukami",
-        "charimg": "image/rookiecv/YukaHinataYuunaInukami.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Mou Ichido, Shitemitai.",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Kakurenbo THE ANIMATION",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Kaede",
-        "charimg": "image/rookiecv/YukaHinataKaede.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kakurenbo THE ANIMATION",
-            "year": 2025,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Kaede to Suzu THE ANIMATION",
-            "year": 2022,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Onii-san... Ohitori desu ka?",
-        "year": 2024,
-        "role": "MAIN",
-        "charName": "Mamori Tanezawa",
-        "charimg": "image/rookiecv/YukaHinataMamoriTanezawa.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Onii-san... Ohitori desu ka?",
-            "year": 2024,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Harem Camp!",
-        "year": 2022,
-        "role": "MAIN",
-        "charName": "Aki Minami",
-        "charimg": "image/rookiecv/YukaHinataAkiMinami.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Harem Camp!",
-            "year": 2022,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Kaede to Suzu THE ANIMATION",
-        "year": 2022,
-        "role": "MAIN",
-        "charName": "Suzu",
-        "charimg": "image/rookiecv/YukaHinataSuzu.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kaede to Suzu THE ANIMATION",
-            "year": 2022,
-            "role": "MAIN"
-          }
-        ]
-      }
-    ]
-  },
-  "Saya Hitomi": {
-    "id": 330963,
-    "name": "Saya Hitomi",
-    "rank": 29,
-    "debutYear": 2024,
-    "score": 107,
-    "scoreBreakdown": {
-      "career": 40,
-      "totalWorks": 12,
-      "currentYearWorks": 25,
-      "mainRole": 15,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 8,
-      "currentYearWorks": 5,
-      "mainWorks": 1,
-      "supportingWorks": 4,
-      "yearsActive": 2
-    },
-    "cvimg": "image/rookiecv/cv/SayaHitomi.jpg",
-    "characters": [
-      {
-        "animeTitle": "Tai-Ari deshita.: Ojou-sama wa Kakutou Game nante Shinai",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Natsume Sukisaka",
-        "charimg": "image/rookiecv/SayaHitomiNatsumeSukisaka.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Tai-Ari deshita.: Ojou-sama wa Kakutou Game nante Shinai",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Honoo no Toukyuujyo Dodge Danko",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Sayo Sakakibara",
-        "charimg": "image/rookiecv/SayaHitomiSayoSakakibara.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Honoo no Toukyuujyo Dodge Danko",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Kore Kaite Shine",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Kokoro Fujimori",
-        "charimg": "image/rookiecv/SayaHitomiKokoroFujimori.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kore Kaite Shine",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "LIAR GAME",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Nao Kanzaki",
-        "charimg": "image/rookiecv/SayaHitomiNaoKanzaki.jpg",
-        "appearances": [
-          {
-            "animeTitle": "LIAR GAME",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Shibou Yuugi de Meshi wo Kuu.",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Mayumi",
-        "charimg": "image/rookiecv/SayaHitomiMayumi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Shibou Yuugi de Meshi wo Kuu.",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Chi. Chikyuu no Undou ni Tsuite",
-        "year": 2024,
-        "role": "MAIN",
-        "charName": "Jolenta",
-        "charimg": "image/rookiecv/SayaHitomiJolenta.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Chi. Chikyuu no Undou ni Tsuite",
-            "year": 2024,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Uma Musume: Pretty Derby - Shin Jidai no Tobira",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Mei",
-        "charimg": "image/rookiecv/SayaHitomiMei.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Uma Musume: Pretty Derby - Shin Jidai no Tobira",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Minori Fujidera": {
-    "id": 206623,
-    "name": "Minori Fujidera",
-    "rank": 30,
-    "debutYear": 2021,
-    "score": 105,
-    "scoreBreakdown": {
-      "career": 20,
-      "totalWorks": 10,
-      "currentYearWorks": 35,
-      "mainRole": 25,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 14,
-      "currentYearWorks": 4,
-      "mainWorks": 3,
-      "supportingWorks": 1,
-      "yearsActive": 5
-    },
-    "cvimg": "image/rookiecv/cv/MinoriFujidera.jpg",
-    "characters": [
-      {
-        "animeTitle": "Honoo no Toukyuujyo Dodge Danko",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Iroha Yuuki",
-        "charimg": "image/rookiecv/MinoriFujideraIrohaYuuki.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Honoo no Toukyuujyo Dodge Danko",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Ghost Concert: missing Songs",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Seria Aiba",
-        "charimg": "image/rookiecv/MinoriFujideraSeriaAiba.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Ghost Concert: missing Songs",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Onegai AiPri",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Nana Atami",
-        "charimg": "image/rookiecv/MinoriFujideraNanaAtami.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Onegai AiPri",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Akane-banashi",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Risa Kadokura",
-        "charimg": "image/rookiecv/MinoriFujideraRisaKadokura.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Akane-banashi",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Koori no Jouheki",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Minato no Kanojo",
-        "charimg": "image/rookiecv/MinoriFujideraMinatonoKanojo.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Koori no Jouheki",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Himitsu no AiPri: Mankai Buzzrium Live!",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Himari Aozora",
-        "charimg": "image/rookiecv/MinoriFujideraHimariAozora.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Himitsu no AiPri: Mankai Buzzrium Live!",
-            "year": 2026,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Himitsu no AiPri: Ring-hen",
-            "year": 2025,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Himitsu no AiPri",
-            "year": 2024,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Shibou Yuugi de Meshi wo Kuu.",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Mizunoto",
-        "charimg": "image/rookiecv/MinoriFujideraMizunoto.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Shibou Yuugi de Meshi wo Kuu.",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Taiyou yori mo Mabushii Hoshi",
-        "year": 2025,
-        "role": "MAIN",
-        "charName": "Sae Iwata",
-        "charimg": "image/rookiecv/MinoriFujideraSaeIwata.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Taiyou yori mo Mabushii Hoshi",
-            "year": 2025,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Tsuihousha Shokudou e Youkoso!",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Cynthia Drett",
-        "charimg": "image/rookiecv/MinoriFujideraCynthiaDrett.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Tsuihousha Shokudou e Youkoso!",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Tsuihousha Shokudou e Youkoso!",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Florian",
-        "charimg": "image/rookiecv/MinoriFujideraFlorian.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Tsuihousha Shokudou e Youkoso!",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Himitsu no AiPri: Ring-hen",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Airi no Aimuu",
-        "charimg": "image/rookiecv/MinoriFujideraAirinoAimuu.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Himitsu no AiPri: Ring-hen",
-            "year": 2025,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Himitsu no AiPri",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Hana wa Saku, Shura no Gotoku",
-        "year": 2025,
-        "role": "MAIN",
-        "charName": "Hana Haruyama",
-        "charimg": "image/rookiecv/MinoriFujideraHanaHaruyama.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Hana wa Saku, Shura no Gotoku",
-            "year": 2025,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Waccha PriMagi!",
-        "year": 2021,
-        "role": "MAIN",
-        "charName": "Auru Omega",
-        "charimg": "image/rookiecv/MinoriFujideraAuruOmega.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Waccha PriMagi!",
-            "year": 2021,
-            "role": "MAIN"
-          }
-        ]
-      }
-    ]
-  },
-  "Reo Osanai": {
-    "id": 289560,
-    "name": "Reo Osanai",
-    "rank": 31,
-    "debutYear": 2023,
-    "score": 105,
-    "scoreBreakdown": {
-      "career": 30,
-      "totalWorks": 10,
-      "currentYearWorks": 35,
-      "mainRole": 15,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 13,
-      "currentYearWorks": 4,
-      "mainWorks": 1,
-      "supportingWorks": 3,
-      "yearsActive": 3
-    },
-    "cvimg": "image/rookiecv/cv/ReoOsanai.jpg",
-    "characters": [
-      {
-        "animeTitle": "Grow Up Show: Himawari no Circus-dan",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Imari Agano",
-        "charimg": "image/rookiecv/ReoOsanaiImariAgano.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Grow Up Show: Himawari no Circus-dan",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Reiwa no Dara-san",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Kozue Shinohara",
-        "charimg": "image/rookiecv/ReoOsanaiKozueShinohara.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Reiwa no Dara-san",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Rakudai Kenja no Gakuin Musou: Nidome no Tensei, S-Rank Cheat Majutsushi Bouken-roku",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Anastasia",
-        "charimg": "image/rookiecv/ReoOsanaiAnastasia.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Rakudai Kenja no Gakuin Musou: Nidome no Tensei, S-Rank Cheat Majutsushi Bouken-roku",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Isekai Nonbiri Nouka 2",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Loage",
-        "charimg": "image/rookiecv/ReoOsanaiLoage.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Isekai Nonbiri Nouka 2",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Arne no Jikenbo",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Diana",
-        "charimg": "image/rookiecv/ReoOsanaiDiana.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Arne no Jikenbo",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Yano-kun no Futsuu no Hibi",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Sayaka Yoshida",
-        "charimg": "image/rookiecv/ReoOsanaiSayakaYoshida.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Yano-kun no Futsuu no Hibi",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "GaCen Shoujo to Ibunka Kouryuu",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Aoi Kusakabe",
-        "charimg": "image/rookiecv/ReoOsanaiAoiKusakabe.jpg",
-        "appearances": [
-          {
-            "animeTitle": "GaCen Shoujo to Ibunka Kouryuu",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Himitsu no AiPri: Ring-hen",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Nagisa Ishiki",
-        "charimg": "image/rookiecv/ReoOsanaiNagisaIshiki.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Himitsu no AiPri: Ring-hen",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Honey Lemon Soda",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Yukino",
-        "charimg": "image/rookiecv/ReoOsanaiYukino.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Honey Lemon Soda",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Youkai Gakkou no Sensei Hajimemashita!",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Zashikiwarashi",
-        "charimg": "image/rookiecv/ReoOsanaiZashikiwarashi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Youkai Gakkou no Sensei Hajimemashita!",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Shoushimin Series",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Sanae Kawamata",
-        "charimg": "image/rookiecv/ReoOsanaiSanaeKawamata.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Shoushimin Series",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Kami no Tou: Tower of God 2nd Season",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Tebo & Lebo",
-        "charimg": "image/rookiecv/ReoOsanaiTeboLebo.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kami no Tou: Tower of God 2nd Season",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "MASHLE",
-        "year": 2023,
-        "role": "MAIN",
-        "charName": "Mash Burnedead",
-        "charimg": "image/rookiecv/ReoOsanaiMashBurnedead.jpg",
-        "appearances": [
-          {
-            "animeTitle": "MASHLE",
-            "year": 2023,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "MASHLE",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Abyss Razor",
-        "charimg": "image/rookiecv/ReoOsanaiAbyssRazor.jpg",
-        "appearances": [
-          {
-            "animeTitle": "MASHLE",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "MASHLE",
-        "year": 2023,
-        "role": "MAIN",
-        "charName": "Dot Barrett",
-        "charimg": "image/rookiecv/ReoOsanaiDotBarrett.jpg",
-        "appearances": [
-          {
-            "animeTitle": "MASHLE",
-            "year": 2023,
-            "role": "MAIN"
-          }
-        ]
-      }
-    ]
-  },
-  "Hika Tsukishiro": {
-    "id": 280420,
-    "name": "Hika Tsukishiro",
-    "rank": 32,
-    "debutYear": 2025,
-    "score": 105,
-    "scoreBreakdown": {
-      "career": 40,
-      "totalWorks": 12,
-      "currentYearWorks": 30,
-      "mainRole": 8,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 8,
-      "currentYearWorks": 2,
-      "mainWorks": 0,
-      "supportingWorks": 2,
-      "yearsActive": 1
-    },
-    "cvimg": "image/rookiecv/cv/HikaTsukishiro.jpg",
-    "characters": [
-      {
-        "animeTitle": "Tongari Boushi no Atelier",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Richeh",
-        "charimg": "image/rookiecv/HikaTsukishiroRicheh.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Tongari Boushi no Atelier",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Eris no Seihai",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Kate Lorraine",
-        "charimg": "image/rookiecv/HikaTsukishiroKateLorraine.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Eris no Seihai",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Alma-chan wa Kazoku ni Naritai",
-        "year": 2025,
-        "role": "MAIN",
-        "charName": "Alma",
-        "charimg": "image/rookiecv/HikaTsukishiroAlma.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Alma-chan wa Kazoku ni Naritai",
-            "year": 2025,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "MUZIK TIGER In the Forest 2",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Soapy",
-        "charimg": "image/rookiecv/HikaTsukishiroSoapy.jpg",
-        "appearances": [
-          {
-            "animeTitle": "MUZIK TIGER In the Forest 2",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Zatsu Tabi: That's Journey",
-        "year": 2025,
-        "role": "MAIN",
-        "charName": "Chika Suzugamori",
-        "charimg": "image/rookiecv/HikaTsukishiroChikaSuzugamori.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Zatsu Tabi: That's Journey",
-            "year": 2025,
-            "role": "MAIN"
-          }
-        ]
-      }
-    ]
-  },
-  "Maria Abo": {
-    "id": 249661,
-    "name": "Maria Abo",
-    "rank": 33,
-    "debutYear": 2022,
-    "score": 103,
-    "scoreBreakdown": {
-      "career": 30,
-      "totalWorks": 15,
-      "currentYearWorks": 30,
-      "mainRole": 8,
-      "recentGrowth": 20
-    },
-    "stats": {
-      "totalWorks": 5,
-      "currentYearWorks": 2,
-      "mainWorks": 0,
-      "supportingWorks": 2,
-      "yearsActive": 4
-    },
-    "cvimg": "image/rookiecv/cv/MariaAbo.jpg",
-    "characters": [
-      {
-        "animeTitle": "Ryoumin 0-Nin Start no Henkyou Ryoushu-sama",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Francois",
-        "charimg": "image/rookiecv/MariaAboFrancois.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Ryoumin 0-Nin Start no Henkyou Ryoushu-sama",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Mata Korosarete Shimatta no desu ne, Tantei-sama",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Utaki Irie",
-        "charimg": "image/rookiecv/MariaAboUtakiIrie.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Mata Korosarete Shimatta no desu ne, Tantei-sama",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "mono",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Taishou",
-        "charimg": "image/rookiecv/MariaAboTaishou.jpg",
-        "appearances": [
-          {
-            "animeTitle": "mono",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Giji Harem",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Megu",
-        "charimg": "image/rookiecv/MariaAboMegu.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Giji Harem",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "RPG Fudousan",
-        "year": 2022,
-        "role": "SUPPORTING",
-        "charName": "Osanai Ani",
-        "charimg": "image/rookiecv/MariaAboOsanaiAni.jpg",
-        "appearances": [
-          {
-            "animeTitle": "RPG Fudousan",
-            "year": 2022,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Seena Hoshiki": {
-    "id": 172100,
-    "name": "Seena Hoshiki",
-    "rank": 34,
-    "debutYear": 2020,
-    "score": 102,
-    "scoreBreakdown": {
-      "career": 10,
-      "totalWorks": 12,
-      "currentYearWorks": 40,
-      "mainRole": 25,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 7,
-      "currentYearWorks": 3,
-      "mainWorks": 2,
-      "supportingWorks": 1,
-      "yearsActive": 6
-    },
-    "cvimg": "image/rookiecv/cv/SeenaHoshiki.jpg",
-    "characters": [
-      {
-        "animeTitle": "Hanaori-san wa Tensei Shite mo Kenka ga Shitai",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Mako Satsuki",
-        "charimg": "image/rookiecv/SeenaHoshikiMakoSatsuki.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Hanaori-san wa Tensei Shite mo Kenka ga Shitai",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Super no Ura de Yani Suu Futari",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Yamada",
-        "charimg": "image/rookiecv/SeenaHoshikiYamada.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Super no Ura de Yani Suu Futari",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "NEEDY GIRL OVERDOSE",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Nechika-sama",
-        "charimg": "image/rookiecv/SeenaHoshikiNechikasama.jpg",
-        "appearances": [
-          {
-            "animeTitle": "NEEDY GIRL OVERDOSE",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "ETERNITY MEMORIES",
-        "year": 2022,
-        "role": "SUPPORTING",
-        "charName": "Riamu Yumemi",
-        "charimg": "image/rookiecv/SeenaHoshikiRiamuYumemi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "ETERNITY MEMORIES",
-            "year": 2022,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "The IDOLM@STER Cinderella Girls: Starlight Stage CMs",
-            "year": 2020,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Go Just Go!",
-            "year": 2020,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Cinderella Girls Gekijou: Extra Stage",
-            "year": 2020,
-            "role": "MAIN"
-          }
-        ]
-      }
-    ]
-  },
-  "Nao Ojika": {
-    "id": 295047,
-    "name": "Nao Ojika",
-    "rank": 35,
-    "debutYear": 2023,
-    "score": 102,
-    "scoreBreakdown": {
-      "career": 30,
-      "totalWorks": 12,
-      "currentYearWorks": 30,
-      "mainRole": 15,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 6,
-      "currentYearWorks": 2,
-      "mainWorks": 1,
-      "supportingWorks": 1,
-      "yearsActive": 3
-    },
-    "cvimg": "image/rookiecv/cv/NaoOjika.jpg",
-    "characters": [
-      {
-        "animeTitle": "Ghost Concert: missing Songs",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Kaede Saionji",
-        "charimg": "image/rookiecv/NaoOjikaKaedeSaionji.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Ghost Concert: missing Songs",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Mahou no Shimai LuluttoLilly",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Rui Nonoyama",
-        "charimg": "image/rookiecv/NaoOjikaRuiNonoyama.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Mahou no Shimai LuluttoLilly",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Ittai Itsukara",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Temari Tsukimura",
-        "charimg": "image/rookiecv/NaoOjikaTemariTsukimura.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Ittai Itsukara",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Isekai de Cheat Skill wo Te ni Shita Ore wa, Genjitsu Sekai wo mo Musou Suru: Level Up wa Jinsei wo Kaeta",
-        "year": 2023,
-        "role": "MAIN",
-        "charName": "Yuuya Tenjou",
-        "charimg": "image/rookiecv/NaoOjikaYuuyaTenjou.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Isekai de Cheat Skill wo Te ni Shita Ore wa, Genjitsu Sekai wo mo Musou Suru: Level Up wa Jinsei wo Kaeta",
-            "year": 2023,
-            "role": "MAIN"
-          }
-        ]
-      }
-    ]
-  },
-  "Yumika Yano": {
-    "id": 290884,
-    "name": "Yumika Yano",
-    "rank": 36,
-    "debutYear": 2023,
-    "score": 102,
-    "scoreBreakdown": {
-      "career": 30,
-      "totalWorks": 12,
-      "currentYearWorks": 30,
-      "mainRole": 15,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 6,
-      "currentYearWorks": 2,
-      "mainWorks": 1,
-      "supportingWorks": 1,
-      "yearsActive": 3
-    },
-    "cvimg": "image/rookiecv/cv/YumikaYano.jpg",
-    "characters": [
-      {
-        "animeTitle": "Kimi no Koto ga Dai Dai Dai Dai Daisuki na 100-nin no Kanojo 3rd Season",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Kishika Torotoro",
-        "charimg": "image/rookiecv/YumikaYanoKishikaTorotoro.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kimi no Koto ga Dai Dai Dai Dai Daisuki na 100-nin no Kanojo 3rd Season",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Onegai AiPri",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Marin Takami",
-        "charimg": "image/rookiecv/YumikaYanoMarinTakami.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Onegai AiPri",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Watari-kun no xx ga Houkai Sunzen",
-        "year": 2025,
-        "role": "MAIN",
-        "charName": "Satsuki Tachibana",
-        "charimg": "image/rookiecv/YumikaYanoSatsukiTachibana.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Watari-kun no xx ga Houkai Sunzen",
-            "year": 2025,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Sentai Daishikkaku 2nd Season",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Yumeko Suzukiri",
-        "charimg": "image/rookiecv/YumikaYanoYumekoSuzukiri.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Sentai Daishikkaku 2nd Season",
-            "year": 2025,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Sentai Daishikkaku",
-            "year": 2024,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Kanojo ga Koushaku-tei ni Itta Riyuu",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Vivian Shamal",
-        "charimg": "image/rookiecv/YumikaYanoVivianShamal.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kanojo ga Koushaku-tei ni Itta Riyuu",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Jun Saito": {
-    "id": 378759,
-    "name": "Jun Saito",
-    "rank": 37,
-    "debutYear": 2023,
-    "score": 98,
-    "scoreBreakdown": {
-      "career": 30,
-      "totalWorks": 15,
-      "currentYearWorks": 30,
-      "mainRole": 8,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 3,
-      "currentYearWorks": 2,
-      "mainWorks": 0,
-      "supportingWorks": 2,
-      "yearsActive": 3
-    },
-    "cvimg": "image/rookiecv/cv/JunSaito.jpg",
-    "characters": [
-      {
-        "animeTitle": "Tenmaku no Jaadugar",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Muhammad",
-        "charimg": "image/rookiecv/JunSaitoMuhammad.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Tenmaku no Jaadugar",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Meikyuu no Shiori",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Kento Yamada",
-        "charimg": "image/rookiecv/JunSaitoKentoYamada.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Meikyuu no Shiori",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Madogiwa no Totto-chan",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Ooe-kun",
-        "charimg": "image/rookiecv/JunSaitoOoekun.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Madogiwa no Totto-chan",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Shinnosuke Musashi": {
-    "id": 298681,
-    "name": "Shinnosuke Musashi",
-    "rank": 38,
-    "debutYear": 2023,
-    "score": 98,
-    "scoreBreakdown": {
-      "career": 30,
-      "totalWorks": 15,
-      "currentYearWorks": 30,
-      "mainRole": 8,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 5,
-      "currentYearWorks": 2,
-      "mainWorks": 0,
-      "supportingWorks": 2,
-      "yearsActive": 3
-    },
-    "cvimg": "image/rookiecv/cv/ShinnosukeMusashi.jpg",
-    "characters": [
-      {
-        "animeTitle": "Sayonara Lara",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Kusatsu",
-        "charimg": "image/rookiecv/ShinnosukeMusashiKusatsu.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Sayonara Lara",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Meitantei Conan: Hanamaru na Answer",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Hanninda",
-        "charimg": "image/rookiecv/ShinnosukeMusashiHanninda.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Meitantei Conan: Hanamaru na Answer",
-            "year": 2026,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Meitantei Precure!",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Metallic Rouge",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Levi 328",
-        "charimg": "image/rookiecv/ShinnosukeMusashiLevi328.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Metallic Rouge",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Metallic Rouge",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Reggie Avan",
-        "charimg": "image/rookiecv/ShinnosukeMusashiReggieAvan.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Metallic Rouge",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Neko to Wakai se na",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Yuuki Chichi",
-        "charimg": "image/rookiecv/ShinnosukeMusashiYuukiChichi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Neko to Wakai se na",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Rina Kawaguchi": {
-    "id": 227955,
-    "name": "Rina Kawaguchi",
-    "rank": 39,
-    "debutYear": 2021,
-    "score": 97,
-    "scoreBreakdown": {
-      "career": 20,
-      "totalWorks": 7,
-      "currentYearWorks": 25,
-      "mainRole": 25,
-      "recentGrowth": 20
-    },
-    "stats": {
-      "totalWorks": 16,
-      "currentYearWorks": 5,
-      "mainWorks": 2,
-      "supportingWorks": 3,
-      "yearsActive": 5
-    },
-    "cvimg": "image/rookiecv/cv/RinaKawaguchi.jpg",
-    "characters": [
-      {
-        "animeTitle": "Rakudai Kenja no Gakuin Musou: Nidome no Tensei, S-Rank Cheat Majutsushi Bouken-roku",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Maria",
-        "charimg": "image/rookiecv/RinaKawaguchiMaria.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Rakudai Kenja no Gakuin Musou: Nidome no Tensei, S-Rank Cheat Majutsushi Bouken-roku",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Iya na Kao sare nagara Opantsu Misete Moraitai Returns",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Nene Arisu",
-        "charimg": "image/rookiecv/RinaKawaguchiNeneArisu.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Iya na Kao sare nagara Opantsu Misete Moraitai Returns",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "NEEDY GIRL OVERDOSE",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Moudoku Denpa Shoujo☆Purple Lollipop",
-        "charimg": "image/rookiecv/RinaKawaguchiMoudokuDenpaShoujoPurpleLollipop.jpg",
-        "appearances": [
-          {
-            "animeTitle": "NEEDY GIRL OVERDOSE",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Himitsu no AiPri: Mankai Buzzrium Live!",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Elle Rokudou",
-        "charimg": "image/rookiecv/RinaKawaguchiElleRokudou.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Himitsu no AiPri: Mankai Buzzrium Live!",
-            "year": 2026,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Himitsu no AiPri: Ring-hen",
-            "year": 2025,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Shibou Yuugi de Meshi wo Kuu.",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Momono",
-        "charimg": "image/rookiecv/RinaKawaguchiMomono.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Shibou Yuugi de Meshi wo Kuu.",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Himitsu no AiPri: Ring-hen",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Juria no Aimuu",
-        "charimg": "image/rookiecv/RinaKawaguchiJurianoAimuu.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Himitsu no AiPri: Ring-hen",
-            "year": 2025,
-            "role": "SUPPORTING"
           }
         ]
       },
       {
-        "animeTitle": "Himitsu no AiPri: Ring-hen",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Umi Ishiki",
-        "charimg": "image/rookiecv/RinaKawaguchiUmiIshiki.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Himitsu no AiPri: Ring-hen",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Witch Watch",
-        "year": 2025,
-        "role": "MAIN",
-        "charName": "Nico Wakatsuki",
-        "charimg": "image/rookiecv/RinaKawaguchiNicoWakatsuki.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Witch Watch",
-            "year": 2025,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Honey Lemon Soda",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Rino",
-        "charimg": "image/rookiecv/RinaKawaguchiRino.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Honey Lemon Soda",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Kizuna no Allele Season 2",
-        "year": 2023,
-        "role": "MAIN",
-        "charName": "Quan",
-        "charimg": "image/rookiecv/RinaKawaguchiQuan.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kizuna no Allele Season 2",
-            "year": 2023,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Kizuna no Allele",
-            "year": 2023,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Dark Gathering",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Ai Kamiyo",
-        "charimg": "image/rookiecv/RinaKawaguchiAiKamiyo.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Dark Gathering",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Digimon Ghost Game",
-        "year": 2021,
-        "role": "SUPPORTING",
-        "charName": "Potamon",
-        "charimg": "image/rookiecv/RinaKawaguchiPotamon.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Digimon Ghost Game",
-            "year": 2021,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Shuumatsu no Valkyrie",
-        "year": 2021,
-        "role": "SUPPORTING",
-        "charName": "Reginleif",
-        "charimg": "image/rookiecv/RinaKawaguchiReginleif.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Shuumatsu no Valkyrie",
-            "year": 2021,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Ao Senami": {
-    "id": 272566,
-    "name": "Ao Senami",
-    "rank": 40,
-    "debutYear": 2020,
-    "score": 95,
-    "scoreBreakdown": {
-      "career": 10,
-      "totalWorks": 15,
-      "currentYearWorks": 30,
-      "mainRole": 25,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 4,
-      "currentYearWorks": 2,
-      "mainWorks": 2,
-      "supportingWorks": 0,
-      "yearsActive": 6
-    },
-    "cvimg": "image/rookiecv/cv/AoSenami.jpg",
-    "characters": [
-      {
-        "animeTitle": "Android wa Keiken Ninzuu ni Hairimasu ka??: 5-kakan Tsuzukete......?",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Akane Tsuda",
-        "charimg": "image/rookiecv/AoSenamiAkaneTsuda.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Android wa Keiken Ninzuu ni Hairimasu ka??: 5-kakan Tsuzukete......?",
-            "year": 2026,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Android wa Keiken Ninzuu ni Hairimasu ka??",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Renseijutsushi Colette no H na Sakusei Monogatari",
-        "year": 2022,
-        "role": "SUPPORTING",
-        "charName": "Rebecca Collie",
-        "charimg": "image/rookiecv/AoSenamiRebeccaCollie.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Renseijutsushi Colette no H na Sakusei Monogatari",
-            "year": 2022,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Enjo Kouhai",
-        "year": 2020,
-        "role": "MAIN",
-        "charName": "Ouka Origamine",
-        "charimg": "image/rookiecv/AoSenamiOukaOrigamine.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Enjo Kouhai",
-            "year": 2020,
-            "role": "MAIN"
-          }
-        ]
-      }
-    ]
-  },
-  "Hayato Doujima": {
-    "id": 291032,
-    "name": "Hayato Doujima",
-    "rank": 41,
-    "debutYear": 2023,
-    "score": 95,
-    "scoreBreakdown": {
-      "career": 30,
-      "totalWorks": 12,
-      "currentYearWorks": 30,
-      "mainRole": 8,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 6,
-      "currentYearWorks": 2,
-      "mainWorks": 0,
-      "supportingWorks": 2,
-      "yearsActive": 3
-    },
-    "cvimg": "image/rookiecv/cv/HayatoDoujima.jpg",
-    "characters": [
-      {
-        "animeTitle": "Ponkotsu Fuuki Iin to Skirt take ga Futekisetsu na JK no Hanashi",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Yuu Izubuchi",
-        "charimg": "image/rookiecv/HayatoDoujimaYuuIzubuchi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Ponkotsu Fuuki Iin to Skirt take ga Futekisetsu na JK no Hanashi",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "DARK MOON: Kuro no Tsuki - Tsuki no Saidan",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Najak",
-        "charimg": "image/rookiecv/HayatoDoujimaNajak.jpg",
-        "appearances": [
-          {
-            "animeTitle": "DARK MOON: Kuro no Tsuki - Tsuki no Saidan",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Yeosingangnim",
-        "year": 2024,
-        "role": "MAIN",
-        "charName": "Seo-Jun Han",
-        "charimg": "image/rookiecv/HayatoDoujimaSeoJunHan.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Yeosingangnim",
-            "year": 2024,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Kami no Tou: Tower of God 2nd Season",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Augusgus",
-        "charimg": "image/rookiecv/HayatoDoujimaAugusgus.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kami no Tou: Tower of God 2nd Season",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Kawagoe Boys Sing",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Michiru Morimura",
-        "charimg": "image/rookiecv/HayatoDoujimaMichiruMorimura.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kawagoe Boys Sing",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Miyuki Sakurai": {
-    "id": 311996,
-    "name": "Miyuki Sakurai",
-    "rank": 42,
-    "debutYear": 2023,
-    "score": 95,
-    "scoreBreakdown": {
-      "career": 30,
-      "totalWorks": 12,
-      "currentYearWorks": 30,
-      "mainRole": 8,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 6,
-      "currentYearWorks": 2,
-      "mainWorks": 0,
-      "supportingWorks": 2,
-      "yearsActive": 3
-    },
-    "cvimg": "image/rookiecv/cv/MiyukiSakurai.jpg",
-    "characters": [
-      {
-        "animeTitle": "Kuroneko to Majo no Kyoushitsu",
+        "animeTitle": "아르네의 사건부",
         "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Capella Capricorn",
-        "charimg": "image/rookiecv/MiyukiSakuraiCapellaCapricorn.jpg",
+        "charName": "카이",
+        "charimg": "image/rookiecv/KakeruHatanoKai.jpg",
         "appearances": [
           {
-            "animeTitle": "Kuroneko to Majo no Kyoushitsu",
+            "animeTitle": "아르네의 사건부",
             "year": 2026,
             "role": "SUPPORTING"
           }
         ]
       },
       {
-        "animeTitle": "Ghost Concert: missing Songs",
+        "animeTitle": "비실비실 선생님",
         "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Akari Murayama",
-        "charimg": "image/rookiecv/MiyukiSakuraiAkariMurayama.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Ghost Concert: missing Songs",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Isshun de Chiryou Shiteita no ni Yakutatazu to Tsuihou Sareta Tensai Chiyushi, Yami Healer Toshite Tanoshiku Ikiru",
-        "year": 2025,
-        "role": "MAIN",
-        "charName": "Zenos",
-        "charimg": "image/rookiecv/MiyukiSakuraiZenos.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Isshun de Chiryou Shiteita no ni Yakutatazu to Tsuihou Sareta Tensai Chiyushi, Yami Healer Toshite Tanoshiku Ikiru",
-            "year": 2025,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Nige Jouzu no Wakagimi",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Takauji Ashikaga",
-        "charimg": "image/rookiecv/MiyukiSakuraiTakaujiAshikaga.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Nige Jouzu no Wakagimi",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Uma Musume: Pretty Derby - Shin Jidai no Tobira",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Ruu",
-        "charimg": "image/rookiecv/MiyukiSakuraiRuu.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Uma Musume: Pretty Derby - Shin Jidai no Tobira",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Yuzuki-san Chi no Yon Kyoudai.",
-        "year": 2023,
-        "role": "MAIN",
-        "charName": "Minato Yuzuki",
-        "charimg": "image/rookiecv/MiyukiSakuraiMinatoYuzuki.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Yuzuki-san Chi no Yon Kyoudai.",
-            "year": 2023,
-            "role": "MAIN"
-          }
-        ]
-      }
-    ]
-  },
-  "Natsuko Abe": {
-    "id": 273563,
-    "name": "Natsuko Abe",
-    "rank": 43,
-    "debutYear": 2022,
-    "score": 95,
-    "scoreBreakdown": {
-      "career": 30,
-      "totalWorks": 10,
-      "currentYearWorks": 25,
-      "mainRole": 15,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 13,
-      "currentYearWorks": 5,
-      "mainWorks": 1,
-      "supportingWorks": 4,
-      "yearsActive": 4
-    },
-    "cvimg": "image/rookiecv/cv/NatsukoAbe.jpg",
-    "characters": [
-      {
-        "animeTitle": "Tsuihou Sareta Tensei Juukishi wa Game Chishiki de Musou Suru",
-        "year": 2026,
         "role": "MAIN",
-        "charName": "Maris Edvan",
-        "charimg": "image/rookiecv/NatsukoAbeMarisEdvan.jpg",
+        "charName": "아비쿠라 아키히토",
+        "charimg": "image/rookiecv/KakeruHatanoAkihitoAbikura.jpg",
         "appearances": [
           {
-            "animeTitle": "Tsuihou Sareta Tensei Juukishi wa Game Chishiki de Musou Suru",
+            "animeTitle": "비실비실 선생님",
             "year": 2026,
             "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Isekai Nonbiri Nouka 2",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Lita",
-        "charimg": "image/rookiecv/NatsukoAbeLita.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Isekai Nonbiri Nouka 2",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Isekai Nonbiri Nouka 2",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Lize",
-        "charimg": "image/rookiecv/NatsukoAbeLize.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Isekai Nonbiri Nouka 2",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Onegai AiPri",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Koharu Hanasaki",
-        "charimg": "image/rookiecv/NatsukoAbeKoharuHanasaki.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Onegai AiPri",
-            "year": 2026,
-            "role": "SUPPORTING"
           }
         ]
       },
       {
-        "animeTitle": "Medalist 2nd Season",
+        "animeTitle": "얼음성벽",
         "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Yuuna Yagi",
-        "charimg": "image/rookiecv/NatsukoAbeYuunaYagi.jpg",
+        "charName": "아즈미 유우키",
+        "charimg": "image/rookiecv/KakeruHatanoYukiAzumi.jpg",
         "appearances": [
           {
-            "animeTitle": "Medalist 2nd Season",
+            "animeTitle": "얼음성벽",
             "year": 2026,
             "role": "SUPPORTING"
           }
         ]
       },
       {
-        "animeTitle": "Shibou Yuugi de Meshi wo Kuu.",
+        "animeTitle": "담배 고양이",
         "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Moegi",
-        "charimg": "image/rookiecv/NatsukoAbeMoegi.jpg",
+        "charName": "슈우",
+        "charimg": "image/rookiecv/KakeruHatanoShuu.jpg",
         "appearances": [
           {
-            "animeTitle": "Shibou Yuugi de Meshi wo Kuu.",
+            "animeTitle": "담배 고양이",
             "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Momentary Lily",
-        "year": 2025,
-        "role": "MAIN",
-        "charName": "Yuri Kawatsu",
-        "charimg": "image/rookiecv/NatsukoAbeYuriKawatsu.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Momentary Lily",
-            "year": 2025,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Kamierabi GOD.app Season 2",
-        "year": 2024,
-        "role": "MAIN",
-        "charName": "Chika Nojima",
-        "charimg": "image/rookiecv/NatsukoAbeChikaNojima.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kamierabi GOD.app Season 2",
-            "year": 2024,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Kamierabi GOD.app",
-            "year": 2023,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Amagami-san Chi no Enmusubi",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Karen Matsugazaki",
-        "charimg": "image/rookiecv/NatsukoAbeKarenMatsugazaki.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Amagami-san Chi no Enmusubi",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Kami no Tou: Tower of God 2nd Season",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Nia Nya",
-        "charimg": "image/rookiecv/NatsukoAbeNiaNya.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kami no Tou: Tower of God 2nd Season",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Senpai wa Otokonoko",
-        "year": 2024,
-        "role": "MAIN",
-        "charName": "Ryuuji Taiga",
-        "charimg": "image/rookiecv/NatsukoAbeRyuujiTaiga.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Senpai wa Otokonoko",
-            "year": 2024,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Shijou Saikyou no Daimaou, Murabito A ni Tensei suru",
-        "year": 2022,
-        "role": "SUPPORTING",
-        "charName": "Latima",
-        "charimg": "image/rookiecv/NatsukoAbeLatima.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Shijou Saikyou no Daimaou, Murabito A ni Tensei suru",
-            "year": 2022,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Leadale no Daichi nite",
-        "year": 2022,
-        "role": "SUPPORTING",
-        "charName": "Lonti Arbalest",
-        "charimg": "image/rookiecv/NatsukoAbeLontiArbalest.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Leadale no Daichi nite",
-            "year": 2022,
             "role": "SUPPORTING"
           }
         ]
@@ -4434,800 +209,470 @@ var RookieCVData_2026 = {
   },
   "Riko Akechi": {
     "id": 343492,
-    "name": "Riko Akechi",
-    "rank": 44,
+    "name": "아케치 리코",
+    "rank": 3,
     "debutYear": 2025,
-    "score": 95,
+    "score": 87,
     "scoreBreakdown": {
-      "career": 40,
-      "totalWorks": 10,
-      "currentYearWorks": 10,
-      "mainRole": 15,
-      "recentGrowth": 20
+      "careerRecency": 15,
+      "currentYearWorks": 27,
+      "priorWorks": 10,
+      "recentGrowth": 17,
+      "characterRecognition": 10,
+      "mediaExposure": 8
     },
     "stats": {
-      "totalWorks": 14,
-      "currentYearWorks": 7,
+      "totalWorks": 13,
+      "currentYearWorks": 8,
       "mainWorks": 1,
-      "supportingWorks": 6,
-      "yearsActive": 1
+      "supportingWorks": 7,
+      "yearsActive": 2,
+      "maxCharacterFavourites": 255,
+      "mediaExposure": 8
     },
     "cvimg": "image/rookiecv/cv/RikoAkechi.jpg",
     "characters": [
       {
-        "animeTitle": "Shibou Yuugi de Meshi wo Kuu. 44: CLOUDY BEACH",
+        "animeTitle": "명탐정 프리큐어!",
         "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Mitsuba",
-        "charimg": "image/rookiecv/RikoAkechiMitsuba.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Shibou Yuugi de Meshi wo Kuu. 44: CLOUDY BEACH",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Yani Neko",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Saori Tatsuno",
-        "charimg": "image/rookiecv/RikoAkechiSaoriTatsuno.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Yani Neko",
-            "year": 2026,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Yani Neko Mini",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "LIAR GAME",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Makiko Tamura",
-        "charimg": "image/rookiecv/RikoAkechiMakikoTamura.jpg",
-        "appearances": [
-          {
-            "animeTitle": "LIAR GAME",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Ponkotsu Fuuki Iin to Skirt take ga Futekisetsu na JK no Hanashi",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Poemu Kohinata",
-        "charimg": "image/rookiecv/RikoAkechiPoemuKohinata.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Ponkotsu Fuuki Iin to Skirt take ga Futekisetsu na JK no Hanashi",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Koori no Jouheki",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Haruto Hino",
-        "charimg": "image/rookiecv/RikoAkechiHarutoHino.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Koori no Jouheki",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Saikyou no Ousama, Nidome no Jinsei wa Nani wo Suru? 2nd Season",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Angela Rose",
-        "charimg": "image/rookiecv/RikoAkechiAngelaRose.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Saikyou no Ousama, Nidome no Jinsei wa Nani wo Suru? 2nd Season",
-            "year": 2026,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Saikyou no Ousama, Nidome no Jinsei wa Nani wo Suru?",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Meitantei Precure!",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Eliza Kurusu",
+        "charName": "쿠루스 에리자",
         "charimg": "image/rookiecv/RikoAkechiElizaKurusu.jpg",
         "appearances": [
           {
-            "animeTitle": "Meitantei Precure!",
+            "animeTitle": "명탐정 프리큐어!",
             "year": 2026,
             "role": "SUPPORTING"
           }
         ]
       },
       {
-        "animeTitle": "Fujimoto Tatsuki 17-26",
-        "year": 2025,
-        "role": "MAIN",
-        "charName": "Toshihide",
-        "charimg": "image/rookiecv/RikoAkechiToshihide.jpg",
+        "animeTitle": "담배 고양이 미니",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "오친포 타츠로",
+        "charimg": "image/rookiecv/RikoAkechiSaoriTatsuno.jpg",
         "appearances": [
           {
-            "animeTitle": "Fujimoto Tatsuki 17-26",
-            "year": 2025,
+            "animeTitle": "담배 고양이 미니",
+            "year": 2026,
+            "role": "SUPPORTING"
+          },
+          {
+            "animeTitle": "담배 고양이",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "얼음성벽",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "남동생",
+        "charimg": "image/rookiecv/RikoAkechiHarutoHino.jpg",
+        "appearances": [
+          {
+            "animeTitle": "얼음성벽",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "허당 선도부원과 스커트 길이가 부적절한 여고생의 이야기",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "코히나타 포엠",
+        "charimg": "image/rookiecv/RikoAkechiPoemuKohinata.jpg",
+        "appearances": [
+          {
+            "animeTitle": "허당 선도부원과 스커트 길이가 부적절한 여고생의 이야기",
+            "year": 2026,
             "role": "MAIN"
           }
         ]
       },
       {
-        "animeTitle": "Hitozuma no Kuchibiru wa Kan Chu-Hi no Aji ga Shite",
-        "year": 2025,
+        "animeTitle": "최강의 왕, 두 번째 인생에는 무엇을 하는가? 시즌 2",
+        "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Anastasia",
-        "charimg": "image/rookiecv/RikoAkechiAnastasia.jpg",
+        "charName": "안젤라 로즈",
+        "charimg": "image/rookiecv/RikoAkechiAngelaRose.jpg",
         "appearances": [
           {
-            "animeTitle": "Hitozuma no Kuchibiru wa Kan Chu-Hi no Aji ga Shite",
-            "year": 2025,
+            "animeTitle": "최강의 왕, 두 번째 인생에는 무엇을 하는가? 시즌 2",
+            "year": 2026,
             "role": "SUPPORTING"
           }
         ]
       },
       {
-        "animeTitle": "Witch Watch",
-        "year": 2025,
+        "animeTitle": "라이어 게임",
+        "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Kanade Gouhara",
-        "charimg": "image/rookiecv/RikoAkechiKanadeGouhara.jpg",
+        "charName": "타무라 마키코",
+        "charimg": "image/rookiecv/RikoAkechiMakikoTamura.jpg",
         "appearances": [
           {
-            "animeTitle": "Witch Watch",
-            "year": 2025,
+            "animeTitle": "라이어 게임",
+            "year": 2026,
             "role": "SUPPORTING"
           }
         ]
       },
       {
-        "animeTitle": "Witch Watch",
-        "year": 2025,
+        "animeTitle": "사망 유희로 밥을 먹는다. 44: 클라우디 비치",
+        "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Hironaka no Musuko",
-        "charimg": "image/rookiecv/RikoAkechiHironakanoMusuko.jpg",
+        "charName": "미츠바",
+        "charimg": "image/rookiecv/RikoAkechiMitsuba.jpg",
         "appearances": [
           {
-            "animeTitle": "Witch Watch",
-            "year": 2025,
+            "animeTitle": "사망 유희로 밥을 먹는다. 44: 클라우디 비치",
+            "year": 2026,
             "role": "SUPPORTING"
           }
         ]
       }
     ]
   },
-  "Saho Shirasu": {
-    "id": 205010,
-    "name": "Saho Shirasu",
-    "rank": 45,
-    "debutYear": 2021,
-    "score": 93,
+  "Saya Hitomi": {
+    "id": 330963,
+    "name": "히토미 사야",
+    "rank": 4,
+    "debutYear": 2024,
+    "score": 86,
     "scoreBreakdown": {
-      "career": 20,
-      "totalWorks": 3,
-      "currentYearWorks": 40,
-      "mainRole": 15,
-      "recentGrowth": 15
+      "careerRecency": 15,
+      "currentYearWorks": 27,
+      "priorWorks": 10,
+      "recentGrowth": 17,
+      "characterRecognition": 9,
+      "mediaExposure": 8
     },
     "stats": {
-      "totalWorks": 23,
-      "currentYearWorks": 3,
+      "totalWorks": 8,
+      "currentYearWorks": 5,
       "mainWorks": 1,
-      "supportingWorks": 2,
-      "yearsActive": 5
+      "supportingWorks": 4,
+      "yearsActive": 3,
+      "maxCharacterFavourites": 160,
+      "mediaExposure": 8
     },
-    "cvimg": "image/rookiecv/cv/SahoShirasu.jpg",
+    "cvimg": "image/rookiecv/cv/SayaHitomi.jpg",
     "characters": [
       {
-        "animeTitle": "Neko to Ryuu",
+        "animeTitle": "사망 유희로 밥을 먹는다.",
         "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Mikemike",
-        "charimg": "image/rookiecv/SahoShirasuMikemike.jpg",
+        "charName": "마유미",
+        "charimg": "image/rookiecv/SayaHitomiMayumi.jpg",
         "appearances": [
           {
-            "animeTitle": "Neko to Ryuu",
+            "animeTitle": "사망 유희로 밥을 먹는다.",
             "year": 2026,
             "role": "SUPPORTING"
           }
         ]
       },
       {
-        "animeTitle": "Ichijouma Mankitsu-gurashi!",
+        "animeTitle": "라이어 게임",
         "year": 2026,
         "role": "MAIN",
-        "charName": "Rie Amamiya",
-        "charimg": "image/rookiecv/SahoShirasuRieAmamiya.jpg",
+        "charName": "칸자키 나오",
+        "charimg": "image/rookiecv/SayaHitomiNaoKanzaki.jpg",
         "appearances": [
           {
-            "animeTitle": "Ichijouma Mankitsu-gurashi!",
+            "animeTitle": "라이어 게임",
             "year": 2026,
             "role": "MAIN"
           }
         ]
       },
       {
-        "animeTitle": "Dead Account",
+        "animeTitle": "대전 감사합니다 ~숙녀는 격투 게임을 안 해요~",
         "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Akari Enishiro",
-        "charimg": "image/rookiecv/SahoShirasuAkariEnishiro.jpg",
+        "charName": "사키사카 나츠메",
+        "charimg": "image/rookiecv/SayaHitomiNatsumeSukisaka.jpg",
         "appearances": [
           {
-            "animeTitle": "Dead Account",
+            "animeTitle": "대전 감사합니다 ~숙녀는 격투 게임을 안 해요~",
             "year": 2026,
             "role": "SUPPORTING"
           }
         ]
       },
       {
-        "animeTitle": "Eris no Seihai",
+        "animeTitle": "이거 그리고 죽어",
         "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Eularia",
-        "charimg": "image/rookiecv/SahoShirasuEularia.jpg",
+        "charName": "후지모리 코코로",
+        "charimg": "image/rookiecv/SayaHitomiKokoroFujimori.jpg",
         "appearances": [
           {
-            "animeTitle": "Eris no Seihai",
+            "animeTitle": "이거 그리고 죽어",
             "year": 2026,
             "role": "SUPPORTING"
           }
         ]
       },
       {
-        "animeTitle": "Tondemo Skill de Isekai Hourou Meshi 2",
-        "year": 2025,
+        "animeTitle": "피구여왕 단코",
+        "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Rusalka",
-        "charimg": "image/rookiecv/SahoShirasuRusalka.jpg",
+        "charName": "사카키바라 사요",
+        "charimg": "image/rookiecv/SayaHitomiSayoSakakibara.jpg",
         "appearances": [
           {
-            "animeTitle": "Tondemo Skill de Isekai Hourou Meshi 2",
-            "year": 2025,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Tondemo Skill de Isekai Hourou Meshi",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Apocalypse Hotel",
-        "year": 2025,
-        "role": "MAIN",
-        "charName": "Yachiyo",
-        "charimg": "image/rookiecv/SahoShirasuYachiyo.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Apocalypse Hotel",
-            "year": 2025,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Rock wa Lady no Tashinami Deshite",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Alice Suzunomiya",
-        "charimg": "image/rookiecv/SahoShirasuAliceSuzunomiya.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Rock wa Lady no Tashinami Deshite",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "T・P Bon",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Yoko Shiraki",
-        "charimg": "image/rookiecv/SahoShirasuYokoShiraki.jpg",
-        "appearances": [
-          {
-            "animeTitle": "T・P Bon",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Hoshikuzu Telepath",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Kei Akizuki",
-        "charimg": "image/rookiecv/SahoShirasuKeiAkizuki.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Hoshikuzu Telepath",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Captain Tsubasa: Season 2 - Junior Youth-hen",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Azumi Hayakawa",
-        "charimg": "image/rookiecv/SahoShirasuAzumiHayakawa.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Captain Tsubasa: Season 2 - Junior Youth-hen",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Shangri-La Frontier",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Mia",
-        "charimg": "image/rookiecv/SahoShirasuMia.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Shangri-La Frontier",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Sazanami Soushi ni Shojo wo Sasagu: Saa, Jikkuri Medemashou ka",
-        "year": 2023,
-        "role": "MAIN",
-        "charName": "Nagisa Amami",
-        "charimg": "image/rookiecv/SahoShirasuNagisaAmami.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Sazanami Soushi ni Shojo wo Sasagu: Saa, Jikkuri Medemashou ka",
-            "year": 2023,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Tensei Kizoku no Isekai Boukenroku: Jichou wo Shiranai Kamigami no Shito",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Ennak",
-        "charimg": "image/rookiecv/SahoShirasuEnnak.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Tensei Kizoku no Isekai Boukenroku: Jichou wo Shiranai Kamigami no Shito",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Rakudai Majo: Fuuka to Yami no Majo",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Cecil",
-        "charimg": "image/rookiecv/SahoShirasuCecil.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Rakudai Majo: Fuuka to Yami no Majo",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Futoku no Guild",
-        "year": 2022,
-        "role": "MAIN",
-        "charName": "Noma Rune",
-        "charimg": "image/rookiecv/SahoShirasuNomaRune.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Futoku no Guild",
-            "year": 2022,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "ORIENT: Awajishima Gekitou-hen",
-        "year": 2022,
-        "role": "SUPPORTING",
-        "charName": "Sanae Satsukigawa",
-        "charimg": "image/rookiecv/SahoShirasuSanaeSatsukigawa.jpg",
-        "appearances": [
-          {
-            "animeTitle": "ORIENT: Awajishima Gekitou-hen",
-            "year": 2022,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "ORIENT",
-            "year": 2022,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Summer Time Render",
-        "year": 2022,
-        "role": "MAIN",
-        "charName": "Mio Kofune",
-        "charimg": "image/rookiecv/SahoShirasuMioKofune.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Summer Time Render",
-            "year": 2022,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Build Divide: Code White",
-        "year": 2022,
-        "role": "SUPPORTING",
-        "charName": "Kanagi Rinpu",
-        "charimg": "image/rookiecv/SahoShirasuKanagiRinpu.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Build Divide: Code White",
-            "year": 2022,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Build Divide: Code Black",
-            "year": 2021,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Tantei wa mou, Shindeiru.",
-        "year": 2021,
-        "role": "SUPPORTING",
-        "charName": "Charlotte Arisaka Anderson",
-        "charimg": "image/rookiecv/SahoShirasuCharlotteArisakaAnderson.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Tantei wa mou, Shindeiru.",
-            "year": 2021,
+            "animeTitle": "피구여왕 단코",
+            "year": 2026,
             "role": "SUPPORTING"
           }
         ]
       }
     ]
   },
-  "Natsumi Haruse": {
-    "id": 129305,
-    "name": "Natsumi Haruse",
-    "rank": 46,
-    "debutYear": 2015,
-    "score": 92,
+  "Azusa Tachibana": {
+    "id": 337852,
+    "name": "타치바나 아즈사",
+    "rank": 5,
+    "debutYear": 2024,
+    "score": 84,
     "scoreBreakdown": {
-      "career": 0,
-      "totalWorks": 7,
-      "currentYearWorks": 40,
-      "mainRole": 25,
-      "recentGrowth": 20
+      "careerRecency": 15,
+      "currentYearWorks": 27,
+      "priorWorks": 10,
+      "recentGrowth": 17,
+      "characterRecognition": 8,
+      "mediaExposure": 7
     },
     "stats": {
-      "totalWorks": 17,
-      "currentYearWorks": 3,
+      "totalWorks": 11,
+      "currentYearWorks": 5,
       "mainWorks": 2,
-      "supportingWorks": 1,
-      "yearsActive": 11
+      "supportingWorks": 3,
+      "yearsActive": 3,
+      "maxCharacterFavourites": 74,
+      "mediaExposure": 7
     },
-    "cvimg": "image/rookiecv/cv/NatsumiHaruse.jpg",
+    "cvimg": "image/rookiecv/cv/AzusaTachibana.jpg",
     "characters": [
       {
-        "animeTitle": "Tenkousaki no Seiso Karen na Bishoujo ga, Mukashi Danshi to Omotte Issho ni Asonda Osananajimi datta Ken",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Minamo Mitake",
-        "charimg": "image/rookiecv/NatsumiHaruseMinamoMitake.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Tenkousaki no Seiso Karen na Bishoujo ga, Mukashi Danshi to Omotte Issho ni Asonda Osananajimi datta Ken",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Iya na Kao sare nagara Opantsu Misete Moraitai Returns",
+        "animeTitle": "카야는 무섭지 않아",
         "year": 2026,
         "role": "MAIN",
-        "charName": "Mei Sakura",
-        "charimg": "image/rookiecv/NatsumiHaruseMeiSakura.jpg",
+        "charName": "사토 카야",
+        "charimg": "image/rookiecv/AzusaTachibanaKayaSatou.jpg",
         "appearances": [
           {
-            "animeTitle": "Iya na Kao sare nagara Opantsu Misete Moraitai Returns",
+            "animeTitle": "카야는 무섭지 않아",
             "year": 2026,
             "role": "MAIN"
           }
         ]
       },
       {
-        "animeTitle": "Medalist 2nd Season",
+        "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "알리체",
+        "charimg": "image/rookiecv/AzusaTachibanaAlichey.jpg",
+        "appearances": [
+          {
+            "animeTitle": "귀족 전생 ~축복받은 태생으로 최강의 힘을 손에 넣다~",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "검은 고양이와 마녀의 교실",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "유우 아리에스",
+        "charimg": "image/rookiecv/AzusaTachibanaEweAries.jpg",
+        "appearances": [
+          {
+            "animeTitle": "검은 고양이와 마녀의 교실",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "마법소녀 리리컬 나노하 EXCEEDS Gun Blaze Vengeance",
         "year": 2026,
         "role": "MAIN",
-        "charName": "Inori Yuitsuka",
-        "charimg": "image/rookiecv/NatsumiHaruseInoriYuitsuka.jpg",
+        "charName": "쿠제 시이나",
+        "charimg": "image/rookiecv/AzusaTachibanaShiinaKuze.jpg",
         "appearances": [
           {
-            "animeTitle": "Medalist 2nd Season",
+            "animeTitle": "마법소녀 리리컬 나노하 EXCEEDS Gun Blaze Vengeance",
             "year": 2026,
             "role": "MAIN"
-          },
-          {
-            "animeTitle": "Medalist",
-            "year": 2025,
-            "role": "MAIN"
           }
         ]
       },
       {
-        "animeTitle": "Sylvanian Families: Freya no Wonder Days",
-        "year": 2025,
-        "role": "MAIN",
-        "charName": "Theo Biscuit",
-        "charimg": "image/rookiecv/NatsumiHaruseTheoBiscuit.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Sylvanian Families: Freya no Wonder Days",
-            "year": 2025,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Sylvanian Families: Freya no Wonder Days",
-        "year": 2025,
+        "animeTitle": "피구여왕 단코",
+        "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Ciel Flora",
-        "charimg": "image/rookiecv/NatsumiHaruseCielFlora.jpg",
+        "charName": "쿠스노키 모아",
+        "charimg": "image/rookiecv/AzusaTachibanaMoaKusunoki.jpg",
         "appearances": [
           {
-            "animeTitle": "Sylvanian Families: Freya no Wonder Days",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "THE iDOLM@STER Cinderella Girls: U149 OVA",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Kaoru Ryuuzaki",
-        "charimg": "image/rookiecv/NatsumiHaruseKaoruRyuuzaki.jpg",
-        "appearances": [
-          {
-            "animeTitle": "THE iDOLM@STER Cinderella Girls: U149 OVA",
-            "year": 2023,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "THE iDOLM@STER Cinderella Girls: U149",
-            "year": 2023,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Cinderella Girls Gekijou: Extra Stage",
-            "year": 2020,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Cinderella Girls Gekijou CLIMAX SEASON",
-            "year": 2019,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Cinderella Girls Gekijou: Kayou Cinderella Theater 3rd Season",
-            "year": 2018,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Cinderella Girls Gekijou 3rd Season",
-            "year": 2018,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Cinderella Girls Gekijou 2nd Season",
-            "year": 2017,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Cinderella Girls Gekijou",
-            "year": 2017,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "THE IDOLM@STER Cinderella Girls 2nd SEASON",
-            "year": 2015,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "takt op.Destiny",
-        "year": 2021,
-        "role": "SUPPORTING",
-        "charName": "Marie",
-        "charimg": "image/rookiecv/NatsumiHaruseMarie.jpg",
-        "appearances": [
-          {
-            "animeTitle": "takt op.Destiny",
-            "year": 2021,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Infinite Dendrogram",
-        "year": 2020,
-        "role": "SUPPORTING",
-        "charName": "Milianne Grandria",
-        "charimg": "image/rookiecv/NatsumiHaruseMilianneGrandria.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Infinite Dendrogram",
-            "year": 2020,
+            "animeTitle": "피구여왕 단코",
+            "year": 2026,
             "role": "SUPPORTING"
           }
         ]
       }
     ]
   },
-  "Mayu Iizuka": {
-    "id": 166401,
-    "name": "Mayu Iizuka",
-    "rank": 47,
-    "debutYear": 2015,
-    "score": 92,
+  "Hikari Senga": {
+    "id": 383264,
+    "name": "센가 히카리",
+    "rank": 6,
+    "debutYear": 2026,
+    "score": 82,
     "scoreBreakdown": {
-      "career": 0,
-      "totalWorks": 12,
-      "currentYearWorks": 40,
-      "mainRole": 25,
-      "recentGrowth": 15
+      "careerRecency": 15,
+      "currentYearWorks": 25,
+      "priorWorks": 10,
+      "recentGrowth": 17,
+      "characterRecognition": 10,
+      "mediaExposure": 5
     },
     "stats": {
-      "totalWorks": 10,
-      "currentYearWorks": 3,
-      "mainWorks": 2,
-      "supportingWorks": 1,
-      "yearsActive": 11
+      "totalWorks": 4,
+      "currentYearWorks": 4,
+      "mainWorks": 4,
+      "supportingWorks": 0,
+      "yearsActive": 1,
+      "maxCharacterFavourites": 376,
+      "mediaExposure": 5
     },
-    "cvimg": "image/rookiecv/cv/MayuIizuka.jpg",
+    "cvimg": "image/rookiecv/cv/HikariSenga.jpg",
     "characters": [
       {
-        "animeTitle": "Hell Mode: Yarikomi-zuki no Gamer wa Haisettei no Isekai de Musou Suru 2nd Season",
+        "animeTitle": "명탐정 프리큐어!",
         "year": 2026,
         "role": "MAIN",
-        "charName": "Krena",
-        "charimg": "image/rookiecv/MayuIizukaKrena.jpg",
+        "charName": "아케치 안나",
+        "charimg": "image/rookiecv/HikariSengaAnnaAkechi.jpg",
         "appearances": [
           {
-            "animeTitle": "Hell Mode: Yarikomi-zuki no Gamer wa Haisettei no Isekai de Musou Suru 2nd Season",
+            "animeTitle": "명탐정 프리큐어!",
             "year": 2026,
             "role": "MAIN"
           },
           {
-            "animeTitle": "Hell Mode: Yarikomi-zuki no Gamer wa Haisettei no Isekai de Musou Suru",
+            "animeTitle": "만점짜리 앤서",
             "year": 2026,
-            "role": "SUPPORTING"
+            "role": "MAIN"
+          },
+          {
+            "animeTitle": "영화 명탐정 프리큐어! 신비로운 정원과 두 사람의 비밀",
+            "year": 2026,
+            "role": "MAIN"
           }
         ]
       },
       {
-        "animeTitle": "Yuusha Kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku",
+        "animeTitle": "소녀 괴수 캐러멜리제",
         "year": 2026,
         "role": "MAIN",
-        "charName": "Teoritta",
-        "charimg": "image/rookiecv/MayuIizukaTeoritta.jpg",
+        "charName": "아카이시 쿠로에",
+        "charimg": "image/rookiecv/HikariSengaKuroeAkaishi.jpg",
         "appearances": [
           {
-            "animeTitle": "Yuusha Kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku",
+            "animeTitle": "소녀 괴수 캐러멜리제",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      }
+    ]
+  },
+  "May Tachibana": {
+    "id": 377812,
+    "name": "타치바나 메이",
+    "rank": 7,
+    "debutYear": 2025,
+    "score": 80,
+    "scoreBreakdown": {
+      "careerRecency": 15,
+      "currentYearWorks": 25,
+      "priorWorks": 10,
+      "recentGrowth": 17,
+      "characterRecognition": 6,
+      "mediaExposure": 7
+    },
+    "stats": {
+      "totalWorks": 6,
+      "currentYearWorks": 4,
+      "mainWorks": 1,
+      "supportingWorks": 3,
+      "yearsActive": 2,
+      "maxCharacterFavourites": 23,
+      "mediaExposure": 7
+    },
+    "cvimg": "image/rookiecv/cv/MayTachibana.jpg",
+    "characters": [
+      {
+        "animeTitle": "사망 유희로 밥을 먹는다.",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "히와다",
+        "charimg": "image/rookiecv/MayTachibanaHiwada.jpg",
+        "appearances": [
+          {
+            "animeTitle": "사망 유희로 밥을 먹는다.",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "에리스의 성배",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "율리시스 파리스",
+        "charimg": "image/rookiecv/MayTachibanaUlyssesFaris.jpg",
+        "appearances": [
+          {
+            "animeTitle": "에리스의 성배",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "마법의 자매 루루토리리",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "노노야마 후우",
+        "charimg": "image/rookiecv/MayTachibanaFuuNonoyama.jpg",
+        "appearances": [
+          {
+            "animeTitle": "마법의 자매 루루토리리",
             "year": 2026,
             "role": "MAIN"
           }
         ]
       },
       {
-        "animeTitle": "CUE! Short Anime",
-        "year": 2022,
-        "role": "MAIN",
-        "charName": "Lulu",
-        "charimg": "image/rookiecv/MayuIizukaLulu.jpg",
-        "appearances": [
-          {
-            "animeTitle": "CUE! Short Anime",
-            "year": 2022,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "CUE!",
-        "year": 2022,
-        "role": "MAIN",
-        "charName": "Airi Eniwa",
-        "charimg": "image/rookiecv/MayuIizukaAiriEniwa.jpg",
-        "appearances": [
-          {
-            "animeTitle": "CUE!",
-            "year": 2022,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Tamayura: Sotsugyou Shashin Part 4 - Ashita",
-        "year": 2016,
+        "animeTitle": "못 미더운 악녀입니다만",
+        "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Suzune Maekawa",
-        "charimg": "image/rookiecv/MayuIizukaSuzuneMaekawa.jpg",
+        "charName": "산고",
+        "charimg": "image/rookiecv/MayTachibanaSango.jpg",
         "appearances": [
           {
-            "animeTitle": "Tamayura: Sotsugyou Shashin Part 4 - Ashita",
-            "year": 2016,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Tamayura: Sotsugyou Shashin Part 3 - Akogare",
-            "year": 2015,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Tamayura: Sotsugyou Shashin Part 2 - Hibiki",
-            "year": 2015,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Tamayura: Sotsugyou Shashin Part 1 - Kizashi",
-            "year": 2015,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Million Doll",
-        "year": 2015,
-        "role": "SUPPORTING",
-        "charName": "Rina",
-        "charimg": "image/rookiecv/MayuIizukaRina.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Million Doll",
-            "year": 2015,
+            "animeTitle": "못 미더운 악녀입니다만",
+            "year": 2026,
             "role": "SUPPORTING"
           }
         ]
@@ -5236,3607 +681,276 @@ var RookieCVData_2026 = {
   },
   "Asaki Yuikawa": {
     "id": 301279,
-    "name": "Asaki Yuikawa",
-    "rank": 48,
+    "name": "유이카와 아사키",
+    "rank": 8,
     "debutYear": 2023,
-    "score": 92,
+    "score": 77,
     "scoreBreakdown": {
-      "career": 30,
-      "totalWorks": 7,
-      "currentYearWorks": 25,
-      "mainRole": 15,
-      "recentGrowth": 15
+      "careerRecency": 11,
+      "currentYearWorks": 27,
+      "priorWorks": 10,
+      "recentGrowth": 12,
+      "characterRecognition": 10,
+      "mediaExposure": 7
     },
     "stats": {
-      "totalWorks": 16,
-      "currentYearWorks": 5,
+      "totalWorks": 14,
+      "currentYearWorks": 6,
       "mainWorks": 1,
-      "supportingWorks": 4,
-      "yearsActive": 3
+      "supportingWorks": 5,
+      "yearsActive": 4,
+      "maxCharacterFavourites": 355,
+      "mediaExposure": 7
     },
     "cvimg": "image/rookiecv/cv/AsakiYuikawa.jpg",
     "characters": [
       {
-        "animeTitle": "Nige Jouzu no Wakagimi 2nd Season",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Tokiyuki Houjou",
-        "charimg": "image/rookiecv/AsakiYuikawaTokiyukiHoujou.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Nige Jouzu no Wakagimi 2nd Season",
-            "year": 2026,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Nige Jouzu no Wakagimi",
-            "year": 2024,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Mahou Shoujo Lyrical Nanoha EXCEEDS Gun Blaze Vengeance",
+        "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
         "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Towa Yorumi",
-        "charimg": "image/rookiecv/AsakiYuikawaTowaYorumi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Mahou Shoujo Lyrical Nanoha EXCEEDS Gun Blaze Vengeance",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Hidarikiki no Eren",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Yuuko Akane",
-        "charimg": "image/rookiecv/AsakiYuikawaYuukoAkane.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Hidarikiki no Eren",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "MARRIAGETOXIN",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Shiori Ureshino",
-        "charimg": "image/rookiecv/AsakiYuikawaShioriUreshino.jpg",
-        "appearances": [
-          {
-            "animeTitle": "MARRIAGETOXIN",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Nigashita Sakana wa Ookikatta ga Tsuriageta Sakana ga Ookisugita Ken",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Teodorico",
-        "charimg": "image/rookiecv/AsakiYuikawaTeodorico.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Nigashita Sakana wa Ookikatta ga Tsuriageta Sakana ga Ookisugita Ken",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Hime-sama, \"Goumon\" no Jikan desu 2nd Season",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Konko Kon",
+        "charName": "콩코 콩",
         "charimg": "image/rookiecv/AsakiYuikawaKonkoKon.jpg",
         "appearances": [
           {
-            "animeTitle": "Hime-sama, \"Goumon\" no Jikan desu 2nd Season",
+            "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
             "year": 2026,
             "role": "SUPPORTING"
           }
         ]
       },
       {
-        "animeTitle": "Kakuriyo no Yadomeshi 2nd Season",
-        "year": 2025,
+        "animeTitle": "왼손잡이 에렌",
+        "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Takechiyo",
-        "charimg": "image/rookiecv/AsakiYuikawaTakechiyo.jpg",
+        "charName": "아카네 유우코",
+        "charimg": "image/rookiecv/AsakiYuikawaYuukoAkane.jpg",
         "appearances": [
           {
-            "animeTitle": "Kakuriyo no Yadomeshi 2nd Season",
-            "year": 2025,
+            "animeTitle": "왼손잡이 에렌",
+            "year": 2026,
             "role": "SUPPORTING"
           }
         ]
       },
       {
-        "animeTitle": "GaCen Shoujo to Ibunka Kouryuu",
-        "year": 2025,
+        "animeTitle": "매리지 톡신",
+        "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Karin Kaga",
-        "charimg": "image/rookiecv/AsakiYuikawaKarinKaga.jpg",
+        "charName": "우레시노 시오리",
+        "charimg": "image/rookiecv/AsakiYuikawaShioriUreshino.jpg",
         "appearances": [
           {
-            "animeTitle": "GaCen Shoujo to Ibunka Kouryuu",
-            "year": 2025,
+            "animeTitle": "매리지 톡신",
+            "year": 2026,
             "role": "SUPPORTING"
           }
         ]
       },
       {
-        "animeTitle": "Ninja to Koroshiya no Futarigurashi",
-        "year": 2025,
+        "animeTitle": "놓친 물고기는 컸지만 잡은 물고기가 너무 컸던 건",
+        "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Aoi no Otouto",
-        "charimg": "image/rookiecv/AsakiYuikawaAoinoOtouto.jpg",
+        "charName": "테오도리코",
+        "charimg": "image/rookiecv/AsakiYuikawaTeodorico.jpg",
         "appearances": [
           {
-            "animeTitle": "Ninja to Koroshiya no Futarigurashi",
-            "year": 2025,
+            "animeTitle": "놓친 물고기는 컸지만 잡은 물고기가 너무 컸던 건",
+            "year": 2026,
             "role": "SUPPORTING"
           }
         ]
       },
       {
-        "animeTitle": "Shangri-La Frontier 2nd Season",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Rumi Hizutome",
-        "charimg": "image/rookiecv/AsakiYuikawaRumiHizutome.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Shangri-La Frontier 2nd Season",
-            "year": 2024,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Shangri-La Frontier",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Ao no Hako",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Niina Shimazaki",
-        "charimg": "image/rookiecv/AsakiYuikawaNiinaShimazaki.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Ao no Hako",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "trapezium",
-        "year": 2024,
+        "animeTitle": "도망을 잘 치는 도련님 2기",
+        "year": 2026,
         "role": "MAIN",
-        "charName": "Yuu Azuma",
-        "charimg": "image/rookiecv/AsakiYuikawaYuuAzuma.jpg",
+        "charName": "유이카와 아사키",
+        "charimg": "image/rookiecv/AsakiYuikawaTokiyukiHoujou.jpg",
         "appearances": [
           {
-            "animeTitle": "trapezium",
-            "year": 2024,
+            "animeTitle": "도망을 잘 치는 도련님 2기",
+            "year": 2026,
             "role": "MAIN"
           }
         ]
       },
       {
-        "animeTitle": "Tonari no Youkai-san",
-        "year": 2024,
-        "role": "MAIN",
-        "charName": "Mutsumi Sugimoto",
-        "charimg": "image/rookiecv/AsakiYuikawaMutsumiSugimoto.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Tonari no Youkai-san",
-            "year": 2024,
-            "role": "MAIN"
-          }
-        ]
-      }
-    ]
-  },
-  "Yuuki Urushiyama": {
-    "id": 213989,
-    "name": "Yuuki Urushiyama",
-    "rank": 49,
-    "debutYear": 2020,
-    "score": 90,
-    "scoreBreakdown": {
-      "career": 10,
-      "totalWorks": 12,
-      "currentYearWorks": 40,
-      "mainRole": 8,
-      "recentGrowth": 20
-    },
-    "stats": {
-      "totalWorks": 10,
-      "currentYearWorks": 3,
-      "mainWorks": 0,
-      "supportingWorks": 3,
-      "yearsActive": 6
-    },
-    "cvimg": "image/rookiecv/cv/YuukiUrushiyama.jpg",
-    "characters": [
-      {
-        "animeTitle": "THE RIBBON HERO",
+        "animeTitle": "마법소녀 리리컬 나노하 EXCEEDS Gun Blaze Vengeance",
         "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Hakobe",
-        "charimg": "image/rookiecv/YuukiUrushiyamaHakobe.jpg",
+        "charName": "요루미 토와",
+        "charimg": "image/rookiecv/AsakiYuikawaTowaYorumi.jpg",
         "appearances": [
           {
-            "animeTitle": "THE RIBBON HERO",
+            "animeTitle": "마법소녀 리리컬 나노하 EXCEEDS Gun Blaze Vengeance",
             "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Seihantai na Kimi to Boku 2nd Season",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Mini",
-        "charimg": "image/rookiecv/YuukiUrushiyamaMini.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Seihantai na Kimi to Boku 2nd Season",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Jigokuraku 2nd Season",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Ju Fa",
-        "charimg": "image/rookiecv/YuukiUrushiyamaJuFa.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Jigokuraku 2nd Season",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Hikaru ga Shinda Natsu",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Hikaru Indou",
-        "charimg": "image/rookiecv/YuukiUrushiyamaHikaruIndou.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Hikaru ga Shinda Natsu",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Rock wa Lady no Tashinami Deshite",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Tsukasa Hasunuma",
-        "charimg": "image/rookiecv/YuukiUrushiyamaTsukasaHasunuma.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Rock wa Lady no Tashinami Deshite",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Shinkalion: Change the World",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Kai Umikaze",
-        "charimg": "image/rookiecv/YuukiUrushiyamaKaiUmikaze.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Shinkalion: Change the World",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "GIRLS BAND CRY",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Rin",
-        "charimg": "image/rookiecv/YuukiUrushiyamaRin.jpg",
-        "appearances": [
-          {
-            "animeTitle": "GIRLS BAND CRY",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Shangri-La Frontier",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Lass",
-        "charimg": "image/rookiecv/YuukiUrushiyamaLass.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Shangri-La Frontier",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Uchi no Kaisha no Chiisai Senpai no Hanashi",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Shinobu Takatsukasa",
-        "charimg": "image/rookiecv/YuukiUrushiyamaShinobuTakatsukasa.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Uchi no Kaisha no Chiisai Senpai no Hanashi",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Saikyou Kamizmode!",
-        "year": 2020,
-        "role": "MAIN",
-        "charName": "Dai Mugen",
-        "charimg": "image/rookiecv/YuukiUrushiyamaDaiMugen.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Saikyou Kamizmode!",
-            "year": 2020,
-            "role": "MAIN"
-          }
-        ]
-      }
-    ]
-  },
-  "Farahnaz Nikray": {
-    "id": 217864,
-    "name": "Farahnaz Nikray",
-    "rank": 50,
-    "debutYear": 2021,
-    "score": 90,
-    "scoreBreakdown": {
-      "career": 20,
-      "totalWorks": 12,
-      "currentYearWorks": 30,
-      "mainRole": 8,
-      "recentGrowth": 20
-    },
-    "stats": {
-      "totalWorks": 6,
-      "currentYearWorks": 2,
-      "mainWorks": 0,
-      "supportingWorks": 2,
-      "yearsActive": 5
-    },
-    "cvimg": "image/rookiecv/cv/FarahnazNikray.jpg",
-    "characters": [
-      {
-        "animeTitle": "Futsutsuka na Akujo de wa Gozaimasu ga: Suuguu Chouso Torikae Den",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Tousetsu Kou",
-        "charimg": "image/rookiecv/FarahnazNikrayTousetsuKou.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Futsutsuka na Akujo de wa Gozaimasu ga: Suuguu Chouso Torikae Den",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Tenmaku no Jaadugar",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Zumurrud",
-        "charimg": "image/rookiecv/FarahnazNikrayZumurrud.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Tenmaku no Jaadugar",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Kimi no Koto ga Dai Dai Dai Dai Daisuki na 100-nin no Kanojo 2nd Season",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Sauruko Terano",
-        "charimg": "image/rookiecv/FarahnazNikraySaurukoTerano.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kimi no Koto ga Dai Dai Dai Dai Daisuki na 100-nin no Kanojo 2nd Season",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Dead Mount Death Play Part 2",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Deathclaw Saya",
-        "charimg": "image/rookiecv/FarahnazNikrayDeathclawSaya.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Dead Mount Death Play Part 2",
-            "year": 2023,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Dead Mount Death Play",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "NOMAD: Megalo Box 2",
-        "year": 2021,
-        "role": "SUPPORTING",
-        "charName": "Mara",
-        "charimg": "image/rookiecv/FarahnazNikrayMara.jpg",
-        "appearances": [
-          {
-            "animeTitle": "NOMAD: Megalo Box 2",
-            "year": 2021,
             "role": "SUPPORTING"
           }
         ]
       }
     ]
   },
-  "Yukari Anzai": {
-    "id": 128650,
-    "name": "Yukari Anzai",
-    "rank": 51,
-    "debutYear": 2018,
-    "score": 88,
-    "scoreBreakdown": {
-      "career": 10,
-      "totalWorks": 3,
-      "currentYearWorks": 40,
-      "mainRole": 15,
-      "recentGrowth": 20
-    },
-    "stats": {
-      "totalWorks": 21,
-      "currentYearWorks": 3,
-      "mainWorks": 1,
-      "supportingWorks": 2,
-      "yearsActive": 8
-    },
-    "cvimg": "image/rookiecv/cv/YukariAnzai.jpg",
-    "characters": [
-      {
-        "animeTitle": "Uchi no Otouto-domo ga Sumimasen",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Megumi Hoshou",
-        "charimg": "image/rookiecv/YukariAnzaiMegumiHoshou.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Uchi no Otouto-domo ga Sumimasen",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Yomi no Tsugai",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Azami",
-        "charimg": "image/rookiecv/YukariAnzaiAzami.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Yomi no Tsugai",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Ganbare! Nakamura-kun!!",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Hana Sakamoto",
-        "charimg": "image/rookiecv/YukariAnzaiHanaSakamoto.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Ganbare! Nakamura-kun!!",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Watashi ga Koibito ni Nareru Wake Nai jan, Muri Muri! (※Muri ja Nakatta!?): Next Shine!",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Ajisai Sena",
-        "charimg": "image/rookiecv/YukariAnzaiAjisaiSena.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Watashi ga Koibito ni Nareru Wake Nai jan, Muri Muri! (※Muri ja Nakatta!?): Next Shine!",
-            "year": 2026,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Watashi ga Koibito ni Nareru Wake Nai jan, Muri Muri! (※Muri ja Nakatta!?)",
-            "year": 2025,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "MUZIK TIGER In the Forest 2",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Nao",
-        "charimg": "image/rookiecv/YukariAnzaiNao.jpg",
-        "appearances": [
-          {
-            "animeTitle": "MUZIK TIGER In the Forest 2",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Yumemiru Danshi wa Genjitsushugisha",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Yuyu Inatomi",
-        "charimg": "image/rookiecv/YukariAnzaiYuyuInatomi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Yumemiru Danshi wa Genjitsushugisha",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Mou Ippon!",
-        "year": 2023,
-        "role": "MAIN",
-        "charName": "Sanae Takigawa",
-        "charimg": "image/rookiecv/YukariAnzaiSanaeTakigawa.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Mou Ippon!",
-            "year": 2023,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "ETERNITY MEMORIES",
-        "year": 2022,
-        "role": "SUPPORTING",
-        "charName": "Kotoka Saionji",
-        "charimg": "image/rookiecv/YukariAnzaiKotokaSaionji.jpg",
-        "appearances": [
-          {
-            "animeTitle": "ETERNITY MEMORIES",
-            "year": 2022,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Tensei Kenja no Isekai Life: Daini no Shokugyou wo Ete, Sekai Saikyou ni Narimashita",
-        "year": 2022,
-        "role": "SUPPORTING",
-        "charName": "Ellis",
-        "charimg": "image/rookiecv/YukariAnzaiEllis.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Tensei Kenja no Isekai Life: Daini no Shokugyou wo Ete, Sekai Saikyou ni Narimashita",
-            "year": 2022,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Go-toubun no Hanayome Movie",
-        "year": 2022,
-        "role": "SUPPORTING",
-        "charName": "Eba",
-        "charimg": "image/rookiecv/YukariAnzaiEba.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Go-toubun no Hanayome Movie",
-            "year": 2022,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Go-toubun no Hanayome ∬",
-            "year": 2021,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "CUE! Short Anime",
-        "year": 2022,
-        "role": "MAIN",
-        "charName": "Sopura",
-        "charimg": "image/rookiecv/YukariAnzaiSopura.jpg",
-        "appearances": [
-          {
-            "animeTitle": "CUE! Short Anime",
-            "year": 2022,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "CUE!",
-        "year": 2022,
-        "role": "MAIN",
-        "charName": "Miharu Yomine",
-        "charimg": "image/rookiecv/YukariAnzaiMiharuYomine.jpg",
-        "appearances": [
-          {
-            "animeTitle": "CUE!",
-            "year": 2022,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Lapis Re:LiGHTs",
-        "year": 2020,
-        "role": "MAIN",
-        "charName": "Tiara Victoria",
-        "charimg": "image/rookiecv/YukariAnzaiTiaraVictoria.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Lapis Re:LiGHTs",
-            "year": 2020,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "RELEASE THE SPYCE",
-        "year": 2018,
-        "role": "MAIN",
-        "charName": "Momo Minamoto",
-        "charimg": "image/rookiecv/YukariAnzaiMomoMinamoto.jpg",
-        "appearances": [
-          {
-            "animeTitle": "RELEASE THE SPYCE",
-            "year": 2018,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Happy Sugar Life",
-        "year": 2018,
-        "role": "SUPPORTING",
-        "charName": "Minori Kitaumekawa",
-        "charimg": "image/rookiecv/YukariAnzaiMinoriKitaumekawa.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Happy Sugar Life",
-            "year": 2018,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Mahou Shoujo Site",
-        "year": 2018,
-        "role": "SUPPORTING",
-        "charName": "Yuka Sumikura",
-        "charimg": "image/rookiecv/YukariAnzaiYukaSumikura.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Mahou Shoujo Site",
-            "year": 2018,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Hitomi Shogawa": {
-    "id": 162831,
-    "name": "Hitomi Shogawa",
-    "rank": 52,
-    "debutYear": 2018,
-    "score": 88,
-    "scoreBreakdown": {
-      "career": 10,
-      "totalWorks": 10,
-      "currentYearWorks": 40,
-      "mainRole": 8,
-      "recentGrowth": 20
-    },
-    "stats": {
-      "totalWorks": 11,
-      "currentYearWorks": 3,
-      "mainWorks": 0,
-      "supportingWorks": 3,
-      "yearsActive": 8
-    },
-    "cvimg": "image/rookiecv/cv/HitomiShogawa.jpg",
-    "characters": [
-      {
-        "animeTitle": "Kimi ga Shinu made Koi wo Shitai",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Rouba Sensei",
-        "charimg": "image/rookiecv/HitomiShogawaRoubaSensei.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kimi ga Shinu made Koi wo Shitai",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Seihantai na Kimi to Boku 2nd Season",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Tani no Haha",
-        "charimg": "image/rookiecv/HitomiShogawaTaninoHaha.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Seihantai na Kimi to Boku 2nd Season",
-            "year": 2026,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Seihantai na Kimi to Boku",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Enen no Shouboutai: San no Shou Part 2",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Sumire ",
-        "charimg": "image/rookiecv/HitomiShogawaSumire.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Enen no Shouboutai: San no Shou Part 2",
-            "year": 2026,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Enen no Shouboutai: San no Shou",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Dungeon Meshi",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Yarn Floke",
-        "charimg": "image/rookiecv/HitomiShogawaYarnFloke.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Dungeon Meshi",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Dr. STONE: NEW WORLD",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Alumi",
-        "charimg": "image/rookiecv/HitomiShogawaAlumi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Dr. STONE: NEW WORLD",
-            "year": 2023,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Dr. STONE",
-            "year": 2019,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Mieruko-chan",
-        "year": 2021,
-        "role": "SUPPORTING",
-        "charName": "Kainushi",
-        "charimg": "image/rookiecv/HitomiShogawaKainushi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Mieruko-chan",
-            "year": 2021,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Koisuru Asteroid",
-        "year": 2020,
-        "role": "SUPPORTING",
-        "charName": "Matsu",
-        "charimg": "image/rookiecv/HitomiShogawaMatsu.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Koisuru Asteroid",
-            "year": 2020,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "PERSONA5 the Animation",
-        "year": 2018,
-        "role": "SUPPORTING",
-        "charName": "Mitsuyo Tougou",
-        "charimg": "image/rookiecv/HitomiShogawaMitsuyoTougou.jpg",
-        "appearances": [
-          {
-            "animeTitle": "PERSONA5 the Animation",
-            "year": 2018,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Miyuki Sahaku": {
-    "id": 303477,
-    "name": "Miyuki Sahaku",
-    "rank": 53,
-    "debutYear": 2021,
-    "score": 88,
-    "scoreBreakdown": {
-      "career": 20,
-      "totalWorks": 15,
-      "currentYearWorks": 30,
-      "mainRole": 8,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 4,
-      "currentYearWorks": 2,
-      "mainWorks": 0,
-      "supportingWorks": 2,
-      "yearsActive": 5
-    },
-    "cvimg": "image/rookiecv/cv/MiyukiSahaku.jpg",
-    "characters": [
-      {
-        "animeTitle": "Seihantai na Kimi to Boku 2nd Season",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Suzuki no Haha",
-        "charimg": "image/rookiecv/MiyukiSahakuSuzukinoHaha.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Seihantai na Kimi to Boku 2nd Season",
-            "year": 2026,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Seihantai na Kimi to Boku",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Scott Pilgrim Takes Off",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Sandra",
-        "charimg": "image/rookiecv/MiyukiSahakuSandra.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Scott Pilgrim Takes Off",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Summer Ghost",
-        "year": 2021,
-        "role": "SUPPORTING",
-        "charName": "Kasumi Satou",
-        "charimg": "image/rookiecv/MiyukiSahakuKasumiSatou.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Summer Ghost",
-            "year": 2021,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Hiroya Egashira": {
-    "id": 191128,
-    "name": "Hiroya Egashira",
-    "rank": 54,
-    "debutYear": 2020,
-    "score": 87,
-    "scoreBreakdown": {
-      "career": 10,
-      "totalWorks": 7,
-      "currentYearWorks": 35,
-      "mainRole": 15,
-      "recentGrowth": 20
-    },
-    "stats": {
-      "totalWorks": 17,
-      "currentYearWorks": 4,
-      "mainWorks": 1,
-      "supportingWorks": 3,
-      "yearsActive": 6
-    },
-    "cvimg": "image/rookiecv/cv/HiroyaEgashira.jpg",
-    "characters": [
-      {
-        "animeTitle": "LV999 no Murabito",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Takako",
-        "charimg": "image/rookiecv/HiroyaEgashiraTakako.jpg",
-        "appearances": [
-          {
-            "animeTitle": "LV999 no Murabito",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Snowball Earth",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Shimojima",
-        "charimg": "image/rookiecv/HiroyaEgashiraShimojima.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Snowball Earth",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 4th Season 2-nensei-hen Ichi Gakki",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Kazuomi Housen",
-        "charimg": "image/rookiecv/HiroyaEgashiraKazuomiHousen.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 4th Season 2-nensei-hen Ichi Gakki",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Darwin Jihen",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Leslie Lippman",
-        "charimg": "image/rookiecv/HiroyaEgashiraLeslieLippman.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Darwin Jihen",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Vigilante: Boku no Hero Academia ILLEGALS",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Souji",
-        "charimg": "image/rookiecv/HiroyaEgashiraSouji.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Vigilante: Boku no Hero Academia ILLEGALS",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Shin Samurai-den YAIBA",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Yakitori",
-        "charimg": "image/rookiecv/HiroyaEgashiraYakitori.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Shin Samurai-den YAIBA",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Kimi to Idol Precure♪",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Kazu Sakura",
-        "charimg": "image/rookiecv/HiroyaEgashiraKazuSakura.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kimi to Idol Precure♪",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Mecha-ude (TV)",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Threeg",
-        "charimg": "image/rookiecv/HiroyaEgashiraThreeg.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Mecha-ude (TV)",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Sengoku Youko",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Ouhou",
-        "charimg": "image/rookiecv/HiroyaEgashiraOuhou.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Sengoku Youko",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Dead Mount Death Play Part 2",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Taipei",
-        "charimg": "image/rookiecv/HiroyaEgashiraTaipei.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Dead Mount Death Play Part 2",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Ragna Crimson",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Yugo Robles",
-        "charimg": "image/rookiecv/HiroyaEgashiraYugoRobles.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Ragna Crimson",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Helck",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Tothman-ou",
-        "charimg": "image/rookiecv/HiroyaEgashiraTothmanou.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Helck",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Poputepipikku 2",
-        "year": 2022,
-        "role": "SUPPORTING",
-        "charName": "Yankee F",
-        "charimg": "image/rookiecv/HiroyaEgashiraYankeeF.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Poputepipikku 2",
-            "year": 2022,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Tokyo 24-ku",
-        "year": 2022,
-        "role": "SUPPORTING",
-        "charName": "Kaoru Shindou",
-        "charimg": "image/rookiecv/HiroyaEgashiraKaoruShindou.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Tokyo 24-ku",
-            "year": 2022,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Super Crooks",
-        "year": 2021,
-        "role": "SUPPORTING",
-        "charName": "Molecule Master",
-        "charimg": "image/rookiecv/HiroyaEgashiraMoleculeMaster.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Super Crooks",
-            "year": 2021,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Maou-jou de Oyasumi",
-        "year": 2020,
-        "role": "SUPPORTING",
-        "charName": "Monban",
-        "charimg": "image/rookiecv/HiroyaEgashiraMonban.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Maou-jou de Oyasumi",
-            "year": 2020,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Hanyou no Yashahime",
-        "year": 2020,
-        "role": "SUPPORTING",
-        "charName": "Ne no Kubi",
-        "charimg": "image/rookiecv/HiroyaEgashiraNenoKubi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Hanyou no Yashahime",
-            "year": 2020,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Saeko Kamijou": {
-    "id": 135200,
-    "name": "Saeko Kamijou",
-    "rank": 55,
-    "debutYear": 2019,
-    "score": 87,
-    "scoreBreakdown": {
-      "career": 10,
-      "totalWorks": 12,
-      "currentYearWorks": 30,
-      "mainRole": 15,
-      "recentGrowth": 20
-    },
-    "stats": {
-      "totalWorks": 8,
-      "currentYearWorks": 2,
-      "mainWorks": 1,
-      "supportingWorks": 1,
-      "yearsActive": 7
-    },
-    "cvimg": "image/rookiecv/cv/SaekoKamijou.jpg",
-    "characters": [
-      {
-        "animeTitle": "Koori no Jouheki",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Mari",
-        "charimg": "image/rookiecv/SaekoKamijouMari.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Koori no Jouheki",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Koori no Jouheki",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Sora Amano",
-        "charimg": "image/rookiecv/SaekoKamijouSoraAmano.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Koori no Jouheki",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Enen no Shouboutai: San no Shou Part 2",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Maki Oze",
-        "charimg": "image/rookiecv/SaekoKamijouMakiOze.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Enen no Shouboutai: San no Shou Part 2",
-            "year": 2026,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Enen no Shouboutai: San no Shou",
-            "year": 2025,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Enen no Shouboutai Mini Anime",
-            "year": 2021,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Enen no Shouboutai: Ni no Shou",
-            "year": 2020,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Enen no Shouboutai",
-            "year": 2019,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Yu☆Gi☆Oh! Go Rush!!",
-        "year": 2022,
-        "role": "SUPPORTING",
-        "charName": "Ehoko Kamijou",
-        "charimg": "image/rookiecv/SaekoKamijouEhokoKamijou.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Yu☆Gi☆Oh! Go Rush!!",
-            "year": 2022,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Yu☆Gi☆Oh! Go Rush!!",
-        "year": 2022,
-        "role": "SUPPORTING",
-        "charName": "Haruka Kamijou",
-        "charimg": "image/rookiecv/SaekoKamijouHarukaKamijou.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Yu☆Gi☆Oh! Go Rush!!",
-            "year": 2022,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Yu☆Gi☆Oh! SEVENS",
-            "year": 2020,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Aino Shimada": {
-    "id": 168957,
-    "name": "Aino Shimada",
-    "rank": 56,
-    "debutYear": 2022,
-    "score": 85,
-    "scoreBreakdown": {
-      "career": 30,
-      "totalWorks": 7,
-      "currentYearWorks": 40,
-      "mainRole": 8,
-      "recentGrowth": 0
-    },
-    "stats": {
-      "totalWorks": 16,
-      "currentYearWorks": 3,
-      "mainWorks": 0,
-      "supportingWorks": 3,
-      "yearsActive": 4
-    },
-    "cvimg": "image/rookiecv/cv/AinoShimada.jpg",
-    "characters": [
-      {
-        "animeTitle": "Shibou Yuugi de Meshi wo Kuu. 44: CLOUDY BEACH",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Maguma",
-        "charimg": "image/rookiecv/AinoShimadaMaguma.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Shibou Yuugi de Meshi wo Kuu. 44: CLOUDY BEACH",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Tadaima, Ojamasaremasu!",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Hitomi Emoto",
-        "charimg": "image/rookiecv/AinoShimadaHitomiEmoto.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Tadaima, Ojamasaremasu!",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Akane-banashi",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Sae Komi",
-        "charimg": "image/rookiecv/AinoShimadaSaeKomi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Akane-banashi",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 4th Season 2-nensei-hen Ichi Gakki",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Takeko Nishino",
-        "charimg": "image/rookiecv/AinoShimadaTakekoNishino.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 4th Season 2-nensei-hen Ichi Gakki",
-            "year": 2026,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 3rd Season",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Kakkou no Iinazuke Season 2",
-        "year": 2025,
-        "role": "MAIN",
-        "charName": "Nagi Umino",
-        "charimg": "image/rookiecv/AinoShimadaNagiUmino.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kakkou no Iinazuke Season 2",
-            "year": 2025,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Zutaboro Reijou wa Ane no Moto Konyakusha ni Dekiai Sareru",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Kyros Granado",
-        "charimg": "image/rookiecv/AinoShimadaKyrosGranado.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Zutaboro Reijou wa Ane no Moto Konyakusha ni Dekiai Sareru",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Jidou Hanbaiki ni Umarekawatta Ore wa Meikyuu wo Samayou 2nd Season",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Hajimari no Kaichou",
-        "charimg": "image/rookiecv/AinoShimadaHajimarinoKaichou.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Jidou Hanbaiki ni Umarekawatta Ore wa Meikyuu wo Samayou 2nd Season",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Witch Watch",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Fuyo no Majo",
-        "charimg": "image/rookiecv/AinoShimadaFuyonoMajo.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Witch Watch",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Elf-san wa Yaserarenai. Specials",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Gonda",
-        "charimg": "image/rookiecv/AinoShimadaGonda.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Elf-san wa Yaserarenai. Specials",
-            "year": 2024,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Elf-san wa Yaserarenai.",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Nanatsu no Taizai: Mokushiroku no Yonkishi 2nd Season",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Nasiens",
-        "charimg": "image/rookiecv/AinoShimadaNasiens.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Nanatsu no Taizai: Mokushiroku no Yonkishi 2nd Season",
-            "year": 2024,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Nanatsu no Taizai: Mokushiroku no Yonkishi",
-            "year": 2023,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Dark Gathering",
-        "year": 2023,
-        "role": "MAIN",
-        "charName": "Keitarou Gentouga",
-        "charimg": "image/rookiecv/AinoShimadaKeitarouGentouga.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Dark Gathering",
-            "year": 2023,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Kono Subarashii Sekai ni Bakuen wo!",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Sansara",
-        "charimg": "image/rookiecv/AinoShimadaSansara.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kono Subarashii Sekai ni Bakuen wo!",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Lycoris Recoil",
-        "year": 2022,
-        "role": "SUPPORTING",
-        "charName": "Saori Shinohara",
-        "charimg": "image/rookiecv/AinoShimadaSaoriShinohara.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Lycoris Recoil",
-            "year": 2022,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Rena Hasegawa": {
-    "id": 197864,
-    "name": "Rena Hasegawa",
-    "rank": 57,
-    "debutYear": 2021,
-    "score": 83,
-    "scoreBreakdown": {
-      "career": 20,
-      "totalWorks": 10,
-      "currentYearWorks": 30,
-      "mainRole": 8,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 12,
-      "currentYearWorks": 2,
-      "mainWorks": 0,
-      "supportingWorks": 2,
-      "yearsActive": 5
-    },
-    "cvimg": "image/rookiecv/cv/RenaHasegawa.jpg",
-    "characters": [
-      {
-        "animeTitle": "Honoo no Toukyuujyo Dodge Danko",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Akari Higashiyama",
-        "charimg": "image/rookiecv/RenaHasegawaAkariHigashiyama.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Honoo no Toukyuujyo Dodge Danko",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Kuroneko to Majo no Kyoushitsu",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Pollux Gemini",
-        "charimg": "image/rookiecv/RenaHasegawaPolluxGemini.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kuroneko to Majo no Kyoushitsu",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Elf-san wa Yaserarenai. Specials",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Kuroeda",
-        "charimg": "image/rookiecv/RenaHasegawaKuroeda.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Elf-san wa Yaserarenai. Specials",
-            "year": 2024,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Elf-san wa Yaserarenai.",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Kimi to Boku no Saigo no Senjou, Arui wa Sekai ga Hajimaru Seisen Season II",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Yumilecia",
-        "charimg": "image/rookiecv/RenaHasegawaYumilecia.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kimi to Boku no Saigo no Senjou, Arui wa Sekai ga Hajimaru Seisen Season II",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Rinkai!",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Miko Yahiko",
-        "charimg": "image/rookiecv/RenaHasegawaMikoYahiko.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Rinkai!",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Jashin-chan Dropkick [Seikimatsu-hen]",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Atre",
-        "charimg": "image/rookiecv/RenaHasegawaAtre.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Jashin-chan Dropkick [Seikimatsu-hen]",
-            "year": 2023,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Jashin-chan Dropkick X",
-            "year": 2022,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Rikei ga Koi ni Ochita no de Shoumei shitemita. r=1-sinθ (Heart)",
-        "year": 2022,
-        "role": "SUPPORTING",
-        "charName": "Haru Kagurano",
-        "charimg": "image/rookiecv/RenaHasegawaHaruKagurano.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Rikei ga Koi ni Ochita no de Shoumei shitemita. r=1-sinθ (Heart)",
-            "year": 2022,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Sayonara Watashi no Cramer",
-        "year": 2021,
-        "role": "SUPPORTING",
-        "charName": "Karina Kakogawa",
-        "charimg": "image/rookiecv/RenaHasegawaKarinaKakogawa.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Sayonara Watashi no Cramer",
-            "year": 2021,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Koi to Yobu ni wa Kimochi Warui",
-        "year": 2021,
-        "role": "SUPPORTING",
-        "charName": "Rio Amakusa",
-        "charimg": "image/rookiecv/RenaHasegawaRioAmakusa.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Koi to Yobu ni wa Kimochi Warui",
-            "year": 2021,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "WIXOSS DIVA(A)LIVE",
-        "year": 2021,
-        "role": "SUPPORTING",
-        "charName": "Rara Inumiya",
-        "charimg": "image/rookiecv/RenaHasegawaRaraInumiya.jpg",
-        "appearances": [
-          {
-            "animeTitle": "WIXOSS DIVA(A)LIVE",
-            "year": 2021,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Hiiro Ishibashi": {
-    "id": 136188,
-    "name": "Hiiro Ishibashi",
-    "rank": 58,
-    "debutYear": 2019,
-    "score": 82,
-    "scoreBreakdown": {
-      "career": 10,
-      "totalWorks": 7,
-      "currentYearWorks": 40,
-      "mainRole": 25,
-      "recentGrowth": 0
-    },
-    "stats": {
-      "totalWorks": 17,
-      "currentYearWorks": 3,
-      "mainWorks": 2,
-      "supportingWorks": 1,
-      "yearsActive": 7
-    },
-    "cvimg": "image/rookiecv/cv/HiiroIshibashi.jpg",
-    "characters": [
-      {
-        "animeTitle": "Yoroi Shinden Samurai Troopers Part 2",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Gai",
-        "charimg": "image/rookiecv/HiiroIshibashiGai.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Yoroi Shinden Samurai Troopers Part 2",
-            "year": 2026,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Yoroi Shinden Samurai Troopers",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Tenmaku no Jaadugar",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Kublai",
-        "charimg": "image/rookiecv/HiiroIshibashiKublai.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Tenmaku no Jaadugar",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Tongari Boushi no Atelier",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Euini",
-        "charimg": "image/rookiecv/HiiroIshibashiEuini.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Tongari Boushi no Atelier",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Boku no Hero Academia FINAL SEASON",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Kouki Terumoto",
-        "charimg": "image/rookiecv/HiiroIshibashiKoukiTerumoto.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Boku no Hero Academia FINAL SEASON",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Hyakuemu.",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Morikawa",
-        "charimg": "image/rookiecv/HiiroIshibashiMorikawa.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Hyakuemu.",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Kaoru Hana wa Rin to Saku",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Ayato Yorita",
-        "charimg": "image/rookiecv/HiiroIshibashiAyatoYorita.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kaoru Hana wa Rin to Saku",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Himitsu no AiPri: Ring-hen",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Hinata Aozora",
-        "charimg": "image/rookiecv/HiiroIshibashiHinataAozora.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Himitsu no AiPri: Ring-hen",
-            "year": 2025,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Himitsu no AiPri",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Shinkalion: Change the World",
-        "year": 2024,
-        "role": "MAIN",
-        "charName": "Taisei Oonari",
-        "charimg": "image/rookiecv/HiiroIshibashiTaiseiOonari.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Shinkalion: Change the World",
-            "year": 2024,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Kyuujitsu no Warumono-san",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Akatsuki Red",
-        "charimg": "image/rookiecv/HiiroIshibashiAkatsukiRed.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kyuujitsu no Warumono-san",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Yu☆Gi☆Oh! Go Rush!!",
-        "year": 2022,
-        "role": "SUPPORTING",
-        "charName": "Yuuga Oudou",
-        "charimg": "image/rookiecv/HiiroIshibashiYuugaOudou.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Yu☆Gi☆Oh! Go Rush!!",
-            "year": 2022,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Yu☆Gi☆Oh! SEVENS",
-            "year": 2020,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Jurassic!",
-        "year": 2019,
-        "role": "MAIN",
-        "charName": "Sunao",
-        "charimg": "image/rookiecv/HiiroIshibashiSunao.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Jurassic!",
-            "year": 2019,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Kaijuu no Kodomo",
-        "year": 2019,
-        "role": "MAIN",
-        "charName": "Umi",
-        "charimg": "image/rookiecv/HiiroIshibashiUmi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kaijuu no Kodomo",
-            "year": 2019,
-            "role": "MAIN"
-          }
-        ]
-      }
-    ]
-  },
-  "Setsuo Itou": {
-    "id": 119798,
-    "name": "Setsuo Itou",
-    "rank": 59,
-    "debutYear": 2013,
-    "score": 82,
-    "scoreBreakdown": {
-      "career": 0,
-      "totalWorks": 7,
-      "currentYearWorks": 40,
-      "mainRole": 15,
-      "recentGrowth": 20
-    },
-    "stats": {
-      "totalWorks": 16,
-      "currentYearWorks": 3,
-      "mainWorks": 1,
-      "supportingWorks": 2,
-      "yearsActive": 13
-    },
-    "cvimg": "image/rookiecv/cv/SetsuoItou.jpg",
-    "characters": [
-      {
-        "animeTitle": "Mob Psycho 100: 10 Shuunen Kinen Tokubetsu Eizou",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Shigeo Kageyama",
-        "charimg": "image/rookiecv/SetsuoItouShigeoKageyama.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Mob Psycho 100: 10 Shuunen Kinen Tokubetsu Eizou",
-            "year": 2026,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Mob Psycho 100 III",
-            "year": 2022,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Mob Psycho 100: Daiikkai Rei toka Soudansho Ian Ryokou - Kokoro Mitasu Iyashi no Tabi",
-            "year": 2019,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Mob Psycho 100 II",
-            "year": 2019,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Mob Psycho 100 REIGEN: Shirarezaru Kiseki Reinouryokusha",
-            "year": 2018,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Mob Psycho mini",
-            "year": 2016,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Mob Psycho 100",
-            "year": 2016,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Mairimashita! Iruma-kun 4",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Soi Purson",
-        "charimg": "image/rookiecv/SetsuoItouSoiPurson.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Mairimashita! Iruma-kun 4",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Eris no Seihai",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Neil Bronson",
-        "charimg": "image/rookiecv/SetsuoItouNeilBronson.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Eris no Seihai",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Isshun de Chiryou Shiteita no ni Yakutatazu to Tsuihou Sareta Tensai Chiyushi, Yami Healer Toshite Tanoshiku Ikiru",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Cress",
-        "charimg": "image/rookiecv/SetsuoItouCress.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Isshun de Chiryou Shiteita no ni Yakutatazu to Tsuihou Sareta Tensai Chiyushi, Yami Healer Toshite Tanoshiku Ikiru",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "T・P Bon",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Yanagisawa",
-        "charimg": "image/rookiecv/SetsuoItouYanagisawa.jpg",
-        "appearances": [
-          {
-            "animeTitle": "T・P Bon",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Captain Tsubasa: Season 2 - Junior Youth-hen",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Thomas Magath",
-        "charimg": "image/rookiecv/SetsuoItouThomasMagath.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Captain Tsubasa: Season 2 - Junior Youth-hen",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Captain Tsubasa: Season 2 - Junior Youth-hen",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Arnaldo Ruggeri",
-        "charimg": "image/rookiecv/SetsuoItouArnaldoRuggeri.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Captain Tsubasa: Season 2 - Junior Youth-hen",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Captain Tsubasa: Season 2 - Junior Youth-hen",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Demetrio Tardelli",
-        "charimg": "image/rookiecv/SetsuoItouDemetrioTardelli.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Captain Tsubasa: Season 2 - Junior Youth-hen",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Captain Tsubasa: Season 2 - Junior Youth-hen",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Kenichi  Iwami\t",
-        "charimg": "image/rookiecv/SetsuoItouKenichiIwami.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Captain Tsubasa: Season 2 - Junior Youth-hen",
-            "year": 2023,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Captain Tsubasa (2018)",
-            "year": 2018,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Captain Tsubasa: Season 2 - Junior Youth-hen",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Alain Bossis",
-        "charimg": "image/rookiecv/SetsuoItouAlainBossis.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Captain Tsubasa: Season 2 - Junior Youth-hen",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Captain Tsubasa: Season 2 - Junior Youth-hen",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Jorge Galeya",
-        "charimg": "image/rookiecv/SetsuoItouJorgeGaleya.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Captain Tsubasa: Season 2 - Junior Youth-hen",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Captain Tsubasa: Season 2 - Junior Youth-hen",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Klaus",
-        "charimg": "image/rookiecv/SetsuoItouKlaus.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Captain Tsubasa: Season 2 - Junior Youth-hen",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Captain Tsubasa (2018)",
-        "year": 2018,
-        "role": "SUPPORTING",
-        "charName": "Kouji  Nakano",
-        "charimg": "image/rookiecv/SetsuoItouKoujiNakano.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Captain Tsubasa (2018)",
-            "year": 2018,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Itou Junji: Collection",
-        "year": 2018,
-        "role": "SUPPORTING",
-        "charName": "Yamada ",
-        "charimg": "image/rookiecv/SetsuoItouYamada.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Itou Junji: Collection",
-            "year": 2018,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Animegataris",
-        "year": 2017,
-        "role": "MAIN",
-        "charName": "Kai Musashisakai",
-        "charimg": "image/rookiecv/SetsuoItouKaiMusashisakai.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Animegataris",
-            "year": 2017,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Pupipo!",
-        "year": 2013,
-        "role": "SUPPORTING",
-        "charName": "Ryouhei Ameyama",
-        "charimg": "image/rookiecv/SetsuoItouRyouheiAmeyama.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Pupipo!",
-            "year": 2013,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Miyari Nemoto": {
-    "id": 238272,
-    "name": "Miyari Nemoto",
-    "rank": 60,
-    "debutYear": 2021,
-    "score": 82,
-    "scoreBreakdown": {
-      "career": 20,
-      "totalWorks": 7,
-      "currentYearWorks": 40,
-      "mainRole": 15,
-      "recentGrowth": 0
-    },
-    "stats": {
-      "totalWorks": 17,
-      "currentYearWorks": 3,
-      "mainWorks": 1,
-      "supportingWorks": 2,
-      "yearsActive": 5
-    },
-    "cvimg": "image/rookiecv/cv/MiyariNemoto.jpg",
-    "characters": [
-      {
-        "animeTitle": "Ibitte Konai Gibo to Gishi",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Yaeko Kouzou",
-        "charimg": "image/rookiecv/MiyariNemotoYaekoKouzou.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Ibitte Konai Gibo to Gishi",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Ichijouma Mankitsu-gurashi!",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Neo Nakano",
-        "charimg": "image/rookiecv/MiyariNemotoNeoNakano.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Ichijouma Mankitsu-gurashi!",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Mahou no Shimai LuluttoLilly",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Asahi Araki",
-        "charimg": "image/rookiecv/MiyariNemotoAsahiAraki.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Mahou no Shimai LuluttoLilly",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Shuukan Ranobe Anime",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Miayko Anami",
-        "charimg": "image/rookiecv/MiyariNemotoMiaykoAnami.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Shuukan Ranobe Anime",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Ruri no Houseki",
-        "year": 2025,
-        "role": "MAIN",
-        "charName": "Ruri Tanigawa",
-        "charimg": "image/rookiecv/MiyariNemotoRuriTanigawa.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Ruri no Houseki",
-            "year": 2025,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Ame to Kimi to",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Medaka",
-        "charimg": "image/rookiecv/MiyariNemotoMedaka.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Ame to Kimi to",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "SAKAMOTO DAYS",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Piisuke",
-        "charimg": "image/rookiecv/MiyariNemotoPiisuke.jpg",
-        "appearances": [
-          {
-            "animeTitle": "SAKAMOTO DAYS",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Honey Lemon Soda",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Ayumi Endou",
-        "charimg": "image/rookiecv/MiyariNemotoAyumiEndou.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Honey Lemon Soda",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Hana wa Saku, Shura no Gotoku",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Miiko Nekoi",
-        "charimg": "image/rookiecv/MiyariNemotoMiikoNekoi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Hana wa Saku, Shura no Gotoku",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Undead Unluck",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Mico Vorgeil",
-        "charimg": "image/rookiecv/MiyariNemotoMicoVorgeil.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Undead Unluck",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Shinigami Bocchan to Kuro Maid 2nd Season",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Pfeifer",
-        "charimg": "image/rookiecv/MiyariNemotoPfeifer.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Shinigami Bocchan to Kuro Maid 2nd Season",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Alice Gear Aegis Expansion",
-        "year": 2023,
-        "role": "MAIN",
-        "charName": "Nodoka Takahata",
-        "charimg": "image/rookiecv/MiyariNemotoNodokaTakahata.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Alice Gear Aegis Expansion",
-            "year": 2023,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Kunoichi Tsubaki no Mune no Uchi",
-        "year": 2022,
-        "role": "MAIN",
-        "charName": "Sazanka",
-        "charimg": "image/rookiecv/MiyariNemotoSazanka.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kunoichi Tsubaki no Mune no Uchi",
-            "year": 2022,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Pokémon Evolutions",
-        "year": 2021,
-        "role": "SUPPORTING",
-        "charName": "Helena",
-        "charimg": "image/rookiecv/MiyariNemotoHelena.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Pokémon Evolutions",
-            "year": 2021,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Marika Hayase": {
-    "id": 120170,
-    "name": "Marika Hayase",
-    "rank": 61,
-    "debutYear": 2015,
-    "score": 82,
-    "scoreBreakdown": {
-      "career": 0,
-      "totalWorks": 12,
-      "currentYearWorks": 30,
-      "mainRole": 25,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 8,
-      "currentYearWorks": 2,
-      "mainWorks": 2,
-      "supportingWorks": 0,
-      "yearsActive": 11
-    },
-    "cvimg": "image/rookiecv/cv/MarikaHayase.jpg",
-    "characters": [
-      {
-        "animeTitle": "Android wa Keiken Ninzuu ni Hairimasu ka??: 5-kakan Tsuzukete......?",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Nadeshiko",
-        "charimg": "image/rookiecv/MarikaHayaseNadeshiko.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Android wa Keiken Ninzuu ni Hairimasu ka??: 5-kakan Tsuzukete......?",
-            "year": 2026,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Android wa Keiken Ninzuu ni Hairimasu ka??",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Shuumatsu no Harem",
-        "year": 2022,
-        "role": "SUPPORTING",
-        "charName": "Yuzuki Hanyuu",
-        "charimg": "image/rookiecv/MarikaHayaseYuzukiHanyuu.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Shuumatsu no Harem",
-            "year": 2022,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Koisuru Asteroid",
-        "year": 2020,
-        "role": "SUPPORTING",
-        "charName": "Himari Haruno",
-        "charimg": "image/rookiecv/MarikaHayaseHimariHaruno.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Koisuru Asteroid",
-            "year": 2020,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Death March Kara Hajimaru Isekai Kyousoukyoku",
-        "year": 2018,
-        "role": "MAIN",
-        "charName": "Lulu",
-        "charimg": "image/rookiecv/MarikaHayaseLulu.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Death March Kara Hajimaru Isekai Kyousoukyoku",
-            "year": 2018,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Idol Memories",
-        "year": 2016,
-        "role": "MAIN",
-        "charName": "Sena Hattori",
-        "charimg": "image/rookiecv/MarikaHayaseSenaHattori.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Idol Memories",
-            "year": 2016,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "VENUS PROJECT: CLIMAX",
-        "year": 2015,
-        "role": "MAIN",
-        "charName": "Miu Nureha",
-        "charimg": "image/rookiecv/MarikaHayaseMiuNureha.jpg",
-        "appearances": [
-          {
-            "animeTitle": "VENUS PROJECT: CLIMAX",
-            "year": 2015,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Tantei Kageki Milky Holmes TD",
-        "year": 2015,
-        "role": "SUPPORTING",
-        "charName": "Dancing",
-        "charimg": "image/rookiecv/MarikaHayaseDancing.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Tantei Kageki Milky Holmes TD",
-            "year": 2015,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Yuria Kouzuki": {
-    "id": 101182,
-    "name": "Yuria Kouzuki",
-    "rank": 62,
-    "debutYear": 2008,
-    "score": 82,
-    "scoreBreakdown": {
-      "career": 0,
-      "totalWorks": 12,
-      "currentYearWorks": 30,
-      "mainRole": 25,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 6,
-      "currentYearWorks": 2,
-      "mainWorks": 2,
-      "supportingWorks": 0,
-      "yearsActive": 18
-    },
-    "cvimg": "image/rookiecv/cv/YuriaKouzuki.jpg",
-    "characters": [
-      {
-        "animeTitle": "Shou 3 Ashibe QQ Goma-chan",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Goma-chan",
-        "charimg": "image/rookiecv/YuriaKouzukiGomachan.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Shou 3 Ashibe QQ Goma-chan",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Kujima Utaeba Ie Hororo",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Kujima",
-        "charimg": "image/rookiecv/YuriaKouzukiKujima.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kujima Utaeba Ie Hororo",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Okaimono Panda! (ONA)",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Mugi",
-        "charimg": "image/rookiecv/YuriaKouzukiMugi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Okaimono Panda! (ONA)",
-            "year": 2024,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Okaimono Panda!",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "CHIMIMO",
-        "year": 2022,
-        "role": "MAIN",
-        "charName": "Mei Onigami",
-        "charimg": "image/rookiecv/YuriaKouzukiMeiOnigami.jpg",
-        "appearances": [
-          {
-            "animeTitle": "CHIMIMO",
-            "year": 2022,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Gake no Ue no Ponyo",
-        "year": 2008,
-        "role": "MAIN",
-        "charName": "Ponyo",
-        "charimg": "image/rookiecv/YuriaKouzukiPonyo.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Gake no Ue no Ponyo",
-            "year": 2008,
-            "role": "MAIN"
-          }
-        ]
-      }
-    ]
-  },
-  "Daisuke Sakuma": {
-    "id": 272715,
-    "name": "Daisuke Sakuma",
-    "rank": 63,
-    "debutYear": 2019,
-    "score": 80,
-    "scoreBreakdown": {
-      "career": 10,
-      "totalWorks": 7,
-      "currentYearWorks": 40,
-      "mainRole": 8,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 16,
-      "currentYearWorks": 3,
-      "mainWorks": 0,
-      "supportingWorks": 3,
-      "yearsActive": 7
-    },
-    "cvimg": "image/rookiecv/cv/DaisukeSakuma.jpg",
-    "characters": [
-      {
-        "animeTitle": "Kill Ao",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Shin Kohazame",
-        "charimg": "image/rookiecv/DaisukeSakumaShinKohazame.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kill Ao",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Cardfight!! Vanguard: Divinez - Genma Seisen-hen",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Michiru Hazama",
-        "charimg": "image/rookiecv/DaisukeSakumaMichiruHazama.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Cardfight!! Vanguard: Divinez - Genma Seisen-hen",
-            "year": 2026,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Cardfight!! Vanguard: Divinez - Deluxe Kesshou-hen",
-            "year": 2025,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Cardfight!! Vanguard: Divinez - Deluxe-hen",
-            "year": 2025,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Cardfight!! Vanguard: Divinez Season 2",
-            "year": 2024,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Cardfight!! Vanguard: will+Dress Season 3",
-            "year": 2023,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Cardfight!! Vanguard: will+Dress Season 2",
-            "year": 2023,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Cardfight!! Vanguard: will+Dress",
-            "year": 2022,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "High School! Kimengumi (2026)",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Shou Kireide",
-        "charimg": "image/rookiecv/DaisukeSakumaShouKireide.jpg",
-        "appearances": [
-          {
-            "animeTitle": "High School! Kimengumi (2026)",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Kimi to Idol Precure♪ Omatase! Kimi ni Todokeru KirakkiLive!",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Kaito Hibiki",
-        "charimg": "image/rookiecv/DaisukeSakumaKaitoHibiki.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kimi to Idol Precure♪ Omatase! Kimi ni Todokeru KirakkiLive!",
-            "year": 2025,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Kimi to Idol Precure♪",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Bai She: Yuan Qi",
-        "year": 2019,
-        "role": "MAIN",
-        "charName": "Axuan",
-        "charimg": "image/rookiecv/DaisukeSakumaAxuan.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Bai She: Yuan Qi",
-            "year": 2019,
-            "role": "MAIN"
-          }
-        ]
-      }
-    ]
-  },
-  "Robert Waterman": {
-    "id": 139317,
-    "name": "Robert Waterman",
-    "rank": 64,
-    "debutYear": 2018,
-    "score": 80,
-    "scoreBreakdown": {
-      "career": 10,
-      "totalWorks": 12,
-      "currentYearWorks": 30,
-      "mainRole": 8,
-      "recentGrowth": 20
-    },
-    "stats": {
-      "totalWorks": 7,
-      "currentYearWorks": 2,
-      "mainWorks": 0,
-      "supportingWorks": 2,
-      "yearsActive": 8
-    },
-    "cvimg": "image/rookiecv/cv/RobertWaterman.jpg",
-    "characters": [
-      {
-        "animeTitle": "Grand Blue Season 3",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Kenta Fujiwara",
-        "charimg": "image/rookiecv/RobertWatermanKentaFujiwara.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Grand Blue Season 3",
-            "year": 2026,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Grand Blue Season 2",
-            "year": 2025,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Grand Blue",
-            "year": 2018,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Ginga Tokkyuu Milky☆Subway: Kakueki Teisha Gekijou Yuki",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Haga",
-        "charimg": "image/rookiecv/RobertWatermanHaga.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Ginga Tokkyuu Milky☆Subway: Kakueki Teisha Gekijou Yuki",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Blue Lock",
-        "year": 2022,
-        "role": "SUPPORTING",
-        "charName": "Dada Silva",
-        "charimg": "image/rookiecv/RobertWatermanDadaSilva.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Blue Lock",
-            "year": 2022,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Hachi-nan tte, Sore wa Nai deshou!",
-        "year": 2020,
-        "role": "SUPPORTING",
-        "charName": "Alterio Märchen",
-        "charimg": "image/rookiecv/RobertWatermanAlterioMrchen.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Hachi-nan tte, Sore wa Nai deshou!",
-            "year": 2020,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Mairimashita! Iruma-kun",
-        "year": 2019,
-        "role": "SUPPORTING",
-        "charName": "Behemolt",
-        "charimg": "image/rookiecv/RobertWatermanBehemolt.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Mairimashita! Iruma-kun",
-            "year": 2019,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Ryuuho Nagaoka": {
-    "id": 297726,
-    "name": "Ryuuho Nagaoka",
-    "rank": 65,
+  "Momoko Seto": {
+    "id": 298582,
+    "name": "세토 모모코",
+    "rank": 9,
     "debutYear": 2023,
-    "score": 80,
+    "score": 76,
     "scoreBreakdown": {
-      "career": 30,
-      "totalWorks": 12,
-      "currentYearWorks": 30,
-      "mainRole": 8,
-      "recentGrowth": 0
+      "careerRecency": 11,
+      "currentYearWorks": 22,
+      "priorWorks": 10,
+      "recentGrowth": 12,
+      "characterRecognition": 11,
+      "mediaExposure": 10
     },
     "stats": {
-      "totalWorks": 9,
-      "currentYearWorks": 2,
-      "mainWorks": 0,
-      "supportingWorks": 2,
-      "yearsActive": 3
-    },
-    "cvimg": "image/rookiecv/cv/RyuuhoNagaoka.jpg",
-    "characters": [
-      {
-        "animeTitle": "DARK MOON: Kuro no Tsuki - Tsuki no Saidan",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Mahan",
-        "charimg": "image/rookiecv/RyuuhoNagaokaMahan.jpg",
-        "appearances": [
-          {
-            "animeTitle": "DARK MOON: Kuro no Tsuki - Tsuki no Saidan",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Tamon-kun Ima Docchi!?",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Rintarou Kai",
-        "charimg": "image/rookiecv/RyuuhoNagaokaRintarouKai.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Tamon-kun Ima Docchi!?",
-            "year": 2026,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "F/ACE OFF",
-            "year": 2025,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Karaoke Iko!",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Masami Oka",
-        "charimg": "image/rookiecv/RyuuhoNagaokaMasamiOka.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Karaoke Iko!",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Binan Koukou Chikyuu Bouei-bu Haikara!",
-        "year": 2025,
-        "role": "MAIN",
-        "charName": "Narushi Sukayu",
-        "charimg": "image/rookiecv/RyuuhoNagaokaNarushiSukayu.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Binan Koukou Chikyuu Bouei-bu Haikara!",
-            "year": 2025,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Rock wa Lady no Tashinami Deshite",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Itsuki",
-        "charimg": "image/rookiecv/RyuuhoNagaokaItsuki.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Rock wa Lady no Tashinami Deshite",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Shinmai Ossan Bouken-sha, Saikyou Party ni Shinu Hodo Kitaerarete Muteki ni Naru.",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Linx Laulot",
-        "charimg": "image/rookiecv/RyuuhoNagaokaLinxLaulot.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Shinmai Ossan Bouken-sha, Saikyou Party ni Shinu Hodo Kitaerarete Muteki ni Naru.",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Tensei Shitara Slime Datta Ken 3rd Season",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Dagura",
-        "charimg": "image/rookiecv/RyuuhoNagaokaDagura.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Tensei Shitara Slime Datta Ken 3rd Season",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Dead Mount Death Play Part 2",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Hifuki Mushi",
-        "charimg": "image/rookiecv/RyuuhoNagaokaHifukiMushi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Dead Mount Death Play Part 2",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      }
-    ]
-  },
-  "Miho Wataya": {
-    "id": 161150,
-    "name": "Miho Wataya",
-    "rank": 66,
-    "debutYear": 2015,
-    "score": 78,
-    "scoreBreakdown": {
-      "career": 0,
-      "totalWorks": 10,
-      "currentYearWorks": 40,
-      "mainRole": 8,
-      "recentGrowth": 20
-    },
-    "stats": {
-      "totalWorks": 11,
+      "totalWorks": 8,
       "currentYearWorks": 3,
-      "mainWorks": 0,
-      "supportingWorks": 3,
-      "yearsActive": 11
+      "mainWorks": 2,
+      "supportingWorks": 1,
+      "yearsActive": 4,
+      "maxCharacterFavourites": 653,
+      "mediaExposure": 10
     },
-    "cvimg": "image/rookiecv/cv/MihoWataya.jpg",
+    "cvimg": "image/rookiecv/cv/MomokoSeto.jpg",
     "characters": [
       {
-        "animeTitle": "FOXING: Kitsuné-tsuki",
+        "animeTitle": "한밤중 하트튠",
         "year": 2026,
         "role": "MAIN",
-        "charName": "Shinano",
-        "charimg": "image/rookiecv/MihoWatayaShinano.jpg",
+        "charName": "이노하나 릿카",
+        "charimg": "image/rookiecv/MomokoSetoRikkaInohana.jpg",
         "appearances": [
           {
-            "animeTitle": "FOXING: Kitsuné-tsuki",
+            "animeTitle": "한밤중 하트튠",
             "year": 2026,
             "role": "MAIN"
           }
         ]
       },
       {
-        "animeTitle": "Thunder 3",
+        "animeTitle": "아름다운 초저녁달",
         "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Sydney",
-        "charimg": "image/rookiecv/MihoWatayaSydney.jpg",
+        "charName": "히비야 코토부키",
+        "charimg": "image/rookiecv/MomokoSetoKotobukiHibiya.jpg",
         "appearances": [
           {
-            "animeTitle": "Thunder 3",
+            "animeTitle": "아름다운 초저녁달",
             "year": 2026,
             "role": "SUPPORTING"
           }
         ]
       },
       {
-        "animeTitle": "Hell Mode: Yarikomi-zuki no Gamer wa Haisettei no Isekai de Musou Suru 2nd Season",
+        "animeTitle": "어서 오세요 실력지상주의 교실에 4th Season 2학년 편 1학기",
         "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Myura",
-        "charimg": "image/rookiecv/MihoWatayaMyura.jpg",
+        "role": "MAIN",
+        "charName": "아마사와 이치카",
+        "charimg": "image/rookiecv/MomokoSetoIchikaAmasawa.jpg",
         "appearances": [
           {
-            "animeTitle": "Hell Mode: Yarikomi-zuki no Gamer wa Haisettei no Isekai de Musou Suru 2nd Season",
+            "animeTitle": "어서 오세요 실력지상주의 교실에 4th Season 2학년 편 1학기",
             "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Kuroneko to Majo no Kyoushitsu",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Hana Sasorijou",
-        "charimg": "image/rookiecv/MihoWatayaHanaSasorijou.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kuroneko to Majo no Kyoushitsu",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Disney Twisted-Wonderland: THE ANIMATION - Season 1: EPISODE of HEARTSLABYUL",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Trey Clover",
-        "charimg": "image/rookiecv/MihoWatayaTreyClover.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Disney Twisted-Wonderland: THE ANIMATION - Season 1: EPISODE of HEARTSLABYUL",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Mieruko-chan",
-        "year": 2021,
-        "role": "SUPPORTING",
-        "charName": "Arai",
-        "charimg": "image/rookiecv/MihoWatayaArai.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Mieruko-chan",
-            "year": 2021,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Mewkledreamy",
-        "year": 2020,
-        "role": "SUPPORTING",
-        "charName": "Gakusha",
-        "charimg": "image/rookiecv/MihoWatayaGakusha.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Mewkledreamy",
-            "year": 2020,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Ishuzoku Reviewers",
-        "year": 2020,
-        "role": "SUPPORTING",
-        "charName": "Tamatehime",
-        "charimg": "image/rookiecv/MihoWatayaTamatehime.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Ishuzoku Reviewers",
-            "year": 2020,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Youkai Apartment no Yuuga na Nichijou",
-        "year": 2017,
-        "role": "SUPPORTING",
-        "charName": "Yon-chan",
-        "charimg": "image/rookiecv/MihoWatayaYonchan.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Youkai Apartment no Yuuga na Nichijou",
-            "year": 2017,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Schwarzesmarken",
-        "year": 2016,
-        "role": "SUPPORTING",
-        "charName": "Paule Meyer",
-        "charimg": "image/rookiecv/MihoWatayaPauleMeyer.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Schwarzesmarken",
-            "year": 2016,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Schwarzesmarken",
-        "year": 2016,
-        "role": "SUPPORTING",
-        "charName": "Rosalinde Buch",
-        "charimg": "image/rookiecv/MihoWatayaRosalindeBuch.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Schwarzesmarken",
-            "year": 2016,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "BIKINI WARRIORS",
-        "year": 2015,
-        "role": "SUPPORTING",
-        "charName": "Megami",
-        "charimg": "image/rookiecv/MihoWatayaMegami.jpg",
-        "appearances": [
-          {
-            "animeTitle": "BIKINI WARRIORS",
-            "year": 2015,
-            "role": "SUPPORTING"
+            "role": "MAIN"
           }
         ]
       }
     ]
   },
-  "Momoka Terasawa": {
-    "id": 292760,
-    "name": "Momoka Terasawa",
-    "rank": 67,
-    "debutYear": 2022,
-    "score": 78,
+  "Rina Kawaguchi": {
+    "id": 227955,
+    "name": "카와구치 리나",
+    "rank": 10,
+    "debutYear": 2021,
+    "score": 75,
     "scoreBreakdown": {
-      "career": 30,
-      "totalWorks": 3,
-      "currentYearWorks": 0,
-      "mainRole": 25,
-      "recentGrowth": 20
+      "careerRecency": 6,
+      "currentYearWorks": 27,
+      "priorWorks": 10,
+      "recentGrowth": 17,
+      "characterRecognition": 8,
+      "mediaExposure": 7
     },
     "stats": {
-      "totalWorks": 30,
-      "currentYearWorks": 13,
+      "totalWorks": 14,
+      "currentYearWorks": 5,
       "mainWorks": 2,
-      "supportingWorks": 11,
-      "yearsActive": 4
+      "supportingWorks": 3,
+      "yearsActive": 6,
+      "maxCharacterFavourites": 110,
+      "mediaExposure": 7
     },
-    "cvimg": "image/rookiecv/cv/MomokaTerasawa.jpg",
+    "cvimg": "image/rookiecv/cv/RinaKawaguchi.jpg",
     "characters": [
       {
-        "animeTitle": "Ibitte Konai Gibo to Gishi",
+        "animeTitle": "사망 유희로 밥을 먹는다.",
         "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Koyuki Inari",
-        "charimg": "image/rookiecv/MomokaTerasawaKoyukiInari.jpg",
+        "charName": "모모노",
+        "charimg": "image/rookiecv/RinaKawaguchiMomono.jpg",
         "appearances": [
           {
-            "animeTitle": "Ibitte Konai Gibo to Gishi",
+            "animeTitle": "사망 유희로 밥을 먹는다.",
             "year": 2026,
             "role": "SUPPORTING"
           }
         ]
       },
       {
-        "animeTitle": "Honoo no Toukyuujyo Dodge Danko",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Urara Mitamura",
-        "charimg": "image/rookiecv/MomokaTerasawaUraraMitamura.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Honoo no Toukyuujyo Dodge Danko",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Oni no Hanayome",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Sou",
-        "charimg": "image/rookiecv/MomokaTerasawaSou.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Oni no Hanayome",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Uchi no Otouto-domo ga Sumimasen",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Rui Narita",
-        "charimg": "image/rookiecv/MomokaTerasawaRuiNarita.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Uchi no Otouto-domo ga Sumimasen",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Reiwa no Dara-san",
+        "animeTitle": "경멸하는 표정으로 팬티를 보여다오 R(리턴즈)",
         "year": 2026,
         "role": "MAIN",
-        "charName": "Kaoru Misogiya",
-        "charimg": "image/rookiecv/MomokaTerasawaKaoruMisogiya.jpg",
+        "charName": "아리스 네네",
+        "charimg": "image/rookiecv/RinaKawaguchiNeneArisu.jpg",
         "appearances": [
           {
-            "animeTitle": "Reiwa no Dara-san",
+            "animeTitle": "경멸하는 표정으로 팬티를 보여다오 R(리턴즈)",
             "year": 2026,
             "role": "MAIN"
           }
         ]
       },
       {
-        "animeTitle": "Saishuu Gakushou Hibike! Euphonium - Zenpen",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Kaho Hariya",
-        "charimg": "image/rookiecv/MomokaTerasawaKahoHariya.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Saishuu Gakushou Hibike! Euphonium - Zenpen",
-            "year": 2026,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Hibike! Euphonium 3: Extra Episodes",
-            "year": 2024,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Hibike! Euphonium 3",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Ichijouma Mankitsu-gurashi!",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Michika Narumi",
-        "charimg": "image/rookiecv/MomokaTerasawaMichikaNarumi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Ichijouma Mankitsu-gurashi!",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Kami no Niwatsuki Kusunoki-tei",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Tsumugi",
-        "charimg": "image/rookiecv/MomokaTerasawaTsumugi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Kami no Niwatsuki Kusunoki-tei",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "MAO",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Otoya",
-        "charimg": "image/rookiecv/MomokaTerasawaOtoya.jpg",
-        "appearances": [
-          {
-            "animeTitle": "MAO",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Yomi no Tsugai",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Danji",
-        "charimg": "image/rookiecv/MomokaTerasawaDanji.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Yomi no Tsugai",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Himitsu no AiPri: Mankai Buzzrium Live!",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Vivi Hachiouji",
-        "charimg": "image/rookiecv/MomokaTerasawaViviHachiouji.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Himitsu no AiPri: Mankai Buzzrium Live!",
-            "year": 2026,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Himitsu no AiPri: Ring-hen",
-            "year": 2025,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Boku no Kokoro no Yabai Yatsu Movie",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Akira Momoyama",
-        "charimg": "image/rookiecv/MomokaTerasawaAkiraMomoyama.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Boku no Kokoro no Yabai Yatsu Movie",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Ginga Tokkyuu Milky☆Subway: Kakueki Teisha Gekijou Yuki",
+        "animeTitle": "니디 걸 오버도즈",
         "year": 2026,
         "role": "MAIN",
-        "charName": "Chiharu Kujou",
-        "charimg": "image/rookiecv/MomokaTerasawaChiharuKujou.jpg",
+        "charName": "맹독전파소녀☆퍼플 롤리팝",
+        "charimg": "image/rookiecv/RinaKawaguchiMoudokuDenpaShoujoPurpleLollipop.jpg",
         "appearances": [
           {
-            "animeTitle": "Ginga Tokkyuu Milky☆Subway: Kakueki Teisha Gekijou Yuki",
+            "animeTitle": "니디 걸 오버도즈",
             "year": 2026,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Ginga Tokkyuu Milky☆Subway: PARCO Original Animation",
-            "year": 2025,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Ginga Tokkyuu Milky☆Subway",
-            "year": 2025,
             "role": "MAIN"
           }
         ]
       },
       {
-        "animeTitle": "Arne no Jikenbo",
+        "animeTitle": "극장판 비밀의 아이프리 피어나는 바즈리움 라이브!",
         "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Eliza",
-        "charimg": "image/rookiecv/MomokaTerasawaEliza.jpg",
+        "charName": "로쿠도 에루",
+        "charimg": "image/rookiecv/RinaKawaguchiElleRokudou.jpg",
         "appearances": [
           {
-            "animeTitle": "Arne no Jikenbo",
+            "animeTitle": "극장판 비밀의 아이프리 피어나는 바즈리움 라이브!",
             "year": 2026,
             "role": "SUPPORTING"
           }
         ]
       },
       {
-        "animeTitle": "Fate/strange Fake",
+        "animeTitle": "낙제 현자의 학원 무쌍 ~두 번째 전생, S랭크 치트 마술사 모험록~",
         "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Viola Wahlstrom",
-        "charimg": "image/rookiecv/MomokaTerasawaViolaWahlstrom.jpg",
+        "charName": "마리아 판노멜",
+        "charimg": "image/rookiecv/RinaKawaguchiMaria.jpg",
         "appearances": [
           {
-            "animeTitle": "Fate/strange Fake",
+            "animeTitle": "낙제 현자의 학원 무쌍 ~두 번째 전생, S랭크 치트 마술사 모험록~",
             "year": 2026,
             "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Saigo ni Hitotsu dake Onegai Shite mo Yoroshii Deshou ka",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Mary",
-        "charimg": "image/rookiecv/MomokaTerasawaMary.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Saigo ni Hitotsu dake Onegai Shite mo Yoroshii Deshou ka",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Ame to Kimi to",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Maracas no Ko",
-        "charimg": "image/rookiecv/MomokaTerasawaMaracasnoKo.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Ame to Kimi to",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Zutaboro Reijou wa Ane no Moto Konyakusha ni Dekiai Sareru",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Caecilie",
-        "charimg": "image/rookiecv/MomokaTerasawaCaecilie.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Zutaboro Reijou wa Ane no Moto Konyakusha ni Dekiai Sareru",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "DIVE IN!",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Ally",
-        "charimg": "image/rookiecv/MomokaTerasawaAlly.jpg",
-        "appearances": [
-          {
-            "animeTitle": "DIVE IN!",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Make Heroine ga Oosugiru!",
-        "year": 2024,
-        "role": "MAIN",
-        "charName": "Chika Komari",
-        "charimg": "image/rookiecv/MomokaTerasawaChikaKomari.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Make Heroine ga Oosugiru!",
-            "year": 2024,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Yozakura-san Chi no Daisakusen",
-        "year": 2024,
-        "role": "MAIN",
-        "charName": "Shinzo Yozakura",
-        "charimg": "image/rookiecv/MomokaTerasawaShinzoYozakura.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Yozakura-san Chi no Daisakusen",
-            "year": 2024,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Yuzuki-san Chi no Yon Kyoudai.",
-        "year": 2023,
-        "role": "MAIN",
-        "charName": "Gakuto Yuzuki",
-        "charimg": "image/rookiecv/MomokaTerasawaGakutoYuzuki.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Yuzuki-san Chi no Yon Kyoudai.",
-            "year": 2023,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "beautiful day dreamer",
-        "year": 2022,
-        "role": "MAIN",
-        "charName": "Yuzu Hanaoka",
-        "charimg": "image/rookiecv/MomokaTerasawaYuzuHanaoka.jpg",
-        "appearances": [
-          {
-            "animeTitle": "beautiful day dreamer",
-            "year": 2022,
-            "role": "MAIN"
           }
         ]
       }
@@ -8844,37 +958,82 @@ var RookieCVData_2026 = {
   },
   "Wakana Maruoka": {
     "id": 191136,
-    "name": "Wakana Maruoka",
-    "rank": 68,
+    "name": "마루오카 와카나",
+    "rank": 11,
     "debutYear": 2021,
-    "score": 77,
+    "score": 75,
     "scoreBreakdown": {
-      "career": 20,
-      "totalWorks": 7,
-      "currentYearWorks": 10,
-      "mainRole": 25,
-      "recentGrowth": 15
+      "careerRecency": 6,
+      "currentYearWorks": 27,
+      "priorWorks": 10,
+      "recentGrowth": 17,
+      "characterRecognition": 7,
+      "mediaExposure": 8
     },
     "stats": {
-      "totalWorks": 16,
+      "totalWorks": 14,
       "currentYearWorks": 6,
       "mainWorks": 2,
       "supportingWorks": 4,
-      "yearsActive": 5
+      "yearsActive": 6,
+      "maxCharacterFavourites": 45,
+      "mediaExposure": 8
     },
     "cvimg": "image/rookiecv/cv/WakanaMaruoka.jpg",
     "characters": [
       {
-        "animeTitle": "Koko wa Ore ni Makasete Saki ni Ike to Ittekara 10-nen ga Tattara Densetsu ni Natteita.",
+        "animeTitle": "사망 유희로 밥을 먹는다.",
         "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Arone",
-        "charimg": "image/rookiecv/WakanaMaruokaArone.jpg",
+        "charName": "케이토",
+        "charimg": "image/rookiecv/WakanaMaruokaKeito.jpg",
         "appearances": [
           {
-            "animeTitle": "Koko wa Ore ni Makasete Saki ni Ike to Ittekara 10-nen ga Tattara Densetsu ni Natteita.",
+            "animeTitle": "사망 유희로 밥을 먹는다.",
             "year": 2026,
             "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "리인카네이션의 꽃잎",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "하이토 루오 브웨트",
+        "charimg": "image/rookiecv/WakanaMaruokaHaitoLeBuffett.jpg",
+        "appearances": [
+          {
+            "animeTitle": "리인카네이션의 꽃잎",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "사랑해 게임을 끝내고 싶어",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "아사기 와카나",
+        "charimg": "image/rookiecv/WakanaMaruokaWakanaAsagi.jpg",
+        "appearances": [
+          {
+            "animeTitle": "사랑해 게임을 끝내고 싶어",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "부탁해 아이프리",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "토모사카 구미",
+        "charimg": "image/rookiecv/WakanaMaruokaGumiTomosaka.jpg",
+        "appearances": [
+          {
+            "animeTitle": "부탁해 아이프리",
+            "year": 2026,
+            "role": "MAIN"
           }
         ]
       },
@@ -8882,7 +1041,7 @@ var RookieCVData_2026 = {
         "animeTitle": "BanG Dream! Yume∞Mita",
         "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Bell",
+        "charName": "벨",
         "charimg": "image/rookiecv/WakanaMaruokaBell.jpg",
         "appearances": [
           {
@@ -8893,661 +1052,1982 @@ var RookieCVData_2026 = {
         ]
       },
       {
-        "animeTitle": "Aishiteru Game wo Owarasetai",
+        "animeTitle": "여기는 내게 맡기고 먼저 가라고 말한 지 10년이 지났더니 전설이 되어 있었다.",
         "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Wakana Asagi",
-        "charimg": "image/rookiecv/WakanaMaruokaWakanaAsagi.jpg",
+        "charName": "아로네",
+        "charimg": "image/rookiecv/WakanaMaruokaArone.jpg",
         "appearances": [
           {
-            "animeTitle": "Aishiteru Game wo Owarasetai",
+            "animeTitle": "여기는 내게 맡기고 먼저 가라고 말한 지 10년이 지났더니 전설이 되어 있었다.",
             "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Onegai AiPri",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Gumi Tomosaka",
-        "charimg": "image/rookiecv/WakanaMaruokaGumiTomosaka.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Onegai AiPri",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Reincarnation no Kaben",
-        "year": 2026,
-        "role": "MAIN",
-        "charName": "Haito Le Buffett",
-        "charimg": "image/rookiecv/WakanaMaruokaHaitoLeBuffett.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Reincarnation no Kaben",
-            "year": 2026,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Shibou Yuugi de Meshi wo Kuu.",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Keito",
-        "charimg": "image/rookiecv/WakanaMaruokaKeito.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Shibou Yuugi de Meshi wo Kuu.",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Nukitashi THE ANIMATION",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Shain Miyachiyo",
-        "charimg": "image/rookiecv/WakanaMaruokaShainMiyachiyo.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Nukitashi THE ANIMATION",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "The iDOLM@STER: Shiny Colors 2nd season - SHHis",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Rinze Morino",
-        "charimg": "image/rookiecv/WakanaMaruokaRinzeMorino.jpg",
-        "appearances": [
-          {
-            "animeTitle": "The iDOLM@STER: Shiny Colors 2nd season - SHHis",
-            "year": 2025,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "The iDOLM@STER: Shiny Colors 2nd season",
-            "year": 2024,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "The iDOLM@STER: Shiny Colors",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Tokidoki Bosotto Rossiya-go de Dereru Tonari no Alya-san",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Yuki Suou",
-        "charimg": "image/rookiecv/WakanaMaruokaYukiSuou.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Tokidoki Bosotto Rossiya-go de Dereru Tonari no Alya-san",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Jijou wo Shiranai Tenkousei ga Guigui Kuru.",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Sumire Kasahara",
-        "charimg": "image/rookiecv/WakanaMaruokaSumireKasahara.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Jijou wo Shiranai Tenkousei ga Guigui Kuru.",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Shijou Saikyou no Daimaou, Murabito A ni Tensei suru",
-        "year": 2022,
-        "role": "MAIN",
-        "charName": "Ireena Olhyde",
-        "charimg": "image/rookiecv/WakanaMaruokaIreenaOlhyde.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Shijou Saikyou no Daimaou, Murabito A ni Tensei suru",
-            "year": 2022,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Dolls' Frontline",
-        "year": 2022,
-        "role": "SUPPORTING",
-        "charName": "Kawasaki",
-        "charimg": "image/rookiecv/WakanaMaruokaKawasaki.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Dolls' Frontline",
-            "year": 2022,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Yoru no Kuni",
-        "year": 2021,
-        "role": "SUPPORTING",
-        "charName": "Kotoko",
-        "charimg": "image/rookiecv/WakanaMaruokaKotoko.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Yoru no Kuni",
-            "year": 2021,
             "role": "SUPPORTING"
           }
         ]
       }
     ]
   },
-  "Emiri Suyama": {
-    "id": 127723,
-    "name": "Emiri Suyama",
-    "rank": 69,
-    "debutYear": 2018,
-    "score": 76,
-    "scoreBreakdown": {
-      "career": 10,
-      "totalWorks": 3,
-      "currentYearWorks": 40,
-      "mainRole": 8,
-      "recentGrowth": 15
-    },
-    "stats": {
-      "totalWorks": 23,
-      "currentYearWorks": 3,
-      "mainWorks": 0,
-      "supportingWorks": 3,
-      "yearsActive": 8
-    },
-    "cvimg": "image/rookiecv/cv/EmiriSuyama.jpg",
-    "characters": [
-      {
-        "animeTitle": "Saishuu Gakushou Hibike! Euphonium - Zenpen",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Sari Yoshii",
-        "charimg": "image/rookiecv/EmiriSuyamaSariYoshii.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Saishuu Gakushou Hibike! Euphonium - Zenpen",
-            "year": 2026,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Hibike! Euphonium 3",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Ghost Concert: missing Songs",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "MiucS",
-        "charimg": "image/rookiecv/EmiriSuyamaMiucS.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Ghost Concert: missing Songs",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "MAO",
-        "year": 2026,
-        "role": "SUPPORTING",
-        "charName": "Masago",
-        "charimg": "image/rookiecv/EmiriSuyamaMasago.jpg",
-        "appearances": [
-          {
-            "animeTitle": "MAO",
-            "year": 2026,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Rock wa Lady no Tashinami Deshite",
-        "year": 2025,
-        "role": "SUPPORTING",
-        "charName": "Minami Komori",
-        "charimg": "image/rookiecv/EmiriSuyamaMinamiKomori.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Rock wa Lady no Tashinami Deshite",
-            "year": 2025,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Shadowverse Flame: Arc-hen",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Misaki",
-        "charimg": "image/rookiecv/EmiriSuyamaMisaki.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Shadowverse Flame: Arc-hen",
-            "year": 2024,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Shadowverse Flame: Seven Shadows-hen",
-            "year": 2023,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Shadowverse Flame",
-            "year": 2022,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Momochi-san Chi no Ayakashi Ouji",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Hana Iizuka",
-        "charimg": "image/rookiecv/EmiriSuyamaHanaIizuka.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Momochi-san Chi no Ayakashi Ouji",
-            "year": 2024,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Hokkyoku Hyakkaten no Concierge-san",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Barbary Lion Kanojo",
-        "charimg": "image/rookiecv/EmiriSuyamaBarbaryLionKanojo.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Hokkyoku Hyakkaten no Concierge-san",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Higeki no Genkyou to Naru Saikyou Gedou Last Boss Joou wa Tami no Tame ni Tsukushimasu.",
-        "year": 2023,
-        "role": "SUPPORTING",
-        "charName": "Lotte",
-        "charimg": "image/rookiecv/EmiriSuyamaLotte.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Higeki no Genkyou to Naru Saikyou Gedou Last Boss Joou wa Tami no Tame ni Tsukushimasu.",
-            "year": 2023,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Umayuru",
-        "year": 2022,
-        "role": "SUPPORTING",
-        "charName": "Etsuko Otonashi",
-        "charimg": "image/rookiecv/EmiriSuyamaEtsukoOtonashi.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Umayuru",
-            "year": 2022,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Hula Fulla Dance",
-        "year": 2021,
-        "role": "MAIN",
-        "charName": "Shion Shirasawa",
-        "charimg": "image/rookiecv/EmiriSuyamaShionShirasawa.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Hula Fulla Dance",
-            "year": 2021,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Puraore!: PRIDE OF ORANGE",
-        "year": 2021,
-        "role": "SUPPORTING",
-        "charName": "Kaori Mihara",
-        "charimg": "image/rookiecv/EmiriSuyamaKaoriMihara.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Puraore!: PRIDE OF ORANGE",
-            "year": 2021,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Blue Period",
-        "year": 2021,
-        "role": "SUPPORTING",
-        "charName": "Sae Okada",
-        "charimg": "image/rookiecv/EmiriSuyamaSaeOkada.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Blue Period",
-            "year": 2021,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Tomica Kizuna Gattai: Earth Granner",
-        "year": 2020,
-        "role": "SUPPORTING",
-        "charName": "Rin Kumaneko",
-        "charimg": "image/rookiecv/EmiriSuyamaRinKumaneko.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Tomica Kizuna Gattai: Earth Granner",
-            "year": 2020,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Mewkledreamy",
-        "year": 2020,
-        "role": "SUPPORTING",
-        "charName": "Fumiko Amamiya",
-        "charimg": "image/rookiecv/EmiriSuyamaFumikoAmamiya.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Mewkledreamy",
-            "year": 2020,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Oda Cinnamon Nobunaga",
-        "year": 2020,
-        "role": "SUPPORTING",
-        "charName": "Tomo",
-        "charimg": "image/rookiecv/EmiriSuyamaTomo.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Oda Cinnamon Nobunaga",
-            "year": 2020,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Aikatsu on Parade!",
-        "year": 2019,
-        "role": "SUPPORTING",
-        "charName": "Sakuya Shirayuri",
-        "charimg": "image/rookiecv/EmiriSuyamaSakuyaShirayuri.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Aikatsu on Parade!",
-            "year": 2019,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Aikatsu Friends!: Kagayaki no Jewel",
-            "year": 2019,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Aikatsu Friends!",
-            "year": 2018,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Cosmos",
-        "year": 2019,
-        "role": "MAIN",
-        "charName": "Sora Ichinose",
-        "charimg": "image/rookiecv/EmiriSuyamaSoraIchinose.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Cosmos",
-            "year": 2019,
-            "role": "MAIN"
-          }
-        ]
-      },
-      {
-        "animeTitle": "BEATLESS",
-        "year": 2018,
-        "role": "MAIN",
-        "charName": "Erika Burroughs",
-        "charimg": "image/rookiecv/EmiriSuyamaErikaBurroughs.jpg",
-        "appearances": [
-          {
-            "animeTitle": "BEATLESS",
-            "year": 2018,
-            "role": "MAIN"
-          }
-        ]
-      }
-    ]
-  },
-  "Kento Hama": {
-    "id": 122595,
-    "name": "Kento Hama",
-    "rank": 70,
-    "debutYear": 2014,
+  "Taihi Kimura": {
+    "id": 335875,
+    "name": "키무라 타이히",
+    "rank": 12,
+    "debutYear": 2024,
     "score": 75,
     "scoreBreakdown": {
-      "career": 0,
-      "totalWorks": 7,
-      "currentYearWorks": 40,
-      "mainRole": 8,
-      "recentGrowth": 20
+      "careerRecency": 15,
+      "currentYearWorks": 25,
+      "priorWorks": 10,
+      "recentGrowth": 12,
+      "characterRecognition": 4,
+      "mediaExposure": 9
     },
     "stats": {
-      "totalWorks": 16,
-      "currentYearWorks": 3,
+      "totalWorks": 10,
+      "currentYearWorks": 4,
       "mainWorks": 0,
-      "supportingWorks": 3,
-      "yearsActive": 12
+      "supportingWorks": 4,
+      "yearsActive": 3,
+      "maxCharacterFavourites": 9,
+      "mediaExposure": 9
     },
-    "cvimg": "image/rookiecv/cv/KentoHama.jpg",
+    "cvimg": "image/rookiecv/cv/TaihiKimura.jpg",
     "characters": [
       {
-        "animeTitle": "Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu II",
+        "animeTitle": "DARK MOON: 달의 제단",
         "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Ein",
-        "charimg": "image/rookiecv/KentoHamaEin.jpg",
+        "charName": "칸",
+        "charimg": "image/rookiecv/TaihiKimuraKhan.jpg",
         "appearances": [
           {
-            "animeTitle": "Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu II",
+            "animeTitle": "DARK MOON: 달의 제단",
             "year": 2026,
             "role": "SUPPORTING"
           }
         ]
       },
       {
-        "animeTitle": "Diamond no Ace act II: Second Season",
+        "animeTitle": "최강의 왕, 두 번째 인생에는 무엇을 하는가? 시즌 2",
         "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Kouji Nara",
-        "charimg": "image/rookiecv/KentoHamaKoujiNara.jpg",
+        "charName": "아담 크랜슈",
+        "charimg": "image/rookiecv/TaihiKimuraAdamKrensh.jpg",
         "appearances": [
           {
-            "animeTitle": "Diamond no Ace act II: Second Season",
+            "animeTitle": "최강의 왕, 두 번째 인생에는 무엇을 하는가? 시즌 2",
             "year": 2026,
             "role": "SUPPORTING"
           }
         ]
       },
       {
-        "animeTitle": "Yuusha Party wo Oidasareta Kiyou Binbou",
+        "animeTitle": "라이어 게임",
         "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Wilkes Severley",
-        "charimg": "image/rookiecv/KentoHamaWilkesSeverley.jpg",
+        "charName": "후지타 신고",
+        "charimg": "image/rookiecv/TaihiKimuraShingoFujita.jpg",
         "appearances": [
           {
-            "animeTitle": "Yuusha Party wo Oidasareta Kiyou Binbou",
+            "animeTitle": "라이어 게임",
             "year": 2026,
             "role": "SUPPORTING"
           }
         ]
       },
       {
-        "animeTitle": "Disney Twisted-Wonderland: THE ANIMATION - Season 1: EPISODE of HEARTSLABYUL",
-        "year": 2025,
+        "animeTitle": "일본삼국",
+        "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Alchemi Pinka",
-        "charimg": "image/rookiecv/KentoHamaAlchemiPinka.jpg",
+        "charName": "후지 3세",
+        "charimg": "image/rookiecv/TaihiKimuraFujiSansei.jpg",
         "appearances": [
           {
-            "animeTitle": "Disney Twisted-Wonderland: THE ANIMATION - Season 1: EPISODE of HEARTSLABYUL",
-            "year": 2025,
+            "animeTitle": "일본삼국",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      }
+    ]
+  },
+  "Asuna Tomari": {
+    "id": 129351,
+    "name": "이노우에 호노카",
+    "rank": 13,
+    "debutYear": 2016,
+    "score": 74,
+    "scoreBreakdown": {
+      "careerRecency": 0,
+      "currentYearWorks": 27,
+      "priorWorks": 10,
+      "recentGrowth": 17,
+      "characterRecognition": 12,
+      "mediaExposure": 8
+    },
+    "stats": {
+      "totalWorks": 31,
+      "currentYearWorks": 5,
+      "mainWorks": 2,
+      "supportingWorks": 4,
+      "yearsActive": 11,
+      "maxCharacterFavourites": 773,
+      "mediaExposure": 8
+    },
+    "cvimg": "image/rookiecv/cv/AsunaTomari.jpg",
+    "characters": [
+      {
+        "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "인키",
+        "charimg": "image/rookiecv/AsunaTomariInsuke.jpg",
+        "appearances": [
+          {
+            "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
+            "year": 2026,
             "role": "SUPPORTING"
           }
         ]
       },
       {
-        "animeTitle": "Touken Ranbu Kai: Kyoden Moyuru Honnouji",
-        "year": 2024,
-        "role": "SUPPORTING",
-        "charName": "Mutsunokami Yoshiyuki",
-        "charimg": "image/rookiecv/KentoHamaMutsunokamiYoshiyuki.jpg",
-        "appearances": [
-          {
-            "animeTitle": "Touken Ranbu Kai: Kyoden Moyuru Honnouji",
-            "year": 2024,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Toku: Touken Ranbu - Hanamaru - Setsugetsuka",
-            "year": 2022,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Zoku Touken Ranbu: Hanamaru",
-            "year": 2018,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Touken Ranbu: Hanamaru - Makuai Kaisouroku",
-            "year": 2017,
-            "role": "SUPPORTING"
-          },
-          {
-            "animeTitle": "Katsugeki Touken Ranbu",
-            "year": 2017,
-            "role": "MAIN"
-          },
-          {
-            "animeTitle": "Touken Ranbu: Hanamaru",
-            "year": 2016,
-            "role": "SUPPORTING"
-          }
-        ]
-      },
-      {
-        "animeTitle": "Dosukoi Sushi-Zumou",
-        "year": 2021,
+        "animeTitle": "극장판 전생했더니 슬라임이었던 건에 대하여 창해의 눈물편",
+        "year": 2026,
         "role": "MAIN",
-        "charName": "Oyakata Takenoko",
-        "charimg": "image/rookiecv/KentoHamaOyakataTakenoko.jpg",
+        "charName": "고부타",
+        "charimg": "image/rookiecv/AsunaTomariGobta.jpg",
         "appearances": [
           {
-            "animeTitle": "Dosukoi Sushi-Zumou",
-            "year": 2021,
+            "animeTitle": "극장판 전생했더니 슬라임이었던 건에 대하여 창해의 눈물편",
+            "year": 2026,
             "role": "MAIN"
+          },
+          {
+            "animeTitle": "전생했더니 슬라임이었던 건에 대하여 4기",
+            "year": 2026,
+            "role": "SUPPORTING"
           }
         ]
       },
       {
-        "animeTitle": "A3! SEASON AUTUMN & WINTER",
-        "year": 2020,
+        "animeTitle": "아와지마 가극학교",
+        "year": 2026,
         "role": "MAIN",
-        "charName": "Taichi Nanao",
-        "charimg": "image/rookiecv/KentoHamaTaichiNanao.jpg",
+        "charName": "우타가와 시즈카",
+        "charimg": "image/rookiecv/AsunaTomariShizukaUtagawa.jpg",
         "appearances": [
           {
-            "animeTitle": "A3! SEASON AUTUMN & WINTER",
-            "year": 2020,
+            "animeTitle": "아와지마 가극학교",
+            "year": 2026,
             "role": "MAIN"
           }
         ]
       },
       {
-        "animeTitle": "The Idolm@ster SideM Wake Atte Mini!",
-        "year": 2018,
+        "animeTitle": "아카네 이야기",
+        "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Ryu Kimura",
-        "charimg": "image/rookiecv/KentoHamaRyuKimura.jpg",
+        "charName": "점보",
+        "charimg": "image/rookiecv/AsunaTomariJumboOzaki.jpg",
         "appearances": [
           {
-            "animeTitle": "The Idolm@ster SideM Wake Atte Mini!",
-            "year": 2018,
+            "animeTitle": "아카네 이야기",
+            "year": 2026,
             "role": "SUPPORTING"
           }
         ]
       },
       {
-        "animeTitle": "Kyoukai no Rinne 2",
-        "year": 2016,
+        "animeTitle": "이세계 유유자적 농가 2",
+        "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Shoot Saka",
-        "charimg": "image/rookiecv/KentoHamaShootSaka.jpg",
+        "charName": "거인족",
+        "charimg": "image/rookiecv/AsunaTomariKyojinzoku.jpg",
         "appearances": [
           {
-            "animeTitle": "Kyoukai no Rinne 2",
-            "year": 2016,
+            "animeTitle": "이세계 유유자적 농가 2",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      }
+    ]
+  },
+  "Anna Nagase": {
+    "id": 182100,
+    "name": "나가세 안나",
+    "rank": 14,
+    "debutYear": 2021,
+    "score": 73,
+    "scoreBreakdown": {
+      "careerRecency": 6,
+      "currentYearWorks": 27,
+      "priorWorks": 5,
+      "recentGrowth": 12,
+      "characterRecognition": 15,
+      "mediaExposure": 8
+    },
+    "stats": {
+      "totalWorks": 48,
+      "currentYearWorks": 14,
+      "mainWorks": 5,
+      "supportingWorks": 9,
+      "yearsActive": 6,
+      "maxCharacterFavourites": 6771,
+      "mediaExposure": 8
+    },
+    "cvimg": "image/rookiecv/cv/AnnaNagase.jpg",
+    "characters": [
+      {
+        "animeTitle": "기동전사 건담: 섬광의 하사웨이 키르케의 마녀",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "줄리아 스가",
+        "charimg": "image/rookiecv/AnnaNagaseJuliaSuga.jpg",
+        "appearances": [
+          {
+            "animeTitle": "기동전사 건담: 섬광의 하사웨이 키르케의 마녀",
+            "year": 2026,
             "role": "SUPPORTING"
           }
         ]
       },
       {
-        "animeTitle": "Cardfight!! Vanguard G: GIRS Crisis-hen",
-        "year": 2015,
+        "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
+        "year": 2026,
         "role": "SUPPORTING",
-        "charName": "Olivier Gaillard",
-        "charimg": "image/rookiecv/KentoHamaOlivierGaillard.jpg",
+        "charName": "요우키",
+        "charimg": "image/rookiecv/AnnaNagaseYouki.jpg",
         "appearances": [
           {
-            "animeTitle": "Cardfight!! Vanguard G: GIRS Crisis-hen",
-            "year": 2015,
+            "animeTitle": "공주님 \"고문\"의 시간입니다 2기",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "아름다운 그대에게",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "야마시나 리카",
+        "charimg": "image/rookiecv/AnnaNagaseRikaYamashina.jpg",
+        "appearances": [
+          {
+            "animeTitle": "아름다운 그대에게",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "불꽃 소방대 3장",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "신몬 베니마루",
+        "charimg": "image/rookiecv/AnnaNagaseBenimaruShinmon.jpg",
+        "appearances": [
+          {
+            "animeTitle": "불꽃 소방대 3장",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "초 가구야 공주!",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "사카요리 이로하",
+        "charimg": "image/rookiecv/AnnaNagaseIrohaSakayori.jpg",
+        "appearances": [
+          {
+            "animeTitle": "초 가구야 공주!",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "은하 특급 밀키☆서브웨이",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "구루스 마키나",
+        "charimg": "image/rookiecv/AnnaNagaseMakinaKurusu.jpg",
+        "appearances": [
+          {
+            "animeTitle": "은하 특급 밀키☆서브웨이",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "얼음성벽",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "히카와 코유키",
+        "charimg": "image/rookiecv/AnnaNagaseKoyukiHikawa.jpg",
+        "appearances": [
+          {
+            "animeTitle": "얼음성벽",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "스노우볼 어스",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "키노에 오토이치",
+        "charimg": "image/rookiecv/AnnaNagaseOtoichiKinoe.jpg",
+        "appearances": [
+          {
+            "animeTitle": "스노우볼 어스",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "아카네 이야기",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "오우사키 아카네",
+        "charimg": "image/rookiecv/AnnaNagaseAkaneOusaki.jpg",
+        "appearances": [
+          {
+            "animeTitle": "아카네 이야기",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "매리지 톡신",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "히메카와 쿄코",
+        "charimg": "image/rookiecv/AnnaNagaseKyoukoHimekawa.jpg",
+        "appearances": [
+          {
+            "animeTitle": "매리지 톡신",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "니디 걸 오버도즈",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "카체",
+        "charimg": "image/rookiecv/AnnaNagaseKache.jpg",
+        "appearances": [
+          {
+            "animeTitle": "니디 걸 오버도즈",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "유녀전기 Ⅱ",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "루더스도르프의 딸",
+        "charimg": "image/rookiecv/AnnaNagaseRudersdorfnoMusume.jpg",
+        "appearances": [
+          {
+            "animeTitle": "유녀전기 Ⅱ",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "이거 그리고 죽어",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "모리사키 우라라",
+        "charimg": "image/rookiecv/AnnaNagaseLoupGarou.jpg",
+        "appearances": [
+          {
+            "animeTitle": "이거 그리고 죽어",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "사망 유희로 밥을 먹는다. 44: 클라우디 비치",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "에세이",
+        "charimg": "image/rookiecv/AnnaNagaseEssei.jpg",
+        "appearances": [
+          {
+            "animeTitle": "사망 유희로 밥을 먹는다. 44: 클라우디 비치",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      }
+    ]
+  },
+  "Yuuko Natsuyoshi": {
+    "id": 136272,
+    "name": "나츠요시 유우코",
+    "rank": 15,
+    "debutYear": 2019,
+    "score": 73,
+    "scoreBreakdown": {
+      "careerRecency": 0,
+      "currentYearWorks": 27,
+      "priorWorks": 10,
+      "recentGrowth": 17,
+      "characterRecognition": 12,
+      "mediaExposure": 7
+    },
+    "stats": {
+      "totalWorks": 33,
+      "currentYearWorks": 9,
+      "mainWorks": 3,
+      "supportingWorks": 6,
+      "yearsActive": 8,
+      "maxCharacterFavourites": 979,
+      "mediaExposure": 7
+    },
+    "cvimg": "image/rookiecv/cv/YuukoNatsuyoshi.jpg",
+    "characters": [
+      {
+        "animeTitle": "아름다운 그대에게",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "줄리아 맥스웰",
+        "charimg": "image/rookiecv/YuukoNatsuyoshiJuliaMaxwell.jpg",
+        "appearances": [
+          {
+            "animeTitle": "아름다운 그대에게",
+            "year": 2026,
             "role": "SUPPORTING"
           },
           {
-            "animeTitle": "Cardfight!! Vanguard: Legion Mate-hen",
-            "year": 2014,
+            "animeTitle": "아름다운 그대에게 2기",
+            "year": 2026,
             "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "메달리스트 2기",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "니와토리 사나",
+        "charimg": "image/rookiecv/YuukoNatsuyoshiSanaNiwatori.jpg",
+        "appearances": [
+          {
+            "animeTitle": "메달리스트 2기",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "용사 파티에 귀여운 애가 있어서, 고백해봤다.",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "미카나",
+        "charimg": "image/rookiecv/YuukoNatsuyoshiMikana.jpg",
+        "appearances": [
+          {
+            "animeTitle": "용사 파티에 귀여운 애가 있어서, 고백해봤다.",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "초 가구야 공주!",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "카구야",
+        "charimg": "image/rookiecv/YuukoNatsuyoshiKaguya.jpg",
+        "appearances": [
+          {
+            "animeTitle": "초 가구야 공주!",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "카드파이트!! 뱅가드 Divinez",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "이시카와 카나미",
+        "charimg": "image/rookiecv/YuukoNatsuyoshiKanamiIshikawa.jpg",
+        "appearances": [
+          {
+            "animeTitle": "카드파이트!! 뱅가드 Divinez",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "담배 고양이 미니",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "야니네코",
+        "charimg": "image/rookiecv/YuukoNatsuyoshiYanikoSatou.jpg",
+        "appearances": [
+          {
+            "animeTitle": "담배 고양이 미니",
+            "year": 2026,
+            "role": "MAIN"
+          },
+          {
+            "animeTitle": "담배 고양이",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "비실비실 선생님",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "쿠구리 카야",
+        "charimg": "image/rookiecv/YuukoNatsuyoshiKayaKuguri.jpg",
+        "appearances": [
+          {
+            "animeTitle": "비실비실 선생님",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "그로우 업 쇼 ~해바라기 서커스단~",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "유라 아카네",
+        "charimg": "image/rookiecv/YuukoNatsuyoshiAkaneYura.jpg",
+        "appearances": [
+          {
+            "animeTitle": "그로우 업 쇼 ~해바라기 서커스단~",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      }
+    ]
+  },
+  "Momoka Terasawa": {
+    "id": 292760,
+    "name": "테라사와 모모카",
+    "rank": 16,
+    "debutYear": 2022,
+    "score": 73,
+    "scoreBreakdown": {
+      "careerRecency": 6,
+      "currentYearWorks": 27,
+      "priorWorks": 10,
+      "recentGrowth": 17,
+      "characterRecognition": 7,
+      "mediaExposure": 6
+    },
+    "stats": {
+      "totalWorks": 29,
+      "currentYearWorks": 15,
+      "mainWorks": 2,
+      "supportingWorks": 13,
+      "yearsActive": 5,
+      "maxCharacterFavourites": 53,
+      "mediaExposure": 6
+    },
+    "cvimg": "image/rookiecv/cv/MomokaTerasawa.jpg",
+    "characters": [
+      {
+        "animeTitle": "Fate/strange Fake",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "비올라 월스트롬",
+        "charimg": "image/rookiecv/MomokaTerasawaViolaWahlstrom.jpg",
+        "appearances": [
+          {
+            "animeTitle": "Fate/strange Fake",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "극장판 내 마음의 위험한 녀석",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "모모야마 아키라",
+        "charimg": "image/rookiecv/MomokaTerasawaAkiraMomoyama.jpg",
+        "appearances": [
+          {
+            "animeTitle": "극장판 내 마음의 위험한 녀석",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "아르네의 사건부",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "엘리제",
+        "charimg": "image/rookiecv/MomokaTerasawaEliza.jpg",
+        "appearances": [
+          {
+            "animeTitle": "아르네의 사건부",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "은하 특급 밀키☆서브웨이",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "구조 지하루",
+        "charimg": "image/rookiecv/MomokaTerasawaChiharuKujou.jpg",
+        "appearances": [
+          {
+            "animeTitle": "은하 특급 밀키☆서브웨이",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "최종악장 울려라! 유포니엄",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "하리야 카호",
+        "charimg": "image/rookiecv/MomokaTerasawaKahoHariya.jpg",
+        "appearances": [
+          {
+            "animeTitle": "최종악장 울려라! 유포니엄",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "황천의 츠가이",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "단지",
+        "charimg": "image/rookiecv/MomokaTerasawaDanji.jpg",
+        "appearances": [
+          {
+            "animeTitle": "황천의 츠가이",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "다다미 한 장짜리 방 만끽 생활!",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "나루미 미치카",
+        "charimg": "image/rookiecv/MomokaTerasawaMichikaNarumi.jpg",
+        "appearances": [
+          {
+            "animeTitle": "다다미 한 장짜리 방 만끽 생활!",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "마오",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "오토야",
+        "charimg": "image/rookiecv/MomokaTerasawaOtoya.jpg",
+        "appearances": [
+          {
+            "animeTitle": "마오",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "신의 정원이 딸린 쿠스노키 저택",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "츠무기",
+        "charimg": "image/rookiecv/MomokaTerasawaTsumugi.jpg",
+        "appearances": [
+          {
+            "animeTitle": "신의 정원이 딸린 쿠스노키 저택",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "극장판 비밀의 아이프리 피어나는 바즈리움 라이브!",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "하치오지 비비",
+        "charimg": "image/rookiecv/MomokaTerasawaViviHachiouji.jpg",
+        "appearances": [
+          {
+            "animeTitle": "극장판 비밀의 아이프리 피어나는 바즈리움 라이브!",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "오니의 신부",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "소우",
+        "charimg": "image/rookiecv/MomokaTerasawaSou.jpg",
+        "appearances": [
+          {
+            "animeTitle": "오니의 신부",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "피구여왕 단코",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "미타무라 우라라",
+        "charimg": "image/rookiecv/MomokaTerasawaUraraMitamura.jpg",
+        "appearances": [
+          {
+            "animeTitle": "피구여왕 단코",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "구박하지 않는 계모와 언니들",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "이나리 코유키",
+        "charimg": "image/rookiecv/MomokaTerasawaKoyukiInari.jpg",
+        "appearances": [
+          {
+            "animeTitle": "구박하지 않는 계모와 언니들",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "우리 남동생들이 죄송합니다",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "나리타 루이",
+        "charimg": "image/rookiecv/MomokaTerasawaRuiNarita.jpg",
+        "appearances": [
+          {
+            "animeTitle": "우리 남동생들이 죄송합니다",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "레이와의 다라 씨",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "미소기야 카오루",
+        "charimg": "image/rookiecv/MomokaTerasawaKaoruMisogiya.jpg",
+        "appearances": [
+          {
+            "animeTitle": "레이와의 다라 씨",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      }
+    ]
+  },
+  "Fuuka Izumi": {
+    "id": 164145,
+    "name": "이즈미 후카",
+    "rank": 17,
+    "debutYear": 2020,
+    "score": 72,
+    "scoreBreakdown": {
+      "careerRecency": 0,
+      "currentYearWorks": 27,
+      "priorWorks": 10,
+      "recentGrowth": 17,
+      "characterRecognition": 10,
+      "mediaExposure": 8
+    },
+    "stats": {
+      "totalWorks": 29,
+      "currentYearWorks": 12,
+      "mainWorks": 2,
+      "supportingWorks": 10,
+      "yearsActive": 7,
+      "maxCharacterFavourites": 240,
+      "mediaExposure": 8
+    },
+    "cvimg": "image/rookiecv/cv/FuukaIzumi.jpg",
+    "characters": [
+      {
+        "animeTitle": "마도정병의 슬레이브 2",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "에조 야쿠모",
+        "charimg": "image/rookiecv/FuukaIzumiYakumoEzo.jpg",
+        "appearances": [
+          {
+            "animeTitle": "마도정병의 슬레이브 2",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "DARK MOON: 달의 제단",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "수하",
+        "charimg": "image/rookiecv/FuukaIzumiSuHa.jpg",
+        "appearances": [
+          {
+            "animeTitle": "DARK MOON: 달의 제단",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "마법의 자매 루루토리리",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "칸다치 토코",
+        "charimg": "image/rookiecv/FuukaIzumiToukoKandachi.jpg",
+        "appearances": [
+          {
+            "animeTitle": "마법의 자매 루루토리리",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "키리오 팬클럽",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "타시로 세이라",
+        "charimg": "image/rookiecv/FuukaIzumiSeiraTashiro.jpg",
+        "appearances": [
+          {
+            "animeTitle": "키리오 팬클럽",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "얼음성벽",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "아즈미 미키",
+        "charimg": "image/rookiecv/FuukaIzumiMikiAzumi.jpg",
+        "appearances": [
+          {
+            "animeTitle": "얼음성벽",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "카난 님은 초보 악마",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "미르티",
+        "charimg": "image/rookiecv/FuukaIzumiMilchZebul.jpg",
+        "appearances": [
+          {
+            "animeTitle": "카난 님은 초보 악마",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "검은 고양이와 마녀의 교실",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "키론 새저테리어스 아라디아",
+        "charimg": "image/rookiecv/FuukaIzumiChironSagittariusAradia.jpg",
+        "appearances": [
+          {
+            "animeTitle": "검은 고양이와 마녀의 교실",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "검은 고양이와 마녀의 교실",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "아리아 아쿠에리아스",
+        "charimg": "image/rookiecv/FuukaIzumiAriaAquarius.jpg",
+        "appearances": [
+          {
+            "animeTitle": "검은 고양이와 마녀의 교실",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "킬 블루",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "미츠오카 노렌",
+        "charimg": "image/rookiecv/FuukaIzumiNorenMitsuoka.jpg",
+        "appearances": [
+          {
+            "animeTitle": "킬 블루",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "부탁해 아이프리",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "프리네코",
+        "charimg": "image/rookiecv/FuukaIzumiPriNeko.jpg",
+        "appearances": [
+          {
+            "animeTitle": "부탁해 아이프리",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "부탁해 아이프리",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "미나미 후미카",
+        "charimg": "image/rookiecv/FuukaIzumiFumikaMinami.jpg",
+        "appearances": [
+          {
+            "animeTitle": "부탁해 아이프리",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "전학 간 학교의 청순가련한 미소녀가 옛날에 남자라고 생각해서 같이 놀던 소꿉친구였던 일",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "무라오 사키",
+        "charimg": "image/rookiecv/FuukaIzumiSakiMurao.jpg",
+        "appearances": [
+          {
+            "animeTitle": "전학 간 학교의 청순가련한 미소녀가 옛날에 남자라고 생각해서 같이 놀던 소꿉친구였던 일",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "고양이와 용",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "시로타에",
+        "charimg": "image/rookiecv/FuukaIzumiShirotae.jpg",
+        "appearances": [
+          {
+            "animeTitle": "고양이와 용",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "레이와의 다라 씨",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "호로누시 미즈키",
+        "charimg": "image/rookiecv/FuukaIzumiMizukiHoronushi.jpg",
+        "appearances": [
+          {
+            "animeTitle": "레이와의 다라 씨",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      }
+    ]
+  },
+  "Rikuya Yasuda": {
+    "id": 128786,
+    "name": "야스다 리쿠야",
+    "rank": 18,
+    "debutYear": 2018,
+    "score": 72,
+    "scoreBreakdown": {
+      "careerRecency": 0,
+      "currentYearWorks": 27,
+      "priorWorks": 10,
+      "recentGrowth": 17,
+      "characterRecognition": 10,
+      "mediaExposure": 8
+    },
+    "stats": {
+      "totalWorks": 40,
+      "currentYearWorks": 12,
+      "mainWorks": 2,
+      "supportingWorks": 10,
+      "yearsActive": 9,
+      "maxCharacterFavourites": 371,
+      "mediaExposure": 8
+    },
+    "cvimg": "image/rookiecv/cv/RikuyaYasuda.jpg",
+    "characters": [
+      {
+        "animeTitle": "위국일기",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "桜井",
+        "charimg": "image/rookiecv/RikuyaYasudaSakurai.jpg",
+        "appearances": [
+          {
+            "animeTitle": "위국일기",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "아르네의 사건부",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "베룬트",
+        "charimg": "image/rookiecv/RikuyaYasudaBernd.jpg",
+        "appearances": [
+          {
+            "animeTitle": "아르네의 사건부",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "야코 후타",
+        "charimg": "image/rookiecv/RikuyaYasudaFuutaYakou.jpg",
+        "appearances": [
+          {
+            "animeTitle": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "한밤중 하트튠",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "야마부키 아리스",
+        "charimg": "image/rookiecv/RikuyaYasudaArisuYamabuki.jpg",
+        "appearances": [
+          {
+            "animeTitle": "한밤중 하트튠",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "푸른 미부로 2",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "아사노 토타로",
+        "charimg": "image/rookiecv/RikuyaYasudaTotarouAsano.jpg",
+        "appearances": [
+          {
+            "animeTitle": "푸른 미부로 2",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "고문 아르바이트의 일상",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "노에",
+        "charimg": "image/rookiecv/RikuyaYasudaNoe.jpg",
+        "appearances": [
+          {
+            "animeTitle": "고문 아르바이트의 일상",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "반에서 두 번째로 귀여운 여자애와 친구가 되었다",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "세키 노조무",
+        "charimg": "image/rookiecv/RikuyaYasudaNozomuSeki.jpg",
+        "appearances": [
+          {
+            "animeTitle": "반에서 두 번째로 귀여운 여자애와 친구가 되었다",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "얼음성벽",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "아카호시 하야토",
+        "charimg": "image/rookiecv/RikuyaYasudaHayatoAkahoshi.jpg",
+        "appearances": [
+          {
+            "animeTitle": "얼음성벽",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "이세계 유유자적 농가 2",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "잭",
+        "charimg": "image/rookiecv/RikuyaYasudaJack.jpg",
+        "appearances": [
+          {
+            "animeTitle": "이세계 유유자적 농가 2",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "또 죽고 말았나요, 탐정님",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "오우츠키 사쿠야",
+        "charimg": "image/rookiecv/RikuyaYasudaSakuyaOutsuki.jpg",
+        "appearances": [
+          {
+            "animeTitle": "또 죽고 말았나요, 탐정님",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "슈퍼 뒤에서 담배 피우는 두 사람",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "오바타",
+        "charimg": "image/rookiecv/RikuyaYasudaObata.jpg",
+        "appearances": [
+          {
+            "animeTitle": "슈퍼 뒤에서 담배 피우는 두 사람",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "영민 0명 스타트 변경 영주님",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "프랜시스",
+        "charimg": "image/rookiecv/RikuyaYasudaFrancis.jpg",
+        "appearances": [
+          {
+            "animeTitle": "영민 0명 스타트 변경 영주님",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      }
+    ]
+  },
+  "Minori Fujidera": {
+    "id": 206623,
+    "name": "후지데라 미노리",
+    "rank": 19,
+    "debutYear": 2021,
+    "score": 72,
+    "scoreBreakdown": {
+      "careerRecency": 6,
+      "currentYearWorks": 27,
+      "priorWorks": 10,
+      "recentGrowth": 17,
+      "characterRecognition": 6,
+      "mediaExposure": 6
+    },
+    "stats": {
+      "totalWorks": 14,
+      "currentYearWorks": 7,
+      "mainWorks": 3,
+      "supportingWorks": 4,
+      "yearsActive": 6,
+      "maxCharacterFavourites": 27,
+      "mediaExposure": 6
+    },
+    "cvimg": "image/rookiecv/cv/MinoriFujidera.jpg",
+    "characters": [
+      {
+        "animeTitle": "사망 유희로 밥을 먹는다.",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "미토",
+        "charimg": "image/rookiecv/MinoriFujideraMizunoto.jpg",
+        "appearances": [
+          {
+            "animeTitle": "사망 유희로 밥을 먹는다.",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "얼음성벽",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "미나토의 전 여자친구",
+        "charimg": "image/rookiecv/MinoriFujideraMinatonoKanojo.jpg",
+        "appearances": [
+          {
+            "animeTitle": "얼음성벽",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "아카네 이야기",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "카도쿠라 리사",
+        "charimg": "image/rookiecv/MinoriFujideraRisaKadokura.jpg",
+        "appearances": [
+          {
+            "animeTitle": "아카네 이야기",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "고스트 콘서트: missing Songs",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "아이바 세리아",
+        "charimg": "image/rookiecv/MinoriFujideraSeriaAiba.jpg",
+        "appearances": [
+          {
+            "animeTitle": "고스트 콘서트: missing Songs",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "극장판 비밀의 아이프리 피어나는 바즈리움 라이브!",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "아오조라 히마리",
+        "charimg": "image/rookiecv/MinoriFujideraHimariAozora.jpg",
+        "appearances": [
+          {
+            "animeTitle": "극장판 비밀의 아이프리 피어나는 바즈리움 라이브!",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "부탁해 아이프리",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "아타미 나나",
+        "charimg": "image/rookiecv/MinoriFujideraNanaAtami.jpg",
+        "appearances": [
+          {
+            "animeTitle": "부탁해 아이프리",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "피구여왕 단코",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "유우키 이로하",
+        "charimg": "image/rookiecv/MinoriFujideraIrohaYuuki.jpg",
+        "appearances": [
+          {
+            "animeTitle": "피구여왕 단코",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      }
+    ]
+  },
+  "Seena Hoshiki": {
+    "id": 172100,
+    "name": "호시키 세에나",
+    "rank": 20,
+    "debutYear": 2020,
+    "score": 72,
+    "scoreBreakdown": {
+      "careerRecency": 0,
+      "currentYearWorks": 22,
+      "priorWorks": 10,
+      "recentGrowth": 17,
+      "characterRecognition": 13,
+      "mediaExposure": 10
+    },
+    "stats": {
+      "totalWorks": 7,
+      "currentYearWorks": 3,
+      "mainWorks": 2,
+      "supportingWorks": 1,
+      "yearsActive": 7,
+      "maxCharacterFavourites": 1832,
+      "mediaExposure": 10
+    },
+    "cvimg": "image/rookiecv/cv/SeenaHoshiki.jpg",
+    "characters": [
+      {
+        "animeTitle": "니디 걸 오버도즈",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "네치카 님",
+        "charimg": "image/rookiecv/SeenaHoshikiNechikasama.jpg",
+        "appearances": [
+          {
+            "animeTitle": "니디 걸 오버도즈",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "슈퍼 뒤에서 담배 피우는 두 사람",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "야마다",
+        "charimg": "image/rookiecv/SeenaHoshikiYamada.jpg",
+        "appearances": [
+          {
+            "animeTitle": "슈퍼 뒤에서 담배 피우는 두 사람",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "하나오리 양은 전생해서도 싸움이 하고 싶어",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "사츠키 마코",
+        "charimg": "image/rookiecv/SeenaHoshikiMakoSatsuki.jpg",
+        "appearances": [
+          {
+            "animeTitle": "하나오리 양은 전생해서도 싸움이 하고 싶어",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      }
+    ]
+  },
+  "Rei Ichinomiya": {
+    "id": 363987,
+    "name": "이치노미야 레이",
+    "rank": 21,
+    "debutYear": 2026,
+    "score": 72,
+    "scoreBreakdown": {
+      "careerRecency": 15,
+      "currentYearWorks": 16,
+      "priorWorks": 10,
+      "recentGrowth": 12,
+      "characterRecognition": 10,
+      "mediaExposure": 9
+    },
+    "stats": {
+      "totalWorks": 2,
+      "currentYearWorks": 2,
+      "mainWorks": 1,
+      "supportingWorks": 1,
+      "yearsActive": 1,
+      "maxCharacterFavourites": 369,
+      "mediaExposure": 9
+    },
+    "cvimg": "image/rookiecv/cv/ReiIchinomiya.jpg",
+    "characters": [
+      {
+        "animeTitle": "아름다운 초저녁달",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "타키구치 요이",
+        "charimg": "image/rookiecv/ReiIchinomiyaYoiTakiguchi.jpg",
+        "appearances": [
+          {
+            "animeTitle": "아름다운 초저녁달",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "아카네 이야기",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "오사나이 유카",
+        "charimg": "image/rookiecv/ReiIchinomiyaYukaOsanai.jpg",
+        "appearances": [
+          {
+            "animeTitle": "아카네 이야기",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      }
+    ]
+  },
+  "Natsumi Kawaida": {
+    "id": 151445,
+    "name": "카와이다 나츠미",
+    "rank": 22,
+    "debutYear": 2019,
+    "score": 71,
+    "scoreBreakdown": {
+      "careerRecency": 0,
+      "currentYearWorks": 27,
+      "priorWorks": 10,
+      "recentGrowth": 17,
+      "characterRecognition": 9,
+      "mediaExposure": 8
+    },
+    "stats": {
+      "totalWorks": 27,
+      "currentYearWorks": 7,
+      "mainWorks": 3,
+      "supportingWorks": 4,
+      "yearsActive": 8,
+      "maxCharacterFavourites": 145,
+      "mediaExposure": 8
+    },
+    "cvimg": "image/rookiecv/cv/NatsumiKawaida.jpg",
+    "characters": [
+      {
+        "animeTitle": "아름다운 그대에게",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "카구라자카 토모미",
+        "charimg": "image/rookiecv/NatsumiKawaidaTamamiKagurazaka.jpg",
+        "appearances": [
+          {
+            "animeTitle": "아름다운 그대에게",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "얼음성벽",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "아타가와 아키네",
+        "charimg": "image/rookiecv/NatsumiKawaidaAkineAtagawa.jpg",
+        "appearances": [
+          {
+            "animeTitle": "얼음성벽",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "마오",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "키바 나노카",
+        "charimg": "image/rookiecv/NatsumiKawaidaNanokaKiba.jpg",
+        "appearances": [
+          {
+            "animeTitle": "마오",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "20세기 전기 목록",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "오오쿠라 케이트",
+        "charimg": "image/rookiecv/NatsumiKawaidaKateOokura.jpg",
+        "appearances": [
+          {
+            "animeTitle": "20세기 전기 목록",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "못 미더운 악녀입니다만",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "주혜월",
+        "charimg": "image/rookiecv/NatsumiKawaidaKeigetsuShu.jpg",
+        "appearances": [
+          {
+            "animeTitle": "못 미더운 악녀입니다만",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "선더 3",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "츠바메",
+        "charimg": "image/rookiecv/NatsumiKawaidaTsubame.jpg",
+        "appearances": [
+          {
+            "animeTitle": "선더 3",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "하늘은 붉은 강가",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "류이",
+        "charimg": "image/rookiecv/NatsumiKawaidaRyui.jpg",
+        "appearances": [
+          {
+            "animeTitle": "하늘은 붉은 강가",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      }
+    ]
+  },
+  "Yukari Anzai": {
+    "id": 128650,
+    "name": "안자이 유카리",
+    "rank": 23,
+    "debutYear": 2018,
+    "score": 71,
+    "scoreBreakdown": {
+      "careerRecency": 0,
+      "currentYearWorks": 25,
+      "priorWorks": 10,
+      "recentGrowth": 17,
+      "characterRecognition": 11,
+      "mediaExposure": 8
+    },
+    "stats": {
+      "totalWorks": 19,
+      "currentYearWorks": 4,
+      "mainWorks": 1,
+      "supportingWorks": 3,
+      "yearsActive": 9,
+      "maxCharacterFavourites": 633,
+      "mediaExposure": 8
+    },
+    "cvimg": "image/rookiecv/cv/YukariAnzai.jpg",
+    "characters": [
+      {
+        "animeTitle": "내가 연인이 될 수 있을 리 없잖아, 무리무리! (※무리가 아니었다?!) ~넥스트 샤인!~",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "세나 아지사이",
+        "charimg": "image/rookiecv/YukariAnzaiAjisaiSena.jpg",
+        "appearances": [
+          {
+            "animeTitle": "내가 연인이 될 수 있을 리 없잖아, 무리무리! (※무리가 아니었다?!) ~넥스트 샤인!~",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "힘내라! 나카무라 군!!",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "사카모토 하나",
+        "charimg": "image/rookiecv/YukariAnzaiHanaSakamoto.jpg",
+        "appearances": [
+          {
+            "animeTitle": "힘내라! 나카무라 군!!",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "황천의 츠가이",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "아자미",
+        "charimg": "image/rookiecv/YukariAnzaiAzami.jpg",
+        "appearances": [
+          {
+            "animeTitle": "황천의 츠가이",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "우리 남동생들이 죄송합니다",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "타카라기 메구미",
+        "charimg": "image/rookiecv/YukariAnzaiMegumiHoshou.jpg",
+        "appearances": [
+          {
+            "animeTitle": "우리 남동생들이 죄송합니다",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      }
+    ]
+  },
+  "Misato Matsuoka": {
+    "id": 149680,
+    "name": "마츠오카 미사토",
+    "rank": 24,
+    "debutYear": 2020,
+    "score": 70,
+    "scoreBreakdown": {
+      "careerRecency": 0,
+      "currentYearWorks": 27,
+      "priorWorks": 10,
+      "recentGrowth": 17,
+      "characterRecognition": 9,
+      "mediaExposure": 7
+    },
+    "stats": {
+      "totalWorks": 42,
+      "currentYearWorks": 13,
+      "mainWorks": 1,
+      "supportingWorks": 12,
+      "yearsActive": 7,
+      "maxCharacterFavourites": 152,
+      "mediaExposure": 7
+    },
+    "cvimg": "image/rookiecv/cv/MisatoMatsuoka.jpg",
+    "characters": [
+      {
+        "animeTitle": "타몬 군 지금 어느 쪽?!",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "이노우에 아스카",
+        "charimg": "image/rookiecv/MisatoMatsuokaAsukaInoue.jpg",
+        "appearances": [
+          {
+            "animeTitle": "타몬 군 지금 어느 쪽?!",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "불꽃 소방대 3장",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "코낭고",
+        "charimg": "image/rookiecv/MisatoMatsuokaKonyango.jpg",
+        "appearances": [
+          {
+            "animeTitle": "불꽃 소방대 3장",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "오틸리에 포켈피",
+        "charimg": "image/rookiecv/MisatoMatsuokaOttilieFohkelpi.jpg",
+        "appearances": [
+          {
+            "animeTitle": "\"너 따위가 마왕을 이길 수 있다고 생각하지 마\"라며 용사 파티에서 추방되었으니 왕도에서 멋대로 살고 싶다",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "담배 고양이 미니",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "야쿠네코",
+        "charimg": "image/rookiecv/MisatoMatsuokaYakukoEtsushimaru.jpg",
+        "appearances": [
+          {
+            "animeTitle": "담배 고양이 미니",
+            "year": 2026,
+            "role": "SUPPORTING"
+          },
+          {
+            "animeTitle": "담배 고양이",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "전생했더니 슬라임이었던 건에 대하여 4기",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "모스",
+        "charimg": "image/rookiecv/MisatoMatsuokaMoss.jpg",
+        "appearances": [
+          {
+            "animeTitle": "전생했더니 슬라임이었던 건에 대하여 4기",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "마계학교 이루마군 4기",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "갸리",
+        "charimg": "image/rookiecv/MisatoMatsuokaGyari.jpg",
+        "appearances": [
+          {
+            "animeTitle": "마계학교 이루마군 4기",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "춘하추동 대행자 봄의 춤",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "나가츠키 레이코",
+        "charimg": "image/rookiecv/MisatoMatsuokaReikoNagatsuki.jpg",
+        "appearances": [
+          {
+            "animeTitle": "춘하추동 대행자 봄의 춤",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "초3 아시베 QQ고마짱",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "아시야 아시베",
+        "charimg": "image/rookiecv/MisatoMatsuokaAshibeAshiya.jpg",
+        "appearances": [
+          {
+            "animeTitle": "초3 아시베 QQ고마짱",
+            "year": 2026,
+            "role": "MAIN"
+          }
+        ]
+      },
+      {
+        "animeTitle": "공각기동대 THE GHOST IN THE SHELL",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "28번",
+        "charimg": "image/rookiecv/MisatoMatsuoka28ban.jpg",
+        "appearances": [
+          {
+            "animeTitle": "공각기동대 THE GHOST IN THE SHELL",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "영화 명탐정 프리큐어! 신비로운 정원과 두 사람의 비밀",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "사쿠라 우타",
+        "charimg": "image/rookiecv/MisatoMatsuokaUtaSakura.jpg",
+        "appearances": [
+          {
+            "animeTitle": "영화 명탐정 프리큐어! 신비로운 정원과 두 사람의 비밀",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "하늘은 붉은 강가",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "샤라",
+        "charimg": "image/rookiecv/MisatoMatsuokaShala.jpg",
+        "appearances": [
+          {
+            "animeTitle": "하늘은 붉은 강가",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "리본 히어로",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "나즈나",
+        "charimg": "image/rookiecv/MisatoMatsuokaNazuna.jpg",
+        "appearances": [
+          {
+            "animeTitle": "리본 히어로",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      }
+    ]
+  },
+  "Reo Osanai": {
+    "id": 289560,
+    "name": "오사나이 레오",
+    "rank": 25,
+    "debutYear": 2023,
+    "score": 70,
+    "scoreBreakdown": {
+      "careerRecency": 11,
+      "currentYearWorks": 27,
+      "priorWorks": 10,
+      "recentGrowth": 7,
+      "characterRecognition": 7,
+      "mediaExposure": 8
+    },
+    "stats": {
+      "totalWorks": 13,
+      "currentYearWorks": 5,
+      "mainWorks": 1,
+      "supportingWorks": 4,
+      "yearsActive": 4,
+      "maxCharacterFavourites": 40,
+      "mediaExposure": 8
+    },
+    "cvimg": "image/rookiecv/cv/ReoOsanai.jpg",
+    "characters": [
+      {
+        "animeTitle": "아르네의 사건부",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "다이애나",
+        "charimg": "image/rookiecv/ReoOsanaiDiana.jpg",
+        "appearances": [
+          {
+            "animeTitle": "아르네의 사건부",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "이세계 유유자적 농가 2",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "로아쥬 마몬로즈",
+        "charimg": "image/rookiecv/ReoOsanaiLoage.jpg",
+        "appearances": [
+          {
+            "animeTitle": "이세계 유유자적 농가 2",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "그로우 업 쇼 ~해바라기 서커스단~",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "아가노 이마리",
+        "charimg": "image/rookiecv/ReoOsanaiImariAgano.jpg",
+        "appearances": [
+          {
+            "animeTitle": "그로우 업 쇼 ~해바라기 서커스단~",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "레이와의 다라 씨",
+        "year": 2026,
+        "role": "SUPPORTING",
+        "charName": "시노하라 코즈에",
+        "charimg": "image/rookiecv/ReoOsanaiKozueShinohara.jpg",
+        "appearances": [
+          {
+            "animeTitle": "레이와의 다라 씨",
+            "year": 2026,
+            "role": "SUPPORTING"
+          }
+        ]
+      },
+      {
+        "animeTitle": "낙제 현자의 학원 무쌍 ~두 번째 전생, S랭크 치트 마술사 모험록~",
+        "year": 2026,
+        "role": "MAIN",
+        "charName": "아나스타샤 블라노바",
+        "charimg": "image/rookiecv/ReoOsanaiAnastasia.jpg",
+        "appearances": [
+          {
+            "animeTitle": "낙제 현자의 학원 무쌍 ~두 번째 전생, S랭크 치트 마술사 모험록~",
+            "year": 2026,
+            "role": "MAIN"
           }
         ]
       }

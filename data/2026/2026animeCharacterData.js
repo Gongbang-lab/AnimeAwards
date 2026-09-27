@@ -15566,7 +15566,7 @@ var CharacterData_2026 = [
     },
     {
       "characterId": 396049,
-      "name": "湊の彼女",
+      "name": "미나토의 전 여자친구",
       "gender": "female",
       "cvId": 206623,
       "cv": "후지데라 미노리",
@@ -25021,7 +25021,7 @@ var CharacterData_2026 = [
     },
     {
       "characterId": 382222,
-      "name": "袰主水樹",
+      "name": "호로누시 미즈키",
       "gender": "female",
       "cvId": 164145,
       "cv": "이즈미 후카",
@@ -30221,7 +30221,7 @@ var CharacterData_2026 = [
     },
     {
       "characterId": 405915,
-      "name": "珊瑚",
+      "name": "산고",
       "gender": "female",
       "cvId": 377812,
       "cv": "타치바나 메이",
