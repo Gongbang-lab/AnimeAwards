@@ -3759,5 +3759,24 @@ var AnimeSongs_2026 = [
       "youtube": "https://youtu.be/oDsll0GzhpY?si=DtAuR9RtXKIRJyhH"
     }
   ]
-}
+},
+  {
+    "id": 61469,
+    "year" : 2026,
+    "quarter": "3분기",
+    "songs": [
+      {
+        "type": "op",
+        "title": "SPIN",
+        "artist": "Kroi",
+        "youtube": "https://youtu.be/6UF_qprQiu0?si=j9veJDNm3SyeAR_H"
+      },
+      {
+        "type": "ed",
+        "title": "죽느냐 사느냐",
+        "artist": "치바 유우키",
+        "youtube": "https://youtu.be/BfZD2dAqt6k?si=SnzpV-7lKsmY8-ZL"
+      }
+    ]
+  }
 ]
