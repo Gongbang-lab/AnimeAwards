@@ -9,10 +9,10 @@ const coupleState = {
 const SeasonFilteredAnimeList = SeasonFilter.filterAnimeList(AnimeList);
 
 // --- DOM 요소 ---
-const searchInput = document.getElementById('searchInput');
-const searchBtn = document.getElementById('searchBtn');
-const suggestionList = document.getElementById('suggestionList'); // 연관검색어 리스트
 const mainArea = document.getElementById('mainArea');
+const animePickerSection = document.querySelector('.anime-picker-section');
+const animePickerSidebar = document.getElementById('anime-picker-sidebar');
+const animeCardGrid = document.getElementById('animeCardGrid');
 const nomineeList = document.getElementById('nomineeList');
 const params = new URLSearchParams(window.location.search);
 const awardName = params.get("awardName");
@@ -43,23 +43,7 @@ const confirmAwardBtn = document.getElementById('confirmAwardBtn');
 window.onload = function() {
     const stepTitleEl = document.getElementById("step-title");
     if (stepTitleEl) stepTitleEl.textContent = `${SeasonFilter.toDisplayAwardName(awardName)} 부문`;
-
-    // 검색 관련
-    searchBtn.addEventListener('click', () => performSearch(searchInput.value));
-    searchInput.addEventListener('input', handleSearchInput); // 입력 시 연관검색어
-    searchInput.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') {
-            closeSuggestions();
-            performSearch(searchInput.value);
-        }
-    });
-
-    // 외부 클릭 시 연관검색어 닫기
-    document.addEventListener('click', (e) => {
-        if (!e.target.closest('.search-box') && !e.target.closest('.suggestions-box')) {
-            closeSuggestions();
-        }
-    });
+    renderAnimeCards();
 
     // ✅ 중복 제거: closeCharModal.onclick 한 번만 정의
     if (closeCharModal) {
@@ -80,55 +64,102 @@ window.onload = function() {
     finalConfirmBtn.onclick = saveAndGoMain;
 };
 
-// --- 1. 검색 및 연관 검색어 로직 ---
-// ✅ 삭제: 존재하지 않는 AnimeByQuarter를 참조하고 어디서도 호출되지 않던 getAllAnimeList() 제거
+// --- 1. 작품 아코디언 및 텍스트 카드 ---
+const QUARTER_ORDER = ['1분기', '2분기', '3분기', '4분기', '변칙 편성', '기타'];
+const DAY_LABELS = {
+    Mondays: '월요일', Tuesdays: '화요일', Wednesdays: '수요일', Thursdays: '목요일',
+    Fridays: '금요일', Saturdays: '토요일', Sundays: '일요일',
+    Anomaly: '변칙 편성', Web: '웹', Unknown: '기타'
+};
+const DAY_ORDER = ['Mondays', 'Tuesdays', 'Wednesdays', 'Thursdays', 'Fridays', 'Saturdays', 'Sundays', 'Anomaly', 'Web', 'Unknown'];
 
-// 검색어 입력 시 호출
-function handleSearchInput() {
-    const query = searchInput.value.trim().toLowerCase();
-    suggestionList.innerHTML = '';
+function renderAnimeCards() {
+    if (!animeCardGrid) return;
+    animeCardGrid.replaceChildren();
 
-    if (query.length === 0) {
-        closeSuggestions();
-        return;
-    }
+    const animeByQuarter = SeasonFilteredAnimeList.reduce((groups, anime) => {
+        const quarter = anime.quarter || '기타';
+        (groups[quarter] ||= []).push(anime);
+        return groups;
+    }, {});
+    const quarterOrder = [...QUARTER_ORDER, ...Object.keys(animeByQuarter).filter(q => !QUARTER_ORDER.includes(q))];
+    const selectedQuarter = SeasonFilter.getSelectedSeason().quarter;
+    const showQuarterAccordion = !selectedQuarter || selectedQuarter === '모든 분기';
 
-    const matches = SeasonFilteredAnimeList.filter(anime =>
-        anime.title.toLowerCase().includes(query)
-    );
+    quarterOrder.forEach(quarter => {
+        const quarterAnime = animeByQuarter[quarter];
+        if (!quarterAnime?.length) return;
 
-    if (matches.length > 0) {
-        suggestionList.classList.remove('hidden');
-        matches.forEach(anime => {
-            const li = document.createElement('li');
-            li.textContent = anime.title;
-            li.onclick = () => {
-                searchInput.value = anime.title;
-                closeSuggestions();
-                openCharacterPopup(anime.id, anime.title);
-            };
-            suggestionList.appendChild(li);
+        let quarterSection = null;
+        let quarterContent = animeCardGrid;
+        if (showQuarterAccordion) {
+            quarterSection = document.createElement('section');
+            quarterSection.className = 'quarter-section';
+            const quarterButton = document.createElement('button');
+            quarterButton.type = 'button';
+            quarterButton.className = 'quarter-btn';
+            quarterButton.innerHTML = `<span>${quarter}</span><span>▼</span>`;
+            quarterContent = document.createElement('div');
+            quarterContent.className = 'quarter-content hidden';
+            quarterButton.addEventListener('click', () => {
+                const willOpen = quarterContent.classList.contains('hidden');
+                quarterContent.classList.toggle('hidden', !willOpen);
+                quarterButton.classList.toggle('active', willOpen);
+            });
+            quarterSection.append(quarterButton, quarterContent);
+        }
+
+        const animeByDay = quarterAnime.reduce((groups, anime) => {
+            const day = anime.day || 'Unknown';
+            (groups[day] ||= []).push(anime);
+            return groups;
+        }, {});
+        const dayOrder = [...DAY_ORDER, ...Object.keys(animeByDay).filter(day => !DAY_ORDER.includes(day))];
+
+        dayOrder.forEach(day => {
+            const dayAnime = animeByDay[day];
+            if (!dayAnime?.length) return;
+            const daySection = document.createElement('div');
+            const dayButton = document.createElement('button');
+            dayButton.type = 'button';
+            dayButton.className = 'day-btn';
+            dayButton.innerHTML = `<span>${DAY_LABELS[day] || day}</span><span>▼</span>`;
+            const dayContent = document.createElement('div');
+            dayContent.className = 'day-content hidden';
+            dayButton.addEventListener('click', () => {
+                const willOpen = dayContent.classList.contains('hidden');
+                dayContent.classList.toggle('hidden', !willOpen);
+                dayButton.classList.toggle('active', willOpen);
+            });
+
+            dayAnime.forEach(anime => {
+                const card = document.createElement('button');
+                card.type = 'button';
+                card.className = 'anime-title-card';
+                card.textContent = anime.title;
+                card.title = `${anime.title} 캐릭터 선택`;
+                card.addEventListener('click', () => openCharacterPopup(anime.id, anime.title));
+                dayContent.appendChild(card);
+            });
+            daySection.append(dayButton, dayContent);
+            quarterContent.appendChild(daySection);
         });
-    } else {
-        closeSuggestions();
+        if (showQuarterAccordion) animeCardGrid.appendChild(quarterSection);
+    });
+
+    if (!SeasonFilteredAnimeList.length) {
+        const emptyMessage = document.createElement('p');
+        emptyMessage.className = 'anime-picker-empty';
+        emptyMessage.textContent = '표시할 애니메이션이 없습니다.';
+        animeCardGrid.appendChild(emptyMessage);
     }
 }
 
-function closeSuggestions() {
-    suggestionList.classList.add('hidden');
-    suggestionList.innerHTML = '';
-}
-
-function performSearch(queryText) {
-    const query = queryText.trim().toLowerCase();
-    if (!query) return;
-
-    const anime = SeasonFilteredAnimeList.find(a => a.title.toLowerCase().includes(query));
-
-    if (anime) {
-        openCharacterPopup(anime.id, anime.title);
+function moveAnimePickerToSidebar() {
+    if (coupleState.nominees.length > 0) {
+        animePickerSidebar.appendChild(animePickerSection);
     } else {
-        alert("검색 결과가 없습니다.");
+        mainArea.insertBefore(animePickerSection, nomineeList);
     }
 }
 
@@ -221,11 +252,9 @@ function registerCouple() {
 
     coupleState.nominees.push(newCouple);
     charModal.classList.add('hidden');
-
-    mainArea.classList.add('has-candidates');
+    moveAnimePickerToSidebar();
     renderNominees();
 
-    searchInput.value = '';
 }
 
 function renderNominees() {

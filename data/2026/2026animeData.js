@@ -785,7 +785,7 @@ var AnimeList_2026 = [
     "year": 2026,
     "quarter": "1분기",
     "title": "하이스쿨! 기면조",
-    "thumbnail": "image/animeimg/2026/Q1/하이스쿨!_기면조.webp",
+    "thumbnail": "image/animeimg/2026/Q1/하이스쿨! 기면조.webp",
     "day": "Fridays",
     "episodes": 12,
     "studio": [

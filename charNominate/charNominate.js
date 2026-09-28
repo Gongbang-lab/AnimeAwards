@@ -80,32 +80,35 @@ function renderStep1(searchTerm = "") {
 
     const hierarchy = groupByHierarchy(flatData);
     const isSearching = searchTerm.trim() !== "";
+    const selectedQuarter = SeasonFilter.getSelectedSeason().quarter;
+    const showQuarterAccordion = !selectedQuarter || selectedQuarter === "모든 분기";
 
     Object.entries(hierarchy).forEach(([qName, days]) => {
-        const qSection = document.createElement("div");
-        qSection.className = "quarter-section";
-
-        const qBtn = document.createElement("button");
-        qBtn.className = "quarter-btn";
-        
-        const qContent = document.createElement("div");
-        qContent.className = "quarter-content";
-        
-        if (isSearching) {
-            qContent.style.display = "block";
-            qBtn.classList.add("active");
-            qBtn.innerHTML = `<span>${QUARTER_MAP[qName] || qName}</span> <span>▲</span>`;
-        } else {
-            qContent.style.display = "none";
-            qBtn.innerHTML = `<span>${QUARTER_MAP[qName] || qName}</span> <span>▼</span>`;
+        let qSection = null;
+        let qContent = left;
+        if (showQuarterAccordion) {
+            qSection = document.createElement("div");
+            qSection.className = "quarter-section";
+            const qBtn = document.createElement("button");
+            qBtn.className = "quarter-btn";
+            qContent = document.createElement("div");
+            qContent.className = "quarter-content";
+            if (isSearching) {
+                qContent.style.display = "block";
+                qBtn.classList.add("active");
+                qBtn.innerHTML = `<span>${QUARTER_MAP[qName] || qName}</span> <span>▲</span>`;
+            } else {
+                qContent.style.display = "none";
+                qBtn.innerHTML = `<span>${QUARTER_MAP[qName] || qName}</span> <span>▼</span>`;
+            }
+            qBtn.onclick = () => {
+                const isOpen = qContent.style.display === "block";
+                qContent.style.display = isOpen ? "none" : "block";
+                qBtn.classList.toggle("active", !isOpen);
+                qBtn.querySelector("span:last-child").textContent = isOpen ? "▼" : "▲";
+            };
+            qSection.append(qBtn, qContent);
         }
-
-        qBtn.onclick = () => {
-            const isOpen = qContent.style.display === "block";
-            qContent.style.display = isOpen ? "none" : "block";
-            qBtn.classList.toggle("active", !isOpen);
-            qBtn.querySelector("span:last-child").textContent = isOpen ? "▼" : "▲";
-        };
 
         Object.entries(days).forEach(([dName, animes]) => {
             const dBtn = document.createElement("button");
@@ -194,9 +197,7 @@ function renderStep1(searchTerm = "") {
             qContent.appendChild(dContent);
         });
 
-        qSection.appendChild(qBtn);
-        qSection.appendChild(qContent);
-        left.appendChild(qSection);
+        if (showQuarterAccordion) left.appendChild(qSection);
     });
 
     window.NominateCommon.applyVoteBadges();

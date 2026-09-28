@@ -121,6 +121,8 @@ function renderFilteredList(query) {
     listContainer.innerHTML = ""; 
     const mergedData = getMergedSongData(songNominateState.theme);
     const isSearching = query.length > 0;
+    const selectedQuarter = SeasonFilter.getSelectedSeason().quarter;
+    const showQuarterAccordion = !selectedQuarter || selectedQuarter === "모든 분기";
 
     Object.entries(mergedData).forEach(([quarter, songs]) => {
         const filteredSongs = songs.filter(song => 
@@ -130,20 +132,22 @@ function renderFilteredList(query) {
         );
 
         if (filteredSongs.length > 0) {
-            const quarterSection = document.createElement("div");
-            quarterSection.className = "quarter-section";
-
-            const quarterBtn = document.createElement("button");
-            quarterBtn.className = `quarter-btn ${isSearching ? "active" : ""}`;
-            quarterBtn.innerHTML = `<span>${quarter}</span><i class="fas fa-chevron-down"></i>`;
-
-            const quarterContent = document.createElement("div");
-            quarterContent.className = `quarter-content ${isSearching ? "active" : ""}`;
-
-            quarterBtn.onclick = () => {
-                quarterBtn.classList.toggle("active");
-                quarterContent.classList.toggle("active");
-            };
+            let quarterSection = null;
+            let quarterContent = listContainer;
+            if (showQuarterAccordion) {
+                quarterSection = document.createElement("div");
+                quarterSection.className = "quarter-section";
+                const quarterBtn = document.createElement("button");
+                quarterBtn.className = `quarter-btn ${isSearching ? "active" : ""}`;
+                quarterBtn.innerHTML = `<span>${quarter}</span><i class="fas fa-chevron-down"></i>`;
+                quarterContent = document.createElement("div");
+                quarterContent.className = `quarter-content ${isSearching ? "active" : ""}`;
+                quarterBtn.onclick = () => {
+                    quarterBtn.classList.toggle("active");
+                    quarterContent.classList.toggle("active");
+                };
+                quarterSection.append(quarterBtn, quarterContent);
+            }
 
             const groupedByDay = {};
             filteredSongs.forEach(song => {
@@ -171,8 +175,7 @@ function renderFilteredList(query) {
                 quarterContent.append(dayBtn, dayList);
             });
 
-            quarterSection.append(quarterBtn, quarterContent);
-            listContainer.appendChild(quarterSection);
+            if (showQuarterAccordion) listContainer.appendChild(quarterSection);
         }
     });
     window.NominateCommon.applyVoteBadges();

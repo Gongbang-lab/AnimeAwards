@@ -92,46 +92,6 @@ body, html {
 /* 스크롤바 디자인 통일 */
 .preview-box::-webkit-scrollbar { width: 6px; }
 .preview-box::-webkit-scrollbar-thumb { background: #444; border-radius: 3px; }
-/* 4. 중앙 검색 영역 (Main Search) */
-.main-search-section {
-    width: 100%; max-width: 700px; text-align: center;
-    margin-bottom: 50px; transition: all 0.5s ease;
-}
-
-/* 후보가 등록되면 검색창이 상단으로 작게 이동하는 효과를 위한 클래스 */
-.content-area.has-candidates .main-search-section {
-    margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #333;
-}
-
-.search-logo {
-    font-size: 2.5rem; color: var(--gold); font-weight: 900;
-    margin-bottom: 30px;
-}
-.content-area.has-candidates .search-logo { display: none; }
-
-.search-wrapper { position: relative; width: 100%; }
-.search-box { display: flex; gap: 10px; width: 100%; }
-
-#searchInput {
-    flex: 1; padding: 18px 25px; background: #000; 
-    border: 2px solid var(--gold); border-radius: 8px;
-    color: white; font-size: 1.1rem; outline: none;
-}
-#searchBtn {
-    padding: 0 30px; background: var(--gold); color: #000;
-    border: none; border-radius: 8px; font-weight: bold; cursor: pointer;
-}
-
-/* 연관 검색어 (중앙 검색창용) */
-.suggestions-box {
-    position: absolute; top: 100%; left: 0; right: 0;
-    background: #222; border: 1px solid var(--gold); border-top: none;
-    z-index: 1000; list-style: none; border-radius: 0 0 8px 8px;
-    max-height: 250px; overflow-y: auto; text-align: left;
-}
-.suggestions-box li { padding: 15px 20px; cursor: pointer; border-bottom: 1px solid #333; }
-.suggestions-box li:hover { background: #333; color: var(--gold); }
-
 /* 5. 사이드바 및 버튼 */
 .sidebar { 
     flex: 2.5; background-color: #111; position: sticky; 
@@ -155,108 +115,83 @@ body, html {
     text-align: center;
 }
 
-/* 6. 후보 리스트 (그리드) */
-/* 검색 컨테이너 기본: 중앙 정렬 */
-.search-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+/* 작품 제목 카드 및 후보 리스트 */
+.anime-picker-section {
     width: 100%;
-    height: 100%; /* 초기에는 전체 높이 차지 */
-    transition: all 0.5s ease;
+    margin-bottom: 36px;
 }
-
-/* 후보가 등록되었을 때 (상단으로 이동) */
-.content-area.has-candidates .search-container {
-    height: auto;
-    margin-bottom: 40px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+.anime-picker-desc {
+    color: #aaa;
+    text-align: center;
+    margin-bottom: 24px;
 }
-
-.logo {
-    font-size: 3rem;
+.anime-card-grid {
+    display: block;
+    width: 100%;
+}
+.quarter-section { margin-bottom: 15px; border: 1px solid #333; border-radius: 8px; overflow: hidden; }
+.quarter-btn, .day-btn {
+    width: 100%; padding: 16px 20px; background: #1f1f1f; border: 0;
+    color: #eee; font-weight: 700; display: flex; justify-content: space-between;
+    cursor: pointer; transition: .2s; font-size: 1rem; text-align: left;
+}
+.quarter-btn:hover, .day-btn:hover { background: #2a2a2a; color: var(--gold); }
+.quarter-btn.active { border-bottom: 1px solid #333; color: var(--gold); }
+.quarter-content { background: #151515; }
+.day-btn { background: #151515; color: #aaa; padding-left: 30px; border-top: 1px solid #222; font-size: .95rem; }
+.day-btn.active { color: var(--gold); background: #1a1a1a; }
+.day-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 14px;
+    padding: 16px;
+}
+.anime-title-card {
+    min-height: 88px;
+    padding: 16px;
+    color: #eee;
+    background: #242424;
+    border: 1px solid #444;
+    border-radius: 10px;
+    font-size: .98rem;
+    font-weight: 700;
+    line-height: 1.5;
+    word-break: keep-all;
+    cursor: pointer;
+    transition: border-color .2s, background .2s, transform .2s, color .2s;
+}
+.anime-title-card:hover,
+.anime-title-card:focus-visible {
     color: var(--gold);
-    margin-bottom: 30px;
-    font-weight: 900;
-    transition: all 0.5s ease;
-}
-
-/* 후보가 생기면 로고 크기 축소 또는 숨김 */
-.content-area.has-candidates .logo {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-}
-
-.search-wrapper {
-    width: 100%;
-    max-width: 600px;
-    position: relative;
-}
-
-.search-box {
-    display: flex;
-    gap: 10px;
-}
-
-#searchInput {
-    flex: 1;
-    padding: 15px 20px;
-    background: #000;
-    border: 2px solid var(--gold);
-    border-radius: 8px;
-    color: white;
-    font-size: 1.1rem;
+    background: #2d2a20;
+    border-color: var(--gold);
+    transform: translateY(-2px);
     outline: none;
 }
-
-#searchBtn {
-    padding: 0 25px;
-    background: var(--gold);
-    color: #000;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#searchBtn:hover {
-    background: var(--dark-gold);
-}
-
-/* 연관 검색어 박스 */
-.suggestions-box {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: #222;
-    border: 1px solid var(--gold);
-    border-top: none;
-    z-index: 1000;
-    list-style: none;
-    border-radius: 0 0 8px 8px;
-    max-height: 250px;
-    overflow-y: auto;
-}
-
-.suggestions-box li {
-    padding: 12px 20px;
-    cursor: pointer;
-    border-bottom: 1px solid #333;
-}
-
-.suggestions-box li:hover {
-    background: #333;
-    color: var(--gold);
-}
+.anime-picker-empty { padding: 24px; color: #aaa; text-align: center; }
 
 .nominee-list {
     display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 25px; width: 100%;
 }
+.anime-picker-sidebar {
+    flex: 1;
+    min-height: 0;
+    width: 100%;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #1a1a1a #111;
+}
+.anime-picker-sidebar::-webkit-scrollbar { width: 8px; }
+.anime-picker-sidebar::-webkit-scrollbar-track { background: #111; }
+.anime-picker-sidebar::-webkit-scrollbar-thumb { background: #1a1a1a; border-radius: 8px; }
+.anime-picker-sidebar::-webkit-scrollbar-thumb:hover { background: #222; }
+.sidebar .anime-picker-section { margin-bottom: 12px; }
+.sidebar .anime-picker-desc { font-size: .8rem; line-height: 1.5; margin-bottom: 12px; }
+.sidebar .quarter-btn, .sidebar .day-btn { padding: 11px 10px; font-size: .85rem; }
+.sidebar .day-btn { padding-left: 16px; }
+.sidebar .day-content { grid-template-columns: 1fr; gap: 8px; padding: 9px; }
+.sidebar .anime-title-card { min-height: 58px; padding: 10px; font-size: .82rem; }
 
 .couple-card {
     background: var(--gray); border: 2px solid transparent; border-radius: 12px;

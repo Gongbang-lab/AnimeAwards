@@ -51,36 +51,34 @@ function renderMemeGrid() {
     });
 
     grid.innerHTML = "";
+    const selectedQuarter = SeasonFilter.getSelectedSeason().quarter;
+    const showQuarterAccordion = !selectedQuarter || selectedQuarter === "모든 분기";
 
     Object.entries(groups).forEach(([quarter, memes], idx) => {
-        const section = document.createElement("div");
-        section.className = "quarter-section";
-
-        const btn = document.createElement("button");
-        btn.className = "quarter-btn";
-        btn.innerHTML = `
-            <span>${quarter}</span>
-            <span>▼</span>
-        `;
-
-        const qContent = document.createElement("div");
-        qContent.className = "quarter-content";
-        qContent.style.display = "none";
+        let section = null;
+        let qContent = grid;
+        if (showQuarterAccordion) {
+            section = document.createElement("div");
+            section.className = "quarter-section";
+            const btn = document.createElement("button");
+            btn.className = "quarter-btn";
+            btn.innerHTML = `<span>${quarter}</span><span>▼</span>`;
+            qContent = document.createElement("div");
+            qContent.className = "quarter-content";
+            qContent.style.display = "none";
+            btn.onclick = () => {
+                const isVisible = qContent.style.display === "block";
+                qContent.style.display = isVisible ? "none" : "block";
+                btn.classList.toggle("active", !isVisible);
+            };
+            section.append(btn, qContent);
+        }
 
         const memeGrid = document.createElement("div");
         memeGrid.className = "meme-vote-grid";
         memes.forEach(meme => memeGrid.appendChild(createMemeCard(meme)));
         qContent.appendChild(memeGrid);
-
-        btn.onclick = () => {
-            const isVisible = qContent.style.display === "block";
-            qContent.style.display = isVisible ? "none" : "block";
-            btn.classList.toggle("active", !isVisible);
-        };
-
-        section.appendChild(btn);
-        section.appendChild(qContent);
-        grid.appendChild(section);
+        if (showQuarterAccordion) grid.appendChild(section);
     });
     window.NominateCommon.applyVoteBadges();
 }

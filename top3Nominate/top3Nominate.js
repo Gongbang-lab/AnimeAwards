@@ -66,6 +66,8 @@ function renderStep1(searchTerm = "") {
 
     const isSearching = searchTerm.trim() !== "";
     const lowerTerm = searchTerm.toLowerCase().trim();
+    const selectedQuarter = SeasonFilter.getSelectedSeason().quarter;
+    const showQuarterAccordion = !selectedQuarter || selectedQuarter === "모든 분기";
 
     let filteredData = top3State.allAnime;
     if (isSearching) {
@@ -91,28 +93,29 @@ function renderStep1(searchTerm = "") {
     });
 
     Object.keys(grouped).sort().forEach(q => {
-        const section = document.createElement('div');
-        section.className = 'quarter-section';
-        
-        const qBtn = document.createElement('button');
-        qBtn.className = 'quarter-btn';
-        
-        const qWrapper = document.createElement('div');
-        
-        if (isSearching) {
-            qWrapper.className = ''; 
-            qBtn.className = 'quarter-btn active';
-            qBtn.innerHTML = `<span>${q}</span> <span>▲</span>`;
-        } else {
-            qWrapper.className = 'hidden'; 
-            qBtn.innerHTML = `<span>${q}</span> <span>▼</span>`;
+        let section = null;
+        let qWrapper = display;
+        if (showQuarterAccordion) {
+            section = document.createElement('div');
+            section.className = 'quarter-section';
+            const qBtn = document.createElement('button');
+            qBtn.className = 'quarter-btn';
+            qWrapper = document.createElement('div');
+            if (isSearching) {
+                qWrapper.className = '';
+                qBtn.className = 'quarter-btn active';
+                qBtn.innerHTML = `<span>${q}</span> <span>▲</span>`;
+            } else {
+                qWrapper.className = 'hidden';
+                qBtn.innerHTML = `<span>${q}</span> <span>▼</span>`;
+            }
+            qBtn.onclick = () => {
+                qBtn.classList.toggle('active');
+                qWrapper.classList.toggle('hidden');
+                qBtn.querySelector('span:last-child').textContent = qWrapper.classList.contains('hidden') ? '▼' : '▲';
+            };
+            section.append(qBtn, qWrapper);
         }
-
-        qBtn.onclick = () => {
-            qBtn.classList.toggle('active');
-            qWrapper.classList.toggle('hidden');
-            qBtn.querySelector('span:last-child').textContent = qWrapper.classList.contains('hidden') ? '▼' : '▲';
-        };
 
         Object.keys(grouped[q]).forEach(day => {
             const dBtn = document.createElement('button');
@@ -144,9 +147,7 @@ function renderStep1(searchTerm = "") {
             qWrapper.appendChild(dContent);
         });
 
-        section.appendChild(qBtn);
-        section.appendChild(qWrapper);
-        display.appendChild(section);
+        if (showQuarterAccordion) display.appendChild(section);
     });
     
     updatePreview();

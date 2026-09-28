@@ -2,133 +2,336 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Anime Episode Data Builder (Multi-Staff)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Episode Data Collector</title>
     <style>
         :root { --primary: #4f46e5; --secondary: #10b981; --bg: #f8fafc; }
-        body { font-family: 'Pretendard', sans-serif; background: var(--bg); padding: 40px; color: #334155; }
-        .container { max-width: 900px; flex-direction: column; margin: 0 auto; display: flex;gap: 30px; }
-        .card { background: white; padding: 25px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
-        h2 { font-size: 1.25rem; margin-top: 0; color: var(--primary); border-left: 5px solid var(--primary); padding-left: 15px; margin-bottom: 25px; }
-        
-        .info-text { font-size: 0.85rem; color: #64748b; margin-bottom: 15px; }
-        .ep-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
-        .ep-table th { text-align: left; font-size: 0.85rem; color: #64748b; padding: 10px; border-bottom: 2px solid #f1f5f9; }
-        .ep-table td { padding: 8px; }
-        input { width: 100%; padding: 10px; border: 1px solid #e2e8f0; border-radius: 6px; box-sizing: border-box; font-size: 14px; }
-        input:focus { border-color: var(--primary); outline: none; box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.1); }
-
-        .btn-add { background: #f1f5f9; color: var(--primary); width: 100%; border: 2px dashed #cbd5e1; padding: 12px; border-radius: 8px; font-weight: bold; cursor: pointer; margin-bottom: 20px; }
-        .btn-gen { background: var(--primary); color: white; width: 100%; padding: 15px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; }
-        .btn-copy { background: var(--secondary); color: white; width: 100%; padding: 15px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; margin-top: 15px; }
-        .btn-remove { background: #fee2e2; color: #ef4444; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; }
-        
-        pre { background: #1e293b; color: #e2e8f0; padding: 20px; border-radius: 12px; height: 300px; overflow: auto; font-size: 13px; line-height: 1.6; margin: 0; }
-        .anime-id-section { margin-bottom: 25px; background: #f1f5f9; padding: 15px; border-radius: 10px; }
+        * { box-sizing: border-box; }
+        body { font-family: 'Pretendard', sans-serif; background: var(--bg); padding: 28px; color: #334155; }
+        .container { max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px; }
+        .card { background: white; padding: 24px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        h1 { color: #1e293b; margin: 0 0 8px; }
+        h2 { font-size: 1.2rem; margin: 0 0 16px; color: var(--primary); border-left: 5px solid var(--primary); padding-left: 12px; }
+        .info-text { font-size: .9rem; color: #64748b; line-height: 1.6; }
+        .id-row { display: flex; gap: 10px; align-items: end; margin: 18px 0; }
+        .id-row label { flex: 1; font-weight: 700; }
+        input { width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 14px; margin-top: 6px; }
+        input:focus { border-color: var(--primary); outline: none; box-shadow: 0 0 0 2px rgba(79,70,229,.1); }
+        button { border: 0; border-radius: 7px; padding: 11px 15px; font-weight: 700; cursor: pointer; }
+        button:disabled { opacity: .5; cursor: not-allowed; }
+        .btn-search { background: var(--primary); color: white; }
+        .btn-add { background: #eef2ff; color: var(--primary); width: 100%; border: 2px dashed #c7d2fe; margin: 12px 0; }
+        .btn-commit { background: var(--primary); color: white; width: 100%; padding: 14px; }
+        .btn-download { background: var(--secondary); color: white; width: 100%; margin-top: 12px; }
+        .btn-remove { background: #fee2e2; color: #ef4444; padding: 6px 9px; }
+        .status { padding: 10px 12px; border-radius: 7px; background: #f1f5f9; color: #475569; margin: 12px 0; line-height: 1.5; }
+        .status.error { background: #fef2f2; color: #b91c1c; }
+        .status.success { background: #ecfdf5; color: #047857; }
+        .table-wrap { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; min-width: 760px; }
+        th { text-align: left; font-size: .82rem; color: #64748b; padding: 8px; border-bottom: 2px solid #e2e8f0; }
+        td { padding: 6px; border-bottom: 1px solid #f1f5f9; }
+        td input { margin: 0; }
+        .saved-list { max-height: 300px; overflow: auto; border: 1px solid #e2e8f0; border-radius: 8px; }
+        .saved-row { display: grid; grid-template-columns: 90px 1fr 1fr 1fr; gap: 10px; padding: 10px 12px; border-bottom: 1px solid #e2e8f0; font-size: .9rem; }
+        .saved-row:last-child { border-bottom: 0; }
+        .saved-head { position: sticky; top: 0; background: #f8fafc; font-weight: 700; color: #64748b; }
+        .empty { padding: 18px; color: #64748b; text-align: center; }
+        pre { background: #1e293b; color: #e2e8f0; padding: 18px; border-radius: 10px; max-height: 360px; overflow: auto; font-size: 12px; line-height: 1.5; white-space: pre; }
+        @media(max-width:650px) { body { padding: 12px; } .card { padding: 16px; } .id-row { align-items: stretch; flex-direction: column; } .saved-row { grid-template-columns: 70px 1fr; } .saved-row span:nth-child(3), .saved-row span:nth-child(4) { grid-column: 2; } }
     </style>
 </head>
 <body>
-
 <div class="container">
     <div class="card">
-        <h2>🛠️ 에피소드 데이터 입력</h2>
-        <p class="info-text">💡 스태프가 여러 명일 경우 <strong>콤마(,)</strong>로 구분해서 입력하세요. (예: 홍길동, 김철수)</p>
-        
-        <div class="anime-id-section">
-            <label style="font-weight: bold; display: block; margin-bottom: 8px;">애니메이션 ID</label>
-            <input type="text" id="animeId" placeholder="예: 61886">
+        <h1>에피소드 데이터 추가 도구</h1>
+        <p class="info-text">기존 <code>2026animeEPData.js</code>를 불러와 ID별 저장된 에피소드를 확인하고, 새 에피소드만 이어서 추가합니다. 같은 회차 번호는 중복으로 넣지 않습니다.</p>
+        <div id="load-status" class="status">에피소드 데이터 파일을 불러오는 중입니다…</div>
+        <div class="id-row">
+            <button class="btn-search" id="select-file-btn" type="button">원본 2026animeEPData.js 선택</button>
+            <span id="file-handle-status" class="info-text">직접 저장하려면 프로젝트의 원본 파일을 선택해 주세요.</span>
         </div>
-
-        <table class="ep-table">
-            <thead>
-                <tr>
-                    <th style="width: 12%;">회차</th>
-                    <th style="width: 28%;">제목</th>
-                    <th style="width: 25%;">콘티 (쉼표 구분)</th>
-                    <th style="width: 25%;">연출 (쉼표 구분)</th>
-                    <th style="width: 10%;">관리</th>
-                </tr>
-            </thead>
-            <tbody id="epList">
-                <tr>
-                    <td><input type="text" class="ep-no" placeholder="1화"></td>
-                    <td><input type="text" class="ep-title" placeholder="제목"></td>
-                    <td><input type="text" class="ep-story" placeholder="이름1, 이름2"></td>
-                    <td><input type="text" class="ep-dir" placeholder="이름1, 이름2"></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
-
-        <button class="btn-add" onclick="addRow()">+ 다음 화 추가</button>
-        <button class="btn-gen" onclick="generateJSON()">JSON 생성하기</button>
+        <div class="id-row">
+            <label>애니메이션 ID<input id="animeId" inputmode="numeric" placeholder="예: 61886"></label>
+            <button class="btn-search" id="search-btn" type="button">저장된 에피소드 검색</button>
+        </div>
     </div>
 
     <div class="card">
-        <h2>📄 결과 (animeEPData.js용)</h2>
-        <pre id="output">// 결과가 여기에 출력됩니다.</pre>
-        <button class="btn-copy" onclick="copyCode()">코드 복사하기</button>
+        <h2>📚 현재 저장된 에피소드</h2>
+        <div id="saved-status" class="info-text">애니메이션 ID를 검색해 주세요.</div>
+        <div id="saved-list" class="saved-list"><div class="empty">검색 결과가 여기에 표시됩니다.</div></div>
+    </div>
+
+    <div class="card">
+        <h2>➕ 새 에피소드 입력</h2>
+        <p class="info-text">스태프가 여러 명이면 쉼표로 구분하세요. 예: 홍길동, 김철수</p>
+        <div class="table-wrap">
+            <table class="ep-table">
+                <thead><tr><th style="width:14%">회차</th><th style="width:30%">제목</th><th style="width:24%">콘티</th><th style="width:24%">연출</th><th style="width:8%">관리</th></tr></thead>
+                <tbody id="epList"></tbody>
+            </table>
+        </div>
+        <button class="btn-add" id="add-row-btn" type="button">+ 다음 화 입력칸 추가</button>
+        <button class="btn-commit" id="commit-btn" type="button" disabled>2026animeEPData.js 데이터에 추가</button>
+        <div id="merge-status" class="status">먼저 파일 로딩이 완료된 뒤 애니메이션 ID를 검색하세요.</div>
+    </div>
+
+    <div class="card">
+        <h2>📄 갱신된 데이터 파일</h2>
+        <p class="info-text">원본 파일을 선택하면 권한 확인 후 직접 덮어쓸 수 있습니다. 브라우저가 지원하지 않으면 다운로드한 파일로 교체하세요.</p>
+        <pre id="output">아직 갱신된 데이터가 없습니다.</pre>
+        <button class="btn-commit" id="overwrite-btn" type="button" disabled>선택한 원본 파일 덮어쓰기</button>
+        <button class="btn-download" id="download-btn" type="button" disabled>갱신된 2026animeEPData.js 다운로드</button>
     </div>
 </div>
 
+<script src="../data/2026/2026animeEPData.js"></script>
 <script>
-    function addRow() {
-        const tbody = document.getElementById('epList');
-        const newRow = document.createElement('tr');
-        newRow.innerHTML = `
-            <td><input type="text" class="ep-no"></td>
-            <td><input type="text" class="ep-title"></td>
-            <td><input type="text" class="ep-story"></td>
-            <td><input type="text" class="ep-dir"></td>
-            <td><button class="btn-remove" onclick="removeRow(this)">삭제</button></td>
-        `;
-        tbody.appendChild(newRow);
+    let episodeData = null;
+    let currentAnimeId = '';
+    let dataChanged = false;
+    let sourceFileHandle = null;
+
+    const loadStatus = document.getElementById('load-status');
+    const savedStatus = document.getElementById('saved-status');
+    const savedList = document.getElementById('saved-list');
+    const mergeStatus = document.getElementById('merge-status');
+    const output = document.getElementById('output');
+    const commitButton = document.getElementById('commit-btn');
+    const downloadButton = document.getElementById('download-btn');
+    const overwriteButton = document.getElementById('overwrite-btn');
+
+    function setStatus(element, message, type = '') {
+        element.textContent = message;
+        element.className = `status${type ? ` ${type}` : ''}`;
     }
 
-    function removeRow(btn) {
-        btn.parentElement.parentElement.remove();
+    function addRow(values = {}) {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td><input type="text" class="ep-no" placeholder="제9화"></td>
+            <td><input type="text" class="ep-title" placeholder="에피소드 제목"></td>
+            <td><input type="text" class="ep-story" placeholder="이름1, 이름2"></td>
+            <td><input type="text" class="ep-dir" placeholder="이름1, 이름2"></td>
+            <td><button class="btn-remove" type="button">삭제</button></td>`;
+        row.querySelector('.ep-no').value = values.no || '';
+        row.querySelector('.ep-title').value = values.title || '';
+        row.querySelector('.ep-story').value = values.story || '';
+        row.querySelector('.ep-dir').value = values.director || '';
+        row.querySelector('.btn-remove').addEventListener('click', () => {
+            row.remove();
+            if (!document.querySelector('#epList tr')) addRow();
+        });
+        document.getElementById('epList').appendChild(row);
     }
 
-    // 쉼표로 구분된 문자열을 배열로 만드는 헬퍼 함수
-    function splitStaff(str) {
-        if (!str) return [];
-        return str.split(',').map(name => name.trim()).filter(name => name !== "");
+    function splitStaff(value) {
+        return value.split(',').map(name => name.trim()).filter(Boolean);
     }
 
-    function generateJSON() {
+    function renderSavedEpisodes(id) {
+        const episodes = episodeData[id] || [];
+        savedStatus.textContent = episodeData[id]
+            ? `ID ${id}: 저장된 에피소드 ${episodes.length}개`
+            : `ID ${id}: 아직 저장된 에피소드가 없습니다. 새 데이터로 추가됩니다.`;
+        savedList.replaceChildren();
+        if (!episodes.length) {
+            savedList.innerHTML = '<div class="empty">저장된 에피소드가 없습니다.</div>';
+            return;
+        }
+        const header = document.createElement('div');
+        header.className = 'saved-row saved-head';
+        ['회차', '제목', '콘티', '연출'].forEach(text => {
+            const span = document.createElement('span'); span.textContent = text; header.appendChild(span);
+        });
+        savedList.appendChild(header);
+        episodes.forEach(ep => {
+            const row = document.createElement('div'); row.className = 'saved-row';
+            const storyboard = ep.storyboard?.staff || [];
+            const directors = ep['episode director']?.staff || [];
+            [ep['episode no'] || '', ep['episode title'] || '', storyboard.join(', '), directors.join(', ')].forEach(text => {
+                const span = document.createElement('span'); span.textContent = text; row.appendChild(span);
+            });
+            savedList.appendChild(row);
+        });
+    }
+
+    function searchAnime() {
+        if (!episodeData) {
+            setStatus(loadStatus, '데이터 파일이 로딩되지 않았습니다. 파일 경로와 브라우저 실행 방식을 확인해 주세요.', 'error');
+            return;
+        }
         const id = document.getElementById('animeId').value.trim();
-        if (!id) { alert("애니메이션 ID를 입력해주세요."); return; }
+        if (!/^\d+$/.test(id)) {
+            setStatus(mergeStatus, '숫자로 된 애니메이션 ID를 입력해 주세요.', 'error');
+            return;
+        }
+        currentAnimeId = id;
+        renderSavedEpisodes(id);
+        document.getElementById('epList').replaceChildren();
+        addRow();
+        commitButton.disabled = false;
+        setStatus(mergeStatus, `ID ${id}에 추가할 새 에피소드 정보를 입력해 주세요.`);
+    }
 
-        const rows = document.querySelectorAll('#epList tr');
+    function readNewEpisodes() {
         const episodes = [];
-
-        rows.forEach(row => {
+        for (const row of document.querySelectorAll('#epList tr')) {
             const no = row.querySelector('.ep-no').value.trim();
             const title = row.querySelector('.ep-title').value.trim();
-            const storyRaw = row.querySelector('.ep-story').value.trim();
-            const dirRaw = row.querySelector('.ep-dir').value.trim();
-
-            if (no || title) {
-                episodes.push({
-                    "episode no": no,
-                    "episode title": title,
-                    "storyboard": { "staff": splitStaff(storyRaw) },
-                    "episode director": { "staff": splitStaff(dirRaw) }
-                });
-            }
-        });
-
-        const result = `"${id}": ${JSON.stringify(episodes, null, 4)},`;
-        document.getElementById('output').textContent = result;
+            const storyboard = row.querySelector('.ep-story').value.trim();
+            const director = row.querySelector('.ep-dir').value.trim();
+            if (!no && !title && !storyboard && !director) continue;
+            if (!no || !title) throw new Error('입력된 에피소드에는 회차와 제목을 모두 입력해 주세요.');
+            episodes.push({
+                'episode no': no,
+                'episode title': title,
+                storyboard: { staff: splitStaff(storyboard) },
+                'episode director': { staff: splitStaff(director) }
+            });
+        }
+        return episodes;
     }
 
-    function copyCode() {
-        const text = document.getElementById('output').textContent;
-        if (text.startsWith('//')) return;
-        navigator.clipboard.writeText(text).then(() => {
-            alert("복사되었습니다!");
-        });
+    function episodeKey(value) {
+        return String(value || '').normalize('NFKC').replace(/\s+/g, '').toLocaleLowerCase();
+    }
+
+    function generateUpdatedFile() {
+        const js = `var animeEPData_2026 = ${JSON.stringify(episodeData, null, 4)};\n`;
+        output.textContent = js;
+        downloadButton.disabled = false;
+    }
+
+    function parseEpisodeDataFile(text) {
+        const match = text.match(/^\s*(?:var|let|const)\s+animeEPData_2026\s*=\s*(\{[\s\S]*\})\s*;?\s*$/);
+        if (!match) throw new Error('파일에서 animeEPData_2026 데이터 선언을 찾지 못했습니다.');
+        const parsed = JSON.parse(match[1]);
+        if (!parsed || Array.isArray(parsed) || typeof parsed !== 'object') {
+            throw new Error('animeEPData_2026 데이터 형식이 올바르지 않습니다.');
+        }
+        return parsed;
+    }
+
+    async function selectSourceFile() {
+        if (!window.showOpenFilePicker) {
+            setStatus(loadStatus, '이 브라우저는 원본 파일 직접 저장을 지원하지 않습니다. Chrome 또는 Edge 최신 버전을 사용하거나 다운로드 버튼을 이용해 주세요.', 'error');
+            return;
+        }
+        try {
+            const [handle] = await window.showOpenFilePicker({
+                id: 'anime-episode-data',
+                multiple: false,
+                types: [{ description: 'Anime episode data', accept: { 'text/javascript': ['.js'] } }]
+            });
+            if (handle.name !== '2026animeEPData.js') {
+                throw new Error('프로젝트의 2026animeEPData.js 파일을 선택해 주세요.');
+            }
+            const file = await handle.getFile();
+            episodeData = parseEpisodeDataFile(await file.text());
+            sourceFileHandle = handle;
+            dataChanged = false;
+            overwriteButton.disabled = true;
+            downloadButton.disabled = true;
+            currentAnimeId = '';
+            document.getElementById('animeId').value = '';
+            document.getElementById('epList').replaceChildren();
+            addRow();
+            savedStatus.textContent = '애니메이션 ID를 검색해 주세요.';
+            savedList.innerHTML = '<div class="empty">검색 결과가 여기에 표시됩니다.</div>';
+            output.textContent = '아직 갱신된 데이터가 없습니다.';
+            document.getElementById('file-handle-status').textContent = `선택됨: ${handle.name} · 애니메이션 ${Object.keys(episodeData).length}개 로드`;
+            setStatus(loadStatus, '원본 파일을 읽었습니다. 에피소드를 추가한 뒤 원본 덮어쓰기를 누르면 이 파일에 저장됩니다.', 'success');
+        } catch (error) {
+            if (error.name === 'AbortError') return;
+            setStatus(loadStatus, error.message || '원본 파일을 읽지 못했습니다.', 'error');
+        }
+    }
+
+    async function overwriteOriginalFile() {
+        if (!sourceFileHandle || !dataChanged || !episodeData) return;
+        try {
+            const permission = await sourceFileHandle.requestPermission({ mode: 'readwrite' });
+            if (permission !== 'granted') {
+                throw new Error('파일 쓰기 권한이 허용되지 않았습니다. 원본 다운로드를 사용할 수 있습니다.');
+            }
+            if (!confirm('선택한 2026animeEPData.js의 전체 내용을 갱신된 데이터로 덮어쓸까요?')) return;
+            const writable = await sourceFileHandle.createWritable();
+            await writable.write(`var animeEPData_2026 = ${JSON.stringify(episodeData, null, 4)};\n`);
+            await writable.close();
+            dataChanged = false;
+            overwriteButton.disabled = true;
+            setStatus(mergeStatus, '선택한 원본 2026animeEPData.js에 저장했습니다.', 'success');
+            setStatus(loadStatus, '원본 데이터 파일 저장 완료', 'success');
+        } catch (error) {
+            setStatus(mergeStatus, error.message || '원본 파일 저장에 실패했습니다. 다운로드 방식을 이용해 주세요.', 'error');
+        }
+    }
+
+    function addEpisodesToData() {
+        if (!episodeData || !currentAnimeId) return;
+        let incoming;
+        try { incoming = readNewEpisodes(); }
+        catch (error) { setStatus(mergeStatus, error.message, 'error'); return; }
+        if (!incoming.length) {
+            setStatus(mergeStatus, '추가할 에피소드 내용을 입력해 주세요.', 'error');
+            return;
+        }
+        if (!Array.isArray(episodeData[currentAnimeId])) episodeData[currentAnimeId] = [];
+        const existingKeys = new Set(episodeData[currentAnimeId].map(ep => episodeKey(ep['episode no'])));
+        const added = [];
+        let duplicates = 0;
+        for (const episode of incoming) {
+            const key = episodeKey(episode['episode no']);
+            if (existingKeys.has(key)) { duplicates++; continue; }
+            existingKeys.add(key);
+            added.push(episode);
+        }
+        if (!added.length) {
+            setStatus(mergeStatus, `새로 추가된 회차가 없습니다. 입력한 ${duplicates}개 회차가 이미 저장되어 있습니다.`, 'error');
+            return;
+        }
+        episodeData[currentAnimeId].push(...added);
+        dataChanged = true;
+        renderSavedEpisodes(currentAnimeId);
+        generateUpdatedFile();
+        overwriteButton.disabled = !sourceFileHandle;
+        document.getElementById('epList').replaceChildren();
+        addRow();
+        const saveHint = sourceFileHandle ? '원본 덮어쓰기 버튼으로 저장하거나 전체 파일을 다운로드하세요.' : '전체 파일을 다운로드해 원본과 교체하세요.';
+        setStatus(mergeStatus, `${added.length}개 에피소드를 추가했습니다.${duplicates ? ` 중복 회차 ${duplicates}개는 건너뛰었습니다.` : ''} ${saveHint}`, 'success');
+    }
+
+    function downloadUpdatedFile() {
+        if (!dataChanged || !episodeData) return;
+        const content = `var animeEPData_2026 = ${JSON.stringify(episodeData, null, 4)};\n`;
+        const blob = new Blob([content], { type: 'text/javascript;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = '2026animeEPData.js';
+        link.click();
+        URL.revokeObjectURL(url);
+    }
+
+    document.getElementById('search-btn').addEventListener('click', searchAnime);
+    document.getElementById('select-file-btn').addEventListener('click', selectSourceFile);
+    document.getElementById('animeId').addEventListener('keydown', event => {
+        if (event.key === 'Enter') searchAnime();
+    });
+    document.getElementById('add-row-btn').addEventListener('click', () => addRow());
+    commitButton.addEventListener('click', addEpisodesToData);
+    overwriteButton.addEventListener('click', overwriteOriginalFile);
+    downloadButton.addEventListener('click', downloadUpdatedFile);
+    addRow();
+
+    if (typeof animeEPData_2026 !== 'undefined' && animeEPData_2026 && typeof animeEPData_2026 === 'object') {
+        episodeData = JSON.parse(JSON.stringify(animeEPData_2026));
+        setStatus(loadStatus, `2026animeEPData.js 로딩 완료 · 애니메이션 ${Object.keys(episodeData).length}개`, 'success');
+    } else {
+        setStatus(loadStatus, '데이터 파일을 읽지 못했습니다. 2026animeEPData.js의 경로를 확인해 주세요.', 'error');
     }
 </script>
-
 </body>
 </html>

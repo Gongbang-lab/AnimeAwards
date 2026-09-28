@@ -22,22 +22,16 @@
     <main class="content-wrapper">
         <div class="container">
             <section class="content-area" id="mainArea">
-                <div class="search-container" id="searchContainer">
-                    <h1 class="logo">Anime Couple Awards</h1>
-                    <div class="search-wrapper">
-                        <div class="search-box">
-                            <input type="text" id="searchInput" placeholder="애니메이션 제목 검색">
-                            <button id="searchBtn">검색</button>
-                        </div>
-                        <ul id="suggestionList" class="suggestions-box hidden"></ul>
-                    </div>
+                <div class="anime-picker-section">
+                    <p class="anime-picker-desc">작품 카드를 누르고 커플로 등록할 두 캐릭터를 선택해주세요.</p>
+                    <div class="anime-card-grid" id="animeCardGrid"></div>
                 </div>
-    
                 <div class="nominee-list" id="nomineeList"></div>
             </section>
 
             <aside class="sidebar">
                 <div class="fixed-sidebar-content">
+                    <div id="anime-picker-sidebar" class="anime-picker-sidebar"></div>
                     <div class="action-buttons">
                         <button class="btn-outline" id="goMainBtn">메인으로</button>
                         <button class="gold-btn" id="confirmAwardBtn" disabled>수상 결정</button>
