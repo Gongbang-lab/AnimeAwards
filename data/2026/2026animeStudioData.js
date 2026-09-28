@@ -2076,7 +2076,7 @@ var AnimeStudioData_2026 = [
   },
   {
     "studio": "SIGNAL.MD",
-    "studio_img": "image/studio/SIGNALMD.avif",
+    "studio_img": "image/studio/SignalMD.avif",
     "works": [
       {
         "title": "아름다운 그대에게",
