@@ -243,4 +243,13 @@ var AnimeMemeData_2026 = [
         "quarter": "3분기",
         "year": 2026
     },
+        {
+        "id": "meme_029",
+        "name": "루루카 신규 변신 장면",
+        "type": "mp4",
+        "src1": "image/meme/루루카 신규 변신.mp4",
+        "origin": "명탐정 프리큐어!",
+        "quarter": "3분기",
+        "year": 2026
+    }
 ];

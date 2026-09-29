@@ -103,7 +103,13 @@ function createMemeCard(meme) {
     const zoomBtn = document.createElement("button");
     zoomBtn.className = "zoom-btn";
     zoomBtn.title = "확대 보기";
-    zoomBtn.textContent = "+";
+    zoomBtn.setAttribute("aria-label", "이미지 크게 보기");
+    zoomBtn.innerHTML = `
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="10.8" cy="10.8" r="6.8"></circle>
+            <path d="m16 16 4.5 4.5M10.8 7.8v6M7.8 10.8h6"></path>
+        </svg>
+    `;
     zoomBtn.onclick = (e) => openMemeZoom(meme.id, e);
 
     const mediaBox = document.createElement("div");
@@ -209,8 +215,8 @@ function openMemeZoom(id, e) {
     function renderZoomMedia(src) {
         const isVideo = meme.type === 'video' || src.url.endsWith('.mp4');
         return isVideo
-            ? `<video src="../${src.url}" controls autoplay loop style="max-height:500px; width:100%;"></video>`
-            : `<img src="../${src.url}" style="max-height:500px; max-width:100%;">`;
+            ? `<video class="zoom-media" src="../${src.url}" controls autoplay loop></video>`
+            : `<img class="zoom-media" src="../${src.url}" alt="${meme.name}">`;
     }
 
     const tabsHtml = srcs.length > 1 ? `
@@ -225,7 +231,7 @@ function openMemeZoom(id, e) {
     ` : '';
 
     popup.innerHTML = `
-        <div class="modal-content" style="max-width: 800px;">
+        <div class="modal-content meme-zoom-modal-content">
             <button class="zoom-close-btn" onclick="closePopup()">✕</button>
             <h2 class="modal-header">${meme.name}</h2>
             <hr class="modal-divider">
@@ -259,8 +265,8 @@ function switchPopupSrc(memeId, srcIndex) {
     mediaBox.querySelectorAll('video').forEach(v => { v.pause(); v.removeAttribute('src'); v.load(); });
 
     mediaBox.innerHTML = isVideo
-        ? `<video src="../${src.url}" controls autoplay loop style="max-height:500px; width:100%;"></video>`
-        : `<img src="../${src.url}" style="max-height:500px; max-width:100%;">`;
+        ? `<video class="zoom-media" src="../${src.url}" controls autoplay loop></video>`
+        : `<img class="zoom-media" src="../${src.url}" alt="${meme.name}">`;
 }
 
 function saveMemeWinner() {
