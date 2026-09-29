@@ -40,20 +40,14 @@
     </div>
 
     <div id="detail-modal" class="modal hidden">
-        <div class="modal-content">
-            <h2 class="modal-header">감독 상세 정보</h2>
-            <hr class="modal-divider">
-            <div class="winner-layout">
-                <div class="winner-left">
-                    <img id="detail-img" src="" alt="감독 이미지">
-                </div>
-                <div class="winner-right">
-                    <h2 id="detail-name" style="color:white; margin-top:0;"></h2>
-                    <div id="detail-works" class="winner-works-scroll">
-                        </div>
-                </div>
+        <div class="modal-content works-modal-content">
+            <div class="works-modal-left" id="detail-profile"></div>
+            <div class="works-modal-right">
+                <h2 class="modal-header" style="font-size:1.4rem; margin-top:0;">참여 작품 목록</h2>
+                <hr class="modal-divider">
+                <div id="detail-works" class="director-works-grid"></div>
+                <button onclick="closeModal('detail-modal')" class="gold-btn" style="width:100%; margin-top:20px;">닫기</button>
             </div>
-            <button onclick="closeModal('detail-modal')" class="btn-outline" style="width:100%; margin-top:20px;">닫기</button>
         </div>
     </div>
 

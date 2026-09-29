@@ -160,7 +160,8 @@ body {
     background: rgba(0,0,0,0.9); display: flex; align-items: center; justify-content: center; z-index: 2000;
 }
 .modal-content {
-    background: #1a1a1a; width: 90%; max-width: 800px;
+    background: #1a1a1a; width: 90%; max-width: 1000px;
+    max-height: 88vh; overflow-y: auto;
     border: 2px solid var(--gold); border-radius: 15px; padding: 30px;
 }
 .modal-header { text-align: center; color: var(--gold); font-size: 1.8rem; margin: 0; }
@@ -178,6 +179,142 @@ body {
 .winner-works-scroll { max-height: 300px; overflow-y: auto; padding-right: 10px; margin-top: 10px; }
 .winner-works-scroll::-webkit-scrollbar { width: 4px; }
 .winner-works-scroll::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 2px; }
+
+.works-modal-content {
+    display: flex;
+    max-width: 1000px;
+    width: 95%;
+    height: 80vh;
+    padding: 0;
+    overflow: hidden;
+}
+
+.works-modal-left {
+    flex: 3;
+    min-width: 0;
+    background: #111;
+    padding: 40px 30px;
+    border-right: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow-y: auto;
+}
+
+.works-modal-left img {
+    width: 100%;
+    max-width: 260px;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid var(--gold);
+    margin-bottom: 20px;
+}
+
+.director-profile-name {
+    color: var(--gold);
+    font-size: 1.3rem;
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.works-modal-right {
+    flex: 7;
+    min-width: 0;
+    padding: 30px;
+    background: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.director-works-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    overflow-y: auto;
+    align-items: start;
+    grid-auto-rows: min-content;
+    padding: 10px 8px 4px 2px;
+}
+
+.director-work-card {
+    min-width: 0;
+    overflow: hidden;
+    height: fit-content;
+    background: #252525;
+    border: 1px solid #444;
+    border-radius: 8px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.director-work-card:hover {
+    border-color: var(--gold);
+}
+
+.director-work-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    background: #111;
+}
+
+.director-work-info {
+    padding: 12px;
+    background: #222;
+}
+
+.director-work-title {
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+}
+
+.director-works-empty {
+    grid-column: 1 / -1;
+    padding: 20px;
+    color: #888;
+}
+
+@media (max-width: 700px) {
+    .works-modal-content {
+        height: 90vh;
+        flex-direction: column;
+    }
+
+    .works-modal-left {
+        flex: 0 0 auto;
+        max-height: 34%;
+        padding: 16px;
+        border-right: 0;
+        border-bottom: 1px solid #333;
+    }
+
+    .works-modal-left img {
+        max-width: 110px;
+        margin-bottom: 8px;
+    }
+
+    .director-profile-name {
+        font-size: 1rem;
+    }
+
+    .works-modal-right {
+        flex: 1;
+        padding: 18px;
+    }
+
+    .director-works-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+    }
+}
 
 #confettiCanvas { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 9999; }
 

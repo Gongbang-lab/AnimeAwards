@@ -37,16 +37,16 @@
   </div>
 
   <div id="cv-detail-modal" class="modal hidden">
-    <div class="modal-content">
-      <button class="modal-close-btn" onclick="closeModal('cv-detail-modal')">&times;</button>
-      <h2 class="modal-header">성우 상세 정보</h2>
-      <hr class="modal-divider">
-      <div class="winner-layout">
-        <div class="winner-left"><img id="detail-img" src="" alt="성우 이미지"></div>
-        <div class="winner-right">
-          <h2 id="detail-name" style="color:white;margin-top:0;"></h2>
-          <div id="detail-works"></div>
-        </div>
+    <div class="modal-content works-modal-content">
+      <div class="works-modal-left">
+        <img id="detail-img" src="" alt="성우 이미지">
+        <h2 id="detail-name" class="cv-profile-name"></h2>
+      </div>
+      <div class="works-modal-right">
+        <h2 class="modal-header works-modal-header">참여 작품 목록</h2>
+        <hr class="modal-divider">
+        <div id="detail-works" class="cv-detail-works"></div>
+        <button class="gold-btn" style="width:100%; margin-top:20px;" onclick="closeModal('cv-detail-modal')">닫기</button>
       </div>
     </div>
   </div>

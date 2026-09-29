@@ -331,18 +331,47 @@ function handleBack() {
  * 상세 정보 모달 (배지 클릭 시)
  */
 function openDetailModal(data) {
-    document.getElementById("detail-img").src = `../${data.director_img}`;
-    document.getElementById("detail-name").textContent = data.director;
-    
+    const profile = document.getElementById("detail-profile");
+    profile.replaceChildren();
+
+    const profileImage = document.createElement("img");
+    profileImage.src = `../${data.director_img}`;
+    profileImage.alt = `${data.director} 감독 사진`;
+    profileImage.loading = "lazy";
+
+    const profileName = document.createElement("h2");
+    profileName.className = "director-profile-name";
+    profileName.textContent = data.director || "이름 없음";
+    profile.append(profileImage, profileName);
+
     const worksContainer = document.getElementById("detail-works");
-    worksContainer.innerHTML = data.works.map(w => `
-        <div class="info-row">
-            <div style="display:flex; align-items:center; gap:10px;">
-                <img src="../${w.thumbnail}" style="width:40px; height:40px; border-radius:4px; object-fit:cover;">
-                <span class="info-label" style="text-align:left;">${w.title}</span>
-            </div>
-        </div>
-    `).join('');
+    worksContainer.replaceChildren();
+
+    if (!data.works || data.works.length === 0) {
+        const emptyMessage = document.createElement("p");
+        emptyMessage.className = "director-works-empty";
+        emptyMessage.textContent = "참여 작품 정보가 없습니다.";
+        worksContainer.append(emptyMessage);
+    } else data.works.forEach(work => {
+        const card = document.createElement("article");
+        card.className = "director-work-card";
+
+        const image = document.createElement("img");
+        image.src = `../${work.thumbnail}`;
+        image.alt = work.title || "작품 이미지";
+        image.loading = "lazy";
+
+        const info = document.createElement("div");
+        info.className = "director-work-info";
+
+        const title = document.createElement("div");
+        title.className = "director-work-title";
+        title.textContent = work.title || "제목 없음";
+
+        info.append(title);
+        card.append(image, info);
+        worksContainer.append(card);
+    });
     
     document.getElementById("detail-modal").classList.remove("hidden");
 }

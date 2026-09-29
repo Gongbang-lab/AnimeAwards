@@ -1402,7 +1402,7 @@ var AnimeList_2026 = [
     ],
     "staff": {
       "director": [
-        "카메가키 하지메(총)",
+        "카메가키 하지메",
         "야스미 히로시"
       ],
       "character_design": [

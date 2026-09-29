@@ -1054,7 +1054,7 @@ function openDetailModal(cv) {
     }
 
     nameEl.textContent =
-        `${cv.name} 참여 작품`;
+        cv.name;
 
     imgEl.src =
         `../${cv.cvimg}`;
