@@ -2546,7 +2546,7 @@ var CharacterData_2026 = [
       "gender": "male",
       "cvId": 113227,
       "cv": "사이토 소마",
-      "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume./Lizel.jpg"
+      "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Lizel.jpg"
     },
     {
       "characterId": 361186,
@@ -2554,7 +2554,7 @@ var CharacterData_2026 = [
       "gender": "male",
       "cvId": 118908,
       "cv": "우메하라 유이치로",
-      "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume./Gil.jpg"
+      "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Gil.jpg"
     },
     {
       "characterId": 380596,
@@ -2562,7 +2562,7 @@ var CharacterData_2026 = [
       "gender": "male",
       "cvId": 95167,
       "cv": "카키하라 테츠야",
-      "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume./Eleven.jpg"
+      "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Eleven.jpg"
     },
     {
       "characterId": 380600,
@@ -2570,7 +2570,7 @@ var CharacterData_2026 = [
       "gender": "male",
       "cvId": 95086,
       "cv": "후쿠야마 쥰",
-      "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume./Stud.jpg"
+      "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Stud.jpg"
     },
     {
       "characterId": 380597,
@@ -2578,7 +2578,7 @@ var CharacterData_2026 = [
       "gender": "male",
       "cvId": 116971,
       "cv": "야마시타 다이키",
-      "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume./Judge.jpg"
+      "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Judge.jpg"
     },
     {
       "characterId": 380599,
@@ -2586,7 +2586,7 @@ var CharacterData_2026 = [
       "gender": "male",
       "cvId": 95097,
       "cv": "토리우미 코스케",
-      "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume./Ray.jpg"
+      "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Ray.jpg"
     },
     {
       "characterId": 380598,
@@ -2594,7 +2594,7 @@ var CharacterData_2026 = [
       "gender": "male",
       "cvId": 95025,
       "cv": "야스모토 히로키",
-      "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume./Shadow.jpg"
+      "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Shadow.jpg"
     },
     {
       "characterId": 380601,
@@ -2602,7 +2602,7 @@ var CharacterData_2026 = [
       "gender": "male",
       "cvId": 95371,
       "cv": "하마다 켄지",
-      "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume./Insigh.jpg"
+      "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Insigh.jpg"
     },
     {
       "characterId": 390839,
@@ -2610,7 +2610,7 @@ var CharacterData_2026 = [
       "gender": "male",
       "cvId": 115096,
       "cv": "나카지마 요시키",
-      "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume./Ein.jpg"
+      "img": "image/charimg/2026/Q1/Odayaka_Kizoku_no_Kyuuka_no_Susume/Ein.jpg"
     }
   ]
 },
@@ -30845,6 +30845,252 @@ var CharacterData_2026 = [
       "cvId": 108715,
       "cv": "카나오 테츠오",
       "img": "image/charimg/2026/Q3/Star_Wars_Visions_-_Kyuuninme_no_Jedi/Juro.jpg"
+    }
+  ]
+},
+{
+  "id": 64012,
+  "title": "THE RIBBON HERO",
+  "year": 2026,
+  "characters": [
+    {
+      "characterId": 22182,
+      "name": "사파이어",
+      "gender": "female",
+      "cvId": 399605,
+      "cv": "사야",
+      "img": "image/charimg/2026/Q3/THE_RIBBON_HERO/Sapphire.jpg"
+    },
+    {
+      "characterId": 405067,
+      "name": "파인",
+      "gender": "female",
+      "cvId": 126299,
+      "cv": "코바야시 세이란",
+      "img": "image/charimg/2026/Q3/THE_RIBBON_HERO/Pine.jpg"
+    },
+    {
+      "characterId": 405069,
+      "name": "벨벳",
+      "gender": "male",
+      "cvId": 96764,
+      "cv": "우치야마 코우키",
+      "img": "image/charimg/2026/Q3/THE_RIBBON_HERO/Velvet.jpg"
+    },
+    {
+      "characterId": 405068,
+      "name": "지르코",
+      "gender": "unknown",
+      "cvId": 95617,
+      "cv": "신타니 마유미",
+      "img": "image/charimg/2026/Q3/THE_RIBBON_HERO/Zirco.jpg"
+    },
+    {
+      "characterId": 405933,
+      "name": "교황",
+      "gender": "male",
+      "cvId": 107438,
+      "cv": "조 하루히코",
+      "img": "image/charimg/2026/Q3/THE_RIBBON_HERO/Kyoukou.jpg"
+    },
+    {
+      "characterId": 408389,
+      "name": "로바의 기사",
+      "gender": "male",
+      "cvId": 95330,
+      "cv": "긴가 반조",
+      "img": "image/charimg/2026/Q3/THE_RIBBON_HERO/Roba_no_Kishi.jpg"
+    },
+    {
+      "characterId": 408398,
+      "name": "왕",
+      "gender": "male",
+      "cvId": 408399,
+      "cv": "와다 로쿠로",
+      "img": "image/charimg/2026/Q3/THE_RIBBON_HERO/Ou.jpg"
+    },
+    {
+      "characterId": 408390,
+      "name": "왕비",
+      "gender": "female",
+      "cvId": 95080,
+      "cv": "히사카와 아야",
+      "img": "image/charimg/2026/Q3/THE_RIBBON_HERO/Oohi.jpg"
+    },
+    {
+      "characterId": 17606,
+      "name": "록",
+      "gender": "male",
+      "cvId": 100626,
+      "cv": "호소야 요시마사",
+      "img": "image/charimg/2026/Q3/THE_RIBBON_HERO/Rock_Holmes.jpg"
+    },
+    {
+      "characterId": 405301,
+      "name": "초로기",
+      "gender": "male",
+      "cvId": 140603,
+      "cv": "테즈카 유스케",
+      "img": "image/charimg/2026/Q3/THE_RIBBON_HERO/Choroqi.jpg"
+    },
+    {
+      "characterId": 67095,
+      "name": "헤케트",
+      "gender": "female",
+      "cvId": 191451,
+      "cv": "츠키노 미토",
+      "img": "image/charimg/2026/Q3/THE_RIBBON_HERO/Hecate.jpg"
+    },
+    {
+      "characterId": 405302,
+      "name": "틱",
+      "gender": "male",
+      "cvId": 405304,
+      "cv": "룬룬",
+      "img": "image/charimg/2026/Q3/THE_RIBBON_HERO/Chick.jpg"
+    },
+    {
+      "characterId": 405303,
+      "name": "택",
+      "gender": "male",
+      "cvId": 405305,
+      "cv": "데비데비 데비루",
+      "img": "image/charimg/2026/Q3/THE_RIBBON_HERO/Tack.jpg"
+    },
+    {
+      "characterId": 408391,
+      "name": "나즈나",
+      "gender": "female",
+      "cvId": 149680,
+      "cv": "마츠오카 미사토",
+      "img": "image/charimg/2026/Q3/THE_RIBBON_HERO/Nazuna.jpg"
+    },
+    {
+      "characterId": 408392,
+      "name": "헤코베",
+      "gender": "male",
+      "cvId": 213989,
+      "cv": "우루시야마 유우키",
+      "img": "image/charimg/2026/Q3/THE_RIBBON_HERO/Hakobe.jpg"
+    },
+    {
+      "characterId": 408393,
+      "name": "엔도",
+      "gender": "unknown",
+      "cvId": 128613,
+      "cv": "타도코로 히나타",
+      "img": "image/charimg/2026/Q3/THE_RIBBON_HERO/Endou.jpg"
+    },
+    {
+      "characterId": 408394,
+      "name": "센부리",
+      "gender": "unknown",
+      "cvId": 236982,
+      "cv": "야마시타 타이키",
+      "img": "image/charimg/2026/Q3/THE_RIBBON_HERO/Senburi.jpg"
+    },
+    {
+      "characterId": 408395,
+      "name": "파인 아빠",
+      "gender": "male",
+      "cvId": 174145,
+      "cv": "타케다 타이치",
+      "img": "image/charimg/2026/Q3/THE_RIBBON_HERO/Pine_no_Chichi.jpg"
+    },
+    {
+      "characterId": 408396,
+      "name": "파인 엄마",
+      "gender": "female",
+      "cvId": 408397,
+      "cv": "키무라 스즈카",
+      "img": "image/charimg/2026/Q3/THE_RIBBON_HERO/Pine_no_Haha.jpg"
+    }
+  ]
+},
+{
+  "id": 63011,
+  "title": "Chiikawa: Ningyo no Shima no Himitsu",
+  "year": 2026,
+  "characters": [
+    {
+      "characterId": 288497,
+      "name": "치이카와",
+      "gender": "unknown",
+      "cvId": 288505,
+      "cv": "아오키 하루카",
+      "img": "image/charimg/2026/Q3/Chiikawa_Ningyo_no_Shima_no_Himitsu/Chiikawa.jpg"
+    },
+    {
+      "characterId": 288498,
+      "name": "가르마",
+      "gender": "unknown",
+      "cvId": 288504,
+      "cv": "타나카 마코토",
+      "img": "image/charimg/2026/Q3/Chiikawa_Ningyo_no_Shima_no_Himitsu/Hachiware.jpg"
+    },
+    {
+      "characterId": 288499,
+      "name": "토끼",
+      "gender": "unknown",
+      "cvId": 118663,
+      "cv": "오자와 아리",
+      "img": "image/charimg/2026/Q3/Chiikawa_Ningyo_no_Shima_no_Himitsu/Usagi.jpg"
+    },
+    {
+      "characterId": 288500,
+      "name": "하늘다람쥐",
+      "gender": "unknown",
+      "cvId": 95885,
+      "cv": "이구치 유카",
+      "img": "image/charimg/2026/Q3/Chiikawa_Ningyo_no_Shima_no_Himitsu/Momonga.jpg"
+    },
+    {
+      "characterId": 288502,
+      "name": "밤만쥬",
+      "gender": "unknown",
+      "cvId": 263466,
+      "cv": "아사이 타카유키",
+      "img": "image/charimg/2026/Q3/Chiikawa_Ningyo_no_Shima_no_Himitsu/Kurimanjuu.jpg"
+    },
+    {
+      "characterId": 288503,
+      "name": "해달",
+      "gender": "unknown",
+      "cvId": 119617,
+      "cv": "우치다 유우마",
+      "img": "image/charimg/2026/Q3/Chiikawa_Ningyo_no_Shima_no_Himitsu/Rakko.jpg"
+    },
+    {
+      "characterId": 320258,
+      "name": "시사",
+      "gender": "unknown",
+      "cvId": 126579,
+      "cv": "시마부쿠로 미유리",
+      "img": "image/charimg/2026/Q3/Chiikawa_Ningyo_no_Shima_no_Himitsu/Shisa.jpg"
+    },
+    {
+      "characterId": 380469,
+      "name": "세이렌",
+      "gender": "unknown",
+      "cvId": 120134,
+      "cv": "스즈키 미노리",
+      "img": "image/charimg/2026/Q3/Chiikawa_Ningyo_no_Shima_no_Himitsu/Siren.jpg"
+    },
+    {
+      "characterId": 400572,
+      "name": "헌책방",
+      "gender": "unknown",
+      "cvId": 350718,
+      "cv": "하루미 모모",
+      "img": "image/charimg/2026/Q3/Chiikawa_Ningyo_no_Shima_no_Himitsu/Furuhonya.jpg"
+    },
+    {
+      "characterId": 408810,
+      "name": "섬아저씨",
+      "gender": "male",
+      "cvId": 103730,
+      "cv": "모가미 츠구오",
+      "img": "image/charimg/2026/Q3/Chiikawa_Ningyo_no_Shima_no_Himitsu/Shimajirou.jpg"
     }
   ]
 }
