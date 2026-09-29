@@ -4,7 +4,7 @@
  * Current schema:
  *
  * AnimeData:
- *   AnimeList_2026[] -> { id, year, quarter, title, ... }
+ *   AnimeCatalog_2026[] -> { id, year, quarter, title, day, ... }
  *
  * CharacterData:
  *   CharacterData_2026[] -> {
@@ -32,8 +32,7 @@
  * - (animeId + characterId) is the relationship-level unique pair.
  * - CVData does NOT contain characterIds.
  * - CharacterData.cvId -> CVData.id is the authoritative Character/CV link.
- * - Cinema titles are valid works too, so cinemaData_2026 is included when
- *   checking CharacterData.id -> work existence.
+ * - `day === "Cinema"` identifies films; other day values are TVA weekdays.
  *
  * This script NEVER modifies data.
  *
@@ -55,7 +54,6 @@ const FILES = {
     anime: path.join(DATA_DIR, `${YEAR}animeData.js`),
     character: path.join(DATA_DIR, `${YEAR}animeCharacterData.js`),
     cv: path.join(DATA_DIR, `${YEAR}animeCVData.js`),
-    cinema: path.join(DATA_DIR, `${YEAR}animeCinemaData.js`)
 };
 
 const counts = {
@@ -139,12 +137,11 @@ function nonEmpty(value) {
 const animeContext = loadScript(FILES.anime);
 const characterContext = loadScript(FILES.character);
 const cvContext = loadScript(FILES.cv);
-const cinemaContext = loadScript(FILES.cinema);
-
-const animeList = asArray(animeContext[`AnimeList_${YEAR}`]);
+const catalog = asArray(animeContext[`AnimeCatalog_${YEAR}`]);
+const animeList = catalog.filter(work => work?.day !== "Cinema");
 const characterData = asArray(characterContext[`CharacterData_${YEAR}`]);
 const cvData = asArray(cvContext[`CharacterVoiceData_${YEAR}`]);
-const cinemaData = asArray(cinemaContext[`cinemaData_${YEAR}`]);
+const cinemaData = catalog.filter(work => work?.day === "Cinema");
 
 const animeIds = new Set();
 const cinemaIds = new Set();

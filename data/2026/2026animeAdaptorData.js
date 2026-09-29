@@ -370,7 +370,7 @@ var AnimeAdaptorData_2026 = [
     "year": 2026,
     "quarter": "1분기",
     "day": "Fridays",
-    "thumbnail": "image/animeimg/2026/Q1/하이스쿨!_기면조.webp",
+    "thumbnail": "image/animeimg/2026/Q1/하이스쿨! 기면조.webp",
     "studio": [
       "주식회사 세븐"
     ],
@@ -827,12 +827,12 @@ var AnimeAdaptorData_2026 = [
     ]
   },
   {
-    "id": 49469,
-    "title": "비스타즈 파이널 시즌",
+    "id": 61114,
+    "title": "비스타즈 마지막 시즌",
     "year": 2026,
     "quarter": "1분기",
     "day": "Web",
-    "thumbnail": "image/animeimg/2026/Q1/비스타즈 파이널 시즌.webp",
+    "thumbnail": "image/animeimg/2026/Q1/비스타즈 마지막 시즌.webp",
     "studio": [
       "오렌지"
     ],
@@ -1945,6 +1945,21 @@ var AnimeAdaptorData_2026 = [
     ]
   },
   {
+    "id": 62080,
+    "title": "무자각한 성녀는 오늘도 무의식적으로 힘을 흘린다",
+    "year": 2026,
+    "quarter": "3분기",
+    "day": "Tuesdays",
+    "thumbnail": "image/animeimg/2026/Q3/무자각한 성녀는 오늘도 무의식적으로 힘을 흘린다.webp",
+    "studio": [
+      "매직버스",
+      "피칸테 서커스"
+    ],
+    "adaptor": [
+      "마치다 토코"
+    ]
+  },
+  {
     "id": 58929,
     "title": "공각기동대 THE GHOST IN THE SHELL",
     "year": 2026,
@@ -2174,7 +2189,7 @@ var AnimeAdaptorData_2026 = [
     "id": 63347,
     "title": "월드 이즈 댄싱",
     "year": 2026,
-    "quarter": "2분기",
+    "quarter": "3분기",
     "day": "Mondays",
     "thumbnail": "image/animeimg/2026/Q2/월드 이즈 댄싱.webp",
     "studio": [
@@ -2192,7 +2207,7 @@ var AnimeAdaptorData_2026 = [
     "day": "Thursdays",
     "thumbnail": "image/animeimg/2026/Q3/BanG Dream! YUME∞MITA.webp",
     "studio": [
-      "니치카라인"
+      "산지겐"
     ],
     "adaptor": [
       "고토 미도리"
@@ -2616,7 +2631,7 @@ var AnimeAdaptorData_2026 = [
     "day": "Anomaly",
     "thumbnail": "image/animeimg/2026/Q3/문호 스트레이독스 멍! 2.webp",
     "studio": [
-      "본즈",
+      "본즈 필름",
       "NOMAD"
     ],
     "adaptor": [
@@ -2664,20 +2679,6 @@ var AnimeAdaptorData_2026 = [
     ],
     "adaptor": [
       "코바야시 야스코"
-    ]
-  },
-  {
-    "id": 61316,
-    "title": "Re:제로부터 시작하는 이세계 생활 4기",
-    "year": 2026,
-    "quarter": "3분기",
-    "day": "Wednesdays",
-    "thumbnail": "image/animeimg/2026/Q2/Re 제로부터 시작하는 이세계 생활 4기.webp",
-    "studio": [
-      "WHITE FOX"
-    ],
-    "adaptor": [
-      "요코타니 마사히로"
     ]
   },
   {
@@ -2805,6 +2806,20 @@ var AnimeAdaptorData_2026 = [
     ],
     "adaptor": [
       "우에즈 마코토"
+    ]
+  },
+  {
+    "id": 63011,
+    "title": "극장판 치이카와 인어 섬의 비밀",
+    "year": 2026,
+    "quarter": "3분기",
+    "day": "Cinema",
+    "thumbnail": "image/cinema/2026/극장판 치이카와 인어 섬의 비밀.webp",
+    "studio": [
+      "사이픽"
+    ],
+    "adaptor": [
+      "나가노"
     ]
   }
 ];

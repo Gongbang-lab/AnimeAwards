@@ -14,7 +14,7 @@ const QUARTER_MAP = { "Q1": "1분기", "Q2": "2분기", "Q3": "3분기", "Q4": "
 const DAY_LABELS = {
   "Mondays": "월요일", "Tuesdays": "화요일", "Wednesdays": "수요일",
   "Thursdays": "목요일", "Fridays": "금요일", "Saturdays": "토요일",
-  "Sundays": "일요일", "Anomaly": "변칙편성", "Web": "웹"
+  "Sundays": "일요일", "Anomaly": "변칙편성", "Web": "웹", "Cinema": "극장판"
 };
 
 document.addEventListener("DOMContentLoaded", () => {

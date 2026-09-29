@@ -67,7 +67,6 @@
 
     <!-- 원본 데이터 파일 -->
     <script src="../data/2026/2026animeData.js"></script>
-    <script src="../data/2026/2026animeCinemaData.js"></script>
 
     <script>
         let generatedCode = "";
@@ -80,20 +79,13 @@
             const dataCountSpan = document.getElementById('data-count');
             
             try {
-                const isTvaExist = typeof AnimeList_2026 !== 'undefined';
-                const isCinemaExist = typeof cinemaData_2026 !== 'undefined';
-
-                if (!isTvaExist && !isCinemaExist) {
-                    throw new Error("데이터를 찾을 수 없습니다. 2026animeData.js 또는 2026animeCinemaData.js 확인이 필요합니다.");
+                const combinedList = typeof AnimeCatalog_2026 !== 'undefined' ? AnimeCatalog_2026 : [];
+                if (combinedList.length === 0) {
+                    throw new Error("데이터를 찾을 수 없습니다. 2026animeData.js를 확인해주세요.");
                 }
 
                 const studioMap = {};
                 let totalEntries = 0;
-                let combinedList = [];
-
-                // 데이터 통합
-                if (isTvaExist) combinedList = combinedList.concat(AnimeList_2026);
-                if (isCinemaExist) combinedList = combinedList.concat(cinemaData_2026);
                 
                 combinedList.forEach(anime => {
                     // 1. Studio가 배열이므로 순회 (데이터가 없으면 'Unknown' 처리)

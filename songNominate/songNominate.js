@@ -7,7 +7,7 @@ const songNominateState = {
 };
 const dayMap = {
     "mondays": "월요일", "tuesdays": "화요일", "wednesdays": "수요일", "thursdays": "목요일",
-    "fridays": "금요일", "saturdays": "토요일", "sundays": "일요일", "anomaly": "변칙 편성", "web": "웹"
+    "fridays": "금요일", "saturdays": "토요일", "sundays": "일요일", "anomaly": "변칙 편성", "web": "웹", "cinema": "극장판"
 };
 
 // 유틸: 유튜브 썸네일 추출

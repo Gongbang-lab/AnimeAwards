@@ -499,6 +499,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initSeasonGate();
     
     const infoModal = document.getElementById("info-modal");
+    const infoBtn = document.getElementById("info-btn");
     const closeInfoModal = document.querySelector("#info-modal .close-modal");
 
     if(infoBtn) infoBtn.onclick = () => { infoModal.style.display = "flex"; };

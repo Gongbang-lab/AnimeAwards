@@ -133,7 +133,8 @@ async function collectFullBatch(list,fullCache){const states=new Map();for(const
 function renderCandidatePanel(){const rows=Object.values(rookieStore).sort((a,b)=>a.rank-b.rank);const panel=document.getElementById('candidate-panel');panel.style.display='block';panel.innerHTML=`<div style="font-weight:bold;margin-bottom:8px">최종 선별 Top 70</div><div class="muted" style="margin-bottom:8px">100점 만점 중 70점 이상을 통과시킵니다. 배점은 데뷔 최근성 15, 올해 작품 27, 이전 작품 10, 최근 성장 17, 캐릭터 인지도 19, 작품 화제성 12입니다. 속편 작품은 AniList 전작/후속작 관계로 합산하며 최대 70명을 저장합니다. <b>최종 목록은 점수순 최대 70명입니다.</b></div><div id="candidate-list"></div>`;const list=document.getElementById('candidate-list');rows.forEach(v=>{const row=document.createElement('div');row.className='candidate-row';row.innerHTML=`<label>#${v.rank} ${escapeHtml(v.name)} <span class="score">${v.score}점</span> <span class="muted">(통합 작품 ${v.stats.totalWorks}개 / 올해 ${v.stats.currentYearWorks}개 / 대표 캐릭터 즐겨찾기 ${v.stats.maxCharacterFavourites})</span></label>`;list.appendChild(row)})}
 function translationKey(field,value){return `${field}::${value}`}
 function buildKoreanIndexes(){
-  const animeList=window[`AnimeList_${THIS_YEAR}`];
+  const animeCatalog=window[`AnimeCatalog_${THIS_YEAR}`];
+  const animeList=Array.isArray(animeCatalog)?animeCatalog.filter(item=>item?.day!=='Cinema'):[];
   const characterGroups=window[`CharacterData_${THIS_YEAR}`];
   const cvList=window[`CharacterVoiceData_${THIS_YEAR}`];
   if(!animeList&&!characterGroups&&!cvList)return null;

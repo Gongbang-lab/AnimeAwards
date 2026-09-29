@@ -86,7 +86,7 @@ function valuesAsArray(value) {
  * --------------------------------------------------------- */
 
 function loadAnimeData() {
-    return valuesAsArray(getGlobalArray("AnimeList_2026"));
+    return valuesAsArray(getGlobalArray("AnimeList"));
 }
 
 function loadCharacterData() {

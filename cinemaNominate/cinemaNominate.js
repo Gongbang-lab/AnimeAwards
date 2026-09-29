@@ -3,8 +3,8 @@ const cinemaState = {
     awardName: "올해의 시네마 상"
 };
 
-const movies = (typeof cinemaData_2026 !== 'undefined')
-    ? SeasonFilter.filterAnimeList(cinemaData_2026)
+const movies = (typeof cinemaData !== 'undefined' && Array.isArray(cinemaData))
+    ? SeasonFilter.filterAnimeList(cinemaData)
     : [];
 
 document.addEventListener("DOMContentLoaded", () => {

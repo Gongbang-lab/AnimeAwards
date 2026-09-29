@@ -94,10 +94,9 @@ function checkManifest(ctx) {
 
 function checkDatasetPresence(ctx) {
   const expected = [
-    `AnimeList_${YEAR}`,
+    `AnimeCatalog_${YEAR}`,
     `CharacterData_${YEAR}`,
     `CharacterVoiceData_${YEAR}`,
-    `cinemaData_${YEAR}`,
     `AnimeSongs_${YEAR}`,
     `AnimeStudioData_${YEAR}`,
     `animeDirectorData_${YEAR}`,
@@ -115,8 +114,7 @@ function checkDatasetPresence(ctx) {
   }
 }
 
-function checkAnimeList(ctx) {
-  const data = ctx[`AnimeList_${YEAR}`];
+function checkAnimeList(ctx, data) {
   if (!Array.isArray(data)) return new Map();
 
   const map = new Map();
@@ -444,8 +442,10 @@ function main() {
   const ctx = readDataFiles();
   checkManifest(ctx);
   checkDatasetPresence(ctx);
-  const animeMap = checkAnimeList(ctx);
-  const cinemaData = Array.isArray(ctx[`cinemaData_${YEAR}`]) ? ctx[`cinemaData_${YEAR}`] : [];
+  const catalog = Array.isArray(ctx[`AnimeCatalog_${YEAR}`]) ? ctx[`AnimeCatalog_${YEAR}`] : [];
+  const animeList = catalog.filter(item => item?.day !== 'Cinema');
+  const cinemaData = catalog.filter(item => item?.day === 'Cinema');
+  const animeMap = checkAnimeList(ctx, animeList);
   const cinemaMap = new Map(cinemaData.map(x => [String(x.id), x]));
   const characterData = Array.isArray(ctx[`CharacterData_${YEAR}`]) ? ctx[`CharacterData_${YEAR}`] : [];
 

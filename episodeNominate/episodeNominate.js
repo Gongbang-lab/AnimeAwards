@@ -21,7 +21,7 @@ const els = {
 };
 
 function init() {
-    if (typeof AnimeList === 'undefined') {
+    if (typeof TVAnimeList === 'undefined') {
         alert("AnimeList 데이터를 로드할 수 없습니다.");
         return;
     }
@@ -31,7 +31,7 @@ function init() {
     const stepTitleEl = document.getElementById("step-title-display");
     if (stepTitleEl) stepTitleEl.textContent = `${SeasonFilter.toDisplayAwardName("베스트 에피소드")} 부문`;
 
-    const seasonFilteredList = SeasonFilter.filterAnimeList(AnimeList);
+    const seasonFilteredList = SeasonFilter.filterAnimeList(TVAnimeList);
     const groupedData = groupData(seasonFilteredList);
     renderAccordion(groupedData);
     setupSearch();

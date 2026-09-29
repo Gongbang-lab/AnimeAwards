@@ -43,7 +43,7 @@ function inSeason(item, year, quarter) {
 }
 
 const sourceFiles = {
-  anime: (year) => [`data/${year}/${year}animeData.js`, `AnimeList_${year}`],
+  anime: (year) => [`data/${year}/${year}animeData.js`, `AnimeCatalog_${year}`],
   characters: (year) => [`data/${year}/${year}animeCharacterData.js`, `CharacterData_${year}`],
   voices: (year) => [`data/${year}/${year}animeCVData.js`, `CharacterVoiceData_${year}`],
   songs: (year) => [`data/${year}/${year}animeSongsData.js`, `AnimeSongs_${year}`],
@@ -52,7 +52,6 @@ const sourceFiles = {
   adaptors: (year) => [`data/${year}/${year}animeAdaptorData.js`, `AnimeAdaptorData_${year}`],
   rookies: (year) => [`data/${year}/${year}animeRookieCVData.js`, `RookieCVData_${year}`],
   memes: (year) => [`data/${year}/${year}animeMemeData.js`, `AnimeMemeData_${year}`],
-  cinema: (year) => [`data/${year}/${year}animeCinemaData.js`, `cinemaData_${year}`],
   scriptwriters: (year) => [`data/${year}/${year}animescriptwriterData.js`, `scriptwriterData_${year}`]
 };
 
@@ -153,6 +152,9 @@ for (const year of years) {
     const [file, variable] = getSource(year);
     if (loadFile(file)) data[key] = readVariable(variable);
   }
+  const workCatalog = asArray(data.anime);
+  data.anime = workCatalog;
+  data.cinema = workCatalog.filter(item => item?.day === "Cinema");
 
   for (const quarter of quarters) {
     const seasonKey = `${year}_${quarter}`;

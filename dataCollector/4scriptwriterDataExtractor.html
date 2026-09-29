@@ -32,7 +32,7 @@
 
 <div class="container">
     <h2>✍️ 각본상(scriptwriter) 데이터 추출 도구 (통합)</h2>
-    <p><code>animeData.js</code>와 <code>animeCinemaData.js</code>의 데이터를 통합하여 변환합니다.</p>
+    <p>단일 작품 카탈로그에서 TVA와 극장판 각본 데이터를 함께 변환합니다.</p>
 
     <div class="controls">
         <button class="btn-extract" onclick="extractData()">🔍 데이터 추출</button>
@@ -46,26 +46,18 @@
 
 <!-- 데이터 소스 로드 -->
 <script src="../data/2026/2026animeData.js"></script>
-<script src="../data/2026/2026animeCinemaData.js"></script>
 
 <script>
     let generatedContent = "";
 
     function extractData() {
-        const isTvaExist = typeof AnimeList_2026 !== 'undefined';
-        const isCinemaExist = typeof cinemaData_2026 !== 'undefined';
-
-        if (!isTvaExist && !isCinemaExist) {
+        const combinedList = typeof AnimeCatalog_2026 !== 'undefined' ? AnimeCatalog_2026 : [];
+        if (combinedList.length === 0) {
             alert("데이터 파일을 찾을 수 없습니다. 경로를 확인해주세요.");
             return;
         }
 
         const nominatedList = [];
-        let combinedList = [];
-
-        // 데이터 통합
-        if (isTvaExist) combinedList = combinedList.concat(AnimeList_2026);
-        if (isCinemaExist) combinedList = combinedList.concat(cinemaData_2026);
 
         combinedList.forEach(anime => {
             // scriptwriter 데이터가 있는 경우만 추출

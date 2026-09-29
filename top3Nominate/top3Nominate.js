@@ -7,7 +7,7 @@ const top3State = {
     allAnime: (typeof AnimeList !== 'undefined') ? SeasonFilter.filterAnimeList(AnimeList) : []
 };
 
-const DAY_LABELS = { "Mondays":"월요일", "Tuesdays":"화요일", "Wednesdays":"수요일", "Thursdays":"목요일", "Fridays":"금요일", "Saturdays":"토요일", "Sundays":"일요일", "Anomaly":"변칙 편성", "Web":"웹" };
+const DAY_LABELS = { "Mondays":"월요일", "Tuesdays":"화요일", "Wednesdays":"수요일", "Thursdays":"목요일", "Fridays":"금요일", "Saturdays":"토요일", "Sundays":"일요일", "Anomaly":"변칙 편성", "Web":"웹", "Cinema":"극장판" };
 const RANK_NAMES = ["우수상", "최우수상", "대상"];
 
 document.addEventListener("DOMContentLoaded", () => {

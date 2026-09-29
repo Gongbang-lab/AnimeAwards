@@ -8,22 +8,23 @@ const nominateState = {
 
 const QUARTER_MAP = {
     "Q1": "1분기", "Q2": "2분기", "Q3": "3분기", "Q4": "4분기",
-    "Anomaly": "변칙 편성", "Web": "웹"
+    "Anomaly": "변칙 편성", "Web": "웹", "Cinema": "극장판"
 };
 
 const DAY_LABELS = {
     "Mondays": "월요일", "Tuesdays": "화요일", "Wednesdays": "수요일", "Thursdays": "목요일",
     "Fridays": "금요일", "Saturdays": "토요일", "Sundays": "일요일",
-    "Anomaly": "변칙 편성", "Web": "웹"
+    "Anomaly": "변칙 편성", "Web": "웹", "Cinema": "극장판"
 };
 
-const DAY_KEYS = ["Mondays", "Tuesdays", "Wednesdays", "Thursdays", "Fridays", "Saturdays", "Sundays", "Anomaly", "Web"];
+const DAY_KEYS = ["Mondays", "Tuesdays", "Wednesdays", "Thursdays", "Fridays", "Saturdays", "Sundays", "Anomaly", "Web", "Cinema"];
 
 const sourceData = (typeof AnimeAdaptorData !== 'undefined')
     ? SeasonFilter.filterAnimeList(AnimeAdaptorData)
     : [];
 
-const SeasonFilteredList = SeasonFilter.filterAnimeList(AnimeList);
+// 각색상 후보는 전체 작품이 아니라 adaptor 데이터에 추출된 작품만 사용한다.
+const SeasonFilteredList = sourceData;
 
 const AnimeByQuarter = SeasonFilteredList.reduce((acc, anime) => {
     const q = anime.quarter || "기타";
@@ -101,7 +102,7 @@ function renderStep1(filterText = "") {
 
             const dBtn = document.createElement("button");
             dBtn.className = `day-btn ${isSearching ? 'active' : ''}`;
-            dBtn.innerHTML = `${DAY_LABELS[dKey]} <span>▼</span>`;
+            dBtn.innerHTML = `${DAY_LABELS[dKey] || dKey} <span>▼</span>`;
 
             const dContent = document.createElement("div");
             dContent.className = "day-content";
