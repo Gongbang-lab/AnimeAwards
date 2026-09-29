@@ -233,8 +233,27 @@ var AnimeMemeData_2026 = [
         "src1": "image/meme/리제로_1.gif",
         "src2": "image/meme/리제로_2.gif",
         "src3": "image/meme/리제로_3.gif",
-        "origin": "뫼비우스 더스트",
+        "origin": "Re:제로부터 시작하는 이세계 생활 4기",
         "quarter": "3분기",
         "year" : 2026
-    }
+    },
+        {
+        "id": "meme_027",
+        "name": "도망을 잘 치는 도련님 신 여캐",
+        "type": "gif",
+        "src1": "image/meme/도망친 갸루.gif",
+        "origin": "도망을 잘 치는 도련님",
+        "quarter": "3분기",
+        "year": 2026
+    },
+    {
+        "id": "meme_028",
+        "name": "블리치 천년혈전 편 : 화진담",
+        "type": "mp4",
+        "src1": "image/meme/아이젠1.mp4",
+        "src2": "image/meme/아이젠.mp4",
+        "origin": "블리치 천년혈전 편 : 화진담",
+        "quarter": "3분기",
+        "year": 2026
+    },
 ];

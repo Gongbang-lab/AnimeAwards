@@ -4652,7 +4652,7 @@ var AnimeList_2026 = [
   "id": 63347,
   "title": "월드 이즈 댄싱",
   "year": 2026,
-  "quarter": "2분기",
+  "quarter": "3분기",
   "thumbnail": "image/animeimg/2026/Q2/월드 이즈 댄싱.webp",
   "day": "Mondays",
   "episodes": 13,
