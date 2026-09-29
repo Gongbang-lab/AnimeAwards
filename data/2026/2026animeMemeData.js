@@ -173,18 +173,6 @@ var AnimeMemeData_2026 = [
         "year" : 2026
     },
     {
-        "id": "meme_021",
-        "name": "검복동 액션씬",
-        "type": "gif",
-        "src1": "image/meme/검복동1.gif",
-        "src2": "image/meme/검복동2.gif",
-        "src3": "image/meme/검복동3.gif",
-        "src4": "image/meme/검복동4.gif",
-        "origin": "촌구석 아저씨, 검성이 되다 Ⅱ",
-        "quarter": "3분기",
-        "year" : 2026
-    },
-    {
         "id": "meme_022",
         "name": "아냐네코 집주인",
         "type": "webp",
@@ -251,7 +239,6 @@ var AnimeMemeData_2026 = [
         "name": "블리치 천년혈전 편 : 화진담",
         "type": "mp4",
         "src1": "image/meme/아이젠1.mp4",
-        "src2": "image/meme/아이젠.mp4",
         "origin": "블리치 천년혈전 편 : 화진담",
         "quarter": "3분기",
         "year": 2026
