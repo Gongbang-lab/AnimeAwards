@@ -1,0 +1,58 @@
+.ost-nominee-card { overflow: hidden; }
+.ost-nominee-card > img { aspect-ratio: 11 / 16; }
+.ost-listen-badge {
+  border: 1px solid rgba(212, 175, 55, .65);
+  cursor: pointer;
+  z-index: 12;
+}
+.ost-listen-badge:hover { background: var(--gold); color: #111; }
+.ost-step-heading { color: var(--gold); margin: 0 0 20px; font-size: 1.5rem; }
+.ost-empty-state, .ost-preview-empty { color: #888; text-align: center; padding: 28px 12px; }
+.preview-item { width: 100%; border: 1px solid transparent; }
+.ost-modal-content {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(220px, .8fr) minmax(0, 1.5fr);
+  gap: 28px;
+  width: min(94vw, 1000px);
+  max-height: 86vh;
+  overflow: auto;
+  padding: 32px;
+}
+.ost-modal-close {
+  position: absolute; top: 10px; right: 16px; z-index: 2;
+  border: 0; background: transparent; color: #ddd; font-size: 2rem; cursor: pointer;
+}
+.ost-modal-close:hover { color: var(--gold); }
+.ost-modal-left { text-align: center; align-self: start; padding: 6px; }
+.ost-modal-left img {
+  display: block; width: min(100%, 280px); max-height: 48vh;
+  object-fit: cover; aspect-ratio: 2 / 3; margin: 0 auto 18px;
+  border-radius: 8px; border: 1px solid rgba(212, 175, 55, .5);
+}
+.ost-modal-left h2 { color: #fff; font-size: 1.3rem; margin: 8px 0 18px; line-height: 1.45; }
+.ost-composer-label { color: var(--gold); font-size: .8rem; font-weight: 700; margin: 0 0 5px; }
+.ost-composer { color: #bbb; line-height: 1.6; margin: 0; overflow-wrap: anywhere; }
+.ost-modal-right { min-width: 0; padding-top: 12px; }
+.ost-modal-right h3 { color: var(--gold); margin: 0 0 16px; font-size: 1.2rem; }
+.ost-track-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.ost-track-card {
+  min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  padding: 14px; background: #111; border: 1px solid #343434; border-radius: 9px;
+}
+.ost-track-title { color: #eee; font-weight: 600; line-height: 1.5; overflow-wrap: anywhere; }
+.ost-play-button {
+  flex: 0 0 auto; display: inline-flex; align-items: center; gap: 6px;
+  padding: 8px 11px; border-radius: 20px; background: var(--gold); color: #111;
+  font-size: .8rem; font-weight: 800; text-decoration: none;
+}
+.ost-play-button:hover { background: #f0cc58; transform: translateY(-1px); }
+.ost-play-unavailable { flex: 0 0 auto; color: #777; font-size: .75rem; }
+
+@media (max-width: 700px) {
+  .ost-modal-content { grid-template-columns: 1fr; gap: 16px; padding: 38px 20px 22px; }
+  .ost-modal-left img { width: min(45vw, 180px); max-height: 30vh; }
+  .ost-modal-left h2 { font-size: 1.1rem; margin-bottom: 10px; }
+  .ost-modal-right { padding-top: 0; }
+  .ost-track-grid { grid-template-columns: 1fr; }
+}

@@ -3,6 +3,7 @@
     let firebaseRetryTimer = null;
     let showVoteCounts = false;
     let voteBadgeTimer = null;
+    const MIN_PARTICIPANTS_FOR_VOTE_BADGE = 100;
 
     function fireConfetti() {
         const canvas = document.getElementById("confettiCanvas");
@@ -44,7 +45,7 @@
                 applyVoteBadges();
             }, 2200);
         }
-        const total = cachedVoteData._participants || 0;
+        const participantCount = Number(cachedVoteData._participants) || 0;
         // Step 2 nominee cards use page-specific classes, while sharing the
         // same vote key and badge markup as the Step 1 cards.
         document.querySelectorAll('.card, .song-card, .step2-cv-card, .step2-char-card').forEach(card => {
@@ -54,10 +55,15 @@
                 : rawIdentifier;
             const rateBadge = card.querySelector('.card-selection-rate');
             if (!rateBadge || !identifier) return;
-            const count = cachedVoteData[identifier] || 0;
-            const percent = total > 0 ? Math.round((count / total) * 100) : 0;
+            if (participantCount < MIN_PARTICIPANTS_FOR_VOTE_BADGE) {
+                rateBadge.style.display = "none";
+                return;
+            }
+
+            const count = Number(cachedVoteData[identifier]) || 0;
+            const percent = participantCount > 0 ? Math.round((count / participantCount) * 100) : 0;
             rateBadge.innerText = showVoteCounts
-                ? `${count} / ${total}`
+                ? `${count} / ${participantCount}`
                 : `${percent}%`;
             rateBadge.style.display = "block";
         });

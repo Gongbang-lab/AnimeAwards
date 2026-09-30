@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PV Data Collector</title>
+  <style>
+    :root { color-scheme: light; font-family: Pretendard, "Malgun Gothic", sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 26px 16px; background: #f1f5f9; color: #1e293b; }
+    main { width: min(100%, 850px); margin: auto; }
+    .panel { margin-bottom: 18px; padding: 24px; background: #fff; border: 1px solid #e2e8f0; border-radius: 15px; box-shadow: 0 5px 22px #0f172a0d; }
+    h1 { margin: 0 0 8px; font-size: 1.6rem; }
+    h2 { margin: 0 0 16px; font-size: 1.15rem; }
+    .muted { color: #64748b; line-height: 1.65; }
+    .form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .field { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+    label { font-size: .88rem; font-weight: 700; color: #334155; }
+    input { width: 100%; min-width: 0; padding: 11px 12px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 15px; }
+    input:focus { outline: 2px solid #bfdbfe; border-color: #2563eb; }
+    .id-line { display: flex; gap: 10px; align-items: end; margin-top: 18px; }
+    .id-line .field { flex: 1; }
+    button { border: 0; border-radius: 8px; padding: 11px 15px; background: #334155; color: white; font-weight: 700; cursor: pointer; }
+    button:hover { filter: brightness(1.1); }
+    button:disabled { opacity: .5; cursor: not-allowed; }
+    .primary { background: #2563eb; }
+    .success { background: #0f766e; }
+    .soft { background: #e2e8f0; color: #334155; }
+    .danger { background: #b91c1c; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    #status { min-height: 24px; margin: 14px 0 0; color: #2563eb; font-weight: 700; }
+    #status.error { color: #b91c1c; }
+    #status.success-text { color: #0f766e; }
+    #anime-title { margin: 16px 0 0; color: #475569; font-size: .98rem; }
+    .record-list { max-height: 260px; overflow: auto; border: 1px solid #e2e8f0; border-radius: 9px; }
+    .record-row { display: grid; grid-template-columns: 80px 1fr 1fr 1fr; gap: 10px; padding: 10px 12px; border-bottom: 1px solid #e2e8f0; font-size: .88rem; overflow-wrap: anywhere; }
+    .record-row:last-child { border-bottom: 0; }
+    .record-head { position: sticky; top: 0; background: #f8fafc; color: #64748b; font-weight: 700; }
+    .empty { padding: 18px; text-align: center; color: #64748b; }
+    #output { width: 100%; min-height: 260px; padding: 16px; overflow: auto; border: 0; border-radius: 10px; background: #0f172a; color: #cbd5e1; font: 13px/1.55 Consolas, monospace; white-space: pre; }
+    @media (max-width: 620px) {
+      body { padding: 12px; }
+      .panel { padding: 17px; }
+      .form-grid { grid-template-columns: 1fr; }
+      .id-line { align-items: stretch; flex-direction: column; }
+      .record-row { grid-template-columns: 70px 1fr; }
+      .record-row span:nth-child(n+2) { grid-column: 2; }
+      .id-line button { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <section class="panel">
+    <h1>📺 애니메이션 PV 데이터 수집기</h1>
+    <p class="muted">애니메이션 ID와 PV 제목·URL을 저장하세요. 같은 ID를 다시 저장하면 해당 작품의 정보를 갱신하고, 새 ID는 데이터에 누적합니다. 입력 데이터는 이 브라우저에 자동 보관되며, 복사 버튼으로 <code>animePVData_2026</code> 전체를 내보낼 수 있습니다.</p>
+    <div class="id-line">
+      <div class="field"><label for="anime-id">애니메이션 ID</label><input id="anime-id" inputmode="numeric" placeholder="예: 61886"></div>
+      <button id="load-btn" class="primary" type="button">ID 불러오기</button>
+    </div>
+    <p id="anime-title">ID를 입력해 주세요.</p>
+    <div class="form-grid" style="margin-top:16px">
+      <div class="field"><label for="pv-title">PV 제목</label><input id="pv-title" type="text" placeholder="예: 공식 PV 제1탄"></div>
+      <div class="field"><label for="pv-url-1">PV URL 1</label><input id="pv-url-1" type="url" placeholder="https://www.youtube.com/watch?v=..."></div>
+      <div class="field"><label for="pv-url-2">PV URL 2</label><input id="pv-url-2" type="url" placeholder="https://youtu.be/..."></div>
+    </div>
+    <div class="actions">
+      <button id="save-btn" class="success" type="button">데이터 저장 및 누적</button>
+      <button id="clear-form-btn" class="soft" type="button">입력 초기화</button>
+    </div>
+    <div id="status" role="status"></div>
+  </section>
+
+  <section class="panel">
+    <h2>저장된 PV 데이터 <span id="record-count" class="muted"></span></h2>
+    <div id="record-list" class="record-list"></div>
+  </section>
+
+  <section class="panel">
+    <h2>JavaScript 데이터 내보내기</h2>
+    <p class="muted">복사한 내용을 <code>data/2026/2026animePVData.js</code>에 붙여넣으면 프로젝트 원본 데이터로 반영됩니다.</p>
+    <pre id="output"></pre>
+    <div class="actions"><button id="copy-btn" class="primary" type="button">animePVData_2026 JS 복사</button></div>
+  </section>
+</main>
+
+<script src="../data/2026/2026animeData.js"></script>
+<script src="../data/2026/2026animePVData.js"></script>
+<script>
+(() => {
+  const STORAGE_KEY = "animePVDataCollector_2026";
+  const inputId = document.getElementById("anime-id");
+  const pvTitle = document.getElementById("pv-title");
+  const url1 = document.getElementById("pv-url-1");
+  const url2 = document.getElementById("pv-url-2");
+  const status = document.getElementById("status");
+  const output = document.getElementById("output");
+  const catalog = Array.isArray(window.AnimeCatalog_2026) ? window.AnimeCatalog_2026 : [];
+
+  function normalizeRecord(record) {
+    return {
+      id: Number(record.id),
+      pv_title: String(record.pv_title || ""),
+      pv_url1: String(record.pv_url1 || ""),
+      pv_url2: String(record.pv_url2 || "")
+    };
+  }
+
+  const source = Array.isArray(window.animePVData_2026) ? window.animePVData_2026 : [];
+  const stored = (() => {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]"); }
+    catch { return []; }
+  })();
+  const records = new Map(source.concat(Array.isArray(stored) ? stored : []).filter(item => item && Number.isFinite(Number(item.id)))
+    .map(item => [String(item.id), normalizeRecord(item)]));
+  let currentId = "";
+
+  function setStatus(message, type = "") {
+    status.textContent = message;
+    status.className = type;
+  }
+
+  function saveLocal() {
+    const sorted = [...records.values()].sort((a, b) => a.id - b.id);
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(sorted));
+    render();
+  }
+
+  function render() {
+    const sorted = [...records.values()].sort((a, b) => a.id - b.id);
+    document.getElementById("record-count").textContent = `(${sorted.length}개)`;
+    const list = document.getElementById("record-list");
+    list.replaceChildren();
+    if (!sorted.length) {
+      const empty = document.createElement("div");
+      empty.className = "empty";
+      empty.textContent = "저장된 PV 데이터가 없습니다.";
+      list.appendChild(empty);
+    } else {
+      const header = document.createElement("div");
+      header.className = "record-row record-head";
+      ["애니 ID", "PV 제목", "PV URL 1", "PV URL 2"].forEach(text => {
+        const span = document.createElement("span"); span.textContent = text; header.appendChild(span);
+      });
+      list.appendChild(header);
+      sorted.forEach(record => {
+        const row = document.createElement("div"); row.className = "record-row";
+        [record.id, record.pv_title || "-", record.pv_url1 || "-", record.pv_url2 || "-"].forEach(text => {
+          const span = document.createElement("span"); span.textContent = String(text); row.appendChild(span);
+        });
+        list.appendChild(row);
+      });
+    }
+    output.textContent = `var animePVData_2026 = ${JSON.stringify(sorted, null, 2)};`;
+  }
+
+  function findAnime(id) {
+    return catalog.find(anime => String(anime.id) === String(id));
+  }
+
+  function loadRecord() {
+    const id = inputId.value.trim();
+    if (!/^\d+$/.test(id) || Number(id) < 1) {
+      setStatus("숫자로 된 애니메이션 ID를 입력해 주세요.", "error");
+      return;
+    }
+    currentId = id;
+    const saved = records.get(id);
+    pvTitle.value = saved?.pv_title || "";
+    url1.value = saved?.pv_url1 || "";
+    url2.value = saved?.pv_url2 || "";
+    const anime = findAnime(id);
+    document.getElementById("anime-title").textContent = anime
+      ? `${anime.title} · ${anime.year || 2026}년 ${anime.quarter || "분기 미상"}`
+      : "프로젝트 작품 목록에 없는 ID입니다. 입력한 ID로 새 PV 항목을 저장할 수 있습니다.";
+    setStatus(saved ? `ID ${id}의 기존 PV 데이터를 불러왔습니다.` : `ID ${id}의 새 PV 항목을 준비했습니다.`, "success-text");
+  }
+
+  function validUrl(value, fieldName) {
+    if (!value.trim()) return true;
+    try {
+      const parsed = new URL(value.trim());
+      if (parsed.protocol !== "https:" && parsed.protocol !== "http:") throw new Error();
+      return true;
+    } catch {
+      setStatus(`${fieldName}은 http:// 또는 https:// URL로 입력해 주세요.`, "error");
+      return false;
+    }
+  }
+
+  function saveRecord() {
+    const id = (currentId || inputId.value).trim();
+    if (!/^\d+$/.test(id) || Number(id) < 1) {
+      setStatus("먼저 유효한 애니메이션 ID를 불러와 주세요.", "error");
+      return;
+    }
+    if (!validUrl(url1.value, "PV URL 1") || !validUrl(url2.value, "PV URL 2")) return;
+    records.set(id, {
+      id: Number(id),
+      pv_title: pvTitle.value.trim(),
+      pv_url1: url1.value.trim(),
+      pv_url2: url2.value.trim()
+    });
+    saveLocal();
+    setStatus(`ID ${id}의 PV 데이터를 저장했습니다. 브라우저에 자동 보관되고 전체 데이터에 누적되었습니다.`, "success-text");
+  }
+
+  document.getElementById("load-btn").addEventListener("click", loadRecord);
+  inputId.addEventListener("keydown", event => { if (event.key === "Enter") loadRecord(); });
+  document.getElementById("save-btn").addEventListener("click", saveRecord);
+  document.getElementById("clear-form-btn").addEventListener("click", () => {
+    inputId.value = ""; pvTitle.value = ""; url1.value = ""; url2.value = ""; currentId = "";
+    document.getElementById("anime-title").textContent = "ID를 입력해 주세요.";
+    setStatus("입력란을 초기화했습니다.");
+  });
+  document.getElementById("copy-btn").addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(output.textContent);
+      setStatus("animePVData_2026 전체 데이터가 클립보드에 복사되었습니다.", "success-text");
+    } catch {
+      const range = document.createRange(); range.selectNodeContents(output);
+      const selection = window.getSelection(); selection.removeAllRanges(); selection.addRange(range);
+      setStatus("자동 복사가 제한되어 코드 전체를 선택했습니다. Ctrl+C로 복사하세요.", "error");
+    }
+  });
+
+  render();
+  setStatus(`PV 데이터 ${records.size}개를 불러왔습니다.`, "success-text");
+})();
+</script>
+</body>
+</html>

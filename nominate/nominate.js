@@ -129,10 +129,13 @@ function createCard(anime) {
     card.setAttribute('data-anime-id', anime.title);
 
     const imgPath = `../${anime.thumbnail}`;
+    const badgeMarkup = isPVNomination()
+        ? '<button type="button" class="card-badge pv-card-badge">PV 보기</button>'
+        : `<div class="card-badge">${anime.quarter}</div>`;
 
     card.innerHTML = `
         <div class="card-selection-rate" style="display:none;">0/0</div>
-        <div class="card-badge">${anime.quarter}</div>
+        ${badgeMarkup}
         <img src="${imgPath}" onerror="this.src='https://placehold.co/400x600/2f3542/ffffff?text=No+Image'" loading="lazy">
         <div class="card-info">
             <div class="card-title">${anime.title}</div>
@@ -151,8 +154,86 @@ function createCard(anime) {
     }
     card.querySelector(".card-info").appendChild(detail);
 
+    if (isPVNomination()) {
+        card.querySelector(".pv-card-badge").addEventListener("click", event => {
+            event.stopPropagation();
+            openPVModal(anime);
+        });
+    }
+
     card.onclick = () => handleCardClick(anime, card);
     return card;
+}
+
+function getYouTubeVideoId(rawUrl) {
+    try {
+        const url = new URL(rawUrl);
+        const host = url.hostname.replace(/^www\./, "").toLowerCase();
+        if (host === "youtu.be") return url.pathname.split("/").filter(Boolean)[0] || "";
+        if (host !== "youtube.com" && host !== "m.youtube.com" && host !== "music.youtube.com") return "";
+        if (url.pathname === "/watch") return url.searchParams.get("v") || "";
+        const match = url.pathname.match(/^\/(?:embed|shorts|live)\/([^/?#]+)/);
+        return match?.[1] || "";
+    } catch {
+        return "";
+    }
+}
+
+function openPVModal(anime) {
+    const modal = document.getElementById("pv-modal");
+    const grid = document.getElementById("pv-card-grid");
+    const data = Array.isArray(window.animePVData) ? window.animePVData : [];
+    const record = data.find(item => String(item?.id) === String(anime.id));
+    const tracks = record ? [record.pv_url1, record.pv_url2]
+        .map((url, index) => ({ url: String(url || "").trim(), index }))
+        .filter(item => item.url) : [];
+
+    document.getElementById("pv-modal-title").textContent = `${anime.title} PV`;
+    grid.replaceChildren();
+    if (!tracks.length) {
+        const empty = document.createElement("p");
+        empty.className = "pv-empty";
+        empty.textContent = "등록된 PV가 없습니다.";
+        grid.appendChild(empty);
+    }
+
+    tracks.forEach(({ url, index }) => {
+        const videoId = getYouTubeVideoId(url);
+        const article = document.createElement("article");
+        article.className = "pv-video-card";
+        if (videoId) {
+            const link = document.createElement("a");
+            link.className = "pv-video-link";
+            link.href = url;
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+            link.setAttribute("aria-label", `${record.pv_title || `PV ${index + 1}`} 재생`);
+            const image = document.createElement("img");
+            image.src = `https://img.youtube.com/vi/${encodeURIComponent(videoId)}/hqdefault.jpg`;
+            image.alt = `${record.pv_title || `PV ${index + 1}`} 썸네일`;
+            image.loading = "lazy";
+            link.appendChild(image);
+            article.appendChild(link);
+        } else {
+            const link = document.createElement("a");
+            link.className = "pv-video-link pv-invalid-thumbnail";
+            link.href = url;
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+            link.textContent = "PV 열기";
+            article.appendChild(link);
+        }
+        const title = document.createElement("p");
+        title.className = "pv-video-title";
+        title.textContent = record.pv_title || `PV ${index + 1}`;
+        article.appendChild(title);
+        grid.appendChild(article);
+    });
+    modal.classList.remove("hidden");
+}
+
+function isPVNomination() {
+    return nominateState.theme === "pv_mode";
 }
 
 // 카드 클릭 핸들러
@@ -448,6 +529,13 @@ if(btnHome) btnHome.onclick = () => location.href = "../index.html";
 
 const btnGoMain = document.getElementById("go-main-btn");
 if(btnGoMain) btnGoMain.onclick = () => location.href = "../index.html";
+
+const pvModal = document.getElementById("pv-modal");
+const pvModalClose = document.getElementById("pv-modal-close");
+if (pvModalClose) pvModalClose.onclick = () => pvModal.classList.add("hidden");
+if (pvModal) pvModal.addEventListener("click", event => {
+    if (event.target === pvModal) pvModal.classList.add("hidden");
+});
 
 // ──────────────────────────────────────────────────────────
 // ✅ 수정: renderStep1() 중복 호출 제거 (기존엔 이 지점과 파일 상단 "초기 실행" 두 군데서 호출됨)

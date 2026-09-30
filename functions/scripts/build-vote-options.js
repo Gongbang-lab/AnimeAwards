@@ -85,6 +85,16 @@ function candidatesFor(theme, data, year, quarter) {
         .filter(song => expectedTypes.includes(String(song.type || "").toLowerCase()))
         .map(song => song.title);
     }
+    case "ost": {
+      const worksWithOst = new Set(asArray(data.songs)
+        .filter(item => inSeason(item, year, quarter))
+        .filter(item => asArray(item.songs).some(song =>
+          String(song?.type || "").toLowerCase() === "ost" &&
+          [song.title_1, song.title_2].some(title => String(title || "").trim())
+        ))
+        .map(item => String(item.id)));
+      return anime.filter(item => worksWithOst.has(String(item.id))).map(item => item.title);
+    }
     case "rookie_voice":
       return Object.values(data.rookies || {}).map(item => item && item.name);
     case "voice_male":

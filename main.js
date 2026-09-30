@@ -160,6 +160,10 @@ if (savedAwards) {
     Awards.push(...parsedAwards);  // 로컬스토리지에 저장된(추가/삭제된) 데이터로 채워넣기
 }
 
+// 기존 브라우저 저장 목록에서도 설레발 상은 PV 전용 테마로 연결한다.
+const icarusAward = Awards.find(award => award.name === '올해의 설레발 상');
+if (icarusAward) icarusAward.theme = 'pv_mode';
+
 document.getElementById("save-img-btn").onclick = async function () {
     const target = document.body;
     const btnGroup = document.querySelectorAll(".top-icon-btn, .floating-btn");
@@ -282,7 +286,7 @@ const categories = [
     { title: "캐릭터 부문", themes: ['character_male', 'character_female', 'best_couple','all_gender'], ratio: 'ratio-11-16' },
     { title: "스태프 부문", themes: ['scriptwriter', 'dramatization', 'director'], ratio: 'ratio-poster' },
     { title: "아트 부문", themes: ['in_between', 'key_animation'], ratio: 'ratio-poster' },
-    { title: "애니메이션 시리즈", themes: ['default', 'best_episode'], ratio: 'ratio-poster' },
+    { title: "애니메이션 시리즈", themes: ['default','pv_mode', 'best_episode'], ratio: 'ratio-poster' },
     { title: "올해의 시리즈", themes: ['cinema', 'studio', 'series', 'top3'], ratio: 'ratio-poster' }
 ];
 
@@ -455,7 +459,8 @@ function createAwardCard(award, results, ratioClass) {
 
         if (theme === "top3" || theme === 'series') path = "top3Nominate/top3Nominate.html";
         else if (['opening', 'ending'].includes(theme)) path = "songNominate/songNominate.html";
-        else if (theme === 'ost') path = "nominate/nominate.html";
+        else if (theme === 'ost') path = "OSTNominate/OSTNominate.html";
+        else if (theme === 'pv_mode') path = "nominate/nominate.html";
         else if (theme === 'rookie_voice') path = "rookieNominate/rookieNominate.html";
         else if (theme === 'meme') path = "memeNominate/memeNominate.html";
         else if (theme === 'scriptwriter') path = "scriptwriterNominate/scriptwriterNominate.html";

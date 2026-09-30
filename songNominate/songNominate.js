@@ -23,10 +23,16 @@ function getMergedSongData(themeType) {
     const targetType = themeType === "opening" ? "op" : "ed";
     const result = {};
 
-    const animeInfoMap = {};
+    const animeInfoBySeason = new Map();
+    const animeInfoByQuarter = new Map();
+    const animeInfoById = new Map();
     if (typeof AnimeList !== 'undefined' && Array.isArray(AnimeList)) {
         AnimeList.forEach(anime => {
-            animeInfoMap[anime.id] = anime;
+            const id = String(anime.id);
+            const seasonKey = `${id}|${anime.year}|${anime.quarter}`;
+            animeInfoBySeason.set(seasonKey, anime);
+            animeInfoByQuarter.set(`${id}|${anime.quarter}`, anime);
+            if (!animeInfoById.has(id)) animeInfoById.set(id, anime);
         });
     } else {
         console.error("AnimeList 데이터를 찾을 수 없습니다.");
@@ -40,22 +46,26 @@ function getMergedSongData(themeType) {
     const seasonFilteredSongs = SeasonFilter.filterAnimeList(AnimeSongs);
 
     seasonFilteredSongs.forEach(group => {
-        const baseInfo = animeInfoMap[group.id];
+        const baseInfo = animeInfoBySeason.get(`${group.id}|${group.year}|${group.quarter}`)
+            || animeInfoByQuarter.get(`${group.id}|${group.quarter}`)
+            || animeInfoById.get(String(group.id));
         const quarterKey = group.quarter || "기타";
 
-        group.songs.forEach((song, index) => {
-            if (song.type === targetType) {
+        (Array.isArray(group.songs) ? group.songs : []).forEach((song, index) => {
+            const songType = String(song?.type || "").toLowerCase();
+            const songTitle = String(song?.title || "").trim();
+            if (songType === targetType && songTitle) {
                 if (!result[quarterKey]) result[quarterKey] = [];
 
                 result[quarterKey].push({
-                    uniqueId: `${group.id}-${song.type}-${index}`,
+                    uniqueId: `${group.id}-${songType}-${index}`,
                     id: group.id,
-                    animeTitle: group.animeTitle,
-                    title: song.title,
-                    artist: song.artist,
-                    youtube: song.youtube,
-                    thumbnail: ytThumb(song.youtube),
-                    day: baseInfo ? baseInfo.day : "기타",
+                    animeTitle: baseInfo?.title || group.animeTitle || `작품 ID ${group.id}`,
+                    title: songTitle,
+                    artist: String(song?.artist || ""),
+                    youtube: String(song?.youtube || ""),
+                    thumbnail: ytThumb(song?.youtube),
+                    day: baseInfo?.day || group.day || "기타",
                     displayQuarter: quarterKey
                 });
             }

@@ -23,6 +23,7 @@ const YEAR_DATA_KEYS = [
     ["AnimeAdaptorData",      "AnimeAdaptorData"],
     ["RookieCVData",     "RookieCVData"],
     ["animeEPData",           "animeEPData"],
+    ["animePVData",           "animePVData"],
     ["AnimeMemeData",         "AnimeMemeData"],
     ["scriptwriterData", "scriptwriterData"]
 ];
