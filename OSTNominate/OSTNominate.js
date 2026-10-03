@@ -12,36 +12,28 @@
   const dayKeys = Object.keys(dayLabels);
   const quarterOrder = ["1분기", "2분기", "3분기", "4분기", "변칙 편성", "기타"];
 
-  function keyFor(record) {
-    return `${String(record?.year ?? "")}|${String(record?.id ?? "")}|${String(record?.quarter ?? "")}`;
-  }
-
-  function extractTracks(record) {
-    return (Array.isArray(record?.songs) ? record.songs : [])
-      .filter(song => String(song?.type || "").toLowerCase() === "ost")
-      .flatMap(song => [1, 2].map(index => ({
-        title: String(song[`title_${index}`] || "").trim(),
-        youtube: String(song[`youtube_${index}`] || "").trim()
-      })).filter(track => track.title));
-  }
-
-  function getComposers(records) {
-    return [...new Set(records.flatMap(record => (Array.isArray(record?.songs) ? record.songs : [])
-      .filter(song => String(song?.type || "").toLowerCase() === "ost")
-      .map(song => String(song?.composer || "").trim()).filter(Boolean)))];
-  }
-
-  const songRecords = Array.isArray(window.AnimeSongs) ? window.AnimeSongs : [];
-  const songsByWork = new Map(songRecords.map(record => [keyFor(record), record]));
+  const asArray = value => Array.isArray(value) ? value : [];
+  // 수집 파일의 중첩 배열도 원본을 변경하지 않고 읽는다.
+  const ostById = new Map();
+  asArray(window.animeOSTData).flat(Infinity).filter(record => record?.id != null).forEach(record => {
+    const id = String(record.id);
+    const previous = ostById.get(id) || { albums: [], composers: [] };
+    previous.albums.push(...asArray(record.albums));
+    previous.composers.push(...(Array.isArray(record.composer) ? record.composer : [record.composer]).filter(Boolean));
+    ostById.set(id, previous);
+  });
   const seasonWorks = SeasonFilter.filterAnimeList(Array.isArray(window.AnimeList) ? window.AnimeList : []);
   const eligibleWorks = seasonWorks.map(anime => {
-    const record = songsByWork.get(keyFor(anime)) || songRecords.find(item =>
-      String(item?.id) === String(anime.id) && String(item?.year ?? anime.year) === String(anime.year) && item?.quarter === anime.quarter
-    );
-    const tracks = extractTracks(record);
-    if (!tracks.length) return null;
-    return { ...anime, tracks, composers: getComposers([record]) };
+    const record = ostById.get(String(anime.id));
+    const albums = asArray(record?.albums).filter(album => asArray(album?.discs)
+      .some(disc => asArray(disc?.tracks).some(track => String(track?.title || '').trim())));
+    if (!albums.length) return null;
+    return { ...anime, albums, thumbnail: albums[0].image || anime.thumbnail, composers: [...new Set(record.composers)] };
   }).filter(Boolean);
+
+  function imagePath(value) {
+    return /^https?:\/\//i.test(value || '') ? value : `../${value || 'image/trophy.png'}`;
+  }
 
   const worksByQuarter = eligibleWorks.reduce((groups, anime) => {
     const quarter = anime.quarter || "기타";
@@ -53,26 +45,30 @@
   stepTitle.textContent = `${SeasonFilter.toDisplayAwardName(state.awardName)} 부문`;
 
   function createTrackCard(track) {
-    const item = document.createElement("article");
+    const item = document.createElement("tr");
     item.className = "ost-track-card";
-    const title = document.createElement("span");
+    const number = document.createElement('td');
+    number.className = 'ost-track-number';
+    number.textContent = track.track_no ?? '-';
+    item.appendChild(number);
+    const title = document.createElement("td");
     title.className = "ost-track-title";
     title.textContent = track.title;
     item.appendChild(title);
-    if (/^https:\/\/(www\.)?(youtube\.com|youtu\.be)\//i.test(track.youtube)) {
-      const play = document.createElement("a");
-      play.className = "ost-play-button";
-      play.href = track.youtube;
-      play.target = "_blank";
-      play.rel = "noopener noreferrer";
-      play.setAttribute("aria-label", `${track.title} 재생`);
-      play.innerHTML = '<span aria-hidden="true">▶</span><span>재생</span>';
-      item.appendChild(play);
-    } else {
-      const unavailable = document.createElement("span");
-      unavailable.className = "ost-play-unavailable";
-      unavailable.textContent = "링크 없음";
-      item.appendChild(unavailable);
+    for (const [field, label] of [['itunes_url', '아이튠즈로 이동'], ['youtube_url', '유튜브로 이동']]) {
+      const cell = document.createElement('td');
+      cell.className = 'ost-track-links';
+      cell.textContent = '—';
+      item.appendChild(cell);
+      let url;
+      try { url = new URL(track[field]); } catch { continue; }
+      if (!['https:', 'http:'].includes(url.protocol)) continue;
+      const link = document.createElement('a');
+      link.href = track[field];
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.textContent = label;
+      cell.replaceChildren(link);
     }
     return item;
   }
@@ -80,12 +76,49 @@
   function openListenModal(anime) {
     const modal = document.getElementById("ost-listen-modal");
     const image = document.getElementById("ost-modal-image");
-    image.src = `../${anime.thumbnail || "image/trophy.png"}`;
-    image.onerror = () => { image.src = "../image/trophy.png"; image.onerror = null; };
     document.getElementById("ost-modal-title").textContent = anime.title;
     document.getElementById("ost-modal-composer").textContent = anime.composers.join(", ") || "정보 없음";
     const grid = document.getElementById("ost-track-grid");
-    grid.replaceChildren(...anime.tracks.map(createTrackCard));
+    const select = document.getElementById('ost-album-select');
+    select.replaceChildren(...anime.albums.map((album, index) => {
+      const option = document.createElement('option');
+      option.value = index;
+      option.textContent = `앨범 ${index + 1} · ${album.release_date || '발매일 미상'}`;
+      return option;
+    }));
+    document.getElementById('ost-album-picker').hidden = anime.albums.length < 2;
+    function renderAlbum(index) {
+      const album = anime.albums[index];
+      image.onerror = () => { image.onerror = null; image.src = '../image/trophy.png'; };
+      image.src = imagePath(album.image || anime.thumbnail);
+      image.alt = `${anime.title} OST 앨범`;
+      document.getElementById('ost-modal-release-date').textContent = album.release_date || '정보 없음';
+      grid.replaceChildren();
+      const table = document.createElement('table');
+      table.className = 'ost-track-table';
+      const head = table.createTHead().insertRow();
+      for (const label of ['번호', '트랙 제목', '아이튠즈', '유튜브']) {
+        const th = document.createElement('th');
+        th.scope = 'col';
+        th.textContent = label;
+        head.appendChild(th);
+      }
+      asArray(album.discs).forEach((disc, discIndex) => {
+        const body = table.createTBody();
+        const heading = document.createElement('th');
+        heading.colSpan = 4;
+        heading.scope = 'rowgroup';
+        heading.className = 'ost-disc-heading';
+        heading.textContent = `DISC ${disc.disc ?? discIndex + 1}`;
+        body.insertRow().appendChild(heading);
+        asArray(disc.tracks).filter(track => String(track?.title || '').trim()).forEach(track => body.appendChild(createTrackCard(track)));
+      });
+      grid.appendChild(table);
+      grid.scrollTop = 0;
+      grid.scrollLeft = 0;
+    }
+    select.onchange = () => renderAlbum(Number(select.value));
+    renderAlbum(0);
     modal.classList.remove("hidden");
   }
 
@@ -102,7 +135,7 @@
     rate.style.display = "none";
     rate.textContent = "0/0";
     const image = document.createElement("img");
-    image.src = `../${anime.thumbnail || "image/trophy.png"}`;
+    image.src = imagePath(anime.thumbnail);
     image.alt = anime.title;
     image.loading = "lazy";
     image.onerror = () => { image.src = "../image/trophy.png"; image.onerror = null; };
@@ -272,7 +305,7 @@
       thumbnail: winner.thumbnail,
       composer: winner.composers
     });
-    document.getElementById("modal-img").src = `../${winner.thumbnail || "image/trophy.png"}`;
+    document.getElementById("modal-img").src = imagePath(winner.thumbnail);
     document.getElementById("modal-title").textContent = winner.title;
     document.getElementById("modal-quarter").textContent = winner.quarter || "-";
     document.getElementById("modal-composer").textContent = winner.composers.join(", ") || "정보 없음";

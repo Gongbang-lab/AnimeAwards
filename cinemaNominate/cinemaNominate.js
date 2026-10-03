@@ -132,7 +132,7 @@ function showWinnerCelebration(winner) {
     const displayStudio = Array.isArray(winner.studio) && winner.studio.length ? winner.studio.join(', ') : '-';
     const displayDirector = winner.staff && Array.isArray(winner.staff.director) ? winner.staff.director.join(', ') : '-';
     const displayWriter = winner.staff && Array.isArray(winner.staff.scriptwriter) ? winner.staff.scriptwriter.join(', ') : '-';
-    const displayCharDesign = winner.staff && Array.isArray(winner.staff.character_design) ? winner.staff.character_design.join(', ') : '-';
+    const displayAdaptor = Array.isArray(winner.staff?.adaptor) ? winner.staff.adaptor.join(', ') : '-';
 
     popup.innerHTML = `
         <div class="modal-content celebration-modal">
@@ -146,7 +146,7 @@ function showWinnerCelebration(winner) {
                 <div class="detail-item"><span class="detail-label">Studio</span><span class="detail-value">${escapeHtml(displayStudio)}</span></div>
                 <div class="detail-item"><span class="detail-label">Director</span><span class="detail-value">${escapeHtml(displayDirector)}</span></div>
                 <div class="detail-item"><span class="detail-label">Scriptwriter</span><span class="detail-value">${escapeHtml(displayWriter)}</span></div>
-                <div class="detail-item"><span class="detail-label">Character Design</span><span class="detail-value">${escapeHtml(displayCharDesign)}</span></div>
+                <div class="detail-item"><span class="detail-label">Adaptor</span><span class="detail-value">${escapeHtml(displayAdaptor)}</span></div>
             </div>
             <button class="gold-btn full-width" onclick="location.href='../index.html'">결과 저장 및 메인으로</button>
         </div>

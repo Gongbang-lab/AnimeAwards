@@ -47,6 +47,7 @@ const sourceFiles = {
   characters: (year) => [`data/${year}/${year}animeCharacterData.js`, `CharacterData_${year}`],
   voices: (year) => [`data/${year}/${year}animeCVData.js`, `CharacterVoiceData_${year}`],
   songs: (year) => [`data/${year}/${year}animeSongsData.js`, `AnimeSongs_${year}`],
+  ost: (year) => [`data/${year}/${year}animeOSTData.js`, `animeOSTData_${year}`],
   studios: (year) => [`data/${year}/${year}animeStudioData.js`, `AnimeStudioData_${year}`],
   directors: (year) => [`data/${year}/${year}animeDirectorData.js`, `animeDirectorData_${year}`],
   adaptors: (year) => [`data/${year}/${year}animeAdaptorData.js`, `AnimeAdaptorData_${year}`],
@@ -86,12 +87,10 @@ function candidatesFor(theme, data, year, quarter) {
         .map(song => song.title);
     }
     case "ost": {
-      const worksWithOst = new Set(asArray(data.songs)
-        .filter(item => inSeason(item, year, quarter))
-        .filter(item => asArray(item.songs).some(song =>
-          String(song?.type || "").toLowerCase() === "ost" &&
-          [song.title_1, song.title_2].some(title => String(title || "").trim())
-        ))
+      const worksWithOst = new Set(asArray(data.ost).flat(Infinity)
+        .filter(item => asArray(item?.albums).some(album =>
+          asArray(album?.discs).some(disc => asArray(disc?.tracks)
+            .some(track => String(track?.title || '').trim()))))
         .map(item => String(item.id)));
       return anime.filter(item => worksWithOst.has(String(item.id))).map(item => item.title);
     }

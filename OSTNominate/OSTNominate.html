@@ -32,12 +32,16 @@
   <div id="ost-listen-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="ost-modal-title">
     <div class="modal-content ost-modal-content">
       <button class="ost-modal-close" id="ost-modal-close" aria-label="닫기">&times;</button>
+      <div class="ost-modal-body">
       <div class="ost-modal-left">
         <img id="ost-modal-image" src="" alt="애니메이션 이미지">
         <h2 id="ost-modal-title"></h2>
         <p class="ost-composer-label">Composer</p><p id="ost-modal-composer" class="ost-composer"></p>
+        <div id="ost-album-picker" hidden><label for="ost-album-select">앨범 선택</label><select id="ost-album-select"></select></div>
+        <p class="ost-composer-label">발매일</p><p id="ost-modal-release-date" class="ost-composer"></p>
       </div>
       <section class="ost-modal-right"><h3>OST 트랙</h3><div id="ost-track-grid" class="ost-track-grid"></div></section>
+      </div>
     </div>
   </div>
 
@@ -59,7 +63,7 @@
   <script src="../data/manifest.js"></script>
   <script src="../resultStorage.js"></script>
   <script src="../data/2026/2026animeData.js"></script>
-  <script src="../data/2026/2026animeSongsData.js"></script>
+  <script src="../data/2026/2026animeOSTData.js"></script>
   <script src="../data/resolveYear.js"></script>
   <script src="../seasonFilter.js"></script>
   <script src="../nominateCommon.js"></script>

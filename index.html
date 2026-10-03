@@ -115,31 +115,32 @@
       </div>
       <div class="modal-body">
         <div class="form-group">
-          <label>상 제목</label>
+          <label for="new-award-title">상 제목</label>
           <input type="text" id="new-award-title" placeholder="예: 베스트 러브코디미" autocomplete="off">
         </div>
-        <div class="form-group">
-          <label>테마 선택</label>
-          <select id="new-award-theme">
-            <option value="default">기본 테마</option>
-            <option value="opening">오프닝</option>
-            <option value="ending">엔딩</option>
-            <option value="ost">OST</option>
-            <option value="rookie_voice">신인 성우</option>
-            <option value="meme">밈</option>
-            <option value="original">각본</option>
-            <option value="director">감독</option>
-            <option value="dramatization">각색</option>
-            <option value="best_episode">베스트 에피소드</option>
-            <option value="cinema">시네마</option>
-            <option value="studio">스튜디오</option>
-            <option value="character_male">남우 주연</option>
-            <option value="character_female">여우 주연</option>
-            <option value="all_gender">모든 캐릭터</option>
-            <option value="voice_male">남성 성우</option>
-            <option value="best_couple">베스트 커플</option>
-          </select>
-        </div>
+        <fieldset class="form-group award-theme-fieldset">
+          <legend>테마 선택</legend>
+          <div id="new-award-theme" class="award-theme-grid">
+            <label class="award-theme-option"><input type="radio" name="new-award-theme" value="default" checked><span class="award-theme-card">기본 테마</span></label>
+            <label class="award-theme-option"><input type="radio" name="new-award-theme" value="pv_mode"><span class="award-theme-card">PV</span></label>
+            <label class="award-theme-option"><input type="radio" name="new-award-theme" value="opening"><span class="award-theme-card">오프닝</span></label>
+            <label class="award-theme-option"><input type="radio" name="new-award-theme" value="ending"><span class="award-theme-card">엔딩</span></label>
+            <label class="award-theme-option"><input type="radio" name="new-award-theme" value="ost"><span class="award-theme-card">OST</span></label>
+            <label class="award-theme-option"><input type="radio" name="new-award-theme" value="rookie_voice"><span class="award-theme-card">신인 성우</span></label>
+            <label class="award-theme-option"><input type="radio" name="new-award-theme" value="meme"><span class="award-theme-card">밈</span></label>
+            <label class="award-theme-option"><input type="radio" name="new-award-theme" value="original"><span class="award-theme-card">각본</span></label>
+            <label class="award-theme-option"><input type="radio" name="new-award-theme" value="director"><span class="award-theme-card">감독</span></label>
+            <label class="award-theme-option"><input type="radio" name="new-award-theme" value="dramatization"><span class="award-theme-card">각색</span></label>
+            <label class="award-theme-option"><input type="radio" name="new-award-theme" value="best_episode"><span class="award-theme-card">베스트 에피소드</span></label>
+            <label class="award-theme-option"><input type="radio" name="new-award-theme" value="cinema"><span class="award-theme-card">시네마</span></label>
+            <label class="award-theme-option"><input type="radio" name="new-award-theme" value="studio"><span class="award-theme-card">스튜디오</span></label>
+            <label class="award-theme-option"><input type="radio" name="new-award-theme" value="character_male"><span class="award-theme-card">남우 주연</span></label>
+            <label class="award-theme-option"><input type="radio" name="new-award-theme" value="character_female"><span class="award-theme-card">여우 주연</span></label>
+            <label class="award-theme-option"><input type="radio" name="new-award-theme" value="all_gender"><span class="award-theme-card">모든 캐릭터</span></label>
+            <label class="award-theme-option"><input type="radio" name="new-award-theme" value="voice_male"><span class="award-theme-card">남성 성우</span></label>
+            <label class="award-theme-option"><input type="radio" name="new-award-theme" value="best_couple"><span class="award-theme-card">베스트 커플</span></label>
+          </div>
+        </fieldset>
         <button id="submit-new-award" class="gold-btn" style="margin-top: 20px;">카드 추가하기</button>
       </div>
     </div>

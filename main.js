@@ -164,6 +164,18 @@ if (savedAwards) {
 const icarusAward = Awards.find(award => award.name === '올해의 설레발 상');
 if (icarusAward) icarusAward.theme = 'pv_mode';
 
+// 기존 카드 편집 목록의 원화상도 새 배경상으로 갱신한다.
+let migratedBackgroundAward = false;
+Awards.forEach(award => {
+    if (award.theme !== 'key_animation') return;
+    award.theme = 'background';
+    if (award.name === '베스트 원화(작화)상') award.name = '베스트 배경상';
+    migratedBackgroundAward = true;
+});
+if (savedAwards && migratedBackgroundAward) {
+    localStorage.setItem('custom_awards_list', JSON.stringify(Awards));
+}
+
 document.getElementById("save-img-btn").onclick = async function () {
     const target = document.body;
     const btnGroup = document.querySelectorAll(".top-icon-btn, .floating-btn");
@@ -285,7 +297,7 @@ const categories = [
     { title: "성우 부문", themes: ['rookie_voice', 'voice_male', 'voice_female'], ratio: 'ratio-11-16' },
     { title: "캐릭터 부문", themes: ['character_male', 'character_female', 'best_couple','all_gender'], ratio: 'ratio-11-16' },
     { title: "스태프 부문", themes: ['scriptwriter', 'dramatization', 'director'], ratio: 'ratio-poster' },
-    { title: "아트 부문", themes: ['in_between', 'key_animation'], ratio: 'ratio-poster' },
+    { title: "아트 부문", themes: ['in_between', 'default'], ratio: 'ratio-poster' },
     { title: "애니메이션 시리즈", themes: ['default','pv_mode', 'best_episode'], ratio: 'ratio-poster' },
     { title: "올해의 시리즈", themes: ['cinema', 'studio', 'series', 'top3'], ratio: 'ratio-poster' }
 ];
@@ -354,10 +366,11 @@ function renderAwards() {
         const grid = section.querySelector(".award-grid-inner");
         
         filteredAwards.forEach((award, index) => {
-            let finalRatio = (award.theme === 'studio') ? 'ratio-1-1' : cat.ratio;
+            let finalRatio = ['studio', 'ost'].includes(award.theme) ? 'ratio-1-1' : cat.ratio;
             const card = createAwardCard(award, results, finalRatio);
 
             if (award.theme === 'studio') card.classList.add('studio-card');
+            if (award.theme === 'ost') card.classList.add('ost-award-card');
 
             const delay = (index % 4) * 100; 
             card.setAttribute("data-aos", "fade-up");
@@ -528,7 +541,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if(submitNewAwardBtn) {
         submitNewAwardBtn.onclick = () => {
             const title = document.getElementById("new-award-title").value;
-            const theme = document.getElementById("new-award-theme").value;
+            const theme = document.querySelector('input[name="new-award-theme"]:checked').value;
 
             if (!title.trim()) {
                 alert("상 제목을 입력해주세요!");

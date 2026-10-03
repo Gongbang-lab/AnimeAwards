@@ -73,13 +73,9 @@
     <div class="section-heading"><h2>엔딩 (ED)</h2><button class="add-button" type="button" data-add="ed">+ ED 추가</button></div>
     <div id="edList"></div>
   </section>
-  <section class="music-section">
-    <div class="section-heading"><h2>OST</h2><button class="add-button" type="button" data-add="ost">+ OST 추가</button></div>
-    <div id="ostList"></div>
-  </section>
 
   <div class="toolbar">
-    <span class="muted">OP·ED·OST 입력값은 자동으로 전체 데이터에 반영됩니다.</span>
+    <span class="muted">OP·ED 입력값은 자동으로 전체 데이터에 반영됩니다.</span>
     <button id="copyButton" class="primary" type="button">완료된 데이터 JS 복사</button>
   </div>
   <textarea id="resultArea" readonly spellcheck="false" aria-label="완성된 AnimeSongs JavaScript 데이터"></textarea>
@@ -100,24 +96,11 @@
   const resultArea = document.getElementById("resultArea");
 
   function emptySong(type) {
-    if (type === "ost") {
-      return { type: "ost", composer: "", title_1: "", youtube_1: "", title_2: "", youtube_2: "" };
-    }
     return { type, title: "", artist: "", youtube: "" };
   }
 
   function normalizeSong(song) {
     const type = String(song?.type || "").toLowerCase();
-    if (type === "ost") {
-      return {
-        type: "ost",
-        composer: String(song.composer || ""),
-        title_1: String(song.title_1 || ""),
-        youtube_1: String(song.youtube_1 || ""),
-        title_2: String(song.title_2 || ""),
-        youtube_2: String(song.youtube_2 || "")
-      };
-    }
     return {
       type: type === "ed" ? "ed" : "op",
       title: String(song?.title || ""),
@@ -128,8 +111,11 @@
 
   function ensureEmptyCategories(record) {
     if (!Array.isArray(record.songs)) record.songs = [];
-    record.songs = record.songs.map(normalizeSong);
-    for (const type of ["op", "ed", "ost"]) {
+    // 기존 데이터에 남아 있는 ost 항목은 제거
+    record.songs = record.songs
+      .filter(song => String(song?.type || "").toLowerCase() !== "ost")
+      .map(normalizeSong);
+    for (const type of ["op", "ed"]) {
       if (!record.songs.some(song => song.type === type)) record.songs.push(emptySong(type));
     }
   }
@@ -152,16 +138,8 @@
 
     target.innerHTML = matches.map(({ song, index }, displayIndex) => {
       const removable = displayIndex > 0;
-      const heading = type === "ost" ? `OST ${displayIndex + 1}` : `${type.toUpperCase()} ${displayIndex + 1}`;
-      const fields = type === "ost"
-        ? `<div class="edit-grid">
-             ${textField("작곡가", song.composer, index, "composer", true)}
-             ${textField("OST 제목 1", song.title_1, index, "title_1")}
-             ${textField("YouTube URL 1", song.youtube_1, index, "youtube_1")}
-             ${textField("OST 제목 2", song.title_2, index, "title_2")}
-             ${textField("YouTube URL 2", song.youtube_2, index, "youtube_2")}
-           </div>`
-        : `<div class="edit-grid">
+      const heading = `${type.toUpperCase()} ${displayIndex + 1}`;
+      const fields = `<div class="edit-grid">
              ${textField("곡 제목", song.title, index, "title")}
              ${textField("아티스트", song.artist, index, "artist")}
              ${textField("YouTube URL", song.youtube, index, "youtube", true, "https://youtu.be/...")}
@@ -177,13 +155,12 @@
     const hasRecord = !!currentRecord;
     document.querySelectorAll("[data-add]").forEach(button => { button.disabled = !hasRecord; });
     if (!hasRecord) {
-      for (const id of ["opList", "edList", "ostList"]) document.getElementById(id).innerHTML = "";
+      for (const id of ["opList", "edList"]) document.getElementById(id).innerHTML = "";
       updateOutput();
       return;
     }
     renderSongGroup("op", "opList");
     renderSongGroup("ed", "edList");
-    renderSongGroup("ost", "ostList");
     updateOutput();
   }
 
@@ -221,14 +198,14 @@
         id,
         year: animeInfo?.year || Number(yearInput.value) || 2026,
         quarter: animeInfo?.quarter || quarterSelect.value,
-        songs: [emptySong("op"), emptySong("ed"), emptySong("ost")]
+        songs: [emptySong("op"), emptySong("ed")]
       };
       workingData.push(currentRecord);
       currentTitle = animeInfo?.title || "";
       yearInput.value = currentRecord.year;
       quarterSelect.value = currentRecord.quarter;
       setStatus(animeInfo
-        ? `작품 목록에서 찾았습니다. 빈 OP·ED·OST 항목을 만들었습니다. (목록 ${workingData.length}개)`
+        ? `작품 목록에서 찾았습니다. 빈 OP·ED 항목을 만들었습니다. (목록 ${workingData.length}개)`
         : `작품 목록에는 없지만 새 데이터 구조를 만들었습니다. 연도와 분기를 확인하세요. (목록 ${workingData.length}개)`);
     }
 

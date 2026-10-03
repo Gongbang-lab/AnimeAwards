@@ -23053,7 +23053,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제10화",
-        "episode title": "",
+        "episode title": "불사마왕과의 알현",
         "storyboard": {
             "staff": [
                 "나가시마 히로키",
@@ -23119,10 +23119,16 @@ var animeEPData_2026 = {
         "episode no": "제14화",
         "episode title": "각오",
         "storyboard": {
-            "staff": []
+            "staff": [
+                "시부야 료스케",
+                "우와노 아유무"
+            ]
         },
         "episode director": {
-            "staff": []
+            "staff": [
+                "야마시타 사토루",
+                "나가시마 히로키"
+            ]
         }
     }
 ],
@@ -24288,7 +24294,7 @@ var animeEPData_2026 = {
     },
     {
         "episode no": "제10화",
-        "episode title": "ひゃっはあっ、タルタルソースの時間だぁっ！ （５話ぶり２回目）",
+        "episode title": "얏하! 타르타르의 시간이다! (5화 만에 재등장)",
         "storyboard": {
             "staff": [
                 "오오하타 코이치"

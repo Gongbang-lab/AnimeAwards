@@ -168,6 +168,7 @@ function createCard(anime) {
 function getYouTubeVideoId(rawUrl) {
     try {
         const url = new URL(rawUrl);
+        if (!['https:', 'http:'].includes(url.protocol)) return "";
         const host = url.hostname.replace(/^www\./, "").toLowerCase();
         if (host === "youtu.be") return url.pathname.split("/").filter(Boolean)[0] || "";
         if (host !== "youtube.com" && host !== "m.youtube.com" && host !== "music.youtube.com") return "";
@@ -182,11 +183,12 @@ function getYouTubeVideoId(rawUrl) {
 function openPVModal(anime) {
     const modal = document.getElementById("pv-modal");
     const grid = document.getElementById("pv-card-grid");
-    const data = Array.isArray(window.animePVData) ? window.animePVData : [];
-    const record = data.find(item => String(item?.id) === String(anime.id));
-    const tracks = record ? [record.pv_url1, record.pv_url2]
-        .map((url, index) => ({ url: String(url || "").trim(), index }))
-        .filter(item => item.url) : [];
+    const tracks = (Array.isArray(anime.pv) ? anime.pv : [])
+        .map((pv, index) => ({ title: String(pv?.title || "").trim() || `PV ${index + 1}`, url: String(pv?.url || "").trim() }))
+        .filter(item => {
+            try { return ['https:', 'http:'].includes(new URL(item.url).protocol); }
+            catch { return false; }
+        });
 
     document.getElementById("pv-modal-title").textContent = `${anime.title} PV`;
     grid.replaceChildren();
@@ -197,7 +199,7 @@ function openPVModal(anime) {
         grid.appendChild(empty);
     }
 
-    tracks.forEach(({ url, index }) => {
+    tracks.forEach(({ url, title: pvTitle }) => {
         const videoId = getYouTubeVideoId(url);
         const article = document.createElement("article");
         article.className = "pv-video-card";
@@ -207,12 +209,16 @@ function openPVModal(anime) {
             link.href = url;
             link.target = "_blank";
             link.rel = "noopener noreferrer";
-            link.setAttribute("aria-label", `${record.pv_title || `PV ${index + 1}`} 재생`);
+            link.setAttribute("aria-label", `${pvTitle} 재생`);
             const image = document.createElement("img");
             image.src = `https://img.youtube.com/vi/${encodeURIComponent(videoId)}/hqdefault.jpg`;
-            image.alt = `${record.pv_title || `PV ${index + 1}`} 썸네일`;
+            image.alt = `${pvTitle} 썸네일`;
             image.loading = "lazy";
             link.appendChild(image);
+            const playIcon = document.createElement("span");
+            playIcon.className = "pv-play-icon";
+            playIcon.setAttribute("aria-hidden", "true");
+            link.appendChild(playIcon);
             article.appendChild(link);
         } else {
             const link = document.createElement("a");
@@ -225,7 +231,7 @@ function openPVModal(anime) {
         }
         const title = document.createElement("p");
         title.className = "pv-video-title";
-        title.textContent = record.pv_title || `PV ${index + 1}`;
+        title.textContent = pvTitle;
         article.appendChild(title);
         grid.appendChild(article);
     });
@@ -450,10 +456,13 @@ function isOSTNomination() {
 }
 
 function getComposerNames(anime) {
-    const composers = anime?.staff?.composer;
-    if (Array.isArray(composers)) return composers.filter(Boolean);
-    if (typeof composers === "string" && composers.trim()) return [composers.trim()];
-    return [];
+    // 구형 OST 직접 링크에서도 제거된 anime.staff.composer 대신 곡 데이터를 사용한다.
+    return [...new Set((window.AnimeSongs || [])
+        .filter(record => String(record.id) === String(anime.id) && String(record.year) === String(anime.year))
+        .flatMap(record => record.songs || [])
+        .filter(song => String(song.type).toLowerCase() === 'ost')
+        .flatMap(song => Array.isArray(song.composer) ? song.composer : [song.composer])
+        .filter(Boolean))];
 }
 
 function saveAwardResult(winner) {

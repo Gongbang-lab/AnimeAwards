@@ -25,7 +25,8 @@ const YEAR_DATA_KEYS = [
     ["animeEPData",           "animeEPData"],
     ["animePVData",           "animePVData"],
     ["AnimeMemeData",         "AnimeMemeData"],
-    ["scriptwriterData", "scriptwriterData"]
+    ["scriptwriterData", "scriptwriterData"],
+    ["animeOSTData", "animeOSTData"]
 ];
 
 YEAR_DATA_KEYS.forEach(([alias, prefix]) => {

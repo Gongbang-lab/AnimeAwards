@@ -101,6 +101,23 @@ h1 {
   position: relative;
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
+#add-modal .award-theme-fieldset { min-width: 0; margin: 18px 0 0; padding: 0; border: 0; }
+#add-modal .award-theme-fieldset legend { margin-bottom: 10px; }
+.award-theme-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+#add-modal .award-theme-option { position: relative; margin: 0; font-weight: normal; cursor: pointer; }
+#add-modal .award-theme-option input { position: absolute; width: 1px; height: 1px; margin: 0; padding: 0; border: 0; opacity: 0; }
+.award-theme-card {
+  display: flex; align-items: center; justify-content: center; min-height: 48px;
+  height: 100%; box-sizing: border-box; padding: 8px; border: 1px solid #52606b;
+  border-radius: 8px; background: #151c22; color: #ddd; text-align: center;
+  font-size: .9rem; line-height: 1.4;
+}
+.award-theme-option:hover .award-theme-card { border-color: var(--gold); }
+.award-theme-option input:checked + .award-theme-card {
+  border-color: var(--gold); background: rgba(212, 175, 55, .18); color: var(--gold); font-weight: 700;
+}
+.award-theme-option input:focus-visible + .award-theme-card { outline: 2px solid var(--gold); outline-offset: 2px; }
+@media (max-width: 480px) { .award-theme-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .info-modal-content {
     max-width: 700px; /* 기존 모달들보다 약간 좁게 해서 글을 읽기 편하게 */
     height: 80vh;
@@ -267,6 +284,13 @@ h1 {
 }
 
 /* [3] 해당 섹션 내의 카드 크기만 조절 */
+.award-section.special-layout .award-grid-inner .award-card.ost-award-card,
+.award-section.special-layout .award-grid-inner .award-card.ost-award-card:last-child:nth-child(odd) {
+    box-sizing: border-box;
+    width: min(100%, 320px);
+    max-width: 320px;
+}
+
 .award-section.special-layout .award-card.ratio-16-9 {
     max-width: 400px; /* 기존 260px 제한 해제 및 확장 */
     width: 100%;
@@ -376,7 +400,7 @@ h1 {
 }
 
 
-/* 1. 스튜디오 카드 전용 스타일 */
+/* 스튜디오 및 OST 카드의 정사각형 이미지 */
 .award-card.ratio-1-1 .thumb-wrapper {
     width: 100%;
     aspect-ratio: 1 / 1; /* 정사각형 비율 고정 */
