@@ -18,7 +18,7 @@ if(modalAwardName) modalAwardName.textContent = nominateState.awardName;
 const stepTitle = document.getElementById("step-title");
 stepTitle.textContent = `${SeasonFilter.toDisplayAwardName(nominateState.awardName)} 부문`;
 
-showIcarusIntroIfNeeded();
+
 
 // 요일 매핑 (데이터의 day는 영어 그대로 유지됨)
 const DAY_LABELS = {
@@ -513,21 +513,6 @@ function saveAwardResult(winner) {
 
     if (window.submitSingleAwardToDB) {
         window.submitSingleAwardToDB(nominateState.awardName);
-    }
-}
-
-function showIcarusIntroIfNeeded() {
-    if (nominateState.awardName !== "올해의 설레발 상") return;
-
-    const modal = document.getElementById("icarus-intro-modal");
-    if (!modal) return;
-
-    modal.classList.remove("hidden");
-
-    // ✅ 수정: close-icarus-intro-btn → icarus-confirm-btn
-    const confirmBtn = document.getElementById("icarus-confirm-btn");
-    if (confirmBtn) {
-        confirmBtn.onclick = () => modal.classList.add("hidden");
     }
 }
 

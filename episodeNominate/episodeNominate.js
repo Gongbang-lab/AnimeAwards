@@ -220,8 +220,8 @@ function setupSearch() {
 
 // --- [ Step 이동 ] ---
 function proceedToStep2() {
-    if (Object.keys(episodeState.selectedList).length < 2) { 
-        alert("최소 2개 이상의 에피소드를 선택해주세요!"); 
+    if (Object.keys(episodeState.selectedList).length === 0) { 
+        alert("후보를 선택해주세요."); 
         return; 
     }
 

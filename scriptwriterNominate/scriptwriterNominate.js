@@ -148,11 +148,13 @@ function toggleSelect(anime, card) {
 }
 
 function updatePreview() {
+    const nextButton = document.getElementById("next-btn");
+    if (nextButton) nextButton.disabled = scriptwriterState.selectedItems.length === 0;
     const previewList = document.getElementById("preview-list");
     if (!previewList) return;
 
     if (scriptwriterState.selectedItems.length === 0) {
-        previewList.innerHTML = `<span style="font-size:0.85rem;color:#555;"></span>`;
+        previewList.innerHTML = `<span style="font-size:0.85rem;color:#888;">후보를 선택해주세요</span>`;
         return;
     }
 
@@ -175,8 +177,8 @@ function updatePreview() {
 }
 
 function proceedToStep2() {
-    if (scriptwriterState.selectedItems.length < 2) {
-        alert("최소 2개 이상의 작품을 선택해주세요!");
+    if (scriptwriterState.selectedItems.length === 0) {
+        alert("후보를 선택해주세요.");
         return;
     }
 

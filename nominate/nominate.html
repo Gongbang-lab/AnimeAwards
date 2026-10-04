@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./nominate.css" />
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <link rel="stylesheet" href="../winnerStage.css">
+  <link rel="stylesheet" href="../nominationGuide.css">
 </head>
 <body>
 
@@ -46,19 +47,7 @@
     </div>
   </main>
 
-<div id="icarus-intro-modal" class="modal hidden">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h2>베스트 설레발 상</h2>
-    </div>
-    <div class="modal-body">
-      <p>PV와 원작으로 기대했지만, 막상 보니 아쉬웠던 작품을 골라주세요!</p>
-    </div>
-    <button class="gold-btn full-width" id="icarus-confirm-btn" style="margin-top: 20px;">확인</button>
-  </div>
-</div>
-
-  <div id="pv-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="pv-modal-title">
+<div id="pv-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="pv-modal-title">
     <div class="modal-content pv-modal-content">
       <button id="pv-modal-close" class="pv-modal-close" type="button" aria-label="모달 닫기">&times;</button>
       <h2 id="pv-modal-title" class="modal-header">작품 PV</h2>
@@ -117,5 +106,6 @@
     <script src="../winnerStage.js"></script>
   <script src="./nominate.js"></script>
   <script type="module" src="../firebase_service.js"></script>
+  <script src="../nominationGuide.js"></script>
 </body>
 </html>
