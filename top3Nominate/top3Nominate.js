@@ -169,7 +169,8 @@ function createCard(anime, isStep2, searchTerm = "") {
     
     let displayTitle = anime.title;
     if (searchTerm && !isStep2) {
-        const regex = new RegExp(searchTerm.trim(), "gi");
+        const literalTerm = searchTerm.trim().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const regex = new RegExp(literalTerm, "gi");
         displayTitle = anime.title.replace(regex, (match) => `<span style="color:var(--gold);">${match}</span>`);
     }
 

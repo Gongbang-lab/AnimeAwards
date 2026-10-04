@@ -165,7 +165,8 @@ function renderStep1(searchTerm = "") {
 
                     let displayName = char.name;
                     if (isSearching) {
-                        const regex = new RegExp(searchTerm.trim(), "gi");
+                        const literalTerm = searchTerm.trim().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                        const regex = new RegExp(literalTerm, "gi");
                         displayName = char.name.replace(regex, (match) => `<span style="color:var(--gold);">${match}</span>`);
                     }
 

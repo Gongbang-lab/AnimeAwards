@@ -14,7 +14,6 @@ const Awards = [
   { id: 13, name: '베스트 커플상', thumb: 'image/trophy 1.png', theme: 'best_couple'},
   { id: 14, name: '베스트 각본상', thumb: 'image/trophy 1.png', theme: 'scriptwriter'},
   { id: 15, name: '베스트 각색상', thumb: 'image/trophy 1.png', theme: 'dramatization'},
-  { id: 26, name: '베스트 연출상', thumb: 'image/trophy 1.png', theme: 'directing'},
   { id: 16, name: '베스트 감독상', thumb: 'image/trophy 1.png', theme: 'director'},
   { id: 17, name: '베스트 동화상', thumb: 'image/trophy 1.png', theme: 'in_between'}, // 원화사이 더 부드럽게나 빨라보이게 만드는 역할
   { id: 18, name: '베스트 배경상', thumb: 'image/trophy 1.png', theme: 'background'},
