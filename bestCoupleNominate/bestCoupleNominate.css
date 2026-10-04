@@ -330,7 +330,15 @@ body, html {
 }
 .hidden { display: none !important; }
 
-#confettiCanvas { position: fixed; top: 0; left: 0; pointer-events: none; z-index: 9999; }
+#confettiCanvas {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    pointer-events: none;
+    z-index: 9999;
+}
 
 #awardModal .modal-content {
     width: 750px; 

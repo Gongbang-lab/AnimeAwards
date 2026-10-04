@@ -476,7 +476,8 @@ function saveAwardResult(winner) {
     const finalThumb = winner.thumbnail;
 
     if (isTop3) {
-        const top3Key = "올해의 애니메이션";
+        const top3Key = Array.isArray(currentResults.TOP3_Awards)
+            ? "TOP3_Awards" : "올해의 애니메이션";
         let top3List = currentResults[top3Key];
 
         if (Array.isArray(top3List)) {
@@ -490,6 +491,13 @@ function saveAwardResult(winner) {
         } else {
             currentResults[top3Key] = [{ rank: awardName, title: winner.title, thumbnail: finalThumb }];
         }
+        // 이전 저장 형식이 함께 남아 있어도 같은 등급의 표시가 엇갈리지 않도록 갱신한다.
+        for (const key of ["TOP3_Awards", "올해의 애니메이션"]) {
+            if (!Array.isArray(currentResults[key])) continue;
+            currentResults[key] = currentResults[key].map(item => item.rank === awardName
+                ? { ...item, title: winner.title, thumbnail: finalThumb } : item);
+        }
+        delete currentResults[awardName];
     } else if (isOSTNomination()) {
         currentResults[awardName] = {
             title: winner.title,

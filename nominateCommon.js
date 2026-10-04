@@ -5,13 +5,30 @@
     let voteBadgeTimer = null;
     const MIN_PARTICIPANTS_FOR_VOTE_BADGE = 100;
 
+    let celebrationTimer = null;
     function fireConfetti() {
+        if (!global.WinnerStage) return launchConfetti();
+        clearTimeout(celebrationTimer);
+        requestAnimationFrame(() => {
+            const shown = global.WinnerStage.present();
+            if (global.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+            celebrationTimer = setTimeout(() => {
+                if (shown && !document.querySelector('.single-award-modal:not(.hidden):not(.modal-overlay), .single-award-modal.modal-overlay.active')) return;
+                launchConfetti();
+            }, shown ? 650 : 0);
+        });
+    }
+
+    function launchConfetti() {
         const canvas = document.getElementById("confettiCanvas");
+        if (canvas && global.WinnerStage) {
+            Object.assign(canvas.style, { position: 'fixed', inset: '0', width: '100%', height: '100%', pointerEvents: 'none', zIndex: '9999' });
+        }
         if (!canvas || typeof global.confetti !== "function") {
             // cinemaNominate historically used the document-level confetti API.
             // Keep a fallback so pages without a dedicated canvas still celebrate.
             if (typeof global.confetti === "function") {
-                const duration = 3000;
+                const duration = global.WinnerStage ? 1500 : 3000;
                 const end = Date.now() + duration;
                 (function frame() {
                     global.confetti({ particleCount: 3, angle: 60, spread: 55, origin: { x: 0, y: 0.6 }, zIndex: 9999, colors: ["#d4af37", "#ffffff"] });
@@ -24,7 +41,7 @@
 
         try {
             const myConfetti = global.confetti.create(canvas, { resize: true, useWorker: true });
-            const animationEnd = Date.now() + 3000;
+            const animationEnd = Date.now() + (global.WinnerStage ? 1500 : 3000);
             (function frame() {
                 if (Date.now() >= animationEnd) return;
                 myConfetti({ particleCount: 3, angle: 60, spread: 55, origin: { x: 0, y: 0.8 }, colors: ["#d4af37", "#ffffff", "#aa8a2e"] });

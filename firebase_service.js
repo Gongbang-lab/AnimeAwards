@@ -89,7 +89,7 @@ window.submitSingleAwardToDB = async function(awardName) {
     let winnerData = savedData[awardName];
     // 일반 Nominate 페이지가 저장하는 TOP3 rank 결과도 기존 저장 형식 그대로 읽는다.
     if (!winnerData && ["대상", "최우수상", "우수상"].includes(awardName)) {
-      winnerData = (savedData["올해의 애니메이션"] || []).find(item => item.rank === awardName);
+      winnerData = (savedData.TOP3_Awards || savedData["올해의 애니메이션"] || []).find(item => item.rank === awardName);
     }
     if (!winnerData) return { ok: false, reason: "missing-winner" };
 

@@ -9,6 +9,7 @@ const top3State = {
 
 const DAY_LABELS = { "Mondays":"월요일", "Tuesdays":"화요일", "Wednesdays":"수요일", "Thursdays":"목요일", "Fridays":"금요일", "Saturdays":"토요일", "Sundays":"일요일", "Anomaly":"변칙 편성", "Web":"웹", "Cinema":"극장판" };
 const RANK_NAMES = ["우수상", "최우수상", "대상"];
+const DAY_ORDER = ["Mondays", "Tuesdays", "Wednesdays", "Thursdays", "Fridays", "Saturdays", "Sundays", "Anomaly", "Web", "Cinema"];
 
 document.addEventListener("DOMContentLoaded", () => {
     if(top3State.allAnime.length === 0) {
@@ -117,7 +118,13 @@ function renderStep1(searchTerm = "") {
             section.append(qBtn, qWrapper);
         }
 
-        Object.keys(grouped[q]).forEach(day => {
+        const orderedDays = Object.keys(grouped[q]).sort((a, b) => {
+            const indexA = DAY_ORDER.indexOf(a);
+            const indexB = DAY_ORDER.indexOf(b);
+            return (indexA < 0 ? DAY_ORDER.length : indexA)
+                - (indexB < 0 ? DAY_ORDER.length : indexB);
+        });
+        orderedDays.forEach(day => {
             const dBtn = document.createElement('button');
             dBtn.className = 'day-btn';
             
@@ -295,38 +302,63 @@ function updateStep2UI() {
 // ==========================================
 // 모달 및 기타 편의 기능
 // ==========================================
+let stageCelebrationTimer = null;
+
 function showResult() {
+    if (top3State.finalTop3.length !== 3) return;
     const modal = document.getElementById('result-modal');
     const body = document.getElementById('modal-body');
-    
     saveToLocalStorage();
-
+    NominateCommon.installImageFallback();
+    clearTimeout(stageCelebrationTimer);
     const [bronze, silver, gold] = top3State.finalTop3;
-
-    body.innerHTML = `
-        <div class="winner-layout">
-            <div class="winner-card">
-                <span class="winner-rank-label">우수상</span>
-                <img src="../${bronze.thumbnail}" onerror="this.src='https://placehold.co/180x240?text=No+Image'">
-                <div class="winner-card-title">${bronze.title}</div>
-            </div>
-
-            <div class="winner-card grand-prize">
-                <span class="winner-rank-label">🏆 대상 🏆</span>
-                <img src="../${gold.thumbnail}" onerror="this.src='https://placehold.co/180x240?text=No+Image'">
-                <div class="winner-card-title">${gold.title}</div>
-            </div>
-
-            <div class="winner-card">
-                <span class="winner-rank-label">최우수상</span>
-                <img src="../${silver.thumbnail}" onerror="this.src='https://placehold.co/180x240?text=No+Image'">
-                <div class="winner-card-title">${silver.title}</div>
-            </div>
-        </div>
-    `;
-
+    const layout = document.createElement('div');
+    layout.className = 'podium-layout';
+    const winners = [
+        { anime: silver, rank: '최우수상', style: 'silver', delay: '0.8s' },
+        { anime: gold, rank: '대상', style: 'gold', delay: '1.6s' },
+        { anime: bronze, rank: '우수상', style: 'bronze', delay: '0s' }
+    ];
+    winners.forEach(({ anime, rank, style, delay }) => {
+        const display = document.createElement('article');
+        display.className = 'podium-winner podium-' + style;
+        display.style.setProperty('--reveal-delay', delay);
+        const light = document.createElement('div');
+        light.className = 'stage-spotlight';
+        light.setAttribute('aria-hidden', 'true');
+        const label = document.createElement('h3');
+        label.className = 'podium-rank';
+        label.textContent = rank;
+        const poster = document.createElement('div');
+        poster.className = 'podium-poster';
+        const image = document.createElement('img');
+        image.src = NominateCommon.imageSource(anime.thumbnail);
+        image.alt = anime.title;
+        poster.appendChild(image);
+        const stand = document.createElement('div');
+        stand.className = 'podium-stand';
+        const title = document.createElement('p');
+        title.className = 'podium-title';
+        title.textContent = anime.title;
+        stand.appendChild(title);
+        display.append(light, label, poster, stand);
+        layout.appendChild(display);
+    });
+    body.replaceChildren(layout);
+    const season = SeasonFilter.getSelectedSeason();
+    document.getElementById('result-title').textContent =
+        season.quarter && season.quarter !== '모든 분기'
+            ? `${season.quarter} TOP 3` : '올해의 TOP 3';
+    document.getElementById('stage-season').textContent =
+        [season.year ? season.year + '년' : '', season.quarter].filter(Boolean).join(' · ');
     modal.classList.remove('hidden');
-    window.NominateCommon.fireConfetti();
+    document.body.style.overflow = 'hidden';
+    document.getElementById('save-main-btn').focus({ preventScroll: true });
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        stageCelebrationTimer = setTimeout(() => {
+            if (!modal.classList.contains('hidden')) NominateCommon.fireConfetti();
+        }, 2100);
+    }
 }
 
 function saveToLocalStorage() {
@@ -340,6 +372,11 @@ function saveToLocalStorage() {
         }));
 
         currentResults[top3State.awardName] = resultData;
+        // 전체 TOP3를 다시 결정하면 이전 개별 저장 결과가 앞서 표시되지 않게 정리한다.
+        if (top3State.awardName === "TOP3_Awards") {
+            delete currentResults["올해의 애니메이션"];
+            RANK_NAMES.forEach(rank => { delete currentResults[rank]; });
+        }
         
         ResultStorage.saveResults(currentResults);
         console.log("결과가 성공적으로 저장되었습니다:", currentResults);

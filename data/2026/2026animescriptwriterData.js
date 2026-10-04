@@ -202,7 +202,7 @@ var scriptwriterData_2026 = [
     "year": 2026,
     "quarter": "1분기",
     "title": "아이엠스타!×프리파라 더 무비 -만남의 기적!-",
-    "thumbnail": "image/cinema/2026/아이엠스타!×프리파라 더 무비 -만남의 기적!-.webp",
+    "thumbnail": "image/cinema/2026/아이엠스타프리파라 더 무비 만남의 기적.webp",
     "studio": [
       "반다이 남코 픽처스"
     ],
