@@ -131,6 +131,7 @@ function renderStep1(filterText = "") {
 
 function createCard(anime) {
     const card = document.createElement("div");
+    card.dataset.selectionId = String(anime.id);
     const isSelected = nominateState.step === 1
         ? nominateState.selectedItems.some(a => a.id === anime.id)
         : (nominateState.selectedWinner && nominateState.selectedWinner.id === anime.id);
@@ -175,6 +176,7 @@ function handleCardClick(anime, cardElement) {
 }
 
 function updatePreview() {
+    if (nominateState.step === 1) NominateCommon.syncCandidateSelection(nominateState.selectedItems);
     const pBox = document.getElementById("preview-box");
     const nextBtn = document.getElementById("step1-next-btn");
 

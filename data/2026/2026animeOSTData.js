@@ -5874,7 +5874,7 @@ var animeOSTData_2026 = [
       },
       {
         "release_date": "2026-03-29",
-        "image": "image/ost/54863-2.webp",
+        "image": "image/ost/54863.webp",
         "discs": [
           {
             "disc": 1,

@@ -128,6 +128,7 @@
       ? state.selectedItems.some(item => String(item.id) === String(anime.id))
       : String(state.selectedWinner?.id) === String(anime.id);
     card.className = `card ost-nominee-card${selected ? " selected" : ""}`;
+    card.dataset.selectionId = String(anime.id);
     card.dataset.category = state.awardName;
     card.dataset.animeId = anime.title;
     const rate = document.createElement("div");
@@ -234,6 +235,7 @@
   }
 
   function updatePreview() {
+    if (state.step === 1) NominateCommon.syncCandidateSelection(state.selectedItems);
     const preview = document.getElementById("preview-box");
     preview.replaceChildren();
     if (!state.selectedItems.length) {

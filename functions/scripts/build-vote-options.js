@@ -38,7 +38,10 @@ function firebaseKey(value) {
 function inSeason(item, year, quarter) {
   if (!item) return false;
   if (item.year != null && String(item.year) !== String(year)) return false;
-  if (quarter !== "모든 분기" && item.quarter != null && item.quarter !== quarter) return false;
+  const quarters = (Array.isArray(item.quarter) ? item.quarter : [item.quarter])
+    .flatMap(value => String(value ?? "").split(/[,，]/))
+    .map(value => value.trim().replace(/^Q([1-4])$/, "$1분기"));
+  if (quarter !== "모든 분기" && item.quarter != null && !quarters.includes(quarter)) return false;
   return true;
 }
 
@@ -124,6 +127,7 @@ function candidatesFor(theme, data, year, quarter) {
       }
       return pairs;
     }
+    case "original":
     case "scriptwriter":
       return asArray(data.scriptwriters).filter(item => inSeason(item, year, quarter)).map(item => item.title);
     case "dramatization":

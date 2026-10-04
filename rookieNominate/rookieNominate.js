@@ -1,3 +1,5 @@
+NominateCommon.installImageFallback();
+
 const rookiestate = {
     selectedCV: null,
     awardName: null
@@ -78,7 +80,7 @@ function createRookieCard(cv) {
     card.setAttribute('data-category', rookiestate.awardName);
     card.setAttribute('data-anime-id', cv.name);
 
-    const displayImg = `../${cv.cvimg}`;
+    const displayImg = NominateCommon.imageSource(cv.cvimg);
     const worksCount = cv.characters ? cv.characters.length : 0;
 
     // ✅ innerHTML 대신 DOM 직접 생성으로 변경 (innerHTML 덮어쓰기 문제 방지)
@@ -99,7 +101,6 @@ function createRookieCard(cv) {
     img.src = displayImg;
     img.alt = cv.name;
     img.loading = "lazy";
-    img.onerror = () => { img.src = 'https://via.placeholder.com/200x280'; };
 
     const cardInfo = document.createElement("div");
     cardInfo.className = "card-info";
@@ -234,7 +235,7 @@ function showWorksModal(cv) {
     const leftArea = document.getElementById("works-cv-info");
 
     // 왼쪽 성우 프로필 + 점수/스탯 정보
-    const cvImg = `../${cv.cvimg}`;
+    const cvImg = NominateCommon.imageSource(cv.cvimg);
     const sb = cv.scoreBreakdown || {};
     const st = cv.stats || {};
 
@@ -270,9 +271,8 @@ function showWorksModal(cv) {
         gridBody.innerHTML = cv.characters.map(char => `
             <div class="work-card">
                 <div style="background:#000; width:100%;">
-                    <img src="../${char.charimg}" alt="${char.charName}" 
-                         loading="lazy"
-                         onerror="this.src='https://via.placeholder.com/150x200?text=No+Image'">
+                    <img src="${NominateCommon.imageSource(char.charimg)}" alt="${char.charName}" 
+                         loading="lazy">
                 </div>
                 <div class="work-card-info">
                     <div class="work-card-title" style="color:#fff; font-weight:bold; font-size:0.9rem; margin-bottom:4px;">${char.animeTitle}</div>
@@ -322,7 +322,7 @@ function handleAwardDecision() {
 function openAwardModal(cv) {
     const modal = document.getElementById("winner-modal");
     const modalBody = document.getElementById("modal-body");
-    const displayImg = `../${cv.cvimg}`;
+    const displayImg = NominateCommon.imageSource(cv.cvimg);
 
     const workRows = cv.characters && cv.characters.length > 0
         ? cv.characters.map(char => `

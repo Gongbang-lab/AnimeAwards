@@ -2,6 +2,20 @@
 // 모든 Nominate 페이지에서 공통으로 사용하는 시즌(연도+분기) 필터 유틸
 
 window.SeasonFilter = (function () {
+    // 저장 형식은 배열, 이전의 단일 문자열/쉼표 구분 문자열도 읽는다.
+    function getQuarters(value) {
+        return [...new Set((Array.isArray(value) ? value : [value])
+            .flatMap(q => String(q ?? "").split(/[,，]/))
+            .map(q => q.trim().replace(/^Q([1-4])$/, "$1분기"))
+            .filter(Boolean))];
+    }
+
+    function expandQuarters(list) {
+        return list.flatMap(item => {
+            const quarters = getQuarters(item.quarter);
+            return quarters.length ? quarters.map(quarter => ({ ...item, quarter })) : [item];
+        });
+    }
     function getSelectedSeason() {
         return {
             year: localStorage.getItem("selected_year"),
@@ -15,13 +29,13 @@ window.SeasonFilter = (function () {
         if (!year || !quarter) return true; // 시즌 미선택 시엔 필터링 안 함 (안전장치)
 
         if (String(anime.year) !== String(year)) return false;
-        if (quarter !== "모든 분기" && anime.quarter !== quarter) return false;
+        if (quarter !== "모든 분기" && !getQuarters(anime.quarter).includes(quarter)) return false;
         return true;
     }
 
     // AnimeList(원본)를 시즌 기준으로 걸러낸 배열
     function filterAnimeList(list) {
-        return list.filter(isInSeason);
+        return expandQuarters(list).filter(isInSeason);
     }
 
     // AnimeList에서 시즌에 해당하는 title들만 Set으로 (다른 데이터와 매칭용)
@@ -59,6 +73,8 @@ window.SeasonFilter = (function () {
     }
 
     return { 
+            getQuarters,
+            expandQuarters,
         getSelectedSeason, 
         isInSeason, 
         filterAnimeList, 

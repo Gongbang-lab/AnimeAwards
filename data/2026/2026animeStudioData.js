@@ -338,7 +338,7 @@ var AnimeStudioData_2026 = [
       },
       {
         "title": "아이엠스타!×프리파라 더 무비 -만남의 기적!-",
-        "thumbnail": "image/cinema/2026/아이엠스타!×프리파라 더 무비 -만남의 기적!-.webp",
+        "thumbnail": "image/cinema/2026/아이엠스타프리파라 더 무비 만남의 기적-.webp",
         "director": "오오카와 타카히로",
         "quarter": "1분기"
       }
@@ -1032,7 +1032,7 @@ var AnimeStudioData_2026 = [
     "works": [
       {
         "title": "하이스쿨! 기면조",
-        "thumbnail": "image/animeimg/2026/Q1/하이스쿨!_기면조.webp",
+        "thumbnail": "image/animeimg/2026/Q1/하이스쿨! 기면조.webp",
         "director": "세키 카즈아키",
         "quarter": "1분기",
         "year": 2026
@@ -2040,7 +2040,7 @@ var AnimeStudioData_2026 = [
     "works": [
       {
         "title": "사랑의 하츄핑: 고래보석의 전설",
-        "thumbnail": "image/cinema/2026/사랑의 하츄핑: 고래보석의 전설.webp",
+        "thumbnail": "image/cinema/2026/사랑의 하츄핑 고래보석의 전설.webp",
         "director": "김수훈",
         "quarter": "3분기",
         "year": 2026

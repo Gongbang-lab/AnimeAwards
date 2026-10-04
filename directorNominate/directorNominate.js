@@ -1,3 +1,5 @@
+NominateCommon.installImageFallback();
+
 /**
  * 상태 관리
  */
@@ -156,7 +158,7 @@ function createDirectorCard(data, step) {
             <div class="card-selection-rate" style="display:none;">0/0</div>
             <div class="card-badge">${worksCount}작품</div>
             <div class="card-thumb">
-                <img src="../${data.director_img}" alt="${data.director}" onerror="this.src='../image/placeholder.webp'">
+                <img src="${NominateCommon.imageSource(data.director_img)}" alt="${data.director}">
             </div>
             <div class="step2-card-info">
                 <div class="card-title">${data.director}</div>
@@ -204,7 +206,7 @@ function createDirectorCard(data, step) {
     if (isSelected) card.classList.add("selected");
 
     card.innerHTML = `
-        <img src="../${data.director_img}" loading="lazy" onerror="this.src='../image/placeholder.webp'">
+        <img src="${NominateCommon.imageSource(data.director_img)}" loading="lazy">
         <div class="card-info">
             <div class="card-title">${data.director}</div>
         </div>
@@ -335,7 +337,7 @@ function openDetailModal(data) {
     profile.replaceChildren();
 
     const profileImage = document.createElement("img");
-    profileImage.src = `../${data.director_img}`;
+    profileImage.src = NominateCommon.imageSource(data.director_img);
     profileImage.alt = `${data.director} 감독 사진`;
     profileImage.loading = "lazy";
 
@@ -357,7 +359,7 @@ function openDetailModal(data) {
         card.className = "director-work-card";
 
         const image = document.createElement("img");
-        image.src = `../${work.thumbnail}`;
+        image.src = NominateCommon.imageSource(work.thumbnail);
         image.alt = work.title || "작품 이미지";
         image.loading = "lazy";
 
@@ -383,7 +385,7 @@ function openWinnerModal() {
     const winner = dirState.finalWinner;
     if (!winner) return;
 
-    document.getElementById("winner-img").src = `../${winner.director_img}`;
+    document.getElementById("winner-img").src = NominateCommon.imageSource(winner.director_img);
     
     const infoContent = document.getElementById("winner-info-content");
     const worksListHTML = winner.works.map(w => `

@@ -27,7 +27,7 @@ function getMergedSongData(themeType) {
     const animeInfoByQuarter = new Map();
     const animeInfoById = new Map();
     if (typeof AnimeList !== 'undefined' && Array.isArray(AnimeList)) {
-        AnimeList.forEach(anime => {
+        SeasonFilter.expandQuarters(AnimeList).forEach(anime => {
             const id = String(anime.id);
             const seasonKey = `${id}|${anime.year}|${anime.quarter}`;
             animeInfoBySeason.set(seasonKey, anime);
@@ -194,6 +194,7 @@ function renderFilteredList(query) {
 function createSongCard(song) {
     const item = document.createElement("div");
     item.className = "song-card";
+    item.dataset.selectionId = song.uniqueId;
 
     item.setAttribute('data-category', songNominateState.awardName);
     item.setAttribute('data-anime-id', song.title);
@@ -262,6 +263,7 @@ function createSongCard(song) {
 }
 
 function updatePreview() {
+    if (songNominateState.step === 1) NominateCommon.syncCandidateSelection(songNominateState.selectedItems, "uniqueId");
     const preview = document.getElementById("preview-list");
     const nextBtn = document.getElementById("step1-next-btn");
     preview.innerHTML = "";

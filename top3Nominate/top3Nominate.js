@@ -157,6 +157,7 @@ function renderStep1(searchTerm = "") {
 function createCard(anime, isStep2, searchTerm = "") {
     const isSelected = top3State.selectedCandidates.some(c => c.id === anime.id);
     const div = document.createElement('div');
+    if (!isStep2) div.dataset.selectionId = String(anime.id);
     div.className = `card ${!isStep2 && isSelected ? 'selected' : ''}`;
     
     let displayTitle = anime.title;
@@ -201,6 +202,7 @@ function createCard(anime, isStep2, searchTerm = "") {
 
 // 사이드바 미리보기 업데이트
 function updatePreview() {
+    if (top3State.step === 1) NominateCommon.syncCandidateSelection(top3State.selectedCandidates);
     const pBox = document.getElementById("preview-box");
     const nextBtn = document.getElementById("next-btn");
     

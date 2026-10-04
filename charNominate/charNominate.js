@@ -171,6 +171,7 @@ function renderStep1(searchTerm = "") {
 
                     card.setAttribute('data-category', charState.awardName);
                     card.setAttribute('data-anime-id', char.name);
+                    card.dataset.selectionId = String(char.id);
 
                     card.innerHTML = `
                         <div class="card-selection-rate" style="display:none;">0/0</div>
@@ -220,6 +221,7 @@ function toggleCandidate(char, cardElement) {
 }
 
 function updatePreview() {
+  if (charState.step === 1) NominateCommon.syncCandidateSelection(charState.selectedItems);
   const box = document.getElementById("preview-box");
   const nextBtn = document.getElementById("step1-next-btn");
   

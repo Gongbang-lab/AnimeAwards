@@ -389,7 +389,7 @@ var animeDirectorData_2026 = [
     "works": [
       {
         "title": "하이스쿨! 기면조",
-        "thumbnail": "image/animeimg/2026/Q1/하이스쿨!_기면조.webp",
+        "thumbnail": "image/animeimg/2026/Q1/하이스쿨! 기면조.webp",
         "quarter": "1분기",
         "year": 2026
       }

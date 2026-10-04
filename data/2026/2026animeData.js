@@ -1,5 +1,5 @@
 var AnimeCatalog_2026 = [
-{
+  {
   "id": 61886,
   "year": 2026,
   "quarter": "1분기",
@@ -25,7 +25,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61942,
   "year": 2026,
   "quarter": "1분기",
@@ -51,7 +51,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61782,
   "year": 2026,
   "quarter": "1분기",
@@ -81,7 +81,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 55772,
   "year": 2026,
   "quarter": "1분기",
@@ -107,7 +107,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 58524,
   "year": 2026,
   "quarter": "1분기",
@@ -133,7 +133,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61359,
   "year": 2026,
   "quarter": "1분기",
@@ -163,7 +163,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61983,
   "year": 2026,
   "quarter": "1분기",
@@ -190,7 +190,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 60226,
   "year": 2026,
   "quarter": "1분기",
@@ -220,7 +220,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61211,
   "year": 2026,
   "quarter": "1분기",
@@ -254,7 +254,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61830,
   "year": 2026,
   "quarter": "1분기",
@@ -284,7 +284,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 58886,
   "year": 2026,
   "quarter": "1분기",
@@ -314,7 +314,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61637,
   "year": 2026,
   "quarter": "1분기",
@@ -344,7 +344,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 60255,
   "year": 2026,
   "quarter": "1분기",
@@ -379,7 +379,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61884,
   "year": 2026,
   "quarter": "1분기",
@@ -405,7 +405,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 60058,
   "year": 2026,
   "quarter": "1분기",
@@ -439,7 +439,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 59711,
   "year": 2026,
   "quarter": "1분기",
@@ -469,7 +469,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 60692,
   "year": 2026,
   "quarter": "1분기",
@@ -503,7 +503,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 60071,
   "year": 2026,
   "quarter": "1분기",
@@ -529,7 +529,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 56752,
   "year": 2026,
   "quarter": "1분기",
@@ -555,7 +555,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 56009,
   "year": 2026,
   "quarter": "1분기",
@@ -589,7 +589,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 58505,
   "year": 2026,
   "quarter": "1분기",
@@ -619,7 +619,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 60395,
   "year": 2026,
   "quarter": "1분기",
@@ -649,7 +649,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 60151,
   "year": 2026,
   "quarter": "1분기",
@@ -683,7 +683,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 57658,
   "year": 2026,
   "quarter": "1분기",
@@ -713,7 +713,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61587,
   "year": 2026,
   "quarter": "1분기",
@@ -739,7 +739,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61325,
   "year": 2026,
   "quarter": "1분기",
@@ -765,7 +765,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 60509,
   "year": 2026,
   "quarter": "1분기",
@@ -791,7 +791,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 59978,
   "year": 2026,
   "quarter": "1분기",
@@ -825,7 +825,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62804,
   "year": 2026,
   "quarter": "1분기",
@@ -851,7 +851,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 59853,
   "year": 2026,
   "quarter": "1분기",
@@ -881,7 +881,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 60460,
   "year": 2026,
   "quarter": "1분기",
@@ -911,7 +911,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 59229,
   "year": 2026,
   "quarter": "1분기",
@@ -953,7 +953,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61207,
   "year": 2026,
   "quarter": "1분기",
@@ -979,7 +979,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61549,
   "year": 2026,
   "quarter": "1분기",
@@ -1014,7 +1014,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 54863,
   "year": 2026,
   "quarter": "1분기",
@@ -1040,7 +1040,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 55830,
   "year": 2026,
   "quarter": "1분기",
@@ -1071,7 +1071,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61196,
   "year": 2026,
   "quarter": "1분기",
@@ -1105,7 +1105,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62432,
   "year": 2026,
   "quarter": "1분기",
@@ -1131,7 +1131,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61217,
   "year": 2026,
   "quarter": "1분기",
@@ -1173,7 +1173,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 59047,
   "year": 2026,
   "quarter": "1분기",
@@ -1203,7 +1203,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61335,
   "year": 2026,
   "quarter": "1분기",
@@ -1237,7 +1237,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63042,
   "year": 2026,
   "title": "명탐정 프리큐어",
@@ -1263,7 +1263,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61663,
   "year": 2026,
   "quarter": "1분기",
@@ -1297,7 +1297,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 60371,
   "year": 2026,
   "quarter": "1분기",
@@ -1335,7 +1335,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 60223,
   "year": 2026,
   "quarter": "1분기",
@@ -1365,7 +1365,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 58861,
   "year": 2026,
   "quarter": "1분기",
@@ -1395,7 +1395,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 60810,
   "year": 2026,
   "quarter": "1분기",
@@ -1425,7 +1425,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61128,
   "year": 2026,
   "quarter": "1분기",
@@ -1459,7 +1459,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62000,
   "year": 2026,
   "quarter": "1분기",
@@ -1489,7 +1489,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 58788,
   "year": 2026,
   "quarter": "1분기",
@@ -1523,7 +1523,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61084,
   "year": 2026,
   "quarter": "1분기",
@@ -1558,7 +1558,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 60602,
   "year": 2026,
   "quarter": "1분기",
@@ -1596,7 +1596,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 55825,
   "year": 2026,
   "quarter": "1분기",
@@ -1634,7 +1634,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62543,
   "year": 2026,
   "quarter": "1분기",
@@ -1668,7 +1668,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63096,
   "year": 2026,
   "quarter": "1분기",
@@ -1694,7 +1694,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62897,
   "year": 2026,
   "quarter": "1분기",
@@ -1720,7 +1720,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62987,
   "year": 2026,
   "quarter": "1분기",
@@ -1750,7 +1750,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61969,
   "year": 2026,
   "quarter": "1분기",
@@ -1780,7 +1780,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61694,
   "year": 2026,
   "quarter": "1분기",
@@ -1806,7 +1806,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62864,
   "year": 2026,
   "quarter": "1분기",
@@ -1836,7 +1836,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 60294,
   "year": 2026,
   "quarter": "1분기",
@@ -1866,7 +1866,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 56906,
   "year": 2026,
   "quarter": "1분기",
@@ -1890,7 +1890,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63019,
   "year": 2026,
   "quarter": "1분기",
@@ -1919,7 +1919,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62896,
   "year": 2026,
   "quarter": "1분기",
@@ -1954,7 +1954,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61119,
   "year": 2026,
   "quarter": "1분기",
@@ -1980,7 +1980,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 58573,
   "year": 2026,
   "quarter": "1분기",
@@ -2014,10 +2014,10 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61469,
   "year": 2026,
-  "quarter": "1분기",
+  "quarter": ["1분기","3분기"],
   "title": "스틸 볼 런: 죠죠의 기묘한 모험",
   "thumbnail": "image/animeimg/2026/Q1/스틸 볼 런.webp",
   "day": "Web",
@@ -2045,7 +2045,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61114,
   "title": "비스타즈 마지막 시즌",
   "year": 2026,
@@ -2079,7 +2079,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 59393,
   "year": 2026,
   "title": "치킨 파이터",
@@ -2113,7 +2113,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62852,
   "year": 2026,
   "title": "고스트 콘서트: missing Songs",
@@ -2143,7 +2143,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61687,
   "year": 2026,
   "title": "자칭 악역 영애인 약혼자 관찰기록.",
@@ -2173,7 +2173,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62146,
   "year": 2026,
   "title": "이세계 유유자적 농가 2",
@@ -2207,7 +2207,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 51553,
   "year": 2026,
   "title": "고깔모자 아틀리에",
@@ -2237,7 +2237,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61425,
   "year": 2026,
   "title": "허당 선도부원과 스커트 길이가 부적절한 여고생의 이야기",
@@ -2267,7 +2267,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62331,
   "year": 2026,
   "title": "라이어 게임",
@@ -2302,7 +2302,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63375,
   "year": 2026,
   "title": "일본삼국",
@@ -2336,7 +2336,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61931,
   "year": 2026,
   "title": "비극의 원흉이 되는 최강악역 최종보스 여왕은 국민을 위해 헌신합니다 Season2",
@@ -2370,7 +2370,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62601,
   "year": 2026,
   "title": "매리지 톡신",
@@ -2404,7 +2404,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61839,
   "year": 2026,
   "title": "사랑해 게임을 끝내고 싶어",
@@ -2430,7 +2430,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 56734,
   "year": 2026,
   "title": "반에서 두 번째로 귀여운 여자애와 친구가 되었다",
@@ -2464,7 +2464,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61013,
   "year": 2026,
   "title": "레플리카도, 사랑을 한다",
@@ -2498,7 +2498,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 53732,
   "year": 2026,
   "title": "왼손잡이 에렌",
@@ -2529,7 +2529,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63014,
   "year": 2026,
   "title": "두 남자와 룸쉐어 중입니다",
@@ -2559,7 +2559,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63376,
   "year": 2026,
   "title": "여신 「이세계 전생하면 뭐가 되고 싶습니까」 나「용사의 갈비뼈로」",
@@ -2586,7 +2586,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 59708,
   "year": 2026,
   "title": "어서 오세요 실력지상주의 교실에 4th Season",
@@ -2620,7 +2620,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62512,
   "year": 2026,
   "title": "자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season",
@@ -2647,11 +2647,11 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61316,
   "year": 2026,
   "title": "Re:제로부터 시작하는 이세계 생활 4기",
-  "quarter": "2분기",
+  "quarter": ["2분기","3분기"],
   "thumbnail": "image/animeimg/2026/Q2/Re 제로부터 시작하는 이세계 생활 4기.webp",
   "day": "Wednesdays",
   "episodes": 19,
@@ -2685,7 +2685,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61831,
   "year": 2026,
   "title": "최강의 왕, 두 번째 인생에는 무엇을 하는가 시즌 2",
@@ -2715,7 +2715,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62604,
   "year": 2026,
   "title": "오타쿠에게 상냥한 갸루는 없다",
@@ -2745,7 +2745,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62893,
   "year": 2026,
   "title": "놓친 물고기는 컸지만 잡은 물고기가 너무 컸던 건",
@@ -2779,7 +2779,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 59551,
   "year": 2026,
   "title": "힘내라 나카무라 군",
@@ -2821,7 +2821,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 60028,
   "year": 2026,
   "title": "공주 기사는 야만족의 신부",
@@ -2852,7 +2852,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 57592,
   "year": 2026,
   "title": "닥터 스톤 SCIENCE FUTURE",
@@ -2878,7 +2878,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 58832,
   "year": 2026,
   "title": "쿠지마 노래하면 집이 파다닥",
@@ -2909,7 +2909,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 60852,
   "year": 2026,
   "title": "얼음 성벽",
@@ -2939,7 +2939,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 59835,
   "year": 2026,
   "title": "키리오 팬클럽",
@@ -2973,7 +2973,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 59443,
   "year": 2026,
   "title": "리인카네이션의 꽃잎",
@@ -3007,7 +3007,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61943,
   "year": 2026,
   "title": "하이바라의 청춘 뉴 게임 플러스",
@@ -3041,7 +3041,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 58820,
   "year": 2026,
   "title": "아와지마 가극학교",
@@ -3075,7 +3075,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62964,
   "year": 2026,
   "title": "또 죽고 말았나요, 탐정님",
@@ -3105,7 +3105,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 56876,
   "year": 2026,
   "title": "옆집 천사님 때문에 어느샌가 인간적으로 타락한 사연 2",
@@ -3139,11 +3139,11 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 59970,
   "year": 2026,
   "title": "전생했더니 슬라임이었던 건에 대하여 4기",
-  "quarter": "2분기",
+  "quarter": ["2분기","3분기"],
   "thumbnail": "image/animeimg/2026/Q2/전생했더니 슬라임이었던 건에 대하여 4기.webp",
   "day": "Fridays",
   "episodes": 0,
@@ -3169,7 +3169,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62068,
   "year": 2026,
   "title": "스노우볼 어스",
@@ -3199,11 +3199,11 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62981,
   "year": 2026,
   "title": "신의 물방울",
-  "quarter": "2분기",
+  "quarter": ["2분기","3분기"],
   "thumbnail": "image/animeimg/2026/Q2/신의 물방울.webp",
   "day": "Fridays",
   "episodes": 24,
@@ -3229,7 +3229,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61186,
   "year": 2026,
   "title": "카미이나 보탄, 취한 모습은 백합의 꽃",
@@ -3263,7 +3263,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61200,
   "year": 2026,
   "title": "종말의 발키리 Ⅲ",
@@ -3302,7 +3302,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 56646,
   "year": 2026,
   "title": "북두의 권 -FIST OF THE NORTH STAR-",
@@ -3336,7 +3336,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62485,
   "year": 2026,
   "title": "여친, 빌리겠습니다 5기",
@@ -3366,11 +3366,11 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 57466,
   "year": 2026,
   "title": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
-  "quarter": "2분기",
+  "quarter": ["2분기","3분기"],
   "thumbnail": "image/animeimg/2026/Q2/책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~.webp",
   "day": "Saturdays",
   "episodes": 0,
@@ -3408,11 +3408,11 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 60310,
   "year": 2026,
   "title": "마계학교 이루마군 4기",
-  "quarter": "2분기",
+  "quarter": ["2분기","3분기"],
   "thumbnail": "image/animeimg/2026/Q2/마계학교 이루마군 4기.webp",
   "day": "Saturdays",
   "episodes": 24,
@@ -3443,7 +3443,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 60444,
   "year": 2026,
   "title": "비실비실 선생님",
@@ -3473,7 +3473,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62825,
   "year": 2026,
   "title": "최강의 직업은 용사도 현자도 아닌 감정사(임시)인 것 같은데요",
@@ -3503,7 +3503,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62391,
   "year": 2026,
   "title": "킬 블루",
@@ -3537,7 +3537,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62164,
   "year": 2026,
   "title": "아카네 이야기",
@@ -3571,11 +3571,11 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62001,
   "year": 2026,
   "title": "황천의 츠가이",
-  "quarter": "2분기",
+  "quarter": ["2분기","3분기"],
   "thumbnail": "image/animeimg/2026/Q2/황천의 츠가이.webp",
   "day": "Saturdays",
   "episodes": 24,
@@ -3601,11 +3601,11 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62048,
   "year": 2026,
   "title": "마오",
-  "quarter": "2분기",
+  "quarter": ["2분기","3분기"],
   "thumbnail": "image/animeimg/2026/Q2/마오.webp",
   "day": "Saturdays",
   "episodes": 26,
@@ -3635,7 +3635,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61443,
   "year": 2026,
   "title": "춘하추동 대행자 봄의 춤",
@@ -3665,7 +3665,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62913,
   "year": 2026,
   "title": "니디 걸 오버도즈",
@@ -3699,7 +3699,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61501,
   "year": 2026,
   "title": "카난 님은 초보 악마",
@@ -3729,7 +3729,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62050,
   "year": 2026,
   "title": "신의 정원이 딸린 쿠스노키 저택",
@@ -3763,7 +3763,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62018,
   "year": 2026,
   "title": "다다미 한 장짜리 방 만끽 생활",
@@ -3793,7 +3793,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63352,
   "year": 2026,
   "title": "부탁해 아이프리",
@@ -3821,7 +3821,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 59983,
   "year": 2026,
   "title": "지팡이와 검의 위스토리아 Season2",
@@ -3853,7 +3853,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 60055,
   "year": 2026,
   "title": "요자쿠라 일가의 대작전 제2기",
@@ -3889,7 +3889,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 58877,
   "year": 2026,
   "title": "다이아몬드 에이스 actII -Second Season-",
@@ -3927,7 +3927,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62342,
   "year": 2026,
   "title": "메이드 양은 먹기만 할 뿐",
@@ -3963,7 +3963,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63667,
   "year": 2026,
   "title": "마법의 자매 루루토리리",
@@ -3997,7 +3997,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 21,
   "year": 2026,
   "title": "원피스",
@@ -4023,7 +4023,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62171,
   "year": 2026,
   "title": "검은 고양이와 마녀의 교실",
@@ -4057,7 +4057,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62983,
   "year": 2026,
   "title": "마리카쨩의 호감도는 망가져있다",
@@ -4083,7 +4083,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63248,
   "year": 2026,
   "title": "큰 여자는 좋아하세요",
@@ -4109,7 +4109,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63310,
   "year": 2026,
   "title": "음옥단지",
@@ -4135,7 +4135,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63304,
   "year": 2026,
   "title": "마물을 먹는 모험가 ~나만 마물을 먹고 강해진다~",
@@ -4163,7 +4163,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 57779,
   "year": 2026,
   "title": "도로헤도로 시즌 2",
@@ -4189,7 +4189,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63572,
   "year": 2026,
   "title": "댄덜라이언",
@@ -4215,7 +4215,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62155,
   "year": 2026,
   "title": "경멸하는 표정으로 팬티를 보여다오 R(리턴즈)",
@@ -4241,7 +4241,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 59193,
   "title": "무직전생 Ⅲ ~이세계에 갔으면 최선을 다한다~",
   "year": 2026,
@@ -4280,7 +4280,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 58878,
   "title": "안녕, 라라",
   "year": 2026,
@@ -4318,7 +4318,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 56736,
   "title": "최강 찌꺼기 황자의 암약 제위 쟁탈전",
   "year": 2026,
@@ -4348,7 +4348,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62936,
   "title": "투명한 밤을 달리는 너와, 눈에 보이지 않는 사랑을 했다.",
   "year": 2026,
@@ -4382,7 +4382,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 60522,
   "title": "해골기사님은 지금 이세계 모험 중 Ⅱ",
   "year": 2026,
@@ -4416,7 +4416,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62617,
   "title": "여기는 내게 맡기고 먼저 가라고 말한 지 10년이 지났더니 전설이 되어 있었다.",
   "year": 2026,
@@ -4446,7 +4446,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62289,
   "title": "열받은 영애는 복수를 다짐했습니다  ~마도서의 힘으로 조국을 부숴버릴게요~",
   "year": 2026,
@@ -4476,7 +4476,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63752,
   "title": "버려진 성녀의 이세계 밥 여행 숨겨진 스킬로 캠핑카를 소환했습니다",
   "year": 2026,
@@ -4510,7 +4510,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62031,
   "title": "피구여왕 단코",
   "year": 2026,
@@ -4540,7 +4540,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 56735,
   "title": "전학 간 학교의 청순가련한 미소녀가 옛날에 남자라고 생각해서 같이 놀던 소꿉친구였던 일",
   "year": 2026,
@@ -4578,7 +4578,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62542,
   "title": "그랑블루 시즌3",
   "year": 2026,
@@ -4609,7 +4609,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 46488,
   "title": "대전 감사합니다 ~숙녀는 격투 게임을 안 해요~",
   "year": 2026,
@@ -4643,7 +4643,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61126,
   "title": "네가 죽을 때까지 사랑하고 싶어",
   "year": 2026,
@@ -4674,7 +4674,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62080,
   "title": "무자각한 성녀는 오늘도 무의식적으로 힘을 흘린다",
   "year": 2026,
@@ -4713,7 +4713,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 58929,
   "title": "공각기동대 THE GHOST IN THE SHELL",
   "year": 2026,
@@ -4763,7 +4763,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63047,
   "title": "개진전 사무라이 트루퍼",
   "year": 2026,
@@ -4797,7 +4797,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62476,
   "title": "히든 카드가 많은 빅토리아",
   "year": 2026,
@@ -4831,7 +4831,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63489,
   "title": "하늘은 붉은 강가",
   "year": 2026,
@@ -4865,7 +4865,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62513,
   "title": "클레바테스 Ⅱ -마수왕과 가짜 용사 전승-",
   "year": 2026,
@@ -4899,7 +4899,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 49233,
   "title": "유녀전기 Ⅱ",
   "year": 2026,
@@ -4933,7 +4933,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61686,
   "title": "히로인? 성녀? 아니요, 올 워크스 메이드 입니다! (자랑)",
   "year": 2026,
@@ -4963,33 +4963,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
-  "id": 61316,
-  "year": 2026,
-  "title": "Re:제로부터 시작하는 이세계 생활 4기",
-  "quarter": "3분기",
-  "thumbnail": "image/animeimg/2026/Q3/Re 제로부터 시작하는 이세계 생활 4기.webp",
-  "day": "Wednesdays",
-  "episodes": 19,
-  "studio": [
-    "WHITE FOX"
-  ],
-  "staff": {
-    "director": [
-      "시노하라 마사히로"
-    ],
-    "adaptor": [
-      "요코타니 마사히로"
-    ]
-  },
-  "pv": [
-    {
-      "title": "탈환편 PV",
-      "url": "https://youtu.be/2RqqQuy7pgo?si=C1GYWQS5U5dzqFfr"
-    }
-  ]
-},
-{
+  {
   "id": 62102,
   "title": "구박하지 않는 계모와 언니들",
   "year": 2026,
@@ -5019,7 +4993,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 54000,
   "title": "여성향 게임 세계는 모브에게 가혹한 세계입니다 2",
   "year": 2026,
@@ -5049,7 +5023,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61897,
   "title": "촌구석 아저씨, 검성이 되다 Ⅱ",
   "year": 2026,
@@ -5090,7 +5064,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63508,
   "title": "낙제 현자의 학원 무쌍 ~두 번 전생한 최강 현자, 400년 후의 세계를 마법으로 무쌍~",
   "year": 2026,
@@ -5120,7 +5094,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62322,
   "title": "LV999의 마을사람",
   "year": 2026,
@@ -5154,7 +5128,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63780,
   "title": "아름다운 그대에게 2기",
   "year": 2026,
@@ -5181,7 +5155,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63418,
   "title": "썬더 3",
   "year": 2026,
@@ -5210,7 +5184,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63316,
   "title": "도굴왕",
   "year": 2026,
@@ -5240,7 +5214,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63082,
   "title": "레이와의 다라 씨",
   "year": 2026,
@@ -5271,7 +5245,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63347,
   "title": "월드 이즈 댄싱",
   "year": 2026,
@@ -5302,7 +5276,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62430,
   "title": "BanG Dream! YUME∞MITA",
   "year": 2026,
@@ -5337,7 +5311,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63802,
   "title": "뫼비우스 더스트",
   "year": 2026,
@@ -5367,7 +5341,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62076,
   "title": "슈퍼 뒤에서 담배 피우는 두 사람",
   "year": 2026,
@@ -5394,7 +5368,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 59741,
   "title": "추방 당한 전생 중기사는 게임 지식으로 무쌍한다",
   "year": 2026,
@@ -5438,7 +5412,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63403,
   "title": "담배 고양이",
   "year": 2026,
@@ -5468,7 +5442,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63150,
   "title": "소녀 괴수 캐러멜리제",
   "year": 2026,
@@ -5502,7 +5476,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62078,
   "title": "영민 0명 스타트 변경 영주님",
   "year": 2026,
@@ -5536,7 +5510,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 60059,
   "title": "도망을 잘 치는 도련님 2기",
   "year": 2026,
@@ -5567,7 +5541,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61280,
   "title": "이거 그리고 죽어",
   "year": 2026,
@@ -5605,7 +5579,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63061,
   "title": "우리 남동생들이 죄송합니다",
   "year": 2026,
@@ -5643,7 +5617,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63817,
   "title": "헬 모드 ~파고들기 좋아하는 게이머는 폐급 설정 이세계에서 무쌍한다~ 2기",
   "year": 2026,
@@ -5673,7 +5647,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 56835,
   "title": "코드 기아스 탈환의 로제",
   "year": 2026,
@@ -5707,7 +5681,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61048,
   "title": "고양이와 용",
   "year": 2026,
@@ -5741,7 +5715,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61169,
   "title": "블랙 토치",
   "year": 2026,
@@ -5779,7 +5753,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63324,
   "title": "이와모토 선배의 추천",
   "year": 2026,
@@ -5813,7 +5787,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 60636,
   "title": "블리치 천년혈전 편 : 화진담",
   "year": 2026,
@@ -5849,7 +5823,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61483,
   "title": "천막의 자두가르",
   "year": 2026,
@@ -5888,7 +5862,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62051,
   "title": "그로우 업 쇼 ~해바라기 서커스단~",
   "year": 2026,
@@ -5924,7 +5898,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61814,
   "title": "오니의 신부",
   "year": 2026,
@@ -5954,7 +5928,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 60552,
   "title": "주식회사 마지루미에 2기",
   "year": 2026,
@@ -5985,7 +5959,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 60637,
   "title": "마법소녀 리리컬 나노하 EXCEEDS Gun Blaze Vengeance",
   "year": 2026,
@@ -6019,7 +5993,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63537,
   "title": "「널 사랑할 생각은 없어」라던 차기 공작님이 어째선지 제게 푹 빠졌어요 차기 공작님이 어째선지 제게 푹 빠졌어요",
   "year": 2026,
@@ -6050,7 +6024,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62535,
   "title": "하나오리 양은 전생해서도 싸움이 하고 싶어",
   "year": 2026,
@@ -6084,7 +6058,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62876,
   "title": "아가씨 돌보기 ~영애들이 다니는 명문 학교에서 제일가는 아가씨 (생활력 없음) 를 남몰래 돕는  시중 담당 이 되었습니다~",
   "year": 2026,
@@ -6118,7 +6092,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62683,
   "title": "렛츠고 괴기조",
   "year": 2026,
@@ -6152,7 +6126,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63832,
   "title": "정반대의 너와 나 2기",
   "year": 2026,
@@ -6182,7 +6156,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63100,
   "title": "철냄비 짱!",
   "year": 2026,
@@ -6212,7 +6186,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62435,
   "title": "세계 최강의 후위 ~미궁국의 신인 탐색자~",
   "year": 2026,
@@ -6242,7 +6216,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62811,
   "title": "너를 너무너무너무너무 좋아하는 100명의 그녀 3기",
   "year": 2026,
@@ -6272,7 +6246,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62856,
   "title": "20세기 전기 목록",
   "year": 2026,
@@ -6306,7 +6280,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61240,
   "title": "못 미더운 악녀입니다만",
   "year": 2026,
@@ -6337,7 +6311,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 56613,
   "title": "아주르 레인 미속전진! 2!!",
   "year": 2026,
@@ -6368,7 +6342,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63878,
   "title": "대역 영애를 구한 것은 냉혹 무자비한 얼음 왕자의 사랑이었습니다",
   "year": 2026,
@@ -6399,7 +6373,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62883,
   "title": "문호 스트레이독스 멍! 2",
   "year": 2026,
@@ -6430,7 +6404,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63468,
   "title": "후방주의 카무이씨",
   "year": 2026,
@@ -6465,7 +6439,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62233,
   "title": "원피스 히로인즈",
   "year": 2026,
@@ -6491,7 +6465,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61546,
   "title": "스타워즈 비전스 PRESENTS - 아홉 번째 제다이",
   "year": 2026,
@@ -6517,239 +6491,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
-  "id": 61469,
-  "year": 2026,
-  "quarter": "3분기",
-  "title": "스틸 볼 런: 죠죠의 기묘한 모험 (2nd STAGE)",
-  "thumbnail": "image/animeimg/2026/Q3/스틸 볼 런 죠죠의 기묘한 모험 (2nd STAGE).webp",
-  "day": "Web",
-  "episodes": 1,
-  "studio": [
-    "David Production"
-  ],
-  "staff": {
-    "director": [
-      "타카하시 히데야",
-      "키무라 야스히로"
-    ],
-    "adaptor": [
-      "코바야시 야스코"
-    ]
-  },
-  "pv": [
-    {
-      "title": "2nd & 3rd STAGE 공식 티저 예고편",
-      "url": "https://youtu.be/Avooz2bcM1Y?si=QsoEFSK3HjepuZnJ"
-    },
-    {
-      "title": "PV 제2탄",
-      "url": "https://youtu.be/jXtG_lcR9P4?si=J0OplO4nKuWJn4yl"
-    }
-  ]
-},
-{
-  "id": 59970,
-  "year": 2026,
-  "title": "전생했더니 슬라임이었던 건에 대하여 4기",
-  "quarter": "3분기",
-  "thumbnail": "image/animeimg/2026/Q2/전생했더니 슬라임이었던 건에 대하여 4기.webp",
-  "day": "Fridays",
-  "episodes": 0,
-  "studio": [
-    "8-Bit"
-  ],
-  "staff": {
-    "director": [
-      "츠다 나오카츠"
-    ],
-    "adaptor": [
-      "오가와 히토미"
-    ]
-  },
-  "pv": [
-    {
-      "title": "PV 제1탄",
-      "url": "https://youtu.be/ikxIrDr72iA?si=2P_l7IS7KdDbZqg9"
-    },
-    {
-      "title": "PV 제2탄",
-      "url": "https://youtu.be/7SBfpSGiJQI?si=TcodXTparnisP54U"
-    }
-  ]
-},
-{
-  "id": 62981,
-  "year": 2026,
-  "title": "신의 물방울",
-  "quarter": "3분기",
-  "thumbnail": "image/animeimg/2026/Q2/신의 물방울.webp",
-  "day": "Fridays",
-  "episodes": 24,
-  "studio": [
-    "SATELIGHT"
-  ],
-  "staff": {
-    "director": [
-      "이토소 켄지"
-    ],
-    "adaptor": [
-      "미츠루 유우"
-    ]
-  },
-  "pv": [
-    {
-      "title": "티저 PV",
-      "url": "https://youtu.be/6MNy1_2bUoI?si=BY0SFHW8HxWUKz9X"
-    },
-    {
-      "title": "공식 PV",
-      "url": "https://youtu.be/Oz5EkYVJbBc?si=X-Gr8Y_4-I1GqxBg"
-    }
-  ]
-},
-{
-  "id": 57466,
-  "year": 2026,
-  "title": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
-  "quarter": "3분기",
-  "thumbnail": "image/animeimg/2026/Q2/책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~.webp",
-  "day": "Saturdays",
-  "episodes": 0,
-  "studio": [
-    "WIT STUDIO"
-  ],
-  "staff": {
-    "director": [
-      "이와사키 요시아키"
-    ],
-    "adaptor": [
-      "쿠니사와 마리코"
-    ]
-  },
-  "pv": [
-    {
-      "title": "티저 PV",
-      "url": "https://youtu.be/J2s3AxerySY?si=z8eAtsY_gKRYx3Pm"
-    },
-    {
-      "title": "PV 제1탄",
-      "url": "https://youtu.be/ZrQoGBYHzIU?si=HcqlUAlNFmwVzjvd"
-    },
-    {
-      "title": "PV 제2탄",
-      "url": "https://youtu.be/rtPF6rjrdSU?si=lBixFXVBu8toN1Lz"
-    },
-    {
-      "title": "PV 제3탄 (2쿨)",
-      "url": "https://youtu.be/GVgK2Gkqhvk?si=9TLzZ05wASC2jcx8"
-    },
-    {
-      "title": "PV 제3탄 〈改〉 (2쿨)",
-      "url": "https://youtu.be/tsFXa1mlU2A?si=0OpuD7dSTUKnjTAA"
-    }
-  ]
-},
-{
-  "id": 60310,
-  "year": 2026,
-  "title": "마계학교 이루마군 4기",
-  "quarter": "3분기",
-  "thumbnail": "image/animeimg/2026/Q2/마계학교 이루마군 4기.webp",
-  "day": "Saturdays",
-  "episodes": 24,
-  "studio": [
-    "반다이 남코 픽처스"
-  ],
-  "staff": {
-    "director": [
-      "모리와키 마코토",
-      "츠지하시 아야카"
-    ],
-    "adaptor": [
-      "후데야스 카즈유키"
-    ]
-  },
-  "pv": [
-    {
-      "title": "티저 PV",
-      "url": "https://youtu.be/MuReZCUqouI?si=HrDWq_RSITb6D_Wq"
-    },
-    {
-      "title": "메인 PV",
-      "url": "https://youtu.be/jMhzqfi9aPw?si=k4S_7modZzDEwXAD"
-    },
-    {
-      "title": "메인 PV 제2탄",
-      "url": "https://youtu.be/oCaNQYaSEr4?si=FWFxgdOrR1abT97d"
-    }
-  ]
-},
-{
-  "id": 62001,
-  "year": 2026,
-  "title": "황천의 츠가이",
-  "quarter": "3분기",
-  "thumbnail": "image/animeimg/2026/Q2/황천의 츠가이.webp",
-  "day": "Saturdays",
-  "episodes": 24,
-  "studio": [
-    "본즈 필름"
-  ],
-  "staff": {
-    "director": [
-      "안도 마사히로"
-    ],
-    "adaptor": [
-      "타카기 노보루"
-    ]
-  },
-  "pv": [
-    {
-      "title": "애니플러스 PV",
-      "url": "https://youtu.be/JgbCy8Odou8?si=73dtXGBz57MhMJGD"
-    },
-    {
-      "title": "애니플러스 2쿨 PV",
-      "url": "https://youtu.be/krI8WUfP9pQ?si=xTKt3i0UFTCHTigS"
-    }
-  ]
-},
-{
-  "id": 62048,
-  "year": 2026,
-  "title": "마오",
-  "quarter": "3분기",
-  "thumbnail": "image/animeimg/2026/Q2/마오.webp",
-  "day": "Saturdays",
-  "episodes": 26,
-  "studio": [
-    "선라이즈"
-  ],
-  "staff": {
-    "director": [
-      "사토 테루오"
-    ],
-    "adaptor": [
-      "카키하라 유코"
-    ]
-  },
-  "pv": [
-    {
-      "title": "티저 PV",
-      "url": "https://youtu.be/T8hsY9L-vjQ?si=tVLCfDPqtmW8q7bc"
-    },
-    {
-      "title": "PV 제1탄",
-      "url": "https://youtu.be/eVfpoS0rjw0?si=QHDQ5uI56Q-RmOjd"
-    },
-    {
-      "title": "PV 제2탄",
-      "url": "https://youtu.be/QN64ZnMKMZM?si=Ky6edL3o5Y2dKT-e"
-    }
-  ]
-},
-{
+  {
   "id": 60610,
   "title": "끝이 없는 스칼렛",
   "year": 2026,
@@ -6775,7 +6517,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 59817,
   "title": "극장판 총집편 걸즈 밴드 크라이 청춘광주곡",
   "year": 2026,
@@ -6805,7 +6547,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61558,
   "title": "아이엠스타!×프리파라 더 무비 -만남의 기적!-",
   "year": 2026,
@@ -6835,7 +6577,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 60159,
   "title": "영화 러브 라이브! 니지가사키 학원 스쿨 아이돌 동호회 완결편 제2장",
   "year": 2026,
@@ -6861,7 +6603,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 50159,
   "title": "좀비 랜드 사가 유메긴가 파라다이스",
   "year": 2026,
@@ -6889,7 +6631,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 61418,
   "title": "녹나무의 파수꾼",
   "year": 2026,
@@ -6916,7 +6658,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 64012,
   "title": "리본 히어로",
   "year": 2026,
@@ -6950,7 +6692,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 62421,
   "title": "극장판 암살교실 모두의 시간",
   "year": 2026,
@@ -6980,7 +6722,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 213958,
   "title": "사랑의 하츄핑: 고래보석의 전설",
   "year": 2026,
@@ -7010,7 +6752,7 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-{
+  {
   "id": 63011,
   "title": "극장판 치이카와 인어 섬의 비밀",
   "year": 2026,

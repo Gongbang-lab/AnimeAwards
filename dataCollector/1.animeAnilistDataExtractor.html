@@ -157,6 +157,7 @@
 
   function sanitizeRecord(source) {
     const result = JSON.parse(JSON.stringify(source || {}));
+    result.quarter = [...new Set((Array.isArray(result.quarter) ? result.quarter : [result.quarter]).flatMap(q => String(q ?? "").split(/[,，]/)).map(q => q.trim()).filter(Boolean))];
     result.staff ||= {};
     delete result.staff.character_design;
     delete result.staff.composer;
@@ -230,7 +231,7 @@
       id: Number(elements.in_id.value) || 0,
       title,
       year,
-      quarter: quarters.join(", "),
+      quarter: quarters,
       thumbnail,
       day: elements.in_day.value.trim() || "Unknown",
       episodes: Number.parseInt(elements.in_episodes.value, 10) || 0,
@@ -398,7 +399,7 @@
 
   function saveRecord() {
     const updated = updateJSON();
-    if (!updated.id || !updated.title || !updated.year || !updated.quarter) {
+    if (!updated.id || !updated.title || !updated.year || !updated.quarter.length) {
       status("ID, 작품 제목, 연도, 분기를 확인해 주세요.", true);
       return;
     }

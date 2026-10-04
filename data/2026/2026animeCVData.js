@@ -999,7 +999,7 @@ var CharacterVoiceData_2026 = [
     "id": 344277,
     "name": "미나미 하루카",
     "cvimg": "image/cvimg/미나미 하루카.webp",
-    "gender": "male"
+    "gender": "female"
   },
   {
     "id": 106297,
@@ -1455,7 +1455,7 @@ var CharacterVoiceData_2026 = [
     "id": 95197,
     "name": "사이가 미츠키",
     "cvimg": "image/cvimg/사이가 미츠키.webp",
-    "gender": "female"
+    "gender": "male"
   },
   {
     "id": 96359,
@@ -1759,8 +1759,8 @@ var CharacterVoiceData_2026 = [
   },
   {
     "id": 95407,
-    "name": "산페이 유코a",
-    "cvimg": "image/cvimg/산페이 유코a.webp",
+    "name": "산페이 유코",
+    "cvimg": "image/cvimg/산페이 유코.webp",
     "gender": "female"
   },
   {
@@ -6127,14 +6127,8 @@ var CharacterVoiceData_2026 = [
   },
   {
     "id": 101996,
-    "name": "타케타츠 아야",
+    "name": "타케타츠 아야나",
     "cvimg": "image/cvimg/타케타츠 아야.webp",
-    "gender": "female"
-  },
-  {
-    "id": 95345,
-    "name": "타케토라",
-    "cvimg": "image/cvimg/타케토라.webp",
     "gender": "female"
   },
   {

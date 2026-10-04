@@ -87,7 +87,39 @@
         firebaseRetryTimer = setTimeout(() => waitForFirebaseAndListen(awardNameGetter), 300);
     }
 
+    function syncCandidateSelection(items, key = "id") {
+        const selected = new Set(items.map(item => String(item[key])));
+        document.querySelectorAll('[data-selection-id]').forEach(card => {
+            card.classList.toggle('selected', selected.has(card.dataset.selectionId));
+        });
+    }
+
+    const fallbackImage = new URL("image/no-image.svg", document.currentScript.src).href;
+    let imageFallbackInstalled = false;
+
+    function imageSource(path) {
+        const value = String(path ?? "").trim();
+        if (!value || value === "null" || value === "undefined") return fallbackImage;
+        return /^(https?:|data:|blob:|\/)/i.test(value) || value.startsWith("../")
+            ? value : `../${value.replace(/^\.\//, "")}`;
+    }
+
+    function installImageFallback() {
+        if (imageFallbackInstalled) return;
+        imageFallbackInstalled = true;
+        // 캡처 단계에서 처리하여 동적으로 추가된 카드/모달 이미지에도 적용한다.
+        document.addEventListener("error", event => {
+            const image = event.target;
+            if (!(image instanceof HTMLImageElement) || image.src === fallbackImage) return;
+            image.onerror = null;
+            image.src = fallbackImage;
+        }, true);
+    }
+
     global.NominateCommon = {
+        imageSource,
+        installImageFallback,
+        syncCandidateSelection,
         fireConfetti,
         applyVoteBadges,
         listenToVoteRates,

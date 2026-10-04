@@ -118,6 +118,7 @@ function renderStep1(filterText = "") {
 // 카드 생성 함수
 function createCard(anime) {
     const card = document.createElement("div");
+    card.dataset.selectionId = String(anime.id);
     
     const isSelected = nominateState.step === 1 
         ? nominateState.selectedItems.some(a => a.id === anime.id)
@@ -268,6 +269,7 @@ function handleCardClick(anime, cardElement) {
 // 3. UI 업데이트 및 프리뷰
 // ──────────────────────────────────────────────────────────
 function updatePreview() {
+    if (nominateState.step === 1) NominateCommon.syncCandidateSelection(nominateState.selectedItems);
     const previewBox = document.getElementById("preview-box");
     const nextBtn = document.getElementById("step1-next-btn");
     

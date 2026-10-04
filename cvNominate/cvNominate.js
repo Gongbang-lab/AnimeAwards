@@ -1,3 +1,5 @@
+NominateCommon.installImageFallback();
+
 /**
  * AnimeAwards - CV Nomination
  * 2-4 schema rebuild
@@ -613,13 +615,8 @@ function createCVCard(cv, step) {
     const image = document.createElement("img");
 
     image.loading = "lazy";
-    image.src = `../${cv.cvimg}`;
+    image.src = NominateCommon.imageSource(cv.cvimg);
     image.alt = cv.name;
-
-    image.onerror = () => {
-        image.src =
-            "https://via.placeholder.com/200x300";
-    };
 
     const info = document.createElement("div");
 
@@ -891,18 +888,13 @@ function createStep2Card(cv) {
         document.createElement("img");
 
     image.src =
-        `../${cv.cvimg}`;
+        NominateCommon.imageSource(cv.cvimg);
 
     image.alt =
         cv.name;
 
     image.loading =
         "lazy";
-
-    image.onerror = () => {
-        image.src =
-            "https://via.placeholder.com/200x300";
-    };
 
     thumb.appendChild(image);
 
@@ -1057,7 +1049,7 @@ function openDetailModal(cv) {
         cv.name;
 
     imgEl.src =
-        `../${cv.cvimg}`;
+        NominateCommon.imageSource(cv.cvimg);
 
     imgEl.alt =
         cv.name;
@@ -1082,16 +1074,11 @@ function openDetailModal(cv) {
             document.createElement("img");
 
         image.src = char.img
-            ? `../${char.img}`
-            : "https://via.placeholder.com/150";
+            ? NominateCommon.imageSource(char.img)
+            : "../image/no-image.svg";
 
         image.alt =
             char.charName;
-
-        image.onerror = () => {
-            image.src =
-                "https://via.placeholder.com/150";
-        };
 
         thumb.appendChild(image);
 
@@ -1161,7 +1148,7 @@ function openWinnerModal() {
     }
 
     winnerImg.src =
-        `../${winner.cvimg}`;
+        NominateCommon.imageSource(winner.cvimg);
 
     winnerImg.alt =
         winner.name;

@@ -376,7 +376,7 @@ var CharacterData_2026 = [
       "name": "미우",
       "gender": "female",
       "cvId": 101996,
-      "cv": "타케타츠 아야",
+      "cv": "타케타츠 아야나",
       "img": "image/charimg/2026/Q1/Vigilante_Boku_no_Hero_Academia_ILLEGALS_2nd_Season/Miu.jpg"
     },
     {
