@@ -436,18 +436,45 @@ function createAwardCard(award, results, ratioClass) {
         card.classList.add("has-winner");
     }
 
+    const wrapper = document.createElement('div');
+    wrapper.className = 'thumb-wrapper';
     const isVideo = String(displayThumb).endsWith('.mp4');
-    const mediaTag = isVideo 
-        ? `<video src="${displayThumb}" class="award-thumb" autoplay muted loop playsinline></video>`
-        : `<img src="${displayThumb}" class="award-thumb" onerror="this.src='./image/trophy.png'" this.classList.add('fallback-img');>`;
-
-    card.innerHTML = `
-        <div class="thumb-wrapper">
-            ${mediaTag}
-        </div>
-        <div class="award-name">${SeasonFilter.toDisplayAwardName(award.name)}</div>
-        <div class="award-winner" title="${displayTitle}">${displayTitle}</div>
-    `;
+    const media = document.createElement(isVideo ? 'video' : 'img');
+    media.className = 'award-thumb';
+    if (isVideo) { media.autoplay = true; media.muted = true; media.loop = true; media.playsInline = true; }
+    else { media.alt = displayTitle; media.onerror = () => { media.onerror = null; media.src = './image/trophy.png'; media.classList.add('fallback-img'); }; }
+    media.src = winner?.personalMemeId ? './image/no-image.svg' : displayThumb;
+    wrapper.appendChild(media);
+    const name = document.createElement('div');
+    name.className = 'award-name';
+    name.textContent = SeasonFilter.toDisplayAwardName(award.name);
+    const title = document.createElement('div');
+    title.className = 'award-winner';
+    title.title = title.textContent = displayTitle;
+    card.append(wrapper, name, title);
+    if (winner?.personalMemeId) {
+        PersonalMemeStorage.get(winner.personalMemeId).then(record => {
+            if (!record || !card.isConnected) return;
+            const url = URL.createObjectURL(record.file);
+            const personalMedia = document.createElement(record.type === 'video' ? 'video' : 'img');
+            personalMedia.className = 'award-thumb';
+            if (record.type === 'video') {
+                personalMedia.autoplay = true; personalMedia.muted = true;
+                personalMedia.loop = true; personalMedia.playsInline = true;
+            } else { personalMedia.alt = record.name; }
+            personalMedia.src = url;
+            wrapper.replaceChildren(personalMedia);
+            title.title = title.textContent = record.name;
+            // 화면에서 카드가 제거되면 해당 파일 URL도 해제한다.
+            const observer = new MutationObserver(() => {
+                if (!card.isConnected) {
+                    if (record.type === 'video') { personalMedia.pause(); personalMedia.removeAttribute('src'); personalMedia.load(); }
+                    URL.revokeObjectURL(url); observer.disconnect();
+                }
+            });
+            observer.observe(document.body, { childList: true, subtree: true });
+        }).catch(error => { console.warn('개인 밈 미디어를 불러오지 못했습니다.', error); });
+    }
 
     // 클릭 이벤트
     card.onclick = () => {

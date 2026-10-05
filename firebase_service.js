@@ -94,6 +94,9 @@ window.submitSingleAwardToDB = async function(awardName) {
     if (!winnerData) return { ok: false, reason: "missing-winner" };
 
     const winners = Array.isArray(winnerData) ? winnerData : [winnerData];
+    if (winners.some(winner => winner?.isPersonal || winner?.personalMemeId)) {
+      return { ok: false, reason: "personal-meme-excluded" };
+    }
     const candidateIds = winners.map(window.getWinnerIdentifier);
     if (candidateIds.some(id => typeof id !== "string" || !id.trim())) {
       return { ok: false, reason: "invalid-candidate" };

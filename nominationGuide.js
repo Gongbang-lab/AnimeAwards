@@ -1,5 +1,13 @@
 (function () {
     const guides = {
+        meme: {
+            title: '밈 선정 안내',
+            items: [
+                '밈을 선택해주세요.',
+                '추가하고 싶은 밈이 있다면 직접 추가해주세요.',
+                '현재 내 시상식에만 추가됩니다. 파일은 공개되지 않고 현재 이 브라우저에만 저장됩니다.'
+            ]
+        },
         pv: {
             title: '설레발상 선정 안내',
             items: [
@@ -51,7 +59,7 @@
     };
     const pageKeys = {
         ostnominate: 'ost', cvnominate: 'voice', bestcouplenominate: 'couple',
-        directornominate: 'director', top3nominate: 'top3'
+        directornominate: 'director', top3nominate: 'top3', memenominate: 'meme'
     };
 
     function showGuide() {

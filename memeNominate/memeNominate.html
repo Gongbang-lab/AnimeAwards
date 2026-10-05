@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./memeNominate.css">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <link rel="stylesheet" href="../winnerStage.css">
+    <link rel="stylesheet" href="../nominationGuide.css">
 </head>
 <body>
     <nav class="top-nav">
@@ -23,6 +24,8 @@
             </main>
 
             <aside class="sidebar">
+                <button id="add-personal-meme" class="gold-btn">밈 추가</button>
+                <p id="personal-storage-error" role="alert" hidden></p>
               <div class="preview-box" id="preview-box">
                 </div>
                 <div class="action-buttons">
@@ -33,6 +36,28 @@
         </div>
     </div>
 
+    <dialog id="personal-editor" aria-labelledby="personal-editor-title">
+        <form id="personal-meme-form">
+            <h2 id="personal-editor-title">밈 추가</h2>
+            <label for="personal-name">이름</label>
+            <input id="personal-name" required maxlength="120">
+            <label for="personal-origin">애니메이션 이름</label>
+            <input id="personal-origin" required maxlength="200">
+            <label for="personal-quarter">분기</label>
+            <select id="personal-quarter" required>
+                <option value="">분기 선택</option>
+                <option>1분기</option><option>2분기</option><option>3분기</option><option>4분기</option>
+            </select>
+            <label for="personal-file">이미지 또는 영상</label>
+            <input id="personal-file" type="file" accept="image/jpeg,image/png,image/webp,image/gif,video/mp4,video/webm" required>
+            <p>JPG · PNG · WebP · GIF · MP4 · WebM / 수정 시 파일을 선택하지 않으면 기존 파일을 유지합니다.</p>
+            <p id="personal-editor-error" role="alert"></p>
+            <div class="personal-editor-actions">
+                <button type="button" id="personal-editor-cancel" class="btn-outline">취소</button>
+                <button type="submit" id="personal-editor-save" class="gold-btn">저장</button>
+            </div>
+        </form>
+    </dialog>
     <div id="winner-popup" class="modal hidden"></div>
 
     <script src="../data/manifest.js"></script>
@@ -42,7 +67,10 @@
     <script src="../seasonFilter.js"></script>
     <script src="../nominateCommon.js"></script>
     <script src="../winnerStage.js"></script>
+    <script src="../personalMemeStorage.js"></script>
+    <script src="./personalMemes.js"></script>
     <script src="./memeNominate.js"></script>
+    <script src="../nominationGuide.js"></script>
     <script type="module" src="../firebase_service.js"></script>
 </body>
 </html>

@@ -30,12 +30,12 @@ var AnimeMemeData_2026 = [
     },
     {
         "id": "meme_005",
-        "name": "죠죠 스틸볼런",
+        "name": "똥 싼다고",
         "type": "video",
         "src1": "image/meme/똥 쌌다고.mp4",
         "src2_title": "한국어 버전",
         "src2": "image/meme/똥 쌌다고_한국어.mp4",
-        "origin": "죠죠 스틸볼런",
+        "origin": "스틸 볼 런: 죠죠의 기묘한 모험",
         "quarter": "1분기",
         "year" : 2026
     },
@@ -97,7 +97,7 @@ var AnimeMemeData_2026 = [
     },
     {
         "id": "meme_013",
-        "name": "나카무라 쿤",
+        "name": "나카무라 반 분위기",
         "type": "webp",
         "src1": "image/meme/나카무라1.webp",
         "src2_title": "아~	❤️",
@@ -116,15 +116,6 @@ var AnimeMemeData_2026 = [
         "src1": "image/meme/자판기_2.webp",
         "src1": "image/meme/자판기_3.webp",
         "origin": "자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season",
-        "quarter": "2분기",
-        "year" : 2026
-    },
-    {
-        "id": "meme_016",
-        "name": "북두의권 폭죽놀이",
-        "type": "webp",
-        "src1": "image/meme/북두의권.webp",
-        "origin": "북두의 권 -FIST OF THE NORTH STAR-",
         "quarter": "2분기",
         "year" : 2026
     },
@@ -227,16 +218,17 @@ var AnimeMemeData_2026 = [
     },
         {
         "id": "meme_027",
-        "name": "도망을 잘 치는 도련님 신 여캐",
+        "name": "도망을 잘 치는 갸루 사사키 미마",
         "type": "gif",
-        "src1": "image/meme/도망친 갸루.gif",
+        "src1": "image/meme/도망친 갸루1.mp4",
+        "src2": "image/meme/도망친 갸루2.gif",
         "origin": "도망을 잘 치는 도련님",
         "quarter": "3분기",
         "year": 2026
     },
     {
         "id": "meme_028",
-        "name": "블리치 천년혈전 편 : 화진담",
+        "name": "요코소 와타시노 소울 소사이어티에",
         "type": "mp4",
         "src1": "image/meme/아이젠1.mp4",
         "origin": "블리치 천년혈전 편 : 화진담",
