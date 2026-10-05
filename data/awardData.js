@@ -15,7 +15,7 @@ const Awards = [
   { id: 14, name: '베스트 각본상', thumb: 'image/trophy 1.png', theme: 'scriptwriter'},
   { id: 15, name: '베스트 각색상', thumb: 'image/trophy 1.png', theme: 'dramatization'},
   { id: 16, name: '베스트 감독상', thumb: 'image/trophy 1.png', theme: 'director'},
-  { id: 17, name: '베스트 동화상', thumb: 'image/trophy 1.png', theme: 'in_between'}, // 원화사이 더 부드럽게나 빨라보이게 만드는 역할
+  { id: 17, name: '베스트 동화상', thumb: 'image/trophy 1.png', theme: 'in_between'},
   { id: 18, name: '베스트 배경상', thumb: 'image/trophy 1.png', theme: 'background'},
   { id: 20, name: '올해의 설레발 상', thumb: 'image/trophy 1.png', theme: 'pv_mode'},
   { id: 21, name: '올해의 다크호스 상', thumb: 'image/trophy 1.png', theme: 'default'},
