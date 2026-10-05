@@ -1,0 +1,35 @@
+Tool: built-in image_gen
+transparent_background: true
+Reference: trophy-diamond.png
+Each complete prompt is COMMON + corresponding SUBJECT.
+
+COMMON
+Create ONE standalone award trophy PNG, using the reference ONLY for a consistent luxurious warm gold material, studio lighting, near-frontal three-quarter camera, and identical black cuboid pedestal with thin gold bottom trim. Replace the reference's tall diamond column entirely with the requested sculptural subject. No diamond column behind the subject. Clean restrained sculptural design, readable at small card size, smooth gold surfaces, minimal detailing. Full object centered in a portrait composition with generous safe margins. Keep pedestal design and relative size consistent across trophy family. Actual transparent alpha background. No text, letters, logos, floor, cast shadows, sparkles, or surrounding decorations. Subject: 
+
+trophy-crown.png
+A majestic sculptural golden royal crown trophy. Five clearly defined elegant crown points, a simple smooth gold band, no colored gemstones. The crown sits on a short gold support on the black square pedestal. Broad stately silhouette.
+
+trophy-character.png
+A golden human upper torso bust trophy: neutral stylized human head, neck, shoulders and upper chest, anatomically elegant but simplified smooth facial features, no recognizable real person, no hair detail, no clothes detail. Mounted directly on the black pedestal.
+
+trophy-voice.png
+A golden handheld microphone trophy tilted approximately 30 degrees away from vertical. A clearly recognizable microphone capsule with restrained grille detail and slim handle, held by a minimal gold support on the black pedestal. Tilt the microphone only; pedestal level.
+
+trophy-director.png
+A golden movie director clapperboard trophy, with hinged upper clapper bar raised slightly. Solid elegant sculptural board with subtle inset panel divisions and geometric diagonal clapper marks, all gold, no writing, no numbers. Mounted upright on the black pedestal.
+
+trophy-writing.png
+A golden open book and fountain pen trophy. A beautiful clearly open book with two page fans and a visible central fold, paired with one diagonal gold fountain pen whose nib is recognizable. Cohesive compact sculptural composition on the black pedestal, no writing on pages.
+
+trophy-music.png
+A golden musical note trophy: one unmistakable beamed pair of eighth notes, two rounded noteheads and two stems connected with a single beam, sculptural polished gold thickness, elegant balanced silhouette, on the black pedestal.
+
+trophy-couple.png
+Two golden human side-profile face sculptures facing each other, at equal height, symmetrical composition with a graceful narrow gap between noses. Clearly recognizable two separate inward-facing faces with forehead nose lips chin and neck; smooth simplified features, no hair detail, no identifiable person. Joined subtly at base on the black pedestal. No heart symbols.
+
+trophy-cinema.png
+A golden film reel trophy, recognizable circular cinema reel with five large round holes and a short elegantly curling strip of perforated film at the bottom. Restrained compact silhouette, gold throughout, upright reel on the black pedestal.
+
+trophy-studio.png
+A small elegant golden office building trophy, a compact modern rectangular mid-rise office tower, flat roof, orderly recessed square window grid across front and side. All gold, no glass colors, no logos or signage, no antenna. Architectural miniature on the black pedestal.
+

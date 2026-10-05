@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>기본 트로피 미리보기</title>
+  <link rel="stylesheet" href="./main.css">
+  <style>
+    body { margin: 0; padding: 40px 20px; color: #eee; font-family: sans-serif; text-align: center; }
+    h1 { font-size: 24px; color: #d4af37; }
+    p { color: #aaa; line-height: 1.7; }
+    .preview-grid { display: flex; gap: 32px; align-items: center; justify-content: center; flex-wrap: wrap; margin: 32px auto; }
+    .preview-grid .award-card { width: 260px; cursor: default; }
+    .preview-grid .award-card:hover { transform: none; }
+    a { color: #d4af37; }
+  </style>
+</head>
+<body>
+  <h1>기본 트로피</h1>
+  <p>받침대를 축으로 좌우 4° · 4초 왕복</p>
+  <main class="preview-grid">
+    <div class="award-card ratio-poster">
+      <div class="thumb-wrapper"><img class="award-thumb trophy-pivot" src="./image/trophy/trophy-base-reference.png" alt="금색 기본 트로피"></div>
+      <div class="award-name">대상</div>
+      <div class="award-winner">세로 카드</div>
+    </div>
+    <div class="award-card ratio-16-9">
+      <div class="thumb-wrapper"><img class="award-thumb trophy-pivot" src="./image/trophy/trophy-base-reference.png" alt="금색 기본 트로피"></div>
+      <div class="award-name">올해의 오프닝</div>
+      <div class="award-winner">가로 카드</div>
+    </div>
+  </main>
+  <a href="./index.html">시상식 메인으로</a>
+</body>
+</html>

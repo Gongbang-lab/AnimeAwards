@@ -354,7 +354,7 @@ h1 {
   display: block;
 }
 
-.award-thumb[src="./image/trophy.png"],
+.award-thumb[src="./image/trophy/trophy.png"],
 .award-thumb[src*="trophy.png"], /* 경로 변형 대비 */
 .award-thumb.fallback-img {
   object-fit: contain !important;
@@ -735,4 +735,16 @@ body.delete-mode .award-card::after {
 .change-season-btn:hover {
   background: #d4af37;
   color: #111;
+}
+
+/* 부문별 정지 트로피: 모든 카드 비율에서 전체 실루엣을 표시한다. */
+.award-card .thumb-wrapper:has(.award-trophy) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.award-card .thumb-wrapper .award-thumb.award-trophy {
+  width: 88%;
+  height: 88%;
+  object-fit: contain;
 }

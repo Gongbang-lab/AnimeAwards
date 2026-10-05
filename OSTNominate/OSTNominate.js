@@ -32,7 +32,7 @@
   }).filter(Boolean);
 
   function imagePath(value) {
-    return /^https?:\/\//i.test(value || '') ? value : `../${value || 'image/trophy.png'}`;
+    return /^https?:\/\//i.test(value || '') ? value : `../${value || 'image/trophy/trophy.png'}`;
   }
 
   const worksByQuarter = eligibleWorks.reduce((groups, anime) => {
@@ -89,7 +89,7 @@
     document.getElementById('ost-album-picker').hidden = anime.albums.length < 2;
     function renderAlbum(index) {
       const album = anime.albums[index];
-      image.onerror = () => { image.onerror = null; image.src = '../image/trophy.png'; };
+      image.onerror = () => { image.onerror = null; image.src = '../image/trophy/trophy.png'; };
       image.src = imagePath(album.image || anime.thumbnail);
       image.alt = `${anime.title} OST 앨범`;
       document.getElementById('ost-modal-release-date').textContent = album.release_date || '정보 없음';
@@ -139,7 +139,7 @@
     image.src = imagePath(anime.thumbnail);
     image.alt = anime.title;
     image.loading = "lazy";
-    image.onerror = () => { image.src = "../image/trophy.png"; image.onerror = null; };
+    image.onerror = () => { image.src = "../image/trophy/trophy.png"; image.onerror = null; };
     const badge = document.createElement("button");
     badge.type = "button";
     badge.className = "card-badge ost-listen-badge";

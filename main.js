@@ -411,7 +411,9 @@ function createAwardCard(award, results, ratioClass) {
     }
 
     let displayTitle = "준비중";
-    let displayThumb = award.thumb || `./image/trophy.png`;
+    const trophy = getAwardTrophy(award);
+    const isTrophyPath = path => /(?:^|\/)trophy(?:[- %][^/]*)?\.png$/i.test(String(path));
+    let displayThumb = !award.thumb || isTrophyPath(award.thumb) ? trophy : award.thumb;
 
     if (winner) {
         if (winner.thumbnail) {
@@ -436,13 +438,16 @@ function createAwardCard(award, results, ratioClass) {
         card.classList.add("has-winner");
     }
 
+    // 이전에 저장한 커스텀 상의 기본 트로피 경로도 새 디자인으로 표시한다.
+    if (isTrophyPath(displayThumb)) displayThumb = trophy;
     const wrapper = document.createElement('div');
     wrapper.className = 'thumb-wrapper';
     const isVideo = String(displayThumb).endsWith('.mp4');
     const media = document.createElement(isVideo ? 'video' : 'img');
     media.className = 'award-thumb';
+    if (displayThumb === trophy && !winner?.personalMemeId) media.classList.add('award-trophy');
     if (isVideo) { media.autoplay = true; media.muted = true; media.loop = true; media.playsInline = true; }
-    else { media.alt = displayTitle; media.onerror = () => { media.onerror = null; media.src = './image/trophy.png'; media.classList.add('fallback-img'); }; }
+    else { media.alt = displayTitle; media.onerror = () => { media.onerror = null; media.src = trophy; media.classList.add('fallback-img', 'award-trophy'); }; }
     media.src = winner?.personalMemeId ? './image/no-image.svg' : displayThumb;
     wrapper.appendChild(media);
     const name = document.createElement('div');
@@ -575,7 +580,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }
 
-            Awards.push({ name: title, theme: theme, thumb: './image/trophy.png' });
+            Awards.push({ name: title, theme: theme, thumb: getAwardTrophy({ name: title, theme }) });
             
             // 🟢 [핵심 추가] 추가된 상태를 브라우저에 저장
             localStorage.setItem("custom_awards_list", JSON.stringify(Awards));

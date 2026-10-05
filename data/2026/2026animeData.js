@@ -6781,5 +6781,173 @@ var AnimeCatalog_2026 = [
       "url": "https://youtu.be/-DjykB2XImc?si=r7ZFfinBQDibSz4v"
     }
   ]
+},
+{
+  "id": 63753,
+  "title": "바람의 저편",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/바람의 저편.webp",
+  "day": "Mondays",
+  "episodes": 0,
+  "studio": [
+    "스튜디오 딘"
+  ],
+  "staff": {
+    "director": [
+      "아베 노리유키"
+    ],
+    "adaptor": [
+      "타카스기 리카"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/vld1KeYVAME?si=AL4THgBd0RhtF0sL"
+    },
+    {
+      "title": "본 PV",
+      "url": "https://youtu.be/BltcPclMSL0?si=5zCFJ4NDTGTauDaq"
+    }
+  ]
+},
+{
+  "id": 63409,
+  "title": "안녕하세요. 반한 사람에게 사랑의 묘약을 의뢰받은 마녀입니다.",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/안녕하세요 반한 사람에게 사랑의 묘약을 의뢰받은 마녀입니다.webp",
+  "day": "Mondays",
+  "episodes": 0,
+  "studio": [
+    "디오미디어"
+  ],
+  "staff": {
+    "director": [
+      "쿠사카와 케이조"
+    ],
+    "adaptor": [
+      "와타리 와타루"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/XplGl4tL_8w?si=7i8KyN_8mQNxcBES"
+    },
+    {
+      "title": "메인 PV",
+      "url": "https://youtu.be/hGRtocAh3iw?si=3Ooc0rn7IY9Ye489"
+    }
+  ]
+},
+{
+  "id": 63712,
+  "title": "전생 고블린인데 질문 있어?",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/전생 고블린인데 질문 있어.webp",
+  "day": "Mondays",
+  "episodes": 0,
+  "studio": [
+    "BAKKKA"
+  ],
+  "staff": {
+    "director": [
+      "카와하라 류타"
+    ],
+    "adaptor": [
+      "모모세 유이치로"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/V4K-kG3hEJc?si=AUcTy_0uZVPvbsoG"
+    },
+    {
+      "title": "메인 PV",
+      "url": "https://youtu.be/ynr8tFWrK4c?si=6FcweaBj6A_CqZiY"
+    }
+  ]
+},
+{
+  "id": 63098,
+  "title": "사이렌",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/사이렌.webp",
+  "day": "Mondays",
+  "episodes": 0,
+  "studio": [
+    "SATELIGHT"
+  ],
+  "staff": {
+    "director": [
+      "오노 카츠미"
+    ],
+    "adaptor": [
+      "요시다 신"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 PV 제1탄",
+      "url": "https://youtu.be/2UEz14KjgWw?si=RrlBVdZgwN3RUTdY"
+    },
+    {
+      "title": "티저 PV 제2탄",
+      "url": "https://youtu.be/Z_xjea4G9p8?si=SN5xanOlEPJeMyAR"
+    },
+    {
+      "title": "본 PV",
+      "url": "https://youtu.be/fmUpSXFbSK0?si=yWQ4AAECm4uC7sgB"
+    }
+  ]
+},
+{
+  "id": 59787,
+  "title": "로멜리아 전기",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/로멜리아 전기.webp",
+  "day": "Saturdays",
+  "episodes": 0,
+  "studio": [
+    "Atra"
+  ],
+  "staff": {
+    "director": [
+      "사이토 코지"
+    ],
+    "adaptor": [
+      "사츠키 아야"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/GdwzdYBjYuA?si=YaU-rFLK-LbAR6Ai"
+    },
+    {
+      "title": "PV 제1탄",
+      "url": "https://youtu.be/k8G3_ZYNC-I?si=JBsvI1fk60qe7GDq"
+    },
+    {
+      "title": "PV 제2탄",
+      "url": "https://youtu.be/PxXPcoo8uGM?si=E1B7wFv9Ne6vfRxl"
+    }
+  ]
 }
 ];
