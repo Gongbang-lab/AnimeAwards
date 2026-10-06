@@ -23,6 +23,25 @@ function getCandidateId(item) {
   return typeof value === "string" ? value : "";
 }
 
+// Combination votes have their own counters and voter keys. Candidate eligibility
+// is the union of trusted single-quarter catalogs, never client-provided data.
+function getAllowedCandidates(seasonKey, awardName) {
+  const match = /^(\d{4})_([1-4]분기(?:,[1-4]분기){1,2})$/.exec(seasonKey);
+  if (!match) {
+    const season = Object.hasOwn(voteOptions.seasons, seasonKey) ? voteOptions.seasons[seasonKey] : null;
+    return season && Object.hasOwn(season.awards, awardName) ? season.awards[awardName] : null;
+  }
+  const quarters = match[2].split(",");
+  if (new Set(quarters).size !== quarters.length || [...quarters].sort().join(",") !== match[2]) return null;
+  const candidates = [];
+  for (const quarter of quarters) {
+    const season = voteOptions.seasons[`${match[1]}_${quarter}`];
+    if (!season) return null;
+    if (Object.hasOwn(season.awards, awardName)) candidates.push(...season.awards[awardName]);
+  }
+  return candidates.length ? [...new Set(candidates)] : null;
+}
+
 exports.submitVote = onCall({ region: "asia-southeast1", maxInstances: 20 }, async request => {
   const uid = request.auth && request.auth.uid;
   if (!uid) throw new HttpsError("unauthenticated", "익명 사용자 인증이 필요합니다.");
@@ -32,8 +51,7 @@ exports.submitVote = onCall({ region: "asia-southeast1", maxInstances: 20 }, asy
     throw new HttpsError("invalid-argument", "투표 정보 형식이 올바르지 않습니다.");
   }
 
-  const allowedSeason = voteOptions.seasons[seasonKey];
-  const allowedCandidates = allowedSeason && allowedSeason.awards[awardName];
+  const allowedCandidates = getAllowedCandidates(seasonKey, awardName);
   if (!Array.isArray(allowedCandidates)) {
     throw new HttpsError("invalid-argument", "선택한 시즌 또는 시상 부문이 유효하지 않습니다.");
   }

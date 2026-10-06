@@ -67,9 +67,7 @@ window.getWinnerIdentifier = function(awardData) {
 
 // ✅ [신규] 시즌(연도+분기) 키 생성 — 모든 Firebase 경로에서 이걸 통해서만 시즌을 조합
 window.getSeasonPathKey = function() {
-  const year = localStorage.getItem("selected_year") || "unknown";
-  const quarter = localStorage.getItem("selected_quarter") || "unknown";
-  return `${year}_${quarter}`;
+  return window.SeasonFilter.getSeasonKey();
 };
 
 // ✅ [신규] 특정 상(awardName)의 투표 카테고리 경로를 만드는 공통 함수
@@ -111,6 +109,23 @@ window.submitSingleAwardToDB = async function(awardName) {
     return { ok: true, alreadyVoted: false };
   } catch (error) {
     console.error("Firebase 투표 제출 실패:", error);
+    if (window.SeasonFilter.getSelectedSeason().quarter.includes(",")) {
+      let notice = document.getElementById("season-vote-error");
+      if (!notice) {
+        notice = document.createElement("div");
+        notice.id = "season-vote-error";
+        notice.setAttribute("role", "alert");
+        Object.assign(notice.style, {
+          position: "fixed", bottom: "20px", left: "50%", transform: "translateX(-50%)",
+          width: "min(90vw, 560px)", padding: "14px 18px", background: "#282018",
+          color: "#fff", border: "1px solid #d4af37", borderRadius: "10px", zIndex: "100000"
+        });
+        document.body.appendChild(notice);
+      }
+      notice.textContent = "수상 결과는 이 브라우저에 저장됐지만 투표 집계에는 반영되지 않았습니다. 복수 분기 서버 반영 또는 연결 상태를 확인해주세요.";
+      clearTimeout(window.seasonVoteErrorTimer);
+      window.seasonVoteErrorTimer = setTimeout(() => notice.remove(), 12000);
+    }
     return { ok: false, error };
   }
 };

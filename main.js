@@ -14,15 +14,12 @@ const QUARTERS = [
 ];
 
 function getSelectedSeason() {
-    return {
-        year: localStorage.getItem("selected_year"),
-        quarter: localStorage.getItem("selected_quarter")
-    };
+    return SeasonFilter.getSelectedSeason();
 }
 
 function setSelectedSeason(year, quarter) {
     if (year) localStorage.setItem("selected_year", year);
-    if (quarter) localStorage.setItem("selected_quarter", quarter);
+    if (quarter != null) localStorage.setItem("selected_quarter", SeasonFilter.normalizeSelection(quarter));
 }
 
 function clearSelectedSeason() {
@@ -37,7 +34,7 @@ function updateMainTitle() {
 
     titleEl.textContent = (quarter === "모든 분기")
         ? `${year}년 애니메이션 연말 결산`
-        : `${year}년 ${quarter} 시상식`;
+        : `${year}년 ${getSelectedSeason().label} 시상식`;
 }
 
 function renderYearCards() {
@@ -48,7 +45,8 @@ function renderYearCards() {
 
     grid.innerHTML = "";
     YEARS.forEach(year => {
-        const card = document.createElement("div");
+        const card = document.createElement("button");
+        card.type = "button";
         card.className = `season-card ${String(year) === selectedYear ? "selected" : ""}`;
         card.innerHTML = `<span class="season-card-main">${year}</span><span class="season-card-sub">년</span>`;
 
@@ -68,6 +66,13 @@ function renderQuarterCards() {
     if (!grid) return;
 
     const { year, quarter: selectedQuarter } = getSelectedSeason();
+    const controls = document.getElementById("season-selection-controls");
+    controls.hidden = !year;
+    const start = document.getElementById("season-start-btn");
+    start.disabled = !selectedQuarter;
+    start.onclick = enterMainContent;
+    document.getElementById("season-selection-summary").textContent = selectedQuarter
+        ? `선택: ${getSelectedSeason().label}` : "분기를 한 개 이상 선택해주세요.";
 
     if (!year) {
         grid.classList.add("hidden");
@@ -79,13 +84,23 @@ function renderQuarterCards() {
     grid.innerHTML = "";
 
     QUARTERS.forEach(q => {
-        const card = document.createElement("div");
-        card.className = `season-card quarter-card ${q.key === selectedQuarter ? "selected" : ""}`;
+        const card = document.createElement("button");
+        card.type = "button";
+        const selected = selectedQuarter === "모든 분기"
+            ? q.key === selectedQuarter : SeasonFilter.getQuarters(selectedQuarter).includes(q.key);
+        card.className = `season-card quarter-card ${selected ? "selected" : ""}`;
+        card.setAttribute("aria-pressed", String(selected));
         card.innerHTML = `<span class="season-card-main">${q.label}</span><span class="season-card-sub">${q.sub}</span>`;
 
         card.onclick = () => {
-            setSelectedSeason(year, q.key);
-            enterMainContent();
+            let next = [];
+            if (q.key === "모든 분기") next = [q.key];
+            else {
+                next = selectedQuarter === "모든 분기" ? [] : SeasonFilter.getQuarters(selectedQuarter);
+                next = next.includes(q.key) ? next.filter(value => value !== q.key) : [...next, q.key];
+            }
+            setSelectedSeason(year, next);
+            renderQuarterCards();
         };
 
         grid.appendChild(card);
@@ -134,6 +149,7 @@ function openSeasonSelectScreen() {
     if (grid) { grid.classList.add("hidden"); grid.innerHTML = ""; }
 
     renderYearCards();
+    renderQuarterCards();
 }
 function initSeasonGate() {
     const { year, quarter } = getSelectedSeason();

@@ -67,7 +67,7 @@ async function loadPersonalMemes() {
     try {
         personalRecords = await PersonalMemeStorage.all();
         const { year, quarter } = SeasonFilter.getSelectedSeason();
-        personalMemes = personalRecords.filter(m => String(m.year) === String(year) && (quarter === '모든 분기' || m.quarter === quarter))
+        personalMemes = personalRecords.filter(m => String(m.year) === String(year) && SeasonFilter.matchesQuarter(m.quarter))
             .map(m => ({ ...m, isPersonal: true }));
         status.hidden = true;
         renderMemeGrid();

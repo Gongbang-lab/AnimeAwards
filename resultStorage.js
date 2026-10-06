@@ -3,9 +3,7 @@
 
 window.ResultStorage = (function () {
     function getSeasonKey() {
-        const year = localStorage.getItem("selected_year") || "unknown";
-        const quarter = localStorage.getItem("selected_quarter") || "unknown";
-        return `anime_awards_result_${year}_${quarter}`;
+        return `anime_awards_result_${SeasonFilter.getSeasonKey()}`;
     }
 
     function getResults() {

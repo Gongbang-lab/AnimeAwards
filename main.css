@@ -715,6 +715,22 @@ body.delete-mode .award-card::after {
 
 .quarter-grid { margin-top: 8px; }
 
+#season-selection-controls { color: #ccc; max-width: 700px; }
+#season-selection-controls p { margin: 8px 0; line-height: 1.5; }
+#season-start-btn {
+  margin-top: 12px; padding: 13px 25px; border: 1px solid #d4af37;
+  border-radius: 10px; background: #d4af37; color: #111;
+  font: inherit; font-weight: 700; cursor: pointer;
+}
+#season-start-btn:disabled { opacity: .4; cursor: not-allowed; }
+.season-card { font-family: inherit; flex-shrink: 0; }
+.season-card:focus-visible, #season-start-btn:focus-visible { outline: 3px solid white; outline-offset: 4px; }
+.season-select-screen { overflow-y: auto; }
+@media (max-height: 760px) {
+  .season-select-screen { justify-content: flex-start; gap: 16px; }
+  .hero-title { font-size: 2rem; }
+}
+
 .title-row {
   display: flex;
   align-items: center;

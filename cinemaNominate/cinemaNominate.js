@@ -4,7 +4,7 @@ const cinemaState = {
 };
 
 const movies = (typeof cinemaData !== 'undefined' && Array.isArray(cinemaData))
-    ? SeasonFilter.filterAnimeList(cinemaData)
+    ? SeasonFilter.filterUniqueAnimeList(cinemaData)
     : [];
 
 document.addEventListener("DOMContentLoaded", () => {

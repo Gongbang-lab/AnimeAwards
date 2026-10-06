@@ -165,7 +165,7 @@
     left.replaceChildren();
     const searching = Boolean(searchText.trim());
     const selectedQuarter = SeasonFilter.getSelectedSeason().quarter;
-    const showQuarterAccordion = !selectedQuarter || selectedQuarter === "모든 분기";
+    const showQuarterAccordion = SeasonFilter.showQuarterAccordion();
     for (const quarter of quarterOrder) {
       const group = worksByQuarter[quarter];
       if (!group?.length) continue;

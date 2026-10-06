@@ -16,7 +16,7 @@ function getScriptwriterData() {
 function getSeasonFilteredScriptwriterData() {
     const data = getScriptwriterData();
     return typeof SeasonFilter !== "undefined"
-        ? SeasonFilter.filterAnimeList(data)
+        ? SeasonFilter.filterUniqueAnimeList(data)
         : data;
 }
 

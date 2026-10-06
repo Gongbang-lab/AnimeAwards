@@ -50,7 +50,7 @@ function renderMemeGrid() {
     resetPersonalCardMedia();
     grid.replaceChildren();
     const selectedQuarter = SeasonFilter.getSelectedSeason().quarter;
-    const showQuarter = !selectedQuarter || selectedQuarter === '모든 분기';
+    const showQuarter = SeasonFilter.showQuarterAccordion();
     function accordion(parent, label, key, level) {
         const section = document.createElement('div');
         section.className = `${level}-section`;

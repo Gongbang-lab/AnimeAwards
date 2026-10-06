@@ -84,7 +84,7 @@ function renderAnimeCards() {
     }, {});
     const quarterOrder = [...QUARTER_ORDER, ...Object.keys(animeByQuarter).filter(q => !QUARTER_ORDER.includes(q))];
     const selectedQuarter = SeasonFilter.getSelectedSeason().quarter;
-    const showQuarterAccordion = !selectedQuarter || selectedQuarter === '모든 분기';
+    const showQuarterAccordion = SeasonFilter.showQuarterAccordion();
 
     quarterOrder.forEach(quarter => {
         const quarterAnime = animeByQuarter[quarter];

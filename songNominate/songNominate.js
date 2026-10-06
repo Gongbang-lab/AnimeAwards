@@ -132,7 +132,7 @@ function renderFilteredList(query) {
     const mergedData = getMergedSongData(songNominateState.theme);
     const isSearching = query.length > 0;
     const selectedQuarter = SeasonFilter.getSelectedSeason().quarter;
-    const showQuarterAccordion = !selectedQuarter || selectedQuarter === "모든 분기";
+    const showQuarterAccordion = SeasonFilter.showQuarterAccordion();
 
     Object.entries(mergedData).forEach(([quarter, songs]) => {
         const filteredSongs = songs.filter(song => 

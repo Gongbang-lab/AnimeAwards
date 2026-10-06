@@ -241,6 +241,7 @@ function isInSelectedSeason(anime) {
 }
 
 function getSelectedSeason() {
+    if (window.SeasonFilter?.getSelectedSeason) return window.SeasonFilter.getSelectedSeason();
     if (
         typeof SeasonFilter !== "undefined" &&
         SeasonFilter &&
@@ -577,7 +578,7 @@ function getSeasonLabel() {
         return "알 수 없음";
     }
 
-    return `${season.year} / ${season.quarter}`;
+    return `${season.year} / ${season.label || season.quarter}`;
 }
 
 /* ---------------------------------------------------------

@@ -68,7 +68,7 @@ function renderStep1(searchTerm = "") {
     const isSearching = searchTerm.trim() !== "";
     const lowerTerm = searchTerm.toLowerCase().trim();
     const selectedQuarter = SeasonFilter.getSelectedSeason().quarter;
-    const showQuarterAccordion = !selectedQuarter || selectedQuarter === "모든 분기";
+    const showQuarterAccordion = SeasonFilter.showQuarterAccordion();
 
     let filteredData = top3State.allAnime;
     if (isSearching) {
@@ -349,9 +349,9 @@ function showResult() {
     const season = SeasonFilter.getSelectedSeason();
     document.getElementById('result-title').textContent =
         season.quarter && season.quarter !== '모든 분기'
-            ? `${season.quarter} TOP 3` : '올해의 TOP 3';
+            ? `${season.label} TOP 3` : '올해의 TOP 3';
     document.getElementById('stage-season').textContent =
-        [season.year ? season.year + '년' : '', season.quarter].filter(Boolean).join(' · ');
+        [season.year ? season.year + '년' : '', season.label].filter(Boolean).join(' · ');
     modal.classList.remove('hidden');
     document.body.style.overflow = 'hidden';
     document.getElementById('save-main-btn').focus({ preventScroll: true });

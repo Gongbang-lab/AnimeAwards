@@ -41,7 +41,7 @@ function inSeason(item, year, quarter) {
   const quarters = (Array.isArray(item.quarter) ? item.quarter : [item.quarter])
     .flatMap(value => String(value ?? "").split(/[,，]/))
     .map(value => value.trim().replace(/^Q([1-4])$/, "$1분기"));
-  if (quarter !== "모든 분기" && item.quarter != null && !quarters.includes(quarter)) return false;
+  if (quarter !== "모든 분기" && item.quarter != null && !quarter.split(",").some(q => quarters.includes(q))) return false;
   return true;
 }
 
@@ -158,6 +158,10 @@ if (!Array.isArray(years) || !Array.isArray(awards)) {
 
 const catalog = { version: 1, seasons: {} };
 const quarters = ["1분기", "2분기", "3분기", "4분기", "모든 분기"];
+for (let mask = 1; mask < 15; mask++) {
+  const selected = [1, 2, 3, 4].filter(q => mask & (1 << (q - 1))).map(q => `${q}분기`);
+  if (selected.length > 1) quarters.push(selected.join(","));
+}
 
 for (const year of years) {
   const data = {};

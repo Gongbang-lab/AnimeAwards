@@ -82,8 +82,12 @@ function renderAccordion(data) {
             }
         });
 
-        qDiv.append(qHeader, qContent);
-        els.accordion.appendChild(qDiv);
+        if (SeasonFilter.showQuarterAccordion()) {
+            qDiv.append(qHeader, qContent);
+            els.accordion.appendChild(qDiv);
+        } else {
+            els.accordion.append(...qContent.children);
+        }
     });
 }
 

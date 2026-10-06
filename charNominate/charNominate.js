@@ -81,7 +81,7 @@ function renderStep1(searchTerm = "") {
     const hierarchy = groupByHierarchy(flatData);
     const isSearching = searchTerm.trim() !== "";
     const selectedQuarter = SeasonFilter.getSelectedSeason().quarter;
-    const showQuarterAccordion = !selectedQuarter || selectedQuarter === "모든 분기";
+    const showQuarterAccordion = SeasonFilter.showQuarterAccordion();
 
     Object.entries(hierarchy).forEach(([qName, days]) => {
         let qSection = null;

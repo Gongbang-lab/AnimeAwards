@@ -66,7 +66,7 @@ function renderStep1(filterText = "") {
 
     const isSearching = filterText.length > 0;
     const selectedQuarter = SeasonFilter.getSelectedSeason().quarter;
-    const showQuarterAccordion = !selectedQuarter || selectedQuarter === "모든 분기";
+    const showQuarterAccordion = SeasonFilter.showQuarterAccordion();
 
     Object.keys(AnimeByQuarter).sort().forEach(qKey => {
         const animeList = AnimeByQuarter[qKey];
