@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>애니메이션 곡 데이터 편집기</title>
+  <link rel="stylesheet" href="./savedCatalog.css">
   <style>
     :root { color-scheme: light; font-family: Pretendard, "Malgun Gothic", sans-serif; }
     body { margin: 0; padding: 24px; background: #f1f5f9; color: #1e293b; }
@@ -41,6 +42,11 @@
   <h1>🎵 애니메이션 곡 데이터 편집기</h1>
   <p class="description">AniList API를 호출하지 않습니다. 2026 작품 목록에서 제목·분기 정보를 찾고, 곡 데이터는 기존 JS 파일에서 불러와 편집합니다. 변경한 전체 데이터 배열을 JS로 복사할 수 있습니다.</p>
 
+  <section class="saved-catalog">
+    <h2>저장된 작품 · OP / ED 목록</h2>
+    <p class="muted">카드를 누르면 해당 곡 데이터를 수정하거나 추가할 수 있습니다. 변경 내용은 아래 JS 복사 버튼으로 복사하여 원본 파일에 반영해주세요.</p>
+    <div id="song-catalog"></div>
+  </section>
   <div class="search-row">
     <div class="field">
       <label for="animeId">애니메이션 ID</label>
@@ -83,6 +89,7 @@
 
 <script src="../data/2026/2026animeData.js"></script>
 <script src="../data/2026/2026animeSongsData.js"></script>
+<script src="./savedCatalog.js"></script>
 <script>
   const workingData = JSON.parse(JSON.stringify(
     Array.isArray(window.AnimeSongs_2026) ? window.AnimeSongs_2026 : []
@@ -90,6 +97,8 @@
   const animeCatalog = Array.isArray(window.AnimeCatalog_2026) ? window.AnimeCatalog_2026 : [];
   let currentRecord = null;
   let currentTitle = "";
+  let songCatalog = null;
+  const animeTitles = new Map(animeCatalog.map(item => [String(item.id), item.title]));
 
   const quarterSelect = document.getElementById("quarter");
   const yearInput = document.getElementById("year");
@@ -165,6 +174,7 @@
   }
 
   function updateOutput() {
+    songCatalog?.render();
     resultArea.value = `var AnimeSongs_2026 = ${JSON.stringify(workingData, null, 2)};\n`;
   }
 
@@ -174,7 +184,7 @@
     status.style.color = isError ? "#b91c1c" : "#2563eb";
   }
 
-  function loadById() {
+  function loadById(recordIndex = null) {
     const rawId = document.getElementById("animeId").value.trim();
     const id = Number(rawId);
     if (!Number.isInteger(id) || id <= 0) {
@@ -182,7 +192,8 @@
       return;
     }
 
-    let index = workingData.findIndex(item => Number(item.id) === id);
+    let index = Number.isInteger(recordIndex) && Number(workingData[recordIndex]?.id) === id
+      ? recordIndex : workingData.findIndex(item => Number(item.id) === id);
     const animeMatches = animeCatalog.filter(item => Number(item.id) === id);
     const animeInfo = animeMatches.find(item => item.quarter === quarterSelect.value) || animeMatches[0];
 
@@ -190,7 +201,7 @@
       currentRecord = workingData[index];
       currentTitle = animeInfo?.title || "";
       yearInput.value = currentRecord.year || animeInfo?.year || 2026;
-      quarterSelect.value = currentRecord.quarter || animeInfo?.quarter || "1분기";
+      selectRecordQuarter(currentRecord.quarter || animeInfo?.quarter || "1분기");
       ensureEmptyCategories(currentRecord);
       setStatus(`기존 곡 데이터를 불러왔습니다. (목록 ${workingData.length}개)`);
     } else {
@@ -203,7 +214,7 @@
       workingData.push(currentRecord);
       currentTitle = animeInfo?.title || "";
       yearInput.value = currentRecord.year;
-      quarterSelect.value = currentRecord.quarter;
+      selectRecordQuarter(currentRecord.quarter);
       setStatus(animeInfo
         ? `작품 목록에서 찾았습니다. 빈 OP·ED 항목을 만들었습니다. (목록 ${workingData.length}개)`
         : `작품 목록에는 없지만 새 데이터 구조를 만들었습니다. 연도와 분기를 확인하세요. (목록 ${workingData.length}개)`);
@@ -213,6 +224,15 @@
     yearInput.disabled = false;
     quarterSelect.disabled = false;
     renderEditor();
+  }
+
+  // Preserve multi-quarter records when opening the editor.
+  function selectRecordQuarter(value) {
+    const text = Array.isArray(value) ? value.join(",") : String(value);
+    if (![...quarterSelect.options].some(option => option.value === text)) {
+      quarterSelect.add(new Option(text, text));
+    }
+    quarterSelect.value = text;
   }
 
   document.getElementById("searchButton").addEventListener("click", loadById);
@@ -250,7 +270,8 @@
   function updateMetadata() {
     if (!currentRecord) return;
     currentRecord.year = Number(yearInput.value) || 2026;
-    currentRecord.quarter = quarterSelect.value;
+    const originalQuarter = Array.isArray(currentRecord.quarter) ? currentRecord.quarter.join(",") : String(currentRecord.quarter);
+    if (originalQuarter !== quarterSelect.value) currentRecord.quarter = quarterSelect.value;
     updateOutput();
   }
   yearInput.addEventListener("input", updateMetadata);
@@ -268,7 +289,27 @@
     }
   });
 
-  updateOutput();
+  songCatalog = createSavedCatalog({
+    host: document.getElementById("song-catalog"),
+    records: () => workingData.map((record, index) => {
+      const lines = [];
+      for (const type of ["op", "ed"]) {
+        const songs = (Array.isArray(record.songs) ? record.songs : [])
+          .filter(song => String(song?.type || "").toLowerCase() === type);
+        if (!songs.length) lines.push(`${type.toUpperCase()} · 미등록`);
+        songs.forEach((song, i) => lines.push(`${type.toUpperCase()} ${i + 1} · ${String(song.title || "").trim() || "제목 미입력"}`));
+      }
+      return { key: index, title: animeTitles.get(String(record.id)) || `작품 ID ${record.id}`,
+        meta: `ID ${record.id} · ${record.year || 2026} · ${Array.isArray(record.quarter) ? record.quarter.join(", ") : record.quarter || "분기 미지정"}`,
+        lines, selected: currentRecord === record };
+    }).sort((a, b) => a.title.localeCompare(b.title, "ko", { numeric: true })),
+    onSelect: index => {
+      document.getElementById("animeId").value = workingData[index].id;
+      loadById(index);
+      document.getElementById("animeTitle").scrollIntoView({ block: "start" });
+    }
+  });
+  renderEditor();
 </script>
 </body>
 </html>

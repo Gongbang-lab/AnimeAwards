@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anime Episode Data Collector</title>
+    <link rel="stylesheet" href="./savedCatalog.css">
     <style>
         :root { --primary: #4f46e5; --secondary: #10b981; --bg: #f8fafc; }
         * { box-sizing: border-box; }
@@ -57,7 +58,12 @@
         </div>
     </div>
 
-    <div class="card">
+    <section class="card">
+        <h2>저장된 작품 · 마지막 에피소드</h2>
+        <p class="info-text">카드를 누르면 해당 작품의 에피소드를 수정하거나 추가할 수 있습니다. 마지막 화수는 숫자 회차 중 가장 큰 값입니다. 변경 내용은 복사 후 원본 파일에 반영해주세요.</p>
+        <div id="episode-catalog" class="saved-catalog"></div>
+    </section>
+    <div class="card" id="saved-episodes-card">
         <h2>📚 현재 저장된 에피소드</h2>
         <div id="saved-status" class="info-text">애니메이션 ID를 검색해 주세요.</div>
         <div id="saved-list" class="saved-list"><div class="empty">검색 결과가 여기에 표시됩니다.</div></div>
@@ -103,10 +109,24 @@
 </div>
 
 <script src="../data/2026/2026animeEPData.js"></script>
+<script src="../data/2026/2026animeData.js"></script>
+<script src="./savedCatalog.js"></script>
 <script>
     let episodeData = null;
     let currentAnimeId = '';
     let editingEpisode = null;
+    let episodeCatalog = null;
+    const animeTitles = new Map((typeof AnimeCatalog_2026 !== 'undefined' && Array.isArray(AnimeCatalog_2026) ? AnimeCatalog_2026 : []).map(item => [String(item.id), item.title]));
+
+    function lastEpisode(episodes) {
+        let last = null, highest = -Infinity;
+        for (const ep of episodes) {
+            const text = String(ep['episode no'] || '').normalize('NFKC').trim();
+            const match = /^(?:제\s*)?(\d+(?:\.\d+)?)\s*(?:화|회)?$/i.exec(text);
+            if (match && Number(match[1]) >= highest) { highest = Number(match[1]); last = ep; }
+        }
+        return last || episodes[episodes.length - 1];
+    }
     const editFieldIds = ['edit-no', 'edit-title', 'edit-story', 'edit-director'];
 
     function editValues() {
@@ -250,6 +270,8 @@
             return;
         }
         if (!canLeaveEdit()) return;
+        if ([...document.querySelectorAll('#epList input')].some(input => input.value.trim()) &&
+            !confirm('아직 추가 반영하지 않은 새 에피소드 입력을 취소하고 작품을 불러올까요?')) return;
         closeEditor();
         currentAnimeId = id;
         renderSavedEpisodes(id);
@@ -284,6 +306,7 @@
     }
 
     function generateCurrentBlock() {
+        episodeCatalog?.render();
         if (!currentAnimeId || !episodeData) {
             output.textContent = '애니메이션 ID를 검색해 주세요.';
             copyButton.disabled = true;
@@ -375,6 +398,24 @@
     } else {
         setStatus(loadStatus, '데이터 파일을 읽지 못했습니다. 2026animeEPData.js의 경로를 확인해 주세요.', 'error');
     }
+    episodeCatalog = createSavedCatalog({
+        host: document.getElementById('episode-catalog'),
+        records: () => Object.entries(episodeData || {}).map(([id, data]) => {
+            const episodes = Array.isArray(data) ? data : [];
+            const last = lastEpisode(episodes);
+            return {
+                key: id, title: animeTitles.get(id) || `작품 ID ${id}`,
+                meta: `ID ${id} · 저장된 에피소드 ${episodes.length}개`,
+                lines: [last ? `${last['episode no'] || '회차 미지정'} : ${last['episode title'] || '제목 미지정'}` : '저장된 에피소드 없음'],
+                selected: currentAnimeId === id
+            };
+        }).sort((a, b) => a.title.localeCompare(b.title, 'ko', { numeric: true })),
+        onSelect: id => {
+            document.getElementById('animeId').value = id;
+            searchAnime();
+            if (currentAnimeId === id) document.getElementById('saved-episodes-card').scrollIntoView({ block: 'start' });
+        }
+    });
 </script>
 </body>
 </html>

@@ -1,0 +1,11 @@
+.saved-catalog { margin: 20px 0; }
+.saved-catalog-search { margin: 10px 0; }
+.saved-catalog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; max-height: 440px; overflow: auto; padding: 3px; }
+.saved-catalog-grid .catalog-item { display: block; width: 100%; text-align: left; white-space: normal; overflow-wrap: anywhere; padding: 15px; border: 1px solid #cbd5e1; border-radius: 10px; background: #f8fafc; color: #334155; font: inherit; cursor: pointer; }
+.saved-catalog-grid .catalog-item:hover { background: #eef2ff; border-color: #818cf8; }
+.saved-catalog-grid .catalog-item[aria-pressed="true"] { border-color: #4f46e5; background: #eef2ff; box-shadow: inset 0 0 0 1px #4f46e5; }
+.saved-catalog-grid .catalog-item:focus-visible { outline: 3px solid #818cf8; outline-offset: 1px; }
+.catalog-title { display: block; font-weight: 700; margin-bottom: 7px; }
+.catalog-meta { display: block; color: #64748b; font-size: 12px; margin-bottom: 8px; }
+.catalog-line { display: block; line-height: 1.6; font-size: 14px; }
+.catalog-count { color: #64748b; font-size: 13px; margin: 8px 0; }
