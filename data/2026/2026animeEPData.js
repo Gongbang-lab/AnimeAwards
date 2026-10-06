@@ -19541,349 +19541,377 @@ var animeEPData_2026 = {
         }
     }
 ],
-"62048": [
-    {
-        "episode no": "제1화",
-        "episode title": "나노카와 마오",
-        "storyboard": {
-            "staff": [
-                "사토 테루오"
-            ]
+    "62048": [
+        {
+            "episode no": "제1화",
+            "episode title": "나노카와 마오",
+            "storyboard": {
+                "staff": [
+                    "사토 테루오"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "사토 테루오"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "사토 테루오"
-            ]
-        }
-    },
-    {
-        "episode no": "제2화",
-        "episode title": "거미 여인",
-        "storyboard": {
-            "staff": [
-                "사토 테루오"
-            ]
+        {
+            "episode no": "제2화",
+            "episode title": "거미 여인",
+            "storyboard": {
+                "staff": [
+                    "사토 테루오"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "신도 요헤이"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "신도 요헤이"
-            ]
-        }
-    },
-    {
-        "episode no": "제3화",
-        "episode title": "저주받은 자",
-        "storyboard": {
-            "staff": [
-                "사토 테루오"
-            ]
+        {
+            "episode no": "제3화",
+            "episode title": "저주받은 자",
+            "storyboard": {
+                "staff": [
+                    "사토 테루오"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "요네다 미츠히로",
+                    "도몬 켄이치"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "요네다 미츠히로",
-                "도몬 켄이치"
-            ]
-        }
-    },
-    {
-        "episode no": "제4화",
-        "episode title": "종림교 사건",
-        "storyboard": {
-            "staff": [
-                "사토 테루오"
-            ]
+        {
+            "episode no": "제4화",
+            "episode title": "종림교 사건",
+            "storyboard": {
+                "staff": [
+                    "사토 테루오"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "야구치 마도카"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "야구치 마도카"
-            ]
-        }
-    },
-    {
-        "episode no": "제5화",
-        "episode title": "요석",
-        "storyboard": {
-            "staff": [
-                "토베 아츠오"
-            ]
+        {
+            "episode no": "제5화",
+            "episode title": "요석",
+            "storyboard": {
+                "staff": [
+                    "토베 아츠오"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "오카베 히토시"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "오카베 히토시"
-            ]
-        }
-    },
-    {
-        "episode no": "제6화",
-        "episode title": "그날의 기억",
-        "storyboard": {
-            "staff": [
-                "사토 테루오"
-            ]
+        {
+            "episode no": "제6화",
+            "episode title": "그날의 기억",
+            "storyboard": {
+                "staff": [
+                    "사토 테루오"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "신도 요헤이"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "신도 요헤이"
-            ]
-        }
-    },
-    {
-        "episode no": "제7화",
-        "episode title": "새로운 그릇",
-        "storyboard": {
-            "staff": [
-                "무라키 카즈타카"
-            ]
+        {
+            "episode no": "제7화",
+            "episode title": "새로운 그릇",
+            "storyboard": {
+                "staff": [
+                    "무라키 카즈타카"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "시모토리 코스케"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "시모토리 코스케"
-            ]
-        }
-    },
-    {
-        "episode no": "제8화",
-        "episode title": "햣카",
-        "storyboard": {
-            "staff": [
-                "카나자와 히로미츠"
-            ]
+        {
+            "episode no": "제8화",
+            "episode title": "햣카",
+            "storyboard": {
+                "staff": [
+                    "카나자와 히로미츠"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "아오바 료타로"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "아오바 료타로"
-            ]
-        }
-    },
-    {
-        "episode no": "제9화",
-        "episode title": "카몬",
-        "storyboard": {
-            "staff": [
-                "요네다 미츠히로"
-            ]
+        {
+            "episode no": "제9화",
+            "episode title": "카몬",
+            "storyboard": {
+                "staff": [
+                    "요네다 미츠히로"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "요네다 미츠히로",
+                    "도몬 켄이치"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "요네다 미츠히로",
-                "도몬 켄이치"
-            ]
-        }
-    },
-    {
-        "episode no": "제10화",
-        "episode title": "태산부군",
-        "storyboard": {
-            "staff": [
-                "카네코 요시유키"
-            ]
+        {
+            "episode no": "제10화",
+            "episode title": "태산부군",
+            "storyboard": {
+                "staff": [
+                    "카네코 요시유키"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "신도 요헤이"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "신도 요헤이"
-            ]
-        }
-    },
-    {
-        "episode no": "제11화",
-        "episode title": "피를 나누다",
-        "storyboard": {
-            "staff": [
-                "사토 테루오"
-            ]
+        {
+            "episode no": "제11화",
+            "episode title": "피를 나누다",
+            "storyboard": {
+                "staff": [
+                    "사토 테루오"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "마메즈카 타카시"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "마메즈카 타카시"
-            ]
-        }
-    },
-    {
-        "episode no": "제12화",
-        "episode title": "물의 술사",
-        "storyboard": {
-            "staff": [
-                "카와이 사쿠라"
-            ]
+        {
+            "episode no": "제12화",
+            "episode title": "물의 술사",
+            "storyboard": {
+                "staff": [
+                    "카와이 사쿠라"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "시모토리 코스케"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "시모토리 코스케"
-            ]
-        }
-    },
-    {
-        "episode no": "제13화",
-        "episode title": "묘귀",
-        "storyboard": {
-            "staff": [
-                "카와이 사쿠라"
-            ]
+        {
+            "episode no": "제13화",
+            "episode title": "묘귀",
+            "storyboard": {
+                "staff": [
+                    "카와이 사쿠라"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "타나카 료스케"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "타나카 료스케"
-            ]
-        }
-    },
-    {
-        "episode no": "제14화",
-        "episode title": "철 가면",
-        "storyboard": {
-            "staff": [
-                "사토 테루오"
-            ]
+        {
+            "episode no": "제14화",
+            "episode title": "철 가면",
+            "storyboard": {
+                "staff": [
+                    "사토 테루오"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "토바 아키라"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "토바 아키라"
-            ]
-        }
-    },
-    {
-        "episode no": "제15화",
-        "episode title": "시라누이",
-        "storyboard": {
-            "staff": [
-                "요네다 미츠히로"
-            ]
+        {
+            "episode no": "제15화",
+            "episode title": "시라누이",
+            "storyboard": {
+                "staff": [
+                    "요네다 미츠히로"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "요네다 미츠히로",
+                    "도몬 켄이치"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "요네다 미츠히로",
-                "도몬 켄이치"
-            ]
-        }
-    },
-    {
-        "episode no": "제16화",
-        "episode title": "하쿠비",
-        "storyboard": {
-            "staff": [
-                "카나자와 히로미츠"
-            ]
+        {
+            "episode no": "제16화",
+            "episode title": "하쿠비",
+            "storyboard": {
+                "staff": [
+                    "카나자와 히로미츠"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "야마모토 카츠야"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "야마모토 카츠야"
-            ]
-        }
-    },
-    {
-        "episode no": "제17화",
-        "episode title": "마오구이",
-        "storyboard": {
-            "staff": [
-                "타가시라 마리에"
-            ]
+        {
+            "episode no": "제17화",
+            "episode title": "마오구이",
+            "storyboard": {
+                "staff": [
+                    "타가시라 마리에"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "타가시라 마리에"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "타가시라 마리에"
-            ]
-        }
-    },
-    {
-        "episode no": "제18화",
-        "episode title": "나츠노",
-        "storyboard": {
-            "staff": [
-                "카와이 사쿠라"
-            ]
+        {
+            "episode no": "제18화",
+            "episode title": "나츠노",
+            "storyboard": {
+                "staff": [
+                    "카와이 사쿠라"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "토바 아키라"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "토바 아키라"
-            ]
-        }
-    },
-    {
-        "episode no": "제19화",
-        "episode title": "바닷속 사당",
-        "storyboard": {
-            "staff": [
-                "안도 나오야"
-            ]
+        {
+            "episode no": "제19화",
+            "episode title": "바닷속 사당",
+            "storyboard": {
+                "staff": [
+                    "안도 나오야"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "요네다 미츠히로"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "요네다 미츠히로"
-            ]
-        }
-    },
-    {
-        "episode no": "제20화",
-        "episode title": "사나의 심장",
-        "storyboard": {
-            "staff": [
-                "카나자와 히로미츠"
-            ]
+        {
+            "episode no": "제20화",
+            "episode title": "사나의 심장",
+            "storyboard": {
+                "staff": [
+                    "카나자와 히로미츠"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "쿠마사와 유지"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "쿠마사와 유지"
-            ]
-        }
-    },
-    {
-        "episode no": "제21화",
-        "episode title": "소마",
-        "storyboard": {
-            "staff": [
-                "임가희"
-            ]
+        {
+            "episode no": "제21화",
+            "episode title": "소마",
+            "storyboard": {
+                "staff": [
+                    "임가희"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "도몬 켄이치",
+                    "요네다 미츠히로"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "도몬 켄이치",
-                "요네다 미츠히로"
-            ]
-        }
-    },
-    {
-        "episode no": "제22화",
-        "episode title": "온몸을 던져",
-        "storyboard": {
-            "staff": [
-                "카와이 사쿠라"
-            ]
+        {
+            "episode no": "제22화",
+            "episode title": "온몸을 던져",
+            "storyboard": {
+                "staff": [
+                    "카와이 사쿠라"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "사토 테루오"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "사토 테루오"
-            ]
-        }
-    },
-    {
-        "episode no": "제23화",
-        "episode title": "밤을 걷는 환자",
-        "storyboard": {
-            "staff": [
-                "카와이 사쿠라"
-            ]
+        {
+            "episode no": "제23화",
+            "episode title": "밤을 걷는 환자",
+            "storyboard": {
+                "staff": [
+                    "카와이 사쿠라"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "야마모토 카츠야"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "야마모토 카츠야"
-            ]
-        }
-    },
-    {
-        "episode no": "제24화",
-        "episode title": "村芝居の一座",
-        "storyboard": {
-            "staff": [
-                "요네다 미츠히로"
-            ]
+        {
+            "episode no": "제24화",
+            "episode title": "유랑 극단",
+            "storyboard": {
+                "staff": [
+                    "요네다 미츠히로"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "요네다 미츠히로",
+                    "도몬 켄이치"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "요네다 미츠히로",
-                "도몬 켄이치"
-            ]
+        {
+            "episode no": "제25화",
+            "episode title": "유귀와 나찰",
+            "storyboard": {
+                "staff": [
+                    "카와이 사쿠라"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "쿠마사와 유지"
+                ]
+            }
+        },
+        {
+            "episode no": "제26화",
+            "episode title": "유라코의 세계",
+            "storyboard": {
+                "staff": [
+                    "카와이 사쿠라"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "사토 테루오"
+                ]
+            }
         }
-    }
-],
+    ],
 "61443": [
     {
         "episode no": "제1화",
@@ -32637,165 +32665,165 @@ var animeEPData_2026 = {
         }
     }
 ],
-"62683": [
-    {
-        "episode no": "제1괴",
-        "episode title": "",
-        "storyboard": {
-            "staff": [
-                "히라타 유타카"
-            ]
+    "62683": [
+        {
+            "episode no": "제1괴",
+            "episode title": "",
+            "storyboard": {
+                "staff": [
+                    "히라타 유타카"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "히라타 유타카"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "히라타 유타카"
-            ]
-        }
-    },
-    {
-        "episode no": "제2괴",
-        "episode title": "",
-        "storyboard": {
-            "staff": [
-                "히라타 유타카"
-            ]
+        {
+            "episode no": "제2괴",
+            "episode title": "",
+            "storyboard": {
+                "staff": [
+                    "히라타 유타카"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "히라타 유타카"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "히라타 유타카"
-            ]
-        }
-    },
-    {
-        "episode no": "제3괴",
-        "episode title": "",
-        "storyboard": {
-            "staff": [
-                "카네코 신고"
-            ]
+        {
+            "episode no": "제3괴",
+            "episode title": "",
+            "storyboard": {
+                "staff": [
+                    "카네코 신고"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "카네코 신고"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "카네코 신고"
-            ]
-        }
-    },
-    {
-        "episode no": "제4괴",
-        "episode title": "",
-        "storyboard": {
-            "staff": [
-                "아사노 히카리"
-            ]
+        {
+            "episode no": "제4괴",
+            "episode title": "",
+            "storyboard": {
+                "staff": [
+                    "아사노 히카리"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "우가카미 료스케"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "우가카미 료스케"
-            ]
-        }
-    },
-    {
-        "episode no": "제5괴",
-        "episode title": "",
-        "storyboard": {
-            "staff": [
-                "히라타 유타카"
-            ]
+        {
+            "episode no": "제5괴",
+            "episode title": "",
+            "storyboard": {
+                "staff": [
+                    "히라타 유타카"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "히라타 유타카"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "히라타 유타카"
-            ]
-        }
-    },
-    {
-        "episode no": "제6괴",
-        "episode title": "",
-        "storyboard": {
-            "staff": [
-                "카네코 신고"
-            ]
+        {
+            "episode no": "제6괴",
+            "episode title": "",
+            "storyboard": {
+                "staff": [
+                    "카네코 신고"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "쿄고쿠 요시아키"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "쿄고쿠 요시아키"
-            ]
-        }
-    },
-    {
-        "episode no": "제7괴",
-        "episode title": "",
-        "storyboard": {
-            "staff": [
-                "사노 히후미"
-            ]
+        {
+            "episode no": "제7괴",
+            "episode title": "",
+            "storyboard": {
+                "staff": [
+                    "사노 히후미"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "우가카미 료스케",
+                    "사노 히후미"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "우가카미 료스케",
-                "사노 히후미"
-            ]
-        }
-    },
-    {
-        "episode no": "제8괴",
-        "episode title": "",
-        "storyboard": {
-            "staff": [
-                "히라타 유타카"
-            ]
+        {
+            "episode no": "제8괴",
+            "episode title": "",
+            "storyboard": {
+                "staff": [
+                    "히라타 유타카"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "히라타 유타카"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "히라타 유타카"
-            ]
-        }
-    },
-    {
-        "episode no": "제9괴",
-        "episode title": "",
-        "storyboard": {
-            "staff": [
-                "카네코 신고",
-                "히라타 유타카"
-            ]
+        {
+            "episode no": "제9괴",
+            "episode title": "",
+            "storyboard": {
+                "staff": [
+                    "카네코 신고",
+                    "히라타 유타카"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "카네코 신고"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "카네코 신고"
-            ]
-        }
-    },
-    {
-        "episode no": "제10괴",
-        "episode title": "",
-        "storyboard": {
-            "staff": [
-                "사노 히후미"
-            ]
+        {
+            "episode no": "제10괴",
+            "episode title": "",
+            "storyboard": {
+                "staff": [
+                    "사노 히후미"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "우가카미 료스케",
+                    "사노 히후미"
+                ]
+            }
         },
-        "episode director": {
-            "staff": [
-                "우가카미 료스케",
-                "사노 히후미"
-            ]
+        {
+            "episode no": "제11괴",
+            "episode title": "",
+            "storyboard": {
+                "staff": [
+                    "히라타 유타카"
+                ]
+            },
+            "episode director": {
+                "staff": [
+                    "히라타 유타카"
+                ]
+            }
         }
-    },
-    {
-        "episode no": "제11괴",
-        "episode title": "",
-        "storyboard": {
-            "staff": [
-                "히라타 유타카"
-            ]
-        },
-        "episode director": {
-            "staff": [
-                "히라타 유타카"
-            ]
-        }
-    }
-],
+    ],
     "63832": [
         {
             "episode no": "제13화",
@@ -32969,12 +32997,16 @@ var animeEPData_2026 = {
         },
         {
             "episode no": "제25화",
-            "episode title": "正反対な君と僕",
+            "episode title": "정반대의 너와 나",
             "storyboard": {
-                "staff": []
+                "staff": [
+                    "나가토모 타카요시"
+                ]
             },
             "episode director": {
-                "staff": []
+                "staff": [
+                    "야마이 아츠키"
+                ]
             }
         }
     ],
