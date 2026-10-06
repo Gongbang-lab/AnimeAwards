@@ -6949,5 +6949,477 @@ var AnimeCatalog_2026 = [
       "url": "https://youtu.be/PxXPcoo8uGM?si=E1B7wFv9Ne6vfRxl"
     }
   ]
+},
+{
+  "id": 54344,
+  "title": "마법소녀 육성계획 restart",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/마법소녀 육성계획 restart.webp",
+  "day": "Tuesdays",
+  "episodes": 0,
+  "studio": [
+    "SynergySP"
+  ],
+  "staff": {
+    "director": [
+      "하시모토 히로유키"
+    ],
+    "adaptor": [
+      "요시오카 타카오"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/-PX7FqZ55tE?si=20wYantB1laDDpFx"
+    },
+    {
+      "title": "PV 제1탄",
+      "url": "https://youtu.be/34ubb-j0kbI?si=xvi-6DH1YgQJhnsK"
+    },
+    {
+      "title": "PV 제2탄",
+      "url": "https://youtu.be/iD1hmEvGQmM?si=Ng9DCYgBcCPvtzpb"
+    }
+  ]
+},
+{
+  "id": 63754,
+  "title": "쌀쌀맞은 사토 양이 나에게만 상냥하다",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/쌀쌀맞은 사토 양이 나에게만 상냥하다.webp",
+  "day": "Tuesdays",
+  "episodes": 0,
+  "studio": [
+    "데즈카 프로덕션"
+  ],
+  "staff": {
+    "director": [
+      "요시무라 후미히로"
+    ],
+    "adaptor": [
+      "아오시마 타카시"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/ue63MEfLOx8?si=XaYMJ31uaLx5IOtg"
+    },
+    {
+      "title": "메인 PV",
+      "url": "https://youtu.be/8XgKVzuLmJw?si=ENjKISGjcTkqHFWu"
+    }
+  ]
+},
+{
+  "id": 63382,
+  "title": "흉란영애 니아 리스톤 병약한 영애로 전생한 살신 무인의 화려한 무쌍담",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/흉란영애 니아 리스톤 병약한 영애로 전생한 살신 무인의 화려한 무쌍담.webp",
+  "day": "Tuesdays",
+  "episodes": 0,
+  "studio": [
+    "코나미 애니메이션"
+  ],
+  "staff": {
+    "director": [
+      "나카니시 모토키"
+    ],
+    "adaptor": [
+      "이치카와 기가에몬"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/HKdiA5mNb_A?si=L7csevyXBXG63RZH"
+    },
+    {
+      "title": "PV 제1탄",
+      "url": "https://youtu.be/Jg9fxHp8UTc?si=QWtBgVRje46wDvON"
+    },
+    {
+      "title": "PV 제2탄",
+      "url": "https://youtu.be/gxG4vntLtbk?si=VZ5YX9qL1KwyDx7D"
+    }
+  ]
+},
+{
+  "id": 187990,
+  "title": "배틀 스피리츠 [Re] 절계의 하늘",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/배틀 스피리츠 Re 절계의 하늘.webp",
+  "day": "Tuesdays",
+  "episodes": 0,
+  "studio": [
+    "반다이 남코 픽처스"
+  ],
+  "staff": {
+    "director": [
+      "쿠도 마사시"
+    ],
+    "adaptor": [
+      "네모토 토시조"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/qrdGScyKEYI?si=NGqn6b0yops7P8bv"
+    },
+    {
+      "title": "메인 PV",
+      "url": "https://youtu.be/cXd4pKTx2pI?si=M5tSgZstpBJd_5nB"
+    }
+  ]
+},
+{
+  "id": 62696,
+  "title": "초능력 순경! 쵸죠 선배",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/초능력 순경 쵸죠 선배.webp",
+  "day": "Tuesdays",
+  "episodes": 0,
+  "studio": [
+    "아르보 애니메이션"
+  ],
+  "staff": {
+    "director": [
+      "야마모토 준이치"
+    ],
+    "adaptor": [
+      "모리 하야시"
+    ]
+  },
+  "pv": [
+    {
+      "title": "메인 PV 제1탄",
+      "url": "https://youtu.be/fx66nT-2_AA?si=6kSLDufM5YjCTb6_"
+    },
+    {
+      "title": "메인 PV 제2탄",
+      "url": "https://youtu.be/rYpXoCdTNQI?si=F2jPPrX6cHECF4Pw"
+    }
+  ]
+},
+{
+  "id": 62484,
+  "title": "치토세 군은 라무네 병 속에",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/치토세 군은 라무네 병 속에.webp",
+  "day": "Tuesdays",
+  "episodes": 0,
+  "studio": [
+    "feel."
+  ],
+  "staff": {
+    "director": [
+      "토쿠노 유지"
+    ],
+    "adaptor": [
+      "아라카와 나루히사"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/g39p59JtDfw?si=JWzqQJ1-4PJOivI_"
+    },
+    {
+      "title": "본 PV",
+      "url": "https://youtu.be/wC7FYPFHLeQ?si=4Rqdb-HbrdXevyol"
+    },
+    {
+      "title": "애니플러스 PV",
+      "url": "https://youtu.be/Rx22zx-73Vo?si=_dg6smDV3evUWZZy"
+    }
+  ]
+},
+{
+  "id": 61140,
+  "title": "환상수호전",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/환상수호전.webp",
+  "day": "Saturdays",
+  "episodes": 23,
+  "studio": [
+    "코나미 애니메이션"
+  ],
+  "staff": {
+    "director": [
+      "사토 유조"
+    ],
+    "adaptor": [
+      "츠치야 미치히로"
+    ]
+  },
+  "pv": [
+    {
+      "title": "PV 제1탄",
+      "url": "https://youtu.be/kXssTd_3R3Q?si=1Ed2vGyNkNAogtQk"
+    },
+    {
+      "title": "PV 제2탄",
+      "url": "https://youtu.be/7ZAQGHThWME?si=jvv6SXwpP0xCENQR"
+    },
+    {
+      "title": "PV 제3탄",
+      "url": "https://youtu.be/m4T9VcBD0vo?si=bEvy1w-yl8Y7Bl-q"
+    }
+  ]
+},
+{
+  "id": 63431,
+  "title": "추방당한 치트 부여 마술사는 자유로운 세컨드 라이프를 구가한다 ~나는 무기뿐만 아니라, 모든 것에 『강화 포인트』를 부여할 수 있고, 언제든지 효과를 해제할 수 있는데, 남은 사람들은 괜찮아?~",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/추방당한 치트 부여 마술사는 자유로운 세컨드 라이프를 구가한다 나는 무기뿐만 아니라 모든 것에 강화 포인트를 부여할 수 있고 언제든지 효과를 해제할 수 있는데 남은 사람들은 괜찮아.webp",
+  "day": "Wednesdays",
+  "episodes": 0,
+  "studio": [
+    "P.A.WORKS"
+  ],
+  "staff": {
+    "director": [
+      "혼마 슈"
+    ],
+    "adaptor": [
+      "요나이야마 요코"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/MN1KQoPuqWc?si=Q5OEwSUIodCWpCZB"
+    },
+    {
+      "title": "메인 PV",
+      "url": "https://youtu.be/BJXBr_aFF8s?si=FPyEztsxls-Qq2h3"
+    }
+  ]
+},
+{
+  "id": 59415,
+  "title": "다크 머신 디 애니메이션",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/다크 머신 디 애니메이션.webp",
+  "day": "Wednesdays",
+  "episodes": 11,
+  "studio": [
+    "Production +h."
+  ],
+  "staff": {
+    "director": [
+      "테라다 카즈미"
+    ],
+    "adaptor": [
+      "팀 카벙클",
+      "스즈키 타카아키"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/4aCeMJm4vIA?si=neoBquMlYFEdmBdu"
+    },
+    {
+      "title": "제2탄 PV",
+      "url": "https://youtu.be/P8FfvDLyMrY?si=0KHyfLb4RwVayne-"
+    },
+    {
+      "title": "제3탄 PV",
+      "url": "https://youtu.be/Tvvs_SlUYgA?si=uzGoi9N13QTIkWyp"
+    }
+  ]
+},
+{
+  "id": 52480,
+  "title": "탐정은 이미 죽었다. Season2",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/탐정은 이미 죽었다 Season2.webp",
+  "day": "Wednesdays",
+  "episodes": 13,
+  "studio": [
+    "ENGI"
+  ],
+  "staff": {
+    "director": [
+      "쿠리하라 마나부"
+    ],
+    "adaptor": [
+      "아카오 데코"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/mHO3ZjEVNbU?si=Ev6JXcby7_79ELLq"
+    },
+    {
+      "title": "제1차 PV",
+      "url": "https://youtu.be/nYYGphs8jvA?si=Q30994tsxStP9fyT"
+    },
+    {
+      "title": "제2차 PV",
+      "url": "https://youtu.be/ii8IihE2dsw?si=cteoUYs4pMZaKRf3"
+    },
+    {
+      "title": "제3차 PV",
+      "url": "https://youtu.be/8AnNxEp733c?si=T7EU7G7RJ-7zeDTZ"
+    }
+  ]
+},
+{
+  "id": 58518,
+  "title": "사사키와 피짱 시즌 2",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/사사키와 피짱 시즌 2.webp",
+  "day": "Wednesdays",
+  "episodes": 12,
+  "studio": [
+    "SILVER LINK."
+  ],
+  "staff": {
+    "director": [
+      "이베 유시"
+    ],
+    "adaptor": [
+      "아카오 데코"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/oR4Luug1NRc?si=Ur8wbkvxsHkrR8xA"
+    },
+    {
+      "title": "메인 PV",
+      "url": "https://youtu.be/gY0hpk9E7p8?si=kMLE36-Ftla7Dlap"
+    }
+  ]
+},
+{
+  "id": 64084,
+  "title": "세계 최강의 마녀, 시작했습니다",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/세계 최강의 마녀 시작했습니다.webp",
+  "day": "Wednesdays",
+  "episodes": 0,
+  "studio": [
+    "브리지",
+    "아일"
+  ],
+  "staff": {
+    "director": [
+      "후루타 조지"
+    ],
+    "adaptor": [
+      "요네무라 쇼지"
+    ]
+  },
+  "pv": [
+    {
+      "title": "본 PV | 애니박스",
+      "url": "https://youtu.be/LOkNnq4_dZM?si=5ySQ0Wc08lQCqGsA"
+    }
+  ]
+},
+{
+  "id": 61640,
+  "title": "자금·어묘방",
+  "year": 2025,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2025/Q4/자금어묘방.webp",
+  "day": "Wednesdays",
+  "episodes": 16,
+  "studio": [
+    "색연필 애니메이션"
+  ],
+  "staff": {
+    "director": [
+      "덩즈웨이"
+    ],
+    "adaptor": []
+  },
+  "pv": [
+    {
+      "title": "메인 PV",
+      "url": "https://youtu.be/Sv2aS62Mldo?si=fDeaayuekUeJN4IS"
+    }
+  ]
+},
+{
+  "id": 59204,
+  "title": "마법기사 레이어스",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/마법기사 레이어스.webp",
+  "day": "Wednesdays",
+  "episodes": 0,
+  "studio": [
+    "E&H PRODUCTION"
+  ],
+  "staff": {
+    "director": [
+      "미우라 유이"
+    ],
+    "adaptor": [
+      "무라코시 시게루"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/BgpeWNMZpy4?si=S7rF67Dl_dNbza1O"
+    },
+    {
+      "title": "메인 PV",
+      "url": "https://youtu.be/gISc0dl5R_8?si=1UOaCZ7ppJQW1-Xx"
+    },
+    {
+      "title": "메인 PV 제2탄",
+      "url": "https://youtu.be/67GqhfLw3ys?si=gCJPjMOd8LPssrm7"
+    }
+  ]
 }
 ];
