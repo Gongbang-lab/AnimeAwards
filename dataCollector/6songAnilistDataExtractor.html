@@ -38,15 +38,18 @@
   </style>
 </head>
 <body>
-<main class="container">
+<main class="container collector-shell">
   <h1>🎵 애니메이션 곡 데이터 편집기</h1>
   <p class="description">AniList API를 호출하지 않습니다. 2026 작품 목록에서 제목·분기 정보를 찾고, 곡 데이터는 기존 JS 파일에서 불러와 편집합니다. 변경한 전체 데이터 배열을 JS로 복사할 수 있습니다.</p>
 
-  <section class="saved-catalog">
+  <div class="collector-layout">
+  <section class="saved-catalog collector-library">
     <h2>저장된 작품 · OP / ED 목록</h2>
     <p class="muted">카드를 누르면 해당 곡 데이터를 수정하거나 추가할 수 있습니다. 변경 내용은 아래 JS 복사 버튼으로 복사하여 원본 파일에 반영해주세요.</p>
     <div id="song-catalog"></div>
   </section>
+  <div class="collector-editor">
+  <h2>곡 데이터 수정·추가</h2>
   <div class="search-row">
     <div class="field">
       <label for="animeId">애니메이션 ID</label>
@@ -85,6 +88,8 @@
     <button id="copyButton" class="primary" type="button">완료된 데이터 JS 복사</button>
   </div>
   <textarea id="resultArea" readonly spellcheck="false" aria-label="완성된 AnimeSongs JavaScript 데이터"></textarea>
+  </div>
+  </div>
 </main>
 
 <script src="../data/2026/2026animeData.js"></script>
@@ -300,6 +305,8 @@
         songs.forEach((song, i) => lines.push(`${type.toUpperCase()} ${i + 1} · ${String(song.title || "").trim() || "제목 미입력"}`));
       }
       return { key: index, title: animeTitles.get(String(record.id)) || `작품 ID ${record.id}`,
+        quarters: getCatalogQuarters(record.quarter).length ? record.quarter
+          : animeCatalog.filter(item => String(item.id) === String(record.id)).flatMap(item => getCatalogQuarters(item.quarter)),
         meta: `ID ${record.id} · ${record.year || 2026} · ${Array.isArray(record.quarter) ? record.quarter.join(", ") : record.quarter || "분기 미지정"}`,
         lines, selected: currentRecord === record };
     }).sort((a, b) => a.title.localeCompare(b.title, "ko", { numeric: true })),

@@ -15,10 +15,10 @@ const Awards = [
   { id: 14, name: '베스트 각본상', thumb: 'image/trophy/trophy-writing.png', theme: 'scriptwriter'},
   { id: 15, name: '베스트 각색상', thumb: 'image/trophy/trophy-writing.png', theme: 'dramatization'},
   { id: 16, name: '베스트 감독상', thumb: 'image/trophy/trophy-director.png', theme: 'director'},
-  { id: 17, name: '베스트 동화상', thumb: 'image/trophy/trophy-diamond-plain-wide.png', theme: 'in_between'},
+  { id: 17, name: '베스트 연출상', thumb: 'image/trophy/trophy-diamond-plain-wide.png', theme: 'direction'},
   { id: 18, name: '베스트 배경상', thumb: 'image/trophy/trophy-diamond-plain-wide.png', theme: 'background'},
-  { id: 20, name: '올해의 설레발 상', thumb: 'image/trophy/trophy-diamond-plain-wide.png', theme: 'pv_mode'},
-  { id: 21, name: '올해의 다크호스 상', thumb: 'image/trophy/trophy-diamond-plain-wide.png', theme: 'default'},
+  { id: 20, name: '올해의 설레발 상', thumb: 'image/trophy/trophy-balloon-needle-v2.png', theme: 'pv_mode'},
+  { id: 21, name: '올해의 다크호스 상', thumb: 'image/trophy/trophy-dark-horse-left.png', theme: 'default'},
   { id: 22, name: '베스트 에피소드 상', thumb: 'image/trophy/trophy-diamond-plain-wide.png', theme: 'best_episode'},
   { id: 23, name: '올해의 시네마 상', thumb: 'image/trophy/trophy-cinema.png', theme: 'cinema'},
   { id: 24, name: '올해의 스튜디오 상', thumb: 'image/trophy/trophy-studio.png', theme: 'studio'},
@@ -27,6 +27,9 @@ const Awards = [
 
 // 저장된 커스텀 상에도 현재 부문별 기본 트로피를 사용한다.
 function getAwardTrophy(award) {
+    if (String(award.name).replace(/\s/g, '') === '올해의다크호스상') {
+        return 'image/trophy/trophy-dark-horse-left.png';
+    }
     if (['대상', '최우수상', '우수상'].includes(String(award.name).trim())) {
         return 'image/trophy/trophy-golden-cup-narrow.png';
     }

@@ -1,0 +1,2 @@
+Tool: built-in image_gen
+Horizontally mirror the provided black rearing horse trophy image. Horse must now face LEFT and lift its forelegs toward the LEFT, mane and tail extend to the RIGHT. Precisely preserve the same black metal horse sculpture, anatomy, base, gold trim, proportions, lighting detail and composition, simply a left-right reflection. No redesign, no text or additions. Preserve transparency. Static PNG.

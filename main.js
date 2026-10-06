@@ -313,7 +313,7 @@ const categories = [
     { title: "성우 부문", themes: ['rookie_voice', 'voice_male', 'voice_female'], ratio: 'ratio-11-16' },
     { title: "캐릭터 부문", themes: ['character_male', 'character_female', 'best_couple','all_gender'], ratio: 'ratio-11-16' },
     { title: "스태프 부문", themes: ['scriptwriter', 'original', 'dramatization', 'director'], ratio: 'ratio-poster' },
-    { title: "아트 부문", themes: ['in_between', 'background'], ratio: 'ratio-poster' },
+    { title: "아트 부문", themes: ['direction', 'background'], ratio: 'ratio-poster' },
     { title: "애니메이션 시리즈", themes: ['default','pv_mode', 'best_episode'], ratio: 'ratio-poster' },
     { title: "올해의 시리즈", themes: ['cinema', 'studio', 'series', 'top3'], ratio: 'ratio-poster' }
 ];

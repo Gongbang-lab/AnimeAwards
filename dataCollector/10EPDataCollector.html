@@ -47,22 +47,27 @@
     </style>
 </head>
 <body>
-<div class="container">
+<div class="container collector-shell">
     <div class="card">
         <h1>에피소드 데이터 추가·수정 도구</h1>
         <p class="info-text">기존 <code>2026animeEPData.js</code>를 불러와 새 에피소드를 추가하거나, 저장된 목록의 ‘수정’ 버튼으로 회차·제목·콘티·연출을 변경할 수 있습니다. 현재 애니메이션 데이터 블록을 복사해 원본 파일의 해당 ID 부분에 붙여 넣으세요.</p>
         <div id="load-status" class="status">에피소드 데이터 파일을 불러오는 중입니다…</div>
-<div class="id-row">
-            <label>애니메이션 ID<input id="animeId" inputmode="numeric" placeholder="예: 61886"></label>
-            <button class="btn-search" id="search-btn" type="button">저장된 에피소드 검색</button>
-        </div>
     </div>
 
-    <section class="card">
+    <div class="collector-layout">
+    <section class="card collector-library">
         <h2>저장된 작품 · 마지막 에피소드</h2>
         <p class="info-text">카드를 누르면 해당 작품의 에피소드를 수정하거나 추가할 수 있습니다. 마지막 화수는 숫자 회차 중 가장 큰 값입니다. 변경 내용은 복사 후 원본 파일에 반영해주세요.</p>
         <div id="episode-catalog" class="saved-catalog"></div>
     </section>
+    <div class="collector-editor">
+    <div class="card">
+        <h2>에피소드 수정·추가</h2>
+        <div class="id-row">
+            <label>애니메이션 ID<input id="animeId" inputmode="numeric" placeholder="예: 61886"></label>
+            <button class="btn-search" id="search-btn" type="button">저장된 에피소드 검색</button>
+        </div>
+    </div>
     <div class="card" id="saved-episodes-card">
         <h2>📚 현재 저장된 에피소드</h2>
         <div id="saved-status" class="info-text">애니메이션 ID를 검색해 주세요.</div>
@@ -105,6 +110,8 @@
         <pre id="output">아직 갱신된 데이터가 없습니다.</pre>
         <button class="btn-commit" id="copy-btn" type="button" disabled>현재 ID 데이터 복사</button>
         <div id="copy-status" class="status">애니메이션 ID를 검색하면 해당 데이터가 표시됩니다.</div>
+    </div>
+    </div>
     </div>
 </div>
 
@@ -405,6 +412,8 @@
             const last = lastEpisode(episodes);
             return {
                 key: id, title: animeTitles.get(id) || `작품 ID ${id}`,
+                quarters: typeof AnimeCatalog_2026 !== 'undefined' && Array.isArray(AnimeCatalog_2026)
+                    ? AnimeCatalog_2026.filter(item => String(item.id) === id).flatMap(item => getCatalogQuarters(item.quarter)) : [],
                 meta: `ID ${id} · 저장된 에피소드 ${episodes.length}개`,
                 lines: [last ? `${last['episode no'] || '회차 미지정'} : ${last['episode title'] || '제목 미지정'}` : '저장된 에피소드 없음'],
                 selected: currentAnimeId === id
