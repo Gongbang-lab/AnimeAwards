@@ -1,0 +1,2 @@
+Tool: built-in image_gen
+Edit the supplied image with ONE change only: completely remove the large gold triangular play symbol sitting on top of the VHS cassette. Restore a clean uninterrupted top edge on the cassette where the triangle was attached. Preserve the exact golden VHS cassette shape, both reel windows, exact readable label 'Episode NO.', the hovering gap, black pedestal with gold trim, camera direction, proportions and metallic finish. No replacement ornament or symbol. Full trophy centered with margins, preserve transparent alpha background, static PNG.
