@@ -5372,7 +5372,10 @@ var AnimeCatalog_2026 = [
   "id": 59741,
   "title": "추방 당한 전생 중기사는 게임 지식으로 무쌍한다",
   "year": 2026,
-  "quarter": "3분기",
+  "quarter": [
+    "3분기",
+    "4분기"
+  ],
   "thumbnail": "image/animeimg/2026/Q3/추방 당한 전생 중기사는 게임 지식으로 무쌍한다.webp",
   "day": "Fridays",
   "episodes": 26,
@@ -7419,6 +7422,467 @@ var AnimeCatalog_2026 = [
     {
       "title": "메인 PV 제2탄",
       "url": "https://youtu.be/67GqhfLw3ys?si=gCJPjMOd8LPssrm7"
+    }
+  ]
+},
+{
+  "id": 53913,
+  "title": "전생했더니 검이었습니다 Ⅱ",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/전생했더니 검이었습니다 Ⅱ.webp",
+  "day": "Thursdays",
+  "episodes": 12,
+  "studio": [
+    "C2C"
+  ],
+  "staff": {
+    "director": [
+      "이시히라 신지"
+    ],
+    "adaptor": [
+      "나가노 타카히로"
+    ]
+  },
+  "pv": [
+    {
+      "title": "PV 제1탄",
+      "url": "https://youtu.be/Yg4w96HEbhY?si=dnCf6Om5_ZUfinxn"
+    },
+    {
+      "title": "PV 제2탄",
+      "url": "https://youtu.be/kbtRqqa2GyA?si=e-OaU8iZuEkExeVX"
+    }
+  ]
+},
+{
+  "id": 62534,
+  "title": "신 테니스의 왕자 U-17 WORLD 결승 멤버 결정전",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/신 테니스의 왕자 U17 WORLD 결승 멤버 결정전.webp",
+  "day": "Thursdays",
+  "episodes": 0,
+  "studio": [
+    "M.S.C"
+  ],
+  "staff": {
+    "director": [
+      "토쿠모토 요시노부"
+    ],
+    "adaptor": [
+      "히로타 미츠타카"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 영상",
+      "url": "https://youtu.be/w6CvWyqn964?si=BiO0imMfdqRkaEji"
+    },
+    {
+      "title": "티저 영상 제2탄",
+      "url": "https://youtu.be/bsNeADDQFD4?si=sVbqmEhWCFEHEHlx"
+    },
+    {
+      "title": "PV",
+      "url": "https://youtu.be/LLCVfhquaAU?si=KJ_8Iq1t3AGqnRAg"
+    }
+  ]
+},
+{
+  "id": 64344,
+  "title": "수왕무신 댄디바인",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/수왕무신 댄디바인.webp",
+  "day": "Thursdays",
+  "episodes": 0,
+  "studio": [
+    "라이덴 필름",
+    "KAYAC ANIMATION"
+  ],
+  "staff": {
+    "director": [
+      "소우 키"
+    ],
+    "adaptor": [
+      "이노우에 토시키"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/xnNiim95Cpo?si=CN3_cgYojSGexupx"
+    },
+    {
+      "title": "메인 PV",
+      "url": "https://youtu.be/ihJfkOT_0wU?si=R_Tk-7ETbRRebA9k"
+    }
+  ]
+},
+{
+  "id": 57612,
+  "title": "귀환자의 마법은 특별해야 합니다 2기",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/귀환자의 마법은 특별해야 합니다 2기.webp",
+  "day": "Thursdays",
+  "episodes": 0,
+  "studio": [
+    "아르보 애니메이션"
+  ],
+  "staff": {
+    "director": [
+      "카와구치 타이시"
+    ],
+    "adaptor": [
+      "코노 타카미츠"
+    ]
+  },
+  "pv": [
+    {
+      "title": "제1탄 PV",
+      "url": "https://youtu.be/YBWOrQCB9r0?si=xbxtN3CMOgzBDV91"
+    },
+    {
+      "title": "제2탄 PV",
+      "url": "https://youtu.be/BjO0hsnglC0?si=1NC2XVpMLoPp5rOR"
+    }
+  ]
+},
+{
+  "id": 63337,
+  "title": "FX 전사 쿠루미",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/FX 전사 쿠루미.webp",
+  "day": "Thursdays",
+  "episodes": 12,
+  "studio": [
+    "팟쇼네"
+  ],
+  "staff": {
+    "director": [
+      "오가와 유키"
+    ],
+    "adaptor": [
+      "이하라 켄타"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/Hg3mStr7UpI?si=v0pAn3WmLYhCq45w"
+    },
+    {
+      "title": "메인 PV",
+      "url": "https://youtu.be/7rxIZ3z0S4s?si=fRrPRrSQBc1y-TnJ"
+    }
+  ]
+},
+{
+  "id": 64534,
+  "title": "얼음 성벽 2기",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/얼음 성벽 2기.webp",
+  "day": "Thursdays",
+  "episodes": 0,
+  "studio": [
+    "스튜디오 KAI"
+  ],
+  "staff": {
+    "director": [
+      "만큐"
+    ],
+    "adaptor": [
+      "나카니시 야스히로"
+    ]
+  },
+  "pv": [
+    {
+      "title": "공식 예고편 | 넷플릭스",
+      "url": "https://youtu.be/1JDnTRWoAAw?si=7VL_pVqMSa0OuR3-"
+    },
+    {
+      "title": "PV 제1탄",
+      "url": "https://youtu.be/0JY4eeu-PDI?si=cfaI9lqKmjwbnsE6"
+    },
+    {
+      "title": "PV 제2탄",
+      "url": "https://youtu.be/VvzeL7UMCE8?si=J_9flo25qIjnBJBw"
+    }
+  ]
+},
+{
+  "id": 62615,
+  "title": "테츠료! meet with 철도무스메",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/테츠료 meet with 철도무스메.webp",
+  "day": "Fridays",
+  "episodes": 12,
+  "studio": [
+    "이스트 피쉬 스튜디오"
+  ],
+  "staff": {
+    "director": [
+      "호시노 미스즈"
+    ],
+    "scriptwriter": [
+      "사츠키 아야"
+    ]
+  },
+  "pv": [
+    {
+      "title": "PV 제1탄",
+      "url": "https://youtu.be/lXmAdRvMlbI?si=oIFqrI28jOWVX2sd"
+    },
+    {
+      "title": "PV 제2탄",
+      "url": "https://youtu.be/GixEiC7k9_4?si=jdiqHw-zYsiFdurW"
+    }
+  ]
+},
+{
+  "id": 64254,
+  "title": "빙검의 마술사가 세계를 다스린다 Ⅱ",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/빙검의 마술사가 세계를 다스린다 Ⅱ.webp",
+  "day": "Fridays",
+  "episodes": 0,
+  "studio": [
+    "Zero-G"
+  ],
+  "staff": {
+    "director": [
+      "타카타 마사히로"
+    ],
+    "adaptor": [
+      "타카타 마사히로"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/30rSarCHpmA?si=8CSWD46fFuqCtdAH"
+    },
+    {
+      "title": "메인 PV",
+      "url": "https://youtu.be/oxkxyAcKv2g?si=PrA0nkQQY9M_Vu64"
+    }
+  ]
+},
+{
+  "id": 65009,
+  "title": "푸른 전승 웰시와 쉐다르",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/푸른 전승 웰시와 쉐다르.webp",
+  "day": "Fridays",
+  "episodes": 12,
+  "studio": [
+    "스튜디오 마스켓"
+  ],
+  "staff": {
+    "director": [
+      "호리우치 나오키"
+    ],
+    "scriptwriter": [
+      "Tot"
+    ]
+  },
+  "pv": [
+    {
+      "title": "메인 PV",
+      "url": "https://youtu.be/Zx03ZEnZhA0?si=froHv-R_eJqHBXot"
+    }
+  ]
+},
+{
+  "id": 61014,
+  "title": "어떤 암부의 소녀공서",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/어떤 암부의 소녀공서.webp",
+  "day": "Fridays",
+  "episodes": 0,
+  "studio": [
+    "J.C.STAFF"
+  ],
+  "staff": {
+    "director": [
+      "나가이 타츠유키"
+    ],
+    "adaptor": [
+      "야스카와 쇼고"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/bf6XcU3uL9I?si=p9Frpg0U1yWpVOR4"
+    },
+    {
+      "title": "메인 PV",
+      "url": "https://youtu.be/NNHxQJgZdbQ?si=iD1Huwt-RF-k19BX"
+    }
+  ]
+},
+{
+  "id": 61987,
+  "title": "약사의 혼잣말 시즌 3",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/약사의 혼잣말 시즌 3.webp",
+  "day": "Fridays",
+  "episodes": 12,
+  "studio": [
+    "OLM"
+  ],
+  "staff": {
+    "director": [
+      "후데사카 아키노리"
+    ],
+    "adaptor": [
+      "나가누마 노리히로"
+    ]
+  },
+  "pv": [
+    {
+      "title": "공식 예고편 | 넷플릭스",
+      "url": "https://youtu.be/xIfW_vUbn_M?si=CVh7KQ1YMRDM1A3J"
+    },
+    {
+      "title": "PV 제2탄",
+      "url": "https://youtu.be/YvNvvUeCztE?si=ziWPL89wIxht7ogt"
+    }
+  ]
+},
+{
+  "id": 63293,
+  "title": "반딧불이의 혼례",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/반딧불이의 혼례.webp",
+  "day": "Fridays",
+  "episodes": 0,
+  "studio": [
+    "david production"
+  ],
+  "staff": {
+    "director": [
+      "카메이 타카히로"
+    ],
+    "adaptor": [
+      "카키하라 유코"
+    ]
+  },
+  "pv": [
+    {
+      "title": "애니박스 티저 PV ①",
+      "url": "https://youtu.be/o7oVxtT-msw?si=lIaKDxEeSLMhrUKq"
+    },
+    {
+      "title": "애니박스 티저 PV ②",
+      "url": "https://youtu.be/iNBAN36XgyQ?si=H64SSEqAxxXi1PLL"
+    },
+    {
+      "title": "본 PV",
+      "url": "https://youtu.be/Ex9LrBK-7hk?si=ZjgCSDr4a7jfPh4Z"
+    }
+  ]
+},
+{
+  "id": 63181,
+  "title": "도원암귀 ~일광·화엄 폭포 편~",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/도원암귀 일광화엄 폭포 편.webp",
+  "day": "Fridays",
+  "episodes": 12,
+  "studio": [
+    "스튜디오 히바리"
+  ],
+  "staff": {
+    "director": [
+      "노나카 아토"
+    ],
+    "adaptor": [
+      "스가와라 유키에"
+    ]
+  },
+  "pv": [
+    {
+      "title": "PV",
+      "url": "https://youtu.be/ZmCOHpUBXo0?si=RiCMFc3DQANIqHRF"
+    }
+  ]
+},
+{
+  "id": 64340,
+  "title": "템빨 ~아이템의 힘~",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/템빨 아이템의 힘.webp",
+  "day": "Sundays",
+  "episodes": 12,
+  "studio": [
+    "J.C.STAFF"
+  ],
+  "staff": {
+    "director": [
+      "코노 아야코"
+    ],
+    "adaptor": [
+      "이하라 켄타"
+    ]
+  },
+  "pv": [
+    {
+      "title": "애니플러스 티저 PV",
+      "url": "https://youtu.be/2p604P2PQEw?si=xtg3k-ku6YITKHoW"
+    },
+    {
+      "title": "애니플러스 PV",
+      "url": "https://youtu.be/5lBUA7vwVYk?si=saO2VlLZ0Ku57M9m"
+    },
+    {
+      "title": "애니플러스 PV 2탄",
+      "url": "https://youtu.be/rQ-joOasCQQ?si=yvYNoDGgu0z51dIf"
+    },
+    {
+      "title": "PV 제3탄",
+      "url": "https://youtu.be/e1Km0FqUZl0?si=kgEbvA__acjDNXZ6"
     }
   ]
 }

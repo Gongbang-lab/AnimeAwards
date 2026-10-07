@@ -17,7 +17,7 @@ const Awards = [
   { id: 16, name: '베스트 감독상', thumb: 'image/trophy/trophy-director.png', theme: 'director'},
   { id: 17, name: '베스트 연출상', thumb: 'image/trophy/trophy-storyboard-labeled.png', theme: 'direction'},
   { id: 18, name: '베스트 배경상', thumb: 'image/trophy/trophy-background-frame-matched.png', theme: 'background'},
-  { id: 20, name: '올해의 설레발 상', thumb: 'image/trophy/trophy-balloon-needle-v2.png', theme: 'pv_mode'},
+  { id: 20, name: '올해의 설레발 상', thumb: 'image/trophy/trophy-diamond-plain-wide.png', theme: 'pv_mode'},
   { id: 21, name: '올해의 다크호스 상', thumb: 'image/trophy/trophy-dark-horse-left.png', theme: 'default'},
   { id: 22, name: '베스트 에피소드 상', thumb: 'image/trophy/trophy-episode-vhs-plain.png', theme: 'best_episode'},
   { id: 23, name: '올해의 시네마 상', thumb: 'image/trophy/trophy-cinema.png', theme: 'cinema'},
@@ -40,7 +40,7 @@ function getAwardTrophy(award) {
         best_couple: 'couple-hands', scriptwriter: 'writing', original: 'writing',
         dramatization: 'writing', director: 'director', cinema: 'cinema', studio: 'studio',
         direction: 'storyboard-labeled', background: 'background-frame-matched',
-        pv_mode: 'balloon-needle-v2', best_episode: 'episode-vhs-plain',
+        pv_mode: 'diamond-plain-wide', best_episode: 'episode-vhs-plain',
         top3: 'golden-cup-narrow', series: 'golden-cup-narrow'
     };
     return `image/trophy/trophy-${designs[award.theme] || 'diamond-plain-wide'}.png`;
