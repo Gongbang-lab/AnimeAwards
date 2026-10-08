@@ -3853,11 +3853,14 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-  {
+{
   "id": 60055,
   "year": 2026,
   "title": "요자쿠라 일가의 대작전 제2기",
-  "quarter": "2분기",
+  "quarter": [
+    "2분기",
+    "4분기"
+  ],
   "thumbnail": "image/animeimg/2026/Q2/요자쿠라 일가의 대작전 제2기.webp",
   "day": "Sundays",
   "episodes": 0,
@@ -3889,12 +3892,15 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-  {
+{
   "id": 58877,
   "year": 2026,
   "title": "다이아몬드 에이스 actII -Second Season-",
-  "quarter": "2분기",
-  "thumbnail": "image/animeimg/2026/Q2/다이아몬드 에이스 actII -Second Season-.webp",
+  "quarter": [
+    "2분기",
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q2/다이아몬드 에이스 actII Second Season.webp",
   "day": "Sundays",
   "episodes": 0,
   "studio": [
@@ -3963,11 +3969,14 @@ var AnimeCatalog_2026 = [
     }
   ]
 },
-  {
+{
   "id": 63667,
   "year": 2026,
   "title": "마법의 자매 루루토리리",
-  "quarter": "2분기",
+  "quarter": [
+    "2분기",
+    "4분기"
+  ],
   "thumbnail": "image/animeimg/2026/Q2/마법의 자매 루루토리리.webp",
   "day": "Sundays",
   "episodes": 0,
@@ -7883,6 +7892,1204 @@ var AnimeCatalog_2026 = [
     {
       "title": "PV 제3탄",
       "url": "https://youtu.be/e1Km0FqUZl0?si=kgEbvA__acjDNXZ6"
+    }
+  ]
+},
+{
+  "id": 59088,
+  "title": "도쿄 리벤저스: 삼천전쟁편",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/도쿄 리벤저스 삼천전쟁편.webp",
+  "day": "Saturdays",
+  "episodes": 13,
+  "studio": [
+    "LIDENFILMS"
+  ],
+  "staff": {
+    "director": [
+      "코다이라 마키"
+    ],
+    "adaptor": [
+      "무토 야스유키"
+    ]
+  },
+  "pv": [
+    {
+      "title": "공식 예고편｜디즈니+",
+      "url": "https://youtu.be/hfQtvtkkx6E?si=lji3GMN9GhhjCjU0"
+    },
+    {
+      "title": "PV 제1탄",
+      "url": "https://youtu.be/YgZ0M470sYg?si=VE8ZVy3A5D2b4GT1"
+    },
+    {
+      "title": "PV 제2탄",
+      "url": "https://youtu.be/bwmEisjn408?si=wptycu8JnA2J0LkC"
+    },
+    {
+      "title": "PV 제3탄",
+      "url": "https://youtu.be/veuS7n4Zks4?si=sXDSzy2rajj8E6Sm"
+    },
+    {
+      "title": "PV 제4탄",
+      "url": "https://youtu.be/Nm21TTXUkf4?si=RKx32g9ByqyJ8Y9z"
+    }
+  ]
+},
+{
+  "id": 63157,
+  "title": "개구리 중사 케로로☆",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/개구리 중사 케로로.webp",
+  "day": "Saturdays",
+  "episodes": 0,
+  "studio": [
+    "반다이 남코 픽처스"
+  ],
+  "staff": {
+    "director": [
+      "콘도 노부히로",
+      "사노 토시히코"
+    ],
+    "adaptor": [
+      "타케우치 토시미츠"
+    ]
+  },
+  "pv": [
+    {
+      "title": "본 PV 제1탄",
+      "url": "https://youtu.be/pRAErY7Pn_8?si=Pg9uucb1FaJPe0fg"
+    },
+    {
+      "title": "본 PV 제2탄",
+      "url": "https://youtu.be/iMyre5xXDzE?si=aAWeWGJDsfGCWqIR"
+    }
+  ]
+},
+{
+  "id": 61999,
+  "title": "주홍색 가면",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/주홍색 가면.webp",
+  "day": "Saturdays",
+  "episodes": 0,
+  "studio": [
+    "100studio"
+  ],
+  "staff": {
+    "director": [
+      "와타나베 테츠아키",
+      "하사코 카이"
+    ],
+    "adaptor": [
+      "오오히가시 다이스케"
+    ]
+  },
+  "pv": [
+    {
+      "title": "메인 PV 제1탄 | 애니박스",
+      "url": "https://youtu.be/8rQ1GUOPTHw?si=uzNwtWlDNQTmcbnM"
+    },
+    {
+      "title": "메인 PV 제2탄 | 애니박스",
+      "url": "https://youtu.be/cjv8aP8ABpQ?si=OEOyC6LkXDhvebEb"
+    }
+  ]
+},
+{
+  "id": 64326,
+  "title": "마로니에 왕국의 7인의 기사",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/마로니에 왕국의 7인의 기사.webp",
+  "day": "Saturdays",
+  "episodes": 20,
+  "studio": [
+    "J.C.STAFF"
+  ],
+  "staff": {
+    "director": [
+      "사야마 키요코"
+    ],
+    "adaptor": [
+      "후지타 신조"
+    ]
+  },
+  "pv": [
+    {
+      "title": "PV 제1탄",
+      "url": "https://youtu.be/K6N27yNdNIg?si=BKCEd2uGvkvBq1EX"
+    },
+    {
+      "title": "PV 제2탄",
+      "url": "https://youtu.be/wk26nTxUzPY?si=_JeREwep1v_B6hNM"
+    }
+  ]
+},
+{
+  "id": 61153,
+  "title": "전생한 대성녀는 성녀임을 숨긴다",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/전생한 대성녀는 성녀임을 숨긴다.webp",
+  "day": "Saturdays",
+  "episodes": 0,
+  "studio": [
+    "FelixFilm"
+  ],
+  "staff": {
+    "director": [
+      "마키노 토모에",
+      "무라타 나오키"
+    ],
+    "adaptor": [
+      "아카오 데코"
+    ]
+  },
+  "pv": [
+    {
+      "title": "메인 PV | 애니박스",
+      "url": "https://youtu.be/BSLx-HJMTj0?si=93u0GbwDn698STIW"
+    },
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/TQYVI-xvGeA?si=-_3E9BHXNwUBUcjh"
+    }
+  ]
+},
+{
+  "id": 63140,
+  "title": "야생의 라스트 보스가 나타났다! 제2기",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/야생의 라스트 보스가 나타났다 제2기.webp",
+  "day": "Saturdays",
+  "episodes": 0,
+  "studio": [
+    "와오월드"
+  ],
+  "staff": {
+    "director": [
+      "호리우치 유야"
+    ],
+    "adaptor": [
+      "후데야스 카즈유키"
+    ]
+  },
+  "pv": [
+    {
+      "title": "2기 PV 제1탄",
+      "url": "https://youtu.be/h6NM7IuyxuU?si=oOwq9yTJzglj0lJ9"
+    },
+    {
+      "title": "2기 PV 제2탄",
+      "url": "https://youtu.be/qF7rpSynOk0?si=JviDJ8CoZgMWjFdU"
+    }
+  ]
+},
+{
+  "id": 61967,
+  "title": "블랙 클로버 2nd Season",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/블랙 클로버 2nd Season.webp",
+  "day": "Saturdays",
+  "episodes": 0,
+  "studio": [
+    "스튜디오 피에로"
+  ],
+  "staff": {
+    "director": [
+      "타네무라 아야타카"
+    ],
+    "adaptor": [
+      "오오치 케이이치로"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/b_hLnfMgltY?si=5DZGSlziJiMvaBL-"
+    },
+    {
+      "title": "본 PV",
+      "url": "https://youtu.be/4MYo8FfiXMA?si=7mqpjLNHA2aT5HbB"
+    },
+    {
+      "title": "블랙 클로버 1st Season 되돌아보는 영상",
+      "url": "https://youtu.be/d923IfueKbw?si=P7mbW91IYk0x9AFz"
+    }
+  ]
+},
+{
+  "id": 62524,
+  "title": "#좀비를 찾습니다",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/좀비를 찾습니다.webp",
+  "day": "Saturdays",
+  "episodes": 12,
+  "studio": [
+    "스튜디오 코메트"
+  ],
+  "staff": {
+    "director": [
+      "우네 신야",
+      "스즈키 쿄헤이"
+    ],
+    "adaptor": [
+      "야마시타 켄이치",
+      "이타미 아키"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/KbXVkk7UH9Q?si=9K80H0IVkV6Qr_RG"
+    },
+    {
+      "title": "메인 PV",
+      "url": "https://youtu.be/Q72YGjPWpRc?si=nfpojL7fRdJoQoHd"
+    }
+  ]
+},
+{
+  "id": 63764,
+  "title": "버텍스 포스",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/버텍스 포스.webp",
+  "day": "Saturdays",
+  "episodes": 0,
+  "studio": [
+    "SMDE"
+  ],
+  "staff": {
+    "director": [
+      "타카무라 카즈히로",
+      "쿠지 고로"
+    ],
+    "scriptwriter": [
+      "타카무라 카즈히로",
+      "스즈키 마사시"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/vHD8hmKg6Lo?si=4EaXkklEKYaL9Y2z"
+    },
+    {
+      "title": "메인 PV 제1탄",
+      "url": "https://youtu.be/Rpl17n7j3yM?si=INsAn5xvOmtf5vqW"
+    },
+    {
+      "title": "메인 PV 제2탄",
+      "url": "https://youtu.be/JqjXaJysS5w?si=S36JMnRn8DkFOA1L"
+    }
+  ]
+},
+{
+  "id": 63053,
+  "title": "공포 스쿨",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/공포 스쿨.webp",
+  "day": "Saturdays",
+  "episodes": 12,
+  "studio": [
+    "스튜디오 팔레트"
+  ],
+  "staff": {
+    "director": [
+      "이나바 유키"
+    ],
+    "adaptor": [
+      "이나바 유키"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/ig-zNgHxaWg?si=dxWA22aOTES2riB9"
+    }
+  ]
+},
+{
+  "id": 56733,
+  "title": "매지컬★익스플로러",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/매지컬익스플로러.webp",
+  "day": "Saturdays",
+  "episodes": 13,
+  "studio": [
+    "WHITE FOX"
+  ],
+  "staff": {
+    "director": [
+      "오오하시 카즈키"
+    ],
+    "adaptor": [
+      "세키네 사토코"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/M7bR4FznTN4?si=kgccfTjmW9NRuLfN"
+    },
+    {
+      "title": "PV 제1탄",
+      "url": "https://youtu.be/bQuJywMCYWg?si=QvZnMnktClmMoUNg"
+    },
+    {
+      "title": "PV 제2탄",
+      "url": "https://youtu.be/XqrBfyUNYZs?si=Q5MvH9-vP8ObasBk"
+    }
+  ]
+},
+{
+  "id": 61578,
+  "title": "학생회에도 구멍은 있다!",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/학생회에도 구멍은 있다.webp",
+  "day": "Sundays",
+  "episodes": 12,
+  "studio": [
+    "팟쇼네"
+  ],
+  "staff": {
+    "director": [
+      "타츠와 나오유키"
+    ],
+    "adaptor": [
+      "요코타니 마사히로"
+    ]
+  },
+  "pv": [
+    {
+      "title": "메인 PV 제1탄",
+      "url": "https://youtu.be/SSePdGrgYLA?si=PYRcpnfQzUMyApdX"
+    },
+    {
+      "title": "메인 PV 제2탄",
+      "url": "https://youtu.be/nHiaLaCVxmg?si=yJXxsYlcXALXq0AD"
+    }
+  ]
+},
+{
+  "id": 63801,
+  "title": "란마1/2 3기",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/란마12 3기.webp",
+  "day": "Sundays",
+  "episodes": 0,
+  "studio": [
+    "MAPPA"
+  ],
+  "staff": {
+    "director": [
+      "우다 코노스케"
+    ],
+    "adaptor": [
+      "우에노 키미코"
+    ]
+  },
+  "pv": [
+    {
+      "title": "넷플릭스 코리아 공식 예고편",
+      "url": "https://youtu.be/9foClh9FhxI?si=k2SapJ5qD3SGGB57"
+    },
+    {
+      "title": "PV 제1탄",
+      "url": "https://youtu.be/MnYDGUBUzJQ?si=DDE9a5t-QySOKdoX"
+    },
+    {
+      "title": "PV 제2탄",
+      "url": "https://youtu.be/dbe8esPSfYI?si=AlRwLLxV_iGK8xKI"
+    },
+    {
+      "title": "PV 제3탄",
+      "url": "https://youtu.be/3uLb6c-4ni0?si=jTOY0yNTrzIhcUo0"
+    }
+  ]
+},
+{
+  "id": 62922,
+  "title": "빌려준 마력은 【리볼빙】으로 강제징수",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/빌려준 마력은 리볼빙으로 강제징수.webp",
+  "day": "Sundays",
+  "episodes": 0,
+  "studio": [
+    "SynergySP"
+  ],
+  "staff": {
+    "director": [
+      "타마노 타카히로"
+    ],
+    "adaptor": [
+      "모리 류스케"
+    ]
+  },
+  "pv": [
+    {
+      "title": "PV 제1탄",
+      "url": "https://youtu.be/RRNBNnCRPqU?si=HlEOMblUvnMrKs6y"
+    },
+    {
+      "title": "PV 제2탄",
+      "url": "https://youtu.be/kXqx3rFSkxc?si=Zz1_3JU76282qHtI"
+    }
+  ]
+},
+{
+  "id": 61323,
+  "title": "푸른 상자 시즌 2",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/푸른 상자 시즌 2.webp",
+  "day": "Sundays",
+  "episodes": 12,
+  "studio": [
+    "일렉트릭 서커스"
+  ],
+  "staff": {
+    "director": [
+      "사코 다이스케"
+    ],
+    "adaptor": [
+      "카키하라 유코"
+    ]
+  },
+  "pv": [
+    {
+      "title": "넷플릭스 공식 티저 예고편",
+      "url": "https://youtu.be/Y1ARaGNqpWA?si=5OSwuu_MDLfB6Mx8"
+    },
+    {
+      "title": "넷플릭스 공식 예고편",
+      "url": "https://youtu.be/pgBPVXcRbsM?si=BnUp79OVQzMHajfu"
+    }
+  ]
+},
+{
+  "id": 61603,
+  "title": "아오아시 Season2",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/아오아시 Season2.webp",
+  "day": "Sundays",
+  "episodes": 24,
+  "studio": [
+    "TMS 엔터테인먼트"
+  ],
+  "staff": {
+    "director": [
+      "요코야마 카즈키"
+    ],
+    "adaptor": [
+      "요코타니 마사히로"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/phKPnPXm74c?si=ddfbCVqGNjCC0IIF"
+    },
+    {
+      "title": "메인 PV",
+      "url": "https://youtu.be/FwaN0d9U2gI?si=lxC56eVvtjfkGbZq"
+    }
+  ]
+},
+{
+  "id": 60948,
+  "title": "눈을 떴더니 최강 무장과 우주선을 가지고 있어서, 집 한채를 목표로 용병으로 자유롭게 살고 싶다",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/눈을 떴더니 최강 무장과 우주선을 가지고 있어서 집 한채를 목표로 용병으로 자유롭게 살고 싶다.webp",
+  "day": "Sundays",
+  "episodes": 0,
+  "studio": [
+    "studio A-CAT"
+  ],
+  "staff": {
+    "director": [
+      "나가하마 노리히코"
+    ],
+    "adaptor": [
+      "코노 타카미츠"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/6J7MHu2O7Vw?si=lRebKap0tOkdkQPb"
+    },
+    {
+      "title": "메인 PV",
+      "url": "https://youtu.be/Z9ofT53sz2U?si=Przb8VzNNoMlsuTW"
+    }
+  ]
+},
+{
+  "id": 62907,
+  "title": "아저씨는 귀여운 것을 좋아해",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/아저씨는 귀여운 것을 좋아해.webp",
+  "day": "Sundays",
+  "episodes": 12,
+  "studio": [
+    "라이덴 필름"
+  ],
+  "staff": {
+    "director": [
+      "마키노 토모에"
+    ],
+    "adaptor": [
+      "사토 유타카"
+    ]
+  },
+  "pv": [
+    {
+      "title": "1차 PV",
+      "url": "https://youtu.be/YKgjylmYeoA?si=kC4dW0hJDqNjAuDO"
+    },
+    {
+      "title": "2차 PV",
+      "url": "https://youtu.be/QW6tKrnQILA?si=f6zRgRQuyEEh-XQE"
+    }
+  ]
+},
+{
+  "id": 63751,
+  "title": "TANK CHAIR -탱크체어-",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/TANK CHAIR 탱크체어.webp",
+  "day": "Sundays",
+  "episodes": 0,
+  "studio": [
+    "폴리곤 픽쳐스"
+  ],
+  "staff": {
+    "director": [
+      "요시히라 \"Tady\" 타다히로",
+      "안도 히로아키"
+    ],
+    "adaptor": [
+      "요시히라 \"Tady\" 타다히로"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/CdzLcwU9pVo?si=p63T08aSyplt-Vzj"
+    },
+    {
+      "title": "메인 PV",
+      "url": "https://youtu.be/uaW2KLmA47M?si=zKEMwkynJv7g9szS"
+    },
+    {
+      "title": "메인 PV 제2탄",
+      "url": "https://youtu.be/ihAvU833DHA?si=zKREzUTKbh9oa2BE"
+    }
+  ]
+},
+{
+  "id": 63367,
+  "title": "드래곤볼 슈퍼: 비루스",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/드래곤볼 슈퍼 비루스.webp",
+  "day": "Sundays",
+  "episodes": 0,
+  "studio": [
+    "토에이 애니메이션"
+  ],
+  "staff": {
+    "director": [],
+    "adaptor": []
+  },
+  "pv": [
+    {
+      "title": "초 시동 트레일러",
+      "url": "https://youtu.be/UkQnfgxZ5vc?si=wxmyyfzxXOtuflSn"
+    },
+    {
+      "title": "초 격전 트레일러",
+      "url": "https://youtu.be/sjXXTgYaer0?si=9JtOMd1HpcmTlNYn"
+    },
+    {
+      "title": "초 개막 트레일러",
+      "url": "https://youtu.be/0ExAS1lmMJg?si=7RKGaANrQiLuC9zL"
+    }
+  ]
+},
+{
+  "id": 62753,
+  "title": "나약MAX 영애인데 수완가 약혼자와 내기를 하고 말았다",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/나약MAX 영애인데 수완가 약혼자와 내기를 하고 말았다.webp",
+  "day": "Sundays",
+  "episodes": 12,
+  "studio": [
+    "주문당"
+  ],
+  "staff": {
+    "director": [
+      "나카니시 노부아키"
+    ],
+    "adaptor": [
+      "후쿠다 히로코"
+    ]
+  },
+  "pv": [
+    {
+      "title": "PV 제1탄",
+      "url": "https://youtu.be/e41RGxVwJRs?si=pNjc-TX51q-sbob-"
+    },
+    {
+      "title": "PV 제2탄",
+      "url": "https://youtu.be/FhfQKnb5MO4?si=2NDXUBlJGp46U6x0"
+    }
+  ]
+},
+{
+  "id": 63292,
+  "title": "신자 0명 여신님과 시작하는 이세계 공략",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/신자 0명 여신님과 시작하는 이세계 공략.webp",
+  "day": "Sundays",
+  "episodes": 0,
+  "studio": [
+    "HORNETS"
+  ],
+  "staff": {
+    "director": [
+      "후쿠시마 토시노리"
+    ],
+    "adaptor": [
+      "마치다 토코"
+    ]
+  },
+  "pv": [
+    {
+      "title": "PV 제1탄",
+      "url": "https://youtu.be/qlMB8vSpLzc?si=cxRZ5Fhh1ENrRoyo"
+    }
+  ]
+},
+{
+  "id": 62590,
+  "title": "호텔 인휴먼즈 2기",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/호텔 인휴먼즈 2기.webp",
+  "day": "Sundays",
+  "episodes": 13,
+  "studio": [
+    "브리지"
+  ],
+  "staff": {
+    "director": [
+      "아미노 테츠로"
+    ],
+    "adaptor": [
+      "요네무라 쇼지"
+    ]
+  },
+  "pv": []
+},
+{
+  "id": 64131,
+  "title": "여친의 친구",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/여친의 친구.webp",
+  "day": "Anomaly",
+  "episodes": 12,
+  "studio": [
+    "Quad"
+  ],
+  "staff": {
+    "director": [
+      "안도 타카시"
+    ],
+    "adaptor": [
+      "시라키 고코"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/ifIEcvYJwcE?si=ra9J6Kkod4AsCDg6"
+    }
+  ]
+},
+{
+  "id": 63509,
+  "title": "다크서머너와 썸을 탔다",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/다크서머너와 썸을 탔다.webp",
+  "day": "Anomaly",
+  "episodes": 12,
+  "studio": [
+    "AtoriE"
+  ],
+  "staff": {
+    "director": [
+      "미야지마 세이야"
+    ],
+    "adaptor": [
+      "미야지마 세이야"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/k9lQpVYUoE4?si=Qbkc_LYAwOzWeYS-"
+    },
+    {
+      "title": "메인 PV",
+      "url": "https://youtu.be/-YCols5lYow?si=qnUGFEn4fyzCnzg5"
+    }
+  ]
+},
+{
+  "id": 64180,
+  "title": "상처투성이 성녀로부터 복수를 담아 Season2",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/상처투성이 성녀로부터 복수를 담아 Season2.webp",
+  "day": "Anomaly",
+  "episodes": 0,
+  "studio": [
+    "이매지카인포스",
+    "Imageworks Studio"
+  ],
+  "staff": {
+    "director": [
+      "후카세 사야"
+    ],
+    "adaptor": []
+  },
+  "pv": [
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/00xoasMeaGA?si=SDwqGcVrXW2WOgFr"
+    },
+    {
+      "title": "티저 PV 2탄",
+      "url": "https://youtu.be/vnOrtJ4vRmw?si=XE4II02nkvS_6fUN"
+    }
+  ]
+},
+{
+  "id": 64298,
+  "title": "낯가림 심한 미망인 설녀와 저주의 반지",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/낯가림 심한 미망인 설녀와 저주의 반지.webp",
+  "day": "Anomaly",
+  "episodes": 0,
+  "studio": [
+    "Studio Houkiboshi"
+  ],
+  "staff": {
+    "director": [
+      "코가 카즈오미"
+    ],
+    "adaptor": [
+      "쿠로사키 에요"
+    ]
+  },
+  "pv": [
+    {
+      "title": "PV",
+      "url": "https://youtu.be/NVbg3gNMz8I?si=SYsIT3Z3YUfVySsA"
+    }
+  ]
+},
+{
+  "id": 61440,
+  "title": "나의 행복한 결혼 특별편",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/나의 행복한 결혼 특별편.webp",
+  "day": "Anomaly",
+  "episodes": 3,
+  "studio": [
+    "키네마 시트러스"
+  ],
+  "staff": {
+    "director": [
+      "쿠보타 타케히로"
+    ],
+    "adaptor": [
+      "타나카 미카",
+      "네기 이쿠호"
+    ]
+  },
+  "pv": [
+    {
+      "title": "공식 티저 예고편 | 넷플릭스",
+      "url": "https://youtu.be/Xvp8XhwhPtk?si=3OtoslHNEjOFNDPf"
+    }
+  ]
+},
+{
+  "id": 61990,
+  "title": "사이버펑크: 엣지러너 2",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/사이버펑크 엣지러너 2.webp",
+  "day": "Web",
+  "episodes": 10,
+  "studio": [
+    "트리거"
+  ],
+  "staff": {
+    "director": [
+      "이카라시 카이",
+      "우치다 나오토"
+    ],
+    "adaptor": [
+      "오오츠카 마사히코"
+    ]
+  },
+  "pv": [
+    {
+      "title": "사이버펑크: 엣지러너 시즌2 | 공식 티저 예고편",
+      "url": "https://youtu.be/qDFeurdWDNE?si=Mzb8ptLpRO8gVHNV"
+    },
+    {
+      "title": "공식 티저 예고편 #2",
+      "url": "https://youtu.be/Bkob4PZLaWk?si=Bswjl_YX9waZ3DXL"
+    },
+    {
+      "title": "공식 티저 예고편 #3",
+      "url": "https://youtu.be/iiuRyNg3giw?si=ENK0bc3FD_syQki5"
+    }
+  ]
+},
+{
+  "id": 63045,
+  "title": "데몬즈 크레스트",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/데몬즈 크레스트.webp",
+  "day": "Web",
+  "episodes": 0,
+  "studio": [
+    "Production I.G"
+  ],
+  "staff": {
+    "director": [
+      "우시로 신지",
+      "코마야 켄이치로"
+    ],
+    "adaptor": [
+      "우메하라 에이지"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/llzkRQ9gM1I?si=GRfm3kGi_ocFloUP"
+    },
+    {
+      "title": "PV 제1탄",
+      "url": "https://youtu.be/jvxgudW4FCs?si=X0pFQtjZEN2qi_4H"
+    },
+    {
+      "title": "PV 제2탄",
+      "url": "https://youtu.be/z_aHrTag3Ig?si=Qr9bKAnvkXXAB_fE"
+    }
+  ]
+},
+{
+  "id": 64459,
+  "title": "풀 나이트",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/풀 나이트.webp",
+  "day": "Web",
+  "episodes": 0,
+  "studio": [
+    "선라이즈",
+    "샤프트"
+  ],
+  "staff": {
+    "director": [
+      "유카와 아츠유키",
+      "시무라 료"
+    ],
+    "adaptor": [
+      "타나카 진"
+    ]
+  },
+  "pv": [
+    {
+      "title": "공식 티저 예고편 | 넷플릭스",
+      "url": "https://youtu.be/hHpu52yLwmk?si=ery5j1Wbo6be8VxI"
+    },
+    {
+      "title": "공식 티저 예고편 #2 | 넷플릭스",
+      "url": "https://youtu.be/MSFZ42Ku6Z0?si=B-z_lpEtLhBKY_kH"
+    }
+  ]
+},
+{
+  "id": 50139,
+  "title": "디즈니 트위스티드 원더랜드: 애니메이션",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/animeimg/2026/Q4/디즈니 트위스티드 원더랜드 애니메이션.webp",
+  "day": "Web",
+  "episodes": 8,
+  "studio": [
+    "유메타 컴퍼니",
+    "그라피니카"
+  ],
+  "staff": {
+    "director": [
+      "나토리 타카히로",
+      "카타카이 신"
+    ],
+    "adaptor": [
+      "나토리 타카히로"
+    ]
+  },
+  "pv": [
+    {
+      "title": "공식 예고편",
+      "url": "https://youtu.be/R5qwAqTDooA?si=ivKxZqN2zw0mabIu"
+    },
+    {
+      "title": "메인 예고편",
+      "url": "https://youtu.be/j3hPVOw8Ys0?si=0poI--DeL87UthiQ"
+    }
+  ]
+},
+{
+  "id": 58735,
+  "title": "파리스 그린이 밝는 날에",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/cinema/2026/파리스 그린이 밝는 날에.webp",
+  "day": "Cinema",
+  "episodes": 1,
+  "studio": [
+    "아스믹 에이스",
+    "스튜디오 아웃트리거",
+    "Miyu Productions"
+  ],
+  "staff": {
+    "director": [
+      "시노미야 요시토시"
+    ],
+    "scriptwriter": [
+      "시노미야 요시토시"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 예고편",
+      "url": "https://youtu.be/uBL_DM-ahts?si=OBZ9yIvuTRLe38mK"
+    },
+    {
+      "title": "메인 예고편",
+      "url": "https://youtu.be/3kzhKwpenKw?si=64FNWUphL9xS9dm6"
+    }
+  ]
+},
+{
+  "id": 58735,
+  "title": "전자오락수호대",
+  "year": 2027,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/cinema/2027/전자오락수호대.webp",
+  "day": "Cinema",
+  "episodes": 1,
+  "studio": [
+    "로커스 스튜디오"
+  ],
+  "staff": {
+    "director": [
+      "엄영식"
+    ],
+    "scriptwriter": []
+  },
+  "pv": [
+    {
+      "title": "메인 예고편",
+      "url": "https://youtu.be/CNpGIrrmx18?si=Yavuwq6fEmkW4jgG"
+    }
+  ]
+},
+{
+  "id": 48820,
+  "title": "마법소녀 마도카☆마기카 <발푸르기스의 회천>",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/cinema/2026/마법소녀 마도카마기카 발푸르기스의 회천.webp",
+  "day": "Cinema",
+  "episodes": 1,
+  "studio": [
+    "샤프트"
+  ],
+  "staff": {
+    "director": [
+      "미야모토 유키히로"
+    ],
+    "scriptwriter": [
+      "우로부치 겐"
+    ]
+  },
+  "pv": [
+    {
+      "title": "티저 PV",
+      "url": "https://youtu.be/gAR0CMwEfes?si=v1gBho9l3JMK_K0v"
+    },
+    {
+      "title": "특보 제1.1탄",
+      "url": "https://youtu.be/vSdolbHyvkA?si=xxaaXxqxmuOojQkD"
+    },
+    {
+      "title": "특보 제2탄",
+      "url": "https://youtu.be/TXRlggMPGLs?si=nwpuG7306tP-OjDy"
+    },
+    {
+      "title": "예고편",
+      "url": "https://youtu.be/iJazbGwBh-E?si=ZzPeFOsTIWVtUrFp"
+    },
+    {
+      "title": "예고편 제2탄",
+      "url": "https://youtu.be/B1YTdDt49lE?si=8zztpbcixz7F7ihg"
+    },
+    {
+      "title": "예고편 제3탄",
+      "url": "https://youtu.be/UmVTrrDVYV4?si=yPxCYw55nGHvL-Ej"
+    },
+    {
+      "title": "본 예고",
+      "url": "https://youtu.be/HD6vwmNvcXo?si=UeRemn229S6cehyE"
+    }
+  ]
+},
+{
+  "id": 62270,
+  "title": "BanG Dream! Ave Mujica prima aurora",
+  "year": 2026,
+  "quarter": [
+    "4분기"
+  ],
+  "thumbnail": "image/cinema/2026/BanG Dream Ave Mujica prima aurora.webp",
+  "day": "Cinema",
+  "episodes": 1,
+  "studio": [
+    "니치카라인"
+  ],
+  "staff": {
+    "director": [
+      "카키모토 코다이"
+    ],
+    "adaptor": [
+      "고토 미도리",
+      "와다 아키코"
+    ]
+  },
+  "pv": [
+    {
+      "title": "PV",
+      "url": "https://youtu.be/Uqt2rXUA-r8?si=pcrvYCW6asCNW1IH"
+    },
+    {
+      "title": "본 PV",
+      "url": "https://youtu.be/Sr1w-prNbH0?si=1b2B1klVNXwCKbdS"
     }
   ]
 }
