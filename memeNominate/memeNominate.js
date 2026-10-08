@@ -1,3 +1,11 @@
+function isMemeVideo(source) {
+    try {
+        return /\.(mp4|webm|mov|m4v|ogv)$/i.test(new URL(String(source || ''), document.baseURI).pathname);
+    } catch {
+        return false;
+    }
+}
+
 const memeState = {
     selectedMeme: null,
     selectedSrc: null,
@@ -89,7 +97,7 @@ function renderMemeGrid() {
 function createMemeCard(meme) {
     const srcs = getSrcs(meme);
     const firstSrc = srcs[0] || { url: '' };
-    const isVideo = MediaUtils.isVideo(firstSrc.url);
+    const isVideo = isMemeVideo(firstSrc.url);
 
     const card = document.createElement("div");
     card.className = "card meme-card";
@@ -176,7 +184,7 @@ function switchSrc(memeId, srcUrl, tabBtn, e) {
 
     const mediaBox = document.getElementById(`media-${memeId}`);
     const meme = findMeme(memeId);   // ✅ 수정
-    const isVideo = MediaUtils.isVideo(srcUrl);
+    const isVideo = isMemeVideo(srcUrl);
 
     mediaBox.innerHTML = isVideo
         ? `<video src="${escapeMemeText(memeMediaUrl(srcUrl))}" muted loop autoplay onmouseover="this.play()" onmouseout="this.pause()"></video>`
@@ -232,7 +240,7 @@ function openMemeZoom(id, e) {
     const srcs = getSrcs(meme);
 
     function renderZoomMedia(src) {
-        const isVideo = MediaUtils.isVideo(src.url);
+        const isVideo = isMemeVideo(src.url);
         return isVideo
             ? `<video class="zoom-media" src="${escapeMemeText(memeMediaUrl(src.url))}" controls autoplay loop></video>`
             : `<img class="zoom-media" src="${escapeMemeText(memeMediaUrl(src.url))}" alt="${escapeMemeText(meme.name)}">`;
@@ -279,7 +287,7 @@ function switchPopupSrc(memeId, srcIndex) {
     });
 
     const src = srcs[srcIndex];
-    const isVideo = MediaUtils.isVideo(src.url);
+    const isVideo = isMemeVideo(src.url);
     const mediaBox = document.getElementById('popup-media');
 
     mediaBox.querySelectorAll('video').forEach(v => { v.pause(); v.removeAttribute('src'); v.load(); });
@@ -314,7 +322,7 @@ function showWinnerCelebration(winner, src) {
     const popup = document.getElementById("winner-popup");
     if (!popup) return;
     closePopup();
-    const isVideo = MediaUtils.isVideo(src);
+    const isVideo = isMemeVideo(src);
 
     popup.innerHTML = `
         <div class="modal-content" style="text-align: center;">

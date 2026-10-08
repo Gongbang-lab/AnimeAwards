@@ -287,7 +287,6 @@
   }
   .toast.show{opacity:1; transform:translateX(-50%) translateY(0);}
 </style>
-<script src="../mediaUtils.js"></script>
 </head>
 <body>
 
@@ -369,6 +368,15 @@
 
 <script>
 (function(){
+function isCollectorVideo(source) {
+    try {
+        return /\.(mp4|webm|mov|m4v|ogv)$/i.test(new URL(String(source || ''), document.baseURI).pathname);
+    } catch {
+        return false;
+    }
+}
+
+
   let slotCount = 1;
   let queue = [];
   let idCounter = null;
@@ -412,7 +420,7 @@
       if(!file) return;
       urlInput.value = file.name;
       const url = URL.createObjectURL(file);
-      const preview = document.createElement(MediaUtils.isVideo(file.name) ? 'video' : 'img');
+      const preview = document.createElement(isCollectorVideo(file.name) ? 'video' : 'img');
       preview.className = 'thumb';
       if (preview.tagName === 'VIDEO') { preview.muted = true; preview.controls = true; preview.playsInline = true; }
       thumb.replaceWith(preview);
@@ -529,7 +537,7 @@
       row.className = 'queue-item';
       row.innerHTML = `
         ${first.previewUrl
-          ? (MediaUtils.isVideo(first.value)
+          ? (isCollectorVideo(first.value)
             ? `<video class="qthumb" src="${first.previewUrl}" muted controls playsinline></video>`
             : `<img class="qthumb" src="${first.previewUrl}">`)
           : `<div class="qthumb"></div>`}

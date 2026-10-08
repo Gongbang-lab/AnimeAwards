@@ -1,3 +1,11 @@
+function isAwardVideo(source) {
+    try {
+        return /\.(mp4|webm|mov|m4v|ogv)$/i.test(new URL(String(source || ''), document.baseURI).pathname);
+    } catch {
+        return false;
+    }
+}
+
 const mainContainer = document.getElementById("main-container");
 const top3Area = document.getElementById("top3-area");
 
@@ -458,7 +466,7 @@ function createAwardCard(award, results, ratioClass) {
     if (isTrophyPath(displayThumb)) displayThumb = trophy;
     const wrapper = document.createElement('div');
     wrapper.className = 'thumb-wrapper';
-    const isVideo = MediaUtils.isVideo(displayThumb);
+    const isVideo = isAwardVideo(displayThumb);
     const media = document.createElement(isVideo ? 'video' : 'img');
     media.className = 'award-thumb';
     if (displayThumb === trophy && !winner?.personalMemeId) media.classList.add('award-trophy');
