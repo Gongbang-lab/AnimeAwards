@@ -32,6 +32,7 @@ function getSrcs(meme) {
     if (meme.src2) srcs.push({ url: meme.src2, label: meme.src2_title || "ver.2" });
     if (meme.src3) srcs.push({ url: meme.src3, label: meme.src3_title || "ver.3" });
     if (meme.src4) srcs.push({ url: meme.src4, label: meme.src4_title || "ver.4" });
+    if (meme.src5) srcs.push({ url: meme.src5, label: meme.src5_title || "ver.5" });
     if (srcs.length === 0 && meme.src) srcs.push({ url: meme.src, label: "원본" });
     return srcs;
 }
@@ -88,7 +89,7 @@ function renderMemeGrid() {
 function createMemeCard(meme) {
     const srcs = getSrcs(meme);
     const firstSrc = srcs[0] || { url: '' };
-    const isVideo = meme.type === 'video' || firstSrc.url.endsWith('.mp4');
+    const isVideo = MediaUtils.isVideo(firstSrc.url);
 
     const card = document.createElement("div");
     card.className = "card meme-card";
@@ -175,7 +176,7 @@ function switchSrc(memeId, srcUrl, tabBtn, e) {
 
     const mediaBox = document.getElementById(`media-${memeId}`);
     const meme = findMeme(memeId);   // ✅ 수정
-    const isVideo = meme.type === 'video' || srcUrl.endsWith('.mp4');
+    const isVideo = MediaUtils.isVideo(srcUrl);
 
     mediaBox.innerHTML = isVideo
         ? `<video src="${escapeMemeText(memeMediaUrl(srcUrl))}" muted loop autoplay onmouseover="this.play()" onmouseout="this.pause()"></video>`
@@ -231,7 +232,7 @@ function openMemeZoom(id, e) {
     const srcs = getSrcs(meme);
 
     function renderZoomMedia(src) {
-        const isVideo = meme.type === 'video' || src.url.endsWith('.mp4');
+        const isVideo = MediaUtils.isVideo(src.url);
         return isVideo
             ? `<video class="zoom-media" src="${escapeMemeText(memeMediaUrl(src.url))}" controls autoplay loop></video>`
             : `<img class="zoom-media" src="${escapeMemeText(memeMediaUrl(src.url))}" alt="${escapeMemeText(meme.name)}">`;
@@ -278,7 +279,7 @@ function switchPopupSrc(memeId, srcIndex) {
     });
 
     const src = srcs[srcIndex];
-    const isVideo = meme.type === 'video' || src.url.endsWith('.mp4');
+    const isVideo = MediaUtils.isVideo(src.url);
     const mediaBox = document.getElementById('popup-media');
 
     mediaBox.querySelectorAll('video').forEach(v => { v.pause(); v.removeAttribute('src'); v.load(); });
@@ -299,7 +300,6 @@ function saveMemeWinner() {
         title: winner.name,
         thumbnail: winner.isPersonal ? '' : savedSrc,
         ...(winner.isPersonal ? { isPersonal: true, personalMemeId: winner.id } : {}),
-        type: winner.type,
         origin: winner.origin
     });
     
@@ -314,7 +314,7 @@ function showWinnerCelebration(winner, src) {
     const popup = document.getElementById("winner-popup");
     if (!popup) return;
     closePopup();
-    const isVideo = winner.type === 'video' || src?.endsWith('.mp4');
+    const isVideo = MediaUtils.isVideo(src);
 
     popup.innerHTML = `
         <div class="modal-content" style="text-align: center;">

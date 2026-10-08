@@ -287,6 +287,7 @@
   }
   .toast.show{opacity:1; transform:translateX(-50%) translateY(0);}
 </style>
+<script src="../mediaUtils.js"></script>
 </head>
 <body>
 
@@ -323,16 +324,6 @@
       </div>
     </div>
 
-    <div class="field">
-      <label>타입 (type)</label>
-      <select id="fType">
-        <option value="gif">gif</option>
-        <option value="webp">webp</option>
-        <option value="video">video</option>
-        <option value="mp4">mp4</option>
-        <option value="image">image</option>
-      </select>
-    </div>
 
     <div class="field">
       <label>출처 (origin)</label>
@@ -392,15 +383,6 @@
   const outHeaderEl = document.getElementById('outHeader');
   const toastEl = document.getElementById('toast');
 
-  function extToType(filename){
-    const ext = (filename.split('.').pop() || '').toLowerCase();
-    if(ext === 'mp4') return 'mp4';
-    if(ext === 'gif') return 'gif';
-    if(ext === 'webp') return 'webp';
-    if(['mov','webm'].includes(ext)) return 'video';
-    if(['png','jpg','jpeg'].includes(ext)) return 'image';
-    return null;
-  }
 
   function makeSlot(index){
     const wrap = document.createElement('div');
@@ -423,19 +405,20 @@
 
     const fileInput = wrap.querySelector('input[type=file]');
     const urlInput = wrap.querySelector('.src-url');
-    const thumb = wrap.querySelector('.thumb');
+    let thumb = wrap.querySelector('.thumb');
 
     fileInput.addEventListener('change', () => {
       const file = fileInput.files[0];
       if(!file) return;
       urlInput.value = file.name;
       const url = URL.createObjectURL(file);
+      const preview = document.createElement(MediaUtils.isVideo(file.name) ? 'video' : 'img');
+      preview.className = 'thumb';
+      if (preview.tagName === 'VIDEO') { preview.muted = true; preview.controls = true; preview.playsInline = true; }
+      thumb.replaceWith(preview);
+      thumb = preview;
       thumb.src = url;
       thumb.style.display = 'block';
-      if(index === 1){
-        const detected = extToType(file.name);
-        if(detected) document.getElementById('fType').value = detected;
-      }
     });
 
     const removeBtn = wrap.querySelector('.remove-slot');
@@ -475,7 +458,6 @@
     const origin = document.getElementById('fOrigin').value.trim();
     const quarter = document.getElementById('fQuarter').value;
     const year = parseInt(document.getElementById('fYear').value, 10) || 2026;
-    const type = document.getElementById('fType').value;
     const prefix = document.getElementById('fPrefix').value;
 
     const slots = [...srcSlotsEl.children].map((el) => {
@@ -487,7 +469,7 @@
       return { url, title, previewUrl };
     }).filter(s => s.url);
 
-    return { name, origin, quarter, year, type, prefix, slots };
+    return { name, origin, quarter, year, prefix, slots };
   }
 
   function nextId(){
@@ -508,7 +490,6 @@
     const entry = {
       id: nextId(),
       name: data.name,
-      type: data.type,
       origin: data.origin,
       quarter: data.quarter,
       year: data.year,
@@ -524,7 +505,7 @@
     renderQueue();
     renderOutput();
 
-    // 다음 입력 편하게: 제목/출처/파일만 초기화, 분기·연도·타입·접두사는 유지
+    // 다음 입력 편하게: 제목/출처/파일만 초기화, 분기·연도·접두사는 유지
     document.getElementById('fName').value = '';
     document.getElementById('fOrigin').value = '';
     srcSlotsEl.innerHTML = '';
@@ -548,10 +529,12 @@
       row.className = 'queue-item';
       row.innerHTML = `
         ${first.previewUrl
-          ? `<img class="qthumb" src="${first.previewUrl}">`
+          ? (MediaUtils.isVideo(first.value)
+            ? `<video class="qthumb" src="${first.previewUrl}" muted controls playsinline></video>`
+            : `<img class="qthumb" src="${first.previewUrl}">`)
           : `<div class="qthumb"></div>`}
         <div class="qinfo">
-          <div class="qid">${entry.id} · ${entry.type}</div>
+          <div class="qid">${entry.id}</div>
           <div class="qname">${escapeHtml(entry.name)}</div>
           <div class="qmeta">${escapeHtml(entry.origin)} · ${entry.quarter} · 버전 ${entry.srcs.length}개</div>
         </div>
@@ -587,7 +570,6 @@
       lines.push('    {');
       lines.push(`        "id": ${jsStr(entry.id)},`);
       lines.push(`        "name": ${jsStr(entry.name)},`);
-      lines.push(`        "type": ${jsStr(entry.type)},`);
       entry.srcs.forEach(s => {
         if(s.titleKey && s.title){
           lines.push(`        "${s.titleKey}": ${jsStr(s.title)},`);

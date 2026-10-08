@@ -458,7 +458,7 @@ function createAwardCard(award, results, ratioClass) {
     if (isTrophyPath(displayThumb)) displayThumb = trophy;
     const wrapper = document.createElement('div');
     wrapper.className = 'thumb-wrapper';
-    const isVideo = String(displayThumb).endsWith('.mp4');
+    const isVideo = MediaUtils.isVideo(displayThumb);
     const media = document.createElement(isVideo ? 'video' : 'img');
     media.className = 'award-thumb';
     if (displayThumb === trophy && !winner?.personalMemeId) media.classList.add('award-trophy');
