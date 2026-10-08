@@ -32,6 +32,14 @@ function observePersonalCard(box, meme) {
 }
 
 async function loadPersonalMedia(box, meme, mode = 'card') {
+    if (mode === 'card' && meme.type === 'video') {
+        if (box.querySelector('img')) return;
+        const image = document.createElement('img');
+        image.src = meme.poster || '../image/no-image.svg';
+        image.alt = meme.name;
+        box.replaceChildren(image);
+        return;
+    }
     if (personalMediaLoads.has(box)) return;
     const pending = { url: null };
     personalMediaLoads.set(box, pending);
@@ -48,7 +56,7 @@ async function loadPersonalMedia(box, meme, mode = 'card') {
             media.playsInline = true;
             media.loop = true;
             media.muted = mode === 'winner';
-            media.autoplay = mode === 'winner';
+            media.autoplay = mode === 'winner' || mode === 'zoom';
             media.onclick = event => event.stopPropagation();
         } else { media.alt = record.name; }
         if (mode === 'zoom') media.className = 'zoom-media';

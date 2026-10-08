@@ -53,6 +53,32 @@ window.PersonalMemeStorage = (() => {
             tx.objectStore('files').get(id).onsuccess = f => done(f.target.result ? { ...record, file: f.target.result.file } : undefined);
         };
     });
+    async function makeVideoPoster(file) {
+        const url = URL.createObjectURL(file);
+        const video = document.createElement('video');
+        video.muted = true;
+        video.preload = 'auto';
+        try {
+            await new Promise((resolve, reject) => {
+                const timer = setTimeout(() => reject(new Error('thumbnail timeout')), 10000);
+                video.onloadeddata = () => { clearTimeout(timer); resolve(); };
+                video.onerror = () => { clearTimeout(timer); reject(new Error('thumbnail decode failed')); };
+                video.src = url;
+            });
+            const canvas = document.createElement('canvas');
+            const scale = Math.min(1, 480 / Math.max(video.videoWidth, video.videoHeight));
+            canvas.width = Math.max(1, Math.round(video.videoWidth * scale));
+            canvas.height = Math.max(1, Math.round(video.videoHeight * scale));
+            canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
+            return canvas.toDataURL('image/jpeg', 0.75);
+        } catch {
+            return '';
+        } finally {
+            video.removeAttribute('src');
+            video.load();
+            URL.revokeObjectURL(url);
+        }
+    }
     async function save(record) {
         if (!record.name.trim() || !record.origin.trim()) throw new Error('이름과 애니메이션 이름을 입력해주세요.');
         if (!/^[1-4]분기$/.test(record.quarter)) {
@@ -62,6 +88,7 @@ window.PersonalMemeStorage = (() => {
         if (file && (!(file instanceof Blob) || !file.size || !TYPES.includes(file.type))) {
             throw new Error('JPG, PNG, WebP, GIF 이미지 또는 MP4, WebM 영상을 선택해주세요.');
         }
+        const poster = file?.type.startsWith('video/') ? await makeVideoPoster(file) : '';
         return transaction(['metadata', 'files'], 'readwrite', (tx, done, fail) => {
             const metadata = tx.objectStore('metadata');
             metadata.getAll().onsuccess = e => {
@@ -70,7 +97,7 @@ window.PersonalMemeStorage = (() => {
                 const size = file ? file.size : previous.size;
                 const used = e.target.result.reduce((sum, item) => sum + (item.id === record.id ? 0 : item.size), 0);
                 if (used + size > LIMIT) return fail(new Error('개인 밈 전체 저장 한도 1GB를 초과합니다. 기존 파일을 삭제하거나 작은 파일을 선택해주세요.'));
-                metadata.put({ ...fields, size, type: file ? (file.type.startsWith('video/') ? 'video' : 'image') : previous.type });
+                metadata.put({ ...fields, size, poster: file ? poster : previous?.poster || '', type: file ? (file.type.startsWith('video/') ? 'video' : 'image') : previous.type });
                 if (file) tx.objectStore('files').put({ id: record.id, file });
                 done(record.id);
             };

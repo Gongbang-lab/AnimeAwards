@@ -1,3 +1,13 @@
+function renderMemeThumbnail(box, meme, source) {
+    const img = document.createElement('img');
+    img.alt = meme.name;
+    img.loading = 'lazy';
+    img.decoding = 'async';
+    img.src = memeMediaUrl(isMemeVideo(source) ? `${source}.poster.jpg` : source);
+    img.onerror = () => { img.onerror = null; img.src = '../image/no-image.svg'; };
+    box.replaceChildren(img);
+}
+
 function isMemeVideo(source) {
     try {
         return /\.(mp4|webm|mov|m4v|ogv)$/i.test(new URL(String(source || ''), document.baseURI).pathname);
@@ -129,20 +139,8 @@ function createMemeCard(meme) {
 
     if (meme.isPersonal) {
         observePersonalCard(mediaBox, meme);
-    } else if (isVideo) {
-        const video = document.createElement("video");
-        video.src = memeMediaUrl(firstSrc.url);
-        video.muted = true;
-        video.loop = true;
-        video.onmouseover = () => video.play().catch(() => {});
-        video.preload = "metadata";
-        video.onmouseout = () => video.pause();
-        mediaBox.appendChild(video);
     } else {
-        const img = document.createElement("img");
-        img.src = memeMediaUrl(firstSrc.url);
-        img.alt = meme.name;
-        mediaBox.appendChild(img);
+        renderMemeThumbnail(mediaBox, meme, firstSrc.url);
     }
 
     const cardInfo = document.createElement("div");
@@ -186,9 +184,7 @@ function switchSrc(memeId, srcUrl, tabBtn, e) {
     const meme = findMeme(memeId);   // ✅ 수정
     const isVideo = isMemeVideo(srcUrl);
 
-    mediaBox.innerHTML = isVideo
-        ? `<video src="${escapeMemeText(memeMediaUrl(srcUrl))}" muted loop autoplay onmouseover="this.play()" onmouseout="this.pause()"></video>`
-        : `<img src="${escapeMemeText(memeMediaUrl(srcUrl))}" alt="${escapeMemeText(meme.name)}">`;
+    renderMemeThumbnail(mediaBox, meme, srcUrl);
 
     if (memeState.selectedMeme?.id === memeId) {
         memeState.selectedSrc = srcUrl;
@@ -242,7 +238,7 @@ function openMemeZoom(id, e) {
     function renderZoomMedia(src) {
         const isVideo = isMemeVideo(src.url);
         return isVideo
-            ? `<video class="zoom-media" src="${escapeMemeText(memeMediaUrl(src.url))}" controls autoplay loop></video>`
+            ? `<video class="zoom-media" src="${escapeMemeText(memeMediaUrl(src.url))}" controls autoplay loop playsinline></video>`
             : `<img class="zoom-media" src="${escapeMemeText(memeMediaUrl(src.url))}" alt="${escapeMemeText(meme.name)}">`;
     }
 
@@ -293,7 +289,7 @@ function switchPopupSrc(memeId, srcIndex) {
     mediaBox.querySelectorAll('video').forEach(v => { v.pause(); v.removeAttribute('src'); v.load(); });
 
     mediaBox.innerHTML = isVideo
-        ? `<video class="zoom-media" src="${escapeMemeText(memeMediaUrl(src.url))}" controls autoplay loop></video>`
+        ? `<video class="zoom-media" src="${escapeMemeText(memeMediaUrl(src.url))}" controls autoplay loop playsinline></video>`
         : `<img class="zoom-media" src="${escapeMemeText(memeMediaUrl(src.url))}" alt="${escapeMemeText(meme.name)}">`;
 }
 
