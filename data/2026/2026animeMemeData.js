@@ -1,7 +1,7 @@
 var AnimeMemeData_2026 = [
     {
         "id": "meme_001",
-        "name": "나오야 전투씬 1",
+        "name": "나오야 전투씬",
         "type": "gif", // image, gif, video 구분
         "src1": "image/meme/나오야 전투.gif",
         "src2_title": "전투씬 2",
@@ -49,10 +49,21 @@ var AnimeMemeData_2026 = [
         "year" : 2026
     },
     {
+        "id": "meme_007",
+        "name": "히구루마 히로미 판결",
+        "type": "mp4",
+        "src1": "image/meme/히구루마 히로미 판결.mp4",
+        "src2_title": "길티 컨피스케이션",
+        "src2": "image/meme/컨피스케이션.mp4",
+        "origin": "주술회전 3기",
+        "quarter": "1분기",
+        "year": 2026
+    },
+    {
         "id": "meme_008",
         "name": "3인 영역전개",
-        "type": "webp",
-        "src1": "image/meme/3인 영역전개.webp",
+        "type": "mp4",
+        "src1": "image/meme/3인 영역전개.mp4",
         "origin": "주술회전 3기",
         "quarter": "1분기",
         "year" : 2026
@@ -191,7 +202,7 @@ var AnimeMemeData_2026 = [
         "id": "meme_024",
         "name": "에드워드...",
         "type": "mp4",
-        "src1": "image/meme/그 장면.mp4",
+        "src1": "image/meme/에드워드.mp4",
         "origin": "황천의 츠가이",
         "quarter": "3분기",
         "year" : 2026
@@ -219,9 +230,9 @@ var AnimeMemeData_2026 = [
         {
         "id": "meme_027",
         "name": "도망을 잘 치는 갸루 사사키 미마",
-        "type": "gif",
-        "src1": "image/meme/도망친 갸루1.mp4",
-        "src2": "image/meme/도망친 갸루2.gif",
+        "type": "mp4",
+        "src1": "image/meme/도망잘치는 갸루1.mp4",
+        "src2": "image/meme/도망잘치는 갸루2.mp4",
         "origin": "도망을 잘 치는 도련님",
         "quarter": "3분기",
         "year": 2026
@@ -243,5 +254,5 @@ var AnimeMemeData_2026 = [
         "origin": "명탐정 프리큐어!",
         "quarter": "3분기",
         "year": 2026
-    }
+    },
 ];
