@@ -159,14 +159,14 @@ var AnimeMemeData_2026 = [
     },
     {
         "id": "meme_022",
-        "name": "아냐네코 집주인",
-        "src1_title": "담뱃재 샤워",
-        "src1": "image/meme/아냐네코1.webp",
-        "src2_title": "떡치는 집주인",
-        "src2": "image/meme/아냐네코2.gif",
+        "name": "아냐네코 (더러움 주의)",
+        "src1": "image/meme/야니네코 1.webp",
+        "src2": "image/meme/야니네코 2.webp",
+        "src3": "image/meme/야니네코 3.webp",
+        "src4": "image/meme/야니네코 4.webp",
         "origin": "담배 고양이",
         "quarter": "3분기",
-        "year" : 2026
+        "year": 2026
     },
     {
         "id": "meme_023",
@@ -197,13 +197,12 @@ var AnimeMemeData_2026 = [
     },
     {
         "id": "meme_026",
-        "name": "리제로 전투씬",
-        "src1": "image/meme/리제로_1.gif",
-        "src2": "image/meme/리제로_2.gif",
-        "src3": "image/meme/리제로_3.gif",
+        "name": "리제로",
+        "src1": "image/meme/리제로 1.mp4",
+        "src2": "image/meme/리제로 2.mp4",
         "origin": "Re:제로부터 시작하는 이세계 생활 4기",
         "quarter": "3분기",
-        "year" : 2026
+        "year": 2026
     },
         {
         "id": "meme_027",
