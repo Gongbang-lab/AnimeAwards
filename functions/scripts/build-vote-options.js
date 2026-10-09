@@ -1,3 +1,4 @@
+const { buildSongBundles } = require("../../songBundles.js");
 const fs = require("node:fs");
 const path = require("node:path");
 const vm = require("node:vm");
@@ -82,13 +83,9 @@ function candidatesFor(theme, data, year, quarter) {
       return asArray(data.memes).filter(item => inSeason(item, year, quarter)).map(item => item.name);
     case "opening":
     case "ending": {
-      const expectedTypes = theme === "opening" ? ["op", "opening"] : ["ed", "ending"];
-      return asArray(data.songs)
-        .filter(item => inSeason(item, year, quarter))
-        .flatMap(item => asArray(item.songs))
-        .filter(song => expectedTypes.includes(String(song.type || "").toLowerCase()))
-        .map(song => song.title);
+      return buildSongBundles(asArray(data.songs), asArray(data.anime), year, quarter, theme === 'opening' ? 'op' : 'ed').flatMap(b => b.tracks.map(track => track.title));
     }
+
     case "ost": {
       const worksWithOst = new Set(asArray(data.ost).flat(Infinity)
         .filter(item => asArray(item?.albums).some(album =>

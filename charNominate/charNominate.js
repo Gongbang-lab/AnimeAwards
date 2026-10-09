@@ -83,7 +83,11 @@ function renderStep1(searchTerm = "") {
     const selectedQuarter = SeasonFilter.getSelectedSeason().quarter;
     const showQuarterAccordion = SeasonFilter.showQuarterAccordion();
 
-    Object.entries(hierarchy).forEach(([qName, days]) => {
+    Object.entries(hierarchy).sort(([a], [b]) => {
+        const order = ['1분기', '2분기', '3분기', '4분기'];
+        const rank = q => order.includes(q) ? order.indexOf(q) : order.length;
+        return rank(a) - rank(b) || a.localeCompare(b, 'ko');
+    }).forEach(([qName, days]) => {
         let qSection = null;
         let qContent = left;
         if (showQuarterAccordion) {
@@ -110,7 +114,16 @@ function renderStep1(searchTerm = "") {
             qSection.append(qBtn, qContent);
         }
 
-        Object.entries(days).forEach(([dName, animes]) => {
+        Object.entries(days).sort(([a], [b]) => {
+            const english = ['mondays', 'tuesdays', 'wednesdays', 'thursdays', 'fridays', 'saturdays', 'sundays', 'anomaly', 'web', 'cinema'];
+            const korean = ['월요일', '화요일', '수요일', '목요일', '금요일', '토요일', '일요일', '변칙편성', '웹', '극장판'];
+            const rank = value => {
+                const key = String(value).toLowerCase().replace(/\s/g, '');
+                const index = Math.max(english.indexOf(key), korean.indexOf(key));
+                return index < 0 ? 10 : index;
+            };
+            return rank(a) - rank(b) || a.localeCompare(b, 'ko');
+        }).forEach(([dName, animes]) => {
             const dBtn = document.createElement("button");
             dBtn.className = "day-btn";
 

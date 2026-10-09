@@ -7,7 +7,7 @@
   const dayLabels = {
     Mondays: "월요일", Tuesdays: "화요일", Wednesdays: "수요일", Thursdays: "목요일",
     Fridays: "금요일", Saturdays: "토요일", Sundays: "일요일", Anomaly: "변칙 편성",
-    Web: "웹", Unknown: "기타", Cinema: "극장판"
+    Web: "웹", Cinema: "극장판", Unknown: "기타"
   };
   const dayKeys = Object.keys(dayLabels);
   const quarterOrder = ["1분기", "2분기", "3분기", "4분기", "변칙 편성", "기타"];

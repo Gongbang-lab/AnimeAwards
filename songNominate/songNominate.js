@@ -12,66 +12,31 @@ const dayMap = {
 
 // 유틸: 유튜브 썸네일 추출
 function ytThumb(url) {
-    if (!url) return "../images/default.png";
+    if (!url) return "../image/no-image.svg";
     let videoId = "";
     if (url.includes("youtu.be/")) videoId = url.split("youtu.be/")[1].split("?")[0];
     else if (url.includes("v=")) videoId = url.split("v=")[1].split("&")[0];
-    return videoId ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` : "../images/default.png";
+    return videoId ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` : "../image/no-image.svg";
 }
 
 function getMergedSongData(themeType) {
-    const targetType = themeType === "opening" ? "op" : "ed";
+    const { year, quarter, quarters } = SeasonFilter.getSelectedSeason();
+    const type = themeType === 'opening' ? 'op' : 'ed';
+    const works = buildSongBundles(AnimeSongs, AnimeList, year, quarter, type);
     const result = {};
-
-    const animeInfoBySeason = new Map();
-    const animeInfoByQuarter = new Map();
-    const animeInfoById = new Map();
-    if (typeof AnimeList !== 'undefined' && Array.isArray(AnimeList)) {
-        SeasonFilter.expandQuarters(AnimeList).forEach(anime => {
-            const id = String(anime.id);
-            const seasonKey = `${id}|${anime.year}|${anime.quarter}`;
-            animeInfoBySeason.set(seasonKey, anime);
-            animeInfoByQuarter.set(`${id}|${anime.quarter}`, anime);
-            if (!animeInfoById.has(id)) animeInfoById.set(id, anime);
-        });
-    } else {
-        console.error("AnimeList 데이터를 찾을 수 없습니다.");
-        return {};
-    }
-
-    // ✅ 수정: AnimeSongs_2026 → AnimeSongs(별칭)
-    if (typeof AnimeSongs === 'undefined' || !Array.isArray(AnimeSongs)) return {};
-
-    // ✅ 추가: SeasonFilter 적용
-    const seasonFilteredSongs = SeasonFilter.filterAnimeList(AnimeSongs);
-
-    seasonFilteredSongs.forEach(group => {
-        const baseInfo = animeInfoBySeason.get(`${group.id}|${group.year}|${group.quarter}`)
-            || animeInfoByQuarter.get(`${group.id}|${group.quarter}`)
-            || animeInfoById.get(String(group.id));
-        const quarterKey = group.quarter || "기타";
-
-        (Array.isArray(group.songs) ? group.songs : []).forEach((song, index) => {
-            const songType = String(song?.type || "").toLowerCase();
-            const songTitle = String(song?.title || "").trim();
-            if (songType === targetType && songTitle) {
-                if (!result[quarterKey]) result[quarterKey] = [];
-
-                result[quarterKey].push({
-                    uniqueId: `${group.id}-${songType}-${index}`,
-                    id: group.id,
-                    animeTitle: baseInfo?.title || group.animeTitle || `작품 ID ${group.id}`,
-                    title: songTitle,
-                    artist: String(song?.artist || ""),
-                    youtube: String(song?.youtube || ""),
-                    thumbnail: ytThumb(song?.youtube),
-                    day: baseInfo?.day || group.day || "기타",
-                    displayQuarter: quarterKey
+    for (const work of works) {
+        for (const track of work.tracks) {
+            const visibleQuarters = track.quarter.filter(q => !quarter || quarter === '모든 분기' || quarters.includes(q));
+            for (const q of visibleQuarters.length ? visibleQuarters : ['분기 확인 필요']) {
+                (result[q] ||= []).push({
+                    uniqueId: JSON.stringify([work.id, type, track.title, track.artist, track.youtube]),
+                    id: work.id, animeTitle: work.animeTitle, title: track.title,
+                    artist: track.artist, youtube: track.youtube, thumbnail: ytThumb(track.youtube),
+                    day: work.day, displayQuarter: q
                 });
             }
-        });
-    });
-
+        }
+    }
     return result;
 }
 
@@ -134,7 +99,11 @@ function renderFilteredList(query) {
     const selectedQuarter = SeasonFilter.getSelectedSeason().quarter;
     const showQuarterAccordion = SeasonFilter.showQuarterAccordion();
 
-    Object.entries(mergedData).forEach(([quarter, songs]) => {
+    Object.entries(mergedData).sort(([a], [b]) => {
+        const order = ['1분기', '2분기', '3분기', '4분기'];
+        const rank = q => order.includes(q) ? order.indexOf(q) : order.length;
+        return rank(a) - rank(b) || a.localeCompare(b, 'ko');
+    }).forEach(([quarter, songs]) => {
         const filteredSongs = songs.filter(song => 
             (song.animeTitle?.toLowerCase() || "").includes(query) || 
             (song.title?.toLowerCase() || "").includes(query) ||
@@ -165,7 +134,16 @@ function renderFilteredList(query) {
                 groupedByDay[song.day].push(song);
             });
 
-            Object.entries(groupedByDay).forEach(([day, daySongs]) => {
+            Object.entries(groupedByDay).sort(([a], [b]) => {
+            const english = ['mondays', 'tuesdays', 'wednesdays', 'thursdays', 'fridays', 'saturdays', 'sundays', 'anomaly', 'web', 'cinema'];
+            const korean = ['월요일', '화요일', '수요일', '목요일', '금요일', '토요일', '일요일', '변칙편성', '웹', '극장판'];
+            const rank = value => {
+                const key = String(value).toLowerCase().replace(/\s/g, '');
+                const index = Math.max(english.indexOf(key), korean.indexOf(key));
+                return index < 0 ? 10 : index;
+            };
+            return rank(a) - rank(b) || a.localeCompare(b, 'ko');
+        }).forEach(([day, daySongs]) => {
                 const dayBtn = document.createElement("button");
                 dayBtn.className = `day-btn ${isSearching ? "active" : ""}`;
                 dayBtn.innerHTML = `<span>${dayMap[day.toLowerCase()] || day}</span><i class="fas fa-plus"></i>`;
@@ -300,7 +278,7 @@ function renderSongStep2() {
         card.innerHTML = `
             <div class="card-badge">${displayQuarter}</div>
             <div class="card-thumb">
-                <img src="${song.thumbnail}" alt="thumbnail" onerror="this.src='../images/default.png'">
+                <img src="${song.thumbnail}" alt="thumbnail" onerror="this.src='../image/no-image.svg'">
                 <a class="play-overlay" href="${song.youtube}" target="_blank" onclick="event.stopPropagation();">
                     <span class="play-icon">▶</span>
                 </a>

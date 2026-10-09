@@ -71,7 +71,7 @@ const DAY_LABELS = {
     Fridays: '금요일', Saturdays: '토요일', Sundays: '일요일',
     Anomaly: '변칙 편성', Web: '웹', Unknown: '기타', Cinema: '극장판'
 };
-const DAY_ORDER = ['Mondays', 'Tuesdays', 'Wednesdays', 'Thursdays', 'Fridays', 'Saturdays', 'Sundays', 'Anomaly', 'Web', 'Unknown'];
+const DAY_ORDER = ['Mondays', 'Tuesdays', 'Wednesdays', 'Thursdays', 'Fridays', 'Saturdays', 'Sundays', 'Anomaly', 'Web', 'Cinema', 'Unknown'];
 
 function renderAnimeCards() {
     if (!animeCardGrid) return;

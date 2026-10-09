@@ -26,7 +26,7 @@ const DAY_LABELS = {
     "Fridays": "금요일", "Saturdays": "토요일", "Sundays": "일요일",
     "Anomaly": "변칙 편성", "Web": "웹", "Unknown": "기타", "Cinema": "극장판"
 };
-const DAY_KEYS = ["Mondays", "Tuesdays", "Wednesdays", "Thursdays", "Fridays", "Saturdays", "Sundays", "Anomaly", "Web", "Unknown", "Cinema"];
+const DAY_KEYS = ["Mondays", "Tuesdays", "Wednesdays", "Thursdays", "Fridays", "Saturdays", "Sundays", "Anomaly", "Web", "Cinema", "Unknown"];
 
 // 분기 정렬 순서 (데이터의 quarter가 이미 "1분기" 한글임)
 const QUARTER_ORDER = ["1분기", "2분기", "3분기", "4분기", "변칙 편성", "기타"];
