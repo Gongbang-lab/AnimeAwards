@@ -64,6 +64,7 @@
             if (anime.staff && anime.staff.scriptwriter && anime.staff.scriptwriter.length > 0) {
                 nominatedList.push({
                     id: anime.id,
+                    year: anime.year ?? 2026,
                     quarter: anime.quarter,
                     title: anime.title,
                     thumbnail: `${anime.thumbnail}`,
@@ -73,7 +74,7 @@
             }
         });
 
-        generatedContent = "var scriptwriterData = " + JSON.stringify(nominatedList, null, 2) + ";";
+        generatedContent = "var scriptwriterData_2026 = " + JSON.stringify(nominatedList, null, 2) + ";";
         document.getElementById('output').textContent = generatedContent;
         document.getElementById('status').textContent = `총 ${nominatedList.length}개의 작품(TVA/극장판 포함)이 추출되었습니다.`;
     }
@@ -97,7 +98,7 @@
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = 'scriptwriterData.js';
+        a.download = '2026animescriptwriterData.js';
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);

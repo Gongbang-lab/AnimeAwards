@@ -39,19 +39,6 @@ var scriptwriterData_2026 = [
     ]
   },
   {
-    "id": 19383,
-    "year": 2026,
-    "quarter": "1분기",
-    "title": "야미시바이 16기",
-    "thumbnail": "image/animeimg/2026/Q1/야미시바이.webp",
-    "studio": [
-      "ILCA"
-    ],
-    "scriptwriter": [
-      "구마모토 히로무"
-    ]
-  },
-  {
     "id": 63019,
     "year": 2026,
     "quarter": "1분기",
@@ -82,7 +69,10 @@ var scriptwriterData_2026 = [
   {
     "id": 63667,
     "year": 2026,
-    "quarter": "2분기",
+    "quarter": [
+      "2분기",
+      "4분기"
+    ],
     "title": "마법의 자매 루루토리리",
     "thumbnail": "image/animeimg/2026/Q2/마법의 자매 루루토리리.webp",
     "studio": [
@@ -112,7 +102,7 @@ var scriptwriterData_2026 = [
     "title": "개진전 사무라이 트루퍼",
     "thumbnail": "image/animeimg/2026/Q3/개진전 사무라이 트루퍼.webp",
     "studio": [
-      "Sunrise"
+      "선라이즈"
     ],
     "scriptwriter": [
       "무토 쇼고"
@@ -215,7 +205,7 @@ var scriptwriterData_2026 = [
     "year": 2026,
     "quarter": "1분기",
     "title": "영화 러브 라이브! 니지가사키 학원 스쿨 아이돌 동호회 완결편 제2장",
-    "thumbnail": "image/cinema/2026/영화 러브 라이브! 니지가사키 학원 스쿨 아이돌 동호회 완결편 제2장.webp",
+    "thumbnail": "image/cinema/2026/영화 러브 라이브 니지가사키 학원 스쿨 아이돌 동호회 완결편 제2장.webp",
     "studio": [
       "선라이즈"
     ],
@@ -247,6 +237,84 @@ var scriptwriterData_2026 = [
     ],
     "scriptwriter": [
       "아라카와 나루히사"
+    ]
+  },
+  {
+    "id": 62615,
+    "year": 2026,
+    "quarter": [
+      "4분기"
+    ],
+    "title": "테츠료! meet with 철도무스메",
+    "thumbnail": "image/animeimg/2026/Q4/테츠료 meet with 철도무스메.webp",
+    "studio": [
+      "이스트 피쉬 스튜디오"
+    ],
+    "scriptwriter": [
+      "사츠키 아야"
+    ]
+  },
+  {
+    "id": 65009,
+    "year": 2026,
+    "quarter": [
+      "4분기"
+    ],
+    "title": "푸른 전승 웰시와 쉐다르",
+    "thumbnail": "image/animeimg/2026/Q4/푸른 전승 웰시와 쉐다르.webp",
+    "studio": [
+      "스튜디오 마스켓"
+    ],
+    "scriptwriter": [
+      "Tot"
+    ]
+  },
+  {
+    "id": 63764,
+    "year": 2026,
+    "quarter": [
+      "4분기"
+    ],
+    "title": "버텍스 포스",
+    "thumbnail": "image/animeimg/2026/Q4/버텍스 포스.webp",
+    "studio": [
+      "SMDE"
+    ],
+    "scriptwriter": [
+      "타카무라 카즈히로",
+      "스즈키 마사시"
+    ]
+  },
+  {
+    "id": 58735,
+    "year": 2026,
+    "quarter": [
+      "4분기"
+    ],
+    "title": "파리스 그린이 밝는 날에",
+    "thumbnail": "image/cinema/2026/파리스 그린이 밝는 날에.webp",
+    "studio": [
+      "아스믹 에이스",
+      "스튜디오 아웃트리거",
+      "Miyu Productions"
+    ],
+    "scriptwriter": [
+      "시노미야 요시토시"
+    ]
+  },
+  {
+    "id": 48820,
+    "year": 2026,
+    "quarter": [
+      "4분기"
+    ],
+    "title": "마법소녀 마도카☆마기카 <발푸르기스의 회천>",
+    "thumbnail": "image/cinema/2026/마법소녀 마도카마기카 발푸르기스의 회천.webp",
+    "studio": [
+      "샤프트"
+    ],
+    "scriptwriter": [
+      "우로부치 겐"
     ]
   }
 ];

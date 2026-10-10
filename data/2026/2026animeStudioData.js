@@ -1,4 +1,4 @@
-var AnimeStudioData_2026 = [
+var AnimeStudioData = [
   {
     "studio": "100studio",
     "studio_img": "image/studio/100studio.avif",
@@ -8,6 +8,15 @@ var AnimeStudioData_2026 = [
         "thumbnail": "image/animeimg/2026/Q3/블랙 토치.webp",
         "director": "우마비키 케이",
         "quarter": "3분기",
+        "year": 2026
+      },
+      {
+        "title": "주홍색 가면",
+        "thumbnail": "image/animeimg/2026/Q4/주홍색 가면.webp",
+        "director": "와타나베 테츠아키",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -20,14 +29,10 @@ var AnimeStudioData_2026 = [
         "title": "전생했더니 슬라임이었던 건에 대하여 4기",
         "thumbnail": "image/animeimg/2026/Q2/전생했더니 슬라임이었던 건에 대하여 4기.webp",
         "director": "츠다 나오카츠",
-        "quarter": "2분기",
-        "year": 2026
-      },
-      {
-        "title": "전생했더니 슬라임이었던 건에 대하여 4기",
-        "thumbnail": "image/animeimg/2026/Q2/전생했더니 슬라임이었던 건에 대하여 4기.webp",
-        "director": "츠다 나오카츠",
-        "quarter": "3분기",
+        "quarter": [
+          "2분기",
+          "3분기"
+        ],
         "year": 2026
       }
     ]
@@ -52,7 +57,7 @@ var AnimeStudioData_2026 = [
       },
       {
         "title": "여기는 내게 맡기고 먼저 가라고 말한 지 10년이 지났더니 전설이 되어 있었다.",
-        "thumbnail": "image/animeimg/2026/Q3/여기는 내게 맡기고 먼저 가라고 말한 지 10년이 지났더니 전설이 되어 있었다..webp",
+        "thumbnail": "image/animeimg/2026/Q3/여기는 내게 맡기고 먼저 가라고 말한 지 10년이 지났더니 전설이 되어 있었다.webp",
         "director": "칸베 히로유키",
         "quarter": "3분기",
         "year": 2026
@@ -86,6 +91,36 @@ var AnimeStudioData_2026 = [
     ]
   },
   {
+    "studio": "그라피니카",
+    "studio_img": "image/studio/그라피니카.avif",
+    "works": [
+      {
+        "title": "디즈니 트위스티드 원더랜드: 애니메이션",
+        "thumbnail": "image/animeimg/2026/Q4/디즈니 트위스티드 원더랜드 애니메이션.webp",
+        "director": "나토리 타카히로",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "studio": "니치카라인",
+    "studio_img": "image/studio/니치카라인.avif",
+    "works": [
+      {
+        "title": "BanG Dream! Ave Mujica prima aurora",
+        "thumbnail": "image/cinema/2026/BanG Dream Ave Mujica prima aurora.webp",
+        "director": "카키모토 코다이",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
+      }
+    ]
+  },
+  {
     "studio": "데즈카 프로덕션",
     "studio_img": "image/studio/데즈카 프로덕션.avif",
     "works": [
@@ -94,6 +129,15 @@ var AnimeStudioData_2026 = [
         "thumbnail": "image/animeimg/2026/Q1/소꿉친구와는 러브 코미디를 할 수 없어.webp",
         "director": "쿠와바라 사토시",
         "quarter": "1분기",
+        "year": 2026
+      },
+      {
+        "title": "쌀쌀맞은 사토 양이 나에게만 상냥하다",
+        "thumbnail": "image/animeimg/2026/Q4/쌀쌀맞은 사토 양이 나에게만 상냥하다.webp",
+        "director": "요시무라 후미히로",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -155,6 +199,15 @@ var AnimeStudioData_2026 = [
         "director": "이바타 쇼타",
         "quarter": "3분기",
         "year": 2026
+      },
+      {
+        "title": "안녕하세요. 반한 사람에게 사랑의 묘약을 의뢰받은 마녀입니다.",
+        "thumbnail": "image/animeimg/2026/Q4/안녕하세요 반한 사람에게 사랑의 묘약을 의뢰받은 마녀입니다.webp",
+        "director": "쿠사카와 케이조",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
       }
     ]
   },
@@ -189,6 +242,24 @@ var AnimeStudioData_2026 = [
         "director": "야마모토 히데요",
         "quarter": "3분기",
         "year": 2026
+      },
+      {
+        "title": "수왕무신 댄디바인",
+        "thumbnail": "image/animeimg/2026/Q4/수왕무신 댄디바인.webp",
+        "director": "소우 키",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
+      },
+      {
+        "title": "아저씨는 귀여운 것을 좋아해",
+        "thumbnail": "image/animeimg/2026/Q4/아저씨는 귀여운 것을 좋아해.webp",
+        "director": "마키노 토모에",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
       }
     ]
   },
@@ -209,6 +280,21 @@ var AnimeStudioData_2026 = [
         "director": "나가토모 타카요시",
         "quarter": "3분기",
         "year": 2026
+      }
+    ]
+  },
+  {
+    "studio": "로커스 스튜디오",
+    "studio_img": "image/studio/로커스 스튜디오.avif",
+    "works": [
+      {
+        "title": "전자오락수호대",
+        "thumbnail": "image/cinema/2027/전자오락수호대.webp",
+        "director": "엄영식",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2027
       }
     ]
   },
@@ -275,6 +361,13 @@ var AnimeStudioData_2026 = [
         "director": "센보 료스케",
         "quarter": "2분기",
         "year": 2026
+      },
+      {
+        "title": "무자각한 성녀는 오늘도 무의식적으로 힘을 흘린다",
+        "thumbnail": "image/animeimg/2026/Q3/무자각한 성녀는 오늘도 무의식적으로 힘을 흘린다.webp",
+        "director": "노시타니 미츠타카",
+        "quarter": "3분기",
+        "year": 2026
       }
     ]
   },
@@ -319,7 +412,10 @@ var AnimeStudioData_2026 = [
         "title": "마계학교 이루마군 4기",
         "thumbnail": "image/animeimg/2026/Q2/마계학교 이루마군 4기.webp",
         "director": "모리와키 마코토",
-        "quarter": "2분기",
+        "quarter": [
+          "2분기",
+          "3분기"
+        ],
         "year": 2026
       },
       {
@@ -330,17 +426,29 @@ var AnimeStudioData_2026 = [
         "year": 2026
       },
       {
-        "title": "마계학교 이루마군 4기",
-        "thumbnail": "image/animeimg/2026/Q2/마계학교 이루마군 4기.webp",
-        "director": "모리와키 마코토",
-        "quarter": "3분기",
+        "title": "아이엠스타!×프리파라 더 무비 -만남의 기적!-",
+        "thumbnail": "image/cinema/2026/아이엠스타프리파라 더 무비 만남의 기적.webp",
+        "director": "오오카와 타카히로",
+        "quarter": "1분기",
         "year": 2026
       },
       {
-        "title": "아이엠스타!×프리파라 더 무비 -만남의 기적!-",
-        "thumbnail": "image/cinema/2026/아이엠스타프리파라 더 무비 만남의 기적-.webp",
-        "director": "오오카와 타카히로",
-        "quarter": "1분기"
+        "title": "배틀 스피리츠 [Re] 절계의 하늘",
+        "thumbnail": "image/animeimg/2026/Q4/배틀 스피리츠 Re 절계의 하늘.webp",
+        "director": "쿠도 마사시",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
+      },
+      {
+        "title": "개구리 중사 케로로☆",
+        "thumbnail": "image/animeimg/2026/Q4/개구리 중사 케로로.webp",
+        "director": "콘도 노부히로",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
       }
     ]
   },
@@ -379,14 +487,10 @@ var AnimeStudioData_2026 = [
         "title": "황천의 츠가이",
         "thumbnail": "image/animeimg/2026/Q2/황천의 츠가이.webp",
         "director": "안도 마사히로",
-        "quarter": "2분기",
-        "year": 2026
-      },
-      {
-        "title": "황천의 츠가이",
-        "thumbnail": "image/animeimg/2026/Q2/황천의 츠가이.webp",
-        "director": "안도 마사히로",
-        "quarter": "3분기",
+        "quarter": [
+          "2분기",
+          "3분기"
+        ],
         "year": 2026
       },
       {
@@ -433,6 +537,30 @@ var AnimeStudioData_2026 = [
     ]
   },
   {
+    "studio": "브리지",
+    "studio_img": "image/studio/브리지.avif",
+    "works": [
+      {
+        "title": "세계 최강의 마녀, 시작했습니다",
+        "thumbnail": "image/animeimg/2026/Q4/세계 최강의 마녀 시작했습니다.webp",
+        "director": "후루타 조지",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
+      },
+      {
+        "title": "호텔 인휴먼즈 2기",
+        "thumbnail": "image/animeimg/2026/Q4/호텔 인휴먼즈 2기.webp",
+        "director": "아미노 테츠로",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
+      }
+    ]
+  },
+  {
     "studio": "사이언스 SARU",
     "studio_img": "image/studio/사이언스 SARU.avif",
     "works": [
@@ -458,9 +586,16 @@ var AnimeStudioData_2026 = [
     "works": [
       {
         "title": "월드 이즈 댄싱",
-        "thumbnail": "image/animeimg/2026/Q2/월드 이즈 댄싱.webp",
+        "thumbnail": "image/animeimg/2026/Q3/월드 이즈 댄싱.webp",
         "director": "쿠로야나기 토시마사",
-        "quarter": "2분기",
+        "quarter": "3분기",
+        "year": 2026
+      },
+      {
+        "title": "극장판 치이카와 인어 섬의 비밀",
+        "thumbnail": "image/cinema/2026/극장판 치이카와 인어 섬의 비밀.webp",
+        "director": "오이카와 케이",
+        "quarter": "3분기",
         "year": 2026
       }
     ]
@@ -476,11 +611,50 @@ var AnimeStudioData_2026 = [
         "quarter": "2분기",
         "year": 2026
       },
-            {
+      {
         "title": "BanG Dream! YUME∞MITA",
         "thumbnail": "image/animeimg/2026/Q3/BanG Dream! YUME∞MITA.webp",
         "director": "우메츠 토모미",
         "quarter": "3분기",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "studio": "색연필 애니메이션",
+    "studio_img": "image/studio/색연필 애니메이션.avif",
+    "works": [
+      {
+        "title": "자금·어묘방",
+        "thumbnail": "image/animeimg/2025/Q4/자금어묘방.webp",
+        "director": "덩즈웨이",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2025
+      }
+    ]
+  },
+  {
+    "studio": "샤프트",
+    "studio_img": "image/studio/샤프트.avif",
+    "works": [
+      {
+        "title": "풀 나이트",
+        "thumbnail": "image/animeimg/2026/Q4/풀 나이트.webp",
+        "director": "유카와 아츠유키",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
+      },
+      {
+        "title": "마법소녀 마도카☆마기카 <발푸르기스의 회천>",
+        "thumbnail": "image/cinema/2026/마법소녀 마도카마기카 발푸르기스의 회천.webp",
+        "director": "미야모토 유키히로",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -500,7 +674,17 @@ var AnimeStudioData_2026 = [
         "title": "마오",
         "thumbnail": "image/animeimg/2026/Q2/마오.webp",
         "director": "사토 테루오",
-        "quarter": "2분기",
+        "quarter": [
+          "2분기",
+          "3분기"
+        ],
+        "year": 2026
+      },
+      {
+        "title": "개진전 사무라이 트루퍼",
+        "thumbnail": "image/animeimg/2026/Q3/개진전 사무라이 트루퍼.webp",
+        "director": "후지타 요이치",
+        "quarter": "3분기",
         "year": 2026
       },
       {
@@ -511,23 +695,19 @@ var AnimeStudioData_2026 = [
         "year": 2026
       },
       {
-        "title": "마오",
-        "thumbnail": "image/animeimg/2026/Q2/마오.webp",
-        "director": "사토 테루오",
-        "quarter": "3분기",
+        "title": "영화 러브 라이브! 니지가사키 학원 스쿨 아이돌 동호회 완결편 제2장",
+        "thumbnail": "image/cinema/2026/영화 러브 라이브 니지가사키 학원 스쿨 아이돌 동호회 완결편 제2장.webp",
+        "director": "카와무라 토모유키",
+        "quarter": "1분기",
         "year": 2026
       },
       {
-        "title": "영화 러브 라이브! 니지가사키 학원 스쿨 아이돌 동호회 완결편 제2장",
-        "thumbnail": "image/cinema/2026/영화 러브 라이브! 니지가사키 학원 스쿨 아이돌 동호회 완결편 제2장.webp",
-        "director": "카와무라 토모유키",
-        "quarter": "1분기"
-      },
-            {
-        "title": "개진전 사무라이 트루퍼",
-        "thumbnail": "image/animeimg/2026/Q3/개진전 사무라이 트루퍼.webp",
-        "director": "후지타 요이치",
-        "quarter": "3분기",
+        "title": "풀 나이트",
+        "thumbnail": "image/animeimg/2026/Q4/풀 나이트.webp",
+        "director": "유카와 아츠유키",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -635,6 +815,15 @@ var AnimeStudioData_2026 = [
         "director": "카와세 토시후미",
         "quarter": "3분기",
         "year": 2026
+      },
+      {
+        "title": "바람의 저편",
+        "thumbnail": "image/animeimg/2026/Q4/바람의 저편.webp",
+        "director": "아베 노리유키",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
       }
     ]
   },
@@ -659,6 +848,21 @@ var AnimeStudioData_2026 = [
     ]
   },
   {
+    "studio": "스튜디오 마스켓",
+    "studio_img": "image/studio/스튜디오 마스켓.avif",
+    "works": [
+      {
+        "title": "푸른 전승 웰시와 쉐다르",
+        "thumbnail": "image/animeimg/2026/Q4/푸른 전승 웰시와 쉐다르.webp",
+        "director": "호리우치 나오키",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
+      }
+    ]
+  },
+  {
     "studio": "스튜디오 바인드",
     "studio_img": "image/studio/스튜디오 바인드.avif",
     "works": [
@@ -667,6 +871,21 @@ var AnimeStudioData_2026 = [
         "thumbnail": "image/animeimg/2026/Q3/무직전생 Ⅲ ~이세계에 갔으면 최선을 다한다~.webp",
         "director": "시부야 료스케",
         "quarter": "3분기",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "studio": "스튜디오 아웃트리거",
+    "studio_img": "image/studio/스튜디오 아웃트리거.avif",
+    "works": [
+      {
+        "title": "파리스 그린이 밝는 날에",
+        "thumbnail": "image/cinema/2026/파리스 그린이 밝는 날에.webp",
+        "director": "시노미야 요시토시",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -692,7 +911,8 @@ var AnimeStudioData_2026 = [
         "title": "끝이 없는 스칼렛",
         "thumbnail": "image/cinema/2026/끝이 없는 스칼렛.webp",
         "director": "호소다 마모루",
-        "quarter": "1분기"
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -726,6 +946,30 @@ var AnimeStudioData_2026 = [
         "director": "쿠즈야 나오유키",
         "quarter": "3분기",
         "year": 2026
+      },
+      {
+        "title": "#좀비를 찾습니다",
+        "thumbnail": "image/animeimg/2026/Q4/좀비를 찾습니다.webp",
+        "director": "우네 신야",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "studio": "스튜디오 팔레트",
+    "studio_img": "image/studio/스튜디오 팔레트.avif",
+    "works": [
+      {
+        "title": "공포 스쿨",
+        "thumbnail": "image/animeimg/2026/Q4/공포 스쿨.webp",
+        "director": "이나바 유키",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
       }
     ]
   },
@@ -750,7 +994,19 @@ var AnimeStudioData_2026 = [
         "title": "마법의 자매 루루토리리",
         "thumbnail": "image/animeimg/2026/Q2/마법의 자매 루루토리리.webp",
         "director": "도게 신타로",
-        "quarter": "2분기",
+        "quarter": [
+          "2분기",
+          "4분기"
+        ],
+        "year": 2026
+      },
+      {
+        "title": "블랙 클로버 2nd Season",
+        "thumbnail": "image/animeimg/2026/Q4/블랙 클로버 2nd Season.webp",
+        "director": "타네무라 아야타카",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -764,6 +1020,15 @@ var AnimeStudioData_2026 = [
         "thumbnail": "image/animeimg/2026/Q2/쿠지마 노래하면 집이 파다닥.webp",
         "director": "노마타 노리유키",
         "quarter": "2분기",
+        "year": 2026
+      },
+      {
+        "title": "도원암귀 ~일광·화엄 폭포 편~",
+        "thumbnail": "image/animeimg/2026/Q4/도원암귀 일광화엄 폭포 편.webp",
+        "director": "노나카 아토",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -799,6 +1064,15 @@ var AnimeStudioData_2026 = [
         "director": "무로야 야스시",
         "quarter": "2분기",
         "year": 2026
+      },
+      {
+        "title": "얼음 성벽 2기",
+        "thumbnail": "image/animeimg/2026/Q4/얼음 성벽 2기.webp",
+        "director": "만큐",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
       }
     ]
   },
@@ -811,6 +1085,30 @@ var AnimeStudioData_2026 = [
         "thumbnail": "image/animeimg/2026/Q3/이거 그리고 죽어.webp",
         "director": "아카기 히로아키",
         "quarter": "3분기",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "studio": "아르보 애니메이션",
+    "studio_img": "image/studio/아르보 애니메이션.avif",
+    "works": [
+      {
+        "title": "초능력 순경! 쵸죠 선배",
+        "thumbnail": "image/animeimg/2026/Q4/초능력 순경 쵸죠 선배.webp",
+        "director": "야마모토 준이치",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
+      },
+      {
+        "title": "귀환자의 마법은 특별해야 합니다 2기",
+        "thumbnail": "image/animeimg/2026/Q4/귀환자의 마법은 특별해야 합니다 2기.webp",
+        "director": "카와구치 타이시",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -849,6 +1147,21 @@ var AnimeStudioData_2026 = [
     ]
   },
   {
+    "studio": "아스믹 에이스",
+    "studio_img": "image/studio/아스믹 에이스.avif",
+    "works": [
+      {
+        "title": "파리스 그린이 밝는 날에",
+        "thumbnail": "image/cinema/2026/파리스 그린이 밝는 날에.webp",
+        "director": "시노미야 요시토시",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
+      }
+    ]
+  },
+  {
     "studio": "아시 프로덕션",
     "studio_img": "image/studio/아시 프로덕션.avif",
     "works": [
@@ -864,6 +1177,21 @@ var AnimeStudioData_2026 = [
         "thumbnail": "image/animeimg/2026/Q2/자칭 악역 영애인 약혼자 관찰기록.webp",
         "director": "야마모토 준이치",
         "quarter": "2분기",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "studio": "아일",
+    "studio_img": "image/studio/아일.avif",
+    "works": [
+      {
+        "title": "세계 최강의 마녀, 시작했습니다",
+        "thumbnail": "image/animeimg/2026/Q4/세계 최강의 마녀 시작했습니다.webp",
+        "director": "후루타 조지",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -906,8 +1234,8 @@ var AnimeStudioData_2026 = [
         "year": 2026
       },
       {
-        "title": "비스타즈 파이널 시즌",
-        "thumbnail": "image/animeimg/2026/Q1/비스타즈 파이널 시즌.webp",
+        "title": "비스타즈 마지막 시즌",
+        "thumbnail": "image/animeimg/2026/Q1/비스타즈 마지막 시즌.webp",
         "director": "마츠미 신이치",
         "quarter": "1분기",
         "year": 2026
@@ -923,6 +1251,21 @@ var AnimeStudioData_2026 = [
         "thumbnail": "image/animeimg/2026/Q1/깨끗하게 해주시겠어요.webp",
         "director": "오오니시 켄타",
         "quarter": "1분기",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "studio": "와오월드",
+    "studio_img": "image/studio/와오월드.avif",
+    "works": [
+      {
+        "title": "야생의 라스트 보스가 나타났다! 제2기",
+        "thumbnail": "image/animeimg/2026/Q4/야생의 라스트 보스가 나타났다 제2기.webp",
+        "director": "호리우치 유야",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -970,6 +1313,15 @@ var AnimeStudioData_2026 = [
         "director": "하츠미 코이치",
         "quarter": "2분기",
         "year": 2026
+      },
+      {
+        "title": "디즈니 트위스티드 원더랜드: 애니메이션",
+        "thumbnail": "image/animeimg/2026/Q4/디즈니 트위스티드 원더랜드 애니메이션.webp",
+        "director": "나토리 타카히로",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
       }
     ]
   },
@@ -989,6 +1341,15 @@ var AnimeStudioData_2026 = [
         "thumbnail": "image/animeimg/2026/Q3/대역 영애를 구한 것은 냉혹 무자비한 얼음 왕자의 사랑이었습니다.webp",
         "director": "모리시타 유스케",
         "quarter": "3분기",
+        "year": 2026
+      },
+      {
+        "title": "상처투성이 성녀로부터 복수를 담아 Season2",
+        "thumbnail": "image/animeimg/2026/Q4/상처투성이 성녀로부터 복수를 담아 Season2.webp",
+        "director": "후카세 사야",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -1010,6 +1371,30 @@ var AnimeStudioData_2026 = [
         "director": "히로시 이케하타",
         "quarter": "1분기",
         "year": 2026
+      },
+      {
+        "title": "테츠료! meet with 철도무스메",
+        "thumbnail": "image/animeimg/2026/Q4/테츠료 meet with 철도무스메.webp",
+        "director": "호시노 미스즈",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "studio": "일렉트릭 서커스",
+    "studio_img": "image/studio/일렉트릭 서커스.avif",
+    "works": [
+      {
+        "title": "푸른 상자 시즌 2",
+        "thumbnail": "image/animeimg/2026/Q4/푸른 상자 시즌 2.webp",
+        "director": "사코 다이스케",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
       }
     ]
   },
@@ -1022,6 +1407,15 @@ var AnimeStudioData_2026 = [
         "thumbnail": "image/animeimg/2026/Q2/공주 기사는 야만족의 신부.webp",
         "director": "타나카 타카유키",
         "quarter": "2분기",
+        "year": 2026
+      },
+      {
+        "title": "나약MAX 영애인데 수완가 약혼자와 내기를 하고 말았다",
+        "thumbnail": "image/animeimg/2026/Q4/나약MAX 영애인데 수완가 약혼자와 내기를 하고 말았다.webp",
+        "director": "나카니시 노부아키",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -1053,6 +1447,30 @@ var AnimeStudioData_2026 = [
     ]
   },
   {
+    "studio": "코나미 애니메이션",
+    "studio_img": "image/studio/코나미 애니메이션.avif",
+    "works": [
+      {
+        "title": "흉란영애 니아 리스톤 병약한 영애로 전생한 살신 무인의 화려한 무쌍담",
+        "thumbnail": "image/animeimg/2026/Q4/흉란영애 니아 리스톤 병약한 영애로 전생한 살신 무인의 화려한 무쌍담.webp",
+        "director": "나카니시 모토키",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
+      },
+      {
+        "title": "환상수호전",
+        "thumbnail": "image/animeimg/2026/Q4/환상수호전.webp",
+        "director": "사토 유조",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
+      }
+    ]
+  },
+  {
     "studio": "콜로리도",
     "studio_img": "image/studio/콜로리도.avif",
     "works": [
@@ -1074,6 +1492,15 @@ var AnimeStudioData_2026 = [
         "thumbnail": "image/animeimg/2026/Q3/안녕, 라라.webp",
         "director": "코이데 타쿠시",
         "quarter": "3분기",
+        "year": 2026
+      },
+      {
+        "title": "나의 행복한 결혼 특별편",
+        "thumbnail": "image/animeimg/2026/Q4/나의 행복한 결혼 특별편.webp",
+        "director": "쿠보타 타케히로",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -1147,7 +1574,32 @@ var AnimeStudioData_2026 = [
         "title": "극장판 총집편 걸즈 밴드 크라이 청춘광주곡",
         "thumbnail": "image/cinema/2026/극장판 총집편 걸즈 밴드 크라이 청춘광주곡.webp",
         "director": "사카이 카즈오",
-        "quarter": "1분기"
+        "quarter": "1분기",
+        "year": 2026
+      },
+      {
+        "title": "드래곤볼 슈퍼: 비루스",
+        "thumbnail": "image/animeimg/2026/Q4/드래곤볼 슈퍼 비루스.webp",
+        "director": "미상",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "studio": "트리거",
+    "studio_img": "image/studio/트리거.avif",
+    "works": [
+      {
+        "title": "사이버펑크: 엣지러너 2",
+        "thumbnail": "image/animeimg/2026/Q4/사이버펑크 엣지러너 2.webp",
+        "director": "이카라시 카이",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
       }
     ]
   },
@@ -1167,6 +1619,39 @@ var AnimeStudioData_2026 = [
         "thumbnail": "image/animeimg/2026/Q3/촌구석 아저씨, 검성이 되다 Ⅱ.webp",
         "director": "카즈미 아키오",
         "quarter": "3분기",
+        "year": 2026
+      },
+      {
+        "title": "FX 전사 쿠루미",
+        "thumbnail": "image/animeimg/2026/Q4/FX 전사 쿠루미.webp",
+        "director": "오가와 유키",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
+      },
+      {
+        "title": "학생회에도 구멍은 있다!",
+        "thumbnail": "image/animeimg/2026/Q4/학생회에도 구멍은 있다.webp",
+        "director": "타츠와 나오유키",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "studio": "폴리곤 픽쳐스",
+    "studio_img": "image/studio/폴리곤 픽쳐스.avif",
+    "works": [
+      {
+        "title": "TANK CHAIR -탱크체어-",
+        "thumbnail": "image/animeimg/2026/Q4/TANK CHAIR 탱크체어.webp",
+        "director": "요시히라 \"Tady\" 타다히로",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -1192,6 +1677,19 @@ var AnimeStudioData_2026 = [
         "title": "블리치 천년혈전 편 : 화진담",
         "thumbnail": "image/animeimg/2026/Q3/블리치 천년혈전 편 화진담.webp",
         "director": "타구치 토모히사",
+        "quarter": "3분기",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "studio": "피칸테 서커스",
+    "studio_img": "image/studio/피칸테 서커스.avif",
+    "works": [
+      {
+        "title": "무자각한 성녀는 오늘도 무의식적으로 힘을 흘린다",
+        "thumbnail": "image/animeimg/2026/Q3/무자각한 성녀는 오늘도 무의식적으로 힘을 흘린다.webp",
+        "director": "노시타니 미츠타카",
         "quarter": "3분기",
         "year": 2026
       }
@@ -1232,7 +1730,8 @@ var AnimeStudioData_2026 = [
         "title": "녹나무의 파수꾼",
         "thumbnail": "image/cinema/2026/녹나무의 파수꾼.webp",
         "director": "이토 토모히코",
-        "quarter": "1분기"
+        "quarter": "1분기",
+        "year": 2026
       }
     ]
   },
@@ -1270,6 +1769,36 @@ var AnimeStudioData_2026 = [
     ]
   },
   {
+    "studio": "AtoriE",
+    "studio_img": "image/studio/AtoriE.avif",
+    "works": [
+      {
+        "title": "다크서머너와 썸을 탔다",
+        "thumbnail": "image/animeimg/2026/Q4/다크서머너와 썸을 탔다.webp",
+        "director": "미야지마 세이야",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "studio": "Atra",
+    "studio_img": "image/studio/Atra.avif",
+    "works": [
+      {
+        "title": "로멜리아 전기",
+        "thumbnail": "image/animeimg/2026/Q4/로멜리아 전기.webp",
+        "director": "사이토 코지",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
+      }
+    ]
+  },
+  {
     "studio": "AXsiZ",
     "studio_img": "image/studio/AXsiZ.avif",
     "works": [
@@ -1278,6 +1807,21 @@ var AnimeStudioData_2026 = [
         "thumbnail": "image/animeimg/2026/Q2/자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season.webp",
         "director": "야마모토 타카시",
         "quarter": "2분기",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "studio": "BAKKKA",
+    "studio_img": "image/studio/BAKKKA.avif",
+    "works": [
+      {
+        "title": "전생 고블린인데 질문 있어?",
+        "thumbnail": "image/animeimg/2026/Q4/전생 고블린인데 질문 있어.webp",
+        "director": "카와하라 류타",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -1317,6 +1861,21 @@ var AnimeStudioData_2026 = [
         "thumbnail": "image/animeimg/2026/Q3/렛츠고 괴기조.webp",
         "director": "히라타 유타카",
         "quarter": "3분기",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "studio": "C2C",
+    "studio_img": "image/studio/C2C.avif",
+    "works": [
+      {
+        "title": "전생했더니 검이었습니다 Ⅱ",
+        "thumbnail": "image/animeimg/2026/Q4/전생했더니 검이었습니다 Ⅱ.webp",
+        "director": "이시히라 신지",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -1398,10 +1957,12 @@ var AnimeStudioData_2026 = [
     "studio_img": "image/studio/david production.avif",
     "works": [
       {
-        "title": "스틸 볼 런: 죠죠의 기묘한 모험 (2nd STAGE)",
-        "thumbnail": "image/animeimg/2026/Q3/스틸 볼 런 죠죠의 기묘한 모험 (2nd STAGE).webp",
-        "director": "키무라 야스히로",
-        "quarter": "3분기",
+        "title": "반딧불이의 혼례",
+        "thumbnail": "image/animeimg/2026/Q4/반딧불이의 혼례.webp",
+        "director": "카메이 타카히로",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -1421,7 +1982,10 @@ var AnimeStudioData_2026 = [
         "title": "스틸 볼 런: 죠죠의 기묘한 모험",
         "thumbnail": "image/animeimg/2026/Q1/스틸 볼 런.webp",
         "director": "타카하시 히데야",
-        "quarter": "1분기",
+        "quarter": [
+          "1분기",
+          "3분기"
+        ],
         "year": 2026
       }
     ]
@@ -1448,6 +2012,21 @@ var AnimeStudioData_2026 = [
         "thumbnail": "image/animeimg/2026/Q2/힘내라 나카무라 군.webp",
         "director": "우메키 아오이",
         "quarter": "2분기",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "studio": "E&H PRODUCTION",
+    "studio_img": "image/studio/E&H PRODUCTION.avif",
+    "works": [
+      {
+        "title": "마법기사 레이어스",
+        "thumbnail": "image/animeimg/2026/Q4/마법기사 레이어스.webp",
+        "director": "미우라 유이",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -1530,6 +2109,30 @@ var AnimeStudioData_2026 = [
         "director": "미우라 카즈야",
         "quarter": "3분기",
         "year": 2026
+      },
+      {
+        "title": "탐정은 이미 죽었다. Season2",
+        "thumbnail": "image/animeimg/2026/Q4/탐정은 이미 죽었다 Season2.webp",
+        "director": "쿠리하라 마나부",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "studio": "feel.",
+    "studio_img": "image/studio/feel.avif",
+    "works": [
+      {
+        "title": "치토세 군은 라무네 병 속에",
+        "thumbnail": "image/animeimg/2026/Q4/치토세 군은 라무네 병 속에.webp",
+        "director": "토쿠노 유지",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
       }
     ]
   },
@@ -1561,6 +2164,21 @@ var AnimeStudioData_2026 = [
     ]
   },
   {
+    "studio": "FelixFilm",
+    "studio_img": "image/studio/FelixFilm.avif",
+    "works": [
+      {
+        "title": "전생한 대성녀는 성녀임을 숨긴다",
+        "thumbnail": "image/animeimg/2026/Q4/전생한 대성녀는 성녀임을 숨긴다.webp",
+        "director": "마키노 토모에",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
+      }
+    ]
+  },
+  {
     "studio": "GoHands",
     "studio_img": "image/studio/GoHands.avif",
     "works": [
@@ -1568,7 +2186,10 @@ var AnimeStudioData_2026 = [
         "title": "추방 당한 전생 중기사는 게임 지식으로 무쌍한다",
         "thumbnail": "image/animeimg/2026/Q3/추방 당한 전생 중기사는 게임 지식으로 무쌍한다.webp",
         "director": "스즈키 신고",
-        "quarter": "3분기",
+        "quarter": [
+          "3분기",
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -1583,18 +2204,14 @@ var AnimeStudioData_2026 = [
         "director": "후쿠시마 토시노리",
         "quarter": "1분기",
         "year": 2026
-      }
-    ]
-  },
-  {
-    "studio": "ILCA",
-    "studio_img": "image/studio/ILCA.avif",
-    "works": [
+      },
       {
-        "title": "야미시바이 16기",
-        "thumbnail": "image/animeimg/2026/Q1/야미시바이.webp",
-        "director": "미상",
-        "quarter": "1분기",
+        "title": "신자 0명 여신님과 시작하는 이세계 공략",
+        "thumbnail": "image/animeimg/2026/Q4/신자 0명 여신님과 시작하는 이세계 공략.webp",
+        "director": "후쿠시마 토시노리",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -1608,6 +2225,15 @@ var AnimeStudioData_2026 = [
         "thumbnail": "image/animeimg/2026/Q3/대역 영애를 구한 것은 냉혹 무자비한 얼음 왕자의 사랑이었습니다.webp",
         "director": "모리시타 유스케",
         "quarter": "3분기",
+        "year": 2026
+      },
+      {
+        "title": "상처투성이 성녀로부터 복수를 담아 Season2",
+        "thumbnail": "image/animeimg/2026/Q4/상처투성이 성녀로부터 복수를 담아 Season2.webp",
+        "director": "후카세 사야",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -1662,6 +2288,33 @@ var AnimeStudioData_2026 = [
         "director": "후쿠시마 토시노리",
         "quarter": "3분기",
         "year": 2026
+      },
+      {
+        "title": "어떤 암부의 소녀공서",
+        "thumbnail": "image/animeimg/2026/Q4/어떤 암부의 소녀공서.webp",
+        "director": "나가이 타츠유키",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
+      },
+      {
+        "title": "템빨 ~아이템의 힘~",
+        "thumbnail": "image/animeimg/2026/Q4/템빨 아이템의 힘.webp",
+        "director": "코노 아야코",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
+      },
+      {
+        "title": "마로니에 왕국의 7인의 기사",
+        "thumbnail": "image/animeimg/2026/Q4/마로니에 왕국의 7인의 기사.webp",
+        "director": "사야마 키요코",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
       }
     ]
   },
@@ -1674,6 +2327,21 @@ var AnimeStudioData_2026 = [
         "thumbnail": "image/animeimg/2026/Q2/신의 정원이 딸린 쿠스노키 저택.webp",
         "director": "세키노 세키시게",
         "quarter": "2분기",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "studio": "KAYAC ANIMATION",
+    "studio_img": "image/studio/KAYAC ANIMATION.avif",
+    "works": [
+      {
+        "title": "수왕무신 댄디바인",
+        "thumbnail": "image/animeimg/2026/Q4/수왕무신 댄디바인.webp",
+        "director": "소우 키",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -1714,6 +2382,36 @@ var AnimeStudioData_2026 = [
         "thumbnail": "image/cinema/2026/극장판 암살교실 모두의 시간.webp",
         "director": "키타무라 마사키",
         "quarter": "3분기",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "studio": "LIDENFILMS",
+    "studio_img": "image/studio/LIDENFILMS.avif",
+    "works": [
+      {
+        "title": "도쿄 리벤저스: 삼천전쟁편",
+        "thumbnail": "image/animeimg/2026/Q4/도쿄 리벤저스 삼천전쟁편.webp",
+        "director": "코다이라 마키",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "studio": "M.S.C",
+    "studio_img": "image/studio/MSC.avif",
+    "works": [
+      {
+        "title": "신 테니스의 왕자 U-17 WORLD 결승 멤버 결정전",
+        "thumbnail": "image/animeimg/2026/Q4/신 테니스의 왕자 U17 WORLD 결승 멤버 결정전.webp",
+        "director": "토쿠모토 요시노부",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -1767,7 +2465,32 @@ var AnimeStudioData_2026 = [
         "title": "좀비 랜드 사가 유메긴가 파라다이스",
         "thumbnail": "image/cinema/2026/좀비 랜드 사가 유메긴가 파라다이스.webp",
         "director": "우다 코노스케",
-        "quarter": "1분기"
+        "quarter": "1분기",
+        "year": 2026
+      },
+      {
+        "title": "란마1/2 3기",
+        "thumbnail": "image/animeimg/2026/Q4/란마12 3기.webp",
+        "director": "우다 코노스케",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "studio": "Miyu Productions",
+    "studio_img": "image/studio/Miyu Productions.avif",
+    "works": [
+      {
+        "title": "파리스 그린이 밝는 날에",
+        "thumbnail": "image/cinema/2026/파리스 그린이 밝는 날에.webp",
+        "director": "시노미야 요시토시",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
       }
     ]
   },
@@ -1857,9 +2580,12 @@ var AnimeStudioData_2026 = [
       },
       {
         "title": "다이아몬드 에이스 actII -Second Season-",
-        "thumbnail": "image/animeimg/2026/Q2/다이아몬드 에이스 actII -Second Season-.webp",
+        "thumbnail": "image/animeimg/2026/Q2/다이아몬드 에이스 actII Second Season.webp",
         "director": "오오바 히데아키",
-        "quarter": "2분기",
+        "quarter": [
+          "2분기",
+          "4분기"
+        ],
         "year": 2026
       },
       {
@@ -1867,6 +2593,15 @@ var AnimeStudioData_2026 = [
         "thumbnail": "image/animeimg/2026/Q3/고양이와 용.webp",
         "director": "오진구",
         "quarter": "3분기",
+        "year": 2026
+      },
+      {
+        "title": "약사의 혼잣말 시즌 3",
+        "thumbnail": "image/animeimg/2026/Q4/약사의 혼잣말 시즌 3.webp",
+        "director": "후데사카 아키노리",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -1898,6 +2633,21 @@ var AnimeStudioData_2026 = [
     ]
   },
   {
+    "studio": "P.A.WORKS",
+    "studio_img": "image/studio/P.A.WORKS.avif",
+    "works": [
+      {
+        "title": "추방당한 치트 부여 마술사는 자유로운 세컨드 라이프를 구가한다 ~나는 무기뿐만 아니라, 모든 것에 『강화 포인트』를 부여할 수 있고, 언제든지 효과를 해제할 수 있는데, 남은 사람들은 괜찮아?~",
+        "thumbnail": "image/animeimg/2026/Q4/추방당한 치트 부여 마술사는 자유로운 세컨드 라이프를 구가한다 나는 무기뿐만 아니라 모든 것에 강화 포인트를 부여할 수 있고 언제든지 효과를 해제할 수 있는데 남은 사람들은 괜찮아.webp",
+        "director": "혼마 슈",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
+      }
+    ]
+  },
+  {
     "studio": "PINE JAM",
     "studio_img": "image/studio/PINE JAM.avif",
     "works": [
@@ -1924,6 +2674,21 @@ var AnimeStudioData_2026 = [
     ]
   },
   {
+    "studio": "Production +h.",
+    "studio_img": "image/studio/Production +h.avif",
+    "works": [
+      {
+        "title": "다크 머신 디 애니메이션",
+        "thumbnail": "image/animeimg/2026/Q4/다크 머신 디 애니메이션.webp",
+        "director": "테라다 카즈미",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
+      }
+    ]
+  },
+  {
     "studio": "Production I.G",
     "studio_img": "image/studio/Production I.G.avif",
     "works": [
@@ -1939,6 +2704,15 @@ var AnimeStudioData_2026 = [
         "thumbnail": "image/animeimg/2026/Q3/스타워즈 비전스 PRESENTS - 아홉 번째 제다이.webp",
         "director": "타다 슌스케",
         "quarter": "3분기",
+        "year": 2026
+      },
+      {
+        "title": "데몬즈 크레스트",
+        "thumbnail": "image/animeimg/2026/Q4/데몬즈 크레스트.webp",
+        "director": "우시로 신지",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -1991,7 +2765,23 @@ var AnimeStudioData_2026 = [
         "title": "녹나무의 파수꾼",
         "thumbnail": "image/cinema/2026/녹나무의 파수꾼.webp",
         "director": "이토 토모히코",
-        "quarter": "1분기"
+        "quarter": "1분기",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "studio": "Quad",
+    "studio_img": "image/studio/Quad.avif",
+    "works": [
+      {
+        "title": "여친의 친구",
+        "thumbnail": "image/animeimg/2026/Q4/여친의 친구.webp",
+        "director": "안도 타카시",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
       }
     ]
   },
@@ -2062,21 +2852,26 @@ var AnimeStudioData_2026 = [
         "title": "신의 물방울",
         "thumbnail": "image/animeimg/2026/Q2/신의 물방울.webp",
         "director": "이토소 켄지",
-        "quarter": "2분기",
+        "quarter": [
+          "2분기",
+          "3분기"
+        ],
         "year": 2026
       },
       {
-        "title": "신의 물방울",
-        "thumbnail": "image/animeimg/2026/Q2/신의 물방울.webp",
-        "director": "이토소 켄지",
-        "quarter": "3분기",
+        "title": "사이렌",
+        "thumbnail": "image/animeimg/2026/Q4/사이렌.webp",
+        "director": "오노 카츠미",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
   },
   {
     "studio": "SIGNAL.MD",
-    "studio_img": "image/studio/SignalMD.avif",
+    "studio_img": "image/studio/SIGNALMD.avif",
     "works": [
       {
         "title": "아름다운 그대에게",
@@ -2116,7 +2911,34 @@ var AnimeStudioData_2026 = [
         "title": "요자쿠라 일가의 대작전 제2기",
         "thumbnail": "image/animeimg/2026/Q2/요자쿠라 일가의 대작전 제2기.webp",
         "director": "미나토 미라이",
-        "quarter": "2분기",
+        "quarter": [
+          "2분기",
+          "4분기"
+        ],
+        "year": 2026
+      },
+      {
+        "title": "사사키와 피짱 시즌 2",
+        "thumbnail": "image/animeimg/2026/Q4/사사키와 피짱 시즌 2.webp",
+        "director": "이베 유시",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "studio": "SMDE",
+    "studio_img": "image/studio/SMDE.avif",
+    "works": [
+      {
+        "title": "버텍스 포스",
+        "thumbnail": "image/animeimg/2026/Q4/버텍스 포스.webp",
+        "director": "타카무라 카즈히로",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -2130,6 +2952,15 @@ var AnimeStudioData_2026 = [
         "thumbnail": "image/animeimg/2026/Q2/최강의 왕, 두 번째 인생에는 무엇을 하는가 시즌 2.webp",
         "director": "모토나가 케이타로",
         "quarter": "2분기",
+        "year": 2026
+      },
+      {
+        "title": "눈을 떴더니 최강 무장과 우주선을 가지고 있어서, 집 한채를 목표로 용병으로 자유롭게 살고 싶다",
+        "thumbnail": "image/animeimg/2026/Q4/눈을 떴더니 최강 무장과 우주선을 가지고 있어서 집 한채를 목표로 용병으로 자유롭게 살고 싶다.webp",
+        "director": "나가하마 노리히코",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -2163,6 +2994,21 @@ var AnimeStudioData_2026 = [
         "thumbnail": "image/animeimg/2026/Q2/큰 여자는 좋아하세요.webp",
         "director": "와라이 소타",
         "quarter": "2분기",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "studio": "Studio Houkiboshi",
+    "studio_img": "image/studio/Studio Houkiboshi.avif",
+    "works": [
+      {
+        "title": "낯가림 심한 미망인 설녀와 저주의 반지",
+        "thumbnail": "image/animeimg/2026/Q4/낯가림 심한 미망인 설녀와 저주의 반지.webp",
+        "director": "코가 카즈오미",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -2214,8 +3060,26 @@ var AnimeStudioData_2026 = [
       {
         "title": "화식조 우슈보로토비구미",
         "thumbnail": "image/animeimg/2026/Q1/화식조 우슈보로토비구미.webp",
-        "director": "카메가키 하지메(총)",
+        "director": "카메가키 하지메",
         "quarter": "1분기",
+        "year": 2026
+      },
+      {
+        "title": "마법소녀 육성계획 restart",
+        "thumbnail": "image/animeimg/2026/Q4/마법소녀 육성계획 restart.webp",
+        "director": "하시모토 히로유키",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
+      },
+      {
+        "title": "빌려준 마력은 【리볼빙】으로 강제징수",
+        "thumbnail": "image/animeimg/2026/Q4/빌려준 마력은 리볼빙으로 강제징수.webp",
+        "director": "타마노 타카히로",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -2257,6 +3121,15 @@ var AnimeStudioData_2026 = [
         "thumbnail": "image/animeimg/2026/Q2/여친, 빌리겠습니다 5기.webp",
         "director": "코가 카즈오미",
         "quarter": "2분기",
+        "year": 2026
+      },
+      {
+        "title": "아오아시 Season2",
+        "thumbnail": "image/animeimg/2026/Q4/아오아시 Season2.webp",
+        "director": "요코야마 카즈키",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -2335,21 +3208,19 @@ var AnimeStudioData_2026 = [
         "title": "Re:제로부터 시작하는 이세계 생활 4기",
         "thumbnail": "image/animeimg/2026/Q2/Re 제로부터 시작하는 이세계 생활 4기.webp",
         "director": "시노하라 마사히로",
-        "quarter": "2분기",
+        "quarter": [
+          "2분기",
+          "3분기"
+        ],
         "year": 2026
       },
       {
-        "title": "Re:제로부터 시작하는 이세계 생활 4기",
-        "thumbnail": "image/animeimg/2026/Q3/Re 제로부터 시작하는 이세계 생활 4기.webp",
-        "director": "시노하라 마사히로",
-        "quarter": "3분기",
-        "year": 2026
-      },
-      {
-        "title": "Re:제로부터 시작하는 이세계 생활 4기",
-        "thumbnail": "image/animeimg/2026/Q2/Re 제로부터 시작하는 이세계 생활 4기.webp",
-        "director": "시노하라 마사히로",
-        "quarter": "3분기",
+        "title": "매지컬★익스플로러",
+        "thumbnail": "image/animeimg/2026/Q4/매지컬익스플로러.webp",
+        "director": "오오하시 카즈키",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -2369,7 +3240,10 @@ var AnimeStudioData_2026 = [
         "title": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
         "thumbnail": "image/animeimg/2026/Q2/책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~.webp",
         "director": "이와사키 요시아키",
-        "quarter": "2분기",
+        "quarter": [
+          "2분기",
+          "3분기"
+        ],
         "year": 2026
       },
       {
@@ -2377,13 +3251,6 @@ var AnimeStudioData_2026 = [
         "thumbnail": "image/animeimg/2026/Q2/춘하추동 대행자 봄의 춤.webp",
         "director": "야마모토 켄",
         "quarter": "2분기",
-        "year": 2026
-      },
-      {
-        "title": "책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~",
-        "thumbnail": "image/animeimg/2026/Q2/책벌레의 하극상 ~사서가 되기 위해서라면 뭐든지 할 수 있어~.webp",
-        "director": "이와사키 요시아키",
-        "quarter": "3분기",
         "year": 2026
       }
     ]
@@ -2421,10 +3288,19 @@ var AnimeStudioData_2026 = [
         "year": 2026
       },
       {
-        "title": "뒤에 있는 카무이 씨",
+        "title": "후방주의 카무이씨",
         "thumbnail": "image/animeimg/2026/Q3/뒤에 있는 카무이 씨.webp",
         "director": "츠쿠모 타쿠미",
         "quarter": "3분기",
+        "year": 2026
+      },
+      {
+        "title": "빙검의 마술사가 세계를 다스린다 Ⅱ",
+        "thumbnail": "image/animeimg/2026/Q4/빙검의 마술사가 세계를 다스린다 Ⅱ.webp",
+        "director": "타카타 마사히로",
+        "quarter": [
+          "4분기"
+        ],
         "year": 2026
       }
     ]
@@ -2447,7 +3323,7 @@ var AnimeStudioData_2026 = [
     "studio_img": "image/studio/ZG-R.avif",
     "works": [
       {
-        "title": "뒤에 있는 카무이 씨",
+        "title": "후방주의 카무이씨",
         "thumbnail": "image/animeimg/2026/Q3/뒤에 있는 카무이 씨.webp",
         "director": "츠쿠모 타쿠미",
         "quarter": "3분기",
