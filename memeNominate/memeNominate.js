@@ -38,20 +38,21 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    window.NominateCommon.waitForFirebaseAndListen(
-        () => memeState.awardName
-    );
 });
 
 // src 목록 배열로 정규화
 function getSrcs(meme) {
     const srcs = [];
-    if (meme.src1) srcs.push({ url: meme.src1, label: "원본" });
-    if (meme.src2) srcs.push({ url: meme.src2, label: meme.src2_title || "ver.2" });
-    if (meme.src3) srcs.push({ url: meme.src3, label: meme.src3_title || "ver.3" });
-    if (meme.src4) srcs.push({ url: meme.src4, label: meme.src4_title || "ver.4" });
-    if (meme.src5) srcs.push({ url: meme.src5, label: meme.src5_title || "ver.5" });
-    if (srcs.length === 0 && meme.src) srcs.push({ url: meme.src, label: "원본" });
+    const fileName = source => {
+        let path = String(source).split(/[?#]/)[0].replace(/\\/g, '/');
+        path = path.slice(path.lastIndexOf('/') + 1);
+        try { return decodeURIComponent(path); } catch { return path; }
+    };
+    for (const key of Object.keys(meme).filter(key => /^src[1-9]\d*$/.test(key)).sort((a, b) => Number(a.slice(3)) - Number(b.slice(3)))) {
+        if (!meme[key]) continue;
+        srcs.push({ url: meme[key], label: String(meme[`${key}_title`] || '').trim() || fileName(meme[key]) });
+    }
+    if (srcs.length === 0 && meme.src) srcs.push({ url: meme.src, label: fileName(meme.src) });
     return srcs;
 }
 
@@ -101,7 +102,6 @@ function renderMemeGrid() {
         memes.forEach(meme => cards.appendChild(createMemeCard(meme)));
         parent.appendChild(cards);
     }
-    window.NominateCommon.applyVoteBadges();
 }
 
 function createMemeCard(meme) {
@@ -112,14 +112,6 @@ function createMemeCard(meme) {
     const card = document.createElement("div");
     card.className = "card meme-card";
     card.id = `card-${meme.id}`;
-
-    card.setAttribute('data-category', memeState.awardName);
-    if (!meme.isPersonal) card.setAttribute('data-anime-id', meme.name);
-
-    const rateBadge = document.createElement("div");
-    rateBadge.className = "card-selection-rate";
-    rateBadge.style.display = "none";
-    rateBadge.textContent = "0%";
 
     const zoomBtn = document.createElement("button");
     zoomBtn.className = "zoom-btn";
@@ -150,8 +142,7 @@ function createMemeCard(meme) {
         <div class="card-studio">${escapeMemeText(meme.origin || '출처 불명')}</div>
     `;
 
-    if (!meme.isPersonal) card.appendChild(rateBadge);
-    else {
+    if (meme.isPersonal) {
         const actions = document.createElement('div');
         actions.className = 'personal-card-actions';
         for (const [label, action] of [['수정', () => openPersonalEditor(meme.id)], ['삭제', () => deletePersonalMeme(meme.id)]]) {
@@ -307,9 +298,6 @@ function saveMemeWinner() {
         origin: winner.origin
     });
     
-    if (!winner.isPersonal && window.submitSingleAwardToDB) {
-        window.submitSingleAwardToDB(memeState.awardName);
-    }
 
     showWinnerCelebration(winner, savedSrc);
 }

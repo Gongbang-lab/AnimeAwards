@@ -88,14 +88,6 @@ var AnimeMemeData_2026 = [
         ,"year" : 2026
     },
     {
-        "id": "meme_012",
-        "name": "카즈야 펀치",
-        "src1": "image/meme/속이 뻥.webp",
-        "origin": "여친, 빌리겠습니다 5기",
-        "quarter": "2분기"
-        ,"year" : 2026
-    },
-    {
         "id": "meme_013",
         "name": "나카무라 반 분위기",
         "src1": "image/meme/나카무라1.webp",
@@ -118,23 +110,11 @@ var AnimeMemeData_2026 = [
         "year" : 2026
     },
     {
-        "id": "meme_017",
-        "name": "백화요란",
-        "src1": "image/meme/백화요란_1.webp",
-        "src2": "image/meme/백화요란_2.webp",
-        "src3": "image/meme/일도양단.gif",
-        "origin": "여친, 빌리겠습니다 5기",
-        "quarter": "2분기",
-        "year" : 2026
-    },
-    {
         "id": "meme_018",
-        "name": "나카무라 쿤",
-        "src1": "image/meme/나카무라_1.webp",
-        "src2": "image/meme/나카무라_2.webp",
-        "src3": "image/meme/나카무라_3.webp",
-        "src4": "image/meme/나카무라_4.webp",
-        "src5": "image/meme/나카무라_5.webp",
+        "name": "나카무라 군 12화",
+        "src1": "image/meme/나카무라 군_1.mp4",
+        "src2": "image/meme/나카무라 군_2.mp4",
+        "src3": "image/meme/나카무라 군_3.mp4",
         "origin": "힘내라! 나카무라 군!!",
         "quarter": "2분기",
         "year" : 2026
