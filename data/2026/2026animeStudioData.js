@@ -23,7 +23,7 @@ var AnimeStudioData = [
   },
   {
     "studio": "8-Bit",
-    "studio_img": "image/studio/8-Bit.avif",
+    "studio_img": "image/studio/8Bit.avif",
     "works": [
       {
         "title": "전생했더니 슬라임이었던 건에 대하여 4기",
@@ -144,7 +144,7 @@ var AnimeStudioData = [
   },
   {
     "studio": "동우A&E",
-    "studio_img": "image/studio/동우A&E.avif",
+    "studio_img": "image/studio/동우AE.avif",
     "works": [
       {
         "title": "부탁해 아이프리",
@@ -247,6 +247,15 @@ var AnimeStudioData = [
         "title": "수왕무신 댄디바인",
         "thumbnail": "image/animeimg/2026/Q4/수왕무신 댄디바인.webp",
         "director": "소우 키",
+        "quarter": [
+          "4분기"
+        ],
+        "year": 2026
+      },
+      {
+        "title": "도쿄 리벤저스: 삼천전쟁편",
+        "thumbnail": "image/animeimg/2026/Q4/도쿄 리벤저스 삼천전쟁편.webp",
+        "director": "코다이라 마키",
         "quarter": [
           "4분기"
         ],
@@ -1118,6 +1127,20 @@ var AnimeStudioData = [
     "studio_img": "image/studio/아사히 프로덕션.avif",
     "works": [
       {
+        "title": "에리스의 성배",
+        "thumbnail": "image/animeimg/2026/Q1/에리스의 성배.webp",
+        "director": "모리타와 준페이",
+        "quarter": "1분기",
+        "year": 2026
+      },
+      {
+        "title": "자칭 악역 영애인 약혼자 관찰기록.",
+        "thumbnail": "image/animeimg/2026/Q2/자칭 악역 영애인 약혼자 관찰기록.webp",
+        "director": "야마모토 준이치",
+        "quarter": "2분기",
+        "year": 2026
+      },
+      {
         "title": "레이와의 다라 씨",
         "thumbnail": "image/animeimg/2026/Q3/레이와의 다라 씨.webp",
         "director": "스즈키 마사토",
@@ -1157,26 +1180,6 @@ var AnimeStudioData = [
         "quarter": [
           "4분기"
         ],
-        "year": 2026
-      }
-    ]
-  },
-  {
-    "studio": "아시 프로덕션",
-    "studio_img": "image/studio/아시 프로덕션.avif",
-    "works": [
-      {
-        "title": "에리스의 성배",
-        "thumbnail": "image/animeimg/2026/Q1/에리스의 성배.webp",
-        "director": "모리타와 준페이",
-        "quarter": "1분기",
-        "year": 2026
-      },
-      {
-        "title": "자칭 악역 영애인 약혼자 관찰기록.",
-        "thumbnail": "image/animeimg/2026/Q2/자칭 악역 영애인 약혼자 관찰기록.webp",
-        "director": "야마모토 준이치",
-        "quarter": "2분기",
         "year": 2026
       }
     ]
@@ -1329,6 +1332,20 @@ var AnimeStudioData = [
     "studio": "이매지카인포스",
     "studio_img": "image/studio/이매지카인포스.avif",
     "works": [
+      {
+        "title": "최애 의붓형을 사랑하기 위해, 오래 살겠습니다!",
+        "thumbnail": "image/animeimg/2026/Q1/최애 의붓형을 사랑하기 위해, 오래 살겠습니다.webp",
+        "director": "모리시타 유스케",
+        "quarter": "1분기",
+        "year": 2026
+      },
+      {
+        "title": "너는 아직 군마를 모른다",
+        "thumbnail": "image/animeimg/2026/Q1/너는 아직 군마를 모른다.webp",
+        "director": "타타미타니 테츠야",
+        "quarter": "1분기",
+        "year": 2026
+      },
       {
         "title": "마물을 먹는 모험가 ~나만 마물을 먹고 강해진다~",
         "thumbnail": "image/animeimg/2026/Q2/마물을 먹는 모험가 ~나만 마물을 먹고 강해진다~.webp",
@@ -1710,7 +1727,7 @@ var AnimeStudioData = [
   },
   {
     "studio": "A-1 Pictures",
-    "studio_img": "image/studio/A-1 Pictures.avif",
+    "studio_img": "image/studio/A1 Pictures.avif",
     "works": [
       {
         "title": "Fate/strange Fake",
@@ -1854,7 +1871,7 @@ var AnimeStudioData = [
   },
   {
     "studio": "C-Station",
-    "studio_img": "image/studio/C-Station.avif",
+    "studio_img": "image/studio/CStation.avif",
     "works": [
       {
         "title": "렛츠고 괴기조",
@@ -1953,21 +1970,6 @@ var AnimeStudioData = [
     ]
   },
   {
-    "studio": "david production",
-    "studio_img": "image/studio/david production.avif",
-    "works": [
-      {
-        "title": "반딧불이의 혼례",
-        "thumbnail": "image/animeimg/2026/Q4/반딧불이의 혼례.webp",
-        "director": "카메이 타카히로",
-        "quarter": [
-          "4분기"
-        ],
-        "year": 2026
-      }
-    ]
-  },
-  {
     "studio": "David Production",
     "studio_img": "image/studio/David Production.avif",
     "works": [
@@ -1985,6 +1987,15 @@ var AnimeStudioData = [
         "quarter": [
           "1분기",
           "3분기"
+        ],
+        "year": 2026
+      },
+      {
+        "title": "반딧불이의 혼례",
+        "thumbnail": "image/animeimg/2026/Q4/반딧불이의 혼례.webp",
+        "director": "카메이 타카히로",
+        "quarter": [
+          "4분기"
         ],
         "year": 2026
       }
@@ -2018,7 +2029,7 @@ var AnimeStudioData = [
   },
   {
     "studio": "E&H PRODUCTION",
-    "studio_img": "image/studio/E&H PRODUCTION.avif",
+    "studio_img": "image/studio/EH PRODUCTION.avif",
     "works": [
       {
         "title": "마법기사 레이어스",
@@ -2160,13 +2171,7 @@ var AnimeStudioData = [
         "director": "타니 아즈마",
         "quarter": "2분기",
         "year": 2026
-      }
-    ]
-  },
-  {
-    "studio": "FelixFilm",
-    "studio_img": "image/studio/FelixFilm.avif",
-    "works": [
+      },
       {
         "title": "전생한 대성녀는 성녀임을 숨긴다",
         "thumbnail": "image/animeimg/2026/Q4/전생한 대성녀는 성녀임을 숨긴다.webp",
@@ -2239,28 +2244,8 @@ var AnimeStudioData = [
     ]
   },
   {
-    "studio": "Imagica Infos",
-    "studio_img": "image/studio/Imagica Infos.avif",
-    "works": [
-      {
-        "title": "최애 의붓형을 사랑하기 위해, 오래 살겠습니다!",
-        "thumbnail": "image/animeimg/2026/Q1/최애 의붓형을 사랑하기 위해, 오래 살겠습니다.webp",
-        "director": "모리시타 유스케",
-        "quarter": "1분기",
-        "year": 2026
-      },
-      {
-        "title": "너는 아직 군마를 모른다",
-        "thumbnail": "image/animeimg/2026/Q1/너는 아직 군마를 모른다.webp",
-        "director": "타타미타니 테츠야",
-        "quarter": "1분기",
-        "year": 2026
-      }
-    ]
-  },
-  {
-    "studio": "J.C.Staff",
-    "studio_img": "image/studio/J.C.Staff.avif",
+    "studio": "J.C.STAFF",
+    "studio_img": "image/studio/JCSTAFF.avif",
     "works": [
       {
         "title": "타몬 군 지금 어느 쪽!?",
@@ -2275,13 +2260,7 @@ var AnimeStudioData = [
         "director": "후쿠시마 토시노리",
         "quarter": "1분기",
         "year": 2026
-      }
-    ]
-  },
-  {
-    "studio": "J.C.STAFF",
-    "studio_img": "image/studio/J.C.STAFF.avif",
-    "works": [
+      },
       {
         "title": "주식회사 마지루미에 2기",
         "thumbnail": "image/animeimg/2026/Q3/주식회사 마지루미에 2기.webp",
@@ -2348,7 +2327,7 @@ var AnimeStudioData = [
   },
   {
     "studio": "Lay-duce",
-    "studio_img": "image/studio/Lay-duce.avif",
+    "studio_img": "image/studio/Layduce.avif",
     "works": [
       {
         "title": "클레바테스 Ⅱ -마수왕과 가짜 용사 전승-",
@@ -2382,21 +2361,6 @@ var AnimeStudioData = [
         "thumbnail": "image/cinema/2026/극장판 암살교실 모두의 시간.webp",
         "director": "키타무라 마사키",
         "quarter": "3분기",
-        "year": 2026
-      }
-    ]
-  },
-  {
-    "studio": "LIDENFILMS",
-    "studio_img": "image/studio/LIDENFILMS.avif",
-    "works": [
-      {
-        "title": "도쿄 리벤저스: 삼천전쟁편",
-        "thumbnail": "image/animeimg/2026/Q4/도쿄 리벤저스 삼천전쟁편.webp",
-        "director": "코다이라 마키",
-        "quarter": [
-          "4분기"
-        ],
         "year": 2026
       }
     ]
@@ -2620,8 +2584,8 @@ var AnimeStudioData = [
     ]
   },
   {
-    "studio": "P.A. Works",
-    "studio_img": "image/studio/P.A. Works.avif",
+    "studio": "P.A.WORKS",
+    "studio_img": "image/studio/PAWORKS.avif",
     "works": [
       {
         "title": "천수의 사쿠나히메 코코로와 농사 일지",
@@ -2629,13 +2593,7 @@ var AnimeStudioData = [
         "director": "요시하라 마사유키",
         "quarter": "1분기",
         "year": 2026
-      }
-    ]
-  },
-  {
-    "studio": "P.A.WORKS",
-    "studio_img": "image/studio/P.A.WORKS.avif",
-    "works": [
+      },
       {
         "title": "추방당한 치트 부여 마술사는 자유로운 세컨드 라이프를 구가한다 ~나는 무기뿐만 아니라, 모든 것에 『강화 포인트』를 부여할 수 있고, 언제든지 효과를 해제할 수 있는데, 남은 사람들은 괜찮아?~",
         "thumbnail": "image/animeimg/2026/Q4/추방당한 치트 부여 마술사는 자유로운 세컨드 라이프를 구가한다 나는 무기뿐만 아니라 모든 것에 강화 포인트를 부여할 수 있고 언제든지 효과를 해제할 수 있는데 남은 사람들은 괜찮아.webp",
@@ -2675,7 +2633,7 @@ var AnimeStudioData = [
   },
   {
     "studio": "Production +h.",
-    "studio_img": "image/studio/Production +h.avif",
+    "studio_img": "image/studio/Production h.avif",
     "works": [
       {
         "title": "다크 머신 디 애니메이션",
@@ -2690,7 +2648,7 @@ var AnimeStudioData = [
   },
   {
     "studio": "Production I.G",
-    "studio_img": "image/studio/Production I.G.avif",
+    "studio_img": "image/studio/Production IG.avif",
     "works": [
       {
         "title": "왼손잡이 에렌",
@@ -2718,21 +2676,8 @@ var AnimeStudioData = [
     ]
   },
   {
-    "studio": "project No.9",
-    "studio_img": "image/studio/project No.9.avif",
-    "works": [
-      {
-        "title": "전학 간 학교의 청순가련한 미소녀가 옛날에 남자라고 생각해서 같이 놀던 소꿉친구였던 일",
-        "thumbnail": "image/animeimg/2026/Q3/전학 간 학교의 청순가련한 미소녀가 옛날에 남자라고 생각해서 같이 놀던 소꿉친구였던 일.webp",
-        "director": "죠 덴호",
-        "quarter": "3분기",
-        "year": 2026
-      }
-    ]
-  },
-  {
     "studio": "Project No.9",
-    "studio_img": "image/studio/Project No.9.avif",
+    "studio_img": "image/studio/Project No9.avif",
     "works": [
       {
         "title": "투명남과 인간녀 ~곧 부부가 될 두 사람~",
@@ -2746,6 +2691,13 @@ var AnimeStudioData = [
         "thumbnail": "image/animeimg/2026/Q2/옆집 천사님 때문에 어느샌가 인간적으로 타락한 사연 2.webp",
         "director": "쿠마노 치히로",
         "quarter": "2분기",
+        "year": 2026
+      },
+      {
+        "title": "전학 간 학교의 청순가련한 미소녀가 옛날에 남자라고 생각해서 같이 놀던 소꿉친구였던 일",
+        "thumbnail": "image/animeimg/2026/Q3/전학 간 학교의 청순가련한 미소녀가 옛날에 남자라고 생각해서 같이 놀던 소꿉친구였던 일.webp",
+        "director": "죠 덴호",
+        "quarter": "3분기",
         "year": 2026
       }
     ]
@@ -2787,7 +2739,7 @@ var AnimeStudioData = [
   },
   {
     "studio": "Qzil.la",
-    "studio_img": "image/studio/Qzil.la.avif",
+    "studio_img": "image/studio/Qzilla.avif",
     "works": [
       {
         "title": "여신 「이세계 전생하면 뭐가 되고 싶습니까」 나「용사의 갈비뼈로」",
@@ -2813,7 +2765,7 @@ var AnimeStudioData = [
   },
   {
     "studio": "S.o.K",
-    "studio_img": "image/studio/S.o.K.avif",
+    "studio_img": "image/studio/SoK.avif",
     "works": [
       {
         "title": "여신 「이세계 전생하면 뭐가 되고 싶습니까」 나「용사의 갈비뼈로」",
@@ -2945,7 +2897,7 @@ var AnimeStudioData = [
   },
   {
     "studio": "studio A-CAT",
-    "studio_img": "image/studio/studio A-CAT.avif",
+    "studio_img": "image/studio/studio ACAT.avif",
     "works": [
       {
         "title": "최강의 왕, 두 번째 인생에는 무엇을 하는가 시즌 2",
@@ -2995,13 +2947,7 @@ var AnimeStudioData = [
         "director": "와라이 소타",
         "quarter": "2분기",
         "year": 2026
-      }
-    ]
-  },
-  {
-    "studio": "Studio Houkiboshi",
-    "studio_img": "image/studio/Studio Houkiboshi.avif",
-    "works": [
+      },
       {
         "title": "낯가림 심한 미망인 설녀와 저주의 반지",
         "thumbnail": "image/animeimg/2026/Q4/낯가림 심한 미망인 설녀와 저주의 반지.webp",
@@ -3257,7 +3203,7 @@ var AnimeStudioData = [
   },
   {
     "studio": "Zero-G",
-    "studio_img": "image/studio/Zero-G.avif",
+    "studio_img": "image/studio/ZeroG.avif",
     "works": [
       {
         "title": "이세계 유유자적 농가 2",
@@ -3314,19 +3260,6 @@ var AnimeStudioData = [
         "thumbnail": "image/animeimg/2026/Q2/아카네 이야기.webp",
         "director": "와타나베 아유무",
         "quarter": "2분기",
-        "year": 2026
-      }
-    ]
-  },
-  {
-    "studio": "ZG-R",
-    "studio_img": "image/studio/ZG-R.avif",
-    "works": [
-      {
-        "title": "후방주의 카무이씨",
-        "thumbnail": "image/animeimg/2026/Q3/뒤에 있는 카무이 씨.webp",
-        "director": "츠쿠모 타쿠미",
-        "quarter": "3분기",
         "year": 2026
       }
     ]

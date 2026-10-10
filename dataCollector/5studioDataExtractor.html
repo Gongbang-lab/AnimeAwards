@@ -71,6 +71,13 @@
     <script>
         let generatedCode = "";
 
+        function studioImageName(name) {
+            return String(name).normalize('NFC')
+                .replace(/[^\p{L}\p{M}\p{N}\s]/gu, '')
+                .replace(/\s+/g, ' ')
+                .trim();
+        }
+
         document.getElementById('extract-btn').onclick = function() {
             const statusDiv = document.getElementById('status');
             const previewContainer = document.getElementById('preview-container');
@@ -97,7 +104,7 @@
                         if (!studioMap[studioName]) {
                             studioMap[studioName] = {
                                 studio: studioName,
-                                studio_img: `image/studio/${studioName}.avif`,
+                                studio_img: `image/studio/${studioImageName(studioName)}.avif`,
                                 works: []
                             };
                         }

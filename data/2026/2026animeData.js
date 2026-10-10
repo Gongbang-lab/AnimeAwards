@@ -658,7 +658,7 @@ var AnimeCatalog_2026 = [
   "day": "Thursdays",
   "episodes": 0,
   "studio": [
-    "아시 프로덕션"
+    "아사히 프로덕션"
   ],
   "staff": {
     "director": [
@@ -1182,7 +1182,7 @@ var AnimeCatalog_2026 = [
   "day": "Sundays",
   "episodes": 13,
   "studio": [
-    "J.C.Staff"
+    "J.C.STAFF"
   ],
   "staff": {
     "director": [
@@ -1759,7 +1759,7 @@ var AnimeCatalog_2026 = [
   "day": "Anomaly",
   "episodes": 0,
   "studio": [
-    "Imagica Infos"
+    "이매지카인포스"
   ],
   "staff": {
     "director": [
@@ -1815,7 +1815,7 @@ var AnimeCatalog_2026 = [
   "day": "Anomaly",
   "episodes": 0,
   "studio": [
-    "Imagica Infos"
+    "이매지카인포스"
   ],
   "staff": {
     "director": [
@@ -1845,7 +1845,7 @@ var AnimeCatalog_2026 = [
   "day": "Anomaly",
   "episodes": 2,
   "studio": [
-    "P.A. Works"
+    "P.A.WORKS"
   ],
   "staff": {
     "director": [
@@ -1963,7 +1963,7 @@ var AnimeCatalog_2026 = [
   "day": "Web",
   "episodes": 4,
   "studio": [
-    "J.C.Staff"
+    "J.C.STAFF"
   ],
   "staff": {
     "director": [
@@ -2152,7 +2152,7 @@ var AnimeCatalog_2026 = [
   "day": "Mondays",
   "episodes": 12,
   "studio": [
-    "아시 프로덕션"
+    "아사히 프로덕션"
   ],
   "staff": {
     "director": [
@@ -4558,7 +4558,7 @@ var AnimeCatalog_2026 = [
   "day": "Mondays",
   "episodes": 12,
   "studio": [
-    "project No.9"
+    "Project No.9"
   ],
   "staff": {
     "director": [
@@ -6425,8 +6425,7 @@ var AnimeCatalog_2026 = [
   "day": "Anomaly",
   "episodes": 12,
   "studio": [
-    "Zero-G",
-    "ZG-R"
+    "Zero-G"
   ],
   "staff": {
     "director": [
@@ -7802,7 +7801,7 @@ var AnimeCatalog_2026 = [
   "day": "Fridays",
   "episodes": 0,
   "studio": [
-    "david production"
+    "David Production"
   ],
   "staff": {
     "director": [
@@ -7906,7 +7905,7 @@ var AnimeCatalog_2026 = [
   "day": "Saturdays",
   "episodes": 13,
   "studio": [
-    "LIDENFILMS"
+    "라이덴 필름"
   ],
   "staff": {
     "director": [
@@ -8048,7 +8047,7 @@ var AnimeCatalog_2026 = [
   "day": "Saturdays",
   "episodes": 0,
   "studio": [
-    "FelixFilm"
+    "Felix Film"
   ],
   "staff": {
     "director": [
@@ -8760,7 +8759,7 @@ var AnimeCatalog_2026 = [
   "day": "Anomaly",
   "episodes": 0,
   "studio": [
-    "Studio Houkiboshi"
+    "Studio Hokiboshi"
   ],
   "staff": {
     "director": [
