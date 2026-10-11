@@ -245,17 +245,9 @@
       preview.appendChild(empty);
     }
     state.selectedItems.forEach(anime => {
-      const item = document.createElement("button");
-      item.type = "button";
-      item.className = "preview-item";
-      const title = document.createElement("span");
-      title.className = "preview-title";
-      title.textContent = anime.title;
-      const subtitle = document.createElement("span");
-      subtitle.className = "preview-subtitle";
-      subtitle.textContent = anime.quarter || "";
-      item.append(title, subtitle);
-      item.onclick = () => {
+      const item = document.createElement("div");
+      const removeButton = NominateCommon.setupPreviewItem(item, anime.title);
+      removeButton.onclick = () => {
         state.selectedItems = state.selectedItems.filter(candidate => String(candidate.id) !== String(anime.id));
         updatePreview();
         renderStep1(document.getElementById("search-input").value);

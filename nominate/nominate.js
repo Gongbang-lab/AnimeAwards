@@ -44,75 +44,94 @@ const AnimeByQuarter = SeasonFilteredList.reduce((acc, anime) => {
 // ──────────────────────────────────────────────────────────
 // 2. Step 1 렌더링 (아코디언 + 그리드)
 // ──────────────────────────────────────────────────────────
+// 분기별 요일 선택과 펼침 상태를 검색/후보 수정 후에도 유지한다.
+const daySelections = new Map();
+const expandedQuarters = new Set();
+
 function renderStep1(filterText = "") {
     const leftArea = document.getElementById("left-area");
     if (!leftArea) return;
-    leftArea.innerHTML = "";
-    
-    const isSearching = filterText.length > 0;
-    const selectedQuarter = SeasonFilter.getSelectedSeason().quarter;
+    leftArea.replaceChildren();
+    const query = filterText.trim().toLowerCase();
     const showQuarterAccordion = SeasonFilter.showQuarterAccordion();
+    let resultCount = 0;
 
-    QUARTER_ORDER.forEach(qKey => {
-        const animeList = AnimeByQuarter[qKey];
-        if (!animeList) return;
-
-        const filteredList = animeList.filter(a => a.title.toLowerCase().includes(filterText.toLowerCase()));
-        if (filteredList.length === 0 && isSearching) return;
-        
-        const targetList = isSearching ? filteredList : animeList;
-
-        let qSection = null;
-        let qContent = leftArea;
+    QUARTER_ORDER.forEach((qKey, quarterIndex) => {
+        const targetList = (AnimeByQuarter[qKey] || []).filter(a => a.title.toLowerCase().includes(query));
+        if (!targetList.length) return;
+        resultCount += targetList.length;
+        const section = document.createElement("section");
+        section.className = "quarter-section";
+        const content = document.createElement("div");
+        content.className = "quarter-content";
+        content.id = `quarter-panel-${quarterIndex}`;
         if (showQuarterAccordion) {
-            qSection = document.createElement("div");
-            qSection.className = "quarter-section";
-            const qBtn = document.createElement("button");
-            qBtn.className = `quarter-btn ${isSearching ? 'active' : ''}`;
-            qBtn.innerHTML = `<span>${qKey}</span> <span>▼</span>`;
-            qContent = document.createElement("div");
-            qContent.className = "quarter-content";
-            qContent.style.display = isSearching ? "block" : "none";
-            qBtn.onclick = () => {
-                const isVisible = qContent.style.display === "block";
-                qContent.style.display = isVisible ? "none" : "block";
-                qBtn.classList.toggle("active", !isVisible);
+            const button = document.createElement("button");
+            button.type = "button";
+            button.className = "quarter-btn";
+            button.innerHTML = `<span>${qKey} <small>${targetList.length}작품</small></span><span class="quarter-arrow" aria-hidden="true">⌄</span>`;
+            button.setAttribute("aria-controls", content.id);
+            const setExpanded = expanded => {
+                content.hidden = !expanded;
+                content.classList.toggle("active", expanded);
+                button.classList.toggle("active", expanded);
+                button.setAttribute("aria-expanded", String(expanded));
             };
-            qSection.append(qBtn, qContent);
-        }
-
-        DAY_KEYS.forEach(dKey => {
-            const dayAnimes = targetList.filter(a => a.day === dKey);
-            if (dayAnimes.length === 0) return;
-
-            const dayDiv = document.createElement("div");
-            
-            const dBtn = document.createElement("button");
-            dBtn.className = `day-btn ${isSearching ? 'active' : ''}`;
-            dBtn.innerHTML = `${DAY_LABELS[dKey]} <span>▼</span>`;
-
-            const dContent = document.createElement("div");
-            dContent.className = "day-content";
-            dContent.style.display = isSearching ? "grid" : "none";
-
-            dBtn.onclick = () => {
-                const isGrid = dContent.style.display === "grid";
-                dContent.style.display = isGrid ? "none" : "grid";
-                dBtn.classList.toggle("active", !isGrid);
+            setExpanded(Boolean(query) || expandedQuarters.has(qKey));
+            button.onclick = () => {
+                const expanded = content.hidden;
+                if (expanded) expandedQuarters.add(qKey);
+                else expandedQuarters.delete(qKey);
+                setExpanded(expanded);
             };
+            section.appendChild(button);
+        } else content.classList.add("active");
 
-            dayAnimes.forEach(anime => {
-                dContent.appendChild(createCard(anime));
+        const buttons = document.createElement("div");
+        buttons.className = "day-filters";
+        buttons.setAttribute("role", "group");
+        buttons.setAttribute("aria-label", `${qKey} 요일 선택`);
+        const grid = document.createElement("div");
+        grid.className = "day-content";
+        grid.id = `day-grid-${quarterIndex}`;
+        const days = DAY_KEYS.filter(day => targetList.some(a => a.day === day));
+        // 검색 결과가 있는 요일 중 첫 요일부터 표시한다.
+        let activeDay = query ? days[0] : daySelections.get(qKey);
+        if (!days.includes(activeDay)) activeDay = days[0];
+        const renderDay = day => {
+            buttons.querySelectorAll("button").forEach(button => {
+                const active = button.dataset.day === day;
+                button.classList.toggle("active", active);
+                button.setAttribute("aria-pressed", String(active));
             });
-
-            dayDiv.appendChild(dBtn);
-            dayDiv.appendChild(dContent);
-            qContent.appendChild(dayDiv);
+            grid.replaceChildren(...targetList.filter(a => a.day === day).map(createCard));
+            window.NominateCommon.applyVoteBadges();
+        };
+        days.forEach(day => {
+            const button = document.createElement("button");
+            button.type = "button";
+            button.className = "day-filter-btn";
+            button.dataset.day = day;
+            button.setAttribute("aria-controls", grid.id);
+            const count = targetList.filter(a => a.day === day).length;
+            button.textContent = `${DAY_LABELS[day]} ${count}`;
+            button.onclick = () => {
+                daySelections.set(qKey, day);
+                renderDay(day);
+            };
+            buttons.appendChild(button);
         });
-
-        if (showQuarterAccordion) leftArea.appendChild(qSection);
+        content.append(buttons, grid);
+        section.appendChild(content);
+        leftArea.appendChild(section);
+        renderDay(activeDay);
     });
-    window.NominateCommon.applyVoteBadges();
+    if (!resultCount) {
+        const empty = document.createElement("p");
+        empty.className = "candidate-empty";
+        empty.textContent = "검색 결과가 없습니다.";
+        leftArea.appendChild(empty);
+    }
 }
 
 // 카드 생성 함수
@@ -277,7 +296,7 @@ function updatePreview() {
     previewBox.innerHTML = "";
     
     if (nominateState.selectedItems.length === 0) {
-        previewBox.innerHTML = `<div style="color:#666; text-align:center; padding-top:20px; font-size:0.85rem;">후보를 선택해주세요</div>`;
+        previewBox.innerHTML = `<div style="color:var(--text-muted); text-align:center; padding-top:20px; font-size:0.85rem;">후보를 선택해주세요</div>`;
         if(nextBtn) nextBtn.disabled = true;
         return;
     }
@@ -286,12 +305,18 @@ function updatePreview() {
         const div = document.createElement("div");
         div.className = "preview-item";
         
-        div.innerHTML = `
-            <div class="preview-title">${anime.title}</div>
-            <div class="preview-subtitle">${anime.quarter}</div>
-        `;
-        
-        div.onclick = () => {
+        const title = document.createElement("span");
+        title.className = "preview-title";
+        title.textContent = anime.title;
+        title.title = anime.title;
+        const removeButton = document.createElement("button");
+        removeButton.type = "button";
+        removeButton.className = "preview-remove";
+        removeButton.textContent = "×";
+        removeButton.setAttribute("aria-label", `${anime.title} 선택 해제`);
+        div.append(title, removeButton);
+
+        removeButton.onclick = () => {
             if (nominateState.step === 1) {
                 nominateState.selectedItems = nominateState.selectedItems.filter(a => a.id !== anime.id);
                 updatePreview();
@@ -329,7 +354,7 @@ function goStep2() {
     leftArea.innerHTML = "";
     
     const h2 = document.createElement("h2");
-    h2.style.cssText = "color:var(--gold); margin-bottom:20px; font-size: 1.5rem; text-align: left;";
+    h2.style.cssText = "color:var(--text); margin-bottom:20px; font-size: 1.5rem; text-align: left;";
     h2.textContent = "최종 후보를 선택하세요";
     leftArea.appendChild(h2);
 

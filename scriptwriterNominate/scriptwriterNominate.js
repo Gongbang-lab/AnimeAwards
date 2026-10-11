@@ -162,9 +162,9 @@ function updatePreview() {
     scriptwriterState.selectedItems.forEach(item => {
         const div = document.createElement("div");
         div.className = "preview-item";
-        div.innerHTML = `${item.title}<br><small style="color:#888;font-size:0.75rem;">${getWriterNames(item).join(", ")}</small>`;
+        const removeButton = NominateCommon.setupPreviewItem(div, item.title);
 
-        div.addEventListener("click", () => {
+        removeButton.addEventListener("click", () => {
             if (scriptwriterState.step !== 1) return;
             const index = scriptwriterState.selectedItems.findIndex(i => i.id === item.id);
             if (index >= 0) scriptwriterState.selectedItems.splice(index, 1);

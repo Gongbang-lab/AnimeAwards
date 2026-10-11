@@ -193,11 +193,8 @@ function updatePreview() {
     nominateState.selectedItems.forEach(anime => {
         const item = document.createElement("div");
         item.className = "preview-item";
-        item.innerHTML = `
-            ${anime.title}
-            <br><small style="color:#888; font-size:0.75rem;">${anime.studio || ''}</small>
-        `;
-        item.onclick = () => {
+        const removeButton = NominateCommon.setupPreviewItem(item, anime.title);
+        removeButton.onclick = () => {
             nominateState.selectedItems = nominateState.selectedItems.filter(a => a.id !== anime.id);
             renderStep1(document.getElementById('search-input').value);
             updatePreview();

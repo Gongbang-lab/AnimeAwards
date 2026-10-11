@@ -249,9 +249,9 @@ function updatePreview() {
     songNominateState.selectedItems.forEach(song => {
         const div = document.createElement("div");
         div.className = "preview-item";
-        div.innerHTML = `${song.title} <br><small style="color:#888;">${song.animeTitle}</small>`;
+        const removeButton = NominateCommon.setupPreviewItem(div, song.title);
         
-        div.onclick = () => {
+        removeButton.onclick = () => {
             songNominateState.selectedItems = songNominateState.selectedItems.filter(s => s.uniqueId !== song.uniqueId);
             renderFilteredList(document.getElementById("song-search").value.toLowerCase());
             updatePreview();

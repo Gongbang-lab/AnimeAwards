@@ -229,12 +229,9 @@ function updatePreview() {
         item.className = "preview-item";
         // ✅ 수정: studio 배열 처리
         const studioText = Array.isArray(anime.studio) ? anime.studio.join(', ') : (anime.studio || '');
-        item.innerHTML = `
-            ${anime.title}
-            <small>${studioText}</small>
-        `;
+        const removeButton = NominateCommon.setupPreviewItem(item, anime.title);
         
-        item.onclick = () => {
+        removeButton.onclick = () => {
             top3State.selectedCandidates = top3State.selectedCandidates.filter(a => a.id !== anime.id);
             const currentSearch = document.getElementById('search-input').value;
             renderStep1(currentSearch); 

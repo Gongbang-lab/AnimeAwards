@@ -133,7 +133,23 @@
         }, true);
     }
 
+    function setupPreviewItem(item, label) {
+        item.classList.add('preview-item', 'compact-preview-item');
+        const title = document.createElement('span');
+        title.className = 'preview-title';
+        title.textContent = label;
+        title.title = label;
+        const remove = document.createElement('button');
+        remove.type = 'button';
+        remove.className = 'preview-remove';
+        remove.textContent = '×';
+        remove.setAttribute('aria-label', `${label} 선택 해제`);
+        item.replaceChildren(title, remove);
+        return remove;
+    }
+
     global.NominateCommon = {
+        setupPreviewItem,
         imageSource,
         installImageFallback,
         syncCandidateSelection,

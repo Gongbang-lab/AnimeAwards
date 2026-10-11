@@ -187,11 +187,8 @@ function updatePreview() {
     list.forEach(item => {
         const div = document.createElement("div");
         div.className = "preview-item";
-        div.innerHTML = `
-            <div class="preview-title">${item.title}</div>
-            <div class="preview-subtitle">${item.episodeNo} - ${item.episodeTitle}</div>
-        `;
-        div.onclick = () => {
+        const removeButton = NominateCommon.setupPreviewItem(div, `${item.title} · ${item.episodeNo} — ${item.episodeTitle}`);
+        removeButton.onclick = () => {
             delete episodeState.selectedList[item.uniqueKey];
             updatePreview();
         };

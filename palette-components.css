@@ -1,0 +1,65 @@
+/* 색상만 공유하며 각 페이지의 크기, 배치, 애니메이션은 유지한다. */
+@import url("./palette.css");
+body { background-color: var(--bg); color: var(--text-body); }
+.top-nav { background: var(--surface-raised); border-color: var(--line); }
+.brand, #step-title, .card-title, .preview-title, .modal-header,
+.award-name, .section-title, .category-title { color: var(--text); }
+.sidebar, .card, .award-card { background-color: var(--surface); }
+.quarter-content, .day-content { background-color: var(--surface-sunken); }
+.quarter-btn, .day-btn { background: var(--surface-raised); color: var(--text); border-color: var(--line); }
+.quarter-btn:hover, .day-btn:hover { background: var(--surface-hover); }
+.quarter-btn.active, .day-btn.active { background: var(--gold-tint); color: var(--text); }
+.card-studio, .preview-subtitle, .info-label { color: var(--text-muted); }
+.card-selection-rate { background: var(--accent); color: var(--text-body); }
+#search-input {
+  background: var(--surface); border: 1px solid var(--line);
+  color: var(--text-body); caret-color: var(--gold);
+}
+#search-input::placeholder { color: var(--text-muted); }
+#search-input:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px #c9a55a2e; }
+.autocomplete-items { background: var(--surface-raised); border: 1px solid var(--line); }
+.autocomplete-items div:hover { background: var(--surface-hover); color: var(--text); }
+.gold-btn { background: var(--gold); color: var(--bg); }
+.gold-btn:hover:not(:disabled) { background: var(--text); }
+.btn-outline { color: var(--gold); border-color: var(--gold); }
+.btn-outline:hover { background: var(--gold-tint); }
+dialog.nomination-guide { background: var(--surface); color: var(--text-body); border-color: var(--line); }
+.nomination-guide h2 { color: var(--text); }
+.nomination-guide .nomination-guide-confirm { background: var(--gold); color: var(--bg); }
+.nomination-guide .nomination-guide-preference { color: var(--text-muted); }
+.nomination-guide-preference input { accent-color: var(--gold); }
+.single-award-modal #single-award-heading, .single-award-name { color: var(--text); }
+
+/* 공통 후보 미리보기: 제목 한 줄 + 오른쪽 해제 버튼 */
+.preview-box { padding: 10px; }
+.preview-item.compact-preview-item {
+  position: relative; display: flex; flex-direction: row; flex-wrap: nowrap;
+  align-items: center; justify-content: space-between; width: 100%; min-width: 0;
+  min-height: 38px; height: auto; box-sizing: border-box;
+  padding: 0 42px 0 12px; margin: 0 0 6px;
+  border: 1px solid var(--line); border-radius: 6px;
+  background: var(--surface) !important; cursor: default;
+}
+.preview-item.compact-preview-item:hover {
+  background: var(--surface) !important; border-color: var(--line) !important;
+  transform: none; box-shadow: none;
+}
+.compact-preview-item .preview-title,
+.compact-preview-item:hover .preview-title {
+  flex: 1; min-width: 0; color: var(--text); font-size: .85rem; font-weight: 500;
+  text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.compact-preview-item .preview-remove {
+  position: absolute; right: 4px; top: 50%; transform: translateY(-50%);
+  width: 32px; height: 32px; padding: 0; margin: 0; border: 0; border-radius: 6px;
+  display: grid; place-items: center; background: transparent;
+  color: var(--text-muted); font: inherit; font-size: 1.25rem; cursor: pointer;
+  opacity: 0; pointer-events: none;
+}
+.compact-preview-item:hover .preview-remove,
+.compact-preview-item:focus-within .preview-remove { opacity: 1; pointer-events: auto; }
+.compact-preview-item .preview-remove:hover { background: var(--accent); color: var(--text-body); }
+.compact-preview-item .preview-remove:focus-visible { outline: 2px solid var(--gold); outline-offset: 1px; }
+@media (hover: none) {
+  .compact-preview-item .preview-remove { opacity: 1; pointer-events: auto; }
+}

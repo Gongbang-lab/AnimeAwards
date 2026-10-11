@@ -252,12 +252,9 @@ function updatePreview() {
   charState.selectedItems.forEach(char => {
     const item = document.createElement("div");
     item.className = "preview-item";
-    item.innerHTML = `
-        ${char.name}
-        <br><small style="color:#888; font-size:0.75rem;">${char.animeTitle}</small>
-    `;
+    const removeButton = NominateCommon.setupPreviewItem(item, char.name);
     
-    item.onclick = () => {
+    removeButton.onclick = () => {
       charState.selectedItems = charState.selectedItems.filter(s => s.id !== char.id);
       
       const targetCard = document.querySelector(`.card[data-char-id="${char.id}"]`);

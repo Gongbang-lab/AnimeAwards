@@ -1,0 +1,19 @@
+/* Anime Awards 공통 팔레트: 모든 외부 CSS에서 참조 */
+:root {
+  --bg: #12070a;
+  --surface-sunken: #170a0e;
+  --surface: #1f0f13;
+  --surface-raised: #2e171d;
+  --surface-hover: #3a1e25;
+  --line: #4a2a32;
+  --text: #ebdcaa;
+  --text-body: #e6dcd3;
+  --text-muted: #bba0a6;
+  --gold: #c9a55a;
+  --gold-tint: #33261a;
+  --accent: #c94a5e;
+  --black: var(--bg);
+  --gray: var(--surface);
+  --white: var(--text-body);
+  --dark-gold: var(--gold);
+}

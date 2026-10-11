@@ -1,314 +1,316 @@
+@import url("./palette.css");
+
 /* ===============================
     기본 레이아웃 & 중앙 정렬
 ================================ */
 body {
-  background-color: #050505;
-  color: #fff;
-  margin: 0;
-  padding: 60px 24px;
-  font-family: 'Pretendard', -apple-system, sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* 가로 중앙 정렬 */
+  background-color:var(--bg);
+  color:var(--text-body);
+  margin:0;
+  padding:60px 24px;
+  font-family:'Pretendard', -apple-system, sans-serif;
+  display:flex;
+  flex-direction:column;
+  align-items:center; /* 가로 중앙 정렬 */
 }
 
 header {
-  text-align: center;
-  margin-bottom: 40px;
+  text-align:center;
+  margin-bottom:40px;
 }
 
 .subtitle {
-  color: gold;
-  letter-spacing: 4px;
-  font-size: 0.8rem;
-  margin-bottom: 10px;
+  color:var(--gold);
+  letter-spacing:4px;
+  font-size:0.8rem;
+  margin-bottom:10px;
 }
 
 h1 {
-  font-size: 3rem;
-  font-weight: 900;
-  margin: 0;
-  background: linear-gradient(to bottom, #fff, #888);
-  -webkit-background-clip: text;
-  background-clip: text; /* 표준 속성 추가 (오류 해결) */
-  -webkit-text-fill-color: transparent;
+  font-size:3rem;
+  font-weight:900;
+  margin:0;
+  background:linear-gradient(to bottom, var(--text-body), var(--text-muted));
+  -webkit-background-clip:text;
+  background-clip:text; /* 표준 속성 추가 (오류 해결) */
+  -webkit-text-fill-color:transparent;
 }
 
 .header-line {
-  width: 60px;
-  height: 3px;
-  background: gold;
-  margin: 20px auto;
+  width:60px;
+  height:3px;
+  background:var(--gold);
+  margin:20px auto;
 }
 
 .top-icon-btn {
-  position: fixed;
-  top: 30px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #222;
-  color: white;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-  z-index: 1000;
-  transition: transform 0.2s, background-color 0.2s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position:fixed;
+  top:30px;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background-color:var(--surface-raised);
+  color:var(--text-body);
+  border:none;
+  font-size:20px;
+  cursor:pointer;
+  box-shadow:0 4px 15px rgba(0,0,0,0.3);
+  z-index:1000;
+  transition:transform 0.2s, background-color 0.2s;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
 .top-icon-btn:hover {
-  transform: scale(1.1);
-  background-color: #444;
+  transform:scale(1.1);
+  background-color:var(--line);
 }
 
 /* 전체 초기화 버튼 전용 호버 효과 (위험/강조 의미) */
 .top-icon-btn.alert-btn:hover {
-  background-color: #e11d48;
-  transform: scale(1.1) rotate(-180deg);
+  background-color:var(--accent);
+  transform:scale(1.1) rotate(-180deg);
 }
 
 /* 모달 배경 */
 .modal-overlay {
-  display: none; /* 기본은 숨김 */
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(5px);
-  z-index: 2000;
-  justify-content: center;
-  align-items: center;
+  display:none; /* 기본은 숨김 */
+  position:fixed;
+  top:0; left:0;
+  width:100%; height:100%;
+  background:rgba(0, 0, 0, 0.7);
+  backdrop-filter:blur(5px);
+  z-index:2000;
+  justify-content:center;
+  align-items:center;
 }
 
 /* 모달 내용 박스 */
 .modal-content {
-  background: #1e272e; /* 다크 모드 배경 */
-  color: white;
-  padding: 30px;
-  border-radius: 20px;
-  width: 90%;
-  max-width: 500px;
+  background:var(--surface); /* 다크 모드 배경 */
+  color:var(--text-body);
+  padding:30px;
+  border-radius:20px;
+  width:90%;
+  max-width:500px;
 
-  max-height: 70vh;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  max-height:70vh;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
   
-  position: relative;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  position:relative;
+  box-shadow:0 10px 30px rgba(0,0,0,0.5);
 }
-#add-modal .award-theme-fieldset { min-width: 0; margin: 18px 0 0; padding: 0; border: 0; }
-#add-modal .award-theme-fieldset legend { margin-bottom: 10px; }
-.award-theme-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
-#add-modal .award-theme-option { position: relative; margin: 0; font-weight: normal; cursor: pointer; }
-#add-modal .award-theme-option input { position: absolute; width: 1px; height: 1px; margin: 0; padding: 0; border: 0; opacity: 0; }
+#add-modal .award-theme-fieldset { min-width:0; margin:18px 0 0; padding:0; border:0; }
+#add-modal .award-theme-fieldset legend { margin-bottom:10px; }
+.award-theme-grid { display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:8px; }
+#add-modal .award-theme-option { position:relative; margin:0; font-weight:normal; cursor:pointer; }
+#add-modal .award-theme-option input { position:absolute; width:1px; height:1px; margin:0; padding:0; border:0; opacity:0; }
 .award-theme-card {
-  display: flex; align-items: center; justify-content: center; min-height: 48px;
-  height: 100%; box-sizing: border-box; padding: 8px; border: 1px solid #52606b;
-  border-radius: 8px; background: #151c22; color: #ddd; text-align: center;
-  font-size: .9rem; line-height: 1.4;
+  display:flex; align-items:center; justify-content:center; min-height:48px;
+  height:100%; box-sizing:border-box; padding:8px; border:1px solid var(--line);
+  border-radius:8px; background:var(--surface-sunken); color:var(--text-body); text-align:center;
+  font-size:.9rem; line-height:1.4;
 }
-.award-theme-option:hover .award-theme-card { border-color: var(--gold); }
+.award-theme-option:hover .award-theme-card { border-color:var(--gold); }
 .award-theme-option input:checked + .award-theme-card {
-  border-color: var(--gold); background: rgba(212, 175, 55, .18); color: var(--gold); font-weight: 700;
+  border-color:var(--gold); background:rgba(201, 165, 90, .18); color:var(--gold); font-weight:700;
 }
-.award-theme-option input:focus-visible + .award-theme-card { outline: 2px solid var(--gold); outline-offset: 2px; }
-@media (max-width: 480px) { .award-theme-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.award-theme-option input:focus-visible + .award-theme-card { outline:2px solid var(--gold); outline-offset:2px; }
+@media (max-width:480px) { .award-theme-grid { grid-template-columns:repeat(2, minmax(0, 1fr)); } }
 .info-modal-content {
-    max-width: 700px; /* 기존 모달들보다 약간 좁게 해서 글을 읽기 편하게 */
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
+    max-width:700px; /* 기존 모달들보다 약간 좁게 해서 글을 읽기 편하게 */
+    height:80vh;
+    display:flex;
+    flex-direction:column;
 }
 .modal-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 15px;
-    border-bottom: 2px solid var(--gold);
-    margin-bottom: 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-bottom:15px;
+    border-bottom:2px solid var(--gold);
+    margin-bottom:20px;
 }
-.modal-header h2 { margin: 0; color: #fff; font-size: 1.6rem; }
+.modal-header h2 { margin:0; color:var(--text-body); font-size:1.6rem; }
 
 .modal-body {
-    flex: 1;
-    overflow-y: auto; /* 내용이 길면 스크롤 생성 */
-    padding-right: 15px;
-    color: #ddd;
-    line-height: 1.6;
+    flex:1;
+    overflow-y:auto; /* 내용이 길면 스크롤 생성 */
+    padding-right:15px;
+    color:var(--text-body);
+    line-height:1.6;
 }
 
 /* 스크롤바 디자인 (크롬, 엣지 등) */
-.modal-body::-webkit-scrollbar { width: 8px; }
-.modal-body::-webkit-scrollbar-track { background: #222; border-radius: 4px; }
-.modal-body::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 4px; }
+.modal-body::-webkit-scrollbar { width:8px; }
+.modal-body::-webkit-scrollbar-track { background:var(--surface-raised); border-radius:4px; }
+.modal-body::-webkit-scrollbar-thumb { background:var(--gold); border-radius:4px; }
 
 .close-modal {
-    background: none; border: none;
-    color: var(--gold); font-size: 2.5rem;
-    cursor: pointer; transition: color 0.2s;
+    background:none; border:none;
+    color:var(--gold); font-size:2.5rem;
+    cursor:pointer; transition:color 0.2s;
 }
-.close-modal:hover { color: #fff; }
+.close-modal:hover { color:var(--text-body); }
 .guide-box {
-    background: rgba(212, 175, 55, 0.1); /* 골드 투명 배경 */
-    border: 1px solid var(--gold);
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 25px;
+    background:rgba(201, 165, 90, 0.1); /* 골드 투명 배경 */
+    border:1px solid var(--gold);
+    border-radius:8px;
+    padding:20px;
+    margin-bottom:25px;
 }
-.guide-box h3 { margin-top: 0; color: var(--gold); }
-.guide-box ul { padding-left: 20px; margin-bottom: 0; }
-.guide-box li { margin-bottom: 8px; }
+.guide-box h3 { margin-top:0; color:var(--gold); }
+.guide-box ul { padding-left:20px; margin-bottom:0; }
+.guide-box li { margin-bottom:8px; }
 
 /* 구분선 */
-.guide-divider { border: 0; height: 1px; background: #444; margin: 30px 0; }
+.guide-divider { border:0; height:1px; background:var(--line); margin:30px 0; }
 
 /* 부문별 안내 텍스트 */
-.gold-text { color: var(--gold); font-size: 1.2rem; margin: 25px 0 10px 0; border-left: 3px solid var(--gold); padding-left: 10px; }
-.sub-desc { font-size: 0.85rem; color: #888; font-weight: normal; }
+.gold-text { color:var(--gold); font-size:1.2rem; margin:25px 0 10px 0; border-left:3px solid var(--gold); padding-left:10px; }
+.sub-desc { font-size:0.85rem; color:var(--text-muted); font-weight:normal; }
 
 /* 신인상 기준 강조 박스 */
 .criteria-box {
-    background: #111;
-    border-radius: 6px;
-    padding: 15px 20px;
-    margin-top: 15px;
-    font-size: 0.95rem;
+    background:var(--surface-sunken);
+    border-radius:6px;
+    padding:15px 20px;
+    margin-top:15px;
+    font-size:0.95rem;
 }
-.criteria-box h4 { color: #fff; margin-top: 0; margin-bottom: 15px; text-align: center; }
-.criteria-step { margin-bottom: 15px; }
-.criteria-step strong { color: #aaa; }
-.criteria-step ul { padding-left: 20px; margin-top: 5px; color: #bbb; }
+.criteria-box h4 { color:var(--text-body); margin-top:0; margin-bottom:15px; text-align:center; }
+.criteria-step { margin-bottom:15px; }
+.criteria-step strong { color:var(--text-muted); }
+.criteria-step ul { padding-left:20px; margin-top:5px; color:var(--text-muted); }
 
 /* 피드백 섹션 */
-.contact-section { text-align: center; padding-bottom: 20px; }
+.contact-section { text-align:center; padding-bottom:20px; }
 .email-link {
-    display: inline-block;
-    margin-top: 10px;
-    color: var(--gold);
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-decoration: none;
-    border-bottom: 1px solid var(--gold);
-    padding-bottom: 2px;
+    display:inline-block;
+    margin-top:10px;
+    color:var(--gold);
+    font-size:1.2rem;
+    font-weight:bold;
+    text-decoration:none;
+    border-bottom:1px solid var(--gold);
+    padding-bottom:2px;
 }
-.email-link:hover { color: #fff; border-color: #fff; }
+.email-link:hover { color:var(--text-body); border-color:var(--text-body); }
 
 /* ===============================
     섹션 및 그리드 설정
 ================================ */
 #top3-area {
-  display: flex;
-  flex-direction: row;    /* 확실하게 가로 나열 */
-  justify-content: center; 
-  align-items: flex-end;
-  gap: 25px;
-  width: 100%;
-  max-width: 1200px;
-  margin: 40px auto 80px;
-  padding: 20px;
-  flex-wrap: wrap;         /* 화면이 좁아지면 다음 줄로 */
-  border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+  display:flex;
+  flex-direction:row;    /* 확실하게 가로 나열 */
+  justify-content:center; 
+  align-items:flex-end;
+  gap:25px;
+  width:100%;
+  max-width:1200px;
+  margin:40px auto 80px;
+  padding:20px;
+  flex-wrap:wrap;         /* 화면이 좁아지면 다음 줄로 */
+  border-bottom:1px solid rgba(201, 165, 90, 0.1);
 }
 
 .award-section {
-  width: 100%;
-  max-width: 1600px;
-  margin-bottom: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width:100%;
+  max-width:1600px;
+  margin-bottom:100px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
 }
 
 .section-header {
-  display: flex;
-  flex-direction: column; /* 제목-선 세로 배치 */
-  align-items: center;    /* 중앙 정렬 */
-  margin-bottom: 50px;
-  width: 100%;
+  display:flex;
+  flex-direction:column; /* 제목-선 세로 배치 */
+  align-items:center;    /* 중앙 정렬 */
+  margin-bottom:50px;
+  width:100%;
 }
 
 .section-title {
-  font-size: 2rem;
-  font-weight: 800;
-  margin: 0;
-  color: #fff;
-  letter-spacing: -1px;
+  font-size:2rem;
+  font-weight:800;
+  margin:0;
+  color:var(--text-body);
+  letter-spacing:-1px;
 }
 
 .section-divider {
-  width: 40px;
-  height: 3px;
-  background: gold;
-  margin-top: 15px; /* 제목 바로 아래에 위치 */
+  width:40px;
+  height:3px;
+  background:var(--gold);
+  margin-top:15px; /* 제목 바로 아래에 위치 */
 }
 
 .award-grid-inner {
-  display: flex;          /* ✅ grid → flex로 변경 */
-  flex-wrap: wrap;        /* ✅ 카드 수에 따라 자동 줄바꿈 */
-  gap: 40px;
-  width: 100%;
-  max-width: 1000px;
-  align-items: start;
-  justify-content: center; /* ✅ 항상 중앙 정렬 */
-  margin: 0 auto;
+  display:flex;          /* ✅ grid → flex로 변경 */
+  flex-wrap:wrap;        /* ✅ 카드 수에 따라 자동 줄바꿈 */
+  gap:40px;
+  width:100%;
+  max-width:1000px;
+  align-items:start;
+  justify-content:center; /* ✅ 항상 중앙 정렬 */
+  margin:0 auto;
 }
 
 .award-grid-inner .award-card {
-  flex: 0 0 260px;        /* ✅ 카드 너비 고정 (기존 max-width: 260px와 맞춤) */
+  flex:0 0 260px;        /* ✅ 카드 너비 고정 (기존 max-width:260px와 맞춤) */
   width: 260px;
 }
 
 /* [2] 오프닝 & 음악 부문만 적용되는 특별 그리드 */
 .award-section.special-layout .award-grid-inner {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);  /* ✅ 2열 고정 */
-    gap: 60px;
-    max-width: 900px;                        /* ✅ 2열에 맞게 너비 축소 */
-    justify-items: center;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);  /* ✅ 2열 고정 */
+    gap:60px;
+    max-width:900px;                        /* ✅ 2열에 맞게 너비 축소 */
+    justify-items:center;
 }
 .award-section.special-layout .award-grid-inner .award-card {
-  flex: unset;                                      /* ✅ flex 고정 너비 해제 */
-  width: 100%;
-  max-width: 400px;
+  flex:unset;                                      /* ✅ flex 고정 너비 해제 */
+  width:100%;
+  max-width:400px;
 }
 
 .award-section.special-layout .award-grid-inner .award-card:last-child:nth-child(odd) {
-    grid-column: 1 / -1;
-    width: 50%;
-    justify-self: center;
+    grid-column:1 / -1;
+    width:50%;
+    justify-self:center;
 }
 
 /* [3] 해당 섹션 내의 카드 크기만 조절 */
 .award-section.special-layout .award-grid-inner .award-card.ost-award-card,
 .award-section.special-layout .award-grid-inner .award-card.ost-award-card:last-child:nth-child(odd) {
-    box-sizing: border-box;
-    width: min(100%, 320px);
-    max-width: 320px;
+    box-sizing:border-box;
+    width:min(100%, 320px);
+    max-width:320px;
 }
 
 .award-section.special-layout .award-card.ratio-16-9 {
-    max-width: 400px; /* 기존 260px 제한 해제 및 확장 */
-    width: 100%;
-    margin: 0 auto;
+    max-width:400px; /* 기존 260px 제한 해제 및 확장 */
+    width:100%;
+    margin:0 auto;
 }
 
 /* [4] 이미지 꽉 채우기 (여백 제거) */
 .award-section.special-layout .award-thumb {
-    object-fit: cover;
+    object-fit:cover;
 }
 
 /* [5] 모바일 대응 */
-@media (max-width: 768px) {
+@media (max-width:768px) {
     .award-section.special-layout .award-grid-inner {
-        grid-template-columns: 1fr; /* 모바일은 한 줄로 */
+        grid-template-columns:1fr; /* 모바일은 한 줄로 */
     }
     .award-section.special-layout .award-card.ratio-16-9 {
-        max-width: 100%;
+        max-width:100%;
     }
 }
 
@@ -316,153 +318,153 @@ h1 {
     카드 디자인 & 비율 (Core)
 ================================ */
 .award-card {
-  background: #111;
-  border: 1px solid #222;
-  border-radius: 12px;
-  padding: 15px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  /* width: 100%로 두어야 grid의 minmax 설정에 따라 유동적으로 변합니다 */
+  background:var(--surface-sunken);
+  border:1px solid var(--surface-raised);
+  border-radius:12px;
+  padding:15px;
+  transition:all 0.3s ease;
+  cursor:pointer;
+  /* width:100%로 두어야 grid의 minmax 설정에 따라 유동적으로 변합니다 */
   max-width: 260px;
-  width: 100%; 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto; /* 그리드 내부에서 중앙 배치 */
-  position: relative; /* 삭제 아이콘 배치를 위한 상대 위치 */
+  width:100%; 
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  margin:0 auto; /* 그리드 내부에서 중앙 배치 */
+  position:relative; /* 삭제 아이콘 배치를 위한 상대 위치 */
 }
 
 .award-card:hover {
-  transform: translateY(-8px);
-  border-color: #444;
+  transform:translateY(-8px);
+  border-color:var(--line);
 }
 
 .thumb-wrapper {
-  width: 100%;
-  background: #222;
-  border-radius: 8px;
-  overflow: hidden;
-  margin-bottom: 15px;
+  width:100%;
+  background:var(--surface-raised);
+  border-radius:8px;
+  overflow:hidden;
+  margin-bottom:15px;
   
 }
 
 .award-thumb {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
 }
 
 .award-thumb[src="./image/trophy/trophy.png"],
 .award-thumb[src*="trophy.png"], /* 경로 변형 대비 */
 .award-thumb.fallback-img {
-  object-fit: contain !important;
+  object-fit:contain !important;
 }
 
 /* 요청하신 비율 설정 */
-.ratio-16-9 .thumb-wrapper { aspect-ratio: 16 / 9; }
-.ratio-11-16 .thumb-wrapper { aspect-ratio: 11 / 16; object-fit: cover;}
-.ratio-poster .thumb-wrapper { aspect-ratio: 199 / 280; }
+.ratio-16-9 .thumb-wrapper { aspect-ratio:16 / 9; }
+.ratio-11-16 .thumb-wrapper { aspect-ratio:11 / 16; object-fit:cover;}
+.ratio-poster .thumb-wrapper { aspect-ratio:199 / 280; }
 /* 올해의 시리즈 섹션만 별도 지정하고 싶을 때 */
 .award-section:last-child .award-grid-inner {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start; /* 높이가 달라도 윗줄을 맞춤 */
-  gap: 60px; /* 고정된 간격 */
-  flex-wrap: wrap;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:flex-start; /* 높이가 달라도 윗줄을 맞춤 */
+  gap:60px; /* 고정된 간격 */
+  flex-wrap:wrap;
 }
 
 .award-name {
-  font-size: 1.1rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 8px;
-  color: #eee;
+  font-size:1.1rem;
+  font-weight:700;
+  text-align:center;
+  margin-bottom:8px;
+  color:var(--text-body);
 }
 
 .award-winner {
-  font-size: 0.95rem;
-  text-align: center;
-  color: #666;
+  font-size:0.95rem;
+  text-align:center;
+  color:var(--text-muted);
 }
 
 /* 수상 시 스타일 */
 .award-card.has-winner {
-  border-color: gold;
-  background: linear-gradient(145deg, #1a1a1a, #050505);
+  border-color:var(--gold);
+  background:linear-gradient(145deg, var(--surface), var(--bg));
 }
 
 .award-card.has-winner .award-winner {
-  color: gold;
-  font-weight: 700;
+  color:var(--gold);
+  font-weight:700;
 }
 
 
 /* 스튜디오 및 OST 카드의 정사각형 이미지 */
 .award-card.ratio-1-1 .thumb-wrapper {
-    width: 100%;
-    aspect-ratio: 1 / 1; /* 정사각형 비율 고정 */
-    overflow: hidden;
-    border-radius: 12px; /* 디자인에 맞춰 조절 */
+    width:100%;
+    aspect-ratio:1 / 1; /* 정사각형 비율 고정 */
+    overflow:hidden;
+    border-radius:12px; /* 디자인에 맞춰 조절 */
 }
 .award-card.ratio-1-1 .award-thumb {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
 /* 1등 (대상): 정중앙 */
 .award-card.rank-1 {
-  order: 2; /* 두 번째 위치 (중앙) */
-  border: 2px solid gold;
-  box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
-  z-index: 10;
+  order:2; /* 두 번째 위치 (중앙) */
+  border:2px solid var(--gold);
+  box-shadow:0 0 30px rgba(201, 165, 90, 0.4);
+  z-index:10;
 }
 
 /* 2등 (최우수상): 오른쪽 */
 .award-card.rank-2 {
-  order: 3; /* 세 번째 위치 (오른쪽) */
-  border-color: silver;
-  z-index: 5;
+  order:3; /* 세 번째 위치 (오른쪽) */
+  border-color:silver;
+  z-index:5;
 }
 
 /* 3등 (우수상): 왼쪽 */
 .award-card.rank-3 {
-  order: 1; /* 첫 번째 위치 (왼쪽) */
-  border-color: #cd7f32;
-  z-index: 1;
+  order:1; /* 첫 번째 위치 (왼쪽) */
+  border-color:#cd7f32;
+  z-index:1;
 }
 
 /* 시상대 아래 빈 공간 방지 및 애니메이션 */
 .award-card.rank-1, .award-card.rank-2, .award-card.rank-3 {
-  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition:transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .award-card.ratio-16-9 .thumb-wrapper {
-  aspect-ratio: 16 / 9; /* 가로 비율 고정 */
-  background: #1a1a1a;  /* 로고가 돋보이도록 배경색 조정 */
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  aspect-ratio:16 / 9; /* 가로 비율 고정 */
+  background:var(--surface);  /* 로고가 돋보이도록 배경색 조정 */
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
 .award-card.ratio-16-9 .award-thumb {
-  width: 90%;          /* 이미지(로고)가 꽉 차지 않게 여백 부여 */
-  height: 90%;
-  object-fit: contain; /* 로고가 잘리지 않고 전체가 다 보이게 함 */
+  width:90%;          /* 이미지(로고)가 꽉 차지 않게 여백 부여 */
+  height:90%;
+  object-fit:contain; /* 로고가 잘리지 않고 전체가 다 보이게 함 */
 }
 
 /* 솟아오르는 애니메이션 정의 */
 @keyframes slideUpFade {
   0% {
-    opacity: 0;
-    transform: translateY(100px); /* 100px 아래에서 시작 */
+    opacity:0;
+    transform:translateY(100px); /* 100px 아래에서 시작 */
   }
   100% {
-    opacity: 1;
+    opacity:1;
     /* 최종 위치는 아래 개별 설정(rank-1, 2, 3)에서 덮어씌워집니다 */
   }
 }
@@ -471,44 +473,44 @@ h1 {
 .award-card.rank-1, 
 .award-card.rank-2, 
 .award-card.rank-3 {
-  animation: slideUpFade 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-  opacity: 0; /* 애니메이션 시작 전에는 숨김 */
+  animation:slideUpFade 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  opacity:0; /* 애니메이션 시작 전에는 숨김 */
 }
 
 /* 등장 순서 차이 (Delay) */
 .award-card.rank-2 { 
-  animation-delay: 0.2s; /* 2등 먼저 */
+  animation-delay:0.2s; /* 2등 먼저 */
 }
 .award-card.rank-3 { 
-  animation-delay: 0.4s; /* 그 다음 3등 */
+  animation-delay:0.4s; /* 그 다음 3등 */
 }
 .award-card.rank-1 { 
-  animation-delay: 0.7s; /* 주인공인 1등이 마지막에 등장! */
+  animation-delay:0.7s; /* 주인공인 1등이 마지막에 등장! */
 }
 
-/* 최종 위치 고정 (중요: translateY를 유지해야 함) */
-.award-card.rank-1 { transform: translateY(-40px); }
-.award-card.rank-2 { transform: translateY(0); }
-.award-card.rank-3 { transform: translateY(20px); }
+/* 최종 위치 고정 (중요:translateY를 유지해야 함) */
+.award-card.rank-1 { transform:translateY(-40px); }
+.award-card.rank-2 { transform:translateY(0); }
+.award-card.rank-3 { transform:translateY(20px); }
 
 /* 애니메이션이 끝난 후에도 transform 상태를 유지하기 위해 @keyframes 수정이 필요할 수 있습니다 */
 @keyframes slideUpRank1 {
-  0% { opacity: 0; transform: translateY(100px); }
-  100% { opacity: 1; transform: translateY(-80px); }
+  0% { opacity:0; transform:translateY(100px); }
+  100% { opacity:1; transform:translateY(-80px); }
 }
 @keyframes slideUpRank2 {
-  0% { opacity: 0; transform: translateY(100px); }
-  100% { opacity: 1; transform: translateY(-20px); }
+  0% { opacity:0; transform:translateY(100px); }
+  100% { opacity:1; transform:translateY(-20px); }
 }
 @keyframes slideUpRank3 {
-  0% { opacity: 0; transform: translateY(100px); }
-  100% { opacity: 1; transform: translateY(40px); }
+  0% { opacity:0; transform:translateY(100px); }
+  100% { opacity:1; transform:translateY(40px); }
 }
 
 /* 각 카드에 개별 애니메이션 적용 */
-.award-card.rank-1 { animation: slideUpRank1 1s cubic-bezier(0.17, 0.67, 0.83, 1) forwards; animation-delay: 0.8s; }
-.award-card.rank-2 { animation: slideUpRank2 0.8s ease-out forwards; animation-delay: 0.2s; }
-.award-card.rank-3 { animation: slideUpRank3 0.8s ease-out forwards; animation-delay: 0.5s; }
+.award-card.rank-1 { animation:slideUpRank1 1s cubic-bezier(0.17, 0.67, 0.83, 1) forwards; animation-delay:0.8s; }
+.award-card.rank-2 { animation:slideUpRank2 0.8s ease-out forwards; animation-delay:0.2s; }
+.award-card.rank-3 { animation:slideUpRank3 0.8s ease-out forwards; animation-delay:0.5s; }
 
 /* ===============================
     새로 추가된 기능 (추가/삭제)
@@ -516,251 +518,251 @@ h1 {
 
 /* 우측 하단 플로팅 버튼 공통 */
 .floating-btn.bottom-right-btn {
-  position: fixed;
-  right: 30px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #222;
-  color: white;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-  z-index: 1000;
-  transition: all 0.2s;
+  position:fixed;
+  right:30px;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background-color:var(--surface-raised);
+  color:var(--text-body);
+  border:none;
+  font-size:24px;
+  cursor:pointer;
+  box-shadow:0 4px 15px rgba(0,0,0,0.3);
+  z-index:1000;
+  transition:all 0.2s;
 }
 
 .floating-btn.bottom-right-btn:hover {
-  transform: scale(1.1);
+  transform:scale(1.1);
 }
 
 /* 삭제 모드 활성화 시 버튼 색상 변경 */
 .floating-btn.bottom-right-btn.active {
-  background-color: #e11d48;
+  background-color:var(--accent);
 }
 
 /* 카드 추가 모달 폼 요소 */
 .form-group {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
+  margin-bottom:20px;
+  display:flex;
+  flex-direction:column;
 }
 .form-group label {
-  margin-bottom: 8px;
-  color: gold;
-  font-weight: bold;
+  margin-bottom:8px;
+  color:var(--gold);
+  font-weight:bold;
 }
 .form-group input, .form-group select {
-  padding: 12px;
-  border-radius: 8px;
-  border: 1px solid #444;
-  background: #111;
-  color: #fff;
-  font-size: 1rem;
+  padding:12px;
+  border-radius:8px;
+  border:1px solid var(--line);
+  background:var(--surface-sunken);
+  color:var(--text-body);
+  font-size:1rem;
 }
 
 .gold-btn {
-  width: 100%;
-  padding: 15px;
-  background: linear-gradient(135deg, gold, #aa8a2e);
-  color: #000;
-  font-weight: 900;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 1.1rem;
+  width:100%;
+  padding:15px;
+  background:linear-gradient(135deg, var(--gold), var(--gold));
+  color:var(--surface-sunken);
+  font-weight:900;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  font-size:1.1rem;
 }
 
 /* ===============================
    카드 삭제 모드 시각 효과
 ================================ */
 body.delete-mode .award-card {
-  border-color: #e11d48 !important;
-  animation: shake 0.4s infinite;
+  border-color:var(--accent) !important;
+  animation:shake 0.4s infinite;
 }
 
 body.delete-mode .award-card::after {
-  content: '🗑️';
-  position: absolute;
-  top: -15px;
-  right: -15px;
-  background: #e11d48;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-  z-index: 20;
+  content:'🗑️';
+  position:absolute;
+  top:-15px;
+  right:-15px;
+  background:var(--accent);
+  border-radius:50%;
+  width:35px;
+  height:35px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:16px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.5);
+  z-index:20;
 }
 
 @keyframes shake {
-  0% { transform: rotate(0deg); }
-  25% { transform: rotate(-1deg); }
-  50% { transform: rotate(0deg); }
-  75% { transform: rotate(1deg); }
-  100% { transform: rotate(0deg); }
+  0% { transform:rotate(0deg); }
+  25% { transform:rotate(-1deg); }
+  50% { transform:rotate(0deg); }
+  75% { transform:rotate(1deg); }
+  100% { transform:rotate(0deg); }
 }
 
-.hidden { display: none !important; }
+.hidden { display:none !important; }
 
 .season-select-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 9999;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+  z-index:9999;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-  padding: 40px 20px;
-  text-align: center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:24px;
+  padding:40px 20px;
+  text-align:center;
 
-  background: rgba(5, 5, 5, 0.97);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  background:rgba(18, 7, 10, 0.97);
+  backdrop-filter:blur(6px);
+  -webkit-backdrop-filter:blur(6px);
 
-  opacity: 1;
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  opacity:1;
+  transition:opacity 0.4s ease, transform 0.4s ease;
 }
 
 /* 사라질 때 */
 .season-select-screen.fade-out {
-  opacity: 0;
-  transform: translateY(-30px);
-  pointer-events: none;
+  opacity:0;
+  transform:translateY(-30px);
+  pointer-events:none;
 }
 
 /* content-area는 뒤에서 서서히 나타나도록 */
 #content-area {
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.5s ease;
+  opacity:0;
+  pointer-events:none;
+  transition:opacity 0.5s ease;
 }
 
 #content-area.visible {
-  opacity: 1;
-  pointer-events: auto;
+  opacity:1;
+  pointer-events:auto;
 }
 
 .hero-subtitle {
-  color: #d4af37;
-  letter-spacing: 4px;
-  font-size: 0.85rem;
+  color:var(--gold);
+  letter-spacing:4px;
+  font-size:0.85rem;
 }
 
 .hero-title {
-  font-size: 3rem;
-  font-weight: 800;
-  color: #f5f5f5;
-  letter-spacing: 2px;
-  margin-bottom: 12px;
+  font-size:3rem;
+  font-weight:800;
+  color:var(--text-body);
+  letter-spacing:2px;
+  margin-bottom:12px;
 }
 
 .season-card-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
-  max-width: 800px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:16px;
+  max-width:800px;
 }
 
 .season-card {
-  width: 120px;
-  height: 100px;
-  border: 1px solid #444;
-  border-radius: 14px;
-  background: #111;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.2s ease;
+  width:120px;
+  height:100px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:var(--surface-sunken);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  transition:all 0.2s ease;
 }
 
 .season-card:hover {
-  border-color: #d4af37;
-  transform: translateY(-4px);
+  border-color:var(--gold);
+  transform:translateY(-4px);
 }
 
 .season-card.selected {
-  background: #d4af37;
-  border-color: #d4af37;
+  background:var(--gold);
+  border-color:var(--gold);
 }
 
 .season-card.selected .season-card-main,
 .season-card.selected .season-card-sub {
-  color: #111;
+  color:var(--surface-sunken);
 }
 
 .season-card-main {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #f5f5f5;
+  font-size:1.4rem;
+  font-weight:700;
+  color:var(--text-body);
 }
 
 .season-card-sub {
-  font-size: 0.75rem;
-  color: #999;
-  margin-top: 4px;
+  font-size:0.75rem;
+  color:var(--text-muted);
+  margin-top:4px;
 }
 
-.quarter-grid { margin-top: 8px; }
+.quarter-grid { margin-top:8px; }
 
-#season-selection-controls { color: #ccc; max-width: 700px; }
-#season-selection-controls p { margin: 8px 0; line-height: 1.5; }
+#season-selection-controls { color:var(--text-body); max-width:700px; }
+#season-selection-controls p { margin:8px 0; line-height:1.5; }
 #season-start-btn {
-  margin-top: 12px; padding: 13px 25px; border: 1px solid #d4af37;
-  border-radius: 10px; background: #d4af37; color: #111;
-  font: inherit; font-weight: 700; cursor: pointer;
+  margin-top:12px; padding:13px 25px; border:1px solid var(--gold);
+  border-radius:10px; background:var(--gold); color:var(--surface-sunken);
+  font:inherit; font-weight:700; cursor:pointer;
 }
-#season-start-btn:disabled { opacity: .4; cursor: not-allowed; }
-.season-card { font-family: inherit; flex-shrink: 0; }
-.season-card:focus-visible, #season-start-btn:focus-visible { outline: 3px solid white; outline-offset: 4px; }
-.season-select-screen { overflow-y: auto; }
-@media (max-height: 760px) {
-  .season-select-screen { justify-content: flex-start; gap: 16px; }
-  .hero-title { font-size: 2rem; }
+#season-start-btn:disabled { opacity:.4; cursor:not-allowed; }
+.season-card { font-family:inherit; flex-shrink:0; }
+.season-card:focus-visible, #season-start-btn:focus-visible { outline:3px solid var(--text-body); outline-offset:4px; }
+.season-select-screen { overflow-y:auto; }
+@media (max-height:760px) {
+  .season-select-screen { justify-content:flex-start; gap:16px; }
+  .hero-title { font-size:2rem; }
 }
 
 .title-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:16px;
 }
 
 .change-season-btn {
-  background: transparent;
-  border: 1px solid #d4af37;
-  color: #d4af37;
-  border-radius: 20px;
-  padding: 6px 14px;
-  font-size: 0.8rem;
-  cursor: pointer;
+  background:transparent;
+  border:1px solid var(--gold);
+  color:var(--gold);
+  border-radius:20px;
+  padding:6px 14px;
+  font-size:0.8rem;
+  cursor:pointer;
 }
 
 .change-season-btn:hover {
-  background: #d4af37;
-  color: #111;
+  background:var(--gold);
+  color:var(--surface-sunken);
 }
 
-/* 부문별 정지 트로피: 모든 카드 비율에서 전체 실루엣을 표시한다. */
+/* 부문별 정지 트로피:모든 카드 비율에서 전체 실루엣을 표시한다. */
 .award-card .thumb-wrapper:has(.award-trophy) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 .award-card .thumb-wrapper .award-thumb.award-trophy {
-  width: 88%;
-  height: 88%;
-  object-fit: contain;
+  width:88%;
+  height:88%;
+  object-fit:contain;
 }

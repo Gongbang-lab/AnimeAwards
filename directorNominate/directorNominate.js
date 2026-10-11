@@ -255,12 +255,9 @@ function updatePreview() {
         const div = document.createElement('div');
         div.className = 'preview-item';
         
-        div.innerHTML = `
-            ${item.director}
-            <br><small style="color:#888; font-size:0.75rem;">${item.works ? item.works.length : 0}개의 작품</small>
-        `;
+        const removeButton = NominateCommon.setupPreviewItem(div, item.director);
         
-        div.onclick = () => {
+        removeButton.onclick = () => {
             if (dirState.step === 1) {
                 removeDirector(item.director);
             }

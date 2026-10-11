@@ -84,12 +84,9 @@ function updatePreview() {
         previewEl.className = "preview-item";
         
         const worksCount = item.works ? item.works.length : 0;
-        previewEl.innerHTML = `
-            ${item.studio}
-            <br><small style="color:#888; font-size:0.75rem;">작품수 ${worksCount}개</small>
-        `;
+        const removeButton = NominateCommon.setupPreviewItem(previewEl, item.studio);
         
-        previewEl.onclick = () => {
+        removeButton.onclick = () => {
             studioState.nominees = studioState.nominees.filter(s => s.studio !== item.studio);
             
             renderStudioAccordionGroups();

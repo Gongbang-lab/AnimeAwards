@@ -696,15 +696,9 @@ function updatePreview() {
 
             item.className = "preview-item";
 
-            item.innerHTML = `
-                ${escapeHTML(cv.name)}
-                <br>
-                <small style="color:#888;">
-                    ${cv.characters.length}개 작품 참여
-                </small>
-            `;
+            const removeButton = NominateCommon.setupPreviewItem(item, cv.name);
 
-            item.onclick = () =>
+            removeButton.onclick = () =>
                 removeCV(cv);
 
             list.appendChild(item);
