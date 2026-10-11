@@ -918,7 +918,7 @@ var CharacterData_2026 = [
       "gender": "male",
       "cvId": 129351,
       "cv": "이노우에 호노카",
-      "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Insuke.webp"
+      "img": "image/charimg/2026/Q1/Hime-sama,_Goumon_no_Jikan_desu_2nd_Season/Inki.webp"
     },
     {
       "characterId": 328216,
@@ -15526,7 +15526,7 @@ var CharacterData_2026 = [
     },
     {
       "characterId": 396043,
-      "name": "사쿠라",
+      "name": "미하루",
       "gender": "female",
       "cvId": 330994,
       "cv": "타카기시 미리아",
@@ -15622,7 +15622,7 @@ var CharacterData_2026 = [
     },
     {
       "characterId": 398317,
-      "name": "마리",
+      "name": "아마노 소라",
       "gender": "female",
       "cvId": 135200,
       "cv": "카미죠 사에코",
@@ -19509,7 +19509,7 @@ var CharacterData_2026 = [
     },
     {
       "characterId": 400234,
-      "name": "코이케 칸페키",
+      "name": "시오키 키코",
       "gender": "female",
       "cvId": 400217,
       "cv": "야나기 코헤이",
@@ -22549,7 +22549,7 @@ var CharacterData_2026 = [
     },
     {
       "characterId": 125917,
-      "name": "이케고시 유이치",
+      "name": "이마무라 코헤이",
       "gender": "male",
       "cvId": 96762,
       "cv": "키무라 료헤이",
@@ -25610,7 +25610,7 @@ var CharacterData_2026 = [
     },
     {
       "characterId": 403305,
-      "name": "소가 카츠키",
+      "name": "카마이리 아이노조",
       "gender": "male",
       "cvId": 390766,
       "cv": "나카무라 코우키",
@@ -29259,14 +29259,6 @@ var CharacterData_2026 = [
     },
     {
       "characterId": 407813,
-      "name": "不良",
-      "gender": "male",
-      "cvId": 373724,
-      "cv": "카타마리 미즈카와",
-      "img": "image/charimg/2026/Q3/Let's_Go_Kaikigumi/Furyou.webp"
-    },
-    {
-      "characterId": 407814,
       "name": "不良",
       "gender": "male",
       "cvId": 373724,

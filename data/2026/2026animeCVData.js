@@ -4147,8 +4147,8 @@ var CharacterVoiceData_2026 = [
   },
   {
     "id": 129351,
-    "name": "이노우에 호노카",
-    "cvimg": "image/cvimg/이노우에 호노카.webp",
+    "name": "토마리 아스나",
+    "cvimg": "image/cvimg/토마리 아스나.webp",
     "gender": "female"
   },
   {

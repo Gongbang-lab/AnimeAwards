@@ -290,6 +290,13 @@ body {
     border-bottom:1px solid var(--line);
 }
 
+.work-card-title.merged-work-title {
+    display: block;
+    -webkit-line-clamp: unset;
+    line-clamp: unset;
+    overflow: visible;
+}
+
 .work-card-info {
     padding:12px 10px;
     text-align:center;

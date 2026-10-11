@@ -1018,6 +1018,27 @@ function handleBack() {
  * Detail / Winner modal
  * --------------------------------------------------------- */
 
+// 이미 선택 시즌으로 필터링된 배역을 표시할 때만 통합한다.
+// 원본 출연 기록과 작품 수, 저장 데이터는 그대로 유지한다.
+function getDisplayRoles(roles) {
+    const grouped = new Map();
+    roles.forEach((role, index) => {
+        const key = normalizeId(role.characterId) ?? `unknown-${index}`;
+        if (!grouped.has(key)) {
+            grouped.set(key, { ...role, animeTitles: [], characterNames: [] });
+        }
+        const group = grouped.get(key);
+        if (!group.animeTitles.includes(role.animeTitle)) group.animeTitles.push(role.animeTitle);
+        if (!group.characterNames.includes(role.charName)) group.characterNames.push(role.charName);
+        if (!group.img && role.img) group.img = role.img;
+    });
+    return [...grouped.values()].map(group => ({
+        ...group,
+        animeTitle: group.animeTitles.join(" / "),
+        charName: group.characterNames.join(" / ")
+    }));
+}
+
 function openDetailModal(cv) {
     const modal =
         safeGet("cv-detail-modal");
@@ -1052,7 +1073,7 @@ function openDetailModal(cv) {
     worksContainer.innerHTML =
         "";
 
-    cv.characters.forEach(char => {
+    getDisplayRoles(cv.characters).forEach(char => {
         const workCard =
             document.createElement("div");
 
@@ -1088,6 +1109,8 @@ function openDetailModal(cv) {
 
         animeTitle.className =
             "work-card-title";
+        if (char.animeTitles.length > 1) animeTitle.classList.add("merged-work-title");
+        animeTitle.title = char.animeTitle;
 
         animeTitle.textContent =
             char.animeTitle;
@@ -1149,7 +1172,7 @@ function openWinnerModal() {
         winner.name;
 
     const rows =
-        winner.characters.map(char => `
+        getDisplayRoles(winner.characters).map(char => `
             <div class="info-row">
                 <span class="info-label">
                     ${escapeHTML(char.animeTitle)}
