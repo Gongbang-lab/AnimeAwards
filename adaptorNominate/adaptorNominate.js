@@ -123,6 +123,7 @@ function renderStep1(filterText = "") {
             qContent.appendChild(dayDiv);
         });
 
+        NominateCommon.setupDayButtons(qContent, qKey, { searching: isSearching });
         if (showQuarterAccordion) leftArea.appendChild(qSection);
     });
 

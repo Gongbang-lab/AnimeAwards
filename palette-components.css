@@ -31,6 +31,41 @@ dialog.nomination-guide { background: var(--surface); color: var(--text-body); b
 .single-award-modal #single-award-heading, .single-award-name { color: var(--text); }
 
 /* 공통 후보 미리보기: 제목 한 줄 + 오른쪽 해제 버튼 */
+.nominate-day-buttons { display: flex; flex-wrap: wrap; gap: 8px; padding: 20px 20px 12px; }
+.nominate-day-button {
+  width: auto; padding: 10px 15px; border: 1px solid var(--line); border-radius: 8px;
+  background: var(--surface-raised); color: var(--text-muted); font: inherit; font-size: .9rem;
+  cursor: pointer;
+}
+.nominate-day-button:hover { background: var(--surface-hover); color: var(--text-body); }
+.nominate-day-button.active { background: var(--gold-tint); color: var(--text); border-color: var(--gold); }
+.nominate-day-button:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+.nominate-day-panel[hidden] { display: none !important; }
+@media (max-width: 600px) {
+  .nominate-day-buttons { padding: 16px 12px 10px; gap: 6px; }
+  .nominate-day-button { padding: 9px 12px; }
+}
+
+/* 긴 한 줄 제목의 최소 너비가 부모 flex 영역을 밀어내지 않도록 한다. */
+.container > .content-area,
+.container > .sidebar {
+  min-width: 0;
+  box-sizing: border-box;
+}
+.sidebar .sticky-content,
+.sidebar .fixed-sidebar-content,
+.sidebar .action-buttons-vertical,
+.sidebar .preview-container,
+.sidebar .preview-box,
+.sidebar .status-indicator,
+.sidebar .preview-list,
+.sidebar #preview-list {
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.sidebar .preview-box,
+.sidebar .status-indicator { overflow-x: hidden; }
 .preview-box { padding: 10px; }
 .preview-item.compact-preview-item {
   position: relative; display: flex; flex-direction: row; flex-wrap: nowrap;
@@ -47,7 +82,9 @@ dialog.nomination-guide { background: var(--surface); color: var(--text-body); b
 .compact-preview-item .preview-title,
 .compact-preview-item:hover .preview-title {
   flex: 1; min-width: 0; color: var(--text); font-size: .85rem; font-weight: 500;
-  text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  display: block; text-align: left; white-space: normal;
+  overflow-wrap: anywhere; word-break: normal; line-height: 1.5;
+  padding: 8px 0; overflow: visible; text-overflow: clip;
 }
 .compact-preview-item .preview-remove {
   position: absolute; right: 4px; top: 50%; transform: translateY(-50%);

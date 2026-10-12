@@ -50,7 +50,7 @@ function groupData(list) {
 }
 
 // --- [ Step 1: 아코디언 렌더링 ] ---
-function renderAccordion(data) {
+function renderAccordion(data, searching = false) {
     els.accordion.innerHTML = '';
     const sortedQuarters = Object.keys(data).sort();
     
@@ -82,6 +82,8 @@ function renderAccordion(data) {
             }
         });
 
+        NominateCommon.setupDayButtons(qContent, qKey, { searching });
+        if (searching) { qContent.classList.add("open"); qContent.style.maxHeight = "none"; }
         if (SeasonFilter.showQuarterAccordion()) {
             qDiv.append(qHeader, qContent);
             els.accordion.appendChild(qDiv);
@@ -109,7 +111,7 @@ function createAccHeader(text, headerClass) {
             if (content.classList.contains('level-2-content')) {
                 content.style.maxHeight = 'none'; 
             } else {
-                content.style.maxHeight = content.scrollHeight + 100 + "px"; 
+                content.style.maxHeight = 'none';
             }
         }
         
@@ -204,18 +206,16 @@ function setupSearch() {
         const keyword = e.target.value.toLowerCase().trim();
         const isSearching = keyword.length > 0;
 
-        document.querySelectorAll('.anime-item').forEach(item => {
-            const match = item.dataset.title.includes(keyword);
-            item.style.display = match ? 'flex' : 'none';
-            
-            if(match && isSearching) {
-                let level2 = item.closest('.level-2-content');
-                if (level2) { level2.classList.add('open'); level2.style.maxHeight = 'none'; }
-                
-                let level1 = item.closest('.level-1-content');
-                if (level1) { level1.classList.add('open'); level1.style.maxHeight = 'none'; }
-            }
-        });
+        const matches = SeasonFilter.filterAnimeList(TVAnimeList)
+            .filter(anime => anime.title.toLowerCase().includes(keyword));
+        renderAccordion(groupData(matches), isSearching);
+        if (!matches.length) {
+            const empty = document.createElement('p');
+            empty.textContent = '검색 결과가 없습니다.';
+            empty.className = 'candidate-empty';
+            els.accordion.appendChild(empty);
+        }
+
     });
 }
 

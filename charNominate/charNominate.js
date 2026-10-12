@@ -212,6 +212,7 @@ function renderStep1(searchTerm = "") {
             qContent.appendChild(dContent);
         });
 
+        NominateCommon.setupDayButtons(qContent, qName, { searching: isSearching, display: "block" });
         if (showQuarterAccordion) left.appendChild(qSection);
     });
 

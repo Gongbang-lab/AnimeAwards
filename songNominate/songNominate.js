@@ -163,6 +163,7 @@ function renderFilteredList(query) {
                 quarterContent.append(dayBtn, dayList);
             });
 
+            NominateCommon.setupDayButtons(quarterContent, quarter, { searching: isSearching });
             if (showQuarterAccordion) listContainer.appendChild(quarterSection);
         }
     });
@@ -193,11 +194,11 @@ function createSongCard(song) {
     img.src = song.thumbnail;
     img.alt = "thumbnail";
 
-    const playOverlay = document.createElement("a");
+    const playOverlay = document.createElement("button");
+    playOverlay.type = "button";
     playOverlay.className = "play-overlay";
-    playOverlay.href = song.youtube;
-    playOverlay.target = "_blank";
-    playOverlay.onclick = (e) => e.stopPropagation();
+    playOverlay.setAttribute("aria-label", `${song.title} 재생`);
+    playOverlay.onclick = (e) => { e.stopPropagation(); openSongPlayer(song); };
     playOverlay.innerHTML = `<span class="play-icon">▶</span>`;
 
     thumb.appendChild(img);
@@ -279,9 +280,9 @@ function renderSongStep2() {
             <div class="card-badge">${displayQuarter}</div>
             <div class="card-thumb">
                 <img src="${song.thumbnail}" alt="thumbnail" onerror="this.src='../image/no-image.svg'">
-                <a class="play-overlay" href="${song.youtube}" target="_blank" onclick="event.stopPropagation();">
+                <button type="button" class="play-overlay" aria-label="영상 재생">
                     <span class="play-icon">▶</span>
-                </a>
+                </button>
             </div>
             <div class="step2-card-info">
                 <div class="card-title">${song.title}</div>
@@ -289,6 +290,10 @@ function renderSongStep2() {
             </div>
         `;
 
+        card.querySelector('.play-overlay').onclick = event => {
+            event.stopPropagation();
+            openSongPlayer(song);
+        };
         card.onclick = () => {
             document.querySelectorAll(".step2-song-card").forEach(c => c.classList.remove("selected"));
             card.classList.add("selected");
@@ -332,6 +337,11 @@ function openSongAwardPopup() {
 
     document.getElementById("winner-thumb").src = winner.thumbnail;
     document.getElementById("popup-youtube-link").href = winner.youtube;
+    document.getElementById("popup-youtube-link").onclick = event => {
+        event.preventDefault();
+        event.stopPropagation();
+        openSongPlayer(winner);
+    };
     
     document.getElementById("winner-anime").textContent = winner.animeTitle;
     document.getElementById("winner-title").textContent = winner.title;
@@ -344,3 +354,56 @@ function openSongAwardPopup() {
         location.href = "../index.html";
     };
 }
+
+// 후보/최종 후보/수상 결과에서 동일한 단일 플레이어를 사용한다.
+const songPlayerModal = document.getElementById('song-player-modal');
+const songPlayerFrame = document.getElementById('song-player');
+let songPlayerOverflow = '';
+function openSongPlayer(song) {
+    let url = null, videoId = '';
+    try {
+        url = new URL(song.youtube);
+        if (!['https:', 'http:'].includes(url.protocol)) url = null;
+        if (url) {
+            const host = url.hostname.replace(/^www\./, '');
+            if (host === 'youtu.be') videoId = url.pathname.split('/')[1] || '';
+            else if (['youtube.com', 'm.youtube.com', 'music.youtube.com'].includes(host)) {
+                videoId = url.pathname === '/watch' ? url.searchParams.get('v') || ''
+                    : url.pathname.match(/^\/(?:embed|shorts|live)\/([^/]+)/)?.[1] || '';
+            }
+        }
+    } catch (_) {}
+    const playable = /^[A-Za-z0-9_-]{11}$/.test(videoId);
+    document.getElementById('song-player-title').textContent = song.title || '음악 영상';
+    document.getElementById('song-player-meta').textContent = [song.animeTitle, song.artist].filter(Boolean).join(' · ');
+    songPlayerFrame.removeAttribute('src');
+    songPlayerFrame.hidden = !playable;
+    songPlayerFrame.title = `${song.title} 재생`;
+    document.getElementById('song-player-empty').hidden = playable;
+    const link = document.getElementById('song-player-link');
+    link.hidden = !url;
+    if (url) link.href = url.href;
+    else link.removeAttribute('href');
+    if (playable) songPlayerFrame.src = `https://www.youtube.com/embed/${videoId}?playsinline=1&rel=0`;
+    if (!songPlayerModal.open) {
+        songPlayerOverflow = document.body.style.overflow;
+        document.body.style.overflow = 'hidden';
+        songPlayerModal.showModal();
+    }
+    document.getElementById('song-player-close').focus();
+}
+function closeSongPlayer() {
+    songPlayerFrame.removeAttribute('src');
+    songPlayerModal.close();
+}
+document.getElementById('song-player-close').onclick = closeSongPlayer;
+songPlayerModal.addEventListener('cancel', event => { event.preventDefault(); closeSongPlayer(); });
+songPlayerModal.addEventListener('close', () => {
+    songPlayerFrame.removeAttribute('src');
+    document.body.style.overflow = songPlayerOverflow;
+});
+songPlayerModal.addEventListener('click', event => {
+    if (event.target !== songPlayerModal) return;
+    const box = songPlayerModal.getBoundingClientRect();
+    if (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) closeSongPlayer();
+});

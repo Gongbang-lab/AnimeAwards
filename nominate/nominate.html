@@ -55,7 +55,17 @@
       <button id="pv-modal-close" class="pv-modal-close" type="button" aria-label="모달 닫기">&times;</button>
       <h2 id="pv-modal-title" class="modal-header">작품 PV</h2>
       <hr class="modal-divider">
-      <div id="pv-card-grid" class="pv-card-grid"></div>
+      <div id="pv-track-buttons" class="pv-track-buttons" role="group" aria-label="PV 선택"></div>
+      <div class="pv-player-frame">
+        <iframe id="pv-player" title="PV 재생" hidden
+          allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p id="pv-player-empty" class="pv-player-empty" role="status">등록된 PV가 없습니다.</p>
+      </div>
+      <div class="pv-player-footer">
+        <span>재생이 제한된 영상은 유튜브에서 확인해주세요.</span>
+        <a id="pv-external-link" target="_blank" rel="noopener noreferrer" hidden>유튜브에서 보기</a>
+      </div>
     </div>
   </div>
 

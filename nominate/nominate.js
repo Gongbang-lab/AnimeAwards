@@ -200,62 +200,79 @@ function getYouTubeVideoId(rawUrl) {
     }
 }
 
+let pvReturnFocus = null;
+let pvPreviousOverflow = "";
+
+function closePVModal() {
+    const modal = document.getElementById("pv-modal");
+    if (modal.classList.contains("hidden")) return;
+    document.getElementById("pv-player").removeAttribute("src");
+    modal.classList.add("hidden");
+    document.body.style.overflow = pvPreviousOverflow;
+    if (pvReturnFocus?.isConnected) pvReturnFocus.focus();
+}
+
 function openPVModal(anime) {
     const modal = document.getElementById("pv-modal");
-    const grid = document.getElementById("pv-card-grid");
+    const buttons = document.getElementById("pv-track-buttons");
+    const player = document.getElementById("pv-player");
+    const empty = document.getElementById("pv-player-empty");
+    const link = document.getElementById("pv-external-link");
     const tracks = (Array.isArray(anime.pv) ? anime.pv : [])
         .map((pv, index) => ({ title: String(pv?.title || "").trim() || `PV ${index + 1}`, url: String(pv?.url || "").trim() }))
         .filter(item => {
             try { return ['https:', 'http:'].includes(new URL(item.url).protocol); }
             catch { return false; }
         });
-
-    document.getElementById("pv-modal-title").textContent = `${anime.title} PV`;
-    grid.replaceChildren();
-    if (!tracks.length) {
-        const empty = document.createElement("p");
-        empty.className = "pv-empty";
-        empty.textContent = "등록된 PV가 없습니다.";
-        grid.appendChild(empty);
+    if (modal.classList.contains("hidden")) {
+        pvReturnFocus = document.activeElement;
+        pvPreviousOverflow = document.body.style.overflow;
     }
-
-    tracks.forEach(({ url, title: pvTitle }) => {
-        const videoId = getYouTubeVideoId(url);
-        const article = document.createElement("article");
-        article.className = "pv-video-card";
-        if (videoId) {
-            const link = document.createElement("a");
-            link.className = "pv-video-link";
-            link.href = url;
-            link.target = "_blank";
-            link.rel = "noopener noreferrer";
-            link.setAttribute("aria-label", `${pvTitle} 재생`);
-            const image = document.createElement("img");
-            image.src = `https://img.youtube.com/vi/${encodeURIComponent(videoId)}/hqdefault.jpg`;
-            image.alt = `${pvTitle} 썸네일`;
-            image.loading = "lazy";
-            link.appendChild(image);
-            const playIcon = document.createElement("span");
-            playIcon.className = "pv-play-icon";
-            playIcon.setAttribute("aria-hidden", "true");
-            link.appendChild(playIcon);
-            article.appendChild(link);
+    document.getElementById("pv-modal-title").textContent = `${anime.title} PV`;
+    buttons.replaceChildren();
+    player.removeAttribute("src");
+    player.hidden = true;
+    empty.hidden = false;
+    empty.textContent = "등록된 PV가 없습니다.";
+    link.hidden = true;
+    let selectedIndex = -1;
+    const selectTrack = index => {
+        if (selectedIndex === index) return;
+        selectedIndex = index;
+        const track = tracks[index];
+        buttons.querySelectorAll("button").forEach((button, i) => {
+            button.classList.toggle("active", i === index);
+            button.setAttribute("aria-pressed", String(i === index));
+        });
+        const videoId = getYouTubeVideoId(track.url);
+        const playable = /^[A-Za-z0-9_-]{11}$/.test(videoId);
+        player.removeAttribute("src");
+        player.hidden = !playable;
+        player.title = `${anime.title} — ${track.title}`;
+        empty.hidden = playable;
+        if (playable) {
+            player.src = `https://www.youtube.com/embed/${videoId}?playsinline=1&rel=0`;
         } else {
-            const link = document.createElement("a");
-            link.className = "pv-video-link pv-invalid-thumbnail";
-            link.href = url;
-            link.target = "_blank";
-            link.rel = "noopener noreferrer";
-            link.textContent = "PV 열기";
-            article.appendChild(link);
+            empty.textContent = "이 링크는 모달에서 재생할 수 없습니다. 원본 링크에서 확인해주세요.";
         }
-        const title = document.createElement("p");
-        title.className = "pv-video-title";
-        title.textContent = pvTitle;
-        article.appendChild(title);
-        grid.appendChild(article);
+        link.href = track.url;
+        link.textContent = playable ? "유튜브에서 보기" : "원본 링크에서 보기";
+        link.hidden = false;
+    };
+    tracks.forEach((track, index) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "pv-track-button";
+        button.textContent = track.title;
+        button.setAttribute("aria-controls", "pv-player");
+        button.onclick = () => selectTrack(index);
+        buttons.appendChild(button);
     });
+    if (tracks.length) selectTrack(0);
+    document.body.style.overflow = "hidden";
     modal.classList.remove("hidden");
+    modal.querySelector(".pv-modal-content").scrollTop = 0;
+    document.getElementById("pv-modal-close").focus();
 }
 
 function isPVNomination() {
@@ -561,9 +578,20 @@ if(btnGoMain) btnGoMain.onclick = () => location.href = "../index.html";
 
 const pvModal = document.getElementById("pv-modal");
 const pvModalClose = document.getElementById("pv-modal-close");
-if (pvModalClose) pvModalClose.onclick = () => pvModal.classList.add("hidden");
+if (pvModalClose) pvModalClose.onclick = closePVModal;
 if (pvModal) pvModal.addEventListener("click", event => {
-    if (event.target === pvModal) pvModal.classList.add("hidden");
+    if (event.target === pvModal) closePVModal();
+});
+
+document.addEventListener("keydown", event => {
+    if (!pvModal || pvModal.classList.contains("hidden")) return;
+    if (event.key === "Escape") closePVModal();
+    if (event.key === "Tab") {
+        const focusable = [...pvModal.querySelectorAll('button, a[href], iframe')].filter(el => !el.hidden && !el.disabled);
+        const first = focusable[0], last = focusable[focusable.length - 1];
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+    }
 });
 
 // ──────────────────────────────────────────────────────────

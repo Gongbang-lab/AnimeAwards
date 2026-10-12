@@ -86,6 +86,24 @@
   </div>
 </div>
 
+    <dialog id="song-player-modal" aria-labelledby="song-player-title">
+      <div class="song-player-header">
+        <h2 id="song-player-title"></h2>
+        <button type="button" id="song-player-close" aria-label="재생 모달 닫기">×</button>
+      </div>
+      <p id="song-player-meta"></p>
+      <div class="song-player-frame">
+        <iframe id="song-player" title="음악 영상 재생" hidden
+          allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p id="song-player-empty" hidden>이 링크는 모달에서 재생할 수 없습니다.</p>
+      </div>
+      <div class="song-player-footer">
+        <span>재생이 제한된 영상은 유튜브에서 확인해주세요.</span>
+        <a id="song-player-link" target="_blank" rel="noopener noreferrer">유튜브에서 보기</a>
+      </div>
+    </dialog>
+
     <script src="../data/manifest.js"></script>
     <script src="../resultStorage.js"></script>
     <script src="../data/2026/2026animeData.js"></script>

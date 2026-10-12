@@ -209,6 +209,7 @@
         wrapper.append(button, grid);
         content.appendChild(wrapper);
       }
+      NominateCommon.setupDayButtons(content, quarter, { searching });
     }
     if (!eligibleWorks.length) {
       const empty = document.createElement("p");

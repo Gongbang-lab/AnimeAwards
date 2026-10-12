@@ -154,6 +154,7 @@ function renderStep1(searchTerm = "") {
             qWrapper.appendChild(dContent);
         });
 
+        NominateCommon.setupDayButtons(qWrapper, q, { searching: isSearching });
         if (showQuarterAccordion) display.appendChild(section);
     });
     

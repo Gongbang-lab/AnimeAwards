@@ -148,7 +148,55 @@
         return remove;
     }
 
+    const selectedDays = new Map();
+    let dayPanelSequence = 0;
+    function setupDayButtons(container, key, { searching = false, display = 'grid' } = {}) {
+        const oldButtons = [...container.querySelectorAll('.day-btn, .level-2-header')];
+        if (!oldButtons.length) return;
+        const toolbar = document.createElement('div');
+        toolbar.className = 'nominate-day-buttons';
+        toolbar.setAttribute('role', 'group');
+        toolbar.setAttribute('aria-label', `${key} 요일 선택`);
+        const entries = oldButtons.map(old => {
+            const panel = old.nextElementSibling;
+            const wrapper = old.parentElement;
+            const label = (old.querySelector('span')?.textContent || old.firstChild?.textContent || old.textContent).trim();
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'nominate-day-button';
+            button.textContent = label;
+            panel.id = `nominate-day-panel-${++dayPanelSequence}`;
+            button.setAttribute('aria-controls', panel.id);
+            panel.classList.remove('hidden');
+            panel.classList.add('nominate-day-panel');
+            old.remove();
+            container.appendChild(panel);
+            if (wrapper !== container && !wrapper.children.length) wrapper.remove();
+            toolbar.appendChild(button);
+            return { button, panel, label };
+        });
+        container.prepend(toolbar);
+        const choose = entry => {
+            entries.forEach(item => {
+                const active = item === entry;
+                item.button.classList.toggle('active', active);
+                item.button.setAttribute('aria-pressed', String(active));
+                item.panel.hidden = !active;
+                item.panel.style.display = active ? display : 'none';
+                item.panel.style.maxHeight = active ? 'none' : '';
+                item.panel.classList.toggle('active', active);
+                item.panel.classList.toggle('open', active);
+            });
+        };
+        entries.forEach(entry => entry.button.onclick = () => {
+            selectedDays.set(key, entry.label);
+            choose(entry);
+        });
+        choose((!searching && entries.find(entry => entry.label === selectedDays.get(key))) || entries[0]);
+    }
+
     global.NominateCommon = {
+        setupDayButtons,
         setupPreviewItem,
         imageSource,
         installImageFallback,

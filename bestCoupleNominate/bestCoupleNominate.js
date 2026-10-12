@@ -144,6 +144,7 @@ function renderAnimeCards() {
             daySection.append(dayButton, dayContent);
             quarterContent.appendChild(daySection);
         });
+        NominateCommon.setupDayButtons(quarterContent, quarter);
         if (showQuarterAccordion) animeCardGrid.appendChild(quarterSection);
     });
 
