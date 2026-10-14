@@ -17,6 +17,9 @@ function isMemeVideo(source) {
 }
 
 const memeState = {
+    step: 1,
+    candidateIds: new Set(),
+    sources: new Map(),
     selectedMeme: null,
     selectedSrc: null,
     awardName: "올해의 밈"
@@ -59,6 +62,19 @@ function getSrcs(meme) {
 function renderMemeGrid() {
     const grid = document.getElementById('meme-grid');
     if (!grid) return;
+    updateMemeStepUI();
+    if (memeState.step === 2) {
+        resetPersonalCardMedia();
+        grid.replaceChildren();
+        const cards = document.createElement('div');
+        cards.className = 'meme-vote-grid';
+        for (const id of memeState.candidateIds) {
+            const meme = findMeme(id);
+            if (meme) cards.appendChild(createMemeCard(meme));
+        }
+        grid.appendChild(cards);
+        return;
+    }
     const opened = new Set([...grid.querySelectorAll('[data-group][aria-expanded="true"]')].map(button => button.dataset.group));
     const official = SeasonFilter.filterAnimeList(typeof AnimeMemeData === 'undefined' ? [] : AnimeMemeData);
     const groups = new Map();
@@ -106,12 +122,13 @@ function renderMemeGrid() {
 
 function createMemeCard(meme) {
     const srcs = getSrcs(meme);
-    const firstSrc = srcs[0] || { url: '' };
+    const firstSrc = srcs.find(src => src.url === memeState.sources.get(String(meme.id))) || srcs[0] || { url: '' };
     const isVideo = isMemeVideo(firstSrc.url);
 
     const card = document.createElement("div");
     card.className = "card meme-card";
     card.id = `card-${meme.id}`;
+    card.classList.toggle("selected", memeState.step === 1 ? memeState.candidateIds.has(String(meme.id)) : String(memeState.selectedMeme?.id) === String(meme.id));
 
     const zoomBtn = document.createElement("button");
     zoomBtn.className = "zoom-btn";
@@ -192,29 +209,67 @@ function toggleAccordion(btn) {
     }
 }
 
-function selectMeme(id) {
-    const prevSelectedId = memeState.selectedMeme?.id;
-    const meme = findMeme(id);   // ✅ 수정
-    if (!meme) return;
-    memeState.selectedMeme = meme;
-
-    const card = document.getElementById(`card-${id}`);
-    const activeTab = card?.querySelector('.src-tab.active');
-    const srcs = getSrcs(meme);
-    memeState.selectedSrc = meme.isPersonal ? null : activeTab
-        ? srcs.find(s => s.label === activeTab.textContent.trim())?.url || srcs[0].url
-        : srcs[0].url;
-
-    if (prevSelectedId) {
-        const prevVideo = document.querySelector(`#card-${prevSelectedId} video`);
-        if (prevVideo) prevVideo.pause();
+function updateMemeStepUI() {
+    const first = memeState.step === 1;
+    document.getElementById('btn-next').classList.toggle('hidden', !first);
+    document.getElementById('btn-next').disabled = !memeState.candidateIds.size;
+    document.getElementById('btn-back').classList.toggle('hidden', first);
+    document.getElementById('btn-award').classList.toggle('hidden', first);
+    document.getElementById('btn-award').disabled = !memeState.selectedMeme;
+    document.getElementById('btn-home').classList.toggle('hidden', !first);
+    document.getElementById('add-personal-meme').classList.toggle('hidden', !first);
+    const preview = document.getElementById('preview-box');
+    preview.classList.toggle('hidden', !first);
+    preview.replaceChildren();
+    document.getElementById('meme-step-heading').textContent = first ? '후보를 선택해주세요' : '최종 수상작을 선택해주세요';
+    if (!memeState.candidateIds.size) preview.textContent = '후보를 선택해주세요';
+    for (const id of memeState.candidateIds) {
+        const meme = findMeme(id);
+        if (!meme) continue;
+        const row = document.createElement('div');
+        const remove = NominateCommon.setupPreviewItem(row, meme.name);
+        remove.onclick = () => {
+            memeState.candidateIds.delete(id);
+            renderMemeGrid();
+        };
+        preview.appendChild(row);
     }
+}
 
-    document.querySelectorAll('.meme-card').forEach(c => c.classList.remove('selected'));
-    card?.classList.add('selected');
+function goMemeStep2() {
+    if (!memeState.candidateIds.size) return;
+    closePopup();
+    memeState.step = 2;
+    memeState.selectedMeme = null;
+    memeState.selectedSrc = null;
+    renderMemeGrid();
+}
 
-    const awardBtn = document.getElementById('btn-award');
-    if (awardBtn) awardBtn.disabled = false;
+function goMemeStep1() {
+    closePopup();
+    memeState.step = 1;
+    memeState.selectedMeme = null;
+    memeState.selectedSrc = null;
+    renderMemeGrid();
+}
+
+function selectMeme(id) {
+    const meme = findMeme(id);
+    if (!meme) return;
+    const key = String(id);
+    if (memeState.step === 1) {
+        if (memeState.candidateIds.has(key)) memeState.candidateIds.delete(key);
+        else memeState.candidateIds.add(key);
+    } else {
+        if (!memeState.candidateIds.has(key)) return;
+        memeState.selectedMeme = meme;
+        memeState.selectedSrc = meme.isPersonal ? null : memeState.sources.get(key) || getSrcs(meme)[0]?.url || '';
+    }
+    document.querySelectorAll('.meme-card').forEach(card => {
+        const cardId = card.id.slice(5);
+        card.classList.toggle('selected', memeState.step === 1 ? memeState.candidateIds.has(cardId) : cardId === key);
+    });
+    updateMemeStepUI();
 }
 
 function openMemeZoom(id, e) {
@@ -225,6 +280,7 @@ function openMemeZoom(id, e) {
 
     closePopup();
     const srcs = getSrcs(meme);
+    const initialIndex = Math.max(0, srcs.findIndex(src => src.url === memeState.sources.get(String(id))));
 
     function renderZoomMedia(src) {
         const isVideo = isMemeVideo(src.url);
@@ -236,7 +292,7 @@ function openMemeZoom(id, e) {
     const tabsHtml = srcs.length > 1 ? `
         <div class="popup-tabs">
             ${srcs.map((s, i) => `
-                <button class="popup-tab ${i === 0 ? 'active' : ''}"
+                <button class="popup-tab ${i === initialIndex ? 'active' : ''}"
                     onclick="switchPopupSrc('${meme.id}', ${i})">
                     ${escapeMemeText(s.label)}
                 </button>
@@ -251,7 +307,7 @@ function openMemeZoom(id, e) {
             <hr class="modal-divider">
             ${tabsHtml}
             <div id="popup-media" style="text-align:center; padding:10px; border-radius:10px;">
-                ${meme.isPersonal ? '' : renderZoomMedia(srcs[0])}
+                ${meme.isPersonal ? '' : (srcs[initialIndex] ? renderZoomMedia(srcs[initialIndex]) : '등록된 미디어가 없습니다.')}
             </div>
             <p style="color:#aaa; text-align:center; margin-top:20px;">출처: ${escapeMemeText(meme.origin)}</p>
         </div>
@@ -274,6 +330,11 @@ function switchPopupSrc(memeId, srcIndex) {
     });
 
     const src = srcs[srcIndex];
+    if (!src) return;
+    memeState.sources.set(String(meme.id), src.url);
+    if (String(memeState.selectedMeme?.id) === String(meme.id)) memeState.selectedSrc = src.url;
+    const cardMedia = document.getElementById(`media-${meme.id}`);
+    if (cardMedia) renderMemeThumbnail(cardMedia, meme, src.url);
     const isVideo = isMemeVideo(src.url);
     const mediaBox = document.getElementById('popup-media');
 
@@ -286,10 +347,10 @@ function switchPopupSrc(memeId, srcIndex) {
 
 function saveMemeWinner() {
     const winner = memeState.selectedMeme;
-    if (!winner) return;
+    if (memeState.step !== 2 || !winner || !memeState.candidateIds.has(String(winner.id))) return;
 
     const srcs = getSrcs(winner);
-    const savedSrc = winner.isPersonal ? '' : memeState.selectedSrc || srcs[0].url;
+    const savedSrc = winner.isPersonal ? '' : memeState.selectedSrc || srcs[0]?.url || '';
 
     ResultStorage.saveOne(memeState.awardName, {
         title: winner.name,

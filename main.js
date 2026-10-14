@@ -219,9 +219,8 @@ document.getElementById("save-img-btn").onclick = async function () {
         card.style.animation = "none";
         card.style.opacity = "1";
         card.style.visibility = "visible";
-        if (card.classList.contains('rank-1')) card.style.transform = "translateY(-80px)";
-        else if (card.classList.contains('rank-2')) card.style.transform = "translateY(-20px)";
-        else if (card.classList.contains('rank-3')) card.style.transform = "translateY(40px)";
+        // 단차는 CSS의 실제 여백으로 유지하므로 캡처 때 별도 이동하지 않는다.
+        card.style.transform = "none";
     });
     aosElements.forEach(el => {
         el.classList.add('aos-animate');

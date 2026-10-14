@@ -1,5 +1,21 @@
 @import url("../palette.css");
 
+#meme-step-heading { color: var(--text); font-size: 1.25rem; margin: 0 0 20px; }
+#preview-box.status-indicator {
+    background: var(--surface-sunken);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    height: 280px;
+    max-height: 60vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px;
+    margin: 16px 0 20px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    color: var(--text-muted);
+}
+
 /* 기본 변수 및 리셋 */
 :root {
     --dark-gold:var(--gold);

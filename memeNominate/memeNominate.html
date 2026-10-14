@@ -21,17 +21,20 @@
     <div class="content-wrapper">
         <div class="container">
             <main class="content-area">
+                <h2 id="meme-step-heading">후보를 선택해주세요</h2>
                 <div id="meme-grid"></div>
             </main>
 
             <aside class="sidebar">
                 <button id="add-personal-meme" class="gold-btn">밈 추가</button>
                 <p id="personal-storage-error" role="alert" hidden></p>
-              <div class="preview-box" id="preview-box">
+              <div class="status-indicator preview-box" id="preview-box" aria-label="선택한 밈 후보">
                 </div>
                 <div class="action-buttons">
         <button id="btn-home" class="btn-outline" onclick="location.href='../index.html'">메인으로</button>
-        <button id="btn-award" class="gold-btn" disabled onclick="saveMemeWinner()">수상 결정</button>
+        <button id="btn-next" class="gold-btn" disabled onclick="goMemeStep2()">다음 단계</button>
+        <button id="btn-back" class="btn-outline hidden" onclick="goMemeStep1()">이전 단계</button>
+        <button id="btn-award" class="gold-btn hidden" disabled onclick="saveMemeWinner()">수상 결정</button>
     </div>
 </aside>
         </div>

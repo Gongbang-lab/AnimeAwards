@@ -78,12 +78,17 @@ async function loadPersonalMemes() {
         personalMemes = personalRecords.filter(m => String(m.year) === String(year) && SeasonFilter.matchesQuarter(m.quarter))
             .map(m => ({ ...m, isPersonal: true }));
         status.hidden = true;
-        renderMemeGrid();
+        const eligible = new Map([
+            ...SeasonFilter.filterAnimeList(typeof AnimeMemeData === 'undefined' ? [] : AnimeMemeData),
+            ...personalMemes
+        ].map(meme => [String(meme.id), meme]));
+        memeState.candidateIds = new Set([...memeState.candidateIds].filter(id => eligible.has(id)));
         if (memeState.selectedMeme) {
-            const selected = findMeme(memeState.selectedMeme.id);
-            if (selected) selectMeme(selected.id);
-            else { memeState.selectedMeme = null; memeState.selectedSrc = null; document.getElementById('btn-award').disabled = true; }
+            memeState.selectedMeme = eligible.get(String(memeState.selectedMeme.id)) || null;
+            if (!memeState.selectedMeme) memeState.selectedSrc = null;
         }
+        if (memeState.step === 2 && !memeState.candidateIds.size) memeState.step = 1;
+        renderMemeGrid();
     } catch (error) {
         status.hidden = false;
         status.textContent = `개인 밈을 불러올 수 없습니다: ${error.message}`;
