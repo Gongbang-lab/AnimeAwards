@@ -1,5 +1,4 @@
-var animeOSTData_2026 = [
-  [
+[
   {
     "id": 61886,
     "composer": "Hitomi Amamiya, Kenji Fujisawa",
@@ -5874,7 +5873,7 @@ var animeOSTData_2026 = [
       },
       {
         "release_date": "2026-03-29",
-        "image": "image/ost/54863.webp",
+        "image": "image/ost/54863-2.webp",
         "discs": [
           {
             "disc": 1,
@@ -23780,15 +23779,15 @@ var animeOSTData_2026 = [
               },
               {
                 "track_no": 29,
-                "title": "アルねこカクテル",
-                "itunes_url": "https://music.apple.com/jp/album/%E3%82%A2%E3%83%AB%E3%81%AD%E3%81%93%E3%82%AB%E3%82%AF%E3%83%86%E3%83%AB/6810132948?i=6810133199&uo=4",
-                "youtube_url": "https://www.youtube.com/results?search_query=Yani%20Neko%20%E3%82%A2%E3%83%AB%E3%81%AD%E3%81%93%E3%82%AB%E3%82%AF%E3%83%86%E3%83%AB%20OST"
+                "title": "アルねこキッチン",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%A2%E3%83%AB%E3%81%AD%E3%81%93%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3/6810132948?i=6810133199&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Yani%20Neko%20%E3%82%A2%E3%83%AB%E3%81%AD%E3%81%93%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3%20OST"
               },
               {
                 "track_no": 30,
-                "title": "アルねこキッチン",
-                "itunes_url": "https://music.apple.com/jp/album/%E3%82%A2%E3%83%AB%E3%81%AD%E3%81%93%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3/6810132948?i=6810133201&uo=4",
-                "youtube_url": "https://www.youtube.com/results?search_query=Yani%20Neko%20%E3%82%A2%E3%83%AB%E3%81%AD%E3%81%93%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3%20OST"
+                "title": "多幸感",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%A4%9A%E5%B9%B8%E6%84%9F/6810132948?i=6810133201&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Yani%20Neko%20%E5%A4%9A%E5%B9%B8%E6%84%9F%20OST"
               },
               {
                 "track_no": 31,
@@ -27301,6 +27300,2532 @@ var animeOSTData_2026 = [
         ]
       }
     ]
+  },
+  {
+    "id": 63011,
+    "composer": "Chikara Uemizutaru, Shuugo Tokumaru",
+    "albums": [
+      {
+        "release_date": "2026-07-25",
+        "image": "image/ost/63011.webp",
+        "discs": [
+          {
+            "disc": 1,
+            "tracks": [
+              {
+                "track_no": 1,
+                "title": "くつずれ",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%8F%E3%81%A4%E3%81%9A%E3%82%8C/6792290933?i=6792290934&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E3%81%8F%E3%81%A4%E3%81%9A%E3%82%8C%20OST"
+              },
+              {
+                "track_no": 2,
+                "title": "日常に一枚のチラシ",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%97%A5%E5%B8%B8%E3%81%AB%E4%B8%80%E6%9E%9A%E3%81%AE%E3%83%81%E3%83%A9%E3%82%B7/6792290933?i=6792290936&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E6%97%A5%E5%B8%B8%E3%81%AB%E4%B8%80%E6%9E%9A%E3%81%AE%E3%83%81%E3%83%A9%E3%82%B7%20OST"
+              },
+              {
+                "track_no": 3,
+                "title": "し〜ま〜がっしゅく",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%97-%E3%81%BE-%E3%81%8C%E3%81%A3%E3%81%97%E3%82%85%E3%81%8F/6792290933?i=6792290941&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E3%81%97%E3%80%9C%E3%81%BE%E3%80%9C%E3%81%8C%E3%81%A3%E3%81%97%E3%82%85%E3%81%8F%20OST"
+              },
+              {
+                "track_no": 4,
+                "title": "島のうた",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%B3%B6%E3%81%AE%E3%81%86%E3%81%9F/6792290933?i=6792290942&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E5%B3%B6%E3%81%AE%E3%81%86%E3%81%9F%20OST"
+              },
+              {
+                "track_no": 5,
+                "title": "島のくりまんじゅう",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%B3%B6%E3%81%AE%E3%81%8F%E3%82%8A%E3%81%BE%E3%82%93%E3%81%98%E3%82%85%E3%81%86/6792290933?i=6792290943&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E5%B3%B6%E3%81%AE%E3%81%8F%E3%82%8A%E3%81%BE%E3%82%93%E3%81%98%E3%82%85%E3%81%86%20OST"
+              },
+              {
+                "track_no": 6,
+                "title": "島のラッコ",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%B3%B6%E3%81%AE%E3%83%A9%E3%83%83%E3%82%B3/6792290933?i=6792290948&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E5%B3%B6%E3%81%AE%E3%83%A9%E3%83%83%E3%82%B3%20OST"
+              },
+              {
+                "track_no": 7,
+                "title": "島のシーサー",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%B3%B6%E3%81%AE%E3%82%B7%E3%83%BC%E3%82%B5%E3%83%BC/6792290933?i=6792291221&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E5%B3%B6%E3%81%AE%E3%82%B7%E3%83%BC%E3%82%B5%E3%83%BC%20OST"
+              },
+              {
+                "track_no": 8,
+                "title": "島のふたり",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%B3%B6%E3%81%AE%E3%81%B5%E3%81%9F%E3%82%8A/6792290933?i=6792291223&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E5%B3%B6%E3%81%AE%E3%81%B5%E3%81%9F%E3%82%8A%20OST"
+              },
+              {
+                "track_no": 9,
+                "title": "島のうた (祭囃子ver.)",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%B3%B6%E3%81%AE%E3%81%86%E3%81%9F-%E7%A5%AD%E5%9B%83%E5%AD%90ver/6792290933?i=6792291224&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E5%B3%B6%E3%81%AE%E3%81%86%E3%81%9F%20(%E7%A5%AD%E5%9B%83%E5%AD%90ver.)%20OST"
+              },
+              {
+                "track_no": 10,
+                "title": "島のモモンガ",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%B3%B6%E3%81%AE%E3%83%A2%E3%83%A2%E3%83%B3%E3%82%AC/6792290933?i=6792291233&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E5%B3%B6%E3%81%AE%E3%83%A2%E3%83%A2%E3%83%B3%E3%82%AC%20OST"
+              },
+              {
+                "track_no": 11,
+                "title": "今日の日はさようなら (ハチワレver.)",
+                "itunes_url": "https://music.apple.com/jp/album/%E4%BB%8A%E6%97%A5%E3%81%AE%E6%97%A5%E3%81%AF%E3%81%95%E3%82%88%E3%81%86%E3%81%AA%E3%82%89-%E3%83%8F%E3%83%81%E3%83%AF%E3%83%ACver/6792290933?i=6792291236&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E4%BB%8A%E6%97%A5%E3%81%AE%E6%97%A5%E3%81%AF%E3%81%95%E3%82%88%E3%81%86%E3%81%AA%E3%82%89%20(%E3%83%8F%E3%83%81%E3%83%AF%E3%83%ACver.)%20OST"
+              },
+              {
+                "track_no": 12,
+                "title": "島のうた (セイレーンver.)",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%B3%B6%E3%81%AE%E3%81%86%E3%81%9F-%E3%82%BB%E3%82%A4%E3%83%AC%E3%83%BC%E3%83%B3ver/6792290933?i=6792291237&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E5%B3%B6%E3%81%AE%E3%81%86%E3%81%9F%20(%E3%82%BB%E3%82%A4%E3%83%AC%E3%83%BC%E3%83%B3ver.)%20OST"
+              },
+              {
+                "track_no": 13,
+                "title": "島のうた (まちがえて襲っちゃったのver.)",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%B3%B6%E3%81%AE%E3%81%86%E3%81%9F-%E3%81%BE%E3%81%A1%E3%81%8C%E3%81%88%E3%81%A6%E8%A5%B2%E3%81%A3%E3%81%A1%E3%82%83%E3%81%A3%E3%81%9F%E3%81%AEver/6792290933?i=6792291240&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E5%B3%B6%E3%81%AE%E3%81%86%E3%81%9F%20(%E3%81%BE%E3%81%A1%E3%81%8C%E3%81%88%E3%81%A6%E8%A5%B2%E3%81%A3%E3%81%A1%E3%82%83%E3%81%A3%E3%81%9F%E3%81%AEver.)%20OST"
+              },
+              {
+                "track_no": 14,
+                "title": "何かおかしい",
+                "itunes_url": "https://music.apple.com/jp/album/%E4%BD%95%E3%81%8B%E3%81%8A%E3%81%8B%E3%81%97%E3%81%84/6792290933?i=6792291243&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E4%BD%95%E3%81%8B%E3%81%8A%E3%81%8B%E3%81%97%E3%81%84%20OST"
+              },
+              {
+                "track_no": 15,
+                "title": "セイレーン討伐のアナウンス",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%BB%E3%82%A4%E3%83%AC%E3%83%BC%E3%83%B3%E8%A8%8E%E4%BC%90%E3%81%AE%E3%82%A2%E3%83%8A%E3%82%A6%E3%83%B3%E3%82%B9/6792290933?i=6792291245&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E3%82%BB%E3%82%A4%E3%83%AC%E3%83%BC%E3%83%B3%E8%A8%8E%E4%BC%90%E3%81%AE%E3%82%A2%E3%83%8A%E3%82%A6%E3%83%B3%E3%82%B9%20OST"
+              },
+              {
+                "track_no": 16,
+                "title": "島のうた (討伐オファーver.)",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%B3%B6%E3%81%AE%E3%81%86%E3%81%9F-%E8%A8%8E%E4%BC%90%E3%82%AA%E3%83%95%E3%82%A1%E3%83%BCver/6792290933?i=6792291246&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E5%B3%B6%E3%81%AE%E3%81%86%E3%81%9F%20(%E8%A8%8E%E4%BC%90%E3%82%AA%E3%83%95%E3%82%A1%E3%83%BCver.)%20OST"
+              },
+              {
+                "track_no": 17,
+                "title": "セイレーンの襲撃",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%BB%E3%82%A4%E3%83%AC%E3%83%BC%E3%83%B3%E3%81%AE%E8%A5%B2%E6%92%83/6792290933?i=6792291247&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E3%82%BB%E3%82%A4%E3%83%AC%E3%83%BC%E3%83%B3%E3%81%AE%E8%A5%B2%E6%92%83%20OST"
+              },
+              {
+                "track_no": 18,
+                "title": "先生を助けに行こう",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%85%88%E7%94%9F%E3%82%92%E5%8A%A9%E3%81%91%E3%81%AB%E8%A1%8C%E3%81%93%E3%81%86/6792290933?i=6792291248&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E5%85%88%E7%94%9F%E3%82%92%E5%8A%A9%E3%81%91%E3%81%AB%E8%A1%8C%E3%81%93%E3%81%86%20OST"
+              },
+              {
+                "track_no": 19,
+                "title": "ヒトハとフタバに聞いてみる",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%92%E3%83%88%E3%83%8F%E3%81%A8%E3%83%95%E3%82%BF%E3%83%90%E3%81%AB%E8%81%9E%E3%81%84%E3%81%A6%E3%81%BF%E3%82%8B/6792290933?i=6792291431&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E3%83%92%E3%83%88%E3%83%8F%E3%81%A8%E3%83%95%E3%82%BF%E3%83%90%E3%81%AB%E8%81%9E%E3%81%84%E3%81%A6%E3%81%BF%E3%82%8B%20OST"
+              },
+              {
+                "track_no": 20,
+                "title": "飴モモンガ",
+                "itunes_url": "https://music.apple.com/jp/album/%E9%A3%B4%E3%83%A2%E3%83%A2%E3%83%B3%E3%82%AC/6792290933?i=6792291436&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E9%A3%B4%E3%83%A2%E3%83%A2%E3%83%B3%E3%82%AC%20OST"
+              },
+              {
+                "track_no": 21,
+                "title": "セイレーンのアジト",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%BB%E3%82%A4%E3%83%AC%E3%83%BC%E3%83%B3%E3%81%AE%E3%82%A2%E3%82%B8%E3%83%88/6792290933?i=6792291439&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E3%82%BB%E3%82%A4%E3%83%AC%E3%83%BC%E3%83%B3%E3%81%AE%E3%82%A2%E3%82%B8%E3%83%88%20OST"
+              },
+              {
+                "track_no": 22,
+                "title": "犯人連れてきてくれたの?",
+                "itunes_url": "https://music.apple.com/jp/album/%E7%8A%AF%E4%BA%BA%E9%80%A3%E3%82%8C%E3%81%A6%E3%81%8D%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%9F%E3%81%AE/6792290933?i=6792291442&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E7%8A%AF%E4%BA%BA%E9%80%A3%E3%82%8C%E3%81%A6%E3%81%8D%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%9F%E3%81%AE%3F%20OST"
+              },
+              {
+                "track_no": 23,
+                "title": "セイレーンの嘆き",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%BB%E3%82%A4%E3%83%AC%E3%83%BC%E3%83%B3%E3%81%AE%E5%98%86%E3%81%8D/6792290933?i=6792291443&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E3%82%BB%E3%82%A4%E3%83%AC%E3%83%BC%E3%83%B3%E3%81%AE%E5%98%86%E3%81%8D%20OST"
+              },
+              {
+                "track_no": 24,
+                "title": "うさぎラップ (ソロver.)",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%86%E3%81%95%E3%81%8E%E3%83%A9%E3%83%83%E3%83%97-%E3%82%BD%E3%83%ADver/6792290933?i=6792291444&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E3%81%86%E3%81%95%E3%81%8E%E3%83%A9%E3%83%83%E3%83%97%20(%E3%82%BD%E3%83%ADver.)%20OST"
+              },
+              {
+                "track_no": 25,
+                "title": "心を無にして...忍耐だ!",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%BF%83%E3%82%92%E7%84%A1%E3%81%AB%E3%81%97%E3%81%A6-%E5%BF%8D%E8%80%90%E3%81%A0/6792290933?i=6792291445&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E5%BF%83%E3%82%92%E7%84%A1%E3%81%AB%E3%81%97%E3%81%A6...%E5%BF%8D%E8%80%90%E3%81%A0!%20OST"
+              },
+              {
+                "track_no": 26,
+                "title": "逃げたけど…",
+                "itunes_url": "https://music.apple.com/jp/album/%E9%80%83%E3%81%92%E3%81%9F%E3%81%91%E3%81%A9/6792290933?i=6792291446&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E9%80%83%E3%81%92%E3%81%9F%E3%81%91%E3%81%A9%E2%80%A6%20OST"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "release_date": "2026-07-25",
+        "image": "image/ost/63011-2.webp",
+        "discs": [
+          {
+            "disc": 1,
+            "tracks": [
+              {
+                "track_no": 1,
+                "title": "橋の上の戦い",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%A9%8B%E3%81%AE%E4%B8%8A%E3%81%AE%E6%88%A6%E3%81%84/6792293464?i=6792293465&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E6%A9%8B%E3%81%AE%E4%B8%8A%E3%81%AE%E6%88%A6%E3%81%84%20OST"
+              },
+              {
+                "track_no": 2,
+                "title": "セイレーンからは逃げられない...",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%BB%E3%82%A4%E3%83%AC%E3%83%BC%E3%83%B3%E3%81%8B%E3%82%89%E3%81%AF%E9%80%83%E3%81%92%E3%82%89%E3%82%8C%E3%81%AA%E3%81%84/6792293464?i=6792293467&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E3%82%BB%E3%82%A4%E3%83%AC%E3%83%BC%E3%83%B3%E3%81%8B%E3%82%89%E3%81%AF%E9%80%83%E3%81%92%E3%82%89%E3%82%8C%E3%81%AA%E3%81%84...%20OST"
+              },
+              {
+                "track_no": 3,
+                "title": "ひとりぼっちのちいかわ",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%BC%E3%81%A3%E3%81%A1%E3%81%AE%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F/6792293464?i=6792293468&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%BC%E3%81%A3%E3%81%A1%E3%81%AE%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%20OST"
+              },
+              {
+                "track_no": 4,
+                "title": "島二郎登場",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%B3%B6%E4%BA%8C%E9%83%8E%E7%99%BB%E5%A0%B4/6792293464?i=6792293469&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E5%B3%B6%E4%BA%8C%E9%83%8E%E7%99%BB%E5%A0%B4%20OST"
+              },
+              {
+                "track_no": 5,
+                "title": "島二郎の回想(セイレーンと人魚か...)",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%B3%B6%E4%BA%8C%E9%83%8E%E3%81%AE%E5%9B%9E%E6%83%B3-%E3%82%BB%E3%82%A4%E3%83%AC%E3%83%BC%E3%83%B3%E3%81%A8%E4%BA%BA%E9%AD%9A%E3%81%8B/6792293464?i=6792293470&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E5%B3%B6%E4%BA%8C%E9%83%8E%E3%81%AE%E5%9B%9E%E6%83%B3(%E3%82%BB%E3%82%A4%E3%83%AC%E3%83%BC%E3%83%B3%E3%81%A8%E4%BA%BA%E9%AD%9A%E3%81%8B...)%20OST"
+              },
+              {
+                "track_no": 6,
+                "title": "島二郎の回想(心当たりがある)",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%B3%B6%E4%BA%8C%E9%83%8E%E3%81%AE%E5%9B%9E%E6%83%B3-%E5%BF%83%E5%BD%93%E3%81%9F%E3%82%8A%E3%81%8C%E3%81%82%E3%82%8B/6792293464?i=6792293561&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E5%B3%B6%E4%BA%8C%E9%83%8E%E3%81%AE%E5%9B%9E%E6%83%B3(%E5%BF%83%E5%BD%93%E3%81%9F%E3%82%8A%E3%81%8C%E3%81%82%E3%82%8B)%20OST"
+              },
+              {
+                "track_no": 7,
+                "title": "イーヤーヤダヤダ!",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%A4%E3%83%BC%E3%83%A4%E3%83%BC%E3%83%A4%E3%83%80%E3%83%A4%E3%83%80/6792293464?i=6792293562&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E3%82%A4%E3%83%BC%E3%83%A4%E3%83%BC%E3%83%A4%E3%83%80%E3%83%A4%E3%83%80!%20OST"
+              },
+              {
+                "track_no": 8,
+                "title": "アジト潜入",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%A2%E3%82%B8%E3%83%88%E6%BD%9C%E5%85%A5/6792293464?i=6792293563&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E3%82%A2%E3%82%B8%E3%83%88%E6%BD%9C%E5%85%A5%20OST"
+              },
+              {
+                "track_no": 9,
+                "title": "島二郎VSセイレーン",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%B3%B6%E4%BA%8C%E9%83%8Evs%E3%82%BB%E3%82%A4%E3%83%AC%E3%83%BC%E3%83%B3/6792293464?i=6792293565&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E5%B3%B6%E4%BA%8C%E9%83%8EVS%E3%82%BB%E3%82%A4%E3%83%AC%E3%83%BC%E3%83%B3%20OST"
+              },
+              {
+                "track_no": 10,
+                "title": "作戦を練ろう",
+                "itunes_url": "https://music.apple.com/jp/album/%E4%BD%9C%E6%88%A6%E3%82%92%E7%B7%B4%E3%82%8D%E3%81%86/6792293464?i=6792293566&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E4%BD%9C%E6%88%A6%E3%82%92%E7%B7%B4%E3%82%8D%E3%81%86%20OST"
+              },
+              {
+                "track_no": 11,
+                "title": "クッキング",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%AF%E3%83%83%E3%82%AD%E3%83%B3%E3%82%B0/6792293464?i=6792293567&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E3%82%AF%E3%83%83%E3%82%AD%E3%83%B3%E3%82%B0%20OST"
+              },
+              {
+                "track_no": 12,
+                "title": "不思議な歌声",
+                "itunes_url": "https://music.apple.com/jp/album/%E4%B8%8D%E6%80%9D%E8%AD%B0%E3%81%AA%E6%AD%8C%E5%A3%B0/6792293464?i=6792293568&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E4%B8%8D%E6%80%9D%E8%AD%B0%E3%81%AA%E6%AD%8C%E5%A3%B0%20OST"
+              },
+              {
+                "track_no": 13,
+                "title": "決戦前夜",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%B1%BA%E6%88%A6%E5%89%8D%E5%A4%9C/6792293464?i=6792293569&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E6%B1%BA%E6%88%A6%E5%89%8D%E5%A4%9C%20OST"
+              },
+              {
+                "track_no": 14,
+                "title": "島のうた (セイレーンのアカペラver.)",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%B3%B6%E3%81%AE%E3%81%86%E3%81%9F-%E3%82%BB%E3%82%A4%E3%83%AC%E3%83%BC%E3%83%B3%E3%81%AE%E3%82%A2%E3%82%AB%E3%83%9A%E3%83%A9ver/6792293464?i=6792293570&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E5%B3%B6%E3%81%AE%E3%81%86%E3%81%9F%20(%E3%82%BB%E3%82%A4%E3%83%AC%E3%83%BC%E3%83%B3%E3%81%AE%E3%82%A2%E3%82%AB%E3%83%9A%E3%83%A9ver.)%20OST"
+              },
+              {
+                "track_no": 15,
+                "title": "ファイナル・カレーバトルⅠ",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%8A%E3%83%AB-%E3%82%AB%E3%83%AC%E3%83%BC%E3%83%90%E3%83%88%E3%83%AB/6792293464?i=6792293571&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E3%83%95%E3%82%A1%E3%82%A4%E3%83%8A%E3%83%AB%E3%83%BB%E3%82%AB%E3%83%AC%E3%83%BC%E3%83%90%E3%83%88%E3%83%AB%E2%85%A0%20OST"
+              },
+              {
+                "track_no": 16,
+                "title": "島二郎参上!",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%B3%B6%E4%BA%8C%E9%83%8E%E5%8F%82%E4%B8%8A/6792293464?i=6792293573&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E5%B3%B6%E4%BA%8C%E9%83%8E%E5%8F%82%E4%B8%8A!%20OST"
+              },
+              {
+                "track_no": 17,
+                "title": "ファイナル・カレーバトルⅡ",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%8A%E3%83%AB-%E3%82%AB%E3%83%AC%E3%83%BC%E3%83%90%E3%83%88%E3%83%AB/6792293464?i=6792293574&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E3%83%95%E3%82%A1%E3%82%A4%E3%83%8A%E3%83%AB%E3%83%BB%E3%82%AB%E3%83%AC%E3%83%BC%E3%83%90%E3%83%88%E3%83%AB%E2%85%A1%20OST"
+              },
+              {
+                "track_no": 18,
+                "title": "うさぎラップ (リズム感のある者たちver.)",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%86%E3%81%95%E3%81%8E%E3%83%A9%E3%83%83%E3%83%97-%E3%83%AA%E3%82%BA%E3%83%A0%E6%84%9F%E3%81%AE%E3%81%82%E3%82%8B%E8%80%85%E3%81%9F%E3%81%A1ver/6792293464?i=6792293577&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E3%81%86%E3%81%95%E3%81%8E%E3%83%A9%E3%83%83%E3%83%97%20(%E3%83%AA%E3%82%BA%E3%83%A0%E6%84%9F%E3%81%AE%E3%81%82%E3%82%8B%E8%80%85%E3%81%9F%E3%81%A1ver.)%20OST"
+              },
+              {
+                "track_no": 19,
+                "title": "ファイナル・カレーバトルⅢ",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%8A%E3%83%AB-%E3%82%AB%E3%83%AC%E3%83%BC%E3%83%90%E3%83%88%E3%83%AB/6792293464?i=6792293579&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E3%83%95%E3%82%A1%E3%82%A4%E3%83%8A%E3%83%AB%E3%83%BB%E3%82%AB%E3%83%AC%E3%83%BC%E3%83%90%E3%83%88%E3%83%AB%E2%85%A2%20OST"
+              },
+              {
+                "track_no": 20,
+                "title": "夜明け",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%A4%9C%E6%98%8E%E3%81%91/6792293464?i=6792293580&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E5%A4%9C%E6%98%8E%E3%81%91%20OST"
+              },
+              {
+                "track_no": 21,
+                "title": "ふたりのひみつ",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%B5%E3%81%9F%E3%82%8A%E3%81%AE%E3%81%B2%E3%81%BF%E3%81%A4/6792293464?i=6792293581&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E3%81%B5%E3%81%9F%E3%82%8A%E3%81%AE%E3%81%B2%E3%81%BF%E3%81%A4%20OST"
+              },
+              {
+                "track_no": 22,
+                "title": "今日の日はさようなら (合唱ver.)",
+                "itunes_url": "https://music.apple.com/jp/album/%E4%BB%8A%E6%97%A5%E3%81%AE%E6%97%A5%E3%81%AF%E3%81%95%E3%82%88%E3%81%86%E3%81%AA%E3%82%89-%E5%90%88%E5%94%B1ver/6792293464?i=6792293582&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E4%BB%8A%E6%97%A5%E3%81%AE%E6%97%A5%E3%81%AF%E3%81%95%E3%82%88%E3%81%86%E3%81%AA%E3%82%89%20(%E5%90%88%E5%94%B1ver.)%20OST"
+              },
+              {
+                "track_no": 23,
+                "title": "出航の朝",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%87%BA%E8%88%AA%E3%81%AE%E6%9C%9D/6792293464?i=6792293584&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E5%87%BA%E8%88%AA%E3%81%AE%E6%9C%9D%20OST"
+              },
+              {
+                "track_no": 24,
+                "title": "島のうた (島二郎ver.)",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%B3%B6%E3%81%AE%E3%81%86%E3%81%9F-%E5%B3%B6%E4%BA%8C%E9%83%8Ever/6792293464?i=6792293585&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E5%B3%B6%E3%81%AE%E3%81%86%E3%81%9F%20(%E5%B3%B6%E4%BA%8C%E9%83%8Ever.)%20OST"
+              },
+              {
+                "track_no": 25,
+                "title": "家路へ",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%AE%B6%E8%B7%AF%E3%81%B8/6792293464?i=6792293586&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E5%AE%B6%E8%B7%AF%E3%81%B8%20OST"
+              },
+              {
+                "track_no": 26,
+                "title": "机さする",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%9C%BA%E3%81%95%E3%81%99%E3%82%8B/6792293464?i=6792293588&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Chiikawa%3A%20Ningyo%20no%20Shima%20no%20Himitsu%20%E6%9C%BA%E3%81%95%E3%81%99%E3%82%8B%20OST"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 61126,
+    "composer": "Jukki Hanada, Yukari Hashimoto, Michiru, Marina Chabata",
+    "albums": [
+      {
+        "release_date": "2026-10-14",
+        "image": "image/ost/61126.webp",
+        "discs": [
+          {
+            "disc": 1,
+            "tracks": [
+              {
+                "track_no": 1,
+                "title": "物憂げな日常",
+                "itunes_url": "https://music.apple.com/jp/album/%E7%89%A9%E6%86%82%E3%81%92%E3%81%AA%E6%97%A5%E5%B8%B8/6812659597?i=6812659598&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E7%89%A9%E6%86%82%E3%81%92%E3%81%AA%E6%97%A5%E5%B8%B8%20OST"
+              },
+              {
+                "track_no": 2,
+                "title": "雨の匂い",
+                "itunes_url": "https://music.apple.com/jp/album/%E9%9B%A8%E3%81%AE%E5%8C%82%E3%81%84/6812659597?i=6812659599&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E9%9B%A8%E3%81%AE%E5%8C%82%E3%81%84%20OST"
+              },
+              {
+                "track_no": 3,
+                "title": "2人の鼓動",
+                "itunes_url": "https://music.apple.com/jp/album/2%E4%BA%BA%E3%81%AE%E9%BC%93%E5%8B%95/6812659597?i=6812659600&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%202%E4%BA%BA%E3%81%AE%E9%BC%93%E5%8B%95%20OST"
+              },
+              {
+                "track_no": 4,
+                "title": "一緒にいられたら",
+                "itunes_url": "https://music.apple.com/jp/album/%E4%B8%80%E7%B7%92%E3%81%AB%E3%81%84%E3%82%89%E3%82%8C%E3%81%9F%E3%82%89/6812659597?i=6812659601&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E4%B8%80%E7%B7%92%E3%81%AB%E3%81%84%E3%82%89%E3%82%8C%E3%81%9F%E3%82%89%20OST"
+              },
+              {
+                "track_no": 5,
+                "title": "はじめての友達",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%AE%E5%8F%8B%E9%81%94/6812659597?i=6812659602&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%AE%E5%8F%8B%E9%81%94%20OST"
+              },
+              {
+                "track_no": 6,
+                "title": "静寂の中で",
+                "itunes_url": "https://music.apple.com/jp/album/%E9%9D%99%E5%AF%82%E3%81%AE%E4%B8%AD%E3%81%A7/6812659597?i=6812659603&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E9%9D%99%E5%AF%82%E3%81%AE%E4%B8%AD%E3%81%A7%20OST"
+              },
+              {
+                "track_no": 7,
+                "title": "何気ない口調",
+                "itunes_url": "https://music.apple.com/jp/album/%E4%BD%95%E6%B0%97%E3%81%AA%E3%81%84%E5%8F%A3%E8%AA%BF/6812659597?i=6812659605&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E4%BD%95%E6%B0%97%E3%81%AA%E3%81%84%E5%8F%A3%E8%AA%BF%20OST"
+              },
+              {
+                "track_no": 8,
+                "title": "パンの日",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%91%E3%83%B3%E3%81%AE%E6%97%A5/6812659597?i=6812659606&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E3%83%91%E3%83%B3%E3%81%AE%E6%97%A5%20OST"
+              },
+              {
+                "track_no": 9,
+                "title": "小さな出会い",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%B0%8F%E3%81%95%E3%81%AA%E5%87%BA%E4%BC%9A%E3%81%84/6812659597?i=6812659607&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E5%B0%8F%E3%81%95%E3%81%AA%E5%87%BA%E4%BC%9A%E3%81%84%20OST"
+              },
+              {
+                "track_no": 10,
+                "title": "ミミ",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%9F%E3%83%9F/6812659597?i=6812659608&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E3%83%9F%E3%83%9F%20OST"
+              },
+              {
+                "track_no": 11,
+                "title": "死なない理由",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%AD%BB%E3%81%AA%E3%81%AA%E3%81%84%E7%90%86%E7%94%B1/6812659597?i=6812659609&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E6%AD%BB%E3%81%AA%E3%81%AA%E3%81%84%E7%90%86%E7%94%B1%20OST"
+              },
+              {
+                "track_no": 12,
+                "title": "孤児院 兼 国戦用魔術兵器育成機関",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%AD%A4%E5%85%90%E9%99%A2-%E5%85%BC-%E5%9B%BD%E6%88%A6%E7%94%A8%E9%AD%94%E8%A1%93%E5%85%B5%E5%99%A8%E8%82%B2%E6%88%90%E6%A9%9F%E9%96%A2/6812659597?i=6812659610&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E5%AD%A4%E5%85%90%E9%99%A2%20%E5%85%BC%20%E5%9B%BD%E6%88%A6%E7%94%A8%E9%AD%94%E8%A1%93%E5%85%B5%E5%99%A8%E8%82%B2%E6%88%90%E6%A9%9F%E9%96%A2%20OST"
+              },
+              {
+                "track_no": 13,
+                "title": "厳かな緊張、侵食の影",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%8E%B3%E3%81%8B%E3%81%AA%E7%B7%8A%E5%BC%B5-%E4%BE%B5%E9%A3%9F%E3%81%AE%E5%BD%B1/6812659597?i=6812659611&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E5%8E%B3%E3%81%8B%E3%81%AA%E7%B7%8A%E5%BC%B5%E3%80%81%E4%BE%B5%E9%A3%9F%E3%81%AE%E5%BD%B1%20OST"
+              },
+              {
+                "track_no": 14,
+                "title": "祈りの時間",
+                "itunes_url": "https://music.apple.com/jp/album/%E7%A5%88%E3%82%8A%E3%81%AE%E6%99%82%E9%96%93/6812659597?i=6812659612&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E7%A5%88%E3%82%8A%E3%81%AE%E6%99%82%E9%96%93%20OST"
+              },
+              {
+                "track_no": 15,
+                "title": "ミミの修復魔法",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%9F%E3%83%9F%E3%81%AE%E4%BF%AE%E5%BE%A9%E9%AD%94%E6%B3%95/6812659597?i=6812659613&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E3%83%9F%E3%83%9F%E3%81%AE%E4%BF%AE%E5%BE%A9%E9%AD%94%E6%B3%95%20OST"
+              },
+              {
+                "track_no": 16,
+                "title": "シーナの治癒魔法",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%B7%E3%83%BC%E3%83%8A%E3%81%AE%E6%B2%BB%E7%99%92%E9%AD%94%E6%B3%95/6812659597?i=6812659614&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E3%82%B7%E3%83%BC%E3%83%8A%E3%81%AE%E6%B2%BB%E7%99%92%E9%AD%94%E6%B3%95%20OST"
+              },
+              {
+                "track_no": 17,
+                "title": "セイランとアリ",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%BB%E3%82%A4%E3%83%A9%E3%83%B3%E3%81%A8%E3%82%A2%E3%83%AA/6812659597?i=6812659615&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E3%82%BB%E3%82%A4%E3%83%A9%E3%83%B3%E3%81%A8%E3%82%A2%E3%83%AA%20OST"
+              },
+              {
+                "track_no": 18,
+                "title": "透明な蘇生",
+                "itunes_url": "https://music.apple.com/jp/album/%E9%80%8F%E6%98%8E%E3%81%AA%E8%98%87%E7%94%9F/6812659597?i=6812659616&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E9%80%8F%E6%98%8E%E3%81%AA%E8%98%87%E7%94%9F%20OST"
+              },
+              {
+                "track_no": 19,
+                "title": "キスの魔力",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%AD%E3%82%B9%E3%81%AE%E9%AD%94%E5%8A%9B/6812659597?i=6812659617&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E3%82%AD%E3%82%B9%E3%81%AE%E9%AD%94%E5%8A%9B%20OST"
+              },
+              {
+                "track_no": 20,
+                "title": "仲良くなるには",
+                "itunes_url": "https://music.apple.com/jp/album/%E4%BB%B2%E8%89%AF%E3%81%8F%E3%81%AA%E3%82%8B%E3%81%AB%E3%81%AF/6812659597?i=6812659618&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E4%BB%B2%E8%89%AF%E3%81%8F%E3%81%AA%E3%82%8B%E3%81%AB%E3%81%AF%20OST"
+              },
+              {
+                "track_no": 21,
+                "title": "見つかった悪戯",
+                "itunes_url": "https://music.apple.com/jp/album/%E8%A6%8B%E3%81%A4%E3%81%8B%E3%81%A3%E3%81%9F%E6%82%AA%E6%88%AF/6812659597?i=6812659619&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E8%A6%8B%E3%81%A4%E3%81%8B%E3%81%A3%E3%81%9F%E6%82%AA%E6%88%AF%20OST"
+              },
+              {
+                "track_no": 22,
+                "title": "追いかけたり、追いかけられたり",
+                "itunes_url": "https://music.apple.com/jp/album/%E8%BF%BD%E3%81%84%E3%81%8B%E3%81%91%E3%81%9F%E3%82%8A-%E8%BF%BD%E3%81%84%E3%81%8B%E3%81%91%E3%82%89%E3%82%8C%E3%81%9F%E3%82%8A/6812659597?i=6812659620&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E8%BF%BD%E3%81%84%E3%81%8B%E3%81%91%E3%81%9F%E3%82%8A%E3%80%81%E8%BF%BD%E3%81%84%E3%81%8B%E3%81%91%E3%82%89%E3%82%8C%E3%81%9F%E3%82%8A%20OST"
+              },
+              {
+                "track_no": 23,
+                "title": "興味津々",
+                "itunes_url": "https://music.apple.com/jp/album/%E8%88%88%E5%91%B3%E6%B4%A5%E3%80%85/6812659597?i=6812659621&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E8%88%88%E5%91%B3%E6%B4%A5%E3%80%85%20OST"
+              }
+            ]
+          },
+          {
+            "disc": 2,
+            "tracks": [
+              {
+                "track_no": 1,
+                "title": "遠く響く声",
+                "itunes_url": "https://music.apple.com/jp/album/%E9%81%A0%E3%81%8F%E9%9F%BF%E3%81%8F%E5%A3%B0/6812659597?i=6812659712&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E9%81%A0%E3%81%8F%E9%9F%BF%E3%81%8F%E5%A3%B0%20OST"
+              },
+              {
+                "track_no": 2,
+                "title": "暗躍の果て",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%9A%97%E8%BA%8D%E3%81%AE%E6%9E%9C%E3%81%A6/6812659597?i=6812659713&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E6%9A%97%E8%BA%8D%E3%81%AE%E6%9E%9C%E3%81%A6%20OST"
+              },
+              {
+                "track_no": 3,
+                "title": "不死身の兵器",
+                "itunes_url": "https://music.apple.com/jp/album/%E4%B8%8D%E6%AD%BB%E8%BA%AB%E3%81%AE%E5%85%B5%E5%99%A8/6812659597?i=6812659714&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E4%B8%8D%E6%AD%BB%E8%BA%AB%E3%81%AE%E5%85%B5%E5%99%A8%20OST"
+              },
+              {
+                "track_no": 4,
+                "title": "張り詰めた戦場",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%BC%B5%E3%82%8A%E8%A9%B0%E3%82%81%E3%81%9F%E6%88%A6%E5%A0%B4/6812659597?i=6812659715&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E5%BC%B5%E3%82%8A%E8%A9%B0%E3%82%81%E3%81%9F%E6%88%A6%E5%A0%B4%20OST"
+              },
+              {
+                "track_no": 5,
+                "title": "精神圧迫",
+                "itunes_url": "https://music.apple.com/jp/album/%E7%B2%BE%E7%A5%9E%E5%9C%A7%E8%BF%AB/6812659597?i=6812659716&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E7%B2%BE%E7%A5%9E%E5%9C%A7%E8%BF%AB%20OST"
+              },
+              {
+                "track_no": 6,
+                "title": "戦闘開始",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%88%A6%E9%97%98%E9%96%8B%E5%A7%8B/6812659597?i=6812659717&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E6%88%A6%E9%97%98%E9%96%8B%E5%A7%8B%20OST"
+              },
+              {
+                "track_no": 7,
+                "title": "黒い影を切り裂く閃光",
+                "itunes_url": "https://music.apple.com/jp/album/%E9%BB%92%E3%81%84%E5%BD%B1%E3%82%92%E5%88%87%E3%82%8A%E8%A3%82%E3%81%8F%E9%96%83%E5%85%89/6812659597?i=6812659718&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E9%BB%92%E3%81%84%E5%BD%B1%E3%82%92%E5%88%87%E3%82%8A%E8%A3%82%E3%81%8F%E9%96%83%E5%85%89%20OST"
+              },
+              {
+                "track_no": 8,
+                "title": "静かな決意",
+                "itunes_url": "https://music.apple.com/jp/album/%E9%9D%99%E3%81%8B%E3%81%AA%E6%B1%BA%E6%84%8F/6812659597?i=6812659719&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E9%9D%99%E3%81%8B%E3%81%AA%E6%B1%BA%E6%84%8F%20OST"
+              },
+              {
+                "track_no": 9,
+                "title": "無事に帰ってきて",
+                "itunes_url": "https://music.apple.com/jp/album/%E7%84%A1%E4%BA%8B%E3%81%AB%E5%B8%B0%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%A6/6812659597?i=6812659720&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E7%84%A1%E4%BA%8B%E3%81%AB%E5%B8%B0%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%A6%20OST"
+              },
+              {
+                "track_no": 10,
+                "title": "シーナの優しさ",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%B7%E3%83%BC%E3%83%8A%E3%81%AE%E5%84%AA%E3%81%97%E3%81%95/6812659597?i=6812659721&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E3%82%B7%E3%83%BC%E3%83%8A%E3%81%AE%E5%84%AA%E3%81%97%E3%81%95%20OST"
+              },
+              {
+                "track_no": 11,
+                "title": "たいせつな秘密",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%9F%E3%81%84%E3%81%9B%E3%81%A4%E3%81%AA%E7%A7%98%E5%AF%86/6812659597?i=6812659722&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E3%81%9F%E3%81%84%E3%81%9B%E3%81%A4%E3%81%AA%E7%A7%98%E5%AF%86%20OST"
+              },
+              {
+                "track_no": 12,
+                "title": "穏やかな陽射し",
+                "itunes_url": "https://music.apple.com/jp/album/%E7%A9%8F%E3%82%84%E3%81%8B%E3%81%AA%E9%99%BD%E5%B0%84%E3%81%97/6812659597?i=6812659723&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E7%A9%8F%E3%82%84%E3%81%8B%E3%81%AA%E9%99%BD%E5%B0%84%E3%81%97%20OST"
+              },
+              {
+                "track_no": 13,
+                "title": "守りたい",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%AE%88%E3%82%8A%E3%81%9F%E3%81%84/6812659597?i=6812659724&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E5%AE%88%E3%82%8A%E3%81%9F%E3%81%84%20OST"
+              },
+              {
+                "track_no": 14,
+                "title": "「いいよね。弱くて」",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%84%E3%81%84%E3%82%88%E3%81%AD-%E5%BC%B1%E3%81%8F%E3%81%A6/6812659597?i=6812659725&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E3%80%8C%E3%81%84%E3%81%84%E3%82%88%E3%81%AD%E3%80%82%E5%BC%B1%E3%81%8F%E3%81%A6%E3%80%8D%20OST"
+              },
+              {
+                "track_no": 15,
+                "title": "寂しさ",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%AF%82%E3%81%97%E3%81%95/6812659597?i=6812659726&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E5%AF%82%E3%81%97%E3%81%95%20OST"
+              },
+              {
+                "track_no": 16,
+                "title": "招集令",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%8B%9B%E9%9B%86%E4%BB%A4/6812659597?i=6812659727&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E6%8B%9B%E9%9B%86%E4%BB%A4%20OST"
+              },
+              {
+                "track_no": 17,
+                "title": "儚い幻影",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%84%9A%E3%81%84%E5%B9%BB%E5%BD%B1/6812659597?i=6812659728&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E5%84%9A%E3%81%84%E5%B9%BB%E5%BD%B1%20OST"
+              },
+              {
+                "track_no": 18,
+                "title": "慟哭",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%85%9F%E5%93%AD/6812659597?i=6812659729&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E6%85%9F%E5%93%AD%20OST"
+              },
+              {
+                "track_no": 19,
+                "title": "きみが死ぬまで恋をしたい",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%8D%E3%81%BF%E3%81%8C%E6%AD%BB%E3%81%AC%E3%81%BE%E3%81%A7%E6%81%8B%E3%82%92%E3%81%97%E3%81%9F%E3%81%84/6812659597?i=6812659730&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E3%81%8D%E3%81%BF%E3%81%8C%E6%AD%BB%E3%81%AC%E3%81%BE%E3%81%A7%E6%81%8B%E3%82%92%E3%81%97%E3%81%9F%E3%81%84%20OST"
+              },
+              {
+                "track_no": 20,
+                "title": "アイキャッチ - 花かんむり",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%A2%E3%82%A4%E3%82%AD%E3%83%A3%E3%83%83%E3%83%81-%E8%8A%B1%E3%81%8B%E3%82%93%E3%82%80%E3%82%8A/6812659597?i=6812659731&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E3%82%A2%E3%82%A4%E3%82%AD%E3%83%A3%E3%83%83%E3%83%81%20-%20%E8%8A%B1%E3%81%8B%E3%82%93%E3%82%80%E3%82%8A%20OST"
+              },
+              {
+                "track_no": 21,
+                "title": "アイキャッチ - 小さな鳥",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%A2%E3%82%A4%E3%82%AD%E3%83%A3%E3%83%83%E3%83%81-%E5%B0%8F%E3%81%95%E3%81%AA%E9%B3%A5/6812659597?i=6812659732&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%E3%82%A2%E3%82%A4%E3%82%AD%E3%83%A3%E3%83%83%E3%83%81%20-%20%E5%B0%8F%E3%81%95%E3%81%AA%E9%B3%A5%20OST"
+              },
+              {
+                "track_no": 22,
+                "title": "Éternel〜piano ver.〜",
+                "itunes_url": "https://music.apple.com/jp/album/%C3%A9ternel-piano-ver/6812659597?i=6812659733&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kimi%20ga%20Shinu%20made%20Koi%20wo%20Shitai%20%C3%89ternel%E3%80%9Cpiano%20ver.%E3%80%9C%20OST"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 46488,
+    "composer": "Wataru Watari, Kana Hashiguchi",
+    "albums": [
+      {
+        "release_date": "2026-10-07",
+        "image": "image/ost/46488.webp",
+        "discs": [
+          {
+            "disc": 1,
+            "tracks": [
+              {
+                "track_no": 1,
+                "title": "Young Ladies Don’t Play Fighting Games",
+                "itunes_url": "https://music.apple.com/jp/album/young-ladies-dont-play-fighting-games/6812619578?i=6812619579&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Young%20Ladies%20Don%E2%80%99t%20Play%20Fighting%20Games%20OST"
+              },
+              {
+                "track_no": 2,
+                "title": "Choose Your Character",
+                "itunes_url": "https://music.apple.com/jp/album/choose-your-character/6812619578?i=6812619580&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Choose%20Your%20Character%20OST"
+              },
+              {
+                "track_no": 3,
+                "title": "Kuromi Girls Academy",
+                "itunes_url": "https://music.apple.com/jp/album/kuromi-girls-academy/6812619578?i=6812619581&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Kuromi%20Girls%20Academy%20OST"
+              },
+              {
+                "track_no": 4,
+                "title": "623623K",
+                "itunes_url": "https://music.apple.com/jp/album/623623k/6812619578?i=6812619582&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20623623K%20OST"
+              },
+              {
+                "track_no": 5,
+                "title": "Parfum de Lys Blanc",
+                "itunes_url": "https://music.apple.com/jp/album/parfum-de-lys-blanc/6812619578?i=6812619583&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Parfum%20de%20Lys%20Blanc%20OST"
+              },
+              {
+                "track_no": 6,
+                "title": "Instant Grammar",
+                "itunes_url": "https://music.apple.com/jp/album/instant-grammar/6812619578?i=6812619584&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Instant%20Grammar%20OST"
+              },
+              {
+                "track_no": 7,
+                "title": "New Challenger",
+                "itunes_url": "https://music.apple.com/jp/album/new-challenger/6812619578?i=6812619585&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20New%20Challenger%20OST"
+              },
+              {
+                "track_no": 8,
+                "title": "Little Lily Lip",
+                "itunes_url": "https://music.apple.com/jp/album/little-lily-lip/6812619578?i=6812619586&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Little%20Lily%20Lip%20OST"
+              },
+              {
+                "track_no": 9,
+                "title": "407",
+                "itunes_url": "https://music.apple.com/jp/album/407/6812619578?i=6812619797&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20407%20OST"
+              },
+              {
+                "track_no": 10,
+                "title": "Braid Band Age",
+                "itunes_url": "https://music.apple.com/jp/album/braid-band-age/6812619578?i=6812619798&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Braid%20Band%20Age%20OST"
+              },
+              {
+                "track_no": 11,
+                "title": "Handcuffed Roses",
+                "itunes_url": "https://music.apple.com/jp/album/handcuffed-roses/6812619578?i=6812619799&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Handcuffed%20Roses%20OST"
+              },
+              {
+                "track_no": 12,
+                "title": "This That Smoothie",
+                "itunes_url": "https://music.apple.com/jp/album/this-that-smoothie/6812619578?i=6812619800&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20This%20That%20Smoothie%20OST"
+              },
+              {
+                "track_no": 13,
+                "title": "Oasis Gauge",
+                "itunes_url": "https://music.apple.com/jp/album/oasis-gauge/6812619578?i=6812619801&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Oasis%20Gauge%20OST"
+              },
+              {
+                "track_no": 14,
+                "title": "YALP",
+                "itunes_url": "https://music.apple.com/jp/album/yalp/6812619578?i=6812619802&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20YALP%20OST"
+              },
+              {
+                "track_no": 15,
+                "title": "Black Burn Pearl",
+                "itunes_url": "https://music.apple.com/jp/album/black-burn-pearl/6812619578?i=6812619803&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Black%20Burn%20Pearl%20OST"
+              },
+              {
+                "track_no": 16,
+                "title": "Hitbox Heart",
+                "itunes_url": "https://music.apple.com/jp/album/hitbox-heart/6812619578?i=6812619804&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Hitbox%20Heart%20OST"
+              },
+              {
+                "track_no": 17,
+                "title": "Butterfly Chatroom",
+                "itunes_url": "https://music.apple.com/jp/album/butterfly-chatroom/6812619578?i=6812619805&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Butterfly%20Chatroom%20OST"
+              },
+              {
+                "track_no": 18,
+                "title": "Yuri-Yin-Yang",
+                "itunes_url": "https://music.apple.com/jp/album/yuri-yin-yang/6812619578?i=6812619807&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Yuri-Yin-Yang%20OST"
+              },
+              {
+                "track_no": 19,
+                "title": "Underground Turtle Club",
+                "itunes_url": "https://music.apple.com/jp/album/underground-turtle-club/6812619578?i=6812619809&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Underground%20Turtle%20Club%20OST"
+              },
+              {
+                "track_no": 20,
+                "title": "Epic Voltage Orchestra",
+                "itunes_url": "https://music.apple.com/jp/album/epic-voltage-orchestra/6812619578?i=6812619811&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Epic%20Voltage%20Orchestra%20OST"
+              },
+              {
+                "track_no": 21,
+                "title": "Sticky Slick Stick",
+                "itunes_url": "https://music.apple.com/jp/album/sticky-slick-stick/6812619578?i=6812619814&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Sticky%20Slick%20Stick%20OST"
+              },
+              {
+                "track_no": 22,
+                "title": "I I I I",
+                "itunes_url": "https://music.apple.com/jp/album/i-i-i-i/6812619578?i=6812619815&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20I%20I%20I%20I%20OST"
+              },
+              {
+                "track_no": 23,
+                "title": "Low Bit Memories",
+                "itunes_url": "https://music.apple.com/jp/album/low-bit-memories/6812619578?i=6812619816&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Low%20Bit%20Memories%20OST"
+              },
+              {
+                "track_no": 24,
+                "title": "Geki Dau Lait",
+                "itunes_url": "https://music.apple.com/jp/album/geki-dau-lait/6812619578?i=6812619817&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Geki%20Dau%20Lait%20OST"
+              },
+              {
+                "track_no": 25,
+                "title": "Poke Poke Poke",
+                "itunes_url": "https://music.apple.com/jp/album/poke-poke-poke/6812619578?i=6812619818&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Poke%20Poke%20Poke%20OST"
+              }
+            ]
+          },
+          {
+            "disc": 2,
+            "tracks": [
+              {
+                "track_no": 1,
+                "title": "YOLO 99",
+                "itunes_url": "https://music.apple.com/jp/album/yolo-99/6812619578?i=6812619819&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20YOLO%2099%20OST"
+              },
+              {
+                "track_no": 2,
+                "title": "Hurricane Prelude",
+                "itunes_url": "https://music.apple.com/jp/album/hurricane-prelude/6812619578?i=6812619820&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Hurricane%20Prelude%20OST"
+              },
+              {
+                "track_no": 3,
+                "title": "Sonic Boom Miles",
+                "itunes_url": "https://music.apple.com/jp/album/sonic-boom-miles/6812619578?i=6812619823&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Sonic%20Boom%20Miles%20OST"
+              },
+              {
+                "track_no": 4,
+                "title": "Takoyaki Quartet",
+                "itunes_url": "https://music.apple.com/jp/album/takoyaki-quartet/6812619578?i=6812619825&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Takoyaki%20Quartet%20OST"
+              },
+              {
+                "track_no": 5,
+                "title": "Malice in Mirrorland",
+                "itunes_url": "https://music.apple.com/jp/album/malice-in-mirrorland/6812619578?i=6812619826&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Malice%20in%20Mirrorland%20OST"
+              },
+              {
+                "track_no": 6,
+                "title": "AFK",
+                "itunes_url": "https://music.apple.com/jp/album/afk/6812619578?i=6812619857&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20AFK%20OST"
+              },
+              {
+                "track_no": 7,
+                "title": "Bachi Kuso Guilty",
+                "itunes_url": "https://music.apple.com/jp/album/bachi-kuso-guilty/6812619578?i=6812619858&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Bachi%20Kuso%20Guilty%20OST"
+              },
+              {
+                "track_no": 8,
+                "title": "Yakisoba Hadoken",
+                "itunes_url": "https://music.apple.com/jp/album/yakisoba-hadoken/6812619578?i=6812619859&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Yakisoba%20Hadoken%20OST"
+              },
+              {
+                "track_no": 9,
+                "title": "Smokin’ Cicadas",
+                "itunes_url": "https://music.apple.com/jp/album/smokin-cicadas/6812619578?i=6812619860&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Smokin%E2%80%99%20Cicadas%20OST"
+              },
+              {
+                "track_no": 10,
+                "title": "Allegro Combo",
+                "itunes_url": "https://music.apple.com/jp/album/allegro-combo/6812619578?i=6812619861&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Allegro%20Combo%20OST"
+              },
+              {
+                "track_no": 11,
+                "title": "Cigarette U",
+                "itunes_url": "https://music.apple.com/jp/album/cigarette-u/6812619578?i=6812619863&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Cigarette%20U%20OST"
+              },
+              {
+                "track_no": 12,
+                "title": "Offline Ribbon",
+                "itunes_url": "https://music.apple.com/jp/album/offline-ribbon/6812619578?i=6812619864&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Offline%20Ribbon%20OST"
+              },
+              {
+                "track_no": 13,
+                "title": "Perfect Parry Party",
+                "itunes_url": "https://music.apple.com/jp/album/perfect-parry-party/6812619578?i=6812619866&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Perfect%20Parry%20Party%20OST"
+              },
+              {
+                "track_no": 14,
+                "title": "Miss Bison",
+                "itunes_url": "https://music.apple.com/jp/album/miss-bison/6812619578?i=6812619867&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Miss%20Bison%20OST"
+              },
+              {
+                "track_no": 15,
+                "title": "TAIARI",
+                "itunes_url": "https://music.apple.com/jp/album/taiari/6812619578?i=6812619868&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20TAIARI%20OST"
+              },
+              {
+                "track_no": 16,
+                "title": "Impact Screw Piledriver",
+                "itunes_url": "https://music.apple.com/jp/album/impact-screw-piledriver/6812619578?i=6812619869&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Impact%20Screw%20Piledriver%20OST"
+              },
+              {
+                "track_no": 17,
+                "title": "Nosebleed Round",
+                "itunes_url": "https://music.apple.com/jp/album/nosebleed-round/6812619578?i=6812619870&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Nosebleed%20Round%20OST"
+              },
+              {
+                "track_no": 18,
+                "title": "Sapphire Rush",
+                "itunes_url": "https://music.apple.com/jp/album/sapphire-rush/6812619578?i=6812619871&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Sapphire%20Rush%20OST"
+              },
+              {
+                "track_no": 19,
+                "title": "Kaleidoframe",
+                "itunes_url": "https://music.apple.com/jp/album/kaleidoframe/6812619578?i=6812619872&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Kaleidoframe%20OST"
+              },
+              {
+                "track_no": 20,
+                "title": "Shining Shimmering Splendid",
+                "itunes_url": "https://music.apple.com/jp/album/shining-shimmering-splendid/6812619578?i=6812619873&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tai-Ari%20deshita.%3A%20Ojou-sama%20wa%20Kakutou%20Game%20nante%20Shinai%20Shining%20Shimmering%20Splendid%20OST"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 63802,
+    "composer": "Yoriko Tomita, DÉ DÉ MOUSE, Madoka Fukami, Kazuharu Masuda",
+    "albums": [
+      {
+        "release_date": "2026-09-16",
+        "image": "image/ost/63802.webp",
+        "discs": [
+          {
+            "disc": 1,
+            "tracks": [
+              {
+                "track_no": 1,
+                "title": "メビウス・ダスト",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%A1%E3%83%93%E3%82%A6%E3%82%B9-%E3%83%80%E3%82%B9%E3%83%88/6806903734?i=6806903735&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E3%83%A1%E3%83%93%E3%82%A6%E3%82%B9%E3%83%BB%E3%83%80%E3%82%B9%E3%83%88%20OST"
+              },
+              {
+                "track_no": 2,
+                "title": "ポリスホッパー!",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%9D%E3%83%AA%E3%82%B9%E3%83%9B%E3%83%83%E3%83%91%E3%83%BC/6806903734?i=6806903736&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E3%83%9D%E3%83%AA%E3%82%B9%E3%83%9B%E3%83%83%E3%83%91%E3%83%BC!%20OST"
+              },
+              {
+                "track_no": 3,
+                "title": "友達",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%8F%8B%E9%81%94/6806903734?i=6806903737&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E5%8F%8B%E9%81%94%20OST"
+              },
+              {
+                "track_no": 4,
+                "title": "S.M.A.S.H.",
+                "itunes_url": "https://music.apple.com/jp/album/s-m-a-s-h/6806903734?i=6806903738&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20S.M.A.S.H.%20OST"
+              },
+              {
+                "track_no": 5,
+                "title": "ぼく達の戦い I",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%BC%E3%81%8F%E9%81%94%E3%81%AE%E6%88%A6%E3%81%84-i/6806903734?i=6806903739&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E3%81%BC%E3%81%8F%E9%81%94%E3%81%AE%E6%88%A6%E3%81%84%20I%20OST"
+              },
+              {
+                "track_no": 6,
+                "title": "Heart on Fire",
+                "itunes_url": "https://music.apple.com/jp/album/heart-on-fire/6806903734?i=6806903740&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20Heart%20on%20Fire%20OST"
+              },
+              {
+                "track_no": 7,
+                "title": "ハートに火を付けよう",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%8F%E3%83%BC%E3%83%88%E3%81%AB%E7%81%AB%E3%82%92%E4%BB%98%E3%81%91%E3%82%88%E3%81%86/6806903734?i=6806903741&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E3%83%8F%E3%83%BC%E3%83%88%E3%81%AB%E7%81%AB%E3%82%92%E4%BB%98%E3%81%91%E3%82%88%E3%81%86%20OST"
+              },
+              {
+                "track_no": 8,
+                "title": "クルスのテーマ",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%AF%E3%83%AB%E3%82%B9%E3%81%AE%E3%83%86%E3%83%BC%E3%83%9E/6806903734?i=6806903893&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E3%82%AF%E3%83%AB%E3%82%B9%E3%81%AE%E3%83%86%E3%83%BC%E3%83%9E%20OST"
+              },
+              {
+                "track_no": 9,
+                "title": "Teenagers Stepping Part1",
+                "itunes_url": "https://music.apple.com/jp/album/teenagers-stepping-part1/6806903734?i=6806903894&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20Teenagers%20Stepping%20Part1%20OST"
+              },
+              {
+                "track_no": 10,
+                "title": "勝利は誰に",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%8B%9D%E5%88%A9%E3%81%AF%E8%AA%B0%E3%81%AB/6806903734?i=6806903895&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E5%8B%9D%E5%88%A9%E3%81%AF%E8%AA%B0%E3%81%AB%20OST"
+              },
+              {
+                "track_no": 11,
+                "title": "未来視",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%9C%AA%E6%9D%A5%E8%A6%96/6806903734?i=6806903896&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E6%9C%AA%E6%9D%A5%E8%A6%96%20OST"
+              },
+              {
+                "track_no": 12,
+                "title": "ディアボリック・ゴーストのテーマ",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%87%E3%82%A3%E3%82%A2%E3%83%9C%E3%83%AA%E3%83%83%E3%82%AF-%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E3%81%AE%E3%83%86%E3%83%BC%E3%83%9E/6806903734?i=6806903897&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E3%83%87%E3%82%A3%E3%82%A2%E3%83%9C%E3%83%AA%E3%83%83%E3%82%AF%E3%83%BB%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E3%81%AE%E3%83%86%E3%83%BC%E3%83%9E%20OST"
+              },
+              {
+                "track_no": 13,
+                "title": "ただいま",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%9F%E3%81%A0%E3%81%84%E3%81%BE/6806903734?i=6806903898&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E3%81%9F%E3%81%A0%E3%81%84%E3%81%BE%20OST"
+              },
+              {
+                "track_no": 14,
+                "title": "希望への作戦会議",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%B8%8C%E6%9C%9B%E3%81%B8%E3%81%AE%E4%BD%9C%E6%88%A6%E4%BC%9A%E8%AD%B0/6806903734?i=6806903899&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E5%B8%8C%E6%9C%9B%E3%81%B8%E3%81%AE%E4%BD%9C%E6%88%A6%E4%BC%9A%E8%AD%B0%20OST"
+              },
+              {
+                "track_no": 15,
+                "title": "ぼく達の戦い II",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%BC%E3%81%8F%E9%81%94%E3%81%AE%E6%88%A6%E3%81%84-ii/6806903734?i=6806903900&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E3%81%BC%E3%81%8F%E9%81%94%E3%81%AE%E6%88%A6%E3%81%84%20II%20OST"
+              },
+              {
+                "track_no": 16,
+                "title": "いつもの場所で",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%84%E3%81%A4%E3%82%82%E3%81%AE%E5%A0%B4%E6%89%80%E3%81%A7/6806903734?i=6806903901&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E3%81%84%E3%81%A4%E3%82%82%E3%81%AE%E5%A0%B4%E6%89%80%E3%81%A7%20OST"
+              },
+              {
+                "track_no": 17,
+                "title": "心の棘を撫でるメロディ",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%BF%83%E3%81%AE%E6%A3%98%E3%82%92%E6%92%AB%E3%81%A7%E3%82%8B%E3%83%A1%E3%83%AD%E3%83%87%E3%82%A3/6806903734?i=6806903902&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E5%BF%83%E3%81%AE%E6%A3%98%E3%82%92%E6%92%AB%E3%81%A7%E3%82%8B%E3%83%A1%E3%83%AD%E3%83%87%E3%82%A3%20OST"
+              },
+              {
+                "track_no": 18,
+                "title": "Go For It!",
+                "itunes_url": "https://music.apple.com/jp/album/go-for-it/6806903734?i=6806903903&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20Go%20For%20It!%20OST"
+              },
+              {
+                "track_no": 19,
+                "title": "Are You Ready?",
+                "itunes_url": "https://music.apple.com/jp/album/are-you-ready/6806903734?i=6806903904&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20Are%20You%20Ready%3F%20OST"
+              },
+              {
+                "track_no": 20,
+                "title": "キミがいた日々",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%AD%E3%83%9F%E3%81%8C%E3%81%84%E3%81%9F%E6%97%A5%E3%80%85/6806903734?i=6806903905&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E3%82%AD%E3%83%9F%E3%81%8C%E3%81%84%E3%81%9F%E6%97%A5%E3%80%85%20OST"
+              },
+              {
+                "track_no": 21,
+                "title": "まりものマーチ",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%BE%E3%82%8A%E3%82%82%E3%81%AE%E3%83%9E%E3%83%BC%E3%83%81/6806903734?i=6806903906&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E3%81%BE%E3%82%8A%E3%82%82%E3%81%AE%E3%83%9E%E3%83%BC%E3%83%81%20OST"
+              },
+              {
+                "track_no": 22,
+                "title": "優しい雨",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%84%AA%E3%81%97%E3%81%84%E9%9B%A8/6806903734?i=6806903907&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E5%84%AA%E3%81%97%E3%81%84%E9%9B%A8%20OST"
+              },
+              {
+                "track_no": 23,
+                "title": "探偵みたいに",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%8E%A2%E5%81%B5%E3%81%BF%E3%81%9F%E3%81%84%E3%81%AB/6806903734?i=6806903908&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E6%8E%A2%E5%81%B5%E3%81%BF%E3%81%9F%E3%81%84%E3%81%AB%20OST"
+              },
+              {
+                "track_no": 24,
+                "title": "Teenagers Stepping Part2",
+                "itunes_url": "https://music.apple.com/jp/album/teenagers-stepping-part2/6806903734?i=6806903909&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20Teenagers%20Stepping%20Part2%20OST"
+              },
+              {
+                "track_no": 25,
+                "title": "メビウス・ダストの前奏曲",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%A1%E3%83%93%E3%82%A6%E3%82%B9-%E3%83%80%E3%82%B9%E3%83%88%E3%81%AE%E5%89%8D%E5%A5%8F%E6%9B%B2/6806903734?i=6806903910&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E3%83%A1%E3%83%93%E3%82%A6%E3%82%B9%E3%83%BB%E3%83%80%E3%82%B9%E3%83%88%E3%81%AE%E5%89%8D%E5%A5%8F%E6%9B%B2%20OST"
+              },
+              {
+                "track_no": 26,
+                "title": "雨あがりのメビウス・ダスト",
+                "itunes_url": "https://music.apple.com/jp/album/%E9%9B%A8%E3%81%82%E3%81%8C%E3%82%8A%E3%81%AE%E3%83%A1%E3%83%93%E3%82%A6%E3%82%B9-%E3%83%80%E3%82%B9%E3%83%88/6806903734?i=6806903911&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E9%9B%A8%E3%81%82%E3%81%8C%E3%82%8A%E3%81%AE%E3%83%A1%E3%83%93%E3%82%A6%E3%82%B9%E3%83%BB%E3%83%80%E3%82%B9%E3%83%88%20OST"
+              },
+              {
+                "track_no": 27,
+                "title": "Longing",
+                "itunes_url": "https://music.apple.com/jp/album/longing/6806903734?i=6806903912&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20Longing%20OST"
+              },
+              {
+                "track_no": 28,
+                "title": "あなたのクルス",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E3%82%AF%E3%83%AB%E3%82%B9/6806903734?i=6806903913&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E3%82%AF%E3%83%AB%E3%82%B9%20OST"
+              },
+              {
+                "track_no": 29,
+                "title": "暴走",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%9A%B4%E8%B5%B0/6806903734?i=6806903914&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E6%9A%B4%E8%B5%B0%20OST"
+              },
+              {
+                "track_no": 30,
+                "title": "You Win?",
+                "itunes_url": "https://music.apple.com/jp/album/you-win/6806903734?i=6806903915&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20You%20Win%3F%20OST"
+              },
+              {
+                "track_no": 31,
+                "title": "Negative Liberations",
+                "itunes_url": "https://music.apple.com/jp/album/negative-liberations/6806903734?i=6806903916&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20Negative%20Liberations%20OST"
+              },
+              {
+                "track_no": 32,
+                "title": "チェックメイト",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%83%A1%E3%82%A4%E3%83%88/6806903734?i=6806903917&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%83%A1%E3%82%A4%E3%83%88%20OST"
+              },
+              {
+                "track_no": 33,
+                "title": "Heavy Something",
+                "itunes_url": "https://music.apple.com/jp/album/heavy-something/6806903734?i=6806903918&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20Heavy%20Something%20OST"
+              },
+              {
+                "track_no": 34,
+                "title": "追跡",
+                "itunes_url": "https://music.apple.com/jp/album/%E8%BF%BD%E8%B7%A1/6806903734?i=6806903919&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E8%BF%BD%E8%B7%A1%20OST"
+              },
+              {
+                "track_no": 35,
+                "title": "ぼく達の戦い III",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%BC%E3%81%8F%E9%81%94%E3%81%AE%E6%88%A6%E3%81%84-iii/6806903734?i=6806903920&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E3%81%BC%E3%81%8F%E9%81%94%E3%81%AE%E6%88%A6%E3%81%84%20III%20OST"
+              },
+              {
+                "track_no": 36,
+                "title": "鈍い輝きのメロディ",
+                "itunes_url": "https://music.apple.com/jp/album/%E9%88%8D%E3%81%84%E8%BC%9D%E3%81%8D%E3%81%AE%E3%83%A1%E3%83%AD%E3%83%87%E3%82%A3/6806903734?i=6806903921&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E9%88%8D%E3%81%84%E8%BC%9D%E3%81%8D%E3%81%AE%E3%83%A1%E3%83%AD%E3%83%87%E3%82%A3%20OST"
+              },
+              {
+                "track_no": 37,
+                "title": "ラムスキャリア",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%A9%E3%83%A0%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%AA%E3%82%A2/6806903734?i=6806903952&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E3%83%A9%E3%83%A0%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%AA%E3%82%A2%20OST"
+              },
+              {
+                "track_no": 38,
+                "title": "Teenagers Stepping Part3",
+                "itunes_url": "https://music.apple.com/jp/album/teenagers-stepping-part3/6806903734?i=6806903953&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20Teenagers%20Stepping%20Part3%20OST"
+              },
+              {
+                "track_no": 39,
+                "title": "炎よ消えないで",
+                "itunes_url": "https://music.apple.com/jp/album/%E7%82%8E%E3%82%88%E6%B6%88%E3%81%88%E3%81%AA%E3%81%84%E3%81%A7/6806903734?i=6806903954&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E7%82%8E%E3%82%88%E6%B6%88%E3%81%88%E3%81%AA%E3%81%84%E3%81%A7%20OST"
+              },
+              {
+                "track_no": 40,
+                "title": "Blue Calx",
+                "itunes_url": "https://music.apple.com/jp/album/blue-calx/6806903734?i=6806903955&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20Blue%20Calx%20OST"
+              },
+              {
+                "track_no": 41,
+                "title": "You Lose",
+                "itunes_url": "https://music.apple.com/jp/album/you-lose/6806903734?i=6806903956&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20You%20Lose%20OST"
+              },
+              {
+                "track_no": 42,
+                "title": "とべ!まりも",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%A8%E3%81%B9-%E3%81%BE%E3%82%8A%E3%82%82/6806903734?i=6806903957&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E3%81%A8%E3%81%B9!%E3%81%BE%E3%82%8A%E3%82%82%20OST"
+              },
+              {
+                "track_no": 43,
+                "title": "胸騒ぎ",
+                "itunes_url": "https://music.apple.com/jp/album/%E8%83%B8%E9%A8%92%E3%81%8E/6806903734?i=6806903958&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E8%83%B8%E9%A8%92%E3%81%8E%20OST"
+              },
+              {
+                "track_no": 44,
+                "title": "別れ",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%88%A5%E3%82%8C/6806903734?i=6806903959&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E5%88%A5%E3%82%8C%20OST"
+              },
+              {
+                "track_no": 45,
+                "title": "いつだって追いかけっこ",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%84%E3%81%A4%E3%81%A0%E3%81%A3%E3%81%A6%E8%BF%BD%E3%81%84%E3%81%8B%E3%81%91%E3%81%A3%E3%81%93/6806903734?i=6806903960&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E3%81%84%E3%81%A4%E3%81%A0%E3%81%A3%E3%81%A6%E8%BF%BD%E3%81%84%E3%81%8B%E3%81%91%E3%81%A3%E3%81%93%20OST"
+              },
+              {
+                "track_no": 46,
+                "title": "不安と動揺",
+                "itunes_url": "https://music.apple.com/jp/album/%E4%B8%8D%E5%AE%89%E3%81%A8%E5%8B%95%E6%8F%BA/6806903734?i=6806903961&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E4%B8%8D%E5%AE%89%E3%81%A8%E5%8B%95%E6%8F%BA%20OST"
+              },
+              {
+                "track_no": 47,
+                "title": "心の行先",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%BF%83%E3%81%AE%E8%A1%8C%E5%85%88/6806903734?i=6806903962&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E5%BF%83%E3%81%AE%E8%A1%8C%E5%85%88%20OST"
+              },
+              {
+                "track_no": 48,
+                "title": "裏切り",
+                "itunes_url": "https://music.apple.com/jp/album/%E8%A3%8F%E5%88%87%E3%82%8A/6806903734?i=6806903963&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E8%A3%8F%E5%88%87%E3%82%8A%20OST"
+              },
+              {
+                "track_no": 49,
+                "title": "軽蔑",
+                "itunes_url": "https://music.apple.com/jp/album/%E8%BB%BD%E8%94%91/6806903734?i=6806903964&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E8%BB%BD%E8%94%91%20OST"
+              },
+              {
+                "track_no": 50,
+                "title": "もう一度だけ",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%82%E3%81%86%E4%B8%80%E5%BA%A6%E3%81%A0%E3%81%91/6806903734?i=6806903965&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E3%82%82%E3%81%86%E4%B8%80%E5%BA%A6%E3%81%A0%E3%81%91%20OST"
+              },
+              {
+                "track_no": 51,
+                "title": "Heavier Dusts",
+                "itunes_url": "https://music.apple.com/jp/album/heavier-dusts/6806903734?i=6806903966&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20Heavier%20Dusts%20OST"
+              },
+              {
+                "track_no": 52,
+                "title": "アラキとクルスのソナチネ",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%A2%E3%83%A9%E3%82%AD%E3%81%A8%E3%82%AF%E3%83%AB%E3%82%B9%E3%81%AE%E3%82%BD%E3%83%8A%E3%83%81%E3%83%8D/6806903734?i=6806903967&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Mebius%20Dust%20%E3%82%A2%E3%83%A9%E3%82%AD%E3%81%A8%E3%82%AF%E3%83%AB%E3%82%B9%E3%81%AE%E3%82%BD%E3%83%8A%E3%83%81%E3%83%8D%20OST"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 63752,
+    "composer": "Takashi Aoshima, Kana Utatane",
+    "albums": [
+      {
+        "release_date": "2026-09-21",
+        "image": "image/ost/63752.webp",
+        "discs": [
+          {
+            "disc": 1,
+            "tracks": [
+              {
+                "track_no": 1,
+                "title": "Butterfly (TV size)",
+                "itunes_url": "https://music.apple.com/jp/album/butterfly-tv-size/6803827587?i=6803827588&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20Butterfly%20(TV%20size)%20OST"
+              },
+              {
+                "track_no": 2,
+                "title": "捨てられ聖女の異世界ごはん旅",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%8D%A8%E3%81%A6%E3%82%89%E3%82%8C%E8%81%96%E5%A5%B3%E3%81%AE%E7%95%B0%E4%B8%96%E7%95%8C%E3%81%94%E3%81%AF%E3%82%93%E6%97%85/6803827587?i=6803827589&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E6%8D%A8%E3%81%A6%E3%82%89%E3%82%8C%E8%81%96%E5%A5%B3%E3%81%AE%E7%95%B0%E4%B8%96%E7%95%8C%E3%81%94%E3%81%AF%E3%82%93%E6%97%85%20OST"
+              },
+              {
+                "track_no": 3,
+                "title": "微笑みの食卓",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%BE%AE%E7%AC%91%E3%81%BF%E3%81%AE%E9%A3%9F%E5%8D%93/6803827587?i=6803827591&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E5%BE%AE%E7%AC%91%E3%81%BF%E3%81%AE%E9%A3%9F%E5%8D%93%20OST"
+              },
+              {
+                "track_no": 4,
+                "title": "空腹と暴走",
+                "itunes_url": "https://music.apple.com/jp/album/%E7%A9%BA%E8%85%B9%E3%81%A8%E6%9A%B4%E8%B5%B0/6803827587?i=6803827592&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E7%A9%BA%E8%85%B9%E3%81%A8%E6%9A%B4%E8%B5%B0%20OST"
+              },
+              {
+                "track_no": 5,
+                "title": "小さな絆",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%B0%8F%E3%81%95%E3%81%AA%E7%B5%86/6803827587?i=6803827593&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E5%B0%8F%E3%81%95%E3%81%AA%E7%B5%86%20OST"
+              },
+              {
+                "track_no": 6,
+                "title": "召喚なんて聞いてない!",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%8F%AC%E5%96%9A%E3%81%AA%E3%82%93%E3%81%A6%E8%81%9E%E3%81%84%E3%81%A6%E3%81%AA%E3%81%84/6803827587?i=6803827594&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E5%8F%AC%E5%96%9A%E3%81%AA%E3%82%93%E3%81%A6%E8%81%9E%E3%81%84%E3%81%A6%E3%81%AA%E3%81%84!%20OST"
+              },
+              {
+                "track_no": 7,
+                "title": "実りの風",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%AE%9F%E3%82%8A%E3%81%AE%E9%A2%A8/6803827587?i=6803827595&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E5%AE%9F%E3%82%8A%E3%81%AE%E9%A2%A8%20OST"
+              },
+              {
+                "track_no": 8,
+                "title": "旅の始まり",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%97%85%E3%81%AE%E5%A7%8B%E3%81%BE%E3%82%8A/6803827587?i=6803827596&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E6%97%85%E3%81%AE%E5%A7%8B%E3%81%BE%E3%82%8A%20OST"
+              },
+              {
+                "track_no": 9,
+                "title": "今日のごちそう",
+                "itunes_url": "https://music.apple.com/jp/album/%E4%BB%8A%E6%97%A5%E3%81%AE%E3%81%94%E3%81%A1%E3%81%9D%E3%81%86/6803827587?i=6803827597&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E4%BB%8A%E6%97%A5%E3%81%AE%E3%81%94%E3%81%A1%E3%81%9D%E3%81%86%20OST"
+              },
+              {
+                "track_no": 10,
+                "title": "月明かりの夜",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%9C%88%E6%98%8E%E3%81%8B%E3%82%8A%E3%81%AE%E5%A4%9C/6803827587?i=6803827598&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E6%9C%88%E6%98%8E%E3%81%8B%E3%82%8A%E3%81%AE%E5%A4%9C%20OST"
+              },
+              {
+                "track_no": 11,
+                "title": "迫り来る危機",
+                "itunes_url": "https://music.apple.com/jp/album/%E8%BF%AB%E3%82%8A%E6%9D%A5%E3%82%8B%E5%8D%B1%E6%A9%9F/6803827587?i=6803827599&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E8%BF%AB%E3%82%8A%E6%9D%A5%E3%82%8B%E5%8D%B1%E6%A9%9F%20OST"
+              },
+              {
+                "track_no": 12,
+                "title": "モーちゃん出発!",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%A2%E3%83%BC%E3%81%A1%E3%82%83%E3%82%93%E5%87%BA%E7%99%BA/6803827587?i=6803827600&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E3%83%A2%E3%83%BC%E3%81%A1%E3%82%83%E3%82%93%E5%87%BA%E7%99%BA!%20OST"
+              },
+              {
+                "track_no": 13,
+                "title": "暴食の卓",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%9A%B4%E9%A3%9F%E3%81%AE%E5%8D%93/6803827587?i=6803827601&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E6%9A%B4%E9%A3%9F%E3%81%AE%E5%8D%93%20OST"
+              },
+              {
+                "track_no": 14,
+                "title": "誇りを胸に",
+                "itunes_url": "https://music.apple.com/jp/album/%E8%AA%87%E3%82%8A%E3%82%92%E8%83%B8%E3%81%AB/6803827587?i=6803827602&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E8%AA%87%E3%82%8A%E3%82%92%E8%83%B8%E3%81%AB%20OST"
+              },
+              {
+                "track_no": 15,
+                "title": "剣士の矜持",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%89%A3%E5%A3%AB%E3%81%AE%E7%9F%9C%E6%8C%81/6803827587?i=6803827603&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E5%89%A3%E5%A3%AB%E3%81%AE%E7%9F%9C%E6%8C%81%20OST"
+              },
+              {
+                "track_no": 16,
+                "title": "リンのテーマ",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%AA%E3%83%B3%E3%81%AE%E3%83%86%E3%83%BC%E3%83%9E/6803827587?i=6803827604&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E3%83%AA%E3%83%B3%E3%81%AE%E3%83%86%E3%83%BC%E3%83%9E%20OST"
+              },
+              {
+                "track_no": 17,
+                "title": "異世界の文化",
+                "itunes_url": "https://music.apple.com/jp/album/%E7%95%B0%E4%B8%96%E7%95%8C%E3%81%AE%E6%96%87%E5%8C%96/6803827587?i=6803827605&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E7%95%B0%E4%B8%96%E7%95%8C%E3%81%AE%E6%96%87%E5%8C%96%20OST"
+              },
+              {
+                "track_no": 18,
+                "title": "シーラのテーマ",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%B7%E3%83%BC%E3%83%A9%E3%81%AE%E3%83%86%E3%83%BC%E3%83%9E/6803827587?i=6803827606&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E3%82%B7%E3%83%BC%E3%83%A9%E3%81%AE%E3%83%86%E3%83%BC%E3%83%9E%20OST"
+              },
+              {
+                "track_no": 19,
+                "title": "不安の足音",
+                "itunes_url": "https://music.apple.com/jp/album/%E4%B8%8D%E5%AE%89%E3%81%AE%E8%B6%B3%E9%9F%B3/6803827587?i=6803827607&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E4%B8%8D%E5%AE%89%E3%81%AE%E8%B6%B3%E9%9F%B3%20OST"
+              },
+              {
+                "track_no": 20,
+                "title": "旅するキッチン",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%97%85%E3%81%99%E3%82%8B%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3/6803827587?i=6803827608&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E6%97%85%E3%81%99%E3%82%8B%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3%20OST"
+              },
+              {
+                "track_no": 21,
+                "title": "笑顔が集まる場所",
+                "itunes_url": "https://music.apple.com/jp/album/%E7%AC%91%E9%A1%94%E3%81%8C%E9%9B%86%E3%81%BE%E3%82%8B%E5%A0%B4%E6%89%80/6803827587?i=6803827609&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E7%AC%91%E9%A1%94%E3%81%8C%E9%9B%86%E3%81%BE%E3%82%8B%E5%A0%B4%E6%89%80%20OST"
+              },
+              {
+                "track_no": 22,
+                "title": "語らい",
+                "itunes_url": "https://music.apple.com/jp/album/%E8%AA%9E%E3%82%89%E3%81%84/6803827587?i=6803827610&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E8%AA%9E%E3%82%89%E3%81%84%20OST"
+              },
+              {
+                "track_no": 23,
+                "title": "アリアのテーマ",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%A2%E3%83%AA%E3%82%A2%E3%81%AE%E3%83%86%E3%83%BC%E3%83%9E/6803827587?i=6803827611&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E3%82%A2%E3%83%AA%E3%82%A2%E3%81%AE%E3%83%86%E3%83%BC%E3%83%9E%20OST"
+              },
+              {
+                "track_no": 24,
+                "title": "未知との邂逅",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%9C%AA%E7%9F%A5%E3%81%A8%E3%81%AE%E9%82%82%E9%80%85/6803827587?i=6803827612&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E6%9C%AA%E7%9F%A5%E3%81%A8%E3%81%AE%E9%82%82%E9%80%85%20OST"
+              },
+              {
+                "track_no": 25,
+                "title": "自業自得じゃん",
+                "itunes_url": "https://music.apple.com/jp/album/%E8%87%AA%E6%A5%AD%E8%87%AA%E5%BE%97%E3%81%98%E3%82%83%E3%82%93/6803827587?i=6803827613&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E8%87%AA%E6%A5%AD%E8%87%AA%E5%BE%97%E3%81%98%E3%82%83%E3%82%93%20OST"
+              },
+              {
+                "track_no": 26,
+                "title": "食卓に咲く笑顔",
+                "itunes_url": "https://music.apple.com/jp/album/%E9%A3%9F%E5%8D%93%E3%81%AB%E5%92%B2%E3%81%8F%E7%AC%91%E9%A1%94/6803827587?i=6803827614&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E9%A3%9F%E5%8D%93%E3%81%AB%E5%92%B2%E3%81%8F%E7%AC%91%E9%A1%94%20OST"
+              },
+              {
+                "track_no": 27,
+                "title": "おろおろ…",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%8A%E3%82%8D%E3%81%8A%E3%82%8D/6803827587?i=6803827615&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E3%81%8A%E3%82%8D%E3%81%8A%E3%82%8D%E2%80%A6%20OST"
+              },
+              {
+                "track_no": 28,
+                "title": "ごまみそのテーマ",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%94%E3%81%BE%E3%81%BF%E3%81%9D%E3%81%AE%E3%83%86%E3%83%BC%E3%83%9E/6803827587?i=6803827616&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E3%81%94%E3%81%BE%E3%81%BF%E3%81%9D%E3%81%AE%E3%83%86%E3%83%BC%E3%83%9E%20OST"
+              },
+              {
+                "track_no": 29,
+                "title": "異変の兆し",
+                "itunes_url": "https://music.apple.com/jp/album/%E7%95%B0%E5%A4%89%E3%81%AE%E5%85%86%E3%81%97/6803827587?i=6803827647&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E7%95%B0%E5%A4%89%E3%81%AE%E5%85%86%E3%81%97%20OST"
+              },
+              {
+                "track_no": 30,
+                "title": "静寂に沈む",
+                "itunes_url": "https://music.apple.com/jp/album/%E9%9D%99%E5%AF%82%E3%81%AB%E6%B2%88%E3%82%80/6803827587?i=6803827648&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E9%9D%99%E5%AF%82%E3%81%AB%E6%B2%88%E3%82%80%20OST"
+              },
+              {
+                "track_no": 31,
+                "title": "ダンジョンボス",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%80%E3%83%B3%E3%82%B8%E3%83%A7%E3%83%B3%E3%83%9C%E3%82%B9/6803827587?i=6803827649&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E3%83%80%E3%83%B3%E3%82%B8%E3%83%A7%E3%83%B3%E3%83%9C%E3%82%B9%20OST"
+              },
+              {
+                "track_no": 32,
+                "title": "旅のぬくもり",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%97%85%E3%81%AE%E3%81%AC%E3%81%8F%E3%82%82%E3%82%8A/6803827587?i=6803827650&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E6%97%85%E3%81%AE%E3%81%AC%E3%81%8F%E3%82%82%E3%82%8A%20OST"
+              },
+              {
+                "track_no": 33,
+                "title": "心の奥",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%BF%83%E3%81%AE%E5%A5%A5/6803827587?i=6803827651&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E5%BF%83%E3%81%AE%E5%A5%A5%20OST"
+              },
+              {
+                "track_no": 34,
+                "title": "思い巡らせて",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%80%9D%E3%81%84%E5%B7%A1%E3%82%89%E3%81%9B%E3%81%A6/6803827587?i=6803827652&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E6%80%9D%E3%81%84%E5%B7%A1%E3%82%89%E3%81%9B%E3%81%A6%20OST"
+              },
+              {
+                "track_no": 35,
+                "title": "賑やかな旅路",
+                "itunes_url": "https://music.apple.com/jp/album/%E8%B3%91%E3%82%84%E3%81%8B%E3%81%AA%E6%97%85%E8%B7%AF/6803827587?i=6803827653&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E8%B3%91%E3%82%84%E3%81%8B%E3%81%AA%E6%97%85%E8%B7%AF%20OST"
+              },
+              {
+                "track_no": 36,
+                "title": "迫りくる絶望",
+                "itunes_url": "https://music.apple.com/jp/album/%E8%BF%AB%E3%82%8A%E3%81%8F%E3%82%8B%E7%B5%B6%E6%9C%9B/6803827587?i=6803827654&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E8%BF%AB%E3%82%8A%E3%81%8F%E3%82%8B%E7%B5%B6%E6%9C%9B%20OST"
+              },
+              {
+                "track_no": 37,
+                "title": "緊迫の刻",
+                "itunes_url": "https://music.apple.com/jp/album/%E7%B7%8A%E8%BF%AB%E3%81%AE%E5%88%BB/6803827587?i=6803827655&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E7%B7%8A%E8%BF%AB%E3%81%AE%E5%88%BB%20OST"
+              },
+              {
+                "track_no": 38,
+                "title": "揺るがぬ決意",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%8F%BA%E3%82%8B%E3%81%8C%E3%81%AC%E6%B1%BA%E6%84%8F/6803827587?i=6803827656&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E6%8F%BA%E3%82%8B%E3%81%8C%E3%81%AC%E6%B1%BA%E6%84%8F%20OST"
+              },
+              {
+                "track_no": 39,
+                "title": "王都シュルブラン",
+                "itunes_url": "https://music.apple.com/jp/album/%E7%8E%8B%E9%83%BD%E3%82%B7%E3%83%A5%E3%83%AB%E3%83%96%E3%83%A9%E3%83%B3/6803827587?i=6803827657&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E7%8E%8B%E9%83%BD%E3%82%B7%E3%83%A5%E3%83%AB%E3%83%96%E3%83%A9%E3%83%B3%20OST"
+              },
+              {
+                "track_no": 40,
+                "title": "生死を懸けて",
+                "itunes_url": "https://music.apple.com/jp/album/%E7%94%9F%E6%AD%BB%E3%82%92%E6%87%B8%E3%81%91%E3%81%A6/6803827587?i=6803827659&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E7%94%9F%E6%AD%BB%E3%82%92%E6%87%B8%E3%81%91%E3%81%A6%20OST"
+              },
+              {
+                "track_no": 41,
+                "title": "そして旅は続く",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%9D%E3%81%97%E3%81%A6%E6%97%85%E3%81%AF%E7%B6%9A%E3%81%8F/6803827587?i=6803827660&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E3%81%9D%E3%81%97%E3%81%A6%E6%97%85%E3%81%AF%E7%B6%9A%E3%81%8F%20OST"
+              },
+              {
+                "track_no": 42,
+                "title": "次回予告",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%AC%A1%E5%9B%9E%E4%BA%88%E5%91%8A/6803827587?i=6803827661&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20%E6%AC%A1%E5%9B%9E%E4%BA%88%E5%91%8A%20OST"
+              },
+              {
+                "track_no": 43,
+                "title": "Holy Sweet Home (TV size)",
+                "itunes_url": "https://music.apple.com/jp/album/holy-sweet-home-tv-size/6803827587?i=6803827662&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Suterare%20Seijo%20no%20Isekai%20Gohantabi%3A%20Kakure%20Skill%20de%20Camping%20Car%20wo%20Shoukan%20Shimashita%20Holy%20Sweet%20Home%20(TV%20size)%20OST"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 62981,
+    "composer": "Yuu Mitsuru, Eishi Segawa, Noriyasu Agematsu",
+    "albums": [
+      {
+        "release_date": "2026-07-31",
+        "image": "image/ost/62981.webp",
+        "discs": [
+          {
+            "disc": 1,
+            "tracks": [
+              {
+                "track_no": 1,
+                "title": "La vita in Rosso",
+                "itunes_url": "https://music.apple.com/jp/album/la-vita-in-rosso/6793360004?i=6793360007&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20La%20vita%20in%20Rosso%20OST"
+              },
+              {
+                "track_no": 2,
+                "title": "デキャンタ",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%87%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%BF/6793360004?i=6793360010&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E3%83%87%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%BF%20OST"
+              },
+              {
+                "track_no": 3,
+                "title": "訃報",
+                "itunes_url": "https://music.apple.com/jp/album/%E8%A8%83%E5%A0%B1/6793360004?i=6793360012&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E8%A8%83%E5%A0%B1%20OST"
+              },
+              {
+                "track_no": 4,
+                "title": "Le Nedzu Vin",
+                "itunes_url": "https://music.apple.com/jp/album/le-nedzu-vin/6793360004?i=6793360019&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20Le%20Nedzu%20Vin%20OST"
+              },
+              {
+                "track_no": 5,
+                "title": "西園寺コーポレーション",
+                "itunes_url": "https://music.apple.com/jp/album/%E8%A5%BF%E5%9C%92%E5%AF%BA%E3%82%B3%E3%83%BC%E3%83%9D%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/6793360004?i=6793360274&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E8%A5%BF%E5%9C%92%E5%AF%BA%E3%82%B3%E3%83%BC%E3%83%9D%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%20OST"
+              },
+              {
+                "track_no": 6,
+                "title": "Cros Parantoux",
+                "itunes_url": "https://music.apple.com/jp/album/cros-parantoux/6793360004?i=6793360285&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20Cros%20Parantoux%20OST"
+              },
+              {
+                "track_no": 7,
+                "title": "神様の替わり",
+                "itunes_url": "https://music.apple.com/jp/album/%E7%A5%9E%E6%A7%98%E3%81%AE%E6%9B%BF%E3%82%8F%E3%82%8A/6793360004?i=6793360289&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E7%A5%9E%E6%A7%98%E3%81%AE%E6%9B%BF%E3%82%8F%E3%82%8A%20OST"
+              },
+              {
+                "track_no": 8,
+                "title": "土肥ロベール",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%9C%9F%E8%82%A5%E3%83%AD%E3%83%99%E3%83%BC%E3%83%AB/6793360004?i=6793360295&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E5%9C%9F%E8%82%A5%E3%83%AD%E3%83%99%E3%83%BC%E3%83%AB%20OST"
+              },
+              {
+                "track_no": 9,
+                "title": "自然のワインセラー",
+                "itunes_url": "https://music.apple.com/jp/album/%E8%87%AA%E7%84%B6%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%B3%E3%82%BB%E3%83%A9%E3%83%BC/6793360004?i=6793360405&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E8%87%AA%E7%84%B6%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%B3%E3%82%BB%E3%83%A9%E3%83%BC%20OST"
+              },
+              {
+                "track_no": 10,
+                "title": "アンヌと美島",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%A2%E3%83%B3%E3%83%8C%E3%81%A8%E7%BE%8E%E5%B3%B6/6793360004?i=6793360576&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E3%82%A2%E3%83%B3%E3%83%8C%E3%81%A8%E7%BE%8E%E5%B3%B6%20OST"
+              },
+              {
+                "track_no": 11,
+                "title": "ほんとうの気持ち",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%BB%E3%82%93%E3%81%A8%E3%81%86%E3%81%AE%E6%B0%97%E6%8C%81%E3%81%A1/6793360004?i=6793360577&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E3%81%BB%E3%82%93%E3%81%A8%E3%81%86%E3%81%AE%E6%B0%97%E6%8C%81%E3%81%A1%20OST"
+              },
+              {
+                "track_no": 12,
+                "title": "ワイン事業部",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%AF%E3%82%A4%E3%83%B3%E4%BA%8B%E6%A5%AD%E9%83%A8/6793360004?i=6793360583&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E3%83%AF%E3%82%A4%E3%83%B3%E4%BA%8B%E6%A5%AD%E9%83%A8%20OST"
+              },
+              {
+                "track_no": 13,
+                "title": "私の全てを継ぐべき者へ",
+                "itunes_url": "https://music.apple.com/jp/album/%E7%A7%81%E3%81%AE%E5%85%A8%E3%81%A6%E3%82%92%E7%B6%99%E3%81%90%E3%81%B9%E3%81%8D%E8%80%85%E3%81%B8/6793360004?i=6793360584&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E7%A7%81%E3%81%AE%E5%85%A8%E3%81%A6%E3%82%92%E7%B6%99%E3%81%90%E3%81%B9%E3%81%8D%E8%80%85%E3%81%B8%20OST"
+              },
+              {
+                "track_no": 14,
+                "title": "un Pinot Noir discret",
+                "itunes_url": "https://music.apple.com/jp/album/un-pinot-noir-discret/6793360004?i=6793360585&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20un%20Pinot%20Noir%20discret%20OST"
+              },
+              {
+                "track_no": 15,
+                "title": "カオリ",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%AB%E3%82%AA%E3%83%AA/6793360004?i=6793360849&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E3%82%AB%E3%82%AA%E3%83%AA%20OST"
+              },
+              {
+                "track_no": 16,
+                "title": "遺言状",
+                "itunes_url": "https://music.apple.com/jp/album/%E9%81%BA%E8%A8%80%E7%8A%B6/6793360004?i=6793360853&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E9%81%BA%E8%A8%80%E7%8A%B6%20OST"
+              },
+              {
+                "track_no": 17,
+                "title": "とりあえず飲んでみましょうか",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%A8%E3%82%8A%E3%81%82%E3%81%88%E3%81%9A%E9%A3%B2%E3%82%93%E3%81%A7%E3%81%BF%E3%81%BE%E3%81%97%E3%82%87%E3%81%86%E3%81%8B/6793360004?i=6793360854&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E3%81%A8%E3%82%8A%E3%81%82%E3%81%88%E3%81%9A%E9%A3%B2%E3%82%93%E3%81%A7%E3%81%BF%E3%81%BE%E3%81%97%E3%82%87%E3%81%86%E3%81%8B%20OST"
+              },
+              {
+                "track_no": 18,
+                "title": "利水",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%88%A9%E6%B0%B4/6793360004?i=6793360855&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E5%88%A9%E6%B0%B4%20OST"
+              },
+              {
+                "track_no": 19,
+                "title": "指輪",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%8C%87%E8%BC%AA/6793360004?i=6793360865&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E6%8C%87%E8%BC%AA%20OST"
+              },
+              {
+                "track_no": 20,
+                "title": "香織",
+                "itunes_url": "https://music.apple.com/jp/album/%E9%A6%99%E7%B9%94/6793360004?i=6793360866&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E9%A6%99%E7%B9%94%20OST"
+              },
+              {
+                "track_no": 21,
+                "title": "1999 vs 2001",
+                "itunes_url": "https://music.apple.com/jp/album/1999-vs-2001/6793360004?i=6793360867&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%201999%20vs%202001%20OST"
+              },
+              {
+                "track_no": 22,
+                "title": "本間長介",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%9C%AC%E9%96%93%E9%95%B7%E4%BB%8B/6793360004?i=6793360868&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E6%9C%AC%E9%96%93%E9%95%B7%E4%BB%8B%20OST"
+              },
+              {
+                "track_no": 23,
+                "title": "MA FAMILLE",
+                "itunes_url": "https://music.apple.com/jp/album/ma-famille/6793360004?i=6793361239&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20MA%20FAMILLE%20OST"
+              },
+              {
+                "track_no": 24,
+                "title": "ワイン兄弟 ISHIKAWA",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%AF%E3%82%A4%E3%83%B3%E5%85%84%E5%BC%9F-ishikawa/6793360004?i=6793361241&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E3%83%AF%E3%82%A4%E3%83%B3%E5%85%84%E5%BC%9F%20ISHIKAWA%20OST"
+              },
+              {
+                "track_no": 25,
+                "title": "ボルドー五大シャトー",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%9C%E3%83%AB%E3%83%89%E3%83%BC%E4%BA%94%E5%A4%A7%E3%82%B7%E3%83%A3%E3%83%88%E3%83%BC/6793360004?i=6793361242&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E3%83%9C%E3%83%AB%E3%83%89%E3%83%BC%E4%BA%94%E5%A4%A7%E3%82%B7%E3%83%A3%E3%83%88%E3%83%BC%20OST"
+              },
+              {
+                "track_no": 26,
+                "title": "ピークアウト",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%94%E3%83%BC%E3%82%AF%E3%82%A2%E3%82%A6%E3%83%88/6793360004?i=6793361245&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E3%83%94%E3%83%BC%E3%82%AF%E3%82%A2%E3%82%A6%E3%83%88%20OST"
+              },
+              {
+                "track_no": 27,
+                "title": "亡国のミイラ",
+                "itunes_url": "https://music.apple.com/jp/album/%E4%BA%A1%E5%9B%BD%E3%81%AE%E3%83%9F%E3%82%A4%E3%83%A9/6793360004?i=6793361248&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E4%BA%A1%E5%9B%BD%E3%81%AE%E3%83%9F%E3%82%A4%E3%83%A9%20OST"
+              },
+              {
+                "track_no": 28,
+                "title": "復活",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%BE%A9%E6%B4%BB/6793360004?i=6793361263&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E5%BE%A9%E6%B4%BB%20OST"
+              },
+              {
+                "track_no": 29,
+                "title": "洗い場ですから洗い物です",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%B4%97%E3%81%84%E5%A0%B4%E3%81%A7%E3%81%99%E3%81%8B%E3%82%89%E6%B4%97%E3%81%84%E7%89%A9%E3%81%A7%E3%81%99/6793360004?i=6793361565&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E6%B4%97%E3%81%84%E5%A0%B4%E3%81%A7%E3%81%99%E3%81%8B%E3%82%89%E6%B4%97%E3%81%84%E7%89%A9%E3%81%A7%E3%81%99%20OST"
+              },
+              {
+                "track_no": 30,
+                "title": "ペガサス",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%9A%E3%82%AC%E3%82%B5%E3%82%B9/6793360004?i=6793361567&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E3%83%9A%E3%82%AC%E3%82%B5%E3%82%B9%20OST"
+              },
+              {
+                "track_no": 31,
+                "title": "ワインの声",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%AF%E3%82%A4%E3%83%B3%E3%81%AE%E5%A3%B0/6793360004?i=6793361570&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E3%83%AF%E3%82%A4%E3%83%B3%E3%81%AE%E5%A3%B0%20OST"
+              },
+              {
+                "track_no": 32,
+                "title": "奇妙なワイン",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%A5%87%E5%A6%99%E3%81%AA%E3%83%AF%E3%82%A4%E3%83%B3/6793360004?i=6793361581&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E5%A5%87%E5%A6%99%E3%81%AA%E3%83%AF%E3%82%A4%E3%83%B3%20OST"
+              },
+              {
+                "track_no": 33,
+                "title": "タクラマカン砂漠",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%BF%E3%82%AF%E3%83%A9%E3%83%9E%E3%82%AB%E3%83%B3%E7%A0%82%E6%BC%A0/6793360004?i=6793361584&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E3%82%BF%E3%82%AF%E3%83%A9%E3%83%9E%E3%82%AB%E3%83%B3%E7%A0%82%E6%BC%A0%20OST"
+              },
+              {
+                "track_no": 34,
+                "title": "探し物",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%8E%A2%E3%81%97%E7%89%A9/6793360004?i=6793361587&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E6%8E%A2%E3%81%97%E7%89%A9%20OST"
+              },
+              {
+                "track_no": 35,
+                "title": "ワインのような小節",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%AF%E3%82%A4%E3%83%B3%E3%81%AE%E3%82%88%E3%81%86%E3%81%AA%E5%B0%8F%E7%AF%80/6793360004?i=6793361588&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E3%83%AF%E3%82%A4%E3%83%B3%E3%81%AE%E3%82%88%E3%81%86%E3%81%AA%E5%B0%8F%E7%AF%80%20OST"
+              },
+              {
+                "track_no": 36,
+                "title": "間違ったワイン",
+                "itunes_url": "https://music.apple.com/jp/album/%E9%96%93%E9%81%95%E3%81%A3%E3%81%9F%E3%83%AF%E3%82%A4%E3%83%B3/6793360004?i=6793361589&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E9%96%93%E9%81%95%E3%81%A3%E3%81%9F%E3%83%AF%E3%82%A4%E3%83%B3%20OST"
+              },
+              {
+                "track_no": 37,
+                "title": "限界",
+                "itunes_url": "https://music.apple.com/jp/album/%E9%99%90%E7%95%8C/6793360004?i=6793361936&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E9%99%90%E7%95%8C%20OST"
+              },
+              {
+                "track_no": 38,
+                "title": "探し求めていたもの",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%8E%A2%E3%81%97%E6%B1%82%E3%82%81%E3%81%A6%E3%81%84%E3%81%9F%E3%82%82%E3%81%AE/6793360004?i=6793361939&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E6%8E%A2%E3%81%97%E6%B1%82%E3%82%81%E3%81%A6%E3%81%84%E3%81%9F%E3%82%82%E3%81%AE%20OST"
+              },
+              {
+                "track_no": 39,
+                "title": "傲慢なバッカス",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%82%B2%E6%85%A2%E3%81%AA%E3%83%90%E3%83%83%E3%82%AB%E3%82%B9/6793360004?i=6793361940&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E5%82%B2%E6%85%A2%E3%81%AA%E3%83%90%E3%83%83%E3%82%AB%E3%82%B9%20OST"
+              },
+              {
+                "track_no": 40,
+                "title": "Château Palmer 1999",
+                "itunes_url": "https://music.apple.com/jp/album/ch%C3%A2teau-palmer-1999/6793360004?i=6793361941&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20Ch%C3%A2teau%20Palmer%201999%20OST"
+              },
+              {
+                "track_no": 41,
+                "title": "テイスティングコメント",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%86%E3%82%A4%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88/6793360004?i=6793361943&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E3%83%86%E3%82%A4%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%20OST"
+              },
+              {
+                "track_no": 42,
+                "title": "黒川監督",
+                "itunes_url": "https://music.apple.com/jp/album/%E9%BB%92%E5%B7%9D%E7%9B%A3%E7%9D%A3/6793360004?i=6793361947&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E9%BB%92%E5%B7%9D%E7%9B%A3%E7%9D%A3%20OST"
+              },
+              {
+                "track_no": 43,
+                "title": "夕焼け",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%A4%95%E7%84%BC%E3%81%91/6793360004?i=6793361948&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E5%A4%95%E7%84%BC%E3%81%91%20OST"
+              },
+              {
+                "track_no": 44,
+                "title": "観覧車",
+                "itunes_url": "https://music.apple.com/jp/album/%E8%A6%B3%E8%A6%A7%E8%BB%8A/6793360004?i=6793361949&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E8%A6%B3%E8%A6%A7%E8%BB%8A%20OST"
+              },
+              {
+                "track_no": 45,
+                "title": "団欒",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%9B%A3%E6%AC%92/6793360004?i=6793361950&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E5%9B%A3%E6%AC%92%20OST"
+              },
+              {
+                "track_no": 46,
+                "title": "敗者の真実",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%95%97%E8%80%85%E3%81%AE%E7%9C%9F%E5%AE%9F/6793360004?i=6793361956&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E6%95%97%E8%80%85%E3%81%AE%E7%9C%9F%E5%AE%9F%20OST"
+              },
+              {
+                "track_no": 47,
+                "title": "蘇る絆",
+                "itunes_url": "https://music.apple.com/jp/album/%E8%98%87%E3%82%8B%E7%B5%86/6793360004?i=6793361958&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E8%98%87%E3%82%8B%E7%B5%86%20OST"
+              },
+              {
+                "track_no": 48,
+                "title": "ナイフとチケット",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%8A%E3%82%A4%E3%83%95%E3%81%A8%E3%83%81%E3%82%B1%E3%83%83%E3%83%88/6793360004?i=6793361959&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E3%83%8A%E3%82%A4%E3%83%95%E3%81%A8%E3%83%81%E3%82%B1%E3%83%83%E3%83%88%20OST"
+              },
+              {
+                "track_no": 49,
+                "title": "恋を想い出に変えるワイン",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%81%8B%E3%82%92%E6%83%B3%E3%81%84%E5%87%BA%E3%81%AB%E5%A4%89%E3%81%88%E3%82%8B%E3%83%AF%E3%82%A4%E3%83%B3/6793360004?i=6793361961&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E6%81%8B%E3%82%92%E6%83%B3%E3%81%84%E5%87%BA%E3%81%AB%E5%A4%89%E3%81%88%E3%82%8B%E3%83%AF%E3%82%A4%E3%83%B3%20OST"
+              },
+              {
+                "track_no": 50,
+                "title": "ジュリエッタ",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%B8%E3%83%A5%E3%83%AA%E3%82%A8%E3%83%83%E3%82%BF/6793360004?i=6793362321&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E3%82%B8%E3%83%A5%E3%83%AA%E3%82%A8%E3%83%83%E3%82%BF%20OST"
+              },
+              {
+                "track_no": 51,
+                "title": "1992 vs 1994",
+                "itunes_url": "https://music.apple.com/jp/album/1992-vs-1994/6793360004?i=6793362322&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%201992%20vs%201994%20OST"
+              },
+              {
+                "track_no": 52,
+                "title": "クレオパトラの肖像",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%AF%E3%83%AC%E3%82%AA%E3%83%91%E3%83%88%E3%83%A9%E3%81%AE%E8%82%96%E5%83%8F/6793360004?i=6793362414&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E3%82%AF%E3%83%AC%E3%82%AA%E3%83%91%E3%83%88%E3%83%A9%E3%81%AE%E8%82%96%E5%83%8F%20OST"
+              },
+              {
+                "track_no": 53,
+                "title": "鑑定とエチケット",
+                "itunes_url": "https://music.apple.com/jp/album/%E9%91%91%E5%AE%9A%E3%81%A8%E3%82%A8%E3%83%81%E3%82%B1%E3%83%83%E3%83%88/6793360004?i=6793362416&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E9%91%91%E5%AE%9A%E3%81%A8%E3%82%A8%E3%83%81%E3%82%B1%E3%83%83%E3%83%88%20OST"
+              },
+              {
+                "track_no": 54,
+                "title": "夕日と星空",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%A4%95%E6%97%A5%E3%81%A8%E6%98%9F%E7%A9%BA/6793360004?i=6793362418&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E5%A4%95%E6%97%A5%E3%81%A8%E6%98%9F%E7%A9%BA%20OST"
+              },
+              {
+                "track_no": 55,
+                "title": "夏の別荘",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%A4%8F%E3%81%AE%E5%88%A5%E8%8D%98/6793360004?i=6793362429&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E5%A4%8F%E3%81%AE%E5%88%A5%E8%8D%98%20OST"
+              },
+              {
+                "track_no": 56,
+                "title": "Château Pape Clément 1986",
+                "itunes_url": "https://music.apple.com/jp/album/ch%C3%A2teau-pape-cl%C3%A9ment-1986/6793360004?i=6793362431&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20Ch%C3%A2teau%20Pape%20Cl%C3%A9ment%201986%20OST"
+              },
+              {
+                "track_no": 57,
+                "title": "孤高の頂き",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%AD%A4%E9%AB%98%E3%81%AE%E9%A0%82%E3%81%8D/6793360004?i=6793362432&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E5%AD%A4%E9%AB%98%E3%81%AE%E9%A0%82%E3%81%8D%20OST"
+              },
+              {
+                "track_no": 58,
+                "title": "過去の記憶",
+                "itunes_url": "https://music.apple.com/jp/album/%E9%81%8E%E5%8E%BB%E3%81%AE%E8%A8%98%E6%86%B6/6793360004?i=6793362434&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E9%81%8E%E5%8E%BB%E3%81%AE%E8%A8%98%E6%86%B6%20OST"
+              },
+              {
+                "track_no": 59,
+                "title": "魔の山",
+                "itunes_url": "https://music.apple.com/jp/album/%E9%AD%94%E3%81%AE%E5%B1%B1/6793360004?i=6793362436&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E9%AD%94%E3%81%AE%E5%B1%B1%20OST"
+              },
+              {
+                "track_no": 60,
+                "title": "マッターホルン",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%9E%E3%83%83%E3%82%BF%E3%83%BC%E3%83%9B%E3%83%AB%E3%83%B3/6793360004?i=6793362437&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E3%83%9E%E3%83%83%E3%82%BF%E3%83%BC%E3%83%9B%E3%83%AB%E3%83%B3%20OST"
+              },
+              {
+                "track_no": 61,
+                "title": "クライミング",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%AF%E3%83%A9%E3%82%A4%E3%83%9F%E3%83%B3%E3%82%B0/6793360004?i=6793362438&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E3%82%AF%E3%83%A9%E3%82%A4%E3%83%9F%E3%83%B3%E3%82%B0%20OST"
+              },
+              {
+                "track_no": 62,
+                "title": "4478メートル",
+                "itunes_url": "https://music.apple.com/jp/album/4478%E3%83%A1%E3%83%BC%E3%83%88%E3%83%AB/6793360004?i=6793362439&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%204478%E3%83%A1%E3%83%BC%E3%83%88%E3%83%AB%20OST"
+              },
+              {
+                "track_no": 63,
+                "title": "Montrachet Grand Cru 2000",
+                "itunes_url": "https://music.apple.com/jp/album/montrachet-grand-cru-2000/6793360004?i=6793362440&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20Montrachet%20Grand%20Cru%202000%20OST"
+              },
+              {
+                "track_no": 64,
+                "title": "愛と試練",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%84%9B%E3%81%A8%E8%A9%A6%E7%B7%B4/6793360004?i=6793362442&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E6%84%9B%E3%81%A8%E8%A9%A6%E7%B7%B4%20OST"
+              },
+              {
+                "track_no": 65,
+                "title": "ボルドーの土",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%9C%E3%83%AB%E3%83%89%E3%83%BC%E3%81%AE%E5%9C%9F/6793360004?i=6793362443&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E3%83%9C%E3%83%AB%E3%83%89%E3%83%BC%E3%81%AE%E5%9C%9F%20OST"
+              },
+              {
+                "track_no": 66,
+                "title": "弥勒菩薩半跏思惟像",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%BC%A5%E5%8B%92%E8%8F%A9%E8%96%A9%E5%8D%8A%E8%B7%8F%E6%80%9D%E6%83%9F%E5%83%8F/6793360004?i=6793362594&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E5%BC%A5%E5%8B%92%E8%8F%A9%E8%96%A9%E5%8D%8A%E8%B7%8F%E6%80%9D%E6%83%9F%E5%83%8F%20OST"
+              },
+              {
+                "track_no": 67,
+                "title": "かげろひ",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%8B%E3%81%92%E3%82%8D%E3%81%B2/6793360004?i=6793362595&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E3%81%8B%E3%81%92%E3%82%8D%E3%81%B2%20OST"
+              },
+              {
+                "track_no": 68,
+                "title": "宵闇",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%AE%B5%E9%97%87/6793360004?i=6793362604&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E5%AE%B5%E9%97%87%20OST"
+              },
+              {
+                "track_no": 69,
+                "title": "Barolo Rocche del Falletto Riserva 2001",
+                "itunes_url": "https://music.apple.com/jp/album/barolo-rocche-del-falletto-riserva-2001/6793360004?i=6793362605&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20Barolo%20Rocche%20del%20Falletto%20Riserva%202001%20OST"
+              },
+              {
+                "track_no": 70,
+                "title": "青い月",
+                "itunes_url": "https://music.apple.com/jp/album/%E9%9D%92%E3%81%84%E6%9C%88/6793360004?i=6793362608&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E9%9D%92%E3%81%84%E6%9C%88%20OST"
+              },
+              {
+                "track_no": 71,
+                "title": "集いし人の力",
+                "itunes_url": "https://music.apple.com/jp/album/%E9%9B%86%E3%81%84%E3%81%97%E4%BA%BA%E3%81%AE%E5%8A%9B/6793360004?i=6793362609&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E9%9B%86%E3%81%84%E3%81%97%E4%BA%BA%E3%81%AE%E5%8A%9B%20OST"
+              },
+              {
+                "track_no": 72,
+                "title": "巡礼",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%B7%A1%E7%A4%BC/6793360004?i=6793362610&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E5%B7%A1%E7%A4%BC%20OST"
+              },
+              {
+                "track_no": 73,
+                "title": "永遠の未完成と言う完成",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%B0%B8%E9%81%A0%E3%81%AE%E6%9C%AA%E5%AE%8C%E6%88%90%E3%81%A8%E8%A8%80%E3%81%86%E5%AE%8C%E6%88%90/6793360004?i=6793362611&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E6%B0%B8%E9%81%A0%E3%81%AE%E6%9C%AA%E5%AE%8C%E6%88%90%E3%81%A8%E8%A8%80%E3%81%86%E5%AE%8C%E6%88%90%20OST"
+              },
+              {
+                "track_no": 74,
+                "title": "勝負か対話か",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%8B%9D%E8%B2%A0%E3%81%8B%E5%AF%BE%E8%A9%B1%E3%81%8B/6793360004?i=6793362614&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E5%8B%9D%E8%B2%A0%E3%81%8B%E5%AF%BE%E8%A9%B1%E3%81%8B%20OST"
+              },
+              {
+                "track_no": 75,
+                "title": "原点",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%8E%9F%E7%82%B9/6793360004?i=6793362615&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E5%8E%9F%E7%82%B9%20OST"
+              },
+              {
+                "track_no": 76,
+                "title": "一青の父",
+                "itunes_url": "https://music.apple.com/jp/album/%E4%B8%80%E9%9D%92%E3%81%AE%E7%88%B6/6793360004?i=6793362617&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E4%B8%80%E9%9D%92%E3%81%AE%E7%88%B6%20OST"
+              },
+              {
+                "track_no": 77,
+                "title": "ボルドー出張",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%9C%E3%83%AB%E3%83%89%E3%83%BC%E5%87%BA%E5%BC%B5/6793360004?i=6793362618&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E3%83%9C%E3%83%AB%E3%83%89%E3%83%BC%E5%87%BA%E5%BC%B5%20OST"
+              },
+              {
+                "track_no": 78,
+                "title": "確執",
+                "itunes_url": "https://music.apple.com/jp/album/%E7%A2%BA%E5%9F%B7/6793360004?i=6793362623&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E7%A2%BA%E5%9F%B7%20OST"
+              },
+              {
+                "track_no": 79,
+                "title": "真贋",
+                "itunes_url": "https://music.apple.com/jp/album/%E7%9C%9F%E8%B4%8B/6793360004?i=6793362954&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E7%9C%9F%E8%B4%8B%20OST"
+              },
+              {
+                "track_no": 80,
+                "title": "ワインのシャーベット",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%AF%E3%82%A4%E3%83%B3%E3%81%AE%E3%82%B7%E3%83%A3%E3%83%BC%E3%83%99%E3%83%83%E3%83%88/6793360004?i=6793362955&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E3%83%AF%E3%82%A4%E3%83%B3%E3%81%AE%E3%82%B7%E3%83%A3%E3%83%BC%E3%83%99%E3%83%83%E3%83%88%20OST"
+              },
+              {
+                "track_no": 81,
+                "title": "サラブレッド",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%B5%E3%83%A9%E3%83%96%E3%83%AC%E3%83%83%E3%83%89/6793360004?i=6793362956&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E3%82%B5%E3%83%A9%E3%83%96%E3%83%AC%E3%83%83%E3%83%89%20OST"
+              },
+              {
+                "track_no": 82,
+                "title": "メドックを走る",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%A1%E3%83%89%E3%83%83%E3%82%AF%E3%82%92%E8%B5%B0%E3%82%8B/6793360004?i=6793362957&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E3%83%A1%E3%83%89%E3%83%83%E3%82%AF%E3%82%92%E8%B5%B0%E3%82%8B%20OST"
+              },
+              {
+                "track_no": 83,
+                "title": "父の背中",
+                "itunes_url": "https://music.apple.com/jp/album/%E7%88%B6%E3%81%AE%E8%83%8C%E4%B8%AD/6793360004?i=6793362959&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E7%88%B6%E3%81%AE%E8%83%8C%E4%B8%AD%20OST"
+              },
+              {
+                "track_no": 84,
+                "title": "西陽に輝く薔薇色の丘",
+                "itunes_url": "https://music.apple.com/jp/album/%E8%A5%BF%E9%99%BD%E3%81%AB%E8%BC%9D%E3%81%8F%E8%96%94%E8%96%87%E8%89%B2%E3%81%AE%E4%B8%98/6793360004?i=6793362960&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E8%A5%BF%E9%99%BD%E3%81%AB%E8%BC%9D%E3%81%8F%E8%96%94%E8%96%87%E8%89%B2%E3%81%AE%E4%B8%98%20OST"
+              },
+              {
+                "track_no": 85,
+                "title": "我が父、神咲豊多香",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%88%91%E3%81%8C%E7%88%B6-%E7%A5%9E%E5%92%B2%E8%B1%8A%E5%A4%9A%E9%A6%99/6793360004?i=6793362964&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E6%88%91%E3%81%8C%E7%88%B6%E3%80%81%E7%A5%9E%E5%92%B2%E8%B1%8A%E5%A4%9A%E9%A6%99%20OST"
+              },
+              {
+                "track_no": 86,
+                "title": "新たな芽吹きの礎",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%96%B0%E3%81%9F%E3%81%AA%E8%8A%BD%E5%90%B9%E3%81%8D%E3%81%AE%E7%A4%8E/6793360004?i=6793362966&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E6%96%B0%E3%81%9F%E3%81%AA%E8%8A%BD%E5%90%B9%E3%81%8D%E3%81%AE%E7%A4%8E%20OST"
+              },
+              {
+                "track_no": 87,
+                "title": "3つのレオヴィル",
+                "itunes_url": "https://music.apple.com/jp/album/3%E3%81%A4%E3%81%AE%E3%83%AC%E3%82%AA%E3%83%B4%E3%82%A3%E3%83%AB/6793360004?i=6793362968&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%203%E3%81%A4%E3%81%AE%E3%83%AC%E3%82%AA%E3%83%B4%E3%82%A3%E3%83%AB%20OST"
+              },
+              {
+                "track_no": 88,
+                "title": "神の雫",
+                "itunes_url": "https://music.apple.com/jp/album/%E7%A5%9E%E3%81%AE%E9%9B%AB/6793360004?i=6793362970&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20%E7%A5%9E%E3%81%AE%E9%9B%AB%20OST"
+              },
+              {
+                "track_no": 89,
+                "title": "Wine Bar Monopole",
+                "itunes_url": "https://music.apple.com/jp/album/wine-bar-monopole/6793360004?i=6793362972&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kami%20no%20Shizuku%20Wine%20Bar%20Monopole%20OST"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 54000,
+    "composer": "Kenta Ihara, Kana Hashiguchi, Shou Aratame, Anchor",
+    "albums": [
+      {
+        "release_date": "2026-10-07",
+        "image": "image/ost/54000.webp",
+        "discs": [
+          {
+            "disc": 1,
+            "tracks": [
+              {
+                "track_no": 1,
+                "title": "The World of Otome Games Is Tough for Mobs",
+                "itunes_url": "https://music.apple.com/jp/album/the-world-of-otome-games-is-tough-for-mobs/6812641754?i=6812641756&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20The%20World%20of%20Otome%20Games%20Is%20Tough%20for%20Mobs%20OST"
+              },
+              {
+                "track_no": 2,
+                "title": "Luxion",
+                "itunes_url": "https://music.apple.com/jp/album/luxion/6812641754?i=6812641757&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Luxion%20OST"
+              },
+              {
+                "track_no": 3,
+                "title": "Oh, Livia",
+                "itunes_url": "https://music.apple.com/jp/album/oh-livia/6812641754?i=6812641758&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Oh%2C%20Livia%20OST"
+              },
+              {
+                "track_no": 4,
+                "title": "Principality",
+                "itunes_url": "https://music.apple.com/jp/album/principality/6812641754?i=6812641759&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Principality%20OST"
+              },
+              {
+                "track_no": 5,
+                "title": "Holfort Kingdom",
+                "itunes_url": "https://music.apple.com/jp/album/holfort-kingdom/6812641754?i=6812641760&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Holfort%20Kingdom%20OST"
+              },
+              {
+                "track_no": 6,
+                "title": "Hello, Yellow",
+                "itunes_url": "https://music.apple.com/jp/album/hello-yellow/6812641754?i=6812641761&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Hello%2C%20Yellow%20OST"
+              },
+              {
+                "track_no": 7,
+                "title": "Dearly Bearded",
+                "itunes_url": "https://music.apple.com/jp/album/dearly-bearded/6812641754?i=6812641762&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Dearly%20Bearded%20OST"
+              },
+              {
+                "track_no": 8,
+                "title": "SAVE Point",
+                "itunes_url": "https://music.apple.com/jp/album/save-point/6812641754?i=6812641763&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20SAVE%20Point%20OST"
+              },
+              {
+                "track_no": 9,
+                "title": "Mob Mabu Matriarchy",
+                "itunes_url": "https://music.apple.com/jp/album/mob-mabu-matriarchy/6812641754?i=6812641764&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Mob%20Mabu%20Matriarchy%20OST"
+              },
+              {
+                "track_no": 10,
+                "title": "LOS!",
+                "itunes_url": "https://music.apple.com/jp/album/los/6812641754?i=6812641765&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20LOS!%20OST"
+              },
+              {
+                "track_no": 11,
+                "title": "Bulletproof Glass Heart",
+                "itunes_url": "https://music.apple.com/jp/album/bulletproof-glass-heart/6812641754?i=6812641766&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Bulletproof%20Glass%20Heart%20OST"
+              },
+              {
+                "track_no": 12,
+                "title": "Tiptoe Trouble",
+                "itunes_url": "https://music.apple.com/jp/album/tiptoe-trouble/6812641754?i=6812641767&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Tiptoe%20Trouble%20OST"
+              },
+              {
+                "track_no": 13,
+                "title": "Three Lucky Charms",
+                "itunes_url": "https://music.apple.com/jp/album/three-lucky-charms/6812641754?i=6812641768&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Three%20Lucky%20Charms%20OST"
+              },
+              {
+                "track_no": 14,
+                "title": "Pale Pulse",
+                "itunes_url": "https://music.apple.com/jp/album/pale-pulse/6812641754?i=6812641769&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Pale%20Pulse%20OST"
+              },
+              {
+                "track_no": 15,
+                "title": "Congratulations!",
+                "itunes_url": "https://music.apple.com/jp/album/congratulations/6812641754?i=6812641770&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Congratulations!%20OST"
+              },
+              {
+                "track_no": 16,
+                "title": "Ray of Light",
+                "itunes_url": "https://music.apple.com/jp/album/ray-of-light/6812641754?i=6812641771&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Ray%20of%20Light%20OST"
+              },
+              {
+                "track_no": 17,
+                "title": "G Love",
+                "itunes_url": "https://music.apple.com/jp/album/g-love/6812641754?i=6812641773&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20G%20Love%20OST"
+              },
+              {
+                "track_no": 18,
+                "title": "Fading Footsteps",
+                "itunes_url": "https://music.apple.com/jp/album/fading-footsteps/6812641754?i=6812641775&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Fading%20Footsteps%20OST"
+              },
+              {
+                "track_no": 19,
+                "title": "FANBBA",
+                "itunes_url": "https://music.apple.com/jp/album/fanbba/6812641754?i=6812641776&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20FANBBA%20OST"
+              },
+              {
+                "track_no": 20,
+                "title": "Episode 0",
+                "itunes_url": "https://music.apple.com/jp/album/episode-0/6812641754?i=6812641777&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Episode%200%20OST"
+              },
+              {
+                "track_no": 21,
+                "title": "Wanna Debate Duel?",
+                "itunes_url": "https://music.apple.com/jp/album/wanna-debate-duel/6812641754?i=6812641778&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Wanna%20Debate%20Duel%3F%20OST"
+              },
+              {
+                "track_no": 22,
+                "title": "Echoes of Error",
+                "itunes_url": "https://music.apple.com/jp/album/echoes-of-error/6812641754?i=6812641779&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Echoes%20of%20Error%20OST"
+              },
+              {
+                "track_no": 23,
+                "title": "Buzzy Bug Buzzer",
+                "itunes_url": "https://music.apple.com/jp/album/buzzy-bug-buzzer/6812641754?i=6812641780&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Buzzy%20Bug%20Buzzer%20OST"
+              },
+              {
+                "track_no": 24,
+                "title": "Mysteria",
+                "itunes_url": "https://music.apple.com/jp/album/mysteria/6812641754?i=6812641781&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Mysteria%20OST"
+              },
+              {
+                "track_no": 25,
+                "title": "Instant Amen",
+                "itunes_url": "https://music.apple.com/jp/album/instant-amen/6812641754?i=6812641782&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Instant%20Amen%20OST"
+              },
+              {
+                "track_no": 26,
+                "title": "Blacked Out",
+                "itunes_url": "https://music.apple.com/jp/album/blacked-out/6812641754?i=6812641783&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Blacked%20Out%20OST"
+              },
+              {
+                "track_no": 27,
+                "title": "Appetizer: PRBG",
+                "itunes_url": "https://music.apple.com/jp/album/appetizer-prbg/6812641754?i=6812641784&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Appetizer%3A%20PRBG%20OST"
+              },
+              {
+                "track_no": 28,
+                "title": "Plan A or B",
+                "itunes_url": "https://music.apple.com/jp/album/plan-a-or-b/6812641754?i=6812641785&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Plan%20A%20or%20B%20OST"
+              },
+              {
+                "track_no": 29,
+                "title": "Main Dish: W",
+                "itunes_url": "https://music.apple.com/jp/album/main-dish-w/6812641754?i=6812641786&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Main%20Dish%3A%20W%20OST"
+              },
+              {
+                "track_no": 30,
+                "title": "Flashstrike",
+                "itunes_url": "https://music.apple.com/jp/album/flashstrike/6812641754?i=6812641787&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Flashstrike%20OST"
+              },
+              {
+                "track_no": 31,
+                "title": "The Black Knight",
+                "itunes_url": "https://music.apple.com/jp/album/the-black-knight/6812641754?i=6812641788&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20The%20Black%20Knight%20OST"
+              },
+              {
+                "track_no": 32,
+                "title": "Arroganz",
+                "itunes_url": "https://music.apple.com/jp/album/arroganz/6812641754?i=6812641789&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Arroganz%20OST"
+              },
+              {
+                "track_no": 33,
+                "title": "Flower Picking Time",
+                "itunes_url": "https://music.apple.com/jp/album/flower-picking-time/6812641754?i=6812641790&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Flower%20Picking%20Time%20OST"
+              },
+              {
+                "track_no": 34,
+                "title": "Monster Park",
+                "itunes_url": "https://music.apple.com/jp/album/monster-park/6812641754?i=6812641791&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Monster%20Park%20OST"
+              },
+              {
+                "track_no": 35,
+                "title": "Hertrude, I. Swarm",
+                "itunes_url": "https://music.apple.com/jp/album/hertrude-i-swarm/6812641754?i=6812641792&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Hertrude%2C%20I.%20Swarm%20OST"
+              },
+              {
+                "track_no": 36,
+                "title": "Silent Minority (Emotional Version)",
+                "itunes_url": "https://music.apple.com/jp/album/silent-minority-emotional-version/6812641754?i=6812641793&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Silent%20Minority%20(Emotional%20Version)%20OST"
+              },
+              {
+                "track_no": 37,
+                "title": "selfish (Lonely Version)",
+                "itunes_url": "https://music.apple.com/jp/album/selfish-lonely-version/6812641754?i=6812641794&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20selfish%20(Lonely%20Version)%20OST"
+              }
+            ]
+          },
+          {
+            "disc": 2,
+            "tracks": [
+              {
+                "track_no": 1,
+                "title": "120",
+                "itunes_url": "https://music.apple.com/jp/album/120/6812641754?i=6812641795&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20120%20OST"
+              },
+              {
+                "track_no": 2,
+                "title": "Flutter Chatter",
+                "itunes_url": "https://music.apple.com/jp/album/flutter-chatter/6812641754?i=6812641796&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Flutter%20Chatter%20OST"
+              },
+              {
+                "track_no": 3,
+                "title": "Country Potato Boys",
+                "itunes_url": "https://music.apple.com/jp/album/country-potato-boys/6812641754?i=6812641797&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Country%20Potato%20Boys%20OST"
+              },
+              {
+                "track_no": 4,
+                "title": "DOTABATA Chase",
+                "itunes_url": "https://music.apple.com/jp/album/dotabata-chase/6812641754?i=6812641798&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20DOTABATA%20Chase%20OST"
+              },
+              {
+                "track_no": 5,
+                "title": "Heel Heal Magic",
+                "itunes_url": "https://music.apple.com/jp/album/heel-heal-magic/6812641754?i=6812641799&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Heel%20Heal%20Magic%20OST"
+              },
+              {
+                "track_no": 6,
+                "title": "Heel Heal Magic (Music Box Version)",
+                "itunes_url": "https://music.apple.com/jp/album/heel-heal-magic-music-box-version/6812641754?i=6812641800&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Heel%20Heal%20Magic%20(Music%20Box%20Version)%20OST"
+              },
+              {
+                "track_no": 7,
+                "title": "1UP, 2DOWN",
+                "itunes_url": "https://music.apple.com/jp/album/1up-2down/6812641754?i=6812641801&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%201UP%2C%202DOWN%20OST"
+              },
+              {
+                "track_no": 8,
+                "title": "The Super Maskman",
+                "itunes_url": "https://music.apple.com/jp/album/the-super-maskman/6812641754?i=6812641802&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20The%20Super%20Maskman%20OST"
+              },
+              {
+                "track_no": 9,
+                "title": "BAD END",
+                "itunes_url": "https://music.apple.com/jp/album/bad-end/6812641754?i=6812641803&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20BAD%20END%20OST"
+              },
+              {
+                "track_no": 10,
+                "title": "SAD GIRL",
+                "itunes_url": "https://music.apple.com/jp/album/sad-girl/6812641754?i=6812641804&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20SAD%20GIRL%20OST"
+              },
+              {
+                "track_no": 11,
+                "title": "Curl, Curly, Curliest",
+                "itunes_url": "https://music.apple.com/jp/album/curl-curly-curliest/6812641754?i=6812641805&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Curl%2C%20Curly%2C%20Curliest%20OST"
+              },
+              {
+                "track_no": 12,
+                "title": "Queen Bee",
+                "itunes_url": "https://music.apple.com/jp/album/queen-bee/6812641754?i=6812641806&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Queen%20Bee%20OST"
+              },
+              {
+                "track_no": 13,
+                "title": "Beauty, Beauty, Beauty",
+                "itunes_url": "https://music.apple.com/jp/album/beauty-beauty-beauty/6812641754?i=6812641807&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Beauty%2C%20Beauty%2C%20Beauty%20OST"
+              },
+              {
+                "track_no": 14,
+                "title": "Ruins Room",
+                "itunes_url": "https://music.apple.com/jp/album/ruins-room/6812641754?i=6812641808&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Ruins%20Room%20OST"
+              },
+              {
+                "track_no": 15,
+                "title": "Hero’s Grace",
+                "itunes_url": "https://music.apple.com/jp/album/heros-grace/6812641754?i=6812641809&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Hero%E2%80%99s%20Grace%20OST"
+              },
+              {
+                "track_no": 16,
+                "title": "Backlog",
+                "itunes_url": "https://music.apple.com/jp/album/backlog/6812641754?i=6812641810&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Backlog%20OST"
+              },
+              {
+                "track_no": 17,
+                "title": "Helltoroute",
+                "itunes_url": "https://music.apple.com/jp/album/helltoroute/6812641754?i=6812641811&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Helltoroute%20OST"
+              },
+              {
+                "track_no": 18,
+                "title": "Silent Minority(Sorrowful Version)",
+                "itunes_url": "https://music.apple.com/jp/album/silent-minority-sorrowful-version/6812641754?i=6812641812&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Silent%20Minority(Sorrowful%20Version)%20OST"
+              },
+              {
+                "track_no": 19,
+                "title": "fL uT e",
+                "itunes_url": "https://music.apple.com/jp/album/fl-ut-e/6812641754?i=6812641813&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20fL%20uT%20e%20OST"
+              },
+              {
+                "track_no": 20,
+                "title": "Overflow",
+                "itunes_url": "https://music.apple.com/jp/album/overflow/6812641754?i=6812641814&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Overflow%20OST"
+              },
+              {
+                "track_no": 21,
+                "title": "Arm x1",
+                "itunes_url": "https://music.apple.com/jp/album/arm-x1/6812641754?i=6812641815&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Arm%20x1%20OST"
+              },
+              {
+                "track_no": 22,
+                "title": "Tomorrow Is Tomorrow! Que Sera Sera! (Heartbreak Version)",
+                "itunes_url": "https://music.apple.com/jp/album/tomorrow-is-tomorrow-que-sera-sera-heartbreak-version/6812641754?i=6812641816&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Tomorrow%20Is%20Tomorrow!%20Que%20Sera%20Sera!%20(Heartbreak%20Version)%20OST"
+              },
+              {
+                "track_no": 23,
+                "title": "Cursedrella",
+                "itunes_url": "https://music.apple.com/jp/album/cursedrella/6812641754?i=6812641817&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Cursedrella%20OST"
+              },
+              {
+                "track_no": 24,
+                "title": "Raid Battle",
+                "itunes_url": "https://music.apple.com/jp/album/raid-battle/6812641754?i=6812641818&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Raid%20Battle%20OST"
+              },
+              {
+                "track_no": 25,
+                "title": "WHACK SMACK DANCE",
+                "itunes_url": "https://music.apple.com/jp/album/whack-smack-dance/6812641754?i=6812641819&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20WHACK%20SMACK%20DANCE%20OST"
+              },
+              {
+                "track_no": 26,
+                "title": "Game Over",
+                "itunes_url": "https://music.apple.com/jp/album/game-over/6812641754?i=6812641820&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Game%20Over%20OST"
+              },
+              {
+                "track_no": 27,
+                "title": "oOoOo",
+                "itunes_url": "https://music.apple.com/jp/album/ooooo/6812641754?i=6812641821&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20oOoOo%20OST"
+              },
+              {
+                "track_no": 28,
+                "title": "Battleship Wars",
+                "itunes_url": "https://music.apple.com/jp/album/battleship-wars/6812641754?i=6812641822&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Battleship%20Wars%20OST"
+              },
+              {
+                "track_no": 29,
+                "title": "Hertrauda, I. Sky",
+                "itunes_url": "https://music.apple.com/jp/album/hertrauda-i-sky/6812641754?i=6812641823&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Hertrauda%2C%20I.%20Sky%20OST"
+              },
+              {
+                "track_no": 30,
+                "title": "Hertrauda, II. Sea",
+                "itunes_url": "https://music.apple.com/jp/album/hertrauda-ii-sea/6812641754?i=6812641824&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Hertrauda%2C%20II.%20Sea%20OST"
+              },
+              {
+                "track_no": 31,
+                "title": "Hertrauda, III. Earth",
+                "itunes_url": "https://music.apple.com/jp/album/hertrauda-iii-earth/6812641754?i=6812641825&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Hertrauda%2C%20III.%20Earth%20OST"
+              },
+              {
+                "track_no": 32,
+                "title": "Legendary Item",
+                "itunes_url": "https://music.apple.com/jp/album/legendary-item/6812641754?i=6812641826&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Legendary%20Item%20OST"
+              },
+              {
+                "track_no": 33,
+                "title": "Arrogantia",
+                "itunes_url": "https://music.apple.com/jp/album/arrogantia/6812641754?i=6812641827&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20Arrogantia%20OST"
+              },
+              {
+                "track_no": 34,
+                "title": "End Credits of My Life (Brides Version)",
+                "itunes_url": "https://music.apple.com/jp/album/end-credits-of-my-life-brides-version/6812641754?i=6812641828&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20End%20Credits%20of%20My%20Life%20(Brides%20Version)%20OST"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
-];
