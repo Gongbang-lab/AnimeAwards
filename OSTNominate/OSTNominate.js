@@ -214,7 +214,9 @@
     if (!eligibleWorks.length) {
       const empty = document.createElement("p");
       empty.className = "ost-empty-state";
-      empty.textContent = "현재 선택한 시즌에 등록된 OST 트랙이 없습니다.";
+      empty.textContent = !Array.isArray(window.animeOSTData)
+        ? "OST 데이터를 불러오지 못했습니다. 데이터 파일의 animeOSTData_연도 변수 선언과 파일 로딩 상태를 확인해주세요."
+        : "현재 선택한 시즌에 등록된 OST 트랙이 없습니다.";
       left.appendChild(empty);
     }
     window.NominateCommon.applyVoteBadges();

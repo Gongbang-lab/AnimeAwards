@@ -160,7 +160,16 @@
         const entries = oldButtons.map(old => {
             const panel = old.nextElementSibling;
             const wrapper = old.parentElement;
-            const label = (old.querySelector('span')?.textContent || old.firstChild?.textContent || old.textContent).trim();
+            // 요일이 텍스트 노드인 페이지와 span 안에 있는 페이지를 모두 지원한다.
+            // 펼침 화살표만 있는 span을 요일 이름으로 사용하지 않는다.
+            const cleanLabel = value => String(value || '').replace(/[▼▲▾▴▶▷►▸⌄⌃]/g, '').trim();
+            const directText = [...old.childNodes]
+                .filter(node => node.nodeType === 3)
+                .map(node => node.textContent).join(' ');
+            const label = cleanLabel(old.dataset.dayLabel)
+                || cleanLabel(directText)
+                || [...old.querySelectorAll('span')].map(node => cleanLabel(node.textContent)).find(Boolean)
+                || cleanLabel(old.textContent);
             const button = document.createElement('button');
             button.type = 'button';
             button.className = 'nominate-day-button';

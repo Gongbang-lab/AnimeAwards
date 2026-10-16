@@ -1,4 +1,4 @@
-var AnimeStudioData = [
+var AnimeStudioData_2026 = [
   {
     "studio": "100studio",
     "studio_img": "image/studio/100studio.avif",
@@ -298,12 +298,12 @@ var AnimeStudioData = [
     "works": [
       {
         "title": "전자오락수호대",
-        "thumbnail": "image/cinema/2027/전자오락수호대.webp",
+        "thumbnail": "image/cinema/2026/전자오락수호대.webp",
         "director": "엄영식",
         "quarter": [
           "4분기"
         ],
-        "year": 2027
+        "year": 2026
       }
     ]
   },
@@ -635,12 +635,12 @@ var AnimeStudioData = [
     "works": [
       {
         "title": "자금·어묘방",
-        "thumbnail": "image/animeimg/2025/Q4/자금어묘방.webp",
+        "thumbnail": "image/animeimg/2026/Q4/자금어묘방.webp",
         "director": "덩즈웨이",
         "quarter": [
           "4분기"
         ],
-        "year": 2025
+        "year": 2026
       }
     ]
   },

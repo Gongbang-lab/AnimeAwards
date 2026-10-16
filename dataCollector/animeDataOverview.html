@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026 애니메이션 데이터 현황</title>
+  <link rel="stylesheet" href="animeDataOverview.css">
+  <script src="animeDataOverview.js" defer></script>
+</head>
+<body>
+  <main>
+    <header><p class="eyebrow">ANIME AWARDS · DATA</p><h1>2026 애니메이션 데이터 현황</h1>
+      <p class="muted">작품을 선택하면 곡 제목과 등록된 상세 데이터를 볼 수 있습니다.</p>
+      <p class="muted">O는 데이터 등록, X는 미등록입니다. 실제 발매·방영 여부를 의미하지 않습니다. 데이터 수정 후 새로고침해주세요.</p>
+    </header>
+    <p id="summary" role="status">데이터를 불러오는 중입니다…</p>
+    <p id="error" role="alert" hidden></p>
+    <div id="cards"></div>
+  </main>
+  <dialog id="detail" aria-labelledby="detail-title">
+    <div class="dialog-header"><div><h2 id="detail-title"></h2><p id="detail-meta" class="muted"></p></div><button id="close" aria-label="상세 닫기">닫기</button></div>
+    <div id="detail-body"></div>
+  </dialog>
+</body>
+</html>

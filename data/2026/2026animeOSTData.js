@@ -1,4 +1,4 @@
-[
+var animeOSTData_2026 = [
   {
     "id": 61886,
     "composer": "Hitomi Amamiya, Kenji Fujisawa",
@@ -29821,6 +29821,794 @@
                 "title": "End Credits of My Life (Brides Version)",
                 "itunes_url": "https://music.apple.com/jp/album/end-credits-of-my-life-brides-version/6812641754?i=6812641828&uo=4",
                 "youtube_url": "https://www.youtube.com/results?search_query=Otomege%20Sekai%20wa%20Mob%20ni%20Kibishii%20Sekai%20desu%202%20End%20Credits%20of%20My%20Life%20(Brides%20Version)%20OST"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 61782,
+    "composer": "Touko Machida, Jin, Katsutoshi Kitagawa, Eri Chichibu",
+    "albums": [
+      {
+        "release_date": "2026-03-18",
+        "image": "image/ost/61782.webp",
+        "discs": [
+          {
+            "disc": 1,
+            "tracks": [
+              {
+                "track_no": 1,
+                "title": "金目におまかせください。",
+                "itunes_url": "https://music.apple.com/jp/album/%E9%87%91%E7%9B%AE%E3%81%AB%E3%81%8A%E3%81%BE%E3%81%8B%E3%81%9B%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84/1880608868?i=1880608869&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kirei%20ni%20Shitemoraemasu%20ka.%20%E9%87%91%E7%9B%AE%E3%81%AB%E3%81%8A%E3%81%BE%E3%81%8B%E3%81%9B%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82%20OST"
+              },
+              {
+                "track_no": 2,
+                "title": "おはよう、熱海",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%8A%E3%81%AF%E3%82%88%E3%81%86-%E7%86%B1%E6%B5%B7/1880608868?i=1880608871&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kirei%20ni%20Shitemoraemasu%20ka.%20%E3%81%8A%E3%81%AF%E3%82%88%E3%81%86%E3%80%81%E7%86%B1%E6%B5%B7%20OST"
+              },
+              {
+                "track_no": 3,
+                "title": "海岸線の朝陽",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%B5%B7%E5%B2%B8%E7%B7%9A%E3%81%AE%E6%9C%9D%E9%99%BD/1880608868?i=1880608872&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kirei%20ni%20Shitemoraemasu%20ka.%20%E6%B5%B7%E5%B2%B8%E7%B7%9A%E3%81%AE%E6%9C%9D%E9%99%BD%20OST"
+              },
+              {
+                "track_no": 4,
+                "title": "あたみのみんな",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%82%E3%81%9F%E3%81%BF%E3%81%AE%E3%81%BF%E3%82%93%E3%81%AA/1880608868?i=1880608873&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kirei%20ni%20Shitemoraemasu%20ka.%20%E3%81%82%E3%81%9F%E3%81%BF%E3%81%AE%E3%81%BF%E3%82%93%E3%81%AA%20OST"
+              },
+              {
+                "track_no": 5,
+                "title": "金目さんの日常",
+                "itunes_url": "https://music.apple.com/jp/album/%E9%87%91%E7%9B%AE%E3%81%95%E3%82%93%E3%81%AE%E6%97%A5%E5%B8%B8/1880608868?i=1880608874&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kirei%20ni%20Shitemoraemasu%20ka.%20%E9%87%91%E7%9B%AE%E3%81%95%E3%82%93%E3%81%AE%E6%97%A5%E5%B8%B8%20OST"
+              },
+              {
+                "track_no": 6,
+                "title": "おしごと、てしごと、",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%8A%E3%81%97%E3%81%94%E3%81%A8-%E3%81%A6%E3%81%97%E3%81%94%E3%81%A8/1880608868?i=1880608875&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kirei%20ni%20Shitemoraemasu%20ka.%20%E3%81%8A%E3%81%97%E3%81%94%E3%81%A8%E3%80%81%E3%81%A6%E3%81%97%E3%81%94%E3%81%A8%E3%80%81%20OST"
+              },
+              {
+                "track_no": 7,
+                "title": "おしえて、金目さん",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%8A%E3%81%97%E3%81%88%E3%81%A6-%E9%87%91%E7%9B%AE%E3%81%95%E3%82%93/1880608868?i=1880608876&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kirei%20ni%20Shitemoraemasu%20ka.%20%E3%81%8A%E3%81%97%E3%81%88%E3%81%A6%E3%80%81%E9%87%91%E7%9B%AE%E3%81%95%E3%82%93%20OST"
+              },
+              {
+                "track_no": 8,
+                "title": "ようこそ、キンメクリーニングへ",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%88%E3%81%86%E3%81%93%E3%81%9D-%E3%82%AD%E3%83%B3%E3%83%A1%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%81%B8/1880608868?i=1880608877&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kirei%20ni%20Shitemoraemasu%20ka.%20%E3%82%88%E3%81%86%E3%81%93%E3%81%9D%E3%80%81%E3%82%AD%E3%83%B3%E3%83%A1%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%81%B8%20OST"
+              },
+              {
+                "track_no": 9,
+                "title": "ふわふわかな",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%B5%E3%82%8F%E3%81%B5%E3%82%8F%E3%81%8B%E3%81%AA/1880608868?i=1880608878&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kirei%20ni%20Shitemoraemasu%20ka.%20%E3%81%B5%E3%82%8F%E3%81%B5%E3%82%8F%E3%81%8B%E3%81%AA%20OST"
+              },
+              {
+                "track_no": 10,
+                "title": "キンメ・ワルツ",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%AD%E3%83%B3%E3%83%A1-%E3%83%AF%E3%83%AB%E3%83%84/1880608868?i=1880608879&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kirei%20ni%20Shitemoraemasu%20ka.%20%E3%82%AD%E3%83%B3%E3%83%A1%E3%83%BB%E3%83%AF%E3%83%AB%E3%83%84%20OST"
+              },
+              {
+                "track_no": 11,
+                "title": "おしゃべり、ほのぼの。",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%8A%E3%81%97%E3%82%83%E3%81%B9%E3%82%8A-%E3%81%BB%E3%81%AE%E3%81%BC%E3%81%AE/1880608868?i=1880608880&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kirei%20ni%20Shitemoraemasu%20ka.%20%E3%81%8A%E3%81%97%E3%82%83%E3%81%B9%E3%82%8A%E3%80%81%E3%81%BB%E3%81%AE%E3%81%BC%E3%81%AE%E3%80%82%20OST"
+              },
+              {
+                "track_no": 12,
+                "title": "ごきげん熱海ライフ!",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%94%E3%81%8D%E3%81%92%E3%82%93%E7%86%B1%E6%B5%B7%E3%83%A9%E3%82%A4%E3%83%95/1880608868?i=1880608881&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kirei%20ni%20Shitemoraemasu%20ka.%20%E3%81%94%E3%81%8D%E3%81%92%E3%82%93%E7%86%B1%E6%B5%B7%E3%83%A9%E3%82%A4%E3%83%95!%20OST"
+              },
+              {
+                "track_no": 13,
+                "title": "ぽこぽこバブル",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%BD%E3%81%93%E3%81%BD%E3%81%93%E3%83%90%E3%83%96%E3%83%AB/1880608868?i=1880608882&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kirei%20ni%20Shitemoraemasu%20ka.%20%E3%81%BD%E3%81%93%E3%81%BD%E3%81%93%E3%83%90%E3%83%96%E3%83%AB%20OST"
+              },
+              {
+                "track_no": 14,
+                "title": "こちら、那色ですっ!",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%93%E3%81%A1%E3%82%89-%E9%82%A3%E8%89%B2%E3%81%A7%E3%81%99%E3%81%A3/1880608868?i=1880608883&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kirei%20ni%20Shitemoraemasu%20ka.%20%E3%81%93%E3%81%A1%E3%82%89%E3%80%81%E9%82%A3%E8%89%B2%E3%81%A7%E3%81%99%E3%81%A3!%20OST"
+              },
+              {
+                "track_no": 15,
+                "title": "Garota de Atami",
+                "itunes_url": "https://music.apple.com/jp/album/garota-de-atami/1880608868?i=1880608884&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kirei%20ni%20Shitemoraemasu%20ka.%20Garota%20de%20Atami%20OST"
+              },
+              {
+                "track_no": 16,
+                "title": "コットン",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%B3%E3%83%83%E3%83%88%E3%83%B3/1880608868?i=1880608885&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kirei%20ni%20Shitemoraemasu%20ka.%20%E3%82%B3%E3%83%83%E3%83%88%E3%83%B3%20OST"
+              },
+              {
+                "track_no": 17,
+                "title": "あわっ、あわわっ!",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%82%E3%82%8F%E3%81%A3-%E3%81%82%E3%82%8F%E3%82%8F%E3%81%A3/1880608868?i=1880608886&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kirei%20ni%20Shitemoraemasu%20ka.%20%E3%81%82%E3%82%8F%E3%81%A3%E3%80%81%E3%81%82%E3%82%8F%E3%82%8F%E3%81%A3!%20OST"
+              },
+              {
+                "track_no": 18,
+                "title": "わんぱくスチーム大行進",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%8F%E3%82%93%E3%81%B1%E3%81%8F%E3%82%B9%E3%83%81%E3%83%BC%E3%83%A0%E5%A4%A7%E8%A1%8C%E9%80%B2/1880608868?i=1880608887&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kirei%20ni%20Shitemoraemasu%20ka.%20%E3%82%8F%E3%82%93%E3%81%B1%E3%81%8F%E3%82%B9%E3%83%81%E3%83%BC%E3%83%A0%E5%A4%A7%E8%A1%8C%E9%80%B2%20OST"
+              },
+              {
+                "track_no": 19,
+                "title": "ミスト",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%9F%E3%82%B9%E3%83%88/1880608868?i=1880608888&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kirei%20ni%20Shitemoraemasu%20ka.%20%E3%83%9F%E3%82%B9%E3%83%88%20OST"
+              },
+              {
+                "track_no": 20,
+                "title": "めでたし、めでたし",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%81%E3%81%A7%E3%81%9F%E3%81%97-%E3%82%81%E3%81%A7%E3%81%9F%E3%81%97/1880608868?i=1880608889&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kirei%20ni%20Shitemoraemasu%20ka.%20%E3%82%81%E3%81%A7%E3%81%9F%E3%81%97%E3%80%81%E3%82%81%E3%81%A7%E3%81%9F%E3%81%97%20OST"
+              },
+              {
+                "track_no": 21,
+                "title": "源泉掛け流しが自慢だから",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%BA%90%E6%B3%89%E6%8E%9B%E3%81%91%E6%B5%81%E3%81%97%E3%81%8C%E8%87%AA%E6%85%A2%E3%81%A0%E3%81%8B%E3%82%89/1880608868?i=1880608890&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kirei%20ni%20Shitemoraemasu%20ka.%20%E6%BA%90%E6%B3%89%E6%8E%9B%E3%81%91%E6%B5%81%E3%81%97%E3%81%8C%E8%87%AA%E6%85%A2%E3%81%A0%E3%81%8B%E3%82%89%20OST"
+              },
+              {
+                "track_no": 22,
+                "title": "たいせつなこと",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%9F%E3%81%84%E3%81%9B%E3%81%A4%E3%81%AA%E3%81%93%E3%81%A8/1880608868?i=1880608891&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kirei%20ni%20Shitemoraemasu%20ka.%20%E3%81%9F%E3%81%84%E3%81%9B%E3%81%A4%E3%81%AA%E3%81%93%E3%81%A8%20OST"
+              },
+              {
+                "track_no": 23,
+                "title": "にじむ心",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%AB%E3%81%98%E3%82%80%E5%BF%83/1880608868?i=1880608892&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kirei%20ni%20Shitemoraemasu%20ka.%20%E3%81%AB%E3%81%98%E3%82%80%E5%BF%83%20OST"
+              },
+              {
+                "track_no": 24,
+                "title": "漂白な記憶",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%BC%82%E7%99%BD%E3%81%AA%E8%A8%98%E6%86%B6/1880608868?i=1880608893&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kirei%20ni%20Shitemoraemasu%20ka.%20%E6%BC%82%E7%99%BD%E3%81%AA%E8%A8%98%E6%86%B6%20OST"
+              },
+              {
+                "track_no": 25,
+                "title": "こまっているのです",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%93%E3%81%BE%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%81%AE%E3%81%A7%E3%81%99/1880608868?i=1880608894&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kirei%20ni%20Shitemoraemasu%20ka.%20%E3%81%93%E3%81%BE%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%81%AE%E3%81%A7%E3%81%99%20OST"
+              },
+              {
+                "track_no": 26,
+                "title": "次へ、次へ。",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%AC%A1%E3%81%B8-%E6%AC%A1%E3%81%B8/1880608868?i=1880608895&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kirei%20ni%20Shitemoraemasu%20ka.%20%E6%AC%A1%E3%81%B8%E3%80%81%E6%AC%A1%E3%81%B8%E3%80%82%20OST"
+              },
+              {
+                "track_no": 27,
+                "title": "私にとっても・・・",
+                "itunes_url": "https://music.apple.com/jp/album/%E7%A7%81%E3%81%AB%E3%81%A8%E3%81%A3%E3%81%A6%E3%82%82/1880608868?i=1880608896&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kirei%20ni%20Shitemoraemasu%20ka.%20%E7%A7%81%E3%81%AB%E3%81%A8%E3%81%A3%E3%81%A6%E3%82%82%E3%83%BB%E3%83%BB%E3%83%BB%20OST"
+              },
+              {
+                "track_no": 28,
+                "title": "ときめきの・・・め",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%A8%E3%81%8D%E3%82%81%E3%81%8D%E3%81%AE-%E3%82%81/1880608868?i=1880608897&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kirei%20ni%20Shitemoraemasu%20ka.%20%E3%81%A8%E3%81%8D%E3%82%81%E3%81%8D%E3%81%AE%E3%83%BB%E3%83%BB%E3%83%BB%E3%82%81%20OST"
+              },
+              {
+                "track_no": 29,
+                "title": "Golden Eyes",
+                "itunes_url": "https://music.apple.com/jp/album/golden-eyes/1880608868?i=1880608898&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Kirei%20ni%20Shitemoraemasu%20ka.%20Golden%20Eyes%20OST"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 51553,
+    "composer": "Hiroshi Seko, Yuka Kitamura",
+    "albums": [
+      {
+        "release_date": "2026-06-17",
+        "image": "image/ost/51553.webp",
+        "discs": [
+          {
+            "disc": 1,
+            "tracks": [
+              {
+                "track_no": 1,
+                "title": "ヴォイス オブ マジック",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%B4%E3%82%A9%E3%82%A4%E3%82%B9-%E3%82%AA%E3%83%96-%E3%83%9E%E3%82%B8%E3%83%83%E3%82%AF/6770414456?i=6770414457&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E3%83%B4%E3%82%A9%E3%82%A4%E3%82%B9%20%E3%82%AA%E3%83%96%20%E3%83%9E%E3%82%B8%E3%83%83%E3%82%AF%20OST"
+              },
+              {
+                "track_no": 2,
+                "title": "魔法語り",
+                "itunes_url": "https://music.apple.com/jp/album/%E9%AD%94%E6%B3%95%E8%AA%9E%E3%82%8A/6770414456?i=6770414458&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E9%AD%94%E6%B3%95%E8%AA%9E%E3%82%8A%20OST"
+              },
+              {
+                "track_no": 3,
+                "title": "絵本で見た世界",
+                "itunes_url": "https://music.apple.com/jp/album/%E7%B5%B5%E6%9C%AC%E3%81%A7%E8%A6%8B%E3%81%9F%E4%B8%96%E7%95%8C/6770414456?i=6770414459&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E7%B5%B5%E6%9C%AC%E3%81%A7%E8%A6%8B%E3%81%9F%E4%B8%96%E7%95%8C%20OST"
+              },
+              {
+                "track_no": 4,
+                "title": "伝承",
+                "itunes_url": "https://music.apple.com/jp/album/%E4%BC%9D%E6%89%BF/6770414456?i=6770414790&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E4%BC%9D%E6%89%BF%20OST"
+              },
+              {
+                "track_no": 5,
+                "title": "光を描く手",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%85%89%E3%82%92%E6%8F%8F%E3%81%8F%E6%89%8B/6770414456?i=6770414791&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E5%85%89%E3%82%92%E6%8F%8F%E3%81%8F%E6%89%8B%20OST"
+              },
+              {
+                "track_no": 6,
+                "title": "わたしのせいで",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%8F%E3%81%9F%E3%81%97%E3%81%AE%E3%81%9B%E3%81%84%E3%81%A7/6770414456?i=6770414792&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E3%82%8F%E3%81%9F%E3%81%97%E3%81%AE%E3%81%9B%E3%81%84%E3%81%A7%20OST"
+              },
+              {
+                "track_no": 7,
+                "title": "あたたかい時間",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%82%E3%81%9F%E3%81%9F%E3%81%8B%E3%81%84%E6%99%82%E9%96%93/6770414456?i=6770414793&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E3%81%82%E3%81%9F%E3%81%9F%E3%81%8B%E3%81%84%E6%99%82%E9%96%93%20OST"
+              },
+              {
+                "track_no": 8,
+                "title": "知識と理",
+                "itunes_url": "https://music.apple.com/jp/album/%E7%9F%A5%E8%AD%98%E3%81%A8%E7%90%86/6770414456?i=6770414794&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E7%9F%A5%E8%AD%98%E3%81%A8%E7%90%86%20OST"
+              },
+              {
+                "track_no": 9,
+                "title": "空回り",
+                "itunes_url": "https://music.apple.com/jp/album/%E7%A9%BA%E5%9B%9E%E3%82%8A/6770414456?i=6770414795&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E7%A9%BA%E5%9B%9E%E3%82%8A%20OST"
+              },
+              {
+                "track_no": 10,
+                "title": "彩りあふれる景色",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%BD%A9%E3%82%8A%E3%81%82%E3%81%B5%E3%82%8C%E3%82%8B%E6%99%AF%E8%89%B2/6770414456?i=6770414796&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E5%BD%A9%E3%82%8A%E3%81%82%E3%81%B5%E3%82%8C%E3%82%8B%E6%99%AF%E8%89%B2%20OST"
+              },
+              {
+                "track_no": 11,
+                "title": "ここにいていいの?",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%93%E3%81%93%E3%81%AB%E3%81%84%E3%81%A6%E3%81%84%E3%81%84%E3%81%AE/6770414456?i=6770414797&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E3%81%93%E3%81%93%E3%81%AB%E3%81%84%E3%81%A6%E3%81%84%E3%81%84%E3%81%AE%3F%20OST"
+              },
+              {
+                "track_no": 12,
+                "title": "記憶を寄る辺に",
+                "itunes_url": "https://music.apple.com/jp/album/%E8%A8%98%E6%86%B6%E3%82%92%E5%AF%84%E3%82%8B%E8%BE%BA%E3%81%AB/6770414456?i=6770414798&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E8%A8%98%E6%86%B6%E3%82%92%E5%AF%84%E3%82%8B%E8%BE%BA%E3%81%AB%20OST"
+              },
+              {
+                "track_no": 13,
+                "title": "歩み続ける限り",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%AD%A9%E3%81%BF%E7%B6%9A%E3%81%91%E3%82%8B%E9%99%90%E3%82%8A/6770414456?i=6770414799&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E6%AD%A9%E3%81%BF%E7%B6%9A%E3%81%91%E3%82%8B%E9%99%90%E3%82%8A%20OST"
+              },
+              {
+                "track_no": 14,
+                "title": "焦り",
+                "itunes_url": "https://music.apple.com/jp/album/%E7%84%A6%E3%82%8A/6770414456?i=6770414800&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E7%84%A6%E3%82%8A%20OST"
+              },
+              {
+                "track_no": 15,
+                "title": "小さな綻び",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%B0%8F%E3%81%95%E3%81%AA%E7%B6%BB%E3%81%B3/6770414456?i=6770414801&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E5%B0%8F%E3%81%95%E3%81%AA%E7%B6%BB%E3%81%B3%20OST"
+              },
+              {
+                "track_no": 16,
+                "title": "襲来",
+                "itunes_url": "https://music.apple.com/jp/album/%E8%A5%B2%E6%9D%A5/6770414456?i=6770414802&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E8%A5%B2%E6%9D%A5%20OST"
+              },
+              {
+                "track_no": 17,
+                "title": "常闇",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%B8%B8%E9%97%87/6770414456?i=6770414803&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E5%B8%B8%E9%97%87%20OST"
+              },
+              {
+                "track_no": 18,
+                "title": "あなたのせいで",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E3%81%9B%E3%81%84%E3%81%A7/6770414456?i=6770414804&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E3%81%9B%E3%81%84%E3%81%A7%20OST"
+              },
+              {
+                "track_no": 19,
+                "title": "ひらめきの雫",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%B2%E3%82%89%E3%82%81%E3%81%8D%E3%81%AE%E9%9B%AB/6770414456?i=6770414805&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E3%81%B2%E3%82%89%E3%82%81%E3%81%8D%E3%81%AE%E9%9B%AB%20OST"
+              },
+              {
+                "track_no": 20,
+                "title": "優しさの魔法",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%84%AA%E3%81%97%E3%81%95%E3%81%AE%E9%AD%94%E6%B3%95/6770414456?i=6770414806&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E5%84%AA%E3%81%97%E3%81%95%E3%81%AE%E9%AD%94%E6%B3%95%20OST"
+              },
+              {
+                "track_no": 21,
+                "title": "兆しの足音",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%85%86%E3%81%97%E3%81%AE%E8%B6%B3%E9%9F%B3/6770414456?i=6770414807&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E5%85%86%E3%81%97%E3%81%AE%E8%B6%B3%E9%9F%B3%20OST"
+              },
+              {
+                "track_no": 22,
+                "title": "作戦開始!",
+                "itunes_url": "https://music.apple.com/jp/album/%E4%BD%9C%E6%88%A6%E9%96%8B%E5%A7%8B/6770414456?i=6770414808&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E4%BD%9C%E6%88%A6%E9%96%8B%E5%A7%8B!%20OST"
+              },
+              {
+                "track_no": 23,
+                "title": "崩壊と水の咆哮",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%B4%A9%E5%A3%8A%E3%81%A8%E6%B0%B4%E3%81%AE%E5%92%86%E5%93%AE/6770414456?i=6770414809&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E5%B4%A9%E5%A3%8A%E3%81%A8%E6%B0%B4%E3%81%AE%E5%92%86%E5%93%AE%20OST"
+              },
+              {
+                "track_no": 24,
+                "title": "希望の子",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%B8%8C%E6%9C%9B%E3%81%AE%E5%AD%90/6770414456?i=6770414810&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E5%B8%8C%E6%9C%9B%E3%81%AE%E5%AD%90%20OST"
+              }
+            ]
+          },
+          {
+            "disc": 2,
+            "tracks": [
+              {
+                "track_no": 1,
+                "title": "空が見せてくれた魔法",
+                "itunes_url": "https://music.apple.com/jp/album/%E7%A9%BA%E3%81%8C%E8%A6%8B%E3%81%9B%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%9F%E9%AD%94%E6%B3%95/6770414456?i=6770414811&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E7%A9%BA%E3%81%8C%E8%A6%8B%E3%81%9B%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%9F%E9%AD%94%E6%B3%95%20OST"
+              },
+              {
+                "track_no": 2,
+                "title": "翳りの気配",
+                "itunes_url": "https://music.apple.com/jp/album/%E7%BF%B3%E3%82%8A%E3%81%AE%E6%B0%97%E9%85%8D/6770414456?i=6770414812&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E7%BF%B3%E3%82%8A%E3%81%AE%E6%B0%97%E9%85%8D%20OST"
+              },
+              {
+                "track_no": 3,
+                "title": "フデムシ",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%95%E3%83%87%E3%83%A0%E3%82%B7/6770414456?i=6770414813&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E3%83%95%E3%83%87%E3%83%A0%E3%82%B7%20OST"
+              },
+              {
+                "track_no": 4,
+                "title": "特別な魔法",
+                "itunes_url": "https://music.apple.com/jp/album/%E7%89%B9%E5%88%A5%E3%81%AA%E9%AD%94%E6%B3%95/6770414456?i=6770414814&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E7%89%B9%E5%88%A5%E3%81%AA%E9%AD%94%E6%B3%95%20OST"
+              },
+              {
+                "track_no": 5,
+                "title": "遠くなる背中",
+                "itunes_url": "https://music.apple.com/jp/album/%E9%81%A0%E3%81%8F%E3%81%AA%E3%82%8B%E8%83%8C%E4%B8%AD/6770414456?i=6770414815&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E9%81%A0%E3%81%8F%E3%81%AA%E3%82%8B%E8%83%8C%E4%B8%AD%20OST"
+              },
+              {
+                "track_no": 6,
+                "title": "緊迫",
+                "itunes_url": "https://music.apple.com/jp/album/%E7%B7%8A%E8%BF%AB/6770414456?i=6770414816&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E7%B7%8A%E8%BF%AB%20OST"
+              },
+              {
+                "track_no": 7,
+                "title": "意識の紡ぐ先へ",
+                "itunes_url": "https://music.apple.com/jp/album/%E6%84%8F%E8%AD%98%E3%81%AE%E7%B4%A1%E3%81%90%E5%85%88%E3%81%B8/6770414456?i=6770414817&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E6%84%8F%E8%AD%98%E3%81%AE%E7%B4%A1%E3%81%90%E5%85%88%E3%81%B8%20OST"
+              },
+              {
+                "track_no": 8,
+                "title": "魔警団",
+                "itunes_url": "https://music.apple.com/jp/album/%E9%AD%94%E8%AD%A6%E5%9B%A3/6770414456?i=6770414818&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E9%AD%94%E8%AD%A6%E5%9B%A3%20OST"
+              },
+              {
+                "track_no": 9,
+                "title": "心のほどける場所",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%BF%83%E3%81%AE%E3%81%BB%E3%81%A9%E3%81%91%E3%82%8B%E5%A0%B4%E6%89%80/6770414456?i=6770414819&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E5%BF%83%E3%81%AE%E3%81%BB%E3%81%A9%E3%81%91%E3%82%8B%E5%A0%B4%E6%89%80%20OST"
+              },
+              {
+                "track_no": 10,
+                "title": "安心する時間",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%AE%89%E5%BF%83%E3%81%99%E3%82%8B%E6%99%82%E9%96%93/6770414456?i=6770414820&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E5%AE%89%E5%BF%83%E3%81%99%E3%82%8B%E6%99%82%E9%96%93%20OST"
+              },
+              {
+                "track_no": 11,
+                "title": "心の距離",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%BF%83%E3%81%AE%E8%B7%9D%E9%9B%A2/6770414456?i=6770414821&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E5%BF%83%E3%81%AE%E8%B7%9D%E9%9B%A2%20OST"
+              },
+              {
+                "track_no": 12,
+                "title": "予兆",
+                "itunes_url": "https://music.apple.com/jp/album/%E4%BA%88%E5%85%86/6770414456?i=6770414822&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E4%BA%88%E5%85%86%20OST"
+              },
+              {
+                "track_no": 13,
+                "title": "呼び水",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%91%BC%E3%81%B3%E6%B0%B4/6770414456?i=6770414823&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E5%91%BC%E3%81%B3%E6%B0%B4%20OST"
+              },
+              {
+                "track_no": 14,
+                "title": "影の痕跡",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%BD%B1%E3%81%AE%E7%97%95%E8%B7%A1/6770414456?i=6770414824&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E5%BD%B1%E3%81%AE%E7%97%95%E8%B7%A1%20OST"
+              },
+              {
+                "track_no": 15,
+                "title": "わかっていたはずなのに",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%82%8F%E3%81%8B%E3%81%A3%E3%81%A6%E3%81%84%E3%81%9F%E3%81%AF%E3%81%9A%E3%81%AA%E3%81%AE%E3%81%AB/6770414456?i=6770414826&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E3%82%8F%E3%81%8B%E3%81%A3%E3%81%A6%E3%81%84%E3%81%9F%E3%81%AF%E3%81%9A%E3%81%AA%E3%81%AE%E3%81%AB%20OST"
+              },
+              {
+                "track_no": 16,
+                "title": "見守り",
+                "itunes_url": "https://music.apple.com/jp/album/%E8%A6%8B%E5%AE%88%E3%82%8A/6770414456?i=6770414827&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E8%A6%8B%E5%AE%88%E3%82%8A%20OST"
+              },
+              {
+                "track_no": 17,
+                "title": "ロモノーン",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%83%AD%E3%83%A2%E3%83%8E%E3%83%BC%E3%83%B3/6770414456?i=6770414828&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E3%83%AD%E3%83%A2%E3%83%8E%E3%83%BC%E3%83%B3%20OST"
+              },
+              {
+                "track_no": 18,
+                "title": "迷宮",
+                "itunes_url": "https://music.apple.com/jp/album/%E8%BF%B7%E5%AE%AE/6770414456?i=6770414829&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E8%BF%B7%E5%AE%AE%20OST"
+              },
+              {
+                "track_no": 19,
+                "title": "自分じゃないもの",
+                "itunes_url": "https://music.apple.com/jp/album/%E8%87%AA%E5%88%86%E3%81%98%E3%82%83%E3%81%AA%E3%81%84%E3%82%82%E3%81%AE/6770414456?i=6770414830&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E8%87%AA%E5%88%86%E3%81%98%E3%82%83%E3%81%AA%E3%81%84%E3%82%82%E3%81%AE%20OST"
+              },
+              {
+                "track_no": 20,
+                "title": "危機",
+                "itunes_url": "https://music.apple.com/jp/album/%E5%8D%B1%E6%A9%9F/6770414456?i=6770414831&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E5%8D%B1%E6%A9%9F%20OST"
+              },
+              {
+                "track_no": 21,
+                "title": "つばあり帽",
+                "itunes_url": "https://music.apple.com/jp/album/%E3%81%A4%E3%81%B0%E3%81%82%E3%82%8A%E5%B8%BD/6770414456?i=6770414832&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E3%81%A4%E3%81%B0%E3%81%82%E3%82%8A%E5%B8%BD%20OST"
+              },
+              {
+                "track_no": 22,
+                "title": "伝承 Vocal Version",
+                "itunes_url": "https://music.apple.com/jp/album/%E4%BC%9D%E6%89%BF-vocal-version/6770414456?i=6770414833&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Tongari%20Boushi%20no%20Atelier%20%E4%BC%9D%E6%89%BF%20Vocal%20Version%20OST"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 63572,
+    "composer": "Yousuke Suzuki, Yuuki Hayashi",
+    "albums": [
+      {
+        "release_date": "2026-04-16",
+        "image": "image/ost/63572.webp",
+        "discs": [
+          {
+            "disc": 1,
+            "tracks": [
+              {
+                "track_no": 1,
+                "title": "Dandelion (feat. Jonathan Underdown)",
+                "itunes_url": "https://music.apple.com/jp/album/dandelion-feat-jonathan-underdown/1892653561?i=1892653562&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Dandelion%20(feat.%20Jonathan%20Underdown)%20OST"
+              },
+              {
+                "track_no": 2,
+                "title": "Paradise?",
+                "itunes_url": "https://music.apple.com/jp/album/paradise/1892653561?i=1892653563&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Paradise%3F%20OST"
+              },
+              {
+                "track_no": 3,
+                "title": "That's Just the World You've Always Lived In",
+                "itunes_url": "https://music.apple.com/jp/album/thats-just-the-world-youve-always-lived-in/1892653561?i=1892653564&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20That's%20Just%20the%20World%20You've%20Always%20Lived%20In%20OST"
+              },
+              {
+                "track_no": 4,
+                "title": "You See the Importance",
+                "itunes_url": "https://music.apple.com/jp/album/you-see-the-importance/1892653561?i=1892653565&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20You%20See%20the%20Importance%20OST"
+              },
+              {
+                "track_no": 5,
+                "title": "I'll Keep Running to the Edge of the Horizon!",
+                "itunes_url": "https://music.apple.com/jp/album/ill-keep-running-to-the-edge-of-the-horizon/1892653561?i=1892653566&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20I'll%20Keep%20Running%20to%20the%20Edge%20of%20the%20Horizon!%20OST"
+              },
+              {
+                "track_no": 6,
+                "title": "Punk Angel",
+                "itunes_url": "https://music.apple.com/jp/album/punk-angel/1892653561?i=1892653567&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Punk%20Angel%20OST"
+              },
+              {
+                "track_no": 7,
+                "title": "My Heart Belongs to ○○ Alone",
+                "itunes_url": "https://music.apple.com/jp/album/my-heart-belongs-to-alone/1892653561?i=1892653568&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20My%20Heart%20Belongs%20to%20%E2%97%8B%E2%97%8B%20Alone%20OST"
+              },
+              {
+                "track_no": 8,
+                "title": "Love Itself Turns Lethal",
+                "itunes_url": "https://music.apple.com/jp/album/love-itself-turns-lethal/1892653561?i=1892653569&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Love%20Itself%20Turns%20Lethal%20OST"
+              },
+              {
+                "track_no": 9,
+                "title": "Soul Searching",
+                "itunes_url": "https://music.apple.com/jp/album/soul-searching/1892653561?i=1892653570&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Soul%20Searching%20OST"
+              },
+              {
+                "track_no": 10,
+                "title": "I Said Wait!",
+                "itunes_url": "https://music.apple.com/jp/album/i-said-wait/1892653561?i=1892653571&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20I%20Said%20Wait!%20OST"
+              },
+              {
+                "track_no": 11,
+                "title": "Full Throttle",
+                "itunes_url": "https://music.apple.com/jp/album/full-throttle/1892653561?i=1892653572&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Full%20Throttle%20OST"
+              },
+              {
+                "track_no": 12,
+                "title": "Proof You Lived Never Changes",
+                "itunes_url": "https://music.apple.com/jp/album/proof-you-lived-never-changes/1892653561?i=1892653573&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Proof%20You%20Lived%20Never%20Changes%20OST"
+              },
+              {
+                "track_no": 13,
+                "title": "There's No Right Way to Live",
+                "itunes_url": "https://music.apple.com/jp/album/theres-no-right-way-to-live/1892653561?i=1892653574&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20There's%20No%20Right%20Way%20to%20Live%20OST"
+              },
+              {
+                "track_no": 14,
+                "title": "Team Dandelion",
+                "itunes_url": "https://music.apple.com/jp/album/team-dandelion/1892653561?i=1892653575&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Team%20Dandelion%20OST"
+              },
+              {
+                "track_no": 15,
+                "title": "All This Work and Not a Penny",
+                "itunes_url": "https://music.apple.com/jp/album/all-this-work-and-not-a-penny/1892653561?i=1892653576&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20All%20This%20Work%20and%20Not%20a%20Penny%20OST"
+              },
+              {
+                "track_no": 16,
+                "title": "Before the Soul Finds Peace",
+                "itunes_url": "https://music.apple.com/jp/album/before-the-soul-finds-peace/1892653561?i=1892653788&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Before%20the%20Soul%20Finds%20Peace%20OST"
+              },
+              {
+                "track_no": 17,
+                "title": "House of Kyōgawa",
+                "itunes_url": "https://music.apple.com/jp/album/house-of-ky%C5%8Dgawa/1892653561?i=1892653789&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20House%20of%20Ky%C5%8Dgawa%20OST"
+              },
+              {
+                "track_no": 18,
+                "title": "High Alert",
+                "itunes_url": "https://music.apple.com/jp/album/high-alert/1892653561?i=1892653790&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20High%20Alert%20OST"
+              },
+              {
+                "track_no": 19,
+                "title": "Far from Paradise",
+                "itunes_url": "https://music.apple.com/jp/album/far-from-paradise/1892653561?i=1892653791&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Far%20from%20Paradise%20OST"
+              },
+              {
+                "track_no": 20,
+                "title": "Discipline! Discipline! Discipline!",
+                "itunes_url": "https://music.apple.com/jp/album/discipline-discipline-discipline/1892653561?i=1892653792&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Discipline!%20Discipline!%20Discipline!%20OST"
+              },
+              {
+                "track_no": 21,
+                "title": "Obedient Machine",
+                "itunes_url": "https://music.apple.com/jp/album/obedient-machine/1892653561?i=1892653793&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Obedient%20Machine%20OST"
+              },
+              {
+                "track_no": 22,
+                "title": "Always Frown",
+                "itunes_url": "https://music.apple.com/jp/album/always-frown/1892653561?i=1892653794&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Always%20Frown%20OST"
+              },
+              {
+                "track_no": 23,
+                "title": "A Life Without Regrets",
+                "itunes_url": "https://music.apple.com/jp/album/a-life-without-regrets/1892653561?i=1892653795&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20A%20Life%20Without%20Regrets%20OST"
+              },
+              {
+                "track_no": 24,
+                "title": "Taken to the Afterlife",
+                "itunes_url": "https://music.apple.com/jp/album/taken-to-the-afterlife/1892653561?i=1892653796&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Taken%20to%20the%20Afterlife%20OST"
+              },
+              {
+                "track_no": 25,
+                "title": "Priests Hear Confessions — Angels Don't",
+                "itunes_url": "https://music.apple.com/jp/album/priests-hear-confessions-angels-dont/1892653561?i=1892653797&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Priests%20Hear%20Confessions%20%E2%80%94%20Angels%20Don't%20OST"
+              },
+              {
+                "track_no": 26,
+                "title": "Wh, What the Helll",
+                "itunes_url": "https://music.apple.com/jp/album/wh-what-the-helll/1892653561?i=1892653798&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Wh%2C%20What%20the%20Helll%20OST"
+              },
+              {
+                "track_no": 27,
+                "title": "Wings of Grit",
+                "itunes_url": "https://music.apple.com/jp/album/wings-of-grit/1892653561?i=1892653799&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Wings%20of%20Grit%20OST"
+              },
+              {
+                "track_no": 28,
+                "title": "Dandelion in the Rough (feat. David Whitaker)",
+                "itunes_url": "https://music.apple.com/jp/album/dandelion-in-the-rough-feat-david-whitaker/1892653561?i=1892653800&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Dandelion%20in%20the%20Rough%20(feat.%20David%20Whitaker)%20OST"
+              },
+              {
+                "track_no": 29,
+                "title": "Blue Fighting Spirit",
+                "itunes_url": "https://music.apple.com/jp/album/blue-fighting-spirit/1892653561?i=1892653801&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Blue%20Fighting%20Spirit%20OST"
+              },
+              {
+                "track_no": 30,
+                "title": "Opportunity Is Already at Your Feet",
+                "itunes_url": "https://music.apple.com/jp/album/opportunity-is-already-at-your-feet/1892653561?i=1892653802&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Opportunity%20Is%20Already%20at%20Your%20Feet%20OST"
+              },
+              {
+                "track_no": 31,
+                "title": "Night Pool",
+                "itunes_url": "https://music.apple.com/jp/album/night-pool/1892653561?i=1892653803&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Night%20Pool%20OST"
+              },
+              {
+                "track_no": 32,
+                "title": "Irresistible — Even to Men",
+                "itunes_url": "https://music.apple.com/jp/album/irresistible-even-to-men/1892653561?i=1892653804&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Irresistible%20%E2%80%94%20Even%20to%20Men%20OST"
+              },
+              {
+                "track_no": 33,
+                "title": "Kyōgawa's Plan",
+                "itunes_url": "https://music.apple.com/jp/album/ky%C5%8Dgawas-plan/1892653561?i=1892653805&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Ky%C5%8Dgawa's%20Plan%20OST"
+              },
+              {
+                "track_no": 34,
+                "title": "See It Through Till the Very End",
+                "itunes_url": "https://music.apple.com/jp/album/see-it-through-till-the-very-end/1892653561?i=1892653806&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20See%20It%20Through%20Till%20the%20Very%20End%20OST"
+              },
+              {
+                "track_no": 35,
+                "title": "Information Chaos",
+                "itunes_url": "https://music.apple.com/jp/album/information-chaos/1892653561?i=1892653807&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Information%20Chaos%20OST"
+              },
+              {
+                "track_no": 36,
+                "title": "Truth Wrapped in Suffering",
+                "itunes_url": "https://music.apple.com/jp/album/truth-wrapped-in-suffering/1892653561?i=1892653808&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Truth%20Wrapped%20in%20Suffering%20OST"
+              },
+              {
+                "track_no": 37,
+                "title": "Rough Around the Edges but Full of Heart",
+                "itunes_url": "https://music.apple.com/jp/album/rough-around-the-edges-but-full-of-heart/1892653561?i=1892653809&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Rough%20Around%20the%20Edges%20but%20Full%20of%20Heart%20OST"
+              },
+              {
+                "track_no": 38,
+                "title": "Kindness from a Mad Dog",
+                "itunes_url": "https://music.apple.com/jp/album/kindness-from-a-mad-dog/1892653561?i=1892653810&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Kindness%20from%20a%20Mad%20Dog%20OST"
+              },
+              {
+                "track_no": 39,
+                "title": "The Cleaner",
+                "itunes_url": "https://music.apple.com/jp/album/the-cleaner/1892653561?i=1892653811&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20The%20Cleaner%20OST"
+              },
+              {
+                "track_no": 40,
+                "title": "Raymond",
+                "itunes_url": "https://music.apple.com/jp/album/raymond/1892653561?i=1892653812&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Raymond%20OST"
+              },
+              {
+                "track_no": 41,
+                "title": "Yeehaaw!!!",
+                "itunes_url": "https://music.apple.com/jp/album/yeehaaw/1892653561?i=1892653813&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Yeehaaw!!!%20OST"
+              },
+              {
+                "track_no": 42,
+                "title": "You Can Do It If You Try",
+                "itunes_url": "https://music.apple.com/jp/album/you-can-do-it-if-you-try/1892653561?i=1892653814&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20You%20Can%20Do%20It%20If%20You%20Try%20OST"
+              },
+              {
+                "track_no": 43,
+                "title": "Proto's Rampage",
+                "itunes_url": "https://music.apple.com/jp/album/protos-rampage/1892653561?i=1892653815&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Proto's%20Rampage%20OST"
+              },
+              {
+                "track_no": 44,
+                "title": "Clashing Beliefs",
+                "itunes_url": "https://music.apple.com/jp/album/clashing-beliefs/1892653561?i=1892653816&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Clashing%20Beliefs%20OST"
+              },
+              {
+                "track_no": 45,
+                "title": "Spirit Running Wild",
+                "itunes_url": "https://music.apple.com/jp/album/spirit-running-wild/1892653561?i=1892653817&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Spirit%20Running%20Wild%20OST"
+              },
+              {
+                "track_no": 46,
+                "title": "Absolute Force",
+                "itunes_url": "https://music.apple.com/jp/album/absolute-force/1892653561?i=1892653818&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Absolute%20Force%20OST"
+              },
+              {
+                "track_no": 47,
+                "title": "Chaos Across Living and the Dead",
+                "itunes_url": "https://music.apple.com/jp/album/chaos-across-living-and-the-dead/1892653561?i=1892653819&uo=4",
+                "youtube_url": "https://www.youtube.com/results?search_query=Dandelion%20Chaos%20Across%20Living%20and%20the%20Dead%20OST"
               }
             ]
           }
