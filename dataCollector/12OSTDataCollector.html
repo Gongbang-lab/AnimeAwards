@@ -71,10 +71,13 @@ label.chk{display:flex;gap:5px;align-items:center;color:var(--mut)}
 <section>
   <h2>수집함 <span class="mut" id="cnt">(0)</span></h2>
   <div class="row">
-    <button id="copy">JSON 복사</button>
-    <button id="imp" class="ghost">JSON 불러오기</button>
+    <label for="export-year">저장 연도</label><input id="export-year" type="text" inputmode="numeric" value="2026" maxlength="4" style="width:90px">
+    <button id="copy-js">JS 복사</button>
+    <button id="copy" class="ghost">JSON 복사</button>
+    <button id="imp" class="ghost">JSON / JS 불러오기</button>
     <button id="clr" class="ghost">비우기</button>
   </div>
+  <p class="mut">데이터 JS 파일에 붙여넣을 때는 JS 복사를 사용하세요. 현재 수집함만 내보내므로, 기존 내용을 유지하려면 먼저 기존 파일을 불러온 뒤 추가해주세요.</p>
   <div id="impbox" style="display:none;margin-top:10px">
     <textarea id="impta" rows="6" placeholder="복사해 둔 JSON을 붙여넣으세요" style="width:100%;background:var(--bg);color:var(--fg);border:1px solid var(--line);border-radius:6px;padding:8px;font:12px/1.4 ui-monospace,Consolas,monospace"></textarea>
     <div class="row" style="margin-top:6px"><button id="impgo">적용 (현재 수집함을 덮어씁니다)</button></div>
@@ -233,25 +236,49 @@ $('#add').onclick = () => {
   refresh(); st(checked.length + '개 추가됨');
 };
 const out = () => JSON.stringify(bin, (k, v) => k.startsWith('_') ? undefined : v, 2);
+function jsOut() {
+  const year = $('#export-year').value.trim();
+  if (!/^\d{4}$/.test(year)) throw new Error('저장 연도를 네 자리 숫자로 입력해주세요.');
+  return `var animeOSTData_${year} = ${out()};\n`;
+}
+$('#export-year').addEventListener('input', () => {
+  try { $('#prev').value = bin.length ? jsOut() : ''; } catch { $('#prev').value = ''; }
+});
 function refresh() {
   const n = bin.reduce((s, a) => s + a.albums.reduce((s2, al) => s2 + al.discs.reduce((s3, d) => s3 + d.tracks.length, 0), 0), 0);
   $('#cnt').textContent = `(작품 ${bin.length} · 트랙 ${n})`;
-  $('#prev').value = bin.length ? out() : '';
+  try { $('#prev').value = bin.length ? jsOut() : ''; } catch { $('#prev').value = ''; }
   try { localStorage.setItem('ostbin_mal', JSON.stringify(bin)); } catch {}  // 새로고침/탭 닫기 대비 자동 저장
 }
-$('#copy').onclick = async () => {
+async function copyOutput(asJs) {
   if (!bin.length) return st('수집함이 비어 있습니다.', 1);
-  try { await navigator.clipboard.writeText(out()); }
-  catch { $('#prev').select(); document.execCommand('copy'); }
-  st('JSON이 클립보드에 복사되었습니다.');
-};
+  try {
+    const value = asJs ? jsOut() : out();
+    try { await navigator.clipboard.writeText(value); }
+    catch {
+      const previous = $('#prev').value;
+      $('#prev').value = value; $('#prev').select();
+      const copied = document.execCommand('copy');
+      $('#prev').value = previous;
+      if (!copied) throw new Error('복사하지 못했습니다. 미리보기에서 직접 복사해주세요.');
+    }
+    st(asJs ? '변수 선언을 포함한 JS가 복사되었습니다.' : 'JSON이 클립보드에 복사되었습니다.');
+  } catch (e) { st(e.message, 1); }
+}
+$('#copy').onclick = () => copyOutput(false);
+$('#copy-js').onclick = () => copyOutput(true);
 $('#clr').onclick = () => { if (!bin.length || confirm('수집함을 모두 비울까요?')) { bin = []; refresh(); } };
 $('#imp').onclick = () => { const b = $('#impbox'); b.style.display = b.style.display === 'none' ? 'block' : 'none'; };
 $('#impgo').onclick = () => {
   try {
-    const arr = JSON.parse($('#impta').value);
+    const source = $('#impta').value.trim();
+    const wrapped = source.match(/^(?:var|let|const)\s+animeOSTData_(\d{4})\s*=\s*([\s\S]*?)\s*;?\s*$/);
+    const arr = JSON.parse(wrapped ? wrapped[2] : source);
     if (!Array.isArray(arr)) throw new Error('배열(JSON) 형식이 아닙니다.');
-    bin = arr; refresh(); $('#impta').value = ''; $('#impbox').style.display = 'none'; st('불러오기 완료');
+    const records = arr.flat(Infinity);
+    if (records.some(a => !a || a.id == null || !Array.isArray(a.albums) || a.albums.some(al => !al || !Array.isArray(al.discs) || al.discs.some(d => !d || !Array.isArray(d.tracks))))) throw new Error('id, albums, discs, tracks 구조를 확인해주세요.');
+    if (wrapped) $('#export-year').value = wrapped[1];
+    bin = records; refresh(); $('#impta').value = ''; $('#impbox').style.display = 'none'; st('불러오기 완료');
   } catch (e) { st('불러오기 실패: ' + e.message, 1); }
 };
 // 페이지를 다시 열면 이전 수집함 복원

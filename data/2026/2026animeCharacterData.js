@@ -6015,8 +6015,8 @@ var CharacterData_2026 = [
       "characterId": 14827,
       "name": "저지 더 비스트",
       "gender": "male",
-      "cvId": 95345,
-      "cv": "타케토라",
+      "cvId": 95024,
+      "cv": "타카야마 미나미",
       "img": "image/charimg/2026/Q1/TRIGUN_STARGAZE/Zazie_the_Beast.webp"
     },
     {
