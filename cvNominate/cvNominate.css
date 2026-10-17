@@ -6,7 +6,6 @@
     --black: var(--bg);
     --gray: var(--surface);
     --white:var(--text-body);
-    --nav-height:70px;
 }
 
 body {
@@ -18,29 +17,21 @@ body {
 }
 
 /* 커스텀 스크롤바 */
-::-webkit-scrollbar { width:8px; height:8px; }
-::-webkit-scrollbar-track { background:var(--surface); border-radius:4px; }
-::-webkit-scrollbar-thumb { background:var(--line); border-radius:4px; border:1px solid var(--surface); }
-::-webkit-scrollbar-thumb:hover { background:var(--dark-gold); }
 
 /* 1. 상단 네비게이션 */
 .top-nav {
     position:fixed; top:0; left:0; right:0;
-    height:var(--nav-height); background:rgba(46, 23, 29, 0.95);
-    display:flex; border-bottom:2px solid var(--gold);
+
+    display:flex;
     z-index:1000; backdrop-filter:blur(10px); justify-content:space-between;
 }
-.nav-content-area { flex:7; display:flex; align-items:center; padding-left:40px; }
+.nav-content-area {  display:flex; align-items:center;  }
 .brand { color:var(--gold); font-weight:800; font-size:1.4rem; margin-right:25px; }
 #step-title { font-size:1.1rem; color:var(--text-body); border-left:3px solid var(--gray); padding-left:15px; }
 
-.nav-sidebar-area { flex:3; min-width:300px; display:flex; align-items:center; padding-right:20px; }
-.search-container { position:relative; width:100%; max-width:400px; margin-left:auto; margin-right:20px; }
-#search-input {
-    width:100%; padding:10px; background:var(--surface-sunken); border:1px solid var(--line);
-    border-radius:10px; color:var(--text-body); outline:none; transition:0.3s;
-}
-#search-input:focus { border-color:var(--gold); }
+.nav-sidebar-area {   display:flex; align-items:center;  }
+.search-container { position:relative;     }
+
 .autocomplete-items {
     position:absolute; z-index:2000;
     top:100%; left:0; right:0; background:var(--surface-sunken); max-height:300px; overflow-y:auto;
@@ -55,59 +46,8 @@ body {
 .content-area { flex:7.5; padding:40px; border-right:1px solid rgba(201, 165, 90, 0.3); }
 .sidebar { flex:2.5; background-color:var(--surface-sunken); position:sticky; top:var(--nav-height); height:calc(100vh - var(--nav-height)); padding:25px; box-sizing:border-box; display:flex; flex-direction:column;}
 
-.preview-box {
-    background:var(--surface-sunken); border:1px solid var(--line); height:320px;
-    overflow-y:auto; padding:10px; border-radius:8px; margin-bottom:20px;
-}
-.status-indicator {
-    background:var(--surface-sunken) !important; /* 배경은 완전 검정 */
-    border:1px solid var(--line) !important;
-    border-radius:8px;
-    height:280px;
-    overflow-y:auto;
-    padding:10px;
-    margin-bottom:20px;
-    flex-shrink:0;
-}
-
-/* 개별 프리뷰 아이템 디자인 */
-.preview-item {
-    padding:5px !important;
-    margin-bottom:8px !important;
-    background:var(--gray) !important; /* #2c2c2c */
-    border-radius:6px !important;
-    cursor:pointer;
-    font-size:0.85rem;
-    border:1px solid transparent;
-    text-align:center;
-    transition:all 0.2s ease;
-    display:block !important; /* 가로 가득 채우기 */
-    width:auto;
-}
-
-/* 추출된 핵심 포인트:삭제 호버 효과 */
-.preview-item:hover {
-    border-color:var(--accent) !important;
-    color:var(--accent) !important;
-    background:rgba(201, 74, 94, 0.1) !important;
-    transform:translateY(-2px);
-}
-
-.preview-item small {
-    display:block;
-    margin-top:3px;
-    font-size:0.75rem;
-}
-
 /* 스크롤바 커스텀 (추출본 기준) */
-.status-indicator::-webkit-scrollbar {
-    width:6px;
-}
-.status-indicator::-webkit-scrollbar-thumb {
-    background:var(--line);
-    border-radius:3px;
-}
-.action-buttons { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:auto;}
+
 .gold-btn { background:var(--gold); color:var(--bg); font-weight:800; padding:15px; border:none; cursor:pointer; border-radius:6px; }
 .gold-btn:disabled { opacity:0.4; cursor:not-allowed; }
 .gold-btn:hover:not(:disabled) { background:var(--text); }
@@ -118,7 +58,7 @@ body {
 /* 3. 리스트 및 카드 */
 .quarter-section { margin-bottom:15px; border:1px solid var(--line); border-radius:8px; overflow:hidden; }
 .quarter-btn {
-    width:100%; padding:16px 20px; background:var(--surface); border:none; font-size:1rem; 
+    width:100%; padding:16px 20px; background:var(--surface); border:none; font-size:1rem;
     color:var(--text-body); font-weight:bold; display:flex; justify-content:space-between; cursor:pointer;
 }
 .quarter-btn:hover { background:var(--surface-hover); color:var(--gold); }
@@ -137,74 +77,65 @@ body {
     gap:20px;
 }
 .step2-cv-card {
-    background:var(--gray); 
-    border:2px solid transparent; 
+    background:var(--gray);
+    border:2px solid transparent;
     border-radius:8px;
-    overflow:hidden; 
-    cursor:pointer; 
-    transition:0.3s; 
+    overflow:hidden;
+    cursor:pointer;
+    transition:0.3s;
     position:relative;
-    display:flex; 
+    display:flex;
     flex-direction:column;
 }
 
-.step2-cv-card:hover { 
-    transform:translateY(-5px); 
-    border-color:rgba(201, 165, 90, 0.5); 
-}
-
-.step2-cv-card.selected { 
-    border-color:var(--gold); 
-    box-shadow:0 0 15px rgba(201, 165, 90, 0.3); 
-}
 /* 우측 상단 배지 */
 .step2-cv-card .card-badge {
-    position:absolute; 
-    top:8px; 
+    position:absolute;
+    top:8px;
     right:8px;
-    background:rgba(0, 0, 0, 0.8); 
+    background:rgba(0, 0, 0, 0.8);
     color:var(--gold);
-    font-size:0.75rem; 
-    padding:4px 8px; 
+    font-size:0.75rem;
+    padding:4px 8px;
     border-radius:4px;
-    border:1px solid var(--gold); 
+    border:1px solid var(--gold);
     z-index:10;
 }
 
-.step2-cv-card .card-thumb { 
-    width:100%; 
+.step2-cv-card .card-thumb {
+    width:100%;
     aspect-ratio:3/4; /* 인물 사진에 맞는 세로 비율 */
-    position:relative; 
+    position:relative;
 }
 
-.step2-cv-card .card-thumb img { 
-    width:100%; 
-    height:100%; 
-    object-fit:cover; 
+.step2-cv-card .card-thumb img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
     display:block;
 }
 
 /* 하단 정보 영역 (좌측 정렬 및 색상 통일) */
-.step2-cv-card .step2-card-info { 
-    padding:15px; 
-    text-align:left; 
+.step2-cv-card .step2-card-info {
+    padding:15px;
+    text-align:left;
 }
 
-.step2-cv-card .card-title { 
-    font-weight:bold; 
-    color:var(--gold); 
-    margin-bottom:5px; 
-    font-size:1.05rem; 
+.step2-cv-card .card-title {
+    font-weight:bold;
+    color:var(--gold);
+    margin-bottom:5px;
+    font-size:1.05rem;
 }
 
-.step2-cv-card .card-studio { 
-    font-size:0.85rem; 
-    color:var(--text-muted); 
-    display:-webkit-box; 
-    -webkit-line-clamp:1; 
-    line-clamp:1; 
-    -webkit-box-orient:vertical; 
-    overflow:hidden; 
+.step2-cv-card .card-studio {
+    font-size:0.85rem;
+    color:var(--text-muted);
+    display:-webkit-box;
+    -webkit-line-clamp:1;
+    line-clamp:1;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
 }
 /* 좌측 상단 득표율 뱃지 */
 .card-selection-rate {
@@ -229,17 +160,15 @@ body {
     cursor:pointer; transition:0.3s; position:relative;
     display:flex; flex-direction:column;
 }
-.card:hover { transform:translateY(-5px); border-color:rgba(201, 165, 90, 0.5); }
-.card.selected { border-color:var(--gold); box-shadow:0 0 15px rgba(201, 165, 90, 0.3); }
 
 .card-badge {
-    position:absolute; 
-    top:6px; 
+    position:absolute;
+    top:6px;
     right:6px;
-    background:rgba(0, 0, 0, 0.8); 
+    background:rgba(0, 0, 0, 0.8);
     color:var(--gold);
-    font-size:0.75rem; 
-    padding:4px 8px; 
+    font-size:0.75rem;
+    padding:4px 8px;
     border-radius:4px;
     border:1px solid var(--gold);
     cursor:pointer; /* 클릭 가능 표시 */
@@ -328,15 +257,11 @@ body {
     word-break:keep-all;
 }
 
-#detail-works::-webkit-scrollbar { width:5px; }
-#detail-works::-webkit-scrollbar-thumb { background:var(--gold); }
-
 .card img {
     width:100%; aspect-ratio:3/4; object-fit:cover; display:block;
     border-radius:6px 6px 0 0;
 }
-.card-info { padding:12px; }
-.card-title { font-weight:bold; color:var(--gold); margin-bottom:5px; font-size:0.95rem; }
+
 .card-studio { font-size:0.8rem; color:var(--text-muted); }
 
 /* 4. 모달 */
@@ -345,11 +270,11 @@ body {
     background:rgba(0,0,0,0.9); display:flex; align-items:center; justify-content:center; z-index:2000;
 }
 .modal-content {
-    background:var(--surface); 
-    width:90%; 
+    background:var(--surface);
+    width:90%;
     max-width:900px; /* 기존 800px에서 넓혀서 우측 카드 뷰 공간 확보 */
-    border:2px solid var(--gold); 
-    border-radius:15px; 
+    border:2px solid var(--gold);
+    border-radius:15px;
     padding:30px;
     position:relative; /* 닫기 버튼을 우측 상단에 고정하기 위해 필수 */
 }
@@ -440,19 +365,6 @@ body {
 /* 우측 작품 리스트 스크롤 영역 */
 .winner-works-scroll {
     margin-top:10px;
-}
-
-.winner-works-scroll::-webkit-scrollbar {
-    width:4px;
-}
-
-.winner-works-scroll::-webkit-scrollbar-track {
-    background:var(--surface-sunken);
-}
-
-.winner-works-scroll::-webkit-scrollbar-thumb {
-    background:var(--gold);
-    border-radius:2px;
 }
 
 /* 수상 모달 내 info-row 가독성 개선 */

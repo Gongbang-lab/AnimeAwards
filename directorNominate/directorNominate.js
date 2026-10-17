@@ -67,7 +67,7 @@ function renderDirectorGrid(searchTerm = "") {
     const isSearching = searchTerm.length > 0;
 
     if (filteredData.length === 0) {
-        container.innerHTML = `<div style="text-align:center; padding:50px; color:#666;">데이터가 없습니다.</div>`;
+        container.innerHTML = `<div class="ui-empty">데이터가 없습니다.</div>`;
         return;
     }
 
@@ -245,7 +245,7 @@ function updatePreview() {
     if (!previewList) return;
     
     if (dirState.selectedDirectors.length === 0) {
-        previewList.innerHTML = `<span style="font-size: 0.85rem; color:#555;">후보를 선택해주세요</span>`;
+        previewList.innerHTML = `<span class="ui-empty">후보를 선택해주세요</span>`;
         if (document.getElementById("btn-next")) document.getElementById("btn-next").disabled = true;
         return;
     }
@@ -394,10 +394,10 @@ function openWinnerModal() {
     infoContent.innerHTML = `
         <div class="info-row" style="border-bottom: 2px solid var(--gold); margin-bottom: 15px; padding-bottom: 15px;">
             <span class="info-label" style="font-size: 1.4rem;">수상자</span>
-            <span class="info-value" style="font-size: 1.4rem; color: #fff; font-weight: bold;">${winner.director}</span>
+            <span class="info-value" style="font-size: 1.4rem; color:var(--text-body); font-weight: bold;">${winner.director}</span>
         </div>
         <div class="winner-works-scroll">
-            <div style="color:#aaa; font-size:0.9rem; margin-bottom:10px;">주요 연출작</div>
+            <div style="color:var(--text-muted); font-size:0.9rem; margin-bottom:10px;">주요 연출작</div>
             ${worksListHTML}
         </div>
     `;

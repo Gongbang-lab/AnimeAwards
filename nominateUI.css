@@ -1,23 +1,58 @@
-/* Shared page chrome. Media layouts and modal close controls remain page-specific. */
-.nominate-ui { --nav-height: 70px; }
+/* Shared nomination layout, controls and detail-dialog chrome.
+   Page CSS owns only its unique data layout; shared measurements belong here. */
+.nominate-ui { --nav-height: 70px; font-family: Pretendard, -apple-system, BlinkMacSystemFont, "Malgun Gothic", sans-serif; }
 .nominate-ui .top-nav { height: var(--nav-height); border-bottom: 1px solid var(--line); background: var(--surface-raised); }
 .nominate-ui .nav-content-area { flex: 7.5 1 0; min-width: 0; box-sizing: border-box; padding: 0 24px 0 40px; }
-.nominate-ui .nav-sidebar-area { flex: 2.5 1 0; min-width: 0; box-sizing: border-box; padding: 0 25px; flex-direction: row; align-items: center; }
+.nominate-ui :is(.nav-sidebar-area, .nav-search-area) { display: flex; flex: 2.5 1 0; width: auto; min-width: 0; box-sizing: border-box; padding: 0 25px; flex-direction: row; align-items: center; }
 .nominate-ui .brand { flex-shrink: 0; font-size: 1.4rem; font-weight: 800; letter-spacing: 1px; margin-right: 25px; }
 .nominate-ui :is(#step-title, #step-title-display) { min-width: 0; font-size: 1.1rem; color: var(--text-body); overflow-wrap: anywhere; }
-.nominate-ui .search-container { min-width: 0; width: 100%; max-width: 400px; margin: 0 0 0 auto; }
-.nominate-ui :is(#search-input, #song-search) {
+.nominate-ui .search-container { position: relative; min-width: 0; width: 100%; max-width: 400px; margin: 0 0 0 auto; }
+.nominate-ui :is(#search-input, #song-search, #searchInput) {
   box-sizing: border-box; width: 100%; min-width: 0; padding: 10px 12px;
   border: 1px solid var(--line); border-radius: 10px;
   background: var(--surface); color: var(--text-body); caret-color: var(--gold);
   font: inherit; font-size: .9rem; line-height: 1.5;
   transition: border-color .15s, box-shadow .15s;
 }
-.nominate-ui :is(#search-input, #song-search)::placeholder { color: var(--text-muted); }
-.nominate-ui :is(#search-input, #song-search):focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px #c9a55a2e; }
-.nominate-ui :is(#search-input, #song-search):disabled { opacity: .4; cursor: not-allowed; }
+.nominate-ui :is(#search-input, #song-search, #searchInput)::placeholder { color: var(--text-muted); }
+.nominate-ui :is(#search-input, #song-search, #searchInput):focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px #c9a55a2e; }
+.nominate-ui :is(#search-input, #song-search, #searchInput):disabled { opacity: .4; cursor: not-allowed; }
+.nominate-ui :is(.autocomplete-items, .autocomplete-list) { background: var(--surface-raised); border: 1px solid var(--line); border-radius: 8px; max-height: 240px; overflow-y: auto; }
+.nominate-ui :is(.autocomplete-items, .autocomplete-list) > div { padding: 10px 12px; color: var(--text-body); border-color: var(--line); font-size: .9rem; }
+.nominate-ui :is(.autocomplete-items, .autocomplete-list) > div:hover { background: var(--surface-hover); color: var(--text); }
 .nominate-ui .container > .content-area { flex: 7.5 1 0; padding: 40px; border-color: var(--line); }
 .nominate-ui .container > .sidebar { flex: 2.5 1 0; padding: 25px; }
+.nominate-ui .sidebar :is(.preview-box, .status-indicator) {
+  box-sizing: border-box; height: 280px; max-height: 280px; flex-shrink: 0;
+  display: block; padding: 10px; margin: 0 0 20px; overflow-y: auto; overflow-x: hidden;
+  background: var(--surface-sunken); border: 1px solid var(--line); border-radius: 8px;
+}
+.nominate-ui .sidebar :is(.action-buttons, .button-group, .control-row, .button-row) {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 100%; gap: 10px; margin-top: auto;
+}
+.nominate-ui .sidebar .action-buttons:has(> .button-row) { grid-template-columns: 1fr; }
+.nominate-ui .sidebar .action-buttons > .button-row { margin-top: 0; }
+/* Candidate text and feedback share a scale across image types. */
+.nominate-ui .content-area :is(.card, .anime-item, .couple-card, .anime-card, .step2-original-card, .song-card, .step2-song-card, .step2-char-card, .step2-cv-card, .step2-director-card) {
+  border: 2px solid var(--line); border-radius: 8px;
+  background: var(--surface); box-shadow: none;
+  transition: transform .2s, border-color .2s;
+}
+.nominate-ui .content-area :is(.card, .anime-item, .couple-card, .anime-card, .step2-original-card, .song-card, .step2-song-card, .step2-char-card, .step2-cv-card, .step2-director-card):hover {
+  transform: translateY(-4px); border-color: var(--gold); background: var(--surface); box-shadow: none;
+}
+.nominate-ui .content-area :is(.card, .anime-item, .couple-card, .anime-card, .step2-original-card, .song-card, .step2-song-card, .step2-char-card, .step2-cv-card, .step2-director-card).selected {
+  border-color: var(--gold); background: var(--gold-tint); box-shadow: none; transform: none;
+}
+.nominate-ui .content-area :is(.card-info, .step2-card-info) { padding: 12px; text-align: center; }
+.nominate-ui .content-area :is(.card-title, .song-title, .anime-item .anime-title) {
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2;
+  font-size: .95rem; font-weight: 600; line-height: 1.5; min-height: 3em;
+  margin: 0 0 6px; color: var(--text); text-align: center;
+  white-space: normal; overflow: hidden; overflow-wrap: anywhere; text-overflow: ellipsis;
+}
+.nominate-ui .ui-empty { color: var(--text-muted); font-size: .85rem; line-height: 1.6; text-align: center; padding: 20px 12px; }
 /* Action buttons only: modal close/confirm controls are deliberately excluded. */
 .nominate-ui .sidebar :is(.gold-btn, .btn-gold, .btn-outline) {
   box-sizing: border-box; min-height: 48px; padding: 14px 16px;
@@ -53,7 +88,9 @@
 @media (max-width: 700px) {
   .nominate-ui { --nav-height: 116px; }
   .nominate-ui .top-nav { flex-wrap: wrap; align-content: center; gap: 8px; padding: 8px 0; box-sizing: border-box; }
-  .nominate-ui .nav-content-area, .nominate-ui .nav-sidebar-area { flex: 1 1 100%; width: 100%; padding: 0 16px; }
+  .nominate-ui .top-nav:has(.nav-sidebar-area, .nav-search-area) { --nav-height: 116px; }
+  .nominate-ui:not(:has(.top-nav .nav-sidebar-area, .top-nav .nav-search-area)) { --nav-height: 70px; }
+  .nominate-ui .nav-content-area, .nominate-ui :is(.nav-sidebar-area, .nav-search-area) { flex: 1 1 100%; width: 100%; padding: 0 16px; }
   .nominate-ui .brand { font-size: 1rem; margin-right: 12px; }
   .nominate-ui :is(#step-title, #step-title-display) { font-size: .85rem; }
   .nominate-ui .search-container { max-width: none; margin: 0; }
@@ -65,10 +102,17 @@
   .nominate-ui .works-modal-left { flex: 0 1 auto; min-height: 0; max-height: 38%; padding: 18px; overflow-y: auto; border-right: 0; border-bottom: 1px solid var(--line); }
   .nominate-ui .works-modal-left img { max-width: 110px; }
   .nominate-ui .works-modal-right { flex: 1; min-height: 0; padding: 18px; }
+  .nominate-ui #ep-preview-modal .winner-layout { flex-direction: column; gap: 20px; }
+  .nominate-ui #ep-preview-modal .winner-left { text-align: center; }
+  .nominate-ui #ep-preview-modal .winner-left img { width: min(100%, 180px); }
+  .nominate-ui #ep-preview-modal .winner-right { min-width: 0; }
+  .nominate-ui #ep-preview-modal .info-row { flex-wrap: wrap; gap: 6px 12px; font-size: .9rem; }
+  .nominate-ui #ep-preview-modal .info-value { min-width: 0; overflow-wrap: anywhere; }
 }
 @media (prefers-reduced-motion: reduce) {
   .nominate-ui .sidebar :is(.gold-btn, .btn-gold, .btn-outline),
-  .nominate-ui :is(#search-input, #song-search) { transition: none; }
+  .nominate-ui :is(#search-input, #song-search, #searchInput),
+  .nominate-ui .content-area :is(.card, .anime-item, .couple-card, .anime-card, .step2-original-card, .song-card, .step2-song-card, .step2-char-card, .step2-cv-card, .step2-director-card) { transition: none; }
 }
 
 /* Detail dialogs: close controls stay outside the scrolling content. */

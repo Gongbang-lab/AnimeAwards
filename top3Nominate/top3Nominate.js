@@ -81,7 +81,7 @@ function renderStep1(searchTerm = "") {
     }
 
     if (filteredData.length === 0) {
-        display.innerHTML = `<div style="color:#888; text-align:center; padding:40px;">검색 결과가 없습니다.</div>`;
+        display.innerHTML = `<div class="ui-empty">검색 결과가 없습니다.</div>`;
         return;
     }
 

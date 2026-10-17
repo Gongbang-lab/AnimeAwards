@@ -313,25 +313,14 @@ function updatePreview() {
     previewBox.innerHTML = "";
     
     if (nominateState.selectedItems.length === 0) {
-        previewBox.innerHTML = `<div style="color:var(--text-muted); text-align:center; padding-top:20px; font-size:0.85rem;">후보를 선택해주세요</div>`;
+        previewBox.innerHTML = `<div class="ui-empty">후보를 선택해주세요</div>`;
         if(nextBtn) nextBtn.disabled = true;
         return;
     }
 
     nominateState.selectedItems.forEach(anime => {
         const div = document.createElement("div");
-        div.className = "preview-item";
-        
-        const title = document.createElement("span");
-        title.className = "preview-title";
-        title.textContent = anime.title;
-        title.title = anime.title;
-        const removeButton = document.createElement("button");
-        removeButton.type = "button";
-        removeButton.className = "preview-remove";
-        removeButton.textContent = "×";
-        removeButton.setAttribute("aria-label", `${anime.title} 선택 해제`);
-        div.append(title, removeButton);
+        const removeButton = NominateCommon.setupPreviewItem(div, anime.title);
 
         removeButton.onclick = () => {
             if (nominateState.step === 1) {

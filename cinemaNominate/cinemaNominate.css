@@ -5,7 +5,6 @@
     --black: var(--bg);
     --gray: var(--surface);
     --white:var(--text-body);
-    --nav-height:70px;
 }
 
 body {
@@ -19,21 +18,15 @@ body {
 /* 1. 상단 네비게이션 */
 .top-nav {
     position:fixed; top:0; left:0; right:0;
-    height:var(--nav-height); background:rgba(46, 23, 29, 0.95);
-    display:flex; border-bottom:2px solid var(--gold);
+
+    display:flex;
     z-index:1000; backdrop-filter:blur(10px); justify-content:space-between; align-items:center;
 }
-.nav-content-area { padding-left:40px; display:flex; align-items:center; }
+.nav-content-area {  display:flex; align-items:center; }
 .brand { color:var(--gold); font-weight:800; font-size:1.4rem; margin-right:25px; }
 #step-title { font-size:1.1rem; color:var(--text-body); border-left:3px solid var(--gray); padding-left:15px; }
 
-.nav-search-area { padding-right:40px; width:23%; }
-.search-container { position:relative; width:100%; margin-right:10px; }
-#searchInput {
-    width:100%; padding:10px; background:var(--surface-sunken); border:1px solid var(--line);
-    border-radius:10px; color:var(--text-body); outline:none; box-sizing:border-box; transition:0.3s;
-}
-#searchInput:focus { border-color:var(--gold); }
+.search-container { position:relative;   }
 
 .autocomplete-list {
     position:absolute; top:calc(100% + 5px); left:0; width:100%;
@@ -48,23 +41,23 @@ body {
 .container { display:flex; min-height:calc(100vh - var(--nav-height)); }
 
 .content-area { flex:7.5; padding:40px; border-right:1px solid rgba(201, 165, 90, 0.3); }
-.sidebar { 
-    flex:2.5; background-color:var(--surface-sunken); position:sticky; 
-    top:var(--nav-height); height:calc(100vh - var(--nav-height)); 
+.sidebar {
+    flex:2.5; background-color:var(--surface-sunken); position:sticky;
+    top:var(--nav-height); height:calc(100vh - var(--nav-height));
     padding:30px 20px; box-sizing:border-box;
     display:flex; flex-direction:column; gap:30px; /* 요소 간 간격 */
 }
 
 /* 사이드바 UI 요소 */
-.action-buttons { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:auto; }
+
 .gold-btn { background:var(--gold); color:var(--bg); font-weight:800; padding:15px; border:none; cursor:pointer; border-radius:6px; transition:0.2s; }
 .gold-btn:disabled { opacity:0.4; cursor:not-allowed; }
 .btn-outline { background:transparent; border:1px solid var(--gold); color:var(--gold); padding:15px; font-weight:bold; cursor:pointer; border-radius:6px; }
 
-.preview-box { flex-grow:1; border-top:1px solid var(--line); padding-top:20px; }
+.preview-box { flex-grow:1; border-top:1px solid var(--line);  }
 .preview-content { display:flex; flex-direction:column; align-items:center; }
 .preview-img { width:85%; border-radius:8px; border:1px solid var(--gold); margin-bottom:20px; box-shadow:0 10px 20px rgba(0,0,0,0.5); }
-.preview-title { color:var(--gold); font-size:1.4rem; margin-bottom:20px; text-align:center; }
+
 .preview-details { width:100%; display:flex; flex-direction:column; gap:12px; }
 .detail-row { display:flex; justify-content:space-between; border-bottom:1px solid var(--surface-raised); padding-bottom:8px; font-size:0.95rem; }
 .detail-row span { color:var(--text-muted); }
@@ -82,8 +75,7 @@ body {
     cursor:pointer; transition:0.3s;
     position:relative; /* ✅ absolute 뱃지 기준점 */
 }
-.card:hover { transform:translateY(-5px); border-color:rgba(201, 165, 90, 0.4); }
-.card.selected { border-color:var(--gold) !important; box-shadow:0 0 15px rgba(201, 165, 90, 0.4); }
+
 .card-selection-rate {
     position:absolute;
     top:6px;
@@ -104,8 +96,6 @@ body {
 }
 .media-box img { width:100%; height:100%; object-fit:cover; }
 
-.card-info { padding:15px; text-align:center; }
-.card-title { font-weight:bold; color:var(--gold); font-size:1rem; margin-bottom:5px; }
 .card-studio { font-size:0.8rem; color:var(--text-muted); }
 
 /* 4. 모달 (수상 발표용 전용) */

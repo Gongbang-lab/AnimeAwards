@@ -185,7 +185,7 @@ function updatePreview() {
     pBox.innerHTML = "";
 
     if (nominateState.selectedItems.length === 0) {
-        pBox.innerHTML = `<div style="color:#666; text-align:center; margin-top:20px;">선택된 후보가 없습니다.</div>`;
+        pBox.innerHTML = `<div class="ui-empty">선택된 후보가 없습니다.</div>`;
         nextBtn.disabled = true;
         return;
     }

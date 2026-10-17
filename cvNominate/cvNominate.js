@@ -485,7 +485,7 @@ function renderCVStep1(searchTerm = "") {
         mainContent.innerHTML = `
             <div style="
                 padding: 40px 20px;
-                color: #999;
+                color:var(--text-muted);
                 text-align: center;
                 line-height: 1.7;
             ">
@@ -1198,7 +1198,7 @@ function openWinnerModal() {
 
             <span class="info-value" style="
                 font-size:1.4rem;
-                color:#fff;
+                color:var(--text-body);
                 font-weight:bold;
             ">
                 ${escapeHTML(winner.name)}

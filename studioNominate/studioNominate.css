@@ -5,7 +5,6 @@
     --black: var(--bg);
     --gray: var(--surface);
     --white:var(--text-body);
-    --nav-height:70px;
 }
 
 body {
@@ -17,28 +16,20 @@ body {
 }
 
 /* 스크롤바 커스텀 */
-::-webkit-scrollbar { width:8px; }
-::-webkit-scrollbar-track { background:var(--surface); }
-::-webkit-scrollbar-thumb { background:var(--line); border-radius:4px; }
-::-webkit-scrollbar-thumb:hover { background:var(--gold); }
 
 /* 네비게이션 */
 .top-nav {
     position:fixed; top:0; left:0; right:0;
-    height:var(--nav-height); background:rgba(46, 23, 29, 0.95);
-    display:flex; border-bottom:2px solid var(--gold);
+
+    display:flex;
     z-index:1000; backdrop-filter:blur(10px);
 }
-.nav-content-area { flex:7.5; display:flex; align-items:center; padding-left:40px; }
+.nav-content-area {  display:flex; align-items:center;  }
 .brand { color:var(--gold); font-weight:800; font-size:1.4rem; margin-right:25px; }
 #step-title { font-size:1.1rem; color:var(--text-body); border-left:3px solid var(--gray); padding-left:15px; }
 
-.nav-sidebar-area { flex:2.5; min-width:300px; display:flex; align-items:center; padding-right:20px; }
-.search-container { position:relative; width:100%; max-width:400px; margin-left:auto; margin-right:20px; }
-#search-input {
-    width:100%; padding:10px; background:var(--surface-sunken); border:1px solid var(--line);
-    border-radius:10px; color:var(--text-body); outline:none; box-sizing:border-box;
-}
+.nav-sidebar-area {   display:flex; align-items:center;  }
+.search-container { position:relative;     }
 
 /* 레이아웃 */
 .content-wrapper { padding-top:var(--nav-height); }
@@ -50,22 +41,22 @@ body {
     width:100%;
 }
 .content-area { flex:7.5; padding:40px; border-right:1px solid rgba(201, 165, 90, 0.3); }
-.sidebar { 
-    flex:2.5; 
-    min-width:320px; 
+.sidebar {
+    flex:2.5;
+    min-width:320px;
     position:-webkit-sticky !important;
     background-color:var(--surface-sunken);
     position:sticky !important;
     top:var(--nav-height) !important;
     height:calc(100vh - var(--nav-height));
     /* 화면 높이를 넘지 않도록 제한하되, 내부 스크롤은 status-indicator가 담당 */
-    max-height:calc(100vh - var(--nav-height) - 40px); 
-    
-    padding:25px; 
-    box-sizing:border-box; 
-    display:flex; 
-    flex-direction:column; 
-    align-self:flex-start !important; 
+    max-height:calc(100vh - var(--nav-height) - 40px);
+
+    padding:25px;
+    box-sizing:border-box;
+    display:flex;
+    flex-direction:column;
+    align-self:flex-start !important;
     z-index:10;
 }
 .fixed-sidebar-content {
@@ -75,18 +66,8 @@ body {
 }
 /* 버튼 및 컨트롤 */
 .action-buttons-vertical { width:100%; margin-bottom:30px; }
-.status-indicator {
-    background:var(--surface-sunken) !important;
-    border:1px solid var(--line) !important;
-    border-radius:8px;
-    height:280px;
-    overflow-y:auto;
-    padding:10px;
-    margin-bottom:20px;
-    flex-shrink:0;
-}
+
 #selected-name-display { color:var(--gold); font-weight:bold; font-size:0.9rem; }
-.control-row { display:grid; grid-template-columns:1.5fr 1fr; gap:10px; }
 
 .gold-btn {
     background:linear-gradient(135deg, var(--gold), var(--dark-gold));
@@ -127,14 +108,11 @@ body {
     border-radius:8px; overflow:visible;
     cursor:pointer; transition:0.3s;
 }
-.card:hover { transform:translateY(-5px); border-color:rgba(201, 165, 90, 0.5); }
-.card.selected { border-color:var(--gold); box-shadow:0 0 15px rgba(201, 165, 90, 0.3); }
+
 .card img {
     width:100%; aspect-ratio:1/1; object-fit:contain; background:var(--surface-sunken);
     border-radius:6px 6px 0 0;
 }
-.card-info { padding:12px; text-align:center; }
-.card-title { font-weight:bold; color:var(--gold); font-size:1.1rem; }
 
 /* 배지 (상시 노출) */
 .card-badge {
@@ -197,7 +175,7 @@ body {
     flex:1;
     display:grid;
     grid-template-columns:repeat(auto-fill, minmax(160px, 1fr));
-    grid-auto-rows:min-content; 
+    grid-auto-rows:min-content;
     gap:15px;
     overflow-y:auto;
     align-items:start;
@@ -280,7 +258,7 @@ body {
 
 /* 열림/닫힘 로직 (애니메이션 없이 즉각 반응) */
 .acc-content {
-    display:none; 
+    display:none;
 }
 
 .acc-content.open {
@@ -326,9 +304,6 @@ body {
     width:2px;
     background:linear-gradient(to bottom, transparent, var(--gold) 15%, var(--gold) 85%, transparent);
 }
-.work-list::-webkit-scrollbar { width:4px; }
-.work-list::-webkit-scrollbar-track { background:transparent; }
-.work-list::-webkit-scrollbar-thumb { background:var(--gold); border-radius:2px; }
 
 .work-row {
     display:flex;
@@ -343,24 +318,10 @@ body {
 
 .modal-footer { margin-top:28px; }
 .modal-footer .gold-btn { width:100%; }
+
 /* =========================================
    추가된 스타일:Preview Box (Step 1 용)
 ========================================= */
-.preview-box {
-    background:var(--surface-sunken);
-    border:1px solid var(--line);
-    border-radius:6px;
-    padding:10px;
-    margin-bottom:20px;
-    max-height:320px;
-    overflow-y:auto;
-    display:flex;
-    flex-direction:column;
-    gap:8px;
-}
-
-.preview-box::-webkit-scrollbar { width:6px; }
-.preview-box::-webkit-scrollbar-thumb { background:var(--line); border-radius:4px; }
 
 .empty-text {
     color:var(--text-muted);
@@ -369,70 +330,24 @@ body {
     margin-top:40px;
 }
 
-.preview-item {
-    padding:5px !important;
-    margin:0 0 8px 0 !important;
-    background:var(--gray) !important;
-    border-radius:6px !important;
-    cursor:pointer;
-    font-size:0.85rem;
-    border:1px solid transparent;
-    text-align:center;
-    transition:all 0.2s ease;
-    display:block !important;
-}
-
-/* 삭제 유도 호버 효과 */
-.preview-item:hover {
-    border-color:var(--accent) !important;
-    color:var(--accent) !important;
-    background:rgba(201, 74, 94, 0.1) !important;
-    transform:translateY(-2px);
-}
-
-.preview-item small {
-    display:block;
-    margin-top:3px;
-    pointer-events:none;
-}
-
 /* 사이드바 고정 영역 스크롤바 디자인 */
-.status-indicator::-webkit-scrollbar {
-    width:6px;
-}
-.status-indicator::-webkit-scrollbar-thumb {
-    background:var(--line);
-    border-radius:3px;
-}
 
 /* 액션 버튼 그룹 (기존 .control-row 대체) */
-.action-buttons {
-    display:grid;
-    grid-template-columns:1fr;
-    gap:12px;
-    margin-top:auto;
-}
 
 /* Hidden 클래스는 !important로 덮어쓰기 확실히 처리 */
-.hidden { 
-    display:none !important; 
+.hidden {
+    display:none !important;
 }
 
 /* 버튼 행 레이아웃:1행 2열 */
-.button-row {
-    display:flex;
-    gap:10px;
-    width:100%;
-}
 
-.button-row .gold-btn, 
+.button-row .gold-btn,
 .button-row .btn-outline {
     flex:1; /* 버튼 너비를 1:1로 균등 배분 */
     padding: 15px 5px; /* 가로 폭에 맞춰 패딩 조절 */
     font-size:0.95rem;
     white-space:nowrap; /* 텍스트 줄바꿈 방지 */
 }
-
 
 .hidden {
     display:none !important;

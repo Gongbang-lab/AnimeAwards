@@ -74,7 +74,7 @@ function renderCards(searchTerm = "") {
 
     if (dataList.length === 0) {
         grid.innerHTML = `
-            <div style="grid-column:1/-1;text-align:center;padding:50px;color:#666;">
+            <div style="grid-column:1/-1;text-align:center;padding:50px;color:var(--text-muted);">
                 <p style="font-size:1.2rem;">검색 결과가 없습니다.</p>
             </div>`;
         return;
@@ -153,7 +153,7 @@ function updatePreview() {
     if (!previewList) return;
 
     if (scriptwriterState.selectedItems.length === 0) {
-        previewList.innerHTML = `<span style="font-size:0.85rem;color:#888;">후보를 선택해주세요</span>`;
+        previewList.innerHTML = `<span class="ui-empty">후보를 선택해주세요</span>`;
         return;
     }
 

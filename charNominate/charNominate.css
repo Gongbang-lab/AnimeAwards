@@ -6,7 +6,6 @@
     --black: var(--bg);
     --gray: var(--surface);
     --white:var(--text-body);
-    --nav-height:70px;
 }
 
 body {
@@ -18,30 +17,20 @@ body {
 }
 
 /* 커스텀 스크롤바 */
-::-webkit-scrollbar { width:8px; height:8px; }
-::-webkit-scrollbar-track { background:var(--surface); border-radius:4px; }
-::-webkit-scrollbar-thumb { background:var(--line); border-radius:4px; border:1px solid var(--surface); }
-::-webkit-scrollbar-thumb:hover { background:var(--dark-gold); }
 
 /* 1. 상단 네비게이션 */
 .top-nav {
     position:fixed; top:0; left:0; right:0;
-    height:var(--nav-height); background:rgba(46, 23, 29, 0.95);
-    display:flex; border-bottom:2px solid var(--gold);
+
+    display:flex;
     z-index:1000; backdrop-filter:blur(10px); justify-content:space-between;
 }
-.nav-content-area { flex:7; display:flex; align-items:center; padding-left:40px; }
+.nav-content-area {  display:flex; align-items:center;  }
 .brand { color:var(--gold); font-weight:800; font-size:1.4rem; margin-right:25px; }
 #step-title { font-size:1.1rem; color:var(--text-body); border-left:3px solid var(--gray); padding-left:15px; }
 
-.nav-sidebar-area { flex:3; min-width:300px; display:flex; align-items:center; padding-right:20px; }
-.search-container { position:relative; width:100%; max-width:400px; margin-left:auto; margin-right:20px; }
-#search-input {
-    width:100%; padding:10px; background:var(--surface-sunken); border:1px solid var(--line);
-    border-radius:10px; color:var(--text-body); outline:none; transition:0.3s;
-}
-#search-input:focus { border-color:var(--gold); }
-#search-input:disabled { opacity:0.5; cursor:not-allowed; }
+.nav-sidebar-area {   display:flex; align-items:center;  }
+.search-container { position:relative;     }
 
 .autocomplete-items {
     position:absolute; top:100%; left:0; right:0;
@@ -51,8 +40,6 @@ body {
 .autocomplete-items div { padding:10px; cursor:pointer; border-bottom:1px solid var(--line); }
 .autocomplete-items div:hover { background:var(--gray); color:var(--gold); }
 .autocomplete-items div strong { color:var(--gold); }
-.autocomplete-items::-webkit-scrollbar { width:5px; }
-.autocomplete-items::-webkit-scrollbar-thumb { background:var(--gold); }
 
 .search-subtext {
     font-size:0.75rem; color:var(--text-muted); display:block; margin-top:2px;
@@ -80,32 +67,11 @@ body {
     padding:10px;
     margin-bottom:20px;
 }
-.status-indicator::-webkit-scrollbar { width:6px; }
-.status-indicator::-webkit-scrollbar-thumb { background:var(--line); border-radius:3px; }
+
 .preview-box.hidden { display:none !important; }
 
-.preview-item {
-    padding:5px !important;
-    margin:0 0 8px 0 !important;
-    background:var(--gray) !important;
-    border-radius:6px !important;
-    cursor:pointer;
-    font-size:0.85rem;
-    border:1px solid transparent;
-    text-align:center;
-    transition:all 0.2s ease;
-    display:block !important;
-}
-.preview-item:hover {
-    border-color:var(--accent) !important;
-    color:var(--accent) !important;
-    background:rgba(201, 74, 94, 0.1) !important;
-    transform:translateY(-2px);
-}
-.preview-item br + small { display:block; margin-top:3px; pointer-events:none; }
-
 /* 버튼 */
-.action-buttons { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:auto}
+
 .gold-btn { background:var(--gold); color:var(--bg); font-weight:800; padding:15px; border:none; cursor:pointer; border-radius:6px; }
 .gold-btn:disabled { opacity:0.4; cursor:not-allowed; }
 .gold-btn:hover:not(:disabled) { background:var(--text); }
@@ -176,14 +142,6 @@ body {
     display:flex;
     flex-direction:column;
 }
-.card:hover, .step2-char-card:hover {
-    transform:translateY(-5px);
-    border-color:rgba(201, 165, 90, 0.5);
-}
-.card.selected, .step2-char-card.selected {
-    border-color:var(--gold);
-    box-shadow:0 0 15px rgba(201, 165, 90, 0.3);
-}
 
 /* 카드 배지 */
 .card-badge {
@@ -211,7 +169,6 @@ body {
 .card-info, .step2-card-info { padding:12px; }
 .step2-card-info { padding:15px; text-align:left; }
 
-.card-title { font-weight:bold; color:var(--gold); margin-bottom:5px; font-size:0.95rem; }
 .step2-char-card .card-title { font-size:1.05rem; }
 
 .card-studio { font-size:0.8rem; color:var(--text-muted); }

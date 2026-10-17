@@ -17,57 +17,16 @@
   --dark-gold: var(--gold);
 }
 body { background: var(--bg); color: var(--text-body); }
-.top-nav { background: var(--header); border-bottom: 1px solid var(--line); }
+
 .brand, #step-title { color: var(--text); }
 .preview-subtitle, .card-studio, .composer-title, .pv-empty { color: var(--text-muted); }
 .content-area { min-width: 0; border-color: var(--border); }
 .sidebar, .card { background: var(--surface); }
 .quarter-content { background: var(--expanded); }
 .preview-box, #search-input, .autocomplete-items, .pv-video-card { background: var(--surface-raised); border-color: var(--border); }
-#search-input {
-  box-sizing: border-box;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  color: var(--text-body);
-  caret-color: var(--gold);
-}
-#search-input:focus {
-  outline: none;
-  border-color: var(--gold);
-  box-shadow: 0 0 0 3px #c9a55a2e;
-}
-.preview-box { padding: 10px; background: var(--expanded); }
-.preview-item {
-  position: relative; display: flex; flex-direction: row; flex-wrap: nowrap;
-  justify-content: space-between; align-items: center;
-  padding: 0 42px 0 12px; min-height: 38px; box-sizing: border-box;
-  margin-bottom: 6px; min-width: 0;
-  background: var(--surface); border-color: var(--border); cursor: default;
-}
-.preview-item:hover {
-  background: var(--surface) !important; border-color: var(--border) !important;
-  transform: none;
-}
-.preview-item .preview-title {
-  flex: 1; min-width: 0; text-align: left; font-size: .85rem; font-weight: 500;
-  display: block; white-space: normal; overflow-wrap: anywhere; word-break: normal;
-  line-height: 1.5; padding: 8px 0; overflow: visible; text-overflow: clip;
-}
-.preview-item:hover .preview-title { color: var(--text); }
-.preview-remove {
-  position: absolute; right: 4px; top: 50%; transform: translateY(-50%);
-  flex-shrink: 0; width: 32px; height: 32px; padding: 0;
-  display: grid; place-items: center; border: 0; border-radius: 6px;
-  background: transparent; color: var(--text-muted); font-size: 1.25rem; cursor: pointer;
-  opacity: 0; pointer-events: none;
-}
-.preview-item:hover .preview-remove,
-.preview-item:focus-within .preview-remove { opacity: 1; pointer-events: auto; }
-.preview-remove:hover { background: var(--danger); color: var(--bg); }
+
 /* 터치 화면에서는 호버 없이도 선택을 해제할 수 있다. */
-@media (hover: none) {
-  .preview-item .preview-remove { opacity: 1; pointer-events: auto; }
-}
+
 .preview-title, .card-title, .pv-video-title { color: var(--text); }
 .quarter-section { border-color: var(--border); border-radius: 12px; }
 .quarter-btn { background: var(--header); color: var(--text); }
@@ -87,22 +46,20 @@ body { background: var(--bg); color: var(--text-body); }
 .day-filter-btn:hover { background: var(--header-hover); color: var(--white); border-color: var(--mint); }
 .day-filter-btn.active { background: var(--accordion-active); color: var(--text); border-color: var(--gold); }
 button:focus-visible { outline: 2px solid var(--mint); outline-offset: 3px; }
-.card.selected { border-color: var(--gold); box-shadow: none; }
+
 .card { border-color: var(--line); }
-.card:hover { border-color: var(--gold); }
+
 .card-selection-rate { background: var(--mint); color: var(--bg); }
 .card-badge { background: var(--expanded); color: var(--gold); }
 .pv-card-badge { border-color: var(--gold); }
 .pv-card-badge:hover { background: var(--gold); color: var(--bg); }
 .gold-btn { color: var(--bg); }
 .btn-outline:hover { background: var(--gold-tint); }
-#search-input::placeholder { color: var(--text-muted); }
+
 .autocomplete-items { background: var(--surface-raised); border: 1px solid var(--line); }
 .autocomplete-items div { border-color: var(--line); }
 .autocomplete-items div:hover { background: var(--surface-hover); color: var(--text); }
-::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb, .preview-box::-webkit-scrollbar-thumb { background: var(--line); border-color: var(--bg); }
-::-webkit-scrollbar-thumb:hover { background: var(--gold); }
+
 .gold-btn, .btn-outline { border-radius: 8px; }
 .gold-btn:hover:not(:disabled) { background: var(--gold-light); }
 .candidate-empty { padding: 40px 20px; text-align: center; color: var(--text-muted); }

@@ -242,7 +242,7 @@ function showWorksModal(cv) {
     leftArea.innerHTML = `
         <img src="${cvImg}" alt="${cv.name}">
         <h2 style="color:var(--gold); margin: 15px 0 5px 0;">${cv.name}</h2>
-        <p style="color:#888; margin-bottom: 15px;">데뷔: ${cv.debutYear}년</p>
+        <p style="color:var(--text-muted); margin-bottom: 15px;">데뷔: ${cv.debutYear}년</p>
 
         <div class="cv-score-breakdown">
             <h3 class="cv-info-subtitle">점수 breakdown</h3>
@@ -266,7 +266,7 @@ function showWorksModal(cv) {
 
     // 오른쪽 작품 그리드
     if (!cv.characters || cv.characters.length === 0) {
-        gridBody.innerHTML = "<p style='color:#666; padding: 20px;'>참여 작품 정보가 없습니다.</p>";
+        gridBody.innerHTML = "<p style='color:var(--text-muted); padding: 20px;'>참여 작품 정보가 없습니다.</p>";
     } else {
         gridBody.innerHTML = cv.characters.map(char => `
             <div class="work-card">
@@ -275,9 +275,9 @@ function showWorksModal(cv) {
                          loading="lazy">
                 </div>
                 <div class="work-card-info">
-                    <div class="work-card-title" style="color:#fff; font-weight:bold; font-size:0.9rem; margin-bottom:4px;">${char.animeTitle}</div>
+                    <div class="work-card-title" style="color:var(--text-body); font-weight:bold; font-size:0.9rem; margin-bottom:4px;">${char.animeTitle}</div>
                     <div class="work-card-sub" style="color:var(--gold); font-size:0.8rem;">${char.charName} 역</div>
-                    <div class="work-card-year" style="color:#666; font-size:0.7rem; margin-top:2px;">${char.year}년</div>
+                    <div class="work-card-year" style="color:var(--text-muted); font-size:0.7rem; margin-top:2px;">${char.year}년</div>
                 </div>
             </div>
         `).join('');
@@ -330,7 +330,7 @@ function openAwardModal(cv) {
                 <span class="work-title">${char.animeTitle}</span>
                 <span class="work-role">${char.charName} 역</span>
             </div>`).join('')
-        : `<div class="work-row"><span class="work-title" style="color:#666;">참여 작품 정보가 없습니다.</span></div>`;
+        : `<div class="work-row"><span class="work-title" style="color:var(--text-muted);">참여 작품 정보가 없습니다.</span></div>`;
 
     modalBody.innerHTML = `
         <div class="winner-layout">

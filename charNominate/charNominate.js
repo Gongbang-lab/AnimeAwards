@@ -74,7 +74,7 @@ function renderStep1(searchTerm = "") {
     }
 
     if (flatData.length === 0) {
-        left.innerHTML = `<div style="color:#888; text-align:center; padding:40px;">검색 결과가 없습니다.</div>`;
+        left.innerHTML = `<div class="ui-empty">검색 결과가 없습니다.</div>`;
         return;
     }
 
@@ -244,7 +244,7 @@ function updatePreview() {
   box.innerHTML = "";
 
   if (charState.selectedItems.length === 0) {
-    box.innerHTML = `<div style="color:#666; text-align:center; margin-top:20px;">선택된 후보가 없습니다.</div>`;
+    box.innerHTML = `<div class="ui-empty">선택된 후보가 없습니다.</div>`;
     nextBtn.disabled = true;
     return;
   }

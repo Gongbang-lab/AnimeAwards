@@ -221,7 +221,6 @@ function updateMemeStepUI() {
     const preview = document.getElementById('preview-box');
     preview.classList.toggle('hidden', !first);
     preview.replaceChildren();
-    document.getElementById('meme-step-heading').textContent = first ? '후보를 선택해주세요' : '최종 수상작을 선택해주세요';
     if (!memeState.candidateIds.size) preview.textContent = '후보를 선택해주세요';
     for (const id of memeState.candidateIds) {
         const meme = findMeme(id);
@@ -310,7 +309,7 @@ function openMemeZoom(id, e) {
             <div id="popup-media" style="text-align:center; padding:10px; border-radius:10px;">
                 ${meme.isPersonal ? '' : (srcs[initialIndex] ? renderZoomMedia(srcs[initialIndex]) : '등록된 미디어가 없습니다.')}
             </div>
-            <p style="color:#aaa; text-align:center; margin-top:20px;">출처: ${escapeMemeText(meme.origin)}</p>
+            <p style="color:var(--text-muted); text-align:center; margin-top:20px;">출처: ${escapeMemeText(meme.origin)}</p>
             </div>
         </div>
     `;
@@ -380,8 +379,8 @@ function showWinnerCelebration(winner, src) {
                     ? `<video src="${escapeMemeText(memeMediaUrl(src))}" autoplay loop muted style="width:100%; border-radius:10px;"></video>`
                     : `<img src="${escapeMemeText(memeMediaUrl(src))}" style="width:100%; border-radius:10px;">`}
             </div>
-            <h1 style="color: #fff; margin: 0 0 10px 0;">${escapeMemeText(winner.name)}</h1>
-            <p style="color: #888; margin: 0;">${escapeMemeText(winner.origin)}</p>
+            <h1 style="color:var(--text-body); margin: 0 0 10px 0;">${escapeMemeText(winner.name)}</h1>
+            <p style="color:var(--text-muted); margin: 0;">${escapeMemeText(winner.origin)}</p>
             <div style="margin-top: 30px;">
                 <button class="gold-btn" onclick="location.href=AwardPage.homeUrl()">결과 저장 및 메인으로</button>
             </div>

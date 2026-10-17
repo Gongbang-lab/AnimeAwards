@@ -6,15 +6,14 @@
     --black: var(--bg);
     --gray: var(--surface);
     --white:var(--text-body);
-    --nav-height:70px;
 }
 
 * { box-sizing:border-box; margin:0; padding:0; }
 
-body, html { 
-    height:100%; width:100%; 
-    background-color:var(--black); 
-    color:var(--white); 
+body, html {
+    height:100%; width:100%;
+    background-color:var(--black);
+    color:var(--white);
     font-family:'Pretendard', 'Noto Sans KR', sans-serif;
     overflow-x:hidden;
 }
@@ -22,11 +21,11 @@ body, html {
 /* 2. 상단 네비게이션 (검색창 삭제 버전) */
 .top-nav {
     position:fixed; top:0; left:0; right:0;
-    height:var(--nav-height); background:rgba(46, 23, 29, 0.95);
-    display:flex; border-bottom:2px solid var(--gold);
+
+    display:flex;
     z-index:1000; backdrop-filter:blur(10px); align-items:center;
 }
-.nav-content-area { flex:1; display:flex; align-items:center; padding-left:40px; }
+.nav-content-area {  display:flex; align-items:center;  }
 .brand { color:var(--gold); font-weight:800; font-size:1.4rem; margin-right:25px; }
 #step-title { font-size:1.1rem; color:var(--text-body); border-left:3px solid var(--gray); padding-left:15px; }
 
@@ -34,50 +33,10 @@ body, html {
 .content-wrapper { padding-top:var(--nav-height); }
 .container { display:flex; min-height:calc(100vh - var(--nav-height)); }
 
-.content-area { 
-    flex:7.5; padding:60px 40px; 
+.content-area {
+    flex:7.5; padding:60px 40px;
     border-right:1px solid rgba(201, 165, 90, 0.2);
     display:flex; flex-direction:column; align-items:center; /* 중앙 정렬 */
-}
-/* 사이드바 프리뷰 박스 (성우 노미네이트 규격) */
-.preview-box {
-    background:var(--surface-sunken);
-    border:1px solid var(--line);
-    height:280px; /* 고정 높이 */
-    overflow-y:auto;
-    padding:10px;
-    border-radius:8px;
-    margin-bottom:20px;
-}
-
-/* 성우 페이지와 동일한 세로 카드형 아이템 */
-.preview-item {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    padding:12px;
-    margin-bottom:8px;
-    background:var(--gray);
-    border-radius:6px;
-    cursor:pointer;
-    border:1px solid transparent;
-    transition:all 0.2s ease;
-}
-
-/* 성우 페이지의 시그니처:삭제 가능성을 알리는 Red Hover */
-.preview-item:hover {
-    border-color:var(--accent) !important;
-    background:rgba(201, 74, 94, 0.1) !important;
-    transform:translateY(-2px);
-}
-
-.preview-title {
-    color:var(--text-body);
-    font-size:0.85rem;
-    font-weight:bold;
-    text-align:center;
-    word-break:keep-all;
 }
 
 .preview-subtitle {
@@ -87,16 +46,12 @@ body, html {
     text-align:center;
 }
 
-/* 호버 시 텍스트 색상 변화 */
-.preview-item:hover .preview-title { color:var(--accent); }
-
 /* 스크롤바 디자인 통일 */
-.preview-box::-webkit-scrollbar { width:6px; }
-.preview-box::-webkit-scrollbar-thumb { background:var(--line); border-radius:3px; }
+
 /* 5. 사이드바 및 버튼 */
-.sidebar { 
-    flex:2.5; background-color:var(--surface-sunken); position:sticky; 
-    top:var(--nav-height); height:calc(100vh - var(--nav-height)); 
+.sidebar {
+    flex:2.5; background-color:var(--surface-sunken); position:sticky;
+    top:var(--nav-height); height:calc(100vh - var(--nav-height));
     padding:25px; display:flex; flex-direction:column;
 }
 .fixed-sidebar-content {
@@ -106,13 +61,12 @@ body, html {
     width:100%;
 }
 
-.action-buttons { margin-top:auto; display:flex; flex-direction:row; gap:10px; width:100%; }
 .action-buttons .btn-outline,
 .action-buttons .gold-btn {
     flex:1;             /* 두 버튼의 너비를 동일하게 (5:5) */
     padding: 12px 5px;   /* 한 줄에 들어오도록 좌우 패딩 조절 */
     font-size:0.9rem;    /* 텍스트 줄바꿈 방지 */
-    white-space:nowrap; 
+    white-space:nowrap;
     text-align:center;
 }
 
@@ -172,7 +126,7 @@ body, html {
 .anime-picker-empty { padding:24px; color:var(--text-muted); text-align:center; }
 
 .nominee-list {
-    display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr));
+    display:grid; grid-template-columns:repeat(auto-fill, minmax(min(252px, 100%), 1fr));
     gap:25px; width:100%;
 }
 .anime-picker-sidebar {
@@ -183,10 +137,7 @@ body, html {
     scrollbar-width:thin;
     scrollbar-color:var(--surface) var(--surface-sunken);
 }
-.anime-picker-sidebar::-webkit-scrollbar { width:8px; }
-.anime-picker-sidebar::-webkit-scrollbar-track { background:var(--surface-sunken); }
-.anime-picker-sidebar::-webkit-scrollbar-thumb { background:var(--surface); border-radius:8px; }
-.anime-picker-sidebar::-webkit-scrollbar-thumb:hover { background:var(--surface-raised); }
+
 .sidebar .anime-picker-section { margin-bottom:12px; }
 .sidebar .anime-picker-desc { font-size:.8rem; line-height:1.5; margin-bottom:12px; }
 .sidebar .quarter-btn, .sidebar .day-btn { padding:11px 10px; font-size:.85rem; }
@@ -210,7 +161,7 @@ body, html {
 
 /* 7. 모달 공통 스타일 */
 .modal {
-    position:fixed; top:0; left:0; width:100%; height:100%; 
+    position:fixed; top:0; left:0; width:100%; height:100%;
     background:rgba(0,0,0,0.9); display:flex; align-items:center; justify-content:center; z-index:2000;
 }
 .modal-content {
@@ -264,23 +215,14 @@ body, html {
 /* 캐릭터 그리드 */
 .character-grid {
     display:grid;
-    grid-template-columns:repeat(auto-fill, minmax(140px, 1fr)); 
+    grid-template-columns:repeat(auto-fill, minmax(140px, 1fr));
     gap:15px;
-    overflow-y:auto; 
-    align-content:start; 
-    grid-auto-rows:max-content; 
-    
+    overflow-y:auto;
+    align-content:start;
+    grid-auto-rows:max-content;
+
     padding:20px; background:var(--bg); border-radius:10px; flex:1; min-height:0;
 }
-
-.character-grid::-webkit-scrollbar { width:10px; }
-.character-grid::-webkit-scrollbar-track { background:var(--surface-sunken); border-radius:5px; }
-.character-grid::-webkit-scrollbar-thumb { 
-    background:var(--line); 
-    border-radius:5px; 
-    border:2px solid var(--surface-sunken); 
-}
-.character-grid::-webkit-scrollbar-thumb:hover { background:var(--primary-color); }
 
 .char-card {
     background:var(--surface-raised);
@@ -320,14 +262,14 @@ body, html {
     flex-shrink:0;
 }
 /* 8. 기타 공용 클래스 */
-.gold-btn { 
-    background:var(--gold); color:var(--surface-sunken); padding:15px; border:none; 
-    border-radius:8px; font-weight:800; cursor:pointer; 
+.gold-btn {
+    background:var(--gold); color:var(--surface-sunken); padding:15px; border:none;
+    border-radius:8px; font-weight:800; cursor:pointer;
 }
 .gold-btn:disabled { opacity:0.3; }
-.btn-outline { 
-    background:transparent; border:1px solid var(--gold); color:var(--gold); 
-    padding:15px; border-radius:8px; cursor:pointer; 
+.btn-outline {
+    background:transparent; border:1px solid var(--gold); color:var(--gold);
+    padding:15px; border-radius:8px; cursor:pointer;
 }
 .hidden { display:none !important; }
 
@@ -342,8 +284,8 @@ body, html {
 }
 
 #awardModal .modal-content {
-    width:750px; 
-    max-width:95%; 
+    width:750px;
+    max-width:95%;
     text-align:center;
     background:linear-gradient(135deg, var(--surface) 0%, var(--surface-hover) 100%);
     border:2px solid var(--gold);
@@ -353,8 +295,8 @@ body, html {
 }
 
 .award-title {
-    font-size:2.2rem; 
-    color:var(--gold); 
+    font-size:2.2rem;
+    color:var(--gold);
     margin-bottom:10px;
     text-shadow:0 0 10px rgba(201, 165, 90, 0.5);
     font-weight:900;
@@ -374,24 +316,24 @@ body, html {
 
 /* 커플 이미지 가로 배치 핵심 */
 .award-couple-display {
-    display:flex; 
-    justify-content:center; 
-    align-items:center; 
-    gap:30px; 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
     margin-bottom:40px;
 }
 
 .award-char {
-    display:flex; 
-    flex-direction:column; 
-    align-items:center; 
+    display:flex;
+    flex-direction:column;
+    align-items:center;
     width:42%; /* 가로 비율 확보 */
 }
 
 .award-char img {
-    width:100%; 
+    width:100%;
     aspect-ratio:2/3; /* 캐릭터 카드 비율 유지 */
-    object-fit:cover; 
+    object-fit:cover;
     border-radius:12px;
     border:3px solid var(--gold);
     box-shadow:0 8px 20px rgba(0,0,0,0.6);
@@ -399,14 +341,14 @@ body, html {
 }
 
 .award-char span {
-    margin-top:15px; 
-    font-size:1.3rem; 
-    font-weight:bold; 
+    margin-top:15px;
+    font-size:1.3rem;
+    font-weight:bold;
     color:var(--text-body);
 }
 
 .heart-icon {
-    font-size:3.5rem; 
+    font-size:3.5rem;
     color:var(--accent);
     text-shadow:0 0 15px rgba(255, 71, 87, 0.4);
     animation:pulse 1.5s infinite;

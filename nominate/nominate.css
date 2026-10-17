@@ -8,7 +8,6 @@
   --black: var(--bg);
   --gray: var(--surface);
   --white:var(--text-body);
-  --nav-height:70px;
 }
 
 body {
@@ -24,23 +23,18 @@ body {
    ────────────────────────────────────────────────────────── */
 .top-nav {
   position:fixed; top:0; left:0; right:0;
-  height:var(--nav-height); background:rgba(46, 23, 29, 0.95);
-  display:flex; border-bottom:2px solid var(--gold);
+
+  display:flex;
   z-index:1000; backdrop-filter:blur(10px); justify-content:space-between;
 }
 
-.nav-content-area { flex:7; display:flex; align-items:center; padding-left:40px; }
+.nav-content-area {  display:flex; align-items:center;  }
 .brand { color:var(--gold); font-weight:800; font-size:1.4rem; margin-right:25px; letter-spacing:1px; }
 #step-title { font-size:1.1rem; color:var(--text-body); border-left:3px solid var(--gray); padding-left:15px; }
 
 /* 검색창 */
-.nav-sidebar-area { flex:3; min-width:300px; display:flex; align-items:center; padding-right:20px; }
-.search-container { position:relative; width:100%; max-width:400px; margin-left:auto; margin-right:20px; }
-#search-input {
-  width:100%; padding:10px; background:var(--surface-sunken); border:1px solid var(--line);
-  border-radius:10px; color:var(--text-body); outline:none; transition:0.3s;
-}
-#search-input:focus { border-color:var(--gold); }
+.nav-sidebar-area {   display:flex; align-items:center;  }
+.search-container { position:relative;     }
 
 .autocomplete-items {
   position:absolute; z-index:2000;
@@ -56,13 +50,13 @@ body {
 .container { display:flex; min-height:calc(100vh - var(--nav-height)); }
 
 /* 좌측 콘텐츠 (아코디언/그리드) */
-.content-area { 
-  flex:7.5; padding:40px; 
-  border-right:1px solid rgba(201, 165, 90, 0.3); 
+.content-area {
+  flex:7.5; padding:40px;
+  border-right:1px solid rgba(201, 165, 90, 0.3);
 }
 
 /* 우측 사이드바 */
-.sidebar { 
+.sidebar {
   flex:2.5; background-color:var(--surface-sunken); position:sticky;
   top:var(--nav-height); height:calc(100vh - var(--nav-height));
   padding:25px; box-sizing:border-box; display:flex;
@@ -75,74 +69,26 @@ body {
   width:100%;
 }
 
-.preview-box {
-    background:var(--surface-sunken);
-    border:1px solid var(--line);
-    height:280px;
-    overflow-y:auto;
-    padding:15px;
-    border-radius:8px;
-    margin-bottom:20px;
-    flex-shrink:0;
-}
-
-/* 성우 노미네이트 페이지와 동일한 아이템 디자인 */
-.preview-item {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    padding:5px;
-    margin-bottom:10px;
-    background:var(--gray);
-    border-radius:6px;
-    cursor:pointer;
-    border:1px solid transparent;
-    transition:all 0.2s ease;
-}
-
-/* 핵심:성우 페이지 특유의 Red Hover 효과 */
-.preview-item:hover {
-    border-color:var(--accent) !important;
-    background:rgba(201, 74, 94, 0.1) !important;
-    transform:translateY(-2px);
-}
-
-.preview-title {
-    color:var(--text-body);
-    font-size:0.9rem;
-    font-weight:bold;
-    text-align:center;
-    word-break:keep-all;
-}
-
 .preview-subtitle {
     color:var(--text-muted);
     font-size:0.75rem;
     margin-top:4px;
 }
 
-/* 마우스를 올렸을 때 글자색 변화 */
-.preview-item:hover .preview-title {
-    color:var(--accent);
-}
-
 /* 스크롤바 디자인 */
-.preview-box::-webkit-scrollbar { width:6px; }
-.preview-box::-webkit-scrollbar-thumb { background:var(--line); border-radius:3px; }
 
 /* 버튼 그룹 */
-.action-buttons { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:auto;}
-.gold-btn { 
-  background:var(--gold); color:var(--bg); font-weight:800; padding:15px; 
-  border:none; cursor:pointer; border-radius:6px; transition:0.2s; 
+
+.gold-btn {
+  background:var(--gold); color:var(--bg); font-weight:800; padding:15px;
+  border:none; cursor:pointer; border-radius:6px; transition:0.2s;
 }
 .gold-btn:disabled { opacity:0.4; cursor:not-allowed; }
 .gold-btn:hover:not(:disabled) { background:var(--text); transform:translateY(-2px); }
 
-.btn-outline { 
-  background:transparent; border:1px solid var(--gold); color:var(--gold); 
-  padding:15px; font-weight:bold; cursor:pointer; border-radius:6px; 
+.btn-outline {
+  background:transparent; border:1px solid var(--gold); color:var(--gold);
+  padding:15px; font-weight:bold; cursor:pointer; border-radius:6px;
 }
 .btn-outline:hover { background:rgba(201, 165, 90, 0.1); }
 .hidden { display:none !important; }
@@ -154,7 +100,7 @@ body {
 
 .quarter-btn, .day-btn {
   width:100%; padding:16px 20px; background:var(--surface); border:none;
-  color:var(--text-body); font-weight:bold; display:flex; justify-content:space-between; 
+  color:var(--text-body); font-weight:bold; display:flex; justify-content:space-between;
   cursor:pointer; transition:0.3s; font-size:1rem;
 }
 .quarter-btn:hover, .day-btn:hover { background:var(--surface-hover); color:var(--gold); }
@@ -163,8 +109,8 @@ body {
 .quarter-content { background:var(--surface-sunken); }
 
 /* 요일 버튼 */
-.day-btn { 
-  background:var(--surface-sunken); color:var(--text-muted); padding-left:30px; border-top:1px solid var(--surface-raised); font-size:0.95rem; 
+.day-btn {
+  background:var(--surface-sunken); color:var(--text-muted); padding-left:30px; border-top:1px solid var(--surface-raised); font-size:0.95rem;
 }
 .day-btn.active { color:var(--gold); background:var(--surface); }
 
@@ -198,15 +144,12 @@ body {
     overflow:visible;
     cursor:pointer; transition:all 0.2s ease; position:relative;
 }
-.card:hover { transform:translateY(-5px); border-color:var(--line); }
-.card.selected { border-color:var(--gold); box-shadow:0 0 15px rgba(201, 165, 90, 0.3); }
 
 .card img {
     width:100%; aspect-ratio:2/3; object-fit:cover; display:block;
     border-radius:6px 6px 0 0;
 }
-.card-info { padding:12px; text-align:center; }
-.card-title { color:var(--text-body); font-size:0.9rem; font-weight:600; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+
 .card-studio { color:var(--text-muted); font-size:0.75rem; margin-top:4px; }
 .composer-title { color:var(--text-muted); font-size:0.75rem; margin-top:4px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
 
@@ -251,14 +194,14 @@ body {
 /* ──────────────────────────────────────────────────────────
    4. 모달 (Winner Popup)
    ────────────────────────────────────────────────────────── */
-.modal { 
-  position:fixed; inset:0; background:rgba(0,0,0,0.9); 
-  display:flex; align-items:center; justify-content:center; z-index:9999; 
+.modal {
+  position:fixed; inset:0; background:rgba(0,0,0,0.9);
+  display:flex; align-items:center; justify-content:center; z-index:9999;
   backdrop-filter:blur(5px);
 }
-.modal-content { 
-  background:var(--surface); width:90%; max-width:800px; 
-  border:2px solid var(--gold); border-radius:16px; padding:40px; 
+.modal-content {
+  background:var(--surface); width:90%; max-width:800px;
+  border:2px solid var(--gold); border-radius:16px; padding:40px;
   box-shadow:0 0 50px rgba(201, 165, 90, 0.2);
 }
 .modal-header { text-align:center; color:var(--gold); margin:0; font-size:2rem; letter-spacing:2px; }
@@ -266,9 +209,9 @@ body {
 
 .winner-layout { display:flex; gap:30px; align-items:center; }
 .winner-left { flex:1; text-align:center; }
-.winner-left img { 
-  width:100%; max-width:300px; border-radius:8px; 
-  border:1px solid var(--gold); box-shadow:0 10px 30px rgba(0,0,0,0.5); 
+.winner-left img {
+  width:100%; max-width:300px; border-radius:8px;
+  border:1px solid var(--gold); box-shadow:0 10px 30px rgba(0,0,0,0.5);
 }
 
 .winner-right { flex:1.2; display:flex; flex-direction:column; gap:20px; }
@@ -283,28 +226,12 @@ body {
 @keyframes zoomIn { from { transform:scale(0.8); opacity:0; } to { transform:scale(1); opacity:1; } }
 
 /* 스크롤바 전체 폭/높이 */
-::-webkit-scrollbar {
-    width:8px;
-    height:8px;
-}
 
 /* 스크롤바 트랙 (배경) */
-::-webkit-scrollbar-track {
-    background:var(--surface); 
-    border-radius:4px;
-}
 
 /* 스크롤바 핸들 (움직이는 막대) */
-::-webkit-scrollbar-thumb {
-    background:var(--line); 
-    border-radius:4px;
-    border:1px solid var(--surface);
-}
 
 /* 마우스 올렸을 때 핸들 색상 (골드 포인트) */
-::-webkit-scrollbar-thumb:hover {
-    background:var(--dark-gold); 
-}
 
 /* ──────────────────────────────────────────────
    올해의 이카루스 상 - 소개 모달 전용 스타일

@@ -73,7 +73,7 @@ function updatePreview() {
     pBox.innerHTML = "";
 
     if (studioState.nominees.length === 0) {
-        pBox.innerHTML = `<div style="color:#666; text-align:center; margin-top:20px;"></div>`;
+        pBox.innerHTML = `<div style="color:var(--text-muted); text-align:center; margin-top:20px;"></div>`;
         nextBtn.disabled = true;
         return;
     }
@@ -179,7 +179,7 @@ function renderStudioAccordionGroups() {
         
         groupDiv.innerHTML = `
             <div class="acc-header level-1-header">
-                <span>작품 수 ${count}개 스튜디오 <small style="color:#888; font-size:0.9rem; margin-left:10px;">(${studios.length})</small></span>
+                <span>작품 수 ${count}개 스튜디오 <small style="color:var(--text-muted); font-size:0.9rem; margin-left:10px;">(${studios.length})</small></span>
                 <span class="arrow">▼</span>
             </div>
             <div class="acc-content level-1-content">
@@ -251,11 +251,11 @@ function showWorksModal(item) {
     leftArea.innerHTML = `
         <img src="${studioImg}" alt="${item.studio}" style="width:100%; max-width:250px; border:2px solid var(--gold); border-radius:10px;">
         <h2 style="color:var(--gold); margin: 20px 0 10px 0;">${item.studio}</h2>
-        <p style="color:#888;">총 ${item.works ? item.works.length : 0}개 작품</p>
+        <p style="color:var(--text-muted);">총 ${item.works ? item.works.length : 0}개 작품</p>
     `;
 
     if (!item.works || item.works.length === 0) {
-        gridBody.innerHTML = "<p style='color:#666; padding:20px;'>등록된 작품이 없습니다.</p>";
+        gridBody.innerHTML = "<p style='color:var(--text-muted); padding:20px;'>등록된 작품이 없습니다.</p>";
     } else {
         gridBody.innerHTML = item.works.map(work => `
             <div class="work-card">
@@ -292,7 +292,7 @@ function openAwardModal(item) {
             <div class="work-row">
                 <span class="work-title">${work.title}</span>
             </div>`).join('')
-        : `<div class="work-row"><span class="work-title" style="color:#666;">제작 정보가 없습니다.</span></div>`;
+        : `<div class="work-row"><span class="work-title" style="color:var(--text-muted);">제작 정보가 없습니다.</span></div>`;
 
     modalBody.innerHTML = `
         <div class="winner-layout">

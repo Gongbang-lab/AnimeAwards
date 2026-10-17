@@ -181,7 +181,7 @@ function updatePreview() {
 
     const list = Object.values(episodeState.selectedList);
     if (list.length === 0) {
-        pBox.innerHTML = `<div style="color:#666; text-align:center; padding-top:20px; font-size:0.85rem;">후보를 선택해주세요</div>`;
+        pBox.innerHTML = `<div class="ui-empty">후보를 선택해주세요</div>`;
         if (nextBtn) nextBtn.disabled = true;
         return;
     }
