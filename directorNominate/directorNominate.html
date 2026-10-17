@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="../winnerStage.css">
     <link rel="stylesheet" href="../nominationGuide.css">
   <link rel="stylesheet" href="../palette-components.css">
+  <link rel="stylesheet" href="../posterCards.css">
+  <link rel="stylesheet" href="../nominateUI.css">
 </head>
-<body>
+<body class="nominate-ui poster-works-director">
     <nav class="top-nav">
         <div class="nav-content-area">
             <div class="brand">2026 ANIME AWARDS</div>
@@ -43,15 +45,18 @@
     </div>
 
     <div id="detail-modal" class="modal hidden">
-        <div class="modal-content works-modal-content">
+        <div class="unified-close-split modal-content works-modal-content">
+<button class="unified-modal-close" type="button" aria-label="모달 닫기" onclick="closeModal('detail-modal')">×</button>
+
             <div class="works-modal-left" id="detail-profile"></div>
             <div class="works-modal-right">
                 <h2 class="modal-header" style="font-size:1.4rem; margin-top:0;">참여 작품 목록</h2>
                 <hr class="modal-divider">
                 <div id="detail-works" class="director-works-grid"></div>
-                <button onclick="closeModal('detail-modal')" class="gold-btn" style="width:100%; margin-top:20px;">닫기</button>
+                
             </div>
-        </div>
+        
+</div>
     </div>
 
     <div id="winner-modal" class="modal hidden">

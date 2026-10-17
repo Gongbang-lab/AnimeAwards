@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="../winnerStage.css">
     <link rel="stylesheet" href="../nominationGuide.css">
   <link rel="stylesheet" href="../palette-components.css">
+  <link rel="stylesheet" href="../nominateUI.css">
 </head>
-<body>
+<body class="nominate-ui">
 
     <canvas id="confettiCanvas"></canvas>
 
@@ -44,13 +45,16 @@
     </main>
 
     <div id="charModal" class="modal hidden">
-        <div class="modal-content large-modal">
-            <span class="close-btn" id="closeCharModal">&times;</span>
+        <div class="unified-close-split modal-content large-modal">
+<button class="unified-modal-close" type="button" aria-label="모달 닫기" id="closeCharModal">×</button>
+
+            
             <h2 id="modalAnimeTitle">캐릭터 선택</h2>
             <p class="modal-desc">커플로 등록할 두 명의 캐릭터를 선택해주세요.</p>
             <div class="character-grid" id="characterGrid"></div>
             <button id="addCoupleBtn" class="gold-btn full-width" disabled style="margin-top:20px;">후보 등록 (0/2)</button>
-        </div>
+        
+</div>
     </div>
 
     <div id="awardModal" class="modal hidden">

@@ -1,0 +1,50 @@
+/* Shared anime poster cards. Portraits, album covers and video thumbnails keep their own layouts. */
+.poster-nomination :is(.day-content, #step2-grid, .card-grid, .cinema-vote-grid, .level-2-content.open),
+.poster-works-director .director-works-grid,
+.poster-works-studio .works-grid {
+  grid-template-columns: repeat(auto-fill, minmax(min(180px, 100%), 1fr)) !important;
+  gap: 15px !important;
+  padding: 20px !important;
+  box-sizing: border-box;
+  align-items: start;
+}
+.poster-nomination :is(.card, .anime-item, .anime-card, .step2-original-card),
+.poster-works-director .director-work-card,
+.poster-works-studio .work-card {
+  min-width: 0;
+  overflow: hidden;
+}
+.poster-nomination .card > img,
+.poster-nomination .anime-thumb-small,
+.poster-works-director .director-work-card img,
+.poster-works-studio .work-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+}
+.poster-nomination :is(.media-box, .card-thumb-wrapper, .step2-original-card .card-thumb) {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+}
+.poster-nomination :is(.media-box, .card-thumb-wrapper, .step2-original-card .card-thumb) img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Episode controls stay below a full-width poster. */
+.poster-nomination .anime-item { padding: 0 0 15px; }
+.poster-nomination .anime-thumb-small { border-radius: 0; }
+.poster-nomination .anime-item > :not(img) { margin-left: 12px; margin-right: 12px; min-width: 0; }
+.poster-nomination .anime-item > select { width: calc(100% - 24px); }
+@media (max-width: 600px) {
+  .poster-nomination :is(.day-content, #step2-grid, .card-grid, .cinema-vote-grid, .level-2-content.open),
+  .poster-works-director .director-works-grid,
+  .poster-works-studio .works-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    padding: 16px 12px !important;
+  }
+}

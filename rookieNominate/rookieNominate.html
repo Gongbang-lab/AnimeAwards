@@ -8,8 +8,9 @@
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <link rel="stylesheet" href="../winnerStage.css">
   <link rel="stylesheet" href="../palette-components.css">
+  <link rel="stylesheet" href="../nominateUI.css">
 </head>
-<body class="dark-theme">
+<body class="nominate-ui dark-theme">
 
   <nav class="top-nav">
     <div class="nav-content-area">
@@ -42,20 +43,25 @@
   </main>
 
   <div id="works-modal" class="modal hidden">
-    <div class="modal-content works-modal-content">
+    <div class="unified-close-split modal-content works-modal-content">
+<button class="unified-modal-close" type="button" aria-label="모달 닫기" onclick="closeWorksModal()">×</button>
+
       <div class="works-modal-left" id="works-cv-info"></div>
 
       <div class="works-modal-right">
         <h2 class="modal-header" style="font-size: 1.4rem; margin-top: 0;">참여 작품 목록</h2>
         <hr class="modal-divider">
         <div id="works-grid-body" class="works-grid"></div>
-        <button class="gold-btn" style="width: 100%; margin-top: 20px;" onclick="closeWorksModal()">닫기</button>
+        
       </div>
-    </div>
+    
+</div>
   </div>
 
   <div id="candidate-pool-modal" class="modal hidden">
-    <div class="modal-content candidate-pool-modal-content">
+    <div class="unified-close-split modal-content candidate-pool-modal-content">
+<button class="unified-modal-close" type="button" aria-label="모달 닫기" id="btn-candidate-pool-close">×</button>
+
       <h2 class="modal-header">신인 성우 후보군</h2>
       <hr class="modal-divider">
 
@@ -75,9 +81,10 @@
 
       <div class="modal-footer candidate-pool-footer">
         <button id="btn-candidate-pool-add" class="gold-btn">추가하기</button>
-        <button id="btn-candidate-pool-close" class="btn-outline">닫기</button>
+        
       </div>
-    </div>
+    
+</div>
   </div>
 
   <div id="criteria-modal" class="modal hidden">

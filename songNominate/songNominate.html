@@ -9,8 +9,9 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <link rel="stylesheet" href="../winnerStage.css">
   <link rel="stylesheet" href="../palette-components.css">
+  <link rel="stylesheet" href="../nominateUI.css">
 </head>
-<body>
+<body class="nominate-ui">
 
     <nav class="top-nav">
         <div class="nav-content-area">
@@ -86,10 +87,12 @@
   </div>
 </div>
 
-    <dialog id="song-player-modal" aria-labelledby="song-player-title">
+    <dialog id="song-player-modal" aria-labelledby="song-player-title" class="unified-close-panel">
+<button class="unified-modal-close" type="button" aria-label="모달 닫기" id="song-player-close">×</button>
+<div class="unified-modal-scroll">
       <div class="song-player-header">
         <h2 id="song-player-title"></h2>
-        <button type="button" id="song-player-close" aria-label="재생 모달 닫기">×</button>
+        
       </div>
       <p id="song-player-meta"></p>
       <div class="song-player-frame">
@@ -102,7 +105,8 @@
         <span>재생이 제한된 영상은 유튜브에서 확인해주세요.</span>
         <a id="song-player-link" target="_blank" rel="noopener noreferrer">유튜브에서 보기</a>
       </div>
-    </dialog>
+    </div>
+</dialog>
 
     <script src="../data/manifest.js"></script>
     <script type="text/plain" data-app-src="../resultStorage.js"></script>

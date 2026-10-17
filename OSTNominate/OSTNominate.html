@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="../winnerStage.css">
     <link rel="stylesheet" href="../nominationGuide.css">
   <link rel="stylesheet" href="../palette-components.css">
+  <link rel="stylesheet" href="../nominateUI.css">
 </head>
-<body>
+<body class="nominate-ui">
   <nav class="top-nav">
     <div class="nav-content-area"><span class="brand">2026 ANIME AWARDS</span><span id="step-title"></span></div>
     <div class="nav-sidebar-area"><div class="search-container">
@@ -33,8 +34,10 @@
   </div></main>
 
   <div id="ost-listen-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="ost-modal-title">
-    <div class="modal-content ost-modal-content">
-      <button class="ost-modal-close" id="ost-modal-close" aria-label="닫기">&times;</button>
+    <div class="unified-close-split modal-content ost-modal-content">
+<button class="unified-modal-close" type="button" aria-label="모달 닫기" id="ost-modal-close">×</button>
+
+      
       <div class="ost-modal-body">
       <div class="ost-modal-left">
         <img id="ost-modal-image" src="" alt="애니메이션 이미지">
@@ -45,7 +48,8 @@
       </div>
       <section class="ost-modal-right"><h3>OST 트랙</h3><div id="ost-track-grid" class="ost-track-grid"></div></section>
       </div>
-    </div>
+    
+</div>
   </div>
 
   <div id="winner-modal" class="modal hidden">

@@ -9,8 +9,10 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <link rel="stylesheet" href="../winnerStage.css">
   <link rel="stylesheet" href="../palette-components.css">
+  <link rel="stylesheet" href="../posterCards.css">
+  <link rel="stylesheet" href="../nominateUI.css">
 </head>
-<body class="dark-theme">
+<body class="nominate-ui dark-theme poster-nomination">
     <canvas id="confettiCanvas"></canvas>
 
     <nav class="top-nav">
@@ -98,7 +100,9 @@
     </div>
     
     <div id="ep-preview-modal" class="modal hidden" onclick="closeEpisodePreview()">
-    <div class="modal-content ep-preview-content" onclick="event.stopPropagation()">
+    <div class="unified-close-panel modal-content ep-preview-content" onclick="event.stopPropagation()">
+<button class="unified-modal-close" type="button" aria-label="모달 닫기" onclick="closeEpisodePreview()">×</button>
+<div class="unified-modal-scroll">
         <h2 class="modal-header">Episode Info</h2>
         <hr class="modal-divider">
 
@@ -129,12 +133,11 @@
                     </div>
                 </div>
 
-                <button class="gold-btn full-width" style="margin-top:auto;" onclick="closeEpisodePreview()">
-                    닫기
-                </button>
+                
             </div>
         </div>
     </div>
+</div>
 </div>
 
     <script src="../data/manifest.js"></script>

@@ -10,9 +10,10 @@
   <link rel="stylesheet" href="../nominationGuide.css">
   <link rel="stylesheet" href="./nominate-polish.css">
   <link rel="stylesheet" href="../palette-components.css">
-  <link rel="stylesheet" href="../palette-components.css">
+  <link rel="stylesheet" href="../posterCards.css">
+  <link rel="stylesheet" href="../nominateUI.css">
 </head>
-<body>
+<body class="nominate-ui poster-nomination">
 
   <nav class="top-nav">
     <div class="nav-content-area">
@@ -51,8 +52,10 @@
   </main>
 
 <div id="pv-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="pv-modal-title">
-    <div class="modal-content pv-modal-content">
-      <button id="pv-modal-close" class="pv-modal-close" type="button" aria-label="모달 닫기">&times;</button>
+    <div class="unified-close-panel modal-content pv-modal-content">
+<button class="unified-modal-close" type="button" aria-label="모달 닫기" id="pv-modal-close">×</button>
+<div class="unified-modal-scroll">
+      
       <h2 id="pv-modal-title" class="modal-header">작품 PV</h2>
       <hr class="modal-divider">
       <div id="pv-track-buttons" class="pv-track-buttons" role="group" aria-label="PV 선택"></div>
@@ -67,6 +70,7 @@
         <a id="pv-external-link" target="_blank" rel="noopener noreferrer" hidden>유튜브에서 보기</a>
       </div>
     </div>
+</div>
   </div>
 
   <div id="winner-modal" class="modal hidden">

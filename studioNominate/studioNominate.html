@@ -8,8 +8,10 @@
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <link rel="stylesheet" href="../winnerStage.css">
   <link rel="stylesheet" href="../palette-components.css">
+  <link rel="stylesheet" href="../posterCards.css">
+  <link rel="stylesheet" href="../nominateUI.css">
 </head>
-<body class="dark-theme">
+<body class="nominate-ui dark-theme poster-works-studio">
 
   <nav class="top-nav">
     <div class="nav-content-area">
@@ -57,15 +59,18 @@
   </main>
 
   <div id="works-modal" class="modal hidden">
-    <div class="modal-content works-modal-content">
+    <div class="unified-close-split modal-content works-modal-content">
+<button class="unified-modal-close" type="button" aria-label="모달 닫기" onclick="closeWorksModal()">×</button>
+
       <div class="works-modal-left" id="works-studio-info"></div>
       <div class="works-modal-right">
         <h2 class="modal-header" style="font-size: 1.4rem; margin-top: 0;">제작 애니메이션</h2>
         <hr class="modal-divider">
         <div id="works-grid-body" class="works-grid"></div>
-        <button class="gold-btn" style="width: 100%; margin-top: 20px;" onclick="closeWorksModal()">닫기</button>
+        
       </div>
-    </div>
+    
+</div>
   </div>
 
 <div id="winner-modal" class="modal hidden">

@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="../winnerStage.css">
     <link rel="stylesheet" href="../nominationGuide.css">
   <link rel="stylesheet" href="../palette-components.css">
+  <link rel="stylesheet" href="../nominateUI.css">
 </head>
-<body>
+<body class="nominate-ui">
     <nav class="top-nav">
         <div class="nav-content-area">
             <span class="brand">2026 ANIME AWARDS</span>
@@ -40,7 +41,9 @@
         </div>
     </div>
 
-    <dialog id="personal-editor" aria-labelledby="personal-editor-title">
+    <dialog id="personal-editor" aria-labelledby="personal-editor-title" class="unified-close-panel">
+<button class="unified-modal-close" type="button" aria-label="모달 닫기" id="personal-editor-cancel">×</button>
+<div class="unified-modal-scroll">
         <form id="personal-meme-form">
             <h2 id="personal-editor-title">밈 추가</h2>
             <label for="personal-name">이름</label>
@@ -57,11 +60,12 @@
             <p>JPG · PNG · WebP · GIF · MP4 · WebM / 수정 시 파일을 선택하지 않으면 기존 파일을 유지합니다.</p>
             <p id="personal-editor-error" role="alert"></p>
             <div class="personal-editor-actions">
-                <button type="button" id="personal-editor-cancel" class="btn-outline">취소</button>
+                
                 <button type="submit" id="personal-editor-save" class="gold-btn">저장</button>
             </div>
         </form>
-    </dialog>
+    </div>
+</dialog>
     <div id="winner-popup" class="modal hidden"></div>
 
     <script src="../data/manifest.js"></script>

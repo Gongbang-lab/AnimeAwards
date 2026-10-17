@@ -1,0 +1,138 @@
+/* Shared page chrome. Media layouts and modal close controls remain page-specific. */
+.nominate-ui { --nav-height: 70px; }
+.nominate-ui .top-nav { height: var(--nav-height); border-bottom: 1px solid var(--line); background: var(--surface-raised); }
+.nominate-ui .nav-content-area { flex: 7.5 1 0; min-width: 0; box-sizing: border-box; padding: 0 24px 0 40px; }
+.nominate-ui .nav-sidebar-area { flex: 2.5 1 0; min-width: 0; box-sizing: border-box; padding: 0 25px; flex-direction: row; align-items: center; }
+.nominate-ui .brand { flex-shrink: 0; font-size: 1.4rem; font-weight: 800; letter-spacing: 1px; margin-right: 25px; }
+.nominate-ui :is(#step-title, #step-title-display) { min-width: 0; font-size: 1.1rem; color: var(--text-body); overflow-wrap: anywhere; }
+.nominate-ui .search-container { min-width: 0; width: 100%; max-width: 400px; margin: 0 0 0 auto; }
+.nominate-ui :is(#search-input, #song-search) {
+  box-sizing: border-box; width: 100%; min-width: 0; padding: 10px 12px;
+  border: 1px solid var(--line); border-radius: 10px;
+  background: var(--surface); color: var(--text-body); caret-color: var(--gold);
+  font: inherit; font-size: .9rem; line-height: 1.5;
+  transition: border-color .15s, box-shadow .15s;
+}
+.nominate-ui :is(#search-input, #song-search)::placeholder { color: var(--text-muted); }
+.nominate-ui :is(#search-input, #song-search):focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px #c9a55a2e; }
+.nominate-ui :is(#search-input, #song-search):disabled { opacity: .4; cursor: not-allowed; }
+.nominate-ui .container > .content-area { flex: 7.5 1 0; padding: 40px; border-color: var(--line); }
+.nominate-ui .container > .sidebar { flex: 2.5 1 0; padding: 25px; }
+/* Action buttons only: modal close/confirm controls are deliberately excluded. */
+.nominate-ui .sidebar :is(.gold-btn, .btn-gold, .btn-outline) {
+  box-sizing: border-box; min-height: 48px; padding: 14px 16px;
+  border: 1px solid var(--gold); border-radius: 8px;
+  font: inherit; font-size: .9rem; font-weight: 700; line-height: 1.4;
+  text-align: center; white-space: normal; cursor: pointer;
+  transition: background-color .15s, border-color .15s; transform: none;
+}
+.nominate-ui .sidebar :is(.gold-btn, .btn-gold) { background: var(--gold); color: var(--bg); }
+.nominate-ui .sidebar .btn-outline { background: transparent; color: var(--gold); }
+.nominate-ui .sidebar :is(.gold-btn, .btn-gold):hover:not(:disabled) { background: var(--text); border-color: var(--text); transform: none; }
+.nominate-ui .sidebar .btn-outline:hover:not(:disabled) { background: var(--gold-tint); transform: none; }
+.nominate-ui .sidebar :is(.gold-btn, .btn-gold, .btn-outline):disabled { opacity: .4; filter: none; cursor: not-allowed; transform: none; }
+.nominate-ui .sidebar :is(.gold-btn, .btn-gold, .btn-outline):focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+/* Common shell only; retain track tables, split profiles, players and award stages. */
+.nominate-ui :is(.works-modal-content, .candidate-pool-modal-content, .ep-preview-content, .ost-modal-content, .pv-modal-content, .meme-zoom-modal-content),
+.nominate-ui #charModal .large-modal,
+.nominate-ui #criteria-modal .modal-content,
+.nominate-ui :is(#song-player-modal, #personal-editor, dialog.nomination-guide) {
+  box-sizing: border-box; border: 1px solid var(--line); border-radius: 16px;
+  background: var(--surface); color: var(--text-body); box-shadow: 0 20px 70px #0009;
+}
+.nominate-ui #pv-modal .modal-content { background: var(--surface); border-color: var(--line); }
+.nominate-ui .works-modal-content { width: min(1000px, calc(100vw - 32px)); max-width: 1000px; height: 80dvh; padding: 0; }
+.nominate-ui .works-modal-left { padding: 30px; }
+.nominate-ui .works-modal-right { padding: 30px; min-width: 0; min-height: 0; }
+.nominate-ui :is(#song-player-modal, #personal-editor, dialog.nomination-guide)::backdrop { background: #000b; backdrop-filter: blur(5px); }
+.nominate-ui, .nominate-ui * { scrollbar-width: thin; scrollbar-color: var(--line) var(--surface-sunken); }
+.nominate-ui::-webkit-scrollbar, .nominate-ui *::-webkit-scrollbar { width: 8px !important; height: 8px !important; }
+.nominate-ui::-webkit-scrollbar-track, .nominate-ui *::-webkit-scrollbar-track { background: var(--surface-sunken) !important; }
+.nominate-ui::-webkit-scrollbar-thumb, .nominate-ui *::-webkit-scrollbar-thumb { background: var(--line) !important; border: 1px solid var(--surface-sunken) !important; border-radius: 4px !important; }
+.nominate-ui::-webkit-scrollbar-thumb:hover, .nominate-ui *::-webkit-scrollbar-thumb:hover { background: var(--gold) !important; }
+@media (max-width: 700px) {
+  .nominate-ui { --nav-height: 116px; }
+  .nominate-ui .top-nav { flex-wrap: wrap; align-content: center; gap: 8px; padding: 8px 0; box-sizing: border-box; }
+  .nominate-ui .nav-content-area, .nominate-ui .nav-sidebar-area { flex: 1 1 100%; width: 100%; padding: 0 16px; }
+  .nominate-ui .brand { font-size: 1rem; margin-right: 12px; }
+  .nominate-ui :is(#step-title, #step-title-display) { font-size: .85rem; }
+  .nominate-ui .search-container { max-width: none; margin: 0; }
+  .nominate-ui .content-wrapper > .container { flex-direction: column; }
+  .nominate-ui .container > .content-area { flex: auto; width: 100%; padding: 18px; border-right: 0; }
+  .nominate-ui .container > .sidebar { flex: auto; position: static; width: 100%; height: auto; padding: 18px; border-top: 1px solid var(--line); }
+  .nominate-ui .sidebar :is(.fixed-sidebar-content, .sticky-content) { height: auto; }
+  .nominate-ui .works-modal-content { height: 88dvh; flex-direction: column; }
+  .nominate-ui .works-modal-left { flex: 0 1 auto; min-height: 0; max-height: 38%; padding: 18px; overflow-y: auto; border-right: 0; border-bottom: 1px solid var(--line); }
+  .nominate-ui .works-modal-left img { max-width: 110px; }
+  .nominate-ui .works-modal-right { flex: 1; min-height: 0; padding: 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nominate-ui .sidebar :is(.gold-btn, .btn-gold, .btn-outline),
+  .nominate-ui :is(#search-input, #song-search) { transition: none; }
+}
+
+/* Detail dialogs: close controls stay outside the scrolling content. */
+.nominate-ui .unified-close-split {
+  position: relative;
+  padding-top: 64px !important;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.nominate-ui .unified-close-panel:not(dialog),
+.nominate-ui dialog.unified-close-panel[open] {
+  display: flex !important;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 16px !important;
+  max-height: calc(100dvh - 32px) !important;
+  overflow: hidden !important;
+  gap: 12px;
+}
+.nominate-ui .unified-modal-scroll {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+  padding: 0 14px 14px;
+}
+.nominate-ui button.unified-modal-close {
+  position: static !important;
+  display: grid !important;
+  place-items: center;
+  align-self: flex-end;
+  flex: 0 0 40px !important;
+  box-sizing: border-box;
+  width: 40px !important;
+  height: 40px !important;
+  min-width: 40px;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 1px solid var(--line) !important;
+  border-radius: 8px !important;
+  background: var(--surface-raised) !important;
+  color: var(--text-muted) !important;
+  font: 28px/1 sans-serif !important;
+  cursor: pointer;
+  z-index: 30;
+  transform: none !important;
+}
+.nominate-ui .unified-close-split > button.unified-modal-close {
+  position: absolute !important;
+  top: 16px;
+  right: 16px;
+}
+.nominate-ui button.unified-modal-close:hover {
+  background: var(--surface-hover) !important;
+  color: var(--text) !important;
+  border-color: var(--gold) !important;
+}
+.nominate-ui button.unified-modal-close:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+.nominate-ui .candidate-pool-table-wrap { min-height: 0; }
+.nominate-ui .candidate-pool-footer { grid-template-columns: 1fr; }
+@media (max-width: 700px) {
+  .nominate-ui .unified-modal-scroll { padding: 0 2px 4px; }
+}

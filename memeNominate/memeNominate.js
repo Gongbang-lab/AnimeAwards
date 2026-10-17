@@ -301,8 +301,9 @@ function openMemeZoom(id, e) {
     ` : '';
 
     popup.innerHTML = `
-        <div class="modal-content meme-zoom-modal-content">
-            <button class="zoom-close-btn" onclick="closePopup()">✕</button>
+        <div class="modal-content meme-zoom-modal-content unified-close-panel">
+            <button class="unified-modal-close" type="button" aria-label="모달 닫기" onclick="closePopup()">×</button>
+            <div class="unified-modal-scroll">
             <h2 class="modal-header">${escapeMemeText(meme.name)}</h2>
             <hr class="modal-divider">
             ${tabsHtml}
@@ -310,6 +311,7 @@ function openMemeZoom(id, e) {
                 ${meme.isPersonal ? '' : (srcs[initialIndex] ? renderZoomMedia(srcs[initialIndex]) : '등록된 미디어가 없습니다.')}
             </div>
             <p style="color:#aaa; text-align:center; margin-top:20px;">출처: ${escapeMemeText(meme.origin)}</p>
+            </div>
         </div>
     `;
     popup.classList.remove('hidden');
