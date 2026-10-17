@@ -2017,7 +2017,11 @@ var AnimeCatalog_2026 = [
   {
   "id": 61469,
   "year": 2026,
-  "quarter": ["1분기","3분기"],
+  "quarter": [
+    "1분기",
+    "3분기",
+    "4분기"
+  ],
   "title": "스틸 볼 런: 죠죠의 기묘한 모험",
   "thumbnail": "image/animeimg/2026/Q1/스틸 볼 런.webp",
   "day": "Web",
@@ -4844,7 +4848,10 @@ var AnimeCatalog_2026 = [
   "id": 63489,
   "title": "하늘은 붉은 강가",
   "year": 2026,
-  "quarter": "3분기",
+  "quarter": [
+    "3분기",
+    "4분기"
+  ],
   "thumbnail": "image/animeimg/2026/Q3/하늘은 붉은 강가.webp",
   "day": "Wednesdays",
   "episodes": 0,

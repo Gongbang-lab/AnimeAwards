@@ -60,7 +60,7 @@
       #collector-year-bar {
         position: fixed; inset: 0 auto 0 0; z-index: 50;
         box-sizing: border-box; width: 220px; height: 100dvh;
-        overflow-y: auto; padding: 28px 18px; margin: 0;
+        overflow-y: auto; padding: 72px 18px 28px; margin: 0;
         border: 0; border-right: 1px solid #4a2a32; border-radius: 0;
         background: #1f0f13; color: #e6dcd3;
         font: 14px/1.6 'Malgun Gothic', sans-serif; text-align: left;
@@ -81,9 +81,21 @@
       #collector-year-bar :focus-visible { outline: 2px solid #ebdcaa; outline-offset: 3px; }
       #collector-year-bar p { margin: 18px 0 0; color: #bba0a6; font-size: 12px; }
       #collector-year-bar [role="status"], #collector-year-bar [role="alert"] { padding-top: 16px; border-top: 1px solid #4a2a32; }
+      body.collector-with-year-sidebar.collector-sidebar-collapsed { margin-left: 60px !important; }
+      #collector-year-bar[hidden] { display: none !important; }
+      #collector-sidebar-toggle {
+        position: fixed; top: 12px; left: 12px; z-index: 51;
+        display: grid; place-items: center; box-sizing: border-box;
+        width: 40px; height: 40px; min-width: 0; margin: 0; padding: 0;
+        border: 1px solid #c9a55a; border-radius: 8px;
+        background: #1f0f13; color: #ebdcaa;
+        font: 24px/1 sans-serif; cursor: pointer;
+      }
+      #collector-sidebar-toggle:hover { background: #33261a; }
+      #collector-sidebar-toggle:focus-visible { outline: 2px solid #ebdcaa; outline-offset: 3px; }
       @media (max-width: 700px) {
         body.collector-with-year-sidebar { margin-left: 144px; }
-        #collector-year-bar { width: 132px; padding: 20px 10px; }
+        #collector-year-bar { width: 132px; padding: 72px 10px 20px; }
         #collector-year-bar input, #collector-year-bar button { padding: 9px 6px; }
       }
     `;
@@ -91,6 +103,20 @@
     document.body.classList.add('collector-with-year-sidebar');
     const bar = document.createElement('aside'); bar.id = 'collector-year-bar';
     bar.setAttribute('aria-label', '수집기 작업 연도 설정');
+    const toggle = document.createElement('button');
+    toggle.id = 'collector-sidebar-toggle'; toggle.type = 'button';
+    toggle.setAttribute('aria-controls', bar.id);
+    function setSidebarOpen(open) {
+      if (!open && bar.contains(document.activeElement)) toggle.focus();
+      bar.hidden = !open;
+      document.body.classList.toggle('collector-sidebar-collapsed', !open);
+      toggle.textContent = open ? '«' : '»';
+      toggle.title = open ? '사이드바 닫기' : '사이드바 열기';
+      toggle.setAttribute('aria-label', toggle.title);
+      toggle.setAttribute('aria-expanded', String(open));
+    }
+    toggle.addEventListener('click', () => setSidebarOpen(bar.hidden));
+    setSidebarOpen(true);
     const label = document.createElement('label'); label.textContent = '작업 연도 '; label.htmlFor = 'collector-year-input';
     const input = document.createElement('input'); input.id = 'collector-year-input'; input.type = 'number'; input.min = 2000; input.max = 2200; input.value = year;
     input.setAttribute('list', 'collector-years');
@@ -102,7 +128,7 @@
     button.onclick = () => CollectorYear.change(input.value);
     const note = document.createElement('p'); note.textContent = `작업 대상: data/${year}/ · 시상식 공개 연도에는 영향을 주지 않습니다.`;
     const status = document.createElement('p'); status.setAttribute('role', 'status'); status.textContent = '데이터 준비 중…';
-    bar.append(label, input, options, button, note, status); document.body.prepend(bar);
+    bar.append(label, input, options, button, note, status); document.body.prepend(toggle, bar);
     // Update static descriptions, not source code or entered records.
     document.title = document.title.replace(/2026/g, year);
     const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);

@@ -35,16 +35,38 @@
     .toolbar { justify-content: space-between; align-items: center; margin-top: 30px; }
     #resultArea { width: 100%; min-height: 320px; margin-top: 12px; box-sizing: border-box; padding: 16px; border: 0; border-radius: 10px; background: #0f172a; color: #cbd5e1; font: 13px/1.5 Consolas, monospace; white-space: pre; }
     @media (max-width: 640px) { body { padding: 12px; } .container { padding: 18px; } .search-row, .meta-row { align-items: stretch; flex-direction: column; } .edit-grid { grid-template-columns: 1fr; } .edit-grid .full { grid-column: auto; } .toolbar { align-items: stretch; flex-direction: column; } }
+
+    body.song-data-collector.collector-with-year-sidebar { margin-left: 340px; }
+    body.song-data-collector #collector-year-bar { width: 320px; }
+    .song-data-collector .collector-layout { display: block; }
+    .song-data-collector .container.collector-shell { max-width: 1100px; }
+    #collector-year-bar #song-library { margin-top: 24px; }
+    #collector-year-bar #song-library h2 { color: #ebdcaa; font-size: 17px; }
+    #collector-year-bar #song-library label { font-size: 13px; }
+    #collector-year-bar #song-library .saved-catalog-groups { max-height: none; overflow: visible; padding: 0; }
+    #collector-year-bar #song-library .catalog-item {
+      margin: 0; padding: 12px; text-align: left; white-space: normal;
+      background: #170a0e; border: 1px solid #4a2a32; color: #e6dcd3; font-weight: 400;
+    }
+    #collector-year-bar #song-library .catalog-item:hover,
+    #collector-year-bar #song-library .catalog-item[aria-pressed="true"] { background: #33261a; border-color: #c9a55a; }
+    #collector-year-bar #song-library .catalog-title { color: #ebdcaa; }
+    @media (max-width: 700px) {
+      body.song-data-collector.collector-with-year-sidebar { margin-left: 192px; }
+      body.song-data-collector #collector-year-bar { width: 180px; }
+      #collector-year-bar #song-library .catalog-item { padding: 8px; }
+      #collector-year-bar #song-library .catalog-quarter summary { padding: 10px; }
+    }
   </style>
 </head>
-<body>
+<body class="song-data-collector">
 <main class="container collector-shell">
   <h1>🎵 애니메이션 곡 데이터 편집기</h1>
   <p class="description">AniList API를 호출하지 않습니다. 2026 작품 목록에서 제목·분기 정보를 찾고, 곡 데이터는 기존 JS 파일에서 불러와 편집합니다. 변경한 전체 데이터 배열을 JS로 복사할 수 있습니다.</p>
 
   <div class="collector-layout">
-  <section class="saved-catalog collector-library">
-    <h2>저장된 작품 · OP / ED 목록</h2>
+  <section id="song-library" class="saved-catalog">
+    <h2>전체 작품 · OP / ED 목록</h2>
     <p class="muted">카드를 누르면 해당 곡 데이터를 수정하거나 추가할 수 있습니다. 변경 내용은 아래 JS 복사 버튼으로 복사하여 원본 파일에 반영해주세요.</p>
     <div id="song-catalog"></div>
   </section>
@@ -58,7 +80,7 @@
     <button id="searchButton" class="primary" type="button">데이터 불러오기</button>
   </div>
   <div id="status" role="status"></div>
-  <h2 id="animeTitle">작품을 검색해 주세요</h2>
+  <h2 id="animeTitle">왼쪽에서 작품을 선택해 주세요</h2>
 
   <div class="meta-row">
     <div class="field">
@@ -104,7 +126,18 @@
   let currentRecord = null;
   let currentTitle = "";
   let songCatalog = null;
-  const animeTitles = new Map(animeCatalog.map(item => [String(item.id), item.title]));
+  // 작품 목록은 기본 데이터의 ID를 기준으로 구성하고 연속 분기를 합칩니다.
+  const animeById = new Map();
+  for (const anime of animeCatalog) {
+    const key = String(anime.id);
+    const previous = animeById.get(key);
+    animeById.set(key, {
+      ...anime, title: previous?.title || anime.title,
+      quarter: getCatalogQuarters([...(previous?.quarter || []), ...getCatalogQuarters(anime.quarter)])
+    });
+  }
+  const library = document.getElementById("song-library");
+  document.getElementById("collector-year-bar").append(library);
 
   const quarterSelect = document.getElementById("quarter");
   const yearInput = document.getElementById("year");
@@ -202,8 +235,7 @@
 
     let index = Number.isInteger(recordIndex) && Number(workingData[recordIndex]?.id) === id
       ? recordIndex : workingData.findIndex(item => Number(item.id) === id);
-    const animeMatches = animeCatalog.filter(item => Number(item.id) === id);
-    const animeInfo = animeMatches.find(item => item.quarter === quarterSelect.value) || animeMatches[0];
+    const animeInfo = animeById.get(String(id));
 
     if (index >= 0) {
       currentRecord = workingData[index];
@@ -299,22 +331,35 @@
 
   songCatalog = createSavedCatalog({
     host: document.getElementById("song-catalog"),
-    records: () => workingData.map((record, index) => {
-      const lines = [];
-      for (const type of ["op", "ed"]) {
-        const songs = (Array.isArray(record.songs) ? record.songs : [])
-          .filter(song => String(song?.type || "").toLowerCase() === type);
-        if (!songs.length) lines.push(`${type.toUpperCase()} · 미등록`);
-        songs.forEach((song, i) => lines.push(`${type.toUpperCase()} ${i + 1} · ${String(song.title || "").trim() || "제목 미입력"}`));
+    searchLabel: "전체 작품 검색",
+    records: () => {
+      const titles = new Map(animeById);
+      // 기본 목록에 없는 기존 곡 데이터도 편집할 수 있도록 유지합니다.
+      for (const record of workingData) {
+        const id = String(record.id);
+        if (!titles.has(id)) titles.set(id, { id: record.id, title: `작품 ID ${id}`, quarter: record.quarter });
       }
-      return { key: index, title: animeTitles.get(String(record.id)) || `작품 ID ${record.id}`,
-        quarters: getCatalogQuarters(record.quarter).length ? record.quarter
-          : animeCatalog.filter(item => String(item.id) === String(record.id)).flatMap(item => getCatalogQuarters(item.quarter)),
-        meta: `ID ${record.id} · ${record.year || CollectorYear.year} · ${Array.isArray(record.quarter) ? record.quarter.join(", ") : record.quarter || "분기 미지정"}`,
-        lines, selected: currentRecord === record };
-    }).sort((a, b) => a.title.localeCompare(b.title, "ko", { numeric: true })),
-    onSelect: index => {
-      document.getElementById("animeId").value = workingData[index].id;
+      return [...titles.values()].flatMap(anime => {
+        const matches = workingData.map((record, index) => ({ record, index }))
+          .filter(({ record }) => String(record.id) === String(anime.id));
+        return (matches.length ? matches : [{ record: null, index: null }]).map(({ record, index }) => {
+          const lines = ["op", "ed"].flatMap(type => {
+            const songs = (Array.isArray(record?.songs) ? record.songs : [])
+              .filter(song => String(song?.type || "").toLowerCase() === type);
+            return songs.length ? songs.map((song, i) => `${type.toUpperCase()} ${i + 1} · ${String(song.title || "").trim() || "제목 미입력"}`)
+              : [`${type.toUpperCase()} · 미등록`];
+          });
+          return {
+            key: { id: anime.id, index }, title: anime.title || `작품 ID ${anime.id}`,
+            quarters: getCatalogQuarters(anime.quarter).length ? anime.quarter : record?.quarter,
+            meta: `ID ${anime.id} · ${record ? "수정·추가" : "신규 등록"}`,
+            lines, selected: !!record && currentRecord === record
+          };
+        });
+      }).sort((a, b) => a.title.localeCompare(b.title, "ko", { numeric: true }));
+    },
+    onSelect: ({ id, index }) => {
+      document.getElementById("animeId").value = id;
       loadById(index);
       document.getElementById("animeTitle").scrollIntoView({ block: "start" });
     }

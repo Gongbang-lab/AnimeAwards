@@ -7,9 +7,9 @@ window.getCatalogQuarters = function (value) {
     return [...new Set(quarters)].sort();
 };
 
-window.createSavedCatalog = function ({ host, records, onSelect }) {
+window.createSavedCatalog = function ({ host, records, onSelect, searchLabel = '저장된 작품 검색' }) {
     const label = document.createElement('label');
-    label.textContent = '저장된 작품 검색';
+    label.textContent = searchLabel;
     const search = document.createElement('input');
     search.type = 'search';
     search.className = 'saved-catalog-search';
