@@ -92,14 +92,15 @@
   </div>
 </main>
 
-<script src="../data/2026/2026animeData.js"></script>
-<script src="../data/2026/2026animeSongsData.js"></script>
-<script src="./savedCatalog.js"></script>
-<script>
+<script type="text/plain" data-collector-data="animeData"></script>
+<script type="text/plain" data-collector-data="animeSongsData"></script>
+<script type="text/plain" data-collector-src="./savedCatalog.js"></script>
+<script type="text/plain" data-collector-code>
+
   const workingData = JSON.parse(JSON.stringify(
-    Array.isArray(window.AnimeSongs_2026) ? window.AnimeSongs_2026 : []
+    Array.isArray(CollectorYear.data.AnimeSongs) ? CollectorYear.data.AnimeSongs : []
   ));
-  const animeCatalog = Array.isArray(window.AnimeCatalog_2026) ? window.AnimeCatalog_2026 : [];
+  const animeCatalog = Array.isArray(CollectorYear.data.AnimeCatalog) ? CollectorYear.data.AnimeCatalog : [];
   let currentRecord = null;
   let currentTitle = "";
   let songCatalog = null;
@@ -182,7 +183,7 @@
 
   function updateOutput() {
     songCatalog?.render();
-    resultArea.value = `var AnimeSongs_2026 = ${JSON.stringify(workingData, null, 2)};\n`;
+    resultArea.value = `var AnimeSongs_${CollectorYear.year} = ${JSON.stringify(workingData, null, 2)};\n`;
   }
 
   function setStatus(message, isError = false) {
@@ -207,14 +208,14 @@
     if (index >= 0) {
       currentRecord = workingData[index];
       currentTitle = animeInfo?.title || "";
-      yearInput.value = currentRecord.year || animeInfo?.year || 2026;
+      yearInput.value = CollectorYear.year;
       selectRecordQuarter(currentRecord.quarter || animeInfo?.quarter || "1분기");
       ensureEmptyCategories(currentRecord);
       setStatus(`기존 곡 데이터를 불러왔습니다. (목록 ${workingData.length}개)`);
     } else {
       currentRecord = {
         id,
-        year: animeInfo?.year || Number(yearInput.value) || 2026,
+        year: CollectorYear.year,
         quarter: animeInfo?.quarter || quarterSelect.value,
         songs: [emptySong("op"), emptySong("ed")]
       };
@@ -276,7 +277,7 @@
 
   function updateMetadata() {
     if (!currentRecord) return;
-    currentRecord.year = Number(yearInput.value) || 2026;
+    currentRecord.year = Number(yearInput.value) || CollectorYear.year;
     const originalQuarter = Array.isArray(currentRecord.quarter) ? currentRecord.quarter.join(",") : String(currentRecord.quarter);
     if (originalQuarter !== quarterSelect.value) currentRecord.quarter = quarterSelect.value;
     updateOutput();
@@ -288,7 +289,7 @@
     updateOutput();
     try {
       await navigator.clipboard.writeText(resultArea.value);
-      setStatus(`완성된 AnimeSongs_2026 배열을 복사했습니다. (${workingData.length}개 작품)`);
+      setStatus(`완성된 AnimeSongs_${CollectorYear.year} 배열을 복사했습니다. (${workingData.length}개 작품)`);
     } catch (error) {
       resultArea.focus();
       resultArea.select();
@@ -309,7 +310,7 @@
       return { key: index, title: animeTitles.get(String(record.id)) || `작품 ID ${record.id}`,
         quarters: getCatalogQuarters(record.quarter).length ? record.quarter
           : animeCatalog.filter(item => String(item.id) === String(record.id)).flatMap(item => getCatalogQuarters(item.quarter)),
-        meta: `ID ${record.id} · ${record.year || 2026} · ${Array.isArray(record.quarter) ? record.quarter.join(", ") : record.quarter || "분기 미지정"}`,
+        meta: `ID ${record.id} · ${record.year || CollectorYear.year} · ${Array.isArray(record.quarter) ? record.quarter.join(", ") : record.quarter || "분기 미지정"}`,
         lines, selected: currentRecord === record };
     }).sort((a, b) => a.title.localeCompare(b.title, "ko", { numeric: true })),
     onSelect: index => {
@@ -319,6 +320,8 @@
     }
   });
   renderEditor();
+
 </script>
+<script src="collectorYear.js"></script>
 </body>
 </html>

@@ -259,7 +259,7 @@ function backToStep1() {
 
     const navBtn = document.getElementById('nav-btn');
     navBtn.textContent = "메인으로"; 
-    navBtn.onclick = () => { location.href = '../index.html'; };
+    navBtn.onclick = () => { location.href = AwardPage.homeUrl(); };
 
     const previewBox = document.querySelector('.status-indicator');
     if (previewBox) previewBox.classList.remove('hidden');
@@ -365,7 +365,7 @@ function saveData(winner) {
     }
 }
 
-function goToMain() { location.href = '../index.html'; }
+function goToMain() { location.href = AwardPage.homeUrl(); }
 
 // 앱 초기화
 init();

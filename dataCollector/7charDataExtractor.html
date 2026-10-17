@@ -67,7 +67,8 @@
   </div>
 </div>
 
-<script>
+<script type="text/plain" data-collector-code>
+
   const API_URL = 'https://graphql.anilist.co';
   let animeData = null;
   let characterItems = [];
@@ -157,7 +158,7 @@
       document.getElementById('currentTitle').innerText = animeData.title.romaji;
       
       // 연도 필드 자동 채우기
-      document.getElementById('yearInput').value = animeData.year;
+      document.getElementById('yearInput').value = CollectorYear.year;
 
       // BACKGROUND 캐릭터와 일본어 성우가 없는 캐릭터는 추출하지 않는다.
       // 이후 CVData와의 연결을 위해 유효한 voice actor(id + name)가 있는 경우만 포함한다.
@@ -274,6 +275,8 @@
     document.execCommand('copy');
     alert("JSON 복사됨!");
   }
+
 </script>
+<script src="collectorYear.js"></script>
 </body>
 </html>

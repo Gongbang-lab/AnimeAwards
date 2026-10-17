@@ -127,32 +127,18 @@
     const r = $('detail').getBoundingClientRect();
     if (e.target === $('detail') && (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom)) $('detail').close();
   });
-  function load(file) {
-    return new Promise((resolve, reject) => {
-      const script = document.createElement('script'); script.src = `../data/2026/${file}?v=${Date.now()}`;
-      script.onload = resolve; script.onerror = () => reject(new Error(`${file} 파일을 불러오지 못했습니다.`)); document.head.append(script);
-    });
-  }
   async function start() {
     try {
-      await Promise.all(['2026animeData.js', '2026animeSongsData.js', '2026animeOSTData.js', '2026animeEPData.js'].map(load));
-      const sources = [
-        ['2026animeData.js', 'AnimeCatalog_2026', Array.isArray],
-        ['2026animeSongsData.js', 'AnimeSongs_2026', Array.isArray],
-        ['2026animeOSTData.js', 'animeOSTData_2026', Array.isArray],
-        ['2026animeEPData.js', 'animeEPData_2026', value => value && typeof value === 'object' && !Array.isArray(value)]
-      ];
-      const invalid = sources.filter(([, name, valid]) => !valid(window[name]));
-      if (invalid.length) throw new Error(invalid.map(([file, name]) => `${file}: ${name} 변수 선언 및 데이터 형식을 확인해주세요.`).join('\n'));
+      await Promise.all(['animeData', 'animeSongsData', 'animeOSTData', 'animeEPData'].map(suffix => CollectorYear.loadData(suffix)));
       // 같은 작품 ID는 분기를 합치고 원본 파일은 변경하지 않는다.
       const merged = new Map();
-      for (const a of list(window.AnimeCatalog_2026)) {
+      for (const a of list(CollectorYear.data.AnimeCatalog)) {
         const key = String(a.id), old = merged.get(key);
         if (old) { old.quarter = [...new Set([...quarters(old.quarter), ...quarters(a.quarter)])]; old.pv.push(...list(a.pv)); }
         else merged.set(key, { ...a, pv: [...list(a.pv)] });
       }
       anime = [...merged.values()].sort((a,b) => text(a.title).localeCompare(text(b.title), 'ko'));
-      songMap = index(window.AnimeSongs_2026); ostMap = index(window.animeOSTData_2026); episodes = window.animeEPData_2026;
+      songMap = index(CollectorYear.data.AnimeSongs); ostMap = index(CollectorYear.data.animeOSTData); episodes = CollectorYear.data.animeEPData;
       render();
     } catch (error) { $('summary').textContent = '데이터를 표시할 수 없습니다.'; $('error').hidden = false; $('error').textContent = error.message; }
   }

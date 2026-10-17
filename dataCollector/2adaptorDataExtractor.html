@@ -17,12 +17,13 @@
     <button onclick="copyToClipboard()">JS 형식으로 복사하기</button>
     <pre id="result"></pre>
 
-    <script src="../data/2026/2026animeData.js"></script>
+    <script type="text/plain" data-collector-data="animeData"></script>
     
-    <script>
+    <script type="text/plain" data-collector-code>
+
         function extractAdaptorData() {
             const nominatedList = [];
-            const combinedList = typeof AnimeCatalog_2026 !== 'undefined' ? AnimeCatalog_2026 : [];
+            const combinedList = typeof CollectorYear.data.AnimeCatalog !== 'undefined' ? CollectorYear.data.AnimeCatalog : [];
 
             // 3. 통합된 리스트를 순회하며 추출
             combinedList.forEach(anime => {
@@ -30,7 +31,7 @@
                 if (anime.staff && anime.staff.adaptor && anime.staff.adaptor.length > 0) {
                     nominatedList.push({
                         id: anime.id,
-                        year: anime.year ?? 2026,
+                        year: anime.year ?? CollectorYear.year,
                         title: anime.title,
                         quarter: anime.quarter,    // 분기 정보
                         day: anime.day || "",      // 요일 정보 또는 "Cinema"
@@ -42,7 +43,7 @@
             });
 
             // 변수 선언문을 포함한 텍스트 생성
-            const finalString = `var AnimeAdaptorData_2026 = ${JSON.stringify(nominatedList, null, 2)};`;
+            const finalString = `var AnimeAdaptorData_${CollectorYear.year} = ${JSON.stringify(nominatedList, null, 2)};`;
             
             // 화면에 출력
             document.getElementById('result').textContent = finalString;
@@ -55,12 +56,14 @@
         function copyToClipboard() {
             if (!window.extractedData) return;
             navigator.clipboard.writeText(window.extractedData).then(() => {
-                alert('JS 변수 형식이 클립보드에 복사되었습니다!\ndata/2026/2026animeAdaptorData.js 파일에 붙여넣으세요.');
+                alert('JS 변수 형식이 클립보드에 복사되었습니다!\ndata/' + CollectorYear.year + '/' + CollectorYear.year + 'animeAdaptorData.js 파일에 붙여넣으세요.');
             });
         }
 
         // 페이지 로드 시 즉시 실행
-        window.onload = extractAdaptorData;
-    </script>
+        extractAdaptorData();
+    
+</script>
+<script src="collectorYear.js"></script>
 </body>
 </html>

@@ -44,18 +44,15 @@ body{background:#0b0e14;color:#ecf0f1;font-family:'Pretendard',sans-serif;paddin
 <div id="log">준비 완료. 연도와 조회 범위를 선택한 후 [빠른 전체 추출 시작]을 눌러주세요.</div>
 <textarea id="output" readonly placeholder="결과 JSON이 여기에 생성됩니다."></textarea>
 </div>
-<!--
-  주의: 아래 3개 데이터 스크립트는 2026년으로 고정되어 있습니다.
-  다른 연도로 추출하려면 파일 경로와 전역 변수명(AnimeList_YYYY 등)이 실제 연도에 맞는 파일을 가리키도록 교체해야 합니다.
-  buildKoreanIndexes()는 THIS_YEAR를 기준으로 동적으로 전역 변수명을 찾으므로, 스크립트 태그만 교체하면 로직 수정 없이 동작합니다.
--->
-<script src="../data/2026/2026animeData.js"></script>
-<script src="../data/2026/2026animeCharacterData.js"></script>
-<script src="../data/2026/2026animeCVData.js"></script>
-<script>
-let rookieStore={},imageFiles=[],candidateMap=new Map(),mediaParent=new Map(),currentMediaStats=new Map(),mediaExposureByFranchise=new Map(),THIS_YEAR=2026,END_QUARTER=4;
+<!-- 데이터 파일은 상단에서 선택한 작업 연도로 불러옵니다. -->
+<script type="text/plain" data-collector-data="animeData"></script>
+<script type="text/plain" data-collector-data="animeCharacterData"></script>
+<script type="text/plain" data-collector-data="animeCVData"></script>
+<script type="text/plain" data-collector-code>
+
+let rookieStore={},imageFiles=[],candidateMap=new Map(),mediaParent=new Map(),currentMediaStats=new Map(),mediaExposureByFranchise=new Map(),THIS_YEAR=CollectorYear.year,END_QUARTER=4;
 const TOP_LIMIT=70,MIN_TOTAL_SCORE=70;
-const ANILIST_URL='https://graphql.anilist.co',REQUEST_GAP=2150,STAFF_BATCH=10,DETAIL_BATCH=3,CACHE_SUMMARY='anilist_v33_rolefiltered_summary_cache',CACHE_FULL='anilist_v31_rolefiltered_full_cache_v7';const IMAGE_TARGET_WIDTH=1200,IMAGE_MIN_WIDTH=600,IMAGE_MAX_SCALE=3,IMAGE_JPEG_QUALITY=0.95;
+const ANILIST_URL='https://graphql.anilist.co',REQUEST_GAP=2150,STAFF_BATCH=10,DETAIL_BATCH=3,CACHE_SUMMARY=CollectorYear.key('anilist_v33_rolefiltered_summary_cache'),CACHE_FULL=CollectorYear.key('anilist_v31_rolefiltered_full_cache_v7');const IMAGE_TARGET_WIDTH=1200,IMAGE_MIN_WIDTH=600,IMAGE_MAX_SCALE=3,IMAGE_JPEG_QUALITY=0.95;
 let lastRequestAt=0;
 let manualTranslations={},autoTranslations={},autoTranslationConflicts=new Set(),translationApplied=false,koreanIndexes=null;
 function sleep(ms){return new Promise(r=>setTimeout(r,ms))}
@@ -77,7 +74,7 @@ function isWorkWithinSelectedPeriod(workYear, workMonth){
 function escapeHtml(str){return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#039;')}
 function addLog(html){const log=document.getElementById('log');log.innerHTML+=html;log.scrollTop=log.scrollHeight}
 function setStats(a,b,c,d){document.getElementById('stats').innerHTML=`<div class="stat">시즌 성우 <b>${a}</b></div><div class="stat">1차 후보 <b>${b}</b></div><div class="stat">조건 통과 <b>${c}</b></div><div class="stat">Top 70 저장 <b>${d}</b></div>`}
-function initSelectors(){const s=document.getElementById('year-select'),y=new Date().getFullYear();for(let i=y;i>=2010;i--){const o=document.createElement('option');o.value=i;o.textContent=`${i}년`;if(i===THIS_YEAR)o.selected=true;s.appendChild(o)}}
+function initSelectors(){const s=document.getElementById('year-select');const o=document.createElement('option');o.value=THIS_YEAR;o.textContent=`${THIS_YEAR}년`;s.replaceChildren(o);s.disabled=true;}
 function getSelectedConditions(){THIS_YEAR=parseInt(document.getElementById('year-select').value,10);END_QUARTER=parseInt(document.getElementById('quarter-select').value,10)}
 function loadJsonCache(key){try{return JSON.parse(localStorage.getItem(key)||'{}')}catch(e){return{}}}
 function saveJsonCache(key,data){try{localStorage.setItem(key,JSON.stringify(data))}catch(e){addLog(`<span style="color:#f39c12">⚠️ 캐시 저장 실패(용량 초과 가능)</span><br>`)} }
@@ -368,6 +365,8 @@ async function downloadAllImages(){
   }catch(e){console.error(e);btn.innerText='이미지 ZIP 실패';}
 }
 initSelectors();
+
 </script>
+<script src="collectorYear.js"></script>
 </body>
 </html>

@@ -26,7 +26,7 @@ function getSeasonFilteredDirectorList() {
         .filter(d => d.works.length > 0);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+AwardPage.onReady(() => {
     const params = new URLSearchParams(window.location.search);
     dirState.awardName = params.get("awardName");
 
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById("btn-next").onclick = goStep2;
     document.getElementById("btn-back").onclick = handleBack;
-    document.getElementById("final-confirm-btn").onclick = () => location.href = "../index.html";
+    document.getElementById("final-confirm-btn").onclick = () => location.href = AwardPage.homeUrl();
 
     NominateCommon.waitForFirebaseAndListen(() => dirState.awardName);
 });
@@ -322,7 +322,7 @@ function handleBack() {
 
         renderDirectorGrid();
     } else {
-        location.href = "../index.html";
+        location.href = AwardPage.homeUrl();
     }
 }
 

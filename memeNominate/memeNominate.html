@@ -31,7 +31,7 @@
               <div class="status-indicator preview-box" id="preview-box" aria-label="선택한 밈 후보">
                 </div>
                 <div class="action-buttons">
-        <button id="btn-home" class="btn-outline" onclick="location.href='../index.html'">메인으로</button>
+        <button id="btn-home" class="btn-outline" onclick="location.href=AwardPage.homeUrl()">메인으로</button>
         <button id="btn-next" class="gold-btn" disabled onclick="goMemeStep2()">다음 단계</button>
         <button id="btn-back" class="btn-outline hidden" onclick="goMemeStep1()">이전 단계</button>
         <button id="btn-award" class="gold-btn hidden" disabled onclick="saveMemeWinner()">수상 결정</button>
@@ -65,15 +65,16 @@
     <div id="winner-popup" class="modal hidden"></div>
 
     <script src="../data/manifest.js"></script>
-    <script src="../resultStorage.js"></script>
-    <script src="../data/2026/2026animeMemeData.js"></script>
-    <script src="../data/resolveYear.js"></script>
-    <script src="../seasonFilter.js"></script>
-    <script src="../nominateCommon.js"></script>
-    <script src="../winnerStage.js"></script>
-    <script src="../personalMemeStorage.js"></script>
-    <script src="./personalMemes.js"></script>
-    <script src="./memeNominate.js"></script>
-    <script src="../nominationGuide.js"></script>
+    <script type="text/plain" data-app-src="../resultStorage.js"></script>
+    <script type="text/plain" data-year-src="../data/{year}/{year}animeMemeData.js"></script>
+    <script type="text/plain" data-app-src="../data/resolveYear.js"></script>
+    <script type="text/plain" data-app-src="../seasonFilter.js"></script>
+    <script type="text/plain" data-app-src="../nominateCommon.js"></script>
+    <script type="text/plain" data-app-src="../winnerStage.js"></script>
+    <script type="text/plain" data-app-src="../personalMemeStorage.js"></script>
+    <script type="text/plain" data-app-src="./personalMemes.js"></script>
+    <script type="text/plain" data-app-src="./memeNominate.js"></script>
+    <script type="text/plain" data-app-src="../nominationGuide.js"></script>
+<script src="../data/pageLoader.js"></script>
 </body>
 </html>

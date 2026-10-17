@@ -571,10 +571,10 @@ const btnAward = document.getElementById("step2-award-btn");
 if(btnAward) btnAward.onclick = openAwardPopup;
 
 const btnHome = document.getElementById("nav-home-btn");
-if(btnHome) btnHome.onclick = () => location.href = "../index.html";
+if(btnHome) btnHome.onclick = () => location.href = AwardPage.homeUrl();
 
 const btnGoMain = document.getElementById("go-main-btn");
-if(btnGoMain) btnGoMain.onclick = () => location.href = "../index.html";
+if(btnGoMain) btnGoMain.onclick = () => location.href = AwardPage.homeUrl();
 
 const pvModal = document.getElementById("pv-modal");
 const pvModalClose = document.getElementById("pv-modal-close");

@@ -31,11 +31,12 @@
     </div>
 
     <!-- 데이터 소스 로드 -->
-    <script src="../data/2026/2026animeData.js"></script>
+    <script type="text/plain" data-collector-data="animeData"></script>
 
-    <script>
+    <script type="text/plain" data-collector-code>
+
         function generateJSFileContent() {
-            const combinedList = typeof AnimeCatalog_2026 !== 'undefined' ? AnimeCatalog_2026 : [];
+            const combinedList = typeof CollectorYear.data.AnimeCatalog !== 'undefined' ? CollectorYear.data.AnimeCatalog : [];
             if (combinedList.length === 0) {
                 return "에러: 데이터를 로드할 수 없습니다. 경로를 확인해주세요.";
             }
@@ -68,14 +69,14 @@
             });
 
             const finalArray = Object.values(directorMap);
-            return `var animeDirectorData_2026 = ${JSON.stringify(finalArray, null, 2)};`;
+            return `var animeDirectorData_${CollectorYear.year} = ${JSON.stringify(finalArray, null, 2)};`;
         }
 
         // 결과 출력 실행
-        window.onload = function() {
+        (() => {
             const finalCode = generateJSFileContent();
             document.getElementById('output').textContent = finalCode;
-        };
+        })();
 
         function copyToClipboard() {
             const text = document.getElementById('output').textContent;
@@ -83,6 +84,8 @@
                 alert("코드 전체가 클립보드에 복사되었습니다! animeDirectorData.js 파일에 붙여넣으세요.");
             });
         }
-    </script>
+    
+</script>
+<script src="collectorYear.js"></script>
 </body>
 </html>

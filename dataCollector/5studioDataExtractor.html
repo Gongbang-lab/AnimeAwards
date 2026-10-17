@@ -66,9 +66,10 @@
     </div>
 
     <!-- 원본 데이터 파일 -->
-    <script src="../data/2026/2026animeData.js"></script>
+    <script type="text/plain" data-collector-data="animeData"></script>
 
-    <script>
+    <script type="text/plain" data-collector-code>
+
         let generatedCode = "";
 
         function studioImageName(name) {
@@ -86,9 +87,9 @@
             const dataCountSpan = document.getElementById('data-count');
             
             try {
-                const combinedList = typeof AnimeCatalog_2026 !== 'undefined' ? AnimeCatalog_2026 : [];
+                const combinedList = typeof CollectorYear.data.AnimeCatalog !== 'undefined' ? CollectorYear.data.AnimeCatalog : [];
                 if (combinedList.length === 0) {
-                    throw new Error("데이터를 찾을 수 없습니다. 2026animeData.js를 확인해주세요.");
+                    throw new Error("데이터를 찾을 수 없습니다. " + CollectorYear.year + "animeData.js를 확인해주세요.");
                 }
 
                 const studioMap = {};
@@ -133,7 +134,7 @@
                 );
 
                 // 최종 코드 생성
-                generatedCode = "var AnimeStudioData_2026 = " + JSON.stringify(sortedData, null, 2) + ";";
+                generatedCode = "var AnimeStudioData_" + CollectorYear.year + " = " + JSON.stringify(sortedData, null, 2) + ";";
 
                 // UI 반영
                 previewArea.textContent = generatedCode;
@@ -171,6 +172,8 @@
                 alert("클립보드 복사에 실패했습니다.");
             }
         };
-    </script>
+    
+</script>
+<script src="collectorYear.js"></script>
 </body>
 </html>

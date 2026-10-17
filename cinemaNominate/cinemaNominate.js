@@ -7,7 +7,7 @@ const movies = (typeof cinemaData !== 'undefined' && Array.isArray(cinemaData))
     ? SeasonFilter.filterUniqueAnimeList(cinemaData)
     : [];
 
-document.addEventListener("DOMContentLoaded", () => {
+AwardPage.onReady(() => {
     const params = new URLSearchParams(window.location.search);
     const urlAwardName = params.get("awardName");
     if (urlAwardName) cinemaState.awardName = urlAwardName;
@@ -148,7 +148,7 @@ function showWinnerCelebration(winner) {
                 <div class="detail-item"><span class="detail-label">Scriptwriter</span><span class="detail-value">${escapeHtml(displayWriter)}</span></div>
                 <div class="detail-item"><span class="detail-label">Adaptor</span><span class="detail-value">${escapeHtml(displayAdaptor)}</span></div>
             </div>
-            <button class="gold-btn full-width" onclick="location.href='../index.html'">결과 저장 및 메인으로</button>
+            <button class="gold-btn full-width" onclick="location.href=AwardPage.homeUrl()">결과 저장 및 메인으로</button>
         </div>
     `;
     popup.classList.remove('hidden');

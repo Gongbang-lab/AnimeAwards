@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>2026 애니메이션 데이터 현황</title>
   <link rel="stylesheet" href="animeDataOverview.css">
-  <script src="animeDataOverview.js" defer></script>
+  <script type="text/plain" data-collector-data="animeData"></script>
+<script type="text/plain" data-collector-data="animeSongsData"></script>
+<script type="text/plain" data-collector-data="animeOSTData"></script>
+<script type="text/plain" data-collector-data="animeEPData"></script>
+  <script type="text/plain" data-collector-src="animeDataOverview.js"></script>
 </head>
 <body>
   <main>
@@ -21,5 +25,6 @@
     <div class="dialog-header"><div><h2 id="detail-title"></h2><p id="detail-meta" class="muted"></p></div><button id="close" aria-label="상세 닫기">닫기</button></div>
     <div id="detail-body"></div>
   </dialog>
+<script src="collectorYear.js"></script>
 </body>
 </html>

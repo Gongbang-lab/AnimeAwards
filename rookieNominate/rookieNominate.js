@@ -13,15 +13,15 @@ let allRookieData = [];          // 전체 정렬된 리스트 (참고용)
 let rookiePoolCandidates = [];   // 21~70위 중 아직 메인 페이지에 추가되지 않은 후보군
 let poolSelectedNames = new Set(); // 후보군 모달에서 체크된 이름
 
-document.addEventListener("DOMContentLoaded", () => {
+AwardPage.onReady(() => {
     const params = new URLSearchParams(location.search);
     rookiestate.awardName = params.get("awardName") || "올해의 신인 성우상";
 
     renderRookieGrid();
     initSearch();
-    showCriteriaModal();
+    if (!window.YearDataEmpty) showCriteriaModal();
 
-    document.getElementById("btn-home").onclick = () => location.href = "../index.html";
+    document.getElementById("btn-home").onclick = () => location.href = AwardPage.homeUrl();
     document.getElementById("btn-award").onclick = () => handleAwardDecision();
 
     document.getElementById("btn-candidate-pool").onclick = () => openCandidatePoolModal();
@@ -49,12 +49,12 @@ function closeCriteriaModal() {
  */
 function renderRookieGrid() {
     const grid = document.getElementById("rookie-grid");
-    if (!grid || typeof RookieCVData_2026 === 'undefined') return;
+    if (!grid || typeof RookieCVData === 'undefined') return;
 
     grid.innerHTML = "";
 
     // 점수 내림차순 정렬. 동점이면 추출기에서 부여한 rank를 사용한다.
-    allRookieData = Object.values(RookieCVData_2026).sort((a, b) => {
+    allRookieData = Object.values(RookieCVData).sort((a, b) => {
         const scoreDiff = (b.score || 0) - (a.score || 0);
         if (scoreDiff !== 0) return scoreDiff;
         if (a.rank != null && b.rank != null) return a.rank - b.rank;
@@ -106,7 +106,7 @@ function createRookieCard(cv) {
     cardInfo.className = "card-info";
     cardInfo.innerHTML = `
         <div class="card-title">${cv.name}</div>
-        <div class="card-studio">데뷔: ${cv.debutYear || '2026'}</div>
+        <div class="card-studio">데뷔: ${cv.debutYear || '정보 없음'}</div>
     `;
 
     card.appendChild(rateBadge);
@@ -344,7 +344,7 @@ function openAwardModal(cv) {
                 </div>
                 <div class="work-list">${workRows}</div>
             <div class="modal-footer">
-                <button class="gold-btn" onclick="location.href='../index.html'">확인 및 메인으로</button>
+                <button class="gold-btn" onclick="location.href=AwardPage.homeUrl()">확인 및 메인으로</button>
             </div>
             </div>
         </div>
@@ -358,7 +358,7 @@ function saveWinnerToLocal(cv) {
     ResultStorage.saveOne(rookiestate.awardName, {
         name: cv.name,
         thumbnail: cv.cvimg,
-        debutYear: cv.debutYear || '2026'
+        debutYear: cv.debutYear || '정보 없음'
     });
     
     if (window.submitSingleAwardToDB) {

@@ -40,7 +40,7 @@ function getMergedSongData(themeType) {
     return result;
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+AwardPage.onReady(() => {
     const params = new URLSearchParams(location.search);
     const theme = params.get("theme");
     const awardName = params.get("awardName");
@@ -351,7 +351,7 @@ function openSongAwardPopup() {
     window.NominateCommon.fireConfetti();
 
     document.getElementById("go-main-btn").onclick = () => {
-        location.href = "../index.html";
+        location.href = AwardPage.homeUrl();
     };
 }
 

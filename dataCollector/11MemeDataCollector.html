@@ -367,8 +367,9 @@
 
 <div class="toast" id="toast"></div>
 
-<script src="../data/2026/2026animeMemeData.js"></script>
-<script>
+<script type="text/plain" data-collector-data="animeMemeData"></script>
+<script type="text/plain" data-collector-code>
+
 (function(){
 function isCollectorVideo(source) {
     try {
@@ -470,7 +471,7 @@ function isCollectorVideo(source) {
     const selectedQuarter = document.getElementById('fQuarter').value;
     const oldQuarter = editingIndex === null ? null : queue[editingIndex].quarter;
     const quarter = Array.isArray(oldQuarter) && oldQuarter.join(',') === selectedQuarter ? oldQuarter : selectedQuarter;
-    const year = parseInt(document.getElementById('fYear').value, 10) || 2026;
+    const year = parseInt(document.getElementById('fYear').value, 10) || CollectorYear.year;
     const prefix = document.getElementById('fPrefix').value;
 
     const slots = [...srcSlotsEl.children].map((el) => {
@@ -595,7 +596,7 @@ function isCollectorVideo(source) {
       });
       return record;
     });
-    outputCodeEl.textContent = 'var AnimeMemeData_2026 = ' + JSON.stringify(records, null, 2) + ';';
+    outputCodeEl.textContent = 'var AnimeMemeData_' + CollectorYear.year + ' = ' + JSON.stringify(records, null, 2) + ';';
   }
 
   document.getElementById('copyBtn').addEventListener('click', async () => {
@@ -614,7 +615,7 @@ function isCollectorVideo(source) {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = '2026animeMemeData.js';
+    a.download = '' + CollectorYear.year + 'animeMemeData.js';
     document.body.appendChild(a);
     a.click();
     a.remove();
@@ -636,7 +637,7 @@ function isCollectorVideo(source) {
     editingIndex = index;
     document.getElementById('fName').value = entry.name;
     document.getElementById('fOrigin').value = entry.origin;
-    document.getElementById('fYear').value = entry.year;
+    document.getElementById('fYear').value = CollectorYear.year;
     const select = document.getElementById('fQuarter');
     const quarter = Array.isArray(entry.quarter) ? entry.quarter.join(',') : entry.quarter;
     if (![...select.options].some(o => o.value === quarter)) select.add(new Option(quarter, quarter));
@@ -654,10 +655,10 @@ function isCollectorVideo(source) {
     document.getElementById('fName').focus();
   }
   document.getElementById('newEntryBtn').onclick = resetEditor;
-  if (typeof AnimeMemeData_2026 !== 'undefined' && Array.isArray(AnimeMemeData_2026)) {
-    queue = AnimeMemeData_2026.map(record => ({
+  if (typeof CollectorYear.data.AnimeMemeData !== 'undefined' && Array.isArray(CollectorYear.data.AnimeMemeData)) {
+    queue = CollectorYear.data.AnimeMemeData.map(record => ({
       original: {...record}, id: record.id, name: record.name || '', origin: record.origin || '',
-      year: record.year || 2026, quarter: record.quarter || '1분기',
+      year: record.year || CollectorYear.year, quarter: record.quarter || '1분기',
       srcs: Object.keys(record).filter(k => /^src[1-9]\d*$/.test(k) || k === 'src')
         .sort((a,b) => Number(a.slice(3) || 0) - Number(b.slice(3) || 0))
         .filter(k => record[k]).map((k,i) => ({key: 'src' + (i+1), titleKey: 'src' + (i+1) + '_title',
@@ -680,7 +681,9 @@ function isCollectorVideo(source) {
     toastTimer = setTimeout(() => toastEl.classList.remove('show'), 1800);
   }
 })();
+
 </script>
 
+<script src="collectorYear.js"></script>
 </body>
 </html>

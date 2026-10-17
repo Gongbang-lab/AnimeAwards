@@ -26,11 +26,16 @@ function getSelectedSeason() {
 }
 
 function setSelectedSeason(year, quarter) {
+    if (window.AwardPage) {
+        if (year) AwardPage.season.year = String(year);
+        AwardPage.season.quarter = quarter == null ? '' : SeasonFilter.normalizeSelection(quarter);
+    }
     if (year) localStorage.setItem("selected_year", year);
     if (quarter != null) localStorage.setItem("selected_quarter", SeasonFilter.normalizeSelection(quarter));
 }
 
 function clearSelectedSeason() {
+    if (window.AwardPage) { AwardPage.season.year = null; AwardPage.season.quarter = ''; }
     localStorage.removeItem("selected_year");
     localStorage.removeItem("selected_quarter");
 }
@@ -118,6 +123,11 @@ function renderQuarterCards() {
 function enterMainContent() {
     const { year, quarter } = getSelectedSeason();
     if (!year || !quarter) return;
+    if (String(year) !== AwardPage.loadedYear) {
+        location.href = AwardPage.homeUrl();
+        return;
+    }
+    history.replaceState(null, '', AwardPage.homeUrl());
 
     // 1. 본문 먼저 그려놓기 (오버레이 뒤에서 준비)
     updateMainTitle();
@@ -277,6 +287,19 @@ const categories = [
     { title: "올해의 시리즈", themes: ['cinema', 'studio', 'series', 'top3'], ratio: 'ratio-poster' }
 ];
 
+function getTop3Winner(results, rank) {
+    // 개별 상 수정은 전체 TOP3 결과보다 우선한다.
+    const direct = results[rank];
+    if (direct && !Array.isArray(direct) && typeof direct === 'object') return direct;
+    for (const key of ['TOP3_Awards', '올해의 시리즈', '올해의 애니메이션']) {
+        const winner = Array.isArray(results[key])
+            ? results[key].find(item => item && String(item.rank).trim() === rank) : null;
+        if (winner) return winner;
+    }
+    return Object.values(results).flatMap(value => Array.isArray(value) ? value : [])
+        .find(item => item && String(item.rank).trim() === rank);
+}
+
 function renderAwards() {
     if (!mainContainer || !top3Area) return;
 
@@ -287,12 +310,11 @@ function renderAwards() {
 
     // --- 1. 수상 완료된 TOP 3 데이터 추출 ---
     const top3Names = ['대상', '최우수상', '우수상'];
-    const wonTop3 = Awards.filter(a => {
-        const hasResult = Object.values(results).some(val => 
-            Array.isArray(val) && val.find(item => String(item.rank).trim() === String(a.name).trim())
-        );
-        return top3Names.includes(a.name) && hasResult;
-    });
+    // 상 목록을 편집했어도 이미 저장된 수상 결과는 포디움에 표시한다.
+    const wonTop3 = top3Names.filter(rank => getTop3Winner(results, rank)).map((rank, index) => ({
+        ...(Awards.find(award => award.name === rank) || { id: `top3-${index}`, theme: 'default' }),
+        name: rank
+    }));
 
     if (wonTop3.length > 0) {
         const podiumOrder = { '최우수상': 1, '대상': 2, '우수상': 3 };
@@ -315,7 +337,7 @@ function renderAwards() {
         const filteredAwards = Awards.filter(a => {
             if (!cat.themes.includes(a.theme)) return false;
             if (top3Names.includes(a.name)) return false;
-            if ((a.theme === 'series' || a.name === '올해의 시리즈') && wonTop3.length > 0) return false;
+            if ((a.theme === 'series' || a.theme === 'top3' || a.name === '올해의 시리즈') && wonTop3.length === 3) return false;
             return true;
         });
 
@@ -374,7 +396,8 @@ function createAwardCard(award, results, ratioClass) {
     const card = document.createElement("div");
     card.className = `award-card ${ratioClass}`;
 
-    let winner = results[award.name];
+    let winner = ['대상', '최우수상', '우수상'].includes(award.name)
+        ? getTop3Winner(results, award.name) : results[award.name];
 
     if (!winner) {
         for (const val of Object.values(results)) {
@@ -411,6 +434,12 @@ function createAwardCard(award, results, ratioClass) {
         }
         
         card.classList.add("has-winner");
+    }
+
+    // 이전에 저장한 성우 수상 결과도 현재 데이터의 이미지 경로를 사용한다.
+    if (winner && ['voice_male', 'voice_female'].includes(award.theme)) {
+        const currentVoice = (window.CharacterVoiceData || []).find(voice => voice.name === winner.name);
+        if (currentVoice?.cvimg) displayThumb = currentVoice.cvimg;
     }
 
     // 이전에 저장한 커스텀 상의 기본 트로피 경로도 새 디자인으로 표시한다.
@@ -473,7 +502,8 @@ function createAwardCard(award, results, ratioClass) {
 
         sessionStorage.setItem("mainScrollY", window.scrollY);
 
-        const query = `awardName=${encodeURIComponent(award.name)}&theme=${encodeURIComponent(award.theme)}`;
+        const season = getSelectedSeason();
+        const query = new URLSearchParams({ awardName: award.name, theme: award.theme, year: season.year, quarter: season.quarter });
         let path = "nominate/nominate.html";
         const theme = award.theme;
 
@@ -519,7 +549,7 @@ document.getElementById("reset-all-btn").onclick = () => {
     }
 };
 
-document.addEventListener("DOMContentLoaded", () => {
+AwardPage.onReady(() => {
     initAOS();
     initSeasonGate();
     

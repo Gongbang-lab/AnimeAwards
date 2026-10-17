@@ -24,7 +24,7 @@ const memeState = {
     selectedSrc: null,
     awardName: "올해의 밈"
 };
-document.addEventListener("DOMContentLoaded", () => {
+AwardPage.onReady(() => {
     const params = new URLSearchParams(window.location.search);
     memeState.theme = params.get("theme");
     memeState.awardName = params.get("awardName") || "올해의 밈";
@@ -381,7 +381,7 @@ function showWinnerCelebration(winner, src) {
             <h1 style="color: #fff; margin: 0 0 10px 0;">${escapeMemeText(winner.name)}</h1>
             <p style="color: #888; margin: 0;">${escapeMemeText(winner.origin)}</p>
             <div style="margin-top: 30px;">
-                <button class="gold-btn" onclick="location.href='../index.html'">결과 저장 및 메인으로</button>
+                <button class="gold-btn" onclick="location.href=AwardPage.homeUrl()">결과 저장 및 메인으로</button>
             </div>
         </div>
     `;

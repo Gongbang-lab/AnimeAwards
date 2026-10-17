@@ -23,9 +23,10 @@ window.SeasonFilter = (function () {
         return quarters.length === 4 ? "모든 분기" : quarters.join(",");
     }
     function getSelectedSeason() {
-        const quarter = normalizeSelection(localStorage.getItem("selected_quarter"));
+        const context = window.AwardPage?.season;
+        const quarter = normalizeSelection(context ? context.quarter : localStorage.getItem("selected_quarter"));
         return {
-            year: localStorage.getItem("selected_year"),
+            year: context ? context.year : localStorage.getItem("selected_year"),
             quarter,
             quarters: quarter === "모든 분기" ? ["1분기", "2분기", "3분기", "4분기"] : getQuarters(quarter),
             label: quarter.replace(/,/g, " · ")

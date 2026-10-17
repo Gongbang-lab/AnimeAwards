@@ -48,7 +48,7 @@
                         </div>
 
                         <div class="control-row">
-                            <button id="nav-btn" class="btn-outline" onclick="location.href='../index.html'">메인으로</button>
+                            <button id="nav-btn" class="btn-outline" onclick="location.href=AwardPage.homeUrl()">메인으로</button>
                             <button id="next-btn" class="gold-btn" onclick="proceedToStep2()" disabled>다음 단계</button>
                             <button id="final-btn" class="gold-btn hidden" onclick="confirmFinalWinner()">수상 결정</button>
                         </div>
@@ -138,14 +138,15 @@
 </div>
 
     <script src="../data/manifest.js"></script>
-    <script src="../resultStorage.js"></script>
-    <script src="../data/2026/2026animeEPData.js"></script>
-    <script src="../data/2026/2026animeData.js"></script>
-    <script src="../data/resolveYear.js"></script>
-    <script src="../seasonFilter.js"></script>
-    <script src="../nominateCommon.js"></script>
-    <script src="../winnerStage.js"></script>
-    <script src="./episodeNominate.js"></script>
-    <script type="module" src="../firebase_service.js"></script>
+    <script type="text/plain" data-app-src="../resultStorage.js"></script>
+    <script type="text/plain" data-year-src="../data/{year}/{year}animeEPData.js"></script>
+    <script type="text/plain" data-year-src="../data/{year}/{year}animeData.js"></script>
+    <script type="text/plain" data-app-src="../data/resolveYear.js"></script>
+    <script type="text/plain" data-app-src="../seasonFilter.js"></script>
+    <script type="text/plain" data-app-src="../nominateCommon.js"></script>
+    <script type="text/plain" data-app-src="../winnerStage.js"></script>
+    <script type="text/plain" data-app-src="./episodeNominate.js"></script>
+    <script type="text/plain" data-app-src="../firebase_service.js" data-module="true"></script>
+<script src="../data/pageLoader.js"></script>
 </body>
 </html>

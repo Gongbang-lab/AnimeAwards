@@ -101,13 +101,14 @@
   </section>
 </main>
 
-<script src="../data/2026/2026animeData.js"></script>
-<script>
+<script type="text/plain" data-collector-data="animeData"></script>
+<script type="text/plain" data-collector-code>
+
 (() => {
-  const STORAGE_KEY = "animeCatalogCollectorEdits_2026_v2";
-  const catalog = JSON.parse(JSON.stringify(Array.isArray(window.AnimeCatalog_2026) ? window.AnimeCatalog_2026 : []));
-  const legacyPV = Array.isArray(window.animePVData_2026) ? window.animePVData_2026 : [];
-  const oldPVLocal = (() => { try { return JSON.parse(localStorage.getItem("animePVDataCollector_2026") || "[]"); } catch { return []; } })();
+  const STORAGE_KEY = "animeCatalogCollectorEdits_" + CollectorYear.year + "_v2";
+  const catalog = JSON.parse(JSON.stringify(Array.isArray(CollectorYear.data.AnimeCatalog) ? CollectorYear.data.AnimeCatalog : []));
+  const legacyPV = Array.isArray(CollectorYear.data.animePVData) ? CollectorYear.data.animePVData : [];
+  const oldPVLocal = (() => { try { return JSON.parse(localStorage.getItem("animePVDataCollector_" + CollectorYear.year + "") || "[]"); } catch { return []; } })();
   const pvById = new Map();
 
   function normalizePv(items) {
@@ -177,7 +178,7 @@
   }
 
   function renderOutput() {
-    elements.codeOutput.value = `var AnimeCatalog_2026 = ${JSON.stringify(catalog, null, 2)};\n`;
+    elements.codeOutput.value = `var AnimeCatalog_${CollectorYear.year} = ${JSON.stringify(catalog, null, 2)};\n`;
   }
 
   function addPvRow(pv = {}) {
@@ -253,7 +254,7 @@
     elements.p_img.onerror = () => { elements.p_img.removeAttribute("src"); };
     elements.in_id.value = record.id || api?.idMal || api?.id || "";
     elements.in_title.value = record.title || "";
-    elements.in_year.value = record.year || api?.seasonYear || api?.startDate?.year || "";
+    elements.in_year.value = CollectorYear.year;
     elements.in_day.value = record.day || "Unknown";
     elements.in_episodes.value = record.episodes || 0;
     elements.in_studio.value = Array.isArray(record.studio) ? record.studio.join(", ") : "";
@@ -427,7 +428,7 @@
     renderOutput();
     try {
       await navigator.clipboard.writeText(elements.codeOutput.value);
-      status("AnimeCatalog_2026 전체 데이터가 복사되었습니다.");
+      status("AnimeCatalog_" + CollectorYear.year + " 전체 데이터가 복사되었습니다.");
     } catch {
       elements.codeOutput.select();
       document.execCommand("copy");
@@ -440,8 +441,10 @@
   document.querySelectorAll(".quarter-check").forEach(checkbox => checkbox.addEventListener("change", updateJSON));
 
   renderOutput();
-  status(`2026년 AnimeCatalog ${catalog.length}개 작품과 기존 PV 데이터를 준비했습니다.`);
+  status(`${CollectorYear.year}년 AnimeCatalog ${catalog.length}개 작품과 기존 PV 데이터를 준비했습니다.`);
 })();
+
 </script>
+<script src="collectorYear.js"></script>
 </body>
 </html>

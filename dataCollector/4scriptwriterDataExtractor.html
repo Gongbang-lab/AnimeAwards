@@ -45,13 +45,14 @@
 </div>
 
 <!-- 데이터 소스 로드 -->
-<script src="../data/2026/2026animeData.js"></script>
+<script type="text/plain" data-collector-data="animeData"></script>
 
-<script>
+<script type="text/plain" data-collector-code>
+
     let generatedContent = "";
 
     function extractData() {
-        const combinedList = typeof AnimeCatalog_2026 !== 'undefined' ? AnimeCatalog_2026 : [];
+        const combinedList = typeof CollectorYear.data.AnimeCatalog !== 'undefined' ? CollectorYear.data.AnimeCatalog : [];
         if (combinedList.length === 0) {
             alert("데이터 파일을 찾을 수 없습니다. 경로를 확인해주세요.");
             return;
@@ -64,7 +65,7 @@
             if (anime.staff && anime.staff.scriptwriter && anime.staff.scriptwriter.length > 0) {
                 nominatedList.push({
                     id: anime.id,
-                    year: anime.year ?? 2026,
+                    year: anime.year ?? CollectorYear.year,
                     quarter: anime.quarter,
                     title: anime.title,
                     thumbnail: `${anime.thumbnail}`,
@@ -74,7 +75,7 @@
             }
         });
 
-        generatedContent = "var scriptwriterData_2026 = " + JSON.stringify(nominatedList, null, 2) + ";";
+        generatedContent = "var scriptwriterData_" + CollectorYear.year + " = " + JSON.stringify(nominatedList, null, 2) + ";";
         document.getElementById('output').textContent = generatedContent;
         document.getElementById('status').textContent = `총 ${nominatedList.length}개의 작품(TVA/극장판 포함)이 추출되었습니다.`;
     }
@@ -98,13 +99,15 @@
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = '2026animescriptwriterData.js';
+        a.download = '' + CollectorYear.year + 'animescriptwriterData.js';
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
         URL.revokeObjectURL(url);
     }
+
 </script>
 
+<script src="collectorYear.js"></script>
 </body>
 </html>

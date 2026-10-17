@@ -9,7 +9,6 @@ let cachedVoteData = null;
 
 function getScriptwriterData() {
     if (typeof scriptwriterData !== "undefined") return scriptwriterData;
-    if (typeof scriptwriterData_2026 !== "undefined") return scriptwriterData_2026;
     return [];
 }
 
@@ -30,7 +29,7 @@ function getWriterNames(item) {
     return Array.isArray(item?.scriptwriter) ? item.scriptwriter : [];
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+AwardPage.onReady(() => {
     const params = new URLSearchParams(window.location.search);
     const urlAwardName = params.get("awardName");
     if (urlAwardName) scriptwriterState.awardName = urlAwardName;
@@ -265,5 +264,5 @@ function confirmFinalWinner() {
 }
 
 function goToMain() {
-    location.href = "../index.html";
+    location.href = AwardPage.homeUrl();
 }

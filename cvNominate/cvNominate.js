@@ -92,11 +92,11 @@ function loadAnimeData() {
 }
 
 function loadCharacterData() {
-    return valuesAsArray(getGlobalArray("CharacterData_2026"));
+    return valuesAsArray(getGlobalArray("CharacterData"));
 }
 
 function loadCVData() {
-    return valuesAsArray(getGlobalArray("CharacterVoiceData_2026"));
+    return valuesAsArray(getGlobalArray("CharacterVoiceData"));
 }
 
 /* ---------------------------------------------------------
@@ -399,7 +399,7 @@ function safeGet(id) {
     return document.getElementById(id);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+AwardPage.onReady(() => {
     rebuildIndexes();
 
     const searchInput = safeGet("search-input");
@@ -423,7 +423,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (finalButton) {
         finalButton.onclick = () => {
-            location.href = "../index.html";
+            location.href = AwardPage.homeUrl();
         };
     }
 
@@ -1010,7 +1010,7 @@ function handleBack() {
         renderCVStep1();
     } else {
         location.href =
-            "../index.html";
+            AwardPage.homeUrl();
     }
 }
 

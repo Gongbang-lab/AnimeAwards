@@ -1,7 +1,7 @@
 // data/resolveYear.js
 
 const CURRENT_YEAR =
-    localStorage.getItem("selected_year") ||
+    window.AwardPage?.loadedYear || localStorage.getItem("selected_year") ||
     (typeof AvailableYears !== 'undefined' ? AvailableYears[AvailableYears.length - 1] : 2026);
 
 // TVA와 Cinema는 단일 카탈로그에서 day 값으로 나눕니다.
@@ -35,6 +35,21 @@ YEAR_DATA_KEYS.forEach(([alias, prefix]) => {
         window[alias] = window[sourceKey];
     }
 });
+
+// Missing year globals indicate a malformed file, not an empty candidate list.
+if (window.AwardPage) {
+    const expected = { animeData: 'AnimeCatalog', animeCharacterData: 'CharacterData', animeCVData: 'CharacterVoiceData',
+        animeSongsData: 'AnimeSongs', animeStudioData: 'AnimeStudioData', animeDirectorData: 'animeDirectorData',
+        animeAdaptorData: 'AnimeAdaptorData', animeRookieCVData: 'RookieCVData', animeEPData: 'animeEPData',
+        animeMemeData: 'AnimeMemeData', animescriptwriterData: 'scriptwriterData', animeOSTData: 'animeOSTData' };
+    const values = [...document.querySelectorAll('script[data-year-src]')].map(entry => {
+        const suffix = entry.dataset.yearSrc.match(/\{year\}(\w+)\.js$/)?.[1];
+        const name = `${expected[suffix]}_${CURRENT_YEAR}`;
+        if (!window[name] || typeof window[name] !== 'object') throw new Error(`${name} 데이터 선언이 없습니다.`);
+        return window[name];
+    });
+    window.YearDataEmpty = values.length > 0 && values.every(value => Object.keys(value).length === 0);
+}
 
 if (!Array.isArray(window.AnimeCatalog)) {
     console.warn(`[resolveYear] ${catalogKey} 카탈로그가 없어 작품 목록을 설정하지 못했습니다.`);

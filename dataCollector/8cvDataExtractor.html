@@ -73,8 +73,9 @@
     </p>
 </div>
 
-<script src="../data/2026/2026animeCharacterData.js"></script>
-<script>
+<script type="text/plain" data-collector-data="animeCharacterData"></script>
+<script type="text/plain" data-collector-code>
+
 const API_URL = 'https://graphql.anilist.co';
 let generatedCode = '';
 let currentOutput = [];
@@ -97,17 +98,10 @@ function normalizeGender(value) {
 }
 
 function getCharacterRecords() {
-    if (typeof CharacterData_2026 === 'undefined') {
-        throw new Error('CharacterData_2026를 찾을 수 없습니다. 2-2에서 생성한 CharacterData를 먼저 로드하세요.');
-    }
-
-    if (Array.isArray(CharacterData_2026)) return CharacterData_2026;
-
-    if (CharacterData_2026 && typeof CharacterData_2026 === 'object') {
-        return Object.values(CharacterData_2026);
-    }
-
-    throw new Error('CharacterData_2026 형식이 배열/객체가 아닙니다.');
+    const records = CollectorYear.data.CharacterData;
+    if (Array.isArray(records)) return records;
+    if (records && typeof records === 'object') return Object.values(records);
+    throw new Error(`CharacterData_${CollectorYear.year} 형식이 배열/객체가 아닙니다.`);
 }
 
 function chunk(array, size) {
@@ -135,7 +129,7 @@ function updateStats(stats) {
 }
 
 function regenerateOutput() {
-    generatedCode = 'var CharacterVoiceData_2026 = ' + JSON.stringify(currentOutput, null, 2) + ';';
+    generatedCode = 'var CharacterVoiceData_' + CollectorYear.year + ' = ' + JSON.stringify(currentOutput, null, 2) + ';';
 
     const previewArea = document.getElementById('json-preview');
     const charCount = document.getElementById('char-count');
@@ -388,7 +382,7 @@ async function extractCVData() {
         stats.cvCount = output.length;
         currentOutput = output;
         currentStats = stats;
-        generatedCode = 'var CharacterVoiceData_2026 = ' + JSON.stringify(output, null, 2) + ';';
+        generatedCode = 'var CharacterVoiceData_' + CollectorYear.year + ' = ' + JSON.stringify(output, null, 2) + ';';
 
         previewArea.textContent = generatedCode;
         previewContainer.style.display = 'block';
@@ -437,6 +431,8 @@ document.getElementById('copy-btn').addEventListener('click', async function() {
         alert('복사에 실패했습니다. 미리보기에서 직접 복사하세요.');
     }
 });
+
 </script>
+<script src="collectorYear.js"></script>
 </body>
 </html>

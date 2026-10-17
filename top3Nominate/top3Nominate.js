@@ -11,8 +11,8 @@ const DAY_LABELS = { "Mondays":"월요일", "Tuesdays":"화요일", "Wednesdays"
 const RANK_NAMES = ["우수상", "최우수상", "대상"];
 const DAY_ORDER = ["Mondays", "Tuesdays", "Wednesdays", "Thursdays", "Fridays", "Saturdays", "Sundays", "Anomaly", "Web", "Cinema"];
 
-document.addEventListener("DOMContentLoaded", () => {
-    if(top3State.allAnime.length === 0) {
+AwardPage.onReady(() => {
+    if(typeof AnimeList === 'undefined') {
         console.error("AnimeList 데이터를 불러오지 못했습니다. 경로를 확인해주세요.");
     }
 
@@ -46,12 +46,12 @@ document.addEventListener("DOMContentLoaded", () => {
             
             renderStep1();
         } else {
-            location.href = "../index.html";
+            location.href = AwardPage.homeUrl();
         }
     });
 
     document.getElementById('save-main-btn').addEventListener('click', () => {
-        location.href = "../index.html";
+        location.href = AwardPage.homeUrl();
     });
 });
 

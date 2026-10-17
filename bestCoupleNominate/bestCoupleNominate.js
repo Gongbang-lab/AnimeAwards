@@ -40,7 +40,7 @@ const goMainBtn = document.getElementById('goMainBtn');
 const confirmAwardBtn = document.getElementById('confirmAwardBtn');
 
 // --- 초기화 ---
-window.onload = function() {
+AwardPage.onReady(() => {
     const stepTitleEl = document.getElementById("step-title");
     if (stepTitleEl) stepTitleEl.textContent = `${SeasonFilter.toDisplayAwardName(awardName)} 부문`;
     renderAnimeCards();
@@ -59,10 +59,10 @@ window.onload = function() {
 
     // 기능 버튼
     addCoupleBtn.onclick = registerCouple;
-    goMainBtn.onclick = () => { window.location.href = '../index.html'; };
+    goMainBtn.onclick = () => { window.location.href = AwardPage.homeUrl(); };
     confirmAwardBtn.onclick = showAwardModal;
     finalConfirmBtn.onclick = saveAndGoMain;
-};
+});
 
 // --- 1. 작품 아코디언 및 텍스트 카드 ---
 const QUARTER_ORDER = ['1분기', '2분기', '3분기', '4분기', '변칙 편성', '기타'];
@@ -330,7 +330,7 @@ async function saveAndGoMain() {
             await window.submitSingleAwardToDB(awardName);
         }
 
-        window.location.href = '../index.html';
+        window.location.href = AwardPage.homeUrl();
 
     } catch (error) {
         console.error("저장 실패:", error);

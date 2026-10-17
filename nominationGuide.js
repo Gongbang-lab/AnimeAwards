@@ -63,6 +63,7 @@
     };
 
     function showGuide() {
+        if (window.YearDataEmpty) return;
         const page = location.pathname.split('/').pop().replace(/\.html$/i, '').toLowerCase();
         const params = new URLSearchParams(location.search);
         const key = page === 'nominate' && params.get('awardName') === '올해의 설레발 상'

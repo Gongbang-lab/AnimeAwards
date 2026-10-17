@@ -33,7 +33,7 @@ const AnimeByQuarter = SeasonFilteredList.reduce((acc, anime) => {
     return acc;
 }, {});
 
-document.addEventListener("DOMContentLoaded", () => {
+AwardPage.onReady(() => {
     const params = new URLSearchParams(window.location.search);
     nominateState.theme = params.get("theme");
     const urlAwardName = params.get("awardName");
@@ -49,8 +49,8 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("step1-next-btn").onclick = goStep2;
     document.getElementById("step2-back-btn").onclick = goStep1;
     document.getElementById("step2-award-btn").onclick = openAwardPopup;
-    document.getElementById("nav-home-btn").onclick = () => location.href = "../index.html";
-    document.getElementById("go-main-btn").onclick = () => location.href = "../index.html";
+    document.getElementById("nav-home-btn").onclick = () => location.href = AwardPage.homeUrl();
+    document.getElementById("go-main-btn").onclick = () => location.href = AwardPage.homeUrl();
 
     renderStep1();
     NominateCommon.waitForFirebaseAndListen(() => nominateState.awardName);

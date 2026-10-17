@@ -85,7 +85,9 @@ label.chk{display:flex;gap:5px;align-items:center;color:var(--mut)}
   <textarea id="prev" readonly rows="12" style="width:100%;margin-top:10px;background:var(--bg);color:var(--fg);border:1px solid var(--line);border-radius:6px;padding:8px;font:12px/1.4 ui-monospace,Consolas,monospace"></textarea>
 </section>
 
-<script>
+<script type="text/plain" data-collector-data="animeOSTData"></script>
+<script type="text/plain" data-collector-code>
+
 const $ = s => document.querySelector(s);
 const st = (m, e) => { const s = $('#status'); s.textContent = m || ''; s.className = e ? 'err' : ''; };
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -237,7 +239,7 @@ $('#add').onclick = () => {
 };
 const out = () => JSON.stringify(bin, (k, v) => k.startsWith('_') ? undefined : v, 2);
 function jsOut() {
-  const year = $('#export-year').value.trim();
+  const year = String(CollectorYear.year);
   if (!/^\d{4}$/.test(year)) throw new Error('저장 연도를 네 자리 숫자로 입력해주세요.');
   return `var animeOSTData_${year} = ${out()};\n`;
 }
@@ -248,7 +250,7 @@ function refresh() {
   const n = bin.reduce((s, a) => s + a.albums.reduce((s2, al) => s2 + al.discs.reduce((s3, d) => s3 + d.tracks.length, 0), 0), 0);
   $('#cnt').textContent = `(작품 ${bin.length} · 트랙 ${n})`;
   try { $('#prev').value = bin.length ? jsOut() : ''; } catch { $('#prev').value = ''; }
-  try { localStorage.setItem('ostbin_mal', JSON.stringify(bin)); } catch {}  // 새로고침/탭 닫기 대비 자동 저장
+  try { localStorage.setItem(CollectorYear.key('ostbin_mal'), JSON.stringify(bin)); } catch {}  // 새로고침/탭 닫기 대비 자동 저장
 }
 async function copyOutput(asJs) {
   if (!bin.length) return st('수집함이 비어 있습니다.', 1);
@@ -277,15 +279,23 @@ $('#impgo').onclick = () => {
     if (!Array.isArray(arr)) throw new Error('배열(JSON) 형식이 아닙니다.');
     const records = arr.flat(Infinity);
     if (records.some(a => !a || a.id == null || !Array.isArray(a.albums) || a.albums.some(al => !al || !Array.isArray(al.discs) || al.discs.some(d => !d || !Array.isArray(d.tracks))))) throw new Error('id, albums, discs, tracks 구조를 확인해주세요.');
-    if (wrapped) $('#export-year').value = wrapped[1];
+    if (wrapped && Number(wrapped[1]) !== CollectorYear.year) throw new Error('파일의 연도와 작업 연도가 다릅니다. 상단에서 작업 연도를 변경해주세요.');
     bin = records; refresh(); $('#impta').value = ''; $('#impbox').style.display = 'none'; st('불러오기 완료');
   } catch (e) { st('불러오기 실패: ' + e.message, 1); }
 };
 // 페이지를 다시 열면 이전 수집함 복원
-try { const saved = JSON.parse(localStorage.getItem('ostbin_mal') || '[]'); if (Array.isArray(saved) && saved.length) { bin = saved; refresh(); st('이전 수집함을 복원했습니다.'); } } catch {}
+bin = JSON.parse(JSON.stringify(CollectorYear.data.animeOSTData || [])).flat(Infinity);
+try {
+  const raw = localStorage.getItem(CollectorYear.key('ostbin_mal')) ?? (CollectorYear.year === 2026 ? localStorage.getItem('ostbin_mal') : null);
+  const saved = raw ? JSON.parse(raw) : null;
+  if (Array.isArray(saved)) { bin = saved; st('선택 연도의 이전 수집함을 복원했습니다.'); }
+} catch {}
+refresh();
 
 $('#q1').addEventListener('keydown', e => { if (e.key === 'Enter' && !e.isComposing) $('#b1').click(); });
 $('#q2').addEventListener('keydown', e => { if (e.key === 'Enter' && !e.isComposing) $('#b2').click(); });
+
 </script>
+<script src="collectorYear.js"></script>
 </body>
 </html>

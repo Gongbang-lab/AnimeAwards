@@ -332,8 +332,8 @@
   document.getElementById("step1-next-btn").onclick = goStep2;
   document.getElementById("step2-back-btn").onclick = goStep1;
   document.getElementById("step2-award-btn").onclick = saveWinner;
-  document.getElementById("nav-home-btn").onclick = () => { location.href = "../index.html"; };
-  document.getElementById("go-main-btn").onclick = () => { location.href = "../index.html"; };
+  document.getElementById("nav-home-btn").onclick = () => { location.href = AwardPage.homeUrl(); };
+  document.getElementById("go-main-btn").onclick = () => { location.href = AwardPage.homeUrl(); };
   document.getElementById("ost-modal-close").onclick = () => document.getElementById("ost-listen-modal").classList.add("hidden");
   document.getElementById("ost-listen-modal").addEventListener("click", event => {
     if (event.target.id === "ost-listen-modal") event.currentTarget.classList.add("hidden");

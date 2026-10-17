@@ -129,7 +129,7 @@ async function deletePersonalMeme(id) {
     } catch (error) { alert(`삭제 실패: ${error.message}`); }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+AwardPage.onReady(() => {
     document.getElementById('add-personal-meme').onclick = () => openPersonalEditor();
     document.getElementById('personal-editor-cancel').onclick = () => document.getElementById('personal-editor').close();
     document.getElementById('personal-meme-form').onsubmit = async event => {

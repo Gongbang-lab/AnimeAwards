@@ -11,7 +11,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   <link rel="stylesheet" href="./palette-components.css">
 </head>
-<body>
+<body data-main-page>
 
 <!-- 🎬 시즌 선택 오버레이 (항상 body 최상위, content-area 밖) -->
 <div id="season-select-screen" class="season-select-screen">
@@ -76,7 +76,7 @@
               <div class="criteria-box">
                 <h4>[ 신인 성우상 선정 기준 ]</h4>
                 <div class="criteria-step">
-                  <strong>1단계 : 현역 필터 (2026년 방영작 기준)</strong>
+                  <strong data-season-year>1단계 : 현역 필터 (2026년 방영작 기준)</strong>
                   <ul>
                     <li>올해 최소 2개 이상의 작품 출연</li>
                     <li>역할 비중 : 주연 및 조연</li>
@@ -158,31 +158,32 @@
 <script src="./data/manifest.js"></script>
 
 <!-- 2. 상 카테고리 정의 (연도 무관) -->
-<script src="./data/awardData.js"></script>
+<script type="text/plain" data-app-src="./data/awardData.js"></script>
 
-<!-- 3. 현재 로드 가능한 모든 연도의 원본 데이터 -->
-<script src="./data/2026/2026animeData.js"></script>
-<script src="./data/2026/2026animeCharacterData.js"></script>
-<script src="./data/2026/2026animeCVData.js"></script>
-<script src="./data/2026/2026animeSongsData.js"></script>
-<script src="./data/2026/2026animeStudioData.js"></script>
-<script src="./data/2026/2026animeDirectorData.js"></script>
-<script src="./data/2026/2026animeAdaptorData.js"></script>
-<script src="./data/2026/2026animeRookieCVData.js"></script>
-<script src="./data/2026/2026animeEPData.js"></script>
-<script src="./data/2026/2026animeMemeData.js"></script>
-<script src="./data/2026/2026animescriptwriterData.js"></script>
+<!-- 3. 선택한 연도의 데이터 경로: pageLoader.js가 로딩합니다. -->
+<script type="text/plain" data-year-src="./data/{year}/{year}animeData.js"></script>
+<script type="text/plain" data-year-src="./data/{year}/{year}animeCharacterData.js"></script>
+<script type="text/plain" data-year-src="./data/{year}/{year}animeCVData.js"></script>
+<script type="text/plain" data-year-src="./data/{year}/{year}animeSongsData.js"></script>
+<script type="text/plain" data-year-src="./data/{year}/{year}animeStudioData.js"></script>
+<script type="text/plain" data-year-src="./data/{year}/{year}animeDirectorData.js"></script>
+<script type="text/plain" data-year-src="./data/{year}/{year}animeAdaptorData.js"></script>
+<script type="text/plain" data-year-src="./data/{year}/{year}animeRookieCVData.js"></script>
+<script type="text/plain" data-year-src="./data/{year}/{year}animeEPData.js"></script>
+<script type="text/plain" data-year-src="./data/{year}/{year}animeMemeData.js"></script>
+<script type="text/plain" data-year-src="./data/{year}/{year}animescriptwriterData.js"></script>
 <!-- 새 연도 데이터도 TVA와 Cinema를 묶은 animeData.js 하나로 불러옵니다. -->
 
 <!-- 4. 별칭 매핑 (반드시 데이터 로드 뒤, 로직 스크립트 앞) -->
-<script src="./data/resolveYear.js"></script>
-<script src="./seasonFilter.js"></script>
-<script src="./resultStorage.js"></script>
+<script type="text/plain" data-app-src="./data/resolveYear.js"></script>
+<script type="text/plain" data-app-src="./seasonFilter.js"></script>
+<script type="text/plain" data-app-src="./resultStorage.js"></script>
 
 <!-- 5. 페이지 로직 -->
-<script src="./personalMemeStorage.js"></script>
-<script src="./main.js"></script>
-<script type="module" src="./firebase_service.js"></script>
+<script type="text/plain" data-app-src="./personalMemeStorage.js"></script>
+<script type="text/plain" data-app-src="./main.js"></script>
+<script type="text/plain" data-app-src="./firebase_service.js" data-module="true"></script>
+<script src="./data/pageLoader.js"></script>
 </body>
 
 </html>

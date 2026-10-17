@@ -15,7 +15,7 @@ const SeasonFilteredStudioData = (typeof AnimeStudioData !== 'undefined')
         .filter(s => s.works.length > 0)
     : [];
 
-document.addEventListener("DOMContentLoaded", () => {
+AwardPage.onReady(() => {
     renderStudioAccordionGroups();
     initSearch();
 
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const stepTitleEl = document.getElementById("step-title");
     if (stepTitleEl) stepTitleEl.innerText = `${SeasonFilter.toDisplayAwardName("올해의 스튜디오 상")} 부문`;
 
-    document.getElementById("nav-home-btn").onclick = () => location.href = "../index.html";
+    document.getElementById("nav-home-btn").onclick = () => location.href = AwardPage.homeUrl();
     document.getElementById("step1-next-btn").onclick = goToStep2;
     document.getElementById("step2-back-btn").onclick = goToStep1;
     document.getElementById("step2-award-btn").onclick = handleAwardDecision;
@@ -306,7 +306,7 @@ function openAwardModal(item) {
                 </div>
                 <div class="work-list">${workRows}</div>
                 <div class="modal-footer">
-                    <button class="gold-btn" onclick="location.href='../index.html'">확인 및 메인으로</button>
+                    <button class="gold-btn" onclick="location.href=AwardPage.homeUrl()">확인 및 메인으로</button>
                 </div>
             </div>
         </div>
@@ -320,7 +320,7 @@ function saveWinnerToLocal(item) {
     ResultStorage.saveOne(studioState.awardName, {
         name: item.studio,
         thumbnail: item.studio_img,
-        year: '2026'
+        year: SeasonFilter.getSelectedSeason().year
     });
     NominateCommon.fireConfetti();
 

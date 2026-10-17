@@ -115,15 +115,16 @@
     </div>
 </div>
 
-<script src="../data/2026/2026animeEPData.js"></script>
-<script src="../data/2026/2026animeData.js"></script>
-<script src="./savedCatalog.js"></script>
-<script>
+<script type="text/plain" data-collector-data="animeEPData"></script>
+<script type="text/plain" data-collector-data="animeData"></script>
+<script type="text/plain" data-collector-src="./savedCatalog.js"></script>
+<script type="text/plain" data-collector-code>
+
     let episodeData = null;
     let currentAnimeId = '';
     let editingEpisode = null;
     let episodeCatalog = null;
-    const animeTitles = new Map((typeof AnimeCatalog_2026 !== 'undefined' && Array.isArray(AnimeCatalog_2026) ? AnimeCatalog_2026 : []).map(item => [String(item.id), item.title]));
+    const animeTitles = new Map((typeof CollectorYear.data.AnimeCatalog !== 'undefined' && Array.isArray(CollectorYear.data.AnimeCatalog) ? CollectorYear.data.AnimeCatalog : []).map(item => [String(item.id), item.title]));
 
     function lastEpisode(episodes) {
         let last = null, highest = -Infinity;
@@ -399,11 +400,11 @@
     copyButton.addEventListener('click', copyChangedBlocks);
     addRow();
 
-    if (typeof animeEPData_2026 !== 'undefined' && animeEPData_2026 && typeof animeEPData_2026 === 'object') {
-        episodeData = JSON.parse(JSON.stringify(animeEPData_2026));
-        setStatus(loadStatus, `2026animeEPData.js 로딩 완료 · 애니메이션 ${Object.keys(episodeData).length}개`, 'success');
+    if (typeof CollectorYear.data.animeEPData !== 'undefined' && CollectorYear.data.animeEPData && typeof CollectorYear.data.animeEPData === 'object') {
+        episodeData = JSON.parse(JSON.stringify(CollectorYear.data.animeEPData));
+        setStatus(loadStatus, `${CollectorYear.year}animeEPData.js 로딩 완료 · 애니메이션 ${Object.keys(episodeData).length}개`, 'success');
     } else {
-        setStatus(loadStatus, '데이터 파일을 읽지 못했습니다. 2026animeEPData.js의 경로를 확인해 주세요.', 'error');
+        setStatus(loadStatus, '데이터 파일을 읽지 못했습니다. ' + CollectorYear.year + 'animeEPData.js의 경로를 확인해 주세요.', 'error');
     }
     episodeCatalog = createSavedCatalog({
         host: document.getElementById('episode-catalog'),
@@ -412,8 +413,8 @@
             const last = lastEpisode(episodes);
             return {
                 key: id, title: animeTitles.get(id) || `작품 ID ${id}`,
-                quarters: typeof AnimeCatalog_2026 !== 'undefined' && Array.isArray(AnimeCatalog_2026)
-                    ? AnimeCatalog_2026.filter(item => String(item.id) === id).flatMap(item => getCatalogQuarters(item.quarter)) : [],
+                quarters: typeof CollectorYear.data.AnimeCatalog !== 'undefined' && Array.isArray(CollectorYear.data.AnimeCatalog)
+                    ? CollectorYear.data.AnimeCatalog.filter(item => String(item.id) === id).flatMap(item => getCatalogQuarters(item.quarter)) : [],
                 meta: `ID ${id} · 저장된 에피소드 ${episodes.length}개`,
                 lines: [last ? `${last['episode no'] || '회차 미지정'} : ${last['episode title'] || '제목 미지정'}` : '저장된 에피소드 없음'],
                 selected: currentAnimeId === id
@@ -425,6 +426,8 @@
             if (currentAnimeId === id) document.getElementById('saved-episodes-card').scrollIntoView({ block: 'start' });
         }
     });
+
 </script>
+<script src="collectorYear.js"></script>
 </body>
 </html>

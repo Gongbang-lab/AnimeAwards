@@ -17,7 +17,7 @@ const DAY_LABELS = {
   "Sundays": "일요일", "Anomaly": "변칙편성", "Web": "웹", "Cinema": "극장판"
 };
 
-document.addEventListener("DOMContentLoaded", () => {
+AwardPage.onReady(() => {
     const params = new URLSearchParams(window.location.search);
 
     charState.theme = params.get("theme") || "character_male";
@@ -378,7 +378,7 @@ function bindEvents() {
   };
   document.getElementById("step2-award-btn").onclick = openAwardPopup;
   
-  const goMain = () => location.href = "../index.html";
+  const goMain = () => location.href = AwardPage.homeUrl();
   document.getElementById("step1-back-btn").onclick = goMain;
   document.getElementById("go-main-btn").onclick = goMain;
 }
