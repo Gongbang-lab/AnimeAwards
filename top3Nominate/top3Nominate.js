@@ -165,6 +165,7 @@ function renderStep1(searchTerm = "") {
 function createCard(anime, isStep2, searchTerm = "") {
     const isSelected = top3State.selectedCandidates.some(c => c.id === anime.id);
     const div = document.createElement('div');
+    div.dataset.animeId = String(anime.id);
     if (!isStep2) div.dataset.selectionId = String(anime.id);
     div.className = `card ${!isStep2 && isSelected ? 'selected' : ''}`;
     
@@ -274,8 +275,7 @@ function goStep2() {
 function updateStep2UI() {
     const cards = document.querySelectorAll('#step2-grid .card');
     cards.forEach(card => {
-        const title = card.querySelector('.card-title').textContent;
-        const rankIdx = top3State.finalTop3.findIndex(c => c.title === title);
+        const rankIdx = top3State.finalTop3.findIndex(c => String(c.id) === card.dataset.animeId);
         const overlay = card.querySelector('.rank-overlay');
         const badge = card.querySelector('.card-badge');
         

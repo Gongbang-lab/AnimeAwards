@@ -117,16 +117,6 @@ var AnimeMemeData_2026 = [
     "src3_title": "일루와잇!"
   },
   {
-    "id": "meme_014",
-    "name": "과거 세이버",
-    "origin": "Fate/strange Fake",
-    "quarter": "1분기",
-    "year": 2026,
-    "src1": "image/meme/과거 세이버_1.mp4",
-    "src2": "image/meme/과거 세이버_2.mp4",
-    "src3": "image/meme/과거 세이버_3.mp4"
-  },
-  {
     "id": "meme_015",
     "name": "자동판매기의 액션씬",
     "origin": "자동판매기로 다시 태어난 나는 미궁을 방랑한다 3rd season",
@@ -244,5 +234,13 @@ var AnimeMemeData_2026 = [
     "year": 2026,
     "src1": "image/meme/뇨호_1.mp4",
     "src2": "image/meme/뇨호_2.mp4"
+  },
+  {
+    "id": "meme_031",
+    "name": "카구야 손가락 씬",
+    "origin": "초(超) 가구야 공주!",
+    "quarter": "1분기",
+    "year": 2026,
+    "src1": "image/meme/카구야 손가락.mp4"
   }
 ];

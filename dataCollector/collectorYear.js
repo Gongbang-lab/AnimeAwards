@@ -12,8 +12,35 @@
     animescriptwriterData: ['scriptwriterData', []], animeRookieCVData: ['RookieCVData', {}]
   };
   const warnings = [];
+  const publishedYears = new Set(typeof AvailableYears !== 'undefined' ? AvailableYears.map(Number) : [2026]);
+  let phase = 'loading', loadFeedback = null;
+
+  function confirmNewFile(suffix, prefix, empty, error) {
+    // Loading errors do not prove that a file is absent. New authoring years
+    // require explicit, per-file consent, and malformed files can never be reset here.
+    if (publishedYears.has(year) || error.collectorFailure !== 'load-error' || !loadFeedback) throw error;
+    phase = 'waiting-for-new-file';
+    loadFeedback.textContent = `${year}${suffix}.js를 읽지 못했습니다. 기존 파일이 있다면 새로고침하거나 파일을 확인해주세요. 아직 만들지 않은 새 파일인 경우에만 아래 버튼으로 작성을 시작하세요.`;
+    loadFeedback.setAttribute('role', 'alert');
+    const create = document.createElement('button');
+    create.type = 'button'; create.textContent = `${year}${suffix}.js 새로 작성`;
+    loadFeedback.after(create);
+    return new Promise(resolve => {
+      create.onclick = () => {
+        if (!confirm(`${year}${suffix}.js를 빈 목록에서 새로 작성합니다. 기존 파일을 수정하려는 경우에는 취소하고 로딩 문제를 해결해주세요. 새 파일 작성을 시작할까요?`)) return;
+        const value = Array.isArray(empty) ? [] : {};
+        data[prefix] = value;
+        window[`${prefix}_${year}`] = value;
+        warnings.push(`${year}${suffix}.js: 새 파일 작성으로 시작했습니다. 저장할 때 기존 파일을 덮어쓰지 않도록 확인해주세요.`);
+        create.remove(); phase = 'loading';
+        loadFeedback.setAttribute('role', 'status'); loadFeedback.textContent = '데이터 준비 중…';
+        resolve(value);
+      };
+    });
+  }
   window.CollectorYear = {
     year, data,
+    get ready() { return phase === 'ready'; },
     key: name => `${name}_${year}`,
     change(next) {
       next = Number(next);
@@ -30,11 +57,16 @@
       try {
         await loadScript(path);
         const value = window[`${prefix}_${year}`];
-        if (!value || typeof value !== 'object') throw new Error('변수 선언 또는 데이터 구조 확인 필요');
+        const valid = prefix === 'CharacterData'
+          ? value && typeof value === 'object'
+          : Array.isArray(empty) ? Array.isArray(value) : value && typeof value === 'object' && !Array.isArray(value);
+        if (!valid) {
+          const error = new Error(`${year}${suffix}.js의 ${prefix}_${year} 변수 선언 또는 데이터 형식이 올바르지 않습니다.`);
+          error.collectorFailure = 'invalid-data'; throw error;
+        }
         data[prefix] = value;
       } catch (error) {
-        data[prefix] = Array.isArray(empty) ? [] : {};
-        warnings.push(`${year}${suffix}.js: 불러오지 못해 빈 목록으로 시작합니다. 새 연도라면 정상이며, 기존 파일이 있다면 경로·변수 선언을 확인하세요.`);
+        return confirmNewFile(suffix, prefix, empty, error);
       }
       return data[prefix];
     }
@@ -42,10 +74,19 @@
   function loadScript(src) {
     return new Promise((resolve, reject) => {
       const script = document.createElement('script'); let problem;
-      const capture = e => { if (e.filename === src) problem = e.error || new Error(e.message); };
+      const capture = e => {
+        if (e.filename === src) {
+          problem = e.error || new Error(e.message);
+          problem.collectorFailure = 'invalid-data';
+        }
+      };
       window.addEventListener('error', capture);
       script.onload = () => { window.removeEventListener('error', capture); problem ? reject(problem) : resolve(); };
-      script.onerror = () => { window.removeEventListener('error', capture); reject(new Error('파일 로딩 실패')); };
+      script.onerror = () => {
+        window.removeEventListener('error', capture);
+        const error = new Error(`${new URL(src).pathname} 파일을 읽지 못했습니다.`);
+        error.collectorFailure = 'load-error'; reject(error);
+      };
       script.src = src; document.head.append(script);
     });
   }
@@ -128,7 +169,15 @@
     button.onclick = () => CollectorYear.change(input.value);
     const note = document.createElement('p'); note.textContent = `작업 대상: data/${year}/ · 시상식 공개 연도에는 영향을 주지 않습니다.`;
     const status = document.createElement('p'); status.setAttribute('role', 'status'); status.textContent = '데이터 준비 중…';
+    loadFeedback = status;
     bar.append(label, input, options, button, note, status); document.body.prepend(toggle, bar);
+    const retry = document.createElement('button'); retry.type = 'button'; retry.textContent = '다시 불러오기';
+    retry.onclick = () => location.reload(); bar.append(retry);
+    // Keep inputs, copy/download buttons and result text inaccessible until all
+    // required sources and page scripts have initialized successfully.
+    const locked = [...document.body.children].filter(node => node !== bar && node !== toggle && !['SCRIPT', 'STYLE'].includes(node.tagName))
+      .map(node => ({ node, inert: node.inert }));
+    locked.forEach(({ node }) => { node.inert = true; });
     // Update static descriptions, not source code or entered records.
     document.title = document.title.replace(/2026/g, year);
     const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
@@ -152,7 +201,13 @@
       }
       status.textContent = warnings.length ? warnings.join('\n') : `${year}년 데이터 준비 완료`;
       status.style.whiteSpace = 'pre-line';
-    } catch (error) { status.textContent = `수집기 초기화 실패: ${error.message}`; status.setAttribute('role', 'alert'); console.error(error); }
+      phase = 'ready';
+      locked.forEach(({ node, inert }) => { node.inert = inert; });
+    } catch (error) {
+      phase = 'failed';
+      status.textContent = `데이터 보호를 위해 편집·복사·다운로드를 중단했습니다. ${error.message} 파일을 확인한 뒤 다시 불러오세요.`;
+      status.setAttribute('role', 'alert'); console.error(error);
+    }
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start, { once: true }); else start();
 })();

@@ -114,6 +114,49 @@ function jsonp(url) {
 const ytUrl = title => 'https://www.youtube.com/results?search_query=' + encodeURIComponent([anime?.title.romaji, title, 'OST'].filter(Boolean).join(' '));
 let anime = null, composers = '', rows = [], bin = [], sel = [], tcache = {};
 
+// Persist the iTunes album ID; old files can recover it from their track links.
+function albumCollectionId(album) {
+  const saved = album.collection_id ?? album._cid;
+  if (/^[1-9]\d*$/.test(String(saved ?? ''))) return String(saved);
+  for (const disc of album.discs || []) for (const track of disc.tracks || []) {
+    try {
+      const url = new URL(track.itunes_url);
+      if (!/(^|\.)apple\.com$/i.test(url.hostname) || !url.pathname.includes('/album/')) continue;
+      const match = url.pathname.match(/\/(?:id)?([1-9]\d*)\/?$/);
+      if (match) return match[1];
+    } catch { /* Manually entered links may be empty. */ }
+  }
+  return '';
+}
+function mergeAlbumTracks(target, source) {
+  for (const incoming of source.discs || []) {
+    let disc = target.discs.find(d => String(d.disc) === String(incoming.disc));
+    if (!disc) { disc = { ...incoming, tracks: [] }; target.discs.push(disc); }
+    for (const track of incoming.tracks || []) {
+      const exists = disc.tracks.some(t => track.track_no != null
+        ? String(t.track_no) === String(track.track_no)
+        : (t.itunes_url && t.itunes_url === track.itunes_url) || t.title === track.title);
+      if (!exists) disc.tracks.push(track);
+    }
+    disc.tracks.sort((a, b) => Number(a.track_no) - Number(b.track_no));
+  }
+  target.discs.sort((a, b) => Number(a.disc) - Number(b.disc));
+}
+function normalizeOstRecords(records) {
+  for (const work of records) {
+    const albums = [], byId = new Map();
+    for (const album of work.albums) {
+      const id = albumCollectionId(album);
+      if (id) album.collection_id = id;
+      delete album._cid;
+      if (id && byId.has(id)) mergeAlbumTracks(byId.get(id), album);
+      else { albums.push(album); if (id) byId.set(id, album); }
+    }
+    work.albums = albums;
+  }
+  return records;
+}
+
 // 1. AniList: 작품 + 음악 스태프
 $('#b1').onclick = async () => {
   const q = $('#q1').value.trim(); if (!q) return;
@@ -214,26 +257,27 @@ $('#add').onclick = () => {
   const checked = rows.filter(r => r.on);
   if (!checked.length) return st('선택된 트랙이 없습니다.', 1);
   if (!anime.idMal) return st('이 작품은 AniList에 MAL ID가 등록돼 있지 않아 추가할 수 없습니다. 검색 결과에서 다른 항목을 선택하세요.', 1);
-  let a = bin.find(x => x.id === anime.idMal);
+  let a = bin.find(x => String(x.id) === String(anime.idMal));
   if (!a) { a = {id: anime.idMal, composer: '', albums: []}; bin.push(a); }
   const comp = $('#comp').value.trim(); if (comp) a.composer = comp;
   const groups = {};
   checked.forEach(r => (groups[r.cid] = groups[r.cid] || []).push(r));
   Object.values(groups).forEach(g => {
-    let al = a.albums.find(x => x._cid === g[0].cid);
+    const collectionId = String(g[0].cid);
+    let al = a.albums.find(x => albumCollectionId(x) === collectionId);
     if (!al) {
       const n = a.albums.length + 1;
-      al = {release_date: g[0].rel.slice(0, 10), image: `image/ost/${a.id}${n > 1 ? '-' + n : ''}.webp`, discs: [], _cid: g[0].cid};
+      al = {release_date: g[0].rel.slice(0, 10), image: `image/ost/${a.id}${n > 1 ? '-' + n : ''}.webp`, discs: [], collection_id: collectionId};
       a.albums.push(al);
     }
-    al.discs = [];
+    al.collection_id = collectionId;
+    const incoming = { discs: [] };
     g.forEach(r => {
-      let d = al.discs.find(x => x.disc === r.disc);
-      if (!d) { d = {disc: r.disc, tracks: []}; al.discs.push(d); }
+      let d = incoming.discs.find(x => x.disc === r.disc);
+      if (!d) { d = {disc: r.disc, tracks: []}; incoming.discs.push(d); }
       d.tracks.push({track_no: r.no, title: r.title, itunes_url: r.url, youtube_url: ytUrl(r.title)});
     });
-    al.discs.sort((x, y) => x.disc - y.disc);
-    al.discs.forEach(d => d.tracks.sort((x, y) => x.track_no - y.track_no));
+    mergeAlbumTracks(al, incoming);
   });
   refresh(); st(checked.length + '개 추가됨');
 };
@@ -280,7 +324,7 @@ $('#impgo').onclick = () => {
     const records = arr.flat(Infinity);
     if (records.some(a => !a || a.id == null || !Array.isArray(a.albums) || a.albums.some(al => !al || !Array.isArray(al.discs) || al.discs.some(d => !d || !Array.isArray(d.tracks))))) throw new Error('id, albums, discs, tracks 구조를 확인해주세요.');
     if (wrapped && Number(wrapped[1]) !== CollectorYear.year) throw new Error('파일의 연도와 작업 연도가 다릅니다. 상단에서 작업 연도를 변경해주세요.');
-    bin = records; refresh(); $('#impta').value = ''; $('#impbox').style.display = 'none'; st('불러오기 완료');
+    bin = normalizeOstRecords(records); refresh(); $('#impta').value = ''; $('#impbox').style.display = 'none'; st('불러오기 완료');
   } catch (e) { st('불러오기 실패: ' + e.message, 1); }
 };
 // 페이지를 다시 열면 이전 수집함 복원
@@ -290,12 +334,14 @@ try {
   const saved = raw ? JSON.parse(raw) : null;
   if (Array.isArray(saved)) { bin = saved; st('선택 연도의 이전 수집함을 복원했습니다.'); }
 } catch {}
+normalizeOstRecords(bin);
 refresh();
 
 $('#q1').addEventListener('keydown', e => { if (e.key === 'Enter' && !e.isComposing) $('#b1').click(); });
 $('#q2').addEventListener('keydown', e => { if (e.key === 'Enter' && !e.isComposing) $('#b2').click(); });
 
 </script>
+<script src="../data/manifest.js"></script>
 <script src="collectorYear.js"></script>
 </body>
 </html>

@@ -1,464 +1,260 @@
 #!/usr/bin/env node
-/**
- * AnimeAwards Data Validator
- *
- * Usage:
- *   node dataCollector/dataValidator.js 2026
- *
- * Read-only diagnostic tool. It does not modify source data.
- */
+'use strict';
 
-const fs = require('fs');
-const path = require('path');
-const vm = require('vm');
+// No dependencies or network requests. Data files are never rewritten.
+const fs = require('node:fs');
+const path = require('node:path');
+const vm = require('node:vm');
+const { spawnSync } = require('node:child_process');
+const DATASETS = [
+  ['animeData','AnimeCatalog','array'], ['animeCharacterData','CharacterData','array'],
+  ['animeCVData','CharacterVoiceData','array'], ['animeSongsData','AnimeSongs','array'],
+  ['animeOSTData','animeOSTData','array'], ['animeStudioData','AnimeStudioData','array'],
+  ['animeDirectorData','animeDirectorData','array'], ['animeAdaptorData','AnimeAdaptorData','array'],
+  ['animescriptwriterData','scriptwriterData','array'], ['animeRookieCVData','RookieCVData','object'],
+  ['animeEPData','animeEPData','object'], ['animeMemeData','AnimeMemeData','array']
+];
+const SKIP = new Set(['.git','node_modules','reports','_site','dist','build','.cache-thumbnail-tools']);
+const object = v => v !== null && typeof v === 'object' && !Array.isArray(v);
+const text = v => typeof v === 'string' && v.trim() !== '';
+const id = v => /^[1-9]\d*$/.test(String(v ?? ''));
+const posix = v => v.split(path.sep).join('/');
+const quarters = v => (Array.isArray(v) ? v : [v]).flatMap(q => String(q ?? '').split(/[,，]/)).map(q => q.trim()).filter(Boolean);
 
-const ROOT = path.resolve(__dirname, '..');
-const YEAR = Number(process.argv[2] || 2026);
-const DATA_DIR = path.join(ROOT, 'data', String(YEAR));
-
-const issues = { error: [], warning: [], info: [] };
-
-function issue(level, code, message, meta = {}) {
-  issues[level].push({ code, message, ...meta });
-}
-
-function isObject(v) {
-  return v !== null && typeof v === 'object' && !Array.isArray(v);
-}
-
-function nonEmptyString(v) {
-  return typeof v === 'string' && v.trim() !== '';
-}
-
-function normalize(v) {
-  return String(v ?? '').normalize('NFC').trim().replace(/\s+/g, ' ').toLowerCase();
-}
-
-function readDataFiles() {
-  if (!fs.existsSync(DATA_DIR)) {
-    issue('error', 'DATA_DIR_MISSING', `데이터 폴더가 없습니다: ${path.relative(ROOT, DATA_DIR)}`);
-    return {};
+function validateProject({ root = path.resolve(__dirname,'..'), years, relationshipsOnly = false } = {}) {
+  root = path.resolve(root);
+  const issues = [], stats = { years: [], datasets: 0, references: 0, assets: 0 };
+  const add = level => (code,message,file='',context='') => issues.push({ level,code,message,file:posix(file),context });
+  const error=add('error'), warning=add('warning'), info=add('info');
+  const files = [];
+  function walk(dir) {
+    if (!fs.existsSync(dir)) return;
+    for (const e of fs.readdirSync(dir,{withFileTypes:true})) {
+      if (SKIP.has(e.name)) continue;
+      const full=path.join(dir,e.name);
+      if (e.isSymbolicLink()) warning('SYMLINK','심볼릭 링크는 배포 대상에서 제외하세요.',path.relative(root,full));
+      else if (e.isDirectory()) walk(full);
+      else if (e.isFile()) files.push(posix(path.relative(root,full)));
+    }
   }
-
-  const files = fs.readdirSync(DATA_DIR)
-    .filter(f => f.endsWith('.js'))
-    .sort();
-
-  const ctx = {};
-
-  for (const file of files) {
-    const source = fs.readFileSync(path.join(DATA_DIR, file), 'utf8');
+  walk(root);
+  const exact=new Set(files), folded=new Map(), sources=new Map();
+  files.forEach(f => { const k=f.normalize('NFC').toLowerCase(); if(!folded.has(k))folded.set(k,[]); folded.get(k).push(f); });
+  const read = f => { if(!sources.has(f))sources.set(f,fs.readFileSync(path.join(root,f),'utf8')); return sources.get(f); };
+  function evaluate(file,variable) {
+    if(!exact.has(file)){ error('DATA_FILE_MISSING',`필수 파일이 없습니다: ${file}`,file); return; }
     try {
-      vm.runInNewContext(source, ctx, { filename: file });
-    } catch (err) {
-      issue('error', 'JS_LOAD_ERROR', `${file} 로딩 실패: ${err.message}`, { file });
+      const ctx=vm.createContext(Object.create(null),{codeGeneration:{strings:false,wasm:false}});
+      new vm.Script(read(file),{filename:file}).runInContext(ctx,{timeout:1500});
+      const value=new vm.Script(`typeof ${variable} === 'undefined' ? undefined : ${variable}`).runInContext(ctx,{timeout:100});
+      if(value===undefined)error('DATA_VARIABLE',`${variable} 선언이 없습니다. 연도와 변수명을 확인하세요.`,file);
+      return value;
+    } catch(e){ error('DATA_JS_ERROR',e.message,file); }
+  }
+  const published=evaluate('data/manifest.js','AvailableYears');
+  const manifestYears=Array.isArray(published)?published.map(Number):[];
+  const validYear=y=>Number.isInteger(y)&&y>=2000&&y<=2200;
+  if(!manifestYears.length||manifestYears.some(y=>!validYear(y))||new Set(manifestYears).size!==manifestYears.length)
+    error('MANIFEST_INVALID','AvailableYears는 중복 없는 연도 배열이어야 합니다.','data/manifest.js');
+  const selected=years?[...new Set(years.map(Number))]:manifestYears;
+  if(selected.some(y=>!validYear(y)))error('YEAR_INVALID','연도는 2000~2200 사이의 정수여야 합니다.');
+  let policy={optionalPortraitFields:['cvimg','director_img'],missingAssets:[]};
+  const policyFile='dataCollector/validation-policy.json';
+  if(exact.has(policyFile))try{
+    policy=JSON.parse(read(policyFile));
+    if(!Array.isArray(policy.optionalPortraitFields)||!Array.isArray(policy.missingAssets)||policy.missingAssets.some(e=>!object(e)||!text(e.path)||!text(e.reason)))throw new Error('예외에는 path와 reason이 필요합니다.');
+  }catch(e){error('POLICY_INVALID',e.message,policyFile);policy={optionalPortraitFields:[],missingAssets:[]};}
+  const exceptions=new Map(policy.missingAssets.map(e=>[e.path,e.reason]));
+  const portraits=new Set(policy.optionalPortraitFields), assetSeen=new Set();
+  function asset(raw,file,context,{base='',optional=false}={}){
+    if(!text(raw)||/^(?:https?:\/\/|\/\/|data:)/i.test(raw))return;
+    if(raw.includes('${')||raw.includes('{{'))return; // Runtime template, not a literal file reference.
+    if(/^(?:blob:|javascript:|file:)/i.test(raw)){error('ASSET_PROTOCOL',`배포에 사용할 수 없는 경로: ${raw}`,file,context);return;}
+    let clean;
+    try{clean=decodeURIComponent(raw.split(/[?#]/)[0]);}catch{error('ASSET_ENCODING',`경로 인코딩 오류: ${raw}`,file,context);return;}
+    if(!clean||clean.startsWith('#'))return;
+    if(clean.includes('\\')){error('ASSET_SEPARATOR',`웹 경로에는 /를 사용하세요: ${raw}`,file,context);return;}
+    const target=path.posix.normalize(path.posix.join(clean.startsWith('/')?'':base,clean.replace(/^\//,'')));
+    if(target==='..'||target.startsWith('../')||path.isAbsolute(target)||/^[A-Za-z]:/.test(target)){error('ASSET_OUTSIDE_ROOT',`프로젝트 바깥 경로: ${raw}`,file,context);return;}
+    const key=`${file}\n${target}\n${optional}`;
+    if(assetSeen.has(key))return; assetSeen.add(key);stats.assets++;
+    if(exact.has(target))return;
+    const match=folded.get(target.normalize('NFC').toLowerCase());
+    if(match)(optional?warning:error)('ASSET_CASE',`파일명 대소문자/유니코드 불일치: ${target} → ${match.join(', ')}`,file,context);
+    else if(exceptions.has(target))info('ASSET_EXCEPTION',`${target}: ${exceptions.get(target)}`,file,context);
+    else (optional?warning:error)(optional?'PORTRAIT_MISSING':'ASSET_MISSING',`실제 파일이 없습니다: ${target}`,file,context);
+  }
+  function media(value,file,at='',field=''){
+    if(Array.isArray(value))return value.forEach((v,i)=>media(v,file,`${at}[${i}]`,field));
+    if(object(value))return Object.entries(value).forEach(([k,v])=>media(v,file,at?`${at}.${k}`:k,k));
+    if(!text(value))return;
+    if(/^(?:thumbnail|thumb|img|cvimg|director_img|studio_img|image|charimg|poster|src\d*)$/.test(field))asset(value,file,at,{optional:portraits.has(field)});
+    else if(/^(?:url|youtube|youtube_url|itunes_url)$/.test(field)){
+      try{if(!['http:','https:'].includes(new URL(value).protocol))throw new Error();}
+      catch{error('URL_INVALID',`http(s) URL 형식을 확인하세요: ${value}`,file,at);}
     }
   }
-
-  return ctx;
-}
-
-function duplicateGroups(array, keyFn) {
-  const map = new Map();
-  for (const item of array) {
-    const key = keyFn(item);
-    if (!key) continue;
-    const arr = map.get(key) || [];
-    arr.push(item);
-    map.set(key, arr);
-  }
-  return [...map.entries()].filter(([, arr]) => arr.length > 1);
-}
-
-function checkManifest(ctx) {
-  const manifestPath = path.join(ROOT, 'data', 'manifest.js');
-  if (!fs.existsSync(manifestPath)) {
-    issue('error', 'MANIFEST_MISSING', 'data/manifest.js가 없습니다.');
-    return;
-  }
-  const source = fs.readFileSync(manifestPath, 'utf8');
-  const match = source.match(/AvailableYears\s*=\s*\[([^\]]*)\]/);
-  if (!match) {
-    issue('error', 'MANIFEST_INVALID', 'AvailableYears 선언을 찾을 수 없습니다.');
-    return;
-  }
-  const years = [...match[1].matchAll(/\d{4}/g)].map(m => Number(m[0]));
-  if (!years.length) {
-    issue('error', 'MANIFEST_INVALID', 'AvailableYears에 연도가 없습니다.');
-    return;
-  }
-  if (!years.includes(YEAR)) {
-    issue('warning', 'YEAR_NOT_IN_MANIFEST', `${YEAR}년이 AvailableYears에 없습니다.`, { year: YEAR, years });
-  }
-}
-
-function checkDatasetPresence(ctx) {
-  const expected = [
-    `AnimeCatalog_${YEAR}`,
-    `CharacterData_${YEAR}`,
-    `CharacterVoiceData_${YEAR}`,
-    `AnimeSongs_${YEAR}`,
-    `AnimeStudioData_${YEAR}`,
-    `animeDirectorData_${YEAR}`,
-    `AnimeAdaptorData_${YEAR}`,
-    `RookieCVData_${YEAR}`,
-    `animeEPData_${YEAR}`,
-    `AnimeMemeData_${YEAR}`,
-    `scriptwriterData_${YEAR}`,
-  ];
-
-  for (const key of expected) {
-    if (ctx[key] === undefined) {
-      issue('warning', 'DATASET_MISSING', `예상 데이터셋이 없습니다: ${key}`, { key });
+  function array(value,file,at){if(Array.isArray(value))return value;error('ARRAY_REQUIRED',`${at}는 배열이어야 합니다.`,file,at);return [];}
+  function unique(rows,keyOf,file,code){const seen=new Set();rows.forEach((r,i)=>{const k=keyOf(r);if(k==null)return;if(seen.has(k))error(code,`중복 식별자: ${k}`,file,`[${i}]`);seen.add(k);});}
+  function quarter(value,file,at){const qs=quarters(value);if(!qs.length)warning('QUARTER_MISSING','분기가 비어 있습니다.',file,at);else if(qs.some(q=>!/^[1-4]분기$/.test(q)))error('QUARTER_INVALID',`분기 형식 오류: ${qs.join(', ')}`,file,at);return [...new Set(qs)];}
+  for(const year of selected.filter(validYear)){
+    stats.years.push(year);
+    if(!manifestYears.includes(year))warning('YEAR_NOT_PUBLISHED',`${year}년은 공개 연도 목록에 없습니다.`,'data/manifest.js');
+    const data=new Map(),fileFor=suffix=>`data/${year}/${year}${suffix}.js`;
+    for(const [suffix,prefix,type]of DATASETS){
+      if(relationshipsOnly&&!['animeData','animeCharacterData','animeCVData'].includes(suffix))continue;
+      const f=fileFor(suffix),v=evaluate(f,`${prefix}_${year}`);
+      if(v===undefined)continue;
+      if(!(type==='array'?Array.isArray(v):object(v))){error('DATA_SHAPE',`${prefix}_${year}는 ${type==='array'?'배열':'객체'}여야 합니다.`,f);continue;}
+      data.set(suffix,v);stats.datasets++;if(!relationshipsOnly)media(v,f);
     }
-  }
-}
-
-function checkAnimeList(ctx, data) {
-  if (!Array.isArray(data)) return new Map();
-
-  const map = new Map();
-  let duplicateSameQuarter = 0;
-
-  for (const [index, item] of data.entries()) {
-    if (!isObject(item)) {
-      issue('error', 'ANIME_ITEM_INVALID', `AnimeList[${index}]가 객체가 아닙니다.`, { index });
-      continue;
+    const catalog=data.get('animeData')||[], chars=data.get('animeCharacterData')||[], voices=data.get('animeCVData')||[];
+    const animeIds=new Set(), titles=new Set(), idQuarters=new Set(),cvIds=new Set(),pairs=new Set();
+    catalog.forEach((a,i)=>{
+      const f=fileFor('animeData'),at=`[${i}]`;
+      if(!object(a))return error('ANIME_OBJECT','작품은 객체여야 합니다.',f,at);
+      if(!id(a.id))error('ANIME_ID',`유효하지 않은 작품 ID: ${a.id}`,f,at);
+      animeIds.add(String(a.id));titles.add(a.title);
+      if(!text(a.title))error('ANIME_TITLE','작품 제목이 없습니다.',f,at);
+      if(Number(a.year)!==year)error('YEAR_MISMATCH',`작품 ${a.id}: year=${a.year}, 파일 연도=${year}`,f,at);
+      if(!text(a.thumbnail))error('ANIME_POSTER',`작품 ${a.id}: 포스터 경로가 없습니다.`,f,at);
+      for(const q of quarter(a.quarter,f,at)){const k=`${a.id}:${q}`;if(idQuarters.has(k))error('ANIME_DUPLICATE',`동일 작품·분기 중복: ${k}`,f,at);idQuarters.add(k);}
+      if(!['Mondays','Tuesdays','Wednesdays','Thursdays','Fridays','Saturdays','Sundays','Anomaly','Web','Cinema','Unknown'].includes(a.day))warning('ANIME_DAY',`요일/극장판 구분 확인: ${a.day}`,f,at);
+      array(a.pv??[],f,`${at}.pv`).forEach((p,n)=>{if(!object(p))error('PV_OBJECT','PV는 title과 url을 가진 객체여야 합니다.',f,`${at}.pv[${n}]`);});
+    });
+    unique(voices.filter(object),v=>String(v.id),fileFor('animeCVData'),'CV_DUPLICATE');
+    voices.forEach((v,i)=>{if(!object(v)||!id(v.id)||!text(v.name))error('CV_SHAPE','성우는 유효한 id와 name이 필요합니다.',fileFor('animeCVData'),`[${i}]`);else cvIds.add(String(v.id));});
+    chars.forEach((g,i)=>{
+      const f=fileFor('animeCharacterData'),at=`[${i}]`;
+      if(!object(g))return error('CHARACTER_GROUP','캐릭터 작품 항목은 객체여야 합니다.',f,at);
+      if(!animeIds.has(String(g.id)))error('CHARACTER_ANIME_ORPHAN',`작품 ID ${g.id}가 기본 데이터에 없습니다.`,f,at);
+      array(g.characters,f,`${at}.characters`).forEach((c,j)=>{
+        const loc=`${at}.characters[${j}]`;
+        if(!object(c)||!id(c.characterId)||!text(c.name))return error('CHARACTER_SHAPE','캐릭터는 characterId와 name이 필요합니다.',f,loc);
+        const k=`${g.id}:${c.characterId}`;if(pairs.has(k))error('CHARACTER_PAIR_DUPLICATE',`동일 작품·캐릭터 중복: ${k}`,f,loc);pairs.add(k);stats.references++;
+        if(!cvIds.has(String(c.cvId)))error('CHARACTER_CV_ORPHAN',`성우 ID ${c.cvId}가 성우 데이터에 없습니다.`,f,loc);
+      });
+    });
+    if(relationshipsOnly)continue;
+    function linked(suffix,{allowRepeatedId=false}={}){
+      const rows=data.get(suffix)||[],f=fileFor(suffix);if(!allowRepeatedId)unique(rows.filter(object),r=>String(r.id),f,'WORK_DUPLICATE');
+      rows.forEach((r,i)=>{if(!object(r))return error('WORK_OBJECT','작품 데이터는 객체여야 합니다.',f,`[${i}]`);if(!animeIds.has(String(r.id)))error('WORK_ORPHAN',`작품 ID ${r.id}가 기본 데이터에 없습니다.`,f,`[${i}]`);if(r.year!=null&&Number(r.year)!==year)error('YEAR_MISMATCH',`작품 ${r.id}: year=${r.year}, 파일 연도=${year}`,f,`[${i}]`);});return rows.filter(object);
     }
-
-    for (const field of ['id', 'year', 'title']) {
-      if (item[field] === undefined || item[field] === null || item[field] === '') {
-        issue('error', 'ANIME_FIELD_MISSING', `AnimeList[${index}].${field}가 없습니다.`, { index, field });
-      }
-    }
-
-    if (item.year !== YEAR) {
-      issue('error', 'ANIME_YEAR_MISMATCH', `AnimeList[${index}] year=${item.year} (파일 기준 ${YEAR})`, { index, value: item.year });
-    }
-
-    if (!nonEmptyString(item.quarter)) {
-      issue('warning', 'ANIME_QUARTER_MISSING', `AnimeList[${index}] quarter가 없습니다.`, { index, id: item.id });
-    }
-
-    const id = String(item.id);
-    const arr = map.get(id) || [];
-    arr.push(item);
-    map.set(id, arr);
-  }
-
-  for (const [id, arr] of map.entries()) {
-    const byQuarter = new Map();
-    for (const item of arr) {
-      const key = normalize(item.quarter) || '(없음)';
-      const list = byQuarter.get(key) || [];
-      list.push(item);
-      byQuarter.set(key, list);
-    }
-    for (const [quarter, records] of byQuarter.entries()) {
-      if (records.length > 1) {
-        duplicateSameQuarter += 1;
-        issue('error', 'ANIME_DUPLICATE_SAME_QUARTER', `AnimeList ID ${id}가 ${quarter}에 ${records.length}건 존재합니다.`, {
-          id, quarter, records: records.map(x => ({ title: x.title, thumbnail: x.thumbnail }))
+    ['animeAdaptorData','animescriptwriterData'].forEach(suffix=>linked(suffix));
+    for(const g of linked('animeSongsData',{allowRepeatedId:true}))array(g.songs,fileFor('animeSongsData'),`ID ${g.id}.songs`).forEach((s,i)=>{
+      const f=fileFor('animeSongsData'),at=`ID ${g.id}.songs[${i}]`;
+      if(!object(s)||!['op','ed','ost'].includes(String(s.type).toLowerCase()))return error('SONG_SHAPE','곡 type과 객체 형식을 확인하세요.',f,at);
+      if(!text(s.title)&&!text(s.youtube))return; // Intentional empty placeholders.
+      const qs=Object.hasOwn(s,'quarter')?quarters(s.quarter):quarters(g.quarter);
+      if(!qs.length||(!Object.hasOwn(s,'quarter')&&qs.length>1))warning('SONG_QUARTER_UNCONFIRMED','곡의 사용 분기를 지정해주세요. 단일 분기 시상식에서 제외될 수 있습니다.',f,at);
+      if(qs.some(q=>!/^[1-4]분기$/.test(q)))error('SONG_QUARTER_INVALID','곡 분기 형식 오류',f,at);
+    });
+    for(const w of linked('animeOSTData')){
+      const f=fileFor('animeOSTData'),seen=new Set();
+      array(w.albums,f,`ID ${w.id}.albums`).forEach((al,n)=>{
+        const at=`ID ${w.id}.albums[${n}]`;
+        if(!object(al))return error('OST_ALBUM','앨범은 객체여야 합니다.',f,at);
+        if(al.collection_id&&seen.has(String(al.collection_id)))error('OST_ALBUM_DUPLICATE',`collection_id 중복: ${al.collection_id}`,f,at);if(al.collection_id)seen.add(String(al.collection_id));
+        const slots=new Set();array(al.discs,f,`${at}.discs`).forEach(d=>{
+          if(!object(d))return error('OST_DISC','디스크는 객체여야 합니다.',f,at);
+          array(d.tracks,f,`${at}.tracks`).forEach(t=>{if(!object(t)||!text(t.title))return error('OST_TRACK','트랙 title이 없습니다.',f,at);const k=`${d.disc}:${t.track_no}`;if(slots.has(k))error('OST_TRACK_DUPLICATE',`디스크·트랙 번호 중복: ${k}`,f,at);slots.add(k);});
         });
-      }
+      });
     }
-  }
-
-  const repeatedIdsAcrossQuarters = [...map.entries()].filter(([, arr]) => new Set(arr.map(x => normalize(x.quarter))).size > 1);
-  issue('info', 'ANIME_SEASONAL_REUSE', `AnimeList ${data.length}건 중 ID가 여러 분기에 재사용되는 작품 ${repeatedIdsAcrossQuarters.length}개를 확인했습니다. 분기별 재사용은 허용합니다.`);
-  issue('info', 'ANIME_COUNT', `AnimeList ${data.length}건 검사 완료. 같은 분기 중복 ${duplicateSameQuarter}그룹.`);
-
-  return map;
-}
-
-function checkCharacterData(ctx, animeMap, cinemaMap) {
-  const data = ctx[`CharacterData_${YEAR}`];
-  if (!Array.isArray(data)) return;
-
-  const duplicateIds = duplicateGroups(data, x => String(x.id));
-  for (const [id, records] of duplicateIds) {
-    issue('error', 'CHARACTER_DATA_DUPLICATE_ID', `CharacterData ID ${id}가 ${records.length}건 존재합니다. 분기/버전 구분자가 없어 자동 병합 기준이 없습니다.`, {
-      id,
-      records: records.map(x => ({ title: x.title, quarter: x.quarter, characterCount: Array.isArray(x.characters) ? x.characters.length : null }))
+    for(const suffix of ['animeDirectorData','animeStudioData'])(data.get(suffix)||[]).forEach((p,i)=>{
+      const f=fileFor(suffix);if(!object(p))return error('STAFF_SHAPE','제작진은 객체여야 합니다.',f,`[${i}]`);
+      array(p.works,f,`[${i}].works`).forEach((w,n)=>{const at=`[${i}].works[${n}]`;if(!object(w))return error('STAFF_WORK','참여 작품은 객체여야 합니다.',f,at);if(!titles.has(w.title))warning('STAFF_TITLE_UNMATCHED',`기본 데이터와 다른 작품명: ${w.title}`,f,at);if(w.year!=null&&Number(w.year)!==year)error('YEAR_MISMATCH',`참여 작품 ${w.title}: year=${w.year}, 파일 연도=${year}`,f,at);});
+    });
+    for(const [animeId,rows]of Object.entries(data.get('animeEPData')||{})){
+      const f=fileFor('animeEPData');if(!animeIds.has(animeId))error('EP_ORPHAN',`작품 ID ${animeId}가 기본 데이터에 없습니다.`,f,animeId);
+      const list=array(rows,f,animeId),episodeKeys=new Set(),episodeNumbers=new Set();
+      list.forEach((e,i)=>{
+        const at=`${animeId}[${i}]`;
+        if(!object(e)||!text(String(e['episode no']??'')))return error('EP_FIELDS','에피소드 회차가 필요합니다.',f,at);
+        const number=String(e['episode no']).normalize('NFKC').replace(/\s/g,''),key=JSON.stringify([number,e['episode title']??'']);
+        if(episodeKeys.has(key))error('EP_DUPLICATE',`동일 회차·제목 중복: ${e['episode no']} / ${e['episode title']??''}`,f,at);
+        else if(episodeNumbers.has(number))warning('EP_NUMBER_REUSED',`같은 회차에 다른 제목이 있습니다. 막/단편 구분인지 확인하세요: ${e['episode no']}`,f,at);
+        episodeKeys.add(key);episodeNumbers.add(number);
+        if(!text(e['episode title']))warning('EP_TITLE_EMPTY','제목 미등록: 회차만 표시됩니다.',f,at);
+      });
+    }
+    const memes=data.get('animeMemeData')||[];unique(memes.filter(object),m=>String(m.id),fileFor('animeMemeData'),'MEME_DUPLICATE');
+    memes.forEach((m,i)=>{const f=fileFor('animeMemeData');if(!object(m))return error('MEME_SHAPE','밈은 객체여야 합니다.',f,`[${i}]`);if(Number(m.year)!==year)error('YEAR_MISMATCH',`밈 ${m.id}: year=${m.year}, 파일 연도=${year}`,f,`[${i}]`);quarter(m.quarter,f,`[${i}]`);if(!Object.entries(m).some(([k,v])=>/^src\d*$/.test(k)&&text(v)))warning('MEME_SOURCE','밈 미디어가 없습니다.',f,`[${i}]`);});
+    const ranks=new Set();Object.values(data.get('animeRookieCVData')||{}).forEach((r,i)=>{
+      const f=fileFor('animeRookieCVData');if(!object(r)||!text(r.name))return error('ROOKIE_SHAPE','루키 name이 필요합니다.',f,`[${i}]`);
+      array(r.characters,f,`${r.name}.characters`);if(r.rank!=null){if(ranks.has(String(r.rank)))error('ROOKIE_RANK',`순위 중복: ${r.rank}`,f,r.name);ranks.add(String(r.rank));}
+      if(object(r.scoreBreakdown)&&Number.isFinite(r.score)){const sum=Object.values(r.scoreBreakdown).reduce((s,v)=>s+Number(v||0),0);if(Math.abs(sum-r.score)>.01)error('ROOKIE_SCORE',`score=${r.score}, 항목 합계=${sum}`,f,r.name);}
     });
   }
-
-  const allReferenceIds = new Set([...animeMap.keys(), ...cinemaMap.keys()]);
-  for (const [index, anime] of data.entries()) {
-    if (!isObject(anime)) {
-      issue('error', 'CHARACTER_ANIME_INVALID', `CharacterData[${index}]가 객체가 아닙니다.`, { index });
-      continue;
-    }
-    if (!allReferenceIds.has(String(anime.id))) {
-      issue('error', 'CHARACTER_ANIME_ORPHAN', `CharacterData ID ${anime.id}가 AnimeList/Cinema 어디에도 없습니다.`, { index, animeId: anime.id, title: anime.title });
-    }
-    if (!nonEmptyString(anime.title)) {
-      issue('warning', 'CHARACTER_TITLE_MISSING', `CharacterData[${index}].title이 없습니다.`, { index, animeId: anime.id });
-    }
-    if (!Array.isArray(anime.characters)) {
-      issue('error', 'CHARACTERS_NOT_ARRAY', `CharacterData[${index}].characters가 배열이 아닙니다.`, { index, animeId: anime.id });
-      continue;
-    }
-
-    const seen = new Map();
-    for (const [charIndex, character] of anime.characters.entries()) {
-      if (!isObject(character)) {
-        issue('error', 'CHARACTER_ITEM_INVALID', `CharacterData[${index}].characters[${charIndex}]가 객체가 아닙니다.`, { index, charIndex, animeId: anime.id });
-        continue;
+  if(!relationshipsOnly){
+    const attrs=s=>Object.fromEntries([...s.matchAll(/([\w:-]+)\s*=\s*(["'])(.*?)\2/gs)].map(m=>[m[1].toLowerCase(),m[3]]));
+    for(const file of files.filter(f=>/\.(?:html|js|css)$/.test(f))){
+      const src=read(file),base=path.posix.dirname(file);
+      if(file.endsWith('.js'))try{new vm.Script(src,{filename:file});}catch(e){
+        const mod=/\b(?:import|export)\b/.test(src)&&spawnSync(process.execPath,['--input-type=module','--check'],{input:src,encoding:'utf8',timeout:5000});
+        if(!mod||mod.status!==0)error('JS_SYNTAX',e.message,file);
       }
-      if (!nonEmptyString(character.name)) issue('warning', 'CHARACTER_NAME_MISSING', `캐릭터 이름이 없습니다.`, { animeId: anime.id, charIndex });
-      if (!nonEmptyString(character.cv)) issue('warning', 'CHARACTER_CV_MISSING', `캐릭터 ${character.name || '(이름 없음)'}의 CV가 없습니다.`, { animeId: anime.id, charIndex });
-      const key = normalize(character.name);
-      if (key) {
-        if (seen.has(key)) {
-          issue('warning', 'CHARACTER_DUPLICATE_NAME', `같은 작품에서 동일 캐릭터명이 반복됩니다: ${character.name}`, { animeId: anime.id, title: anime.title, firstIndex: seen.get(key), secondIndex: charIndex });
-        } else {
-          seen.set(key, charIndex);
+      if(file.endsWith('.html')){
+        for(const tag of src.matchAll(/<(?:script|link|img)\b([^>]*)>/gi)){
+          const a=attrs(tag[1]);
+          if(Object.hasOwn(a,'data-collector-data')&&!DATASETS.some(([suffix])=>suffix===a['data-collector-data']))error('COLLECTOR_DATASET',`알 수 없는 수집기 데이터 이름: ${a['data-collector-data']}`,file,'data-collector-data');
+          const raw=a['data-year-src']||a['data-app-src']||a['data-collector-src']||a.src||(a.rel==='stylesheet'?a.href:'');if(!raw)continue;
+          if(a['data-year-src'])stats.years.forEach(y=>asset(raw.replaceAll('{year}',y),file,'script',{base}));else asset(raw,file,'HTML',{base});
+        }
+        for(const s of src.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)){
+          const a=attrs(s[1]);if(a.src||a['data-app-src']||a['data-year-src']||a['data-collector-src']||!s[2].trim()||(a.type&&!['text/plain','text/javascript','module'].includes(a.type)))continue;
+          try{new vm.Script(s[2],{filename:file});}catch(e){
+            const mod=a.type==='module'&&spawnSync(process.execPath,['--input-type=module','--check'],{input:s[2],encoding:'utf8',timeout:5000});
+            if(!mod||mod.status!==0)error('INLINE_JS_SYNTAX',e.message,file);
+          }
         }
       }
+      if(file.endsWith('.css'))for(const m of src.matchAll(/url\(\s*['"]?([^\s)'";]+)['"]?\s*\)/g))asset(m[1],file,'CSS url',{base});
+      if(file.endsWith('.js')&&!/^data\/\d{4}\//.test(file)&&!file.startsWith('functions/')&&!file.endsWith('.test.js'))for(const m of src.matchAll(/(['"])((?:\.\.?\/)?image\/[^'"\r\n]+?\.(?:png|jpe?g|webp|gif|svg|mp4|webm))\1/gi))asset(m[2],file,'JS media',{base:m[2].startsWith('image/')?'':base});
+      const ym=file.match(/^data\/(\d{4})\/(\d{4}).*\.js$/);if(ym&&ym[1]!==ym[2])error('FILE_YEAR','폴더 연도와 파일명 연도가 다릅니다.',file);
     }
+    if(exact.has('data/awardData.js')){const awards=evaluate('data/awardData.js','Awards');if(Array.isArray(awards))media(awards,'data/awardData.js');}
   }
+  const counts=Object.fromEntries(['error','warning','info'].map(l=>[l,issues.filter(i=>i.level===l).length]));
+  return {generatedAt:new Date().toISOString(),ok:counts.error===0,counts,stats,issues};
 }
-
-function checkCVData(ctx, animeMap, cinemaMap, characterData) {
-  const data = ctx[`CharacterVoiceData_${YEAR}`];
-  if (!isObject(data)) return;
-
-  const allAnimeRecords = [...animeMap.values()].flat();
-  const allCinemaRecords = [...cinemaMap.values()].filter(Boolean);
-  const allTitles = new Set([
-    ...allAnimeRecords.map(x => normalize(x.title)).filter(Boolean),
-    ...allCinemaRecords.map(x => normalize(x.title)).filter(Boolean),
-    ...characterData.map(x => normalize(x.title)).filter(Boolean),
-  ]);
-
-  let links = 0;
-  let missingTime = 0;
-  let unmatchedCurrentTitles = 0;
-  let badCharacterRefs = 0;
-
-  for (const [cvKey, person] of Object.entries(data)) {
-    if (!isObject(person)) {
-      issue('error', 'CV_PERSON_INVALID', `CV '${cvKey}' 데이터가 객체가 아닙니다.`, { cv: cvKey });
-      continue;
-    }
-    if (!nonEmptyString(person.name)) issue('warning', 'CV_NAME_MISSING', `CV key=${cvKey}의 name이 없습니다.`, { cv: cvKey });
-    if (!Array.isArray(person.characters)) {
-      issue('error', 'CV_CHARACTERS_NOT_ARRAY', `CV '${cvKey}'의 characters가 배열이 아닙니다.`, { cv: cvKey });
-      continue;
-    }
-
-    for (const [index, character] of person.characters.entries()) {
-      links += 1;
-      if (!nonEmptyString(character.charName)) issue('warning', 'CV_CHAR_NAME_MISSING', `CV '${cvKey}' characters[${index}] charName이 없습니다.`);
-      if (!nonEmptyString(character.animeTitle)) issue('warning', 'CV_ANIME_TITLE_MISSING', `CV '${cvKey}' characters[${index}] animeTitle이 없습니다.`);
-
-      const hasYear = character.year !== undefined && character.year !== '';
-      const hasQuarter = nonEmptyString(character.quarter);
-      if (!hasYear || !hasQuarter) {
-        missingTime += 1;
-      } else {
-        if (Number(character.year) !== YEAR) issue('warning', 'CV_YEAR_MISMATCH', `CV '${cvKey}'의 ${character.animeTitle} year=${character.year}`, { cv: cvKey, index });
-        if (!['1분기', '2분기', '3분기', '4분기'].includes(character.quarter)) issue('warning', 'CV_QUARTER_INVALID', `CV '${cvKey}'의 ${character.animeTitle} quarter=${character.quarter}`, { cv: cvKey, index });
-        if (!allTitles.has(normalize(character.animeTitle))) {
-          unmatchedCurrentTitles += 1;
-          if (unmatchedCurrentTitles <= 20) issue('warning', 'CV_CURRENT_TITLE_UNMATCHED', `CV 작품명이 현재 Anime/Cinema/Character 데이터 제목과 일치하지 않습니다: ${character.animeTitle}`, { cv: cvKey, index, animeTitle: character.animeTitle });
-        }
-      }
-    }
-  }
-
-  // CharacterData -> CharacterVoiceData reverse reference check.
-  const cvNames = new Set(Object.keys(data).map(normalize));
-  for (const anime of characterData) {
-    for (const character of anime.characters || []) {
-      if (!nonEmptyString(character.cv)) continue;
-      if (!cvNames.has(normalize(character.cv))) {
-        badCharacterRefs += 1;
-        issue('error', 'CHARACTER_CV_ORPHAN', `CharacterData의 CV '${character.cv}'가 CharacterVoiceData에 없습니다.`, {
-          animeId: anime.id,
-          animeTitle: anime.title,
-          character: character.name,
-          cv: character.cv,
-        });
-      }
-    }
-  }
-
-  issue('info', 'CV_SUMMARY', `성우 ${Object.keys(data).length}명 / 캐릭터 연결 ${links}건. 연도·분기 누락 연결 ${missingTime}건.`);
-  issue('info', 'CV_TITLE_SCOPE', `연도·분기가 채워진 CV 연결 중 현재 제목과 일치하지 않는 건수: ${unmatchedCurrentTitles}.`);
-  if (badCharacterRefs === 0) issue('info', 'CV_REVERSE_LINK_OK', 'CharacterData → CharacterVoiceData 성우명 연결은 모두 확인되었습니다.');
-  issue('info', 'CV_MARKET_SCOPE_UNVERIFIED', '현재 데이터 구조에는 국가/언어/활동 시장 메타데이터가 없어 일본 성우 여부를 자동 확정할 수 없습니다.');
+function markdown(report){
+  const escape=v=>String(v).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/[|\r\n]/g,' ');
+  const order={error:0,warning:1,info:2};
+  const sorted=[...report.issues].sort((a,b)=>order[a.level]-order[b.level]);
+  const groups=new Map();
+  for(const i of sorted){const k=`${i.level} | ${i.code}`;groups.set(k,(groups.get(k)||0)+1);}
+  return `# 데이터 검사 ${report.ok?'통과':'실패'}\n\n연도: ${report.stats.years.join(', ')} · 오류 ${report.counts.error} · 경고 ${report.counts.warning} · 참고 ${report.counts.info}\n\n`+
+    '## 항목별 요약\n\n| 구분 | 코드 | 건수 |\n|---|---|---|\n'+[...groups].map(([k,n])=>`| ${k} | ${n} |`).join('\n')+'\n\n'+
+    '## 상세 결과\n\n| 구분 | 코드 | 파일 | 위치 | 내용 |\n|---|---|---|---|---|\n'+sorted.map(i=>`| ${i.level} | ${i.code} | ${escape(i.file)} | ${escape(i.context)} | ${escape(i.message)} |`).join('\n')+'\n';
 }
-
-function checkSongs(ctx, animeMap, cinemaMap) {
-  const data = ctx[`AnimeSongs_${YEAR}`];
-  if (!Array.isArray(data)) return;
-  const allIds = new Set([...animeMap.keys(), ...cinemaMap.keys()]);
-
-  for (const [index, item] of data.entries()) {
-    if (!isObject(item)) { issue('error', 'SONG_ITEM_INVALID', `AnimeSongs[${index}]가 객체가 아닙니다.`, { index }); continue; }
-    if (item.year !== YEAR) issue('error', 'SONG_YEAR_MISMATCH', `AnimeSongs[${index}] year=${item.year}`, { index });
-    if (!allIds.has(String(item.id))) issue('warning', 'SONG_ANIME_ORPHAN', `AnimeSongs[${index}] ID ${item.id}가 Anime/Cinema에 없습니다.`, { index, id: item.id });
-    if (!nonEmptyString(item.animeTitle)) issue('warning', 'SONG_ANIME_TITLE_MISSING', `AnimeSongs[${index}] animeTitle이 없습니다. (ID ${item.id})`, { index, id: item.id });
-    if (!Array.isArray(item.songs)) { issue('error', 'SONGS_NOT_ARRAY', `AnimeSongs[${index}].songs가 배열이 아닙니다.`, { index, id: item.id }); continue; }
-    const seen = new Set();
-    for (const [songIndex, song] of item.songs.entries()) {
-      if (!isObject(song)) { issue('error', 'SONG_ENTRY_INVALID', `AnimeSongs[${index}].songs[${songIndex}]가 객체가 아닙니다.`, { index, songIndex }); continue; }
-      if (!nonEmptyString(song.type)) issue('warning', 'SONG_TYPE_MISSING', `곡 type 누락: ${item.id}`, { index, songIndex });
-      if (!nonEmptyString(song.title)) issue('warning', 'SONG_TITLE_MISSING', `곡 title 누락: ${item.id}`, { index, songIndex });
-      const key = `${normalize(song.type)}|${normalize(song.title)}|${normalize(song.artist)}`;
-      if (seen.has(key)) issue('warning', 'DUPLICATE_SONG', `동일 곡이 작품 ${item.id} 안에서 반복됩니다: ${song.title}`, { id: item.id });
-      seen.add(key);
+function runCli(argv=process.argv.slice(2)){
+  let years,relationshipsOnly=false;
+  for(let i=0;i<argv.length;i++){
+    if(argv[i]==='--relationships-only')relationshipsOnly=true;
+    else if(argv[i]==='--year'){
+      const raw=argv[++i]||'';
+      if(!/^\d{4}(,\d{4})*$/.test(raw)){console.error('--year 뒤에 2026 또는 2026,2027 형식으로 입력하세요.');process.exitCode=2;return;}
+      years=raw.split(',').map(Number);
+      if(years.some(y=>y<2000||y>2200)){console.error('연도는 2000~2200 사이여야 합니다.');process.exitCode=2;return;}
     }
+    else if(/^\d{4}$/.test(argv[i]))years=[Number(argv[i])];
+    else if(['--help','-h'].includes(argv[i])){console.log('node dataCollector/dataValidator.js [--year 2026,2027] [--relationships-only]');return;}
+    else{console.error(`알 수 없는 옵션: ${argv[i]}`);process.exitCode=2;return;}
   }
+  const report=validateProject({years,relationshipsOnly}),dir=path.resolve(__dirname,'..','reports');fs.mkdirSync(dir,{recursive:true});
+  const name=relationshipsOnly?'data-relationships':'data-validation';
+  fs.writeFileSync(path.join(dir,`${name}.json`),JSON.stringify(report,null,2)+'\n');fs.writeFileSync(path.join(dir,`${name}.md`),markdown(report));
+  console.log(`데이터 검사 ${report.ok?'통과':'실패'}: 오류 ${report.counts.error}, 경고 ${report.counts.warning}, 참고 ${report.counts.info}`);
+  const errors=report.issues.filter(i=>i.level==='error');
+  for(const i of errors.slice(0,30))console.log(`[ERROR ${i.code}] ${i.file} ${i.context}: ${i.message}`);
+  if(errors.length>30)console.log(`... 나머지 오류 ${errors.length-30}건은 reports/${name}.md에서 확인하세요.`);
+  const warningGroups=new Map();
+  for(const i of report.issues.filter(i=>i.level==='warning'))warningGroups.set(i.code,(warningGroups.get(i.code)||0)+1);
+  for(const [code,count]of warningGroups)console.log(`[WARNING ${code}] ${count}건 (개별 위치는 reports/${name}.md 참고)`);
+  console.log(`상세 결과: reports/${name}.md`);
+  if(process.env.GITHUB_STEP_SUMMARY)fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY,markdown(report));
+  process.exitCode=report.ok?0:1;return report;
 }
-
-function checkEpisodes(ctx, animeMap) {
-  const data = ctx[`animeEPData_${YEAR}`];
-  if (!isObject(data)) return;
-  for (const [animeId, episodes] of Object.entries(data)) {
-    if (!animeMap.has(animeId)) issue('warning', 'EP_ANIME_ORPHAN', `animeEPData ID ${animeId}가 AnimeList에 없습니다.`, { animeId });
-    if (!Array.isArray(episodes)) { issue('error', 'EP_DATA_INVALID', `animeEPData[${animeId}]가 배열이 아닙니다.`, { animeId }); continue; }
-    const seen = new Set();
-    for (const [index, ep] of episodes.entries()) {
-      if (!isObject(ep)) { issue('error', 'EP_ENTRY_INVALID', `animeEPData[${animeId}][${index}]가 객체가 아닙니다.`, { animeId, index }); continue; }
-      const key = normalize(ep['episode no']);
-      if (!key) issue('warning', 'EP_NO_MISSING', `작품 ${animeId}의 ${index}번째 에피소드 번호가 없습니다.`, { animeId, index });
-      if (key && seen.has(key)) issue('warning', 'EP_DUPLICATE_NO', `작품 ${animeId}에서 episode no '${ep['episode no']}'가 반복됩니다.`, { animeId });
-      seen.add(key);
-    }
-  }
-}
-
-function checkRookie(ctx) {
-  const data = ctx[`RookieCVData_${YEAR}`];
-  if (!isObject(data)) return;
-  const ranks = new Map();
-  let scoreMismatch = 0;
-  for (const [key, person] of Object.entries(data)) {
-    if (!isObject(person)) { issue('error', 'ROOKIE_INVALID', `RookieCVData '${key}'가 객체가 아닙니다.`, { key }); continue; }
-    if (!nonEmptyString(person.name)) issue('warning', 'ROOKIE_NAME_MISSING', `Rookie '${key}' name 누락`, { key });
-    if (person.rank !== undefined) ranks.set(String(person.rank), (ranks.get(String(person.rank)) || 0) + 1);
-    if (isObject(person.scoreBreakdown) && typeof person.score === 'number') {
-      const sum = Object.values(person.scoreBreakdown).reduce((acc, v) => acc + (Number(v) || 0), 0);
-      if (sum !== person.score) {
-        scoreMismatch += 1;
-        issue('error', 'ROOKIE_SCORE_MISMATCH', `Rookie '${key}' score=${person.score}, breakdown 합계=${sum}`, { key });
-      }
-    }
-  }
-  for (const [rank, count] of ranks.entries()) if (count > 1) issue('error', 'ROOKIE_DUPLICATE_RANK', `Rookie rank ${rank}가 ${count}명에게 중복됩니다.`, { rank, count });
-  issue('info', 'ROOKIE_SUMMARY', `루키 성우 ${Object.keys(data).length}명 검사. 점수 불일치 ${scoreMismatch}건.`);
-}
-
-function checkResolveYear(ctx) {
-  const file = path.join(ROOT, 'data', 'resolveYear.js');
-  if (!fs.existsSync(file)) return;
-  const source = fs.readFileSync(file, 'utf8');
-  const pairRegex = /\[\s*["'`]([^"'`]+)["'`]\s*,\s*["'`]([^"'`]+)["'`]\s*\]/g;
-  let match;
-  while ((match = pairRegex.exec(source))) {
-    const [, alias, prefix] = match;
-    const key = `${prefix}_${YEAR}`;
-    if (ctx[key] === undefined) {
-      issue('error', 'RESOLVEYEAR_MAPPING_BROKEN', `resolveYear.js: alias '${alias}'가 찾는 '${key}' 변수가 없습니다.`, { alias, prefix, expected: key });
-    }
-  }
-}
-
-function checkHtmlLocalScripts() {
-  const htmlFiles = [];
-  function walk(dir) {
-    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-      if (entry.name === '.git') continue;
-      const full = path.join(dir, entry.name);
-      if (entry.isDirectory()) walk(full);
-      else if (entry.isFile() && entry.name.endsWith('.html')) htmlFiles.push(full);
-    }
-  }
-  walk(ROOT);
-
-  const scriptRegex = /<script\s+[^>]*src=["']([^"']+)["'][^>]*>/gi;
-  for (const html of htmlFiles) {
-    const source = fs.readFileSync(html, 'utf8');
-    let match;
-    while ((match = scriptRegex.exec(source))) {
-      const src = match[1];
-      if (/^(https?:)?\/\//i.test(src) || src.startsWith('data:') || src.startsWith('blob:')) continue;
-      const clean = src.split('#')[0].split('?')[0];
-      const resolved = path.resolve(path.dirname(html), clean);
-      if (!fs.existsSync(resolved)) {
-        issue('error', 'HTML_LOCAL_SCRIPT_MISSING', `${path.relative(ROOT, html)}가 존재하지 않는 스크립트를 참조합니다: ${src}`, { html: path.relative(ROOT, html), src });
-      }
-    }
-  }
-}
-
-function collectCounts(ctx) {
-  const result = {};
-  for (const [key, value] of Object.entries(ctx)) {
-    if (Array.isArray(value)) result[key] = value.length;
-    else if (isObject(value)) result[key] = Object.keys(value).length;
-  }
-  return result;
-}
-
-function print(ctx) {
-  console.log(`\nAnimeAwards Data Validator — ${YEAR}`);
-  console.log('----------------------------------------');
-
-  console.log('\nDATASET');
-  for (const [key, count] of Object.entries(collectCounts(ctx || {}))) {
-    console.log(`- ${key}: ${count}`);
-  }
-
-  for (const level of ['error', 'warning', 'info']) {
-    const list = issues[level];
-    if (!list.length) continue;
-    console.log(`\n${level.toUpperCase()} (${list.length})`);
-    const max = level === 'info' ? 30 : 100;
-    for (const item of list.slice(0, max)) console.log(`- [${item.code}] ${item.message}`);
-    if (list.length > max) console.log(`... ${list.length - max}건 생략`);
-  }
-
-  const report = {
-    generatedAt: new Date().toISOString(),
-    year: YEAR,
-    counts: collectCounts(ctx || {}),
-    issues,
-  };
-  const reportPath = path.join(DATA_DIR, `validator-report-${YEAR}.json`);
-  fs.writeFileSync(reportPath, JSON.stringify(report, null, 2), 'utf8');
-
-  console.log('\nSUMMARY');
-  console.log(`Errors: ${issues.error.length}`);
-  console.log(`Warnings: ${issues.warning.length}`);
-  console.log(`Info: ${issues.info.length}`);
-  console.log(`Report: ${path.relative(ROOT, reportPath)}`);
-}
-
-function main() {
-  const ctx = readDataFiles();
-  checkManifest(ctx);
-  checkDatasetPresence(ctx);
-  const catalog = Array.isArray(ctx[`AnimeCatalog_${YEAR}`]) ? ctx[`AnimeCatalog_${YEAR}`] : [];
-  const animeList = catalog.filter(item => item?.day !== 'Cinema');
-  const cinemaData = catalog.filter(item => item?.day === 'Cinema');
-  const animeMap = checkAnimeList(ctx, animeList);
-  const cinemaMap = new Map(cinemaData.map(x => [String(x.id), x]));
-  const characterData = Array.isArray(ctx[`CharacterData_${YEAR}`]) ? ctx[`CharacterData_${YEAR}`] : [];
-
-  checkCharacterData(ctx, animeMap, cinemaMap);
-  checkCVData(ctx, animeMap, cinemaMap, characterData);
-  checkSongs(ctx, animeMap, cinemaMap);
-  checkEpisodes(ctx, animeMap);
-  checkRookie(ctx);
-  checkResolveYear(ctx);
-  checkHtmlLocalScripts();
-
-  print(ctx);
-  process.exitCode = issues.error.length > 0 ? 1 : 0;
-}
-
-main();
+module.exports={DATASETS,validateProject,markdown,runCli};
+if(require.main===module)runCli();

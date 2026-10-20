@@ -1,0 +1,13 @@
+{
+  "optionalPortraitFields": ["cvimg", "director_img"],
+  "missingAssets": [
+    {
+      "path": "image/ost/54863-2.webp",
+      "reason": "기존 운영 방침: 이 OST의 보조 앨범 이미지 누락은 사용자가 허용했습니다."
+    },
+    {
+      "path": "image/ost/63011-2.webp",
+      "reason": "기존 운영 방침: 이 OST의 보조 앨범 이미지 누락은 사용자가 허용했습니다."
+    }
+  ]
+}

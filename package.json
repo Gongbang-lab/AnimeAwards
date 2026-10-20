@@ -1,0 +1,10 @@
+{
+  "name": "animeawards",
+  "private": true,
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "validate": "node dataCollector/dataValidator.js",
+    "validate:relationships": "node dataCollector/dataValidator.js --relationships-only",
+    "test:validator": "node --test dataCollector/dataValidator.test.js"
+  }
+}

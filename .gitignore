@@ -19,3 +19,6 @@ build/
 .env
 
 .cache-thumbnail-tools/
+
+# Generated validation reports
+reports/

@@ -82,6 +82,20 @@ firebase deploy --only functions,database
 - 후보 카탈로그에 포함되지 않은 시즌, 부문 또는 후보 ID는 Cloud Function이 거부합니다. 새로운 연도나 부문을 추가할 때는 데이터와 시상 설정을 업데이트한 뒤 후보 카탈로그를 다시 생성하고 배포하세요.
 - 브라우저에 포함된 Firebase 설정은 클라이언트 식별용입니다. 데이터 보호는 Authentication, Cloud Function 검증, Realtime Database Rules에 의존합니다.
 
+## 배포 전 데이터 검사
+
+프로젝트 루트의 `validate-data.cmd`를 더블클릭하거나 다음 명령을 실행하세요. Node.js 22 이상이 필요하며 추가 패키지 설치는 필요 없습니다.
+
+```sh
+node dataCollector/dataValidator.js
+```
+
+공개 연도 전체의 데이터 구조·연결·문법·파일 경로를 검사하고, `reports/data-validation.md`에 결과를 저장합니다. 의도적으로 비워둔 성우·감독 사진은 배포를 막는 오류로 처리하지 않습니다. 원본 데이터는 변경하지 않습니다.
+
+GitHub에 올리면 `main` push 및 PR에서 **Data validation** 검사가 자동 실행됩니다. 이 검사는 기존 Pages 배포를 직접 차단하지 않습니다.
+
+명령 옵션, 예외 설정, GitHub 결과 확인 방법은 [데이터 검사 안내](dataCollector/README-validation.md)를 참고하세요.
+
 ## 라이선스
 
 [MIT License](./LICENSE)

@@ -63,9 +63,8 @@
             }, 2200);
         }
         const participantCount = Number(cachedVoteData._participants) || 0;
-        // Step 2 nominee cards use page-specific classes, while sharing the
-        // same vote key and badge markup as the Step 1 cards.
-        document.querySelectorAll('.card, .song-card, .step2-cv-card, .step2-char-card').forEach(card => {
+        // Both steps expose the vote identifier, independently of their card design.
+        document.querySelectorAll('[data-anime-id]').forEach(card => {
             const rawIdentifier = card.getAttribute('data-anime-id');
             const identifier = typeof global.getVoteCandidateKey === "function"
                 ? global.getVoteCandidateKey(rawIdentifier)
