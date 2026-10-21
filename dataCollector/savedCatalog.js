@@ -59,7 +59,7 @@ window.createSavedCatalog = function ({ host, records, onSelect, searchLabel = '
                 span.textContent = text;
                 card.append(span);
             }
-            card.addEventListener('click', () => onSelect(item.key));
+            card.addEventListener('click', () => onSelect(item.key, quarter));
             cards.append(card);
             }
             section.append(heading, cards);

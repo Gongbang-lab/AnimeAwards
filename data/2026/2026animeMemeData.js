@@ -10,14 +10,6 @@ var AnimeMemeData_2026 = [
     "src2_title": "전투씬 2"
   },
   {
-    "id": "meme_002",
-    "name": "엑스칼리버",
-    "origin": "Fate/strange Fake",
-    "quarter": "1분기",
-    "year": 2026,
-    "src1": "image/meme/엑스칼리버.mp4"
-  },
-  {
     "id": "meme_003",
     "name": "프리렌 우는 장면",
     "origin": "장송의 프리렌 2기",
