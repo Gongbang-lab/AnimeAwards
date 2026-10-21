@@ -138,15 +138,6 @@ var AnimeMemeData_2026 = [
     "src2": "image/meme/20세기 전기 목록2.webp"
   },
   {
-    "id": "meme_020",
-    "name": "엉덩이 태고",
-    "origin": "너를 너무너무너무너무 좋아하는 100명의 그녀",
-    "quarter": "3분기",
-    "year": 2026,
-    "src1": "image/meme/100등분1.gif",
-    "src2": "image/meme/100등분2.gif"
-  },
-  {
     "id": "meme_022",
     "name": "아냐네코 (더러움 주의)",
     "origin": "담배 고양이",
