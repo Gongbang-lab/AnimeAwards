@@ -225,5 +225,14 @@ var AnimeMemeData_2026 = [
     "quarter": "1분기",
     "year": 2026,
     "src1": "image/meme/카구야 손가락.mp4"
+  },
+  {
+    "id": "meme_032",
+    "name": "마지막 스퍼트",
+    "origin": "스틸 볼 런",
+    "quarter": "1분기",
+    "year": 2026,
+    "src1": "image/meme/마지막 스퍼트_1.mp4",
+    "src2": "image/meme/마지막 스퍼트_2.mp4"
   }
 ];
