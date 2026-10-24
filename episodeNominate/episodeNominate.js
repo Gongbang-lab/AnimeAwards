@@ -274,10 +274,8 @@ function renderStep2Cards() {
     const existingTitle = els.step2.querySelector('.step2-title');
     if (existingTitle) existingTitle.remove();
 
-    const titleH2 = document.createElement("h2");
-    titleH2.className = "step2-title";
-    titleH2.style.cssText = "color:var(--gold); margin-bottom:20px; font-size: 1.5rem; width: 100%; text-align: left;";
-    titleH2.textContent = "최종 수상 에피소드를 선택하세요";
+    const titleH2 = NominateCommon.createStepHeading();
+    titleH2.classList.add("step2-title");
     els.step2.insertBefore(titleH2, els.cardsContainer);
 
     list.forEach(item => {

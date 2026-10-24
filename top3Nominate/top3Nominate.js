@@ -179,7 +179,7 @@ function createCard(anime, isStep2, searchTerm = "") {
     div.innerHTML = `
         <div class="card-badge">${anime.quarter}</div>
         <div class="rank-overlay"></div> 
-        <img src="../${anime.thumbnail}" onerror="this.src='https://placehold.co/180x240?text=No+Image'" alt="${anime.title}">
+        <img src="../${anime.thumbnail}" onerror="this.onerror=null;this.src='../image/no-image.svg'" alt="${anime.title}">
         <div class="card-info">
             <div class="card-title">${displayTitle}</div>
             <div class="card-studio">${Array.isArray(anime.studio) ? anime.studio.join(', ') : (anime.studio || '정보 없음')}</div>

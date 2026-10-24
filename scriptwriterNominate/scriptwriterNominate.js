@@ -54,6 +54,10 @@ AwardPage.onReady(() => {
 function renderCards(searchTerm = "") {
     const grid = document.getElementById("card-grid");
     if (!grid) return;
+    grid.classList.toggle("final-nominee-grid", scriptwriterState.step === 2);
+    const heading = grid.parentElement.querySelector(".nominate-step-heading");
+    if (scriptwriterState.step === 2 && !heading) grid.before(NominateCommon.createStepHeading());
+    else if (scriptwriterState.step !== 2) heading?.remove();
 
     const term = searchTerm.toLowerCase().trim();
     const source = scriptwriterState.step === 1
@@ -102,7 +106,7 @@ function createCard(anime) {
             <div class="card-selection-rate" style="display:none;">0%</div>
             <div class="card-badge">${anime.quarter || "-"}</div>
             <div class="card-thumb">
-                <img src="../${anime.thumbnail}" alt="${anime.title}" onerror="this.src='../image/placeholder.webp'">
+                <img src="../${anime.thumbnail}" alt="${anime.title}" onerror="this.onerror=null;this.src='../image/no-image.svg'">
             </div>
             <div class="step2-card-info">
                 <div class="card-title">${anime.title}</div>
@@ -113,7 +117,7 @@ function createCard(anime) {
         card.innerHTML = `
             <div class="card-selection-rate" style="display:none;">0%</div>
             <div class="card-badge">${anime.quarter || "-"}</div>
-            <img src="../${anime.thumbnail}" alt="${anime.title}" loading="lazy" onerror="this.src='../image/placeholder.webp'">
+            <img src="../${anime.thumbnail}" alt="${anime.title}" loading="lazy" onerror="this.onerror=null;this.src='../image/no-image.svg'">
             <div class="card-info">
                 <div class="card-title">${anime.title}</div>
                 <div class="card-writer">각본: ${getWriterNames(anime).join(", ") || "정보 없음"}</div>

@@ -156,7 +156,7 @@ function createCard(anime) {
     card.innerHTML = `
         <div class="card-selection-rate" style="display:none;">0/0</div>
         ${badgeMarkup}
-        <img src="${imgPath}" onerror="this.src='https://placehold.co/400x600/2f3542/ffffff?text=No+Image'" loading="lazy">
+        <img src="${imgPath}" onerror="this.onerror=null;this.src='../image/no-image.svg'" loading="lazy">
         <div class="card-info">
             <div class="card-title">${anime.title}</div>
         </div>
@@ -359,9 +359,7 @@ function goStep2() {
     const leftArea = document.getElementById("left-area");
     leftArea.innerHTML = "";
     
-    const h2 = document.createElement("h2");
-    h2.style.cssText = "color:var(--text); margin-bottom:20px; font-size: 1.5rem; text-align: left;";
-    h2.textContent = "최종 후보를 선택하세요";
+    const h2 = NominateCommon.createStepHeading();
     leftArea.appendChild(h2);
 
     const gridDiv = document.createElement("div");

@@ -260,7 +260,7 @@ function showWorksModal(item) {
         gridBody.innerHTML = item.works.map(work => `
             <div class="work-card">
                 <div style="background:#000; width:100%;">
-                    <img src="../${work.thumbnail}" alt="${work.title}" loading="lazy" onerror="this.src='https://via.placeholder.com/150x200?text=No+Image'">
+                    <img src="../${work.thumbnail}" alt="${work.title}" loading="lazy" onerror="this.onerror=null;this.src='../image/no-image.svg'">
                 </div>
                 <div class="work-card-info">
                     <div class="work-card-title">${work.title}</div>

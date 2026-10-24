@@ -146,7 +146,7 @@ function createCard(anime) {
     card.innerHTML = `
         <div class="card-selection-rate" style="display:none;">0/0</div>
         <div class="card-badge">${QUARTER_MAP[anime.quarter] || anime.quarter}</div>
-        <img src="../${anime.thumbnail}" onerror="this.src='https://placehold.co/400x600/2f3542/ffffff?text=No+Image'">
+        <img src="../${anime.thumbnail}" onerror="this.onerror=null;this.src='../image/no-image.svg'">
         <div class="card-info">
             <div class="card-title">${anime.title}</div>
             <div class="card-studio">${anime.studio || ''}</div>
@@ -222,9 +222,9 @@ function goStep2() {
 
     const leftArea = document.getElementById("left-area");
     leftArea.innerHTML = `
-        <h2 style="color:var(--gold); margin-bottom:20px; font-size: 1.5rem; text-align: left;">최종 수상작을 선택하세요</h2>
         <div id="step2-grid"></div>
     `;
+    leftArea.prepend(NominateCommon.createStepHeading());
 
     const gridDiv = document.getElementById("step2-grid");
     nominateState.selectedItems.forEach(anime => {

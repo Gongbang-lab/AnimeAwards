@@ -603,7 +603,8 @@ function createCVCard(cv, step) {
     rateBadge.style.display = "none";
     rateBadge.textContent = "0%";
 
-    const workBadge = document.createElement("div");
+    const workBadge = document.createElement("button");
+    workBadge.type = "button";
 
     workBadge.className = "card-badge";
     workBadge.textContent = `${cv.characters.length}작품`;
@@ -808,18 +809,8 @@ function goStep2() {
 
         if (!mainContent) return;
 
-        mainContent.innerHTML = `
-            <h2 style="
-                color:var(--gold);
-                margin-bottom:20px;
-                font-size:1.5rem;
-                text-align:left;
-            ">
-                최종 수상자를 선택하세요
-            </h2>
-
-            <div id="step2-grid"></div>
-        `;
+        mainContent.innerHTML = '<div id="step2-grid"></div>';
+        mainContent.prepend(NominateCommon.createStepHeading());
 
         const grid =
             safeGet("step2-grid");
@@ -865,13 +856,19 @@ function createStep2Card(cv) {
         "0%";
 
     const badge =
-        document.createElement("div");
+        document.createElement("button");
+    badge.type = "button";
 
     badge.className =
         "card-badge";
 
     badge.textContent =
         `${cv.characters.length}작품`;
+
+    badge.addEventListener("click", event => {
+        event.stopPropagation();
+        openDetailModal(cv);
+    });
 
     const thumb =
         document.createElement("div");

@@ -265,7 +265,7 @@ function updatePreview() {
 
 function renderSongStep2() {
     const container = document.getElementById("left-area");
-    container.innerHTML = `<h2 style="color:var(--gold); margin-bottom:20px; font-size: 1.5rem;">최종 수상작을 선택하세요</h2>`;
+    container.replaceChildren(NominateCommon.createStepHeading());
 
     const grid = document.createElement("div");
     grid.id = "step2-grid"; 
@@ -279,7 +279,7 @@ function renderSongStep2() {
         card.innerHTML = `
             <div class="card-badge">${displayQuarter}</div>
             <div class="card-thumb">
-                <img src="${song.thumbnail}" alt="thumbnail" onerror="this.src='../image/no-image.svg'">
+                <img src="${song.thumbnail}" alt="thumbnail" onerror="this.onerror=null;this.src='../image/no-image.svg'">
                 <button type="button" class="play-overlay" aria-label="영상 재생">
                     <span class="play-icon">▶</span>
                 </button>

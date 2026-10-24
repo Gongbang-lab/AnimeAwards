@@ -33,6 +33,45 @@
 }
 .nominate-ui .sidebar .action-buttons:has(> .button-row) { grid-template-columns: 1fr; }
 .nominate-ui .sidebar .action-buttons > .button-row { margin-top: 0; }
+/* Step 2 grids share widths by image ratio. Step 1 and detail grids keep their layouts. */
+.nominate-ui {
+  --final-card-min-width: 180px;
+  --final-grid-gap: 15px;
+  --final-grid-padding: 20px;
+  --final-grid-mobile-columns: repeat(2, minmax(0, 1fr));
+}
+.nominate-ui .content-area #step2-grid:has(> :is(.step2-char-card, .step2-cv-card, .step2-director-card)) {
+  --final-card-min-width: 160px;
+}
+.nominate-ui .content-area #step2-grid:has(> .step2-song-card),
+.nominate-ui .content-area .step2-meme-grid {
+  --final-card-min-width: 280px;
+  --final-grid-mobile-columns: minmax(0, 1fr);
+}
+.nominate-ui .content-area :is(#step2-grid, #final-nominees-grid, #cards-container, .step2-meme-grid, .final-nominee-grid) {
+  /* Override legacy page rules and posterCards.css, which use !important. */
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(min(var(--final-card-min-width), 100%), 1fr)) !important;
+  gap: var(--final-grid-gap) !important;
+  padding: var(--final-grid-padding) !important;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  align-items: start;
+}
+.nominate-ui .content-area :is(#step2-grid, #final-nominees-grid, #cards-container, .step2-meme-grid, .final-nominee-grid) > :is(.card, .anime-card, .step2-original-card, .step2-char-card, .step2-cv-card, .step2-director-card, .step2-song-card) {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  justify-self: stretch;
+}
+@media (max-width: 600px) {
+  .nominate-ui .content-area :is(#step2-grid, #final-nominees-grid, #cards-container, .step2-meme-grid, .final-nominee-grid) {
+    grid-template-columns: var(--final-grid-mobile-columns) !important;
+    padding: 16px 12px !important;
+  }
+}
 /* Candidate text and feedback share a scale across image types. */
 .nominate-ui .content-area :is(.card, .anime-item, .couple-card, .anime-card, .step2-original-card, .song-card, .step2-song-card, .step2-char-card, .step2-cv-card, .step2-director-card) {
   border: 2px solid var(--line); border-radius: 8px;
@@ -45,12 +84,42 @@
 .nominate-ui .content-area :is(.card, .anime-item, .couple-card, .anime-card, .step2-original-card, .song-card, .step2-song-card, .step2-char-card, .step2-cv-card, .step2-director-card).selected {
   border-color: var(--gold); background: var(--gold-tint); box-shadow: none; transform: none;
 }
-.nominate-ui .content-area :is(.card-info, .step2-card-info) { padding: 12px; text-align: center; }
+.nominate-ui .content-area :is(.card-info, .step2-card-info, .card-info-area) { padding: 12px; text-align: center; }
 .nominate-ui .content-area :is(.card-title, .song-title, .anime-item .anime-title) {
   display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2;
   font-size: .95rem; font-weight: 600; line-height: 1.5; min-height: 3em;
   margin: 0 0 6px; color: var(--text); text-align: center;
   white-space: normal; overflow: hidden; overflow-wrap: anywhere; text-overflow: ellipsis;
+}
+.nominate-ui .content-area :is(.card-studio, .composer-title, .card-ep-label) {
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2;
+  font-size: .8rem; font-weight: 400; line-height: 1.5;
+  min-height: 3em; max-height: 3em; margin: 0;
+  color: var(--text-muted); text-align: center; white-space: normal;
+  overflow: hidden; overflow-wrap: anywhere; text-overflow: ellipsis;
+}
+.nominate-ui .content-area :is(#step2-grid, #final-nominees-grid, #cards-container, .step2-meme-grid, .final-nominee-grid) :is(.card-info, .step2-card-info, .card-info-area) {
+  display: flex; flex-direction: column; box-sizing: border-box;
+  /* Two title lines, two subtitle lines, 6px title margin and 24px padding. */
+  min-height: calc(5.25rem + 30px);
+}
+.nominate-ui .content-area .card-badge {
+  position: absolute; top: 8px; right: 8px; z-index: 12;
+  box-sizing: border-box; max-width: calc(100% - 16px); margin: 0;
+  padding: 4px 8px; border: 1px solid var(--gold); border-radius: 4px;
+  background: var(--surface-sunken); color: var(--gold);
+  font-family: inherit; font-size: .75rem; font-weight: 700; line-height: 1.4;
+  text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  transform: none; transition: background-color .15s, color .15s;
+}
+.nominate-ui .content-area .card-badge:hover {
+  background: var(--gold); color: var(--bg); transform: none; box-shadow: none;
+}
+.nominate-ui .content-area button.card-badge { cursor: pointer; }
+.nominate-ui .content-area .card-badge:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+.nominate-ui .content-area .nominate-step-heading {
+  margin: 0 0 20px; color: var(--text); font-size: 1.5rem;
+  font-weight: 700; line-height: 1.5; text-align: left; overflow-wrap: anywhere;
 }
 .nominate-ui .ui-empty { color: var(--text-muted); font-size: .85rem; line-height: 1.6; text-align: center; padding: 20px 12px; }
 /* Action buttons only: modal close/confirm controls are deliberately excluded. */

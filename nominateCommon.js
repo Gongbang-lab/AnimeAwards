@@ -203,7 +203,15 @@
         choose((!searching && entries.find(entry => entry.label === selectedDays.get(key))) || entries[0]);
     }
 
+    function createStepHeading(text = '최종 수상 후보를 선택하세요') {
+        const heading = document.createElement('h2');
+        heading.className = 'nominate-step-heading';
+        heading.textContent = text;
+        return heading;
+    }
+
     global.NominateCommon = {
+        createStepHeading,
         setupDayButtons,
         setupPreviewItem,
         imageSource,
@@ -214,6 +222,7 @@
         listenToVoteRates,
         waitForFirebaseAndListen
     };
+    if (document.body?.classList.contains('nominate-ui')) installImageFallback();
 })(window);
 
 

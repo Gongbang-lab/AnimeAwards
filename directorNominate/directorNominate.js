@@ -75,9 +75,7 @@ function renderDirectorGrid(searchTerm = "") {
     // Step 2: 최종 수상자 선택 렌더링
     // ==========================================
     if (dirState.step === 2) {
-        const titleH2 = document.createElement("h2");
-        titleH2.style.cssText = "color:var(--gold); margin-bottom:20px; font-size: 1.5rem; text-align: left;";
-        titleH2.textContent = "최종 수상자를 선택하세요";
+        const titleH2 = NominateCommon.createStepHeading();
         container.appendChild(titleH2);
 
         const finalGrid = document.createElement("div");
@@ -156,7 +154,7 @@ function createDirectorCard(data, step) {
 
         card.innerHTML = `
             <div class="card-selection-rate" style="display:none;">0/0</div>
-            <div class="card-badge">${worksCount}작품</div>
+            <button type="button" class="card-badge">${worksCount}작품</button>
             <div class="card-thumb">
                 <img src="${NominateCommon.imageSource(data.director_img)}" alt="${data.director}">
             </div>
@@ -193,7 +191,8 @@ function createDirectorCard(data, step) {
     rateBadge.style.display = "none";
     rateBadge.textContent = "0/0";
 
-    const badge = document.createElement("div");
+    const badge = document.createElement("button");
+    badge.type = "button";
     badge.className = "card-badge";
     badge.textContent = `${worksCount}작품`;
 

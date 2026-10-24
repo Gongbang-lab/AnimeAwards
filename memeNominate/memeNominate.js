@@ -67,7 +67,7 @@ function renderMemeGrid() {
         resetPersonalCardMedia();
         grid.replaceChildren();
         const cards = document.createElement('div');
-        cards.className = 'meme-vote-grid';
+        cards.className = 'meme-vote-grid step2-meme-grid';
         for (const id of memeState.candidateIds) {
             const meme = findMeme(id);
             if (meme) cards.appendChild(createMemeCard(meme));

@@ -190,7 +190,7 @@ function renderStep1(searchTerm = "") {
                     card.innerHTML = `
                         <div class="card-selection-rate" style="display:none;">0/0</div>
                         <div class="card-badge">CV. ${char.cv}</div>
-                        <img src="../${char.thumbnail}" alt="${char.name}" onerror="this.src='https://via.placeholder.com/200x280?text=No+Img'">
+                        <img src="../${char.thumbnail}" alt="${char.name}" onerror="this.onerror=null;this.src='../image/no-image.svg'">
                         <div class="card-info">
                         <div class="card-title">${displayName}</div>
                         <div class="card-studio">${char.animeTitle}</div>
@@ -280,9 +280,9 @@ function goStep2() {
     const left = document.getElementById("left-area");
 
     left.innerHTML = `
-        <h2 style="color:var(--gold); margin-bottom:20px; font-size: 1.5rem; text-align: left;">최종 수상작을 선택하세요</h2>
         <div id="step2-grid"></div>
     `;
+    left.prepend(NominateCommon.createStepHeading());
 
     const grid = document.getElementById("step2-grid");
 
@@ -297,7 +297,7 @@ function goStep2() {
             <div class="card-selection-rate" style="display:none;">0/0</div>
             <div class="card-badge">CV. ${char.cv}</div>
             <div class="card-thumb">
-                <img src="../${char.thumbnail}" alt="${char.name}" onerror="this.src='https://via.placeholder.com/200x280?text=No+Img'">
+                <img src="../${char.thumbnail}" alt="${char.name}" onerror="this.onerror=null;this.src='../image/no-image.svg'">
             </div>
             <div class="step2-card-info">
                 <div class="card-title">${char.name}</div>
