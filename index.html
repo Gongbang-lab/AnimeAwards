@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <title>2026 ANIME AWARDS</title>
   <link rel="stylesheet" href="./main.css" />
+  <link rel="stylesheet" href="./endingPreview.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   <link rel="stylesheet" href="./palette-components.css">
 </head>
 <body data-main-page>
@@ -29,13 +29,13 @@
 
 <!-- 🏆 본문 (선택 완료 전까지 숨김) -->
 <div id="content-area">
-  <button id="save-img-btn" class="top-icon-btn" style="right: 90px;" title="이미지 저장">
-    <i class="fas fa-download"></i>
+  <button id="ending-open-btn" class="top-icon-btn" type="button" style="right: 30px;" title="엔딩 보기" aria-label="시상식 엔딩 보기">
+    <i class="fas fa-flag-checkered" aria-hidden="true"></i>
   </button>
-  <button id="reset-result-btn" class="top-icon-btn" style="right: 150px;" title="수상 결과만 초기화">
+  <button id="reset-result-btn" class="top-icon-btn" style="right: 90px;" title="수상 결과만 초기화">
     <i class="fas fa-undo"></i>
   </button>
-  <button id="reset-all-btn" class="top-icon-btn alert-btn" style="right: 210px;" title="전체 초기화 (추가/삭제 카드 포함)">
+  <button id="reset-all-btn" class="top-icon-btn alert-btn" style="right: 150px;" title="전체 초기화 (추가/삭제 카드 포함)">
     <i class="fas fa-trash-restore"></i>
   </button>
 
@@ -63,7 +63,6 @@
               <li><strong>선정:</strong> 각 카테고리 카드를 클릭하면 해당 부문의 수상작을 픽할 수 있습니다.</li>
               <li><strong>추가/삭제:</strong> 하단의 메뉴를 통해 나만의 커스텀 상을 만들거나 뺄 수 있습니다.</li>
               <li><strong>초기화:</strong> 상단의 '수상 결과 초기화(↺)'는 <strong>수상 내역만</strong> 지우며, '전체 초기화'는 <strong>추가/삭제한 카드까지</strong> 전부 맨 처음 상태로 되돌립니다.</li>
-              <li><strong>저장:</strong> 모든 시상이 끝나면 '이미지 저장' 버튼을 눌러 내 결과를 간직해 보세요!</li>
             </ul>
           </section>
 
@@ -182,6 +181,7 @@
 <!-- 5. 페이지 로직 -->
 <script type="text/plain" data-app-src="./personalMemeStorage.js"></script>
 <script type="text/plain" data-app-src="./main.js"></script>
+<script type="text/plain" data-app-src="./endingPreview.js"></script>
 <script type="text/plain" data-app-src="./firebase_service.js" data-module="true"></script>
 <script src="./data/pageLoader.js"></script>
 </body>
