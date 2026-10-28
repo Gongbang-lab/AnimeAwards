@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>애니 OST BGM 수집기 (iTunes + AniList → MAL ID)</title>
+<link rel="stylesheet" href="./savedCatalog.css">
 <style>
 :root{--bg:#0f1115;--card:#181b22;--line:#2a2f3a;--fg:#e6e8ee;--mut:#8b93a5;--ac:#6ea8ff;--warn:#ffb86b}
 *{box-sizing:border-box}
@@ -30,9 +31,30 @@ th,td{border-bottom:1px solid var(--line);padding:5px 8px;text-align:left;white-
 td.t{white-space:normal;min-width:180px}
 tr.sus td{color:var(--warn)}
 label.chk{display:flex;gap:5px;align-items:center;color:var(--mut)}
+body.ost-data-collector.collector-with-year-sidebar{margin-left:340px}
+body.ost-data-collector #collector-year-bar{width:320px}
+#collector-year-bar #ost-library{margin-top:24px;padding:0;border:0;background:transparent}
+#collector-year-bar #ost-library h2{color:var(--text);font-size:17px}
+#collector-year-bar #ost-library label{font-size:13px}
+#collector-year-bar #ost-library .saved-catalog-groups{max-height:none;overflow:visible;padding:0}
+#collector-year-bar #ost-library .catalog-item{margin:0;padding:12px;text-align:left;white-space:normal;background:#170a0e;border:1px solid #4a2a32;color:#e6dcd3;font-weight:400}
+#collector-year-bar #ost-library .catalog-item:hover,
+#collector-year-bar #ost-library .catalog-item[aria-pressed="true"]{background:#33261a;border-color:#c9a55a}
+#collector-year-bar #ost-library .catalog-title{color:var(--text)}
+@media(max-width:700px){
+  body.ost-data-collector.collector-with-year-sidebar{margin-left:192px}
+  body.ost-data-collector #collector-year-bar{width:180px}
+  #collector-year-bar #ost-library .catalog-item{padding:8px}
+  #collector-year-bar #ost-library .catalog-quarter summary{padding:10px}
+}
 </style>
 </head>
-<body>
+<body class="ost-data-collector">
+<section id="ost-library" class="saved-catalog">
+  <h2>전체 작품 · OST 목록</h2>
+  <p class="mut">작품을 선택하면 해당 작품의 OST 앨범을 검색합니다. 수집한 데이터는 JS 복사로 원본 파일에 반영해주세요.</p>
+  <div id="ost-catalog"></div>
+</section>
 <h1>애니 OST BGM 수집기</h1>
 <div class="sub">AniList(작품·음악 스태프) → iTunes 앨범 검색 → 앨범 필터 → 트랙 필터(OP/ED·보컬곡 제외) → 내보내기</div>
 
@@ -85,7 +107,9 @@ label.chk{display:flex;gap:5px;align-items:center;color:var(--mut)}
   <textarea id="prev" readonly rows="12" style="width:100%;margin-top:10px;background:var(--bg);color:var(--fg);border:1px solid var(--line);border-radius:6px;padding:8px;font:12px/1.4 ui-monospace,Consolas,monospace"></textarea>
 </section>
 
+<script type="text/plain" data-collector-data="animeData"></script>
 <script type="text/plain" data-collector-data="animeOSTData"></script>
+<script type="text/plain" data-collector-src="./savedCatalog.js"></script>
 <script type="text/plain" data-collector-code>
 
 const $ = s => document.querySelector(s);
@@ -113,6 +137,59 @@ function jsonp(url) {
 // 제목으로 검색한 YouTube 검색 결과 URL (API 키 불필요): '작품 로마자명 + 트랙 제목 + OST'
 const ytUrl = title => 'https://www.youtube.com/results?search_query=' + encodeURIComponent([anime?.title.romaji, title, 'OST'].filter(Boolean).join(' '));
 let anime = null, composers = '', rows = [], bin = [], sel = [], tcache = {};
+let ostCatalog = null, selectionVersion = 0, albumSearchVersion = 0;
+const animeById = new Map();
+for (const work of CollectorYear.data.AnimeCatalog || []) {
+  const key = String(work.id), previous = animeById.get(key);
+  animeById.set(key, {...work, title: previous?.title || work.title,
+    quarter: getCatalogQuarters([...(previous?.quarter || []), ...getCatalogQuarters(work.quarter)])});
+}
+$('#collector-year-bar').append($('#ost-library'));
+
+function selectAnime(work) {
+  ++selectionVersion;
+  ++albumSearchVersion;
+  anime = work;
+  composers = bin.find(record => String(record.id) === String(work.idMal))?.composer || work.music || '';
+  $('#comp').value = composers;
+  $('#aid').textContent = 'MAL ID: ' + (work.idMal ?? '없음 (수집함에 추가 불가)') + ' · ' + work.title.romaji;
+  $('#q2').value = [...new Set([work.title.native, work.title.romaji].filter(Boolean))].join(' | ');
+  $('#l1').replaceChildren();
+  $('#l2').replaceChildren();
+  sel = []; rows = []; tcache = {}; render();
+  $('#b2').disabled = false;
+  ostCatalog?.render();
+}
+
+async function selectCatalogAnime(id) {
+  const work = animeById.get(String(id));
+  // The catalog uses MAL IDs. Select locally first, even if AniList is unavailable.
+  const title = work?.title || `작품 ID ${id}`;
+  selectAnime({idMal: Number(id), title: {romaji: title}, music: ''});
+  $('#q1').value = title;
+  const version = selectionVersion;
+  st('작품의 원제와 음악 스태프를 불러오는 중...');
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 15000);
+  try {
+    const response = await fetch('https://graphql.anilist.co', {
+      method: 'POST', headers: {'Content-Type': 'application/json'}, signal: controller.signal,
+      body: JSON.stringify({
+        query: 'query($id:Int){Media(idMal:$id,type:ANIME){id idMal title{romaji english native} staff(perPage:25,sort:RELEVANCE){edges{role node{name{full native}}}}}}',
+        variables: {id: Number(id)}
+      })
+    });
+    const payload = await response.json();
+    if (!response.ok || payload.errors?.length || !payload.data?.Media) throw new Error('작품 정보를 가져오지 못했습니다.');
+    if (version !== selectionVersion) return;
+    const media = payload.data.Media;
+    media.music = (media.staff?.edges || []).filter(edge => /music|compos/i.test(edge.role)).map(edge => edge.node.name.full).join(', ');
+    selectAnime(media);
+    $('#b2').click();
+  } catch (error) {
+    if (version === selectionVersion) st('원제 조회에 실패했습니다. 작품은 선택되어 있으므로 앨범 검색어를 입력해 검색할 수 있습니다. ' + error.message, 1);
+  } finally { clearTimeout(timeout); }
+}
 
 // Persist the iTunes album ID; old files can recover it from their track links.
 function albumCollectionId(album) {
@@ -160,6 +237,7 @@ function normalizeOstRecords(records) {
 // 1. AniList: 작품 + 음악 스태프
 $('#b1').onclick = async () => {
   const q = $('#q1').value.trim(); if (!q) return;
+  const version = ++selectionVersion;
   st('AniList 검색 중...');
   try {
     const r = await fetch('https://graphql.anilist.co', {
@@ -170,31 +248,28 @@ $('#b1').onclick = async () => {
       })
     });
     const list = (await r.json()).data.Page.media;
+    if (version !== selectionVersion) return;
     list.forEach(m => m.music = (m.staff?.edges || []).filter(e => /music|compos/i.test(e.role)).map(e => e.node.name.full).join(', '));
     $('#l1').innerHTML = list.map((m, i) => `<div class="item" data-i="${i}"><span>${esc(m.title.romaji)} <span class="mut">${esc(m.title.native || '')}</span><br><span class="mut">Music: ${esc(m.music || '정보 없음')}</span></span><span class="mut" style="text-align:right"><b style="color:${m.idMal ? 'inherit' : 'var(--warn)'}">MAL ID ${m.idMal ?? '없음'}</b><br>${m.seasonYear || ''} ${m.format || ''}</span></div>`).join('') || '<div class="mut">결과 없음</div>';
     document.querySelectorAll('#l1 .item').forEach(el => el.onclick = () => {
-      anime = list[el.dataset.i];
-      composers = anime.music;
-      $('#comp').value = composers;
-      $('#aid').textContent = 'MAL ID: ' + (anime.idMal ?? '없음 (수집함에 추가 불가)') + ' · ' + anime.title.romaji;
-      document.querySelectorAll('#l1 .item').forEach(x => x.classList.remove('sel'));
-      el.classList.add('sel');
-      $('#q2').value = [anime.title.native, anime.title.romaji].filter(Boolean).join(' | ');
+      selectAnime(list[el.dataset.i]);
       $('#b2').click();
     });
     st('');
-  } catch (e) { st(e.message, 1); }
+  } catch (e) { if (version === selectionVersion) st(e.message, 1); }
 };
 
 // 2~3. iTunes 앨범 검색 (여러 검색어 병합)
 $('#b2').onclick = async () => {
   const terms = $('#q2').value.split('|').map(s => s.trim()).filter(Boolean); if (!terms.length) return;
+  const version = ++albumSearchVersion;
   st('iTunes 앨범 검색 중...'); $('#b2').disabled = true;
   sel = []; rows = []; tcache = {}; render();  // 새 검색 시 선택 초기화
   try {
     const c = $('#country').value, seen = new Map();
     for (const t of terms) {
       const d = await jsonp(`https://itunes.apple.com/search?term=${encodeURIComponent(t)}&entity=album&country=${c}&limit=30`);
+      if (version !== albumSearchVersion) return;
       (d.results || []).forEach(a => seen.has(a.collectionId) || seen.set(a.collectionId, a));
     }
     let list = [...seen.values()];
@@ -202,8 +277,8 @@ $('#b2').onclick = async () => {
     $('#l2').innerHTML = list.map((a, i) => `<div class="item" data-i="${i}"><span>${esc(a.collectionName)}<br><span class="mut">${esc(a.artistName)} · ${a.trackCount}곡 · ${esc(a.primaryGenreName || '')}</span></span><span class="mut">${esc((a.releaseDate || '').slice(0, 10))}</span></div>`).join('') || '<div class="mut">조건에 맞는 앨범이 없습니다. 검색어/스토어를 바꾸거나 필터를 해제해 보세요.</div>';
     document.querySelectorAll('#l2 .item').forEach(el => el.onclick = () => toggleAlbum(list[el.dataset.i], el));
     st(list.length + '개 앨범');
-  } catch (e) { st(e.message, 1); }
-  $('#b2').disabled = false;
+  } catch (e) { if (version === albumSearchVersion) st(e.message, 1); }
+  if (version === albumSearchVersion) $('#b2').disabled = false;
 };
 
 // 4. 트랙 로드 + 필터 (앨범 여러 개 선택 가능: 클릭=선택, 다시 클릭=해제)
@@ -220,14 +295,19 @@ async function fetchTracks(a) {
   });
 }
 async function toggleAlbum(a, el) {
+  const version = albumSearchVersion;
   const i = sel.findIndex(x => x.collectionId === a.collectionId);
   if (i >= 0) { sel.splice(i, 1); el.classList.remove('sel'); }
   else {
     el.classList.add('sel'); st('트랙 불러오는 중...');
     try {
-      if (!tcache[a.collectionId]) tcache[a.collectionId] = await fetchTracks(a);
+      if (!tcache[a.collectionId]) {
+        const tracks = await fetchTracks(a);
+        if (version !== albumSearchVersion) return;
+        tcache[a.collectionId] = tracks;
+      }
       sel.push(a);
-    } catch (e) { el.classList.remove('sel'); return st(e.message, 1); }
+    } catch (e) { if (version === albumSearchVersion) { el.classList.remove('sel'); st(e.message, 1); } return; }
   }
   rows = sel.flatMap(x => tcache[x.collectionId]);
   render();
@@ -291,6 +371,7 @@ $('#export-year').addEventListener('input', () => {
   try { $('#prev').value = bin.length ? jsOut() : ''; } catch { $('#prev').value = ''; }
 });
 function refresh() {
+  ostCatalog?.render();
   const n = bin.reduce((s, a) => s + a.albums.reduce((s2, al) => s2 + al.discs.reduce((s3, d) => s3 + d.tracks.length, 0), 0), 0);
   $('#cnt').textContent = `(작품 ${bin.length} · 트랙 ${n})`;
   try { $('#prev').value = bin.length ? jsOut() : ''; } catch { $('#prev').value = ''; }
@@ -335,6 +416,25 @@ try {
   if (Array.isArray(saved)) { bin = saved; st('선택 연도의 이전 수집함을 복원했습니다.'); }
 } catch {}
 normalizeOstRecords(bin);
+ostCatalog = createSavedCatalog({
+  host: $('#ost-catalog'), searchLabel: '전체 작품 검색',
+  records: () => {
+    const works = new Map(animeById);
+    for (const record of bin) if (!works.has(String(record.id))) works.set(String(record.id), {id: record.id});
+    return [...works.values()].map(work => {
+      const saved = bin.filter(record => String(record.id) === String(work.id));
+      const albums = saved.flatMap(record => record.albums);
+      const trackCount = albums.reduce((sum, album) => sum + album.discs.reduce((n, disc) => n + disc.tracks.length, 0), 0);
+      return {
+        key: work.id, title: work.title || `작품 ID ${work.id}`, quarters: work.quarter,
+        meta: `ID ${work.id}`,
+        lines: [trackCount ? `OST 등록 · 앨범 ${albums.length}개 · 트랙 ${trackCount}곡` : 'OST 미등록'],
+        selected: !!anime && String(anime.idMal) === String(work.id)
+      };
+    }).sort((a, b) => a.title.localeCompare(b.title, 'ko', {numeric: true}));
+  },
+  onSelect: selectCatalogAnime
+});
 refresh();
 
 $('#q1').addEventListener('keydown', e => { if (e.key === 'Enter' && !e.isComposing) $('#b1').click(); });

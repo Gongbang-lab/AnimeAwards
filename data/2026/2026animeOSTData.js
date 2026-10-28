@@ -19409,12 +19409,12 @@ var animeOSTData_2026 = [
     ]
   },
   {
-    "id": 59176,
+    "id": 63667,
     "composer": "Yuuko Kakihara, ha-j",
     "albums": [
       {
         "release_date": "2026-06-24",
-        "image": "image/ost/59176.webp",
+        "image": "image/ost/63667.webp",
         "discs": [
           {
             "disc": 1,

@@ -18,11 +18,19 @@
         },
         ost: {
             title: 'OST 선정 안내',
+            version: 2,
             items: [
+                '2026년 10월 28일 기준 발매된 OST만 표시됩니다.',
                 '앨범 이미지 우측 상단의 ‘듣기’를 누르면 OST 트랙 목록을 확인할 수 있습니다.',
                 '‘아이튠즈로 이동’을 누르면 해당 트랙의 페이지가 열립니다. 유료 구독을 하지 않은 경우 30초 미리듣기만 가능합니다.',
                 '‘유튜브로 이동’은 검색 결과로 연결되므로 정확한 곡이 나오지 않을 수 있습니다. 곡명과 작품명을 확인해 주세요.',
                 '감상한 뒤 마음에 드는 작품을 후보로 선택하고, 다음 단계에서 최종 수상작을 결정해 주세요.'
+            ]
+        },
+        character: {
+            title: '캐릭터상 선정 안내',
+            items: [
+                '캐릭터 이미지는 만화책 이미지와 애니메이션 이미지가 혼용되어 있습니다.'
             ]
         },
         voice: {
@@ -59,7 +67,8 @@
     };
     const pageKeys = {
         ostnominate: 'ost', cvnominate: 'voice', bestcouplenominate: 'couple',
-        directornominate: 'director', top3nominate: 'top3', memenominate: 'meme'
+        directornominate: 'director', top3nominate: 'top3', memenominate: 'meme',
+        charnominate: 'character'
     };
 
     function showGuide() {
@@ -70,7 +79,7 @@
             ? 'pv' : pageKeys[page];
         const guide = guides[key];
         if (!guide) return;
-        const storageKey = `anime_awards_hide_guide_v1_${key}`;
+        const storageKey = `anime_awards_hide_guide_v${guide.version || 1}_${key}`;
         try { if (localStorage.getItem(storageKey) === '1') return; } catch { /* 저장 불가 시 안내는 표시한다. */ }
 
         const dialog = document.createElement('dialog');
