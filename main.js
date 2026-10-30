@@ -6,6 +6,17 @@ function isAwardVideo(source) {
     }
 }
 
+function normalizeAwardName(value) {
+    return String(value ?? "").trim().replace(/\s+/g, " ");
+}
+
+function isAwardNameTaken(title) {
+    // Removed cards may still have results; rank/aggregate keys also remain reserved.
+    const reservedNames = ['대상', '최우수상', '우수상', 'TOP3_Awards', '올해의 시리즈', '올해의 애니메이션'];
+    const usedNames = [...Awards.map(award => award.name), ...Object.keys(ResultStorage.getResults()), ...reservedNames];
+    return usedNames.some(name => normalizeAwardName(name) === title);
+}
+
 const mainContainer = document.getElementById("main-container");
 const top3Area = document.getElementById("top3-area");
 
@@ -512,11 +523,16 @@ AwardPage.onReady(() => {
     // 상 추가 로직
     if(submitNewAwardBtn) {
         submitNewAwardBtn.onclick = () => {
-            const title = document.getElementById("new-award-title").value;
+            const title = normalizeAwardName(document.getElementById("new-award-title").value);
             const theme = document.querySelector('input[name="new-award-theme"]:checked').value;
 
-            if (!title.trim()) {
+            if (!title) {
                 alert("상 제목을 입력해주세요!");
+                return;
+            }
+
+            if (isAwardNameTaken(title)) {
+                alert("기존 상이나 저장된 수상 결과에 사용되는 제목입니다. 다른 상 제목을 입력해주세요.");
                 return;
             }
 

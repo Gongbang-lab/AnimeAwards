@@ -76,6 +76,16 @@ body.ost-data-collector #collector-year-bar{width:320px}
 </section>
 
 <div id="status"></div>
+<section id="draft-recovery" hidden aria-labelledby="draft-recovery-title">
+  <h2 id="draft-recovery-title">이전 수집함 확인</h2>
+  <p id="draft-recovery-note" role="alert"></p>
+  <div class="row">
+    <button id="draft-use-file" type="button">최신 파일 사용</button>
+    <button id="draft-restore" class="ghost" type="button">이전 초안 불러오기</button>
+    <button id="draft-download" class="ghost" type="button">이전 초안 백업 다운로드</button>
+  </div>
+  <p class="mut">선택하기 전에는 추가·불러오기·복사를 잠시 중단합니다. 이전 초안을 불러오면 최신 파일의 추가·수정 내용은 합쳐지지 않습니다.</p>
+</section>
 
 <section>
   <h2>4. 트랙 필터 (BGM만 체크)</h2>
@@ -119,6 +129,12 @@ const fmt = ms => ms ? Math.floor(ms / 60000) + ':' + String(Math.round(ms % 600
 
 const SOUNDTRACK_RE = /soundtrack|original score|\bost\b|サウンドトラック|サントラ|オリジナル.?サウンド|劇伴|사운드트랙/i;
 const VOCAL_RE = /\b(op|ed)\b|opening|ending|theme song|insert song|tv size|tv ver|full ver|オープニング|エンディング|主題歌|挿入歌|ボーカル|vocal/i;
+const COMPOSER_ROLES = new Set(['music', 'composer', 'music composer', 'music composition', 'original music', 'original score']);
+function musicStaff(media) {
+  return [...new Set((media.staff?.edges || [])
+    .filter(edge => COMPOSER_ROLES.has(String(edge.role || '').trim().replace(/\s+/g, ' ').toLowerCase()))
+    .map(edge => edge.node?.name?.full || edge.node?.name?.native).filter(Boolean))].join(', ');
+}
 
 // iTunes API는 JSONP(callback)로 호출 → 브라우저 CORS 제약 없음
 function jsonp(url) {
@@ -138,6 +154,9 @@ function jsonp(url) {
 const ytUrl = title => 'https://www.youtube.com/results?search_query=' + encodeURIComponent([anime?.title.romaji, title, 'OST'].filter(Boolean).join(' '));
 let anime = null, composers = '', rows = [], bin = [], sel = [], tcache = {};
 let ostCatalog = null, selectionVersion = 0, albumSearchVersion = 0;
+let draftPending = false, pendingDraft = null, pendingRaw = null, cacheWritesEnabled = true;
+const draftKey = CollectorYear.key('ostbin_mal');
+let sourceBaseline = '';
 const animeById = new Map();
 for (const work of CollectorYear.data.AnimeCatalog || []) {
   const key = String(work.id), previous = animeById.get(key);
@@ -183,7 +202,7 @@ async function selectCatalogAnime(id) {
     if (!response.ok || payload.errors?.length || !payload.data?.Media) throw new Error('작품 정보를 가져오지 못했습니다.');
     if (version !== selectionVersion) return;
     const media = payload.data.Media;
-    media.music = (media.staff?.edges || []).filter(edge => /music|compos/i.test(edge.role)).map(edge => edge.node.name.full).join(', ');
+    media.music = musicStaff(media);
     selectAnime(media);
     $('#b2').click();
   } catch (error) {
@@ -249,7 +268,7 @@ $('#b1').onclick = async () => {
     });
     const list = (await r.json()).data.Page.media;
     if (version !== selectionVersion) return;
-    list.forEach(m => m.music = (m.staff?.edges || []).filter(e => /music|compos/i.test(e.role)).map(e => e.node.name.full).join(', '));
+    list.forEach(m => m.music = musicStaff(m));
     $('#l1').innerHTML = list.map((m, i) => `<div class="item" data-i="${i}"><span>${esc(m.title.romaji)} <span class="mut">${esc(m.title.native || '')}</span><br><span class="mut">Music: ${esc(m.music || '정보 없음')}</span></span><span class="mut" style="text-align:right"><b style="color:${m.idMal ? 'inherit' : 'var(--warn)'}">MAL ID ${m.idMal ?? '없음'}</b><br>${m.seasonYear || ''} ${m.format || ''}</span></div>`).join('') || '<div class="mut">결과 없음</div>';
     document.querySelectorAll('#l1 .item').forEach(el => el.onclick = () => {
       selectAnime(list[el.dataset.i]);
@@ -322,7 +341,7 @@ function render() {
     return head + `<tr class="${r.sus ? 'sus' : ''}"><td><input type="checkbox" data-i="${i}" ${r.on ? 'checked' : ''}></td><td>${r.disc}</td><td>${r.no}</td><td class="t">${esc(r.title)}</td><td>${esc(r.artist)}</td><td>${fmt(r.ms)}</td><td><a href="${esc(r.url)}" target="_blank" rel="noopener">iTunes</a> · <a href="${esc(ytUrl(r.title))}" target="_blank" rel="noopener">YouTube 검색</a></td></tr>`;
   }).join('');
   document.querySelectorAll('#tb input[data-i]').forEach(c => c.onchange = () => rows[c.dataset.i].on = c.checked);
-  $('#add').disabled = !rows.length;
+  $('#add').disabled = draftPending || !rows.length;
 }
 
 // 트랙 일괄 선택
@@ -333,6 +352,7 @@ $('#selDef').onclick = () => setChecks(r => !r.sus);
 
 // 수집함: 작품(id) → 앨범 → 디스크 → 트랙 으로 중첩. '_' 로 시작하는 키는 내보낼 때 제외
 $('#add').onclick = () => {
+  if (draftPending) return;
   if (!anime) return st('먼저 1단계에서 작품을 선택하세요.', 1);
   const checked = rows.filter(r => r.on);
   if (!checked.length) return st('선택된 트랙이 없습니다.', 1);
@@ -375,9 +395,13 @@ function refresh() {
   const n = bin.reduce((s, a) => s + a.albums.reduce((s2, al) => s2 + al.discs.reduce((s3, d) => s3 + d.tracks.length, 0), 0), 0);
   $('#cnt').textContent = `(작품 ${bin.length} · 트랙 ${n})`;
   try { $('#prev').value = bin.length ? jsOut() : ''; } catch { $('#prev').value = ''; }
-  try { localStorage.setItem(CollectorYear.key('ostbin_mal'), JSON.stringify(bin)); } catch {}  // 새로고침/탭 닫기 대비 자동 저장
+  if (!draftPending && cacheWritesEnabled) {
+    try { localStorage.setItem(draftKey, JSON.stringify({version: 1, year: CollectorYear.year, source: sourceBaseline, records: bin})); }
+    catch { st('브라우저에 자동 저장하지 못했습니다. JS 복사로 현재 작업을 보관해주세요.', 1); }
+  }
 }
 async function copyOutput(asJs) {
+  if (draftPending) return;
   if (!bin.length) return st('수집함이 비어 있습니다.', 1);
   try {
     const value = asJs ? jsOut() : out();
@@ -394,28 +418,109 @@ async function copyOutput(asJs) {
 }
 $('#copy').onclick = () => copyOutput(false);
 $('#copy-js').onclick = () => copyOutput(true);
-$('#clr').onclick = () => { if (!bin.length || confirm('수집함을 모두 비울까요?')) { bin = []; refresh(); } };
-$('#imp').onclick = () => { const b = $('#impbox'); b.style.display = b.style.display === 'none' ? 'block' : 'none'; };
+$('#clr').onclick = () => { if (!draftPending && (!bin.length || confirm('수집함을 모두 비울까요?'))) { bin = []; refresh(); } };
+$('#imp').onclick = () => { if (draftPending) return; const b = $('#impbox'); b.style.display = b.style.display === 'none' ? 'block' : 'none'; };
 $('#impgo').onclick = () => {
+  if (draftPending) return;
   try {
     const source = $('#impta').value.trim();
     const wrapped = source.match(/^(?:var|let|const)\s+animeOSTData_(\d{4})\s*=\s*([\s\S]*?)\s*;?\s*$/);
     const arr = JSON.parse(wrapped ? wrapped[2] : source);
     if (!Array.isArray(arr)) throw new Error('배열(JSON) 형식이 아닙니다.');
     const records = arr.flat(Infinity);
-    if (records.some(a => !a || a.id == null || !Array.isArray(a.albums) || a.albums.some(al => !al || !Array.isArray(al.discs) || al.discs.some(d => !d || !Array.isArray(d.tracks))))) throw new Error('id, albums, discs, tracks 구조를 확인해주세요.');
+    if (!validOstRecords(records)) throw new Error('id, albums, discs, tracks 구조를 확인해주세요.');
     if (wrapped && Number(wrapped[1]) !== CollectorYear.year) throw new Error('파일의 연도와 작업 연도가 다릅니다. 상단에서 작업 연도를 변경해주세요.');
     bin = normalizeOstRecords(records); refresh(); $('#impta').value = ''; $('#impbox').style.display = 'none'; st('불러오기 완료');
   } catch (e) { st('불러오기 실패: ' + e.message, 1); }
 };
-// 페이지를 다시 열면 이전 수집함 복원
+function validOstRecords(records) {
+  return Array.isArray(records) && records.every(a => a && a.id != null && Array.isArray(a.albums)
+    && a.albums.every(al => al && Array.isArray(al.discs)
+      && al.discs.every(d => d && Array.isArray(d.tracks) && d.tracks.every(t => t && typeof t === 'object'))));
+}
+function fingerprintSource(records) {
+  // Compact change detection only; this is not a security or authenticity check.
+  const text = JSON.stringify(records);
+  let a = 0x811c9dc5, b = 0x9e3779b9;
+  for (let i = 0; i < text.length; i++) {
+    const code = text.charCodeAt(i);
+    a = Math.imul(a ^ code, 16777619);
+    b = Math.imul(b ^ code, 2246822519);
+  }
+  return `ost-v1:${text.length}:${(a >>> 0).toString(16)}:${(b >>> 0).toString(16)}`;
+}
+function readDraft(raw, baseline) {
+  try {
+    const saved = JSON.parse(raw);
+    const legacy = Array.isArray(saved);
+    const records = legacy ? saved.flat(Infinity) : saved?.records;
+    if (!validOstRecords(records) || (!legacy && (saved.version !== 1 || saved.year !== CollectorYear.year))) {
+      return {reason: '이전 초안의 형식 또는 연도를 확인할 수 없습니다.', records: null};
+    }
+    return {records: normalizeOstRecords(records), autoRestore: !legacy && saved.source === baseline,
+      reason: legacy ? '이전 형식의 초안이라 기준 파일을 확인할 수 없습니다.' : '초안을 작성한 이후 원본 데이터 파일이 변경되었습니다.'};
+  } catch { return {reason: '이전 초안을 읽지 못했습니다. 백업으로 내용을 보관할 수 있습니다.', records: null}; }
+}
+function describeRecords(records) {
+  const count = records.reduce((sum, work) => sum + work.albums.reduce((n, album) => n
+    + album.discs.reduce((m, disc) => m + disc.tracks.length, 0), 0), 0);
+  return `작품 ${records.length}개 · 트랙 ${count}곡`;
+}
+function setDraftPending(pending) {
+  draftPending = pending;
+  $('#draft-recovery').hidden = !pending;
+  for (const id of ['copy', 'copy-js', 'imp', 'impgo', 'clr']) $('#' + id).disabled = pending;
+  $('#add').disabled = pending || !rows.length;
+}
+function chooseDraft(restore) {
+  if (!draftPending || (restore && !pendingDraft.records)) return;
+  // Archive the original bytes before replacing a conflicted or legacy draft.
+  try {
+    let archiveKey = `${draftKey}_backup_${Date.now()}`;
+    while (localStorage.getItem(archiveKey) !== null) archiveKey += '_';
+    localStorage.setItem(archiveKey, pendingRaw);
+  } catch {
+    // Keep the old draft at its original key if there is no room for a backup.
+    cacheWritesEnabled = false;
+  }
+  if (restore) bin = pendingDraft.records;
+  setDraftPending(false);
+  refresh();
+  st((restore ? '이전 초안을 불러왔습니다.' : '최신 파일을 사용합니다.') + (cacheWritesEnabled
+    ? ' 이전 초안은 브라우저에 별도로 보관했습니다.'
+    : ' 이전 초안 보호를 위해 자동 저장을 중단했습니다. 현재 작업은 JS 복사로 보관해주세요.'), !cacheWritesEnabled);
+  pendingDraft = null; pendingRaw = null;
+}
+$('#draft-use-file').onclick = () => chooseDraft(false);
+$('#draft-restore').onclick = () => chooseDraft(true);
+$('#draft-download').onclick = () => {
+  const url = URL.createObjectURL(new Blob([pendingRaw], {type: 'application/json'}));
+  const link = document.createElement('a'); link.href = url;
+  link.download = `${CollectorYear.year}ost-draft-backup.json`; link.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+};
+// Start from the loaded file. Only auto-restore drafts based on this exact source.
 bin = JSON.parse(JSON.stringify(CollectorYear.data.animeOSTData || [])).flat(Infinity);
-try {
-  const raw = localStorage.getItem(CollectorYear.key('ostbin_mal')) ?? (CollectorYear.year === 2026 ? localStorage.getItem('ostbin_mal') : null);
-  const saved = raw ? JSON.parse(raw) : null;
-  if (Array.isArray(saved)) { bin = saved; st('선택 연도의 이전 수집함을 복원했습니다.'); }
-} catch {}
+if (!validOstRecords(bin)) throw new Error('OST 원본의 id, albums, discs, tracks 구조를 확인해주세요.');
 normalizeOstRecords(bin);
+sourceBaseline = fingerprintSource(bin);
+try {
+  pendingRaw = localStorage.getItem(draftKey) ?? (CollectorYear.year === 2026 ? localStorage.getItem('ostbin_mal') : null);
+  if (pendingRaw !== null) {
+    pendingDraft = readDraft(pendingRaw, sourceBaseline);
+    if (pendingDraft.autoRestore) {
+      bin = pendingDraft.records;
+      st('현재 원본 파일을 기준으로 작업하던 수집함을 복원했습니다.');
+    } else {
+      setDraftPending(true);
+      $('#draft-restore').disabled = !pendingDraft.records;
+      $('#draft-recovery-note').textContent = `${pendingDraft.reason} 현재 파일: ${describeRecords(bin)}. 이전 초안: ${pendingDraft.records ? describeRecords(pendingDraft.records) : '복원 불가'}. 사용할 데이터를 선택해주세요.`;
+    }
+  }
+} catch {
+  cacheWritesEnabled = false;
+  st('브라우저 저장 공간에 접근하지 못했습니다. 원본 파일로 시작하며 현재 작업은 JS 복사로 보관해주세요.', 1);
+}
 ostCatalog = createSavedCatalog({
   host: $('#ost-catalog'), searchLabel: '전체 작품 검색',
   records: () => {

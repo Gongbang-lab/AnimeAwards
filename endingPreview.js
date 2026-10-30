@@ -30,15 +30,18 @@
         let title = couple.name1 && couple.name2 ? `${couple.name1} ♥ ${couple.name2}`
             : winner.title || winner.name || winner.animeTitle || '수상작';
         const details = [];
-        if (winner.episodeNo != null) details.push(`${winner.episodeNo}화${winner.episodeTitle ? ' · ' + winner.episodeTitle : ''}`);
-        else if (winner.animeTitle && winner.animeTitle !== title) details.push(winner.animeTitle);
+        if (winner.episodeNo != null) {
+            const number = String(winner.episodeNo).trim();
+            const label = /^\d+(?:\.\d+)?$/.test(number) ? `${number}화` : number;
+            details.push(`${label}${winner.episodeTitle ? ' · ' + winner.episodeTitle : ''}`);
+        } else if (winner.animeTitle && winner.animeTitle !== title) details.push(winner.animeTitle);
         const trophy = getAwardTrophy(award);
         let source = winner.thumbnail || winner.img || winner.image || winner.cvimg || '';
         if (['voice_male', 'voice_female'].includes(award.theme)) {
             source = (window.CharacterVoiceData || []).find(voice => voice.name === winner.name)?.cvimg || source;
         }
         // Keep large meme videos unloaded: the ending uses their static posters.
-        if (isAwardVideo(source)) source = source.replace(/\.(mp4|webm|mov|m4v|ogv)(?=[?#]|$)/i, '.poster.jpg');
+        if (isAwardVideo(source)) source = source.replace(/(\.(?:mp4|webm|mov|m4v|ogv))(?=[?#]|$)/i, '$1.poster.jpg');
         return {type: 'winner', award: award.name, title, detail: details.join(' · '), source: source || trophy,
             trophy, personalId: winner.personalMemeId, rank: ranks.includes(award.name) ? award.name : ''};
     }
@@ -106,7 +109,7 @@
             content.classList.add('ending-preview-finish');
             const grand = slides.find(item => item.rank === '대상');
             content.append(element('p', 'ending-preview-kicker', 'UNTIL THE NEXT STORY'),
-                element('h2', '', '당신의 시상식이 완성되었습니다.'),
+                element('h2', '', '시상식이 완료되었습니다. 감사합니다.'),
                 image(grand?.source || getAwardTrophy({theme: 'top3'}), '', grand?.title || '트로피'),
                 element('p', '', grand ? `대상 · ${grand.title}` : seasonTitle()));
             const actions = element('div', 'ending-preview-finish-actions');

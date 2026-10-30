@@ -1971,7 +1971,7 @@ var AnimeStudioData_2026 = [
   },
   {
     "studio": "David Production",
-    "studio_img": "image/studio/David Production.avif",
+    "studio_img": "image/studio/david production.avif",
     "works": [
       {
         "title": "불꽃 소방대 3장",
@@ -2823,7 +2823,7 @@ var AnimeStudioData_2026 = [
   },
   {
     "studio": "SIGNAL.MD",
-    "studio_img": "image/studio/SIGNALMD.avif",
+    "studio_img": "image/studio/SignalMD.avif",
     "works": [
       {
         "title": "아름다운 그대에게",

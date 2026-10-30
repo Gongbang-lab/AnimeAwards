@@ -3168,11 +3168,11 @@ var animeDirectorData_2026 = [
     "works": [
       {
         "title": "자금·어묘방",
-        "thumbnail": "image/animeimg/2025/Q4/자금어묘방.webp",
+        "thumbnail": "image/animeimg/2026/Q4/자금어묘방.webp",
         "quarter": [
           "4분기"
         ],
-        "year": 2025
+        "year": 2026
       }
     ]
   },
@@ -3848,11 +3848,11 @@ var animeDirectorData_2026 = [
     "works": [
       {
         "title": "전자오락수호대",
-        "thumbnail": "image/cinema/2027/전자오락수호대.webp",
+        "thumbnail": "image/cinema/2026/전자오락수호대.webp",
         "quarter": [
           "4분기"
         ],
-        "year": 2027
+        "year": 2026
       }
     ]
   },

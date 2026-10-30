@@ -268,8 +268,8 @@ var AnimeSongs_2026 = [
       {
         "type": "ed",
         "title": "괴물",
-        "artist": "https://youtu.be/g8YYbQeC5G4?si=k6WHXQOMXImTsVOk",
-        "youtube": "카라노아",
+        "artist": "카라노아",
+        "youtube": "https://youtu.be/g8YYbQeC5G4?si=k6WHXQOMXImTsVOk",
         "quarter": [
           "3분기"
         ]
@@ -2381,8 +2381,8 @@ var AnimeSongs_2026 = [
       {
         "type": "ed",
         "title": "Runner",
-        "artist": "https://youtu.be/JMZbQoWXdBo?si=imB4EVVw0mebqktz",
-        "youtube": "폭풍 슬럼프"
+        "artist": "폭풍 슬럼프",
+        "youtube": "https://youtu.be/JMZbQoWXdBo?si=imB4EVVw0mebqktz"
       },
       {
         "type": "ed",

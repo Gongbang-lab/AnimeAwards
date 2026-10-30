@@ -82,6 +82,7 @@ function renderStep1(searchTerm = "") {
 
     if (filteredData.length === 0) {
         display.innerHTML = `<div class="ui-empty">검색 결과가 없습니다.</div>`;
+        updatePreview();
         return;
     }
 
@@ -246,6 +247,10 @@ function updatePreview() {
 // STEP 2: 순위 결정 (우수 -> 최우수 -> 대상)
 // ==========================================
 function goStep2() {
+    if (top3State.selectedCandidates.length < 3) {
+        updatePreview();
+        return;
+    }
     top3State.step = 2;
     top3State.finalTop3 = [];
     document.getElementById('step-title').textContent = "최종 후보 순위 결정";

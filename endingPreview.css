@@ -46,7 +46,7 @@ dialog.ending-preview-dialog {
 .ending-preview-slide { width: min(1040px, 100%); text-align: center; animation: ending-preview-arrive .65s ease both; }
 .ending-preview-slide .ending-preview-kicker { margin: 0 0 14px; color: var(--ending-tone); font-size: .72rem; letter-spacing: .22em; text-transform: uppercase; }
 .ending-preview-slide h2 { margin: 0; font-size: clamp(1.6rem, 4vw, 3rem); font-weight: 500; line-height: 1.4; color: var(--text); overflow-wrap: anywhere; }
-.ending-preview-intro h2, .ending-preview-finish h2 { font-size: clamp(2rem, 5vw, 4.3rem); }
+.ending-preview-intro h2, .ending-preview-finish h2 { font-size: clamp(2rem, 5vw, 4rem); }
 .ending-preview-intro > p:last-child, .ending-preview-finish > p { color: var(--text-muted); line-height: 1.8; }
 .ending-preview-rule { width: 64px; height: 1px; margin: 28px auto; background: var(--gold); }
 .ending-preview-intro img { width: 110px; height: 155px; object-fit: contain; margin-bottom: 28px; filter: drop-shadow(0 12px 30px #c9a55a22); }
