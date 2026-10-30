@@ -194,14 +194,6 @@ var AnimeMemeData_2026 = [
     "src2": "image/meme/도망잘치는 갸루2.mp4"
   },
   {
-    "id": "meme_028",
-    "name": "요코소 와타시노 소울 소사이어티에",
-    "origin": "블리치 천년혈전 편 : 화진담",
-    "quarter": "3분기",
-    "year": 2026,
-    "src1": "image/meme/아이젠1.mp4"
-  },
-  {
     "id": "meme_029",
     "name": "루루카 신규 변신 장면",
     "origin": "명탐정 프리큐어!",

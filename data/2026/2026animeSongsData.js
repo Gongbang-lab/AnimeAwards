@@ -6240,7 +6240,7 @@ var AnimeSongs_2026 = [
         "type": "ed",
         "title": "Pit",
         "artist": "나나오아카리",
-        "youtube": "https://youtu.be/ez8Uv-pi0Jg?si=pBH1sCmy-yVjhgZG"
+        "youtube": "https://youtu.be/lxk1UcXcLc8?si=nE0m-poiPRovb3u-"
       }
     ]
   },
